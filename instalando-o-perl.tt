@@ -166,7 +166,7 @@ say "Olá $nome, como você está?";
 <b>$nome</b> é chamada de variável escalar.
 
 Variáveis são declaradas utilizando a função <b>my</b>.
-(Na verdade este é uma das obrigações que o <i>pragma,/i> <b>strict</b> adiciona ao código).
+(Na verdade este é uma das obrigações que o <b>pragma</b> <hl>strict</hl> adiciona ao código).
 
 Variáveis escalares sempre iniciam com o sinal <b>$</b>.
 O &lt;STDIN&gt; é a função que lê uma linha de texto gerada pelo teclado.
