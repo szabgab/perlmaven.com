@@ -1,217 +1,159 @@
-﻿Instalando o Perl, imprimindo “Olá Mundo, Segurança (use strict, use warnings)
+﻿=title Instalando o Perl, imprimindo “Olá Mundo, Segurança (use strict, use warnings)
+=timestamp 2013-03-12T18:45:56
+=indexes strict, warnings, say, print, chomp, scalar, $
+=status show
+=books beginner_book
+=author szabgab
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
 
-<p>
+=abstract start
+
 Esta é a primeira parte do <a href="/perl-tutorial">Tutorial Perl</a>.
-</p>
 
-<p>
+=abstract end
+
 Neste artigo você aprenderá como instalar o Perl no Microsoft Windows e como começar a usar a linguagem em Windows, Linux e Mac.
-</p>
 
-<p>
-Você receberá direcionamentos para organizar e configurar seu ambiente de desenvolvimento, ou em menores palavras: 
+Você receberá direcionamentos para organizar e configurar seu ambiente de desenvolvimento, ou em menores palavras:
 Qual editor de texto ou IDE usar para escrever código em Perl?
-</p>
 
-<p>
 Também vamos conferir o clássico exemplo do “Olá Mundo”.
-</p>
 
 <h2>Windows</h2>
 
-<p>
 Para trabalhar no Windows iremos utilizar o pacote <a href="http://dwimperl.com/">DWIM Perl</a>. Nele podemos encontrar o tradicional compilador/interpretador perl, a IDE de desenvolvimento PADRE, escrita em Perl <a href="http://padre.perlide.org/"> e mais um conjunto de extensões presentes no CPAN.
-</p>
 
-<p>
 Para que possamos começar, entre na página do <a href="http://dwimperl.com/">DWIM Perl</a> e clique no link para realizar o Download <b>DWIM Perl for Windows</b>.
-</p>
 
-<p>
 Baixe para a sua máquina o executável <i>.exe</i> e instale-o em seu sistema. Antes de prosseguir com a instalação certifique-se de que não há outras versões do Perl instaladas.
-</p>
 
-<p>
 Você até poderia ter em seu sistema mais de uma versão instalada e configurada, porém isso requer alguns cuidados extras.
 Por enquanto vamos instalar apenas uma versão do Perl.
-</p>
 
 <h2>Linux</h2>
 
-<p>
 A maioria das distribuições modernas do Linux já possuem uma versão recente do Perl. Por enquanto usaremos a própria versão do sistema operacional. No caso do editor de texto, você poerá instalar o Padre - a maioria das distribuições oferecem o Padre em seus repositórios nativos de software, pelo gerenciador de pacotes do sistema. Caso contrário, você pode utilizar qualquer editor de texto tradicional . Se você está mais familiarizado com vim ou Emas, use aquele que você preferir. Outra boa opção simples é o Gedit.
-</p>
 
 <h2>Apple</h2>
 
-<p>
 E acredito que o Mac também possua Perl instalado em seus sistema, ou caso não tenha você pode facilmente instalar a partir das ferramentas de instalação do sistema.
-</p>
 
 <h2>Editor e IDE</h2>
 
-<p>
-Mesmo que eu esteja recomendando, você não precisa utilizar a IDE Padre para escrever seus códigos. Na próxima parte eu irei listar alguns <a href="/perl-editor">editores e IDEs</a> que poderão ser utilizados para programar em Perl. Mesmo que escolha um outro editor, eu recomendo - para usuários de Windows - instalar o pacote DWIM mencionado acima.
-</p>
+Mesmo que eu esteja recomendando, você não precisa utilizar a IDE Padre para escrever seus códigos. Na próxima parte eu
+irei listar alguns <a href="http://perl5maven.com/perl-editor">editores e IDEs</a> que poderão ser utilizados para programar em Perl. Mesmo que escolha um outro editor, eu recomendo - para usuários de Windows - instalar o pacote DWIM mencionado acima.
 
-<p>
 O pacote DWIM possui várias extensões em Perl empacotadas, dessa forma realizar a sua instalação seria uma economia de tempo.
-</p>
 
 <h2>Video</h2>
 
-<p>
-Se você preferir poerá também assistir o vídeo <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with Perl</a> disponível no YouTube. Neste caso você também pode acessar o <a href="/beginner-perl-maven-video-course">curso iniciante do Perl Maven</a>
-</p>
+Se você preferir poerá também assistir o vídeo <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with
+Perl</a> disponível no YouTube. Neste caso você também pode acessar o <a href="http://perl5maven.com/beginner-perl-maven-video-course">curso iniciante do Perl Maven</a>
 
 <h2>Primeiro programa</h2>
 
-<p>
 Seu primeiro programa se parecerá com isso:
-</p>
 
-<pre class="prettyprint linenums languague-perl">
+<code lang="perl">
 use 5.010;
 use strict;
 use warnings;
 
 say "Olá Mundo";
-</pre>
+</code>
 
-<p>
 Deixe-me explicá-lo passo a passo:
-</p>
 
 <h2>Olá mundo</h2>
 
-<p>
 Uma vez que tenha instalado o DWIM Perl você pode clicar em “Iniciar -> Todos os Programas -> DWIM Perl -> Padre” que irá abrir o editor com um arquivo vazio.
-</p>
 
-<p>
 Digite:
-</p>
 
-<pre class="prettyprint linenums languague-perl">
+<code lang="perl">
 print "Olá Mundo\n";
-</pre>
+</code>
 
-<p>
 Como você pode ver, as declarações em perl terminam com um ponto e vírgula ( ; ).
 O <b>\n</b> é o sinal utilizado para denotar uma nova linha.
 O texto é demarcado com aspas duplas <b>"</b>.
 A função <b>print</b> imprime algo na tela.
 Quando é executado, o perl irá imprimir o texto na tela e ao final irá imprimir uma nova linha.
-</p>
 
-<p>
 Salve o arquivo como ola.pl e então você poderá executar o código selecionando "Run -> Run Script". Você irá ver uma janela separada aparecer na tela com o resultado.
-</p>
 
-<p>
 Pronto é isso, você escreveu seu primeiro script.
-</p>
 
-<p>
 Agora vamos melhorá-lo um pouco:
-</p>
 
 <h2>Perl na linha de comandos</h2>
 
-<p>
-Se você não estiver utilizando o Padre ou uma das opções descritas em <a href="/perl-editor">IDEs</a>, não será possível executar seu script a partir do próprio editor. Ao menos não pelas configurações padrão. Você precisar abrir o shell (ou o cmd no Windows), mudar para o diretório do script salvo e digitar: 
-</p>
+Se você não estiver utilizando o Padre ou uma das opções descritas em <a href="http://perl5maven.com/perl-editor">IDEs</a>, não será possível executar seu script a partir do próprio editor. Ao menos não pelas configurações padrão. Você precisar abrir o shell (ou o cmd no Windows), mudar para o diretório do script salvo e digitar: 
 
-<p>
 <b>perl ola.pl</b>
-</p>
 
-<p>
 Dessa forma que você conseguirá rodar seu programa na linha de comandos.
-</p>
 
 <h2>say() Ao Invés De print()</h2>
 
-<p>
 Vamos melhorar um pouco o nosso script Perl de uma linha:
-</p>
 
-<p>
 Antes de tudo vamos declarar qual a versão mínima do Perl que desejamos utilizar:
-</p>
 
-<pre class="prettyprint linenums languague-perl">
+<code lang="perl">
 use 5.010;
 print "Olá Mundo\n";
-</pre>
+</code>
 
-<p>
 Uma vez que tenha digitado isso, você pode rodar os script novamente selecionando “Run->Run Script” ou pressionando <b>F5</b>.
 Isso também fará com que o texto seja automaticamente salvo.
-</p>
 
-<p>
 Geralmente é boa prática declarar qual é a versão mínima desejada do perl que o seu código exige.
-</p>
 
-<p>
 Neste caso também ocorre o adicionamento de algumas características do perl que incluem a palavra-chave <b>say</b>.
 <b>say</b> funciona como o <b>print</b>, mas é mais prático de se digitar e automaticamente adiciona ao final do seu texto uma nova linha.
-</p>
 
-<p>
 Você pode alterar seu código para que fique da seguinte forma:
-</p>
 
-<pre class="prettyprint linenums languague-perl">
+<code lang="perl">
 use 5.010;
 say "Olá Mundo";
-</pre>
+</code>
 
-<p>
 Nós substituímos o <b>print</b> por <b>say</b> e removemos o <b>\n</b> do final do texto.
-</p>
 
-<p>
 A versão atual do perl que você está usando é provavelmente a versão 5.12.3 ou 5.14.
 A maioria das distribuições modernas de Linux possuem a versão 5.10 ou superior.
-</p>
 
-<p>
 Infelizmente ainda é possível encontrar sistemas utilizando versões mais antigas do perl.
 Nestes casos, não será possível utilizar a função <b>say()</b>, e ainda assim é possível que seja necessário alguns ajustes para que os exemplos acima funcionem. Eu irei indicar quando estiver utilizando características da linguagem que necessitem a versão 5.10 ou superior.
-</p>
 
 <h2>Segurança</h2>
 
-<p>
 Em adição a todo script eu fortemente recomendo a realização de algumas outras modificações no comportamento do Perl. Para isto, adicionamos 2 características chamadas de <i>pragmata</i>. Elas são muito similares às chamadas <i>compiler flags</i> em outras linguagens:
-</p>
 
-<pre class="prettyprint linenums languague-perl">
+<code lang="perl">
 use 5.010;
 use strict;
 use warnings;
 
 say "Olá Mundo";
-</pre>
+</code>
 
-<p>
-Neste caso a palavra chave <b>use</b> indica ao perl que carregue e ative cada um dos <i>pragmas</i>.
-</p>
+Neste caso a palavra chave <hl>use</hl> indica ao perl que carregue e ative cada um dos <i>pragmas</i>.
 
-<p>
-<b>strict</b> e <b>warnings</b> irão ajudá-lo a capturar alguns erros e enganos comuns em seu código ou até mesmo em alguns casos prevenir que você os realize.
+<hl>strict</hl> e <hl>warnings</hl> irão ajudá-lo a capturar alguns erros e enganos comuns em seu código ou até mesmo em alguns casos prevenir que você os realize.
 Ambos são extremamente úteis.
-</p>
 
 <h2>Entrada do usuário</h2>
 
-<p>
 Agora vamos melhorar o nosso exemplo perguntando ao usuário o seu nome e incluindo o resultado na resposta.
-</p>
 
-<pre class="prettyprint linenums languague-perl">
+<code lang="perl">
 use 5.010;
 use strict;
 use warnings;
@@ -219,37 +161,25 @@ use warnings;
 say "Qual é o seu nome? ";
 my $nome = &lt;STDIN>;
 say "Olá $nome, como você está?";
-</pre>
+</code>
 
-<p>
 <b>$nome</b> é chamada de variável escalar.
-</p>
 
-<p>
 Variáveis são declaradas utilizando a função <b>my</b>.
 (Na verdade este é uma das obrigações que o <i>pragma,/i> <b>strict</b> adiciona ao código).
-</p>
 
-<p>
 Variáveis escalares sempre iniciam com o sinal <b>$</b>.
 O &lt;STDIN&gt; é a função que lê uma linha de texto gerada pelo teclado.
-</p>
 
-<p>
 Digite o texto acima e execute o código pressionando o F5.
-</p>
 
-<p>
 O programa irá perguntar o seu nome, digite a resposta e aperte o ENTER para que o perl saiba que você terminou de digitar.
-</p>
 
-<p>
 Você irá perceber que o resultado está um pouco desformatado: A vírgula após o nome aparece numa linha nova. Isso ocorre porque o ENTER pressionado, foi incluído na variável <b>$nome</b>.
-</p>
 
 <h2>Descartando novas linhas</h2>
 
-<pre class="prettyprint linenums languague-perl">
+<code lang="perl">
 use 5.010;
 use strict;
 use warnings;
@@ -258,55 +188,38 @@ say "Qual é o seu nome? ";
 my $nome = &lt;STDIN>;
 chomp $nome;
 say "Olá $nome, como você está?";
-</pre>
+</code>
 
-<p>
 Este tipo de situação é muito comum em Perl, de tal maneira que existe uma função especial chamada <b>chomp</b> que remove o caractere de nova linha do final de textos.
-</p>
 
 <h2>Conclusão</h2>
 
-<p>
 Em todo script que escrever você  <b>sempre</b> deverá adicionar <b>use strict;</b> e <b>use warnings;</b> como as duas primeiras declarações do seu código. É também muito recomendado que adicione <b>use 5.010;</b>.
-</p>
 
 <h2>Exercício 1</h2>
 
-<p>
 Eu prometi exercícios:
-</p>
 
-<p>
 Experimento executar o seguinte script:
-</p>
 
-<pre class="prettyprint linenums languague-perl">
+<code lang="perl">
 use strict;
 use warnings;
 use 5.010;
 
 say "Olá ";
 say "Mundo";
-</pre>
+</code>
 
-<p>
 O texto não apareceu em apenas uma linha. Por quê? Como concertar o código?
-</p>
 
 <h2>Exercício 2</h2>
 
-<p>
 Escreva um script que peça ao usuário dois números, um após o outro.
-Então imprima a soma dos dois números.  
-</p>
+Então imprima a soma dos dois números.
 
 <h2>O que vem em seguida?</h2>
 
-<p>
-A próxima parte do tutorial será sobre <a href="/perl-editor">editores, IDEs e ambientes de desenvolvimento em Perl</a>.
-</p>
-
-Escrito por <a href="https://plus.google.com/102810219707784087582?rel=author">Gabor Szabo</a><br /><img src="/img/szabgab.png"  />
-Traduzido por <a href=”www.leprevost.com.br”> Felipe da Veiga Leprevost </a> <br /> <img src=”” />
+A próxima parte do tutorial será sobre <a href="http://perl-maven.com/perl-editor">editores, IDEs e ambientes de desenvolvimento em Perl</a>.
 
 
