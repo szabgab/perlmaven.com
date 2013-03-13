@@ -1,4 +1,4 @@
-=title Perl Tutorial
+=title Tutorial Perl
 =timestamp 2012-05-02T22:45:56
 =status show
 =showright 1
@@ -13,8 +13,8 @@
 
 
 <ul>
-  <li><a href="/instalando-o-perl">Instalando o Perl, imprimindo “Olá Mundo, Segurança (use strict, use warnings)</a></li>
+  <li><a href="/instalando-o-perl">Instalando o Perl, imprimindo “Olá Mundo", Segurança (use strict, use warnings)</a></li>
 </ul>
 
-Check out the original <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
+Veja também o artigo original acessível em <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial em Inglês</a>
 

@@ -1,4 +1,4 @@
-﻿=title Instalando o Perl, imprimindo “Olá Mundo, Segurança (use strict, use warnings)
+﻿=title Instalando o Perl, imprimindo “Olá Mundo", Segurança (use strict, use warnings)
 =timestamp 2013-03-12T18:45:56
 =indexes strict, warnings, say, print, chomp, scalar, $
 =status show
@@ -26,9 +26,9 @@ Também vamos conferir o clássico exemplo do “Olá Mundo”.
 
 <h2>Windows</h2>
 
-Para trabalhar no Windows iremos utilizar o pacote <a href="http://dwimperl.com/">DWIM Perl</a>. Nele podemos encontrar o tradicional compilador/interpretador perl, a IDE de desenvolvimento PADRE, escrita em Perl <a href="http://padre.perlide.org/"> e mais um conjunto de extensões presentes no CPAN.
+Para trabalhar no Windows iremos utilizar o pacote <a href="http://dwimperl.com/">DWIM Perl</a>. Nele podemos encontrar o tradicional compilador/interpretador perl, a IDE de desenvolvimento PADRE, escrita em Perl e mais um conjunto de extensões presentes no <a href="http://padre.perlide.org/">CPAN.</a>
 
-Para que possamos começar, entre na página do <a href="http://dwimperl.com/">DWIM Perl</a> e clique no link para realizar o Download <b>DWIM Perl for Windows</b>.
+Para que possamos começar, entre na página do <a href="http://dwimperl.com/">DWIM Perl</a> e clique no link para realizar o Download do <b>DWIM Perl for Windows</b>.
 
 Baixe para a sua máquina o executável <i>.exe</i> e instale-o em seu sistema. Antes de prosseguir com a instalação certifique-se de que não há outras versões do Perl instaladas.
 
@@ -37,11 +37,11 @@ Por enquanto vamos instalar apenas uma versão do Perl.
 
 <h2>Linux</h2>
 
-A maioria das distribuições modernas do Linux já possuem uma versão recente do Perl. Por enquanto usaremos a própria versão do sistema operacional. No caso do editor de texto, você poerá instalar o Padre - a maioria das distribuições oferecem o Padre em seus repositórios nativos de software, pelo gerenciador de pacotes do sistema. Caso contrário, você pode utilizar qualquer editor de texto tradicional . Se você está mais familiarizado com vim ou Emas, use aquele que você preferir. Outra boa opção simples é o Gedit.
+A maioria das distribuições modernas do Linux já possuem uma versão recente do Perl. Por enquanto usaremos a própria versão do sistema operacional. No caso do editor de texto, você poerá instalar o Padre - a maioria das distribuições oferecem o Padre em seus repositórios nativos de software, pelo gerenciador de pacotes do sistema. Caso contrário, você pode utilizar qualquer editor de texto tradicional . Se você está mais familiarizado com vim ou Emacs, use aquele que você preferir. Outra boa opção simples é o Gedit.
 
 <h2>Apple</h2>
 
-E acredito que o Mac também possua Perl instalado em seus sistema, ou caso não tenha você pode facilmente instalar a partir das ferramentas de instalação do sistema.
+Eu acredito que o Mac também possua Perl instalado em seus sistema, ou caso não tenha, você pode facilmente instalar a linguagem a partir das ferramentas de instalação do sistema.
 
 <h2>Editor e IDE</h2>
 
@@ -52,7 +52,7 @@ O pacote DWIM possui várias extensões em Perl empacotadas, dessa forma realiza
 
 <h2>Video</h2>
 
-Se você preferir poerá também assistir o vídeo <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with
+Se você preferir poderá também assistir o vídeo <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with
 Perl</a> disponível no YouTube. Neste caso você também pode acessar o <a href="http://perl5maven.com/beginner-perl-maven-video-course">curso iniciante do Perl Maven</a>
 
 <h2>Primeiro programa</h2>
@@ -81,7 +81,7 @@ print "Olá Mundo\n";
 
 Como você pode ver, as declarações em perl terminam com um ponto e vírgula ( ; ).
 O <b>\n</b> é o sinal utilizado para denotar uma nova linha.
-O texto é demarcado com aspas duplas <b>"</b>.
+O texto é demarcado com aspas duplas ( " ).
 A função <b>print</b> imprime algo na tela.
 Quando é executado, o perl irá imprimir o texto na tela e ao final irá imprimir uma nova linha.
 
