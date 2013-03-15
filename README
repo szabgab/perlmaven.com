@@ -1,8 +1,134 @@
-The content of the http://br.perl5maven.com/ site.
+<<<<<<< HEAD
+Estes são os arquivos fonte dos artigos publicados no http://br.perl5maven.com/
+Copyright Gabor Szabo, exceto quando o campo =autor apresenta explicitamente outra pessoa.
 
-Content is copyright Gabor Szabo and Felipe Leprevost.
+
+FORMATO
+-------
+O formato evoluiu a partir do POD, HTML e Docbook. No momento está uma bagunça, eu sei. Eu vou ter que limpar isso.
+
+Visão Geral:
+
+No cabeçalho há
+
+   =chave valor
+
+pares de meta-informação.
+
+O texto entre
+
+   =abstract start
+
+   =abstract end
+
+é exibido nas primeiras páginas e está incluído no feed RSS / Atom.
 
 
-The source files for the English version can be found in https://github.com/szabgab/perl5maven.com
-where you can also find description of the FORMAT and ideas how to promote the articles.
+Para títulos internos é utilizado a tag <h2>
+<hl></hl> significa algo em destaque e geralmente deve ser utilizado para trechos de código
+dentro do corpo do texto.
+OUtros tipos de texto importante deverão ser marcados com <b></b>
 
+Trechos de código estão envoltos em
+
+   <code lang="perl">
+   </code>
+
+
+
+TRADUÇÕES
+-------------
+O repositório https://github.com/szabgab/br.perl5maven.com. armazena todo o material de tradução 
+do Perl 5 Maven para o Português.
+
+
+DIVULGAÇÃO
+----------
+
+Quando os artigos são publicados são postados nas redes sociais Google+, Twitter e às vezes Facebook.
+Eles também são destacados no LinkedIn.
+
+Um e-mail também é enviado para as pessoas que se cadastraram no site Maven Perl 5.
+
+Muitos dos artigos são incluídos no boletim informativo semanal Perl (Perl Weekly newsletter).
+
+
+De vez em quando um link será postado no Reddit (http://www.reddit.com/)
+mas eu prefiro ver as outras pessoas postarem o material lá caso os achem interessante.
+O mesmo ocorre com o Hacker News: https://news.ycombinator.com/
+
+
+SEO explicado em 5 palavras
+------------------------
+"Obtenha links de fontes confiáveis​​" ~ Jon Morrow
+
+A melhor divulgação é se as pessoas acham que vale a pena mencionar um
+dos artigos em um blog ou em alguma outra forma.
+=======
+These are the source files of the articles published on http://perl5maven.com/
+Copyright Gabor Szabo except where the =author field explicitly shows someone else.
+
+
+FORMAT
+-------
+The format has evolved from POD, HTML and Docbook. It is now a mess. I know. I'll have to clean that up.
+
+The overview:
+
+In the header there are
+
+  =key value
+
+pairs of meta information.
+
+The text between
+
+  =abstract start
+
+  =abstract end
+
+is displayed on the front pages and is included in the RSS/Atom feed.
+
+
+For internal titles  <h2> is used
+<hl></hl> stands for highlight and usually code-snippets inside the text are marked with these.
+Other imporant pieces are marked with <b></b>
+
+Code snippets are wrapped in 
+
+  <code lang="perl">
+  </code>
+
+
+
+TRANSLATIONS
+-------------
+There is the beginning of a Brazilian Portuguese translation in the
+https://github.com/szabgab/br.perl5maven.com repository.
+
+
+PROMOTION
+----------
+
+When articles are published they are posted to Google+, Twitter and sometimes even to Facebook.
+They are also posted on LinkedIN.
+
+An e-mail is sent out to the people who registered on the Perl 5 Maven site.
+
+Many of the articles are included the Perl Weekly newsletter.
+
+
+Once in a while I post a link to Reddit ( http://www.reddit.com/ )
+but I'd rather see others post there if they find the article worth the mention.
+The same with Hacker News: https://news.ycombinator.com/
+
+
+SEO explained in 5 words
+------------------------
+"Get links from trusted sources" ~ Jon Morrow
+
+The best promotion is if people find it worth to mention one
+of the articles in a blog post or in some other form.
+
+
+>>>>>>> 34488680f4a2e23aaeb43a09d5b207233237d799
