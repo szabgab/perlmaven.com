@@ -1,0 +1,24 @@
+=title Perl Books
+=timestamp 2013-02-09T23:45:56
+=description Perl books
+=tags e-book
+=status show
+=showright 0
+=newsletter 0
+=published 0
+=author 0
+=index 0
+=archive 0
+=feed 0
+=comments 0
+=social 0
+
+The following Perl books are currently available:
+
+<ul>
+  <li><a href="/beginner-perl-maven-e-book">Beginner Perl Maven e-book</a></li>
+  <li><a href="/advanced-perl-maven-e-book">Advanced Perl Maven e-book</a></li>
+  <li><a href="/test-automation-using-perl-e-book">Test Automation using Perl e-book</a></li>
+  <li><a href="/perl-maven-cookbook">The Perl Maven Cookbook</a></li>
+</ul>
+
