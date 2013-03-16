@@ -45,9 +45,9 @@ say "\x{20B9}"; # &#8377;
 </code>
 
 
-Of course if you are creating an HTML page then you'd better iclude the HTML entity representing the same character
-whith is an at sign (&) followed by a pound sign (#), followed by the decimal representation of the code point,
-followed by a semi-colon. To convert the Hexadecimal values to decmal values you can do the following in perl:
+Of course if you are creating an HTML page then you'd better include the HTML entity representing the same character
+which is an at sign (&) followed by a pound sign (#), followed by the decimal representation of the code point,
+followed by a semi-colon. To convert the Hexadecimal values to decimal values you can do the following in perl:
 
 <code lang="perl">
 print 0x20A8, "\n";  # 8360
