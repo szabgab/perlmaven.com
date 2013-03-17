@@ -1,0 +1,121 @@
+=title Hashes
+=timestamp 2013-03-17T11:12:06
+=indexes hash, key, value, associative
+=status show
+=books beginner_book
+=author leprevost
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+In this chapter we are going to learn about one of the powerful tools in Perl programming: hashes.
+Some times called associative arrays, dictionaries or maps, hashes are one of the basic data structures available in Perl.
+
+=abstract end
+
+Hashes, like other Perl variables, are declared using the <hl>my</hl> keyword. The variable name is preceded by the <hl>%</hl> symbol.
+
+It's a little mnemonic trick to help you remind about the key-value structure. Don't worry you will get it in a moment.
+
+Similarly to arrays, hashes can hold a series of elements that can also be retrieved at will, the major difference is the way how this happens. When retrieving an element from an array you should use its <hl>index</hl>. When retrieving elements from hashes, you should use names , or its <hl>keys</hl>.
+
+Each hash key is associated to a <hl>value</hl> and they are all unique inside the hash structure. That means no repetitive keys are allowed.
+
+In practice, when you place inside a hash a pair of key and value, you are placing inside its structure two scalars that are converted to text.
+
+<h2> Hash basics </h2>
+
+Lets create a hash and see how they work:
+
+<code lang="perl">
+my %hash;
+</code>
+
+In order to access a hash element you should do the following:
+
+<code lang="perl">
+$hash{$<key_name>};
+</code>
+
+When accessing a specific key-value pair, the hash is called using the <hl>$</hl> symbol because pairs are stored as scalars.
+
+Since our hash was create and not populated the code written above will return nothing, so lets place inside the hash a few elements:
+
+<code lang="perl">
+$hash{“apple”} = “red”;
+$hash{“orange”} = “orange”;
+$hash{“grape”} = “purple”;
+</code>
+
+We could also have instantiated the variable with the key-value pairs simultaneous passing to the hash a list of key-value pairs:
+
+<code lang="perl">
+my %hash = (
+“apple” => “red”,
+“orange” => “orange”,
+“grape” => “purple”,
+);
+</code>
+
+This is called the 'big arrow notation', and its used to indicate pairs of elements.
+
+Now, we can do the following in order to access the value of the <i>apple</i> key:
+
+<code lang="perl">
+print $hash{“apple”};
+</code>
+
+The returned value is :
+
+<code lang="perl">
+> red.
+</code>
+
+Now lets see what happens when we include another key-value pair using a already stored key:
+
+<code lang="perl">
+$hash{“apple”} = “green”;
+print $hash{“apple”};
+</code>
+
+The result will be:
+<code lang="perl">
+> “green”;
+</code>
+
+As you can see the value associated to the <hl>apple</hl> key was overwritten, so remember, keys should be unique.
+
+Now you can understand why the <hl>%</hl> symbol, the two little spheres are like pairs of things, or in our case, keys-values.
+
+<h2> Hash size </h2>
+
+There is a quick way to know the size of a hash, and for that you have to use the <hl>keys</hl> keyword:
+
+<code lang="perl">
+my $hash_size = keys %hash;
+print $hash_size;
+</code>
+
+This will print the number of key-value pairs:
+
+<code lang="perl">
+> 3
+</code>
+
+<h2> Iterating over hashes </h2>
+
+This is how a for loop looks like when iterating over a hash:
+
+<code lang="perl">
+for my $key (keys %hash) {
+    print “the key is: $key and the value is $hash{$key}”;
+}
+</code>
+
+<h2> Conclusion </h2>
+You have learned the basics about one of the most important and powerful data structures in Perl, a little step closer to become a Perl Maven.
+
