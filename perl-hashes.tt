@@ -18,9 +18,9 @@ Some times called associative arrays, dictionaries or maps, hashes are one of th
 
 =abstract end
 
-A hash is an un-ordered group of key-value pairs. The keys are uniques strings. The values are scalar values.
+A hash is an un-ordered group of key-value pairs. The keys are unique strings. The values are scalar values.
 Each value can be either a number, a string or a reference. (We'll learn about references later, but those allow
-us to build multi-dimensional data strctures.
+us to build multi-dimensional data structures.
 
 Hashes, like other Perl variables, are declared using the <hl>my</hl> keyword. The variable name is preceded by the
 percentage (<hl>%</hl>) symbol.
@@ -71,15 +71,15 @@ because we are accessing a single value which is a <b>scalar</b>.
 
 <h2>Fetch and element of a hash</h2>
 
-Quite similar to the way we insterted an element we can also fetch the value of an element.
+Quite similar to the way we inserted an element we can also fetch the value of an element.
 
 <code lang="perl">
 print $color_of{apple};
 </code>
 
-If the key does not exist, the hash will return an <a href="http://perl5maven.com/undef-and-defined-in-perl">undef</a>,
+If the key does not exist, the hash will return an <a href="/undef-and-defined-in-perl">undef</a>,
 and if <hl>warnings</hl> are enabled, as they should be, then we'll get a
-<a href="http://perl5maven.com/use-of-uninitialized-value">warning about uninitialized value</a>.
+<a href="/use-of-uninitialized-value">warning about uninitialized value</a>.
 
 <code lang="perl">
 print $color_of{orange};
@@ -88,8 +88,8 @@ print $color_of{orange};
 Let's a few more key-value pairs to the hash:
 
 <code lang="perl">
-$color_of{orange} = “orange”;
-$color_of{grape} = “purple”;
+$color_of{orange} = "orange";
+$color_of{grape} = "purple";
 </code>
 
 <h2>Initialize a hash with values</h2>
@@ -98,9 +98,9 @@ We could have instantiated the variable with the key-value pairs simultaneous pa
 
 <code lang="perl">
 my %color_of = (
-    “apple”  => “red”,
-    “orange” => “orange”,
-    “grape”  => “purple”,
+    "apple"  => "red",
+    "orange" => "orange",
+    "grape"  => "purple",
 );
 </code>
 
@@ -110,9 +110,9 @@ The name fat comma is used, because these arrows are basically the same as comma
 
 <code lang="perl">
 my %color_of = (
-    “apple”,  “red”,
-    “orange”, “orange”,
-    “grape”,  “purple”,
+    "apple",  "red",
+    "orange", "orange",
+    "grape",  "purple",
 );
 </code>
 
@@ -120,9 +120,9 @@ Actually the fat comma allows you to leave out the quotes on the left-hand side 
 
 <code lang="perl">
 my %color_of = (
-    apple  => “red”,
-    orange => “orange”,
-    grape  => “purple”,
+    apple  => "red",
+    orange => "orange",
+    grape  => "purple",
 );
 </code>
 
@@ -132,8 +132,8 @@ my %color_of = (
 Let's see what happens when we assign another value to an existing key:
 
 <code lang="perl">
-$color_of{apple} = “green”;
-print $color_of{“apple”};     # green
+$color_of{apple} = "green";
+print $color_of{apple};     # green
 </code>
 
 The assignment changed the value associated with the <hl>apple</hl> key. Remember, keys are unique and each key has a
@@ -148,16 +148,16 @@ to get the list of keys. Then you can iterate over those keys:
 <code lang="perl">
 my @fruits = keys %color_of;
 for my $fruit (@fruits) {
-    print “The color of '$fruit' is $color_of{$fruit}\n”;
+    print "The color of '$fruit' is $color_of{$fruit}\n";
 }
 </code>
 
-You don't even need to use the temporary varible <hl>@fruits</hl>, you can iterate
+You don't even need to use the temporary variable <hl>@fruits</hl>, you can iterate
 over directly the return values of the <hl>keys</hl> function:
 
 <code lang="perl">
 for my $fruit (keys %color_of) {
-    print “The color of '$fruit' is $color_of{$fruit}\n”;
+    print "The color of '$fruit' is $color_of{$fruit}\n";
 }
 </code>
 
