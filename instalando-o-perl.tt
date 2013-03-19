@@ -46,7 +46,7 @@ Eu acredito que o Mac também possua Perl instalado em seus sistema, ou caso nã
 <h2>Editor e IDE</h2>
 
 Mesmo que eu esteja recomendando, você não precisa utilizar a IDE Padre para escrever seus códigos. Na próxima parte eu
-irei listar alguns <a href="http://perl5maven.com/perl-editor">editores e IDEs</a> que poderão ser utilizados para programar em Perl. Mesmo que escolha um outro editor, eu recomendo - para usuários de Windows - instalar o pacote DWIM mencionado acima.
+irei listar alguns <a href="/editores-perl">editores e IDEs</a> que poderão ser utilizados para programar em Perl. Mesmo que escolha um outro editor, eu recomendo - para usuários de Windows - instalar o pacote DWIM mencionado acima.
 
 O pacote DWIM possui várias extensões em Perl empacotadas, dessa forma realizar a sua instalação seria uma economia de tempo.
 
@@ -93,7 +93,7 @@ Agora vamos melhorá-lo um pouco:
 
 <h2>Perl na linha de comandos</h2>
 
-Se você não estiver utilizando o Padre ou uma das opções descritas em <a href="http://perl5maven.com/perl-editor">IDEs</a>, não será possível executar seu script a partir do próprio editor. Ao menos não pelas configurações padrão. Você precisar abrir o shell (ou o cmd no Windows), mudar para o diretório do script salvo e digitar: 
+Se você não estiver utilizando o Padre ou uma das opções descritas em <a href="/editores-perl">IDEs</a>, não será possível executar seu script a partir do próprio editor. Ao menos não pelas configurações padrão. Você precisar abrir o shell (ou o cmd no Windows), mudar para o diretório do script salvo e digitar: 
 
 <b>perl ola.pl</b>
 
@@ -221,6 +221,6 @@ Então imprima a soma dos dois números.
 
 <h2>O que vem em seguida?</h2>
 
-A próxima parte do tutorial será sobre <a href="http://perl-maven.com/perl-editor">editores, IDEs e ambientes de desenvolvimento em Perl</a>.
+A próxima parte do tutorial será sobre <a href="/editores-perl">editores, IDEs e ambientes de desenvolvimento em Perl</a>.
 
 
