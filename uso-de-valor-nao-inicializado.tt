@@ -1,10 +1,10 @@
 =title Uso de valor não inicializado
-=timestamp 2012-09-05T21:45:56
+=timestamp 2014-03-20T23:45:56
 =indexes undef, valor não inicializado, $|, avisos, buferização
 =status show
 =books beginner_book
 =author szabgab
-=translator fred lopes
+=translator fred_lopes
 =index 1
 =archive 1
 =feed 1
@@ -160,3 +160,4 @@ Esse código também produz <hl>Use of uninitialized value $x in say at perl_war
 Consegui cometer esse engano várias vezes. Sem prestar atenção, usei <hl>my $x</hl> dentro do bloco <hl>if</hl>, o que significa que criei outra variável <hl>$x,/hl>, atribuí 42 a ela e usei-a fora do escopo no fim do bloco. (O <hl>$y = 1</hl> serve apenas para guardar lugar para algum código de verdade em condições reais. Está aí apenas para fazer esse exemplo ficar um pouco mais realista.)
 
 Existem, é claro, casos em que preciso declarar uma variável dentro de um bloco <hl>if</hl>, mas nem sempre. Quando o faço por engano, encontrar o erro é uma atividade penosa.
+

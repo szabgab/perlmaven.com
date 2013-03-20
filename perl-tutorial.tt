@@ -15,6 +15,7 @@
 <ul>
   <li><a href="/instalando-o-perl">Instalando o Perl, imprimindo “Olá Mundo", Segurança (use strict, use warnings)</a></li>
   <li><a href="/editores-perl">Editores, IDEs e ambientes de desenvolvimento para Perl</a></li>
+  <li><a href="/uso-de-valor-nao-inicializado">Uso de valor não inicializado</a></li>
 
 </ul>
 
