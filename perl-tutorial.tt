@@ -22,7 +22,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on March 15, 2013.
+parts are being published every few days. The latest one was published on March 21, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -94,7 +94,7 @@ to practice what you have learned.
 <li><a href="/writing-to-files-with-perl">Writing to files</a></li>
 <li><a href="appending-to-files">Appending to files</a></li>
 <li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
-<li><a href="http://szabgab.com/open-files-in-the-old-way.html">Don't open files in the old way</a></li>
+<li><a href="/open-files-in-the-old-way">Don't open files in the old way</a></li>
 <li>Binary mode, dealing with Unicode</li>
 <li>Reading from a binary file, read, eof</li>
 <li>tell, seek</li>
@@ -134,7 +134,7 @@ to practice what you have learned.
 
 <b>Hashes, arrays</b>
 <ol>
-<li>Perl Hashes (dictionary, associative array, look-up table)</li>
+<li><a href="/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
 <li>exists, delete hash elements</li>
 </ol>
 
