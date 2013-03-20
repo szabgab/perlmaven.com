@@ -1,6 +1,6 @@
 =title Hashes in Perl
 =timestamp 2013-03-19T11:12:06
-=indexes hash, key, value, associative, %, =>, fat arrow, fat comma
+=indexes hash, keys, value, associative, %, =>, fat arrow, fat comma
 =status show
 =books beginner_book
 =author szabgab
