@@ -4,7 +4,7 @@
 =status show
 =books beginner_book
 =author szabgab
-=translator fred lopes
+=translator fredlopes
 =index 1
 =archive 1
 =feed 1
@@ -157,6 +157,6 @@ say $x;
 
 Esse código também produz <hl>Use of uninitialized value $x in say at perl_warning_1.pl line 11.</hl>
 
-Consegui cometer esse engano várias vezes. Sem prestar atenção, usei <hl>my $x</hl> dentro do bloco <hl>if</hl>, o que significa que criei outra variável <hl>$x,/hl>, atribuí 42 a ela e usei-a fora do escopo no fim do bloco. (O <hl>$y = 1</hl> serve apenas para guardar lugar para algum código de verdade em condições reais. Está aí apenas para fazer esse exemplo ficar um pouco mais realista.)
+Consegui cometer esse engano várias vezes. Sem prestar atenção, usei <hl>my $x</hl> dentro do bloco <hl>if</hl>, o que significa que criei outra variável <hl>$x</hl>, atribuí 42 a ela e usei-a fora do escopo no fim do bloco. (O <hl>$y = 1</hl> serve apenas para guardar lugar para algum código de verdade em condições reais. Está aí apenas para fazer esse exemplo ficar um pouco mais realista.)
 
 Existem, é claro, casos em que preciso declarar uma variável dentro de um bloco <hl>if</hl>, mas nem sempre. Quando o faço por engano, encontrar o erro é uma atividade penosa.
