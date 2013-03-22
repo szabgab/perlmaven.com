@@ -92,7 +92,6 @@ use warnings;
 
 my $x = "4T";
 my $y = 3;
-
 </code>
 
 A concatenação converte ambos os valores em texto.
@@ -114,8 +113,8 @@ Este é o aviso que você recebe quando o perl está tentando converter um texto
 em um número e a conversão não é perfeita.
 
 Existe ainda uma série de outros avisos e erros comuns em Perl.
-Por exemplo <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
-e <a href="/use-of-uninitialized-value">Use of uninitialized value</a>. 
+Por exemplo <a href="http://perl5maven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
+e <a href="http://perl5maven.com/use-of-uninitialized-value">Use of uninitialized value</a>. 
 
 <h2>Como evitar os avisos?</h2>
 
