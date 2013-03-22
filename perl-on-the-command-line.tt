@@ -31,16 +31,16 @@ Start -> Run -> type in "cmd" -> ENTER
 
 You will see the black window of CMD with a prompt that probably looks like this:
 
-<pre>
+<code>
 c:\>
-</pre>
+</code>
 
 <h2>Perl version</h2>
 
 Type in <hl>perl -v</hl>. This will print something like this:
 
-<pre>
-C:\>perl -v
+<code>
+C:\> perl -v
 
 This is perl 5, version 12, subversion 3 (v5.12.3)
   built for MSWin32-x86-multi-thread
@@ -53,7 +53,7 @@ GNU General Public License, which may be found in the Perl 5 source kit.
 Complete documentation for Perl, including FAQ lists, should be found on
 this system using "man perl" or "perldoc perl".  If you have access to the
 Internet, point your browser at http://www.perl.org/, the Perl Home Page.
-</pre>
+</code>
 
 Based on this, I can see that I have version 5.12.3 of Perl installed on this Windows machine.
 
@@ -104,6 +104,6 @@ by Peteris Krumins.
 <h2>Next</h2>
 
 The next part is about
-<a href="http://szabgab.com/core-perl-documentation-cpan-module-documentation.html">core Perl documentation and CPAN module documentation</a>.
+<a href="/core-perl-documentation-cpan-module-documentation">core Perl documentation and CPAN module documentation</a>.
 
 
