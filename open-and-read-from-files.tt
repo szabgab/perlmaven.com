@@ -82,7 +82,7 @@ you will see only the "less-than" sign.
 use strict;
 use warnings;
 
-my $filename = 'report.txt';
+my $filename = 'data.txt';
 open(my $fh, '<:encoding(UTF-8)', $filename)
   or die "Could not open file '$filename' $!";
 
