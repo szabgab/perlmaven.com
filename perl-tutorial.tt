@@ -1,4 +1,4 @@
-=title Tutorial Perl em Português 
+=title Tutorial Perl em Português
 =timestamp 2012-05-02T22:45:56
 =status show
 =showright 1
@@ -16,6 +16,12 @@
   <li><a href="/instalando-o-perl">Instalando o Perl, imprimindo “Olá Mundo", Segurança (use strict, use warnings)</a></li>
   <li><a href="/editores-perl">Editores, IDEs e ambientes de desenvolvimento para Perl</a></li>
   <li><a href="/uso-de-valor-nao-inicializado">Uso de valor não inicializado</a></li>
+
+<!--
+  <li><a href="/perl-na-linha-de-comandos">Perl na linha de comandos</a></li>
+  <li><a href="/conversao-automatica-entre-valores">Conversão Automática entre texto e número em Perl</a></li>
+  <li><a href=""></a></li>
+-->
 
 </ul>
 
