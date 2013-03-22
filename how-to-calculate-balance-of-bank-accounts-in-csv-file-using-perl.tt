@@ -194,7 +194,7 @@ I put the word "modern" in quotes because this is available since 2000 so it is 
 new, but still many people learn the old style first.
 
 There is an article why one
-<a href="http://szabgab.com/open-files-in-the-old-way.html">should not open files in the old way in Perl</a>,
+<a href="/open-files-in-the-old-way">should not open files in the old way in Perl</a>,
 I won't repeat it here, I'll just fix the code:
 
 <code lang="perl">

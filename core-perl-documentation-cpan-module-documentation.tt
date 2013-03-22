@@ -43,7 +43,7 @@ The most important page might be <a href="http://perldoc.perl.org/perlvar.html">
 where you can find information about variables such as <hl>$_</hl> and <hl>@_</hl>.
 
 <a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> explains the syntax of Perl
-including that of the <a href="http://szabgab.com/perl-tutorial--while-loop.html">while loop</a>.
+including that of the <a href="/while-loop">while loop</a>.
 
 <h2>perldoc on the command line</h2>
 
