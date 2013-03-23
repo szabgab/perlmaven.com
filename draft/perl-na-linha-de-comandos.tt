@@ -1,8 +1,7 @@
 ﻿=title Perl na linha de comandos
-=timestamp 2013-03-17T10:05:23
-=indexes -v, -e, -p, -i
+=timestamp 2013-03-21T00:26:15
+=indexes comando, one-liner, -v, -e, -p, -i
 =status show
-=books beginner_book
 =author szabgab
 =translator leprevost
 =index 1
@@ -12,17 +11,38 @@
 =social 1
 
 =abstract start
+
+Enquanto a maior parte dos <a href="/perl-tutorial">Tutoriais Perl</a> lidam
+com scripts salvos em um arquivo, nós também veremos alguns exemplos
+de <i>one-liners</i>.
+
+Mesmo que você esteja utilizando o <a href="http://padre.perlide.org/">Padre</a>
+ou alguma outra IDE que lhe permita executar seus scripts a partir do editor,
+é muito importante se familiarizar com a linha de comandos (ou o <i>shell</i>)
+e ser capaz de utilizar o perl.
+
 =abstract end
 
-<h2>Verificando a versão do Perl</h2>
+Se você está utilizando o Linux, abra uma janela do terminal. Você deverá ver
+o <i>prompt</i> provavelmente terminando com um sinal $.
 
-Abra o terminal e digite <hl>perl -v</hl>. Irá imprimir algo parecido como isto:
+Se você está utilizando Windows abra a janela de comandos: Clique em
 
-<code>
-C:\> perl-v
-</code>
+Início -> Executar -> escreva "cmd" (sem as aspas) -> ENTER
 
-<code>
+Você verá a janela preta do CMD com o <i>prompt</i> que se parece dessa forma: 
+
+<pre>
+c:\>
+</pre>
+
+<h2>Verificando a versão do Perl</ h2>
+
+Abra o terminal e digite <b>perl-v</b>. Verá algo parecido com isso impresso:
+
+<pre>
+C: \> perl-v
+
 This is perl 5, version 12, subversion 3 (v5.12.3) built for MSWin32-x86-multi-thread
 
 Copyright 1987-2010, Larry Wall
@@ -33,55 +53,53 @@ GNU General Public License, which may be found in the Perl 5 source kit.
 Complete documentation for Perl, including FAQ lists, should be found on
 this system using "man perl" or "perldoc perl".  If you have access to the
 Internet, point your browser at http://www.perl.org/, the Perl Home Page.
-</code>
+</pre>
 
 Com base nisso, eu posso ver que eu tenho a versão 5.12.3 do Perl instalada no meu Windows.
 
-<h2>Imprimindo um número</h2>
+<h2> Imprimindo um número </ h2>
 
-Agora digite <hl>perl -e "print 42"</hl>.
-Isto irá imprimir o número <b>42</b> na tela. No Windows, o <b>prompt</b> irá aparecer direto na próxima linha
+Agora digite <b> perl -e "print 42" </ b>.
+Isto irá imprimir o número <b>42</b> na tela. No Windows, o <i>prompt</i> irá aparecer direto na próxima linha
 
-
-<code>
+<pre class="prettyprint">
 c:> perl -e "print 42"
 42
 c:>
-</code>
+</pre>
 
 No Linux você vai ver algo parecido com isto:
 
-<code>
+<pre class="prettyprint">
 gabor @ pm: ~ $ perl -e "print 42"
 42gabor @ pm: ~ $
-</code>
+</pre>
 
-O resultado está no início da linha, imediatamente seguido do <b>prompt</b>.
-Esta diferença tem como base o comportamento dos dois interpretadores na linha de comandos.
+O resultado está no início da linha, imediatamente seguido do <i>prompt</i>.
+Esta diferença baseia-se no comportamento dos dois interpretadores na linha de comandos.
 
-Neste exemplo, vamos usar o flag <hl>-e</hl> que diz ao perl,
+Neste exemplo, vamos usar o <i>flag</i> <b>-e</b> que diz ao perl,
 "Não espere um arquivo. A próxima coisa na linha de comando é na verdade um código Perl."
 
 Os exemplos acima são, naturalmente, não muito interessantes. Deixe-me mostrar um exemplo um pouco mais complexo.
 exemplo, sem explicá-lo:
 
-<h2>Substituindo Java por Perl</h2>
+<h2>Substituindo Java por Perl</ h2>
 
-Este comando: <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" resume.txt</hl>
-irá substituir todas as ocorrências da palavra <b>Java</b> pela palavra <b>Perl</b> em seu
+Este comando: <b>perl -i.bak -p -e "s/\bJava\b/Perl/" resume.txt</b>
+irá substituir todas as ocorrências da palavra <b>Java</ b> pela palavra <b>Perl</ b> em seu
 currículo, mantendo um backup do arquivo.
 
-No Linux você pode até escrever <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" *.txt</hl>
+No Linux você pode até escrever <b>perl -i.bak -p -e "s/\bJava\b/Perl/" *.txt</b>
 para substituir Java por Perl em <b>todos</b> os seus arquivos de texto.
 
 Em uma seção mais tarde nós vamos falar mais sobre os <i>one-liners</i> e você irá aprender como usá-los.
 O conhecimento sobre os <i>one-liners</i> é uma arma muito poderosa em suas mãos.
 
-Aliás se você está interessado em outros exemplos muito bons de <i>one-liners</i>, eu recomendo a leitura <a href="http://www.catonmat.net/blog/perl-book/">Perl One-Liners explained</a>
+Aliás se você está interessado em outros exemplos muito bons de <i>one-liners</i>, eu recomendo a leitura <a href="http://www.catonmat.net/blog/perl-book/">Perl One-Liners explained</ a>
 por Peteris Krumins.
 
-<h2>Em seguida</h2>
+<h2> Em seguida </ h2>
 
 A próxima parte será sobre
-<a href="http://perl5maven.com/core-perl-documentation-cpan-module-documentation">Documentação do núcleo do Perl e documentação de módulos do CPAN</a>.
-
+<a href="http://szabgab.com/core-perl-documentation-cpan-module-documentation.html"> Documentação do núcleo do Perl e documentação de módulos do CPAN</ a>.
