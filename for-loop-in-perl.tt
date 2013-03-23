@@ -1,8 +1,7 @@
 =title The for loop in Perl
-=timestamp 2013-01-17T14:45:56
-=tags Perl, for, foreach, loop, infinite loop
-=indexes for, foreach, loop
-=status draft ready for proofreading
+=timestamp 2013-03-23T20:45:13
+=indexes for, foreach, loop, infinite loop
+=status show
 =author szabgab
 =index 1
 =archive 1
@@ -23,11 +22,10 @@ but this construct is actually available in many programming languages.
 The <b>for</b> keyword in Perl can work in two different ways.
 It can work just as a <b>foreach</b> loop works and it can act
 as a 3-part C-style for loop. It is called C-style though
-this is employed in many languages.
+it is available in many languages.
 
-I'll describe how this works though in Perl people usually
-prefer to write the <hl>foreach</hl> style loop as described
-in the section about <a href="http://szabgab.com/perl-arrays.html">perl arrays</a>.
+I'll describe how this works although I prefer to write the <hl>foreach</hl>
+style loop as described in the section about <a href="http://szabgab.com/perl-arrays.html">perl arrays</a>.
 
 The two keywords <hl>for</hl> and <hl>foreach</hl> can be used as synonyms.
 Perl will work out which meaning you had in mind.
