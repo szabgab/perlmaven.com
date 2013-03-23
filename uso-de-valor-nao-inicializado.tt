@@ -1,5 +1,5 @@
 =title Uso de valor não inicializado
-=timestamp 2014-03-20T23:45:56
+=timestamp 2013-03-20T23:45:56
 =indexes undef, valor não inicializado, $|, avisos, buferização
 =status show
 =books beginner_book
