@@ -1,7 +1,8 @@
 =title Conversão Automática entre texto e número em Perl
-=timestamp 2013-03-21T23:36:56
+=timestamp 2013-03-25T15:36:15
 =indexes Scalar::Util, casting, ,conversão, tipo, texto, número
 =status show
+=books beginner_book
 =author szabgab
 =translator leprevost
 =index 1
@@ -57,7 +58,7 @@ Para o Perl, se o texto se parece como um número, então acaba sendo fácil.
 O valor numérico simplesmente é igual, sem as aspas.
 
 Caso haja algum caracter que impessa o perl de realizar a conversão total do texto para número,
-então o perl aproveitará o máximo do lado esquerdo do texto para o valor numérico, ignorando o resto. 
+então o perl aproveitará o máximo do lado esquerdo do texto para o valor numérico, ignorando o resto.
 
 Deixe-me mostrar alguns exemplos:
 
@@ -114,7 +115,7 @@ em um número e a conversão não é perfeita.
 
 Existe ainda uma série de outros avisos e erros comuns em Perl.
 Por exemplo <a href="http://perl5maven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
-e <a href="http://perl5maven.com/use-of-uninitialized-value">Use of uninitialized value</a>. 
+e <a href="http://perl5maven.com/use-of-uninitialized-value">Use of uninitialized value</a>.
 
 <h2>Como evitar os avisos?</h2>
 
@@ -130,10 +131,10 @@ Mais comum ainda quando "2." não é aceito, mas já em outros é totalmente ace
 
 Existem ainda lugares em que 0xAB é considerado um número. Um número hexadecimal.
 
-Portanto não há uma função do tipo <b>is_number</i>, mas há sim uma função menos comprometedora chamada 
+Portanto não há uma função do tipo <b>is_number</i>, mas há sim uma função menos comprometedora chamada
 <b>looks_like_number</b>.
 
-Ela faz exatamente o que você está imaginando. Ela irá verificar se um texto se parece com um número para o Perl. 
+Ela faz exatamente o que você está imaginando. Ela irá verificar se um texto se parece com um número para o Perl.
 
 Essa função pode ser utilizada através do módulo <a href="http://perldoc.perl.org/Scalar/Util.html">Scalar::Util</a>,
 e você pode utilizá-la da seguinte forma:
