@@ -1,6 +1,6 @@
 =title Conversão Automática entre texto e número em Perl
 =timestamp 2013-03-25T15:36:15
-=indexes Scalar::Util, casting, ,conversão, tipo, texto, número
+=indexes Scalar::Util, casting, conversão, tipo, texto, número
 =status show
 =books beginner_book
 =author szabgab
@@ -131,7 +131,7 @@ Mais comum ainda quando "2." não é aceito, mas já em outros é totalmente ace
 
 Existem ainda lugares em que 0xAB é considerado um número. Um número hexadecimal.
 
-Portanto não há uma função do tipo <b>is_number</i>, mas há sim uma função menos comprometedora chamada
+Portanto não há uma função do tipo <b>is_number</b>, mas há sim uma função menos comprometedora chamada
 <b>looks_like_number</b>.
 
 Ela faz exatamente o que você está imaginando. Ela irá verificar se um texto se parece com um número para o Perl.
