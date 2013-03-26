@@ -104,7 +104,7 @@ to practice what you have learned.
 <b>Lists and Arrays</b>
 <ol>
 <li>Perl foreach loop</li>
-<li><a href="http://szabgab.com/for-loop-in-perl.html">The for loop in Perl</a></li>
+<li><a href="/for-loop-in-perl">The for loop in Perl</a></li>
 <li>Lists in Perl</li>
 <li>Using Modules</li>
 <li><a href="/perl-arrays">Arrays in Perl</a></li>

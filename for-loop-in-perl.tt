@@ -1,7 +1,8 @@
 =title The for loop in Perl
-=timestamp 2013-03-23T20:45:13
+=timestamp 2013-03-26T08:46:13
 =indexes for, foreach, loop, infinite loop
 =status show
+=books beginner_book
 =author szabgab
 =index 1
 =archive 1
@@ -25,7 +26,7 @@ as a 3-part C-style for loop. It is called C-style though
 it is available in many languages.
 
 I'll describe how this works although I prefer to write the <hl>foreach</hl>
-style loop as described in the section about <a href="http://szabgab.com/perl-arrays.html">perl arrays</a>.
+style loop as described in the section about <a href="/perl-arrays">perl arrays</a>.
 
 The two keywords <hl>for</hl> and <hl>foreach</hl> can be used as synonyms.
 Perl will work out which meaning you had in mind.
@@ -129,7 +130,7 @@ while (1) {
 </code>
 
 It is described in the part
-about the <a href="http://szabgab.com/perl-tutorial--while-loop.html">while loop in perl</a>.
+about the <a href="/while-loop">while loop in perl</a>.
 
 <h2>perldoc</h2>
 
