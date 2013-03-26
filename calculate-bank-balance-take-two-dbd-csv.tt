@@ -209,7 +209,8 @@ Executing this so far gives the following output:
 $ perl banktran.pl
 Bad table or column name: '=' has chars not alphanumeric or underscore!
    at /usr/lib64/perl5/vendor_perl/5.12.3/SQL/Statement.pm line 88
-DBD::CSV::db prepare failed: Bad table or column name: '=' has chars not alphanumeric or underscore!
+DBD::CSV::db prepare failed: Bad table or column name: '='
+   has chars not alphanumeric or underscore!
    at /usr/lib64/perl5/vendor_perl/5.12.3/SQL/Statement.pm line 88
  [for Statement "
            SELECT
@@ -219,7 +220,8 @@ DBD::CSV::db prepare failed: Bad table or column name: '=' has chars not alphanu
              banktran
            GROUP BY
              AcNo"] at banktran.pl line 32.
-DBD::CSV::db prepare failed: Bad table or column name: '=' has chars not alphanumeric or underscore!
+DBD::CSV::db prepare failed: Bad table or column name: '='
+   has chars not alphanumeric or underscore!
    at /usr/lib64/perl5/vendor_perl/5.12.3/SQL/Statement.pm line 88
  [for Statement "
              SELECT
