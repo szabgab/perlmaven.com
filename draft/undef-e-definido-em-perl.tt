@@ -17,7 +17,7 @@ Em algumas linguages existe uma forma especial de se dizer "este campo não poss
 No <b>SQL</b>, <b>PHP</b> e <b>Java</b> é através do <hl>NULL</hl>. Em <b>Python</b> é
 <hl>None</hl> e em <b>Ruby</b> é chamado <hl>Nill</hl>.
 
-Em Perl o valor é chamado <hl>undef</hl>. 
+Em Perl o valor é chamado <hl>undef</hl>.
 
 Vamos ver alguns detalhes.
 
@@ -60,8 +60,8 @@ Mas antes disso, vamos ver um outro tópico:
 
 <h2>Como verificar se o valor de uma variável não é definido?</h2>
 
-A função <hl>defined()</hl> irá retornar <a href="/boolean-values-in-perl">verdadeiro</a> se
-o valor em questão não for <b>não definido</b>. E irá retornar <a href="/boolean-values-in-perl">falso</a>
+A função <hl>defined()</hl> irá retornar <a href="/valores-booleanos-em-perl">verdadeiro</a> se
+o valor em questão não for <b>não definido</b>. E irá retornar <a href="/valores-booleanos-em-perl">falso</a>
 se o valor não for definido, ou <b>undef</b>.
 
 Você pode utilizá-la da seguinte forma:
@@ -85,7 +85,7 @@ if (defined $x) {
 
 <h2>Qual é o verdadeiro valor de undef?</h2>
 
-Enquanto <b>undef</b> indica a ausência de valor, ainda assim não pode ser utilizado.
+Enquanto <hl>undef</hl> indica a ausência de valor, ainda assim não pode ser utilizado.
 O Perl oferece dois valores padrão para serem utilizdos no lugar de undef.
 
 Se você utiliza uma variável que é undef em uma operação numérica, ela atua como se fosse 0.
@@ -111,9 +111,9 @@ No exemplo acima a variável $x - que é undef por padrão - age como 0 na adiç
 No caso da concatenação (.), age como se fosse um texto vazio, e novamente como 0
 durante o auto incremento (++).
 
-Mesmo assim, não é algo à prova de falhas. Se você tivesse pedido para ativar os avisos pelo pragma <hl>use warnings</hl
-(<a href="/installing-perl-and-getting-started">que é bastante recomendado</a>)
-então teria dois avisos de <a href="/use-of-uninitialized-value">valor não inicializado</a>
+Mesmo assim, não é algo à prova de falhas. Se você tivesse pedido para ativar os avisos pelo pragma <hl>use warnings</hl>
+(<a href="/instalando-o-perl">que é bastante recomendado</a>)
+então teria dois avisos de <a href="http://perl5maven.com/use-of-uninitialized-value">valor não inicializado</a>
 para as duas primeiras operações, porém não para o auto incremento:
 
 <code>
@@ -126,3 +126,4 @@ Depois iremos ver que isso é bastante conveniente em lugares onde você gostari
 É claro que você pode também evistar os avisos através da inicialização das variáveis no valor incial correto
 (0 ou um texto vazio, dependendo do que esteja fazendo), ou pela possibilidade de desligar seletivamente os avisos.
 Nós vamos discturi isso em um outro artigo.
+

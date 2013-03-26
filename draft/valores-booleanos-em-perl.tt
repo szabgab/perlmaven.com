@@ -21,7 +21,7 @@ Então, qual deles é verdade?
 =abstract end
 
 O Perl não possui um tipo específico para valores booleanos, entretanto todo valor escalar - se verificado
-utilizando <b>if</b> irá retornar verdadeiro ou falso. Então, dessa forma você pode escrever: 
+utilizando <b>if</b> irá retornar verdadeiro ou falso. Então, dessa forma você pode escrever:
 
 <code lang="perl">
 if ($x eq "foo") {
@@ -35,7 +35,7 @@ if ($x) {
 }
 </code>
 
-No primeiro caso será avaliado se o conteúdo da variável <b>$x</b> é o mesmo que 
+No primeiro caso será avaliado se o conteúdo da variável <b>$x</b> é o mesmo que
 o texto "foo", enquanto que no segundo caso será avaliado se a própria variável $x
 é verdadeira ou falsa.
 
@@ -76,3 +76,5 @@ Eu acredito que as coisas funcionam dessa forma porque o <a href="http://www.wal
 criador do Perl possui de forma geral uma visão positiva do mundo.
 Ele provavelmente acredita que existem poucas coisas ruins e falsas no mundo.
 A maioria das coisas é verdadeira.
+
+
