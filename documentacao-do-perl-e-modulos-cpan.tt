@@ -1,5 +1,5 @@
 ﻿=title Documentação do núcleo da linguagem e de módulos do CPAN
-=timestamp 2013-03-25T22:22:14
+=timestamp 2013-03-27T23:22:14
 =indexes perldoc, documentação, POD, CPAN
 =status show
 =original core-perl-documentation-cpan-module-documentation
@@ -41,7 +41,7 @@ Infelizmente, o site não retorna a documentação de operações como o <b>whil
 necessário percorrer à documentação.
 
 Provavelmente a página mais importante é a<a href="http://perldoc.perl.org/perlvar.html">perlvar</a>,
-onde você pode encontrar informações sobre as diferentes variáveis como <b>$_</b> e <b>@_</b>.
+onde você pode encontrar informações sobre as diferentes variáveis como <hl>$_</hl> e <hl>@_</hl>.
 
 <a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> explica a sintaxe do Perl
 incluindo o <a href="http://perl5maven.com/while-loop">laço while</a>.

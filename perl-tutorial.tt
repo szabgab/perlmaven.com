@@ -18,9 +18,9 @@
   <li><a href="/uso-de-valor-nao-inicializado">Uso de valor não inicializado</a></li>
   <li><a href="/perl-na-linha-de-comandos">Perl na linha de comandos</a></li>
   <li><a href="/conversao-automatica-entre-valores">Conversão Automática entre texto e número em Perl</a></li>
+  <li><a href="/documentacao-do-perl-e-modulos-cpan">Documentação do núcleo da linguagem e de módulos do CPAN</a></li>
 
 <!--
-  <li><a href="/documentacao-do-perl-e-modulos-cpan">Documentação do núcleo da linguagem e de módulos do CPAN</a></li>
   <li><a href="/undef-e-definido-em-perl">undef, valor inicial e a função defined em Perl</a></li>
   <li><a href="/valores-booleanos-em-perl">Valores Booleanos em Perl</a></li>
   <li><a href=""></a></li>
