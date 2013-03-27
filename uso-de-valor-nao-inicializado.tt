@@ -2,6 +2,7 @@
 =timestamp 2013-03-20T23:45:56
 =indexes undef, valor não inicializado, $|, avisos, buferização
 =status show
+=original use-of-uninitialized-value
 =books beginner_book
 =author szabgab
 =translator fredlopes

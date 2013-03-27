@@ -2,6 +2,7 @@
 =timestamp 2013-03-17T10:05:23
 =indexes IDE, editor, Padre, vim, emacs, Eclipse, Komodo
 =status show
+=original perl-editor
 =books beginner_book
 =author szabgab
 =translator leprevost

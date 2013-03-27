@@ -2,6 +2,7 @@
 =timestamp 2013-03-12T18:45:56
 =indexes strict, warnings, say, print, chomp, scalar, $
 =status show
+=original installing-perl-and-getting-started
 =books beginner_book
 =author szabgab
 =translator leprevost

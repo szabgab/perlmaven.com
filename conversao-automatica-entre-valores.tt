@@ -2,6 +2,7 @@
 =timestamp 2013-03-25T15:36:15
 =indexes Scalar::Util, casting, conversão, tipo, texto, número
 =status show
+=original automatic-value-conversion-or-casting-in-perl
 =books beginner_book
 =author szabgab
 =translator leprevost
