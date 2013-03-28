@@ -34,12 +34,6 @@ Code snippets are wrapped in
 
 
 
-TRANSLATIONS
--------------
-There is the beginning of a Brazilian Portuguese translation in the
-https://github.com/szabgab/br.perl5maven.com repository.
-
-
 PROMOTION
 ----------
 
@@ -73,4 +67,26 @@ An add an 128x128 image of you to the img/ folder.
 
 
 
+TRANSLATIONS - LOCALIZATION
+---------------------------
+There is the beginning of a Brazilian Portuguese translation in the
+https://github.com/szabgab/br.perl5maven.com repository.
+
+*) The file names (that become the URLs) should be in LOCAL_LANGUAGE, but use only ASCII characters.
+   Transliterated to English. (I am not sure in this. Maybe a better thing would be to use LOCAL_LANGUAGE in the URLs?)
+   http://support.google.com/webmasters/bin/answer.py?hl=en&answer=182192
+*) The file names should more-or-less match the title of the page, they can contain words separated with dashes.
+*) Please add the header to each file (the meta information) including the planned publication date
+*) The links in the page should be working. If there is already a translation for the target page then link there,
+    if it only exists in English then please use full URLs including the hostname http://perl5maven.com/
+*) Please update the hidden(!) section of the perl-tutorial.tt to include the links to the entries.
+*) The text listing the author and the translator are added by the system and are driven from the header
+   tags =author and =translator
+*) Each author and translator has to have an entry in the authors.txt file listing a nickname (\w characters only),
+   The full name, the name of the image file containing their picture, link to their G+ profiles.
+*) Each author and translator needs to provide a picture in jpg or png format approximately 128x128 pixel size 
+   (an Avatar) to be shown at the bottom of each article
+*) Each author and translator should set up authorship by linking their Google+ profile to the CC.perl5maven.com
+   site. (e.g. br.perl5maven.com for the Brazilian Porguguese translators)
+   See http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
 
