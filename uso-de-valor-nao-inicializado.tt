@@ -1,5 +1,5 @@
 =title Uso de valor não inicializado
-=timestamp 2012-09-05T21:45:56
+=timestamp 2013-03-20T23:45:56
 =indexes undef, valor não inicializado, $|, alertas, buferização
 =status show
 =original use-of-uninitialized-value
