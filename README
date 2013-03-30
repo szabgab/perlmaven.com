@@ -1,4 +1,63 @@
-Spanish Translation of http://perl5maven.com/  hosted at http://es.perl5maven.com/
+Traducción al español del contenido publicado originalmente en http://perl5maven.com/ que está alojado en http://es.perl5maven.com/
 
-For further information check out the README file of https://github.com/szabgab/perl5maven.com
+Todo el contenido ha sido creado por Gabor Szabo al menos que se indique lo contrario en el campo =autor.
 
+FORMATO
+--------
+El formato ha evolucionado desde POD, HTML y Docbook. Ahora es un desastre. Lo sé. Voy a tener que limpiarlo.
+
+Visión general:
+
+En la cabecera existen pares:
+
+	=llave valor
+
+de meta información.
+
+El texto entre
+
+	=abstract start
+
+	=abstract end
+
+es mostrado en las páginas principales e incluido en el feed RSS/Atom.
+
+Para los títulos internos se usa <h2>
+<h1></h1> es usado para destacar algo y generalmente para los fragmentos de código dentro del texto.
+Cualquier otro texto importante se resalta con <b></b> 
+
+Los fragmentos de código se agrupan con
+
+	<code lang="perl">
+	</code>
+
+
+PROMOTION
+----------
+
+Cuando los artículos son publicados son compartidos en Google+, Twitter e incluso algunas veces en Facebook.
+También se comparten en LinkedIN.
+
+Se envía un correo electrónico a todas las personas registradas en el sitio web Perl 5 Maven.
+
+Muchos de los artículos se incluyen en el boletín de noticias Perl Weekly.
+
+De vez en cuando publico un enlace en Reddit ( http://www.reddit.com/ ) pero prefiero que otros lo publiquen ahí si consideran que el artículo vale la pena. Lo mismo pasa con Hacker News: https://news.ycombinator.com/
+
+
+SEO explicado en 5 palabras
+----------------------------
+"Obtén enlaces de fuentes confiables" ~ Jon Morrow
+
+La mejor promoción es cuando la gente considera si vale la pena mencionar uno de los artículos en un blog o cualquier otro medio.
+
+
+TRADUCCIONES
+-------------
+El repositorio para la traducción al portugués está en: https://github.com/szabgab/br.perl5maven.com
+
+El repositorio para la traducción al español está en: https://github.com/szabgab/es.perl5maven.com
+
+
+
+Para mayor información revisa el fichero README en https://github.com/szabgab/perl5maven.com

@@ -1,7 +1,7 @@
-=title Produtos Perl 5 Maven
+=title Productos Perl 5 Maven 
 =timestamp 2012-07-17T11:45:56
-=description Produtos Perl 5 Maven: e-books, vídeos cursos, aulas de treinamento pelo site
-=tags treinamento, curso, e-book, vídeos
+=description Productos de Perl 5 Maven: e-books, cursos de video, clases de entrenamiento
+=tags entrenamiento, curso, e-book, videos
 =status show
 =showright 0
 =newsletter 0
@@ -13,7 +13,7 @@
 =comments 0
 =social 0
 
-Products in English:
+Los siguientes productos están disponibles en Inglés:
 
 <h2>E-books</h2>
 <ul>
@@ -25,7 +25,7 @@ Products in English:
 
 <h2>Video courses</h2>
 
-Available via Udemy.
+Disponibles a través de Udemy.
 
 <ul>
   <li><a href="http://perl5maven.com/beginner-perl-maven-video-course">Beginner Perl Maven video course</a></li>
