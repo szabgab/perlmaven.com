@@ -1,0 +1,243 @@
+=title Instaleaza Perl in Windows, Linux si Mac
+=timestamp 2013-04-03T18:45:56
+=indexes strict, warnings, say, print, chomp, scalar, $
+=status show
+=original installing-perl-and-getting-started
+=books beginner_book
+=author szabgab
+=translator tudorconstantin
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+Aceasta este prima parte a <a href="/perl-tutorial">tutorialului de Perl</a>.
+
+In aceasta parte vei invata cum sa instalezi Perl-ul pe Microsoft Windows precum si primii pasi in folosirea Perl-ului in Windows, Linux si Mac.
+
+Vei invata sa-ti setezi mediul de dezvoltare (development environment), sau, spus mai simplu: ce editor sa folosesti pentru a scrie cod Perl.
+
+Deasemenea vom vedea cum se implementeaza faimosul program "Hello World" in Perl.
+
+=abstract end
+
+<h2>Windows</h2>
+
+Pentru Windows vom folosi <a href="http://dwimperl.com/">DWIM Perl</a>. Este un pachet care contine compilatorul/interpretorul de Perl,
+<a href="http://padre.perlide.org/">Padre, IDE-ul pentru Perl</a>, precum si un numar de extensii din CPAN.
+
+Pentru a incepe, du-te la site-ul <a href="http://dwimperl.com/">DWIM Perl</a>
+si da click pe linkul de download cu titlul <b>DWIM Perl for Windows</b>.
+
+Downloadeaza fisierul executabil si instaleaza-l la tine pe calculator. Inainte de asta, asigura-te ca nu mai ai nicio versiune de Perl instalata.
+
+S-ar putea sa functioneze impreuna, dar ar necesita explicatii suplimentare.
+Deocamdata sa ramanem la o singura versiune de Perl instalata pe calculator.
+
+<h2>Linux</h2>
+
+Majoritatea distributiilor de linux vin cu o versiune (relativ) recenta de Perl preinstalat. 
+Deocamdata vom folosi acea versiune. Pentru editor (IDE), poti instala Padre - majoritatea distributiilor de linux
+il au ofera in sistemele de management de pachete. Altfel, poti alege orice editor de texte obisnuit.
+Daca esti obisnuit cu vim sau Emacs, foloseste-l pe cel ce-ti place mai mult. Si Gedit poate fi un editor simplu si bun.
+
+
+<h2>Apple</h2>
+
+Mac-urile vin probabil cu un Perl instalat, sau il poti instala ca orice alt program standard de Mac.
+
+
+<h2>Editor si IDE</h2>
+
+Chiar daca este recomandat, nu trebuie sa folosesti Padre ca editor pentru a scrie cod Perl.
+In partile urmatoare vei gasi o lista de <a href="/perl-editor">editoare si IDE-uri</a> pe care le poti folosi pentru a programa in Perl.
+Chiar daca alegi sa folosesti alte editoare, iti recomand - daca esti pe Windows - sa instalezi DWIM-ul mai sus mentionat.
+Vine la pachet cu o multitudine de extensii de Perl gata instalate si iti va salva o gramada de timp pe parcurs.
+
+<h2>Video</h2>
+
+In caz ca preferi filmuletele, poti viziona <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">"Hello world"-ul in Perl</a> pe Youtube (versiunea in limba engleza).
+In cazul acesta, s-ar putea sa ti se para interesant si cursul de <a href="/beginner-perl-maven-video-course">Omniscienta in Perl</a> (deasemenea in limba engleza).
+
+<h2>Primul program</h2>
+
+Primul tau program va arata asa:
+
+<code lang="perl">
+use 5.010;
+use strict;
+use warnings;
+
+say "Hello World";
+</code>
+
+Explicatiile pas cu pas:
+
+<h2>Hello world</h2>
+
+Odata ce ai instalat DWIM Perl, da click pe "Start -> All programs -> DWIM Perl -> Padre" si ti se va deschide editorul cu un fisier gol.
+
+Scrie in el:
+
+<code lang="perl">
+print "Hello World\n";
+</code>
+
+Dupa cum vezi, instructiunile in Perl se termina cu un punct si virgula <hl>;</hl>
+<hl>\n</hl>-ul este semnul folosit pt a reprezenta o linie noua.
+String-urile sunt intre ghilimele <hl>"</hl>.
+Functia <hl>print</hl> scrie pe ecran.
+Cand executi acest program, va aparea pe ecran textul(Hello World - poti scrie orice acolo), la sfarsitul caruia va fi linia noua.
+
+Salveaza fisierul ca hello.pl si apoi executa codul selectand "Run -> Run Script".
+Vei vedea o aparand fereastra separata cu output-ul programului.
+
+Atat, tocmai ai scris primul tau script in Perl.
+
+Sa-l imbunatatim putin.
+
+<h2>Perl in linia de comanda pentru utilizatorii care nu folosesc Perl</h2>
+
+Daca nu folosesti Padre sau unul din celelalte <a href="/perl-editor">IDE-uri</a> 
+nu vei fi capabil sa rulezi scriptul din editor. Cel putin nu implicit.
+Trebuie sa deschizi o consola si sa schimbi directorul in locatia unde ai salvat fisierul hello.pl
+si sa scrii:
+
+<hl>perl hello.pl</hl>
+
+Asa rulezi scripturile Perl din linia de comanda.
+
+<h2>say() in loc de print()</h2>
+
+Sa imbunatatim one-liner-ul nostru putin:
+
+Sa incepem prin a specifica versiunea minima de Perl pe care vrem sa o folosim:
+
+
+<code lang="perl">
+use 5.010;
+print "Hello World\n";
+</code>
+
+Odata ce ai scris asta, ruleaza programul selectand "Run -> Run Script" sau apasand <b>F5</b>.
+Fisierul va fi salvat automat inainte sa fie rulat.
+
+In general este o buna practica mentionarea versiunii minime de Perl pe care o necesita codul tau.
+
+In cazul acesta adauga si cateva functionalitati noi Perl-ului, incluzand cuvantul cheie <hl>say</hl>.
+
+<hl>say</hl> e ca <hl>print</hl>, dar este mai scurt si adauga automat linia noua la sfarsitul stringului.
+
+Schimba codul astfel:
+
+<code lang="perl">
+use 5.010;
+say "Hello World";
+</code>
+
+Am schimbat <hl>print</hl> cu <hl>say</hl> si am sters <hl>\n</hl>-ul de la sfarsitul string-ului.
+
+Versiunea care o folosesti acum e probabil 5.12.3 sau 5.14. Cele mai moderne distributii de Linux vin cu versiunea 5.10 sau mai noua.
+Din pacate, mai sunt locuri unde se folosesc versiuni mai vechi de Perl.
+
+Acestea nu vor avea keyword-ul <hl>say()</hl> si s-ar putea sa aiba nevoie de ajustari.
+Voi scoate in evidenta cand folosim functionalitati care necesita versiunea 5.10
+
+<h2>Plasa de siguranta.</h2>
+
+Este extrem de recomandat sa aducem niste modificari comportamentului implicit al Perl-ului.
+Pentru asta adaugam doua, asa numite pragmatas, care sunt foarte similare cu flag-urile de compilare in alte limbaje:
+
+
+<code lang="perl">
+use 5.010;
+use strict;
+use warnings;
+
+say "Hello World";
+</code>
+
+In acest caz, keyword-ul <hl>use</hl> ii zice Perl-ului sa incarce si sa activeze fiecare pragma in parte.
+
+<hl>strict</hl> si <hl>warnings</hl> te vor ajuta sa preintampini aparitia de erori comune in cod si uneori te vor impiedica sa le faci.
+Sunt foarte la indemana.
+
+<h2>Input-ul de la utilizator</h2>
+
+Sa imbunatatim mai departe exemplul nostru intreband userul ce nume are si sa il includem in raspuns.
+
+<code lang="perl">
+use 5.010;
+use strict;
+use warnings;
+
+say "Cum te cheama? ";
+my $name = <STDIN>;
+say "Salut $name, ce mai faci?";
+</code>
+
+<hl>$name</hl> se cheama variabila de tip scalar.
+
+Variabilele se declara folosind keyword-ul <b>my</b>.
+(de fapt, asta e una din constrangerile pe care <hl>strict</hl> le aduce.)
+
+Variabilele scalare intotdeauna incep cu semnul <hl>$</hl>
+
+&lt;STDIN&gt; este instrumentul de citire a unei linii de la tastatura.
+
+Scrie codul de mai sus si ruleaza-l apasand F5.
+Iti va cere numele. Scrie-ti numele si apasa ENTER pentru a spune Perl-ului ca ti-ai terminat de scris numele.
+
+Vei observa ca output-ul e putin stricat: virgula de dupa nume apare pe linie noua. Asta e din cauza ca ENTER-ul apasat cand ti-ai scris numele
+a ajuns in variabila <hl>$name</hl>.
+
+<h2>Scaparea de liniile noi</h2>
+
+<code lang="perl">
+use 5.010;
+use strict;
+use warnings;
+
+say "Cum te cheama? ";
+my $name = <STDIN>;
+chomp $name;
+say "Salut $name, ce mai faci?";
+</code>
+
+Fiind un lucru des intalnit in Perl, este functia speciala numita <hl>chomp</hl> care sterge liniile noi din stringuri.
+
+
+<h2>Concluzii</h2>
+
+In fiecare script pe care-l scrii, trebuie <b>intotdeauna</b> sa adaugi <hl>use strict;</hl> si <hl>use warnings;</hl> ca primele doua comenzi.
+E deasemenea recomandat sa adaugi <hl>use 5.010;</hl>.
+
+<h2>Exercises</h2>
+
+I promised exercises.
+
+Try the following script:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+say "Hello ";
+say "World";
+</code>
+
+It did not show on one line. Why? How to fix it?
+
+<h2>Exercise 2</h2>
+
+Write a script that asks the user for two numbers, one after the other.
+Then prints out the sum of the two numbers.
+
+<h2>What's next?</h2>
+
+The next part of the tutorial is about
+<a href="/perl-editor">editors, IDEs and development environment for Perl</a>.
