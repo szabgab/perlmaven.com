@@ -84,7 +84,7 @@ to practice what you have learned.
 <li><a href="http://szabgab.com/modern-perl-tutorial-part-03--comparing-scalars.html">Comparing scalars</a></li>
 -->
 <li><a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
-<li><a href="http://szabgab.com/number-guessing-game.html">Number Guessing game (rand, int)</a></li>
+<li><a href="/number-guessing-game">Number Guessing game (rand, int)</a></li>
 <li><a href="/while-loop">Perl while loop</a></li>
 </ol>
 
