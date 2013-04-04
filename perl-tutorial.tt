@@ -10,9 +10,6 @@
 =comments 0
 =social 1
 
-I have already started to move over the materials from my personal site (szabgab.com) to this new web site,
-but as you will see, there are still links that lead to that site.
-
 The Perl Maven tutorial will teach you the basics of the Perl programming language.
 You'll be able to write simple scripts, analyze log files and read and write CSV files.
 Just to name a few common tasks.
@@ -22,7 +19,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on March 23, 2013.
+parts are being published every few days. The latest one was published on April 4, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -111,7 +108,7 @@ to practice what you have learned.
 <li>Process command line parameters @ARGV, Getopt::Long</li>
 <li><a href="/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a></li>
 <li><a href="/join">join</a></li>
-<li><a href="http://szabgab.com/the-year-19100.html">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
+<li><a href="/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
 <li><a href="http://szabgab.com/scalar-and-list-context-in-perl.html">Context sensitivity in Perl</a></li>
 <li><a href="/sorting-arrays-in-perl">Sorting arrays in Perl</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
