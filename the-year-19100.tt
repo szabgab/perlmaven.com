@@ -114,7 +114,7 @@ If they had read the documentation, they would have written:
 
 which is the correct way to get back the real number of our date used in the
 <a href="http://en.wikipedia.org/wiki/Gregorian_calendar">Gregorian calendar</a>.
-The most commnly used calendar around the world.
+The most commonly used calendar around the world.
 
 <h2>gmtime</h2>
 
@@ -168,7 +168,7 @@ All the above is important, but there is one very important aspect of all this t
 We slightly skipped over this major issue of Perl for which the <hl>localtime()</hl> function
 is just one example.
 
-If you look back in the example, you might notice that the <hl>localtime()</hl> function somwhow knows if it return value
+If you look back in the example, you might notice that the <hl>localtime()</hl> function somehow knows if it return value
 is going to be assigned to a scalar variable, or an array,
 and returns either a human readable representation of time, or this other, 9-number representation of the same time.
 
