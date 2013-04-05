@@ -1,5 +1,5 @@
-=title Perl Tutorial in Russian
-=timestamp 2012-05-02T22:45:56
+=title Учебник Perl по-русски
+=timestamp 2013-04-05T23:43:00
 =status show
 =showright 1
 =newsletter 0
@@ -13,6 +13,7 @@
 
 
 <ul>
+<li><a href="/ustanovka-i-nachalo-raboty-s-perl">Установка и начало работы с Perl</a></li>
 <!--
   <li><a href=""></a></li>
 -->
