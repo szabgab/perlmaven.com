@@ -19,7 +19,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on April 4, 2013.
+parts are being published every few days. The latest one was published on April 5, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -174,6 +174,7 @@ to practice what you have learned.
 
 <b>Few examples for using Perl</b>
 <ol>
+<li><a href="/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
 <li>Reading Excel files using Perl</li>
 <li>Creating Excel files using Perl</li>
 <li>Sending e-mail using Perl</li>
