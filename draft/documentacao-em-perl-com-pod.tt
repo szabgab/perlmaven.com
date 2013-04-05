@@ -1,5 +1,5 @@
 ﻿=title Documentação em Perl com POD - Plain Old Documentation
-=timestamp 2013-03-02T18:40:59
+=timestamp 2013-04-05T10:50:59
 =indexes POD, perldoc, =head1, =cut, =pod, =head2, documentation, documentação, pod2html, pod2pdf
 =status show
 =original pod-plain-old-documentation-of-perl
@@ -14,11 +14,11 @@
 
 =abstract start
 
-Programadores de forma geral não gostam muito de escrever a documentação de seus projetos. Parte da razão é que os programas 
-são basicamente arquivos de texto simples, mas em muitos casos os desenvolvedores são obrigados a escrever a 
+Programadores de forma geral não gostam muito de escrever a documentação de seus projetos. Parte da razão é que os programas
+são basicamente arquivos de texto simples, mas em muitos casos os desenvolvedores são obrigados a escrever a
 documentação em algum processador de texto.
 
-Isso requer a aprendizagem do processador de texto assim como o investimento de muita energia em tentar fazer o documento 
+Isso requer a aprendizagem do processador de texto assim como o investimento de muita energia em tentar fazer o documento
 ter "boa aparência" em vez de "ter bom conteúdo".
 
 Este não é o caso com Perl. Normalmente você escreveria a documentação de seus módulos direito no código fonte e confiaria
@@ -31,7 +31,7 @@ que é a linguagem de marcação usada pelos desenvolvedores perl.
 
 Veja abaixo como um simples pedaço de código perl aparenta ser com a documentação POD:
 
-<pre class="prettyprint linenums languague-perl">
+<code lang="perl">
 #!/usr/bin/perl
 use strict;
 use warnings;
@@ -47,18 +47,18 @@ print the output to the screen.
 =cut
 
 print "Here comes the code ... \n";
-</pre>
+</code>
 
-Se você salvar este código como <b>script.pl</b> e executá-lo usando <b>perl script.pl</b>,
-o perl irá ignorar qualquer coisa entre as linhas <b>=pod</b> e o <b>=cut </b>.
+Se você salvar este código como <hl>script.pl</hl> e executá-lo usando <hl>perl script.pl</hl>,
+o perl irá ignorar qualquer coisa entre as linhas <hl>=pod</hl> e o <hl>=cut</hl>.
 Somente o código em si será executado.
 
-Por outro lado, se você digitar o comando <b>perldoc script.pl</b>, o <b>perldoc</b> 
-irá desconsiderar todo o código. Ele vai buscar as linhas entre <b>=pod</b> e <b>=cut</b>,
+Por outro lado, se você digitar o comando <hl>perldoc script.pl</hl>, o <hl>perldoc</hl>
+irá desconsiderar todo o código. Ele vai buscar as linhas entre <hl>=pod</hl> e <hl>=cut</hl>,
 para então formatá-las e exibi-las na tela.
 
-Estas regras variam de acordo com o seu sistema operacional, mas elas são exatamente as mesmas que você viu quando aprendemos sobre a  
-<a href="/core-perl-documentation-cpan-module-documentation">documentação padrão do Perl</a>.
+Estas regras variam de acordo com o seu sistema operacional, mas elas são exatamente as mesmas que você viu quando aprendemos sobre a
+<a href="/documentacao-do-perl-e-modulos-cpan">documentação padrão do Perl</a>.
 
 A importância da utilização do POD incorporado é que seu código jamais será fornecido
 acidentalmente sem a documentação, pois a documentação está dentro dos módulos e dos scripts.
@@ -67,28 +67,28 @@ construído para si. Mesmo para os seus fins <i>in-house.</i>
 
 <h2>Muito simples?</h2>
 
-O pressuposto aqui é que ao remover a maioria dos obstáculos presentes na escrita da 
-documentação, então mais pessoas vão escrever a documentação em seus projetos. Em vez de aprender como usar um processador 
-de texto para criar documentos com aparência agradável, você irá somente digitar um texto com alguns símbolos extras e então 
-obter um documento de aparência razoável. (Confira os documentos sobre <a href="http://metacpan.org/"> Meta CPAN </ a> 
+O pressuposto aqui é que ao remover a maioria dos obstáculos presentes na escrita da
+documentação, então mais pessoas vão escrever a documentação em seus projetos. Em vez de aprender como usar um processador
+de texto para criar documentos com aparência agradável, você irá somente digitar um texto com alguns símbolos extras e então
+obter um documento de aparência razoável. (Confira os documentos sobre <a href="http://metacpan.org/">Meta CPAN</a>
 para ver uma versão bem formatada do POD).
 
-<h2> A linguagem de marcação </ h2>
+<h2>A linguagem de marcação</h2>
 
-Uma descrição detalhada da <a href="http://perldoc.perl.org/perlpod.html"> linguagem de marcação POD</a>
-pode ser encontrada digitando na linha de comandos <a href="http://perldoc.perl.org/perlpod.html"> perldoc perlpod </a>. 
+Uma descrição detalhada da <a href="http://perldoc.perl.org/perlpod.html">linguagem de marcação POD</a>
+pode ser encontrada digitando na linha de comandos <a href="http://perldoc.perl.org/perlpod.html">perldoc perlpod</a>.
 
-Existem também <i>tags</i> como a <b>=head1</b> e <b>=head2</b> utilizadas para sinalizar os cabeçalhos "mais importantes" e "um pouco menos importante".
-Há também o <b>=over </b>utilizado para indentações e <b>=item</b>
+Existem também <i>tags</i> como a <hl>=head1</hl> e <hl>=head2</hl> utilizadas para sinalizar os cabeçalhos "mais importantes" e "um pouco menos importante".
+Há também o <hl>=over</hl> utilizado para indentações e <hl>=item</hl>
 para permitir a criação de <i>bullet points</i>, entre outros.
 
-Há também o <b>=cut</b> para marcar o fim de uma seção POD e <b>=pod</b> para iniciar uma.
+Há também o <hl>=cut</hl> para marcar o fim de uma seção POD e <hl>=pod</hl> para iniciar uma.
 Embora esta marcação inicial não seja estritamente necessária.
 
-Qualquer sequência que começa com um sinal de igual <b>=</b> como o primeiro caractere em uma linha irá ser interpretada como uma marcação POD,
-e vai começar uma seção POD fechado por <b>=cut</b>
+Qualquer sequência que começa com um sinal de igual <hl>=</hl> como o primeiro caractere em uma linha irá ser interpretada como uma marcação POD,
+e vai começar uma seção POD fechado por <hl>=cut</hl>
 
-O POD ainda permite a incorporação de hiper-links usando a notação L<nome-do-link>.
+O POD ainda permite a incorporação de hiper-links usando a notação L&lt;nome-do-link>.
 
 O texto entre as partes de marcação será mostrado como parágrafos de texto simples.
 
@@ -99,32 +99,32 @@ Este exemplo é usado para exemplos de código.
 Uma coisa importante a lembrar é que POD requer linhas vazias ao redor das <i>tags</i>.
 Assim:
 
-<pre class="prettyprint linenums languague-perl">
+<code lang="perl">
 =head1 Título
 =head2 legenda
 Algum texto
 =cut
-</pre>
+</code>
 
 Não vai fazer o que você está esperando.
 
-<h2> A Aparência </ h2>
+<h2>A Aparência</h2>
 
 Como o POD é uma linguagem de marcação, ela não irá por si só definir como as coisas serão exibidas.
-Ao usar o <b>=head1</b> estamos apenas indicando algo importante, <b>=head2</b> significa, por exemplo algo menos importante.
+Ao usar o <hl>=head1</hl> estamos apenas indicando algo importante, <hl>=head2</hl> significa, por exemplo algo menos importante.
 
 A ferramenta que é utilizada para apresentar o POD irá normalmente usar caracteres maiores para exibir o texto de uma head1 do que a de um
 head2 que por sua vez irá ser exibida usando fontes maiores do que o texto normal. O controle está nas mãos da ferramenta de exibição.
 
-O comando <b>perldoc</b>que vem com perl exibe o POD como uma página manual (<i>mand-page</i>). É uma ferramenta bastante útil em Linux.
+O comando <hl>perldoc</hl> que vem com perl exibe o POD como uma página manual (<i>mand-page</i>). É uma ferramenta bastante útil em Linux.
 Mas não tão boa assim no Windows.
 
-O módulo <a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> fornece outra ferramenta de linha de comando chamado <b>pod2html</b>.
+O módulo <a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> fornece outra ferramenta de linha de comando chamado <hl>pod2html</hl>.
 Essa ferramenta é capaz de converter um texto POD em um documento HTML que você pode ver em seu navegador.
 
 Há também ferramentas adicionais para geração de arquivos do tipo pdf ou arquivos mobi a partir do POD.
 
-<h2> Público Alvo </ h2>
+<h2>Público Alvo</h2>
 
 Depois de ver a técnica, vamos ver quem é o público alvo?
 
@@ -137,10 +137,11 @@ olhar o código fonte. No caso de uma aplicação, este são chamados de "usuár
 Ou seja, todos nós.
 
 No caso dos módulos Perl, os usuários são outros programadores Perl que desejam
-construir aplicações e outros módulos. A princípio eles não precisariam olhar seu código fonte. 
+construir aplicações e outros módulos. A princípio eles não precisariam olhar seu código fonte.
 Eles devem ser capazes de usar seu módulo apenas lendo a documentação via <b>perldoc</b>.
 
-<h2> Conclusão </ h2>
+<h2>Conclusão</h2>
 
 Escrever a documentação do código e fazer com que pareça agradável não é nada
 difícil de ser feita em Perl.
+
