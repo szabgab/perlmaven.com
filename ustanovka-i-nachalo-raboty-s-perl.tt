@@ -111,7 +111,7 @@ print "Hello World\n";
 
 <h2>Perl в командной строке для тех, кто не пользуется Padre</h2>
 
-Если вы не используете Padre или другую <a href="http://perl5maven.com/perl-editor">IDE</ a>,
+Если вы не используете Padre или другую <a href="http://perl5maven.com/perl-editor">IDE</a>,
 вы не сможете запустить скрипт прямо из редактора.
 По крайней мере, по умолчанию. Нужно будет открыть shell
 (или cmd в Windows), перейти в каталог, где вы сохранили hello.pl
