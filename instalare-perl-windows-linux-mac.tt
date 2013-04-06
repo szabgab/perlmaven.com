@@ -39,7 +39,7 @@ Deocamdata sa ramanem la o singura versiune de Perl instalata pe calculator.
 
 <h2>Linux</h2>
 
-Majoritatea distributiilor de linux vin cu o versiune (relativ) recenta de Perl preinstalat. 
+Majoritatea distributiilor de linux vin cu o versiune (relativ) recenta de Perl preinstalat.
 Deocamdata vom folosi acea versiune. Pentru editor (IDE), poti instala Padre - majoritatea distributiilor de linux
 il au ofera in sistemele de management de pachete. Altfel, poti alege orice editor de texte obisnuit.
 Daca esti obisnuit cu vim sau Emacs, foloseste-l pe cel ce-ti place mai mult. Si Gedit poate fi un editor simplu si bun.
@@ -53,7 +53,7 @@ Mac-urile vin probabil cu un Perl instalat, sau il poti instala ca orice alt pro
 <h2>Editor si IDE</h2>
 
 Chiar daca este recomandat, nu trebuie sa folosesti Padre ca editor pentru a scrie cod Perl.
-In partile urmatoare vei gasi o lista de <a href="/perl_editor_ide">editoare si IDE-uri</a> pe care le poti folosi pentru a programa in Perl.
+In partile urmatoare vei gasi o lista de <a href="/perl-editor-ide">editoare si IDE-uri</a> pe care le poti folosi pentru a programa in Perl.
 Chiar daca alegi sa folosesti alte editoare, iti recomand - daca esti pe Windows - sa instalezi DWIM-ul mai sus mentionat.
 Vine la pachet cu o multitudine de extensii de Perl gata instalate si iti va salva o gramada de timp pe parcurs.
 
@@ -101,7 +101,7 @@ Sa-l imbunatatim putin.
 
 <h2>Perl in linia de comanda pentru utilizatorii care nu folosesc Perl</h2>
 
-Daca nu folosesti Padre sau unul din celelalte <a href="/perl_editor_ide">IDE-uri</a> 
+Daca nu folosesti Padre sau unul din celelalte <a href="/perl-editor-ide">IDE-uri</a>
 nu vei fi capabil sa rulezi scriptul din editor. Cel putin nu implicit.
 Trebuie sa deschizi o consola si sa schimbi directorul in locatia unde ai salvat fisierul hello.pl
 si sa scrii:
@@ -239,4 +239,4 @@ Scrie un script care pune userul sa introduca 2 numere, unul dupa celalalt si ap
 <h2>Ce urmeaza?</h2>
 
 Partea urmatoare a tutorialului este despre
-<a href="/perl_editor_ide">editoare, IDE-uri si mediul de dezvoltare in Perl</a>.
+<a href="/perl-editor-ide">editoare, IDE-uri si mediul de dezvoltare in Perl</a>.
