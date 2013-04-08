@@ -12,23 +12,14 @@
 
 =abstract start
 
-In this part of the <a href="/perl-tutorial">Perl Tutorial</a> we are going to learn
-about some of the functions Perl provides for manipulating strings.
-
 在此篇<a href="/perl-tutorial">Perl 教學</a>，我們將學習到一些操縱字串的函式。
 
 =abstract end
 
 <h2>lc, uc, length</h2>
 
-There are a number of simple functions such as <b>lc</b> and <b>uc</b>
-to return the lower case and upper case versions of the original string respectively.
-Then there is <b>length</b> to return the number of characters in the given string.
-
 有些字串函式的行為相當簡明，如 <b>lc</b> 或 <b>uc</b>，分別會轉換原字串為小寫，或大寫。
 而 <b>length</b> 函式則會計算字串裡的字符個數。
-
-See the following example:
 
 見以下範例：
 
@@ -47,9 +38,6 @@ say length $str;  # 5
 
 <h2>index</h2>
 
-Then there is the <b>index</b> function. This function will get two strings and return
-the location of the second string within the first string.
-
 <b>index</b> 函式，傳入兩個字串後，傳回第二字串位於第一字串內的位置。
 
 <code lang="perl">
@@ -65,23 +53,12 @@ say index $str, "The";             # 0
 say index $str, "the";             # 26
 </code>
 
-The first call to <hl>index</hl> returned 10, because the string "cat" starts on the 10th character.
-The second call to <hl>index</hl> returned -1 indicating there is no "dog" in that sentence.
-
 範例中第一次呼叫的 <hl>index</hl> 傳回 10，因為在可在第 10 個字符處找到 "cat" 。
 第二次的 <hl>index</hl> 則傳回 -1，表示在那句話中找不到 "dog"。
 
-The 3rd call shows that <hl>index</hl> returns 0
-when the second string is a prefix of the first string.
-
 第三次呼叫的 <hl>index</hl>，則傳回 0，這表示第二字串為第一字串的字首，一開始就出現。
 
-The 4th example shows that <hl>index</hl> is looking for exact matches so case also matters.
-Hence "the" and "The" are different.
-
 範例中第四次呼叫的 <hl>index</hl> 則展示字母大小寫不同也會有差異，"the" 與 "The" 畢竟是不同的字串。
-
-<hl>index()</hl> looks for strings and not just for words, so even the string "e " can be looked up:
 
 <hl>index()</hl> 比對的單位是字串，而不是英文單字，所以像 "e " 內含空白的也能應付：
 
@@ -89,11 +66,6 @@ Hence "the" and "The" are different.
 say index $str, "e ";              # 2
 </code>
 
-<hl>index()</hl> can also have a 3rd parameter that indicates the location where
-to start searching. So as we found "e " to start at the 2nd character of the first string,
-we could try to search starting from the 3rd place to see if there is another occurrence of "e ":
-
-<hl>index()</hl> 還可以接第三個參數，表示開始尋找的起始點。所以，當我們在第一字串的第 2 個位置中找到 "e " 後，
 接下來可以從位置 3 開始找，看看是否還有其他的 "e " 在後面：
 
 <code lang="perl">
@@ -102,12 +74,7 @@ say index $str, "e ", 3;           # 28
 say index $str, "e", 3;            # 18
 </code>
 
-Looking for "e" without a space will yield a different result.
-
 顯然，如果只找沒有空白的 "e"，會得到不同結果。
-
-Lastly, there is another function called <b>rindex</b> (right index)
-that will start searching from the right hand side of the string:
 
 另外還有一招，是 <b>rindex</b> （right index -- 右邊版的 index）這個函式，
 會從字串的右邊開始，往左邊找（或著說從字串的尾巴往前找）：
@@ -119,13 +86,6 @@ say rindex $str, "e", 37;          # 33
 </code>
 
 <h2>substr</h2>
-
-I think the most interesting function in this article is <hl>substr</hl>.
-It is basically the opposite of index(). While index() will tell you
-<b>where is a given string</b>, substr will give you the <b>substring at a given locations</b>.
-Normally <hl>substr</hl> gets 3 parameters. The first one is the string. The second is a
-0-based location, also called the <b>offset</b>, and the third is the <b>length</b> of the 
-substring we would like to get.
 
 <hl>substr</hl> 應該是本篇中最耐人尋味的函式。它基本上與 index() 正好相反。index() 會告訴你
 <b>字串的位置</b>，但 substr 會給你 <b>在某個位置的字串</b>。一般在使用 <hl>substr</hl> 時要傳入三個參數。
@@ -149,20 +109,12 @@ substr 的位移是從 0 起算，因此位移 4 是字母 "b" 。
 say substr $str, 4, -11;                    # black cat climbed the
 </code>
 
-The 3rd parameter (the length) can also be a negative number. In that case it tells us
-the number of characters from the right hand side of the original string that
-should NOT be included. So the above means: count 4 from the left, 11 from the
-right, return what is between.
-
 原本表示長度的第三參數也可以是負數，不過意義自然不同。這表示改取字串的右邊起算過來的某個位置。前例
 表示，截取原字串中由左起算第 4 個字母，至由右起算第 11 個字母。
 
 <code lang="perl">
 say substr $str, 14;                        # climbed the green tree
 </code>
-
-You can also leave out the 3rd (length) parameter which will mean:
-return all the characters starting from the 4th place till the end of the string.
 
 也可以不給第三參數（長度），這麼一來意義則為：從第 4 位置起算，截取至字串最末端。
 
@@ -171,29 +123,13 @@ say substr $str, -4;                        # tree
 say substr $str, -4, 2;                     # tr
 </code>
 
-We can also use a negative number in the offset, which will mean:
-count 4 from the right and start from there. It is the same as having
-<hl>length($str)-4</hl> in the offset.
-
 第二參數（位移）也可以傳入負數，同樣表示倒數。上例為：從右邊數過來第 4 個開始截取。
 與 <hl>length($str) - 4</hl> 同義。
 
-<h2>Replacing part of a string</h2>
-
-<h2>取住部份字串</h2>
-
-The last example is a bit funky.
-So far in every case <hl>substr</hl> returned the substring
-and left the original string intact. In this example, the return value
-of substr will still behave the same way, but substr will also change the
-content of the original string!
+<h2>取代部份字串</h2>
 
 最後的範例有點頑皮。在之前的範例中，<hl>substr</hl> 都是截取原字串中的某一小段。但
 在此，它也被用來修改原字串的內容！
-
-The return value of <hl>substr()</hl> is always determined by the first 3 parameters,
-but in this case substr has a 4th parameter. That is a string that will
-replace the selected substring in the original string.
 
 <hl>substr()</hl> 的傳回值必定是由前三個參數決定，但在此例中，我們傳入第四個參數。表示
 要將截取的那段字串，代換成第四參數的內容。
@@ -203,9 +139,6 @@ my $z = substr $str, 14, 7, "jumped from";
 say $z;                                                     # climbed
 say $str;                  # The black cat jumped from the green tree
 </code>
-
-So <hl>substr $str, 14, 7, "jumped from"</hl> returns the word <b>climbed</b>,
-but because of the 4th parameter, the original string was changed.
 
 <hl>substr $str, 14, 7, "jumped from"</hl> 還是傳回 <b>climbed</b>，但因為有傳入
 第四參數，原字串的內容被修改了。
