@@ -1,7 +1,8 @@
 =title Installare Perl e iniziare a usarlo 
-=timestamp 2013-04-06T00:00:00
+=timestamp 2013-04-08T00:00:00
 =indexes strict, warnings, say, print, chomp, scalar, $
 =status show
+=original installing-perl-and-getting-started
 =books beginner_book
 =author szabgab
 =translator giatorta
