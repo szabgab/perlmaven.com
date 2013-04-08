@@ -13,6 +13,8 @@
 
 
 <ul>
+  <li><a href="/string-functions-length-lc-uc-index-substr">操縱字串的函式：lc, uc, index, substr</a></li>
+
 <!--
   <li><a href=""></a></li>
 -->
@@ -20,4 +22,5 @@
 </ul>
 
 For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
+
 
