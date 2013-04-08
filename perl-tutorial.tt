@@ -1,5 +1,5 @@
-=title Perl Tutorial in Italian 
-=timestamp 2012-05-02T22:45:56
+=title Perl Tutorial in Italiano
+=timestamp 2013-04-08T00:00:00
 =status show
 =showright 1
 =newsletter 0
@@ -13,11 +13,7 @@
 
 
 <ul>
-<!--
-  <li><a href=""></a></li>
--->
-
+<li><a href="/installare-perl-e-iniziare-a-usarlo">Installare Perl, stampare Hello World, Rete di salvataggio (use strict, use warnings)</a></li>
 </ul>
 
-For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
-
+Per l'originale, visitate il <a href="http://perl5maven.com/perl-tutorial">tutorial Perl in Inglese</a>
