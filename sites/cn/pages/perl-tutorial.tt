@@ -15,6 +15,7 @@
 <ul>
     <li><a href="/installing-perl-and-getting-started">安装 Perl</a></li>
     <li><a href="/writing-to-files-with-perl">Perl 文件读写</a></li>
+    <li><a href="/undef-and-defined-in-perl">undef, 初始值及Perl函数</a></li>
 </ul>
 
 For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
