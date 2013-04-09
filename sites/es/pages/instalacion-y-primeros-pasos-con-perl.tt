@@ -1,0 +1,57 @@
+=title Instalación y primeros pasos con Perl
+=timestamp 2013-04-06T17:45:04
+=indexes strict, warnings, say, print, chomp, scalar, $
+=status show
+=original installing-perl-and-getting-started
+=books beginner_book
+=author szabgab
+=translator chsanch
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+Esta es la primera parte del <a href="/perl-tutorial">Tutorial de Perl</a>.
+
+En esta parte veremos como instalar Perl en Microsoft Windows y como usarlo en ese sistema, en Linux o en Mac.
+
+Te daremos algunos consejos sobre como preparar tu entorno de desarrollo, o simplemente contestar la pregunta: ¿Cual editor o IDE puedo usar para escribir código en Perl?.
+
+Tambien veremos el tan conocido ejemplo "Hola Mundo."
+
+=abstract end
+
+<h2>Windows</h2>
+
+En Windows usaremos <a href="http://dwimperl.com/">DWIM Perl</a>. Este es un paquete que contiene el compilador/interprete de Perl, <a href="http://padre.perlide.org/">Padre, el IDE para Perl</a> y muchas extensiones de CPAN.
+
+
+Para empezar, visita el sitio web de <a href="http://dwimperl.com/">DWIM Perl</a> y sigue el enlace para descargar <b>DWIM Perl for Windows</b>.
+
+Descarga el fichero exe e instalalo en tu sistema. Antes de hacerlo asegurate de que no tienes otra versión de Perl instalada.
+
+Estas podrían usarse al mismo tiempo, pero para esto se necesita una configuración especial.
+Por ahora vamos a trabajar solo con una versión de Perl en tu sistema.
+
+<h2>Linux</h2>
+
+La mayoría de las distribuciones modernas de Linux vienen con una versión reciente de Perl.
+Por ahora usaremos la que tengas en tu sistema. Como editor, puedes instalar Padre - la mayoría de las distribuciones de Linux lo tiene en sus sistemas de manejo de paquetes. También podrias elegir cualquier editor de texto, por ejemplo vim o Emacs, usa el que te guste. Otra opción pudiera ser usar un editor bueno y sencillo como Gedit.
+
+<h2>Apple</h2>
+
+Me parece que todas las Macs vienen con Perl, pero también pudieras instalarlo fácilmente con las herramientas de instalación del sistema.
+
+<h2>Editor and IDE</h2>
+
+Even though it is recommended, you don't have to use the Padre IDE to write Perl code.
+In the next part I'll list a couple of <a href="/perl-editor">editors and IDEs</a> you
+can use for your Perl programming. Even if you select another editor
+I'd recommend - for the Windows users - to install the above mentioned DWIM Perl package.
+
+It has lots of Perl extensions bundled so it will save you a lot of time down the road.
+
+
