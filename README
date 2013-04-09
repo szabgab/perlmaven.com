@@ -69,19 +69,22 @@ An add an 128x128 image of you to the img/ folder.
 
 TRANSLATIONS - LOCALIZATION
 ---------------------------
-Translations used to have their own repository, but currently they are
-being integrated into this single repository.
+Translations used to have their own repository, but they were integrated
+into this repository. Some of the README might still be in the old state.
 
-English              en  (the 'original' files)
-Chinese (Mainland)   cn
-Chinese (Taiwan)     tw
-German               de
-Italian              it
-Korean               ko
-Portuguese              pt or br ?
-Romaninan            ro
-Russiona             ru
-Spanish              es
+Initial language codes were a bit random, but we will try to stick to
+the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
+
+English                 en  (the 'original' files)
+Chinese (Mainland)      cn
+Chinese (Taiwan)        tw
+German                  de
+Italian                 it
+Korean                  ko
+Portuguese (Brazilian)  br     (sorry Bretons)
+Romaninan               ro
+Russiona                ru
+Spanish                 es
 
 
 
@@ -111,6 +114,18 @@ Process (that will work for the pages of the Perl tutorial but not for other pag
 *) Gabor can then easily see which translations are ready and can move them one-by-one to the sites/CC/pages/ directory,
    enable the entry in the perl-tutorials.tt file, update the date and publish the new article.
 
+
+Comments
+--------
+We use https://disqus.com/ as the commenting system. The English version is moderated by Gabor.
+If you'd like to enable comments on your language and if you are willing to moderate it then
+please create an account on https://disqus.com/ and tell Gabor about it.
+
+Moderation requires that you follow all the comments that arrive to the site and see if they need
+any attention. Spams are usually filtered by Disqus, but a few can slip through and there can be
+an occassional false positive, something that is marked as spam but it isn't really.
+The moderator also has to make sure that the comments stay civil and not hesitate to remove
+irrelevant or offending comments.
 
 
 Promotions
