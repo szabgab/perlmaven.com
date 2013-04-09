@@ -1,0 +1,25 @@
+=title Учебник Perl по-русски
+=timestamp 2013-04-05T23:43:00
+=status show
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=index 0
+=archive 0
+=feed 0
+=comments 0
+=social 1
+
+
+<ul>
+<li><a href="/ustanovka-i-nachalo-raboty-s-perl">Установка и начало работы с Perl</a></li>
+<li><a href="/redaktor-dlya-perl">Редактор для Perl</a></li>
+<!--
+  <li><a href=""></a></li>
+-->
+
+</ul>
+
+For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
+
