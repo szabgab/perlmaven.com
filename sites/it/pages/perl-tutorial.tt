@@ -1,0 +1,19 @@
+=title Perl Tutorial in Italiano
+=timestamp 2013-04-08T00:00:00
+=status show
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=index 0
+=archive 0
+=feed 0
+=comments 0
+=social 1
+
+
+<ul>
+<li><a href="/installare-perl-e-iniziare-a-usarlo">Installare Perl, stampare Hello World, Rete di salvataggio (use strict, use warnings)</a></li>
+</ul>
+
+Per l'originale, visitate il <a href="http://perl5maven.com/perl-tutorial">tutorial Perl in Inglese</a>
