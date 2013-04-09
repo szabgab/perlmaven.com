@@ -1,0 +1,19 @@
+<div id="creators">
+   <% IF translator %>
+      <div id="translator">
+       <img src="/img/<% translator_img %>" />
+       <div class="author_text">
+         Translated by<br><a href="<%translator_google_plus_profile %>?rel=author"><% translator_name %></a>
+       </div>
+      </div>
+   <% END %>
+   <% IF author %>
+     <div id="author">
+      <img src="/img/<% author_img %>"  />
+      <div class="author_text">
+       Written by<br><a href="<% author_google_plus_profile %>"><% author_name %></a>
+      </div>
+     </div>
+  <% END %>
+</div>
+
