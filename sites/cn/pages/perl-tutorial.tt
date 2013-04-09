@@ -17,6 +17,7 @@
     <li><a href="/writing-to-files-with-perl">Perl 文件读写</a></li>
     <li><a href="/undef-and-defined-in-perl">undef, 初始值及Perl函数</a></li>
     <li><a href="/boolean-values-in-perlt">Perl中的布尔值</a></li>
+    <li><a href="/join">join</a></li>
 </ul>
 
 For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
