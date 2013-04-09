@@ -2,3 +2,43 @@ Chinese Translation of http://perl5maven.com/  hosted at http://tw.perl5maven.co
 
 For further information check out the README file of https://github.com/szabgab/perl5maven.com
 
+-->8-- 中文說明分隔線 --8<--
+
+感謝大家參與。目前的翻譯工作流程如下：
+
+1. 要有 github 帳號，並且在 perltaiwan organization 內
+  - 回個推文報一下 github 帳號我可以加入各位
+
+2. clone https://github.com/perltaiwan/perl5maven.com 下來
+
+3. sites/ 底下依語言分目錄, en/ 是原作。
+   在 sites/en/pages/ 底下有許多 .tt 檔，是文章原始檔。
+   格式是 POD/HTML 混合，站長自己發明的。在 README 中有簡單的說明。
+
+4. 選一個 en/pages/ 底下的 .tt 檔開始翻譯。先 cp 到 tw/drafts/ 目錄下，等全部翻譯完再
+   mv 到 tw/pages/。如果已經在 drafts/ 底下就表示有人在翻譯，在 pages/ 底下
+   就表示完成了。所以最好先檢查一下。
+
+5. 把自已的大頭照圖檔丟到 tw/img 底下，然後在 .tt 檔頭中加入譯者：
+
+    =translator gugod
+
+   譯者 id 符合大頭照圖檔檔名就好
+
+6. 同樣在 .tt 檔頭中加入表示原文檔名的標示，例如
+
+    =original string-functions-length-lc-uc-index-substr
+
+   後面的值基本上是檔名。
+
+7. 把自已的 id 跟資料加入 tw/authors.txt 裡
+
+8. 送 pull request 到 szabgab/perl5maven.com，通知 @szabgab 編新版
+
+9. 在 http://tw.perl5maven.com 可以看到成品
+
+要注意的是這個 git repo 的主分支叫 "main" 而不叫 "master"，請勿建
+一個 master 出來，有跑出來的話我會砍掉。
+
+目前 sites/tw/pages/string-functions-length-lc-uc-index-substr.tt
+是一個已經完成的翻譯檔，可以參考一下。
