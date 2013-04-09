@@ -69,7 +69,7 @@ An add an 128x128 image of you to the img/ folder.
 
 TRANSLATIONS - LOCALIZATION
 ---------------------------
-Trnslations used to have their own repository, but currently they are
+Translations used to have their own repository, but currently they are
 being integrated into this single repository.
 
 English              en  (the 'original' files)
@@ -102,6 +102,15 @@ Spanish              es
 *) Each author and translator should set up authorship by linking their Google+ profile to the CC.perl5maven.com
    site. (e.g. br.perl5maven.com for the Brazilian Porguguese translators)
    See http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
+
+
+Process (that will work for the pages of the Perl tutorial but not for other pages).
+*) The translator creates a new file in the sites/CC/drafts folder.
+*) When s/he has finished the translations s/he adds the link to the translation from the perl-tutorials.tt file in a comment.
+
+*) Gabor can then easily see which translations are ready and can move them one-by-one to the sites/CC/pages/ directory,
+   enable the entry in the perl-tutorials.tt file, update the date and publish the new article.
+
 
 
 Promotions
