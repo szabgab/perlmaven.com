@@ -69,8 +69,21 @@ An add an 128x128 image of you to the img/ folder.
 
 TRANSLATIONS - LOCALIZATION
 ---------------------------
-There is the beginning of a Brazilian Portuguese translation in the
-https://github.com/szabgab/br.perl5maven.com repository.
+Trnslations used to have their own repository, but currently they are
+being integrated into this single repository.
+
+English              en  (the 'original' files)
+Chinese (Mainland)   cn
+Chinese (Taiwan)     tw
+German               de
+Italian              it
+Korean               ko
+Portuguese              pt or br ?
+Romaninan            ro
+Russiona             ru
+Spanish              es
+
+
 
 *) The file names (that become the URLs) should be in LOCAL_LANGUAGE, but use only ASCII characters.
    Transliterated to English. (I am not sure in this. Maybe a better thing would be to use LOCAL_LANGUAGE in the URLs?)
@@ -89,4 +102,17 @@ https://github.com/szabgab/br.perl5maven.com repository.
 *) Each author and translator should set up authorship by linking their Google+ profile to the CC.perl5maven.com
    site. (e.g. br.perl5maven.com for the Brazilian Porguguese translators)
    See http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
+
+
+Promotions
+-----------
+
+The translators also need to take on themselves a large part of the promotion in the language communities.
+Both in the Perl community - to get help from others - and to the general public.
+
+This can be by posting on the language sub-Reddit (e.g. on http://www.reddit.com/r/Romania )
+
+Sharing the articles on Google+, Twitter and Facebook should be almost automatic.
+
+Getting the RSS feed of the site to be included in some local 'planets'.
 
