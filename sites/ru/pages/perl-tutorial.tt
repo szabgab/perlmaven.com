@@ -12,14 +12,16 @@
 =social 1
 
 
-<ul>
+<p>
+<b>Введение</b>
+<ol>
 <li><a href="/ustanovka-i-nachalo-raboty-s-perl">Установка и начало работы с Perl</a></li>
 <li><a href="/redaktor-dlya-perl">Редактор для Perl</a></li>
+<li><a href="/perl-v-komandnoy-stroke">Perl в командной строке</a></li>
 <!--
   <li><a href=""></a></li>
 -->
-
-</ul>
+</ol>
 
 For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
 
