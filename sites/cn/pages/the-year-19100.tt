@@ -13,7 +13,7 @@
 
 =abstract start
 
-作为<a href="/perl-tutorial">Perl 教程</a>的一部分，本节学习<b>Perl 中时间处理</b>
+作为<a href="/perl-tutorial">Perl 教程</a>的一部分，本节学习<b>Perl 中时间处理</b>。
 
 Perl中，函数<hl>time()</hl> 返回一个10位数，代表1970年1月1日起，到现在的秒数。
 
@@ -95,8 +95,7 @@ $isdst - 'is Daylight saving time' true if Daylight Saving Time is on in your co
 
 <code>
 1900 + $year
-</code>
-
+</code
 
 <h2>gmtime</h2>
 
@@ -115,9 +114,8 @@ $isdst - 'is Daylight saving time' true if Daylight Saving Time is on in your co
 
 以上介绍的函数，可以用来完成基本的时间和日期操作，由于此问题的复杂性，更多请参考 <a href="https://metacpan.org/module/DateTime">DateTime</a> 模块。
 
-以后我们再学习。
 
-<h2>上下文 (context)</h2>
+<h2>上下文</h2>
 
 你觉察到了 <hl>localtime()</hl> 的诡异之处了么？ 把它赋值给一个标量和一个数组，结果完全不同！
 
