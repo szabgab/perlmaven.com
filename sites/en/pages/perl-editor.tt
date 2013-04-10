@@ -107,6 +107,11 @@ In October 2009 I ran a poll and asked
 
 Now you can go with the crowd, against the crowd, or you can pick a perl editor that fits you.
 
+<h2>Other</h2>
+
+Alex Shatlovsky recommended <a href="http://www.sublimetext.com/">Sublime Text</a>, which is a platform independent editor,
+but one that costs some money.
+
 <h2>Next</h2>
 
 Then next part in the tutorial is a small side-step to talk about <a href="/perl-on-the-command-line">Perl on the command line</a>.
