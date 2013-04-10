@@ -50,8 +50,6 @@ say int -3.14;   # will print -3
 
 如果没有参数，<hl>rand()</hl> 函数返回一个在区间 [0,1)上的随机数。
 
-Combining  allows us to generate random whole numbers.
-
 综合利用 <hl>rand</hl> 和 <hl>int</hl>，就可以得到随机的整数。
 
 <code lang="perl">
