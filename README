@@ -158,3 +158,38 @@ Sharing the articles on Google+, Twitter and Facebook should be almost automatic
 
 Getting the RSS feed of the site to be included in some local 'planets'.
 
+
+
+Git and Github
+---------------
+
+There is good and free book about Git called Git Pro http://git-scm.com/book
+
+Install Git on you desktop
+configure username and password
+generate ssh key.
+
+
+Create a Github account, let's say your username is USERNAME:
+Upload the ssh key to your account
+On Github 'fork' the https://github.com/szabgab/perl5maven.com repository
+It will create another repository https://github.com/USERNAME/perl5maven.com
+
+clone it to your desktop:
+$ git clone git@github.com:USERNAME/perl5maven.com.git
+
+It will create a directory called perl5maven.com inside all the source files.
+There should be one called sites/CC  (where CC is your language code
+based on this list: https://meta.wikimedia.org/wiki/List_of_Wikipedias
+more or less).  If there is no such directory ask Gabor to create one.
+
+Initially you will need to know about
+$ git add  filename
+$ git commit -m "message"
+$ git push
+
+And on Github there is a button to "Send Pull request" that will
+notify me to look at what you pushed, but of course I am also available
+by e-mail and GTalk.
+
+
