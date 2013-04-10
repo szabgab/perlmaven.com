@@ -23,9 +23,9 @@
   <li><a href="/undef-e-definido-em-perl">undef, valor inicial e a função defined em Perl</a></li>
   <li><a href="/documentacao-em-perl-com-pod">Documentação em Perl com POD - Plain Old Documentation</a></li>
   <li><a href="/palavras-soltas-em-perl">Palavra solta (bareword) em Perl</a></li>
+  <li><a href="/categorias-desconhecidas-de-alertas">Categoria de alertas desconhecida</a></li>
 
 <!--
-  <li><a href="/categorias-desconhecidas-de-alertas">Categoria de alertas desconhecida</a></li>
   <li><a href="/funcoes-para-manipular-texto-lc-uc-index-substr">Funções para Manipular Texto: length, lc, uc, index, substr</a></li>
 -->
 
