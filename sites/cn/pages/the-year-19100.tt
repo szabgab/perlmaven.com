@@ -95,7 +95,7 @@ $isdst - 'is Daylight saving time' true if Daylight Saving Time is on in your co
 
 <code>
 1900 + $year
-</code
+</code>
 
 <h2>gmtime</h2>
 
