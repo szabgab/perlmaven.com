@@ -57,9 +57,7 @@ move $old_name, $new_name;
 
 <h2>复制</h2>
 
-There is no built-in copy function in core perl. The standard way to copy a file is
-to use the <hl>copy</hl> function of File::Copy.
-Perl 中没有对应的函数来完成复制操作。通常用<hl>File::Copy</hl>  模块中的<hl>copy</hl> 函数
+Perl 中没有对应的函数来完成复制操作。通常用 <hl>File::Copy</hl>  模块中的<hl>copy</hl> 函数
 
 <code lang="perl">
 use File::Copy qw(copy);
