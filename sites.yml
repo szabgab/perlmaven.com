@@ -1,0 +1,21 @@
+en:
+  url: http://perl5maven.com/
+  name: English
+br:
+  url: http://br.perl5maven.com/
+  name: Português
+cn:
+  url: http://cn.perl5maven.com/
+  name: 中文
+tw:
+  url: http://tw.perl5maven.com/
+  name: 中文 (Taiwan)
+it:
+  url: http://it.perl5maven.com/
+  name: Italiano
+ro:
+  url: http://ro.perl5maven.com/
+  name: Română
+ru:
+  url: http://ru.perl5maven.com/
+  name: Русский
