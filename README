@@ -172,7 +172,7 @@ There is good and free book about Git called Git Pro http://git-scm.com/book
 
 Install Git on you desktop
 configure username and password
-generate ssh key.
+generate ssh key: https://help.github.com/articles/generating-ssh-keys
 
 
 Create a Github account, let's say your username is USERNAME:
