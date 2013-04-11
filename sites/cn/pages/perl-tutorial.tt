@@ -22,6 +22,7 @@
     <li><a href="/boolean-values-in-perl">Perl中的布尔值</a></li>
     <li><a href="/join">join</a></li>
     <li><a href="/attribute-types-in-perl-classes-when-using-moose">Moose的属性类型</a></li>
+<li><a href="perl-cgi-mod-perl-psgi"> CGI, mod_perl, PSGI ?</a></li>
 </ul>
 
 For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>

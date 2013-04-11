@@ -1,0 +1,269 @@
+=title How to read a CSV file using Perl?
+=timestamp 2012-07-28T12:45:56
+=indexes CSV, split, Text::CSV, Text::CSV_XS
+=status show
+=books beginner_book
+=author szabgab
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+
+读取并处理文本是Perl 的强项。有时候你有一个CSV (Comma-separated values)文件，需要从中提取信息，该怎么办呢？
+
+本节给出三个解决方案。
+
+如果你的CSV文件比较简单，简单的Perl脚本就能轻松搞定。这里是我们的方案一。
+
+第二个方案能够对付稍微复杂的CSV文件。
+
+第三个方案，能够处理所有的情况，不过，需要用CPAN上的模块。
+
+=abstract end
+
+假设我们有一文件，内容如下：
+
+<code>
+Tudor,Vidor,10,Hapci
+Szundi,Morgo,7,Szende
+Kuka,Hofeherke,100,Kiralyno
+Boszorkany,Herceg,9,Meselo
+</code>
+
+
+这就是一个基本的CSV文件。每个数据项由逗号隔开(Comma-separated values)，多行构成一个文件。
+
+当然，分隔符不一定是逗号，只要保持一致就好了。不过通常是逗号隔开，也有是用 TAB 或者 | 键隔开。
+
+我们要做的是算出第三列所有数字之和。
+
+<h2> 思路 </h2>
+
+
+<ol>
+<li>按行读取文件</li>
+<li>从读取的行中，取出第三列的值</li>
+<li>累加</li>
+</ol>
+
+
+我们在以前的章节中学过怎样按行读取文件。下面我们来看怎样提取第三列的值。
+
+你可能想到直接用<hl>substr()</hl>，不过，因为第三列的位置在每一行中不是固定的。那什么是不变的呢？
+第三列的值总是在第二个逗号与第三个逗号之间。基于此，我们可以用<hl>index()</hl> 来得到每一行，
+第二个和与第三个逗号的位置。然后再用<hl>substr()</hl>。不过，Perl中，有更好的方法。
+
+
+<h2>用 split</h2>
+
+<hl>split()</hl> 的中文意思是分隔。要实现分隔的操作，你需要分隔符和要分的字符串。
+分隔符可以是字符串，甚至是正则式。简单起见，我们只用字符串。
+
+如果你有一个字符串<hl>$str = "Tudor:Vidor:10:Hapci"</hl>，执行<hl>@fields = split(":"  ,   $str);</hl>，
+<hl>@fields</hl>中将会有四个值， "Tudor", "Vidor", "10" and "Hapci"。<hl>print $fields[2]</hl>将会得到 10。
+不要忘了，Perl 数组从 0 开始索引的。
+
+对于我们的问题，用 <hl>@fields = split("," , $str);</hl> 就可以了。当然，<hl>split </hl> 后的 <hl> () </hl>通常省略。
+
+所以，完整的程序可以这样写：
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+my $file = $ARGV[0] or die "Need to get CSV file on the command line\n";
+
+my $sum = 0;
+open(my $data, '<', $file) or die "Could not open '$file' $!\n";
+
+while (my $line = <$data>) {
+  chomp $line;
+
+  my @fields = split "," , $line;
+  $sum += $fields[2];
+}
+print "$sum\n";
+</code>
+
+If you save this as csv.pl then you will be able to run it as
+<hl>perl csv.pl data.csv</hl> providing the input csv file on the command line.
+
+保存为csv.pl，在终端输入 <hl>perl csv.pl data.csv</hl> 就可以得到结果了。
+
+<h2>万一有数据项中带逗号怎么办？</h2>
+
+Every time you get a CSV file you can use this script to add up the values in the 3rd column.
+Unfortunately at some point you get warnings while running your script.
+
+<hl>Argument " alma"" isn't numeric in addition (+) at csv.pl line 16, <$data> line 3.</hl>
+
+You open the CSV file and it looks like this:
+
+<code>
+Tudor,Vidor,10,Hapci
+Szundi,Morgo,7,Szende
+Kuka,"Hofeherke, alma",100,Kiralyno
+Boszorkany,Herceg,9,Meselo
+</code>
+
+As you can see the 2nd field in the 3rd row has a comma in the value so the people who wrote the file
+put the whole field in quotes: <hl>"Hofeherke, alma"</hl>. This is totally normal within the "standard"
+of CSV, but our script cannot properly handle the situation. <hl>split()</hl> does not care about the
+quotes, nor does it understand anything about CSV. It just cuts where it finds the separator character.
+
+We need a more robust solution to read CSV files.
+
+<h2>Text::CSV</h2>
+
+Luckily we can find a module on CPAN called <a href="https://metacpan.org/module/Text::CSV">Text::CSV</a> that is a full CSV reader and writer.
+
+This module is written using Object Oriented Programming (OOP) principals.
+Even if you don't know what OOP is, you don't have to worry. We won't really learn OOP at this point,
+we'll just use the module. We learn a little more syntax and a few expression, just so,
+that people who are familiar with object oriented programming
+can connect to their knowledge.
+
+Here is the code:
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+use Text::CSV;
+my $csv = Text::CSV->new({ sep_char => ',' });
+
+my $file = $ARGV[0] or die "Need to get CSV file on the command line\n";
+
+my $sum = 0;
+open(my $data, '<', $file) or die "Could not open '$file' $!\n";
+while (my $line = <$data>) {
+  chomp $line;
+
+  if ($csv->parse($line)) {
+
+      my @fields = $csv->fields();
+      $sum += $fields[2];
+
+  } else {
+      warn "Line could not be parsed: $line\n";
+  }
+}
+print "$sum\n";
+</code>
+
+<hl>Text::CSV</hl> is a 3rd-party extension to Perl. It provides a set of new functionality,
+namely reading, parsing and writing CSV files.
+
+Perl programmers call these 3rd-party extension modules, though people coming from
+other languages might be more familiar with words such as library or extension.
+
+At this point I assume you already have the module installed on your computer. We discuss separately
+how to install it.
+
+First we need to load the module using <hl>use Text::CSV;</hl>. We don't need to say what to import
+as this module does not export anything anyway. It works in an object oriented way: you need to create
+and instance and use that instance.
+
+The module itself, Text::CSV is the class and you can create an instance, also called object, by
+calling the constructor. In Perl there is no strict rule how to name the constructor
+but nevertheless most people use the name "new". The way to call the constructor on the class is using
+the arrow <hl>-></hl>.
+
+This call creates an object setting the separator character to be comma (,).
+An object is just a scalar value.
+
+Actually comma being the separator character is the default, but it seems it is clearer if I set it explicitly.
+
+<hl>my $csv = Text::CSV->new({ sep_char => ',' });</hl>
+
+Most of the other code is the same, but instead of the 2 lines of split and adding to $sum,
+now we have more lines that need explanation.
+
+The Text::CSV module does not have a split function. In order to split the code you need to call the
+"parse function" - or, if we want to use the OOP phrase - the "parse method". Again we use the arrow (->)
+notation for this.
+
+<hl>$csv->parse($line)</hl>
+
+This call will try to parse the current line and will split it up to pieces. It will
+not return the pieces. It will return true or false depending on its success or failure
+to parse the string. One common case when it would fail is if there is only a single quotation
+character. eg.: <hl>Kuka,"Hofeherke, alma,100,Kiralyno</hl>
+
+If it fails we fall in the <hl>else</hl> part, print a warning, and go to the next line.
+
+If it succeeds we call the <hl>fields</hl> method that will return the pieces
+of the previously chopped up string. Then we can fetch the 3rd element (index 2) which
+should be the required number.
+
+<h2>Multi-line fields</h2>
+
+There can be further "problems" with the CSV file. For example some fields might contain embedded newlines.
+
+<code>
+Tudor,Vidor,10,Hapci
+Szundi,Morgo,7,Szende
+Kuka,"Hofeherke,
+alma",100,Kiralyno
+Boszorkany,Herceg,9,Meselo
+</code>
+
+The way we currently handle the CSV file cannot solve this problem but the <a href="https://metacpan.org/module/Text::CSV">Text::CSV</a>
+module provides a way to solve that too.
+
+This example is based on a comment by H.Merijn Brand, the maintainer of the
+<a href="https://metacpan.org/module/Text::CSV_XS">Text::CSV_XS</a> module:
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+use Text::CSV;
+
+my $file = $ARGV[0] or die "Need to get CSV file on the command line\n";
+
+my $csv = Text::CSV->new ({
+  binary    => 1,
+  auto_diag => 1,
+  sep_char  => ','    # not really needed as this is the default
+});
+
+my $sum = 0;
+open(my $data, '<:encoding(utf8)', $file) or die "Could not open '$file' $!\n";
+while (my $fields = $csv->getline( $data )) {
+  $sum += $fields->[2];
+}
+if (not $csv->eof) {
+  $csv->error_diag();
+}
+close $data;
+print "$sum\n";
+</code>
+
+This changes the whole way we handle the file. Instead of reading manually line-by-line,
+we ask the Text::CSV module to read, what it considers a line. This will let it handle
+fields with embedded newlines. We also turned on a couple of other flags in the module
+and when we opened the file we made sure it can handle UTF-8 characters correctly.
+
+In addition, in this example the <hl>getline</hl> method returns a reference to an array
+- something we have not learned at this point yet - so when fetching the 3rd element (index 2)
+we need to dereference it and use the arrow syntax to fetch the value: <hl>$fields->[2]</hl>.
+
+Lastly, after we finished the loop we still need to check if we reached the end-of-file (eof)?
+getline will return false both when it reached the end of file and if it encounters an error.
+So we check if we reached the end of the file. If not, then we print the error message.
+
+<h2>Hofeherke</h2>
+
+BTW, in case you were wondering, the values in the CSV file are the names of the
+<a href="http://hu.wikipedia.org/wiki/H%C3%B3feh%C3%A9rke_%C3%A9s_a_h%C3%A9t_t%C3%B6rpe_%28film,_1937%29">7 dwarfs</a>.
+
+In Hungarian.
+
