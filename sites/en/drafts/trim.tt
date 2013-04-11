@@ -93,3 +93,34 @@ printf "<%s>\n", trim $z, left  => 0;   # < abc>
 By deafult it trims on both sides and you have to turn off trimming.
 I think, having your own <hl>ltrim</hl> and <hl>rtrim</hl> will be clearer.
 
+<h2>Text::Trim</h2>
+
+Another module, one that provides all the 3 function is <a href="https://metacpan.org/module/Text::Trim">Text::Trim</a>,
+but it take the Perl-ish writing a step further, and maybe to slightly dangerous places.
+
+
+If you call it and use the return value in a print statement or assign it to a variable,
+it will return the trimmed version of the string and will keep the original intact.
+
+<code lang="perl">
+use Text::Trim qw(trim);
+
+my $z = " abc ";
+printf "<%s>\n", trim $z;  # <abc>
+printf "<%s>\n", $z;       # < abc >
+</code>
+
+On the other hand, if you call it in VOID context, that is when you don't use
+the return value at all, the trim function will change its parameter, in a way
+similar to the behavior of <a href="/perldoc/chomp">chomp</a>.
+
+<code lang="perl">
+use Text::Trim qw(trim);
+
+my $z = " abc ";
+trim $z;
+printf "<%s>\n", $z;       # <abc>
+</code>
+
+
+
