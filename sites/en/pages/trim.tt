@@ -12,7 +12,7 @@
 
 =abstract start
 
-In some other languages there are functiones called <b>ltrim</b> and <b>rtrim</b> to remove
+In some other languages there are functions called <b>ltrim</b> and <b>rtrim</b> to remove
 spaces and tabs from the beginning and from the end of a string respectively. Sometimes
 they even have a function called <b>trim</b> to remove white-spaces from both ends of a string.
 
@@ -31,7 +31,7 @@ Actually it is so simple that it is one of the great subjects of <a href="https:
 $str =~ s/^\s+//;
 </code>
 
-From the beginning of the string <hl>^</hl> take 1 or more white spaces (<hl>\s*</hl>), and replace them with nothing.
+From the beginning of the string <hl>^</hl> take 1 or more white spaces (<hl>\s*</hl>), and replace them with an empty string.
 
 <h2>right trim</h2>
 
@@ -41,7 +41,7 @@ From the beginning of the string <hl>^</hl> take 1 or more white spaces (<hl>\s*
 $str =~ s/\s+$//;
 </code>
 
-Take 1 or more white spaces (<hl>\s*</hl>) till the end of the string (<hl>$</hl>), and replace them with nothing.
+Take 1 or more white spaces (<hl>\s*</hl>) till the end of the string (<hl>$</hl>), and replace them with an empty string.
 
 <h2>trim both ends</h2>
 
@@ -56,7 +56,7 @@ execute the substitution <b>globally</b> (repeated times).
 
 <h2>Hiding in function</h2>
 
-If you really don't want to see those contructs in you code you can add these functions to your code:
+If you really don't want to see those constructs in you code you can add these functions to your code:
 
 <code lang="perl">
 sub ltrim { my $s = shift; $s =~ s/^\s+//;       return $s };
@@ -76,7 +76,7 @@ printf "<%s>\n", rtrim $z;  # < abc>
 
 <h2>String::Util</h2>
 
-If you really, really dont't want to copy that, you can alway install a module.
+If you really, really don't want to copy that, you can alway install a module.
 
 For example <a href="https://metacpan.org/module/String::Util">String::Util</a> provides
 a function called <hl>trim</hl> that you can use like this:
@@ -90,7 +90,7 @@ printf "<%s>\n", trim $z, right => 0;   # <abc >
 printf "<%s>\n", trim $z, left  => 0;   # < abc>
 </code>
 
-By deafult it trims on both sides and you have to turn off trimming.
+By default it trims on both sides and you have to turn off trimming.
 I think, having your own <hl>ltrim</hl> and <hl>rtrim</hl> will be clearer.
 
 <h2>Text::Trim</h2>
