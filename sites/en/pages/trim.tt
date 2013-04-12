@@ -31,7 +31,7 @@ Actually it is so simple that it is one of the great subjects of <a href="https:
 $str =~ s/^\s+//;
 </code>
 
-From the beginning of the string <hl>^</hl> take 1 or more white spaces (<hl>\s*</hl>), and replace them with an empty string.
+From the beginning of the string <hl>^</hl> take 1 or more white spaces (<hl>\s+</hl>), and replace them with an empty string.
 
 <h2>right trim</h2>
 
@@ -41,7 +41,7 @@ From the beginning of the string <hl>^</hl> take 1 or more white spaces (<hl>\s*
 $str =~ s/\s+$//;
 </code>
 
-Take 1 or more white spaces (<hl>\s*</hl>) till the end of the string (<hl>$</hl>), and replace them with an empty string.
+Take 1 or more white spaces (<hl>\s+</hl>) till the end of the string (<hl>$</hl>), and replace them with an empty string.
 
 <h2>trim both ends</h2>
 
