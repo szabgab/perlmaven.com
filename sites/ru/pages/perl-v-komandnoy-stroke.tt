@@ -105,4 +105,4 @@ gabor@pm:~$ perl -e "print 42"
 <h2>Далее</h2>
 
 В следующей главе мы поговорим про
-<a href="http://perl5maven.com/core-perl-documentation-cpan-module-documentation">основную документацию Perl и документацию на модули из CPAN</a>.
+<a href="/documentacia-na-perl-i-cpan-moduli">основную документацию Perl и документацию на модули из CPAN</a>.
