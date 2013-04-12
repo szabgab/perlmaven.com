@@ -23,7 +23,7 @@ Actually it is so simple that it is one of the great subjects of <a href="https:
 
 =abstract end
 
-<h2>left trim<h2>
+<h2>left trim</h2>
 
 <b>ltrim</b>  or <b>lstrip</b> removes white spaces from the left side of a string:
 
