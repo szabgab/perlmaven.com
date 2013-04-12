@@ -24,6 +24,7 @@
     <li><a href="/the-year-19100">千年虫</a></li>
     <li><a href="/attribute-types-in-perl-classes-when-using-moose">Moose的属性类型</a></li>
     <li><a href="/perl-cgi-mod-perl-psgi"> CGI, mod_perl, PSGI ?</a></li>
+    <li><a href="/string-functions-length-lc-uc-index-substr"> 字符串函数: length, lc, uc, index, substr</a></li>
 </ul>
 
 For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
