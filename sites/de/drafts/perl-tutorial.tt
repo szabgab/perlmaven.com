@@ -10,6 +10,20 @@
 =comments 0
 =social 1
 
+<div class="main-content">
+Anmerkung: Das Perl-Tutorial, welches in englischer Sprache von <a href="/about">Gabor Szabo</a>
+verfasst wurde und verfasst wird, wird auf eine Initiative von Gabor hin durch
+freiwillige Helfer in verschiedene Sprachen übersetzt. Früher oder später wird man
+als Perl-Programmierer und Programmierer im Allgemeinen nicht umhin kommen, Grundlagen
+der englischen Spache zu lernen, um von der primär in englischer Sprache verfassten
+Dokumentation profitieren zu können. Auch andere Informationsquellen, wie z.B. Foren,
+Newsletter, werden i.d.R. in Englisch verfasst.
+Die Eintritthürde muss jedoch - speziell für Anfänger - nicht unnötig erhöht werden,
+zumal ja schon eine Sprache, die Perl-Programmiersprache gelernt werden soll.
+Alle Verweise auf Artikel, die noch nicht übersetzt wurden, sind auf das englische
+Original gelenkt, um die Navigationsstruktur bestmöglich aufrecht zu erhalten.
+</div>
+
 Das Perl-Maven-Tutorial wird Dir die Grundlagen der Perl-Programmiersprache beibringen.
 Du wirst in der Lage sein, kleine Skripte zu schreiben, Log-Dateien zu analysieren und
 CSV-Dateien zu schreiben. Nur um einige der verbreiteten Aufgaben zu nennen.
