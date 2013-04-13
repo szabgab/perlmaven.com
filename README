@@ -1,5 +1,6 @@
-These are the source files of the articles published on http://perl5maven.com/
+These are the source files of the articles published on http://perl5maven.com/ and its subdomains.
 Copyright Gabor Szabo except where the =author field explicitly shows someone else.
+Translations are copyright the translator (mentioned in the =translator field of each file) and Gabor Szabo.
 
 
 FORMAT
@@ -12,7 +13,8 @@ In the header there are
 
   =key value
 
-pairs of meta information.
+pairs of meta information. Currently the order is important, but I (Gabor) can check it and
+rearrange it before publication. So don't worry about the order.
 
 The text between
 
@@ -63,7 +65,8 @@ CONTRIBUTIONS
 (both article writers and translators, please read  option 2 here: 
 http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
 and add the perl5maven.com site to the list of where you contribute.
-An add an 128x128 image of you to the img/ folder.
+Add an 128x128 image of you to the img/ folder and an entry for yourself
+in the authors.txt file of your language.
 
 
 Mailing list
@@ -94,11 +97,16 @@ Initial language codes were a bit random, but we will try to stick to
 the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 
 English                 en  (the 'original' files)
-Chinese (Mainland)      cn
-Chinese (Taiwan)        tw
+Simplified Chinese      cn
+Traditional Chinese     tw
+Esperanto               eo
+French                  fr
 German                  de
+Hebrew                  he
+Indonesian              id
 Italian                 it
 Korean                  ko
+Nepali                  ne
 Portuguese (Brazilian)  br     (sorry Bretons)
 Romaninan               ro
 Russiona                ru
@@ -125,18 +133,33 @@ Spanish                 es
    See http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
 
 
-Trnslation process (that will work for the pages of the Perl tutorial but not for other pages).
+The translation process:
 *) The translator creates a new file in the sites/CC/drafts folder.
-*) When s/he has finished the translations s/he adds the link to the translation from the perl-tutorials.tt file in a comment.
+*) When s/he has finished the translations
+   a) if s/he wants to publish the article ASAP then: 
+      adds the link to the translation in the perl-tutorials.tt file in the open part,
+      and moves the translated file to the sites/CC/pages folder.
+      and updates the =timestamp in the translated file to the current date/time.
 
-*) Gabor can then easily see which translations are ready and can move them one-by-one to the sites/CC/pages/ directory,
-   enable the entry in the perl-tutorials.tt file, update the date and publish the new article.
+   b) if s/he wants to let Gabor schedule the publication then:
+      adds the link to the translation in the perl-tutorials.tt file in a commented part,
+      and moves the translated file to the sites/CC/done folder.
+*) Push to your repository and send a pull request.
+
+*) Gabor will periodically merge the pull requests and push the source to the live site.
+   He will try to check for html issues, but cannot check the correctness of the translations.
+
+   He can easily see which translations are ready (in the done/ folder) and he can move them
+   one-by-one to the sites/CC/pages/ directory, enable the entry in the perl-tutorials.tt file,
+   update the =timestam and publish the new article.
+   Then he can include the article(s) in the mail sent to the subscribers of the Perl 5 Maven site.
+
 
 
 Comments
 --------
 We use https://disqus.com/ as the commenting system. The English version is moderated by Gabor.
-If you'd like to enable comments on your language and if you are willing to moderate it then
+If you'd like to enable comments on your language, and if you are willing to moderate it then
 please create an account on https://disqus.com/ and tell Gabor about it.
 
 Moderation requires that you follow all the comments that arrive to the site and see if they need
@@ -167,7 +190,7 @@ There is good and free book about Git called Git Pro http://git-scm.com/book
 
 Install Git on you desktop
 configure username and password
-generate ssh key.
+generate ssh key: https://help.github.com/articles/generating-ssh-keys
 
 
 Create a Github account, let's say your username is USERNAME:
