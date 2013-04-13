@@ -1,5 +1,5 @@
 =title How to read a CSV file using Perl?
-=timestamp 2012-07-28T12:45:56
+=timestamp 2013-04-13T12:45:56
 =indexes CSV, split, Text::CSV, Text::CSV_XS
 =status show
 =books beginner_book
