@@ -55,7 +55,7 @@ my $str = "O gato preto pulou da árvore verde";
 say index $str, 'gato';            # 2
 say index $str, 'cachorro';        # -1
 say index $str, "O";               # 0
-say index $str, "o";               # 11
+say index $str, "o";               # 5
 say index $str, "árvore";          # 22
 </code>
 
