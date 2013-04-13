@@ -155,3 +155,4 @@ say $str;                  # O gato preto pulou na árvore verde
 
 Portanto <hl>substr $str, 13, 5, "pulou na"</hl> retorna a palavra <b>subiu</b>,
 mas por causa do quarto parâmetro, o texto original foi alterado.
+
