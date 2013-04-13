@@ -6,10 +6,10 @@ br:
   name: Português
 cn:
   url: http://cn.perl5maven.com/
-  name: 中文
+  name: 简体中文
 tw:
   url: http://tw.perl5maven.com/
-  name: 中文 (Taiwan)
+  name: 繁體中文
 it:
   url: http://it.perl5maven.com/
   name: Italiano
