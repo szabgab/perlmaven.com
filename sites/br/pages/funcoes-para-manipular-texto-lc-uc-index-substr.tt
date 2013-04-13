@@ -14,7 +14,7 @@
 
 =abstract start
 
-Nesta parte do <a href="/perl-tutorial">Tutorail Perl</a> nós iremos aprender
+Nesta parte do <a href="/perl-tutorial">Tutorial Perl</a> nós iremos aprender
 sobre algumas das funções que o Perl possui para manipular textos.
 
 =abstract end
@@ -23,7 +23,7 @@ sobre algumas das funções que o Perl possui para manipular textos.
 
 No Perl podemos encontrar uma série de funções tais como <b>lc</b> e <b>uc</b>
 que retornam respectivamente versões em caixa baixa e caixa alta dos textos originais.
-Há também <b>lengh</b> que retorna o número de caracteres de um dado texto.
+Há também <b>length</b> que retorna o número de caracteres de um dado texto.
 
 Veja os exemplos abaixo:
 
@@ -68,17 +68,16 @@ A terceira chamada demonstra que a função retorna 0 quando o segundo texto é 
 <hl>index()</hl> procura também por textos e não apenas palavras, isso significa que até mesmo o texto 'e' pode ser procurado:
 
 <code lang="perl">
-say index $str, "e ";              # 9
+say index $str, "e";              # 9
 </code>
 
 A função <hl>index</hl> também pode possuir um terceiro parâmetro que indica a posição onde busca deve iniciar.
 Como vimos no caso do texto 'e' que inicia no nono caractere do primeiro texto, nós podemos
-tentar iniciar a busca a partir do décimo caractere para ver se há mais alguma ocorrência do 'e'.
+tentar iniciar a busca a partir do vigésimo sétimo caractere para ver se há mais alguma ocorrência do 'e'.
 
 <code lang="perl">
-say index $str, "e ";              # 9
-say index $str, "e ", 3;           # 27
-say index $str, "e", 3;            # 30
+say index $str, "e";               # 9
+say index $str, "e ", 27;          # 28
 </code>
 
 Buscando por 'e' sem o espaço resultará em um valor diferente.
@@ -87,9 +86,8 @@ Finalmente há ainda uma outra função chamada <b>rindex</b>, conhecido como í
 (right index), que irá começar a busca pelo lado direito do texto:
 
 <code lang="perl">
-say rindex $str, "e";              # 33
-say rindex $str, "e", 30;          # 30
-say rindex $str, "e", 27;          # 27
+say rindex $str, "e";              # 34
+say rindex $str, "e", 30;          # 28
 </code>
 
 <h2>substr</h2>
