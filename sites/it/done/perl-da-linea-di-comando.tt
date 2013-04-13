@@ -1,5 +1,5 @@
 =title Perl da linea di comando
-=timestamp 2013-04-12T23:59:59
+=timestamp 2013-04-13T00:00:00
 =indexes -v, -e, -p, -i
 =status show
 =original perl-on-the-command-line
@@ -106,4 +106,4 @@ di Peteris Krumins.
 <h2>Next</h2>
 
 La prossima parte riguarda la
-<a href="/documentazione-perl-base-documentazione-moduli-cpan">documentazione del Perl base e dei moduli CPAN</a>.
+<a href="http://perl5maven.com/core-perl-documentation-cpan-module-documentation">documentazione del Perl base e dei moduli CPAN</a>.
