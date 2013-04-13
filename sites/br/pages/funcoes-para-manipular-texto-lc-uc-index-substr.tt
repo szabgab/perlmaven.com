@@ -126,7 +126,7 @@ say substr $str, 13;                        # subiu na árvore verde
 </code>
 
 Você pode também ignorar o terceiro parâmetro, que significa:
-retorne todos os caracteres iniciando na décima terceira posição e seguindo até o final do texto.
+retorne todos os caracteres iniciando na quarta posição e seguindo até o final do texto.
 
 <code lang="perl">
 say substr $str, -5;                        # verde
