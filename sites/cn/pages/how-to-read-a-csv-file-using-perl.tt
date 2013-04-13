@@ -1,4 +1,4 @@
-=title How to read a CSV file using Perl?
+=title CSV 文件处理
 =timestamp 2013-04-13T12:45:56
 =indexes CSV, split, Text::CSV, Text::CSV_XS
 =status show
@@ -13,8 +13,7 @@
 
 =abstract start
 
-
-读取并处理文本是Perl 的强项。有时候你有一个CSV (Comma-separated values)文件，需要从中提取信息，该怎么办呢？
+读取并处理文本是 Perl 的强项。有时候你有一个CSV (Comma-separated values)文件，需要从中提取信息，该怎么办呢？
 
 本节给出三个解决方案。
 
@@ -145,7 +144,7 @@ print "$sum\n";
 
 <hl>Text::CSV</hl> 是Perl的第三方扩展，帮助我们读写 CSV 文件。Perl 程序员把第三方扩展称为模块，有些语言中称为类库。
 
-使用模块之前，需要先安装。我们已经讲过怎样安装模块，在这里不做赘述。 
+使用模块之前，需要先安装。我们已经讲过怎样安装模块，在这里不做赘述。
 
 安装了模块以后，用<hl>use Text::CSV;</hl>来加载。
 
