@@ -32,7 +32,7 @@ use strict;
 use warnings;
 use 5.010;
 
-my $str = "tEXtO';
+my $str = "tEXtO";
 
 say lc $str;      # texto
 say uc $str;      # TEXTO
