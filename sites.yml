@@ -5,7 +5,7 @@ br:
   url: http://br.perl5maven.com/
   name: Português
 cn:
-yy  url: http://cn.perl5maven.com/
+  url: http://cn.perl5maven.com/
   name: 中文
 de:
   url: http://de.perl5maven.com/
