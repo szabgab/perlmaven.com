@@ -114,7 +114,7 @@ say substr $str, 7, 5;                      # preto
 A substr() inicia pela posição 0, portanto o caractere no <i>offset</i> 7 é a letra p.
 
 <code lang="perl">
-say substr $str, 2, -11;                    # gato preto subiu na
+say substr $str, 2, -12;                    # gato preto subiu na
 </code>
 
 O terceiro parâmetro (o tamanho) pode também ser um valor negativo. Neste caso ele nos retorna
@@ -149,7 +149,7 @@ mas neste caso a função possuirá um quarto parâmetro. Esse novo elemento ser
 que irá substituir a região selecionada do texto original.
 
 <code lang="perl">
-my $z = substr $str, 13, 5, "pulou na";
+my $z = substr $str, 13, 5, "pulou";
 say $z;                                                     # subiu
 say $str;                  # O gato preto pulou na árvore verde
 </code>
