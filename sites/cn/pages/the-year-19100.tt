@@ -1,4 +1,4 @@
-=title The year of 19100
+=title Perl 中的时间 
 =timestamp 2013-04-04T12:45:17
 =indexes time, localtime, gmtime, Time::HiRes, DateTime
 =status show
