@@ -7,6 +7,9 @@ br:
 cn:
   url: http://cn.perl5maven.com/
   name: 中文
+de:
+  url: http://de.perl5maven.com/
+  name: Deutsch
 tw:
   url: http://tw.perl5maven.com/
   name: 中文 (Taiwan)

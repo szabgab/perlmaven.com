@@ -215,4 +215,16 @@ And on Github there is a button to "Send Pull request" that will
 notify me to look at what you pushed, but of course I am also available
 by e-mail and GTalk.
 
+To follow the changes in the central repository and keep your own fork
+up-to-date, do the following:
+
+In your working copy do this once:
+
+$ git remote add upstream git://github.com/szabgab/perl5maven.com.git
+
+Then every time you'd like to sync:
+
+$ git fetch upstream
+$ git merge upstream/main
+
 
