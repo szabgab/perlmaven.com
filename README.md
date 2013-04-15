@@ -1,4 +1,8 @@
+Perl 5 Maven
+==============
+
 These are the source files of the articles published on http://perl5maven.com/ and its subdomains.
+
 Copyright Gabor Szabo except where the =author field explicitly shows someone else.
 Translations are copyright the translator (mentioned in the =translator field of each file) and Gabor Szabo.
 
@@ -11,53 +15,31 @@ The overview:
 
 In the header there are
 
-  =key value
+    =key value
 
 pairs of meta information. Currently the order is important, but I (Gabor) can check it and
 rearrange it before publication. So don't worry about the order.
 
 The text between
 
-  =abstract start
+    =abstract start
 
-  =abstract end
+    =abstract end
 
 is displayed on the front pages and is included in the RSS/Atom feed.
 
 
-For internal titles  `<h2>` is used
+`<h2>` is used for internal titles.
 
 `<hl></hl>` stands for highlight and usually code-snippets inside the text are marked with these.
-Other imporant pieces are marked with `<b></b>`
+
+`<b></b>` is usde to mark other imporant pieces. 
 
 Code snippets are wrapped in 
 
     <code lang="perl">
     </code>
 
-
-PROMOTION
-==========
-
-When articles are published they are posted to Google+, Twitter and sometimes even to Facebook.
-They are also posted on LinkedIN.
-
-An e-mail is sent out to the people who registered on the Perl 5 Maven site.
-
-Many of the articles are included the Perl Weekly newsletter.
-
-
-Once in a while I post a link to Reddit ( http://www.reddit.com/ )
-but I'd rather see others post there if they find the article worth the mention.
-The same with Hacker News: https://news.ycombinator.com/
-
-
-SEO explained in 5 words
-------------------------
-"Get links from trusted sources" ~ Jon Morrow
-
-The best promotion is if people find it worth to mention one
-of the articles in a blog post or in some other form.
 
 
 CONTRIBUTIONS
@@ -92,8 +74,7 @@ If you'd like to participate, please contact Gabor.
 
 TRANSLATIONS - LOCALIZATION
 ---------------------------
-Translations used to have their own repository, but they were integrated
-into this repository. Some of the README might still be in the old state.
+Each language has a subdirectory in the sites/ folder.
 
 Initial language codes were a bit random, but we will try to stick to
 the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
@@ -109,7 +90,7 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 * Italian                 it
 * Korean                  ko
 * Nepali                  ne
-* Portuguese (Brazilian)  br     (sorry Bretons)
+* Portuguese (Brazilian)  br  (sorry Bretons)
 * Romaninan               ro
 * Russian                 ru
 * Spanish                 es
@@ -147,7 +128,6 @@ The translation process:
     adds the link to the translation in the perl-tutorials.tt file in a commented part,
     and moves the translated file to the sites/CC/done folder.
 * Push to your repository and send a pull request.
-
 * Gabor will periodically merge the pull requests and push the source to the live site.
   He will try to check for html issues, but cannot check the correctness of the translations.
   He can easily see which translations are ready (in the done/ folder) and he can move them
@@ -170,8 +150,20 @@ The moderator also has to make sure that the comments stay civil and not hesitat
 irrelevant or offending comments.
 
 
-Promotions
-===========
+PROMOTION
+==========
+
+When articles are published they are posted to Google+, Twitter and sometimes even to Facebook.
+They are also posted on LinkedIN.
+
+An e-mail is sent out to the people who registered on the Perl 5 Maven site.
+
+Many of the articles are included the Perl Weekly newsletter.
+
+
+Once in a while I post a link to Reddit ( http://www.reddit.com/ )
+but I'd rather see others post there if they find the article worth the mention.
+The same with Hacker News: https://news.ycombinator.com/
 
 The translators also need to take on themselves a large part of the promotion in the language communities.
 Both in the Perl community - to get help from others - and to the general public.
@@ -182,6 +174,12 @@ Sharing the articles on Google+, Twitter and Facebook should be almost automatic
 
 Getting the RSS feed of the site to be included in some local 'planets'.
 
+SEO explained in 5 words
+------------------------
+"Get links from trusted sources" ~ Jon Morrow
+
+The best promotion is if people find it worth to mention one
+of the articles in a blog post or in some other form.
 
 
 Git and Github
