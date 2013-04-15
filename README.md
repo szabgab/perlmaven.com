@@ -4,7 +4,7 @@ Translations are copyright the translator (mentioned in the =translator field of
 
 
 FORMAT
--------
+=======
 The format has evolved from POD, HTML and Docbook. It is now a mess. I know. I'll have to clean that up.
 
 The overview:
@@ -25,19 +25,19 @@ The text between
 is displayed on the front pages and is included in the RSS/Atom feed.
 
 
-For internal titles  <h2> is used
-<hl></hl> stands for highlight and usually code-snippets inside the text are marked with these.
-Other imporant pieces are marked with <b></b>
+For internal titles  `<h2>` is used
+
+`<hl></hl>` stands for highlight and usually code-snippets inside the text are marked with these.
+Other imporant pieces are marked with `<b></b>`
 
 Code snippets are wrapped in 
 
-  <code lang="perl">
-  </code>
-
+    <code lang="perl">
+    </code>
 
 
 PROMOTION
-----------
+==========
 
 When articles are published they are posted to Google+, Twitter and sometimes even to Facebook.
 They are also posted on LinkedIN.
@@ -61,7 +61,8 @@ of the articles in a blog post or in some other form.
 
 
 CONTRIBUTIONS
--------------
+==============
+
 (both article writers and translators, please read  option 2 here: 
 http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
 and add the perl5maven.com site to the list of where you contribute.
@@ -71,6 +72,7 @@ in the authors.txt file of your language.
 
 Mailing list
 -------------
+
 There is an invitation only, but publicly archived mailing list
 for the the people who would like to contribute to the Perl Maven
 site. A couple of ways to contribute:
@@ -96,68 +98,67 @@ into this repository. Some of the README might still be in the old state.
 Initial language codes were a bit random, but we will try to stick to
 the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 
-English                 en  (the 'original' files)
-Simplified Chinese      cn
-Traditional Chinese     tw
-Esperanto               eo
-French                  fr
-German                  de
-Hebrew                  he
-Indonesian              id
-Italian                 it
-Korean                  ko
-Nepali                  ne
-Portuguese (Brazilian)  br     (sorry Bretons)
-Romaninan               ro
-Russiona                ru
-Spanish                 es
+* English                 en  (the 'original' files)
+* Simplified Chinese      cn
+* Traditional Chinese     tw
+* Esperanto               eo
+* French                  fr
+* German                  de
+* Hebrew                  he
+* Indonesian              id
+* Italian                 it
+* Korean                  ko
+* Nepali                  ne
+* Portuguese (Brazilian)  br     (sorry Bretons)
+* Romaninan               ro
+* Russian                 ru
+* Spanish                 es
 
 
 
-*) The file names (that become the URLs) should be in LOCAL_LANGUAGE, but use only ASCII characters.
-   Transliterated to English. (I am not sure in this. Maybe a better thing would be to use LOCAL_LANGUAGE in the URLs?)
-   http://support.google.com/webmasters/bin/answer.py?hl=en&answer=182192 .
-*) The file names should more-or-less match the title of the page, they can contain words separated with dashes.
-*) Please add the header to each file (the meta information) including the planned publication date
-*) The links in the page should be working. If there is already a translation for the target page then link there,
-    if it only exists in English, then please use full URLs including the hostname http://perl5maven.com/ .
-*) Please update the hidden(!) section of the perl-tutorial.tt to include the links to the entries.
-*) The text listing the author and the translator are added by the system and are driven from the header
-   tags =author and =translator.
-*) Each author and translator has to have an entry in the authors.txt file listing a nickname (\w characters only),
-   The full name, the name of the image file containing their picture, link to their G+ profiles.
-*) Each author and translator needs to provide a picture in jpg or png format approximately 128x128 pixel size 
-   (an Avatar) to be shown at the bottom of each article.
-*) Each author and translator should set up authorship by linking their Google+ profile to the CC.perl5maven.com
-   site. (e.g. br.perl5maven.com for the Brazilian Porguguese translators)
-   See http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
+* The file names (that become the URLs) should be in LOCAL_LANGUAGE, but use only ASCII characters.
+  Transliterated to English. (I am not sure in this. Maybe a better thing would be to use LOCAL_LANGUAGE in the URLs?)
+  http://support.google.com/webmasters/bin/answer.py?hl=en&answer=182192 .
+* The file names should more-or-less match the title of the page, they can contain words separated with dashes.
+* Please add the header to each file (the meta information) including the planned publication date
+* The links in the page should be working. If there is already a translation for the target page then link there,
+  if it only exists in English, then please use full URLs including the hostname http://perl5maven.com/ .
+* Please update the hidden(!) section of the perl-tutorial.tt to include the links to the entries.
+* The text listing the author and the translator are added by the system and are driven from the header
+  tags =author and =translator.
+* Each author and translator has to have an entry in the authors.txt file listing a nickname (\w characters only),
+  The full name, the name of the image file containing their picture, link to their G+ profiles.
+* Each author and translator needs to provide a picture in jpg or png format approximately 128x128 pixel size 
+  (an Avatar) to be shown at the bottom of each article.
+* Each author and translator should set up authorship by linking their Google+ profile to the CC.perl5maven.com
+  site. (e.g. br.perl5maven.com for the Brazilian Porguguese translators)
+  See http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
 
 
 The translation process:
-*) The translator creates a new file in the sites/CC/drafts folder.
-*) When s/he has finished the translations
-   a) if s/he wants to publish the article ASAP then: 
-      adds the link to the translation in the perl-tutorials.tt file in the open part,
-      and moves the translated file to the sites/CC/pages folder.
-      and updates the =timestamp in the translated file to the current date/time.
+* The translator creates a new file in the sites/CC/drafts folder.
+* When s/he has finished the translations
+* * if s/he wants to publish the article ASAP then: 
+    adds the link to the translation in the perl-tutorials.tt file in the open part,
+    and moves the translated file to the sites/CC/pages folder.
+    and updates the =timestamp in the translated file to the current date/time.
 
-   b) if s/he wants to let Gabor schedule the publication then:
-      adds the link to the translation in the perl-tutorials.tt file in a commented part,
-      and moves the translated file to the sites/CC/done folder.
-*) Push to your repository and send a pull request.
+* * if s/he wants to let Gabor schedule the publication then:
+    adds the link to the translation in the perl-tutorials.tt file in a commented part,
+    and moves the translated file to the sites/CC/done folder.
+* Push to your repository and send a pull request.
 
-*) Gabor will periodically merge the pull requests and push the source to the live site.
-   He will try to check for html issues, but cannot check the correctness of the translations.
-
-   He can easily see which translations are ready (in the done/ folder) and he can move them
-   one-by-one to the sites/CC/pages/ directory, enable the entry in the perl-tutorials.tt file,
-   update the =timestam and publish the new article.
-   Then he can include the article(s) in the mail sent to the subscribers of the Perl 5 Maven site.
+* Gabor will periodically merge the pull requests and push the source to the live site.
+  He will try to check for html issues, but cannot check the correctness of the translations.
+  He can easily see which translations are ready (in the done/ folder) and he can move them
+  one-by-one to the sites/CC/pages/ directory, enable the entry in the perl-tutorials.tt file,
+  update the =timestam and publish the new article.
+  Then he can include the article(s) in the mail sent to the subscribers of the Perl 5 Maven site.
 
 
 
 Comments
---------
+=========
 We use https://disqus.com/ as the commenting system. The English version is moderated by Gabor.
 If you'd like to enable comments on your language, and if you are willing to moderate it then
 please create an account on https://disqus.com/ and tell Gabor about it.
@@ -170,7 +171,7 @@ irrelevant or offending comments.
 
 
 Promotions
------------
+===========
 
 The translators also need to take on themselves a large part of the promotion in the language communities.
 Both in the Perl community - to get help from others - and to the general public.
@@ -184,7 +185,7 @@ Getting the RSS feed of the site to be included in some local 'planets'.
 
 
 Git and Github
----------------
+================
 
 There is good and free book about Git called Git Pro http://git-scm.com/book
 
@@ -207,9 +208,9 @@ based on this list: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 more or less).  If there is no such directory ask Gabor to create one.
 
 Initially you will need to know about
-$ git add  filename
-$ git commit -m "message"
-$ git push
+    $ git add  filename
+    $ git commit -m "message"
+    $ git push
 
 And on Github there is a button to "Send Pull request" that will
 notify me to look at what you pushed, but of course I am also available
@@ -220,11 +221,10 @@ up-to-date, do the following:
 
 In your working copy do this once:
 
-$ git remote add upstream git://github.com/szabgab/perl5maven.com.git
+    $ git remote add upstream git://github.com/szabgab/perl5maven.com.git
 
 Then every time you'd like to sync:
 
-$ git fetch upstream
-$ git merge upstream/main
-
+    $ git fetch upstream
+    $ git merge upstream/main
 
