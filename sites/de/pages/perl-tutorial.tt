@@ -19,7 +19,7 @@ als Perl-Programmierer und Programmierer im Allgemeinen nicht umhin kommen, Grun
 der englischen Spache zu lernen, um von der primär in englischer Sprache verfassten
 Dokumentation profitieren zu können. Auch andere Informationsquellen, wie z.B. Foren,
 Newsletter, werden i.d.R. in Englisch verfasst.
-Die Eintritthürde muss jedoch - speziell für Anfänger - nicht unnötig erhöht werden,
+Die Einstiegshürde muss jedoch - speziell für Anfänger - nicht unnötig erhöht werden,
 zumal ja schon eine Sprache, die Perl-Programmiersprache gelernt werden soll.
 Alle Verweise auf Artikel, die noch nicht übersetzt wurden, sind auf das englische
 Original gelenkt, um die Navigationsstruktur bestmöglich aufrecht zu erhalten.
@@ -82,7 +82,7 @@ Es sind einige Übersetzungen mit unterschiedlichem Fortschritt in Arbeit:
 <ol>
 <li><a href="/installation-und-ein-anfang-mit-perl">Installation von Perl, Ausgabe 'Hallo Welt', Sicherheitsnetz (use strict, use warnings)</a></li>
 <li><a href="http://perl5maven.com/perl-editor">Editoren, IDE und Entwicklungsumgebungen für Perl</a></li>
-<li><a href="http://perl5maven.com/perl-on-the-command-line">Perl aufd er Kommandozeile</a></li>
+<li><a href="http://perl5maven.com/perl-on-the-command-line">Perl auf der Kommandozeile</a></li>
 <li><a href="http://perl5maven.com/core-perl-documentation-cpan-module-documentation">Perl-Basisdokumentation, CPAN-Modul-Dokumentation</a></li>
 <li><a href="http://perl5maven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
 <li><a href="http://perl5maven.com/debugging-perl-scripts">Debuggen von Perl-Skripten</a></li>
