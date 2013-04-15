@@ -24,14 +24,14 @@ importantă familiarizarea cu linia de comandă (sau shell) și să fii
 
 =abstract end
 
-Dacă folosești Linux, deschide o un terminal. Ar trebui să vezi un
-prompter, probabil care se termină cu caracterul $.
+Dacă folosești Linux, deschide un terminal. Ar trebui să vezi un
+prompter, care se termină probabil, cu caracterul $.
 
 Dacă folosești Windows deschide o fereastră de comenzi: Clic pe
 
 Start -> Run -> tastează "cmd" -> ENTER
 
-Vei vedea fereastra neagră a CMD cu un prompter care arată probabil astfel:
+Vei vedea fereastra neagră CMD cu un prompter care arată probabil astfel:
 
 <code>
 c:\>
@@ -64,7 +64,7 @@ acest calculator cu Windows.
 <h2>Printarea unui număr</h2>
 
 Tastați <hl>perl -e "print 42"</hl>.  Aceasta va printa
-numărul <hl>42</hl> pe ecran. În Windows promptul va apare pe linia
+numărul <hl>42</hl> pe ecran. În Windows promptul va apărea pe linia
 următoare:
 
 <code>
@@ -88,7 +88,7 @@ de linie de comandă.
 "Nu aștepta un fișier. Următorul lucru pe linia de comandă este cod
 Perl".
 
-Exemplele de mai sus sunt bineînțeles nu prea interesant. Dați-mi voie
+Exemplele de mai sus nu sunt probabil prea interesante. Dați-mi voie
 să vă arăt un exemplu ceva mai complex, fără să-l explic:
 
 <h2>Înlocuiește Java cu Perl</h2>
