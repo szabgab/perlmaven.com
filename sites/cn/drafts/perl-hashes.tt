@@ -1,9 +1,10 @@
-=title Hashes in Perl
+=title 映射表（hashes）  
 =timestamp 2013-03-19T11:12:06
 =indexes hash, keys, value, associative, %, =>, fat arrow, fat comma
 =status show
 =books beginner_book
 =author szabgab
+=translator swuecho
 =index 1
 =archive 1
 =feed 1
@@ -12,20 +13,21 @@
 
 =abstract start
 
-In this article of the <a href="/perl-tutorial">Perl Tutorial</a>
-we are going to learn about <b>hashes</b>, one of the powerful parts of Perl.
 
-Some times called associative arrays, dictionaries, or maps; hashes are one of the data structures available in Perl.
+本节<a href="/perl-tutorial">Perl 教程</a> 中，我们学习哈希表<b>hashes</b>。
+
+哈希表<b>hashes</b> 在其他编程语言中，又称做关联数组，词典，或者 映射表？。
+
+它是Perl 中基本的数据结构之一，非常有用。
+
+哈希表是音译，本人认为 映射（表） 是更好的翻译。所以，本文中，用映射（表）。
 
 =abstract end
 
-A hash is an un-ordered group of key-value pairs. The keys are unique strings. The values are scalar values.
-Each value can be either a number, a string, or a reference. We'll learn about references later.
 
-Hashes, like other Perl variables, are declared using the <hl>my</hl> keyword. The variable name is preceded by the
-percentage (<hl>%</hl>) sign.
+映射是 键-值对的集合。键是字符串；值是标量，可以是数字，字符串，以及引用。关于引用，我们后面会详细讲解。
 
-It's a little mnemonic trick to help you remind about the key-value structure.
+映射，也是用<hl>my</hl>关键词来声明。映射的标志符是 <hl>%</hl>。
 
 Some people think that hashed are like arrays (the old name 'associative array' also indicates this, and in some other
 languages, such as PHP, there is no difference between arrays and hashes.), but there are two major differences between arrays
@@ -162,19 +164,20 @@ for my $fruit (keys %color_of) {
 </code>
 
 
-<h2>The size of a hash</h2>
+<h2>映射的大小</h2>
 
 When we say the size of a hash, usually we mean the number of key-value pairs.
 You can get it by placing the <hl>keys</hl> function in scalar context.
+
+映射的大小指的是映射中键-值对的数目。
 
 <code lang="perl">
 print scalar keys %hash;
 </code>
 
-<h2>Thanks</h2>
-
-The first edition of this article was written by <a href="http://www.leprevost.com.br/">Felipe da Veiga Leprevost</a> who also makes the
-<a href="http://br.perl5maven.com/">Portuguese translation</a> of the Perl Maven articles.
+<h2>致谢</h2>
+本文最初是<a href="http://www.leprevost.com.br/">Felipe da Veiga Leprevost</a> 所写，他同时是本教程
+<a href="http://br.perl5maven.com/">葡萄牙语</a>的译者。 
 
 
 
