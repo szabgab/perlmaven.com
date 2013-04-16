@@ -1,25 +1,208 @@
-=title Perl Tutorial in LANGUAGE
-=timestamp 2012-05-02T22:45:56
+=title Tutoriel en ligne gratuit de Perl 5 Maven
+=timestamp 2013-04-15T22:45:56
+=description tutoriel Perl gratuit pour ceux qui ont besoin de maintenir du code Perl existant, pour ceux qui utilisent Perl pour des scripts simples, et pour ceux qui développent des applications en Perl
+=tags formation, cours, débutant, tutoriel
 =status show
 =original perl-tutorial
 =showright 1
 =newsletter 0
 =published 0
 =author 0
-=translator 0
+=translator oval
 =index 0
 =archive 0
 =feed 0
 =comments 0
 =social 1
 
+<div class="main-content">
+Remarque : La <a href="http://perl5maven.com">version originale de ce tutoriel Perl</a> a été écrite en anglais par <a href="/about#auteur">Gabor Szabo</a> qui a fait appel à des bénévoles pour traduire <a href="/about#traduction">ce tutoriel Perl dans d'autres langues</a>. Cette traduction - dans votre cas, en français - devrait vous permettre de vous concentrer sur l'apprentissage du langage Perl, en faisant abstraction de la barrière de la langue, et ainsi de reporter l'apprentissage de la langue anglaise à plus tard, mais pas ad vinam aeternam. Tôt ou tard, vous devrez, comme tout programmeur Perl - et en fait, comme tout programmeur de n'importe quel langage, apprendre au moins les rudiments de la langue anglaise afin de profiter de toute la documentation originale rédigée en anglais sur différents supports : livres, forums, bulletins en ligne d'informations, blogues, etc. Tout hyperlien qui est contenu dans un article écrit dans une langue et qui référence un autre article non encore traduit dans cette langue est redirigé vers la version anglaise de cet autre article.
+</div>
+
+Le tutoriel Perl Maven va vous apprendre les bases du langage de programmation Perl.
+Vous serez en mesure d'écrire des scripts simples, d'analyser des fichiers journaux et de lire et écrire des fichiers CSV.
+Cette liste est non exhaustive et ne nomme que quelques tâches courantes parmi tant d'autres.
+
+Vous allez apprendre à utiliser l'archive CPAN et plusieurs modules CPAN spécifiques.
+
+Ce sera une bonne base pour vous permettre d'aller de l'avant.
+
+La version gratuite en ligne de ce tutoriel est actuellement en développement. De nombreux articles sont prêts. Des articles supplémentaires sont publiés régulièrement dans la langue originale.
+Si vous êtes intéressé d'être mis au courant lorsque de nouveaux articles sont publiés, s'il vous plaît, veuillez vous <a href="/register">abonner au bulletin d'informations</a>.
+
+Une <a href="/livre-numerique-perl-maven-pour-debutant">version numérique de cette documentation</a> existe aussi et est disponible à l'achat. En plus du tutoriel gratuit, cette version comprend également les diapositives du cours correspondant, y compris de nombreux exercices et leurs solutions. Le matériel du cours couvre toutes les parties, y compris celles qui ne sont pas encore reproduites dans la version gratuite.
+
+La <a href="/video-cours-perl-maven-pour-debutant">vidéo du cours</a> comprend plus de 210 capture vidéos, sur un total de plus de 5 heures de vidéo. En plus de présenter le matériel, il fournit aussi des explications aux solutions de tous les exercices.
+L'ensemble comprend également le code source de tous les exemples et les exercices.
+
+<h2>le tutoriel en ligne gratuit Perl Maven pour débutant</h2>
+
+Dans ce tutoriel, vous allez apprendre à utiliser le langage de programmation Perl 5 pour que le <b>travail soit fait</a>.
+
+Vous apprendrez les caractéristiques générales du langage, ainsi que les extensions, les bibliothèques ou - comme les programmeurs Perl les appellent - les <b>modules</b>. Nous allons voir les modules standards qui sont intégrés avec Perl et les modules tierces qui sont installés sur <b>CPAN</b>.
+
+Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâche. Je vais énumérer les tâches, puis nous allons apprendre les outils nécessaires pour les résoudre. Lorsque cela est possible, je vais aussi vous diriger vers quelques exercices que vous pourrez faire pour mettre en pratique ce que vous avez appris.
+
+<h2>Traductions</h2>
+
+Il existe différentes traductions en cours d'écriture :
 
 <ul>
-<!--
-  <li><a href=""></a></li>
--->
-
+<li><a href="http://perl5maven.com/perl-tutorial">en anglais</a> (la version originale)</li>
+<li><a href="http://cn.perl5maven.com/perl-tutorial">en chinois traditionel</a></li>
+<li><a href="http://tw.perl5maven.com/">en chinois simplifié</a></li>
+<li><a href="http://it.perl5maven.com/">en italien</a></li>
+<li><a href="http://br.perl5maven.com/perl-tutorial">en portugais</a></li>
+<li><a href="http://ro.perl5maven.com/">en roumain</a></li>
+<li><a href="http://ru.perl5maven.com/">en russe</a></li>
 </ul>
 
-For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
+<h2>Table des matières</a>
+
+<b>Introduction</b>
+<ol>
+<li><a href="/installing-perl-and-getting-started">Installer Perl, afficher "Bonjour tout le monde", filet de sécurité (use strict; use warnings;)</a> (EN)</li>
+<li><a href="/perl-editor">Éditeurs et EDIs, environnements de développement pour Perl</a> (EN)</li>
+<li><a href="/perl-on-the-command-line">Perl en ligne de commande</a> (EN)</li>
+<li><a href="/core-perl-documentation-cpan-module-documentation">Documentation du noyau Perl et des modules CPAN</a> (EN)</li>
+<li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation : la bonne vieille documentation à la Perl</a> (EN)</li>
+<li><a href="/utiliser-le-debogueur-integre-de-perl">Déboguer des scripts Perl</a></li>
+</ol>
+
+<b>Les scalaires</b>
+<ol>
+<li>
+    Avertissements et messages d'erreur courants :<br />
+    <ul>
+    <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a> (EN)</li>
+    <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a> (EN)</li>
+    <li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a> (EN)</li>
+    <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a> (EN)</li>
+    <li><a href="/categorie-inconnue-d-avertissements">Unknown warnings category</a></li>
+    <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a> (EN)</li>
+    </ul>
+</li>
+<li><a href="/automatic-value-conversion-or-casting-in-perl">Conversion automatique d'une chaîne de caractères en nombre</a> (EN)</li>
+<li>instructions conditionnelles: if</li>
+<li><a href="/boolean-values-in-perl">Valeurs booléennes (vrai et faux) en Perl</a> (EN)</li>
+<li>Opérateurs sur nombres et chaînes de caractères</li>
+<li><a href="/undef-and-defined-in-perl">la valeur initiale undef et la fonction pré-définie defined</a> (EN)</li>
+<li>Les documents heredoc</li>
+<li><a href="/string-functions-length-lc-uc-index-substr">Les fonctions prédéfinies pour les chaînes de caractères : length, lc, uc, index, substr</a> (EN)</li>
+<li><a href="/number-guessing-game">Jeu "Devine le nombre" (rand, int)</a> (EN)</li>
+<li><a href="/while-loop">La boucle while en Perl</a> (EN)</li>
+</ol>
+
+<b>Les fichiers</b>
+<ol>
+<li>die, warn et exit</li>
+<li><a href="/writing-to-files-with-perl">Écrire dans des fichiers</a> (EN)</li>
+<li><a href="/ajouter-en-fin-de-fichiers">Ajouter en fin de fichiers</a></li>
+<li><a href="/open-and-read-from-files">Ouvrir et lire des fichiers avec Perl</a> (EN)</li>
+<li><a href="/open-files-in-the-old-way">N'ouvrez pas de fichiers à l'ancienne!</a> (EN)</li>
+<li>Le mode binaire, avec Unicode</li>
+<li>Lire un fichier binaire : read, eof</li>
+<li>dire, chercher</li>
+<li>tronquer</li>
+</ol>
+
+<b>Les listes et les tableaux</b>
+<ol>
+<li>La boucle foreach en Perl</li>
+<li><a href="/for-loop-in-perl">La boucle for en Perl</a> (EN)</li>
+<li>Les listes en Perl</li>
+<li>Utiliser des modules</li>
+<li><a href="/perl-arrays">Les tableaux en Perl</a> (EN)</li>
+<li>Traiter les paramètres de la ligne de commande : @ARGV et Getopt::Long</li>
+<li><a href="/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS (EN)</li>
+<li><a href="/la-fonction-predefinie-join">La fonction prédéfinie join</a></li>
+<li><a href="/the-year-19100">L'année 19100 (time, localtime, gmtime)</a> (EN) et introduction au contexte</li>
+<li><a href="/scalar-and-list-context-in-perl">Sensibilité au contexte en Perl</a> (EN)</li>
+<li><a href="/sorting-arrays-in-perl">Trier des tableaux en Perl</a> (EN)</li>
+<li><a href="/unique-values-in-an-array-in-perl">Valeurs uniques dans un tableau Perl</a> (EN)</li>
+<li><a href="/manipulating-perl-arrays">Manipuler des tableaux en Perl: shift, unshift, push, pop</a> (EN)</li>
+<li>La pile et la file d'attente</li>
+<li>La fonction prédéfinie reverse</li>
+<li>L'opérateur ternaire</li>
+<li>Les commandes de boucles : next et last</li>
+<li>min, max, sum avec List::Util</li>
+</ol>
+
+<b>Les fonctions</b>
+<ol>
+<li><a href="http://szabgab.com/subroutines-and-functions-in-perl.html">Les fonctions en Perl</a> (EN)</li>
+<li>Passer et vérifier des paramètres de fonctions</li>
+<li>Nombre variable de paramètres</li>
+<li>Renvoyer une liste</li>
+<li>fonctions récursives</li>
+</ol>
+
+<b>Les tables de hachage</b>
+<ol>
+<li><a href="/perl-hashes">Les tables de hachages en Perl</a> : dictionnaire, tableau associatif, table de conversion (EN)</li>
+<li>Vérifier l'existence d'une clé : exists ; Supprimer des éléments de la table de hachage : delete</li>
+</ol>
+
+<b>Les expressions régulières</b>
+<ol>
+<li>Les expressions régulières en Perl</li>
+<li>Regex: classes de caractères</li>
+<li>Regex: quantifieurs</li>
+<li>Regex: quantifieurs possessifs et non avides</li>
+<li>Regex: groupement et capture</li>
+<li>Regex: ancres</li>
+<li>Regex: options et modificateurs</li>
+<li>Substitutions (rechercher et remplacer)</li>
+<li>Couper/Supprimer les espaces avant et après</li>
+</ol>
+
+<b>Fonctionnalités du système d'exploitation via Perl</b>
+<ol>
+<li>Les opérateurs -X de Perl</li>
+<li>Les tubes avec Perl</li>
+<li>Exécuter des programmes externes</li>
+<li>Des commandes Unix : rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
+<li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">Comment faire pour supprimer, copier ou renommer un fichier avec Perl ?</a> (EN)</li>
+<li>Des commandes Windows/DOS : del, ren, dir</li>
+<li>Filtrer des fichiers (via des motifs)</li>
+<li>Les descripteurs de répertoire</li>
+<li>Parcourir une arborescence de répertoires : find</li>
+</ol>
+
+<b>CPAN</b>
+<ol>
+<li><a href="/download-and-install-perl">Télécharger et installer Perl : Strawberry Perl ou compilation manuelle</a> (EN)</li>
+<li>Télécharger et installer Perl : Perlbrew</li>
+<li>Localiser et évaluer des modules CPAN</li>
+<li>Télécharger et installer des modules CPAN avec Perl</li>
+<li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">Comment modifier @INC pour trouver des modules Perl dans un chemin non standard ?</a> (EN)</li>
+<li>Comment modifier @INC dans un répertoire relatif ?</li>
+<li>local::lib</li>
+</ol>
+
+<b>Quelques exemples d'utilisation de Perl</b>
+<ol>
+<li><a href="/how-to-replace-a-string-in-a-file-with-perl">Comment remplacer une chaîne dans un fichier avec Perl ? (slurp)</a> (EN)</li>
+<li>Lire des fichiers Excel avec Perl</li>
+<li>Créer des fichiers Excel avec Perl</li>
+<li>Envoyer des courriels avec Perl</li>
+<li>Les scripts CGI avec Perl</li>
+<li>Web applications with Perl: PSGI</li>
+<li>Analyser des fichiers XML</li>
+<li>Lire et écrire des fichiers JSON</li>
+<li>Accéder des bases de données avec Perl: DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC</li>
+<li>Accéder LDAP avec Perl</li>
+</ol>
+
+<b>Autre</b>
+<ol>
+<li><a href="/splice-to-slice-and-dice-arrays-in-perl">splice pour trancher et découper les tableaux en Perl</a> (EN)</li>
+<li><a href="/how-to-create-a-perl-module-for-code-reuse">Comment créer un module Perl pour la réutilisation du code ?</a> (EN)</li>
+<li><a href="/object-oriented-perl-using-moose">Perl orienté objet avec Moose</a> (EN)</li>
+<li><a href="/attribute-types-in-perl-classes-when-using-moose">Les types d'attributs dans les classes Perl avec Moose</a> (EN)</li>
+</ol>
+
+<hr />
+
+Nous vous rappelons que tout ce matériel et plus encore est <a href="/products">disponible à l'achat</a> sous forme de <a href="/perl-livres">livres numériques</a> et de <a href="/perl-videos">vidéos</a>.
 
