@@ -2,6 +2,7 @@
 =timestamp 2013-02-04T12:45:56
 =indexes join
 =status show
+=original join
 =books beginner_book
 =author szabgab
 =translator terrencehan
