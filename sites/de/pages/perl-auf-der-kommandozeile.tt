@@ -26,8 +26,6 @@ von da aus Perl nutzen zu können.
 Wenn Du Linux benutzt, öffne ein Terminal-Fenster. Du solltest ein
 Bereitschaftszeichen (Prompt) sehen, das eventuell auf ein $-Zeichen endet.
 
-If you are using Windows open a command window: Click on
-
 Wenn Du hingegn Windows benutzt, öffne die Eingabeaufforderung mit:
 
 Start -> Ausführen -> Tippe dort "cmd" -> ENTER
