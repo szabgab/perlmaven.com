@@ -1,11 +1,11 @@
 =title Funções para Manipular Texto: length, lc, uc, index, substr
-=timestamp 2013-04-02T23:17:24
+=timestamp 2013-04-12T10:17:24
 =indexes length, lc, uc, index, substr, scalar, texto
 =status show
+=original string-functions-length-lc-uc-index-substr
 =books beginner_book
 =author szabgab
 =translator leprevost
-=original string-functions-length-lc-uc-index-substr
 =index 1
 =archive 1
 =feed 1
@@ -14,7 +14,7 @@
 
 =abstract start
 
-Nesta parte do <a href="/perl-tutorial">Tutorail Perl</a> nós iremos aprender
+Nesta parte do <a href="/perl-tutorial">Tutorial Perl</a> nós iremos aprender
 sobre algumas das funções que o Perl possui para manipular textos.
 
 =abstract end
@@ -23,7 +23,7 @@ sobre algumas das funções que o Perl possui para manipular textos.
 
 No Perl podemos encontrar uma série de funções tais como <b>lc</b> e <b>uc</b>
 que retornam respectivamente versões em caixa baixa e caixa alta dos textos originais.
-Há também <b>lengh</b> que retorna o número de caracteres de um dado texto.
+Há também <b>length</b> que retorna o número de caracteres de um dado texto.
 
 Veja os exemplos abaixo:
 
@@ -32,7 +32,7 @@ use strict;
 use warnings;
 use 5.010;
 
-my $str = "tEXtO';
+my $str = "tEXtO";
 
 say lc $str;      # texto
 say uc $str;      # TEXTO
@@ -55,6 +55,7 @@ my $str = "O gato preto pulou da árvore verde";
 say index $str, 'gato';            # 2
 say index $str, 'cachorro';        # -1
 say index $str, "O";               # 0
+say index $str, "o";               # 5
 say index $str, "árvore";          # 22
 </code>
 
@@ -68,17 +69,16 @@ A terceira chamada demonstra que a função retorna 0 quando o segundo texto é 
 <hl>index()</hl> procura também por textos e não apenas palavras, isso significa que até mesmo o texto 'e' pode ser procurado:
 
 <code lang="perl">
-say index $str, "e ";              # 9
+say index $str, "e";              # 9
 </code>
 
 A função <hl>index</hl> também pode possuir um terceiro parâmetro que indica a posição onde busca deve iniciar.
 Como vimos no caso do texto 'e' que inicia no nono caractere do primeiro texto, nós podemos
-tentar iniciar a busca a partir do décimo caractere para ver se há mais alguma ocorrência do 'e'.
+tentar iniciar a busca a partir do vigésimo sétimo caractere para ver se há mais alguma ocorrência do 'e'.
 
 <code lang="perl">
-say index $str, "e ";              # 9
-say index $str, "e ", 3;           # 27
-say index $str, "e", 3;            # 30
+say index $str, "e";               # 9
+say index $str, "e ", 27;          # 28
 </code>
 
 Buscando por 'e' sem o espaço resultará em um valor diferente.
@@ -87,9 +87,8 @@ Finalmente há ainda uma outra função chamada <b>rindex</b>, conhecido como í
 (right index), que irá começar a busca pelo lado direito do texto:
 
 <code lang="perl">
-say rindex $str, "e";              # 33
-say rindex $str, "e", 30;          # 30
-say rindex $str, "e", 27;          # 27
+say rindex $str, "e";              # 34
+say rindex $str, "e", 30;          # 28
 </code>
 
 <h2>substr</h2>
@@ -115,7 +114,7 @@ say substr $str, 7, 5;                      # preto
 A substr() inicia pela posição 0, portanto o caractere no <i>offset</i> 7 é a letra p.
 
 <code lang="perl">
-say substr $str, 2, -11;                    # gato preto subiu na
+say substr $str, 2, -12;                    # gato preto subiu na
 </code>
 
 O terceiro parâmetro (o tamanho) pode também ser um valor negativo. Neste caso ele nos retorna
@@ -150,10 +149,11 @@ mas neste caso a função possuirá um quarto parâmetro. Esse novo elemento ser
 que irá substituir a região selecionada do texto original.
 
 <code lang="perl">
-my $z = substr $str, 13, 5, "pulou na";
+my $z = substr $str, 13, 5, "pulou";
 say $z;                                                     # subiu
 say $str;                  # O gato preto pulou na árvore verde
 </code>
 
 Portanto <hl>substr $str, 13, 5, "pulou na"</hl> retorna a palavra <b>subiu</b>,
 mas por causa do quarto parâmetro, o texto original foi alterado.
+

@@ -47,11 +47,11 @@ say int -3.14;   # irá imprimir -3
 
 <h2>Números Aleatórios</h2>
 
-Uma chamada à função <hl>rand()</hl> do Perl irá retornar um número fracionário aleatório, entre 0 e $n.
-Poderá ser 0, mas não $n.
+Ao chamar a função <hl>rand()</hl> do Perl, teremos como retorno um número fracionário aleatório, entre 0 e $n.
+O valor poderá ser 0, mas não $n.
 
 Se <hl>$n = 42</hl> então uma chamada à função <hl>rand($n)</hl> irá retornar um número aleatório entre 0 e 42.
-Pode ser 0 mas não 42. Pode ser, por exemplo 11.264624821095826.
+O valor pode ser 0 mas não 42. Pode ser, por exemplo 11.264624821095826.
 
 Se nós não passarmos um valor então <hl>rand()</hl> irá utilizar o valor padrão, retornando um valor entre 0 e 1, incluindo 0 mas excluindo 1.
 
@@ -68,7 +68,7 @@ say $z;
 
 Irá retornar um número entre 0 e 6. Podendo ser 0 mas não podendo ser 6. Então poderá ser qualquer um dos seguintes números: 1,2,3,4,5.
 
-Se adicionarmos 1 ao resultado então teremos qualquer um dos núemros 1,2,3,4,5,6, que seria a mesma coisa que jogar um dado.
+Se adicionarmos 1 ao resultado então teremos qualquer um dos números 1,2,3,4,5,6, que seria a mesma coisa que jogar um dado de seis faces.
 
 <h2>Exercício: O Jogo de Adivinhar O Número</h2>
 

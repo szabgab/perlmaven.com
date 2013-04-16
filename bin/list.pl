@@ -17,6 +17,16 @@ my $root = dirname dirname abs_path $0;
 my @languages = map { basename $_ } glob "$root/sites/*";
 #say Dumper \@languages;
 
+say "\nList items in DONE folder";
+say '-' x 30;
+foreach my $lang (@languages) {
+	my @drafts = map { basename $_ } glob "$root/sites/$lang/done/*.tt";
+	next if not @drafts;
+	say "Language $lang";
+	say "   $_" for @drafts;
+}
+say "\nList items in DRAFT folder";
+say '-' x 30;
 foreach my $lang (@languages) {
 	my @drafts = map { basename $_ } glob "$root/sites/$lang/drafts/*.tt";
 	next if not @drafts;
