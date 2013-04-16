@@ -1,9 +1,10 @@
-=title Core Perl documentation and CPAN module documentation
+=title Documentația Perl și documentația modulelor CPAN
 =timestamp 2013-01-27T10:45:56
 =indexes perldoc, documentation, POD, CPAN
 =status show
 =books beginner_book
 =author szabgab
+=translator stefansbv
 =index 1
 =archive 1
 =feed 1
@@ -12,25 +13,23 @@
 
 =abstract start
 
-Perl comes with a lot of documentation, but
-it takes some time till you get used to using it. In this part of the
-<a href="/perl-tutorial">Perl tutorial</a> I'll explain how
-to find your way around the documentaton.
+Perl vine cu multă documentație, dar durează puțin până să te obișnuiești s-o folosești. În acastă parte a <a href="/perl-tutorial">Tutorialului de Perl</a> vă voi explica cum să-ți găsești calea prin documentație.
 
 =abstract end
 
-<h2>perldoc on the web</h2>
+<h2>perldoc pe web</h2>
 
-The most convenient way to access the documentation of core perl
-is to visit the <a href="http://perldoc.perl.org/">perldoc</a> website.
+Cea mai convenabilă cale de a accesa documentatia Perl este să
+vizitezi situl <a href="http://perldoc.perl.org/">perldoc</a>.
 
-It contains an HTML version of the documentation for Perl, the language,
-and for the modules that come with core Perl as released by the Perl 5 Porters.
+Acesta conține o versiune HTML a documentației Perl, limbajul, și
+pentru modulele care vin cu Perl așa cum sunt publicate de autori:
+Perl 5 Porters.
 
-It does not contain documentation for CPAN modules.
-There is an overlap though, as there are some modules that are available
-from CPAN but that are also included in the standard Perl distribution.
-(These are often referred to as <b>dual-lifed</b>.)
+Nu conține documentația pentru modulele CPAN.  Există totuși o
+suprapunere, există module care sunt disponibile pe CPAN dar sunt de
+asemenea incluse în distribuția Perl standard.  (Aceste sunt de obicei
+numite <b>dual-lifed</b> - în traducere, cu viață dublă.)
 
 You can use the search box at the top right corner. For example you can
 type in <hl>split</hl> and you'll get the documentation of <hl>split</hl>.
@@ -91,5 +90,3 @@ most important CPAN modules will be also included.
 If you are missing something from there, just make a comment below,
 with the keywords you will looking for and you have a good chance to
 get your request fulfilled.
-
-
