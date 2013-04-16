@@ -1,0 +1,46 @@
+=title le livre numérique Test Automation using Perl
+=timestamp 2013-04-15T07:30:01
+=description livre numérique pour ceux qui aimeraient tester leur propre code ou aimerait écrire des tests automatisés pour n'importe quelle application logicielle
+=tags formation, cours, débutant, livre numérique
+=status show
+=showright 0
+=newsletter 0
+=published 0
+=author 0
+=translator oval
+=index 0
+=archive 0
+=feed 0
+=comments 0
+=social 0
+
+Êtes-vous un développeur Perl qui aimerait écrire des tests unitaires pour votre code ?
+
+Êtes-vous un analyste qualité qui aimerait automatiser le fait de tester une application web ? peut-être une application en ligne de commandes ? quel que soit le langage de programmation utilisé pour écrire cette application ?
+
+Vous avez atérri au bon endroit.
+
+Le livre numérique <b>Automatisation des tests avec Perl</b> (en anglais seulement) vous montrera comment écrire des tests automatisés en Perl en partant de zéro.
+Are you a Perl developer who would like to write unit tests for your code ?
+
+<h2>Table des Matières</h2>
+
+<ul>
+<li>cadriciel basique de tests en perl</li>
+<li>Test::More</li>
+<li>librairies de tests</li>
+<li>Lancer et Afficher des rapports de tests</li>
+<li>application en ligne de commandes</li>
+<li>dispositif réseau</li>
+<li>applications web</li>
+<li>serveurs</li>
+<li>Accès aux bases de données avec Perl DBI</li>
+<li>Tester une base de données</li>
+<li>Tester une interface graphique utilisateur sous Microsoft Windows</li>
+</ul>
+
+
+En achetant ce livre, vous avez le droit pour un temps illimité aux mises à jour de ce livre dès que les nouvelles éditions sont publiées !
+
+<div class="btn"><a href="/buy?product=test_automation_using_perl_ebook">Achetez-le pour 39 dollars US !</a></div>
+

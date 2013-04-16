@@ -1,0 +1,59 @@
+=title Le livre de recette de Perl Maven
+=timestamp 2013-04-15T07:30:01
+=tags livre numérique
+=status show
+=showright 0
+=newsletter 0
+=published 0
+=author 0
+=translator ovsl
+=index 0
+=archive 0
+=feed 0
+=comments 0
+=social 0
+
+Dans un avenir proche, le livre de <b>Recettes de Perl Maven</b> aura des centaines d'exemples expliquant comment réaliser diverses tâches.
+
+Dans un avenir proche, la version numérique de ce livre coûtera probablement environ 40 USD.
+
+En attendant, nous sommes entrain de le rédiger et vous pouvez l'avoir gratuitement. Plus que cela en fait : vous pouvez aider à le rédiger en envoyant des idées et des commentaires sur les exemples déjà écrits.
+
+La toute première édition (numérotée 0.01) contient les exemples suivants :
+
+<ul>
+<li>créer un compte utilisateur sous Linux/Unix - une fine couche autour de adduser</li>
+<li>afficher l'occupation de l'espace disque dans un système de fichiers, à la df</li>
+<li>afficher l'occupation de l'espace disque sur un serveur de courriels</li>
+<li>un script à la du</li>
+<li>envoyer des fichiers par courriel</li>
+<li>lire un fichier excel</li>
+<li>traiter un fichier ayant des enregistrements de taille fixe</li>
+<li>traiter un fichier ayant des enregistrements multi-lignes</li>
+<li>traiter un fichier ayant plusieurs champs séparés par des virgules (format csv)</li>
+<li>récupérer une page web</li>
+<li>générer une page web (CGI)</li>
+<li>interpréter un fichier XML</li>
+<li>accéder à une base de données avec DBI et DBD::SQLite</li>
+<li>accéder à serveur LDAP avec NET::LDAP</li>
+<li>Tie::File</li>
+</ul>
+
+L'un d'entre eux a même des explications très détaillées.
+
+<p>Pour l'instant, seuls ceux qui se sont abonnés au <a href="/newsletter">bulletin d'information Perl Maven</a> recevront ce livre de recettes.</p>
+
+<form method="POST" action="/register" name="registration_form">
+Courriel: <input name="email" />
+<input type="submit" value="Register" />
+</form>
+
+<h2>Qu'en disent les gens ?</h2>
+<p>
+<i>Je voulais juste dire merci pour ce livre de recettes. Il semble être en effet un bon point de départ comme ressource très utile.
+Il y a quelques recettes que j'ai pu utiliser immédiatement pour certains projets sur lesquels je travaille actuellement.</i>
+<i>Just wanted to say thanks for the cookbook. It looks like a great start on a very useful resource indeed.
+There are a couple of recipes in there that I can see immediate use for in some stuff I'm doing right now.</i>
+- <a href="http://retco.com.au/">Richard Thomas</a>
+</p>
+
