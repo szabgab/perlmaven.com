@@ -1,0 +1,161 @@
+=title String functions: length, lc, uc, index, substr
+=timestamp 2013-02-20T14:45:56
+=indexes length, lc, uc, index, substr, scalar
+=status show
+=books beginner_book
+=author szabgab
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+In this part of the <a href="/perl-tutorial">Perl Tutorial</a> we are going to learn
+about some of the functions Perl provides for manipulating strings.
+
+=abstract end
+
+<h2>lc, uc, length</h2>
+
+There are a number of simple functions such as <b>lc</b> and <b>uc</b>
+to return the lower case and upper case versions of the original string respectively.
+Then there is <b>length</b> to return the number of characters in the given string.
+
+See the following example:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $str = 'HeLlo';
+
+say lc $str;      # hello
+say uc $str;      # HELLO
+say length $str;  # 5
+</code>
+
+
+<h2>index</h2>
+
+Then there is the <b>index</b> function. This function will get two strings and return
+the location of the second string within the first string.
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $str = "The black cat jumped from the green tree";
+
+say index $str, 'cat';             # 10
+say index $str, 'dog';             # -1
+say index $str, "The";             # 0
+say index $str, "the";             # 26
+</code>
+
+The first call to <hl>index</hl> returned 10, because the string "cat" starts on the 10th character.
+The second call to <hl>index</hl> returned -1 indicating there is no "dog" in that sentence.
+
+The 3rd call shows that <hl>index</hl> returns 0
+when the second string is a prefix of the first string.
+
+The 4th example shows that <hl>index</hl> is looking for exact matches so case also matters.
+Hence "the" and "The" are different.
+
+<hl>index()</hl> looks for strings and not just for words, so even the string "e " can be looked up:
+
+<code lang="perl">
+say index $str, "e ";              # 2
+</code>
+
+<hl>index()</hl> can also have a 3rd parameter that indicates the location where
+to start searching. So as we found "e " to start at the 2nd character of the first string,
+we could try to search starting from the 3rd place to see if there is another occurrence of "e ":
+
+<code lang="perl">
+say index $str, "e ";              # 2
+say index $str, "e ", 3;           # 28
+say index $str, "e", 3;            # 18
+</code>
+
+Looking for "e" without a space will yield a different result.
+
+Lastly, there is another function called <b>rindex</b> (right index)
+that will start searching from the right hand side of the string:
+
+<code lang="perl">
+say rindex $str, "e";              # 39
+say rindex $str, "e", 38;          # 38
+say rindex $str, "e", 37;          # 33
+</code>
+
+<h2>substr</h2>
+
+I think the most interesting function in this article is <hl>substr</hl>.
+It is basically the opposite of index(). While index() will tell you
+<b>where is a given string</b>, substr will give you the <b>substring at a given locations</b>.
+Normally <hl>substr</hl> gets 3 parameters. The first one is the string. The second is a
+0-based location, also called the <b>offset</b>, and the third is the <b>length</b> of the 
+substring we would like to get.
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $str = "The black cat climbed the green tree";
+
+say substr $str, 4, 5;                      # black
+</code>
+
+substr is 0 based so the character at the offset 4 is the letter b.
+
+<code lang="perl">
+say substr $str, 4, -11;                    # black cat climbed the
+</code>
+
+The 3rd parameter (the length) can also be a negative number. In that case it tells us
+the number of characters from the right hand side of the original string that
+should NOT be included. So the above means: count 4 from the left, 11 from the
+right, return what is between.
+
+<code lang="perl">
+say substr $str, 14;                        # climbed the green tree
+</code>
+
+You can also leave out the 3rd (length) parameter which will mean:
+return all the characters starting from the 4th place till the end of the string.
+
+<code lang="perl">
+say substr $str, -4;                        # tree
+say substr $str, -4, 2;                     # tr
+</code>
+
+We can also use a negative number in the offset, which will mean:
+count 4 from the right and start from there. It is the same as having
+<hl>length($str)-4</hl> in the offset.
+
+<h2>Replacing part of a string</h2>
+
+The last example is a bit funky.
+So far in every case <hl>substr</hl> returned the substring
+and left the original string intact. In this example, the return value
+of substr will still behave the same way, but substr will also change the
+content of the original string!
+
+The return value of <hl>substr()</hl> is always determined by the first 3 parameters,
+but in this case substr has a 4th parameter. That is a string that will
+replace the selected substring in the original string.
+
+<code lang="perl">
+my $z = substr $str, 14, 7, "jumped from";
+say $z;                                                     # climbed
+say $str;                  # The black cat jumped from the green tree
+</code>
+
+So <hl>substr $str, 14, 7, "jumped from"</hl> returns the word <b>climbed</b>,
+but because of the 4th parameter, the original string was changed.
+
