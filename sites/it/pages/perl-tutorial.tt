@@ -15,16 +15,10 @@
 
 
 <ul>
-<<<<<<< HEAD
-<li><a href="/installare-perl-e-iniziare-a-usarlo">Installare Perl, stampare Hello World, Rete di salvataggio (use strict, use warnings)</a></li>
-<li><a href="/editor-perl">Editor, IDE e ambienti di sviluppo per il Perl</a></li>
-<li><a href="/perl-da-linea-di-comando">Perl da linea di comando</a></li>
-<li><a href="/documentazione-base-perl-documentazione-moduli-cpan">Documentazione base di Perl e documentazione dei moduli CPAN</a></li>
-=======
   <li><a href="/installare-perl-e-iniziare-a-usarlo">Installare Perl, stampare Hello World, Rete di salvataggio (use strict, use warnings)</a></li>
   <li><a href="/editor-perl">Editor, IDE e ambienti di sviluppo per il Perl</a></li>
   <li><a href="/perl-da-linea-di-comando">Perl da linea di comando</a></li>
->>>>>>> fdf0af72469735126258ff117b1d7265d2467c1b
+  <li><a href="/documentazione-base-perl-documentazione-moduli-cpan">Documentazione base di Perl e documentazione dei moduli CPAN</a></li>
 </ul>
 
 Per l'originale, visitate il <a href="http://perl5maven.com/perl-tutorial">tutorial Perl in Inglese</a>
