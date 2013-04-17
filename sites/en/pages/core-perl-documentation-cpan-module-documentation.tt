@@ -50,7 +50,7 @@ including that of the <a href="/while-loop">while loop</a>.
 The same documentation comes with the source code of Perl, but not
 every Linux distribution installs it by default. In some cases there
 is a separate package. For example in Debian and Ubuntu it is the <b>perl-doc</b>
-package. You need to installed it using <hl>sudo aptitude install perl-doc</hl>
+package. You need to install it using <hl>sudo aptitude install perl-doc</hl>
 before you can use <hl>perldoc</hl>.
 
 Once you have it installed, you can type <hl>perldoc perl</hl> on the command line
