@@ -19,7 +19,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on April 12, 2013.
+parts are being published every few days. The latest one was published on April 17, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -97,6 +97,7 @@ There are sevaral translations in progress at various stages:
 <li><a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
 <li><a href="/number-guessing-game">Number Guessing game (rand, int)</a></li>
 <li><a href="/while-loop">Perl while loop</a></li>
+<li><a href="/scope-of-variables-in-perl">Scope of variables in Perl</a></li>
 </ol>
 
 <b>Files</b>
@@ -136,7 +137,7 @@ There are sevaral translations in progress at various stages:
 
 <b>Subroutines</b>
 <ol>
-<li><a href="http://szabgab.com/subroutines-and-functions-in-perl.html">Subroutines and Functions in Perl</a></li>
+<li><a href="/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
 <li>Parameter passing and checking for subroutines</li>
 <li>Variable number of parameters</li>
 <li>Returning a list</li>

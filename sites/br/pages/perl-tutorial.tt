@@ -6,6 +6,7 @@
 =newsletter 0
 =published 0
 =author 0
+=translator 0
 =index 0
 =archive 0
 =feed 0
@@ -25,6 +26,7 @@
   <li><a href="/documentacao-em-perl-com-pod">Documentação em Perl com POD - Plain Old Documentation</a></li>
   <li><a href="/palavras-soltas-em-perl">Palavra solta (bareword) em Perl</a></li>
   <li><a href="/categorias-desconhecidas-de-alertas">Categoria de alertas desconhecida</a></li>
+  <li><a href="/laco-while"> O laço while</a></li>
 
 <!--
   <li><a href="/funcoes-para-manipular-texto-lc-uc-index-substr">Funções para Manipular Texto: length, lc, uc, index, substr</a></li>

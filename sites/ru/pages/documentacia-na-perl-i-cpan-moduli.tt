@@ -2,6 +2,7 @@
 =timestamp 2013-04-13T02:38:44
 =indexes perldoc, documentation, POD, CPAN
 =status show
+=original core-perl-documentation-cpan-module-documentation
 =books beginner_book
 =author szabgab
 =translator shatlovsky

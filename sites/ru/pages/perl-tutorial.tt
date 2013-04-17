@@ -1,4 +1,4 @@
-=title Учебник Perl по-русски
+﻿=title Учебник Perl по-русски
 =timestamp 2013-04-05T23:43:00
 =status show
 =original perl-tutorial
@@ -6,6 +6,7 @@
 =newsletter 0
 =published 0
 =author 0
+=translator 0
 =index 0
 =archive 0
 =feed 0
@@ -19,6 +20,7 @@
 <li><a href="/ustanovka-i-nachalo-raboty-s-perl">Установка и начало работы с Perl</a></li>
 <li><a href="/redaktor-dlya-perl">Редактор для Perl</a></li>
 <li><a href="/perl-v-komandnoy-stroke">Perl в командной строке</a></li>
+<li><a href="/documentacia-na-perl-i-cpan-moduli">Основная документация Perl и документация на модули CPAN</a></li>
 <!--
   <li><a href=""></a></li>
 -->
