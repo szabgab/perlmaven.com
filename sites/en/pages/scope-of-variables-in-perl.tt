@@ -13,7 +13,7 @@
 =abstract start
 
 There are two major variable types in Perl. One of them is the package global variable declared either with the now obsolete
-<hl>use vars</hl> consrtuct or with <hl>our</hl>.
+<hl>use vars</hl> construct or with <hl>our</hl>.
 
 The other one is the lexical variable declared with <hl>my</hl>.
 
@@ -38,7 +38,7 @@ use warnings;
 # Global symbol "$email" requires explicit package name at ...
 </code>
 
-Inside the anonymous block (the pair of curly braces <hl>{}</hl>), first we see the declaration of a new variable caled
+Inside the anonymous block (the pair of curly braces <hl>{}</hl>), first we see the declaration of a new variable called
 <hl>$email</hl>. This variable exists between the point of its declaration till the end of the block. Thus the line
 after the closing curly brace <hl>}</hl> had to be commented out. If you removed the <hl>#</hl> from the
 <hl># print $email;</hl> line, and tried to run the script, you'd get the following compile-time error:
@@ -48,7 +48,7 @@ In other words, the <b>scope of every variable declared with my is the enclosing
 
 <h2>Variable scope: visible everywhere</h2>
 
-The variable <hl>$lname</hl> is declared at the beginnig of the code. It will be visible
+The variable <hl>$lname</hl> is declared at the beginning of the code. It will be visible
 till the end of the file everywhere. Even inside blocks. Even if those are function declarations.
 If we change the variable inside the block, that will change the value for the rest of the code.
 Even when you leave the block:
@@ -70,7 +70,7 @@ print "$lname\n";        # Other
 </code>
 
 
-<h2>Variable hidden by other declaraton</h2>
+<h2>Variable hidden by other declaration</h2>
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -89,12 +89,12 @@ print "$fname\n";        # Foo
 print "$fname\n";        # Foo
 </code>
 
-In this case the variable <hl>$fname</hl> is declared at the beginnig of the code. As written earlier, it will be visible
-till the end of the file everywhere, <b>except in places where they are hidden by localy declared variables with the same name</b>.
+In this case the variable <hl>$fname</hl> is declared at the beginning of the code. As written earlier, it will be visible
+till the end of the file everywhere, <b>except in places where they are hidden by locally declared variables with the same name</b>.
 
 Inside the block we used <hl>my</hl> to declare another variable with the same name. This will effectively hide the <hl>$fname</hl>
 declared outside the block till we leave the block. At the end of the block (at the closing <hl>}</hl>, the <hl>$fname</hl>
-declared inside will be destroyed and the origial <hl>$fname</hl> will be accessible again.
+declared inside will be destroyed and the original <hl>$fname</hl> will be accessible again.
 This feature is especially important as this makes it easy to create variables inside small scopes without the need to think
 about possible use of the same name outside.
 
@@ -124,7 +124,7 @@ This a bit more advanced example, but it might be important to mention it here:
 
 Perl allows us to switch between <b>name-spaces</b> using the <hl>package</hl> keyword inside
 a file. A package declaration does <b>NOT</b> provide scope. If you declare a variable in
-the explicit <b>main package</b> which is just the regular budy of your script, that <hl>$fname</hl>
+the explicit <b>main package</b> which is just the regular body of your script, that <hl>$fname</hl>
 variable will be visible even in other name-spaces in the same file.
 
 If you declare a variable called <hl>$lname</hl> in the 'Other' name-space, it will be visible
