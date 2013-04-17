@@ -1,5 +1,5 @@
 =title O laço while
-=timestamp 2013-03-12T12:45:51
+=timestamp 2013-04-17T12:45:51
 =indexes while, while (1), loop, laço, infinite loop, laço infinito, last
 =status show
 =original while-loop
@@ -36,7 +36,7 @@ O laço <hl>while</hl> possui uma condição, exemplificada no caso acima avalia
 seguido de um bloco de código envolto por chaves.
 
 Quando a execução do código acima atinge o ponto inicial do laço while, ocorre então a verificação da condição onde a mesma é testada
-retornando um valor <a href="/boolean-values-in-perl">verdadeiro ou falso</a>. Caso seja <hl>FALSA</hl> o bloco é ignorado e a próxima
+retornando um valor <a href="/valores-booleanos-em-perl">verdadeiro ou falso</a>. Caso seja <hl>FALSA</hl> o bloco é ignorado e a próxima
 declaração do código é realizada, imprimindo 'pronto' na tela.
 
 Se a condição do laço <hl>while</hl> for <hl>VERDADEIRA</hl> então o bloco é executado. Após isso a execução retorna ao ponto de
@@ -49,7 +49,7 @@ Esse processo se repete enquanto a condicional testada retornar valor verdadeiro
 
 <h2>Laços infinitos</h2>
 
-NO código exemplo acima nós sempre reduzimos o valor da variável, dessa forma garantimos que em algum momento a condicional seria falsa. 
+NO código exemplo acima nós sempre reduzimos o valor da variável, dessa forma garantimos que em algum momento a condicional seria falsa.
 Se por algum motivo a condicional nunca se tornar falsa você terá um <hl>laço infinito</hl>. O seu programa ficará preso
 em um pequeno bloco de execução e nunca conseguirá escapá-lo.
 
@@ -104,7 +104,7 @@ while (1) {
 say 'pronto';
 </code>
 
-Neste exemplo nós fazemos uma pergunta ao usuário e esperamos que seja capaz de responder com a resposta correta. 
+Neste exemplo nós fazemos uma pergunta ao usuário e esperamos que seja capaz de responder com a resposta correta.
 Caso não responda 'Perl', ficará preso no laço eternamente.
 
 Então a conversa poderá seguir da seguinte forma:
@@ -123,3 +123,4 @@ pronto
 
 Como pode observar, uma vez o usuário digitando a resposta correta, a declaração <hl>last</hl> é invocada e o resto do bloco
 iincluindo <hl>say 'Errado! Tente novamente!';</hl> é ignorado e a execução segue adiante após o <hl>laço while</hl>.
+
