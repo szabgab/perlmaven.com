@@ -1,9 +1,11 @@
-=title Core Perl documentation and CPAN module documentation
-=timestamp 2013-01-27T10:45:56
+=title Documentazione base di Perl e documentazione dei moduli CPAN
+=timestamp 2013-04-17T00:00:00
 =indexes perldoc, documentation, POD, CPAN
 =status show
+=original core-perl-documentation-cpan-module-documentation
 =books beginner_book
 =author szabgab
+=translator giatorta
 =index 1
 =archive 1
 =feed 1
@@ -12,83 +14,83 @@
 
 =abstract start
 
-Perl comes with a lot of documentation, but
-it takes some time till you get used to using it. In this part of the
-<a href="/perl-tutorial">Perl tutorial</a> I'll explain how
-to find your way around the documentaton.
+Perl è fornito di molta documentazione, ma
+occorre un po' di pratica prima di abituarsi ad usarla. In questa parte del
+<a href="/perl-tutorial">tutorial Perl</a> vi spiegherò come
+orientarvi nei meandri della documentazione.
 
 =abstract end
 
-<h2>perldoc on the web</h2>
+<h2>perldoc sul web</h2>
 
-The most convenient way to access the documentation of core perl
-is to visit the <a href="http://perldoc.perl.org/">perldoc</a> website.
+Il modo più semplice di accedere alla documentazione base di perl
+è quello di visitare il sito <a href="http://perldoc.perl.org/">perldoc</a>.
 
-It contains an HTML version of the documentation for Perl, the language,
-and for the modules that come with core Perl as released by the Perl 5 Porters.
+Contiene la versione HTML della documentazione del linguaggio Perl
+e dei moduli distribuiti con Perl secondo il rilascio dei Perl 5 Porters.
 
-It does not contain documentation for CPAN modules.
-There is an overlap though, as there are some modules that are available
-from CPAN but that are also included in the standard Perl distribution.
-(These are often referred to as <b>dual-lifed</b>.)
+Non contiene documentazione per i moduli CPAN.
+C'è però qualche sovrapposizione, dato che alcuni moduli disponibili
+su CPAN sono anche includi nella distribuzione standard di Perl.
+(Tali moduli sono detti <b>dual-lifed</b>, ovvero con una "doppia vita")
 
-You can use the search box at the top right corner. For example you can
-type in <hl>split</hl> and you'll get the documentation of <hl>split</hl>.
+Potete usare il campo di ricerca nell'angolo in alto a destra. Per esempio potete
+scrivere <hl>split</hl> per otterrete la documentazione di <hl>split</hl>.
 
-Unfortunately it does not know what to do with <hl>while</hl>, nor with
-<hl>$_</hl> or <hl>@_</hl>. In order to get explanation of those
-you'll have to flip through the documentation.
+Purtroppo il motore di ricerca non è in grado di trovare la documentazione di <hl>while</hl>, né di
+<hl>$_</hl> o di <hl>@_</hl>. Per accedervi
+è necessario navigare la documentazione.
 
-The most important page might be <a href="http://perldoc.perl.org/perlvar.html">perlvar</a>,
-where you can find information about variables such as <hl>$_</hl> and <hl>@_</hl>.
+La pagina più rilevante potrebbe essere <a href="http://perldoc.perl.org/perlvar.html">perlvar</a>,
+dove troverete informazioni su variabili come <hl>$_</hl> e <hl>@_</hl>.
 
-<a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> explains the syntax of Perl
-including that of the <a href="/while-loop">while loop</a>.
+<a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> spiega la sintassi di Perl
+inclusa quella del <a href="/while-loop">ciclo while</a>.
 
-<h2>perldoc on the command line</h2>
+<h2>perldoc da linea di comando</h2>
 
-The same documentation comes with the source code of Perl, but not
-every Linux distribution installs it by default. In some cases there
-is a separate package. For example in Debian and Ubuntu it is the <b>perl-doc</b>
-package. You need to installed it using <hl>sudo aptitude install perl-doc</hl>
-before you can use <hl>perldoc</hl>.
+La stessa documentazione è inclusa anche nella distribuzione di Perl, ma non
+tutte le distribuzioni Linux la installano di default. Talvolta la si trova
+in un package separato. Per esempio in Debian e Ubuntu c'è il package <b>perl-doc</b>.
+Dovete installarlo con <hl>sudo aptitude install perl-doc</hl>
+prima di poter usare il comando <hl>perldoc</hl>.
 
-Once you have it installed, you can type <hl>perldoc perl</hl> on the command line
-and you will get some explanation and a list of the chapters in the Perl documentation.
-You can quit this using the <hl>q</hl> key, and then type the name of one of the chapters.
-For example: <hl>perldoc perlsyn</hl>.
+Una volta installato, scrivendo <hl>perldoc perl</hl> sulla linea di comando
+otterrete una breve spiegazione e una lista dei capitoli della documentazione di Perl.
+Potete uscire premendo il tasto <hl>q</hl> e scrivere il nome di uno dei capitoli.
+Per esempio: <hl>perldoc perlsyn</hl>.
 
-This works both on Linux and on Windows though the pager on Windows is really weak,
-so I cannot recommend it. On Linux it is the regular man reader so you should be familiar
-with it already.
+Funziona sia su Linux che su Windows anche se il paginatore di Windows è davvero scadente
+e non posso raccomandarvelo. Linux utilizza il lettore standard di pagine man con cui dovreste già
+avere una certa familiarità.
 
-<h2>Documentation of CPAN modules</h2>
+<h2>Documentazione dei moduli CPAN</h2>
 
-Every module on CPAN comes with documentation and examples.
-The amount and quality of this documentation varies greatly
-among the authors, and even a single author can have very
-well documented and very under-documented modules.
+Ogni modulo CPAN è corredato da documentazione ed esempi.
+La quantità e qualità di tale documentazione varia in modo significativo
+da autore ad autore, e anche uno stesso autore può avere
+alcuni moduli ben documentati e altri molto mal documentati.
 
-After you installed a module called Module::Name,
-you can access its documentation by typing <hl>perldoc Module::Name</hl>.
+Dopo aver installato un modulo Module::Name,
+potete accedere alla sua documentazione scrivendo <hl>perldoc Module::Name</hl>.
 
-There is a more convenient way though, that does not even
-require the module to be installed. There are several
-web interfaces to CPAN. The main ones are <a href="http://metacpan.org/">Meta CPAN</a>
-and <a href="http://search.cpan.org/">search CPAN</a>.
+C'è però un modo più comodo, che non richiede neanche di
+avere il modulo installato. Ci sono molte interfacce
+web a CPAN. Le più importanti sono <a href="http://metacpan.org/">Meta CPAN</a>
+e <a href="http://search.cpan.org/">search CPAN</a>.
 
-They both are based on the same documentation, but they
-provide a slightly different experience.
+Sono tutte basate sulla stessa documentazione, ma permettono
+di accedervi in modi leggermente diversi.
 
 
-<h2>Keyword search on Perl 5 Maven</h2>
+<h2>Ricerca per keyword su Perl 5 Maven</h2>
 
-A recent addition to this site is the keyword search on the top menu bar.
-Slowly you will find explanation for more and more parts of perl.
-At one point part of the core perl documentation and the documentation of the
-most important CPAN modules will be also included.
+Recentemente è stata aggiunta a questo sito una ricerca per keyword nella barra di menu in alto.
+Gradualmente potrete trovare spiegazioni per una parte sempre più ampia di perl.
+A un certo punto saranno aggiunte anche una parte della documentazione base di perl e la documentazione dei
+moduli CPAN più importanti.
 
-If you are missing something from there, just make a comment below,
-with the keywords you will looking for and you have a good chance to
-get your request fulfilled.
+Se pensate che manchi qualcosa, create un commento qui sotto
+specificando le keyword che vi interessano, e avrete ottime probabilità che
+la vostra richiesta sia soddisfatta.
 
