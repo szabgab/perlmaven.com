@@ -1,8 +1,8 @@
 =title trim - Perl로 문자열의 앞뒤 공백 문자 제거하기
-=original trim
-=timestamp 2013-04-12T10:01:01
+=timestamp 2013-04-17T10:01:01
 =indexes trim, ltrim, rtrim
 =status show
+=original trim
 =books beginner_book
 =author szabgab
 =translator keedi
