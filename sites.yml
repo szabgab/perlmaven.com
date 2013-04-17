@@ -10,15 +10,18 @@ cn:
 de:
   url: http://de.perl5maven.com/
   name: Deutsch
-tw:
-  url: http://tw.perl5maven.com/
-  name: 正體中文
 it:
   url: http://it.perl5maven.com/
   name: Italiano
+ko:
+  url: http://ko.perl5maven.com/
+  name: 한국의
 ro:
   url: http://ro.perl5maven.com/
   name: Română
 ru:
   url: http://ru.perl5maven.com/
   name: Русский
+tw:
+  url: http://tw.perl5maven.com/
+  name: 正體中文
