@@ -40,6 +40,7 @@ Je suis sûr que vous vous demandez quelle version de Perl je vais couvrir. Pour
 </p>
 <p>Vous verrez comment l'utlisation d'une version plus récente de Perl peut améliorer votre code et vous verrez aussi comment atteindre le point où vous pourrez utiliser cette version de Perl.</p>
 
+<a id="auteur">
 <h2>À propos de l'auteur / éditeur</h2>
 
 <p>
@@ -61,6 +62,7 @@ Je suis conu pour être le créateur original de <a href="http://padre.perlide.o
     </ul>
 </p>
 
+<a id="traduction">
 <h2>Traductions</h2>
 
 <p>
