@@ -68,9 +68,9 @@ and use them like this:
 
 <code lang="perl">
 my $z = " abc ";
-printf "<%s>\n", trim $z;   # <abc>
-printf "<%s>\n", ltrim $z;  # <abc >
-printf "<%s>\n", rtrim $z;  # < abc>
+printf "<%s>\n", trim($z);   # <abc>
+printf "<%s>\n", ltrim($z);  # <abc >
+printf "<%s>\n", rtrim($z);  # < abc>
 </code>
 
 
@@ -85,9 +85,9 @@ a function called <hl>trim</hl> that you can use like this:
 use String::Util qw(trim);
 
 my $z = " abc ";
-printf "<%s>\n", trim $z;               # <abc>
-printf "<%s>\n", trim $z, right => 0;   # <abc >
-printf "<%s>\n", trim $z, left  => 0;   # < abc>
+printf "<%s>\n", trim( $z );              # <abc>
+printf "<%s>\n", trim( $z, right => 0 );  # <abc >
+printf "<%s>\n", trim( $z, left  => 0 );   # < abc>
 </code>
 
 By default it trims on both sides and you have to turn off trimming.
@@ -106,7 +106,7 @@ it will return the trimmed version of the string and will keep the original inta
 use Text::Trim qw(trim);
 
 my $z = " abc ";
-printf "<%s>\n", trim $z;  # <abc>
+printf "<%s>\n", trim($z);  # <abc>
 printf "<%s>\n", $z;       # < abc >
 </code>
 

@@ -1,0 +1,140 @@
+=title Filtering values using Perl grep
+=timestamp 2012-09-02T18:45:56
+=indexes grep, filter, any, List::MoreUtils, <>, glob
+=status show
+=author szabgab
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+The internal <b>grep</b> function of Perl is a <b>filter</b>. You give it a list of values
+and a condition, and it returns a sublist of values that yield true for the given
+condition.
+It is a generalization of the grep or egrep commands we know from UNIX and Linux,
+but you don't need to know these commands in order to understand the grep of Perl.
+
+=abstract end
+
+The <hl>grep</hl> function takes two arguments. A block and a list of values.
+
+For every element of the list, the value is assigned to <hl>$_</hl>, the
+<a href="/the-default-variable-of-perl">default scalar variable of Perl</a>,
+and then the block is executed. If the return value of the block is <hl>false</hl>, the value
+is discarded. If the block returned <hl>true</hl> the value from the list is kept as one
+of the return values.
+
+Pay attention, there is no comma between the block and the second parameter!
+
+Let's see a few examples for grep:
+
+<h2>Filter out small numbers</h2>
+
+<code lang="perl">
+my @numbers = qw(8 2 5 3 1 7);
+my @big_numbers = grep { $_ > 4 } @numbers;
+print "@big_numbers\n";      # (8, 5, 7)
+</code>
+
+This grep passes the values that are greater than 4,
+filtering out all the values that are not greater than 4.
+
+
+<h2>Filter out the new files</h2>
+
+<code lang="perl">
+my @files = glob "*.log";
+my @old_files = grep { -M $_ > 365 } @files;
+print join "\n", @old_files;
+</code>
+
+<hl>glob "*.log"</hl> will return all the files with a .log extension in the current directory.
+
+<hl>-M $path_to_file</hl> returns the number of days passed since the file was last modified.
+
+This example filters out the files that have been modified within the last year,
+and only let's through files that are at least one year old.
+
+<h2>Is this element in the array?</h2>
+
+Another interesting use of <hl>grep</hl> is to check if an element can be found in an array.
+For example, you have a list of names and you would like to know if the given name is in the list?
+
+<code lang="perl">
+use strict;
+use warnings;
+
+my @names = qw(Foo Bar Baz);
+my $visitor = <STDIN>;
+chomp $visitor;
+if (grep { $visitor eq $_ } @names) {
+   print "Visitor $visitor is in the guest list\n";
+} else {
+   print "Visitor $visitor is NOT in the guest list\n";
+}
+</code>
+
+In this case the grep function was placed in
+<a href="http://szabgab.com/scalar-and-list-context-in-perl.html">SCALAR context</a>.
+In SCALAR context <hl>grep</hl> will return the number of elements that went through the filter.
+As we are checking if the <hl>$visitor</hl> equals to the current element this grep
+will return the number of times that happens.
+
+If that's 0, the expression will evaluate to false, if it is any positive number then it will evaluate to true.
+
+This solution works, but because it depends on the context it might be unclear to some people.
+Let's see another solution using the <hl>any</hl> function of the
+<a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a> module.
+
+<h2>Do any of the elements match?</h2>
+
+The <hl>any</hl> function has the same syntax as <hl>grep</hl>, accepting a block and a list of values,
+but it only returns true or false. True, if the block gives true
+for any of the values. False if none of them match.
+It also short circuits so on large lists this can be a lot faster.
+
+<code lang="perl">
+use List::MoreUtils qw(any);
+if (any { $visitor eq $_ } @names) {
+   print "Visitor $visitor is in the guest list\n";
+} else {
+   print "Visitor $visitor is NOT in the guest list\n";
+}
+</code>
+
+
+<h2>UNIX grep and Linux grep?</h2>
+
+Just to make the explanation round:
+
+I mentioned that the build in <hl>grep</hl> function of Perl is a generalization of the UNIX
+grep command.
+
+The <b>UNIX grep</b> filters the lines of a file based on a regular expression.
+
+<b>Perl's grep</b> can filter any list of value based on any condition.
+
+This Perl code implements a basic version of the UNIX grep:
+
+<code lang="perl">
+my $regex = shift;
+print grep { $_ =~ /$regex/ } <>;
+</code>
+
+The first line gets the first argument from the command line which should be a
+regular expression. The rest of the command line arguments should be filenames.
+
+The diamond operator <hl>&lt;&gt</hl> fetches all the rows from all the
+files on the command line.
+The grep filters them according to the regular expression. The ones that pass
+the filtering are printed.
+
+<h2>grep on Windows</h2>
+
+Windows does not come with a grep utility but you can install
+one or you can use the same Perl script as above.
+
+

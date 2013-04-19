@@ -1,24 +1,40 @@
 en:
   url: http://perl5maven.com/
+  english: English
   name: English
 br:
   url: http://br.perl5maven.com/
+  english: (Brazilian) Portuguese
   name: Português
 cn:
   url: http://cn.perl5maven.com/
-  name: 中文
+  english: Chinese (mainland)
+  name: 简体中文
 de:
   url: http://de.perl5maven.com/
+  english: German
   name: Deutsch
-tw:
-  url: http://tw.perl5maven.com/
-  name: 中文 (Taiwan)
+fr:
+  url: http://fr.perl5maven.com/
+  english: French
+  name: Français
 it:
   url: http://it.perl5maven.com/
+  english: Italian
   name: Italiano
+ko:
+  url: http://ko.perl5maven.com/
+  english: Korean
+  name: 한국어
 ro:
   url: http://ro.perl5maven.com/
+  english: Romanian
   name: Română
 ru:
   url: http://ru.perl5maven.com/
+  english: Russian
   name: Русский
+tw:
+  url: http://tw.perl5maven.com/
+  english: Chinese (traditional)
+  name: 正體中文
