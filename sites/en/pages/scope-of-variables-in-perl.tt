@@ -17,7 +17,7 @@ There are two major variable types in Perl. One of them is the package global va
 
 The other one is the lexical variable declared with <hl>my</hl>.
 
-Let's what happens when you declare a variable using <hl>my</hl>? In which parts of the code will that variable be visible?
+Let's see what happens when you declare a variable using <hl>my</hl>? In which parts of the code will that variable be visible?
 In other words, what is the <b>scope</b> of the variable?
 
 =abstract end

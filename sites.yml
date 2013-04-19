@@ -14,6 +14,10 @@ de:
   url: http://de.perl5maven.com/
   english: German
   name: Deutsch
+fr:
+  url: http://fr.perl5maven.com/
+  english: French
+  name: Français
 it:
   url: http://it.perl5maven.com/
   english: Italian
