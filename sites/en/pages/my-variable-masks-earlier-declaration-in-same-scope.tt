@@ -72,7 +72,7 @@ In both of these cases, we declared <hl>$x</hl> twice in the same scope,
 which will generate a compile time warning.
 
 In the second example we declare <hl>$z</hl> twice as well, but it did not
-generate any warnig. That's because the <hl>$z</hl> inside the block
+generate any warning. That's because the <hl>$z</hl> inside the block
 is in a separate <a href="/scope-of-variables-in-perl">scope</a>.
 
 <h2>The scope of a function</h2>
@@ -138,7 +138,7 @@ done by perl during run-time.
 
 <h2>How to empty an existing variable?</h2>
 
-So if we cannot write <hl>my $x;</hl> twice in the same scope, then how can we set the variable to be "emtpy"?
+So if we cannot write <hl>my $x;</hl> twice in the same scope, then how can we set the variable to be "empty"?
 
 First of all, if a variable is declared inside a scope, that is, inside ant curly braces, then it will automatically
 disappear when the execution leaves the <a href="/scope-of-variables-in-perl">scope</a>.
