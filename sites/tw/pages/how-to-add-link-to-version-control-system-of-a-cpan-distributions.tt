@@ -1,8 +1,10 @@
-=title How to convince Meta CPAN to show a link to the version control system of a distribution?
+=title 如何讓 Meta CPAN 為發佈其上的模組顯示其版本控制系統的連結
 =timestamp 2013-01-03T10:45:56
 =indexes Perl, Perl 5, CPAN, Git, Github, SVN, Subversion, VCS, META, ExtUtils::MakeMaker, Module::Build, Module::Install, Dist::Zilla, CPAN::Meta::Spec
 =status show
 =author szabgab
+=translator shelling
+=original how-to-add-link-to-version-control-system-of-a-cpan-distributions
 =index 1
 =archive 1
 =feed 1
@@ -11,31 +13,28 @@
 
 =abstract start
 
-When you look at either <a href="https://www.metacpan.org/">META CPAN</a>, o at
-<a href="http://search.cpan.org/">search.cpan.org</a>, you will see that some modules
-have a link to Github or some other place where they host their project.
+你會看到有些在 <a href="https://www.metacpan.org/">META CPAN</a>
+或是 <a href="http://search.cpan.org/">search.cpan.org</a> 上的模組有一個連結指向
+Github 或是其他用來放置他們專案之處。
 
-On search.cpan.org it is a plain link next to the title <b>Repository</b>, on Meta CPAN
-it is a link, or a pop-up under the title <b>Clone repository</b> depending on the type of
-repository. (Github gets nice pop-ups, private repositories tend to get simple links.)
+在 search.cpan.org 它是一個在標題 <b>Repository</b> 旁邊的的文字連結，
+而在 Meta CPAN 按照連結類型不同，它會是個文字連結，或是一個依附在標題 <b>Clone repository</b> 的彈出式方框
+(Github 是彈出式方框，私人建立的倉儲會是簡單的連結。)
 
 =abstract end
 
-Both sites take the link to the Version Contol system from the META files included in the CPAN distributons.
-Either META.yml, or the newer META.json. (They should only differ in their format.)
+兩個網站都從發佈 CPAN 的模組中所含的元文件檔取出版本控制系統的連結。
+無論從 META.yml 或是比較新的 META.json。(他們只是格式的不同。)
 
-As the META files are usually generated automatically when the distribution is released
-by the author, I am going to show you how you can tell the 4 main packaging systems
-to include the repository link.
+元文件通常在作者發佈模組的時候自動產生，這裡要告訴你如何讓四個主要的打包系統包含倉儲的連結。
 
-In the examples I'll use the link to the repository of <a href="https://metacpan.org/module/Task::DWIM">Task::DWIM</a>,
-which is an experimental distribution listing all the modules included in a <a href="http://dwimperl.com/">DWIM Perl</a>
-distribution.
+這個範例中我使用 <a href="https://metacpan.org/module/Task::DWIM">Task::DWIM</a> 的倉儲連結
+這是一個實驗性質的模組，列出了所有 <a href="http://dwimperl.com/">DWIM Perl</a> 所含的模組。
 
 <h2>ExtUtils::MakeMaker</h2>
 
-If you use <a href="https://metacpan.org/module/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a> add the following to your Makefile.PL
-as parameter in the <b>WriteMakefile</b> function:
+如果你使用 <a href="https://metacpan.org/module/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>
+請把下面這段當做丟給 <b>WriteMakefile</b> 函式的參數加入你的 Makefile.PL
 
 <code lang="perl">
 META_MERGE        => {
@@ -45,12 +44,12 @@ META_MERGE        => {
 },
 </code>
 
-If your version of ExtUtils::MakeMaker does not yet support this, just upgrade ExtUtils::MakeMaker.
+如果你的 ExtUtils::MakeMaker 不支援，請升級它。
 
 <h2>Module::Build</h2>
 
-If you use <a href="https://metacpan.org/module/Module::Build">Module::Build</a>, add the following to Build.PL,
-in the <b>Module::Build->new</b> call:
+如果你使用 <a href="https://metacpan.org/module/Module::Build">Module::Build</a>，加入下面這段到 Build.PL，
+作為 <b>Module::Build->new</b> 的參數：
 
 <code lang="perl">
 meta_merge => {
@@ -62,7 +61,7 @@ meta_merge => {
 
 <h2>Module::Install</h2>
 
-If you use <a href="https://metacpan.org/module/Module::Install">Module::Install</a> add the following to Makefile.PL:
+如果你使用 <a href="https://metacpan.org/module/Module::Install">Module::Install</a> 加入下面這段到 Makefile.PL：
 
 <code lang="perl">
 repository 'https://github.com/dwimperl/Task-DWIM';
@@ -70,18 +69,18 @@ repository 'https://github.com/dwimperl/Task-DWIM';
 
 <h2>Dist::Zilla</h2>
 
-If you use <a href="http://dzil.org/">Dist::Zilla</a>, the
+如果你使用 <a href="http://dzil.org/">Dist::Zilla</a>，
 <a href="https://metacpan.org/module/Dist::Zilla::Plugin::Repository">Dist::Zilla::Plugin::Repository</a>
-will automatcally add the link to your repository, though you can also specify it manually.
+模組會自動幫你把連結放入倉儲，雖然你也可以手動指定。
 
 <code lang="perl">
 [MetaResources]
 repository.url = https://github.com/dwimperl/Task-DWIM.git
 </code>
 
-A detailed version would include more details as in the following example. As I can see these parts are only
-included in the META.json file and not in the META.yml file. In order to generate that file, you'll also need
-to inlcude the <a href="https://metacpan.org/module/Dist::Zilla::Plugin::MetaJSON">MetaJSON plugin</a> of Dist::Zilla.
+詳細的版本會長得像是下面這樣。
+這部份只會包含在 META.json，META.yml 則無。要產生此檔需要 Dist::Zilla 
+的 <a href="https://metacpan.org/module/Dist::Zilla::Plugin::MetaJSON">MetaJSON plugin</a>
 
 <code lang="perl">
 [MetaResources]
@@ -92,25 +91,26 @@ repository.type = git
 [MetaJSON]
 </code>
 
-There are other ways to <a href="http://www.lowlevelmanager.com/2012/05/dzil-plugins-github-vs-githubmeta.html">add
-the repository links</a> to the META files when using Dist::Zilla.
+Dist::Zilla.還有許多其他方式可以
+<a href="http://www.lowlevelmanager.com/2012/05/dzil-plugins-github-vs-githubmeta.html">把倉儲連結加入元文件中</a>
 
-<h2>Why shall I add this link?</h2>
+<h2>為什麼我需要加入此連結</h2>
 
-It's simple. The easier it is to send patches to the most recent version of your module,
-the more likely you'll get them.
+簡單。越容易發送補丁給你的模組，你越容易得到補丁。
 
-Also you might have already made some changes to your module since the latest release.
-You might have already fixed the bug I'd like to fix. If can see your repository we can avoid duplicate work.
+還有，從最後一次發佈後，你也許已經對你的模組做了許多修改。
+你也許已經修正許多他人想修正的臭蟲。如果我們可以瀏覽你的倉儲，會避免工作重複。
 
-<h2>Other resources</h2>
+<h2>其他資源</h2>
 
-If you are already dealing with this, you could add some other resources as well.
-The <a href="https://metacpan.org/module/CPAN::Meta::Spec#resources">CPAN META Specification</a> have all that listed.
-If something is unclear there, just ask.
+如果你已經做到這些，你也可以加入其他資源。
+這份 <a href="https://metacpan.org/module/CPAN::Meta::Spec#resources">CPAN 元規格</a> 列出了所有項目。
+如果哪裡不清楚，問就對了。
 
-<h2>Licenses</h2>
+<h2>許可證</h2>
 
-In an other article I showed <a href="/how-to-add-the-license-field-to-meta-files-on-cpan">how to add the license information to the META files of CPAN distributions</a>.
-If you had a public repository, it would be easier for others to send that patch too.
+在另一篇文章中，我說明了
+<a href="/how-to-add-the-license-field-to-meta-files-on-cpan">如何把許可證資訊加入 CPAN 模組的元文件中</a>。
+如果你有一個公開倉儲，這樣讓其他人比較容易發送補丁。
+
 
