@@ -13,80 +13,89 @@
 
 =abstract start
 
-Perl vine cu multă documentație, dar durează puțin până să te obișnuiești s-o folosești. În acastă parte a <a href="/perl-tutorial">Tutorialului de Perl</a> vă voi explica cum să-ți găsești calea prin documentație.
+Perl vine cu multă documentație, dar durează puțin până să te
+obișnuiești s-o folosești. În această parte
+a <a href="/perl-tutorial">Tutorialului de Perl</a> îți voi explica
+cum să-ți găsești calea prin documentație.
 
 =abstract end
 
 <h2>perldoc pe web</h2>
 
-Cea mai convenabilă cale de a accesa documentatia Perl este să
+Cea mai convenabilă cale de a accesa documentația Perl este să
 vizitezi situl <a href="http://perldoc.perl.org/">perldoc</a>.
 
-Acesta conține o versiune HTML a documentației Perl, limbajul, și
-pentru modulele care vin cu Perl așa cum sunt publicate de autori:
-Perl 5 Porters.
+Acesta conține o versiune HTML a documentației limbajului Perl, și a
+modulellor care vin cu Perl așa cum sunt publicate de autori: Perl 5
+Porters.
 
 Nu conține documentația pentru modulele CPAN.  Există totuși o
 suprapunere, există module care sunt disponibile pe CPAN dar sunt de
 asemenea incluse în distribuția Perl standard.  (Aceste sunt de obicei
 numite <b>dual-lifed</b> - în traducere, cu viață dublă.)
 
-You can use the search box at the top right corner. For example you can
-type in <hl>split</hl> and you'll get the documentation of <hl>split</hl>.
+Poți folosi caseta de căutare din colțul din dreapta sus. De exemplu
+poți tasta <hl>split</hl> și vei obține documentația funcției <hl>split</hl>.
 
-Unfortunately it does not know what to do with <hl>while</hl>, nor with
-<hl>$_</hl> or <hl>@_</hl>. In order to get explanation of those
-you'll have to flip through the documentation.
+Din păcate nu știe ce să facă dacă tastezi <hl>while</hl>, <hl>$_</hl>
+sau <hl>@_</hl>.  Ca să obții explicații pentru acestea va trebui să
+răsfoiești documentația.
 
-The most important page might be <a href="http://perldoc.perl.org/perlvar.html">perlvar</a>,
-where you can find information about variables such as <hl>$_</hl> and <hl>@_</hl>.
+Ce mai importantă pagină ar putea
+fi <a href="http://perldoc.perl.org/perlvar.html">perlvar</a>, unde
+poți găsi informații despre variabile ca <hl>$_</hl> și <hl>@_</hl>.
 
-<a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> explains the syntax of Perl
-including that of the <a href="/while-loop">while loop</a>.
+<a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> explică
+sintaxa Perl inclusiv cea pentru <a href="/while-loop">while loop</a>.
 
-<h2>perldoc on the command line</h2>
+<h2>perldoc în linia de comandă</h2>
 
-The same documentation comes with the source code of Perl, but not
-every Linux distribution installs it by default. In some cases there
-is a separate package. For example in Debian and Ubuntu it is the <b>perl-doc</b>
-package. You need to installed it using <hl>sudo aptitude install perl-doc</hl>
-before you can use <hl>perldoc</hl>.
+Aceeași documentație vine și cu codul sursă Perl, dar nu toate
+distribuțiile Linux o instalează implicit.  În unele cazuri există un
+pachet separat. De exemplu în Debian și Ubuntu este pachetul
+<b>perl-doc</b>. Trebuie instalat folosind comanda <hl>sudo aptitude
+install perl-doc</hl> înainte de a putea folosi
+comanda <hl>perldoc</hl>.
 
-Once you have it installed, you can type <hl>perldoc perl</hl> on the command line
-and you will get some explanation and a list of the chapters in the Perl documentation.
-You can quit this using the <hl>q</hl> key, and then type the name of one of the chapters.
-For example: <hl>perldoc perlsyn</hl>.
+Odată instalat, poți tasta <hl>perldoc perl</hl> în linia de comandă
+și vei obține câteva explicații și o listă a capitolelor documentației
+Perl.
 
-This works both on Linux and on Windows though the pager on Windows is really weak,
-so I cannot recommend it. On Linux it is the regular man reader so you should be familiar
-with it already.
+Poți întrerupe folosind tasta <hl>q</hl>, iar după aceea poți tasta
+numele unuia dintre capitole.  De exemplu: <hl>perldoc perlsyn</hl>.
 
-<h2>Documentation of CPAN modules</h2>
+Aceasta funcționează atât pe Linux cât și pe Windows dar utilitarul de
+paginare din Windows este foarte slab, deci nu pot să-ți recomand să-l
+folosești.  Pe Linux este folosit utilitarul de citit manuale deci ar
+trebui să-ți fie deja familiar.
 
-Every module on CPAN comes with documentation and examples.
-The amount and quality of this documentation varies greatly
-among the authors, and even a single author can have very
-well documented and very under-documented modules.
+<h2>Documentația modulelor CPAN</h2>
 
-After you installed a module called Module::Name,
-you can access its documentation by typing <hl>perldoc Module::Name</hl>.
+Fiecare modul pe CPAN vine cu documentație și cu exemple.  Calitatea
+aceste documentații variază mult în funcție de autor și pe de altă
+parte fiecare autor poate avea module foarte bine documentate și
+module cu o documentație slabă.
 
-There is a more convenient way though, that does not even
-require the module to be installed. There are several
-web interfaces to CPAN. The main ones are <a href="http://metacpan.org/">Meta CPAN</a>
-and <a href="http://search.cpan.org/">search CPAN</a>.
+După instalarea unui modul numit de exemplu Module::Name, poți să-i
+accesezi documentația tastând <hl>perldoc Module::Name</hl>.
 
-They both are based on the same documentation, but they
-provide a slightly different experience.
+Există și o modalitate mai convenabilă totuși, care nu presupune ca
+modulul să fie instalat. Sunt mai multe interfețe web pentru
+CPAN. Cele principale sunt <a href="http://metacpan.org/">Meta
+CPAN</a> și <a href="http://search.cpan.org/">search CPAN</a>.
+Ambele se bazează pe aceeași documentație, dar furnizează o experiență
+puțin diferită.
 
 
-<h2>Keyword search on Perl 5 Maven</h2>
+<h2>Căutare după cuvinte cheie în Perl 5 Maven</h2>
 
-A recent addition to this site is the keyword search on the top menu bar.
-Slowly you will find explanation for more and more parts of perl.
-At one point part of the core perl documentation and the documentation of the
-most important CPAN modules will be also included.
+O funcție recent adăugată pe acest sit este căutarea după cuvinte
+cheie de pe bara de meniu de la începutul paginii.  Încet încet vei
+găsi explicații pentru, din ce în ce mai multe părți din, Perl.  La un
+moment dat documenația limbajului Perl și documentația celor mai
+importante module CPAN va fi de asemenea inclusă.
 
-If you are missing something from there, just make a comment below,
-with the keywords you will looking for and you have a good chance to
-get your request fulfilled.
+Dacă crezi că lipsește ceva de aici, adaugă un comentariu dedesubt, cu
+cuvintele cheie pe care le-ai folosit și există șanse bune să ți se
+îndeplinească dorința. (n.t. deocamdată numai pe pagina originală în
+limba engleză).
