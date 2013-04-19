@@ -25,23 +25,9 @@ my $root = dirname dirname abs_path $0;
 my @languages = map { basename $_ } glob "$root/sites/*";
 #say Dumper \@languages;
 
-say "\nList items in DONE folder";
-say '-' x 30;
-foreach my $lang (@languages) {
-	my @drafts = map { basename $_ } glob "$root/sites/$lang/done/*.tt";
-	next if not @drafts;
-	say "Language $lang";
-	say "   $_" for @drafts;
-}
+show('done');
 if ($draft) {
-	say "\nList items in DRAFT folder";
-	say '-' x 30;
-	foreach my $lang (@languages) {
-		my @drafts = map { basename $_ } glob "$root/sites/$lang/drafts/*.tt";
-		next if not @drafts;
-		say "Language $lang";
-		say "   $_" for @drafts;
-	}
+	show('drafts');
 }
 
 
@@ -108,6 +94,7 @@ my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt prod
 	}
 }
 say "\nDONE";
+exit;
 
 
 sub usage {
@@ -117,3 +104,18 @@ Usage: $0
           --help
 END_USAGE
 }
+
+sub show {
+	my ($folder) = @_;
+
+	printf "\nList items in %s folder\n", uc $folder;
+	say '-' x 30;
+	foreach my $lang (@languages) {
+		my @files = map { basename $_ } glob "$root/sites/$lang/$folder/*.tt";
+		next if not @files;
+		say "Language $lang";
+		say "   $_" for @files;
+	}
+}
+
+
