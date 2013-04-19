@@ -4,8 +4,10 @@ For further information check out the README file of https://github.com/szabgab/
 
 ### Workflow
 
-* copy tt file from https://github.com/szabgab/perl5maven.com
+*  从 sites/en/pages 选择你想翻译的文件，复制到 sites/cn/drafts 
 
-* translate
+你也可以翻译draft中没有翻译的文章， 不过不推荐，因为可能造成冲突。
+
+* 翻译
 
 * add link in perl-tutorial.tt

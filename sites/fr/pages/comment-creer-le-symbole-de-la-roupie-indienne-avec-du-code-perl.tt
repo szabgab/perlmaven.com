@@ -1,7 +1,8 @@
 =title Comment créer le symbole de la roupie indienne avec du code Perl
-=timestamp 2013-04-15T07:30:01
+=timestamp 2013-04-19T10:30:04
 =indexes binmode, Unicode, UTF8
 =status show
+=original how-to-create-an-indian-rupee-symbol-with-perl-code
 =books beginner_book
 =author szabgab
 =translator oval

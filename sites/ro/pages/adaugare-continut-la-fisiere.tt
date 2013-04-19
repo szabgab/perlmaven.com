@@ -1,7 +1,8 @@
 =title Adăugare conținut la fișiere
-=timestamp 2013-04-13T13:18:00
+=timestamp 2013-04-16T23:30:00
 =indexes files, append, open, >>
 =status show
+=original appending-to-files
 =books beginner_book
 =author szabgab
 =translator stefansbv
@@ -15,7 +16,7 @@
 
 În acest episod al <a href="/perl-tutorial">Tutorialului de Perl</a> vom vedea <b>cum să adăugăm conținut la fișiere utilizând Perl</b>.
 
-În episodul trecut am învățat <a href="/writing-to-files-with-perl">cum să scriem conținut în fișiere</a>.
+În episodul trecut am învățat <a href="/crearea-fisierelor-cu-perl">cum să scriem conținut în fișiere</a>.
 Acestă abordare este bună atunci când creăm un fișier nou, dar sunt cazuri când am dori mai degrabă să păstrăm conținutul original al fișierului, și să mai adăugăm linii la sfârșit.
 
 Cazul cel ma proeminent este acela al fișierelor log.

@@ -1,7 +1,8 @@
 =title Perl în linia de comandă
-=timestamp 2013-01-17T14:45:56
+=timestamp 2013-04-19T14:45:56
 =indexes -v, -e, -p, -i
 =status show
+=original perl-on-the-command-line
 =books beginner_book
 =author szabgab
 =translator stefansbv
@@ -114,5 +115,5 @@ explained</a> de Peteris Krumins.
 <h2>Mai departe</h2>
 
 Partea următoare este despre
-<a href="/core-perl-documentation-cpan-module-documentation">
+<a href="http://perl5maven.com/core-perl-documentation-cpan-module-documentation">
 documentația Perl și despre documentațiile modulelor CPAN</a>.

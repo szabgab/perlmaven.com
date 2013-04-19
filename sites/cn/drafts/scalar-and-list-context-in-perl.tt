@@ -1,9 +1,10 @@
-=title Scalar and List context in Perl, the size of an array
+=title Perl 中的上下文
 =timestamp 2013-04-10T11:45:56
 =indexes scalar, list, array, size, length, context, Perl
 =status show
 =books beginner_book
 =author szabgab
+=transltor swuecho
 =index 1
 =archive 1
 =feed 1
@@ -12,55 +13,38 @@
 
 =abstract start
 
-In this episode of the <a href="/perl-tutorial">Perl tutorial</a> we are going to look at
-<b>context sensitivity</b> in Perl.
+本节 <a href="/perl-tutorial">Perl 教程</a> 我们学习Perl 中的上下文。
 
-In English, as in most of the other spoken languages, words can have multiple meanings.
-For example the word "left" has several meanings:
+在英语中，有很多多义词，其他语言中也是这样。汉语更是如此。
 
-I left the building.
+我们能正确理解多义词的意义，因为我们并不是孤立的看一个词，而是根据某个词所在的语境来理这个词的意思。
 
-I turned left at the building.
-
-We understand which is the correct meaning by the sentences around the word.
-This is called the context.
-
-Perl 5 is similar. Words, function calls, and other expressions can have
-different meaning depending on context. It makes learning harder, but provides
-more expressiveness.
+Perl 也是如此，Perl 中的关键词，函数，以及一些表达式，在不同的语境中，可能有不同的意思。
+这是Perl的独特之处，很多人喜欢，因为使语言变得简洁；也遭到不少人的诟病，因为容易造成混乱，尤其是对于初学者。
 
 =abstract end
 
-There are two major contexts in Perl: SCALAR and LIST context.
+Perl 中的语境主要有两种，一是标量上下文，即单数的语境；二是列表上下文，可以理解为复数的语境。
 
-<h2>Array in LIST context</h2>
-
-Let's see an example:
+<h2>复数语境中的数组</h2>
 
 <code lang="perl">
 my @words = ('Foo', 'Bar', 'Baz');
 my @names = @words;
 </code>
 
-After the above assignment <hl>@names</hl> contains a copy of the values that were in <hl>@words</hl>;
+赋值之后，<hl>@names</hl> 和 <hl>@words</hl> 包含相同的元素，即在这里，赋值相当与复制。
 
-Assignment of an array to another array copies the content of the array.
-
-<h2>Array in SCALAR context</h2>
+<h2>单数语境中的数组</h2>
 
 <code lang="perl">
 my @words = ('Foo', 'Bar', 'Baz');
 my $people =  @words;
 </code>
 
-This time we assigned the <hl>@words</hl> array to <hl>$people</hl>, a scalar variable.
 
-Other languages would behave differently, but in Perl this
-assignment places <b>the number of elements of the array</b>
-in the scalar variable.
-
-That's arbitrary, and in the above case not very useful either, but there are a number of other
-cases when this behavior can be very useful.
+赋值后 <hl>$people</hl> 的值是 3。即在单数的语境中，得到的是数组中元素的个数。如果是在没有语境的语言中，
+你需要用函数计算出数组的元素的个数。
 
 <h2>SCALAR and LIST context</h2>
 
@@ -218,8 +202,10 @@ In the second assignment <hl>my $y   = @words;</hl> we assigned <b>directly</b> 
 a scalar variable. That created SCALAR context on the right hand side. An array in
 SCALAR context returns the number of elements in it.
 
+<!--
 This will be very important when you look at
-<a href="/subroutines-and-functions-in-perl">passing parameters to functions</a>.
+<a href="http://szabgab.com/subroutines-and-functions-in-perl.html">passing parameters to functions</a>
+-->
 
 <h2>Forcing SCALAR context</h2>
 

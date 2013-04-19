@@ -1,4 +1,4 @@
-=title Perl Tutorial in Chinese
+=title Perl 中文教程 
 =timestamp 2012-05-02T22:45:56
 =status show
 =original perl-tutorial
@@ -6,6 +6,7 @@
 =newsletter 0
 =published 0
 =author 0
+=translator 0
 =index 0
 =archive 0
 =feed 0
@@ -15,17 +16,21 @@
 
 <ul>
     <li><a href="/installing-perl-and-getting-started">安装 Perl</a></li>
+    <li><a href="/string-functions-length-lc-uc-index-substr"> 字符串函数: length, lc, uc, index, substr</a></li>
     <li><a href="/number-guessing-game">猜数字</a></li>
+    <li><a href="/for-loop-in-perl">for 循环</a></li>
+    <li><a href="/automatic-value-conversion-or-casting-in-perl"> 字符串到数字的自动转换 </a></li>
     <li><a href="/undef-and-defined-in-perl">undef, 初始值及Perl函数</a></li>
     <li><a href="/boolean-values-in-perl">Perl中的布尔值</a></li>
+    <li><a href="/perl-arrays"> 数组 </a></li>
+    <li><a href="/perl-arrays"> 映射 </a></li>
     <li><a href="/join">join</a></li>
     <li><a href="/writing-to-files-with-perl">Perl 文件读写</a></li>
-    <li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">Perl 中的文件操作：删除和重命名</a></li>
+    <li><a href="/how-to-remove-copy-or-rename-a-file-with-perl"> 文件操作：删除和重命名</a></li>
     <li><a href="/how-to-read-a-csv-file-using-perl"> CSV 文件处理 </a></li>
-    <li><a href="/the-year-19100">千年虫</a></li>
-    <li><a href="/attribute-types-in-perl-classes-when-using-moose">Moose的属性类型</a></li>
+    <li><a href="/the-year-19100"> 时间处理 </a></li>
+    <li><a href="/attribute-types-in-perl-classes-when-using-moose"> Moose的属性类型 </a></li>
     <li><a href="/perl-cgi-mod-perl-psgi"> CGI, mod_perl, PSGI ?</a></li>
-    <li><a href="/string-functions-length-lc-uc-index-substr"> 字符串函数: length, lc, uc, index, substr</a></li>
 </ul>
 
 For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>

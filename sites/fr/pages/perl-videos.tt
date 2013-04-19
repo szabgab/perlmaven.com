@@ -1,8 +1,9 @@
 =title Les vidéos des cours sur Perl
-=timestamp 2013-04-15T07:30:01
+=timestamp 2013-04-19T10:30:10
 =description Les vidéos sur Perl
 =tags vidéo
 =status show
+=original perl-videos
 =showright 0
 =newsletter 0
 =published 0
@@ -16,7 +17,7 @@
 
 Les vidéos des cours Perl ci-dessous sont disponibles via Udemy :
 <ul>
-<li><a href="/beginner-perl-maven-video-course">vidéo du cours débutant Perl Maven</a></li>
-<li><a href="/advanced-perl-maven-video-course">vidéo du cours avancé Perl Maven</a></li>
+<li><a href="http://perl5maven.com/beginner-perl-maven-video-course">vidéo du cours débutant Perl Maven</a></li>
+<li><a href="http://perl5maven.com/advanced-perl-maven-video-course">vidéo du cours avancé Perl Maven</a></li>
 </ul>
 

@@ -1,11 +1,11 @@
 =title Perl 的布林值
-=timestamp 2012-11-15T11:45:56
+=timestamp 2013-04-16T19:47:56
 =indexes undef, true, false, boolean
 =status show
+=original boolean-values-in-perl
 =books beginner_book
 =author szabgab
 =translator shelling
-=original boolean-values-in-perl
 =index 1
 =archive 1
 =feed 1

@@ -1,7 +1,8 @@
 =title Le bulletin d'informations de Perl Maven
-=timestamp 2013-04-15T07:30:01
+=timestamp 2013-04-19T10:30:08
 =tags bulletin d'informations
 =status show
+=original perl-maven-newsletter
 =showright 0
 =newsletter 0
 =published 0
@@ -26,5 +27,5 @@ Courriel: <input name="email" />
 <input type="submit" value="S'abonner" />
 </form>
 
-En bonus, ceux qui s'abonnent au bulletin d'information recevra aussi une copie gratuite du <a href="/perl-maven-cookbook">livre des recettes de Perl Maven</a>.
+En bonus, ceux qui s'abonnent au bulletin d'information recevra aussi une copie gratuite du <a href="/perl-maven-livre-de-recettes">livre des recettes de Perl Maven</a>.
 
