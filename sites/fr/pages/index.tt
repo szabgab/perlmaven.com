@@ -19,7 +19,7 @@
 <a href="/about#author"><img width="54" height="54" src="/img/szabgab.png" alt="Gabor Szabo" /></a><br>
 </div>
 <div>
-Mon nom est <a href="/about#auteur">Gabor Szabo</a>. J'utilise Perl depuis 1995. Je l'enseigne lors de formations en entreprise depuis 2000. J'aime faire la classe-salle de formation, mais, malheureusement, ceci limite le nombre de personnes que je peux atteindre. J'ai créé ce site et les produits sur ce site afin de vous aider à utiliser le langage de programmation Perl pour résoudre des problèmes.
+Mon nom est <a href="/about#auteur">Gabor Szabo</a>. J'utilise Perl depuis 1995. Je l'enseigne lors de formations en entreprise depuis 2000. J'aime offrir des classes de formation sur place, mais, malheureusement, ceci limite le nombre de personnes que je peux atteindre. J'ai créé ce site et les produits sur ce site afin de vous aider à utiliser le langage de programmation Perl pour résoudre des problèmes.
 J'espère que vous le trouverez utile.
 </div>
 </div>
@@ -41,7 +41,7 @@ Perl est souvent utilisé en <b>automatisation de test</b>. Si vous travaillez d
 </div>
 
 <div class="main-content">
-Si vous construisez de <b>nouvelles applications web</a> - que ce soit en privé ou à l'intérieur d'une entreprise -, vous pouvez commencer par lire l'article qui compare <a href="/perl-cgi-mod-perl-psgi">CGI, mod_perl et PSGI</a>. De là, vous pouvez continuer à lire le <a href="/perl-tutorial">tutoriel Perl</a>. Et si vous vous inscrivez au <a href="/perl-maven-bulletin-d-informations">bulletin d'informationr</a>, vous serez informé lorsque je publierai de nouveaux articles sur le <b>développement web avec Perl</b>.
+Si vous construisez de <b>nouvelles applications web</b> - que ce soit en privé ou à l'intérieur d'une entreprise -, vous pouvez commencer par lire l'article qui compare <a href="http://perl5maven.com/perl-cgi-mod-perl-psgi">CGI, mod_perl et PSGI</a>. De là, vous pouvez continuer à lire le <a href="/perl-tutorial">tutoriel Perl</a>. Et si vous vous inscrivez au <a href="/perl-maven-bulletin-d-informations">bulletin d'informations</a>, vous serez informé lorsque je publierai de nouveaux articles sur le <b>développement web avec Perl</b>.
 </div>
 
 <div class="main-content">
