@@ -1,5 +1,5 @@
 =title Documentazione base di Perl e documentazione dei moduli CPAN
-=timestamp 2013-04-17T00:00:00
+=timestamp 2013-04-19T14:27:01
 =indexes perldoc, documentation, POD, CPAN
 =status show
 =original core-perl-documentation-cpan-module-documentation
@@ -45,7 +45,7 @@ La pagina più rilevante potrebbe essere <a href="http://perldoc.perl.org/perlva
 dove troverete informazioni su variabili come <hl>$_</hl> e <hl>@_</hl>.
 
 <a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> spiega la sintassi di Perl
-inclusa quella del <a href="/while-loop">ciclo while</a>.
+inclusa quella del <a href="http://perl5maven.com/while-loop">ciclo while</a>.
 
 <h2>perldoc da linea di comando</h2>
 
