@@ -5,6 +5,7 @@
 =status show
 =original perl-tutorial
 =author szabgab
+=translator scheiderlein
 =index 0
 =archive 0
 =feed 0
@@ -82,7 +83,7 @@ Es sind einige Übersetzungen mit unterschiedlichem Fortschritt in Arbeit:
 <ol>
 <li><a href="/installation-und-ein-anfang-mit-perl">Installation von Perl, Ausgabe 'Hallo Welt', Sicherheitsnetz (use strict, use warnings)</a></li>
 <li><a href="http://perl5maven.com/perl-editor">Editoren, IDE und Entwicklungsumgebungen für Perl</a></li>
-<li><a href="http://perl5maven.com/perl-on-the-command-line">Perl auf der Kommandozeile</a></li>
+<li><a href="/perl-auf-der-kommandozeile">Perl auf der Kommandozeile</a></li>
 <li><a href="http://perl5maven.com/core-perl-documentation-cpan-module-documentation">Perl-Basisdokumentation, CPAN-Modul-Dokumentation</a></li>
 <li><a href="http://perl5maven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
 <li><a href="http://perl5maven.com/debugging-perl-scripts">Debuggen von Perl-Skripten</a></li>
