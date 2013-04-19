@@ -52,7 +52,8 @@ my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt prod
 				print "Missing URL for $line in authors.txt of $lang\n";
 				$url = 'Unreal';
 			} elsif ($url !~ m{^https://plus\.google\.com/\d+$}) {
-				die "Not G+ $url";
+				print "Not G+ '$url' in authors.txt for $lang\n";
+				$url = 'Unreal';
 			}
 			$authors{$nick} = {
 				name => $name,
