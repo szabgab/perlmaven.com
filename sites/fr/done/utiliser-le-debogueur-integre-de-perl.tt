@@ -1,7 +1,8 @@
 =title Utiliser le débogueur intégré de Perl
-=timestamp 2013-04-15T22:45:56
+=timestamp 2013-04-19T10:30:11
 =indexes debugger, -d, debug, screencast
 =status show
+=original using-the-built-in-debugger-of-perl
 =author szabgab
 =translator oval
 =index 1

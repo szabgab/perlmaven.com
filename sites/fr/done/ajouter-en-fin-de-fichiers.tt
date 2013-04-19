@@ -1,7 +1,8 @@
 =title Ajouter en fin de fichier
-=timestamp 2013-04-15T07:30:01
+=timestamp 2013-04-19T10:30:01
 =indexes files, append, open, >>
 =status show
+=original appending-to-files
 =books beginner_book
 =author szabgab
 =translator oval
@@ -15,7 +16,7 @@
 
 Dans cette leçon issue du <a href="/perl-tutorial">tutoriel Perl</a>, nous allons voir <b>comment inclure des données en fin de ficher avec Perl</b>.
 
-Dans la précédente leçon, nous avons appris <a href="/writing-to-files-with-perl">comment écrire dans des fichiers</a>.
+Dans la précédente leçon, nous avons appris <a href="http://perl5maven.com/writing-to-files-with-perl">comment écrire dans des fichiers</a>.
 Ce cas d'utilisation est bon quand nous sommes entrain de créer un fichier vide, mais il existe d'autres cas d'utilisation où vous aimeriez garder le contenu du fichier original tout en ajoutant quelques nouvelles lignes de contenu en fin de ce fichier.
 
 Le cas le plus répandu étant quand vous écrivez dans un fichier journal.
