@@ -6,6 +6,14 @@ use 5.010;
 use Cwd            qw(abs_path);
 use Data::Dumper   qw(Dumper);
 use File::Basename qw(basename dirname);
+use Getopt::Long   qw(GetOptions);
+
+GetOptions(
+	"draft" => \my $draft,
+	"help"  => \my $help,
+	) or usage();
+usage() if $help;
+
 
 # list drafts  TODO: list them  sorted by =timstamp
 # TODO: check the =status of the pages
@@ -25,14 +33,17 @@ foreach my $lang (@languages) {
 	say "Language $lang";
 	say "   $_" for @drafts;
 }
-say "\nList items in DRAFT folder";
-say '-' x 30;
-foreach my $lang (@languages) {
-	my @drafts = map { basename $_ } glob "$root/sites/$lang/drafts/*.tt";
-	next if not @drafts;
-	say "Language $lang";
-	say "   $_" for @drafts;
+if ($draft) {
+	say "\nList items in DRAFT folder";
+	say '-' x 30;
+	foreach my $lang (@languages) {
+		my @drafts = map { basename $_ } glob "$root/sites/$lang/drafts/*.tt";
+		next if not @drafts;
+		say "Language $lang";
+		say "   $_" for @drafts;
+	}
 }
+
 
 # collect all the english pages
 say "\nMinor issues";
@@ -98,3 +109,11 @@ my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt prod
 }
 say "\nDONE";
 
+
+sub usage {
+	die <<"END_USAGE";
+Usage: $0
+          --draft    to also show the draft folder
+          --help
+END_USAGE
+}
