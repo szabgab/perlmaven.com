@@ -1,0 +1,24 @@
+=title Les livres sur Perl
+=timestamp 2013-04-15T07:30:01
+=description Les livres sur Perl
+=tags livre numérique
+=status show
+=showright 0
+=newsletter 0
+=published 0
+=author 0
+=translator oval
+=index 0
+=archive 0
+=feed 0
+=comments 0
+=social 0
+
+Les livres numériques ci-dessous sont actuellement disponibles :
+<ul>
+<li><a href="/beginner-perl-maven-e-book">Perl Maven pour débutant</a></li>
+<li><a href="/advanced-perl-maven-e-book">Perl Maven pour utilisateurs avancés</a></li>
+<li><a href="/test-automation-using-perl-e-book">Automatisation des tests avec Perl</a></li>
+<li><a href="/perl-maven-cookbook">Les recettes de Perl Maven</a></li>
+</ul>
+
