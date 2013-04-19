@@ -61,12 +61,12 @@ Il existe différentes traductions en cours d'écriture :
 
 <b>Introduction</b>
 <ol>
-<li><a href="/installing-perl-and-getting-started">Installer Perl, afficher "Bonjour tout le monde", filet de sécurité (use strict; use warnings;)</a> (EN)</li>
-<li><a href="/perl-editor">Éditeurs et EDIs, environnements de développement pour Perl</a> (EN)</li>
-<li><a href="/perl-on-the-command-line">Perl en ligne de commande</a> (EN)</li>
-<li><a href="/core-perl-documentation-cpan-module-documentation">Documentation du noyau Perl et des modules CPAN</a> (EN)</li>
-<li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation : la bonne vieille documentation à la Perl</a> (EN)</li>
-<li><a href="/utiliser-le-debogueur-integre-de-perl">Déboguer des scripts Perl</a></li>
+<li><a href="http://perl5maven.com/installing-perl-and-getting-started">Installer Perl, afficher "Bonjour tout le monde", filet de sécurité (use strict; use warnings;)</a> (EN)</li>
+<li><a href="http://perl5maven.com/perl-editor">Éditeurs et EDIs, environnements de développement pour Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/perl-on-the-command-line">Perl en ligne de commande</a> (EN)</li>
+<li><a href="http://perl5maven.com/core-perl-documentation-cpan-module-documentation">Documentation du noyau Perl et des modules CPAN</a> (EN)</li>
+<li><a href="http://perl5maven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation : la bonne vieille documentation à la Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/utiliser-le-debogueur-integre-de-perl">Déboguer des scripts Perl</a></li>
 </ol>
 
 <b>Les scalaires</b>
@@ -74,32 +74,32 @@ Il existe différentes traductions en cours d'écriture :
 <li>
     Avertissements et messages d'erreur courants :<br />
     <ul>
-    <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a> (EN)</li>
-    <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a> (EN)</li>
-    <li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a> (EN)</li>
-    <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a> (EN)</li>
-    <li><a href="/categorie-inconnue-d-avertissements">Unknown warnings category</a></li>
-    <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a> (EN)</li>
+    <li><a href="http://perl5maven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a> (EN)</li>
+    <li><a href="http://perl5maven.com/use-of-uninitialized-value">Use of uninitialized value</a> (EN)</li>
+    <li><a href="http://perl5maven.com/barewords-in-perl">Bareword not allowed while "strict subs" in use</a> (EN)</li>
+    <li><a href="http://perl5maven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a> (EN)</li>
+    <li><a href="http://perl5maven.com/categorie-inconnue-d-avertissements">Unknown warnings category</a></li>
+    <li><a href="http://perl5maven.com/scalar-found-where-operator-expected">Scalar found where operator expected</a> (EN)</li>
     </ul>
 </li>
-<li><a href="/automatic-value-conversion-or-casting-in-perl">Conversion automatique d'une chaîne de caractères en nombre</a> (EN)</li>
+<li><a href="http://perl5maven.com/automatic-value-conversion-or-casting-in-perl">Conversion automatique d'une chaîne de caractères en nombre</a> (EN)</li>
 <li>instructions conditionnelles: if</li>
-<li><a href="/boolean-values-in-perl">Valeurs booléennes (vrai et faux) en Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/boolean-values-in-perl">Valeurs booléennes (vrai et faux) en Perl</a> (EN)</li>
 <li>Opérateurs sur nombres et chaînes de caractères</li>
-<li><a href="/undef-and-defined-in-perl">la valeur initiale undef et la fonction pré-définie defined</a> (EN)</li>
+<li><a href="http://perl5maven.com/undef-and-defined-in-perl">la valeur initiale undef et la fonction pré-définie defined</a> (EN)</li>
 <li>Les documents heredoc</li>
-<li><a href="/string-functions-length-lc-uc-index-substr">Les fonctions prédéfinies pour les chaînes de caractères : length, lc, uc, index, substr</a> (EN)</li>
-<li><a href="/number-guessing-game">Jeu "Devine le nombre" (rand, int)</a> (EN)</li>
-<li><a href="/while-loop">La boucle while en Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/string-functions-length-lc-uc-index-substr">Les fonctions prédéfinies pour les chaînes de caractères : length, lc, uc, index, substr</a> (EN)</li>
+<li><a href="http://perl5maven.com/number-guessing-game">Jeu "Devine le nombre" (rand, int)</a> (EN)</li>
+<li><a href="http://perl5maven.com/while-loop">La boucle while en Perl</a> (EN)</li>
 </ol>
 
 <b>Les fichiers</b>
 <ol>
 <li>die, warn et exit</li>
-<li><a href="/writing-to-files-with-perl">Écrire dans des fichiers</a> (EN)</li>
-<li><a href="/ajouter-en-fin-de-fichiers">Ajouter en fin de fichiers</a></li>
-<li><a href="/open-and-read-from-files">Ouvrir et lire des fichiers avec Perl</a> (EN)</li>
-<li><a href="/open-files-in-the-old-way">N'ouvrez pas de fichiers à l'ancienne!</a> (EN)</li>
+<li><a href="http://perl5maven.com/writing-to-files-with-perl">Écrire dans des fichiers</a> (EN)</li>
+<li><a href="http://perl5maven.com/ajouter-en-fin-de-fichiers">Ajouter en fin de fichiers</a></li>
+<li><a href="http://perl5maven.com/open-and-read-from-files">Ouvrir et lire des fichiers avec Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/open-files-in-the-old-way">N'ouvrez pas de fichiers à l'ancienne!</a> (EN)</li>
 <li>Le mode binaire, avec Unicode</li>
 <li>Lire un fichier binaire : read, eof</li>
 <li>dire, chercher</li>
@@ -109,18 +109,18 @@ Il existe différentes traductions en cours d'écriture :
 <b>Les listes et les tableaux</b>
 <ol>
 <li>La boucle foreach en Perl</li>
-<li><a href="/for-loop-in-perl">La boucle for en Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/for-loop-in-perl">La boucle for en Perl</a> (EN)</li>
 <li>Les listes en Perl</li>
 <li>Utiliser des modules</li>
-<li><a href="/perl-arrays">Les tableaux en Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/perl-arrays">Les tableaux en Perl</a> (EN)</li>
 <li>Traiter les paramètres de la ligne de commande : @ARGV et Getopt::Long</li>
-<li><a href="/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS (EN)</li>
-<li><a href="/la-fonction-predefinie-join">La fonction prédéfinie join</a></li>
-<li><a href="/the-year-19100">L'année 19100 (time, localtime, gmtime)</a> (EN) et introduction au contexte</li>
-<li><a href="/scalar-and-list-context-in-perl">Sensibilité au contexte en Perl</a> (EN)</li>
-<li><a href="/sorting-arrays-in-perl">Trier des tableaux en Perl</a> (EN)</li>
-<li><a href="/unique-values-in-an-array-in-perl">Valeurs uniques dans un tableau Perl</a> (EN)</li>
-<li><a href="/manipulating-perl-arrays">Manipuler des tableaux en Perl: shift, unshift, push, pop</a> (EN)</li>
+<li><a href="http://perl5maven.com/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS (EN)</li>
+<li><a href="http://perl5maven.com/la-fonction-predefinie-join">La fonction prédéfinie join</a></li>
+<li><a href="http://perl5maven.com/the-year-19100">L'année 19100 (time, localtime, gmtime)</a> (EN) et introduction au contexte</li>
+<li><a href="http://perl5maven.com/scalar-and-list-context-in-perl">Sensibilité au contexte en Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/sorting-arrays-in-perl">Trier des tableaux en Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/unique-values-in-an-array-in-perl">Valeurs uniques dans un tableau Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/manipulating-perl-arrays">Manipuler des tableaux en Perl: shift, unshift, push, pop</a> (EN)</li>
 <li>La pile et la file d'attente</li>
 <li>La fonction prédéfinie reverse</li>
 <li>L'opérateur ternaire</li>
@@ -139,7 +139,7 @@ Il existe différentes traductions en cours d'écriture :
 
 <b>Les tables de hachage</b>
 <ol>
-<li><a href="/perl-hashes">Les tables de hachages en Perl</a> : dictionnaire, tableau associatif, table de conversion (EN)</li>
+<li><a href="http://perl5maven.com/perl-hashes">Les tables de hachages en Perl</a> : dictionnaire, tableau associatif, table de conversion (EN)</li>
 <li>Vérifier l'existence d'une clé : exists ; Supprimer des éléments de la table de hachage : delete</li>
 </ol>
 
@@ -162,7 +162,7 @@ Il existe différentes traductions en cours d'écriture :
 <li>Les tubes avec Perl</li>
 <li>Exécuter des programmes externes</li>
 <li>Des commandes Unix : rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
-<li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">Comment faire pour supprimer, copier ou renommer un fichier avec Perl ?</a> (EN)</li>
+<li><a href="http://perl5maven.com/how-to-remove-copy-or-rename-a-file-with-perl">Comment faire pour supprimer, copier ou renommer un fichier avec Perl ?</a> (EN)</li>
 <li>Des commandes Windows/DOS : del, ren, dir</li>
 <li>Filtrer des fichiers (via des motifs)</li>
 <li>Les descripteurs de répertoire</li>
@@ -171,18 +171,18 @@ Il existe différentes traductions en cours d'écriture :
 
 <b>CPAN</b>
 <ol>
-<li><a href="/download-and-install-perl">Télécharger et installer Perl : Strawberry Perl ou compilation manuelle</a> (EN)</li>
+<li><a href="http://perl5maven.com/download-and-install-perl">Télécharger et installer Perl : Strawberry Perl ou compilation manuelle</a> (EN)</li>
 <li>Télécharger et installer Perl : Perlbrew</li>
 <li>Localiser et évaluer des modules CPAN</li>
 <li>Télécharger et installer des modules CPAN avec Perl</li>
-<li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">Comment modifier @INC pour trouver des modules Perl dans un chemin non standard ?</a> (EN)</li>
+<li><a href="http://perl5maven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">Comment modifier @INC pour trouver des modules Perl dans un chemin non standard ?</a> (EN)</li>
 <li>Comment modifier @INC dans un répertoire relatif ?</li>
 <li>local::lib</li>
 </ol>
 
 <b>Quelques exemples d'utilisation de Perl</b>
 <ol>
-<li><a href="/how-to-replace-a-string-in-a-file-with-perl">Comment remplacer une chaîne dans un fichier avec Perl ? (slurp)</a> (EN)</li>
+<li><a href="http://perl5maven.com/how-to-replace-a-string-in-a-file-with-perl">Comment remplacer une chaîne dans un fichier avec Perl ? (slurp)</a> (EN)</li>
 <li>Lire des fichiers Excel avec Perl</li>
 <li>Créer des fichiers Excel avec Perl</li>
 <li>Envoyer des courriels avec Perl</li>
@@ -196,10 +196,10 @@ Il existe différentes traductions en cours d'écriture :
 
 <b>Autre</b>
 <ol>
-<li><a href="/splice-to-slice-and-dice-arrays-in-perl">splice pour trancher et découper les tableaux en Perl</a> (EN)</li>
-<li><a href="/how-to-create-a-perl-module-for-code-reuse">Comment créer un module Perl pour la réutilisation du code ?</a> (EN)</li>
-<li><a href="/object-oriented-perl-using-moose">Perl orienté objet avec Moose</a> (EN)</li>
-<li><a href="/attribute-types-in-perl-classes-when-using-moose">Les types d'attributs dans les classes Perl avec Moose</a> (EN)</li>
+<li><a href="http://perl5maven.com/splice-to-slice-and-dice-arrays-in-perl">splice pour trancher et découper les tableaux en Perl</a> (EN)</li>
+<li><a href="http://perl5maven.com/how-to-create-a-perl-module-for-code-reuse">Comment créer un module Perl pour la réutilisation du code ?</a> (EN)</li>
+<li><a href="http://perl5maven.com/object-oriented-perl-using-moose">Perl orienté objet avec Moose</a> (EN)</li>
+<li><a href="http://perl5maven.com/attribute-types-in-perl-classes-when-using-moose">Les types d'attributs dans les classes Perl avec Moose</a> (EN)</li>
 </ol>
 
 <hr />
