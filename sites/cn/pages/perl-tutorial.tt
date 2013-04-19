@@ -22,7 +22,7 @@
     <li><a href="/undef-and-defined-in-perl">undef, 初始值及Perl函数</a></li>
     <li><a href="/boolean-values-in-perl">Perl中的布尔值</a></li>
     <li><a href="/perl-arrays"> 数组 </a></li>
-    <li><a href="/perl-arrays"> 映射 </a></li>
+    <li><a href="/perl-hashes"> 映射 </a></li>
     <li><a href="/join">join</a></li>
     <li><a href="/writing-to-files-with-perl">Perl 文件读写</a></li>
     <li><a href="/how-to-remove-copy-or-rename-a-file-with-perl"> 文件操作：删除和重命名</a></li>
@@ -30,6 +30,7 @@
     <li><a href="/the-year-19100"> 时间处理 </a></li>
     <li><a href="/attribute-types-in-perl-classes-when-using-moose"> Moose的属性类型 </a></li>
     <li><a href="/perl-cgi-mod-perl-psgi"> CGI, mod_perl, PSGI ?</a></li>
+    <li><a href="/the-most-important-file-system-tools"> Perl5中19个最重要的文件系统工具</a></li>
 </ul>
 
 For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
