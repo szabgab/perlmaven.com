@@ -15,7 +15,7 @@
 Perl comes with a lot of documentation, but
 it takes some time till you get used to using it. In this part of the
 <a href="/perl-tutorial">Perl tutorial</a> I'll explain how
-to find your way around the documentaton.
+to find your way around the documentation.
 
 =abstract end
 
@@ -91,5 +91,3 @@ most important CPAN modules will be also included.
 If you are missing something from there, just make a comment below,
 with the keywords you will looking for and you have a good chance to
 get your request fulfilled.
-
-
