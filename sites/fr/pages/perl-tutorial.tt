@@ -57,7 +57,7 @@ Il existe différentes traductions en cours d'écriture :
 <li><a href="http://ru.perl5maven.com/">en russe</a></li>
 </ul>
 
-<h2>Table des matières</a>
+<h2>Table des matières</h2>
 
 <b>Introduction</b>
 <ol>
@@ -66,7 +66,7 @@ Il existe différentes traductions en cours d'écriture :
 <li><a href="http://perl5maven.com/perl-on-the-command-line">Perl en ligne de commande</a> (EN)</li>
 <li><a href="http://perl5maven.com/core-perl-documentation-cpan-module-documentation">Documentation du noyau Perl et des modules CPAN</a> (EN)</li>
 <li><a href="http://perl5maven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation : la bonne vieille documentation à la Perl</a> (EN)</li>
-<li><a href="http://perl5maven.com/utiliser-le-debogueur-integre-de-perl">Déboguer des scripts Perl</a></li>
+<li><a href="/utiliser-le-debogueur-integre-de-perl">Déboguer des scripts Perl</a></li>
 </ol>
 
 <b>Les scalaires</b>
@@ -78,12 +78,12 @@ Il existe différentes traductions en cours d'écriture :
     <li><a href="http://perl5maven.com/use-of-uninitialized-value">Use of uninitialized value</a> (EN)</li>
     <li><a href="http://perl5maven.com/barewords-in-perl">Bareword not allowed while "strict subs" in use</a> (EN)</li>
     <li><a href="http://perl5maven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a> (EN)</li>
-    <li><a href="http://perl5maven.com/categorie-inconnue-d-avertissements">Unknown warnings category</a></li>
+    <li><a href="/categorie-inconnue-d-avertissements">Unknown warnings category</a></li>
     <li><a href="http://perl5maven.com/scalar-found-where-operator-expected">Scalar found where operator expected</a> (EN)</li>
     </ul>
 </li>
 <li><a href="http://perl5maven.com/automatic-value-conversion-or-casting-in-perl">Conversion automatique d'une chaîne de caractères en nombre</a> (EN)</li>
-<li>instructions conditionnelles: if</li>
+<li>Les instructions conditionnelles: if</li>
 <li><a href="http://perl5maven.com/boolean-values-in-perl">Valeurs booléennes (vrai et faux) en Perl</a> (EN)</li>
 <li>Opérateurs sur nombres et chaînes de caractères</li>
 <li><a href="http://perl5maven.com/undef-and-defined-in-perl">la valeur initiale undef et la fonction pré-définie defined</a> (EN)</li>
@@ -97,7 +97,7 @@ Il existe différentes traductions en cours d'écriture :
 <ol>
 <li>die, warn et exit</li>
 <li><a href="http://perl5maven.com/writing-to-files-with-perl">Écrire dans des fichiers</a> (EN)</li>
-<li><a href="http://perl5maven.com/ajouter-en-fin-de-fichiers">Ajouter en fin de fichiers</a></li>
+<li><a href="/ajouter-en-fin-de-fichiers">Ajouter en fin de fichiers</a></li>
 <li><a href="http://perl5maven.com/open-and-read-from-files">Ouvrir et lire des fichiers avec Perl</a> (EN)</li>
 <li><a href="http://perl5maven.com/open-files-in-the-old-way">N'ouvrez pas de fichiers à l'ancienne!</a> (EN)</li>
 <li>Le mode binaire, avec Unicode</li>
@@ -115,7 +115,7 @@ Il existe différentes traductions en cours d'écriture :
 <li><a href="http://perl5maven.com/perl-arrays">Les tableaux en Perl</a> (EN)</li>
 <li>Traiter les paramètres de la ligne de commande : @ARGV et Getopt::Long</li>
 <li><a href="http://perl5maven.com/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS (EN)</li>
-<li><a href="http://perl5maven.com/la-fonction-predefinie-join">La fonction prédéfinie join</a></li>
+<li><a href="/la-fonction-predefinie-join">La fonction prédéfinie join</a></li>
 <li><a href="http://perl5maven.com/the-year-19100">L'année 19100 (time, localtime, gmtime)</a> (EN) et introduction au contexte</li>
 <li><a href="http://perl5maven.com/scalar-and-list-context-in-perl">Sensibilité au contexte en Perl</a> (EN)</li>
 <li><a href="http://perl5maven.com/sorting-arrays-in-perl">Trier des tableaux en Perl</a> (EN)</li>
