@@ -219,7 +219,7 @@ Argument "3.14 is pi" isn't numeric in addition(+) at example.pl line 10.
 
 assuming you used <b>use warnings</b> which is highly recommended.
 Using it will help you notice when something is not exactly as expected.
-Hopefull the result of <hl>$x + $y</hl> is now clear.
+Hopefully the result of <hl>$x + $y</hl> is now clear.
 
 <h2>Background</h2>
 
@@ -239,7 +239,7 @@ Not only that, but we don't even see the warning of the
 "partial string to number" conversion that we saw in the case of <hl>+</hl>.
 
 This is not because the difference in the operator. If we comment out the addition
-we will see the warning on this operation. The reason for the lack of a seond warning
+we will see the warning on this operation. The reason for the lack of a second warning
 is that when perl generated the numerical value of the string <hl>"3.14 is pi"</hl> it
 also stored it in a hidden pocket of the <hl>$y</hl> variable. So effectively <hl>$y</hl>
 now holds both a string value and a number value, and will use the right one in any
@@ -288,7 +288,7 @@ will print "NOT".
 <h2>Fatal warnings</h2>
 
 The other thing is that some people prefer that the application will throw a
-hard exception instead of the soft warning. If that'syour thing, you could change the beginning of the script and write
+hard exception instead of the soft warning. If that's your thing, you could change the beginning of the script and write
 
 <code lang="perl">
 use warnings FATAL => "all";
