@@ -9,8 +9,9 @@ use File::Basename qw(basename dirname);
 use Getopt::Long   qw(GetOptions);
 
 GetOptions(
-	"draft" => \my $draft,
-	"help"  => \my $help,
+	"draft"      => \my $draft,
+	"help"       => \my $help,
+	"site=s"     => \my $site,
 	) or usage();
 usage() if $help;
 
@@ -39,6 +40,7 @@ my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt prod
 	my %english = map { substr(basename($_), 0, -3), 1 } glob "$root/sites/en/pages/*.tt";
 	foreach my $lang (@languages) {
 		next if $lang eq 'en';
+		next if $site and $lang ne $site;
 
 		my %authors;
 		open my $au, '<', "$root/sites/$lang/authors.txt" or die;
@@ -100,8 +102,10 @@ exit;
 sub usage {
 	die <<"END_USAGE";
 Usage: $0
-          --draft    to also show the draft folder
+          --draft      to also show the draft folder
           --help
+          --site CC    Where CC is a code in the sites/ directory
+                       to restrict the result to that site
 END_USAGE
 }
 
@@ -111,6 +115,7 @@ sub show {
 	printf "\nList items in %s folder\n", uc $folder;
 	say '-' x 30;
 	foreach my $lang (@languages) {
+		next if $site and $lang ne $site;
 		my @files = map { basename $_ } glob "$root/sites/$lang/$folder/*.tt";
 		next if not @files;
 		say "Language $lang";
