@@ -78,8 +78,8 @@ to practice what you have learned.
 <li>Numerical and string operators</li>
 <li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
 <li>Here documents</li>
+<li><a href="/scalar-variables">Scalar variables</a></li>
 <!--
-<li><a href="http://szabgab.com/modern-perl-tutorial-part-02--scalars.html">Scalars</a></li>
 <li><a href="http://szabgab.com/modern-perl-tutorial-part-03--comparing-scalars.html">Comparing scalars</a></li>
 -->
 <li><a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
@@ -92,7 +92,7 @@ to practice what you have learned.
 <ol>
 <li>die, warn and exit</li>
 <li><a href="/writing-to-files-with-perl">Writing to files</a></li>
-<li><a href="appending-to-files">Appending to files</a></li>
+<li><a href="/appending-to-files">Appending to files</a></li>
 <li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
 <li><a href="/open-files-in-the-old-way">Don't open files in the old way</a></li>
 <li>Binary mode, dealing with Unicode</li>
