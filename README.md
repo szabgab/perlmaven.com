@@ -160,6 +160,8 @@ Getting started with the translation
                            sites/CC/done/installing-perl-and-getting-started.tt
   or as                    sites/CC/done/TRANSLATD-BUT-TRANSLITERATED-TITLE.tt
   as is acceptable in other sites in your language.
+* Add =original and =translator entries to the translated file
+* Add yourself to the sites/CC/authors.txt file and add a picture of yourself to the sites/CC/img/ folder.
 * Update sites/CC/pages/perl-tutorial.tt to include the page in the commented-out section.
 * push your changes to your forked repository and send a pull request
 
