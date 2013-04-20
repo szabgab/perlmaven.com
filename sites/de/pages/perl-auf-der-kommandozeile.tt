@@ -5,7 +5,7 @@
 =original perl-on-the-command-line
 =books beginner_book
 =author szabgab
-=translator schneiderlein
+=translator mca
 =index 1
 =archive 1
 =feed 1
@@ -109,4 +109,4 @@ von Peteris Krumins zu lesen.
 
 <h2>Demnächst</h2>
 
-Der nächste Teil handelt über <a href="/core-perl-documentation-cpan-module-documentation">Perl-Basisdokumentation und Dokumentation der CPAN-Module</a>.
+Der nächste Teil handelt über <a href="/perl-basis-und-cpan-modul-dokumentation">Perl-Basisdokumentation und Dokumentation der CPAN-Module</a>.
