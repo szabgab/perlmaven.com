@@ -1,5 +1,5 @@
 =title O Jogo de Adivinhar Números
-=timestamp 2013-04-02T10:45:17
+=timestamp 2013-04-20T17:45:54
 =indexes rand, random, int, integer
 =status show
 =original number-guessing-game
@@ -81,5 +81,5 @@ Após o usuário escrever seu palpite o computador avisa se o número é maior o
 
 Neste ponto <b>não</b> há necessidade de permitir que o usuário adivinhe várias vezes.
 Nós iremos chegar lá em poucos capítulos. É claro que não impedirei que leia sobre
-os <a href="/while-loop">laços while</a> em Perl, você ler o artigo e deixar que por enquanto, o usuário
+os <a href="/laco-while">laços while</a> em Perl, você ler o artigo e deixar que por enquanto, o usuário
 faça várias tentativas.
