@@ -2,6 +2,7 @@
 =timestamp 2013-04-10T00:57:10
 =indexes -v, -e, -p, -i
 =status show
+=original perl-on-the-command-line
 =books beginner_book
 =author szabgab
 =translator shatlovsky

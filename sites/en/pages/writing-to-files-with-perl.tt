@@ -65,7 +65,7 @@ It is called file-handle. We don't care much about the content of
 this variable; we will just use the variable later. Just remember, the content of the file
 is still only on the disk and <b>NOT</b> in the $fh variable.
 
-Once the file is open we can use the <hl>$fh</hl> file-handle in a <hl>perl()</hl> statement.
+Once the file is open we can use the <hl>$fh</hl> file-handle in a <hl>print()</hl> statement.
 It looks almost the same as the <hl>print()</hl> in other parts of the tutorial,
 but now the first parameter is the file-handle and there is <b>no</b>(!) comma after it.
 
@@ -215,5 +215,3 @@ as UTF-8. To do that you need to tell Perl, you are opening the file with UTF-8 
 open(my $fh, '>:encoding(UTF-8)', $filename)
   or die "Could not open file '$filename'";
 </code>
-
-

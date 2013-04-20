@@ -19,7 +19,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on April 12, 2013.
+parts are being published every few days. The latest one was published on April 19, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -47,19 +47,6 @@ I'll draw up tasks and then we'll learn the necessary tools to solve them.
 Where possible I'll also direct you to some exercises you can do
 to practice what you have learned.
 
-<h2>Translations</h2>
-
-There are sevaral translations in progress at various stages:
-<ul>
-  <li><a href="http://br.perl5maven.com/perl-tutorial">Portuguese</a></li>
-  <li><a href="http://cn.perl5maven.com/perl-tutorial">Chinese (CN)</a></li>
-  <li><a href="http://tw.perl5maven.com/">Chinese (Taiwan)</a></li>
-  <li><a href="http://it.perl5maven.com/">Italian</a></li>
-  <li><a href="http://ro.perl5maven.com/">Romanian</a></li>
-  <li><a href="http://ru.perl5maven.com/">Russian</a></li>
-</ul>
-
-
 
 <p>
 <b>Introduction</b>
@@ -82,6 +69,7 @@ There are sevaral translations in progress at various stages:
 <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
 <li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
 <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
+<li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
 </ul>
 </li>
 <li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
@@ -90,20 +78,21 @@ There are sevaral translations in progress at various stages:
 <li>Numerical and string operators</li>
 <li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
 <li>Here documents</li>
+<li><a href="/scalar-variables">Scalar variables</a></li>
 <!--
-<li><a href="http://szabgab.com/modern-perl-tutorial-part-02--scalars.html">Scalars</a></li>
 <li><a href="http://szabgab.com/modern-perl-tutorial-part-03--comparing-scalars.html">Comparing scalars</a></li>
 -->
 <li><a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
 <li><a href="/number-guessing-game">Number Guessing game (rand, int)</a></li>
 <li><a href="/while-loop">Perl while loop</a></li>
+<li><a href="/scope-of-variables-in-perl">Scope of variables in Perl</a></li>
 </ol>
 
 <b>Files</b>
 <ol>
 <li>die, warn and exit</li>
 <li><a href="/writing-to-files-with-perl">Writing to files</a></li>
-<li><a href="appending-to-files">Appending to files</a></li>
+<li><a href="/appending-to-files">Appending to files</a></li>
 <li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
 <li><a href="/open-files-in-the-old-way">Don't open files in the old way</a></li>
 <li>Binary mode, dealing with Unicode</li>
@@ -136,7 +125,7 @@ There are sevaral translations in progress at various stages:
 
 <b>Subroutines</b>
 <ol>
-<li><a href="http://szabgab.com/subroutines-and-functions-in-perl.html">Subroutines and Functions in Perl</a></li>
+<li><a href="/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
 <li>Parameter passing and checking for subroutines</li>
 <li>Variable number of parameters</li>
 <li>Returning a list</li>

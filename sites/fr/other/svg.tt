@@ -1,0 +1,53 @@
+=title Scalable Vector Graphics (SVG)
+=timestamp 2013-04-15T22:45:56
+=indexes SVG
+=status show
+=original svg
+=author szabgab
+=translator oval
+=index 0
+=archive 0
+=feed 0
+=comments 1
+=social 1
+
+=abstract start
+
+=abstract end
+
+<form id="image">Largeur: <input name="width" value="400" /> Hauteur: <input name="height" value="400" /></form>
+
+<form id="form">
+<div id="rectangular">
+x: <input name="x" value="100" /> y: <input name="y" value="100" /><br>
+Largeur: <input name="width" value="200" /> Hauteur:<input name="height" value="200" /><br>
+</div>
+
+<div id="style">
+<b>Style:</b>
+Fill: <input type="color" name="fill" value="#00FF00" />
+Stroke:<input type="color" name="stroke" value="#FF0000" />
+Stroke-width: <input name="stroke-width" value="3" />
+</div>
+
+<div id="circle">
+<b>Cercle:</b>
+cx: <input name="cx" value="100" /> cy: <input name="cy" value="100" />
+r: <input name="r" value="50" />
+</div>
+
+<input id="draw" type="button" value="Dessiner" />
+</form>
+
+
+La bordure noire est définie au format css. Elle a été ajoutéé afin de bien montrer où se situe l'image.
+
+<div style="border: 2px solid black; display: inline-block; margin-bottom: 20px;" id="svg-xml">
+</div>
+
+Le source code SVG :
+
+<div id="svg-code">
+<textarea style="resize:both; padding: 3px; border:2px solid black; height:400px; width:600px;" id="source-code"></textarea>
+</div>
+

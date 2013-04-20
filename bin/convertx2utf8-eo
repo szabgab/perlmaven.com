@@ -1,0 +1,27 @@
+#!/usr/bin/env perl
+#
+# convertx - convert x-"encoded" esperanto-diacritics files in html-entities
+#            konverti x-"koditaj" esperanto-diakrito dosierojn en html-entojn
+#            inspired by/inspirita de Lingua::EO::Supersignoj
+#
+# frayoyo  - 20130418
+#
+
+use strict;
+use warnings;
+
+
+die "usage $0 <Filename>\n" unless $ARGV[0];
+
+my @x     = qw/Cx cx Gx gx Hx hx Jx jx Sx sx Ux ux/;
+my @utf8 = qw/264 265 284 285 292 293 308 309 348 349 364 365/;
+my %letter = ();
+
+$letter{shift @x} = join ("", "&#", shift @utf8, ";") while @x;
+
+open IN, "<", $ARGV[0] or die "error reading file ".$ARGV[0]."\n";
+while ( my $line = <IN> ) {
+ map { $line =~ s! $_ ! $letter{$_} !egx } keys %letter;
+ print $line;
+}
+close IN;
