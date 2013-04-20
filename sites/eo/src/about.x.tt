@@ -13,46 +13,46 @@
 
 
 <p>
-Ekzistas homoj, kiuj uzas Perl por taskoj en <b> sistemo administrado </b> a&#365; en
+Ekzistas homoj, kiuj uzas Perl por taskoj en <b> sistemo administrado </b> aux en
 <b> agordo direktado </b>.
 <br />
-Aliaj konstrui <b> retejoj </b> a&#365; <b> apliko retejo </b> uzante Perl.</p>
+Aliaj konstrui <b> retejoj </b> aux <b> apliko retejo </b> uzante Perl.</p>
 
 <p>
-Ankorau aliaj nur bezonas &#285;in por <b> malgranda skriptoj </b>. A&#365; tiel ili diris.<Down>
+Ankorau aliaj nur bezonas gxin por <b> malgranda skriptoj </b>. Aux tiel ili diris.<Down>
 </p>
 
 <p>
-Iuj homoj uzas Perl por <b> Bioinformatics </b> a&#365; por iu alia formo de
+Iuj homoj uzas Perl por <b> Bioinformatics </b> aux por iu alia formo de
 <b> sciencaj kalkuloj </b>.
 </p>
 
 <p>
-Ekzistas multe da homoj uzante Perl por <b> testo a&#365;tomatigo </b>.
+Ekzistas multe da homoj uzante Perl por <b> testo auxtomatigo </b>.
 Tio estas unu el miaj preferataj kampoj.
 </p>
 
 <p>
-La Perl Maven retejo estis kreita por &#265;iuj el tiuj homoj. &#284;i estas celo estas
+La Perl Maven retejo estis kreita por cxiuj el tiuj homoj. Gxi estas celo estas
 <b> helpi vin atingi vian laboron farita </b>.
 </p>
 
 <p>
 <b> Lernado Perl </b> estas scivola. Unuflanke, post kelkaj horoj de legado
-vi jam povas krei malgrandajn skriptoj kaj esti produktema. Aliflanke, e&#265; post jaroj
+vi jam povas krei malgrandajn skriptoj kaj esti produktema. Aliflanke, ecx post jaroj
 se uzante Perl ciutage vi trovos novajn ajojn. Jam en la lingvo au en CPAN.
 La lernado de kurbo estas ebena, sed longa.
 </p>
 
 <p>
-La&#365; <a href="http://en.wikipedia.org/wiki/Maven"> Wikpedia </a>:<p>
+Laux <a href="http://en.wikipedia.org/wiki/Maven"> Wikpedia </a>:<p>
 
 <p>
-<b> A Maven estas fidinda spertulo en aparta kampo, kiu ser&#265;as pasi scion al aliaj. </b></p>
+<b> A Maven estas fidinda spertulo en aparta kampo, kiu sercxas pasi scion al aliaj. </b></p>
 
 <p>
-Mia espero estas, ke se vi sekvos la artikoloj de tiu retejo, legu la librojn kun horlo&#285;o la video prelegoj
-vi sen&#265;ese plibonigi vian Perl kompetenteco. Balda&#365; vi povos <b> igi Perl Maven </b>.
+Mia espero estas, ke se vi sekvos la artikoloj de tiu retejo, legu la librojn kun horlogxo la video prelegoj
+vi sencxese plibonigi vian Perl kompetenteco. Baldaux vi povos <b> igi Perl Maven </b>.
 </p>
 
 <p>
@@ -63,14 +63,14 @@ Ni havos plurajn <a href="/perl-books"> Perl librojn </a> kaj <a href="/perl-vid
 <h2>Versioj de Perl</h2>
 
 <p>
-Mi estas certa ke vi demandas kion versio se Perl mi tuj kovri. &#264;ar nun mi devos bati al Perl 5 kaj
-eldoni la Perl 6 rilatajn artikolojn pri mia persona retejo. Post &#265;iu Perl 5 estas kio estas uzita en produktado.
-Ene de Perl 5 Mi provos esti pragmataj. Dum mi tre &#349;atus vidi pli da homoj anta&#365;i kaj uzi la plej novan &#309;etoj
+Mi estas certa ke vi demandas kion versio se Perl mi tuj kovri. Cxar nun mi devos bati al Perl 5 kaj
+eldoni la Perl 6 rilatajn artikolojn pri mia persona retejo. Post cxiu Perl 5 estas kio estas uzita en produktado.
+Ene de Perl 5 Mi provos esti pragmataj. Dum mi tre sxatus vidi pli da homoj antauxi kaj uzi la plej novan jxetoj
 de perl mi devas esti realismaj. En multaj kompanioj tio estas neebla. Mi provos certigi la solvojn mi montras povas labori sur
 la perl 5,8 familio sed mi atentigi kiam estas necese uzi pli novan version de Perl.
 </p>
 <p>
-Vi vidos kiel uzi pli novan version de Perl povas plibonigi vian kodon kaj anka&#365; povos vidi kiel atingi la punkto kiun vi povas uzi tiun Perl.
+Vi vidos kiel uzi pli novan version de Perl povas plibonigi vian kodon kaj ankaux povos vidi kiel atingi la punkto kiun vi povas uzi tiun Perl.
 </p>
 
 <h2>Pri la autoro / redaktanto</h2>
@@ -111,7 +111,7 @@ La retejo estas tradukita en aliaj lingvoj tiel.
 <li><a href="http://ro.perl5maven.com/">Rumana<</a></li>
 <li><a href="http://de.perl5maven.com/">germanaj</a></li>
 <li><a href="http://it.perl5maven.com/">itala</a></li>
-<li><a href="http://cn.perl5maven.com/">&#265;ina</a></li>
+<li><a href="http://cn.perl5maven.com/">cxina</a></li>
 <li><a href="http://tw.perl5maven.com/">Tajvano</a></li>
 <li><a href="http://ru.perl5maven.com/">Rusa</a></li>
 <li><a href="http://ko.perl5maven.com/">koreo</a></li>

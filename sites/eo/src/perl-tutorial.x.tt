@@ -16,35 +16,35 @@ Nur por citi kelkajn komunajn taskojn.
 
 Vi lernos kiel uzi la CPAN kaj pluraj specifaj CPAN moduloj.
 
-&#284;i estos bona fundamento por vi konstrui sur.
+Gxi estos bona fundamento por vi konstrui sur.
 
 La libera reta versio de la lernilo estas nuntempe en evoluo. Multaj partoj estas preta. Pliaj
-partoj estas eldonitaj &#265;iu malmultaj tagoj. La lasta estis eldonita la 17 de aprilo, 2013.
-Se vi estas interesata en ekuzi &#285;isdatigita kiam novaj partoj estas eldonita,
+partoj estas eldonitaj cxiu malmultaj tagoj. La lasta estis eldonita la 17 de aprilo, 2013.
+Se vi estas interesata en ekuzi gxisdatigita kiam novaj partoj estas eldonita,
 bonvolu <a href="/register"> aboni la bultenon </a>.
 
-Estas anka&#365; <a href="/beginner-perl-maven-e-book"> elektronika libro </a> version de la materialo disponebla por a&#265;eto.
+Estas ankaux <a href="/beginner-perl-maven-e-book"> elektronika libro </a> version de la materialo disponebla por acxeto.
 Krom la libera lernilo, ke versio ankau inkludas la diapozitivoj de la responda kompreneble inkluzive
-multaj ekzercoj kaj iliaj solvoj. La kurso materialo kovras &#265;iujn partojn, inkludante la areojn
-kio ankora&#365; ne kovritaj en la liberaj versio.
+multaj ekzercoj kaj iliaj solvoj. La kurso materialo kovras cxiujn partojn, inkludante la areojn
+kio ankoraux ne kovritaj en la liberaj versio.
 
 La kunulo <a href="/beginner-perl-maven-video-course"> video-kurson </a> inkluzivas super 210 screencasts,
-tuta de pli ol 5 horojn de video. Krom prezenti la materialon anka&#365; provizas klarigojn
-al la soluions de &#265;iuj la ekzerco.
+tuta de pli ol 5 horojn de video. Krom prezenti la materialon ankaux provizas klarigojn
+al la soluions de cxiuj la ekzerco.
 La pako inkludas ankau la fontkodon de ciuj ekzemploj kaj ekzercoj.
 
 <h2> Libera on-line Komencanto Perl Maven lernilo </h2>
 
-En &#265;i tiu lernilo vi lernos kiel uzi la Perl 5 programlingvo
+En cxi tiu lernilo vi lernos kiel uzi la Perl 5 programlingvo
 al <b> ricevos vian laboron farita </??b>.
 
-Vi lernos amba&#365; generala lingvo karakteriza&#309;oj, kaj etendoj a&#365; bibliotekoj a&#365; kiel la
+Vi lernos ambaux generala lingvo karakterizajxoj, kaj etendoj aux bibliotekoj aux kiel la
 Perl programistoj nomas ilin <b> moduloj </b>. Ni vidos ambau normo moduloj, kiuj venis kun
 perl kaj 3a-partio moduloj, ke ni instalas el <b> CPAN </b>.
 
-Kiam estas ebla Mi provos instrui a&#309;oj en tre tasko orientita vojo.
+Kiam estas ebla Mi provos instrui ajxoj en tre tasko orientita vojo.
 Mi ellabori taskojn kaj poste ni lernos la necesajn ilojn por solvi ilin.
-Kie eblas Mi anka&#365; direkti vin al kelkaj ekzercoj vi povas fari
+Kie eblas Mi ankaux direkti vin al kelkaj ekzercoj vi povas fari
 praktiki kion vi lernis.
 
 <h2> Tradukoj </h2>
@@ -52,8 +52,8 @@ praktiki kion vi lernis.
 Esas sevaral tradukoj en progreso je diversaj etapoj:
 <ul>
   <li> <a href="http://br.perl5maven.com/perl-tutorial"> Portugala </a> </li>
-  <li> <a href="http://cn.perl5maven.com/perl-tutorial"> &#265;ina (CN) </a> </li>
-  <li> <a href="http://tw.perl5maven.com/"> &#265;ina (Tajvano) </a> </li>
+  <li> <a href="http://cn.perl5maven.com/perl-tutorial"> cxina (CN) </a> </li>
+  <li> <a href="http://tw.perl5maven.com/"> cxina (Tajvano) </a> </li>
   <li> <a href="http://it.perl5maven.com/"> Itala </a> </li>
   <li> <a href="http://ro.perl5maven.com/"> Rumana </a> </li>
   <li> <a href="http://ru.perl5maven.com/"> Rusa </a> </li>
@@ -68,13 +68,13 @@ Esas sevaral tradukoj en progreso je diversaj etapoj:
 <li> <a href="/perl-editor"> Editors, IDEs, evoluo medion por Perl </a> </li>
 <li> <a href="/perl-on-the-command-line"> Perl sur la komanda linio </a> </li>
 <li> <a href="/core-perl-documentation-cpan-module-documentation"> Core Perl dokumentado, CPAN modulo dokumentado </a> </li>
-<li> <a href="/pod-plain-old-documentation-of-perl"> POD - Ebena&#309;o Malnova Dokumentaro </a> </li>
+<li> <a href="/pod-plain-old-documentation-of-perl"> POD - Ebenajxo Malnova Dokumentaro </a> </li>
 <li> <a href="/debugging-perl-scripts"> debugging Perl skriptoj </a> </li>
 </Ol>
 
 <b> skalaroj </b>
 <ol>
-<li> Komuna avertoj kaj erarmesa&#285;ojn <br />
+<li> Komuna avertoj kaj erarmesagxojn <br />
 <ul>
 <li> <a href="/global-symbol-requires-explicit-package-name">global-symbol-requires-explicit-package-name</a> (Tutmonda simbolo postulas eksplicitan pako nomon )</li>
 <li> <a href="/use-of-uninitialized-value">use-of-uninitialized-value</a> (Uzo de uninitialized valoro )</li>
@@ -84,7 +84,7 @@ Esas sevaral tradukoj en progreso je diversaj etapoj:
 <li> <a href="/scalar-found-where-operator-expected">scalar-found-where-operator-expected</a> (Skalara trovis kie operatoro atendita)</li>
 </ul>
 </li>
-<li> <a href="/automatic-value-conversion-or-casting-in-perl"> A&#365;tomata "string" (&#349;nuro) al la numero konvertigo </a> </li>
+<li> <a href="/automatic-value-conversion-or-casting-in-perl"> Auxtomata "string" (sxnuro) al la numero konvertigo </a> </li>
 <li> Kondica deklaroj: se </li>
 <li> <a href="/boolean-values-in-perl"> Bulea (veraj kaj falsaj) valorojn en Perl </a> </li>
 <li> Nombraj kaj kordo operatoroj </li>
@@ -109,8 +109,8 @@ Esas sevaral tradukoj en progreso je diversaj etapoj:
 <li> <a href="/open-files-in-the-old-way"> Ne malfermu dosierojn en la malnova vojo </a> </li>
 <li> Duuma modo, traktante kun Unikodo </li>
 <li> Legado de binara dosiero, legi, EOF </li>
-<li> diri, ser&#265;u </li>
-<li> detran&#265;i </li>
+<li> diri, sercxu </li>
+<li> detrancxi </li>
 </Ol>
 
 <b> Listoj kaj Arrays </b>
@@ -122,12 +122,12 @@ Esas sevaral tradukoj en progreso je diversaj etapoj:
 <li> <a href="/perl-arrays"> Arrays en Perl </a> </li>
 <li> Procezo komandlinio parametroj @ argv, Getopt :: Long </li>
 <li> <a href="/how-to-read-a-csv-file-using-perl"> Kiel legi kaj prilabori CSV-dosiero? (Split, Teksto :: CSV_XS) </a> </li>
-<li> <a href="/join"> join (ali&#285;i) </a> </li>
+<li> <a href="/join"> join (aligxi) </a> </li>
 <li> <a href="/the-year-19100"> La jaro de 19100 (tempo, Localtime, gmtime) </a> kaj enkondukante kunteksto </li>
 <li> <a href="/scalar-and-list-context-in-perl"> Kunteksto sentemo en Perl </a> </li>
 <li> <a href="/sorting-arrays-in-perl"> Ordigo arrays en Perl </a> </li>
 <li> <a href="/unique-values-in-an-array-in-perl"> Unika valoroj en tabelo en Perl </a> </li>
-<li> <a href="/manipulating-perl-arrays"> Manipulante Perl arrays: shift (&#349;an&#285;i&#285;o), unshift, push (pu&#349;o), pop (popo) </a> </li>
+<li> <a href="/manipulating-perl-arrays"> Manipulante Perl arrays: shift (sxangxigxo), unshift, push (pusxo), pop (popo) </a> </li>
 <li> Stack kaj vosto </li>
 <li> reversa </li>
 <li> la triargumenta operatoro </li>
@@ -147,7 +147,7 @@ Esas sevaral tradukoj en progreso je diversaj etapoj:
 <b> hashes, tabeloj </b>
 <ol>
 <li> <a href="/perl-hashes"> Perl hashes (vortaro, asocieca tabelo, look-up tablo) </a> </li>
-<li> ekzistas, forvi&#349;i hash elementoj </li>
+<li> ekzistas, forvisxi hash elementoj </li>
 </Ol>
 
 <b> Regulaj Esprimoj </b>
@@ -159,7 +159,7 @@ Esas sevaral tradukoj en progreso je diversaj etapoj:
 <li> regex: Kolektante kaj kaptante </li>
 <li> regex: Ankroj </li>
 <li> regex ebloj kaj modificadores </li>
-<li> Anstatauj (ser&#265;i kaj anstatau) </li>
+<li> Anstatauj (sercxi kaj anstatau) </li>
 <li> <a href="/trim"> eltondi - forigi stirante kaj rampa spacoj </a> </li>
 </Ol>
 
@@ -173,26 +173,26 @@ Esas sevaral tradukoj en progreso je diversaj etapoj:
 <li> Windows /DOS komandojn: del, ren, dir </li>
 <li> Dosiero globbing (jokerojn) </li>
 <li> Directory ansoj </li>
-<li> la&#365;iris arbo de dosierujoj (trovi) </li>
+<li> lauxiris arbo de dosierujoj (trovi) </li>
 </Ol>
 
 <b> CPAN </b>
 <ol>
 <li> <a href="/download-and-install-perl"> Elsuti kaj instali Perl (Strawberry Perl au manlibro kompilajo) </a> </li>
 <li> Elsuti kaj instali Perl uzanta Perlbrew </a> </li>
-<li> Lokante kaj priju&#285;i CPAN moduloj </li>
-<li> El&#349;uti kaj instali Perl Moduloj de CPAN </li>
-<li> <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations"> Kiel &#349;an&#285;i @ INC trovi Perl moduloj en ne-norma lokoj? < /a> </li>
-<li> Kiel &#349;an&#285;i @ INC al parenco dosierujon </li>
+<li> Lokante kaj prijugxi CPAN moduloj </li>
+<li> Elsxuti kaj instali Perl Moduloj de CPAN </li>
+<li> <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations"> Kiel sxangxi @ INC trovi Perl moduloj en ne-norma lokoj? < /a> </li>
+<li> Kiel sxangxi @ INC al parenco dosierujon </li>
 <li> loka :: lib </li>
 </Ol>
 
 <b> Malmultaj ekzemploj por uzi Perl </b>
 <ol>
-<li> <a href="/how-to-replace-a-string-in-a-file-with-perl"> Kiel anstata&#365;i &#265;enon en dosiero kun Perl? (Slurp) </a> </li>
+<li> <a href="/how-to-replace-a-string-in-a-file-with-perl"> Kiel anstatauxi cxenon en dosiero kun Perl? (Slurp) </a> </li>
 <li> Legado Excel dosierojn uzante Perl </li>
 <li> Krei Excel dosierojn uzante Perl </li>
-<li> Sendante retpo&#349;ton uzante Perl </li>
+<li> Sendante retposxton uzante Perl </li>
 <li> CGI skriptoj kun Perl </li>
 <li> TTT aplikoj kun Perl: PSGI </li>
 <li> sintaksa analizo XML dosieroj </li>
@@ -203,7 +203,7 @@ Esas sevaral tradukoj en progreso je diversaj etapoj:
 
 <b> Aliaj </b>
 <ol>
-<li> <a href="/splice-to-slice-and-dice-arrays-in-perl"> Splice por tran&#265;i kaj donita arrays en Perl </a> </li>
+<li> <a href="/splice-to-slice-and-dice-arrays-in-perl"> Splice por trancxi kaj donita arrays en Perl </a> </li>
 <li> <a href="/how-to-create-a-perl-module-for-code-reuse"> Kiel krei Perl Module por kodo reuzado </a> </li>
 <li> <a href="/object-oriented-perl-using-moose"> Objekto Orientita Perl uzanta Dantas </a> </li>
 <li> <a href="/attribute-types-in-perl-classes-when-using-moose"> Atributo tipoj en Perl klasoj uzinte Danta </??a>
