@@ -1,7 +1,8 @@
 =title Documentația Perl și documentația modulelor CPAN
-=timestamp 2013-01-27T10:45:56
+=timestamp 2013-04-20T17:45:55
 =indexes perldoc, documentation, POD, CPAN
 =status show
+=original core-perl-documentation-cpan-module-documentation
 =books beginner_book
 =author szabgab
 =translator stefansbv
@@ -46,7 +47,7 @@ fi <a href="http://perldoc.perl.org/perlvar.html">perlvar</a>, unde
 poți găsi informații despre variabile ca <hl>$_</hl> și <hl>@_</hl>.
 
 <a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> explică
-sintaxa Perl inclusiv cea pentru <a href="/while-loop">while loop</a>.
+sintaxa Perl inclusiv cea pentru <a href="http://perl5maven.com/while-loop">while loop</a>.
 
 <h2>perldoc în linia de comandă</h2>
 
