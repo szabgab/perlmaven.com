@@ -1,0 +1,93 @@
+Questi sono i files sorgenti degli articoli pubblicati su on http://it.perl5maven.com/
+Copyright di Gabor Szabo eccetto dove il campo =author indica qualcun altro.
+
+
+FORMATO
+-------
+Il formato si è evoluto da POD, HTML e Docbook. Al momento è un casino. lo so. Verrà pulito.
+
+Panoramica generale:
+
+Negli header ci sono
+
+  =chiave valore
+
+coppie di meta informazioni.
+
+Il testo fra 
+
+  =abstract start
+
+  =abstract end
+
+è mostrato sulla prima pagina ed è incluso nei RSS/Atom.
+
+
+Per i titoli interni è utilizzato il tag <h2> 
+I tag <hl></hl> vengono utilizzati per evidenziare e normalmente vengono usati questi tag anche per le righe di codice nel testo.
+Altri pezzi importanti sono marcati con <b></b>
+
+Le righe di codice sono all'interno dei tag
+
+  <code lang="perl">
+  </code>
+
+TRADUZIONI
+-------------
+La repository https://github.com/szabgab/it.perl5maven.com archivia tutto il materiale tradotto
+per Perl 5 Maven per l'Italiano.
+
+PROMOZIONE
+----------
+
+Quando gli articoli sono pubblicati, vengono trasmessi a Google+, Twitter e qualche volta anche vengono trasmessi su Facebook.
+Sono inoltre trasmessi su LinkedIN.
+
+Una e-mail è spedita alle persone che sono registrate sul sito Perl 5 Maven.   
+
+Molti articoli sono inclusi alla newsletter Perl Weekly.
+
+
+Una volta ogni tanto viene segnalato un link in Reddit ( http://www.reddit.com/ )
+ma preferisco segnalare gli articoli di altri se vogliono essere menzionati. 
+Lo stesso con le Hacker News: https://news.ycombinator.com/
+
+
+SEO spiegato in 5 parole
+------------------------
+"Ottieni link da fonti attendibili" ~ Jon Morrow
+
+La migliore divulgazione si ottiene quando le persone ritengono che valga la pena di citare uno
+degli articoli su un blog o in qualche altra forma.
+
+CONTRIBUTI
+-------------
+(per cortesia, sia per gli scrittori che per i traduttori , leggere opzione 2 di questo link: 
+http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
+ed aggiungi il sito perl5maven.com alla lista dove partecipi.
+Aggiungi una tua immagine 128x128 nella directory img/ .
+
+
+
+TRADUZIONI - LOCALIZZAZIONI
+---------------------------
+Qui c'è l'inizio delle traduzioni del Portoghese Brasiliano 
+https://github.com/szabgab/br.perl5maven.com repository.
+
+*) I nomi file (che diventano URLs) dovranno essere nella LINGUA_LOCALE (LOCAL_LANGUAGE), ma occorrerà usare solo caratteri ASCII.
+   Traslitterato in inglese. (Non sono sicuro di questo. Potrebbe essere meglio usare i caratteri LOCAL_LANGUAGE nell' URLs?)
+   http://support.google.com/webmasters/bin/answer.py?hl=en&answer=182192
+*) I nomi file dovrebbero più-o-meno corrispondere al titolo della pagina, possono contenere parole separate dal trattino.
+*) Per favore aggiungete l'intestazione ad ogni file (meta informazioni) includendo la data prevista di pubblicazione 
+*) I link nella pagina devono essere funzionanti. Se c'è già una traduzione per la pagina allora usa il link della pagina tradotta,
+    se esiste solo quella in inglese, allora inserisci url completo includendo il nome host (hostname) http://perl5maven.com/
+*) Per favore aggiornate la sezione nascosta (!) del tutorial perl-tutorial.tt per includere i link alle pagine aggiunte.
+*) Gli elenchi dei testi l'autore ed il traduttore sono aggiunte al sistema e sono guidate dai tag di intestazione
+   =author e =translator
+*) Ogni autore e traduttore deve avere una voce nel file di elenco dei nickname authors.txt (\w solo caratteri),
+   Il nome completo, il nome del file della loro immagine, il link al loro profilo G+.
+*) Ogni autore e traduttore deve provvedere una immagine in formato jpg o in png approssimativamente di dimensioni 128x128 pixel  
+   (un Avatar) che sarà mostrato in basso ad ogni articolo
+*) Ogni autore e traduttore dovrebbe riconoscere la paternità, collegando il proprio profilo Google+ al sito CC.perl5maven.com. 
+   (p.e. br.perl5maven.com per i traduttori in portoghese brasiliano, it.perl5maven.com per i traduttori in italiano)
+   vedi http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
