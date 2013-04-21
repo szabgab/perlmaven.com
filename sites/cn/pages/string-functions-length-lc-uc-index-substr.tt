@@ -2,6 +2,7 @@
 =timestamp 2013-04-13T14:45:56
 =indexes length, lc, uc, index, substr, scalar
 =status show
+=original string-functions-length-lc-uc-index-substr
 =books beginner_book
 =author szabgab
 =translator terrencehan
