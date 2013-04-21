@@ -2,10 +2,10 @@
 =timestamp 2013-04-20T07:45:56
 =indexes perldoc, Dokumentation, POD, CPAN
 =status show
+=original core-perl-documentation-cpan-module-documentation
 =books beginner_book
 =author szabgab
 =translator mca
-=original core-perl-documentation-cpan-module-documentation
 =index 1
 =archive 1
 =feed 1
