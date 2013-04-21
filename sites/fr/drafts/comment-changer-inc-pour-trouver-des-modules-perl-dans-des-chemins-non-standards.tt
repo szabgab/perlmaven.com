@@ -1,0 +1,198 @@
+=title How to change @INC to find Perl modules in non-standard locations
+=timestamp 2012-07-24T12:45:56
+=indexes @INC, use, PERLLIB, PERL5LIB, lib, -I
+=status show
+=books beginner_book
+=author szabgab
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+When using modules that are not installed in the standard directories
+of Perl, we need to change @INC so perl will be able to
+find them. There are several ways to do that solving different use-cases.
+
+Let's see these use-case first:
+
+=abstract end
+
+
+<h2>Loading your private Perl module</h2>
+
+You have a script and have just started to move some parts of it,
+out to a new module called <hl>My::Module</hl>.
+You saved the module to <hl>/home/foobar/code/My/Module.pm</hl>.
+
+Your perl script now starts like this:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use My::Module;
+</code>
+
+When you run the script you get a friendly error message like this:
+
+<code>
+Can't locate My/Module.pm in @INC (@INC contains:
+   /home/foobar/perl5/lib/perl5/x86_64-linux-gnu-thread-multi
+   /home/foobar/perl5/lib/perl5
+   /etc/perl
+   /usr/local/lib/perl/5.12.4
+   /usr/local/share/perl/5.12.4
+   /usr/lib/perl5 /usr/share/perl5
+   /usr/lib/perl/5.12
+   /usr/share/perl/5.12
+   /usr/local/lib/site_perl
+   .).
+   BEGIN failed--compilation aborted.
+</code>
+
+Perl cannot find your module.
+
+<h2>Upgrading a Perl module</h2>
+
+On a system you are thinking to upgrade a module that came from CPAN.
+You don't want to install it in the standard location yet. First you'd
+like to put it in some private directory, try it, and install
+to the system only once you are sure it works well.
+
+In this case too you "install" the module in a private directory,
+e.g. in  /home/foobar/code and somehow you'd like to convince
+perl to find that version of the module, and not the one that
+was installed in the system.
+
+<h2>The use statement</h2>
+
+When perl encounters <hl>use My::Module;</hl> it goes over the
+elements of the built-in <hl>@INC</hl> array that contains
+directory names. In each directory it checks if there is a
+subdirectory called "My" and if in that subdirectory there is
+a file called "Module.pm".
+
+The first such file it encounters will be loaded into memory.
+
+If it does not find the file you get the above error messages.
+
+<hl>@INC</hl> is defined when perl is compiled and it
+is embedded in the binary code. You cannot change that,
+unless you recompile perl. Not something we would do every day.
+
+Luckily the <hl>@INC</hl> array can be changed in several
+ways when we execute a script. We'll see these solutions
+and discuss when each one of them is appropriate to use.
+
+<h2>PERLLIB and PERL5LIB</h2>
+
+You can define the PERL5LIB environment variable
+(though PERLLIB works the same way, I'd recommend using PERL5LIB
+over PERLLIB as that makes it clear it is related to Perl 5)
+the same way you can define the PATH environment variable.
+Every directory listed in this variable will be added to
+the beginning of <hl>@INC</hl>.
+
+On <b>Linux/Unix</b> when using <b>Bash</b>, you would write
+
+<code>
+export PERL5LIB=/home/foobar/code
+</code>
+
+You can add this to the ~/.bashrc to make it always available when
+you log-in.
+
+On <b>Windows</b> you can set the same in the cmd command window by typing
+
+<code>
+set PERL5LIB = c:\path\to\dir
+</code>
+
+For a more long term solution follow these steps:
+
+Right-click <b>My Computer</b> and click <b>Properties</b>.
+
+In the <b>System Properties</b> window, click on the <b>Advanced</b> tab.
+
+In the Advanced section, click the <b>Environment Variables</b> button.
+
+In the Environment Variables window in the "User variables for Foo Bar"
+section click on <b>New</b> and type in the following:
+
+Variable name: PERL5LIB
+
+Variable value: c:\path\to\dir
+
+Then click OK 3 times. Windows that you open <b>after</b> this will already know
+about the new variable. Type this in the command window, to see the newly set value:
+
+<code>
+echo %PERL5LIB%
+</code>
+
+<hr>
+
+This will add the private /home/foobar/code directory (or c:\path\to\dir directory)
+to the beginning of <hl>@INC</hl> for <b>every script</b> that is executed in
+the same environment.
+
+In <b>taint mode</b>, that will be explained in a separate post,
+the PERLLIB and PERL5LIB environement variables are ignored.
+
+<h2>use lib</h2>
+
+Adding a <hl>use lib</hl> statement to the script will add
+the directory to <hl>@INC</hl> for that specific script.
+Regardless who and in what environment runs it.
+
+You just have to make sure to have the use lib statement
+before trying to load the module:
+
+<code lang="perl">
+use lib '/home/foobar/code';
+use My::Module;
+</code>
+
+One note here. I saw several companies where <hl>use lib</hl>
+statements were added to the modules so they will be able to load
+their dependencies. I don't think this is good.
+I think the right place to change <hl>@INC</hl> is the main
+script or even better, outside the script such as in the two other
+solutions.
+
+<h2>-I on the command line</h2>
+
+(That's a capital i)
+
+The last solution is the most temporary solution.
+Add a <hl>-I /home/foobar/code</hl> flag to perl
+when running the script.
+
+<b>perl -I /home/foobar/code  script.pl</b>
+
+This will add /home/foobar/code to the beginning of
+@INC <b>for this specific execution</b> of the script.
+
+<h2>So which one to use?</h2>
+
+If you would like to just test a newer version of a module, I'd recommend the command line flag:
+<hl>perl -I /path/to/lib</hl>.
+
+If you are installing lots of modules in a private directory then I'd probably use <hl>PERL5LIB</hl>
+though we'll also see <hl>local::lib</hl> that does this for you.
+
+<hl>use lib</hl> is used in two cases:
+
+<ol>
+<li>When you have a fixed, but not standard company-wide environment
+in which you put modules in a common standard location.</li>
+<li>When you are developing an application and you'd like to make sure
+the script always picks up the modules relative to their own location.
+We'll discuss this in another post.</li>
+</ol>
+
+<TMPL_INCLUDE name="incl/beginner.tmpl">
+

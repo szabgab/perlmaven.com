@@ -2,6 +2,7 @@
 =timestamp 2013-01-10T10:45:56
 =indexes is_number, looks_like_number, Scalar::Util, casting, type conversion
 =status show
+=original automatic-value-conversion-or-casting-in-perl
 =books beginner_book
 =author szabgab
 =translator swuecho
@@ -19,7 +20,7 @@
 
 <h2>Perl中的类型转换</h2>
 
-在多数语言中，操作子的类型决定操作符的操作，比如， 两个数字相加，得到一个数字，两个字符串相加得到一个新的字符串。 
+在多数语言中，操作子的类型决定操作符的操作，比如， 两个数字相加，得到一个数字，两个字符串相加得到一个新的字符串。
 
 Perl 中，恰好相反，操作符决定如果操作操作子。也就是说，如果你把两个值相加，如果这两个值不全是数值，这两个值先自动转换为数字，然后再相加。
 
@@ -30,7 +31,7 @@ Perl 中，至于某个值是数字还是字符串，Perl会根据上下文的�
 数字转换到字符串再简单不过了，把数字放到引号中即可。
 
 字符串到数字的转换就有些麻烦了。如果字符串仅有数字构成，去掉引号就好了。否则，
-Perl尽可能多的从字符串的左边连续的取可以当作数字的值，知道遇到非数字字符为止。 
+Perl尽可能多的从字符串的左边连续的取可以当作数字的值，知道遇到非数字字符为止。
 
 
 我们来看几个具体的例子：

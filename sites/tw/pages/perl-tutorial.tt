@@ -6,6 +6,7 @@
 =newsletter 0
 =published 0
 =author 0
+=translator 0
 =index 0
 =archive 0
 =feed 0
@@ -17,6 +18,7 @@
 <ul>
   <li><a href="/string-functions-length-lc-uc-index-substr">操縱字串的函式：lc, uc, index, substr</a></li>
   <li><a href="/undef-and-defined-in-perl">undef、初始值、以及 defined 函式</a></li>
+  <li><a href="/boolean-values-in-perl">Perl 的布林值</a></li>
 
 <!--
   <li><a href=""></a></li>

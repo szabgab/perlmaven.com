@@ -1,7 +1,8 @@
 =title Perl5中19个最重要的文件系统工具
-=timestamp 2012-07-19T12:45:56
+=timestamp 2013-04-21T12:45:04
 =indexes cwd, tempdir, catfile, catdir, dirname, FindBin, $Bin, File::Spec, File::Basename, File::Temp, Cwd
 =status show
+=original the-most-important-file-system-tools
 =author szabgab
 =translator terrencehan
 =index 1
@@ -135,7 +136,7 @@ END {
 
 <h2>相对路径</h2>
 
-当写一个多文件构成的项目(例如一个或多个脚本，多个模块，也可能是多个模板)，并且我不想“安装”它们时，最好的目录组织方式是：确保每个文件都在一个固定的<b>相对</b>位置。 
+当写一个多文件构成的项目(例如一个或多个脚本，多个模块，也可能是多个模板)，并且我不想“安装”它们时，最好的目录组织方式是：确保每个文件都在一个固定的<b>相对</b>位置。
 
 所以，我的项目目录通常会包含一个脚本子文件夹，一个模块文件夹(lib)， 一个模板文件夹， 等等：
 
@@ -194,7 +195,7 @@ use Rocket::Launcher;
 
 <h2>其它的在哪?</h2>
 
-关于这个话题还有很多值得去讲解的，但是我认为作为本系列的开头部分，这些就已经足够了。如果你想确保自己不会错过剩下的部分， 欢迎<a href="/register">订阅newsletter</a>。 
+关于这个话题还有很多值得去讲解的，但是我认为作为本系列的开头部分，这些就已经足够了。如果你想确保自己不会错过剩下的部分， 欢迎<a href="/register">订阅newsletter</a>。
 
 
 

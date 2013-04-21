@@ -1,0 +1,79 @@
+=title Boolean values in Perl
+=timestamp 2012-11-15T11:45:56
+=indexes undef, true, false, boolean
+=status show
+=books beginner_book
+=author szabgab
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+Perl does not have a special boolean type and yet,
+in the documentation of Perl you can often see that a function returns a "Boolean" value.
+Sometimes the documentation says the function returns true or returns false.
+
+So what's the truth?
+
+=abstract end
+
+
+Perl does not have specific boolean type, but every scalar value - if checked using <b>if</b>
+will be either true or false. So you can write
+
+<code lang="perl">
+if ($x eq "foo") {
+}
+</code>
+
+and you can also write
+
+<code lang="perl">
+if ($x) {
+}
+</code>
+
+the former will check if the content of the <b>$x</b> variable is the same as the "foo"
+string while the latter will check if $x itself is true or not.
+
+<h2>What values are true and false in Perl?</h2>
+
+It is quite easy. Let me quote the documentation:
+
+<pre>
+The number 0, the strings '0' and '', the empty list "()", and "undef"
+are all false in a boolean context. All other values are true.
+Negation of a true value by "!" or "not" returns a special false
+value. When evaluated as a string it is treated as '', but as a number, it is treated as 0.
+
+From perlsyn under "Truth and Falsehood".
+</pre>
+
+So the following scalar values are considered false:
+
+<ul>
+<li>undef - the undefined value</li>
+<li>0  the number 0, even if you write it as 000  or 0.0</li>
+<li>''   the empty string.</li>
+<li>'0'  the string that contains a single 0 digit.</li>
+</ul>
+
+All other scalar values, including the following are true:
+
+<ul>
+<li>1 any non-0 number</li>
+<li>' '   the string with a space in it</li>
+<li>'00'   two or more 0 characters in a string</li>
+<li>"0\n"  a 0 followed by a newline</li>
+<li>'true'</li>
+<li>'false'   yes, even the string 'false' evaluates to true.</li>
+</ul>
+
+I think this is because <a href="http://www.wall.org/~larry/">Larry Wall</a>,
+creator of Perl, has a general positive world-view.
+He probably thinks there are very few bad and false things in the world.
+Most of the things are true.
+

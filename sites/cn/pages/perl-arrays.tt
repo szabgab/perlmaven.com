@@ -1,7 +1,8 @@
 =title Perl Arrays
-=timestamp 2013-03-23T20:45:02
+=timestamp 2013-04-19T14:45:02
 =indexes @, array, arrays, length, size, foreach, Data::Dumper, scalar, push, pop, shift
 =status show
+=original perl-arrays
 =books beginner_book
 =author szabgab
 =translator swuecho

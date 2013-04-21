@@ -1,10 +1,11 @@
 =title 数组操作 Splice
-=timestamp 2013-02-08T00:05:56
+=timestamp 2013-04-21T09:05:56
 =indexes splice, array
 =status show
+=original splice-to-slice-and-dice-arrays-in-perl
 =books advanced_book
 =author szabgab
-=translator swecho
+=translator swuecho
 =index 1
 =archive 1
 =feed 1
@@ -148,4 +149,4 @@ print "@who";
 
 <h2>总结</h2>
 
-希望你弄清楚了怎样使用 <hl>splice</hl>。 
+希望你弄清楚了怎样使用 <hl>splice</hl>。
