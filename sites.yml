@@ -34,6 +34,10 @@ ru:
   url: http://ru.perl5maven.com/
   english: Russian
   name: Русский
+te:
+  url: http://te.perl5maven.com/
+  english: Telugu
+  name: తెలుగు
 tw:
   url: http://tw.perl5maven.com/
   english: Chinese (traditional)
