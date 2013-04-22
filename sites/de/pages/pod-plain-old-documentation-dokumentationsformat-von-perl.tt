@@ -1,10 +1,10 @@
 =title POD - Plain Old Documentation (Dokumentationsformat von Perl)
-=timestamp 2013-03-02T18:40:59
+=timestamp 2013-04-22T12:40:59
 =indexes POD, perldoc, =head1, =cut, =pod, =head2, Dokumentation, pod2html, pod2pdf
 =status show
+=original pod-plain-old-documentation-of-perl
 =books beginner_book
 =author szabgab
-=original pod-plain-old-documentation-of-perl
 =translator mca
 =index 1
 =archive 1
