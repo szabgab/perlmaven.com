@@ -27,7 +27,7 @@ my $contador = 10;
 
 while ($contador > 0) {
   say $contador;
-  $ccontador -= 2;
+  $contador -= 2;
 }
 say 'pronto';
 </code>
@@ -49,7 +49,7 @@ Esse processo se repete enquanto a condicional testada retornar valor verdadeiro
 
 <h2>Laços infinitos</h2>
 
-NO código exemplo acima nós sempre reduzimos o valor da variável, dessa forma garantimos que em algum momento a condicional seria falsa.
+No código exemplo acima nós sempre reduzimos o valor da variável, dessa forma garantimos que em algum momento a condicional seria falsa.
 Se por algum motivo a condicional nunca se tornar falsa você terá um <hl>laço infinito</hl>. O seu programa ficará preso
 em um pequeno bloco de execução e nunca conseguirá escapá-lo.
 
