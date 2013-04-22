@@ -5,6 +5,9 @@ use 5.010;
 
 # first run git fetch --all
 
+use Getopt::Long qw(GetOptions);
+GetOptions('all' => \my $all) or die;
+
 my @remotes = grep {$_ ne 'origin'} qx{git remote};
 chomp @remotes;
 
@@ -14,11 +17,12 @@ chomp @remotes;
 
 my @branches = qx{git branch --remote};
 chomp @branches;
-#foreach my $remote (@remotes) {
 foreach my $remote (@branches) {
-	my @out = grep { $_ =~ m{^\w+\s+sites/\w+/pages/} }
+	my @out = grep { $_ !~ /^[0-9a-f]{40}/ }
 		qx{git log --name-status  --pretty=oneline --full-index $remote --not main};
-#		qx{git log --name-status  --pretty=oneline --full-index $remote/main --not main};
+	if (not $all) {
+		@out = grep { $_ =~ m{^\w+\s+sites/\w+/pages/} } @out;
+	}
 	next if not @out;
 	say $remote;
 	say @out;
