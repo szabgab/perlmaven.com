@@ -198,7 +198,7 @@ cpanm from falling back to the public CPAN when it can't find a module
 in your repository.  When that happens, it usually means that some
 distribution in the repository doesn't have all the correct
 dependencies declared in its META file.  To fix the problem, just use
-the "pull" command to fetch any modules that are  missing.
+the <hl>pull</hl> command to fetch any modules that are  missing.
 
 
 <h2>Upgrading Modules</h2>
@@ -206,9 +206,9 @@ the "pull" command to fetch any modules that are  missing.
 Suppose that several weeks have passed since you first released My-App
 and now URI version 1.62 is available on the CPAN.  It has some
 critical bug fixes that you'd like to get.  Again, we can bring that
-into the repository using the "pull" command.  But since your
+into the repository using the <hl>pull</hl> command.  But since your
 repository already contains a version of URI, you must indicate that
-you want a *newer* one by specifying the minimum version that you
+you want a <b>newer</b> one by specifying the minimum version that you
 want:
 
 <code>
@@ -242,7 +242,7 @@ This is what stacks are designed for.
 All CPAN-like repositories have an index which maps the latest version
 of each module to the archive that contains it.  Usually, there is
 only one index per repository.  But in a Pinto repository, there can
-be many indexes.  Each of these indexes is called a "stack".  This
+be many indexes.  Each of these indexes is called a <b>"stack"</b>.  This
 allows you to create different stacks of dependencies within a single
 repository.  So you could have a "development" stack and a
 "production" stack, or a "perl-5.8" stack and a "perl-5.16" stack.
@@ -275,7 +275,7 @@ pinto -r ~/repo copy master uri_upgrade
 </code>
 
 This creates a new stack called "uri_upgrade".  If you want to see the
-contents of that stack, just use the "list" command with the "--stack"
+contents of that stack, just use the <hl>list</hl> command with the "--stack"
 option:
 
 <code>
@@ -293,7 +293,7 @@ rf  URI                            1.60  GAAS/URI-1.60.tar.gz
 <h3>Upgrading A Stack</h3>
 
 Now that you've got a separate stack, you can try upgrading URI.  Just
-as before, you'll use the "pull" command.  But this time, you'll tell
+as before, you'll use the <hl>pull</hl> command.  But this time, you'll tell
 Pinto to pull the modules into the "uri_upgrade" stack:
 
 <code>
@@ -332,7 +332,7 @@ cpanm --mirror file://$HOME/repo/stacks/uri_upgrade --mirror-only My::App
 </code>
 
 If all the tests pass, then you can confidently upgrade URI to version
-1.62 in the "master" stack as well by using the "pull" command.  Since
+1.62 in the "master" stack as well by using the <hl>pull</hl> command.  Since
 "master" is the default stack, you can omit the "--stack" paramter:
 
 <code>
@@ -358,7 +358,7 @@ This is what pins are for.
 
 When you pin a module, that version of the module is forced to stay in
 a stack.  Any attempt to upgrade it (either directly or via another
-prerequisite) will fail.  To pin a module, use the "pin" command:
+prerequisite) will fail.  To pin a module, use the <hl>pin</hl> command:
 
 <code>
 pinto -r ~/repo pin URI
@@ -387,7 +387,7 @@ module moves into a different distribution).
 
 After a while, suppose you fix the problem in My-App or a new version
 of URI is released that fixes the bug.  When that happens, you can
-unpin URI from the stack using the "unpin" command:
+unpin URI from the stack using the <hl>unpin</hl> command:
 
 <code>
 pinto -r ~/repo unpin URI
@@ -420,7 +420,7 @@ to make a local patch of the CPAN distribution.
 
 So suppose that you forked the code for URI and made a local version
 of the distribution called URI-1.60_PATCHED.tar.gz.  You can add it to
-your repository using the "add" command:
+your repository using the <hl>add</hl> command:
 
 <code>
 pinto -r ~/repo add path/to/URI-1.60_PATCHED.tar.gz
@@ -471,7 +471,7 @@ pinto -r ~/repo pull URI~1.62
 
 As you've probably noticed by now, each command that changes the state
 of a stack requires a log message to describe it.  You can review
-those messages using the "log" command:
+those messages using the <hl>log</hl> command:
 
 <code>
 pinto -r ~/repo log
