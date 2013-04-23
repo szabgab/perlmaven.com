@@ -2,7 +2,7 @@
 =timestamp 2013-03-21T00:45:17
 =indexes open
 =status show
-=original dont open files in the old way
+=original open-files-in-the-old-way
 =books beginner_book
 =author szabgab
 =translator leprevost
