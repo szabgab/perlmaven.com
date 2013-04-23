@@ -1,0 +1,543 @@
+=title Pinto -- Ein maßgeschneidertes CPAN in der Box
+=timestamp 2013-04-29T07:30:01
+=indexes cpan, pinto
+=status show
+=author szabgab
+=translator mca
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+<i>
+Das ist ein Gast-Artikel von <a href="">Jeffrey Ryan Thalhammer</a>, Autor von Pinto
+und von Perl::Critic. Jeff ist ein ... TODO.
+Bis 07. Mai hat Jeff eine  <a href="https://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint">Spendenaktion</a>
+laufen, um die Entwicklung eines Features zu finanzieren, dass es erlaubt, <b>in Pinto
+für Module Versionsintervalle anzugeben</b>.
+</i>
+
+Eines der besten Dinge an Perl sind all die Open-Source-Module, die
+es in CPAN gibt. Aber es ist schwierig, mit all diesen Modulen Schritt
+zu halten. Jede Woche gibt es hunderte neuer Versionen und Veröffentlichungen,
+von denen man nie weiß, welche einen neuen Fehler in Deine 
+Applikation einbringt.
+
+=abstract end
+
+Eine Startegie, um dieses Problem zu lösen, ist das Erstellen
+eines maßgeschneiderten CPAN-<a href="http://de.wikipedia.org/wiki/Repository">Repositorys</a>,
+das nur die Modulversionen enthält, die Du benötigst.
+Dann kannst Du alle CPAN-Werkzeuge benutzen, um Deine Applikation
+mit den Modulen aus dem eigenen maßgeschneiderten Repository zusammenzubauen,
+ohne sich dem öffentlichen CPAN-Moloch auszusetzen.
+
+Über Jahre hinweg habe ich einige maßgeschneiderte CPAN-Repositorys
+mit <a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a>
+und <a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>
+aufgebaut. Aber immer wirkten sie ein wenig hölzern und ich war nie
+mit ihnen zufrieden. Vor einigen Jahren wurde ich von einem Kunden
+beauftragt, ein weiteres maßgeschneidertes CPAN aufzubauen. Aber
+dieses Mal hatte ich die Chance, ganz von vorne anzufangen.
+Pinto ist das Ergebnis dieser Arbeit.
+
+<a href="https://metacpan.org/module/Pinto">Pinto</a> ist ein robustes
+Hilfsmittel, um ein maßgeschneidertes CPAN-Repository zu
+erstellen und zu verwalten. Es hat einige mächtige Features, die es
+Dir ermöglichen, alle diejenigen Module sicher zu verwalten, von
+denen Deine Applikation abhängig ist. Dieses Tutorial wird Dir zeigen,
+wie man mit Pinto ein eigenes CPAN-Repository aufbaut, und Dir
+einige dieser Features demonstrieren.
+
+<h2>Pinto installieren</h2>
+
+Pinto ist auf CPAN verfügbar und kann - wie jedes andere Modul -
+mit cpan oder <hl>cpanm</hl> installiert werden. Aber Pinto ist
+mehr eine Applikation als eine Bibliothek. Es ist ein Werkzeug, mit
+dem Du Deine Applikation verwaltest, aber Pinto ist eigentlich nicht
+Teil davon. Daher rate ich dazu, Pinto als eigenständiges Programm
+mit den folgenden zwei Kommandos zu installieren:
+
+<code>
+curl -L http://getpinto.stratopan.com | bash
+source ~/opt/local/pinto/etc/bashrc
+</code>
+
+Damit wird Pinto nach <hl>~/opt/local/pinto</hl> installiert und die
+notwendigen Verzeichnisse den Umgebungsvariablen  <hl>PATH</hl> und <hl>MANPATH</hl>
+hinzugefügt. Alles ist in sich geschlossen, so dass Pinto weder
+Änderungen an Deiner Entwicklungsumgebung vornimmt, noch Änderungen 
+der Entwicklungsumgebung Pinto beeinflussen.
+
+<h2>Pinto erkunden</h2>
+
+As with any new tool, the first thing you should know is how to get help:
+
+Wie mit jedem neuen Programm, solltest Du zu allererst wissen, wie
+Du Hilfe abrufen kannst.
+
+<code>
+pinto commands            # Zeige eine Liste der verfügbaren Befehle
+pinto help <COMMAND>      # Zeige eine Zusammenfassung der Optionen und Argumente für <COMMAND>
+pinto manual <COMMAND>    # Zeige eine komplette Anleitung für <COMMAND>
+</code>
+
+Pinto beinhaltet auch andere Dokumentation, einschließlich einem
+Tutorial und einer Schnellanleitung. Du kannst auf diese Dokumente
+mit folgenden Kommandos zugreifen:
+
+<code>
+man Pinto::Manual::Introduction  # Erklärt grundlegende Pinto-Konzepte
+man Pinto::Manual::Installing    # Vorschläge, wie Pinto installiert werden sollte
+man Pinto::Manual::Tutorial      # Eine ausführliche Anleitung
+man Pinto::Manual::QuickStart    # Eine Zusammenfassung der gebräuchlichsten Befehle
+</code>
+
+<h2>Ein Repository anlegen</h2>
+
+Der erste Schritt mit Pinto ist das Erstellen eines Repositorys mit
+dem Befehl <hl>init</hl>:
+
+<code>
+pinto -r ~/repo init
+</code>
+
+Das erzeugt ein neues Repository im Verzeichnis <hl>~/repo</hl>. Wenn es
+noch nicht existiert, wird es für Dich erzeugt. Wenn es bereits existiert, muss es
+leer sein.
+
+Die Angabe -r (oder --root) legt fest, wo das Repository liegt. Das ist
+für jeden Pinto-Befehl notwendig. Wenn Du es überdrüssig wirst, dies
+jedesmal einzugeben, kannst Du die Umgebungsvariable <hl>PINTO_REPOSITORY_ROOT</hl>
+entsprechend setzen und die Angabe -r weglassen.
+
+<h2>Ein Blick ins Repository</h2>
+
+So, nachdem Du nun ein Repository hast, lass uns einen Blick hinein
+werfen. Um den Inhalt eines Repositorys anzuzeigen, benutze
+den Befehl "list":
+
+<code>
+pinto -r ~/repo list
+</code>
+
+Im Moment ist die Auflistung natürlich leer, weil nichts im Repository
+ist. Aber Du wirst den Befehl "list" im Laufe des Tutorials oft
+benutzen.
+
+<h2>CPAN-Module hinzufügen</h2>
+
+Wir gehen davon aus, dass Du an einer Applikation arbeitest, die My-App heißt
+und das Modul My::App beinhaltet. Daneben ist sie vom Modul URI abhängig.
+Du kannst das URI-Modul in das Repository mit dem Befehl <hl>pull</hl>
+einbringen:
+
+<code>
+pinto -r ~/repo pull URI
+</code>
+
+Du wirst aufgefordert eine Log-Meldung einzugeben, die beschreibt, warum
+eine Änderung vorgenommen wurde. Der Anfang der Log-Vorlage beinhaltet
+eine einfache, generierte Meldung, die von Dir editiert werden kann.
+Im unteren Teil steht detailliert, welche Module hinzugefügt wurden.
+Speichere die Datei und schließe den Editor.
+
+Nun solltest Du das URI-Modul in Deinem Pinto-Repository haben. Also lass
+uns nachsehen, was wir wirklich haben. Benutze ein weiteres
+Mal den Befehl <hl>list</hl>, um den Inhalt des Repositorys anzuzeigen:
+
+<code>
+pinto -r ~/repo list
+</code>
+
+Dieses Mal sollte die Ausgabe folgendermaßen aussehen:
+
+<code>
+rf  URI                            1.60  GAAS/URI-1.60.tar.gz
+rf  URI::Escape                    3.31  GAAS/URI-1.60.tar.gz
+rf  URI::Heuristic                 4.20  GAAS/URI-1.60.tar.gz
+...
+</code>
+
+Du kannst erkennen, dass das URI-Modul inklusive aller Voraussetzungen
+und wiederum derer Veraussetzungen dem Repository hinzugefügt wurde.
+
+<h2>Private Module hinzufügen</h2>
+
+Nun stell Dir vor, Du hast die Arbeit an My-App fertiggestellt und
+möchtest die erste Version freigeben. Mit Deinem bevorzugten
+Paketierungswerkzeug (z.B. ExtUtils::MakeMaker, Module::Build, Module::Install)
+erstellst Du My-App-1.0.tar.gz, was Du mit dem Befehl <hl>add</hl>
+dem Pinto-Repository hinzufügst:
+
+<code>
+$> pinto -r ~/repo add path/to/My-App-1.0.tar.gz
+</code>
+
+Ein weiteres Mal wirst Du aufgefordert, einen Eintrag zu verfassen,
+der die Änderung beschreibt. Wenn Du Dir jetzt den Repository-Inhalt
+auflisten lässt, ist das Modul My::App enthalten und Du wirst
+als Autor des Pakets genannt:
+
+<code>
+rl  My::App                         1.0  JEFF/My-App-1.0.tar.gz
+rf  URI                            1.60  GAAS/URI-1.60.tar.gz
+rf  URI::Escape                    3.31  GAAS/URI-1.60.tar.gz
+rf  URI::Heuristic                 4.20  GAAS/URI-1.60.tar.gz
+...
+</code>
+
+
+<h2>Module installieren</h2>
+
+So, nachdem Du nun Deine Module im Pinto-Repository hast, ist der 
+nächste Schritt, diese tatsächlich irgendwohin zu installieren.
+Unter der Haube ist Pinto genauso wie ein CPAN-Repository aufgebaut.
+Damit ist es voll kompatibel mit cpanm und jedem anderen Installationswerkzeug
+für Perl-Module. Das einzige, was Du tun musst, ist dem Installationsprogramm
+als Quelle das Pinto-Repository mitzuteilen: 
+
+<code>
+cpanm --mirror file://$HOME/repo --mirror-only My::App
+</code>
+
+Dieser Befehl baut und installiert My::App nur mit den Modulen
+aus dem Pinto-Repository. Damit bekommst Du zu jeder Zeit exakt die gleiche
+Version jeden Moduls, selbst wenn das Modul im
+öffentlichen CPAN gelöscht oder erneuert wurde.
+
+Mit cpanm ist die Angabe von --mirror-only zwingend notwendig, um
+zu vermeiden, dass cpanm im öffentlichen CPAN nachsieht, falls es
+ein Modul nicht in Deinem Pinto-Repository finden kann. Wenn das
+passiert, bedeutet das meistens, dass irgendein Modul seine
+Abhängigkeiten nicht korrekt in der META-Datei deklariert hat.
+Um das Problem zu lösen, musst du den Befehl <hl>pull</hl> für 
+all diejenigen Module anwenden, die noch fehlen.
+
+<h2>Modul-Upgrade</h2>
+
+Stell Dir vor, es sind einige Wochen seit der ersten Veröffentlichung
+von My-App vergangen. Nun gibt es Version 1.62 des Moduls URI, welche
+einige Fehlerbehebungen für kritische Fehler enthält. Ein weiteres Mal
+kannst Du das Modul mit dem Befehl <hl>pull</hl> ins Repository
+einbringen. Da aber bereits eine Version vorhanden ist, musst Du
+anzeigen, dass Du eine neuere Version haben möchtest. Dies geschieht
+mit der Angabe eine minimalen Versionnummer:
+
+<code>
+pinto -r ~/repo pull URI~1.62
+</code>
+
+Wenn Du nochmal die Repository-Auflistung ansiehst, wirst Du
+erkennen, dass jetzt eine neuere Version von URI (und eventuell
+auch anderer Module) vorhanden ist:
+
+<code>
+rl  My::App                         1.0  JEFF/My-App-1.0.tar.gz
+rf  URI                            1.62  GAAS/URI-1.62.tar.gz
+rf  URI::Escape                    3.38  GAAS/URI-1.62.tar.gz
+rf  URI::Heuristic                 4.20  GAAS/URI-1.62.tar.gz
+...
+</code>
+
+If the new version of URI requires any upgraded or additional
+dependencies, those will be in the repository too.  And when you
+install My::App, now you'll get version 1.62 of URI.
+
+Wenn die neue Version von URI neuere oder zusätzliche Abhängigkeiten
+hat, dann werden diese auch ins Repository geladen. Und wenn Du nun
+My::App installierst, wird auch das Modul URI in der Version 1.62
+gezogen werden.
+
+<h2>Arbeiten mit "Stacks"</h2>
+
+Bisher haben wir ein Repository als eine einzelne Ressource angesehen.
+D.h. als wir im letzten Abschnitt das Modul URI auf einen neueren Stand
+gebracht haben, beeinflusste das jede Person und jede Applikation, die
+das Repository vielleicht genutzt hat. Aber so eine weite Auswirkung ist
+nicht gewünscht. Vielmehr bevorzugt man, eine Änderung isoliert durchzuführen und
+diese zu testen, bevor jeder dazu gezwungen ist, eine neuere Version
+zu nutzen. Genau das ist es, wofür "Stacks" entworfen wurden.
+
+
+All CPAN-like repositories have an index which maps the latest version
+of each module to the archive that contains it.  Usually, there is
+only one index per repository.  But in a Pinto repository, there can
+be many indexes.  Each of these indexes is called a <b>"stack"</b>.  This
+allows you to create different stacks of dependencies within a single
+repository.  So you could have a "development" stack and a
+"production" stack, or a "perl-5.8" stack and a "perl-5.16" stack.
+Whenever you add or upgrade a module, it only affects one stack.
+
+But before going further, you need to know about the default stack.
+For most operations, the name of the stack is an optional parameter.
+So if you do not specify a stack explicitly, then the command is
+applied to whichever stack is marked as the default.
+
+In any repository, there is never more than one default stack.  When
+we created this repository, a stack called "master" was also created and
+marked as the default.  You can change the default stack or change the
+name of a stack, but we won't go into that here.  Just remember that
+"master" is the name of the stack that was created when the repository
+was first initialized.
+
+<h3>Creating A Stack</h3>
+
+Suppose your repository contains version 1.60 of URI but version 1.62
+has been released to the CPAN, just like before.  You want to try
+upgrading, but this time you're going to do it on a separate stack.
+
+Thus far, everything you've added or pulled into the repository has
+gone into the "master" stack.  So we're just going to make a clone
+of that stack using the <hl>copy</hl> command:
+
+<code>
+pinto -r ~/repo copy master uri_upgrade
+</code>
+
+This creates a new stack called "uri_upgrade".  If you want to see the
+contents of that stack, just use the <hl>list</hl> command with the "--stack"
+option:
+
+<code>
+pinto -r ~/repo list --stack uri_upgrade
+</code>
+
+The listing should be identical to the "master" stack:
+
+<code>
+rl  My::App                         1.0  JEFF/My-App-1.0.tar.gz
+rf  URI                            1.60  GAAS/URI-1.60.tar.gz
+...
+</code>
+
+<h3>Upgrading A Stack</h3>
+
+Now that you've got a separate stack, you can try upgrading URI.  Just
+as before, you'll use the <hl>pull</hl> command.  But this time, you'll tell
+Pinto to pull the modules into the "uri_upgrade" stack:
+
+<code>
+pinto -r ~/repo pull --stack uri_upgrade URI~1.62
+</code>
+
+We can compare the "master" and "uri_upgrade" stacks using the "diff"
+command:
+
+<code>
+pinto -r ~/repo diff master uri_upgrade
+
++rf URI                                              1.62 GAAS/URI-1.62.tar.gz
++rf URI::Escape                                      3.31 GAAS/URI-1.62.tar.gz
++rf URI::Heuristic                                   4.20 GAAS/URI-1.62.tar.gz
+...
+-rf URI                                              1.60 GAAS/URI-1.60.tar.gz
+-rf URI::Escape                                      3.31 GAAS/URI-1.60.tar.gz
+-rf URI::Heuristic                                   4.20 GAAS/URI-1.60.tar.gz
+</code>
+
+The output is similar to the diff(1) command. Records starting with a
+"+" were added and those starting with a "-" were removed.  You can
+see that modules from the URI-1.60 distribution have been replaced
+with modules from the URI-1.62 distribution.
+
+<h3>Installing From A Stack</h3>
+
+Once you have new modules on the "uri_upgrade" stack, you can try
+building your application by pointing cpanm at the stack.  Each stack
+is just a subdirectory inside the repository, so all you have to do
+is add it to the URL:
+
+<code>
+cpanm --mirror file://$HOME/repo/stacks/uri_upgrade --mirror-only My::App
+</code>
+
+If all the tests pass, then you can confidently upgrade URI to version
+1.62 in the "master" stack as well by using the <hl>pull</hl> command.  Since
+"master" is the default stack, you can omit the "--stack" paramter:
+
+<code>
+pinto -r ~/repo pull URI~1.62
+</code>
+
+<h2>Working With Pins</h2>
+
+Stacks are a great way to test the effect of changing your application
+dependencies.  But what if the tests didn't pass?  If the problem lies
+within My-App and you can quickly correct it, you might just modify
+your code, release version 2.0 of My-App, and then proceed to upgrade
+URI on the "master" stack.
+
+But if the issue is a bug in URI or it will take a long time to fix
+My-App, then you have a problem.  You don't want someone else to
+upgrade URI, nor do you want it to be upgraded inadvertently to
+satisfy some other prerequisite that My-App may have.  Until you know
+the problem is fixed, you need to prevent URI from being upgraded.
+This is what pins are for.
+
+<h3>Pinning A Module</h3>
+
+When you pin a module, that version of the module is forced to stay in
+a stack.  Any attempt to upgrade it (either directly or via another
+prerequisite) will fail.  To pin a module, use the <hl>pin</hl> command:
+
+<code>
+pinto -r ~/repo pin URI
+</code>
+
+If you look at the listing for the "master" stack again, you'll see
+something like this:
+
+<code>
+...
+rl  My::App                         1.0  JEFF/My-App-1.0.tar.gz
+rf! URI                            1.60  GAAS/URI-1.60.tar.gz
+rf! URI::Escape                    3.31  GAAS/URI-1.60.tar.gz
+...
+</code>
+
+The "!" near the beginning of a record indicates the module has been
+pinned.  If anyone attempts to upgrade URI or a add distribution that
+requires a newer version of URI, then Pinto will give a warning and
+refuse to accept the new distributions.  Notice that every module in
+the URI-1.60 distribution has been pinned, so it is impossible to
+partially upgrade a distribution (this situation could happen when a
+module moves into a different distribution).
+
+<h3>Unpinning A Module</h3>
+
+After a while, suppose you fix the problem in My-App or a new version
+of URI is released that fixes the bug.  When that happens, you can
+unpin URI from the stack using the <hl>unpin</hl> command:
+
+<code>
+pinto -r ~/repo unpin URI
+</code>
+
+At this point you're free to upgrade URI to the latest version
+whenever you're ready.  Just as with pinning, when you unpin a module
+it unpins every other module it the distribution as well.
+
+<h2>Using Pins And Stacks Together</h2>
+
+Pins and stacks are often used together to help manage change during
+the development cycle.  For example, you could create a stack called
+"prod" that contains your known-good dependencies.  At the same time,
+you could also create a stack called "dev" that contains experimental
+dependencies for your next release.  Initially, the "dev" stack is
+just a copy of the "prod" stack.
+
+As development proceeds, you may upgrade or add several modules on the
+"dev" stack.  If an upgraded module breaks your application, then
+you'll place a pin in that module on the "prod" stack to signal that
+it shouldn't be upgraded.
+
+<h3>Pins and Patches</h3>
+
+Sometimes you may find that a new version of a CPAN distribution has a
+bug but the author is unable or unwilling to fix it (at least not
+before your next release is due).  In that situation, you may decide
+to make a local patch of the CPAN distribution.
+
+So suppose that you forked the code for URI and made a local version
+of the distribution called URI-1.60_PATCHED.tar.gz.  You can add it to
+your repository using the <hl>add</hl> command:
+
+<code>
+pinto -r ~/repo add path/to/URI-1.60_PATCHED.tar.gz
+</code>
+
+In this situation, it is wise to pin the module as well, since you do
+not want it to be upgraded until you are sure that the new version
+from CPAN includes your patch or the author has fixed the bug by other
+means.
+
+<code>
+pinto -r ~/repo pin URI
+</code>
+
+When the author of URI releases version 1.62, you'll want to test it
+before deciding to unpin from your locally patched version.  Just as
+before, this can be done by cloning the stack with the <hl>copy</hl> command.
+Let's call it the "trial" stack this time:
+
+<code>
+pinto -r ~/repo copy master trial
+</code>
+
+But before you can upgrade URI on the "trial" stack, you'll have to
+unpin it there:
+
+<code>
+pinto -r ~/repo unpin --stack trial URI
+</code>
+
+Now you can proceed to upgrade URI on the stack and try building
+My::App like this:
+
+<code>
+pinto -r ~/repo pull --stack trial URI~1.62
+cpanm --mirror file://$HOME/repo/stacks/trial --mirror-only My::App
+</code>
+
+If all goes well, remove the pin from the "master" stack and pull the
+newer version of URI back into it.
+
+<code>
+pinto -r ~/repo unpin URI
+pinto -r ~/repo pull URI~1.62
+</code>
+
+<h2>Reviewing Past Changes</h2>
+
+As you've probably noticed by now, each command that changes the state
+of a stack requires a log message to describe it.  You can review
+those messages using the <hl>log</hl> command:
+
+<code>
+pinto -r ~/repo log
+</code>
+
+That should display something like this:
+
+<code>
+revision 4a62d7ce-245c-45d4-89f8-987080a90112
+Date: Mar 15, 2013 1:58:05 PM
+User: jeff
+
+     Pin GAAS/URI-1.59.tar.gz
+
+     Pinning URI because it is not causes our foo.t script to fail
+
+revision 4a62d7ce-245c-45d4-89f8-987080a90112
+Date: Mar 15, 2013 1:58:05 PM
+User: jeff
+
+     Pull GAAS/URI-1.59.tar.gz
+
+     URI is required for HTTP support in our application
+
+...
+</code>
+
+The header for each message shows who made the change and when it happened.
+It also has a unique identifier similar to Git's SHA-1 digests.  You can
+use these identifiers to see the diffs between different revisions or to
+reset the stack back to a prior revision [NB: this feature is not actually
+implemented yet].
+
+<h2>Conclusion</h2>
+
+In this tutorial, you've seen the basic commands for creating a Pinto
+repository and populating it with modules.  You've also seen how to
+use stacks and pins to manage your dependencies in the face of some
+common development obstacles.
+
+Each command has several options that were not discussed in this
+tutorial, and there are some commands that were not mentioned here at
+all.  So I encourage you to explore the manual pages for each command
+and learn more.
+
