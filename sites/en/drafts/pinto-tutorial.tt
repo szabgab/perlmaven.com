@@ -11,6 +11,13 @@
 
 =abstract start
 
+<i>
+This is a guest post by <a href="">Jeffrey Ryan Thalhammer</a>, author of Pinto
+and of Perl::Critic. Jeff is a ... TBD.
+Till May 7 Jeff is running a <a href="https://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint">fund-raiser</a>
+to finance the development of the feature that will allow you to <b>specify module version ranges in Pinto</b>.
+</i>
+
 One of the best things about Perl are all the open source modules that
 are available on CPAN.  But keeping up with all those modules is
 difficult.  Every week there are hundreds of new releases and you
