@@ -1,0 +1,71 @@
+=title Perl 5 Maven in LANGUAGE 
+=timestamp 2012-05-02T22:45:56
+=status show
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=index 0
+=archive 0
+=feed 0
+=comments 0
+=social 0
+
+<h2> Bonvenon estonteco Perl Maven! </h2>
+
+<div class="main-content">
+<div style="float:right; margin-left:10px;">
+<a href="/about"> <img width="54" height="54" src="/img/szabgab.png" alt="Gabor Szabo" /> </a> <br>
+</Div>
+<div>
+Mia nomo estas <a href="/about"> Gabor Szabo </a>. Mi estis uzante Perl ekde 1995, kaj instruante Perl en kompania klaso cxambroj ekde 2000. Mi amas faras klason-cxambro
+trejnado, sed bedauxrinde kiu limigas la nombron de personoj, kiujn mi povas atingi. Mi kreis cxi tiun lokon kaj la
+produktoj en tiu ejo por helpi vin uzi la Perl programlingvo por solvi problemojn. <br>
+Mi esperas ke vi trovas gxin utila.
+</Div>
+</Div>
+
+<div class="main-content">
+Se vi bezonas <b> subteni granda peco de programaro </b> skribita en Perl de aliaj personoj en la lastaj 5-10-15 jaroj,
+tio estas defio. Precipe se vi ne ricevas tauxgan trejnado en Perl. Vi probable limigita al
+specifa kaj malnova versio de Perl. Mi rekomendas ke vi kontrolu, la <a href="/perl-tutorial"> Perl lernilo </a>.
+Vi versxajne povas salti la parto pri instalo Perl, sed la resto de la lernilo estos grava por vi.
+Vi povas ankaux aligi al la <a href="/perl-maven-newsletter"> informilo </a> por akiri gxisdatigojn pri la novajn artikolojn dum ili
+estas eldonitaj.
+</Div>
+
+<div class="main-content">
+Se vi estas Unikso /Linukso <b> Sistemo Administranto </b> vi probable havas pli kontrolo super la versio de perl vi uzas,
+kaj vi probable skribos relative malgranda skriptoj. La <a href="/perl-tutorial"> Perl lernilo </a> povas esti bona komenco
+por vi kaj iuj el la ekzemploj en la <a href="/perl-maven-cookbook"> Cookbook </a> estos adekvataj tiel.
+</Div>
+
+<div class="main-content">
+Se vi laboras en la kampo de <b> Programaro Agordo Administrado </b> (eble nomita kiel oni <b> konstrui ingxeniero </b>)
+vi probable devos skribi kaj subteni ekigiloj (aux post-commit hokoj) kaj skribas skriptojn kiuj helpas per
+la Kontinua Integrigo. Estos specialaj artikoloj por vi. Uzu la
+<a href="/perl-maven-cookbook"> Perl Maven Cookbook </a>. Gxi eble havas kelkajn ekzemplojn por vi, ke povas esti utila.
+</Div>
+
+<div class="main-content">
+Perl estas ofte uzita en <b> Testo Auxtomatigo </b>. Se vi laboras en tiu kampo, aux se vi sxatus labori en tiu kampo
+(Estas timinda por trovi erarojn en fremdaj kodo :), tiam vi povas legi la <a href="/perl-tutorial"> Perl lernilo </a>
+kaj ankaux ekzistas libron vi povas aceti nomita <a href="/test-automation-using-perl-e-book"> Testo Auxtomatigo uzante
+Perl </a>.
+</Div>
+
+<div class="main-content">
+Se vi konstruas <b> novaj aplikoj retejo </b> - cxu private aux en kompanio - vi povas komenci per la legado de la
+artikolo komparanta <a href="/perl-cgi-mod-perl-psgi"> CGI, mod_perl kaj PSGI </a>. De tie vi povas iri en legado
+la generic <a href="/perl-tutorial"> Perl lernilo </a> kaj se vi aligxos al la <a
+href = "/perl-Maven-bulteno"> informilo </a>, vi estos sciigitaj
+kiam mi publikigas novan artikoloj pri <b> retejo disvolvigxon kun Perl </b>.
+</Div>
+
+<div class="main-content">
+Se iu el cxi sonas konata al vi tiam vi estas en la gxusta loko.
+Por komenci vi povus legi la <a href="/perl-tutorial"> Perl lernilo </a> kaj aligxu al la <a href="/perl-maven-newsletter"> informilo </a>.
+</Div>
+
+<a href="https://plus.google.com/111891839130546418347/" rel="publisher"> Trovu Perl Maven sur Google+ </a>
+

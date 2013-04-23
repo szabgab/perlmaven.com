@@ -1,9 +1,11 @@
 =title Perl-Editor
-=timestamp 2012-08-01T12:45:56
+=timestamp 2013-04-16T19:45:56
 =indexes IDE, editor, Padre, vim, emacs, Eclipse, Komodo
 =status show
+=original perl-editor
 =books beginner_book
 =author szabgab
+=translator mca
 =index 1
 =archive 1
 =feed 1
@@ -70,7 +72,7 @@ weil er sehr nützlich sein kann.
 
 <h2>Mac-OSX</h2>
 
-I habe keinen Mac, aber - was man allgemein hört - ist
+Ich habe keinen Mac, aber - was man allgemein hört - ist
 der <a href="http://macromates.com/">TextMate</a> der meistgenutzte
 Editor für Perl auf dem Mac.
 
@@ -120,5 +122,5 @@ der jedoch etwas Geld kostet.
 <h2>Demnächst</h2>
 
 Der nächste Teil im Tutorial ist ein Schritt zur Seite, um über
-<a href="/perl-on-the-command-line">Perl auf der Kommandozeile</a>
+<a href="/perl-auf-der-kommandozeile">Perl auf der Kommandozeile</a>
 zu sprechen.
