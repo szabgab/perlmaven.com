@@ -35,6 +35,7 @@
     <li><a href="/perl-cgi-mod-perl-psgi"> CGI, mod_perl, PSGI ?</a></li>
     <li><a href="/the-most-important-file-system-tools"> Perl5中19个最重要的文件系统工具</a></li>
     <li><a href="/appending-to-files"> 追加写文件 </a></li>
+    <li><a href="/pod-plain-old-documentation-of-perl"> Perl 文档 POD </a><li>
 </ul>
 
 For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
