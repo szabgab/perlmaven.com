@@ -63,29 +63,14 @@ D.h. ich werde Aufgabenstellungen formulieren, um diese dann mit den
 notwendigen Werkzeugen zu lösen. Wenn möglich, werde ich Übungen anbieten,
 mit denen Du das vertiefen kannst, was Du gerade gelernt hast.
 
-<h2>Übersetzungen</h2>
-
-Es sind einige Übersetzungen mit unterschiedlichem Fortschritt in Arbeit:
-<ul>
-  <li><a href="http://cn.perl5maven.com/perl-tutorial">Chinesisch (CN)</a></li>
-  <li><a href="http://tw.perl5maven.com/">Chinesisch (Taiwan)</a></li>
-  <li><a href="http://de.perl5maven.com/">Deutsch</a></li>
-  <li><a href="http://it.perl5maven.com/">Italienisch</a></li>
-  <li><a href="http://br.perl5maven.com/perl-tutorial">Portogiesisch</a></li>
-  <li><a href="http://ro.perl5maven.com/">Rumänisch</a></li>
-  <li><a href="http://ru.perl5maven.com/">Russisch</a></li>
-</ul>
-
-
-
 <p>
 <b>Einführung</b>
 <ol>
 <li><a href="/installation-und-ein-anfang-mit-perl">Installation von Perl, Ausgabe 'Hallo Welt', Sicherheitsnetz (use strict, use warnings)</a></li>
-<li><a href="http://perl5maven.com/perl-editor">Editoren, IDE und Entwicklungsumgebungen für Perl</a></li>
+<li><a href="/perl-editor">Editoren, IDE und Entwicklungsumgebungen für Perl</a></li>
 <li><a href="/perl-auf-der-kommandozeile">Perl auf der Kommandozeile</a></li>
 <li><a href="/perl-basis-und-cpan-modul-dokumentation">Perl-Basisdokumentation, CPAN-Modul-Dokumentation</a></li>
-<li><a href="http://perl5maven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
+<li><a href="/pod-plain-old-documentation-dokumentationsformat-von-perl">POD - Plain Old Documentation</a></li>
 <li><a href="http://perl5maven.com/debugging-perl-scripts">Debuggen von Perl-Skripten</a></li>
 </ol>
 

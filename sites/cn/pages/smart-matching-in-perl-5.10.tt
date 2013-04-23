@@ -64,7 +64,7 @@ my @c = qw(Foo Bar Moose Baz);
 <code lang="perl">
 42 ~~ [23, 17, 70] ;         # false
 42 ~~ [23, 17, 42, 70] ;     # true
-<code>
+</code>
 
 
 

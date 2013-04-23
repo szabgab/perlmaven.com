@@ -14,11 +14,7 @@
 
 =abstract start
 
-在这部分<a href="/perl-tutorial">Perl 教程</a> 我们会看到 <b>如何使用Perl追加写文件</b>.
-
-之前我们学习了 <a href="/writing-to-files-with-perl">如何写文件</a>.
-
-固然可以从零开始创建文件，但是总会有需求，在保证原文件不变的情况下向文件末尾追加内容。最突出的一个情况就是写日志文件。
+这部分<a href="/perl-tutorial">Perl 教程</a>中我们会看到 <b>如何使用Perl追加写文件</b>。在之前我们学习了<a href="/writing-to-files-with-perl">写文件</a>。固然可以从零开始新建文件，但是总会有需求：在保证原文件不变的情况下向文件末尾追加内容。最突出的一个情况就是写日志文件。
 
 =abstract end
 
@@ -30,12 +26,12 @@ open(my $fh, '>', 'report.txt') or die ...
 
 使用<hl>></hl>符号打开文件会删除原有的内容。
 
-如果想要在文件的末尾<b>追加</b>操作，可以使用两个大于号<h1>>></h1>，例如：
+如果想要在文件的末尾<b>追加</b>操作，可以使用两个大于号<hl>>></hl>，例如：
 <code lang="perl">
 open(my $fh, '>>', 'report.txt') or die ...
 </code>
 
-调用这个函数会以追加模式打开文件。这意味着文件内容原封不动，任何<hl>print()</hl> 或 <hl>say()</hl>向文件输出的内容会添加在文件末尾。
+调用这个函数会以追加模式打开文件。这样文件内容会原封不动，任何<hl>print()</hl> 或 <hl>say()</hl>向文件输出的内容会添加在文件末尾。
 
 完整示例：
 

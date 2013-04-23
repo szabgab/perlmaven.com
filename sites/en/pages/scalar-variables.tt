@@ -1,6 +1,6 @@
 =title Scalar variables
 =timestamp 2013-04-20T17:45:56
-=tags strict, my, undef, say, +, x, ., sigil, $, @, %, FATAL warnings
+=indexes strict, my, undef, say, +, x, ., sigil, $, @, %, FATAL warnings
 =status show
 =books beginner_book
 =author szabgab
