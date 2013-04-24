@@ -1,7 +1,8 @@
 =title Perl 陣列中的獨特值
-=timestamp 2012-09-20T21:42:56
+=timestamp 2013-04-24T08:42:56
 =indexes unique, uniq, distinct, filter, grep, array, List::MoreUtils, duplicate
 =status show
+=original unique-values-in-an-array-in-perl
 =books beginner_book
 =author szabgab
 =translator gugod
