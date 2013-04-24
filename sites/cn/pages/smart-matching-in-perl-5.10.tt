@@ -1,7 +1,8 @@
 =title Smart Matching in Perl 5.10
-=timestamp 2012-07-06T11:45:56
+=timestamp 2013-04-21T11:45:01
 =indexes ~~, smart match, v5.10, 5.010
 =status show
+=original smart-matching-in-perl-5.10
 =author szabgab
 =translator swuecho
 =index 1
@@ -15,7 +16,7 @@ Perl 5.10 于 Perl 20 周年发布（2007年 12月 18 日）。该版本增添�
 
 在 <a href="/what-is-new-in-perl-5.10--say-defined-or-state">What's new in Perl 5.10? say, //, state</a> 一文中，
 我已经写了一些。接下来，我们学习 <b>Smart Matching</b>。
- 
+
 =abstract end
 
 Perl的独特之处在于，所有的 Perl 操作符都作用于特定的情形，如果其操作子不符合此情形，Perl会自动转化。比如 1 + 1 结果为 2，多数语言都是这样，
@@ -63,7 +64,7 @@ my @c = qw(Foo Bar Moose Baz);
 <code lang="perl">
 42 ~~ [23, 17, 70] ;         # false
 42 ~~ [23, 17, 42, 70] ;     # true
-<code>
+</code>
 
 
 
@@ -80,7 +81,7 @@ $a ~~ $b 的右边也可以是 Hash，~~ 的作用是，查看 $a 属于 Hash �
 </code>
 
 
-'a' 与 {a => 19, b => 23} 的其中一个 key ‘a’ 相同，所以结果是 1。 
+'a' 与 {a => 19, b => 23} 的其中一个 key ‘a’ 相同，所以结果是 1。
 
 
 <h2> 3. Any ~~ CODE </h2>

@@ -9,8 +9,10 @@ use File::Basename qw(basename dirname);
 use Getopt::Long   qw(GetOptions);
 
 GetOptions(
-	"draft" => \my $draft,
-	"help"  => \my $help,
+	"draft"      => \my $draft,
+	'todo'       => \my $todo,
+	"help"       => \my $help,
+	"site=s"     => \my $site,
 	) or usage();
 usage() if $help;
 
@@ -37,8 +39,10 @@ say '-' x 30;
 my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt products.tt);
 {
 	my %english = map { substr(basename($_), 0, -3), 1 } glob "$root/sites/en/pages/*.tt";
+	my %sitemap;
 	foreach my $lang (@languages) {
 		next if $lang eq 'en';
+		next if $site and $lang ne $site;
 
 		my %authors;
 		open my $au, '<', "$root/sites/$lang/authors.txt" or die;
@@ -62,6 +66,9 @@ my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt prod
 
 		my @pages = glob "$root/sites/$lang/pages/*.tt";
 		push @pages, glob "$root/sites/$lang/done/*.tt";
+		if ($draft) {
+			push @pages, glob "$root/sites/$lang/drafts/*.tt";
+		}
 		next if not @pages;
 		foreach my $file (@pages) {
 			next if $META_PAGE{ basename $file };
@@ -71,10 +78,10 @@ my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt prod
 			while (my $line = <$fh>) {
 				chomp $line;
 				if ($line =~ /^=original\s+(\S+)/) {
-					$original = $1;
+					$sitemap{$lang}{$file}{original} = $original = $1;
 				}
 				if ($line =~ /^=translator\s+(\S+)/) {
-					$translator = $1;
+					$sitemap{$lang}{$file}{translator} = $translator = $1;
 				}
 			}
 			close $fh;
@@ -92,6 +99,34 @@ my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt prod
 			}
 		}
 	}
+
+	if ($site and $todo) {
+		say "\nDONE or DRAFT";
+		say '-' x 30;
+		# crete original-> translation mapping
+		#die Dumper \%sitemap;
+		my %translated = map { $sitemap{$site}{$_}{original} => $_} keys %{ $sitemap{$site}};
+		#die Dumper \%translated;
+		foreach my $article ( keys %english ) {
+			if ($translated{$article}) {
+				my $folder = basename dirname $translated{$article};
+				next if $folder eq 'pages';
+				printf "%s =>\n      %-90s  (%-5s) (%s)\n",
+					$article,
+					basename($translated{$article}),
+					$folder,
+					$sitemap{$site}{ $translated{$article} }{translator};
+				delete $english{$article};
+			}
+		}
+		say "\nTODO";
+		say '-' x 30;
+		foreach my $article ( sort keys %english ) {
+			say $article;
+		}
+	}
+
+
 }
 say "\nDONE";
 exit;
@@ -100,8 +135,13 @@ exit;
 sub usage {
 	die <<"END_USAGE";
 Usage: $0
-          --draft    to also show the draft folder
+          --draft      to also show the draft folder
           --help
+          --site CC    Where CC is a code in the sites/ directory
+                       to restrict the result to that site
+
+          --todo       Show all the files in progress (with translator)
+                       and list all the files not yet in progress.
 END_USAGE
 }
 
@@ -111,6 +151,7 @@ sub show {
 	printf "\nList items in %s folder\n", uc $folder;
 	say '-' x 30;
 	foreach my $lang (@languages) {
+		next if $site and $lang ne $site;
 		my @files = map { basename $_ } glob "$root/sites/$lang/$folder/*.tt";
 		next if not @files;
 		say "Language $lang";

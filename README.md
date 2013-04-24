@@ -94,7 +94,7 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 * Romaninan               ro
 * Russian                 ru
 * Spanish                 es
-
+* Telugu                  te
 
 
 * The file names (that become the URLs) should be in LOCAL_LANGUAGE, but use only ASCII characters.
@@ -148,6 +148,22 @@ any attention. Spams are usually filtered by Disqus, but a few can slip through 
 an occassional false positive, something that is marked as spam but it isn't really.
 The moderator also has to make sure that the comments stay civil and not hesitate to remove
 irrelevant or offending comments.
+
+Getting started with the translation
+------------------------------------
+* Sign up to Github, configure Git on your computer (name, email)
+* Fork the https://github.com/szabgab/perl5maven.com repository and clone the fork to your computer
+* Check on https://meta.wikimedia.org/wiki/List_of_Wikipediasi what sould be the hostname for the language
+  and talk to Gabor about this.
+* cp -r skeleton sites/CC     (where CC is the hostname selected)
+* translate the first page sites/en/pages/installing-perl-and-getting-started.tt as
+                           sites/CC/done/installing-perl-and-getting-started.tt
+  or as                    sites/CC/done/TRANSLATD-BUT-TRANSLITERATED-TITLE.tt
+  as is acceptable in other sites in your language.
+* Add =original and =translator entries to the translated file
+* Add yourself to the sites/CC/authors.txt file and add a picture of yourself to the sites/CC/img/ folder.
+* Update sites/CC/pages/perl-tutorial.tt to include the page in the commented-out section.
+* push your changes to your forked repository and send a pull request
 
 
 PROMOTION

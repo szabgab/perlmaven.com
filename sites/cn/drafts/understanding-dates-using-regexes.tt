@@ -3,6 +3,7 @@
 =indexes regex, regular expression, ?, m, \, /, next
 =status show
 =author szabgab
+=translator swuecho
 =index 1
 =archive 1
 =feed 1
@@ -11,12 +12,15 @@
 
 =abstract start
 
-We have a file that has lots of lines like this, and we would you read and understand the data.
-Part of this understanding is creating a data structure to represent the date.
+TODO:: 跳跃性太强。先翻译基本正则式再说。
+
+==================
+假设我们有一个文件，每一行的格式如下。我们想对这个文件进行处理，得到我们想要的信息。不可或缺的步骤就是在Perl中创建相应的数据结构来表示这些数据。
 
 <code>
 2012-07-04T15:23:45   29.13 37.42 ....
 </code>
+
 
 =abstract end
 
@@ -24,10 +28,14 @@ The lines actually have a lot more data, but at least for now, we are only inter
 first part representing the date. We would like to take it apart to have variables
 <hl>$year</hl>, <hl>$month</hl>, <hl>$day</hl>, <hl>$hour</hl>, <hl>minute</hl>, and <hl>$second</hl>
 
+我们先看这行代码的第一部分，显而易见，这是一个日期，包括年月日，时分秒。我们可以用六个标量来表示这个日期。
+
 <h2>Going over the file</h2>
 
-Before starting to deal with the dates, first let's see how do we go over the file.
+<h2>按行读取文件</h2>
 
+Before starting to deal with the dates, first let's see how do we go over the file.
+回到我们假设的文件上来，我们看一下怎么按行读取文件。
 <code lang="perl">
 use strict;
 use warnings;
@@ -41,8 +49,13 @@ while (my $line = <$fh>) {
 }
 </code>
 
+前四行很容易理解。
+
+我们看下第五行，shift 相当于 shift @ARGV, 在这里我们省略了，你应该已经熟悉了Perl 中这样的用法。$0 是一个特殊变量，表示运行的程序自己的文件名。如果你提供了
+
 After 4 lines of boiler-plate code, we get the name of the file containing the dates from the command line.
 If no file was provided we call <hl>die</hl> and let the user know we expect the name of the file.
+
 
 Save the above script as date.pl and try running <b>perl date.pl</b>.
 You will get <b>Usage: dates.pl FILE</b>.
@@ -61,14 +74,17 @@ line to the screen. From now on we will deal with the code that's inside the blo
 If you are wondering why do I use a variable called <hl>$line</hl> and not
 <a href="/the-default-variable-of-perl">$_, the default variable of Perl</a>, then please read that explanation.
 
-<h2>Matching the date</h2>
+<h2>用正则式匹配日期</h2>
 
 We can use a regex to match this date. Usually I'd start from left to right trying to match.
 The code will look like
 
+我们可以用正则式匹配日期。这里给出一个正则式的模板：
 <code lang="perl">
   $line =~ //
 </code>
+
+正则式放在 // 中。
 
 <code>
 2012-07-04T15:00:00
@@ -77,6 +93,10 @@ The code will look like
 We know that the date starts at the beginning of each line so we can start our regex with <hl>^</hl>.
 Then we have four digits. Each digit is captured using <hl>\d</hl> so we have.
 
+下面我们根据需要来构建正则式。因为日期从每行的第一个字符开始，所以，我们的正则式的第一部分就是 <hl>^</hl>，
+它表示从一行的开始进行匹配。然后，是<hl>\d\d\d\d</hl>, 因为从一行的开始，有四个连续的数字。<hl>\d</hl> 表示任一数字。
+放在一起就是^\d\d\d\d。
+
 <code lang="perl">
   $line =~ /^\d\d\d\d/
 </code>
@@ -84,6 +104,7 @@ Then we have four digits. Each digit is captured using <hl>\d</hl> so we have.
 Let's see how can we capture this and display. For this we put part of the regex in parentheses.
 This is the part that is supposed to match the year and assign the whole whole expression
 to a list of scalar variables. (Well, in this case that's a list of one variable)
+
 
 The parentheses will capture the match and let the expression return the value.
 
@@ -236,5 +257,6 @@ If that still does not work then we complain and call <hl>next</hl> to go to the
 line.
 
 If everything was fine we print the date with spaces between the values.
+
 
 

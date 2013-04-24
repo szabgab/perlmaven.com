@@ -1,40 +1,86 @@
-=title Tutorial Perl em Português
-=timestamp 2012-05-02T22:45:56
+=title Perl tutorial
+=timestamp 2012-07-06T11:45:56
+=description Tutorial Perl disponível gratutamente para aqueles que precisam mantér código escrito em Perl, para aqueles que apenas escrevem pequenos scripts e para desenvolvedores de novas aplicações.
+=tags training, treinamento, course, curso, beginner, iniciante, tutorial
 =status show
 =original perl-tutorial
-=showright 1
-=newsletter 0
-=published 0
-=author 0
-=translator 0
+=author szabgab
+=translator leprevost
 =index 0
 =archive 0
 =feed 0
 =comments 0
 =social 1
 
+O tutorial Perl Maven irá lhe ensinar o básico sobre a programação em Perl.
+Você será capaz de escrever scripts simples, analisar arquivos de logs e escrever arquivos do tipo CSV.
+Só para mencionar algumas atividades.
 
+Você irá aprender como utilizar o CPAN e vários outros módulos específicos.
+
+Será uma excelente base para você se apoiar.
+
+A versão on-line gratuita do tutorial está em desenvolvimento constante. Muitas das partes já estão prontas, e 
+em adição, muitas estão sendo liberadas semanalmente. Se você têm interesse em ser avisado quando novos capítulos
+do tutorial são lançados, por favor inscreva-se na <a href="/register">mailing list</a>.
+
+Há ainda o <a href="/beginner-perl-maven-e-book">e-book</a> correspondente ao material do tutorial, 
+disponível para compra (somente en inglês), em adição ao tutorial. O livro ainda inclui <i>slides</i> sobre o 
+material apresentado tópicos exclusivos e exercícios.
+
+Você pode acompanhar também as vídeo aulas (também em inglês) 
+<a href="/beginner-perl-maven-video-course">video-course</a> que incluem mais de 20 aulas, somando num total de
+mais de 5 horas de vídeo. O pacote inclui também o código fonte dos exemplos e exercícios.
+
+<h2>Tutorial Perl Maven on-line e Gratuito para Iniciantes</h2>
+
+Neste tutorial você irá aprender como utilizar a lingaugem de programação Perl 5
+
+Você irá aprender tanto características gerais quanto extensões e bibliotecas, ou como os programadores
+Perl chamam, <b>módulos</b>. Nós iremos ver sobre os módulos básicos incluídos no núcleo da linguagem
+e módulos desenvolvidos por terceiros, disponíveis pelo <b>CPAN</b>
+
+Quando possível irei tentar ensinar os assuntos numa forma orientada à tarefas.
+Irei elaborar tarefas e então iremaos aprender as ferramentas necessárias para resolver os problemas.
+Quando possível irei também direcionar você a alguns exercícios para que possa praticar o que aprendeu.
+
+<p>
+<b>Introdução</b>
+<ol>
+<li><a href="/instalando-o-perl">Instalando o Perl, imprimindo “Olá Mundo", Segurança (use strict, use warnings)</a></li>
+<li><a href="/editores-perl">Editores, IDEs e ambientes de desenvolvimento para Perl</a></li>
+<li><a href="/perl-na-linha-de-comandos">Perl na linha de comandos</a></li>
+<li><a href="/documentacao-do-perl-e-modulos-cpan">Documentação do núcleo da linguagem e de módulos do CPAN</a></li>
+<li><a href="/documentacao-em-perl-com-pod">Documentação em Perl com POD - Plain Old Documentation</a></li>
+<li><a href="/debugging-perl-scripts">Debugging Perl scripts</a></li>
+</ol>
+
+<b>Escalares</b>
+<ol>
+<li>Menssagens de Erro e Avisos Comuns<br />
 <ul>
-  <li><a href="/instalando-o-perl">Instalando o Perl, imprimindo “Olá Mundo", Segurança (use strict, use warnings)</a></li>
-  <li><a href="/editores-perl">Editores, IDEs e ambientes de desenvolvimento para Perl</a></li>
-  <li><a href="/uso-de-valor-nao-inicializado">Uso de valor não inicializado</a></li>
-  <li><a href="/perl-na-linha-de-comandos">Perl na linha de comandos</a></li>
-  <li><a href="/conversao-automatica-entre-valores">Conversão Automática entre texto e número em Perl</a></li>
-  <li><a href="/documentacao-do-perl-e-modulos-cpan">Documentação do núcleo da linguagem e de módulos do CPAN</a></li>
-  <li><a href="/valores-booleanos-em-perl">Valores Booleanos em Perl</a></li>
-  <li><a href="/undef-e-definido-em-perl">undef, valor inicial e a função defined em Perl</a></li>
-  <li><a href="/documentacao-em-perl-com-pod">Documentação em Perl com POD - Plain Old Documentation</a></li>
-  <li><a href="/palavras-soltas-em-perl">Palavra solta (bareword) em Perl</a></li>
-  <li><a href="/categorias-desconhecidas-de-alertas">Categoria de alertas desconhecida</a></li>
-  <li><a href="/laco-while"> O laço while</a></li>
-
-<!--
-  <li><a href="/escrevendo-em-arquivos-com-perl">Escrevendo em Arquivos com Perl</a></li>
-  <li><a href=""></a></li>
-  <li><a href="/funcoes-para-manipular-texto-lc-uc-index-substr">Funções para Manipular Texto: length, lc, uc, index, substr</a></li>
--->
-
+<li><a href="/uso-de-valor-nao-inicializado">Uso de valor não inicializado</a></li>
+<li><a href="/palavras-soltas-em-perl">Palavra solta (bareword) em Perl</a></li>
+<li><a href="/categorias-desconhecidas-de-alertas">Categoria de alertas desconhecida</a></li>
 </ul>
+</li>
+<li><a href="/conversao-automatica-entre-valores">Conversão Automática entre texto e número em Perl</a></li>
+<li><a href="/valores-booleanos-em-perl">Valores Booleanos em Perl</a></li>
+<li><a href="/undef-e-definido-em-perl">undef, valor inicial e a função defined em Perl</a></li>
+<li><a href="/funcoes-para-manipular-texto-lc-uc-index-substr">Funções para manipular texto: length, lc, uc, index, substr</a></li>
+<li><a href="/jogo-de-adivinhar-numeros">O jogo de adivinhar números (rand, int)</a></li>
+<li><a href="/laco-while"> O laço while</a></li>
+</ol>
 
-Veja também o artigo original acessível em <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial em Inglês</a>
+<b>Arquivos</b>
+<ol>
+<li>die, warn and exit</li>
+<li><a href="/escrevendo-em-arquivos-com-perl">Escrevendo em arquivos com Perl</a></li>
+</ol>
 
+<a href="/acrescentando-em-arquivos">Acrescentando texto em arquivos (appending)</a>
+
+<hr />
+
+Apenas um lembrete, estão disponíveis para <a href="/products">compra</a> os <a href="/beginner-perl-maven-e-book">e-books</a> e
+<a href="/beginner-perl-maven-video-course">as vídeo aulas</a>.

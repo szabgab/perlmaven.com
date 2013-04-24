@@ -1,5 +1,5 @@
 =title Acrescentando texto em arquivos (appending)
-=timestamp 2013-03-15T07:30:01
+=timestamp 2013-04-23T22:30:01
 =indexes files, append, acrescentar, open, >>
 =status show
 =original appending-to-files
@@ -16,7 +16,7 @@
 
 Neste capítulodo <a href="/perl-tutorial">tutorial Perl</a> nós iremos ver <b>como acrescentar informação em arquivos existentes utilizando Perl</b>.
 
-No episódio anterior nós aprendemos <a href="/writing-to-files-with-perl">como escrever em arquivos</a>.
+No episódio anterior nós aprendemos <a href="/escrevendo-em-arquivos-com-perl">como escrever em arquivos</a>.
 Isso é muito útil quando estamos criando um arquivo, mas há casos onde nós desejamos manter o arquivo original, 
 e apenas adicionar novas linhas a ele.
 
