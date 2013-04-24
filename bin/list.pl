@@ -32,6 +32,7 @@ if ($draft) {
 	show('drafts');
 }
 
+my %authors = read_authors();
 
 # collect all the english pages
 say "\nMinor issues";
@@ -44,25 +45,6 @@ my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt prod
 		next if $lang eq 'en';
 		next if $site and $lang ne $site;
 
-		my %authors;
-		open my $au, '<', "$root/sites/$lang/authors.txt" or die;
-		while (my $line = <$au>) {
-			chomp $line;
-			my ($nick, $name, $img, $url) = split /;/, $line;
-			if (not defined $url) {
-				print "Missing URL for $line in authors.txt of $lang\n";
-				$url = 'Unreal';
-			} elsif ($url !~ m{^https://plus\.google\.com/\d+$}) {
-				print "Not G+ '$url' in authors.txt for $lang\n";
-				$url = 'Unreal';
-			}
-			$authors{$nick} = {
-				name => $name,
-				img  => $img,
-				url  => $url,
-			};
-		}
-		close $au;
 
 		my @pages = glob "$root/sites/$lang/pages/*.tt";
 		push @pages, glob "$root/sites/$lang/done/*.tt";
@@ -159,4 +141,26 @@ sub show {
 	}
 }
 
+sub read_authors {
+	my %autho;
+	open my $au, '<', "$root/authors.txt" or die;
+	while (my $line = <$au>) {
+		chomp $line;
+		my ($nick, $name, $img, $url) = split /;/, $line;
+		if (not defined $url) {
+			print "Missing URL for $line in authors.txt\n";
+			$url = 'Unreal';
+		} elsif ($url !~ m{^https://plus\.google\.com/\d+$}) {
+			print "Not G+ '$url' in authors.txt\n";
+			$url = 'Unreal';
+		}
+		$autho{$nick} = {
+			name => $name,
+			img  => $img,
+			url  => $url,
+		};
+	}
+	close $au;
+	return %autho;
+}
 
