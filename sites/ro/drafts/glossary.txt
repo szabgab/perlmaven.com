@@ -6,3 +6,6 @@ directory        = director, s. n., pl. directoare
 file handle      = ?referință mâner?
 out of scope     = ?nu mai sunt vizibile?
 to print         = ?a printa?
+repository       = depozit, magazie, ?repertoriu?
+release          = lansare, punere în circulație
+prompted         = solicitat

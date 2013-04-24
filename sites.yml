@@ -18,6 +18,10 @@ fr:
   url: http://fr.perl5maven.com/
   english: French
   name: Français
+he:
+  url: http://he.perl5maven.com/
+  english: Hebrew
+  name: עברית
 it:
   url: http://it.perl5maven.com/
   english: Italian
