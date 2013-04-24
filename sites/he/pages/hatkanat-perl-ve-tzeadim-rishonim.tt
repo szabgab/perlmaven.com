@@ -6,11 +6,11 @@
 =books beginner_book
 =author szabgab
 =translator bruck
-=index 0
-=archive 0
-=feed 0
+=index 1
+=archive 1
+=feed 1
 =comments 0
-=social 0
+=social 1
 
 =abstract start
 
