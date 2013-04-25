@@ -332,33 +332,35 @@ para a versão 1.62 na stack "master", utilizando o comando <hl>pull</hl>. Como
 pinto -r ~/repo pull URI~1.62
 </code>
 
-<h2>Working With Pins</h2>
+<h2>Trabalhando com Pins (fixadores)</h2>
 
-Stacks are a great way to test the effect of changing your application
-dependencies.  But what if the tests didn't pass?  If the problem lies
-within My-App and you can quickly correct it, you might just modify
-your code, release version 2.0 of My-App, and then proceed to upgrade
-URI on the "master" stack.
+Stacks são ótimas formas de você testar o efeito que ocorre com mudanças
+nas dependências de suas aplicações. Mas e se os testes não passarem?
+Se o problema reside dentro do My-App você pode rapidamente corrigi-lo,
+e em seguida lançar a versão 2.0 do My-App, e então, proceguir com a atualização
+do URI no stack "master".
 
-But if the issue is a bug in URI or it will take a long time to fix
-My-App, then you have a problem.  You don't want someone else to
-upgrade URI, nor do you want it to be upgraded inadvertently to
-satisfy some other prerequisite that My-App may have.  Until you know
-the problem is fixed, you need to prevent URI from being upgraded.
-This is what pins are for.
+Mas e se a origem do <i>bug</i> está no URI então irá levar um bom tempo até
+que o My-App seja corrigido, e você agora tem um problema.
+Você não que que outra pessoa qualquer atualize o módulo URI ou que ele seja
+atualizado inadvertidamente para satisfazer algum outro requisito que o My-App
+possa ter. Até que você saiba que o problema fora corrigido, você precisará 
+impedir que o módulo URI seja atualziado.
+É para isso que os pins servem.
 
-<h3>Pinning A Module</h3>
+<h3>Fixando um Módulo</h3>
 
-When you pin a module, that version of the module is forced to stay in
-a stack.  Any attempt to upgrade it (either directly or via another
-prerequisite) will fail.  To pin a module, use the <hl>pin</hl> command:
+Quando você utiliza um pin (fixador) em um módulo, aquela versão do módulo é
+obrigada a se manter no stack. Qualquer tentativa de atualizar o módulo 
+(tanto diretamente quanto indiretamente) irá falhar. Para fixar um módulo,
+utilize o comando <hl>pin</hl>:
 
 <code>
 pinto -r ~/repo pin URI
 </code>
 
-If you look at the listing for the "master" stack again, you'll see
-something like this:
+Se vocẽ observar a listagem do stack "master" novamente, irá observar 
+algo como isso:
 
 <code>
 ...
@@ -368,13 +370,13 @@ rf! URI::Escape                    3.31  GAAS/URI-1.60.tar.gz
 ...
 </code>
 
-The "!" near the beginning of a record indicates the module has been
-pinned.  If anyone attempts to upgrade URI or a add distribution that
-requires a newer version of URI, then Pinto will give a warning and
-refuse to accept the new distributions.  Notice that every module in
-the URI-1.60 distribution has been pinned, so it is impossible to
-partially upgrade a distribution (this situation could happen when a
-module moves into a different distribution).
+O símbolo "!" próximo ao início do registro indica que o módulo está
+fixado. Se alguém tentar atualizar o módulo URI ou adicionar uma distribuição
+que exige uma versão mais nova do módulo URI, então você receberá um aviso, 
+não sendo possível adicionar a nova distribuição. Note que todo módulo na
+distribuição URI-1.60 está fixado, então é impossível atualizar parcialmente
+a distribuição (essa situação pode acontecer quando um módulo entra em uma
+distribuição diferente).
 
 <h3>Unpinning A Module</h3>
 
