@@ -263,50 +263,55 @@ diese zu testen, bevor jeder dazu gezwungen ist, eine neuere Version
 zu nutzen. Genau das ist es, wofür "Stacks" entworfen wurden.
 
 
-All CPAN-like repositories have an index which maps the latest version
-of each module to the archive that contains it.  Usually, there is
-only one index per repository.  But in a Pinto repository, there can
-be many indexes.  Each of these indexes is called a <b>"stack"</b>.  This
-allows you to create different stacks of dependencies within a single
-repository.  So you could have a "development" stack and a
-"production" stack, or a "perl-5.8" stack and a "perl-5.16" stack.
-Whenever you add or upgrade a module, it only affects one stack.
+Alle CPAN-ähnlichen Repositorys haben einen Index, in dem verzeichnet ist,
+n welchem Archiv die aktuellste Version eines Moduls enthalten ist.
+Normalerweise gibt es nur einen Index pro Repository. In einem Pinto-Repository
+können hingegen mehrere Indizes vorhanden sein. Jeder dieser Indizes
+wird als <b>"stack"</b> bezeichnet. Das erlaubt Dir verschiedene
+Abhängigkeitsbäume innerhalb eines Repositorys aufzubauen. So kannst
+Du z.B. einen Entwicklungsstack neben einem Produktivstack haben
+oder einen "perl-5.8"-Stack neben einem  "perl-5.16"-Stack.
+Immer wenn Du ein Modul auf den neuesten Stand bringst, betrifft
+diese immer genau einen Stack.
 
-But before going further, you need to know about the default stack.
-For most operations, the name of the stack is an optional parameter.
-So if you do not specify a stack explicitly, then the command is
-applied to whichever stack is marked as the default.
 
-In any repository, there is never more than one default stack.  When
-we created this repository, a stack called "master" was also created and
-marked as the default.  You can change the default stack or change the
-name of a stack, but we won't go into that here.  Just remember that
-"master" is the name of the stack that was created when the repository
-was first initialized.
+Aber bevor wir das vertiefen, muss Du über den Standard-Stack Bescheid
+wissen. Bei den meisten Befehlen ist die Angabe des Stacks optional.
+D.h. sobald Du keinen Stack explizit angibst, bezieht sich ein Befehl
+auf den als Standard markierten Stack.
 
-<h3>Creating A Stack</h3>
+In jedem Repository gibt es nie mehr als einen Standard-Stack. Als
+wir obiges Repository eingerichtet haben, wurde ebenfalls ein Stack mit
+dem Namen "master" eingerichtet und als Standard gesetzt. Man kann
+den Standard-Stack ändern oder den Namen eines Stacks ändern. Darauf
+gehen wir aber hier nicht ein. Du solltest Dir nur bewusst machen, dass
+"master" der Name des Standard-Stacks ist, der beim Einrichten des
+Repositorys angelegt wurde.
 
-Suppose your repository contains version 1.60 of URI but version 1.62
-has been released to the CPAN, just like before.  You want to try
-upgrading, but this time you're going to do it on a separate stack.
+<h3>Einen Stack anlegen</h3>
 
-Thus far, everything you've added or pulled into the repository has
-gone into the "master" stack.  So we're just going to make a clone
-of that stack using the <hl>copy</hl> command:
+Geh nun - wie vorhin - davon aus, dass Dein Repository Version 1.60 des URI-Moduls enthält,
+aber Version 1.62 im CPAN veröffentlicht wurde. Du möchtest das Modul
+auf den neuesten Stand bringen, aber diesmal unter Zuhilfenahme eines
+separaten Stacks.
+
+Bis jetzt ging alles, was Du zum Repository hinzugefügt oder "gepullt"
+hattest, in den "master"-Stack. Daher werden wir nun einen Klon
+dieses Stacks mit Hilfe des <hl>copy</hl>-Befehls anlegen:
 
 <code>
 pinto -r ~/repo copy master uri_upgrade
 </code>
 
-This creates a new stack called "uri_upgrade".  If you want to see the
-contents of that stack, just use the <hl>list</hl> command with the "--stack"
-option:
+Dieser Befehl legt einen neuen Stack mit dem Namen "uri_upgrade" an. Wenn Du
+den Inhalt dieses Stacks sehen willst, benutze das <hl>list</hl>-Kommando
+mit der Option "--stack": 
 
 <code>
 pinto -r ~/repo list --stack uri_upgrade
 </code>
 
-The listing should be identical to the "master" stack:
+Die Auflistung sollte identisch zu der vom "master"-Stack sein:
 
 <code>
 rl  My::App                         1.0  JEFF/My-App-1.0.tar.gz
@@ -314,18 +319,18 @@ rf  URI                            1.60  GAAS/URI-1.60.tar.gz
 ...
 </code>
 
-<h3>Upgrading A Stack</h3>
+<h3>Einen Stack auf den neuesten Stand bringen</h3>
 
-Now that you've got a separate stack, you can try upgrading URI.  Just
-as before, you'll use the <hl>pull</hl> command.  But this time, you'll tell
-Pinto to pull the modules into the "uri_upgrade" stack:
+Nachdem Du nun einen separaten Stack hast, kannst Du das Modul URI erneuern.
+Wie zuvor, musst Du den <hl>pull</hl>-Befehl benutzen. Aber dieses Mal teilst
+Du Pinto mit, dass es die Module in den Stack "uri_upgrade" einspielen soll:
 
 <code>
 pinto -r ~/repo pull --stack uri_upgrade URI~1.62
 </code>
 
-We can compare the "master" and "uri_upgrade" stacks using the "diff"
-command:
+Wir können den "master"- und "uri_upgrade"-Stack mit dem Befehl "diff"
+vergleichen:
 
 <code>
 pinto -r ~/repo diff master uri_upgrade
@@ -339,57 +344,63 @@ pinto -r ~/repo diff master uri_upgrade
 -rf URI::Heuristic                                   4.20 GAAS/URI-1.60.tar.gz
 </code>
 
-The output is similar to the diff(1) command. Records starting with a
-"+" were added and those starting with a "-" were removed.  You can
-see that modules from the URI-1.60 distribution have been replaced
-with modules from the URI-1.62 distribution.
+Die Ausgabe ist ähnlich der des diff(1)-Kommandos. Einträge, die mit einem
+"+" beginnen, wurden hinzugefügt, die, die mit einem "-" beginnen,
+wurden entfernt. Du kannst erkennen, dass die Module der URI-1.60-Distribution
+durch die Module der URI-1.62-Distribution ersetzt wurden.
 
-<h3>Installing From A Stack</h3>
+<h3>Installation aus einem Stack heraus</h3>
 
-Once you have new modules on the "uri_upgrade" stack, you can try
-building your application by pointing cpanm at the stack.  Each stack
-is just a subdirectory inside the repository, so all you have to do
-is add it to the URL:
+Sobald Du neue Module in Deinem "uri_upgrade"-Stack hast, kannst Du 
+versuchen, Deine Applikation zu bauen, indem Du cpanm auf diesen
+Stack verweist. Jeder Stack ist nichts anderes als ein Unterverzeichnis
+im Repository. Daher musst Du nur den Stack-Namen an die Quell-URL
+anhängen:
 
 <code>
 cpanm --mirror file://$HOME/repo/stacks/uri_upgrade --mirror-only My::App
 </code>
 
-If all the tests pass, then you can confidently upgrade URI to version
-1.62 in the "master" stack as well by using the <hl>pull</hl> command.  Since
-"master" is the default stack, you can omit the "--stack" paramter:
+Wenn all Deine Tests bestanden wurden, kannst Du getrost das Modul URI
+auf Version 1.62 im "master"-Stack mit dem jetzt schon bekannten Befehl <hl>pull</hl> anheben.
+Nachdem "master" der Standard-Stack ist, brauchst Du den Parameter "--stack"
+nicht angeben:
 
 <code>
 pinto -r ~/repo pull URI~1.62
 </code>
 
-<h2>Working With Pins</h2>
+<h2>Das Arbeiten mit "Pins"</h2>
 
-Stacks are a great way to test the effect of changing your application
-dependencies.  But what if the tests didn't pass?  If the problem lies
-within My-App and you can quickly correct it, you might just modify
-your code, release version 2.0 of My-App, and then proceed to upgrade
-URI on the "master" stack.
+Stacks sind eine großartige Möglichkeit zu testen, wie sich die
+Änderung der Applikationsabhängigkeiten auswirkt. Aber was ist,
+wenn die Tests nicht bestanden wurden? Wenn das Problem in
+My-App liegt und Du in der Lage bist, das Problem schnell zu korrigieren,
+dann wirst Du einfach Deinen Code ändern, die Version 2.0 von My-App
+veröffentlichen und mit dem Erneuern des Pakets URI im Stack
+"master" weitermachen.
 
-But if the issue is a bug in URI or it will take a long time to fix
-My-App, then you have a problem.  You don't want someone else to
-upgrade URI, nor do you want it to be upgraded inadvertently to
-satisfy some other prerequisite that My-App may have.  Until you know
-the problem is fixed, you need to prevent URI from being upgraded.
-This is what pins are for.
+Aber wenn es sich um einen Fehler in URI handelt oder es sehr viel
+Zeit benötigen würde, um My-App zu korrigieren, dann hast Du ein
+Problem. Du wirst dann nicht wollen, dass irgendjemand anders
+URI erneuert oder dass es durch eine andere Abhängigkeit von
+My-App aus Versehen erneuert wird. Bis Du weißt, dass das 
+Problem behoben ist, musst Du sicherstellen, dass URI nicht
+erneuert wird. Das ist genau das, wofür "Pins" sind.
 
-<h3>Pinning A Module</h3>
+<h3>Ein Modul festpinnen</h3>
 
-When you pin a module, that version of the module is forced to stay in
-a stack.  Any attempt to upgrade it (either directly or via another
-prerequisite) will fail.  To pin a module, use the <hl>pin</hl> command:
+Wenn Du ein Modul festpinnst, wird sichergestellt, dass diese Version des
+Moduls im Stack verbleibt. Jeder Versuch, das Modul auf einen neueren
+Stand zu bringen (entweder direkt oder durch eine andere Abhängigkeit),
+wird fehlschlagen. Um ein Modul fest zu pinnen, benutzt Du den <hl>pin</hl>-Befehl:
 
 <code>
 pinto -r ~/repo pin URI
 </code>
 
-If you look at the listing for the "master" stack again, you'll see
-something like this:
+Wenn Du Dir erneut die Auflistung des "master"-Stacks ansiehst,
+wirst Du in etwa folgendes sehen:
 
 <code>
 ...
@@ -399,109 +410,113 @@ rf! URI::Escape                    3.31  GAAS/URI-1.60.tar.gz
 ...
 </code>
 
-The "!" near the beginning of a record indicates the module has been
-pinned.  If anyone attempts to upgrade URI or a add distribution that
-requires a newer version of URI, then Pinto will give a warning and
-refuse to accept the new distributions.  Notice that every module in
-the URI-1.60 distribution has been pinned, so it is impossible to
-partially upgrade a distribution (this situation could happen when a
-module moves into a different distribution).
+Das "!"-Zeichen am Anfang des Eintrags weist darauf hin, dass das Modul
+"gepinnt" wurde. Wenn irgendeiner versucht, URI auf einen neueren Stand
+zu bringen oder eine Distribution hinzuzufügen, die eine neuere
+Version benötigt, wird Pinto eine Warnung ausgeben und die neue
+Distribution ablehnen. Beachte, dass jedes Modul der URI-1.60-Distribution
+"gepinnt" wurde, so dass es unmöglich wird, eine Distribution nur
+zum Teil zu erneuern. (Dies könnte passieren, wenn ein Modul in
+eine andere Distribution wandert.)
 
-<h3>Unpinning A Module</h3>
+<h3>Loslösen eines Moduls</h3>
 
-After a while, suppose you fix the problem in My-App or a new version
-of URI is released that fixes the bug.  When that happens, you can
-unpin URI from the stack using the <hl>unpin</hl> command:
+Vermutlich wirst Du nach einiger Zeit das Problem in My-App gelöst haben
+oder eine neue Version von URI behebt den Fehler. Wenn dies geschieht, kannst
+Du URI innerhalb des Stacks mit dem Befehl <hl>unpin</hl> wieder loslösen:
 
 <code>
 pinto -r ~/repo unpin URI
 </code>
 
-At this point you're free to upgrade URI to the latest version
-whenever you're ready.  Just as with pinning, when you unpin a module
-it unpins every other module it the distribution as well.
+Ab da kannst Du URI jederzeit erneuern, sobald Du dazu bereit bist.
+Wie beim Anpinnen, werden auch alle anderen Module einer Distribution losgelöst,
+wenn Du das betreffende Modul wieder löst.
 
-<h2>Using Pins And Stacks Together</h2>
+<h2>Pins und Stacks zusammen benutzen</h2>
 
-Pins and stacks are often used together to help manage change during
-the development cycle.  For example, you could create a stack called
-"prod" that contains your known-good dependencies.  At the same time,
-you could also create a stack called "dev" that contains experimental
-dependencies for your next release.  Initially, the "dev" stack is
-just a copy of the "prod" stack.
+Pins und Stacks werden oft zusammen benutzt, um Änderungen während
+des Entwicklunszyklus in den Griff zu bekommen. Z.B. könntest Du einen
+Stack anlegen, der "prod" heißt und alle bekannt guten Abhängigkeiten
+enthält. Gleichzeitig könntest Du einen Stack "dev" haben, der alle
+experimentellen Abhängigkeiten für die nächste Version Deiner Applikation
+beinhaltet. Anfangs ist der "dev"-Stack eine Kopie des "prod"-Stacks.
 
-As development proceeds, you may upgrade or add several modules on the
-"dev" stack.  If an upgraded module breaks your application, then
-you'll place a pin in that module on the "prod" stack to signal that
-it shouldn't be upgraded.
+Während die Entwicklung fortschreitet, kann es vorkommen, dass Du verschiedene Module
+zum "dev"-Stack hinzufügst oder Module erneuerst. Wenn ein neueres Modul
+Deine Applikation zu Bruch gehen lässt, kannst Du im "prod"-Stack einen
+Pin auf das betreffende Modul setzen, um anzuzeigen, dass dieses Modul
+nicht auf eine andere Version gehoben werden darf.
 
-<h3>Pins and Patches</h3>
+<h3>Pins und <a href="http://de.wikipedia.org/wiki/Patch_%28Software%29">Patches</a></h3>
 
-Sometimes you may find that a new version of a CPAN distribution has a
-bug but the author is unable or unwilling to fix it (at least not
-before your next release is due).  In that situation, you may decide
-to make a local patch of the CPAN distribution.
+Es kann vorkommen, dass eine neue Version einer CPAN-Distribution
+einen Fehler hat, den der Autor nicht beheben kann oder will, zumindest
+nicht bis die Veröffentlichung Deiner neuen Applikationsversion ansteht.
+In dieser Situation kann es sein, dass Du Dich für einen lokalen
+Patch der CPAN-Distribution entscheidest.
 
-So suppose that you forked the code for URI and made a local version
-of the distribution called URI-1.60_PATCHED.tar.gz.  You can add it to
-your repository using the <hl>add</hl> command:
+Stell Dir vor, Du hast den Code für URI dubliziert und eine lokale Version
+der Distribution mit dem Namen "URI-1.60_PATCHED.tar.gz" angelegt.
+Du kannst diese mit dem Befehl <hl>add</hl> Deinem Repository hinzufügen:
 
 <code>
 pinto -r ~/repo add path/to/URI-1.60_PATCHED.tar.gz
 </code>
 
-In this situation, it is wise to pin the module as well, since you do
-not want it to be upgraded until you are sure that the new version
-from CPAN includes your patch or the author has fixed the bug by other
-means.
+In dieser Situation ist es weise, das Modul ebenfalls zu pinnen, da
+Du nicht möchtest, dass es erneuert wird, solange nicht eine neue Version bei
+CPAN Deinen Patch beinhaltet oder der Autor den Fehler in einer
+anderen Weise behoben hat.
 
 <code>
 pinto -r ~/repo pin URI
 </code>
 
-When the author of URI releases version 1.62, you'll want to test it
-before deciding to unpin from your locally patched version.  Just as
-before, this can be done by cloning the stack with the <hl>copy</hl> command.
-Let's call it the "trial" stack this time:
+Wenn der Autor von URI die Version 1.62 herausgibt, wirst Du diese zuerst
+testen wolen, bevor Du Deine lokal gepatchte Version loslöst. Wie vorhin auch,
+kannst Du dies erreichen, indem Du Deinen Stack mit dem Befehl <hl>copy</hl>
+klonst. Lass uns den neuen Stack "trail" nennen:
 
 <code>
 pinto -r ~/repo copy master trial
 </code>
 
-But before you can upgrade URI on the "trial" stack, you'll have to
-unpin it there:
+Aber bevor Du eine neuere Version von URI einspielen kannst, musst Du
+das Modul in "trial" loslösen:
 
 <code>
 pinto -r ~/repo unpin --stack trial URI
 </code>
 
-Now you can proceed to upgrade URI on the stack and try building
-My::App like this:
+Nun kannst Du mit dem Upgrade von URI im "trial"-Stack weitermachen und
+versuchen, Deine My::App wie folgt zu bauen:
 
 <code>
 pinto -r ~/repo pull --stack trial URI~1.62
 cpanm --mirror file://$HOME/repo/stacks/trial --mirror-only My::App
 </code>
 
-If all goes well, remove the pin from the "master" stack and pull the
-newer version of URI back into it.
+Wenn alles gut geht, entferne den Pin vom "master"-Stack und ziehe
+die neue Version von URI auch in diesen Stack:
 
 <code>
 pinto -r ~/repo unpin URI
 pinto -r ~/repo pull URI~1.62
 </code>
 
-<h2>Reviewing Past Changes</h2>
+<h2>Vergangene Änderungen durchsehen</h2>
 
-As you've probably noticed by now, each command that changes the state
-of a stack requires a log message to describe it.  You can review
-those messages using the <hl>log</hl> command:
+Wie Du eventuell schon festgestellt hast, benötigt jedes Kommando, das
+den Zustand eines Stacks verändert, eine Log-Meldung, die diese Änderung
+beschreibt. Du kannst diese Meldungen mit dem Befehl <hl>log</hl>
+durchsehen:
 
 <code>
 pinto -r ~/repo log
 </code>
 
-That should display something like this:
+Das sollte in etwa folgendes anzeigen:
 
 <code>
 revision 4a62d7ce-245c-45d4-89f8-987080a90112
@@ -523,21 +538,22 @@ User: jeff
 ...
 </code>
 
-The header for each message shows who made the change and when it happened.
-It also has a unique identifier similar to Git's SHA-1 digests.  You can
-use these identifiers to see the diffs between different revisions or to
-reset the stack back to a prior revision [NB: this feature is not actually
-implemented yet].
+Die Kopfzeilen jeder Meldung zeigen, wer die Änderung wann durchgeführt hat.
+Ebenso enthält sie einen eindeutigen Bezeichner, der ähnlich dem
+SHA1-<a href="http://de.wikipedia.org/wiki/Message_Digest">Digest</a> ist.
+Du kannst diese Bezeichner verwenden, um den Unterschied verschiedener 
+Revisionen anzuzeigen oder den Stack auf den Zustand einer vorherigen
+Revision zu bringen [Bemerkung: Dieses Feature ist noch nicht implementiert].
 
-<h2>Conclusion</h2>
+<h2>Fazit</h2>
 
-In this tutorial, you've seen the basic commands for creating a Pinto
-repository and populating it with modules.  You've also seen how to
-use stacks and pins to manage your dependencies in the face of some
-common development obstacles.
+In diesem Tutorial hast Du die grundlegenden Befehle gesehen, um eine
+Pinto-Repository anzulegen und es mit Modulen zu befüllen. Du hast
+auch gesehen, wie Du mit Stacks und Pins Deine Abhängigkeiten 
+handhaben kannst, während Du mit gängigen Entwicklungshürden konfrontiert
+wirst.
 
-Each command has several options that were not discussed in this
-tutorial, and there are some commands that were not mentioned here at
-all.  So I encourage you to explore the manual pages for each command
-and learn more.
-
+Jeder Befehl hat etliche Optionen, die hier in diesem Tutorial nicht
+angesprochen wurden. Auch wurden einige Kommandos hier gar nicht erwähnt.
+Daher möchte ich Dich ermutigen, das Handbuch für jedes Kommando anzusehen
+und mehr über die verfügbaren Befehle zu lernen.
