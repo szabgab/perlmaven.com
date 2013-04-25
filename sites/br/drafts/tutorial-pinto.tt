@@ -180,45 +180,43 @@ rf  URI::Heuristic                 4.20  GAAS/URI-1.60.tar.gz
 
 <h2>Instalando Módulos</h2>
 
-Now that you have your modules inside the Pinto repository, the next
-step is to actually build and install them somewhere.  Under the hood,
-a Pinto repository is organized just like a CPAN repository, so it is
-fully compatible with cpanm and any other Perl module installer.  All
-you have to do is point the installer at your Pinto repository:
+Agora que você já possui seus módulos dentro do repositório, o próximo passo
+será construir e instalar os módulos em algum outro lugar. Por baixo dos panos
+o repositório do Pinto é organizado da mesma forma que o repositório do CPAN, então
+ele é totalmente compatível com o <hl>cpanm</hl> e qualquer outro instalador Perl.
+Tudo o que você precisa fazer é apontar o instalador para o seu novo repositório:
 
 <code>
 cpanm --mirror file://$HOME/repo --mirror-only My::App
 </code>
 
-That will build and install My::App using *only* the modules in your
-Pinto repository.  So you'll get exactly the same versions of those
-modules every time, even if the module is removed or upgraded on the
-public CPAN.
+Isso irá construir e instalar o módulo My::App utilizando *somente* os módulos
+em seu repositório Pinto. Isso significa que você terá exatamente as mesmas versões
+dos módulos toda vez que realizar a instalação, mesmo que os módulos sejam removidos
+ou atualizados no CPAN.
 
-With cpanm, the --mirror-only option is important because it prevents
-cpanm from falling back to the public CPAN when it can't find a module
-in your repository.  When that happens, it usually means that some
-distribution in the repository doesn't have all the correct
-dependencies declared in its META file.  To fix the problem, just use
-the <hl>pull</hl> command to fetch any modules that are  missing.
+Com o cpanm, a opção --mirror-only é importante por que previne o cpanm de 
+realizar buscas nos CPAN quando não encontra algum módulo em seu repositório.
+Quando isso acontece, normalmente significa que algumas distribuições no
+repositório não possuem todas as dependências devidamente descritas em seu
+arquivo META. Para corrigir o problema, apenas utilize o comando <hl>pull</hl>
+para buscar os módulos faltantes.
 
+<h2>Atualizando Módulos</h2>
 
-<h2>Upgrading Modules</h2>
-
-Suppose that several weeks have passed since you first released My-App
-and now URI version 1.62 is available on the CPAN.  It has some
-critical bug fixes that you'd like to get.  Again, we can bring that
-into the repository using the <hl>pull</hl> command.  But since your
-repository already contains a version of URI, you must indicate that
-you want a <b>newer</b> one by specifying the minimum version that you
-want:
+Suponha que diversas semanas se passaram desde que você lançou a primeira
+versão do My-App e agora o módulo URI está na versão 1.62, disponível pelo CPAN.
+Ele agora possui algumas correções que você gostaria de poder ter. Novamente, podemos
+trazer o novo módulo ao repositório utilizando o comando <hl>pull</hl>. Mas já que
+o seu repositório já possui uma versão do módulo URI, você agora deve indicar que
+quer uma versão <b>nova</b> especificando a versão mínima que você deseja:
 
 <code>
 pinto -r ~/repo pull URI~1.62
 </code>
 
-If you look at the listing again, this time you'll see the newer
-version of URI (and possibly other modules as well):
+Se observar agora na listagem dos módulos irá ver que a nova versão do URI
+já está presente:
 
 <code>
 rl  My::App                         1.0  JEFF/My-App-1.0.tar.gz
@@ -228,63 +226,58 @@ rf  URI::Heuristic                 4.20  GAAS/URI-1.62.tar.gz
 ...
 </code>
 
-If the new version of URI requires any upgraded or additional
-dependencies, those will be in the repository too.  And when you
-install My::App, now you'll get version 1.62 of URI.
+Se a nova versão do URI exigir uma nova versão de algum outro módulo adicional,
+estes também serão atualizados. E quando instalar o My::App, você terá
+a versão 1.62.
 
-<h2>Working With Stacks</h2>
+<h2>Trabalhando Com Stacks (Pilhas)</h2>
 
-Thus far, we've treated the repository as a singular resource.  So
-when we upgraded URI in the last section, it affected every person and
-every application that might have been using the repository.  But this
-kind of broad impact is undesirable.  You would prefer to make changes
-in isolation and test them before forcing everyone else to upgrade.
-This is what stacks are designed for.
+Até o momento nós tratamos o repositório como uma fonte de recurso única.
+Então quando atualizamos o módulo URI na última seção, afetamos todas as
+pessoas e aplicações que possam estar utilizando do mesmo repositório. 
+Mas esse tipo de impacto abrangante é indesejado. Você gostaria de realizar
+mudanças de forma isolada e testá-las antes de forçar as outras pessoas a atualizar.
+É justamente para isso que as pilhas servem.
 
-All CPAN-like repositories have an index which maps the latest version
-of each module to the archive that contains it.  Usually, there is
-only one index per repository.  But in a Pinto repository, there can
-be many indexes.  Each of these indexes is called a <b>"stack"</b>.  This
-allows you to create different stacks of dependencies within a single
-repository.  So you could have a "development" stack and a
-"production" stack, or a "perl-5.8" stack and a "perl-5.16" stack.
-Whenever you add or upgrade a module, it only affects one stack.
+Todo repositório do tipo CPAN possui um índice que mapeia a última versão
+de cada módulo ao arquivo que a contém. Normalmente há apenas um índice por repositório.
+Diferentemente, em um repositório Pinto pode haver diferentes índices. Cada índice
+é chamado <b>stack</b> (ou pilha). Isso lhe permite criar diferentes stacks de dependências
+dentro de um único repositório. Então você pode ter um stack "desenvolvimento" e um stack
+"produção", ou um stack "perl-5.8" e outro "perl-5.16".
+Toda vez que você atualiza ou adiciona um módulo, irá afetar apenas um único stack. 
 
-But before going further, you need to know about the default stack.
-For most operations, the name of the stack is an optional parameter.
-So if you do not specify a stack explicitly, then the command is
-applied to whichever stack is marked as the default.
+Mas antes de seguir a diante, você precisa saber sobre o stack padrão.
+Para a maioria das aplicações, o nome do stack é um parâmetro opcional.
+Então se você não especificar um stack, então o comando é aplicado para
+qualquer stack marcado como padrão.
 
-In any repository, there is never more than one default stack.  When
-we created this repository, a stack called "master" was also created and
-marked as the default.  You can change the default stack or change the
-name of a stack, but we won't go into that here.  Just remember that
-"master" is the name of the stack that was created when the repository
-was first initialized.
+Em qualquer repositório, não irá ocorrer mais de um stack padrão. Quando criamos
+um repositório, um stack chamado "master" também é criado e então marcado como padrão.
+Você pode alterar o stack padrão ou mudar o seu nome, mas eu não mexeria nisso.
+Apenas lembre-se que "master" é o nome do stack criado com o novo repsitório.
 
-<h3>Creating A Stack</h3>
+<h3>Criando Um Stack</h3>
 
-Suppose your repository contains version 1.60 of URI but version 1.62
-has been released to the CPAN, just like before.  You want to try
-upgrading, but this time you're going to do it on a separate stack.
+Suponha que seu repositório contenha a versão 1.60 do módulo URI mas a versão
+1.62 foi liberada no CPAN, como descrevemos antes. VOcê quer tentar atualizar
+o seu repositório, mas dessa vez irá realilzar isso em um stack separado.
 
-Thus far, everything you've added or pulled into the repository has
-gone into the "master" stack.  So we're just going to make a clone
-of that stack using the <hl>copy</hl> command:
+Até o momento, tudo que você adicionou no repositório foi para o stack "master".
+Então nós iremos agora criar um clone desse stack utilizando o comando <hl>copy</hl>:
 
 <code>
 pinto -r ~/repo copy master uri_upgrade
 </code>
 
-This creates a new stack called "uri_upgrade".  If you want to see the
-contents of that stack, just use the <hl>list</hl> command with the "--stack"
-option:
+Esse comando criará um novo stack chamado "uri_upgrade". Se você quer ver o conteúdo
+apenas utilize o comando <hl>list</hl> com a opção "--stack":
 
 <code>
 pinto -r ~/repo list --stack uri_upgrade
 </code>
 
-The listing should be identical to the "master" stack:
+A listagem deverá ser idêntica ao "master":
 
 <code>
 rl  My::App                         1.0  JEFF/My-App-1.0.tar.gz
@@ -292,18 +285,17 @@ rf  URI                            1.60  GAAS/URI-1.60.tar.gz
 ...
 </code>
 
-<h3>Upgrading A Stack</h3>
+<h3>Atualizando um Stack</h3>
 
-Now that you've got a separate stack, you can try upgrading URI.  Just
-as before, you'll use the <hl>pull</hl> command.  But this time, you'll tell
-Pinto to pull the modules into the "uri_upgrade" stack:
+Agora que você já possui um stack separado você pode tetar atualizar o módulo URI.
+Assim como antes, você utilizará o comando <hl>pull</hl>. Mas desta vez, você dirá
+que utilize o stack "uri_upgrade":
 
 <code>
 pinto -r ~/repo pull --stack uri_upgrade URI~1.62
 </code>
 
-We can compare the "master" and "uri_upgrade" stacks using the "diff"
-command:
+Nós podemos comparar o "master" e o "uri_upgrade" utilizando o comando <hl>diff</hl>:
 
 <code>
 pinto -r ~/repo diff master uri_upgrade
@@ -317,25 +309,24 @@ pinto -r ~/repo diff master uri_upgrade
 -rf URI::Heuristic                                   4.20 GAAS/URI-1.60.tar.gz
 </code>
 
-The output is similar to the diff(1) command. Records starting with a
-"+" were added and those starting with a "-" were removed.  You can
-see that modules from the URI-1.60 distribution have been replaced
-with modules from the URI-1.62 distribution.
+A saída é similar ao comando diff(1). Registros começando por "+" foram adicionados
+e aqueles que começam com "-" foram removidos. Você pode notar que os módulos da distribuição
+URI-1.60 foram substituídos por módulos da distribuição URI-1.62.
 
-<h3>Installing From A Stack</h3>
+<h3>Instalando a Partir do Stack</h3>
 
-Once you have new modules on the "uri_upgrade" stack, you can try
-building your application by pointing cpanm at the stack.  Each stack
-is just a subdirectory inside the repository, so all you have to do
-is add it to the URL:
+Uma vez que tenha novos módulos na stack "uri_upgrade", você pode tentar
+construir sua aplicação ao apontar o cpanm para aquele stack. Cada stack
+é nada mais do que um subdiretório dentro do repositório, então tudo o que 
+você precisa fazer é: 
 
 <code>
 cpanm --mirror file://$HOME/repo/stacks/uri_upgrade --mirror-only My::App
 </code>
 
-If all the tests pass, then you can confidently upgrade URI to version
-1.62 in the "master" stack as well by using the <hl>pull</hl> command.  Since
-"master" is the default stack, you can omit the "--stack" paramter:
+Se todos os testes passaram, então você agora pode atualizar o módulo URI
+para a versão 1.62 na stack "master", utilizando o comando <hl>pull</hl>. Como
+"master" é o stack padrão, você pode omitir o parâmetro "--stack": 
 
 <code>
 pinto -r ~/repo pull URI~1.62
