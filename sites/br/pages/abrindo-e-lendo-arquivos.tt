@@ -1,5 +1,5 @@
 =title Abrindo e Lendo Arquivos de Texto
-=timestamp 2013-01-06T10:45:56
+=timestamp 2013-04-25T10:40:56
 =indexes open, <$fh>, read, <, encoding, UTF-8, die, open or die
 =status show
 =original open-and-read-from-files
@@ -72,7 +72,7 @@ Terceira linha
 </code>
 
 Abrir um arquivo para leitura é muito parecido com o que fizemos quando 
-<a href="/writing-to-files-with-perl">vimos como abrir um arquivo para escrita</a>,
+<a href="/escrevendo-em-arquivos-com-perl">vimos como abrir um arquivo para escrita</a>,
 porém ao invés de utilizar o sinal "maior do que" (<hl>></hl>), nós iremos utilizar o
 o sinal "menor do que" (<hl><</hl>).
 
@@ -94,7 +94,7 @@ print "pronto\n";
 
 Após ter o <i>filehandle</i> nós podemos então ler a partir dele, utilizando o mesmo
 operador de leitura de linhas, o <i>readline</i>,  
-<a href="/installing-perl-and-getting-started">para leitura do teclado (STDIN)</a>.
+<a href="/instalando-o-perl">para leitura do teclado (STDIN)</a>.
 Assim conseguiremos ler a primeira linha do arquivo.
 Em seguida nós imprimimos o conteúdo da variável <hl>$row</hl> e depois "pronto" apenas
 para que fique evidente que chegamos até o final do nosso exemplo.
