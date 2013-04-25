@@ -230,7 +230,7 @@ Se a nova versão do URI exigir uma nova versão de algum outro módulo adiciona
 estes também serão atualizados. E quando instalar o My::App, você terá
 a versão 1.62.
 
-<h2>Trabalhando Com Stacks (Pilhas)</h2>
+<h2>Trabalhando Com Pilhas (Stacks)</h2>
 
 Até o momento nós tratamos o repositório como uma fonte de recurso única.
 Então quando atualizamos o módulo URI na última seção, afetamos todas as
@@ -257,7 +257,7 @@ um repositório, um stack chamado "master" também é criado e então marcado co
 Você pode alterar o stack padrão ou mudar o seu nome, mas eu não mexeria nisso.
 Apenas lembre-se que "master" é o nome do stack criado com o novo repsitório.
 
-<h3>Criando Um Stack</h3>
+<h3>Criando Uma Pilha</h3>
 
 Suponha que seu repositório contenha a versão 1.60 do módulo URI mas a versão
 1.62 foi liberada no CPAN, como descrevemos antes. VOcê quer tentar atualizar
@@ -285,7 +285,7 @@ rf  URI                            1.60  GAAS/URI-1.60.tar.gz
 ...
 </code>
 
-<h3>Atualizando um Stack</h3>
+<h3>Atualizando uma Pilha</h3>
 
 Agora que você já possui um stack separado você pode tetar atualizar o módulo URI.
 Assim como antes, você utilizará o comando <hl>pull</hl>. Mas desta vez, você dirá
@@ -313,7 +313,7 @@ A saída é similar ao comando diff(1). Registros começando por "+" foram adici
 e aqueles que começam com "-" foram removidos. Você pode notar que os módulos da distribuição
 URI-1.60 foram substituídos por módulos da distribuição URI-1.62.
 
-<h3>Instalando a Partir do Stack</h3>
+<h3>Instalando a Partir da Pilha</h3>
 
 Uma vez que tenha novos módulos na stack "uri_upgrade", você pode tentar
 construir sua aplicação ao apontar o cpanm para aquele stack. Cada stack
@@ -332,7 +332,7 @@ para a versão 1.62 na stack "master", utilizando o comando <hl>pull</hl>. Como
 pinto -r ~/repo pull URI~1.62
 </code>
 
-<h2>Trabalhando com Pins (fixadores)</h2>
+<h2>Trabalhando com Fixadores (Pins)</h2>
 
 Stacks são ótimas formas de você testar o efeito que ocorre com mudanças
 nas dependências de suas aplicações. Mas e se os testes não passarem?
@@ -378,101 +378,100 @@ distribuição URI-1.60 está fixado, então é impossível atualizar parcialmen
 a distribuição (essa situação pode acontecer quando um módulo entra em uma
 distribuição diferente).
 
-<h3>Unpinning A Module</h3>
+<h3>Desafixando um Módulo</h3>
 
-After a while, suppose you fix the problem in My-App or a new version
-of URI is released that fixes the bug.  When that happens, you can
-unpin URI from the stack using the <hl>unpin</hl> command:
+Após um certo tempo, suponha que você resolveu o problema no módulo My-App
+ou então uma nova versão do URI foi lançada, corrigindo o <i>bug</i>.
+Nessa situação, você agora já pode desafixar o módulo URI da stack
+através do comando <hl>unpin</hl>:
 
 <code>
 pinto -r ~/repo unpin URI
 </code>
 
-At this point you're free to upgrade URI to the latest version
-whenever you're ready.  Just as with pinning, when you unpin a module
-it unpins every other module it the distribution as well.
+A partir de agora você está livre para atualizar o módulo URI para a 
+última versão. Da mesma forma que acontece quando você fixa um módulo,
+ao desafixá-lo, você libera também todos os módulos da distribuição.
 
-<h2>Using Pins And Stacks Together</h2>
+<h2>Utilizando Fixadores e Pilhas ao Mesmo Tempo</h2>
 
-Pins and stacks are often used together to help manage change during
-the development cycle.  For example, you could create a stack called
-"prod" that contains your known-good dependencies.  At the same time,
-you could also create a stack called "dev" that contains experimental
-dependencies for your next release.  Initially, the "dev" stack is
-just a copy of the "prod" stack.
+As pilhas e os fixadores (pins e stacks) são comumente utilizadas juntas para ajudar
+a gerenciar mudanças em seu ciclo de desenvolvimento. Por exemplo você pode criar
+uma stack chamada "prod" que contém suas dependências de confiança. Ao mesmo tempo
+você pode ter também uma stack chamada "dev" que contém módulos experimentais para
+seu próximo lançamento. Inicialmente, a stack "dev" é apenas uma cópia da "prod".
 
-As development proceeds, you may upgrade or add several modules on the
-"dev" stack.  If an upgraded module breaks your application, then
-you'll place a pin in that module on the "prod" stack to signal that
-it shouldn't be upgraded.
+Ao longo do processo de desenvolvimento, você pode atualizar ou adicionar vários módulos
+na pilha "dev". Se um módulo atualizado quebrar sua aplicação, então você pode colocar um pin
+naquele módulo, dentro da stack "prod", sinalizando que aquele módulo não deve ser
+atualizado.
 
-<h3>Pins and Patches</h3>
+<h3>Fixadores e Adendos (Patches)</h3>
 
-Sometimes you may find that a new version of a CPAN distribution has a
-bug but the author is unable or unwilling to fix it (at least not
-before your next release is due).  In that situation, you may decide
-to make a local patch of the CPAN distribution.
+Em certas situações você pode se deparar com uma nova versão de uma distrbuição
+no CPAN com um <i>bug</i> cujo autor é incapaz ou impossibilitado de corrigir.
+Nesta situação, você pode decidir realizar um <i>patch</i> local para aquela
+distribuição.
 
-So suppose that you forked the code for URI and made a local version
-of the distribution called URI-1.60_PATCHED.tar.gz.  You can add it to
-your repository using the <hl>add</hl> command:
+Então suponha que você realizou um <i>fork</i> do código do módulo URI e
+criou uma versão local chamada URI-1.60_PATCHED.tar.gz. Você pode agora
+adicioná-la ao seu repositório utilizando o comando <hl>add</hl>:
 
 <code>
 pinto -r ~/repo add path/to/URI-1.60_PATCHED.tar.gz
 </code>
 
-In this situation, it is wise to pin the module as well, since you do
-not want it to be upgraded until you are sure that the new version
-from CPAN includes your patch or the author has fixed the bug by other
-means.
+Nesta situação é aconselhável fixar o módulo, já que você não gostaria
+de atualizar o módulo até que tenha certeza de que uma nova versão
+do CPAN inclua o <i>patch</i> ou então o autor corrija o problema.
 
 <code>
 pinto -r ~/repo pin URI
 </code>
 
-When the author of URI releases version 1.62, you'll want to test it
-before deciding to unpin from your locally patched version.  Just as
-before, this can be done by cloning the stack with the <hl>copy</hl> command.
-Let's call it the "trial" stack this time:
+Quando o autor do URI liberar a versão 1.62 você irá querer testá-la antes de
+decidir se pode desafixar da sua versão local. Assim como antes, isso pode ser realizado
+clonando o <i>stack</i> através do comando <hl>clone</hl>.
+Desta vez vamos chamar o <i>stack</i> de "trial":
 
 <code>
-pinto -r ~/repo copy master trial
+pint	o -r ~/repo copy master trial
 </code>
 
-But before you can upgrade URI on the "trial" stack, you'll have to
-unpin it there:
+Mas antes de você poder atualizar o URI no <i>stack</i> "trial", você
+deverá desafixá-lo:
 
 <code>
 pinto -r ~/repo unpin --stack trial URI
 </code>
 
-Now you can proceed to upgrade URI on the stack and try building
-My::App like this:
+Agora você pode proceder com a atualização do URI na <i>stack</i>
+e tentar construir a aplicação My::App, dessa forma:
 
 <code>
 pinto -r ~/repo pull --stack trial URI~1.62
 cpanm --mirror file://$HOME/repo/stacks/trial --mirror-only My::App
 </code>
 
-If all goes well, remove the pin from the "master" stack and pull the
-newer version of URI back into it.
+Se tudo der certo, remova o <i>pin</i> do <i>stack</i> "master" e puxe
+a nova versão do URI de volta.
 
 <code>
 pinto -r ~/repo unpin URI
 pinto -r ~/repo pull URI~1.62
 </code>
 
-<h2>Reviewing Past Changes</h2>
+<h2>Revisando o Historico de Mudanças</h2>
 
-As you've probably noticed by now, each command that changes the state
-of a stack requires a log message to describe it.  You can review
-those messages using the <hl>log</hl> command:
+Como você deve ter notado, cada comando que altera o estado de um <i>stack</i>
+exige uma mensagem que o descreva. Você pode revisar essas mensagens
+através do comando <hl>log</hl>:
 
 <code>
 pinto -r ~/repo log
 </code>
 
-That should display something like this:
+Isso deve retornar algo do tipo:
 
 <code>
 revision 4a62d7ce-245c-45d4-89f8-987080a90112
@@ -494,21 +493,20 @@ User: jeff
 ...
 </code>
 
-The header for each message shows who made the change and when it happened.
-It also has a unique identifier similar to Git's SHA-1 digests.  You can
-use these identifiers to see the diffs between different revisions or to
-reset the stack back to a prior revision [NB: this feature is not actually
-implemented yet].
+O cabeçalho de cada mensagem mostra quem fez a mudança e quando ela aconteceu.
+è possível ver também um identificador único, similar ao SHA-1 do Git. Você
+pode usar esses identificadores para ver a diferença entre as revisões ou para
+retornar o <i>stack</i> para um estado anterior (isso na verdade ainda não
+está implementado).
 
-<h2>Conclusion</h2>
+<h2>Conclusões</h2>
 
-In this tutorial, you've seen the basic commands for creating a Pinto
-repository and populating it with modules.  You've also seen how to
-use stacks and pins to manage your dependencies in the face of some
-common development obstacles.
+Neste tutorial, você viu os comandos básicos para criar um repositório Pinto
+e como adicionar módulos a ele. Você viu também como utilizar os <i>stacks</i>
+e os <i>pins</i> para gerenciar as sua dependências frente a alguns problemas
+e obstáculos no desenvolvimento.
 
-Each command has several options that were not discussed in this
-tutorial, and there are some commands that were not mentioned here at
-all.  So I encourage you to explore the manual pages for each command
-and learn more.
+Cada comando possui várias opções que não foram discutidas neste tutorial,
+e há ainda outros comandos que não foram mencionados aqui. Então eu o encorajo
+a explorar o manual de cada comando e aprender mais.
 
