@@ -170,7 +170,7 @@ while (my $line = <$fh>) {
 
 There are several cases where you can't really avoid, and you have to use <hl>$_</hl>
 explicitly. These are the <a href="/filtering-values-with-perl-grep">grep</a>
-and <a href="http://szabgab.com/transforming-a-perl-array-using-map.html">map</a> function, and the
+and <a href="/transforming-a-perl-array-using-map">map</a> function, and the
 other similar ones, such as <a href="/filtering-values-with-perl-grep">any</a>.
 
 
