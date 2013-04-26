@@ -1,9 +1,11 @@
-=title Boolean values in Perl
-=timestamp 2012-11-15T11:45:56
-=indexes undef, true, false, boolean
+=title Les valeurs booléennes en Perl
+=timestamp 2013-04-25T11:45:56
+=indexes undef, true, false, booléen
 =status show
-=books beginner_book
+=original boolean-values-in-perl
+=books livre_debutant
 =author szabgab
+=translator oval
 =index 1
 =archive 1
 =feed 1
@@ -12,68 +14,64 @@
 
 =abstract start
 
-Perl does not have a special boolean type and yet,
-in the documentation of Perl you can often see that a function returns a "Boolean" value.
-Sometimes the documentation says the function returns true or returns false.
+Perl ne possède pas un type booléen dédié, et pourtant, dans la documentation de Perl, vous pouvez souvent voir qu'une fonction retourne une valeur "booléenne".
+Parfois, la documentation dit que la fonction retourne vrai ou retourne faux.
 
-So what's the truth?
+Alors, quelle est la vérité ?
 
 =abstract end
 
-
-Perl does not have specific boolean type, but every scalar value - if checked using <b>if</b>
-will be either true or false. So you can write
+Perl n'a pas de type booléen dédié, mais chaque valeur scalaire - si elle est vérifiée sous <b>if</b> - sera vraie ou fausse. Vous pouvez donc écrire :
 
 <code lang="perl">
 if ($x eq "foo") {
 }
 </code>
 
-and you can also write
+et vous pouvez également écrire :
 
 <code lang="perl">
 if ($x) {
 }
 </code>
 
-the former will check if the content of the <b>$x</b> variable is the same as the "foo"
-string while the latter will check if $x itself is true or not.
+Le premier fragment de code va vérifier si le contenu de la variable <b>$x</b> est le même que la chaîne de caractères "foo"
+tandis que le second va vérifier si $x elle-même est vraie ou non.
 
-<h2>What values are true and false in Perl?</h2>
+<h2>Quelles sont les valeurs vraies et fausses en Perl ?</h2>
 
-It is quite easy. Let me quote the documentation:
+La réponse est assez facile. Permettez-moi de citer la documentation :
 
 <pre>
-The number 0, the strings '0' and '', the empty list "()", and "undef"
-are all false in a boolean context. All other values are true.
-Negation of a true value by "!" or "not" returns a special false
-value. When evaluated as a string it is treated as '', but as a number, it is treated as 0.
+Le nombre 0, les chaînes de caractères '0' et '', la liste vide "()", et undef
+sont tous faux dans un contexte booléen. Toutes les autres valeurs sont vraies.
+La négation d'une valeur vraie par "!" ou "not" renvoie une valeur fausse spéciale.
+Lorsqu'elle est évaluée comme une chaîne de caractères, elle est traitée comme '',
+mais, évaluée comme un nombre, elle est traité comme 0.
 
-From perlsyn under "Truth and Falsehood".
+Tiré de "perlsyn" sous la rubrique «Vérités et Mensonges".
 </pre>
 
-So the following scalar values are considered false:
+Ainsi, les valeurs scalaires suivantes sont considérées comme fausses :
 
 <ul>
-<li>undef - the undefined value</li>
-<li>0  the number 0, even if you write it as 000  or 0.0</li>
-<li>''   the empty string.</li>
-<li>'0'  the string that contains a single 0 digit.</li>
+<li>undef - la valeur indéfinie</li>
+<li>0 - le nombre 0, même si vous l'écrivez 000 ou 0.0</li>
+<li>'' - la chaîne vide</li>
+<li>'0' - la chaîne qui contient un seul zéro</li>
 </ul>
 
-All other scalar values, including the following are true:
+Toutes les autres valeurs scalaires, incluant les suivantes, sont vraies :
 
 <ul>
-<li>1 any non-0 number</li>
-<li>' '   the string with a space in it</li>
-<li>'00'   two or more 0 characters in a string</li>
-<li>"0\n"  a 0 followed by a newline</li>
+<li>1 - tout nombre non nul</li>
+<li>' ' - la chaîne avec seulement un espace</li>
+<li>'00' - la chaîne contenant au moins deux zéros</li>
+<li>"0\n" - un zéro suivi d'un retour</li>
 <li>'true'</li>
-<li>'false'   yes, even the string 'false' evaluates to true.</li>
+<li>'false' - oui, même la chaîne 'false' est évaluée à vrai</li>
 </ul>
 
-I think this is because <a href="http://www.wall.org/~larry/">Larry Wall</a>,
-creator of Perl, has a general positive world-view.
-He probably thinks there are very few bad and false things in the world.
-Most of the things are true.
+Je pense que c'est parce que <a href="http://www.wall.org/~larry/">Larry Wall</a>, créateur de Perl, a une vision générale positive du monde.
+Il pense probablement qu'il y a très peu de mauvaises et fausses choses dans le monde. La plupart des choses sont vraies.
 

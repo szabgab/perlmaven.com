@@ -29,11 +29,11 @@ Si vous avez besoin de <b>maintenir un important logiciel écrit en Perl</b> par
 </div>
 
 <div class="main-content">
-Si vous êtes un <b>administrateur système Unix / Linux</b>, vous avez probablement plus de contrôle sur la version de perl que vous utilisez, et vous avez probablement écrit des scripts relativement petits. Le <a href="/perl-tutorial">tutoriel Perl</a> peut être un bon point de départ pour vous et quelques-uns des exemples dans le <a href="/perl-maven-livre-de-recettes">livre de recettes</a> seront tout aussi utile.
+Si vous êtes un <b>administrateur système Unix / Linux</b>, vous avez probablement plus de contrôle sur la version de perl que vous utilisez, et vous avez probablement écrit des scripts relativement petits. Le <a href="/perl-tutorial">tutoriel Perl</a> peut être un bon point de départ pour vous et quelques-uns des exemples dans le <a href="/perl-maven-livre-de-recettes">livre de recettes de Maven</a> seront tout aussi utile.
 </div>
 
 <div class="main-content">
-Si vous travaillez dans le domaine de <b>la gestion de configuration logicielle</b> (peut-être désigné comme <b>ingénieur de construction</b>) vous avez probablement à écrire et à maintenir des déclencheurs (ou post-commit hooks) et écrire des scripts qui aident à l'intégration continue. Il y aura des articles spéciaux pour vous. Consultez le <a href="/perl-maven-livre-de-recettes">Perl Cookbook Maven</a>. Il pourrait y avoir quelques exemples pour vous qui peuvent être utiles.
+Si vous travaillez dans le domaine de <b>la gestion de configuration logicielle</b> (peut-être désigné comme <b>ingénieur de construction</b>) vous avez probablement à écrire et à maintenir des déclencheurs (ou post-commit hooks) et écrire des scripts qui aident à l'intégration continue. Il y aura des articles spéciaux pour vous. Consultez le <a href="/perl-maven-livre-de-recettes">livre de recettes de Maven</a>. Il pourrait y avoir quelques exemples pour vous qui peuvent être utiles.
 </div>
 
 <div class="main-content">
@@ -41,7 +41,7 @@ Perl est souvent utilisé en <b>automatisation de test</b>. Si vous travaillez d
 </div>
 
 <div class="main-content">
-Si vous construisez de <b>nouvelles applications web</b> - que ce soit en privé ou à l'intérieur d'une entreprise -, vous pouvez commencer par lire l'article qui compare <a href="http://perl5maven.com/perl-cgi-mod-perl-psgi">CGI, mod_perl et PSGI</a>. De là, vous pouvez continuer à lire le <a href="/perl-tutorial">tutoriel Perl</a>. Et si vous vous inscrivez au <a href="/perl-maven-bulletin-d-informations">bulletin d'informations</a>, vous serez informé lorsque je publierai de nouveaux articles sur le <b>développement web avec Perl</b>.
+Si vous construisez de <b>nouvelles applications web</b> - que ce soit en privé ou à l'intérieur d'une entreprise -, vous pouvez commencer par lire l'article qui compare <a href="/perl-cgi-mod-perl-psgi">CGI, mod_perl et PSGI</a>. De là, vous pouvez continuer à lire le <a href="/perl-tutorial">tutoriel Perl</a>. Et si vous vous inscrivez au <a href="/perl-maven-bulletin-d-informations">bulletin d'informations</a>, vous serez informé lorsque je publierai de nouveaux articles sur le <b>développement web avec Perl</b>.
 </div>
 
 <div class="main-content">
