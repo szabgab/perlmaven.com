@@ -84,7 +84,7 @@ Il existe différentes traductions en cours d'écriture :
 </li>
 <li><a href="http://perl5maven.com/automatic-value-conversion-or-casting-in-perl">Conversion automatique d'une chaîne de caractères en nombre</a> (EN)</li>
 <li>Les instructions conditionnelles: if</li>
-<li><a href="http://perl5maven.com/boolean-values-in-perl">Valeurs booléennes (vrai et faux) en Perl</a> (EN)</li>
+<li><a href="/valeurs-booleennes-en-perl">Valeurs booléennes (vrai et faux) en Perl</a></li>
 <li>Opérateurs sur nombres et chaînes de caractères</li>
 <li><a href="http://perl5maven.com/undef-and-defined-in-perl">la valeur initiale undef et la fonction pré-définie defined</a> (EN)</li>
 <li>Les documents heredoc</li>
