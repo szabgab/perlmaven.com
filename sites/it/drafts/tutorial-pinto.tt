@@ -1,4 +1,4 @@
-=title Pinto -- Una CPAN Personalizzata In Confezione Regalo
+=title Pinto -- Un Archivio CPAN Personalizzato In Confezione Regalo
 =timestamp 2013-03-15T07:30:01
 =indexes cpan, pinto
 =status show
@@ -14,41 +14,42 @@
 =abstract start
 
 <i>
-This is a guest post by <a href="">Jeffrey Ryan Thalhammer</a>, author of Pinto
-and of Perl::Critic. Jeff is a ... TBD.
+Questo contributo è di <a href="http://twitter.com/thaljef">Jeffrey Ryan Thalhammer</a>, autore di Pinto
+e di Perl::Critic. Jeff dirige una piccola impresa di consulenza a San Francisco ed
+ è attivo nella comunità Perl da molti anni.
 Till May 7 Jeff is running a <a href="https://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint">fund-raiser</a>
 to finance the development of the feature that will allow you to <b>specify module version ranges in Pinto</b>.
 </i>
 
-One of the best things about Perl are all the open source modules that
-are available on CPAN.  But keeping up with all those modules is
-difficult.  Every week there are hundreds of new releases and you
-never know when a new version of a module will introduce a bug that
-breaks your application.
+Uno dei punti di forza di Perl sono i suoi moduli open source
+disponibili su CPAN. Purtroppo stare al passo con tutti gli aggiornamenti che li riguardano è
+difficile. Ogni settimana ci sono centinaia di nuovi rilasci e non
+potete sapere se una nuova versione di un modulo introdurrà un bug che
+blocca la vostra applicazione.
 
 =abstract end
 
-One strategy for solving this problem is to construct your own custom
-CPAN repository that contains only the versions of the modules that
-you want.  Then you can use the CPAN tool chain to build your
-application from the modules in your custom repository without being
-exposed to all the churn in the public CPAN.
+Una strategia per risolvere questo problema è quella di creare un vostro archivio CPAN
+personalizzato che contenga soltanto le versioni dei moduli che
+volete. In questo modo potete usare i tool di CPAN per creare la vostra
+applicazione con i moduli del vostro archivio personalizzato, evitando di
+esporvi agli imprevisti che si possono verificare usando l'archivio CPAN pubblico.
 
-Over the years, I've built several custom CPAN repositories using
-tools like <a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a>
-and <a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>.
-But they always seemed clunky
-and I was never very happy with them.  A couple years ago, a
-client hired me to build them another custom CPAN.  But this time, I
-had an opportunity to start from scratch.  Pinto is the result of that
-work.
+Nel corso degli anni ho creato svariati archivi CPAN personalizzati usando
+tool come <a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a>
+e <a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>, ma
+mi sono sempre sembrati macchinosi
+e non mi hanno mai lasciato completamente soddisfatto.  Un paio di anni fa un
+cliente mi ha assunto per creargli un ennessimo CPAN personalizzato. Questa volta, però, ho
+avuto l'opportunità di ricominciare da zero. Pinto è il risultato di quel
+lavoro.
 
-<a href="https://metacpan.org/module/Pinto">Pinto</a> is a robust tool
-for creating and managing a custom CPAN repository.
-It has several powerful features that help you safely
-manage all the Perl modules your application depends on.  This
-tutorial will show you how to create a custom CPAN with Pinto and
-demonstrate some of those features.
+<a href="https://metacpan.org/module/Pinto">Pinto</a> è un tool affidabile
+per creare e gestire un archivio CPAN personalizzato.
+Ha molte funzionalità che vi aiutano efficacemente a gestire
+in modo sicuro tutti i moduli Perl da cui dipende la vostra applicazione. Questo
+tutorial vi illustrerà come creare un CPAN personalizzato con Pinto e
+come usare alcune delle sue funzionalità.
 
 <h2>Installing Pinto</h2>
 
