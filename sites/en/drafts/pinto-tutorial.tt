@@ -84,7 +84,7 @@ quick-reference guide.  You can access those documents using these
 commands:
 
 <code>
-man Pinto::Manual::Introduction  # Explains basic Pinto conecpts
+man Pinto::Manual::Introduction  # Explains basic Pinto concepts
 man Pinto::Manual::Installing    # Suggestions for installing Pinto
 man Pinto::Manual::Tutorial      # A narrative guide to Pinto
 man Pinto::Manual::QuickStart    # A summary of common commands
