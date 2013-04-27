@@ -1,9 +1,11 @@
-=title Memasang dan Memulai Perl
+=title Panduan Memasang dan Memulai Perl
 =timestamp 2012-08-08T10:45:56
 =indexes strict, warnings, say, print, chomp, scalar, $
 =status show
+=original installing-perl-and-getting-started
 =books beginner_book
 =author szabgab
+=translator khadis
 =indeks 1
 =arsip 1
 =masukan 1
