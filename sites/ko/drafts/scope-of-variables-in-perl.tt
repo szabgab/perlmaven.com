@@ -1,4 +1,4 @@
-=title Scope of variables in Perl
+=title Perl에서의 변수 영역
 =timestamp 2013-04-17T17:45:59
 =indexes my, scope
 =status show
@@ -12,17 +12,13 @@
 
 =abstract start
 
-There are two major variable types in Perl. One of them is the package global variable declared either with the now obsolete
-<hl>use vars</hl> construct or with <hl>our</hl>.
+Perl에는 두 가지 변수 선언 형식이 있습니다. 그중 한 가지는 <hl>use vars</hl> 생성자나, <hl>our</hl> 함수를 이용해서 선언하는 패키지 전역변수 선언입니다. 최근 더 활발하게 사용되는 다른 한가지는 my를 이용해서 변수를 어휘영역(렉시컬 영역)에 선언하는 것입니다.
 
-The other one is the lexical variable declared with <hl>my</hl>.
-
-Let's see what happens when you declare a variable using <hl>my</hl>? In which parts of the code will that variable be visible?
-In other words, what is the <b>scope</b> of the variable?
+만약 내가 <hl>my</hl>로 변수를 선언한다면 코드에서 어디까지 내가 선언한 변수가 보이고 어디부터 그 변수를 잃어버릴까요? 다음 예제들을 통해 내가 선언한 변수의 <b>영역</b>이 어떻게 되는지 살펴봅시다.
 
 =abstract end
 
-<h2>Variable scope: enclosing block</h2>
+<h2>블록 속에서 선언된 경우</h2>
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -38,20 +34,13 @@ use warnings;
 # Global symbol "$email" requires explicit package name at ...
 </code>
 
-Inside the anonymous block (the pair of curly braces <hl>{}</hl>), first we see the declaration of a new variable called
-<hl>$email</hl>. This variable exists between the point of its declaration till the end of the block. Thus the line
-after the closing curly brace <hl>}</hl> had to be commented out. If you removed the <hl>#</hl> from the
-<hl># print $email;</hl> line, and tried to run the script, you'd get the following compile-time error:
-<a href="/global-symbol-requires-explicit-package-name">Global symbol "$email" requires explicit package name at ...</a>.
+위 코드에서 우리는 중괄호로 감싼 익명 블록 안에서 <h1>$email</hl> 이라는 새로운 변수를 선언했습니다. 이 변수는 변수가 선언된 시점부터 블록이 끝나는 시점까지 존재합니다. 따라서 닫는 중괄호 이후부터는 존재하지 않습니다. 위 예제에서 주석 처리된 아래의 출력문을 실행시키면 다음과 같은 컴파일 오류를 만나게 될 것입니다. <a href="http://perl5maven.com/global-symbol-requires-explicit-package-name">'Global symbol "$email" requires explicit package name at ....'</a>
 
-In other words, the <b>scope of every variable declared with my is the enclosing block.</b>.
+다시 말해 <b>my로 선언된 모든 변수는 블록 영역 안에만 존재</b>합니다.
 
-<h2>Variable scope: visible everywhere</h2>
+<h2>블록 전에 선언된 경우</h2>
 
-The variable <hl>$lname</hl> is declared at the beginning of the code. It will be visible
-till the end of the file everywhere. Even inside blocks. Even if those are function declarations.
-If we change the variable inside the block, that will change the value for the rest of the code.
-Even when you leave the block:
+아래 코드에서 변수 <hl>$lname</hl>은 코드 맨 앞에 선언되었습니다. 이제 이 변수는 이 파일내에서 어디에서건 접근할 수 있습니다. 심지어는 새로운 블록 안에서도 접근이 가능하며 그 블록이 함수 선언이라고 해도 문제가 되지 않습니다. 만약 블록 전에 선언된 변수의 값을 블록 안에서 변경한다면 블록의 끝과 상관없이 해당 변경이 남은 코드에 반영됩니다.
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -70,7 +59,7 @@ print "$lname\n";        # Other
 </code>
 
 
-<h2>Variable hidden by other declaration</h2>
+<h2>블록 속에서 다시 선언된 경우</h2>
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -88,19 +77,13 @@ print "$fname\n";        # Foo
 }
 print "$fname\n";        # Foo
 </code>
+이 경우에도 <hl>$fname</hl> 변수가 코드의 서두에 선언되어있습니다. 앞서 살펴본 것 처럼 <hl>$fname</hl> 변수는 파일 안에서 어디서나 접근이 가능합니다. 하지만 <b>만약에 블록 영역에서 동일 이름의 변수를 지역적으로 선언할 경우 이미 선언된 변수는 잠시 감춰지고 새롭게 선언한 내용이 해당 블록 영역 안에서 보이게 됩니다.</b>
 
-In this case the variable <hl>$fname</hl> is declared at the beginning of the code. As written earlier, it will be visible
-till the end of the file everywhere, <b>except in places where they are hidden by locally declared variables with the same name</b>.
+블록 안에서 이미 밖에 선언된 변수와 동일한 이름의 변수를 <hl>my</hl> 로 선언하면 그 변수는 이전 변수는 잠시 감춰지고 새롭게 정의한 변수는 블록이 끝날때까지 유효합니다. 닫는 중괄호를 만나 블록이 끝나면, 블록 안에서 정의되었던 <hl>$fname</hl> 변수는 사라지고 먼저 선언되었던 <hl>$fname</hl> 변수가 다시 연결됩니다. 이 특성은 우리가 이미 선언된 변수를 침범할 가능성에 대해서 걱정할 필요없이 손쉽게 제한된 영역에 새로운 변수를 선언할 수 있기 때문에 아주 중요합니다.
 
-Inside the block we used <hl>my</hl> to declare another variable with the same name. This will effectively hide the <hl>$fname</hl>
-declared outside the block till we leave the block. At the end of the block (at the closing <hl>}</hl>, the <hl>$fname</hl>
-declared inside will be destroyed and the original <hl>$fname</hl> will be accessible again.
-This feature is especially important as this makes it easy to create variables inside small scopes without the need to think
-about possible use of the same name outside.
+<h2>분리된 블록 영역</h2>
 
-<h2>Same name in multiple blocks</h2>
-
-You can freely use the same variable name in multiple block. These variables have no connection to each other.
+분리된 블록영역에서 새롭게 정의된 변수는 서로 영향을 주지 않기 때문에 얼마든지 같은 이름으로 선언할 수 있습니다.
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -117,20 +100,13 @@ use warnings;
 }
 </code>
 
-<h2>in-file package declaration</h2>
+<h2>파일에서 package 선언</h2>
 
+이번 예제는 조금 심화된 내용이지만, 많은 사람이 변수의 영역과 관련해 쉽게 착각하는 내용이기 때문에 특별히 여기서 다룹니다.
 
-This a bit more advanced example, but it might be important to mention it here:
+Perl에서는 단일 파일 안에서도 <hl>package</hl> 예약어를 통해서 <b>이름공간</b>들을 변경할 수 있습니다. 우리는 일견 package로 이름 공간을 변경하면 변수 영역이 구분될 것으로 추측하기 쉽습니다. 하지만 예상과는 다르게 패키지 선언은 <b>변수영역을 분리하지 않습니다</b>. 위 예제를 살펴보면 서두에 선언한 <hl>$fname</hl>은 묵시적으로 선언된 <b>main 패키지</b> 이름 영역에 존재합니다. 이 변수는 이 파일 안에 정의된 다른 이름 공간에서도 접근 가능합니다.
 
-Perl allows us to switch between <b>name-spaces</b> using the <hl>package</hl> keyword inside
-a file. A package declaration does <b>NOT</b> provide scope. If you declare a variable in
-the explicit <b>main package</b> which is just the regular body of your script, that <hl>$fname</hl>
-variable will be visible even in other name-spaces in the same file.
-
-If you declare a variable called <hl>$lname</hl> in the 'Other' name-space, it will be visible
-when later you might switch back to the <hl>main</hl> name-space. If the <hl>package Other</hl>
-declaration was in another file, then the variables would have separate scope created by
-the file.
+만약 <hl>$lname</hl> 변수가 'Other' 이름영역에서 선언된다면, 마찬가지로 이 변수도 선언된 시점 이후로 접근 가능하며 다시 <hl>main</hl> 이름 공간으로 전환해도 마찬가지로 접근 가능합니다. 우리가 기대하는 이름 공간의 분리는 <hl>Other 패키지</hl>를 다른 <b>파일</b>에서 선언했을 때 일어납니다.
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -154,5 +130,3 @@ package main;
 print "$fname\n";    # Foo
 print "$lname\n";    # Bar
 </code>
-
-
