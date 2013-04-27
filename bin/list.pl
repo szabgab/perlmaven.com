@@ -148,10 +148,10 @@ sub read_authors {
 		chomp $line;
 		my ($nick, $name, $img, $url) = split /;/, $line;
 		if (not defined $url) {
-			print "Missing URL for $line in authors.txt\n";
+			print "Missing URL for line '$line' in authors.txt\n";
 			$url = 'Unreal';
 		} elsif ($url !~ m{^https://plus\.google\.com/\d+$}) {
-			print "Not G+ '$url' in authors.txt\n";
+			print "Not G+ '$url' in line '$line' in authors.txt\n";
 			$url = 'Unreal';
 		}
 		$autho{$nick} = {

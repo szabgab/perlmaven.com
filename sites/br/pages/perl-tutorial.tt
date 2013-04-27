@@ -76,9 +76,9 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <ol>
 <li>die, warn and exit</li>
 <li><a href="/escrevendo-em-arquivos-com-perl">Escrevendo em arquivos com Perl</a></li>
+<li><a href="/acrescentando-em-arquivos">Acrescentando texto em arquivos (appending)</a></li>
 </ol>
 
-<a href="/acrescentando-em-arquivos">Acrescentando texto em arquivos (appending)</a>
 <a href="/abrindo-e-lendo-arquivos">Abrindo e Lendo Arquivos de Texto</a>
 
 <hr />
