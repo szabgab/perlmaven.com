@@ -1,7 +1,8 @@
 =title Perl에서의 변수 영역
-=timestamp 2013-04-17T17:45:59
+=timestamp 2013-04-28T02:09:21
 =indexes my, scope
 =status show
+=original scope-of-variables-in-perl
 =books beginner_book
 =author szabgab
 =translator yongbin
