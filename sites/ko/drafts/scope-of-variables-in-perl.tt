@@ -2,6 +2,7 @@
 =timestamp 2013-04-17T17:45:59
 =indexes my, scope
 =status show
+=original scope-of-variables-in-perl
 =books beginner_book
 =author szabgab
 =translator yongbin
