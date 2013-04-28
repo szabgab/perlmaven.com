@@ -1,5 +1,5 @@
 =title Pinto -- Un Archivio CPAN Personalizzato In Confezione Regalo
-=timestamp 2013-03-15T07:30:01
+=timestamp 2013-04-28T00:00:00
 =indexes cpan, pinto
 =status show
 =original pinto-tutorial
@@ -476,17 +476,17 @@ pinto -r ~/repo unpin URI
 pinto -r ~/repo pull URI~1.62
 </code>
 
-<h2>Reviewing Past Changes</h2>
+<h2>Esaminare I Cambiamenti</h2>
 
-As you've probably noticed by now, each command that changes the state
-of a stack requires a log message to describe it.  You can review
-those messages using the <hl>log</hl> command:
+Come ormai avrete probabilmente notato, ogni comando che cambia lo stato
+di uno stack richiede un messaggio di log che lo descrive.  Potete esaminare
+tali messaggi usando il comando <hl>log</hl>:
 
 <code>
 pinto -r ~/repo log
 </code>
 
-That should display something like this:
+Questo comando dovrebbe visualizzare qualcosa come:
 
 <code>
 revision 4a62d7ce-245c-45d4-89f8-987080a90112
@@ -495,7 +495,7 @@ User: jeff
 
      Pin GAAS/URI-1.59.tar.gz
 
-     Pinning URI because it is not causes our foo.t script to fail
+     Appunto URI perche' fa fallire il mio script foo.t
 
 revision 4a62d7ce-245c-45d4-89f8-987080a90112
 Date: Mar 15, 2013 1:58:05 PM
@@ -503,26 +503,26 @@ User: jeff
 
      Pull GAAS/URI-1.59.tar.gz
 
-     URI is required for HTTP support in our application
+     URI e' necessario per usare HTTP nella mia applicazione
 
 ...
 </code>
 
-The header for each message shows who made the change and when it happened.
-It also has a unique identifier similar to Git's SHA-1 digests.  You can
-use these identifiers to see the diffs between different revisions or to
-reset the stack back to a prior revision [NB: this feature is not actually
-implemented yet].
+L'intestazione di ogni messaggio indica chi ha fatto il cambiamento e quando.
+Include anche un identificatore univoco simile ai digest SHA-1 di Git.  Potete
+usare questi identificatori per visualizzare le differenze tra due revisioni o per
+ripristinare una revisione precedente dello stack [NB: questa funzione non è
+ancora implementata].
 
-<h2>Conclusion</h2>
+<h2>Conclusioni</h2>
 
-In this tutorial, you've seen the basic commands for creating a Pinto
-repository and populating it with modules.  You've also seen how to
-use stacks and pins to manage your dependencies in the face of some
-common development obstacles.
+In questo tutorial avete visto i comandi base per creare un archivio Pinto
+e popolarlo con dei moduli.  Avete anche visto come
+usare gli stack e i pin per gestire le vostre dipendenze evitando alcuni
+ostacoli tipici del ciclo di sviluppo.
 
-Each command has several options that were not discussed in this
-tutorial, and there are some commands that were not mentioned here at
-all.  So I encourage you to explore the manual pages for each command
-and learn more.
+Ogni comando ha molte opzioni che non abbiamo discusso in questo
+tutorial e alcuni comandi che non sono stati neppure
+menzionati.  Vi invito quindi a esplorare le pagine dei manuali di ogni comando
+per imparare di più.
 
