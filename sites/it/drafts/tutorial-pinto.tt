@@ -51,104 +51,104 @@ in modo sicuro tutti i moduli Perl da cui dipende la vostra applicazione. Questo
 tutorial vi illustrerà come creare un CPAN personalizzato con Pinto e
 come usare alcune delle sue funzionalità.
 
-<h2>Installing Pinto</h2>
+<h2>Installare Pinto</h2>
 
-Pinto is available on CPAN and can be installed like any other module
-using the cpan or <hl>cpanm</hl> utilities.  But Pinto is more like an
-application than a library.  It is a tool that you use to manage your
-application code, but Pinto is not actually part of your application.
-So I recommend installing Pinto as a stand-alone application with
-these two commands:
+Pinto è disponibile su CPAN e può essere installato come un qualunque altro modulo
+usando le utility cpan o <hl>cpanm</hl>. Ma Pinto, più che una libreria,
+è un'applicazione. È un tool che usate per gestire il codice della
+vostra applicazione ma non è parte effettiva della vostra applicazione.
+Perciò vi suggerisco di installare Pinto come una applicazione stand-alone con
+questi due comandi:
 
 <code>
 curl -L http://getpinto.stratopan.com | bash
 source ~/opt/local/pinto/etc/bashrc
 </code>
 
-That will install Pinto into <hl>~/opt/local/pinto</hl> and add the necessary
-directories to your <hl>PATH</hl> and <hl>MANPATH</hl>.  Everything is self-contained,
-so installing Pinto does not change the rest of your development
-environment, nor will changes in your development environment affect
+In questo modo Pinto verrà installato in <hl>~/opt/local/pinto</hl> e le opportune directory
+saranno aggiunte ai vostri <hl>PATH</hl> e <hl>MANPATH</hl>. L'applicazione è auto-contenuta,
+quindi installare Pinto non ha effetti sul resto del vostro ambiente di
+sviluppo e, viceversa, eventuali modifiche al vostro ambiente di sviluppo non hanno effetti su
 Pinto.
 
-<h2>Exploring Pinto</h2>
+<h2>Esploriamo Pinto</h2>
 
-As with any new tool, the first thing you should know is how to get help:
-
-<code>
-pinto commands            # Show a list of available commands
-pinto help <COMMAND>      # Show a summary of options and arguments for <COMMAND>
-pinto manual <COMMAND>    # Show the complete manual for <COMMAND>
-</code>
-
-Pinto also ships with other documentation, including a tutorial and
-quick-reference guide.  You can access those documents using these
-commands:
+Come per ogni nuovo tool, la prima cosa che dovete imparare è come chiedere aiuto:
 
 <code>
-man Pinto::Manual::Introduction  # Explains basic Pinto conecpts
-man Pinto::Manual::Installing    # Suggestions for installing Pinto
-man Pinto::Manual::Tutorial      # A narrative guide to Pinto
-man Pinto::Manual::QuickStart    # A summary of common commands
+pinto commands            # Visualizza una lista di comandi disponibili
+pinto help <COMMAND>      # Visualizza un riepilogo delle opzioni e argomenti di <COMMAND>
+pinto manual <COMMAND>    # Visualizza il manuale completo di <COMMAND>
 </code>
 
-<h2>Creating A Repository</h2>
+Pinto include anche altra documentazione, tra cui un tutorial e
+una guida di riferimento rapido. Potete accedere a tali documenti con i seguenti
+comandi:
 
-The first step in using Pinto is to create a repository using the
-<hl>init</hl> command:
+<code>
+man Pinto::Manual::Introduction  # Spiega i concetti base di Pinto
+man Pinto::Manual::Installing    # Suggerimenti sull'installazione di Pinto
+man Pinto::Manual::Tutorial      # Una guida su Pinto in stile narrativo
+man Pinto::Manual::QuickStart    # Un riepilogo sui comandi più comuni
+</code>
+
+<h2>Creazione Di Un Archivio</h2>
+
+Il primo passo nell'uso di Pinto è la creazione di un archivio con il comando
+<hl>init</hl>:
 
 <code>
 pinto -r ~/repo init
 </code>
 
-This will create a new repository in the <hl>~/repo</hl> directory.  If that
-directory does not exist, it will be created for you.  If it does
-already exist, then it must be empty.
+Viene creato un nuovo archivio nella directory <hl>~/repo</hl>. Se la directory
+non esiste viene creata automaticamente. Se invece esiste
+deve essere vuota.
 
-The -r (or --root) flag specifies where the repository is. This is
-required for every pinto command.  But if you get tired of typing it,
-you can set the <hl>PINTO_REPOSITORY_ROOT</hl> environment variable to point to
-your repository and then omit the -r flag.
+L'opzione -r (o --root) specifica l'ubicazione dell'archivio. È
+richiesta da tutti i comandi di pinto. Se vi annoiate a riscriverla ogni volta,
+potete settare la variabile d'ambiente <hl>PINTO_REPOSITORY_ROOT</hl> per farla puntare al
+vostro archivio e poter omettere l'opzione -r.
 
 
-<h2>Inspecting The Repository</h2>
+<h2>Ispezione Dell'Archivio</h2>
 
-Now that you have a repository, let's look inside it.  To see the
-contents of a repository, use the "list" command:
+Ora che avete creato un archivio, diamo un'occhiata a che cosa contiene. Per visualizzare il
+contenuto di un archivio usate il comando "list":
 
 <code>
 pinto -r ~/repo list
 </code>
 
-At this point, the listing will be empty because there is nothing in
-the repository.  But you'll use the "list" command quite often during
-this tutorial.
+Al momento la lista è vuota perché l'archivio non ha ancora
+contenuti. Ma torneremo a usare spesso il comando "list"
+in questo tutorial.
 
-<h2>Adding CPAN Modules</h2>
+<h2>Aggiunta Di Moduli CPAN</h2>
 
-Suppose you are working on an application called My-App that contains
-a module called My::App, and it depends on the URI module.  You can
-bring the URI module into your repository by using the <hl>pull</hl> command:
+Immaginate di lavorare ad una applicazione My-App che contiene
+un modulo My::App e dipende dal modulo URI.  Potete
+importare il modulo URI nel vostro archivio usando il comando <hl>pull</hl>:
 
 <code>
 pinto -r ~/repo pull URI
 </code>
 
-You will be prompted to enter a log message that describes why this
-change is happening.  The top of the message template will include a
-simple generated message that you can edit.  The bottom of the message
-template shows exactly which modules have been added.  Save the file
-and close your editor when you are done.
+Vi viene chiesto di immettere un messaggio di log che descriva il perché di questo
+cambiamento dell'archivio. La prima linea del template del messaggio include un
+semplice messaggio generato automaticamente che potete editare. In fondo al template
+del messaggio c'è invece l'elenco esatto dei moduli che sono stati aggiunti. Quando siete pronti
+salvate il file e chiudete l'editor.
 
-Now you should have the URI module in your Pinto repository.  So lets
-look and see what we really got.  Once again, use the <hl>list</hl> command
-to see the contents of the repository:
+Ora il modulo URI dovrebbe essere nel vostro archivio. Proviamo a vedere
+che cosa è successo. Usate di nuovo il comando <hl>list</hl>
+per visualizzare il contenuto dell'archivio:
 
 <code>
 pinto -r ~/repo list
 </code>
 
-This time, the listing will look something like this:
+Questa volta l'elenco sarà qualcosa tipo:
 
 <code>
 rf  URI                            1.60  GAAS/URI-1.60.tar.gz
@@ -157,25 +157,25 @@ rf  URI::Heuristic                 4.20  GAAS/URI-1.60.tar.gz
 ...
 </code>
 
-You can see that the URI module has been added to the repository, as
-well as all the prerequisites for URI, and all of their prerequisites,
-and so on.
+Come vedete, il modulo URI è stato aggiunto all'archivio insieme
+a tutti i prerequisiti di URI, ai loro prerequisiti
+e così via.
 
-<h2>Adding Private Modules</h2>
+<h2>Aggiunta Di Moduli Privati</h2>
 
-Now suppose that you've finished work on My-App and you are ready to
-release the first version.  Using your preferred build tool (e.g
-ExtUtils::MakeMaker, Module::Build, Module::Install etc.) you package
-a release as My-App-1.0.tar.gz.  Now you place the distribution into
-the Pinto repository with the <hl>add</hl> command:
+Ora immaginate di aver finito di lavorare su My-App e di essere pronti a
+rilasciarne la prima versione.  Sfruttando il vostro strumento preferito di build (e.g
+ExtUtils::MakeMaker, Module::Build, Module::Install etc.) generate
+un package con la release My-App-1.0.tar.gz. A questo punto potete aggiungere la distribuzione
+nell'archivio Pinto con il comando <hl>add</hl>:
 
 <code>
 $> pinto -r ~/repo add path/to/My-App-1.0.tar.gz
 </code>
 
-Again, you'll be prompted to enter a message to describe the change.
-When you list the repository contents now, it will include the My::App
-module and show you as the author of the distribution:
+Vi verrà nuovamente chiesto di immettere un messaggio che descriva il cambiamento dell'archivio.
+Quando elencate i contenuti dell'archivio, essi includeranno ora il modulo My::App
+e vi menzioneranno come autori della distribuzione:
 
 <code>
 rl  My::App                         1.0  JEFF/My-App-1.0.tar.gz
@@ -186,47 +186,46 @@ rf  URI::Heuristic                 4.20  GAAS/URI-1.60.tar.gz
 </code>
 
 
-<h2>Installing Modules</h2>
+<h2>Installazione Di Moduli</h2>
 
-Now that you have your modules inside the Pinto repository, the next
-step is to actually build and install them somewhere.  Under the hood,
-a Pinto repository is organized just like a CPAN repository, so it is
-fully compatible with cpanm and any other Perl module installer.  All
-you have to do is point the installer at your Pinto repository:
+Ora che i vostri moduli sono stati importati nell'archivio Pinto, il passo
+successivo consiste nel farne il build e installarli da qualche parte. Dietro le quinte,
+un archivio Pinto è organizzato esattamente come un archivio CPAN ed è quindi
+completamente compatibile con cpanm e con gli altri tool per l'installazione di moduli Perl. Dovete
+soltanto far puntare il tool di installazione al vostro archivio Pinto:
 
 <code>
 cpanm --mirror file://$HOME/repo --mirror-only My::App
 </code>
 
-That will build and install My::App using *only* the modules in your
-Pinto repository.  So you'll get exactly the same versions of those
-modules every time, even if the module is removed or upgraded on the
-public CPAN.
+Questo comando fa il build e l'installazione di My::App usando *solo* i moduli del vostro
+archivio Pinto. Di conseguenza, ogni volta verranno usate esattamente le stesse versioni di tali
+moduli, indipendentemente dal fatto che il modulo sia stato rimosso o aggiornato sull'archivio
+CPAN pubblico.
 
-With cpanm, the --mirror-only option is important because it prevents
-cpanm from falling back to the public CPAN when it can't find a module
-in your repository.  When that happens, it usually means that some
-distribution in the repository doesn't have all the correct
-dependencies declared in its META file.  To fix the problem, just use
-the <hl>pull</hl> command to fetch any modules that are  missing.
+L'opzione --mirror-only di cpanm è importante perché impedisce a
+cpanm di ricorrere al CPAN pubblico quando non trova un modulo
+nel vostro archivio. Quando ciò succede, normalmente è causato da qualche
+distribuzione nell'archivio che non dichiara correttamente tutte le proprie
+dipendenze nel proprio file META. Potete risolvere il problema semplicemente
+usando il comando <hl>pull</hl> per recuperare i moduli mancanti.
 
 
-<h2>Upgrading Modules</h2>
+<h2>Aggiornamento Di Moduli</h2>
 
-Suppose that several weeks have passed since you first released My-App
-and now URI version 1.62 is available on the CPAN.  It has some
-critical bug fixes that you'd like to get.  Again, we can bring that
-into the repository using the <hl>pull</hl> command.  But since your
-repository already contains a version of URI, you must indicate that
-you want a <b>newer</b> one by specifying the minimum version that you
-want:
+Immaginate che sia passata qualche settimana dal vostro primo rilascio di My-App
+e che ora su CPAN sia disponibile la versione 1.62 di URI. Dato che essa
+include la soluzione di alcuni bug critici vorreste iniziare a usarla. Potete importarla
+nell'archivio usando nuovamente il comando <hl>pull</hl>. Però, dato che il vostro
+archivio contiene già una versione di URI, dovete indicare che
+ne volete una <b>più recente</b> specificandone la versione minima:
 
 <code>
 pinto -r ~/repo pull URI~1.62
 </code>
 
-If you look at the listing again, this time you'll see the newer
-version of URI (and possibly other modules as well):
+Se visualizzare il contenuto dell'archivio, questa volta vedrete la nuova 
+versione di URI (ed eventualmente anche di altri moduli):
 
 <code>
 rl  My::App                         1.0  JEFF/My-App-1.0.tar.gz
@@ -236,9 +235,9 @@ rf  URI::Heuristic                 4.20  GAAS/URI-1.62.tar.gz
 ...
 </code>
 
-If the new version of URI requires any upgraded or additional
-dependencies, those will be in the repository too.  And when you
-install My::App, now you'll get version 1.62 of URI.
+Se la nuova versione di URI richiede delle dipendenze nuove o
+aggiornate, saranno anch'esse nell'archivio. E quando
+installate di nuovo My::App verrà usata la versione 1.62 di URI.
 
 <h2>Working With Stacks</h2>
 
