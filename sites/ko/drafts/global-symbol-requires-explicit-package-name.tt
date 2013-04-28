@@ -1,9 +1,11 @@
 =title Global symbol requires explicit package name
-=timestamp 2012-09-13T12:45:56
+=timestamp 2013-04-28T08:11:00
 =indexes strict, my, package, global symbol
 =status show
+=original scope-of-variables-in-perl
 =books beginner_book
 =author szabgab
+=translator yongbin
 =index 1
 =archive 1
 =feed 1
