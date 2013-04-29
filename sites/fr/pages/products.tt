@@ -18,18 +18,18 @@ Les produits ci-dessous sont disponibles :
 
 <h2>Livres numériques</h2>
 <ul>
-<li><a href="/beginner-perl-maven-e-book">Perl Maven pour débutant</a></li>
-<li><a href="/advanced-perl-maven-e-book">Perl Maven pour utilisateur avancé</a></li>
-<li><a href="/test-automation-using-perl-e-book">Automatisation des tests avec Perl</a></li>
-<li><a href="/perl-maven-cookbook">Les recettes de Perl Maven</a></li>
+<li><a href="http://perl5maven.com/beginner-perl-maven-e-book">Perl Maven pour débutant</a> (EN)</li>
+<li><a href="http://perl5maven.com/advanced-perl-maven-e-book">Perl Maven pour utilisateur avancé</a> (EN)</li>
+<li><a href="/livre-numerique-test-automation-using-perl">Automatisation des tests avec Perl</a></li>
+<li><a href="/perl-maven-livre-de-recettes">Les recettes de Perl Maven</a></li>
 </ul>
 
 <h2>Vidéos des cours</h2>
 
 Les vidéos des cours Perl ci-dessous sont disponibles via Udemy :
 <ul>
-<li><a href="/beginner-perl-maven-video-course">vidéo du cours Perl Maven pour débutant</a></li>
-<li><a href="/advanced-perl-maven-video-course">vidéo du cours Perl Maven pour utilisateur avancé</a></li>
+<li><a href="http://perl5maven.com/beginner-perl-maven-video-course">vidéo du cours Perl Maven pour débutant</a> (EN)</li>
+<li><a href="/video-cours-perl-maven-pour-utilisateur-avance">vidéo du cours Perl Maven pour utilisateur avancé</a></li>
 </ul>
 <!--
   <li><a href=""></a></li>

@@ -1,4 +1,4 @@
-=title Le livre de recette de Perl Maven
+=title Le livre de recettes de Perl Maven
 =timestamp 2013-04-19T10:30:09
 =tags livre numérique
 =status show
@@ -14,7 +14,7 @@
 =comments 0
 =social 0
 
-Dans un avenir proche, le livre de <b>Recettes de Perl Maven</b> aura des centaines d'exemples expliquant comment réaliser diverses tâches.
+Dans un avenir proche, le livre <b>Recettes de Perl Maven</b> aura des centaines d'exemples expliquant comment réaliser diverses tâches.
 
 Dans un avenir proche, la version numérique de ce livre coûtera probablement environ 40 USD.
 
@@ -42,19 +42,17 @@ La toute première édition (numérotée 0.01) contient les exemples suivants :
 
 L'un d'entre eux a même des explications très détaillées.
 
-<p>Pour l'instant, seuls ceux qui se sont abonnés au <a href="/newsletter">bulletin d'information Perl Maven</a> recevront ce livre de recettes.</p>
+<p>Pour l'instant, seuls ceux qui se sont abonnés au <a href="/perl-maven-bulletin-d-informations">bulletin d'informations Perl Maven</a> recevront ce livre de recettes.</p>
 
 <form method="POST" action="/register" name="registration_form">
-Courriel: <input name="email" />
-<input type="submit" value="Register" />
+Courriel : <input name="email" />
+<input type="submit" value="S'abonner" />
 </form>
 
 <h2>Qu'en disent les gens ?</h2>
 <p>
 <i>Je voulais juste dire merci pour ce livre de recettes. Il semble être en effet un bon point de départ comme ressource très utile.
 Il y a quelques recettes que j'ai pu utiliser immédiatement pour certains projets sur lesquels je travaille actuellement.</i>
-<i>Just wanted to say thanks for the cookbook. It looks like a great start on a very useful resource indeed.
-There are a couple of recipes in there that I can see immediate use for in some stuff I'm doing right now.</i>
 - <a href="http://retco.com.au/">Richard Thomas</a>
 </p>
 
