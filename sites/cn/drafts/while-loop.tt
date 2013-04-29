@@ -32,11 +32,10 @@ while ($counter > 0) {
 say 'done';
 </code>
 
-The <hl>while</hl> loop has a condition, in our case checking if the variable $counter is larger than 0,
-and then a block of code wrapped in curly braces.
+<hl>while</hl>循环有个条件判断，本例中是检查变量$counter是否大于0，然后执行大括号里包含的代码段。
 
-When the execution first reaches the beginning of the while loop it checks if the condition is <a href="/boolean-values-in-perl">true or
-false</a>. If it is <hl>FALSE</hl> the block is skipped and the next statement, in our case printing 'done' is executed.
+当while循环首次开始执行时，它检查条件是<a href="/boolean-values-in-perl">真或假。
+如果是<hl>假</hl>，代码块就会被跳过，并执行下一条语句，我们这里是打印出'done'。
 
 If the condition of the <hl>while</hl> is <hl>TRUE</hl>, the block gets executed, and then the execution goes back
 to the condition again. It is evaluated again. If it is false the block is skipped and the 'done'

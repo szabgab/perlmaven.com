@@ -16,17 +16,15 @@
 
 最简单的办法重用代码就是构建子例程。
 
-They allow executing the same code in several places in you application,
-and they allow it to be executed with different parameters.
+这使得你可以在应用中的多个地方执行同样的代码，也可以使用不同的参数执行代码。
 
 =abstract end
 
-In some languages there is a distinction between functions and subroutines.
-In Perl there is only one thing. It is created with the <hl>sub</hl> keyword,
-and it always returns a value. Perl programmers often use the two words
-<b>function</b> and <b>subroutine</b> interchangeably.
+在一些编程语言中，函数和子例程是有区别的。但在Perl里只有一个。
+它通过 <hl>sub</hl>关键字创建，并通常返回一个值。
+Perl程序员常常可交替地使用<b>function</b>和<b>subroutine</b>这两个词。
 
-<h2>Simple function</h2>
+<h2>简单函数</h2>
 
 For example, let's say you'd like to prompt the user
 and ask a question:
