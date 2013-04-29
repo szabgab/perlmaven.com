@@ -14,7 +14,7 @@
 =abstract start
 
 Parabéns! Sua start-up acabou de ser comprada pela empresa Super Large.
-Agora você precisa susbtituir <b>Copyright Start-Up</b> por <b>Copyright
+Agora você precisa substituir <b>Copyright Start-Up</b> por <b>Copyright
 Super Large</b> no arquivo README.txt
 
 =abstract end
@@ -45,14 +45,14 @@ grande.
 
 Nós definimos <hl>binmode => ':utf8'</hl> para lidar corretamente com
 caracteres Unicode.
-Então uma susbtituição por regex é usada com o modificador <hl>/g</hl> para
+Então uma substituição por regex é usada com o modificador <hl>/g</hl> para
 trocar <b>globalmente</b> todas as ocorrências de texto antigo pelo texto
 novo.
 
 Então nós salvamos o conteúdo no mesmo arquivo, novamente usando <hl>binmode
 => ':utf8'</hl> para lidar corretamente com caracteres Unicode.
 
-<h2>Susbtituir o conteúdo com perl puro</h2>
+<h2>Substituir o conteúdo com perl puro</h2>
 
 Se você não puder instalar File::Slurp você pode implementar uma versão
 limitada de suas funções. Neste caso, o corpo principal do código é quase o
@@ -97,10 +97,10 @@ Na função <hl>read_file</hl> definimos a variável <hl>$/</hl> (que também é
 chamada $INPUT_RECORD_SEPARATOR) para <hl>undef</hl>. Isto é o que geralmente
 se refere ao <b>modo slurp</b>. Isto diz ao operador "read_line" do perl para
 ler todo o conteúdo do arquivo e armazenar na variável escalar ao lado
-esquerdo da atribuição: <hl>my $all = &lt;$in>;</hl>. Nós até usamos a
-palavra-chave <hl>local</hl> quando definimos <hl>$/</hl> para que esta
-mudança seja revertida uma vez que saímos do bloco de fechamento - neste caso,
-uma vez que deixamos a função <hl>read_file</hl>.
+esquerdo da atribuição: <hl>my $all = &lt;$in>;</hl>. Nós usamos inclusive a
+palavra reservada <hl>local</hl> quando definimos <hl>$/</hl>, assim, esta
+mudança será revertida quando sairmos do bloco - neste caso,
+uma vez que sairmos da função <hl>read_file</hl>.
 
 A função <hl>write_file</hl> é muito mais imediata e nós a colocamos em uma
 função apenas para fazer o corpo do código similar à solução anterior. 
