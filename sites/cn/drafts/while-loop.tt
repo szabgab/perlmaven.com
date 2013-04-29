@@ -1,9 +1,11 @@
-=title while loop
-=timestamp 2013-03-12T12:45:51
+=title while循环
+=timestamp 2013-04-29T12:45:51
 =indexes while, while (1), loop, infinite loop, last
 =status show
+=original while-loop
 =books beginner_book
 =author szabgab
+=translator herolee
 =index 1
 =archive 1
 =feed 1
@@ -12,7 +14,7 @@
 
 =abstract start
 
-In this episode of the <a href="/perl-tutorial">Perl tutorial</a> we are going to see <b>how does the while loop work in Perl</b>.
+在<a href="/perl-tutorial">Perl教程</a>本小节，我们来看看<b>Perl里的while循环怎么工作</b>。
 
 =abstract end
 
