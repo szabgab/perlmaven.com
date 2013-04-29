@@ -26,8 +26,7 @@ Perl程序员常常可交替地使用<b>function</b>和<b>subroutine</b>这两个词。
 
 <h2>简单函数</h2>
 
-For example, let's say you'd like to prompt the user
-and ask a question:
+例如，我们假设你想问用户一个问题：
 
 <code lang="perl">
 ask_question();
@@ -36,7 +35,7 @@ my $answer = get_answer();
 ask_question();
 my $second_answer = get_answer();
 
-########## sub declarations come here
+########## 子函数在这里声明
 
 sub ask_question {
   print "Have we arrived already?";
@@ -54,12 +53,10 @@ sub terminate {
 }
 </code>
 
-In the first part of the code we called the <hl>ask_question</hl> function twice,
-and also called the <hl>get_answer</hl> function twice. In the second part of the code,
-after the #####, we have the declaration of three subroutines.
+代码第一部分，我们调用函数<hl>ask_question</hl>两次，同时也两次调用函数<hl>get_answer</hl>。
+代码第二部分，在井号注释之后，我们声明了三个子例程。
 
-The first one is very simple. It only prints a hard coded string to he screen,
-and then returns nothing.
+第一个很简单。它只是打印一个写死的字符串到屏幕并返回空。
 
 The second combines the read-line operator and <hl>chomp</hl> into a single function call.
 It will wait for some input, and upon pressing ENTER it will return the string you
