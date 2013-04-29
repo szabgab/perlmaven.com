@@ -12,7 +12,7 @@
 =comments 0
 =social 0
 
-<h2>Bienvenue futur Maven de Perl!</h2>
+<h2>Bienvenue futur Maven de Perl !</h2>
 
 <div class="main-content">
 <div style="float:right; margin-left:10px;">
@@ -25,15 +25,15 @@ J'espère que vous le trouverez utile.
 </div>
 
 <div class="main-content">
-Si vous avez besoin de <b>maintenir un important logiciel écrit en Perl</b> par d'autres personnes dans les 5-10-15 dernières années, c'est un défi! Surtout si vous n'avez pas reçu une formation adéquate en Perl. Vous êtes probablement limité à une version spécifique et ancienne de Perl. Je vous recommande de consulter <a href="/perl-tutorial">le tutoriel Perl</a>. Vous pouvez probablement sauter la partie sur l'installation de Perl, mais le reste de ce tutoriel sera utile pour vous. Vous pouvez également <a href="/perl-maven-bulletin-d-informations">vous inscrire au bulletin d'informations</a> pour recevoir les mises à jour sur les nouveaux articles dès leur publication.
+Si vous avez besoin de <b>maintenir un important logiciel qui a été  écrit en Perl</b> par d'autres personnes dans les 5-10-15 dernières années, c'est un défi ! Surtout si vous n'avez pas reçu une formation adéquate en Perl. Vous êtes probablement limité à une version spécifique et ancienne de perl. Je vous recommande de consulter <a href="/perl-tutorial">le tutoriel Perl</a>. Vous pouvez probablement sauter la partie sur l'installation de Perl, mais le reste de ce tutoriel sera utile pour vous. Vous pouvez également <a href="/perl-maven-bulletin-d-informations">vous inscrire au bulletin d'informations</a> afin d'être tenus au courant dès la parution de nouveaux articles.
 </div>
 
 <div class="main-content">
-Si vous êtes un <b>administrateur système Unix / Linux</b>, vous avez probablement plus de contrôle sur la version de perl que vous utilisez, et vous avez probablement écrit des scripts relativement petits. Le <a href="/perl-tutorial">tutoriel Perl</a> peut être un bon point de départ pour vous et quelques-uns des exemples dans le <a href="/perl-maven-livre-de-recettes">livre de recettes de Maven</a> seront tout aussi utile.
+Si vous êtes un <b>administrateur système Unix / Linux</b>, vous avez probablement plus de contrôle sur la version de perl que vous utilisez, et vous avez probablement écrit des scripts relativement petits. Le <a href="/perl-tutorial">tutoriel Perl</a> peut être un bon point de départ pour vous et quelques-uns des exemples dans le <a href="/perl-maven-livre-de-recettes">livre de recettes de Perl Maven</a> seront tout aussi utile.
 </div>
 
 <div class="main-content">
-Si vous travaillez dans le domaine de <b>la gestion de configuration logicielle</b> (peut-être désigné comme <b>ingénieur de construction</b>) vous avez probablement à écrire et à maintenir des déclencheurs (ou post-commit hooks) et écrire des scripts qui aident à l'intégration continue. Il y aura des articles spéciaux pour vous. Consultez le <a href="/perl-maven-livre-de-recettes">livre de recettes de Maven</a>. Il pourrait y avoir quelques exemples pour vous qui peuvent être utiles.
+Si vous travaillez dans le domaine de <b>la gestion de configuration logicielle</b> (peut-être affecté comme <b>ingénieur de construction</b>), vous avez probablement à écrire et à maintenir des déclencheurs (ou post-commit hooks) et écrire des scripts qui aident à l'intégration continue. Il y aura des articles spéciaux pour vous. Consultez le <a href="/perl-maven-livre-de-recettes">livre de recettes de Perl Maven</a>. Il pourrait y avoir quelques exemples pour vous qui peuvent être utiles.
 </div>
 
 <div class="main-content">

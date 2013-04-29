@@ -1,6 +1,6 @@
-=title Tutoriel en ligne gratuit de Perl 5 Maven
+=title Tutoriel de Perl
 =timestamp 2013-04-15T22:45:56
-=description tutoriel Perl gratuit pour ceux qui ont besoin de maintenir du code Perl existant, pour ceux qui utilisent Perl pour des scripts simples, et pour ceux qui développent des applications en Perl
+=description tutoriel en ligne gratuit sur Perl pour ceux qui ont besoin de maintenir du code Perl existant, pour ceux qui utilisent Perl pour des scripts simples, et pour ceux qui développent des applications en Perl
 =tags formation, cours, débutant, tutoriel
 =status show
 =original perl-tutorial
@@ -28,34 +28,20 @@ Vous allez apprendre à utiliser l'archive CPAN et plusieurs modules CPAN spéci
 Ce sera une bonne base pour vous permettre d'aller de l'avant.
 
 La version gratuite en ligne de ce tutoriel est actuellement en développement. De nombreux articles sont prêts. Des articles supplémentaires sont publiés régulièrement dans la langue originale.
-Si vous êtes intéressé d'être mis au courant lorsque de nouveaux articles sont publiés, s'il vous plaît, veuillez vous <a href="/register">abonner au bulletin d'informations</a>.
+Si vous êtes intéressé d'être mis au courant lorsque de nouveaux articles sont publiés, s'il vous plaît, veuillez vous <a href="/perl-maven-bulletin-d-informations">abonner au bulletin d'informations</a>.
 
-Une <a href="/beginner-perl-maven-e-book">version numérique de cette documentation</a> existe aussi et est disponible à l'achat. En plus du tutoriel gratuit, cette version comprend également les diapositives du cours correspondant, y compris de nombreux exercices et leurs solutions. Le matériel du cours couvre toutes les parties, y compris celles qui ne sont pas encore reproduites dans la version gratuite.
+Une <a href="http://perl5maven.com/beginner-perl-maven-e-book">version numérique de cette documentation (EN)</a> existe aussi et est disponible à l'achat. En plus du tutoriel gratuit, cette version comprend également les diapositives du cours correspondant, y compris de nombreux exercices et leurs solutions. Le matériel du cours couvre toutes les parties, y compris celles qui ne sont pas encore reproduites dans la version gratuite.
 
-La <a href="/beginner-perl-maven-video-course">vidéo du cours</a> comprend plus de 210 capture vidéos, sur un total de plus de 5 heures de vidéo. En plus de présenter le matériel, il fournit aussi des explications aux solutions de tous les exercices.
+La <a href="http://perl5maven.com/beginner-perl-maven-video-course">vidéo du cours (EN)</a> comprend plus de 210 capture vidéos, sur un total de plus de 5 heures de vidéo. En plus de présenter le matériel, il fournit aussi des explications aux solutions de tous les exercices.
 L'ensemble comprend également le code source de tous les exemples et les exercices.
 
-<h2>le tutoriel en ligne gratuit Perl Maven pour débutant</h2>
+<h2>Le tutoriel en ligne gratuit Perl Maven pour débutant</h2>
 
 Dans ce tutoriel, vous allez apprendre à utiliser le langage de programmation Perl 5 pour que le <b>travail soit fait</b>.
 
 Vous apprendrez les caractéristiques générales du langage, ainsi que les extensions, les bibliothèques ou - comme les programmeurs Perl les appellent - les <b>modules</b>. Nous allons voir les modules standards qui sont intégrés avec Perl et les modules tierces qui sont installés sur <b>CPAN</b>.
 
-Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâche. Je vais énumérer les tâches, puis nous allons apprendre les outils nécessaires pour les résoudre. Lorsque cela est possible, je vais aussi vous diriger vers quelques exercices que vous pourrez faire pour mettre en pratique ce que vous avez appris.
-
-<h2>Traductions</h2>
-
-Il existe différentes traductions en cours d'écriture :
-
-<ul>
-<li><a href="http://perl5maven.com/perl-tutorial">en anglais</a> (la version originale)</li>
-<li><a href="http://cn.perl5maven.com/perl-tutorial">en chinois traditionel</a></li>
-<li><a href="http://tw.perl5maven.com/">en chinois simplifié</a></li>
-<li><a href="http://it.perl5maven.com/">en italien</a></li>
-<li><a href="http://br.perl5maven.com/perl-tutorial">en portugais</a></li>
-<li><a href="http://ro.perl5maven.com/">en roumain</a></li>
-<li><a href="http://ru.perl5maven.com/">en russe</a></li>
-</ul>
+Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâche. Je vais énumérer les tâches, puis nous allons apprendre les outils nécessaires pour les résoudre. Lorsque cela est possible, je vais aussi vous diriger vers quelques exercices que vous pourrez faire pour mettre en pratique ce que vous aurez appris.
 
 <h2>Table des matières</h2>
 
@@ -86,7 +72,7 @@ Il existe différentes traductions en cours d'écriture :
 <li>Les instructions conditionnelles: if</li>
 <li><a href="/valeurs-booleennes-en-perl">Valeurs booléennes (vrai et faux) en Perl</a></li>
 <li>Opérateurs sur nombres et chaînes de caractères</li>
-<li><a href="http://perl5maven.com/undef-and-defined-in-perl">la valeur initiale undef et la fonction pré-définie defined</a> (EN)</li>
+<li><a href="http://perl5maven.com/undef-and-defined-in-perl">La valeur initiale undef et la fonction pré-définie defined</a> (EN)</li>
 <li>Les documents heredoc</li>
 <li><a href="http://perl5maven.com/string-functions-length-lc-uc-index-substr">Les fonctions prédéfinies pour les chaînes de caractères : length, lc, uc, index, substr</a> (EN)</li>
 <li><a href="http://perl5maven.com/number-guessing-game">Jeu "Devine le nombre" (rand, int)</a> (EN)</li>
@@ -153,7 +139,7 @@ Il existe différentes traductions en cours d'écriture :
 <li>Regex: ancres</li>
 <li>Regex: options et modificateurs</li>
 <li>Substitutions (rechercher et remplacer)</li>
-<li>Couper/Supprimer les espaces avant et après</li>
+<li><a href="http://perl5maven.com/trim">Couper/Supprimer les espaces avant et après (EN)</li>
 </ol>
 
 <b>Fonctionnalités du système d'exploitation via Perl</b>
