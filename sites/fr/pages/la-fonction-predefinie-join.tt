@@ -26,16 +26,16 @@ use strict;
 use warnings;
 use v5.10;
 
-my @names = ('Foo', 'Bar', 'Moo');
-my $str = join ':', @names;
-say $str;                       # Foo:Bar:Moo
+my @noms = ('Foo', 'Bar', 'Moo');
+my $chaine = join ':', @noms;
+say $chaine;                    # Foo:Bar:Moo
 
-my $data = join "-", $str, "names";
-say $data;                      # Foo:Bar:Moo-names
+my $valeur = join "-", $chaine, "noms";
+say $valeur;                    # Foo:Bar:Moo-noms
 
 
-$str = join '', @names, 'Baz';
-say $str;                       # FooBarMooBaz
+$chaine = join '', @noms, 'Baz';
+say $chaine;                    # FooBarMooBaz
 </code>
 
 Le premier paramètre de la fonction prédéfinie <b>join</b> est le "connecteur", une chaîne de caractères qui sera insérée entre chacun des autres paramètres.

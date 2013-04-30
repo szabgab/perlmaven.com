@@ -8,6 +8,7 @@ fredlopes;Frederico José Andries Lopes;fredlopes.jpg;https://plus.google.com/10
 giatorta;Gianluca Torta;giatorta.jpg;https://plus.google.com/102233996322873848584
 gugod;Kang-min Liu;gugod.png;https://plus.google.com/118077021111350586131
 keedi;Keedi Kim;keedi.png;https://plus.google.com/116555192679485363257
+khadis;Khadis;khadis.png;https://plus.google.com/117015659325563649853
 leprevost;Felipe da Veiga Leprevost;leprevost.jpg;https://plus.google.com/107515431915475316857
 mca;McA;mca.png
 oval;oval;oval.png;https://plus.google.com/111231154240098109931
@@ -18,4 +19,4 @@ swuecho;Hao Wu;swuecho.png;https://plus.google.com/103923416736713796285
 szabgab;Gabor Szabo;szabgab.png;https://plus.google.com/102810219707784087582
 terrencehan;Terrence Han;terrencehan.png;https://plus.google.com/115247155710052422629
 tudorconstantin;Tudor Constantin;tudorconstantin.jpg;https://plus.google.com/116443916281342539112
-khadis;Khadis;khadis.png;https://plus.google.com/117015659325563649853
+yongbin;Yongbin Yu;yongbin.jpg;https://plus.google.com/111269003708517945935
