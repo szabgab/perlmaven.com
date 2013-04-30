@@ -1,8 +1,8 @@
 =title Como substituir uma string em um arquivo com Perl
-=original how-to-replace-a-string-in-a-file-with-perl
 =timestamp 2013-04-29T06:50:10
 =indexes open, close, replace, File::Slurp, read_file, write_file, slurp, $/, $INPUT_RECORD_SEPARATOR
 =status show
+=original how-to-replace-a-string-in-a-file-with-perl
 =books beginner_book
 =author szabgab
 =translator aramisf

@@ -1,8 +1,8 @@
 =title Perl Orientado a Objeto usando o Moose
-=original object-oriented-perl-using-moose
 =timestamp 2013-04-29T23:10:05
 =indexes OOP, Moose, object oriented, class, object, instance, constructor, getter, setter, accessor
 =status show
+=original object-oriented-perl-using-moose
 =books advanced_book
 =author szabgab
 =translator aramisf
