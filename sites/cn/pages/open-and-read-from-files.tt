@@ -1,4 +1,4 @@
-=title �򿪲���ȡ�ı��ļ�
+=title 打开并读取文本文件
 =timestamp 2013-04-29T10:45:56
 =indexes open, <$fh>, read, <, encoding, UTF-8, die, open or die
 =status show
@@ -14,17 +14,17 @@
 
 =abstract start
 
-�ڱ�����<a href="/perl-tutorial">Perl�̳�</a>�У����ǽ��ῴ��<b>���ʹ��Perl��ȡ�ļ�</b>.
+在本部分<a href="/perl-tutorial">Perl教程</a>中，我们将会看到<b>如何使用Perl读取文件</b>.
 
-��ʱ������ֻ��ע�ı��ļ���
+此时，我们只关注文本文件。
 
 =abstract end
 
-������δ������������Σ�ͨ�������ֳ����ķ������ļ���
+根据如何处理出错的情形，通常有两种常见的方法打开文件。
 
-<h2>�׳��쳣</h2>
+<h2>抛出异常</h2>
 
-����1: ������ܴ��ļ����׳�һ���쳣��
+情形1: 如果不能打开文件，抛出一个异常：
 
 <code lang="perl">
 use strict;
@@ -40,9 +40,9 @@ while (my $row = <$fh>) {
 }
 </code>
 
-<h2>�澯���߲�����</h2>
+<h2>告警或者不处理</h2>
 
-����2: ������ܴ��ļ������һ�����浫�Ǽ���ִ�г���
+情形2: 如果不能打开文件，提出一个警告但是继续执行程序：
 
 <code lang="perl">
 use strict;
@@ -59,11 +59,11 @@ if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
 }
 </code>
 
-<h2>����</h2>
+<h2>解释</h2>
 
-���������忴һ��:
+我们来具体看一下:
 
-���ȣ����ı��༭������һ���ļ�������Ϊ'data.txt'��������Ӽ��У�
+首先，用文本编辑器创建一个文件并命名为'data.txt'，在里面加几行：
 
 <code>
 First row
@@ -71,11 +71,11 @@ Second row
 Third row
 </code>
 
-���ļ�����ȡ���������
-<a href="/writing-to-files-with-perl">���ļ���д��</a>�ǳ����ƣ�
-�����ǲ���">" (<hl>></hl>) ����, ����ʹ��"<" (<hl><</hl>) �������⡣
+打开文件并读取跟我们如何
+<a href="/writing-to-files-with-perl">打开文件并写入</a>非常类似，
+除了是不用">" (<hl>></hl>) 符号, 而是使用"<" (<hl><</hl>) 符号以外。
 
-�������ǰѱ�������ΪUTF-8�����µĴ���󲿷����ֻ����"<"���š�
+这里我们把编码设置为UTF-8。以下的代码大部分你会只看到"<"符号。
 
 <code lang="perl">
 use strict;
@@ -90,12 +90,12 @@ print "$row\n";
 print "done\n";
 </code>
 
-��ȡ���ļ����֮�����ǿ���ʹ��ͬ�����ж�ȡ���������ж�ȡ���ݣ����
-<a href="/installing-perl-and-getting-started">�Ӽ��̶�ȡ(��׼����)</a>һ����
-�����ı��ж�ȡ��һ�С�
-Ȼ�����Ǵ�ӡ$row�����ݲ����"done"�������ı�����������������ϡ�
+获取了文件句柄之后我们可以使用同样的行读取操作符从中读取内容，这跟
+<a href="/installing-perl-and-getting-started">从键盘读取(标准输入)</a>一样。
+这会从文本中读取第一行。
+然后我们打印$row的内容并打出"done"以清晰的表明我们例子运行完毕。
 
-��������Ĵ��룬��ῴ����ӡ�������ݣ�
+运行上面的代码，你会看到打印以下内容：
 If you run the above script you will see it prints
 
 <code>
@@ -104,16 +104,16 @@ First row
 done
 </code>
 
-����ܻ���Ϊʲô"done"֮ǰ����һ�����С�
+你可能会问为什么"done"之前会有一个空行。
 
-������Ϊ�ж�ȡ���������������������ݣ�����ĩβ�����з�����������
-<hl>print()</hl>������ӡ����ʱ��������������һ�����С�
+这是因为行读取操作符会读入该行所有内容，包括末尾的新行符。当我们用
+<hl>print()</hl>把它打印出来时，我们又增加了一个新行。
 
-����ӱ�׼�����ȡһ������������ͨ������Ҫĩβ�����з�����������ʹ��<hl>chomp()</hl>��ɾ������
+正如从标准输入读取一样，这里我们通常不需要末尾的新行符，所以我们使用<hl>chomp()</hl>来删除它。
 
-<h2>��ȡ��ֻһ��</h2>
+<h2>读取不只一行</h2>
 
-֪����ε��ж�ȡ֮�����ǿ��԰��ж�ȡ�����ŵ�<hl>while</hl>ѭ���
+知道如何单行读取之后，我们可以把行读取操作放到<hl>while</hl>循环里。
 
 <code lang="perl">
 use strict;
@@ -130,29 +130,29 @@ while (my $row = <$fh>) {
 print "done\n";
 </code>
 
-ÿ�ν���<hl>while</hl>ѭ������������ִ��<hl>my $row = <$fh></hl>��������ȡ���ļ��ж�ȡ��һ�С�
-�����һ���ǿգ������ж���Ϊ�档
+每次进入<hl>while</hl>循环条件，首先执行<hl>my $row = <$fh></hl>，这里会读取从文件中读取下一行。
+如果下一行是空，条件判定就为真。
 If that line has anything in it, that will evaluate to true.
-�������ĩβҲ��һ�����з������Զ�ȡʱ<hl>$row</hl>���������һ��<hl>\n</hl>����������ж�����Ϊ���档
+即便空行末尾也有一个新行符，所以读取时<hl>$row</hl>变量会包含一个<hl>\n</hl>，这在真假判定是认为是真。
 
-�������һ�к���һ���ж�ȡ����(<hl><$fh></hl>)�ĵ����᷵��undef���ж�Ϊ�١�whileѭ������ֹ��
+读到最后一行后，下一个行读取操作(<hl><$fh></hl>)的迭代会返回undef，判定为假。while循环将终止。
 
-<h3>һ������</h3>
+<h3>一个特例</h3>
 
-�����и����������ı����һ��ֻ��һ��0������ĩβû�����з���ʱ��
-���������������һ��Ϊ�ٶ���ִ��ѭ���塣���˵��ǣ�Perl��������ƭ��һ�¡�
-�������������whileѭ�����ȡ�ļ����У�perlʵ���ϻ���Ϊ��д����<hl>while (defined my $row = <$fh>) {</hl> ����˼���������Ҳ�ᱻ��ȷ��ȡ��
+这里有个特例，当文本最后一行只有一个0，而且末尾没有新行符的时候。
+上述代码会评估这一行为假而不执行循环体。幸运的是，Perl在这里欺骗了一下。
+在这个特例（在while循环里读取文件）中，perl实际上会认为你写的是<hl>while (defined my $row = <$fh>) {</hl> ，因此即便这类行也会被正确读取。
 
 
-<h2>��ʱ����die�˳�</h2>
+<h2>打开时不用die退出</h2>
 
-���������ļ��ķ������������Perl�ű�һ����Ҫ���ļ�������Ͳ�ִ�д��롣
-���磬�ű������й����ǽ����Ǹ��ļ���
+上述处理文件的方法适用于你的Perl脚本一定需要打开文件，否则就不执行代码。
+比如，脚本的所有功能是解析那个文件。
 
-���ֻ��һ����ѡ���������ļ���ô�죿�������Դ��л�ȡ�����޸�һЩ���á�
-������ܣ������ʹ��Ĭ��ֵ��
+如果只是一个可选的配置型文件怎么办？如果你可以从中获取，你修改一些配置。
+如果不能，你可以使用默认值。
 
-��������£��ڶ������������Ǹ��õİ취��
+这种情况下，第二个方案或许是更好的办法。
 
 <code lang="perl">
 if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
@@ -165,11 +165,11 @@ if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
 }
 </code>
 
-�������Ǽ��<hl>open</hl>�ķ���ֵ��
-������棬������ȡ���ݡ�
+这里我们检查<hl>open</hl>的返回值。
+如果是真，继续读取内容。
 
-����Ǽ٣�����ʹ�����ú���<hl>warn</hl>��ʾһ�����棬�������׳��쳣��
-����������<hl>else</hl>���沿�ֶ���Ҫ:
+如果是假，我们使用内置函数<hl>warn</hl>提示一个警告，而不是抛出异常。
+甚至可以连<hl>else</hl>警告部分都不要:
 
 <code lang="perl">
 if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
@@ -179,5 +179,4 @@ if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
   }
 }
 </code>
-
 
