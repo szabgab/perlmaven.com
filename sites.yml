@@ -22,6 +22,10 @@ he:
   url: http://he.perl5maven.com/
   english: Hebrew
   name: עברית
+id:
+  url: http://id.perl5maven.com/
+  english: Indonesian
+  name: Bahasa Indonesia
 it:
   url: http://it.perl5maven.com/
   english: Italian
