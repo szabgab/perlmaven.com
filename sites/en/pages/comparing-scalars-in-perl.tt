@@ -1,5 +1,5 @@
 =title Comparing scalars in Perl
-=timestamp 2013-01-17T14:45:56
+=timestamp 2013-05-01T12:45:56
 =indexes eq, ne, lt, gt, le, ge, ==, !=, <, >, <=, >=
 =status show
 =books beginner_book
@@ -13,7 +13,7 @@
 =abstract start
 
 In the previous part of the <a href="/perl-tutorial">Perl tutorial</a>
-we introduced <a href="">scalars</a> and we saw how numbers
+we introduced <a href="/scalar-variables">scalars</a> and we saw how numbers
 and strings are converted to each other on-the-fly. We even had
 glimpse on a conditional <b>if</b> statement but we have not seen how
 to compare two scalars. That's what this part is about.
