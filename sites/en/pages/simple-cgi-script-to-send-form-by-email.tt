@@ -173,10 +173,10 @@ As we don't really need it for our script, we just set it to nothing: <hl>$ENV{P
 <code lang="perl">
 $ENV{PATH} = '';
 sendmail(
-    'Target <to@perl5maven.com>',
+    'Target <to@perlmaven.com>',
     'hello world',
     'submitted: ' . Dumper(\%data),
-    'Source <from@perl5maven.com>');
+    'Source <from@perlmaven.com>');
 
 sub sendmail {
     my ($tofield, $subject, $text, $fromfield) = @_;

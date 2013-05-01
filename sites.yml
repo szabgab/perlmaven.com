@@ -1,52 +1,52 @@
 en:
-  url: http://perl5maven.com/
+  url: http://perlmaven.com/
   english: English
   name: English
 br:
-  url: http://br.perl5maven.com/
+  url: http://br.perlmaven.com/
   english: (Brazilian) Portuguese
   name: Português
 cn:
-  url: http://cn.perl5maven.com/
+  url: http://cn.perlmaven.com/
   english: Chinese (mainland)
   name: 简体中文
 de:
-  url: http://de.perl5maven.com/
+  url: http://de.perlmaven.com/
   english: German
   name: Deutsch
 fr:
-  url: http://fr.perl5maven.com/
+  url: http://fr.perlmaven.com/
   english: French
   name: Français
 he:
-  url: http://he.perl5maven.com/
+  url: http://he.perlmaven.com/
   english: Hebrew
   name: עברית
 id:
-  url: http://id.perl5maven.com/
+  url: http://id.perlmaven.com/
   english: Indonesian
   name: Bahasa Indonesia
 it:
-  url: http://it.perl5maven.com/
+  url: http://it.perlmaven.com/
   english: Italian
   name: Italiano
 ko:
-  url: http://ko.perl5maven.com/
+  url: http://ko.perlmaven.com/
   english: Korean
   name: 한국어
 ro:
-  url: http://ro.perl5maven.com/
+  url: http://ro.perlmaven.com/
   english: Romanian
   name: Română
 ru:
-  url: http://ru.perl5maven.com/
+  url: http://ru.perlmaven.com/
   english: Russian
   name: Русский
 te:
-  url: http://te.perl5maven.com/
+  url: http://te.perlmaven.com/
   english: Telugu
   name: తెలుగు
 tw:
-  url: http://tw.perl5maven.com/
+  url: http://tw.perlmaven.com/
   english: Chinese (traditional)
   name: 正體中文
