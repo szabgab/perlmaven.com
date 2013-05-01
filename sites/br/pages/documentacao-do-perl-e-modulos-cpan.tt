@@ -44,7 +44,7 @@ Provavelmente a página mais importante é a<a href="http://perldoc.perl.org/per
 onde você pode encontrar informações sobre as diferentes variáveis como <hl>$_</hl> e <hl>@_</hl>.
 
 <a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> explica a sintaxe do Perl
-incluindo o <a href="http://perlmaven.com/while-loop">laço while</a>.
+incluindo o <a href="/laco-while">laço while</a>.
 
 <h2>perldoc na linha de comando</h2>
 
@@ -73,7 +73,7 @@ A quantidade e qualidade desta documentação varia muito entre os autores, e at
 Depois de instalar um determinado módulo chamado Módulo::Name, você pode acessar a sua documentação digitando <b>perldoc Módulo::Nome</b>.
 
 Porém, há uma maneira bem mais conveniente que nem sequer requer que o módulo esteja instalado.
-Existem várias interfaces web para o CPAN. As principais são <a href="http://metacpan.org/">Meta CPAN</a> e o<a href="http://search.cpan.org/">search CPAN</a>.
+Existem várias interfaces web para o CPAN. As principais são <a href="http://metacpan.org/">Meta CPAN</a> e o <a href="http://search.cpan.org/">search CPAN</a>.
 
 Ambos são baseados na mesma documentação, mas eles proporcionam uma pequena diferença na experiência de uso.
 

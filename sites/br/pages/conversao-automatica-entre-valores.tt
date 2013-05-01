@@ -116,7 +116,7 @@ em um número e a conversão não é perfeita.
 
 Existe ainda uma série de outros avisos e erros comuns em Perl.
 Por exemplo <a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
-e <a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a>.
+e <a href="/uso-de-valor-nao-inicializado">Use of uninitialized value</a>.
 
 <h2>Como evitar os avisos?</h2>
 
