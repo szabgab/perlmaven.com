@@ -1,4 +1,4 @@
-=title Pinto -- A Custom CPAN In A Box
+=title Pinto -- Un CPAN Personalizat
 =timestamp 2013-03-15T07:30:01
 =indexes cpan, pinto
 =status show
@@ -27,7 +27,7 @@ permite <b>specificarea gamei de versiuni a modulelor în Pinto</b>.
 Unul dintre cele mai bune lucruri legate de Perl este existența
 modulelor open-source disponibile pe CPAN.  Dar gestionarea acestor
 module este dificilă.  În fiecare săptămână sunt sute de noi lansări și nu
-poți ști dacă noua versiune a unui modul nu va introduce o eroare care să-ți
+poți ști dacă noua versiune a unui modul nu va introduce o hibă care să-ți
 afecteze aplicația.
 
 =abstract end
@@ -247,7 +247,7 @@ dependente sau dependențe suplimentare, acelea vor fi de asemenea în
 depozit.  Iar la instalarea My::App, vei obține versiunea 1.62 a
 modulului URI.
 
-<h2>Lucrul Cu Stive</h2>
+<h2>Lucrul Cu Stive - Stacks</h2>
 
 Până acum am tratat depozitul ca pe o resursă singulară.  La
 actualizarea modulului URI în secțiunea de mai sus, au fost afectate
@@ -356,33 +356,34 @@ omite parametrul "--stack":
 pinto -r ~/repo pull URI~1.62
 </code>
 
-<h2>Working With Pins</h2>
+<h2>Comanda Pin</h2>
 
-Stacks are a great way to test the effect of changing your application
-dependencies.  But what if the tests didn't pass?  If the problem lies
-within My-App and you can quickly correct it, you might just modify
-your code, release version 2.0 of My-App, and then proceed to upgrade
-URI on the "master" stack.
+Stivele sunt un mod bun de a testa efectul schimbării dependențelor
+aplicației tale.  Dar dacă testele eșuează?  Dacă problema ține de
+My-App și poți să o corectezi rapid, ai putea să modifici codul, să
+lansezi versiunea 2.0 a My-App, și după aceea să actualizezi URI din
+stiva "master".
 
-But if the issue is a bug in URI or it will take a long time to fix
-My-App, then you have a problem.  You don't want someone else to
-upgrade URI, nor do you want it to be upgraded inadvertently to
-satisfy some other prerequisite that My-App may have.  Until you know
-the problem is fixed, you need to prevent URI from being upgraded.
-This is what pins are for.
+Dar dacă problema este o hibă în URI sau va dura mult pentru a remedia
+My-App, atunci ai o problemă.  Nu vei dori ca altcineva să actualizeze
+URI, nici să fie actualizată pe șest ca urmare a unor dependențe pe
+care le are My-App le-ar putea avea.  Trebuie prevenită actualizarea
+URI până când problema este rezolvată.  Pentru aceasta există comanda
+"pin".
 
-<h3>Pinning A Module</h3>
+<h3>Utilizarea Comenzii Pin</h3>
 
-When you pin a module, that version of the module is forced to stay in
-a stack.  Any attempt to upgrade it (either directly or via another
-prerequisite) will fail.  To pin a module, use the <hl>pin</hl> command:
+Când folosești comanda "pin" asupra unui modul, acea versiune a
+modulului este forțată să stea în stivă.  Orice încercare de
+actualizare (directă sau via dependințe) va eșua.  Acest efect se
+obține folosind comanda <hl>pin</hl>:
 
 <code>
 pinto -r ~/repo pin URI
 </code>
 
-If you look at the listing for the "master" stack again, you'll see
-something like this:
+Dacă analizezi listingul stivei "master" încă o dată, vei vedea ceva
+de genul acesta:
 
 <code>
 ...
@@ -392,109 +393,111 @@ rf! URI::Escape                    3.31  GAAS/URI-1.60.tar.gz
 ...
 </code>
 
-The "!" near the beginning of a record indicates the module has been
-pinned.  If anyone attempts to upgrade URI or a add distribution that
-requires a newer version of URI, then Pinto will give a warning and
-refuse to accept the new distributions.  Notice that every module in
-the URI-1.60 distribution has been pinned, so it is impossible to
-partially upgrade a distribution (this situation could happen when a
-module moves into a different distribution).
+Semnul "!" de lângă începutul unei înregistrări indică starea de
+blocare a versiunii modulului în urma comenzii "pin".  Oricine ar
+încerca să actualizeze URI sau să adauge o distribuție care necesită o
+versiune mai nouă a URI, va primi o atenționare din partea Pinto care
+va refuza să accepte noile distribuții.  Notați că toate modulele din
+distribuția URI-1.60 sunt marcate, deci este imposibil să actualizezi
+parțial o distribuție (acestă situație poate apărea atunci când un
+modul este mutat în altă distribuție).
 
-<h3>Unpinning A Module</h3>
+<h3>Ridicarea Restricției Comenzii Pin</h3>
 
-After a while, suppose you fix the problem in My-App or a new version
-of URI is released that fixes the bug.  When that happens, you can
-unpin URI from the stack using the <hl>unpin</hl> command:
+După un timp, să presupunem că ai rezolvat problemele din My-App sau a
+fost lansată o nouă versiune a URI care rezolvă hiba.  În această
+situație, poți să folosești comanda <hl>unpin</hl> asupra URI pentru a
+ridica restricția de actualizare.
 
 <code>
 pinto -r ~/repo unpin URI
 </code>
 
-At this point you're free to upgrade URI to the latest version
-whenever you're ready.  Just as with pinning, when you unpin a module
-it unpins every other module it the distribution as well.
+În acest moment ești liber să actualizezi URI la cea mai nouă
+versiune.  La fel ca în cazul comenzii pin, unpin afectează toate
+modulele distribuției.
 
-<h2>Using Pins And Stacks Together</h2>
+<h2>Pin şi Stack Împreună</h2>
 
-Pins and stacks are often used together to help manage change during
-the development cycle.  For example, you could create a stack called
-"prod" that contains your known-good dependencies.  At the same time,
-you could also create a stack called "dev" that contains experimental
-dependencies for your next release.  Initially, the "dev" stack is
-just a copy of the "prod" stack.
+Funcțiile pin și stack sunt deseori folosite împreună pentru a ajuta
+la administrarea modificărilor din timpul ciclului de dezvoltare.  De
+exemplu, ai putea crea o stivă numită "prod" care conține dependențele
+știute a fi fără probleme.  În același timp, ai putea crea o stivă
+numită "dev" care conține dependențe experimentale pentru noua ta
+lansare.  Inițial, stiva "dev" este doar o copie a stivei "prod".
 
-As development proceeds, you may upgrade or add several modules on the
-"dev" stack.  If an upgraded module breaks your application, then
-you'll place a pin in that module on the "prod" stack to signal that
-it shouldn't be upgraded.
+În cursul procesului de dezvoltare, poți actualiza sau adăuga module
+în stiva "dev".  Dacă vreunul dintre modulele actualizate afectează
+aplicația, atunci poți bloca actualizarea acelui modul în stiva "prod"
+folosind comanda "pin".
 
-<h3>Pins and Patches</h3>
+<h3>Pin Și Petece</h3>
 
-Sometimes you may find that a new version of a CPAN distribution has a
-bug but the author is unable or unwilling to fix it (at least not
-before your next release is due).  In that situation, you may decide
-to make a local patch of the CPAN distribution.
+Pot apărea situații când o nouă versiune a unei distribuții CPAN are o
+hibă pe care autorul nu dorește sau nu poate să o rezolve (cel puțin
+până la termenul limită al noii tale lansări).  În această situație,
+poți decide să aplici un petec local la acea distribuție CPAN.
 
-So suppose that you forked the code for URI and made a local version
-of the distribution called URI-1.60_PATCHED.tar.gz.  You can add it to
-your repository using the <hl>add</hl> command:
+Să presupunem că ai creat o ramificație a codului (fork) pentru URI și
+o versiune locală a distribuției numită URI-1.60_PATCHED.tar.gz.  Poți
+s-o adaugi la depozit folosind comanda <hl>add</hl>:
 
 <code>
 pinto -r ~/repo add path/to/URI-1.60_PATCHED.tar.gz
 </code>
 
-In this situation, it is wise to pin the module as well, since you do
-not want it to be upgraded until you are sure that the new version
-from CPAN includes your patch or the author has fixed the bug by other
-means.
+În această situație, este necesar să aplici și comanda pin, pentru că
+nu este de dorit ca distribuția să fie actualizată până când nu ești
+sigur că noua versiune de pe CPAN include petecul tău sau că autorul a
+rezolvat hiba prin alte mijloace.
 
 <code>
 pinto -r ~/repo pin URI
 </code>
 
-When the author of URI releases version 1.62, you'll want to test it
-before deciding to unpin from your locally patched version.  Just as
-before, this can be done by cloning the stack with the <hl>copy</hl> command.
-Let's call it the "trial" stack this time:
+Când autorul URI lansează versiunea 1.62, vei dori să o testezi înainte
+de a decide să permiți actualizarea (unpin) versiunii locale peticite.  La
+fel ca mai înainte acesta se poate face clonând stiva cu ajutorul comenzii <hl>copy</hl>.
+S-o numim stiva "trial" de această dată:
 
 <code>
 pinto -r ~/repo copy master trial
 </code>
 
-But before you can upgrade URI on the "trial" stack, you'll have to
-unpin it there:
+Dar înainte de a putea face actualizarea URI, trebuie să ridicăm restricția
+de pe stiva "trial", folosind comanda "unpin":
 
 <code>
 pinto -r ~/repo unpin --stack trial URI
 </code>
 
-Now you can proceed to upgrade URI on the stack and try building
-My::App like this:
+Acum poți să actualizezi URI pe stivă și poți să încerci să
+construiești My::App astfel:
 
 <code>
 pinto -r ~/repo pull --stack trial URI~1.62
 cpanm --mirror file://$HOME/repo/stacks/trial --mirror-only My::App
 </code>
 
-If all goes well, remove the pin from the "master" stack and pull the
-newer version of URI back into it.
+Dacă totul este bine, ridică restricția și de pe stiva "master" și
+adaugă noua versiune a URI.
 
 <code>
 pinto -r ~/repo unpin URI
 pinto -r ~/repo pull URI~1.62
 </code>
 
-<h2>Reviewing Past Changes</h2>
+<h2>Recenzia Modificărilor Din Trecut</h2>
 
-As you've probably noticed by now, each command that changes the state
-of a stack requires a log message to describe it.  You can review
-those messages using the <hl>log</hl> command:
+Așa cum probabil ați remarcat deja până acum, fiecare comandă care
+schimbă starea unei stive necesită un mesaj care să o descrie.  Poți
+recenza acele mesaje folosind comanda <hl>log</hl>:
 
 <code>
 pinto -r ~/repo log
 </code>
 
-That should display something like this:
+Rezultatul ar trebui să arate cam așa:
 
 <code>
 revision 4a62d7ce-245c-45d4-89f8-987080a90112
@@ -516,20 +519,20 @@ User: jeff
 ...
 </code>
 
-The header for each message shows who made the change and when it happened.
-It also has a unique identifier similar to Git's SHA-1 digests.  You can
-use these identifiers to see the diffs between different revisions or to
-reset the stack back to a prior revision [NB: this feature is not actually
-implemented yet].
+Antetul fiecărui mesaj arată autorul și data modificării.  Are de
+asemenea un identificator unic similar codificării SHA-1 folosit de
+Git.  Poți folosi acești identificatori pentru a vedea diferențele
+dintre diverse revizii sau ca să resetezi stiva la o revizie
+anterioară [NB: această funcționalitate nu este încă implementată].
 
-<h2>Conclusion</h2>
+<h2>Concluzii</h2>
 
-In this tutorial, you've seen the basic commands for creating a Pinto
-repository and populating it with modules.  You've also seen how to
-use stacks and pins to manage your dependencies in the face of some
-common development obstacles.
+În acest tutorial, ai văzut comenzile de bază pentru crearea și
+popularea unui depozit Pinto.  De asemenea ai văzut cum să folosești
+stivele și comandă "pin" pentru a administra dependențele pentru a
+trece de obstacolele întâlnite în cursul dezvoltării de software.
 
-Each command has several options that were not discussed in this
-tutorial, and there are some commands that were not mentioned here at
-all.  So I encourage you to explore the manual pages for each command
-and learn more.
+Fiecare comandă are mai multe opțiuni pe care nu le-am discutat în
+acest tutorial, și de asemenea comenzi pe care nu le-am menționat aici
+deloc.  În consecință te încurajez să explorezi paginile de manual ale
+fiecărei comenzi și să înveți mai mult.

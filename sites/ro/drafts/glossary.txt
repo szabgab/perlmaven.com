@@ -9,3 +9,6 @@ to print         = ?a printa?
 repository       = depozit, magazie, ?repertoriu?
 release          = lansare, punere în circulație
 prompted         = solicitat
+bug              = hibă, defect
+header           = antet
+footer           = subsol
