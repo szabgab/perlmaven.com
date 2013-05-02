@@ -52,8 +52,8 @@ de la zero.  Pinto este rezultatul acestui efort.
 robustă pentru crearea și administrarea de depozite CPAN, la comandă.
 Are mai multe caracteristici puternice care te ajută să administrezi
 în siguranță toate modulele Perl de care are nevoie aplicația
-ta. Aceste tutorial cum să creezi un depozit CPAN cu Pinto și-ți va
-demonstra unele dintre acele caracteristici.
+ta. Acest tutorial îți va arăta cum să creezi un depozit CPAN cu Pinto
+și-ți va demonstra unele dintre acele caracteristici.
 
 <h2>Instalarea Pinto</h2>
 
@@ -243,9 +243,9 @@ rf  URI::Heuristic                 4.20  GAAS/URI-1.62.tar.gz
 </code>
 
 Dacă noua versiune a modului URI necesită actualizări ale modulelor
-dependente sau dependențe suplimentare, acelea vor fi de asemenea în
-depozit.  Iar la instalarea My::App, vei obține versiunea 1.62 a
-modulului URI.
+dependente sau dependențe suplimentare, acelea vor fi de asemenea
+adăugate în depozit.  Iar la instalarea My::App, vei obține versiunea
+1.62 a modulului URI.
 
 <h2>Lucrul Cu Stive - Stacks</h2>
 
@@ -367,9 +367,8 @@ stiva "master".
 Dar dacă problema este o hibă în URI sau va dura mult pentru a remedia
 My-App, atunci ai o problemă.  Nu vei dori ca altcineva să actualizeze
 URI, nici să fie actualizată pe șest ca urmare a unor dependențe pe
-care le are My-App le-ar putea avea.  Trebuie prevenită actualizarea
-URI până când problema este rezolvată.  Pentru aceasta există comanda
-"pin".
+care My-App le-ar putea avea.  Trebuie prevenită actualizarea URI până
+când problema este rezolvată.  Pentru aceasta există comanda "pin".
 
 <h3>Utilizarea Comenzii Pin</h3>
 
@@ -529,7 +528,7 @@ anterioară [NB: această funcționalitate nu este încă implementată].
 
 În acest tutorial, ai văzut comenzile de bază pentru crearea și
 popularea unui depozit Pinto.  De asemenea ai văzut cum să folosești
-stivele și comandă "pin" pentru a administra dependențele pentru a
+stivele și comanda "pin" pentru a administra dependențele pentru a
 trece de obstacolele întâlnite în cursul dezvoltării de software.
 
 Fiecare comandă are mai multe opțiuni pe care nu le-am discutat în
