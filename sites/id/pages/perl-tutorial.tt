@@ -1,4 +1,4 @@
-=title Perl Tutorial in LANGUAGE
+=title Perl Tutorial in Indonesian
 =timestamp 2012-05-02T22:45:56
 =status show
 =original perl-tutorial
@@ -15,11 +15,12 @@
 
 
 <ul>
+  <li><a href="/panduan-memasang-dan-memulai-perl">Panduan Memasang dan Memulai Perl</a></li>
 <!--
   <li><a href=""></a></li>
 -->
 
 </ul>
 
-For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
+For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
 

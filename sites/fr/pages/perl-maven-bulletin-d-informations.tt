@@ -15,17 +15,17 @@
 =social 0
 
 
-Voulez-vous vraiment apprendre Perl et l'utiliser correctement?
+Voulez-vous vraiment apprendre Perl et l'utiliser correctement ?
 
-Pour être sûr de ne manquer aucun article, il vous suffit de vous inscrire au bulletin d'information.
-Je vous promet que votre adresse courriel ne sera pas vendu à des polluposteurs. Votre confiance vaut beaucoup plus ce qu'ils pourraient payer.
+Pour être sûr de ne manquer aucun article, il vous suffit de vous inscrire au bulletin d'informations.
+Je vous promet que votre adresse courriel ne sera pas vendue à des polluposteurs. Votre confiance vaut beaucoup plus que ce qu'ils pourraient payer.
 Après tout, j'espère que vous aimerez ce que j'écris et que vous le recommenderez à d'autres. Et un jour peut-être, vous acheterez même un de mes produits.
-En attendant ce jour, profitez pleinement du contenu gratuit.
+En attendant ce jour, profitez pleinement du contenu gratuit !
 
 <form method="POST" action="/register" name="registration_form">
-Courriel: <input name="email" />
+Courriel : <input name="email" />
 <input type="submit" value="S'abonner" />
 </form>
 
-En bonus, ceux qui s'abonnent au bulletin d'information recevra aussi une copie gratuite du <a href="/perl-maven-livre-de-recettes">livre des recettes de Perl Maven</a>.
+En bonus, ceux qui s'abonnent au bulletin d'informations recevront aussi une copie gratuite du <a href="/perl-maven-livre-de-recettes">livre des recettes de Perl Maven</a>.
 
