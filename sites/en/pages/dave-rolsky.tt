@@ -14,7 +14,7 @@
 
 =abstract start
 
-What does a vegetarian music compositor do when he wants to send e-mails?
+What does a vegan music composer do when he wants to send e-mails?
 
 Dave Rolsy is one of the most prolific CPAN authors. He created DateTime, Log::Dispatch and tons of other modules.
 We talked about how he started with Perl and what he has been doing lately. We also discussed his work and
@@ -27,8 +27,7 @@ the Moose training he runs at YAPC::NA. (19:19)
 <div id="text">
 <h2>Show notes</h2>
 <ul>
-  <li><a href="http://twitter.com/houseabsolute">@houseabsolute</a> to reach Dave Rolsky via Twitter.</li>
-  <li><a href="http://blog.urth.org/">House Absolute(ly) Pointless</a> the blog of Dave.</li>
+  <li><a href="http://blog.urth.org/">House Absolute(ly) Pointless</a>, Dave,s blog.</li>
   <li><a href="http://www.houseabsolute.com/">House Absolute Consulting</a></li>
   <li><a href="http://www.linkedin.com/in/kenahoo">Ken Williams</a>, <a href="http://www.masonhq.com/">Mason</a>, <a href="http://www.masonbook.com/">Mason book</a></li>
   <li><a href="http://mercurial.selenic.com/">Mercurial VCS</a></li>
@@ -36,24 +35,22 @@ the Moose training he runs at YAPC::NA. (19:19)
   <li><a href="http://en.wikipedia.org/wiki/Majordomo">Majordomo</a></li>
   <li><a href="http://irc.perl.org/">IRC</a>    Check the #moose channel. Dave is known as <i>autarch</i> on IRC.</li>
   <li><a href="http://rt.cpan.org/">Bug reports in RT</a></li>
-  <li>Animal Advocay Group</li>
-  <li><a href="http://2013.tcvegfest.com/">VegFest in the Twin Cities</a> where Dave is the lead organizer.</li>
+  <li><a href="http://www.exploreveg.org">Compassionate Action for Animals</a></li>
+  <li><a href="http://2013.tcvegfest.com/">Twin Cities Veg Fest</a> where Dave is the lead organizer.</li>
   <li><a href="http://datetime.perl.org/">DateTime</a></li>
 </ul>
 
-Dave works for <a href="http://www.maxmind.com/">Max Mind</a>, a Perl shop that provides GeoIP databases and Fraud detection.
-see the <a href="https://metacpan.org/release/Geo-IP">Geo-IP</a>)
-<a href="">Olaf Alders</a> <a href="http://metacpan.org/">Meta CPAN</a>
+Dave works for <a href="http://www.maxmind.com/">MaxMind</a>, a Perl shop that provides GeoIP databases, web services and fraud detection.
+Dave works with <a href="https://metacpan.org/author/OALDERS">Olaf Alders</a>, one of the people behind <a href="http://metacpan.org/">MetaCPAN</a>.
 
 <h2>CPAN modules</h2>
 <ul>
   <li><a href="http://metacpan.org/author/DROLSKY">Dave Rolsky on CPAN</a></li>
   <li><a href="http://metacpan.org/module/Log::Dispatch">Log::Dispatch</a></li>
-  <li><a href="http://metacpan.org/module/Moo">Moo</a></li>
   <li><a href="http://metacpan.org/module/Moose">Moose</a></li>
-  <li><a href="http://metacpan.org/module/Courriel">Courriel</a>, the a-mail handling library.</li>
+  <li><a href="http://metacpan.org/module/Courriel">Courriel</a>, a modern email parsing and building library.</li>
   <li><a href="http://metacpan.org/module/Pg::CLI">Pg::CLI</a> for calling PostgreSQL command line programs.</li>
-  <li><a href="http://metacpan.org/module/Specio">Specio</a> to replace te built-in type system of Moose and Moo.</li>
+  <li><a href="http://metacpan.org/module/Specio">Specio</a> is an attempt to replace the built-in type system for Moose, and to provide something that works with Moo as well as stand-alone.</li>
 </ul>
 
 <h2>Moose training at YAPC::NA 2013</h2>
