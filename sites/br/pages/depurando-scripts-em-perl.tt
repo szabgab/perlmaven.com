@@ -1,5 +1,5 @@
 ﻿=title Depurando Scripts em Perl
-=timestamp 2013-03-07T19:45:57
+=timestamp 2013-05-02T19:45:57
 =indexes -d, Data::Dumper, print, debug, debugging, $VAR1, $VAR2
 =status show
 =original debugging-perl-scripts
