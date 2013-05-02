@@ -17,3 +17,4 @@ swuecho;Hao Wu;swuecho.png;https://plus.google.com/103923416736713796285
 szabgab;Gabor Szabo;szabgab.png;https://plus.google.com/102810219707784087582
 terrencehan;Terrence Han;terrencehan.png;https://plus.google.com/115247155710052422629
 tudorconstantin;Tudor Constantin;tudorconstantin.jpg;https://plus.google.com/116443916281342539112
+paologianrossi;Paolo Gianrossi;
