@@ -1,4 +1,4 @@
-﻿=title Perl ని ఇన్‌స్టాల్ చెయ్యడం మరియు మొదలుపెట్టడం
+﻿=title Perl ని ఇన్‌స్టాల్ చెయ్యడం మరియు ప్రారంభించడం
 =timestamp 2013-04-22T01:22:02
 =indexes strict, warnings, say, print, chomp, scalar, $
 =status show
@@ -230,6 +230,11 @@ say "World";
 <h2>Exercise 2</h2>
 
 స్క్రిప్ట్ యూసర్ని రెండు నంబర్స్ని ఒక దాని తరువాత మరొకదాన్ని అడగాలి. తరువాత ఆ రెండిటి మొత్తాన్ని ప్రింట్ చెయ్యాలి.
+
+
+<h2>Next</h2>
+
+తరువాతి భాగం  <a href="/perl-on-the-command-line">Command line లో Perl ఉపయోగించడం</a>.
 
 
 

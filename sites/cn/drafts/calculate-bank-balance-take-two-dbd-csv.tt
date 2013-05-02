@@ -15,44 +15,21 @@
 本文作者是<a href="http://www.linkedin.com/pub/darin-mcbride/32/a53/184">Darin McBride</a>, 他就职于 IBM 加拿大实验室，
 如有兴趣，可以参考他写的<a href="https://www.metacpan.org/author/DMCBRIDE">CPAN 模块</a>. -- Gabor
 
-TODO::
-After Gabor answered a user's question on
-<a href="/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">how
-to calculate bank balances in CSV</a>, I suggested that this was just screaming
-for <a href="https://metacpan.org/module/DBD::CSV">DBD::CSV</a>.  Gabor invited
-me to put my fingers where my mouth was, so to speak, and explain in greater
-detail.
 
-缘起：Gabor的文章<a href="/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">怎样利用CSV文件计算账户余额</a>，
-
+缘起：看了Gabor的文章<a href="/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">怎样利用CSV文件计算账户余额</a>，
+我觉得用<a href="https://metacpan.org/module/DBD::CSV">DBD::CSV</a>可能更好，Gabor 邀请我把我的想法写出来分享，于是有了此文。
 
 
 =abstract end
 
-<h2>Why DBD::CSV?</h2>
-
-Nearly every time someone has a question on CSV in Perl, the first thing
-in my mind is always the same thing: DBD::CSV.  The reason for this is two-fold.
-First, when accessing CSV files through DBD::CSV, you're learning and/or using
-two skills that are portable to far more projects than na&iuml;ve splits or
-even using <a href="https://metacpan.org/module/Text::CSV_XS">Text::CSV_XS</a>:
-<b>DBI</b> and <b>SQL</b>. This means that your skill set will grow in ways that are more
-useful to your career, but, more immediately, you will also have a larger
-set of people to whom you can ask for help.  For example, nearly any Database
-Administrator (DBA) should be able to help you with SQL questions, but may
-not be able to help with perl questions.
+<h2>为何用DBD::CSV?</h2>
 
 每次看到有人问Perl 出来 CSV 文件的问题，我总是想到： DBD::CSV。有两个原因：
-一、
+一、用DBD::CSV来处理CSV文件，比自己写程序解析更通用，甚至比<a href="https://metacpan.org/module/Text::CSV_XS">Text::CSV_XS</a>
+更容易移植。
 
 
-The second reason for using DBD::CSV is that it gets you thinking about
-your data differently. Often, in my experience, simply treating the CSV
-as if it were a table in a relational database can be enough of a lightbulb
-moment to realise simpler solutions, even if the computer will spend far
-more time executing them.
-
-二、
+二、如果用DBD::CSV，迫使你把 csv 文件当作关系数据库中的一个表。很多问题反而会因此而简化。
 
 And a bonus reason is that once you realise your data is, well, data,
 the natural transition to another database system (SQLite, DB2, Oracle,
@@ -62,11 +39,16 @@ code with DBD::CSV, transitioning to
 <a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> (the two I
 use the most, YMMV) becomes simpler.
 
-<h2>The Approach</h2>
+还有一个好处就是，用 DBD::CSV 写的代码，一般同样适用于
+<a href="https://metacpan.org/module/DBD::DB2">DBD::DB2</a> 或者
+<a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> 。
+它们是相通的。
+
+<h2>解决问题</h2>
 
 <h2></h2>
 
-So, to start, we will begin with the original CSV:
+先看一下我们的CSV文件：
 
 <code>
 TranID,Date,AcNo,Type,Amount,ChequeNo,DDNo,Bank,Branch
@@ -81,47 +63,35 @@ TranID,Date,AcNo,Type,Amount,ChequeNo,DDNo,Bank,Branch
 13541,10-01-2011,5522341,Cr,2000,19123,,,
 </code>
 
-Nothing different here.  I don't know what all of these fields are
-but the question was simple: <i>How to Calculate and display total balance in
-each account using hash in perl. Without using parse function?</i>
-Ok, not quite simple, so I'm going to also make a few adjustments.  I feel
-Gabor answered this fairly precisely, as well as going on and answering a
-few related questions.  So I'll go in another direction here:
-<i>How to Calculate and display total balance in each account <del>using hash</del> in perl.
-<del>Without using parse function?</del></i>
 
+问题是： <i>怎样计算每个账户的余额？</i>
+
+大致的思路应该是，找出每一个账户的交易，然后根据存入和取出的额度来计算余额。
+如果你了解SQL，你会觉得这样的情形很熟悉。
 
 So, it looks to me like we need to add up all the debits (Dr) and credits
 (Cr), grouped by the account number (AcNo).  This sounds almost exactly
 like SQL, so maybe an SQL solution would be apropos?
 
-<h2>DBI setup</h2>
 
-First, we need to do some set up.  This setup is definitely longer than
-any solution using Text::CSV_XS, but since I mostly cut and paste it now
-from project to project, it's not too bad.  And it's the same setup (mostly)
-as with other drivers.
 
-As always, the safety net:
+<h2>DBI 设置</h2>
+
+
+除了在程序的初始的：
 
 <code lang="perl">
 use strict;
 use warnings;
 </code>
 
-<p>(Which saved me a fair bit of pain while developing this code.) And then
-the magic:</p>
+还需要：
 
 <code lang="perl">
 use DBI;
 </code>
 
-Note that we don't load the CSV driver, but only <a href="https://metacpan.org/module/DBI">DBI</a>.
-Shortly, DBI will load DBD::CSV for us.  This is convenient in that there will
-only be one place where we're specifying what backend database we're using,
-meaning less to change should we desire to upgrade to a full-fledged database
-later.  Unlikely here, but, again, we're not simply trying to get this total,
-we're learning DBI and SQL here.
+以上代码中，我们并没有 写<hl> use DBD::CSV </hl>， 因为 <a href="https://metacpan.org/module/DBI">DBI</a> 会自动为我们加载。
 
 <code lang="perl">
 use File::Basename qw(dirname);

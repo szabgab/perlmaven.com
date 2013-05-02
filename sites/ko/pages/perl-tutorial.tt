@@ -17,6 +17,7 @@
 <ul>
   <li><a href="/string-functions-length-lc-uc-index-substr">문자열 함수: length, lc, uc, index, substr</a></li>
   <li><a href="/trim">trim - Perl로 문자열의 앞뒤 공백 문자 제거하기</a></li>
+  <li><a href="/scope-of-variables-in-perl">Perl에서의 변수 영역</a></li>
 
 <!--
   <li><a href=""></a></li>
@@ -24,5 +25,5 @@
 
 </ul>
 
-For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>
+For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
 

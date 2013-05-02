@@ -1,0 +1,78 @@
+= abstract start
+
+<i>
+Cet article a été écrit par le contributeur <a href="">Jeffrey Ryan Thalhammer</a>, auteur de Pinto et de Perl::Critic. Jeff est un ... TBD.
+Jusqu'au 7 mai 2013, Jeff mène une <a href="https://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint">campagne de collecte de fonds</a>
+pour financer le développement de la fonctionnalité qui vous permettra de spécifier <b>l'intervalle des versions des modules avec Pinto</b>.
+</i>
+
+Une des meilleures choses à propos de Perl : tous les modules de code source libre
+qui sont disponibles sur CPAN. Mais maintenir tous ces modules est
+difficile. Chaque semaine, il y a des centaines de nouvelles versions et vous
+ne savez jamais quand une nouvelle version d'un module va contenir un bug qui
+plantera votre application.
+
+= abstract end
+
+Une stratégie pour résoudre ce problème est de construire votre propre répertoire CPAN
+personnalisé qui contient uniquement les versions des modules que vous voulez.
+Ensuite, vous pouvez utiliser la chaîne d'outils de CPAN pour construire votre
+application à partir des modules dans votre espace de stockage personnalisé sans être
+exposé à tous les taux de désabonnement dans le CPAN public.
+
+Au fil des ans, j'ai construit plusieurs dépôts CPAN personnalisés à l'aide
+des outils comme <a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a>
+et <a href="https://metacpan.org/module/CPAN::Site">CPAN::site</a>.
+Mais ils semblaient toujours maladroit
+et je n'ai jamais été très heureux avec eux. Il y a quelques années, un
+client m'a embauché pour construire un autre CPAN personnalisé. Mais cette fois, je
+eu l'occasion de repartir à zéro. Pinto est le résultat de ce travail.
+
+<a href="https://metacpan.org/module/Pinto">Pinto</a> est un outil robuste
+pour créer et gérer un référentiel CPAN personnalisé.
+Il dispose de plusieurs fonctionnalités puissantes qui vous aideront en toute sécurité
+à gérer tous les modules Perl dont dépend votre application. Ce
+tutoriel va vous montrer comment créer un CPAN personnalisé avec Pinto et
+démontrer certaines de ses caractéristiques.
+
+<h2>Installer Pinto</h2>
+
+Pinto est disponible sur CPAN et peut être installé comme tout autre module
+en utilisant les utilitaires <hl>cpan</hl> ou <hl>cpanm</ hl>. Mais Pinto ressemble plus à un
+service qu'à une bibliothèque. C'est un outil que vous utilisez pour gérer votre
+code de l'application, mais Pinto n'est pas réellement partie de votre application.
+Je vous recommande donc d'installer Pinto comme une application autonome avec
+ces deux commandes :
+
+<code>
+curl-L http://getpinto.stratopan.com | bash
+source ~ /opt/local/PINTO/etc/bashrc
+</code>
+
+Ceci va installer Pinto dans <hl>~/opt/local/pinto</hl> et ajouter les répertoires nécessaires
+à vos chemins <hl>PATH</hl> et <hl>MANPATH</ hl>. Tout est autonome :
+l'installation Pinto ne change pas le reste de votre développement
+d'environnement, et inversement, des changements dans votre environnement de développement n'affectera pas
+Pinto.
+
+<h2>Explorer Pinto</h2>
+
+Comme pour tout nouvel outil, la première chose que vous devez savoir est comment obtenir de l'aide :
+
+<code>
+pinto commands         # Affiche liste des commandes disponibles
+pinto help   <COMMAND> # Affiche résumé des options et des arguments pour <COMMANDE>
+pinto manual <COMMAND> # Affiche le manuel complet pour <COMMANDE>
+</code>
+
+Pinto est également livré avec d'autres documents, y compris un tutoriel et un
+guide de référence rapide. Vous pouvez accéder à ces documents à l'aide de ces
+commandes :
+
+<code>
+man Pinto::Manuel::Introduction # Explique les concepts basiques de Pinto
+man Pinto::Manuel::Installing   # Suggestions pour l'installation de Pinto
+man Pinto::Manuel::Tutorial     # Un tutoriel sur Pinto
+man Pinto::Manuel::QuickStart   # Un résumé des commandes courantes
+</code>
+

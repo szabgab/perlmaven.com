@@ -16,7 +16,7 @@
 <i>Ceci est un article du contributeur <a href="http://www.linkedin.com/pub/darin-mcbride/32/a53/184">Darin McBride</a>.
 Darin est un développeur de logiciels au laboratoire canadien d'IBM et est l'auteur de <a href="https://www.metacpan.org/author/DMCBRIDE">plusieurs modules Perl sur CPAN</a>. Père de trois enfants, il essaie de déterminer comment <hl>use more 'sleep';</hl>. -- Gabor</i>
 
-Après que Gabor a répondu à la question d'un utilisateur <a href="http://perl5maven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">Comment calculer les soldes bancaires en CSV</a>, j'ai suggéré que cela était un exemple criant pour utiliser <a href="https://metacpan.org/module/DBD::CSV">DBD::CSV</a>. Gabor m'a invité à synchroniser mes doigts avec ma bouche - pour ainsi dire - afin de m'expliquer plus en détails.
+Après que Gabor a répondu à la question d'un utilisateur <a href="http://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">Comment calculer les soldes bancaires en CSV</a>, j'ai suggéré que cela était un exemple criant pour utiliser <a href="https://metacpan.org/module/DBD::CSV">DBD::CSV</a>. Gabor m'a invité à synchroniser mes doigts avec ma bouche - pour ainsi dire - afin de m'expliquer plus en détails.
 
 =abstract end
 
@@ -62,8 +62,7 @@ use strict;
 use warnings;
 </code>
 
-<p>(Ce qui m'a sauvé un peu juste de la douleur pendant l'élaboration de ce code.) Et puis
-la magie :</p>
+<p>(Ce qui m'a sauvé pas mal de douleur pendant l'élaboration de ce code.) Et puis la magie :</p>
 
 <code lang="perl">
 use DBI;
@@ -88,9 +87,9 @@ Ici, nous chargeons quelques modules qui rendent notre travail un peu plus facil
 
 Les autres paramètres ont besoin d'un peu plus d'explication.
 
-f_dir est le répertoire où DBD::CSV va chercher tous les fichiers CSV. Dans cet exemple, je précise que le répertoire est le même que celui du script. Si ce n'est pas votre cas, vous aurez besoin d'ajuster de manière appropriée. Dans <a href="http://perl5maven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">l'article original</a>, Gabor a juste choisi le répertoire de travail courant, ce qui est aussi une approche valable.
+f_dir est le répertoire où DBD::CSV va chercher tous les fichiers CSV. Dans cet exemple, je précise que le répertoire est le même que celui du script. Si ce n'est pas votre cas, vous aurez besoin d'ajuster de manière appropriée. Dans <a href="http://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">l'article original</a>, Gabor a juste choisi le répertoire de travail courant, ce qui est aussi une approche valable.
 
-f_ext est l'extension ajoutée au nom d'une table afin de déterminer le nom du fichier lié à cette table. Avec cette extension, essayer <i>SELECT ... FROM foo</i> signifie que DBD::CSV va lire le fichier foo.csvi (dans le f_dir spécifié ci-dessus).
+f_ext est l'extension ajoutée au nom d'une table afin de déterminer le nom du fichier lié à cette table. Avec cette extension, essayer <i>SELECT ... FROM foo</i> signifie que DBD::CSV va lire le fichier foo.csv (dans le f_dir spécifié ci-dessus).
 
 csv_eol indique à DBD::CSV quelle chaîne de caractères représente la fin de ligne. Je pense que le défaut est <hl>\r\n</hl>, mais comme je suis sous Linux, ce n'est pas approprié pour moi.
 
@@ -119,13 +118,13 @@ Veuillez remarquer quelques points. La première instruction prépare le SQL que
 
 Le SQL utilise également une valeur de paramètre fictif. Il s'agit de s'assurer que les valeurs non valides ne passent pas au travers. Dans ce cas particulier, la valeur est aussi codéee en dur, et donc cela ne nous offre pas grand chose d'autre que prise de contact et expérience.
 
-Le SQL lui-même est un peu plus compliqué. Nous disons au moteur SQL que nous voulons obtenir le numéro de compte (<b>NuCo</b>) et le total des <b>Montant</b>s de la table <b>banquetran</b> (dont f_ext ci-dessus indiquera à DBD::CSV de relier cette table avec le fichier banquetran.csv), mais lorsque Type est 'Dr', nous voulons compter <b>Montant</b> comme un montant positif, sinon le considérer comme un montant négatif. À ce stade, je ne suis pas sûr si le zéro est requis ici ou pas, mais d'abord nous allons obtenir quelque chose qui fonctionne, et ensuite nous pourrons l'ajuster. La clause <b>GROUP BY</b> indique au moteur SQL que nous voulons que la somme des montants soit appliquée par NuCo, i.e. chaque NuCo aura une somme indépendante des autres.e
+Le SQL lui-même est un peu plus compliqué. Nous disons au moteur SQL que nous voulons obtenir le numéro de compte (<b>NuCo</b>) et le total des <b>Montant</b>s de la table <b>banquetran</b> (dont f_ext ci-dessus indiquera à DBD::CSV de relier cette table avec le fichier banquetran.csv), mais lorsque Type est 'Dr', nous voulons compter <b>Montant</b> comme un montant positif, sinon le considérer comme un montant négatif. À ce stade, je ne suis pas sûr si le zéro est requis ici ou pas, mais d'abord nous allons obtenir quelque chose qui fonctionne, et ensuite nous pourrons l'ajuster. La clause <b>GROUP BY</b> indique au moteur SQL que nous voulons que la somme des montants soit appliquée par NuCo, i.e. chaque NuCo aura une somme indépendante des autres.
 
-Il y a beaucoup plus à apprendre sur le SQL que ce que cet exemple peut montrer, mais comme mentionné précédemment, il y a beaucoup plus d'endroits pour apprendre SQL que il y en a pour apprendre Text::CSV_XS. Et vous pouvez utiliser ces ressources pour améliorer vos connaissances en SQL. De plus, étant un novice en SQL, je suis sans aucun doute pas la meilleure personne pour l'enseigner.
+Il y a beaucoup plus à apprendre sur le SQL que ce que cet exemple peut montrer, mais comme mentionné précédemment, il y a beaucoup plus d'endroits pour apprendre SQL qu'il y en a pour apprendre Text::CSV_XS. Et vous pouvez utiliser ces ressources pour améliorer vos connaissances en SQL. De plus, étant un novice en SQL, je ne suis sans aucun doute pas la meilleure personne pour l'enseigner.
 
-Après avoir compilé le code SQL, nous appelons ensuite <hl>execute</hl> qui exécute la requête SQL, puis <hl>fetchall_arrayref</hl> qui fait à peu près exactement ce qu'il dit: retourne toutes les lignes comme la seule référence à un tableau. Nous utilisons enfin Data::Dumper pour afficher quel type de données nous avons. donc nous savons quelles sont les étapes à prendre par la suite.
+Après avoir compilé le code SQL, nous appelons ensuite <hl>execute</hl> qui exécute la requête SQL, puis <hl>fetchall_arrayref</hl> qui fait à peu près exactement ce qu'il dit : retourne toutes les lignes comme la seule référence à un tableau. Nous utilisons enfin Data::Dumper pour afficher quel type de données nous avons. donc nous savons quelles sont les étapes à prendre par la suite.
 
-L'exécution de ce code donne le résultat suivant:
+L'exécution de ce code donne le résultat suivant :
 
 <code lang="perl">
 $ perl banquetran.pl
@@ -137,7 +136,7 @@ DBD::CSV::db prepare failed: Bad table or column name: '='
  [for Statement "
            SELECT
              NuCo,
-             SUM(CASE WHEN Type = ? THEN Amount ELSE 0 - Amount DONE)
+             SUM(CASE WHEN Type = ? THEN Montant ELSE 0 - Montant DONE)
            FROM
              banquetran
            GROUP BY
@@ -148,18 +147,18 @@ DBD::CSV::db prepare failed: Bad table or column name: '='
  [for Statement "
              SELECT
                NuCo,
-               SUM(CASE WHEN Type = ? THEN Amount ELSE 0 - Amount DONE)
+               SUM(CASE WHEN Type = ? THEN Montant ELSE 0 - Montant DONE)
              FROM
                banquetran
              GROUP BY
                NuCo"] at banquetran.pl line 32.
 </code>
 
-Woops. Il apparaît que SQL::Déclaration ne supporte pas la syntaxe <b>CASE</b>, ce que d'autres bases de données peuvent faire. Eh bien, cela signifie que nous devons faire un peu plus de travail en Perl pour compenser. Et si nous voulons passer à une autre base de données à l'avenir, nous pouvons toujours le noter afin que nous puissions y revenir. La solution que nous finirons par utiliser travaillera également avec les autres bases de données, bien sûr, mais peut-être pas aussi "pur" SQL. Et, en général, les autres bases de données ont en fait ce code en C et seront donc en mesure de faire ce que nous allons faire plus rapidement. En outre, en client / serveur de bases de données (où la base de données n'est pas sur la même machine que le code Perl qui demande des données), cela peut également réduire la quantité de trafic réseau. Si ces préoccupations sont de toute importance pour votre projet, bien sûr, cela dépendra de ce que vous avez comme contraintes.
+Oups! Il semble que SQL::Déclaration ne supporte pas la syntaxe <b>CASE</b>, ce que d'autres bases de données peuvent faire. Eh bien, cela signifie que nous devons faire un peu plus de travail en Perl pour compenser. Et si nous voulons passer à une autre base de données à l'avenir, nous pouvons toujours le noter afin que nous puissions y revenir. La solution que nous finirons par utiliser travaillera également avec les autres bases de données, bien sûr, mais peut-être pas aussi "pur" SQL. Et, en général, les autres bases de données ont en fait ce code en C et seront donc en mesure de faire ce que nous allons faire plus rapidement. En outre, en client / serveur de bases de données (où la base de données n'est pas sur la même machine que le code Perl qui demande des données), cela peut également réduire la quantité de trafic réseau. Si ces préoccupations sont de toute importance pour votre projet, bien sûr, cela dépendra de ce que vous avez comme contraintes.
 
 <h2>Nouvelle tentative avec SQL simple</h2>
 
-Pour simplifier l'exemple SQL afin que SQL::Déclaration l'accepte, j'ai opté pour que <b>GROUP BY</b> s'applique à la fois à l'NuCo et à Type. Cela va me permettre de totaliser le champ <b>Montant</b> pour les débits et les crédits, par compte, et d'avoir seulement une soustraction de plus à faire plus tard.
+Pour simplifier l'exemple SQL afin que SQL::Déclaration l'accepte, j'ai opté pour que <b>GROUP BY</b> s'applique à la fois à NuCo et à Type. Cela va me permettre de totaliser le champ <b>Montant</b> pour les débits et les crédits, par compte, et d'avoir seulement une soustraction de plus à faire plus tard.
 
 <code lang="perl">
 my $sth = $dbh->prepare(q[
@@ -207,17 +206,17 @@ $VAR1 = [
         ];
 </code>
 
-Maintenant, nous allons quelque part. Le total des débits de 5522341 est de 7000, celui des crédits de 5131342 est de 5120, etc.
+Maintenant, nous allons vers la bonne voie. Le total des débits de 5522341 est de 7000, celui des crédits de 5131342 est de 5120, etc.
 Notez qu'il n'y aucun ordre logique dans le résultat. C'est parce que nous n'avons pas demandé au moteur SQL d'utiliser <hl>ORDER BY</hl> sur au moins un champ. Le résultat revient dans un ordre non prédéfini. Il faudrait préciser "ORDER BY NuCo, Type" pour le trier par numéro de compte et puis, au sein de chaque numéro de compte, par type (Cr < Dr, bien sûr).
 
 Pour effectuer l'équivalent SUM(CASE...) de la première tentative, je commence par le remplissage du tableau de hachage avec ce qui précède :
 
 <code lang="perl">
 # additionner débits et crédits
-my %totals;
+my %totaux;
 for my $r (@$res)
 {
-    $totals{$r->{NuCo}}{$r->{Type}} = $r->{SUM};
+    $totaux{$r->{NuCo}}{$r->{Type}} = $r->{SUM};
 }
 </code>
 
@@ -233,17 +232,17 @@ my $tb = Text::Table->new("Numéro\  de\ncompte", "Total\n\n (Rs)");
 
 $tb->load(
           map {
-              [ $_, $totals{$_}{Dr} - $totals{$_}{Cr} ]
-          } sort keys %totals
+              [ $_, $totaux{$_}{Dr} - $totaux{$_}{Cr} ]
+          } sort keys %totaux
          );
 
 print $tb;
 </code>
 
-Nous chargeons Text::Table, puis créons un objet de classe Text::Table. Son constructeur prend les en-têtes de colonnes à utiliser, ce que je fais donc. Le <hl>load</h> peut être écrit un peu plus lisiblement, mais, encore une fois, le point principal se situant là où nous faisons la soustraction de Dr avec Cr.
+Nous chargeons Text::Table, puis créons un objet de classe Text::Table. Son constructeur prend les en-têtes de colonnes à utiliser, ce que je fais donc. Le <hl>load</hl> peut être écrit un peu plus lisiblement, mais, encore une fois, le point principal se situe là où nous faisons la soustraction de Dr avec Cr.
 
 Text::Table veut chaque ligne comme une référence de tableau, ce que nous faisons en les créant avec <hl>map</hl>.
-Le dernier paramètre de <hl>map</hl> est la liste ordonnée (<hl>sort</hl>) des clés (<hl>keys</hl>) de %totals. (que nous avons obtenu à partir de la base de données sous le champ NuCo). Notez que ceci est, par défaut, un tri alphanumérique. Si vous souhaitez effectuer un tri numérique, vous aurez à l'indiquer à Perl.
+Le dernier paramètre de <hl>map</hl> est la liste ordonnée (<hl>sort</hl>) des clés (<hl>keys</hl>) de %totaux (que nous avons obtenu à partir de la base de données sous le champ NuCo). Notez que ceci est, par défaut, un tri alphanumérique. Si vous souhaitez effectuer un tri numérique, vous aurez à l'indiquer à Perl.
 Le premier paramètre de <hl>map</hl> permet de créer pour chaque élément de la liste indiquée précédemment un tableau anonyme dont la première colonne est la clé (NuCo) et la deuxième colonne est la soustraction de Dr avec Cr (le total que nous voulions dès le départ).
 <hl>map</hl> retourne le tableau de tableaux anonymes (un pour chaque compte).
 
@@ -283,10 +282,10 @@ $sth->execute();
 my $res = $sth->fetchall_arrayref();
 
 # additionner débits et crédits
-my %totals;
+my %totaux;
 for my $r (@$res)
 {
-    $totals{$r->{NuCo}}{$r->{Type}} = $r->{SUM};
+    $totaux{$r->{NuCo}}{$r->{Type}} = $r->{SUM};
 }
 
 use Text::Table;
@@ -294,8 +293,8 @@ my $tb = Text::Table->new("Numéro\  de\ncompte", "Total\n\n (Rs)");
 
 $tb->load(
           map {
-              [ $_, $totals{$_}{Dr} - $totals{$_}{Cr} ]
-          } sort keys %totals
+              [ $_, $totaux{$_}{Dr} - $totaux{$_}{Cr} ]
+          } sort keys %totaux
          );
 
 print $tb;
@@ -311,7 +310,4 @@ compte  (Rs)
 5131342  880
 5522341 4000
 </code>
-
-15 minutes 2013-04-12 09:42 09:57
-15 minutes 2013-04-12 22:30 01:25
 

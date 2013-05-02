@@ -91,14 +91,14 @@ Any ~~ CODE 相当与 CODE->(Any)
 <code lang="perl">
 3 ~~ sub { $_[0] % 2 == 0 };  # false
 2 ~~ sub { $_[0] % 3 == 0 };  # false
-<code>
+</code>
 
 如果把 Any ~~ CODE 与 Any ~~ Array 结合起来，将变得更有意思。
 
 <code lang="perl">
 7 ~~ [sub { $_[0] % 2 == 0 }, sub { $_[0] % 3 == 0 }];  # false
 4 ~~ [sub { $_[0] % 2 == 0 }, sub { $_[0] % 3 == 0 }];  # true
-<code>
+</code>
 
 7 既不能被 2 也不能被3 整除，所以结果是 false；
 4 能被 2 整除，所以结果为 true。不过这种情形应该很少用到。
