@@ -28,6 +28,8 @@ the Moose training he runs at YAPC::NA. (19:19)
 
 [2013-05-03 Fri 04:00]--[2013-05-03 Fri 04:45]: First pass 0:00--3:00
 
+[2013-05-03 Fri 06:00]
+
 =timings end
 
 =transcription start
@@ -50,7 +52,50 @@ DR: [1:13] Ok, sure.  So, back in '95/'96, I think, I was in grad school for mus
 
 GS: [2:35] Back then everyone was perl.
 
-DR: [2:37] Exactly, exactly.  When I graduated from the masters program, I was kindof burned out on the whole academic thing, and so I decided to not get a PhD, so I end up getting a job in support at a local insurance company in St. Paul.  I lived in Minneapolis, Minnesota.  [3:00]
+DR: [2:37] Exactly, exactly.  When I graduated from the masters program, I was kindof burned out on the whole academic thing, and so I decided to not get a PhD, so I end up getting a job in support at a local insurance company in St. Paul.  I lived in Minneapolis, Minnesota.  [3:00]  And therre was kindof downtime.  When things weren't crashing, there was free time, because we weren't like a support line for Dell, it was just for the company, so if things there were working, we had time.  So I kindof taught myself more programming there, and I was actually working on another project that I never finished, which was a web UI for MajorDomo, if anybody remembers MajorDomo.
+
+GS: People still use it.
+
+DR: Oh wow.  Oh my God.  Ok.  So I learned more of Perl there, and then eventually after about 15 months of that job, I got my first programming job, this was during the first dot-com boom, when anybody with a, I'll be polite, a butt, could get a seat, because that's all you needed was a butt to put in the seat to be a programmer, [3:50] so I had no idea what te heck I was doing, but I managed to get a programming job.  And it was a Perl place, and so that was kindof where it all started.  And actually, that job I met Ken Williams, who is the person who introduced me to Mason, and we eventually wrote the Mason book together, and he introduced me to more of the Perl comunity stuff, [4:10] pushed me to put stuff on CPAN, told me about YAPC, things like that.  So that's where it really got started.  
+
+GS: [4:16] Great.  So you started, you started to lear Perl, you had this, you were involed in a lot of projects, right?  I mean, if you look at the CPAN directory, then you see all kinds of diverse things.
+
+DR: [4:33] Yeah, I've done... I think the first thing I uploaded was
+someting that's kindof a predecessor to Log::Dispatch.  It was like a
+logging module I had written for the company I was working at, and I
+got permission to release it, and it was really teriible, but I
+uploaded that, and then [4:49] I think I wrote, I actually wrote a
+small bug tracking system for our support team, and I had done my own
+templating system, I think for that, I don't know, this was so long
+ago.  And then Ken was like "You should look at Mason".  So then I
+started using Mason, and then I started contributing to Mason, [5:05]
+So, I mean, for some of the things I worked on its projects that other
+people have started, probably most notably Mason and Moose, where I
+got excited about the project, and, you know, [5:19] if it doesn't
+work the way I want it, then patches welcome, and I am kindof a sucker
+for that, so I end up doing the patches, and then working on docs, and
+all of these other things, [5:29] and then for other stuff, I mean I
+have lots of stuff I have uploaded to CPAN that I don't think anybody
+has ever used, including me.  There is stuff that is up there that is
+just experimental, or that's long abandoned. [5:39] so even though I
+have tons of CPAN modules, I suspect maybe, I don't know, 25% of them,
+35% of them see any use, but some of them are used pretty hevuly.  So
+it's kinda...
+
+GS: [5;50] Yeah, I think I mean, it's like a trademark.  If I know
+that you wrote it, then I know that then it's "it's ok".  Maybe I
+shouldn't trust everything that you wrote.
+
+DR: [5:59] (laugh) I sure wouldn't trust everything!  I'm embarassed
+by my old code.  I look at Log::Dispatch, which is one of the earliest
+ones, and I know lots of people use it, and I still use it, but
+whenever I have to hack on it, I'm like "Ugh, not this again".
+
+GS: Oh, you don't like it anymore.
+
+DR: Someday I'll just [6;13] [garbled] use Moo or something.
+
+GS: [6;17]
 
 =transcription end
 
