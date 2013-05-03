@@ -24,6 +24,30 @@ the Moose training he runs at YAPC::NA. (19:19)
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/d-K_uoIrUKQ" frameborder="0" allowfullscreen></iframe>
 
+=transcription start
+
+GS: Hi, this is GS speaking.  This is the perlmavin tv show again, and with me is DR, who is the author of Date::Time and tons of other modules on CPAN.  He is also the author of the, or of at least a large part of the Moose tutorial and documentation.  Hi Dave.  How are you?
+
+DR: Hi.  I am good how about you?
+
+GS: I am fine.  Still a bit nervous about this tv interviews, but hopefully I get over all this 
+
+DR: What could go wrong with technology.  Hey were progrqammers, we know it always works, it's perfect, so...
+
+GS: I can tell you in one of my previous interviews, the aspect retio of the camera of the other side was changing, so you can see that his head was going up and down.  Very interesting.
+
+DR: Very psychadelic.
+
+GS: Yeah.  Anyway.  So.  [1:00] Welcome to the show, and I would like to start with you from the beginning, becuase you have these tons of modules on CPAN, but where do we start?  How did you get involved in Perl.
+
+DR: [1:13] Ok, sure.  So, back in '95/'96, I think, I was in grad school for music composition, that's what my degree is in, and I was, at the time I had recently met Matt Makel [SP], who people might recognize as the author of Mercurial, and he's also done Linux development, so I knew him back, way back then, actually through a local vegetarian group, and I wanted to write a web app for the composers at my school to list all of our pieces, so that performers could find what we had written and may be sort, and you know, "I want to find something that includes claranet" or something like that, [2:00] and so I had done a little programming when I was a kid -- I got my first computer when I was young, 5 or 6, so I asked Matt, "what should I learn to do this?  What's the right language?"  So he pointed me at Perl. [2:15] I think I got a Perl book sometime when I was in grad school.  This app never materialized.  It was a good idea, but it didn't happen, like many projects, right?  So this should be familiar to everybody [2:24] watching this: "Projects You Never Did".  That got me started looking at perl, which is very ironic, since Matt is totally a Python guy these days, anyway.
+
+GS: [2:35] Back then everyone was perl.
+
+DR: [2:37] Exactly, exactly.  When I graduated from the masters program, I was kindof burned out on the whole academic thing, and so I decided to not get a PhD, so I end up getting a job in support at a local insurance company in St. Paul.  I lived in Minneapolis, Minnesota.  [3:00]
+
+=transcription end
+
 <div id="text">
 <h2>Show notes</h2>
 <ul>
