@@ -145,7 +145,86 @@ GS: Oh, you don't like it anymore.
 
 DR: Someday I'll [6:13] [garbled] to use Moo or something.
 
-GS: [6;17]
+GS: [6:17] Ok.  But would you for.. if you had already mentioned Moo
+and would you help somebody if he wanted to rewrite it in Moo or start
+improving it and step by step.  It's not like from scratch.
+
+DR: Sure! Sure.
+
+GS: [6:33] Because I think that would be crazy.  Probably it would be
+better, I don't know, class by class to turn it to Moo?
+
+DR: [6:43] Yeah.  It really wouldn't be hard.  Log::SDispatch, in
+particular, is really not much code.  It's a pretty simple module.  So
+the big things I want to do for that are just kindof clean it up,
+possibly use Moo, [6:54] and also to split it up into separate
+distros.  Right now its kindof an ugly distro where it ships all these
+output modules, like for Apache logs [7:04] whose using mod_perl
+anymore?  I'm not, so I don't need it.  It has a syslog output and
+four different ways to send email, and these should all be separate
+modules.  [7:12] Cause right now you install it and it doesn't have
+any of the prereqs declared, 'cause otherwise I'd need to declare tons
+of prereqs, and it would be a mess.  [7:21] So splitting up into
+different distros would be a nice thing to do too.  [7:26] and we
+could [garbled].
+
+GS: [7:26] [garbled] [7:28] Sorry?
+
+DR: [7:30] It would just make it easier to manage, I think.
+
+GS: [7:32] Yeah.  Yeah, probably.  So actually, I didn't think about
+it earlier, but this could be a [7:39] way to introduce new
+programmers, or people who are not new to programming, maybe, but new
+to Perl and would like to have some project [7:49] and they think,
+well, "what can we do?", and here is a module that is heavily used,
+probably, I know I use it, and probably a lot of other people use it,
+[8:00] and can be refactored to something more modern.
+
+DR: [8:04] Yeah, definitely, and it's reasonably ammenable [SPELLING]
+to that since each subclass, each output class is pretty small,
+doesn't do much, you could convert them one at a time.  I think that's
+definitely a reasonable project.
+
+GS: [8:17] That's interesting.  So, what are you working these days?
+
+DR: [8:21] For paid work, or free for software stuff?
+
+GS: [8:25] I don't know, start with free software?
+
+DR: [8:28] Not too much.  The last couple of years have been, I just
+have a lot of stuff going on in my life. [8:38] Some health problems
+for me and my wife, which have been distracting, and also I am doing a
+lot of activism related to animal advocacy [8:47], so last year, the
+group I work with, we did a big veg-fest in the Twin Cities, and I was
+kindof the lead organizer for that, so I spent a lot of time on that.
+And now we're doing it again [8:58], and I'm still the lead organizer.
+So, you know, things like that can be distracting.  It's kindof like
+putting on a YAPC, basically, in terms of amount of work, to give
+people a sense of perspective. [9:08] Probably the biggest thing I've
+done recently, let's see, well, there's that module, I don't know if
+people have seen, called Courriel, which is a terrible pronounciation
+(SPELLING) [9:16], which is the French word, official French word for
+email, that France uses.  But I just picked it because the Email::
+name space was already taken, and it's kindof an attempt to improve on
+the email [9:27] Email::Mime modules, which I don't like the API of
+much, and just try to give it a more modern, easy to use API [9:35].
+So, we're using that at work, and it seems to work pretty well.  I
+think other people are using it, so that's something.  There's
+definitely work to be done on that.  [9:41] I've been working on some
+tools related to calling Postgress command line programs.  It's the
+Pg::CLI distro, which actually is [8:52] turned out to be something we
+need a lot at work as well.  We're trying to move to Postrgess and for
+managing databases [9:59].  And then I am working on something that I
+hope, I'm working on it slowly, very slowly, that I hope will
+eventually replaces Mooses buit-in type system, but also be usable for
+Moo, and really be available standalone.  It's called Specio, or
+actually I think it [10:15] totally I should say Specio, but I don't
+know how to pronounce Latin.  It's kindof a standalone type system.
+[10:24] I think those some of the most recent things.  I don't even
+remember.  What have I done on CPAN?  Who knows?
+
+[10:29]
+
 
 =transcription end
 
