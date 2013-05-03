@@ -4,15 +4,16 @@
 =status show
 =original pinto-tutorial
 =author thalhammer
+=translator vti
 =index 1
 =archive 1
 =feed 1
-=comments 1
+=comments 0
 =social 1
 
 =abstract start
 
-<a href="http://pragmaticperl.com/issues/03/pragmaticperl-03-pinto-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-cpan-%D0%B8%D0%B7-%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B8.html">Pinto — собственный CPAN из коробки</a>
+<h2><a href="http://pragmaticperl.com/issues/03/pragmaticperl-03-pinto-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-cpan-%D0%B8%D0%B7-%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B8.html">Pinto — собственный CPAN из коробки</a></h2>
 
 =abstract end
 
