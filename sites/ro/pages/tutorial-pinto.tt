@@ -1,9 +1,9 @@
 =title Pinto -- Un CPAN Personalizat
-=timestamp 2013-05-03T14:30:04
+=timestamp 2013-05-03T16:30:04
 =indexes cpan, pinto
 =status show
 =original pinto-tutorial
-=author szabgab
+=author thalhammer
 =translator stefansbv
 =index 1
 =archive 1
@@ -14,7 +14,7 @@
 =abstract start
 
 <i>
-Acesta este un articol scris de <a href="">Jeffrey Ryan
+Acesta este un articol scris de <a href="http://twitter.com/thaljef">Jeffrey Ryan
 Thalhammer</a>, autorul aplicațiilor Pinto și Perl::Critic. Jeff
 deține o micuță companie de consultanță în San Francisco și este un
 membru activ al comunității Perl de mulți ani.  Până în data de 7 mai

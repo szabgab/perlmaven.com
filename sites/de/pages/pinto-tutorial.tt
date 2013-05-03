@@ -1,9 +1,9 @@
 =title Pinto -- Ein maßgeschneidertes CPAN in der Box
-=timestamp 2013-05-03T14:30:05
+=timestamp 2013-05-03T16:30:05
 =indexes cpan, pinto
 =status show
 =original pinto-tutorial
-=author szabgab
+=author thalhammer
 =translator mca
 =index 1
 =archive 1
@@ -14,7 +14,7 @@
 =abstract start
 
 <i>
-Das ist ein Gast-Artikel von <a href="">Jeffrey Ryan Thalhammer</a>, Autor von Pinto
+Das ist ein Gast-Artikel von <a href="http://twitter.com/thaljef">Jeffrey Ryan Thalhammer</a>, Autor von Pinto
 und von Perl::Critic. Jeff betreibt eine kleine Beratungsagentur in San Francisco
 und ist in der Perl-Gemeinde schon viele Jahre aktiv.
 Bis 07. Mai hat Jeff eine  <a href="https://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint">Spendenaktion</a>
