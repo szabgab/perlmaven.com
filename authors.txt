@@ -22,3 +22,4 @@ tudorconstantin;Tudor Constantin;tudorconstantin.jpg;https://plus.google.com/116
 paologianrossi;Paolo Gianrossi;
 yongbin;Yongbin Yu;yongbin.jpg;https://plus.google.com/111269003708517945935
 herolee;Yingjie Li;herolee.png
+thalhammer;Jeffrey Thalhammer;thalhammer.png
