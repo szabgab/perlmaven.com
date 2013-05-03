@@ -1,8 +1,8 @@
 =title Pinto -- O Seu CPAN Personalizado
-=timestamp 2013-03-15T07:30:01
+=timestamp 2013-05-03T14:30:02
 =indexes cpan, pinto
 =status show
-=original pinto tutorial 
+=original pinto-tutorial
 =author szabgab
 =translator leprevost
 =index 1
@@ -14,7 +14,7 @@
 =abstract start
 
 <i>
-Este é um artigo escrito por um convidado, <a href="">Jeffrey Ryan Thalhammer</a>, autor do projetos Pinto
+Este é um artigo escrito por um convidado, <a href="http://twitter.com/thaljef">Jeffrey Ryan Thalhammer</a>, autor do projetos Pinto
 e Perl::Critic.
 Até o dia 7 de Maio, Jeff estará <a href="https://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint">levantando fundos</a>
 para financiar o desenvolvimento do elemento que irá permitir você a <b>especificar uma série de diferentes versões pelo Pinto.</b>
