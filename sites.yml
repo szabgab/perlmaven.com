@@ -14,6 +14,10 @@ de:
   url: http://de.perlmaven.com/
   english: German
   name: Deutsch
+es:
+  url: http://es.perlmaven.com/
+  english: Spanish
+  name: Espanol
 fr:
   url: http://fr.perlmaven.com/
   english: French
