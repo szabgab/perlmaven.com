@@ -86,7 +86,7 @@ man Pinto::Manual::Tutorial      # Um guia narrativo pelo projeto
 man Pinto::Manual::QuickStart    # Um sumário de comandos comuns
 </code>
 
-<h2>Criando o Reositório</h2>
+<h2>Criando o Repositório</h2>
 
 O primeiro passo ao utilizar o projeto Pinto é criar um repositório
 através do comando <hl>init</hl>:
@@ -126,7 +126,7 @@ URI para o seu repositório utilizando o comando <hl>pull</hl>:
 pinto -r ~/repo pull URI
 </code>
 
-Você será questionado a descrever uma mensagem que descreva o motivo
+Você será questionado a escrever uma mensagem que descreva o motivo
 de tal mudança em seu repositório. No topo da mensagem inclui uma mensagem simples
 que você poderá editar. O rodapé da mensagem mostrará exatamente quais módulos
 foram adicionados. 
