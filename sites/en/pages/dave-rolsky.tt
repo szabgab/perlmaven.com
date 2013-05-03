@@ -34,31 +34,81 @@ the Moose training he runs at YAPC::NA. (19:19)
 
 =transcription start
 
-GS: Hi, this is GS speaking.  This is the perlmavin tv show again, and with me is DR, who is the author of Date::Time and tons of other modules on CPAN.  He is also the author of the, or of at least a large part of the Moose tutorial and documentation.  Hi Dave.  How are you?
+GS: Hi, this is GS speaking.  This is the perlmavin tv show again, and
+with me is DR, who is the author of Date::Time and tons of other
+modules on CPAN.  He is also the author of the, or of at least a large
+part of the Moose tutorial and documentation.  Hi Dave.  How are you?
 
 DR: Hi.  I am good how about you?
 
-GS: I am fine.  Still a bit nervous about this tv interviews, but hopefully I get over all this 
+GS: I am fine.  Still a bit nervous about this tv interviews, but
+hopefully I get over all this
 
-DR: What could go wrong with technology.  Hey were progrqammers, we know it always works, it's perfect, so...
+DR: What could go wrong with technology.  Hey were progrqammers, we
+know it always works, it's perfect, so...
 
-GS: I can tell you in one of my previous interviews, the aspect retio of the camera of the other side was changing, so you can see that his head was going up and down.  Very interesting.
+GS: I can tell you in one of my previous interviews, the aspect retio
+of the camera of the other side was changing, so you can see that his
+head was going up and down.  Very interesting.
 
 DR: Very psychadelic.
 
-GS: Yeah.  Anyway.  So.  [1:00] Welcome to the show, and I would like to start with you from the beginning, becuase you have these tons of modules on CPAN, but where do we start?  How did you get involved in Perl.
+GS: Yeah.  Anyway.  So.  [1:00] Welcome to the show, and I would like
+to start with you from the beginning, becuase you have these tons of
+modules on CPAN, but where do we start?  How did you get involved in
+Perl.
 
-DR: [1:13] Ok, sure.  So, back in '95/'96, I think, I was in grad school for music composition, that's what my degree is in, and I was, at the time I had recently met Matt Mackall, who people might recognize as the author of Mercurial, and he's also done Linux development, so I knew him back, way back then, actually through a local vegetarian group, and I wanted to write a web app for the composers at my school to list all of our pieces, so that performers could find what we had written and may be sort, and you know, "I want to find something that includes claranet" or something like that, [2:00] and so I had done a little programming when I was a kid -- I got my first computer when I was young, 5 or 6, so I asked Matt, "what should I learn to do this?  What's the right language?"  So he pointed me at Perl. [2:15] I think I got a Perl book sometime when I was in grad school.  This app never materialized.  It was a good idea, but it didn't happen, like many projects, right?  So this should be familiar to everybody [2:24] watching this: "Projects You Never Did".  That got me started looking at perl, which is very ironic, since Matt is totally a Python guy these days, anyway.
+DR: [1:13] Ok, sure.  So, back in '95/'96, I think, I was in grad
+school for music composition, that's what my degree is in, and I was,
+at the time I had recently met Matt Mackall, who people might
+recognize as the author of Mercurial, and he's also done Linux
+development, so I knew him back, way back then, actually through a
+local vegetarian group, and I wanted to write a web app for the
+composers at my school to list all of our pieces, so that performers
+could find what we had written and may be sort, and you know, "I want
+to find something that includes claranet" or something like that,
+[2:00] and so I had done a little programming when I was a kid -- I
+got my first computer when I was young, 5 or 6, so I asked Matt, "what
+should I learn to do this?  What's the right language?"  So he pointed
+me at Perl. [2:15] I think I got a Perl book sometime when I was in
+grad school.  This app never materialized.  It was a good idea, but it
+didn't happen, like many projects, right?  So this should be familiar
+to everybody [2:24] watching this: "Projects You Never Did".  That got
+me started looking at perl, which is very ironic, since Matt is
+totally a Python guy these days, anyway.
 
 GS: [2:35] Back then everyone was perl.
 
-DR: [2:37] Exactly, exactly.  When I graduated from the masters program, I was kindof burned out on the whole academic thing, and so I decided to not get a PhD, so I end up getting a job in support at a local insurance company in St. Paul.  I lived in Minneapolis, Minnesota.  [3:00]  And therre was kindof downtime.  When things weren't crashing, there was free time, because we weren't like a support line for Dell, it was just for the company, so if things there were working, we had time.  So I kindof taught myself more programming there, and I was actually working on another project that I never finished, which was a web UI for MajorDomo, if anybody remembers MajorDomo.
+DR: [2:37] Exactly, exactly.  When I graduated from the masters
+program, I was kindof burned out on the whole academic thing, and so I
+decided to not get a PhD, so I end up getting a job in support at a
+local insurance company in St. Paul.  I lived in Minneapolis,
+Minnesota.  [3:00] And therre was kindof downtime.  When things
+weren't crashing, there was free time, because we weren't like a
+support line for Dell, it was just for the company, so if things there
+were working, we had time.  So I kindof taught myself more programming
+there, and I was actually working on another project that I never
+finished, which was a web UI for MajorDomo, if anybody remembers
+MajorDomo.
 
 GS: People still use it.
 
-DR: Oh wow.  Oh my God.  Ok.  So I learned more of Perl there, and then eventually after about 15 months of that job, I got my first programming job, this was during the first dot-com boom, when anybody with a, I'll be polite, a butt, could get a seat, because that's all you needed was a butt to put in the seat to be a programmer, [3:50] so I had no idea what te heck I was doing, but I managed to get a programming job.  And it was a Perl place, and so that was kindof where it all started.  And actually, that job I met Ken Williams, who is the person who introduced me to Mason, and we eventually wrote the Mason book together, and he introduced me to more of the Perl comunity stuff, [4:10] pushed me to put stuff on CPAN, told me about YAPC, things like that.  So that's where it really got started.  
+DR: Oh wow.  Oh my God.  Ok.  So I learned more of Perl there, and
+then eventually after about 15 months of that job, I got my first
+programming job, this was during the first dot-com boom, when anybody
+with a, I'll be polite, a butt, could get a seat, because that's all
+you needed was a butt to put in the seat to be a programmer, [3:50] so
+I had no idea what te heck I was doing, but I managed to get a
+programming job.  And it was a Perl place, and so that was kindof
+where it all started.  And actually, that job I met Ken Williams, who
+is the person who introduced me to Mason, and we eventually wrote the
+Mason book together, and he introduced me to more of the Perl comunity
+stuff, [4:10] pushed me to put stuff on CPAN, told me about YAPC,
+things like that.  So that's where it really got started.
 
-GS: [4:16] Great.  So you started, you started to lear Perl, you had this, you were involed in a lot of projects, right?  I mean, if you look at the CPAN directory, then you see all kinds of diverse things.
+GS: [4:16] Great.  So you started, you started to lear Perl, you had
+this, you were involed in a lot of projects, right?  I mean, if you
+look at the CPAN directory, then you see all kinds of diverse things.
 
 DR: [4:33] Yeah, I've done... I think the first thing I uploaded was
 someting that's kindof a predecessor to Log::Dispatch.  It was like a
