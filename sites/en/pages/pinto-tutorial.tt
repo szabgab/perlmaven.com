@@ -27,6 +27,8 @@ breaks your application.
 
 =abstract end
 
+This article was originally published on <a href="http://pragmaticperl.com/">Pragmatic Perl</a>
+
 One strategy for solving this problem is to construct your own custom
 CPAN repository that contains only the versions of the modules that
 you want.  Then you can use the CPAN tool chain to build your

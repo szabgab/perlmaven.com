@@ -1,7 +1,10 @@
 =title Pinto: CPAN personalizado fácil de usar
 =timestamp 2013-03-15T07:30:01
-=indexes cpan, pinto =status show
-=author szabgab =index 1
+=indexes cpan, pinto
+=status show
+=original pinto-tutorial
+=author szabgab
+=index 1
 =archive 1
 =feed 1
 =comments 1
@@ -18,12 +21,15 @@ hasta el 7 de mayo para financiar el desarrollo de una característica que permi
 de versiones de módulos en Pinto</b>.
 </i>
 
+=abstract end
+
+This article was originally published on <a href="http://pragmaticperl.com/">Pragmatic Perl</a>
+
 Una de las mayores ventajas que ofrece Perl es la enorme cantidad de módulos open source que están disponibles
 en CPAN. Sin embargo, la administración de estos módulos puede resultar complicada. Cada semana se publican
 cientos de versiones nuevas y no es fácil saber si los cambios realizados en una nueva versión de un módulo
 pueden generar errores que afecten a nuestras aplicaciones.
 
-=abstract end
 
 Una estrategia posible para solucionar este problema es crear un repositorio personalizado de CPAN que contenga
 únicamente las versiones de los módulos que necesitas. Puedes usar la cadena de herramientas de CPAN para generar
@@ -47,7 +53,9 @@ Pinto está disponible en CPAN y se puede instalar como cualquier otro módulo m
 <hl>cpanm</hl>. Pero Pinto se parece más a una aplicación que a una biblioteca. Es una herramienta que se puede
 usar para administrar el código de la aplicación, pero que en realidad no forma parte de la aplicación. Por eso
 recomiendo instalar Pinto como una aplicación autónoma con estos dos comandos:
-<code> curl -L http://getpinto.stratopan.com | bash source ~/opt/local/pinto/etc/bashrc </code>
+<code>
+curl -L http://getpinto.stratopan.com | bash source ~/opt/local/pinto/etc/bashrc
+</code>
 
 Esto instalará Pinto en <hl>~/opt/local/pinto</hl> y agregará los directorios necesarios a las variables de entorno
 <hl>PATH</hl> y <hl>MANPATH</hl>. Todo está autocontenido, por lo que la instalación de Pinto no cambiará nada en

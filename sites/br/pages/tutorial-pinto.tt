@@ -26,6 +26,8 @@ nunca sabe quando uma nova versão de um módulo pode introduzir um <i>bug</i> q
 
 =abstract end
 
+This article was originally published on <a href="http://pragmaticperl.com/">Pragmatic Perl</a>
+
 Uma estratégia para resolver este tipo de prolema é construir seu próprio repositório
 do CPAN, que conterá apenas as versões dos módulos que você deseja. Dessa forma você pode utilizar 
 o construtor do CPAN para instalar módulos a partir do seu próprio repositório sem ficar

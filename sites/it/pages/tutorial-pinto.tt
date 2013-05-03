@@ -29,6 +29,8 @@ blocca la vostra applicazione.
 
 =abstract end
 
+This article was originally published on <a href="http://pragmaticperl.com/">Pragmatic Perl</a>
+
 Una strategia per risolvere questo problema è quella di creare un vostro archivio CPAN
 personalizzato che contenga soltanto le versioni dei moduli che
 volete. In questo modo potete usare i tool di CPAN per creare la vostra

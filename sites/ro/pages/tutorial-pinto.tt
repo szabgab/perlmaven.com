@@ -32,6 +32,8 @@ afecteze aplicația.
 
 =abstract end
 
+This article was originally published on <a href="http://pragmaticperl.com/">Pragmatic Perl</a>
+
 Una dintre strategiile de rezolvare a acestei probleme este să-ți
 construiești propriul depozit CPAN care să conțină doar versiunile
 modulelor pe care le dorești. Astfel poți folosi uneltele CPAN pentru
