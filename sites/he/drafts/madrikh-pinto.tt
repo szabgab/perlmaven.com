@@ -319,33 +319,29 @@ cpanm --mirror file://$HOME/repo/stacks/uri_upgrade --mirror-only My::App
 pinto -r ~/repo pull URI~1.62
 </code>
 
-<h2>Working With Pins</h2>
+<h2>שימוש בהצמדות (Pins)</h2>
 
-Stacks are a great way to test the effect of changing your application
-dependencies.  But what if the tests didn't pass?  If the problem lies
-within My-App and you can quickly correct it, you might just modify
-your code, release version 2.0 of My-App, and then proceed to upgrade
-URI on the "master" stack.
+מחסניות (Stacks) הן כלי מצוין לבדיקת ההשפעות של החלפת מודולים שהיישום שלך מסתמך עליהם.
+אבל מה עושים אם המודולים לא עוברים את הבדיקות?
+אם הבעיה היא ב- My-App ואתה יכול לתקן אותה במהירות, אז אתה יכול לתקן את הקוד שלך,
+להפיץ את גירסה 2.0 של My-App ואז להמשיך ולהעדכן את המודול URI על המחסנית "master".
 
-But if the issue is a bug in URI or it will take a long time to fix
-My-App, then you have a problem.  You don't want someone else to
-upgrade URI, nor do you want it to be upgraded inadvertently to
-satisfy some other prerequisite that My-App may have.  Until you know
-the problem is fixed, you need to prevent URI from being upgraded.
-This is what pins are for.
+אבל אם הבעיה היא באג במודול URI או שייקח הרבה זמן לתקן את My-App, אז יש לך בעיה.
+אתה לא רוצה שמישהו אחר ישדרג את URI, ואתה גם לא רוצה שהמודול ישודרג במקרה כדי לקיים 
+דרישת קדם אחרת שאולי יש ל- My-App. עד שתדע שהבעיה תוקנה, תצטרך למנוע את השידרוג של 
+המודול URI. בשביל זה נועדו הצמדות (Pins).
 
-<h3>Pinning A Module</h3>
+<h3>הצמדת מודול</h3>
 
-When you pin a module, that version of the module is forced to stay in
-a stack.  Any attempt to upgrade it (either directly or via another
-prerequisite) will fail.  To pin a module, use the <hl>pin</hl> command:
+כשאתה מצמיד מודול, אתה מאלץ את המודול להשאר בגירסה המותקנת. כל נסיון לשדרג את המודול
+(בין אם ישירות ובין אם דרך דרישות קדם של מודול אחר) ייכשלו.
+להצמדת מודול יש להשתמש בפקודה  <hl>pin</hl>:
 
 <code>
 pinto -r ~/repo pin URI
 </code>
 
-If you look at the listing for the "master" stack again, you'll see
-something like this:
+אם תסתכל שוב בתוכן המחסנית "master" תראה משהו כזה:
 
 <code>
 ...
@@ -355,109 +351,94 @@ rf! URI::Escape                    3.31  GAAS/URI-1.60.tar.gz
 ...
 </code>
 
-The "!" near the beginning of a record indicates the module has been
-pinned.  If anyone attempts to upgrade URI or a add distribution that
-requires a newer version of URI, then Pinto will give a warning and
-refuse to accept the new distributions.  Notice that every module in
-the URI-1.60 distribution has been pinned, so it is impossible to
-partially upgrade a distribution (this situation could happen when a
-module moves into a different distribution).
+הסימן "!" בתחילת הרשומה מציין שהמודול המסומן הוצמד. אם מישהו
+ינסה לעדכן את מודול URI או להוסיף הפצה שדורשת גירסה חדשה יותר של URI
+פינטו יציג אזהרה ויסרב לקבל את ההפצות החדשות. 
+שים לב שכל המודולים בהפצה URI-1.60 סומנו, כך שאי אפשר לשדרג מודול שידרוג חלקי 
+(מצב כזה יכול לקרות כשמודול מועבר אל תוך הפצה אחרת).
 
-<h3>Unpinning A Module</h3>
+<h3>ביטול הצמדה מודול</h3>
 
-After a while, suppose you fix the problem in My-App or a new version
-of URI is released that fixes the bug.  When that happens, you can
-unpin URI from the stack using the <hl>unpin</hl> command:
+נניח שלאחר זמן מה תיקנת את הבעיה ב- My-App או שהופצה גירסה חדשה של מודול URI עם תיקון של הבאג.
+ניתן לבטל את ההצמדה של מודול URI מהמחסנית בעזרת הפקודה <hl>unpin</hl>:
 
 <code>
 pinto -r ~/repo unpin URI
 </code>
 
-At this point you're free to upgrade URI to the latest version
-whenever you're ready.  Just as with pinning, when you unpin a module
-it unpins every other module it the distribution as well.
+בשלב זה אתה חופשי לשדרג את המודול URI לגירסה העדכנית ביותר מתי שתרצה.
+כמו שקורה בהצמדה, שמבטלים הצמדה, היא מבוטלת לכל המודולים שכלולים בהפצה.
 
-<h2>Using Pins And Stacks Together</h2>
+<h2>שימוש משולב בהצמדות (Pins) ובמחסניות (Stacks)</h2>
 
-Pins and stacks are often used together to help manage change during
-the development cycle.  For example, you could create a stack called
-"prod" that contains your known-good dependencies.  At the same time,
-you could also create a stack called "dev" that contains experimental
-dependencies for your next release.  Initially, the "dev" stack is
-just a copy of the "prod" stack.
+במקרים רבים משתמשים בהצמדות ובמחסניות כדי לסייע לניהול שינויים בחלק מתהליך הפיתוח.
+למשל ניתן ליצור מחסנית בשם "prod" שכוללת את המודולים הנסמכים(מודולים הדרושים כדרישות קדם) שידוע שהם טובים.
+בו בזמן ניתן ליצור גם מחסנית בשם "dev" שמכילה מודולים נסמכים נוספים להפצה הבאה שלך.
+בהתחלה המחסנית "dev" היא פשוט העתק של המחסנית "prod".
 
-As development proceeds, you may upgrade or add several modules on the
-"dev" stack.  If an upgraded module breaks your application, then
-you'll place a pin in that module on the "prod" stack to signal that
-it shouldn't be upgraded.
+עם התקדמות תהליך הפיתוח ניתן לשדרג או להוסיף מודולים במחסנית "dev".
+אם מודול משודרג מקלקל את היישום שלך, אז תצמיד את  אותו מודל במחסנית "prod" כדי לסמן שאין לשדרג אותו.
 
-<h3>Pins and Patches</h3>
+<h3>הצמדות (Pins) וטלאים (Patches)</h3>
 
-Sometimes you may find that a new version of a CPAN distribution has a
-bug but the author is unable or unwilling to fix it (at least not
-before your next release is due).  In that situation, you may decide
-to make a local patch of the CPAN distribution.
+לפעמים מגלים שבגירסה חדשה של הפצה ב-CPAN יש באג אבל המתכנת של ההפצה אינו זמין
+או אינו מוכן לתקן את הבאג (לפחות לא לפני שמגיע הזמן להפיץ את הגירסה הבאה שלך).
+במקרה כזה ייתכן שתחליט לעשות טלאי מקומי של הפצת ה-CPAN.
 
-So suppose that you forked the code for URI and made a local version
-of the distribution called URI-1.60_PATCHED.tar.gz.  You can add it to
-your repository using the <hl>add</hl> command:
+נניח שיצרת פיצול (fork) של הקוד למודול URI ויצרת גרסה מקומית של ההפצה שנקראת URI-1.60_PATCHED.tar.gz.
+ניחן להוסיף אותה למאגר עם הפקודה <hl>add</hl>:
 
 <code>
 pinto -r ~/repo add path/to/URI-1.60_PATCHED.tar.gz
 </code>
 
-In this situation, it is wise to pin the module as well, since you do
-not want it to be upgraded until you are sure that the new version
-from CPAN includes your patch or the author has fixed the bug by other
-means.
+במקרה זה רצוי גם להצמיד את המודול כיוון שאינך רוצה שהוא יעודכן עד שאתה בטוח 
+שהגרסה החדשה מ-CPAN  כוללת את כל הטלאי שלך או שהמתכנת של המודול תיקן את הבאג הדרך אחרת.
+
 
 <code>
 pinto -r ~/repo pin URI
 </code>
 
-When the author of URI releases version 1.62, you'll want to test it
-before deciding to unpin from your locally patched version.  Just as
-before, this can be done by cloning the stack with the <hl>copy</hl> command.
-Let's call it the "trial" stack this time:
+כשהמתכנת של המודול URI מפיץ את גירסה 1.62 וודאי תרצה לבדוק אותה לפני 
+שתבטל את הצמדתה של הגירסה המוטלאת המקומית שלך.
+בדיוק כמו קודם, ניתן לבצע זאת על ידי יצירת עותק של המחסנית עם הפקודה <hl>copy</hl>.
+בוא נקרה הפעם למחסנית החדשה "trial":
 
 <code>
 pinto -r ~/repo copy master trial
 </code>
 
-But before you can upgrade URI on the "trial" stack, you'll have to
-unpin it there:
+לפני שתוכל לדשרג את URI על המחסנית "trial", תצטרך לבטל שם את ההצמדה:
 
 <code>
 pinto -r ~/repo unpin --stack trial URI
 </code>
 
-Now you can proceed to upgrade URI on the stack and try building
-My::App like this:
+עכשיו אפשר לשדרג את URI במחסנית ולנסות לבנות את My::App כך:
 
 <code>
 pinto -r ~/repo pull --stack trial URI~1.62
 cpanm --mirror file://$HOME/repo/stacks/trial --mirror-only My::App
 </code>
 
-If all goes well, remove the pin from the "master" stack and pull the
-newer version of URI back into it.
+אם הכל עובד כשורה, בטל את ההצמדה במחסנית "master" ומשוך אליה את הגירסה החדשה של המודול URI.
 
 <code>
 pinto -r ~/repo unpin URI
 pinto -r ~/repo pull URI~1.62
 </code>
 
-<h2>Reviewing Past Changes</h2>
+<h2>סקירת שינויים קודמים</h2>
 
-As you've probably noticed by now, each command that changes the state
-of a stack requires a log message to describe it.  You can review
-those messages using the <hl>log</hl> command:
+כפי שראית עד בה, כל פקודה שמשנה את מצב המחסנית דורשת הכנסת הודעה ללוג שמתארתאת השינוי.
+ניתן לסקור את ההודעת באמצעות הפקודה <hl>log</hl> :
 
 <code>
 pinto -r ~/repo log
 </code>
 
-That should display something like this:
+התצוגה אמורה להראות בערך כך:
 
 <code>
 revision 4a62d7ce-245c-45d4-89f8-987080a90112
@@ -479,21 +460,20 @@ User: jeff
 ...
 </code>
 
-The header for each message shows who made the change and when it happened.
-It also has a unique identifier similar to Git's SHA-1 digests.  You can
-use these identifiers to see the diffs between different revisions or to
-reset the stack back to a prior revision [NB: this feature is not actually
-implemented yet].
+הכותרת של כל הודעה מראה מי ביצע את השינוי ומתי זה קרה.
+כמו כן יש לה מזהה ייחודי בדומה לתמצית SHA-1 של Git. ניתן להשתמש במזהים
+כדי לראות את ההבדלים בין גרסאות שונות או כדי להחזיר את המחסנית למצב קודם 
+[הערה: האפשרות עדיין אינה מיושמת]
 
-<h2>Conclusion</h2>
 
-In this tutorial, you've seen the basic commands for creating a Pinto
-repository and populating it with modules.  You've also seen how to
-use stacks and pins to manage your dependencies in the face of some
-common development obstacles.
+<h2>סיכום</h2>
 
-Each command has several options that were not discussed in this
-tutorial, and there are some commands that were not mentioned here at
-all.  So I encourage you to explore the manual pages for each command
-and learn more.
+מדריך זה הסביר את הפקודות הבסיסיות ליצירת מאגר פינטו ואיכלוס המאגר במודולים.
+כמו כן ראינו איך להשתמש במחסניות (Stacks) ובהצמדות (Pins) כדי לאפשר ניהול תלויות ונסמכים 
+ועל ידי כך להתמודד עם מכשולים שכיחים בתהליכי פיתוח.
+
+לכל פקודה יש מספר אופציות שלא נדונו במדריך זה, 
+וכמו כן קיימות פקודות נוספות שכלל לא הוזכרו כאן.
+אני מעודד אתכם לקרוא את התיעוד במדריך למשתמש כדי ללמוד עוד על כל הפקודות.
+
 
