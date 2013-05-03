@@ -24,6 +24,12 @@ the Moose training he runs at YAPC::NA. (19:19)
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/d-K_uoIrUKQ" frameborder="0" allowfullscreen></iframe>
 
+=timings start
+
+[2013-05-03 Fri 04:00]--[2013-05-03 Fri 04:45]: First pass 0:00--3:00
+
+=timings end
+
 =transcription start
 
 GS: Hi, this is GS speaking.  This is the perlmavin tv show again, and with me is DR, who is the author of Date::Time and tons of other modules on CPAN.  He is also the author of the, or of at least a large part of the Moose tutorial and documentation.  Hi Dave.  How are you?
