@@ -23,21 +23,22 @@
 
 =abstract end
 
-<h2>Editor or IDE?</h2>
+<h2>עורך טקסט או IDE?</h2>
 
-For Perl development you can either use a plain text editor or an
-<b>Integrated Development Environment</b>, also called IDE.
+לפיתוח בפרל ניתן להשתמש בעורך טקסט רגיל או ב 
+<b>סביבת עבודה משולבת</b> הנקראת גם IDE.
 
-First I'll describe the editors on the major platforms you might use,
-and then the IDEs which are usually platform independent.
+קודם אתאר את עורכים הטקסט הקיימים על הפלטפורמות המובילות שייתכן שאתם משתמשים בהן, 
+ואז את ה-IDEs שהם לרוב עובדים על כל מערכת הפעלה.
 
-<h2>Unix / Linux</h2>
 
-If you are working on Linux or Unix, then the most common editors used there are
-<a href="http://www.vim.org/">Vim</a> and
+<h2>יוניקס / לינוקס</h2>
+
+אם אתם משתמשים בלינוקס או ביוניקס אז העורכים הנפוצים ביותר הם:
+<a href="http://www.vim.org/">Vim</a> ו-
 <a href="http://www.gnu.org/software/emacs/">Emacs</a>.
-They have very different philosophy, both from
-each other, and from most of the editors out there.
+יש להם גישות מאוד שונות, גם זה מזה, וגם מעורכי טקסט אחרים.
+
 
 If you are familiar with either one of those, I'd recommend using them.
 
