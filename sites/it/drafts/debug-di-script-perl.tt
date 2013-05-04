@@ -14,18 +14,18 @@
 
 =abstract start
 
-When I studied computer sciences in the university, we learned a lot on how to write programs,
-but as far as I remember no one told us about debugging. We heard about the nice world of creating
-new things, but no one told us that most of the time we'll have to spend trying to understand other
-people's code.
+Quando studiavo informatica all'università ho imparato molte cose su come si scrivono i programmi
+ma, almeno per quanto ricordo, nessuno ci ha mai parlato del debug. Ci hanno descritto un mondo dove si creano
+sempre cose nuove, ma nessuno ci ha avvertiti che avremmo speso la maggior parte del tempo tentando di capire il codice
+di altri.
 
-It turns out that while we mostly cherish writing the program, we spend
-a lot more time trying to understand what we (or others) wrote, and why does
-it misbehave, than the time we spent writing it in the first time.
+Quasi tutti noi preferiamo scrivere programmi, ma spendiamo
+molto più tempo tentando di capire che cosa fa un pezzo di codice che noi stessi (o altri) abbiamo scritto in passato e perché
+non funziona del tempo che avevamo speso a scriverlo.
 
 =abstract end
 
-<h2>What is debugging?</h2>
+<h2>Che cos'è il debug?</h2>
 
 Before running the program everything was in a known good state.
 
