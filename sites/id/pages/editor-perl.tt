@@ -18,7 +18,7 @@ Skrip Perl atau program-program Perl hanyalah terdiri dari berkas-berkas teks bi
 Anda dapat menggunakan editor teks apapun untuk membuatnya, namun Anda tidak boleh
 menggunakan program pengolah kata. Berikut beberapa editor teks dan IDE yang dapat saya sarankan.
 
-Artikel ini adalah bagian dari Ini adalah bagian pertama dari <a href="/tutorial-perl"> tutorial Perl</a>.
+Artikel ini adalah bagian dari <a href="/perl-tutorial"> tutorial Perl</a>.
 
 =abstract end
 
@@ -60,7 +60,7 @@ Di Windows, banyak orang mengggunakan "programmer's editors".
 
 <ul>
 <li><a href="http://www.ultraedit.com/">Ultra Edit</a> yang merupakan sebuah editor komersil</li>
-<li><a href="http://www.textpad.com/">TextPad</a>yang merupakan shareware.</li>
+<li><a href="http://www.textpad.com/">TextPad</a> yang merupakan shareware.</li>
 <li><a href="http://notepad-plus-plus.org/">Notepad++</a> yang merupakan aplikasi open source dan gratis.</li>
 </ul>
 
@@ -116,5 +116,5 @@ namun ia merupakan aplikasi berbayar.
 
 <h2>Selanjutnya</h2>
 
-Tutorial berikutnya adalah <a herf="/perl-on-the-command-line">Perl pada command line</a>
+Tutorial berikutnya adalah <a herf="/perl-pada-command-line">Perl pada command line</a>
 
