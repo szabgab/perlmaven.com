@@ -77,9 +77,16 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>die, warn and exit</li>
 <li><a href="/escrevendo-em-arquivos-com-perl">Escrevendo em arquivos com Perl</a></li>
 <li><a href="/acrescentando-em-arquivos">Acrescentando texto em arquivos (appending)</a></li>
+<li><a href="/abrindo-e-lendo-arquivos">Abrindo e Lendo Arquivos de Texto</a></li>
 </ol>
 
-<a href="/abrindo-e-lendo-arquivos">Abrindo e Lendo Arquivos de Texto</a>
+<b>Outros</b>
+<ol>
+<li><a href="/splice-para-fatiar-e-picar-arrays-em-perl">Splice para fatiar e picar arrays em Perl</a></li>
+<li><a href="/perl-orientado-a-objeto-usando-o-moose">Perl Orientado a Objetos Usando o Moose</a></li>
+<li><a href="/tipos-de-atributos-em-classes-perl-ao-usar-o-moose">Tipos de atributos em casses Perl ao usar o Moose</a></li>
+</ol>
+
 
 <hr />
 

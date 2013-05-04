@@ -1,0 +1,35 @@
+=title OOP with Moo
+=timestamp 2013-04-13T18:33:01
+=indexes OOP, Moo
+=status show
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+There are several ways to write Object Oriented Perl. You can manually bless references, you can use one of the constractor and accessor generator modules,
+or you can use on of the modules from the Moose family. Moo is the Minimalist Object Orientation with Moose compatiblity. In this screencast you'll learn
+the basics. (3:19 min)
+
+=abstract end
+
+<script type="text/javascript" src="//cdn.sublimevideo.net/js/f68gs97x.js"></script>
+
+<video id="video1" class="sublime" width="960" height="540" data-uid="oop_with_moo" preload="none">
+  <source src="http://perlmaven.com/media/videos/oop_with_moo_1280x720.mp4" data-quality="hd" />
+</video>
+<div id="downloads">Download:
+<a href="http://perlmaven.com/media/videos/oop_with_moo_1280x720.mp4">mp4</a> (5.2 Mb)
+</div>
+
+<div id="text">
+<a href="https://metacpan.org/module/Moo">Moo</a>
+</div>
+

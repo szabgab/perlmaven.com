@@ -1,4 +1,4 @@
-﻿aramisf;Aramis Fernandes;aramisf.jpg;
+aramisf;Aramis Fernandes;aramisf.jpg;https://plus.google.com/111823334458712205300
 balasatishreddykarri;Balasatish Reddy Karri;balasatishreddykarri.png;https://plus.google.com/105558350789685960778
 bruck;Uri Bruck;uribruck.jpg;https://plus.google.com/108060244899341646747
 chsanch;Christian Sánchez;chsanch.jpg;https://plus.google.com/104433299874463240657
@@ -8,7 +8,7 @@ fredlopes;Frederico José Andries Lopes;fredlopes.jpg;https://plus.google.com/10
 giatorta;Gianluca Torta;giatorta.jpg;https://plus.google.com/102233996322873848584
 gugod;Kang-min Liu;gugod.png;https://plus.google.com/118077021111350586131
 keedi;Keedi Kim;keedi.png;https://plus.google.com/116555192679485363257
-khadis;Khadis;khadis.png;https://plus.google.com/117015659325563649853
+khadis;Khadis Thok;khadis.png;https://plus.google.com/117015659325563649853
 leprevost;Felipe da Veiga Leprevost;leprevost.jpg;https://plus.google.com/107515431915475316857
 mca;McA;mca.png
 oval;oval;oval.png;https://plus.google.com/111231154240098109931
@@ -19,4 +19,8 @@ swuecho;Hao Wu;swuecho.png;https://plus.google.com/103923416736713796285
 szabgab;Gabor Szabo;szabgab.png;https://plus.google.com/102810219707784087582
 terrencehan;Terrence Han;terrencehan.png;https://plus.google.com/115247155710052422629
 tudorconstantin;Tudor Constantin;tudorconstantin.jpg;https://plus.google.com/116443916281342539112
+paologianrossi;Paolo Gianrossi;
 yongbin;Yongbin Yu;yongbin.jpg;https://plus.google.com/111269003708517945935
+herolee;Yingjie Li;herolee.png
+thalhammer;Jeffrey Thalhammer;thalhammer.png
+vti;Вячеслав Тихановский;vti.png;https://plus.google.com/109117812087018133975

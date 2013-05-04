@@ -1,9 +1,9 @@
 =title Pinto -- Un Archivio CPAN Personalizzato In Confezione Regalo
-=timestamp 2013-04-28T00:00:00
+=timestamp 2013-05-03T16:30:03
 =indexes cpan, pinto
 =status show
 =original pinto-tutorial
-=author szabgab
+=author thalhammer
 =translator giatorta
 =index 1
 =archive 1
@@ -28,6 +28,8 @@ potete sapere se una nuova versione di un modulo introdurrà un bug che
 blocca la vostra applicazione.
 
 =abstract end
+
+This article was originally published on <a href="http://pragmaticperl.com/">Pragmatic Perl</a>
 
 Una strategia per risolvere questo problema è quella di creare un vostro archivio CPAN
 personalizzato che contenga soltanto le versioni dei moduli che

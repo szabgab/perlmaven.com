@@ -1,0 +1,67 @@
+=title Dave Rolsky, author of DateTime and tons of other modules
+=timestamp 2013-05-02T17:33:01
+=indexes DateTime, interview, Dave Rolsky
+=status show
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+What does a vegan music composer do when he wants to send e-mails?
+
+Dave Rolsky is one of the most prolific CPAN authors. He created DateTime, Log::Dispatch and tons of other modules.
+We talked about how he started with Perl and what he has been doing lately. We also discussed his work and
+the Moose training he runs at YAPC::NA. (19:19)
+
+=abstract end
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/d-K_uoIrUKQ" frameborder="0" allowfullscreen></iframe>
+
+<div id="text">
+<h2>Show notes</h2>
+<ul>
+  <li><a href="http://blog.urth.org/">House Absolute(ly) Pointless</a>, Dave,s blog.</li>
+  <li><a href="http://www.houseabsolute.com/">House Absolute Consulting</a></li>
+  <li><a href="http://www.linkedin.com/in/kenahoo">Ken Williams</a>, <a href="http://www.masonhq.com/">Mason</a>, <a href="http://www.masonbook.com/">Mason book</a></li>
+  <li><a href="http://mercurial.selenic.com/">Mercurial VCS</a></li>
+  <li><a href="http://twitter.com/mpmselenic">Matt Mackall</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/Majordomo">Majordomo</a></li>
+  <li><a href="http://irc.perl.org/">IRC</a>    Check the #moose channel. Dave is known as <i>autarch</i> on IRC.</li>
+  <li><a href="http://rt.cpan.org/">Bug reports in RT</a></li>
+  <li><a href="http://www.exploreveg.org">Compassionate Action for Animals</a></li>
+  <li><a href="http://2013.tcvegfest.com/">Twin Cities Veg Fest</a> where Dave is the lead organizer.</li>
+  <li><a href="http://datetime.perl.org/">DateTime</a></li>
+</ul>
+
+Dave works for <a href="http://www.maxmind.com/">MaxMind</a>, a Perl shop that provides GeoIP databases, web services and fraud detection.
+Dave works with <a href="https://metacpan.org/author/OALDERS">Olaf Alders</a>, one of the people behind <a href="http://metacpan.org/">MetaCPAN</a>.
+
+<h2>CPAN modules</h2>
+<ul>
+  <li><a href="http://metacpan.org/author/DROLSKY">Dave Rolsky on CPAN</a></li>
+  <li><a href="http://metacpan.org/module/Log::Dispatch">Log::Dispatch</a></li>
+  <li><a href="http://metacpan.org/module/Moose">Moose</a></li>
+  <li><a href="http://metacpan.org/module/Courriel">Courriel</a>, a modern email parsing and building library.</li>
+  <li><a href="http://metacpan.org/module/Pg::CLI">Pg::CLI</a> for calling PostgreSQL command line programs.</li>
+  <li><a href="http://metacpan.org/module/Specio">Specio</a> is an attempt to replace the built-in type system for Moose, and to provide something that works with Moo as well as stand-alone.</li>
+</ul>
+
+<h2>Moose training at YAPC::NA 2013</h2>
+<ul>
+  <li><a href="http://www.yapcna.org/yn2013/training.html#moose1">Intro to Moose training at YAPC::NA</a></li>
+  <li><a href="http://www.yapcna.org/yn2013/training.html#moose2">Advanced Moose by Stevan Littleat YAPC::NA</a></li>
+</ul>
+</div>
+
+
+
+
+
+

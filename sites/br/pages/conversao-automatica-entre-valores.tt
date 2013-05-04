@@ -115,8 +115,8 @@ Este é o aviso que você recebe quando o perl está tentando converter um texto
 em um número e a conversão não é perfeita.
 
 Existe ainda uma série de outros avisos e erros comuns em Perl.
-Por exemplo <a href="http://perl5maven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
-e <a href="http://perl5maven.com/use-of-uninitialized-value">Use of uninitialized value</a>.
+Por exemplo <a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
+e <a href="/uso-de-valor-nao-inicializado">Use of uninitialized value</a>.
 
 <h2>Como evitar os avisos?</h2>
 

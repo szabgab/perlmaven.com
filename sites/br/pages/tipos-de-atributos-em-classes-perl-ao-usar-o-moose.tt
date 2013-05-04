@@ -1,8 +1,8 @@
 =title Tipos de atributos em classes Perl usando o Moose
-=original attribute-types-in-perl-classes-when-using-moose
-=timestamp 2013-02-26T06:13:10
+=timestamp 2013-04-30T18:13:10
 =indexes OOP, Moose, object oriented, class, object, instance, constructor, getter, setter, accessor, attribute
 =status show
+=original attribute-types-in-perl-classes-when-using-moose
 =books advanced_book
 =author szabgab
 =translator aramisf
@@ -50,7 +50,7 @@ Então nós chamamos o acessador "year" e definimos o valor para 1998. Depois de
 imprimir o valor nós tentamos defini-lo como "23 years ago".
 
 No módulo você pode ver dois atributos. O atributo "year" tem uma entrada
-<h1>isa</h1> com um valor <h1>Int</h1>. Por causa disso, o <i>setter</i>
+<hl>isa</hl> com um valor <hl>Int</hl>. Por causa disso, o <i>setter</i>
 criado pelo Moose vai restringir para inteiros os valores que ele aceita.
 
 <code lang="perl">
