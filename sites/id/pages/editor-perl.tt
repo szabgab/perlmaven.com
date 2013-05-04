@@ -1,5 +1,5 @@
 =title Editor Perl
-=timestamp 2013-05-03T12:13:00
+=timestamp 2013-05-04T12:13:00
 =indexes IDE, editor, Padre, vim, emacs, Eclipse, Komodo
 =status show
 =original perl-editor
@@ -34,7 +34,7 @@ dan kemudian IDE yang tidak tergantung platform.
 
 JIka Anda menggunakan Linux atau Unix, maka editor teks yang umum adalah
 <a href="http://www.vim.org/">Vim</a> dan
-<a href=http://www.gnu.orgsoftware/emacs/">Emacs</a>.
+<a href="http://www.gnu.orgsoftware/emacs/">Emacs</a>.
 Keduanya memiliki filosofi yang berbeda,
 satu sama lain, dan berbeda dengan kebanyakan editor teks yang ada.
 
@@ -118,5 +118,3 @@ namun ia merupakan aplikasi berbayar.
 
 Tutorial berikutnya adalah <a herf="/perl-on-the-command-line">Perl pada command line</a>
 
-
-For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
