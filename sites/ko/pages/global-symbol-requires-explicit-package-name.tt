@@ -2,7 +2,7 @@
 =timestamp 2013-05-04T17:09:08
 =indexes strict, my, package, global symbol
 =status show
-=original scope-of-variables-in-perl
+=original global-symbol-requires-explicit-package-name
 =books beginner_book
 =author szabgab
 =translator yongbin
