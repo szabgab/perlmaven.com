@@ -18,6 +18,7 @@
   <li><a href="/string-functions-length-lc-uc-index-substr">문자열 함수: length, lc, uc, index, substr</a></li>
   <li><a href="/trim">trim - Perl로 문자열의 앞뒤 공백 문자 제거하기</a></li>
   <li><a href="/scope-of-variables-in-perl">Perl에서의 변수 영역</a></li>
+  <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
 
 <!--
   <li><a href=""></a></li>
