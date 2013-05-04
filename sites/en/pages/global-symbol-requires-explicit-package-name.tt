@@ -134,7 +134,8 @@ The whole idea of <b>scope</b> is different among programming languages.
 In Perl, a block enclosed in curly braces creates a scope.
 What is declared inside using <hl>my</hl> will not be accessible outside the block.
 
-(BTW the <hl>$x = 1</hl> is there only to have a legitimate-looking condition that creates the scope.)
+(BTW the <hl>$x = 1</hl> is there only to have a legitimate-looking condition that creates the scope.
+In other words, the <hl>if ($x) {</hl> condition is there to make the example look real.)
 
 The solution is either to call the <hl>print</hl> inside the block:
 
