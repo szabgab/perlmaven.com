@@ -17,8 +17,7 @@
 Questo contributo è di <a href="http://twitter.com/thaljef">Jeffrey Ryan Thalhammer</a>, autore di Pinto
 e di Perl::Critic. Jeff dirige una piccola impresa di consulenza a San Francisco ed
  è attivo nella comunità Perl da molti anni.
-Till May 7 Jeff is running a <a href="https://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint">fund-raiser</a>
-to finance the development of the feature that will allow you to <b>specify module version ranges in Pinto</b>.
+Jeff ha aperto una <a href="https://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint">raccolta fondi</a> che durerà fino al 7 Maggio per finanziare lo sviluppo di una funzione che permetta di <b>specificare dei range di versioni per i moduli in Pinto</b>.
 </i>
 
 Uno dei punti di forza di Perl sono i suoi moduli open source
@@ -29,7 +28,7 @@ blocca la vostra applicazione.
 
 =abstract end
 
-This article was originally published on <a href="http://pragmaticperl.com/">Pragmatic Perl</a>
+La versione originale di questo articolo è stata pubblicata su <a href="http://pragmaticperl.com/">Pragmatic Perl</a>.
 
 Una strategia per risolvere questo problema è quella di creare un vostro archivio CPAN
 personalizzato che contenga soltanto le versioni dei moduli che
