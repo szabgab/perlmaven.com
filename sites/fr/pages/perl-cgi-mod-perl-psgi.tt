@@ -20,7 +20,7 @@ Je pourrais répondre brièvement : aucun des deux. En fait, utilisez un cadrici
 
 <h2>Perl CGI</h2>
 
-Il y a longtemps, très longtemps, dans une galaxie lointaine, très lointaine, nous utilisions CGI (acronyme de Common Gateway Interface) afin de créer des applications web. C'était bien : il résolvait tous les problèmes ... des années 90 du précédent millénaire, mais il était aussi lent.
+Il y a longtemps, très longtemps, dans une galaxie lointaine, très lointaine, nous utilisions CGI (acronyme de Common Gateway Interface) afin de créer des applications web. C'était bien : il résolvait tous les problèmes ... des années 90 du précédent millénaire. Mais aussi, il était lent.
 
 Les gens voulurent une solution plus rapide. Ainsi apparut <b>mod_perl</b> : un module dans le serveur web Apache. Il était capable de choses extraordinaires, mais la plupart des gens l'utilisèrent comme un simple moteur turbo pour leurs applications CGI existantes. Il pouvait en effet augmenter la vitesse d'un site web d'un facteur 100, voire 200, par rapport à la solution pure CGI.
 
@@ -40,7 +40,7 @@ Cela libère un peu le développeur de logiciels du codage en dur lié au déplo
 
 Bien sûr, presque personne n'écrit du code pur Plack/PSGI. Presque tout le monde utilise l'un des cadriciels Perl de développement d'applications web.
 
-Les petites et moyennes applications reposent généralement soit sur <a href="http://perldancer.org/">Perl Dancer</a>
+Les petites et moyennes applications reposent généralement soit sur <a href="http://perldancer.org/">Perl Dancer</a>,
 soit sur <a href="http://mojolicio.us/">Mojolicious</a>. Les grandes applications reposent sur <a href="http://www.catalystframework.org/">Catalyst</a>.
 
 Maintenant, j'ai "seulement" besoin d'écrire mes tutoriels pour tous ces cadriciels ...

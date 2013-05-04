@@ -1,0 +1,68 @@
+=title Jeffrey Thalhammer, author of Perl::Critic and Pinto
+=timestamp 2013-04-25T22:33:01
+=indexes Perl::Critic, Pinto, interview
+=status show
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+This is the first Perl Maven interview. The guest is Jeffrey Thalhammer, who created Perl::Critic and more recently Pinto and Stratopan.
+We talked about his project, about fund-raising and even about YAPC::NA.
+(18:47 min)
+
+=abstract end
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/RVFc3yrwug0" frameborder="0" allowfullscreen></iframe>
+
+<div id="text">
+Show notes:
+<ul>
+<li><a href="http://twitter.com/thaljef">@thaljef</a> to reach Jeffrey via Twitter.</li>
+<li><a href="http://metacpan.org/module/Perl::Critic">Perl::Critic</a> on CPAN.</li>
+<li><a href="http://www.perlcritic.com/">Perl::Critic</a> on its own web site.</li>
+<li><a href="http://metacpan.org/module/Pinto">Pinto</a> on CPAN.</li>
+<li><a href="http://stratopan.com/">Stratopan</a> hosted Pinto service.</li>
+<li><a href="http://blogs.perl.org/users/brian_d_foy/2013/04/crowd-funding-pinto.html">Crowd funding Pinto</a> the article by brian d foy.</li>
+<li><b><a href="http://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint">Specify module version ranges in Pinto</a> the actual page where you can donate money.</b></li>
+<li><a href="http://www.yapcna.org/">YAPC::NA</a> the Perl conference.</li>
+</ul>
+</div>
+
+<p>The following is and experimental and partial transciption of the text.</p>
+
+<div id="transcript">
+0:00
+Gabor: Hi, this is Gabor, in the Gabor Szabo in the first episode of the Perl Maven show, or television, with is Jeffrey Thalhammer,
+I am really happy that he volunteered to be the first guinea pig in the first interview. He is the author of the Perl::Critic
+and more recently the Pinto application, module and I'd like him to... hi Jeffrey.. now maybe I'll talk to him so hi
+
+Jeffrey: Hi Gabor, how are you doing today?
+
+Gabor: I am a bit nerveuse, but I'll get over it, I think.
+
+Jeffrey: I think you are doing a fine job. Thanks for having me on the show.
+
+Gabor: OK, It's a pleasure to have you. So tell mne a little bit about Pinto. recent project
+
+Jeffrey: So Pinto has been my baby for the last year almost 2 years
+It started as a project for a client. Ginentech has hired me to build a custom CPAN repository.
+and this is something I have done at 3-4 other companies. basically any shop that uses Perl modules
+wrestles with the problem of churn in the public CPAN. There is always new modules coming and going
+and if you build up your application by installing modules from the public CPAN you never know what are you going to
+get from one day to the other. So one workaround of that problem is to have a local CPAN that has exactly
+the modules you want in the specific versions you want. And there are existiong tools for this.
+This is not a new idea, or anything. But I didn't really like any of them. They were all kind of hard to work with.
+Each one of thes CPAN that I have built seemed to be very customized and not very general purpose.
+So Genetech hired me and they gave me the opportunity to start from scratch. So Pinto is the result of that work.
+2.08
+
+</div>
+

@@ -1,8 +1,9 @@
 =title Pinto -- Ein maßgeschneidertes CPAN in der Box
-=timestamp 2013-04-29T07:30:01
+=timestamp 2013-05-03T16:30:05
 =indexes cpan, pinto
 =status show
-=author szabgab
+=original pinto-tutorial
+=author thalhammer
 =translator mca
 =index 1
 =archive 1
@@ -13,7 +14,7 @@
 =abstract start
 
 <i>
-Das ist ein Gast-Artikel von <a href="">Jeffrey Ryan Thalhammer</a>, Autor von Pinto
+Das ist ein Gast-Artikel von <a href="http://twitter.com/thaljef">Jeffrey Ryan Thalhammer</a>, Autor von Pinto
 und von Perl::Critic. Jeff betreibt eine kleine Beratungsagentur in San Francisco
 und ist in der Perl-Gemeinde schon viele Jahre aktiv.
 Bis 07. Mai hat Jeff eine  <a href="https://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint">Spendenaktion</a>
@@ -28,6 +29,8 @@ von denen man nie weiß, welche einen neuen Fehler in Deine
 Applikation einbringt.
 
 =abstract end
+
+This article was originally published on <a href="http://pragmaticperl.com/">Pragmatic Perl</a>
 
 Eine Startegie, um dieses Problem zu lösen, ist das Erstellen
 eines maßgeschneiderten CPAN-<a href="http://de.wikipedia.org/wiki/Repository">Repositorys</a>,
