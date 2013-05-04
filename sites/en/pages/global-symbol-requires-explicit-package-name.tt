@@ -128,7 +128,7 @@ print $y;
 
 The problem is, that the variable <hl>$y</hl> is declared within the block,
 (the pair of curly braces) which means it does not exist outside of that block.
-This is called the <b>scope</b> of the variable.
+This is called <a href="/scope-of-variables-in-perl">the <b>scope</b> of the variable</a>.
 
 The whole idea of <b>scope</b> is different among programming languages.
 In Perl, a block enclosed in curly braces creates a scope.
