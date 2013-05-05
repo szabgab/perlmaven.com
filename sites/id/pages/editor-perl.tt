@@ -35,7 +35,7 @@ dan kemudian IDE yang tidak tergantung platform.
 JIka Anda menggunakan Linux atau Unix, maka editor teks yang umum adalah
 <a href="http://www.vim.org/">Vim</a> dan
 <a href="http://www.gnu.orgsoftware/emacs/">Emacs</a>.
-Keduanya memiliki filosofi yang berbeda,
+Keduanya memiliki filosofi yang berbeda
 satu sama lain, dan berbeda dengan kebanyakan editor teks yang ada.
 
 Jika Anda sudah familiar dengan salah satu di antaranya, maka saya merekomendasikan untuk menggunakannya.
@@ -51,7 +51,7 @@ Kedua editor tadi sebenarnya sangat bagus, namun perlu waktu yang cukup lama unt
 Mungkin sekarang saatnya untuk lebih fokus ke pelajaran Perl terlebih dahulu, dan kemudian mempelajari
 salah satu dari editor teks tadi.
 
-Sementara keduanya bawaan Unix/Linux, baik
+Meskipun keduanya bawaan Unix/Linux, baik
 <b>Emacs</b> dan <b>Vim</b> juga tersedia untuk sistem operasi lainnya.
 
 <h2>Editor Perl untuk Windows</h2>
@@ -76,7 +76,7 @@ untuk pengembangan Perl.
 <h2>Perl IDE</h2>
 
 Tak satupun IDE tersebut di atas, yang menyediakan
-debugger built-in nyata untuk Perl. Mereka juga tidak memiliki bantuan khusus bahasa
+debugger built-in nyata untuk Perl. Mereka juga tidak memiliki bantuan khusus bahasa.
 
 <a href="http://www.activestate.com/">Komodo</a> dari ActiveState memiliki harga beberapa ratus dolar Amerika.
 Ia juga mempunyai versi gratisnya meski dengan kemampuan terbatas.
@@ -116,5 +116,5 @@ namun ia merupakan aplikasi berbayar.
 
 <h2>Selanjutnya</h2>
 
-Tutorial berikutnya adalah <a herf="/perl-pada-command-line">Perl pada command line</a>
+Tutorial berikutnya adalah <a href="/perl-pada-command-line">Perl pada command line</a>
 

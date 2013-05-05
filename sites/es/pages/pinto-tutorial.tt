@@ -55,7 +55,8 @@ Pinto está disponible en CPAN y se puede instalar como cualquier otro módulo m
 usar para administrar el código de la aplicación, pero que en realidad no forma parte de la aplicación. Por eso
 recomiendo instalar Pinto como una aplicación autónoma con estos dos comandos:
 <code>
-curl -L http://getpinto.stratopan.com | bash source ~/opt/local/pinto/etc/bashrc
+curl -L http://getpinto.stratopan.com | bash
+source ~/opt/local/pinto/etc/bashrc
 </code>
 
 Esto instalará Pinto en <hl>~/opt/local/pinto</hl> y agregará los directorios necesarios a las variables de entorno
