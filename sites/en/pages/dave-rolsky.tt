@@ -24,17 +24,6 @@ the Moose training he runs at YAPC::NA. (19:19)
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/d-K_uoIrUKQ" frameborder="0" allowfullscreen></iframe>
 
-=timings start
-
-[2013-05-03 Fri 04:00]--[2013-05-03 Fri 04:45]: First pass 0:00--3:00
-
-[2013-05-03 Fri 06:00]--[2013-05-03 Fri 06:35]: First pass 3:00--6:17
-
-[2013-05-03 Fri 16:22]--[2013-05-03 Fri 17:06]: First pass 6:17--10:29
-
-[2013-05-05 Sun 04:31]
-=timings end
-
 <div id="transcription">
 
   <div class="speaker-section speaker-gs">
@@ -433,6 +422,14 @@ the Moose training he runs at YAPC::NA. (19:19)
 
   <span class="transcription-timeindex">10:29</span>
 
+  <div class="transcription-worklog">
+<!--
+[2013-05-03 Fri 04:00]--[2013-05-03 Fri 04:45]: First pass 0:00--3:00
+[2013-05-03 Fri 06:00]--[2013-05-03 Fri 06:35]: First pass 3:00--6:17
+[2013-05-03 Fri 16:22]--[2013-05-03 Fri 17:06]: First pass 6:17--10:29
+[2013-05-05 Sun 04:31]
+-->
+  </div>
 
 </div>
 
