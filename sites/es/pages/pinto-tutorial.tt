@@ -3,7 +3,8 @@
 =indexes cpan, pinto
 =status show
 =original pinto-tutorial
-=author szabgab
+=author thalhammer
+=translator enrique
 =index 1
 =archive 1
 =feed 1
@@ -54,7 +55,8 @@ Pinto está disponible en CPAN y se puede instalar como cualquier otro módulo m
 usar para administrar el código de la aplicación, pero que en realidad no forma parte de la aplicación. Por eso
 recomiendo instalar Pinto como una aplicación autónoma con estos dos comandos:
 <code>
-curl -L http://getpinto.stratopan.com | bash source ~/opt/local/pinto/etc/bashrc
+curl -L http://getpinto.stratopan.com | bash
+source ~/opt/local/pinto/etc/bashrc
 </code>
 
 Esto instalará Pinto en <hl>~/opt/local/pinto</hl> y agregará los directorios necesarios a las variables de entorno
@@ -409,7 +411,8 @@ Si todo va bien, podrás quitar el ancla de la pila "master" y volver a agregar 
 de URI.
 
 <code>
-pinto -r ~/repo unpin URI pinto -r ~/repo pull URI~1.62
+pinto -r ~/repo unpin URI 
+pinto -r ~/repo pull URI~1.62
 </code>
 
 <h2>Revisar cambios anteriores</h2>
@@ -430,7 +433,7 @@ User: jeff
 
     Pin GAAS/URI-1.59.tar.gz
     
-    URI anclada porque crea un error en el script foo.t
+    URI anclado porque crea un error en el script foo.t
     
 revision 4a62d7ce-245c-45d4-89f8-987080a90112
 Date: Mar 15, 2013 1:58:05 PM
@@ -438,7 +441,7 @@ User: jeff
 
     Pull GAAS/URI-1.59.tar.gz
     
-    URI es necesario para ofrecer HTTP en nuestra aplicación
+    URI es necesario para usar HTTP en nuestra aplicación
     
 ...
 </code>

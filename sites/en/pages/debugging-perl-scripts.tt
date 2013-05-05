@@ -31,7 +31,7 @@ After running the program something is in an unexpected, and bad state.
 
 The task is to find out at what point went something wrong and to correct it.
 
-<h2>What programming and what is a bug?</h2>
+<h2>What is programming and what is a bug?</h2>
 
 Basically, programming is changing the world a bit by moving around data in variables.
 
