@@ -23,12 +23,12 @@
 
 =abstract end
 
-<h2>The request</h2>
+<h2>请求</h2>
 
-I'm trying to learn how to use perl to process various types of files.
-I can do it with Pascal, C or VBA but don't know how to do it
-effectively with perl yet. The following lines represent lines from an
-error file:
+我正学着如何使用perl处理各种类型的文件。
+我会用Pascal、C或者VBA来做，但是目前还不知道怎么用perl高效地实现。
+
+以下这些行来自一个错误日志：
 
 <code>
 ================================================================
@@ -128,58 +128,46 @@ INVALID ENTRY
 ========================================================
 </code>
 
-The first line shows which line in the original file is in error.
-The second line which starts with &N shows which record (key field)
-contains the error.
-The third line tells what kind of error it is.
+第一行表明原始文件哪一行有错。
+第二行以&N开头表明哪条记录（关键字字段）包含错误。
+第三行表明这是那种错误。
 
-How would you process this file in perl?
+你怎么用perl处理这个文件呢？
 
-Thanks,
+十分感谢，
 Foo
 
-<h2>Is there a parser on CPAN?</h2>
+<h2>CPAN上有这种解析器么？</h2>
 
-I don't know what kind of format is this, but I assume Foo knows.
-So the first thing I'd do is try to check if there is already a
-<a href="http://metacpan.org/">module on CPAN</a>,
-that can parse such files.
+我不知道这是什么格式的，不过我觉得Foo应该知道。
+因此我首先想到的是看看<a href="http://metacpan.org/">CPAN</a>上是否已经有了某个模块，可以解析这种文件了。
 
-If that fails, only then would I start to think how to parse it myself.
+要是找不到，我就得开始思考如何自己解析它。
 
+<h2>尝试理解问题</h2>
 
-<h2>Trying to understand the problem</h2>
+我当时忙于修改一些其他的东西，耽搁了几天之后，我读了电子邮件并开始思考他的真实意图是什么？
+除了学习Perl之外，Foo想从这个文件解析出什么东西？
 
-After a few days of delay, while I had to fix some other things, I read the e-mail
-and started to wonder what is the real objective here? Besides learning Perl.
+我回了封邮件还在等候他的澄清，不过可以先看一下我们能做些什么。
 
-What does Foo want to extract from this file?
-
-I sent an e-mail reply waiting for clarifications, but let's see what can
-we do with this.
-
-I think the === lines at the top and bottom were only added to separate the real data
-from the rest of the e-mail. I saved the data, the parts between those two lines
-in a file called error.log. I'll process that file from now on.
+我觉得===这类位于顶部和底部的行只是用于分割实际数据和邮件内容。
+我把这两行之间的数据保存成一个文件，叫做error.log。此后，我会处理这个文件。
 
 <h3>Entities</h3>
 
-As I can see there are entities in this file separated with lines like this:
+我发现文件被这些行分成了一些实体：
 
 ==========     ERRORS  ON  ENTITY    77CF1008      ===========
 
-The first part does not have such heading, I wonder if that was only left out from the
-snippet I got, or if there can really be an entity without such header. Or, if this
-is not even a header.
+第一部分没有这个标题，我估计可能是在我拿到的片段里遗漏了，或者是这个实体真的可能就没这种标题。也可能这部分根本就没有标题。
 
-Without further input I'll assume these are entity names and there can be a general entity without
-a name.
+没有进一步说明的情况下，我假定这是实体名字，而且有一类通用的实体根本就没有名字。
 
 <h2>Blocks</h2>
 
-As described in the e-mail, the first line shows the line number, the next line, starting with &N shows the record,
-and the third line is the actual error. If I look at this example I can see the 3 lines, but I have to
-note the error text is on the 4th line. The 3rd line holds a caret, probably indicating a location in the line.
+如邮件所说，第一行指出行号，下一行以&N开头指出记录，第三行是错误内容。
+看了例子之后，我可以找到这三行，但我发现错误文本在第四行，第三行有个补字符号，可能用于表明在一行里的位置。
 
 <code>
 SOURCE LINE   00347
