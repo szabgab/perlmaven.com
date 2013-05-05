@@ -21,10 +21,12 @@
 <iframe width="640" height="360" src="http://www.youtube.com/embed/shu-bVimOpM" frameborder="0" allowfullscreen></iframe>
 
 <div id="text">
-<a href="https://github.com/MoeOrganization/moe">Moe</a>
-<a href="http://moose.perl.org/">Moose</a>
-Moe contributor <a href="https://github.com/prakashk">Prakash Kailasa</a> known as "sahadev" on IRC.
-Stevan Little on <a href="https://github.com/stevan">Github</a>. He works at <a href="http://www.iinteractive.com/">Infinity Interactive</a>.
+<ul>
+ <li><a href="https://github.com/MoeOrganization/moe">Moe</a></li>
+ <li><a href="http://moose.perl.org/">Moose</a></li>
+ <li>Moe contributor <a href="https://github.com/prakashk">Prakash Kailasa</a> known as "sahadev" on IRC was mentioned.</li>
+ <li>Stevan Little on <a href="https://github.com/stevan">Github</a>. He works at <a href="http://www.iinteractive.com/">Infinity Interactive</a>.</li>
+</ul>
 </div>
 
 <div id="transcript">
