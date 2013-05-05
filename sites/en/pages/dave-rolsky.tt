@@ -37,8 +37,9 @@ the Moose training he runs at YAPC::NA. (19:19)
   <div class="speaker-section speaker-gs">
     <span class="speaker-name">Gabor Szabo</span>
 
-    Hi, this is Gabor Szabo speaking.  This is the Perl Maven TV show
-    again, and with me is Dave Rolsky, who is the author of Date::Time and tons
+    <span class="transcription-timeindex">0:00</span> Hi, this is
+    Gabor Szabo speaking.  This is the Perl Maven TV show again, and
+    with me is Dave Rolsky, who is the author of Date::Time and tons
     of other modules on CPAN.  He is also the author of the, or of at
     least a large part of the Moose tutorial and documentation.  Hi
     Dave.  How are you?
