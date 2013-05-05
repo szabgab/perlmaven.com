@@ -35,201 +35,406 @@ the Moose training he runs at YAPC::NA. (19:19)
 [2013-05-05 Sun 04:31]
 =timings end
 
-=transcription start
+<div id="transcription">
 
-GS: Hi, this is GS speaking.  This is the perlmavin tv show again, and
-with me is DR, who is the author of Date::Time and tons of other
-modules on CPAN.  He is also the author of the, or of at least a large
-part of the Moose tutorial and documentation.  Hi Dave.  How are you?
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
 
-DR: Hi.  I am good how about you?
+    Hi, this is Gabor Szabo speaking.  This is the perlmavin tv show
+    again, and with me is Dave Rolsky, who is the author of Date::Time and tons
+    of other modules on CPAN.  He is also the author of the, or of at
+    least a large part of the Moose tutorial and documentation.  Hi
+    Dave.  How are you?
 
-GS: I am fine.  Still a bit nervous about this tv interviews, but
-hopefully I get over all this
+  </div>
 
-DR: What could go wrong with technology.  Hey were progrqammers, we
-know it always works, it's perfect, so...
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
 
-GS: I can tell you in one of my previous interviews, the aspect retio
-of the camera of the other side was changing, so you can see that his
-head was going up and down.  Very interesting.
+    Hi.  I am good how about you?
 
-DR: Very psychadelic.
+  </div>
 
-GS: Yeah.  Anyway.  So.  [1:00] Welcome to the show, and I would like
-to start with you from the beginning, becuase you have these tons of
-modules on CPAN, but where do we start?  How did you get involved in
-Perl.
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
 
-DR: [1:13] Ok, sure.  So, back in '95/'96, I think, I was in grad
-school for music composition, that's what my degree is in, and I was,
-at the time I had recently met Matt Mackall, who people might
-recognize as the author of Mercurial, and he's also done Linux
-development, so I knew him back, way back then, actually through a
-local vegetarian group, and I wanted to write a web app for the
-composers at my school to list all of our pieces, so that performers
-could find what we had written and may be sort, and you know, "I want
-to find something that includes claranet" or something like that,
-[2:00] and so I had done a little programming when I was a kid -- I
-got my first computer when I was young, 5 or 6, so I asked Matt, "what
-should I learn to do this?  What's the right language?"  So he pointed
-me at Perl. [2:15] I think I got a Perl book sometime when I was in
-grad school.  This app never materialized.  It was a good idea, but it
-didn't happen, like many projects, right?  So this should be familiar
-to everybody [2:24] watching this: "Projects You Never Did".  That got
-me started looking at perl, which is very ironic, since Matt is
-totally a Python guy these days, anyway.
+    I am fine.  Still a bit nervous about this tv interviews, but
+    hopefully I get over all this
+  </div>
 
-GS: [2:35] Back then everyone was perl.
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
 
-DR: [2:37] Exactly, exactly.  When I graduated from the masters
-program, I was kindof burned out on the whole academic thing, and so I
-decided to not get a PhD, so I end up getting a job in support at a
-local insurance company in St. Paul.  I lived in Minneapolis,
-Minnesota.  [3:00] And therre was kindof downtime.  When things
-weren't crashing, there was free time, because we weren't like a
-support line for Dell, it was just for the company, so if things there
-were working, we had time.  So I kindof taught myself more programming
-there, and I was actually working on another project that I never
-finished, which was a web UI for MajorDomo, if anybody remembers
-MajorDomo.
+    What could go wrong with technology.  Hey were progrqammers, we
+    know it always works, it's perfect, so...
 
-GS: People still use it.
+  </div>
 
-DR: Oh wow.  Oh my God.  Ok.  So I learned more of Perl there, and
-then eventually after about 15 months of that job, I got my first
-programming job, this was during the first dot-com boom, when anybody
-with a, I'll be polite, a butt, could get a seat, because that's all
-you needed was a butt to put in the seat to be a programmer, [3:50] so
-I had no idea what te heck I was doing, but I managed to get a
-programming job.  And it was a Perl place, and so that was kindof
-where it all started.  And actually, that job I met Ken Williams, who
-is the person who introduced me to Mason, and we eventually wrote the
-Mason book together, and he introduced me to more of the Perl comunity
-stuff, [4:10] pushed me to put stuff on CPAN, told me about YAPC,
-things like that.  So that's where it really got started.
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
 
-GS: [4:16] Great.  So you started, you started to lear Perl, you had
-this, you were involed in a lot of projects, right?  I mean, if you
-look at the CPAN directory, then you see all kinds of diverse things.
+    I can tell you in one of my previous interviews, the aspect ratio
+    of the camera of the other side was changing, so you can see that
+    his head was going up and down.  Very interesting.
 
-DR: [4:33] Yeah, I've done... I think the first thing I uploaded was
-someting that's kindof a predecessor to Log::Dispatch.  It was like a
-logging module I had written for the company I was working at, and I
-got permission to release it, and it was really teriible, but I
-uploaded that, and then [4:49] I think I wrote, I actually wrote a
-small bug tracking system for our support team, and I had done my own
-templating system, I think for that, I don't know, this was so long
-ago.  And then Ken was like "You should look at Mason".  So then I
-started using Mason, and then I started contributing to Mason, [5:05]
-So, I mean, for some of the things I worked on its projects that other
-people have started, probably most notably Mason and Moose, where I
-got excited about the project, and, you know, [5:19] if it doesn't
-work the way I want it, then patches welcome, and I am kindof a sucker
-for that, so I end up doing the patches, and then working on docs, and
-all of these other things, [5:29] and then for other stuff, I mean I
-have lots of stuff I have uploaded to CPAN that I don't think anybody
-has ever used, including me.  There is stuff that is up there that is
-just experimental, or that's long abandoned. [5:39] so even though I
-have tons of CPAN modules, I suspect maybe, I don't know, 25% of them,
-35% of them see any use, but some of them are used pretty hevuly.  So
-it's kinda...
+  </div>
 
-GS: [5;50] Yeah, I think I mean, it's like a trademark.  If I know
-that you wrote it, then I know that then it's "it's ok".  Maybe I
-shouldn't trust everything that you wrote.
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
 
-DR: [5:59] (laugh) I sure wouldn't trust everything!  I'm embarassed
-by my old code.  I look at Log::Dispatch, which is one of the earliest
-ones, and I know lots of people use it, and I still use it, but
-whenever I have to hack on it, I'm like "Ugh, not this again".
+    Very psychadelic.
 
-GS: Oh, you don't like it anymore.
+  </div>
 
-DR: Someday I'll [6:13] [garbled] to use Moo or something.
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
 
-GS: [6:17] Ok.  But would you for.. if you had already mentioned Moo
-and would you help somebody if he wanted to rewrite it in Moo or start
-improving it and step by step.  It's not like from scratch.
+    Yeah.  Anyway.
+    So.  <span class="transcription-timeindex">1:00</span> Welcome to
+    the show, and I would like to start with you from the beginning,
+    becuase you have these tons of modules on CPAN, but where do we
+    start?  How did you get involved in Perl.
 
-DR: Sure! Sure.
+  </div>
 
-GS: [6:33] Because I think that would be crazy.  Probably it would be
-better, I don't know, class by class to turn it to Moo?
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
 
-DR: [6:43] Yeah.  It really wouldn't be hard.  Log::SDispatch, in
-particular, is really not much code.  It's a pretty simple module.  So
-the big things I want to do for that are just kindof clean it up,
-possibly use Moo, [6:54] and also to split it up into separate
-distros.  Right now its kindof an ugly distro where it ships all these
-output modules, like for Apache logs [7:04] whose using mod_perl
-anymore?  I'm not, so I don't need it.  It has a syslog output and
-four different ways to send email, and these should all be separate
-modules.  [7:12] Cause right now you install it and it doesn't have
-any of the prereqs declared, 'cause otherwise I'd need to declare tons
-of prereqs, and it would be a mess.  [7:21] So splitting up into
-different distros would be a nice thing to do too.  [7:26] and we
-could [garbled].
+    <span class="transcription-timeindex">1:13</span> Ok, sure.  So,
+    back in '95/'96, I think, I was in grad school for music
+    composition, that's what my degree is in, and I was, at the time I
+    had recently met Matt Mackall, who people might recognize as the
+    author of Mercurial, and he's also done Linux development, so I
+    knew him back, way back then, actually through a local vegetarian
+    group, and I wanted to write a web app for the composers at my
+    school to list all of our pieces, so that performers could find
+    what we had written and may be sort, and you know, "I want to find
+    something that includes claranet" or something like
+    that, <span class="transcription-timeindex">2:00</span> and so I
+    had done a little programming when I was a kid -- I got my first
+    computer when I was young, 5 or 6, so I asked Matt, "what should I
+    learn to do this?  What's the right language?"  So he pointed me
+    at Perl. <span class="transcription-timeindex">2:15</span> I think
+    I got a Perl book sometime when I was in grad school.  This app
+    never materialized.  It was a good idea, but it didn't happen,
+    like many projects, right?  So this should be familiar to
+    everybody <span class="transcription-timeindex">2:24</span>
+    watching this: "Projects You Never Did".  That got me started
+    looking at perl, which is very ironic, since Matt is totally a
+    Python guy these days, anyway.
 
-GS: [7:26] [garbled] [7:28] Sorry?
+  </div>
 
-DR: [7:30] It would just make it easier to manage, I think.
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
 
-GS: [7:32] Yeah.  Yeah, probably.  So actually, I didn't think about
-it earlier, but this could be a [7:39] way to introduce new
-programmers, or people who are not new to programming, maybe, but new
-to Perl and would like to have some project [7:49] and they think,
-well, "what can we do?", and here is a module that is heavily used,
-probably, I know I use it, and probably a lot of other people use it,
-[8:00] and can be refactored to something more modern.
+    <span class="transcription-timeindex">2:35</span> Back then
+    everyone was perl.
 
-DR: [8:04] Yeah, definitely, and it's reasonably ammenable [SPELLING]
-to that since each subclass, each output class is pretty small,
-doesn't do much, you could convert them one at a time.  I think that's
-definitely a reasonable project.
+  </div>
 
-GS: [8:17] That's interesting.  So, what are you working these days?
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
 
-DR: [8:21] For paid work, or free for software stuff?
+    <span class="transcription-timeindex">2:37</span> Exactly,
+    exactly.  When I graduated from the masters program, I was kindof
+    burned out on the whole academic thing, and so I decided to not
+    get a PhD, so I end up getting a job in support at a local
+    insurance company in St. Paul.  I lived in Minneapolis, Minnesota.
+    <span class="transcription-timeindex">3:00</span> And therre was
+    kindof downtime.  When things weren't crashing, there was free
+    time, because we weren't like a support line for Dell, it was just
+    for the company, so if things there were working, we had time.  So
+    I kindof taught myself more programming there, and I was actually
+    working on another project that I never finished, which was a web
+    UI for MajorDomo, if anybody remembers MajorDomo.
 
-GS: [8:25] I don't know, start with free software?
+  </div>
 
-DR: [8:28] Not too much.  The last couple of years have been, I just
-have a lot of stuff going on in my life. [8:38] Some health problems
-for me and my wife, which have been distracting, and also I am doing a
-lot of activism related to animal advocacy [8:47], so last year, the
-group I work with, we did a big veg-fest in the Twin Cities, and I was
-kindof the lead organizer for that, so I spent a lot of time on that.
-And now we're doing it again [8:58], and I'm still the lead organizer.
-So, you know, things like that can be distracting.  It's kindof like
-putting on a YAPC, basically, in terms of amount of work, to give
-people a sense of perspective. [9:08] Probably the biggest thing I've
-done recently, let's see, well, there's that module, I don't know if
-people have seen, called Courriel, which is a terrible pronounciation
-(SPELLING) [9:16], which is the French word, official French word for
-email, that France uses.  But I just picked it because the Email::
-name space was already taken, and it's kindof an attempt to improve on
-the email [9:27] Email::Mime modules, which I don't like the API of
-much, and just try to give it a more modern, easy to use API [9:35].
-So, we're using that at work, and it seems to work pretty well.  I
-think other people are using it, so that's something.  There's
-definitely work to be done on that.  [9:41] I've been working on some
-tools related to calling Postgress command line programs.  It's the
-Pg::CLI distro, which actually is [8:52] turned out to be something we
-need a lot at work as well.  We're trying to move to Postrgess and for
-managing databases [9:59].  And then I am working on something that I
-hope, I'm working on it slowly, very slowly, that I hope will
-eventually replaces Mooses buit-in type system, but also be usable for
-Moo, and really be available standalone.  It's called Specio, or
-actually I think it [10:15] totally I should say Specio, but I don't
-know how to pronounce Latin.  It's kindof a standalone type system.
-[10:24] I think those some of the most recent things.  I don't even
-remember.  What have I done on CPAN?  Who knows?
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
 
-[10:29]
+    People still use it.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
+
+    Oh wow.  Oh my God.  Ok.  So I learned more of Perl there, and
+    then eventually after about 15 months of that job, I got my first
+    programming job, this was during the first dot-com boom, when
+    anybody with a, I'll be polite, a butt, could get a seat, because
+    that's all you needed was a butt to put in the seat to be a
+    programmer, <span class="transcription-timeindex">3:50</span> so I
+    had no idea what te heck I was doing, but I managed to get a
+    programming job.  And it was a Perl place, and so that was kindof
+    where it all started.  And actually, that job I met Ken Williams,
+    who is the person who introduced me to Mason, and we eventually
+    wrote the Mason book together, and he introduced me to more of the
+    Perl comunity
+    stuff, <span class="transcription-timeindex">4:10</span> pushed me
+    to put stuff on CPAN, told me about YAPC, things like that.  So
+    that's where it really got started.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
+
+    <span class="transcription-timeindex">4:16</span> Great.  So you
+    started, you started to lear Perl, you had this, you were involed
+    in a lot of projects, right?  I mean, if you look at the CPAN
+    directory, then you see all kinds of diverse things.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
+
+    <span class="transcription-timeindex">4:33</span> Yeah, I've
+    done... I think the first thing I uploaded was someting that's
+    kindof a predecessor to Log::Dispatch.  It was like a logging
+    module I had written for the company I was working at, and I got
+    permission to release it, and it was really teriible, but I
+    uploaded that, and
+    then <span class="transcription-timeindex">4:49</span> I think I
+    wrote, I actually wrote a small bug tracking system for our
+    support team, and I had done my own templating system, I think for
+    that, I don't know, this was so long ago.  And then Ken was like
+    "You should look at Mason".  So then I started using Mason, and
+    then I started contributing to
+    Mason, <span class="transcription-timeindex">5:05</span> So, I
+    mean, for some of the things I worked on its projects that other
+    people have started, probably most notably Mason and Moose, where
+    I got excited about the project, and, you
+    know, <span class="transcription-timeindex">5:19</span> if it
+    doesn't work the way I want it, then patches welcome, and I am
+    kindof a sucker for that, so I end up doing the patches, and then
+    working on docs, and all of these other
+    things, <span class="transcription-timeindex">5:29</span> and then
+    for other stuff, I mean I have lots of stuff I have uploaded to
+    CPAN that I don't think anybody has ever used, including me.
+    There is stuff that is up there that is just experimental, or
+    that's long
+    abandoned. <span class="transcription-timeindex">5:39</span> so
+    even though I have tons of CPAN modules, I suspect maybe, I don't
+    know, 25% of them, 35% of them see any use, but some of them are
+    used pretty hevuly.  So it's kinda...
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
+
+    <span class="transcription-timeindex">5:50</span> Yeah, I think I
+    mean, it's like a trademark.  If I know that you wrote it, then I
+    know that then it's "it's ok".  Maybe I shouldn't trust everything
+    that you wrote.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
+
+    <span class="transcription-timeindex">5:59</span> (laugh) I sure
+    wouldn't trust everything!  I'm embarassed by my old code.  I look
+    at Log::Dispatch, which is one of the earliest ones, and I know
+    lots of people use it, and I still use it, but whenever I have to
+    hack on it, I'm like "Ugh, not this again".
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
+
+    Oh, you don't like it anymore.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
+
+    Someday I'll <span class="transcription-timeindex">6:13</span>
+    [garbled] to use Moo or something.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
+
+    <span class="transcription-timeindex">6:17</span> Ok.  But would
+    you for.. if you had already mentioned Moo and would you help
+    somebody if he wanted to rewrite it in Moo or start improving it
+    and step by step.  It's not like from scratch.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
+
+    Sure! Sure.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
+
+    <span class="transcription-timeindex">6:33</span> Because I think
+    that would be crazy.  Probably it would be better, I don't know,
+    class by class to turn it to Moo?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
+
+    <span class="transcription-timeindex">6:43</span> Yeah.  It really
+    wouldn't be hard.  Log::SDispatch, in particular, is really not
+    much code.  It's a pretty simple module.  So the big things I want
+    to do for that are just kindof clean it up, possibly use Moo,
+    <span class="transcription-timeindex">6:54</span> and also to
+    split it up into separate distros.  Right now its kindof an ugly
+    distro where it ships all these output modules, like for Apache
+    logs <span class="transcription-timeindex">7:04</span> whose using
+    mod_perl anymore?  I'm not, so I don't need it.  It has a syslog
+    output and four different ways to send email, and these should all
+    be separate
+    modules.  <span class="transcription-timeindex">7:12</span> Cause
+    right now you install it and it doesn't have any of the prereqs
+    declared, 'cause otherwise I'd need to declare tons of prereqs,
+    and it would be a
+    mess.  <span class="transcription-timeindex">7:21</span> So
+    splitting up into different distros would be a nice thing to do
+    too.  <span class="transcription-timeindex">7:26</span> and we
+    could [garbled].
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
+
+    <span class="transcription-timeindex">7:26</span>
+    [garbled] <span class="transcription-timeindex">7:28</span> Sorry?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
+
+    <span class="transcription-timeindex">7:30</span> It would just
+    make it easier to manage, I think.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
+
+    <span class="transcription-timeindex">7:32</span> Yeah.  Yeah,
+    probably.  So actually, I didn't think about it earlier, but this
+    could be a <span class="transcription-timeindex">7:39</span> way
+    to introduce new programmers, or people who are not new to
+    programming, maybe, but new to Perl and would like to have some
+    project <span class="transcription-timeindex">7:49</span> and they
+    think, well, "what can we do?", and here is a module that is
+    heavily used, probably, I know I use it, and probably a lot of
+    other people use
+    it, <span class="transcription-timeindex">8:00</span> and can be
+    refactored to something more modern.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
+
+    <span class="transcription-timeindex">8:04</span> Yeah,
+    definitely, and it's reasonably ammenable [SPELLING] to that since
+    each subclass, each output class is pretty small, doesn't do much,
+    you could convert them one at a time.  I think that's definitely a
+    reasonable project.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
+
+    <span class="transcription-timeindex">8:17</span> That's
+    interesting.  So, what are you working these days?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
+
+    <span class="transcription-timeindex">8:21</span> For paid work,
+    or free for software stuff?
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-name">Gabor Szabo</span>
+
+    <span class="transcription-timeindex">8:25</span> I don't know,
+    start with free software?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-name">Dave Rolsky</span>
+
+    <span class="transcription-timeindex">8:28</span> Not too much.
+    The last couple of years have been, I just have a lot of stuff
+    going on in my
+    life. <span class="transcription-timeindex">8:38</span> Some
+    health problems for me and my wife, which have been distracting,
+    and also I am doing a lot of activism related to animal advocacy
+    <span class="transcription-timeindex">8:47</span>, so last year,
+    the group I work with, we did a big veg-fest in the Twin Cities,
+    and I was kindof the lead organizer for that, so I spent a lot of
+    time on that.  And now we're doing it
+    again <span class="transcription-timeindex">8:58</span>, and I'm
+    still the lead organizer.  So, you know, things like that can be
+    distracting.  It's kindof like putting on a YAPC, basically, in
+    terms of amount of work, to give people a sense of
+    perspective. <span class="transcription-timeindex">9:08</span>
+    Probably the biggest thing I've done recently, let's see, well,
+    there's that module, I don't know if people have seen, called
+    Courriel, which is a terrible pronounciation
+    (SPELLING) <span class="transcription-timeindex">9:16</span>,
+    which is the French word, official French word for email, that
+    France uses.  But I just picked it because the Email:: name space
+    was already taken, and it's kindof an attempt to improve on the
+    email <span class="transcription-timeindex">9:27</span>
+    Email::Mime modules, which I don't like the API of much, and just
+    try to give it a more modern, easy to use
+    API <span class="transcription-timeindex">9:35</span>.  So, we're
+    using that at work, and it seems to work pretty well.  I think
+    other people are using it, so that's something.  There's
+    definitely work to be done on
+    that.  <span class="transcription-timeindex">9:41</span> I've been
+    working on some tools related to calling Postgress command line
+    programs.  It's the Pg::CLI distro, which actually
+    is <span class="transcription-timeindex">8:52</span> turned out to
+    be something we need a lot at work as well.  We're trying to move
+    to Postrgess and for managing
+    databases <span class="transcription-timeindex">9:59</span>.  And
+    then I am working on something that I hope, I'm working on it
+    slowly, very slowly, that I hope will eventually replaces Mooses
+    buit-in type system, but also be usable for Moo, and really be
+    available standalone.  It's called Specio, or actually I think it
+    <span class="transcription-timeindex">10:15</span> totally I
+    should say Specio, but I don't know how to pronounce Latin.  It's
+    kindof a standalone type
+    system.  <span class="transcription-timeindex">10:24</span> I
+    think those some of the most recent things.  I don't even
+    remember.  What have I done on CPAN?  Who knows?
+
+  </div>
 
 
-=transcription end
+<span class="transcription-timeindex">10:29</span>
+
+</div>
 
 <div id="text">
 <h2>Show notes</h2>
