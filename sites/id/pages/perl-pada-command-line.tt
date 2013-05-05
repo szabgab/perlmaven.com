@@ -14,7 +14,7 @@
 
 =abstract start
 
-Sementara kebanyakan <a href="/perl-tutorial">panduan Perl</a>berhubungan dengan skrip yang disimpan pada sebuah
+Sementara kebanyakan <a href="/perl-tutorial">panduan Perl</a> berhubungan dengan skrip yang disimpan pada sebuah
 file, kita juga akan melihat beberapa contoh penggunaan command line.
 
 Sekalipun Anda menggunakan <a href="http://padre.perlide.org/">Padre</a>
@@ -27,9 +27,7 @@ mampu menggunakan Perl dari sana.
 Jika Anda menggunakan Linux, bukalah jendela terminal. Pastikan Anda melihat sebuah
 prompt, yang biasanya diakhiri dengan tanda $.
 
-Jika Anda menggunakan Windows, bukalah CMD: klik pada
-
-Start -> Run -> ketik "cmd" -> ENTER
+Jika Anda menggunakan Windows, bukalah CMD: klik pada Start -> Run -> ketik "cmd" -> ENTER
 
 Anda akan melihat jendela hitam CMD dengan tanda prompt yang tampak seperti ini:
 
@@ -53,7 +51,7 @@ Perl may be copied only under the terms of either the Artistic License or the
 GNU General Public License, which may be found in the Perl 5 source kit.
 
 Complete documentation for Perl, including FAQ lists, should be found on
-this system using "man perl" or "perldoc perl".    If you have access to the
+this system using "man perl" or "perldoc perl". If you have access to the
 Internet, point your browser at http://www.perl.org/, the Perl Home Page.
 </code>
 
@@ -85,7 +83,7 @@ Pada contoh kita menggunakan penanda <hl>-e</hl> yang memberitahukan Perl,
 "Jangan mengira ini sebuah berkas. Kalimat berikutnya pada command-line adalah kode Perl yang sesungguhnya."
 
 Contoh-contoh di atas tentu tidak begitu menarik. Mari saya berikan contoh
-yang lebih kompleks, tanpa menjelaskannya:
+yang lebih kompleks:
 
 <h2>Mengganti Java dengan Perl</h2>
 
