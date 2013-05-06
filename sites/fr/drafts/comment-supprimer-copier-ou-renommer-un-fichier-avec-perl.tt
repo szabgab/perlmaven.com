@@ -1,9 +1,11 @@
-=title How to remove, copy or rename a file with Perl
-=timestamp 2012-08-24T14:45:19
+=title Comment supprimer, copier, ou renommer un fichier avec Perl
+=timestamp 2012-05-05:45:19
 =indexes unlink, remove, rm, del, delete, copy, cp, rename, move, mv, File::Copy
 =status show
+=original how-to-remove-copy-or-rename-a-file-with-perl
 =books beginner_book
 =author szabgab
+=translator oval
 =index 1
 =archive 1
 =feed 1
@@ -12,45 +14,40 @@
 
 =abstract start
 
-Many people who come from the world of <b>system administration</b> and Unix or Linux scripting,
-will try to keep using the regular unix commands of <b>rm</b>, <b>cp</b> and <b>mv</b>
-for these operations. Calling them either with back-tick or with <b>system</b>,
-even when writing Perl scripts.
+Lors de l'écriture des scripts Perl, la plupart de ceux qui viennent du monde du système d'administration et de l'écriture de scripts Unix ou Linux vont essayer de continuer à utiliser les commandes Unix normales <hl>rm</hl>, <hl>cp</hl> et <hl>mv</hl> en les appelant soit entre les guillemets obliques inversés soit avec la fonction prédéfinie <hl>system</hl>.
 
-That works on their current platform, but that gives up one of the key benefits
-Perl brought to the world of Unix system administration.
-
-Let's see how can we execute these operations with Perl in a platform-independent way,
-and without <b>shelling out</b>.
+Cette technique fonctionne sur la plateforme qu'ils utilisent, mais fait perdre l'un des principaux avantages que Perl a apporté au monde de l'administration du système Unix. Voyons comment nous pouvons exécuter ces opérations avec Perl d'une manière indépendante de la plateforme, et <b>sans passer par un programme shell</b>.
 
 =abstract end
 
-<h2>remove</h2>
+<h2>supprimer</h2>
 
-The name of the respective built-in function in perl is <hl>unlink</hl>.
+Le nom de la fonction prédéfinie en Perl est <hl>unlink</hl>.
 
-It removes one or more files from the file system.
-It is similar to the <hl>rm</hl> command in Unix or the <hl>del</hl> command in Windows.
+Cette fonction supprime un ou plusieurs fichiers du système de fichiers.
+Elle est similaire à la commande <hl>rm</hl> sous Unix et à la commande <hl>del</hl> sous DOS/Windows.
 
 <code lang="perl">
-unlink $file;
-unlink @files;
+unlink $fichier;
+unlink @fichiers;
 </code>
 
-It uses <hl>$_</hl>, <a href="/the-default-variable-of-perl">the default variable of Perl</a> if no parameter is given.
+Elle utilise $_, la variable par défaut de Perl, si aucun paramètre n'est donné.
 
-For full documentation see <a href="http://perldoc.perl.org/functions/unlink.html">perldoc -f unlink</a>.
+Pour une documentation complète, voir <a href="http://perldoc.perl.org/functions/unlink.html">perldoc -f unlink</a>.
 
-<h2>rename</h2>
+<h2>renommer</h2>
 
-Renames or moves a file. Similar to the <hl>mv</hl> command in Unix and <hl>rename</hl> command in DOS/Windows.
+Le nom de la fonction prédéfinie en Perl est <hl>rename</hl>.
+
+Cette fonction renomme ou déplace un fichier.
+Elle est similaire à la commande <hl>mv</hl> sous Unix et à la commande <hl>rename</hl> sous DOS/Windows.
 
 <code lang="perl">
 rename $old_name, $new_name;
 </code>
 
-As this does not always work across file systems the recommended alternative is the
-<hl>move</hl> function of the <hl>File::Copy</hl> module:
+Comme cela ne fonctionne pas dans tous les systèmes de fichiers, la solution recommandée est la fonction <hl>move</hl> du module <hl>File::Copy</hl> :
 
 <code lang="perl">
 use File::Copy qw(move);
@@ -58,16 +55,18 @@ use File::Copy qw(move);
 move $old_name, $new_name;
 </code>
 
-Documentation:
+Pour une documentation complète, voir : 
 
 <a href="http://perldoc.perl.org/functions/rename.html">perldoc -f rename</a>.
 
 <a href="http://perldoc.perl.org/File/Copy.html">perldoc File::Copy</a>.
 
-<h2>copy</h2>
+<h2>copier</a>
 
-There is no built-in copy function in core perl. The standard way to copy a file is
-to use the <hl>copy</hl> function of File::Copy.
+Il n'existe pas de fonction prédéfinie <hl>copy</hl> dans le noyau de perl.
+La méthode standard pour copier un fichier est d'utiliser la fonction <hl>copy</hl> du module File::Copy.
+
+Ceci est similaire à la commande <hl>cp</hl> sous Unix et la commande <hl>copy</hl> de DOS/Windows.
 
 <code lang="perl">
 use File::Copy qw(copy);
@@ -75,8 +74,4 @@ use File::Copy qw(copy);
 copy $old_file, $new_file;
 </code>
 
-This is similar to the <hl>cp</hl> command in Unix and the <hl>copy</hl> command in Windows.
-
-For documentation visit <a href="http://perldoc.perl.org/File/Copy.html">perldoc File::Copy</a>.
-
-
+Pour une documentation complète, voir <a href="http://perldoc.perl.org/File/Copy.html">perldoc File::Copy</a>.
