@@ -31,13 +31,15 @@ the Moose training he runs at YAPC::NA. (19:19)
 [2013-05-03 Fri 06:00]--[2013-05-03 Fri 06:35]: First pass 3:00--6:17
 [2013-05-03 Fri 16:22]--[2013-05-03 Fri 17:06]: First pass 6:17--10:29
 [2013-05-05 Sun 04:31]--[2013-05-05 Sun 05:28]: HTMLize and spelling
+[2013-05-05 Sun 16:00]--[2013-05-05 Sun 16:34]: Minor fixes and research into CSS settings.
 -->
 
   <div class="speaker-section speaker-gs">
     <span class="speaker-name">Gabor Szabo</span>
 
-    Hi, this is Gabor Szabo speaking.  This is the Perl Maven TV show
-    again, and with me is Dave Rolsky, who is the author of Date::Time and tons
+    <span class="transcription-timeindex">0:00</span> Hi, this is
+    Gabor Szabo speaking.  This is the Perl Maven TV show again, and
+    with me is Dave Rolsky, who is the author of Date::Time and tons
     of other modules on CPAN.  He is also the author of the, or of at
     least a large part of the Moose tutorial and documentation.  Hi
     Dave.  How are you?
@@ -61,7 +63,7 @@ the Moose training he runs at YAPC::NA. (19:19)
   <div class="speaker-section speaker-dr">
     <span class="speaker-name">Dave Rolsky</span>
 
-    What could go wrong with technology.  Hey were programmers, we
+    What could go wrong with technology.  Hey, we're programmers, we
     know it always works, it's perfect, so...
 
   </div>
