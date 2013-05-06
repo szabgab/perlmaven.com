@@ -24,6 +24,34 @@ the Moose training he runs at YAPC::NA. (19:19)
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/d-K_uoIrUKQ" frameborder="0" allowfullscreen></iframe>
 
+<style>
+.transcription           { }                           /* Container for transcription  */
+.transcription-timeindex { display: none }             /* Time indexes into the video  */
+.speaker-section         { }                           /* Contains a single speaker    */
+.speaker-gs              { }                           /* Gabor Szabo                  */
+.speaker-dr              { }                           /* Dave Rolsky                  */
+.speaker-name            { display: none }             /* Contains the speaker name    */
+.speaker-gs[first] .speaker-name   {                   /* Display the first instance   */
+    font-weight: bold;
+    display: inline
+}
+.speaker-dr[first] .speaker-name   {                   /* Display the first instance   */
+    font-weight: bold;
+    display: inline
+}
+.speaker-initial         {                             /* Contains the speaker initial */
+    font-weight: bold;
+    display: inline
+}
+.speaker-gs[first] .speaker-initial { display: none }  /* Hide the first instance      */
+.speaker-dr[first] .speaker-initial { display: none }  /* Hide the first instance      */
+.speaker-info            { }                           /* Container for speaker info   */
+.speaker-info:after      { content: ":" }              /* Container for speaker info   */
+.transcription-garbled   { }                           /* Audio section was garbled    */
+.transcription-editor    { }                           /* Section for editor note      */
+.transcription-garbled   { font-style: italic }        /* Indicator for garbled text   */
+</style>
+
 <div id="transcription">
 
 <!--
