@@ -65,11 +65,11 @@ Will we create our own function to do this?
 
 <h2>Test::Warn</h2>
 
-Luckily Janek Schleicher has alrady done that when he created
+Luckily Janek Schleicher has already done that when he created
 the <a href="http://metacpan.org/module/Test::Warn">Test::Warn</a> module which is currently maintained
 by <a href="http://chorny.net/">Alexandr Ciornii</a>.
 
-You can use the convenince functions provided by this module and
+You can use the convenience functions provided by this module and
 you don't need to reinvent this wheel.
 
 Using this module, the above code would be reduced to
