@@ -63,8 +63,11 @@ the Moose training he runs at YAPC::NA. (19:19)
 [2013-05-05 Sun 16:44]--[2013-05-05 Sun 16:49]: More minor edits
 -->
 
-  <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+  <div class="speaker-section speaker-gs" first="first">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     <span class="transcription-timeindex">0:00</span> Hi, this is
     Gabor Szabo speaking.  This is the Perl Maven TV show again, and
@@ -75,22 +78,31 @@ the Moose training he runs at YAPC::NA. (19:19)
 
   </div>
 
-  <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+  <div class="speaker-section speaker-dr" first="first">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     Hi.  I am good how about you?
 
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     I am fine.  Still a bit nervous about these tv interviews, but
     hopefully I get over all this.
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     What could go wrong with technology?  Hey, we're programmers, we
     know it always works, it's perfect, so...
@@ -98,7 +110,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     I can tell you in one of my previous interviews, the aspect ratio
     of the camera of the other side was changing, so you can see that
@@ -107,14 +122,20 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     Very psychedelic.
 
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     Yeah.  Anyway.
     So.  <span class="transcription-timeindex">1:00</span> Welcome to
@@ -125,7 +146,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     <span class="transcription-timeindex">1:13</span> OK, sure.  So,
     back in '95/'96, I think, I was in grad school for music
@@ -153,7 +177,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     <span class="transcription-timeindex">2:35</span> Back then
     everyone was Perl.
@@ -161,7 +188,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     <span class="transcription-timeindex">2:37</span> Exactly,
     exactly.  When I graduated from the masters program, I was kind of
@@ -179,14 +209,20 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     People still use it.
 
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     Oh wow.  Oh my God.  OK.  So I learned more of Perl there, and
     then eventually after about 15 months of that job, I got my first
@@ -207,7 +243,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     <span class="transcription-timeindex">4:16</span> Great.  So you
     started, you started to learn Perl, you had this, you were involved
@@ -217,7 +256,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     <span class="transcription-timeindex">4:33</span> Yeah, I've
     done... I think the first thing I uploaded was something that's
@@ -252,7 +294,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     <span class="transcription-timeindex">5:50</span> Yeah, I think I
     mean, it's like a trademark.  If I know that you wrote it, then I
@@ -262,7 +307,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     <span class="transcription-timeindex">5:59</span> (laugh) I sure
     wouldn't trust everything!  I'm embarrassed by my old code.  I
@@ -273,14 +321,20 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     Oh, you don't like it anymore.
 
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     Someday I'll <span class="transcription-timeindex">6:13</span>
     <span class="transcription-garbled">[garbled]</span> to use Moo or
@@ -289,7 +343,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     <span class="transcription-timeindex">6:17</span> OK.  But would
     you for.. if you had already mentioned Moo and would you help
@@ -299,14 +356,20 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     Sure! Sure.
 
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     <span class="transcription-timeindex">6:33</span> Because I think
     that would be crazy.  Probably it would be better, I don't know,
@@ -315,7 +378,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     <span class="transcription-timeindex">6:43</span> Yeah.  It really
     wouldn't be hard.  Log::Dispatch, in particular, is really not
@@ -340,7 +406,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     <span class="transcription-timeindex">7:26</span>
     <span class="transcription-garbled">[garbled]</span>
@@ -349,7 +418,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     <span class="transcription-timeindex">7:30</span> It would just
     make it easier to manage, I think.
@@ -357,7 +429,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     <span class="transcription-timeindex">7:32</span> Yeah.  Yeah,
     probably.  So actually, I didn't think about it earlier, but this
@@ -374,7 +449,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     <span class="transcription-timeindex">8:04</span> Yeah,
     definitely, and it's reasonably amenable to that since each
@@ -385,7 +463,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     <span class="transcription-timeindex">8:17</span> That's
     interesting.  So, what are you working these days?
@@ -393,7 +474,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     <span class="transcription-timeindex">8:21</span> For paid work,
     or free for software stuff?
@@ -401,7 +485,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-gs">
-    <span class="speaker-name">Gabor Szabo</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
 
     <span class="transcription-timeindex">8:25</span> I don't know,
     start with free software?
@@ -409,7 +496,10 @@ the Moose training he runs at YAPC::NA. (19:19)
   </div>
 
   <div class="speaker-section speaker-dr">
-    <span class="speaker-name">Dave Rolsky</span>
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
 
     <span class="transcription-timeindex">8:28</span> Not too much.
     The last couple of years have been, I just have a lot of stuff
