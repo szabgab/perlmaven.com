@@ -167,7 +167,7 @@ Foo
 <h2>Blocks</h2>
 
 如邮件所说，第一行指出行号，下一行以&N开头指出记录，第三行是错误内容。
-看了例子之后，我可以找到这三行，但我发现错误文本在第四行，第三行有个补字符号，可能用于表明在一行里的位置。
+看了例子之后，我可以找到这三行，但我发现错误文本在第四行，第三行有个补字符号，可能用于表明在行中的位置。
 
 <code>
 SOURCE LINE   00347
@@ -176,9 +176,8 @@ SOURCE LINE   00347
 NOT A VALID NAME
 </code>
 
-That would be fine, but I see other blocks as well.
-For example in this block, there is no &N on the second line, and there are 3 rows with error messages.
-(and 3 carets on the 3rd line).
+这倒没什么，但是我发现有另一类块。
+比如这个块，第二行没有&N，而且错误信息有3行（而且第三行有3个补字符号）。
 
 <code>
 SOURCE LINE   00490
@@ -189,19 +188,18 @@ NAMED ITEM DOESN'T EXIST
 NAMED ITEM DOESN'T EXIST
 </code>
 
-In order to make it easier to write about this, I'll call a set of lines a <b>block</b> if they start with the
-expression "SOURCE LINE" and finish when the next block starts. Actually, a block can also end by the
-header of a new entity or by the end of the file. So we'll need to handle these special cases.
+为了阐述更方便，我将这类行的集合称为一个<b>块</b>，它以表达式"SOURCE LINE"开头并直到下一个块开始结束。
+实际上，块也可能以新实体的标题或者文本末尾作为结束。因此我们需要处理这些特殊情况。
 
-<h2>What can be extracted?</h2>
+<h2>解析什么信息？</h2>
 
-I can think of various things that can be extracted from such file:
+我可以想到有很多东西可以从这个文件解析出来：
 
-How many (error) blocks were in each entity and in total?
+每个实体有多少个块（错误），一共有多少？
 
-Which error messages appeared and how frequently?
+出现哪些错误信息，频率怎么样？
 
-<h2>Processing the file - first step</h2>
+<h2>处理文件——第一步</h2>
 
 Usually in Perl we read files line-by-line. Especially as we don't know how big the files are. Maybe the file
 is bigger than the available memory in the computer? We cannot assume to be able to read the whole file
