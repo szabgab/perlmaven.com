@@ -245,7 +245,7 @@ Yet, better to get used to it. (thanks to Peter Rabbitson for reminding me)
 The <hl>local</hl> is important to limit the effect of our change if you are
 using this code within a module. Especially if you distribute it.
 Without the localization the effect would be felt in all the application.
-The <hl>local</hl> limits it to the encolsing block.
+The <hl>local</hl> limits it to the enclosing block.
 
 <h2>Avoiding the global %WARNS hash</h2>
 
