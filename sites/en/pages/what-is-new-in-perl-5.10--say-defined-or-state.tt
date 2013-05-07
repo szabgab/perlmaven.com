@@ -136,6 +136,6 @@ sub next_counter {
 Which is much clearer.
 
 For another use case of the <hl>state</hl> keyword check out
-<a href="http://szabgab.com/how-to-capture-and-save-warnings-in-perl.html">how to hide multiple warnings of Perl?</a>.
+<a href="/how-to-capture-and-save-warnings-in-perl">how to hide multiple warnings of Perl?</a>.
 
 

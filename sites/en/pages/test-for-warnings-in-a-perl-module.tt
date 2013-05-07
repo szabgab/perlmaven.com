@@ -42,7 +42,7 @@ warning at the right time?
 <h2>The warning signal __WARN__</h2>
 
 In Perl, every call to <b>warn</b> emits an internal signal. You can set up your test code to
-<a href="http://szabgab.com/how-to-capture-and-save-warnings-in-perl.html">capture and save any warnings</a>
+<a href="/how-to-capture-and-save-warnings-in-perl">capture and save any warnings</a>
 using <b>$SIG{__WARN__}</b> and then examine if the warning was the right one.
 
 Something like this:
