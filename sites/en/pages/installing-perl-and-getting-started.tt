@@ -34,7 +34,7 @@ In order to get started visit the website of <a href="http://dwimperl.com/">DWIM
 and follow the link to download <b>DWIM Perl for Windows</b>.
 
 Go ahead, download the exe file and install it on your system. Before doing so,
-please make sure you don't have any other Perl installated.
+please make sure you don't have any other Perl installed.
 
 They could work together but that would require some more explanations.
 For now let's have one single version of Perl installed on your system.
@@ -155,7 +155,7 @@ Most modern Linux distributions come with version 5.10 or newer.
 
 Unfortunately there are still places using older versions of perl.
 Those won't be able to use the <hl>say()</hl> keyword and might need some adjustments
-to the examples later. I'll point out when I am actully using features
+to the examples later. I'll point out when I am actually using features
 that require version 5.10.
 
 <h2>Safety net</h2>
