@@ -1,7 +1,7 @@
-Perl 5 Maven
+Perl Maven
 ==============
 
-These are the source files of the articles published on http://perl5maven.com/ and its subdomains.
+These are the source files of the articles published on http://perlmaven.com/ and its subdomains.
 
 Copyright Gabor Szabo except where the =author field explicitly shows someone else.
 Translations are copyright the translator (mentioned in the =translator field of each file) and Gabor Szabo.
@@ -47,7 +47,7 @@ CONTRIBUTIONS
 
 (both article writers and translators, please read  option 2 here: 
 http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
-and add the perl5maven.com site to the list of where you contribute.
+and add the perlmaven.com site to the list of where you contribute.
 Add an 128x128 image of you to the img/ folder and an entry for yourself
 in the authors.txt file of your language.
 
@@ -103,7 +103,7 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 * The file names should more-or-less match the title of the page, they can contain words separated with dashes.
 * Please add the header to each file (the meta information) including the planned publication date
 * The links in the page should be working. If there is already a translation for the target page then link there,
-  if it only exists in English, then please use full URLs including the hostname http://perl5maven.com/ .
+  if it only exists in English, then please use full URLs including the hostname http://perlmaven.com/ .
 * Please update the hidden(!) section of the perl-tutorial.tt to include the links to the entries.
 * The text listing the author and the translator are added by the system and are driven from the header
   tags =author and =translator.
@@ -111,8 +111,8 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
   The full name, the name of the image file containing their picture, link to their G+ profiles.
 * Each author and translator needs to provide a picture in jpg or png format approximately 128x128 pixel size 
   (an Avatar) to be shown at the bottom of each article.
-* Each author and translator should set up authorship by linking their Google+ profile to the CC.perl5maven.com
-  site. (e.g. br.perl5maven.com for the Brazilian Porguguese translators)
+* Each author and translator should set up authorship by linking their Google+ profile to the CC.perlmaven.com
+  site. (e.g. br.perlmaven.com for the Brazilian Porguguese translators)
   See http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
 
 

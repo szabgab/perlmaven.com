@@ -173,10 +173,10 @@ As we don't really need it for our script, we just set it to nothing: <hl>$ENV{P
 <code lang="perl">
 $ENV{PATH} = '';
 sendmail(
-    'Target <to@perl5maven.com>',
+    'Target <to@perlmaven.com>',
     'hello world',
     'submitted: ' . Dumper(\%data),
-    'Source <from@perl5maven.com>');
+    'Source <from@perlmaven.com>');
 
 sub sendmail {
     my ($tofield, $subject, $text, $fromfield) = @_;
@@ -214,7 +214,7 @@ In this case the "other program" is the systems sendmail program.
 
 When we call <hl>close $ph</hl> the e-mail is injected in the regular
 mail queue of the system and is scheduled to be sent out with all the
-other messages. This usually means withing a few seconds the system will
+other messages. This usually means within a few seconds the system will
 try to deliver your e-mail.
 
 <h2>Another Warning</h2>

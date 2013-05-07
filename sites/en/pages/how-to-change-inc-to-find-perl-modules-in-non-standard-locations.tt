@@ -140,7 +140,7 @@ to the beginning of <hl>@INC</hl> for <b>every script</b> that is executed in
 the same environment.
 
 In <b>taint mode</b>, that will be explained in a separate post,
-the PERLLIB and PERL5LIB environement variables are ignored.
+the PERLLIB and PERL5LIB environment variables are ignored.
 
 <h2>use lib</h2>
 
@@ -193,6 +193,4 @@ in which you put modules in a common standard location.</li>
 the script always picks up the modules relative to their own location.
 We'll discuss this in another post.</li>
 </ol>
-
-<TMPL_INCLUDE name="incl/beginner.tmpl">
 

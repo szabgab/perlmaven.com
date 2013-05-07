@@ -19,7 +19,7 @@ they even have a function called <b>trim</b> to remove white-spaces from both en
 There are no such functions in Perl (though I am sure there are plenty of CPAN modules implementing
 these functions) as a simple substitution regex can solve this.
 
-Actually it is so simple that it is one of the great subjects of <a href="https://en.wikipedia.org/wiki/Parkinson%27s_law_of_triviality">bikeshedding</a>
+Actually it is so simple that it is one of the great subjects of <a href="https://en.wikipedia.org/wiki/Parkinson%27s_law_of_triviality">bike-shedding</a>
 
 =abstract end
 

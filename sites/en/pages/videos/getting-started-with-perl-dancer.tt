@@ -1,0 +1,41 @@
+=title Getting started with Perl Dancer
+=timestamp 2013-04-21T11:33:01
+=indexes Dancer, DWIM Perl, echo
+=status show
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+Perl Dancer is a modern, light weight, route-oriented web application framework for Perl. In the first few minutes of this screencast,
+you will learn how to set up your development envirionment on Microsoft Windows machine, and then you will see how to create your
+first (and very basic) web application using Perl Dancer <b>regardless of your operating system</b>. (14:25 min)
+
+=abstract end
+
+
+<script type="text/javascript" src="//cdn.sublimevideo.net/js/f68gs97x.js"></script>
+
+<video id="video1" class="sublime" width="960" height="540" data-uid="getting-started-wit-perl-dancer" preload="none">
+  <source src="http://perlmaven.com/media/videos/getting-started-with-perl-dancer-1280x720.mp4" data-quality="hd"  type="video/mp4" />
+  <source src="http://perlmaven.com/media/videos/getting-started-with-perl-dancer-1280x720.webm" data-quality="hd"  type="video/webm" />
+</video>
+
+<div id="downloads">Download:
+<a href="/media/videos/getting-started-with-perl-dancer-1280x720.mp4">mp4</a> (28 Mb)
+<a href="/media/videos/getting-started-with-perl-dancer-1280x720.webm">webm</a> (28 Mb)
+</div>
+
+<div id="text">
+<ul>
+  <li><a href="http://dwimperl.com/">DWIM Perl</a></li>
+  <li><a href="http://perldancer.org/">Perl Dancer</a></li>
+</ul>
+</div>

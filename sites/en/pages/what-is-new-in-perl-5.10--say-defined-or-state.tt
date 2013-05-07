@@ -12,7 +12,7 @@
 =abstract start
 
 It is not news any more, Perl 5.10 has been released on 18th December, 2007,
-the 20th birthday of Perl. Many people have writen articles about it.
+the 20th birthday of Perl. Many people have written articles about it.
 There are several presentations on-line available. For example see
 the discussion on <a href="http://perlmonks.org/?node_id=654042">PerlMonks</a>.
 It has several good links.
@@ -136,6 +136,6 @@ sub next_counter {
 Which is much clearer.
 
 For another use case of the <hl>state</hl> keyword check out
-<a href="http://szabgab.com/how-to-capture-and-save-warnings-in-perl.html">how to hide multiple warnings of Perl?</a>.
+<a href="/how-to-capture-and-save-warnings-in-perl">how to hide multiple warnings of Perl?</a>.
 
 

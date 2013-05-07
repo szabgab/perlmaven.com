@@ -3,7 +3,12 @@
       <div id="translator">
        <img src="/img/<% translator_img %>" />
        <div class="author_text">
-         Translated by<br><a href="<%translator_google_plus_profile %>?rel=author"><% translator_name %></a>
+         Translated by<br>
+          <% IF translator_google_plus_profile %>
+             <a href="<% translator_google_plus_profile %>?rel=author"><% translator_name %></a>
+          <% ELSE %>
+             <% translator_name %>
+          <% END %>
        </div>
       </div>
    <% END %>
