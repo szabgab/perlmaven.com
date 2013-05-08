@@ -40,84 +40,83 @@
 יש להם גישות מאוד שונות, גם זה מזה, וגם מעורכי טקסט אחרים.
 
 
-If you are familiar with either one of those, I'd recommend using them.
+אם אתם מכירים אחד מהם, אז אני ממליץ שתשתמשו בהם.
 
-For each one of them there are special extensions or modes to provide better support for Perl,
-but even without those they are very good for Perl development.
+לכל אחד משניהם יש הרחבות או מודי עבודה המיועדים לספק תמיכה טובה יותר לכתיבת םרל,
+אבל אפילו בלי ההרחבות הם כלים טובים מאוד לפיתוח קוד פרל.
 
-If you are not familiar with those editors, then I'd probably recommend
-you separate your Perl learning curve from your editor learning experience.
+אם אינכם מכירים את העורכים האלו, אז אני ממליץ להפריד בין לימוד פרל לבין לימוד השימוש בעורך טקסט.
 
-Both of those editors are very powerful, but take a long time to master.
+שני העורכים הנ"ל הם כלים רבי יכולות, אבל לוקח זמן רב ללמוד להשתמש בהם ביעילות.
 
-It is probably better to focus on your Perl studies now, and only later to learn one
-of these editors.
+רצוי בשלב זה להתמקד בלימוד פרל ורק מאוחר יותר ללמוד להתמש באחד מהם.
 
-While they are native to Unix/Linux, both
-<b>Emacs</b> and <b>Vim</b> are available for all the other major operating systems.
+בעוד שהם חלק מסביבת יוניקס/לינוקס, יש גירסאות שלהם גם לרוב מערכות ההפעלה האחרות.
 
-<h2>Perl editors for Windows</h2>
 
+<h2>עורכי פרל ל-Windows</h2>
+
+ב-Windows, רבים משתמשים בעורכים המכונים "עורכים למתכנתים".
 On Windows, many people are using the so-called "programmer's editors".
 
 <ul>
-<li><a href="http://www.ultraedit.com/">Ultra Edit</a> is a commercial editor.</li>
-<li><a href="http://www.textpad.com/">TextPad</a> is shareware.</li>
-<li><a href="http://notepad-plus-plus.org/">Notepad++</a> is an open source and free editor.</li>
+<li><a href="http://www.ultraedit.com/">Ultra Edit</a> הוא עורך מסחרי.</li>
+<li><a href="http://www.textpad.com/">TextPad</a> הוא shareware (שותפה).</li>
+<li><a href="http://notepad-plus-plus.org/">Notepad++</a> הוא בקוד פתוח וחופשי לשימוש.</li>
 </ul>
 
-I have been using <b>Notepad++</b> a lot and I keep it installed on my Windows machine
-as it can be very useful.
+אני משתמש הרבה ב-<b>Notepad++</b> והוא מותקן על מחשב ה-Windows שלי כיוון שהוא מאוד שימושי.
 
 <h2>Mac OSX</h2>
 
-I don't have a Mac but according to popular vote,
-<a href="http://macromates.com/">TextMate</a> is the most often used Mac
-specific editor for Perl development.
+אין לי מקינטוש אבל על פי בחירת הקהל
+<a href="http://macromates.com/">TextMate</a> הוא העורך הנפוץ ביותר על מקינטוש לפיתוח בפרל.
 
-<h2>Perl IDEs</h2>
+<h2>IDE - סביבות עבודה משולבות לפרל</h2>
 
-Neither of the above are IDEs, that is, neither of them provide
-real, built-in debugger for Perl. They also don't provide language specific help.
+אף אחד מהעורכים הנ"ל איננו IDE, סביבת עבודה משולבת, כלומר אף אחד מהם אינו כולל
+כלי ניפוי באגים מובנה לפרל. הם גם אינם כוללים עזרה המיועדת ספתיפית לפרל.
 
-<a href="http://www.activestate.com/">Komodo</a> from ActiveState costs a few hundreds of USD.
-It has a free version with limited capabilities.
 
-People who are already <a href="http://www.eclipse.org/">Eclipse</a> users might want to know
-that there is a Perl plug-in for Eclipse called EPIC. There is also a project called
-<a href="https://github.com/skorg/perlipse">Perlipse</a>.
+<a href="http://www.activestate.com/">Komodo</a> של ActiveState עולה כמה מאות דולר.
+יש לו גם גירסה חינמית עם יכולות מוגבלות.
 
-<h2>Padre, the Perl IDE</h2>
 
-In July 2008 I started to write an <b>IDE for Perl in Perl</b>. I called it Padre -
-Perl Application Development and Refactoring Environment or
-<a href="http://padre.perlide.org/">Padre, the Perl IDE</a>.
+מי שכבר משתמש ב-<a href="http://www.eclipse.org/">Eclipse</a> ישמח לדעת שיש תוסף פרל ל-Eclipse שנקרא
+EPIC. בנוסף לכך קיים גם פרוייקט בשם <a href="https://github.com/skorg/perlipse">Perlipse</a>.
 
-Many people joined the project. It is distributed by the major Linux distributions
-and it can also be installed from CPAN. See the
-<a href="http://padre.perlide.org/download.html">download</a> page for details.
+<h2>Padre (פדרה), IDE לפרל</h2>
 
-In some aspects it is still not as strong as Eclipse or Komodo but in some other,
-Perl specific areas it is already better than the other two.
+ביולי 2008 התחלתי לכתוב <b>IDE לפרל בפרל</b>. קראתי לו Padre - 
+Perl Application Development and Refactoring Environment - 
+סביבת פיתוח ושיכתוב קוד לפרל
+או <a href="http://padre.perlide.org/">Padre, סביבת העבודה המשולבת לפרל</a>.
 
-Moreover, it is very actively developed.
-If you are looking for a <b>Perl editor</b> or a <b>Perl IDE</b>,
-I'd recommend to give it a try.
+רבים הצטרפו לפרוייקט. הוא מופץ על ידי הפצות הלינוקס החשובות וכמו כן ניתן להתקין אותו מ-CPAN.
+לפרטים נוספים גשו אל הדף <a href="http://padre.perlide.org/download.html">הורדה</a>
 
-<h2>The big Perl editor poll</h2>
+מבחינות מסוימות הוא אינו חזק כמו Eclipse או Komodo, אך מבחינות אחרות, בעיקר בתחומים ייחודיים לפרל
+הוא עולה עליהם.
 
-In October 2009 I ran a poll and asked
-<a href="http://perlide.org/poll200910/">Which editor(s) or IDE(s) are you using for Perl development?</a>
+בנוסף לכך, עבודת הפיתוח עליו ממשיכה כל הזמן.
+אם אתם מחפשים <b>עורך לפרל</b> או <b>IDE לפרל</b>, אני ממליץ לכם לנסות את Padre.
 
-Now you can go with the crowd, against the crowd, or you can pick a perl editor that fits you.
+<h2>הסגר הגדול על עורכי פרל</h2>
 
-<h2>Other</h2>
+באוקטובר 2009 עשיתי סקר ושאלתי 
+<a href="http://perlide.org/poll200910/">באיזה עורך(/ים) או IDE(s) אתם משתמשים בפיתוח פרל?</a>
 
-Alex Shatlovsky recommended <a href="http://www.sublimetext.com/">Sublime Text</a>, which is a platform independent editor,
-but one that costs some money.
+כמובן שאתם יכולים ללכת עם הזרם, או נגד הזרם, ואתם יכולים לבחור את כלי הפיתוח שמתאים לכם.
 
-<h2>Next</h2>
 
-Then next part in the tutorial is a small side-step to talk about <a href="/perl-on-the-command-line">Perl on the command line</a>.
+<h2>כלים נוספים</h2>
+
+אלקס שטלובסקי המליץ על <a href="http://www.sublimetext.com/">Sublime Text</a>, עורך שפועל על כל מערכת הפעלה, אך עולה קצת כסף.
+
+
+<h2>מה הלאה?</h2>
+
+החלק הבא של המדריך הוא סטייה קלה מהמסלול אל דיון על 
+<a href="http://perlmaven.org/perl-on-the-command-line">פרל על שורת הפקודה</a>.
 
 
