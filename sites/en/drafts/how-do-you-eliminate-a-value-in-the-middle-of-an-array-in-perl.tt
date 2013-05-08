@@ -1,0 +1,102 @@
+=title How do you eliminate a value in the middle of an array in Perl?
+=timestamp 2012-09-11T12:45:56
+=indexes undef, splice, array, delete
+=status show
+=books beginner_book
+=author szabgab
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+In response to an earlier article about <a href="/undef-and-defined-in-perl">undef</a> one of the readers asked me:
+
+How do you eleiminate a value in the middle of an array in Perl?
+
+=abstract end
+
+I am not sure if it is directly related, though I guess if we see <hl>undef</hl> as something that will "empty"
+a variable, then I can understand the connection.
+
+We start with the following data:
+
+<code>
+$VAR1 = [
+          'Doc',
+          'Grumpy',
+          'Happy',
+          'Sleepy',
+          'Sneezy',
+          'Dopey',
+          'Bashful'
+        ];
+</code>
+
+<h2>Set an element to undef</h2>
+
+Using the return value of the <hl>undef()</hl> function:
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+my @dwarfs = qw(Doc Grumpy Happy Sleepy Sneezy Dopey Bashful);
+$dwarfs[3] = undef;
+print Dumper \@dwarfs;
+</code>
+
+This code will set element 3 (the 4th element of the array) to <hl>undef</hl>, but will <b>NOT</b> change the size of
+the array:
+
+<code>
+$VAR1 = [
+          'Doc',
+          'Grumpy',
+          'Happy',
+          undef,
+          'Sneezy',
+          'Dopey',
+          'Bashful'
+        ];
+</code>
+
+Using the <hl>undef()</hl> function directly on an element of an array yields the exact same result:
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+my @dwarfs = qw(Doc Grumpy Happy Sleepy Sneezy Dopey Bashful);
+undef $dwarfs[3];
+print Dumper \@dwarfs;
+</code>
+
+So <hl>$dwarfs[3] = undef;</hl> and <hl>undef $dwarfs[3];</hl> do the same thing.
+
+<h2>Removing an element from the array using splice</h2>
+
+The <hl>splice</hl> function can totally eliminate the value from the array:
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+my @dwarfs = qw(Doc Grumpy Happy Sleepy Sneezy Dopey Bashful);
+splice @dwarfs, 3, 1;
+print Dumper \@dwarfs;
+</code>
+
+<code>
+$VAR1 = [
+          'Doc',
+          'Grumpy',
+          'Happy',
+          'Sneezy',
+          'Dopey',
+          'Bashful'
+        ];
+</code>
+
+As you can see, in this case the array became one shorter as we have removed one of the elements from the middle.
+
+This is how you can <b>delete an element from an array</b>.
+
+For further details check <a href="/splice-to-slice-and-dice-arrays-in-perl">how to splice arrays in Perl</a>
+
