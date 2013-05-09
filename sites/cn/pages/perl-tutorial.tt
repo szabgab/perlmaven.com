@@ -37,6 +37,18 @@
     <li><a href="/appending-to-files"> 追加写文件 </a></li>
     <li><a href="/pod-plain-old-documentation-of-perl"> Perl 文档 POD </a></li>
     <li><a href="/how-to-sort-faster-in-perl"> 如何更快地排序？</a></li>
+    <li><a href="/global-symbol-requires-explicit-package-name">全局符号需要明确包名</a></li>
+		<li><a href="/how-to-replace-a-string-in-a-file-with-perl">如何使用Perl对文本进行字符串替换</a></li>
+		<li><a href="/open-and-read-from-files">打开并读取文本文件</a></li>
+		<li><a href="/sorting-arrays-in-perl">Perl数组排序</a></li>
+		<li><a href="/subroutines-and-functions-in-perl">Perl里的函数和子例程</a></li>
+		<li><a href="/trim">使用Perl删除前导和拖尾空白</a></li>
+		<li><a href="/unknown-warnings-category">未知警告类型</a></li>
+		<li><a href="/use-of-uninitialized-value">使用未初始化的值</a></li>
+		<li><a href="/using-the-built-in-debugger-of-perl">使用内置Perl调试器</a></li>
+		<li><a href="/what-is-new-in-perl-5.10--say-defined-or-state">Perl 5.10有何新特点？ say, //, state</a></li>
+		<li><a href="/while-loop">while循环</a></li>
+		<li><a href="/parsing-error-log">perl来帮忙（解析错误日志）</a></li>
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
