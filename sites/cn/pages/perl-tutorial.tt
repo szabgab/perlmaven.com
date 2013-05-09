@@ -48,6 +48,7 @@
 		<li><a href="/using-the-built-in-debugger-of-perl">使用内置Perl调试器</a></li>
 		<li><a href="/what-is-new-in-perl-5.10--say-defined-or-state">Perl 5.10有何新特点？ say, //, state</a></li>
 		<li><a href="/while-loop">while循环</a></li>
+		<li><a href="/parsing-error-log">perl来帮忙（解析错误日志）</a></li>
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
