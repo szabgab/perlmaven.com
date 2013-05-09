@@ -397,11 +397,10 @@ sub process {
 
 <h2>处理一个块</h2>
 
-When a block ends we need to process the collected information and  clean up the global variables
-so that we won't have values collected in on one block show up in another block.
-For this we create a new subroutine called process_block. We will need to call it in 3 places
-as described above.
+当一个块结束时，我们需要处理收集到的信息，清理全局变量以便这个块里收集到的值不会出现在另一个块里。
+我们创建了一个子例程process_block来达到这个目的。如上所述，我们需要在3个地方调用它。
 
+子例程内，首先需要检查我们是否已经收集完了一个块的信息。
 Inside the subroutine, the first thing we do is checking whether we have already collected information
 for a block. This way we won't need to write special cases in the code processing the lines.
 
