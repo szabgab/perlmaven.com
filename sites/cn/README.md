@@ -1,4 +1,4 @@
-Chinese Translation of http://perl5maven.com/  hosted at http://cn.perl5maven.com/
+Chinese Translation of http://perlmaven.com/  hosted at http://cn.perlmaven.com/
 
 For further information check out the README file of https://github.com/szabgab/perl5maven.com
 
