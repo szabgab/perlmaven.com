@@ -114,7 +114,7 @@ durante o auto incremento (++).
 
 Mesmo assim, não é algo à prova de falhas. Se você tivesse pedido para ativar os avisos pelo pragma <hl>use warnings</hl>
 (<a href="/instalando-o-perl">que é bastante recomendado</a>)
-então teria dois avisos de <a href="http://perlmaven.com/use-of-uninitialized-value">valor não inicializado</a>
+então teria dois avisos de <a href="/uso-de-valor-nao-inicializado">valor não inicializado</a>
 para as duas primeiras operações, porém não para o auto incremento:
 
 <code>
