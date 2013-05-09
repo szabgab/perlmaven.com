@@ -1,5 +1,5 @@
-=title How do you eliminate a value in the middle of an array in Perl?
-=timestamp 2012-09-11T12:45:56
+=title How to eliminate a value in the middle of an array in Perl?
+=timestamp 2013-05-09T10:01:01
 =indexes undef, splice, array, delete
 =status show
 =books beginner_book
@@ -14,14 +14,24 @@
 
 In response to an earlier article about <a href="/undef-and-defined-in-perl">undef</a> one of the readers asked me:
 
-How do you eleiminate a value in the middle of an array in Perl?
+How do you eliminate a value in the middle of an array in Perl?
+
+I am not sure if <hl>undef</hl> and eliminating values from an array are related, though I guess, if we see having a value of <hl>undef</hl>
+as being "empty", then I can understand the connection. In general though, setting something to be <hl>undef</hl> and deleting something is not the same.
 
 =abstract end
 
-I am not sure if it is directly related, though I guess if we see <hl>undef</hl> as something that will "empty"
-a variable, then I can understand the connection.
+Let's see first how we can set an element of an array to be <hl>undef</hl> and then how we can delete an element from an array.
 
-We start with the following data:
+We start with the following code:
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+my @dwarfs = qw(Doc Grumpy Happy Sleepy Sneezy Dopey Bashful);
+print Dumper \@dwarfs;
+</code>
+
+When printed using <hl>Data::Dumper</hl> we get the following output:
 
 <code>
 $VAR1 = [
@@ -42,7 +52,9 @@ Using the return value of the <hl>undef()</hl> function:
 <code lang="perl">
 use Data::Dumper qw(Dumper);
 my @dwarfs = qw(Doc Grumpy Happy Sleepy Sneezy Dopey Bashful);
+
 $dwarfs[3] = undef;
+
 print Dumper \@dwarfs;
 </code>
 
@@ -61,16 +73,19 @@ $VAR1 = [
         ];
 </code>
 
-Using the <hl>undef()</hl> function directly on an element of an array yields the exact same result:
+Using the <hl>undef()</hl> function directly on an element of an array yields similar results:
 
 <code lang="perl">
 use Data::Dumper qw(Dumper);
 my @dwarfs = qw(Doc Grumpy Happy Sleepy Sneezy Dopey Bashful);
+
 undef $dwarfs[3];
+
 print Dumper \@dwarfs;
 </code>
 
-So <hl>$dwarfs[3] = undef;</hl> and <hl>undef $dwarfs[3];</hl> do the same thing.
+So for our purposes <hl>$dwarfs[3] = undef;</hl> and <hl>undef $dwarfs[3];</hl> do the same thing.
+They both can set a value to be <hl>undef</hl>.
 
 <h2>Removing an element from the array using splice</h2>
 
@@ -79,7 +94,9 @@ The <hl>splice</hl> function can totally eliminate the value from the array:
 <code lang="perl">
 use Data::Dumper qw(Dumper);
 my @dwarfs = qw(Doc Grumpy Happy Sleepy Sneezy Dopey Bashful);
+
 splice @dwarfs, 3, 1;
+
 print Dumper \@dwarfs;
 </code>
 
@@ -94,9 +111,9 @@ $VAR1 = [
         ];
 </code>
 
-As you can see, in this case the array became one shorter as we have removed one of the elements from the middle.
+As you can see, in this case the array became one element shorter as we have <b>removed one of the elements</b> from the middle of the array.
 
 This is how you can <b>delete an element from an array</b>.
 
-For further details check <a href="/splice-to-slice-and-dice-arrays-in-perl">how to splice arrays in Perl</a>
+For further details check <a href="/splice-to-slice-and-dice-arrays-in-perl">how to splice arrays in Perl</a>.
 
