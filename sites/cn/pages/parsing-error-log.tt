@@ -397,25 +397,19 @@ sub process {
 
 <h2>处理一个块</h2>
 
-When a block ends we need to process the collected information and  clean up the global variables
-so that we won't have values collected in on one block show up in another block.
-For this we create a new subroutine called process_block. We will need to call it in 3 places
-as described above.
+当一个块结束时，我们需要处理收集到的信息，清理全局变量以便这个块里收集到的值不会出现在另一个块里。
+我们创建了一个子例程process_block来达到这个目的。如上所述，我们需要在3个地方调用它。
 
-Inside the subroutine, the first thing we do is checking whether we have already collected information
-for a block. This way we won't need to write special cases in the code processing the lines.
+子例程内，首先需要检查我们是否已经收集完了一个块的信息。这样我们不需要在行处理代码里进行特殊的处理。
 
-Then we fill two hashes for counting the number of blocks per entry and for counting the
-number of cases for each error. The second does not need any special treatment, but the first
-has a special case. As we discussed, there might be blocks before the first entity declaration.
-In those cases the $entity variable will be <hl>undef</hl> that would trigger the
-warning <a href="http://perl5maven.com/use-of-uninitialized-value">use of uninitialized value</a>.
+之后我们填充两个哈希数组，一个用于统计每个实体里有多少块，一个用于统计每个错误出现的次数。
+第二个不需要特殊处理，但是第一个有个例外。
+如前边所讨论，可能在第一个实体声明之前存在某个块。这样变量$entity就是<hl>undef</hl>了。这会引发一个<a href="http://perl5maven.com/use-of-uninitialized-value">使用未初始化的值</a>的警告。
 
-For this to work well, we either need count those blocks in a separate variable, or we need to
-use a special default entry name. I chose the latter and assigned '_DEFAULT_' to the $entry
-variable at its declaration.
+为了让它能正常工作，我们或是需要用单独的变量统计这些块，或者需要使用一个特殊的默认实体名称。
+我选择后者，并将$entry变量在声明时赋值为'_DEFAULT_'。
 
-In the last part, we remove the values from the global variables.
+最后，我们清空全局变量里的值。
 
 <code lang="perl">
 sub process_block {
@@ -437,9 +431,8 @@ sub process_block {
 
 <h2>报表</h2>
 
-The last part of code is the reporting. After the process() function finishes, we have two hashes filled with values.
-We can go through the keys of each hash, <a href="http://perl5maven.com/sorting-arrays-in-perl">sort</a>
-them according to the values and then print the content.
+代码最后一部分是生成报表。process()函数结束后，我们得到两个填充了值的哈希。
+我们遍历每个哈希的键，根据键值<a href="http://perl5maven.com/sorting-arrays-in-perl">排序</a>之后打印出他们的内容。
 
 <code lang="perl">
 say "\nNumber of blocks in each Entity";
@@ -452,7 +445,7 @@ foreach my $msg (reverse sort { $error_messages{$a} <=> $error_messages{$b} } ke
 }
 </code>
 
-<h2>The whole script</h2>
+<h2>完整脚本</h2>
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -563,7 +556,5 @@ PLCADDR = 33004           1
 
 <h2>Further work</h2>
 
-I am sure further processing could be done on the values.
-For example, some of the strings are in quotes. We could remove the quotes.
-There seem to be certain key-value pairs in the error code. Those could be
-split apart.
+我相信可以针对这些值进行更进一步的处理。比如，一些字符串在引号里。我们可以删掉这些引号。
+有些键值对在错误代码里，这些可以分隔开。

@@ -1,0 +1,202 @@
+=title Object Oriented Perl using Moose
+=timestamp 2013-02-12T10:45:56
+=indexes OOP, Moose, object oriented, class, object, instance, constructor, getter, setter, accessor
+=status show
+=origin Object Oriented Perl using Moose
+=books advanced_book
+=author szabgab
+=translator terrencehan
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+In the next few articles we are going to learn how to write Object Oriented code in Perl.
+We will start with some simple examples and extend them step by step.
+We start using Moose but we'll also learn how to create classes in other ways.
+
+在下面几篇文章中，我们会学习到如何在Perl中写面向对象的代码。我们会从几个简单的例子开始并一步步扩展它们。开始的时候使用Moose，但是也会学习怎么用其他方法创建类。
+
+=abstract end
+
+<h2>Moose的构造函数</h2>
+
+Let's start by writing a simple script that uses the Person <hl>class</hl>.
+We don't do anything special yet, just load the module and call
+the <hl>constructor</hl> to create an <hl>instance</hl>.
+
+开始，我们写了一个简单的脚本来使用Person<hl>类</hl>，而且仅仅是加载模块并调用<hl>构造器</hl>创建一个<hl>实例</hl>。
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+use Person;
+my $teacher = Person->new;
+</code>
+
+Save this in somedir/bin/app.pl
+
+保存在somedir/bin/app.pl
+
+This should not be new to you as I am sure you have
+already used other modules in a similar way. Our focus is
+how the Person class was implemented:
+
+我确信你已经通过类似的方法使用过其它模块，所以对你应该不新鲜。我们重点是Person类的实现：
+
+<code lang="perl">
+package Person;
+use Moose;
+
+1;
+</code>
+
+That's it.
+就这样。
+
+This code is saved in somedir/lib/Person.pm.
+这些代码存在somedir/lib/Perlson.pm。
+
+All you need to do to create a <hl>class</hl> is to create
+a <hl>package</hl> with the name of the class, add <hl>use Moose;</hl> to it,
+end the file with a true value, and save it in a file with
+the same name (case sensitive!) as the package, and with a .pm extension.
+
+为了创建一个<hl>类</hl>，你要做的是根据类名创建一个<hl>pachage</hl>，在包中调用<hl>user Moose;</hl>，在文件结尾放置一个真值，并将文件名保存成跟包名相同(大小写敏感)，以 .pm 作为扩展名。
+
+Loading Moose automatically sets up <hl>use strict</hl> and <hl>use warnings</hl>.
+This is nice, but be careful you don't get so used to the convenience that you
+forget them in non-Moose code.
+
+在加载Moose时就自动设置了<hl>use strict</hl> 和 <hl>use warnings</hl>。这样很方便，但是请注意不要在非Moose的代码中因为习惯而忘了写它们。
+
+Loading Moose also automatically adds a default constructor called <hl>new</hl>.
+
+加载Moose时也自动加入了一个默认的构造器<hl>new</hl>。
+
+As a side note, it is not a requirement in Perl that the constructor will be called
+new, but in most cases that's what the author chooses anyway.
+
+旁注：在Perl中没有要求过构造器名字是new，只是大部分情况下模块的作者会这么写。
+
+<h2>属性和访问器</h2>
+
+Having an empty class is not much fun. Let's go further in our use:
+
+得到一个空类没有任何意思。下面继续我们的例子：
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+use Person;
+my $teacher = Person->new;
+
+$teacher->name('Joe');
+say $teacher->name;
+</code>
+
+In this code, after creating the <hl>object</hl>, we call the "name" <hl>method</hl>
+with a string as a parameter; this sets the "name" <hl>attribute</hl> of the class
+to be 'Joe'. Because this method sets the respective attribute it is also called a
+<hl>setter</hl>.
+
+在这个代码中，在创建<hl>对象</hl>之后，我们以一个字符串为参数调用"name"<hl>方法</hl>；这样就设置了类的"name"<hl>属性</hl>为'Joe'。因为这个方法属性，所以也称为<hl>设置器</hl>。
+
+Then we call the same method again, this time without any parameter. That will fetch
+the value previously stored. Because this gets the value this is also called a
+<hl>getter</hl>.
+
+之后我们再一次调用相同的方法，但是这次没有参数。这样就会获取之前存的值。因为是取值，所以称为<hl>访问器</hl>。
+
+In our case the <hl>getter</hl> and the <hl>setter</hl> have the same name but
+it isn't a requirement either.
+
+在我们的例子中<hl>访问器</hl>和<hl>设置器</hl>名字一样，但是这也不是必须的。
+
+In general <hl>getters</hl> and <hl>setters</hl> are called <hl>accessors</hl>.
+
+通常<hl>访问器</hl>和<hl>设置器</hl>成为<hl>访问器</hl>。
+
+The code implementing the new class is this:
+
+新类的实现如下：
+
+<code lang="perl">
+package Person;
+use Moose;
+
+has 'name' => (is => 'rw');
+
+1;
+</code>
+
+The new part, <hl>has 'name' => (is => 'rw');</hl> says that 
+
+新的部分<hl>has 'name' => (is => 'rw');</hl>的意思是：
+
+"The Person class <hl>has</hl> an attribute called <hl>'name'</hl>
+which <hl>is</hl> <hl>r</hl>eadable and <hl>w</hl>riteable"
+
+"类Person<hl>有has</hl>一个属性<hl>'name'</hl>，这个属性<hl>是is</hl><hl>可读r</hl><hl>可写</hl>的。"
+
+This automatically creates a method called "name" which becomes both a setter (for writing)
+and a getter (for reading).
+
+这样自动创建了一个名字是"name"的方法，它既是设置器也是访问器。
+
+<h2>Try the code</h2>
+
+In order to try this create a directory called "somedir", with a subdirectory called
+"lib" inside it, and save the Person.pm file inside the "lib" subdirectory.
+Also create a subdirectory called "bin" and save the script there called person.pl.
+
+You should have
+你应该已经有：
+
+<code>
+somedir/lib/Person.pm
+somedir/bin/person.pl
+</code>
+
+Open your terminal (or cmd window on Windows), change the directory to be in "somedir" and
+type  <hl>perl -Ilib bin/person.pl</hl>
+
+打开终端（或者Windows的命令提示符窗口），切换目录到"somedir"，并输入<hl>perl -Ilib bin/person.pl</hl>。
+
+(On MS Windows you might need to use back-slashes: \ )
+（在Windows系统上你需要使用反斜线: \）
+
+<h2>构造器参数</h2>
+
+In the next script we pass a key-value pair to the constructor,
+corresponding to the name of the attribute and its value.
+
+在下面的脚本中，我们向构造器传入一个键值对（对应的是属性名字和它的值）。
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+use Person;
+
+my $teacher = Person->new( name => 'Joe' );
+say $teacher->name;
+</code>
+
+This works too with the same module as we already have:
+
+Using the constructor to set the initial value of an attribute
+in this way works without making any changes to the Person module itself.
+
+Moose automatically accepts every <hl>member</hl> (another name for attributes)
+to be passed during construction.
+
+
