@@ -14,17 +14,31 @@
 =social 1
 
 
-<ul>
+<p>
+<b>Introduzione</b>
+<ol>
   <li><a href="/installare-perl-e-iniziare-a-usarlo">Installare Perl, stampare Hello World, Rete di salvataggio (use strict, use warnings)</a></li>
   <li><a href="/editor-perl">Editor, IDE e ambienti di sviluppo per il Perl</a></li>
   <li><a href="/perl-da-linea-di-comando">Perl da linea di comando</a></li>
   <li><a href="/documentazione-base-perl-documentazione-moduli-cpan">Documentazione base di Perl e documentazione dei moduli CPAN</a></li>
   <li><a href="/pod-plain-old-documentation-di-perl">La Plain Old Documentation (POD) di Perl</a></li>
   <li><a href="/debug-di-script-perl">Debug di script Perl</a></li>
-  <li><a href="/manipolare-array-in-perl">Manipolare gli array in Perl</a></li>
-  <li><a href="/undef-e-defined-in-perl">undef e defined in Perl</a></li> 
 <!--
 -->
+</ol>
+
+<b>Scalari</b>
+<ol>
+<li>Warning e messaggi d'errori comuni<br />
+<ul>
+  <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
 </ul>
+<li><a href="/undef-e-defined-in-perl">undef e defined in Perl</a></li>
+</ol>
+
+<b>Liste e Array</b>
+<ol>
+  <li><a href="/manipolare-array-in-perl">Manipolare gli array in Perl</a></li>
+</ol>
 
 Per l'originale, visitate il <a href="http://perlmaven.com/perl-tutorial">tutorial Perl in Inglese</a>
