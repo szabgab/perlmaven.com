@@ -2,6 +2,7 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="/perl-tutorial">Perl Tutorial</a></li>
+            </ul>
             <ul class="nav pull-right">
               <li><a href="/keywords">Type keyword:</a></li>
               <li><input id="typeahead" type="text" data-provide="typeahead" data-items="4" style="margin-top:6px; height:27px"></li>
