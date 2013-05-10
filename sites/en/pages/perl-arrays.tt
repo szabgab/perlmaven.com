@@ -17,7 +17,7 @@ This is an overview of how arrays work in Perl. We'll see more detailed explanat
 
 Variable names of arrays in Perl start with the at mark: <hl>@</hl>.
 
-Due to our insistance on using <hl>strict</hl> you have to declare these variables using the <hl>my</hl> keyword
+Due to our insistence on using <hl>strict</hl> you have to declare these variables using the <hl>my</hl> keyword
 before the first usage.
 
 =abstract end
@@ -87,7 +87,7 @@ say $names[0];
 </code>
 
 Note, when accessing a single element of an array the leading sigil changes from <hl>@</hl> to <hl>$</hl>.
-This might cause confustion to some people, but if you think about it, it is quite obvious why.
+This might cause confusion to some people, but if you think about it, it is quite obvious why.
 
 <hl>@</hl> marks plural and <hl>$</hl> marks singular. When accessing a single element
 of an array it behaves just as a regular scalar variable.

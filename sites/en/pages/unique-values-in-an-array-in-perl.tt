@@ -194,7 +194,7 @@ sub uniq {
 
 <h2>Home made uniq - round 2</h2>
 
-Prakash Kailasa suggested an even shorted version of implemening uniq,
+Prakash Kailasa suggested an even shorted version of implementing uniq,
 for perl version 5.14 and above, if there is no requirement to preserve the order of elements.
 
 Inline:
@@ -212,7 +212,7 @@ sub uniq { keys { map { $_ => 1 } @_ } };
 Let's take this expression apart:
 
 <hl>map</hl> has a similar syntax to <hl>grep</hl>: a block and an array (or a list of values).
-It goes over all the elements of the array, executs the block and passes the result to the left.
+It goes over all the elements of the array, executes the block and passes the result to the left.
 
 In our case, for every value in the array it will pass the value itself followed by the number 1.
 Remember <hl>=&gt;</hl>, aka. fat comma, is just a comma. Assuming @data has ('a', 'b', 'a') in it,
@@ -223,7 +223,7 @@ map { $_ => 1 } @data
 </code>
 
 If we assigned that expression to a hash, we would get the original data as keys, and the number 1-es as
-valiues. Try this:
+values. Try this:
 
 <code lang="perl">
 use strict;
@@ -272,7 +272,7 @@ Thus we can write:
 my @unique = keys { map { $_ => 1 } @data };
 </code>
 
-and we'll get back the unique values fom <hl>@data</hl>
+and we'll get back the unique values from <hl>@data</hl>
 
 
 <h2>Exercise</h2>

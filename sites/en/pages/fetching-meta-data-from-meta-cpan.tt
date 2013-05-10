@@ -133,7 +133,7 @@ my $r = $mcpan->fetch( 'release/_search',
 </code>
 
 We are calling the <hl>fetch</hl> method and we are searching for <b>release</b>-es (aka. distributions).
-It takes a set of key-value pairs as paramters.
+It takes a set of key-value pairs as parameters.
 
 The first one we see is <b>q</b>. This filters the results based on various conditions.
 We have the conditions in a variable called <b>$q</b>. By default we fetch all the distributions where
@@ -152,7 +152,7 @@ Another optional pair of parameters: <b>fields</b> can limit which fields we are
 the fields, Meta CPAN will return a lot of details for each distribution. IF we are not interested in those details,
 then this is just a waste of resources. So we limit the fields we would like to see.
 
-When I was creating this script I did not knwow which fields existed. So at first I fetched a single distribution
+When I was creating this script I did not know which fields existed. So at first I fetched a single distribution
 without setting the fields and printed the results using Data::Dumper. That helped me decide which fields to fetch
 in the real script.
 

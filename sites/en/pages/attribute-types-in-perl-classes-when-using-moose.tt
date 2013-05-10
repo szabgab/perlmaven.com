@@ -21,7 +21,7 @@ Moose lets you define a type for each attribute and then enforces the types via 
 
 After the the first
 <a href="/object-oriented-perl-using-moose">introduction to Object Oriented Perl with Moose</a>,
-you should probaly get familiar with the type-checking system of Moose.
+you should probably get familiar with the type-checking system of Moose.
 
 <h2>Set the type to be Int</h2>
 

@@ -1,5 +1,5 @@
 =title O Laço For
-=timestamp 2013-05-01T22:47:01
+=timestamp 2013-05-08T10:47:01
 =indexes for, foreach, loop, laço, infinite loop, laço infinito
 =status show
 =original the for loop in Perl
@@ -56,7 +56,7 @@ A parte INICIALIZAÇÃO será executada apenas uma vez quando a execução do c�
 Então, imediatamente após a inicialização o TESTE é executado. Se for falso, todo o laço é evitado.
 Se o teste for verdadeiro então o CORPO é executado seguido pelo PASSO.
 
-(Para o significado real de VERDADEIRO ou FALSO, veja <a href="br.perlmaven.com/valores-booleanos-em-perl">valores booleanos em Perl</a>.)
+(Para o significado real de VERDADEIRO ou FALSO, veja <a href="/valores-booleanos-em-perl">valores booleanos em Perl</a>.)
 
 Então novamente o TESTE é avaliado e o ciclo continua enquanto o valor do TESTE retornar verdadeiro.
 Se parece da seguinte forma:
@@ -130,7 +130,7 @@ while (1) {
 }
 </code>
 
-Também é descrito na parte sobre <a href="br.perlmaven.com/laco-while">laços while em Perl</a>.
+Também é descrito na parte sobre <a href="/laco-while">laços while em Perl</a>.
 
 <h2>perldoc</h2>
 

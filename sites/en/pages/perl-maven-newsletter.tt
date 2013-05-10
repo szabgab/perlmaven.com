@@ -25,5 +25,5 @@ Email: <input name="email" />
 <input type="submit" value="Register" />
 </form>
 
-As a bonus, people who regiser to the newsletter also get a free copy of the
+As a bonus, people who register to the newsletter also get a free copy of the
 <a href="/perl-maven-cookbook">Perl Maven Cookbook</a>

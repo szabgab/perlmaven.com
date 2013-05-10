@@ -169,7 +169,7 @@ Once that's done, the subsequent call to  <hl>use My::Math qw(add);</hl> will fi
 'My' directory in '.../somedir/lib' and the Math.pm in '.../somedir/lib/My'.
 
 
-The advantage of this soulution is that the user of the script does not have to remember
+The advantage of this solution is that the user of the script does not have to remember
 to put the -I... on the command line.
 
 There are other
@@ -221,7 +221,7 @@ The last thing I need to mention is the <hl>1;</hl> at the end of the module.
 Basically the use statement is executing the module and it needs to see some kind
 of a true statement there. It could be anything. Some people put there <hl>42;</hl>,
 others, the really funny ones put <hl>"FALSE"</hl> there. After all every string
-with letters in it is <a href="/boolean-values-in-perl">considerd to be true in Perl</a>.
+with letters in it is <a href="/boolean-values-in-perl">considered to be true in Perl</a>.
 That confuses about everyone. There are even people who put quotes from poems there.
 
 "Famous last words."
@@ -247,7 +247,7 @@ It is highly recommended to use capital letter as the first letter of every part
 module name and lower case for the rest of the letters.
 It is also recommended to use a namespace several levels deep.
 
-If you work in a company called Abc, I'd recommend preceeding all the modules with the Abc::
+If you work in a company called Abc, I'd recommend preceding all the modules with the Abc::
 namespace. If within the company the project is called Xyz, then all its modules should be in
 Abc::Xyz::.
 
