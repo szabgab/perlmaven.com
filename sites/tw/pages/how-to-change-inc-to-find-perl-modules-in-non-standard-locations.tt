@@ -2,6 +2,7 @@
 =timestamp 2012-07-24T12:45:56
 =indexes @INC, use, PERLLIB, PERL5LIB, lib, -I
 =status show
+=origin how-to-change-inc-to-find-perl-modules-in-non-standard-locations
 =books beginner_book
 =author szabgab
 =translator H2CHANG
@@ -121,54 +122,41 @@ echo %PERL5LIB%
 
 <h2>use lib</h2>
 
-Adding a <hl>use lib</hl> statement to the script will add
-the directory to <hl>@INC</hl> for that specific script.
-Regardless who and in what environment runs it.
+把 <hl>use lib</hl> 這個敘述加到程式腳本裡，就會把這個目錄加到 <hl>@INC</hl> 裡。不過這樣只有這個程式腳本知道，不會影響到其他程式。
 
-You just have to make sure to have the use lib statement
-before trying to load the module:
+
+在載入模組之前，你必須確定已經先使用 use lib 了：
 
 <code lang="perl">
 use lib '/home/foobar/code';
 use My::Module;
 </code>
 
-One note here. I saw several companies where <hl>use lib</hl>
-statements were added to the modules so they will be able to load
-their dependencies. I don't think this is good.
-I think the right place to change <hl>@INC</hl> is the main
-script or even better, outside the script such as in the two other
-solutions.
+但是有一點要注意，我看過很多公司為了要能載入模組相依的程式，就都把 <hl>use lib</hl> 放入模組中。
+我覺得這不太好。我覺得應該只有 main 的程式可以更改 <hl>@INC</hl> 或是用以下兩種方式來解決比較好。 
 
-<h2>-I on the command line</h2>
+<h2>在命令列中使用 -I</h2>
 
-(That's a capital i)
+(這是大寫的i)
 
-The last solution is the most temporary solution.
-Add a <hl>-I /home/foobar/code</hl> flag to perl
-when running the script.
+最後這個解法是最常見的暫時解法。把 <hl>-I /home/foobar/code</hl> 這個標誌加到正在執行的程式上。
 
 <b>perl -I /home/foobar/code  script.pl</b>
 
-This will add /home/foobar/code to the beginning of
-@INC <b>for this specific execution</b> of the script.
+這樣會把 /home/foobar/code 加到正在執行程式中的 @INC 裡。
 
-<h2>So which one to use?</h2>
+<h2>這樣要使用哪一種方式呢</h2>
 
-If you would like to just test a newer version of a module, I'd recommend the command line flag:
+如果你只是要測試新的模組的話，我會建議使用：
 <hl>perl -I /path/to/lib</hl>.
 
-If you are installing lots of modules in a private directory then I'd probably use <hl>PERL5LIB</hl>
-though we'll also see <hl>local::lib</hl> that does this for you.
+如果你要在私人目錄安裝很多模組的話，我會建議使用 <hl>PERL5LIB</hl>。使用 <hl>local::lib</hl> 這個模組也可以。
 
-<hl>use lib</hl> is used in two cases:
+在兩種情形會使用 <hl>use lib</hl> ：
 
 <ol>
-<li>When you have a fixed, but not standard company-wide environment
-in which you put modules in a common standard location.</li>
-<li>When you are developing an application and you'd like to make sure
-the script always picks up the modules relative to their own location.
-We'll discuss this in another post.</li>
+<li>當你有一個固定放置模組的私人目錄，而不要放在標準目錄中。</li>
+<li>當你建立一個程式，而你要測試模組跟這個程式的相對位置的時候。我們會在其他文章提到。</li>
 </ol>
 
 <TMPL_INCLUDE name="incl/beginner.tmpl">
