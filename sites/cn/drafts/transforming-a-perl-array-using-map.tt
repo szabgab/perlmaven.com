@@ -18,21 +18,13 @@
 
 =abstract end
 
-We saw that > is a generalization of the
-UNIX grep command. It selects some or all of the elements from the
-original list, and returns them unchanged.
-在<a href="/filtering-values-with-perl-grep">grep of Perl</a>中已经看过
+在<a href="/filtering-values-with-perl-grep">grep of Perl</a>中已经看过类似UNIX命令grep的函数。它从原始列表中选取元素，然后原封不动的返回。
 
-<hl>map</hl>, on the other hand, is used when you would like to make changes
-to the values of the original list.
+<hl>map</hl>函数则用来修改原列表元素的值。
 
-The syntax is similar. You provide a block of code and a list of values: an array
-or some other expression that returns a list of values.
-For every value in the original list, the value is placed in <hl>$_</hl>,
-<a href="/the-default-variable-of-perl">the default variable of Perl</a>, and the block
-is executed. The resulting values are passed on, to the left-hand side of the assignment.
+语法方面很类似。你需要传入一个代码快和一个列表：数组或者其他能返回列表的表达式。原列表的每个值都会放到<hl>$_</hl>（href="/the-default-variable-of-perl">Perl默认值</a>）中，然后执行代码快。执行的解惑会传递给等号左边。
 
-<h2>map for simple transformation</h2>
+<h2>使用map的简单转换</h2>
 
 <code lang="perl">
 my @numbers = (1..5);
@@ -43,16 +35,9 @@ print "@doubles\n";       # 2 4 6 8 10
 
 <h2>Building fast look-up table</h2>
 
-Sometimes we have a list of values and during the execution of the code
-we need to check if a given value is within this list. We can use
-<a href="/filtering-values-with-perl-grep.html">grep</a> every time, to check if the current
-value is in the list. We can even use the <a href="/filtering-values-with-perl-grep.html">any</a>
-function from <a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>,
-but it can be much more readable and faster if we used a hash for lookup.
+有时需要在代码执行时判断给定的值是否在列表里。我们可以每次调用<a href="/filtering-values-with-perl-grep.html">grep</a>来检查值是否在列表中。也可以使用<a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>模块的<a href="/filtering-values-with-perl-grep.html">any</a>函数，但是如如果使用hash来查找会有更好的可读性和更快的速度。
 
-We need to create a hash once, where the keys are the elements of the array,
-and the values of the hash are all 1s. Then, a simple hash lookup
-can replace the <hl>grep</hl>.
+我们需要创建一个hash表，把数组的所有元素作为key，1作为值。然后，用一个简单的hash查找代替<hl>grep</hl>。
 
 <code lang="perl">
 use Data::Dumper qw(Dumper);
@@ -70,7 +55,7 @@ if ($is_invited{$visitor}) {
 print Dumper \%is_invited;
 </code>
 
-This is the output of the <hl>Dumper</hl> call:
+下面是<hl>Dumper</hl>的输出:
 
 <code lang="perl">
 $VAR1 = {
@@ -80,15 +65,11 @@ $VAR1 = {
         };
 </code>
 
-In this code we don't really care about the values of the hash elements,
-other than the fact that they should evaluate to true in Perl.
+上面的代码，我们并不关心hash项的值，但是应该是Perl中的真值。
 
-This solution is only interesting if you do repeated look-ups on a large
-set of values. (The exact meaning of "large" might depend on the system.)
-Otherwise <hl>any</hl> or even <hl>grep</hl> will do it.
+这种方案可以有效的避免对大集合的反复查找，小集合则可以使用<hl>any</hl>或者<hl>grep</hl>。
 
-As you can see, in this example, for every element in the original array,
-<hl>map</hl> returned two values. The original value and 1.
+如你看到的，本例子中对于每个原数组的元素<hl>map</hl>会返回两个值：原始值和1。
 
 <code lang="perl">
 my @names = qw(Foo Bar Baz);
@@ -96,23 +77,25 @@ my @invited = map {$_ => 1} @names;
 print "@invited\n"
 </code>
 
-will print:
+输出:
 
 <code>
 Foo 1 Bar 1 Baz 1
 </code>
 
 
-<h2>Fat arrow</h2>
+<h2>宽箭头</h2>
 
-In case you are wondering <hl>=></hl> is called the <b>fat arrow</b> or <b>fat comma</b>. It basically acts
-as a regular comma <hl>,</hl> with an exception that is not relevant in our case. (There is a description
+In case you are wondering  is called the <b>fat arrow</b> or <b>fat comma</b>. It basically acts
+as a regular comma  with an exception that is not relevant in our case. (There is a description
 of it in the article about <a href="/perl-hashes">Perl hashes</a>.)
 
+<hl>=></hl>称为<b>宽箭头</b>或<b>宽逗号</b>。基本上，它的效果和普通的逗号<hl>,</hl>相同。
 
-<h2>Complex expressions in map</h2>
 
-You can put more complex expressions with map:
+<h2>map中复杂表达式</h2>
+
+你可以向map传入更复杂的表达式：
 
 <code lang="perl">
 my @names = qw(Foo Bar Baz);
@@ -120,15 +103,13 @@ my @invited = map { $_ =~ /^F/ ? ($_ => 1) : () } @names;
 print "@invited\n"
 </code>
 
-Will print
+会输出：
 
 <code>
 Foo 1
 </code>
 
-Inside the block we have a ternary operator that returns either
-a pair like earlier or an empty list. Apparently we only want
-to let people in if their name starts with an F.
+在代码块中有一个三元操作符，它返回一个键值对或者一个空列表。显然，我们只想获取名字以F开头的人。
 
 <code lang="perl">
 $_ =~ /^F/ ? ($_ => 1) : ()
