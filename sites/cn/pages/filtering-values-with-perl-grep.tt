@@ -2,9 +2,9 @@
 =timestamp 2013-05-11T11:37:32
 =indexes grep, filter, any, List::MoreUtils, <>, glob
 =status show
-=original Filtering values using Perl grep
+=original filtering-values-with-perl-grep
 =author szabgab
-=translator terrencehan 
+=translator terrencehan
 =index 1
 =archive 1
 =feed 1
