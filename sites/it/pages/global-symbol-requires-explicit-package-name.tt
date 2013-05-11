@@ -2,7 +2,7 @@
 =timestamp 2013-05-11T00:00:00
 =indexes strict, my, package, simbolo globale
 =status show
-=original global-symbol-requires-explicit-package-name.tt
+=original global-symbol-requires-explicit-package-name
 =books beginner_book
 =author szabgab
 =translator giatorta
