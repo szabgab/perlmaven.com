@@ -1,5 +1,5 @@
-=title Transforming a Perl array using map
-=timestamp 2013-04-25T10:45:56
+=title 使用map转换数组
+=timestamp 2013-05-11T11:38:56
 =indexes map, transform, list, array
 =status show
 =original Transforming a Perl array using map
@@ -14,15 +14,15 @@
 
 =abstract start
 
-<hl>map</hl>函数提供了一种将一系列值转换成另一系列值的方法。通常是一对一的转换，但是最后的结果也可以比原来的列表长短一些。
+<hl>map</hl>函数提供了一种将一系列值转换成另一系列值的方法。通常是一对一的转换，但是最后的结果也可以比原来的列表长或短一些。
 
 =abstract end
 
-在<a href="/filtering-values-with-perl-grep">grep of Perl</a>中已经看过类似UNIX命令grep的函数。它从原始列表中选取元素，然后原封不动的返回。
+我们在<a href="/filtering-values-with-perl-grep">grep of Perl</a>中已经看过类似UNIX命令grep的函数。它从原始列表中选取元素，然后原封不动的返回。
 
 <hl>map</hl>函数则用来修改原列表元素的值。
 
-语法方面很类似。你需要传入一个代码快和一个列表：数组或者其他能返回列表的表达式。原列表的每个值都会放到<hl>$_</hl>（href="/the-default-variable-of-perl">Perl默认值</a>）中，然后执行代码快。执行的解惑会传递给等号左边。
+语法方面很类似。你需要传入一个代码快和一个列表：数组或者其他能返回列表的表达式。原列表的每个值都会放到<hl>$_</hl>（href="/the-default-variable-of-perl">Perl默认值</a>）中，然后执行代码快。执行的结果会传递给等号左边。
 
 <h2>使用map的简单转换</h2>
 
@@ -33,9 +33,9 @@ my @doubles = map {$_ * 2} @numbers;
 print "@doubles\n";       # 2 4 6 8 10
 </code>
 
-<h2>Building fast look-up table</h2>
+<h2>建立快速查找表</h2>
 
-有时需要在代码执行时判断给定的值是否在列表里。我们可以每次调用<a href="/filtering-values-with-perl-grep.html">grep</a>来检查值是否在列表中。也可以使用<a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>模块的<a href="/filtering-values-with-perl-grep.html">any</a>函数，但是如如果使用hash来查找会有更好的可读性和更快的速度。
+有时需要在代码执行时判断给定的值是否在列表里。我们可以每次调用<a href="/filtering-values-with-perl-grep.html">grep</a>来检查值是否在列表中。也可以使用<a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>模块的<a href="/filtering-values-with-perl-grep.html">any</a>函数，但是如果使用hash来查找会有更好的可读性和更快的速度。
 
 我们需要创建一个hash表，把数组的所有元素作为key，1作为值。然后，用一个简单的hash查找代替<hl>grep</hl>。
 
@@ -86,11 +86,7 @@ Foo 1 Bar 1 Baz 1
 
 <h2>宽箭头</h2>
 
-In case you are wondering  is called the <b>fat arrow</b> or <b>fat comma</b>. It basically acts
-as a regular comma  with an exception that is not relevant in our case. (There is a description
-of it in the article about <a href="/perl-hashes">Perl hashes</a>.)
-
-<hl>=></hl>称为<b>宽箭头</b>或<b>宽逗号</b>。基本上，它的效果和普通的逗号<hl>,</hl>相同。
+<hl>=></hl>称为<b>胖箭头</b>或<b>胖逗号</b>。基本上，它的效果和普通的逗号<hl>,</hl>相同（但是逗号没有关联性）。（在<a href="/perl-hashes">Perl hashes</a>中有说明）
 
 
 <h2>map中复杂表达式</h2>
@@ -117,6 +113,4 @@ $_ =~ /^F/ ? ($_ => 1) : ()
 
 <h2>perldoc</h2>
 
-For further explanation with a couple of strange cases,
-check out <a href="http://perldoc.perl.org/functions/map.html">perldoc -f map</a>.
-
+更多的例子请参阅<a href="http://perldoc.perl.org/functions/map.html">perldoc -f map</a>.
