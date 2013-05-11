@@ -1,5 +1,5 @@
-=title Interview with Stevan Little
-=timestamp 2013-05-01T22:33:01
+=title Stevan Little, author of Moose and Moe
+=timestamp 2013-05-11T22:33:01
 =indexes interview
 =status show
 =showright 1
@@ -53,7 +53,6 @@ a prototype of an Ultra Modern Perl 5, but how did he get there from Art school?
 <ul>
   <li><a href="http://www.yapcna.org/yn2013/training.html#moose1">Intro to Moose training at YAPC::NA</a> with Dave Rolsky</li>
   <li><a href="http://www.yapcna.org/yn2013/training.html#moose2">Advanced Moose training at YAPC::NA</a> with Stevan Little and <a href="http://sartak.org/">Shawn Moore (sartak)</a></li>
-</li>
 </ul>
 </div>
 
