@@ -1,5 +1,5 @@
 =title 如何建立 Perl 模組來重複使用程式碼？
-=timestamp 2013-02-10T09:31:56
+=timestamp 2013-05-11T09:31:56
 =indexes package, use, Exporter, import, @INC, @EXPORT_OK, $0, dirname, abs_path, Cwd, File::Basename, lib, 1;
 =status show
 =original how-to-create-a-perl-module-for-code-reuse

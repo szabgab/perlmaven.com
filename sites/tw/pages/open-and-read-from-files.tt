@@ -1,5 +1,5 @@
 =title 打開和讀取文字檔
-=timestamp 2013-01-06T10:45:56
+=timestamp 2013-05-11T10:45:56
 =indexes open, <$fh>, read, <, encoding, UTF-8, die, open or die
 =status show
 =original open-and-read-from-files
