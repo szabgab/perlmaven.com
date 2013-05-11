@@ -14,23 +14,27 @@
 
 =abstract start
 
-How did Stevan Little get from art school to develop <a href="http://en.wikipedia.org/wiki/Moe_%28slang%29">萌え</a>
+From art school to <a href="http://en.wikipedia.org/wiki/Moe_%28slang%29">萌え</a>.
 
-School for art => Python => Ada => Perl => (+LISP) => Moose => Moe.
-
+Stevan Little wrote Moose, the object system for Perl 5, and he is now writing Moe,
+a prototype of an Ultra Modern Perl 5, but how did he get there from Art school?
 (24:32 min)
-
 
 =abstract end
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/shu-bVimOpM" frameborder="0" allowfullscreen></iframe>
+
+<div id="downloads">Download:
+<a href="/media/audio/stevan-little.mp3">mp3</a> (23Mb)
+</div>
+
 
 <div id="text">
 <h2>Show notes</h2>
 <ul>
  <li>Stevan Little on <a href="https://github.com/stevan">Github</a>. He works at <a href="http://www.iinteractive.com/">Infinity Interactive</a>.</li>
  <li>He is the author of <a href="http://moose.perl.org/">Moose</a>, the postmodern object system of Perl 5.</li>
- <li><a href="https://github.com/MoeOrganization/moe">Moe</a>, an -OFun prototype of an Ultra Modern Perl 5. (Written in Scala.)</li>
+ <li><a href="https://github.com/MoeOrganization/moe">Moe</a>, an -OFun prototype of an Ultra Modern Perl 5. (Written in Scala.) </li>
  <li>Moe contributor <a href="https://github.com/prakashk">Prakash Kailasa</a> known as "sahadev" on IRC was mentioned.
      He is using the <a href="http://aperiodic.net/phil/scala/s-99/">99 Scala Problems</a> for example driven development of Moe.</li>
  <li><a href="http://www.perl6.org/">Perl 6</a></li>
