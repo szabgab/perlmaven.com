@@ -1,4 +1,4 @@
-Traducción al español del contenido publicado originalmente en http://perl5maven.com/ que está alojado en http://es.perl5maven.com/
+Traducción al español del contenido publicado originalmente en http://perlmaven.com/ que está alojado en http://es.perlmaven.com/
 
 Todo el contenido ha sido creado por Gabor Szabo al menos que se indique lo contrario en el campo =autor.
 
@@ -38,7 +38,7 @@ PROMOTION
 Cuando los artículos son publicados son compartidos en Google+, Twitter e incluso algunas veces en Facebook.
 También se comparten en LinkedIN.
 
-Se envía un correo electrónico a todas las personas registradas en el sitio web Perl 5 Maven.
+Se envía un correo electrónico a todas las personas registradas en el sitio web Perl Maven.
 
 Muchos de los artículos se incluyen en el boletín de noticias Perl Weekly.
 
@@ -54,9 +54,9 @@ La mejor promoción es cuando la gente considera si vale la pena mencionar uno d
 
 TRADUCCIONES
 -------------
-El repositorio para la traducción al portugués está en: https://github.com/szabgab/br.perl5maven.com
+El repositorio para la traducción al portugués está en: https://github.com/szabgab/perl5maven.com
 
-El repositorio para la traducción al español está en: https://github.com/szabgab/es.perl5maven.com
+El repositorio para la traducción al español está en: https://github.com/szabgab/perl5maven.com
 
 
 

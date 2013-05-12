@@ -116,7 +116,7 @@ my %color_of = (
 );
 </code>
 
-Actually, the fat comma allows you to leave out the quotes on the left-hand side makig the code cleaner
+Actually, the fat comma allows you to leave out the quotes on the left-hand side making the code cleaner
 and more readable.
 
 <code lang="perl">

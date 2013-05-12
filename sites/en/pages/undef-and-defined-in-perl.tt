@@ -111,7 +111,7 @@ It acts as the empty string in the concatenation (.) and again as 0 in the auto-
 
 It won't be flawless though. If you have asked for the warnings to be enabled with the <hl>use warnings</hl>
 statement (<a href="/installing-perl-and-getting-started">which is always recommended</a>)
-then you will get two <a href="/use-of-uninitialized-value">use of unitialized value</a>
+then you will get two <a href="/use-of-uninitialized-value">use of uninitialized value</a>
 warnings for the first two operations, but not for the auto-increment:
 
 <code>

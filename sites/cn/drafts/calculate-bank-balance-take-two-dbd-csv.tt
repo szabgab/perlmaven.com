@@ -106,34 +106,15 @@ my $dbh = DBI->connect('dbi:CSV:', undef, undef,
              });
 </code>
 
-Here we load a couple of modules that make our job a little easier and
-then tell DBI that we're going to use a CSV backend.  Since CSV files
-don't need users or passwords to connect, we leave them as <hl>undef</hl>,
-but then
-we pass in a few extra flags.  Some of these flags go to the CSV driver,
-but <hl>RaiseError</hl> is a generic DBI setting which auto-dies when something goes
-wrong.  This is great for development, so I don't miss anything.  In production,
-it may be less desirable, but I also run with <hl>use warnings FATAL => 'all';</hl>
-in production, so I'm obviously okay with that.
 
-The other parameters need a bit of an explanation.  f_dir is the directory
-that DBD::CSV will look for all the CSV files.  In this case, I'm specifying
-that the directory is the same as the one with the script.  If that's not your
-case, you will need to adjust appropriately.
-In the <a href="/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">original article</a>,
-Gabor just relied on the current working directory, which is also a valid
-approach.
+例子中，我们加载了几个模块，主要是完成文件路径的操作。然后，告诉 DBI 我们用 CSV 来驱动。
+因为CSV 文件不许要用户名和密码，我们用  <hl>undef</hl> 来占位即可。接下来，我们配置CSV 的信息。
+为什么要这么写呢？ 因为我们使用了 <hl> use DBD::CSV </hl>， 这些是这个模块的规定。具体可参考其文档。
 
-f_ext is the extention added to any table name when discerning the file
-name.  With this extention, trying to SELECT ... FROM foo will mean that
-DBD::CSV will read the file foo.csv (in the f_dir specified above).
 
-csv_eol tells DBD::CSV what the end-of-line string is. I think the
-default is <hl>\r\n</hl>, but as I'm on Linux, that's not appropriate for me.
+<h2>SQL部分</h2>
 
-<h2>Getting the SQL right</h2>
-
-<p>Now we can finally get on to the real question</p>
+<p>链接好DBI后，我们来进入正题</p>
 
 <code lang="perl">
 my $sth = $dbh->prepare(q[
@@ -152,12 +133,7 @@ use Data::Dumper;
 print Dumper $res;
 </code>
 
-Here are a few things.  The first statement prepares the SQL I am about
-to run.  Under normal circumstances, this allows the database driver to
-compile the SQL into some sort of internal format so that it can be executed
-multiple times faster.  However, I'm not sure if the CSV driver does any
-pre-compilation though it does do validation.  And we're only running this
-once.  In general, however, this is a good idea.
+第一个语句，prepare 我们要执行的SQL。SQL语句中 <hl> ? </hl> 的作用是占位。
 
 The SQL also uses a placeholder value.  This is to ensure that invalid
 values don't get through.  In this particular case, the value is also
@@ -173,6 +149,9 @@ if the zero is required here or not, but first let's get something working,
 and then we can tweak it.  The <b>GROUP BY</b> tells the SQL engine that
 we want to do this select where the sum is applied per AcNo - different AcNo's
 will have independant sums.
+
+
+
 
 There is much more to the SQL than this, but as mentioned earlier,
 there are many more places to learn SQL than there is Text::CSV_XS, and you

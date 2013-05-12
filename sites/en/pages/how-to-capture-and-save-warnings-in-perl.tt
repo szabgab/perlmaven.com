@@ -1,5 +1,5 @@
 =title How to capture and save warnings in Perl
-=timestamp 2013-05-05T07:30:01
+=timestamp 2013-05-07T10:30:01
 =indexes warnings, state, __WARN__, %SIG, local
 =status show
 =books advanced_book
@@ -245,7 +245,7 @@ Yet, better to get used to it. (thanks to Peter Rabbitson for reminding me)
 The <hl>local</hl> is important to limit the effect of our change if you are
 using this code within a module. Especially if you distribute it.
 Without the localization the effect would be felt in all the application.
-The <hl>local</hl> limits it to the encolsing block.
+The <hl>local</hl> limits it to the enclosing block.
 
 <h2>Avoiding the global %WARNS hash</h2>
 
