@@ -88,10 +88,10 @@ Isto vasculha os diretórios listados na variável padrão<hl>@INC</hl>, procura
 subdiretório chamado <b>My</b> e naquele subdiretório um arquivo chamado
 <b>Math.pm</b>
 
-O problema é que o seu arquivo .pm não é nenhum dos subdiretórios padrão do
-perl: não é nenhum dos diretórios listados em @INC.
+O problema é que o seu arquivo .pm não está em nenhum dos subdiretórios padrão
+do perl: não está em nenhum dos diretórios listados em @INC.
 
-Você poderia mover seu módulo, ou mudar o conteúdo da sua variável @INC.
+Você pode mover seu módulo, ou mudar o conteúdo da sua variável @INC.
 
 A primeira sugestão pode ser problemática, especialmente em sistemas onde
 existe uma forte separação entre o administrador do sistema e o usuário. Por
@@ -99,7 +99,7 @@ exemplo, em sistemas UNIX e Linux apenas o usuário "root" (o administrador)
 tem permissão de escrita nesses diretórios.
 Então, em geral é mais fácil e mais correto modificar a variável @INC.
 
-<h2>Mude @INC a partir da linha de comando>/h2>
+<h2>Mude @INC a partir da linha de comando</h2>
 
 Antes de tentarmos carregar o módulo, temos que nos certificar de que o módulo
 está na variável @INC.
@@ -117,7 +117,7 @@ diretório à @INC.
 
 <h2>Mude @INC de dentro do script</h2>
 
-Porque sabemos que o diretório "My" que contém nosso módulo está em um lugar
+Porque sabemos que o diretório "My", que contém nosso módulo, está em um lugar
 fixo <b>relativo</b> ao script, temos outra possibilidade de mudar o script:
 
 <code lang="perl">
@@ -151,20 +151,20 @@ adiciona o diretório lib (relativo ao script) ao início da <hl>@INC</hl>.
 <hl>$0</hl> contém o nome do script atual.
 <hl>abs_path()</hl> de <hl>Cwd</hl> retorna o caminho absoluto do script.
 
-Dado um caminho para um arquivo ou para um diretório a chamada para
-<hl>dirname()</hl> de <hl>File::Basename</hl> retorna uma parte do caminho,
-referente ao diretório, retirando a última parte (que é o nome do arquivo).
+Dado um caminho para um arquivo ou diretório, a chamada para
+<hl>dirname()</hl> de <hl>File::Basename</hl> retorna uma parte do caminho
+referente ao diretório, retirando apenas a parte relativa ao nome do arquivo.
 
-Em nosso caso $0 contém app.pl
+Em nosso caso, $0 contém app.pl
 
 abs_path($0) retorna  .../algumdir/bin/app.pl
 
-dirname(abs_path $0)   returna  .../algumdir/bin
+dirname(abs_path $0)   retorna  .../algumdir/bin
 
-dirname( dirname abs_path $0)   returna  .../algumdir
+dirname(dirname abs_path $0)   retorna  .../algumdir
 
 Este é o diretório raiz do nosso projeto.
-dirname( dirname abs_path $0) . '/lib'   então aponta para  .../algumdir/lib
+dirname(dirname abs_path $0) . '/lib' então aponta para  .../algumdir/lib
 
 Então o que temos aí é basicamente
 
@@ -229,13 +229,6 @@ sob demanda.
 Ok, talvez eu precise esclarecer:
 O módulo "exporta" funções e o script as "importa".
 
-
-The last thing I need to mention is the <hl>1;</hl> at the end of the module.
-Basically the use statement is executing the module and it needs to see some kind
-of a true statement there. It could be anything. Some people put there <hl>42;</hl>,
-others, the really funny ones put <hl>"FALSE"</hl> there. After all every string
-with letters in it is <a href="/boolean-values-in-perl">considerd to be true in Perl</a>.
-That confuses about everyone. There are even people who put quotes from poems there.
 
 A última coisa que preciso mencionar é o <hl>1;</hl> no final do módulo.
 Basicamente a declaração use está executando o módulo e nele ela precisa ver
