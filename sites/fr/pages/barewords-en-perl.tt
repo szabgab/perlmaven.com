@@ -1,4 +1,4 @@
-=title Barewords en Perl
+=title Les barewords en Perl
 =timestamp 2013-05-05T10:45:56
 =indexes bareword, strict
 =status show
@@ -12,7 +12,7 @@
 =comments 1
 =social 1
 
-abstract start
+=abstract start
 
 <hl>use strict</hl> comporte 3 parties. L'une d'entre elles, appelée ainsi : <hl>use strict "subs"</hl>, interdit <b>l'utilisation inappropriée des <i>barewords</i></b>.
 
@@ -44,7 +44,7 @@ Oui. Dans cette version, perl voit la routine salut(), l'appelle, et assigne à 
 
 Néanmoins, si quelqu'un déplace la routine à la fin de votre fichier, après l'assignation, perl ne vois pas tout d'un coup la routine au moment de l'assignation. Résultat : nous nous retrouvons au point de départ, c'est-à-dire $x valorisée avec "salut".
 
-Non, vous ne voulez pas vous retrouver dans un tel désordre par accident. En fait, sans doute jamais. En ayant <hl>use strict</hl> dans votre code, perl n'autorisera pas que le <i>bareword</i> "salut" dans votre code, ce qui permet d'éviter ce type de confusion.
+Non, vous ne voulez pas vous retrouver dans un tel désordre par accident. En fait, sans doute jamais. En ayant <hl>use strict</hl> dans votre code, perl n'autorisera pas le <i>bareword</i> "salut" dans votre code, ce qui permet d'éviter ce type de confusion.
 
 Le code ci-dessous
 
