@@ -16,7 +16,7 @@ Perl scripts or Perl programs are just simple text files.
 You can use any kind of text editor to create them, but you should
 not use any word processor. Let me suggest a couple of editors and IDEs.
 
-BTW this artilce is part of the <a href="/perl-tutorial">Perl tutorial</a>.
+BTW this article is part of the <a href="/perl-tutorial">Perl tutorial</a>.
 
 =abstract end
 
@@ -58,7 +58,7 @@ On Windows, many people are using the so-called "programmer's editors".
 
 <ul>
 <li><a href="http://www.ultraedit.com/">Ultra Edit</a> is a commercial editor.</li>
-<li><a href="http://www.textpad.com/">TextPad</a> is shareware.</li>
+<li><a href="http://www.textpad.com/">TextPad</a> is share-ware.</li>
 <li><a href="http://notepad-plus-plus.org/">Notepad++</a> is an open source and free editor.</li>
 </ul>
 

@@ -21,7 +21,7 @@ repository. (Github gets nice pop-ups, private repositories tend to get simple l
 
 =abstract end
 
-Both sites take the link to the Version Contol system from the META files included in the CPAN distributons.
+Both sites take the link to the Version Control system from the META files included in the CPAN distributions.
 Either META.yml, or the newer META.json. (They should only differ in their format.)
 
 As the META files are usually generated automatically when the distribution is released
@@ -72,7 +72,7 @@ repository 'https://github.com/dwimperl/Task-DWIM';
 
 If you use <a href="http://dzil.org/">Dist::Zilla</a>, the
 <a href="https://metacpan.org/module/Dist::Zilla::Plugin::Repository">Dist::Zilla::Plugin::Repository</a>
-will automatcally add the link to your repository, though you can also specify it manually.
+will automatically add the link to your repository, though you can also specify it manually.
 
 <code lang="perl">
 [MetaResources]
@@ -81,7 +81,7 @@ repository.url = https://github.com/dwimperl/Task-DWIM.git
 
 A detailed version would include more details as in the following example. As I can see these parts are only
 included in the META.json file and not in the META.yml file. In order to generate that file, you'll also need
-to inlcude the <a href="https://metacpan.org/module/Dist::Zilla::Plugin::MetaJSON">MetaJSON plugin</a> of Dist::Zilla.
+to include the <a href="https://metacpan.org/module/Dist::Zilla::Plugin::MetaJSON">MetaJSON plugin</a> of Dist::Zilla.
 
 <code lang="perl">
 [MetaResources]

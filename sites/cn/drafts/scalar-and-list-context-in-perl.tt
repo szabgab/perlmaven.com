@@ -26,7 +26,7 @@ Perl 也是如此，Perl 中的关键词，函数，以及一些表达式，在�
 
 Perl 中的语境主要有两种，一是标量上下文，即单数的语境；二是列表上下文，可以理解为复数的语境。
 
-<h2>复数语境中的数组</h2>
+<h2>复数（LIST）语境中的数组</h2>
 
 <code lang="perl">
 my @words = ('Foo', 'Bar', 'Baz');
@@ -35,7 +35,7 @@ my @names = @words;
 
 赋值之后，<hl>@names</hl> 和 <hl>@words</hl> 包含相同的元素，即在这里，赋值相当与复制。
 
-<h2>单数语境中的数组</h2>
+<h2>单数语境（SCALAR ）中的数组</h2>
 
 <code lang="perl">
 my @words = ('Foo', 'Bar', 'Baz');
@@ -46,15 +46,15 @@ my $people =  @words;
 赋值后 <hl>$people</hl> 的值是 3。即在单数的语境中，得到的是数组中元素的个数。如果是在没有语境的语言中，
 你需要用函数计算出数组的元素的个数。
 
-<h2>SCALAR and LIST context</h2>
+<h2>单数语境（SCALAR ）和 复数（LIST）语境</h2>
 
-The above two are called SCALAR and LIST context. They mean if the expectation is
-to get a single value (in SCALAR context), or if multiple values are expected (LIST context).
-In LIST context the number of values can be 0, 1, 2, or any other number.
+//The above two are called SCALAR and LIST context. They mean if the expectation is
+//to get a single value (in SCALAR context), or if multiple values are expected (LIST context).
+//In LIST context the number of values can be 0, 1, 2, or any other number.
 
-<h2>The context of the if statement</h2>
+<h2> if 语句的语境 </h2>
 
-Look at this example:
+看下面的例子：
 
 <code lang="perl">
 my @words = ('Foo', 'Bar', 'Baz');
@@ -64,33 +64,18 @@ if (@words) {
 }
 </code>
 
-Inside the the condition part of the <hl>if</hl> statement we are
-expecting exactly one value. That must be SCALAR context then.
 
-By now we know that the value of an array in SCALAR context is the number
-of elements. We also know that this is 0 (that is <a href="/boolean-values-in-perl">FALSE</a>)
-when the array is empty, and some other positive number (that is <a href="/boolean-values-in-perl">TRUE</a>),
-when the array has 1 or more elements.
+if 语句的条件部分，是单数（SCALAR）语境，所以得到的是数组中元素的个数。
+所以，这里if 语句实际上在检查数组是否有元素存在。如果你不是很明白，请参考
+<a href="/boolean-values-in-perl">TRUE</a>。
 
-So because of that arbitrary decision above, the code <hl>if (@words)</hl>
-checks if there is any content in the array and fails if the array is empty.
+在<a href="/the-year-19100">Perl中的时间</a>中，我们学习了<hl>localtime()</hl>函数，其实已经
+接触了Perl 中的单复数语境了。这里我们又学习了单复数语境中的数组。
 
-Turning the if-statement around  <hl>if (! @words)</hl> will be true
-if the array is empty.
+如果不确定一个函数的语境，请参考<a href="/core-perl-documentation-cpan-module-documentation">perldoc</a>。
+正如，不知到一个词的意思要去查字典一样。
 
-<h2>SCALAR and LIST context</h2>
-
-In the <a href="/the-year-19100">previous episode</a> we saw how <hl>localtime()</hl>
-behaves in SCALAR and LIST context, and now we saw how an array behaves in SCALAR and LIST context.
-
-There is no general rule about context, and you will have to learn the specific cases,
-but usually they are quite obvious. In any case, when you look up a function using
-<a href="/core-perl-documentation-cpan-module-documentation">perldoc</a>,
-you will see an explanation of this for each function.
-At least in the cases where the SCALAR and LIST contexts yield different results.
-
-We should now look at a few more examples for expressions in Perl,
-and what kind of context they create.
+我们接下来经常用到的情况。
 
 <h2>Creating SCALAR context</h2>
 
@@ -255,23 +240,17 @@ And the output will be:
 Mon Nov  7 21:02:41 2011
 </code>
 
-<h2>Length or size of an array in Perl</h2>
+<h2>数组的大小的另一种写法</h2>
 
-In a nutshell, if you would like to get the size of an array in Perl you can use
-the <hl>scalar()</hl> function to force it in SCALAR context and return the size.
 
-<h2>The tricky way</h2>
-
-Sometimes you might see code like this:
+你可能会碰到类似的代码：
 
 <code lang="perl">
 0 + @words;
 </code>
 
-This is basically a tricky way to get the size of the array. The <hl> + </hl> operator
-creates SCALAR context on both sides. An array will return its size in SCALAR context.
-Adding 0 to it does not change the number, so the above expression returns the size of the array.
-
-I'd recommend writing the slightly longer but clearer way using the <hl>scalar</hl> function.
+它的目的是得到 <hl> @words </hl> 数组的大小，<hl> + </hl> 号的作用是提供 SCALAR 上下文。因为在
+SCALAR 上下文中，数组返回其元素的个数，所以这样的代码是正确的。
+不过，我喜欢用 <hl>scalar @words</hl> 来得到数组的大小 .<hl>scalar()</hl> 函数的作用是强加一个 SCALAR 上下文。
 
 

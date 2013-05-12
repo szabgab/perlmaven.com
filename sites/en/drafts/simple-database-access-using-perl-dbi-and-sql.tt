@@ -1,0 +1,234 @@
+=title Simple Database access using Perl DBI and SQL
+=timestamp 2013-01-17T14:45:56
+=tags Perl, SQL, DBI
+=indexes SQL, DBI, DBD::SQLite
+=status draft
+=author szabgab
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+While in most fields Perl adheres to the concept of TMTOWDI,
+in accessing relation databases Perl has a de-facto standard
+called DBI or <b>Database independent interface for Perl</b>.
+
+=abstract end
+
+<h2>Architecture</h2>
+
+The Perl scripts use DBI which in turn uses the appropriate
+<b>Database Driver</b> (e.g. [dist://DBD::Oracle]
+for <a href="http://www.oracle.com/">Oracle</a>,
+[dist://DBD::Pg] for <a href="http://www.postgresql.org/">PostgreSQL</a>
+and [dist://DBD::SQLite] to access <a href="http://sqlite.org/">SQLite</a>).
+
+Those drivers are compiled together with the C client libraries
+of the respective database engine. In case of SQLite, of course all the
+database engine gets embedded in the perl application.
+
+It is very hard to improve on the lovely ASCII-art that comes
+with the documentation of [dist://DBI] so let me reproduce it here:
+
+             |<- Scope of DBI ->|
+                  .-.   .--------------.   .-------------.
+  .-------.       | |---| XYZ Driver   |---| XYZ Engine  |
+  | Perl  |       | |   `--------------'   `-------------'
+  | script|  |A|  |D|   .--------------.   .-------------.
+  | using |--|P|--|B|---|Oracle Driver |---|Oracle Engine|
+  | DBI   |  |I|  |I|   `--------------'   `-------------'
+  | API   |       | |...
+  |methods|       | |... Other drivers
+  `-------'       | |...
+                  `-'
+
+
+<h2>Simple example</h2>
+
+I'll use SQLite to demonstrate the examples. That will make it
+very easy for you to try them on your computer.
+(e.g All versions of <a href="http://dwimperl.com/">DWIM Perl</a> already come
+with the necessary modules.)
+
+  #!/usr/bin/perl
+  use strict;
+  use warnings;
+
+  use DBI;
+
+  my $dbfile = "sample.db";
+
+  my $dsn      = "dbi:SQLite:dbname=$dbfile";
+  my $user     = "";
+  my $password = "";
+  my $dbh = DBI->connect($dsn, $user, $password, {
+     PrintError       => 0,
+     RaiseError       => 1,
+     AutoCommit       => 1,
+     FetchHashKeyName => 'NAME_lc',
+  });
+
+  $dbh->disconnect;
+
+
+We load DBI but we do <b>not</b> explicitly load the database driver.
+That will be done by DBI. The DSN (Data Source Name) is very straight forward.
+It contains the type of the database. That will be the clue to DBI which DBD to load.
+In case of SQLite, the only thing we really need is the path to the database file.
+
+The username and password fields were left empty. I think they are not
+relevant at all for SQLite.
+
+The last parameter of the connect call is a reference to a hash containing
+some attributes I like to set.
+
+The DBI->connect call returns a <b>database handle object</b> that usually we store in a variable
+called <hl>$dbh</hl>.
+
+The call to <b>disconnect</b> from the database is optional as it
+will automatically be called when the variable <hl>$dbh</hl> goes out
+of scope but it having it might be a clear indication that you are done with the
+database.
+
+<h2>CREATE TABLE</h2>
+
+Of course having a connection is not enough. We need to be able to fetch data from the
+database or insert data into the database but for our example to work first we
+actually need to create the tables of the database.
+
+In this case we can do this with a single command:
+
+  my $sql = <<'END_SQL';
+  CREATE TABLE people (
+    id       INTEGER PRIMARY KEY,
+    fname    VARCHAR(100),
+    lname    VARCHAR(100),
+    email    VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(20)
+  )
+  END_SQL
+  
+  $dbh->do($sql);
+
+The first one is just a here document of an SQL statement to CREATE TABLE.
+Then we call the <hl>do</hl> method of the database handle which will send the
+SQL statement to the database.
+
+<h2>INSERT</h2>
+
+Now let's see the real thing, inserting data:
+
+  my $fname = 'Foo';
+  my $lname = 'Bar',
+  my $email = 'foo@bar.com';
+  $dbh->do('INSERT INTO people (fname, lname, email) VALUES (?, ?, ?)',
+    undef,
+    $fname, $lname, $email);
+
+To insert a row we call the <hl>$dbh->do</hl> method again but instead of passing
+the actual data, we put question-marks <hl>?</hl> as place-holders.
+
+The SQL statement is followed by the word <hl>undef</hl>.
+That's actually the place of a hash-reference providing
+parameters to this specific call, similar to the attributes
+passed to the <hl>connect</hl> method but I think it is rarely used.
+
+That is followed by the actual values that go in place of the the place-holders.
+
+As you can see we did not have to put the place-holders in any kind of quotes
+nor did we have to somehow convert the values. DBI did it for us.
+
+This helps us avoid
+<a href="http://en.wikipedia.org/wiki/Sql_injection">SQL injection</a> attacks.
+Even if you meet someone called <a href="http://xkcd.com/327/">Bobby Tables</a>.
+
+<h2>UPDATE</h2>
+
+For updating some data in the database we also use the <hl>do</hl> method.
+
+  my $password = 'hush hush';
+  my $id = 1;
+  
+  $dbh->do('UPDATE people SET password = ? WHERE id = ?',
+    undef,
+    $password,
+    $id);
+
+Nothing special here. An SQL statement with some place-holders. <hl>undef</hl>
+instead of the extra attributes and the parameters to be used in place of
+the place-holders.
+
+<h2>SELECT</h2>
+
+This is by far the most interesting part of the database access. As the SELECT
+statement can return a lot of rows and a lot of values in each row we cannot use
+a simple call to the <hl>do</hl> method.
+
+Instead, there are several ways to fetch the data. I'll show here two.
+For both we have 3 steps: <hl>prepare</hl> the SQL statement.
+<hl>execute</hl> the statement with specific data and <hl>fetch</hl> the rows.
+
+From these, the <hl>prepare</hl> statement can be shared by - assuming the queries
+only differ in the data we pass to them. We create an SQL statement using
+question marks (<hl>?</hl>) as place-holders instead of actual values.
+
+This call returns a <b>statement handle object</b> that we usually save in a
+variable called <hl>$sth</hl>.
+
+Then we call the <hl>execute</hl> method of the <b>statement handle</b> passing to
+it values that should be placed instead of the place-holders.
+
+The third step is the really interesting one.
+In a <b>while loop</b> we fetch the results, row-by row. For this we can use several methods:
+
+The <hl>fetchrow_array</hl> method will return the values of the next row in the result set
+as a list, that we can assign to an array. The order of the elements is as the order
+of the fields in the query. (fname, lname in our case).
+
+The <hl>fetchrow_hashref</hl> method will return a reference to a hash. In the hash
+the keys will be the names of the fields in the database. As different databases might
+return these names of the fields in different cases we configured our database handler
+to make sure they - the names of the fields - will always converted to lower case.
+(That's what the <hl>FetchHashKeyName</hl> parameter did, when connecting to the database.)
+
+  my $sql = 'SELECT fname, lname FROM people WHERE id > ? AND id < ?';
+  my $sth = $dbh->prepare($sql);
+  $sth->execute(1, 10);
+  while (my @row = $sth->fetchrow_array) {
+     print "fname: $row[0]  lname: $row[1]\n";
+  }
+
+  $sth->execute(12, 17);
+  while (my $row = $sth->fetchrow_hashref) {
+     print "fname: $row->{fname}  lname: $row->{lname}\n";
+  }
+
+
+<h2>Exercise</h2>
+
+Take the above snippets of code. Use  the first one to set up the
+database and create a table. Then use the second one to insert
+a few people in the table.
+
+Finally use the last example to extract some data from the database
+and print it out.
+
+If you have any question, feel free to ask below.
+
+<h2>Thanks</h2>
+
+to sigzero for correcting a bug in the examples!
+
+<h2>Subscribe to my mailing list</h2>
+
+If you are interested getting updates when I post new articles,
+please subscribe to my newsletter:
+
+<TMPL_INCLUDE name="incl/subscribe.tmpl">
+
+
+
+

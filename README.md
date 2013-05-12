@@ -133,7 +133,7 @@ The translation process:
   He can easily see which translations are ready (in the done/ folder) and he can move them
   one-by-one to the sites/CC/pages/ directory, enable the entry in the perl-tutorials.tt file,
   update the =timestam and publish the new article.
-  Then he can include the article(s) in the mail sent to the subscribers of the Perl 5 Maven site.
+  Then he can include the article(s) in the mail sent to the subscribers of the Perl Maven site.
 
 
 
@@ -172,7 +172,7 @@ PROMOTION
 When articles are published they are posted to Google+, Twitter and sometimes even to Facebook.
 They are also posted on LinkedIN.
 
-An e-mail is sent out to the people who registered on the Perl 5 Maven site.
+An e-mail is sent out to the people who registered on the Perl Maven site.
 
 Many of the articles are included the Perl Weekly newsletter.
 

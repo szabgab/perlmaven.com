@@ -74,7 +74,7 @@ Just as we called the other two functions.
 
 In each case, well except of the last one, we called the <hl>return</hl> function of
 Perl to return a value. In fact the function would return some value even if we did not
-explicitely added a call to <hl>return</hl>, but it is strongly recommended to always call
+explicitly added a call to <hl>return</hl>, but it is strongly recommended to always call
 <hl>return</hl>. Even if we don't have anything special to return such as in the case of
 the <hl>ask_question()</hl> function.
 
@@ -169,7 +169,7 @@ There are several modules on CPAN that help creating something that resembles si
 You are welcome to experiment with those.
 
 <code lang="perl">
-sub do_somethig() {    # BAD !
+sub do_something() {    # BAD !
 }
 </code>
 
@@ -192,7 +192,7 @@ when you are calling the function.
 
 Perl functions always return a value.
 
-Either explicitly by calling <hl>return</hl>, or implicetly the
+Either explicitly by calling <hl>return</hl>, or implicitly the
 result of the last statement will be returned.
 It is recommended to always use explicit call to <hl>return</hl>.
 

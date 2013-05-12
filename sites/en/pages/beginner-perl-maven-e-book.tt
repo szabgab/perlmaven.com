@@ -53,9 +53,9 @@ useful Perl scripts and/or to maintaining existing applications.
     <ul>
        <li>numbers</li>
        <li>strings</li>
-       <li>Numberical operators</li>
+       <li>Numerical operators</li>
        <li>String operators</li>
-       <li>Functions for string manipilation</li>
+       <li>Functions for string manipulation</li>
     </ul>
   </li>
 <li>Accessing files.
@@ -70,7 +70,7 @@ useful Perl scripts and/or to maintaining existing applications.
       <li>Boolean operators</li>
       <li>if conditional</li>
       <li>while loop</li>
-      <li>Infinte loop</li>
+      <li>Infinite loop</li>
       <li>Loop controls</li>
       <li>for and foreach loops</li>
     </ul>
