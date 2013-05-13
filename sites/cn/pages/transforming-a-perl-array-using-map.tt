@@ -2,7 +2,7 @@
 =timestamp 2013-05-11T11:38:56
 =indexes map, transform, list, array
 =status show
-=original Transforming a Perl array using map
+=original transforming-a-perl-array-using-map
 =books advanced_book
 =author szabgab
 =translator terrencehan
@@ -22,7 +22,7 @@
 
 <hl>map</hl>函数则用来修改原列表元素的值。
 
-语法方面很类似。你需要传入一个代码快和一个列表：数组或者其他能返回列表的表达式。原列表的每个值都会放到<hl>$_</hl>（href="/the-default-variable-of-perl">Perl默认值</a>）中，然后执行代码快。执行的结果会传递给等号左边。
+语法方面很类似。你需要传入一个代码快和一个列表：数组或者其他能返回列表的表达式。原列表的每个值都会放到<hl>$_</hl>（<a href="/the-default-variable-of-perl">Perl默认值</a>）中，然后执行代码快。执行的结果会传递给等号左边。
 
 <h2>使用map的简单转换</h2>
 
