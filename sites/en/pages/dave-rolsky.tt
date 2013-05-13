@@ -30,8 +30,8 @@ the Moose training he runs at YAPC::NA. (19:19 min)
 
 
 <style>
-.transcription           { }                           /* Container for transcription  */
-.transcription-timeindex { display: none }             /* Time indexes into the video  */
+.transcript              { }                           /* Container for transcription  */
+.transcript-timeindex    { display: none }             /* Time indexes into the video  */
 .speaker-section         { }                           /* Contains a single speaker    */
 .speaker-gs              { }                           /* Gabor Szabo                  */
 .speaker-dr              { }                           /* Dave Rolsky                  */
@@ -52,14 +52,14 @@ the Moose training he runs at YAPC::NA. (19:19 min)
 .speaker-dr[first] .speaker-initial { display: none }  /* Hide the first instance      */
 .speaker-info            { }                           /* Container for speaker info   */
 .speaker-info:after      { content: ":" }              /* Container for speaker info   */
-.transcription-garbled   { }                           /* Audio section was garbled    */
-.transcription-editor    { }                           /* Section for editor note      */
-.transcription-garbled   { font-style: italic }        /* Indicator for garbled text   */
+.transcript-garbled      { }                           /* Audio section was garbled    */
+.transcript-editor       { }                           /* Section for editor note      */
+.transcript-garbled      { font-style: italic }        /* Indicator for garbled text   */
 </style>
 
-<h2>Transcription</h2>
+<h2>Transcript</h2>
 (work in process)
-<div id="transcription">
+<div id="transcript">
 
   <!--
       [2013-05-03 Fri 04:00]--[2013-05-03 Fri 04:45]: First pass 0:00--3:00
@@ -69,6 +69,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       [2013-05-05 Sun 16:00]--[2013-05-05 Sun 16:34]: Minor fixes and research into CSS settings.
       [2013-05-05 Sun 16:44]--[2013-05-05 Sun 16:49]: More minor edits
       [2013-05-06 Mon 04:07]--[2013-05-06 Mon 05:13]: Style first names / first initials
+      [2013-05-13 Mon 06:06]--[2013-05-13 Mon 06:12]: Change transcript container
     -->
 
   <div class="speaker-section speaker-gs" first="first">
@@ -77,7 +78,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Gabor Szabo</span>
     </span>
 
-    <span class="transcription-timeindex">0:00</span> Hi, this is
+    <span class="transcript-timeindex">0:00</span> Hi, this is
     Gabor Szabo speaking.  This is the Perl Maven TV show again, and
     with me is Dave Rolsky, who is the author of DateTime and tons
     of other modules on CPAN.  He is also the author of the, or of at
@@ -146,7 +147,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
     </span>
 
     Yeah.  Anyway.
-    So.  <span class="transcription-timeindex">1:00</span> Welcome to
+    So.  <span class="transcript-timeindex">1:00</span> Welcome to
     the show, and I would like to start with you from the beginning,
     because you have these tons of modules on CPAN, but where do we
     start?  How did you get involved in Perl?
@@ -159,7 +160,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Dave Rolsky</span>
     </span>
 
-    <span class="transcription-timeindex">1:13</span> OK, sure.  So,
+    <span class="transcript-timeindex">1:13</span> OK, sure.  So,
     back in '95/'96, I think, I was in grad school for music
     composition, that's what my degree is in, and I was, at the time... I
     had recently met Matt Mackall, who people might recognize as the
@@ -169,15 +170,15 @@ the Moose training he runs at YAPC::NA. (19:19 min)
     school to list all of our pieces, so that performers could find
     what we had written and may be sort, and you know, "I want to find
     something that includes clarinet" or something like
-    that, <span class="transcription-timeindex">2:00</span> and so I
+    that, <span class="transcript-timeindex">2:00</span> and so I
     had done a little programming when I was a kid -- I got my first
     computer when I was young, 5 or 6, so I asked Matt, "what should I
     learn to do this?  What's the right language?"  So he pointed me
-    at Perl. <span class="transcription-timeindex">2:15</span> I think
+    at Perl. <span class="transcript-timeindex">2:15</span> I think
     I got a Perl book sometime when I was in grad school.  This app
     never materialized.  It was a good idea, but it didn't happen,
     like many projects, right?  So this should be familiar to
-    everybody <span class="transcription-timeindex">2:24</span>
+    everybody <span class="transcript-timeindex">2:24</span>
     watching this: "Projects You Never Did".  That got me started
     looking at Perl, which is very ironic, since Matt is totally a
     Python guy these days, anyway.
@@ -190,7 +191,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Gabor Szabo</span>
     </span>
 
-    <span class="transcription-timeindex">2:35</span> Back then
+    <span class="transcript-timeindex">2:35</span> Back then
     everyone was Perl.
 
   </div>
@@ -201,12 +202,12 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Dave Rolsky</span>
     </span>
 
-    <span class="transcription-timeindex">2:37</span> Exactly,
+    <span class="transcript-timeindex">2:37</span> Exactly,
     exactly.  When I graduated from the masters program, I was kind of
     burned out on the whole academic thing, and so I decided to not
     get a Ph.D., so I end up getting a job in support at a local
     insurance company in St. Paul.  I lived in Minneapolis, Minnesota.
-    <span class="transcription-timeindex">3:00</span> And there was
+    <span class="transcript-timeindex">3:00</span> And there was
     kind of downtime.  When things weren't crashing, there was free
     time, because we weren't like a support line for Dell, it was just
     for the company, so if things there were working, we had time.  So
@@ -237,14 +238,14 @@ the Moose training he runs at YAPC::NA. (19:19 min)
     programming job, this was during the first dot-com boom, when
     anybody with a, I'll be polite, a butt, could get a seat, because
     that's all you needed was a butt to put in the seat to be a
-    programmer, <span class="transcription-timeindex">3:50</span> so I
+    programmer, <span class="transcript-timeindex">3:50</span> so I
     had no idea what the heck I was doing, but I managed to get a
     programming job.  And it was a Perl place, and so that was kind of
     where it all started.  And actually, that job I met Ken Williams,
     who is the person who introduced me to Mason, and we eventually
     wrote the Mason book together, and he introduced me to more of the
     Perl community
-    stuff, <span class="transcription-timeindex">4:10</span> pushed me
+    stuff, <span class="transcript-timeindex">4:10</span> pushed me
     to put stuff on CPAN, told me about YAPC, things like that.  So
     that's where it really got started.
 
@@ -256,7 +257,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Gabor Szabo</span>
     </span>
 
-    <span class="transcription-timeindex">4:16</span> Great.  So you
+    <span class="transcript-timeindex">4:16</span> Great.  So you
     started, you started to learn Perl, you had this, you were involved
     in a lot of projects, right?  I mean, if you look at the CPAN
     directory, then you see all kinds of diverse things.
@@ -269,32 +270,32 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Dave Rolsky</span>
     </span>
 
-    <span class="transcription-timeindex">4:33</span> Yeah, I've
+    <span class="transcript-timeindex">4:33</span> Yeah, I've
     done... I think the first thing I uploaded was something that's
     kind of a predecessor to Log::Dispatch.  It was like a logging
     module I had written for the company I was working at, and I got
     permission to release it, and it was really terrible, but I
     uploaded that, and
-    then <span class="transcription-timeindex">4:49</span> I think I
+    then <span class="transcript-timeindex">4:49</span> I think I
     wrote, I actually wrote a small bug tracking system for our
     support team, and I had done my own templating system, I think for
     that, I don't know, this was so long ago.  And then Ken was like
     "You should look at Mason".  So then I started using Mason, and
     then I started contributing to
-    Mason, <span class="transcription-timeindex">5:05</span> So, I
+    Mason, <span class="transcript-timeindex">5:05</span> So, I
     mean, for some of the things I worked on its projects that other
     people have started, probably most notably Mason and Moose, where
     I got excited about the project, and, you
-    know, <span class="transcription-timeindex">5:19</span> if it
+    know, <span class="transcript-timeindex">5:19</span> if it
     doesn't work the way I want it, then patches welcome, and I am
     kind of a sucker for that, so I end up doing the patches, and then
     working on docs, and all of these other
-    things, <span class="transcription-timeindex">5:29</span> and then
+    things, <span class="transcript-timeindex">5:29</span> and then
     for other stuff, I mean I have lots of stuff I have uploaded to
     CPAN that I don't think anybody has ever used, including me.
     There is stuff that is up there that is just experimental, or
     that's long
-    abandoned. <span class="transcription-timeindex">5:39</span> so
+    abandoned. <span class="transcript-timeindex">5:39</span> so
     even though I have tons of CPAN modules, I suspect maybe, I don't
     know, 25% of them, 35% of them see any use, but some of them are
     used pretty heavily.  So it's kinda...
@@ -307,7 +308,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Gabor Szabo</span>
     </span>
 
-    <span class="transcription-timeindex">5:50</span> Yeah, I think I
+    <span class="transcript-timeindex">5:50</span> Yeah, I think I
     mean, it's like a trademark.  If I know that you wrote it, then I
     know that then it's "it's OK".  Maybe I shouldn't trust everything
     that you wrote.
@@ -320,7 +321,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Dave Rolsky</span>
     </span>
 
-    <span class="transcription-timeindex">5:59</span> (laugh) I sure
+    <span class="transcript-timeindex">5:59</span> (laugh) I sure
     wouldn't trust everything!  I'm embarrassed by my old code.  I
     look at Log::Dispatch, which is one of the earliest ones, and I
     know lots of people use it, and I still use it, but whenever I
@@ -344,8 +345,8 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Dave Rolsky</span>
     </span>
 
-    Someday I'll <span class="transcription-timeindex">6:13</span>
-    <span class="transcription-garbled">[garbled]</span> to use Moo or
+    Someday I'll <span class="transcript-timeindex">6:13</span>
+    <span class="transcript-garbled">[garbled]</span> to use Moo or
     something.
 
   </div>
@@ -356,7 +357,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Gabor Szabo</span>
     </span>
 
-    <span class="transcription-timeindex">6:17</span> OK.  But would
+    <span class="transcript-timeindex">6:17</span> OK.  But would
     you for.. if you had already mentioned Moo and would you help
     somebody if he wanted to rewrite it in Moo or start improving it
     and step by step.  It's not like from scratch.
@@ -379,7 +380,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Gabor Szabo</span>
     </span>
 
-    <span class="transcription-timeindex">6:33</span> Because I think
+    <span class="transcript-timeindex">6:33</span> Because I think
     that would be crazy.  Probably it would be better, I don't know,
     class by class to turn it to Moo?
 
@@ -391,25 +392,25 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Dave Rolsky</span>
     </span>
 
-    <span class="transcription-timeindex">6:43</span> Yeah.  It really
+    <span class="transcript-timeindex">6:43</span> Yeah.  It really
     wouldn't be hard.  Log::Dispatch, in particular, is really not
     much code.  It's a pretty simple module.  So the big things I want
     to do for that are just kind of clean it up, possibly use Moo,
-    <span class="transcription-timeindex">6:54</span> and also to
+    <span class="transcript-timeindex">6:54</span> and also to
     split it up into separate distros.  Right now its kind of an ugly
     distro where it ships all these output modules, like for Apache
-    logs <span class="transcription-timeindex">7:04</span> whose using
+    logs <span class="transcript-timeindex">7:04</span> whose using
     mod_perl anymore?  I'm not, so I don't need it.  It has a syslog
     output and four different ways to send email, and these should all
     be separate
-    modules.  <span class="transcription-timeindex">7:12</span> Cause
+    modules.  <span class="transcript-timeindex">7:12</span> Cause
     right now you install it and it doesn't have any of the prereqs
     declared, 'cause otherwise I'd need to declare tons of prereqs,
     and it would be a
-    mess.  <span class="transcription-timeindex">7:21</span> So
+    mess.  <span class="transcript-timeindex">7:21</span> So
     splitting up into different distros would be a nice thing to do
-    too.  <span class="transcription-timeindex">7:26</span> and we
-    could <span class="transcription-garbled">[garbled]</span>.
+    too.  <span class="transcript-timeindex">7:26</span> and we
+    could <span class="transcript-garbled">[garbled]</span>.
 
   </div>
 
@@ -419,9 +420,9 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Gabor Szabo</span>
     </span>
 
-    <span class="transcription-timeindex">7:26</span>
-    <span class="transcription-garbled">[garbled]</span>
-    <span class="transcription-timeindex">7:28</span> Sorry?
+    <span class="transcript-timeindex">7:26</span>
+    <span class="transcript-garbled">[garbled]</span>
+    <span class="transcript-timeindex">7:28</span> Sorry?
 
   </div>
 
@@ -431,7 +432,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Dave Rolsky</span>
     </span>
 
-    <span class="transcription-timeindex">7:30</span> It would just
+    <span class="transcript-timeindex">7:30</span> It would just
     make it easier to manage, I think.
 
   </div>
@@ -442,16 +443,16 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Gabor Szabo</span>
     </span>
 
-    <span class="transcription-timeindex">7:32</span> Yeah.  Yeah,
+    <span class="transcript-timeindex">7:32</span> Yeah.  Yeah,
     probably.  So actually, I didn't think about it earlier, but this
-    could be a <span class="transcription-timeindex">7:39</span> way
+    could be a <span class="transcript-timeindex">7:39</span> way
     to introduce new programmers, or people who are not new to
     programming, maybe, but new to Perl and would like to have some
-    project <span class="transcription-timeindex">7:49</span> and they
+    project <span class="transcript-timeindex">7:49</span> and they
     think, well, "what can we do?", and here is a module that is
     heavily used, probably, I know I use it, and probably a lot of
     other people use
-    it, <span class="transcription-timeindex">8:00</span> and can be
+    it, <span class="transcript-timeindex">8:00</span> and can be
     refactored to something more modern.
 
   </div>
@@ -462,7 +463,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Dave Rolsky</span>
     </span>
 
-    <span class="transcription-timeindex">8:04</span> Yeah,
+    <span class="transcript-timeindex">8:04</span> Yeah,
     definitely, and it's reasonably amenable to that since each
     subclass, each output class is pretty small, doesn't do much, you
     could convert them one at a time.  I think that's definitely a
@@ -476,7 +477,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Gabor Szabo</span>
     </span>
 
-    <span class="transcription-timeindex">8:17</span> That's
+    <span class="transcript-timeindex">8:17</span> That's
     interesting.  So, what are you working these days?
 
   </div>
@@ -487,7 +488,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Dave Rolsky</span>
     </span>
 
-    <span class="transcription-timeindex">8:21</span> For paid work,
+    <span class="transcript-timeindex">8:21</span> For paid work,
     or free for software stuff?
 
   </div>
@@ -498,7 +499,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Gabor Szabo</span>
     </span>
 
-    <span class="transcription-timeindex">8:25</span> I don't know,
+    <span class="transcript-timeindex">8:25</span> I don't know,
     start with free software?
 
   </div>
@@ -509,56 +510,56 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       <span class="speaker-name">Dave Rolsky</span>
     </span>
 
-    <span class="transcription-timeindex">8:28</span> Not too much.
+    <span class="transcript-timeindex">8:28</span> Not too much.
     The last couple of years have been, I just have a lot of stuff
     going on in my
-    life. <span class="transcription-timeindex">8:38</span> Some
+    life. <span class="transcript-timeindex">8:38</span> Some
     health problems for me and my wife, which have been distracting,
     and also I am doing a lot of activism related to animal advocacy
-    <span class="transcription-timeindex">8:47</span>, so last year,
+    <span class="transcript-timeindex">8:47</span>, so last year,
     the group I work with, we did a big veg-fest in the Twin Cities,
     and I was kind of the lead organizer for that, so I spent a lot of
     time on that.  And now we're doing it
-    again <span class="transcription-timeindex">8:58</span>, and I'm
+    again <span class="transcript-timeindex">8:58</span>, and I'm
     still the lead organizer.  So, you know, things like that can be
     distracting.  It's kind of like putting on a YAPC, basically, in
     terms of amount of work, to give people a sense of
-    perspective. <span class="transcription-timeindex">9:08</span>
+    perspective. <span class="transcript-timeindex">9:08</span>
     Probably the biggest thing I've done recently, let's see, well,
     there's that module, I don't know if people have seen, called
     Courriel, which is a terrible pronunciation
-    <span class="transcription-timeindex">9:16</span>, which is the
+    <span class="transcript-timeindex">9:16</span>, which is the
     French word, official French word for email, that France uses.
     But I just picked it because the Email:: name space was already
     taken, and it's kind of an attempt to improve on the
-    email <span class="transcription-timeindex">9:27</span>
+    email <span class="transcript-timeindex">9:27</span>
     Email::Mime modules, which I don't like the API of much, and just
     try to give it a more modern, easy to use
-    API <span class="transcription-timeindex">9:35</span>.  So, we're
+    API <span class="transcript-timeindex">9:35</span>.  So, we're
     using that at work, and it seems to work pretty well.  I think
     other people are using it, so that's something.  There's
     definitely work to be done on
-    that.  <span class="transcription-timeindex">9:41</span> I've been
+    that.  <span class="transcript-timeindex">9:41</span> I've been
     working on some tools related to calling Postgress command line
     programs.  It's the Pg::CLI distro, which actually
-    is <span class="transcription-timeindex">8:52</span> turned out to
+    is <span class="transcript-timeindex">8:52</span> turned out to
     be something we need a lot at work as well.  We're trying to move
     to Postrgess and for managing
-    databases <span class="transcription-timeindex">9:59</span>.  And
+    databases <span class="transcript-timeindex">9:59</span>.  And
     then I am working on something that I hope, I'm working on it
     slowly, very slowly, that I hope will eventually replaces Moose's
     built-in type system, but also be usable for Moo, and really be
     available standalone.  It's called Specio, or actually I think it
-    <span class="transcription-timeindex">10:15</span> totally I
+    <span class="transcript-timeindex">10:15</span> totally I
     should say Specio, but I don't know how to pronounce Latin.  It's
     kind of a standalone type
-    system.  <span class="transcription-timeindex">10:24</span> I
+    system.  <span class="transcript-timeindex">10:24</span> I
     think those some of the most recent things.  I don't even
     remember.  What have I done on CPAN?  Who knows?
 
   </div>
 
-  <span class="transcription-timeindex">10:29</span>
+  <span class="transcript-timeindex">10:29</span>
 
 </div>
 
