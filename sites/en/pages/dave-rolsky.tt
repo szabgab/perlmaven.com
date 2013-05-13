@@ -18,11 +18,16 @@ What does a vegan music composer do when he wants to send e-mails?
 
 Dave Rolsky is one of the most prolific CPAN authors. He created DateTime, Log::Dispatch and tons of other modules.
 We talked about how he started with Perl and what he has been doing lately. We also discussed his work and
-the Moose training he runs at YAPC::NA. (19:19)
+the Moose training he runs at YAPC::NA. (19:19 min)
 
 =abstract end
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/d-K_uoIrUKQ" frameborder="0" allowfullscreen></iframe>
+
+<div id="downloads">Download:
+<a href="/media/audio/dave-rolsky.mp3">mp3</a> (18 Mb)
+</div>
+
 
 <style>
 .transcription           { }                           /* Container for transcription  */
@@ -52,6 +57,8 @@ the Moose training he runs at YAPC::NA. (19:19)
 .transcription-garbled   { font-style: italic }        /* Indicator for garbled text   */
 </style>
 
+<h2>Transcription</h2>
+(work in process)
 <div id="transcription">
 
   <!--
@@ -72,7 +79,7 @@ the Moose training he runs at YAPC::NA. (19:19)
 
     <span class="transcription-timeindex">0:00</span> Hi, this is
     Gabor Szabo speaking.  This is the Perl Maven TV show again, and
-    with me is Dave Rolsky, who is the author of Date::Time and tons
+    with me is Dave Rolsky, who is the author of DateTime and tons
     of other modules on CPAN.  He is also the author of the, or of at
     least a large part of the Moose tutorial and documentation.  Hi
     Dave.  How are you?
@@ -587,7 +594,7 @@ Dave works with <a href="https://metacpan.org/author/OALDERS">Olaf Alders</a>, o
 <h2>Moose training at YAPC::NA 2013</h2>
 <ul>
   <li><a href="http://www.yapcna.org/yn2013/training.html#moose1">Intro to Moose training at YAPC::NA</a></li>
-  <li><a href="http://www.yapcna.org/yn2013/training.html#moose2">Advanced Moose by Stevan Littleat YAPC::NA</a></li>
+  <li><a href="http://www.yapcna.org/yn2013/training.html#moose2">Advanced Moose by Stevan Little at YAPC::NA</a></li>
 </ul>
 </div>
 

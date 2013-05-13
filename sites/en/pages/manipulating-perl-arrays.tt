@@ -62,12 +62,12 @@ array to the end of the <hl>@names</hl> array, extending it to a 5-element array
 <h2>shift</h2>
 
 The <hl>shift</hl> function will move the whole array to the left.
-Assuming you imagine the arrray to start on the left hand side.
+Assuming you imagine the array to start on the left hand side.
 The element that was the first element of the array will "fall off"
 the array and become the return value of the function.
 (If the array was empty, <b>shift</b> will return <a href="/undef-and-defined-in-perl">undef</a>.) 
 
-After the operaton, the array will be one element shorter.
+After the operation, the array will be one element shorter.
 
 <code lang="perl">
 my @names = ('Foo', 'Bar', 'Moo');

@@ -64,7 +64,7 @@ blended with the modern features of Perl and CPAN.
   <li>Object Oriented Programming in Perl (with and without Moose)
     <ul>
      <li>Constructor</li>
-     <li>Attributes, attribue types</li>
+     <li>Attributes, attribute types</li>
      <li>Create your own type</li>
      <li>Getters/Setters</li>
      <li>Inheritance</li>

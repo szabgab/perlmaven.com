@@ -41,10 +41,10 @@ not be able to help with perl questions.
 The second reason for using DBD::CSV is that it gets you thinking about
 your data differently. Often, in my experience, simply treating the CSV
 as if it were a table in a relational database can be enough of a lightbulb
-moment to realise simpler solutions, even if the computer will spend far
+moment to realize simpler solutions, even if the computer will spend far
 more time executing them.
 
-And a bonus reason is that once you realise your data is, well, data,
+And a bonus reason is that once you realize your data is, well, data,
 the natural transition to another database system (SQLite, DB2, Oracle,
 whatever is handy) becomes natural.  And since you've already written your
 code with DBD::CSV, transitioning to
@@ -106,7 +106,7 @@ use DBI;
 
 Note that we don't load the CSV driver, but only <a href="https://metacpan.org/module/DBI">DBI</a>.
 Shortly, DBI will load DBD::CSV for us.  This is convenient in that there will
-only be one place where we're specifying what backend database we're using,
+only be one place where we're specifying what back-end database we're using,
 meaning less to change should we desire to upgrade to a full-fledged database
 later.  Unlikely here, but, again, we're not simply trying to get this total,
 we're learning DBI and SQL here.
@@ -125,7 +125,7 @@ my $dbh = DBI->connect('dbi:CSV:', undef, undef,
 </code>
 
 Here we load a couple of modules that make our job a little easier and
-then tell DBI that we're going to use a CSV backend.  Since CSV files
+then tell DBI that we're going to use a CSV back-end.  Since CSV files
 don't need users or passwords to connect, we leave them as <hl>undef</hl>,
 but then
 we pass in a few extra flags.  Some of these flags go to the CSV driver,
@@ -142,8 +142,8 @@ In the <a href="/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-per
 Gabor just relied on the current working directory, which is also a valid
 approach.
 
-f_ext is the extention added to any table name when discerning the file
-name.  With this extention, trying to SELECT ... FROM foo will mean that
+f_ext is the extension added to any table name when discerning the file
+name.  With this extension, trying to SELECT ... FROM foo will mean that
 DBD::CSV will read the file foo.csv (in the f_dir specified above).
 
 csv_eol tells DBD::CSV what the end-of-line string is. I think the
@@ -179,7 +179,7 @@ once.  In general, however, this is a good idea.
 
 The SQL also uses a placeholder value.  This is to ensure that invalid
 values don't get through.  In this particular case, the value is also
-hardcoded, so it doesn't actually gain us anything other than exposure and
+hard-coded, so it doesn't actually gain us anything other than exposure and
 experience.
 
 The SQL itself is a bit more involved.  We are telling the SQL engine
@@ -190,7 +190,7 @@ as a positive, otherwise we count it as a negative.  At this point, I'm not sure
 if the zero is required here or not, but first let's get something working,
 and then we can tweak it.  The <b>GROUP BY</b> tells the SQL engine that
 we want to do this select where the sum is applied per AcNo - different AcNo's
-will have independant sums.
+will have independent sums.
 
 There is much more to the SQL than this, but as mentioned earlier,
 there are many more places to learn SQL than there is Text::CSV_XS, and you
@@ -326,9 +326,9 @@ about accidentally clobbering anything here.
 <h2>The Output as a table</h2>
 
 During output I do the subtraction.  In this case, I have no idea what
-the original requestor really wanted, but we have all the information from
+the original requester really wanted, but we have all the information from
 the CSV that we wanted, so it's really not that important.  I've opted to
-use one of my favourite modules, <a href="https://metacpan.org/module/Text::Table">Text::Table</a>.
+use one of my favorite modules, <a href="https://metacpan.org/module/Text::Table">Text::Table</a>.
 
 <code lang="perl">
 use Text::Table;

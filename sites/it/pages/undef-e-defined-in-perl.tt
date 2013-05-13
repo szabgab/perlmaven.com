@@ -2,6 +2,7 @@
 =timestamp 2013-05-02T10:45:56
 =indexes undef, defined
 =status show
+=original undef-and-defined-in-perl
 =books beginner_book
 =author szabgab
 =translator paologianrossi

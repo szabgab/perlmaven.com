@@ -27,6 +27,8 @@ breaks your application.
 
 =abstract end
 
+This article was originally published on <a href="http://pragmaticperl.com/">Pragmatic Perl</a>
+
 One strategy for solving this problem is to construct your own custom
 CPAN repository that contains only the versions of the modules that
 you want.  Then you can use the CPAN tool chain to build your
@@ -341,7 +343,7 @@ cpanm --mirror file://$HOME/repo/stacks/uri_upgrade --mirror-only My::App
 
 If all the tests pass, then you can confidently upgrade URI to version
 1.62 in the "master" stack as well by using the <hl>pull</hl> command.  Since
-"master" is the default stack, you can omit the "--stack" paramter:
+"master" is the default stack, you can omit the "--stack" parameter:
 
 <code>
 pinto -r ~/repo pull URI~1.62

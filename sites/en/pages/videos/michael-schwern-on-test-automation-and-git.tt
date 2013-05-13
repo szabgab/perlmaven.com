@@ -18,12 +18,15 @@ Michael Schwern is the creator of Test::Simple and Test::More and probably <b>th
 He tells us how he got involved in Perl, why did he build the test framework for Perl, and how did he manage to get people use these tools.
 
 He also tells us about is upcoming course on Git.
-
-The interview is 24.36 min long.
+(24:36 min)
 
 =abstract end
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/Tsy9m_f-op8" frameborder="0" allowfullscreen></iframe>
+
+<div id="downloads">Download:
+<a href="/media/audio/michael-schwern.mp3">mp3</a> (23Mb)
+</div>
 
 <div id="text">
 Show notes:
@@ -60,5 +63,8 @@ How to get people to use your module: Make a simple solution and advertise it.
   <li>Tutorial</li>
   <li>Make people see the <b>subjective</b> value in it.</li>
 </ul>
+</div>
+
+<div id="transcription">
 </div>
 

@@ -214,7 +214,7 @@ In this case the "other program" is the systems sendmail program.
 
 When we call <hl>close $ph</hl> the e-mail is injected in the regular
 mail queue of the system and is scheduled to be sent out with all the
-other messages. This usually means withing a few seconds the system will
+other messages. This usually means within a few seconds the system will
 try to deliver your e-mail.
 
 <h2>Another Warning</h2>

@@ -26,6 +26,8 @@ nunca sabe quando uma nova versão de um módulo pode introduzir um <i>bug</i> q
 
 =abstract end
 
+This article was originally published on <a href="http://pragmaticperl.com/">Pragmatic Perl</a>
+
 Uma estratégia para resolver este tipo de prolema é construir seu próprio repositório
 do CPAN, que conterá apenas as versões dos módulos que você deseja. Dessa forma você pode utilizar 
 o construtor do CPAN para instalar módulos a partir do seu próprio repositório sem ficar
@@ -86,7 +88,7 @@ man Pinto::Manual::Tutorial      # Um guia narrativo pelo projeto
 man Pinto::Manual::QuickStart    # Um sumário de comandos comuns
 </code>
 
-<h2>Criando o Reositório</h2>
+<h2>Criando o Repositório</h2>
 
 O primeiro passo ao utilizar o projeto Pinto é criar um repositório
 através do comando <hl>init</hl>:
@@ -126,7 +128,7 @@ URI para o seu repositório utilizando o comando <hl>pull</hl>:
 pinto -r ~/repo pull URI
 </code>
 
-Você será questionado a descrever uma mensagem que descreva o motivo
+Você será questionado a escrever uma mensagem que descreva o motivo
 de tal mudança em seu repositório. No topo da mensagem inclui uma mensagem simples
 que você poderá editar. O rodapé da mensagem mostrará exatamente quais módulos
 foram adicionados. 
