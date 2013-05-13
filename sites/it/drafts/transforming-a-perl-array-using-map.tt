@@ -1,4 +1,4 @@
-=title Transforming a Perl array using map
+=title Trasformare un array Perl con map
 =timestamp 2013-04-25T10:45:56
 =indexes map, transform, list, array
 =status show
@@ -12,27 +12,26 @@
 
 =abstract start
 
-The <hl>map</hl> function of Perl provides a simple way to transform a
-list of values to another list of values. Usually this is a one-to-one
-transformation but in general the resulting list can be also shorter or
-longer than the original list.
+La funzione <hl>map</hl> di Perl fornisce un modo semplice per trasformare una
+lista di valori in un'altra lista di valori. Di solito questa trasformazione ritorna lo stesso 
+numero di valori, anche se è sempre possibile generare una lista con un numero di valodi diverso.
 
 =abstract end
 
-We saw that <a href="/filtering-values-with-perl-grep">grep of Perl</a> is a generalization of the
-UNIX grep command. It selects some or all of the elements from the
-original list, and returns them unchanged.
+Abbiamo visto che <a href="/filtering-values-with-perl-grep">la funzione grep di Perl</a> è una generalizzazione del
+medesimo comando UNIX. La funzione seleziona alcuni o tutti (o nessuno!) degli elementi dalla 
+lista originale, e li ritorna intatti.
 
-<hl>map</hl>, on the other hand, is used when you would like to make changes
-to the values of the original list.
+La funzione <hl>map</hl>, invece, è utile quando si vogliono cambiare 
+i valori della lista originale.
 
-The syntax is similar. You provide a block of code and a list of values: an array
-or some other expression that returns a list of values.
-For every value in the original list, the value is placed in <hl>$_</hl>,
-<a href="/the-default-variable-of-perl">the default variable of Perl</a>, and the block
-is executed. The resulting values are passed on, to the left-hand side of the assignment.
+La sintassi è simile. Basta passare alla funzione un blocco di codice ed una lista di valori: un array
+o qualche altra espressione che ritorni una lista di valori.
+Per ogni elemento della lista originale, il valore è copiato nella variabile <hl>$_</hl>,
+<a href="/the-default-variable-of-perl">la variabile predefinita di Perl</a>, ed il blocco
+è eseguito. I valori risultanti sono passati alla lista risultante.
 
-<h2>map for simple transformation</h2>
+<h2>Uso di map per trasformazioni semplici</h2>
 
 <code lang="perl">
 my @numbers = (1..5);
@@ -41,18 +40,18 @@ my @doubles = map {$_ * 2} @numbers;
 print "@doubles\n";       # 2 4 6 8 10
 </code>
 
-<h2>Building fast look-up table</h2>
+<h2>Costruire tabelle di look-up veloci</h2>
 
-Sometimes we have a list of values and during the execution of the code
-we need to check if a given value is within this list. We can use
-<a href="/filtering-values-with-perl-grep.html">grep</a> every time, to check if the current
-value is in the list. We can even use the <a href="/filtering-values-with-perl-grep.html">any</a>
-function from <a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>,
-but it can be much more readable and faster if we used a hash for lookup.
+Se abbiamo una lista di valori può capitare, durante l'esecuzione del codice, 
+di voler controllare se un valore è compreso nella lista. Possiamo usare
+<a href="/filtering-values-with-perl-grep.html">grep</a> ogni volta, per cercare se il 
+valore è nella lista. Possiamo anche usare la funzione <a href="/filtering-values-with-perl-grep.html">any</a>
+del package <a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>,
+ma può essere più leggibile e veloce usare una variabile hash per costruire una veloce tabella di look-up.
 
-We need to create a hash once, where the keys are the elements of the array,
-and the values of the hash are all 1s. Then, a simple hash lookup
-can replace the <hl>grep</hl>.
+Possiamo creare una variabile hash una volta sola, dove per chiavi usiamo i valori della lista,
+ed i corrispondenti valori sono qualunque cosa che valorizzi a true (quindi 1, "1", ma anche "52" o "Perl rocks!").
+Possiamo usare questa variabile hash al posto della funzione <hl>grep</hl>.
 
 <code lang="perl">
 use Data::Dumper qw(Dumper);
@@ -70,7 +69,7 @@ if ($is_invited{$visitor}) {
 print Dumper \%is_invited;
 </code>
 
-This is the output of the <hl>Dumper</hl> call:
+Questo è l'output della chiamata <hl>Dumper</hl> :
 
 <code lang="perl">
 $VAR1 = {
@@ -80,15 +79,18 @@ $VAR1 = {
         };
 </code>
 
-In this code we don't really care about the values of the hash elements,
-other than the fact that they should evaluate to true in Perl.
+Come anticipato, il valore che assegnamo agli elementi dell'hash non è importante,
+deve semplicemente essere valutato a true in una espressione.
 
-This solution is only interesting if you do repeated look-ups on a large
-set of values. (The exact meaing of "large" might depend on the system.)
-Otherwise <hl>any</hl> or even <hl>grep</hl> will do it.
+Questa soluzione è interessante solo si accede spesso alla tabella di look-up e per 
+un grande set di valori (l'esatto significato di "grande" potrebbe dipendere dal vostro
+sistema).
+Altrimenti <hl>any</hl> o anche <hl>grep</hl> andranno bene lo stesso.
 
-As you can see, in this example, for every element in the original array,
-<hl>map</hl> returned two values. The original value and 1.
+Come potete vedere in questo esempio, per ogni elemento nell'array originale,
+<hl>map</hl> ritorna 2 valori. Il valore originale e 1.
+
+Il codice seguente:
 
 <code lang="perl">
 my @names = qw(Foo Bar Baz);
@@ -96,23 +98,22 @@ my @invited = map {$_ => 1} @names;
 print "@invited\n"
 </code>
 
-will print:
+stamperà:
 
 <code>
 Foo 1 Bar 1 Baz 1
 </code>
 
+<h2>La freccia "grassa"</h2>
 
-<h2>Fat arrow</h2>
-
-In case you are wondering <hl>=></hl> is called the <b>fat arrow</b> or <b>fat comma</b>. It basically acts
-as a regular comma <hl>,</hl> with an exectption that is not relevant in our case. (There is a description
-of it in the article about <a href="/perl-hashes">Perl hashes</a>.)
+Nel caso ve lo state chiedendo il simbolo <hl>=></hl> è chiamato la <b>fat arrow</b> or <b>fat comma</b>. Praticamente 
+si comporta come una virgola regolare <hl>,</hl> con una eccezione che non è rilevante nel nostro caso. (Per ogni dettaglio
+sul suo uso leggetevi l'articolo <a href="/perl-hashes">Perl hashes</a>.)
 
 
-<h2>Complex expressions in map</h2>
+<h2>Espressioni complesse in map</h2>
 
-You can put more complex expressions with map:
+Potete dare in pasto a map istruzioni più complesse:
 
 <code lang="perl">
 my @names = qw(Foo Bar Baz);
@@ -120,15 +121,15 @@ my @invited = map { $_ =~ /^F/ ? ($_ => 1) : () } @names;
 print "@invited\n"
 </code>
 
-Will print
+stamperà:
 
 <code>
 Foo 1
 </code>
 
-Inside the block we have a ternary operator that returns either
-a pair like earlier or an empty list. Apparently we only want
-to let people in if their name starts with an F.
+Nel blocco abbiamo un operatore ternario che ritorna o una coppia
+di valori come prima o una lista vuota. A quanto pare ammettiamo solo
+le persone il cui nome inizia con "F".
 
 <code lang="perl">
 $_ =~ /^F/ ? ($_ => 1) : ()
@@ -136,6 +137,6 @@ $_ =~ /^F/ ? ($_ => 1) : ()
 
 <h2>perldoc</h2>
 
-For further explanation with a couple of strange cases,
-check out <a href="http://perldoc.perl.org/functions/map.html">perldoc -f map</a>.
+Per informazioni ulteriori ed un paio di casi strani,
+date una occhiata a <a href="http://perldoc.perl.org/functions/map.html">perldoc -f map</a>.
 
