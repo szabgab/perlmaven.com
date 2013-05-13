@@ -1,5 +1,5 @@
 =title Dokumentasi Core Perl dan Dokumentasi Modul CPAN
-=timestamp 2013-05-012T08:50:00
+=timestamp 2013-05-013T07:15:00
 =indexes perldoc, documentation, POD, CPAN
 =status show
 =original core-perl-documentation-cpan-module-documentation
@@ -41,7 +41,7 @@ Sayangnya tidak ada penjelasan tentang <hl>while</hl>,
  <hl>$_</hl>, maupun <hl>@_</hl>. Untuk mendapatkan penjelasan tentang hal tersebut
 Anda harus menjelajah ke seluruh bagian dokumentasi.
 
-Salah satu halaman yang mungkin penting adalah < a href="http://perldoc.perl.org/perlvar.html">perlvar</a>,
+Salah satu halaman yang mungkin penting adalah <a href="http://perldoc.perl.org/perlvar.html">perlvar</a>,
 di mana Anda dapat menemukan informasi mengenai variabel-variabel seperti <hl>$_</hl> dan <hl>@_</hl>.
 
 <a href="http://perldoc.perl.org/perlsyn.html">Perlsyn</a> memberikan penjelasan mengenai sintaks Perl
