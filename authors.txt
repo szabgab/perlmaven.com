@@ -20,3 +20,4 @@ szabgab;Gabor Szabo;szabgab.png;https://plus.google.com/102810219707784087582
 terrencehan;Terrence Han;terrencehan.png;https://plus.google.com/115247155710052422629
 tudorconstantin;Tudor Constantin;tudorconstantin.jpg;https://plus.google.com/116443916281342539112
 yongbin;Yongbin Yu;yongbin.jpg;https://plus.google.com/111269003708517945935
+H2CHANG;Hsin-Hsiung Chang;;
