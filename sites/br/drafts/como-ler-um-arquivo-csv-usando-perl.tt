@@ -1,8 +1,8 @@
 =title Como Ler um Arquivo CSV Usando Perl?
-=timestamp 2013-05-13T21:07:56
+=timestamp 2013-05-14T06:07:56
 =indexes CSV, split, Text::CSV, Text::CSV_XS
 =status show
-=original how to read a csv file using perl
+=original how-to-read-a-csv-file-using-perl
 =books beginner_book
 =author szabgab
 =translator leprevost
