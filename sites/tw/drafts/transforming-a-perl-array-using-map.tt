@@ -61,7 +61,7 @@ if ($is_invited{$visitor}) {
 print Dumper \%is_invited;
 </code>
 
-This is the output of the <hl>Dumper</hl> call:
+下面是 <hl>Dumper</hl> 輸出的結果：
 
 <code lang="perl">
 $VAR1 = {
