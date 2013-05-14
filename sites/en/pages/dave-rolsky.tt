@@ -561,6 +561,89 @@ the Moose training he runs at YAPC::NA. (19:19 min)
 
   <span class="transcript-timeindex">10:29</span>
 
+GS: And you mentioned this event you lead-organized, right?  Is there
+any programming involved in that?
+
+DR: Not too much.  I hate to admit it.  You know what programming
+there is?  Working on Wordpress, and tweaking Wordpress templates, and
+writing PHP code, which just - it's unpleasant but necessary.
+Wordpress is [10:53], uh, usable.  It works pretty well for what we're
+doing, which is a small CMS with a little bit of blogging.  It's a
+shame there's no comparable Perl project that would [11:07] really do
+what we want, but writing a Perl project just to run our web site is
+probably out of the scope of putting on a veg-fest.  [garbled] [11:19]
+There's sometimes little programs to do data analysis and stuff like
+that.  I'm definitely one of the more geeky activists I know.  I try
+to use my programming wherever I can.
+
+GS: [11:29] The point is that, myself, I think, almost all of the
+programming I've done is for other programmers.  It's not from the
+real world.  It's not solving the real problems, at least not
+directly.
+
+DR: [11:43] That's definitely what I put on CPAN, I think.  It's like
+libraries for other people to use in their [garbled - programming?]
+
+GS: [11:49] Yeah.  Most of the CPAN is there for that, but I think
+it's much more interesting -- it's probably a totally different thing
+if you can go and solve some real world problem and use the tools that
+you have.  That's why I was interested in that.  [12:15] OK.  That's
+your open source.  What's you business or work thing?
+
+DR: [12:20] So I work for a company called MaxMind.  It's a pretty
+small company, I can't remember how many people right now, 15, 18.  If
+people have heard of the GeoIP database, we produce that.  And we also
+have a transaction fraud detection service that's built on top of
+that.  [12:40] and GeoIP is available both as downloadable databases
+and web services.  So those are kindof our two main things: the GeoIP
+stuff and then the fraud detection.  [12:49] And so I work for them.
+We have, I think, 5 developers working on our various products.  Yeah,
+that's what I do full time.  It's pretty good.  I like working there.
+We get to release free software.  We use tons of free software
+internally.  So yeah, I enjoy it.
+
+GS: [13:09] Yeah, I used this module.  I'd still like to use more of
+it, I think.  But if I remember correctly, only part of the database
+can be downloaded freely, at least, right?  Like more generic information.
+
+DR: [13:25] There's a couple free downloads, which are kindof a subset
+of the full data, and then there's more stuff you can pay for to
+subscribe to, and then there's even more stuff if you want to
+subscribe to the web service.  So there's kindof three tiers,
+basically.
+
+GS: [13:43] But you say that this company is using Perl mostly, right?
+
+DR: [13:46] Oh yeah.  I don't know what percentage.  The vast majority
+of our code is in Perl.  We have a little bit of C code and C++ code
+for some of the things we needed to make fast, but yeah, the vast
+majority is.  All of the back end stuff is basically, all the web
+server stuff, most of the database generation, is in Perl.
+
+GS: [14:09] Are they located in where you live, or do you work
+remotely?
+
+DR: [14:15] Pretty much the whole dev team is remote.  Even the people
+who are at the office, there's only a couple of them, so they still
+have to effectively be remote.  The company is located in Waltham
+Massetutets (SPELL).  But yeah, the whole dev team is remote.  One
+person who is on my team besides me people might know is Olaf Alders,
+who is one of the guys behind metacpan, so we hired him recently.
+He's been great to work with.  It's definitely a real Perl shop.
+
+GS: [14:44] Interesting.  So now, there is the Moose things.
+
+DR: [14:53] Moo?  Did you say Moo or Moose?
+
+GS: [14:55] Moose.  Moose.  What is the Moose class?  You're going to run training at YAPC.  Who is it for?
+
+DR: [15:13]
+
+
+
+
+
+
 </div>
 
 <div id="text">
