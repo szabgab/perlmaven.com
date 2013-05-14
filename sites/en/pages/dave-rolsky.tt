@@ -636,9 +636,66 @@ GS: [14:44] Interesting.  So now, there is the Moose things.
 
 DR: [14:53] Moo?  Did you say Moo or Moose?
 
-GS: [14:55] Moose.  Moose.  What is the Moose class?  You're going to run training at YAPC.  Who is it for?
+GS: [14:55] Moose.  Moose.  What is the Moose class?  You're going to
+run training at YAPC.  Who is it for?
 
-DR: [15:13]
+DR: [15:13] Good question.  The class I'm doing is Intro to Moose, and
+it's basically for people who already know perl -- it's not an Intro
+to Perl-type class -- and hopefully, at least, have some basic
+familiarity with object orientation principles, because I'm not going
+to really cover that too much either.  But really, its if you want to
+learn how Moose works.  You've seen it in other people's code, you've
+heard about it, you want to start using it for your stuff, I will
+teach you all the Moose principles, all the features it has.  It's a
+very interactive class, so what I do is I give a lecture section, that
+will last 20-40 minutes, and then there is a series of exercises that
+the students do, and the exercises are written.  You write some code,
+and I've written tests for your code.  And you've run my test suite
+against your code, and once your test suite passes, you know you've
+done the exercise right.  It tries to give you a lot of feedback in
+the test about what's not done yet.  [16:21] I've given the class many
+times before.  Students really seem to like that format of how the
+exercises work.  I think it's good, because it forces you -- it's one
+thing to listen to me talk, but it's much more useful to be forced to
+actually use the things that I'm talking about.
+
+GS: [16:37] Yeah.  To do the exercises is definitely a good thing
+here.
+
+DR: [16:41] I'll also mention Steven Little's class -- maybe you'll
+interview him too -- he's doing an advanced Moose class the next day,
+which will go more into depth on some of the Moose features, and also
+cover maybe a bit more of how to use Moose well, how to use certain
+features appropriately, how to mix features together, whereas my class
+is more of like here's the basics of what you can do, and not get too
+far into here's how to do it really optimally.  I think the classes
+will compliment each other nicely, so if people want to take both I
+think that [garbled].
+
+GS: [17:15] Ok, that's great.  So thank you for the interview.  Would
+you like to say some call to action or whatever?
+
+DR: [17:25] Call to action?
+
+GS: [17:27] How people can get involved in Perl, or your stuff,
+helping your stuff?
+
+DR: [17:34] If they want to get involved in Perl, I think the Perl
+community really spends a lot of time on IRC, so, if you join one of
+the channels on irc.perl.org, that's a good way to get involved.  If
+you're interested in Moose, the #moose channel is quite active, and
+you can get help with Moose, both Moose and Moo are discussed on that
+channel, so that's a great way, if you want to get involved.  Anything
+Moose related, that's the place to go.  [18:06] If people want to help
+with some of my modules, there are a lot of bug reports, sadly, for
+them in rt.cpan.org, so that's always a good place to start if you
+want to fix some bugs.  I'm more than happy to look at patches.  I
+will warn people, sometimes I'm kindof slow to respond.  I tend to
+have a lot of stuff going on.  I felt guilty about it, but it's not
+that I'm ignoring you.  And feel free to poke me.  If you send a path
+and I haven't looked at it in a couple weeks, if you nag me politely,
+(politely, that's the key), if you nag me politely, I will respond,
+because then I'll feel guilty.  [18:40]
 
 
 
