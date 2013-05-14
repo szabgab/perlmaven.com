@@ -1,11 +1,9 @@
-﻿=title 使用map变换Perl数组
+=title Transforming a Perl array using map
 =timestamp 2013-04-25T10:45:56
 =indexes map, transform, list, array
 =status show
-=original transforming-a-perl-array-using-map
 =books advanced_book
 =author szabgab
-=translator herolee
 =index 1
 =archive 1
 =feed 1
@@ -86,7 +84,7 @@ In this code we don't really care about the values of the hash elements,
 other than the fact that they should evaluate to true in Perl.
 
 This solution is only interesting if you do repeated look-ups on a large
-set of values. (The exact meaning of "large" might depend on the system.)
+set of values. (The exact meaing of "large" might depend on the system.)
 Otherwise <hl>any</hl> or even <hl>grep</hl> will do it.
 
 As you can see, in this example, for every element in the original array,
@@ -108,7 +106,7 @@ Foo 1 Bar 1 Baz 1
 <h2>Fat arrow</h2>
 
 In case you are wondering <hl>=></hl> is called the <b>fat arrow</b> or <b>fat comma</b>. It basically acts
-as a regular comma <hl>,</hl> with an exception that is not relevant in our case. (There is a description
+as a regular comma <hl>,</hl> with an exectption that is not relevant in our case. (There is a description
 of it in the article about <a href="/perl-hashes">Perl hashes</a>.)
 
 

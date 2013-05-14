@@ -11,7 +11,7 @@ FORMAT
 =======
 The format has evolved from POD, HTML and Docbook. It is now a mess. I know. I'll have to clean that up.
 
-The overview:
+Nevertheless the overview:
 
 In the header there are
 
@@ -33,7 +33,7 @@ is displayed on the front pages and is included in the RSS/Atom feed.
 
 `<hl></hl>` stands for highlight and usually code-snippets inside the text are marked with these.
 
-`<b></b>` is usde to mark other imporant pieces. 
+`<b></b>` is used to mark other imporant pieces. 
 
 Code snippets are wrapped in 
 
@@ -42,22 +42,17 @@ Code snippets are wrapped in
 
 
 
-CONTRIBUTIONS
-==============
-
-(both article writers and translators, please read  option 2 here: 
-http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
-and add the perlmaven.com site to the list of where you contribute.
-Add an 128x128 image of you to the img/ folder and an entry for yourself
-in the authors.txt file of your language.
+Add an 128x128 image of you to the sites/en/img/ folder and an entry for yourself
+in the authors.txt file in the root of the repository.
 
 
 Mailing list
--------------
+=============
 
 There is an invitation only, but publicly archived mailing list
 for the the people who would like to contribute to the Perl Maven
 site. A couple of ways to contribute:
+
 - translate an article to a language
 - proofreading in any language (including English)
 - promote the articles in one or more languages
@@ -150,7 +145,7 @@ The moderator also has to make sure that the comments stay civil and not hesitat
 irrelevant or offending comments.
 
 Getting started with the translation
-------------------------------------
+=====================================
 * Sign up to Github, configure Git on your computer (name, email)
 * Fork the https://github.com/szabgab/perl5maven.com repository and clone the fork to your computer
 * Check on https://meta.wikimedia.org/wiki/List_of_Wikipediasi what sould be the hostname for the language
@@ -161,9 +156,11 @@ Getting started with the translation
   or as                    sites/CC/done/TRANSLATD-BUT-TRANSLITERATED-TITLE.tt
   as is acceptable in other sites in your language.
 * Add =original and =translator entries to the translated file
-* Add yourself to the sites/CC/authors.txt file and add a picture of yourself to the sites/CC/img/ folder.
+* Add yourself to the authors.txt file and add a 128x128 picture of yourself to the sites/en/img/ folder.
+* Please read  option 2 here: http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
+   and add the perlmaven.com site to the list of where you contribute.
 * Update sites/CC/pages/perl-tutorial.tt to include the page in the commented-out section.
-* push your changes to your forked repository and send a pull request
+* Push your changes to your forked repository and send a pull request
 
 
 PROMOTION

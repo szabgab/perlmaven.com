@@ -1,9 +1,11 @@
-=title Trasformare un array Perl con map
+=title Trasformare un array con map
 =timestamp 2013-04-25T10:45:56
 =indexes map, transform, list, array
 =status show
+=original transforming-a-perl-array-using-map
 =books advanced_book
 =author szabgab
+=translator grubert65
 =index 1
 =archive 1
 =feed 1
@@ -12,7 +14,7 @@
 
 =abstract start
 
-La funzione <hl>map</hl> di Perl fornisce un modo semplice per trasformare una
+La funzione <hl>map</hl> fornisce un modo semplice per trasformare una
 lista di valori in un'altra lista di valori. Di solito questa trasformazione ritorna lo stesso 
 numero di valori, anche se è sempre possibile generare una lista con un numero di valodi diverso.
 
