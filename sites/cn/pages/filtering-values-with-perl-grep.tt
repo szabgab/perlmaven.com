@@ -21,7 +21,7 @@
 
 <hl>grep</hl>函数有两个参数。一个代码块和一个列表。
 
-对于列表中的每个元素，它的值会被赋到<hl>$_</hl>（<a href="/the-default-variable-of-perl">Perl的标量默认值</a>）, 然后执行代码块。如果代码快的返回值是<hl>false</hl>，相应值被丢弃。如果代码块返回值是<hl>true</hl>, 相应值会作为返回值之一。
+对于列表中的每个元素，它的值会被赋到<hl>$_</hl>（<a href="/the-default-variable-of-perl">Perl的标量默认值</a>）, 然后执行代码块。如果代码块的返回值是<hl>false</hl>，相应值被丢弃。如果代码块返回值是<hl>true</hl>, 相应值会作为返回值之一。
 
 
 注意：代码块和第二个参数间没有逗号！
