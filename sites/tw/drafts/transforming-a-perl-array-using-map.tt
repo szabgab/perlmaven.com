@@ -1,9 +1,11 @@
-=title Transforming a Perl array using map
+=title 使用 map 來轉換 Perl 陣列
 =timestamp 2013-04-25T10:45:56
 =indexes map, transform, list, array
 =status show
+=origin transforming-a-per-array-using-map
 =books advanced_book
 =author szabgab
+=translator H2CHANG
 =index 1
 =archive 1
 =feed 1
@@ -12,27 +14,20 @@
 
 =abstract start
 
-The <hl>map</hl> function of Perl provides a simple way to transform a
-list of values to another list of values. Usually this is a one-to-one
-transformation but in general the resulting list can be also shorter or
-longer than the original list.
+<hl>map</hl> 函式提供的一個簡單的方法可以把一個串列轉換成另一個串列。通常這種方法是一對一的轉換，不過最後的串列可能比原本的串列要來的短或是來的長，
+這兩種都有可能。
 
 =abstract end
 
-We saw that <a href="/filtering-values-with-perl-grep">grep of Perl</a> is a generalization of the
-UNIX grep command. It selects some or all of the elements from the
-original list, and returns them unchanged.
+<a href="/filtering-values-with-perl-grep"> Perl 的 grep </a> 是 UNIX 指令中 grep 的通式。它從原本串列中選出所要的元素，然後傳回這些元素，而不改變它們的值。
 
-<hl>map</hl>, on the other hand, is used when you would like to make changes
-to the values of the original list.
 
-The syntax is similar. You provide a block of code and a list of values: an array
-or some other expression that returns a list of values.
-For every value in the original list, the value is placed in <hl>$_</hl>,
-<a href="/the-default-variable-of-perl">the default variable of Perl</a>, and the block
-is executed. The resulting values are passed on, to the left-hand side of the assignment.
+而 <hl>map</hl> 則是用來改變這些原本元素的值。
 
-<h2>map for simple transformation</h2>
+這兩各函式語法是類似的。你提供一段程式碼以及串列值，然後回傳串列值。原本串列的值則放在 <hl>$_</hl> 裡，
+<a href="/the-default-variable-of-perl"> Perl 預設變數 </a>，然後執行程式碼。回傳值則被傳到左邊的變數。
+
+<h2>使用 map f來做簡單的轉換</h2>
 
 <code lang="perl">
 my @numbers = (1..5);
@@ -41,18 +36,14 @@ my @doubles = map {$_ * 2} @numbers;
 print "@doubles\n";       # 2 4 6 8 10
 </code>
 
-<h2>Building fast look-up table</h2>
+<h2>建立一個快速的查看表</h2>
 
-Sometimes we have a list of values and during the execution of the code
-we need to check if a given value is within this list. We can use
-<a href="/filtering-values-with-perl-grep.html">grep</a> every time, to check if the current
-value is in the list. We can even use the <a href="/filtering-values-with-perl-grep.html">any</a>
-function from <a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>,
-but it can be much more readable and faster if we used a hash for lookup.
+有時候我們想要知道某一串列是否位在給定的串列中。我們可以使用
+<a href="/filtering-values-with-perl-grep.html">grep</a> 來檢查。甚至我們可以使用 <a href="/filtering-values-with-perl-grep.html">any</a>
+這個函式，來自 <a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>。如果我們使用雜湊方式來查看的話，使用 map 可讀性比較好而且更快。
 
-We need to create a hash once, where the keys are the elements of the array,
-and the values of the hash are all 1s. Then, a simple hash lookup
-can replace the <hl>grep</hl>.
+
+我們需要先建立一個雜湊表，它的鍵值就是陣列的元素，而雜湊的值都是 1s。這個簡單的雜湊表可以代替 <hl>grep</hl>。
 
 <code lang="perl">
 use Data::Dumper qw(Dumper);
@@ -70,7 +61,7 @@ if ($is_invited{$visitor}) {
 print Dumper \%is_invited;
 </code>
 
-This is the output of the <hl>Dumper</hl> call:
+下面是 <hl>Dumper</hl> 輸出的結果：
 
 <code lang="perl">
 $VAR1 = {
@@ -80,15 +71,12 @@ $VAR1 = {
         };
 </code>
 
-In this code we don't really care about the values of the hash elements,
-other than the fact that they should evaluate to true in Perl.
+在這個方法中我們不在意雜湊的值，只要它們都為真就好。
 
-This solution is only interesting if you do repeated look-ups on a large
-set of values. (The exact meaing of "large" might depend on the system.)
-Otherwise <hl>any</hl> or even <hl>grep</hl> will do it.
+這個方法只有在你有很大的資料才比較有用。(所謂很大的資料要看你的系統而定。)
+否則 <hl>any</hl> 或是 <hl>grep</hl> 就很好用了。
 
-As you can see, in this example, for every element in the original array,
-<hl>map</hl> returned two values. The original value and 1.
+從上面的例子中，<hl>map</hl> 回傳兩個值：一個是原本陣列的元素，一個是 1。
 
 <code lang="perl">
 my @names = qw(Foo Bar Baz);
@@ -96,18 +84,16 @@ my @invited = map {$_ => 1} @names;
 print "@invited\n"
 </code>
 
-will print:
+會印出：
 
 <code>
 Foo 1 Bar 1 Baz 1
 </code>
 
 
-<h2>Fat arrow</h2>
+<h2>胖箭頭(=>)</h2>
 
-In case you are wondering <hl>=></hl> is called the <b>fat arrow</b> or <b>fat comma</b>. It basically acts
-as a regular comma <hl>,</hl> with an exectption that is not relevant in our case. (There is a description
-of it in the article about <a href="/perl-hashes">Perl hashes</a>.)
+<hl>=></hl> 叫作 <b>胖箭頭</b> 或是 <b>胖逗號</b>。它基本上跟逗號的意義差不多，不過有個例外，不在這裡描述，請見 <a href="/perl-hashes">Perl hashes</a>。
 
 
 <h2>Complex expressions in map</h2>
