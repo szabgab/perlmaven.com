@@ -53,7 +53,7 @@ print "Hello $name,\nhow are you $time?\n";
 The output will be
 
 <code>
-Hello $name,
+Hello Foo,
 how are you today?
 
 </code>
