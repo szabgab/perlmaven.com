@@ -1,5 +1,5 @@
 =title Strings in Perl: quoted, interpolated and escaped
-=timestamp 2013-05-15t11:45:03
+=timestamp 2013-05-15T11:45:03
 =indexes strings, ', ", \, escape character, interpolation, quote, embedded characters, q, qq
 =status show
 =books beginner_book
@@ -13,7 +13,7 @@
 =abstract start
 
 Understanding how strings work is important in every programming language, but in Perl they are
-part of essence of the language. Especially if you consider that one of the backronimes of Perl
+part of the essence of the language. Especially if you consider that one of the backronimes of Perl
 is <b>Practical Extraction and Reporting Language</b> and for that you need to use lots of strings.
 
 =abstract end
