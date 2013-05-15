@@ -110,7 +110,7 @@ my $good_email  = "$name\@bar.com";
 print $good_email; # foo@bar.com
 </code>
 
-You can alway <b>escape the special characters, in this case the at-mark <hl>@</hl> by using the so-called <b>escape character</b>
+You can alway <b>escape</b> the special characters, in this case the at-mark <hl>@</hl> by using the so-called <b>escape character</b>
 which is the back-slash <hl>\</hl> character.
 
 <h2>Embedding dollar $ sign in double quoted strings</h2>
