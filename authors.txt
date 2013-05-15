@@ -22,7 +22,9 @@ tudorconstantin;Tudor Constantin;tudorconstantin.jpg;https://plus.google.com/116
 paologianrossi;Paolo Gianrossi;paologianrossi.png;https://plus.google.com/106669867472720382849
 yongbin;Yongbin Yu;yongbin.jpg;https://plus.google.com/111269003708517945935
 herolee;Yingjie Li;herolee.png
-thalhammer;Jeffrey Thalhammer;thalhammer.png
+thalhammer;Jeffrey Thalhammer;thalhammer.png;https://plus.google.com/114605391649378336888
 vti;Вячеслав Тихановский;vti.png;https://plus.google.com/109117812087018133975
 enrique;Enrique Nell;enrique.png;https://plus.google.com/102480927985449768119
 grubert65;Marco Masetti;marcomasetti.png;https://plus.google.com/105304174562920013376
+H2CHANG;Hsin-Hsiung Chang;
+gypark;Geunyoung Park;gypark.jpg;https://plus.google.com/102624623438100467935

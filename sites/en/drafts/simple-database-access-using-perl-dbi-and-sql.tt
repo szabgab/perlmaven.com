@@ -1,8 +1,7 @@
 =title Simple Database access using Perl DBI and SQL
 =timestamp 2013-01-17T14:45:56
-=tags Perl, SQL, DBI
 =indexes SQL, DBI, DBD::SQLite
-=status draft
+=status show
 =author szabgab
 =index 1
 =archive 1
@@ -12,27 +11,29 @@
 
 =abstract start
 
-While in most fields Perl adheres to the concept of TMTOWDI,
-in accessing relation databases Perl has a de-facto standard
+While in most fields Perl adheres to the concept of
+<a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">TMTOWTDI</a>,
+in accessing relational databases Perl has a de-facto standard library
 called DBI or <b>Database independent interface for Perl</b>.
 
 =abstract end
 
 <h2>Architecture</h2>
 
-The Perl scripts use DBI which in turn uses the appropriate
-<b>Database Driver</b> (e.g. [dist://DBD::Oracle]
+The Perl scripts use DBI, which in turn uses the appropriate
+<b>Database Driver</b> (e.g. <a href="https://metacpan.org/module/DBD::Oracle">DBD::Oracle</a>
 for <a href="http://www.oracle.com/">Oracle</a>,
-[dist://DBD::Pg] for <a href="http://www.postgresql.org/">PostgreSQL</a>
-and [dist://DBD::SQLite] to access <a href="http://sqlite.org/">SQLite</a>).
+<a href="https://metacpan.org/module/DBD::Pg">DBD::Pg</a> for <a href="http://www.postgresql.org/">PostgreSQL</a>
+and <a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> to access <a href="http://sqlite.org/">SQLite</a>).
 
 Those drivers are compiled together with the C client libraries
-of the respective database engine. In case of SQLite, of course all the
+of the respective database engines. In case of SQLite, of course all the
 database engine gets embedded in the perl application.
 
 It is very hard to improve on the lovely ASCII-art that comes
-with the documentation of [dist://DBI] so let me reproduce it here:
+with the documentation of <a href="https://metacpan.org/module/DBI">DBI</a> so let me reproduce it here:
 
+<pre>
              |<- Scope of DBI ->|
                   .-.   .--------------.   .-------------.
   .-------.       | |---| XYZ Driver   |---| XYZ Engine  |
@@ -44,7 +45,7 @@ with the documentation of [dist://DBI] so let me reproduce it here:
   |methods|       | |... Other drivers
   `-------'       | |...
                   `-'
-
+</pre>
 
 <h2>Simple example</h2>
 
@@ -53,29 +54,33 @@ very easy for you to try them on your computer.
 (e.g All versions of <a href="http://dwimperl.com/">DWIM Perl</a> already come
 with the necessary modules.)
 
-  #!/usr/bin/perl
-  use strict;
-  use warnings;
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
 
-  use DBI;
+use DBI;
 
-  my $dbfile = "sample.db";
+my $dbfile = "sample.db";
 
-  my $dsn      = "dbi:SQLite:dbname=$dbfile";
-  my $user     = "";
-  my $password = "";
-  my $dbh = DBI->connect($dsn, $user, $password, {
-     PrintError       => 0,
-     RaiseError       => 1,
-     AutoCommit       => 1,
-     FetchHashKeyName => 'NAME_lc',
-  });
+my $dsn      = "dbi:SQLite:dbname=$dbfile";
+my $user     = "";
+my $password = "";
+my $dbh = DBI->connect($dsn, $user, $password, {
+   PrintError       => 0,
+   RaiseError       => 1,
+   AutoCommit       => 1,
+   FetchHashKeyName => 'NAME_lc',
+});
 
-  $dbh->disconnect;
+# ...
 
+$dbh->disconnect;
+</code>
 
-We load DBI but we do <b>not</b> explicitly load the database driver.
-That will be done by DBI. The DSN (Data Source Name) is very straight forward.
+We load DBI but we do <b>not</b> explicitly load the database driver. That will be done by DBI.
+
+The <b>DSN (Data Source Name)</b> (in the $dsn variable) is very straight forward.
 It contains the type of the database. That will be the clue to DBI which DBD to load.
 In case of SQLite, the only thing we really need is the path to the database file.
 
@@ -85,35 +90,38 @@ relevant at all for SQLite.
 The last parameter of the connect call is a reference to a hash containing
 some attributes I like to set.
 
-The DBI->connect call returns a <b>database handle object</b> that usually we store in a variable
-called <hl>$dbh</hl>.
+The DBI->connect call returns a <b>database handle object</b> that usually we store
+in a variable called <hl>$dbh</hl>.
 
 The call to <b>disconnect</b> from the database is optional as it
 will automatically be called when the variable <hl>$dbh</hl> goes out
-of scope but it having it might be a clear indication that you are done with the
-database.
+of scope, but it having it might be a clear indication for
+the next programmer dealing with this code, that you are done with the database.
 
 <h2>CREATE TABLE</h2>
 
 Of course having a connection is not enough. We need to be able to fetch data from the
-database or insert data into the database but for our example to work first we
+database, or insert data into the database, but for our example to work first we
 actually need to create the tables of the database.
 
 In this case we can do this with a single command:
 
-  my $sql = <<'END_SQL';
-  CREATE TABLE people (
-    id       INTEGER PRIMARY KEY,
-    fname    VARCHAR(100),
-    lname    VARCHAR(100),
-    email    VARCHAR(100) UNIQUE NOT NULL,
-    password VARCHAR(20)
-  )
-  END_SQL
-  
-  $dbh->do($sql);
+<code lang="perl">
+my $sql = <<'END_SQL';
+CREATE TABLE people (
+  id       INTEGER PRIMARY KEY,
+  fname    VARCHAR(100),
+  lname    VARCHAR(100),
+  email    VARCHAR(100) UNIQUE NOT NULL,
+  password VARCHAR(20)
+)
+END_SQL
 
-The first one is just a here document of an SQL statement to CREATE TABLE.
+$dbh->do($sql);
+</code>
+
+The first statement is just a <a href="/here-document">here document</a> of an
+SQL statement to CREATE TABLE.
 Then we call the <hl>do</hl> method of the database handle which will send the
 SQL statement to the database.
 
@@ -121,44 +129,49 @@ SQL statement to the database.
 
 Now let's see the real thing, inserting data:
 
-  my $fname = 'Foo';
-  my $lname = 'Bar',
-  my $email = 'foo@bar.com';
-  $dbh->do('INSERT INTO people (fname, lname, email) VALUES (?, ?, ?)',
-    undef,
-    $fname, $lname, $email);
+<code lang="perl">
+my $fname = 'Foo';
+my $lname = 'Bar',
+my $email = 'foo@bar.com';
+$dbh->do('INSERT INTO people (fname, lname, email) VALUES (?, ?, ?)',
+  undef,
+  $fname, $lname, $email);
+</code>
 
-To insert a row we call the <hl>$dbh->do</hl> method again but instead of passing
-the actual data, we put question-marks <hl>?</hl> as place-holders.
+To insert a row we call the <hl>$dbh->do</hl> method again, but instead of passing
+the actual data, we put question-marks <hl>?</hl> as <b>place-holders</b>.
 
 The SQL statement is followed by the word <hl>undef</hl>.
 That's actually the place of a hash-reference providing
 parameters to this specific call, similar to the attributes
-passed to the <hl>connect</hl> method but I think it is rarely used.
+passed to the <hl>connect</hl> method, but I think it is rarely used in these
+statements.
 
-That is followed by the actual values that go in place of the the place-holders.
+The <hl>undef</hl> is followed by the actual values that go in place of the the place-holders.
 
 As you can see we did not have to put the place-holders in any kind of quotes
 nor did we have to somehow convert the values. DBI did it for us.
 
 This helps us avoid
 <a href="http://en.wikipedia.org/wiki/Sql_injection">SQL injection</a> attacks.
-Even if you meet someone called <a href="http://xkcd.com/327/">Bobby Tables</a>.
+Even if you meet someone called <a href="http://bobby-tables.com/">Bobby Tables</a>.
 
 <h2>UPDATE</h2>
 
 For updating some data in the database we also use the <hl>do</hl> method.
 
-  my $password = 'hush hush';
-  my $id = 1;
-  
-  $dbh->do('UPDATE people SET password = ? WHERE id = ?',
-    undef,
-    $password,
-    $id);
+<code lang="perl">
+my $password = 'hush hush';
+my $id = 1;
+
+$dbh->do('UPDATE people SET password = ? WHERE id = ?',
+  undef,
+  $password,
+  $id);
+</code>
 
 Nothing special here. An SQL statement with some place-holders. <hl>undef</hl>
-instead of the extra attributes and the parameters to be used in place of
+instead of the extra attributes, and the parameters to be used in place of
 the place-holders.
 
 <h2>SELECT</h2>
@@ -168,8 +181,8 @@ statement can return a lot of rows and a lot of values in each row we cannot use
 a simple call to the <hl>do</hl> method.
 
 Instead, there are several ways to fetch the data. I'll show here two.
-For both we have 3 steps: <hl>prepare</hl> the SQL statement.
-<hl>execute</hl> the statement with specific data and <hl>fetch</hl> the rows.
+For both we have 3 steps: <hl>prepare</hl> the SQL statement,
+<hl>execute</hl> the statement with specific data, and <hl>fetch</hl> the rows.
 
 From these, the <hl>prepare</hl> statement can be shared by - assuming the queries
 only differ in the data we pass to them. We create an SQL statement using
@@ -194,17 +207,19 @@ return these names of the fields in different cases we configured our database h
 to make sure they - the names of the fields - will always converted to lower case.
 (That's what the <hl>FetchHashKeyName</hl> parameter did, when connecting to the database.)
 
-  my $sql = 'SELECT fname, lname FROM people WHERE id > ? AND id < ?';
-  my $sth = $dbh->prepare($sql);
-  $sth->execute(1, 10);
-  while (my @row = $sth->fetchrow_array) {
-     print "fname: $row[0]  lname: $row[1]\n";
-  }
+<code lang="perl">
+my $sql = 'SELECT fname, lname FROM people WHERE id > ? AND id < ?';
+my $sth = $dbh->prepare($sql);
+$sth->execute(1, 10);
+while (my @row = $sth->fetchrow_array) {
+   print "fname: $row[0]  lname: $row[1]\n";
+}
 
-  $sth->execute(12, 17);
-  while (my $row = $sth->fetchrow_hashref) {
-     print "fname: $row->{fname}  lname: $row->{lname}\n";
-  }
+$sth->execute(12, 17);
+while (my $row = $sth->fetchrow_hashref) {
+   print "fname: $row->{fname}  lname: $row->{lname}\n";
+}
+</code>
 
 
 <h2>Exercise</h2>
@@ -221,14 +236,4 @@ If you have any question, feel free to ask below.
 <h2>Thanks</h2>
 
 to sigzero for correcting a bug in the examples!
-
-<h2>Subscribe to my mailing list</h2>
-
-If you are interested getting updates when I post new articles,
-please subscribe to my newsletter:
-
-<TMPL_INCLUDE name="incl/subscribe.tmpl">
-
-
-
 

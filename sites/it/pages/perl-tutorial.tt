@@ -32,6 +32,7 @@
 <li>Warning e messaggi d'errori comuni<br />
 <ul>
   <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+  <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
 </ul>
 <li><a href="/undef-e-defined-in-perl">undef e defined in Perl</a></li>
 </ol>

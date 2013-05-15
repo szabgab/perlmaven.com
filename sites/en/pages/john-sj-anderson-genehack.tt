@@ -14,7 +14,7 @@
 
 =abstract start
 
-A biologist turned sysadmin, turned to DevOps engineer tells us how to choose which language to learn: Perl, Python or Ruby?
+A biologist turned sysadmin, turned to DevOps engineer, turned to programmer, tells us how to choose which language to learn: Perl, Python or Ruby?
 (20:07 min)
 
 =abstract end
@@ -28,11 +28,11 @@ A biologist turned sysadmin, turned to DevOps engineer tells us how to choose wh
 <div id="text">
 <h2>Show notes</h2>
 <ul>
-  <li><a href="http://genehack.org/">John SJ Anderson, genehack</a></li>
+  <li><a href="http://genehack.org/">John SJ Anderson, genehack</a> (<a href="https://twitter.com/genehack">@genehack</a>)</li>
   <li>He works at <a href="http://www.iinteractive.com/">Infinity Interactive</a></li>
   <li><a href="http://dc.pm.org/">DC Perl Mongers</a>, and <a href="http://thelackthereof.org/">Brock Wilcox (awwaiid)</a> took over the leadersip of DC Perl Mongers when genehack joined it.</li>
   <li><a href="http://pghpw.org/">The Pittsburgh Perl Workshops</a></li>
-  <li><a href="http://metacpan.org/module/Git::Wrapper">Git::Wrapper</a>the module genehack inherited from <a href="http://chris.prather.org/">Chris Prather (perigrin)</a></li>
+  <li><a href="http://metacpan.org/module/Git::Wrapper">Git::Wrapper</a> the module genehack inherited from <a href="http://chris.prather.org/">Chris Prather (perigrin)</a> (originally started by <a href="https://metacpan.org/author/HDP">Hans Dieter Pearcey (HDP)</a></li>
   <li><a href="http://metacpan.org/author/GENEHACK">genehack</a> on CPAN</li>
   <li><a href="http://www.bioperl.org/">BioPerl</a></li>
   <li><a href="https://github.com/genehack">Github</a>, on <a href="https://metacpan.org/author/GENEHACK">CPAN</a></li>

@@ -52,6 +52,8 @@
 	<li><a href="/filtering-values-with-perl-grep">使用Perl的grep过滤值</a></li>
 	<li><a href="/transforming-a-perl-array-using-map">使用map转换数组</a></li>
 	<li><a href="/object-oriented-perl-using-moose">使用Moose的面向对象编程</a></li>
+	<li><a href="/scope-of-variables-in-perl">Perl变量的作用域</a></li>
+	<li><a href="/scalar-variables">标量</a></li>
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
