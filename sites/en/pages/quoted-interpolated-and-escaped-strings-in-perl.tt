@@ -18,7 +18,7 @@ is <b>Practical Extraction and Reporting Language</b> and for that you need to u
 
 =abstract end
 
-Strings can be placed either between single quotes <hl>'</hl> or double quotes <hl>"</hl> and they have slightly different behaviour.
+Strings can be placed either between single quotes <hl>'</hl> or double quotes <hl>"</hl> and they have slightly different behavior.
 
 <h2>Single quoted strings</h2>
 
@@ -39,9 +39,9 @@ Hello $name, how are you?\n
 
 <h2>Double quoted strings</h2>
 
-Strings placed betwen double quotes <hl>"</hl> provide interpolation
+Strings placed between double quotes <hl>"</hl> provide interpolation
 (other variables embedded in the string will be replaced by their content),
-and they also replace the special excape sequences such as <hl>\n</hl> by a real newline
+and they also replace the special escape sequences such as <hl>\n</hl> by a real newline
 and <hl>\t</hl> by a real tab.
 
 <code lang="perl">
@@ -220,7 +220,7 @@ print qq(The "name" is "$name"\n);
 </code>
 
 For the untrained eyes, the qq() might look like a function call, but it is not. <hl>qq</hl> is an operator
-and you'll see in a second what else it can do, but firts let me explain this.
+and you'll see in a second what else it can do, but first let me explain this.
 
 We replace the double-quotes <hl>"</hl> that used to surround the string by the parentheses of the <hl>qq</hl>
 operator. This means the double-quotes are not special any more in this string, so we don't need to escape them.
@@ -237,8 +237,8 @@ print qq(The (name) is "$name"\n);
 </code>
 
 No problem. As long as they are balanced
-(that is, having the same number of opening <hl>(</hl>, and closing <hl>)</hl> parenthese,
-and always having the opening parenthese before the corresponding closing parenthese) Perl can
+(that is, having the same number of opening <hl>(</hl>, and closing <hl>)</hl> parentheses,
+and always having the opening parentheses before the corresponding closing parentheses) Perl can
 understand it.
 
 I know. You'll want to break it now, by putting a closing before the opening:
@@ -278,7 +278,7 @@ The )name( is "foo"
 (even though I have not idea why would I want to print something like that...)
 
 Then <a href="http://perl.plover.com/yak/presentation/samples/slide027.html">the guy from the second row</a> raises his hand,
-and ask what if you want both parenthese and curly braces in your string, <b>and</b> you want them imbalanced?
+and ask what if you want both parentheses and curly braces in your string, <b>and</b> you want them imbalanced?
 
 You mean like this, right?
 
@@ -296,7 +296,7 @@ The )name} is "foo"
 </code>
 
 
-... there muste be a use for the square brackets too, right?
+... there must be a use for the square brackets too, right?
 
 
 <h2>q, the single-q operator</h2>
