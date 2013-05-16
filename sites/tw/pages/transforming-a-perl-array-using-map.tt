@@ -27,7 +27,7 @@
 這兩各函式語法是類似的。你提供一段程式碼以及串列值，然後回傳串列值。原本串列的值則放在 <hl>$_</hl> 裡，
 <a href="/the-default-variable-of-perl"> Perl 預設變數 </a>，然後執行程式碼。回傳值則被傳到左邊的變數。
 
-<h2>使用 map f來做簡單的轉換</h2>
+<h2>使用 map 來做簡單的轉換</h2>
 
 <code lang="perl">
 my @numbers = (1..5);
