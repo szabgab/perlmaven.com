@@ -1,0 +1,170 @@
+=title $_ the default variable of Perl
+=timestamp 2012-08-14T20:41:51
+=indexes Perl, $_, scalar, default, variable, topic
+=status show
+=origin the-default-variable-of-perl
+=author szabgab
+=translator H2CHANG
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+Perl 有一個怪異的 scalar 變數叫作 <hl>$_</hl>，它叫作
+<hl>預設變數</hl>或是<b>topic</b>。
+
+在 Perl中有許多函式和操作子使用這個變數當作預設變數，比如在沒有明顯參數的時候。一般而言，你應該<b>不會</b>
+在真實的程式碼中看到<hl>$_</hl>。也就是說你不用把 <hl>$_</hl> 明白的寫在程式中。
+
+就是說，這樣就誠如你所想做的。
+
+=abstract end
+
+使用預設變數是很用的方式，不過如果用的不好會降低程式可讀性。
+
+來看看下面這個程式：
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+while (<STDIN>) {
+   chomp;
+   if (/MATCH/) {
+      say;
+   }
+}
+</code>
+
+上面這個程式跟下面程式是一樣的：
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+while ($_ = <STDIN>) {
+   chomp $_;
+   if ($_ =~ /MATCH/) {
+      say $_;
+   }
+}
+</code>
+
+在很小的程式或是很緊密的程式中。我只會寫第一種程式而不寫第二種。
+
+Maybe not even there.
+
+誠如你看到的，在 <hl>while</hl> 迴圈中，檔案中的每一列會被自動讀到 <hl>$_</hl>，而不用再明白的寫在程式中。
+
+如果沒有給予特別參數，<hl>chomp()</hl> 預設就是對 $_ 運算。defaults to work on this variable, if no parameter was given.
+
+正規表達式可以不用明白的給予字串甚至也不用寫 <hl>=~</hl> 這個操作子。如果這樣寫，代表就是對 <hl>$_</hl> 做運算。
+
+Finally <hl>say()</hl>, just as <hl>print()</hl>, would print the content
+of <hl>$_</hl>, if no other parameter was given.
+
+<h2>split</h2>
+
+The second parameter of <hl>split</hl> is the string to be cut in pieces.
+If no second parameter is given, split will cut up the content of <hl>$_</hl>.
+
+<code lang="perl">
+my @fields = split /:/;
+</code>
+
+<h2>foreach</h2>
+
+If we don't supply the name of the iterator variable to <hl>foreach</hl>,
+it will use <hl>$_</hl>.
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+my @names = qw(Foo Bar Baz);
+foreach (@names) {   # puts values in $_
+    say;
+}
+</code>
+
+<h2>Assignment in condition</h2>
+
+There are some cases when we implicitly use <hl>$_</hl> by mistake.
+
+Some experts might use this kind of code deliberately,
+but when this is written by a newbie, or a mere mortal, it is just a bug.
+
+<code lang="perl">
+if ($line = /regex/) {
+}
+</code>
+
+You see, instead of the regex operator: <hl>=~</hl> we used here the plain assignment operator: <hl>=</hl>.
+This is, in fact the same as
+
+<code lang="perl">
+if ($line = $_ =~ /regex/) {
+}
+</code>
+
+It takes the content of <hl>$_</hl>, executes the pattern matching on it,
+and assigns the result to <hl>$line</hl>. Then checks if the content of $line is true or false.
+
+<h2>Explicit $_</h2>
+
+I mentioned earlier I recommend <b>not</b> using <hl>$_</hl> explicitly. Sometimes I see people writing code like this:
+
+<code lang="perl">
+while (<$fh>) {
+  chomp;
+  my $prefix = substr $_, 0, 7;
+}
+</code>
+
+I think, once you use a statement in perl that forces you to explicitly write out <hl>$_</hl>,
+such as <hl>substr</hl> in our case, you should go all the way and use a more meaningful name.
+Even if that means more typing:
+
+<code lang="perl">
+while (my $line = <$fh>) {
+  chomp $line;
+  my $prefix = substr $line, 0, 7;
+}
+</code>
+
+Another bad example I often see:
+
+<code lang="perl">
+while (<$fh>) {
+   my $line = $_;
+   ...
+}
+</code>
+
+This probably happens to people who do not understand the interaction between
+the <hl>while</hl> statement, the read operator on the file handle and <hl>$_</hl>.
+
+This could be written in a more simple way directly assigning to the <hl>$line</hl>
+variable.
+
+<code lang="perl">
+while (my $line = <$fh>) {
+   ...
+}
+</code>
+
+
+<h2>Exceptions</h2>
+
+There are several cases where you can't really avoid, and you have to use <hl>$_</hl>
+explicitly. These are the <a href="/filtering-values-with-perl-grep">grep</a>
+and <a href="/transforming-a-perl-array-using-map">map</a> function, and the
+other similar ones, such as <a href="/filtering-values-with-perl-grep">any</a>.
+
+
