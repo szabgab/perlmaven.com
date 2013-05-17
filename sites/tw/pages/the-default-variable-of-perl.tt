@@ -1,8 +1,8 @@
 =title $_ the default variable of Perl
-=timestamp 2012-08-14T20:41:51
+=timestamp 2013-05-17T10:41:51
 =indexes Perl, $_, scalar, default, variable, topic
 =status show
-=origin the-default-variable-of-perl
+=original the-default-variable-of-perl
 =author szabgab
 =translator H2CHANG
 =index 1

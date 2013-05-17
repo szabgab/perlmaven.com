@@ -1,8 +1,8 @@
 =title 使用 grep 來過濾想要的值
-=timestamp 2012-09-02T18:45:56
+=timestamp 2013-05-17T09:45:56
 =indexes grep, filter, any, List::MoreUtils, <>, glob
 =status show
-=origin filtering-values-with-perl-grep
+=original filtering-values-with-perl-grep
 =author szabgab
 =translator H2CHANG
 =index 1
