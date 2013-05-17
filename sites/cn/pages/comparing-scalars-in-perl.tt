@@ -1,5 +1,5 @@
 =title Perl中标量的比较
-=timestamp 2013-05-01T12:45:56
+=timestamp 2013-05-17T16:12:23
 =indexes eq, ne, lt, gt, le, ge, ==, !=, <, >, <=, >=
 =status show
 =original comparing-scalars-in-perl
@@ -14,7 +14,7 @@
 
 =abstract start
 
-在上节<a href="/perl-tutorial">Perl tutorial</a>介绍了<a href="/scalar-variables">标量</a>，并且看到了数字和字符串之间的转换。我们简单提了一下<b>if</b>条件语句，但是没有看到如何比较两个标量，这一节将会对此进行介绍。
+在上节<a href="/perl-tutorial">Perl教程</a>介绍了<a href="/scalar-variables">标量</a>，并且看到了数字和字符串之间的转换。我们简单提了一下<b>if</b>条件语句，但是没有看到如何比较两个标量，这一节将会对此进行介绍。
 
 =abstract end
 
@@ -88,22 +88,22 @@ if ( 12.0 == 12 ) {
 "foo"  eq "bar"  FALSE
 </code>
 
-So you have to make sure you compare values as you want them to be compared!
+所以，你需要确认值是按照你想要的方式比较的！
 
-The same happens when you compare
-
-<code>
-"foo"  == "" will be TRUE
-</code>
-
-and
+同理：
 
 <code>
-"foo"  eq "" will be FALSE
+"foo"  == "" 返回 TRUE
+</code>
+
+而
+
+<code>
+"foo"  eq "" 返回 FALSE
 </code>
 
 
-This table might be handy to see the results:
+用下面的表格看结果会很方便：
 
 <code>
  12.0   == 12    TRUE
@@ -112,16 +112,14 @@ This table might be handy to see the results:
   2     <   3    TRUE
   2    lt   3    TRUE
  12     >   3    TRUE
- 12    gt   3    FALSE ! (look out, might not be obvious at first)
-"foo"  ==  ""    TRUE  ! (You get warnings if you used the "warnings" pragmata)
+ 12    gt   3    FALSE ! (注意，开始时这个可能不明显)
+"foo"  ==  ""    TRUE  ! (如果使用"warning"指令会发出警告)
 "foo"  eq  ""    FALSE
-"foo"  == "bar"  TRUE  ! (You get warnings if you used the "warnings" pragmata)
+"foo"  == "bar"  TRUE  ! (如果使用"warning"指令会发出警告)
 "foo"  eq "bar"  FALSE
 </code>
 
-Finally an example where people can fall in a trap is when you get some input from the
-user and after carefully chomping off the newline from the end you try to check if the
-given string is empty.
+最后的例子中有一个陷阱，如果你获得一个用户输入，然后小心翼翼的删除换行符，最后检查给定的字符串是否为空。
 
 <code lang="perl">
 use strict;
@@ -132,13 +130,11 @@ print "input: ";
 my $name = <STDIN>;
 chomp $name;
 
-if ( $name == "" ) {   # wrong! you need to use eq instead of == here!
+if ( $name == "" ) {   # 错误！这里你需要使用eq而不是==!
   say "TRUE";
 } else {
   say "FALSE";
 }
 </code>
 
-If you run this script and type in "abc" you will get that it is TRUE,
-as if perl thought "abc" is the same as the empty string
-
+如果执行这个脚本的时候输入"abc"则会返回TRUE，就好象Perl将"abc"看作空字符串处理。
