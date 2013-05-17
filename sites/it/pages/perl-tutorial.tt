@@ -40,6 +40,7 @@
 <b>Liste e Array</b>
 <ol>
   <li><a href="/manipolare-array-in-perl">Manipolare gli array in Perl</a></li>
+  <li><a href="/transforming-a-perl-array-using-map">Trasformare un array con map</a></li>
 </ol>
 
 Per l'originale, visitate il <a href="http://perlmaven.com/perl-tutorial">tutorial Perl in Inglese</a>
