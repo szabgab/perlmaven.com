@@ -55,7 +55,8 @@
 		<li><a href="/scope-of-variables-in-perl">Perl变量的作用域</a></li>
 		<li><a href="/scalar-variables">标量</a></li>
 		<li><a href="/the-default-variable-of-perl">Perl默认变量$_</a></li>
-		<li><a href="/comparing-scalars-in-perl">Perl中标量的比较</a></li>                
+		<li><a href="/comparing-scalars-in-perl">Perl中标量的比较</a></li>
+		<li><a href="/perl-on-the-command-line">Perl命令行</a></li>                
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
