@@ -2,7 +2,7 @@
 =timestamp 2013-05-18T20:00:00
 =indexes warnings, state, __WARN__, %SIG, local
 =status show
-=original how-to-capture-and-save-warnings-in-perl 
+=original how-to-capture-and-save-warnings-in-perl
 =books advanced_book
 =author szabgab
 =translator gypark
