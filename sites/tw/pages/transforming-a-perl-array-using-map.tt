@@ -39,7 +39,7 @@ print "@doubles\n";       # 2 4 6 8 10
 <h2>建立一個快速的查看表</h2>
 
 有時候我們想要知道某一串列是否位在給定的串列中。我們可以使用
-<a href="/filtering-values-with-perl-grep.html">grep</a> 來檢查。甚至我們可以使用 <a href="/filtering-values-with-perl-grep.html">any</a>
+<a href="/filtering-values-with-perl-grep">grep</a> 來檢查。甚至我們可以使用 <a href="/filtering-values-with-perl-grep">any</a>
 這個函式，來自 <a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>。如果我們使用雜湊方式來查看的話，使用 map 可讀性比較好而且更快。
 
 

@@ -46,8 +46,8 @@ print "@doubles\n";       # 2 4 6 8 10
 
 Se abbiamo una lista di valori può capitare, durante l'esecuzione del codice, 
 di voler controllare se un valore è compreso nella lista. Possiamo usare
-<a href="/filtering-values-with-perl-grep.html">grep</a> ogni volta, per cercare se il 
-valore è nella lista. Possiamo anche usare la funzione <a href="/filtering-values-with-perl-grep.html">any</a>
+<a href="http://perlmaven.com/filtering-values-with-perl-grep">grep</a> ogni volta, per cercare se il 
+valore è nella lista. Possiamo anche usare la funzione <a href="http://perlmaven.com/filtering-values-with-perl-grep">any</a>
 del package <a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>,
 ma può essere più leggibile e veloce usare una variabile hash per costruire una veloce tabella di look-up.
 
