@@ -270,7 +270,7 @@ inside the anonymous subroutine to declare the variable.
 </code>
 
 
-You can read more details about the <a href="/what-is-new-in-Perl-5.10--say-defined-or-state">state keyword</a>
+You can read more details about the <a href="/what-is-new-in-perl-5.10--say-defined-or-state">state keyword</a>
 of Perl.
 
 (Thanks to Joel Berger for reminding me of <hl>state</hl>).
