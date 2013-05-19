@@ -20,7 +20,7 @@ directory can contain subdirectories.
 Maybe you manage a build systems where each unit has a list
 of prerequisites and you need to traverse the whole dependency tree.
 
-If I want to give a less painful example, you wite an interactive application
+If I want to give a less painful example, you write an interactive application
 that will handle people who need treatment at the dentist.
 
 In either of these cases a queue can work really nicely.
@@ -133,13 +133,13 @@ I wrote virtually as they don't necessarily need to run in parallel. We just nee
 
 If you have multiple CPUs or at least multiple cores, which is the case in all modern computer,
 you could theoretically run parts of the code really at the same time. The two major solutions
-for this is <b>threadding</b> and <b>forking</b>. While in many languages threading
+for this is <b>threading</b> and <b>forking</b>. While in many languages threading
 is the preferred way, in Perl most people will use forking.
 If you go that way, you should probably take a look at the 
 <a href="https://metacpan.org/module/Parallel::ForkManager">Parallel::ForkManager</a>
 module on CPAN.
 
-For aynchronous or even-driven perl programming, you might want to take a look
+For asynchronous or even-driven perl programming, you might want to take a look
 at <a href="https://metacpan.org/module/POE">POE</a>.
 
 We will see examples for both cases in other articles.
