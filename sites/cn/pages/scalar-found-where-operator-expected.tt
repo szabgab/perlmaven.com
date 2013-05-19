@@ -1,5 +1,5 @@
 =title 标量出现在操作符的位置
-=timestamp 2013-05-17T18:31:34
+=timestamp 2013-05-19T18:31:34
 =indexes syntax error, scalar found, operator expected
 =status show
 =original scalar-found-where-operator-expected
