@@ -1,4 +1,4 @@
-=title How to capture and save warnings in Perl
+=title 在Perl里如何捕获并保存警告
 =timestamp 2013-05-07T10:30:01
 =indexes warnings, state, __WARN__, %SIG, local
 =status show
@@ -14,70 +14,52 @@
 
 =abstract start
 
-On one hand it is recommended to have warnings turned on in every Perl script and module,
-on the other hand you don't want your customers to see warnings from Perl.
+一方面建议在每个Perl脚本和模块中开启警告，另一方面你不想用户看到Perl发出的警告。
 
-On one hand you want to <b>use warnings</b> at the beginning of the code and have your safety
-net
+一方面你想在代码前面使用<b>use warnings</b>作为你的安全网，另一方面，通常警告会出现在屏幕上。在大多数情况下，客户不知道如何处理这些警告。如果幸运的话这些警告仅仅让客户惊讶一下，当然，不幸的是他们尝试着去修复它们... （这里说的不是Perl程序员。）
 
-On the other hand, usually  showing up on their screen.
-In most cases they won't know what to do with them. If you are lucky those would just frighten them.
-If you are unlucky they'd try to fix them... (and I am not thinking about other Perl programmers now.)
-
-On the third hand (is this an octopus or what?) you would like to save the warnings for later analysis.
+第三方面，你或许想要保存这些警告供之后分析。
 
 =abstract end
 
-Furthermore, there are lots of Perl scripts and applications in various places that neither <hl>use warnings</hl>
-nor have <hl>-w</hl> on the sh-bang line. Adding <hl>use warnings</hl> will likely generate lots of warnings.
+此外，在很多地方还有很多Perl脚本和应用程序没有使用<hl>use warnings</hl>也没有在#!行中使用<hl>-w</hl>。加上了<hl>use warnings</hl>就可能会产生大量的警告。
 
-The long term solution is, of course, to eliminate all the warnings but
-what do you do in the short term?
+长远来看，当然是要消除这些警告，但是短期来说呢？
 
-Even in the long term, just as you cannot make totally bug-free code, you cannot ensure
-that your application will never print a warning.
+即便是长期计划，你也不能写出完全没有BUG的代码，你也不能确保应用将来永远不会打印出警告信息。
 
-Or can you?
+你能么？
 
-<b>You can catch the warnings before they are printed to the screen.</b>
+<b>你可以在警告打印到屏幕之前捕获它们。</b>
 
-<h2>Signals</h2>
+<h2>信号</h2>
 
-Perl has a built-in hash called <hl>%SIG</hl>, in which the keys are the names of
-the signals available in you operating system. The values are subroutines
-(more specifically references to subroutines), that will be called when
-the specific signal arrives.
+Perl有一个叫做<hl>%SIG</hl>的内建hash表，其中的键是操作系统信号的名字。对应的值是函数（大多数是函数引用），这些函数会在特定的信号触发时被调用。
 
-In addition to the standard signals of your operating system Perl added
-two internal "signals". One of them is called <hl>__WARN__</hl> and is triggered
-every time some code calls the <hl>warn()</hl> function.
-The other one is called <hl>__DIE__</hl> and it is triggered when <hl>die()</hl>
-is called.
+除了系统提供的标准信号以外，Perl还添加了两个内部“信号”。其中一个是<h__WARN__</hl>，它在每次代码调用<hl>warn()</hl>函数的时候触发。另外一个是<hl>__DIE__</hl>，它在每次调用<hl>die()</hl>时触发。
 
-In this article we are going to see how this works for warnings.
+在本文中，我们会看到这些是怎样影响警告信息的。                                                                       
 
-<h2>Anonymous subroutines</h2>
+<h2>匿名函数</h2>
 
-<hl>sub { }</hl> is an anonymous subroutine, that is, a subroutine that does not have a name
-but it has a body. (In this example even the body, the block, is empty but I hope you
-get the point.)
+<hl>sub { }</hl>是匿名函数，也就是一个只有函数体而没有名字的函数。（在这个例子中函数体也是空的，但是我希望你能明白我的意思。）
 
-<h2>Capture warnings - do nothing</h2>
+<h2>捕获警告--不处理</h2>
 
-If you added code like this:
+如果添加如下代码：
 
 <code lang="perl">
   local $SIG{__WARN__} = sub {
-     # here we get the warning
+     # 此处可以获得警告信息
   };
 </code>
 
-You effectively said that every time there is a waning anywhere in the code - don't do anything.
-Basically you hide all the warnings.
+这实际上表示每次程序的某个地方产生了警告信息时，不做任何处理。基本上，这会隐藏所有的警告。
 
-<h2>Capture warnings - and turn them into exceptions</h2>
+<h2>捕获警告--并转换成异常</h2>
 
 You could also write:
+你也可以写成：
 
 <code lang="perl">
   local $SIG{__WARN__} = sub {
@@ -85,10 +67,9 @@ You could also write:
   };
 </code>
 
-Which would call die() whenever a warning happened.
-Which means you turn every warning into an exception.
+这样会在每次产生警告的时候调用die()，也就是把每个警告转换成异常。
 
-If you also wanted to keep the warning message in that exception you could write:
+如果你想在异常中包含警告信息，可以这么写：
 
 <code lang="perl">
   local $SIG{__WARN__} = sub {
@@ -97,14 +78,13 @@ If you also wanted to keep the warning message in that exception you could write
   };
 </code>
 
-the actual warning message is passed as the first (and only) parameter to the
-anonymous function.
+实际的警告信息会作为唯一的参数传递给匿名函数。
 
-<h2>Capture warnings - and log them</h2>
+<h2>捕获警告--并写入日志</h2>
 
-You probably want something in the middle:
+你可能想在中间做些其他事情：
 
-Make the warnings less noisy but keep them for later inspection:
+过滤嘈杂的警告信息，留待后来分析：
 
 <code lang="perl">
   local $SIG{__WARN__} = sub {
@@ -113,20 +93,15 @@ Make the warnings less noisy but keep them for later inspection:
   };
 </code>
 
-Where we assume that logger() is your implementation of a, well logger.
+这里我们假设logger()是你实现的写日志函数。
 
-<h2>Logging</h2>
+<h2>写日志</h2>
 
-Hopefully your application already has a logging mechanism. If not, this might be a good
-reason to add one. Even if you cannot add one, you might be able to use the built-in
-logging mechanism of your operating system. That means syslog on Linux and
-Event Logger on MS Windows. I am sure other
-OS-es have their own built-in logging mechanism too.
+假设你的应用程序已经有日志机制。如果没有的话，最好加上。即便你不能添加，你也需要操作系统的内建日志机制。例如Linux的syslog，MS Windows的Event Logger，其它操作系统也有它们内部的日志机制。
 
-In our example we use a simple home made logger() function just to represent
-the idea.
+在本文的例子里，我们使用一个自制logger()函数来代表这个想法。
 
-<h2>Full example capturing and logging warnings</h2>
+<h2>捕获并写日志的完整例子</h2>
 
 <code lang="perl">
   #!/usr/bin/perl
@@ -155,29 +130,24 @@ the idea.
   }
 </code>
 
-The above code will add to the log.txt file the following line:
+上面的代码会在log.txt文件中添加下面一行：
 
 <code lang="perl">
   Use of uninitialized value in addition (+) at code_with_warnings.pl line 14.
 </code>
 
-The <hl>$counter</hl> variable and the <hl>count()</hl> subroutine are just part of a simple
-example that will generate a warning.
+变量<hl>$counter</hl>和函数<hl>count()</hl>仅是产生警告示例的一部分。
 
 
-<h2>Warning in the warn handle</h2>
+<h2>警告处理函数中的警告信息</h2>
 
-One lucky aspect of __WARN__ is that when the code in the __WARN__ handle
-is executed it is automatically disabled. So warnings in a warn handle
-won't cause an infinite loop.
+__WARN__在其处理函数执行过程中是自动被禁用的。所以在警告处理函数执行过程中产生的（新）警告信息不会导致无限循环。
 
-You can read the details of __WARN__ in perldoc perlvar.
+你可以在perlvar文档中了解到更多细节。
 
 <h2>Avoid multiple warnings</h2>
 
-There is a concern of having the same warning printed very often filling
-the log-file with a lot of repeated lines. We can easily reduce the
-number of copies of the same warning by a simple use of a cache-like feature.
+需要注意的是重复的警告信息可能会充斥日志文件。我可以使用一个简单的类似缓存的特性来减少重复警告信息的数量。
 
 <code lang="perl">
   #!/usr/bin/perl
@@ -211,12 +181,9 @@ number of copies of the same warning by a simple use of a cache-like feature.
   }
 </code>
 
-As you can see, we reset the <hl>$counter</hl> variable to <hl>undef</hl>
-and called the <hl>count()</hl> function again to generate the same warning
-again.
+可以看到，我们把<hl>$counter</hl>变量赋值成<hl>undef</hl>，然后再次调用<hl>count()</hl>函数来产生同样的警告。
 
-We also replaced the subroutine of the <hl>__WARN__</hl> with a slightly more
-complex version:
+我们也把<hl>__WARN__</hl>的处理函数替换成一个稍微复杂的版本：
 
 <code lang="perl">
   my %WARNS;
@@ -227,34 +194,21 @@ complex version:
   };
 </code>
 
-Before calling the logger we check if the current string is in the <hl>%WARNS</hl> hash.
-If it isn't, we add it and then call logger(). If it was already there, we just call return
-and don't log the event a second time.
+在调用logger之前，会检查一下当前字符串是否已经在<hl>%WARNS</hl>hash表中。如果没有的话，会添加它并调用logger()。如果已经有了，就调用return，并不二次记录同样的事件。
 
-You might recall, the same idea was used when we wanted
-to have <a href="/unique-values-in-an-array-in-perl">unique values in an array</a>.
+你可能回忆起我们在<a href="/unique-values-in-an-array-in-perl">unique values in an array</a>也使用了同样的点子。
 
-<h2>What is this local?</h2>
+<h2>local是什么？</h2>
 
-In all the examples you saw, I used the <hl>local</hl> function to
-localize the effect. Strictly speaking we did not need that in these
-examples as we were assuming the above code would be the first thing
-in your main script. In that case it does not matter as you are still
-in a global scope.
+在上面所有的例子中，我使用<hl>local</hl>函数來局部化（警告处理）效果。严格来说，在这些例子中我们没有必要这么做，因为假设这些代码是主脚本的第一部分。这种情况下就无所谓了，毕竟是在全局作用域里面。
 
-Yet, better to get used to it. (thanks to Peter Rabbitson for reminding me)
+然而，最好是这么用。
 
-The <hl>local</hl> is important to limit the effect of our change if you are
-using this code within a module. Especially if you distribute it.
-Without the localization the effect would be felt in all the application.
-The <hl>local</hl> limits it to the enclosing block.
+<hl>local</hl>对于在模块中限制（对警告）的改变是很重要的。特别是要发布的模块。如果没有局部化，会影响整个应用程序。<hl>limit</hl>则会把影响限制在所在的闭合代码块里。
 
-<h2>Avoiding the global %WARNS hash</h2>
+<h2>避免使用全局的%WARNS</h2>
 
-If you are using Perl 5.10 or newer you can improve that code and eliminate the
-global %WARNS. In order for that to work you have to write <hl>use v5.10;</hl>
-at the beginning of your script and then you can use the <hl>state</hl> keyword
-inside the anonymous subroutine to declare the variable.
+如果你正在使用Perl 5.10或者更新的版本，你可以改写一下代码来替换掉全局变量%WARNS。如果要这么做的话，需要在脚本的开头使用<hl>use v5.10;</hl>，然后在匿名函数内部使用<hl>state</hl>关键词来声明变量。
 
 <code lang="perl">
   #!/usr/bin/perl
@@ -272,9 +226,8 @@ inside the anonymous subroutine to declare the variable.
 </code>
 
 
-You can read more details about the <a href="/what-is-new-in-Perl-5.10--say-defined-or-state">state keyword</a>
-of Perl.
+更多细节，参阅<a href="/what-is-new-in-Perl-5.10--say-defined-or-state">关键词state</a>。
 
-(Thanks to Joel Berger for reminding me of <hl>state</hl>).
+(感谢 Joel Berger 提醒的 <hl>state</hl>).
 
 

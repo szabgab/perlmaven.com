@@ -1,4 +1,4 @@
-=title "my" variable masks earlier declaration in same scope
+=title "my" 隐藏同作用域下之前的声明
 =timestamp 2013-04-19T16:46:56
 =indexes my, scope
 =status show
@@ -20,15 +20,15 @@
 "my" variable ... masks earlier declaration in same scope at ... line ...
 </code>
 
-这是如何产生的？那么，每次循环的迭代重新声明的变量有如何有效呢？
+这是如何产生的？那么，每次循环的迭代重新声明的变量又如何有效呢？
 
-如果不能在一个作用域写两次<hl>my $x</hl>，那我该如何清空变量呢？
+如果不能在一个作用域写两次<hl>my $x</hl>，那该如何清空变量呢？
 
 =abstract end
 
 来看下面几个例子的不同之处：
 
-<h2>Plain script</h2>
+<h2>普通的脚本</h2>
 
 <code lang="perl">
 use strict;
@@ -49,7 +49,7 @@ print "OK\n";
 因为这个脚本也会打印"OK"，所以这仅是一个警告。
 
 
-<h2>Block in conditional statement</h2>
+<h2>条件语句的代码块</h2>
 
 <code lang="perl">
 use strict;
@@ -73,7 +73,7 @@ if (1) {
 
 在第二个例子里，我们对<hl>$z</hl>也进行了两次声明，但是没有产生任何警告。这是因为<hl>$z</hl>所在的代码块是一个独立的<a href="/scope-of-variables-in-perl">作用域</a>。
 
-<h2>The scope of a function</h2>
+<h2>函数的作用域</h2>
 
 相同的代码，但这次是在函数里：
 
@@ -90,16 +90,11 @@ f(1);
 f(2);
 </code>
 
-Here too, you get the same compile-time warning (once) for the <hl>$x</hl> variable.
-Even though the variable <hl>$z</hl> will 'spring to existence' repeatedly,
-once for every call of the function.
-This is ok. The <hl>$z</hl> variable does not generate the warning:
-Perl can create the same variable twice, it is only you who are not supposed to do it.
-At least not within the same scope.
+这里也会产生一次针对<hl>$x</hl>的编译时警告。即使变量<hl>$z</hl>重复地在每次调用中出现也是没有问题的。变量<hl>$z</hl>不会触发警告，这是因为Perl可以两次创建同一个变量，只是你不应该这么做。不然，至少不能在同一个作用域里面这样做。
 
-<h2>The scope of a for loop</h2>
+<h2>for循环的作用域</h2>
 
-Same code, but in a loop:
+同样的代码，循环中：
 
 <code lang="perl">
 use strict;
@@ -112,37 +107,25 @@ for (1 .. 10) {
 }
 </code>
 
-This too will generate the above warning for <hl>$x</hl> once(!), but won't generate
-any warning for <hl>$z</hl>.
+这也会针对<hl>$x</hl>产生一次警告，对于<hl>$z</hl>则不会。
 
-In this code the same thing happens for <b>every</b> iteration:
-Perl will allocate the memory for <hl>$z</hl> variable for every iteration.
+在这个代码中，<b>每次</b>迭代Perl都会为<hl>$z</hl>变量开辟内存。
 
-<h2>What does "my" really mean?</h2>
+<h2>"my"有什么意义?</h2>
 
-The meaning of <hl>my $x</hl> is that you tell perl, and specifically to <hl>strict</hl>,
-that you would like to use a private variable called <b>$x</b> in the <a href="/scope-of-variables-in-perl">current scope</a>.
-Without this, perl will look for a declaration in the upper scopes and if
-it cannot find a declaration anywhere it will give a compile-time error
-<a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
-Every entry in a block, every call to a function, every iteration in a loop is a new world.
+<hl>my $x</hl>的意思是告诉Perl，尤其是<hl>strict</hl>，你要在<a href="/scope-of-variables-in-perl">当前作用域</a>使用一个私有变量<b>$x</b>。如果没有这个，Perl会在上层的作用域中寻找声明，如果没有找到的话会给出一个编译时错误<a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>。代码块的每一项，每次调用函数，每个循环的迭代都是一个新的作用域。
 
-On the other hand, writing <hl>my $x</hl> twice in the same scope just means that you try to tell the same
-thing twice to Perl. It is not necessary and usually it means there is a mistake somewhere.
+另一方面，在同一个作用域中写两次<hl>my $x</hl>仅仅表示尝试着告诉Perl两遍相同的事情。这既无必要，也通常意味着出现了某个错误。
 
-In other words, the warning we got is related to the <b>compilation</b> of the code and not the running.
-It is related to the declaration of the variable by the developer and not to the memory-allocation
-done by perl during run-time.
+换句话说，我们之前得到的警告是与代码的<b>编译</b>相关的，代码并没有运行。这关系到开发者对变量的声明，而不是perl在运行时内存的分配。
 
-<h2>How to empty an existing variable?</h2>
+<h2>如何清空已存在的变量？</h2>
 
-So if we cannot write <hl>my $x;</hl> twice in the same scope, then how can we set the variable to be "empty"?
+如果我们不在同一作用域写两次<hl>my $x;</hl>，那如何把变量置“空”？
 
-First of all, if a variable is declared inside a scope, that is, inside ant curly braces, then it will automatically
-disappear when the execution leaves the <a href="/scope-of-variables-in-perl">scope</a>.
+首先，如果变量在某个作用域内声明（在花括号内），那么出了<a href="/scope-of-variables-in-perl">作用域</a>后它（变量）会自动消失。
 
-If you just want to "empty" the scalar variable in the current scope, set it to <hl>undef</hl>,
-and if it is an <a href="/undef-on-perl-arrays-and-hashes">array or a hash</a>, then empty them by assigning an empty list to them:
+如果你仅仅想“清空”当前作用域的标量，把它赋值成<hundef</hl>就好了，如变量是<a href="/undef-on-perl-arrays-and-hashes">数组或hash表</a>，那么通过赋值成空列表就能清空：
 
 <code lang="perl">
 $x = undef;
@@ -150,9 +133,6 @@ $x = undef;
 %h = ();
 </code>
 
-So just to clarify. "my" tells perl you'd like to use a variable.
-When Perl reaches the code where you have "my variable" it allocates memory for the variable and its content.
-When Perl reaches the code <hl>$x = undef;</hl>  or  <hl>@x = ();</hl>  or  <hl>undef @x;</hl> it will
-remove the content of the already existing variable.
+再说明一下。"my"会告诉perl你要使用一个变量。当执行到"my variable"时Perl会为变量本身以及它的内容分配空间；当执行到<hl>$x = undef;</hl>  或  <hl>@x = ();</hl>  或  <hl>undef @x;</hl>时，Perl会清空已有变量的内容。
 
 
