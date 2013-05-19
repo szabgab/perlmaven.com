@@ -20,7 +20,7 @@
   <li><a href="/scope-of-variables-in-perl">Perl에서의 변수 영역</a></li>
   <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
   <li><a href="/how-to-eliminate-a-value-in-the-middle-of-an-array-in-perl">Perl의 배열 중간에 있는 값을 제거하는 법</a></li>
-  <li><a href="/how-to-capture-and-save-warnings-in-perl"></a>Perl에서 경고메시지를 가로채어 저장하기</li>
+  <li><a href="/how-to-capture-and-save-warnings-in-perl">Perl에서 경고메시지를 가로채어 저장하기</a></li>
 
 <!--
   <li><a href=""></a></li>
