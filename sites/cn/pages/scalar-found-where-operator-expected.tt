@@ -1,5 +1,5 @@
-=title Scalar found where operator expected
-=timestamp 2013-02-15T01:05:06
+=title 标量出现在操作符的位置
+=timestamp 2013-05-17T18:31:34
 =indexes syntax error, scalar found, operator expected
 =status show
 =original scalar-found-where-operator-expected
@@ -48,9 +48,9 @@ Execution of ex.pl aborted due to compilation errors.
 这个例子的错误是忘记了在数字42后面加逗号<hl>,</hl>。正确的写法是：<hl>print 42, "\n";</hl>。
 
 
-<h2>String found where operator expected</h2>
+<h2>字符串出现在操作符的位置</h2>
 
-In this code we have left out a concatenation operator <hl>.</hl>, and we got the same error message:
+在这个代码中我们漏了连接符 <hl>.</hl>，得到如下错误信息：
 
 <code lang="perl">
 use strict;
@@ -66,9 +66,9 @@ syntax error at ex.pl line 54, near ""Foo"  "Bar""
 Execution of ex.pl aborted due to compilation errors.
 </code>
 
-The intended code looks like this: <hl>my $name = "Foo" . "Bar";</hl>.
+想写的代码是：<hl>my $name = "Foo" . "Bar";</hl>。
 
-<h2>Number found where operator expected</h2>
+<h2>数字出现在操作符的位置</h2>
 
 <code lang="perl">
 use strict;
@@ -78,7 +78,7 @@ my $x = 23;
 my $z =  $x 19;
 </code>
 
-Generates this error message:
+产生错误信息：
 
 <code>
 Number found where operator expected at ex.pl line 5, near "$x 19"
@@ -87,13 +87,11 @@ syntax error at ex.pl line 5, near "$x 19"
 Execution of ex.pl aborted due to compilation errors.
 </code>
 
-This code is probably missing an addition <hl>+</hl>, or multiplication <hl>*</hl> operator,
-though that could be a repetition operator <hl>x</hl> as well.
+这个代码可能是缺失了一个加号<hl>+</hl>，或乘号<hl>*</hl>，也可能是重复操作符<hl>x</hl>。
 
-<h2>Syntax error while comma is missing</h2>
+<h2>逗号缺失时的语法错误</h2>
 
-A missing comma is not always recognized as a missing operator.
-For example this code:
+缺失逗号总是被认为是缺失操作符。例如：
 
 <code lang="perl">
 use strict;
@@ -105,10 +103,9 @@ my %h = (
 );
 </code>
 
-generates the following error message: <b>syntax error at ... line ..., near "bar"</b>
-without any further details.
+这样会产生错误信息: <b>syntax error at ... line ..., near "bar"</b>，而没有更多的细节。
 
-Adding a comma after the number 23 will fix the code:
+在数字23后面加一个逗号可以修复代码：
 
 <code lang="perl">
 my %h = (
@@ -117,7 +114,7 @@ my %h = (
 );
 </code>
 
-I even prefer to add a comma after every pair in a hash (so in this case, after the number 19 too):
+我自己更倾向于在hash表的每个键值对后面加一个逗号（在本例的数字19后面也是如此）：
 
 <code lang="perl">
 my %h = (
@@ -126,10 +123,10 @@ my %h = (
 );
 </code>
 
-This habit helps me to avoid this kind of syntax error most of the cases.
+这种喜欢可以帮我在大多数情况下避免此类语法错误。
 
 
-<h2>Scalar found where operator expected at</h2>
+<h2>在..行，标量出现在操作符的位置</h2>
 
 <code lang="perl">
 use strict;
@@ -148,9 +145,9 @@ syntax error at ... line 7, near "$x $y"
 Execution of ... aborted due to compilation errors.
 </code>
 
-Again, there can be a numerical or a string operator between $x and $y.
+同样，在 $x 和 $y 之间可以有一个数字或者字符串操作符。
 
-<h2>Array found where operator expected</h2>
+<h2>数组出现在操作符的位置</h2>
 
 <code lang="perl">
 use strict;
@@ -160,8 +157,8 @@ my @x = (23);
 my $z =  3 @x;
 </code>
 
-<h2>What other cases do you encounter often?</h2>
+<h2>你经常遇到的其它情况是怎样的？</h2>
 
-Do you have other interesting cases where we get this type of syntax error?
+你还遇到过其它有趣的此类语法错误的情况么？
 
 
