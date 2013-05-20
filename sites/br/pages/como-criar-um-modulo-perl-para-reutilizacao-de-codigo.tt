@@ -1,8 +1,8 @@
 =title Como criar um Módulo Perl para reutilização de código?
-=original how-to-create-a-perl-module-for-code-reuse
 =timestamp 2013-05-12T01:25:00
 =indexes package, use, Exporter, import, @INC, @EXPORT_OK, $0, dirname, abs_path, Cwd, File::Basename, lib, 1;
 =status show
+=original how-to-create-a-perl-module-for-code-reuse
 =books advanced_book
 =author szabgab
 =translator aramisf

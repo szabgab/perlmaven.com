@@ -49,7 +49,7 @@ Enquanto que ambos são nativos dos sistemas Unix/Linux, ambos <b>Emacs</b> e <b
 Em Windows muitas pessoas utilizam os chamados “editores de programação”.
 
 <ul>
-<li><a href="http://www.ultraedit.com/">Ultra Edit</a>é um editor comercial.</li>
+<li><a href="http://www.ultraedit.com/">Ultra Edit</a> é um editor comercial.</li>
 <li><a href="http://www.textpad.com/">TextPad</a> é um <i>shareware</i>.</li>
 <li><a href="http://notepad-plus-plus.org/">Notepad++</a> é um editor open source e gratuito.</li>
 </ul>
@@ -85,4 +85,4 @@ Agora é possível seguir de acordo com a maioria ou então, escolher você mesm
 
 <h2>Em Seguida</h2>
 
-A próxima parte do tutorial é uma pequena introdução sobre <a href="http://szabgab.com/perl-on-the-command-line.html">Perl na linha de comandos</a>.
+A próxima parte do tutorial é uma pequena introdução sobre <a href="/perl-na-linha-de-comandos">Perl na linha de comandos</a>.
