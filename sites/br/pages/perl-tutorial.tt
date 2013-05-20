@@ -52,24 +52,35 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li><a href="/perl-na-linha-de-comandos">Perl na linha de comandos</a></li>
 <li><a href="/documentacao-do-perl-e-modulos-cpan">Documentação do núcleo da linguagem e de módulos do CPAN</a></li>
 <li><a href="/documentacao-em-perl-com-pod">Documentação em Perl com POD - Plain Old Documentation</a></li>
-<li><a href="/debugging-perl-scripts">Debugging Perl scripts</a></li>
+<li><a href="/depurando-scripts-em-perl">Depurando scripts em Perl</a></li>
 </ol>
 
 <b>Escalares</b>
 <ol>
 <li>Menssagens de Erro e Avisos Comuns<br />
 <ul>
+<li>Mensagem de erro: 'Global symbol requires explicit package name'</li>
 <li><a href="/uso-de-valor-nao-inicializado">Uso de valor não inicializado</a></li>
 <li><a href="/palavras-soltas-em-perl">Palavra solta (bareword) em Perl</a></li>
+<li>Mensagem de erro: 'Name "main::x" used only once: possible typo at ...'</li>
 <li><a href="/categorias-desconhecidas-de-alertas">Categoria de alertas desconhecida</a></li>
+<li>Mensagem de erro: 'Scalar found where operator expected'</li>
+<li>Mensagem de erro: '"my" variable masks earlier declaration in same scope'</li>
 </ul>
 </li>
 <li><a href="/conversao-automatica-entre-valores">Conversão Automática entre texto e número em Perl</a></li>
+<li>Declarações condicionais: if</li>
 <li><a href="/valores-booleanos-em-perl">Valores Booleanos em Perl</a></li>
+<li>Operadores numéricos e textuais</li>
 <li><a href="/undef-e-definido-em-perl">undef, valor inicial e a função defined em Perl</a></li>
+<li>Strings em Perl: entre aspas, interpoladas e 'escapadas'</li>
+<li>Here documents</li>
+<li>Variáveis escalares</li>
+<li>Comparando escalares</li>
 <li><a href="/funcoes-para-manipular-texto-lc-uc-index-substr">Funções para manipular texto: length, lc, uc, index, substr</a></li>
 <li><a href="/jogo-de-adivinhar-numeros">O jogo de adivinhar números (rand, int)</a></li>
 <li><a href="/laco-while"> O laço while</a></li>
+<li>Escopo de variáveis em Perl</li>
 </ol>
 
 <b>Arquivos</b>
@@ -78,13 +89,107 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li><a href="/escrevendo-em-arquivos-com-perl">Escrevendo em arquivos com Perl</a></li>
 <li><a href="/acrescentando-em-arquivos">Acrescentando texto em arquivos (appending)</a></li>
 <li><a href="/abrindo-e-lendo-arquivos">Abrindo e Lendo Arquivos de Texto</a></li>
+<li><a href="/nao-abra-arquivos-na-forma-antiga">Não abra arquivos na forma antiga</a></li>
+<li>Modo binário, lidando com Unicode</li>
+<li>Lendo de um arquivo binário, read, eof</li>
+<li>tell, seek</li>
+<li>truncate</li>
+</ol>
+
+<b>Listas e Arrays</b>
+<ol>
+<li>Laço foreach do Perl</li>
+<li><a href="/laco-for">O laço for em Perl</a></li>
+<li>Listas em Perl</li>
+<li>Usando Módulos</li>
+<li><a href="/arrays-em-perl">Arrays em Perl</a></li>
+<li>Process command line parameters @ARGV, Getopt::Long</li>
+<li>Como ler e processar um arquivo CSV? (split, Text::CSV_XS)</li>
+<li>join</li>
+<li>O ano de 19100 (time, localtime, gmtime) e introdução ao contexto</li>
+<li>Sensibilidade do contexto em Perl</li>
+<li>Ordenando arrays em Perl</li>
+<li>Valores únicos em um array em Perl</li>
+<li>Manipulando arrays em Perl: shift, unshift, push, pop</li>
+<li>Pilha e fila</li>
+<li>reverse</li>
+<li>O operador ternário</li>
+<li>Controles de laço: next and last</li>
+<li>min, max, sum usando List::Util</li>
+</ol>
+
+<b>Subrotinas</b>
+<ol>
+<li>Subrotinas e Funções em Perl</li>
+<li>Passagem e verificação de parâmetros para subrotinas</li>
+<li>Número variável de parâmetros</li>
+<li>Retornando uma lista</li>
+<li>Subrotinas recursivas</li>
+</ol>
+
+<b>Hashes, arrays</b>
+<ol>
+<li>Hashes em Perl (dicionário, array associativo, tabela de consulta)</a></li>
+<li>exists, delete elementos de uma hash</li>
+</ol>
+
+<b>Expressões Regulares</b>
+<ol>
+<li>Expressões Regulares em Perl (Regex)</li>
+<li>Regex: classes de caracteres</li>
+<li>Regex: quantificadores</li>
+<li>Regex: Casamento guloso e não-guloso</li>
+<li>Regex: Agrupamentos e capturas</li>
+<li>Regex: Âncoras</li>
+<li>Opções de Regex e modificadores</li>
+<li>Substituições (busca e substituição)</li>
+<li>trim - removendo espaços no início e no fim</li>
+</ol>
+
+<b>Funcionalidades afins no Perl e no Shell</b>
+<ol>
+<li>Perl -X operadores</li>
+<li>Pipelines em Perl</li>
+<li>Executando programas externos</li>
+<li>Comandos Unix: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
+<li>Como remover, copiar ou renomear um arquivo com Perl</li>
+<li>Comandos Windows/DOS: del, ren, dir</li>
+<li>Englobamento de Arquivos(Metacaracteres)</li>
+<li>Manipuladores de directórios</li>
+<li>Percorrendo a árvore de diretórios (find)</li>
+</ol>
+
+<b>CPAN</b>
+<ol>
+<li>Download e instalação do Perl (Strawberry Perl ou compilação manual)</li>
+<li>Download e instalação do Perl usando Perlbrew</li>
+<li>Localizando e validando módulos CPAN</li>
+<li>Baixando e instalando módulos Perl do CPAN</li>
+<li>Como alterar a @INC para encontrar módulos Perl em locais não padrão?</li>
+<li>Como alterar a @INC para um diretório relativo</li>
+<li>local::lib</li>
+</ol>
+
+<b>Alguns exemplos para usar Perl</b>
+<ol>
+<li><a href="/como-substituir-uma-string-em-um-arquivo-usando-perl">Como substituir uma string em um arquivo usando Perl? (slurp)</a></li>
+<li>Lendo arquivos Excel usando Perl</li>
+<li>Criando arquivos Excel usando Perl</li>
+<li>Enviando e-mail usando Perl</li>
+<li>CGI scripts com Perl</li>
+<li>Aplicações Web com Perl: PSGI</li>
+<li>Analisando arquivos XML</li>
+<li>Lendo e escrevendo arquivos JSON</li>
+<li>Acesso a bases de dados usando Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</li>
+<li>Accessando LDAP usando Perl</li>
 </ol>
 
 <b>Outros</b>
 <ol>
 <li><a href="/splice-para-fatiar-e-picar-arrays-em-perl">Splice para fatiar e picar arrays em Perl</a></li>
-<li><a href="/perl-orientado-a-objeto-usando-o-moose">Perl Orientado a Objetos Usando o Moose</a></li>
-<li><a href="/tipos-de-atributos-em-classes-perl-ao-usar-o-moose">Tipos de atributos em casses Perl ao usar o Moose</a></li>
+<li><a href="/como-criar-um-modulo-perl-para-reutilizacao-de-codigo">Como criar um módulo Perl para reutilização de código</a></li>
+<li><a href="/perl-orientado-a-objeto-usando-o-moose">Perl Orientado a Objetos usando o Moose</a></li>
+<li><a href="/tipos-de-atributos-em-classes-perl-ao-usar-o-moose">Tipos de atributos em classes Perl ao usar o Moose</a></li>
 </ol>
 
 
