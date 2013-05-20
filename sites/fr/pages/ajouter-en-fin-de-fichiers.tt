@@ -45,7 +45,7 @@ use warnings;
 use 5.010;
 
 my $nom_de_fichier = 'rapport.txt';
-open(my $fh, '>>', $filename) or die "Impossible d'ouvrir le fichier '$nom_de_fichier' $!";
+open(my $fh, '>>', $nom_de_fichier) or die "Impossible d'ouvrir le fichier '$nom_de_fichier' $!";
 say $fh "Mon premier rapport généré via perl";
 close $fh;
 say 'effectué!';
