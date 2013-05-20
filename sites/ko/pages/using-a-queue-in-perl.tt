@@ -74,9 +74,9 @@ while (@people) {
 (혹시 모르실지 몰라서 말씀드리자면, <hl>while ()</hl> 루프의 조건과 같은
 <a href="http://perlmaven.com/scalar-and-list-context-in-perl">스칼라 컨텍스트</a>에서
 사용될 경우, 배열은 자신의 크기, 즉 현재 들어 있는 원소의 갯수를 반환합니다.
-배열이 비었다면 이 값은 0이 될 테고 0은 <a href="http://perlmaven.com/boolean-values-in-perl">거짓</a>으로
+배열이 비었다면 이 값은 0이 될 테고 0은 <a href="/boolean-values-in-perl">거짓</a>으로
 간주됩니다. 원소가 있다면 배열의 크기는 양수가 되고 Perl에서 이것은
-<a href="http://perlmaven.com/boolean-values-in-perl">참</a>으로 간주됩니다.)
+<a href="/boolean-values-in-perl">참</a>으로 간주됩니다.)
 
 루프 안에서 첫번째로 하는 일은 <hl>shift</hl> 함수를 사용하여 큐에서 첫번째 원소를 가져오는
 것입니다. 이 원소는 치과의사에게 진료를 받을 다음 환자의 이름입니다. 그 다음 하는 일은
