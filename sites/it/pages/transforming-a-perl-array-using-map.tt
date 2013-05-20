@@ -1,10 +1,11 @@
-=title Trasformare un array Perl con map
-=timestamp 2013-05-13T08:45:56
+=title Trasformare un array con map
+=timestamp 2013-04-25T10:45:56
 =indexes map, transform, list, array
 =status show
 =original transforming-a-perl-array-using-map
 =books advanced_book
 =author szabgab
+=translator grubert65
 =index 1
 =archive 1
 =feed 1
@@ -13,7 +14,7 @@
 
 =abstract start
 
-La funzione <hl>map</hl> di Perl fornisce un modo semplice per trasformare una
+La funzione <hl>map</hl> fornisce un modo semplice per trasformare una
 lista di valori in un'altra lista di valori. Di solito questa trasformazione ritorna lo stesso 
 numero di valori, anche se è sempre possibile generare una lista con un numero di valodi diverso.
 
@@ -45,8 +46,8 @@ print "@doubles\n";       # 2 4 6 8 10
 
 Se abbiamo una lista di valori può capitare, durante l'esecuzione del codice, 
 di voler controllare se un valore è compreso nella lista. Possiamo usare
-<a href="/filtering-values-with-perl-grep.html">grep</a> ogni volta, per cercare se il 
-valore è nella lista. Possiamo anche usare la funzione <a href="/filtering-values-with-perl-grep.html">any</a>
+<a href="http://perlmaven.com/filtering-values-with-perl-grep">grep</a> ogni volta, per cercare se il 
+valore è nella lista. Possiamo anche usare la funzione <a href="http://perlmaven.com/filtering-values-with-perl-grep">any</a>
 del package <a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>,
 ma può essere più leggibile e veloce usare una variabile hash per costruire una veloce tabella di look-up.
 

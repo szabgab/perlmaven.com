@@ -113,22 +113,23 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 
 The translation process:
 * The translator creates a new file in the sites/CC/drafts folder.
-* When s/he has finished the translations
-* * if s/he wants to publish the article ASAP then: 
-    adds the link to the translation in the perl-tutorials.tt file in the open part,
-    and moves the translated file to the sites/CC/pages folder.
-    and updates the =timestamp in the translated file to the current date/time.
+* When s/he has finished the translations s/he
+  adds the link to the translation in the perl-tutorials.tt file in the open part,
+  and moves the translated file to the sites/CC/pages folder.
+  and updates the =timestamp in the translated file to the current date/time or slightly
+  in the future (maybe 12 hours) to allow Gabor the time to publish it.
+  (This =timestamp is used to generate the front page, the atom feed, and the order in
+  the archives page.
 
-* * if s/he wants to let Gabor schedule the publication then:
-    adds the link to the translation in the perl-tutorials.tt file in a commented part,
-    and moves the translated file to the sites/CC/done folder.
+* in rare cases we would want to synchrnize the publication of the same article
+  translated to several languages. In this case the translator should move the
+  translated file to the sites/CC/done folder.
+
 * Push to your repository and send a pull request.
 * Gabor will periodically merge the pull requests and push the source to the live site.
+  (Actually Gabor periodically merges from the public repositories of the translators
+  in any case, but a pull requets provides some opportunity to send messages.)
   He will try to check for html issues, but cannot check the correctness of the translations.
-  He can easily see which translations are ready (in the done/ folder) and he can move them
-  one-by-one to the sites/CC/pages/ directory, enable the entry in the perl-tutorials.tt file,
-  update the =timestam and publish the new article.
-  Then he can include the article(s) in the mail sent to the subscribers of the Perl Maven site.
 
 
 
@@ -152,8 +153,8 @@ Getting started with the translation
   and talk to Gabor about this.
 * cp -r skeleton sites/CC     (where CC is the hostname selected)
 * translate the first page sites/en/pages/installing-perl-and-getting-started.tt as
-                           sites/CC/done/installing-perl-and-getting-started.tt
-  or as                    sites/CC/done/TRANSLATD-BUT-TRANSLITERATED-TITLE.tt
+                           sites/CC/drafts/installing-perl-and-getting-started.tt
+  or as                    sites/CC/drafts/TRANSLATD-BUT-TRANSLITERATED-TITLE.tt
   as is acceptable in other sites in your language.
 * Add =original and =translator entries to the translated file
 * Add yourself to the authors.txt file and add a 128x128 picture of yourself to the sites/en/img/ folder.

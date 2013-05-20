@@ -32,6 +32,7 @@
 <li>Warning e messaggi d'errori comuni<br />
 <ul>
   <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+  <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
 </ul>
 <li><a href="/undef-e-defined-in-perl">undef e defined in Perl</a></li>
 </ol>
@@ -39,6 +40,7 @@
 <b>Liste e Array</b>
 <ol>
   <li><a href="/manipolare-array-in-perl">Manipolare gli array in Perl</a></li>
+  <li><a href="/transforming-a-perl-array-using-map">Trasformare un array con map</a></li>
 </ol>
 
 Per l'originale, visitate il <a href="http://perlmaven.com/perl-tutorial">tutorial Perl in Inglese</a>
