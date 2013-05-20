@@ -93,7 +93,7 @@ At one point the array will become empty and the main while-loop will finish.
 <h2>Abstract implementation</h2>
 
 The following code is a more abstract version of the same code using
-<a href="/subroutines-and-functions-in-perl.html">functions</a>
+<a href="/subroutines-and-functions-in-perl">functions</a>
 that we have not implemented yet.
 
 <code lang="perl">
