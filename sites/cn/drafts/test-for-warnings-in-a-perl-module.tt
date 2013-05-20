@@ -1,0 +1,93 @@
+=title Test for warnings in a Perl Module
+=timestamp 2012-07-03T10:10:10
+=indexes warnings, __WARN__, Test::Warn
+=status show
+=original test-for-warnings-in-a-perl-module
+=author szabgab
+=translator terrencehan
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+There are cases when you write a Perl module that - as part of its API -
+issues warnings in certain cases.
+在写Perl模块时，某些情况下（作为API的一部分）需要发出警告信息。
+
+It would be nice if we could make sure this warning won't disappear
+when someone changes the code later trying to fix some bug or add some feature.
+如果我们能确保这些警告信息不会在其他人在修复bug或者添加新特性的时候不会消失就很好了。
+
+Probably the easiest way to do this, is to write a test case that checks
+if you get the warning at the right time.
+写一个测试用例来检查你是否能够在合适的时间得到警告是最简单的处理办法。
+
+=abstract end
+
+For example your module has a function parsing a log file.
+What happens when one of the rows is broken?
+Will your function throw an exception?
+Will it disregard the incorrect line and silently continue?
+Will it give a warning and continue?
+例如在你的模块中有一个函数用来分析日志文件。如果文件其中一行被破坏了怎么版？你的函数会抛出异常么？还是忽视掉这错误的一行然后继续？亦或给出警告然后继续？
+
+Maybe there is a function which is deprecated,
+and which should give a warning when it is invoked but
+then still work properly. At least till it gets removed.
+或许
+
+You would like to make sure the warning remains there
+and it is not removed or hidden by mistake or by
+someone who did not know the warning is part of the API.
+
+How can you test your code to make sure it gives a
+warning at the right time?
+
+<h2>The warning signal __WARN__</h2>
+
+In Perl, every call to <b>warn</b> emits an internal signal. You can set up your test code to
+<a href="/how-to-capture-and-save-warnings-in-perl">capture and save any warnings</a>
+using <b>$SIG{__WARN__}</b> and then examine if the warning was the right one.
+在Perl中每次调用<b>warn</b>都会发出一个内部信号。你可以通过使用<b>$SIG{__WARN__}</b>让测试代码<a href="/how-to-capture-and-save-warnings-in-perl">捕获并保存警告信息</a>，之后检查一下它是不是你想要的。
+
+Something like this:
+例如：
+
+<code lang="perl">
+{
+  my @warnings;
+  local $SIG{__WARN__} = sub {
+     push @warnings, @_;
+  };
+  process_log();
+  is scalar(@warn), 1, 'exactly one warning';
+  like $warn[0], qr{Invalid row}, 'warning of invalid row';
+}
+</code>
+
+What if we would like to test this for several different cases?
+Will we have to copy part of this code again and again?
+Will we create our own function to do this?
+
+<h2>Test::Warn</h2>
+
+Luckily Janek Schleicher has already done that when he created
+the <a href="http://metacpan.org/module/Test::Warn">Test::Warn</a> module which is currently maintained
+by <a href="http://chorny.net/">Alexandr Ciornii</a>.
+
+You can use the convenience functions provided by this module and
+you don't need to reinvent this wheel.
+
+Using this module, the above code would be reduced to
+
+<code lang="perl">
+warning_like { process_log() } qr{Invalid row}, 'warning of invalid row';
+</code>
+
+Note, there is a block around the function call and there is no comma
+between the block and the expected regular expression.
+
+
