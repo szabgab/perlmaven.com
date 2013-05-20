@@ -111,7 +111,7 @@ OK
 42
 </code>
 
-Here, the result of the first <hl>say</hl> is seen <b>after</b>
+Here, 'OK', the result of the <hl>print</hl> is seen <b>after</b>
 the warning, even though it was called <b>before</b> the
 code that generated the warning.
 

@@ -144,7 +144,7 @@ sub prompt {
 This will place the array in SCALAR context and in that context it will
 return the number of elements. So you'll get a number in the $text variable.
 If this whole context business isn't clear, you can read more about
-<a href="/scalar-and-list-context-in-perl.html">SCALAR and LIST context</a>
+<a href="/scalar-and-list-context-in-perl">SCALAR and LIST context</a>
 and get back to here later.
 
 <h2>Prototypes</h2>

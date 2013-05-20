@@ -11,7 +11,7 @@ FORMAT
 =======
 The format has evolved from POD, HTML and Docbook. It is now a mess. I know. I'll have to clean that up.
 
-The overview:
+Nevertheless the overview:
 
 In the header there are
 
@@ -33,7 +33,7 @@ is displayed on the front pages and is included in the RSS/Atom feed.
 
 `<hl></hl>` stands for highlight and usually code-snippets inside the text are marked with these.
 
-`<b></b>` is usde to mark other imporant pieces. 
+`<b></b>` is used to mark other imporant pieces. 
 
 Code snippets are wrapped in 
 
@@ -42,22 +42,17 @@ Code snippets are wrapped in
 
 
 
-CONTRIBUTIONS
-==============
-
-(both article writers and translators, please read  option 2 here: 
-http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
-and add the perlmaven.com site to the list of where you contribute.
-Add an 128x128 image of you to the img/ folder and an entry for yourself
-in the authors.txt file of your language.
+Add an 128x128 image of you to the sites/en/img/ folder and an entry for yourself
+in the authors.txt file in the root of the repository.
 
 
 Mailing list
--------------
+=============
 
 There is an invitation only, but publicly archived mailing list
 for the the people who would like to contribute to the Perl Maven
 site. A couple of ways to contribute:
+
 - translate an article to a language
 - proofreading in any language (including English)
 - promote the articles in one or more languages
@@ -118,22 +113,23 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 
 The translation process:
 * The translator creates a new file in the sites/CC/drafts folder.
-* When s/he has finished the translations
-* * if s/he wants to publish the article ASAP then: 
-    adds the link to the translation in the perl-tutorials.tt file in the open part,
-    and moves the translated file to the sites/CC/pages folder.
-    and updates the =timestamp in the translated file to the current date/time.
+* When s/he has finished the translations s/he
+  adds the link to the translation in the perl-tutorials.tt file in the open part,
+  and moves the translated file to the sites/CC/pages folder.
+  and updates the =timestamp in the translated file to the current date/time or slightly
+  in the future (maybe 12 hours) to allow Gabor the time to publish it.
+  (This =timestamp is used to generate the front page, the atom feed, and the order in
+  the archives page.
 
-* * if s/he wants to let Gabor schedule the publication then:
-    adds the link to the translation in the perl-tutorials.tt file in a commented part,
-    and moves the translated file to the sites/CC/done folder.
+* in rare cases we would want to synchrnize the publication of the same article
+  translated to several languages. In this case the translator should move the
+  translated file to the sites/CC/done folder.
+
 * Push to your repository and send a pull request.
 * Gabor will periodically merge the pull requests and push the source to the live site.
+  (Actually Gabor periodically merges from the public repositories of the translators
+  in any case, but a pull requets provides some opportunity to send messages.)
   He will try to check for html issues, but cannot check the correctness of the translations.
-  He can easily see which translations are ready (in the done/ folder) and he can move them
-  one-by-one to the sites/CC/pages/ directory, enable the entry in the perl-tutorials.tt file,
-  update the =timestam and publish the new article.
-  Then he can include the article(s) in the mail sent to the subscribers of the Perl 5 Maven site.
 
 
 
@@ -150,20 +146,22 @@ The moderator also has to make sure that the comments stay civil and not hesitat
 irrelevant or offending comments.
 
 Getting started with the translation
-------------------------------------
+=====================================
 * Sign up to Github, configure Git on your computer (name, email)
 * Fork the https://github.com/szabgab/perl5maven.com repository and clone the fork to your computer
 * Check on https://meta.wikimedia.org/wiki/List_of_Wikipediasi what sould be the hostname for the language
   and talk to Gabor about this.
 * cp -r skeleton sites/CC     (where CC is the hostname selected)
 * translate the first page sites/en/pages/installing-perl-and-getting-started.tt as
-                           sites/CC/done/installing-perl-and-getting-started.tt
-  or as                    sites/CC/done/TRANSLATD-BUT-TRANSLITERATED-TITLE.tt
+                           sites/CC/drafts/installing-perl-and-getting-started.tt
+  or as                    sites/CC/drafts/TRANSLATD-BUT-TRANSLITERATED-TITLE.tt
   as is acceptable in other sites in your language.
 * Add =original and =translator entries to the translated file
-* Add yourself to the sites/CC/authors.txt file and add a picture of yourself to the sites/CC/img/ folder.
+* Add yourself to the authors.txt file and add a 128x128 picture of yourself to the sites/en/img/ folder.
+* Please read  option 2 here: http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
+   and add the perlmaven.com site to the list of where you contribute.
 * Update sites/CC/pages/perl-tutorial.tt to include the page in the commented-out section.
-* push your changes to your forked repository and send a pull request
+* Push your changes to your forked repository and send a pull request
 
 
 PROMOTION
@@ -172,7 +170,7 @@ PROMOTION
 When articles are published they are posted to Google+, Twitter and sometimes even to Facebook.
 They are also posted on LinkedIN.
 
-An e-mail is sent out to the people who registered on the Perl 5 Maven site.
+An e-mail is sent out to the people who registered on the Perl Maven site.
 
 Many of the articles are included the Perl Weekly newsletter.
 

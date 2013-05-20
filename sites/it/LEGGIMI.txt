@@ -35,7 +35,7 @@ Le righe di codice sono all'interno dei tag
 TRADUZIONI
 -------------
 La repository https://github.com/szabgab/perl5maven.com archivia tutto il materiale tradotto
-per Perl 5 Maven per l'Italiano.
+per Perl Maven per l'Italiano.
 
 PROMOZIONE
 ----------
@@ -43,7 +43,7 @@ PROMOZIONE
 Quando gli articoli sono pubblicati, vengono trasmessi a Google+, Twitter e qualche volta anche vengono trasmessi su Facebook.
 Sono inoltre trasmessi su LinkedIN.
 
-Una e-mail è spedita alle persone che sono registrate sul sito Perl 5 Maven.   
+Una e-mail è spedita alle persone che sono registrate sul sito Perl Maven.
 
 Molti articoli sono inclusi alla newsletter Perl Weekly.
 
