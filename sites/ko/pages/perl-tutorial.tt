@@ -22,6 +22,8 @@
   <li><a href="/how-to-eliminate-a-value-in-the-middle-of-an-array-in-perl">Perl의 배열 중간에 있는 값을 제거하는 법</a></li>
   <li><a href="/how-to-capture-and-save-warnings-in-perl">Perl에서 경고메시지를 가로채어 저장하기</a></li>
   <li><a href="/unique-values-in-an-array-in-perl">배열에서 고유 값들만 남기기</a></li>
+  <li><a href="/using-a-queue-in-perl">Perl에서 큐 사용하기</a></li>
+  <li><a href="/boolean-values-in-perl">Perl의 불리언 값</a></li>
 
 <!--
   <li><a href=""></a></li>

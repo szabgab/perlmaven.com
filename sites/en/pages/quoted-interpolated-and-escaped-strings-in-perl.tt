@@ -23,7 +23,7 @@ Strings can be placed either between single quotes <hl>'</hl> or double quotes <
 <h2>Single quoted strings</h2>
 
 If you put characters between single quotes <hl>'</hl>, then almost all the characters,
-except the single-quote itself <hl>'</hl>, and back-slash <hl>\</hl>, the escape character,
+except the single-quote itself <hl>'</hl>,
 are interpreted as they are written in the code.
 
 <code lang="perl">
