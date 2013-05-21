@@ -1,4 +1,4 @@
-=title Perl 中文教程 
+﻿=title Perl 中文教程 
 =timestamp 2012-05-02T22:45:56
 =status show
 =original perl-tutorial
@@ -39,7 +39,7 @@
     <li><a href="/how-to-sort-faster-in-perl"> 如何更快地排序？</a></li>
     <li><a href="/global-symbol-requires-explicit-package-name">全局符号需要明确包名</a></li>
 		<li><a href="/how-to-replace-a-string-in-a-file-with-perl">如何使用Perl对文本进行字符串替换</a></li>
-		<li><a href="/open-and-read-from-files">打开并读取文本文件</a></li>
+    <li><a href="/open-and-read-from-files">打开并读取文本文件</a></li>
 		<li><a href="/sorting-arrays-in-perl">Perl数组排序</a></li>
 		<li><a href="/subroutines-and-functions-in-perl">Perl里的函数和子例程</a></li>
 		<li><a href="/trim">使用Perl删除前导和拖尾空白</a></li>
@@ -58,7 +58,9 @@
 		<li><a href="/comparing-scalars-in-perl">Perl中标量的比较</a></li>
 		<li><a href="/perl-on-the-command-line">Perl命令行</a></li>
 		<li><a href="/scalar-found-where-operator-expected">标量出现在操作符的位置</a></li>
-                <li><a href="/using-a-queue-in-perl">Perl中的队列</a></li>
+    <li><a href="/using-a-queue-in-perl">Perl中的队列</a></li>
+    <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" 隐藏同作用域下之前的声明</a></li>
+	  <li><a href="/debugging-perl-scripts">调试Perl脚本</a></li>
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>

@@ -1,0 +1,162 @@
+=title Don't Open Files in the old way
+=timestamp 2013-03-21T00:45:17
+=indexes open
+=status show
+=original open-files-in-the-old-way
+=books beginner_book
+=author szabgab
+=translator terrencehan
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+Earlier in the <a href="/perl-tutorial">Perl Tutorial</a>
+we saw how to open a file for reading or writing.
+Unfortunately, when you search the web, or when you look at code
+in corporations you will see some slightly different syntax.
+在之前的<a href="/perl-tutorial">Perl教程</a>中我们看到了如何打开文件。不幸的是，如果你在网络上搜索，或者看公司的代码，你会看到不同的语法。
+
+Let's see what is that, what is the problem with that and why to avoid?
+来看一下那是什么？它们的问题在哪里？如何避免？
+
+=abstract end
+
+<h2>我该怎么办?</h2>
+
+Before explaining what you should not do, let me link you to the articles explain what you should do:
+在说明什么不该做之前，请点击链接看一下你应该怎么做：
+
+Read <a href="/open-and-read-from-files">how to open file for reading in a modern way</a>
+or the one about <a href="/writing-to-files-with-perl">writing to file in Perl</a>.
+阅读<a href="/open-and-read-from-files">how to open file for reading in a modern way</a>或者是<a href="/writing-to-files-with-perl">writing to file in Perl</a>。
+
+Now let's get back to the old, and not-so-good-any-more practices.
+现在来回到以前不怎么好的方式。
+
+<h2>The old and not recommended way</h2>
+
+Until perl 5.6 came out - that's until 2000 - we used to write code
+like this to open a file for writing:
+直到perl5.6发布（2000年前），我们写这样的代码来打开写文件：
+
+<code lang="perl">
+open OUT, ">$filename" or die ...;
+</code>
+
+这样打开读文件：
+
+<code lang="perl">
+open IN, $filename or die ...;
+</code>
+
+The "or die" part was the same as we do today, not fully spelled out here.
+"or die"的部分沿用至今，在这里没有完全写完。
+
+As you can see <hl>open</hl> got two parameters. The first is a set
+of (usually upper-case) letters. That's the thing that will get the
+filehandle. The second is the combined opening mode and the path to
+the file that needs to be opened.
+如你看到的，<hl>open</hl>可以传入两个参数。第一个参数通常由大写字母构成，第二个则混合了打开方式及路径。
+
+That is, in the first case you see the greater-than sign meaning we
+are opening the file for writing, but in the second example we used to
+omit the opening mode. That's because <hl>open()</hl> defaults to reading.
+在第一个例子中的大于号表示写打开文件，但在第二个例子中却省略了打开模式。这是因为<hl>open()</hl>默认的是读打开。
+
+There are two big differences:
+有两个大的不同：
+
+<h2>Filehandle glob</h2>
+
+The first is that we use the strange variable without the
+leading <hl>$</hl> to hold the filehandle.
+(This is actually a <b>bareword</b>, but one that does not trigger
+the <a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a>
+error.)
+首先，我们使用没有前置<hl>$</hl>的变量来作为文件句柄。（这是实际上是<b>裸字</b>，但是它不会触发<a href="/barewords-in-perl">不允许在开启"strict subs"时使用裸字</a>的错误。
+
+It works as it worked in the early days of Perl, but there are several problems with it:
+这会跟以前一样正常工作，但仍有几个问题：
+
+It is global to all the script you write so if anyone
+uses the same name (IN or OUT in our example) those
+will clash with yours.
+它对于所有脚本是全局的，所以如果有人使用相同的名字（本例的IN或OUT）会产生冲突。
+
+It is also harder to pass these variables to functions,
+than to do the same with regular scalar variables.
+这也会比普通的标量更难传递给函数。
+
+<h2>两个参数的open</h2>
+
+The second difference is the fact that in these examples <hl>open</hl> got only two parameters.
+第二个不同点是例子中的<hl>open</hl>是传入两个参数。
+
+What if the variable <hl>$filename</hl>, that you are using to open
+a file for reading, contains >/etc/passwd ?
+如果打开读的变量<hl>$filename</hl>包含">/etc/passwd"会怎样呢？
+
+Oups.
+
+
+The <hl>open IN, $filename</hl> will actually open that file for writing.
+实际上<hl>open IN, $filename</hl>会写打开文件。
+
+You just deleted the password file of your Linux operating system.
+这样，你就删除了Linux操作系统上的密码文件。（权限）
+
+Not good.
+这就不好了。
+
+<h2>需要关闭文件句柄</h2>
+
+Another advantage of using <b>lexically scoped scalar variables</b>
+as filehandles is that they will automatically be closed when
+they go out of scope.
+另外一个建议是<b>使用词法作用域的标量</b>作为文件句柄，它们会在离开作用域的时候自动关闭。
+
+<h2>如何避免这些问题？</h2>
+
+It's better to avoid both of these practices and use the "new",
+(available since 2000 !) <a href="/open-and-read-from-files">3-parameter open
+with scalar lexical variable</a> for storing the filehandle.
+最好避免这些方式而采用“新”的方式（2000年后），<a href="/open-and-read-from-files">配合词法变量使用3-参量的open</a>来获得文件句柄。
+
+There are even policies in <a href="http://www.perlcritic.com/">Perl::Critic</a>
+that will help you analyze the code and locate every place where someone has used either
+of the above forms.
+在<a href="http://www.perlcritic.com/">Perl::Critic</a>甚至还有一些法规，这个站点会帮你分析并在代码中定位出以上形式。
+
+<h2>Good and Bad for reading</h2>
+
+Bad:
+
+<code lang="perl">
+open IN, $filename or die ...;
+</code>
+
+Good:
+
+<code lang="perl">
+open my $in, '<', $filename or die ...;
+</code>
+
+<h2>Good and Bad for writing</h2>
+
+Bad:
+
+<code lang="perl">
+open IN, ">$filename" or die ...;
+</code>
+
+Good:
+
+<code lang="perl">
+open my $in, '>', $filename or die ...;
+</code>
+
+
