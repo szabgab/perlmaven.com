@@ -1,6 +1,6 @@
 =title Simple Database access using Perl DBI and SQL
-=timestamp 2013-01-17T14:45:56
-=indexes SQL, DBI, DBD::SQLite
+=timestamp 2013-05-21T10:45:56
+=indexes SQL, DBI, DBD::SQLite, SELECT, fetchrow_array, fetchrow_hashref
 =status show
 =author szabgab
 =index 1
