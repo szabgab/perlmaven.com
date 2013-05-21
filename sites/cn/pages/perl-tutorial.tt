@@ -60,6 +60,7 @@
 		<li><a href="/scalar-found-where-operator-expected">标量出现在操作符的位置</a></li>
         <li><a href="/using-a-queue-in-perl">Perl中的队列</a></li>
         <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" 隐藏同作用域下之前的声明</a></li>
+	<li><a href="/debugging-perl-scripts">调试Perl脚本</a></li>
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
