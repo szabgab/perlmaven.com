@@ -68,7 +68,7 @@ For example, what happens if some of the words start with an upper case letter?
 my @words = qw(foo bar Zorg moo);
 </code>
 
-The result in <hl>@sorted_names</hl> is going to be:
+The result in <hl>@sorted_words</hl> is going to be:
 
 <code lang="perl">
 $VAR1 = [
