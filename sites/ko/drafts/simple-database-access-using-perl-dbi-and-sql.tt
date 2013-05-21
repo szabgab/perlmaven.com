@@ -13,27 +13,17 @@
 
 =abstract start
 
-While in most fields Perl adheres to the concept of
-<a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">TMTOWTDI</a>,
-in accessing relational databases Perl has a de-facto standard library
-called DBI or <b>Database independent interface for Perl</b>.
+Perl의 특징적인 문화중 하나로 "모든 일을 하는데는 한가지 이상의 방법이 있다" - <a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_i">TMTOWTDI</a>로 대변되는 자유로움이 있습니다. 하지만 관계형 데이터베이스 접근방법에 있어서 만큼은 <b>사실상 산업계의 표준이 된 일관된 방식의 표준 라이브러리인 DBI(Database independent interface for Perl)를 제공</b>하고 있습니다. 오늘은 이 DBI에 대해서 알아보도록 하겠습니다.
 
 =abstract end
 
-<h2>Architecture</h2>
+<h2>구조</h2>
 
-The Perl scripts use DBI, which in turn uses the appropriate
-<b>Database Driver</b> (e.g. <a href="https://metacpan.org/module/DBD::Oracle">DBD::Oracle</a>
-for <a href="http://www.oracle.com/">Oracle</a>,
-<a href="https://metacpan.org/module/DBD::Pg">DBD::Pg</a> for <a href="http://www.postgresql.org/">PostgreSQL</a>
-and <a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> to access <a href="http://sqlite.org/">SQLite</a>).
+Perl 프로그램에서 DBI를 사용해서 DB에 접근하면 DBI는 적절한 <b>데이타베이스 드라이버</b>를 불러옵니다. (예를 들면 <a href="http://www.oracle.com/">Oracle</a>에 접속을 시도하면 <a href="https://metacpan.org/module/DBD::Oracle">DBD::Oracle</a>, <a href="http://www.postgresql.org/">PostgreSQL</a>에 접속하면 <a href="https://metacpan.org/module/DBD::Pg">DBD::Pg</a>, <a href="http://sqlite.org/">SQLite</a>에 접속하면 <a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a>)
 
-Those drivers are compiled together with the C client libraries
-of the respective database engines. In case of SQLite, of course all the
-database engine gets embedded in the perl application.
+이런 드라이버는 주로 해당 데이터베이스 엔진에 맞는 C 클라이언트 라이브러리로 컴파일되는 형태로 제공됩니다. SQLite의 경우 DB자체가 가벼운 특징을 가지고 있기 때문에 드라이버를 불러들이면 데이터베이스 엔진 전체가 Perl 응용프로그램으로 적제됩니다.
 
-It is very hard to improve on the lovely ASCII-art that comes
-with the documentation of <a href="https://metacpan.org/module/DBI">DBI</a> so let me reproduce it here:
+이런 DBI의 구조를 ASCII로 가장 잘 표현한 도식은 <a href="https://metacpan.org/module/DBI">DBI 공식문서</a>에서 표현한 아래 내용입니다.
 
 <pre>
              |<- Scope of DBI ->|
