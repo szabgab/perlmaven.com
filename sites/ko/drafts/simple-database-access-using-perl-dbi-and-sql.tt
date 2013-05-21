@@ -1,8 +1,10 @@
-=title Simple Database access using Perl DBI and SQL
-=timestamp 2013-05-21T10:45:56
+=title DBI와 SQL을 이용한 간편한 Database접근
+=timestamp 2013-05-21T08:32:47
 =indexes SQL, DBI, DBD::SQLite, SELECT, fetchrow_array, fetchrow_hashref
 =status show
+=original simple-database-access-using-perl-dbi-and-sql
 =author szabgab
+=translator yongbin
 =index 1
 =archive 1
 =feed 1
