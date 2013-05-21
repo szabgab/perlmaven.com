@@ -24,6 +24,7 @@
   <li><a href="/unique-values-in-an-array-in-perl">배열에서 고유 값들만 남기기</a></li>
   <li><a href="/using-a-queue-in-perl">Perl에서 큐 사용하기</a></li>
   <li><a href="/boolean-values-in-perl">Perl의 불리언 값</a></li>
+  <li><a href="/simple-database-access-using-perl-dbi-and-sql">Perl DBI와 SQL을 사용한 간단한 데이타베이스</a></li>
 
 <!--
   <li><a href=""></a></li>
