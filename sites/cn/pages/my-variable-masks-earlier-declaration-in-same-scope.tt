@@ -1,5 +1,5 @@
 =title "my" 隐藏同作用域下之前的声明
-=timestamp 2013-04-19T16:46:56
+=timestamp 2013-05-21T15:04:23
 =indexes my, scope
 =status show
 =original my-variable-masks-earlier-declaration-in-same-scope
@@ -71,7 +71,7 @@ if (1) {
 
 在这两个例子中，我们都在同一个作用域中声明了两次<hl>$x</hl>，并且都产生了编译时警告。
 
-在第二个例子里，我们对<hl>$z</hl>也进行了两次声明，但是没有产生任何警告。这是因为<hl>$z</hl>所在的代码块是一个独立的<a href="/scope-of-variables-in-perl">作用域</a>。
+在第二个例子里，我们也对<hl>$z</hl>进行了两次声明，但是没有产生任何警告。这是因为<hl>$z</hl>所在的代码块是一个独立的<a href="/scope-of-variables-in-perl">作用域</a>。
 
 <h2>函数的作用域</h2>
 

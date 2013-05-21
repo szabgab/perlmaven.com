@@ -70,7 +70,7 @@ while (@people) {
 
 <h2>Abstract implementation</h2>
 
-下面的代码是一种更抽象的形式，它使用到了<a href="/subroutines-and-functions-in-perl.html">函数</a>（没有完全实现）。
+下面的代码是一种更抽象的形式，它使用到了<a href="/subroutines-and-functions-in-perl">函数</a>（没有完全实现）。
 
 <code lang="perl">
 #!/usr/bin/perl
