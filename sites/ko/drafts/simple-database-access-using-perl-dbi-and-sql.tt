@@ -1,8 +1,10 @@
-=title Simple Database access using Perl DBI and SQL
-=timestamp 2013-05-21T10:45:56
+=title Perl DBI와 SQL을 사용한 간단한 데이타베이스
+=timestamp 2013-05-22T04:00:00
 =indexes SQL, DBI, DBD::SQLite, SELECT, fetchrow_array, fetchrow_hashref
 =status show
+=original simple-database-access-using-perl-dbi-and-sql
 =author szabgab
+=translator gypark
 =index 1
 =archive 1
 =feed 1
@@ -11,48 +13,50 @@
 
 =abstract start
 
-While in most fields Perl adheres to the concept of
-<a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">TMTOWTDI</a>,
-in accessing relational databases Perl has a de-facto standard library
-called DBI or <b>Database independent interface for Perl</b>.
+대부분의 분야에서 Perl은
+<a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">한 가지 일을 하는 데에는 여러 가지 방법이 있다</a>는
+개념을 고수합니다만, 관계형 데이타베이스를 접근할 때에는
+<b>데이타베이스에 독립적인 인터페이스(Database independent interface)</b>
+또는 DBI라 불리는 라이브러리가 사실상의 표준으로 사용됩니다.
 
 =abstract end
 
-<h2>Architecture</h2>
+<h2>구조</h2>
 
-The Perl scripts use DBI, which in turn uses the appropriate
-<b>Database Driver</b> (e.g. <a href="https://metacpan.org/module/DBD::Oracle">DBD::Oracle</a>
-for <a href="http://www.oracle.com/">Oracle</a>,
-<a href="https://metacpan.org/module/DBD::Pg">DBD::Pg</a> for <a href="http://www.postgresql.org/">PostgreSQL</a>
-and <a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> to access <a href="http://sqlite.org/">SQLite</a>).
+Perl 스크립트는 DBI를 사용하고, DBI는 다시 적절한 <b>데이타베이스 드라이버</b>를 사용합니다.
+(예를 들자면 <a href="http://www.oracle.com/">Oracle</a>을 사용하기 위한
+<a href="https://metacpan.org/module/DBD::Oracle">DBD::Oracle</a>,
+<a href="http://www.postgresql.org/">PostgreSQL</a>을 사용하기 위한
+<a href="https://metacpan.org/module/DBD::Pg">DBD::Pg</a>,
+<a href="http://sqlite.org/">SQLite</a>을 사용하기 위한
+<a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> 등등)
 
-Those drivers are compiled together with the C client libraries
-of the respective database engines. In case of SQLite, of course all the
-database engine gets embedded in the perl application.
+이 드라이버들은 각각의 데이타베이스 엔진의 C 클라이언트 라이브러리와 같이 컴파일되어 있습니다.
+물론 SQLite의 경우는 데이타베이스 엔진 전체가 Perl 응용프로그램내에 내장됩니다.
 
-It is very hard to improve on the lovely ASCII-art that comes
-with the documentation of <a href="https://metacpan.org/module/DBI">DBI</a> so let me reproduce it here:
+<a href="https://metacpan.org/module/DBI">DBI</a> 모듈 문서에 들어 있는 아스키 문자 그림이
+너무도 잘 되어 있어서, 여기서는 그걸 그대로 보여드리겠습니다:
 
 <pre>
-             |<- Scope of DBI ->|
-                  .-.   .--------------.   .-------------.
-  .-------.       | |---| XYZ Driver   |---| XYZ Engine  |
-  | Perl  |       | |   `--------------'   `-------------'
-  | script|  |A|  |D|   .--------------.   .-------------.
-  | using |--|P|--|B|---|Oracle Driver |---|Oracle Engine|
-  | DBI   |  |I|  |I|   `--------------'   `-------------'
-  | API   |       | |...
-  |methods|       | |... Other drivers
-  `-------'       | |...
-                  `-'
+             |<- DBI의 영역 ->|
+                   .-.   .----------------.   .-------------.
+  .--------.       | |---| XYZ 드라이버   |---| XYZ 엔진    |
+  | DBI의  |       | |   `----------------'   `-------------'
+  | API를  |  |A|  |D|   .----------------.   .-------------.
+  | 사용한 |--|P|--|B|---|Oracle 드라이버 |---|Oracle 엔진  |
+  |        |  |I|  |I|   `----------------'   `-------------'
+  | Perl   |       | |...
+  |스크립트|       | |... 다른 드라이버
+  `--------'       | |...
+                   `-'
 </pre>
 
-<h2>Simple example</h2>
+<h2>간단한 예제</h2>
 
-I'll use SQLite to demonstrate the examples. That will make it
-very easy for you to try them on your computer.
-(e.g All versions of <a href="http://dwimperl.com/">DWIM Perl</a> already come
-with the necessary modules.)
+SQLite를 사용한 예제를 보여드리겠습니다. SQLite를 택한 이유는 여러분의 컴퓨터에서
+매우 쉽게 직접 해볼 수 있기 때문입니다.
+(예를 들어 <a href="http://dwimperl.com/">DWIM Perl</a>의 어떤 버전이든
+필요한 모듈이 다 포함되어 있습니다.)
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -78,33 +82,30 @@ my $dbh = DBI->connect($dsn, $user, $password, {
 $dbh->disconnect;
 </code>
 
-We load DBI but we do <b>not</b> explicitly load the database driver. That will be done by DBI.
+DBI를 로드하지만, 명시적으로 데이타베이스 드라이버를 로드하지는 <b>않습니다</b>.
+그것은 DBI가 할 일입니다.
 
-The <b>DSN (Data Source Name)</b> (in the $dsn variable) is very straight forward.
-It contains the type of the database. That will be the clue to DBI which DBD to load.
-In case of SQLite, the only thing we really need is the path to the database file.
+($dsn 변수에 들어 있는) <b>DSN(데이타 소스 이름)</b>은 매우 직관적입니다.
+데이타베이스의 종류가 명시되어 있어서, DBI가 어떤 데이타베이스 드라이버를 불러와야 할지
+알려줍니다. SQLite의 경우, 그 외 필요한 건 데이타베이스 파일의 경로명 뿐입니다.
 
-The username and password fields were left empty. I think they are not
-relevant at all for SQLite.
+사용자이름과 비밀번호는 빈 채로 두었습니다. SQLite에는 별 관련 없어 보입니다.
 
-The last parameter of the connect call is a reference to a hash containing
-some attributes I like to set.
+connect를 호출할 때 마지막 인자는 제가 설정해두고픈 몇 가지 속성들이 담긴 해시의 레퍼런스입니다.
 
-The DBI->connect call returns a <b>database handle object</b> that usually we store
-in a variable called <hl>$dbh</hl>.
+DBI->connect를 호출하면 <b>데이타베이스 핸들 객체</b>가 반환되고, 이 객체를 <hl>$dbh</hl>란 이름의
+변수에 저장하는 게 보통입니다.
 
-The call to <b>disconnect</b> from the database is optional as it
-will automatically be called when the variable <hl>$dbh</hl> goes out
-of scope, but it having it might be a clear indication for
-the next programmer dealing with this code, that you are done with the database.
+<b>disconnect</b>를 호출하는 것은 필수는 아닙니다. <hl>$dbh</hl> 변수가 영역을 벗어나 사라지게 될 때
+자동으로 호출되기 때문입니다. 그러나 명시적으로 적어주면 이 코드를 다른 프로그래머가 볼 때
+데이타베이스에 관련된 작업이 끝났다는 것을 명확히 알 수 있을 것입니다.
 
-<h2>CREATE TABLE</h2>
+<h2>테이블 생성 - CREATE TABLE</h2>
 
-Of course having a connection is not enough. We need to be able to fetch data from the
-database, or insert data into the database, but for our example to work first we
-actually need to create the tables of the database.
+물론 데이타베이스에 연결한 것만으로는 부족하고, 데이타베이스에 자료를 넣거나 조회할 수
+있어야 할 것입니다. 하지만 그러기 위해서는 먼저 데이타베이스에 테이블을 생성해야 합니다.
 
-In this case we can do this with a single command:
+이번 경우는 명령어 하나로 테이블을 생성할 수 있습니다:
 
 <code lang="perl">
 my $sql = <<'END_SQL';
@@ -120,14 +121,15 @@ END_SQL
 $dbh->do($sql);
 </code>
 
-The first statement is just a <a href="/here-document">here document</a> of an
-SQL statement to CREATE TABLE.
-Then we call the <hl>do</hl> method of the database handle which will send the
-SQL statement to the database.
+첫번째 구문에서는 CREATE TABLE을 실행하는 SQL 구문을
+<a href="http://perlmaven.com/here-document">here document</a>
+를 사용하여 변수에 담았습니다.
 
-<h2>INSERT</h2>
+그 다음 데이타베이스 핸들의 <hl>do</hl> 메쏘드를 호출하여 SQL 구문을 데이타베이스로 전송합니다.
 
-Now let's see the real thing, inserting data:
+<h2>삽입 - INSERT</h2>
+
+이제 본격적으로, 자료를 삽입해 보겠습니다:
 
 <code lang="perl">
 my $fname = 'Foo';
@@ -138,27 +140,27 @@ $dbh->do('INSERT INTO people (fname, lname, email) VALUES (?, ?, ?)',
   $fname, $lname, $email);
 </code>
 
-To insert a row we call the <hl>$dbh->do</hl> method again, but instead of passing
-the actual data, we put question-marks <hl>?</hl> as <b>place-holders</b>.
+행 하나를 삽입하기 위하여 <hl>$dbh->do</hl> 메쏘드를 다시 호출하는데,
+실제 자료를 넘기지 않고 대신 자료가 들어갈 곳을 지정하는
+<b>위치 표시자(place-holders)</b>로 물음표 <hl>?</hl>를 사용했습니다.
 
-The SQL statement is followed by the word <hl>undef</hl>.
-That's actually the place of a hash-reference providing
-parameters to this specific call, similar to the attributes
-passed to the <hl>connect</hl> method, but I think it is rarely used in these
-statements.
+SQL구문 다음 인자는 <hl>undef</hl>입니다. 원래 이 자리에는
+<hl>connect</hl> 메쏘드를 호출할 때 속성을 지정하던 것처럼 이번 호출에만
+적용될 파라메터들이 들어있는 해시 레퍼런스가 와야 합니다만, 제 생각엔 거의 사용되지
+않을 것입니다.
 
-The <hl>undef</hl> is followed by the actual values that go in place of the the place-holders.
+<hl>undef</hl> 다음에는 아까 표시한 위치표시자 자리에 들어갈 실제 값들이 적혀 있습니다.
 
-As you can see we did not have to put the place-holders in any kind of quotes
-nor did we have to somehow convert the values. DBI did it for us.
+보다시피 위치표시자를 어떤 형태의 따옴표 안에 넣는다거나 어떤 식으로든 실제 값으로
+변환할 필요가 없습니다. DBI가 우리 대신에 해줍니다.
 
-This helps us avoid
-<a href="http://en.wikipedia.org/wiki/Sql_injection">SQL injection</a> attacks.
-Even if you meet someone called <a href="http://bobby-tables.com/">Bobby Tables</a>.
+이렇게 함으로써
+<a href="http://en.wikipedia.org/wiki/Sql_injection">SQL 인젝션</a> 공격을 피할 수 있습니다.
+이젠 <a href="http://bobby-tables.com/">Bobby Tables</a> 같은 사람을 만나도 안심입니다.
 
-<h2>UPDATE</h2>
+<h2>갱신 - UPDATE</h2>
 
-For updating some data in the database we also use the <hl>do</hl> method.
+어떤 자료를 갱신할 때도 <hl>do</hl> 메쏘드를 사용합니다.
 
 <code lang="perl">
 my $password = 'hush hush';
@@ -170,42 +172,41 @@ $dbh->do('UPDATE people SET password = ? WHERE id = ?',
   $id);
 </code>
 
-Nothing special here. An SQL statement with some place-holders. <hl>undef</hl>
-instead of the extra attributes, and the parameters to be used in place of
-the place-holders.
+특별할 것 없습니다. 위치표시자가 포함된 SQL 구문이 있고, 추가 속성이 들어갈 자리에
+<hl>undef</hl>이 오고, 위치표시자 자리에 적힐 값들이 나옵니다.
 
-<h2>SELECT</h2>
+<h2>조회 - SELECT</h2>
 
-This is by far the most interesting part of the database access. As the SELECT
-statement can return a lot of rows and a lot of values in each row we cannot use
-a simple call to the <hl>do</hl> method.
+데이타베이스를 사용할 때 가장 재미있는 부분입니다.
+SELECT 구문이 반환하는 것이, 여러 값들로 구성된 다수의 행들일 수도 있기 때문에, 단순히
+<hl>do</hl> 메쏘드를 한 번 호출하여 가져올 수는 없습니다.
 
-Instead, there are several ways to fetch the data. I'll show here two.
-For both we have 3 steps: <hl>prepare</hl> the SQL statement,
-<hl>execute</hl> the statement with specific data, and <hl>fetch</hl> the rows.
+대신에, 자료를 가져오는 여러 방법이 있는데, 여기서는 그 중 두 가지를 보여드리겠습니다.
+두 방법 다 세 단계로 이루어집니다: <hl>prepare</hl>로 SQL 구문을 준비시키고, <hl>execute</hl>로
+그 구문에 특정한 데이타를 넣어 실행하고, <hl>fetch</hl>로 행들을 가져옵니다.
 
-From these, the <hl>prepare</hl> statement can be shared by - assuming the queries
-only differ in the data we pass to them. We create an SQL statement using
-question marks (<hl>?</hl>) as place-holders instead of actual values.
+여기서 <hl>prepare</hl> 구문은 여러 쿼리에서 공유할 수 있습니다 - 이 쿼리들이 다른 부분은 동일하고
+인자 데이타만 달라지는 경우라면요. SQL 구문을 만들 때 물음표(<hl>?</hl>)를 위치표시자로
+사용하여 실제 데이타가 들어갈 자리에 넣었습니다.
 
-This call returns a <b>statement handle object</b> that we usually save in a
-variable called <hl>$sth</hl>.
+prepare를 호출하면 <b>구문 핸들 객체</b>가 반환됩니다. 이 객체는 통상적으로
+<hl>$sth</hl> 변수에 보관합니다.
 
-Then we call the <hl>execute</hl> method of the <b>statement handle</b> passing to
-it values that should be placed instead of the place-holders.
+그 다음은 이 <b>구문 핸들</b>이 제공하는 <hl>execute</hl> 메쏘드를 호출하는데, 이 때
+위치표시자 자리에 들어갈 실제 인자 값들을 적어줍니다.
 
-The third step is the really interesting one.
-In a <b>while loop</b> we fetch the results, row-by row. For this we can use several methods:
+세번째 단계가 정말 흥미로운 단계입니다.
+<b>while 루프</b> 안에서 조회 결과를 한 행씩 가져옵니다. 이 때 여러 가지 메쏘드를 사용할 수 있습니다:
 
-The <hl>fetchrow_array</hl> method will return the values of the next row in the result set
-as a list, that we can assign to an array. The order of the elements is as the order
-of the fields in the query. (fname, lname in our case).
+<hl>fetchrow_array</hl> 메쏘드는 조회된 결과의 다음 행의 내용을 리스트 형태로 반환합니다.
+그 리스트는 배열에 담을 수 있습니다. 리스트의 원소의 순서는 쿼리에 적힌 필드의 순서와 동일합니다.
+(이 경우에는 fname, lname 순서)
 
-The <hl>fetchrow_hashref</hl> method will return a reference to a hash. In the hash
-the keys will be the names of the fields in the database. As different databases might
-return these names of the fields in different cases we configured our database handler
-to make sure they - the names of the fields - will always converted to lower case.
-(That's what the <hl>FetchHashKeyName</hl> parameter did, when connecting to the database.)
+<hl>fetchrow_hashref</hl> 메쏘드는 해시의 레퍼런스를 반환합니다. 이 해시에는 데이타베이스의
+필드 이름들이 키로 저장됩니다. 데이타베이스마다 이런 필드 이름들을 대문자 형태로 반환할지 소문자 형태로
+반환할지 다를 수 있기 때문에, 이번 예제에서는 필드 이름들이 항상 소문자로 변환되도록 데이타베이스
+핸들러를 설정하였습니다.
+(이게 바로 데이타베이스에 연결할 때 <hl>FetchHashKeyName</hl> 매개변수가 했던 일입니다.)
 
 <code lang="perl">
 my $sql = 'SELECT fname, lname FROM people WHERE id > ? AND id < ?';
@@ -222,18 +223,16 @@ while (my $row = $sth->fetchrow_hashref) {
 </code>
 
 
-<h2>Exercise</h2>
+<h2>실습</h2>
 
-Take the above snippets of code. Use  the first one to set up the
-database and create a table. Then use the second one to insert
-a few people in the table.
+위의 코드들을 사용해 보세요. 첫번째 코드를 써서 데이타베이스를 준비하고 테이블을 생성해보세요.
+그 다음 두번째 코드를 사용하여 테이블에 몇 명의 자료를 넣어보세요.
 
-Finally use the last example to extract some data from the database
-and print it out.
+끝으로 마지막 예제 코드를 사용하여 데이타베이스에서 자료를 빼내어 출력해봅시다.
 
-If you have any question, feel free to ask below.
+궁금한 게 있다면 아래에 자유롭게 질문하시기 바랍니다.
 
-<h2>Thanks</h2>
+<h2>감사의 말</h2>
 
-to sigzero for correcting a bug in the examples!
+예제 코드의 버그를 잡아 준 sigzero에게 감사합니다.
 
