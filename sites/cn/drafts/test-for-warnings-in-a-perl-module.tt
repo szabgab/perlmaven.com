@@ -1,5 +1,5 @@
 =title 测试Perl模块中的警告信息
-=timestamp 2012-07-03T10:10:10
+=timestamp 2013-05-21T10:10:10
 =indexes warnings, __WARN__, Test::Warn
 =status show
 =original test-for-warnings-in-a-perl-module
