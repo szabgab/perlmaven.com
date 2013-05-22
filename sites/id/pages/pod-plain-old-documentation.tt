@@ -14,7 +14,7 @@
 
 =abstract strart
 
-Para programer biasanya benci menulis dokumentasi Sebagian alasannya
+Para programer biasanya benci menulis dokumentasi. Sebagian alasannya
 adalah bahwa program seringkali hanya merupakan berkas teks biasa, namun pada beberapa kasus para pengembang
 diharuskan menulis dokumentasi pada program pengolah kata.
 
@@ -51,7 +51,7 @@ mencetak hasilnya pada layar.
 print "Di sinilah Anda meletakkan kode Anda... \n";
 </code>
 
-Jika Anda menyimpannya sebagai <hl>script.pl</hl> dan menjalankannya dengan perintah <hl>perl script.pl</hl,
+Jika Anda menyimpannya sebagai <hl>script.pl</hl> dan menjalankannya dengan perintah <hl>perl script.pl</hl>,
 Perl akan mengabaikan semua hal yang terletak di antara baris <hl>=pod</hl> dan <hl>=cut</hl>.
 Ia hanya akan mengeksekusi kode yang sesungguhnya.
 
@@ -70,7 +70,7 @@ yang dibangun untuk komunitas itu sendiri. Sekalipun untuk kepentingan pribadi A
 
 <h2>Terlalu simpel ya?</h2>
 
-Asumsinya adalah bahwa jika Anda membuka sebagian besar blokir penulisan dokumentasi lebih banyak orang akan menulis dokumentasi. Daripada belajar
+Asumsinya adalah bahwa jika Anda membuka sebagian besar blokir penulisan dokumentasi, maka lebih banyak orang akan menulis dokumentasi. Daripada belajar
 bagaimana menggunakan program pengolah kata untuk membuat dokumen yang tampak bagus, Anda hanya perlu
 mengetikkan beberapa teks dengan sedikit tambahan simbol-simbol dan seketika Anda bisa mendapatkan
 dokumen yang layak. (Lihat dokumen pada <a href="http://metacpan.org/">Meta CPAN</a>
@@ -79,7 +79,7 @@ untuk melihat versi POD yang terformat dengan baik.)
 <h2>Bahasa Markup</h2>
 
 Deskripsi detail mengenai <a href="http://perldoc.perl.org/perlpod.html">POD markup language</a>
-dapat ditemukan di <a href="http://perldoc.perl.org/perlpod.html">perldoc perlpod</a> namun
+dapat ditemukan di <a href="http://perldoc.perl.org/perlpod.html">perldoc perlpod</a> dan
 ini sangat mudah.
 
 Ada beberapa tag seperti <hl>head1</hl> dan <hl>head2</hl>
