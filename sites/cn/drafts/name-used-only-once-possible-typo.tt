@@ -2,6 +2,7 @@
 =timestamp 2013-03-05T20:31:10
 =indexes warnings, strict, possible typo
 =status show
+=original name-used-only-once-possible-typo
 =books beginner_book
 =author szabgab
 =translator terrencehan
@@ -14,6 +15,7 @@
 =abstract start
 
 If you see this warning in a Perl script you are in deep trouble.
+如果在Perl脚本中看到这样的警告信息，你可能有大麻烦了。
 
 =abstract end
 
@@ -22,11 +24,14 @@ If you see this warning in a Perl script you are in deep trouble.
 Assigning to a variable, but then never using it,
 or using a variable once without assigning any value to it ever,
 are rarely correct in any code.
+给某个变量赋值但是从来没有用它，或者变量之只用一次但没有给它赋值，这在任何代码中一般都有错误。
 
 Probably the only "legitimate" case, is if you made a typo,
 and that's how you ended up with a variable that is used only once.
+可能唯一“合理”的解释就是输入错误，这就是有导致变量只使用一次的原因。
 
 Here is an example of code in which we <b>only assign to a variable</b>:
+这有个例子就是<b>只对变量赋值</b>：
 
 <code lang="perl">
 use warnings;
@@ -35,6 +40,7 @@ $x = 42;
 </code>
 
 It will generate a warning like this:
+会产生如下警告：
 
 <code>
 Name "main::x" used only once: possible typo at ...
@@ -50,6 +56,7 @@ It is confusing, but hopefully you won't need to deal with this for a long time.
 <h2>Fetch value only</h2>
 
 If you happen to <b>use a variable only once</b>
+如果你<b>只使用某个变量一次</b>
 
 <code lang="perl">
 use warnings;
@@ -58,6 +65,7 @@ print $x;
 </code>
 
 then you will probably get two warnings:
+那么会得到两条错误信息：
 
 <code>
 Name "main::x" used only once: possible typo at ...
@@ -66,34 +74,44 @@ Use of uninitialized value $x in print at ...
 
 One of them we are discussing now, the other one is discussed in
 <a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
+其中之一是我们正在讨论的，而另一个将会在<a href="/use-of-uninitialized-value">使用未初始化的值</a>中讨论。
 
 
-<h2>What is the typo there?</h2>
+<h2>有什么输入错误？</h2>
 
 You might ask.
+你可能会这么问。
 
 Just imagine someone using a variable called <hl>$l1</hl>. Then later,
 you come and want to use the same variable but you write <hl>$ll</hl>.
 Depending on your font they might look very similar.
+设想一下，有人使用了一个变量<hl>$l1</hl>，之后你要使用同一个变量，但是你却输入了<hl>$ll</hl>。可能是因为在你的字体中它们看起来很像。
 
 Or maybe there was a variable called <hl>$color</hl> but you are British
 and you automatically type <hl>$colour</hl> when you think about that thing.
+或者变量是<hl>$color</hl>，但你是英国人，你可能自然而然地在考虑同一个东西的时候输入<hl>$colour</hl>。
 
 Or there was a variable called <hl>$number_of_misstakes</hl> and you don't notice
 the typo in the original variable and you write <hl>$number_of_mistakes</hl>.
+或者有个变量是<hl>$number_of_misstakes</hl>，而你没有注意到原来的变量就有输入错误，然后你输入了<hl>$number_of_mistakes</hl>。
 
 You got the idea.
+理解了吧。
 
 If you are lucky, you make this mistake only once, but if you aren't that lucky,
 and you use the incorrect variable twice, then this warning won't appear.
 After all if you are using the same variable twice you probably have a good reason.
+如果幸运的话，你可能只犯一次错误，不过如果你倒霉地使用了两次错误的变量，这样的警告就不会出现了。毕竟你两次使用了同一个变量两次，可能有个好的理由。
 
 So how can you avoid this?
+那么如果避免呢？
 
 For one, try to avoid variables with ambiguous letters in it and be very
 careful when typing variable names.
+可以尝试避免使用有歧义的字母并且在输入变量名字的时候尽量小心一点。
 
 If you want to solve this for real, just <b>use strict</b>!
+如果想真正的解决这个问题，你可以使用<b>use strict</b>！
 
 <h2>use strict</h2>
 
@@ -101,22 +119,29 @@ As you can see in the above examples, I have not used strict. If I was using it,
 then instead of getting a warning about possible typo, I'd get a compile time
 error:
 <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>.
+上面的例子中你发现我没有使用strict。如果用的话，就不会有可能输入错误的警告，取而代之的是编译时错误：<a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>。
 
 That would happen even if you used the incorrect variable more than once.
+即便你多次使用错误的变量也会出现。
 
 Then of course there are people who would rush and paste "my" in front of the incorrect
 variable, but you are not one of those. are you? You would think about the problem and search till
 you find the name of the real variable.
+当然，有些人会匆忙地在错误的变量前面加上"my"，但你不会这么做，对么？你应该好好思考问题直到搜索到真正的变量。
 
 The most common way to see this warning is if you are not using strict.
+如果没有使用strict通常会看到这个警告。
 
 And then you are in deep trouble.
+然后你就陷入了麻烦之中。
 
 <h2>Other cases while using strict</h2>
 
 As GlitchMr and an Anonymous commenter pointed out, there are a few other cases:
+GlitchMr和一位匿名用户在评论中指出，还有其它情况：
 
 This code, can also generate it
+下面的代码也会产生警告。
 
 <code lang="perl">
 use strict;
@@ -126,6 +151,7 @@ $main::x = 23;
 </code>
 
 The warning is: <b>Name "main::x" used only once: possible typo ...</b>
+警告信息是：<b>Name "main::x" used only once: possible typo ...</b>
 
 Here at least it is clear where that 'main' comes from, or in
 the next example, where the Mister comes from. (hint. it is the package name
