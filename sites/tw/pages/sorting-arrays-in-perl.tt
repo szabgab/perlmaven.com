@@ -16,7 +16,7 @@
 
 這篇文章將描述在 Perl 程式中<b>如何排序數字陣列或字串陣列</b>。
 
-Perl 的內建序式 <hl>sort</hl> 可以直接排序陣列，這不另人意外。而其最簡明的使用形式，便是傳入一個陣列，讓他傳回排好的新陣列。<hl>@sorted = sort @original</hl>。
+Perl 的內建序式 <hl>sort</hl> 可以直接排序陣列，這不另人意外。而其最簡明的使用形式，便是傳入一個陣列，它好會傳回排好的新陣列：<hl>@sorted = sort @original</hl>。
 
 =abstract end
 
@@ -60,10 +60,7 @@ $VAR1 = [
 
 第一段，是陣列內容在還未排序之前的結果，第二段則是排好之後的結果。
 
-This is the most simple case, but it is not always what you want.
-For example, what happens if some of the words start with an upper case letter?
-
-這是最簡單的使用形式，不過未必能達到想要的效果。舉例而而，如果某些單字的字首大寫的話，要怎麼排？
+這是最簡單的使用形式，不過未必能達到想要的效果。如果某些單字的字首大寫的話，要怎麼排？
 
 <code lang="perl">
 my @words = qw(foo bar Zorg moo);
@@ -147,18 +144,14 @@ $VAR1 = [
       ];
 </code>
 
-If you think about it, of course, this is not surprising. When the comparison function sees 12 and 3
-it compares them as strings. That means comparing the first character in both strings. "1" to "3".
-"1" is ahead of "3" in the ASCII table and thus the string "12" will come before the string "3".
-
 但仔細端詳，其實這是很有條理的。預設的比較函式在拿到 12 與 3 的時後，是把兩者當成字串在比較。也就是說，兩方的第一個
-字符也先被拿出來比，是 "1" 對 "3"。在 ASCII 表格車 "1" 在 "3" 前面，所以 "12" 當然就會被排在 "3" 前面。
+字符也先被拿出來比，是 "1" 對 "3"。在 ASCII 表格中， "1" 在 "3" 前面，所以 "12" 當然就會被排在 "3" 前面了。
 
 這也表示，Perl 沒有辨法猜中這時要被排序的是一群數字。
 
-這也沒有辨法，但只要另外提供個比較函式來正確地比較數值就行了。為此目的，可以使用 <hl><=></hl>，亦稱
+這也無妨，只要另外提供個比較函式來正確地比較數值就行了。為此目的，可以使用 <hl><=></hl>，亦稱
 <a href="http://en.wikipedia.org/wiki/Spaceship_operator">太空船算符</a>，此算符
-能比較左右兩數值，而得出 1、-1 或 0。
+能比較左右兩數值，並得出 1、-1 或 0。
 
 <code lang="perl">
 my @sorted_numbers = sort { $a <=> $b } @numbers;
