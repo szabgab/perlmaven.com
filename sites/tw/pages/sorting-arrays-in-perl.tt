@@ -1,10 +1,11 @@
 =title Perl 陣列的排序
-=timestamp 2013-05-21T09:02:00
+=timestamp 2013-05-22T09:02:00
 =indexes sort, $a, $b, cmp, <=>
 =status show
+=original sorting-arrays-in-perl
 =books beginner_book
-=translator gugod
 =author szabgab
+=translator gugod
 =index 1
 =archive 1
 =feed 1
