@@ -1,9 +1,11 @@
-=title Perl Editor
-=timestamp 2012-08-01T12:45:56
+=title Perl 에디터
+=timestamp 2013-05-24T08:00:00
 =indexes IDE, editor, Padre, vim, emacs, Eclipse, Komodo
 =status show
+=original perl-editor
 =books beginner_book
 =author szabgab
+=translator gypark
 =index 1
 =archive 1
 =feed 1
@@ -12,108 +14,108 @@
 
 =abstract start
 
-Perl scripts or Perl programs are just simple text files.
-You can use any kind of text editor to create them, but you should
-not use any word processor. Let me suggest a couple of editors and IDEs.
+Perl 스크립트 즉 Perl 프로그램들은 단지 간단한 텍스트 파일입니다.
+어떤 텍스트 에디터를 사용해서도 만들 수 있습니다. 그러나 워드프로세서로 만들 수는 없습니다.
+이 기사에서는 몇 가지 에디터와 통합 개발 환경(IDE)을 소개할까 합니다.
 
-BTW this article is part of the <a href="/perl-tutorial">Perl tutorial</a>.
+이 기사는 <a href="/perl-tutorial">Perl tutorial</a>의 일부입니다.
 
 =abstract end
 
-<h2>Editor or IDE?</h2>
+<h2>편집기와 통합개발환경</h2>
 
-For Perl development you can either use a plain text editor or an
-<b>Integrated Development Environment</b>, also called IDE.
+Perl 프로그램을 개발할 때 평범한 텍스트 에디터를 쓸 수도 있고
+<b>통합 개발 환경(Integrated Development Environment)</b>, IDE를 쓸 수도 있습니다.
 
-First I'll describe the editors on the major platforms you might use,
-and then the IDEs which are usually platform independent.
+먼저 여러분이 사용할 만한 주요 플랫폼들에서 쓸 수 있는 편집기들을 소개하고, 플랫폼에
+무관한 IDE들에 대해 말씀드리겠습니다.
 
-<h2>Unix / Linux</h2>
+<h2>유닉스 / 리눅스</h2>
 
-If you are working on Linux or Unix, then the most common editors used there are
-<a href="http://www.vim.org/">Vim</a> and
-<a href="http://www.gnu.org/software/emacs/">Emacs</a>.
-They have very different philosophy, both from
-each other, and from most of the editors out there.
+리눅스나 유닉스에서 작업을 한다면, 가장 보편적인 에디터로는
+<a href="http://www.vim.org/">Vim</a>과
+<a href="http://www.gnu.org/software/emacs/">Emacs</a>가 있습니다.
+이 두 가지의 기반 철학은 서로간에 매우 다르고, 그 외 다른 에디터들과도 아주 다릅니다.
 
-If you are familiar with either one of those, I'd recommend using them.
+여러분이 이 두 가지 중 하나를 이미 익숙하게 쓰고 있다면, 그것을 계속 쓸 것을 권장합니다.
 
-For each one of them there are special extensions or modes to provide better support for Perl,
-but even without those they are very good for Perl development.
+두 에디터 각각 Perl 프로그래밍을 더 편리하게 할 수 있게 지원하는 확장이나 모드가
+존재하며, 그런 게 없이도 Perl로 개발할 때 매우 쓰기 좋은 에디터들입니다.
 
-If you are not familiar with those editors, then I'd probably recommend
-you separate your Perl learning curve from your editor learning experience.
+이 에디터들이 낯설다면, 저는 에디터를 익히는 것과 Perl을 학습하는 것을
+구분하기를 권하고 싶습니다.
 
-Both of those editors are very powerful, but take a long time to master.
+이 두 에디터는 매우 강력하지만, 숙달하는 데 긴 시간이 걸립니다.
 
-It is probably better to focus on your Perl studies now, and only later to learn one
-of these editors.
+지금은 Perl을 공부하는 것에 집중하고, 나중에 두 에디터 중 하나를 익히는 것이 나을 것입니다.
 
-While they are native to Unix/Linux, both
-<b>Emacs</b> and <b>Vim</b> are available for all the other major operating systems.
+<b>Emacs</b>와 <b>Vim</b> 둘 다 유닉스/리눅스에서 처음 생겨났지만, 그 외 주요 운영체제에서도
+사용할 수 있습니다.
 
-<h2>Perl editors for Windows</h2>
+<h2>윈도우용 Perl 에디터</h2>
 
-On Windows, many people are using the so-called "programmer's editors".
+윈도우의 경우, 많은 사람들이 소위 "프로그래머용 에디터"들을 사용합니다.
 
 <ul>
-<li><a href="http://www.ultraedit.com/">Ultra Edit</a> is a commercial editor.</li>
-<li><a href="http://www.textpad.com/">TextPad</a> is share-ware.</li>
-<li><a href="http://notepad-plus-plus.org/">Notepad++</a> is an open source and free editor.</li>
+<li><a href="http://www.ultraedit.com/">Ultra Edit</a>는 상용 에디터입니다.</li>
+<li><a href="http://www.textpad.com/">TextPad</a>는 셰어웨어입니다.</li>
+<li><a href="http://notepad-plus-plus.org/">Notepad++</a>는 오픈소스 공개 소프트웨어입니다.</li>
 </ul>
 
-I have been using <b>Notepad++</b> a lot and I keep it installed on my Windows machine
-as it can be very useful.
+저는 <b>Notepad++</b>를 많은 시간 사용해왔고, 매우 유용한 에디터라서 제 윈도우 시스템에 늘
+설치해 둡니다.
 
 <h2>Mac OSX</h2>
 
-I don't have a Mac but according to popular vote,
-<a href="http://macromates.com/">TextMate</a> is the most often used Mac
-specific editor for Perl development.
+저는 맥이 없습니다만 인기투표에 따르면
+<a href="http://macromates.com/">TextMate</a>가 Perl 개발용 매킨토시 에디터 중에는
+가장 많이 쓰입니다.
 
-<h2>Perl IDEs</h2>
+<h2>Perl 통합 개발 환경(IDE)</h2>
 
-Neither of the above are IDEs, that is, neither of them provide
-real, built-in debugger for Perl. They also don't provide language specific help.
+앞서 말한 것들은 IDE가 아닙니다. 다시 말해서, 실제 Perl 디버거가 내장되어 있지 않습니다.
+언어에 특화된 도움말을 제공하지도 않습니다.
 
-<a href="http://www.activestate.com/">Komodo</a> from ActiveState costs a few hundreds of USD.
-It has a free version with limited capabilities.
+ActiveState사의 <a href="http://www.activestate.com/">Komodo</a>는 가격이 수백 달러입니다.
+기능이 제한된 공개 버전도 있습니다.
 
-People who are already <a href="http://www.eclipse.org/">Eclipse</a> users might want to know
-that there is a Perl plug-in for Eclipse called EPIC. There is also a project called
-<a href="https://github.com/skorg/perlipse">Perlipse</a>.
+<a href="http://www.eclipse.org/">Eclipse</a> 사용자들은 EPIC이라 불리는 이클립스용
+Perl 플러그인이 있다는 걸 알아두면 좋을 것입니다. 
+<a href="https://github.com/skorg/perlipse">Perlipse</a>라는 프로젝트도 있습니다.
 
 <h2>Padre, the Perl IDE</h2>
 
-In July 2008 I started to write an <b>IDE for Perl in Perl</b>. I called it Padre -
-Perl Application Development and Refactoring Environment or
-<a href="http://padre.perlide.org/">Padre, the Perl IDE</a>.
+2008년 7월에 저는 <b>Perl로 만들어진 Perl 개발환경</b>을 작성하기 시작했습니다.
+저는 이것을 Padre - Perl Application Development and Refactoring Environment 또는
+<a href="http://padre.perlide.org/">Padre, the Perl IDE</a>라고 이름지었습니다.
 
-Many people joined the project. It is distributed by the major Linux distributions
-and it can also be installed from CPAN. See the
-<a href="http://padre.perlide.org/download.html">download</a> page for details.
+많은 분들이 이 프로젝트에 참여했습니다. Padre는 주요 리눅스 배포본을 통해 배포되며
+CPAN을 통해서 설치할 수도 있습니다. 자세한 것은
+<a href="http://padre.perlide.org/download.html">다운로드</a> 페이지에서 확인하시기
+바랍니다.
 
-In some aspects it is still not as strong as Eclipse or Komodo but in some other,
-Perl specific areas it is already better than the other two.
+보는 각도에 따라 Eclipse나 Kodomo만큼 강력하지는 않지만, Perl에 특화된 다른 몇몇
+부분에서는 이미 그 둘보다 더 좋아졌습니다.
 
-Moreover, it is very actively developed.
-If you are looking for a <b>Perl editor</b> or a <b>Perl IDE</b>,
-I'd recommend to give it a try.
+게다가, Padre는 매우 활발히 개발되고 있습니다. 여러분이
+<b>Perl 에디터</b> 또는 <b>Perl IDE</b>를 찾고 있다면, 한 번 사용해 보시기를 권합니다.
 
-<h2>The big Perl editor poll</h2>
+<h2>Perl 에디터 투표</h2>
 
-In October 2009 I ran a poll and asked
-<a href="http://perlide.org/poll200910/">Which editor(s) or IDE(s) are you using for Perl development?</a>
+2009년 10월에 저는 
+<a href="http://perlide.org/poll200910/">Perl로 개발할 때 어떤 에디터나 편집기를 쓰고 있습니까?</a>라는
+투표를 열었습니다.
 
-Now you can go with the crowd, against the crowd, or you can pick a perl editor that fits you.
+이제 여러분은 대다수가 쓰는 걸 택할 수도 있고, 남들이 안 쓰는 걸 쓸 수도 있고, 여러분에게 적합한 것을
+고를 수도 있습니다.
 
-<h2>Other</h2>
+<h2>그 외</h2>
 
-Alex Shatlovsky recommended <a href="http://www.sublimetext.com/">Sublime Text</a>, which is a platform independent editor,
-but one that costs some money.
+Alex Shatlovsky께서 <a href="http://www.sublimetext.com/">Sublime Text</a>를 추천하였습니다. 이것은
+플랫폼에 상관없이 사용할 수 있지만 유료입니다.
 
-<h2>Next</h2>
+<h2>다음</h2>
 
-Then next part in the tutorial is a small side-step to talk about <a href="/perl-on-the-command-line">Perl on the command line</a>.
+튜토리알의 다음 내용은 <a href="http://perlmaven.com/perl-on-the-command-line">커맨드 라인에서 Perl 실행하기</a>에 관한 짧은 도움말입니다.
 
 
