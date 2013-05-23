@@ -61,6 +61,8 @@
     <li><a href="/using-a-queue-in-perl">Perl中的队列</a></li>
     <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" 隐藏同作用域下之前的声明</a></li>
 	  <li><a href="/debugging-perl-scripts">调试Perl脚本</a></li>
+	  <li><a href="/simple-cgi-script-to-send-form-by-email">简单的Perl CGI脚本通过电子邮件发送表单</a></li>
+	  <li><a href="/list-all-the-perl-modules-and-distributions-in-a-namespace-using-meta-cpan">使用Meta CPAN列出名空间的所有Perl模块和版本</a></li>
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>

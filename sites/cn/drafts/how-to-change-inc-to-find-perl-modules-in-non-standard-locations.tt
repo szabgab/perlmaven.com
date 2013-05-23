@@ -1,0 +1,244 @@
+=title How to change @INC to find Perl modules in non-standard locations
+=timestamp 2012-07-24T12:45:56
+=indexes @INC, use, PERLLIB, PERL5LIB, lib, -I
+=status show
+=books beginner_book
+=author szabgab
+=transltor terrencehan
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+When using modules that are not installed in the standard directories
+of Perl, we need to change @INC so perl will be able to
+find them. There are several ways to do that solving different use-cases.
+当使用不在Perl标准文件夹的模块时，我们需要修改@INC，这样Perl才能找到它们。
+有几个方法可以解决不同的用例。
+
+Let's see these use-case first:
+先看n几个用例：
+
+=abstract end
+
+
+<h2>加载私有的Perl模块</h2>
+
+You have a script and have just started to move some parts of it,
+out to a new module called <hl>My::Module</hl>.
+You saved the module to <hl>/home/foobar/code/My/Module.pm</hl>.
+假设你有一个脚本，并已经开始将某部分移至名为<hl>My::Module</hl>的模块，而模块的保存位置是<hl>/home/foobar/code/My/Module.pm</hl>。
+
+Your perl script now starts like this:
+脚本以这样的形式开头：
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use My::Module;
+</code>
+
+When you run the script you get a friendly error message like this:
+当运行该脚本的时候，会得到一个像这样的错误信息：
+
+<code>
+Can't locate My/Module.pm in @INC (@INC contains:
+   /home/foobar/perl5/lib/perl5/x86_64-linux-gnu-thread-multi
+   /home/foobar/perl5/lib/perl5
+   /etc/perl
+   /usr/local/lib/perl/5.12.4
+   /usr/local/share/perl/5.12.4
+   /usr/lib/perl5 /usr/share/perl5
+   /usr/lib/perl/5.12
+   /usr/share/perl/5.12
+   /usr/local/lib/site_perl
+   .).
+   BEGIN failed--compilation aborted.
+</code>
+
+Perl cannot find your module.
+Perl找不到所需的模块。
+
+<h2>更新Perl模块</h2>
+
+On a system you are thinking to upgrade a module that came from CPAN.
+You don't want to install it in the standard location yet. First you'd
+like to put it in some private directory, try it, and install
+to the system only once you are sure it works well.
+你想在某个系统上更新一个CPAN模块，但还不打算把它安装在标准文件夹里。
+首先可以把要安装的模块放在某个私有文件夹，适用一下，只有在确定能够很好的满足
+需求后才安装到系统上。
+
+In this case too you "install" the module in a private directory,
+e.g. in  /home/foobar/code and somehow you'd like to convince
+perl to find that version of the module, and not the one that
+was installed in the system.
+此例中你也把模块“安装”到了私有文件夹。比如 /home/foobar/code，然后以某种方式
+确保perl找到的是新版本的模块而不是已经安装在系统的那个版本。
+
+<h2>use语句</h2>
+
+When perl encounters <hl>use My::Module;</hl> it goes over the
+elements of the built-in <hl>@INC</hl> array that contains
+directory names. In each directory it checks if there is a
+subdirectory called "My" and if in that subdirectory there is
+a file called "Module.pm".
+当perl遇到<hl>use My::Module;</hl>时，它会遍历内建数组<hl>@INC</hl>的每个元素（文件夹）。
+在每个文件夹中检查时候有个"My"子文件夹并在此子文件中是否存有文件"Module.pm"。
+
+The first such file it encounters will be loaded into memory.
+第一个找到的文件会被加载到内存中。
+
+If it does not find the file you get the above error messages.
+如果没找到的话会给出上面的错误信息。
+
+<hl>@INC</hl> is defined when perl is compiled and it
+is embedded in the binary code. You cannot change that,
+unless you recompile perl. Not something we would do every day.
+<hl>@INC</hl>在编译Perl的时候就定义了并内嵌在二进制代码中。除非重现编译Perl否则没有办法修改，但是我们也不能每天都这么做。
+
+Luckily the <hl>@INC</hl> array can be changed in several
+ways when we execute a script. We'll see these solutions
+and discuss when each one of them is appropriate to use.
+幸运的是可以在执行脚本的时候采用其它不同的方法修改<hl>@INC</hl>。我们会看到这些方案，并讨论一下每种方案的适用情况。
+
+<h2>PERLLIB 和 PERL5LIB</h2>
+
+You can define the PERL5LIB environment variable
+(though PERLLIB works the same way, I'd recommend using PERL5LIB
+over PERLLIB as that makes it clear it is related to Perl 5)
+the same way you can define the PATH environment variable.
+Every directory listed in this variable will be added to
+the beginning of <hl>@INC</hl>.
+你可以像定义 PATH 一样定义环境变量 PERL5LIB （尽管 PERLLIB 也有相同的作用，我还是建议使用 PERL5LIB 而不是 PERLLIB，因为这样可以明确的表示是与Perl 5相关的）
+
+On <b>Linux/Unix</b> when using <b>Bash</b>, you would write
+在使用<b>Bash</b>的<b>Linux/Unix</b>上可以这么写：
+
+<code>
+export PERL5LIB=/home/foobar/code
+</code>
+
+You can add this to the ~/.bashrc to make it always available when
+you log-in.
+你可以把这行语句添加载 ~/.bashrc 文件中以使它在每次登陆时都有效。
+
+On <b>Windows</b> you can set the same in the cmd command window by typing
+在<b>Windows</b>也可以在命令行窗口中输入
+
+<code>
+set PERL5LIB = c:\path\to\dir
+</code>
+
+For a more long term solution follow these steps:
+为了使改变长期有效，可以这样操作：
+
+Right-click <b>My Computer</b> and click <b>Properties</b>.
+右击<b>我的电脑</b>并点击<b>属性</b>。
+
+In the <b>System Properties</b> window, click on the <b>Advanced</b> tab.
+在<b>系统属性</b>窗口中点击<b>高级</b>标签。
+
+In the Advanced section, click the <b>Environment Variables</b> button.
+在高级设置页面中点击<b>环境变量</b>按钮。
+
+In the Environment Variables window in the "User variables for Foo Bar"
+section click on <b>New</b> and type in the following:
+在环境变量窗体的“Foo Bar的用户变量”区域内点击<b>新建</b>并输入：
+
+Variable name: PERL5LIB
+变量名：PERL5LIB
+
+Variable value: c:\path\to\dir
+变量值：c:\path\to\dir
+
+Then click OK 3 times. Windows that you open <b>after</b> this will already know
+about the new variable. Type this in the command window, to see the newly set value:
+点击3次确认。在此<b>之后</b>打开的窗口都能知道这个变量。输入下面的命令来看一下刚才新设置的值：
+
+<code>
+echo %PERL5LIB%
+</code>
+
+<hr>
+
+This will add the private /home/foobar/code directory (or c:\path\to\dir directory)
+to the beginning of <hl>@INC</hl> for <b>every script</b> that is executed in
+the same environment.
+这样会把似有文件夹/home/foobar/code directory (或 c:\path\to\dir 文件夹)添加到<hl>@INC</hl>开头，从此<b>每个脚本</b>都会在同样的环境下执行。
+
+In <b>taint mode</b>, that will be explained in a separate post,
+the PERLLIB and PERL5LIB environment variables are ignored.
+在<b>taint mode</b>中（会在其它文章中讲解），PERLLIB 和 PERL5LIB环境变量是被忽略的。
+
+<h2>use lib</h2>
+
+Adding a <hl>use lib</hl> statement to the script will add
+the directory to <hl>@INC</hl> for that specific script.
+Regardless who and in what environment runs it.
+在中加入<hl>use lib</hl>语句会为特定的脚本向<hl>@INC</hl>添加文件夹，而不管脚本由谁或者在什么环境下运行。
+
+You just have to make sure to have the use lib statement
+before trying to load the module:
+你只需要确认把usb lib语句放在加载模块的前面：
+
+<code lang="perl">
+use lib '/home/foobar/code';
+use My::Module;
+</code>
+
+One note here. I saw several companies where <hl>use lib</hl>
+statements were added to the modules so they will be able to load
+their dependencies. I don't think this is good.
+I think the right place to change <hl>@INC</hl> is the main
+script or even better, outside the script such as in the two other
+solutions.
+有一点需要注意。我曾经看见很多公司把<hl>use lib</hl>添加到模块中来加载依赖。我不认为这是个好注意，选择修改<hl>@INC</hl>的位置应该是主脚本或者更好的地方（例如其它两个方案把它放在脚本的外面）。
+
+<h2>命令行的-I</h2>
+
+(That's a capital i)
+（大写i)
+
+The last solution is the most temporary solution.
+Add a <hl>-I /home/foobar/code</hl> flag to perl
+when running the script.
+最后是一种临时的方案：在运行脚本的时候向perl加入<hl>-I /home/foobar/code</hl>标识。
+
+<b>perl -I /home/foobar/code  script.pl</b>
+
+This will add /home/foobar/code to the beginning of
+@INC <b>for this specific execution</b> of the script.
+这会在脚本<b>此次执行</b>的时候向@INC的开头添加/home/foobar/code。
+
+<h2>选择哪种方案呢？</h2>
+
+If you would like to just test a newer version of a module, I'd recommend the command line flag:
+<hl>perl -I /path/to/lib</hl>.
+如果你要测试一个新版的模块，建议使用命令行标识：<hl>perl -I /path/to/lib</hl>.
+
+If you are installing lots of modules in a private directory then I'd probably use <hl>PERL5LIB</hl>
+though we'll also see <hl>local::lib</hl> that does this for you.
+如果你正在把多个模块安装在私有文件夹，那么建议使用<hl>PERL5LIB</hl>，后面我们也会看到<hl>local::lib</hl>也有同样的效果。
+
+<hl>use lib</hl> is used in two cases:
+<hl>use lib</hl>在两种情况下使用：
+
+<ol>
+<li>When you have a fixed, but not standard company-wide environment
+in which you put modules in a common standard location.</li>
+<li>When you are developing an application and you'd like to make sure
+the script always picks up the modules relative to their own location.
+We'll discuss this in another post.</li>
+</ol>
+
+<ol>
+<li>当你拥有一个固定的，但不是公司范围的环境时。在这个环境里你可以将模块放在公共位置上。
+</li>
+<li>当你正在开发一个应用，并想确保总是能找到在相对文件夹的模块时。我们会在其它文行中讨论。
+</li>
+</ol>
