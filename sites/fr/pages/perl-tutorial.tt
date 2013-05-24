@@ -32,7 +32,7 @@ Si vous êtes intéressé d'être mis au courant lorsque de nouveaux articles so
 
 Une <a href="http://perlmaven.com/beginner-perl-maven-e-book">version numérique de cette documentation (EN)</a> existe aussi et est disponible à l'achat. En plus du tutoriel gratuit, cette version comprend également les diapositives du cours correspondant, y compris de nombreux exercices et leurs solutions. Le matériel du cours couvre toutes les parties, y compris celles qui ne sont pas encore reproduites dans la version gratuite.
 
-La <a href="http://perlmaven.com/beginner-perl-maven-video-course">vidéo du cours (EN)</a> comprend plus de 210 capture vidéos, sur un total de plus de 5 heures de vidéo. En plus de présenter le matériel, il fournit aussi des explications aux solutions de tous les exercices.
+La <a href="/video-cours-perl-maven-pour-débutant">vidéo du cours</a> comprend plus de 210 capture vidéos, sur un total de plus de 5 heures de vidéo. En plus de présenter le matériel, il fournit aussi des explications aux solutions de tous les exercices.
 L'ensemble comprend également le code source de tous les exemples et les exercices.
 
 <h2>Le tutoriel en ligne gratuit Perl Maven pour débutant</h2>
@@ -62,7 +62,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
     <ul>
     <li><a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a> (EN)</li>
     <li><a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a> (EN)</li>
-    <li><a href="http://perlmaven.com/barewords-in-perl">Bareword not allowed while "strict subs" in use</a> (EN)</li>
+    <li><a href="/barewords-en-perl">Bareword not allowed while "strict subs" in use</a></li>
     <li><a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a> (EN)</li>
     <li><a href="/categorie-inconnue-d-avertissements">Unknown warnings category</a></li>
     <li><a href="http://perlmaven.com/scalar-found-where-operator-expected">Scalar found where operator expected</a> (EN)</li>
@@ -139,7 +139,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li>Regex: ancres</li>
 <li>Regex: options et modificateurs</li>
 <li>Substitutions (rechercher et remplacer)</li>
-<li><a href="http://perlmaven.com/trim">Couper/Supprimer les espaces avant et après (EN)</li>
+<li><a href="http://perlmaven.com/trim">Couper/Supprimer les espaces avant et après (EN)</a></li>
 </ol>
 
 <b>Fonctionnalités du système d'exploitation via Perl</b>
@@ -148,7 +148,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li>Les tubes avec Perl</li>
 <li>Exécuter des programmes externes</li>
 <li>Des commandes Unix : rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
-<li><a href="http://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl">Comment faire pour supprimer, copier ou renommer un fichier avec Perl ?</a> (EN)</li>
+<li><a href="/comment-supprimer-copier-ou-renommer-un-fichier-avec-perl">Comment supprimer, copier ou renommer un fichier avec Perl ?</a></li>
 <li>Des commandes Windows/DOS : del, ren, dir</li>
 <li>Filtrer des fichiers (via des motifs)</li>
 <li>Les descripteurs de répertoire</li>

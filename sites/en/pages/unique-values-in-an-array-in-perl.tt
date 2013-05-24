@@ -163,7 +163,7 @@ The <hl>grep</hl> function in Perl is a generalized form of the well known grep 
 It is basically a <a href="/filtering-values-with-perl-grep">filter</a>.
 You provide an array on the right hand side and an expression in the block.
 The <hl>grep</hl> function will take each value of the array one-by-one, put it in
-<hl>$_</hl>, the <a href="/the-default-variable-of-perl.html">default scalar variable of Perl</a>
+<hl>$_</hl>, the <a href="/the-default-variable-of-perl">default scalar variable of Perl</a>
 and then execute the block. If the block evaluates to TRUE, the value can pass.
 If the block evaluates to FALSE the current value is filtered out.
 

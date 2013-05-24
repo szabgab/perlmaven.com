@@ -184,7 +184,7 @@ to practice what you have learned.
 <li>Web applications with Perl: PSGI</li>
 <li>Parsing XML files</li>
 <li>Reading and writing JSON files</li>
-<li>Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</li>
+<li><a href="/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
 <li>Accessing LDAP using Perl</li>
 </ol>
 
