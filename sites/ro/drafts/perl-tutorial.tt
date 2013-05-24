@@ -23,9 +23,9 @@ Va fi fundația pe care să poți construi.
 
 Versiunea gratuită on-line a tutorialului este în dezvoltare. Multe
 părți sunt gata. Părți noi sunt publicate la două - trei zile. Cel mai
-nou a fost publicat ...2013. Dacă ești interesat să primești
-notificări pentru articolele publicate, te rog să
-te <a href="/register">înscrii la newsletter</a>.
+nou a fost publicat în data de 15 mai 2013. Dacă ești interesat să
+primești notificări pentru articolele publicate, te rog să te <a
+href="/register">înscrii la newsletter</a>.
 
 Există de asemenea și o carte în
 format <a href="/beginner-perl-maven-e-book">e-book</a> a materialului
@@ -64,17 +64,17 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <p>
 <b>Introducere</b>
 <ol>
-<li><a href="/installing-perl-and-getting-started">Install Perl, print Hello World, Safety net (use strict, use warnings)</a></li>
-<li><a href="/perl-editor">Editors, IDEs, development environment for Perl</a></li>
-<li><a href="/perl-on-the-command-line">Perl on the command line</a></li>
-<li><a href="/core-perl-documentation-cpan-module-documentation">Core Perl documentation, CPAN module documentation</a></li>
+<li><a href="/instalare-perl-windows-linux-mac">Instalează Perl în Windows, Linux și Mac</a></li>
+<li><a href="/perl-editor">Perl Editor</a></li>
+<li><a href="/perl-in-linia-de-comanda">Perl în linia de comandă</a></li>
+<li><a href="/documentatia-perl-si-documentatia-modulelor-cpan">Documentația Perl și documentația modulelor CPAN</a></li>
 <li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
 <li><a href="/debugging-perl-scripts">Debugging Perl scripts</a></li>
 </ol>
 
-<b>Scalars</b>
+<b>Scalari</b>
 <ol>
-<li>Common warnings and error messages<br />
+<li>Mesaje de eroare comune și atenționări (warnings)<br />
 <ul>
 <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
 <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
@@ -86,11 +86,12 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 </ul>
 </li>
 <li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
-<li>Conditional statements: if</li>
+<li>Instrucțiuni condiționale: if</li>
 <li><a href="/boolean-values-in-perl">Boolean (true and false) values in Perl</a></li>
-<li>Numerical and string operators</li>
+<li>Operatori numerici și pentru șiruri</li>
 <li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
-<li>Here documents</li>
+<li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
+<li>Documente integrate (Here documents)</li>
 <li><a href="/scalar-variables">Scalar variables</a></li>
 <li><a href="/comparing-scalars-in-perl">Comparing scalars</a></li>
 <li><a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
@@ -99,11 +100,11 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li><a href="/scope-of-variables-in-perl">Scope of variables in Perl</a></li>
 </ol>
 
-<b>Files</b>
+<b>Fișiere</b>
 <ol>
 <li>die, warn and exit</li>
-<li><a href="/writing-to-files-with-perl">Writing to files</a></li>
-<li><a href="/appending-to-files">Appending to files</a></li>
+<li><a href="/crearea-fisierelor-cu-perl">Crearea fișierelor cu Perl</a></li>
+<li><a href="/adaugare-continut-la-fisiere">Adăugare conținut la fișiere</a></li>
 <li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
 <li><a href="/open-files-in-the-old-way">Don't open files in the old way</a></li>
 <li>Binary mode, dealing with Unicode</li>
@@ -112,7 +113,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>truncate</li>
 </ol>
 
-<b>Lists and Arrays</b>
+<b>Liste și tablouri (arrays)</b>
 <ol>
 <li>Perl foreach loop</li>
 <li><a href="/for-loop-in-perl">The for loop in Perl</a></li>
@@ -134,7 +135,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>min, max, sum using List::Util</li>
 </ol>
 
-<b>Subroutines</b>
+<b>Subrutine</b>
 <ol>
 <li><a href="/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
 <li>Parameter passing and checking for subroutines</li>
@@ -143,13 +144,13 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>Recursive subroutines</li>
 </ol>
 
-<b>Hashes, arrays</b>
+<b>Tabele de dispersie (Hashes), Tablouri (arrays)</b>
 <ol>
 <li><a href="/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
 <li>exists, delete hash elements</li>
 </ol>
 
-<b>Regular Expressions</b>
+<b>Expresii Regulare</b>
 <ol>
 <li>Regular Expressions in Perl</li>
 <li>Regex: character classes</li>
@@ -162,7 +163,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li><a href="/trim">trim - remove leading and trailing spaces</a></li>
 </ol>
 
-<b>Perl and Shell related functionality</b>
+<b>Funcțiuni relative la Perl și Shell</b>
 <ol>
 <li>Perl -X operators</li>
 <li>Perl pipes</li>
@@ -186,7 +187,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>local::lib</li>
 </ol>
 
-<b>Few examples for using Perl</b>
+<b>Câteva exemple de utilizare pentru Perl</b>
 <ol>
 <li><a href="/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
 <li>Reading Excel files using Perl</li>
@@ -196,11 +197,11 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>Web applications with Perl: PSGI</li>
 <li>Parsing XML files</li>
 <li>Reading and writing JSON files</li>
-<li>Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</li>
+<li><a href="/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
 <li>Accessing LDAP using Perl</li>
 </ol>
 
-<b>Other</b>
+<b>Altele</b>
 <ol>
 <li><a href="/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
 <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse</a></li>
@@ -211,6 +212,5 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 
 <hr />
 
-Just a reminder, there are corresponding <a href="/beginner-perl-maven-e-book">e-books</a> and
-<a href="/beginner-perl-maven-video-course">video courses</a> available for
-<a href="/products">purchase</a>.
+Vă reamintim că există și varianta <a href="/beginner-perl-maven-e-book">e-book</a> și 
+<a href="/beginner-perl-maven-video-course">cursuri video</a> care pot fi <a href="/products">achiziționate</a>.
