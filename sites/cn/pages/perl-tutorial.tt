@@ -64,6 +64,7 @@
     <li><a href="/simple-cgi-script-to-send-form-by-email">简单的Perl CGI脚本通过电子邮件发送表单</a></li>
     <li><a href="/list-all-the-perl-modules-and-distributions-in-a-namespace-using-meta-cpan">使用Meta CPAN列出名空间的所有Perl模块和版本</a></li>
     <li><a href="/open-files-in-the-old-way">不要使用旧方法打开文件</a></li>
+    <li><a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">如何让Meta CPAN为模块显示一个到其版本控制系统的链接</a></li>
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
