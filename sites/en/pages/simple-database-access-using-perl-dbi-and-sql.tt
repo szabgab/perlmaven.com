@@ -95,7 +95,7 @@ in a variable called <hl>$dbh</hl>.
 
 The call to <b>disconnect</b> from the database is optional as it
 will automatically be called when the variable <hl>$dbh</hl> goes out
-of scope, but it having it might be a clear indication for
+of scope. Having it might be a clear indication for
 the next programmer dealing with this code, that you are done with the database.
 
 <h2>CREATE TABLE</h2>
