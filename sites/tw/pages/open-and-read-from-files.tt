@@ -71,7 +71,7 @@ Second row
 Third row
 </code>
 
-打開並且讀取檔案跟 <a href="/writing-to-files-with-perl">寫入檔案</a> 很相似,
+打開並且讀取檔案跟 <a href="http://perlmaven.com/writing-to-files-with-perl">寫入檔案</a> 很相似,
 但是用 "<" 符號來取代 ">" 符號。(<hl><</hl>)
 
 這裡我們使用 UTF-8 來當作編碼。在這裡讀取檔案只會出現 "<" 符號。

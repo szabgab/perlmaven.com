@@ -1,4 +1,4 @@
-=title Comment créer le symbole de la roupie indienne avec du code Perl
+=title Comment créer le symbole de la roupie indienne avec du code Perl ?
 =timestamp 2013-04-19T10:30:04
 =indexes binmode, Unicode, UTF8
 =status show
@@ -21,7 +21,7 @@ Comme cela pourrait intéressé d'autres personnes, laissez-moi vous montrer ci-
 
 =abstract end
 
-La première recherche m'a mené à la page wikipedia décrivant <a href="http://en.wikipedia.org/wiki/Indian_rupee_sign">le symbole de la roupie indienne</a>.
+La première recherche m'a mené à la page wikipedia décrivant <a href="http://fr.wikipedia.org/wiki/Symbole_de_la_roupie_indienne">le symbole de la roupie indienne</a>.
 
 apparemment, il y a :
 <ul>
@@ -30,7 +30,7 @@ apparemment, il y a :
 </ul>
 
 Si vous voulez afficher un caractère Unicode à l'écran (via la sortie standard ou STDOUT), alors vous aurez besoin de préciser à Perl de changer l'encodage de STDOUT à UTF8. Vous pouvez faire cela avec la fonction prédéfinie <hl>binmode</hl>.
-consultez le document intitulé <a href="http://perldoc.perl.org/perluniintro.html">introduction à Unicode avec Perl</a> pour de plus amples détails !
+consultez le document intitulé <a href="http://perldoc.perl.org/perluniintro.html">introduction à Unicode avec Perl (EN)</a> pour de plus amples détails !
 
 Pour des codes points spécifiques, vous devrez utiliser le signe <hl>\x</hl> suivi d'une valeur hexadécimale, le tout entre accolade. Dans le cadre de cet exemple, ces symboles sont 20A8 et 20B9 respectivement.
 

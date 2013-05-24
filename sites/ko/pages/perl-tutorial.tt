@@ -13,18 +13,70 @@
 =comments 0
 =social 1
 
+<h2>Free on-line Beginner Perl Maven tutorial</h2>
 
+<p>
+<b>소개</b>
+<li><a href="/perl-editor">Perl 에디터</a></li>
+<ol>
+</ol>
+
+<b>스칼라</b>
+<ol>
+<li>흔히 발생하는 경고와 에러 메시지<br />
 <ul>
-  <li><a href="/string-functions-length-lc-uc-index-substr">문자열 함수: length, lc, uc, index, substr</a></li>
-  <li><a href="/trim">trim - Perl로 문자열의 앞뒤 공백 문자 제거하기</a></li>
-  <li><a href="/scope-of-variables-in-perl">Perl에서의 변수 영역</a></li>
   <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+</ul>
+</li>
+<li><a href="/boolean-values-in-perl">Perl의 불리언 값(참과 거짓)</a></li>
+<li><a href="/string-functions-length-lc-uc-index-substr">문자열 함수: length, lc, uc, index, substr</a></li>
+<li><a href="/scope-of-variables-in-perl">Perl에서의 변수 영역</a></li>
+</ol>
+
+<b>파일</b>
+<ol>
+</ol>
+
+<b>리스트와 배열</b>
+<ol>
+<li><a href="/unique-values-in-an-array-in-perl">배열에서 고유 값들만 남기기</a></li>
+</ol>
+
+<b>서브루틴</b>
+<ol>
+</ol>
+
+<b>해시, 배열</b>
+<ol>
+</ol>
+
+<b>정규표현식</b>
+<ol>
+<li><a href="/trim">trim - Perl로 문자열의 앞뒤 공백 문자 제거하기</a></li>
+</ol>
+
+<b>Perl과 쉘에 관련된 기능</b>
+<ol>
+</ol>
+
+<b>CPAN</b>
+<ol>
+</ol>
+
+<b>Perl을 사용하는 예</b>
+<ol>
+<li><a href="/simple-database-access-using-perl-dbi-and-sql">Perl DBI와 SQL을 사용한 간단한 데이타베이스</a></li>
+</ol>
+
+<b>기타</b>
+<ol>
+<li><a href="/how-to-eliminate-a-value-in-the-middle-of-an-array-in-perl">Perl의 배열 중간에 있는 값을 제거하는 법</a></li>
+<li><a href="/how-to-capture-and-save-warnings-in-perl">Perl에서 경고메시지를 가로채어 저장하기</a></li>
+<li><a href="/using-a-queue-in-perl">Perl에서 큐 사용하기</a></li>
+</ol>
 
 <!--
   <li><a href=""></a></li>
 -->
 
-</ul>
-
-For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
-
+전체 원본을 보려면, <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>를 방문하세요.

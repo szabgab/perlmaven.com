@@ -1,0 +1,112 @@
+=title Core Perl documentation and CPAN module documentation
+=timestamp 2013-01-27T10:45:56
+=indexes perldoc, documentation, POD, CPAN
+=status show
+=original core-perl-documentation-cpan-module-documentation
+=books beginner_book
+=author szabgab
+=translator terrencehan
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+Perl comes with a lot of documentation, but
+it takes some time till you get used to using it. In this part of the
+<a href="/perl-tutorial">Perl tutorial</a> I'll explain how
+to find your way around the documentation.
+Perl有很多文档，不过你得花时间去熟悉怎么使用它们。本节<a href="/perl-tutorial">Perl教程</a>会说明如何使用文档。
+
+=abstract end
+
+<h2>网络上的perldoc</h2>
+
+The most convenient way to access the documentation of core perl
+is to visit the <a href="http://perldoc.perl.org/">perldoc</a> website.
+访问Perl核心文档最方便的方法是浏览<a href="http://perldoc.perl.org/">perldoc</a>站点。
+
+It contains an HTML version of the documentation for Perl, the language,
+and for the modules that come with core Perl as released by the Perl 5 Porters.
+它有一个关于Perl语言本身以及和Perl核心共同发布的模块的HTML文档。
+
+It does not contain documentation for CPAN modules.
+There is an overlap though, as there are some modules that are available
+from CPAN but that are also included in the standard Perl distribution.
+(These are often referred to as <b>dual-lifed</b>.)
+它是不包含CPAN模块文档的。尽管会有重叠的部分——一些模块既在CPAN上也包含在Perl标准的发行版里。
+
+You can use the search box at the top right corner. For example you can
+type in <hl>split</hl> and you'll get the documentation of <hl>split</hl>.
+你可以使用又上方的搜索框。例如，输入<hl>split</hl>就会得到<hl>split</hl>的文档。
+
+Unfortunately it does not know what to do with <hl>while</hl>, nor with
+<hl>$_</hl> or <hl>@_</hl>. In order to get explanation of those
+you'll have to flip through the documentation.
+不幸的是，不能搜索<hl>while</hl>，<hl>$_</hl>, 或<hl>@_</hl>。为了找到这些的说明，你不得不去翻文档。
+
+The most important page might be <a href="http://perldoc.perl.org/perlvar.html">perlvar</a>,
+where you can find information about variables such as <hl>$_</hl> and <hl>@_</hl>.
+最重要的页面应该是<a href="http://perldoc.perl.org/perlvar.html">perlvar</a>，这里你能找到诸如<hl>$_</hl>和<hl>@_</hl>变量的信息。
+
+<a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> explains the syntax of Perl
+including that of the <a href="/while-loop">while loop</a>.
+<a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a>说明了Perl的语法，包含<a href="/while-loop">while 循环</a>等信息。
+
+<h2>perldoc on the command line</h2>
+
+The same documentation comes with the source code of Perl, but not
+every Linux distribution installs it by default. In some cases there
+is a separate package. For example in Debian and Ubuntu it is the <b>perl-doc</b>
+package. You need to install it using <hl>sudo aptitude install perl-doc</hl>
+before you can use <hl>perldoc</hl>.
+在Perl的源代码中也有相同的文档，但并不是每个Linux发行版都会默认安装。某些情况下会有单独的包。如 Debian 和 Ubuntu的是<b>perl-doc</b>包。在使用<hl>perldoc</hl>之前，你需要调用<hl>sudo aptitude install perl-doc</hl>安装。
+
+Once you have it installed, you can type <hl>perldoc perl</hl> on the command line
+and you will get some explanation and a list of the chapters in the Perl documentation.
+You can quit this using the <hl>q</hl> key, and then type the name of one of the chapters.
+For example: <hl>perldoc perlsyn</hl>.
+完成安装后，可以在命令行中输入<hl>perldoc perl</hl>来获取部分说明以及Perl文档的章节列表。按下<hl>q</hl>可以推出，然后在输入某个章节，如<hl>perldoc perlsyn</hl>。
+
+This works both on Linux and on Windows though the pager on Windows is really weak,
+so I cannot recommend it. On Linux it is the regular man reader so you should be familiar
+with it already.
+这对Linix和Windows都适用，但是Windows版本弱一些，不推荐使用。在Linux上的就是man手册阅读器，相信你已经很熟悉了。
+
+<h2>Documentation of CPAN modules</h2>
+
+Every module on CPAN comes with documentation and examples.
+The amount and quality of this documentation varies greatly
+among the authors, and even a single author can have very
+well documented and very under-documented modules.
+CPAN上的每个模块都有文档和示例。文档的数量和质量因作者而异，即便是同一个作者也有文档齐全和文档不足的模块。
+
+After you installed a module called Module::Name,
+you can access its documentation by typing <hl>perldoc Module::Name</hl>.
+安装完模块Module::Name之后，可以通过输入<hl>perldoc Module::Name</hl>来查看文档。
+
+There is a more convenient way though, that does not even
+require the module to be installed. There are several
+web interfaces to CPAN. The main ones are <a href="http://metacpan.org/">Meta CPAN</a>
+and <a href="http://search.cpan.org/">search CPAN</a>.
+当然还有更方便的方式，甚至都不需要你安装模块。因为有很多CPAN的web接口，比较有名的是<a href="http://metacpan.org/">Meta CPAN</a> 和 <a href="http://search.cpan.org/">search CPAN</a>。
+
+They both are based on the same documentation, but they
+provide a slightly different experience.
+这里两个都基于同样的文档，但是提供的用户体验不一样。
+
+
+<h2>Keyword search on Perl Maven</h2>
+
+A recent addition to this site is the keyword search on the top menu bar.
+Slowly you will find explanation for more and more parts of perl.
+At one point part of the core perl documentation and the documentation of the
+most important CPAN modules will be also included.
+本站点在上方的菜单栏中加入了关键词搜素功能。慢慢地，关于perl各个方面的说明也会多起来，将来会涉及到Perl的核心文档以及CPAN上重要模块的文档。
+
+If you are missing something from there, just make a comment below,
+with the keywords you will looking for and you have a good chance to
+get your request fulfilled.
+

@@ -19,7 +19,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on May 1, 2013.
+parts are being published every few days. The latest one was published on May 15, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -77,6 +77,7 @@ to practice what you have learned.
 <li><a href="/boolean-values-in-perl">Boolean (true and false) values in Perl</a></li>
 <li>Numerical and string operators</li>
 <li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
+<li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
 <li>Here documents</li>
 <li><a href="/scalar-variables">Scalar variables</a></li>
 <li><a href="/comparing-scalars-in-perl">Comparing scalars</a></li>
@@ -183,7 +184,7 @@ to practice what you have learned.
 <li>Web applications with Perl: PSGI</li>
 <li>Parsing XML files</li>
 <li>Reading and writing JSON files</li>
-<li>Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</li>
+<li><a href="/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
 <li>Accessing LDAP using Perl</li>
 </ol>
 

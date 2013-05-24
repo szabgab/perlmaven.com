@@ -35,7 +35,7 @@ print "@doubles\n";       # 2 4 6 8 10
 
 <h2>建立快速查找表</h2>
 
-有时需要在代码执行时判断给定的值是否在列表里。我们可以每次调用<a href="/filtering-values-with-perl-grep.html">grep</a>来检查值是否在列表中。也可以使用<a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>模块的<a href="/filtering-values-with-perl-grep.html">any</a>函数，但是如果使用hash来查找会有更好的可读性和更快的速度。
+有时需要在代码执行时判断给定的值是否在列表里。我们可以每次调用<a href="/filtering-values-with-perl-grep">grep</a>来检查值是否在列表中。也可以使用<a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>模块的<a href="/filtering-values-with-perl-grep">any</a>函数，但是如果使用hash来查找会有更好的可读性和更快的速度。
 
 我们需要创建一个hash表，把数组的所有元素作为key，1作为值。然后，用一个简单的hash查找代替<hl>grep</hl>。
 

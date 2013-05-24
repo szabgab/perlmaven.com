@@ -11,7 +11,7 @@ keedi;Keedi Kim;keedi.png;https://plus.google.com/116555192679485363257
 khadis;Khadis Thok;khadis.png;https://plus.google.com/117015659325563649853
 leprevost;Felipe da Veiga Leprevost;leprevost.jpg;https://plus.google.com/107515431915475316857
 mca;McA;mca.png
-oval;oval;oval.png;https://plus.google.com/111231154240098109931
+oval;Olivier Valuet;;https://plus.google.com/111231154240098109931
 shatlovsky;Alex Shatlovsky;shatlovsky.png;https://plus.google.com/104990662224926649617
 shelling;Shelling Ford;shelling.png;https://plus.google.com/113634082684193579669
 stefansbv;Ștefan Suciu;stefansbv.png;https://plus.google.com/116214972136525132964
@@ -26,3 +26,6 @@ thalhammer;Jeffrey Thalhammer;thalhammer.png;https://plus.google.com/11460539164
 vti;Вячеслав Тихановский;vti.png;https://plus.google.com/109117812087018133975
 enrique;Enrique Nell;enrique.png;https://plus.google.com/102480927985449768119
 grubert65;Marco Masetti;marcomasetti.png;https://plus.google.com/105304174562920013376
+H2CHANG;Hsin-Hsiung Chang;
+gypark;Geunyoung Park;gypark.jpg;https://plus.google.com/102624623438100467935
+mlx;Brian T. Wightman (MLX@cpan);;https://plus.google.com/116563303078084996059

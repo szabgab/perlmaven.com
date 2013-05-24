@@ -70,6 +70,16 @@ the Moose training he runs at YAPC::NA. (19:19 min)
       [2013-05-05 Sun 16:44]--[2013-05-05 Sun 16:49]: More minor edits
       [2013-05-06 Mon 04:07]--[2013-05-06 Mon 05:13]: Style first names / first initials
       [2013-05-13 Mon 06:06]--[2013-05-13 Mon 06:12]: Change transcript container
+      [2013-05-13 Mon 16:16]--[2013-05-13 Mon 17:04]: First pass 10:29--15:13
+      [2013-05-14 Tue 16:33]--[2013-05-14 Tue 17:04]: First pass 15:13--18:40
+      [2013-05-15 Wed 06:02]--[2013-05-15 Wed 06:16]: First pass 18:40--19:20 (end)
+      [2013-05-15 Wed 06:17]--[2013-05-15 Wed 06:36]: Second pass (cleanup 10:29--19:20)
+      
+      TODO:
+      - Complete authors linkage
+      - Clean up transcription to improve reading flow
+      - Add external links to transcript
+      - Collect timing information for Gabor's use.
     -->
 
   <div class="speaker-section speaker-gs" first="first">
@@ -559,7 +569,438 @@ the Moose training he runs at YAPC::NA. (19:19 min)
 
   </div>
 
-  <span class="transcript-timeindex">10:29</span>
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">10:29</span>
+
+    And you mentioned this event you lead-organized, right?  Is there
+    any programming involved in that?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    Not too much.  I hate to admit it.  You know what programming
+    there is?  Working on Wordpress, and tweaking Wordpress templates,
+    and writing PHP code, which just - it's unpleasant but necessary.
+    Wordpress is <span class="transcript-timeindex">10:53</span>, uh,
+    usable.  It works pretty well for what we're doing, which is a
+    small CMS with a little bit of blogging.  It's a shame there's no
+    comparable Perl project that
+    would <span class="transcript-timeindex">11:07</span> really do
+    what we want, but writing a Perl project just to run our web site
+    is probably out of the scope of putting on a
+    veg-fest.  <span class="transcript-garbled">[garbled]</span>
+    <span class="transcript-timeindex">11:19</span> There's sometimes
+    little programs to do data analysis and stuff like that.  I'm
+    definitely one of the more geeky activists I know.  I try to use
+    my programming wherever I can.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">11:29</span> The point is that,
+    myself, I think, almost all of the programming I've done is for
+    other programmers.  It's not from the real world.  It's not
+    solving the real problems, at least not directly.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">11:43</span> That's definitely
+    what I put on CPAN, I think.  It's like libraries for other people
+    to use in
+    their <span class="transcript-garbled">programming</span>.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">11:49</span> Yeah.  Most of the
+    CPAN is there for that, but I think it's much more interesting --
+    it's probably a totally different thing if you can go and solve
+    some real world problem and use the tools that you have.  That's
+    why I was interested in
+    that.  <span class="transcript-timeindex">12:15</span> OK.  That's
+    your open source.  What's you business or work thing?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">12:20</span> So I work for a
+    company called MaxMind.  It's a pretty small company, I can't
+    remember how many people right now, 15, 18.  If people have heard
+    of the GeoIP database, we produce that.  And we also have a
+    transaction fraud detection service that's built on top of that.
+    <span class="transcript-timeindex">12:40</span> and GeoIP is
+    available both as downloadable databases and web services.  So
+    those are kindof our two main things: the GeoIP stuff and then the
+    fraud detection.  <span class="transcript-timeindex">12:49</span>
+    And so I work for them.  We have, I think, 5 developers working on
+    our various products.  Yeah, that's what I do full time.  It's
+    pretty good.  I like working there.  We get to release free
+    software.  We use tons of free software internally.  So yeah, I
+    enjoy it.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">13:09</span> Yeah, I used this
+    module.  I'd still like to use more of it, I think.  But if I
+    remember correctly, only part of the database can be downloaded
+    freely, at least, right?  Like more generic information.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">13:25</span> There's a couple
+    free downloads, which are kindof a subset of the full data, and
+    then there's more stuff you can pay for to subscribe to, and then
+    there's even more stuff if you want to subscribe to the web
+    service.  So there's kindof three tiers, basically.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">13:43</span> But you say that
+    this company is using Perl mostly, right?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">13:46</span> Oh yeah.  I don't
+    know what percentage.  The vast majority of our code is in Perl.
+    We have a little bit of C code and C++ code for some of the things
+    we needed to make fast, but yeah, the vast majority is.  All of
+    the back end stuff is basically, all the web server stuff, most of
+    the database generation, is in Perl.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">14:09</span> Are they located
+    in where you live, or do you work remotely?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">14:15</span> Pretty much the
+    whole dev team is remote.  Even the people who are at the office,
+    there's only a couple of them, so they still have to effectively
+    be remote.  The company is located in Waltham, Massachusetts.  But
+    yeah, the whole dev team is remote.  One person who is on my team
+    besides me people might know is Olaf Alders, who is one of the
+    guys behind metacpan, so we hired him recently.  He's been great
+    to work with.  It's definitely a real Perl shop.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">14:44</span> Interesting.  So
+    now, there is the Moose things.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">14:53</span> Moo?  Did you say
+    Moo or Moose?
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">14:55</span> Moose.  Moose.
+    What is the Moose class?  You're going to run training at YAPC.
+    Who is it for?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">15:13</span> Good question.
+    The class I'm doing is Intro to Moose, and it's basically for
+    people who already know perl -- it's not an Intro to Perl-type
+    class -- and hopefully, at least, have some basic familiarity with
+    object orientation principles, because I'm not going to really
+    cover that too much either.  But really, its if you want to learn
+    how Moose works.  You've seen it in other people's code, you've
+    heard about it, you want to start using it for your stuff, I will
+    teach you all the Moose principles, all the features it has.  It's
+    a very interactive class, so what I do is I give a lecture
+    section, that will last 20-40 minutes, and then there is a series
+    of exercises that the students do, and the exercises are written.
+    You write some code, and I've written tests for your code.  And
+    you've run my test suite against your code, and once your test
+    suite passes, you know you've done the exercise right.  It tries
+    to give you a lot of feedback in the test about what's not done
+    yet.  <span class="transcript-timeindex">16:21</span> I've given
+    the class many times before.  Students really seem to like that
+    format of how the exercises work.  I think it's good, because it
+    forces you -- it's one thing to listen to me talk, but it's much
+    more useful to be forced to actually use the things that I'm
+    talking about.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">16:37</span> Yeah.  To do the
+    exercises is definitely a good thing here.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">16:41</span> I'll also mention
+    Steven Little's class -- maybe you'll interview him too -- he's
+    doing an advanced Moose class the next day, which will go more
+    into depth on some of the Moose features, and also cover maybe a
+    bit more of how to use Moose well, how to use certain features
+    appropriately, how to mix features together, whereas my class is
+    more of like here's the basics of what you can do, and not get too
+    far into here's how to do it really optimally.  I think the
+    classes will compliment each other nicely, so if people want to
+    take both I think
+    that <span class="transcript-garbled">[garbled]</span>.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">17:15</span> Ok, that's great.
+    So thank you for the interview.  Would you like to say some call
+    to action or whatever?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">17:25</span> Call to action?
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">17:27</span> How people can get
+    involved in Perl, or your stuff, helping your stuff?
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">17:34</span> If they want to
+    get involved in Perl, I think the Perl community really spends a
+    lot of time on IRC, so, if you join one of the channels on
+    irc.perl.org, that's a good way to get involved.  If you're
+    interested in Moose, the #moose channel is quite active, and you
+    can get help with Moose, both Moose and Moo are discussed on that
+    channel, so that's a great way, if you want to get involved.
+    Anything Moose related, that's the place to
+    go.  <span class="transcript-timeindex">18:06</span> If people
+    want to help with some of my modules, there are a lot of bug
+    reports, sadly, for them in rt.cpan.org, so that's always a good
+    place to start if you want to fix some bugs.  I'm more than happy
+    to look at patches.  I will warn people, sometimes I'm kindof slow
+    to respond.  I tend to have a lot of stuff going on.  I felt
+    guilty about it, but it's not that I'm ignoring you.  And feel
+    free to poke me.  If you send a path and I haven't looked at it in
+    a couple weeks, if you nag me politely, (politely, that's the
+    key), if you nag me politely, I will respond, because then I'll
+    feel guilty.  <span class="transcript-timeindex">18:40</span> So,
+    absolutely feel free to do that.  You can also private message me
+    on IRC.  I'm on IRC as autarch.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">18:48</span> Don't worry, we'll
+    put it somewhere written down.  That's a bit easier.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    OK.  Sounds good.  And email is fine too, but if you have a bug
+    report, send it to rt.cpan.org.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">18:58</span> That's the best.
+    Including with
+    tests.  <span class="transcript-garbled">[garbled]</span>, right?
+    And a patch.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">19:01</span> That's always,
+    <span class="transcript-garbled">nothing to encourage
+    action</span> than tests and patches, yes.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">19:08</span> OK.  Thank you
+    very much.  This was Dave Rolsky and Gabor Szabo on the Perl Maven
+    tv show.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">19:16</span> Alright.  Thank
+    you.
+
+  </div>
+
+  <div class="speaker-section speaker-gs">
+    <span class="speaker-info">
+      <span class="speaker-initial">GS</span>
+      <span class="speaker-name">Gabor Szabo</span>
+    </span>
+
+    <span class="transcript-timeindex">19:17</span> Thank you.
+
+  </div>
+
+  <div class="speaker-section speaker-dr">
+    <span class="speaker-info">
+      <span class="speaker-initial">DR</span>
+      <span class="speaker-name">Dave Rolsky</span>
+    </span>
+
+    <span class="transcript-timeindex">19:19</span> So are we all
+    done?
+
+  </div>
 
 </div>
 
