@@ -185,7 +185,7 @@ Then there is a line just to show progress.
 
 We put <b>undef</b> in the field, so even if the fetching fails, we'll already have the key in the hash.
 Using this will, ensure that we won't try to fetch the data again even if the first attempt failed.
-That's the reason we use <b>exists</b> in the firs line explained above.
+That's the reason we use <b>exists</b> in the first line explained above.
 
 <code lang="perl">
     $data{modules}{ $name } = undef;
