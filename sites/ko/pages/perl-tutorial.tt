@@ -18,6 +18,8 @@
 <p>
 <b>소개</b>
 <ol>
+<li><a href="/perl-editor">Perl 에디터</a></li>
+<li><a href="/debugging-perl-scripts">Perl 스크립트 디버깅</a></li>
 </ol>
 
 <b>스칼라</b>

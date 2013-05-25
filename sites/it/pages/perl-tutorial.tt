@@ -33,6 +33,7 @@
 <ul>
   <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
   <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
+  <li><a href="/bareword-in-perl">Bareword not allowed while "strict subs" in use</a></li>
 </ul>
 <li><a href="/undef-e-defined-in-perl">undef e defined in Perl</a></li>
 </ol>
