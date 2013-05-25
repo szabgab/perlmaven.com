@@ -195,7 +195,7 @@ $VAR1 = {
 </code>
 
 다소 이상하게 보입니다. 무슨 일이 벌어졌냐 하면, 우리가 타이핑한 <hl>undef</hl>은 빈 문자열로 변환되었고, 이 때문에
-<a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value in list assignment at ...</a> 경고가
+<a href="/use-of-uninitialized-value">Use of uninitialized value in list assignment at ...</a> 경고가
 발생합니다. 이 빈 문자열이 해시 안에서 키가 됩니다.
 
 그 다음으로 보면, 이 키에 대응되는 값이 없습니다. 이 때문에 <b>Odd number of elements in hash assignment</b> 경고가
