@@ -1,10 +1,11 @@
-=title Perl 中无标志符的？
+=title Perl的裸字
 =timestamp 2013-01-15T10:45:56
 =indexes bareword, strict
 =status show
+=original barewords-in-perl
 =books beginner_book
 =author szabgab
-=translator swuecho
+=translator terrencehan
 =index 1
 =archive 1
 =feed 1
@@ -13,29 +14,24 @@
 
 =abstract start
 
-等到所有变量类型都涉及到了再翻译。
+<hl>use strict</hl>包含3个部分。其中之一（<hl>use strict "subs"</hl>）负责禁用乱用的<b>裸字</b>。
 
-<hl>use strict</hl> has 3 parts. One of them, also called <hl>use strict "subs"</hl>,
-disables the inappropriate use of <b>barewords</b>.
-
-What does that mean?
+这是什么意思呢？
 
 =abstract end
 
-Without this restriction code like this would work and print "hello".
+如果没有这个限制，下面的代码也可以打印出"hello"。
 
 <code lang="perl">
 my $x = hello;
 print "$x\n";    # hello
 </code>
 
-That's strange in itself as we are used to put strings in quotes but
-Perl by default allows <b>barewords</b> - words without quotes - to behave like strings.
+这样使用不符合我们平常把字符串放在引号里的习惯，但是Perl默认是允许（使用）<b>裸字</b>——没有引号的单词——来作为字符串。
 
-The above code would print "hello".
+上面的代码输出"hello"。
 
-Well, at least until someone added a subroutine called "hello" to the top of
-your script:
+当然至少是在脚本顶部默认添加"helle"函数之前：
 
 <code lang="perl">
 sub hello {
@@ -46,16 +42,11 @@ my $x = hello;
 print "$x\n";    # zzz
 </code>
 
-Yes. In this version perl sees the hello() subroutine, calls it and assigns
-its return value to $x.
+在这个版本中，Perl看到了hello()函数，调用它闭关将结果赋值给$x。
 
-Then, if someone moves the subroutine to the end of your file,
-after the assignment, perl suddenly does not see the subroutine
-at the time of the assignment so we are back, having "hello" in $x.
+之后，如果有人将这个函数放在文件的结尾（赋值之后），此时Perl在赋值的时候就看不到函数，又回到老样子了：把"hello"赋给$x。
 
-No, you don't want to get in such a mess by accident. Or probably ever.
-Having <hl>use strict</hl> in your code perl will not allow that bareword
-<b>hello</b> in your code, avoiding this type of confusion.
+是的，你肯定不想自己陷入麻烦。那么请在代码中使用<hl>use strict</hl>来禁止裸字<b>hello</b>出现在代码中，从而避免困惑。
 
 <code lang="perl">
 use strict;
@@ -64,23 +55,20 @@ my $x = hello;
 print "$x\n";
 </code>
 
-Gives the following error:
+会给出如下错误：
 
 <code>
 Bareword "hello" not allowed while "strict subs" in use at script.pl line 3.
 Execution of script.pl aborted due to compilation errors.
 </code>
 
-<h2>Good uses of barewords</h2>
+<h2>裸子的正确使用</h2>
 
-There are other places where barewords can be used even when <hl>use strict "subs"</hl>
-is in effect.
+即便开启了<b>use strict "subs"</b>还是有些地方可以使用裸字。
 
-First of all, the names of the subroutines we create are really just barewords.
-That's good to have.
+首先，用户自定义的函数名就是裸字。
 
-Also, when we are referring to an element of a hash we can use barewords within the curly braces
-and words on the left hand side of the fat arrow => can also be left without quotes:
+同样，在提取哈希表元素花括号里也使用了裸字，以及胖箭头=>的左边也可以没有引号。
 
 <code lang="perl">
 use strict;
@@ -91,7 +79,5 @@ my %h = ( name => 'Foo' );
 print $h{name}, "\n";
 </code>
 
-In both cases in the above code "name" is a bareword,
-but these are allowed even when use strict is in effect.
-
+上面代码中的"name"都是裸字，它们在use strict的时候也是有效的。
 
