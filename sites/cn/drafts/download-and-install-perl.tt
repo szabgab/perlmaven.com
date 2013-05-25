@@ -28,10 +28,12 @@ At the time of this writing, the latest major version was 5.16 (released in May 
 being the most recent minor release.
 The <a href="http://www.cpan.org/src/README.html">README on CPAN</a> always contains the most up-to-date information.
 在写这篇文章的时候，最新的主版本是5.16（2012年5月发布），最近发布的小版本是5.16.2（2012年11月）。
+<a href="http://www.cpan.org/src/README.html">README on CPAN</a>总是包含最新的信息。
 
 You will probably also see a version number higher than the most recent stable release - currently it is 5.17.7.
 This is a monthly snapshot release of the development tree. It is only for people who closely follow the development of perl.
 Not for regular humans and definitely not for production use!
+你可能也会看到比最近发行的稳定版更高的版本号——当前是5.17.7。这是每月开发树发布的快照。只是针对紧跟perl开发的朋友，而不是普通用户，尤其不是给生产用的！
 
 <h2>Perl 5 Porters and downstream distributors</h2>
 
@@ -39,31 +41,40 @@ What the Perl 5 Porters release is the source code of Perl.
 This code is then taken by various <b>distributors</b> or <b>vendors</b> (aka. downstream distributors)
 and repackaged in an already compiled, binary format.
 Most of us use Perl from such <b>downstream distributors</b>.
+Perl 5 Porters发布的是Perl的源码。这些代码被<b>发布者</b>重新打包成已编译的二进制形式。大多数我们时候的Perl就是从这些<b>下游发布者</b>获取的。
 
 Usually within a few months of any release the various downstream distributors
 include the latest revision of Perl but it does not necessarily get to the end users.
+通常发布后几个月内下游发布者就会打包最新Perl修订版，不过没有必要推送给最终用户。
 
 If you use Linux you'll get the new version of Perl only if you upgrade your operating system.
 This might happen frequently on a home machine, but less often in corporations and
 on servers. They tend to upgrade only after a 2-5 years delay. In some cases the delay can be even longer.
+如果你使用Linux，只有在更新操作系统时候才能获得Perl的最新版本。这对家用电脑会比较频繁，公司和服务器就少多了，它们更倾向于2-5年甚至更长时间后再更新。
 
 This means that the so called <b>system Perl</b> on Linux distributions will be a few years out of date.
+这意味着Linux发行版上的<b>系统的perl</b>会过时好几年。
 
 <h2>Microsoft Windows</h2>
 
 There are a number of distributors of Perl on Windows.
+在Windows平台上有很多Perl发布者。
 
 Currently I recommend the
 <a href="http://dwimperl.com/windows.html">DWIM Perl for Windows</a> distribution.
 It is a derivative of the very successful <a href="http://strawberryperl.com/">Strawberry Perl</a> distribution
 with hundreds of extra Perl modules from CPAN. (Disclosure: I am the maintainer of DWIM Perl).
+目前我推荐<a href="http://dwimperl.com/windows.html">DWIM Perl for Windows</a>发行版。
+它是<a href="http://strawberryperl.com/">Strawberry Perl</a>的衍生版，它包含了好多CPAN模块。（透露一下，我也是DWIM Perl的维护者）。
 
 Besides coming with Padre, <a href="http://padre.perlide.org/">the Perl IDE</a>, it also includes
 <a href="http://moose.perl.org/">Moose, the postmodern object oriented programming</a> framework of Perl.
+还有Padre，<a href="http://padre.perlide.org/">Perl IDE</a>，它包含<a href="http://moose.perl.org/">Moose, 后现代OO框架</a>。
 
 Out of the box it allows <a href="http://perldancer.org/">web development with Perl Dancer framework</a>.
 There is a post on how to
 <a href="/videos/getting-started-with-perl-dancer">get started with Perl Dancer</a>.
+它还包含<a href="http://perldancer.org/"> Perl Dancer Web开发框架</a>。
 
 It also includes modules to read and write Microsoft Excel files and it comes with a lot more extensions.
 
@@ -87,6 +98,7 @@ Then installing all the additional modules.
 
 Every modern Linux distribution comes with perl already installed. In some cases it is not the full package
 that was released by the Perl 5 Porters, and in most cases it is not the most recent version either.
+每个现代Linux发行版都预装了Perl。
 
 Being a bit out of date would not be a problem, but in some cases you will be stuck with a 5-7 years old version of Perl.
 You will encounter such cases especially in Linux distributions with long support policy. For example
