@@ -27,6 +27,7 @@
 <li>흔히 발생하는 경고와 에러 메시지<br />
 <ul>
   <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+  <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
 </ul>
 </li>
 <li><a href="/boolean-values-in-perl">Perl의 불리언 값(참과 거짓)</a></li>
