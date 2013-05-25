@@ -1,4 +1,4 @@
-=title POD - Plain Old Documentation
+﻿=title POD - Plain Old Documentation
 =timestamp 2013-05-18T03:19:56
 =indexes POD, perldoc, =head1, =cut, =pod, =head2, documentation, pod2html, pod2pdf
 =status show
@@ -17,20 +17,15 @@
 సాదారణంగా ప్రోగ్రామర్స్ డాక్యుమెంటేషన్ వ్రాయడానికి ఇష్టపడరు. ప్రోగ్రామ్స్ సాదారణ టెక్స్ట్ ఫైల్స్ లో వుండడం కూడా
 ఒక కారణం, కానీ కొన్ని వర్డ్ ప్రాసెసర్ లో డాక్యుమెంటేషన్ వ్రాయవలసి వస్తుంది.
 
-That requires learning the word processor and investing a lot of energy in
-trying to make the document "look good" instead of "having good content".
+వర్డ్ ప్రాసెసర్ గురించి తెలుసుకుని దానిని నేర్చుకోవడానికి చాలా సమయం పడుతుంది.దానివలన
+దానిలో వున్న కంటెంట్ కంటే దానిని అందంగా చూపించడానికే ఎక్కువ సమయం కేటాయిస్తాము.
 
-That's not the case with Perl. Normally you would write the
-documentation of your modules right in the source code and rely
-on external tool to format it to look good.
+Perl లో module డాక్యుమెంటేషన్ సోర్స్ కోడ్ లోనే వ్రాసి అందంగా చూపించడానికి బయటి టూల్స్ మీద ఆదారపడతాము.
 
 =abstract end
+ఈ <a href="/perl-tutorial">Perl tutorials</a> ఎపిసోడ్ లో Perl డెవలపర్లు ఉపయోగించే mark-up లాంగ్వేజ్ ఐన <b>POD - Plain Old Documentation</b> గురించి తెలుసుకుందాం.
 
-In this episode of the <a href="/perl-tutorial">Perl tutorials</a>
-we are going to see the <b>POD - Plain Old Documentation</b> which is
-the mark-up language used by perl developers.
-
-As simple piece of perl code with POD looks like this:
+POD కలిగి ఉన్న Perl కోడ్ క్రింది విదంగా వుంటుంది:
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -50,52 +45,32 @@ print the output to the screen.
 print "Here comes the code ... \n";
 </code>
 
-If you save this as <hl>script.pl</hl> and run it using <hl>perl script.pl</hl>,
-perl will disregard anything between the <hl>=pod</hl> and the <hl>=cut</hl> lines.
-It will only execute the actual code.
+పైన ఉన్న స్క్రిప్ట్ ని <hl>script.pl</hl> అని సేవ్ చేసి, <hl>perl script.pl</hl> అని రన్ చెయ్యండి. Perl <hl>=pod</hl> నుండి <hl>=cut</hl> వరకూ ఉన్న లైన్స్ ని తీసుకోదు.
+అసలైన కోడ్ ని మాత్రమే execute చేస్తుంది.
 
-On the other hand, if you type in <hl>perldoc script.pl</hl>, the <b>perldoc</b> command
-will disregard all the code. It will fetch the lines between <hl>=pod</hl> and <hl>=cut</hl>,
-format them according to certain rules, and display them on the screen.
-
-These rules depend on your operating system, but they are exactly the same as
-you saw when we learned about the
-<a href="/core-perl-documentation-cpan-module-documentation">standard documentation of Perl</a>.
-
-The added value of using the embedded POD is that your code will never be supplied
-without documentation by accident, as it is inside the modules and the scripts.
-You can also reuse the tools and infrastructure the Open Source Perl community
-built for itself. Even for your in-house purposes.
+<hl>perldoc script.pl</hl> అని టైపు చేస్తే <b>perldoc</b> కమాండ్ కోడ్ ని విడిచిపెట్టి <hl>=pod</hl> నుండి <hl>=cut</hl> వరకు ఉన్న లైన్స్ ని తీసుకుని కొన్ని రూల్స్ ని పాటిస్తూ ఒక పద్ధతిలో స్క్రీన్ మీద చూపిస్తుంది.
+ఆ రూల్స్ మీరు వాడె ఆపరేటింగ్ సిస్టం మీద ఆదారపడి ఉంటుంది, మనం ఇంతకుముందు <a href="/core-perl-documentation-cpan-module-documentation">standard documentation of Perl</a> లో చెప్పుకున్న విదంగానే వుంటుంది.
 
 <h2>Too simple?</h2>
 
-The assumption is that if you remove most of the obstacles from writing
-documentation then more people will write documentation. Instead of learning
-how to use a word processor to create nice looking documents, you just
-type in some text with a few extra symbols and you can get a reasonably
-looking document. (Check out the documents on <a href="http://metacpan.org/">Meta CPAN</a>
-to see nicely formatted version of PODs.)
+మనం obstacles ని తెసివేయడం వలన సులభంగా డాక్యుమెంట్ వ్రాయడానికి వుంటుంది. వర్డ్ ప్రాసెసర్ గురించి తెలుసుకొని దానిని నేర్చుకోవడానికి సమయం కేటాయించడం కంటే,
+సింబల్ తో పాటు టెక్స్ట్ కలపడం వలన సులువుగా డాక్యుమెంట్ పొందగలం. ( <a href="http://metacpan.org/">Meta CPAN</a> డాక్యుమెంట్ PODs ని ఉపయోగించి చాలా బాగా చేసారు.)
 
 <h2>The markup language</h2>
 
-Detailed description of the <a href="http://perldoc.perl.org/perlpod.html">POD markup language</a>
-can be found by typing in <a href="http://perldoc.perl.org/perlpod.html">perldoc perlpod</a> but
-it is very simple.
+<a href="http://perldoc.perl.org/perlpod.html">POD markup language</a> గురించి అన్ని విషయాలు <a href="http://perldoc.perl.org/perlpod.html">perldoc perlpod</a> అని టైపు చేసి సులభంగా తెలుసుకోవచ్చు.
 
-There are a few tags such as <hl>=head1</hl> and <hl>=head2</hl>
-to mark "very important" and "somewhat less important" headers.
-There is <hl>=over</hl> to provide indentation and <hl>=item</hl>
-to allow the creation of bullet points, and there are a few more.
+కొన్ని టాగ్స్ : <hl>=head1</hl> చాలా ముఖ్యమైన headers కోసం, <hl>=head2</hl> ప్రాధాన్యమైన headers కోసం, <hl>=over</hl> పేరాగ్రాఫ్ మొదలు పెట్టడానికి మరియు <hl>=item</hl> బుల్లెట్ పాయింట్స్ కోసం, ఇలా ఇంకొన్ని వున్నాయి.
 
-There is <hl>=cut</hl> to mark the end of a POD section and
-<hl>=pod</hl> to start one. Though this starting one isn't strictly required.
+<hl>=cut</hl> ని ఉపయోగించి POD సెక్షన్ ని ముగించవచ్చు మరియు <hl>=pod</hl> ని ఉపయోగించి మొదలుపెట్టవచ్చు,దీని తోటే మొదలుపెట్టాలని ఏమిలేదు.
 
-Any string that starts with an equal sign <hl>=</hl> as the first character in a row will
-be interpreted as a POD markup, and will start a POD section closed by <hl>=cut</hl>
+ఏ స్ట్రింగ్ ఐనా <hl>=</hl> సైన్ తోటే మొదులుకుని POD మార్కప్ కల్గి వుంటుంది,<hl>=cut</hl> తో మాత్రమే ముగుస్తుంది.
 
-POD even allows the embedding of hyper-links using the L&lt;some-link> notation.
+POD L&lt;some-link> notation ని ఉపయోగించుకొని hyper-links ని చూపిస్తుంది.
 
-Text between the markup parts will be shown as paragraphs of plain text.
+markup parts మధ్యలో వున్న టెక్స్ట్ ని plain టెక్స్ట్ పేరాగ్రాఫ్ కింద చూపిస్తుంది.
+
+
 
 If the text does not start on the first character of the row, it will be taken verbatim,
 meaning they will look exactly as you typed them: long lines will stay
