@@ -27,6 +27,7 @@
 <li>흔히 발생하는 경고와 에러 메시지<br />
 <ul>
   <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+  <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
 </ul>
 </li>
 <li><a href="/boolean-values-in-perl">Perl의 불리언 값(참과 거짓)</a></li>
@@ -74,6 +75,7 @@
 <li><a href="/how-to-eliminate-a-value-in-the-middle-of-an-array-in-perl">Perl의 배열 중간에 있는 값을 제거하는 법</a></li>
 <li><a href="/how-to-capture-and-save-warnings-in-perl">Perl에서 경고메시지를 가로채어 저장하기</a></li>
 <li><a href="/using-a-queue-in-perl">Perl에서 큐 사용하기</a></li>
+<li><a href="/undef-on-perl-arrays-and-hashes">Perl 배열과 해시에 대한 undef 호출</a></li>
 </ol>
 
 <!--

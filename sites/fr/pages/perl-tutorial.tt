@@ -116,7 +116,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 
 <b>Les fonctions</b>
 <ol>
-<li><a href="http://szabgab.com/subroutines-and-functions-in-perl.html">Les fonctions en Perl</a> (EN)</li>
+<li><a href="http://perlmaven.com/subroutines-and-functions-in-perl">Les fonctions en Perl</a> (EN)</li>
 <li>Passer et vérifier des paramètres de fonctions</li>
 <li>Nombre variable de paramètres</li>
 <li>Renvoyer une liste</li>
