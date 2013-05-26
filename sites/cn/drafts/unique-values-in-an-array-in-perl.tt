@@ -1,9 +1,11 @@
-=title Unique values in an array in Perl
+=title Perl数组中的唯一值
 =timestamp 2012-09-20T21:42:56
 =indexes unique, uniq, distinct, filter, grep, array, List::MoreUtils, duplicate
 =status show
+=original unique-values-in-an-array-in-perl
 =books beginner_book
 =author szabgab
+=translator terrencehan
 =index 1
 =archive 1
 =feed 1
@@ -14,9 +16,11 @@
 
 In this part of the <a href="/perl-tutorial">Perl tutorial</a> we are going to see how to
 make sure we only have <b>distinct values in an array</b>.
+在本节<a href="/perl-tutorial">Perl教程</a>中我们会看到如何确保<b>数组仅包含不同的值</b>。
 
 Perl 5 does not have a built in function to filter out duplicate values
 from an array, but there are several solutions to the problem.
+Perl 5没有过滤数组重复值的内建函数，但是却有很多解决方案。
 
 =abstract end
 
@@ -24,6 +28,7 @@ from an array, but there are several solutions to the problem.
 
 Depending on your situation, probably the simplest way is to use the <hl>uniq</hl>
 function of the <a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a> module from CPAN.
+对于你的问题，可能最简单的方式是使用<a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a>模块的<hl>uniq</hl>函数。
 
 <code lang="perl">
 use List::MoreUtils qw(uniq);
@@ -33,6 +38,7 @@ my @unique_words = uniq @words;
 </code>
 
 A full example is this:
+完整示例：
 
 <code lang="perl">
 use strict;
@@ -50,6 +56,7 @@ say Dumper \@unique_words;
 </code>
 
 The result is:
+结果：
 
 <code>
 $VAR1 = [
@@ -62,14 +69,17 @@ $VAR1 = [
 
 For added fun the same module also provides a function called <hl>distinct</hl>,
 which is just an alias of the <hl>uniq</hl> function.
+另外，该模块还提供了<hl>uniq<hl>的别名函数——<hl>distinct</hl>。
 
 In order to use this module you'll have to install it from CPAN.
+你得利用CPAN先安装这个模块才能使用。
 
-<h2>Home made uniq</h2>
+<h2>自制 uniq</h2>
 
 If you cannot install the above module for whatever reason, or if you think
 the overhead of loading it is too big, there is a very short expression
 that will do the same:
+如果不能安装上面的模块，或者你认为加载模块的开销太大，那么可以使用一个简单表达式来达到同样的效果：
 
 <code lang="perl">
 my @unique = do { my %seen; grep { !$seen{$_}++ } @data };
@@ -78,6 +88,7 @@ my @unique = do { my %seen; grep { !$seen{$_}++ } @data };
 This, of course can look cryptic to someone who does not know it already,
 so it is recommended to define your own <hl>uniq</hl> subroutine,
 and use that in the rest of the code:
+这对不熟悉的人会很奇怪，所以建议自定义<hl>uniq</hl>函数，然后在代码的其他部分使用。
 
 <code lang="perl">
 use strict;
@@ -98,10 +109,11 @@ sub uniq {
 }
 </code>
 
-<h2>Home made uniq explained</h2>
+<h2>解释自制的uniq</h2>
 
 I can't just throw this example here and leave it like that. I'd better explain it.
 Let's start with an easier version:
+举了个例子之过后当然不能置之不理，下面就来解释一下。先从早点的版本开始：
 
 <code lang="perl">
 my @unique;
@@ -118,21 +130,25 @@ foreach my $value (@words) {
 Here we are using a regular <hl>foreach</hl> loop to go over the
 values in the original array, one by one. We use a helper hash called <hl>%seen</hl>.
 The nice thing about the hashes is that their keys are <b>unique</b>.
+这里用普通的<hl>foreach</hl>循环一个一个处理原数组中的值，处理过程中使用了辅助哈希表<hl>%seen</hl>，因为哈希表的键是唯一的。
 
 We start with an empty hash so when we encounter the first "foo", <hl>$seen{"foo"}</hl>
 does not exist and thus its value is <hl>undef</hl> which is considered false in Perl.
 Meaning we have not seen this value yet. We push the value to the end of the new
 <hl>@uniq</hl> array where we are going to collect the distinct values.
+开始的时候哈希表是空的，所以当遇到第一个"foo"的时候<hl>$seen{"foo"}</hl>并不存在，它的值是<hl>undef</hl>，也就是Perl中的false，同时表示之前没有见过这个值。我们把这个值添加到<hl>@uniq</hl>数组的最后。
 
 We also set the value of <hl>$seen{"foo"}</hl> to 1.
 Actually any value would do as long as it is considered "true" by Perl.
+我们也把<hl>$seen{"foo"}</hl>设为1，其实任何为true的值在这里都可以。
 
 The next time we encounter the same string we already have that key
 in the <hl>%seen</hl> hash and its value is true, so the <hl>if</hl> condition
 will fail, and we won't <hl>push</hl> the duplicate value in the resulting array.
+下一次遇到相同的字符串时，它已经作为<hl>%seen</hl>哈希表的键且对应的值是true，所以<hl>if</hl>条件判断会失败，也就不会<hl>push</hl>重复的值到数组里。
 
 
-<h2>Shortening the home made unique function</h2>
+<h2>简化自制的 unique 函数</h2>
 
 First of all we replace the assignment of 1 <hl>$seen{$value} = 1;</hl> by the
 post-increment operator <hl>$seen{$value}++</hl>. This does not change the behavior
@@ -142,6 +158,7 @@ condition. It is important that this is a postfix increment (and not a prefix in
 as this means the increment only takes place after the boolean expression was evaluated.
 The first time we encounter a value the expression will be TRUE and the rest of the times
 it will be FALSE.
+首先把赋值为1<hl>$seen{$value} = 1;</hl>替换成自增操作符<hl>$seen{$value}++</hl>。这不会改变之前的方案——任何正数都被看作TRUE，但是会把设置"seen标志"的语句放在<hl>if</hl>条件判断中。区分使用后缀自增（而不是前缀自增）是非常重要的，因为它会在布尔表达式计算完之后再自增。当我们第一次遇到某个值时（布尔）表达式为TRUE，之后再遇到同一个值时为FALSE。
 
 <code lang="perl">
 my @unique;
@@ -155,10 +172,12 @@ foreach my $value (@data) {
 </code>
 
 This is shorter, but we can do even better.
+这已经缩短了代码，但是我们还有更好的方案。
 
-<h2>Filtering duplicate values using grep</h2>
+<h2>使用grep过滤重复值</h2>
 
 The <hl>grep</hl> function in Perl is a generalized form of the well known grep command of Unix.
+Perl的<hl>grep</hl>函数是Unix的grep命令的一般化形式。
 
 It is basically a <a href="/filtering-values-with-perl-grep">filter</a>.
 You provide an array on the right hand side and an expression in the block.
@@ -166,24 +185,28 @@ The <hl>grep</hl> function will take each value of the array one-by-one, put it 
 <hl>$_</hl>, the <a href="/the-default-variable-of-perl.html">default scalar variable of Perl</a>
 and then execute the block. If the block evaluates to TRUE, the value can pass.
 If the block evaluates to FALSE the current value is filtered out.
+它基本上是一个<a href="/filtering-values-with-perl-grep">过滤器</a>。你可以在右边传入一个数组，在代码块中传入一个表达式。<hl>grep</hl>函数会一个一个的提取数组中的值到<hl>$_</hl>（<a href="/the-default-variable-of-perl.html">Perl的默认标量</a>）中，然后执行代码块。如果代码块求值为TRUE，对应的值会通过过滤。如果代码块求值为FALSE，当前值会被过滤掉。
 
 That's how we got to this expression:
+于是我们得到这样的表达式：
 
 <code lang="perl">
 my %seen;
 my @unique = grep { !$seen{$_}++ } @words;
 </code>
 
-<h2>Wrapping it in 'do' or in 'sub'</h2>
+<h2>包裹在'do'或'sub'中</h2>
 
 The last little thing we have to do, is wrapping the above two statements in either
 a <hl>do</hl> block
+最后要做的是吧上面两个语句包裹在<hl>do</hl>代码块
 
 <code lang="perl">
 my @unique = do { my %seen; grep { !$seen{$_}++ } @words };
 </code>
 
 or, better yet, in a function with an expressive name:
+或者放在具名函数中：
 
 <code lang="perl">
 sub uniq {
@@ -192,31 +215,37 @@ sub uniq {
 }
 </code>
 
-<h2>Home made uniq - round 2</h2>
+<h2>另一个自制uniq</h2>
 
 Prakash Kailasa suggested an even shorted version of implemening uniq,
 for perl version 5.14 and above, if there is no requirement to preserve the order of elements.
+如果对元素的顺序没有要求的话，可以使用Prakash Kailasa建议的更短的uniq实现版本（需要perl 5.14或更高）:
 
-Inline:
+内联代码:
 
 <code lang="perl">
 my @unique = keys { map { $_ => 1 } @data };
 </code>
 
 or within a subroutine:
+或者在函数里：
+
 <code lang="perl">
 my @unique = uniq(@data);
 sub uniq { keys { map { $_ => 1 } @_ } };
 </code>
 
 Let's take this expression apart:
+分开讲解一下：
 
 <hl>map</hl> has a similar syntax to <hl>grep</hl>: a block and an array (or a list of values).
 It goes over all the elements of the array, executs the block and passes the result to the left.
+<hl>map</hl>的语法和<hl>grep</hl>相似:一个代码块以及一个数组。它会遍历数组的所有元素，执行代码块并把结果传递给左边。
 
 In our case, for every value in the array it will pass the value itself followed by the number 1.
 Remember <hl>=&gt;</hl>, aka. fat comma, is just a comma. Assuming @data has ('a', 'b', 'a') in it,
 this expression will return ('a', 1, 'b', 1, 'a', 1).
+在我们的例子里，数组中的每个元素处理之后都会和数字1一起被传递。不要忘记<hl>=&gt;</hl>（也称胖逗号）就是个逗号。假设@data是('a', 'b', 'a')，该表达式会返回('a', 1, 'b', 1, 'a', 1)。
 
 <code lang="perl">
 map { $_ => 1 } @data
@@ -224,6 +253,7 @@ map { $_ => 1 } @data
 
 If we assigned that expression to a hash, we would get the original data as keys, and the number 1-es as
 valiues. Try this:
+如果吧这个表达式赋值给一个哈希表，那么原来的数据会作为键，数字1会作为值。尝试一下：
 
 <code lang="perl">
 use strict;
@@ -237,6 +267,7 @@ print Dumper \%h;
 </code>
 
 and you will get:
+输出：
 <code>
 $VAR1 = {
           'a' => 1,
@@ -246,12 +277,14 @@ $VAR1 = {
 
 If, instead of assigning it to an array we wrap the above expression in curly braces, we will get a reference to an
 anonymous hash.
+如果把它包裹在花括号里而不是赋值的话，我们会得到一个匿名哈希表的引用。
 
 <code lang="perl">
 { map { $_ => 1 } @data }
 </code>
 
 Let's see it in action:
+看一下实际例子：
 
 <code lang="perl">
 use strict;
@@ -264,20 +297,24 @@ print Dumper $hr;
 </code>
 
 Will print the same output as the previous one, barring any change in order in the dumping of the hash.
+除了哈希表的dump顺序可能改变以外，这和之前的输出结果一致。
 
 Finally, starting from perl version 5.14, we can call the <hl>keys</hl> function on hash references as well.
 Thus we can write:
+最后，从perl 5.14开始我们可以对哈希表引用调用<hl>keys</hl>函数，所以可以这样写：
 
 <code lang="perl">
 my @unique = keys { map { $_ => 1 } @data };
 </code>
 
 and we'll get back the unique values fom <hl>@data</hl>
+然后会从<hl>@data</hl>中提取唯一值。
 
 
-<h2>Exercise</h2>
+<h2>练习</h2>
 
 Given the following file print out the unique values:
+给定下面文件，请唯一打印出其中的值：
 
 input.txt:
 
@@ -287,16 +324,19 @@ Foo foo another foo
 </code>
 
 expected output:
+预期输出：
 
 <code>
 foo Bar bar first second Foo another
 </code>
 
-<h2>Exercise 2</h2>
+<h2>练习 2</h2>
 
 This time filter out duplicates regardless of case.
+过滤掉重复值（不管大小写）。
 
 expected output:
+预期输出：
 
 <code>
 foo Bar first second another
