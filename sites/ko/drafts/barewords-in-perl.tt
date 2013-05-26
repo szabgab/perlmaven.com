@@ -1,9 +1,11 @@
-=title Barewords in Perl
-=timestamp 2013-01-15T10:45:56
+=title Perl에서의 Bareword
+=timestamp 2013-05-26T23:00:00
 =indexes bareword, strict
 =status show
+=original barewords-in-perl
 =books beginner_book
 =author szabgab
+=translator gypark
 =index 1
 =archive 1
 =feed 1
@@ -12,27 +14,27 @@
 
 =abstract start
 
-<hl>use strict</hl> has 3 parts. One of them, also called <hl>use strict "subs"</hl>,
-disables the inappropriate use of <b>barewords</b>.
+<hl>use strict</hl> 는 세 부분으로 나누어집니다. 그 중에 하나, <hl>use strict "subs"</hl>라고도 불리는
+부분은 <b>bareword</b>를 부적당하게 사용하지 못하도록 제한합니다.
 
-What does that mean?
+이게 무슨 뜻이냐고요?
 
 =abstract end
 
-Without this restriction code like this would work and print "hello".
+이 제한이 없을 경우 다음과 같은 코드는 제대로 동작하고 "hello"를 출력합니다.
 
 <code lang="perl">
 my $x = hello;
 print "$x\n";    # hello
 </code>
 
-That's strange in itself as we are used to put strings in quotes but
-Perl by default allows <b>barewords</b> - words without quotes - to behave like strings.
+문자열을 따옴표 안에 넣는 것에 익숙한 우리에게, 이것은 이상하게 느껴집니다.
+그러나 Perl은 기본적으로 <b>bareword</b> - 따옴표로 둘러쌓지 않은 단어 - 가 문자열처럼 동작하는 것을
+허용합니다.
 
-The above code would print "hello".
+위의 코드는 "hello"를 출력할 것입니다.
 
-Well, at least until someone added a subroutine called "hello" to the top of
-your script:
+어, 그러니까, 누군가가 여러분의 스크립트 위쪽에다가 "hello"란 이름의 서브루틴을 추가하기 전까지는 말이죠:
 
 <code lang="perl">
 sub hello {
@@ -43,16 +45,15 @@ my $x = hello;
 print "$x\n";    # zzz
 </code>
 
-Yes. In this version perl sees the hello() subroutine, calls it and assigns
-its return value to $x.
+그렇습니다. 이번 코드에서는 Perl은 hello() 서브루틴을 보고, 이 서브루틴을 호출한 후 반환값을
+$x에 할당합니다.
 
-Then, if someone moves the subroutine to the end of your file,
-after the assignment, perl suddenly does not see the subroutine
-at the time of the assignment so we are back, having "hello" in $x.
+게다가, 누군가 이 서브루틴을 파일의 끝부분, 즉 할당문의 뒤쪽으로 옮긴다면, Perl은 할당문을 실행하는
+시점에는 서브루틴을 미처 보지 못하고, 처음처럼 $x에 "hello"가 들어갑니다.
 
-No, you don't want to get in such a mess by accident. Or probably ever.
-Having <hl>use strict</hl> in your code perl will not allow that bareword
-<b>hello</b> in your code, avoiding this type of confusion.
+네, 여러분은 우연히라도 이런 혼란스러운 상황에 처하고 싶지 않을 겁니다. 아마 앞으로도 계속 그렇겠지요.
+코드 안에 <hl>use strict</hl>를 쓰면 Perl은 코드 내에 bareword인 <b>hello</b>를 쓰는 것을 허용하지
+않게 되고, 이런 형태의 혼란을 피할 수 있습니다.
 
 <code lang="perl">
 use strict;
@@ -61,23 +62,21 @@ my $x = hello;
 print "$x\n";
 </code>
 
-Gives the following error:
+위 코드는 다음과 같은 에러를 발생시킵니다:
 
 <code>
 Bareword "hello" not allowed while "strict subs" in use at script.pl line 3.
 Execution of script.pl aborted due to compilation errors.
 </code>
 
-<h2>Good uses of barewords</h2>
+<h2>bareword를 유용하게 사용하는 경우</h2>
 
-There are other places where barewords can be used even when <hl>use strict "subs"</hl>
-is in effect.
+<hl>use strict "subs"</hl>가 효력을 발휘하고 있더라도 bareword를 사용할 수 있는 경우가 있습니다.
 
-First of all, the names of the subroutines we create are really just barewords.
-That's good to have.
+첫번째로, 우리가 만드는 서브루틴들의 이름은 사실 bareword입니다. 이런 것은 문제가 되지 않습니다.
 
-Also, when we are referring to an element of a hash we can use barewords within the curly braces
-and words on the left hand side of the fat arrow => can also be left without quotes:
+또한, 해시의 원소에 접근할 때 중괄호 안에 bareword를 사용할 수 있고, 화살표 연산자 =>의 좌변에 단어를
+쓸 때도 따옴표 없이 쓸 수 있습니다:
 
 <code lang="perl">
 use strict;
@@ -88,7 +87,6 @@ my %h = ( name => 'Foo' );
 print $h{name}, "\n";
 </code>
 
-In both cases in the above code "name" is a bareword,
-but these are allowed even when use strict is in effect.
+위 코드의 두 경우 다 "name"은 bareword이며, use strict가 설정된 상태에서도 허용됩니다.
 
 
