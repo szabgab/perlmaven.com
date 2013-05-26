@@ -1,8 +1,10 @@
-=title Test for warnings in a Perl Module
-=timestamp 2012-07-03T10:10:10
-=indexes warnings, __WARN__, Test::Warn
+=title Tester les avertissements dans un module Perl
+=timestamp 2013-05-26T10:10:10
+=indexes avertissements, warnings, __WARN__, Test::Warn
 =status show
+=original test-for-warnings-in-a-perl-module
 =author szabgab
+=translator oval
 =index 1
 =archive 1
 =feed 1
@@ -11,74 +13,60 @@
 
 =abstract start
 
-There are cases when you write a Perl module that - as part of its API -
-issues warnings in certain cases.
+Il se peut que vous écriviez un module Perl qui - dans le cadre de son API - émette des avertissements dans certains cas.
 
-It would be nice if we could make sure this warning won't disappear
-when someone changes the code later trying to fix some bug or add some feature.
+Ce serait bien si nous pouvions nous assurer que cet avertissement ne disparaisse pas quand une tierce personne change le code plus tard afin de tenter de corriger un bug ou d'ajouter une fonctionnalité.
 
-Probably the easiest way to do this, is to write a test case that checks
-if you get the warning at the right time.
+Probablement la meilleure façon de le faire est d'écrire un test qui vérifie si vous obtenez l'avertissement au bon moment.
 
 =abstract end
 
-For example your module has a function parsing a log file.
-What happens when one of the rows is broken?
-Will your function throw an exception?
-Will it disregard the incorrect line and silently continue?
-Will it give a warning and continue?
+Par exemple, votre module a une fonction analysant un fichier journal.
+Que se passe-t-il quand une des lignes de ce fichier est incorrecte ?
+Votre fonction générera-t-elle une exception ?
+Ignorera-t-elle la ligne incorrecte en continuant silencieusement ?
+Lancera-t-elle un avertissement avant de continuer ?
 
-Maybe there is a function which is deprecated,
-and which should give a warning when it is invoked but
-then still work properly. At least till it gets removed.
+Peut-être une fonction est obsolète, et sans doute devrait-elle donner un avertissement quand elle est invoquée, mais dans le même temps encore fonctionner correctement.
+Au moins jusqu'à ce qu'elle soit retirée.
 
-You would like to make sure the warning remains there
-and it is not removed or hidden by mistake or by
-someone who did not know the warning is part of the API.
+Souhaitez-vous vous assurer que l'avertissement reste là ? Qu'il ne soit pas enlevé ou caché par erreur ou par quelqu'un qui ne savait pas que l'avertissement faisait partie de l'API ?
 
-How can you test your code to make sure it gives a
-warning at the right time?
+Comment pouvez-vous tester votre code pour vous assurer qu'il donne un avertissement au bon moment ?
 
-<h2>The warning signal __WARN__</h2>
+<h2>Le signal d'avertissement __WARN__</h2>
 
-In Perl, every call to <b>warn</b> emits an internal signal. You can set up your test code to
-<a href="http://szabgab.com/how-to-capture-and-save-warnings-in-perl.html">capture and save any warnings</a>
-using <b>$SIG{__WARN__}</b> and then examine if the warning was the right one.
+En Perl, tout appel à la fonction prédéfinie <hl>warn</hl> émet un signal interne. Vous pouvez configurer votre code de test pour <a href="http://www.perlmaven.com/how-to-capture-and-save-warnings-in-perl">capturer et enregistrer des avertissements</a> en utilisant <b>$SIG{__WARN__}</b>, puis examiner si l'avertissement était le bon.
 
-Something like this:
+Quelque chose comme ceci :
 
 <code lang="perl">
 {
-  my @warnings;
+  my @avertissements;
+
   local $SIG{__WARN__} = sub {
-     push @warnings, @_;
+     push @avertissements, @_;
   };
-  process_log();
-  is scalar(@warn), 1, 'exactly one warning';
-  like $warn[0], qr{Invalid row}, 'warning of invalid row';
+  traiter_journal();
+  is scalar(@avertissements), 1, 'exactement un avertissement';
+  like $avertissements[0], qr{ligne invalide}, 'avertissement concernant une ligne invalide';
 }
 </code>
 
-What if we would like to test this for several different cases?
-Will we have to copy part of this code again and again?
-Will we create our own function to do this?
+Que faire si nous souhaitons tester ceci pour plusieurs cas différents ?
+Allons-nous devoir copier une partie de ce code encore et encore ?
+Allons-nous créer notre propre fonction pour faire cela ?
 
 <h2>Test::Warn</h2>
 
-Luckily Janek Schleicher has alrady done that when he created
-the <a href="http://metacpan.org/module/Test::Warn">Test::Warn</a> module which is currently maintained
-by <a href="http://chorny.net/">Alexandr Ciornii</a>.
+Heureusement, Janek Schleicher l'a déjà fait quand il a créé le module <a href="http://metacpan.org/module/Test::Warn">Test::Warn</a> qui est actuellement maintenu par <a href="http://chorny.net/">Alexandr Ciornii</a>.
 
-You can use the convenince functions provided by this module and
-you don't need to reinvent this wheel.
+Vous pouvez utiliser les fonctions pratiques fournies par ce module et vous n'avez pas besoin de réinventer la roue.
 
-Using this module, the above code would be reduced to
+Grâce à ce module, le code ci-dessus serait réduit à :
 
 <code lang="perl">
-warning_like { process_log() } qr{Invalid row}, 'warning of invalid row';
+warning_like { traiter_journal() } qr{ligne invalide}, 'avertissement concernant une ligne invalide';
 </code>
 
-Note, there is a block around the function call and there is no comma
-between the block and the expected regular expression.
-
-
+Notez bien qu'il y a un bloc autour de l'appel de fonction et qu'il n'y a pas de virgule entre le bloc et l'expression régulière prévue.
