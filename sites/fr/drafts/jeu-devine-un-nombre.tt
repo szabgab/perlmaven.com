@@ -1,9 +1,11 @@
-=title Number Guessing game
-=timestamp 2013-04-02T10:45:17
-=indexes rand, random, int, integer
+=title Jeu "Devine un nombre"
+=timestamp 2013-05-26:45:17
+=indexes rand, hasard, int, entier
 =status show
+=original number-guessing-game
 =books beginner_book
 =author szabgab
+=translator oval
 =index 1
 =archive 1
 =feed 1
@@ -12,81 +14,69 @@
 
 =abstract start
 
-In this episode of the <a href="/perl-tutorial">Perl tutorial</a> we are going to
-start building a small, but fun game.
-This was the first game I wrote when I was in high-school, even before Perl 1.0 was released.
+Dans cet article du <a href="/perl-tutorial>"tutoriel Perl</a>, nous allons commencer à construire un jeu tout petit, masis ô combien amusant.
+Ce fut le premier jeu que j'ai écrit quand j'étais au lycée, avant même que Perl 1.0 soit sorti.
 
 =abstract end
 
-In order to write this game we need to learn about two simple, and unrelated topics:
-<b>How to generate random numbers in Perl</b> and
-<b>How to get the integer part of a number</b>.
+Pour écrire ce jeu, nous devons apprendre deux sujets simples et sans rapport entre eux :
+<b>Comment générer des nombres aléatoires en Perl</b> et
+<b>Comment obtenir la partie entière d'un nombre</b>.
 
-<h2>Integer part of a fractional number</h2>
+<h2>Partie entière d'un nombre rationnel</h2>
 
-The <hl>int()</hl> function returns the integer part of its parameter:
+La fonction prédéfinie <hl>int()</hl> renvoie la partie entière de son paramètre :
 
 <code lang="perl">
 use strict;
 use warnings;
 use 5.010;
-
-my $x = int 3.14;
-say $x;          # will print 3
-
+ 
+my $x = int 3,14;
+say $x; # va afficher 3
+ 
 my $z = int 3;
-say $z;          # will also print 3.
-
-                 # Even this will print 3.
-my $w = int 3.99999;
-say $w;
-
-say int -3.14;   # will print -3
+say $z; # va aussi a1fficher 3
+ 
+my $w = int 3,99999;
+say $w; # même ceci affichera 3
+ 
+say int -3,14; # va afficher -3
 </code>
 
-<h2>Random numbers</h2>
+<h2>Nombres aléatoires</h2>
 
-A call to the <hl>rand($n)</hl> function of Perl will return a random fractional number
-between 0 and $n. It can be 0 but not $n.
+Un appel à ila fonction prédéfinie <hl>rand($n)</hl> de Perl retourne un nombre aléatoire rationnel compris entre 0 et $n, 0 inclus mais $n exclus.
 
-If <hl>$n = 42</hl> then a call to the <hl>rand($n)</hl> will return a random number between 0 and 42.
-It can be 0 but not 42. For example it can be 11.264624821095826 .
+Si <hl>$n = 42</hl>, alors un appel à <hl>rand($n)</hl> retourne un nombre aléatoire compris entre 0 inclus mais 42 exclus. Par exemple : 11,264624821095826.
 
-If we don't give any value then <hl>rand()</hl> will default to give values between 0 and 1 including 0
-but excluding 1.
+Si nous ne donnons aucune valeur, alors <hl>rand()</hl> par défaut retourne des valeurs comprises entre 0 et 1, 0 inclus mais 1 exclus.
 
-Combining <hl>rand</hl> with <hl>int</hl> allows us to generate random whole numbers.
+Combiner <hl>rand</hl> et <hl>int</hl> permet de générer des nombres aléatoires entiers.
+
+Le code suivant :
 
 <code lang="perl">
 use strict;
 use warnings;
 use 5.010;
-
+ 
 my $z = int rand 6;
 say $z;
 </code>
 
-Will return one of the numbers a number between 0 and 6. It can be 0 but cannot be 6. So it can be
-any of the following numbers: 0,1,2,3,4,5.
+retourne un des nombres entiers compris entre 0 et 6, 0 inclus mais 6 exclus. La valeur de retour peut donc être l'un des nombres suivants : 0,1,2,3,4,5.
 
-If we now add 1 to the result then we get any of the numbers 1,2,3,4,5,6 which is the same as throwing a dice.
+Si nous ajoutons maintenant 1 au résultat, alors nous obtenons l'un des nombres 1,2,3,4,5,6, ce qui est équivalent à jeter un dé à six faces.
 
-<h2>Exercise: Number Guessing game</h2>
+<h2>Exercice : jeu devine un nombre</h2>
 
-This is the beginning of a game we are going to write. A small but fun game.
+C'est le début d'un jeu que nous allons écrire. Un jeu petit, mais amusant.
 
-Write a script in which using the <hl>rand()</hl> function the computer "thinks" about
-a whole number between 1 and 200. The user has to guess the number.
+Écrire un script dans lequel la fonction prédéfinie <hl>rand()</hl> permet à l'ordinateur de "penser" à un nombre entier compris entre 1 et 200. L'utilisateur doit deviner ce nombre.
 
-After the user types in his guess the computer tells if this was
-bigger or smaller than the number it generated.
+Après que l'utilisateur a écrit au clavier le nombre auquel il pensait, l'ordinateur indique si ce nombre donné était plus grand ou plus petit que le nombre "pensé".
 
-At this point there is <b>no</b> need to allow the user to guess several times.
-We will get there in a later episode. Of course I won't stop
-you from reading about the <a href="/while-loop">while loop</a>
-in Perl, you can read that and let the user guess several times.
-
-
-
-
-
+A ce stade, <b>il n'est pas nécessaire</b> de permettre à l'utilisateur de deviner à plusieurs reprises.
+Nous y travaillerons dans un autre article. Bien sûr, je ne vais pas vous empêcher de lire la <a href="http://www.perlmaven.com/while-loop">boucle while en Perl (EN)</a>.
+Vous pouvez lire cet article et laisser l'utilisateur deviner à plusieurs reprises.
