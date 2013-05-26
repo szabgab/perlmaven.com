@@ -2,7 +2,7 @@
 =timestamp 2013-05-26T12:00:00
 =indexes -d, Data::Dumper, print, debug, debugging, $VAR1, $VAR2
 =status show
-=original debuging-perl-scripts
+=original debugging-perl-scripts
 =books beginner_book
 =author szabgab
 =translator khadis
