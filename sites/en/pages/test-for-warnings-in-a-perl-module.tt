@@ -54,8 +54,8 @@ Something like this:
      push @warnings, @_;
   };
   process_log();
-  is scalar(@warn), 1, 'exactly one warning';
-  like $warn[0], qr{Invalid row}, 'warning of invalid row';
+  is scalar(@warnings), 1, 'exactly one warning';
+  like $warnings[0], qr{Invalid row}, 'warning of invalid row';
 }
 </code>
 
