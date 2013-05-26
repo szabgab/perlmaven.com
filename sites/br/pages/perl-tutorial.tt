@@ -76,7 +76,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>Strings em Perl: entre aspas, interpoladas e 'escapadas'</li>
 <li>Here documents</li>
 <li>Variáveis escalares</li>
-<li>Comparando escalares</li>
+<li><a href="/comparando-escalares-em-perl">Comparando escalares em Perl</a></li>
 <li><a href="/funcoes-para-manipular-texto-lc-uc-index-substr">Funções para manipular texto: length, lc, uc, index, substr</a></li>
 <li><a href="/jogo-de-adivinhar-numeros">O jogo de adivinhar números (rand, int)</a></li>
 <li><a href="/laco-while"> O laço while</a></li>
