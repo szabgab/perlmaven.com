@@ -67,6 +67,7 @@
     <li><a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">如何让Meta CPAN为模块显示一个到其版本控制系统的链接</a></li>
     <li><a href="/test-for-warnings-in-a-perl-module">测试Perl模块中的警告信息</a></li>
     <li><a href="/barewords-in-perl">Perl的裸字</a></li>
+    <li><a href="/unique-values-in-an-array-in-perl">Perl数组中的唯一值</a></li>
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
