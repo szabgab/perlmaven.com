@@ -33,7 +33,7 @@ aprender posteriormente.
 O nome do escalar sempre começa com um <hl>$</hl> (cifrão) seguido por letras
 números e sublinhados. Um nome de variável pode ser <hl>$nome</hl> ou
 <hl>$um_nome_longo_e_descritivo</hl>. Pode ser ainda
-<hl>$NomeLongoEDescritivo</hl> formato este que costuma ser chamado
+<hl>$NomeLongoEDescritivo</hl>, formato este que costuma ser chamado
 "CamelCase", mas a comunidade Perl geralmente prefere nomes com letras
 minúsculas separadas por sublinhados.
 
@@ -204,7 +204,7 @@ uma string, existem casos simples como vimos, quando toda a string consiste
 apenas de dígitos. O mesmo aconteceria se houvesse um ponto decimal na string,
 tal como em <hl>"3.14"</hl>.
 A questão é: E se a string tiver caracteres que não são parte de nenhum
-número? ex. <hl>"3.14 é pi"</hl>.
+número? ex. <hl>"3.14 is pi"</hl>.
 Como isto se comportaria em uma operação numérica (também conhecido como
 contexto numérico)?
 
@@ -228,7 +228,7 @@ say $z x $y;        # 222
 Quando uma string está em um contexto numérico o Perl olha para o lado
 esquerdo da string, e tenta converte-la em um número. Enquanto esta conversão
 fizer sentido, a parte convertida se torna o valor numérico da variável.
-Dentro do contexto numérico (<hl>+</hl>) a string <hl>"3.14 é pi"</hl> é
+Dentro do contexto numérico (<hl>+</hl>) a string <hl>"3.14 is pi"</hl> é
 considerada como o número <hl>3.14</hl>.
 
 De certa forma isto é completamente arbitrário, mas este é seu comportamento e
@@ -253,7 +253,7 @@ seu valor numérico para a adição.
 Isto provavelmente também explica o resultado de <hl>$z . $y</hl>.
 Neste caso o Perl está usando o valor original da string.
 
-Você pode estar se perguntando por que <hl>$z x $y<hl> mostra 222 ao passo que
+Você pode estar se perguntando por que <hl>$z x $y</hl> mostra 222 ao passo que
 tínhamos 3.14 no lado direito do operador, mas o Perl parece poder apenas
 repetir uma string um número inteiro de vezes... O Perl silenciosamente
 arredonda o valor do número à direita na operação. (Se você quer mesmo
@@ -268,13 +268,13 @@ para número" que vimos no caso do <hl>+</hl>.
 
 Isto não ocorre por causa da diferença no operador. Se comentarmos a adição
 veremos o alerta nesta operação. A razão para a falta de um segundo alerta é
-que quando o Perl gerou o valor numérico da string <hl>"3.14 é pi"</hl> ele
+que quando o Perl gerou o valor numérico da string <hl>"3.14 is pi"</hl> ele
 também armazenou secretamente um espaço para a variável <hl>$y</hl>. Então
 efetivamente <hl>$y</hl> agora armazena ambos, uma string e um valor numérico,
 e o Perl usará o valor adequado em qualquer nova operação, evitando a conversão.
 
 Existem mais três coisas que eu gostaria de apontar. Uma é o comportamento de
-uma variável contendo <hl>undef/<hl>, a outra é o <hl>alerta de
+uma variável contendo <hl>undef</hl>, a outra é o <hl>alerta de
 fatalidade</hl> e a terceira é evitar a "conversão automática de string para
 número".
 
