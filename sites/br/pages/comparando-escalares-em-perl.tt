@@ -1,5 +1,5 @@
 =title Comparando escalares em Perl
-=timestamp 2013-05-26T15:56:56
+=timestamp 2013-05-27T15:56:56
 =indexes eq, ne, lt, gt, le, ge, ==, !=, <, >, <=, >=
 =status show
 =original comparing-scalars-in-perl
