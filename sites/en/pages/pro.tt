@@ -1,29 +1,45 @@
 =title Perl Maven Pro
-=timestamp 2013-03-08T16:56:55
+=timestamp 2013-05-27T11:56:55
 =indexes 
 =status show
 =showright 0
 =newsletter 0
 =published 0
 =author 0
-=index 0
+=index 1
 =archive 0
-=feed 0
+=feed 1
 =comments 0
 =social 1
 
-<h2>Extra Advanced articles and screencasts</h2>
+=abstract start
 
-Perl Maven Pro subscribers enjoy a growing library of advanced articles
-and screencasts. After the launch at least four new advanced articles (or screencasts)
-will be published every month.
+Announcing the Perl Maven Pro.
 
-The advanced articles will contain Web Application Development,
-Object Oriented programming with Moo/Moose, testing, deployment,
+I would like to publish more articles and more screencasts, but it is both overwhelming to you
+and a way to much work for me to do in my spare time. The solution?
+
+I am launching the <b>Perl Maven Pro</b>, a paid service where subscribers will be happy
+with lot of diverse articles and screencasts.
+
+=abstract end
+
+<h2>Extra articles and screencasts</h2>
+
+Perl Maven Pro subscribers will enjoy a growing library of articles and screencasts.
+After the launch at least four new articles or screencasts will be published every month.
+Probably more.
+
+The articles will contain topics such as Web Application Development,
+Object Oriented programming, testing, deployment,
 code walkthroughs, best practices, and many more subjects in Perl,
 and in related technologies.
 
-Subscription includes all previous pro episodes.
+The related technologies will cover HTML5, CSS3, JavaScript, Git, Subversion, vim,
+Unix/Linux shell, SQL and NoSQL just to name a few topic that I, as a Perl prorgammer
+find useful.
+
+Subscriptions will include all previous pro episodes.
 
 In order to subscribe to the Perl Maven Pro, first
 <a href="/register">register</a> and <a href="/login">login</a>
