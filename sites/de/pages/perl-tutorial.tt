@@ -92,10 +92,8 @@ mit denen Du das vertiefen kannst, was Du gerade gelernt hast.
 <li>Numerische und Zeichenkletten-Operatoren</li>
 <li><a href="http://perlmaven.com/undef-and-defined-in-perl">undef, der Initialwert und die defined-Funktion</a></li>
 <li>HERE-Dokumente</li>
-<!--
-<li><a href="http://szabgab.com/modern-perl-tutorial-part-02--scalars.html">Skalare</a></li>
-<li><a href="http://szabgab.com/modern-perl-tutorial-part-03--comparing-scalars.html">Skalare vergleichen</a></li>
--->
+<li><a href="http://perlmaven.com/scalar-variables">Skalare</a></li>
+<li><a href="http://perlmaven.com/comparing-scalars-in-perl">Skalare vergleichen</a></li>
 <li><a href="http://perlmaven.com/string-functions-length-lc-uc-index-substr">Zeichenketten-Funktionen: length, lc, uc, index, substr</a></li>
 <li><a href="http://perlmaven.com/number-guessing-game">Zahlenratespiel (rand, int)</a></li>
 <li><a href="http://perlmaven.com/while-loop">while-Schleife in Perl</a></li>

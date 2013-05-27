@@ -1,5 +1,5 @@
-=title How to eliminate a value in the middle of an array in Perl?
-=timestamp 2013-05-09T10:01:01
+=title 在Perl中怎样从一个数组中删除某个值？
+=timestamp 2013-05-21T15:15:53
 =indexes undef, splice, array, delete
 =status show
 =original how-to-eliminate-a-value-in-the-middle-of-an-array-in-perl
@@ -18,11 +18,11 @@
 
 在Perl中怎样从一个数组中删除某个值？
 
-我不确定<hl>undef</hl>是否和从数组中消除值有确切的关系，猜测一下，如果我们将<hl>undef</hl>视为"empty"，那么会有一些联系。但通常来说，将某些东西赋值为<hl>undef</hl>和删除某些东西是不一样的。
+我不确定<hl>undef</hl>是否和从数组中消除值有确切的关系，猜测一下，如果我们将<hl>undef</hl>视为"空"，那么会有一些联系。但通常来说，将某些东西赋值为<hl>undef</hl>和删除某些东西是不一样的。
 
 =abstract end
 
-首先来看一下如何把数组的元素赋值为<hl>undef</hl>，之后了解一下如何从数组中删除元素。
+首先来看一下如何把数组的元素赋值为<hl>undef</hl>，之后再了解如何从数组中删除元素。
 
 从下面的代码开始：
 
@@ -46,7 +46,7 @@ $VAR1 = [
         ];
 </code>
 
-<h2>将元素赋值为</h2>
+<h2>将元素赋值为undef</h2>
 
 使用<hl>undef()</hl>函数的返回值：
 

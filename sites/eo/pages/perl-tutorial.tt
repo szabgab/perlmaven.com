@@ -3,7 +3,9 @@
 =description Libera Perl Tutorial por homoj, kiuj bezonas por subteni ekzistantaj Perl kodo, por homoj kiuj uzas Perl por malgrandaj skriptoj, kaj por Perl apliko disvolvigo.
 =tags trejnado, kompreneble, komencanto, lernilo
 =status show
+=original perl-tutorial
 =author szabgab
+=translator 0
 =index 0
 =archive 0
 =feed 0
@@ -76,10 +78,8 @@ praktiki kion vi lernis.
 <li> Nombraj kaj kordo operatoroj </li>
 <li> <a href="http://perlmaven.com/undef-and-defined-in-perl"> undef, la komenca valoro kaj la difinita funkcio (EN)</a> </li>
 <li> Jen dokumentoj </li>
-<! -
-<li> <a href="http://szabgab.com/modern-perl-tutorial-part-02--scalars.html"> skalaroj </a> </li>
-<li> <a href="http://szabgab.com/modern-perl-tutorial-part-03--comparing-scalars.html"> Komparante skalaroj </a> </li>
-->
+<li> <a href="http://perlmaven.com/scalar-variables"> skalaroj </a> </li>
+<li> <a href="http://perlmaven.com/comparing-scalars-in-perl"> Komparante skalaroj </a> </li>
 <li> <a href="http://perlmaven.com/string-functions-length-lc-uc-index-substr"> String funkcioj: longo, lc, uc, indico, substr (EN)</a> </li>
 <li> <a href="http://perlmaven.com/number-guessing-game"> Numero diveni ludo (rand, _int_) (EN)</a> </li>
 <li> <a href="http://perlmaven.com/while-loop"> Perl dum buklo (EN)</a> </li>
