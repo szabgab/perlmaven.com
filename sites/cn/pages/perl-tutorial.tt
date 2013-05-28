@@ -68,6 +68,7 @@
     <li><a href="/test-for-warnings-in-a-perl-module">测试Perl模块中的警告信息</a></li>
     <li><a href="/barewords-in-perl">Perl的裸字</a></li>
     <li><a href="/unique-values-in-an-array-in-perl">Perl数组中的唯一值</a></li>
+    <li><a href="/quoted-interpolated-and-escaped-strings-in-perl">字符串：引起，内插替换和转义</a></li>
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
