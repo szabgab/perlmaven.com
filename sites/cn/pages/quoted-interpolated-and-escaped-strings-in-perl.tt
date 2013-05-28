@@ -27,7 +27,7 @@
 <code lang="perl">
 my $name = 'Foo';
 print 'Hello $name, how are you?\n';
-v</code>
+</code>
 
 输出：
 
