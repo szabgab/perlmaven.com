@@ -125,7 +125,7 @@ while (1) {
 }
 </code>
 
-這部份請參閱<a href="/white-loop">Perl 的 white 迴圈</a>。
+這部份請參閱<a href="/while-loop">Perl 的 while 迴圈</a>。
 
 <h2>perldoc</h2>
 
