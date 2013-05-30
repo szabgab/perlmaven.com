@@ -152,7 +152,8 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>Pipelines em Perl</li>
 <li>Executando programas externos</li>
 <li>Comandos Unix: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
-<li>Como remover, copiar ou renomear um arquivo com Perl</li>
+<li><a href="/como-remover-copiar-ou-renomear-um-arquivo-usando-perl">Como
+remover, copiar ou renomear um arquivo com Perl</a></li>
 <li>Comandos Windows/DOS: del, ren, dir</li>
 <li>Englobamento de Arquivos(Metacaracteres)</li>
 <li>Manipuladores de directórios</li>
