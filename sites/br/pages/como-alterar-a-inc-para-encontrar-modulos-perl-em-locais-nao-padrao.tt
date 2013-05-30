@@ -1,5 +1,5 @@
-=title How to change @INC to find Perl modules in non-standard locations
-=timestamp 2013-05-30T19:00:00
+=title Como alterar a @INC para encontrar módulos Perl em locais não padrão?
+=timestamp 2013-05-30T19:10:00
 =indexes @INC, use, PERLLIB, PERL5LIB, lib, -I
 =status show
 =original how-to-change-inc-to-find-perl-modules-in-non-standard-locations
