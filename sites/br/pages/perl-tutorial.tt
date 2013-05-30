@@ -166,7 +166,10 @@ remover, copiar ou renomear um arquivo com Perl</a></li>
 <li>Download e instalação do Perl usando Perlbrew</li>
 <li>Localizando e validando módulos CPAN</li>
 <li>Baixando e instalando módulos Perl do CPAN</li>
-<li>Como alterar a @INC para encontrar módulos Perl em locais não padrão?</li>
+<li><a
+href="/como-alterar-a-inc-para-encontrar-modulos-perl-em-locais-nao-padrao">Como
+alterar a @INC para encontrar módulos Perl em locais não
+padrão?</a></li>
 <li>Como alterar a @INC para um diretório relativo</li>
 <li>local::lib</li>
 </ol>
