@@ -154,4 +154,5 @@ perintah <hl>perldoc</hl>.
 Menuliskan dokumentasi dan membuatnya tampak bagus di Perl tidaklah sulit.
 
 
-
+Tutorial berikutnya adalah tentang
+<a href="/debugging-perl-scripts">Debugging Perl Scripts</a>

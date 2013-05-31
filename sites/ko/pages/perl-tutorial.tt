@@ -28,6 +28,9 @@
 <ul>
   <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
   <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
+  <li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
+  <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
+  <li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
 </ul>
 </li>
 <li><a href="/boolean-values-in-perl">Perl의 불리언 값(참과 거짓)</a></li>
