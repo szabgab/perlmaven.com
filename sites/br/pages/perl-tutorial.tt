@@ -73,7 +73,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li><a href="/valores-booleanos-em-perl">Valores Booleanos em Perl</a></li>
 <li>Operadores numéricos e textuais</li>
 <li><a href="/undef-e-definido-em-perl">undef, valor inicial e a função defined em Perl</a></li>
-<li>Strings em Perl: entre aspas, interpoladas e 'escapadas'</li>
+<li><a href="/aspas-interpolacao-e-strings-escapadas">Strings em Perl: entre aspas, interpoladas e 'escapadas'</a></li>
 <li>Here documents</li>
 <li><a href="/variaveis-escalares">Variáveis escalares</a></li>
 <li><a href="/comparando-escalares-em-perl">Comparando escalares em Perl</a></li>
@@ -166,10 +166,7 @@ remover, copiar ou renomear um arquivo com Perl</a></li>
 <li>Download e instalação do Perl usando Perlbrew</li>
 <li>Localizando e validando módulos CPAN</li>
 <li>Baixando e instalando módulos Perl do CPAN</li>
-<li><a
-href="/como-alterar-a-inc-para-encontrar-modulos-perl-em-locais-nao-padrao">Como
-alterar a @INC para encontrar módulos Perl em locais não
-padrão?</a></li>
+<li><a href="/como-alterar-a-inc-para-encontrar-modulos-perl-em-locais-nao-padrao">Como alterar a @INC para encontrar módulos Perl em locais não padrão?</a></li>
 <li>Como alterar a @INC para um diretório relativo</li>
 <li>local::lib</li>
 </ol>
