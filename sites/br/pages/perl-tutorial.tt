@@ -129,7 +129,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 
 <b>Hashes, arrays</b>
 <ol>
-<li>Hashes em Perl (dicionário, array associativo, tabela de consulta)</a></li>
+<li><a href="/perl-hashes">Hashes em Perl (dicionário, array associativo, tabela de consulta)</a></li>
 <li>exists, delete elementos de uma hash</li>
 </ol>
 
