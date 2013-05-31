@@ -143,7 +143,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>Regex: Âncoras</li>
 <li>Opções de Regex e modificadores</li>
 <li>Substituições (busca e substituição)</li>
-<li>trim - removendo espaços no início e no fim</li>
+<li><a href="/trim">trim - removendo espaços em branco à esquerda e à direita com Perl</a></li>
 </ol>
 
 <b>Funcionalidades afins no Perl e no Shell</b>
