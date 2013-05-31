@@ -162,7 +162,7 @@ remover, copiar ou renomear um arquivo com Perl</a></li>
 
 <b>CPAN</b>
 <ol>
-<li>Download e instalação do Perl (Strawberry Perl ou compilação manual)</li>
+<li><a href="/baixe-e-instale-o-perl">Baixe e instale o Perl (Strawberry Perl ou compilação manual)</a></li>
 <li>Download e instalação do Perl usando Perlbrew</li>
 <li>Localizando e validando módulos CPAN</li>
 <li>Baixando e instalando módulos Perl do CPAN</li>
