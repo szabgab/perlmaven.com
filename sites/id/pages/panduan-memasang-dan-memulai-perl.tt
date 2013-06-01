@@ -179,7 +179,7 @@ Dalam hal ini kata kunci </hl>use</hl> memerintahkan perl untuk memuat dan memfu
 pada kode atau bahkan kadang membantu mencegah Anda membuat kesalahan penulisan kode sejak awal.
 Keduanya begitu mudah digunakan.
 
-<h2>User input</hl>
+<h2>User input</h2>
 
 Nah, sekarang kita tingkatkan lagi kode kita dengan meminta user memasukkan namanya dan menyertakannya 
 ke dalam respon aplikasi.
@@ -189,7 +189,7 @@ use 5.010;
 use strict;
 use warning;
 
-say "What is your name?" ";
+say "What is your name?";
 my $name = <STDIN>;
 say "Hello $name, how are you?";
 </code>
@@ -232,7 +232,7 @@ yang digunakan untuk menghapus tambahan baris baru dari string.
 Pada setiap skrip yang Anda tulis Anda harus <b>selalu</b> menambahkan <hl>use strict;</hl> dan <hl>use warnings;</hl>
 sebagai statement awal. Juga sangat direkomendasikan untuk menambahkan <hl>use 5.010;</hl>.
 
-<h2>Latihan-latihan</hl>
+<h2>Latihan-latihan</h2>
 
 Saya telah menyiapkan beberapa latihan.
 

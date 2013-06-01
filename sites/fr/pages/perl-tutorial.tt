@@ -75,7 +75,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li><a href="http://perlmaven.com/undef-and-defined-in-perl">La valeur initiale undef et la fonction pré-définie defined</a> (EN)</li>
 <li>Les documents heredoc</li>
 <li><a href="http://perlmaven.com/string-functions-length-lc-uc-index-substr">Les fonctions prédéfinies pour les chaînes de caractères : length, lc, uc, index, substr</a> (EN)</li>
-<li><a href="http://perlmaven.com/number-guessing-game">Jeu "Devine le nombre" (rand, int)</a> (EN)</li>
+<li><a href="/jeu-devine-un-nombre">Jeu "Devine le nombre" (rand, int)</a></li>
 <li><a href="http://perlmaven.com/while-loop">La boucle while en Perl</a> (EN)</li>
 </ol>
 
@@ -116,7 +116,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 
 <b>Les fonctions</b>
 <ol>
-<li><a href="http://szabgab.com/subroutines-and-functions-in-perl.html">Les fonctions en Perl</a> (EN)</li>
+<li><a href="http://perlmaven.com/subroutines-and-functions-in-perl">Les fonctions en Perl</a> (EN)</li>
 <li>Passer et vérifier des paramètres de fonctions</li>
 <li>Nombre variable de paramètres</li>
 <li>Renvoyer une liste</li>

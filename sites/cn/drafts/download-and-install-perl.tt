@@ -1,0 +1,170 @@
+=title Download and install Perl
+=timestamp 2013-01-29T11:45:56
+=indexes download, install, Windows, Linux, UNIX, Mac OSX, DWIM Perl, ActivePerl, Citrus Perl
+=status show
+=original download-and-install-perl
+=books beginner_book
+=author szabgab
+=translator terrencehan
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+In this part of the <a href="/perl-tutorial">Perl tutorial</a> series we are going to
+see where to <b>download Perl</b> from and how to install it.
+本节<a href="/perl-tutorial">Perl 教程</a>我们会看到从哪里<b>下载Perl</b>以及如何安装。
+
+Perl is maintained and released by a dedicated team of volunteers who call themselves <b>Perl 5 Porters</b>.
+Once a year they release a new major version of Perl, and a few more times a year they release minor bug fixes.
+Perl由一个志愿者团队维护和发布，他们自称为<b>Perl 5 Porters</b>。他们每年发布一个主版本，以及多个bug修复小版本。
+
+=abstract end
+
+At the time of this writing, the latest major version was 5.16 (released in May 2012) with 5.16.2 (November 2012)
+being the most recent minor release.
+The <a href="http://www.cpan.org/src/README.html">README on CPAN</a> always contains the most up-to-date information.
+在写这篇文章的时候，最新的主版本是5.16（2012年5月发布），最近发布的小版本是5.16.2（2012年11月）。
+<a href="http://www.cpan.org/src/README.html">README on CPAN</a>总是包含最新的信息。
+
+You will probably also see a version number higher than the most recent stable release - currently it is 5.17.7.
+This is a monthly snapshot release of the development tree. It is only for people who closely follow the development of perl.
+Not for regular humans and definitely not for production use!
+你可能也会看到比最近发行的稳定版更高的版本号——当前是5.17.7。这是每月开发树发布的快照。只是针对紧跟perl开发的朋友，而不是普通用户，尤其不是给生产用的！
+
+<h2>Perl 5 Porters and downstream distributors</h2>
+
+What the Perl 5 Porters release is the source code of Perl.
+This code is then taken by various <b>distributors</b> or <b>vendors</b> (aka. downstream distributors)
+and repackaged in an already compiled, binary format.
+Most of us use Perl from such <b>downstream distributors</b>.
+Perl 5 Porters发布的是Perl的源码。这些代码被<b>发布者</b>重新打包成已编译的二进制形式。大多数我们时候的Perl就是从这些<b>下游发布者</b>获取的。
+
+Usually within a few months of any release the various downstream distributors
+include the latest revision of Perl but it does not necessarily get to the end users.
+通常发布后几个月内下游发布者就会打包最新Perl修订版，不过没有必要推送给最终用户。
+
+If you use Linux you'll get the new version of Perl only if you upgrade your operating system.
+This might happen frequently on a home machine, but less often in corporations and
+on servers. They tend to upgrade only after a 2-5 years delay. In some cases the delay can be even longer.
+如果你使用Linux，只有在更新操作系统时候才能获得Perl的最新版本。这对家用电脑会比较频繁，公司和服务器就少多了，它们更倾向于2-5年甚至更长时间后再更新。
+
+This means that the so called <b>system Perl</b> on Linux distributions will be a few years out of date.
+这意味着Linux发行版上的<b>系统的perl</b>会过时好几年。
+
+<h2>Microsoft Windows</h2>
+
+There are a number of distributors of Perl on Windows.
+在Windows平台上有很多Perl发布者。
+
+Currently I recommend the
+<a href="http://dwimperl.com/windows.html">DWIM Perl for Windows</a> distribution.
+It is a derivative of the very successful <a href="http://strawberryperl.com/">Strawberry Perl</a> distribution
+with hundreds of extra Perl modules from CPAN. (Disclosure: I am the maintainer of DWIM Perl).
+目前我推荐<a href="http://dwimperl.com/windows.html">DWIM Perl for Windows</a>发行版。
+它是<a href="http://strawberryperl.com/">Strawberry Perl</a>的衍生版，它包含了好多CPAN模块。（透露一下，我也是DWIM Perl的维护者）。
+
+Besides coming with Padre, <a href="http://padre.perlide.org/">the Perl IDE</a>, it also includes
+<a href="http://moose.perl.org/">Moose, the postmodern object oriented programming</a> framework of Perl.
+还有Padre，<a href="http://padre.perlide.org/">Perl IDE</a>，它包含<a href="http://moose.perl.org/">Moose, 后现代OO框架</a>。
+
+Out of the box it allows <a href="http://perldancer.org/">web development with Perl Dancer framework</a>.
+There is a post on how to
+<a href="/videos/getting-started-with-perl-dancer">get started with Perl Dancer</a>.
+它还包含<a href="http://perldancer.org/"> Perl Dancer Web开发框架</a>。
+
+It also includes modules to read and write Microsoft Excel files and it comes with a lot more extensions.
+
+In the first episode of the <a href="/perl-tutorial">Perl Tutorial</a> I explained, and in the screencast
+showed, <a href="/installing-perl-and-getting-started">how to install Perl on Windows</a>.
+
+Another Perl distribution for Windows is <a href="http://www.activestate.com/activeperl">ActivePerl</a>.
+It was created by <a href="http://www.activestate.com/">ActiveState</a>. It is recommended if
+you are planning to buy a support or redistribution license.
+
+Yet another distribution is <a href="http://www.citrusperl.com/">Citrus Perl</a>. It is especially interesting
+if you are planning to build a cross-platform desktop application for Windows, Linux and Mac OSX. It includes
+<a href="http://wxperl.sourceforge.net/">wxPerl</a>, the Perl
+wrapper of <a href="http://www.wxwidgets.org/">wxWidgets</a> on all 3 platforms.
+
+Upgrading of these Perl distributions for Windows usually involves removing the old ones and installing a new one.
+Then installing all the additional modules.
+
+
+<h2>Linux</h2>
+
+Every modern Linux distribution comes with perl already installed. In some cases it is not the full package
+that was released by the Perl 5 Porters, and in most cases it is not the most recent version either.
+每个现代Linux发行版都预装了Perl。
+
+Being a bit out of date would not be a problem, but in some cases you will be stuck with a 5-7 years old version of Perl.
+You will encounter such cases especially in Linux distributions with long support policy. For example
+the Long Term Support of Ubuntu. Of course, every software in those distributions is very old, not only Perl.
+Stability has a price!
+
+One of the drawbacks of having an old version of Perl is that there might be CPAN modules
+that don't support that version of Perl any more.
+
+To get started with Perl it will be OK to use the one that came with the operating system,
+but at one point you might want to install the newest version of Perl. We will go deeper in this
+issue in another article, but for now it is enough to say that this became very easy recently with the
+development of <a href="http://www.perlbrew.pl/">Perlbrew</a>.
+
+In some Linux distributions not all "standard" Perl is included by default. For example
+many distributions leave out the documentation. You can either read it via the
+<a href="http://perldoc.perl.org/">perldoc web site</a>, or you can usually install it with
+the standard package management system of your operating system.
+
+For example on Debian or Ubuntu you can install the Perl documentation using:
+
+<code>
+sudo aptitude install perl-doc
+</code>
+
+<h2>Mac OSX</h2>
+
+I don't have any experience with Mac OSX but as far as I know the situation is
+similar to that on Linux.
+
+<h2>UNIX</h2>
+
+On the UNIX side the situation is not that good. Some major UNIX distributions are still supplying Perl
+from the 5.005 line which is based on a version released in 1995. If possible download and
+install a recent version of Perl and use that for any new development.
+
+<h2>Download, compile and install Perl</h2>
+
+You can download the source code of Perl from <a href="http://www.cpan.org/src/README.html">CPAN</a>
+and then follow the instructions on that page:
+
+<code>
+wget http://www.cpan.org/src/5.0/perl-5.16.2.tar.gz
+tar -xzf perl-5.16.2.tar.gz
+cd perl-5.16.2
+./Configure -des -Dprefix=$HOME/localperl
+make
+make test
+make install
+</code>
+
+Once you have done this you can check your new version of perl by typing
+
+<code>
+$HOME/localperl/bin/perl -v
+</code>
+
+to make this the default perl, you'd probably want to add to your .bashrc
+
+<code>
+export PATH=$HOME/localperl/bin/:$PATH
+</code>
+
+<h2>Learn Perl directions</h2>
+
+The learn Perl website also has its
+<a href="http://learn.perl.org/installing/">recommended approaches to installing Perl</a>.
+Check that out too.
+
