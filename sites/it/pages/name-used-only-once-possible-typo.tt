@@ -1,6 +1,6 @@
 =title Name "main::x" used only once: possible typo at ...
-=timestamp 2013-03-05T20:31:10
-=indexes warnings, strict, possible typo
+=timestamp 2013-06-02T12:00:00
+=indexes warning, strict, possible typo
 =status show
 =original name-used-only-once-possible-typo.tt
 =books beginner_book
@@ -98,26 +98,26 @@ Ma se volete davvero risolvere il problema, dovete ricorrere a <b>use strict</b>
 
 <h2>use strict</h2>
 
-As you can see in the above examples, I have not used strict. If I was using it,
-then instead of getting a warning about possible typo, I'd get a compile time
-error:
+Come avrete notato, negli esempi precedenti non ho usato strict. Se lo avessi usato,
+invece di ricevere un warning a proposito di un errore di battitura, avrei ricevuto un errore di
+compilazione:
 <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>.
 
-That would happen even if you used the incorrect variable more than once.
+Questo errore viene generato anche quando si usa più di una volta la variabile sbagliata.
 
-Then of course there are people who would rush and paste "my" in front of the incorrect
-variable, but you are not one of those. are you? You would think about the problem and search till
-you find the name of the real variable.
+E naturalmente qualcuno sarà tentato di correre ai ripari e aggiungere "my" davanti alla variabile
+sbagliata, ma voi non siete quel tipo di persone, giusto? Voi preferite pensare al problema e cercare finché
+non trovate il vero nome della variabile.
 
-The most common way to see this warning is if you are not using strict.
+La situazione più comune in cui vedrete questo warning è proprio quando non usate strict.
 
-And then you are in deep trouble.
+E allora siete in guai seri.
 
-<h2>Other cases while using strict</h2>
+<h2>Casi in cui usate strict</h2>
 
-As GlitchMr and an Anonymous commenter pointed out, there are a few other cases:
+Come hanno fatto notare GlitchMr e un altro commentatore anonimo, ci sono alcuni altri casi:
 
-This code, can also generate it
+Anche questo codice genera il warning
 
 <code lang="perl">
 use strict;
@@ -126,12 +126,12 @@ use warnings;
 $main::x = 23;
 </code>
 
-The warning is: <b>Name "main::x" used only once: possible typo ...</b>
+Il warning dice: <b>Name "main::x" used only once: possible typo ...</b>
 
-Here at least it is clear where that 'main' comes from, or in
-the next example, where the Mister comes from. (hint. it is the package name
-other <a href="/global-symbol-requires-explicit-package-name">error about package names</a>
-was missing.) In the next example, the package name is 'Mister'.
+Questa volta almeno è chiaro da dove venga quel 'main' o, nel
+prossimo esempio, il 'Mister'. (suggerimento. è il nome del package di cui
+si lamentava l'<a href="/global-symbol-requires-explicit-package-name">errore sui nomi di package</a>.)
+Nel prossimo esempio, il nome del package è 'Mister'.
 
 <code lang="perl">
 use strict;
@@ -140,9 +140,9 @@ use warnings;
 $Mister::x = 23;
 </code>
 
-The warning is <b>Name "Mister::x" used only once: possible typo ...</b>.
+Il warning dice <b>Name "Mister::x" used only once: possible typo ...</b>.
 
-The following example too generates the warning. Twice:
+Anche l'esempio che segue genera il warning, per ben due volte:
 
 <code lang="perl">
 use strict;
@@ -157,12 +157,12 @@ Name "main::a" used only once: possible typo at ...
 Name "main::b" used only once: possible typo at ...
 </code>
 
-This happens because <hl>$a</hl> and <hl>$b</hl> are
-special variables used in the built-in sort function so
-you don't need to declare them, but you are only
-using them once here.
-(Actually it is unclear to me why this generates the warnings,
-while the same code using <b>sort</b> does not, but the
-<a href="http://www.perlmonks.org/?node_id=1021888">Perl Monks</a> might know.
+Questo succede perché <hl>$a</hl> e <hl>$b</hl> sono
+variabili speciali usate nella funzione nativa sort e
+quindi non è necessario dichiararle, ma in questo codice
+vengono usate una volta sola.
+(A dire il vero non mi è chiaro perché questo codice generi i warning,
+mentre lo stesso codice con <b>sort</b> non lo fa, ma i
+<a href="http://www.perlmonks.org/?node_id=1021888">Perl Monks</a> potrebbero saperlo.
 
 
