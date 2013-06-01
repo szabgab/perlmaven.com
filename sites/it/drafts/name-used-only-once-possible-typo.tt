@@ -14,20 +14,20 @@
 
 =abstract start
 
-If you see this warning in a Perl script you are in deep trouble.
+Se vedete questo warning in uno script Perl siete in guai seri.
 
 =abstract end
 
-<h2>Assign to a variable</h2>
+<h2>Assegnamento a una variabile</h2>
 
-Assigning to a variable, but then never using it,
-or using a variable once without assigning any value to it ever,
-are rarely correct in any code.
+Assegnare un valore a una variabile e poi non usarla
+o usare una variabile una sola volta senza assegnarle alcun valore
+sono difficilmente delle azioni corrette.
 
-Probably the only "legitimate" case, is if you made a typo,
-and that's how you ended up with a variable that is used only once.
+Probabilmente, l'unico caso "legittimo" è quello in cui avete commesso un errore di battitura
+(in Inglese: "typo") che spiega il perché avete usato quella variabile una sola volta.
 
-Here is an example of code in which we <b>only assign to a variable</b>:
+In questo codice d'esempio facciamo <b>solo un assegnamento a una variable</b>:
 
 <code lang="perl">
 use warnings;
@@ -35,22 +35,22 @@ use warnings;
 $x = 42;
 </code>
 
-It will generate a warning like this:
+Viene generato un warning del tipo:
 
 <code>
 Name "main::x" used only once: possible typo at ...
 </code>
 
-That "main::" part and the lack of $ might be confusing for you.
-The "main::" part is there because by default
-every variable in Perl is part of the "main" namespace. There are also
-a number of things that could be called "main::x" and only one of them
-has a $ at the beginning. If this sounds a bit confusing, don't worry.
-It is confusing, but hopefully you won't need to deal with this for a long time.
+Il prefisso "main::" e la mancanza del sigillo $ potrebbero causarvi confusione.
+La presenza del prefisso "main::" è dovuta al fatto che per default
+ogni variabile in Perl appartiene al namespace "main". Inoltre, ci possono
+essere diverse entità chiamate "main::x" e solo una di esse
+è preceduta dal simbolo $. Se tutto questo suona strano, non preoccupatevi.
+È davvero strano, ma per fortuna non avrete bisogno di occuparvene per un bel po' di tempo.
 
-<h2>Fetch value only</h2>
+<h2>Accesso al valore</h2>
 
-If you happen to <b>use a variable only once</b>
+Se invece <b>usate una variable una sola volta</b>
 
 <code lang="perl">
 use warnings;
@@ -58,43 +58,43 @@ use warnings;
 print $x;
 </code>
 
-then you will probably get two warnings:
+probabilmente riceverete due warning:
 
 <code>
 Name "main::x" used only once: possible typo at ...
 Use of uninitialized value $x in print at ...
 </code>
 
-One of them we are discussing now, the other one is discussed in
+Uno di essi è oggetto della nostra discussione, mentre l'altro è discusso in
 <a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
 
 
-<h2>What is the typo there?</h2>
+<h2>Che cosa c'entreno i typo?</h2>
 
-You might ask.
+Potreste chiedervi.
 
-Just imagine someone using a variable called <hl>$l1</hl>. Then later,
-you come and want to use the same variable but you write <hl>$ll</hl>.
-Depending on your font they might look very similar.
+Immaginate che qualcuno usi una variabile <hl>$l1</hl> nel codice. Quando
+tocca a voi lavorare su quel codice volete usare la stessa variabile ma scrivete <hl>$ll</hl>.
+In base al vostro font, i due nomi potrebbero avere un aspetto molto simile.
 
-Or maybe there was a variable called <hl>$color</hl> but you are British
-and you automatically type <hl>$colour</hl> when you think about that thing.
+Oppure potrebbe esserci una variabile <hl>$color</hl> ma voi potreste essere Inglese
+e digitare automaticamente <hl>$colour</hl> ogni volta che vi volete riferire a quella variabile.
 
-Or there was a variable called <hl>$number_of_misstakes</hl> and you don't notice
-the typo in the original variable and you write <hl>$number_of_mistakes</hl>.
+Oppure c'è una variabile <hl>$number_of_misstakes</hl> ma non vi accorgete
+dell'errore di battitura nel suo nome e scrivete <hl>$number_of_mistakes</hl>.
 
-You got the idea.
+Dovreste esservi fatti un'idea.
 
-If you are lucky, you make this mistake only once, but if you aren't that lucky,
-and you use the incorrect variable twice, then this warning won't appear.
-After all if you are using the same variable twice you probably have a good reason.
+Se siete fortunati commettete l' errore una sola volta, ma se non lo siete e
+usate (almeno) due volte la variabile sbagliata il warning non verrà generato.
+Dopo tutto, se state usando lo stesso nome due volte probabilmente avrete le vostre buone ragioni.
 
-So how can you avoid this?
+Come potete evitare tutto questo?
 
-For one, try to avoid variables with ambiguous letters in it and be very
-careful when typing variable names.
+Anzitutto, evitate quando possibile l'uso di lettere ambigue nei nomi di variabili e fate
+molta attenzione quando li digitate.
 
-If you want to solve this for real, just <b>use strict</b>!
+Ma se volete davvero risolvere il problema, dovete ricorrere a <b>use strict</b>!
 
 <h2>use strict</h2>
 
