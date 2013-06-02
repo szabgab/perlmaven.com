@@ -73,10 +73,10 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li><a href="/valores-booleanos-em-perl">Valores Booleanos em Perl</a></li>
 <li>Operadores numéricos e textuais</li>
 <li><a href="/undef-e-definido-em-perl">undef, valor inicial e a função defined em Perl</a></li>
-<li>Strings em Perl: entre aspas, interpoladas e 'escapadas'</li>
+<li><a href="/aspas-interpolacao-e-strings-escapadas">Strings em Perl: entre aspas, interpoladas e 'escapadas'</a></li>
 <li>Here documents</li>
-<li>Variáveis escalares</li>
-<li>Comparando escalares</li>
+<li><a href="/variaveis-escalares">Variáveis escalares</a></li>
+<li><a href="/comparando-escalares-em-perl">Comparando escalares em Perl</a></li>
 <li><a href="/funcoes-para-manipular-texto-lc-uc-index-substr">Funções para manipular texto: length, lc, uc, index, substr</a></li>
 <li><a href="/jogo-de-adivinhar-numeros">O jogo de adivinhar números (rand, int)</a></li>
 <li><a href="/laco-while"> O laço while</a></li>
@@ -129,7 +129,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 
 <b>Hashes, arrays</b>
 <ol>
-<li>Hashes em Perl (dicionário, array associativo, tabela de consulta)</a></li>
+<li><a href="/perl-hashes">Hashes em Perl (dicionário, array associativo, tabela de consulta)</a></li>
 <li>exists, delete elementos de uma hash</li>
 </ol>
 
@@ -143,7 +143,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>Regex: Âncoras</li>
 <li>Opções de Regex e modificadores</li>
 <li>Substituições (busca e substituição)</li>
-<li>trim - removendo espaços no início e no fim</li>
+<li><a href="/trim">trim - removendo espaços em branco à esquerda e à direita com Perl</a></li>
 </ol>
 
 <b>Funcionalidades afins no Perl e no Shell</b>
@@ -152,7 +152,8 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>Pipelines em Perl</li>
 <li>Executando programas externos</li>
 <li>Comandos Unix: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
-<li>Como remover, copiar ou renomear um arquivo com Perl</li>
+<li><a href="/como-remover-copiar-ou-renomear-um-arquivo-usando-perl">Como
+remover, copiar ou renomear um arquivo com Perl</a></li>
 <li>Comandos Windows/DOS: del, ren, dir</li>
 <li>Englobamento de Arquivos(Metacaracteres)</li>
 <li>Manipuladores de directórios</li>
@@ -161,11 +162,11 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 
 <b>CPAN</b>
 <ol>
-<li>Download e instalação do Perl (Strawberry Perl ou compilação manual)</li>
+<li><a href="/baixe-e-instale-o-perl">Baixe e instale o Perl (Strawberry Perl ou compilação manual)</a></li>
 <li>Download e instalação do Perl usando Perlbrew</li>
 <li>Localizando e validando módulos CPAN</li>
 <li>Baixando e instalando módulos Perl do CPAN</li>
-<li>Como alterar a @INC para encontrar módulos Perl em locais não padrão?</li>
+<li><a href="/como-alterar-a-inc-para-encontrar-modulos-perl-em-locais-nao-padrao">Como alterar a @INC para encontrar módulos Perl em locais não padrão?</a></li>
 <li>Como alterar a @INC para um diretório relativo</li>
 <li>local::lib</li>
 </ol>

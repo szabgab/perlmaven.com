@@ -1,5 +1,5 @@
-=title פרל (Perl) על שורת הפקודה
-=timestamp 2013-01-17T14:45:56
+=פרל (Perl) על שורת הפקודה
+=timestamp 2013-05-22T14:45:56
 =indexes -v, -e, -p, -i
 =status show
 =books beginner_book
@@ -14,32 +14,29 @@
 
 =abstract start
 
-While most of the <a href="/perl-tutorial">Perl tutorial</a> deals with scripts saved in a
-file, we'll also see a couple of examples of one-liners.
+בעוד שרובו של  <a href="/perl-tutorial">מדריך הפרלl</a> עוסק בתכניות שנשמרות בקבצים, נראה גם מספר דוגמאות של תוכניות של שוראה אחת.
 
-Even if you are using <a href="http://padre.perlide.org/">Padre</a>
-or some other IDE that would let you run your script from the editor itself,
-it is very important to familiarize yourself with the command line (or shell) and
-be able to use perl from there.
+גם אם התה משתמש ב- <a href="http://padre.perlide.org/">Padre</a>
+או הIDE אחר שמאפשר לך להריץ את הקוד שלך מתוך סביבת העבודה עצמה, חשוב מאוד להכיר גם את שורת הפקודה (או המעטפת, shell) ולדעת להשתמש בפרל גם משם.
 
 =abstract end
 
-If you are using Linux, open a terminal window. You should see a
-prompt, probably ending with a $ sign.
+אם אתה משתמש בלינוקס, פתח חלון טרמינל אתה אמור לראות את סימן ה
+prompt,שלרוב מסתיים בסימן $.
 
-If you are using Windows open a command window: Click on
+אם אתה משתמש ב-Windows אז לחץ על:
 
 Start -> Run -> type in "cmd" -> ENTER
 
-You will see the black window of CMD with a prompt that probably looks like this:
+יופיע החלון השחור של CMD עם סימן prompt שנראה כך:
 
 <code>
 c:\>
 </code>
 
-<h2>Perl version</h2>
+<h2>גירסת פרל</h2>
 
-Type in <hl>perl -v</hl>. This will print something like this:
+הקלד<hl>perl -v</hl>. פקודה זו מדפיסה משהו דומה לזה:
 
 <code>
 C:\> perl -v
@@ -53,17 +50,16 @@ Perl may be copied only under the terms of either the Artistic License or the
 GNU General Public License, which may be found in the Perl 5 source kit.
 
 Complete documentation for Perl, including FAQ lists, should be found on
-this system using "man perl" or "perldoc perl".  If you have access to the
-Internet, point your browser at http://www.perl.org/, the Perl Home Page.
+this system using "man perl" or "perldoc perl".  אם את מחובר לאינטרנט הפנה את הדפדפן שלך אל http://www.perl.org/, אתר הבית של פרל .
 </code>
 
-Based on this, I can see that I have version 5.12.3 of Perl installed on this Windows machine.
+לפי זה אני יכול לראות שעל מחשב ה-Windows שלי מותקנת גירסה 5.12.3 של פרל
 
 
-<h2>Printing a number</h2>
+<h2>הדפסת מספר</h2>
 
-Now type in <hl>perl -e "print 42"</hl>.
-This will print the number <hl>42</hl> on the screen. On Windows the prompt will appear on the next line
+הקלד את השורה:<hl>perl -e "print 42"</hl>.
+על המסך יודפס המספר <hl>42</hl> . ב Windows the סימן ה-prompt יופיע בשורה הבאה
 
 <code>
 c:>perl -e "print 42"
@@ -71,39 +67,36 @@ c:>perl -e "print 42"
 c:>
 </code>
 
-On Linux you will see something like this:
+בלינוקס תראה משהו דומה לזה:
 
 <code>
 gabor@pm:~$ perl -e "print 42"
 42gabor@pm:~$
 </code>
 
-The result is on the beginning of the line, immediately followed by the prompt.
-This difference is due to different in the behavior of the two command-line interpreters.
+התוצאה מודפסת בתחילת השורה ומייד אחריה סימן ה-prompt.
+הסיבה להבדל בין התוצאות הוא התנהגות שונה של מפרשי שורת הפקודה של שתי מערכות ההפעלה.
 
-In this example we use the <hl>-e</hl> flag that tells perl,
-"Don't expect a file. The next thing on the command-line is the actual Perl code."
+בדוגמה זו נשתמש באופציה <hl>-e</hl> שאומרת לפרל לא לצפות לקובץ. הדבר הבא על שורת הפקודה הוא קוד שכתוב בפרל."
 
-The above examples are of course not too interesting. Let me show you a slightly more complex
-example, without explaining it:
+הדוגמאות שהראיתי עד כה הן לא כל כך מעניינות. עכשיו נראה דוגמה יותר מעייניות ללא הסבר:
 
-<h2>Replace Java by Perl</h2>
+<h2>החלפת ג'אווה בפרל</h2>
 
-This command: <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" resume.txt</hl>
-will replace all appearance of the word <b>Java</b> by the word <b>Perl</b> in your
-résumé while keeping a backup of the file.
+הפקודה: <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" resume.txt</hl>
+מחליפה את כל המופעים של המילה  <b>Java</b> במילה <b>Perl</b> in your
+בקובץ קורות החיים שלך,resume.txt, ושומרת גיבוי של הקובץ המקורי.
 
-On Linux you could even write this <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" *.txt</hl>
-to replace Java by Perl in <b>all</b> your text files.
+בלינוקס אפשר אפילו לכתוב: <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" *קבצי הטקסט שלך.
 
-In a later section we'll talk more about one-liners and you'll learn how to use them.
-Enough to say, the knowledge of one-liners is a very powerful weapon in your hands.
+בהמשך, בחלק אחר, נדון יותר בתוכניות חד-שרותיות ונראה איך אפשר להשתמש בהן.
+לעת עתה נאמר רק שתוכניות חד-שורתיות והידע כיצד להשתמש בהן הם כלי נשק רבי עוצמה.
 
-BTW If you are interested in some very good one-liners, I'd recommend reading
+אם אתה מעוניין להכיר תוכניות חד-שורתיות שימושיות מאוד, אני ממליץ לקרוא את 
 <a href="http://www.catonmat.net/blog/perl-book/">Perl One-Liners explained</a>
-by Peteris Krumins.
+מאת פיטר קרומינס.
 
-<h2>Next</h2>
+<h2>מה הלאה?</h2>
 
 The next part is about
 <a href="/core-perl-documentation-cpan-module-documentation">core Perl documentation and CPAN module documentation</a>.
