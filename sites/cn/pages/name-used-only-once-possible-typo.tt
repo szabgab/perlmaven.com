@@ -78,7 +78,7 @@ Use of uninitialized value $x in print at ...
 
 那么如果避免呢？
 
-尽可能避免使用有歧义的字母，并且在输入变量名字的时候尽量小心一点。
+尽可能不要使用有歧义的字母，并且在输入变量名字的时候尽量小心一点。
 
 如果想真正的解决这个问题，你可以使用<b>use strict</b>！
 
@@ -86,7 +86,7 @@ Use of uninitialized value $x in print at ...
 
 上面的例子中你发现我没有使用strict。如果用的话，就不会有可能输入错误的警告，取而代之的是编译时错误：<a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>。
 
-即便你多次使用错误的变量也会出现。
+即便你多次使用错误的变量也会出现这样的提示。
 
 当然，看到错误后有些人会匆忙地在错误的变量前面加上"my"，但你不会这么做，对么？正确的做法是好好思考问题，直到搜索到真正的变量。
 
