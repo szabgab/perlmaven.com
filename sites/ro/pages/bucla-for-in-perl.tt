@@ -83,7 +83,7 @@ TEST
 
 <h2>foreach</h2>
 
-Bucla de mai sus merge de la 0 la 9 şi poate fi scrisă ca o <b>buclă foreach<-b>
+Bucla de mai sus merge de la 0 la 9 şi poate fi scrisă ca o <b>buclă foreach</b>
 şi cred că intenţia e mult mai clară::
 
 <code lang="perl">
@@ -116,7 +116,7 @@ BODY.
 
 <h2>Infinite loop</h2>
 
-Puteţi compune un ciclu infinit folosind <b>bucla for</a>:
+Puteţi compune un ciclu infinit folosind <b>bucla for</b>:
 
 <code lang="perl">
 for (;;) {
