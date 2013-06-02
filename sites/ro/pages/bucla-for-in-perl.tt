@@ -20,7 +20,7 @@ construcţie este de fapt disponibilă în mai multe limbaje.
 
 =abstract end
 
-<h2>for in Perl</h2>
+<h2>for în Perl</h2>
 
 Cuvântul cheie <b>for</b> în Perl poate funcţiona în două moduri diferite:
 poate funcţiona la fel ca o buclă <b>foreach</b> sau poate să se comporte
@@ -106,7 +106,7 @@ for my $i (0..9) {
 INITIALIZE iniţializează o varibilă. Este executată exact odată.
 
 TEST este o expresie logică  oarecare şi verifică dacă bucla for trebuie să se oprească sau
-să continue. Este executată cel puţin odată. Odată ce BODY sau STEP sunt executate, TEST
+să continue. Este executată cel puţin odată. Odată ce BODY şi STEP au fost executate, TEST
 mai este executată încă odată. Probabil că toate aceste studii de caz pot fi rescrise într-un mod
 mai atrăgător.
 
