@@ -54,7 +54,7 @@ for (my $i=0; $i <= 9; $i++) {
 
 Partea INITIALIZE va fi executată odată ce execuţia ajunge în acel punct.
 
-Apoi, imediat după aceea  va fi executată partea TEST. Dacă aceasta este falsă, atunci se sare peste
+Apoi, imediat după aceea va fi executată partea TEST. Dacă aceasta este falsă, atunci se sare peste
 toată bucla. Dacă partea TEST este adevărată atunci este executată partea BODY, urmată de partea
 STEP.
 
