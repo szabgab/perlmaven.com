@@ -29,11 +29,12 @@
 
 <b>Scalari</b>
 <ol>
-<li>Warning e messaggi d'errori comuni<br />
+<li>Warning e messaggi d'errore comuni<br />
 <ul>
   <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
   <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
   <li><a href="/bareword-in-perl">Bareword not allowed while "strict subs" in use</a></li>
+  <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
 </ul>
 <li><a href="/undef-e-defined-in-perl">undef e defined in Perl</a></li>
 </ol>
