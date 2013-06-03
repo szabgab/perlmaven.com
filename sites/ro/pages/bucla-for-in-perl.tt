@@ -14,17 +14,17 @@
 
 =abstract start
 
-În partea aceasta a <a href="/perl-arrays/perl-tutorial">Tutorialului Perl</a>
-vom vorbi despre <b>bucla for în Perl</b>. Unii oameni o mai numesc <b>bucla for în stil C</b>,
-dar această construcţie e de fapt disponibilă în mai multe limbaje.
+În partea aceasta a <a href="perl-tutorial">Tutorialului Perl</a> vom vorbi despre 
+<b>bucla for în Perl</b>. Unii o mai numesc <b>bucla for în stil C</b>, deşi această
+construcţie este de fapt disponibilă în mai multe limbaje.
 
 =abstract end
 
-<h2>for in Perl</h2>
+<h2>for în Perl</h2>
 
-Cuvântul cheie The <b>for</b> în Perl poate funcţiona în două moduri diferite.
-Poate funcţiona aşa cum lucrează şi o buclă <b>foreach</b> şi poate să se comporte
-ca şi o buclă for din 3 părţi în stil C. E numită în stil C cu toate că e disponibilă în multe
+Cuvântul cheie <b>for</b> în Perl poate funcţiona în două moduri diferite:
+poate funcţiona la fel ca o buclă <b>foreach</b> sau poate să se comporte
+ca o buclă for din 3 părţi în stil C. E numită în stil C cu toate că e disponibilă în multe
 limbaje.
 
 Voi descrie cum funcţionează aceasta deşi prefer să scriu bucla în stil <hl>foreach</hl>,
@@ -32,8 +32,8 @@ aşa cum este descrisă în secţiunea despre
 <a href="http://perlmaven.com/perl-arrays">vectori Perl</a>.
 
 
-Cele două cuvinte cheie <hl>for</hl> şi <hl>foreach</hl> pot fi folosite ca şi sinonime.
-Perl va descifra singur la care dintre semnificaţii vă gândeaţi.
+Cele două cuvinte cheie <hl>for</hl> şi <hl>foreach</hl> sunt sinonime.
+Perl va descifra singur la care dintre semnificaţii vă referiţi.
 
 Bucla <b>for în stil C</b> are trei părţi în secţiunea de comandă. În general arată ca şi
 codul acesta, deşi puteţi omite oricare dintre cele 4 părţi.
@@ -54,14 +54,14 @@ for (my $i=0; $i <= 9; $i++) {
 
 Partea INITIALIZE va fi executată odată ce execuţia ajunge în acel punct.
 
-Apoi, imediat după aceea partea TEST va fi executată. Dacă aceasta este falsă, atunci se sare peste
+Apoi, imediat după aceea va fi executată partea TEST. Dacă aceasta este falsă, atunci se sare peste
 toată bucla. Dacă partea TEST este adevărată atunci este executată partea BODY, urmată de partea
 STEP.
 
 (Pentru semnificaţia reală a valorilor ADEVĂRAT sau FALS, vezi
-<a href="http://perlmaven.com/perl-arrays/boolean-values-in-perl">valori logice în Perl</a>.)
+<a href="http://perlmaven.com/boolean-values-in-perl">valori logice în Perl</a>.)
 
-Apoi urmează din nou TEST şi tot aşa, atâta timp cât TEST se execută cu o valoare adevărată. 
+Apoi urmează din nou TEST şi tot aşa, atâta timp cât TEST se execută cu valoare de adevăr. 
 Deci arată aşa:
 
 <code>
@@ -83,8 +83,8 @@ TEST
 
 <h2>foreach</h2>
 
-Bucla de mai sus merge de la 0 la 9 şi poate fi scrisă ca o <b>buclă foreach</b>
-şi cred că intenţia e mult mai clară::
+Bucla de mai sus este parcursă de la 0 la 9 şi poate fi scrisă ca o <b>buclă foreach</b>,
+intenţia fiind probabil mult mai clară:
 
 <code lang="perl">
 foreach my $i (0..9) {
@@ -92,8 +92,8 @@ foreach my $i (0..9) {
 }
 </code>
 
-Aşa cum le-am scris, cele două sunt de fapt echivalente aşa că unii oameni folosesc
-cuvântul cheie <hl>for</hl> dar scriu o buclă <b>în stil foreach</b> ca şi aceasta:
+Aşa cum sunt scrise, cele două bucle sunt de fapt echivalente. Unii oameni folosesc
+cuvântul cheie <hl>for</hl> însă scriu o buclă <b>în stil foreach</b> ca aceasta:
 
 <code lang="perl">
 for my $i (0..9) {
@@ -103,15 +103,15 @@ for my $i (0..9) {
 
 <h2>Părţile buclei for în Perl</h2>
 
-INITIALIZE iniţializează desigur o varibilă. Este executat exact odată.
+INITIALIZE iniţializează o varibilă. Este executată exact odată.
 
-TEST este o expresie logică  oarecare şi testează dacă bucla for trebuie să se oprească sau
-să continue. Este executată cel puţin odată. Odată ce BODY sau STEP sunt executate, TEST
+TEST este o expresie logică  oarecare şi verifică dacă bucla for trebuie să se oprească sau
+să continue. Este executată cel puţin odată. Odată ce BODY şi STEP au fost executate, TEST
 mai este executată încă odată. Probabil că toate aceste studii de caz pot fi rescrise într-un mod
 mai atrăgător.
 
 STEP este o altă instrucţiune folosită în mod normal pentru a incrementa sau decrementa un fel
-de index. Aceasta poate fi lăsată necompletată dacă, de exemplu, facem acest lucru în interiorul
+de index. Aceasta poate fi lăsată necompletată dacă de exemplu facem acest lucru în interiorul
 BODY.
 
 <h2>Infinite loop</h2>
@@ -132,7 +132,7 @@ while (1) {
 }
 </code>
 
-Este descrisă în partea despre <a href="http://perlmaven.com/perl-arrays/while-loop">bucla while
+Este descrisă în partea despre <a href="http://perlmaven.com/while-loop">bucla while
 în Perl</a>.
 
 <h2>perldoc</h2>
