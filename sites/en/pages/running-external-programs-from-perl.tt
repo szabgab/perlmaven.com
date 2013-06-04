@@ -26,7 +26,7 @@ Perl provides us with many different solutions. We'll see some of them here.
 
 =abstract end
 
-<h2>system<h2>
+<h2>system</h2>
 
 Probably the most simple one is called <hl>system</hl>. In its most basic
 form in accepts a string that contains exactly what you would write on
