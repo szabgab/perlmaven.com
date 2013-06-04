@@ -106,7 +106,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li><a href="http://perlmaven.com/scalar-and-list-context-in-perl">Sensibilité au contexte en Perl</a> (EN)</li>
 <li><a href="http://perlmaven.com/sorting-arrays-in-perl">Trier des tableaux en Perl</a> (EN)</li>
 <li><a href="http://perlmaven.com/unique-values-in-an-array-in-perl">Valeurs uniques dans un tableau Perl</a> (EN)</li>
-<li><a href="http://perlmaven.com/manipulating-perl-arrays">Manipuler des tableaux en Perl: shift, unshift, push, pop</a> (EN)</li>
+<li><a href="/manipuler-des-tableaux-avec-perl">Manipuler des tableaux en Perl : shift, unshift, push, pop</a></li>
 <li>La pile et la file d'attente</li>
 <li>La fonction prédéfinie reverse</li>
 <li>L'opérateur ternaire</li>
