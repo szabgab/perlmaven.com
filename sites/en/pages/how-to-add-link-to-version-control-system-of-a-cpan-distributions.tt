@@ -11,11 +11,11 @@
 
 =abstract start
 
-When you look at either <a href="https://www.metacpan.org/">META CPAN</a>, o at
+When you look at either <a href="https://www.metacpan.org/">META CPAN</a>, or at
 <a href="http://search.cpan.org/">search.cpan.org</a>, you will see that some modules
 have a link to Github or some other place where they host their project.
 
-On search.cpan.org it is a plain link next to the title <b>Repository</b>, on Meta CPAN
+On search.cpan.org, it is a plain link next to the title <b>Repository</b>, on Meta CPAN
 it is a link, or a pop-up under the title <b>Clone repository</b> depending on the type of
 repository. (Github gets nice pop-ups, private repositories tend to get simple links.)
 
@@ -79,7 +79,7 @@ will automatically add the link to your repository, though you can also specify 
 repository.url = https://github.com/dwimperl/Task-DWIM.git
 </code>
 
-A detailed version would include more details as in the following example. As I can see these parts are only
+A detailed version would include more details as in the following example. As I can see, these parts are only
 included in the META.json file and not in the META.yml file. In order to generate that file, you'll also need
 to include the <a href="https://metacpan.org/module/Dist::Zilla::Plugin::MetaJSON">MetaJSON plugin</a> of Dist::Zilla.
 
@@ -101,12 +101,12 @@ It's simple. The easier it is to send patches to the most recent version of your
 the more likely you'll get them.
 
 Also you might have already made some changes to your module since the latest release.
-You might have already fixed the bug I'd like to fix. If can see your repository we can avoid duplicate work.
+You might have already fixed the bug I'd like to fix. If I can see your repository we can avoid duplicate work.
 
 <h2>Other resources</h2>
 
 If you are already dealing with this, you could add some other resources as well.
-The <a href="https://metacpan.org/module/CPAN::Meta::Spec#resources">CPAN META Specification</a> have all that listed.
+The <a href="https://metacpan.org/module/CPAN::Meta::Spec#resources">CPAN META Specification</a> has all that listed.
 If something is unclear there, just ask.
 
 <h2>Licenses</h2>
