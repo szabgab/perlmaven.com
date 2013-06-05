@@ -1,5 +1,5 @@
 =פרל (Perl) על שורת הפקודה
-=timestamp 2013-05-22T14:45:56
+=timestamp 2013-06-06T14:45:56
 =indexes -v, -e, -p, -i
 =status show
 =books beginner_book
@@ -14,10 +14,10 @@
 
 =abstract start
 
-בעוד שרובו של  <a href="/perl-tutorial">מדריך הפרלl</a> עוסק בתכניות שנשמרות בקבצים, נראה גם מספר דוגמאות של תוכניות של שוראה אחת.
+בעוד שרובו של  <a href="/perl-tutorial">מדריך הפרל</a> עוסק בתכניות שנשמרות בקבצים, נראה גם מספר דוגמאות של תוכניות של שורה אחת.
 
-גם אם התה משתמש ב- <a href="http://padre.perlide.org/">Padre</a>
-או הIDE אחר שמאפשר לך להריץ את הקוד שלך מתוך סביבת העבודה עצמה, חשוב מאוד להכיר גם את שורת הפקודה (או המעטפת, shell) ולדעת להשתמש בפרל גם משם.
+גם אם אתה משתמש ב- <a href="http://padre.perlide.org/">Padre</a>
+או בIDE אחר שמאפשר לך להריץ את הקוד שלך מתוך סביבת העבודה עצמה, חשוב מאוד להכיר גם את שורת הפקודה (או המעטפת, shell) ולדעת להשתמש בפרל גם משם.
 
 =abstract end
 
@@ -50,7 +50,7 @@ Perl may be copied only under the terms of either the Artistic License or the
 GNU General Public License, which may be found in the Perl 5 source kit.
 
 Complete documentation for Perl, including FAQ lists, should be found on
-this system using "man perl" or "perldoc perl".  אם את מחובר לאינטרנט הפנה את הדפדפן שלך אל http://www.perl.org/, אתר הבית של פרל .
+this system using "man perl" or "perldoc perl".  אם אתה מחובר לאינטרנט הפנה את הדפדפן שלך אל http://www.perl.org/, אתר הבית של פרל .
 </code>
 
 לפי זה אני יכול לראות שעל מחשב ה-Windows שלי מותקנת גירסה 5.12.3 של פרל
@@ -59,7 +59,7 @@ this system using "man perl" or "perldoc perl".  אם את מחובר לאינט
 <h2>הדפסת מספר</h2>
 
 הקלד את השורה:<hl>perl -e "print 42"</hl>.
-על המסך יודפס המספר <hl>42</hl> . ב Windows the סימן ה-prompt יופיע בשורה הבאה
+על המסך יודפס המספר <hl>42</hl> . ב Windows  סימן ה-prompt יופיע בשורה הבאה
 
 <code>
 c:>perl -e "print 42"
@@ -77,19 +77,19 @@ gabor@pm:~$ perl -e "print 42"
 התוצאה מודפסת בתחילת השורה ומייד אחריה סימן ה-prompt.
 הסיבה להבדל בין התוצאות הוא התנהגות שונה של מפרשי שורת הפקודה של שתי מערכות ההפעלה.
 
-בדוגמה זו נשתמש באופציה <hl>-e</hl> שאומרת לפרל לא לצפות לקובץ. הדבר הבא על שורת הפקודה הוא קוד שכתוב בפרל."
+בדוגמה זו נשתמש באופציה <hl>-e</hl> שאומרת לפרל לא לצפות לקובץ. הדבר הבא על שורת הפקודה הוא קוד שכתוב בפרל.
 
 הדוגמאות שהראיתי עד כה הן לא כל כך מעניינות. עכשיו נראה דוגמה יותר מעייניות ללא הסבר:
 
 <h2>החלפת ג'אווה בפרל</h2>
 
 הפקודה: <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" resume.txt</hl>
-מחליפה את כל המופעים של המילה  <b>Java</b> במילה <b>Perl</b> in your
+מחליפה את כל המופעים של המילה  <b>Java</b> במילה <b>Perl</b> 
 בקובץ קורות החיים שלך,resume.txt, ושומרת גיבוי של הקובץ המקורי.
 
-בלינוקס אפשר אפילו לכתוב: <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" *קבצי הטקסט שלך.
+בלינוקס אפשר אפילו לכתוב: <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" * קבצי הטקסט שלך.
 
-בהמשך, בחלק אחר, נדון יותר בתוכניות חד-שרותיות ונראה איך אפשר להשתמש בהן.
+בהמשך, בחלק אחר, נדון יותר בתוכניות חד-שורתיות ונראה איך אפשר להשתמש בהן.
 לעת עתה נאמר רק שתוכניות חד-שורתיות והידע כיצד להשתמש בהן הם כלי נשק רבי עוצמה.
 
 אם אתה מעוניין להכיר תוכניות חד-שורתיות שימושיות מאוד, אני ממליץ לקרוא את 
@@ -98,7 +98,7 @@ gabor@pm:~$ perl -e "print 42"
 
 <h2>מה הלאה?</h2>
 
-The next part is about
-<a href="/core-perl-documentation-cpan-module-documentation">core Perl documentation and CPAN module documentation</a>.
+החלק הבא הוא על 
+<a href="/core-perl-documentation-cpan-module-documentation">התיעוד של פרל, התיעוד שמגיע עם פרל ותיעוד המודולים</a>.
 
 
