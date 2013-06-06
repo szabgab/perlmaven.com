@@ -1,9 +1,11 @@
-=title Perl on the command line
-=timestamp 2013-01-17T14:45:56
+=title Perl en ligne de commande
+=timestamp 2013-06-08T14:45:56
 =indexes -v, -e, -p, -i
 =status show
+=original perl-on-the-command-line
 =books beginner_book
 =author szabgab
+=translator oval
 =index 1
 =archive 1
 =feed 1
@@ -12,32 +14,29 @@
 
 =abstract start
 
-While most of the <a href="/perl-tutorial">Perl tutorial</a> deals with scripts saved in a
-file, we'll also see a couple of examples of one-liners.
+Alors que la plupart des articles du <a href="/perl-tutorial">tutoriel Perl</a> utilisent des scripts enregistrés dans un fichier,
+nous verrons également quelques exemples d'unilignes.
 
-Even if you are using <a href="http://padre.perlide.org/">Padre</a>
-or some other IDE that would let you run your script from the editor itself,
-it is very important to familiarize yourself with the command line (or shell) and
-be able to use perl from there.
+Même si vous utilisez <a href="http://padre.perlide.org/">Padre</a> ou un autre EDI qui permet d'exécuter le script de l'éditeur lui-même,
+il est très important de vous familiariser avec la ligne de commande (ou <i>shell</i>) et être en mesure d'y utiliser perl.
 
 =abstract end
 
-If you are using Linux, open a terminal window. You should see a
-prompt, probably ending with a $ sign.
+Si vous utilisez Linux, ouvrez une fenêtre de terminal :
 
-If you are using Windows open a command window: Click on
+vous devriez voir une invite, probablement se terminant par le signe $.
 
-Start -> Run -> type in "cmd" -> ENTER
+Si vous utilisez Windows, ouvrez une fenêtre de commande (en cliquant sur Démarrer -> Exécuter, puis en tapant "cmd" et ENTRÉE) :
 
-You will see the black window of CMD with a prompt that probably looks like this:
+vous verrez la fenêtre noire de CMD avec un message qui ressemble probablement à l'invite ci-dessous.
 
 <code>
 c:\>
 </code>
 
-<h2>Perl version</h2>
+<h2>La version de Perl</h2>
 
-Type in <hl>perl -v</hl>. This will print something like this:
+Tapez <hl>perl -v</hl> et ENTRÉE, ce qui affiche un message similaire à celui ci-dessous :
 
 <code>
 C:\> perl -v
@@ -55,13 +54,13 @@ this system using "man perl" or "perldoc perl".  If you have access to the
 Internet, point your browser at http://www.perl.org/, the Perl Home Page.
 </code>
 
-Based on this, I can see that I have version 5.12.3 of Perl installed on this Windows machine.
+À la lecture de ce message, je peux voir que j'ai la version 5.12.3 de Perl installée sur cette machine Windows.
 
+<h2>Afficher un nombre</h2>
 
-<h2>Printing a number</h2>
+Maintenant, tapez <hl>perl-e "print 42"</hl>, ce qui affiche le nombre 42 à l'écran.
 
-Now type in <hl>perl -e "print 42"</hl>.
-This will print the number <hl>42</hl> on the screen. On Windows the prompt will appear on the next line
+Sous Windows, le nombre s'affiche sur la ligne suivante :
 
 <code>
 c:>perl -e "print 42"
@@ -69,41 +68,35 @@ c:>perl -e "print 42"
 c:>
 </code>
 
-On Linux you will see something like this:
+Sous Linux, vous verrez quelque chose plutôt comme ceci :
 
 <code>
 gabor@pm:~$ perl -e "print 42"
 42gabor@pm:~$
 </code>
 
-The result is on the beginning of the line, immediately followed by the prompt.
-This difference is due to different in the behavior of the two command-line interpreters.
+Le résultat est en début de ligne, immédiatement suivi par l'invite.
+Cette différence est due au différent dans le comportement des deux interpréteurs de ligne de commande.
 
-In this example we use the <hl>-e</hl> flag that tells perl,
-"Don't expect a file. The next thing on the command-line is the actual Perl code."
+Dans cet exemple, nous utilisons l'option <hl>-e</hl> indiquant à perl :
+"Ne t'attend pas à un fichier ! La prochaine chose sur la ligne de commande est le code Perl à exécuter lui-même !"
 
-The above examples are of course not too interesting. Let me show you a slightly more complex
-example, without explaining it:
+Les exemples ci-dessus ne sont évidemment pas très intéressants.
+Permettez-moi de vous en montrer un un peu plus complexe, sans l'expliquer en détail dans la section suivante !
 
-<h2>Replace Java by Perl</h2>
+<h2>Remplacer Java par Perl</h2>
 
-This command: <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" resume.txt</hl>
-will replace all appearance of the word <b>Java</b> by the word <b>Perl</b> in your
-résumé while keeping a backup of the file.
+Cette commande <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" cv.txt</hl> remplacera dans votre cv toutes les occurences du mot Java par le mot Perl  tout en gardant une copie de sauvegarde du fichier.
 
-On Linux you could even write this <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" *.txt</hl>
-to replace Java by Perl in <b>all</b> your text files.
+Sous Linux, vous pouvez même écrire <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" *.txt</hl> pour remplacer Java par Perl dans <b>tous</b> vos fichiers texte.
 
-In a later section we'll talk more about one-liners and you'll learn how to use them.
-Enough to say, the knowledge of one-liners is a very powerful weapon in your hands.
+Dans un chapitre ultérieur, nous parlerons plus des unilignes et vous apprendrez comment les utiliser.
+En bref, la connaissance des unilignes est une arme très puissante entre vos mains.
 
-BTW If you are interested in some very good one-liners, I'd recommend reading
-<a href="http://www.catonmat.net/blog/perl-book/">Perl One-Liners explained</a>
-by Peteris Krumins.
+Au fait, si vous êtes intéressé par certains très bons unilignes, je vous recommande la lecture de
+<a href="http://www.catonmat.net/blog/perl-book/">Perl One-Liners explained (EN)</a> par Krumins Peteris.
 
-<h2>Next</h2>
+<h2>La suite</h2>
 
-The next part is about
-<a href="/core-perl-documentation-cpan-module-documentation">core Perl documentation and CPAN module documentation</a>.
-
-
+La suite est disponible dans <a href="http;//perlmaven.com/core-perl-documentation-cpan-module-documentation">la documentation du noyau Perl et
+la documentation des modules sous CPAN</a>.
