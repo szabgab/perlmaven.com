@@ -49,7 +49,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <ol>
 <li><a href="http://perlmaven.com/installing-perl-and-getting-started">Installer Perl, afficher "Bonjour tout le monde", filet de sécurité (use strict; use warnings;)</a> (EN)</li>
 <li><a href="http://perlmaven.com/perl-editor">Éditeurs et EDIs, environnements de développement pour Perl</a> (EN)</li>
-<li><a href="http://perlmaven.com/perl-on-the-command-line">Perl en ligne de commande</a> (EN)</li>
+<li><a href="/perl-en-ligne-de-commande">Perl en ligne de commande</a></li>
 <li><a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">Documentation du noyau Perl et des modules CPAN</a> (EN)</li>
 <li><a href="http://perlmaven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation : la bonne vieille documentation à la Perl</a> (EN)</li>
 <li><a href="/utiliser-le-debogueur-integre-de-perl">Déboguer des scripts Perl</a></li>
@@ -100,7 +100,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li>Utiliser des modules</li>
 <li><a href="http://perlmaven.com/perl-arrays">Les tableaux en Perl</a> (EN)</li>
 <li>Traiter les paramètres de la ligne de commande : @ARGV et Getopt::Long</li>
-<li><a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS (EN)</li>
+<li><a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS</a> (EN)</li>
 <li><a href="/la-fonction-predefinie-join">La fonction prédéfinie join</a></li>
 <li><a href="http://perlmaven.com/the-year-19100">L'année 19100 (time, localtime, gmtime)</a> (EN) et introduction au contexte</li>
 <li><a href="http://perlmaven.com/scalar-and-list-context-in-perl">Sensibilité au contexte en Perl</a> (EN)</li>
@@ -139,7 +139,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li>Regex: ancres</li>
 <li>Regex: options et modificateurs</li>
 <li>Substitutions (rechercher et remplacer)</li>
-<li><a href="http://perlmaven.com/trim">Couper/Supprimer les espaces avant et après (EN)</a></li>
+<li><a href="http://perlmaven.com/trim">Couper/Supprimer les espaces avant et après</a> (EN)</li>
 </ol>
 
 <b>Fonctionnalités du système d'exploitation via Perl</b>
