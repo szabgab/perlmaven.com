@@ -64,7 +64,6 @@ Test::Most
 XML::Atom::SimpleFeed
 </code>
 
-
 Once you have installed everything you can go ahead and build your first site:
 
 <h2>Simple setup</h2>
@@ -185,5 +184,4 @@ and <a herf="https://github.com/domm/Blio/blob/master/lib/Blio.pm">Blio.pm</a> h
 
 If you have any question, comments, don't hesitate to post them here and don't forget to share this article.
 If enough people share it, I'll consider myself encouraged to extend the article...
-
 

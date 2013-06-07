@@ -290,4 +290,3 @@ Adding 0 to it does not change the number, so the above expression returns the s
 
 I'd recommend writing the slightly longer but clearer way using the <hl>scalar</hl> function.
 
-

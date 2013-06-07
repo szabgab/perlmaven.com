@@ -33,7 +33,6 @@ TranID,Date,AcNo,Type,Amount,ChequeNo,DDNo,Bank,Branch
 13541,10-01-2011,5522341,Cr,2000,19123,,,
 </code>
 
-
 At first it was not clear where is he stuck or if he made any progress at all.
 In order to help him I had to try to figure out both what he wanted to reach and the where he is stuck.
 
@@ -87,10 +86,8 @@ difficult. Especially to someone who is new to Perl.
 Assuming the CSV file is simple - no quoted separators, no embedded newlines - we can handle it with a call
 to the <hl>split</hl> function.
 
-
 The code he sent me is reasonable for someone starting to use Perl, let's see how can we improve it
 and how can we try to implement what he needed?
-
 
 <h2>Running the code</h2>
 
@@ -145,7 +142,6 @@ Total Balance of Account Number is Rs.6000
 Total Balance of Account Number is Rs.4380
 Total Balance of Account Number is Rs.880
 </code>
-
 
 The <a href="/use-of-uninitialized-value">Use of uninitialized value</a> warning
 is another common warning in Perl. It means the <hl>$sum2</hl> was undef in line 23.
@@ -385,7 +381,6 @@ to care about it as we only dealt with rows where the account id was matching th
 number, but now we have to skip that line. It's easy, just read the first row before the
 <hl>while</hl> loop, and throw it away.
 
-
 <code lang="perl">
 <$FILEHANDLE>;
 while (my $line = <$FILEHANDLE>) {
@@ -398,7 +393,6 @@ or only at the end. So let's make another change that will display the results o
 
 We remove the <hl>print</hl> call from the <hl>while</hl> loop and add another loop at the end, going over all the
 accounts and displaying the account status:
-
 
 <code lang="perl">
 foreach my $account (sort keys %sum) {
@@ -445,6 +439,4 @@ If no, then we could remove that line.
 
 If this is a CGI script then we should probably print real HTML out. At least we should
 print pre tags around the report.
-
-
 
