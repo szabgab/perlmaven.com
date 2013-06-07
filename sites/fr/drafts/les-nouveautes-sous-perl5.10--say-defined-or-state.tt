@@ -1,8 +1,10 @@
-=title What's new in Perl 5.10? say, //, state
-=timestamp 2012-07-06T05:45:56
-=indexes v5.10, 5.010, say, //, defined or, state
+=title Quelles sont les nouveautés sous Perl 5.10 ? say, //, state
+=timestamp 2013-06-08T05:45:56
+=indexes v5.10, 5.010, say, //, défini-ou, defined or, state
 =status show
+=original what-is-new-in-perl-5.10--say-defined-or-state
 =author szabgab
+=translator oval
 =index 1
 =archive 1
 =feed 1
@@ -11,131 +13,119 @@
 
 =abstract start
 
-It is not news any more, Perl 5.10 has been released on 18th December, 2007,
-the 20th birthday of Perl. Many people have writen articles about it.
-There are several presentations on-line available. For example see
-the discussion on <a href="http://perlmonks.org/?node_id=654042">PerlMonks</a>.
-It has several good links.
+Ce n'est plus vraiment d'actualité : Perl 5.10 a été livré le 18 Décembre 2007, jour du 20e anniversaire de Perl.
+Beaucoup de gens ont écrit des articles à ce sujet. Il existe plusieurs présentations en ligne disponibles.
+Par exemple, voir la discussion sur <a href="http://perlmonks.org/?node_id=654042">PerlMonks (EN)</a> qui énumère plusieurs bons liens.
 
-I am writing about it as many companies are very late adopters and they will want
-to see how can Perl 5.10 or some later version improve their life.
+Néanmoins, j'écris cet article sur ce sujet, car de nombreuses entreprises adoptent tardivement les changements, et veulent voir d'abord comment Perl 5.10 ou une version ultérieure peut améliorer leur vie.
 
-(This article was originally published on 2007 Dec 24 on szabgab.com)
+(La version originale de cet article a été publiée le 24 décembre 2007 sur szabgab.com).
 
 =abstract end
 
-There are many new features, let's start with some of the simple ones:
+Il y a beaucoup de nouvelles fonctionnalités. Commençons parmi les plus simples !
 
-<h2>say</h2>
+<h2>La fonction prédéfinie say</h2>
 
-There is a new function called <hl>say</hl>. It is the same as <b>print</b>
-but it automatically adds a new line <b>\n</b> to every call.
-This does not sound like a big issue and it is indeed not a huge one, but
-nevertheless it saves a lot of typing, especially in debugging code.
-There are just so many times we type
+Il y a une nouvelle <b>fonction prédéfinie <hl>say</hl></b>.
+Elle est identique à <hl>print</hl>, à part ajouter automatiquement un saut de ligne <b>"\n"</b> juste après la chaîne de caractères à afficher, et ce pour chaque appel.
+Cela ne semble pas un gros problème et cela n'est pas en effet énorme,
+mais néanmoins cela fait gagner beaucoup de temps d'écriture, en particulier dans le code de débogage.
+Nous tapons tant de fois :
 
 <code lang="perl">
 print "$var\n";
 </code>
 
-Now we'll be able to say this:
+alors que maintenant, nous tapons juste :
 
 <code lang="perl">
 say $var;
 </code>
 
-If you are worried of new functions popping up in old code,
-you should not. The new function is only available if
-you explicitly ask for it by writing
+Vous ne devriez pas vous inquiéter au sujet de nouvelles fonctions surgissant dans l'ancien code.
+En effet, la nouvelle fonction n'est disponible que si vous la demandez expressément en écrivant :
 
 <code lang="perl">
 use feature qw(say);
 </code>
 
-or if you require 5.10 to be the minimal version where your code can run:
+ou si vous forcez 5.10 comme étant la version minimale pour laquelle votre code peut fonctionner :
 
 <code lang="perl">
 use 5.010;
 </code>
 
-<h2>defined or</h2>
+<h2>L'opérateur défini-ou //</h2>
 
-Another cute help is the <b>//</b> defined-or operator. It is nearly the
-same as the good old <b>||</b> but without the
-<i>"0 is not a real value"</i> bug:
+Une autre aide pratique est le nouvel <b>opérateur défini-ou, codé <hl>//</hl></b>.
+Il est presque le même que le bon vieil <b>opérateur ou, codé ||</b>, mais sans le bogue "0 n'est pas une valeur réelle".
 
-Earlier when we wanted to give a <b>default value</b> to a scalar we could write
-either
+Auparavant, quand nous voulions donner une <b>valeur par défaut</b> à un scalaire, nous devions écrire :
 
 <code lang="perl">
-$x = defined $x ? $x : $DEFAULT;
+$x = defined $x ? $x : $DEFAUT;
 </code>
 
-which is quite long, or we could write
+ce qui est vraiment long, et nous avions donc l'envie d'écrire :
 
 <code lang="perl">
-$x ||= $DEFAULT;
+$x ||= $DEFAUT;
 </code>
 
-but then 0 or "0" or the empty string were not accepted as valid
-values. They were replaced by the $DEFAULT value. While in some
-cases this is ok, in other cases this created a bug.
+Mais alors 0, "0" ou la chaîne vide ne sont pas acceptées comme des valeurs valides.
+Ils sont alors remplacés par la valeur de $DEFAUT. Bien que correct dans certains cas, cela crée un bogue dans d'autres cas.
 
-The new defined-or operator can solve this problem as it will return
-the right hand side only if the left hand value is <hl>undef</hl>. So now
-we are going to have <b>short AND correct</b> form:
+Le nouvel opérateur défini-ou peut résoudre ce problème, car il ne retournera la valeur de droite uniquement que si la valeur de gauche est <hl>undef</hl>.
+Ainsi, nous pouvons écrire la valorisation sous une forme <b>courte et correcte</b> :
 
 <code lang="perl">
 $x //= $DEFAULT;
 </code>
 
-<h2>state</h2>
+<h2>Le mot-clé state</h2>
 
-Third thing I look at in this article is the new <b>state</b>
-keyword. This too is optional and is only included if you ask for it
-by saying
+La troisième nouveauté explicitée dans cet article est le nouveau <b>mot-clé <hl>slate</hl></b>.
+
+Elle est aussi facultative et est inclus uniquement si vous écrivez :
 
 <code lang="perl">
 use feature qw(state);
 </code>
 
-or by
+ou :
 
 <code lang="perl">
 use 5.010;
 </code>
 
-When used it is similar to <b>my</b> but it creates and initializes the
-variable only once. It is the same as the <b>static</b> variable in C.
-Earlier we had to write something like this:
+Lorsqu'il est utilisé, il est semblable à <hl>my</hl>, mais il ne crée et n'initialise la variable qu'une seule fois.
+C'est la même chose que la variable statique en C. Auparavant, nous devions écrire quelque chose comme ceci :
 
 <code lang="perl">
 {
-   my $counter = 0;
-   sub next_counter {
-      $counter++;
-      return $counter;
+   my $compteur = 0;
+   sub  {
+      $compteur++;
+      return $compteur;
    }
 }
 </code>
 
-Which always needed lots of explanations why $counter is set to 0 only once
-and how can it always get you a higher number. The anonymous block is also
-unclear at first glance.
+ce qui nécessite toujours beaucoup d'explications pourquoi <hl>$compteur</hl> est mis à 0 une seule fois et
+comment il peut toujours retourner un nombre plus élevé.
+Le bloc anonyme est également peu clair en première lecture.
 
-Now you can write this:
+Maintenant, vous pouvez écrire ceci :
 
 <code lang="perl">
-sub next_counter {
-   state $counter = 0;
-   $counter++;
-   return $counter;
+sub compteur_au_suivant {
+   state $compteur = 0;
+   $compteur++;
+   return $compteur;
 }
 </code>
 
-Which is much clearer.
+ce qui est plus clair.
 
-For another use case of the <hl>state</hl> keyword check out
-<a href="http://szabgab.com/how-to-capture-and-save-warnings-in-perl.html">how to hide multiple warnings of Perl?</a>.
-
-
+Pour un autre cas d'utilisation du mot-clé <hl>state</hl>, allez lire la section "Comment éviter d'afficher les répétitions des avertissements de Perl ?" dans l'article <a href="http://perlmaven.com/how-to-capture-and-save-warnings-in-perl.html">Comment capturer et sauver des avertissements en Perl ? (EN)</a>.
