@@ -161,7 +161,6 @@ for my $fruit (keys %color_of) {
 }
 </code>
 
-
 <h2>The size of a hash</h2>
 
 When we say the size of a hash, usually we mean the number of key-value pairs.
@@ -175,6 +174,4 @@ print scalar keys %hash;
 
 The first edition of this article was written by <a href="http://www.leprevost.com.br/">Felipe da Veiga Leprevost</a> who also makes the
 <a href="http://br.perlmaven.com/">Portuguese translation</a> of the Perl Maven articles.
-
-
 

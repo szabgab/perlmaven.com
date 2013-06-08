@@ -76,7 +76,6 @@ STEP
 TEST
 </code>
 
-
 <h2>foreach</h2>
 
 The above loop - going from 0 to 9 can be also written in a <b>foreach loop</b>
@@ -137,6 +136,3 @@ about the <a href="/while-loop">while loop in perl</a>.
 You can find the official description of the for-loop in the
 <b>perlsyn</b> section of the
 <a href="http://perldoc.perl.org/perlsyn.html#For-Loops">Perl documentation</a>.
-
-
-

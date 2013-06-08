@@ -42,7 +42,6 @@ print "@big_numbers\n";      # (8, 5, 7)
 This grep passes the values that are greater than 4,
 filtering out all the values that are not greater than 4.
 
-
 <h2>Filter out the new files</h2>
 
 <code lang="perl">
@@ -105,7 +104,6 @@ if (any { $visitor eq $_ } @names) {
 }
 </code>
 
-
 <h2>UNIX grep and Linux grep?</h2>
 
 Just to make the explanation round:
@@ -136,5 +134,4 @@ the filtering are printed.
 
 Windows does not come with a grep utility but you can install
 one or you can use the same Perl script as above.
-
 

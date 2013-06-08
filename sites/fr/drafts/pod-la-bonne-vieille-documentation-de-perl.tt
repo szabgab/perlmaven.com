@@ -147,10 +147,7 @@ need to look at your source code. They should be able to use
 your module just by reading the documentation via the
 <hl>perldoc</hl> command.
 
-
 <h2>Conclusion</h2>
 
 Writing documentation and making it look nice is not that hard in Perl.
-
-
 
