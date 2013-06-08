@@ -80,7 +80,6 @@ and <a href="http://search.cpan.org/">search CPAN</a>.
 They both are based on the same documentation, but they
 provide a slightly different experience.
 
-
 <h2>Keyword search on Perl Maven</h2>
 
 A recent addition to this site is the keyword search on the top menu bar.
@@ -91,5 +90,4 @@ most important CPAN modules will be also included.
 If you are missing something from there, just make a comment below,
 with the keywords you will looking for and you have a good chance to
 get your request fulfilled.
-
 

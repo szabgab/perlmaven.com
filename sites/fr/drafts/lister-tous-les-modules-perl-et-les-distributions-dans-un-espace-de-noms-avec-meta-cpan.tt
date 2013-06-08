@@ -65,7 +65,6 @@ The returned hash has some meta-meta data in it, so we need to got a bit deeper 
 of 'hits' and then we get a array with more meta-data and the the <b>fields</b> sub-key.
 I left in the call to Dumper on the original hash, to make it easy for you to see what's going on.
 
-
 <h2>List all the modules under a name::space (with a given prefix)</h2>
 
 <code lang="perl">
@@ -127,11 +126,8 @@ MetaCPAN name spaces:
 <li><a href="http://metacpan.org/release/MetaCPAN-Clients">MetaCPAN-Clients</a></li>
 </ul>
 
-
 <h2>Other uses</h2>
 
 This script, or something similar could be used to provide a list of all the
 plugins for <a href="http://perldancer.org/">Perl Dancer</a>, or <a href="http://www.perlcritic.com/">Perl::Critic</a>,
 or for any other module on CPAN.
-
-

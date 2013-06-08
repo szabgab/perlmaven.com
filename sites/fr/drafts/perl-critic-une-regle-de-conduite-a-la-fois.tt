@@ -36,7 +36,6 @@ lib/Module/Name.pm: Subroutine prototypes used at line 15, column 1.
     See page 194 of PBP.  (Severity: 5)
 </code>
 
-
 Each entry will tell you exactly where the policy was violated in your code,
 and where to read the Perl Best Practices book. It won't tell you any more details,
 especially it won't tell you what is the name of the policy that was violated.
@@ -46,7 +45,6 @@ Without the name, you cannot easily turn it off, if that's what you want.
 Don't worry though, there is a flag called <hl>--verbose N</hl> that can provide you with more detailed output.
 By default it is at level 4, but you can pass it a smaller number to be less noisy, or
 a bigger number to provide more details. (According to the documentation, N can be between 1 and 11.)
-
 
 At level 8, it starts to display the name of the policy:
 Running this command: <b>perlcritic --verbose 8 lib/Module/Name.pm</b>
@@ -107,7 +105,4 @@ code base. (Instead of fixing all the problems in a single file.)
 
 To make it easy you can disable all the policies that bother you for some reason,
 and can go over the problematic policies one-by-one and fix them in your whole code base.
-
-
-
 

@@ -42,7 +42,6 @@ Declare and assign values:
 my @names = ("Foo", "Bar", "Baz");
 </code>
 
-
 <h2>Debugging of an array</h2>
 
 <code lang="perl">
@@ -167,7 +166,6 @@ $VAR1 = [
         'Moo'
       ];
 </code>
-
 
 <h2>Pop from Perl array</h2>
 

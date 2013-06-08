@@ -66,7 +66,6 @@ Use of uninitialized value $x in print at ...
 One of them we are discussing now, the other one is discussed in
 <a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
 
-
 <h2>What is the typo there?</h2>
 
 You might ask.
@@ -162,5 +161,4 @@ using them once here.
 (Actually it is unclear to me why this generates the warnings,
 while the same code using <b>sort</b> does not, but the
 <a href="http://www.perlmonks.org/?node_id=1021888">Perl Monks</a> might know.
-
 

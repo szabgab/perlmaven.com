@@ -20,7 +20,6 @@ Let's see these use-case first:
 
 =abstract end
 
-
 <h2>Loading your private Perl module</h2>
 
 You have a script and have just started to move some parts of it,
