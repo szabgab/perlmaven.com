@@ -224,5 +224,3 @@ the fields in the e-mail header: To, From, Reply-To, Subject in this case.
 This can create an <a href="http://en.wikipedia.org/wiki/Open_mail_relay">open mail relay</a>,
 that can be used to send spam.
 
-
-

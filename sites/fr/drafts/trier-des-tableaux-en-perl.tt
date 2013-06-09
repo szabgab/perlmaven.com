@@ -38,7 +38,6 @@ my @sorted_words = sort @words;
 say Dumper \@sorted_words;
 </code>
 
-
 The above example will print
 
 <code lang="perl">
@@ -59,10 +58,8 @@ $VAR1 = [
 
 The first output shows the array before sorting, the second output after sorting.
 
-
 This is the most simple case, but it is not always what you want.
 For example, what happens if some of the words start with an upper case letter?
-
 
 <code lang="perl">
 my @words = qw(foo bar Zorg moo);
@@ -140,7 +137,6 @@ my @sorted_numbers = sort @numbers;
 say Dumper \@sorted_numbers;
 </code>
 
-
 <code lang="perl">
 $VAR1 = [
         12,
@@ -177,5 +173,4 @@ $VAR1 = [
         23
       ];
 </code>
-
 

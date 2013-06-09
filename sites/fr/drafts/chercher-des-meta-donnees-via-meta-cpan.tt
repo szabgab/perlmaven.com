@@ -160,7 +160,6 @@ The last pair of parameters in our example sets the size of the "result set". Th
 fetch. Here again, I think it is better to limit this to the actual size we are interested in. There is no point in
 fetching information about 20,000 distributions if we don't intend to use the most of that data.
 
-
 <h2>Collecting the data</h2>
 
 Once the query returned, we go over all the hits and using a straight-forward way of filtering we collect the
@@ -172,5 +171,4 @@ in a much nicer way, but it was good enough for my purposes.
 Since I wrote the article I packaged the script and uploaded it to CPAN.
 Check out the <a href="https://metacpan.org/release/MetaCPAN-Clients">MetaCPAN-Clients</a>
 distribution.
-
 

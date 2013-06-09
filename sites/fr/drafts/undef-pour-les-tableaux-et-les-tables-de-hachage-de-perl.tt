@@ -119,7 +119,6 @@ $VAR1 = [
 
 This is <b>NOT what you want</b>!
 
-
 <h2>undef on hash elements</h2>
 
 The script uses <hl>$h{Foo} = undef;</hl> to set the value of a hash key to be <hl>undef</hl>.
@@ -144,7 +143,6 @@ $VAR1 = {
           'Foo' => undef
         };
 </code>
-
 
 <hl>undef $h{Foo};</hl> would do exactly the same.
 
@@ -210,7 +208,6 @@ As a conclusion let me try to answer to straight forward question:
 @a = ();
 %h = ();
 </code>
-
 
 <h2>How do you reset a complete hash or a hash key/value pair?</h2>
 

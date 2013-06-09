@@ -77,7 +77,6 @@ wrapper of <a href="http://www.wxwidgets.org/">wxWidgets</a> on all 3 platforms.
 Upgrading of these Perl distributions for Windows usually involves removing the old ones and installing a new one.
 Then installing all the additional modules.
 
-
 <h2>Linux</h2>
 
 Every modern Linux distribution comes with perl already installed. In some cases it is not the full package

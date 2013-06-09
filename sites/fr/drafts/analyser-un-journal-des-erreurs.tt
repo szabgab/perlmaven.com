@@ -9,7 +9,6 @@
 =comments 1
 =social 1
 
-
 =abstract start
 
 Today is 1st January 2013. It is customary to make big decisions, to plan out the whole year,
@@ -144,7 +143,6 @@ So the first thing I'd do is try to check if there is already a
 that can parse such files.
 
 If that fails, only then would I start to think how to parse it myself.
-
 
 <h2>Trying to understand the problem</h2>
 
@@ -357,7 +355,6 @@ We call <hl>next</hl> to read the next line from the file.
     }
 </code>
 
-
 We assume that every remaining line describes an error. We save them in an array.
 
 <code lang="perl">
@@ -381,7 +378,6 @@ my @errors;
 
 sub process {
     my ($file) = @_;
-
 
     open my $fh, '<', $file or die "Could not open '$file' $!";
     while (my $line = <$fh>) {
@@ -412,7 +408,6 @@ sub process {
     return;
 }
 </code>
-
 
 <h2>Processing a block</h2>
 
@@ -452,7 +447,6 @@ sub process_block {
     return;
 }
 </code>
-
 
 <h2>Reporting</h2>
 
@@ -501,7 +495,6 @@ foreach my $msg (reverse sort { $error_messages{$a} <=> $error_messages{$b} } ke
 
 sub process {
     my ($file) = @_;
-
 
     open my $fh, '<', $file or die "Could not open '$file' $!";
     while (my $line = <$fh>) {
@@ -552,7 +545,6 @@ sub process_block {
 }
 </code>
 
-
 <h2>The output</h2>
 
 <code>
@@ -579,13 +571,10 @@ PLCADDR = 33003           1
 PLCADDR = 33004           1
 </code>
 
-
 <h2>Further work</h2>
 
 I am sure further processing could be done on the values.
 For example, some of the strings are in quotes. We could remove the quotes.
 There seem to be certain key-value pairs in the error code. Those could be
 split apart.
-
-
 

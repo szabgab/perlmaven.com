@@ -83,7 +83,6 @@ splice @dwarfs, 3, 0, @others;
 print "@dwarfs";
 </code>
 
-
 <h2>Replace part of an array with some other values</h2>
 
 You can also add and remove elements in a single command:

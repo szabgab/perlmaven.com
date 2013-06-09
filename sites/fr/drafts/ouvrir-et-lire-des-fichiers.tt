@@ -153,7 +153,6 @@ Perl is actually cheating here. In this very specific case (reading a line from 
 perl will actually act as if you wrote <hl>while (defined my $row = <$fh>) {</hl> and so even such lines
 will execute properly.
 
-
 <h2>open without die</h2>
 
 The above way of handling files is used in Perl scripts when you absolutely
@@ -192,5 +191,4 @@ if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
   }
 }
 </code>
-
 

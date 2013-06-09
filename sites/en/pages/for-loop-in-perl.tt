@@ -18,7 +18,7 @@ but this construct is actually available in many programming languages.
 
 =abstract end
 
-<h2>for in Perl</h2>
+<h2>Perl for loop</h2>
 
 The <b>for</b> keyword in Perl can work in two different ways.
 It can work just as a <b>foreach</b> loop works and it can act

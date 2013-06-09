@@ -80,7 +80,6 @@ In our case the field separator character is a comma <hl>,</hl> and not a colon
 <hl>:</hl> so our call to split will look like this:
 <hl>@fields = split("," , $str);</hl> though we won't write the parentheses.
 
-
 We can write our script like this:
 
 <code lang="perl">
