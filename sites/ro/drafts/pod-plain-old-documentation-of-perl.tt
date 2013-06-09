@@ -4,6 +4,7 @@
 =status show
 =books beginner_book
 =author szabgab
+=translator stefansbv
 =index 1
 =archive 1
 =feed 1
@@ -12,24 +13,26 @@
 
 =abstract start
 
-Programmers usually dislike writing documentation. Part of the reason
-is that programs are plain text files, but in many cases developers
-are required to write documentation in some word processor.
+Programatorilor, îndeobște, nu le place să scrie documentație. Unul
+dintre motive este acela că deși programele sunt fișiere text, în
+multe cazuri dezvoltatorii sunt nevoiți să scrie documentația într-un
+procesor de texte.
 
-That requires learning the word processor and investing a lot of energy in
-trying to make the document "look good" instead of "having good content".
+Aceasta presupune învățarea modului de lucru cu procesorul de texte și
+investirea de multă energie pentru a încerca să faci documentul să "arate bine"
+în loc de a "avea conținut bun".
 
-That's not the case with Perl. Normally you would write the
-documentation of your modules right in the source code and rely
-on external tool to format it to look good.
+Nu este cazul cu Perl.  Uzual vei scrie documentația modulelor chiar
+în codul sursă şi te vei baza pe unelte externe pentru formatare, ca
+să arate bine.
 
 =abstract end
 
-In this episode of the <a href="/perl-tutorial">Perl tutorials</a>
-we are going to see the <b>POD - Plain Old Documentation</b> which is
-the mark-up language used by perl developers.
+În acest episod al <a href="/perl-tutorial">Tutorialelor Perl</a> vom
+vedea la lucru <b>POD - Plain Old Documentation</b> un limbaj de
+marcare folosit de developerii Perl.
 
-As simple piece of perl code with POD looks like this:
+O bucățică de cod simplu cu POD arată așa:
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -49,45 +52,52 @@ print the output to the screen.
 print "Here comes the code ... \n";
 </code>
 
-If you save this as <hl>script.pl</hl> and run it using <hl>perl script.pl</hl>,
-perl will disregard anything between the <hl>=pod</hl> and the <hl>=cut</hl> lines.
-It will only execute the actual code.
+Dacă vei salva codul acesta ca <hl>script.pl</hl> și-l vei executa
+folosind <hl>perl script.pl</hl>, Perl va ignora tot ce este
+între <hl>=pod</hl> şi <hl>=cut</hl>. Va executa numai codul efectiv.
 
-On the other hand, if you type in <hl>perldoc script.pl</hl>, the <b>perldoc</b> command
-will disregard all the code. It will fetch the lines between <hl>=pod</hl> and <hl>=cut</hl>,
-format them according to certain rules, and display them on the screen.
+Pe de altă parte, dacă vei tasta <hl>perldoc script.pl</hl>, adică
+comanda <b>perldoc</b>, va ignora tot codul. Va formata și va afișa
+liniile cuprinse între <hl>=pod</hl> și <hl>=cut</hl>.
 
-These rules depend on your operating system, but they are exactly the same as
-you saw when we learned about the
-<a href="/core-perl-documentation-cpan-module-documentation">standard documentation of Perl</a>.
+Aceste reguli depind de sistemul de operare, dar sunt exact la fel ca
+cele despre care am învățat despre
+<li><a href="/documentatia-perl-si-documentatia-modulelor-cpan">documentația
+Perl și documentația modulelor CPAN</a></li>.
 
-The added value of using the embedded POD is that your code will never be supplied
-without documentation by accident, as it is inside the modules and the scripts.
-You can also reuse the tools and infrastructure the Open Source Perl community
-built for itself. Even for your in-house purposes.
+Valoarea adăugată a utilizării de documentație încorporată în format
+POD este următoarea: codul nu va fi niciodată distribuit fără
+documentație, nici măcar accidental.
 
-<h2>Too simple?</h2>
+De asemenea poți refolosii uneltele și infrastructura pe care
+Comunitatea Open Source Perl le-a construit pentru sine. Chiar și
+pentru utilizare privată în cadrul firmei.
 
-The assumption is that if you remove most of the obstacles from writing
-documentation then more people will write documentation. Instead of learning
-how to use a word processor to create nice looking documents, you just
-type in some text with a few extra symbols and you can get a reasonably
-looking document. (Check out the documents on <a href="http://metacpan.org/">Meta CPAN</a>
-to see nicely formatted version of PODs.)
+<h2>Prea simplu?</h2>
 
-<h2>The markup language</h2>
+Ipoteza este aceea că dacă îndepărtezi cele mai multe dintre
+obstacolele scrierii de documentație atunci din ce în ce mai mulți vor
+scrie documentație.  În loc să înveți cum să folosești procesorul de
+texte ca să creezi documente care să arate bine, introduci textul
+folosind câteva simboluri suplimentare și poți obține un document care
+arată rezonabil. (Vezi și documentația de pe <a href="http://metacpan.org/">Meta CPAN</a> o versiune frumos formatată a POD-urilor).
 
-Detailed description of the <a href="http://perldoc.perl.org/perlpod.html">POD markup language</a>
-can be found by typing in <a href="http://perldoc.perl.org/perlpod.html">perldoc perlpod</a> but
-it is very simple.
+<h2>Limbajul de marcare</h2>
 
-There are a few tags such as <hl>=head1</hl> and <hl>=head2</hl>
-to mark "very important" and "somewhat less important" headers.
-There is <hl>=over</hl> to provide indentation and <hl>=item</hl>
-to allow the creation of bullet points, and there are a few more.
+O descriere detaliată
+a <a href="http://perldoc.perl.org/perlpod.html">limbajului de marcare
+POD</a> poate fi găsită la
+adresa <a href="http://perldoc.perl.org/perlpod.html">perldoc
+perlpod</a>, dar este foarte simplu.
 
-There is <hl>=cut</hl> to mark the end of a POD section and
-<hl>=pod</hl> to start one. Though this starting one isn't strictly required.
+Sunt câteva etichete ca <hl>=head1</hl> și <hl>=head2</hl>
+care marchează antele "foarte importante" și "mai puțin importante".
+Este și <hl>=over</hl> pentru indentare și <hl>=item</hl>
+pentru a crea liste și de asemenea câteva altele.
+
+Mai este și <hl>=cut</hl> care marchează sfârșitul secțiunii POD și
+<hl>=pod</hl> penmtru a începe o secțiunie. Aceasta din urmă nu este
+strict necesar să fie folosită.
 
 Any string that starts with an equal sign <hl>=</hl> as the first character in a row will
 be interpreted as a POD markup, and will start a POD section closed by <hl>=cut</hl>
@@ -151,6 +161,3 @@ your module just by reading the documentation via the
 <h2>Conclusion</h2>
 
 Writing documentation and making it look nice is not that hard in Perl.
-
-
-
