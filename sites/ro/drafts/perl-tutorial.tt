@@ -65,7 +65,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <b>Introducere</b>
 <ol>
 <li><a href="/instalare-perl-windows-linux-mac">Instalează Perl în Windows, Linux și Mac</a></li>
-<li><a href="/perl-editor">Perl Editor</a></li>
+<li><a href="/perl-editor-ide">Perl Editor</a></li>
 <li><a href="/perl-in-linia-de-comanda">Perl în linia de comandă</a></li>
 <li><a href="/documentatia-perl-si-documentatia-modulelor-cpan">Documentația Perl și documentația modulelor CPAN</a></li>
 <li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
@@ -116,7 +116,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <b>Liste și tablouri (arrays)</b>
 <ol>
 <li>Perl foreach loop</li>
-<li><a href="/for-loop-in-perl">The for loop in Perl</a></li>
+<li><a href="/bucla-for-in-perl">Bucla for în Perl</a></li>
 <li>Lists in Perl</li>
 <li>Using Modules</li>
 <li><a href="/perl-arrays">Arrays in Perl</a></li>
