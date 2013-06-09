@@ -32,7 +32,7 @@ print "$dernier\n";  # Baz
 print "@noms\n";     # Foo Bar
 </code>
 
-Dans ce premier exemple, vous allez voir comment, étant donné un tableau de trois éléments,
+Dans ce premier exemple, vous pouvez voir comment, étant donné un tableau de trois éléments,
 la fonction <hl>pop</hl> enlève le dernier élément (celui avec l'indice le plus élevé) de ce tableau et le renvoie.
 
 Dans le cas particulier d'un tableau donné vide, la fonction <hl>pop</hl>
@@ -98,6 +98,6 @@ print "@noms\n"; # Darth Vader Moo Foo Bar
 
 Suivant l'exemple ci-dessus, vous pouvez appeler cette fonction avec en premier argument un tableau (<hl>@noms</hl> ) suivi par :
 <ul>
-<li>une seule valeur scalaire ('Moo') qui devient alors le premier élément du tableau</li>
-<li>un deuxième tableau (<hl>@autres</hl>) dont les éléments seront copiés au début du premier tableau dont les autres éléments seront déplacés vers des indices plus élevés</li>
+<li>soit une seule valeur scalaire ('Moo') qui devient alors le premier élément du tableau</li>
+<li>soit un deuxième tableau (<hl>@autres</hl>) dont les éléments seront copiés au début du premier tableau dont les autres éléments seront déplacés vers des indices plus élevés</li>
 </ul>
