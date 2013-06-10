@@ -12,55 +12,49 @@
 
 =abstract start
 
-Imagine you prepare the shopping list, write on it
+נניח שאתה מכין רשימת קניות וכותב 
 
 <code>
-"2 loaves of bread"
+"2 כיכרות לחם"
 </code>
 
-and hand it over to your significant other who promptly
-throws and invalid type conversion error in your face.
-After all "2" is a string there, not a number.
+ומוסר את הרשימה לבן/בת זוגך ואתה מקבל מייד כתגובה הודעת שגיאה על המרת טיפוס לא חוקית
+אחרי הכל, "2" במקרה זה הוא חלק ממחרוזת, לא מספר.
 
-That would be frustrating, wouldn't it?
+אירוע כזה ודאי מאוד יתסכל אותך.
 
 =abstract end
 
-<h2>Type conversion in Perl</h2>
+<h2>המרת טיפוסי משתנים ב פרל</h2>
 
-In most of the programming languages the type of the operands define how an operator behaves.
-That is, <i>adding</i> two numbers does numerical addition, while <i>adding</i> two strings together concatenates them.
-This feature is called operator overloading.
+ברוב שפות התכנות סוג, או טיפוס, האופרנד - המשתנה או הערך שעליו מבצעים את הפעולה - מגדיר את התנהגות הפעולה.
+כלומר, <i>חיבור </i> שני מספרים היא פעולה חיבור מספרית, בעוד ש <i>חיבור </i> שתי מחחרוזות  משרשר אותן למחרוזת אחת.
+תכונה זו נקראת העמס אופרטורים.
 
-Perl, mostly works in the opposite way.
+פרל לרוב עובדת בשיטה ההפוכה.
 
-In Perl, the operator is the one that defines how the operands are used.
+הפרל, האופרטור (הפעולה) קובע איך ישתמשו באופרנדים.
 
-This means if you are using a numerical operation (e.g. addition) then both values
-are automatically converted to numbers. If you are using a string operation
-(e.g. concatenation) then both values are automatically converted to strings.
+כלומר אם אתה משתמש בפעולה מספרית (למשל חיבור) אז שני הערכים יומרו אוטומטית למספרים אם אתה משתמש בפעולה על מחרוזות (למשל, שירשור מחרוזות) אז שני הערכים יומרו אוטומטית למחרוזות.
 
-C programmers would probably call these conversions <b>casting</b> but this is word is
-not used in the Perl world. Probably because the whole thing is automatic.
+מתכנתי C ודאי יקראו להמרות כאלו  <b>casting</b> אך זו מילה שלא משתמשים בה בעולם הפרל. ככל הנראה כיוון שכל ההמרות הן אוטומטית.
 
-Perl does not care if you write something as number or as string.
-It converts between the two automatically based on the context.
+לפרל לא משנה אם אתה כותב משהו כמספר או כמחרוזת.
+פרל ממירה ביניהן אוטומטית לפי ההקשר.
 
-The <hl>number => string</hl> conversion is easy.
-It is just a matter of imaging as if "" appeared around the number value.
+ההמרה  <hl>מספר  => מחרוזת</hl> היא המרה קלה.
+פשוט צריך לדמיין שהסימן "" נוסף מסביב למספר.
 
-The <hl>string => number</hl> conversion might leave you thinking a bit.
-If the string looks like a number to perl, then it is easy.
-The numerical value is just the same thing. Without the quotes.
+ההמרה  <hl>מחרוזת => מספר </hl> היא המרה שמעוררת קצת תהיות.
+אם המחרוזת נראית כמו מספר, אז זה קל.
+הערך המספרי הוא פשוט אותו דבר רק בלי הגרשיים
 
-If there is any character that stops perl from fully converting the string to a
-number, then perl will use as much as it can on the left hand side of the string for the
-numerical value and disregard the rest.
+אם יש תו כלשהו שמונע מפרל להמיר את המחרוזת למספר, אז פרל תשתמש בכמה שיותר תווים מצד שמאל של המחרוזת בתור הערך המספרי ותתעלם מהיתר.
 
-Let me show a couple of examples:
+נראה מספר דוגמאות:
 
 <code>
-Original   As string   As number
+מקור   כמחרוזת   כמספר
 
   42         "42"        42
   0.3        "0.3"       0.3
@@ -75,13 +69,12 @@ Original   As string   As number
  "23\n"      "23\n"      23
 </code>
 
-In all the cases where the string to number conversion is not perfect,
-except the last one, perl will issue a warning. Well, assuming you turned
-on <hl>use warnings</hl> as recommended.
+בכל המקרים שבהם ההמרה  ממחרוזת למספר אינה מושלמת, פרט למקרה האחרון, פרל תוציא אזהרה. כמובן, בהנחה שהפעלתם את 
+<hl>use warnings</hl> כפי שמומלץ לעשות.
 
-<h2>Example</h2>
+<h2>דוגמה</h2>
 
-Now that you saw that table let's see it in code:
+אחרי שראינו את הטבלה, נראה איך זה נראה בקוד:
 
 <code lang="perl">
 use strict;
@@ -92,48 +85,46 @@ my $y = 3;
 
 </code>
 
-Concatenation converts both values to strings:
+השירשור ממיר את שני הערכים למחרוזות
 
 <code lang="perl">
 print $x . $y;    # 4T3
 </code>
 
-Numerical addition converts both values to numbers:
+פעולת החיבור המספרית ממירה את שני הערכים למספרים
 
 <code lang="perl">
 print $x + $y;  # 7
                 # Argument "4T" isn't numeric in addition (+) at ...
 </code>
 
-<h2>Argument isn't numeric</h2>
+<h2>Argument isn't numeric (הארגומנט אינו מספרי)</h2>
 
-That's the warning you get when perl is trying to convert
-a string to a number and the conversion isn't perfect.
+זו האזהרה שמקבלים כשפרל מנסה להמיר מחרוזת למספר וההמרה אינה מושלמת.
 
-There are a number of other common warnings and errors in Perl.
-For example <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
+לפרל יש עוד מספר אזהרות והודעות שגיאה נפוצות.
+למשל <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
 and <a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
 
-<h2>How to avoid the warning?</h2>
+<h2>איך להמנע מהאזהרות?</h2>
 
-It is nice that perl will warn you (if asked to) when the type conversion was not perfect, but isn't there a function
-like <b>is_number</b> that will check if the given string is really a number?
+טוב שפרל מזהירה (אם מבקשים ממנה) כשההמרת לא הייתה מושלמת, אבל האם אין איזו פונקצי כמו
+  <b>is_number</b> שיכולה לבדוק אם המחרוזת היא אכן מספר?
 
-Yes and no.
+כן ולא.
 
-Perl does not have an <b>is_number</b> function as that would be some kind of commitment that the Perl developers
-know what is a number. Unfortunately the rest of the world cannot agree on this point exactly. There are systems
-where ".2" is accepted as a number, but other system where that is not accepted.
-Even more common that "2." is not accepted, but there are system where that is a perfectly acceptable number.
+לפרל אין פונקציית <b>is_number</b> כיוון שקיומה של הפונקציה מהווה מעין התחייבות שמפתחי פרל יודעים מהו מספר.
+ למרבה הצער בשאר העולם אין ממש הסכמה בסוגיה זו. בחלק מהשיטות ".2" מקובל כמספר, בחלקן הוא לא נחשב למספר.
+אפילו "2." לא מקובל בכל הקשר, ובכל שיטה כמספר.
 
-There are even places where 0xAB is considered a number. A Hexadecimal number.
+יש הקשרים שבהם אפילו 0xAB נחשב למספר מספר הקסדצימלי, בסיס 16.
 
-So there is no <b>is_number</b> function, but there is a less committing functions called <b>looks_like_number</b>.
+לכן הפונקציה <b>is_number</b> אבל יש פונקציה קצת פחות מתחייבת שנקראת <b>looks_like_number</b>. נראה כמו מספר
 
-That's exactly what you think it is. It will check if the given string looks like a number for perl.
+וזה בדיוק כמו שזה נראה הפונקציה אם מחרוזת נתונה נראית לפרל כמו מספר.
 
-It is provided by the <a href="http://perldoc.perl.org/Scalar/Util.html">Scalar::Util</a> module
-and you can use it like this:
+הפונקציה היא חלק המודול <a href="http://perldoc.perl.org/Scalar/Util.html">Scalar::Util</a> 
+וניתן להשתמש בה כך:
 
 <code lang="perl">
 use strict;
@@ -153,6 +144,6 @@ if (looks_like_number($loaves)) {
 </code>
 
 
-Don't forge the milk too!
+ואל תשכח גם את החלב!
 
 
