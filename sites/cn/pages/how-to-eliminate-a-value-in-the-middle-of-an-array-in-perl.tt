@@ -1,5 +1,5 @@
-=title 在Perl中怎样从一个数组中删除某个值？
-=timestamp 2013-05-21T15:15:53
+=title 怎样从数组中删除某个值？
+=timestamp 2013-06-10T17:47:12
 =indexes undef, splice, array, delete
 =status show
 =original how-to-eliminate-a-value-in-the-middle-of-an-array-in-perl
@@ -14,7 +14,7 @@
 
 =abstract start
 
-回答一下之前关于<a href="/undef-and-defined-in-perl">undef</a>的文章中其中一位读者的疑问：
+先回答之前有位读者在<a href="/undef-and-defined-in-perl">undef</a>文章的提问：
 
 在Perl中怎样从一个数组中删除某个值？
 
@@ -22,7 +22,7 @@
 
 =abstract end
 
-首先来看一下如何把数组的元素赋值为<hl>undef</hl>，之后再了解如何从数组中删除元素。
+首先来看怎样把数组的元素赋值为<hl>undef</hl>，之后再了解如何从数组中删除元素。
 
 从下面的代码开始：
 
@@ -32,7 +32,7 @@ my @dwarfs = qw(Doc Grumpy Happy Sleepy Sneezy Dopey Bashful);
 print Dumper \@dwarfs;
 </code>
 
-当使用<hl>Data::Dumper</hl>打印是，得到如下输出：
+使用<hl>Data::Dumper</hl>打印时，得到如下输出：
 
 <code>
 $VAR1 = [
@@ -84,7 +84,7 @@ undef $dwarfs[3];
 print Dumper \@dwarfs;
 </code>
 
-为了达到目的，<hl>$dwarfs[3] = undef;</hl> 和 <hl>undef $dwarfs[3];</hl>的作用是一样的，它们都能把值赋成<hl>undef</hl>。
+所以，<hl>$dwarfs[3] = undef;</hl> 和 <hl>undef $dwarfs[3];</hl>的作用是一样的，它们都能把值赋成<hl>undef</hl>。
 
 
 <h2>使用splice从数组移除元素</h2>
