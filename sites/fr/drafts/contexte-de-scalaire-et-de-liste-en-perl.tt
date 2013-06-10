@@ -218,10 +218,8 @@ In the second assignment <hl>my $y   = @words;</hl> we assigned <b>directly</b> 
 a scalar variable. That created SCALAR context on the right hand side. An array in
 SCALAR context returns the number of elements in it.
 
-<!--
 This will be very important when you look at
-<a href="http://szabgab.com/subroutines-and-functions-in-perl.html">passing parameters to functions</a>
--->
+<a href="http://perlmaven.com/subroutines-and-functions-in-perl">passing parameters to functions</a>
 
 <h2>Forcing SCALAR context</h2>
 
@@ -289,5 +287,4 @@ creates SCALAR context on both sides. An array will return its size in SCALAR co
 Adding 0 to it does not change the number, so the above expression returns the size of the array.
 
 I'd recommend writing the slightly longer but clearer way using the <hl>scalar</hl> function.
-
 

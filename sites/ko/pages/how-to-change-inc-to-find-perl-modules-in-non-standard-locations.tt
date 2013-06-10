@@ -2,7 +2,7 @@
 =timestamp 2013-06-04T15:30:00
 =indexes @INC, use, PERLLIB, PERL5LIB, lib, -I
 =status show
-=original how-to-change-inc-to-find-perl-modules-in-non-standard-location
+=original how-to-change-inc-to-find-perl-modules-in-non-standard-locations
 =books beginner_book
 =author szabgab
 =translator johnkang

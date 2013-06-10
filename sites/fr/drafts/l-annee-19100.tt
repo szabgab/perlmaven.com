@@ -175,5 +175,3 @@ and returns either a human readable representation of time, or this other, 9-num
 This is a general feature of Perl 5. A very important feature, and we are going to learn about it a lot
 more. The important thing here is to understand that in many situations Perl is <b>context sensitive</b>.
 
-
-

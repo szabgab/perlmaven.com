@@ -1,9 +1,9 @@
-=פרל (Perl) על שורת הפקודה
+=title פרל (Perl) על שורת הפקודה
 =timestamp 2013-06-06T14:45:56
 =indexes -v, -e, -p, -i
 =status show
-=books beginner_book
 =original perl-on-the-command-line
+=books beginner_book
 =author szabgab
 =translator bruck
 =index 1

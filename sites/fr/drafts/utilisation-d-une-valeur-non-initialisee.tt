@@ -32,7 +32,6 @@ there is no reason to avoid it. In other words:
 
 Always <hl>use warnings;</hl>!
 
-
 Let's go back to the actual warning I wanted to explain.
 
 <h2>A quick explanation</h2>
@@ -129,7 +128,6 @@ In order to avoid this you can turn off the buffering of STDOUT.
 This is done by the following code: <hl>$| = 1;</hl>
 at the beginning of the script.
 
-
 <code lang="perl">
 use warnings;
 use strict;
@@ -178,7 +176,4 @@ It is there only to make this example a bit more realistic.)
 
 There are of course cases when I need to declare a variable inside an if block, but not always.
 When I do that by mistake it is painful to find the bug.
-
-
-
 
