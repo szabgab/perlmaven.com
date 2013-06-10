@@ -1,9 +1,11 @@
-=title The for loop in Perl
-=timestamp 2013-03-26T08:46:13
-=indexes for, foreach, loop, infinite loop
+=title La boucle for en Perl
+=timestamp 2013-06-15T08:46:13
+=indexes for, foreach, boucle, boucle infinie
 =status show
+=original for-loop-in-perl
 =books beginner_book
 =author szabgab
+=translator oval
 =index 1
 =archive 1
 =feed 1
@@ -12,74 +14,83 @@
 
 =abstract start
 
-In this part of the <a href="/perl-tutorial">Perl Tutorial</a> we are going to talk
-about the <b>for loop in Perl</b>. Some people also call it the <b>C-style for loop</b>,
-but this construct is actually available in many programming languages.
+Dans cet article du <a href="/perl-tutorial">tutoriel Perl</a>, nous allons parler de la boucle <hl>for</hl> en Perl.
+Certaines personnes l'appellent également <b>la boucle <i>for</i> de style C</b>, mais
+cette construction est en fait disponible dans de nombreux langages de programmation.
 
 =abstract end
 
-<h2>for in Perl</h2>
+<h2>Le mot-clé for</h2>
 
-The <b>for</b> keyword in Perl can work in two different ways.
-It can work just as a <b>foreach</b> loop works and it can act
-as a 3-part C-style for loop. It is called C-style though
-it is available in many languages.
+Le <b>mot-clé for</b> en Perl peut fonctionner de deux manières différentes :
+<ul>
+<li>exactement comme une boucle <hl>foreach</hl></li>
+<li>comme la boucle <hl>for</hl> de style C, qui est composée de trois parties</li>
+</ul>
 
-I'll describe how this works although I prefer to write the <hl>foreach</hl>
-style loop as described in the section about <a href="/perl-arrays">perl arrays</a>.
+Perl détermine l'utilisation que vous avez en tête.
 
-The two keywords <hl>for</hl> and <hl>foreach</hl> can be used as synonyms.
-Perl will work out which meaning you had in mind.
+Je vais décrire les deux fonctionnements, même si je préfère utiliser la boucle de style <hl>foreach</hl>,
+comme décrit dans l'article <a href="http://perlmaven.com/perl-arrays">perl arrays (EN)</a>.
 
-The <b>C-style for loop</b> has 3 parts in the controlling section.
-In general it looks like this code, though you can omit any of
-the 4 parts.
+Les deux mots-clés <hl>for</hl> et <hl>foreach</hl> peuvent être utilisés comme des synonymes, voir la section <hl>foreach</hl> ci-dessous.
+
+<b>La boucle <i>for</i> de style C</b> est composée de 3 parties dans sa section de contrôle, et d'une quatrième qui est un bloc de code.
+En général, elle ressemble au code ci-dessous, bien qu'il soit possible d'omettre l'une de ces 4 parties :
 
 <code lang="perl">
-for (INITIALIZE; TEST; STEP) {
-  BODY;
+for (<INITIALISATION> ; <CONDITION D'EXÉCUTION> ; <INCRÉMENTATION>) {
+  <CORPS>
 }
 </code>
 
-As an example see this code:
+voir le code ci-dessous à titre d'exemple :
 
 <code lang="perl">
-for (my $i=0; $i <= 9; $i++) {
+for (my $i = 0; $i <= 9; $i++) {
    print "$i\n";
 }
 </code>
 
-The INITIALIZE part will be executed once when the execution reaches that point.
+La partie INITIALISATION sera exécutée une et une fois lorsque l'exécution atteint ce point.
 
-Then, immediately after that the TEST part is executed. If this is false,
-the whole loop is skipped. If the TEST part is true then the BODY is executed followed by
-the STEP part.
+Puis, immédiatement après INITIALISATION, la partie CONDITION D'EXÉCUTION est exécutée.
+Si cette condition est fausse, alors la quatrième partie { CORPS } est complètement ignorée.
+Si cette condition est vraie, alors :
+<ul>
+<li>la quatrième partie { CORPS } est exécutée</li>
+<li>la troisième partie INCRÉMENTATION est exécutée juste après</li>
+</ul>
 
-(For the real meaning of TRUE an FALSE, check the <a href="/boolean-values-in-perl">boolean values in Perl</a>.)
+(Pour la signification exacte de VRAI et FAUX en Perl, allez lire l'article <a href="/valeurs-booleennes-en-perl">Les valeurs booléennes en Perl</a>)
 
-Then comes the TEST again and it goes on and on, as long as the TEST executes to some true value.
-So it looks like this:
+Puis revient la partie <CONDITION D'EXÉCUTION>. La boucle continue encore et encore, tant que la <CONDITION D'EXÉCUTION> retourne une valeur vraie.
+
+Donc, le déroulement de la boucle ressemble à ceci :
 
 <code>
-INITIALIZE
+<INITIALISATION>
 
-TEST
-BODY
-STEP
+<CONDITION D'EXÉCUTION> # vrai
+    <CORPS>
+    <INCRÉMENTATION>
 
-TEST
-BODY
-STEP
+<CONDITION D'EXÉCUTION> # vrai
+    <CORPS>
+    <INCRÉMENTATION>
 
 ...
 
-TEST
+<CONDITION D'EXÉCUTION> # faux
+
+...
+
 </code>
 
-<h2>foreach</h2>
+<h2>Le mot-clé foreach</h2>
 
-The above loop - going from 0 to 9 can be also written in a <b>foreach loop</b>
-and I think the intention is much clearer:
+La boucle ci-dessus - allant de 0 à 9 - peut être écrit dans une boucle <hl>foreach</hl> comme
+ci-dessous et je pense que l'intention est beaucoup plus claire :
 
 <code lang="perl">
 foreach my $i (0..9) {
@@ -87,8 +98,8 @@ foreach my $i (0..9) {
 }
 </code>
 
-As I wrote the two are actually synonyms so some people use the <hl>for</hl> keyword
-but write <b>foreach style loop</b> like this:
+Comme je l'ai indiqué dans la section précédente, <hl>for</hl> et <hl>foreach</hl> sont en fait synonymes,
+de sorte que certaines personnes utilisent <hl>for</hl> pour écrire une boucle  de type <hl>foreach</hl> comme ceci :
 
 <code lang="perl">
 for my $i (0..9) {
@@ -96,23 +107,22 @@ for my $i (0..9) {
 }
 </code>
 
-<h2>The parts of the perl for loop</h2>
+<h2>Les parties de la boucle pour Perl</h2>
 
-INITIALIZE is of course to initialize some variable. It is executed exactly once.
+INITIALISATION est bien sûr pour initialiser une variable. Elle est exécutée une et une seule fois.
 
-TEST is some kind of boolean expression that tests if the loop should stop or if it should go on.
-It is executed at least once. TEST is executed one more time than either BODY or STEP are.
+CONDITION D'EXÉCUTION est une expression booléenne qui teste si la boucle doit s'arrêter ou doit continuer.
+Elle est exécutée au moins une fois. Elle est exécutée une fois de plus que CORPS et INCRÉMENTATION le sont.
 
-BODY is a set of statements, usually that's what we want to do repeated
-times though in some cases an empty BODY can also makes sense.
-Well, probably all those cases can be rewritten in some nice way.
+CORPS est un ensemble d'instructions que nous voulons faire répéter autant de fois que CONDITION D'EXÉCUTION est vraie.
+Dans certains cas, CORPS vide peut aussi être logique. En fait, ces cas devraient être réécrits d'une manière plus compréhensible sur le long terme.
 
-STEP is another set of action usually used to increment or decrement some kind of an index.
-This too can be left empty if, for example, we make that change inside the BODY.
+INCRÉMENTATION est un autre ensemble d'instructions réduit généralement afin d'augmenter ou de diminuer un variable servant d'index.
+Elle peut aussi être laissée vide si, par exemple, nous faisons ce changement à l'intérieur de CORPS.
 
-<h2>Infinite loop</h2>
+<h2>La boucle infinie</h2>
 
-You can write an infinite loop using the <b>for loop</b>:
+Vous pouvez écrire une boucle infinie en utilisant la boucle <hl>for</hl> :
 
 <code lang="perl">
 for (;;) {
@@ -120,7 +130,7 @@ for (;;) {
 }
 </code>
 
-People usually write it with a <hl>while</hl> statement such as:
+Habituellement, les gens l'écrivent avec une instruction <hl>while</hl> comme ci-dessous :
 
 <code lang="perl">
 while (1) {
@@ -128,11 +138,8 @@ while (1) {
 }
 </code>
 
-It is described in the part
-about the <a href="/while-loop">while loop in perl</a>.
+Elle est décrite dans l'article <a href="http://perlmaven.com/while-loop">la boucle</a> while en perl.
 
 <h2>perldoc</h2>
 
-You can find the official description of the for-loop in the
-<b>perlsyn</b> section of the
-<a href="http://perldoc.perl.org/perlsyn.html#For-Loops">Perl documentation</a>.
+Vous pouvez trouver la description officielle de la boucle <hl>for</hl> dans <a href="http://perldoc.perl.org/perlsyn.html#For-Loops">la section <b>perlsyn</b> de la documentation Perl</a>.

@@ -95,7 +95,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <b>Les listes et les tableaux</b>
 <ol>
 <li>La boucle foreach en Perl</li>
-<li><a href="http://perlmaven.com/for-loop-in-perl">La boucle for en Perl</a> (EN)</li>
+<li><a href="/la-boucle-for-en-perl">La boucle for en Perl</a></li>
 <li>Les listes en Perl</li>
 <li>Utiliser des modules</li>
 <li><a href="http://perlmaven.com/perl-arrays">Les tableaux en Perl</a> (EN)</li>
