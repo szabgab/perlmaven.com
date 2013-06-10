@@ -130,7 +130,7 @@ this is the place of <hl>$matrix[1][0]</hl> where we have not assigned a value. 
 
 <h2>Two dimensional array or what?</h2>
 
-As you can see this resembles a <b>two dimensional array</h2>, but its shape is not rectangular, as you
+As you can see this resembles a <b>two dimensional array</b>, but its shape is not rectangular, as you
 would expect from a matrix. The first row has only one element while the second row has 3. (even if one of them is undef).
 
 In a similar way there could be elements in the <hl>@matrix</hl> array that have not other dimension. For example
