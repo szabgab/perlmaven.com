@@ -67,7 +67,7 @@ The first one is an array. The second one is an element of an array and the thir
 scalar. If you declare an array such as <hl>@matrix</hl> you can automatically use <hl>$matrix[0]</hl> to access
 the first element, but if you'd also like to use <hl>$matrix</hl> you'd need to declare that separately.
 
-That leads us to warning. Whyle Perl is ok with you having the exact same variable name for an array and for
+That leads us to warning. While Perl is OK with you having the exact same variable name for an array and for
 a scalar, it is strongly recommended you don't have them in the same code. It can just confuse the reader.
 
 After this short detour, let's go back to our example:
@@ -85,7 +85,7 @@ print "$matrix[1][1]\n";    # one-one
 The first line prints <b>ARRAY(0x814dd90)</b>. As I mentioned, Perl does not have multi-dimensional arrays.
 What you see here is that the first element of the <hl>@matrix</hl> array is a <b>reference</b> to an internal,
 so-called anonymous array that holds the actual values. The <b>ARRAY(0x814dd90)</b> is the address of that
-internal address in the memory. You can't do much with this, except of knowing that you probbaly need to
+internal address in the memory. You can't do much with this, except of knowing that you probably need to
 "de-reference" that address. In our case that de-referencing is done by the addition of another
 pair of square brackets.
 
@@ -130,7 +130,7 @@ this is the place of <hl>$matrix[1][0]</hl> where we have not assigned a value. 
 
 <h2>Two dimensional array or what?</h2>
 
-As you can see this resembles a <b>two dimensional array</h2>, but its shape is not rectangular, as you
+As you can see this resembles a <b>two dimensional array</b>, but its shape is not rectangular, as you
 would expect from a matrix. The first row has only one element while the second row has 3. (even if one of them is undef).
 
 In a similar way there could be elements in the <hl>@matrix</hl> array that have not other dimension. For example
@@ -157,7 +157,7 @@ $VAR1 = [
 </code>
 
 
-Here the outer array has 3 elements. The first two arre the internal arrays, and the 3rd one is
+Here the outer array has 3 elements. The first two are the internal arrays, and the 3rd one is
 a simple scalar.
 
 So one of the "rows" in the "matrix" does not even have a dimension.
