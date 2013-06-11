@@ -138,7 +138,7 @@ while (1) {
 }
 </code>
 
-Elle est décrite dans l'article <a href="http://perlmaven.com/while-loop">la boucle</a> while en perl.
+Elle est décrite dans l'article <a href="/la-boucle-while-en-perl">la boucle while en Perl</a>.
 
 <h2>perldoc</h2>
 
