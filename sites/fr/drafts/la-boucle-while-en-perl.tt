@@ -1,9 +1,11 @@
-=title while loop
-=timestamp 2013-03-12T12:45:51
-=indexes while, while (1), loop, infinite loop, last
+=title La boucle while en Perl
+=timestamp 2013-06-15T12:45:51
+=indexes boucle, boucle infinie, while, last
 =status show
+=original while-loop
 =books beginner_book
 =author szabgab
+=translator oval
 =index 1
 =archive 1
 =feed 1
@@ -12,79 +14,88 @@
 
 =abstract start
 
-In this episode of the <a href="/perl-tutorial">Perl tutorial</a> we are going to see <b>how does the while loop work in Perl</b>.
+Dans cet article du <a href="/perl-tutorial">tutoriel Perl</a>, nous allons voir comment fonctionne la boucle <hl>while</hl> en Perl.
 
 =abstract end
 
+La boucle <hl>while</hl> a :
+<ul>
+<li>une condition</li>
+<li>un bloc de code enveloppé dans des accolades</li>
+</ul>
+
 <code lang="perl">
 use strict;
 use warnings;
 use 5.010;
 
-my $counter = 10;
+my $compteur = 10;
 
-while ($counter > 0) {
-  say $counter;
-  $counter -= 2;
+while ($compteur > 0) {
+  say $compteur;
+  $compteur -= 2;
 }
-say 'done';
+say 'fin';
 </code>
 
-The <hl>while</hl> loop has a condition, in our case checking if the variable $counter is larger than 0,
-and then a block of code wrapped in curly braces.
+Dans l'exemple ci-dessus :
+<ul>
+<li>cette condition vérifie si la variable $compteur est supérieure à 0</li>
+<li>ce bloc de code affiche la variable $compteur et la décrémente de 2</li>
+</ul>
 
-When the execution first reaches the beginning of the while loop it checks if the condition is <a href="/boolean-values-in-perl">true or
-false</a>. If it is <hl>FALSE</hl> the block is skipped and the next statement, in our case printing 'done' is executed.
+Lorsque l'exécution atteint d'abord le début de la boucle <hl>while</hl>,
+il est vérifié si la condition de ce <hl>while</hl> est <a href="/valeurs-boolennes-en-perl">vraie ou fausse</a>.
 
-If the condition of the <hl>while</hl> is <hl>TRUE</hl>, the block gets executed, and then the execution goes back
-to the condition again. It is evaluated again. If it is false the block is skipped and the 'done'
-is printed. If it is true the block gets executed and we are back to the condition ...
+Si la condition est fausse, le bloc est ignoré et la déclaration suivante, dans notre cas l'affichage de «fin», est exécutée.
 
-This goes on as long as the condition is true or in sort-of English:
+Si la condition est vraie, le bloc est exécuté, puis l'exécution remonte au niveau de la condition afin de l'évaluer de nouveau.
+Si la condition est fausse, le bloc est ignoré et «fin», est affiché.
+Si la condition est vraie, le bloc est exécuté de nouveau et nous remontons à la condition de nouveau.
 
-<hl>while (the-condition-is-true) { do-something }</hl>
+Et ainsi de suite tant que la condition est vraie, ce qui pourrait s'écrire :
 
-<h2>Infinite loop</h2>
+<hl>while (la-condition-est-vraie) { fait-quelque-chose }</hl>
 
-In the above code we always decremented the variable so we knew that at one point the condition will become false.
-If for some reason the condition never becomes false you get an <hl>infinite loop</hl>. Your program will be stuck in a
-very small block it can never escape.
+<h2>La boucle infinie</h2>
 
-For example if we had forgotten to decrement the <hl>$counter</hl>, or if we were incrementing
-it while still checking for a lower boundary.
+Dans le code ci-dessus, nous avons toujours décrémenté la variable, donc nous savions qu'à un moment donné la condition deviendrait fausse.
+Si pour une raison quelconque la condition ne devient jamais fausse, vous obtenez une boucle infinie.
+Votre programme sera coincé dans le bloc de code de la boucle duquel il ne peut jamais s'échapper.
 
-If this happens by mistake, that's a bug.
+Par exemple, cela se produirait si nous avions oublié de décrémenter la variable $compteur, ou 
+si nous étions entrain de l'incrémenter bien qu'en vérifiant toujours une limite inférieure.
 
-On the other hand, in some cases using an infinite loop <b>on purpose</b> can make our program more simple to write, and
-easier to read. We love readable code!
-If we would like to have an infinite loop we can use a condition that's always true.
+Si cela arrive par erreur, c'est un bug.
 
-So we can write:
+Sinon, dans le cas contraire, si cela arrive <b>en connaissance de cause</b>, c'est pour utiliser une boucle infinie qui rend notre programme plus simple à écrire et plus facile à lire. Nous aimons le code lisible !
+Si nous tenons à avoir une boucle infinie, nous pouvons utiliser une condition qui est toujours vraie.
+
+Ainsi, nous pouvons écrire :
 
 <code lang="perl">
 while (42) {
-  # here we do something
+  # ici nous faisons quelque chose
 }
 </code>
 
-Of course people lacking the
-<a href="http://en.wikipedia.org/wiki/Answer_to_Life,_the_Universe,_and_Everything#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29">proper cultural reference</a>
-will wonder why 42 so the more generally accepted, albeit slightly boring way is to always use the number 1 in infinite loops.
+Bien sûr, les gens qui n'ont pas <a href="http://fr.wikipedia.org/wiki/La_grande_question_sur_la_vie,_l'univers_et_le_reste#La_recherche_de_la_r.C3.A9ponse_ultime">la référence culturelle appropriée</a> vont se demander pourquoi 42. Ainsi, la condition - pour obtenir une boucle infinie - la plus généralement acceptée,
+mais bien plus ennuyeuse, est le nombre 1.
 
 <code lang="perl">
 while (1) {
-  # here we do something
+  # ici nous faisons quelque chose
 }
 </code>
 
-Naturally, seeing that the code has no escape from this loop, one will wonder how can that program ever end without
-killing it from the outside?
+Naturellement, étant donné que le code ne peut pas sortir de cette boucle,
+nous pouvons nous demander comment ce programme peut finir sans l'interrompre de l'extérieur.
 
-For that, there are a number of ways.
+Pour cela, il y a plusieurs possibilités qui s'offrent à nous.
 
-One of them is calling the <hl>last</hl> statement inside the while loop.
-That will skip the rest of the block and won't check the condition again.
-Effectively ending the loop. People usually put it in some kind of a condition.
+L'une d'elles est d'utiliser, à l'intérieur de cette boucle <hl>while</hl>, le mot-clé <hl>last</hl> qui est une instruction complète à lui tout seul.
+Cette utilisation va forcer à passer outre le reste du bloc et à ne pas vérifier la condition, mettant ainsi fin à la boucle.
+Habituellement, une condition doit être vérifiée pour l'utiliser.
 
 <code lang="perl">
 use strict;
@@ -92,36 +103,32 @@ use warnings;
 use 5.010;
 
 while (1) {
-  print "Which programming language are you learning now? ";
-  my $name = <STDIN>;
-  chomp $name;
-  if ($name eq 'Perl') {
+  print "Quel langage de programmation êtes-vous entrain d'apprendre à l'instant même ? ";
+  my $nom = <STDIN>;
+  chomp $nom;
+  if ($nom eq 'Perl') {
     last;
   }
-  say 'Wrong! Try again!';
+  say 'À côté de la plaque ! Essayez de nouveau !';
 }
-say 'done';
+say 'Bien !';
 </code>
 
-In this example we ask the user a question and hope he will be able to
-answer it using the correct case. He will be stuck with this question
-forever if he cannot type 'Perl'.
+Dans cet exemple, nous posons une question à l'utilisateur et
+nous espérons qu'il sera en mesure de donner la bonne réponse.
+Il sera coincé avec cette question pour toujours s'il ne tape pas «Perl».
 
-So the conversation might go on like this:
+Alors, la conversation pourrait ressembler à cela :
 
 <code>
-Which programming language are you learning now?
->  Java
-Wrong! Try again!
-Which programming language are you learning now?
->  PHP
-Wrong! Try again!
-Which programming language are you learning now?
->  Perl
-done
+Quel langage de programmation êtes-vous entrain d'apprendre à l'instant même ? Java
+À côté de la plaque ! Essayez de nouveau !
+Quel langage de programmation êtes-vous entrain d'apprendre à l'instant même ? PHP
+À côté de la plaque ! Essayez de nouveau !
+Quel langage de programmation êtes-vous entrain d'apprendre à l'instant même ? Perl
+Bien !
 </code>
 
-As you can see once the user typed the correct answer, <hl>last</hl> was called, the rest of the block
-including <hl>say 'Wrong! Try again!';</hl> was skipped and the execution continued after the
-<hl>while loop</hl>.
-
+Comme vous pouvez le voir, une fois que l'utilisateur a tapé la bonne réponse,
+<hl>last</hl> est appelé, et donc le reste du bloc affichant «À côté de la plaque ! Essayez de nouveau !»
+a été ignoré et l'exécution s'est poursuivie après la boucle <hl>while</hl>.
