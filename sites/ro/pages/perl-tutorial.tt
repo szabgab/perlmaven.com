@@ -105,8 +105,8 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>die, warn and exit</li>
 <li><a href="/crearea-fisierelor-cu-perl">Crearea fișierelor cu Perl</a></li>
 <li><a href="/adaugare-continut-la-fisiere">Adăugare conținut la fișiere</a></li>
-<li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
-<li><a href="/open-files-in-the-old-way">Don't open files in the old way</a></li>
+<li><a href="http://perlmaven.com/open-and-read-from-files">Open and read from files using Perl</a></li>
+<li><a href="http://perlmaven.com/open-files-in-the-old-way">Don't open files in the old way</a></li>
 <li>Binary mode, dealing with Unicode</li>
 <li>Reading from a binary file, read, eof</li>
 <li>tell, seek</li>
@@ -160,7 +160,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>Regex: Anchors</li>
 <li>Regex options and modifiers</li>
 <li>Substitutions (search and replace)</li>
-<li><a href="/trim">trim - remove leading and trailing spaces</a></li>
+<li><a href="http://perlmaven.com/trim">trim - remove leading and trailing spaces</a></li>
 </ol>
 
 <b>Funcțiuni relative la Perl și Shell</b>
