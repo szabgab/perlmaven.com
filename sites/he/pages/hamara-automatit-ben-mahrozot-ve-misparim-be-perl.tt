@@ -1,5 +1,5 @@
 =title המרה אוטומטית בין מחרוזות ומספרים בפרל
-=timestamp 2013-05-11T22:00:00
+=timestamp 2013-06-11T22:00:00
 =indexes is_number, looks_like_number, Scalar::Util, casting, type conversion
 =status show
 =original automatic-value-conversion-or-casting-in-perl
