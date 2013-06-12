@@ -168,7 +168,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 
 <b>Quelques exemples d'utilisation de Perl</b>
 <ol>
-<li><a href="http://perlmaven.com/how-to-replace-a-string-in-a-file-with-perl">Comment remplacer une chaîne dans un fichier avec Perl ? (slurp)</a> (EN)</li>
+<li><a href="/comment-remplacer-une-chaine-de-caracteres-dans-un-fichier-avec-perl">Comment remplacer une chaîne dans un fichier avec Perl ? (<i>slurp</i>)</a></li>
 <li>Lire des fichiers Excel avec Perl</li>
 <li>Créer des fichiers Excel avec Perl</li>
 <li>Envoyer des courriels avec Perl</li>
