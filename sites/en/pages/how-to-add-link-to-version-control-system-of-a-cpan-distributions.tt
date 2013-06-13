@@ -3,9 +3,7 @@
 =indexes Perl, Perl 5, CPAN, Git, Github, SVN, Subversion, VCS, META, ExtUtils::MakeMaker, Module::Build, Module::Install, Dist::Zilla, CPAN::Meta::Spec
 =status show
 =author szabgab
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
