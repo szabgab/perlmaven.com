@@ -251,16 +251,19 @@ This is a recommended workflow for them.
 Let's say there are two people involved one has a username
 'translator' the other one username 'reviewer' on Github
 
-translator) fork      https://github.com/szabgab/perl5maven.com
-            creating  https://github.com/translator/perl5maven.com
-reviewer)   fork      https://github.com/szabgab/perl5maven.com
-            creating  https://github.com/reviewer/perl5maven.com
+* translator:
+     fork      https://github.com/szabgab/perl5maven.com
+     creating  https://github.com/translator/perl5maven.com
+
+* reviewer:
+     fork      https://github.com/szabgab/perl5maven.com
+     creating  https://github.com/reviewer/perl5maven.com
 
 
-translator) do the translation, put the file in the sites/CC/drafts/
-            folder and push it to Github
+* translator: 
+     do the translation, put the file in the sites/CC/drafts/ folder and push it to Github
 
-reviewer)
+* reviewer:
     $ git remote add joe_the_translator git://github.com/translator/perl5maven.com.git
     $ git fetch joe_the_translator
     $ git merge joe_the_translator/main
@@ -268,7 +271,7 @@ reviewer)
 Now the reviewer also has the file in her drafts/ folder locally
 The reviewer can make changes locally, commit them and push them to Github.
 
-translator)
+* translator:
     $ git remote add sally_the_reviewer git://github.com/reviewer/perl5maven.com.git
     $ git fetch sally_the_reviewer
     $ git merge sally_the_reviewer/main
@@ -281,7 +284,7 @@ be done once.
 
 Once the translation is ready. The file can be moved from drafts/ to pages/
 
-  $ git mv sites/CC/drafts/article.tt sites/CC/pages/article.tt
+    $ git mv sites/CC/drafts/article.tt sites/CC/pages/article.tt
 
 pushed it to Github and a merge requets can be sent.
 
