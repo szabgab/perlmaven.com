@@ -70,6 +70,7 @@
     <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
     <li><a href="/running-external-programs-from-perl">使用Perl的system运行外部程序</a></li>
     <li><a href="/how-to-eliminate-a-value-in-the-middle-of-an-array-in-perl">怎样从数组中删除某个值？</a></li>    
+    <li><a href="/how-to-capture-and-save-warnings-in-perl">在Perl里如何捕获并保存警告</a></li>    
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
