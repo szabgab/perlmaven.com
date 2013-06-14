@@ -212,7 +212,8 @@ On Github 'fork' the https://github.com/szabgab/perl5maven.com repository
 It will create another repository https://github.com/USERNAME/perl5maven.com
 
 clone it to your desktop:
-$ git clone git@github.com:USERNAME/perl5maven.com.git
+
+    $ git clone git@github.com:USERNAME/perl5maven.com.git
 
 It will create a directory called perl5maven.com inside all the source files.
 There should be one called sites/CC  (where CC is your language code
@@ -220,6 +221,7 @@ based on this list: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 more or less).  If there is no such directory ask Gabor to create one.
 
 Initially you will need to know about
+
     $ git add  filename
     $ git commit -m "message"
     $ git push
@@ -253,18 +255,18 @@ Let's say there are two people involved one has a username
 
 * translator:
 
-     fork      https://github.com/szabgab/perl5maven.com
-     creating  https://github.com/translator/perl5maven.com
+    fork      https://github.com/szabgab/perl5maven.com
+    creating  https://github.com/translator/perl5maven.com
 
 * reviewer:
 
-     fork      https://github.com/szabgab/perl5maven.com
-     creating  https://github.com/reviewer/perl5maven.com
+    fork      https://github.com/szabgab/perl5maven.com
+    creating  https://github.com/reviewer/perl5maven.com
 
 
-* translator:
+* translator
 
-     do the translation, put the file in the sites/CC/drafts/ folder and push it to Github
+    do the translation, put the file in the sites/CC/drafts/ folder and push it to Github
 
 * reviewer:
 
