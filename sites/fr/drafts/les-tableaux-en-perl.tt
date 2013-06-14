@@ -1,9 +1,11 @@
-=title Perl Arrays
-=timestamp 2013-03-23T20:45:02
-=indexes @, array, arrays, length, size, foreach, Data::Dumper, scalar, push, pop, shift
+=title Les tableaux en Perl
+=timestamp 2013-06-15:45:02
+=indexes tableau, tableaux, longueur, taille, @, foreach, Data::Dumper, scalar, push, pop, shift
 =status show
+=original perl-arrays
 =books beginner_book
 =author szabgab
+=translator oval
 =index 1
 =archive 1
 =feed 1
@@ -12,17 +14,18 @@
 
 =abstract start
 
-In this episode of the <a href="/perl-tutorial">Perl Tutorial</a> we are going to learn about <b>arrays in Perl</b>.
-This is an overview of how arrays work in Perl. We'll see more detailed explanations later.
+Dans cet article du <a href="/perl-tutorial">tutoriel Perl</a>, nous allons en apprendre davantage sur les tableaux en Perl.
+Ceci est un aperçu de la façon dont fonctionnent les tableaux en Perl. Nous donnerons des explications plus détaillées dans de futurs articles.
 
-Variable names of arrays in Perl start with the at mark: <hl>@</hl>.
+Les noms de variables des tableaux en Perl sont préfixés par le symbole <hl>@</hl> appelé dans le jargon Perl un <i>sigil</i>.
+(mnémonique : <hl>@</hl> représente le premier a de <i>array</i>).
 
-Due to our insistance on using <hl>strict</hl> you have to declare these variables using the <hl>my</hl> keyword
-before the first usage.
+Comme nous encourageons systématiquement l'utilisation de <hl>strict</hl>,
+vous devez déclarer ces variables en utilisant le mot-clé <hl>my</hl> avant la première assignation.
 
 =abstract end
 
-Remember, all the examples below assume your file starts with
+Rappelez-vous ! Tous les exemples ci-dessous supposent que votre fichier commence par :
 
 <code lang="perl">
 use strict;
@@ -30,47 +33,50 @@ use warnings;
 use 5.010;
 </code>
 
-Declare an array:
+<h2>Initialisation d'un tableau Perl</h2>
+
+Déclarer un tableau tout simplement :
 
 <code lang="perl">
-my @names;
+my @noms;
 </code>
 
-Declare and assign values:
+Déclarer un tableau tout en lui assignant des valeurs :
 
 <code lang="perl">
-my @names = ("Foo", "Bar", "Baz");
+my @noms = ("Foo", "Bar", "Baz");
 </code>
 
-<h2>Debugging of an array</h2>
+<h2>Débogage d'un tableau Perl</h2>
 
 <code lang="perl">
 use Data::Dumper qw(Dumper);
 
-my @names = ("Foo", "Bar", "Baz");
-say Dumper \@names;
+my @noms = ("Foo", "Bar", "Baz");
+
+say Dumper \@noms;
 </code>
 
-The output is:
+Le résultat est le suivant :
 
 <code>
 $VAR1 = [
-        'Foo',
-        'Bar',
-        'Baz'
-      ];
+    'Foo',
+    'Bar',
+    'Baz'
+];
 </code>
 
-<h2>foreach loop and perl arrays</h2>
+<h2>Le mot-clé foreach pour parcourir un tableau Perl</h2>
 
 <code lang="perl">
-my @names = ("Foo", "Bar", "Baz");
-foreach my $n (@names) {
+my @noms = ("Foo", "Bar", "Baz");
+foreach my $n (@noms) {
   say $n;
 }
 </code>
 
-will print:
+Le résultat est le suivant :
 
 <code>
 Foo
@@ -78,66 +84,76 @@ Bar
 Baz
 </code>
 
-<h2>Accessing an element of an array</h2>
+<h2>Accéder à un des éléments d'un tableau Perl</h2>
 
 <code lang="perl">
-my @names = ("Foo", "Bar", "Baz");
-say $names[0];
+my @noms = ("Foo", "Bar", "Baz");
+say $noms[0];
 </code>
 
-Note, when accessing a single element of an array the leading sigil changes from <hl>@</hl> to <hl>$</hl>.
-This might cause confustion to some people, but if you think about it, it is quite obvious why.
+Attention ! Lorsque vous accédez à un seul élément d'un tableau, le <i>sigil</i> change de <hl>@</hl> à <hl>$</hl>.
+Cela pourrait causer de la confusion pour certaines personnes, mais si vous y réfléchissez deux minutes, il est assez facile de comprendre pourquoi.
 
-<hl>@</hl> marks plural and <hl>$</hl> marks singular. When accessing a single element
-of an array it behaves just as a regular scalar variable.
+<hl>@</hl> marque le pluriel et <hl>$</hl> le singulier.
+Lorsque vous accédez à un seul élément d'un tableau, celui-ci se comporte comme une variable scalaire normale.
 
-<h2>Indexing array</h2>
+<h2>Les indices dans un tableau Perl</h2>
 
-The indexes of an array start from 0. The largest index is always in the variable called
-<hl>$#name_of_the_array</hl>. So
+Les indices d'un tableau commencent à partir de 0.
+Le plus grand indice est toujours dans la variable notée <hl>&lt;$#nom_du_tableau></hl>.
 
 <code lang="perl">
-my @names = ("Foo", "Bar", "Baz");
-say $#names;
+my @noms = ("Foo", "Bar", "Baz");
+say $#noms;
 </code>
 
-Will print 2 because the indexes are 0,1 and 2.
+Le résultat est le suivant :
 
-<h2>Length or size of an array</h2>
-
-In Perl there is no special function to fetch the size of an array, but there
-are several ways to obtain that value. For one, the size of the array is one more
-than the largest index. In the above case <hl>$#names+1</hl> is the <b>size</b> or
-<b>length</b> of the array.
-
-In addition the <hl>scalar</hl> function can be used to to obtain the size of an array:
-
-<code lang="perl">
-my @names = ("Foo", "Bar", "Baz");
-say scalar @names;
+<code>
+2
 </code>
 
-Will print 3.
+car les indices sont 0, 1 et 2.
 
-The scalar function is sort of a casting function that - among other things - converts an
-array to a scalar. Due to an arbitrary, but clever decision this conversion yields the size
-of the array.
+<h2>Longueur ou taille d'un tableau Perl</h2>
 
-<h2>Loop on the indexes of an array</h2>
+En Perl il n'ya pas de fonction spéciale pour aller chercher la taille d'un tableau,
+mais il y a plusieurs façons d'obtenir cette valeur.
 
-There are cases when looping over the values of an array is not enough.
-We might need both the value and the index of that value.
-In that case we need to loop over the indexes, and obtain the values using the
-indexes:
+D'une part, la taille d'un tableau est le plus grand indice augmenté de 1.
+Dans l'exemple ci-dessus, <hl>$#noms+1</hl> est la <b>taille</b> ou la <b>longueur</b> du tableau.
+
+D'autre part, la fonction prédéfinie <hl>scalar</hl> peut être utilisée pour obtenir la taille d'un tableau :
 
 <code lang="perl">
-my @names = ("Foo", "Bar", "Baz");
-foreach my $i (0 .. $#names) {
-  say "$i - $names[$i]";
+my @noms = ("Foo", "Bar", "Baz");
+say scalar @noms;
+</code>
+
+Le résultat est le suivant :
+
+<code>
+3
+</code>
+
+La fonction fonction prédéfinie <hl>scalar</hl> est une sorte de fonction de conversion qui
+- entre autres choses - convertit un tableau en un scalaire.
+En raison d'une décision arbitraire, mais intelligente, cette conversion donne la taille du tableau.
+
+<h2>Une boucle basée les indices d'un tableau</h2>
+
+Il y a des cas où une boucle sur les valeurs d'un tableau n'est pas suffisant.
+Nous pourrions avoir besoin à la fois de la valeur et de l'indice de cette valeur.
+Dans ce cas, nous avons besoin de faire une boucle sur les indices, et nous obtenons les valeurs en utilisant les indices.
+
+<code lang="perl">
+my @noms = ("Foo", "Bar", "Baz");
+foreach my $i (0 .. $#noms) {
+  say "$i - $noms[$i]";
 }
 </code>
 
-prints:
+Le résultat est le suivant :
 
 <code>
 0 - Foo
@@ -145,69 +161,72 @@ prints:
 2 - Baz
 </code>
 
-<h2>Push on Perl array</h2>
+<h2>La fonction prédéfinie push appliquée sur un tableau Perl</h2>
 
-<hl>push</hl> appends a new value to the end of the array, extending it:
+La fonction prédéfinie <hl>push</hl> ajoute une nouvelle valeur à la fin du tableau qui donc grandit.
 
 <code lang="perl">
-my @names = ("Foo", "Bar", "Baz");
-push @names, 'Moo';
+my @noms = ("Foo", "Bar", "Baz");
 
+push @noms, 'Moo';
 say Dumper \@names;
 </code>
 
-The result is:
+Le résultat est le suivant :
 
 <code>
 $VAR1 = [
-        'Foo',
-        'Bar',
-        'Baz',
-        'Moo'
-      ];
+    'Foo',
+    'Bar',
+    'Baz',
+    'Moo'
+];
 </code>
 
-<h2>Pop from Perl array</h2>
+<h2>La fonction prédéfinie pop appliquée sur un tableau Perl</h2>
 
-<hl>pop</hl> fetches the last element from the array:
+La fonction prédéfinie <hl>pop</hl> récupère le dernier élément du tableau.
 
 <code lang="perl">
-my @names = ("Foo", "Bar", "Baz");
-my $last_value = pop @names;
-say "Last: $last_value";
-say Dumper \@names;
+my @noms = ("Foo", "Bar", "Baz");
+my $dernier_element = pop @noms;
+
+say "Dernier élément : $dernier_element";
+say Dumper \@noms;
 </code>
 
-The result is:
+Le résultat est le suivant :
 
 <code>
 Last: Baz
 $VAR1 = [
-        'Foo',
-        'Bar',
-      ];
+    'Foo',
+    'Bar',
+];
 </code>
 
-<h2>shift the Perl array</h2>
+<h2>La fonction prédéfinie shift appliquée sur un tableau Perl</h2>
 
-<hl>shift</hl> will return the left most element
-of an array and move all the other elements to the left.
+La fonction prédéfinie <hl>shift</hl> :
+<ul>
+<li>retourne l'élément le plus à gauche d'un tableau (càd le premier élément)</li>
+<li>et déplace tous les autres éléments vers la gauche</li>
+</ul>
 
 <code lang="perl">
-my @names = ("Foo", "Bar", "Baz");
+my @noms = ("Foo", "Bar", "Baz");
+my $element_le_plus_a_gauche = shift @noms;
 
-my $first_value = shift @names;
-say "First: $first_value";
-say Dumper \@names;
+say "Premier élément : $element_le_plus_a_gauche";
+say Dumper \@noms;
 </code>
 
-The result is:
+Le résultat est le suivant :
 
 <code>
-First: Foo
+Premier élément : Foo
 $VAR1 = [
-        'Bar',
-        'Baz',
-      ];
+    'Bar',
+    'Baz',
+];
 </code>
-

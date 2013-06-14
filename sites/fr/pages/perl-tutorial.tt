@@ -98,7 +98,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li><a href="/la-boucle-for-en-perl">La boucle for en Perl</a></li>
 <li>Les listes en Perl</li>
 <li>Utiliser des modules</li>
-<li><a href="http://perlmaven.com/perl-arrays">Les tableaux en Perl</a> (EN)</li>
+<li><a href="/les-tableaux-en-perl">Les tableaux en Perl</a></li>
 <li>Traiter les paramètres de la ligne de commande : @ARGV et Getopt::Long</li>
 <li><a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS</a> (EN)</li>
 <li><a href="/la-fonction-predefinie-join">La fonction prédéfinie join</a></li>

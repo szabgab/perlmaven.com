@@ -31,7 +31,7 @@ Le <b>mot-clé for</b> en Perl peut fonctionner de deux manières différentes :
 Perl détermine l'utilisation que vous avez en tête.
 
 Je vais décrire les deux fonctionnements, même si je préfère utiliser la boucle de style <hl>foreach</hl>,
-comme décrit dans l'article <a href="http://perlmaven.com/perl-arrays">perl arrays (EN)</a>.
+comme décrit dans l'article <a href="/les-tableaux-en-perl">les tableaux en Perl</a>.
 
 Les deux mots-clés <hl>for</hl> et <hl>foreach</hl> peuvent être utilisés comme des synonymes, voir la section <hl>foreach</hl> ci-dessous.
 
