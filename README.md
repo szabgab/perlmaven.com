@@ -253,7 +253,7 @@ This is a recommended workflow for them.
 Let's say there are two people involved one has a username
 'translator' the other one username 'reviewer' on Github
 
-* translator:
+translator:
 
     fork      https://github.com/szabgab/perl5maven.com
     creating  https://github.com/translator/perl5maven.com
@@ -264,11 +264,11 @@ reviewer:
     creating  https://github.com/reviewer/perl5maven.com
 
 
-* translator
+translator:
 
     do the translation, put the file in the sites/CC/drafts/ folder and push it to Github
 
-* reviewer:
+reviewer:
 
     $ git remote add joe_the_translator git://github.com/translator/perl5maven.com.git
     $ git fetch joe_the_translator
@@ -285,12 +285,11 @@ translator:
 
 Now the translator has the changes from the reviewer.
 
-The fetch and merge parts can be repeated, the 'git remote add' part only needs to
+The fetch and merge parts can be repeated, the `git remote add` part only needs to
 be done once.
 
 Once the translation is ready. The file can be moved from drafts/ to pages/
-
-* translator or reviewer:
+by either the translator or the reviewer:
 
     $ git mv sites/CC/drafts/article.tt sites/CC/pages/article.tt
 
