@@ -258,7 +258,7 @@ Let's say there are two people involved one has a username
     fork      https://github.com/szabgab/perl5maven.com
     creating  https://github.com/translator/perl5maven.com
 
-* reviewer:
+reviewer:
 
     fork      https://github.com/szabgab/perl5maven.com
     creating  https://github.com/reviewer/perl5maven.com
@@ -277,7 +277,7 @@ Let's say there are two people involved one has a username
 Now the reviewer also has the file in her drafts/ folder locally
 The reviewer can make changes locally, commit them and push them to Github.
 
-* translator:
+translator:
 
     $ git remote add sally_the_reviewer git://github.com/reviewer/perl5maven.com.git
     $ git fetch sally_the_reviewer
