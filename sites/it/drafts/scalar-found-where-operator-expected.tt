@@ -15,19 +15,19 @@
 
 =abstract start
 
-This is a really common error message I see. One, that seems to be a bit difficult to understand.
+Questo errore si vede davvero molto spesso ed è un po' difficile da capire.
 
-The thing is, people think about <b>numerical operators</b> and <b>string operators</b>,
-but they don't think about the comma <hl>,</hl> as an operator. For them the terminology of
-the error message is a bit confusing.
+Il fatto è che molte persone pensano agli <b>operatori numerici</b> e agli <b>operatori stringa</b>,
+ma non pensano alla virgola <hl>,</hl> come a un operatore. Per loro, la terminologia del
+messaggio di errore è un po' confusa.
 
-Let's see a couple of examples:
+Vediamo un paio di esempi:
 
 =abstract end
 
-<h2>Missing comma</h2>
+<h2>Virgola mancante</h2>
 
-The code looks like this:
+Il codice è il seguente:
 
 <code lang="perl">
 use strict;
@@ -37,7 +37,7 @@ print 42 "\n";
 my $name = "Foo";
 </code>
 
-and the error message is
+e il messaggio d'errore è
 
 <code>
 String found where operator expected at ex.pl line 4, near "42 "\n""
@@ -46,13 +46,13 @@ syntax error at ex.pl line 4, near "42 "\n""
 Execution of ex.pl aborted due to compilation errors.
 </code>
 
-It clearly states the location of the problem, but as I see many people will rush
-back to their editor trying to fix the issue even before reading the error message.
-They make a change hoping that will fix the problem and then they get
-another error message.
+Dice chiaramente dove si trova il problema, ma mi capita spesso di vedere persone che si affrettano
+a tornare all'editor e a provare a risolvere il bug prima ancora di leggere il messaggio d'errore.
+Fanno qualche modifica sperando che risolverà il problema e finiscono per ricevere
+di nuovo il messaggio d'errore.
 
-In this case the problem was that we have forgotten to add a comma <hl>,</hl> after the number 42.
-The correct line would be  <hl>print 42, "\n";</hl>.
+In questo caso il problema è che abbiamo dimenticato di aggiungere una virgola <hl>,</hl> dopo il numero 42.
+La linea corretta sarebbe <hl>print 42, "\n";</hl>.
 
 
 <h2>String found where operator expected</h2>
