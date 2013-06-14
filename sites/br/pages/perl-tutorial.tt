@@ -1,14 +1,12 @@
 =title Perl tutorial
-=timestamp 2012-07-06T11:45:56
+=timestamp 2012-07-06T00:02:05
 =description Tutorial Perl disponível gratutamente para aqueles que precisam mantér código escrito em Perl, para aqueles que apenas escrevem pequenos scripts e para desenvolvedores de novas aplicações.
 =tags training, treinamento, course, curso, beginner, iniciante, tutorial
 =status show
 =original perl-tutorial
 =author szabgab
 =translator leprevost
-=index 0
 =archive 0
-=feed 0
 =comments 0
 =social 1
 
@@ -34,14 +32,14 @@ mais de 5 horas de vídeo. O pacote inclui também o código fonte dos exemplos 
 
 <h2>Tutorial Perl Maven on-line e Gratuito para Iniciantes</h2>
 
-Neste tutorial você irá aprender como utilizar a lingaugem de programação Perl 5
+Neste tutorial você irá aprender como utilizar a linguagem de programação Perl 5
 
 Você irá aprender tanto características gerais quanto extensões e bibliotecas, ou como os programadores
 Perl chamam, <b>módulos</b>. Nós iremos ver sobre os módulos básicos incluídos no núcleo da linguagem
 e módulos desenvolvidos por terceiros, disponíveis pelo <b>CPAN</b>
 
 Quando possível irei tentar ensinar os assuntos numa forma orientada à tarefas.
-Irei elaborar tarefas e então iremaos aprender as ferramentas necessárias para resolver os problemas.
+Irei elaborar tarefas e então iremos aprender as ferramentas necessárias para resolver os problemas.
 Quando possível irei também direcionar você a alguns exercícios para que possa praticar o que aprendeu.
 
 <p>

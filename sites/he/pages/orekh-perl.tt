@@ -1,14 +1,12 @@
 =title עורך פרל (Perl)
-=timestamp 2012-08-01T12:45:56
+=timestamp 2012-08-01T12:45:57
 =indexes IDE, editor, Padre, vim, emacs, Eclipse, Komodo
 =status show
 =original perl-editor
 =books beginner_book
 =author szabgab
 =translator bruck
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
@@ -116,6 +114,6 @@ Perl Application Development and Refactoring Environment -
 <h2>מה הלאה?</h2>
 
 החלק הבא של המדריך הוא סטייה קלה מהמסלול אל דיון על 
-<a href="http://perlmaven.org/perl-on-the-command-line">פרל על שורת הפקודה</a>.
+<a href="/perl-on-the-command-line">פרל על שורת הפקודה</a>.
 
 

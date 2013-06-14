@@ -1,5 +1,5 @@
 =title Perl Tutorial in Korean
-=timestamp 2012-05-02T22:45:56
+=timestamp 2012-05-02T00:00:34
 =status show
 =original perl-tutorial
 =showright 1
@@ -7,9 +7,7 @@
 =published 0
 =author 0
 =translator 0
-=index 0
 =archive 0
-=feed 0
 =comments 0
 =social 1
 
@@ -67,10 +65,12 @@
 
 <b>CPAN</b>
 <ol>
+<li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">일반적이지 않은 위치에서 펄 모듈을 찾기 위해 어떻게 @INC를 수정 하는가</a></li>
 </ol>
 
 <b>Perl을 사용하는 예</b>
 <ol>
+<li><a href="/how-to-replace-a-string-in-a-file-with-perl">펄을 사용하여 파일에 있는 문자열을 어떻게 치환 하는가</a></li>
 <li><a href="/simple-database-access-using-perl-dbi-and-sql">Perl DBI와 SQL을 사용한 간단한 데이타베이스</a></li>
 </ol>
 
@@ -80,6 +80,7 @@
 <li><a href="/how-to-capture-and-save-warnings-in-perl">Perl에서 경고메시지를 가로채어 저장하기</a></li>
 <li><a href="/using-a-queue-in-perl">Perl에서 큐 사용하기</a></li>
 <li><a href="/undef-on-perl-arrays-and-hashes">Perl 배열과 해시에 대한 undef 호출</a></li>
+<li><a href="/what-is-new-in-perl-5.10--say-defined-or-state">Perl 5.10의 새로운 기능들 say, //, state</a></li>
 </ol>
 
 <!--

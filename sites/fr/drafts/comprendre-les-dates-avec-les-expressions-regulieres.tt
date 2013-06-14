@@ -117,7 +117,6 @@ closing quote in the warning. That's because we have not eliminated the newline 
 We should probably call <hl>chomp $line</hl> at least before calling warn, but possibly right after reading the line
 from the file.
 
-
 <h2>Extending the regex</h2>
 
 For now we set the invalid lines aside, you can even comment out the call to <hl>warn</hl> so it won't mess up the
@@ -131,7 +130,6 @@ Right after the year, there is a dash and then two digits, another dash and anot
   my ($year, $month, $day) = $line =~ /^(\d\d\d\d)-(\d\d)-(\d\d)/;
   print "$year  $month  $day\n";
 </code>
-
 
 <code lang="perl">
   my ($year, $month, $day, $hour, $min, $sec) = $line =~ /^(\d\d\d\d)-(\d\d)-(\d\d)T(\d\d):(\d\d):(\d\d)/;
@@ -156,7 +154,6 @@ We would like to allow for the month field to be either one digit or two digits.
 That's easy, the <hl>?</hl> character can tell the entity on its left to be optional.
 To match or to be skipped. So <hl>\d\d</hl> would require 2 digits while <hl>\d?\d</hl>
 will require only one digit.
-
 
 <code lang="perl">
   my ($year, $month, $day, $hour, $min, $sec) = $line =~ /^(\d\d\d\d)-(\d?\d)-(\d\d)T(\d\d):(\d\d):(\d\d)/;
@@ -201,9 +198,7 @@ Is that month-day-year or day-month-year? In order to answer this question we ca
 If we see any number bigger than 12 in one of the fields, we will assume that is the field that has the days in all the rows.
 In our case it turned out to be month-day-year and the hour-min-sec.
 
-
 The full script looks like this:
-
 
 <code lang="perl">
 use strict;
@@ -227,7 +222,6 @@ while (my $line = <$fh>) {
 }
 </code>
 
-
 As you can see we already included the call to <hl>chomp</hl> off the newline and changed the order of execution a bit.
 First we try to use one of the regexes. If it does not match and thus does not assign a value ti <hl>$year</hl>
 we try the second regex.
@@ -236,5 +230,4 @@ If that still does not work then we complain and call <hl>next</hl> to go to the
 line.
 
 If everything was fine we print the date with spaces between the values.
-
 

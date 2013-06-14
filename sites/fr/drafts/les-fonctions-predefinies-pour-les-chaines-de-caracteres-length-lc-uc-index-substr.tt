@@ -37,7 +37,6 @@ say uc $str;      # HELLO
 say length $str;  # 5
 </code>
 
-
 <h2>index</h2>
 
 Then there is the <b>index</b> function. This function will get two strings and return

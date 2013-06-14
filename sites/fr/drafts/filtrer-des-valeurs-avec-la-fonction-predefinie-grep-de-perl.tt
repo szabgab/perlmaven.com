@@ -42,7 +42,6 @@ print "@big_numbers\n";      # (8, 5, 7)
 This grep passes the values that are greater than 4,
 filtering out all the values that are not greater than 4.
 
-
 <h2>Filter out the new files</h2>
 
 <code lang="perl">
@@ -78,7 +77,7 @@ if (grep { $visitor eq $_ } @names) {
 </code>
 
 In this case the grep function was placed in
-<a href="http://szabgab.com/scalar-and-list-context-in-perl.html">SCALAR context</a>.
+<a href="http://perlmaven.com/scalar-and-list-context-in-perl">SCALAR context</a>.
 In SCALAR context <hl>grep</hl> will return the number of elements that went through the filter.
 As we are checking if the <hl>$visitor</hl> equals to the current element this grep
 will return the number of times that happens.
@@ -104,7 +103,6 @@ if (any { $visitor eq $_ } @names) {
    print "Visitor $visitor is NOT in the guest list\n";
 }
 </code>
-
 
 <h2>UNIX grep and Linux grep?</h2>
 
@@ -136,5 +134,4 @@ the filtering are printed.
 
 Windows does not come with a grep utility but you can install
 one or you can use the same Perl script as above.
-
 

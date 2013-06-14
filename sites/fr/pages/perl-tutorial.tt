@@ -1,5 +1,5 @@
 =title Tutoriel de Perl
-=timestamp 2013-04-15T22:45:56
+=timestamp 2013-04-15T00:00:20
 =description tutoriel en ligne gratuit sur Perl pour ceux qui ont besoin de maintenir du code Perl existant, pour ceux qui utilisent Perl pour des scripts simples, et pour ceux qui développent des applications en Perl
 =tags formation, cours, débutant, tutoriel
 =status show
@@ -9,9 +9,7 @@
 =published 0
 =author 0
 =translator oval
-=index 0
 =archive 0
-=feed 0
 =comments 0
 =social 1
 
@@ -49,7 +47,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <ol>
 <li><a href="http://perlmaven.com/installing-perl-and-getting-started">Installer Perl, afficher "Bonjour tout le monde", filet de sécurité (use strict; use warnings;)</a> (EN)</li>
 <li><a href="http://perlmaven.com/perl-editor">Éditeurs et EDIs, environnements de développement pour Perl</a> (EN)</li>
-<li><a href="http://perlmaven.com/perl-on-the-command-line">Perl en ligne de commande</a> (EN)</li>
+<li><a href="/perl-en-ligne-de-commande">Perl en ligne de commande</a></li>
 <li><a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">Documentation du noyau Perl et des modules CPAN</a> (EN)</li>
 <li><a href="http://perlmaven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation : la bonne vieille documentation à la Perl</a> (EN)</li>
 <li><a href="/utiliser-le-debogueur-integre-de-perl">Déboguer des scripts Perl</a></li>
@@ -100,13 +98,13 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li>Utiliser des modules</li>
 <li><a href="http://perlmaven.com/perl-arrays">Les tableaux en Perl</a> (EN)</li>
 <li>Traiter les paramètres de la ligne de commande : @ARGV et Getopt::Long</li>
-<li><a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS (EN)</li>
+<li><a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS</a> (EN)</li>
 <li><a href="/la-fonction-predefinie-join">La fonction prédéfinie join</a></li>
 <li><a href="http://perlmaven.com/the-year-19100">L'année 19100 (time, localtime, gmtime)</a> (EN) et introduction au contexte</li>
 <li><a href="http://perlmaven.com/scalar-and-list-context-in-perl">Sensibilité au contexte en Perl</a> (EN)</li>
 <li><a href="http://perlmaven.com/sorting-arrays-in-perl">Trier des tableaux en Perl</a> (EN)</li>
 <li><a href="http://perlmaven.com/unique-values-in-an-array-in-perl">Valeurs uniques dans un tableau Perl</a> (EN)</li>
-<li><a href="http://perlmaven.com/manipulating-perl-arrays">Manipuler des tableaux en Perl: shift, unshift, push, pop</a> (EN)</li>
+<li><a href="/manipuler-des-tableaux-avec-perl">Manipuler des tableaux en Perl : shift, unshift, push, pop</a></li>
 <li>La pile et la file d'attente</li>
 <li>La fonction prédéfinie reverse</li>
 <li>L'opérateur ternaire</li>
@@ -139,7 +137,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li>Regex: ancres</li>
 <li>Regex: options et modificateurs</li>
 <li>Substitutions (rechercher et remplacer)</li>
-<li><a href="http://perlmaven.com/trim">Couper/Supprimer les espaces avant et après (EN)</a></li>
+<li><a href="http://perlmaven.com/trim">Couper/Supprimer les espaces avant et après</a> (EN)</li>
 </ol>
 
 <b>Fonctionnalités du système d'exploitation via Perl</b>
@@ -168,7 +166,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 
 <b>Quelques exemples d'utilisation de Perl</b>
 <ol>
-<li><a href="http://perlmaven.com/how-to-replace-a-string-in-a-file-with-perl">Comment remplacer une chaîne dans un fichier avec Perl ? (slurp)</a> (EN)</li>
+<li><a href="/comment-remplacer-une-chaine-de-caracteres-dans-un-fichier-avec-perl">Comment remplacer une chaîne dans un fichier avec Perl ? (<i>slurp</i>)</a></li>
 <li>Lire des fichiers Excel avec Perl</li>
 <li>Créer des fichiers Excel avec Perl</li>
 <li>Envoyer des courriels avec Perl</li>

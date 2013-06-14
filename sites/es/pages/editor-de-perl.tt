@@ -6,9 +6,7 @@
 =books beginner_book
 =author szabgab
 =translator ileiva
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
@@ -19,29 +17,29 @@ Puedes usar cualquier editor de texto para crearlos, pero es mejor evitar
 los procesadores de texto (p. ej., MS Word). Puedo recomendarte algunos editores
 y entornos de desarrollo integrado (IDE).
 
-A propÛsito, este artÌculo forma parte del <a href="/perl-tutorial">tutorial de Perl</a>.
+A prop√≥sito, este art√≠culo forma parte del <a href="/perl-tutorial">tutorial de Perl</a>.
 
 =abstract end
 
-<h2>øEditor o IDE?</h2>
+<h2>¬øEditor o IDE?</h2>
 
-Para programar en Perl puedes usar un editor de texto o un <b>entorno de desarrollo integrado</b>, tambiÈn llamado IDE por sus siglas en inglÈs.
+Para programar en Perl puedes usar un editor de texto o un <b>entorno de desarrollo integrado</b>, tambi√©n llamado IDE por sus siglas en ingl√©s.
 
-Primero describirÈ los editores para las plataformas m·s usadas hoy en dÌa, y luego los IDE,
+Primero describir√© los editores para las plataformas m√°s usadas hoy en d√≠a, y luego los IDE,
 que son generalmente independientes de la plataforma.
 
 <h2>Unix / Linux</h2>
 
-Si usas Linux o Unix, los editores m·s populares son
+Si usas Linux o Unix, los editores m√°s populares son
 <a href="http://www.vim.org/">Vim</a> y <a href="http://www.gnu.org/software/emacs/">Emacs</a>.
-Ambos siguen filosofÌas muy distintas, y tampoco se parecen a los dem·s editores.
+Ambos siguen filosof√≠as muy distintas, y tampoco se parecen a los dem√°s editores.
 
-Si ya est·s familiarizado con uno de ellos, te recomendarÌa que lo usaras.
+Si ya est√°s familiarizado con uno de ellos, te recomendar√≠a que lo usaras.
 
-Para cada uno est·n disponibles modos o extensiones especiales que facilitan el uso de
+Para cada uno est√°n disponibles modos o extensiones especiales que facilitan el uso de
 Perl, pero incluso sin estos modos o extensiones siguen siendo muy buenas opciones para programar en Perl.
 
-Si no est·s familiarizado con estos editores, te recomendarÌa que separes la
+Si no est√°s familiarizado con estos editores, te recomendar√≠a que separes la
 curva de aprendizaje de Perl de la experiencia de aprendizaje de un nuevo editor de texto.
 
 Ambos editores son muy poderosos, pero llegar a dominarlos requiere tiempo.
@@ -49,50 +47,50 @@ Ambos editores son muy poderosos, pero llegar a dominarlos requiere tiempo.
 Probablemente sea mejor que te centres en aprender Perl por el momento y luego
 aprendas a utilizar alguno de estos editores.
 
-Ambos editores son nativos en Linux/Unix, pero tambiÈn est·n disponibles para 
-los dem·s sistemas operativos principales.
+Ambos editores son nativos en Linux/Unix, pero tambi√©n est√°n disponibles para 
+los dem√°s sistemas operativos principales.
 
 <h2>Editores de Perl para Windows</h2>
 
-En Windows mucha gente utiliza los llamados "editores de programaciÛn".
+En Windows mucha gente utiliza los llamados "editores de programaci√≥n".
 
 <ul>
 <li><a href="http://www.ultraedit.com/">Ultra Edit</a> es un editor comercial.</li>
 <li><a href="http://www.textpad.com/">TextPad</a> es shareware.</li>
-<li><a href="http://notepad-plus-plus.org/">Notepad++</a> es un editor gratuito de cÛdigo abierto.</li>
+<li><a href="http://notepad-plus-plus.org/">Notepad++</a> es un editor gratuito de c√≥digo abierto.</li>
 </ul>
 
-Por mi parte, utilizo bastante <b>Notepad++</b> y lo mantengo instalado en mi m·quina Windows, ya que puede ser bastante ˙til.
+Por mi parte, utilizo bastante <b>Notepad++</b> y lo mantengo instalado en mi m√°quina Windows, ya que puede ser bastante √∫til.
 
 <h2>Mac OS X</h2>
 
-No utilizo Mac, pero seg˙n el voto popular, el editor m·s utilizado para programar en Perl es <a href="http://macromates.com/">TextMate</a>
+No utilizo Mac, pero seg√∫n el voto popular, el editor m√°s utilizado para programar en Perl es <a href="http://macromates.com/">TextMate</a>
 
 <h2>IDE para Perl</h2>
 
 Ninguno de los editores mencionados es un IDE, esto es, ninguno de ellos ofrece
-un autÈntico depurador integrado de Perl. Tampoco proporcionan ayuda especÌfica para el lenguaje.
+un aut√©ntico depurador integrado de Perl. Tampoco proporcionan ayuda espec√≠fica para el lenguaje.
 
-<a href="http://www.activestate.com/">Komodo</a> (de ActiveState) cuesta unos cientos de dÛlares.
-Existe una versiÛn gratuita con capacidades limitadas.
+<a href="http://www.activestate.com/">Komodo</a> (de ActiveState) cuesta unos cientos de d√≥lares.
+Existe una versi√≥n gratuita con capacidades limitadas.
 
-Para los que ya sean usuarios de <a href="http://www.eclipse.org/">Eclipse</a> les interesar· saber que
-existe un complemento para programar en Perl llamado EPIC. TambiÈn hay un proyecto llamado
+Para los que ya sean usuarios de <a href="http://www.eclipse.org/">Eclipse</a> les interesar√° saber que
+existe un complemento para programar en Perl llamado EPIC. Tambi√©n hay un proyecto llamado
 <a href="https://github.com/skorg/perlipse">Perlipse</a>.
 
 
 <h2>Padre, el IDE para Perl</h2>
 
-En julio de 2008 empecÈ a desarrollar un <b>IDE para Perl en Perl</b>. Lo llamÈ Padre
+En julio de 2008 empec√© a desarrollar un <b>IDE para Perl en Perl</b>. Lo llam√© Padre
 (Perl Application Development and Refactoring Environment) o <a href="http://padre.perlide.org/">
 Padre, el IDE para Perl</a>.
 
-Mucha gente se ha unido al proyecto. Actualmente se incluye en las principales distribuciones de Linux y tambiÈn
-se puede instalar desde CPAN. Visita la p·gina de <a href="http://padre.perlide.org/download.html">descarga</a>
-para m·s detalles.
+Mucha gente se ha unido al proyecto. Actualmente se incluye en las principales distribuciones de Linux y tambi√©n
+se puede instalar desde CPAN. Visita la p√°gina de <a href="http://padre.perlide.org/download.html">descarga</a>
+para m√°s detalles.
 
-En algunos aspectos a˙n no es tan robusto como Eclipse o Komodo, pero en otras ·reas 
-especÌficas de Perl ya los ha superado.
+En algunos aspectos a√∫n no es tan robusto como Eclipse o Komodo, pero en otras √°reas 
+espec√≠ficas de Perl ya los ha superado.
 
 Por otra parte, el desarrollo de <b>Padre</b> es muy activo.
 Si buscas un <b>editor</b> o un <b>IDE</b> para Perl, te recomiendo que lo pruebes.
@@ -100,18 +98,18 @@ Si buscas un <b>editor</b> o un <b>IDE</b> para Perl, te recomiendo que lo prueb
 
 <h2>La gran encuesta sobre editores para Perl</h2>
 
-En octubre de 2009 realicÈ una encuesta en la que preguntÈ
-<a href="http://perlide.org/poll200910/">øQuÈ editores o IDE utilizas para programar en Perl?</a>
+En octubre de 2009 realic√© una encuesta en la que pregunt√©
+<a href="http://perlide.org/poll200910/">¬øQu√© editores o IDE utilizas para programar en Perl?</a>
 
-Puedes seguir a la mayorÌa, ir en contra de ella o elegir el editor para Perl que se adapte mejor a tus necesidades.
+Puedes seguir a la mayor√≠a, ir en contra de ella o elegir el editor para Perl que se adapte mejor a tus necesidades.
 
 
 <h2>Otros editores</h2>
 
 Alex Shatlovsky recomienda <a href="http://www.sublimetext.com/">Sublime Text</a>, un editor multiplataforma (aunque de pago).
 
-<h2>A continuaciÛn</h2>
+<h2>A continuaci√≥n</h2>
 
-La siguiente parte de este tutorial es una breve introducciÛn a <a href="http://perlmaven.com/perl-on-the-command-line">Perl en la lÌnea de comandos</a>
+La siguiente parte de este tutorial es una breve introducci√≥n a <a href="http://perlmaven.com/perl-on-the-command-line">Perl en la l√≠nea de comandos</a>
 
 

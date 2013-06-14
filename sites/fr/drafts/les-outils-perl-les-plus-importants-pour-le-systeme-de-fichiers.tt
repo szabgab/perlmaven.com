@@ -9,7 +9,6 @@
 =comments 1
 =social 1
 
-
 =abstract start
 
 When writing Perl scripts that need to deal with the file-system, I often need to load a lot of modules.
@@ -37,14 +36,12 @@ use Cwd qw(cwd);
 print cwd, "\n";
 </code>
 
-
 <h2>Temporary directory</h2>
 
 Often I need to create a bunch of temporary files and I'd like to make
 sure they are automatically removed when the script finishes. The easiest way is to create
 a temporary directory using the <b>tempdir</b> function from <b>File::Temp</b> with the CLEANUP
 option being turned on.
-
 
 <code lang="perl">
 use strict;
@@ -61,7 +58,6 @@ open my $fh, '>', "$dir/some_file.txt";
 print $fh "text";
 close $fh;
 </code>
-
 
 <h2>Operating System independent path</h2>
 
@@ -94,7 +90,6 @@ the temporary directory and work there. It can happen a lot
 when writing tests but in other cases too. For this we can use the built in
 <b>chdir</b> function.
 
-
 <code lang="perl">
 use strict;
 use warnings;
@@ -125,7 +120,6 @@ cannot remove path when cwd is /tmp/P3DZP_rmqg for /tmp/P3DZP_rmqg:
 In order to avoid that I usually save the path returned by <b>cwd</b> before
 I change the directory and at the end I call <b>chdir</b> again:
 
-
 <code lang="perl">
 my $original = cwd;
 
@@ -152,7 +146,6 @@ END {
 }
 </code>
 
-
 <h2>Relative path</h2>
 
 When writing a project that has multiple files (e.g. one ore more scripts, some modules,
@@ -170,7 +163,6 @@ project/
 </code>
 
 How can I make sure the scripts will find the templates? For this I have several solutions:
-
 
 <code lang="perl">
 use strict;
@@ -222,13 +214,9 @@ use Rocket::Launcher;
 
 Of course I assume we already have a file called lib/Rocket/Launcher.pm
 
-
 <h2>Where is the rest?</h2>
 
 There is more to this, but I think it is enough as the first part of this series.
 If you want to make sure you don't miss the others, <a href="/register">register to the newsletter</a>. It's free.
 
-
-
 <a href="http://commons.wikimedia.org/wiki/File:Hdd_icon.svg">Image source</a>
-

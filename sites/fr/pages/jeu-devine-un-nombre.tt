@@ -6,9 +6,7 @@
 =books beginner_book
 =author szabgab
 =translator oval
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
@@ -46,7 +44,7 @@ say int -3,14; # va afficher -3
 
 <h2>Nombres aléatoires</h2>
 
-Un appel à ila fonction prédéfinie <hl>rand($n)</hl> de Perl retourne un nombre aléatoire rationnel compris entre 0 et $n, 0 inclus mais $n exclus.
+Un appel à la fonction prédéfinie <hl>rand($n)</hl> de Perl retourne un nombre aléatoire rationnel compris entre 0 et $n, 0 inclus mais $n exclus.
 
 Si <hl>$n = 42</hl>, alors un appel à <hl>rand($n)</hl> retourne un nombre aléatoire compris entre 0 inclus mais 42 exclus. Par exemple : 11,264624821095826.
 

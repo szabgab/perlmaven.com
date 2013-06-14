@@ -125,4 +125,3 @@ As you can see once the user typed the correct answer, <hl>last</hl> was called,
 including <hl>say 'Wrong! Try again!';</hl> was skipped and the execution continued after the
 <hl>while loop</hl>.
 
-

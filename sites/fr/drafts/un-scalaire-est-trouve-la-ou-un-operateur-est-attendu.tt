@@ -51,7 +51,6 @@ another error message.
 In this case the problem was that we have forgotten to add a comma <hl>,</hl> after the number 42.
 The correct line would be  <hl>print 42, "\n";</hl>.
 
-
 <h2>String found where operator expected</h2>
 
 In this code we have left out a concatenation operator <hl>.</hl>, and we got the same error message:
@@ -132,7 +131,6 @@ my %h = (
 
 This habit helps me to avoid this kind of syntax error most of the cases.
 
-
 <h2>Scalar found where operator expected at</h2>
 
 <code lang="perl">
@@ -167,5 +165,4 @@ my $z =  3 @x;
 <h2>What other cases do you encounter often?</h2>
 
 Do you have other interesting cases where we get this type of syntax error?
-
 

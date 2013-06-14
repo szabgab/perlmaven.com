@@ -1,14 +1,12 @@
 =title Perl 中的文件操作：删除和重命名 
-=timestamp 2012-08-24T14:45:19
+=timestamp 2012-08-24T14:45:20
 =indexes unlink, remove, rm, del, delete, copy, cp, rename, move, mv, File::Copy
 =status show
 =original how-to-remove-copy-or-rename-a-file-with-perl
 =books beginner_book
 =author szabgab
 =translator swuecho
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 

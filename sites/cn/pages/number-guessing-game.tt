@@ -1,14 +1,12 @@
 =title 猜数字 
-=timestamp 2013-04-02T10:45:17
+=timestamp 2013-04-02T10:45:27
 =indexes rand, random, int, integer
 =status show
 =original number-guessing-game
 =books beginner_book
 =author szabgab
 =translator swuecho
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 

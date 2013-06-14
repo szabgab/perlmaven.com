@@ -131,7 +131,6 @@ The next time we encounter the same string we already have that key
 in the <hl>%seen</hl> hash and its value is true, so the <hl>if</hl> condition
 will fail, and we won't <hl>push</hl> the duplicate value in the resulting array.
 
-
 <h2>Shortening the home made unique function</h2>
 
 First of all we replace the assignment of 1 <hl>$seen{$value} = 1;</hl> by the
@@ -274,7 +273,6 @@ my @unique = keys { map { $_ => 1 } @data };
 
 and we'll get back the unique values fom <hl>@data</hl>
 
-
 <h2>Exercise</h2>
 
 Given the following file print out the unique values:
@@ -301,5 +299,4 @@ expected output:
 <code>
 foo Bar first second another
 </code>
-
 

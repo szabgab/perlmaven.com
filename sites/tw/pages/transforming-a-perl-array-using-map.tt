@@ -1,14 +1,12 @@
 =title 使用 map 來轉換 Perl 陣列
-=timestamp 2013-04-25T10:45:56
+=timestamp 2013-04-25T10:45:58
 =indexes map, transform, list, array
 =status show
 =original transforming-a-perl-array-using-map
 =books advanced_book
 =author szabgab
 =translator H2CHANG
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
