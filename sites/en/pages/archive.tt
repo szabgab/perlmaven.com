@@ -9,12 +9,4 @@
 =comments 0
 =social 0
 
-<div id="indexes">
-    <ul>
-         <li><a href="/archive" class="btn btn-large btn-primary disabled">All</a></li>
-         <li><a href="/archive?tag=free" class="btn btn-large btn-primary disabled">Free</a></li>
-         <li><a href="/archive?tag=pro" class="btn btn-large btn-primary disabled">Pro</a></li>
-         <li><a href="/archive?tag=interview" class="btn btn-large btn-primary disabled">Interviews</a></li>
-    </ul>
-</div>
 
