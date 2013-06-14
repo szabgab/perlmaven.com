@@ -3,9 +3,7 @@
 =indexes CGI, mod_perl, FastCGI, PSGI, Plack
 =status show
 =author szabgab
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
