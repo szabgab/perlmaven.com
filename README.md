@@ -212,7 +212,8 @@ On Github 'fork' the https://github.com/szabgab/perl5maven.com repository
 It will create another repository https://github.com/USERNAME/perl5maven.com
 
 clone it to your desktop:
-$ git clone git@github.com:USERNAME/perl5maven.com.git
+
+    $ git clone git@github.com:USERNAME/perl5maven.com.git
 
 It will create a directory called perl5maven.com inside all the source files.
 There should be one called sites/CC  (where CC is your language code
@@ -220,6 +221,7 @@ based on this list: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 more or less).  If there is no such directory ask Gabor to create one.
 
 Initially you will need to know about
+
     $ git add  filename
     $ git commit -m "message"
     $ git push
@@ -251,16 +253,23 @@ This is a recommended workflow for them.
 Let's say there are two people involved one has a username
 'translator' the other one username 'reviewer' on Github
 
-translator) fork      https://github.com/szabgab/perl5maven.com
-            creating  https://github.com/translator/perl5maven.com
-reviewer)   fork      https://github.com/szabgab/perl5maven.com
-            creating  https://github.com/reviewer/perl5maven.com
+translator:
+
+    fork      https://github.com/szabgab/perl5maven.com
+    creating  https://github.com/translator/perl5maven.com
+
+reviewer:
+
+    fork      https://github.com/szabgab/perl5maven.com
+    creating  https://github.com/reviewer/perl5maven.com
 
 
-translator) do the translation, put the file in the sites/CC/drafts/
-            folder and push it to Github
+translator:
 
-reviewer)
+    do the translation, put the file in the sites/CC/drafts/ folder and push it to Github
+
+reviewer:
+
     $ git remote add joe_the_translator git://github.com/translator/perl5maven.com.git
     $ git fetch joe_the_translator
     $ git merge joe_the_translator/main
@@ -268,25 +277,21 @@ reviewer)
 Now the reviewer also has the file in her drafts/ folder locally
 The reviewer can make changes locally, commit them and push them to Github.
 
-translator)
+translator:
+
     $ git remote add sally_the_reviewer git://github.com/reviewer/perl5maven.com.git
     $ git fetch sally_the_reviewer
     $ git merge sally_the_reviewer/main
 
 Now the translator has the changes from the reviewer.
 
-The fetch and merge parts can be repeated, the 'git remote add' part only needs to
+The fetch and merge parts can be repeated, the `git remote add` part only needs to
 be done once.
 
-
 Once the translation is ready. The file can be moved from drafts/ to pages/
+by either the translator or the reviewer:
 
-  $ git mv sites/CC/drafts/article.tt sites/CC/pages/article.tt
+    $ git mv sites/CC/drafts/article.tt sites/CC/pages/article.tt
 
-pushed it to Github and a merge requets can be sent.
-
-
-
-
-
+pushed it to Github and a merge requets can be sent to Gabor.
 

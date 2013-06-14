@@ -1,22 +1,20 @@
 =title 在Perl里如何捕获并保存警告
-=timestamp 2013-05-07T10:30:01
+=timestamp 2013-06-14T09:19:12
 =indexes warnings, state, __WARN__, %SIG, local
 =status show
 =original how-to-capture-and-save-warnings-in-perl
 =books advanced_book
 =author szabgab
 =translator terrencehan
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
 =abstract start
 
-一方面建议在每个Perl脚本和模块中开启警告，另一方面你不想用户看到Perl发出的警告。
+虽然建议在每个Perl脚本和模块中开启警告，可是你又不想用户看到Perl发出的警告。
 
-一方面你想在代码前面使用<b>use warnings</b>作为你的安全网，另一方面，通常警告会出现在屏幕上。在大多数情况下，客户不知道如何处理这些警告。如果幸运的话这些警告仅仅让客户惊讶一下，当然，不幸的是他们尝试着去修复它们... （这里说的不是Perl程序员。）
+一方面你想在代码前面使用<b>use warnings</b>作为你的安全网，另一方面，通常警告会出现在屏幕上。多数情况下，客户不知道如何处理这些警告。如果幸运的话这些警告仅仅让客户惊讶一下，当然，不幸的是他们尝试着去修复它们... （这里说的不是Perl程序员。）
 
 第三方面，你或许想要保存这些警告供之后分析。
 
@@ -208,7 +206,7 @@ __WARN__在其处理函数执行过程中是自动被禁用的。所以在警告
 
 <h2>避免使用全局的%WARNS</h2>
 
-如果你正在使用Perl 5.10或者更新的版本，你可以改写一下代码来替换掉全局变量%WARNS。如果要这么做的话，需要在脚本的开头使用<hl>use v5.10;</hl>，然后在匿名函数内部使用<hl>state</hl>关键词来声明变量。
+如果你正在使用Perl 5.10或者更新的版本，你可以改写一下代码来替换掉全局变量%WARNS。要这么做的话，需在脚本的开头使用<hl>use v5.10;</hl>，然后在匿名函数内部使用<hl>state</hl>关键词来声明变量。
 
 <code lang="perl">
   #!/usr/bin/perl
