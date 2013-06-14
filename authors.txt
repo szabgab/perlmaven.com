@@ -31,4 +31,4 @@ gypark;Geunyoung Park;gypark.jpg;https://plus.google.com/102624623438100467935
 mlx;Brian T. Wightman (MLX@cpan);;https://plus.google.com/116563303078084996059
 ggl;Gelu Lupaş;;https://plus.google.com/109248329865538291977
 johnkang;John Kang;johnkang.jpg;https://plus.google.com/112513302897448870436
-ileiva;Israel Leiva;https://plus.google.com/u/0/115251093728227570944
+ileiva;Israel Leiva;ileiva.png;https://plus.google.com/u/0/115251093728227570944
