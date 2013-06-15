@@ -5,6 +5,7 @@
 =newsletter 0
 =published 0
 =author 0
+=translator mca
 =index 0
 =archive 0
 =feed 0
@@ -18,7 +19,7 @@
 <a href="/about"><img width="54" height="54" src="/img/szabgab.png" alt="Gabor Szabo" /></a><br>
 </div>
 <div>
-Mein Name ist <a href="/about">Gabor Szabo</a>. I benutze Perl seit 1995 und lehre Perl in Firmen-Klassenzimmern seit 2000.
+Mein Name ist <a href="/about">Gabor Szabo</a>. Ich benutze Perl seit 1995 und lehre Perl in Firmen-Klassenzimmern seit 2000.
 Ich liebe die Ausbildungsarbeit im Klassenzimmer, aber leider schränkt das die Anzahl der Leute ein, die ich erreichen kann.
 Ich habe diesen Webauftritt und die angebotenen Produkte aufgebaut, um Dir zu helfen, mit der Perl-Programmiersprache 
 Probleme zu lösen.<br/>

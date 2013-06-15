@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use 5.010;
+
+# first run git fetch --all
+
+use Getopt::Long qw(GetOptions);
+GetOptions('all' => \my $all) or die;
+
+my @remotes = grep {$_ ne 'origin'} qx{git remote};
+chomp @remotes;
+
+#my $cmd = "git log --name-status --remotes=* --not main';
+#die $cmd;
+#system $cmd;
+
+my @branches = qx{git branch --remote};
+chomp @branches;
+foreach my $remote (@branches) {
+	my @out = grep { $_ !~ /^[0-9a-f]{40}/ }
+		qx{git log --name-status  --pretty=oneline --full-index $remote --not main};
+	if (not $all) {
+		@out = grep { $_ =~ m{^\w+\s+sites/\w+/pages/} } @out;
+	}
+	next if not @out;
+	say $remote;
+	say @out;
+}

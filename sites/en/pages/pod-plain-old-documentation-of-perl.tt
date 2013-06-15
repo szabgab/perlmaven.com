@@ -127,7 +127,7 @@ Not so good on Windows.
 The <a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> module provides another command line tool called
 <hl>pod2html</hl>. This can convert a POD to an HTML document you can view in a browser.
 
-There are additional tools to generated pdf or mobi files from POD.
+There are additional tools to generate pdf or mobi files from POD.
 
 <h2>Who is the audience?</h2>
 
@@ -135,7 +135,7 @@ After seeing the technique, let's see who is the audience?
 
 Comments (the thing that start with a # ) are explanations for
 the maintenance programmer. The person who needs to add features
-of fix bugs.
+or fix bugs.
 
 Documentation written in POD is for the users. People who should not
 look at the source code. In case of an application those will be

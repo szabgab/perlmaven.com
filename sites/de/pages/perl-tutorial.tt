@@ -5,6 +5,7 @@
 =status show
 =original perl-tutorial
 =author szabgab
+=translator mca
 =index 0
 =archive 0
 =feed 0
@@ -19,7 +20,7 @@ als Perl-Programmierer und Programmierer im Allgemeinen nicht umhin kommen, Grun
 der englischen Spache zu lernen, um von der primär in englischer Sprache verfassten
 Dokumentation profitieren zu können. Auch andere Informationsquellen, wie z.B. Foren,
 Newsletter, werden i.d.R. in Englisch verfasst.
-Die Eintritthürde muss jedoch - speziell für Anfänger - nicht unnötig erhöht werden,
+Die Einstiegshürde muss jedoch - speziell für Anfänger - nicht unnötig erhöht werden,
 zumal ja schon eine Sprache, die Perl-Programmiersprache gelernt werden soll.
 Alle Verweise auf Artikel, die noch nicht übersetzt wurden, sind auf das englische
 Original gelenkt, um die Navigationsstruktur bestmöglich aufrecht zu erhalten.
@@ -33,7 +34,7 @@ Du wirst lernen, wie man das CPAN und einige ausgesuchte CPAN-Module benutzt.
 
 Es wird eine gute Grundlage sein, worauf Du aufbauen kannst.
 
-Die freie Online-Vesrion des Tutorials is momentan in Entwicklung. Viele Teile sind fetig. 
+Die freie Online-Vesrion des Tutorials is momentan in Entwicklung. Viele Teile sind fetig.
 Zusätzliche Teile werden alle paar Tage veröffentlicht. Der letzte wurde am 12. April 2013 publiziert.
 Wenn Du daran interessiert bist, benachrichtigt zu werden, wenn neue Artikel verfügbar sind,
 dann melde Dich bitte zum <a href="/register">Newsletter</a> an.
@@ -62,29 +63,14 @@ D.h. ich werde Aufgabenstellungen formulieren, um diese dann mit den
 notwendigen Werkzeugen zu lösen. Wenn möglich, werde ich Übungen anbieten,
 mit denen Du das vertiefen kannst, was Du gerade gelernt hast.
 
-<h2>Übersetzungen</h2>
-
-Es sind einige Übersetzungen mit unterschiedlichem Fortschritt in Arbeit:
-<ul>
-  <li><a href="http://cn.perl5maven.com/perl-tutorial">Chinesisch (CN)</a></li>
-  <li><a href="http://tw.perl5maven.com/">Chinesisch (Taiwan)</a></li>
-  <li><a href="http://de.perl5maven.com/">Deutsch</a></li>
-  <li><a href="http://it.perl5maven.com/">Italienisch</a></li>
-  <li><a href="http://br.perl5maven.com/perl-tutorial">Portogiesisch</a></li>
-  <li><a href="http://ro.perl5maven.com/">Rumänisch</a></li>
-  <li><a href="http://ru.perl5maven.com/">Russisch</a></li>
-</ul>
-
-
-
 <p>
 <b>Einführung</b>
 <ol>
 <li><a href="/installation-und-ein-anfang-mit-perl">Installation von Perl, Ausgabe 'Hallo Welt', Sicherheitsnetz (use strict, use warnings)</a></li>
-<li><a href="http://perl5maven.com/perl-editor">Editoren, IDE und Entwicklungsumgebungen für Perl</a></li>
-<li><a href="http://perl5maven.com/perl-on-the-command-line">Perl aufd er Kommandozeile</a></li>
-<li><a href="http://perl5maven.com/core-perl-documentation-cpan-module-documentation">Perl-Basisdokumentation, CPAN-Modul-Dokumentation</a></li>
-<li><a href="http://perl5maven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
+<li><a href="/perl-editor">Editoren, IDE und Entwicklungsumgebungen für Perl</a></li>
+<li><a href="/perl-auf-der-kommandozeile">Perl auf der Kommandozeile</a></li>
+<li><a href="/perl-basis-und-cpan-modul-dokumentation">Perl-Basisdokumentation, CPAN-Modul-Dokumentation</a></li>
+<li><a href="/pod-plain-old-documentation-dokumentationsformat-von-perl">POD - Plain Old Documentation</a></li>
 <li><a href="http://perl5maven.com/debugging-perl-scripts">Debuggen von Perl-Skripten</a></li>
 </ol>
 
@@ -223,7 +209,6 @@ Es sind einige Übersetzungen mit unterschiedlichem Fortschritt in Arbeit:
 <li><a href="http://perl5maven.com/splice-to-slice-and-dice-arrays-in-perl">Splice, um Arrays in Perl zu zerschneiden</a></li>
 <li><a href="http://perl5maven.com/how-to-create-a-perl-module-for-code-reuse">Wie erstellt man ein Perl-Modul für Code-Wiederverwendung?</a></li>
 <li><a href="http://perl5maven.com/object-oriented-perl-using-moose">Objektorientiertes Perl mit Moose</a></li>
-<li><a href="http://perl5maven.com/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a>
 <li><a href="http://perl5maven.com/attribute-types-in-perl-classes-when-using-moose">Attributtypen in Perl-Klassen mit Moose</a>
 </ol>
 

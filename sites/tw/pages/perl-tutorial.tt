@@ -6,6 +6,7 @@
 =newsletter 0
 =published 0
 =author 0
+=translator 0
 =index 0
 =archive 0
 =feed 0
@@ -17,11 +18,20 @@
 <ul>
   <li><a href="/string-functions-length-lc-uc-index-substr">操縱字串的函式：lc, uc, index, substr</a></li>
   <li><a href="/undef-and-defined-in-perl">undef、初始值、以及 defined 函式</a></li>
+  <li><a href="/boolean-values-in-perl">Perl 的布林值</a></li>
 
 <!--
   <li><a href=""></a></li>
 -->
 
+</ul>
+
+<b>串列與陣列</b>
+<ul>
+<li><a href="/unique-values-in-an-array-in-perl">Perl 陣列中的獨特值</a></li>
+<!--
+<li><a href="/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
+-->
 </ul>
 
 For the original, visit the <a href="http://perl5maven.com/perl-tutorial">Perl Tutorial in English</a>

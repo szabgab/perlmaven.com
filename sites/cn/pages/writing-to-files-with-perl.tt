@@ -1,7 +1,8 @@
 =title Perl 文件读写
-=timestamp 2012-12-20T16:45:56
+=timestamp 2013-04-21T16:52:03
 =indexes open, close, write, die, open or die, >, encoding, UTF-8
 =status show
+=original writing-to-files-with-perl
 =books beginner_book
 =author szabgab
 =translator terrencehan

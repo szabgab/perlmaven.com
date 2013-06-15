@@ -6,6 +6,7 @@
 =newsletter 0
 =published 0
 =author 0
+=translator 0
 =index 0
 =archive 0
 =feed 0
@@ -20,6 +21,7 @@
 <li><a href="/redaktor-dlya-perl">Редактор для Perl</a></li>
 <li><a href="/perl-v-komandnoy-stroke">Perl в командной строке</a></li>
 <li><a href="/documentacia-na-perl-i-cpan-moduli">Основная документация Perl и документация на модули CPAN</a></li>
+<li><a href="/pod-ili-prostaya-staraya-dokumentatsia">POD, или Простая cтарая документация</a></li>
 <!--
   <li><a href=""></a></li>
 -->
