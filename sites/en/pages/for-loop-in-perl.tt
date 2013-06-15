@@ -4,9 +4,7 @@
 =status show
 =books beginner_book
 =author szabgab
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
@@ -18,7 +16,7 @@ but this construct is actually available in many programming languages.
 
 =abstract end
 
-<h2>for in Perl</h2>
+<h2>Perl for loop</h2>
 
 The <b>for</b> keyword in Perl can work in two different ways.
 It can work just as a <b>foreach</b> loop works and it can act
@@ -55,7 +53,7 @@ Then, immediately after that the TEST part is executed. If this is false,
 the whole loop is skipped. If the TEST part is true then the BODY is executed followed by
 the STEP part.
 
-(For the real meaning of TRUE an FALSE, check the <a href="/boolean-values-in-perl">boolean values in Perl</a>.)
+(For the real meaning of TRUE and FALSE, check the <a href="/boolean-values-in-perl">boolean values in Perl</a>.)
 
 Then comes the TEST again and it goes on and on, as long as the TEST executes to some true value.
 So it looks like this:

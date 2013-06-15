@@ -1,14 +1,12 @@
 =title 字符串到数字的自动转换
-=timestamp 2013-01-10T10:45:56
+=timestamp 2013-01-10T10:45:57
 =indexes is_number, looks_like_number, Scalar::Util, casting, type conversion
 =status show
 =original automatic-value-conversion-or-casting-in-perl
 =books beginner_book
 =author szabgab
 =translator swuecho
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 

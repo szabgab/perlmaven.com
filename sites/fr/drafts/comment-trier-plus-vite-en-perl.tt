@@ -9,7 +9,6 @@
 =comments 1
 =social 1
 
-
 =abstract start
 
 Sorting a list of files by ASCII ordering of their name works very fast. Even
@@ -103,7 +102,6 @@ The result is another array of small array references.
 In the third step we throw away the sizes and build a list of the filenames only.
 What we originally wanted.
 
-
 <h2>Schwartzian transform</h2>
 
 For the above code we used 2 temporary array, that are not really necessary.
@@ -136,10 +134,8 @@ my @sorted =
     @unsorted;
 </code>
 
-
 Using this algorithm for sorting the 3000 xml files the sorting became "only" 10 times slower than the
 ASCII sort which means it is about 8 times faster than the code we had at the beginning.
-
 
 <h2>Conclusion</h2>
 

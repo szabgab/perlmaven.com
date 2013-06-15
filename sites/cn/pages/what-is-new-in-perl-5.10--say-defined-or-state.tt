@@ -5,9 +5,7 @@
 =original what-is-new-in-perl-5.10--say-defined-or-state
 =author szabgab
 =translator herolee
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
@@ -124,4 +122,4 @@ sub next_counter {
 
 这就比较清晰了。
 
-关于<hl>state</hl>关键字的其他用例，查看<a href="http://szabgab.com/how-to-capture-and-save-warnings-in-perl.html">如何隐藏Perl的多个警告？</a>.
+关于<hl>state</hl>关键字的其他用例，查看<a href="http://perlmaven.com/how-to-capture-and-save-warnings-in-perl">如何隐藏Perl的多个警告？</a>.

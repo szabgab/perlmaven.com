@@ -155,4 +155,3 @@ in this way works without making any changes to the Person module itself.
 Moose automatically accepts every <hl>member</hl> (another name for attributes)
 to be passed during construction.
 
-

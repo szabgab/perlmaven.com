@@ -1,13 +1,11 @@
 ﻿=title 使用Meta CPAN列出名空间的所有Perl模块和版本
-=timestamp 2013-05-23T12:45:56
+=timestamp 2013-05-23T12:46:56
 =indexes CPAN, MetaCPAN, MetaCPAN::API, MetaCPAN::Clients
 =status show
 =original list-all-the-perl-modules-and-distributions-in-a-namespace-using-meta-cpan
 =author szabgab
 =translator herolee
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 

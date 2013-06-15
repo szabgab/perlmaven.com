@@ -313,5 +313,3 @@ or after browsing to the <a href="http://perldoc.perl.org/perlsyn.html">perlsyn<
 I don't recommend the general usage of the stand-alone smart-match operator in perl 5.10 or 5.12.
 I might consider it when we can require 5.14.
 
-
-

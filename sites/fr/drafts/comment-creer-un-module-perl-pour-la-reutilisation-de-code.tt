@@ -103,8 +103,6 @@ This will print the answer: 42.
 
 In this case, the <hl>-I</hl> flag of perl helped us add a directory path to @INC.
 
-
-
 <h2>Change @INC from inside the script</h2>
 
 Because we know that the "My" directory that holds our module is in a fixed place
@@ -168,14 +166,12 @@ The whole task of this call is to add the '.../somedir/lib' to be the first elem
 Once that's done, the subsequent call to  <hl>use My::Math qw(add);</hl> will find the
 'My' directory in '.../somedir/lib' and the Math.pm in '.../somedir/lib/My'.
 
-
 The advantage of this soulution is that the user of the script does not have to remember
 to put the -I... on the command line.
 
 There are other
 <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">ways to change @INC</a>
 for you use in other situations.
-
 
 <h2>Explaining use</h2>
 
@@ -194,7 +190,6 @@ is done calling the <hl>import</hl> function, we can just call the newly importe
 the same script.
 
 What is more interesting is to see the parts of the module.
-
 
 <h2>The explanation of the module</h2>
 
@@ -216,7 +211,6 @@ and arrange for on-demand importing of the functions listed in this array.
 OK, maybe I need to clarify:
 The module "exports" functions and the script "imports" them.
 
-
 The last thing I need to mention is the <hl>1;</hl> at the end of the module.
 Basically the use statement is executing the module and it needs to see some kind
 of a true statement there. It could be anything. Some people put there <hl>42;</hl>,
@@ -230,7 +224,6 @@ That's actually nice, but might still confuse some people at first.
 
 There are also two functions in the module. We decided to export both of them,
 but the user (the author of the script) wanted to import only one of the subroutines.
-
 
 <h2>Conclusion</h2>
 
@@ -256,5 +249,4 @@ Abc::Xyz::Config which indicates the file   .../projectdir/lib/Abc/Xyz/Config.pm
 
 Please avoid calling it just Config.pm. That will confuse both Perl (that comes with its own Config.pm)
 and you.
-
 

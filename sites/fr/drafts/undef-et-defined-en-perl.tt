@@ -81,7 +81,6 @@ if (defined $x) {
 }
 </code>
 
-
 <h2>What is the real value of undef?</h2>
 
 While <b>undef</b> indicates the absence of a value, it is still not unusable.

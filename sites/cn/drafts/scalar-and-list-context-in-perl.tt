@@ -189,7 +189,7 @@ SCALAR context returns the number of elements in it.
 
 <!--
 This will be very important when you look at
-<a href="http://szabgab.com/subroutines-and-functions-in-perl.html">passing parameters to functions</a>
+<a href="http://perlmaven.com/subroutines-and-functions-in-perl">passing parameters to functions</a>
 -->
 
 <h2>Forcing SCALAR context</h2>

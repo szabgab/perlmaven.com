@@ -58,7 +58,6 @@ this is the <a href="https://metacpan.org/release/Test-Simple">Test-Simple</a> d
 There are many other fields. Some that might be more interesting are: <b>version</b>, <b>abstract</b>, <b>author</b>
 which is the PAUSE id of the person who uploaded this release, and date.
 
-
 <h2>Get information about a CPAN distribution</h2>
 
 A CPAN distribution is a tarball or zip file uploaded to CPAN.
@@ -91,7 +90,6 @@ The element of this array are hash references by themselves. Each hash describin
 These hashes have 5 keys, IMHO 3 of them are the most interesting ones: <b>version</b>, <b>module</b>, and
 <b>phase</b> which describes when is this dependency needed. Values can be <b>configure</b>, <b>build</b>, and
 <b>runtime</b>.
-
 
 <h2>DevOps</h2>
 
@@ -211,7 +209,6 @@ function to process the distribution.
     process_distro($module->{distribution});
 </code>
 
-
 The <b>process_distro</b> function is very similar, but because each distribution can depend on several modules, there
 is a loop processing each module.
 
@@ -242,7 +239,6 @@ There can be optional dependencies adding optional features that won't be listed
 These dependencies can be resolved in a dynamic way during the installation process, but are not solved in the static
 META files.
 
-
 <h2>What next?</h2>
 
 Based on this solution we could build all kinds of interesting tools. For example,
@@ -253,7 +249,6 @@ Other possible use is to create a script that would tell me common dependencies 
 or probably more interestingly, the list of dependencies that are not common. Assuming I already
 have an application using a set of modules. I'd like to find out what additional dependencies
 I am going to add if I start using module X?
-
 
 What other task would you like to do?
 
