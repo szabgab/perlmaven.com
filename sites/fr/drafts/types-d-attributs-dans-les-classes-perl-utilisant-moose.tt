@@ -1,9 +1,11 @@
-=title Attribute types in Perl classes when using Moose
-=timestamp 2013-02-26T06:13:10
-=indexes OOP, Moose, object oriented, class, object, instance, constructor, getter, setter, accessor, attribute
+=title Les types d'attributs dans les classes Perl utilisant Moose
+=timestamp 2013-06-22T23:59:59
+=indexes POO, orienté objet, classe, objet, instance, constructeur, accesseurs, modificateurs, attributs
 =status show
+=original attribute-types-in-perl-classes-when-using-moose
 =books advanced_book
 =author szabgab
+=translator oval
 =index 1
 =archive 1
 =feed 1
@@ -12,111 +14,119 @@
 
 =abstract start
 
-In a simple Perl script we usually don't care much about the types of the values,
-but as the application grows, a type system can improve the correctness of the application.
+Dans un script Perl simple, nous n'avons pas l'habitude de beaucoup nous soucier au sujet des types de valeurs.
+Mais dès lors que l'application grandit, un système de type peut aider à améliorer la cohérence de l'application.
 
-Moose lets you define a type for each attribute and then enforces the types via the setters.
+Moose vous permet de définir un type pour chaque attribut, puis force les types via les modificateurs.
 
 =abstract end
 
-After the the first
-<a href="/object-oriented-perl-using-moose">introduction to Object Oriented Perl with Moose</a>,
-you should probaly get familiar with the type-checking system of Moose.
+Après la première <a href="http://perlmaven.com/object-oriented-perl-using-moose">introduction à Perl orienté objet avec Moose</a>,
+vous devriez vous familiariser avec le système de vérification de type de Moose.
 
-<h2>Set the type to be Int</h2>
+<h2>Définir le type Int</h2>
 
-This is our first sample script:
+L'exemple ci-dessous nous montre comment utiliser la classe Personne écrite avec Moose :
 
 <code lang="perl">
 use strict;
 use warnings;
 use v5.10;
 
-use Person;
+use Personne;
 
-my $student = Person->new( name => 'Joe' );
-$student->year(1988);
-say $student->year;
-$student->year('23 years ago');
+my $etudiant = Personne->new( nom => 'Martin' );
+$etudiant->annee(1988);
+say $etudiant->annee; # 1988
+$etudiant->annee('il y a 23 ans'); # erreur !
 </code>
 
-After loading the Person module (the class), we create the $student object
-by calling the "new" constructor of the class.
-Then we call the "year" accessor and set the value to 1998. After printing the value
-we try to set it to "23 years ago".
+Après le chargement du module de Personne (la classe), nous créons l'objet $etudiant en appelant le constructeur de la classe, <i>new</i>.
+Ensuite, nous appelons "annee" en mode modificateur afin de lui assigner la valeur 1988 passée en argument.
+Après nous appelons "annee" en mode accesseur afin d'afficher sa valeur 1998.
+Enfin, nous essayons de lui assigner la valeur "il y a 23 ans", ce qui provoquera une erreur (voir plus loin).
 
-In the module you can see two attributes. The "year" attribute has an <hl>isa</hl> entry
-with a value <hl>Int</hl>. Because of this, the setter Moose creates will restrict the
-values it accepts to integers.
+L'exemple ci-dessous nous montre comment écrirer la classe Personne avec Moose :
 
 <code lang="perl">
-package Person;
+package Personne;
 use Moose;
 
-has 'name' => (is => 'rw');
-has 'year' => (isa => 'Int', is => 'rw');
+has 'nom' => (is => 'rw');
+has 'annee' => (isa => 'Int', is => 'rw');
 
 1;
 </code>
 
-Save the module in "somedir/lib/Person.pm" and save the script in "somedir/bin/app.pl" then
-from within the somedir directory run the script with "perl -Ilib bin/app.pl"
+Dans ce module, vous pouvez voir deux attributs: nom et annee. L'attribut "annee" a son option <hl>isa</hl> valorisée à <hl>Int</hl>.
+Pour cette raison, le modificateur de Moose va restreindre pour cet attribut les valeurs acceptables à l'ensemble des nombres entiers.
 
-After printing the value 1988, we get the following error:
+Afin de voir les résultats des deux exemples ci-dessus, veuillez suivre les points suivants :
+<ul>
+<li>Enregistrez le module "<répertoire_de_votre_choix>/lib/Personne.pm"</li>
+<li>Sauvegardez le script dans "<même_répertoire_de_votre_choix>/bin/app.pl"</li>
+<li>Puis, à partir du répertoire choisi dans les points précédents, exécutez le script avec "perl -Ilib bin/app.pl"</li>
+</ul>
+
+Le script va afficher la valeur 1988, suivie de l'erreur suivante :
 
 <code>
-Attribute (year) does not pass the type constraint because:
-   Validation failed for 'Int' with value "23 years ago"
-       at accessor Person::year (defined at lib/Person.pm line 5) line 4
-   Person::year('Person=HASH(0x19a4120)', '23 years ago')
-       called at script/person.pl line 13
+Attribute (annee) does not pass the type constraint because:
+   Validation failed for 'Int' with value "il y a 23 ans"
+       at accessor Personne::annee (defined at lib/Personne.pm line 5) line 4
+   Personne::annee('Personne=HASH(0x19a4120)', 'il y a 23 ans')
+       called at bin/app.pl line 13
 </code>
 
-This error message shows that Moose did not accept the string "23 years ago" as an Integer.
+Ce message d'erreur indique que Moose n'a pas accepté la chaîne "il y a 23 ans" comme un entier.
 
-<h2>Another class as a type constraint</h2>
+<h2>Définir un type de classe</h2>
 
-Besides the
-<a href="https://metacpan.org/module/Moose::Util::TypeConstraints#Default-Type-Constraints">default type constraints</a>,
-Moose also allows you to use the name of any existing class as a type constraint.
+Outre les <a href="https://metacpan.org/module/Moose::Util::TypeConstraints#Default-Type-Constraints">contraintes de type par défaut (EN)</a> (comme <hl>Int</hl>),
+Moose vous permet également d'utiliser le nom d'une classe existante comme une contrainte de type.
 
-For example you can declare that the "birthday" attribute must be a DateTime object.
+Par exemple, vous pouvez déclarer que l'attribut "anniversaire" doit être un objet DateTime.
 
 <code lang="perl">
-package Person;
+package Personne;
 use Moose;
 
-has 'name'     => (is => 'rw');
-has 'birthday' => (isa => 'DateTime', is => 'rw');
+has 'nom' => (is => 'rw');
+has 'anniversaire' => (isa => 'DateTime', is => 'rw');
 
 1;
 </code>
 
-Try the example script:
+Essayez l'exemple de script ci-dessous :
 
 <code lang="perl">
 use strict;
 use warnings;
 use v5.10;
 
-use Person;
+use Personne;
 use DateTime;
 
-my $student = Person->new( name => 'Joe' );
-$student->birthday( DateTime->new( year => 1988, month => 4, day => 17) );
-say $student->birthday;
-$student->birthday(1988);
+my $etudiant = Person->new( name => 'Joe' );
+$etudiant->anniversaire( DateTime->new( year => 1988, month => 4, day => 17) );
+say $etudiant->anniversaire;
+$etudiant->anniversaire(1988);
 </code>
 
-You can see, the first call to the "birthday" setter receives a DateTime object
-created on the spot. This call works well. The second call receives the number 1988
-and throws an exception similar to the previous one:
+Vous pouvez voir concernant les appels au modificateur de l'attribut "aniversaire" que :
+<ul>
+<li>au premier appel, le modificateur reçoit un objet DateTime créé à la volée. Cet appel fonctionne bien.</li>
+<li>au deuxième appel, le modificateur reçoit le numéro 1988. Cet appel ne fonctionne pas.</li>
+</ul>
+
+Le premier appel ne provoque rien. L'attribut est bien valorisé, comme le montre l'affichage par <hl>say</hl>.
+
+Le deuxième appel provoque une exception similaire à celle vue dans la section précédente de cet article :
 
 <code>
-Attribute (birthday) does not pass the type constraint because:
+Attribute (anniversaire) does not pass the type constraint because:
     Validation failed for 'DateTime' with value 1988
-       at accessor Person::birthday (defined at lib/Person.pm line 5) line 4
+       at accessor Personne::anniversaire (defined at lib/Personne.pm line 5) line 4
     Person::birthday('Person=HASH(0x2143928)', 1988)
-       called at script/person.pl line 14
+       called at bin/app.pl line 14
 </code>
-
