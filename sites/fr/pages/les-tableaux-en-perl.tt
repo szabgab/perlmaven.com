@@ -1,14 +1,12 @@
 =title Les tableaux en Perl
-=timestamp 2013-06-15:45:02
+=timestamp 2013-06-15T15:45:02
 =indexes tableau, tableaux, longueur, taille, @, foreach, Data::Dumper, scalar, push, pop, shift
 =status show
 =original perl-arrays
 =books beginner_book
 =author szabgab
 =translator oval
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
