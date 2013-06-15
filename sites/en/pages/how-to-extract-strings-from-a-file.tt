@@ -191,7 +191,7 @@ The result is:
 
 Perfect.
 
-<h2>The solution</hl>
+<h2>The solution</h2>
 
 Now we can combine the "looping over the lines" part with the "fetch the string from one line" part and get the following solution:
 
