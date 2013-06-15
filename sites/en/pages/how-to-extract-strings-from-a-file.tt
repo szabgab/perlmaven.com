@@ -74,7 +74,7 @@ while (my $line = <$fh>) {
 
 So what comes in that place?
 
-<h2>Extracting data from a single string</hl>
+<h2>Extracting data from a single string</h2>
 
 Before inserting it in the while loop, let's try this on a single string:
 
