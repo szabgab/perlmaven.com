@@ -1,5 +1,5 @@
 =title Scalar found where operator expected
-=timestamp 2013-02-15T01:05:06
+=timestamp 2013-06-16T06:00:00
 =indexes errore di sintassi, scalar found, operator expected
 =status show
 =original scalar-found-where-operator-expected.tt
@@ -57,7 +57,7 @@ La linea corretta sarebbe <hl>print 42, "\n";</hl>.
 
 <h2>String found where operator expected</h2>
 
-In this code we have left out a concatenation operator <hl>.</hl>, and we got the same error message:
+In questo codice abbiamo dimenticato l' operatore di concatenazione <hl>.</hl>, e riceviamo lo stesso messaggio d'errore:
 
 <code lang="perl">
 use strict;
@@ -73,7 +73,7 @@ syntax error at ex.pl line 54, near ""Foo"  "Bar""
 Execution of ex.pl aborted due to compilation errors.
 </code>
 
-The intended code looks like this: <hl>my $name = "Foo" . "Bar";</hl>.
+Il codice corretto sarebbe: <hl>my $name = "Foo" . "Bar";</hl>.
 
 <h2>Number found where operator expected</h2>
 
@@ -85,7 +85,7 @@ my $x = 23;
 my $z =  $x 19;
 </code>
 
-Generates this error message:
+Genera questo messaggio d'errore:
 
 <code>
 Number found where operator expected at ex.pl line 5, near "$x 19"
@@ -94,13 +94,13 @@ syntax error at ex.pl line 5, near "$x 19"
 Execution of ex.pl aborted due to compilation errors.
 </code>
 
-This code is probably missing an addition <hl>+</hl>, or multiplication <hl>*</hl> operator,
-though that could be a repetition operator <hl>x</hl> as well.
+In questo codice probabilmente mance un operatore di addizione <hl>+</hl> o di moltiplicazione <hl>*</hl>,
+ma potrebbe anche trattarsi di un operatore di ripetizione <hl>x</hl>.
 
-<h2>Syntax error while comma is missing</h2>
+<h2>Errore di sintassi per la mancanza di una virgola</h2>
 
-A missing comma is not always recognized as a missing operator.
-For example this code:
+La mancanza di una virgola non viene sempre riconosciuta come mancanza di un operatore.
+Per esempio questo codice:
 
 <code lang="perl">
 use strict;
@@ -112,10 +112,10 @@ my %h = (
 );
 </code>
 
-generates the following error message: <b>syntax error at ... line ..., near "bar"</b>
-without any further details.
+genera il seguente messaggio d'errore: <b>syntax error at ... line ..., near "bar"</b>
+senza ulteriori dettagli.
 
-Adding a comma after the number 23 will fix the code:
+Aggiungendo una virgola dopo il numero 23 si risolve il problema:
 
 <code lang="perl">
 my %h = (
@@ -124,7 +124,7 @@ my %h = (
 );
 </code>
 
-I even prefer to add a comma after every pair in a hash (so in this case, after the number 19 too):
+Personalmente preferisco aggiungere una virgola dopo ogni coppia in un hash (in questo caso, anche dopo il numero 19):
 
 <code lang="perl">
 my %h = (
@@ -133,7 +133,7 @@ my %h = (
 );
 </code>
 
-This habit helps me to avoid this kind of syntax error most of the cases.
+Questa abitudine mi aiuta a evitare gli errori di sintassi come quello qui sopra in quasi tutti i casi.
 
 
 <h2>Scalar found where operator expected at</h2>
@@ -155,7 +155,7 @@ syntax error at ... line 7, near "$x $y"
 Execution of ... aborted due to compilation errors.
 </code>
 
-Again, there can be a numerical or a string operator between $x and $y.
+Di nuovo, può esserci un operatore numerico o stringa tra $x e $y.
 
 <h2>Array found where operator expected</h2>
 
@@ -167,8 +167,8 @@ my @x = (23);
 my $z =  3 @x;
 </code>
 
-<h2>What other cases do you encounter often?</h2>
+<h2>Quali altri casi vi capita spesso di incontrare?</h2>
 
-Do you have other interesting cases where we get this type of syntax error?
+Conoscete altri casi interessanti in cui viene generato questo tipo di errore di sintassi?
 
 
