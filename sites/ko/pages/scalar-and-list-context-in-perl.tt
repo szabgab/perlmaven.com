@@ -1,0 +1,278 @@
+=title 펄에서의 스칼라 그리고 목록 문맥, 배열의 사이즈
+=timestamp 2013-04-10T11:45:56
+=indexes scalar, list, array, size, length, context, Perl
+=status show
+=books beginner_book
+=author szabgab
+=translator kangyunchang
+=index 1
+=archive 1
+=feed 1
+=comments 1
+=social 1
+
+=abstract start
+
+이번 <a href="/perl-tutorial">펄 튜토리얼</a>에서는 펄에서의
+<b>문맥 민감성</b>에 대해서 살펴보겠습니다.
+
+대부분의 다른 언어와 마찬가지로 영어도 단어는 여러가지 뜻을 가질수 있습니다.
+예를들면 "left"는 여러가지의 뜻을 가집니다.
+
+I left the building. (나는 빌딩을 떠났습니다.)
+
+I turned left at the building. (나는 빌딩에서 왼쪽으로 돌았습니다.)
+
+우리는 단어 주변의 문장들을 통해 정확한 의미를 이해합니다.
+이것을 문맥이라 부릅니다.
+
+Perl 5도 위와 유사합니다.
+단어와 함수 호출, 다른 표현식이 문맥에 따라 다른 뜻을 가질 수 있습니다.
+이런 연유로 배우기는 조금 어렵지만 덕분에 표현력은 더 풍부해집니다.
+
+=abstract end
+
+펄에는 두 가지 중요한 문맥인 스칼라 문맥과 목록 문맥이 있습니다.
+
+<h2>목록 문맥에서의 배열</h2>
+
+다음 예제를 살펴 보겠습니다. 
+
+<code lang="perl">
+my @words = ('Foo', 'Bar', 'Baz');
+my @names = @words;
+</code>
+
+앞 예제의 할당문 이후에 <h1>@names</h1>에는 <hl>@words</hl> 안에 있던 값들이 복사됩니다.
+
+다른 배열로 배열을 할당하면 배열의 내용을 복사합니다.
+
+<h2>스칼라 문맥에서의 배열</h2>
+
+<code lang="perl">
+my @words = ('Foo', 'Bar', 'Baz');
+my $people =  @words;
+</code>
+
+이번에는 <hl>$people</hl> 스칼라 변수에 <h1>@words</h1> 배열을 할당 했습니다.
+
+다른 언어들은 다르게 동작하겠지만 펄은 이 할당의 경우
+<b>배열의 원소의 개수</b>를 스칼라 변수에 할당합니다. 
+
+이 동작은 임의적이며 앞의 예제에서는 그다지 유용하지는 않습니다.
+하지만 이 동작이 유용한 경우도 많습니다.
+
+<h2>스칼라 문맥과 목록 문맥</h2>
+
+위에 2개는 스칼라와 목록 문맥이라 부릅니다.
+그것은 (스칼라 문맥에서) 하나의 값을 얻을 경우를 기대하고, 
+여러개의 값이 예상되는경우(목록 문맥)를 기대합니다.
+목록 문맥에서 값의 수는 0, 1, 2, 또는 어느 숫자가 될 수도 있습니다.
+
+<h2>if 문의 문맥</h2>
+
+이번 예제를 봅시다:
+
+<code lang="perl">
+my @words = ('Foo', 'Bar', 'Baz');
+
+if (@words) {
+   say "There are some words in the array";
+}
+</code>
+
+내부조건에 <hl>if</hl>문장은 정확하게 하나의 값을 기대합니다.
+그렇다면 반드시 스칼라 문맥이어야 합니다.
+
+지금쯤 우리는 스칼라 문맥에서 배열의 값은 원소의 수라는 것을 알고 있습니다.
+우리는 역시 배열이 비어 있을때 0(that is <a href="/boolean-values-in-perl">FALSE</a>)인 것을 알고, 다른 어떤 양수
+(that is <a href="/boolean-values-in-perl">TRUE</a>), 배열에 1개 또는 여러개의 원소가 있을때를 알고 있습니다.
+
+그렇기 때문에 위의 임의의 결정은 <hl>if (@words)</hl>코드에서 체크를 합니다
+만약 배열이 비어었다면 실패를 그리고 배열에 어떤 내용이 있을경우를 체크하는 코드 입니다.
+
+만약 배열이 비어 있으면 if 구문은 true가 됩니다.
+
+<h2>스칼라 그리고 목록 문맥</h2>
+
+<a href="/the-year-19100">이전문장</a>에서 우리는 <hl>localtime()</hl>에서 스칼라와 리스트문맥이 
+어떻게 동작하는지 보았고, 스칼라와 목록 문맥에서 배열이 동작하지를 보았습니다.
+
+이 문맥에 대한 더 일반적인 규칙은 없습니다, 그리고 특별한 경우를 배워야 합니다, 
+그리고 일반적으로 목록 문맥은 명백합니다.
+어떤 경우에 우리는 <a href="/core-perl-documentation-cpan-module-documentation">perldoc</a>을 사용하여 함수를 볼떄
+우리는 각 함수의 기능의 설명을 볼수 있습니다.
+최소한 이경우에는 스칼라 그리고 목록 문맥이 서로 다른 결과를 볼수 있습니다.
+
+우리는 펄에서 몇개의 예제를 보고 문맥이 어떤 종류로 만들어 졌는지 알수 있어야 합니다.
+
+<h2>스칼라 문맥 만들기</h2>
+
+우리는 스칼라 함수에 무엇을 할당하지는 스칼라문맥에서 일어날 일과는 관계가 없다는 것을 보았습니다. 
+위와 같은 방법을 설명 합니다:
+
+<code>
+$x = SCALAR;
+</code>
+
+배열의 각각의 원소도 역시 스칼라 이고, 배열에게 할당은 스칼라 문맥 만드는 것입니다.
+
+<code>
+$word[3] = SCALAR;
+</code>
+
+양쪽에 두개의 스칼라 문맥을 만들고 연결 연산자는 두개의 문자열을 기대 합니다:
+
+<code>
+"string" . SCALAR;
+</code>
+
+뿐만 아니라
+
+<code>
+SCALAR . "string"
+</code>
+
+So
+역시
+
+<code lang="perl">
+my @words = ('Foo', 'Bar', 'Baz');
+say "Number of elements: " . @words;
+say "It is now " . localtime();
+</code>
+
+아래와 같이 결과가 나타납니다.
+
+<code>
+Number of elements: 3
+It is now Thu Feb 30 14:15:53 1998
+</code>
+
+수치 연산자는 일반적으로 2개의 숫자를 기대 합니다 - 두개의 스칼라 - 양쪽에.
+그래서 수치 연산자는 스칼라 문맥을 양쪽에 만듭니다.
+
+<code>
+5 + SCALAR;
+
+SCALAR + 5;
+</code>
+
+<h2>목록 문맥 만들기</h2>
+
+목록 문맥의 구조를 만들기: 
+
+배열에 할당하는것은 그중 하나입니다:
+
+<code>
+@x = LIST;
+</code>
+
+다른 리스트에 할당 합니다:
+
+<code>
+($x, $y) = LIST;
+</code>
+
+하나의 원소를 가지고 있는 리스트 조차도 마찬가입니다:
+
+<code>
+($x) =  LIST;
+</code>
+
+사용자를 쉽게 속일수 있는 중요한 문제를 우리에게 알려줍니다:
+
+<h2>가로를 사용할 때가 중요하다?</h2>
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my @words = ('Foo', 'Bar', 'Baz');
+
+my ($x) = @words;
+my $y   = @words;
+
+say $x;
+say $y;
+</code>
+
+결과:
+
+<code>
+Foo
+3
+</code>
+
+괄호는 매우 중요한 몇가지 장소중 하나 입니다.
+
+첫번째는 스칼라 변수의 <b>리스트</b>에 <hl>my ($x) = @words;</hl> 할당 됩니다.
+오른쪽에 목록 문맥을 만들었습니다. 즉, 배열의 값은<b>values</b> 왼쪽에 복사 됩니다.
+왜냐하면 오직 하나의 스칼라이고, 배열의 첫번쨰 원소가 있었기 때문에 하나만 복사하고 나머지는 무시합니다.
+
+두번째 할당은 <hl>my $y = @words;</hl> 직접 스칼라 변수에 할당 합니다.
+우변에 스칼라 문맥을 만들게 됩니다. 스칼라 문맥에서는 배열의 원소의 수를 반환하게 됩니다.
+이것은 <a href="/subroutines-and-functions-in-perl">passing parameters to functions</a> 볼떄 매우 중요합니다.
+
+<h2>스칼라 문맥을 강제하기</h2>
+
+어떻게 하면 배열의 원소의 수를 프린트 할 수 있을까요?
+
+다음 방법을 봅시다:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my @words = ('Foo', 'Bar', 'Baz');
+
+say @words;
+say localtime();
+</code>
+
+그리고 결과를 봅니다.
+
+<code>
+FooBarBaz
+3542071011113100
+</code>
+배열은 어떻게든 값을 알 수 있습니다.
+
+두번째는 혼란스럽습니다.  <hl>time()</hl>함수는 우리가 생각하는 결과와 다릅니다.
+
+해결방법은 스칼라 함수를 사용하여 매개변수를 만드는 것입니다.
+실제로 이것이 스칼라 함수의 작업의 전부 입니다. 
+어떤 사람들은 <b>casting</b> 처럼 복수와 단수로 생각하더라도 펄은 자주 사용하지 않습니다.
+
+<code lang="perl">
+say scalar @words;
+say scalar localtime();
+</code>
+
+결과는 아마 아래와 같을것입니다:
+
+<code>
+3
+Mon Nov  7 21:02:41 2011
+</code>
+
+<h2>펄에서 배열의 사이즈와 길이</h2>
+
+간단히 요약하자면, 펄에서 <hl>scalar()</hl>함수를 강제로 배열에서 사용하면 스칼라 문맥이되어
+사이즈를 리턴할 수 있습니다.
+
+<h2>교묘한 방법</h2>
+
+가끔 당신은 다음과 같은 코드를 볼 수 있습니다:
+
+<code lang="perl">
+0 + @words;
+</code>
+
+이것은 기본적으로 배열의 사이즈를 얻을수 있는 교묘한 방법입니다. <hl> + </hl> 연산자는
+양쪽에 스칼라 문맥을 만듭니다. 배열은 스칼라 문맥에서 크기를 반환합니다. 여기에 0을 추가하면 
+배열의 사이즈는 변하지 않고 결과를 반환 합니다.
+
+<hl>scalar</hl>함수를 쓸때는 약간 더 길게, 하지만 더 명확하게 사용하는 것을 권장합니다.
