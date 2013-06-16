@@ -206,7 +206,7 @@ to make sure they - the names of the fields - will always converted to lower cas
 (That's what the <hl>FetchHashKeyName</hl> parameter did, when connecting to the database.)
 
 <code lang="perl">
-my $sql = 'SELECT fname, lname FROM people WHERE id > ? AND id < ?';
+my $sql = 'SELECT fname, lname FROM people WHERE id >= ? AND id < ?';
 my $sth = $dbh->prepare($sql);
 $sth->execute(1, 10);
 while (my @row = $sth->fetchrow_array) {
