@@ -10,7 +10,7 @@
 =comments 1
 =social 1
 
-=abstract strart
+=abstract start
 
 <b>Simbol global memerlukan nama paket yang jelas</b> adalah wajar,
 dan menurut saya itu merupakan pesan kesalahan Perl yang menyesatkan. Setidaknya bagi para pemula.
