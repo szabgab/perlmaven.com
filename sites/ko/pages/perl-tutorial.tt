@@ -82,6 +82,7 @@
 <li><a href="/using-a-queue-in-perl">Perl에서 큐 사용하기</a></li>
 <li><a href="/undef-on-perl-arrays-and-hashes">Perl 배열과 해시에 대한 undef 호출</a></li>
 <li><a href="/what-is-new-in-perl-5.10--say-defined-or-state">Perl 5.10의 새로운 기능들 say, //, state</a></li>
+<li><a href="/multi-dimensional-arrays-in-perl">Perl에서의 다차원 배열</a></li>
 </ol>
 
 <!--
