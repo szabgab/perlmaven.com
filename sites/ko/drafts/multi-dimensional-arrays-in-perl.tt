@@ -1,26 +1,27 @@
 =title Multi dimensional arrays in Perl
-=timestamp 2013-06-08T18:30:01
+=timestamp 2013-06-21T03:00:00
 =indexes Data::Dumper, ARRAY
 =status show
+=original multi-dimensional-arrays-in-perl
 =books beginner_book
 =author szabgab
+=translator gypark
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-Technically speaking there are no multi-dimensional arrays in Perl, but you can use
-arrays in Perl to act as if they had more than one dimension.
+기술적으로 말해서 Perl에는 다차원 배열은 없습니다. 그러나 Perl의 배열이 마치 2차원 이상인 것처럼
+동작하도록 할 수 있습니다.
 
-In Perl each element of an array can be a <b>reference</b> to another array, but syntactically
-they would look like a two-dimensional array.
+Perl에서 배열의 각 원소는 다른 배열의 <b>레퍼런스</b>일 수 있고, 이것은 마치 2차원 배열처럼 보일 것입니다.
 
 =abstract end
 
-<h2>Creating a matrix in Perl</h2>
+<h2>Perl에서 행렬 만들기</h2>
 
-Let's see the following code:
+다음 코드를 보도록 합시다:
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -34,45 +35,45 @@ $matrix[1][1] = 'one-one';
 $matrix[1][2] = 'one-two';
 </code>
 
-We just created an array called <hl>@matrix</hl>. It is a regular one-dimensional array in Perl,
-but we accessed it as if t was two dimensional.
+우리는 단지 <hl>@matrix</hl>라는 배열을 생성했습니다. 이것은 Perl에서 평범한 1차원 배열입니다만, 우리는
+이것이 마치 2차원 배열인 것처럼 접근하고 있습니다.
 
-What do you think the following line will do?
+다음 라인을 실행하면 어떻게 될까요?
 
 <code lang="perl">
 print "$matrix\n";
 </code>
 
-I know, it was a trick question. The program won't even compile.
-You will get the following error:
+네, 이 질문은 속임수입니다. 프로그램은 컴파일조차 되지 않고 다음과 같은 에러가 날 것입니다:
 
 <code>
 Global symbol "$matrix" requires explicit package name at ... line ..
 Execution of ... aborted due to compilation errors.
 </code>
 
-If you read about the
 <a href="/global-symbol-requires-explicit-package-name">global symbol requires explicit package name</a>
-error, you will see that it basically means you have not declared a variable. In this case <hl>$matrix</hl>.
-Indeed, if you read <a href="/perl-arrays">how to access array elements in Perl</a>, you will see that
-you'd access the first element of the <hl>@matrix</hl> by using <hl>$matrix[0]</hl>. Notice the square brackets
-after the variable name!
+에러에 관한 기사를 읽었다면, 여러분은 이 에러가 여러분이 변수를 선언하지 않았음을 의미하는 것을 아실 겁니다.
+이 경우는 <hl>$matrix</hl> 말이죠. 게다가,
+<a href="http://perlmaven.com/perl-arrays">Perl에서 배열의 원소에 접근하는 법</a>을 읽으셨다면, 여러분은
+<hl>@matrix</hl> 배열의 첫번째 원소에 접근할 때 <hl>$matrix[0]</hl>를 사용하는 것을 아실 겁니다.
+변수 이름 뒤에 있는 대괄호를 눈여겨보세요!
 
-There are 3 things here that can be a bit confusing:
+여기서 다소 혼동스러울 법한 것이 세 가지 있습니다:
 
-<hl>@matrix</hl>, <hl>$matrix[0]</hl> and <hl>$matrix</hl>. The first two are related. The third is unrelated.
-The first one is an array. The second one is an element of an array and the third one is an <b>unrelated</b>
-scalar. If you declare an array such as <hl>@matrix</hl> you can automatically use <hl>$matrix[0]</hl> to access
-the first element, but if you'd also like to use <hl>$matrix</hl> you'd need to declare that separately.
+<hl>@matrix</hl>, <hl>$matrix[0]</hl> 그리고 <hl>$matrix</hl>가 그것입니다. 처음 두 가지는 서로 연관되어 있습니다.
+세번째는 다른 두 가지와 무관합니다. 첫번째 것은 배열입니다. 두번째 것은 배열의 한 원소이고, 세번째 것은
+<b>별개의</b> 스칼라입니다. <hl>@matrix</hl>와 같이 배열을 선언했다면 자동적으로 <hl>$matrix[0]</hl>을 써서
+첫번째 원소에 접근할 수 있습니다. 그러나 여러분이 <hl>$matrix</hl>도 사용하고 싶다면 이것은 따로 선언해야 합니다.
 
-That leads us to warning. While Perl is OK with you having the exact same variable name for an array and for
-a scalar, it is strongly recommended you don't have them in the same code. It can just confuse the reader.
+주의할 점이 있습니다. Perl은 여러분이 배열과 스칼라 변수에 완전히 똑같은 이름을 붙이는 것을 허용하긴 하지만,
+하나의 코드 안에서 그렇게 이름이 같은 두 변수를 두지 않는 것을 강력하게 권장합니다. 읽는 사람을 혼란스럽게
+할 수 있기 때문입니다.
 
-After this short detour, let's go back to our example:
+잠시 옆으로 샜었습니다. 다시 우리 예제로 돌아옵시다:
 
-<h2>Matrix</h2>
+<h2>행렬</h2>
 
-Let's see what would the following print:
+다음 코드의 출력이 어떻게 나올지 봅시다:
 
 <code lang="perl">
 print "$matrix[0]\n";       # ARRAY(0x814dd90)
@@ -80,31 +81,29 @@ print "$matrix[0][0]\n";    # zero-zero
 print "$matrix[1][1]\n";    # one-one
 </code>
 
-The first line prints <b>ARRAY(0x814dd90)</b>. As I mentioned, Perl does not have multi-dimensional arrays.
-What you see here is that the first element of the <hl>@matrix</hl> array is a <b>reference</b> to an internal,
-so-called anonymous array that holds the actual values. The <b>ARRAY(0x814dd90)</b> is the address of that
-internal address in the memory. You can't do much with this, except of knowing that you probably need to
-"de-reference" that address. In our case that de-referencing is done by the addition of another
-pair of square brackets.
+첫번째 라인은 <b>ARRAY(0x814dd90)</b>라고 출력합니다. 언급드렸다시피, Perl에는 다차원 배열은 없습니다.
+여기서 여러분이 알 수 있는 것은 <hl>@matrix</hl> 배열의 첫번째 원소가 소위 익명 배열이라고 부르는, 실제 값들을
+담고 있는 내부 자료형의 <b>레퍼런스</b>라는 것입니다. <b>ARRAY(0x814dd90)</b>는 매모리 내에 그 자료형의 주소입니다.
+여러분이 이 주소를 가지고 딱히 할 수 있는 것은 없고, 단지 이 주소를 "디레퍼런스(de-reference)"할 필요가
+생길 거라는 것만 아시면 됩니다. 이 경우에는 또 하나의 대괄호 쌍을 덧붙임으로써 디레퍼런스가 이루어지고 있습니다.
 
-That way you can get back the original values we put in the array.
+이런 방법으로 여러분은 우리가 배열에 넣었던 원래의 값을 얻어낼 수 있습니다.
 
-<h2>Visualizing a multi-dimensional array</h2>
+<h2>다차원 배열을 그리기</h2>
 
-There is a module called Data::Dumper, which comes with Perl and that can provide
-a reasonably readable view of the matrix we created. In order to use it, you first
-need to load it to memory with the <hl>use</hl> statement.
-Then calling the <hl>Dumper</hl> function and passing a <b>reference</b> to it. The
-back-slash <hl>\</hl>, just before the <hl>@matrix</hl>, creates a reference to the array.
-The <hl>Dumper</hl> function serializes the data structure and returns a string, which is
-then printed by the <hl>print</hl> function. 
+Perl에 기본적으로 딸려오는 Data::Dumper라는 모듈을 사용하면 우리가 생성한 행렬을 꽤 읽을 만하게 보여줍니다.
+이 모듈을 사용하기 위해서는 먼저 <hl>use</hl> 구문을 써서 모듈을 메모리에 불러와야 합니다.
+그 다음 <hl>Dumper</hl> 함수를 호출하면서 <b>레퍼런스</b>를 인자로 넘겨주면 됩니다.
+<hl>@matrix</hl> 앞에 백슬래쉬 <hl>\</hl>를 붙이면 이 배열에 대한 레퍼런스가 생성됩니다.
+<hl>Dumper</hl> 함수는 자료 구조를 직렬화한 후 문자열의 형태로 반환하고, <hl>print</hl> 함수가 이것을 받아서
+출력합니다.
 
 <code lang="perl">
 use Data::Dumper qw(Dumper);
 print Dumper \@matrix;
 </code>
 
-The output will look like this:
+출력은 다음과 같은 형태일 것입니다:
 
 <code>
 $VAR1 = [
@@ -119,26 +118,26 @@ $VAR1 = [
         ];
 </code>
 
-The <hl>$VAR1</hl> at the beginning is just a standard name Data::Dumper uses. You can disregard it for now.
-the rest of the output shows 3 pairs of square brackets. The outermost pair represents the main array we call
-<hl>@matrix</hl>. the first internal pair holds a single value (zero-zero). This represents the first row in the matrix.
-The second internal pair has 3 values. The first one is <a href="/undef-and-defined-in-perl">undef</a>,
-this is the place of <hl>$matrix[1][0]</hl> where we have not assigned a value. The other two we assigned.
+앞부분의 <hl>$VAR1</hl>은 단지 Data::Dumper가 사용하는 기본 이름입니다. 여기서는 무시하셔도 됩니다.
+나머지 출력에는 세 쌍의 대괄호가 나옵니다. 가장 바깥쪽의 대괄호 쌍은 우리가 <hl>@matrix</hl>라고 부르는
+주 배열을 표현합니다. 안쪽에 있는 첫번째 대괄호 쌍은 하나의 값(zero-zero)을 담고 있습니다. 이것은 행렬의
+첫번째 행을 표현하고 있습니다. 안쪽에 있는 두번째 대괄호 쌍은 세 개의 값을 담고 있습니다.
+첫번째 값은 <a href="http://perlmaven.com/undef-and-defined-in-perl">undef</a>이고, 이것은 우리가
+값을 할당하지 않은 <hl>$matrix[1][0]</hl>의 자리입니다. 나머지 두 개의 값은 우리가 할당한 값입니다.
 
 
-<h2>Two dimensional array or what?</h2>
+<h2>2차원 배열이 아닌 그 무엇?</h2>
 
-As you can see this resembles a <b>two dimensional array</b>, but its shape is not rectangular, as you
-would expect from a matrix. The first row has only one element while the second row has 3. (even if one of them is undef).
+보다시피 이렇게 <b>2차원 배열</b>을 흉내내었습니다만, 이 배열의 모양이 행렬에서 볼 수 있는 직사각형의 형태가
+아닙니다. 첫번째 행은 원소가 하나 뿐이고 두번째 행은 세 개입니다(비록 그 중 하나는 undef이지만).
 
-In a similar way there could be elements in the <hl>@matrix</hl> array that have not other dimension. For example
-we could write:
+비슷한 원리로 <hl>@matrix</hl>에는 차원이 아예 없는 원소가 있을 수도 있습니다. 예를 들어 다음과 같이 쓸 수 있습니다:
 
 <code lang="perl">
 $matrix[2] = 'two';
 </code>
 
-which would change the output of Data::Dumper to this:
+이제 Date::Dumper의 출력은 다음과 같이 바뀔 것입니다:
 
 <code>
 $VAR1 = [
@@ -154,22 +153,20 @@ $VAR1 = [
         ];
 </code>
 
+여기서 바깥쪽 배열에는 원소가 세 개 있습니다. 처음 두 개는 내부의 배열들이고, 세번째 것은 단순한 스칼라입니다.
 
-Here the outer array has 3 elements. The first two are the internal arrays, and the 3rd one is
-a simple scalar.
+따라서 "행렬"의 "행"들 중 하나는 아예 차원이 존재하지 않습니다.
 
-So one of the "rows" in the "matrix" does not even have a dimension.
+<h2>3차원 이상?</h2>
 
-<h2>More than 2 dimensions?</h2>
-
-What if we add the following code?
+다음 코드를 추가하면 어떻게 될까요?
 
 <code lang="perl">
 $matrix[1][3][0] = 130;
 $matrix[1][3][1] = 131;
 </code>
 
-The Dumper output will look like this:
+Dumper의 출력은 다음과 같을 것입니다:
 
 <code>
 $VAR1 = [
@@ -189,15 +186,11 @@ $VAR1 = [
         ];
 </code>
 
-Look, the second internal array now has a 4th element and that element itself, is an array
-(or rather a reference to an array).
+두번째 내부 배열은 이제 네번째 원소가 생겼고, 그 네번째 원소는 다시 배열(더 정확히는 배열에 대한 레퍼런스)입니다.
 
-<h2>Conclusion</h2>
+<h2>결론</h2>
 
-An array in Perl can have any number of "dimensions" and it does not need to form a "regular" shape.
-Each element can have an internal array. And each element of the internal array can have its own
-internal array and so on.
+Perl의 배열은 몇 "차원"이든 될 수 있고, "반듯한" 형태를 이룰 필요는 없습니다.
+배열의 각 원소는 내부의 배열이 될 수 있으며, 그 내부 배열의 각 원소는 다시 내부 배열이 될 수 있고, 이렇게 반복됩니다.
 
-Data::Dumper can help us figure out what is in such a data structure.
-
-
+Data::Dumper를 사용하면 이런 자료 구조 안에 무엇이 들어 있는지를 살펴보는데 도움이 됩니다.
