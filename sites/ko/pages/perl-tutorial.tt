@@ -42,8 +42,9 @@
 <ol>
 </ol>
 
-<b>리스트와 배열</b>
+<b>리스트와 목록</b>
 <ol>
+<li><a href="/scalar-and-list-context-in-perl">문맥 민감성</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">배열에서 고유 값들만 남기기</a></li>
 </ol>
 
