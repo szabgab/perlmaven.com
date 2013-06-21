@@ -1,0 +1,95 @@
+=title How to exit from a Perl script?
+=timestamp 2013-06-21T15:30:01
+=indexes exit, $?
+=status show
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+If you followed the <a href="/perl-tutorial">Perl Tutorial</a> so far every script finished when
+the execution reached the last line of code in your file.
+
+There are however case when you'd like to stop the execution earlier.
+
+For example, your ask the user how it she and if she is under 13 you stop the script.
+
+=abstract end
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+print "How old are you? ";
+my $age = <STDIN>;
+if ($age < 13) {
+    print "You are too young for this\n";
+    exit;
+}
+
+print "Doing some stuff ...\n";
+</code>
+
+Just a plain call to <hl>exit</hl>.
+
+<h2>The exit code</h2>
+
+If you have used the Unix/Linux shell, then you might know each program
+when exits provides an exit code that can be found in the <hl>$?</hl> variable.
+You can provide this exit value from a perl script as well by passing a number to
+the <hl>exit()</hl> call.
+
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+exit 42;
+</code>
+
+For example here we set the exit code to 42. (The default is 0.)
+
+<h2>Checking the exit code on Linux</h2>
+
+On a Unix/Linux box you would run the script using <hl>perl script.pl</hl> and then
+you can examine the exit code using <hl>echo $?</hl>.
+
+
+<h2>Examining exit code in Perl</h2>
+
+If you happen to execute one perl script from another, for example
+using the <a href="/running-external-programs-from-perl">system</a> function, 
+Perl has the same variable <hl>$?</hl> containing the exit code of the "other program".
+
+If you have the about code saved as script.pl and you have another "executor.pl" like this:
+
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+say system "perl script.pl";
+say $?;
+say $? >> 8;
+</code>
+
+The output will be:
+
+<code>
+10752
+10752
+42
+</code>
+
+The call to <hl>system</hl> will return the exit code and it will be also saved in the <hl>$?</hl>
+variable of Perl. The important thing to not is that this value contains 2 bytes and the actual
+exit code is in the upper byte. So in order to get back the 42 as above we have to right-shift the
+bits using the <hl>&gt;&gt;</hl> bitwise operator with 8 bits. That's what we see in see in the
+last line of the above example.
+
