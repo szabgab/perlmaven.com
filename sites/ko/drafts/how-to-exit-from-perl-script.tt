@@ -1,21 +1,23 @@
-=title How to exit from a Perl script?
-=timestamp 2013-06-21T15:30:01
+=title Perl 스크립트를 종료하는 방법
+=timestamp 2013-06-22T02:00:00
 =indexes exit, $?
 =status show
+=original how-to-exit-from-perl-script
 =books beginner_book
 =author szabgab
+=translator gypark
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-If you followed the <a href="/perl-tutorial">Perl Tutorial</a> so far every script finished when
-the execution reached the last line of code in your file.
+여러분이 <a href="/perl-tutorial">Perl 튜토리알</a>을 여기까지 따라오시는 동안 모든 스크립트들은
+여러분이 만든 파일 안에 들어있는 코드의 마지막 줄에 도달했을 때 종료되었습니다.
 
-There are however case when you'd like to stop the execution earlier.
+하지만 더 일찍 실행을 종료하고자 하는 경우가 있습니다.
 
-For example, your ask the user how it she and if she is under 13 you stop the script.
+예를 들어, 사용자에게 나이를 물어보고 13살 미만이라면 스크립트가 종료되는 식으로 말이죠.
 
 =abstract end
 
@@ -34,15 +36,14 @@ if ($age < 13) {
 print "Doing some stuff ...\n";
 </code>
 
-Just a plain call to <hl>exit</hl>.
+그저 평범하게 <hl>exit</hl>를 호출하면 됩니다.
 
-<h2>The exit code</h2>
+<h2>종료 상태값</h2>
 
-If you have used the Unix/Linux shell, then you might know each program
-when exits provides an exit code that can be found in the <hl>$?</hl> variable.
-You can provide this exit value from a perl script as well by passing a number to
-the <hl>exit()</hl> call.
-
+여러분이 유닉스/리눅스 셀을 쓴다면, 모든 프로그램이 종료할 때 종료 상태값을 제공하고
+그 값은 <hl>$?</hl> 변수에 담기는 것을 알고 계실 겁니다.
+펄 스크립트 역시도 <hl>exit()</hl>를 호출할 때 숫자를 인자로 전달함으로써 종료 상태값을
+제공할 수 있습니다.
 
 <code lang="perl">
 use strict;
@@ -52,22 +53,20 @@ use 5.010;
 exit 42;
 </code>
 
-For example here we set the exit code to 42. (The default is 0.)
+예를 들어 여기에서는 종료 상태값을 42로 설정했습니다. (기본값은 0입니다.)
 
-<h2>Checking the exit code on Linux</h2>
+<h2>리눅스에서 종료 상태값 확인하기</h2>
 
-On a Unix/Linux box you would run the script using <hl>perl script.pl</hl> and then
-you can examine the exit code using <hl>echo $?</hl>.
+유닉스/리눅스 시스템에서는 여러분은 스크립트를 <hl>perl script.pl</hl>처럼 실행했을 것이고, 종료
+상태값은 <hl>echo $?</hl>를 써서 검사할 수 있습니다.
 
+<h2>Perl 안에서 종료 상태값 검사하기</h2>
 
-<h2>Examining exit code in Perl</h2>
+만일, 예를 들어 <a href="http://perlmaven.com/running-external-programs-from-perl">system</a> 함수를 사용하여,
+하나의 펄 스크립트 안에서 다른 펄 스크립트를 실행한다면, Perl에도 동일한 <hl>$?</hl> 변수가 있어서
+"다른 프로그램"의 종료 상태값을 저장하게 됩니다.
 
-If you happen to execute one perl script from another, for example
-using the <a href="/running-external-programs-from-perl">system</a> function, 
-Perl has the same variable <hl>$?</hl> containing the exit code of the "other program".
-
-If you have the about code saved as script.pl and you have another "executor.pl" like this:
-
+여러분에게 script.pl이라는 코드가 있고 "executor.pl"이라는 또다른 코드가 다음과 같이 되어 있다면:
 
 <code lang="perl">
 use strict;
@@ -79,7 +78,7 @@ say $?;
 say $? >> 8;
 </code>
 
-The output will be:
+출력은 다음과 같을 것입니다:
 
 <code>
 10752
@@ -87,9 +86,8 @@ The output will be:
 42
 </code>
 
-The call to <hl>system</hl> will return the exit code and it will be also saved in the <hl>$?</hl>
-variable of Perl. The important thing to not is that this value contains 2 bytes and the actual
-exit code is in the upper byte. So in order to get back the 42 as above we have to right-shift the
-bits using the <hl>&gt;&gt;</hl> bitwise operator with 8 bits. That's what we see in see in the
-last line of the above example.
+<hl>system</hl> 함수를 호출하면 종료 상태값을 반환하며, 이 값은 또한 Perl의 <hl>$?</hl> 변수에도 저장됩니다.
+중요한 것은 이 값은 2바이트 크기이고 실제 종료 상태값은 상위 바이트에 들어간다는 점입니다.
+따라서 위에서처럼 42를 다시 얻기 위해서는 비트단위 연산자 <hl>&gt;&gt;</hl>를 사용하여 오른쪽으로
+8비트 쉬프트해야 합니다. 위 예제에서 마지막 줄에서 볼 수 있습니다.
 
