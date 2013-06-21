@@ -15,7 +15,7 @@ the execution reached the last line of code in your file.
 
 There are however case when you'd like to stop the execution earlier.
 
-For example, your ask the user how it she and if she is under 13 you stop the script.
+For example, you ask the user how old they are, and if they are under 13 you stop the script.
 
 =abstract end
 
