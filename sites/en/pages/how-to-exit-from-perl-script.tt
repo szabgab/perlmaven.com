@@ -54,6 +54,15 @@ exit 42;
 
 For example here we set the exit code to 42. (The default is 0.)
 
+<h2>Success or failure?</h2>
+
+In Perl usually 0 or <a href="/undef-and-defined-in-perl">undef</a> mean failure,
+and some other <a href="/boolean-values-in-perl">true value</a> means success.
+
+In the Unix/Linux shell world, 0 means success and other numbers mean failure.
+Usually each application has its own set of values indicating different error conditions.
+
+
 <h2>Checking the exit code on Linux</h2>
 
 On a Unix/Linux box you would run the script using <hl>perl script.pl</hl> and then
