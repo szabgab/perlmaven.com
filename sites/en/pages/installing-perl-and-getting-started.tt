@@ -1,6 +1,7 @@
 =title Installing and getting started with Perl
 =timestamp 2012-08-08T10:45:56
 =indexes strict, warnings, say, print, chomp, scalar, $
+=tags screencast
 =status show
 =books beginner_book
 =author szabgab
