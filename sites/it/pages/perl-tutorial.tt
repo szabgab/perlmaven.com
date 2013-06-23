@@ -21,6 +21,7 @@
   <li><a href="/documentazione-base-perl-documentazione-moduli-cpan">Documentazione base di Perl e documentazione dei moduli CPAN</a></li>
   <li><a href="/pod-plain-old-documentation-di-perl">La Plain Old Documentation (POD) di Perl</a></li>
   <li><a href="/debug-di-script-perl">Debug di script Perl</a></li>
+  <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
 <!--
 -->
 </ol>
