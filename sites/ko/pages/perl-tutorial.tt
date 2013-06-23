@@ -43,10 +43,11 @@
 <li><a href="/how-to-exit-from-perl-script">exit</a></li>
 </ol>
 
-<b>리스트와 목록</b>
+<b>리스트와 배열</b>
 <ol>
 <li><a href="/scalar-and-list-context-in-perl">문맥 민감성</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">배열에서 고유 값들만 남기기</a></li>
+<li>스택과 <a href="/using-a-queue-in-perl">큐</a></li>
 </ol>
 
 <b>서브루틴</b>
@@ -79,9 +80,9 @@
 
 <b>기타</b>
 <ol>
+<li><a href="/how-to-create-a-perl-module-for-code-reuse">코드 재사용을 위한 Perl 모듈 만들기</a></li>
 <li><a href="/how-to-eliminate-a-value-in-the-middle-of-an-array-in-perl">Perl의 배열 중간에 있는 값을 제거하는 법</a></li>
 <li><a href="/how-to-capture-and-save-warnings-in-perl">Perl에서 경고메시지를 가로채어 저장하기</a></li>
-<li><a href="/using-a-queue-in-perl">Perl에서 큐 사용하기</a></li>
 <li><a href="/undef-on-perl-arrays-and-hashes">Perl 배열과 해시에 대한 undef 호출</a></li>
 <li><a href="/what-is-new-in-perl-5.10--say-defined-or-state">Perl 5.10의 새로운 기능들 say, //, state</a></li>
 <li><a href="/multi-dimensional-arrays-in-perl">Perl에서의 다차원 배열</a></li>
