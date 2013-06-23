@@ -2,13 +2,11 @@
 =timestamp 2013-06-16T06:00:00
 =indexes errore di sintassi, scalar found, operator expected
 =status show
-=original scalar-found-where-operator-expected.tt
+=original scalar-found-where-operator-expected
 =books beginner_book
 =author szabgab
 =translator giatorta
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 

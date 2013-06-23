@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on May 15, 2013.
+parts are being published every few days. The latest one was published on June 21, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -86,7 +86,8 @@ to practice what you have learned.
 
 <b>Files</b>
 <ol>
-<li>die, warn and exit</li>
+<li><a href="/how-to-exit-from-perl-script">exit</a></li>
+<li>warn and die</li>
 <li><a href="/writing-to-files-with-perl">Writing to files</a></li>
 <li><a href="/appending-to-files">Appending to files</a></li>
 <li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
@@ -112,7 +113,7 @@ to practice what you have learned.
 <li><a href="/sorting-arrays-in-perl">Sorting arrays in Perl</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
 <li><a href="/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
-<li>Stack and queue</li>
+<li>Stack and <a href="/using-a-queue-in-perl">queue</a></li>
 <li>reverse</li>
 <li>the ternary operator</li>
 <li>Loop controls: next and last</li>
@@ -151,7 +152,7 @@ to practice what you have learned.
 <ol>
 <li>Perl -X operators</li>
 <li>Perl pipes</li>
-<li>Running external programs</li>
+<li>Running external programs <a href="/running-external-programs-from-perl">using system</a></li>
 <li>Unix commands: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
 <li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
 <li>Windows/DOS commands: del, ren, dir</li>
@@ -191,6 +192,7 @@ to practice what you have learned.
 <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse</a></li>
 <li><a href="/object-oriented-perl-using-moose">Object Oriented Perl using Mooses</a></li>
 <li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a>
+<li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
 </ol>
 
 

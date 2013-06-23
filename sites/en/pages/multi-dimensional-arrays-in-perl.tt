@@ -35,7 +35,7 @@ $matrix[1][2] = 'one-two';
 </code>
 
 We just created an array called <hl>@matrix</hl>. It is a regular one-dimensional array in Perl,
-but we accessed it as if t was two dimensional.
+but we accessed it as if it was two dimensional.
 
 What do you think the following line will do?
 
