@@ -1,14 +1,12 @@
 =title Perl 中的时间 
-=timestamp 2013-04-04T12:45:17
+=timestamp 2013-04-04T12:45:18
 =indexes time, localtime, gmtime, Time::HiRes, DateTime
 =status show
 =original the-year-19100
 =books beginner_book
 =author szabgab
 =translator swuecho
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 

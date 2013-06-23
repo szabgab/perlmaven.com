@@ -1,5 +1,5 @@
 =title Tutoriel de Perl
-=timestamp 2013-04-15T22:45:56
+=timestamp 2013-04-15T00:00:20
 =description tutoriel en ligne gratuit sur Perl pour ceux qui ont besoin de maintenir du code Perl existant, pour ceux qui utilisent Perl pour des scripts simples, et pour ceux qui développent des applications en Perl
 =tags formation, cours, débutant, tutoriel
 =status show
@@ -9,9 +9,7 @@
 =published 0
 =author 0
 =translator oval
-=index 0
 =archive 0
-=feed 0
 =comments 0
 =social 1
 
@@ -76,7 +74,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li>Les documents heredoc</li>
 <li><a href="http://perlmaven.com/string-functions-length-lc-uc-index-substr">Les fonctions prédéfinies pour les chaînes de caractères : length, lc, uc, index, substr</a> (EN)</li>
 <li><a href="/jeu-devine-un-nombre">Jeu "Devine le nombre" (rand, int)</a></li>
-<li><a href="http://perlmaven.com/while-loop">La boucle while en Perl</a> (EN)</li>
+<li><a href="/la-boucle-while-en-perl">La boucle while en Perl</a></li>
 </ol>
 
 <b>Les fichiers</b>
@@ -95,10 +93,10 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <b>Les listes et les tableaux</b>
 <ol>
 <li>La boucle foreach en Perl</li>
-<li><a href="http://perlmaven.com/for-loop-in-perl">La boucle for en Perl</a> (EN)</li>
+<li><a href="/la-boucle-for-en-perl">La boucle for en Perl</a></li>
 <li>Les listes en Perl</li>
 <li>Utiliser des modules</li>
-<li><a href="http://perlmaven.com/perl-arrays">Les tableaux en Perl</a> (EN)</li>
+<li><a href="/les-tableaux-en-perl">Les tableaux en Perl</a></li>
 <li>Traiter les paramètres de la ligne de commande : @ARGV et Getopt::Long</li>
 <li><a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS</a> (EN)</li>
 <li><a href="/la-fonction-predefinie-join">La fonction prédéfinie join</a></li>
@@ -168,7 +166,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 
 <b>Quelques exemples d'utilisation de Perl</b>
 <ol>
-<li><a href="http://perlmaven.com/how-to-replace-a-string-in-a-file-with-perl">Comment remplacer une chaîne dans un fichier avec Perl ? (slurp)</a> (EN)</li>
+<li><a href="/comment-remplacer-une-chaine-de-caracteres-dans-un-fichier-avec-perl">Comment remplacer une chaîne dans un fichier avec Perl ? (<i>slurp</i>)</a></li>
 <li>Lire des fichiers Excel avec Perl</li>
 <li>Créer des fichiers Excel avec Perl</li>
 <li>Envoyer des courriels avec Perl</li>

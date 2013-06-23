@@ -6,16 +6,14 @@
 =books beginner_book
 =author szabgab
 =translator oval
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
 =abstract start
 
 Félicitations ! Votre jeune pousse vient tout juste d'être rachetée par une grande société.
-Vous devez maintenant remplacer <b>Tous droits réservés, Ma Jeune Pousse</b> by <b>Tous droits réservés, La grande société</b> dans le fichier LISEZMOI.txt.
+Vous devez maintenant remplacer <b>Tous droits réservés, Ma Jeune Pousse</b> par <b>Tous droits réservés, La grande société</b> dans le fichier LISEZMOI.txt.
 
 =abstract end
 
@@ -70,10 +68,10 @@ sub lire_fichier {
 
     open my $entree, '<:encoding(UTF-8)', $nom_de_fichier or die "Impossible d'ouvrir '$nom_de_fichier' en lecture : $!";
     local $/ = undef;
-    my $all = <$entree>;
+    my $tout = <$entree>;
     close $entree;
 
-    return $all;
+    return $tout;
 }
 
 sub ecrire_fichier {
@@ -87,9 +85,9 @@ sub ecrire_fichier {
 }
 </code>
 
-Dans la fonction <hl>read_file</hl>, la variable $/ (aussi appelée $INPUT_RECORD_SEPARATOR) est "valorisée" à <hl>undef</hl>.
-C'est ce qui est généralement considéré comme le <b>mode <i>slurp</i></b>. Cette variable indique à l'opérateur "read-line" <hl>&lt;&gt;</hl> de Perl
-de lire en une fois tout le contenu du fichier et de mettre ce contenu dans la variable scalaire située dans la partie gauche de l'assignation : <hl>my $all = &lt;$entree>;</hl>. Nous avons même utilisé le mot-clé <hl>local</hl> lorsque nous avons valorisé <hl>$/</hl> : ainsi, cette valorisation disparaîtra une fois que
-nous sortirons du bloc englobant - dans cet exemple, une fois que nous sortons de la fonction <hl>read_file</hl>.
+Dans la fonction <hl>lire_fichier</hl>, la variable $/ (aussi appelée $INPUT_RECORD_SEPARATOR) est "valorisée" à <hl>undef</hl>.
+C'est ce qui est généralement considéré comme le <b>mode <i>slurp</i></b>. Cette variable indique à l'opérateur "lire-une-ligne" <hl>&lt;&gt;</hl> de Perl
+de lire en une fois tout le contenu du fichier et de mettre ce contenu dans la variable scalaire située dans la partie gauche de l'assignation : <hl>my $tout = &lt;$entree>;</hl>. Nous avons même utilisé le mot-clé <hl>local</hl> lorsque nous avons valorisé <hl>$/</hl> : ainsi, cette valorisation disparaîtra une fois que
+nous sortirons du bloc englobant - dans cet exemple, une fois que nous sortons de la fonction <hl>lire_fichier</hl>.
 
-La fonction <hl>write_file</hl> est beaucoup plus simple à lire. Elle est là seulement afin de rendre la partie principale du code similaire à la solution précédente.
+La fonction <hl>ecrire_fichier</hl> est beaucoup plus simple à lire. Elle est là seulement afin de rendre la partie principale du code similaire à la solution précédente.

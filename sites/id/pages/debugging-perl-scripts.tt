@@ -6,9 +6,7 @@
 =books beginner_book
 =author szabgab
 =translator khadis
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
@@ -29,7 +27,7 @@ ia tidak berjalan dengan semestinya, daripada waktu yang kita habiskan di awal-a
 
 Sebelum program dijalankan, semuanya dalam kondisi baik.
 
-Setelah program dijalankan, ada sesuatu yang tak beres, dan dalam kondisi yang buruk.
+Setelah program dijalankan, ada sesuatu yang tak beres, dan program berjalan dalam kondisi yang buruk.
 
 Tugas kita adalah menemukan di mana letak kesalahannya lalu membetulkannya.
 
@@ -37,7 +35,7 @@ Tugas kita adalah menemukan di mana letak kesalahannya lalu membetulkannya.
 
 Pada dasarnya, pemrograman adalah mengubah dunia dengan memindahkan data dalam variabel-variabel.
 
-Pada setiap langkah program kita mengubah beberapa data dalam sebuah variabel, atau sesuatu di 'dunia nyata".
+Pada setiap langkah program kita mengubah beberapa data dalam sebuah variabel, atau sesuatu di "dunia nyata".
 (Contohnya pada kepingan cakram atau pada layar.)
 
 Ketika Anda menulis sebuah program Anda berpikir melalui setiap langkah: nilai apa yang harus dipindahkan ke variabel yang mana.
@@ -63,7 +61,7 @@ IDE, seperti <a href="http://www.activestate.com/">Komodo</a>,
 <a href="http://padre.perlide.org/">Padre</a> dilengkapi
 dengan debugger berbasis grafis. Dalam beberapa hal saya akan menyiapkan sebuah video tentang ketiganya.
 
-<h2>statement Print</h2>
+<h2>Statement Print</h2>
 
 Banyak orang masih menggunakan strategi lama dengan menambahkan statement print ke dalam kode.
 
@@ -106,7 +104,7 @@ Untuk struktur data yang komplek (references, arrays dan hashes) Anda dapat meng
 <code lang="perl">
 use Data::Dumper qw(Dumper);
 
-print Dumper\@an_array;
+print Dumper \@an_array;
 print Dumper \%a_hash;
 print Dumper $a_reference;
 </code>

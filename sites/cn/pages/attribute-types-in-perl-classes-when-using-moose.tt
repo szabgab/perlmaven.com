@@ -1,14 +1,12 @@
 =title Moose的属性类型
-=timestamp 2013-02-26T06:13:10
+=timestamp 2013-02-26T06:13:11
 =indexes OOP, Moose, object oriented, class, object, instance, constructor, getter, setter, accessor, attribute
 =status show
 =original attribute-types-in-perl-classes-when-using-moose
 =books advanced_book
 =author szabgab
 =translator terrencehan
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 

@@ -1,11 +1,10 @@
 =title Using the built-in debugger of Perl
 =timestamp 2013-03-07T19:45:56
-=indexes debugger, -d, debug, screencast
+=indexes debugger, -d, debug
+=tags screencast
 =status show
 =author szabgab
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
