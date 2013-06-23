@@ -73,6 +73,7 @@
     <li><a href="/running-external-programs-from-perl">使用Perl的system运行外部程序</a></li>
     <li><a href="/how-to-eliminate-a-value-in-the-middle-of-an-array-in-perl">怎样从数组中删除某个值？</a></li>    
     <li><a href="/how-to-capture-and-save-warnings-in-perl">在Perl里如何捕获并保存警告</a></li>    
+    <li><a href="/fetching-meta-data-from-meta-cpan">从Meta CPAN获取元数据</a></li>    
 </ul>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
