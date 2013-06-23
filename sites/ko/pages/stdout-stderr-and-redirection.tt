@@ -1,4 +1,4 @@
-=title Standard output, standard error and command line redirection
+=title 표준 출력, 표준 에러, 리다이렉션
 =timestamp 2013-06-24T02:00:00
 =indexes STDOUT, STDERR, /dev/null, 
 =status show
