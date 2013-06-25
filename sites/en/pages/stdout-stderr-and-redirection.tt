@@ -1,8 +1,8 @@
 =title Standard output, standard error and command line redirection
-=timestamp 2013-06-22T09:13:10
+=timestamp 2013-06-25T12:50:10
 =indexes STDOUT, STDERR, /dev/null
-=status draft
-=books advanced_book
+=status show
+=books beginner_book
 =author szabgab
 =archive 1
 =comments 1

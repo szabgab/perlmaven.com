@@ -1,9 +1,9 @@
 =title 표준 출력, 표준 에러, 리다이렉션
-=timestamp 2013-06-24T02:00:00
+=timestamp 2013-06-25T12:50:11
 =indexes STDOUT, STDERR, /dev/null
-=status draft
+=status show
 =original stdout-stderr-and-redirection
-=books advanced_book
+=books beginner_book
 =author szabgab
 =translator gypark
 =archive 1
