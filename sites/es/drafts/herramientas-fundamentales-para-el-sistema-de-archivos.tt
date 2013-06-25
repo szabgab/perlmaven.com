@@ -1,28 +1,27 @@
-=title Las 19 herramientas de sistema de archivos más importantes en Perl 5
+=title 15 herramientas fundamentales para manipular el sistema de archivos en Perl 5
 =timestamp 2012-07-19T12:45:56
 =indexes cwd, tempdir, catfile, catdir, dirname, FindBin, $Bin, File::Spec, File::Basename, File::Temp, Cwd
 =status show
 =author szabgab
 =translator enrique
-=index 1
-=archive 1
-=feed 1
+=origin the-most-important-file-system-tools
+=archive 0
 =comments 1
 =social 1
 
 
 =abstract start
 
-Al escribir scripts Perl para manipular el sistema de archivos suelo tener que cargar muchos módulos.
-Gran parte de las funciones que necesito están dispersas en distintos módulos. Algunas son funciones integradas de perl, otras se encuentra en módulos estándar incluidos en perl, y otras deben instalarse desde CPAN.
+Cuando escribo scripts Perl para manipular el sistema de archivos suelo tener que cargar muchos módulos.
+Gran parte de las funciones que necesito están dispersas en distintos módulos. Algunas son funciones integradas de perl, otras se encuentran en módulos estándar incluidos en perl, y otras deben instalarse desde CPAN.
 
-Veamos las 15 herramientas más usadas del kit.
+Voy a describir las 15 herramientas que más uso.
 
 =abstract end
 
 <h2>Ruta actual</h2>
 
-A menudo tengo que determinar en qué directorio me encuentro. El módulo <b>Cwd</b> tiene una función con el mismo nombre, pero escrita en minúsculas<b>cwd</b>, que devuelve el <b>directorio de trabajo actual</b>.
+A menudo tengo que determinar en qué directorio me encuentro. El módulo <b>Cwd</b> incluye una función con el mismo nombre, pero escrito en minúsculas (<b>cwd</b>), que devuelve el <b>directorio de trabajo actual</b>.
 
 <img src="/img/Hdd_icon.svg" style="float: right" />
 
@@ -38,7 +37,7 @@ print cwd, "\n";
 
 <h2>Directorio temporal</h2>
 
-Frecuentemente tengo que crear unos cuantos archivos temporales y quiero asegurarme de que se eliminen automáticamente cuando finalice el script. La manera más sencilla de hacer esto es crear un directorio temporal mediante la función <b>tempdir</b> de <b>File::Temp</b>, con la opción CLEANUP activada.
+A menudo tengo que crear unos cuantos archivos temporales y quiero asegurarme de que se eliminen automáticamente cuando finalice el script. La manera más sencilla de hacer esto es crear un directorio temporal mediante la función <b>tempdir</b> de <b>File::Temp</b>, con la opción CLEANUP activada.
 
 
 <code lang="perl">
@@ -60,8 +59,8 @@ close $fh;
 
 <h2>Ruta independiente del sistema operativo</h2>
 
-Aunque el código anterior funciona tanto en Linux como en Windows, en Windows se suelen usar barras diagonales inversas para separar las partes de una ruta. Además, esto no funcionará en VMS.
-Creo. Esto es una misión para la función <b>catfile</b> de <b>File::Spec::Functions</b>:
+Aunque el código anterior funciona tanto en Linux como en Windows, en Windows se suelen usar barras diagonales inversas para separar las partes de una ruta. Además, en VMS no funcionará.
+Creo. Para evitar problemas, podemos usar la función <b>catfile</b> de <b>File::Spec::Functions</b>:
 
 <code lang="perl">
 use strict;
@@ -77,11 +76,11 @@ print "$dir\n";
 print catfile($dir, 'un_archivo.txt'), "\n";
 </code>
 
-Prueba este código. Verás impreso el nombre del directorio temporal y el archivo anexado al final.
+Prueba este código. Verás el nombre del directorio temporal y el archivo anexado al final.
 
 <h2>Cambiar de directorio</h2>
 
-Suele ocurrir que es más fácil cambiar primero el directorio de trabajo a un directorio temporal y trabajar en él. Puede ocurrir a menudo al escribir pruebas, pero también en otros casos. Para esto, podemos usar la función predefinida <b>chdir</b>.
+A veces es más fácil cambiar primero el directorio de trabajo a un directorio temporal y trabajar en dicho directorio. Puede ocurrir a menudo al escribir pruebas, pero también en otros casos. Para esto, podemos usar la función predefinida <b>chdir</b>.
 
 
 <code lang="perl">
@@ -98,13 +97,13 @@ chdir $dir;
 print cwd, "\n";
 
 open my $fh, '>', 'temp.txt';
-print $fh, 'text';
+print $fh, 'texto';
 close $fh;
 </code>
 
-Esto podría funcionar, pero si File::Temp intente quitar el directorio, seguiremos "dentro", ya que lo hemos convertido en el directorio de trabajo.
+Esto podría funcionar, pero cuando File::Temp intenta quitar el directorio, seguiremos "dentro", ya que lo hemos convertido en el directorio de trabajo.
 
-Por ejemplo, aparece el siguiente mensaje de error:
+Esto hará que aparezca un mensaje de error similar al siguiente:
 
 <code>
 cannot remove path when cwd is /tmp/P3DZP_rmqg for /tmp/P3DZP_rmqg:
@@ -121,7 +120,7 @@ my $original = cwd;
 chdir $original;
 </code>
 
-Sin embargo, esto presenta un pequeño problema. ¿Qué ocurre si tengo que llamar a <b>exit()</b> en la mitad del script o si algo desencadena una excepción que finaliza el script before antes de que llegue a <b>chdir $original</b>?
+Sin embargo, esto presenta un pequeño problema. ¿Qué ocurre si tengo que llamar a <b>exit()</b> en la mitad del script o si algo desencadena una excepción que finaliza el script antes de que llegue a <b>chdir $original</b>?
 
 Perl nos permite solucionarlo encapsulando la última función en un bloque <b>END</b>.
 Esto garantizará la ejecución del código independientemente de cuándo y cómo se salga del script.
@@ -139,7 +138,7 @@ END {
 
 <h2>Ruta relativa</h2>
 
-Al desarrollar un proyecto con varios archivos (p. ej., uno o más scripts, algunos módulos, puede que algunas plantillas...), si no deseo "instalarlos", la mejor estructura de directorios es asegurarse de que todo está en un lugar fijo <b>con respecto</b> a los scripts.
+Al desarrollar un proyecto con varios archivos (p. ej., uno o más scripts, algunos módulos, puede que algunas plantillas, etc.), si no deseo "instalarlos", la mejor estructura de directorios es asegurarse de que todo está en un lugar fijo <b>con respecto</b> a los scripts.
 
 Por esta razón, generalmente tengo un directorio de proyecto que contiene un subdirectorio para scripts, otro para módulos (lib), otro para plantillas, etc.:
 
@@ -171,9 +170,9 @@ La variable <b>$bin</b> exportada por el módulo <b>FindBin</b> contendrá la ru
 
 La función <b>dirname</b> de <b>File::Basename</b> consume una ruta y devuelve esa ruta sin la parte final.
 
-La última línea solo es la función <b>catdir</b> de <b>File::Spec::Functions</b>, que es básicamente a la función catfile que vimos antes.
+La última línea contiene la función <b>catdir</b> de <b>File::Spec::Functions</b>, que es básicamente análoga a la función catfile que vimos antes.
 
-En lugar de imprimir en pantalla usarás el valor devuelto por catdir para especificar las plantillas.
+En lugar de imprimir en pantalla usamos el valor devuelto por catdir para especificar las plantillas.
 
 <h2>Cargar módulos desde una ruta relativa</h2>
 
@@ -193,10 +192,10 @@ use lib catdir(dirname($Bin), 'lib');
 use Lanzador::Cohetes;
 </code>
 
-Por supuesto, supongo que tienes un archivo lib/Cohetes/Lanzador.pm
+Por supuesto, supongo que tienes un archivo lib/Lanzador/Cohetes.pm
 
 
-<h2>¿Dónde está lo demás?</h2>
+<h2>¿Dónde están las demás herramientas?</h2>
 
 Podría explayarme más, pero creo que es suficiente como primera parte de esta serie.
 Si no quieres perderte los demás artículos, <a href="/register">suscríbete a este boletín</a>. Es gratis.
