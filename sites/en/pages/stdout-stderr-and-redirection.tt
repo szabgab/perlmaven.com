@@ -1,8 +1,8 @@
 =title Standard output, standard error and command line redirection
-=timestamp 2013-06-22T09:13:10
-=indexes STDOUT, STDERR, /dev/null, 
+=timestamp 2013-06-25T12:50:10
+=indexes STDOUT, STDERR, /dev/null
 =status show
-=books advanced_book
+=books beginner_book
 =author szabgab
 =archive 1
 =comments 1
@@ -29,7 +29,7 @@ are the irregularities, will be sent to the Standard Error channel.
 If the user wants to see only the regular output, they can redirect the error channel to a file
 and examine it later, separately.
 
-<h2>How to print error messages?<?h2>
+<h2>How to print error messages?</h2>
 
 In Perl, when a perl program starts, these two output channels are represented by two symbols:
 <hl>STDOUT</hl> represents the Standard Output, and <hl>STDERR</hl> represents the Standar Error.
@@ -55,7 +55,7 @@ You won't see that they went to different output channels.
 
 <h2>Default output channel</h2>
 
-Actually, you could even leave out the word <hl>STDERR</hl> from the above script
+Actually, you could even leave out the word <hl>STDOUT</hl> from the above script
 and only write:
 
 <code lang="perl">
@@ -112,7 +112,7 @@ You can use any names there.
 
 On Unix/Linux system there is a special file called <hl>/dev/null</hl>.
 It behaves like a black hole. Whatever is printed to that file will
-disappear without any trace. The main ue of this is when there is a program
+disappear without any trace. The main use of this is when there is a program
 and the user wants to throw away either the regular output or the error messages.
 
 For example, you might have an application, one that you cannot change,

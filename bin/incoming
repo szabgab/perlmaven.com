@@ -15,7 +15,7 @@ chomp @remotes;
 #die $cmd;
 #system $cmd;
 
-my @branches = qx{git branch --remote};
+my @branches = grep { ! m{origin/HEAD} } qx{git branch --remote};
 chomp @branches;
 foreach my $remote (@branches) {
 	my @out = grep { $_ !~ /^[0-9a-f]{40}/ }

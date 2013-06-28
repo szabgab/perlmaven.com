@@ -17,6 +17,7 @@
 <b>소개</b>
 <ol>
 <li><a href="/perl-editor">Perl 에디터</a></li>
+<li><a href="/perl-on-the-command-line.tt">명령줄에서의 Perl</a></li>
 <li><a href="/debugging-perl-scripts">Perl 스크립트 디버깅</a></li>
 </ol>
 
@@ -41,6 +42,7 @@
 <b>파일</b>
 <ol>
 <li><a href="/how-to-exit-from-perl-script">exit</a></li>
+<li><a href="/stdout-stderr-and-redirection">표준 출력, 표준 에러, 리다이렉션</a></li>
 </ol>
 
 <b>리스트와 배열</b>
@@ -86,6 +88,7 @@
 <li><a href="/undef-on-perl-arrays-and-hashes">Perl 배열과 해시에 대한 undef 호출</a></li>
 <li><a href="/what-is-new-in-perl-5.10--say-defined-or-state">Perl 5.10의 새로운 기능들 say, //, state</a></li>
 <li><a href="/multi-dimensional-arrays-in-perl">Perl에서의 다차원 배열</a></li>
+<li><a href="/the-default-variable-of-perl">Perl의 기본변수 $_</a></li>
 </ol>
 
 <!--

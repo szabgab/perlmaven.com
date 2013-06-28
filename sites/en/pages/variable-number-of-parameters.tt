@@ -1,0 +1,79 @@
+=title Variable number of parameters in Perl subroutines
+=timestamp 2013-07-02T12:45:56
+=indexes sub, @_
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+While Perl does not provide any built-in facilities to declare the parameters of a subroutine,
+it makes it very easy to pass any number of parameters to a function.
+
+This makes it almost trivial to write functions such as <hl>sum</hl>.
+
+=abstract end
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+use 5.010;
+
+say sum(3, 7, 11, 21);
+
+my @values = (1, 2, 3)
+say sum(@values);
+
+sub sum {
+    my $sum = 0;
+    foreach my $v (@_) {
+        $sum += $v;
+    }
+    return $sum;
+}
+</code>
+
+In this example, first we passed four numbers to the <hl>sum</hl> subroutine, and in the second call
+we passed an array that has three numbers in it.
+
+The subroutine itself receives the parameters in the standard <hl>@_</hl> variable.
+In this case we do not copy the values to private variables as the functions is really simple.
+We just iterate over the values using a <hl>foreach</hl> loop and add each value the <hl>$sum</hl> variable.
+
+The <hl>return</hl> call will, pass the value of <hl>$sum</hl> to the caller.
+
+<h2>Private array</h2>
+
+We could have copied the content of <hl>@_</hl> to a private variable declared within
+the subroutine, but it was not necessary in this example.
+
+<code lang="perl">
+sub sum {
+   my @values = @_;
+   ...
+</code>
+
+
+<h2>Passing more than one array</h2>
+
+Unfortunately, if you'd like to pass two arrays to a function like in the following example,
+you are in trouble.
+
+<code lang="perl">
+my @good = ('Yoda', 'Luke', 'Leia')
+my @evil = ('Darth Vader', Emperor)
+print award(@good, @evil), "\n";
+</code>
+
+The subroutine will see all the values ('Yoda', 'Luke', 'Leia', 'Darth Vader', Emperor)
+in the <hl>@_</hl> array, and there will be no easy way to tell which value
+came from the first array, and which from the second.
+In order to solve this we'll need to learn about references.
+
+There is an article explaining
+<a href="/pro/passing-two-arrays-to-a-function">how to pass two arrays to a function</a>
+available to <a href="/pro">Perl Maven Pro</a> subscribers.
+

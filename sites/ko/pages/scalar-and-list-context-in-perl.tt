@@ -42,7 +42,7 @@ my @words = ('Foo', 'Bar', 'Baz');
 my @names = @words;
 </code>
 
-앞 예제의 할당문 이후에 <h1>@names</h1>에는 <hl>@words</hl> 안에 있던 값들이 복사됩니다.
+앞 예제의 할당문 이후에 <hl>@names</hl>에는 <hl>@words</hl> 안에 있던 값들이 복사됩니다.
 
 다른 배열로 배열을 할당하면 배열의 내용을 복사합니다.
 
@@ -53,7 +53,7 @@ my @words = ('Foo', 'Bar', 'Baz');
 my $people =  @words;
 </code>
 
-이번에는 <hl>$people</hl> 스칼라 변수에 <h1>@words</h1> 배열을 할당 했습니다.
+이번에는 <hl>$people</hl> 스칼라 변수에 <hl>@words</hl> 배열을 할당 했습니다.
 
 다른 언어들은 다르게 동작하겠지만 펄은 이 할당의 경우
 <b>배열의 원소의 개수</b>를 스칼라 변수에 할당합니다. 
