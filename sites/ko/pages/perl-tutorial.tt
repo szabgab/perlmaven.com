@@ -18,6 +18,7 @@
 <ol>
 <li><a href="/perl-editor">Perl 에디터</a></li>
 <li><a href="/perl-on-the-command-line.tt">명령줄에서의 Perl</a></li>
+<li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
 <li><a href="/debugging-perl-scripts">Perl 스크립트 디버깅</a></li>
 </ol>
 
