@@ -1,7 +1,7 @@
-=title Here documents in Perl
-=timestamp 2013-06-29T14:45:56
+=title Here documents, or how to create multi-line strings in Perl
+=timestamp 2013-06-30T08:01:01
 =indexes <<, /m, /g, q, qq
-=status draft 
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
