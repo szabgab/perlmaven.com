@@ -171,7 +171,7 @@ Much better. We have now the correct strings, albeit with some leading and trail
 
 Those are there as now the regex returns the full matches that include the white-spaces as well.
 
-We could now <a href="/trim">remote the leading and trailing white-spaces</a> using a substitution <hl>s/^\s+|\s+$//g</hl>,
+We could now <a href="/trim">remove the leading and trailing white-spaces</a> using a substitution <hl>s/^\s+|\s+$//g</hl>,
 but we can also improve our regex.
 
 Now we can use to our advantage what made the previous failure and wrap the interesting part of our regex in
