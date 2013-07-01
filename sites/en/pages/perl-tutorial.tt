@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on June 25, 2013.
+parts are being published every few days. The latest one was published on June 30, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -75,7 +75,7 @@ to practice what you have learned.
 <li>Numerical and string operators</li>
 <li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
 <li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
-<li>Here documents</li>
+<li><a href="/here-docuemnts">Here documents</a></li>
 <li><a href="/scalar-variables">Scalar variables</a></li>
 <li><a href="/comparing-scalars-in-perl">Comparing scalars</a></li>
 <li><a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
@@ -177,7 +177,7 @@ to practice what you have learned.
 <ol>
 <li><a href="/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
 <li>Reading Excel files using Perl</li>
-<li>Creating Excel files using Perl</li>
+<li><a href="/pro/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (for <a href="/pro">Pro</a> subscribers.)</li>
 <li>Sending e-mail using Perl</li>
 <li>CGI scripts with Perl</li>
 <li>Web applications with Perl: PSGI</li>
@@ -196,12 +196,22 @@ to practice what you have learned.
 <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
 </ol>
 
+<b>Object Oriented Perl with Moo</b>
+<ol>
+  <li><a href="/videos/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, creating a class with a single attrubue that can be either read-only (immutable) or read-write (mutable) attribute.
+      Creating and instance (object).</li>
+  <li>For <a href="/pro">Pro</a> subscribers:</li>
+  <li><a href="/pro/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
+  <li><a href="/pro/moo-and-required-attributes">required attributes</a></li>
+  <li><a href="http://perlmaven.com/pro/moo-attributes-with-default-values">Moo attributes with default values</a></li>
+  <li><a href="/pro/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
+</ol>
+
 
 <hr />
 
 Just a reminder, there are corresponding <a href="/beginner-perl-maven-e-book">e-books</a> and
 <a href="/beginner-perl-maven-video-course">video courses</a> available for 
 <a href="/products">purchase</a>.
-
 
 
