@@ -190,10 +190,9 @@ that is to repeat the substitution as many times as it can.
 Together these two flag will get the substitution to remove 8 leading spaces from every line in the
 variable on the left-hand side of <hl>=~</hl>.
 On the left-hand side we had to put the assignment in parentheses because the precedence of the
-assignment operator (<hl>=</hl>) is higher than the precedence of the regex <hl>=~</hl>. Without
-the parentheses, perl would first assign the content of the here-document to the <hl>$message</hl>
-variable and then it would try to run the substitution on the here-document itself resulting in
-a compile-time error:
+assignment operator (<hl>=</hl>) is lower than the precedence of the regex <hl>=~</hl>. Without
+the parentheses, perl would first try to run the regex substitution on the here-document itself
+resulting in a compile-time error:
 
 Can't modify scalar in substitution (s///) at programming.pl line 9, near "s/^ {8}//gm;"
 
