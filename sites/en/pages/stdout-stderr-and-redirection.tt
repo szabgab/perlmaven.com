@@ -124,6 +124,13 @@ system will help you disregard all the "garbage".
 
 <hl>perl program.pl 2> /dev/null</hl>
 
+<h2>nul on MS Windows</h2>
+
+On MS Windows the counterpart of <hl>/dev/null</hl> is just plain <hl>nul</hl>
+
+<hl>perl program.pl > nul</hl> Would redirect the standard output to the nothingness,
+and <hl>perl program.pl 2> nul</hl> would redirect standard error.
+
 <h2>Unix/Linux/Windows support?</h2>
 
 The separate printing to STDOUT and STDERR inside Perl works on every 
