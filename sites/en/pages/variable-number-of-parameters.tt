@@ -1,7 +1,7 @@
 =title Variable number of parameters in Perl subroutines
-=timestamp 2013-07-02T12:45:56
+=timestamp 2013-07-02T18:08:08
 =indexes sub, @_
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments 1
