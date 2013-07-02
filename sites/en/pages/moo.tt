@@ -18,13 +18,21 @@ who would like to get away from the "manual blessing", but don't want to "pay" f
 
 =abstract end
 
+<h2>Free</h2>
 <ul>
   <li><a href="/videos/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, creating a class with a single attribute that can be either read-only (immutable) or read-write (mutable) attribute.
       Creating and instance (object).</li>
-  <li>Pro: <a href="/pro/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
-  <li>Pro: <a href="/pro/moo-and-required-attributes">required attributes</a></li>
-  <li>Pro: <a href="/pro/moo-attributes-with-default-values">Moo attributes with default values</a></li>
-  <li>Pro: <a href="/pro/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
+</ul>
+
+<h2>Pro</h2>
+<p>
+Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
+</p>
+<ul>
+  <li><a href="/pro/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
+  <li><a href="/pro/moo-and-required-attributes">Required attributes</a></li>
+  <li><a href="/pro/moo-attributes-with-default-values">Moo attributes with default values</a></li>
+  <li><a href="/pro/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
   <li>More articles are planned...</li>
 <!--
   <li><a href=""></a></li>
