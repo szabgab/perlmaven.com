@@ -33,10 +33,6 @@ Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
   <li><a href="/pro/moo-and-required-attributes">Required attributes</a></li>
   <li><a href="/pro/moo-attributes-with-default-values">Moo attributes with default values</a></li>
   <li><a href="/pro/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
-  <li>More articles are planned...</li>
-<!--
-  <li><a href=""></a></li>
-  <li>Attributes: </li>
   <li>Inheritance</li>
   <li>Methods</li>
   <li>Modifying the constructor</li>
@@ -45,6 +41,10 @@ Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
   <li>Singleton</li>
   <li>Moo and command line scripts</li>
   <li>Extending Moo</li>
+  <li>Even more articles are planned...</li>
+<!--
+  <li><a href=""></a></li>
+  <li>Attributes: </li>
 -->
 </ul>
 
