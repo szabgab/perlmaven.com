@@ -25,7 +25,7 @@ use 5.010;
 
 say sum(3, 7, 11, 21);
 
-my @values = (1, 2, 3)
+my @values = (1, 2, 3);
 say sum(@values);
 
 sub sum {
