@@ -121,6 +121,13 @@ err.txt 파일을 열면, 그 안에 <hl>Could not open file</hl>라는 내용�
 
 <hl>perl program.pl 2> /dev/null</hl>
 
+<h2>MS 윈도우의 nul</h2>
+
+MS 윈도우에서 <hl>/dev/null</hl>에 대응되는 것은 <hl>nul</hl>입니다.
+
+<hl>perl program.pl > nul</hl>은 표준 출력을 허공으로 날려 버리고,
+<hl>perl program.pl 2> nul</hl>는 표준 에러를 날려 버립니다.
+
 <h2>유닉스/리눅스/윈도우 지원</h2>
 
 Perl 내부에서 STDOUT과 STDERR로 구분하여 출력하는 것은 모든 운영체제에서 동작합니다만, 실제로
