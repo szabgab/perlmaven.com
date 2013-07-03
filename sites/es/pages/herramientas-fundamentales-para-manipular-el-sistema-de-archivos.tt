@@ -1,7 +1,7 @@
 =title Las 19 herramientas fundamentales para manipular el sistema de archivos en Perl 5
-=timestamp 2012-07-19T12:45:56
+=timestamp 2013-07-03T22:45:56
 =indexes cwd, tempdir, catfile, catdir, dirname, FindBin, $Bin, File::Spec, File::Basename, File::Temp, Cwd
-=status draft
+=status show
 =original the-most-important-file-system-tools
 =author szabgab
 =translator enrique
@@ -76,7 +76,7 @@ print "$dir\n";
 print catfile($dir, 'un_archivo.txt'), "\n";
 </code>
 
-Prueba este código. Verás el nombre del directorio temporal y el archivo anexado al final.
+Prueba este código. Verás el directorio temporal creado y el nombre del archivo anexado a continuación.
 
 <h2>Cambiar de directorio</h2>
 
@@ -101,13 +101,13 @@ print $fh, 'texto';
 close $fh;
 </code>
 
-Esto podría funcionar, pero cuando File::Temp intenta quitar el directorio, seguiremos "dentro", ya que lo hemos convertido en el directorio de trabajo.
+Esto podría funcionar, pero cuando File::Temp intenta eliminar el directorio, seguiremos "dentro", ya que lo hemos convertido en el directorio de trabajo.
 
 Aparecerá un mensaje de error similar al siguiente:
 
 <code>
 cannot remove path when cwd is /tmp/P3DZP_rmqg for /tmp/P3DZP_rmqg:
-</code> (no se puede quitar la ruta cuando cwd es /tmp/P3DZP_rmqg para /tmp/P3DZP_rmqg)
+</code>
 
 Para evitar que esto ocurra, suelo guardar la ruta devuelta por <b>cwd</b> antes de cambiar de directorio, y al final vuelvo a llamar a <b>chdir</b>:
 
@@ -161,22 +161,22 @@ use FindBin qw($Bin);
 use File::Basename qw(dirname);
 use File::Spec::Functions qw(catdir);
 
-print $Bin, "\n";                                # /home/foobar/Lanzador-Cohetes/scripts
-print dirname($Bin), "\n";                       # /home/foobar/Lanzador-Cohetes
-print catdir(dirname($Bin), 'templates'), "\n";  # /home/foobar/Lanzador-Cohetes/templates
+print $Bin, "\n";                                # /home/Lanza-Cohetes/scripts
+print dirname($Bin), "\n";                       # /home/Lanza-Cohetes
+print catdir(dirname($Bin), 'templates'), "\n";  # /home/Lanza-Cohetes/templates
 </code>
 
 La variable <b>$bin</b> exportada por el módulo <b>FindBin</b> contendrá la ruta de acceso al directorio del script actual. En este caso, la ruta al directorio proyecto/scripts/.
 
 La función <b>dirname</b> de <b>File::Basename</b> consume una ruta y devuelve esa ruta sin la parte final.
 
-La última línea contiene la función <b>catdir</b> de <b>File::Spec::Functions</b>, que es básicamente análoga a la función catfile que vimos antes.
+La última línea contiene la función <b>catdir</b> de <b>File::Spec::Functions</b>, que es básicamente análoga a la función <b>catfile</b> que vimos antes.
 
-En lugar de imprimir en pantalla usamos el valor devuelto por catdir para especificar las plantillas.
+En lugar de imprimir en pantalla usamos el valor devuelto por <b>catdir</b> para especificar las plantillas.
 
 <h2>Cargar módulos desde una ruta relativa</h2>
 
-Se aplica prácticamente lo mismo a la búsqueda y carga de los módulos que se encuentran en el directorio lib/ del proyecto. Para ello combinamos el código anterior con el pragma <b>lib</b>. Eso cambiará el contenido de la variable <b>@INC</b>, agregando la ruta relativa al principio del array.
+Para buscar y cargar los módulos que se encuentran en el directorio lib/ del proyecto hacemos prácticamente lo mismo. Combinamos el código anterior con el pragma <b>lib</b>. Eso cambiará el contenido de la variable <b>@INC</b>, agregando la ruta relativa al principio del array.
 
 <code lang="perl">
 use strict;
@@ -189,10 +189,10 @@ use File::Spec::Functions qw(catdir);
 
 use lib catdir(dirname($Bin), 'lib');
 
-use Lanzador::Cohetes;
+use Lanza::Cohetes;
 </code>
 
-Aquí supongo que tienes un archivo lib/Lanzador/Cohetes.pm
+Aquí se supone que tienes un archivo lib/Lanza/Cohetes.pm
 
 
 <h2>¿Dónde están las demás herramientas?</h2>
