@@ -1,0 +1,164 @@
+=title Name "main::x" used only once: possible typo at ...
+=timestamp 2013-03-05T20:31:10
+=indexes warnings, strict, possible typo
+=status show
+=original name-used-only-once-possible-typo
+=books beginner_book
+=author szabgab
+=translator spidamoo
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+Если вы увидели это предупреждение в Perl-скрипте, у вас большие неприятности.
+
+=abstract end
+
+<h2>Присваивание значения переменной</h2>
+
+Присваивание значения переменной, но не использование ее, или использование переменной единожды,
+вообще не присвоив ей значения, вряд ли будет корректным в любом коде.
+
+Возможно, единственное разумное объяснение - вы допустили опечатку, что и привело к появлению 
+переменной, используемой лишь однажды.
+
+Вот пример кода, в котором мы <b>только присваиваем значение переменной</b>:
+
+<code lang="perl">
+use warnings;
+
+$x = 42;
+</code>
+
+Выполнение его приведет к предупреждению:
+
+<code>
+Name "main::x" used only once: possible typo at ...
+</code>
+
+Эта часть с "main::" и отсутствие $ могут вас смутить. "main::" здесь потому, что по умолчанию
+любая переменная в Perl относится к основному пространству имен main. Существует также пара вещей,
+которые могут называться "main::x", и только у одной из них есть в начале $. Если это звучит
+немного запутанно, не беспокойтесь. Это и есть запутанно, но можно надеяться, что вам не придется 
+иметь дела с этим в течение долгого времени.
+
+<h2>Только получение значения</h2>
+
+Если получилось так, что вы <b>используете переменную лишь однажды</b>
+
+<code lang="perl">
+use warnings;
+
+print $x;
+</code>
+
+то вы, скорее всего, получите два предупреждения:
+
+<code>
+Name "main::x" used only once: possible typo at ...
+Use of uninitialized value $x in print at ...
+</code>
+
+Об одном из них сейчас и идет речь, а о другом вы можете прочесть в статье
+<a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
+
+
+<h2>О какой опечатке речь?</h2>
+
+Могли бы вы спросить.
+
+Представьте, что кто-то использует переменную под названием <hl>$l1</hl>. Потом приходите вы и 
+хотите использовать ту же переменную, но пишете <hl>$ll</hl>. В зависимости от используемого шрифта,
+они могут выглядеть очень похоже друг на друга.
+
+Или, возможно, существует переменная <hl>$color</hl>, но вам ближе британский язык, так что вы 
+автоматически написали <hl>$colour</hl>, имея в виду эту переменную.
+
+Или у вас была переменная <hl>$number_of_misstakes</hl>, и вы не заметили ошибки в исходном названии,
+и написали <hl>$number_of_mistakes</hl>.
+
+В общем, понятно.
+
+Если вам повезет, вы ошибетесь только однажды, а если не повезет, и вы напишете название неправильно
+дважды, то это предупреждение не появится. В конце концов, если вы используете одну переменную дважды,
+на это, должно быть, есть причина.
+
+Так как же избежать этого?
+
+Для начала, постарайтесь избегать названий переменных с неоднозначным написанием, и будьте 
+внимательны, набирая их.
+
+Если же вы хотите действительно решить эту проблему, просто используйте <b>use strict</b>!
+
+<h2>use strict</h2>
+
+As you can see in the above examples, I have not used strict. If I was using it,
+then instead of getting a warning about possible typo, I'd get a compile time
+error:
+<a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>.
+
+That would happen even if you used the incorrect variable more than once.
+
+Then of course there are people who would rush and paste "my" in front of the incorrect
+variable, but you are not one of those. are you? You would think about the problem and search till
+you find the name of the real variable.
+
+The most common way to see this warning is if you are not using strict.
+
+And then you are in deep trouble.
+
+<h2>Other cases while using strict</h2>
+
+As GlitchMr and an Anonymous commenter pointed out, there are a few other cases:
+
+This code, can also generate it
+
+<code lang="perl">
+use strict;
+use warnings;
+
+$main::x = 23;
+</code>
+
+The warning is: <b>Name "main::x" used only once: possible typo ...</b>
+
+Here at least it is clear where that 'main' comes from, or in
+the next example, where the Mister comes from. (hint. it is the package name
+other <a href="/global-symbol-requires-explicit-package-name">error about package names</a>
+was missing.) In the next example, the package name is 'Mister'.
+
+<code lang="perl">
+use strict;
+use warnings;
+
+$Mister::x = 23;
+</code>
+
+The warning is <b>Name "Mister::x" used only once: possible typo ...</b>.
+
+The following example too generates the warning. Twice:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use List::Util qw/reduce/;
+print reduce { $a * $b } 1..6;
+</code>
+
+<code>
+Name "main::a" used only once: possible typo at ...
+Name "main::b" used only once: possible typo at ...
+</code>
+
+This happens because <hl>$a</hl> and <hl>$b</hl> are
+special variables used in the built-in sort function so
+you don't need to declare them, but you are only
+using them once here.
+(Actually it is unclear to me why this generates the warnings,
+while the same code using <b>sort</b> does not, but the
+<a href="http://www.perlmonks.org/?node_id=1021888">Perl Monks</a> might know.
+
+
