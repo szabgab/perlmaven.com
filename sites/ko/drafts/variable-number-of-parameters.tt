@@ -1,19 +1,21 @@
-=title Variable number of parameters in Perl subroutines
-=timestamp 2013-07-02T18:08:08
+=title Perl 서브루틴의 가변 길이 파라메터
+=timestamp 2013-07-04T01:00:00
 =indexes sub, @_
 =status show
+=original variable-number-of-parameters
 =books beginner_book
 =author szabgab
+=translator gypark
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-While Perl does not provide any built-in facilities to declare the parameters of a subroutine,
-it makes it very easy to pass any number of parameters to a function.
+Perl에서 서브루틴의 파라메터를 정의하는 기능이 내장되어 있지는 않지만, 그 덕에 임의의 갯수의 파라메터를
+함수로 전달하는 것이 쉬워집니다.
 
-This makes it almost trivial to write functions such as <hl>sum</hl>.
+그래서 <hl>sum</hl> 같은 함수를 작성하는 게 아주 수월해집니다.
 
 =abstract end
 
@@ -37,19 +39,19 @@ sub sum {
 }
 </code>
 
-In this example, first we passed four numbers to the <hl>sum</hl> subroutine, and in the second call
-we passed an array that has three numbers in it.
+이 예제에서, 처음에는 네 개의 숫자를 <hl>sum</hl> 서브루틴에 전달했고, 다음에는 세 개의 숫자가
+들어 있는 배열 하나를 전달했습니다.
 
-The subroutine itself receives the parameters in the standard <hl>@_</hl> variable.
-In this case we do not copy the values to private variables as the functions is really simple.
-We just iterate over the values using a <hl>foreach</hl> loop and add each value the <hl>$sum</hl> variable.
+이 서브루틴은 인자들을 기본 <hl>@_</hl> 변수에 받게 됩니다.
+이번 경우에는 함수가 매우 단순하기 때문에 받은 값들을 프라이빗 변수에 복사하지 않았습니다.
+그저 <hl>foreach</hl> 루프를 사용하여 값들을 순회하며 각 값을 <hl>$sum</hl> 변수에 더해나갑니다.
 
-The <hl>return</hl> call will, pass the value of <hl>$sum</hl> to the caller.
+<hl>return</hl>은 <hl>$sum</hl>의 값을 호출한 쪽에게 전달할 것입니다.
 
-<h2>Private array</h2>
+<h2>프라이빗 배열</h2>
 
-We could have copied the content of <hl>@_</hl> to a private variable declared within
-the subroutine, but it was not necessary in this example.
+<hl>@_</hl> 변수의 내용을 서브루틴 안에서 선언된 프라이빗 변수에 복사할 수도 있었습니다, 이번
+예제에서 그럴 필요는 없었지만요.
 
 <code lang="perl">
 sub sum {
@@ -58,10 +60,9 @@ sub sum {
 </code>
 
 
-<h2>Passing more than one array</h2>
+<h2>두 개 이상의 배열을 전달하기</h2>
 
-Unfortunately, if you'd like to pass two arrays to a function like in the following example,
-you are in trouble.
+불행하게도, 다음 예제처럼 두 개의 배열을 함수에 전달하려고 한다면, 문제에 빠지게 됩니다.
 
 <code lang="perl">
 my @good = ('Yoda', 'Luke', 'Leia')
@@ -69,12 +70,11 @@ my @evil = ('Darth Vader', 'Emperor')
 print award(@good, @evil), "\n";
 </code>
 
-The subroutine will see all the values ('Yoda', 'Luke', 'Leia', 'Darth Vader', 'Emperor')
-in the <hl>@_</hl> array, and there will be no easy way to tell which value
-came from the first array, and which from the second.
-In order to solve this we'll need to learn about references.
+이 서브루틴은 <hl>@_</hl> 배열 안에 모든 값들 ('Yoda', 'Luke', 'Leia', 'Darth Vader', 'Emperor')이
+들어 있는 것을 보게 되고, 어느 값들이 첫번째 배열에서 왔고 어느 값들이 두번째 배열에서 왔는지를
+알 수 있는 쉬운 방법은 없습니다. 이 문제를 해결하기 위해서는 레퍼런스에 대해 알아야 합니다.
 
-There is an article explaining
-<a href="/pro/passing-two-arrays-to-a-function">how to pass two arrays to a function</a>
-available to <a href="/pro">Perl Maven Pro</a> subscribers.
+<a href="http://perlmaven.com/pro">Perl Maven Pro</a> 구독자들은
+<a href="http://perlmaven.com/pro/passing-two-arrays-to-a-function">함수에 두 개의 배열을 전달하는 법</a>에
+대한 기사를 볼 수 있습니다.
 
