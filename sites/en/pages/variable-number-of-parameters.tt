@@ -1,7 +1,8 @@
 =title Variable number of parameters in Perl subroutines
-=timestamp 2013-07-02T12:45:56
+=timestamp 2013-07-02T18:08:08
 =indexes sub, @_
-=status draft
+=status show
+=books beginner_book
 =author szabgab
 =archive 1
 =comments 1
@@ -24,7 +25,7 @@ use 5.010;
 
 say sum(3, 7, 11, 21);
 
-my @values = (1, 2, 3)
+my @values = (1, 2, 3);
 say sum(@values);
 
 sub sum {
