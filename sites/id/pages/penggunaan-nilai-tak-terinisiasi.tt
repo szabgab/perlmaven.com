@@ -2,10 +2,8 @@
 =timestamp 2013-07-05T12:15:15
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
-=original use-of-uninitialized-value
 =books beginner_book
 =author szabgab
-=translator khadis
 =index 1
 =archive 1
 =feed 1
@@ -40,7 +38,7 @@ Mari kembali pada peringatan sesungguhnya yang ingin saya jelaskan.
 <h2>Penjelasan singkat</h2>
 
 <code>
-Penggunaan nilai tak terinisiasi $x di dalam say pada perl_warning_1.pl baris ke-6.
+Use of uninitialized value $x in say at perl_warning_1.pl line 6.
 </code>
 
 Artinya variabel <hl>$x</hl> tidak memiliki nilai (nilainya adalah nilai khusus yaitu <hl>undef</hl>).
@@ -83,7 +81,7 @@ say $x;
 Hal ini akan menampilkan
 
 <code>
-Penggunaan nilai tak terinisiasi $x di dalam say pada perl_warning_1.pl baris ke-6.
+Use of uninitialized value $x in say at perl_warning_1.pl line 6.
 
 42
 </code>
@@ -108,7 +106,7 @@ say $x;
 hasilnya bisa saja membingungkan.
 
 <code>
-Penggunaan nilai tak terinisiasi $x di dalam say pada perl_warning_1.pl baris ke-7.
+Use of uninitialized value $x in say at perl_warning_1.pl line 7.
 OK
 42
 </code>
@@ -170,7 +168,7 @@ if ($y) {
 say $x;
 </code>
 
-Kode ini juga menghasilkan <hl>Penggunaan nilai tak terinisiasi $x di dalam say pada perl_warning_1.pl baris ke-11.</hl>
+Kode ini juga menghasilkan <hl>Use of uninitialized value $x in say at perl_warning_1.pl line 11.</hl>
 
 Saya telah beberapa kali mengatur kesalahan ini. Jangan perhatikan penggunaan <hl>my $x</hl>
 di dalam blok <hl>if</hl>, yang artinya saya telah membuat variabel $x lain,
