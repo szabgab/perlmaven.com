@@ -1,12 +1,15 @@
 =title Penggunaan Nilai Tak Terinisiasi
-=timestamp 2013-07-05T12:15:15
+=timestamp 2013-07-04T12:15:15
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
 =books beginner_book
 =author szabgab
+<<<<<<< HEAD
 =index 1
+=======
+=translator khadis
+>>>>>>> 9d3300f1e3270e58a9bfd59fcedd8d6d0510179f
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
@@ -116,7 +119,7 @@ peringatan, walaupun ia disebut <b>sebelum</b>
 kode yang menggeneralisasi peringatan.
 
 Keanehan ini adalah hasil dari <hl>IO buffering</hl>.
-Secara default Perl mem-buffer STDOUT, yang merupakan ??saluran output standar,
+Secara default Perl mem-buffer STDOUT, yang merupakan saluran output standar,
 meskipun ia tidak mem-buffer STDERR, saluran standar untuk kesalahan (error).
 
 Jadi sementara kata 'OK' menunggu buffer selesai,
