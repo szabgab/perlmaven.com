@@ -2,10 +2,13 @@
 =timestamp 2013-07-04T12:15:15
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
-=original use-of-uninitialized-value
 =books beginner_book
 =author szabgab
+<<<<<<< HEAD
+=index 1
+=======
 =translator khadis
+>>>>>>> 9d3300f1e3270e58a9bfd59fcedd8d6d0510179f
 =archive 1
 =comments 1
 =social 1
@@ -38,7 +41,7 @@ Mari kembali pada peringatan sesungguhnya yang ingin saya jelaskan.
 <h2>Penjelasan singkat</h2>
 
 <code>
-Penggunaan nilai tak terinisiasi $x di dalam say pada perl_warning_1.pl baris ke-6.
+Use of uninitialized value $x in say at perl_warning_1.pl line 6.
 </code>
 
 Artinya variabel <hl>$x</hl> tidak memiliki nilai (nilainya adalah nilai khusus yaitu <hl>undef</hl>).
@@ -81,7 +84,7 @@ say $x;
 Hal ini akan menampilkan
 
 <code>
-Penggunaan nilai tak terinisiasi $x di dalam say pada perl_warning_1.pl baris ke-6.
+Use of uninitialized value $x in say at perl_warning_1.pl line 6.
 
 42
 </code>
@@ -106,7 +109,7 @@ say $x;
 hasilnya bisa saja membingungkan.
 
 <code>
-Penggunaan nilai tak terinisiasi $x di dalam say pada perl_warning_1.pl baris ke-7.
+Use of uninitialized value $x in say at perl_warning_1.pl line 7.
 OK
 42
 </code>
@@ -116,7 +119,7 @@ peringatan, walaupun ia disebut <b>sebelum</b>
 kode yang menggeneralisasi peringatan.
 
 Keanehan ini adalah hasil dari <hl>IO buffering</hl>.
-Secara default Perl mem-buffer STDOUT, yang merupakan ??saluran output standar,
+Secara default Perl mem-buffer STDOUT, yang merupakan saluran output standar,
 meskipun ia tidak mem-buffer STDERR, saluran standar untuk kesalahan (error).
 
 Jadi sementara kata 'OK' menunggu buffer selesai,
@@ -168,7 +171,7 @@ if ($y) {
 say $x;
 </code>
 
-Kode ini juga menghasilkan <hl>Penggunaan nilai tak terinisiasi $x di dalam say pada perl_warning_1.pl baris ke-11.</hl>
+Kode ini juga menghasilkan <hl>Use of uninitialized value $x in say at perl_warning_1.pl line 11.</hl>
 
 Saya telah beberapa kali mengatur kesalahan ini. Jangan perhatikan penggunaan <hl>my $x</hl>
 di dalam blok <hl>if</hl>, yang artinya saya telah membuat variabel $x lain,
