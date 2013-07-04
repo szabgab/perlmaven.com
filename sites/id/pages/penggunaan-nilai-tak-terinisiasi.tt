@@ -1,14 +1,12 @@
 =title Penggunaan Nilai Tak Terinisiasi
-=timestamp 2013-07-05T12:15:15
+=timestamp 2013-07-04T12:15:15
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
 =original use-of-uninitialized-value
 =books beginner_book
 =author szabgab
 =translator khadis
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
