@@ -1,45 +1,47 @@
-=title Automatic string to number conversion or casting in Perl
+=title Conversione automatica da stringa a numero in Perl
 =timestamp 2013-01-10T10:45:56
-=indexes is_number, looks_like_number, Scalar::Util, casting, type conversion
+=indexes is_number, looks_like_number, Scalar::Util, cast, conversione di tipo
 =status show
+=original automatic-value-conversion-or-casting-in-perl
 =books beginner_book
 =author szabgab
+=translator giatorta
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-Imagine you prepare the shopping list, write on it
+Immaginate di scrivere nella lista della spesa
 
 <code>
-"2 loaves of bread"
+"2 pagnotte"
 </code>
 
-and hand it over to your significant other who promptly
-throws and invalid type conversion error in your face.
-After all "2" is a string there, not a number.
+e di darla alla vosta dolce metà la quale in tutta risposta
+vi tira contro on errore di conversione non valida di tipo.
+Dopo tutto, nella lista "2" è una stringa, non un numero.
 
-That would be frustrating, wouldn't it?
+Sarebbe piuttosto frustrante, vero?
 
 =abstract end
 
-<h2>Type conversion in Perl</h2>
+<h2>Conversioni di tipo in Perl</h2>
 
-In most of the programming languages the type of the operands define how an operator behaves.
-That is, <i>adding</i> two numbers does numerical addition, while <i>adding</i> two strings together concatenates them.
-This feature is called operator overloading.
+In molti linguaggi di programmazione il tipo degli operandi determina il comportamento di un operatore.
+Ovvero, la <i>somma</i> di due numeri è la loro addizione numerica, mentre la <i>somma</i> di due stringhe è la loro concatenazione.
+Questo meccanismo è detto overloading degli operatori.
 
-Perl, mostly works in the opposite way.
+Per molti aspetti, Perl ragiona in modo opposto.
 
-In Perl, the operator is the one that defines how the operands are used.
+In Perl, l'operatore determina come usare gli operandi.
 
-This means if you are using a numerical operation (e.g. addition) then both values
-are automatically converted to numbers. If you are using a string operation
-(e.g. concatenation) then both values are automatically converted to strings.
+Quindi, se usate un'operazione numerica (ad es. l'addizione) entrambi i valori
+vengono automaticamente convertiti in numeri. Se usate un'operazione stringa
+(ad es. la concatenazione) entrambi i valori vengono automaticamente convertiti in stringhe.
 
-C programmers would probably call these conversions <b>casting</b> but this word is
-not used in the Perl world. Probably because the whole thing is automatic.
+I programmatori C probabilmente chiamerebbero <b>cast</b> queste conversioni ma nel mondo Perl
+questo termine non è utilizzato. Probabilmente perché tutto avviene automaticamente.
 
 Perl does not care if you write something as number or as string.
 It converts between the two automatically based on the context.
