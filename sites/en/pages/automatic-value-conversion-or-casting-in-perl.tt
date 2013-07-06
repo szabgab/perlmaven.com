@@ -38,7 +38,7 @@ This means if you are using a numerical operation (e.g. addition) then both valu
 are automatically converted to numbers. If you are using a string operation
 (e.g. concatenation) then both values are automatically converted to strings.
 
-C programmers would probably call these conversions <b>casting</b> but this is word is
+C programmers would probably call these conversions <b>casting</b> but this word is
 not used in the Perl world. Probably because the whole thing is automatic.
 
 Perl does not care if you write something as number or as string.
@@ -121,12 +121,12 @@ Yes and no.
 
 Perl does not have an <b>is_number</b> function as that would be some kind of commitment that the Perl developers
 know what is a number. Unfortunately the rest of the world cannot agree on this point exactly. There are systems
-where ".2" is accepted as a number, but other system where that is not accepted.
+where ".2" is accepted as a number, but other systems where that is not accepted.
 Even more common that "2." is not accepted, but there are system where that is a perfectly acceptable number.
 
 There are even places where 0xAB is considered a number. A Hexadecimal number.
 
-So there is no <b>is_number</b> function, but there is a less committing functions called <b>looks_like_number</b>.
+So there is no <b>is_number</b> function, but there is a less committing function called <b>looks_like_number</b>.
 
 That's exactly what you think it is. It will check if the given string looks like a number for perl.
 
@@ -151,6 +151,6 @@ if (looks_like_number($loaves)) {
 </code>
 
 
-Don't forge the milk too!
+Don't forget the milk too!
 
 

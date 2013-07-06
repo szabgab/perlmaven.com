@@ -1,7 +1,8 @@
 =title Variable number of parameters in Perl subroutines
-=timestamp 2013-07-02T12:45:56
+=timestamp 2013-07-02T18:08:08
 =indexes sub, @_
-=status draft
+=status show
+=books beginner_book
 =author szabgab
 =archive 1
 =comments 1
@@ -24,7 +25,7 @@ use 5.010;
 
 say sum(3, 7, 11, 21);
 
-my @values = (1, 2, 3)
+my @values = (1, 2, 3);
 say sum(@values);
 
 sub sum {
@@ -64,11 +65,11 @@ you are in trouble.
 
 <code lang="perl">
 my @good = ('Yoda', 'Luke', 'Leia')
-my @evil = ('Darth Vader', Emperor)
+my @evil = ('Darth Vader', 'Emperor')
 print award(@good, @evil), "\n";
 </code>
 
-The subroutine will see all the values ('Yoda', 'Luke', 'Leia', 'Darth Vader', Emperor)
+The subroutine will see all the values ('Yoda', 'Luke', 'Leia', 'Darth Vader', 'Emperor')
 in the <hl>@_</hl> array, and there will be no easy way to tell which value
 came from the first array, and which from the second.
 In order to solve this we'll need to learn about references.

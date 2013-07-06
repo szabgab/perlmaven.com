@@ -125,7 +125,7 @@ to practice what you have learned.
 <ol>
 <li><a href="/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
 <li>Parameter passing and checking for subroutines</li>
-<li>Variable number of parameters</li>
+<li><a href="/variable-number-of-parameters">Variable number of parameters</a></li>
 <li>Returning a list</li>
 <li>Recursive subroutines</li>
 </ol>
