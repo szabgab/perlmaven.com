@@ -1,0 +1,52 @@
+<h2>Numero variabile di parametri nelle subroutine Perl</h2>
+
+Nonostante Perl non fornisca alcuna facilitazione per la dichiarazione dei parametri di una subroutine, è molto facile passare un numero indefinito di parametri ad una funzione.
+
+Questo banalizza la scrittura di funzioni come sum.
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+use 5.010;
+ 
+say sum(3, 7, 11, 21);
+ 
+my @values = (1, 2, 3)
+say sum(@values);
+ 
+sub sum {
+    my $sum = 0;
+    foreach my $v (@_) {
+        $sum += $v;
+    }
+    return $sum;
+}
+</code>
+
+In questo esempio, prima vengono passati 4 numeri alla subroutine sum e, nella seconda chiamata, viene passato un array di tre elementi (numeri).
+La subroutine riceve i parametri nella variabile standard @_. In questo caso i valori dei parametri non vengono copiati in variabili locali (alla subroutine) dato che funzione è veramente semplice. Si itera sulle variabili utilizzando un ciclo sommando ogni valore nella variabile $sum
+
+Il valore della variabile $sum sarà restituita al chiamante.
+
+<h2>Array privati</h2>
+E' possibile copiare il contenuto di @_ in una variabile privata dichiarata all'interno di una subroutine, ma in questo esempio non era necessario.
+<code lang="perl">
+sub sum {
+   my @values = @_;
+   ...
+</code>
+
+<h2>Passare più di un array</h2>
+Sfortunatamente, se volessi passare due vettori ad una funzione come nell'esempio qui sotto, avresti dei problemi.
+
+<code lang="perl">
+my @good = ('Yoda', 'Luke', 'Leia')
+my @evil = ('Darth Vader', Emperor)
+print award(@good, @evil), "\n";
+</code>
+
+La subroutine vedrà tutti i valori ('Yoda', 'Luke', 'Leia', 'Darth Vader', Emperor) nell'array @_ ma non esiste alcun modo semplice per definire quale valore arriva dal primo array e quale dal secondo.
+Al fine di risolvere questo "dilemma" avremo la necessità di approfondire le references. 
+
+Per i sottoscrittori di Perl Maven Pro è disponibile  un articolo che spiega come passare due array ad una funzione.

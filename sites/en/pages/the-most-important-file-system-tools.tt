@@ -14,7 +14,7 @@ When writing Perl scripts that need to deal with the file-system, I often need t
 Many of the functions I need are scattered around in separate modules. Some are built-in functions of perl,
 others are in standard modules coming with perl, yet others need to be installed from CPAN.
 
-Let's go over the 15 most used tools in the kit.
+Let's go over the 19 most used tools in the kit.
 
 =abstract end
 
