@@ -1,5 +1,5 @@
 =title Conversione automatica da stringa a numero in Perl
-=timestamp 2013-01-10T10:45:56
+=timestamp 2013-07-06T13:00:00
 =indexes is_number, looks_like_number, Scalar::Util, cast, conversione di tipo
 =status show
 =original automatic-value-conversion-or-casting-in-perl
@@ -43,24 +43,24 @@ vengono automaticamente convertiti in numeri. Se usate un'operazione stringa
 I programmatori C probabilmente chiamerebbero <b>cast</b> queste conversioni ma nel mondo Perl
 questo termine non è utilizzato. Probabilmente perché tutto avviene automaticamente.
 
-Perl does not care if you write something as number or as string.
-It converts between the two automatically based on the context.
+A Perl non importa se scrivete qualcosa in forma di numero o di stringa.
+Converte automaticamente tra le due possibilità in base al contesto.
 
-The <hl>number => string</hl> conversion is easy.
-It is just a matter of imaging as if "" appeared around the number value.
+La conversione <hl>numero => stringa</hl> è facile.
+Basta immaginare di aggiungere "" intorno al valore numerico.
 
-The <hl>string => number</hl> conversion might leave you thinking a bit.
-If the string looks like a number to perl, then it is easy.
-The numerical value is just the same thing. Without the quotes.
+La conversione <hl>stringa => numero</hl> invece può darci un po' da pensare.
+Se la stringa presenta l'aspetto di un numero, è di nuovo facile.
+Il valore numerico è la stessa cosa senza i doppi apici.
 
-If there is any character that stops perl from fully converting the string to a
-number, then perl will use as much as it can on the left hand side of the string for the
-numerical value and disregard the rest.
+Se c'è un carattere qualunque che impedisce a perl di convertire completamente la stringa in un
+numero, perl usa il prefisso della stringa più lungo possibile come
+valore numerico e ignora il resto.
 
-Let me show a couple of examples:
+Vediamo un paio di esempi:
 
 <code>
-Original   As string   As number
+Originale   Stringa    Numero
 
   42         "42"        42
   0.3        "0.3"       0.3
@@ -75,13 +75,13 @@ Original   As string   As number
  "23\n"      "23\n"      23
 </code>
 
-In all the cases where the string to number conversion is not perfect,
-except the last one, perl will issue a warning. Well, assuming you turned
-on <hl>use warnings</hl> as recommended.
+In tutti i casi dove la conversione da stringa a numero non è perfetta,
+eccetto l'ultimo, perl genera un warning. Almeno se avete
+attivato <hl>use warnings</hl> come vi ho raccomandato.
 
-<h2>Example</h2>
+<h2>Esempio</h2>
 
-Now that you saw that table let's see it in code:
+Ora che abbiamo visto la tabella vediamo un po' di codice:
 
 <code lang="perl">
 use strict;
@@ -92,13 +92,13 @@ my $y = 3;
 
 </code>
 
-Concatenation converts both values to strings:
+La concatenazione converte entrambi i valori in stringhe:
 
 <code lang="perl">
 print $x . $y;    # 4T3
 </code>
 
-Numerical addition converts both values to numbers:
+L'addizione numerica converte entrambi i valori in numeri:
 
 <code lang="perl">
 print $x + $y;  # 7
@@ -107,33 +107,33 @@ print $x + $y;  # 7
 
 <h2>Argument isn't numeric</h2>
 
-That's the warning you get when perl is trying to convert
-a string to a number and the conversion isn't perfect.
+Ricevete questo warning quando perl tenta di convertire
+una stringa in un numero e la conversione non riesce perfettamente.
 
-There are a number of other common warnings and errors in Perl.
-For example <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
-and <a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
+Ci sono svariati altri warning ed errori comuni in Perl.
+Per esempio <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
+e <a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
 
-<h2>How to avoid the warning?</h2>
+<h2>Come si può evitare il warning?</h2>
 
-It is nice that perl will warn you (if asked to) when the type conversion was not perfect, but isn't there a function
-like <b>is_number</b> that will check if the given string is really a number?
+È bello che perl vi avverta (quando glielo chiedete) se una conversione di tipo non è perfetta, ma non esiste una funzione
+come <b>is_number</b> che controlli se una data stringa è davvero un numero?
 
-Yes and no.
+Sì e no.
 
-Perl does not have an <b>is_number</b> function as that would be some kind of commitment that the Perl developers
-know what is a number. Unfortunately the rest of the world cannot agree on this point exactly. There are systems
-where ".2" is accepted as a number, but other system where that is not accepted.
-Even more common that "2." is not accepted, but there are system where that is a perfectly acceptable number.
+Perl non ha una funzione <b>is_number</b> dato che questo implicherebbe in qualche modo che gli sviluppatori Perl
+sappiano che cos'è un numero. Purtroppo non esiste un accordo universale su questo punto. Ci sono sistemi
+dove ".2" è accettato come numero e altri in cui non è accettato.
+Ancora più spesso, non viene accettato "2.", ma ci sono sistemi dove è considerato un numero perfettamente lecito.
 
-There are even places where 0xAB is considered a number. A Hexadecimal number.
+Ci sono perfino casi in cui 0xAB è considerato un numero. Naturalmente, esadecimale.
 
-So there is no <b>is_number</b> function, but there is a less committing functions called <b>looks_like_number</b>.
+Quindi non abbiamo a disposizione una funzione <b>is_number</b>, ma ne abbiamo una che ha un po' meno certezze, chiamata <b>looks_like_number</b>.
 
-That's exactly what you think it is. It will check if the given string looks like a number for perl.
+Fa proprio ciò che pensate. Controlla se, secondo perl, una data stringa sembra un numero.
 
-It is provided by the <a href="http://perldoc.perl.org/Scalar/Util.html">Scalar::Util</a> module
-and you can use it like this:
+È fornita dal modulo <a href="http://perldoc.perl.org/Scalar/Util.html">Scalar::Util</a> e
+potete usarla così:
 
 <code lang="perl">
 use strict;
@@ -141,18 +141,18 @@ use warnings;
 
 use Scalar::Util qw(looks_like_number);
 
-print "How many loaves of bread shall I buy? ";
+print "Quante pagnotte devo comprare? ";
 my $loaves = <STDIN>;
 chomp $loaves;
 
 if (looks_like_number($loaves)) {
-    print "I am on it...\n";
+    print "Vado e torno...\n";
 } else {
-    print "Sorry, I don't get it\n";
+    print "Scusa ma non ho capito\n";
 }
 </code>
 
 
-Don't forge the milk too!
+E non dimenticate di prendere anche il latte!
 
 
