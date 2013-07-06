@@ -38,7 +38,7 @@ This means if you are using a numerical operation (e.g. addition) then both valu
 are automatically converted to numbers. If you are using a string operation
 (e.g. concatenation) then both values are automatically converted to strings.
 
-C programmers would probably call these conversions <b>casting</b> but this is word is
+C programmers would probably call these conversions <b>casting</b> but this word is
 not used in the Perl world. Probably because the whole thing is automatic.
 
 Perl does not care if you write something as number or as string.
