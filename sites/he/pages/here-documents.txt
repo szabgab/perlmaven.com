@@ -1,5 +1,5 @@
 =title Here documents, או כיצד ליצור מחזורות מרובות שורות בפרל
-=timestamp 2013-06-30T08:01:01
+=timestamp 2013-07-07T07:01:01
 =indexes <<, /m, /g, q, qq
 =status show
 =books beginner_book
