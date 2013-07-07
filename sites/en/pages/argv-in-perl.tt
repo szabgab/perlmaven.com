@@ -73,7 +73,7 @@ as you can easily get the <a href="/scalar-and-list-context-in-perl">number of e
 using the <hl>scalar</hl> function or by putting the array in
 <a href="/scalar-and-list-context-in-perl">scalar context</a>.
 
-<h2>Unix/Linux Shell programming</hl>
+<h2>Unix/Linux Shell programming</h2>
 
 In case you arrive from the world of <b>Unix/Linux Shell programming</b> you will recognize <hl>$0</hl>
 is being the name of the script there too. In shell however <hl>$1</hl>, <hl>$2</hl>, etc.
