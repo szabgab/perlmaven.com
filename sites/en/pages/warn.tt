@@ -23,7 +23,6 @@ in Perl you can do it by printing to <hl>STDERR</hl>
 print STDERR "Slight problem here...\n";
 </code>
 
-
 There is a better, more standard way though.
 
 you could just call the <hl>warn</hl> function:
@@ -33,6 +32,8 @@ warn "Slight problem here.\n";
 </code>
 
 It is shorter, more expressive and in the above form has the same effect.
+
+In both cases the script, after printing the warning message, will keep running!
 
 It provides more though.  If you leave out the trailing new-line (the <hl>\n</hl> at the end):
 
@@ -61,4 +62,30 @@ This means you, or someone else, can later add code to the program that
 <a href="/how-to-capture-and-save-warnings-in-perl">captures all the warnings</a>.
 This is a bit more advanced topic though, but if you are interested go ahead,
 check out that page.
+
+<h2>warning</h2>
+
+A slight warning here. You might encounter cases when a warning called after
+a print statement shows up before the conent of the print statement:
+
+This code:
+
+<code lang="perl">
+print "before";
+warn "Slight porblem here.\n";
+print STDERR "More problems.\n";
+print "after";
+</code>
+
+generating this output:
+
+<code>
+Slight porblem here.
+More problems.
+beforeafter
+</code>
+
+Where the word "before" appears after both warning messages.
+
+In that case read about <a href="/stdout-stderr-and-redirection#buffering">buffering</a>.
 
