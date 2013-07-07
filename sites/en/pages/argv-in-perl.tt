@@ -1,4 +1,4 @@
-=title argv in Perl
+=title @ARGV in Perl
 =timestamp 2013-07-07T17:13:10
 =indexes @ARGV, $ARGV[], $0, shift, argc
 =status show
