@@ -33,3 +33,4 @@ ggl;Gelu Lupaş;;https://plus.google.com/109248329865538291977
 johnkang;John Kang;johnkang.jpg;https://plus.google.com/112513302897448870436
 ileiva;Israel Leiva;ileiva.png;https://plus.google.com/115251093728227570944
 yunchang;Yunchang Kang;yunchang.jpg;https://plus.google.com/111798479978880511587
+spidamoo;Vladimir Zatoloka;spidamoo.jpg;https://plus.google.com/108953362301851379228

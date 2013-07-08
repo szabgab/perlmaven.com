@@ -91,7 +91,7 @@ In this case the variable <hl>$fname</hl> is declared at the beginning of the co
 till the end of the file everywhere, <b>except in places where they are hidden by locally declared variables with the same name</b>.
 
 Inside the block we used <hl>my</hl> to declare another variable with the same name. This will effectively hide the <hl>$fname</hl>
-declared outside the block till we leave the block. At the end of the block (at the closing <hl>}</hl>, the <hl>$fname</hl>
+declared outside the block till we leave the block. At the end of the block (at the closing <hl>}</hl>), the <hl>$fname</hl>
 declared inside will be destroyed and the original <hl>$fname</hl> will be accessible again.
 This feature is especially important as this makes it easy to create variables inside small scopes without the need to think
 about possible use of the same name outside.
