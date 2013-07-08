@@ -1,5 +1,5 @@
 =title Global symbol requires explicit package name
-=timestamp 2012-09-13T12:45:56
+=timestamp 2013-07-10T12:00:00
 =indexes strict, my, package, global symbol
 =status show
 =original global-symbol-requires-explicit-package-name
@@ -129,7 +129,7 @@ print $y;
 
 Проблема в том, что переменная <hl>$y</hl> объявлена внутри блока(между фигурными скобками),
 а это значит, что вне пределов блока она не существует. Это называется
-<a href="/scope-of-variables-in-perl"><b>областью видимости</b> переменной</a>.
+<a href="/oblast-vidimosti-v-perl"><b>областью видимости</b> переменной</a>.
 
 Сама идея <b>областей видимости</b> отличается в разных языках программирования. В Perl блок,
 ограниченный фигурными скобками, создает область видимости. То, что объявлено внутри нее с 

@@ -1,5 +1,5 @@
 =title Name "main::x" used only once: possible typo at ...
-=timestamp 2013-03-05T20:31:10
+=timestamp 2013-07-10T12:00:00
 =indexes warnings, strict, possible typo
 =status show
 =original name-used-only-once-possible-typo
@@ -94,26 +94,25 @@ Use of uninitialized value $x in print at ...
 
 <h2>use strict</h2>
 
-As you can see in the above examples, I have not used strict. If I was using it,
-then instead of getting a warning about possible typo, I'd get a compile time
-error:
+Как видно в предыдущих примерах, мы не использовали strict-режим. Если бы мы его включили, то вместо
+предупреждения о возможной опечатке мы бы получили ошибку компиляции:
 <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>.
 
-That would happen even if you used the incorrect variable more than once.
+Это происходило бы даже если вы использовали неверную переменную больше одного раза.
 
-Then of course there are people who would rush and paste "my" in front of the incorrect
-variable, but you are not one of those. are you? You would think about the problem and search till
-you find the name of the real variable.
+Конечно, кто-то мог бы просто, не подумав, поставить "my" перед неправильной переменной, но вы-то
+не из таких, не так ли? Вы бы подумали над проблемой и нашли бы, как действительно должна 
+называться переменная.
 
-The most common way to see this warning is if you are not using strict.
+Наиболее типичный способ увидеть это предупреждение - не использовать strict.
 
-And then you are in deep trouble.
+И вот тогда-то у вас возникнут серьезные неприятности.
 
-<h2>Other cases while using strict</h2>
+<h2>Другие случаи при использовании strict</h2>
 
-As GlitchMr and an Anonymous commenter pointed out, there are a few other cases:
+Как указали GlitchMr и анонимный комментатор, существуют и некоторые другие случаи:
 
-This code, can also generate it
+Этот код также может выдать такое:
 
 <code lang="perl">
 use strict;
@@ -122,12 +121,12 @@ use warnings;
 $main::x = 23;
 </code>
 
-The warning is: <b>Name "main::x" used only once: possible typo ...</b>
+Вы увидите предупреждение: <b>Name "main::x" used only once: possible typo ...</b>
 
-Here at least it is clear where that 'main' comes from, or in
-the next example, where the Mister comes from. (hint. it is the package name
-other <a href="/global-symbol-requires-explicit-package-name">error about package names</a>
-was missing.) In the next example, the package name is 'Mister'.
+Здесь по крайней мере понятно, откуда взялось 'main', или в следующем примере, откуда взялось 
+'Mister'. (подсказка. Это название модуля, которого не хватало другой 
+<a href="/global-symbol-requires-explicit-package-name">ошибке про названия модулей</a>.) В
+следующем примере название модуля - 'Mister'.
 
 <code lang="perl">
 use strict;
@@ -136,9 +135,9 @@ use warnings;
 $Mister::x = 23;
 </code>
 
-The warning is <b>Name "Mister::x" used only once: possible typo ...</b>.
+Мы увидим предупреждение <b>Name "Mister::x" used only once: possible typo ...</b>.
 
-The following example too generates the warning. Twice:
+Следущий пример тоже выдает это предупреждение. Дважды:
 
 <code lang="perl">
 use strict;
@@ -153,12 +152,11 @@ Name "main::a" used only once: possible typo at ...
 Name "main::b" used only once: possible typo at ...
 </code>
 
-This happens because <hl>$a</hl> and <hl>$b</hl> are
-special variables used in the built-in sort function so
-you don't need to declare them, but you are only
-using them once here.
-(Actually it is unclear to me why this generates the warnings,
-while the same code using <b>sort</b> does not, but the
-<a href="http://www.perlmonks.org/?node_id=1021888">Perl Monks</a> might know.
+Это происходит потому, что <hl>$a</hl> и <hl>$b</hl> - специальные переменные, используемые во
+встроенной функции сортировки (<h1>sort</h1>), поэтому их не нужно объявлять; однако здесь они
+используются только один раз.
+(На самом деле мне непонятно, почему здесь эти предупреждения появляются, хотя в таком же коде с
+использованием <b>sort</b> - нет, но <a href="http://www.perlmonks.org/?node_id=1021888">Perl Monks</a>
+могут знать.)
 
 
