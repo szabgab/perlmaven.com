@@ -1,5 +1,5 @@
 =title Perl en la línea de comandos
-=timestamp 2013-06-20T12:15:00
+=timestamp 2013-07-09T10:00:00
 =status show
 =original perl-on-the-command-line
 =books beginner_book
@@ -15,7 +15,7 @@ A pesar que la mayoría del <a href="/perl-tutorial">Tutorial de Perl</a>
 trata con scripts guardados en un archivo, también veremos un par de ejemplos
 de <h>one-liners</h> (instrucciones en una línea).
 
-Aún cuando utilices <a href="http://padre.perlide.org/">Padre</a> u otro IDE que
+Aúnque utilices <a href="http://padre.perlide.org/">Padre</a> u otro IDE que
 te permita ejecutar tu script desde el editor, es muy importante que
 te familiarices con la línea de comandos (o <i>shell</i>) y que seas capaz de 
 usar Perl en ella.
@@ -55,7 +55,7 @@ this system using "man perl" or "perldoc perl".  If you have access to the
 Internet, point your browser at http://www.perl.org/, the Perl Home Page.
 </code>
 
-Con esto puedo ver que tengo la versión 5.12.3 de Perl instalada en mi
+En mi caso, por ejemplo, puedo ver que tengo la versión 5.12.3 de Perl instalada en mi
 máquina Windows.
 
 
@@ -82,7 +82,7 @@ El resultado está en el principio de la línea, seguido por el <i>prompt</i>.
 La diferencia se debe a los distintos comportamientos que tienen ambos intérpretes de línea de comando.
 
 En el ejemplo usamos el <i>flag</i> <hl>-e</hl>, el cual le dice a Perl:
-"No esperes un archivo. Lo que viene a continuación es el código Perl."
+"No esperes un archivo, lo que viene a continuación es el código Perl".
 
 Los ejemplos anteriores no son muy interesantes que digamos. Déjame mostrarte un ejemplo ligeramente
 más complejo, sin explicarlo:
