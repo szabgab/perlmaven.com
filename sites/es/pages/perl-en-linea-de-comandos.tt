@@ -15,7 +15,7 @@ A pesar que la mayoría del <a href="/perl-tutorial">Tutorial de Perl</a>
 trata con scripts guardados en un archivo, también veremos un par de ejemplos
 de <h>one-liners</h> (instrucciones en una línea).
 
-Aúnque utilices <a href="http://padre.perlide.org/">Padre</a> u otro IDE que
+Aunque utilices <a href="http://padre.perlide.org/">Padre</a> u otro IDE que
 te permita ejecutar tu script desde el editor, es muy importante que
 te familiarices con la línea de comandos (o <i>shell</i>) y que seas capaz de 
 usar Perl en ella.
