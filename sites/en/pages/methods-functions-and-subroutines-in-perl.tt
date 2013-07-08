@@ -1,0 +1,71 @@
+=title Methods, Functions and Subroutines in Perl
+=timestamp 2013-07-01T18:13:10
+=indexes $self
+=status draft
+=books advanced_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+We know that in Perl the names <a href="/subroutines-and-functions-in-perl">Function and Subroutine</a> are interchangeable.
+But what is really the difference between a function and a method?
+
+=abstract end
+
+On the surface there are no differences. They are both declared using the <hl>sub</hl> keyword.
+The differences are mainly in the way they are used.
+
+A method is always called using the arrow notation.
+Either on the object: <hl>$p->do_something($value)</hl>
+or on a class: <hl>Class::Name->new</hl>.
+
+A function is always called directly: Either with its fully qualified name: <hl>Module::Name::func_something($param)</hl>  or,
+if the functions is part of the current name-space, then with the short name: <hl>func_something($param)</hl>.
+
+If a method cannot be found in the class of the object on which it was called, Perl will go to the parent class and look
+for a method with the same name there. It will do it recursively using its built-in method resolution algorithm.
+It will only give up (or call AUTOLOAD) if the method could not be found at all.
+On the other hand, Perl will only look for a function in a single place, (and then AUTOLOAD, if it is available).
+
+A method will always get the current object (or class name) as the first parameter of its call.
+A function will never get the object. (Well, unless you manually pass it as a parameter.)
+Therefore a method normally acts on an instance (object), and sometimes it acts on the whole class (and then we call it class-method).
+A function on the other hand, <b>never</b> acts on an object. Though it might act on the class.
+
+<h2>Examples</h2>
+
+A regular or object-method:
+
+<code lang="perl">
+sub a_method {
+  my ($self, $param) = @_;
+  ...
+}
+</code>
+
+A class-method:
+
+<code lang="perl">
+sub a_class_method {
+  my ($class, $param) = @_;
+  ...
+}
+</code>
+
+A function:
+
+<code lang="perl">
+sub a_function {
+  my ($param) = @_;
+  ...
+}
+</code>
+
+Methods are only used in Object Oriented Perl code.
+
+Functions are rarely used in Object Oriented Programming.
+
+
