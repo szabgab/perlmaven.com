@@ -75,7 +75,7 @@ to practice what you have learned.
 <li>Numerical and string operators</li>
 <li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
 <li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
-<li><a href="/here-docuemnts">Here documents</a></li>
+<li><a href="/here-documents">Here documents</a></li>
 <li><a href="/scalar-variables">Scalar variables</a></li>
 <li><a href="/comparing-scalars-in-perl">Comparing scalars</a></li>
 <li><a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
@@ -165,7 +165,7 @@ to practice what you have learned.
 <b>CPAN</b>
 <ol>
 <li><a href="/download-and-install-perl">Download and install Perl (Strawberry Perl or manual compilation)</a></li>
-<li>Download and install Perl using Perlbrew</a></li>
+<li>Download and install Perl using Perlbrew</li>
 <li>Locating and evaluating CPAN modules</li>
 <li>Downloading and installing Perl Modules from CPAN</li>
 <li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
@@ -192,7 +192,7 @@ to practice what you have learned.
 <li><a href="/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
 <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse</a></li>
 <li><a href="/object-oriented-perl-using-moose">Object Oriented Perl using Mooses</a></li>
-<li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a>
+<li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a></li>
 <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
 </ol>
 
