@@ -1,6 +1,6 @@
 =title 표준 출력, 표준 에러, 리다이렉션
 =timestamp 2013-06-25T12:50:11
-=indexes STDOUT, STDERR, /dev/null
+=indexes STDOUT, STDERR, /dev/null, $|, buffering
 =status show
 =original stdout-stderr-and-redirection
 =books beginner_book
@@ -137,3 +137,56 @@ Perl 내부에서 STDOUT과 STDERR로 구분하여 출력하는 것은 모든 �
 위에 언급한 대부분의 내용은 모든 유닉스/리눅스 시스템과 MS윈도우에서 동작해야 합니다.
 특별히 <hl>/dev/null</hl>은 유닉스/리눅스 시스템에서만 사용 가능합니다.
 
+<h2 id="buffering">출력 순서 (버퍼링)</h2>
+
+살짝 주의해야 할 점이 있습니다:
+
+다음과 같은 코드가 있을 때:
+
+<code lang="perl">
+print "before";
+print STDERR "Slight problem here.\n";
+print "after";
+</code>
+
+출력은 다음과 같이 나올 것입니다:
+
+<code>
+Slight porblem here.
+beforeafter
+</code>
+
+"before"와 "after" 둘 다 에러 메시지 <b>다음에</b> 스크린에 도달하는 것을 눈여겨 보세요.
+우리는 "before"가 에러메시지보다 먼저 나오길 기대했는데 말이죠.
+
+이렇게 되는 이유는, 기본적으로 Perl은 STDOUT의 출력은 버퍼를 사용하지만 STDERR은 그렇지 않기
+때문입니다. 버퍼링을 끄기 위해서는 <hl>$|</hl>라고 불리는 마술봉을 사용하세요:
+
+<code lang="perl">
+$| = 1;
+
+print "before";
+print STDERR "Slight problem here.\n";
+print "after";
+</code>
+
+<code>
+beforeSlight porblem here.
+after
+</code>
+
+STDOUT으로 나가는 문자열에 개행문자를 붙여서 문제를 해결할 수도 있습니다:
+
+<code lang="perl">
+print "before\n";
+print STDERR "Slight problem here.\n";
+print "after";
+</code>
+
+출력도 좀 더 보기 좋아집니다:
+
+<code>
+before
+Slight porblem here.
+after
+</code>
