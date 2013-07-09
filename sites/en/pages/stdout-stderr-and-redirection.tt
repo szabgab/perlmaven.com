@@ -179,7 +179,7 @@ beforeSlight porblem here.
 after
 </code>
 
-Adding a newline to the string goint to STFOUT usually also solves the problem:
+Adding a newline to the string goint to STDOUT usually also solves the problem:
 
 <code lang="perl">
 print "before\n";
