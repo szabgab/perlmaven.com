@@ -100,7 +100,10 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 
 <b>Fișiere</b>
 <ol>
-<li>die, warn and exit</li>
+<li><a href="http://perlmaven.com/how-to-exit-from-perl-script">exit</a></li>
+<li><a href="http://perlmaven.com/stdout-stderr-and-redirection">Standar Output, Standard Error and command line redirection</a></li>
+<li><a href="/aviz">Aviz (warn)</a></li>
+<li>die</li>
 <li><a href="/crearea-fisierelor-cu-perl">Crearea fișierelor cu Perl</a></li>
 <li><a href="/adaugare-continut-la-fisiere">Adăugare conținut la fișiere</a></li>
 <li><a href="http://perlmaven.com/open-and-read-from-files">Open and read from files using Perl</a></li>
