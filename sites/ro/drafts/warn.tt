@@ -1,74 +1,83 @@
-=title Warning when something goes wrong
+=title Avizare (warn) când ceva este în neregulă
 =timestamp 2013-07-09T09:01:01
 =indexes warn, STDERR
 =status show
 =books beginner_book
 =author szabgab
+=translator stefansbv
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-When something goes slightly wrong in your script/program/application, it is customary to warn
-the user about the issue. In command line script this is normally done by printing
-a warning message to the <a href="/stdout-stderr-and-redirection">Standard Error channel</a>.
+În momentul în care ceva este în neregulă în script/program/aplicație,
+este uzual să avizezi utilizatorul despre problemă.  În scripturile
+pentru linia de comandă acesta se face în mod normal prin printarea
+unui mesaj de avertizare
+la <a href="/stdout-stderr-and-redirection">Ieșirea de Eroare Standard</a>.
 
 =abstract end
 
-As explained in the article about the <a href="/stdout-stderr-and-redirection">standard output and error</a>,
-in Perl you can do it by printing to <hl>STDERR</hl>
+Așa cum a fost explicat în articolul
+despre <a href="/stdout-stderr-and-redirection">standard output and
+error</a>, în Perl se poate face prin direcționarea printării
+către <hl>STDERR</hl>
 
 <code lang="perl">
 print STDERR "Slight problem here...\n";
 </code>
 
-There is a better, more standard way though.
-
-you could just call the <hl>warn</hl> function:
+Există însă o cale mai bună, standard, poate fi apelată
+funcția <hl>warn</hl> (avizare, avertizare):
 
 <code lang="perl">
 warn "Slight problem here.\n";
 </code>
 
-It is shorter, more expressive and in the above form has the same effect.
+Este mai scurtă, mai expresivă și în forma de mai sus are același efect.
 
-In both cases the script, after printing the warning message, will keep running!
+În ambele cazuri scriptul, după ce printează mesajul de avizare, va
+continua să ruleze!
 
-It provides more though.  If you leave out the trailing new-line (the <hl>\n</hl> at the end):
+Totuși are mai multe facilități.  Dacă omiți caracterul linie nouă (new-line)
+(adică <hl>\n</hl> de la sfârșit):
 
 <code lang="perl">
 warn "Slight problem here.";
 </code>
 
-then the output will include the name of the file and the line number,
-where the <hl>warn</hl> function was called:
+atunci rezultatul va include numele fișierului și numărul liniei,
+de unde a fost apelată funcția <hl>warn</hl>:
 
 <code>
 Slight problem here. at programming.pl line 5.
 </code>
 
-This can be very useful when you have a script that runs a lot of other scripts,
-or when you have a bigger application with many modules.
-This will make it much easier for you, or for the user of your program,
-to track down the source of the problem.
+Acesta poate fi foarte utilă atunci când ai un script care apelează multe alte
+scripturi, sau când ai o aplicație mai mare cu mai multe module.
 
-<h2>Catching warnings</h2>
+Acesta va ușura găsirea sursei problemei pentru tine sau pentru
+utilizatorul programului.
 
-There is even more.
+<h2>Capturarea avizărilor</h2>
 
-Perl introduced a special signal-handle for warnings.
-This means you, or someone else, can later add code to the program that
-<a href="/how-to-capture-and-save-warnings-in-perl">captures all the warnings</a>.
-This is a bit more advanced topic though, but if you are interested go ahead,
-check out that page.
+Încă și mai mult.
 
-<h2>warning</h2>
+Perl a introdus un așa numit <b>signal-handle</b> special pentru avizări.
+Acesta înseamnă că tu, sau altcineva, poate adăuga mai târziu cod în
+program care să
+<a href="/how-to-capture-and-save-warnings-in-perl">captureze toate
+avizările</a>.  Acesta este un subiect puțin mai avansat totuși, dar
+dacă ești interesat, mergi mai departe și citește acea pagină.
 
-A slight warning here. You might encounter cases when a warning called after
-a print statement shows up before the conent of the print statement:
+<h2>Avertizare</h2>
 
-This code:
+O mică avertizare aici. Pot fi întâlnite cazuri în care o avizare
+apelată după o comandă de printare apare înaintea conținutului
+comenzii de printare.
+
+Acest cod:
 
 <code lang="perl">
 print "before";
@@ -77,7 +86,7 @@ print STDERR "More problems.\n";
 print "after";
 </code>
 
-generating this output:
+generează acestă ieșire:
 
 <code>
 Slight porblem here.
@@ -85,7 +94,6 @@ More problems.
 beforeafter
 </code>
 
-Where the word "before" appears after both warning messages.
+Unde cuvântul "before" apare după ambele mesaje de avizare.
 
-In that case read about <a href="/stdout-stderr-and-redirection#buffering">buffering</a>.
-
+În acest caz, citește despre <a href="/stdout-stderr-and-redirection#buffering">folosirea memoriei tampon (buffering)</a>.
