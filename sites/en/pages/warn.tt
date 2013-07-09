@@ -23,9 +23,8 @@ in Perl you can do it by printing to <hl>STDERR</hl>
 print STDERR "Slight problem here...\n";
 </code>
 
-There is a better, more standard way though.
-
-you could just call the <hl>warn</hl> function:
+There is a better, more standard way though, you could just call
+the <hl>warn</hl> function:
 
 <code lang="perl">
 warn "Slight problem here.\n";
@@ -66,7 +65,7 @@ check out that page.
 <h2>warning</h2>
 
 A slight warning here. You might encounter cases when a warning called after
-a print statement shows up before the conent of the print statement:
+a print statement shows up before the content of the print statement:
 
 This code:
 
@@ -88,4 +87,3 @@ beforeafter
 Where the word "before" appears after both warning messages.
 
 In that case read about <a href="/stdout-stderr-and-redirection#buffering">buffering</a>.
-
