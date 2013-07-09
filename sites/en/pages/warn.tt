@@ -45,7 +45,7 @@ then the output will include the name of the file and the line number,
 where the <hl>warn</hl> function was called:
 
 <code>
-Slight problem here. at programing.pl line 5.
+Slight problem here. at programming.pl line 5.
 </code>
 
 This can be very useful when you have a script that runs a lot of other scripts,
