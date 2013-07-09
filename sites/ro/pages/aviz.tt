@@ -3,6 +3,7 @@
 =indexes warn, STDERR
 =status show
 =books beginner_book
+=original warn
 =author szabgab
 =translator stefansbv
 =archive 1
