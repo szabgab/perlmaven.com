@@ -1,5 +1,5 @@
 =title Запись в файл на Perl
-=timestamp 2013-07-10T12:00:00
+=timestamp 2013-07-09T08:00:06
 =indexes open, close, write, die, open or die, >, encoding, UTF-8
 =status show
 =original writing-to-files-with-perl
