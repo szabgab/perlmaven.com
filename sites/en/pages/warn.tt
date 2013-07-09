@@ -1,7 +1,7 @@
-=title warning when something goes wrong
-=timestamp 2013-07-11T12:45:56
+=title Warning when something goes wrong
+=timestamp 2013-07-09T09:01:01
 =indexes warn, STDERR
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1

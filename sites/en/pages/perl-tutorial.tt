@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on July 07, 2013.
+parts are being published every few days. The latest one was published on July 09, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -88,7 +88,8 @@ to practice what you have learned.
 <ol>
 <li><a href="/how-to-exit-from-perl-script">exit</a></li>
 <li><a href="/stdout-stderr-and-redirection">Standar Output, Standard Error and command line redirection</a></li>
-<li>warn and die</li>
+<li><a href="/warn">warn</a></li>
+<li>die</li>
 <li><a href="/writing-to-files-with-perl">Writing to files</a></li>
 <li><a href="/appending-to-files">Appending to files</a></li>
 <li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
