@@ -199,16 +199,9 @@ to practice what you have learned.
 </ol>
 
 <b>Object Oriented Perl with Moo</b>
-<ol>
-  <li><a href="/videos/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, creating a class with a single attrubue that can be either read-only (immutable) or read-write (mutable) attribute.
-      Creating and instance (object).</li>
-  <li>For <a href="/pro">Pro</a> subscribers:</li>
-  <li><a href="/pro/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
-  <li><a href="/pro/moo-and-required-attributes">required attributes</a></li>
-  <li><a href="http://perlmaven.com/pro/moo-attributes-with-default-values">Moo attributes with default values</a></li>
-  <li><a href="/pro/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
-</ol>
 
+There is a whole series of articles on writing Object Oriented code, using the
+light-weight <a href="/moo">Moo</a> OOP framework.
 
 <hr />
 
