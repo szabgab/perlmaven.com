@@ -11,34 +11,61 @@
 =comments 0
 =social 1
 
+Учебник Perl Maven научит вас основам программирования на Perl. Вы сможете писать простые скрипты,
+анализировать лог-файлы, считывать и записывать CSV-файлы. Это лишь некоторые типичные задачи, которые
+вы освоите.
 
+Вы научитесь использовать CPAN и некоторые конкретные модули CPAN.
+
+Так вы заложите хорошую основу знаний, которые позже сможете развивать.
+
+Бесплатная онлайн-версия учебника создается сейчас. Многие части уже готовы. Новые материалы 
+публикуются и переводятся каждые несколько дней. Последний перевод был опубликован 10 июля 2013 г.
+Если вы хотите получать уведомления, когда публикуются новые материалы, пожалуйста
+<a href="/register">подпишитесь на рассылку</a>.
+
+Также можно купить версию англоязычных материалов в виде 
+<a href="/beginner-perl-maven-e-book">электронной книги</a>. Вдобавок к бесплатным статьям, в этой
+версии есть другие материалы из соответствующих курсов, содержащие множество упражнений и решений.
+
+Еще есть <a href="/beginner-perl-maven-video-course">видео-курс</a>, состоящий из более 210 скринкастов
+общей продолжительностью более 5 часов. В дополнение к представлению материала, он также включает
+объяснения решений всех упражнений, а также исходный код всех примеров и упражнений.
+
+<h2>Бесплатный онлайн Учебник для новичков - Perl Maven Tutorial</h2>
+
+С помощью этого учебника вы научитесь использовать язык программирования Perl 5 так, чтобы
+<b>выполнить свою задачу</b>.
+
+Вы узнаете как об основных свойствах языка, так и о расширениях (библиотеках), или, как их называют
+Perl-программисты, <b>модулях</b>. Мы рассмотрим как стандартные модули, входящие в установочный
+пакет Perl, так и модули сторонних разработчиков, размещаемые на <b>CPAN</b>.
+
+Мы постараемся по возможности обучать решениям, ориентированным на конкретные задачи. Мы будем
+придумывать жизненные задачи и учиться использовать инструменты, необходимые для их решения.
+Также, когда возможно, мы постараемся показывать вам некоторые упражнения, на которых можно 
+потренироваться применять выученные уроки.
 
 <p>
 <b>Введение</b>
 <ol>
 <li>
 	<a href="/ustanovka-i-nachalo-raboty-s-perl">Установка Perl. Hello World. "Ремни безопасности" (use strict, use warnings)</a>
-	(<a href="http://perlmaven.com/installing-perl-and-getting-started">Install Perl, print Hello World, Safety net (use strict, use warnings)</a>)
 </li>
 <li>
 	<a href="/redaktor-dlya-perl">Редакторы, IDE, среды разработки для Perl</a>
-	(<a href="http://perlmaven.com/perl-editor">Editors, IDEs, development environment for Perl</a>)
 </li>
 <li>
 	<a href="/perl-v-komandnoy-stroke">Perl в командной строке</a>
-	(<a href="http://perlmaven.com/perl-on-the-command-line">Perl on the command line</a>)
 </li>
 <li>
 	<a href="/documentacia-na-perl-i-cpan-moduli">Основная документация Perl и документация на модули CPAN</a>
-	(<a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">Core Perl documentation, CPAN module documentation</a>)
 </li>
 <li>
 	<a href="/pod-ili-prostaya-staraya-dokumentatsia">POD - Простая Старая Документация</a>
-	(<a href="http://perlmaven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a>)
 </li>
 <li>
-	<span href="/debugging-perl-scripts">Отладка Perl-скриптов</span>
-	(<a href="http://perlmaven.com/debugging-perl-scripts">Debugging Perl scripts</a>)
+	<a href="/otladka-perl-scriptov">Отладка Perl-скриптов</a>
 </li>
 </ol>
 
@@ -48,11 +75,9 @@
 <ul>
 <li>
 	<a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
-	(<a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>)
 </li>
 <li>
 	<a href="/use-of-uninitialized-value">Use of uninitialized value</a>
-	(<a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a>)
 </li>
 <li>
 	<span href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</span>
@@ -60,7 +85,6 @@
 </li>
 <li>
 	<a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a>
-	(<a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a>)
 </li>
 <li>
 	<span href="/unknown-warnings-category">Unknown warnings category</span>
@@ -78,7 +102,6 @@
 </li>
 <li>
 	<a href="/avtomaticheskiy-perevod-znacheniy-ili-privedenie-tipov-v-perl">Автоматический перевод строк в числа</a>
-	(<a href="http://perlmaven.com/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a>)
 </li>
 <li>Условные выражения: if</li>
 <li>
@@ -120,7 +143,6 @@
 </li>
 <li>
 	<a href="/oblast-vidimosti-v-perl">Область видимости переменных в Perl</a>
-	(<a href="http://perlmaven.com/scope-of-variables-in-perl">Scope of variables in Perl</a>)
 </li>
 </ol>
 
@@ -137,11 +159,9 @@
 <li>warn и die</li>
 <li>
 	<a href="/zapis-v-fayl-na-perl">Запись в файл</a>
-	(<a href="http://perlmaven.com/writing-to-files-with-perl">Writing to files</a>)
 </li>
 <li>
 	<a href="/dopisyvanie-v-fayl">Дописывание в файл</a>
-	(<a href="http://perlmaven.com/appending-to-files">Appending to files</a>)
 </li>
 <li>
 	<span href="/open-and-read-from-files">Открытие и чтение из файла на Perl</span>
