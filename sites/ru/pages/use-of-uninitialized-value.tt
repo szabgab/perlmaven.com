@@ -1,8 +1,8 @@
 =title Use of uninitialized value
-=timestamp 2013-07-10T12:00:00
+=timestamp 2013-07-09T08:00:05
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
-=original use-of-ininitialized-value
+=original use-of-uninitialized-value
 =books beginner_book
 =author szabgab
 =translator spidamoo

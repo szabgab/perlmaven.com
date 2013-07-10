@@ -1,0 +1,90 @@
+=title Bare Here documents are deprecated - How to find offending code?
+=timestamp 2013-06-30T08:01:01
+=indexes <<
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+When describing the <a href="/here-documents">here documents</a> in Perl I mentioned that you
+might see cases of here-documents where the end-mark is not quoted at the declaration.
+
+It <a href="http://byte-me.org/perl-5-porters-weekly-july-1-7-2013/">turns out</a> that feature has been
+deprecated a long time ago and it will be removed from perl version 5.20.
+
+You might be a long way from upgrading to that version of Perl, and you don't know if you have such code at all.
+You might think "I won't be around when that happens".
+
+Or you could use the following steps to find any place where you have here-document using the deprecated
+feature and you can fix it now easily.
+
+That way you can make sure this issue won't break the code when that upgrade happens, and if you are not
+there people won't want to hunt you down!
+
+=abstract end
+
+<h2>Perl::Critic to the rescue</h2>
+
+The <a href="http://www.perlcritic.com/">Perl::Critic</a> has a policy called
+<a href="https://metacpan.org/module/Perl::Critic::Policy::ValuesAndExpressions::RequireQuotedHeredocTerminator">ValuesAndExpressions::RequireQuotedHeredocTerminator</a>
+that check exactly this situation.
+
+As explained in the <a href="/perl-critic-one-policy">article about improving your code</a>,
+you can use the <hl>perlcritic</hl> command to look for violations of a specific policy.
+
+Let's say we have a file called programming.pl with the following code:
+
+<code lang="perl">
+my $what = 'quote';
+
+print <<"END2";
+double $what
+END2
+
+print <<'END1';
+single $what
+END1
+
+print <<END0;
+no $what
+END0
+</code>
+
+If we run this using <b>perl programming.pl</b> the output will look like this:
+
+<code>
+double quote
+single $what
+no quote
+</code>
+
+Which, I assume, is the expected output.
+
+If we run the perlcritic command:
+
+<hl>perlcritic --single-policy  ValuesAndExpressions::RequireQuotedHeredocTerminator programming.pl</hl>
+
+we get the following report:
+
+<code>
+Heredoc terminator must be quoted at line 11, column 7.  See page 64 of PBP.  (Severity: 3)
+</code>
+
+There you are. It found the code that violates the policy, that will stop working on perl 5.20.
+
+Fix it by putting double quotes around the name: <hl>print <<"END0";</hl> and run the script again
+to make sure the output stayed the same.
+
+You can also run the perlcritic policy checker to see the success report:
+
+<code>
+$ perlcritic --single-policy  ValuesAndExpressions::RequireQuotedHeredocTerminator p.pl
+p.pl source OK
+</code>
+
+Now do it on all the files you have.
+
+

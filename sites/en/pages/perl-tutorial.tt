@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on June 30, 2013.
+parts are being published every few days. The latest one was published on July 09, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -88,7 +88,8 @@ to practice what you have learned.
 <ol>
 <li><a href="/how-to-exit-from-perl-script">exit</a></li>
 <li><a href="/stdout-stderr-and-redirection">Standar Output, Standard Error and command line redirection</a></li>
-<li>warn and die</li>
+<li><a href="/warn">warn</a></li>
+<li>die</li>
 <li><a href="/writing-to-files-with-perl">Writing to files</a></li>
 <li><a href="/appending-to-files">Appending to files</a></li>
 <li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
@@ -106,7 +107,8 @@ to practice what you have learned.
 <li>Lists in Perl</li>
 <li>Using Modules</li>
 <li><a href="/perl-arrays">Arrays in Perl</a></li>
-<li>Process command line parameters @ARGV, Getopt::Long</li>
+<li><a href="/argv-in-perl">Process command line parameters @ARGV</a></li>
+<li>Process command line parameters using Getopt::Long</li>
 <li><a href="/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a></li>
 <li><a href="/join">join</a></li>
 <li><a href="/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
@@ -125,7 +127,7 @@ to practice what you have learned.
 <ol>
 <li><a href="/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
 <li>Parameter passing and checking for subroutines</li>
-<li>Variable number of parameters</li>
+<li><a href="/variable-number-of-parameters">Variable number of parameters</a></li>
 <li>Returning a list</li>
 <li>Recursive subroutines</li>
 </ol>
@@ -197,16 +199,9 @@ to practice what you have learned.
 </ol>
 
 <b>Object Oriented Perl with Moo</b>
-<ol>
-  <li><a href="/videos/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, creating a class with a single attrubue that can be either read-only (immutable) or read-write (mutable) attribute.
-      Creating and instance (object).</li>
-  <li>For <a href="/pro">Pro</a> subscribers:</li>
-  <li><a href="/pro/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
-  <li><a href="/pro/moo-and-required-attributes">required attributes</a></li>
-  <li><a href="http://perlmaven.com/pro/moo-attributes-with-default-values">Moo attributes with default values</a></li>
-  <li><a href="/pro/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
-</ol>
 
+There is a whole series of articles on writing Object Oriented code, using the
+light-weight <a href="/moo">Moo</a> OOP framework.
 
 <hr />
 
