@@ -9,12 +9,14 @@
 
 =abstract start
 
-Given a &lt;rlnrp:cell=all; type data file describing relationships between GSM cells,
+Given a <hl>&lt;rlnrp:cell=all;</hl> (look at the first line of the file)
+type data file describing relationships between GSM cells,
 we need to flatten the multi-line records. Probably in order to import them into a database.
 
 Such tasks are often required by enginners in telco companies or companies that support them.
 
 =abstract end
+
 
 First let's see the <a href="#input">input data</a>, the <a href="#output">expected output</a> and
 a bit of a <a href="#description">description</a>.
