@@ -1,5 +1,5 @@
 =title Отладка Perl-скриптов
-=timestamp 2013-07-10T12:00:00
+=timestamp 2013-07-10T12:00:01
 =indexes -d, Data::Dumper, print, debug, debugging, $VAR1, $VAR2
 =status show
 =original debugging-perl-scripts
