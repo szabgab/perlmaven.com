@@ -39,11 +39,11 @@ Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
   </li>
   <li><a href="/pro/moo-with-public-and-private-methods">Methods</a></li>
   <li><a href="/pro/methods-functions-and-subroutines-in-perl">Methods, Functions and Subroutines in Perl and what is $self ?</a></li>
+  <li><a href="/pro/inheritance-and-method-modifiers-in-moo">Inheritance and Method Modifiers</a></li>
 </ul>
 
 <h2>Planned articles</h2>
 <ul>
-  <li>Inheritance</li>
   <li>Modifying the constructor</li>
   <li>The destructor of a Moo-based class</li>
   <li>Roles</li>
