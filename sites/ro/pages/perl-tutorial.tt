@@ -66,7 +66,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li><a href="/perl-editor-ide">Perl Editor</a></li>
 <li><a href="/perl-in-linia-de-comanda">Perl în linia de comandă</a></li>
 <li><a href="/documentatia-perl-si-documentatia-modulelor-cpan">Documentația Perl și documentația modulelor CPAN</a></li>
-<li><a href="http://perlmaven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
+<li><a href="/pod-plain-old-documentation-pentru-perl">POD - Plain Old Documentation</a></li>
 <li><a href="http://perlmaven.com/debugging-perl-scripts">Debugging Perl scripts</a></li>
 </ol>
 
