@@ -1,6 +1,6 @@
 =title How to capture and save warnings in Perl
 =timestamp 2013-05-07T10:30:01
-=indexes warnings, state, __WARN__, %SIG, local
+=indexes warnings, state, __WARN__, %SIG, $SIG{}, local
 =status show
 =books advanced_book
 =author szabgab

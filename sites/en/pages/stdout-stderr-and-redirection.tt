@@ -1,6 +1,6 @@
 =title Standard output, standard error and command line redirection
 =timestamp 2013-06-25T12:50:10
-=indexes STDOUT, STDERR, /dev/null
+=indexes STDOUT, STDERR, /dev/null, $|, buffering
 =status show
 =books beginner_book
 =author szabgab
@@ -133,12 +133,68 @@ and <hl>perl program.pl 2> nul</hl> would redirect standard error.
 
 <h2>Unix/Linux/Windows support?</h2>
 
-The separate printing to STDOUT and STDERR inside Perl works on every 
+The separate printing to STDOUT and STDERR inside Perl works on every
 operating system, but the actual redirection might not. That depends
 on how the operating system, and more specifically the shell (command line)
 works.
 
 Most of the above should work on all Unix/Linux systems as well as on MS Windows.
 Specifically <hl>/dev/null</hl> is only available on Unix/Linux systems.
+
+<h2 id="buffering">Order of output (buffering)</h2>
+
+A slight warning:
+
+Having this code:
+
+<code lang="perl">
+print "before";
+print STDERR "Slight problem here.\n";
+print "after";
+</code>
+
+The output might look like this:
+
+<code>
+Slight porblem here.
+beforeafter
+</code>
+
+Please note, that both "before" and "after" both arrived to the screen <b>after</b> the error message.
+Even though we expected "before" to be, well, before the error message.
+
+The reason is, that by default, Perl buffers the output of STDOUT and does not
+buffer STDERR. To turn off buffering use the magic stick called <hl>$|</hl>:
+
+<code lang="perl">
+$| = 1;
+
+print "before";
+print STDERR "Slight problem here.\n";
+print "after";
+</code>
+
+<code>
+beforeSlight porblem here.
+after
+</code>
+
+Adding a newline to the string goint to STDOUT usually also solves the problem:
+
+<code lang="perl">
+print "before\n";
+print STDERR "Slight problem here.\n";
+print "after";
+</code>
+
+And the output looks even better:
+
+<code>
+before
+Slight porblem here.
+after
+</code>
+
+
 
 

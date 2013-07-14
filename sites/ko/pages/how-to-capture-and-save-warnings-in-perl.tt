@@ -1,6 +1,6 @@
 =title Perl에서 경고메시지를 가로채어 저장하기
 =timestamp 2013-05-18T20:00:00
-=indexes warnings, state, __WARN__, %SIG, local
+=indexes warnings, state, __WARN__, %SIG, $SIG{}, local 
 =status show
 =original how-to-capture-and-save-warnings-in-perl
 =books advanced_book
