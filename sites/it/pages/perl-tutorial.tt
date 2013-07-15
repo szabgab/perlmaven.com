@@ -39,6 +39,8 @@
 </ul>
 <li><a href="/conversione-automatica-o-cast-in-perl">Conversione automatica da stringa a numero</a></li>
 <li><a href="/undef-e-defined-in-perl">undef e defined in Perl</a></li>
+<li>Istruzioni condizionali: if</li>
+<li><a href="/valori-booleani-in-perl">Valori Booleani (vero e falso) in Perl</a></li>
 </ol>
 
 <b>Liste e Array</b>
