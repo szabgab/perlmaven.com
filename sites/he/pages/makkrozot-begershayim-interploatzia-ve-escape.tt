@@ -186,7 +186,7 @@ print "The "name" is "$name"\n";
 </code>
 
 כשפרל רואה את הגרש הכפול לפני המילה  "name" היא חושבת שזה סוף המחרוזת 
-ומתלוננת על כך ש-<b>name</b> היא <a href="http://perlmaven.com/barewords-in-perl"> מילה חשופהbareword)</a)>.
+ומתלוננת על כך ש-<b>name</b> היא <a href="http://perlmaven.com/barewords-in-perl"> מילה חשופה (bareword)</a>.
 
 כפי שודאי כבר ניחשת, צריך לעשות escapeg לתו <hl>"</hl> :
 
