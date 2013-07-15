@@ -4,7 +4,10 @@ Perl Maven
 These are the source files of the articles published on http://perlmaven.com/ and its subdomains.
 
 Copyright Gabor Szabo except where the =author field explicitly shows someone else.
-Translations are copyright the translator (mentioned in the =translator field of each file) and Gabor Szabo.
+Translations are copyright the translator (mentioned in the =translator field of each file) and Gabor Szabo,
+or the author of the specific article.
+
+License: all the Perl 5 examples are free software. You can redistribute them under the same terms as Perl 5.10.
 
 
 FORMAT
