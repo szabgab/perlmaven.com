@@ -2,9 +2,9 @@
 =timestamp 2013-07-14T23:01:01
 =indexes <<, Perl::Critic, perlcritic
 =status show
+=original bare-here-documents-are-deprecated
 =author szabgab
 =translator bruck
-=original bare-here-documents-are-deprecated
 =archive 1
 =comments 1
 =social 1
