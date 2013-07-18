@@ -1,0 +1,125 @@
+=title Symbolic references in Perl
+=timestamp 2013-07-18T00:30:01
+=indexes strict, symbolic references
+=status show
+=books advanced_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+One of the 3 things <hl>use strict</hl> disables is the use of <b>symbolic references</b>.
+
+Let's see how can that save you time and avoid embarrassment!
+
+Let's see why avoiding symbolic references is a good thing!
+
+At another time we'll see a useful example of symbolic references.
+
+=abstract end
+
+In general, symbolic references are a very powerful tool in Perl, but if used by accident, it can cause a lot of
+head scratching. Best to disable them in every script, and enable them only when we know exactly why we need them.
+
+<h2>The danger</h2>
+
+A long time ago, in a Perl training session, we had some discussion that led me mention that you can
+use the same name for both scalar variables and arrays and hashes. It is not a recommended practice
+but technically it is possible. I got carried away a bit and wanted to show the students that it works.
+So I wrote the following code:
+
+
+<code lang="perl">
+my $person = "Foo";
+my %person;
+$person->{name} = 'Bar';
+</code>
+
+...and explained that I declared the <hl>$person</hl> scalar, assigned "Foo" to it.
+Then created a hash with the same name, and put a key and a value in it.
+To further show it works I printed out the content of the hash:
+
+<code lang="perl">
+use Data::Dumper;
+print Dumper \%person;
+</code>
+
+To my great surprise the following was printed:
+
+<code>
+$VAR1 = {};
+</code>
+
+I was quite baffled. Where did the new key/value pair go?
+
+I had really no idea what happened.
+
+The situation was quite embarrassing.
+
+Luckily we had lunch break, and just after I finished the soup it occurred to me
+that I have not used <b>strict</b> in my code.
+
+<h2>The understanding</h2>
+
+Returning to the class-room I added <hl>use strict</hl> and ran the code again:
+
+<code lang="perl">
+use strict;
+use Data::Dumper;
+
+my $person = "Foo";
+my %person;
+$person->{name} = 'Bar';
+</code>
+
+I got the following error message:
+
+<code>
+Can't use string ("Foo") as a HASH ref while "strict refs" in use at ...
+</code>
+
+Apparently I was using a <b>symbolic HASH reference</b>, by accident.
+
+In fact, I never touched the <hl>%person</hl> hash. In the second assignment
+I used the <hl>$person</hl> scalar as a reference to a hash. This would be OK
+if the variable <hl>$person</hl> was undef, it would <a href="/pro/autovivification">autovivify</a> (pro page)
+to be a reference to a hash. As it already contained a string Perl was trying to use that name, the content of the
+variable, as the name of a hash. Effectively I assigned 'Bar' to the 'name' key of the <hl>%Foo</hl> hash.
+
+This is how you can check it too:
+
+<code lang="perl">
+use Data::Dumper;
+
+my $person = "Foo";
+my %person;
+$person->{name} = 'Bar';
+
+print Dumper \%person;
+print Dumper \%Foo;
+</code>
+
+And the output is:
+
+<code>
+$VAR1 = {};
+$VAR1 = {
+        'name' => 'Bar'
+      };
+</code>
+
+As you can see, the first print of the <hl>%person</hl> hash is empty,
+but the <hl>%Foo</hl> hash sprang to existence and has a 'name' key with 'Bar'
+as the value.
+
+Certainly <b>not</b> what I wanted.
+
+Since Perl has real references, you almost never need this capability,
+and if such thing happens by mistake then it is way better to get
+an error than to silently do the wrong thing.
+
+So <b>always use strict</b>.
+
+
