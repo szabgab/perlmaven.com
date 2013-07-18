@@ -1,4 +1,4 @@
-=head1 Can't locate ... in @INC
+=title Can't locate ... in @INC
 =timestamp 2013-07-17T07:30:01
 =indexes warnings, @INC
 =status draft
