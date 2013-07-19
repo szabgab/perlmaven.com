@@ -63,7 +63,7 @@ that I have not used <b>strict</b> in my code.
 
 <h2>The understanding</h2>
 
-Returning to the class-room I added <hl>use strict</hl> and ran the code again:
+Returning to the class-room I added <hl>use strict</hl> and <b>ran</b> the code again:
 
 <code lang="perl">
 use strict;
@@ -121,5 +121,169 @@ and if such thing happens by mistake then it is way better to get
 an error than to silently do the wrong thing.
 
 So <b>always use strict</b>.
+
+
+<h2>Symbolic references of scalar variables</h2>
+
+<code lang="perl">
+print "Hello World\n";
+my $name = 'person';
+${$name} = 'Foo';
+print "$name\n";
+print "$person\n";
+</code>
+
+Save this code in a file called <hl>programming.pl</hl> 
+and run it as <hl>perl programming.pl</hl>.
+
+The output will be this:
+
+<code>
+Hello World
+person
+Foo
+</code>
+
+The variable <hl>$name</hl> still has the value 'person' in it as expected, but now we also have
+a variable called <hl>$person</hl>, that holds the value 'Foo'. Even though we don't have
+a clearly visible assignment to <hl>$person</hl>, such as <hl>$person = 'Foo';</hl> would be.
+
+This is in the expression <hl>${$name} = 'Foo';</hl>, perl replaced the variable <hl>$name</hl>
+with its value 'person' so effectively perl saw <hl>$person = 'Foo';</hl>. There. Now we can
+see what perl saw.
+
+Let's see how can using strict stop us from such mistake?
+Add <hl>use strict;</hl> to the beginning of the script and run it again!
+You will get:
+
+<code>
+Global symbol "$person" requires explicit package name at programming.pl line 10.
+Execution of programming.pl aborted due to compilation errors.
+</code>
+
+Interesting, this is not the same error as we saw above. This complains about the fact
+that we have not declared the <hl>$person</hl> variable. Not only that but this is a
+compile-time error. How do I know it, you ask?
+
+Try <hl>perl -c programming.pl</hl>, it will give you the same error message and will
+tell you there was a compilation error:
+
+<code>
+Global symbol "$person" requires explicit package name at programming.pl line 10.
+programming.pl had compilation errors.
+</code>
+
+The <hl>-c</hl> flag of perl tells it to compile the script and exit.
+
+In order to further experiment, let's add <hl>my $person;</hl> at the top of the script
+and try to compile it again using <hl>perl -c programming.pl</hl>.
+
+The output will be:
+
+<code>
+programming.pl syntax OK
+</code>
+
+So we can see the code now compiles. What if we try to run it with <hl>perl programming.pl</hl>?
+
+We get:
+
+<code>
+Hello World
+Can't use string ("person") as a SCALAR ref while "strict refs" in use at programming.pl line 8.
+</code>
+
+Note, it runs. I know it as it printed 'Hello World', but then it stops running with an error
+similar to what we saw at the beginning of the article.
+
+In general this is a good thing. In most cases we don't want to write code that will
+act as symbolic references <b>by mistake</b>.
+
+The only unfortunate part is that perl can only notice this during run-time, so if this
+code is a part of the code that rarely executes (eg. within an if statement), then
+the problem might only surface when it is running in production.
+
+<h1>Can symbolic references be useful?</h1>
+
+Sometimes it might feel useful to use symbolic references.
+
+<h2>Accessing a variable when its name is in another variable</h2>
+
+For example, sometimes I see code similar to this: 
+
+<code lang="perl">
+$machineA = '10.3.7.5';
+$machineB = '11.3.5.6';
+
+foreach $name ('machineA', 'machineB') {
+	print "${$name}\n";
+}
+</code>
+
+or maybe:
+
+<code lang="perl">
+foreach $name ('A', 'B') {
+    $key = 'machine' . $name;
+	print "${$key}\n";
+}
+</code>
+
+The programmer has a bunch of variables holding IP addresses of computers, she wants to
+go over all the names and do something with each machine. (In this case, just printing
+the value.)
+
+This won't work under <hl>use strict;</hl>, and in general this practice should be avoided.
+
+This is a typical example, when one should use a hash instead of several scalar variables.
+Like this:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+my %machine;
+$machine{A} = '10.3.7.5';
+$machine{B} = '11.3.5.6';
+
+foreach my $name ('A', 'B') {
+	print "$machine{$name}\n";
+}
+</code>
+
+<h2>Several numbered variables</h2>
+
+Another case I saw a couple of times:
+
+<code lang="perl">
+$machine1 = '10.3.7.5';
+$machine2 = '11.3.5.6';
+$machine3 = '12.4.5.6';
+
+foreach $number (1 .. 3) {
+    $name = 'machine' . $number;
+	print "${$name}\n";
+}
+</code>
+
+Here we have several machines numbered and then we iterate over them.
+
+This might be better written as a hash, similar to the previous example, or
+even as an array:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+my @machine = (
+    '10.3.7.5',
+    '11.3.5.6',
+    '12.4.5.6',
+);
+
+foreach my $number (0 .. 2) {
+	print "$machine[$number]\n";
+}
+</code>
 
 
