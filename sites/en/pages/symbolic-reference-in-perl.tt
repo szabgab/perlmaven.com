@@ -268,8 +268,8 @@ foreach $number (1 .. 3) {
 
 Here we have several machines numbered and then we iterate over them.
 
-This might be better written as a hash, similar to the previous example, or
-even as an array:
+This is better written as a hash, similar to the previous example, or
+as an array:
 
 <code lang="perl">
 use strict;
@@ -285,5 +285,9 @@ foreach my $number (0 .. 2) {
 	print "$machine[$number]\n";
 }
 </code>
+
+<h2>Conclusion</h2>
+
+Always use strict!
 
 
