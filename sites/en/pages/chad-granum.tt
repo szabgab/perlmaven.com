@@ -1,0 +1,49 @@
+=title Chad (Exodist) Granum, author of the Fennec testing tool
+=timestamp 2013-07-21T20:33:01
+=indexes DCI, Fennec, testing, Chad Granum
+=tags interview
+=status draft
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+Intervie with Chad Granum
+
+Fennec can automatically run blocks of you code in separate forked processes.
+(31.06 min)
+
+
+=abstract end
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/yjZiR03zckk" frameborder="0" allowfullscreen></iframe>
+
+<div id="downloads">Download:
+<a href="/media/audio/chad-granum.mp3">mp3</a> ( Mb)
+</div>
+
+<ul>
+  <li>Chad Granum on <a href="https://metacpan.org/author/EXODIST">CPAN</a>, on <a href="https://github.com/exodist">Github</a></li>
+  <li>He is exodist <a href=""></a></li>
+<!-- <a href="http://www.open-exodus.net">Open Exodus</a> -->
+</ul>
+
+<ul>
+  <li>The <a href="https://metacpan.org/module/DCI">DCI = Data, Context, Interactions</a> implementation on CPAN</li>
+  <li>Fennec on <a href="https://metacpan.org/module/Fennec">CPAN</a>, and the home page of <a href="http://exodist.github.io/Fennec/">Fennec</a></li>
+  <li><a href="https://metacpan.org/module/Fennec::Declare">Fennec::Declare</a> with all the magic of Devel::Declare</a></li>
+  <li><a href="https://metacpan.org/module/Child">Child</a> wrapping fork, originally created perl5i </li>
+  <li><a href="https://metacpan.org/release/Parallel::Runner">Parallel::Runner</a></li>
+  <li>Check out the <a href="http://exodist.github.io/Fennec/#workflows-stages">workflow stages</a></li>
+  <li><a href="http://www.dreamhost.com/">Dreamhost</a>, where Char currently works and where Fennec is being used.</li>
+  <li><a href="http://www.linkedin.com/pub/chad-granum/17/183/52b">Chad Granum on LinkedIN</a></li>
+  <li><a href="https://metacpan.org/module/Mock::Quick"></a></li>
+  <li><a href="https://github.com/schwern/perl5i">perl5i</a></li>
+  <li><a href=""></a></li>
+</ul>
+
