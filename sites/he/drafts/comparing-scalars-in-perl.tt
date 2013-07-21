@@ -1,0 +1,131 @@
+=title Comparing scalars in Perl =timestamp 2013-05-01T12:45:56
+=indexes eq, ne, lt, gt, le, ge, ==, !=, <, >, <=, >=
+=status show =books beginner_book =author szabgab =archive 1 =comments 1 =social 1
+
+=abstract start
+
+הכרנו<a href="/scalar-variables">משתנים סקלריים</a> וראינו המרות בין מחרוזות לבין מספרים שמתבצעות בזמן הריצה.. יצא לנו אפילו להסתכל על משפט התנאי <b>if</b> אבל לא ראינו איך להשוות בין שני משתנים סקלריים. זהו נושאו של חלק זה.
+
+=abstract end
+
+כאשר נתונים לנו שני משתנים $x ו- $y איך משווים ביניהם? האם  1, 1.0 ו- 1.00 הם שווים? מה לגבי "1.00" ? מה יותר גדול -  "foo" או "bar"?
+
+<h2>שתי קבוצות של אופרטורים להשוואה</h2>
+
+לפרל יש שתי קבוצות אופרטורים להשוואות. כפי שראינו עם פעולת האופרטורים האריתמטיים חיבור (+), שרשור (.) וחזרה (x), האופרטור הוא זה שמגדיר כיצד הערכים (אופרנדים) מתנהגים וכיצד הם מושווים.
+
+שתי קבוצות האופרטורים הן הקבוצות הבאות:
+
+<code>
+Numeric    String         Meaning
+==            eq           equal
+!=            ne           not equal
+<             lt           less than
+>             gt           greater than
+<=            le           less than or equal
+>=            ge           greater then or equal
+</code>
+
+האופרטורים מצד שמאל משווים את הערכים כמספרים בעוד שהאופרטורים בצד ימין (הטור האמצעי) משווים את הערכים על פי טבלת ASCII או על פי הגדרת האזור.
+
+נראה מספר דוגמאות:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+if ( 12.0 == 12 ) {
+  say "TRUE";
+} else {
+  say "FALSE";
+}
+</code>
+
+מקרה זה הוא מקרה פשוט ופרל תדפיס   TRUE כיוון שהאופרטור e <hl>==</hl> משווה שני מספרים ולפרל זה לא משנה אם הם כתובים כמספר שלם או כמספר עם שבר (floating point) .
+
+מקרה מעניין יותר הוא ההשוואה הבאה:
+
+<code>
+"12.0" == 12
+</code>
+
+גם כאן התוצאה היא TRUE כיוון שהאופרטור <hl>==</hl> של פרל ממיר את המחרוזת למספר.
+
+<code>
+ 2  < 3  is TRUE because < compares the two numbers.
+
+ 2  lt 3 is also TRUE as 2 is before 3 in the ASCII table
+
+12 > 3  is TRUE obviously.
+
+12 gt 3 will give you FALSE
+</code>
+
+ייתכן שזה יפתיע הרבה אנשים אבל אם תחשבו על זה, פרל משווה בין שתי מחרוזות היא על ידי השוואת תו-תו. אז היא משווה  "1" ל- "3" וכיוון שהם שונים ו "1" הוא לפני  "3" בטבלת ה-ASCII פרל מחליטה בשבלב זה שהמחרוזת 12 היא קטנה מהמחרוזת 3 .
+
+יש לוודא שאתם משווים ערכים כפי שאתם רוצים להשתמש בהם!
+
+<code>
+"foo"  == "bar" will be TRUE
+</code>
+
+כמו כן תקבלו שתי אזהרות אם הפעלתם את האזהרות עם (!)  <hl>use warnings</hl>. הסיבה לאזהרות היא שאת משתמשים בשתי מחרוזות כמספרים בהשאווה המספרית == . כפי שצוין בחלק הקודם, פרל מסתכלת על צידה השמאלי של כל מחרוזת וממירה אותן למספרים שהיא רואה שם. כיוון שתי המחרוזות מתחילות באות, שתיהן יומרו ל- 0. 0 == 0 ולכן אנחנו מקבלים true.
+
+מצד שני:
+
+<code>
+"foo"  eq "bar"  FALSE
+</code>
+
+ולכן תמיד יש לודא שאתם משווים ערכים כפי שאתם רוצים שהם יושוו!
+
+אותו דבר קורה כשמשווים
+
+<code>
+"foo"  == "" will be TRUE
+</code>
+
+and
+
+<code>
+"foo"  eq "" will be FALSE
+</code>
+
+
+הטבלה הבאה עשויה להועיל כדי לראות את התוצאות:
+
+<code>
+ 12.0   == 12    TRUE
+"12.0"  == 12    TRUE
+"12.0"  eq 12    FALSE
+  2     <   3    TRUE
+  2    lt   3    TRUE
+ 12     >   3    TRUE
+ 12    gt   3    FALSE ! (look out, might not be obvious at first)
+"foo"  ==  ""    TRUE  ! (You get warnings if you used the "warnings" pragmata)
+"foo"  eq  ""    FALSE
+"foo"  == "bar"  TRUE  ! (You get warnings if you used the "warnings" pragmata)
+"foo"  eq "bar"  FALSE
+</code>
+
+ולבסוף דוגמה שעלולה להכשיל אנשים כשמקבלים קלט מהמשתמש ולאחר שמשתמשים ב-chomp כדי להסיר את סימן ה-newline  (סוף שורה) מסוף הקלט אתם מנסים לבדןק אם המחרוזת שהוקלדה היא ריקה.
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+print "input: ";
+my $name = <STDIN>;
+chomp $name;
+
+if ( $name == "" ) {   # wrong! you need to use eq instead of == here!
+  say "TRUE";
+} else {
+  say "FALSE";
+}
+</code>
+
+אם תריצו את הקוד ותקלידו "abc"  ,התוצאה תהיה  TRUE, כאילו פרל חשבה ש- "abc" iזהה למחרוזת ריקה.
+
