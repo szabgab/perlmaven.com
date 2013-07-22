@@ -3,7 +3,7 @@
 =indexes DCI, Fennec, testing, Chad Granum
 =tags interview
 =mp3 /media/audio/chad-granum.mp3, 30343200, 31:06
-=status draft
+=status show
 =showright 1
 =newsletter 0
 =published 0
@@ -14,10 +14,12 @@
 
 =abstract start
 
-Interview with Chad Granum.
-
 Fennec can automatically run blocks of you code in separate forked processes.
-(31.06 min)
+
+It can also run a specific block in your test script. Awesome for rapid test development.
+
+An interview with Chad Granum, the author of <a href="http://exodist.github.io/Fennec/">Fennec</a> and a number of other
+interesting CPAN modules.  (31.06 min)
 
 
 =abstract end
@@ -36,7 +38,6 @@ Fennec can automatically run blocks of you code in separate forked processes.
 </ul>
 
 <ul>
-  <li>The <a href="https://metacpan.org/module/DCI">DCI = Data, Context, Interactions</a> implementation on CPAN</li>
   <li>Fennec on <a href="https://metacpan.org/module/Fennec">CPAN</a>, and the home page of <a href="http://exodist.github.io/Fennec/">Fennec</a></li>
   <li><a href="https://metacpan.org/module/Fennec::Declare">Fennec::Declare</a> with all the magic of Devel::Declare.</li>
   <li><a href="https://metacpan.org/module/Child">Child</a> wrapping fork, originally created for the <a href="https://github.com/schwern/perl5i">perl5i</a> project.</li>
@@ -44,8 +45,6 @@ Fennec can automatically run blocks of you code in separate forked processes.
   <li>Check out the <a href="http://exodist.github.io/Fennec/#workflows-stages">workflow stages</a>, click on the 'step forward' to step through the code.</li>
   <li><a href="https://metacpan.org/module/Mock::Quick">Mock::Quick</a></li>
   <li><a href="http://www.dreamhost.com/">Dreamhost</a>, where Chad currently works, and where Fennec is being used.</li>
-<!--
-  <li><a href=""></a></li>
--->
+  <li>The <a href="https://metacpan.org/module/DCI">DCI = Data, Context, Interactions</a> implementation on CPAN</li>
 </ul>
 
