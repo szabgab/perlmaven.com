@@ -1,9 +1,9 @@
 =title הקשר סקלרי(Scalar) והקשר רשימתי (List) בפרל, גודל של מערך
-=timestamp 2013-07-22T23:00:00
+=timestamp 2013-07-22T23:10:00
 =indexes scalar, list, array, size, length, context, Perl
 =status show
-=books beginner_book
 =original scalar-and-list-context-in-perl
+=books beginner_book
 =author szabgab
 =translator bruck
 =archive 1
