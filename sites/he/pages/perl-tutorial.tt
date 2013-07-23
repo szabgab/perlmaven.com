@@ -23,6 +23,7 @@
    <li><a href="/here-documents-khasufut-meyushanot.tt">מחרוזות here-document חשופות הן מיושנות ועומדות לצאת משימוש - איך למצוא קוד בעייתי?</a></li>
    <li><a href="/scalar-variables.tt">משתנים סקלריים</a></li>
    <li><a href="/scalar-and-list-context-in-perl">הקשר סקלרי(Scalar) והקשר רשימתי (List) בפרל, גודל של מערך</a></li>
+   <li><a href="/scope-of-variables-in-perl">טווח (scope) של משתנים בפרל</a></li>
 <!--
   <li><a href=""></a></li>
 -->
