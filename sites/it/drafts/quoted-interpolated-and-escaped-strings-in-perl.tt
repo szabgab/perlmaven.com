@@ -1,18 +1,20 @@
-=title Strings in Perl: quoted, interpolated and escaped
+=title Stringhe in Perl: quotate, interpolate e con escape
 =timestamp 2013-05-15T11:45:03
-=indexes strings, ', ", \, escape character, interpolation, quote, embedded characters, q, qq
+=indexes stringhe, ', ", \, carattere di escape, interpolazione, quotatura, caratteri incorporati, q, qq
 =status show
+=original quoted-interpolated-and-escaped-strings-in-perl
 =books beginner_book
 =author szabgab
+=translator giatorta
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-Understanding how strings work is important in every programming language, but in Perl they are
-part of the essence of the language. Especially if you consider that one of the backronimes of Perl
-is <b>Practical Extraction and Reporting Language</b> and for that you need to use lots of strings.
+Capire come funzionano le stringhe è importante in ogni linguaggio di programmazione, ma in Perl esse sono
+parte dell'essenza del linguaggio. Specialmente se tenete presente che uno degli "acronimi a posteriori" di Perl
+è <b>Practical Extraction and Reporting Language</b> e per fare questo avete bisogno di molte stringhe.
 
 =abstract end
 
