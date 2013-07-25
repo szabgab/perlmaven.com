@@ -48,6 +48,7 @@
 
 <b>리스트와 배열</b>
 <ol>
+<li><a href="/argv-in-perl">명령행 인자 @ARGV 처리하기</a></li>
 <li><a href="/scalar-and-list-context-in-perl">문맥 민감성</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">배열에서 고유 값들만 남기기</a></li>
 <li>스택과 <a href="/using-a-queue-in-perl">큐</a></li>
@@ -91,6 +92,7 @@
 <li><a href="/what-is-new-in-perl-5.10--say-defined-or-state">Perl 5.10의 새로운 기능들 say, //, state</a></li>
 <li><a href="/multi-dimensional-arrays-in-perl">Perl에서의 다차원 배열</a></li>
 <li><a href="/the-default-variable-of-perl">Perl의 기본변수 $_</a></li>
+<li><a href="/symbolic-reference-in-perl">심볼릭 레퍼런스</a></li>
 </ol>
 
 <!--
