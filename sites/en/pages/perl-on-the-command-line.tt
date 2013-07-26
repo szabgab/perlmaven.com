@@ -70,9 +70,13 @@ c:>
 On Linux you will see something like this:
 
 <code>
-gabor@pm:~$ perl -e "print 42"
+gabor@pm:~$ perl -e 'print 42'
 42gabor@pm:~$
 </code>
+
+Please note, I used single-quote <hl>'</hl> in Linux and double-quote <hl>"</hl> on Windows.
+This is due to the different behaviour of the command line on these two operating systems.
+Nothing to do with Perl.
 
 The result is on the beginning of the line, immediately followed by the prompt.
 This difference is due to different in the behavior of the two command-line interpreters.
@@ -89,8 +93,11 @@ This command: <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" resume.txt</hl>
 will replace all appearance of the word <b>Java</b> by the word <b>Perl</b> in your
 résumé while keeping a backup of the file.
 
-On Linux you could even write this <hl>perl -i.bak -p -e "s/\bJava\b/Perl/" *.txt</hl>
+On Linux you could even write this <hl>perl -i.bak -p -e 's/\bJava\b/Perl/' *.txt</hl>
 to replace Java by Perl in <b>all</b> your text files.
+
+(Again, please note, on Linux/Unix you should probably always use single-quotes on the command line,
+while on Windows double-quotes.)
 
 In a later section we'll talk more about one-liners and you'll learn how to use them.
 Enough to say, the knowledge of one-liners is a very powerful weapon in your hands.
