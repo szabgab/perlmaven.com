@@ -11,7 +11,13 @@
 =abstract start
 
 One of the frequent compile time errors people get from Perl looks like this:
-Can't locate Acme/NameX.pm in @INC (@INC contains: ... )
+<hl>Can't locate Acme/NameX.pm in @INC (@INC contains: ... )</hl>
+
+Starting from perl version 5.18 it will say:
+
+<hl>Can't locate Acme/NameX.pm in @INC (you may need to install the Acme::NameX module) (@INC contains: ... )</hl>
+
+a much needed improvement, that alrady helps people go in the right direction.
 
 =abstract end
 
