@@ -1,7 +1,7 @@
 =title Can't locate ... in @INC
-=timestamp 2013-07-17T07:30:01
+=timestamp 2013-07-25T07:30:01
 =indexes warnings, @INC
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
@@ -11,7 +11,13 @@
 =abstract start
 
 One of the frequent compile time errors people get from Perl looks like this:
-Can't locate Acme/NameX.pm in @INC (@INC contains: ... )
+<hl>Can't locate Acme/NameX.pm in @INC (@INC contains: ... )</hl>
+
+Starting from perl version 5.18 it will say:
+
+<hl>Can't locate Acme/NameX.pm in @INC (you may need to install the Acme::NameX module) (@INC contains: ... )</hl>
+
+a much needed improvement, that alrady helps people go in the right direction.
 
 =abstract end
 
@@ -56,9 +62,12 @@ in which directoy was it placed.
 Then you can try to see if it is one of the directories listed in <hl>@INC</hl>.
 You can get the list of directory on the command line by typing <hl>perl -V</hl>.
 
-If for some reason it was installed in a non-standard directory, you can
+If, for some reason it was installed in a non-standard directory, you can
 <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">change the @INC array</a>
 in several ways.
+
+On the other hand, if the module is part of your applications, then you might
+want to <a href="/pro/how-to-add-a-relative-directory-to-inc">change @INC relative to your script</a>. (pro article)
 
 <h2>Can't locate warning.pm in @INC</h2>
 
