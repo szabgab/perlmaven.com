@@ -29,18 +29,17 @@ Each folder has some .Pdf file.
 I have list of pdf file & i want to check whether it is available in a directory from dir1.
 
 <code>
-                               dir1
+                                dir1
                                  |
                                  |
-                 -----------------------------------------------
+                  -----------------------------------------------
                   |           |            |         |          |
-               dir2      dir3         dir4    dir5     dir6
+                 dir2        dir3         dir4      dir5       dir6
                   |                        |
                   |                        |
-       ----------------------              |
-       |                    |          -------------
-    dir7               dir8         |            |
-                                     dir9       dir10
+       ----------------------         -------------- 
+       |                    |         |            |
+     dir7                  dir8      dir9         dir10
 </code>
 
 Now I am copying all pdf file into separate folder by manually & using this script i am checking it.
@@ -133,7 +132,7 @@ use warnings;
 use File::Find::Rule;
 use File::Basename qw(basename);
 
-my $path = "C:/Users/foobar/files/$myfile";
+my $path = "C:/Users/foobar/files/dir1";
 my $report = 'final.txt';
 my $expected = <STDIN>;
 chomp $expected;
