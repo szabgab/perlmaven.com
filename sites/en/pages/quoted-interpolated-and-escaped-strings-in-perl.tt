@@ -276,7 +276,7 @@ The )name( is "foo"
 (even though I have not idea why would I want to print something like that...)
 
 Then <a href="http://perl.plover.com/yak/presentation/samples/slide027.html">the guy from the second row</a> raises his hand,
-and ask what if you want both parentheses and curly braces in your string, <b>and</b> you want them imbalanced?
+and asks what if you want both parentheses and curly braces in your string, <b>and</b> you want them imbalanced?
 
 You mean like this, right?
 
