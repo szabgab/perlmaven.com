@@ -42,6 +42,7 @@
 <li><a href="/valori-booleani-in-perl">Valori Booleani (vero e falso) in Perl</a></li>
 <li>Operatori numerici e stringa</li>
 <li><a href="/undef-e-defined-in-perl">undef e defined in Perl</a></li>
+<li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Stringhe in Perl: quotate, interpolate e con escape</a></li>
 </ol>
 
 <b>Liste e Array</b>
