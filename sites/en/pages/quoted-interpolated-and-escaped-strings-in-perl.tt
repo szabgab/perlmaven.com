@@ -56,7 +56,7 @@ how are you today?
 
 </code>
 
-Note, there is a <hl>\n</hl> right after the comma in the string and another one at the end of the sting.
+Note, there is a <hl>\n</hl> right after the comma in the string and another one at the end of the string.
 
 For simple strings such as 'Foo' and "today" that have no <hl>$</hl>, <hl>@</hl>, and <hl>\</hl> characters
 in them, it does not matter how they are quoted.
@@ -276,7 +276,7 @@ The )name( is "foo"
 (even though I have not idea why would I want to print something like that...)
 
 Then <a href="http://perl.plover.com/yak/presentation/samples/slide027.html">the guy from the second row</a> raises his hand,
-and ask what if you want both parentheses and curly braces in your string, <b>and</b> you want them imbalanced?
+and asks what if you want both parentheses and curly braces in your string, <b>and</b> you want them imbalanced?
 
 You mean like this, right?
 
