@@ -131,7 +131,7 @@ $name = foo
 <h2>Escaping the escape character</h2>
 
 There are rare cases when you'd like to include a back-slash character in a string.
-If you put a back-slash <hl>\</hl> in a string, (either single-quoted or double quoted),
+If you put a back-slash <hl>\</hl> in a double-quoted string,
 Perl will think you want to escape the next character and do its magic.
 
 Don't worry though. You can tell Perl to stop that by escaping the escape character:
@@ -142,7 +142,7 @@ You just put another back-slash in front of it:
 use strict;
 use warnings;
 my $name = 'foo';
-print "\\$name\n";:w
+print "\\$name\n";
 </code>
 
 <code>
