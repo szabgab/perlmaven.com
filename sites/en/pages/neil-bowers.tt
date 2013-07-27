@@ -14,11 +14,18 @@
 
 =abstract start
 
+Neil Bowers is a long time Perl programmer, manager of Perl developers, manager of managers of Perl programmers.
+
+He is also a prolific Perl blogger who writes articles comparing 10-20 Perl modules that are supposed to
+do the same task. Offering a step in the direction of CPAN curation.
+
+He is also the owner of a small bootstrapping Perl-based start-up company.
+
 (41:29 min)
 
 =abstract end
 
-(In the the first 10-15 seconds the sound had some problems. Sorry for that. )
+(In the the first 10-15 seconds the sound had some problems. Sorry for that.)
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/GOK8lpiqFMY" frameborder="0" allowfullscreen></iframe>
 
@@ -28,32 +35,30 @@
 
 
 <ul>
-<li><a href="http://neilb.org/">The blog of Neil Bowers</a></li>
+<li><a href="http://neilb.org/">The blog of Neil Bowers</a> "running" on his own, not-yet-published static blog engine. (<a href="https://metacpan.org/author/NEILB">NEILB on CPAN</a>.)</li>
 <li><a href="http://blogs.perl.org/users/neilb/">Neil Bowers on blogs.perl.org</a></li>
-<li>The business Neil runs is called <a href=""></a> - Web based service for companies managing setting objectives and doing an appraisel at the end of the year.</li>
-<li><a href="http://neilb.org/reviews/"></a></li>
-<li><a href="">Parsing User-Agent strings with Perl</a></li>
-<li>Cooperating with <a href="http://www.wundercounter.com/">Olaf Aldres</a> (<a href="https://metacpan.org/author/OALDERS">OALDERS</a>)
+<li>The business Neil runs is called <a href=""></a> - It provides a web based service (in the cloud) for companies managing setting objectives,
+and doing an appraisal at the end of the year for their employees.</li>
+<li><a href="http://neilb.org/reviews/">List of reviews</a> Neil wrote.</li>
+<li>A review of <a href="http://neilb.org/reviews/passwords.html">Perl modules generating passwords</a>.</li>
+<li>Reviewing modules <a href="http://neilb.org/reviews/user-agent.html">Parsing User-Agent strings with Perl</a>.</li>
+<li>Working with <a href="http://www.wundercounter.com/">Olaf Aldres</a> (<a href="https://metacpan.org/author/OALDERS">OALDERS</a>)
 trying to cooperatively maintain 4 modules related to User-Agent (MetaCPAN)</li>
-<li><a href="">Perl modules for generating passwords</a></li>
 </ul>
 
 <ul>
-<li><a href="http://wardley.org/">Andy Wardly</a> http://metacpan.org/author/ABW">ABW on CPAN</a>, and the <a href="http://metacpan.org/module/Template">Template Toolkit</a></li>
-<li><a herf="http://www.bruhat.net/">Philippe Bruhat</a>, and on <a href="http://metacpan.org/author/BOOK">BooK</a></li>
+<li>Neil mentioned <a href="http://wardley.org/">Andy Wardly</a>, <a href="http://metacpan.org/author/ABW">ABW on CPAN</a>, and the <a href="http://metacpan.org/module/Template">Template Toolkit</a></li>
+<li><a herf="http://www.bruhat.net/">Philippe Bruhat</a>, and on <a href="http://metacpan.org/author/BOOK">BooK</a> who writes his own static blogging software.</li>
 <li><a href="http://www.fysh.org/~zefram/">Zefram (Andrew Main)</a> and <a href="http://metacpan.org/author/ZEFRAM">Zefram on CPAN</a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
 <li><a href="http://questhub.io/">Questhub</a> and its createor <a href="http://berekuk.ru/">Vyacheslav Matyukhin</a> <a href="https://metacpan.org/author/MMCLERIC">BEREKUK</a></li>
-<li></li>
-Put links in the <b>See Also</b> section of your module linking to other modules doing similar things to your module.
-<li><a href="https://metacpan.org/author/YANICK">Yanick</a> and <a href="http://blog.timbunce.org/">Tim Bunce</a> (<a href="https://metacpan.org/author/TIMB">TIMB</a>) discussing tagging on Meta::CPAN</li>
-
-How can people improve your value? Or fulfillment, satisfaction, value.
-Help other people to solve their problems to get a reputation for being helpful, to being a good programmer.
-
-Having a clear goal and thinking how can I get from here to there. Breaking things down in smaller sized chunks.
-Helping other people is the  <a href="http://stackoverflow.com/tags/perl">Perl on Stack Overflow</a>
-
-Why do I enjoy programmin in Perl?
+<li><a href="https://metacpan.org/author/YANICK">Yanick Champoux</a> and <a href="http://blog.timbunce.org/">Tim Bunce</a> (<a href="https://metacpan.org/author/TIMB">TIMB</a>) discussing tagging on Meta::CPAN</li>
 </ul>
+
+Put links in the <b>See Also</b> section of your module linking to other modules doing similar things to your module.
+
+Help other people to solve their problems to get a reputation for being helpful, being a good programmer.
+Helping other people is the best way to make sure you understand the technology.
+Try <a href="http://stackoverflow.com/tags/perl">Perl on Stack Overflow</a>.
+
+Having a clear goal and thinking how to get from here to there. Breaking things down in smaller sized chunks.
+
