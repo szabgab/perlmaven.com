@@ -137,14 +137,13 @@ my $report = 'final.txt';
 my $expected = <STDIN>;
 chomp $expected;
 
+open(my $fh, '<', $expected) or die "Could not open '$expected' $!\n";
+open(my $out, '>', $report) or die "Could not open '$report' $!\n";
 
 my @full_pathes = File::Find::Rule->file->name('*.pdf')->in($path);
 my @files = map { lc basename $_ } @full_pathes;
 my %file = map { $_ => 1 } @files;
 
-open(my $fh, '<', $expected) or die "Could not open '$expected' $!\n";
-
-open(my $out, '>', $report) or die "Could not open '$report' $!\n";
 print $out "Below files do not exist in the Dir ($path):\n";
 while (my $name = <$fh>) {
     chomp $name;
@@ -157,6 +156,11 @@ while (my $name = <$fh>) {
 close $out;
 close $fh;
 </code>
+
+First we ask the user for the name of file with the expected list.
+Then, even before collecting the file names we opened the file with the list of expected (or required?) filenames,
+and the file where we create the report. That way, if either of this operations fail, we have not
+wasted time traversing the whole directory tree.
 
 The <hl>File::Find::Rule->file->name('*.pdf')->in($path);</hl> call file list all the <hl>files</hl>, that
 match the wild-card <hl>*.pdf</hl> and can be found <hl>in</hl> the subdirectories of <hl>$path</hl>.
@@ -178,7 +182,6 @@ The last step in preparing the existing list of files for further inspection is 
 in which the keys are the names of the files and all the values are just the number <hl>1</hl>.
 This hash will help us easily check if a file was found in the directory structure.
 
-Then we open the file with the list of expected (or required?) filenames. and the file where we create the report.
 We go over the entries in the input file, <hl>chomp</hl> off the newline, and then check if the lower-case version
 of the file is in the <hl>%file</hl> hash. If it is in the hash, we know it was in the directory structure.
 If it was not in the hash we add it to the report file.

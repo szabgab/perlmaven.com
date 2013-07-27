@@ -1,0 +1,59 @@
+=title Neil Bowers
+=timestamp 2013-07-28T01:01:01
+=indexes Neil Bowers
+=tags interview
+=mp3 /media/audio/neil-bowers.mp3, 40100160, 41:29
+=status draft
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+(41:29 min)
+
+=abstract end
+
+(In the the first 10-15 seconds the sound had some problems. Sorry for that. )
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/GOK8lpiqFMY" frameborder="0" allowfullscreen></iframe>
+
+<div id="downloads">Download:
+<a href="/media/audio/neil-bowers.mp3">mp3</a> (39 Mb)
+</div>
+
+
+<ul>
+<li><a href="http://neilb.org/">The blog of Neil Bowers</a></li>
+<li><a href="http://blogs.perl.org/users/neilb/">Neil Bowers on blogs.perl.org</a></li>
+<li>The business Neil runs is called <a href=""></a> - Web based service for companies managing setting objectives and doing an appraisel at the end of the year.</li>
+<li><a href="http://neilb.org/reviews/"></a></li>
+<li><a href="">Parsing User-Agent strings with Perl</a></li>
+<li>Cooperating with <a href="http://www.wundercounter.com/">Olaf Aldres</a> (<a href="https://metacpan.org/author/OALDERS">OALDERS</a>)
+trying to cooperatively maintain 4 modules related to User-Agent (MetaCPAN)</li>
+<li><a href="">Perl modules for generating passwords</a></li>
+</ul>
+
+<ul>
+<li><a href="http://wardley.org/">Andy Wardly</a> http://metacpan.org/author/ABW">ABW on CPAN</a>, and the <a href="http://metacpan.org/module/Template">Template Toolkit</a></li>
+<li><a herf="http://www.bruhat.net/">Philippe Bruhat</a>, and on <a href="http://metacpan.org/author/BOOK">BooK</a></li>
+<li><a href="http://www.fysh.org/~zefram/">Zefram (Andrew Main)</a> and <a href="http://metacpan.org/author/ZEFRAM">Zefram on CPAN</a></li>
+<li><a href=""></a></li>
+<li><a href=""></a></li>
+<li><a href="http://questhub.io/">Questhub</a> and its createor <a href="http://berekuk.ru/">Vyacheslav Matyukhin</a> <a href="https://metacpan.org/author/MMCLERIC">BEREKUK</a></li>
+<li></li>
+Put links in the <b>See Also</b> section of your module linking to other modules doing similar things to your module.
+<li><a href="https://metacpan.org/author/YANICK">Yanick</a> and <a href="http://blog.timbunce.org/">Tim Bunce</a> (<a href="https://metacpan.org/author/TIMB">TIMB</a>) discussing tagging on Meta::CPAN</li>
+
+How can people improve your value? Or fulfillment, satisfaction, value.
+Help other people to solve their problems to get a reputation for being helpful, to being a good programmer.
+
+Having a clear goal and thinking how can I get from here to there. Breaking things down in smaller sized chunks.
+Helping other people is the  <a href="http://stackoverflow.com/tags/perl">Perl on Stack Overflow</a>
+
+Why do I enjoy programmin in Perl?
+</ul>
