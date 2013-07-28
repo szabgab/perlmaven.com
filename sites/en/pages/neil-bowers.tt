@@ -14,12 +14,12 @@
 
 =abstract start
 
-Neil Bowers is a long time Perl programmer, manager of Perl developers, manager of managers of Perl programmers.
+Neil Bowers is a long time Perl programmer, and has managed all sorts of developers, including Perl ones.
 
 He is also a prolific Perl blogger who writes articles comparing 10-20 Perl modules that are supposed to
 do the same task. Offering a step in the direction of CPAN curation.
 
-He is also the owner of a small bootstrapping Perl-based start-up company.
+He is also the joint owner of a small bootstrapped Perl-based start-up company.
 
 (41:29 min)
 
@@ -39,26 +39,31 @@ He is also the owner of a small bootstrapping Perl-based start-up company.
 <li><a href="http://blogs.perl.org/users/neilb/">Neil Bowers on blogs.perl.org</a></li>
 <li>The business Neil runs is called <a href="http://www.cogendo.com/>Cogendo</a> - It provides a web based service (in the cloud) for companies managing setting objectives,
 and doing an appraisal at the end of the year for their employees.</li>
-<li><a href="http://neilb.org/reviews/">List of reviews</a> Neil wrote.</li>
-<li>A review of <a href="http://neilb.org/reviews/passwords.html">Perl modules generating passwords</a>.</li>
-<li>Reviewing modules <a href="http://neilb.org/reviews/user-agent.html">Parsing User-Agent strings with Perl</a>.</li>
-<li>Working with <a href="http://www.wundercounter.com/">Olaf Aldres</a> (<a href="https://metacpan.org/author/OALDERS">OALDERS</a>)
-trying to cooperatively maintain 4 modules related to User-Agent (MetaCPAN)</li>
-</ul>
-
-<ul>
+<li>Neil mentions the <a href="http://neilb.org/reviews/">reviews of CPAN modules</a> that he writes,
+    and specifically mentioned:
+    <ul>
+    <li>A review of <a href="http://neilb.org/reviews/passwords.html">modules for generating passwords</a>.</li>
+    <li>A review of <a href="http://neilb.org/reviews/user-agent.html">modules for parsing User-Agent strings</a>.</li>
+    </ul>
+</li>
+<li>Working with <a href="http://www.wundercounter.com/">Olaf Alders</a> (<a href="https://metacpan.org/author/OALDERS">OALDERS</a>)
+    to produce a single module for parsing user agent strings.</li>
 <li>Neil mentioned <a href="http://wardley.org/">Andy Wardly</a>, <a href="http://metacpan.org/author/ABW">ABW on CPAN</a>, and the <a href="http://metacpan.org/module/Template">Template Toolkit</a></li>
-<li><a herf="http://www.bruhat.net/">Philippe Bruhat</a>, and on <a href="http://metacpan.org/author/BOOK">BooK</a> who writes his own static blogging software.</li>
+<li><a herf="http://www.bruhat.net/">Philippe Bruhat</a> (<a href="http://metacpan.org/author/BOOK">BooK</a>) who is (considering) writing his own static blogging software.</li>
 <li><a href="http://www.fysh.org/~zefram/">Zefram (Andrew Main)</a> and <a href="http://metacpan.org/author/ZEFRAM">Zefram on CPAN</a></li>
-<li><a href="http://questhub.io/">Questhub</a> and its createor <a href="http://berekuk.ru/">Vyacheslav Matyukhin</a> <a href="https://metacpan.org/author/MMCLERIC">BEREKUK</a></li>
-<li><a href="https://metacpan.org/author/YANICK">Yanick Champoux</a> and <a href="http://blog.timbunce.org/">Tim Bunce</a> (<a href="https://metacpan.org/author/TIMB">TIMB</a>) discussing tagging on Meta::CPAN</li>
+<li><a href="http://questhub.io/">Questhub</a> and its creator <a href="http://berekuk.ru/">Vyacheslav Matyukhin</a> <a href="https://metacpan.org/author/MMCLERIC">BEREKUK</a></li>
+<li><a href="https://metacpan.org/author/YANICK">Yanick Champoux</a>'s <a href="http://techblog.babyl.ca/entry/metacpan-recommendations">proposal</a>
+    and <a href="http://blog.timbunce.org/">Tim Bunce</a>'s <a href="http://blog.timbunce.org/2013/03/10/suggested-alternatives-as-a-metacpan-feature/">proposal</a> (<a href="https://metacpan.org/author/TIMB">TIMB</a>) discussing tagging/recommendations on MetaCPAN</li>
 </ul>
 
-Put links in the <b>See Also</b> section of your module linking to other modules doing similar things to your module.
-
-Help other people to solve their problems to get a reputation for being helpful, being a good programmer.
-Helping other people is the best way to make sure you understand the technology.
-Try <a href="http://stackoverflow.com/tags/perl">Perl on Stack Overflow</a>.
-
-Having a clear goal and thinking how to get from here to there. Breaking things down in smaller sized chunks.
+<p>
+Some of the things Neil talked about:
+<ul>
+<li>Put links to competing / similar / complemenary modules in the <b>SEE ALSO</b> section of your module.</li>
+<li>Help other people to solve their problems to get a reputation for being helpful, being a good programmer.
+    Helping other people is the best way to make sure you understand the technology.
+    Try <a href="http://stackoverflow.com/tags/perl">Perl on Stack Overflow</a>.
+    <a href="http://questhub.io">Questhub</a> is a good way to encourage people and to offer help and advice, without waiting for someone to ask a specific question.
+<li>Having a clear goal and thinking how to get from here to there. Breaking things down in smaller sized chunks, keep them on a list, or in Questhub.</li>
+</ul>
 
