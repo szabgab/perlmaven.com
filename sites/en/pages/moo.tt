@@ -40,11 +40,11 @@ Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
   <li><a href="/pro/moo-with-public-and-private-methods">Methods</a></li>
   <li><a href="/pro/methods-functions-and-subroutines-in-perl">Methods, Functions and Subroutines in Perl and what is $self ?</a></li>
   <li><a href="/pro/inheritance-and-method-modifiers-in-moo">Inheritance and Method Modifiers</a></li>
+  <li><a href="/pro/replacing-an-attribute-with-a-method">Replacing an attribute by a method</a> - modifying the constructor (BUILDARGS)</li>
 </ul>
 
 <h2>Planned articles</h2>
 <ul>
-  <li>Modifying the constructor</li>
   <li>The destructor of a Moo-based class</li>
   <li>Roles</li>
   <li>Singleton</li>
