@@ -127,7 +127,7 @@ Foo
 
 No warning, no error.
 
-We used the <b>explicit package name<b> in the last example. That's, by-the-way where the error
+We used the <b>explicit package name</b> in the last example. That's, by-the-way where the error
 message (<a href="/global-symbol-requires-explicit-package-name">global symbol requires explicit package name</a>)
 came from, but in the <i>real world</i> you rarely need that form.
 You are way better off always declaring your variables using <hl>my</hl>, and not

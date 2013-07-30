@@ -1,7 +1,7 @@
 =title Always use strict!
-=timestamp 2013-03-15T07:30:01
+=timestamp 2013-07-29T23:30:01
 =indexes strict
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
@@ -59,8 +59,9 @@ For examples, see the three articles above.
 Ther are a number of modules that if you <hl>use</hl> them in a file, it will 
 automatically and impicitely turn <hl>use strict</hl> on in that specific file.
 
-Among the modules are <a href="">Moose</a>,
-<a href="">Moo</a>, <a href="">Dancer</a>, <a href="">Mojolicious</a>, and more.
+Among the modules are <a href="https://metacpan.org/module/Moose">Moose</a>,
+<a href="https://metacpan.org/module/Moo">Moo</a>, <a href="https://metacpan.org/module/Dancer">Dancer</a>,
+and <a href="https://metacpan.org/module/Mojolicious">Mojolicious</a>, but there are more.
 
 There is a <a href="https://github.com/szabgab/Test-Strict/blob/master/lib/Test/Strict.pm#L242">
 list of such modules</a> in the source of <a href="https://metacpan.org/module/Test::Strict">Test::Strict</a>.
@@ -69,8 +70,7 @@ If you find more such modules, please open a ticket for Test::Strict, or send a 
 <h2>Perl 5.12 and newer</h2>
 
 If a file requires perl 5.12 or later (eg. by having <hl>use 5.012;</hl> or <hl>use 5.12.0;</hl> in the code),
-this too implies the <hl>use strict;</hl>.
-
+this too implicitly load <hl>use strict;</hl>.
 
 So when you read code, or when you copy examples, please make sure you notice the implicit use of strict.
 
