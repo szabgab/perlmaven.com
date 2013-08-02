@@ -71,11 +71,11 @@ carriage would point to the next line. Then the typewrite was ready for the next
 
 That is, they used two operations 
 <b>carriage return</b>, pushing the "carriage" to the beginning of the paper and
-<b>line feed</hl> - going to the next line.
+<b>line feed</b> - going to the next line.
 
-<img src="http://en.wikipedia.org/wiki/File:Underwoodfive.jpg" alt="typewriter" />
+<img src="/img/Underwoodfive.jpg" alt="typewriter" />
 
-(Image from Wikipedia)
+(Image from <a href="http://en.wikipedia.org/wiki/Typewriter">Wikipedia</a>)
 
 Therefore on MS Windows, a newline is represented by two characters: <hl>CRLF</hl>.
 A <hl>Carriage return</hl> followed by a <hl>line feed</hl>.
