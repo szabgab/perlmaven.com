@@ -2,7 +2,7 @@
 =timestamp 2013-05-02T17:33:01
 =indexes Bugzilla, Dave Miller
 =tags interview, tv
-=mp3 /media/audio/dave-miller.mp3, , 
+=mp3 /media/audio/dave-miller.mp3, 37286496, 38:31 
 =status draft
 =showright 1
 =newsletter 0
@@ -14,11 +14,14 @@
 
 =abstract start
 
-Dave Miller, is sysadmin for the <a href="https://www.mozilla.org/">Mozilla project</a> running a few thousand servers
+Dave Miller, is sysadmin for the <a href="https://www.mozilla.org/">Mozilla project</a> running a few thousand servers,
+during the official work hours, and leading the <a href="http://www.bugzilla.org/">Bugzilla</a> project in his little spare time.
+
+(38:31 min)
 
 =abstract end
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/YQ_MkGO73gM" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/T9sMy7ZxxFY" frameborder="0" allowfullscreen></iframe>
 
 <div id="downloads">Download:
 <a href="/media/audio/dave-miller.mp3">mp3</a> ( Mb)
@@ -38,10 +41,34 @@ Build-farm using <a href="http://buildbot.net/">Buildbot</a>
 
 Learned Perl by hacking on Bugzilla
 
+The Bazar repository of Bugzilla.
+
 <a href="">Max Kanat-Alexander</a>
 <a href="">Frédéric Buclin</a>
 <a href=""></a>
 <a href=""></a>
+
+<a href="irc://irc.mozilla.org/bugzilla">#bugzilla on irc.mozilla.org</a>, you can access it via
+<a href="http://landfill.bugzilla.org/irc/"> Bugzilla IRC Gateway</a> without installing anything.
+
+Byran Jones ... in IRC?
+Simon Green ? have steped up for the approval process.
+
+Some Perl Modules used by Bugzilla:
+
+<ul>
+<li><a href="">Template::Toolkit</a></li>
+</ul>
+
+
+Some of the areas where contributions is needed
+
+<ul>
+  <li>Writing documentation</li>
+  <li>Testing</li>
+  <li>Improve the User Interface, or even crate mobile web interfaces</li>
+  <li></li>
+</ul>
 
 
 
