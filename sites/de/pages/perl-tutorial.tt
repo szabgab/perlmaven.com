@@ -69,7 +69,7 @@ mit denen Du das vertiefen kannst, was Du gerade gelernt hast.
 <li><a href="/perl-auf-der-kommandozeile">Perl auf der Kommandozeile</a></li>
 <li><a href="/perl-basis-und-cpan-modul-dokumentation">Perl-Basisdokumentation, CPAN-Modul-Dokumentation</a></li>
 <li><a href="/pod-plain-old-documentation-dokumentationsformat-von-perl">POD - Plain Old Documentation</a></li>
-<li><a href="http://perlmaven.com/debugging-perl-scripts">Debuggen von Perl-Skripten</a></li>
+<li><a href="/debuggen-von-perl-skripten">Debuggen von Perl-Skripten</a></li>
 </ol>
 
 <b>Skalare</b>
