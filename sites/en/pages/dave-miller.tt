@@ -1,0 +1,47 @@
+=title Dave Miller, the leader of the Bugzilla project
+=timestamp 2013-05-02T17:33:01
+=indexes Bugzilla, Dave Miller
+=tags interview, tv
+=mp3 /media/audio/dave-miller.mp3, , 
+=status draft
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+Dave Miller, is sysadmin for the <a href="https://www.mozilla.org/">Mozilla project</a> running a few thousand servers
+
+=abstract end
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/YQ_MkGO73gM" frameborder="0" allowfullscreen></iframe>
+
+<div id="downloads">Download:
+<a href="/media/audio/dave-miller.mp3">mp3</a> ( Mb)
+</div>
+
+
+<a href="">Nestscape</a>
+Bugzilla was originally written in <a href="">Tcl</a>
+
+<a href="http://www.mozilla.org/en-US/firefox/os/">Firefox OS</a>
+
+Firefox marketplace
+
+<a href="">Firefox sync</a> services
+
+Build-farm using <a href="http://buildbot.net/">Buildbot</a>
+
+Learned Perl by hacking on Bugzilla
+
+<a href="">Max Kanat-Alexander</a>
+<a href="">Frédéric Buclin</a>
+<a href=""></a>
+<a href=""></a>
+
+
+
