@@ -76,7 +76,7 @@ mit denen Du das vertiefen kannst, was Du gerade gelernt hast.
 <ol>
 <li>Verbreitete Warnungen und Fehler-Meldungen<br />
 <ul>
-<li><a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+<li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
 <li><a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a></li>
 <li><a href="http://perlmaven.com/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
 <li><a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
