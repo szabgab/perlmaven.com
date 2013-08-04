@@ -169,18 +169,23 @@ use warnings;
 
 #Program to find the size of a hash
 
+#In this hash, keys contain multiple words (i.e 2 words)
+#so you need to enclose it in quotes. If the key contains
+#only a single word, then quotes are optional and it is
+#recommended to omit quotes for keys
+
 my %india = (
-   'National Bird'   => 'Peacock',
-	'National Animal' => 'Tiger',
-	'National Flower' => 'Lotus',
-	'National Fruit'  => 'Mango',
-	'National Tree'   => 'Banyan',
-	'National Game'   => 'Hockey'
+    'National Bird'   => 'Peacock',
+    'National Animal' => 'Tiger',
+    'National Flower' => 'Lotus',
+    'National Fruit'  => 'Mango',
+    'National Tree'   => 'Banyan',
+    'National Game'   => 'Hockey'
 );
 
-#Check the size of the hash
-
+#The keys function in scalar context returns the number of keys in the hash.
 my $size = keys %india;
+
 print "The size of the hash is $size\n";
 </code>
 <h2>Perl Hash map</h2>
