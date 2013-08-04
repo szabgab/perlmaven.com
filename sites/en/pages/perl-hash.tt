@@ -163,6 +163,26 @@ $VAR1 = {
 <h2>Perl Hash key</h2>
 <h2>Perl Hash exists</h2>
 <h2>Perl Hash size</h2>
+<code lang="perl">
+use strict;
+use warnings;
+
+#Program to find the size of a hash
+
+my %india = (
+   'National Bird'   => 'Peacock',
+	'National Animal' => 'Tiger',
+	'National Flower' => 'Lotus',
+	'National Fruit'  => 'Mango',
+	'National Tree'   => 'Banyan',
+	'National Game'   => 'Hockey'
+);
+
+#Check the size of the hash
+
+my $size = keys %india;
+print "The size of the hash is $size\n";
+</code>
 <h2>Perl Hash map</h2>
 <h2>Perl Hash slice</h2>
 
