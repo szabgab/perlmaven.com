@@ -163,16 +163,13 @@ $VAR1 = {
 <h2>Perl Hash key</h2>
 <h2>Perl Hash exists</h2>
 <h2>Perl Hash size</h2>
+In this hash, keys contain multiple words (i.e 2 words), so you need to enclose it in quotes. If the key contains
+only a single word, then quotes are optional. In fact, it is recommended to omit quotes for keys.
 <code lang="perl">
 use strict;
 use warnings;
 
 #Program to find the size of a hash
-
-#In this hash, keys contain multiple words (i.e 2 words)
-#so you need to enclose it in quotes. If the key contains
-#only a single word, then quotes are optional and it is
-#recommended to omit quotes for keys
 
 my %india = (
     'National Bird'   => 'Peacock',
@@ -190,17 +187,13 @@ print "The size of the hash is $size\n";
 </code>
 <h2>Perl Hash map</h2>
 <h2>Perl Hash slice</h2>
+A slice is always a list, so the hash slice notation uses an at sign to indicate that. The curly braces mean that you’re indexing into a hash; the at sign means
+that you’re getting a whole list of elements, not just a single one (which is what the dollar sign would mean).
 <code lang="perl">
 use strict;
 use warnings;
 
 use 5.010;
-
-#A slice is always a list, so the hash slice notation 
-#uses an at sign to indicate that. The curly braces 
-#mean that you’re indexing into a hash; the at sign means
-#that you’re getting a whole list of elements, not just a
-#single one (which is what the dollar sign would mean).
 
 my %employee = (
     jack  => 980144,
