@@ -85,7 +85,7 @@ On Unix/Linux systems and on Mac OSX, the <b>newline</b> is represented by a sin
 <hl>LF</hl> (<hl>line feed</hl>).
 
 Just for curiosity, Mac OS Classic (before OSX),
-Commodore, <a href="http://en.wikipedia.org/wiki/ZX_Spectrum">ZX Spectrum</a,
+Commodore, <a href="http://en.wikipedia.org/wiki/ZX_Spectrum">ZX Spectrum</a>,
 <a href="http://en.wikipedia.org/wiki/TRS-80">TRS-80</a>
 all used a <hl>CR</hl> (<hl>Carriage Return</hl>) to represent a <b>newline</b>.
 
