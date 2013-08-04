@@ -2,11 +2,10 @@
 =timestamp 2013-08-03T12:45:00
 =indexes time, localtime, gmtime, Time::HiRes, DateTime
 =status show
-=original The year of 19100
+=original the-year-19100
 =books beginner_book
 =author szabgab
-=translator DavidEGx
-=index 1
+=translator davidegx
 =archive 1
 =comments 1
 =social 1
