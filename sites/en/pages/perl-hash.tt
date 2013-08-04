@@ -171,11 +171,11 @@ use warnings;
 
 my %india = (
    'National Bird'   => 'Peacock',
-	'National Animal' => 'Tiger',
-	'National Flower' => 'Lotus',
-	'National Fruit'  => 'Mango',
-	'National Tree'   => 'Banyan',
-	'National Game'   => 'Hockey'
+   'National Animal' => 'Tiger',
+   'National Flower' => 'Lotus',
+   'National Fruit'  => 'Mango',
+   'National Tree'   => 'Banyan',
+   'National Game'   => 'Hockey'
 );
 
 #Check the size of the hash
