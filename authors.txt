@@ -2,6 +2,7 @@ aramisf;Aramis Fernandes;aramisf.jpg;https://plus.google.com/1118233344587122053
 balasatishreddykarri;Balasatish Reddy Karri;balasatishreddykarri.png;https://plus.google.com/105558350789685960778
 bruck;Uri Bruck;uribruck.jpg;https://plus.google.com/108060244899341646747
 chsanch;Christian Sánchez;chsanch.jpg;https://plus.google.com/104433299874463240657
+davidegx;David Escribano García;
 dmcbride;Darin McBride;dmcbride.png;https://plus.google.com/111788256959042644924
 fayland;Fayland Lam;fayland.jpg;https://plus.google.com/105867669014322690270
 fredlopes;Frederico José Andries Lopes;fredlopes.jpg;https://plus.google.com/101664615812027775183
