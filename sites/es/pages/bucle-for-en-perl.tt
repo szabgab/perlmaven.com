@@ -1,9 +1,11 @@
 =title El bucle for en Perl
-=timestamp 2013-03-26T08:46:13
+=timestamp 2013-08-03T19:46:13
 =indexes for, foreach, loop, infinite loop
 =status show
+=original for-loop-in-perl
 =books beginner_book
 =author szabgab
+=translator davidegx
 =archive 1
 =comments 1
 =social 1
@@ -30,7 +32,7 @@ Las palabras reservadas <hl>for</hl> y <hl>foreach</hl> se pueden usar como sin�
 Perl averiguará cual es el significado que tenías en mente.
 
 El <b>bucle estilo C</b> tiene tres partes en la sección de control.
-Normalmente se parece al siguiente código, aunque puedes omitir cualquiera
+Normalmente se parece al código siguiente, aunque puedes omitir cualquiera
 de las partes.
 
 <code lang="perl">
@@ -86,7 +88,7 @@ foreach my $i (0..9) {
 }
 </code>
 
-Como he dicho las dos palabras son sinónimos y mucha gente usa <hl>for</hl> 
+Como he mencionado, las dos palabras son sinónimos y mucha gente usa <hl>for</hl> 
 pero escribe <b>bucles estilo foreach</b>:
 
 <code lang="perl">

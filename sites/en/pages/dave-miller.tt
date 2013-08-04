@@ -1,0 +1,78 @@
+=title Dave Miller, the leader of the Bugzilla project
+=timestamp 2013-05-02T17:33:01
+=indexes Bugzilla, Dave Miller
+=tags interview, tv
+=mp3 /media/audio/dave-miller.mp3, 37286496, 38:31 
+=status draft
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+<a href="http://www.justdave.net/dave/">Dave Miller</a>, is sysadmin for the <a href="https://www.mozilla.org/">Mozilla project</a> running a few thousand servers,
+during the official work hours, and leading the <a href="http://www.bugzilla.org/">Bugzilla</a> project in his little spare time.
+
+He learned Perl by hacking on Bugzilla more than 10 years ago.
+
+The interview is 38:31 min long.
+
+=abstract end
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/T9sMy7ZxxFY" frameborder="0" allowfullscreen></iframe>
+
+<div id="downloads">Download:
+<a href="/media/audio/dave-miller.mp3">mp3</a> (36 Mb)
+</div>
+
+<h2>Notes</h2>
+
+Dave works at the <a href="https://www.mozilla.org/">Mozilla project</a> that was created when <a href="http://en.wikipedia.org/wiki/Netscape">Nestscape</a>
+released the source code of their browser.
+
+He is the project leader of the <a href="http://www.bugzilla.org/">Bugzilla</a> project, which is one of the most well known
+Open source Perl project. (BTW it was originally written in <a href="http://en.wikipedia.org/wiki/Tcl">Tcl</a>.)
+
+You can follow <a href="https://twitter.com/justdavemiller">Dave Miller</a> and the <a href="https://twitter.com/justdavemiller">Bugzilla</a> project on Twitter.
+
+<a href="http://www.mozilla.org/en-US/firefox/os/">Firefox OS</a> is one of the recent project developed at te Mozilla Foundation.
+The Mozilla Foundation has thousands of servers Dave helps to maintain. Most of them are used to handle the traffic of
+the <a href="https://marketplace.firefox.com/">Firefox marketplace</a> and the
+<a href="http://www.mozilla.org/en-US/mobile/sync/">Firefox sync</a> services.
+They also have a large build-farm using to build their various product on a large number of diverse platforms.
+They use <a href="http://buildbot.net/">Buildbot</a> to manage the builds.
+
+Bugzilla uses Bazar for version control. Check out the <a href="http://www.bugzilla.org/developers/">resourced for developers</a> for more information
+on how to get involved.
+
+Both assistant project managers <a href="http://max.kanat.us/">Max Kanat-Alexander</a>,
+and <a href="https://plus.google.com/103757399272253443165/">Frédéric Buclin</a> have recently moved on to other employers
+and thus left the project.
+
+In the last <a href="http://www.justdave.net/dave/2013/07/12/bugzilla-project-meeting-wednesday-july-17th-at-1400-utc/">Bugzilla developer meeting</a>,
+two people: <a href="http://globau.wordpress.com/">Byron Jones</a> (globau on IRC) and <a href="">Simon Green</a> have steped up for the patch approval process which is necessary
+to accept patches from every developer. You can watch the entire meeting on <a href="http://youtu.be/vxVGhaPFaZc">YouTube</a>.
+
+<a href="irc://irc.mozilla.org/bugzilla">#bugzilla on irc.mozilla.org</a>, you can access it via
+<a href="http://landfill.bugzilla.org/irc/"> Bugzilla IRC Gateway</a> without installing anything.
+
+Some Perl Modules used by Bugzilla:
+
+<ul>
+<li><a href="https://metacpan.org/module/Template">Template::Toolkit</a></li>
+</ul>
+
+Some of the areas where contributions is needed are:
+
+<ul>
+  <li>Writing documentation</li>
+  <li>Testing</li>
+  <li>Improve the User Interface, or even crate mobile web interfaces</li>
+</ul>
+
+
+
