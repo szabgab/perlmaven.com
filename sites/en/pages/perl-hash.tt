@@ -131,7 +131,7 @@ my $invoices = {
 
 # Add another customer
 push @{ $invoices->{customer_3} }, [ 1, 'Article_9', 899.00 ];
-push @{ $invoices->{customer_3} }, [ 1, 'Article_10', 799.00 ];
+push @{ $invoices->{customer_3} }, [ 2, 'Article_10', 799.00 ];
 
 p $invoices;
 </code>
@@ -171,7 +171,7 @@ This time we use <hl>Data::Printer</hl> to show the data structure:
             [2] 899
         ],
         [1] [
-            [0] 1,
+            [0] 2,
             [1] "Article_10",
             [2] 799
         ]
