@@ -1,5 +1,5 @@
 =title Arrays en Perl
-=timestamp 2013-08-23T20:45:02
+=timestamp 2013-05-23T19:45:02
 =indexes @, array, arrays, length, size, foreach, Data::Dumper, scalar, push, pop, shift
 =status show
 =original perl-arrays
@@ -22,7 +22,7 @@ antes del primer uso.
 
 =abstract end
 
-Recuerda que todos los ejemplos asumen que tu fichero comieza con
+Recuerda que todos los ejemplos asumen que tu código comienza con
 
 <code lang="perl">
 use strict;
@@ -36,14 +36,14 @@ Declarar un array:
 my @names;
 </code>
 
-Declare and assign values:
+Declarar y asignar valores:
 
 <code lang="perl">
 my @names = ("Foo", "Bar", "Baz");
 </code>
 
 
-<h2>Debugging of an array</h2>
+<h2>Comprobar el contenido de un array</h2>
 
 <code lang="perl">
 use Data::Dumper qw(Dumper);
@@ -52,7 +52,7 @@ my @names = ("Foo", "Bar", "Baz");
 say Dumper \@names;
 </code>
 
-The output is:
+La sálida será:
 
 <code>
 $VAR1 = [
@@ -62,7 +62,7 @@ $VAR1 = [
       ];
 </code>
 
-<h2>foreach loop and perl arrays</h2>
+<h2>El bucle foreach y los arrays en perl</h2>
 
 <code lang="perl">
 my @names = ("Foo", "Bar", "Baz");
@@ -71,7 +71,7 @@ foreach my $n (@names) {
 }
 </code>
 
-will print:
+Mostrará
 
 <code>
 Foo
@@ -79,57 +79,57 @@ Bar
 Baz
 </code>
 
-<h2>Accessing an element of an array</h2>
+<h2>Accediendo a un elemento de un array</h2>
 
 <code lang="perl">
 my @names = ("Foo", "Bar", "Baz");
 say $names[0];
 </code>
 
-Note, when accessing a single element of an array the leading sigil changes from <hl>@</hl> to <hl>$</hl>.
-This might cause confusion to some people, but if you think about it, it is quite obvious why.
+Ten en cuenta que al acceder a un solo elemento de un array la <hl>@</hl> inicial cambia a <hl>$</hl>.
+Puede parecer confuso, pero si piensas en ello es bastante obvio el porqué.
 
-<hl>@</hl> marks plural and <hl>$</hl> marks singular. When accessing a single element
-of an array it behaves just as a regular scalar variable.
+<hl>@</hl> indica plural y <hl>$</hl> indica singular. Al acceder a un solo elemento
+de un array se comporta simplemente como una variable escalar normal.
 
-<h2>Indexing array</h2>
+<h2>Indices en un array</h2>
 
-The indexes of an array start from 0. The largest index is always in the variable called
-<hl>$#name_of_the_array</hl>. So
+Los indices en un array empiezan por 0. El indice superior es siempre la variable
+<hl>$#name_of_the_array</hl>. Por tanto
 
 <code lang="perl">
 my @names = ("Foo", "Bar", "Baz");
 say $#names;
 </code>
 
-Will print 2 because the indexes are 0,1 and 2.
+Mostrará 2 porque los indices son 0, 1 y 2.
 
-<h2>Length or size of an array</h2>
+<h2>Tamaño de un array</h2>
 
-In Perl there is no special function to fetch the size of an array, but there
-are several ways to obtain that value. For one, the size of the array is one more
-than the largest index. In the above case <hl>$#names+1</hl> is the <b>size</b> or
-<b>length</b> of the array.
+En Perl no existe ninguna función especial para obtener el tamaño de un array,
+pero hay varias formas de obtener su valor. Una por ejemplo es usar el indice
+superior y sumarle 1. En el caso anterior, <hl>$#names+1</hl> es el <b>tamaño</b> del
+array.
 
-In addition the <hl>scalar</hl> function can be used to to obtain the size of an array:
+Adicionalmente la función <hl>scalar</hl> también puede usarse para obtener el tamaño:
 
 <code lang="perl">
 my @names = ("Foo", "Bar", "Baz");
 say scalar @names;
 </code>
 
-Will print 3.
+Mostrará 3.
 
-The scalar function is sort of a casting function that - among other things - converts an
-array to a scalar. Due to an arbitrary, but clever decision this conversion yields the size
-of the array.
+La función scalar realiza una especie de conversión que, entre otras cosas, convierte un
+array a escalar. Debido a una decisión arbitraria a la par que inteligente, esta 
+conversión devuelve el tamaño del array.
 
-<h2>Loop on the indexes of an array</h2>
+<h2>Iterar sobre los indices de un array</h2>
 
-There are cases when looping over the values of an array is not enough.
-We might need both the value and the index of that value.
-In that case we need to loop over the indexes, and obtain the values using the
-indexes:
+Hay casos en los que recorrer los valores de un array no es suficiente ya que
+podemos necesitar tanto el valor con el indice de ese valor.
+En ese caso necesitamos iterar sobre los indices y obtener los valores a partir
+de ellos:
 
 <code lang="perl">
 my @names = ("Foo", "Bar", "Baz");
@@ -138,7 +138,7 @@ foreach my $i (0 .. $#names) {
 }
 </code>
 
-prints:
+mostrará:
 
 <code>
 0 - Foo
@@ -146,9 +146,9 @@ prints:
 2 - Baz
 </code>
 
-<h2>Push on Perl array</h2>
+<h2>Añadir un elemento a un array</h2>
 
-<hl>push</hl> appends a new value to the end of the array, extending it:
+La función <hl>push</hl> añade un nuevo valor al final de un array:
 
 <code lang="perl">
 my @names = ("Foo", "Bar", "Baz");
@@ -157,7 +157,7 @@ push @names, 'Moo';
 say Dumper \@names;
 </code>
 
-The result is:
+El resultado será:
 
 <code>
 $VAR1 = [
@@ -169,9 +169,9 @@ $VAR1 = [
 </code>
 
 
-<h2>Pop from Perl array</h2>
+<h2>Extraer elementos de un array</h2>
 
-<hl>pop</hl> fetches the last element from the array:
+La función <hl>pop</hl> extrae el último elemento de un array:
 
 <code lang="perl">
 my @names = ("Foo", "Bar", "Baz");
@@ -180,7 +180,7 @@ say "Last: $last_value";
 say Dumper \@names;
 </code>
 
-The result is:
+El resultado será:
 
 <code>
 Last: Baz
@@ -190,10 +190,31 @@ $VAR1 = [
       ];
 </code>
 
-<h2>shift the Perl array</h2>
+<h2>Añadir un elemento al principio de un array</h2>
+La función <hl>unshift</hl> añadirá un elemento al principio del
+array y moverá el resto hacia la derecha.
 
-<hl>shift</hl> will return the left most element
-of an array and move all the other elements to the left.
+<code lang="perl">
+my @names = ("Foo", "Bar", "Baz");
+unshift @names, "Moo";
+
+say Dumper(\@names);
+
+Mostrará:
+
+<code>
+$VAR1 = [
+        'Moo',
+        'Foo',
+        'Bar',
+        'Baz'
+      ];
+</code>
+
+<h2>Extraer el primer elemento de un array</h2>
+
+La función <hl>shift</hl> extraerá el primer elemento del array
+y moverá el resto hacia la izquierda.
 
 <code lang="perl">
 my @names = ("Foo", "Bar", "Baz");
@@ -203,7 +224,7 @@ say "First: $first_value";
 say Dumper \@names;
 </code>
 
-The result is:
+El resultado será:
 
 <code>
 First: Foo
