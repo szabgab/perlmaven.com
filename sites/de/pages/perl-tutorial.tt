@@ -69,19 +69,19 @@ mit denen Du das vertiefen kannst, was Du gerade gelernt hast.
 <li><a href="/perl-auf-der-kommandozeile">Perl auf der Kommandozeile</a></li>
 <li><a href="/perl-basis-und-cpan-modul-dokumentation">Perl-Basisdokumentation, CPAN-Modul-Dokumentation</a></li>
 <li><a href="/pod-plain-old-documentation-dokumentationsformat-von-perl">POD - Plain Old Documentation</a></li>
-<li><a href="http://perlmaven.com/debugging-perl-scripts">Debuggen von Perl-Skripten</a></li>
+<li><a href="/debuggen-von-perl-skripten">Debuggen von Perl-Skripten</a></li>
 </ol>
 
 <b>Skalare</b>
 <ol>
 <li>Verbreitete Warnungen und Fehler-Meldungen<br />
 <ul>
-<li><a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
-<li><a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a></li>
-<li><a href="http://perlmaven.com/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
-<li><a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
-<li><a href="http://perlmaven.com/unknown-warnings-category">Unknown warnings category</a></li>
-<li><a href="http://perlmaven.com/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
+<li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+<li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
+<li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
+<li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
+<li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
+<li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
 </ul>
 </li>
 <li><a href="http://perlmaven.com/automatic-value-conversion-or-casting-in-perl">Automatische Umwandlung von Zeichenkette zu Zahl</a></li>
