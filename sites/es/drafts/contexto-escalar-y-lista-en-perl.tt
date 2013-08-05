@@ -1,9 +1,10 @@
-=title Scalar and List context in Perl, the size of an array
-=timestamp 2013-04-10T11:45:56
+=title Contexto escalar y de lista en Perl, el tamaño de un array
+=timestamp 2013-08-05T20:07:56
 =indexes scalar, list, array, size, length, context, Perl
 =status show
 =books beginner_book
 =author szabgab
+=translator DavidEGx
 =index 1
 =archive 1
 =feed 1
@@ -12,7 +13,7 @@
 
 =abstract start
 
-En este capítulo de <a href="/perl-tutorial">Perl tutorial</a> vamos a analizar la <b>sensibilidad alcontexto</b> en Perl.
+En este capítulo de <a href="/perl-tutorial">Perl tutorial</a> vamos a analizar la <b>sensibilidad al contexto</b> en Perl.
 
 Tanto en Inglés como en Español, y en la mayoría de idiomas, las palabras pueden tener multiples significados.
 Por ejemplo, en Inglés la palabra "left":
