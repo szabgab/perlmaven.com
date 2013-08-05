@@ -186,6 +186,7 @@ my $size = keys %india;
 print "The size of the hash is $size\n";
 </code>
 <h2>Perl Hash map</h2>
+
 <h2>Perl Hash slice</h2>
 A slice is always a list, so the hash slice notation uses an at sign to indicate that. The curly braces mean that you’re indexing into a hash; the at sign means
 that you’re getting a whole list of elements, not just a single one (which is what the dollar sign would mean).
@@ -227,7 +228,51 @@ my @location = ($employee2{"jack"}->[2], $employee2{"peter"}->[2], $employee2{"j
 say join ',', @location;
 </code>
 
+Hash slices are a very useful feature of Perl that remove the need for some loops. A hash slice is a way of referring to one or more elements of the hash in one statement, to get a list of values, or to assign a list of values.
+
+To get a single element from a hash <hl>%hash</hl>, with key <hl>$key</hl>, you can write <hl>$value = $hash{ $key }</hl>
+
+To get a list of elements from the same hash, referred to by the keys in <hl>@keys</hl>, you can write <hl>@values = @hash{ @keys }</hl>
+
 <code lang="perl">
+use strict;
+use warnings;
+
+#Program to demonstrate hash slice
+
+my %day_names = (
+   'sun'  => 'Sunday',
+   'mon'  => 'Monday',
+   'tue'  => 'Tuesday',
+   'wed'  => 'Wednesday',
+   'thu'  => 'Thursday',
+   'fri'  => 'Friday',
+   'sat'  => 'Saturday',
+);
+
+#Get a list of the full names of week days (ie not weekends)
+my @weekdays = @day_names{ qw(mon tue wed thu fri) };
+
+print "The store is open from 9AM to 5PM on " . join(", ", @weekdays) . "\n";
+
+#Get a list of the full names of weekend days
+my @weekends = @day_names{ 'sat', 'sun' };
+
+print "The store closes at 12 noon on " . join(" and ", @weekends) . "\n";
+
+#Lets say we want to change the hash now to make the values lower case and plural
+#So that 'Sunday' becomes 'sundays'
+#We can assign to a hash slice to achieve this
+
+#Get the keys and the values from the hash - these will have the same respective order
+my @keys = keys %day_names;
+my @values = values %day_names;
+
+#Now assign to a slice of the hash %day_names
+#In this case the slice @keys identifies every key of %day_names
+@day_names{ @keys } = map lc($_) . 's', @values;
+
+print "In the winter the store may open late " . $day_names{sun} . "\n";
 </code>
 
 <h2>Size of an array in a hash</h2>
