@@ -107,8 +107,79 @@ $VAR1 = {
 
 <h2>Perl Hash of arrays of arrays</h2>
 
+Like in the preceding example, each value in the following hash is a
+reference to an array and each value in the array is a reference to
+another array.
+
+Here is an example of a list of invoices for each customer:
+
 <code lang="perl">
+use strict;
+use warnings;
+use Data::Printer;
+
+my $invoices = {
+  customer_1 => [
+      [ 1, 'Article_1', 300.00 ],
+      [ 2, 'Article_2', 500.00 ],
+  ],
+  customer_2 => [
+      [ 1, 'Article_2', 999.00 ],
+      [ 2, 'Article_5', 399.99 ],
+  ],
+};
+
+# Add another customer
+push @{ $invoices->{customer_3} }, [ 1, 'Article_9', 899.00 ];
+push @{ $invoices->{customer_3} }, [ 2, 'Article_10', 799.00 ];
+
+p $invoices;
 </code>
+
+This time we use <hl>Data::Printer</hl> to show the data structure:
+
+<code lang="perl">
+\ {
+    customer_1   [
+        [0] [
+            [0] 1,
+            [1] "Article_1",
+            [2] 300
+        ],
+        [1] [
+            [0] 2,
+            [1] "Article_2",
+            [2] 500
+        ]
+    ],
+    customer_2   [
+        [0] [
+            [0] 1,
+            [1] "Article_2",
+            [2] 999
+        ],
+        [1] [
+            [0] 2,
+            [1] "Article_5",
+            [2] 399.99
+        ]
+    ],
+    customer_3   [
+        [0] [
+            [0] 1,
+            [1] "Article_9",
+            [2] 899
+        ],
+        [1] [
+            [0] 2,
+            [1] "Article_10",
+            [2] 799
+        ]
+    ]
+}
+</code>
+
+Note the different format used by this module.
 
 <h2>Perl Hash reference</h2>
 
@@ -285,6 +356,7 @@ print "In the winter the store may open late " . $day_names{sun} . "\n";
 <ul>
   <li><a href="https://github.com/shajiindia">Shaji Kalidasan</a></li>
   <li><a href="https://github.com/spacebat">Andrew Kirkpatrick</a></li>
+  <li><a href="https://github.com/stefansbv">Ștefan Suciu</a></li>
 </ul>
 
 
