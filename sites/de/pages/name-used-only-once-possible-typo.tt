@@ -1,10 +1,11 @@
 =title Name "main::x" used only once: possible typo at ...
-=timestamp 2013-03-05T20:31:10
+=timestamp 2013-08-05T09:31:10
 =indexes warnings, strict, eventueller Schreibfehler
 =status show
+=original name-used-only-once-possible-typo
 =books beginner_book
 =author szabgab
-=translator McA
+=translator mca
 =archive 1
 =comments 1
 =social 1

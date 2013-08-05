@@ -1,10 +1,11 @@
 =title Global symbol requires explicit package name
-=timestamp 2012-09-13T12:45:56
+=timestamp 2013-08-05T08:40:56
 =indexes strict, my, package, global symbol
 =status show
+=original global-symbol-requires-explicit-package-name
 =books beginner_book
 =author szabgab
-=translator McA
+=translator mca
 =archive 1
 =comments 1
 =social 1
@@ -33,7 +34,7 @@ Und die Fehlermeldung ist:
 Global symbol "$x" requires explicit package name at ...
 </code>
 
-Obwohl die Fehlermledung richtig ist, ist sie für 
+Obwohl die Fehlermledung richtig ist, ist sie für
 Prl-Anfänger wenig hilfreich. Sie haben vielleicht noch
 nicht gelernt, was "Packages" sind. Noch weniger wissen
 sie, was expliziter sein sollte, als ein $x.
