@@ -87,7 +87,7 @@ mit denen Du das vertiefen kannst, was Du gerade gelernt hast.
 <li><a href="/automatische-typ-convertierung-bzw-casting-in-perl">Automatische Umwandlung von Zeichenkette zu Zahl</a></li>
 <li>Bedingte Anweisung: if</li>
 <li><a href="/boolesche-werte-in-perl">Wahrheitswerte (wahr/falsch) in Perl</a></li>
-<li>Numerische und Zeichenkletten-Operatoren</li>
+<li>Numerische und Zeichenketten-Operatoren</li>
 <li><a href="http://perlmaven.com/undef-and-defined-in-perl">undef, der Initialwert und die defined-Funktion</a></li>
 <li>HERE-Dokumente</li>
 <li><a href="http://perlmaven.com/scalar-variables">Skalare</a></li>
