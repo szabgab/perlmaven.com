@@ -282,5 +282,12 @@ print "In the winter the store may open late " . $day_names{sun} . "\n";
 
 <h2>Contributors</h2>
 
-<a href="https://github.com/shajiindia">Shaji Kalidasan</a>
+<ul>
+  <li><a href="https://github.com/shajiindia">Shaji Kalidasan</a></li>
+  <li><a href="https://github.com/spacebat">Andrew Kirkpatrick</a></li>
+</ul>
+
+
+
+
 
