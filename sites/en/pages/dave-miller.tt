@@ -48,7 +48,7 @@ They also have a large build-farm used to build their various products on a larg
 They use <a href="http://buildbot.net/">Buildbot</a> to manage the builds.
 
 Bugzilla uses <a href="https://bzr.mozilla.org/bugzilla">Bazaar</a> for version control.
-Check out the <a href="http://www.bugzilla.org/developers/">resourced for developers</a> for more information
+Check out the <a href="http://www.bugzilla.org/developers/">resources for developers</a> for more information
 on how to get involved.
 
 Both assistant project managers <a href="http://max.kanat.us/">Max Kanat-Alexander</a>,
