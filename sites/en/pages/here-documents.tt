@@ -55,7 +55,7 @@ regards
 The here document starts with two less-than characters <hl>&lt;&lt;</hl> followed by and arbitrary string that becomes
 the designated end-mark of the here-document, followed by the semi-colon <hl>;</hl> marking the end of the statement.
 This is a bit strange as the statement does not really end here. Actually the content of the here document
-just starts on the line after the semi-colon, (in our case with the word "Dear"), and continuous till perl finds the
+just starts on the line after the semi-colon, (in our case with the word "Dear"), and continues till perl finds the
 arbitrarily selected end-mark. In our case the string <b>END_MESSAGE</b>.
 
 If you have already seen here-documents in code, you are probably surprised by the single-quotes around the first
@@ -87,7 +87,7 @@ around the end-mark and not the actual string. If no quotes are provided, Perl d
 If you look back to the first example, you will notice we had <hl>$name</hl> part of the here-document
 and it also remained part of the output. That's because Perl did not try to fill the place
 with the content of the <hl>$name</hl> variable. (We did not even have to declare that variable in the
-code. You can try the script, even without the <hl>my $name = 'Foo';</hl> part. 
+code. You can try the script, even without the <hl>my $name = 'Foo';</hl> part.) 
 
 <h2>Interpolating here document</h2>
 
@@ -165,7 +165,7 @@ The other problem is that the output will have all those leading whites-spaces i
           the Perl Maven
 </code>
 
-The lack of indentation of the end-mark can be solved by using an one that already
+The lack of indentation of the end-mark can be solved by using one that already
 includes enough leading white-spaces: (I am using 4 real spaces here, as the tabs don't
 work well in the article, but they could work in real code. If you are in the indent-by-tab
 camp.)
@@ -184,7 +184,7 @@ The extra indentation of the actual text can be removed using a substitution at 
     END_MESSAGE
 </code>
 
-In the substitution we replace 8 leading spaced by the empty string. We use two modifier:
+In the substitution we replace 8 leading spaces by the empty string. We use two modifiers:
 <hl>/m</hl> changes the behavior of <hl>^</hl> from matching at the <b>beginning of the string</b>
 to match at the <b>beginning of line</b>.  <hl>/g</hl> tells the substitution to work <b>globally</b>,
 that is to repeat the substitution as many times as it can.

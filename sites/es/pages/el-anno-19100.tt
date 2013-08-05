@@ -1,13 +1,12 @@
 =title El año 19100
-=timestamp 2013-04-04T12:45:17
+=timestamp 2013-08-03T12:45:00
 =indexes time, localtime, gmtime, Time::HiRes, DateTime
 =status show
-=original The year of 19100
+=original the-year-19100
 =books beginner_book
 =author szabgab
-=index 1
+=translator davidegx
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
@@ -16,7 +15,7 @@
 Esta parte de <a href="/perl-tutorial">Perl Tutorial</a> explica <b>la fecha en Perl</b>.
 
 Perl tiene incluida la función <hl>time()</hl> que devuelve un número de 10 dígitos
-representando el número de segundos transcurridos desde el 1 de enero de 1970.
+que representa el número de segundos transcurridos desde el 1 de enero de 1970.
 
 =abstract end
 
@@ -25,8 +24,8 @@ $t = time();         # devuelve un numero como: 1021924103
 </code>
 
 Puedes usar este número como una marca de tiempo, por ejemplo para calcular el tiempo transcurrido.
-Usando <hl>time()</hl> puedes guardar el número de segundos en un punto de tu código y
-después llamar a <hl>time()</hl> de nuevo. Comparando el resultado de las dos llamadas:
+Usando <hl>time()</hl> puedes guardar el número de segundos en un punto y después
+llamar a <hl>time()</hl> de nuevo. Comparando el resultado de las dos llamadas:
 
 <code lang="perl">
 my $t = time();
@@ -38,17 +37,17 @@ say 'Tiempo transcurrido: ', (time() - $t);
 
 La función <hl>localtime()</hl> puede recibir como parámetro
 el resultado de la llamada a <hl>time()></hl>, el número de 10 dígitos, y convertirlo
-en algo más sencillo de entender para las personas:
+en algo más legible.
 
 <code lang="perl">
-my $then = localtime($t);  # devuelve una cadena del estilo  Thu Feb 30 14:15:53 1998
+my $then = localtime($t);  # devuelve un texto del estilo  Thu Feb 30 14:15:53 1998
 </code>
 
-De hecho, ni si quiera es necesario un parámetro. Si se llama directamente sin
-parámetros usará el valor devuelto por <hl>time()</hl>:
+De hecho no hacen falta parámetros. Si se llama directamente sin parámetros usará
+el valor devuelto por <hl>time()</hl>:
 
 <code lang="perl">
-my $now = localtime();    # devuelve la cadena para la fecha actual
+my $now = localtime();    # devuelve el texto correspondiente a la fecha actual
 </code>
 
 Puedes almacenar diferentes marcas de tiempo generadas por <hl>time()</hl> y después
@@ -95,15 +94,15 @@ En el día de la semana 0 es Domingo mientras que 6 es Sabado.
 
 Por otro lado el campo representando al día del mes varía de 1 a 28, 30 o 31 dependiendo del mes.
 
-El campo más problematico de todos puede ser el año que puede conducir fácilmente al bug del año 2000:
+El campo más problemático de todos puede ser el año que puede conducir fácilmente al bug del año 2000:
 
 <h2>El bug del año 2000</h2>
 
 Cuando en 1998 algunos programadores veian que <hl>$year</hl> era 98 y querían mostrar 1998
-escribieron <hl>"19$year"</hl>. Funcionó entonces y también funciono en 1999, pero entonces llego
-el año 2000 y <hl>$year</hl> se convirtio en 2000-1900 = 100. El texto formateado se convirtio en <b>19100</b>.
+escribieron <hl>"19$year"</hl>. Funcionó entonces y también funciono en 1999, pero llego
+el año 2000 y <hl>$year</hl> se convirtio en 100 (2000 - 1900) . El texto formateado se convirtio en <b>19100</b>.
 
-De ahí proviene el año 19100. Precisamente así se creo código con el infame
+De ahí proviene el año 19100 y así se creo el infame
 <b>bug del año 2000</b>.
 
 Si hubieran leido la documentación deberían haber escrito:
@@ -135,7 +134,7 @@ mientras que <hl>gmtime()</hl> simplemente usa el valor devuelto por el reloj ha
 <h2>Hora de alta precisión</h2>
 
 La función <hl>time()</hl> devuelve la fecha actual en segundos. Por lo que no puede
-medir peridos inferiores a un segundo. Si necesitas más precisión hay un modulo
+medir periodos inferiores a un segundo. Si necesitas más precisión hay un modulo
 llamado <a href="https://metacpan.org/module/Time::HiRes">Time::HiRes</a> que puede
 sustituir el uso de <hl>time()</hl>.
 
@@ -160,11 +159,11 @@ Y la salida será:
 Las funciones anteriores proporcionan información básica sobre la hora y la fecha,
 probablemente es mejor usar el modulo <a href="https://metacpan.org/module/DateTime">DateTime</a> para cualquier necesidad no trivial.
 
-Le echarémos un vistado más adelante.
+Lo veremos más adelante.
 
 <h2>Conciencia del contexto</h2>
 
-Todo lo anterior es importante, pero hay algo vital que nos hemos
+Todo lo anterior es importante, pero hay algo vital que hemos
 saltado al ver la función <hl>localtime()</hl>.
 
 Si observas el ejemplo de <hl>localtime()</hl>, verás que <hl>localtime()</hl>
