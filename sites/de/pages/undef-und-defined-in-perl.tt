@@ -2,9 +2,10 @@
 =timestamp 2013-08-05T23:15:56
 =indexes undef, defined
 =status show
+=original undef-and-defined-in-perl
 =books beginner_book
 =author szabgab
-=translator McA
+=translator mca
 =archive 1
 =comments 1
 =social 1

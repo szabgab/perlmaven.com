@@ -2,9 +2,10 @@
 =timestamp 2013-08-05T22:43:00
 =indexes undef, true, false, boolean
 =status show
+=original boolean-values-in-perl
 =books beginner_book
 =author szabgab
-=translator McA
+=translator mca
 =archive 1
 =comments 1
 =social 1
