@@ -87,7 +87,7 @@ to practice what you have learned.
 <b>Files</b>
 <ol>
 <li><a href="/how-to-exit-from-perl-script">exit</a></li>
-<li><a href="/stdout-stderr-and-redirection">Standar Output, Standard Error and command line redirection</a></li>
+<li><a href="/stdout-stderr-and-redirection">Standard Output, Standard Error and command line redirection</a></li>
 <li><a href="/warn">warn</a></li>
 <li><a href="/die">die</a></li>
 <li><a href="/writing-to-files-with-perl">Writing to files</a></li>
