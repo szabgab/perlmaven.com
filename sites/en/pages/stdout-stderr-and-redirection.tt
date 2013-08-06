@@ -10,7 +10,7 @@
 
 =abstract start
 
-When you run a program on the command line it automaticall has two separate output channels.
+When you run a program on the command line it automatically has two separate output channels.
 One of them is called <b>Standard Output</b>, the other is <b>Standard Error</b>.
 
 By default both are connected to the screen (in the shell, terminal or command line window)
@@ -69,10 +69,12 @@ be printed to STDOUT.
 
 <h2>Redirecting Standard Output</h2>
 
+(The below examples assume you use some bash compatible shell. Other shells migh behave in a different way.)
+
 As a user, without looking inside the code, you can separate the two channels:
 If you run <hl>perl program.pl > out.txt</hl> the <hl>></hl> symbol will <b>redirect</b>
 the output channel to the file out.txt. So on the screen you will see only the
-content of the Standar Error:
+content of the Standard Error:
 
 <code>
 Could not open file
