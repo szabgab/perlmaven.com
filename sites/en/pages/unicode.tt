@@ -49,6 +49,8 @@ Binary representations of Unicode characters and other text entities
 are referred to as "Code-Points". Code-points range from U+00’0000
 to U+10’FFFF (please note the designation format).
 
+<h2>Diacritics</h2>
+
 A big Unicode issue, one that might not be familiar to native English speakers,
 is <a href="http://en.wikipedia.org/wiki/Diacritics">diacritics</a>.
 In addition to "naked" characters such as the Latin alphabet,
@@ -69,9 +71,11 @@ code-point U+00C5 (but also another fully-formed one, code-point U+212B).
 It can be represented also as a two code-points composite:
 a bare Latin <hl>A</hl> (code-point U+0041) plus a <hl>̊</hl> diacritic, code-point U+030A.
 
-<a href="http://en.wikipedia.org/wiki/Typographical_ligature">ligatures</a> are
+<h2>Ligatures</h2>
+
+<a href="http://en.wikipedia.org/wiki/Typographical_ligature">Ligatures</a> are
 also <a "http://www.unicode.org/charts/PDF/UFB00.pdf">supported</a>,
-as well as their equivalents. As an example, ﬃ code point U+FB03,
+as well as their equivalents. As an example, <hl>ﬃ </hl> code point U+FB03,
 can for some application such as "collating"
 (kind of sorting, explained in further parts) be replaced by a string of simple characters,
 in this case the three characters <hl>'ffi'</hl>.
@@ -87,6 +91,8 @@ specifies <b>rendering</b>, namely composing rules to render a base characters
 and its added diacritics as mentioned above, but also the two-dimensional reading
 direction for a string of Unicode code-points.
 
+<h2>Bi-directional text</h2>
+
 An example of reading direction support is for Bi-Directional (Bi-Di) text.
 In Arabic and Hebrew text, one often encounters embedded numerals, Latin text and
 other opposite reading direction scripts. The support includes code-points that
@@ -95,6 +101,8 @@ is embedded within the other. But it also classifies some character code-points
 as either "inherently RTL" e.g. Arabic, "inherently LTR" e.g. Latin, or "neutral",
 e.g. numerals, hyphens and asterisks. Then the Bi-Di algorithm specifies rules as
 to how to compose a string of text, even in the absence of explicit LTR/RTL marks.
+
+<h2>Columns</h2>
 
 Unicode also supports other kinds of text reading directions marks: columns of
 text going from Top-to-bottom or bottom-up where the columns may go either
