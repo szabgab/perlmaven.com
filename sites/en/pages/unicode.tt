@@ -15,7 +15,7 @@ talk about <b>Unicode issues in Perl</b>.
 
 Unicode aspires to cover all known human and even fictional scripts, from the Egyptian hieroglyphs all the way to all modern languages. Even non-human languages like the language of the Star-Trek "Klingon" empire are represented, although this one not officially.
 
-Part-1 is an introduction, presenting a few important facts about Unicode, including the issue of <i>encoding<i>.
+Part-1 is an introduction, presenting a few important facts about Unicode, including the issue of <i>encoding</i>.
 
 Further parts will show how you can have Unicode strings in expressions, how to deal with Unicode in regular expressions, and how to collate, search and compare Unicode text.
 
