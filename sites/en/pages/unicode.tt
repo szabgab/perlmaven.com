@@ -14,7 +14,7 @@ In this part of the <a href="/perl-tutorial">Perl Tutorial</a> we are going to
 talk about <b>Unicode issues in Perl</b>.
 
 Unicode aspires to cover all known human, and even fictional scripts, from the Egyptian hieroglyphs
-all the way to all modern languages. Even non-human languages like the language of the
+all the way to all modern languages. Even non-human languages like the fictional language of the
 Star-Trek "Klingon" empire are represented, although this one not officially.
 
 This article is an introduction, presenting a few important facts about Unicode, including the issue of <i>encoding</i>.
@@ -30,7 +30,7 @@ and how to collate, search and compare Unicode text.
 Remember ASCII? One page and you knew all about it! But all it could represent was the English alphabet.
 Then every country standardized its own script, usually taking advantage
 of the numerical range of 128 to 255. All these were in general mutually exclusive.
-One could not have unique-to-Spanish and unique-to-German in characters in the same document.
+One could not have unique-to-Spanish and unique-to-German characters in the same document.
 
 Enter Unicode!
 
@@ -47,7 +47,7 @@ braille patterns and more are also assigned code.
 
 Binary representations of Unicode characters and other text entities
 are referred to as "Code-Points". Code-points range from U+00’0000
-to U+10’FFFF (please note the designation format).
+to U+10’FFFF, please note the designation format.
 
 <h2>Diacritics</h2>
 
@@ -66,7 +66,7 @@ Arabic and Hebrew are replete with such.
 In order to be backward compatible as much as possible, Unicode also supports "equivalents",
 such as an equivalents combination of a "naked" character and a diacritic that looks like
 and can be replaced in some circumstances, by a fully-formed character. For example,
-the ANGSTROM SIGN which is a common Nordic character, is a fully-formed <hl>Å</hl>,
+the ANGSTROM SIGN which is a common Nordic character, has a fully-formed <hl>Å</hl>,
 code-point U+00C5 (but also another fully-formed one, code-point U+212B).
 It can be represented also as a two code-points composite:
 a bare Latin <hl>A</hl> (code-point U+0041) plus a <hl>̊</hl> diacritic, code-point U+030A.
@@ -81,26 +81,28 @@ can for some application such as "collating"
 in this case the three characters <hl>'ffi'</hl>.
 
 Unicode supports the notion of a "paragraph".
-Paragraph breaking, line-breaking (i.e. one that doesn’t terminate a paragraph),
+Paragraph breaking, line-breaking (i.e. one that does break a line but doesn’t terminate a logical paragraph),
 special non-characters such as
 <a href="http://en.wikipedia.org/wiki/Non-breaking_space">zero-width non-breaking space</a>
 and others are also defined.
 
-But it is not only characters, symbols, diacritics and paragraphs. Unicode also
-specifies <b>rendering</b>, namely composing rules to render a base characters
-and its added diacritics as mentioned above, but also the two-dimensional reading
-direction for a string of Unicode code-points.
 
 <h2>Bi-directional text</h2>
 
+But it is not only characters, symbols, diacritics and paragraphs. Unicode also
+specifies <b>rendering</b>, namely providing composing rules to render a string of
+base characters and their added diacritics as mentioned above on a two-dimensional
+medium in its proper reading direction.
+
 An example of reading direction support is for Bi-Directional (Bi-Di) text.
-In Arabic and Hebrew text, one often encounters embedded numerals, Latin text and
-other opposite reading direction scripts. The support includes code-points that
-explicitly marks Left-to-Right (LTR) and Right-to-Left (RTL) strings, were one
-is embedded within the other. But it also classifies some character code-points
-as either "inherently RTL" e.g. Arabic, "inherently LTR" e.g. Latin, or "neutral",
-e.g. numerals, hyphens and asterisks. Then the Bi-Di algorithm specifies rules as
-to how to compose a string of text, even in the absence of explicit LTR/RTL marks.
+In Arabic and Hebrew text (which are Right-to-Left), one often encounters
+embedded numerals, Latin text and other opposite reading direction scripts. The
+support includes code-points that explicitly marks Left-to-Right (LTR) and
+Right-to-Left (RTL) strings, and where one is embedded within the other. But it also
+classifies some character code-points as either "inherently RTL" e.g. Arabic,
+"inherently LTR" e.g. Latin, or "neutral", e.g. numerals, hyphens and asterisks. Then
+the Bi-Di algorithm specifies rules as to how to compose a string of text, <i>even in
+the absence</i> of explicit LTR/RTL marks.
 
 <h2>Columns</h2>
 
@@ -115,7 +117,7 @@ Early Greek and Egyptian hieroglyphs used it.
 
 "Encoding" means how are Unicode "code-points" represented as binary
 strings in files and I/O: text files, Internet pages, software source
-code (hence strings in it), text streams coming from or going to
+code (hence variables storing strings in it), text streams coming from or going to
 OS "pipes", etc. It <b>does not</b>, repeat, does not necessarily
 apply to an internal representation in memory such as in Perl!
 
@@ -124,5 +126,5 @@ Current encodings are only <a href="http://en.wikipedia.org/wiki/UTF-8">UTF-8</a
 <a href="http://en.wikipedia.org/wiki/UTF-16">UTF-32</a>.
 Older, deprecated encodings are UCS-2, UCS-4, UTF-1 and UTF-7.
 Nowadays however you will seldom encounter anything other then
-UTF-8 encoded files and HTML pages when Unicode is used.
+UTF-8 encoded files and HTML page where Unicode is used.
 
