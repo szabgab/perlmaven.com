@@ -1,5 +1,5 @@
 =title Arrays en Perl
-=timestamp 2013-05-23T19:45:02
+=timestamp 2013-08-08T18:55:02
 =indexes @, array, arrays, length, size, foreach, Data::Dumper, scalar, push, pop, shift
 =status show
 =original perl-arrays
@@ -13,7 +13,7 @@
 =abstract start
 
 En este episodio de <a href="/perl-tutorial">Perl Tutorial</a> echaremos un vistazo a los <b>arrays en Perl</b>.
-Esto es un pequeño resumen de como funcionan los arrays en Perl. Veremos explicaciones más detalladas más adelante.
+Esto es un pequeño resumen de como funcionan los arrays en Perl. Veremos explicaciones más detalladas en el futuro.
 
 Los nombres de variables que contienen arrays en Perl empiezan con el carácter <hl>@</hl>.
 
@@ -52,7 +52,7 @@ my @names = ("Foo", "Bar", "Baz");
 say Dumper \@names;
 </code>
 
-La sálida será:
+La salida será:
 
 <code>
 $VAR1 = [
@@ -107,11 +107,11 @@ Mostrará 2 porque los indices son 0, 1 y 2.
 <h2>Tamaño de un array</h2>
 
 En Perl no existe ninguna función especial para obtener el tamaño de un array,
-pero hay varias formas de obtener su valor. Una por ejemplo es usar el indice
+pero hay varias formas de obtener su valor. Una es usar el indice
 superior y sumarle 1. En el caso anterior, <hl>$#names+1</hl> es el <b>tamaño</b> del
 array.
 
-Adicionalmente la función <hl>scalar</hl> también puede usarse para obtener el tamaño:
+Además la función <hl>scalar</hl> también puede usarse para obtener el tamaño:
 
 <code lang="perl">
 my @names = ("Foo", "Bar", "Baz");
