@@ -1,4 +1,4 @@
-=title Contexto escalar y de lista en Perl, el tamaño de un array
+=title Contexto escalar y lista en Perl, el tamaño de un array
 =timestamp 2013-08-05T20:07:56
 =indexes scalar, list, array, size, length, context, Perl
 =status show
@@ -14,7 +14,7 @@
 
 =abstract start
 
-En este capítulo de <a href="/perl-tutorial">Perl tutorial</a> vamos a analizar la <b>sensibilidad al contexto</b> en Perl.
+En este capítulo de <a href="/perl-tutorial">Perl tutorial</a> analizaremos la <b>sensibilidad al contexto</b> en Perl.
 
 Tanto en Inglés como en Español, y en la mayoría de idiomas, las palabras pueden tener múltiples significados.
 Por ejemplo, en Inglés la palabra "left":
@@ -25,9 +25,9 @@ I turned left at the building. # Gire a la izquierda en el edificio
 
 O en Español la palabra "banco":
 
-Fui al banco a sacar dinero
+Fui al banco a sacar dinero.
 
-Me senté en el banco del parque
+Me senté en el banco del parque.
 
 Sabemos el significado correcto gracias al resto de palabras alrededor.
 Es lo que llamamos contexto.
@@ -91,24 +91,24 @@ Dentro de la condición de la sentencia <hl>if</hl> se espera
 exactamente un valor. Por lo tanto es un contexto escalar.
 
 Sabemos que el valor de un array en contexto ESCALAR es el número
-de elementos que contiene. También sabemos que es cero (<a href="/boolean-values-in-perl">FALSO</a>)
-cuando el array esta vacío, y un número positivo (<a href="/boolean-values-in-perl">VERDADERO</a>),
+de elementos que contiene. También sabemos que es cero (<a href="http://perlmaven.com/boolean-values-in-perl">FALSO</a>)
+cuando el array esta vacío, y un número positivo (<a href="http://perlmaven.com/boolean-values-in-perl">VERDADERO</a>),
 cuando el array tiene uno o más valores.
 
 Debido a la decisión arbitraria anterior, el código<hl>if (@words)</hl>
 comprueba si hay algún elemento en el array y devuelve falso si el array esta vacío.
 
-Dándole la vuelta, la expresión <hl>if (! @words)</hl> será verdadera
+Al revés, la expresión <hl>if (! @words)</hl> será verdadera
 si el array esta vacío.
 
 <h2>Contextos ESCALAR y LISTA</h2>
 
-En el <a href="/the-year-19100">episodio previo</a> vimos como <hl>localtime()</hl>
+En el <a href="/el-anno-19100">episodio previo</a> vimos como <hl>localtime()</hl>
 se comporta en contexto ESCALAR y en contexto LISTA, ahora vemos como se comporta un array en ambos contextos.
 
 No hay una regla general sobre el contexto por lo que es necesario aprenderse los diferentes casos,
 no obstante suelen ser bastante obvios. En cualquier caso, cuando consultes la documentación de una función en
-<a href="/core-perl-documentation-cpan-module-documentation">perldoc</a>,
+<a href="/documentacion-nucleo-perl-modulos-cpan">perldoc</a>,
 encontrarás una explicación de su comportamiento en cada caso.
 Al menos en los casos en los que los contextos ESCALAR y LISTA proporcionen diferentes resultados.
 
@@ -257,7 +257,7 @@ La primera línea es más o menos clara, son los valores del array juntos.
 La segunda es confusa. NO es el mismo resultado que el resultado de la función <hl>time()</h1>,
 como se podría pensar. Son los 9 números devueltos por la función <hl>localtime()</hl> en
 contexto LISTA. Si no te suena, echa un vistazo al capitulo acerca
-<a href="/the-year-19100.html">del año 19100</a>.
+<a href="/el-anno-19100">del año 19100</a>.
 
 La solución es usar la función <hl>scalar()</hl> que creará contexto ESCALAR para sus parámetros.
 De hecho ese es el único propósito de la función <hl>scalar()</hl>.
