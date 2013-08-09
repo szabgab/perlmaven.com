@@ -231,7 +231,6 @@ $VAR1 = {
 </code>
 
 
-<h2>Perl Hash table</h2>
 <h2>Perl Hash key</h2>
 
 Hashes are key-value pairs. Let's say we have a hash called <hl>%phone_number_of</hl>.
@@ -301,6 +300,10 @@ my $size = keys %india;
 
 print "The size of the hash is $size\n";
 </code>
+
+<h2>Perl hash number of elements</h2>
+
+See above at <b>Perl Hash size</b>
 
 <h2>Perl Hash map</h2>
 
