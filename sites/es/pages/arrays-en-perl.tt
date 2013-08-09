@@ -199,6 +199,7 @@ my @names = ("Foo", "Bar", "Baz");
 unshift @names, "Moo";
 
 say Dumper(\@names);
+</code>
 
 Mostrará:
 
