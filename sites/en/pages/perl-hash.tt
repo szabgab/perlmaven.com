@@ -10,8 +10,9 @@
 
 =abstract start
 
-Hash tables that are called <b>associative arrays</b>, <b>hashmaps</b> or <b>dictionaries</b> in other languages
-are an integral and important part of Perl. On this page we try to answer some common questions about hashes.
+Hashes, or hash tables, that are called <b>associative arrays</b>, <b>hashmaps</b>, or <b>dictionaries</b>
+in other languages are an integral and important part of Perl.
+On this page we try to answer some common questions about hashes.
 
 =abstract end
 
@@ -232,10 +233,21 @@ $VAR1 = {
 
 <h2>Perl Hash table</h2>
 <h2>Perl Hash key</h2>
+
+Hashes are key-value pairs. Let's say we have a hash called <hl>%phone_number_of</hl>.
+If you know a specific key, which is just a string, and it is found in the variale <hl>$name</hl>,
+then you can get the value of this key in the above hash by writing <hl>$phone_number_of{$name}</hl>.
+
+If you don't know what keys are in the hash you can fetch a list of keys using <hl>@names = keys %phone_number_of</hl>.
+
 <h2>Perl Hash exists</h2>
-syntax exists EXPR<br/><br/>
-Given an expression that specifies an element of a hash, returns true if the specified element in the hash has ever been initialized, even if the corresponding value is undefined.
+
+Given an expression that specifies an element of a hash, returns <a href="/boolean-values-in-perl">true</a>
+if the specified element in the hash has ever been initialized,
+even if the corresponding value is <a href="/undef-and-defined-in-perl">undefined</a>.
+
 A hash element can be true only if it's defined and defined only if it exists, but the reverse doesn't necessarily hold true.
+
 <code lang="perl">
 use strict;
 use warnings;
@@ -263,9 +275,12 @@ if (exists $months{1}) {
 my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
 print "The current month is $months{$mon}" if exists $months{$mon};
 </code>
+
 <h2>Perl Hash size</h2>
+
 In this hash, keys contain multiple words (i.e 2 words), so you need to enclose it in quotes. If the key contains
 only a single word, then quotes are optional. In fact, it is recommended to omit quotes for keys.
+
 <code lang="perl">
 use strict;
 use warnings;
@@ -286,11 +301,14 @@ my $size = keys %india;
 
 print "The size of the hash is $size\n";
 </code>
+
 <h2>Perl Hash map</h2>
 
 <h2>Perl Hash slice</h2>
+
 A slice is always a list, so the hash slice notation uses an at sign to indicate that. The curly braces mean that you’re indexing into a hash; the at sign means
 that you’re getting a whole list of elements, not just a single one (which is what the dollar sign would mean).
+
 <code lang="perl">
 use strict;
 use warnings;
@@ -329,7 +347,9 @@ my @location = ($employee2{"jack"}->[2], $employee2{"peter"}->[2], $employee2{"j
 say join ',', @location;
 </code>
 
-Hash slices are a very useful feature of Perl that remove the need for some loops. A hash slice is a way of referring to one or more elements of the hash in one statement, to get a list of values, or to assign a list of values.
+Hash slices are a very useful feature of Perl that remove the need for some loops.
+A hash slice is a way of referring to one or more elements of the hash in one statement,
+to get a list of values, or to assign a list of values.
 
 To get a single element from a hash <hl>%hash</hl>, with key <hl>$key</hl>, you can write <hl>$value = $hash{ $key }</hl>
 
@@ -378,8 +398,29 @@ print "In the winter the store may open late " . $day_names{sun} . "\n";
 
 <h2>Size of an array in a hash</h2>
 
+Getting the size of an array within a hash is a matter of de-referencing it <hl>@{ $data{$key} }</hl>
+and putting that in scalar context either expicitely: <hl>scalar @{ $data{$key} }</hl>,
+or one of the many implicit ways: <hl>$count = @{ $data{$key} }</hl>, <hl>if (@{ $data{$key} } < 10) { </hl>
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my %data = (
+  Snowwhite => [ 'Doc', 'Grumpy', 'Happy', 'Sleepy', 'Bashful', 'Sneezy', 'Dopey' ],
+  LOTR      => [ 'Frodo', 'Sam Gamgee', 'Pippin', 'Merry', 'Aragorn', 'Boromir', 'Legolas', 'Gimli', 'Gandalf'],
+);
+say scalar @{ $data{Snowwhite} };    # 7
+my $dwarfs = @{ $data{Snowwhite} };
+my $fellowship = @{ $data{LOTR} };
+say $dwarfs;                         # 7 
+say $fellowship;                     # 9
+</code>
+
 <h2>Number of elements of an array in a hash</h2>
 
+This is the same as the <b>size of an array in a hash</b>.
 
 <h2>Contributors</h2>
 
