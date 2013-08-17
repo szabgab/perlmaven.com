@@ -44,6 +44,7 @@
 <li><a href="/undef-e-defined-in-perl">undef e defined in Perl</a></li>
 <li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Stringhe in Perl: quotate, interpolate e con escape</a></li>
 <li><a href="/here-documents">Here document</a></li>
+<li><a href="/scalar-variables">Variabili scalari</a></li>
 </ol>
 
 <b>Liste e Array</b>
