@@ -1,6 +1,6 @@
 =title Acme::MetaSyntactic or how to get rid of foo and bar?
 =timestamp 2013-08-18T14:30:01
-=indexes files
+=indexes foo, bar
 =status show
 =author szabgab
 =archive 1
