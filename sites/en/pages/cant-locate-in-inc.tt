@@ -17,7 +17,7 @@ Starting from perl version 5.18 it will say:
 
 <hl>Can't locate Acme/NameX.pm in @INC (you may need to install the Acme::NameX module) (@INC contains: ... )</hl>
 
-a much needed improvement, that alrady helps people go in the right direction.
+a much needed improvement, that already helps people go in the right direction.
 
 =abstract end
 
@@ -33,8 +33,8 @@ You probably have either <hl>use Acme::NameX</hl> or <hl>require Acme::NameX</hl
 somewhere in your code.
 
 In order to load this module, Perl will go over the directories listed in
-an internal array of Perl called <hl>@INC</hl>. In each directory itt will look
-for a subdriectory called Acme, and inside that subdriectory a file called NameX.pm.
+an internal array of Perl called <hl>@INC</hl>. In each directory it will look
+for a subdirectory called Acme, and inside that subdirectory a file called NameX.pm.
 
 If it cannot find the file, then you will get the above error.
 
