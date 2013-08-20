@@ -45,6 +45,7 @@
 <li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Stringhe in Perl: quotate, interpolate e con escape</a></li>
 <li><a href="/here-documents">Here document</a></li>
 <li><a href="/scalar-variables">Variabili scalari</a></li>
+<li><a href="/comparing-scalars-in-perl">Confronto tra scalari</a></li>
 </ol>
 
 <b>Liste e Array</b>
