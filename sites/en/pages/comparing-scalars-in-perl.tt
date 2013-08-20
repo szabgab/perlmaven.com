@@ -26,7 +26,7 @@ What is bigger "foo" or "bar"?
 
 Perl has two sets of comparison operators. As we saw with the
 binary operators of addition (+), concatenation (.) and repetition (x),
-here too, the the operator is what defines how the operands behave and
+here too, the operator is what defines how the operands behave and
 how they are compared.
 
 The two sets of operators are as follows:
