@@ -17,19 +17,29 @@ and <a href="http://search.cpan.org/">search.cpan.org</a>.
 
 =abstract end
 
-Let's first link to two examples on the two leading interfaces of CPAN.
+First let'slink to few examples:
 
 <h2>Including images in MetaCPAN</h2>
 
-<a href="https://metacpan.org/module/Chart::Clicker">Chart::Clicker on MetaCPAN</a>
-<a href="https://metacpan.org/module/SVG">SVG on MetaCPAN</a>
+<ul>
+<li><a href="https://metacpan.org/module/Chart::Clicker">Chart::Clicker</a></li>
+<li><a href="https://metacpan.org/module/SVG">SVGN</a></li>
+<li><a href="https://metacpan.org/module/Acme::CPANAuthors::Nonhuman">Acme::CPANAuthors::Nonhuman</a></li>
+<li><a href="https://metacpan.org/module/MOSES::MOBY">MOSES::MOBY</a></li>
+</ul>
 
 <h2>Including images on search.cpan.org</h2>
 
-<a href="http://search.cpan.org/dist/Chart-Clicker/lib/Chart/Clicker.pm">Chart::Clicker on search.cpan.org</a>
-<a href="http://search.cpan.org/dist/SVG/lib/SVG.pm">SVG on search.cpan.org</a>
+<ul>
+<li><a href="http://search.cpan.org/dist/Chart-Clicker/lib/Chart/Clicker.pm">Chart::Clicker</a></li>
+<li><a href="http://search.cpan.org/dist/SVG/lib/SVG.pm">SVG</a></li>
+</ul>
 
-So how can this be done?
+As Ether pointed out on the related <a href="http://blogs.perl.org/users/gabor_szabo/2013/08/adding-images-to-cpan.html">blogs.perl.org</a>
+post, <a href="http://grep.cpan.me/?q=%3Dbegin+html">grep.cpan.me</a> can list a bunch of modules that might have some embedded HTML
+in their POD.
+
+<h2>So how can this be done?</h2>
 
 Let's look at the
 <a href="https://github.com/gphat/chart-clicker/blob/master/lib/Chart/Clicker.pm">source code of Char::Clicker</a>.
