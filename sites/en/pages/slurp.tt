@@ -1,4 +1,4 @@
-=title slurp - reading a file in one step
+=title slurp mode - reading a file in one step
 =timestamp 2013-08-26T16:13:10
 =indexes $/, local, $INPUT_RECORD_SEPARATOR, $RS, slurp, File::Slurp
 =status show
