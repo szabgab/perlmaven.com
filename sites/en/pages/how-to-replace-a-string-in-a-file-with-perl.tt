@@ -88,7 +88,7 @@ sub write_file {
 </code>
 
 The <hl>read_file</hl> function we set the <hl>$/</hl> variable (which is also called $INPUT_RECORD_SEPARATOR)
-to <hl>undef</hl>. This is what is usually referred to as <b>slurp mode</b>. It tells the "read-line" operator
+to <hl>undef</hl>. This is what is usually referred to as <a href="/slurp">slurp mode</a>. It tells the "read-line" operator
 of perl to read in the content of all the file into the scalar variable on the left-hand-side of the
 assignment: <hl>my $all = &lt;$in>;</hl>. We even used the <hl>local</hl> keyword when we set <hl>$/</hl> so
 this change will be reverted once we exit the enclosing block - in this case, once we leave the <hl>read_file</hl>
