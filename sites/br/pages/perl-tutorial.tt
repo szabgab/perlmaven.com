@@ -102,7 +102,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>Usando Módulos</li>
 <li><a href="/arrays-em-perl">Arrays em Perl</a></li>
 <li>Process command line parameters @ARGV, Getopt::Long</li>
-<li>Como ler e processar um arquivo CSV? (split, Text::CSV_XS)</li>
+<li><a href="/como-ler-um-arquivo-csv-usando-perl">Como ler e processar um arquivo CSV? (split, Text::CSV_XS)</a></li>
 <li><a href="/funcao-join">join</a></li>
 <li>O ano de 19100 (time, localtime, gmtime) e introdução ao contexto</li>
 <li>Sensibilidade do contexto em Perl</li>
