@@ -1,0 +1,157 @@
+=title slurp - reading a file in one step
+=timestamp 2013-08-26T16:13:10
+=indexes $/, local, $INPUT_RECORD_SEPARATOR, $RS, slurp, File::Slurp
+=status show
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+While in most of the cases we'd process a <a href="/what-is-a-text-file">text file</a> line-by-line,
+there are cases when it is easier to do the work if all the content of the file is in the memory in a single scalar variable.
+
+For example when we need to replace <b>Java is Hot</b> by <b>Jabba the Hutt</b> in a text file.
+
+(Probably this is going to be funny only to programmers who are Start Wars fans and who have bad Hungarian accent in
+English as I do. Or maybe not even to them.)
+
+In any case you can escape now and read more about <a href="http://en.wikipedia.org/wiki/Jabba_the_Hutt">Jabba the Hutt</a>.
+
+=abstract end
+
+
+For example this is what we have in the data.txt file:
+
+<code>
+Java is Hot
+
+Java is
+Hot
+</code>
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+open my $fh, '<', 'data.txt' or die;
+$/ = undef;
+my $data = <$fh>;
+close $fh;
+print $data;
+
+$data =~ s/Java\s+is\s+Hot/Jabba The Hutt/g;
+say '-' x 30;
+
+print $data;
+</code>
+
+Running the above Perl program we get the following output:
+
+<code>
+Java is Hot
+
+Java is
+Hot
+------------------------------
+Jabba The Hutt
+
+Jabba The Hutt
+</code>
+
+<h2>Explanation</h2>
+
+The <hl>$/</hl> variable is the <b>Input Record Separator</b> in Perl. When we put the read-line operator in scalar
+context, for example by assigning to a scalar variable <hl>$x = <$fh></hl>, perl will read from the file up-to
+and including the <b>Input Record Separator which is, by default, the new-line <hl>\n</hl>.
+
+What we did here is we assigned <a href="/undef-and-defined-in-perl">undef</a> to <hl>$/</hl>. So the read-line operator
+will read the file up-till the first time it encounters <b>undef</b> in the file. That never happens so it reads till
+the end of the file. This is what is called <b>slurp mode</b>, because of the sound the file makes when we read it.
+
+
+The big problem with the above code is that <hl>$/</hl> is a global variable. This if we change <hl>$/</hl> in one place
+of our code, this will change the behavior of perl in other places of our code and even in third-party modules.
+
+So it is better to localize it:
+
+<h2>localize the change</h2>
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $data;
+{
+    open my $fh, '<', 'data.txt' or die;
+    local $/ = undef;
+    $data = <$fh>;
+    close $fh;
+}
+print $data;
+
+$data =~ s/Java\s+is\s+Hot/Jabba The Hutt/g;
+say '-' x 30;
+
+print $data;
+</code>
+
+
+We have 3 changes in this code:
+<ul>
+<li>We put the <hl>local</hl> keyword in front of the assignment to <hl>$/</hl>. This will make sure the value of <hl>$/</hl>
+returns to whatever it was when the enclosing block ends.</li>
+<li>For this we needed an enclosing block, so we added a pair of curly braces around
+the code-snippet dealing with the file.</li>
+<li>The third change is that we had to declare the <hl>$data</hl> variable outside of the block,
+or it would go out of scope when the block ends.</li>
+</ul>
+
+
+<h2>Creating a slurp function</h2>
+
+In the third iteration of the code, we create a separate function called <hl>slurp</hl> that will get
+the name of the file and return the content as a single string. This allows us to hide the code-snippet
+at the end of the program or even in a separate file. It also makes it reusable, so instead of copying it
+to other places where we might need the same functionality we can just call the <hl>slurp</hl> function.
+
+This makes the main body of our code much nicer.
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $data = slurp('data.txt');
+
+print $data;
+
+$data =~ s/Java\s+is\s+Hot/Jabba The Hutt/g;
+say '-' x 30;
+
+print $data;
+
+sub slurp {
+    my $file = shift;
+    open my $fh, '<', $file or die;
+    local $/ = undef;
+    my $cont = <$fh>;
+    close $fh;
+    return $cont;
+}
+</code>
+
+Of course we could further improve our slurp function by setting the encoding to utf-8 and by providing better
+error message in case on of the system calls fail.
+
+<h2>File::Slurp</h2>
+
+In the article <a href="/how-to-replace-a-string-in-a-file-with-perl">replacing a string in a file</a> we had a similar example,
+except that there we used the <hl>read_file</hl> function of the <a href="https://metacpan.org/module/File::Slurp">File::Slurp</a> module.
+
+
+

@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on July 16, 2013.
+parts are being published every few days. The latest one was published on August 26, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -98,6 +98,7 @@ to practice what you have learned.
 <li>Reading from a binary file, read, eof</li>
 <li>tell, seek</li>
 <li>truncate</li>
+<li><a href="/slurp">Slurp mode</a></li>
 </ol>
 
 <b>Lists and Arrays</b>
