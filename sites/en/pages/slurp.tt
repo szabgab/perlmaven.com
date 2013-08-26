@@ -66,7 +66,7 @@ Jabba The Hutt
 
 The <hl>$/</hl> variable is the <b>Input Record Separator</b> in Perl. When we put the read-line operator in scalar
 context, for example by assigning to a scalar variable <hl>$x = <$fh></hl>, perl will read from the file up-to
-and including the <b>Input Record Separator which is, by default, the new-line <hl>\n</hl>.
+and including the <b>Input Record Separator</b> which is, by default, the new-line <hl>\n</hl>.
 
 What we did here is we assigned <a href="/undef-and-defined-in-perl">undef</a> to <hl>$/</hl>. So the read-line operator
 will read the file up-till the first time it encounters <b>undef</b> in the file. That never happens so it reads till
