@@ -25,6 +25,7 @@
    <li><a href="/scalar-and-list-context-in-perl">הקשר סקלרי(Scalar) והקשר רשימתי (List) בפרל, גודל של מערך</a></li>
    <li><a href="/scope-of-variables-in-perl">טווח (scope) של משתנים בפרל</a></li>
    <li><a href="/string-functions-length-lc-uc-index-substr"> פונקציות לטיפול במחרוזות: length, lc, uc, index, substr</a></li>
+   <li><a href="/sorting-arrays-in-perl">מיון מערכים בפרל</a></li>
 <!--
   <li><a href=""></a></li>
 -->
