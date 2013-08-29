@@ -118,7 +118,9 @@ my @sorted_words = sort { lc($a) cmp lc($b) } @words;
 
 התוצאה היא
 
-והתוצאה היא:<code lang="perl">
+והתוצאה היא:
+
+<code lang="perl">
 $VAR1 = [
         'bar',
         'foo',
@@ -138,7 +140,9 @@ say Dumper \@sorted_numbers;
 </code>
 
 
-והתוצאה היא:<code lang="perl">
+והתוצאה היא:
+
+<code lang="perl">
 $VAR1 = [
         12,
         14,
@@ -164,7 +168,9 @@ my @sorted_numbers = sort { $a <=> $b } @numbers;
 
 Results in:
 
-והתוצאה היא:<code lang="perl">
+והתוצאה היא:
+
+<code lang="perl">
 $VAR1 = [
         2,
         3,
