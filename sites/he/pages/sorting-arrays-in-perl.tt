@@ -71,7 +71,9 @@ my @words = qw(foo bar Zorg moo);
 
 התוצאה ב-<hl>@sorted_words</hl> תהיה:
 
-והתוצאה היא:<code lang="perl">
+והתוצאה היא:
+
+<code lang="perl">
 $VAR1 = [
         'Zorg',
         'bar',
