@@ -1,14 +1,12 @@
 =title O Ano 19100
-=timestamp 2013-05-20T22:37:35
+=timestamp 2013-09-02T07:37:35
 =indexes time, localtime, gmtime, Time::HiRes, DateTime
 =status show
 =original the year 19100
 =books beginner_book
 =author szabgab
 =translator leprevost
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
