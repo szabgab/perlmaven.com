@@ -89,8 +89,8 @@ Dentro de la condición de la sentencia <hl>if</hl> se espera
 exactamente un valor. Por lo tanto es un contexto escalar.
 
 Sabemos que el valor de un array en contexto ESCALAR es el número
-de elementos que contiene. También sabemos que es cero (<a href="/boolean-values-in-perl">FALSO</a>)
-cuando el array esta vacío, y un número positivo (<a href="/boolean-values-in-perl">VERDADERO</a>),
+de elementos que contiene. También sabemos que es cero (<a href="/valores-booleanos-en-perl">FALSO</a>)
+cuando el array esta vacío, y un número positivo (<a href="/valores-booleanos-en-perl">VERDADERO</a>),
 cuando el array tiene uno o más valores.
 
 Debido a la decisión arbitraria anterior, el código<hl>if (@words)</hl>
