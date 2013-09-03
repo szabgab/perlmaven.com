@@ -1,5 +1,6 @@
-=title Perl Tutorial in LANGUAGE
+=title Perl tutoriál česky 
 =timestamp 2012-05-02T22:45:56
+=description Perl Tutoriál pro ty, kteří musí udržovat existující kód v Perlu, pro ty, kteří používají Perl pro drobné skripty, i pro vývoj aplikací v Perlu.
 =status show
 =original perl-tutorial
 =showright 1
@@ -16,10 +17,10 @@
 
 <ul>
 <!--
-  <li><a href="/instalace-perlu-a-prvni-kroky">Instalace Perlu, v�pis Hello World, z�chrann� s� (use strict, use warnings)</a></li>
+  <li><a href="/instalace-perlu-a-prvni-kroky">Instalace Perlu, výpis Hello World, záchranná síť (use strict, use warnings)</a></li>
 -->
 
 </ul>
 
-For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
+Originální verze je k dispozici zde: <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
 
