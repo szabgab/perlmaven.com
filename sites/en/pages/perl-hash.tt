@@ -8,10 +8,13 @@
 =comments 1
 =social 1
 
+<!-- Please wait with the translation till this article is finished and this comment is removed -->
+
 =abstract start
 
-Hash tables that are called <b>associative arrays</b>, <b>hashmaps</b> or <b>dictionaries</b> in other languages
-are an integral and important part of Perl. On this page we try to answer some common questions about hashes.
+Hashes, or hash tables, that are called <b>associative arrays</b>, <b>hashmaps</b>, or <b>dictionaries</b>
+in other languages are an integral and important part of Perl.
+On this page we try to answer some common questions about hashes.
 
 =abstract end
 
@@ -107,8 +110,79 @@ $VAR1 = {
 
 <h2>Perl Hash of arrays of arrays</h2>
 
+Like in the preceding example, each value in the following hash is a
+reference to an array and each value in the array is a reference to
+another array.
+
+Here is an example of a list of invoices for each customer:
+
 <code lang="perl">
+use strict;
+use warnings;
+use Data::Printer;
+
+my $invoices = {
+  customer_1 => [
+      [ 1, 'Article_1', 300.00 ],
+      [ 2, 'Article_2', 500.00 ],
+  ],
+  customer_2 => [
+      [ 1, 'Article_2', 999.00 ],
+      [ 2, 'Article_5', 399.99 ],
+  ],
+};
+
+# Add another customer
+push @{ $invoices->{customer_3} }, [ 1, 'Article_9', 899.00 ];
+push @{ $invoices->{customer_3} }, [ 2, 'Article_10', 799.00 ];
+
+p $invoices;
 </code>
+
+This time we use <hl>Data::Printer</hl> to show the data structure:
+
+<code lang="perl">
+\ {
+    customer_1   [
+        [0] [
+            [0] 1,
+            [1] "Article_1",
+            [2] 300
+        ],
+        [1] [
+            [0] 2,
+            [1] "Article_2",
+            [2] 500
+        ]
+    ],
+    customer_2   [
+        [0] [
+            [0] 1,
+            [1] "Article_2",
+            [2] 999
+        ],
+        [1] [
+            [0] 2,
+            [1] "Article_5",
+            [2] 399.99
+        ]
+    ],
+    customer_3   [
+        [0] [
+            [0] 1,
+            [1] "Article_9",
+            [2] 899
+        ],
+        [1] [
+            [0] 2,
+            [1] "Article_10",
+            [2] 799
+        ]
+    ]
+}
+</code>
+
+Note the different format used by this module.
 
 <h2>Perl Hash reference</h2>
 
@@ -159,12 +233,55 @@ $VAR1 = {
 </code>
 
 
-<h2>Perl Hash table</h2>
 <h2>Perl Hash key</h2>
+
+Hashes are key-value pairs. Let's say we have a hash called <hl>%phone_number_of</hl>.
+If you know a specific key, which is just a string, and it is found in the variale <hl>$name</hl>,
+then you can get the value of this key in the above hash by writing <hl>$phone_number_of{$name}</hl>.
+
+If you don't know what keys are in the hash you can fetch a list of keys using <hl>@names = keys %phone_number_of</hl>.
+
 <h2>Perl Hash exists</h2>
+
+Given an expression that specifies an element of a hash, returns <a href="/boolean-values-in-perl">true</a>
+if the specified element in the hash has ever been initialized,
+even if the corresponding value is <a href="/undef-and-defined-in-perl">undefined</a>.
+
+A hash element can be true only if it's defined and defined only if it exists, but the reverse doesn't necessarily hold true.
+
+<code lang="perl">
+use strict;
+use warnings;
+
+my %months = (
+    0 => 'January',
+    1 => 'February',
+    2 => 'March',
+    3 => 'April',
+    4 => 'May',
+    5 => 'June',
+    6 => 'July',
+    7 => 'August',
+    8 => 'September',
+    9 => 'October',
+    10 => 'November',
+    11 => 'December'
+);
+
+#Interpolation will not happen for hashes i.e %months will not be interpolated
+if (exists $months{1}) {
+    print "$months{1} exists in the hash %months\n";
+}
+
+my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
+print "The current month is $months{$mon}" if exists $months{$mon};
+</code>
+
 <h2>Perl Hash size</h2>
+
 In this hash, keys contain multiple words (i.e 2 words), so you need to enclose it in quotes. If the key contains
 only a single word, then quotes are optional. In fact, it is recommended to omit quotes for keys.
+
 <code lang="perl">
 use strict;
 use warnings;
@@ -185,10 +302,18 @@ my $size = keys %india;
 
 print "The size of the hash is $size\n";
 </code>
+
+<h2>Perl hash number of elements</h2>
+
+See above at <b>Perl Hash size</b>
+
 <h2>Perl Hash map</h2>
+
 <h2>Perl Hash slice</h2>
+
 A slice is always a list, so the hash slice notation uses an at sign to indicate that. The curly braces mean that you’re indexing into a hash; the at sign means
 that you’re getting a whole list of elements, not just a single one (which is what the dollar sign would mean).
+
 <code lang="perl">
 use strict;
 use warnings;
@@ -227,15 +352,90 @@ my @location = ($employee2{"jack"}->[2], $employee2{"peter"}->[2], $employee2{"j
 say join ',', @location;
 </code>
 
+Hash slices are a very useful feature of Perl that remove the need for some loops.
+A hash slice is a way of referring to one or more elements of the hash in one statement,
+to get a list of values, or to assign a list of values.
+
+To get a single element from a hash <hl>%hash</hl>, with key <hl>$key</hl>, you can write <hl>$value = $hash{ $key }</hl>
+
+To get a list of elements from the same hash, referred to by the keys in <hl>@keys</hl>, you can write <hl>@values = @hash{ @keys }</hl>
+
 <code lang="perl">
+use strict;
+use warnings;
+
+#Program to demonstrate hash slice
+
+my %day_names = (
+   'sun'  => 'Sunday',
+   'mon'  => 'Monday',
+   'tue'  => 'Tuesday',
+   'wed'  => 'Wednesday',
+   'thu'  => 'Thursday',
+   'fri'  => 'Friday',
+   'sat'  => 'Saturday',
+);
+
+#Get a list of the full names of week days (ie not weekends)
+my @weekdays = @day_names{ qw(mon tue wed thu fri) };
+
+print "The store is open from 9AM to 5PM on " . join(", ", @weekdays) . "\n";
+
+#Get a list of the full names of weekend days
+my @weekends = @day_names{ 'sat', 'sun' };
+
+print "The store closes at 12 noon on " . join(" and ", @weekends) . "\n";
+
+#Lets say we want to change the hash now to make the values lower case and plural
+#So that 'Sunday' becomes 'sundays'
+#We can assign to a hash slice to achieve this
+
+#Get the keys and the values from the hash - these will have the same respective order
+my @keys = keys %day_names;
+my @values = values %day_names;
+
+#Now assign to a slice of the hash %day_names
+#In this case the slice @keys identifies every key of %day_names
+@day_names{ @keys } = map lc($_) . 's', @values;
+
+print "In the winter the store may open late " . $day_names{sun} . "\n";
 </code>
 
 <h2>Size of an array in a hash</h2>
 
+Getting the size of an array within a hash is a matter of de-referencing it <hl>@{ $data{$key} }</hl>
+and putting that in scalar context either expicitely: <hl>scalar @{ $data{$key} }</hl>,
+or one of the many implicit ways: <hl>$count = @{ $data{$key} }</hl>, <hl>if (@{ $data{$key} } < 10) { </hl>
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my %data = (
+  Snowwhite => [ 'Doc', 'Grumpy', 'Happy', 'Sleepy', 'Bashful', 'Sneezy', 'Dopey' ],
+  LOTR      => [ 'Frodo', 'Sam Gamgee', 'Pippin', 'Merry', 'Aragorn', 'Boromir', 'Legolas', 'Gimli', 'Gandalf'],
+);
+say scalar @{ $data{Snowwhite} };    # 7
+my $dwarfs = @{ $data{Snowwhite} };
+my $fellowship = @{ $data{LOTR} };
+say $dwarfs;                         # 7 
+say $fellowship;                     # 9
+</code>
+
 <h2>Number of elements of an array in a hash</h2>
 
+This is the same as the <b>size of an array in a hash</b>.
 
 <h2>Contributors</h2>
 
-<a href="https://github.com/shajiindia">Shaji Kalidasan</a>
+<ul>
+  <li><a href="https://github.com/shajiindia">Shaji Kalidasan</a></li>
+  <li><a href="https://github.com/spacebat">Andrew Kirkpatrick</a></li>
+  <li><a href="https://github.com/stefansbv">Ștefan Suciu</a></li>
+</ul>
+
+
+
+
 

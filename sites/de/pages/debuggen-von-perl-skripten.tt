@@ -1,10 +1,11 @@
 =title Debuggen von Perl-Sktipten
-=timestamp 2013-83-02T19:45:57
+=timestamp 2013-08-04T19:45:57
 =indexes -d, Data::Dumper, print, debug, debugging, $VAR1, $VAR2
 =status show
+=original debugging-perl-scripts
 =books beginner_book
 =author szabgab
-=translator McA
+=translator mca
 =archive 1
 =comments 1
 =social 1

@@ -44,7 +44,7 @@ and other symbols one would use in writing, and if it consists of lines, then we
 When you open a text file with Notepad or some other, simple text editor you will see several lines of text.
 The file on the disk on the other hand isn't broken up to such lines. It is a series of numbers
 one after the other. When you open the file using Notepad, it translates each number to a visual representation.
-For example if it encounters the number 97, it will show the letter <b>a</b>. We can say that the 
+For example if it encounters the number 97, it will show the letter <b>a</b>. We can say that the
 <hl>a character is represented by the number 97 in ASCII</hl>.
 
 The reason that you see several lines in your editor is that some of the bytes in the file,
@@ -70,7 +70,7 @@ This movement first pushed the "carriage" to the beginning of the paper and when
 beginning (and got stuck), further pulling of the handle turning the paper a bit so the
 carriage would point to the next line. Then the typewrite was ready for the next line.
 
-That is, they used two operations 
+That is, they used two operations
 <b>carriage return</b>, pushing the "carriage" to the beginning of the paper and
 <b>line feed</b> - going to the next line.
 

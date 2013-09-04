@@ -13,3 +13,4 @@ bug               = hibă, defect
 header            = antet
 footer            = subsol
 get your job done = ?treaba să fie făcută?
+debugging         = depanare

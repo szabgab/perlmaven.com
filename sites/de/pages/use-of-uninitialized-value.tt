@@ -2,9 +2,10 @@
 =timestamp 2013-08-04T21:45:56
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
+=original use-of-uninitialized-value
 =books beginner_book
 =author szabgab
-=translator McA
+=translator mca
 =archive 1
 =comments 1
 =social 1

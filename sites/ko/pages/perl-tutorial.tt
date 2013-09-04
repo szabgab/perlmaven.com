@@ -33,6 +33,7 @@
   <li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
   <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
   <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
+  <li><a href="/cant-locate-in-inc">Can't locate ... in @INC</a></li>
 </ul>
 </li>
 <li><a href="/boolean-values-in-perl">Perl의 불리언 값(참과 거짓)</a></li>
@@ -95,6 +96,7 @@
 <li><a href="/symbolic-reference-in-perl">심볼릭 레퍼런스</a></li>
 <li><a href="/strict">언제나 use strict!</a></li>
 <li><a href="/what-is-a-text-file">텍스트 파일과 바이너리 파일</a></li>
+<li><a href="/traversing-a-directory-tree-finding-required-files">디렉토리 트리를 순회하면서 필요한 파일들 찾기</a></li>
 </ol>
 
 <!--

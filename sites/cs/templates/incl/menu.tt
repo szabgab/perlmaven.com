@@ -1,0 +1,16 @@
+          <a class="brand" href="/">Perl Maven</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="/perl-tutorial">Perl Tutorial</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><a href="/keywords">Type keyword:</a></li>
+              <li><input id="typeahead" type="text" data-provide="typeahead" data-items="4" style="margin-top:6px; height:27px"></li>
+              <li><a href="/archive">Archive</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/atom" rel="alternate" type="application/atom+xml"><img
+                   src="/img/feed-icon16x16.png" alt=""
+                   style="vertical-align:middle;border:0"/></a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->

@@ -79,16 +79,16 @@ mit denen Du das vertiefen kannst, was Du gerade gelernt hast.
 <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
 <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
 <li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
-<li><a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
-<li><a href="http://perlmaven.com/unknown-warnings-category">Unknown warnings category</a></li>
-<li><a href="http://perlmaven.com/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
+<li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
+<li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
+<li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
 </ul>
 </li>
-<li><a href="http://perlmaven.com/automatic-value-conversion-or-casting-in-perl">Automatische Umwandlung von Zeichenkette zu Zahl</a></li>
+<li><a href="/automatische-typ-convertierung-bzw-casting-in-perl">Automatische Umwandlung von Zeichenkette zu Zahl</a></li>
 <li>Bedingte Anweisung: if</li>
-<li><a href="http://perlmaven.com/boolean-values-in-perl">Wahrheitswerte (wahr/falsch) in Perl</a></li>
-<li>Numerische und Zeichenkletten-Operatoren</li>
-<li><a href="http://perlmaven.com/undef-and-defined-in-perl">undef, der Initialwert und die defined-Funktion</a></li>
+<li><a href="/boolesche-werte-in-perl">Wahrheitswerte (wahr/falsch) in Perl</a></li>
+<li>Numerische und Zeichenketten-Operatoren</li>
+<li><a href="/undef-und-defined-in-perl">undef, der Initialwert und die defined-Funktion</a></li>
 <li>HERE-Dokumente</li>
 <li><a href="http://perlmaven.com/scalar-variables">Skalare</a></li>
 <li><a href="http://perlmaven.com/comparing-scalars-in-perl">Skalare vergleichen</a></li>
