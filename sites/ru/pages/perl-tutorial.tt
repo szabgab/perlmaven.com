@@ -105,8 +105,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 </li>
 <li>Числовые и строковые операторы</li>
 <li>
-	<span href="/undef-and-defined-in-perl">undef, начальное значение и функция "defined"</span>
-	(<a href="http://perlmaven.com/undef-and-defined-in-perl">undef, the initial value and the defined function</a>)
+	<a href="/undef-i-defined-v-perl">undef, начальное значение и функция "defined"</a>
 </li>
 <li>
 	<span href="/quoted-interpolated-and-escaped-strings-in-perl">Строки в Perl: кавычки, интерполяция и экранирование</span>
