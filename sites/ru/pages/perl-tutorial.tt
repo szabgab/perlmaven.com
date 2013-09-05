@@ -101,8 +101,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 </li>
 <li>Условные выражения: if</li>
 <li>
-	<span href="/boolean-values-in-perl">Булевы (true и false) значения в Perl</span>
-	(<a href="http://perlmaven.com/boolean-values-in-perl">Boolean (true and false) values in Perl</a>)
+	<a href="/bulevy-znacheniya-v-perl">Булевы (true и false) значения в Perl</a>
 </li>
 <li>Числовые и строковые операторы</li>
 <li>
