@@ -108,8 +108,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<a href="/undef-i-defined-v-perl">undef, начальное значение и функция "defined"</a>
 </li>
 <li>
-	<span href="/quoted-interpolated-and-escaped-strings-in-perl">Строки в Perl: кавычки, интерполяция и экранирование</span>
-	(<a href="http://perlmaven.com/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a>)
+	<a href="/kavychki-interpolyaciya-i-ekranirovanie-strok-v-perl">Строки в Perl: кавычки, интерполяция и экранирование</a>
 </li>
 <li>
 	<span href="/here-documents">Here-документы</span>
