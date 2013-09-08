@@ -1,6 +1,6 @@
 =title slurp mode - reading a file in one step
 =timestamp 2013-08-26T16:13:10
-=indexes $/, local, $INPUT_RECORD_SEPARATOR, $RS, slurp, File::Slurp
+=indexes $/, local, $INPUT_RECORD_SEPARATOR, $RS, slurp, File::Slurp, Path::Tiny
 =status show
 =books beginner_book
 =author szabgab
@@ -37,7 +37,8 @@ use strict;
 use warnings;
 use 5.010;
 
-open my $fh, '<', 'data.txt' or die;
+my $file = 'data.txt';
+open my $fh, '<', $file or die;
 $/ = undef;
 my $data = <$fh>;
 close $fh;
@@ -85,9 +86,10 @@ use strict;
 use warnings;
 use 5.010;
 
+my $file = 'data.txt';
 my $data;
 {
-    open my $fh, '<', 'data.txt' or die;
+    open my $fh, '<', $file or die;
     local $/ = undef;
     $data = <$fh>;
     close $fh;
@@ -126,7 +128,8 @@ use strict;
 use warnings;
 use 5.010;
 
-my $data = slurp('data.txt');
+my $file = 'data.txt';
+my $data = slurp($file);
 
 print $data;
 
@@ -153,5 +156,17 @@ error message in case on of the system calls fail.
 In the article <a href="/how-to-replace-a-string-in-a-file-with-perl">replacing a string in a file</a> we had a similar example,
 except that there we used the <hl>read_file</hl> function of the <a href="https://metacpan.org/module/File::Slurp">File::Slurp</a> module.
 
+<h2>Path::Tiny</h2>
+
+An even better solution is to use the <a href="https://metacpan.org/module/Path::Tiny">Path::Tiny</a>
+module. It exports the <hl>path</hl> function that gets a path to a file as a parameter and returns
+an object. We can then call the <hl>slurp</hl> method on that object:
+
+<code lang="perl">
+use Path::Tiny qw( path );
+
+my $file = 'data.txt';
+my $data = path($file)->slurp;
+</code>
 
 

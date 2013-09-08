@@ -86,7 +86,7 @@ my @sorted_pairs   = sort { $a->[1] <=> $b->[1] } @unsorted_pairs;
 my @quickly_sorted_files = map  { $_->[0] } @sorted_pairs;
 </code>
 
-This might look a bit more complicated than what you'd write, but bare with me.
+This might look a bit more complicated than what you'd write, but bear with me.
 It will be used in a more simple way.
 
 There are 3 steps here. In the first step we go over the list of files and for each file

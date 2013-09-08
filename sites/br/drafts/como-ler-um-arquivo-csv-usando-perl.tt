@@ -81,7 +81,7 @@ a textos simples.
 
 se eu tenho um texto do tipo <hl>$str = "Tudor:Vidor:10:Hapci"</hl> eu posso chamar
 <hl>@fields = split(":"  ,   $str);</hl>. O array <hl>@fields</hl> será preenchido
-com 4 elementos: "Tudor", "Vidor", "10" and "Hapci". Se eu fizer <hl>print $fields[2]</hl>
+com 4 elementos: "Tudor", "Vidor", "10" e "Hapci". Se eu fizer <hl>print $fields[2]</hl>
 irei ver o número 10 na tela, pois o índex do array inicia em zero.
 
 No nosso caso o separador de campo é o caractere vírgula <hl>,</hl> e não o caractere de
@@ -121,7 +121,7 @@ Infelizmente em algum momento você poderá receber avisos enquanto roda o seu s
 
 <hl>Argument " alma"" isn't numeric in addition (+) at csv.pl line 16, <$data> line 3.</hl>
 
-Você abre o seu arquivo CSV e de separa com o seguinte:
+Você abre o seu arquivo CSV e se depara com o seguinte:
 
 <code>
 Tudor,Vidor,10,Hapci
@@ -219,7 +219,7 @@ caractere de aspas duplas: <hl>Kuka,"Hofeherke, alma,100,Kiralyno</hl>
 Se falhar nós caímos na parte do <hl>else</hl>, imprimindo na tela um aviso e indo para a 
 próxima linha.
 
-Se de certo nós chamamos o método <hl>fields</hl>  que irá retornar os pedaços
+Se der certo nós chamamos o método <hl>fields</hl>  que irá retornar os pedaços
 do texto picotado. Então assim nós podemos capturar o terceiro elemento (índice 2)
 que deve ser o número.
 
@@ -269,7 +269,7 @@ print "$sum\n";
 </code>
 
 Isso muda toda a estratégia de como lidar com o arquivo. Ao invés de ler manualmente linha por linha,
-nós pedimos ao Text::CSV para ler, o que le e considera uma linha. Isso permite que o módulo lide
+nós pedimos ao Text::CSV para ler, o que ele e considera uma linha. Isso permite que o módulo lide
 com campos possuindo caracteres de nova linha. Nós também utilizamos algumas <i>flags</i> no módulo
 e quando abrimos o arquivo nos certificamos que pode lidar tranquilamente com caracteres UTF-8.
 
