@@ -111,8 +111,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<a href="/kavychki-interpolyaciya-i-ekranirovanie-strok-v-perl">Строки в Perl: кавычки, интерполяция и экранирование</a>
 </li>
 <li>
-	<span href="/here-documents">Here-документы</span>
-	(<a href="http://perlmaven.com//here-documents">Here documents</a>)
+	<a href="/here-documenty">Here-документы</a>
 </li>
 <li>
 	<span href="/scalar-variables">Скалярные переменные</span>
