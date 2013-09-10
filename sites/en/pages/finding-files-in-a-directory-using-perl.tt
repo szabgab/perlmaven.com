@@ -131,7 +131,9 @@ The same could be expressed as
 $rule->size("> 1k");
 </code>
 
-(I am not yet sure if 1k = 1000 is on purpose or a bug.)
+(1k = 1000, and 1ki = 1024, in accordance with the
+<a href="http://physics.nist.gov/cuu/Units/binary.html">IEC standard</a> as implemented
+by <a href="https://metacpan.org/module/Number::Compare">Number::Compare</a>.)
 
 Similarly one could write
 
