@@ -1,7 +1,7 @@
 Perl Maven
 ==============
 
-These are the source files of the articles published on http://perlmaven.com/ and its subdomains.
+These are the source files of the articles published on http://perlmaven.com/ and its sub-domains.
 
 Copyright Gabor Szabo except where the =author field explicitly shows someone else.
 Translations are copyright the translator (mentioned in the =translator field of each file) and Gabor Szabo,
@@ -36,7 +36,7 @@ is displayed on the front pages and is included in the RSS/Atom feed.
 
 `<hl></hl>` stands for highlight and usually code-snippets inside the text are marked with these.
 
-`<b></b>` is used to mark other imporant pieces. 
+`<b></b>` is used to mark other important pieces. 
 
 Code snippets are wrapped in 
 
@@ -89,7 +89,7 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 * Korean                  ko
 * Nepali                  ne
 * Portuguese (Brazilian)  br  (sorry Bretons)
-* Romaninan               ro
+* Romanian                ro
 * Russian                 ru
 * Spanish                 es
 * Telugu                  te
@@ -110,7 +110,7 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 * Each author and translator needs to provide a picture in jpg or png format approximately 128x128 pixel size 
   (an Avatar) to be shown at the bottom of each article.
 * Each author and translator should set up authorship by linking their Google+ profile to the CC.perlmaven.com
-  site. (e.g. br.perlmaven.com for the Brazilian Porguguese translators)
+  site. (e.g. br.perlmaven.com for the Brazilian Portuguese translators)
   See http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
 
 
@@ -119,19 +119,19 @@ The translation process:
 * When s/he has finished the translations s/he
   adds the link to the translation in the perl-tutorials.tt file in the open part,
   and moves the translated file to the sites/CC/pages folder.
-  and updates the =timestamp in the translated file to the current date/time or slightly
+  and updates the =timestamp in the translated file to the current date/time, or slightly
   in the future (maybe 12 hours) to allow Gabor the time to publish it.
   (This =timestamp is used to generate the front page, the atom feed, and the order in
   the archives page.
 
-* in rare cases we would want to synchrnize the publication of the same article
+* in some cases we would want to synchronize the publication of the same article
   translated to several languages. In this case the translator should move the
   translated file to the sites/CC/done folder.
 
 * Push to your repository and send a pull request.
 * Gabor will periodically merge the pull requests and push the source to the live site.
   (Actually Gabor periodically merges from the public repositories of the translators
-  in any case, but a pull requets provides some opportunity to send messages.)
+  in any case, but a pull request provides some opportunity to send messages.)
   He will try to check for html issues, but cannot check the correctness of the translations.
 
 
@@ -144,15 +144,15 @@ please create an account on https://disqus.com/ and tell Gabor about it.
 
 Moderation requires that you follow all the comments that arrive to the site and see if they need
 any attention. Spams are usually filtered by Disqus, but a few can slip through and there can be
-an occassional false positive, something that is marked as spam but it isn't really.
+an occasional false positive, something that is marked as spam but it isn't really.
 The moderator also has to make sure that the comments stay civil and not hesitate to remove
 irrelevant or offending comments.
 
 Getting started with the translation
 =====================================
-* Sign up to Github, configure Git on your computer (name, email)
+* Sign up to GitHub, configure Git on your computer (name, email)
 * Fork the https://github.com/szabgab/perl5maven.com repository and clone the fork to your computer
-* Check on https://meta.wikimedia.org/wiki/List_of_Wikipediasi what sould be the hostname for the language
+* Check on https://meta.wikimedia.org/wiki/List_of_Wikipedias what should be the hostname for the language
   and talk to Gabor about this.
 * cp -r skeleton sites/CC     (where CC is the hostname selected)
 * translate the first page sites/en/pages/installing-perl-and-getting-started.tt as
@@ -250,7 +250,7 @@ Github workflow for translator and reviewer
 ============================================
 
 For some of the languages there are more than one translators,
-and they like to review their translatons before pushing it out.
+and they like to review their translations before pushing it out.
 This is a recommended workflow for them.
 
 Let's say there are two people involved one has a username
@@ -296,5 +296,5 @@ by either the translator or the reviewer:
 
     $ git mv sites/CC/drafts/article.tt sites/CC/pages/article.tt
 
-pushed it to Github and a merge requets can be sent to Gabor.
+pushed it to Github and a merge request can be sent to Gabor.
 

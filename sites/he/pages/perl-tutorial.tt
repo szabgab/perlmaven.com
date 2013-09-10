@@ -17,14 +17,16 @@
   <li><a href="/orekh-perl">עורך פרל (Perl)</a></li>
   <li><a href="/perl-al-shurat-hapkuda">פרל (Perl) על שורת הפקודה</a>
   <li><a href="/hamara-automatit-ben-mahrozot-ve-misparim-be-perl">המרה אוטומטית בין מחרוזות ומספרים בפרל</a></li>
-   <li><a href="/arakhim-booleanim-be-perl.tt">ערכים בוליאנים בפרל</a></li>
-   <li><a href="/here-documents.tt">Here documents, או כיצד ליצור מחרוזות מרובות שורות בפרל</a></li>
+   <li><a href="/arakhim-booleanim-be-perl">ערכים בוליאנים בפרל</a></li>
+   <li><a href="/here-documents">Here documents, או כיצד ליצור מחרוזות מרובות שורות בפרל</a></li>
    <li><a href="/makkrozot-begershayim-interploatzia-ve-escape.tt">מחרוזות בפרל: בגרשיים, באינטרפולציה, ועם escape</a></li>
    <li><a href="/here-documents-khasufut-meyushanot.tt">מחרוזות here-document חשופות הן מיושנות ועומדות לצאת משימוש - איך למצוא קוד בעייתי?</a></li>
    <li><a href="/scalar-variables.tt">משתנים סקלריים</a></li>
    <li><a href="/scalar-and-list-context-in-perl">הקשר סקלרי(Scalar) והקשר רשימתי (List) בפרל, גודל של מערך</a></li>
    <li><a href="/scope-of-variables-in-perl">טווח (scope) של משתנים בפרל</a></li>
    <li><a href="/string-functions-length-lc-uc-index-substr"> פונקציות לטיפול במחרוזות: length, lc, uc, index, substr</a></li>
+   <li><a href="/sorting-arrays-in-perl">מיון מערכים בפרל</a></li>
+   <li><a href="/how-to-sort-faster-in-perl">איך למיין מהר יותר בפרל?</a></li>
 <!--
   <li><a href=""></a></li>
 -->
