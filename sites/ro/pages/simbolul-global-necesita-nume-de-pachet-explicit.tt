@@ -1,5 +1,5 @@
 =title Simbolul global necesită un nume de pachet explicit
-=timestamp 2012-09-13T12:45:56
+=timestamp 2013-09-12T07:45:56
 =indexes strict, my, package, global symbol
 =status show
 =original global-symbol-requires-explicit-package-name
