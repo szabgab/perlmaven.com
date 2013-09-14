@@ -1,0 +1,35 @@
+=title Dancer, the light-weight Perl web framework
+=timestamp 2013-09-13T18:13:11
+=indexes Dancer
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+The beginning of a series of articles available to <a href="/pro">Perl Maven Pro</a> subscribers
+about <a href="http://perldancer.org/">Perl Dancer</a>, the light-weight web framework of Perl.
+
+=abstract end
+
+<h2>Free</h2>
+<ul>
+  <li><a href="/videos/modern-web-with-perl">Modern Web with Perl</a>, a quick overview (screencast)</li>
+  <li><a href="/videos/getting-started-with-perl-dancer">Getting Started with Perl Dancer</a> (screencast)</li>
+</ul>
+
+<!--
+<h2>Pro</h2>
+
+Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
+
+<ul>
+</ul>
+-->
+
+<!--
+  <li><a href=""></a></li>
+-->
+

@@ -14,12 +14,15 @@ about <a href="http://mojolicio.us/">Mojolicious</a>, the light-weight web frame
 
 =abstract end
 
-<!--
+<h2>Free</h2>
+<ul>
+  <li><a href="/videos/modern-web-with-perl">Modern Web with Perl</a>, a quick overview (screencast)</li>
+</ul>
+
 <h2>Pro</h2>
-<p>
+
 Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
-</p>
--->
+
 <ul>
   <li><a href="/pro/getting-started-with-mojolicious-lite">Getting started with Mojolicious::Lite</a></li>
   <li><a href="/pro/mojolicious-lite-with-embedded-templates">Mojolicious::Lite with embedded templates</a></li>
