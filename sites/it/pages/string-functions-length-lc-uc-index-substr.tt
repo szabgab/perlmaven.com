@@ -1,4 +1,4 @@
-=title Funzioni su stringhe: length, lc, uc, index, substr
+=Title Funzioni su stringhe: length, lc, uc, index, substr
 =timestamp 2013-09-10T21:00:00
 =indexes length, lc, uc, index, substr, scalar
 =status show
@@ -56,14 +56,14 @@ say index $str, "Un";              # 0
 say index $str, "un";              # 29
 </code>
 
-La prima chiamata a <hl>index</hl> restituisce 3 perché la stringa "gatto" inizia al 10mo carattere.
+La prima chiamata a <hl>index</hl> restituisce 3 perché la stringa "gatto" inizia al carattere in posizione 3.
 La seconda chiamata a <hl>index</hl> restituisce -1 per indicare che la stringa "cane" non c'è.
 
 La terza chiamata mostra che <hl>index</hl> restituisce 0
 quando la seconda stringa è un prefisso della prima.
 
 Il quarto esempio mostra che <hl>index</hl> cerca delle corrispondenze esatte e distingue tra maiuscole e minuscole.
-QUindi "un" e "Un" sono diverse.
+Quindi "un" e "Un" sono diverse.
 
 <hl>index()</hl> ricerca stringhe che non devono necessariamente essere parole, quindi anche la stringa "n " può essere cercata:
 
