@@ -71,7 +71,7 @@ This code:
 
 <code lang="perl">
 print "before";
-warn "Slight porblem here.\n";
+warn "Slight problem here.\n";
 print STDERR "More problems.\n";
 print "after";
 </code>
@@ -79,7 +79,7 @@ print "after";
 generating this output:
 
 <code>
-Slight porblem here.
+Slight problem here.
 More problems.
 beforeafter
 </code>
@@ -87,3 +87,4 @@ beforeafter
 Where the word "before" appears after both warning messages.
 
 In that case read about <a href="/stdout-stderr-and-redirection#buffering">buffering</a>.
+

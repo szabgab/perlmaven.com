@@ -1,0 +1,29 @@
+=title Net::Server, a framework to build TCP/IP servers
+=timestamp 2013-09-13T18:13:11
+=indexes Net::Server
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+A series of articles available to <a href="/pro">Perl Maven Pro</a> subscribers
+building TCP/IP servers using <a href="https://metacpan.org/module/Net::Server">Net::Server</a>.
+
+=abstract end
+
+<!--
+<h2>Pro</h2>
+<p>
+Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
+</p>
+-->
+<ul>
+  <li><a href="/pro/getting-started-with-net-server">Getting started with Net::Server - building an echo server</a></li>
+  <li><a href="/pro/testing-a-simple-tcpip-server">Testing a simple TCP/IP server using Net::Telnet</a></li>
+  <li><a href="/pro/echo-server-with-net-server">Echo server with logging and timeout</a></li>
+</ul>
+
+

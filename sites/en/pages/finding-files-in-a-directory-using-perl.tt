@@ -12,7 +12,6 @@
 
 There are several ways to traverse a directory tree in Perl. It can be done with the function
 calls <hl>opendir</hl> and <hl>readdir</hl> that are part of the language.
-
 It can be done using the <hl>File::Find</hl> module that comes with Perl.
 
 In this article we'll look at <a href="https://metacpan.org/module/Path::Iterator::Rule">Path::Iterator::Rule</a>.
@@ -23,7 +22,6 @@ In this article we'll look at <a href="https://metacpan.org/module/Path::Iterato
 
 In order to use the module, first we need to create a set of rules, and then we can use those rules
 to list the file-system elements that match the rules in a certain list of directories.
-
 The first step is to create the rules:
 
 <code lang="perl">
@@ -32,15 +30,11 @@ my $rule = Path::Iterator::Rule->new;
 </code>
 
 This rule has no restrictions yet, we'll see those later. It will return every
-item in the file-system.
-
-Once we have the <hl>$rule</hl> object, we use that to traverse the directories.
-
+item in the file-system. Once we have the <hl>$rule</hl> object, we use that to traverse the directories.
 The traversing can be done in two ways:
 
-The <hl>all</hl> method will traverse the given directories and return a list of file-system
+1. The <hl>all</hl> method will traverse the given directories and return a list of file-system
 elements: <hl>my @files = $rule->all( @dirs )</hl>.
-
 We then probably go over the list using a <hl>for</hl> loop:
 
 <code lang="perl">
@@ -49,7 +43,7 @@ for my $file ( $rule->all( @dirs ) ) {
 }
 </code>
 
-The <hl>iter</hl> method will return an iterator. <hl>my $it = $rule->iter( @dir );</hl>.
+2. The <hl>iter</hl> method will return an iterator. <hl>my $it = $rule->iter( @dir );</hl>.
 Then we can retrieve the file-system elements one-by-one by
 dereferencing the iterator code-reference:
 
@@ -229,9 +223,7 @@ If <hl>max_depth</hl> is 1, we will get the immediate content of those directori
 
 If you are familiar with <a href="http://beyondgrep.com/">ack</a>, you know it automatically skips the
 <b>.git</b> directory.
-
 How can we achieve the same?
-
 We create a cloned rule that matches the ".git" and then we tell our main rule to <hl>skip</hl> those matches
 
 <code lang="perl">

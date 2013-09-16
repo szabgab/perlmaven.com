@@ -12,21 +12,27 @@
 <h2>Welcome future Perl Maven!</h2>
 
 <div class="main-content">
-<div style="float:right; margin-left:10px;">
-<a href="/about"><img width="54" height="54" src="/img/szabgab.png" alt="Gabor Szabo" /></a><br>
-</div>
-<div>
-My name is <a href="/about">Gabor Szabo</a>. I have been using Perl since 1995, and teaching Perl in corporate class rooms since 2000. I love doing class-room
-training, but unfortunately that limits the number of people I can reach. I created this site and the
-products on this site in order to help you use the Perl programming language to solve problems.<br>
-I hope you will find it useful.
-</div>
+<b>What can you do here?</b>
+
+If you are a beginner, or would like to refresh your Perl programming knowladge,
+you can go over the <a href="/perl-tutorial">Perl tutorial</a>.
+
+You will find a few advanced articles too, though most of the advanced articles are available to the
+subscribers of the <a href="/pro">Perl Maven Pro</a> service only.
+
+If you are interested to listen to or even see other Perl developers,
+the <a href="/tv">Perl Maven TV Show</a> is a collection of such interviews.
+
+Want to make sure you don't miss any of the Perl Maven articels?
+Sign up to the <a href="/perl-maven-newsletter">newsletter</a>!
 </div>
 
+
+<!--
 <div class="main-content">
 If you need to <b>maintain a large piece of software</b> written in Perl by other people in the last 5-10-15 years,
 that's a challenge. Especially if you did not get proper training in Perl. You are probably limited to
-a specific and old version of Perl. I'd recommend you check out, the <a href="/perl-tutorial">Perl tutorial</a>.
+a specific and old version of Perl. Check out, the <a href="/perl-tutorial">Perl tutorial</a>!
 You can probably skip the part about installing Perl, but the rest of the tutorial will be relevant for you.
 You can also sign up to the <a href="/perl-maven-newsletter">newsletter</a> to get updates on the new articles as they
 are published.
@@ -65,3 +71,4 @@ If any of this sounds familiar to you then you are in the right place.
 To get started you could read the <a href="/perl-tutorial">Perl tutorial</a> and sign up to the <a href="/perl-maven-newsletter">newsletter</a>.
 </div>
 
+-->

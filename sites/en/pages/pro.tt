@@ -12,13 +12,13 @@
 
 =abstract start
 
-Announcing the Perl Maven Pro.
+The <b>Perl Maven Pro</b> is a paid service where subscribers can get 1-2 new articles a week
+and the all the previous articles as listed <a href="/archive?tag=pro">in the archive</a>.
 
-I would like to publish more articles and more screencasts, but it is both overwhelming to you
-and a way to much work for me to do in my spare time. The solution?
+Besides many "random" advanced articles the Pro account provides access to the series about
+<a href="/moo">Moo</a>, the Minimalist Object Oriented system for Perl,
+and about <a href="/mojolicious">Mojolicious</a> the light-weight web framework.
 
-I am launching the <b>Perl Maven Pro</b>, a paid service where subscribers will be happy
-with lot of diverse articles and screencasts.
 
 The full list of the previous articles can be found <a href="/archive?tag=pro">in the archive</a>.
 
