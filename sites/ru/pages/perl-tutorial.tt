@@ -101,21 +101,17 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 </li>
 <li>Условные выражения: if</li>
 <li>
-	<span href="/boolean-values-in-perl">Булевы (true и false) значения в Perl</span>
-	(<a href="http://perlmaven.com/boolean-values-in-perl">Boolean (true and false) values in Perl</a>)
+	<a href="/bulevy-znacheniya-v-perl">Булевы (true и false) значения в Perl</a>
 </li>
 <li>Числовые и строковые операторы</li>
 <li>
-	<span href="/undef-and-defined-in-perl">undef, начальное значение и функция "defined"</span>
-	(<a href="http://perlmaven.com/undef-and-defined-in-perl">undef, the initial value and the defined function</a>)
+	<a href="/undef-i-defined-v-perl">undef, начальное значение и функция "defined"</a>
 </li>
 <li>
-	<span href="/quoted-interpolated-and-escaped-strings-in-perl">Строки в Perl: кавычки, интерполяция и экранирование</span>
-	(<a href="http://perlmaven.com/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a>)
+	<a href="/kavychki-interpolyaciya-i-ekranirovanie-strok-v-perl">Строки в Perl: кавычки, интерполяция и экранирование</a>
 </li>
 <li>
-	<span href="/here-documents">Here-документы</span>
-	(<a href="http://perlmaven.com//here-documents">Here documents</a>)
+	<a href="/here-documenty">Here-документы</a>
 </li>
 <li>
 	<span href="/scalar-variables">Скалярные переменные</span>
