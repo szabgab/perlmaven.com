@@ -233,6 +233,11 @@ requires the parentheses again, and the de-referencing construct:
 say join ', ', @{ PLANETS() };
 </code>
 
+<h2>Other ways to create constants</h2>
+
+If the above is not enough, Neil Bowers wrote a review
+comparing <a href="http://neilb.org/reviews/constants.html">21 different ways to define constants</a>.
+
 <h2>Conclusion</h2>
 
 You can probably get away with regular upper-case variables, but
