@@ -49,7 +49,6 @@ Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
   <li>The destructor of a Moo-based class</li>
   <li>Roles</li>
   <li>Singleton</li>
-  <li>Moo and command line scripts</li>
   <li>Extending Moo</li>
 </ul>
 
