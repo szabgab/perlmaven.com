@@ -11,17 +11,17 @@
 =abstract start
 
 Often in programs we would like to have symbols that represent a constant value.
-Something that we can set to a certain variable once, and be sure they never change.
-As with many other fields, there are several ways to achieve this in Perl, though in most
-cases none of "real" solutions are necessary.
+Symbols that we can set to a specific values once, and be sure they never change.
+As with many other problems, there are several ways to solve this in Perl, but
+in most cases enforcement of "constantness" is not necessary.
 
-In most cases we can just rely on the established consensus, that variables with
-all upper-case names should be treated as constants.
+In most cases we can just adhere to the established consensus, that <b>variables with
+all upper-case names should be treated as constants</b>.
 
 =abstract end
 
 Later we'll see a couple of solutions that actually enforce the "constantness"
-of the variables, but for most purposes, having variable in upper case is enough.
+of the variables, but for most purposes, having a variable in upper case is enough.
 
 <h2>Treat upper-case variables as constants</h2>
 
@@ -49,11 +49,11 @@ my %DATA = (
 my @PLANETS = sort keys %DATA;
 </code>
 
-Each planet from the <a href="http://en.wikipedia.org/wiki/Solar_System">Solar System</a>
-has two values. The first is their average distance from the Sun, the second is their mass,
+Each planet in the <a href="http://en.wikipedia.org/wiki/Solar_System">Solar System</a>
+has two values. The first is their average distance from the Sun and the second is their mass,
 relative to the Earth.
 
-Once the values were set, they should NOT be changed.
+Once the values are initially set, they should NOT be changed.
 
 Nothing enforces it, besides a secret agreement among Perl programmers and Astronomers.
 
@@ -64,10 +64,10 @@ $SPEED_OF_LIGHT = 300_000_000;
 say "The speed of light is now $SPEED_OF_LIGHT";
 </code>
 
-We can use these "constants" in the same way as we would use any variables.
-We can even change the values, but it is not recommended.
+We can use these "constants" in the same way as we would use any variable.
+We could even change the values, but it is not recommended.
 
-Besides the simplicity, one of the nice things in this is that we can
+Besides its simplicity, one of the nice things in this solution is that we can
 actually compute the values of these constants during run time, as
 we did with the <hl>@PLANETS</hl> array.
 
@@ -107,15 +107,16 @@ Readonly my @PLANETS => sort keys %DATA;
 </code>
 
 The declaration of the read-only variables (our constants) is very similar
-to what happened with regular variables, except that we precede each declaration
+to what happens with regular variables, except that we precede each declaration
 with the <hl>Readonly</hl> keyword, and instead of assignment <hl>=</hl>, we separate
-the name of the variable and the values by a fat-arrow: <hl>=></hl>.
+the name of the variable and their values by a fat-arrow: <hl>=></hl>.
 
 While the names of the read-only variables can be in any case, it is recommended
 to only use UPPER-CASE names, to make it easy for the reader of the code to recognize
 them, even without looking at the declaration.
 
-We can still create such constants at run-time as we can see with the <hl>@PLANETS</hl>
+Readonly allows us to create constants during the run-time as we have done above
+with the <hl>@PLANETS</hl> array.
 
 <code lang="perl">
 say join ', ', @PLANETS;
@@ -137,19 +138,19 @@ $DATA{Sun} = 'big';
 $DATA{Mercury}[0] = 1;
 </code>
 
-The biggest drawback of Readonly, is that it is relatively slow.
+The biggest drawback of Readonly, is its relatively slow performance.
 
 <h2>Readonly::XS</h2>
 
 There is also the <a href="https://metacpan.org/module/Readonly::XS">Readonly::XS</a>
-module that can be installed. One does not need to make any changes to her code,
+module that can be installed. One does not need to make any changes to their code,
 once the <hl>use Readonly;</hl> statement notices that <hl>Readonly::XS</hl> is
-also installed, the latter will be used providing a speed improvement.
+also installed, the latter will be used to provide a speed improvement.
 
 <h2>The constant pragma</h2>
 
 Perl comes with the <a href="http://perldoc.perl.org/constant.html">constant</a>
-pragma that creates constants.
+pragma that can create constants.
 
 The constants themselves can only hold scalars or references to complex data structure
 (arrays and hashes). The names of the constants do not have any sigils in front of them.
@@ -226,8 +227,8 @@ It will give a warning
 So the <hl>constant</hl> pragma does not fully protect us from changing the
 "constant".
  
-Lastly, fetching the values from a constant that holds a reference to an array
-requires the parentheses again, and the de-referencing construct:
+Note, fetching the values from a constant that holds a reference to an array
+also requires the parentheses again, and the de-referencing construct:
 
 <code lang="perl">
 say join ', ', @{ PLANETS() };
