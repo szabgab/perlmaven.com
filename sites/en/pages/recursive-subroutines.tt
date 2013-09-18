@@ -185,7 +185,7 @@ as a parameter to the script.
 
 Let's see another approach that might help further see how the recursion works.
 
-<h2>Top down approach</hl>
+<h2>Top down approach</h2>
 
 In this approach we start by creating a subroutine called <hl>traverse()</hl> that
 can get the name of a directory or a file and print it out.
