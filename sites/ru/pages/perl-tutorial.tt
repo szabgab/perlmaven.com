@@ -114,8 +114,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<a href="/here-documenty">Here-документы</a>
 </li>
 <li>
-	<span href="/scalar-variables">Скалярные переменные</span>
-	(<a href="http://perlmaven.com/scalar-variables">Scalar variables</a>)
+	<a href="/scalarnye-peremennye">Скалярные переменные</a>
 </li>
 <li>
 	<span href="/comparing-scalars-in-perl">Сравнение скаляров</span>

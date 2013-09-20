@@ -1,5 +1,5 @@
 =title Скалярные переменные
-=timestamp 2013-04-20T17:45:56
+=timestamp 2013-09-20T10:00:01
 =indexes strict, my, undef, say, +, x, ., sigil, $, @, %, FATAL warnings
 =status show
 =original scalar-variables
@@ -212,49 +212,45 @@ say $z x $y;        # 222
 
 В каком-то смысле это совершеннейший прозвол, но так это работает, так что мы живем с этим.
 
-
-The above code will also generate a warning on the standard error channel (<hl>STDERR</hl>):
+Код выше также выдаст предупреждение в стандартный канал ошибок (<hl>STDERR</hl>):
 
 <code>
 Argument "3.14 is pi" isn't numeric in addition(+) at example.pl line 10.
 </code>
 
-assuming you used <b>use warnings</b> which is highly recommended.
-Using it will help you notice when something is not exactly as expected.
-Hopefully the result of <hl>$x + $y</hl> is now clear.
+в случае, если вы использовали <b>use warnings</b>, что настоятельно рекомендуется. Использование
+предупреждений поможет заметить, если что-то пойдет не совсем так, как предполагалось. Надеюсь,
+результат выполнения <hl>$x + $y</hl> теперь вполне ясен.
 
-<h2>Background</h2>
+<h2>За кадром</h2>
 
-To be sure, perl did not convert <hl>$y</hl> to 3.14. It just used the numerical
-value for the addition.
-This probably explains the result of <hl>$z . $y</hl> as well.
-In that case perl is using the original string value.
+На всякий случай, perl не конвертирует <hl>$y</hl> в 3.14, он просто использует числовое значение
+для сложения. Думаю, это объясняет и результат <hl>$z . $y</hl>. В этом случае perl использует 
+исходное строковое значение.
 
-You might wonder why <hl>$z x $y</hl> shows 222 while we had 3.14 on the right hand side,
-but apparently perl can only repeat a string along whole numbers... In the operation
-perl silently rounds the number on the right hand side. (If you are really into
-deep thinking, you can recognize that the "number" context mentioned earlier has actually
-several sub-contexts, one of them is "integer" context. In most cases perl does what
-would seem "the right thing" for most people who are not programmers.)
+Возможно, вы удивлены, что <hl>$z x $y</hl> выдает 222, хотя справа у нас 3.14. Дело в том, что perl
+может повторить строку только целое число раз... В этой операции perl молча округляет число справа.
+(Если задуматься, можно понять, что "числовой" контекст, о котором шла речь раньше, на самом деле
+включает в себя несколько подконтекстов, один из которых - "целочисленный". В большинстве случаев
+perl делает то, что подсказывает здравый смысл большинству людей-непрограммисов)
 
-Not only that, but we don't even see the warning of the
-"partial string to number" conversion that we saw in the case of <hl>+</hl>.
+Кроме того, мы даже не видим предупреждения "partial string to number conversion", как в случае с 
+<hl>+</hl>.
 
-This is not because the difference in the operator. If we comment out the addition
-we will see the warning on this operation. The reason for the lack of a second warning
-is that when perl generated the numerical value of the string <hl>"3.14 is pi"</hl> it
-also stored it in a hidden pocket of the <hl>$y</hl> variable. So effectively <hl>$y</hl>
-now holds both a string value and a number value, and will use the right one in any
-new operation avoiding the conversion.
+Это не из-за другого оператора. Если закомментировать сложение, мы увидим это предупреждение уже на
+этой операции. Причина отсутствия второго предупреждения в том, что когда perl создал числовое 
+значение строки <hl>"3.14 is pi"</hl>, он сохранил его в потайном кармане переменной <hl>$y</hl>.
+Так что по сути <hl>$y</hl> с тех пор имеет и строковое, и числовое значение, и нужное будет 
+использоваться в соответствующие моменты уже без преобразования.
 
-There are three more things I'd like to address. One is the behavior of a variable with
-<hl>undef</hl> in it, the other one is <b>fatal warnings</b> and the third one is avoiding
-the automatic "string to number conversion".
+Есть еще три вещи, которые я хотел бы упомянуть. Первая это поведение переменной со значением 
+<hl>undef</hl>, вторая - <b>fatal warnings</b>, и третья - как избежать автоматического перевода
+строк в числа.
 
 <h2>undef</h2>
 
-If in a variable I have <hl>undef</hl> which most people would refer to as "nothing", it can still be used.
-In numerical context it will act as 0 in string context it will act as the empty string:
+Если у меня в переменной содержится <hl>undef</hl>, что для большинства значит "ничего", ее все 
+равно можно использовать. В числовом контексте она будет 0, а в строковом - пустой строкой:
 
 <code lang="perl">
 use strict;
@@ -275,7 +271,7 @@ if (defined $y) {
 }
 </code>
 
-With two warnings:
+С двумя предупреждениями:
 
 <code>
 Use of uninitialized value $y in addition (+) at example.pl line 9.
@@ -283,35 +279,36 @@ Use of uninitialized value $y in addition (+) at example.pl line 9.
 Use of uninitialized value $y in concatenation (.) or string at example.pl line 10.
 </code>
 
-As you can see the variable is still <hl>undef</hl> at the end and thus the conditional
-will print "NOT".
-
+Как можно видеть, в конце скриппта переменная все еще <hl>undef</hl>, так что условное выражение 
+выдаст "NOT".
 
 <h2>Fatal warnings</h2>
 
-The other thing is that some people prefer that the application will throw a
-hard exception instead of the soft warning. If that's your thing, you could change the beginning of the script and write
+Второе, о чем я хотел сказать - некоторые предпочитают, чтобы приложение выбрасывало жесткое 
+исключение вместо мягкого предупреждения. Если вы тоже исповедуете этот принцип, в начале скрипта
+можно написать
 
 <code lang="perl">
 use warnings FATAL => "all";
 </code>
 
-Having that in the code, the script will print the number 3, and then throw an exception:
+С этим скрипт выведет число 3, а затем выбросит исключение:
 
 <code>
 Use of uninitialized value $y in addition (+) at example.pl line 9.
 </code>
 
-This is the same message as was the first warning, but this time the script stops running.
-(Unless, of course the exception is caught, but we'll talk about that another time.)
+Это то же сообщение, которое раньше было предупреждением, но теперь после этого выполнение скрипта
+останавливается. (Если, конечно, исключение не было поймано, но об этом мы поговорим в другой раз.)
 
-<h2>Avoiding the automatic string to number conversion</h2>
+<h2>Избежание автоматического перевода строки в число</h2>
 
-If you would like to avoid the automatic conversion of strings when there is no exact conversion,
-you could check if the string looks like a number when you receive it from the outside world.
+Если вам не хочется, чтобы строки автоматически переводились в числа там, где невозможен полный 
+перевод, вы можете проверять, выглядит ли строка как число, когда получаете ее из внешнего мира.
 
-For this we are going to load the module <a href="https://metacpan.org/module/Scalar::Util">Scalar::Util</a>,
-and use the subroutine <hl>looks_like_number</hl> it supplies.
+Для этого нам нужно подгрузить модуль 
+<a href="https://metacpan.org/module/Scalar::Util">Scalar::Util</a> и содержащуюся в нем 
+подпрограмму <hl>looks_like_number</hl>.
 
 <code lang="perl">
 use strict;
@@ -338,10 +335,8 @@ if (defined $y) {
 </code>
 
 
-<h2>operator overloading</h2>
+<h2>перегрузка операторов</h2>
 
-Finally, you could actually have operator overloading in which case
-the operands would tell what the operators should do, but let's
-leave that as an advanced topic.
-
+Наконец, можно перегрузить операторы так, чтобы операнды указывали, что должен делать оператор, но 
+эту тему мы оставим в качестве продвинутой.
 
