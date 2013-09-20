@@ -11,7 +11,7 @@
 =abstract start
 
 There are several ways to traverse a directory tree in Perl. It can be done with the function
-calls <hl>opendir</hl> and <hl>readdir</hl> that are part of the language.
+calls <hl>opendir</hl> and <hl>readdir</hl> that are part of the Perl language.
 It can be done using the <hl>File::Find</hl> module that comes with Perl.
 
 In this article we'll look at <a href="https://metacpan.org/module/Path::Iterator::Rule">Path::Iterator::Rule</a>.
@@ -20,8 +20,13 @@ In this article we'll look at <a href="https://metacpan.org/module/Path::Iterato
 
 <h2>Overview: The Rule, all and iter</h2>
 
-In order to use the module, first we need to create a set of rules, and then we can use those rules
-to list the file-system elements that match the rules in a certain list of directories.
+In order to use the module we need two things:
+
+<ol>
+<li>First we create a Path::Iterator::Rule object representing a set of rules.</li>
+<li>Then we can use that object to list the file-system elements in a certain list of directories.</li>
+</ol>
+
 The first step is to create the rules:
 
 <code lang="perl">
@@ -29,7 +34,7 @@ use Path::Iterator::Rule;
 my $rule = Path::Iterator::Rule->new;
 </code>
 
-This rule has no restrictions yet, we'll see those later. It will return every
+This rule object has no restrictions yet, we'll see those later. It will return every
 item in the file-system. Once we have the <hl>$rule</hl> object, we use that to traverse the directories.
 The traversing can be done in two ways:
 
@@ -68,8 +73,8 @@ Let's see two basic examples for the above two cases. We expect the user to
 provide the list of directories on the command line. Hence we pass <hl>@ARGV</hl>
 as the list of directories, to the <hl>all</hl> and <hl>iter</hl> methods.
 
-The first example uses the <hl>all</hl> method collecting all the file-system
-elements in the memory:
+The first example uses the <hl>all</hl> method to collect all the
+matching file-system elements in the memory:
 
 <code lang="perl">
 use strict;
@@ -88,7 +93,7 @@ for my $file ( $rule->all( @ARGV ) ) {
 </code>
 
 In the second example, we use the <hl>iter</hl> method to create an iterator,
-and then call it repeatedly to get all the file-system elements:
+and then call it repeatedly to get all the matching file-system elements:
 
 <code lang="perl">
 use strict;
@@ -143,7 +148,7 @@ We can even combine the two:
 $rule->size("< 1024")->size("> 1000");
 </code>
 
-In general we can <b>stack rules on on the other</b>
+In general we can <b>stack rules on the other</b>
 
 <h3>file-name</h3>
 
