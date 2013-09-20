@@ -158,7 +158,7 @@ print "after";
 The output might look like this:
 
 <code>
-Slight porblem here.
+Slight problem here.
 beforeafter
 </code>
 
@@ -177,7 +177,7 @@ print "after";
 </code>
 
 <code>
-beforeSlight porblem here.
+beforeSlight problem here.
 after
 </code>
 
@@ -193,7 +193,7 @@ And the output looks even better:
 
 <code>
 before
-Slight porblem here.
+Slight problem here.
 after
 </code>
 
