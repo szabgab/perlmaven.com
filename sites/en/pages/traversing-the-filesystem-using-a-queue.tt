@@ -1,6 +1,6 @@
 =title Traversing the filesystem - using a queue
 =timestamp 2013-09-21T16:30:01
-=indexes files
+=indexes queue, opendir, readdir
 =status show
 =books beginner_book
 =author szabgab
