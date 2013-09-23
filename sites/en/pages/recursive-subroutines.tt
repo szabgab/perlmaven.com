@@ -292,6 +292,11 @@ returns if that condition was met. This is called the <hl>halting condition</hl>
 or <hl>stop condition</hl>. Then at some later point in the function it calls
 itself with a different set of parameters than it was called earlier.
 
+<h2>Other solution using a queue</h2>
+
+Besides using recursion this problem can also be solved by 
+<a href="/traversing-the-filesystem-using-a-queue">using a queue</a>.
+
 
 And remember, if you really want to
 <a href="/finding-files-in-a-directory-using-perl">traverse a directory tree</a>,
