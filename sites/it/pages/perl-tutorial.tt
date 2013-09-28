@@ -47,6 +47,7 @@
 <li><a href="/scalar-variables">Variabili scalari</a></li>
 <li><a href="/comparing-scalars-in-perl">Confronto tra scalari</a></li>
 <li><a href="/string-functions-length-lc-uc-index-substr">Funzioni su stringhe: length, lc, uc, index, substr</a></li>
+<li><a href="/number-guessing-game">Indovina un Numero (rand, int)</a></li>
 </ol>
 
 <b>Liste e Array</b>
