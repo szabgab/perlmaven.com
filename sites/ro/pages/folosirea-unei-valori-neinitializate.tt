@@ -1,5 +1,5 @@
 =title Folosirea unei valori neinițializate
-=timestamp 2012-09-05T21:45:56
+=timestamp 2013-09-29T21:45:56
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
 =original use-of-uninitialized-value
