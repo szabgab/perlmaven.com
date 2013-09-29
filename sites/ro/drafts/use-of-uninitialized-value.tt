@@ -1,4 +1,4 @@
-=title Folosirea unei valori neiniţializate
+=title Folosirea unei valori neinițializate
 =timestamp 2012-09-05T21:45:56
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
@@ -13,31 +13,33 @@
 =abstract start
 
 Acesta este una dintre cele mai comune avertizări (în lb. en:
-warning) pe care le întâlneşti când rulezi cod Perl.
+warning) pe care le întâlnești când rulezi cod Perl.
 
-Este o avertizare, nu va opri execuţia programului şi este generată
-numai dacă avertizările sunt pornite. Ceea ce este recomandat.
+Este doar o avertizare, nu va opri execuția programului și este
+generată numai dacă avertizările sunt activate.  Ceea ce este
+recomandat.
 
-Cea mai uzuală cale de a porni avertizările este prin includerea unei
+Cea mai uzuală cale de a activa avertizările este prin includerea unei
 comenzi <hl>use warnings;</hl> la începutul scriptului sau al
 modulului.
 
 =abstract end
 
 Calea mai veche metodă este prin adăugarea fanionului <hl>-w</hl> pe
-linia "sh-bang". În mod uzual acesta arată astfel:
+linia "sh-bang".  În mod uzual acesta arată astfel:
 
 <hl>#!/usr/bin/perl -w</hl>
 
-Sunt câteva diferenţe, dar cum <hl>use warnings</hl> este disponibilă de 12 ani,
-nu sunt motive pentru a o evita. Cu alte cuvinte:
+Sunt şi câteva diferențe, dar cum <hl>use warnings</hl> este
+disponibilă de 12 ani, nu sunt motive pentru a o evita. Cu alte
+cuvinte:
 
-Întodeauna <hl>use warnings;</hl>!
+Întotdeauna <hl>use warnings;</hl>!
 
 Să ne întoarcem la mesajul de avertizare pe care am dorit să-l
 explicăm.
 
-<h2>O explicaţie rapidă</h2>
+<h2>O explicație rapidă</h2>
 
 <code>
 Use of uninitialized value $x in say at perl_warning_1.pl line 6.
@@ -50,8 +52,8 @@ Adică nu a avut niciodată o valoare (alta decât undef), sau la un
 moment dat a primit valoarea <hl>undef</hl>.
 
 Ar trebui să examinezi liniile de cod unde variabila a primit ultima
-dată o nouă valoare sau ar trebui să încerci să înţelegi de ce acea
-bucăţică de cod nu a mai ajuns să fie executată.
+dată o nouă valoare sau ar trebui să încerci să înțelegi de ce acea
+bucățică de cod nu a mai ajuns să fie executată.
 
 <h2>Un exemplu simplu</h2>
 
@@ -66,14 +68,15 @@ my $x;
 say $x;
 </code>
 
-Perl este foarte amabil, îţi spune care fişier a generat avertizarea
-şi la ce linie.
+Perl este foarte amabil, îți spune care fișier a generat avertizarea
+și la ce linie.
 
 <h2>Doar o avertizare</h2>
 
 
-Aşa cum am menţionat, acesta este doar o avertizare. Dacă scriptul are
-mai multe comenzi după cea cu <hl>say</hl>, acestea vor fi executate:
+Așa cum am mai menționat, acesta este doar o avertizare. Dacă scriptul
+are mai multe comenzi după cea cu <hl>say</hl>, acestea vor fi
+executate:
 
 <code lang="perl">
 use warnings;
@@ -94,10 +97,10 @@ Use of uninitialized value $x in say at perl_warning_1.pl line 6.
 42
 </code>
 
-<h2>Confusing output order</h2>
+<h2>Ordine derutantă</h2>
 
-Beware though, if your code has print statements before the line
-generating the warning, like in this example:
+Atenție însă, dacă codul are comenzi de printare înainte de linia care
+generează avertizarea, așa ca în exemplul următor:
 
 <code lang="perl">
 use warnings;
@@ -111,7 +114,7 @@ $x = 42;
 say $x;
 </code>
 
-the result might be confusing.
+rezultatul poate fi derutant.
 
 <code>
 Use of uninitialized value $x in say at perl_warning_1.pl line 7.
@@ -119,23 +122,23 @@ OK
 42
 </code>
 
-Here, 'OK', the result of the <hl>print</hl> is seen <b>after</b>
-the warning, even though it was called <b>before</b> the
-code that generated the warning.
+Aici, 'OK', rezultatul comenzii <hl>print</hl> este văzut <b>după</b>
+mesajul de avertizare, chiar dacă comanda a fost
+executată <b>înainte</b> de codul care a generat avertizarea.
 
-This strangeness is the result of <hl>IO buffering</hl>.
-By default Perl buffers STDOUT, the standard output channel,
-while it does not buffer STDERR, the standard error channel.
+Acestă ciudățenie este rezultatul a <hl>IO buffering</hl>. În mod
+implicit Perl folosește o zonă de memorie tampon pentru STDOUT, ieșirea
+standard, dar nu și pentru STDERR, ieșirea de eroare standard.
 
-So while the word 'OK' is waiting for the buffer to be flushed,
-the warning message already arrives to the screen.
+Adică, în timp ce cuvântul 'OK' așteaptă ca memoria tampon să fie
+golită, mesajul de eroare ajunge deja pe ecran.
 
-<h2>Turning off buffering</h2>
+<h2>Dezactivare memorie tampon</h2>
 
-In order to avoid this you can turn off the buffering of STDOUT.
+Pentru a evita acesta poți să dezactivezi memoria tampon pentru STDOUT.
 
-This is done by the following code: <hl>$| = 1;</hl>
-at the beginning of the script.
+Aceasta se face prin folosirea comenzii: <hl>$| = 1;</hl> la începutul
+scriptului;
 
 
 <code lang="perl">
@@ -157,10 +160,10 @@ OKUse of uninitialized value $x in say at perl_warning_1.pl line 7.
 42
 </code>
 
-(The warning is on the same line as the <b>OK</b> because we have not printed a newline
-<hl>\n</hl> after the OK.)
+(Avertizare este pe aceeași linie cu <b>OK</b> pentru că nu am printat
+un caracter de linie nouă <hl>\n</hl> după OK.)
 
-<h2>The unwanted scope</h2>
+<h2>Vizibilitate nedorită</h2>
 
 <code lang="perl">
 use warnings;
@@ -176,13 +179,19 @@ if ($y) {
 say $x;
 </code>
 
-This code too produces <hl>Use of uninitialized value $x in say at perl_warning_1.pl line 11.</hl>
+Și acest cod produce <hl>Use of uninitialized value $x in say at
+perl_warning_1.pl line 11.</hl>
 
-I have managed to make this mistake several times. Not paying attention I used <hl>my $x</hl>
-inside the <hl>if</hl> block, which meant I have created another $x variable,
-assigned 42 to it just to let it go out of the scope at the end of the block.
-(The $y = 1 is just a placeholder for some real code and some real condition.
-It is there only to make this example a bit more realistic.)
+Am reușit să fac acestă greșeală de mai multe ori.  Nu am fost atent
+și am folosit <hl>my $x</hl> în interiorul blocului <hl>if</hl>, ceea
+ce a însemnat că am creat o altă variabilă $x, i-am dat valoarea 42
+doar pentru a lăsa-o apoi să iasă din zona de vizibilitate (en: out of
+the scope) la sfârșitul blocului.
 
-There are of course cases when I need to declare a variable inside an if block, but not always.
-When I do that by mistake it is painful to find the bug.
+(Comanda $y = 1 este doar un substituent pentru cod real și pentru
+condiții reale.  Este folosit numai pentru a face ca acest exemplu să
+arate un pic mai realist.)
+
+Sunt, bineînțeles, cazuri în care este nevoie să declar variabile în
+interiorul unui bloc, dar nu întotdeauna.  Când se întâmplă din
+greșeală, este greu de depistat eroarea.
