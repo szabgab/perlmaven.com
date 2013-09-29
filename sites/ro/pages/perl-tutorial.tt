@@ -75,7 +75,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>Mesaje de eroare comune și atenționări (warnings)<br />
 <ul>
 <li><a href="/simbolul-global-necesita-nume-de-pachet-explicit">Simbolul global necesită un nume de pachet explicit</a></li>
-<li><a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a></li>
+<li><a href="/folosirea-unei-valori-neinitializate">Folosirea unei valori neinițializate</a></li>
 <li><a href="http://perlmaven.com/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
 <li><a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
 <li><a href="http://perlmaven.com/unknown-warnings-category">Unknown warnings category</a></li>
