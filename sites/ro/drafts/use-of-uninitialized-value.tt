@@ -1,53 +1,61 @@
-=title Use of uninitialized value
+=title Folosirea unei valori neiniţializate
 =timestamp 2012-09-05T21:45:56
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
+=original use-of-uninitialized-value
 =books beginner_book
 =author szabgab
+=translator stefansbv
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-This is one of the most common warning you will encounter while running Perl code.
+Acesta este una dintre cele mai comune avertizări (în lb. en:
+warning) pe care le întâlneşti când rulezi cod Perl.
 
-It is a warning, it won't stop your script from running and it is only generated if
-warnings were turned on. Which is recommended.
+Este o avertizare, nu va opri execuţia programului şi este generată
+numai dacă avertizările sunt pornite. Ceea ce este recomandat.
 
-The most common way to turn on warnings is by including a <hl>use warnings;</hl> statement
-at the beginning of your script or module.
+Cea mai uzuală cale de a porni avertizările este prin includerea unei
+comenzi <hl>use warnings;</hl> la începutul scriptului sau al
+modulului.
 
 =abstract end
 
-The older way is adding a <hl>-w</hl> flag on the sh-bang line. Usually looks like this
-as the fist line of your script:
+Calea mai veche metodă este prin adăugarea fanionului <hl>-w</hl> pe
+linia "sh-bang". În mod uzual acesta arată astfel:
 
 <hl>#!/usr/bin/perl -w</hl>
 
-There are certain differences, but as <hl>use warnings</hl> is available for 12 years now,
-there is no reason to avoid it. In other words:
+Sunt câteva diferenţe, dar cum <hl>use warnings</hl> este disponibilă de 12 ani,
+nu sunt motive pentru a o evita. Cu alte cuvinte:
 
-Always <hl>use warnings;</hl>!
+Întodeauna <hl>use warnings;</hl>!
 
+Să ne întoarcem la mesajul de avertizare pe care am dorit să-l
+explicăm.
 
-Let's go back to the actual warning I wanted to explain.
-
-<h2>A quick explanation</h2>
+<h2>O explicaţie rapidă</h2>
 
 <code>
 Use of uninitialized value $x in say at perl_warning_1.pl line 6.
 </code>
 
-This means the variable <hl>$x</hl> has no value (its value is the special value <hl>undef</hl>).
-Either it never got a value, or at some point <hl>undef</hl> was assigned to it.
+Acesta înseamnă că variabile <hl>$x</hl> nu are valoare (valoarea ei
+este de fapt valoarea specială <hl>undef</hl>).
 
-You should look for the places where the variable got the last assignment,
-or you should try to understand why that piece of code has never been executed.
+Adică nu a avut niciodată o valoare (alta decât undef), sau la un
+moment dat a primit valoarea <hl>undef</hl>.
 
-<h2>A simple example</h2>
+Ar trebui să examinezi liniile de cod unde variabila a primit ultima
+dată o nouă valoare sau ar trebui să încerci să înţelegi de ce acea
+bucăţică de cod nu a mai ajuns să fie executată.
 
-The following example will generate such warning.
+<h2>Un exemplu simplu</h2>
+
+Exemplul următor va genera o astfel de avertizare.
 
 <code lang="perl">
 use warnings;
@@ -58,12 +66,14 @@ my $x;
 say $x;
 </code>
 
-Perl is very nice, tells us which file generated the warning and on which line.
+Perl este foarte amabil, îţi spune care fişier a generat avertizarea
+şi la ce linie.
 
-<h2>Only a warning</h2>
+<h2>Doar o avertizare</h2>
 
-As I mentioned this is only a warning. If the script has more statements after that
-<hl>say</hl> statement, they will be executed:
+
+Aşa cum am menţionat, acesta este doar o avertizare. Dacă scriptul are
+mai multe comenzi după cea cu <hl>say</hl>, acestea vor fi executate:
 
 <code lang="perl">
 use warnings;
@@ -76,7 +86,7 @@ $x = 42;
 say $x;
 </code>
 
-This will print
+Acesta va printa
 
 <code>
 Use of uninitialized value $x in say at perl_warning_1.pl line 6.
@@ -176,7 +186,3 @@ It is there only to make this example a bit more realistic.)
 
 There are of course cases when I need to declare a variable inside an if block, but not always.
 When I do that by mistake it is painful to find the bug.
-
-
-
-
