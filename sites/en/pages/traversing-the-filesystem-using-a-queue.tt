@@ -69,7 +69,7 @@ sub traverse {
             next if $sub eq '.' or $sub eq '..';
             push @queue, "$thing/$sub";
         }
-        close $dh;
+        closedir $dh;
     }
     return;
 }
@@ -105,7 +105,7 @@ and add them to the end of the queue.
        next if $sub eq '.' or $sub eq '..';
        push @queue, "$thing/$sub";
    }
-   close $dh;
+   closedir $dh;
 </code>
 
 <h2>How can we know the queue will end?</h2>
