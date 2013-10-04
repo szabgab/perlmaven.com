@@ -77,7 +77,7 @@ Once it stopped I could hover over the <hl>$data</hl> variable and see the conte
 The next line <hl>my $ua = LWP::UserAgent->new( agent => 'Great Perl Agent' );</hl> creates the
 user agent. As the problem I encountered was in the formation of the POST request I did not want to
 debug this line either so I clicked on the <hl>Step Over</hl> button again. I could inspect
-the resulting object in <hl>$ua</a>, but the content was too big to be seen comfortably in
+the resulting object in <hl>$ua</hl>, but the content was too big to be seen comfortably in
 the the pop-up data inspector and I knew I'll need to check this variable often.
 So I clicked on the <hl>+</hl> of the <hl>Watch Expression: +</hl> in the top right corner and typed in
 <hl>$ua</hl>. It immediately showed the content in the right panel.
