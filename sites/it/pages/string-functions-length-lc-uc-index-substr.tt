@@ -1,4 +1,4 @@
-=Title Funzioni su stringhe: length, lc, uc, index, substr
+=title Funzioni su stringhe: length, lc, uc, index, substr
 =timestamp 2013-09-10T21:00:00
 =indexes length, lc, uc, index, substr, scalar
 =status show
