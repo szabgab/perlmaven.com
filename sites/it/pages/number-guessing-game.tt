@@ -1,6 +1,6 @@
 =title Indovina un Numero
 =timestamp 2013-09-28T16:00:00
-=indexes rand, random, int, integer
+=indexes rand, casuale, int, intero
 =status show
 =original number-guessing-game
 =books beginner_book
@@ -22,7 +22,7 @@ Per scrivere questo gioco abbiamo bisogno di introdurre due semplici argomenti t
 <b>Come generare numeri casuali in Perl</b> e
 <b>Come ottenere la parte intera di un numero</b>.
 
-<h2>Parte intera di un numero fraczionario</h2>
+<h2>Parte intera di un numero frazionario</h2>
 
 La funzione <hl>int()</hl> restituisce la parte intera del suo parametro:
 

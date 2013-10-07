@@ -39,7 +39,7 @@
 </ul>
 <li><a href="/conversione-automatica-o-cast-in-perl">Conversione automatica da stringa a numero</a></li>
 <li>Istruzioni condizionali: if</li>
-<li><a href="/valori-booleani-in-perl">Valori Booleani (vero e falso) in Perl</a></li>
+<li><a href="/boolean-values-in-perl">Valori Booleani (vero e falso) in Perl</a></li>
 <li>Operatori numerici e stringa</li>
 <li><a href="/undef-e-defined-in-perl">undef e defined in Perl</a></li>
 <li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Stringhe in Perl: quotate, interpolate e con escape</a></li>
@@ -48,6 +48,7 @@
 <li><a href="/comparing-scalars-in-perl">Confronto tra scalari</a></li>
 <li><a href="/string-functions-length-lc-uc-index-substr">Funzioni su stringhe: length, lc, uc, index, substr</a></li>
 <li><a href="/number-guessing-game">Indovina un Numero (rand, int)</a></li>
+<li><a href="/while-loop">ciclo while in Perl</a></li>
 </ol>
 
 <b>Liste e Array</b>
