@@ -165,6 +165,31 @@ We will need a few more packages, so let's install those as well:
 root@s12:~# aptitude install make gcc htop vim
 </code>
 
+In order to have a better security model we are going to run Starman our "application server" as a separate user we call <hl>starman</hl>.
+(We could have called it foobar, or any other name.)
+In order to create the user we run:
+
+<code>
+root@s12:~# adduseri --gecos '' --disabled-password  starman
+</code>
+
+It will create the user <hl>starman</hl> and the only way to to access it will be via the user <hl>root</hl>.
+You can now switch to the <hl>starman</hl> user by typing:
+
+<code>
+root@s12:~# su - starman
+</code>
+
+Please note how the prompt changes from <hl>root@s12:~#</hl> to <hl>starman@s12:~$</hl>.
+
+To return to the root user, just <hl>exit</hl> from the current user:
+
+<code>
+starman@s12:~$ exit
+</code>
+
+
+
 <h2 id="perlbrew">Brewing Perl</h2>
 
 If you run <b>perl -v</b> you will see the server already has perl installed. It is usually referred to as <b>system perl</b>.
@@ -172,9 +197,11 @@ As we are going to install all kinds of modules from CPAN some of those might in
 So the usual recommendation is to build a separate perl installation and use that for the application. That's what we are
 going to do. We will us <a href="http://perlbrew.pl/">Perlbrew</a> for this to make the operation smooth.
 
-Let's follow the instructions on the <a href="http://perlbrew.pl/">Perlbrew</a> web site and run:
+Let's switch to the <hl>starman</hl> user and then
+follow the instructions on the <a href="http://perlbrew.pl/">Perlbrew</a> web site and run:
 
 <code>
+root@s12:~# su - starman
 starman@s12:~$ \curl -L http://install.perlbrew.pl | bash
 </code>
 
