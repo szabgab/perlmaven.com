@@ -348,6 +348,30 @@ root@s12:~# ln -s /home/starman/starman.pl /etc/init.d/starman
 root@s12:~# service starman start
 </code>
 
+
+In order to make sure Starman will start when the system boot we should add it to the boot scrips
+along with nginx. This is done by creating some more symbolic links.
+
+This will list all the rc-directories where Nginx is listed. We should add the same set of
+links to Starman
+
+<code>
+root@s12:~# find /etc/ | grep rc| grep nginx | xargs ls -l
+</code>
+
+These commands will creat the symbolic links:
+
+<code>
+root@s12:~# ln -s ../init.d/starman /etc/rc0.d/K20starman
+root@s12:~# ln -s ../init.d/starman /etc/rc1.d/K20starman
+root@s12:~# ln -s ../init.d/starman /etc/rc2.d/S20starman
+root@s12:~# ln -s ../init.d/starman /etc/rc3.d/S20starman
+root@s12:~# ln -s ../init.d/starman /etc/rc4.d/S20starman
+root@s12:~# ln -s ../init.d/starman /etc/rc5.d/S20starman
+root@s12:~# ln -s ../init.d/starman /etc/rc6.d/K20starman
+</code>
+
+
 Once you launched starman you can access the web application on the same hostname but on port 5000:
 
 http://1.2.3.4:5000
