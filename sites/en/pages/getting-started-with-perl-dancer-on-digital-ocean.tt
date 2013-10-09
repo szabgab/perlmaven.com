@@ -1,7 +1,7 @@
 =title Getting started with Perl Dancer on Digital Ocean
-=timestamp 2013-03-15T07:30:01
-=indexes Dancer
-=status draft
+=timestamp 2013-10-09T11:40:01
+=indexes Dancer, nginx, Starman, Digital Ocean, VPS
+=status show
 =author szabgab
 =archive 1
 =comments 1
@@ -62,7 +62,7 @@ key instead of sending you a password.
 <h2 id="basic">Basic configuration of the server</h2>
 
 In the e-mail you will see instructions how to ssh to the server.
-If you are a command line user, you can use the <b>ssh root@1.2.3.4</b> comman, with
+If you are a command line user, you can use the <b>ssh root@1.2.3.4</b> command, with
 the IP address of your server.
 
 If you run Windows, you will need to install an SSH client. I'd recommend installing
@@ -75,7 +75,7 @@ you to a window asking for <b>Username:</b>. There you type in <b>root</b> and p
 It will then ask you for <b>Password:</b> and you type in the password you got in the e-mail.
 
 The first thing we need to do is to change the password. So type in <b>passwd</b> and press ENTER. It will
-ask for a password and then it will ask you to repeate it. Please give a long password that you can remember.
+ask for a password and then it will ask you to repeat it. Please give a long password that you can remember.
 Something like <b>The secret of a secure server</b> is probably a good password. If you also add some numbers
 and some strange characters, it will become even stronger.
 
@@ -129,7 +129,7 @@ Do you want to continue? [Y/n/?]
 
 If it asks questions about keeping the current version of various configuration files, you can usually just press ENTER. At this point this does not really matter.
 
-Once the upgrade has finished it is recommended to <b>reboot</b> the system. Type in <b>reboot</b>. As the machine restars this will disconnect
+Once the upgrade has finished it is recommended to <b>reboot</b> the system. Type in <b>reboot</b>. As the machine restarts this will disconnect
 you and you will need to connect to it via ssh (putty) again, after some time. (Maybe 30 sec?). Remember, you have changed the password!
 
 
@@ -258,7 +258,7 @@ also known as <hl>cpanm</hl>. Perlbrew has its own command to install cpan minus
 starman@s12:~$ perlbrew install-cpanm
 </code>
 
-Once that's intsall we can install the required modules:
+Once that's install we can install the required modules:
 
 <code>
 starman@s12:~$ cpanm Dancer2 Starman Daemon::Control
@@ -293,7 +293,7 @@ You can go on and further improve the application by following the
 <a href="/videos/getting-started-with-perl-dancer">Getting started with Perl Dancer</a> screencast,
 but for now we'll focus on configuring the server.
 
-So let's stop the development server by pressint <hl>Ctrl-C</hl> on the console.
+So let's stop the development server by pressing <hl>Ctrl-C</hl> on the console.
 
 <h2 id="starman">Configuring Starman</h2>
 
@@ -384,12 +384,12 @@ Now you can visit http://1.2.3.4  replacing this with the IP address of your mac
 <h2 id="domain">Connecting a domain name</h2>
 
 If you already have a domain name registered, then you only need to configure it to make sure
-both www.domain.com and domain.com resolvs to the IP address of your machine.
+both www.domain.com and domain.com resolves to the IP address of your machine.
 
 If you don't yet have one, you can <a href="https://iwantmyname.com/">register a domain name</a>
 and then configure it.
 
-No further changes are requred to your configuration for this.
+No further changes are required to your configuration for this.
 
 <h2>Further development</h2>
 
