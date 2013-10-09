@@ -85,7 +85,7 @@ Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 root@s12:~#
-<code>
+</code>
 
 Once we set the new password we need to update the packages on the system.
 A Linux distribution consists of thousands of separate packages.
@@ -160,6 +160,7 @@ address bar of your server: http://1.2.3.4/
 You will see <b>Welcome to nginx!</b> or some similar message.
 
 We will need a few more packages, so let's install those as well:
+
 <code>
 root@s12:~# aptitude install make gcc htop vim
 </code>
