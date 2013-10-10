@@ -195,7 +195,7 @@ starman@s12:~$ exit
 If you run <b>perl -v</b> you will see the server already has perl installed. It is usually referred to as <b>system perl</b>.
 As we are going to install all kinds of modules from CPAN some of those might interfere with modules used by the system.
 So the usual recommendation is to build a separate perl installation and use that for the application. That's what we are
-going to do. We will us <a href="http://perlbrew.pl/">Perlbrew</a> for this to make the operation smooth.
+going to do. We will use <a href="http://perlbrew.pl/">Perlbrew</a> for this to make the operation smooth.
 
 Let's switch to the <hl>starman</hl> user and then
 follow the instructions on the <a href="http://perlbrew.pl/">Perlbrew</a> web site and run:
