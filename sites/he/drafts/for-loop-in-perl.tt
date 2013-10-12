@@ -1,4 +1,4 @@
-=title The for loop in Perl
+=title לולאת for  בפרל
 =timestamp 2013-03-26T08:46:13
 =indexes for, foreach, loop, infinite loop
 =status show
@@ -12,28 +12,24 @@
 
 =abstract start
 
-In this part of the <a href="/perl-tutorial">Perl Tutorial</a> we are going to talk
-about the <b>for loop in Perl</b>. Some people also call it the <b>C-style for loop</b>,
-but this construct is actually available in many programming languages.
+בחלק זה של  <a href="/perl-tutorial">המדריך לפרל</a> אנחנו הולכים לדבר על 
+ <b>לולאת ה-for ב-Perl</b>. יש המכנים אותה <b>לולאת for  בסגנון C</b>,אך למעשה מבנה זה קיים בשפות תיכנות רבות.
 
 =abstract end
 
-<h2>Perl for loop</h2>
+<h2>לולאת for  בפרל</h2>
 
-The <b>for</b> keyword in Perl can work in two different ways.
-It can work just as a <b>foreach</b> loop works and it can act
-as a 3-part C-style for loop. It is called C-style though
-it is available in many languages.
+מילת המפתח  <b>for</b>  בפרל יכולה לשמש בשני אופנים שונים.
+היא יכולה לפעול כמו לולאת<b>foreach</b>והיא יכול לפעול כמו לולאה עם  3 פרמטרים כמו ב-C. היא נקראת לולאה בסגנון C, או C-style למרות שהיא קיימת בשפות תיכנות רבות.
 
-I'll describe how this works although I prefer to write the <hl>foreach</hl>
-style loop as described in the section about <a href="/perl-arrays">perl arrays</a>.
+אתאר כאן את השימוש הזה, למרות שאני מעדיף לכתוב לולאות <hl>foreach</hl>
+כפי שהן מתוארות בחלק על  <a href="/perl-arrays">מערכים הפרל</a>.
 
-The two keywords <hl>for</hl> and <hl>foreach</hl> can be used as synonyms.
-Perl will work out which meaning you had in mind.
+ניתן להשתמש בשתי מילות המפתח <hl>for</hl> ו כמילים נרדפות
+פרל כבר תבין למה התכוונתם
 
-The <b>C-style for loop</b> has 3 parts in the controlling section.
-In general it looks like this code, though you can omit any of
-the 4 parts.
+ <b>ללולאה בסגנון C</b> יש שלושה חלקים בפתיחת הלולאה.
+כללית זה נראה כך, אך ניתן להשמיט כל אחד מארבעת החלקים.
 
 <code lang="perl">
 for (INITIALIZE; TEST; STEP) {
@@ -41,7 +37,7 @@ for (INITIALIZE; TEST; STEP) {
 }
 </code>
 
-As an example see this code:
+למשל קטע הקוד הבא:
 
 <code lang="perl">
 for (my $i=0; $i <= 9; $i++) {
@@ -49,16 +45,15 @@ for (my $i=0; $i <= 9; $i++) {
 }
 </code>
 
-The INITIALIZE part will be executed once when the execution reaches that point.
+החלק INITIALIZE יבוצע פעם אחת כשההרצה תגיע לאותה נקודה.
 
-Then, immediately after that the TEST part is executed. If this is false,
-the whole loop is skipped. If the TEST part is true then the BODY is executed followed by
-the STEP part.
+מייד לאחר מכן יבוצע החלק TEST. אם הוא false,
+אז מדלגים על כל הלולאה. אם החלק  TEST הוא true אז הקוד ב-BODY ומייד אחריו מבוצע החלק STEP.
 
-(For the real meaning of TRUE and FALSE, check the <a href="/boolean-values-in-perl">boolean values in Perl</a>.)
+להבנת משמעותם של true ו-false, קיראו את ( <a href="/boolean-values-in-perl">ערכים בוליאנים בפרל</a>.)
 
-Then comes the TEST again and it goes on and on, as long as the TEST executes to some true value.
-So it looks like this:
+אז שוב מגיע ה-TEST וחוזר חלילה, כל זמן שה-TEST מחזיר ערך כלשהו שהוא true.
+כך שהלולאה נראית כך:
 
 <code>
 INITIALIZE
@@ -79,8 +74,8 @@ TEST
 
 <h2>foreach</h2>
 
-The above loop - going from 0 to 9 can be also written in a <b>foreach loop</b>
-and I think the intention is much clearer:
+ניתן לכתוב את אותה לולאה שראינו - לולאה שהולכת מ-0 עד 9, כ- <b> לולאתforeach /b>
+ונראה לי שהמשמעות היא הרבה יותר ברורה:
 
 <code lang="perl">
 foreach my $i (0..9) {
@@ -88,8 +83,8 @@ foreach my $i (0..9) {
 }
 </code>
 
-As I wrote the two are actually synonyms so some people use the <hl>for</hl> keyword
-but write <b>foreach style loop</b> like this:
+כפי שכתבתי, הן בעצם מילות מפתח נרדפות, ולכן יש מתכנתים שכותבים  <hl>for</hl> 
+אבל את הלולאה הם כותבים בסגנן של  <b>לולאת foreach </b> כמו כאן:
 
 <code lang="perl">
 for my $i (0..9) {
@@ -97,23 +92,22 @@ for my $i (0..9) {
 }
 </code>
 
-<h2>The parts of the perl for loop</h2>
+<h2>החלקים בלולאת for בפרל</h2>
 
-INITIALIZE is of course to initialize some variable. It is executed exactly once.
+INITIALIZE משמש כמובן לאיתחול משתנים. חלק זה מבוצע בדיוק פעם אחת.
 
-TEST is some kind of boolean expression that tests if the loop should stop or if it should go on.
-It is executed at least once. TEST is executed one more time than either BODY or STEP are.
+TEST הוא ביטוי בולאני כלשהו שבודק אם הלולאה צריכה להמשיך או להפסיק.
+חלק זה מבוצע לפחות פעם אחת. TEST מבוצע פעם אחת יותר מ-BODY או מ- STEP .
 
-BODY is a set of statements, usually that's what we want to do repeated
-times though in some cases an empty BODY can also makes sense.
-Well, probably all those cases can be rewritten in some nice way.
+BODY הוא אוסף שורות קוד, לרוב זה הפעולה שאנחנו רוצים לעשות מספר פעמים. קיימים גם מקרים ש-BODY ריק עשוי להיות הגיוני.
+כנראה שניתן לשתב את כל האפשרויות האלו בצורה יפה יותר.
 
-STEP is another set of action usually used to increment or decrement some kind of an index.
-This too can be left empty if, for example, we make that change inside the BODY.
+STEP הוא אוסף פעולות נוסף שמשמש להגדיל או להקטין אינדקס כלשהו.
+ניתן להשאיר גם את החלק הזה ריק, למשל במקרה שעושים את השינויים הנחוצים כחלק מה-BODY.
 
-<h2>Infinite loop</h2>
+<h2>לולאה אינסופית</h2>
 
-You can write an infinite loop using the <b>for loop</b>:
+ניתן לכתוב לולאה אינסופית באמצעות  <b> לולאתfor </b>:
 
 <code lang="perl">
 for (;;) {
@@ -121,7 +115,7 @@ for (;;) {
 }
 </code>
 
-People usually write it with a <hl>while</hl> statement such as:
+לולאות כאלו נכתבות לרוב כלולאות  <hl>while</hl>, לדוגמה:
 
 <code lang="perl">
 while (1) {
@@ -129,13 +123,11 @@ while (1) {
 }
 </code>
 
-It is described in the part
-about the <a href="/while-loop">while loop in perl</a>.
+לולאות אילו מתוארות במדריך בחלק <לולאות while בפרל</a>.
 
 <h2>perldoc</h2>
 
-You can find the official description of the for-loop in the
-<b>perlsyn</b> section of the
+תוכלו למצוא את התיאור הרשמי של לולאת for  בתיעוד של פרל כאן:
 <a href="http://perldoc.perl.org/perlsyn.html#For-Loops">Perl documentation</a>.
 
 
