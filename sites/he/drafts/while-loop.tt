@@ -4,15 +4,13 @@
 =status show
 =books beginner_book
 =author szabgab
-=translator bruck
-=original while-loop
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-In this episode of the <a href="/perl-tutorial">Perl tutorial</a> we are going to see <b>how does the while loop work in Perl</b>.
+בחלק זה של <a href="/perl-tutorial">המדריך לפרל</a> נראה כיצד משתמשים <b>בלולאת ה-while בפרל</b>.
 
 =abstract end
 
@@ -30,36 +28,32 @@ while ($counter > 0) {
 say 'done';
 </code>
 
-The <hl>while</hl> loop has a condition, in our case checking if the variable $counter is larger than 0,
-and then a block of code wrapped in curly braces.
+לולאת ה <hl></hl>היא לולאה עם תנאי\ במקרה זה התנאי בודק האם המשתנש  $counter גדול מ- 0,
+ואחרי התנאי יש בלוק קוד שתחום בסוגריים מסולסלים.
 
-When the execution first reaches the beginning of the while loop it checks if the condition is <a href="/boolean-values-in-perl">true or
-false</a>. If it is <hl>FALSE</hl> the block is skipped and the next statement, in our case printing 'done' is executed.
+כשההרצה מגיעה לתחילת לולאת ה-while, הערך הבוליאני של התנאי נבדק, כלומר אם הוא  <a href="/boolean-values-in-perl">true או
+false</a>. אם הוא  <hl>FALSE</hl> אז מדלגים על הבלוק והשורה הבאה, במקרה זה הדפסת  'done', מבוצעת.
 
-If the condition of the <hl>while</hl> is <hl>TRUE</hl>, the block gets executed, and then the execution goes back
-to the condition again. It is evaluated again. If it is false the block is skipped and the 'done'
-is printed. If it is true the block gets executed and we are back to the condition ...
+אם התנאי של  <hl>while</hl> הוא <hl>TRUE</hl>,אז הבלוק מבוצע ושוב חוזרים אל התנאי. התנאי נבדק שוב. אם הוא false מדלגים על הבלוק, ומודפסת המחרוזת 'done'
+. אם התנאי הוא  true אז הבלוק מבוצע ושוב חוזרים אל התנאי ...
 
-This goes on as long as the condition is true or in sort-of English:
+כל הסיפור הזה ממשיך כל זמן שהתנאי הוא או במשהו דומה לאנגלית:
 
 <hl>while (the-condition-is-true) { do-something }</hl>
 
-<h2>Infinite loop</h2>
+<h2>לולאה אינסופית</h2>
 
-In the above code we always decremented the variable so we knew that at one point the condition will become false.
-If for some reason the condition never becomes false you get an <hl>infinite loop</hl>. Your program will be stuck in a
-very small block it can never escape.
+בדוגמה שראינו תמיד הפחתנו את ערך המשתנה ולכן ידענו שמתישהו התנאי כבר לא יתקיים יותר, כלומר הוא יהיה false.
+אם מסיבה כלשהי התנאי תמיד ממשיך להתקיים, אף פעם לא הופך ל-false אז מקבלים <hl>לולאה אינסופית</hl>. התוכנית שלכם תשאר תקועה בבלוק קטן ולא תוכל לברוח ממנו.
 
-For example if we had forgotten to decrement the <hl>$counter</hl>, or if we were incrementing
-it while still checking for a lower boundary.
+למשל, אם היינו שוכחים להפחית את ערכו של <hl>$counter</hl>, או אם היינו מגדילים את ערכו, אבל עדיין בודקים שהוא מגיע לסף תחתון.
 
-If this happens by mistake, that's a bug.
+אם זה קורה  אז בטעות אז זה באג.
 
-On the other hand, in some cases using an infinite loop <b>on purpose</b> can make our program more simple to write, and
-easier to read. We love readable code!
-If we would like to have an infinite loop we can use a condition that's always true.
+מצד שני, קיימים מקרים שבהם שימוש <b>מכוון</b> בלולאה אינסופית עשוי לפשט גם הקריאה וגם הכתיבה של הקוד שלנו. אנחנו מאוד אוהבים קוד קריא!
+אם אנחנו רוצים לולאה אינסופית אנחנו יכולים להשתמש בתנאי שתמיד מתקיים.
 
-So we can write:
+אנחנו יכולים לכתוב:
 
 <code lang="perl">
 while (42) {
@@ -67,9 +61,9 @@ while (42) {
 }
 </code>
 
-Of course people lacking the
-<a href="http://en.wikipedia.org/wiki/Answer_to_Life,_the_Universe,_and_Everything#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29">proper cultural reference</a>
-will wonder why 42 so the more generally accepted, albeit slightly boring way is to always use the number 1 in infinite loops.
+כמובן שמי שאינו מכיר 
+<a href="http://en.wikipedia.org/wiki/Answer_to_Life,_the_Universe,_and_Everything#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29">האיזכור התרבותי המתאים</a>
+למה דווקא 42 ולכן תמיד משתמשים ב-1 בלולאות אינסופיות. ה1 הוא מספר מקובל יותר, אפילו אם הוא יותר משעמם.
 
 <code lang="perl">
 while (1) {
@@ -77,14 +71,13 @@ while (1) {
 }
 </code>
 
-Naturally, seeing that the code has no escape from this loop, one will wonder how can that program ever end without
-killing it from the outside?
+מי שמסתכל על הלולאה ורואה שאין אפשרות לצאת ממנה עשוי לתהות איך התוכנית אי פעם תסיים את ההרצה שלה בלי שמישהו יפסיק אותה מבחוץ?
 
-For that, there are a number of ways.
+יש לנו מספר אפשרויות.
 
-One of them is calling the <hl>last</hl> statement inside the while loop.
-That will skip the rest of the block and won't check the condition again.
-Effectively ending the loop. People usually put it in some kind of a condition.
+אחת האפשרויות היא לקרוא לפקודה  <hl>last</hl>   מתוך לולאת ה-while .
+פקודה זו גורמת לדילוג על שאר הבלוק, והתנאי לא ייבדק שוב.
+בפועל היא מסיימת את הלולאה. לרוב שמים אותה בתוך תנאי כלשהו.
 
 <code lang="perl">
 use strict;
@@ -103,11 +96,9 @@ while (1) {
 say 'done';
 </code>
 
-In this example we ask the user a question and hope he will be able to
-answer it using the correct case. He will be stuck with this question
-forever if he cannot type 'Perl'.
+בדוגמה זו אנחנו שואלים את המשתמש שאלה ומקווים שהוא יצליח לענות עליה (כולל שימוש נכון באותיות רישיות וקטנות) אם הוא לא יקליד Perl הוא יהיה תקוע עם אותה שאלה לנצח.
 
-So the conversation might go on like this:
+השיחה עשויה להיראות כך:
 
 <code>
 Which programming language are you learning now?
@@ -121,8 +112,8 @@ Which programming language are you learning now?
 done
 </code>
 
-As you can see once the user typed the correct answer, <hl>last</hl> was called, the rest of the block
-including <hl>say 'Wrong! Try again!';</hl> was skipped and the execution continued after the
-<hl>while loop</hl>.
+ניתן לראות שכשהמשתמש הקליד את התשובה הנכונה, הפקודה  <hl>last</hl> בוצעה, וההרצה דילגה על שאר הבלוק, כולל התגובה
+ <hl>say 'Wrong! Try again!';</hl> והמשיכה אחרי 
+<hl> לולאת ה-while </hl>.
 
 

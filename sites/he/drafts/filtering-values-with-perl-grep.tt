@@ -1,37 +1,30 @@
-=title סינון ערכים באמצעות grep בפרל
-=timestamp 2013-10-12T18:45:56
+=title Filtering values using Perl grep
+=timestamp 2012-09-02T18:45:56
 =indexes grep, filter, any, List::MoreUtils, <>, glob
 =status show
 =author szabgab
-=translator bruck
-=original filtering-values-with-perl-grep
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-The internal <b>grep</b> function of Perl is a <b>filter</b>. You give it a list of values
-and a condition, and it returns a sublist of values that yield true for the given
-condition.
-It is a generalization of the grep or egrep commands we know from UNIX and Linux,
-but you don't need to know these commands in order to understand the grep of Perl.
+הפונקציה <b>grep</b> , שהיא פונקציה מובנית של פרל (Perl) היא פונקציית <b>סינון</b>. מעבירים לפונקציה רשימת ערכים ותנאי, והיא מחזירה תת-רשימה של הערכרים שמקיימים את התנאי.
+זו היא למעשה הכללה של הפקודות grep ו-egrep שמוכרות לנו מ-Unix  ומלינוקס, אך אין צורך להכיר את הפקודות כדי להבין את ה פונקציית ה-grep של פרל.
 
 =abstract end
 
-The <hl>grep</hl> function takes two arguments. A block and a list of values.
+הפונקציה <hl>grep</hl> מקבלת שני ארגומנטים. בלוק ורשימת ערכים.
 
-For every element of the list, the value is assigned to <hl>$_</hl>, the
-<a href="/the-default-variable-of-perl">default scalar variable of Perl</a>,
-and then the block is executed. If the return value of the block is <hl>false</hl>, the value
-is discarded. If the block returned <hl>true</hl> the value from the list is kept as one
-of the return values.
+עבור כל ערך ברשימה הרך מוצב ב- <hl>$_</hl>, the
+<a href="/the-default-variable-of-perl">משתנה ברירת המחדל הסקלרי של פרל</a>,
+ואז הקוד בבלוק מבוצע. Iאם בלוק הקוד מחזיר <hl>false</hl>, הערך הנבדק מושמט. אם בלוק הקוד מחזיר <hl>true</hl> אז הערך הנבדק מהרשימה נשמר כאחדהערכים המוחזרים.
 
-Pay attention, there is no comma between the block and the second parameter!
+שימ לב, אין פסיק בין בלוק הקוד לבין הפרמטר השני!
 
-Let's see a few examples for grep:
+נראה מספר דוגמאות לשימוש ב- grep:
 
-<h2>Filter out small numbers</h2>
+<h2>סינון מספרים קטנים</h2>
 
 <code lang="perl">
 my @numbers = qw(8 2 5 3 1 7);
@@ -39,11 +32,10 @@ my @big_numbers = grep { $_ > 4 } @numbers;
 print "@big_numbers\n";      # (8, 5, 7)
 </code>
 
-This grep passes the values that are greater than 4,
-filtering out all the values that are not greater than 4.
+הפונקצייה grep מעבירה את כל הערכים שגדולים מ-4, ומסננת את כל הערכים שאינם גדולים מ-4.
 
 
-<h2>Filter out the new files</h2>
+<h2>סינון קבצים חדשים</h2>
 
 <code lang="perl">
 my @files = glob "*.log";
@@ -51,17 +43,16 @@ my @old_files = grep { -M $_ > 365 } @files;
 print join "\n", @old_files;
 </code>
 
-<hl>glob "*.log"</hl> will return all the files with a .log extension in the current directory.
+<hl>glob "*.log"</hl> מחזירה את כל הקבצים בתיקיה הנוכחית שהסיומת שלהם היא .log.
 
-<hl>-M $path_to_file</hl> returns the number of days passed since the file was last modified.
+<hl>-M $path_to_file</hl>מחזירה את מספר הימים שעברו מאז שהקובץ שונה לאחרונה.
 
-This example filters out the files that have been modified within the last year,
-and only let's through files that are at least one year old.
+דוגמה זו מסננת את הקבצים ששונו במשך השנה האחרונה, ומעבירה רק קבצים ששונו לאחרונה לפני יותר משנה.
 
-<h2>Is this element in the array?</h2>
+<h2>האם אלמנט מסוים קיים במערך?</h2>
 
-Another interesting use of <hl>grep</hl> is to check if an element can be found in an array.
-For example, you have a list of names and you would like to know if the given name is in the list?
+שימוש מעניין נוסף ב-<הוא בדיקה אם אלמנט מסוים נמצא במערך.
+למשל אם יש לכם רשימת שמות ואתם רוצים לבדוק אם שם נתון נמצא ברשימה?
 
 <code lang="perl">
 use strict;
@@ -77,24 +68,22 @@ if (grep { $visitor eq $_ } @names) {
 }
 </code>
 
-In this case the grep function was placed in
-<a href="/scalar-and-list-context-in-perl">SCALAR context</a>.
-In SCALAR context <hl>grep</hl> will return the number of elements that went through the filter.
-As we are checking if the <hl>$visitor</hl> equals to the current element this grep
-will return the number of times that happens.
+במקרה זה השתמשנו בפונצייה grep  
+<a href="/scalar-and-list-context-in-perl">בהקשר סקלרי</a>.
+בהקשר סקלרי<hl>grep</hl> מחזירה את מספר הערכים שעברו את הסינון.
+כיוון שאנחנו בודקים אם  <hl>$visitor</hl> שוונה לאלמנט הנוכחי, קריאה זו  grep
+תחזיר את מספר הפעמים שמקרה זה מתקיים.
 
-If that's 0, the expression will evaluate to false, if it is any positive number then it will evaluate to true.
+אם המספר הוא 0, הביטוי כולו מקבל את הערך  אם מספר הפעמים הוא מספר חיובי כלשהו, אז ערך הביטוי הוא true.
 
-This solution works, but because it depends on the context it might be unclear to some people.
-Let's see another solution using the <hl>any</hl> function of the
-<a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a> module.
+הפתרון עובד, אך כיוון שהוא מסתמך על הקשר ייתכן שהוא לא יהיה ברור לכולם.
+הנה פתרון נוסף שמשתמש בפונקציה <hl>any</hl> של המודול
+<a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a> .
 
-<h2>Do any of the elements match?</h2>
+<h2>האם קיים אלמנט כלשהו שמתאים?</h2>
 
-The <hl>any</hl> function has the same syntax as <hl>grep</hl>, accepting a block and a list of values,
-but it only returns true or false. True, if the block gives true
-for any of the values. False if none of them match.
-It also short circuits so on large lists this can be a lot faster.
+בדומה ל-<hl>grep</hl> גם <hl>any</hl> מקבלת בלוק של קוד ורשימת ערכים, אך היא מחזירה רק true  או  false. True, אם הבלוק מחזיר ערך true עבור ערך כלשהו מרשימת הערכים. False אם אף אחד מהערכים אינו מתאים.
+בנוסף לכך היא גם עושה בדיקה מקוצרת, מה שיכול להיות הרבה יותר מהיר כרשימות גדולות.
 
 <code lang="perl">
 use List::MoreUtils qw(any);
@@ -106,35 +95,30 @@ if (any { $visitor eq $_ } @names) {
 </code>
 
 
-<h2>UNIX grep and Linux grep?</h2>
+<h2>grep  ביוניקס ו-  grep בלינוקס?</h2>
 
-Just to make the explanation round:
+להשלמת ההסבר:
 
-I mentioned that the build in <hl>grep</hl> function of Perl is a generalization of the UNIX
-grep command.
+ציינתי קודם שהפונקציה המובנית <hl>grep</hl> בפרל היא הכללה של של פקודת הgrep  ביוניקס.
 
-The <b>UNIX grep</b> filters the lines of a file based on a regular expression.
+פקודת ה- <b> grep ביוניקס</b> מסננת את השורות על סמך ביטוי רגולרי.
 
-<b>Perl's grep</b> can filter any list of value based on any condition.
+<b>grep בפרל</b> יכולה לסנן לפי כל תנאי.
 
-This Perl code implements a basic version of the UNIX grep:
+הקוד הבא בפרל מיישם את הגירסה הבסיסת של grep  ביוניקס:
 
 <code lang="perl">
 my $regex = shift;
 print grep { $_ =~ /$regex/ } <>;
 </code>
 
-The first line gets the first argument from the command line which should be a
-regular expression. The rest of the command line arguments should be filenames.
+השורה הראשונה מקבל את הארגומנט משורת הפקודה, והארגומנט צריך להיות ביטוי רגולרי. שאר הארגומטים בשורת הפקודה צריכים להיות שמות קבצים.
 
-The diamond operator <hl>&lt;&gt</hl> fetches all the rows from all the
-files on the command line.
-The grep filters them according to the regular expression. The ones that pass
-the filtering are printed.
+אופרטור היהלום (diamond) <hl>&lt;&gt</hl> קורא את השורת מכל הקבצים על שורת הפקודה.
+הפונקצימסננת אותם לפי הביטוי הרגולרי. השורות שעוברות את הסינון מודפסות.
 
-<h2>grep on Windows</h2>
+<h2>grep ב-Windows</h2>
 
-Windows does not come with a grep utility but you can install
-one or you can use the same Perl script as above.
+ב-Windows אין פקודת grep מובנית, אבל ניתן להתקין grep או להשתמש בקוד פרל כמו הקוד הנ"ל.
 
 
