@@ -64,7 +64,7 @@ my $z = int rand 6;
 say $z;
 </code>
 
-Will return one of the numbers a number between 0 and 6. It can be 0 but cannot be 6. So it can be
+Will return a number between 0 and 6. It can be 0 but cannot be 6. So it can be
 any of the following numbers: 0,1,2,3,4,5.
 
 If we now add 1 to the result then we get any of the numbers 1,2,3,4,5,6 which is the same as throwing a dice.

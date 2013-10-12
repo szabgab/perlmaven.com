@@ -125,7 +125,7 @@ say substr $str, 14;                        # climbed the green tree
 </code>
 
 You can also leave out the 3rd (length) parameter which will mean:
-return all the characters starting from the 4th place till the end of the string.
+return all the characters starting from the 14th place till the end of the string.
 
 <code lang="perl">
 say substr $str, -4;                        # tree

@@ -1,0 +1,28 @@
+=title Perl-related events around the world 
+=timestamp 2013-07-16T00:00:10
+=status show
+=showright 1
+=newsletter 0
+=published 0
+=author 0
+=archive 0
+=comments 0
+=social 1
+
+The upcoming Perl-related conference and workshops. If you'd like to really master Perl,
+attending some of these events is a must.
+
+<ul>
+<li><a href="http://act.osdc.fr/osdc2013fr/">OSDC.fr</a> - October 4-5, 2013, Paris, France</li>
+<li><a href="http://pghpw.org/">The Pittsburgh Perl Workshop</a> - October 4-6, 2013, Pittsburgh, PA, USA</li>
+<li><a href="http://workshop.perl.pt/ptpw2013/">Portuguese Perl Workshop</a> - October 9-10,  2013, Lisbon, Portugal</li>
+<li><a href="http://osdc.org.nz/">OSDC NZ</a> - October 21-23, 2013, Auckland, New Zealand</li>
+<li><a href="http://reneeb-perlblog.blogspot.hu/2013/09/frankfurter-perl-community-workshop-2013.html">Perl-Community Workshop 2013 in Frankfurt</a> - October 26-27, 2013, Frankfurt, Germany</li>
+<li><a href="http://act.useperl.at/apw2013/">Austrian Perl Workshop</a> - November 2-3, 2013, Salzburg, Austria</li>
+<li><a href="http://2013.yapcbrasil.org.br/">YAPC::Brazil 2013</a> - November 15-16, 2013, Curitiba, PR, Brazil</li>
+<li><a href="http://act.yapc.eu/npw2013/">Nordic Perl Workshop 2013</a> - November 23, 2013, Copenhagen, Denmark</li>
+<li><a href="http://act.yapc.eu/lpw2013/">London Perl Workshop (LPW 2013)</a> - Saturday 30th November 2013 at Westminster University</li>
+<li><a href="http://act.yapc.eu/gpw2014/">German Perl Workshop (GPW 2014)</a> - March 26-28, 2014, Hannover, Germany</li>
+</ul>
+
+Source: the <a href="http://perlweekly.com/events.html">events page</a> of the Perl Weekly. 
