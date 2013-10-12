@@ -27,6 +27,7 @@
    <li><a href="/string-functions-length-lc-uc-index-substr"> פונקציות לטיפול במחרוזות: length, lc, uc, index, substr</a></li>
    <li><a href="/sorting-arrays-in-perl">מיון מערכים בפרל</a></li>
    <li><a href="/how-to-sort-faster-in-perl">איך למיין מהר יותר בפרל?</a></li>
+   <li><a href="/for-loop-in-perl">לולאת for  בפרל</a></li>
 <!--
   <li><a href=""></a></li>
 -->
