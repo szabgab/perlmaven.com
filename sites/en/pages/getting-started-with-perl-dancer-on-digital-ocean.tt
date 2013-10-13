@@ -170,7 +170,7 @@ In order to have a better security model we are going to run Starman our "applic
 In order to create the user we run:
 
 <code>
-root@s12:~# adduseri --gecos '' --disabled-password  starman
+root@s12:~# adduser --gecos '' --disabled-password  starman
 </code>
 
 It will create the user <hl>starman</hl> and the only way to to access it will be via the user <hl>root</hl>.
@@ -206,6 +206,10 @@ starman@s12:~$ \curl -L http://install.perlbrew.pl | bash
 </code>
 
 This will install Perlbrew.
+
+(BTW, if you wondering about the backslash prefix, it ensures that no local <b>alias</b> will
+interfere with the command.
+See <a href="http://stackoverflow.com/questions/15691977/why-start-a-shell-command-with-a-backslash">here</a>)
 
 Then we need to add <hl>source ~/perl5/perlbrew/etc/bashrc</hl> to our start-up script which is the
 <hl>.bashrc</hl> file:
@@ -290,7 +294,6 @@ Once that's install we can install the required modules:
 
 <code>
 starman@s12:~$ cpanm Dancer2 Starman Daemon::Control
-starman@s12:~$ cpanm Module::Version App::Ack Template
 </code>
 
 <h2 id="dancer">Creating a simple Dancer application</h2>
@@ -406,7 +409,7 @@ http://1.2.3.4:5000
 
 <h2 id="nginx">Configure nginx as a proxy</h2>
 
-As used <hl>starman</hl> create the file <b>/home/starman/nginx-demo.conf</b> with the following content:
+As user <hl>starman</hl> create the file <b>/home/starman/nginx-demo.conf</b> with the following content:
 
 <code>
 server {
