@@ -117,8 +117,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<a href="/scalarnye-peremennye">Скалярные переменные</a>
 </li>
 <li>
-	<span href="/comparing-scalars-in-perl">Сравнение скаляров</span>
-	(<a href="http://perlmaven.com/comparing-scalars-in-perl">Comparing scalars</a>)
+	<a href="/sravnenie-skalarov-v-perl">Сравнение скаляров</a>
 </li>
 <li>
 	<span href="/string-functions-length-lc-uc-index-substr">Строковые функции: length, lc, uc, index, substr</span>
