@@ -120,8 +120,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<a href="/sravnenie-skalarov-v-perl">Сравнение скаляров</a>
 </li>
 <li>
-	<span href="/string-functions-length-lc-uc-index-substr">Строковые функции: length, lc, uc, index, substr</span>
-	(<a href="http://perlmaven.com/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a>)
+	<a href="/strokovye-funkcii-length-lc-uc-index-substr">Строковые функции: length, lc, uc, index, substr</a>
 </li>
 <li>
 	<span href="/number-guessing-game">Игра в "угадай число" (rand, int)</span>
