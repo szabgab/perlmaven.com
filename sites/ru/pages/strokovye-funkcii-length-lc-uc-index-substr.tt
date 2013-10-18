@@ -1,4 +1,4 @@
-=title String functions: length, lc, uc, index, substr
+=title Строковые функции: length, lc, uc, index, substr
 =timestamp 2013-10-15T12:00:01
 =indexes length, lc, uc, index, substr, scalar
 =status show
