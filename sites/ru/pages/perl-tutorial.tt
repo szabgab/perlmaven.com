@@ -123,12 +123,10 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<a href="/strokovye-funkcii-length-lc-uc-index-substr">Строковые функции: length, lc, uc, index, substr</a>
 </li>
 <li>
-	<span href="/number-guessing-game">Игра в "угадай число" (rand, int)</span>
-	(<a href="http://perlmaven.com/number-guessing-game">Number Guessing game (rand, int)</a>)
+	<a href="/igra-v-ugaday-chislo">Игра в "угадай число" (rand, int)</a>
 </li>
 <li>
-	<span href="/while-loop">Цикл while в Perl</span>
-	(<a href="http://perlmaven.com/while-loop">Perl while loop</a>)
+	<a href="/tsikl-while">Цикл while в Perl</a>
 </li>
 <li>
 	<a href="/oblast-vidimosti-v-perl">Область видимости переменных в Perl</a>
