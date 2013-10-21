@@ -122,7 +122,7 @@ This a bit more advanced example, but it might be important to mention it here:
 
 Perl allows us to switch between <b>name-spaces</b> using the <hl>package</hl> keyword inside
 a file. A package declaration does <b>NOT</b> provide scope. If you declare a variable in
-the explicit <b>main package</b> which is just the regular body of your script, that <hl>$fname</hl>
+the implicit <b>main package</b> which is just the regular body of your script, that <hl>$fname</hl>
 variable will be visible even in other name-spaces in the same file.
 
 If you declare a variable called <hl>$lname</hl> in the 'Other' name-space, it will be visible
