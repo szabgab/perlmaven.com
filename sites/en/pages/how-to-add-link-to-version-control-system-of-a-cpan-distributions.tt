@@ -36,9 +36,13 @@ If you use <a href="https://metacpan.org/module/ExtUtils::MakeMaker">ExtUtils::M
 as parameter in the <b>WriteMakefile</b> function:
 
 <code lang="perl">
-META_MERGE        => {
+META_MERGE => {
+    'meta-spec' => { version => 2 },
      resources => {
-         repository  =>  'https://github.com/dwimperl/Task-DWIM',
+         repository => {
+           type => 'git',
+           url  => 'https://github.com/dwimperl/Task-DWIM.git',
+           web  => 'https://github.com/dwimperl/Task-DWIM',
      },
 },
 </code>
@@ -92,6 +96,14 @@ repository.type = git
 
 There are other ways to <a href="http://www.lowlevelmanager.com/2012/05/dzil-plugins-github-vs-githubmeta.html">add
 the repository links</a> to the META files when using Dist::Zilla.
+
+Probably the most simple way is to use the
+<a href="https://metacpan.org/module/Dist::Zilla::Plugin::GithubMeta">GithubMeta</a> plugin by
+adding the following line to the dist.ini file:
+
+<code>
+[GithubMeta]
+</code>
 
 <h2>Why shall I add this link?</h2>
 
