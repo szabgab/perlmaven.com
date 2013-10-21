@@ -136,8 +136,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <b>Файлы</b>
 <ol>
 <li>
-	<span href="/how-to-exit-from-perl-script">Выход (exit)</span>
-	(<a href="http://perlmaven.com/how-to-exit-from-perl-script">exit</a>)
+	<a href="/kak-vyiti-iz-perl-scripta">Выход (exit)</a>
 </li>
 <li>
 	<span href="/stdout-stderr-and-redirection">Стандартный канал вывода, стандартный канал ошибок и перенаправление в командной строке</span>
@@ -262,8 +261,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <li>-X операторы в Perl</li>
 <li>Перенаправление потоков в Perl</li>
 <li>
-	Запуск внешних программ <span href="/running-external-programs-from-perl">с помощью system</span>
-	(Running external programs <a href="http://perlmaven.com/running-external-programs-from-perl">using system</a>)
+	Запуск внешних программ <a href="/zapusk-vneshnih-programm-iz-perl">с помощью system</a>
 </li>
 <li>Unix-команды: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
 <li>
