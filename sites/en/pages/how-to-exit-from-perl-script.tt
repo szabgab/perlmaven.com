@@ -99,6 +99,6 @@ The output will be:
 The call to <hl>system</hl> will return the exit code and it will be also saved in the <hl>$?</hl>
 variable of Perl. The important thing to note is, that this value contains 2 bytes and the actual
 exit code is in the upper byte. So in order to get back the 42 as above we have to right-shift the
-bits using the <hl>&gt;&gt;</hl> bitwise operator with 8 bits. That's what we see in see in the
+bits using the <hl>&gt;&gt;</hl> bitwise operator with 8 bits. That's what we see in the
 last line of the above example.
 
