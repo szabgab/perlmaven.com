@@ -17,7 +17,8 @@ and the all the previous articles as listed <a href="/archive?tag=pro">in the ar
 
 Besides many "random" advanced articles the Pro account provides access to the series about
 <a href="/moo">Moo</a>, the Minimalist Object Oriented system for Perl,
-and about <a href="/mojolicious">Mojolicious</a> the light-weight web framework.
+about <a href="/mojolicious">Mojolicious</a> the light-weight web framework,
+and about <a href="/net-server">Net::Server</a> the framework to build TCP/IP servers.
 
 
 =abstract end
