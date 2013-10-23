@@ -1,5 +1,5 @@
 =title Стандартный канал вывода, стандартный канал ошибок и перенаправление в командной строке
-=timestamp 2013-10-22T12:00:01
+=timestamp 2013-10-22T14:00:03
 =indexes STDOUT, STDERR, /dev/null, $|, buffering
 =status show
 =original stdout-stderr-and-redirection
