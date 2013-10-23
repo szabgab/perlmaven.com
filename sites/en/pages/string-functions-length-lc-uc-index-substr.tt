@@ -46,12 +46,12 @@ use strict;
 use warnings;
 use 5.010;
 
-my $str = "The black cat jumped from the green tree";
+my $str = "The black cat climbed the green tree";
 
 say index $str, 'cat';             # 10
 say index $str, 'dog';             # -1
 say index $str, "The";             # 0
-say index $str, "the";             # 26
+say index $str, "the";             # 22
 </code>
 
 The first call to <hl>index</hl> returned 10, because the string "cat" starts on the 10th character.
@@ -66,6 +66,7 @@ Hence "the" and "The" are different.
 <hl>index()</hl> looks for strings and not just for words, so even the string "e " can be looked up:
 
 <code lang="perl">
+my $str = "The black cat climbed the green tree";
 say index $str, "e ";              # 2
 </code>
 
@@ -74,9 +75,10 @@ to start searching. So as we found "e " to start at the 2nd character of the fir
 we could try to search starting from the 3rd place to see if there is another occurrence of "e ":
 
 <code lang="perl">
+my $str = "The black cat climbed the green tree";
 say index $str, "e ";              # 2
-say index $str, "e ", 3;           # 28
-say index $str, "e", 3;            # 18
+say index $str, "e ", 3;           # 24
+say index $str, "e", 3;            # 19
 </code>
 
 Looking for "e" without a space will yield a different result.
@@ -85,9 +87,10 @@ Lastly, there is another function called <b>rindex</b> (right index)
 that will start searching from the right hand side of the string:
 
 <code lang="perl">
-say rindex $str, "e";              # 39
-say rindex $str, "e", 38;          # 38
-say rindex $str, "e", 37;          # 33
+my $str = "The black cat climbed the green tree";
+say rindex $str, "e";              # 35
+say rindex $str, "e", 34;          # 34
+say rindex $str, "e", 33;          # 23
 </code>
 
 <h2>substr</h2>
