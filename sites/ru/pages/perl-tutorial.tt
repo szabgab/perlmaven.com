@@ -149,8 +149,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<a href="/dopisyvanie-v-fayl">Дописывание в файл</a>
 </li>
 <li>
-	<span href="/open-and-read-from-files">Открытие и чтение из файла на Perl</span>
-	(<a href="http://perlmaven.com/open-and-read-from-files">Open and read from files using Perl</a>)
+	<a href="/otkrytie-i-chtenie-faylov">Открытие и чтение из файла на Perl</a>
 </li>
 <li>
 	<span href="/open-files-in-the-old-way">Не открывайте файлы по-старому</span>
