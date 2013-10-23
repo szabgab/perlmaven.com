@@ -125,8 +125,5 @@ say 'готово';
 Как вы видите, когда пользователь ввел правильный ответ, вызвалось выражение <hl>last</hl>, остаток
 блока, включая <hl>say 'Неверно! Попробуйте еще раз!';</hl>, был пропущен, и выполнение продолжилось
 с конца <hl>цикла while</hl>.
-As you can see once the user typed the correct answer, <hl>last</hl> was called, the rest of the block
-including <hl>say 'Wrong! Try again!';</hl> was skipped and the execution continued after the
-<hl>while loop</hl>.
 
 
