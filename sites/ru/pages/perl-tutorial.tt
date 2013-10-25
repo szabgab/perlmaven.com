@@ -152,8 +152,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<a href="/otkrytie-i-chtenie-faylov">Открытие и чтение из файла на Perl</a>
 </li>
 <li>
-	<span href="/open-files-in-the-old-way">Не открывайте файлы по-старому</span>
-	(<a href="http://perlmaven.com/open-files-in-the-old-way">Don't open files in the old way</a>)
+	<a href="/stariy-sposob-otkryvaniya-faylov">Не открывайте файлы по-старому</a>
 </li>
 <li>
 	Двоичный режим, работа с Юникодом
