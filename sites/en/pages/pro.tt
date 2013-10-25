@@ -15,10 +15,14 @@
 The <b>Perl Maven Pro</b> is a paid service where subscribers can get 1-2 new articles a week
 and the all the previous articles as listed <a href="/archive?tag=pro">in the archive</a>.
 
-Besides many "random" advanced articles the Pro account provides access to the series about
-<a href="/moo">Moo</a>, the Minimalist Object Oriented system for Perl,
-about <a href="/mojolicious">Mojolicious</a> the light-weight web framework,
-and about <a href="/net-server">Net::Server</a> the framework to build TCP/IP servers.
+Besides many "random" advanced articles the Pro account provides access to the several
+series of articles:
+<ul>
+  <li><a href="/moo">Moo</a>, the Minimalist Object Oriented system for Perl</li>
+  <li><a href="/mojolicious">Mojolicious</a> the light-weight web framework</li>
+  <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers</li>
+  <li><a href="/dancer">Perl Dancer</a>, light-weight web framework</li>
+</ul>
 
 
 =abstract end
