@@ -232,7 +232,7 @@ Entering interactive session.
 Sending command: ls
 Requesting service exec on channel 0.
 channel 0: open confirm rwindow 1024 rmax 4096
-</cide>
+</code>
 
 and that's all.
 
