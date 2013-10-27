@@ -296,9 +296,10 @@ yubana147:~ home$ u88:~/source/qsno_cvs home$ ls -l /usr/local/bin/exiftool -rwx
 yubana147:~ home$ u88:~/source/qsno_cvs home$ which exiftool /usr/local/bin/exiftool -bash: u88:~/source/qsno_cvs: No such file or directory
 yubana147:~ home$ u88:~/source/qsno_cvs home$ exiftool -ver 6.66 -bash: u88:~/source/qsno_cvs: No such file or directory
 yubana147:~ home$ Thanks for all your help. Pedro
-Direct Responses: 3860 | Write a response
+</code>
+
 Posted on 2006-12-20 20:59:17-08 by exiftool in response to 3859
-Re: running exiftool in Mac OS X
+
 Hi Pedro,
 
 Thanks. I'm sorry, it's my fault. Expanding the distribution in the /usr/local/bin directory created a subdirector called Image-ExifTool-6.66. The exiftool files have to be moved to the parent directory. ie)
