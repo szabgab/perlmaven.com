@@ -88,6 +88,7 @@ Key class 'Net::SSH::Perl::Key::RSA' is unsupported: Can't locate Crypt/RSA.pm i
 BEGIN failed--compilation aborted at /usr/local/share/perl/5.10.0/Net/SSH/Perl/Key/RSA.pm line 14.
 Compilation failed in require at (eval 68) line 1.
 BEGIN failed--compilation aborted at (eval 68) line 1.
+</code>
 
 public key id_rsa.pub from the client machine was installed on the sftp server.
 The user name is absolutely correct and I can login from the command line to this server and transfer a file without problems.
@@ -96,7 +97,14 @@ what's wrong?
 
 Posted on 2009-09-10 19:28:18-07 by darxus in response to 11198
 
-Key class 'Net::SSH::Perl::Key::RSA' is unsupported: Can't locate Crypt/RSA.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/local/share/perl/5.10.0/Net/SSH/Perl/Key/RSA.pm line 14. 
+Key class 'Net::SSH::Perl::Key::RSA' is unsupported:
+
+<code>
+Can't locate Crypt/RSA.pm in @INC (@INC contains: /etc/perl
+/usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5
+/usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .)
+at /usr/local/share/perl/5.10.0/Net/SSH/Perl/Key/RSA.pm line 14.
+</code>
 
 You need to install Crypt::RSA.
 
