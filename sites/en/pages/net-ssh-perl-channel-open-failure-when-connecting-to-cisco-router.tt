@@ -7,11 +7,9 @@
 =comments 0
 =social 1
 
-<!-- from http://cpanforum.com/threads/851 -->
 
 =abstract start
 
-This article is based on a thread on the CPAN::Forum.
 
 =abstract end
 
@@ -400,4 +398,6 @@ $s->close;
 </code>
 
 
+(This article is based on a thread on the CPAN::Forum.)
+<!-- from http://cpanforum.com/threads/851 -->
 

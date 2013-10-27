@@ -7,11 +7,8 @@
 =comments 0
 =social 1
 
-<!-- from http://cpanforum.com/threads/2053 -->
-
 =abstract start
 
-This article is based on a thread on the CPAN::Forum.
 
 =abstract end
 
@@ -259,3 +256,8 @@ to yours I got loud warnings from Perl about not being able to load Carp::Heavy
 (caused by a lack of available file handles).
 
 John.
+
+
+(This article is based on a thread on the CPAN::Forum.)
+<!-- from http://cpanforum.com/threads/2053 -->
+

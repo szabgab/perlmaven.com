@@ -7,11 +7,8 @@
 =comments 0
 =social 1
 
-<!-- from http://cpanforum.com/threads/7273 --> 
-
 =abstract start
 
-This article is based on a thread on the CPAN::Forum.
 
 =abstract end
 
@@ -103,4 +100,7 @@ Here follow the steps to install padwalker on windows.
 
 Follow 3 simple steps
 <a href="http://perfect-blog-url.blogspot.com/2010/04/install-padwalker-on-windows-for-epic.html">here</a>
+
+(This article is based on a thread on the CPAN::Forum.)
+<!-- from http://cpanforum.com/threads/7273 --> 
 

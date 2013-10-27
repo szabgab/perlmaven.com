@@ -7,11 +7,8 @@
 =comments 0
 =social 1
 
-<!-- from http://cpanforum.com/threads/8470 -->
-
 =abstract start
 
-This article is based on a thread on the CPAN::Forum.
 
 =abstract end
 
@@ -126,4 +123,8 @@ STEP 9: Also check / clear "Include subfolders" - to process subfolders
 (if system files / folders selected). Now click on OK button. change file dates
 
 STEP 10: You have just changed file dates - creation date, modified date and last accessed date!
+
+
+(This article is based on a thread on the CPAN::Forum.)
+<!-- from http://cpanforum.com/threads/8470 -->
 
