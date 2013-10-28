@@ -39,10 +39,10 @@ c:> cpan PadWalker
 
 There is a graphical tool for this as well, but it might be more simple just to open the
 Command Window (Start -> Run -> type cmd). When you get the "DOS" prompt, type in
-<hl>ppm PadWalker</hl>. Please note, this is case sensitive!
+<hl>ppm install PadWalker</hl>. Please note, this is case sensitive!
 
 <code>
-c:> ppm PadWalker
+c:> ppm install PadWalker
 </code>
 
 
