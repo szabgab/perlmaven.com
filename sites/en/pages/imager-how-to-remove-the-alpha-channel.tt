@@ -1,6 +1,6 @@
 =title Imager: How to remove the alpha channel?
-=timestamp 2013-01-16 01:55:51
-=indexes Imager 
+=timestamp 2013-01-16T01:55:51
+=indexes Imager
 =status show
 =author szabgab
 =archive 0
@@ -15,14 +15,14 @@ Posted on 2013-01-16 01:55:51.886443-08 by bugmenot
 
 I'm currently using ImageMagick's convert command to convert a png to a
 tiff and to remove the transparent background and replace it with white
-(this is needed by tesseract ocr): 
+(this is needed by tesseract ocr):
 
 <code>
 convert img.png -background white -alpha off -alpha remove
 </code>
 
 I haven't been able to figure out how to remove the alpha channel with Imager.
-So far all I have is 
+So far all I have is
 
 <code lang="perl">
 $image->write(file => 'output.tiff', i_background => '#ffffff')
