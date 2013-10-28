@@ -202,8 +202,9 @@ As I said in previous email I am a newcomer to Soap::Wsdl
 But to get my example working I had to read through the whole forum 
 And there you find: 
 
-http://www.cpanforum.com/posts/9544 
-That looks to me as applying to your case 
+That <a href="/soap-wsdl-deep-recursion-warning-while-using-wsdl2perl">looks</a to me as
+applying to your case 
+
 Good Luck
 
 Posted on 2009-12-21 21:27:38-08 by denman in response to 11997
@@ -211,8 +212,8 @@ Posted on 2009-12-21 21:27:38-08 by denman in response to 11997
 Thanks for the good pointer - this indeed avoided the recursion issue.
 However another issue has become apparent in that not all subdirectories and functions
 are created - so only MyTypes and MyInterfaces, not MyElements. 
-It looks like someone else has had this problem though I can't see a reply to it:
-http://www.cpanforum.com/posts/11896 
+It looks like <a href="/soap-wsdl-deep-recursion-warning-while-using-wsdl2perl">someone else has had</a> this problem though I can't see a reply to it.
+
 Any idea how to get all directories? I'll also cross post to their thread. 
 Nb: If you are interested in betting exchange APIs, the Betdaq one is also free so you can see the issues for yourself: 
 https://api.betdaq.com/v2.0/API.wsdl
