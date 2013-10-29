@@ -1,7 +1,8 @@
 =title Perl na příkazové řádce
-=timestamp 2013-01-17T14:45:56
+=timestamp 2013-10-30T12:40:00
 =indexes -v, -e, -p, -i
 =status show
+=original perl-on-the-command-line
 =books beginner_book
 =author szabgab
 =translator rampa
