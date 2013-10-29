@@ -123,12 +123,10 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<a href="/strokovye-funkcii-length-lc-uc-index-substr">Строковые функции: length, lc, uc, index, substr</a>
 </li>
 <li>
-	<span href="/number-guessing-game">Игра в "угадай число" (rand, int)</span>
-	(<a href="http://perlmaven.com/number-guessing-game">Number Guessing game (rand, int)</a>)
+	<a href="/igra-v-ugaday-chislo">Игра в "угадай число" (rand, int)</a>
 </li>
 <li>
-	<span href="/while-loop">Цикл while в Perl</span>
-	(<a href="http://perlmaven.com/while-loop">Perl while loop</a>)
+	<a href="/tsikl-while">Цикл while в Perl</a>
 </li>
 <li>
 	<a href="/oblast-vidimosti-v-perl">Область видимости переменных в Perl</a>
@@ -138,12 +136,10 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <b>Файлы</b>
 <ol>
 <li>
-	<span href="/how-to-exit-from-perl-script">Выход (exit)</span>
-	(<a href="http://perlmaven.com/how-to-exit-from-perl-script">exit</a>)
+	<a href="/kak-vyiti-iz-perl-scripta">Выход (exit)</a>
 </li>
 <li>
-	<span href="/stdout-stderr-and-redirection">Стандартный канал вывода, стандартный канал ошибок и перенаправление в командной строке</span>
-	(<a href="http://perlmaven.com/stdout-stderr-and-redirection">Standar Output, Standard Error and command line redirection</a>)
+	<a href="/stdout-stderr-i-perenapravlenie">Стандартный канал вывода, стандартный канал ошибок и перенаправление в командной строке</a>
 </li>
 <li>warn и die</li>
 <li>
@@ -153,12 +149,10 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<a href="/dopisyvanie-v-fayl">Дописывание в файл</a>
 </li>
 <li>
-	<span href="/open-and-read-from-files">Открытие и чтение из файла на Perl</span>
-	(<a href="http://perlmaven.com/open-and-read-from-files">Open and read from files using Perl</a>)
+	<a href="/otkrytie-i-chtenie-faylov">Открытие и чтение из файла на Perl</a>
 </li>
 <li>
-	<span href="/open-files-in-the-old-way">Не открывайте файлы по-старому</span>
-	(<a href="http://perlmaven.com/open-files-in-the-old-way">Don't open files in the old way</a>)
+	<a href="/stariy-sposob-otkryvaniya-faylov">Не открывайте файлы по-старому</a>
 </li>
 <li>
 	Двоичный режим, работа с Юникодом
@@ -264,8 +258,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <li>-X операторы в Perl</li>
 <li>Перенаправление потоков в Perl</li>
 <li>
-	Запуск внешних программ <span href="/running-external-programs-from-perl">с помощью system</span>
-	(Running external programs <a href="http://perlmaven.com/running-external-programs-from-perl">using system</a>)
+	Запуск внешних программ <a href="/zapusk-vneshnih-programm-iz-perl">с помощью system</a>
 </li>
 <li>Unix-команды: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
 <li>

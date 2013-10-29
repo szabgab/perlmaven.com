@@ -1,7 +1,7 @@
 =title Dancer, the light-weight Perl web framework
-=timestamp 2013-09-13T18:13:11
+=timestamp 2013-10-24T18:13:11
 =indexes Dancer
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments 1
@@ -9,8 +9,8 @@
 
 =abstract start
 
-The beginning of a series of articles available to <a href="/pro">Perl Maven Pro</a> subscribers
-about <a href="http://perldancer.org/">Perl Dancer</a>, the light-weight web framework of Perl.
+The beginning of a series of articles about
+<a href="http://perldancer.org/">Perl Dancer</a>, the light-weight web framework of Perl.
 
 =abstract end
 
