@@ -12,13 +12,13 @@
 It seems quite a few people who are probably new to Perl want to install the PadWalker module.
 Probably in order to use it with the EPIC plugin of Eclipse.
 
+The installation should be simple but when you are new to Perl you
+probably don't know how to do it.
+
+So depending on what Operating System and which Perl distribution
+you have, let's see the instructions:
+
 =abstract end
-
-The installation should be simple but when you are new to Perl you probably don't know how to do it.
-
-
-So depending on what Operating System and which Perl distribution you have let's see the insttructions:
-
 
 <h2>Strawberry Perl or DWIM Perl on Windows</h2>
 
@@ -27,8 +27,10 @@ and its derivative <a href="http://dwimperl.com/">DWIM Perl for Windows</a>
 come with an already configured cpan client.
 
 Open the Command Window (Start -> Run -> type in cmd) When you get the "DOS" prompt
-type in <hl>cpan PadWalker</hl>. Please note, it is case sensitive, so padwalker will
-not work!
+type in <hl>cpan PadWalker</hl>.
+Please note, module names are case sensitive,
+so typing <hl>cpan padwalker</hl> or <hl>cpan Padwalker</hl>
+will <b>not</b> work!
 
 <code>
 c:> cpan PadWalker
@@ -48,7 +50,15 @@ c:> ppm install PadWalker
 
 <h2>Debian/Ubuntu Linux</h2>
 
-If you have root rights then probably the best is to install from the package management sytem
+If you have <b>root</b> rights then probably the best is to install
+from the package management sytem of your Linux distribution.
+
+You can use either <hl>aptitude</hl> or <hl>apt-get</hl>
+depending on your persona preferences:
+
+<code>
+$ sudo apt-get install libpadwalker-perl
+</code>
 
 <code>
 $ sudo aptitude install libpadwalker-perl
@@ -56,11 +66,12 @@ $ sudo aptitude install libpadwalker-perl
 
 Alternatively, you can follow the instructions with <b>cpanm</b> below.
 
-
 <h2>RedHat/CentOS Linux</h2>
 
+Using the package management system:
+
 <code>
-sudo yum install PadWalker
+$ sudo yum install PadWalker
 </code>
 
 Alternatively, you can follow the instructions with <b>cpanm</b> below.
@@ -71,23 +82,22 @@ Alternatively, you can follow the instructions with <b>cpanm</b> below.
 Follow the instructions with <b>cpanm</b> below.
 
 
-
 <h2>Using cpanm</h2>
 
 This is for Linux and OSX systems:
 
-First install <a href="http://cpanmin.us">cpan minus</a> by typing
+First, if you don't have it installed yet,
+then install <a href="http://cpanmin.us">cpan minus</a> by typing
 
 <code>
-curl -L http://cpanmin.us | perl - App::cpanminus
+$ \curl -L http://cpanmin.us | perl - App::cpanminus
 </code>
 
 Once it is installed type:
 
 <code>
-cpanm PadWalker
+$ cpanm PadWalker
 </code>
-
 
 If you still have questions, please ask them below!
 
