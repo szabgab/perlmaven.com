@@ -28,7 +28,7 @@ Ukážeme si také standardní příklad "Hello World".
 Pro Windows použijeme <a href="http://dwimperl.com/">DWIM Perl</a>. Je to balík, který obsahuje Perl kompilátor/interpret, <a href="http://padre.perlide.org/">Padre, the Perl IDE</a>
 a množství modulů z CPANu.
 
-Začněte návštěvou stránky<a href="http://dwimperl.com/">DWIM Perl</a>
+Začněte návštěvou stránky <a href="http://dwimperl.com/">DWIM Perl</a>
 a stáhněte <b>DWIM Perl for Windows</b>.
 
 Stažený exe soubor nainstalujte. Před tím než to uděláte se prosím ujistěte, že nemáte nainstalovaný jiný Perl.
