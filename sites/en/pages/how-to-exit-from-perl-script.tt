@@ -13,9 +13,9 @@
 If you followed the <a href="/perl-tutorial">Perl Tutorial</a> so far every script finished when
 the execution reached the last line of code in your file.
 
-There are however case when you'd like to stop the execution earlier.
+There are however cases when you'd like to stop the execution earlier.
 
-For example, you ask the user how old they are, and if they are under 13 you stop the script.
+For example, you ask the users how old they are, and if they are under 13 you stop the script.
 
 =abstract end
 
@@ -75,7 +75,7 @@ If you happen to execute one perl script from another, for example
 using the <a href="/running-external-programs-from-perl">system</a> function, 
 Perl has the same variable <hl>$?</hl> containing the exit code of the "other program".
 
-If you have the about code saved as script.pl and you have another "executor.pl" like this:
+If you have the above code saved as script.pl and you have another "executor.pl" like this:
 
 
 <code lang="perl">
