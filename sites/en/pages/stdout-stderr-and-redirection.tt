@@ -32,7 +32,7 @@ and examine it later, separately.
 <h2>How to print error messages?</h2>
 
 In Perl, when a perl program starts, these two output channels are represented by two symbols:
-<hl>STDOUT</hl> represents the Standard Output, and <hl>STDERR</hl> represents the Standar Error.
+<hl>STDOUT</hl> represents the Standard Output, and <hl>STDERR</hl> represents the Standard Error.
 
 From within the Perl program, you can print to each one of these channels by putting
 STDOUT or STDERR right after the <hl>print</hl> keyword:
@@ -69,7 +69,7 @@ be printed to STDOUT.
 
 <h2>Redirecting Standard Output</h2>
 
-(The below examples assume you use some bash compatible shell. Other shells migh behave in a different way.)
+(The below examples assume you use some bash compatible shell. Other shells might behave in a different way.)
 
 As a user, without looking inside the code, you can separate the two channels:
 If you run <hl>perl program.pl > out.txt</hl> the <hl>></hl> symbol will <b>redirect</b>
@@ -181,7 +181,7 @@ beforeSlight problem here.
 after
 </code>
 
-Adding a newline to the string goint to STDOUT usually also solves the problem:
+Adding a newline to the string going to STDOUT usually also solves the problem:
 
 <code lang="perl">
 print "before\n";

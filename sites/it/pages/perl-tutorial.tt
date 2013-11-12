@@ -55,6 +55,7 @@
 <b>File</b>
 <ol>
   <li><a href="/how-to-exit-from-perl-script">exit</a></li>
+  <li><a href="/stdout-stderr-and-redirection">Standard Output, Standard Error e redirezione da linea di comando</a></li>
 </ol>
 
 <b>Liste e Array</b>
