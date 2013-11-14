@@ -108,7 +108,6 @@ while the inner pair of curly braces represents the other hash.
 Running the code further and printing out the content of the hash after 3 assignments:
 
 <code lang="perl">
-<code lang="perl">
 #!/usr/bin/perl
 use strict;
 use warnings;
