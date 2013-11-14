@@ -103,7 +103,7 @@ $VAR1 = {
 In this output the outer pair of curly braces represent the <hl>%grades</hl> hash
 while the inner pair of curly braces represents the other hash.
 
-<h2>Creating the third hash</hl>
+<h2>Creating the third hash</h2>
 
 Running the code further and printing out the content of the hash after 3 assignments:
 
