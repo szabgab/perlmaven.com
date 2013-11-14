@@ -143,7 +143,7 @@ Here we can observe that the hash is not "balanced" or "symmetrical". Each hash 
 own keys and their respective values. The same keys can appear in both hashes, but
 they don't have to.
 
-<h2>Traversing the hashes manually</hl>
+<h2>Traversing the hashes manually</h2>
 
 While Data::Dumper can be useful for debugging purposes, we would not want to use it to
 show the content of the data structure to users. So let's see how can we go over all the
