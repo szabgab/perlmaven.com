@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on August 30, 2013.
+parts are being published every few days. The latest one was published on November 14, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -198,6 +198,7 @@ to practice what you have learned.
 <li><a href="/object-oriented-perl-using-moose">Object Oriented Perl using Mooses</a></li>
 <li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a></li>
 <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
+<li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
 </ol>
 
 <b>Object Oriented Perl with Moo</b>
