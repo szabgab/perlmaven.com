@@ -10,7 +10,8 @@
 
 =abstract start
 
-Every value in a hash in Perl can be a reference to another hash. If used correctly the data structure can behave
+Every value in a hash in Perl can be a reference to another hash.
+If used correctly the data structure can behave
 as a two-dimensional or multi-dimensional hash.
 
 =abstract end
@@ -88,6 +89,10 @@ A hash that does not have a name. The only way to access that internal hash
 is through the reference in the <hl>%grades</hl> hash.
 In the internal hash the above line created a single key-value pair. The key is 
 <hl>Mathematics</hl> and the value is <hl>97</hl>.
+
+Unlike in Python, the creation of the internal hash is automatic and it
+is generally referred to as <a href="/pro/autovivification">autovivification</a>.
+
 
 If we used Data::Dumper to print out the content of <hl>%grades</hl> right after
 the first assignment we would see the following:
