@@ -1,0 +1,60 @@
+=title How to check if string is empty or has only spaces in it using Perl?
+=timestamp 2013-11-16T07:30:01
+=indexes space
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+To check if string is empty use <hl>eq</hl>. To check if it has only spaces
+or only white space in it, use a regex.
+
+
+=abstract end
+
+<h2>Is the string empty?</h2>
+
+<code lang="perl">
+if ($str eq '') {
+    print "string is empty";
+}
+</code>
+
+<h2>Has the string only spaces in it?</h2>
+
+<code lang="perl">
+if ($str =~ /^ *$/) {
+    print "string contains 0 or more spaces";
+}
+</code>
+
+<code lang="perl">
+if ($str =~ /^\s*$/) {
+    print "string contains 0 or more white-space character";
+}
+</code>
+
+A white space character can be a space, a tab, and a few other characters that
+normally we cannot see. The <hl>>^</hl> at the beginning of the regex means
+"match at the beginning of the string".
+The <hl>$</hl> at the end of the regex means "match at the end of the string".
+
+<hl>*</hl> in the regex is a quantifier. It means match 0 or more times the thing
+that is on its left hand side. In the previous regex there was a space in on the left hand side
+of the <hl>*</hl>. In the second regex we have <hl>\s</hl> in front of the
+<hl>*</hl>
+
+\s matches any on of the following 5 characters:
+
+<ul>
+<li>space</li>
+<li>tab (<hl>\t</hl>)</li>
+<li>carriage-return (<hl>\r</hl>)</li>
+<li>newline (<hl>\n</hl>)</li>
+<li>form-feed (<hl>\f</hl)</li>
+</ul>
+
+
