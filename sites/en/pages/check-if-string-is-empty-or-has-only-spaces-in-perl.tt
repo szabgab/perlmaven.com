@@ -1,6 +1,6 @@
 =title How to check if string is empty or has only spaces in it using Perl?
 =timestamp 2013-11-16T07:30:01
-=indexes space
+=indexes space, \s
 =status show
 =author szabgab
 =archive 1
@@ -31,13 +31,15 @@ if ($str =~ /^ *$/) {
 }
 </code>
 
+<h2>Has the sting only white-spaces in it?</h2>
+
 <code lang="perl">
 if ($str =~ /^\s*$/) {
     print "string contains 0 or more white-space character";
 }
 </code>
 
-A white space character can be a space, a tab, and a few other characters that
+A white-space character can be a space, a tab, and a few other characters that
 normally we cannot see. The <hl>>^</hl> at the beginning of the regex means
 "match at the beginning of the string".
 The <hl>$</hl> at the end of the regex means "match at the end of the string".
