@@ -19,15 +19,28 @@ or only white space in it, use a regex.
 
 <code lang="perl">
 if ($str eq '') {
-    print "string is empty";
+    print "String is empty.";
 }
 </code>
+
+That would work, but if <hl>use warnings;</hl> is in effect, as it should be,
+then you might get a <a href="/use-of-uninitialized-value">Use of uninitialized value</a> warnings if <hl>$str</hl> is <a href="/undef-and-defined-in-perl">undef</a>. So it might
+be better to check this too, before any other comparision:
+
+<code lang="perl">
+if (not defined $str) {
+    print "String is so empty, it is not even defined.";
+}
+</code>
+
+and to do the other comparisions only if <hl>$str</hl> is defined.
+
 
 <h2>Has the string only spaces in it?</h2>
 
 <code lang="perl">
 if ($str =~ /^ *$/) {
-    print "string contains 0 or more spaces";
+    print "String contains 0 or more spaces and nothing else.";
 }
 </code>
 
@@ -35,7 +48,7 @@ if ($str =~ /^ *$/) {
 
 <code lang="perl">
 if ($str =~ /^\s*$/) {
-    print "string contains 0 or more white-space character";
+    print "String contains 0 or more white-space character and nothing else.";
 }
 </code>
 
