@@ -31,7 +31,7 @@ if ($str =~ /^ *$/) {
 }
 </code>
 
-<h2>Has the sting only white-spaces in it?</h2>
+<h2>Has the string only white-spaces in it?</h2>
 
 <code lang="perl">
 if ($str =~ /^\s*$/) {
