@@ -1,0 +1,71 @@
+=title Replace character by character (transliterate) using tr of Perl
+=timestamp 2013-11-19T19:30:01
+=indexes y, tr
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+I have not needed this frequently, but if you need to replace a set of characters with
+another set of characters in a string, there is a better solution than using regexes.
+
+In Perl <a href="/perldoc/tr">tr</a> is the transliterator tool that can replace characters by other characters pair-wise.
+
+=abstract end
+
+<h2>Simple example</h2>
+
+<hl>tr</hl> looks very similar to the substitution operator,
+but it behaves in a different way:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $text = 'abc bad acdf';
+say $text;
+
+$text =~ tr/a/z/;
+say $text;
+</code>
+
+Replaces every <hl>a</hl> character by <hl>z</hl>:
+
+<code>
+abc bad acdf
+zbc bzd zcdf
+</code>
+
+
+<h2>More than one character</h2>
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $text = 'abc bad acdf';
+say $text;
+
+$text =~ tr/ab/zx/;
+say $text;
+</code>
+
+Replaces every <hl>a</hl> character by <hl>z</hl>:
+
+<code>
+abc bad acdf
+zxc xzd zcdf
+</code>
+
+<h2>More about tr</h2>
+
+<hl>y</hl> is a synonym of <hl>tr</hl> available for historical reasons.
+There are a few modifiers and special cases with tr, that you can
+read about in the <a href="/perldoc/tr">documentation of tr</a>.
+
+
