@@ -125,9 +125,11 @@ $main::x = 23;
 The warning is: <b>Name "main::x" used only once: possible typo ...</b>
 
 Here at least it is clear where that 'main' comes from, or in
-the next example, where the Mister comes from. (hint. it is the package name
-other <a href="/global-symbol-requires-explicit-package-name">error about package names</a>
-was missing.) In the next example, the package name is 'Mister'.
+the next example, where the Mister comes from.
+(hint: The 'main' and 'Mister' are both package names.
+If you are interested, you can see another
+<a href="/global-symbol-requires-explicit-package-name">error message, involving missing package names</a>.)
+In the next example, the package name is 'Mister'.
 
 <code lang="perl">
 use strict;
