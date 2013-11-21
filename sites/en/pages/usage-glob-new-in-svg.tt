@@ -35,7 +35,7 @@ Running the above script I get the folling error message:
 
 <hl>usage: GLOB->new([FILENAME [,MODE [,PERMS]]]) at ... line 5.</hl>
 
-<h2>Always use lexical variables for file handles!<h2>
+<h2>Always use lexical variables for file handles!</h2>
 
 Besides the fact the return value of <hl>open</hl> is not
 checked, the main problem is that the programmer happened to use the
