@@ -13,7 +13,7 @@ CPAN, the <a href="http://www.cpan.org/">Comprehensive Perl Archive Network</a> 
 main front-ends. The old <a href="http://search.cpan.org/">search.cpan.org</a> for which the source code is not available publicly, and <a href="https://metacpan.org/">Meta CPAN</a>,
 that is open source and has a nice public API.
 
-I think it is great that we can make changes and improvement to Meta::CPAN.
+I think it is great that we can make changes and improvements to Meta::CPAN.
 
 Let's see how can we start doing it.
 
