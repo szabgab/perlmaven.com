@@ -59,7 +59,7 @@ Then check if everything was installed:
 
 <code>
 $ perl Makefile.PL
-<code>
+</code>
 
 One thing I noticed is that <hl>cpanm --installdeps .</hl>  did not upgrade JSON and JSON::XS. I have 2.61 instead of 2.90, and 2.34 instead of 3.01 respectively. So I installed
 them manually:
