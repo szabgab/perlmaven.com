@@ -64,7 +64,7 @@ Use of uninitialized value $x in print at ...
 </code>
 
 Salah satu di antaranya adalah yang sedang kita bahas sekarang, sementara yang lainnya dibahas di
-<a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
+<a href="http://id.perlmaven.com/penggunaan-nilai-tak-terinisiasi">penggunaan nilai tak terinisiasi</a>.
 
 
 <h2>Mana typo-nya?</h2>
@@ -75,11 +75,11 @@ Bayangkan seandainya seseorang menggunakan variabel <hl>$l1</hl>. Kemudian,
 Anda ingin coba menggunakan variabel yang sama tapi Anda menuliskan <hl>$ll</hl>.
 Tergantung jenis font yang Anda gunakan, keduanya mungkin akan terlihat sangat mirip.
 
-Atau mungkin ada variabel yang disebut <hl>$color</h> namun karena Anda orang Inggris
+Atau mungkin ada variabel yang disebut <hl>$color</hl> namun karena Anda orang Inggris
 dan secara otomatis Anda menulisnya <hl>$colour</hl> saat Anda memikirkannya.
 
 Atau ada variabel yang disebut <hl>$number_of_misstakes</hl> dan Anda tidak memerhatikan
-kesalahan tulis pada variabel asli dan Anda menulis <hl>$number_of_misatakes</hl>.
+kesalahan tulis pada variabel asli dan Anda menulis <hl>$number_of_mistakes</hl>.
 
 Kini Anda mengerti.
 
@@ -99,11 +99,11 @@ Jika Anda ingin memecahkan masalah ini, gunakan saja <b>use strict</b>!
 Seperti yang dapat Anda lihat pada contoh-contoh di atas, saya tidak menggunakan strict. Jika saya menggunakannya,
 maka bukannya mendapatkan peringatan tentang kemungkinan kesalahan tulis, saya malah akan mendapat kesalahan soal
 waktu kompilasi:
-<a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>.
+<a href="http://id.perlmaven.com/simbol-global">Global symbol requires explicit package name</a>.
 
 Hal tersebut akan terjadi bahkan jika Anda menggunakan variabel yang tidak tepat lebih dari sekali.
 
-Tentu ada saja orang yang repot-repot dan menaruh "my" di depan variabel
+Tentu ada saja orang yang mau repot dan menaruh "my" di depan variabel
 yang salah itu, tapi Anda bukan salah satunya, kan? Anda akan memikirkan masalahnya dan mencarinya hingga
 Anda menemukan nama variabel yang sesungguhnya.
 
@@ -128,7 +128,7 @@ Peringatannya adalah: <b>Name "main::x" used only once: possible typo ...</b>
 
 Di sini tampak jelas dari mana 'main' berasal, atau pada
 contoh berikutnya, dari mana Mister berasal. (petunjuk: 'main' dan 'Mister' keduanya adalah nama paket.
-Jika tertarik, Anda bisa melihat <a href="/global-symbol-requires-explicit-package-name">pesan kesalahan lainnya yang melibatkan hilangnya nama-nama paket</a>).
+Jika tertarik, Anda bisa melihat <a href="http://id.perlmaven.com/simbol-global">pesan kesalahan lainnya yang melibatkan hilangnya nama-nama paket</a>).
 Pada contoh berikutnya, nama paketnya adalah 'Mister'.
 
 <code lang="perl">
@@ -161,6 +161,4 @@ Anda tidak perlu mendeklarasikannya, tapi Anda hanya
 menggunakannya sekali saja di sini.
 (Sebenarnya belum jelas bagi saya mengapa ini menghasilkan peringatan,
 saat kode yang sama menggunakan <b>sort</b> tidak menghasilkan peringatan, tapi
-<a href="http://www.perlmonks.org/?node_id=1021888">Perl Monks</a> mungkin tahu.
-
-
+<a href="http://www.perlmonks.org/?node_id=1021888">Perl Monks</a> mungkin bisa menjawabnya).
