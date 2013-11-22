@@ -23,7 +23,7 @@ Let's see how can we start doing it.
 <a href="http://perlbrew.pl/">perlbrew-ed</a> Perl 5.18.1,
 I don't know if this will work on Windows or not.)
 The <a href="https://github.com/CPAN-API/metacpan-web">README</a> indicates
-that is wors on Win32 as well.
+that is works on Win32 as well.
 
 MetaCPAN has two main parts. The back-end that collects and processes all the
 data and the front end that displays it.
@@ -125,12 +125,12 @@ This <a href="http://www.template-toolkit.org/">Template Toolkit</a> code means
 that when the profile name is "googleplus" add a link with an img.
 
 The snippet was based on the code in the <a href="https://github.com/CPAN-API/metacpan-web/blob/master/root/author.html"">root/author.html</a> file that displays lots of profile-icons
-on the left-hand side of the individual <a href="https://metacpan.org/author/SZABGAB">author pages</a>. At least for peeople who added the profiles to their
+on the left-hand side of the individual <a href="https://metacpan.org/author/SZABGAB">author pages</a>. At least for people who added the profiles to their
 <a href="https://metacpan.org/account/profile">MetaCPAN account</a>.
 
 <h2>Linking from Google+ to MetaCPAN</h2>
 
-The other side of the "connection" was discribed in my post calling
+The other side of the "connection" was described in my post calling
 the CPAN authors to
 <a href="http://szabgab.com/claiming-your-cpan-authorship-at-google.html">connect their Google+ pages to MetaCPAN</a>.
 
@@ -148,7 +148,7 @@ Can you stop me from reaching that?
 
 <h2>ps</h2>
 
-At first I had to count the number of contributos manually,
+At first I had to count the number of contributors manually,
 but then I checked the source code of that page. It is located in
 <a href="https://github.com/CPAN-API/metacpan-web/blob/master/root/about/contributors.html">root/about/contributors.html</a> and it is using <a href="http://jquery.com/">JQuery</a>
 with an Ajax call. So I added two lines to also display the total number of contributors.
