@@ -25,8 +25,13 @@ I don't know if this will work on Windows or not.)
 The <a href="https://github.com/CPAN-API/metacpan-web">README</a> indicates
 that is works on Win32 as well.
 
-MetaCPAN has two main parts. The back-end that collects and processes all the
-data and the front end that displays it.
+<img src="https://metacpan.org/static/images/t.gif" width="180" height="34" alt="MetaCPAN Logo" />
+
+MetaCPAN has two main parts: 
+<ol>
+<li>The back-end that collects and processes all the data and provides and API.</li>
+<li>The front end that talks to this API and displays the data.</li>
+</ol>
 
 In this article we'll see how to set up a copy of the front end and how
 to make a small change to it.
