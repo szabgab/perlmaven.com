@@ -76,7 +76,7 @@ Run the tests that come with the code:
 $ perl Makefile.PL
 $ make
 $ make test
-<code>
+</code>
 
 Then following the <a href="https://github.com/CPAN-API/metacpan-web">README</a> launch
 the web site using
