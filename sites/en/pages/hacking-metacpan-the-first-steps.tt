@@ -25,7 +25,7 @@ I don't know if this will work on Windows or not.)
 The <a href="https://github.com/CPAN-API/metacpan-web">README</a> indicates
 that is works on Win32 as well.
 
-<img src="https://metacpan.org/static/images/t.gif" width="180" height="34" alt="MetaCPAN Logo" />
+<img src="/img/metacpan-logo.png" alt="MetaCPAN Logo" />
 
 MetaCPAN has two main parts: 
 <ol>
