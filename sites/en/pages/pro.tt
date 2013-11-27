@@ -22,6 +22,7 @@ series of articles:
   <li><a href="/mojolicious">Mojolicious</a> the light-weight web framework</li>
   <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers</li>
   <li><a href="/dancer">Perl Dancer</a>, light-weight web framework</li>
+  <li><a href="/mongodb">Perl and MongoDB</a>, the NoSQL database</li>
 </ul>
 
 

@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on August 30, 2013.
+parts are being published every few days. The latest one was published on November 21, 2013.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -130,7 +130,7 @@ to practice what you have learned.
 <li>Parameter passing and checking for subroutines</li>
 <li><a href="/variable-number-of-parameters">Variable number of parameters</a></li>
 <li>Returning a list</li>
-<li>Recursive subroutines</li>
+<li><a href="/recursive-subroutines">Recursive subroutines</a></li>
 </ol>
 
 <b>Hashes, arrays</b>
@@ -138,6 +138,7 @@ to practice what you have learned.
 <li><a href="/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
 <li>exists, delete hash elements</li>
 <li><a href="/how-to-sort-a-hash-in-perl">Sorting a hash</a></li>
+<li><a href="/count-words-in-text-using-perl">Count word frequency in a text file</a></li>
 </ol>
 
 <b>Regular Expressions</b>
@@ -162,8 +163,9 @@ to practice what you have learned.
 <li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
 <li>Windows/DOS commands: del, ren, dir</li>
 <li>File globbing (Wildcards)</li>
-<li>Directory handles</li>
-<li>Traversing directory tree (find)</li>
+<li>Directory handles.</li>
+<li>Traversing directory tree <a href="/recursive-subroutines">manually with recursion</a>,
+<a href="/traversing-the-filesystem-using-a-queue">manually using a queue</a> and using find.</li>
 </ol>
 
 <b>CPAN</b>
@@ -173,7 +175,7 @@ to practice what you have learned.
 <li>Locating and evaluating CPAN modules</li>
 <li>Downloading and installing Perl Modules from CPAN</li>
 <li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
-<li>How to change @INC to a relative directory</li>
+<li><a href="/pro/how-to-add-a-relative-directory-to-inc">How to change @INC to a relative directory</a> (for <a href="/pro">Pro</a> subscribers.)</li>
 <li>local::lib</li>
 </ol>
 
@@ -198,6 +200,7 @@ to practice what you have learned.
 <li><a href="/object-oriented-perl-using-moose">Object Oriented Perl using Mooses</a></li>
 <li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a></li>
 <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
+<li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
 </ol>
 
 <b>Object Oriented Perl with Moo</b>

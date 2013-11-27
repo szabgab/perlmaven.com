@@ -132,6 +132,13 @@ to let people in if their name starts with an F.
 $_ =~ /^F/ ? ($_ => 1) : ()
 </code>
 
+<h2>Schwartzian transform</h2>
+
+One of the many uses of <hl>map</hl> is in the 
+<a href="/how-to-sort-faster-in-perl">Schwartzian transform</a>
+improving the speed of <hl>sort</hl> in certain cases.
+
+
 <h2>perldoc</h2>
 
 For further explanation with a couple of strange cases,

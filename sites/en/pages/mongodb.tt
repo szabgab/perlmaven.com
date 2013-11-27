@@ -1,0 +1,32 @@
+=title MongoDB and Perl
+=timestamp 2013-11-24T18:13:11
+=indexes MongoDB
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+The beginning of a series of articles on how to use
+<a href="http://mongodb.org/">MongoDB</a>, the open-source NoSQL datyabase
+with the Perl Programming language.
+
+=abstract end
+
+<h2>Pro</h2>
+
+Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
+
+<ul>
+  <li><a href="/pro/getting-started-with-mongodb-using-perl-insert-and-update">Getting started with MongoDB using Perl - insert and simple update</a></li>
+  <li><a href="/pro/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
+  <li><a href="/pro/updating-mongodb-with-perl">Updating MongoDB using Perl</a></li>
+</ul>
+
+<!--
+  <li><a href=""></a></li>
+-->
+
+
