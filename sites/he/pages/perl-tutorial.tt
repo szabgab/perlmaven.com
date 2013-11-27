@@ -30,6 +30,8 @@
    <li><a href="/for-loop-in-perl">לולאת for  בפרל</a></li>
    <li><a href="/while-loop">לולאת while</a></li>
    <li><a href="/filtering-values-with-perl-grep">סינון ערכים באמצעות grep  של פרל</a></li>
+   <li><a href="/perl-arrays">מערכים בפרל</a></li>
+   <li><a href="/subroutines-and-functions-in-perl">סאב-רוטינות(שיגרות) ופונקציות בפרל</a></li>
 <!--
   <li><a href=""></a></li>
 -->
