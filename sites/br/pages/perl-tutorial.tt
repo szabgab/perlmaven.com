@@ -78,7 +78,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li><a href="/funcoes-para-manipular-texto-lc-uc-index-substr">Funções para manipular texto: length, lc, uc, index, substr</a></li>
 <li><a href="/jogo-de-adivinhar-numeros">O jogo de adivinhar números (rand, int)</a></li>
 <li><a href="/laco-while"> O laço while</a></li>
-<li>Escopo de variáveis em Perl</li>
+<li><a href="/escopo-das-variaveis-em-perl">Escopo de variáveis em Perl</a></li>
 </ol>
 
 <b>Arquivos</b>
