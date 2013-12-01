@@ -1,0 +1,113 @@
+=title IO::Socket::INET configuration failed
+=timestamp 2006-12-05T08:25:30
+=indexes IO::Socket::INET, Net::SMTP::SSL
+=status show
+=author 0
+=archive 0
+=comments 0
+=social 1
+
+=abstract start
+
+=abstract end
+
+Posted on 2006-12-05 08:25:30-08 by ravigowda
+
+I am trying to connect to SMTPS using Net::SMTP::SSL; library. while trying to connect I am getting an error which says.
+
+<code>
+IO::Socket::INET configuration failederror:00000000:lib(0):func(0):reason(0)
+</code>
+
+I am able to connect to SMTP. I have tried the same with telnet and telnets which was successfull. Can anyone please give me some ideas about this error? Thanks in Advance Ravi Gowda
+
+Posted on 2007-04-21 12:05:55-07 by edinburghrob in response to 3706
+
+Hi Ravi Gowda, did you manage to find a solution for your problem? I seem to have the same error message. No idea what it is.
+I'm thinking I've not installed Net::SMTP::SSL correctly. best wishes --Rob
+
+Posted on 2007-04-22 17:42:57-07 by noxxi in response to 4948
+
+Are you sure you talk to an SMTP server which talks SSL directly?
+
+There are two ways to do SSL within SMTP, one is to just tunnel SMTP within an SSL connection (this is what Net::SMTP::SSL supports)
+and the other is to have a normal SMTP server (usually sitting at port 25), start a unencrypted session and then switch with
+STARTTLS command to an SSL session. This is unsupported by Net::SMTP::SSL.
+
+If you are sure that you try to use Net::SMTP::SSL in the intended way (tunnel SMTP through SSL instead STARTTLS on plain connection)
+you could post an example program which shows your problem (please with the real server) so I could have a look at it.
+
+-- Steffen
+
+Posted on 2007-04-27 20:13:26-07 by keanan007 in response to 4961
+
+I have the exact same issue here's my test program:
+
+<code lang="perl">
+use Net::SMTP::SSL;
+
+$IO::Socket::SSL::DEBUG = 1;
+
+my $smtp = Net::SMTP::SSL->new( 'SMTP',
+Host => "mail.peakpeak.com",
+Debug => 1,
+Port => '465');
+
+if(defined $smtp)
+{
+        print "'$smtp'\n";
+} else {
+
+        die "SMTP is undefined\n$@$!";
+
+}
+
+$smtp->quit;
+</code>
+
+Here's the output of this program:
+
+<code>
+CA file certs/my-ca.pem not found, using CA path instead.
+IO::Socket::INET configuration failederror:00000000:lib(0):func(0):reason(0)
+ at test.pl line 5
+SMTP is undefined
+Net::SMTP::SSL: Bad service '' at test.pl line 15.
+</code>
+
+Posted on 2007-04-27 20:20:19-07 by keanan007 in response to 5003
+
+Also some additional information: I get the same exact error when I have the initial call as:
+
+<code lang="perl">
+my $smtp = Net::SMTP::SSL->new(
+Host => "mail.peakpeak.com",
+Debug => 1,
+Port => '465');
+</code>
+
+or
+
+<code lang="perl">
+my $smtp = Net::SMTP::SSL->new("mail.peakpeak.com",
+Debug => 1,
+Port => '465');
+</code>
+
+And I have another perl program on the same machine (In the same directory even) that uses
+IO::Socket::SSL to make https requests (Via LWP::UserAgent), which works perfectly. I'm not actually sure this is an issue
+directly related to IO::Socket::SSL and not Net::SMTP or Net::SMTP::SSL (Although the latter simply substitutes IO::Socket::SSL for IO::Socket::INET in the former)
+
+Posted on 2007-04-30 07:51:31-07 by noxxi in response to 5004
+
+Problem is fixed with IO::Socket::SSL version 1.06 which I just uploaded to CPAN.
+Problem was, that IO::Socket::SSL "sanitized" the Arguments it gets by setting undef stuff to ''.
+This way it gave a LocalPort of '' to IO::Socket::INET which did not like it.
+This was probably broken long long ago.
+
+-- Steffen
+
+(This article is based on a thread on the CPAN::Forum.)
+<!-- from http://cpanforum.com/threads/3706 -->
+
+
