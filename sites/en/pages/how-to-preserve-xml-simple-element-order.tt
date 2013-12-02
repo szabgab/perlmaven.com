@@ -1,0 +1,43 @@
+=title How to preserve XML::Simple element order
+=timestamp 2007-12-12T01:10:31
+=indexes XML::Simple, XML::LibXML
+=status show
+=author 0
+=archive 0
+=comments 0
+=social 1
+
+=abstract start
+
+=abstract end
+
+Posted on 2007-12-12 01:10:31-08 by tirto
+
+hi,
+in the faq doc , it is mentioned that in the future Tie::IxHash could be use in XML::Simple.
+i am using v2.18 at the moment, is there any hack to preserve the order of the data in the hashref?
+thanks in advance, 
+
+tirto
+
+Posted on 2007-12-12 01:36:21-08 by grantm in response to 6670
+
+Retaining element order is not and never will be a feature of XML::Simple.
+For some XML document types you might be able to hack it in by subclassing
+XML::Simple and overriding the new_hashref() method to supply a hashref tied to Tie::IxHash.
+That could solve the ABC case but it won't solve the ABA case.
+
+The short answer is that if you care about element order then you should not use XML::Simple.
+XML::LibXML is an excellent alternative which for many use cases is really no harder
+to use than XML::Simple - as described in this article.
+
+Posted on 2007-12-12 23:38:23-08 by tirto in response to 6671
+
+thanks for the info. 
+-tirto
+
+
+(This article is based on a thread on the CPAN::Forum.)
+<!-- from http://cpanforum.com/threads/6670 -->
+
+
