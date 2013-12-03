@@ -171,7 +171,3 @@ We will get an <hl>Admin limit exceeded</hl> error code.
 If we don't provide a <hl>filter</hl>, or if it is formatted incorrectly, we get a
 <hl>Bad filter</hl> error code.
 
-
-<code lang="perl">
-</code>
-
