@@ -66,7 +66,7 @@ Also, as far as I understand the permission is given to a third-party applicatio
 
 Anyway, once the connection is established, the events in the Skype client will generate call-backs in our script. We are interested in the user-related events, so register the event handler <hl>$skype->user</hl> passing an anonymous subroutine to it.
 
-When a user changes their status, this function will be called and two values will be passed. The first one is a <a href="https://metacpan.org/pod/Skype::Any::Object::User">Skype::Any::Object::User</a> object and the second one is the new status of the user. In the short time I ran this script I only saw the strings <hl>NA</hl> and <hl>ONLINE</hl>.
+When a user changes their status, this function will be called and two values will be passed. The first one is a <a href="https://metacpan.org/pod/Skype::Any::Object::User">Skype::Any::Object::User</a> object and the second one is the new status of the user. In the short time I ran this script I only saw the strings <hl>NA</hl>, <hl>OFFLINE</hl>, and <hl>ONLINE</hl>.
 
 The Skype::Any::Object::User has all kinds of interesting methods providing details about that specific contact, but the most interesting to us is the <hl>handle</hl> field. This is the unique Skype ID of the person.
 
