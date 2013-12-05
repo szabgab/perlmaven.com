@@ -84,7 +84,7 @@ my %vip = (
 
 $skype->user(sub {
 	my ($user, $status) = @_;
-	next if $status ne 'ONLINE';
+	return if $status ne 'ONLINE';
 	if (exists $vip{ $user->{handle} }) {
 		system qq{say "$vip{ $user->{handle} }"};
 	}
