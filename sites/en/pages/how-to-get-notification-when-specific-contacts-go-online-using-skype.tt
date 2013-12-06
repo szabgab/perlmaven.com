@@ -46,11 +46,11 @@ use Skype::Any;
 my $skype = Skype::Any->new(name => "Selective Notification Agent");
 
 $skype->user(sub {
-	my ($user, $status) = @_;
-	say $status;
-	say $user->handle;
-	say $user->fullname;
-	say '---';
+    my ($user, $status) = @_;
+    say $status;
+    say $user->handle;
+    say $user->fullname;
+    say '---';
 });
 
 $skype->run;
@@ -78,16 +78,18 @@ I could create a hash of <hl>"username" => "Text message"</hl> pairs for the imp
 
 <code lang="perl">
 my %vip = (
-	mothers_handle => 'Your mom is online!',
+    mothers_handle => 'Your mom is online!',
     handle_of_boss => 'Pretend you are busy working!',
 );
 
 $skype->user(sub {
-	my ($user, $status) = @_;
-	return if $status ne 'ONLINE';
-	if (exists $vip{ $user->{handle} }) {
-		system qq{say "$vip{ $user->{handle} }"};
-	}
+    my ($user, $status) = @_;
+    return if $status ne 'ONLINE';
+    my $handle = $user->handle;
+    if (exists $vip{ $handle }) {
+		say $vip{ $user->handle };
+        system qq{say "$vip{ $handle }"};
+    }
 });
 </code>
 
