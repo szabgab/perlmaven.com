@@ -1,0 +1,70 @@
+=title Contributing to a Perl module on CPAN (using vim and Github)
+=timestamp 2013-11-09T23:55:01
+=indexes CPAN, git, Github, MIME::Lite
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+In the article on <a href="/how-to-prepare-for-a-perl-job-interview">how to prepare for a Perl job interview</a>,
+I mentioned that contribution to an Open Source project is an excellent way to learn new skils and
+make yourself marketable. In this article and screencast that was created in July 2011, I showed
+how contribute a little imprvement to a Perl module on CPAN.
+
+=abstract end
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/aB90XVLWyYk" frameborder="0" allowfullscreen></iframe>
+
+It is not recommend solution any more, but back then I picked the
+<a href="https://metacpan.org/pod/MIME::Lite">MIME::Lite</a> distribution
+as it had the annoying habit to ask me if I want to add optional dependencies.
+Even when they were already installed on my system.
+It even asked me if I want to install <hl>File::Basename</hl> which is a standard module.
+
+The path of action was:
+
+Search on <a href="http://metacpan.org/">MetaCPAN</a> and locate 
+<a href="https://metacpan.org/pod/MIME::Lite">MIME::Lite</a> 
+to see where the source code lives. This module did not provide the information in
+its META file nor in its documentation. (BTW Already back then I saw that it was already
+added in the not-yet-released version, and since then the new version was uploaded).
+
+Anyway, In this case I was lucky as I knew Ricardo (RJBS) uses Github so I went to
+<a href="https://github.com/rjbs/">his Github page</a> and looked for the module.
+I found the <a href="https://github.com/rjbs/mime-lite">repository of MIME::Lite</a>
+and <b>forked</b> it by pressing the <b>fork</b> button.
+
+Then I cloned <a href="https://github.com/szabgab/mime-lite">my version of MIME::Lite</a>
+to my disk using
+
+<code>
+$ git clone git@github.com:szabgab/mime-lite.git
+</code>
+
+I had an editing session using <b>vim</b>, in which I made some <b>refactoring</b> of the code
+and changed it, so it will first check if the optional modules are already installed
+or not. If they are installed the version number is also checked if it is smaller
+than the <i>required optional</i> version number.
+
+Once this was fixed I added back the changed file and committed it to my local Git repository:
+
+<code>
+$ git add Makefile.PL
+$ git ci -m'make optional modules optional'
+</code>
+
+Then pushed it to my remote repository on Github.
+
+<code>
+$ git push
+</code>
+
+Then went back to <a href="https://github.com/szabgab/mime-lite">my version of MIME::Lite</a>
+and clicked on the <b>Pull Request</b> button to send a message to Ricardo asking him 
+to integrate the change.
+
+That's it. A very small improvement to CPAN in 16 minutes.
+
