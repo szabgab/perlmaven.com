@@ -16,7 +16,7 @@ how contribute a little imprvement to a Perl module on CPAN.
 
 =abstract end
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/aB90XVLWyYk" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/aB90XVLWyYk" frameborder="0" allowfullscreen></iframe>
 
 It is not recommend solution any more, but back then I picked the
 <a href="https://metacpan.org/pod/MIME::Lite">MIME::Lite</a> distribution
