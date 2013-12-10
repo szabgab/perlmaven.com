@@ -14,7 +14,7 @@
 Eğer bir Perl scripti yazdi iseniz, mesela adı <b>programming.pl</b> olsun,
 kullanıcılar komut satırından <b>perl programming.pl</b> komutunu kullanarak çalıştırabilirler .
 
-Ayrica şu şekilde komut satırı argümanları gecebilirler. <b>perl programming.pl -a --machine remote /etc</<b>.
+Ayrica şu şekilde komut satırı argümanları gecebilirler. <b>perl programming.pl -a --machine remote /etc</</b>.
 
 Kullanıcıların bu şekilde parametre girmesini kimse engelleyemez fakat script bu değeleri önemsemeyecektir.
 Bu durumda soru şu, programcı kişi, eğer değer geçilmiş ise bu değerleri nasıl bilecek?
