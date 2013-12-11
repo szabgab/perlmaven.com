@@ -93,6 +93,8 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 * Russian                 ru
 * Spanish                 es
 * Telugu                  te
+* Turkish                 tr
+
 
 
 * The file names (that become the URLs) should be in LOCAL_LANGUAGE, but use only ASCII characters.

@@ -54,6 +54,10 @@ te:
   url: http://te.perlmaven.com/
   english: Telugu
   name: తెలుగు
+tr:
+  url: http://tr.perlmaven.com/
+  english: Turkish
+  name: Türkçe
 tw:
   url: http://tw.perlmaven.com/
   english: Chinese (traditional)
