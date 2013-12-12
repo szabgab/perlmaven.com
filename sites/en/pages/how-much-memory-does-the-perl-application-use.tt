@@ -188,7 +188,7 @@ If you could add this checking to your automatic tests though...
 
 <a href="https://metacpan.org/pod/Test::Memory::Usage">Test::Memory::Usage</a> is a wrapper around
 <a href="https://metacpan.org/pod/Memory::Usage">Memory::Usage</a> that you can use to makes
-sure your module won't start to use a lot of memory later on.
+sure your module won't start to use a lot of memory later on. On Linux, at least.
 
 
 
