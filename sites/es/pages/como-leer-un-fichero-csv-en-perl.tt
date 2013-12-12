@@ -1,9 +1,11 @@
 =title How to read a CSV file using Perl?
-=timestamp 2012-07-28T12:45:56
+=timestamp 2013-12-07T10:45:56
 =indexes CSV, split, Text::CSV, Text::CSV_XS
 =status show
+=original how-to-read-a-csv-file-using-perl
 =books beginner_book
 =author szabgab
+=translator davidegx
 =archive 1
 =comments 1
 =social 1
@@ -11,7 +13,7 @@
 =abstract start
 
 Leer y procesar ficheros de texto es una de las tareas típicas realizadas en Perl. Por ejemplo
-a menudo puedes encontrar un <a href="http://es.wikipedia.org/wiki/CSV">fichero CSV</a> (donde CSV quiere decir "Comma-separated values")
+puedes encontrar un <a href="http://es.wikipedia.org/wiki/CSV">fichero CSV</a> (donde CSV quiere decir "Comma-separated values")
 y necesitas extraer información del mismo. Veremos un ejemplo con tres soluciones.
 
 Buena, mejor y mejor todavía.
@@ -204,7 +206,7 @@ Un caso de común que hará fallar a esta llamada es si hay unas comillas que no
 
 Si falla la parte <hl>else</hl> mostrará un warning y continuará con la siguiente línea.
 
-Si tiene existo llamaremos al método <hl>fields</hl> que devolverá la partes
+Si tiene éxito llamaremos al método <hl>fields</hl> que devolverá la partes
 en las que cortamos la cadena anteriormente. Después podemos obtener el tercer elemento (2º índice) que
 nos da el número requerido.
 
@@ -261,7 +263,7 @@ caracteres UTF-8 son procesados adecuadamente.
 
 Además, en este ejemplo el método <hl>getline</hl> devuelve una referencia a un array
 - algo que todavía no hemos visto - por lo que para obtener el tercer elemento (2º índice)
-necesitamos dereferenciarlo y usar la flecha para obtener el valor: <hl>$fields->[2]</hl>.
+necesitamos desreferenciarlo y usar la flecha para obtener el valor: <hl>$fields->[2]</hl>.
 
 Por último,  después de terminar el bucle necesitamos comprobar si hemos llegado al final
 del fichero (end-of-file o eof). getline devolverá falso tanto si hemos llegado al final
@@ -270,7 +272,7 @@ el final del fichero y si no es así mostramos un mensaje de error.
 
 <h2>Hofeherke</h2>
 
-Por cierto, en caso de que te lo estuvieses preguntado, los valores en el fichero CSV
+En caso de que te lo estuvieses preguntado, los valores en el fichero CSV
 son los nombres de los <a href="http://hu.wikipedia.org/wiki/H%C3%B3feh%C3%A9rke_%C3%A9s_a_h%C3%A9t_t%C3%B6rpe_%28film,_1937%29">Los siete enanitos</a>.
 
 En Húngaro.
