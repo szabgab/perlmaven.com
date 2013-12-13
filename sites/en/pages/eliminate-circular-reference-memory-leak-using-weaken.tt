@@ -135,3 +135,18 @@ No increase in memory usage even after 10,000 iterations.
 
 (Just a reminder: unfortunately Memory::Usage only works on Linux.)
 
+<h2>How to use this?</h2>
+
+We don't yet have a tool to easily find the cause of a memory-leak, but we have
+<hl>Memory::Usage</hl> that we can use to try to locate the area of code where
+the memory usage suddenly jumps.
+
+Then, if we try to see if there are data structures with circular reference
+and weather those are causing the excessive memory usage.
+
+
+
+
+
+
+
