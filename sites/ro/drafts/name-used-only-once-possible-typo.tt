@@ -1,9 +1,11 @@
-=title Name "main::x" used only once: possible typo at ...
+=title Denumirea "main::x" este folosită doar o dată: posibilă eroare la ...
 =timestamp 2013-03-05T20:31:10
 =indexes warnings, strict, possible typo
 =status show
+=original name-used-only-once-possible-typo
 =books beginner_book
 =author szabgab
+=translator stefansbv
 =archive 1
 =comments 1
 =social 1
@@ -66,7 +68,7 @@ Use of uninitialized value $x in print at ...
 </code>
 
 Pe una dintre ele o discutăm acum, pe cealaltă o s-o discutăm în
-<a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
+<a href="/folosirea-unei-valori-neinitializate">Folosirea unei valori neinițializate</a>.
 
 
 <h2>Care este greșeala de scriere aici?</h2>
@@ -137,7 +139,8 @@ Avertizarea este: <b>Name "main::x" used only once: possible typo ...</b>
 Aici, cel puțin, este clar de unde vine acel 'main', sau în exemplul
 următor, de unde vine acel 'Mister'.  (sugestie: 'main' și 'Mister'
 sunt ambele nume de pachete.  Dacă ești interesat, vezi și
-<a href="/global-symbol-requires-explicit-package-name">error message, involving missing package names</a>.)
+<a href="/simbolul-global-necesita-nume-de-pachet-explicit">mesajul de
+eroare care se referă la nume de pachete care lipsesc</a>.
 În următorul exemplu, numele pachetului este 'Mister'.
 
 <code lang="perl">
@@ -171,4 +174,4 @@ trebuiesc declarate, dar sunt folosite o singură dată aici.
 (De fapt îmi este neclară cauza pentru care aceasta generează avertizarea,
 în timp ce același cod care folosește funcția <b>sort</b> nu o generează, dar
 <a href="http://www.perlmonks.org/?node_id=1021888">Perl Monks</a> ar
-putea conține răspunsul.
+putea conține răspunsul).
