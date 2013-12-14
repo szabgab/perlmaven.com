@@ -48,11 +48,11 @@ print "$x\n";    # zzz
 </code>
 
 Da.  În această versiune Perl vede subrutina hello(), o execută și
-asignează valoarea returnată la $x.
+atribuie valoarea returnată lui $x.
 
 Apoi, dacă cineva mută subrutina la sfârșitul fișierului, după
-asignare, Perl pe neașteptate nu mai vede subrutina în momentul
-asignării, deci obținem vechea ... de avea "hello" în $x.
+atribuire, Perl pe neașteptate nu mai vede subrutina în momentul
+atribuirii, deci obținem vechea ... de avea "hello" în $x.
 
 Nu, nu vrei să intri într-o astfel de încurcătură accidental.  Sau
 chiar mai probabil, niciodată.  Având <hl>use strict</hl> în cod, Perl
