@@ -1,0 +1,174 @@
+=title Name "main::x" used only once: possible typo at ...
+=timestamp 2013-03-05T20:31:10
+=indexes warnings, strict, possible typo
+=status show
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+Dacă întâlnești această avertizare într-un script Perl, ești în mare necaz.
+
+=abstract end
+
+<h2>Atribuire valoare la o variabilă</h2>
+
+Atribuirea unei valori la o variabilă care nu va fi folosită
+niciodată, sau folosirea unei variabile o dată fără să-i fi fost
+atribuită o valoare vreodată, sunt cazuri foarte rar corecte în orice
+cod.
+
+Probabil singurul caz "legitim", este dacă ai făcut o greșeală de
+scriere și așa te-ai ales cu o variabilă care este folosită o singură
+dată.
+
+Aici este un exemplu de cod în care noi <b>vom atribui o valoare unei
+variabile fără să o folosim</b>:
+
+<code lang="perl">
+use warnings;
+
+$x = 42;
+</code>
+
+Va genera o avertizare ca aceasta:
+
+<code>
+Name "main::x" used only once: possible typo at ...
+</code>
+
+Partea cu "main::" și lipsa caracterului $ ar putea fi derutantă
+pentru tine.  Partea cu "main::" este prezentă pentru că implicit
+fiecare variabilă în Perl face parte din spațiul de denumiri "main".
+Există de asemenea un număr de lucruri care pot fi denumite "main::x"
+și doar una dintre ele are caracterul $ la început.  Dacă acesta sună
+un pic derutant, nu-ți face griji.  Este derutant, dar să sperăm că nu
+va trebui să ai de a face cu acesta prea mult timp.
+
+<h2>Fetch value only</h2>
+
+Dacă se întâmplă să <b>foloseşti o variabilă doar o dată</b>
+
+<code lang="perl">
+use warnings;
+
+print $x;
+</code>
+
+probabil că vei primi două avertizări:
+
+<code>
+Name "main::x" used only once: possible typo at ...
+Use of uninitialized value $x in print at ...
+</code>
+
+Pe una dintre ele o discutăm acum, pe celaltă o s-o discutăm în
+<a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
+
+
+<h2>Care este greșeala de scriere aici?</h2>
+
+Ai putea întreba.
+
+Imaginează-ți că cineva folosește o variabilă numită <hl>$l1</hl>.
+Mai târziu, vi tu și dorești să folosești aceeași variabilă dar
+scrii <hl>$ll</hl>.  În funcție de fontul folosit ar putea arăta
+similar.
+
+Sau poate a fost o variabilă numită <hl>$color</hl> dar ești britanic
+și tastezi automat <hl>$colour</hl> când te gândești la acel lucru.
+
+Sau există o variabilă numită <hl>$number_of_misstakes</hl> și nu observi
+greșeala din numele variabilei originale și scrii <hl>$number_of_mistakes</hl>.
+
+Ai prins idea.
+
+Dacă ești norocos, faci acestă eroare doar o dată, dar dacă nu ești
+așa norocos , și folosești variabila incorectă de două ori, această
+avertizare nu va mai apare.  La urma urmelor dacă folosești aceeași
+variabilă de două ori, ai probabil un motiv întemeiat.
+
+Deci, cum pot să evit acest lucru?
+
+Întâi, încearcă să eviți numele de variabile care conțin caractere
+ambigue și fi foarte atent când tastezi nume de variabile.
+
+Dacă vrei să rezolvi această problemă definitiv, folosește <b>use strict</b>!
+
+<h2>use strict</h2>
+
+Așa cum poți vedea în exemplele de mai sus, nu am folosit <b>strict<b>.
+Dacă l-aș fi folosit, atunci în loc să primesc o avertizare pentru o
+
+As you can see in the above examples, I have not used strict. If I was using it,
+then instead of getting a warning about possible typo, I'd get a compile time
+error:
+<a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>.
+
+That would happen even if you used the incorrect variable more than once.
+
+Then of course there are people who would rush and paste "my" in front of the incorrect
+variable, but you are not one of those. are you? You would think about the problem and search till
+you find the name of the real variable.
+
+The most common way to see this warning is if you are not using strict.
+
+And then you are in deep trouble.
+
+<h2>Other cases while using strict</h2>
+
+As GlitchMr and an Anonymous commenter pointed out, there are a few other cases:
+
+This code, can also generate it
+
+<code lang="perl">
+use strict;
+use warnings;
+
+$main::x = 23;
+</code>
+
+Avertizarea este: <b>Name "main::x" used only once: possible typo ...</b>
+
+Here at least it is clear where that 'main' comes from, or in
+the next example, where the Mister comes from.
+(hint: The 'main' and 'Mister' are both package names.
+If you are interested, you can see another
+<a href="/global-symbol-requires-explicit-package-name">error message, involving missing package names</a>.)
+In următorul exemplu, numele pachetului este 'Mister'.
+
+<code lang="perl">
+use strict;
+use warnings;
+
+$Mister::x = 23;
+</code>
+
+Avertizarea este <b>Name "Mister::x" used only once: possible typo ...</b>.
+
+Următorul exemplu de asemenea generează avertizarea.  De două ori:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use List::Util qw/reduce/;
+print reduce { $a * $b } 1..6;
+</code>
+
+<code>
+Name "main::a" used only once: possible typo at ...
+Name "main::b" used only once: possible typo at ...
+</code>
+
+Aceasta se întâmplă pentru că <hl>$a</hl> și <hl>$b</hl> sunt
+variabile speciale folosite în funcția de sortare și în consecință nu
+trebuiesc declarate, dar sunt folosite o singură dată aici.
+
+(De fapt îmi este neclară cauza pentru care această generează avertizarea,
+în timp ce același cod care folosește funcția <b>sort</b> nu o generează, dar
+<a href="http://www.perlmonks.org/?node_id=1021888">Perl Monks</a> ar
+putea ști.

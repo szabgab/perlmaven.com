@@ -1,6 +1,7 @@
 En = Ro
 -------
 
+assign            = atribui
 built in          = ?integrată în?
 directory         = director, s. n., pl. directoare
 file handle       = ?referință mâner?
