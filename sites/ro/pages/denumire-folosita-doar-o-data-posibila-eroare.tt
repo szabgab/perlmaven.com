@@ -102,7 +102,7 @@ Dacă vrei să rezolvi această problemă definitiv, folosește <b>use strict</b
 
 <h2>use strict</h2>
 
-Așa cum poți vedea în exemplele de mai sus, nu am folosit <b>strict<b>.
+Așa cum poți vedea în exemplele de mai sus, nu am folosit <b>strict</b>.
 Dacă l-aș fi folosit, atunci în loc să primesc o avertizare pentru o
 posibilă eroare de scriere, ași primi o eroare de compilare:
 <a href="/simbolul-global-necesita-nume-de-pachet-explicit">Simbolul global necesită un nume de pachet explicit</a>.
