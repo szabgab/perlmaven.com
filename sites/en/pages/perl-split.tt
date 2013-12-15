@@ -1,0 +1,255 @@
+=title Perl split - to cut up a string into pieces (explode)
+=timestamp 2013-12-15T23:30:01
+=indexes split, $_, explode
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+PHP has the <hl>explode</hl> function,
+Python, Ruby and JavaScript all have <hl>split</hl> methods.
+
+In Perl the function is called <hl>split</hl>.
+
+=abstract end
+
+<h2>Syntax of split</h2>
+
+<hl>split REGEX, STRING</hl> will split the STRING at every match of the REGEX.
+
+<hl>split REGEX, STRING, LIMIT</hl> where LIMIT is a positive number. This will split the the STRING at every match of the REGEX, but will stop after it found LIMIT-1 matches.
+So the number of elements it returns will be LIMIT or less.
+
+<hl>split REGEX</hl> - If STRING is not given, splitting the content of
+<a href="/the-default-variable-of-perl">$_, the default variable of Perl</a> at every
+match of the REGEX.
+
+<hl>split</hl> without any parameter will split the content of <hl>$_</hl> using <hl>/\s+/</hl> as REGEX.
+
+<h2>Simple cases</h2>
+
+<hl>split</hl> returns a list of strings:
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+
+my $str = "ab cd ef gh ij";
+my @words = split / /, $str;
+print Dumper \@words;
+</code>
+
+The output is:
+
+<code>
+$VAR1 = [
+          'ab',
+          'cd',
+          'ef',
+          'gh',
+          'ij'
+        ];
+</code>
+
+<h2>Limit the number of parts</h2>
+
+<hl>split</hl> can get a 3rd parameter that will limit the number of elements returned:
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+
+my $str = "ab cd ef gh ij";
+my @words = split / /, $str, 2;
+print Dumper \@words;
+</code>
+
+The result:
+
+<code>
+$VAR1 = [
+          'ab',
+          'cd ef gh ij'
+        ];
+</code>
+
+
+<h2>Assign to scalars</h2>
+
+Instead of assigning the result to a single array, we can also assign
+it to a list os scalar variables:
+
+<code lang="perl">
+my $str = "root:*:0:0:System Administrator:/var/root:/bin/sh";
+my ($username, $password, $uid, $gid, $real_name, $home, $shell) = split /:/, $str;
+print "$username\n";
+print "$real_name\n";
+</code>
+
+The output is like this:
+
+<code>
+root
+System Administrator
+</code>
+
+Another way people often write this is the following:
+First they assign the results to and array, and then they copy the specific 
+elements of the array:
+
+<code lang="perl">
+my $str = "root:*:0:0:System Administrator:/var/root:/bin/sh";
+my @fields = split /:/, $str;
+my $username = $fields[0];
+my $real_name = $fields[4];
+print "$username\n";
+print "$real_name\n";
+</code>
+
+This is longer and I think less clear.
+
+A slightly better way is to use an <b>array slice</b>:
+
+<code lang="perl">
+my $str = "root:*:0:0:System Administrator:/var/root:/bin/sh";
+my @fields = split /:/, $str;
+my ($username, $real_name) = @fields[0, 4];
+print "$username\n";
+print "$real_name\n";
+</code>
+
+Please note, in the <b>array slice</b> <hl>@fields[0, 4];</hl> we
+have a leading <hl>@</hl> and not a leading <hl>$</hl>.
+
+
+If we are really only interested in the elements 0 and 4, the we could
+use array slice on the fly:
+
+<h2>Slice on the fly</h2>
+
+
+<code lang="perl">
+my $str = "root:*:0:0:System Administrator:/var/root:/bin/sh";
+my ($username, $real_name) = (split /:/, $str)[0, 4];
+print "$username\n";
+print "$real_name\n";
+</code>
+
+Here we don't build an array, but as we put the whole expression
+in parentheses, we can put an index on them and fetch only elements 0 and 4 from
+the temporary (and invisible) array that was created for us:
+<hl>(split /:/, $str)[0, 4]</hl>
+
+
+<h2>Split on more complex regex</h2>
+
+The separator of <hl>split</hl> is a regex. So far in the examples we used
+the very simple regex <hl>/ /</hl> matching a single space. We can use any regex:
+For example if we have strings that look like these:
+
+<code>
+fname    = Foo
+lname =    Bar
+email=foo@bar.com
+</code>
+
+We want to split where the <hl>=</hl> sign and disregard the spaces around it.
+We can use the following line:
+
+<code lang="perl">
+my ($key, $value) = split /\s*=\s*/, $str
+</code>
+
+This will include any white-space character around the <hl>=</hl> sign in
+the part that cuts the pieces.
+
+
+<h2>Split on multiple characters</h2>
+
+For example we might have a string built up from
+pairs concatenated with <hl>&</hl>. The two parts of
+each pair is separated by <hl>=</hl>.
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+
+my $str = 'fname=Foo&lname=Bar&email=foo@bar.com';
+my @words = split /[=&]/, $str;
+print Dumper \@words;
+</code>
+
+<code>
+$VAR1 = [
+          'fname',
+          'Foo',
+          'lname',
+          'Bar',
+          'email',
+          'foo@bar.com'
+        ];
+</code>
+
+Of course, if we know these are key-value pairs, then we might want to assign the
+result to a hash instead of an array:
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+
+my $str = 'fname=Foo&lname=Bar&email=foo@bar.com';
+my %user = split /[=&]/, $str;
+print Dumper \%user;
+</code>
+
+And the result looks much better:
+
+<code>
+$VAR1 = {
+          'fname' => 'Foo',
+          'email' => 'foo@bar.com',
+          'lname' => 'Bar'
+        };
+</code>
+
+
+<h2>Split on empty string</h2>
+
+Splitting on the empty string, or empty regex, if you wish is basically saying
+"split at every place where you find an empty string". Between every two characters
+there is an empty string so splitting on an empty string will return the original
+string cut up to individual characters:
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+
+my $str = "Hello World";
+my @chars = split //, $str;
+
+print Dumper \@chars;
+</code>
+
+<code>
+$VAR1 = [
+          'H',
+          'e',
+          'l',
+          'l',
+          'o',
+          ' ',
+          'W',
+          'o',
+          'r',
+          'l',
+          'd'
+        ];
+</code>
+
+<h2>Other examples</h2>
+
+Though in the general case <hl>split</hl> is not the right tool for this job,
+it can be employed for <a href="/how-to-read-a-csv-file-using-perl">reading simple CSV files</a>.
+
+It is also a critical part of the example showing
+<a href="/count-words-in-text-using-perl">how to count words in a text file</a>.
+
+
