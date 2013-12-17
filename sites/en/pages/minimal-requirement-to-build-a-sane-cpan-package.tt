@@ -1,5 +1,5 @@
 =title Minimal requirement to build a sane CPAN package
-=timestamp 2013-12-17T07:30:01
+=timestamp 2013-12-18T07:30:01
 =indexes CPAN, ExtUtils::MakeMaker
 =status draft 
 =author szabgab
