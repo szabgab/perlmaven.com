@@ -153,7 +153,7 @@ foreach my $value (@data) {
 
 它基本上就是個<a href="/filtering-values-with-perl-grep">濾器</a>。
 在其右方，要提供一個陣列與一個程式區塊，並在其區塊中填上一條運算式。<hl>grep</hl>函式會一一走過陣列中的內容，
-放入 <hl>$_</hl> 變數，也就是 <a href="/the-default-variable-of-perl.html">Perl 的預設純量變數</a>，
+放入 <hl>$_</hl> 變數，也就是 <a href="/the-default-variable-of-perl">Perl 的預設純量變數</a>，
 然後執行區塊。如果區塊的執行結果為真，則此值就會通過濾器，跑到左邊；如果區塊執行結果是偽，那就會被擋下來。
 
 於此，我們被能造出了如下的運算式：

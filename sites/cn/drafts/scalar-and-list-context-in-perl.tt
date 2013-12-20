@@ -222,7 +222,7 @@ The former is somehow understandable, these are the values in the array smashed 
 The second one is confusing. It is NOT the same as the result of the <hl>time()</hl>
 function one might think. It is actually the 9 numbers returned by the <hl>localtime()</hl>
 function in LIST context. If you don't remember, check it out in the episode about
-<a href="/the-year-19100.html">the year of 19100</a>.
+<a href="/the-year-19100">the year of 19100</a>.
 
 The solution is to use the <hl>scalar()</hl> function that  will create SCALAR context for its parameter.
 Actually that's the whole job of the <hl>scalar()</hl> function. Some people might think about it as

@@ -171,7 +171,7 @@ make dist
 
 This time running the tests before creating the distribution.
 
-You can read more on <a href="/testing-a-simple-perl-module.html">How to test a simple Perl Module</a>.
+You can read more on <a href="/testing-a-simple-perl-module">How to test a simple Perl Module</a>.
 
 <h2>Prerequisites</h2>
 
