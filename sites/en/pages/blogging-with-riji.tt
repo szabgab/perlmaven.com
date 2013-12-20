@@ -13,17 +13,16 @@
 
 =abstract end
 
-<code lang="perl">
-</code>
-
 <h2>Background</h2>
 
 I was looking at <a href="https://metacpan.org/pod/Text::Xslate">Text::Xslate</a>
 and its dependencies. That's how I bumped
 into <a href="https://metacpan.org/pod/Riji">Riji</a>
 
-The current release is version 0.0.11 and Masayuki Matsuki, the author says it is not
-ready yet. But when did it stop us from trying something?
+The current release is version 0.0.11 and 
+<a href="https://github.com/Songmu">Masayuki Matsuki</a>,
+the author says it is not ready yet.
+But when did that stop us from trying something?
 
 Riji can be also found on <a href="https://github.com/Songmu/p5-Riji">GitHub</a>
 with and additional
@@ -193,7 +192,7 @@ It can be accessed as
 <a href="http://localhost:3650/atom.xml">/atom.xml on your computer</a>.
 
 
-<h2>Configuration<h2>
+<h2>Configuration</h2>
 
 As you can see the title of the site is <b>Your Blog Title</b> and
 author is marked as <b>Your name</b>. These values come from the
