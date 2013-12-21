@@ -168,14 +168,12 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <ol>
 <li>цикл foreach в Perl</li>
 <li>
-	<span href="/for-loop-in-perl">Цикл for в Perl</span>
-	(<a href="http://perlmaven.com/for-loop-in-perl">The for loop in Perl</a>)
+	<a href="/tsikl-for-v-perl">Цикл for в Perl</a>
 </li>
 <li>Списки в Perl</li>
 <li>Использование модулей</li>
 <li>
-	<span href="/perl-arrays">Массивы в Perl</span>
-	(<a href="http://perlmaven.com/perl-arrays">Arrays in Perl</a>)
+	<a href="/massivy-v-perl">Массивы в Perl</a>
 </li>
 <li>Обработка параметров командной строки @ARGV, Getopt::Long</li>
 <li>
