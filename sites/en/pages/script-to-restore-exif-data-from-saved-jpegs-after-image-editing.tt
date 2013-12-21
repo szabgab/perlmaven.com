@@ -51,7 +51,7 @@ Why not just re-copy the information from the original RAW image using this?:
 
 <code>
 exiftool -tagsfromfile %d%f.cr2 -ext jpg FolderNameHere
-</coed>
+</code>
 
 - Phil
 
