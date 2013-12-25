@@ -53,16 +53,12 @@ our @EXPORT_OK = qw(compute);
 sub compute {
   my ($operator, $x, $y) = @_;
 
-  given ($operator) {
-    when ('+') {
+  if ($operator eq '+') {
       return $x + $y;
-    }
-    when ('-') {
+  } elsif ($operator eq '-') {
       return $x - $y;
-    }
-    when ('*') {
+  } elsif ($operator eq '*') {
       return $x - $y;
-    }
   }
 }
 
