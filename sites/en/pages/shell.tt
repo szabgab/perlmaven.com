@@ -20,7 +20,7 @@ build script of <a href="http://dwimperl.com/linux.html">DWIM Perl for Linux</a>
 <h2>sh-bang</h2>
 
 <code>
-#!/bin/sh -e
+#!/bin/bash -e
 </code>
 
 See <a href="http://www.davidpashley.com/articles/writing-robust-shell-scripts/">Writing robust shell scripts</a> for an explanation about the <hl>-e</hl>.
@@ -31,7 +31,7 @@ See <a href="http://www.davidpashley.com/articles/writing-robust-shell-scripts/"
 
 <code>
 TEST_DIR=/opt/myperl
-if [ -d $TEST_DIR ]; then
+if [ -d "$TEST_DIR" ]; then
     echo $TEST_DIR already exists. Exiting!
     exit
 fi
@@ -41,7 +41,7 @@ fi
 
 <code>
     PERL_SOURCE_ZIP_FILE=perl-5.18.1.tar.gz
-    if [ ! -f $PERL_SOURCE_ZIP_FILE ]; then
+    if [ ! -f "$PERL_SOURCE_ZIP_FILE" ]; then
         wget http://www.cpan.org/src/5.0/$PERL_SOURCE_ZIP_FILE
     fi
 </code>
@@ -50,8 +50,18 @@ fi
 
 <code>
 X=abc
-echo $X
+echo "$X"
 if [ "$X" == "" ]; then
+    echo yes
+fi
+</code>
+
+or maybe even better to use the <hl>-z</hl> operator:
+
+<code>
+X=abc
+echo "$X"
+if [ -z "$X" ]; then
     echo yes
 fi
 </code>
@@ -60,14 +70,17 @@ fi
 <h3>Command line arguments</h3>
 
 <code>
-if [ "$1" != "" ]; then
+if [ "$1" == "" ]; then
     echo "empty"
 else
-    for x in $@; do
-        echo $x
+    for x in "$@"; do
+        echo "$x"
     done
 fi
 </code>
+
+(Remember to put " around the $@ or it will incorrectly handle command-line parameters
+with spaces in them, like "Perl Maven")
 
 See other <a href="http://tldp.org/LDP/abs/html/comparison-ops.html">comparision operators</a>.
  
@@ -95,7 +108,32 @@ done
 <h2>Assign values to a variable from external code</h2>
 
 <code>
-BUILD_HOME=`pwd`
+BUILD_HOME=$(pwd)
 </code>
 
+<h2>Avoid backticks!</h2>
+
+$() does the same is better readable and can be stacked.
+
+<code>
+cwd=$(pwd)
+
+$( $(which test) -d $DIRECTORY)
+</code>
+
+<h2>[[</h2>
+
+It was also recommended to use [[ ]] instead of [ ],
+but I am not yet sure why.
+
+<h2>Quoting</h2>
+
+Also always double quote your variables, always (unless you have a good reason not to - which
+requires you to know the reason. if you don't, quote your variables.) And using lowercase or
+camel case variable names avoids accidential overriding of environment variables.
+
+<h2>Thanks</h2>
+
+the article was updated based on the comments of 
+Edward Macke, Dirk Deimeke, Norbert Varzariu, Adam Outler
 
