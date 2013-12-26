@@ -70,7 +70,7 @@ fi
 <h3>Command line arguments</h3>
 
 <code>
-if [ "$1" == "" ]; then
+if [ $# == 0 ]; then
     echo "empty"
 else
     for x in "$@"; do
