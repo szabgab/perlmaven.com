@@ -2,7 +2,9 @@
 =timestamp 2013-12-28T11:40:00
 =indexes Path::Tiny, Path::Iterator::Rule
 =status show
+=original how-to-rename-multiple-files
 =author szabgab
+=translator khadis
 =archive 1
 =comments 1
 =social 1
