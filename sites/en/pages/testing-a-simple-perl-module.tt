@@ -58,7 +58,7 @@ sub compute {
   } elsif ($operator eq '-') {
       return $x - $y;
   } elsif ($operator eq '*') {
-      return $x - $y;
+      return $x * $y;
   }
 }
 
