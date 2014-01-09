@@ -98,6 +98,7 @@
 <li><a href="/what-is-a-text-file">텍스트 파일과 바이너리 파일</a></li>
 <li><a href="/traversing-a-directory-tree-finding-required-files">디렉토리 트리를 순회하면서 필요한 파일들 찾기</a></li>
 <li><a href="/how-to-improve-my-perl-program">내 Perl 프로그램을 개선하는 법</a></li>
+<li><a href="/python-lambda-in-perl">Perl에서 Python의 람다처럼 익명 함수를 만드는 법</a></li>
 </ol>
 
 <!--
