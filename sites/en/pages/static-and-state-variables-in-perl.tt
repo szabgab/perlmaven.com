@@ -170,7 +170,7 @@ hello
 </code>
 
 This shows that in this case too, the declaration and the initial assignment <hl>my $counter = say "world";</hl>
-happens only once, but we can also see that the assignment happens <b>before</hl> the first call to
+happens only once, but we can also see that the assignment happens <b>before</b> the first call to
 <hl>count()</hl> as if the <hl>my $counter = say "world";</hl> statement was part of the control flow
 of the code <b>outside</b> of the block.
 
