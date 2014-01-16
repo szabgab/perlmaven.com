@@ -218,6 +218,6 @@ say count();
 2
 </code>
 
-Now both function can access the <hl>$counter</hl> variable, but still nothing
+Now both functions can access the <hl>$counter</hl> variable, but still nothing
 outside the enclosing block can access it.
 
