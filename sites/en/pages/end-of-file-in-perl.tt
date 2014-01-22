@@ -44,3 +44,16 @@ my @lines = <$fh>;
 In this case even checking for <hl>undef</hl> is unnecessary as Perl will just end the operation when the
 input is exhausted.
 
+<h2>Reading binary file</h2>
+
+Even when reading binary files using <hl>read</hl> we don't need to check for end of file manually
+as <hl>read</hl> will return 0 at the end of file. So we can write:
+
+<code lang="perl">
+open my $fh, '<:raw', $file or die;
+my $buf;
+while (read $fh, $buf, 1000) {
+}
+</code>
+
+
