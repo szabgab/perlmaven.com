@@ -69,3 +69,13 @@ having three elements, evaluates to <hl>3</hl> and the <hl>@second</hl> array,
 having two elements, evaluates as <hl>2</hl>. The plus operator adds them,
 giving us <hl>5</hl> for the first <hl>say</hl>, and the dot operator
 concatenates them, giving us <hl>32</hl> for the second <hl>say</hl>.
+
+<hr>
+<blockquote>
+Curtis "Ovid" Poe offers Perl training and consulting services via <a href="http://www.allaroundtheworld.fr/">All Around The World</a>,
+a consultancy based in France. Though having programmed in many languages, he's specialized in Perl for over a
+decade and wrote the test harness that ships with Perl. He recently wrote the popular book
+<a href="http://www.wrox.com/WileyCDA/WroxTitle/productCd-1118013840.html">Beginning Perl</a> (Wrox Press) and is one of the authors of
+<a href="http://shop.oreilly.com/product/9780596526740.do">Perl Hacks</a> (O'Reilly).
+Ovid sits on the Board of Directors of The Perl Foundation.
+</blockquote>
