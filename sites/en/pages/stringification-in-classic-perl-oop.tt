@@ -10,7 +10,7 @@
 
 =abstract start
 
-In the previous article we saw <a href="">how to create a class</a> using bless, but when we printed the instance object we got
+In the previous article we saw <a href="constructor-and-accessors-in-classic-perl-oop.tt">how to create a class</a> using bless, but when we printed the instance object we got
 <hl>My::Date=HASH(0x7f807c13c700)</hl>. This can be useful as it tells us we are dealing with a My::Date object, but on the
 other hand it could print something more interesting. For example it could print a nice representation of the attributes:
 <hl>Date(2013, 1, 27)</hl>
@@ -27,7 +27,7 @@ means that we take an object and create a string format. It happens when the obj
 In order to change the behavior of the My::Date class when an object of that type is placed in string context,
 we need to "overload" the stringification operator. It can be done using the <a href="https://metacpan.org/pod/overload">overload</a> module.
 
-This is what need to be added to the Date.pm file in the <a href="">previous example</a>.
+This is what need to be added to the Date.pm file in the <a href="constructor-and-accessors-in-classic-perl-oop.tt">previous example</a>.
 
 <code lang="perl">
 use overload 

@@ -54,6 +54,18 @@ my $d = My::Date->new(year => 2013, month => 1, day => 27);
 say $d;
 </code>
 
+The directory of the project looks like this:
+
+<code>
+$ tree
+.
+├── bin
+│   └── date.pl
+└── lib
+    └── My
+        └── Date.pm
+</code>
+
 First the basic boiler-plate of <a href="http://perlmaven.com/strict">use strict</a>, and <hl>use warnings</hl> and
 the declaration of the minimal Perl version. (The only reason this code requires 5.10 is so that I can use the
 <hl>say</hl> function. Otherwise 5.6 could be used as well.)
