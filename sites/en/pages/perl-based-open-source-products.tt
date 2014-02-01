@@ -629,8 +629,22 @@ access control (NAC) solution.
 </div>
 
 <div class="perl-product">
-<a href="http://oss.oetiker.ch/remocular/">remOcular</a>, your eyes in the cloud.
+<a href="http://www.remocular.org/">remOcular</a>, provides a AJAX web interface to Unix command line tools like traceroute, top, mpstat.
 </div>
+
+<div class="perl-product">
+<a href="http://www.extopus.org/">Extopus - The Monitoring Aggregator</a>
+</div>
+
+
+<div class="perl-product">
+<a href="http://www.mrtg.org/">MRTG - The Multi Router Traffic Grapher</a> for traffic monitoring.
+</div>
+
+<div class="perl-product">
+<a href="http://www.smokeping.org/">SmokePing</a> for keeping track of your network latency.
+</div>
+
 
 <div class="perl-product">
 <a href="http://www.dbtoria.org/">DbToRia</a> a Database to Rich Internet Application. 
@@ -700,6 +714,12 @@ community.
 <div class="perl-product">
 <a href="http://www.netdisco.org/">NetDisco</a> Network Management Tool.
 </div>
+
+
+<div class="perl-product">
+<a href=""></a>
+</div>
+
 
 <!--
 <div class="perl-product">
