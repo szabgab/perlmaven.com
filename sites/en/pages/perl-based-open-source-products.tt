@@ -458,6 +458,11 @@ These projects probably should/could have their own site on their own domain:
 <a href="http://jeffreykegler.github.com/Marpa-web-site/">Marpa</a>
 </div>
 
+<h2>Scientific Software</h2>
+
+<div class="perl-product">
+<a href="http://bruceravel.github.io/demeter/">Demeter</a>  is a comprehensive system for processing and analyzing X-ray Absorption Spectroscopy data.
+</div>
 
 
 <h2 id="other">Other</h2>
