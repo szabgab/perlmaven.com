@@ -115,6 +115,22 @@ was discontinued by Mozilla.
 <a href="http://iwebcms.org/">iWeb CMS</a>
 </div>
 
+<div class="perl-product">
+<a href="http://xims.info/">XIMS</a> Content Management System
+</div>
+
+<div class="perl-product">
+<a href="http://www.dreamwidth.org/">Dreamwidth</a> is a community system for shared blogging. It was forked from the last
+open source version of Live Journal.
+</div>
+
+
+
+<div class="perl-product">
+<a href="https://github.com/jrockway/angerwhale">Angerwhale</a> is a <a href="http://www.catalystframework.org/">Catalyst</a>-based blogging package.
+As I can see it has been removed from CPAN and has not been updated since 2009.
+</div>
+
 
 <h2>Help-desk, Request and Bug tracking</h2>
 
@@ -276,6 +292,12 @@ the data migrations, doing extraction, transformation, validation and load in a 
 It is also available <a href="https://metacpan.org/module/Dezi">on CPAN</a>.
 </div>
 
+<h2>E-commerce</h2>
+
+<div class="perl-product">
+<a href="http://www.surfshopcart.com/">Surfshopcart</a> - web store system - shopping cart.
+</div>
+
 <div class="perl-product">
 <a href="http://www.agoracart.com/">AgoraCart</a>, is an ecommerce shopping cart software installable via cPanel and
 other web hosting control panels.
@@ -337,6 +359,25 @@ href="http://en.wikipedia.org/wiki/Anti-Spam_SMTP_Proxy">wikipedia</a>. (The ass
 
 <div class="perl-product">
 <a href="http://torrus.org/">Torrus</a> The Data Series Processing Framework.
+</div>
+
+<div class="perl-product">
+<a href="http://www.netdisco.org/">NetDisco</a> Network Management Tool.
+</div>
+
+<div class="perl-product">
+<a href="http://www.mrtg.org/">MRTG - The Multi Router Traffic Grapher</a> for traffic monitoring.
+</div>
+
+<div class="perl-product">
+<a href="http://www.smokeping.org/">SmokePing</a> for keeping track of your network latency.
+</div>
+
+
+<div class="perl-product">
+<a href="http://fusioninventory.org/">Fusion Inventory</a> helps you keep an inventory of computers in your
+system. Commercial support is provided by a number of companies, all of them in France. The source code is available
+on <a href="https://metacpan.org/author/FUSINV">CPAN</a> as well.
 </div>
 
 
@@ -431,12 +472,6 @@ side is written in Perl.
 </div>
 
 <div class="perl-product">
-<a href="http://fusioninventory.org/">Fusion Inventory</a> helps you keep an inventory of computers in your
-system. Commercial support is provided by a number of companies, all of them in France. The source code is available
-on <a href="https://metacpan.org/author/FUSINV">CPAN</a> as well.
-</div>
-
-<div class="perl-product">
 <a href="http://naturaldocs.org/">Natural Docs</a> is a documentation generator for multiple programming languages.
 </div>
 
@@ -527,19 +562,8 @@ and <a href="https://metacpan.org/release/Perlbal">Perlbal on CPAN<a>.
 
 
 <div class="perl-product">
-<a href="http://www.dreamwidth.org/">Dreamwidth</a> is a community system for shared blogging. It was forked from the last
-open source version of Live Journal.
-</div>
-
-
-<div class="perl-product">
 <a href="http://act.mongueurs.net/">Act - A Conference Toolkit</a> is a web application to handle conferences.
 AFAIK currently it used by YAPCs and Perl Workshops only.
-</div>
-
-<div class="perl-product">
-<a href="https://github.com/jrockway/angerwhale">Angerwhale</a> is a <a href="http://www.catalystframework.org/">Catalyst</a>-based blogging package.
-As I can see it has been removed from CPAN and has not been updated since 2009.
 </div>
 
 <div class="perl-product">
@@ -638,15 +662,6 @@ access control (NAC) solution.
 
 
 <div class="perl-product">
-<a href="http://www.mrtg.org/">MRTG - The Multi Router Traffic Grapher</a> for traffic monitoring.
-</div>
-
-<div class="perl-product">
-<a href="http://www.smokeping.org/">SmokePing</a> for keeping track of your network latency.
-</div>
-
-
-<div class="perl-product">
 <a href="http://www.dbtoria.org/">DbToRia</a> a Database to Rich Internet Application. 
 </div>
 
@@ -704,20 +719,11 @@ community.
 </div>
 
 <div class="perl-product">
-<a href="http://xims.info/">XIMS</a> Content Management System
-</div>
-
-<div class="perl-product">
 <a href="http://www.project-builder.org/">Project Builder</a> is a tool for simplifying the process of building packages for multiple operating systems from source.
 </div>
 
 <div class="perl-product">
-<a href="http://www.netdisco.org/">NetDisco</a> Network Management Tool.
-</div>
-
-
-<div class="perl-product">
-<a href=""></a>
+<a href="http://grsshopper.downes.ca/">gRSShopper</a> a personal web environment.
 </div>
 
 
@@ -725,6 +731,11 @@ community.
 <div class="perl-product">
 <a href=""></a>
 </div>
+
+<div class="perl-product">
+<a href=""></a>
+</div>
+
 
 http://www.vromans.org/johan/software.html
 
