@@ -10,7 +10,7 @@
 
 =abstract start
 
-While for new applications it would be recommended to use <a href="/moo">Moo</a> or Moose for writing Object Oriented Perl code, 
+While for new applications it would be recommended to use <a href="/moo">Moo</a> or <a href="/moose">Moose</a> for writing Object Oriented Perl code, 
 sometimes you cannot use them. For example when you maintain an old code base, or when your management does not let you install modules
 form CPAN.
 

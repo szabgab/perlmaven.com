@@ -12,7 +12,7 @@
 A series of articles (one of them free, most of them available to <a href="/pro">Perl Maven Pro</a> subscribers only)
 about Moo, the Minimalist Object Orientation system of Perl.
 
-Moo is the little brother of Moose, the all magnificent object oriented framework of Perl.
+Moo is the little brother of <a href="/moose">Moose, the all magnificent object oriented framework of Perl</a>.
 Moo is smaller, faster, pure-Perl (no XS dependencies) than Moose. It can provide a solution for people
 who would like to get away from the "manual blessing", but don't want to "pay" for all the features of Moose.
 
