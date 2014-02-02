@@ -1,5 +1,5 @@
 =title מערך @ARGV בפרל
-=timestamp 2014-02-07T16:20:00
+=timestamp 2014-02-02T16:20:00
 =indexes @ARGV, $ARGV[], $0, shift, argc
 =status show
 =original argv-in-perl
