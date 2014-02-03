@@ -78,7 +78,7 @@ href="http://www.icdevgroup.org/i/dev/support/index">companies providing commerc
 <div class="perl-product">
 <a href="http://www.bricolagecms.org/">Bricolage CMS</a> is a web publishing system providing workflow management for publishers.
 It then generates pages that can be either static or even use some other language to be dynamic.
-(<a href="http://en.wikipedia.org/wiki/Bricolage_(software)">wikipedia</a>)
+(<a href="http://en.wikipedia.org/wiki/Bricolage_(software)">Wikipedia</a>)
 </div>
 
 <div class="perl-product">
@@ -143,7 +143,7 @@ tracking system geared to the enterprise. It is created and developed by company
 <a href="http://bestpractical.com/rt/">Request Tracker</a> is a bug and issue tracking system written and supported by
 <a href="http://bestpractical.com/">Best Practical</a>. It is used by <a href="https://rt.cpan.org/">CPAN</a>
 and the <a href="https://rt.perl.org/">Perl development team</a> as well.
-(<a href="http://en.wikipedia.org/wiki/Request_Tracker">wikipedia</a>)
+(<a href="http://en.wikipedia.org/wiki/Request_Tracker">Wikipedia</a>)
 </div>
 
 <div class="perl-product">
@@ -156,18 +156,18 @@ service.
 <h2>Mailing list</h2>
 
 <div class="perl-product">
-<a href="http://sympa.org/">Sympa</a> is a mailing list software. You can find the list of companies providing
+<a href="http://sympa.org/">Sympa</a> is a program for managing mailing lists. You can find the list of companies providing
 <a href="https://www.sympa.org/technical_support">commercial support for Sympa</a>.
 </div>
 
 <div class="perl-product">
-<a href="http://dadamailproject.com/">Dada Mail</a> is a mailing list software. They provide some commercial
+<a href="http://dadamailproject.com/">Dada Mail</a> is a program for managing mailing lists. They provide some commercial
 services but as I can see it is well hidden on the site and I don't think anyone is making a living out of that.
 </div>
 
 <div class="perl-product">
-<a href="http://www.greatcircle.com/majordomo/">Majordomo</a> is one of the oldes mailing list software.
-It even has its own <a href="http://en.wikipedia.org/wiki/Majordomo_%28software%29">wikipedia entry</a>.
+<a href="http://www.greatcircle.com/majordomo/">Majordomo</a> is one of the oldest mailing list software.
+It even has its own <a href="http://en.wikipedia.org/wiki/Majordomo_%28software%29">Wikipedia entry</a>.
 </div>
 
 <div class="perl-product">
@@ -212,13 +212,12 @@ installations. It's focus is mainly on monitoring and reporting data about appli
 </div>
 
 <div class="perl-product">
-<a href="http://awstats.sourceforge.net/">AWstats</a> is a log analyzer. <a href="http://en.wikipedia.org/wiki/AWStats">wikipedia</a>
+<a href="http://awstats.sourceforge.net/">AWstats</a> is a log analyzer. <a href="http://en.wikipedia.org/wiki/AWStats">Wikipedia</a>
 </div>
 
 <div class="perl-product">
 <a href="http://squidanalyzer.darold.net/">Squid log analyzer</a>
 and <a href="http://www.staff.science.uu.nl/~penni101/mirmon/">mirmon</a> to monitor the status of mirrors.
-<a href="http://www.gnu.org/software/parallel/">GNU parallel</a> to run jobs in parallel.
 </div>
 
 <div class="perl-product">
@@ -245,8 +244,8 @@ analyzis.
 <h2>Games</h2>
 
 <div class="perl-product">
-<a href="http://www.frozen-bubble.org/">Frozen-Bubble</a> is one of the most well known Perl product,
-even though most people don't know that it is written in Perl using <a href="http://sdl.perl.org/">Simple DirectMedia Library (SDL)</a>.
+<a href="http://www.frozen-bubble.org/">Frozen-Bubble</a> is one of the most well known Perl products,
+even though most people don't know that it is written in Perl using the <a href="http://sdl.perl.org/">Simple DirectMedia Library (SDL)</a>.
 </div>
 
 <div class="perl-product">
@@ -260,14 +259,14 @@ Very addictive!
 
 <div class="perl-product">
 <img src="/img/shutter_logo.png" alt="Shutter logo" style="float:right" />
-<a href="http://shutter-project.org/">Shutter Project</a> is one of best looking web sites among the ones
+<a href="http://shutter-project.org/">The Shutter Project</a> has one of best looking web sites among the ones
 listed here. This might not be surprising as Shutter is a screen-shot tool.
 </div>
 
 <h2>Enterprise applications</h2>
 
 <div class="perl-product">
-Koha is a library software developed and supported by the <a href="http://www.koha-community.org/">Koha Community</a>.
+Koha is a software application for library management developed and supported by the <a href="http://www.koha-community.org/">Koha Community</a>.
 There are <a href="http://koha-community.org/support/paid-support/">several companies support Koha</a>.
 One of them is called <a href="http://www.liblime.com/">LibLime</a>.
 
@@ -287,7 +286,7 @@ the data migrations, doing extraction, transformation, validation and load in a 
 </div>
 
 <div class="perl-product">
-<a href="http://dezi.org/">Dezi</a> is a HTTP-based search platform capable of indexing multiple document formats
+<a href="http://dezi.org/">Dezi</a> is an HTTP-based search platform capable of indexing multiple document formats
 (HTML, XML, PDF, DOC, XLS, etc) and returning faceted results in a variety of formats (XML, JSON).
 It is also available <a href="https://metacpan.org/module/Dezi">on CPAN</a>.
 </div>
@@ -307,7 +306,7 @@ other web hosting control panels.
 
 <div class="perl-product">
 <img src="/img/spamassasin_arrowlogo.png" alt="SPAM Assasin logo" style="float:right" width="167" height="74" />
-<a href="http://spamassassin.apache.org/">Spamassassin</a> is the well known SPAM filter software. It is part of
+<a href="http://spamassassin.apache.org/">SpamAssassin</a> is the well known SPAM filter software. It is part of
 the <a href="http://apache.org">Apache Software Foundation</a>. This is just one of the many projects,
 unrelated to the web server, that are managed by the ASF.
 </div>
@@ -328,12 +327,12 @@ site that would be the winner for being beautiful.
 <div class="perl-product">
 <a href="http://backuppc.sourceforge.net/">Backup PC</a> is, not surprisingly a backup system for Linux, Windows, and
 Mac. Unfortunately it has not seen any activity in the last year or so.
-<a href="http://en.wikipedia.org/wiki/BackupPC">wikipedia</a>.
+<a href="http://en.wikipedia.org/wiki/BackupPC">Wikipedia</a>.
 </div>
 
 <div class="perl-product">
 <a href="http://www.amavis.org/">Amavis</a> is a high-performance interface between mailer (MTA) and content checkers: virus scanners, and/or SpamAssassin.
-<a href="http://en.wikipedia.org/wiki/Amavis">wikipedia</a>.
+<a href="http://en.wikipedia.org/wiki/Amavis">Wikipedia</a>.
 </div>
 
 <div class="perl-product">
@@ -346,7 +345,7 @@ Mac. Unfortunately it has not seen any activity in the last year or so.
 
 <div class="perl-product">
 <a href="http://sourceforge.net/apps/mediawiki/assp/">Anti-Spam SMTP Proxy (ASSP)</a> is a platform-independent transparent SMTP proxy server. <a
-href="http://en.wikipedia.org/wiki/Anti-Spam_SMTP_Proxy">wikipedia</a>. (The assp.sourceforge.net link was redirecting.)
+href="http://en.wikipedia.org/wiki/Anti-Spam_SMTP_Proxy">Wikipedia</a>. (The assp.sourceforge.net link was redirecting.)
 </div>
 
 <div class="perl-product">
@@ -435,7 +434,7 @@ table.
 </div> 
 
 <div class="perl-product">
-<a href="http://perldancer.org/">Perl Dancer</a>, simple but powerful web application framework.
+<a href="http://perldancer.org/">Perl Dancer</a>, a simple but powerful web application framework.
 </div> 
 
 <div class="perl-product">
@@ -468,6 +467,11 @@ These projects probably should/could have their own site on their own domain:
 <h2 id="other">Other</h2>
 
 (Still being categorized)
+
+<div class="perl-product">
+<a href="http://www.gnu.org/software/parallel/">GNU parallel</a> to run jobs in parallel.
+</div>
+
 
 <div class="perl-product">
 <img src="/img/musicbrainz_logo.png" alt="MusicBrainz logo" style="float:left" width="141" height="98" />
@@ -508,7 +512,7 @@ side is written in Perl.
 
 <div class="perl-product">
 <a href="http://slic3r.org/">Slic3r</a> is a multi-platform self-executable desktop application which manipulates 3D meshes with several
-geometric algorithms to produce G-code instructions for 3D printer. It's got an active forum and an IRC channel on FreeNode with 80 people in it. The project is almost a one-man work but is sponsored/funded
+geometric algorithms to produce G-code instructions for 3D printers. It's got an active forum and an IRC channel on FreeNode with 80 people in it. The project is almost a one-man work but is sponsored/funded
 by several businesses and tens of donations.
 </div>
 
@@ -617,7 +621,7 @@ utilities.
 
 <div class="perl-product">
 <a href="http://www.mysqueezebox.com/">Logitect Squeezebox Server</a>, a streaming server for Logitech Squeezebox line of Internet radios supporting both its own SLIM protocol and DLNA.
-<a href="http://en.wikipedia.org/wiki/Logitech_Media_Server">wikipedia</a>
+<a href="http://en.wikipedia.org/wiki/Logitech_Media_Server">Wikipedia</a>
 </div>
 
 <div class="perl-product">
@@ -756,7 +760,7 @@ AxKit - has been retired in 2009
 <h2>Not Open Source</h2>
 
 There are a number of non-open source Perl-based products. I am going to create a separate list of those too, for
-now le me list them here:
+now let me list them here:
 
 <div class="perl-product">
 <a href="http://www.socialtext.com/">Social Text</a>. It has hosted version at <a href="http://www.socialtext.net/">Social Text.net</a>.
