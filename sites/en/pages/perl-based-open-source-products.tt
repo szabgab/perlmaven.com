@@ -472,6 +472,27 @@ These projects probably should/could have their own site on their own domain:
 <a href="http://bruceravel.github.io/demeter/">Demeter</a>  is a comprehensive system for processing and analyzing X-ray Absorption Spectroscopy data.
 </div>
 
+<h2>Database related Applications</h2>
+
+<!--
+<div class="perl-product">
+<a href="http://www.cubrid.org/wiki_apps/entry/qdepo-cubrid-tutorial">Cubrid</a> is an open source database.
+</div>
+-->
+
+<div class="perl-product">
+<a href="http://sourceforge.net/projects/tpda-qrt/">QDepo</a>, a desktop application for retrieving and exporting data from relational database systems to spreadsheet files.
+</div>
+
+<div class="perl-product">
+<a href="http://tpda.s2i2.ro/">Tpda3 (Tiny Perl Database Application 3)</a> A classic desktop database application framework and run-time.
+<a href="http://sourceforge.net/projects/tpda/">Sourceforge</a>
+</div>
+
+<div class="perl-product">
+<a href="http://sqitch.org/">Sqitch</a> Simple, command line SQL change management tool written
+by <a href="https://twitter.com/Theory">David E.  Wheeler</a>.
+</div>
 
 <h2 id="other">Other</h2>
 
@@ -530,18 +551,9 @@ by several businesses and tens of donations.
 uses perl for the server side part.
 </div>
 
-<div class="perl-product">
-<a href="http://www.cubrid.org/wiki_apps/entry/qdepo-cubrid-tutorial">Cubrid</a> is an open source database.
-</div>
-
 
 <div class="perl-product">
 <a href="http://cloc.sourceforge.net/">cloc</a>
-</div>
-
-<div class="perl-product">
-<a href="http://sqitch.org/">Sqitch</a> Simple, command line SQL change management tool written
-by <a href="https://twitter.com/Theory">David E.  Wheeler</a>.
 </div>
 
 <div class="perl-product">
