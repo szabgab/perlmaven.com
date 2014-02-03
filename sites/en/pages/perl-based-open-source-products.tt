@@ -756,6 +756,17 @@ community.
 <a href="http://grsshopper.downes.ca/">gRSShopper</a> a personal web environment.
 </div>
 
+<div class="perl-product">
+<a href="https://github.com/mysociety/fixmystreet">fixmystreet</a> mySociety's popular street problem reporting platform. <a href="http://code.fixmystreet.com/">Home of FixMyStreet</a>.
+</div>
+
+<div class="perl-product">
+<a href="http://sourceforge.net/projects/xmltv/">XMLTV</a> is a set of programs to process TV (tvguide) listings and
+manage your TV viewing, storing listings in an XML format. There are
+backends to download TV listings for several countries, filter
+programs and Perl libraries to process listings.
+</div>
+
 
 <!--
 <div class="perl-product">
