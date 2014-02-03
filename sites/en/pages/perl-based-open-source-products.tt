@@ -279,6 +279,11 @@ this company and the rest of the Koha community. I am still trying to figure out
 </div>
 
 <div class="perl-product">
+<a href="http://evergreen-ils.org/">Evergreen Open ILS</a> is a software for libraries that helps library patrons find library materials, and helps libraries manage, catalog, and circulate those materials.
+</div>
+
+
+<div class="perl-product">
 <img src="/img/lsmb.jpg" alt="LedgerSMB logo" style="float:right"  />
 <a href="http://ledgersmb.org/">Ledger SMB</a> and Open Source ERP: accounting, CRM and more.
 LedgerSMB is an acronym for Ledger Small Medium Business, often abbreviated as LSMB.
@@ -741,10 +746,6 @@ community.
 
 
 <!--
-<div class="perl-product">
-<a href=""></a>
-</div>
-
 <div class="perl-product">
 <a href=""></a>
 </div>
