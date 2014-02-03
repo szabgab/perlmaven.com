@@ -90,9 +90,12 @@ is not too active.
 
 <div class="perl-product">
 <a href="http://blosxom.sourceforge.net/">Blosxom</a> is a simple blog engine genrating static pages.
+<!--
 Unfortunately it seems it has not been maintained for a while. Some of the links on the site don't work any more.
-For more information also check out the <a href="http://en.wikipedia.org/wiki/Blosxom">Wikipedia</a> page of Blosxom.
 Last time I checked, the <a href="http://www.blosxom.com/">Blosxom</a> site was down.
+-->
+For more information also check out the <a href="http://en.wikipedia.org/wiki/Blosxom">Wikipedia</a> page of Blosxom.
+There is also a <a href="http://muli.cc/">new community site for Blosxom</a>.
 </div>
 
 <div class="perl-product">
