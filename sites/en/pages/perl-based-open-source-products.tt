@@ -45,6 +45,7 @@ engines. In the end there is a huge overlap between what they do so I put them i
 as a blog engine. It is backed by the company called <a href="http://www.sixapart.com/">Six Apart</a> that provides a
 <a href="http://www.movabletype.com/">hosted version of Movable Type</a>.
 <a href="http://blogs.perl.org/">blogs.perl.org</a> is running Movable Type</a>.
+It is sopped being an open source product. The latest Open source release was 5.2.9.
 </div>
 
 <div class="perl-product">
