@@ -31,7 +31,7 @@ This is what need to be added to the Date.pm file in the <a href="/constructor-a
 
 <code lang="perl">
 use overload 
-    '""' => \&stringify;
+    '""' => 'stringify';
 
 sub stringify {
     my ($self) = @_;
