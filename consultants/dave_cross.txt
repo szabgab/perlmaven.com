@@ -1,0 +1,17 @@
+name: Dave Cross
+url: http://dave.org.uk/ 
+twitter: davorg
+gplus: +DaveCrossUK
+linkedin: http://www.linkedin.com/in/davorg
+pause: DAVECROSS
+country: UK
+languages: English
+specialities: training, 
+
+html: 
+
+<a href="http://mag-sol.com/">Magnum Solutions</a>, <a href="http://perlschool.co.uk/">Perl School</a>
+<a href="http://perlhacks.com/">Perl Hacks</a>
+
+Dave also runs <a href="http://blogs.perl.org/">blogs.perl.org</a>, the community blog site of Perl.
+

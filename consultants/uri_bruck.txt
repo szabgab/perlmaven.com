@@ -1,0 +1,18 @@
+name: Uri Bruck
+img: uribruck.jpg
+url: http://bruck.co.il/
+twitter:
+gplus: +UriBruck
+linkedin: http://www.linkedin.com/in/uribruck
+pause: 
+location: Haifa, Israel
+country: IL
+specialities:
+languages: English, Hebrew
+html:
+
+Besides being a programmer Uri is also an English-Hebrew translator.
+
+<p>
+He has translated several Perl-Maven articles to  <a href="http://he.perlmaven.com/">Hebrew</a>.
+
