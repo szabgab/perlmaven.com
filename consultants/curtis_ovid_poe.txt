@@ -6,8 +6,8 @@ gplus: +CurtisPoe
 linkedin: http://fr.linkedin.com/in/curtispoe
 pause: OVID
 country: FR
-location: Paris, France
-specialities: Testing, Object Oriented Programming
+location: La Rochelle, France
+specialities: Testing, Object Oriented Programming, Training, Agile
 languages: English, French
 html: 
 
