@@ -221,3 +221,30 @@ say count();
 Now both functions can access the <hl>$counter</hl> variable, but still nothing
 outside the enclosing block can access it.
 
+<h2>Static arrays and hashes</h2>
+
+As of now, you cannot declare an array or a hash using the <hl>state</hl> keyword, but
+you could use the "old-style" static variable with the enclosing block.
+
+Here is an example generating the Fibonacci series:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+{
+   my @y = (1, 1);
+   sub fib {
+      push @y, $y[0]+$y[1];
+      return shift @y; 
+   }
+}
+
+say fib();
+say fib();
+say fib();
+say fib();
+say fib();
+</code>
+
