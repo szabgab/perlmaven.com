@@ -223,10 +223,33 @@ outside the enclosing block can access it.
 
 <h2>Static arrays and hashes</h2>
 
-As of now, you cannot declare an array or a hash using the <hl>state</hl> keyword, but
-you could use the "old-style" static variable with the enclosing block.
+As of now, you cannot use the <hl>state</hl> declaration in list context.
+This means you cannot write <hl>state @y = (1, 1);</hl>. This limitation could be overcome by
+some extra coding. For example in this implementation of the Fibinacci series, we checked if the
+array is empty and set the default values:
 
-Here is an example generating the Fibonacci series:
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+sub fib {
+   state @y;
+   @y = (1, 1) if not @y; # workaround initialization
+   push @y, $y[0]+$y[1];
+   return shift @y; 
+}
+
+say fib();
+say fib();
+say fib();
+say fib();
+say fib();
+</code>
+
+Alternatively we could use the "old-style" static variable with the enclosing block.
+
+Here is the example generating the Fibonacci series:
 
 <code lang="perl">
 use strict;
