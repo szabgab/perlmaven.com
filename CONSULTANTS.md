@@ -8,4 +8,4 @@ The img: is the filename of a 128x128 image of you (png or jpg) that is saved in
 pages/en/img/ directory. The name of the file should be your nickname or your full_name.
 
 
-
+The consultants are listed on http://perlmaven.com/consultants
