@@ -1,17 +1,28 @@
 name: Dave Cross
-url: http://dave.org.uk/ 
+img: davecross.jpg
+url: http://dave.org.uk/
 twitter: davorg
 gplus: +DaveCrossUK
 linkedin: http://www.linkedin.com/in/davorg
 pause: DAVECROSS
 country: UK
+location: London, UK
 languages: English
-specialities: training, 
+specialities: Training, Development, Writing
 
 html: 
 
-<a href="http://mag-sol.com/">Magnum Solutions</a>, <a href="http://perlschool.co.uk/">Perl School</a>
-<a href="http://perlhacks.com/">Perl Hacks</a>
-
-Dave also runs <a href="http://blogs.perl.org/">blogs.perl.org</a>, the community blog site of Perl.
-
+Dave has been using Perl since 1996. In 1998, he started the
+<a href="http://london.pm.org/">London Perl Mongers</a>, the first Perl
+users' group outside of North America. He is still heavily involved with the
+Perl community and is one of the team running 
+<a href="http://blogs.perl.org/">blogs.perl.org</a>.
+Dave is the author of
+<a href="http://manning.com/cross/">Data Munging with Perl</a> and a
+co-author of <a href="http://shop.oreilly.com/product/9780596004767.do">Perl
+Template Toolkit</a>. He has been training since 2000 and is a regular speaker
+at both Perl and Open Source conferences. Dave blogs about Perl at
+<a href="http://perlhacks.com/">Perl Hacks</a> and he offers training and
+consultancy through
+<a href="http://mag-sol.com/">Magnum Solutions</a> and
+<a href="http://www.allaroundtheworld.fr">All Around The World</a>.
