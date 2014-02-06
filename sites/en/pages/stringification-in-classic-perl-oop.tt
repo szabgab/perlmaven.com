@@ -53,7 +53,7 @@ This will print <hl>Date(2013, 1, 27)</hl>.
 The first two lines in the above code, loads the <a href="https://metacpan.org/pod/overload">overload</a> module
 and tells it that when the object is in string context, call the stringify method. When "use"-ing the overload
 module we pass a set of key-value pairs. In this case the key is <hl>""</hl> (two double-quotes) and the value
-is a reference to the subroutine that implements it.
+is the name of the method that implements it.
 
 The more interesting usage of this is when we just simply print <hl>$d</hl>:
 
