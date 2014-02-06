@@ -1,0 +1,18 @@
+name: Enrique Nell
+url: http://www.haboogo.com
+img: enrique.jpg
+twitter: blasgordon
+gplus: +EnriqueNell
+linkedin: http://es.linkedin.com/in/enriquenell
+pause: ENELL
+country: ES
+location: Cartaya, Spain
+specialities: Text Processing, Data Preparation/Cleansing/Transformation, Automation of Windows/Office applications
+languages: English, Spanish, Portuguese
+html: 
+
+With ~20 years experience in software localization and technical translation, Enrique Nell uses Perl for data munging and
+automation tasks. Currently undergoing training on data analytics, he also uses R.
+<p>
+He is involved in the Spanish translation of several open source projects, including the Perl core documentation and the 
+Padre editor, and has also translated several Perl Maven articles. 
