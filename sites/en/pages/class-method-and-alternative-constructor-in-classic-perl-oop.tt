@@ -1,7 +1,7 @@
 =title Class method and alternative constructor in classic Perl OOP
-=timestamp 2014-01-15T07:30:01
+=timestamp 2014-02-06T13:30:01
 =indexes blessed, Scalar::Util
-=status draft
+=status show
 =books advanced_book
 =author szabgab
 =archive 1
