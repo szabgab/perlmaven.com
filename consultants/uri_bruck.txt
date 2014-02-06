@@ -7,12 +7,12 @@ linkedin: http://www.linkedin.com/in/uribruck
 pause: 
 location: Haifa, Israel
 country: IL
-specialities:
+specialities: Web Services (REST, Soap), Web Applications, Software Design, Testing, Tech Writing
 languages: English, Hebrew
 html:
 
-Besides being a programmer Uri is also an English-Hebrew translator.
-
+Uri Bruck has been using Perl since 1997. For several years worked as Head of Software Dept. for an ISP, where he was involved with all stages of development, from inception, through design and implementation, to deployment. Currently a freelance developer and consultant. As a freelance was he was involved in development of web application, web services, testing automation.
+Besides being a programmer Uri is also an English-Hebrew translator, and has some experience in technical writing.
 <p>
 He has translated several Perl-Maven articles to  <a href="http://he.perlmaven.com/">Hebrew</a>.
 
