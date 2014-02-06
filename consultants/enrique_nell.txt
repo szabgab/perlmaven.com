@@ -1,6 +1,6 @@
 name: Enrique Nell
 url: http://www.haboogo.com
-img: enrique.jpg
+img: enrique.png
 twitter: blasgordon
 gplus: +EnriqueNell
 linkedin: http://es.linkedin.com/in/enriquenell
