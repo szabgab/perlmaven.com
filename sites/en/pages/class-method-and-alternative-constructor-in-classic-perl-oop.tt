@@ -94,7 +94,7 @@ Date(2013, 1, 28)=HASH(0x7fba51827d58)
 Can't locate object method "year" via package "Date(2013, 1, 28)" at bin/date.pl line 19
 </code>
 
-The <hl>new_from_script</hl> returned a strange something <hl>Date(2013, 1, 28)=HASH(0x7fba51827d58)</hl>,
+The <hl>new_from_string</hl> returned a strange something <hl>Date(2013, 1, 28)=HASH(0x7fba51827d58)</hl>,
 but calling <hl>year</hl> really threw an exception.
 
 Part of this strangeness comes from the fact that we have <a href="/stringification-in-classic-perl-oop">overloaded the stringification</a>.
