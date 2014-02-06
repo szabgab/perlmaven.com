@@ -27,11 +27,11 @@ means that we take an object and create a string format. It happens when the obj
 In order to change the behavior of the My::Date class when an object of that type is placed in string context,
 we need to "overload" the stringification operator. It can be done using the <a href="https://metacpan.org/pod/overload">overload</a> module.
 
-This is what need to be added to the Date.pm file in the <a href="/constructor-and-accessors-in-classic-perl-oop">previous example</a>.
+This is what needs to be added to the Date.pm file in the <a href="/constructor-and-accessors-in-classic-perl-oop">previous example</a>.
 
 <code lang="perl">
 use overload 
-    '""' => \&stringify;
+    '""' => 'stringify';
 
 sub stringify {
     my ($self) = @_;
@@ -53,7 +53,7 @@ This will print <hl>Date(2013, 1, 27)</hl>.
 The first two lines in the above code, loads the <a href="https://metacpan.org/pod/overload">overload</a> module
 and tells it that when the object is in string context, call the stringify method. When "use"-ing the overload
 module we pass a set of key-value pairs. In this case the key is <hl>""</hl> (two double-quotes) and the value
-is a reference to the subroutine that implements it.
+is the name of the method that implements it.
 
 The more interesting usage of this is when we just simply print <hl>$d</hl>:
 
