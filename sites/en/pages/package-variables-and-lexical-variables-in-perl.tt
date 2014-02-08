@@ -1,5 +1,5 @@
 =title Package variables and Lexical variables in Perl
-=timestamp 2014-01-15T07:30:01
+=timestamp 2014-02-08T10:55:01
 =indexes my, state
 =status draft
 =books advanced_book
@@ -9,9 +9,17 @@
 =social 1
 
 =abstract start
-=abstract end
 
 In Perl there are 3 types of variables differing mostly in the their scoping.
+
+<ul>
+  <li>Lexical variables</li>
+  <li>Static or state variables</li>
+  <li>Package variables</li>
+</ul>
+
+=abstract end
+
 
 <h2>Lexical variables</h2>
 
