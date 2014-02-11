@@ -1,6 +1,6 @@
 =title Package variables and Lexical variables in Perl
 =timestamp 2014-02-11T09:55:01
-=indexes my, state
+=indexes my, state, our, use vars, package
 =status show
 =books advanced_book
 =author szabgab
