@@ -83,8 +83,8 @@ correio eletrônico precisam de um pouco mais atenção.
 Em aspas simples <hl>@</hl> não interpola.
 
 Em aspas duplas esse código gera um erro:
-<a href="/global-symbol-requires-explicit-package-name">Global symbol "@bar"
-requires explicit package name at ... line ...</a> (em inglês por enquanto)
+<a href="/simbolo-global-requer-nome-de-pacote-explicito">Global symbol "@bar"
+requires explicit package name at ... line ...</a>
 
 e um alerta:
 <b>Possible unintended interpolation of @bar in string at ... line ...</b>
