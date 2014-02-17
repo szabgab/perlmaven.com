@@ -1,0 +1,194 @@
+=title How much memory do Perl variables use?
+=timestamp 2014-01-16T21:50:01
+=indexes memory, Devel::Size
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+There are cases when it might be quite important to know how much each variable in Perl uses.
+For this <a href="https://metacpan.org/pod/Devel::Size">Devel::Size</a> module provides two functions.
+Both <hl>size</hl> and <hl>total_size</hl> accept a reference to a variable or a data structure.
+The difference between them is that in complex data structures (aka. arrays and hashes), <hl>size</hl>
+only returns the memory used by the structure, not by the data.
+
+=abstract end
+
+There are a few more caveats pointing out some differences between the memory Perl asked for, what Devel::Size
+can report, and what the operating system has actually allocated. If interested, there is a nice explanation
+in the <a href="https://metacpan.org/pod/Devel::Size">documentation of Devel::Size</a>
+
+The following script tries to show some basic values:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+use Devel::Size qw(size total_size);
+
+my $x;
+my @y;
+my %z;
+
+say '                           size  total_size';
+both('SCALAR', \$x);        #    24    24
+both('ARRAY',  \@y);        #    64    64
+both('HASH',   \%z);        #   120   120
+both('CODE', sub {} );      #  8452  8452
+say '';
+
+both('SCALAR', \$x);        #  24    24
+$x = 'x';
+both('SCALAR-1', \$x);      #  56    56
+$x = 'x' x 15;
+both('SCALAR-15', \$x);     #  56    56
+$x = 'x' x 16;
+both('SCALAR-16', \$x);     #  72    72
+$x = 'x' x 31;
+both('SCALAR-31', \$x);     #  72    72
+$x = 'x' x 32;
+both('SCALAR-32', \$x);     #  88    88
+$x = '';
+both('SCALAR=""', \$x);     #  88    88
+$x = undef;
+both('SCALAR=undef', \$x);  #  88    88
+undef $x;
+both('undef SCALAR', \$x);  #  40    40
+say '';
+
+both('ARRAY',  \@y);               #    64    64
+@y = ('x');
+both('ARRAY-1', \@y);              #    96   152
+@y = ('x' x 15);
+both('ARRAY-15', \@y);             #    96   152
+@y = ('x' x 16);
+both('ARRAY-16', \@y);             #    96   168
+@y = ('x' x 31);
+both('ARRAY-31', \@y);             #    96   168
+@y = ('x' x 32);
+both('ARRAY-32', \@y);             #    96   184
+@y = ('x') x 2;
+both('ARRAY-1-1', \@y);            #    96   208
+@y = ('x') x 4;
+both('ARRAY-1-1-1-1', \@y);        #    96   320
+@y = ('x') x 5;
+both('ARRAY-1-1-1-1-1', \@y);      #   104   384
+@y = ('x') x 6;
+both('ARRAY-1-1-1-1-1-1', \@y);    #   112   448
+@y = ('x') x 7;
+both('ARRAY-1-1-1-1-1-1-1', \@y);  #   128   520
+@y = ();
+both('ARRAY = ()', \@y);           #   128   128
+undef @y;
+both('undef ARRAY', \@y);          #    64    64
+say('');
+
+both('HASH',   \%z);                       #  120   120
+%z = ('x' => undef);
+both('HASH x => undef',   \%z);            #  179   203
+%z = ('x' => "x");
+both('HASH x => "x"',   \%z);              #  179   235
+%z = ('x' x 10 => "x" x 20);
+both('HASH "x" x 10 => "x" x 20',   \%z);  #  188   260
+for my $c (qw(a b c d e f g h i)) {
+    $z{$c x 10} = $c x 20;
+}
+both('HASH 10 * 10 + 10 * 20',   \%z);     #  864  1584
+%z = ();
+both('HASH=()',   \%z);                    #  184   184
+undef %z;
+both('undef HASH',   \%z);                 #  120   120
+my $o = bless \%z,'Some::Very::Long::Class::Name::That::Probably::Noone::Uses';
+both('blessed HASH', $o);                  #  120   120
+say('');
+
+both('CODE', sub {}  );                   #  8516  8516
+both('CODE2', sub { my $w }  );           #  8612  8612
+both('CODE3', sub { my $w = 'a' }  );     #  8820  8820
+
+sub both {
+    my ($name, $ref) = @_;
+    printf "%-25s %5d %5d\n", $name, size($ref), total_size($ref);
+}
+</code>
+
+<h2>The environment</h2>
+
+These results were generated on 64 bit OSX, running perl 5.18.2 using Devel::Size 0.79.
+(BTW I got almost the same results when I ran the script on 5.18.1, except that the
+values for CODE-references were 8 bytes smaller.)
+
+<h2>Some observations</h2>
+
+The size of code-references look huge. I wonder if those number are correct.
+
+Strangely <hl>bless</hl> does not change the size of the reference. Or at least, it is not reported.
+
+Memory is allocated in 16 byte chunks for strings. Hence the memory used by a 1-character long string is
+the same as used by a 15-character long string.
+
+Neither setting the string to the empty string (<hl>$x = '';</hl>),
+nor assigning undef to it (<hl>$x = undef;</hl>) reduced the memory usage.
+I had to call <hl>undef $x;</hl> for that. Even then it went back only to 40, instead of the original 24.
+
+In arrays, every element uses 8 bytes + memory allocated to the scalar container + the data.
+
+Setting <hl>@y = ();</hl> eliminated the memory allocation of the date
+(or at least <hl>total_size</hl> does not show it any more)
+Calling <hl>undef @y;</hl> also freed the memory allocated to the structure.
+
+In hashes it's even more complex. I won't attempt to describe it.
+The documentation of Devel::Size has some explanation.
+
+<h2>The actual results look like this</h2>
+
+<code>
+                          size    total_size
+SCALAR                       24    24
+ARRAY                        64    64
+HASH                        120   120
+CODE                       8452  8452
+
+SCALAR                       24    24
+SCALAR-1                     56    56
+SCALAR-15                    56    56
+SCALAR-16                    72    72
+SCALAR-31                    72    72
+SCALAR-32                    88    88
+SCALAR=""                    88    88
+SCALAR=undef                 88    88
+undef SCALAR                 40    40
+
+ARRAY                        64    64
+ARRAY-1                      96   152
+ARRAY-15                     96   152
+ARRAY-16                     96   168
+ARRAY-31                     96   168
+ARRAY-32                     96   184
+ARRAY-1-1                    96   208
+ARRAY-1-1-1-1                96   320
+ARRAY-1-1-1-1-1             104   384
+ARRAY-1-1-1-1-1-1           112   448
+ARRAY-1-1-1-1-1-1-1         128   520
+ARRAY = ()                  128   128
+undef ARRAY                  64    64
+
+HASH                        120   120
+HASH x => undef             179   203
+HASH x => "x"               179   235
+HASH "x" x 10 => "x" x 20   188   260
+HASH 10 * 10 + 10 * 20      864  1584
+HASH=()                     184   184
+undef HASH                  120   120
+blessed HASH                120   120
+
+CODE                       8516  8516
+CODE2                      8612  8612
+CODE3                      8820  8820
+</code>
+
+

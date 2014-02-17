@@ -1,6 +1,6 @@
 =title What's new in Perl 5.10? say, //, state
 =timestamp 2012-07-06T05:45:56
-=indexes v5.10, 5.010, say, //, defined or, state
+=indexes v5.10, 5.010, say, //, defined or, state, ||=, //=
 =status show
 =author szabgab
 =archive 1

@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on November 21, 2013.
+parts are being published every few days. The latest one was published on February 07, 2014.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -110,6 +110,7 @@ to practice what you have learned.
 <li><a href="/perl-arrays">Arrays in Perl</a></li>
 <li><a href="/argv-in-perl">Process command line parameters @ARGV</a></li>
 <li>Process command line parameters using Getopt::Long</li>
+<li><a href="/perl-split">split</a></li>
 <li><a href="/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a></li>
 <li><a href="/join">join</a></li>
 <li><a href="/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
@@ -119,7 +120,7 @@ to practice what you have learned.
 <li><a href="/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
 <li>Stack and <a href="/using-a-queue-in-perl">queue</a></li>
 <li>reverse</li>
-<li>the ternary operator</li>
+<li><a href="/the-ternary-operator-in-perl">The ternary operator</a></li>
 <li>Loop controls: next and last</li>
 <li>min, max, sum using List::Util</li>
 </ol>
@@ -201,6 +202,9 @@ to practice what you have learned.
 <li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a></li>
 <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
 <li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
+<li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
+<li><a href="/testing-a-simple-perl-module">Testing a simple Perl module</a></li>
+<li><a href="/what-are-sting-and-numeric-contexts">What are string and numeric contexts?</a></li>
 </ol>
 
 <b>Object Oriented Perl with Moo</b>

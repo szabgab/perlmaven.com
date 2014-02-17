@@ -136,7 +136,7 @@ foreach my $value (@data) {
 
 Perl的<hl>grep</hl>函数是Unix的grep命令的一般化形式。
 
-它基本上是一个<a href="/filtering-values-with-perl-grep">过滤器</a>。你可以在右边传入一个数组，在代码块中传入一个表达式。<hl>grep</hl>函数会一个一个的提取数组中的值到<hl>$_</hl>（<a href="/the-default-variable-of-perl.html">Perl的默认标量</a>）中，然后执行代码块。如果代码块求值为TRUE，对应的值会通过过滤。如果代码块求值为FALSE，当前值会被过滤掉。
+它基本上是一个<a href="/filtering-values-with-perl-grep">过滤器</a>。你可以在右边传入一个数组，在代码块中传入一个表达式。<hl>grep</hl>函数会一个一个的提取数组中的值到<hl>$_</hl>（<a href="/the-default-variable-of-perl">Perl的默认标量</a>）中，然后执行代码块。如果代码块求值为TRUE，对应的值会通过过滤。如果代码块求值为FALSE，当前值会被过滤掉。
 
 于是我们得到这样的表达式：
 

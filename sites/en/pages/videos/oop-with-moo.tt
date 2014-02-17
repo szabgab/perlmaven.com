@@ -14,7 +14,7 @@
 =abstract start
 
 There are several ways to write Object Oriented Perl. You can manually bless references, you can use one of the constructor and accessor generator modules,
-or you can use on of the modules from the Moose family. Moo is the Minimalist Object Orientation with Moose compatiblity. In this screencast you'll learn
+or you can use on of the modules from the <a href="/moose">Moose</a> family. <a href="/moo">Moo</a> is the Minimalist Object Orientation with Moose compatiblity. In this screencast you'll learn
 the basics. (3:19 min)
 
 =abstract end

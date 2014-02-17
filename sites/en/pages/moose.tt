@@ -1,0 +1,32 @@
+=title Moose - The postmodern object system for Perl
+=timestamp 2014-02-01T08:13:10
+=indexes Moose
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+A series of articles introducing you to <a href="https://metacpan.org/pod/Moose">Moose</a>, the postmodern object system for Perl.
+
+=abstract end
+
+
+<h2>Free</h2>
+<ul>
+  <li><a href="/object-oriented-perl-using-moose">Object Oriented Perl using Moose</a></li>
+  <li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a></li>
+</ul>
+
+
+<h2>Related free articles and interviews</h2>
+
+<ul>
+  <li><a href="/building-a-static-blog-using-blio-and-github">Building a static blog using Blio and Github</a> Blio uses Moose, though in this article we don't discuss the details</a></li>
+  <li><a href="/stevan-little">Interview with Stevan Little, the author of Moose.</a></li>
+  <li><a href="/dave-rolsky">Interview with Dave Rolsky</a></li>
+</ul>
+
+

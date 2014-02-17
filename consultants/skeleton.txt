@@ -1,0 +1,14 @@
+name: 
+img:
+url: 
+twitter: 
+gplus: 
+linkedin: 
+pause: 
+country: 
+location:
+languages:
+specialities: 
+html: 
+
+

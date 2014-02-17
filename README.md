@@ -1,14 +1,24 @@
 Perl Maven
 ==============
 
-These are the source files of the articles published on http://perlmaven.com/ and its sub-domains.
+These are the source files of the articles published on http://perlmaven.com/
+and its sub-domains.
 
-Copyright Gabor Szabo except where the =author field explicitly shows someone else.
-Translations are copyright the translator (mentioned in the =translator field of each file) and Gabor Szabo,
-or the author of the specific article.
+Copyright
+---------
+All the original English articles are copyright Gabor Szabo, except
+where the =author field has the name of someone else. In those cases the person listed in the
+=auhtor field owns the copyright.
+The translated articles are copyright the translator as mentioned in
+the =translator field and the original author as mentioned in the =author field.
 
-License: all the Perl 5 examples are free software. You can redistribute them under the same terms as Perl 5.10.
+License
+--------
+All the Perl 5 examples are "free software". You can redistribute them
+under the same terms as Perl 5.10.
 
+The articles and the translations are licensed as CC BY-NC-ND
+http://creativecommons.org/licenses/by-nc-nd/3.0/
 
 FORMAT
 =======

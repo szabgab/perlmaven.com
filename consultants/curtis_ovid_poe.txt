@@ -1,0 +1,24 @@
+name: Curtis "Ovid" Poe
+url: http://www.allaroundtheworld.fr/
+img: ovid.jpg
+twitter: OvidPerl
+gplus: +CurtisPoe
+linkedin: http://fr.linkedin.com/in/curtispoe
+pause: OVID
+country: FR
+location: La Rochelle, France
+specialities: Testing, Object Oriented Programming, Training, Agile
+languages: English, French
+html: 
+
+Curtis "Ovid" Poe offers Perl training and consulting services via <a href="http://www.allaroundtheworld.fr/">All Around The World</a>,
+a consultancy based in France. Though having programmed in many languages, he's specialized in Perl for over a
+decade and wrote the test harness that ships with Perl. He recently wrote the popular book
+<a href="http://www.wrox.com/WileyCDA/WroxTitle/productCd-1118013840.html">Beginning Perl</a> (Wrox Press) and is one of the authors of
+<a href="http://shop.oreilly.com/product/9780596526740.do">Perl Hacks</a> (O'Reilly).
+Ovid sits on the Board of Directors of The Perl Foundation.
+<p>
+He frequently writes on <a href="http://blogs.perl.org/users/ovid/">his blog</a>
+and occassionally <a href="http://meta.perlmaven.com/contributor/ovid">guest-posts</a> on the Perl Maven site.
+
+

@@ -90,7 +90,7 @@ that will start searching from the right hand side of the string:
 my $str = "The black cat climbed the green tree";
 say rindex $str, "e";              # 35
 say rindex $str, "e", 34;          # 34
-say rindex $str, "e", 33;          # 23
+say rindex $str, "e", 33;          # 29
 </code>
 
 <h2>substr</h2>
