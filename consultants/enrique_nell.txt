@@ -1,6 +1,6 @@
 name: Enrique Nell
 url: http://www.haboogo.com
-img: enrique.jpg
+img: enrique.png
 twitter: blasgordon
 gplus: +EnriqueNell
 linkedin: http://es.linkedin.com/in/enriquenell
@@ -11,7 +11,6 @@ specialities: Text Processing, Data Preparation/Cleansing/Transformation, Automa
 languages: English, Spanish, Portuguese
 
 html: 
-
 With ~20 years experience in software localization and technical translation, Enrique Nell uses Perl for data munging and
 automation tasks. Currently undergoing training on data analytics, he also uses R.
 <p>

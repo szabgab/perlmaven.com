@@ -18,7 +18,8 @@ the <a href="http://perltv.org/">Perl TV</a>.
 He is the original author of <a href="http://padre.perlide.org/">Padre, the Perl IDE</a>.
 <p>
 Gabor received the White Camel award in 2008 for his contribution to the Perl community.
-
-
-
+<p>
+Mostly interested in growing the Perl Maven site and providing Perl training, but
+he would be also open to short consulting projects. Especially setting up testing environment
+and refactoring old code base.
 

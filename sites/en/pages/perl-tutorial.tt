@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on January 02, 2014.
+parts are being published every few days. The latest one was published on February 07, 2014.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -120,7 +120,7 @@ to practice what you have learned.
 <li><a href="/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
 <li>Stack and <a href="/using-a-queue-in-perl">queue</a></li>
 <li>reverse</li>
-<li>the ternary operator</li>
+<li><a href="/the-ternary-operator-in-perl">The ternary operator</a></li>
 <li>Loop controls: next and last</li>
 <li>min, max, sum using List::Util</li>
 </ol>

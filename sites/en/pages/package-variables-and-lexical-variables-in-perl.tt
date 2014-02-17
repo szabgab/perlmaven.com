@@ -1,7 +1,7 @@
 =title Package variables and Lexical variables in Perl
-=timestamp 2014-01-15T07:30:01
-=indexes my, state
-=status draft
+=timestamp 2014-02-11T09:55:01
+=indexes my, state, our, use vars, package
+=status show
 =books advanced_book
 =author szabgab
 =archive 1
@@ -9,9 +9,17 @@
 =social 1
 
 =abstract start
-=abstract end
 
 In Perl there are 3 types of variables differing mostly in the their scoping.
+
+<ul>
+  <li>Lexical variables</li>
+  <li>Static or state variables</li>
+  <li>Package variables</li>
+</ul>
+
+=abstract end
+
 
 <h2>Lexical variables</h2>
 
@@ -134,7 +142,7 @@ package name, we reach the one in the main namespace.
 
 Every package (or namespace) can hold variables with the same name.
 
-<h2>use strict - and use explicit package name</hl>
+<h2>use strict - and use explicit package name</h2>
 
 As I mentioned, the above code did not <hl>use strict;</hl>. That's because it would require us 
 to declare the variables using <hl>my</h> as <a href="/global-symbol-requires-explicit-package-name">explained here</a>.
