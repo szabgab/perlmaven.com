@@ -12,11 +12,11 @@
 
 =abstract start
 
-El operador ternario es probablemente uno de los operadores más tristes en el mundo. El resto de los opeardores tienen
-nombres, como suma, negación unaria, negación binaria, pero este es nombrado solo por su sintaxis.
+El operador ternario es probablemente uno de los operadores más tristes en el mundo. El resto de los operadores tienen
+nombres como suma, negación unaria, negación binaria, pero este es nombrado solo por su sintaxis.
 
-Como en la mayoría de lenguales de programación este es el único operador con 3 parámetros, mucha gente no conoce su nombre real.
-Cuando fue creado se llamó <a href="http://en.wikipedia.org/wiki/%3F:">operator condicional </a>.
+Como en la mayoría de lenguajes de programación es el único operador con 3 parámetros, mucha gente no conoce su nombre real.
+Cuando fue creado se llamó <a href="http://en.wikipedia.org/wiki/%3F:">operador condicional </a>.
 
 =abstract end
 
@@ -30,10 +30,10 @@ Un operador ternario tiene tres operandos.
 
 <h2>El operador condicional</h2>
 
-En Perl 5, como en la mayoría de lenguages de programación, el <b>operador condicional</b> tiene 3 partes separadas por <hl>?</hl> y <hl>:</hl>.
+En Perl 5, como en la mayoría de lenguajes de programación, el <b>operador condicional</b> tiene 3 partes separadas por <hl>?</hl> y <hl>:</hl>.
 
 La primera parte, antes de <hl>?</hl> es la condición. Es evaluada en contexto booleano.
-Si es <a href="/valores-booleanos-en-perl.tt">verdadero</a>, la segunda parte, entre <hl>?<hl> y <hl>:</hl>
+Si es <a href="/valores-booleanos-en-perl.tt">verdadera</a>, la segunda parte, entre <hl>?<hl> y <hl>:</hl>
 será evaluada y ese será el resultado de la expresión.
 En caso contrarío la tercera parte será evaluada y ese será el valor de la expresión.
 
@@ -93,7 +93,7 @@ my $value = get_value();
 $value = $value <= $MAX_LIMIT ? $value : $MAX_LIMIT;
 </code>
 
-También podriamos escribir esto de otra forma:
+También podríamos escribir esto de otra forma:
 
 <code lang="perl">
 $value = $MAX_LIMIT if $value > $MAX_LIMIT;
