@@ -399,7 +399,7 @@ mistaken it is now handled elsewhere. It does not seem to have a "home".
 
 <div class="perl-product">
 There is also <a href="https://github.com/sitaramc/gitolite">Gitolite</a> which a git repository management software (access permissions, creating new repositories etc., but e.g. no web interface).
-It does not have its own web site.
+See also <a href="http://gitolite.com/gitolite/">Git</a>
 e.g. see <a href="http://git-scm.com/book/en/Git-on-the-Server-Gitolite">Git on Gitolite</a>
 </div>
 
@@ -765,6 +765,34 @@ community.
 manage your TV viewing, storing listings in an XML format. There are
 backends to download TV listings for several countries, filter
 programs and Perl libraries to process listings.
+</div>
+
+<div class="perl-product">
+<a href="http://www.gnu.org/software/stow/">GNU Stow</a> s a symlink farm manager.
+</div>
+
+<div class="perl-product">
+<a href="http://www.smoothwall.org/">SmoothWall Express</a> firewall solution uses Perl as its web interface.
+</div>
+
+<div class="perl-product">
+<a href="https://opmantek.com/">nmis - Network Management Information System</a>
+</div>
+
+<div class="perl-product">
+<a href="http://biblatex-biber.sourceforge.net/">Biber: A BibTeX replacement for users of BibLaTeX</a>
+</div>
+
+<div class="perl-product">
+<a href="http://warrick.cs.odu.edu/">Warrick: a tool to help recover websites from archives</a>
+</div>
+
+<div class="perl-product">
+<a href="http://www.kivitendo.de/">Kivitendo ERP/CRM</a>
+</div>
+
+<div class="perl-product">
+<a href="http://wiki.slimdevices.com/index.php/Logitech_Media_Server">Logitech Media Server</a>  for use with their Squeezeboxes.
 </div>
 
 
