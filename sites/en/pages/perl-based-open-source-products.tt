@@ -795,6 +795,10 @@ programs and Perl libraries to process listings.
 <a href="http://wiki.slimdevices.com/index.php/Logitech_Media_Server">Logitech Media Server</a>  for use with their Squeezeboxes.
 </div>
 
+<div class="perl-product">
+<a href="http://dalibo.github.io/pgbadger/">pgBadger</a> a fast PostgreSQL log analyzer.
+</div>
+
 
 <!--
 <div class="perl-product">
