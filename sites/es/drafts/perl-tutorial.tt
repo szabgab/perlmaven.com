@@ -1,208 +1,216 @@
-=title Tutorial de Perl
-=timestamp 2013-06-03T09:22:15
-=description Tutorial gratuito de Perl para gente que necesita mantener código Perl existente, para quienes usan Perl para pequeños scripts, y para desarrollo de aplicaciones en Perl
-=tags training, course, beginner, tutorial
+=title Perl tutorial
+=timestamp 2013-07-16T10:00:04
+=description Free Perl Tutorial for people who need to maintain existing Perl code, for people who use Perl for small scripts, and for Perl application development.
 =status show
 =original perl-tutorial
-=showright 1
 =author szabgab
-=translator ileiva
-=index 0
+=translator davidegx
 =archive 0
-=feed 0
 =comments 0
 =social 1
 
-El tutorial Perl Maven te enseñará lo básico sobre el lenguaje de programación Perl.
-Serás capaz de escribir scripts simples, analizar archivos log y leer y escribir archivos CSV. 
-Por nombrar un par de tareas comúnes.
+El tutorial Perl Maven te enseñará los principios básicos del lenguaje de programación Perl.
+Seras capaz de escribir scripts sencillos, analizar ficheros de log o leer ficheros CSV entre otras
+muchas cosas.
 
-Aprenderás como usar CPAN y varios módulos específicos de CPAN.
+Aprenderas como usar CPAN y veremos algunos modulos CPAN concretos.
 
-Será una buena base sobre la cual seguir.
+La versión online gratuita del tutorial esta actualmente en desarrollo. Muchas partes están listas
+y otras son publicadas cada pocos dias.
+La mayoría de los articulos no están todavía traducidos al castellano, los enlaces a la versión original
+en inglés estarán seguidos de (en) para indicar que todavía no esta traducido.
+Si estas interesado en recibir notificaciones cuando se publiquen nuevos articulos
+<a href="/register">registrate en el newsletter</a> (en).
 
-La versión en línea y gratuita de este tutorial esta actualmente en desarrollo. Muchas partes ya están listas.
-Otras están siendo publicadas cada pocos días. La última fue publicada el 3 de Junio de 2013.
-Si estás interesado en saber cuando se publican nuevas partes, por favor <a href="http://perlmaven.com/register">
-suscríbete al newsletter</a> (en inglés).
+También hay una versión <a href="/beginner-perl-maven-e-book">e-book (en)</a> disponible para comprar.
+Además del tutorial gratuito esa versión incluye muchos ejercicios y soluciones, incluyendo las areas
+que todavía no están disponibles en la versión gratuita.
 
-También hay una versión <a href="http://perlmaven.com/beginner-perl-maven-e-book">e-book</a> (en inglés) del material disponible para comprar.
-Además del tutorial gratuito, esta versión viene con las presentaciones del curso respectivo, incluyendo muchos ejercicios
-y sus soluciones. El material del curso cubre todas las partes, incluyendo las áreas que aún no han sido cubiertas en
-la versión gratuita.
+El <a href="/beginner-perl-maven-video-course">video-curso(en)</a> contiene sobre 210 episodios,
+más de 5 horas de video. Además de presentar el material también proporciona explicaciones sobre las
+soluciones de todos los ejercicios.
+También incluye el código fuente de todos los ejemplos y ejercicios.
 
-El <a href="http://perlmaven.com/beginner-perl-maven-video-course">vídeo-curso</a> que lo acompaña incluye sobre 210
-screencasts, con un total de más de 5 horas de vídeo. Además de presentar el material también provee explicaciones
-a las soluciones de todos los ejercicios. 
-El paquete también incluye los códigos fuente de todos los ejemplos y ejercicios.
+<h2>Free on-line Beginner Perl Maven tutorial</h2>
 
+En este tutorial veremos como usar el lenguaje de programación Perl 5 para
+<b>hacer tu trabajo</b>.
 
-<h2>Tutorial Perl Maven en línea y gratuito para principiantes</h2>
-
-En este tutorial aprenderás como usar el lenguaje de programación Perl 5.
-Aprenderás características generales del lenguaje y extensiones o librerías, o como
-los programadores de Perl las llaman: <b>módulos</b>. Veremos módulos estándar que
-vienen con Perl y módulos de terceros, los que se instalan desde <b>CPAN</b>.
-
-Cuando sea posible intentaré enseñar de una manera muy orientada a las tareas. Prepararé
-tareas y luego aprenderemos a manejar las herramientas necesarias para resolverlas. De ser posible
-te guiaré a ejercicios que puedas realizar para practicar lo que has aprendido.
-
+Aprenderemos tanto caracteristicas generales del lenguaje, asi como extensiones o librerias
+o se denominan en Perl, <b>modulos</b>. Veremos algunos de los modulos estandar incluidos
+en perl y otros modulos externos, que instalaremos desde <b>CPAN</b>. 
 
 <p>
 <b>Introducción</b>
 <ol>
-<li>Instalando Perl, imprimir "Hola Mundo", seguridad (use strict, use warnings)</li>
-<li><a href="/editor-de-perl">Editores, IDEs, ambiente de programación para Perl</a></li>
-<li>Perl en la línea de comandos</li>
-<li>Documentación del núcleo de Perl y de los módulos de CPAN</li>
-<li>Documentación en Perl con POD (Plain Old Documentation)</a></li>
-<li>Depurando scripts en Perl</li>
+<li><a href="/installing-perl-and-getting-started">Install Perl, print Hello World, Safety net (use strict, use warnings)</a></li>
+<li><a href="/perl-editor">Editors, IDEs, development environment for Perl</a></li>
+<li><a href="/perl-on-the-command-line">Perl on the command line</a></li>
+<li><a href="/core-perl-documentation-cpan-module-documentation">Core Perl documentation, CPAN module documentation</a></li>
+<li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
+<li><a href="/debugging-perl-scripts">Debugging Perl scripts</a></li>
 </ol>
 
-<b>Escalares</b>
+<b>Scalars</b>
 <ol>
-<li>Advertencias y mensajes de error comunes<br />
+<li>Common warnings and error messages<br />
 <ul>
-<li>Símbolo global requiere nombre de paquete explícito (Global symbol requires explicit package name)</li>
-<li>Uso de valor sin inicializar (Use of uninitialized value)</li>
-<li>Palabra suelta no permitida mientras se usa "strict subs" (Bareword not allowed while "strict subs" in use)</li>
-<li>Nombre "main::x" usado solo una vez: posible error de tipografía en ... (Name "main::x" used only once: possible typo at ...)</li>
-<li>Categoría de alertas desconocida (Unknown warnings category)</li>
-<li>Escalar encontrado donde se esperaba un operador (Scalar found where operator expected)</li>
-<li>Variable "my" enmascara declaración previa en el mismo ámbito ("my" variable masks earlier declaration in same scope)</li>
+<li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+<li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
+<li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
+<li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
+<li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
+<li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
+<li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
 </ul>
 </li>
-<li>Conversión automática de cadena a número</li>
-<li>Sentencias condicionales: if</li>
-<li>Valores booleanos (verdadero y falso)</li>
-<li>Operadores numéricos y de cadena</li>
-<li>undef, el valor inicial y la función defined</li>
-<li>Cadenas en Perl: entre comillas, interpoladas y escapadas</li>
-<li>Documentos Here</li>
-<li>Variables escalares</a></li>
-<li>Comparando escalares</a></li>
-<li>Funciones de cadena: length, lc, uc, index, substr</a></li>
-<li>Juego de adivinar números (rand, int)</a></li>
-<li>Bucle while</a></li>
-<li>Ámbito de variables en Perl</li>
+<li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
+<li>Conditional statements: if</li>
+<li><a href="/boolean-values-in-perl">Boolean (true and false) values in Perl</a></li>
+<li>Numerical and string operators</li>
+<li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
+<li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
+<li><a href="/here-documents">Here documents</a></li>
+<li><a href="/scalar-variables">Scalar variables</a></li>
+<li><a href="/comparing-scalars-in-perl">Comparing scalars</a></li>
+<li><a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
+<li><a href="/number-guessing-game">Number Guessing game (rand, int)</a></li>
+<li><a href="/while-loop">Perl while loop</a></li>
+<li><a href="/scope-of-variables-in-perl">Scope of variables in Perl</a></li>
 </ol>
 
-<b>Archivos</b>
+<b>Ficheros</b>
 <ol>
-<li>Funciones die, warn y exit</li>
-<li>Escribiendo archivos</li>
-<li>Anexando a archivos</li>
-<li>Abrir y leer desde archivos</li>
-<li>No abras archivos de la manera antigua</li>
-<li>Modo binario, tratando con Unicode</li>
-<li>Leyendo desde un archivo binario, read, eof</li>
-<li>Funciones tell, seek</li>
-<li>Función truncate</li>
+<li><a href="/how-to-exit-from-perl-script">exit</a></li>
+<li><a href="/stdout-stderr-and-redirection">Standard Output, Standard Error and command line redirection</a></li>
+<li><a href="/warn">warn</a></li>
+<li><a href="/die">die</a></li>
+<li><a href="/writing-to-files-with-perl">Writing to files</a></li>
+<li><a href="/appending-to-files">Appending to files</a></li>
+<li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
+<li><a href="/open-files-in-the-old-way">Don't open files in the old way</a></li>
+<li>Binary mode, dealing with Unicode</li>
+<li>Reading from a binary file, read, eof</li>
+<li>tell, seek</li>
+<li>truncate</li>
+<li><a href="/slurp">Slurp mode</a></li>
 </ol>
 
-<b>Listas y Arreglos</b>
+<b>Listas y Arrays</b>
 <ol>
-<li>Bucle foreach</li>
-<li>Bucle for</li>
-<li>Listas</li>
-<li>Usando módulos</li>
-<li>Arreglos</li>
-<li>Procesar parámetros de la línea de comandos con @ARGV y Getopt::Long</li>
-<li>¿Cómo leer y procesar un archivo CSV? (split, Text::CSV_XS)</a></li>
-<li>Función join</a></li>
-<li>El año de 19100 (time, localtime, gmtime) e introduciendo contexto</li>
-<li>Sensibilidad de contexto</li>
-<li>Ordenando arreglos</li>
-<li>Valores únicos en un arreglo</li>
-<li>>Manipulando arreglos: shift, unshift, push, pop</li>
-<li>Pila y cola</li>
-<li>Función reverse</li>
-<li>El operador ternario</li>
-<li>Controles de bucle: next y last</li>
+<li>Bucle foreach en Perl</li>
+<li><a href="/bucle-for-en-perl">Bucle for en Perl</a></li>
+<li>Listas en Perl</li>
+<li>Usando Modulos</li>
+<li><a href="/arrays-en-perl">Arrays en Perl</a></li>
+<li><a href="/argv-en-perl">Procesando parámetros en la línea de comandos (@ARGV)</a></li>
+<li>Procesando parámetros en la línea de comandos con Getopt::Long</li>
+<li><a href="/perl-split">split</a></li>
+<li><a href="/como-leer-un-fichero-csv-en-perl">Como leer fichero CSV usando Perl (split, Text::CSV_XS)</a></li>
+<li><a href="/join">join</a></li>
+<li><a href="/el-anno-19100">El año 19100 (time, localtime, gmtime)</a> e introduciendo el contexto</li>
+<li><a href="/contexto-escalar-y-lista-en-perl">Sensibilidad al contexto en Perl</a></li>
+<li><a href="/sorting-arrays-in-perl">Ordenando arrays en Perl (en)</a></li>
+<li><a href="/unique-values-in-an-array-in-perl">Valores únicos en arrays (en)</a></li>
+<li><a href="/manipulating-perl-arrays">Manipulando arrays: shift, unshift, push, pop (en)</a></li>
+<li>Pilas y <a href="/using-a-queue-in-perl">colas (en)</a></li>
+<li>reverse</li>
+<li><a href="/el-operador-ternario-en-perl">El operador ternario</a></li>
+<li>Controles en bucles: next y last</li>
 <li>min, max, sum usando List::Util</li>
 </ol>
 
-<b>Subrutinas</b>
+<b>Subroutines</b>
 <ol>
-<li>Subrutinas y funciones</li>
-<li>Paso y verificación de parámetros para subrutinas</li>
-<li>Número variable de parámetros</li>
-<li>Retornando una lista</li>
-<li>Subrutinas recursivas</li>
+<li><a href="/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
+<li>Parameter passing and checking for subroutines</li>
+<li><a href="/variable-number-of-parameters">Variable number of parameters</a></li>
+<li>Returning a list</li>
+<li><a href="/recursive-subroutines">Recursive subroutines</a></li>
 </ol>
 
-<b>Hashes</b>
+<b>Hashes, arrays</b>
 <ol>
-<li>Hashes en Perl (diccionario, arreglo asociativo, tabla de consulta)</li>
-<li>Comprobar existencia y eliminar elementos de un hash</li>
+<li><a href="/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
+<li>exists, delete hash elements</li>
+<li><a href="/how-to-sort-a-hash-in-perl">Sorting a hash</a></li>
+<li><a href="/count-words-in-text-using-perl">Count word frequency in a text file</a></li>
 </ol>
 
-<b>Expresiones regulares</b>
+<b>Regular Expressions</b>
 <ol>
-<li>Expresiones regulares en Perl</li>
-<li>Regex: clases de caracteres</li>
-<li>Regex: cuantificadores</li>
-<li>Regex: reconocimiento goloso y no goloso</li>
-<li>Regex: agrupando y capturando</li>
-<li>Regex: anclas</li>
-<li>Opciones y modificadores regex</li>
-<li>Sustituciones (buscar y reemplazar)</li>
-<li>trim - remove espacios iniciales y finales</a></li>
+<li>Regular Expressions in Perl</li>
+<li>Regex: character classes</li>
+<li>Regex: quantifiers</li>
+<li>Regex: Greedy and non-greedy match</li>
+<li>Regex: Grouping and capturing</li>
+<li>Regex: Anchors</li>
+<li>Regex options and modifiers</li>
+<li>Substitutions (search and replace)</li>
+<li><a href="/trim">trim - remove leading and trailing spaces</a></li>
 </ol>
 
-<b>Perl y funcionalidad Shell relacionada</b>
+<b>Perl and Shell related functionality</b>
 <ol>
-<li>Operadores -X</li>
-<li>Tuberías</li>
-<li>Ejecutando programas externos</li>
-<li>Comandos Unix: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
-<li>Como eliminar, copiar o renombrar archivos</a></li>
-<li>Comandos Windows/DOS: del, ren, dir</li>
-<li>Englobamiento de archivos (comodines)</li>
-<li>Identificadores de directorios</li>
-<li>Recorriendo un árbol de directorios (find)</li>
+<li>Perl -X operators</li>
+<li>Perl pipes</li>
+<li>Running external programs <a href="/running-external-programs-from-perl">using system</a></li>
+<li>Unix commands: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
+<li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
+<li>Windows/DOS commands: del, ren, dir</li>
+<li>File globbing (Wildcards)</li>
+<li>Directory handles.</li>
+<li>Traversing directory tree <a href="/recursive-subroutines">manually with recursion</a>,
+<a href="/traversing-the-filesystem-using-a-queue">manually using a queue</a> and using find.</li>
 </ol>
 
 <b>CPAN</b>
 <ol>
-<li>Descargar e instalar Perl (compilación manual o Strawberry Perl)</li>
-<li>Descargar e instalar Perl usando Perlbrew</li>
-<li>Encontrando y evaluando módulos de CPAN</li>
-<li>Descargando e instalando módulos desde CPAN</li>
-<li>¿Cómo cambiar @INC para encontrar módulos en ubicaciones no estándar?</li>
-<li>¿Cómo cambiar @INC a un directorio relativo?</li>
+<li><a href="/download-and-install-perl">Download and install Perl (Strawberry Perl or manual compilation)</a></li>
+<li>Download and install Perl using Perlbrew</li>
+<li>Locating and evaluating CPAN modules</li>
+<li>Downloading and installing Perl Modules from CPAN</li>
+<li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
+<li><a href="/pro/how-to-add-a-relative-directory-to-inc">How to change @INC to a relative directory</a> (for <a href="/pro">Pro</a> subscribers.)</li>
 <li>local::lib</li>
 </ol>
 
-<b>Algunos ejemplos para usar Perl</b>
+<b>Few examples for using Perl</b>
 <ol>
-<li>¿Cómo reemplazar una cadena en un archivo con Perl? (slurp)</li>
-<li>Leyendo archivos Excel con Perl</li>
-<li>Creando archivos Excel con Perl</li>
-<li>Enviando e-mail con Perl</li>
-<li>Scripts CGI con Perl</li>
-<li>Aplicaciones web con Perl: PSGI</li>
-<li>Analizando (parsing) archivos XML con Perl</li>
-<li>Leyendo y escribiendo archivos JSON con Perl</li>
-<li>Acceso a base de datos con Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</li>
-<li>Acceder a LDAP usando Perl</li>
+<li><a href="/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
+<li>Reading Excel files using Perl</li>
+<li><a href="/pro/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (for <a href="/pro">Pro</a> subscribers.)</li>
+<li>Sending e-mail using Perl</li>
+<li>CGI scripts with Perl</li>
+<li>Web applications with Perl: PSGI</li>
+<li>Parsing XML files</li>
+<li>Reading and writing JSON files</li>
+<li><a href="/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
+<li>Accessing LDAP using Perl</li>
 </ol>
 
-<b>Otros</b>
+<b>Other</b>
 <ol>
-<li>Splice, slice, dice y arreglos en Perl</li>
-<li>Como crear un módulo Perl para reuso de código</li>
-<li>Perl orientado a objetos usando Moose</li>
-<li>Tipos de atributo en clases de Perl al usar Moose</li>
+<li><a href="/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
+<li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse</a></li>
+<li><a href="/object-oriented-perl-using-moose">Object Oriented Perl using Mooses</a></li>
+<li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a></li>
+<li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
+<li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
+<li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
+<li><a href="/testing-a-simple-perl-module">Testing a simple Perl module</a></li>
+<li><a href="/what-are-sting-and-numeric-contexts">What are string and numeric contexts?</a></li>
 </ol>
 
+<b>Object Oriented Perl with Moo</b>
+
+There is a whole series of articles on writing Object Oriented code, using the
+light-weight <a href="/moo">Moo</a> OOP framework.
 
 <hr />
 
-Solo un recordatorio, están los <a href="http://perlmaven.com/beginner-perl-maven-e-book">e-books</a> y
-<a href="http://perlmaven.com/beginner-perl-maven-video-course">vídeo cursos</a> disponibles para
-<a href="http://perlmaven.com/products">comprar</a> (ambos en inglés).
-
+Just a reminder, there are corresponding <a href="/beginner-perl-maven-e-book">e-books</a> and
+<a href="/beginner-perl-maven-video-course">video courses</a> available for 
+<a href="/products">purchase</a>.
 
 
