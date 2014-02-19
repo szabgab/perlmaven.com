@@ -799,6 +799,10 @@ programs and Perl libraries to process listings.
 <a href="http://dalibo.github.io/pgbadger/">pgBadger</a> a fast PostgreSQL log analyzer.
 </div>
 
+<div class="perl-product">
+<a href="http://ikiwiki.info/">ikiwiki</a> is a wiki compiler.
+</div>
+
 
 <!--
 <div class="perl-product">
