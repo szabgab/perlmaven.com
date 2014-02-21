@@ -327,7 +327,7 @@ The )name} is "foo"
 ... deve haver uma forma de utilizar os colchetes também, certo?
 
 
-<h2>q, o operator q-unico</h2>
+<h2>q, o operator q-único</h2>
 
 Semelhante ao <hl>qq</hl> existe também um operador chamado <hl>q</hl>. Ele
 também permite que você selecione os delimitadores da sua string, mas isso
