@@ -1,4 +1,4 @@
-=title How to read a CSV file using Perl?
+=title ¿Como leer un fichero CSV en perl?
 =timestamp 2013-12-07T10:45:56
 =indexes CSV, split, Text::CSV, Text::CSV_XS
 =status show
