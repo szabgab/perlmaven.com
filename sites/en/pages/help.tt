@@ -1,7 +1,7 @@
 =title How to get Help with Perl?
-=timestamp 2014-02-07T07:30:01
+=timestamp 2014-02-25T09:00:01
 =indexes help
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
@@ -28,12 +28,13 @@ you'll be referred back to this page to look for help in a place better suited f
 
 <h2>Forums</h2>
 
-<a href="http://perlmonks.org/">Perl Monks</a> is a web forum. It might not look very hip, but the people there are very knowledgeable about Perl
-and a lot of subject related to the environments where Perl is used. It is a good place both when you have very specific question, but also when you need
-directions, how to get started with a problem. If you very little experience with Perl, you'd better state it in your request for help.
+<a href="http://perlmonks.org/">Perl Monks</a> is a web forum. It might not look very hip, but the people there are very knowledgeable about Perl,
+and about a lot of subjects related to the environments where Perl is used. It is a good place both when you have very specific questions,
+but also when you need directions, how to get started with a problem. If you have very little experience with Perl, you'd better state it in your request for help.
 
-<a href="http://stackoverflow.com/">Stack Overflow</a> is a generic forum for programmer. You can tag your question to be about <b>perl</b> and some
-very good people will look at the question. It has a very modern look, but types of questions you are allowed to ask there is somewhat limited.
+<a href="http://stackoverflow.com/">Stack Overflow</a> is a generic forum for programmers. You can tag your questions to be about
+<a href="http://stackoverflow.com/questions/tagged/perl">perl</a> and some very good people will look at the question.
+It has a very modern look, but the types of questions you are allowed to ask there is somewhat limited.
 
 <h2>Mailing lists</h2>
 
@@ -42,11 +43,19 @@ if you have not used Perl a lot, you probably want to sign up to the <a href="ht
 and ask there.
 
 Alternatively, it is often easier to ask people who speak your language or just live near-by. Check out the
-<a href="http://www.pm.org/">Perl Mongers</a> to see if there is a Perl Mongers group near-by, or one that speaks your own language.
+<a href="http://www.pm.org/">Perl Mongers</a> to see if there is a Perl Monger group near-by, or one that speaks your own language.
 They usually have mailing lists or some other means to communicate.
 
 
 <h2>Learn Perl</h2>
 
-The learn.perl.org site has some more information in its <a href="http://learn.perl.org/faq/">FAQ</a>.
+The learn.perl.org site has some more information in its <a href="http://learn.perl.org/faq/">FAQ</a> including the
+<b>Perl FAQ</b> on the right-hand side of that page.
+
+<h2>IRC</h2>
+
+On <a href="http://www.irc.perl.org/">perl.irc.org</a> there are many Perl related channles but specifically the one called #Perl is <b>not</b>
+a channel for helping people. For that you'd be better off going to the #perl channel on irc.freenode.net.
+
+In any case, please be warned that some channels might be rough at times.
 
