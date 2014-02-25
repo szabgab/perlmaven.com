@@ -42,7 +42,7 @@ No interior do bloco anônimo (formado pelo par de chaves <hl>{}</hl>), primeiro
 chamada <hl>$email</hl>. Esta variável existe a partir da linha de sua declaração até o final do bloco. Então isso significa
 que a linha logo após o fechamento do bloco <hl>}</hl> precisa ser comentada. Se você remover o <hl>#</hl> da linha contendo
 <hl># print $email;</hl> e tentar rodar o script, você terá o seguinte erro:
-<a href="/global-symbol-requires-explicit-package-name">Global symbol "$email" requires explicit package name at ...</a>.
+<a href="/simbolo-global-requer-nome-de-pacote-explicito">Global symbol "$email" requires explicit package name at ...</a>.
 
 Em outras palavras, o <b>escopo de toda variável declarada com o comando my é o bloco em que se encontra cercado por chaves.</b>
 
