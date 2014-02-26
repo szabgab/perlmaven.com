@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on February 07, 2014.
+parts are being published every few days. The latest one was published on February 25, 2014.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -50,6 +50,7 @@ to practice what you have learned.
 <ol>
 <li><a href="/installing-perl-and-getting-started">Install Perl, print Hello World, Safety net (use strict, use warnings)</a></li>
 <li><a href="/perl-editor">Editors, IDEs, development environment for Perl</a></li>
+<li><a href="/help">Getting Help</a></li>
 <li><a href="/perl-on-the-command-line">Perl on the command line</a></li>
 <li><a href="/core-perl-documentation-cpan-module-documentation">Core Perl documentation, CPAN module documentation</a></li>
 <li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
