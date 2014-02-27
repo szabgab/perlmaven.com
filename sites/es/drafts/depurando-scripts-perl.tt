@@ -1,0 +1,172 @@
+=title Depurando scripts Perl
+=timestamp 2013-03-07T19:45:57
+=indexes -d, Data::Dumper, print, debug, debugging, $VAR1, $VAR2
+=status show
+=original debugging-perl-scripts
+=books beginner_book
+=author szabgab
+=translator davidegx
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+Cuando estudié ciencias de la computación en la universidad aprendimos mucho sobre como escribir programas,
+pero por lo que recuerdo nadie nos hablo sobre depuración. Escuchamos acerca del maravilloso mundo de crear
+nuevas cosas, pero nadie nos dijo que la mayoría del tiempo la emplearemos intentando entender el código
+hecho por otras personas.
+
+Preferimos escribir nuevo código, sin embargo pasamos mucho más tiempo intentando entender el código ya escrito
+y porqué se comporta de forma erronea que el que empleamos originalmente.
+
+=abstract end
+
+<h2>¿Que es la depuración?</h2>
+
+Antes de ejecutar un programa todo estaba en estado conocido y correcto.
+
+Después de ejecutarlo pasa algo inexperado, se produce un estado erroneo.
+
+La tarea es averiguar en que punto algo fue mal y corregirlo.
+
+<h2>¿Que es programar y que es un bug?<h2>
+
+Básicamente programar es cambiar el mundo un poco moviendo datos contenidos en variables.
+
+En cada paso cambiamos los datos contenidos en alguna variable del programa, o algo en el "mundo real". (Por ejemplo en el disco o en la pantalla.)
+
+Cuando escribes un programa piensas en cada paso: que valor debería ser movido a que variable.
+
+Un bug es un caso en el que pensaste que pusiste un valor X en algunan variable cuando en realidad Y fue lo que se uso.
+
+En algún momento, normalmente al final del programa, puedes ver que el programa mostró un valor incorrecto.
+
+Durante la ejecución del programa se puede manifestar en la aparición de warnings o la terminación inesperada del programa.
+
+<h2>¿Como depurar?</h2>
+
+La forma más directa de depurar un programa es ejecutarlo, y en cada paso comprobar que todas las variables
+tiene los valores esperados. Puedes hacer esto <b>usando un debugger</b> o puedes incluir <b>sentencias print</b> en el
+programa y examinar la salida posteriormente.
+
+Perl viene con un potente debugger en línea de comandos. Recomiendo aprenderlo aunque puede intimidar
+un poco al principio. He preparado un vídeo mostrando los 
+<a href="http://perlmaven.com/using-the-built-in-debugger-of-perl">comandos básicos del debugger integrado en Perl</a>.
+
+IDEs, como <a href="http://www.activestate.com/">Komodo</a>,
+<a href="http://eclipse.org/">Eclipse</a> y 
+<a href="http://padre.perlide.org/">Padre</a> vienen con un debugger gráfico. En el futuro también haré un vídeo de como usarlos.
+
+<h2>Sentencias print</h2>
+
+Mucha gente usa la vieja estrategia de usar sentencias print en el código.
+
+En un lenguaje donde el tiempo de compilación pude ser grande incluir setencias print
+para depurar el código es considerado una mala forma de depurar el código.
+No es así en Perl, incluso aplicaciones grandes compilan y empiezan a ejecutar en unos pocos segundos.
+
+Al añadir sentencias print hay que tener cuidado de añadir delimitadores alrededor de las variables. De esta
+forma se verá si hay espacios al inicio o final de un valor que pueden causar problemas.
+Estos casos son dificiles de ver si no se añaden ningún delimitador:
+
+Los valores escalares pueden ser mostrados así:
+
+<code lang="perl">
+print "<$file_name>\n";
+</code>
+
+En este ejemplos los signos de menor y mayor que simplemente sirven para hacer más fácil
+de leer el contenido exacto de la variable:
+
+<code>
+<path/to/file
+>
+</code>
+
+If the above is printed you can quickly notice that there is a trailing newline at the end of the $file_name
+variable. Probably you forgot to call <b>chomp</b>.
+
+<h2>Complex data structures</h2>
+
+We have not learned even scalars yet, but let me jump ahead here and show how you would
+print out the content of the more complex data structures. If you are reading this
+as part of the Perl tutorial then you probably want to skip to the next entry and come back later.
+This won't mean too much to you now.
+
+Otherwise, keep reading.
+
+For complex data structures (references, arrays and hashes) you can use the <hl>Data::Dumper</hl>
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+
+print Dumper \@an_array;
+print Dumper \%a_hash;
+print Dumper $a_reference;
+</code>
+
+These will print something like this, which helps understand the content of the variables,
+but shows only a generic variable name such as <hl>$VAR1</hl> and <hl>$VAR2</hl>.
+
+<code>
+$VAR1 = [
+       'a',
+       'b',
+       'c'
+     ];
+$VAR1 = {
+       'a' => 1,
+       'b' => 2
+     };
+$VAR1 = {
+       'c' => 3,
+       'd' => 4
+     };
+</code>
+
+I'd recommend adding some more code and printing the name of the variable like this:
+
+<code lang="perl">
+print '@an_array: ' . Dumper \@an_array;
+</code>
+
+to gain:
+
+<code>
+@an_array: $VAR1 = [
+        'a',
+        'b',
+        'c'
+      ];
+</code>
+
+or with Data::Dumper like this:
+
+<code lang="perl">
+print Data::Dumper->Dump([\@an_array, \%a_hash, $a_reference],
+   [qw(an_array a_hash a_reference)]);
+</code>
+
+getting
+
+<code>
+$an_array = [
+            'a',
+            'b',
+            'c'
+          ];
+$a_hash = {
+          'a' => 1,
+          'b' => 2
+        };
+$a_reference = {
+               'c' => 3,
+               'd' => 4
+             };
+</code>
+
+There are nicer ways to print data structures but at this point <hl>Data::Dumper</hl>
+is good enough for our needs and it is available in every perl installation.
+We'll discuss other methods later on.
+
