@@ -51,7 +51,8 @@ There they behave like <a href="/static-and-state-variables-in-perl">static vari
 <code lang="perl">
 sub f {
    state $x = 0;
-   state
+   state @z;
+   state %h;
 }
 </code>
 
