@@ -1,0 +1,21 @@
+name: Ștefan Suciu
+img: stefansbv.png
+url: http://s2i2.ro
+twitter: stefbv70
+gplus: +%C8%98tefanSuciu
+linkedin: http://ro.linkedin.com/pub/%C8%99tefan-suciu/3b/922/b76/
+pause: 
+country: RO
+location: Brașov
+languages: Romanian, English
+specialities: Databases, ETL, Database applications, Automation, Perl
+html: 
+
+Ștefan Suciu owns a small IT consulting business in Brașov, Romania.
+While currently the target market is focused on the other local small
+businesses, a wider international target would be challenging.
+
+<p>
+He is also the author and/or contributor to a few open source projects
+developed in Perl <a href="https://github.com/stefansbv">(GitHub)</a>
+and one of the Romanian translators for the Perl Maven site.

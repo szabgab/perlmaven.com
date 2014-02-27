@@ -10,8 +10,8 @@
 =abstract start
 
 Perl has a number of "magic" variables. Some are really useful, some are there mostly for historical reasons.
-This time we are going to look at two: <hl>$"</hl> also known as <b>output field separator</b>, and
-<hl>$,</hl> also known as <b>list separator</b>.
+This time we are going to look at two: <hl>$,</hl> also known as <b>output field separator</b>, and
+<hl>$"</hl> also known as <b>list separator</b>.
 
 =abstract end
 
