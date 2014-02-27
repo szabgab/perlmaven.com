@@ -1,4 +1,4 @@
-=title How to get Help with Perl?
+=title Dónde obtener ayuda en español sobre Perl
 =timestamp 2014-02-07T07:30:01
 =indexes help
 =status draft
@@ -34,19 +34,7 @@
 
 <h2>IRC</h2>
 
-        IRC Hispano:
-        
-                irc://irc.irc-hispano.org:6667/
-                   
-                        #perl
+        IRC Hispano:  irc://irc.irc-hispano.org:6667/ ( canal #perl )
 
-        IRC Perl.org:
-
-                irc://irc.perl.org:6667/
-        
-                        #perlspanish
-                        
-                        #barcelona.pm
-                        
-                        #madrid.pm
+        IRC Perl.org: irc://irc.perl.org:6667/        ( canales #perlspanish, #barcelona.pm, #madrid.pm )
 
