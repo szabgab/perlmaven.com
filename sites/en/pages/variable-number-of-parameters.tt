@@ -64,8 +64,8 @@ Unfortunately, if you'd like to pass two arrays to a function like in the follow
 you are in trouble.
 
 <code lang="perl">
-my @good = ('Yoda', 'Luke', 'Leia')
-my @evil = ('Darth Vader', 'Emperor')
+my @good = ('Yoda', 'Luke', 'Leia');
+my @evil = ('Darth Vader', 'Emperor');
 print award(@good, @evil), "\n";
 </code>
 
