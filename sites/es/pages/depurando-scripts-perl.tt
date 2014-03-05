@@ -13,12 +13,12 @@
 =abstract start
 
 Cuando estudié ciencias de la computación en la universidad aprendimos mucho sobre como escribir programas,
-pero por lo que recuerdo nadie nos hablo sobre depuración. Escuchamos acerca del maravilloso mundo de crear
-nuevas cosas, pero nadie nos dijo que la mayoría del tiempo la emplearemos intentando entender el código
+pero nadie nos hablo sobre depuración. Escuchamos acerca del maravilloso mundo de crear
+nuevas cosas, pero nadie nos dijo que la mayoría del tiempo la pasaremos intentando entender el código
 hecho por otras personas.
 
 Preferimos escribir nuevo código, sin embargo pasamos mucho más tiempo intentando entender el código ya escrito
-y porqué se comporta de forma erronea que el que empleamos originalmente.
+y porqué se comporta de forma errónea que el que empleamos originalmente.
 
 =abstract end
 
@@ -26,7 +26,7 @@ y porqué se comporta de forma erronea que el que empleamos originalmente.
 
 Antes de ejecutar un programa todo estaba en estado conocido y correcto.
 
-Después de ejecutarlo pasa algo inexperado, se produce un estado erroneo.
+Después de ejecutarlo pasa algo inesperado, se produce un estado erróneo.
 
 La tarea es averiguar en que punto algo fue mal y corregirlo.
 
@@ -38,7 +38,7 @@ En cada paso cambiamos los datos contenidos en alguna variable del programa, o a
 
 Cuando escribes un programa piensas en cada paso: que valor debería ser movido a que variable.
 
-Un bug es un caso en el que pensaste que pusiste un valor X en algunan variable cuando en realidad Y fue lo que se uso.
+Un bug es un caso en el que pensaste que pusiste un valor X en alguna variable cuando en realidad Y fue lo que se uso.
 
 En algún momento, normalmente al final del programa, puedes ver que el programa mostró un valor incorrecto.
 
@@ -47,28 +47,28 @@ Durante la ejecución del programa se puede manifestar en la aparición de warni
 <h2>¿Como depurar?</h2>
 
 La forma más directa de depurar un programa es ejecutarlo, y en cada paso comprobar que todas las variables
-tiene los valores esperados. Puedes hacer esto <b>usando un debugger</b> o puedes incluir <b>sentencias print</b> en el
+tienen los valores esperados. Puedes hacer esto <b>usando un debugger</b> o puedes incluir <b>sentencias print</b> en el
 programa y examinar la salida posteriormente.
 
 Perl viene con un potente debugger en línea de comandos. Recomiendo aprenderlo aunque puede intimidar
 un poco al principio. He preparado un vídeo mostrando los 
-<a href="http://perlmaven.com/using-the-built-in-debugger-of-perl">comandos básicos del debugger integrado en Perl</a>.
+<a href="http://perlmaven.com/using-the-built-in-debugger-of-perl">comandos básicos del debugger integrado en Perl (en)</a>.
 
 IDEs, como <a href="http://www.activestate.com/">Komodo</a>,
 <a href="http://eclipse.org/">Eclipse</a> y 
-<a href="http://padre.perlide.org/">Padre</a> vienen con un debugger gráfico. En el futuro también haré un vídeo de como usarlos.
+<a href="http://padre.perlide.org/">Padre</a> vienen con un debugger gráfico. En el futuro también haré un vídeo sobre ellos.
 
 <h2>Sentencias print</h2>
 
 Mucha gente usa la vieja estrategia de usar sentencias print en el código.
 
-En un lenguaje donde el tiempo de compilación pude ser grande incluir setencias print
-para depurar el código es considerado una mala forma de depurar el código.
+En un lenguaje donde el tiempo de compilación pude ser grande incluir sentencias print
+para depurar el código es considerado una mala forma de hacerlo.
 No es así en Perl, incluso aplicaciones grandes compilan y empiezan a ejecutar en unos pocos segundos.
 
 Al añadir sentencias print hay que tener cuidado de añadir delimitadores alrededor de las variables. De esta
 forma se verá si hay espacios al inicio o final de un valor que pueden causar problemas.
-Estos casos son dificiles de ver si no se añaden ningún delimitador:
+Estos casos son difíciles de ver si no se añaden ningún delimitador:
 
 Los valores escalares pueden ser mostrados así:
 
@@ -76,27 +76,26 @@ Los valores escalares pueden ser mostrados así:
 print "<$file_name>\n";
 </code>
 
-En este ejemplos los signos de menor y mayor que simplemente sirven para hacer más fácil
-de leer el contenido exacto de la variable:
+En este ejemplo los signos de menor y mayor que simplemente sirven para hacer más fácil
+leer el contenido exacto de la variable:
 
 <code>
 <path/to/file
 >
 </code>
 
-If the above is printed you can quickly notice that there is a trailing newline at the end of the $file_name
-variable. Probably you forgot to call <b>chomp</b>.
+Si algo parecido a lo anterior aparece en la pantalla te darás cuenta rápidamente del retorno de carro
+extra al final de la variable $file_name. Probablemente olvidaste llamar a la función <b>chomp</b>.
 
-<h2>Complex data structures</h2>
+<h2>Estructuras de datos complejas</h2>
 
-We have not learned even scalars yet, but let me jump ahead here and show how you would
-print out the content of the more complex data structures. If you are reading this
-as part of the Perl tutorial then you probably want to skip to the next entry and come back later.
-This won't mean too much to you now.
+Todavía no hemos aprendido variables escalares, pero daré un salto hacía adelante para
+mostrar como mostrar el contenido de estructuras de datos complejas. Si estas leyendo
+esto como parte del tutorial de Perl quizás quieras saltar a la siguiente entrada y volver más tarde.
 
-Otherwise, keep reading.
+En caso contrario, continua leyendo.
 
-For complex data structures (references, arrays and hashes) you can use the <hl>Data::Dumper</hl>
+Para estructuras de datos complejas (referencias, arrays y hashes) puedes usar <hl>Data::Dumper</hl>
 
 <code lang="perl">
 use Data::Dumper qw(Dumper);
@@ -106,8 +105,7 @@ print Dumper \%a_hash;
 print Dumper $a_reference;
 </code>
 
-These will print something like this, which helps understand the content of the variables,
-but shows only a generic variable name such as <hl>$VAR1</hl> and <hl>$VAR2</hl>.
+Esto mostrará algo como:
 
 <code>
 $VAR1 = [
@@ -125,13 +123,16 @@ $VAR1 = {
      };
 </code>
 
-I'd recommend adding some more code and printing the name of the variable like this:
+Que ayuda a entender el contenido de las variables, pero solo muestra un nombre
+de variable genérico como <hl>$VAR1</hl> o <hl>$VAR2</hl> 
+
+Recomiendo añadir algo más de código y mostrar el nombre de la variable como:
 
 <code lang="perl">
 print '@an_array: ' . Dumper \@an_array;
 </code>
 
-to gain:
+que mostrará:
 
 <code>
 @an_array: $VAR1 = [
@@ -141,14 +142,14 @@ to gain:
       ];
 </code>
 
-or with Data::Dumper like this:
+o así:
 
 <code lang="perl">
 print Data::Dumper->Dump([\@an_array, \%a_hash, $a_reference],
    [qw(an_array a_hash a_reference)]);
 </code>
 
-getting
+que devolverá:
 
 <code>
 $an_array = [
@@ -166,7 +167,8 @@ $a_reference = {
              };
 </code>
 
-There are nicer ways to print data structures but at this point <hl>Data::Dumper</hl>
-is good enough for our needs and it is available in every perl installation.
-We'll discuss other methods later on.
+Hay otras formas más elegantes de mostrar estructuras de datos pero de momento
+<hl>Data::Dumper</hl> es suficientemente bueno para lo que necesitamos y esta disponible
+en todas las distribuciones de Perl.
+Veremos otros métodos más adelante.
 
