@@ -164,9 +164,11 @@ Getting started with the translation
 =====================================
 * Sign up to GitHub, configure Git on your computer (name, email)
 * Fork the https://github.com/szabgab/perl5maven.com repository and clone the fork to your computer
-* Check on https://meta.wikimedia.org/wiki/List_of_Wikipedias what should be the hostname for the language
-  and talk to Gabor about this.
-* cp -r skeleton sites/CC     (where CC is the hostname selected)
+
+* If the specific language does not have a CC directory yet and does not have translated pages yet:
+    * Check on https://meta.wikimedia.org/wiki/List_of_Wikipedias what should be the hostname for the language
+      and talk to Gabor about this.
+    * cp -r skeleton sites/CC     (where CC is the hostname selected)
 * translate the first page sites/en/pages/installing-perl-and-getting-started.tt as
                            sites/CC/drafts/installing-perl-and-getting-started.tt
   or as                    sites/CC/drafts/TRANSLATD-BUT-TRANSLITERATED-TITLE.tt

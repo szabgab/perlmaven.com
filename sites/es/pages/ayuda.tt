@@ -36,7 +36,7 @@
 
 <h2>IRC</h2>
 
-        IRC Hispano:  irc://irc.irc-hispano.org:6667/ ( canal #perl )
-
-        IRC Perl.org: irc://irc.perl.org:6667/        ( canales #perlspanish, #barcelona.pm, #madrid.pm )
-
+<ul>
+  <li>IRC Hispano:  irc://irc.irc-hispano.org:6667/ ( canal #perl )</li>
+  <li>IRC Perl.org: irc://irc.perl.org:6667/        ( canales #perlspanish, #barcelona.pm, #madrid.pm )</li>
+</ul>
