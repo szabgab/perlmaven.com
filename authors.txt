@@ -38,4 +38,5 @@ yunchang;Yunchang Kang;yunchang.jpg;https://plus.google.com/11179847997888051158
 spidamoo;Vladimir Zatoloka;spidamoo.jpg;https://plus.google.com/108953362301851379228
 rampa;Lukáš Rampa;rampa.jpg;https://plus.google.com/109591447228309550336
 kbeyazli;Kadir Beyazlı;kbeyazli.jpg;https://plus.google.com/110621377637284058504
-ovid;Curtis "Ovid" Poe;ovid.jpg;https://plus.google.com/+CurtisPoe/
+ovid;Curtis "Ovid" Poe;ovid.jpg;https://plus.google.com/+CurtisPoe
+joaquinferrero;Joaquín Ferrero;joaquinferrero.png;https://plus.google.com/+Joaqu%C3%ADnFerrero
