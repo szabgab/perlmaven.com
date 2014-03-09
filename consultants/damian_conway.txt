@@ -1,7 +1,7 @@
 name: Damian Conway
 img: damianconway.jpg
 url: http://damian.conway.org/
-gplus: +Damian
+gplus: 107112730187761331780
 linkedin: http://www.linkedin.com/profile/view?id=104419
 pause: DCONWAY
 country: AU
