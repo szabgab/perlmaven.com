@@ -1,5 +1,5 @@
 name: Damian Conway
-img: damian_conway.jpg
+img: damianconway.jpg
 url: http://damian.conway.org/
 gplus: +Damian
 linkedin: http://www.linkedin.com/profile/view?id=104419
