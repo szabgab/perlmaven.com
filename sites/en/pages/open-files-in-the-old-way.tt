@@ -21,10 +21,18 @@ Let's see what is that, what is the problem with that and why to avoid?
 
 <h2>So what shall I do?</h2>
 
-Before explaining what you should not do, let me link you to the articles explain what you should do:
+Before explaining what you should <b>not</b> do, let me link you to the articles explain what you should do:
 
 Read <a href="/open-and-read-from-files">how to open file for reading in a modern way</a>
 or the one about <a href="/writing-to-files-with-perl">writing to file in Perl</a>.
+
+<h2>The danger</h2>
+
+Coming up with examples why using the old-style open is generally a bad idea, let me point you
+to the article explaining <a href="http://haxit.blogspot.com.es/2013/08/hacking-transcend-wifi-sd-cards.html">how to break in a Transcend WiFi SD Cards</a>.
+There are many programming mistakes exploited in that article, using old-style open is just one of them,
+but there is no good reason to keep using the old way.
+
 
 Now let's get back to the old, and not-so-good-any-more practices.
 
