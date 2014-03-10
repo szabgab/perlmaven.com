@@ -25,7 +25,7 @@ html:
 
     <p>
     Damian runs an international training
-    company&mdash;<a href="http://http://damian.conway.org/">Thoughtstream</a>&dash;through
+    company&mdash;<a href="http://damian.conway.org/">Thoughtstream</a>&dash;through
     which he provides programmer and speaker training from beginner to
     masterclass level throughout Europe, North America, and Australasia.
     </p>
