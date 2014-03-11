@@ -34,6 +34,38 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-hello-world-1">Solution: Hello World (part 1)</a></li>
   <li><a href="/pro/beginner-perl/solution-hello-world-2">Solution: Hello World (part 2)</a></li>
 </ul>
+
+<h3>Scalars</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/scalar-values-and-variables">Scalar values and variables</a></li>
+  <li><a href="/pro/beginner-perl/common-errors">Common Errors</a></li>
+  <li><a href="/pro/beginner-perl/interpolation-stdin-chomp">User Input and Output</a></li>
+  <li><a href="/pro/beginner-perl/numerical-operators">Numerical Operators</a></li>
+<!--
+  <li><a href="/pro/beginner-perl/">String Operators</a></li>
+  <li><a href="/pro/beginner-perl/if-statement">If statement</a></li>
+  <li><a href="/pro/beginner-perl/comparison-operators">Comparison Operators</a></li>
+  <li><a href="/pro/beginner-perl/">String Number Conversion</a></li>
+  <li><a href="/pro/beginner-perl/compare-values">Compare Values</a></li>
+  <li><a href="/pro/beginner-perl/undef">Undef</a></li>
+  <li><a href="/pro/beginner-perl/logical-operators">Logical Operators</a></li>
+  <li><a href="/pro/beginner-perl/true-false">True and False values</a></li>
+  <li><a href="/pro/beginner-perl/short-circuit">Short circuit</a></li>
+  <li><a href="/pro/beginner-perl/string-functions-index">String function: index</a></li>
+  <li><a href="/pro/beginner-perl/substr">Substr</a></li>
+  <li><a href="/pro/beginner-perl/">String in Double quotes</a></li>
+  <li><a href="/pro/beginner-perl/">String in Single quotes</a></li>
+  <li><a href="/pro/beginner-perl/scope-of-variables">Scope of Variables</a></li>
+  <li><a href="/pro/beginner-perl/rand-and-int">Rand and Int</a></li>
+  <li><a href="/pro/beginner-perl/here-documents">Here documents</a></li>
+  <li><a href="/pro/beginner-perl/">Exercise: rectangular</a></li>
+  <li><a href="/pro/beginner-perl/">Solution: area of rectangular</a></li>
+  <li><a href="/pro/beginner-perl/">Solution: Area prompt and warn if values are less than 0</a></li>
+  <li><a href="/pro/beginner-perl/">Solution: Concatenation</a></li>
+  <li><a href="/pro/beginner-perl/">Exercise: Number guessing game</a></li>
+  <li><a href="/pro/beginner-perl/">Solution: Number guessing game</a></li>
+-->
+</ul>
 <!--
   <li><a href="/pro/beginner-perl/"></a></li>
 -->
