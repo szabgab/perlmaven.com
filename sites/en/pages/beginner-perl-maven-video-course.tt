@@ -23,6 +23,15 @@ useful Perl scripts and/or to maintaining existing scripts.
 <h2>Table of Contents (part 1)</h2>
 
 <ul>
+  <li><a href="/pro/beginner-perl/installation">Welcome and installation</a></li>
+  <li><a href="/pro/beginner-perl/comments">Comments</a></li>
+  <li><a href="/pro/beginner-perl/editors">Editors, IDEs</a></li>
+</ul>
+<!--
+  <li><a href="/pro/beginner-perl/"></a></li>
+-->
+
+<ul>
 <li>How to install Perl, how to run scripts</li>
 <li>Basic I/O</li>
 <li>Scalar values and variables (numbers and strings)</li>
