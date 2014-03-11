@@ -64,6 +64,29 @@ subscription service.
   <li><a href="/pro/beginner-perl/exercise-number-guessing-game">Exercise: Number guessing game</a></li>
   <li><a href="/pro/beginner-perl/solution-number-guessing-game">Solution: Number guessing game</a></li>
 </ul>
+
+<h3>Files</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/die-warn-exit">die, warn, exit</a></li>
+  <li><a href="/pro/beginner-perl/open-file">Open File</a></li>
+  <li><a href="/pro/beginner-perl/open-file-all">Open File All</a></li>
+  <li><a href="/pro/beginner-perl/open-file-with-error-handling">Open File with Error Handling</a></li>
+  <li><a href="/pro/beginner-perl/open-or-die">open or die</a></li>
+  <li><a href="/pro/beginner-perl/no-such-file">No such file</a></li>
+  <li><a href="/pro/beginner-perl/read-one-line">Read one line</a></li>
+  <li><a href="/pro/beginner-perl/while-loop">While loop</a></li>
+  <li><a href="/pro/beginner-perl/read-file-line-by-line">Read file line by line</a></li>
+  <li><a href="/pro/beginner-perl/write-to-file">Write to file</a></li>
+  <li><a href="/pro/beginner-perl/sum-numbers-in-a-file">Sum numbers in a file</a></li>
+  <li><a href="/pro/beginner-perl/debug-sum-numbers">Debug the sum numbers script</a></li>
+  <li><a href="/pro/beginner-perl/analyze-apache-log-file">Analyze Apache log file</a></li>
+  <li><a href="/pro/beginner-perl/old-style-open">Old Style Open</a></li>
+  <li><a href="/pro/beginner-perl/exercise-add-more-statistics">Exercise: Add more statistics</a></li>
+  <li><a href="/pro/beginner-perl/solution-add-more-statistics">Solution: Add more statistics</a></li>
+  <li><a href="/pro/beginner-perl/exercise-write-report-to-file">Exercise: Write report to file</a></li>
+  <li><a href="/pro/beginner-perl/solution-write-report-to-file">Solution: Write report to file</a></li>
+</ul>
+
 <!--
   <li><a href="/pro/beginner-perl/"></a></li>
 -->
