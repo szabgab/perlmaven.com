@@ -12,25 +12,41 @@
 =social 0
 
 
-The Beginner Perl Maven video-course has been split in two parts.
-
-The video course includes the e-book with over 200 pages, 50 exercises with solution and the
-full "Beginner Perl Maven" training material.
-
 Watching the videos and doing all the exercises will allow you to start writing
 useful Perl scripts and/or to maintaining existing scripts.
 
-<h2>Table of Contents (part 1)</h2>
+You can get access to all the video by signing up to the <a href="/pro">Perl Maven Pro</a>
+subscription service.
 
+<h2>Table of Contents</h2>
+<h3>Introduction</h3>
 <ul>
   <li><a href="/pro/beginner-perl/installation">Welcome and installation</a></li>
-  <li><a href="/pro/beginner-perl/comments">Comments</a></li>
   <li><a href="/pro/beginner-perl/editors">Editors, IDEs</a></li>
+  <li><a href="/pro/beginner-perl/command-line">Command line</a></li>
+  <li><a href="/pro/beginner-perl/hello-world">Hello World</a></li>
+  <li><a href="/pro/beginner-perl/safety-net">Safety Net</a></li>
+  <li><a href="/pro/beginner-perl/debugging">Debugging</a></li>
+  <li><a href="/pro/beginner-perl/comments">Comments</a></li>
+  <li><a href="/pro/beginner-perl/documentation">Documentation of Perl</a></li>
+  <li><a href="/pro/beginner-perl/pod">POD - Plain Old Documentation</a></li>
+  <li><a href="/pro/beginner-perl/exercise-hello-world">Exercise: Hello World</a></li>
 </ul>
 <!--
   <li><a href="/pro/beginner-perl/"></a></li>
 -->
 
+
+
+
+<h2>Availability at Udemy</h2>
+
+The video courses are also available via Udemy where they have been split in two parts.
+
+There they include the e-book with over 200 pages, 50 exercises with solution and the
+full "Beginner Perl Maven" training material.
+
+<h2>Table of Contents (part 1)</h2>
 <ul>
 <li>How to install Perl, how to run scripts</li>
 <li>Basic I/O</li>
