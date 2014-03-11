@@ -6,7 +6,7 @@ gplus:
 linkedin: http://au.linkedin.com/in/deanhamstead
 pause: DJZORT
 country: AU
-location: Sydney
+location: Sydney, Australia
 languages: English, Tongan
 specialities: Web Development, Infrastructure Automation, Telecoms, Alarming & Monitoring, Lean
 html:

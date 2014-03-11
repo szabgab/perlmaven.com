@@ -163,13 +163,15 @@ irrelevant or offending comments.
 Getting started with the translation
 =====================================
 * Sign up to GitHub, configure Git on your computer (name, email)
-* Fork the https://github.com/szabgab/perl5maven.com repository and clone the fork to your computer
-* Check on https://meta.wikimedia.org/wiki/List_of_Wikipedias what should be the hostname for the language
-  and talk to Gabor about this.
-* cp -r skeleton sites/CC     (where CC is the hostname selected)
+* Fork the https://github.com/szabgab/perlmaven.com repository and clone the fork to your computer
+
+* If the specific language does not have a CC directory yet and does not have translated pages yet:
+    * Check on https://meta.wikimedia.org/wiki/List_of_Wikipedias what should be the hostname for the language
+      and talk to Gabor about this.
+    * cp -r skeleton sites/CC     (where CC is the hostname selected)
 * translate the first page sites/en/pages/installing-perl-and-getting-started.tt as
                            sites/CC/drafts/installing-perl-and-getting-started.tt
-  or as                    sites/CC/drafts/TRANSLATD-BUT-TRANSLITERATED-TITLE.tt
+  or as                    sites/CC/drafts/TRANSLATED-BUT-TRANSLITERATED-TITLE.tt
   as is acceptable in other sites in your language.
 * Add =original and =translator entries to the translated file
 * Add yourself to the authors.txt file and add a 128x128 picture of yourself to the sites/en/img/ folder.
@@ -223,14 +225,14 @@ generate ssh key: https://help.github.com/articles/generating-ssh-keys
 
 Create a Github account, let's say your username is USERNAME:
 Upload the ssh key to your account
-On Github 'fork' the https://github.com/szabgab/perl5maven.com repository
-It will create another repository https://github.com/USERNAME/perl5maven.com
+On Github 'fork' the https://github.com/szabgab/perlmaven.com repository
+It will create another repository https://github.com/USERNAME/perlmaven.com
 
 clone it to your desktop:
 
-    $ git clone git@github.com:USERNAME/perl5maven.com.git
+    $ git clone git@github.com:USERNAME/perlmaven.com.git
 
-It will create a directory called perl5maven.com inside all the source files.
+It will create a directory called perlmaven.com inside all the source files.
 There should be one called sites/CC  (where CC is your language code
 based on this list: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 more or less).  If there is no such directory ask Gabor to create one.
@@ -250,7 +252,7 @@ up-to-date, do the following:
 
 In your working copy do this once:
 
-    $ git remote add upstream git://github.com/szabgab/perl5maven.com.git
+    $ git remote add upstream git://github.com/szabgab/perlmaven.com.git
 
 Then every time you'd like to sync:
 
@@ -270,13 +272,13 @@ Let's say there are two people involved one has a username
 
 translator:
 
-    fork      https://github.com/szabgab/perl5maven.com
-    creating  https://github.com/translator/perl5maven.com
+    fork      https://github.com/szabgab/perlmaven.com
+    creating  https://github.com/translator/perlmaven.com
 
 reviewer:
 
-    fork      https://github.com/szabgab/perl5maven.com
-    creating  https://github.com/reviewer/perl5maven.com
+    fork      https://github.com/szabgab/perlmaven.com
+    creating  https://github.com/reviewer/perlmaven.com
 
 
 translator:
@@ -285,7 +287,7 @@ translator:
 
 reviewer:
 
-    $ git remote add joe_the_translator git://github.com/translator/perl5maven.com.git
+    $ git remote add joe_the_translator git://github.com/translator/perlmaven.com.git
     $ git fetch joe_the_translator
     $ git merge joe_the_translator/main
 
@@ -294,7 +296,7 @@ The reviewer can make changes locally, commit them and push them to Github.
 
 translator:
 
-    $ git remote add sally_the_reviewer git://github.com/reviewer/perl5maven.com.git
+    $ git remote add sally_the_reviewer git://github.com/reviewer/perlmaven.com.git
     $ git fetch sally_the_reviewer
     $ git merge sally_the_reviewer/main
 

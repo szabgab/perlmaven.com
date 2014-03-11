@@ -150,7 +150,7 @@ sub read_authors {
 		if (not defined $url) {
 			print "Missing URL for line '$line' in authors.txt\n";
 			$url = 'Unreal';
-		} elsif ($url !~ m{^https://plus\.google\.com/\d+$}) {
+		} elsif ($url !~ m{^https://plus\.google\.com/}) {
 			print "Not G+ '$url' in line '$line' in authors.txt\n";
 			$url = 'Unreal';
 		}

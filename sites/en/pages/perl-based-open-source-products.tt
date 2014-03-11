@@ -803,6 +803,10 @@ programs and Perl libraries to process listings.
 <a href="http://ikiwiki.info/">ikiwiki</a> is a wiki compiler.
 </div>
 
+<div class="perl-product">
+<a href="http://shorewall.net/">Shorewall</a> is a gateway/firewall configuration tool for GNU/Linux. 
+</div>
+
 
 <!--
 <div class="perl-product">
