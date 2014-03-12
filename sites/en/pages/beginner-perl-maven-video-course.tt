@@ -123,26 +123,26 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-number-guessing-game-m-move-toggle">Solution: improve the number guesssing game - m for move mode</a></li>
 </ul>
 
-<!--
 <h3>Advanced Arrays</h3>
 <ul>
-  <li><a href="/pro/beginner-perl/">The Year of 19100</a></li>
-  <li><a href="/pro/beginner-perl/">Array in Context</a></li>
-  <li><a href="/pro/beginner-perl/">Context Sensitivity</a></li>
-  <li><a href="/pro/beginner-perl/">Filehandle in SCALAR and LIST context</a></li>
-  <li><a href="/pro/beginner-perl/">Slurp</a></li>
-  <li><a href="/pro/beginner-perl/">Pop and Push</a></li>
-  <li><a href="/pro/beginner-perl/">Loop controls: next and last</a></li>
-  <li><a href="/pro/beginner-perl/">shift and unshift</a></li>
-  <li><a href="/pro/beginner-perl/">shift</a></li>
-  <li><a href="/pro/beginner-perl/">reverse</a></li>
-  <li><a href="/pro/beginner-perl/">sort</a></li>
-  <li><a href="/pro/beginner-perl/">Ternary operator</a></li>
-  <li><a href="/pro/beginner-perl/">Count Digits</a></li>
-  <li><a href="/pro/beginner-perl/">Exercise: Display unique rows of a file</a></li>
-  <li><a href="/pro/beginner-perl/">Exercise: sort mixed string</a></li>
+  <li><a href="/pro/beginner-perl/the-year-of-19100">The Year of 19100</a></li>
+  <li><a href="/pro/beginner-perl/array-in-context">Array in Context</a></li>
+  <li><a href="/pro/beginner-perl/context-sensitivity">Context Sensitivity</a></li>
+  <li><a href="/pro/beginner-perl/filehandle-in-scalar-and-list-context">Filehandle in SCALAR and LIST context</a></li>
+  <li><a href="/pro/beginner-perl/slurp">Slurp</a></li>
+  <li><a href="/pro/beginner-perl/pop-and-push">Pop and Push</a></li>
+  <li><a href="/pro/beginner-perl/loop-controls-next-last">Loop controls: next and last</a></li>
+  <li><a href="/pro/beginner-perl/shift-and-unshift">shift and unshift</a></li>
+  <li><a href="/pro/beginner-perl/shift">shift</a></li>
+  <li><a href="/pro/beginner-perl/reverse">reverse</a></li>
+  <li><a href="/pro/beginner-perl/sort">sort</a></li>
+  <li><a href="/pro/beginner-perl/ternary-operator">Ternary operator</a></li>
+  <li><a href="/pro/beginner-perl/count-digits">Count Digits</a></li>
+  <li><a href="/pro/beginner-perl/exercise-display-unique-rows-of-a-file">Exercise: Display unique rows of a file</a></li>
+  <li><a href="/pro/beginner-perl/exercise-sort-mixed-string">Exercise: sort mixed string</a></li>
 </ul>
 
+<!--
 <h3>Functions and Subroutines</h3>
 <ul>
   <li><a href="/pro/beginner-perl/">Functions and Subroutines</a></li>
