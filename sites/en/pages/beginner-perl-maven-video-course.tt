@@ -87,7 +87,93 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-write-report-to-file">Solution: Write report to file</a></li>
 </ul>
 
+
+<h3>Lists and Arrays</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/lists-in-perl">Lists in Perl</a></li>
+  <li><a href="/pro/beginner-perl/list-assignment">List Assignment</a></li>
+  <li><a href="/pro/beginner-perl/foreach-loop-over-list">Foreach Loop Over List</a></li>
+  <li><a href="/pro/beginner-perl/creating-an-array">Creating and Array</a></li>
+  <li><a href="/pro/beginner-perl/array-assignment">Array Assignment</a></li>
+  <li><a href="/pro/beginner-perl/exercise-more-statistics">Exercise: more statistics</a></li>
+  <li><a href="/pro/beginner-perl/array-indexes">Array indexes</a></li>
+  <li><a href="/pro/beginner-perl/array-indexes-screencast">Array indexes (screencast)</a></li>
+  <li><a href="/pro/beginner-perl/looks-like-number">Looks like number</a></li>
+  <li><a href="/pro/beginner-perl/command-line-parameters">Command line parameters</a></li>
+  <li><a href="/pro/beginner-perl/command-line-parameters-screencast">Command line parameters (screencast)</a></li>
+  <li><a href="/pro/beginner-perl/process-command-line-using-getopt-long">Processing command line using Getopt::Long</a></li>
+  <li><a href="/pro/beginner-perl/process-command-line-using-getopt-long-screencast">Processing command line using Getopt::Long (screencast)</a></li>
+  <li><a href="/pro/beginner-perl/process-csv-file">Process CSV file</a></li>
+  <li><a href="/pro/beginner-perl/process-csv-file-short-version">Process CSV file - short version</a></li>
+  <li><a href="/pro/beginner-perl/oneliner-sum-of-csv">Oneliner - Sum of values in CSV file</a></li>
+  <li><a href="/pro/beginner-perl/text-csv-xs">Process CSV file - using Text::CSV_XS</a></li> <!-- move from advanced arrays?  -->
+  <li><a href="/pro/beginner-perl/join">Join</a></li>
+  <li><a href="/pro/beginner-perl/exercise-improve-color-selector">Exercise: improve the color selector</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector">Solution: improve the color selector</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-check-input">Solution: improve the color selector - check input</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-force">Solution: improve the color selector - force</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-colors-txt">Solution: improve the color selector - colors.txt</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-filename">Solution: improve the color selector - --filename</a></li>
+  <li><a href="/pro/beginner-perl/exercise-improve-number-guessing-game">Exercise: improve the number guesssing game</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-multiple-guesses">Solution: improve the number guesssing game - multiple guesses</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-exit">Solution: improve the number guesssing game - exit</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-s-show">Solution: improve the number guesssing game - s for show</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-n-next-game">Solution: improve the number guesssing game - n for next game</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-d-debug-toggle">Solution: improve the number guesssing game - d for debug mode</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-m-move-toggle">Solution: improve the number guesssing game - m for move mode</a></li>
+</ul>
+
 <!--
+<h3>Advanced Arrays</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/">The Year of 19100</a></li>
+  <li><a href="/pro/beginner-perl/">Array in Context</a></li>
+  <li><a href="/pro/beginner-perl/">Context Sensitivity</a></li>
+  <li><a href="/pro/beginner-perl/">Filehandle in SCALAR and LIST context</a></li>
+  <li><a href="/pro/beginner-perl/">Slurp</a></li>
+  <li><a href="/pro/beginner-perl/">Pop and Push</a></li>
+  <li><a href="/pro/beginner-perl/">Loop controls: next and last</a></li>
+  <li><a href="/pro/beginner-perl/">shift and unshift</a></li>
+  <li><a href="/pro/beginner-perl/">shift</a></li>
+  <li><a href="/pro/beginner-perl/">reverse</a></li>
+  <li><a href="/pro/beginner-perl/">sort</a></li>
+  <li><a href="/pro/beginner-perl/">Ternary operator</a></li>
+  <li><a href="/pro/beginner-perl/">Count Digits</a></li>
+  <li><a href="/pro/beginner-perl/">Exercise: Display unique rows of a file</a></li>
+  <li><a href="/pro/beginner-perl/">Exercise: sort mixed string</a></li>
+</ul>
+
+<h3>Functions and Subroutines</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/">Functions and Subroutines</a></li>
+  <li><a href="/pro/beginner-perl/">Defining Subroutines</a></li>
+  <li><a href="/pro/beginner-perl/">Exercise: Number guessing in sub</a></li>
+</ul>
+
+
+<h3>Hashes</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/">A hash and its uses</a></li>
+  <li><a href="/pro/beginner-perl/">Creating a hash</a></li>
+  <li><a href="/pro/beginner-perl/">Creating a hash from an array</a></li>
+  <li><a href="/pro/beginner-perl/">Hash in scalar context</a></li>
+  <li><a href="/pro/beginner-perl/">Fetching data from hash</a></li>
+  <li><a href="/pro/beginner-perl/">Exists and Delete in hash</a></li>
+  <li><a href="/pro/beginner-perl/">Counting words in a file</a></li>
+  <li><a href="/pro/beginner-perl/">Dumping hash</a></li>
+  <li>< href="/pro/beginner-perl/">Exercise: parse HTTP values</a></li>
+  <li>< href="/pro/beginner-perl/">Solution: parse HTTP values</a></li>
+  <li><a href="/pro/beginner-perl/">Exercise: Improve color selector</a></li>
+  <li><a href="/pro/beginner-perl/">Solution: Improve color selector</a></li>
+  <li><a href="/pro/beginner-perl/">Exercise: Sort scores</a></li>
+  <li><a href="/pro/beginner-perl/">Solution: Sort scores</a></li>
+  <li><a href="/pro/beginner-perl/">Exercise: Improve Apache log analyzer</a></li>
+  <li><a href="/pro/beginner-perl/">Solution: Improve Apache log analyzer</a></li>
+  <li><a href="/pro/beginner-perl/">Exercise: Parse variable width fields</a></li>
+  <li><a href="/pro/beginner-perl/">Solution: Parse variable width fields</a></li>
+</ul>
+
+
   <li><a href="/pro/beginner-perl/"></a></li>
 -->
 
