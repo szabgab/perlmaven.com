@@ -149,31 +149,31 @@ subscription service.
   <li><a href="/pro/beginner-perl/exercise-number-guessing-in-sub">Exercise: Number guessing in sub</a></li>
 </ul>
 
-<!--
 
 <h3>Hashes</h3>
 <ul>
-  <li><a href="/pro/beginner-perl/">A hash and its uses</a></li>
-  <li><a href="/pro/beginner-perl/">Creating a hash</a></li>
-  <li><a href="/pro/beginner-perl/">Creating a hash from an array</a></li>
-  <li><a href="/pro/beginner-perl/">Hash in scalar context</a></li>
-  <li><a href="/pro/beginner-perl/">Fetching data from hash</a></li>
-  <li><a href="/pro/beginner-perl/">Exists and Delete in hash</a></li>
-  <li><a href="/pro/beginner-perl/">Counting words in a file</a></li>
-  <li><a href="/pro/beginner-perl/">Dumping hash</a></li>
-  <li>< href="/pro/beginner-perl/">Exercise: parse HTTP values</a></li>
-  <li>< href="/pro/beginner-perl/">Solution: parse HTTP values</a></li>
-  <li><a href="/pro/beginner-perl/">Exercise: Improve color selector</a></li>
-  <li><a href="/pro/beginner-perl/">Solution: Improve color selector</a></li>
-  <li><a href="/pro/beginner-perl/">Exercise: Sort scores</a></li>
-  <li><a href="/pro/beginner-perl/">Solution: Sort scores</a></li>
-  <li><a href="/pro/beginner-perl/">Exercise: Improve Apache log analyzer</a></li>
-  <li><a href="/pro/beginner-perl/">Solution: Improve Apache log analyzer</a></li>
-  <li><a href="/pro/beginner-perl/">Exercise: Parse variable width fields</a></li>
-  <li><a href="/pro/beginner-perl/">Solution: Parse variable width fields</a></li>
+  <li><a href="/pro/beginner-perl/a-hash-and-its-uses">A hash and its uses</a></li>
+  <li><a href="/pro/beginner-perl/creating-a-hash">Creating a hash</a></li>
+  <li><a href="/pro/beginner-perl/creating-a-hash-from-array">Creating a hash from an array</a></li>
+  <li><a href="/pro/beginner-perl/hash-in-scalar-context">Hash in scalar context</a></li>
+  <li><a href="/pro/beginner-perl/fetching-data-from-hash">Fetching data from hash</a></li>
+  <li><a href="/pro/beginner-perl/exists-delete-hash">Exists and Delete in hash</a></li>
+  <li><a href="/pro/beginner-perl/counting-words-in-a-file">Counting words in a file</a></li>
+  <li><a href="/pro/beginner-perl/dumping-hash">Dumping hash</a></li>
+  <li><a href="/pro/beginner-perl/exercise-parse-http-values">Exercise: parse HTTP values</a></li>
+  <li><a href="/pro/beginner-perl/solution-parse-http-values">Solution: parse HTTP values</a></li>
+  <li><a href="/pro/beginner-perl/exercise-improve-color-selector">Exercise: Improve color selector</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-color-selector">Solution: Improve color selector</a></li>
+  <li><a href="/pro/beginner-perl/exercise-sort-scores">Exercise: Sort scores</a></li>
+  <li><a href="/pro/beginner-perl/solution-sort-scores">Solution: Sort scores</a></li>
+  <li><a href="/pro/beginner-perl/exercise-improve-apache-analyzer">Exercise: Improve Apache log analyzer</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-apache-analyzer">Solution: Improve Apache log analyzer</a></li>
+  <li><a href="/pro/beginner-perl/exercise-parse-variable-width-fields">Exercise: Parse variable width fields</a></li>
+  <li><a href="/pro/beginner-perl/solution-parse-variable-width-fields">Solution: Parse variable width fields</a></li>
 </ul>
 
 
+<!--
   <li><a href="/pro/beginner-perl/"></a></li>
 -->
 
