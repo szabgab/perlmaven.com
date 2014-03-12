@@ -142,14 +142,14 @@ subscription service.
   <li><a href="/pro/beginner-perl/exercise-sort-mixed-string">Exercise: sort mixed string</a></li>
 </ul>
 
-<!--
 <h3>Functions and Subroutines</h3>
 <ul>
-  <li><a href="/pro/beginner-perl/">Functions and Subroutines</a></li>
-  <li><a href="/pro/beginner-perl/">Defining Subroutines</a></li>
-  <li><a href="/pro/beginner-perl/">Exercise: Number guessing in sub</a></li>
+  <li><a href="/pro/beginner-perl/functions-and-subroutines">Functions and Subroutines</a></li>
+  <li><a href="/pro/beginner-perl/defining-subroutines">Defining Subroutines</a></li>
+  <li><a href="/pro/beginner-perl/exercise-number-guessing-in-sub">Exercise: Number guessing in sub</a></li>
 </ul>
 
+<!--
 
 <h3>Hashes</h3>
 <ul>
