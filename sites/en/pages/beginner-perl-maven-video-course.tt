@@ -108,7 +108,7 @@ subscription service.
   <li><a href="/pro/beginner-perl/oneliner-sum-of-csv">Oneliner - Sum of values in CSV file</a></li>
   <li><a href="/pro/beginner-perl/text-csv-xs">Process CSV file - using Text::CSV_XS</a></li> <!-- move from advanced arrays?  -->
   <li><a href="/pro/beginner-perl/join">Join</a></li>
-  <li><a href="/pro/beginner-perl/exercise-improve-color-selector">Exercise: improve the color selector</a></li>
+  <li><a href="/pro/beginner-perl/exercise-improve-the-color-selector">Exercise: improve the color selector</a></li>
   <li><a href="/pro/beginner-perl/solution-improve-the-color-selector">Solution: improve the color selector</a></li>
   <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-check-input">Solution: improve the color selector - check input</a></li>
   <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-force">Solution: improve the color selector - force</a></li>
