@@ -21,6 +21,15 @@ other conclusions.)
 
 =abstract end
 
+<h2>Cases</h2>
+
+<ul>
+ <li><a href="#dwimperl">Windows: Strawberry Perl or DWIM Perl</li>
+ <li><a href="#activeperl">Windows: ActivePerl</li>
+ <li><a href="#gitperl">Windows: GitPerl</li>
+ <li><a href="#cygwinperl">Windows: Cygwin Perl</li>
+</ul>
+
 In most cases the installation of a CPAN module works just as installing an app from the Apple Appstore or the Google Play.
 Except, that these modules are all open source and free software.
 
@@ -31,7 +40,7 @@ It has its description both on <a href="https://metacpan.org/release/Path-Tiny">
 <a href="http://search.cpan.org/dist/Path-Tiny/" rel="nofollow">search.cpan.org</a>. Both have the <b>Download</b> links
 that we won't click on.
 
-<h2>Strawberry Perl or DWIM Perl on Windows</h2>
+<h2 id="dwimperl">Strawberry Perl or DWIM Perl on Windows</h2>
 
 Both <a href="http://strawberryperl.com/">Strawberry Perl</a>,
 and its derivative <a href="http://dwimperl.com/">DWIM Perl for Windows</a>,
@@ -40,8 +49,7 @@ come with an already configured cpan client. We will use this client to install 
 Open the Command Window (Start -> Run -> type in cmd) When you get the "DOS" prompt
 type in <hl>cpan Path::Tiny</hl>.
 Please note, module names are case sensitive,
-so typing <hl>cpan path::tiny</hl> or <hl>cpan Path::Tiny</hl>
-will <b>not</b> work!
+so typing <hl>cpan path::tiny</hl> or <hl>cpan PATH::TINY</hl> will <b>not</b> work!
 
 Also, in normal circumstances, the cpan client is expecting the full name of the module, not one part of the name,
 and not the name of the zip-file.
@@ -55,7 +63,7 @@ c:> cpan Path::Tiny
 </code>
 
 
-<h2>ActivePerl</h2>
+<h2 id="activeperl">ActivePerl</h2>
 
 There is a graphical tool for this as well, but it might be more simple just to open the
 Command Window (Start -> Run -> type cmd). When you get the "DOS" prompt, type in
@@ -69,6 +77,16 @@ The problem you might encounter is that this command uses the "CPAN store" of Ac
 technical and legal reasons does not carry all the the modules from CPAN. It can also be out-of date
 carrying older versions of the modules. On newer versions of ActivePerl you can also enable a real
 cpan-client that will access the CPAN server just as it does in the case of Strawberry/DWIM Perl above.
+
+
+<h2 id="gitperl">GitPerl</h2>
+
+TBD.
+
+<h2 id="cygwinperl">Cygwin Perl</h2>
+
+TBD. <a href="http://www.cygwin.com/">Cygwin</a>.
+
 
 
 <h2>Debian/Ubuntu Linux</h2>
