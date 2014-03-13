@@ -24,10 +24,10 @@ other conclusions.)
 <h2>Cases</h2>
 
 <ul>
- <li><a href="#dwimperl">Windows: Strawberry Perl or DWIM Perl</li>
- <li><a href="#activeperl">Windows: ActivePerl</li>
- <li><a href="#gitperl">Windows: GitPerl</li>
- <li><a href="#cygwinperl">Windows: Cygwin Perl</li>
+ <li><a href="#dwimperl">Windows: Strawberry Perl or DWIM Perl</a></li>
+ <li><a href="#activeperl">Windows: ActivePerl</a></li>
+ <li><a href="#gitperl">Windows: GitPerl</a></li>
+ <li><a href="#cygwinperl">Windows: Cygwin Perl</a></li>
 </ul>
 
 In most cases the installation of a CPAN module works just as installing an app from the Apple Appstore or the Google Play.
