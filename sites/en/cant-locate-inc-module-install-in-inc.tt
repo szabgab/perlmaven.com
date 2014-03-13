@@ -1,0 +1,48 @@
+=title Can't locate inc/Module/Install.pm in @INC (you may need to install the inc::Module::Install module) (@INC contains: ...)
+=timestamp 2014-01-15T07:30:01
+=indexes Module::Install
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+In certain cases when you try to install a Perl module from source code, you run <hl>perl Makefile.PL</hl> and
+get an error message:
+
+<code>
+Can't locate inc/Module/Install.pm in @INC (you may need to install the inc::Module::Install module) (@INC contains: ...)
+</code>
+with a long list of directories instead of the 3 dots.
+
+=abstract end
+
+This is a special case of the <a href="/cant-locate-in-inc">Can't locate ... in @INC</a> error message.
+
+You really need to <a href="/how-to-install-a-perl-module-from-cpan">install</a> the module called
+<a href="https://metacpan.org/pod/Module::Install">Module::Install</a> before you go on.
+
+Check out the other article explaining how you can <a href="/how-to-install-a-perl-module-from-cpan">install a Perl module from CPAN</a>
+depending on your situation.
+
+
+<h2>Background</h2>
+
+There are 4 main ways to <a href="/minimal-requirement-to-build-a-sane-cpan-package">create a Perl module distribution</a>.
+One of them is by using <a href="https://metacpan.org/pod/Module::Install">Module::Install</a>.
+
+The developers of the module will have Module::Install on their system and when they release the module to CPAN,
+part of the installer is automatically included the in the zip file uploaded to CPAN. The part is included in the
+<b>inc/</b> subdirectory and it calls itself <hl>inc::Module::Install</hl>. It might be a bit strange to newcomer to Perl,
+but it works.
+
+So in normal circumstances, when you install the module from CPAN, it already comes with inc::Module::Install, and
+everything works fine. On the other hand when you try to install the module from the version control system,
+that usually does not include the <hl>inc/</hl> subdirectory. You basically act as the a developer of the said
+module and you are expected to install <a href="https://metacpan.org/pod/Module::Install">Module::Install</a> yourself.
+
+Once you have installed Module::Install, run <hl>perl Makefile.PL</hl> of the desired module again.
+It will probably list the dependencies and offer you to install them automatically.
+
