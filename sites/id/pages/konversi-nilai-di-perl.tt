@@ -1,9 +1,11 @@
 =title konversi otomatis dari string ke angka di Perl
-=timestamp 2013-01-10T10:45:56
+=timestamp 2013-03-14T10:45:56
 =indexes is_number, looks_like_number, Scalar::Util, casting, type conversion
 =status show
+=original automatic-value-conversion-or-casting-in-perl
 =books beginner_book
 =author szabgab
+=translator khadis
 =archive 1
 =comments 1
 =social 1
