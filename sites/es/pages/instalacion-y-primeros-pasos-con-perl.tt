@@ -1,5 +1,5 @@
 =title Instalación y primeros pasos con Perl
-=timestamp 2012-08-08T10:45:56
+=timestamp 2014-03-14T21:45:56
 =indexes strict, warnings, say, print, chomp, scalar, $
 =tags screencast
 =status show
@@ -18,10 +18,10 @@ Esta es la primera parte del <a href="/perl-tutorial">Tutorial Perl</a>.
 En esta parte aprenderás como instalar Perl en Microsoft Windows y como empezar
 a usarlo en Windows, Linux o Mac.
 
-Te daré algunas directrices sobre como configurar tu entorno de desarrollo, en palabras más
+Te daré algunas directrices sobre como configurar tu entorno de desarrollo, en otras
 sencillas: ¿que editor o IDE usar para escribir Perl?
 
-Veremos el ejemplo estándar "Hola mundo".
+Veremos el típico ejemplo "Hola mundo".
 
 =abstract end
 
@@ -35,10 +35,10 @@ Para empezar entra en <a href="http://dwimperl.com/">DWIM Perl</a>
 y pincha en el enlace para descargar <b>DWIM Perl para Windows</b>.
 
 Continua, descarga el fichero exe e instálalo en tu sistema. Antes de hacerlo
-asegúrate de que no tienes ninguna otra versión de Perl instalada.
+asegúrate de que no tienes otra versión de Perl instalada.
 
-Varias versiones podrían funcionar en el mismo sistema pero eso requería algunas
-explicaciones extra. Así que por ahora mantendremos una única versión de Perl instalada
+Varias versiones podrían funcionar en el mismo sistema pero eso requeriria algunas
+explicaciones extra. Por ahora mantendremos una única versión de Perl instalada
 en tu sistema.
 
 <h2>Linux</h2>
@@ -59,9 +59,9 @@ de las herramientas estándar de instalación.
 Aunque lo recomiendo, no tienes porque usar el IDE Padre para escribir código Perl.
 En la siguiente parte listaré un par de <a href="/perl-editor">editores e IDEs</a> que
 puedes usar para programar en Perl. Incluso si usas otro editor recomendaría - para usuarios de
-Windows - instalar el anteriormente mencionado paquete DWIM Perl. 
+Windows - instalar el mencionado paquete DWIM Perl. 
 
-Tiene un montón de extensiones Perl contenidas así que te ahorrará mucho tiempo en el futuro.
+Tiene un montón de extensiones Perl contenidas y te ahorrará mucho tiempo en el futuro.
 
 <h2>Vídeo</h2>
 
@@ -109,7 +109,7 @@ Verás una ventana separada mostrando la salida del programa.
 
 Vamos a mejorarlo un poco.
 
-<h2>Perl en la línea de comandos si no usas Padre</h2>
+<h2>Perl en la línea de comandos</h2>
 
 Si no estas usando Padre o algún otro <a href="/perl-editor">IDE</a>
 no podrás ejecutar el tu script desde el mismo editor. Al menos no por defecto.
@@ -118,7 +118,7 @@ y escribir:
 
 <hl>perl hola.pl</hl>
 
-Así es como ejecutas un script perl desde la línea de comandos.
+Así es como se ejecuta un script perl desde la línea de comandos.
 
 <h2>say() en lugar de print()</h2>
 
@@ -131,7 +131,7 @@ use 5.010;
 print "Hola mundo\n";
 </code>
 
-Una ve que lo has escrito puedes ejecutarlo de nuevo mediante
+Una vez que lo has escrito puedes ejecutarlo de nuevo mediante
 "Ejecuar -> Ejecutar script" o pulsando <b>F5</b>.
 Esto guardará el programa automáticamente antes de ejecutarlo
 
@@ -140,7 +140,7 @@ Generalmente es una buena práctica indicar cual es la mínima versión de perl 
 En este caso además añade algunas nuevas características de perl incluyendo la palabra reservada
 <hl>say</hl>.
 <hl>say</hl> es similar a <hl>print</hl>, pero añade automáticamente el carácter de
-nueva línea al final, y además es más corto.
+nueva línea al final, además es más corto.
 
 Puedes cambiar tu código así:
 
@@ -149,7 +149,7 @@ use 5.010;
 say "Hola mundo";
 </code>
 
-Cambiando <hl>print</hl> por <hl>say</hl> eliminando <hl>\n</hl> del final del texto.
+Cambiando <hl>print</hl> por <hl>say</hl> y eliminando <hl>\n</hl> del final del texto.
 
 Probablemente tengas instaladas las versiones 5.12.3 o 5.14.
 La mayoría de las distribuciones modernas de Linux vienen al menos con la versión 5.10.
