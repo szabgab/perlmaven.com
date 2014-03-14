@@ -132,8 +132,20 @@ you use the <b>system perl</b> located in <hl>/usr/bin/perl</hl> and if you have
 Using the package management system:
 
 <code>
-$ sudo yum install Path::Tiny
+$ sudo yum install perl-Path-Tiny
 </code>
+
+As Dave Cross mentioned, if you don't know the name of the RH package, you can also use
+
+<code>
+yum install 'perl(Path::Tiny)'".
+</code>
+
+The subtle difference is that the former installs the named RPM whereas the second
+installs the RPM that provides the named Perl module.
+
+So if you would like to install the Path::Tiny module then the second command is
+actually the better one.
 
 If your vendor does not carry this Perl package, you can add other RPM repositories.
 Check out <a href="https://fedoraproject.org/wiki/EPEL">EPEL</a>, and
