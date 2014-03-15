@@ -43,12 +43,12 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <p>
 <b>Introducción</b>
 <ol>
-<li><a href="http://perlmaven.com/installing-perl-and-getting-started">Instalando Perl, mostrando Hola Mundo, red de seguridad (use strict, use warnings) (en)</a></li>
+<li><a href="/instalacion-y-primeros-pasos-con-perl">Instalando Perl, mostrando Hola Mundo, red de seguridad (use strict, use warnings)</a></li>
 <li><a href="/editor-de-perl">Editores e IDEs, entornos de desarrollo en Perl</a></li>
 <li><a href="/ayuda">Obteniendo ayuda</a></li>
 <li><a href="/perl-en-linea-de-comandos">Perl en la línea de comandos</a></li>
 <li><a href="/documentacion-nucleo-perl-modulos-cpan">Documentación del núcleo de Perl y los módulos CPAN</a></li>
-<li><a href="http://perlmaven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation (en)</a></li>
+<li><a href="/pod-plain-old-documentation-de-perl">POD - Plain Old Documentation</a></li>
 <li><a href="/depurando-scripts-perl">Depurando Perl scripts</a></li>
 </ol>
 
