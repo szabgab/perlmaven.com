@@ -1,5 +1,5 @@
 =title Konversi otomatis dari string ke angka di Perl
-=timestamp 2014-03-14T10:45:56
+=timestamp 2014-03-15T11:00:00
 =indexes is_number, looks_like_number, Scalar::Util, casting, type conversion
 =status show
 =original automatic-value-conversion-or-casting-in-perl
@@ -15,7 +15,7 @@
 Bayangkan Anda sedang menyiapkan daftar belanja, tertulis di dalamnya
 
 <code>
-"2 buah roti"
+"2 potong roti"
 </code>
 
 dan memberikannya pada pasangan Anda yang langsung
@@ -111,8 +111,8 @@ Itu adalah peringatan yang akan Anda dapat ketika Perl mencoba mengkonversikan
 sebuah string ke dalam angka dan konversinya tak sempurna.
 
 Ada banyak peringatan dan pesan kesalahan lainnya di Perl.
-Contohnya <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
-dan <a href="/use-of-uninitialized-value">Use of uninitialized value</a>.
+Contohnya <a href="http://id.perlmaven.com/simbol-global">Simbol global</a>
+dan <a href="http://id.perlmaven.com/penggunaan-nilai-tak-terinisiasi">Penggunaan nilai tak terinisiasi</a>.
 
 <h2>Bagaimana menghindari munculnya pesan peringatan?</h2>
 
@@ -141,14 +141,14 @@ use warnings;
 
 use Scalar::Util qw(looks_like_number);
 
-print "How many loaves of bread shall I buy? ";
-my $loaves = <STDIN>;
-chomp $loaves;
+print "Berapa potong roti yang akan saya beli? ";
+my $potong = <STDIN>;
+chomp $potong;
 
-if (looks_like_number($loaves)) {
-    print "I am on it...\n";
+if (looks_like_number($potong)) {
+    print "Saya mengerti...\n";
 } else {
-    print "Sorry, I don't get it\n";
+    print "Maaf, saya tidak mengerti\n";
 }
 </code>
 
