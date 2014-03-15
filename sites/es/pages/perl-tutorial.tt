@@ -48,7 +48,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li><a href="/ayuda">Obteniendo ayuda</a></li>
 <li><a href="/perl-en-linea-de-comandos">Perl en la línea de comandos</a></li>
 <li><a href="/documentacion-nucleo-perl-modulos-cpan">Documentación del núcleo de Perl y los módulos CPAN</a></li>
-<li><a href="http://perlmaven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation (en)</a></li>
+<li><a href="/pod-plain-old-documentation-de-perl">POD - Plain Old Documentation</a></li>
 <li><a href="/depurando-scripts-perl">Depurando Perl scripts</a></li>
 </ol>
 

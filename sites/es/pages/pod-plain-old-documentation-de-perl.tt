@@ -13,7 +13,7 @@
 =abstract start
 
 A los programadores normalmente no les gusta escribir documentación. En parte
-es porque los programas son ficheros de texto plano y en muchos casos
+es porque los programas son ficheros de texto plano y a menudo
 tienen que escribir documentación en algún procesador de textos.
 
 Para ello hay que aprender como funciona el procesador de textos y se pierde
@@ -21,7 +21,7 @@ mucho tiempo intentando que la documentación "sea bonita" en lugar de "tener
 buen contenido".
 
 En Perl no es así. Normalmente la documentación se escribe dentro
-de tus módulos junto con el código y se delega en una herramienta
+de los módulos junto con el código y se delega en una herramienta
 para formatear esta documentación y que quede bonita.
 
 =abstract end
@@ -64,17 +64,15 @@ que vimos en
 
 La ventaja de usar documentación embebida POD es que tu código nunca carecerá de
 documentación por accidente, porque esta dentro de los propios modulos y scripts.
-También puedes reusar las herramientas e infraestructura de la comunidad de software
-libre ha creado.
 
 <h2>¿Demasiado simple?</h2>
 
-La idea es que eliminando complicaciones para escribir documentación más
-gente escribirá documentación. En lugar de aprender como usar algún procesador
+La idea es que eliminando complicaciones para escribir documentación, más
+gente documentará el código. En lugar de aprender como usar algún procesador
 de textos para crear documentos elegantes, puedes simplemente escribir texto
 con algunos pocos símbolos extra y obtienes una documentación razonablemente
 elegante. (Echa un ojo a la documentación en <a href="http://metacpan.org/">Meta CPAN</a>
-para ver una versión de POD formateada con un estilo elegante.)
+para ver una versión de POD formateada con un estilo moderno.)
 
 <h2>El lenguaje de marcado</h2>
 
@@ -120,11 +118,11 @@ POD como lenguaje de marcado no define como se deberían mostrar las cosas.
 Define que <hl>=head1</hl> indica algo importante, y que <hl>=head2</hl> indica algo menos importante.
 
 La herramienta usada para mostrar POD normalmente usará letras más grandes para mostrar
-el texto head1 que para el texto head2. El control esta en las manos de la herramienta
-usada para mostrar la documentación.
+el texto head1 que para el texto head2. El control esta en las manos del programa
+usado para mostrar la documentación.
 
 El comando <hl>perldoc</hl> que viene incluido con perl muestra la documentación
-POD como páginas man. Es bastante útil en Linux.
+POD como páginas <a href="http://es.wikipedia.org/wiki/Man_%28Unix%29">man</a>. Es bastante útil en Linux.
 No tan conveniente en Windows.
 
 El módulo <a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> proporciona
@@ -139,7 +137,7 @@ Después de ver esta técnica, ¿quien es la audiencia?
 
 Los comentarios (que empiezan con #) son explicaciones para
 los programadores que tienen que mantener el código, añadir
-nuevas características o arreglar problemas.
+nuevas características o solucionar problemas.
 
 La documentación escrita en POD es para los usuarios. Personas que
 no necesitan mirar al código fuente. En el caso de una aplicación
