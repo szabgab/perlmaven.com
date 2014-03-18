@@ -116,7 +116,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li><a href="http://perlmaven.com/manipulating-perl-arrays">Manipulando arrays: shift, unshift, push, pop (en)</a></li>
 <li>Pilas y <a href="http://perlmaven.com/using-a-queue-in-perl">colas (en)</a></li>
 <li>reverse</li>
-<li><a href="http://perlmaven.com/el-operador-ternario-en-perl">El operador ternario</a></li>
+<li><a href="/el-operador-ternario-en-perl">El operador ternario</a></li>
 <li>Controles en bucles: next y last</li>
 <li>min, max, sum usando List::Util</li>
 </ol>
