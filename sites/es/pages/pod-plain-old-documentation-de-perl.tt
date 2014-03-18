@@ -1,7 +1,7 @@
 =title POD - Plain Old Documentation
-=timestamp 2014-03-14T28:40:59
+=timestamp 2014-03-17T18:40:59
 =indexes POD, perldoc, =head1, =cut, =pod, =head2, documentation, pod2html, pod2pdf
-  =status show
+=status show
 =original pod-plain-old-documentation-of-perl
 =books beginner_book
 =author szabgab
