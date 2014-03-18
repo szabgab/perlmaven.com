@@ -37,7 +37,7 @@ use 5.010;
 my $text = "The black cat climbed the green tree.";
 substr $text, 14, 7, "jumped from";
 say $text;
-<code>
+</code>
 
 <h2>3-parameter substr as Lvalue</h2>
 
