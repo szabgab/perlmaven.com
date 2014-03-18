@@ -164,3 +164,6 @@ say $str;                  # The black cat jumped from the green tree
 So <hl>substr $str, 14, 7, "jumped from"</hl> returns the word <b>climbed</b>,
 but because of the 4th parameter, the original string was changed.
 
+There is also an <a href="/lvalue-substr">lvalue</a> version of this example, but
+only look there if you are brave.
+

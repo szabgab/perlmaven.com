@@ -1,0 +1,60 @@
+=title Lvalue substr - replace part of a string
+=timestamp 2014-03-18T12:30:01
+=indexes substr, Lvalue
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+There are a few strange functions in Perl that can be on the left-hand-side of
+an assignment. For example if you would like to change the content of a string you can 
+use the <a href="/string-functions-length-lc-uc-index-substr">4-parameter version of substr</a>,
+the 4th parameter being the replacement string,
+or you can use <hl>substr</hl> as an Lvalue and assign that string to the 3-parameter version of substr.
+
+=abstract end
+
+<hl>substr $text, 14, 7, "jumped from";</hl>
+
+and
+
+<hl>substr($text, 14, 7) = "jumped from";</hl>
+
+make the same changes in <hl>$text</hl>
+
+Try the examples:
+
+<h2>4-parameter substr</h2>
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $text = "The black cat climbed the green tree.";
+substr $text, 14, 7, "jumped from";
+say $text;
+<code>
+
+<h2>3-parameter substr as Lvalue</h2>
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $text = "The black cat climbed the green tree.";
+substr($text, 14, 7) = "jumped from";
+say $text;
+</code>
+
+They will both print:
+
+<code>
+The black cat jumped from the green tree.
+</code>
+
+
