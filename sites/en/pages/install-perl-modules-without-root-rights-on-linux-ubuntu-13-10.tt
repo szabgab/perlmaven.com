@@ -408,6 +408,37 @@ At this point we can do one or more of the following things:
   <li>Install the module skipping the tests <hl>cpanm --notest DBD::mysql</hl></li>
 </ol>
 
+Personally, I ran <hl>cpanm --notest DBD::mysql</hl>.
+
+
+<h2>DBD::Pg - the PostgreSQL driver</h2>
+
+<code>
+$ cpanm DBD::Pg
+</code>
+
+Output:
+
+<code>
+! Configure failed for DBD-Pg-3.0.0. See /home/gabor/.cpanm/work/1395240499.31200/build.log for details.
+</code>
+
+The build.log mentions, but that does not give a lot of clue.
+
+<code>
+No POSTGRES_HOME defined, cannot find automatically
+</code>
+
+We have to install:
+
+<code>
+# aptitude install libpq-dev
+</code>
+
+then <hl>cpanm DBD::Pg</hl> already works.
+
+
+
 
 
 
