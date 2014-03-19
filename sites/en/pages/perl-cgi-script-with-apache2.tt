@@ -226,7 +226,6 @@ installed perl. The first line of the file should be
 #!/usr/bin/perl
 </code>
 
-
 <code>
 [Wed Mar 19 15:24:33.504988 2014] [cgid:error] [pid 3781:tid 139896478103424] (2)No such file or directory: AH01241: exec of '/var/cgi-bin/echo.pl' failed
 [Wed Mar 19 15:24:33.505429 2014] [cgid:error] [pid 3412:tid 139896261957376] [client 192.120.120.120:58087] End of script output before headers: echo.pl
@@ -250,6 +249,36 @@ The above lines in the error.log, probably indicated that the script does not ha
 chmod +x /var/cgi-bin/echo.pl
 </code>
 
+<code>
+Wed Mar 19 16:02:20.239624 2014] [cgid:error] [pid 4703:tid 140208594970368] [client 192.120.120.120:62841] malformed header from script 'echo.pl': Bad header: hi
+</code>
+
+This will be received if there is an output before the the Content-type. For example if you have written the two print-lines in reversed order like this:
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+print "hi\n";
+print qq(Content-type: text/plain\n\n);
+</code>
+
+
+<code>
+[Wed Mar 19 16:08:00.342999 2014] [cgid:error] [pid 4703:tid 140208536221440] [client 192.120.120.120:59319] End of script output before headers: echo.pl
+</code>
+
+This probably means that the script died before it managed to print the <hl>Content-type</hl>. The error.log, probably contains the
+exception that was noth caught just before the above line.
+
+You can also turn of the buffering of STDOUT by setting <hl>$|</hl> to a <a href="/boolean-values-in-perl">true</a> value.
+
+<code>
+$|  = 1;
+</code>
+
+I am not sure, but I think <b>Premature end of script headers</b>  is the same as <b>End of script output before headers</b>.
 
 <h3>503 Service Unavailable</h3>
 
