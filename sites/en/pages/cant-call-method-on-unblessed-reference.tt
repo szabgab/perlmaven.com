@@ -9,6 +9,11 @@
 =social 1
 
 =abstract start
+
+<h2>What is the difference between sub $param and sub($param)?</h2>
+
+One seem to work, the other throw an error <hl>Can't call method ... on unblessed reference</hl>.
+
 =abstract end
 
 <h2>require</h2>
@@ -32,7 +37,7 @@ If we change the problematic line and put the parameters in parentheses:
 <hl>my $frozen = Storable::freeze($data);</hl>, everything works fine.
 
 
-<h2>What is the difference between sub $param and sub($param)?</h2>
+<h2>B::Deparse</h2>
 
 Let's try to use B::Deparse again. Once it already
 <a href="/bug-in-the-for-loop-b-deparse-to-the-rescue">helped us with the for loop</a>.
