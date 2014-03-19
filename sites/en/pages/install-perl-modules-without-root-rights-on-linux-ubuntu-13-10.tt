@@ -306,7 +306,7 @@ cpanm Net::SSH::Perl
 ....
 
 Installing the dependencies failed: Module 'Math::GMP' is not installed
-<code>
+</code>
 
 The build.log was a bit too big for me to understand so I ran
 
