@@ -57,4 +57,12 @@ They will both print:
 The black cat jumped from the green tree.
 </code>
 
+<h2>Which one to use?</h2>
+
+I think the 4-parameter version is much clearer.
+If you want to make sure others in your team don't use the Lvalue version of substr,
+you can use <a href="/perl-critic-one-policy">Perl::Critic</a>, and make sure the
+<a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitLvalueSubstr">ProhibitLvalueSubstr</a>
+policy is enabled.
+
 
