@@ -185,6 +185,12 @@ If you still have questions related to the installation of Perl modules,
 please ask them below! I'll try to update this article
 to answer those questions and to explain other situations.
 
+Specific instructions for 
+
+<ul>
+  <li><a href="/install-perl-modules-without-root-rights-on-linux-ubuntu-13-10">Linux - Ubuntu 13.10 x64</a></li>
+</ul>
+
 
 <h2>TODO</h2>
 
