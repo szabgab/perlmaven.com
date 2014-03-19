@@ -323,3 +323,92 @@ that failed again, but provided a much shorter build.log. From that I already un
 then <hl>cpanm Net::SSH::Perl</hl> also worked.
 
 
+<h2>DBD::mysql</h2>
+
+<code>
+cpanm DBD::mysql
+</code>
+
+Output:
+
+<code>
+! Configure failed for DBD-mysql-4.026. See /home/gabor/.cpanm/work/1395236954.25241/build.log for details.
+</code>
+
+the error in the build.log includes lines like these:
+
+<code>
+Can't exec "mysql_config": No such file or directory at Makefile.PL line 70.
+
+Cannot find the file 'mysql_config'! Your execution PATH doesn't seem
+not contain the path to mysql_config. Resorting to guessed values!
+</code>
+
+
+So we need to install the development files of the mysql client:
+
+<code>
+# aptitude install libmysqlclient-dev
+</code>
+
+Tunning <hl>cpanm DBD::mysql</hl> will yield now a different output:
+
+<code>
+! Installing DBD::mysql failed. See /home/gabor/.cpanm/work/1395237315.26506/build.log for details. Retry with --force to force install it.
+</code>
+
+(Previously it failed in the Configurtion step. This time in the Installation step.)
+Looking in the build.log file I see error like this:
+
+<code>
+...
+t/pod.t .............................. skipped: Test::Pod 1.00 required for testing POD
+DBI connect('test','gabor',...) failed: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) at t/rt25389-bin-case.t line 13
+Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) at t/rt25389-bin-case.t line 13.
+# Looks like your test exited with 255 before it could output anything.
+t/rt25389-bin-case.t ................. 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 8/8 subtests 
+DBI connect('test','gabor',...) failed: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) at t/rt50304-column_info_parentheses.t line 12
+Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) at t/rt50304-column_info_parentheses.t line 12.
+# Looks like your test exited with 255 before it could output anything.
+t/rt50304-column_info_parentheses.t .. 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 7/7 subtests 
+t/rt83494-quotes-comments.t .......... skipped: ERROR: DBI connect('test','gabor',...) failed: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) at t/rt83494-quotes-comments.t line 17
+t/rt85919-fetch-lost-connection.t .... skipped: ERROR: DBI connect('test','gabor',...) failed: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) at t/rt85919-fetch-lost-connection.t line 10
+t/rt86153-reconnect-fail-memory.t .... skipped: Skip $ENV{EXTENDED_TESTING} is not set
+t/rt91715.t .......................... skipped: ERROR: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) 2002 Can't continue test
+
+Test Summary Report
+-------------------
+t/rt25389-bin-case.t               (Wstat: 65280 Tests: 0 Failed: 0)
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 8 tests but ran 0.
+t/rt50304-column_info_parentheses.t (Wstat: 65280 Tests: 0 Failed: 0)
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 7 tests but ran 0.
+Files=58, Tests=6,  4 wallclock secs ( 0.16 usr  0.06 sys +  2.57 cusr  0.46 csys =  3.25 CPU)
+Result: FAIL
+Failed 2/58 test programs. 0/6 subtests failed.
+make: *** [test_dynamic] Error 255
+</code>
+
+The problem is that <a href="https://metacpan.org/pod/DBD::mysql">DBD::mysql</a> wants to access a MySQL server in order to run some tests.
+Once it notices there is no available MySQL server, it actually skips most of the tests, but apparently this version (4.026) had
+two test files that still failed.
+
+At this point we can do one or more of the following things: 
+
+<ol>
+  <li>Decied DBD::mysql isn't that important for our life and skip the installation.</li>
+  <li>Send a bug report to bug-dbd-mysql@rt.cpan.org with the output.</li>
+  <li>Look at the build.log file, configure the MySQL server access and try to install again using <hl>cpanm DBD::mysql</hl></li>
+  <li>Install the module using the force  <hl>cpanm --force DBD::mysql</hl> (this will run the tests but disregard the failure)</li>
+  <li>Install the module skipping the tests <hl>cpanm --notest DBD::mysql</hl></li>
+</ol>
+
+
+
+
+
