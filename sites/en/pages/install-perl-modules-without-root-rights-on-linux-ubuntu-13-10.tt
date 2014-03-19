@@ -478,52 +478,40 @@ So <hl>cpanm --notest Net::Server</hl> and then <hl>cpanm Starman</hl> already w
 <hl>cpanm PAR::Packer</hl> failed for 1.017. I reported the problem. I don't see any cure in the source.
 I tried some of the earlier releases and none of them could be installed.
 
-<h2>POE</h2>
-
-<hl>cpanm POE</hl> installed.
-
-<h2>AnyEvent</h2>
-
-<hl>cpanm AnyEvent</hl> installed.
-
-<h2>IO::Async</h2>
-
-<hl>cpanm IO::Async</hl> worked.
-
-<h2>CHI</h2>
-
-<hl>cpanm CHI</hl> worked.
-
-<h2>Redis</h2> 
-
-<hl>cpanm Redis</hl> worked.
-
-<h2>Devel::Cover</h2>
-
-<hl>cpanm Devel::Cover</hl> worked.
-
 <h2>DBD::ODBC</h2>
 
-<hl>cpanm DBD::ODBC</hl>
+<code>
+$ cpanm DBD::ODBC
+</code>
 
-At first failed.
+At first it failed.
 
 The build.log told me to install unixodbc-dev.
 
 <code>
 # aptitude install unixodbc-dev 
+$ cpanm DBD::ODBC
 </code>
 
-and then <hl>cpanm DBD::ODBC</hl> already worked.
 
-<h2>Memcached::Client</h2>
+<h2>Other</h2>
 
-<hl>cpanm Memcached::Client</hl> installed.
+<code>
+$ cpanm POE
+$ cpanm AnyEvent
+$ cpanm IO::Async
+$ cpanm CHI
+$ cpanm Redis
+$ cpanm Devel::Cover
+$ cpanm Memcached::Client
+$ cpanm DBIx::Class
+$ cpanm Marpa::R2
+$ cpanm GeoIP2
+$ cpanm Pinto
+$ cpanm Cache
 
-<h2>DBIx::Class</h2>
-
-<hl>cpanm DBIx::Class</h2> worked.
-
-
+# aptitude install firebird-dev
+$ cpanm DBD::Firebird
+</code>
 
 
