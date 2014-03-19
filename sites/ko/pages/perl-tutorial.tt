@@ -100,6 +100,7 @@
 <li><a href="/how-to-improve-my-perl-program">내 Perl 프로그램을 개선하는 법</a></li>
 <li><a href="/python-lambda-in-perl">Perl에서 Python의 람다처럼 익명 함수를 만드는 법</a></li>
 <li><a href="/static-and-state-variables-in-perl">Perl에서 정적 상태 변수 쓰기</a></li>
+<li><a href="/lvalue-substr">L밸류 substr - 스트링의 일부를 치환하기</a></li>
 </ol>
 
 <!--
