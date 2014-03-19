@@ -54,6 +54,12 @@ v5.14.2
 </code>
 
 
+<h2>Disclaimer</h2>
+
+By default <hl>cpanm</hl> will try to install the latest version of each module.
+By the time you read this, modules had newer releaes, some of which might
+not install as smoothly as you can see in this article.
+
 <h2>Prerequisites</h2>
 
 Even for the most basic installation you'll need the <hl>make</hl> command. Otherwise you'll encounter an error messages looking like this one:
@@ -437,8 +443,86 @@ We have to install:
 
 then <hl>cpanm DBD::Pg</hl> already works.
 
+<h2>Moo</h2>
 
+Installs without any problem using <hl>cpanm Moo</hl>.
 
+<h2>Moose</h2>
+
+Installs smoothly using <hl>cpanm Moose</hl>.
+
+<h2>Dancer</h2>
+
+Installs without a problem using <hl>cpanm Dancer</hl>.
+
+<h2>Mojolicious</h2>
+
+Installed using <hl>cpanm Mojolicious</hl>.
+
+<h2>Catalyst</h2>
+
+<hl>cpanm Catalyst</hl> install all 72 dependencies that were still missing at this point.
+
+<h2>MongoDB</h2>
+
+<hl>cpan MongoDB</hl> installed without the need of any external library.
+
+<h2>Starman</h2>
+
+<hl>cpanm Starman</hl> failed because of known, and already reported issue in the tests of Net::Server.
+
+So <hl>cpanm --notest Net::Server</hl> and then <hl>cpanm Starman</hl> already works.
+
+<h2>PAR::Packer</h2>
+
+<hl>cpanm PAR::Packer</hl> failed for 1.017. I reported the problem. I don't see any cure in the source.
+I tried some of the earlier releases and none of them could be installed.
+
+<h2>POE</h2>
+
+<hl>cpanm POE</hl> installed.
+
+<h2>AnyEvent</h2>
+
+<hl>cpanm AnyEvent</hl> installed.
+
+<h2>IO::Async</h2>
+
+<hl>cpanm IO::Async</hl> worked.
+
+<h2>CHI</h2>
+
+<hl>cpanm CHI</hl> worked.
+
+<h2>Redis</h2> 
+
+<hl>cpanm Redis</hl> worked.
+
+<h2>Devel::Cover</h2>
+
+<hl>cpanm Devel::Cover</hl> worked.
+
+<h2>DBD::ODBC</h2>
+
+<hl>cpanm DBD::ODBC</hl>
+
+At first failed.
+
+The build.log told me to install unixodbc-dev.
+
+<code>
+# aptitude install unixodbc-dev 
+</code>
+
+and then <hl>cpanm DBD::ODBC</hl> already worked.
+
+<h2>Memcached::Client</h2>
+
+<hl>cpanm Memcached::Client</hl> installed.
+
+<h2>DBIx::Class</h2>
+
+<hl>cpanm DBIx::Class</h2> worked.
 
 
 
