@@ -1,0 +1,325 @@
+=title Install Perl modules without root rights on Linux Ubuntu 13.10 x64
+=timestamp 2014-03-19T15:19:01
+=indexes cpanm, App::cpanminus, local::lib
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+If you have root rights there might be <a href="/how-to-install-a-perl-module-from-cpan">other, easier ways to install Perl modules</a>
+than the following.
+
+After an initial configuration, many Perl modules from CPAN can be easily installed, but there are quite a few that required
+some additional tools. In this article I'll assume that either you already have those installed, or that at least those
+you can install as root.
+
+If you don't have those prerequisites then you will need to build the modules on another, similar machine
+where you do have root rights and then transfer the whole directory tree. That's another story that
+will be covered in a separate article. In that situation you'd be probably better off downloading and using
+<a href="http://dwimperl.com/">DWIM Perl</a>
+
+=abstract end
+
+<h2>Background</h2>
+
+In order to try this I created a droplet at <a href="/digitalocean">Digital Ocean</a>
+running Ubuntu 13.10 x64. Once the droplet was created I ssh-ed to the machine as user
+root, updated all the installed packages and rebooted:
+
+<code>
+# aptitude update
+# aptitude safe-upgrade
+# reboot
+</code>
+
+Then I ssh-ed again, created a user for myself, and switched to that user.
+
+<code>
+# adduser gabor
+...
+# su - gabor
+</code>
+
+Finally I checked the version of Perl, just so it will be recorded here:
+
+<code>
+$ perl -v
+</code>
+
+<code>
+v5.14.2
+</code>
+
+
+<h2>Prerequisites</h2>
+
+Even for the most basic installation you'll need the <hl>make</hl> command. Otherwise you'll encounter an error messages looking like this one:
+
+<code>
+! Can't configure the distribution. You probably need to have 'make'. See /home/gabor/.cpanm/work/1395231034.1109/build.log for details.
+</code>
+
+In order to install you need to be user root and give the following command:
+
+<code>
+# aptitude install make
+</code>
+
+Once you have <hl>make</hl> installed you can install <a href="http://cpanmin.us">cpanminus</a>, which is
+a client program to install modules from CPAN.
+
+<h2>Install cpanminus</h2>
+
+<code>
+$ curl -L http://cpanmin.us | perl - App::cpanminus
+</code>
+
+The output will lool like this:
+
+<code>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   303    0   303    0     0    779      0 --:--:-- --:--:-- --:--:--   780
+100  262k  100  262k    0     0   447k      0 --:--:-- --:--:-- --:--:--  447k
+!
+! Can't write to /usr/local/share/perl/5.14.2 and /usr/local/bin: Installing modules to /home/gabor/perl5
+! To turn off this warning, you have to do one of the following:
+!   - run me as a root or with --sudo option (to install to /usr/local/share/perl/5.14.2 and /usr/local/bin)
+!   - Configure local::lib your existing local::lib in this shell to set PERL_MM_OPT etc.
+!   - Install local::lib by running the following commands
+!
+!         cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+!
+--> Working on App::cpanminus
+Fetching http://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7001.tar.gz ... OK
+Configuring App-cpanminus-1.7001 ... OK
+Building and testing App-cpanminus-1.7001 ... OK
+Successfully installed App-cpanminus-1.7001
+1 distribution installed
+</code>
+
+It has installed <hl>cpan minus</hl> but it is not yet operational. We will also install
+<a href="https://metacpan.org/pod/local::lib">local::lib</a> that can help perl find
+the modules installed in your private directory.
+
+
+<h2>Install local::lib</h2>
+
+The actual command I had to give was slightly different from the one printed by the previous
+command. I had to run:
+
+<code>
+$ ~/perl5/bin/cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+</code>
+
+The output was:
+
+<code>
+--> Working on local::lib
+Fetching http://www.cpan.org/authors/id/H/HA/HAARG/local-lib-2.000008.tar.gz ... OK
+Configuring local-lib-2.000008 ... OK
+==> Found dependencies: ExtUtils::MakeMaker
+--> Working on ExtUtils::MakeMaker
+Fetching http://www.cpan.org/authors/id/B/BI/BINGOS/ExtUtils-MakeMaker-6.92.tar.gz ... OK
+Configuring ExtUtils-MakeMaker-6.92 ... OK
+Building and testing ExtUtils-MakeMaker-6.92 ... OK
+Successfully installed ExtUtils-MakeMaker-6.92 (upgraded from 6.57_05)
+Building and testing local-lib-2.000008 ... OK
+Successfully installed local-lib-2.000008
+2 distributions installed
+</code>
+
+It worked without any problem.
+
+Let's see if we can find the cpan minus client now:
+
+<code>
+$ which cpanm
+/home/gabor/perl5/bin/cpanm
+</code>
+
+That's great, but this will work only in the current shell. Once we log out and log in again, the mapping will go away.
+In order to make this permanent edit ~/.bash_profile (I had to create it as I did not have it)
+and add the following line:
+
+<code>
+eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+</code>
+
+this will ensure that we will find the locally installed cpanm command and perl will
+find the locally installed modules, even after we log out and log in again.
+(Actually, at this point you might want to try that. Log out. Log in. run <hl>which cpanm</hl>.)
+
+
+We are basically done now. Let's try to install a couple of modules:
+
+<h2>Install Test::More</h2>
+
+<code>
+$ cpanm  Test::More
+</code>
+
+Output:
+
+<code>
+--> Working on Test::More
+Fetching http://www.cpan.org/authors/id/R/RJ/RJBS/Test-Simple-1.001002.tar.gz ... OK
+Configuring Test-Simple-1.001002 ... OK
+Building and testing Test-Simple-1.001002 ... OK
+Successfully installed Test-Simple-1.001002 (upgraded from 0.98)
+1 distribution installed
+</code>
+
+worked smoothly.
+
+
+<h2>Install HTML::Template</h2>
+
+<code>
+$ cpanm HTML::Template
+</code>
+
+Output:
+
+<code>
+--> Working on HTML::Template
+Fetching http://www.cpan.org/authors/id/W/WO/WONKO/HTML-Template-2.95.tar.gz ... OK
+Configuring HTML-Template-2.95 ... OK
+Building and testing HTML-Template-2.95 ... OK
+Successfully installed HTML-Template-2.95
+1 distribution installed
+</code>
+
+worked well.
+
+<h2>Expect needs gcc</h2>
+
+<code>
+$ cpanm Expect
+</code>
+
+Output:
+
+<code>
+--> Working on Expect
+Fetching http://www.cpan.org/authors/id/R/RG/RGIERSIG/Expect-1.21.tar.gz ... OK
+Configuring Expect-1.21 ... OK
+==> Found dependencies: IO::Pty, IO::Tty
+--> Working on IO::Pty
+Fetching http://www.cpan.org/authors/id/T/TO/TODDR/IO-Tty-1.10.tar.gz ... OK
+Configuring IO-Tty-1.10 ... N/A
+! Configure failed for IO-Tty-1.10. See /home/gabor/.cpanm/work/1395231778.4926/build.log for details.
+! Installing the dependencies failed: Module 'IO::Pty' is not installed, Module 'IO::Tty' is not installed
+! Bailing out the installation for Expect-1.21.
+</code>
+
+This did not work. Looking at the build.log file listed in the error there was a line that told me:
+
+<code>
+ERROR: cannot run the configured compiler 'cc'
+</code>
+
+There was some more explanation, but it boils down to the fact that we don't have <hl>gcc</hl>
+installed. We need root rights to install it:
+
+<code>
+# aptitude install gcc
+</code>
+
+After that <hl>cpanm Expect</hl> already worked.
+
+<h2>XML::Parser needs expat</h2>
+
+<code>
+$ cpanm XML::Parser
+</code>
+
+The error included a line:
+
+<code>
+! Installing XML::Parser failed. See /home/gabor/.cpanm/work/1395232030.10653/build.log for details. Retry with --force to force install it.
+</code>
+
+The log file revealed we need the development files of expat:
+
+<code>
+# aptitude install libexpat-dev
+</code>
+
+After that <hl>cpanm XML::Parser</hl> could already install the module.
+
+<h2>XML::LibXML needs xml2 and zlib</h2>
+
+<code>
+cpanm XML::LibXML
+</code>
+
+Output included
+
+<code>
+! Configure failed for XML-LibXML-2.0113. See /home/gabor/.cpanm/work/1395232400.12839/build.log for details.
+</code>
+
+We had to install:
+
+<code>
+# aptitude install libxml2-dev zlib1g-dev
+</code>
+
+After that the installation <hl>cpanm XML::LibXML</hl> worked.
+
+
+<h2>LWP::Protocol::https needs libssl</h2>
+
+Try
+
+<code>
+$ cpanm LWP::Protocol::https
+</code>
+
+Output included a line telling us:
+
+<code>
+Installing Net::SSLeay failed. 
+</code>
+
+It needs libssl:
+
+<code>
+# aptitude install libssl-dev
+</code>
+
+After that <hl>cpanm LWP::Protocol:https</hl> already worked.
+
+
+<h2>Net::SSH::Perl needs Math::GMP that needs </h2>
+
+<code>
+cpanm Net::SSH::Perl
+</code>
+
+<code>
+! Installing Math::GMP failed. See /home/gabor/.cpanm/work/1395233001.20342/build.log for details. Retry with --force to force install it.
+....
+
+Installing the dependencies failed: Module 'Math::GMP' is not installed
+<code>
+
+The build.log was a bit too big for me to understand so I ran
+
+<code>
+$ cpanm Math::GMP
+</code>
+
+that failed again, but provided a much shorter build.log. From that I already understood I need to install
+
+<code>
+# aptitude install libgmp-dev
+</code>
+
+then <hl>cpanm Net::SSH::Perl</hl> also worked.
+
+
