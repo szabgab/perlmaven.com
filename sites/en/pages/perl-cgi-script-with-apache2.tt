@@ -17,9 +17,6 @@ This article will help you set up an Apache web server to run CGI scripts.
 
 =abstract end
 
-<code lang="perl">
-</code>
-
 <h2>Background start Linux, install Apache2</h2>
 
 We will configure a <a href="/digitalocean">Digital Ocean droplet</a>, using Ubuntu 13.10 64bit.
@@ -80,7 +77,7 @@ Which is a good thing.)
 
 <code>
 mkdir /var/cgi-bin
-<code>
+</code>
 
 and create a file called <hl>/var/cgi-bin/echo.pl</hl>
 with the following content:
