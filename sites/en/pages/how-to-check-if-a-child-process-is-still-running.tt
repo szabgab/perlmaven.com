@@ -1,4 +1,4 @@
-=title How to check if a child process is still runnng in Perl?
+=title How to check if a child process is still running in Perl?
 =timestamp 2014-01-15T07:30:01
 =indexes wait, waitpid, fork, WNOHANG, POSIX, Time::HiRes
 =status draft
@@ -21,8 +21,8 @@ has finished?
 
 =abstract end
 
-In a nutshell, calling <hl>waitpid()</hl> with the process ID of the childprocess and with the
-<hl>WNOHANG</hl> flag impored from the <a href="https://metacpan.org/pod/POSIX">POSIX</a> module
+In a nutshell, calling <hl>waitpid()</hl> with the process ID of the child process and with the
+<hl>WNOHANG</hl> flag imported from the <a href="https://metacpan.org/pod/POSIX">POSIX</a> module
 is a non-blocking call. It will return immediately, without waiting for the child to stop working.
 
 It will return a status code which is the actual process id we passed to it (<hl>$pid</hl>) if the child has already stopped running.
@@ -64,7 +64,7 @@ while (1) {
     sleep(0.1);
 
     if ($res == -1) {
-        say "Some error occured ", $? >> 8;
+        say "Some error occurred ", $? >> 8;
         exit();
     }
     if ($res) {
@@ -79,7 +79,7 @@ say "wait() done";
 </code>
 
 In this example we create a single child process that will sleep for one second and then exit with exit code 3.
-(Juts an arbitrary number to show how it works.)
+(Just an arbitrary number to show how it works.)
 
 In the meantime the parent process enters an infinite while-loop and checks if the process is still running every 0.1 seconds.
 (We use the <hl>sleep</hl> function of <a href="https://metacpan.org/pod/Time::HiRes">Time::HiRes</a> for this.)
