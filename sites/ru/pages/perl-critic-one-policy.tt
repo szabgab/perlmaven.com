@@ -2,6 +2,7 @@
 =timestamp 2014-03-21T11:45:56
 =indexes Perl::Critic, perlcritic
 =status show
+=original perl-critic-one-policy
 =books beginner_book
 =author szabgab
 =translator name2rnd
