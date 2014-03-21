@@ -2,7 +2,7 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="/perl-tutorial">Perl Tutorial</a></li>
-              <li><a href="/pomosch">помощь</a></li>
+              <li><a href="/pomosch">Нужна помощь?</a></li>
             </ul>
             <ul class="nav pull-right">
               <li><a href="/keywords">Type keyword:</a></li>
