@@ -82,7 +82,7 @@ $x = 23;
 </code>
 
 Isso funcionaria mas este código vai gerar um aviso do tipo:
-<a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a>
+<a href="/nome-usado-apenas-uma-vez">Name "main::x" used only once: possible typo at ...</a>
 
 Em qualquer caso, você não dirigiria um carro sem usar o cinto de segurança,
 dirigiria?
@@ -133,7 +133,7 @@ print $y;
 
 O problema é que a variável <hl>$y</hl> está declarada dentro do bloco (o par
 de chaves), o que significa que ela não existe fora deste bloco.
-Isto é chamado <a href="/scope-of-variables-in-perl">o <b>escopo</b> da
+Isto é chamado <a href="/escopo-das-variaveis-em-perl">o <b>escopo</b> da
 variável</a>.
 
 Toda idéia do <b>escopo</b> é diferente entre as principais linguagens de
@@ -181,7 +181,7 @@ possíveis soluções sintaticamente corretas.
 
 Claro, se esquecermos de remover o <hl>my</hl> de dentro do bloco, ou se
 <hl>$x</hl> for falso, então obteremos um aviso <a
-href="/use-of-uninitialized-value">Uso de valor não iniciado</a>.
+href="/uso-de-valor-nao-inicializado">Uso de valor não iniciado</a>.
 
 <h2>Os outros meios</h2>
 
