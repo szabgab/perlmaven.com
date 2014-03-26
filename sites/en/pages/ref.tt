@@ -1,7 +1,7 @@
-=title ref
-=timestamp 2014-01-15T07:30:01
-=indexes ref
-=status draft
+=title ref - What kind of reference is this variable?
+=timestamp 2014-03-26T19:50:01
+=indexes ref, SCALAR, ARRAY, HASH, CODE, REF, GLOB, LVALUE, FORMAT, IO, VSTRING, Regexp
+=status show
 =author szabgab
 =archive 1
 =comments 1
