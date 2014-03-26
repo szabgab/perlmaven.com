@@ -196,7 +196,7 @@ say 'format:     ', ref *fmt{FORMAT};  # FORMAT
 </code>
 
 
-<h2>Reference to VSTRING/h2>
+<h2>Reference to VSTRING</h2>
 
 Version string staring with the letter <hl>v</hl>, are another rare sighting,
 even though they are more used than formats:
