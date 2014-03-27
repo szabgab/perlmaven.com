@@ -1,0 +1,29 @@
+=title Always use 3-argument open
+=timestamp 2014-08-18T14:30:01
+=indexes open
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+Always use <hl>open my $fh, '<', $filename or die ...</hl>, the 3-argument version of <hl>open</hl>,
+and never the <a href="/open-files-in-the-old-way">the old way</a>.
+
+=abstract end
+
+Note the <a href="/open-and-read-from-files">open</a> call has 3 parameters:
+
+<ol>
+  <li>The holder of the file-handle which has been just created.  <hl>open</hl> will assign the file-handle to it.</li>
+  <li>The mode of open. (to read, to write,  to append, etc.)</li>
+  <li>Path to the file.</li>
+</ol>
+
+
+<h2>Disclaimer for experts</h2>
+
+In the rare cases when you must use the old version, you'll know it.
+
