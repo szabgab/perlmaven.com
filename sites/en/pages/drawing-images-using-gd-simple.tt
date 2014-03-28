@@ -36,7 +36,7 @@ my $img = GD::Simple->new(200, 100);
 # draw a red rectangle with blue borders
 $img->bgcolor('red');
 $img->fgcolor('blue');
-$img->rectangle(10, 10, 50, 50);  # (x, y, width, height)
+$img->rectangle(10, 10, 50, 50); # (top_left_x, top_left_y, bottom_right_x, bottom_right_y)
 
 # convert into png data
 open my $out, '>', 'img.png' or die;
@@ -49,17 +49,18 @@ print $out $img->png;
 In these examples a border was added around the image, using CSS, to make it clear what is the size of the actual image.
 <hl>my $img = GD::Simple->new(200, 100);</hl> creates the image. It accepts two parameters: <hl>(width, height)</hl>.
 
-The method of the <hl>$img</hl> object are commands to the "drawing head". In the above case we set the
+The method of the <hl>$img</hl> object are commands to the "drawing head" or "pen". In the above case we set the
 background color to red using <hl>bgcolor</hl> and the forground color (the ink) to be blue using <hl>fgcolor</hl>.
 
 The <hl>rectangle</hl> method will draw a rectangle using the forground color and filled with the background color.
-The 4 parameters the <hl>rectangle</hl> method receives are <hl>(x, y, width, height)</hl> where the the <hl>(0,0)</hl>
+The 4 parameters the <hl>rectangle</hl> method receives are
+<hl>(top left x, top left y, bottom right x, bottom right y)</hl> where the the <hl>(0,0)</hl>
 coordinates are in the top left corner. The next example shows this in a clearer way.
 
 The last 3 lines in the above example convert the internal represenatation to PNG format and save it in
 the file called img.png.
 
-<h2>Green Rectangular</h2>
+<h2>Empty Green Rectangular</h2>
 
 Extend the above example by adding the following code (before saving the image):
 
@@ -67,7 +68,7 @@ Extend the above example by adding the following code (before saving the image):
 # draw an empty rectangle with green borders
 $img->bgcolor(undef);
 $img->fgcolor('green');
-$img->rectangle(20, 40, 100, 60);   # (x, y, width, height)
+$img->rectangle(20, 40, 100, 60);
 </code>
 
 <img src="/img/gd_simple/green_rectangular.png" alt="green rectangular" class="bordered" />
@@ -91,10 +92,37 @@ $img->lineTo(100, 40); # (x, y)
 
 <img src="/img/gd_simple/green_line.png" alt="green line" class="bordered" />
 
+<h2>Draw a solid orange ellipse</h2>
+
+In the next step we'll draw an ellipse in the rectangular we drew earlier.
+For this first we need to position the "pen" in the center of the rectangular
+which is also going to be the center of the ellipse. The rectangular above
+has the following coordinates: (20, 40, 100, 60).
+
+The horizontal center is at (left_x + right_x)/2  = (20+100)/2 = 60.
+
+The vertical center is at (top_y + bottom_y)/2  = (40+60)/2 = 50.
+
+The first thing we do is use <hl>moveTo(60, 50)</hl> to move the "pen".
+
+The total width of the ellipse is (right_x - left_x) = 100-20 = 80.
+
+The total height of the ellipse is (bottom_y - top_y) = 60 - 40 = 20.
+
+So we draw the ellipse after setting the colors using
+<hl>ellipse(80, 20)</hl>.
+
 <code lang="perl">
+# draw a solid orange ellipse
+$img->moveTo(60, 50);    # (x, y)
+$img->bgcolor('orange');
+$img->fgcolor('orange');
+$img->ellipse(80, 20);   # (width height)
 </code>
 
-<img src="/img/" alt="" class="bordered" />
+<img src="/img/gd_simple/orange_ellipse.png" alt="orange ellipse" class="bordered" />
+
+<h2></h2>
 
 <code lang="perl">
 </code>
