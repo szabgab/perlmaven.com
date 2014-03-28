@@ -24,7 +24,7 @@ $img->fgcolor('blue');
 $img->rectangle(10, 10, 50, 50);
 </code>
 
-<img src="/img/gd_simple/red_square.png" alt="Red square" />
+<img src="/img/gd_simple/red_square.png" alt="Red square" style="border:1" />
 
 <code lang="perl">
 </code>
