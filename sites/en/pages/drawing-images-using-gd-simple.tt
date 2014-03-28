@@ -1,0 +1,53 @@
+=title Drawing images with Perl using GD::Simple
+=timestamp 2014-01-15T07:30:01
+=indexes files
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+=abstract end
+
+<code lang="perl">
+use strict;
+use warnings;
+use GD::Simple;
+ 
+# create a new image
+my $img = GD::Simple->new(200, 100);
+
+# draw a red rectangle with blue borders
+$img->bgcolor('red');
+$img->fgcolor('blue');
+$img->rectangle(10, 10, 50, 50);
+</code>
+
+<img src="/img/gd_simple/red_square.png" alt="Red square" />
+
+<code lang="perl">
+</code>
+
+<img src="/img/" alt="" />
+
+
+<code lang="perl">
+</code>
+
+<img src="/img/" alt="" />
+
+
+<code lang="perl">
+</code>
+
+<img src="/img/" alt="" />
+
+
+<code lang="perl">
+</code>
+
+<img src="/img/" alt="" />
+
+
+
