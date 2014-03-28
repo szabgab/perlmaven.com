@@ -1,7 +1,7 @@
 =title Common Warnings and Error messages in Perl
-=timestamp 2013-03-15T07:30:01
+=timestamp 2014-03-28T15:02:01
 =indexes 
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
@@ -10,11 +10,11 @@
 
 =abstract start
 
-While the warnings and error messages perl gives are quite precize, they are not
+While the warnings and error messages Perl gives are quite precise, they are not
 always very beginner friendly. In these articles you'll find some of the most common
-warnings and error messages you'll encounter explained in a more beginner-firendly way.
+warnings and error messages you'll encounter, explained in, hopefully a more beginner-friendly way.
 
-Including instructions on how to fix them.
+Some of the articles even include directions showing how to fix the error.
 
 =abstract end
 

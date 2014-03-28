@@ -8,6 +8,13 @@
 =social 1
 
 =abstract start
+
+The <a href="https://metacpan.org/pod/GD::Simple">GD</a>  module on CPAN is an interface to the GD Graphics Library.
+The Perl module was created and is still maintained by Lincoln D. Stein.
+
+<a href="https://metacpan.org/pod/GD::Simple">GD::Simple</a> is wrapper around the GD module that provides
+a simpler interface to create drawings. The following examples are based on the example that comes with the module.
+
 =abstract end
 
 <code lang="perl">
@@ -15,7 +22,7 @@ use strict;
 use warnings;
 use GD::Simple;
  
-# create a new image
+# create a new image (width, height)
 my $img = GD::Simple->new(200, 100);
 
 # draw a red rectangle with blue borders
@@ -24,7 +31,16 @@ $img->fgcolor('blue');
 $img->rectangle(10, 10, 50, 50);
 </code>
 
-<img src="/img/gd_simple/red_square.png" alt="Red square" style="border:1" />
+<img src="/img/gd_simple/red_square.png" alt="Red square" style="border:solid 1px;" />
+
+In this example a border was added around the image to make it clear what is the size of the actual image.
+<hl>my $img = GD::Simple->new(200, 100);</hl> creates the image. It accepts two parameters: <hl>(width, height)</hl>.
+
+The method of the <hl>$img</hl> object are commands to the "drawing head". In the above case we set the
+background color to red using <hl>bgcolor</hl> and the forground color (the ink) to be blue using <hl>fgcolor</hl>.
+
+The <hl>rectangle<hl> method will draw a rectangle using the forground color and filled with the background color.
+The 4 paameters the <hl>rectangle</hl> method receives are <hl>
 
 <code lang="perl">
 </code>
