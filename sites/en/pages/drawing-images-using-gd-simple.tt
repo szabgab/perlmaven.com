@@ -1,6 +1,6 @@
 =title Drawing images with Perl using GD::Simple
 =timestamp 2014-01-15T07:30:01
-=indexes files
+=indexes GD, GD::Simple
 =status draft
 =author szabgab
 =archive 1
@@ -17,6 +17,14 @@ a simpler interface to create drawings. The following examples are based on the 
 
 =abstract end
 
+<style>
+img.bordered {
+  border:solid 1px;
+}
+</style>
+
+<h2>Red square (new, bgcolor, fgcolor, rectangle, png)</h2>
+
 <code lang="perl">
 use strict;
 use warnings;
@@ -28,42 +36,84 @@ my $img = GD::Simple->new(200, 100);
 # draw a red rectangle with blue borders
 $img->bgcolor('red');
 $img->fgcolor('blue');
-$img->rectangle(10, 10, 50, 50);
+$img->rectangle(10, 10, 50, 50);  # (x, y, width, height)
+
+# convert into png data
+open my $out, '>', 'img.png' or die;
+binmode $out;
+print $out $img->png;
 </code>
 
-<img src="/img/gd_simple/red_square.png" alt="Red square" style="border:solid 1px;" />
+<img src="/img/gd_simple/red_square.png" alt="Red square" class="bordered" />
 
-In this example a border was added around the image to make it clear what is the size of the actual image.
+In these examples a border was added around the image, using CSS, to make it clear what is the size of the actual image.
 <hl>my $img = GD::Simple->new(200, 100);</hl> creates the image. It accepts two parameters: <hl>(width, height)</hl>.
 
 The method of the <hl>$img</hl> object are commands to the "drawing head". In the above case we set the
 background color to red using <hl>bgcolor</hl> and the forground color (the ink) to be blue using <hl>fgcolor</hl>.
 
-The <hl>rectangle<hl> method will draw a rectangle using the forground color and filled with the background color.
-The 4 paameters the <hl>rectangle</hl> method receives are <hl>
+The <hl>rectangle</hl> method will draw a rectangle using the forground color and filled with the background color.
+The 4 parameters the <hl>rectangle</hl> method receives are <hl>(x, y, width, height)</hl> where the the <hl>(0,0)</hl>
+coordinates are in the top left corner. The next example shows this in a clearer way.
+
+The last 3 lines in the above example convert the internal represenatation to PNG format and save it in
+the file called img.png.
+
+<h2>Green Rectangular</h2>
+
+Extend the above example by adding the following code (before saving the image):
+
+<code lang="perl">
+# draw an empty rectangle with green borders
+$img->bgcolor(undef);
+$img->fgcolor('green');
+$img->rectangle(20, 40, 100, 60);   # (x, y, width, height)
+</code>
+
+<img src="/img/gd_simple/green_rectangular.png" alt="green rectangular" class="bordered" />
+
+In this example the background color is transparent, so the part that covers the red square show the red square
+and the part outside of the red square has white background.  The coordinates provided to the
+<hl>rectangle</hl> method also show much clearer where do the values belong.
+
+<h2>Drawing a straight green line (moveTo, lineTo)</h2>
+
+In the next part of the example we will draw a straigh line. For this we can use the <hl>lineTo</hl> method that will draw
+a line from the current position of the "pen" to the given coordinates <hl>(x, y)</hl> measure from the top left corner of the image.
+
+To position the "pen" to a specific place we use the <hl>moveTo</hl> method providing the <hl>(x, y)</hl> coordinates.
+
+<code lang="perl">
+# move to (30, 0) and draw a green line to (100, 40)
+$img->moveTo(30, 0);   # (x, y)
+$img->lineTo(100, 40); # (x, y)
+</code>
+
+<img src="/img/gd_simple/green_line.png" alt="green line" class="bordered" />
 
 <code lang="perl">
 </code>
 
-<img src="/img/" alt="" />
+<img src="/img/" alt="" class="bordered" />
+
+<code lang="perl">
+</code>
+
+<img src="/img/" alt="" class="bordered" />
 
 
 <code lang="perl">
 </code>
 
-<img src="/img/" alt="" />
+<img src="/img/" alt="" class="bordered" />
+
+
 
 
 <code lang="perl">
 </code>
 
-<img src="/img/" alt="" />
-
-
-<code lang="perl">
-</code>
-
-<img src="/img/" alt="" />
+<img src="/img/" alt="" class="bordered" />
 
 
 
