@@ -37,6 +37,7 @@ my $img = GD::Simple->new(200, 100);
 $img->bgcolor('red');
 $img->fgcolor('blue');
 $img->rectangle(10, 10, 50, 50); # (top_left_x, top_left_y, bottom_right_x, bottom_right_y)
+                                 # ($x1, $y1, $x2, $y2)
 
 # convert into png data
 open my $out, '>', 'img.png' or die;
@@ -99,15 +100,15 @@ For this first we need to position the "pen" in the center of the rectangular
 which is also going to be the center of the ellipse. The rectangular above
 has the following coordinates: (20, 40, 100, 60).
 
-The horizontal center is at (left_x + right_x)/2  = (20+100)/2 = 60.
+The horizontal center is at <hl>(left_x + right_x)/2  = (20+100)/2 = 60</hl>.
 
-The vertical center is at (top_y + bottom_y)/2  = (40+60)/2 = 50.
+The vertical center is at <hl>(top_y + bottom_y)/2  = (40+60)/2 = 50</hl>.
 
 The first thing we do is use <hl>moveTo(60, 50)</hl> to move the "pen".
 
-The total width of the ellipse is (right_x - left_x) = 100-20 = 80.
+The total width of the ellipse is <hl>(right_x - left_x) = 100-20 = 80</hl>.
 
-The total height of the ellipse is (bottom_y - top_y) = 60 - 40 = 20.
+The total height of the ellipse is <hl>(bottom_y - top_y) = 60 - 40 = 20</hl>.
 
 So we draw the ellipse after setting the colors using
 <hl>ellipse(80, 20)</hl>.
@@ -122,26 +123,41 @@ $img->ellipse(80, 20);   # (width height)
 
 <img src="/img/gd_simple/orange_ellipse.png" alt="orange ellipse" class="bordered" />
 
-<h2></h2>
+<h2>Draw arc</h2>
+
+An <a href="http://en.wikipedia.org/wiki/Arc_(geometry)">arc</a> is a partial circle or in the more general case
+a partial ellipse.
+
+In order to draw one we have to set the "pen" to the starting point of the arc, which is its center, and
+provide the following parameters: <hl>($width, $height, $start, $end, $style)</hl>.
+
+If the width and the height are the same then this is part of a circle. 
+<hl>$start</hl> and <hl>$end</hl> are degrees from 0 to 360. Zero is at the righ hand side of the ellipse
+and the degrees grow clock-wise. Hence 0, 90 as given in the example will be the bottom righ quarter.
 
 <code lang="perl">
+# draw an arc filled with dark violet
+$img->moveTo(100, 50);
+$img->bgcolor('darkviolet');
+$img->fgcolor('darkviolet');
+$img->arc(60, 60, 0, 90, gdEdged);
 </code>
 
-<img src="/img/" alt="" class="bordered" />
+<img src="/img/gd_simple/dark_violet_arc.png" alt="dark violet arc" class="bordered" />
 
+<h2>Draw text</h2>
+
+The method <hl>string</hl> can put a string on the image.
 
 <code lang="perl">
+# draw a string at (10,30) using the default built-in font
+$img->bgcolor('black');
+$img->fgcolor('black');
+$img->moveTo(10, 30);
+$img->string('Perl Maven');
 </code>
 
-<img src="/img/" alt="" class="bordered" />
+<img src="/img/gd_simple/text.png" alt="" class="bordered" />
 
-
-
-
-<code lang="perl">
-</code>
-
-<img src="/img/" alt="" class="bordered" />
-
-
+There is of course a lot more you can do with GD and even GD::Simple, but this can get you started.
 
