@@ -91,7 +91,7 @@ use strict;
 use warnings;
 use 5.010;
 
-my @arr = [2, 3];
+my @arr = (2, 3);
 my %h = (
     answer => 42,
 );
