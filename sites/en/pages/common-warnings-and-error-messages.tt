@@ -34,3 +34,7 @@ explained in <a href="/symbolic-reference-in-perl">Symbolic references in Perl</
 </ul>
 
 
+<a href="https://metacpan.org/pod/perldiag">perldiag</a> also has longer explanations for each one of the errors and warnings
+that you can skim, or you can access the specific explanation <a href="/use-diagnostics-or-splain">using diagnostics or splain</a>.
+
+
