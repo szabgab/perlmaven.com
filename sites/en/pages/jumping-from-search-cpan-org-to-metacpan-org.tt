@@ -9,15 +9,17 @@
 
 =abstract start
 
-When searching in CPAN I prefer to use <a href="http://metacpan.org/">MetaCPAN</a> over search.cpan.org because it looks better and because it is open source.
-So if there is a bug that really bothers me I can send a patch.
+When searching in CPAN I prefer to use <a href="http://metacpan.org/">MetaCPAN</a> over search.cpan.org because it looks better, and because it is open source.
+If there is a bug that really bothers me I can send a patch. If a want to add a feature I can do that. I could even run a private instance of it.
 
-Nevertheless, there are still case I use Google or <a href="https://duckduckgo.com/">DuckDuckGo</a> to find stuff and in many cases they will provide a link 
-to search.cpan.org.
+Nevertheless, there are many cases when I use Google or <a href="https://duckduckgo.com/">DuckDuckGo</a> when looking for a solution,
+and in many cases they will provide a link to search.cpan.org. Almost never to MetaCPAN.
 
 Given that link, how can we easily jump to the respective page on MetaCPAN?
 
 =abstract end
+
+<h2>It's easy</h2>
 
 If after searching Google or DDG you reach a URL on search.cpan.org,
 something like <a href="http://search.cpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm">this</a>,
