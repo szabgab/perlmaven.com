@@ -60,15 +60,16 @@ to practice what you have learned.
 <b>Scalars</b>
 <ol>
 <li><a href="/common-warnings-and-error-messages">Common warnings and error messages</a><br />
-<ul>
-<li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
-<li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
-<li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
-<li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
-<li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
-<li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
-<li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
-</ul>
+  <ul>
+    <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+    <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
+    <li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
+    <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
+    <li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
+    <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
+    <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
+    <li><a href="/cant-call-method-on-unblessed-reference">Can't call method ... on unblessed reference</a></li>
+  </ul>
 </li>
 <li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
 <li>Conditional statements: if</li>

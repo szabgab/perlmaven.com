@@ -1,7 +1,7 @@
 =title Can't call method ... on unblessed reference
-=timestamp 2014-01-15T07:30:01
+=timestamp 2014-04-03T08:10:01
 =indexes B::Deparse
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
@@ -10,11 +10,19 @@
 
 =abstract start
 
-<h2>What is the difference between sub $param and sub($param)?</h2>
+A while ago I got an e-mail from one of the readers with the following question:
 
-One seem to work, the other throw an error <hl>Can't call method ... on unblessed reference</hl>.
+<blockquote>
+What is the difference between <hl>subname $param</hl> and <hl>subname($param)</hl>?
+
+One seems to work, the other throws an error <hl>Can't call method ... on unblessed reference</hl>.
+</blockquote>
+
+In other words:  <b>do you have to put parentheses around the parameters of function calls?</b>
 
 =abstract end
+
+Let's look at some things:
 
 <h2>require</h2>
 
@@ -68,6 +76,7 @@ The second version returned exactly the same code as we had in our file.
 
 On the other hand, in the first script, the critical part of the code was changed to 
 <hl>$data->Storable::freeze;</hl>.
+
 Perl thought that we are calling the <hl>Storable::freeze</hl> method on the <hl>$data</hl> object.
 This code would work if the <hl>$data</hl> was a <a href="/pro/getting-started-with-classic-perl-oop">blessed reference</a>,
 though it would probably do something different than what we meant.
@@ -84,7 +93,7 @@ after it, the problem appears again.
 
 <h2>Explanation</h2>
 
-<hl>use</hl> happens at compile time so by the time perl sees the call to <hl>Storable::freeze</hl> it has
+<hl>use</hl> happens at compile time. By the time perl sees the call to <hl>Storable::freeze</hl> it has
 already loaded the <hl>Storable</hl> module.
 
 <hl>require</hl> and <hl>eval "use ...";</hl> happens at run time, so when perl compiles the
@@ -98,6 +107,7 @@ That's why B::Deparse shows this code as <hl>$data->Storable::freeze;</hl>.
 <h2>Solution</h2>
 
 In order to eliminate the error you need to make sure the functions you use are already defined or loaded
-before you actually use them, or that you put parentheses after the function call.
+before you actually use them. Putting parentheses after the function call eliminates this restriction,
+and allows you put the function call wherever you want.
 
 
