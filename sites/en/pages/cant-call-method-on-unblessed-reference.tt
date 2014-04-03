@@ -81,7 +81,7 @@ Perl thought that we are calling the <hl>Storable::freeze</hl> method on the <hl
 This code would work if the <hl>$data</hl> was a <a href="/pro/getting-started-with-classic-perl-oop">blessed reference</a>,
 though it would probably do something different than what we meant.
 
-<h2>use<h2>
+<h2>use</h2>
 
 If we replace the <hl>require Storable;</hl> by <hl>use Storable;</hl> then both cases work correctly,
 and in both cases B::Deparse will show the code as being <hl>Storable::freeze($data);</hl>
