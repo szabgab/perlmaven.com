@@ -31,6 +31,7 @@ This is the change you need to make in the URL:
 <pre>
 http://search.cpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm
 http://search.mcpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm
+             ^^^
 </pre>
 
 
