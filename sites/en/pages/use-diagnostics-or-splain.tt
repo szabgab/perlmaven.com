@@ -41,7 +41,7 @@ Illegal division by zero at x.pl line 2.
 </code>
 
 I know. This error is probably obvious to most people familiar with basic math and when you encounter such error, the main issue is
-probabaly how did 0 end up in <a href="http://en.wikipedia.org/wiki/Denominator">denominator</a>, in our case in <hl>$x</hl>?
+probably how did 0 end up in <a href="http://en.wikipedia.org/wiki/Denominator">denominator</a>, in our case in <hl>$x</hl>?
 
 Nevertheless it is a good example to show how to get more detailed explanation:
 
@@ -99,7 +99,7 @@ Illegal division by zero at x.pl line 2 (#1)
 
 <h2>splain in a pipe</h2>
 
-The more adventourus Linux/Unix user can also pipe the error message through splain without saving it in a file using
+The more adventurous Linux/Unix user can also pipe the error message through splain without saving it in a file using
 
 <code>
 perl x.pl 2>&1 | splain
