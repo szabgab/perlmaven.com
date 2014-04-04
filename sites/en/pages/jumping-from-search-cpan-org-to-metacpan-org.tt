@@ -1,7 +1,7 @@
-=title Jumping from search.cpan.org to metacpan.org
+=title Neat trick to jump from search.cpan.org to metacpan.org
 =timestamp 2014-04-18T14:30:01
-=indexes DDG
-=status draft
+=indexes DDG, MetaCPAN
+=status show
 =author szabgab
 =archive 1
 =comments 1
@@ -10,10 +10,11 @@
 =abstract start
 
 When searching in CPAN I prefer to use <a href="http://metacpan.org/">MetaCPAN</a> over search.cpan.org because it looks better, and because it is open source.
-If there is a bug that really bothers me I can send a patch. If a want to add a feature I can do that. I could even run a private instance of it.
+If there is a bug that really bothers me I can send a patch. If I want to add a feature I can do that. If is accepted by the developers then everyone will benefit
+from it, but I could even run a private instance of MetaCPAN.
 
-Nevertheless, there are many cases when I use Google or <a href="https://duckduckgo.com/">DuckDuckGo</a> when looking for a solution,
-and in many cases they will provide a link to search.cpan.org. Almost never to MetaCPAN.
+Nevertheless, there are many cases when I use Google or <a href="https://duckduckgo.com/">DuckDuckGo</a> when looking for a solution.
+In many cases they will provide a link to search.cpan.org. Almost never to MetaCPAN.
 
 Given that link, how can we easily jump to the respective page on MetaCPAN?
 
@@ -21,7 +22,7 @@ Given that link, how can we easily jump to the respective page on MetaCPAN?
 
 <h2>It's easy</h2>
 
-If after searching Google or DDG you reach a URL on search.cpan.org,
+If after searching Google or DuckDuckGo you reach a URL on search.cpan.org,
 something like <a href="http://search.cpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm">this</a>,
 you can add the letter <b>m</b> in-front of the word cpan in the URL to have <a href="http://search.mcpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm">this link</a>
 that will redirect you to the respective page on MetaCPAN.
@@ -33,6 +34,5 @@ http://search.cpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm
 http://search.mcpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm
              ^^^
 </pre>
-
 
 
