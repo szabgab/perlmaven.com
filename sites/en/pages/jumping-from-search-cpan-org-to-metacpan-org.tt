@@ -36,3 +36,6 @@ http://search.mcpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm
 </pre>
 
 
+I did not remember this, but apparently Dave Cross <a href="http://perlhacks.com/2013/01/give-me-metacpan/">wrote about this already</a>,
+and even showed a Firefox plugin that will do this automatically for you.
+
