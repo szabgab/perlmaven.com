@@ -34,6 +34,7 @@
   <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
   <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
   <li><a href="/cant-locate-in-inc">Can't locate ... in @INC</a></li>
+  <li><a href="/cant-call-method-on-unblessed-reference">Can't call method ... on unblessed reference</a></li>
 </ul>
 </li>
 <li><a href="/boolean-values-in-perl">Perl의 불리언 값(참과 거짓)</a></li>
