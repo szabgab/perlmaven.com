@@ -1,0 +1,122 @@
+=title Sorting mixed strings 
+=timestamp 2014-04-09T13:45:56
+=indexes sort, $a, $b, cmp, <=>, substr
+=status draft
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+<a href="">Sorting and array</a> of strings or numbers is easy using the <hl>sort</hl> function,
+but what if the values we would like to sort are strings, but we would like to sort based on some number
+which is part of the string?
+
+For example what if we have an array containg values such as <hl>foo_11 bar_2 moo_3</hl>. How can we sort his
+based on the numbers?
+
+=abstract end
+
+Simply calling <hl>sort</hl> will sort the values as string.
+We need to extract the numerical value
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my @x = qw(foo_11 bar_2 moo_3);
+say join " ", sort @x;
+</code>
+
+<code>
+bar_2 foo_11 moo_3
+</code>
+
+<h2>Extract numbers using substr</h2>
+
+In order to compare the strings using the numbers in the string we need to extract those numbers.
+Based on the example above we can assume that the strings consist of <b>4 characters and then the string</b>.
+In that case we can use <a href="/string-functions-length-lc-uc-index-substr">substr</a> to extract the numbers:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my @x = qw(foo_11 bar_2 moo_3);
+
+my @y = sort { substr($a, 4) <=> substr($b, 4)  } @x;
+
+say join " ", @y;
+</code>
+
+The result is correct:
+
+<code>
+bar_2 moo_3 foo_11
+</code>
+
+
+What if the strings can have any number of characters before and after the number? We might need to use
+
+<h2>Use regular expression to extract numbers</h2>
+
+For example what if the strings look like these:
+
+<code lang="perl">
+my @x = qw(foo_11 bar_2_bar text_3);
+</code>
+
+If we run the previous solution, we'll get lots of warnings like this: <hl>Argument "bar_2_bar" isn't numeric in numeric comparison (<=>)</hl>
+
+We can use a regex to extract part of the string, but for this we need to create a LIST-context. Hence in the following expression we had to
+put the <hl>($number)</hl> it parentheses.
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $str = 'bar_2_bar';
+my ($number) = $str =~ /(\d+)/;
+say $number;
+</code>
+
+printing <hl>2</hl>.
+
+Unfortunataly the <hl><=></hl>, the spaceship operator will create scalar context on both of its sides.
+
+So how can we extract the value in scalar context?
+We can do that using <a href="/perl-split">array slices</a> on the fly:
+
+<code lang="perl">
+my ($number) = $str =~ /(\d+)/;
+
+my $number = ($str =~ /(\d+)/)[0];
+</code>
+
+Putting it all together we'll have:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my @x = qw(foo_11 bar_2_bar text_3);
+say join " ", sort @x;
+
+my @y = sort { ($a =~ /(\d+)/)[0] <=> ($b =~ /(\d+)/)[0] } @x;
+
+say join " ", @y;
+</code>
+
+Resulting in
+
+<code>
+bar_2_bar text_3 foo_11
+</code>
+
+
