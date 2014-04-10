@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on March 28, 2014.
+parts are being published every few days. The latest one was published on April 10, 2014.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -118,6 +118,7 @@ to practice what you have learned.
 <li><a href="/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
 <li><a href="/scalar-and-list-context-in-perl">Context sensitivity in Perl</a></li>
 <li><a href="/sorting-arrays-in-perl">Sorting arrays in Perl</a></li>
+<li><a href="/sorting-mixed-strings">Sorting mixed strings</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
 <li><a href="/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
 <li>Stack and <a href="/using-a-queue-in-perl">queue</a></li>
