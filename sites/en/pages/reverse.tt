@@ -110,7 +110,7 @@ say reverse $str;
 </code>
 
 <code>
-reverse
+stressed
 </code>
 
 Looks strange. As if <hl>reverse</hl> had no impact.
