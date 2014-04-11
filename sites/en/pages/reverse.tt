@@ -43,7 +43,7 @@ And the output is:
 <code>
 Foo Bar Moo
 Moo Bar Foo
-<code>
+</code>
 
 <h2>Reverse a scalar: string or number</h2>
 
