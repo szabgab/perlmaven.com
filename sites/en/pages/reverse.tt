@@ -157,6 +157,26 @@ Which prints
 stressed
 </code>
 
+In order to fix the above issues, we need to make sure <hl>reverse</hl> is called in 
+SCALAR context which can be achieved using the <hl>scalar</hl> function:
+
+<code lang="perl">
+my $str = 'stressed';
+say scalar reverse $str;
+
+my @words = qw(Foo Bar Moo);
+say scalar reverse join '', @words;
+</code>
+
+resulting in
+
+<code>
+desserts
+ooMraBooF
+</code>
+
+(Thanks to <a href="http://www.linkedin.com/in/jonathancast">Jonathan Cast</a> reminding me to add these examples.)
+
 
 <h2>Conclusion</h2>
 
