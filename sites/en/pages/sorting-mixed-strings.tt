@@ -10,11 +10,11 @@
 
 =abstract start
 
-<a href="">Sorting and array</a> of strings or numbers is easy using the <hl>sort</hl> function,
+<a href="/sorting-arrays-in-perl">Sorting an array</a> of strings or numbers is easy using the <hl>sort</hl> function,
 but what if the values we would like to sort are strings, but we would like to sort based on some number
 which is part of the string?
 
-For example what if we have an array containg values such as <hl>foo_11 bar_2 moo_3</hl>. How can we sort his
+For example what if we have an array containg values such as <hl>foo_11 bar_2 moo_3</hl>. How can we sort this
 based on the numbers?
 
 =abstract end
@@ -38,7 +38,7 @@ bar_2 foo_11 moo_3
 <h2>Extract numbers using substr</h2>
 
 In order to compare the strings using the numbers in the string we need to extract those numbers.
-Based on the example above we can assume that the strings consist of <b>4 characters and then the string</b>.
+Based on the example above we can assume that the strings consist of <b>4 characters and then the number</b>.
 In that case we can use <a href="/string-functions-length-lc-uc-index-substr">substr</a> to extract the numbers:
 
 <code lang="perl">
@@ -70,10 +70,10 @@ For example what if the strings look like these:
 my @x = qw(foo_11 bar_2_bar text_3);
 </code>
 
-If we run the previous solution, we'll get lots of warnings like this: <hl>Argument "bar_2_bar" isn't numeric in numeric comparison (<=>)</hl>
+If we run the previous solution, we'll get lots of warnings like this: <hl>Argument "2_bar" isn't numeric in numeric comparison (<=>)</hl>
 
 We can use a regex to extract part of the string, but for this we need to create a LIST-context. Hence in the following expression we had to
-put the <hl>($number)</hl> it parentheses.
+put the <hl>($number)</hl> in parentheses.
 
 <code lang="perl">
 use strict;
@@ -135,7 +135,7 @@ my @y = sort { (($a =~ /(\d+)/)[0] || 0) <=> (($b =~ /(\d+)/)[0] || 0) } @x;
 
 He also poined out that the Regex engine is "slow" and thus we can improve the
 speed of the expression by using the <a href="http://perlmaven.com/how-to-sort-faster-in-perl">Schwartzian transform</a>.
-He pointed out that f the array has at least 5 elements, using the Schwartzian transform is faster. If it has 20 elements is twice as fast as the simple sort.
+He pointed out that if the array has at least 5 elements, using the Schwartzian transform is faster. If it has 20 elements is twice as fast as the simple sort.
 
 The soultion he gave looks like this:
 
