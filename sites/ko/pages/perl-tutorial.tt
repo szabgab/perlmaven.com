@@ -52,6 +52,7 @@
 <ol>
 <li><a href="/argv-in-perl">명령행 인자 @ARGV 처리하기</a></li>
 <li><a href="/scalar-and-list-context-in-perl">문맥 민감성</a></li>
+<li><a href="/sorting-mixed-strings">혼합된 문자열의 정렬</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">배열에서 고유 값들만 남기기</a></li>
 <li>스택과 <a href="/using-a-queue-in-perl">큐</a></li>
 </ol>
