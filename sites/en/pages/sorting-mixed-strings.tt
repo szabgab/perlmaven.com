@@ -155,7 +155,6 @@ readable that the one using the Schwartzian transform. That's because the expres
 in the comparision is itself complex. In the original version we have two copies of the expression. In the Schwartzian transform
 we only have one copy.
 
-
 Maybe this version, where we move the complex expression in a subroution, is even more readable:
 
 <code lang="perl">
@@ -166,5 +165,26 @@ sub getnum {
    return( ($v =~ /(\d+)/)[0] || 0);
 }
 </code>
+
+
+<h2>Hiding the sort in a sub</h2>
+
+Another solution Octavian sent to me was using a separate subroution to hide the implementation details of the sort:
+
+<code lang="perl">
+my @y = sort by_number @x;
+
+
+sub by_number {
+    my ( $anum ) = $a =~ /(\d+)/;
+    my ( $bnum ) = $b =~ /(\d+)/;
+    ( $anum || 0 ) <=> ( $bnum || 0 );
+}
+</code>
+
+The advantage of this is that you can use the same sort in many different places,
+while implementing it only once and if the name of the subroutin explains the sort,
+then most people won't even need to look at the implementation.
+A common trait of subroutines.
 
 
