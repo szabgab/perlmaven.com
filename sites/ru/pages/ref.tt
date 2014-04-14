@@ -2,8 +2,8 @@
 =timestamp 2014-04-14T11:09:01
 =indexes ref, SCALAR, ARRAY, HASH, CODE, REF, GLOB, LVALUE, FORMAT, IO, VSTRING, Regexp
 =status show
-=author szabgab
 =original ref
+=author szabgab
 =translator name2rnd
 =archive 1
 =comments 1
