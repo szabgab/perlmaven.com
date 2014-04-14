@@ -1,6 +1,6 @@
 =title How to replace a string in a file with Perl
 =timestamp 2013-04-05T13:10:10
-=indexes open, close, replace, File::Slurp, read_file, write_file, slurp, $/, $INPUT_RECORD_SEPARATOR
+=indexes open, close, replace, File::Slurp, read_file, write_file, slurp, $/, $INPUT_RECORD_SEPARATOR, Path::Tiny
 =status show
 =books beginner_book
 =author szabgab
@@ -21,11 +21,31 @@ If you need to do this as part of a larger application then go on reading this a
 On the other hand, if this is a stand-alone work then you can do this with a
 <a href="/perl-on-the-command-line">one-liner replqcing a string in a file</a>.
 
-<h2>File::Slurp</h2>
+<h2>Using Path::Tiny</h2>
 
-If you can install <a href="https://metacpan.org/module/File::Slurp">File::Slurp</a> and
+If you can install <a href="https://metacpan.org/module/Path::Tiny">Path::Tiny</a> and
 if the file is not too large to fit in the memory of your computer,
 then this can be the solution:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+my $filename = 'a.txt';
+
+use Path::Tiny qw(path);
+my $file = path($filename);
+my $data = $file->slurp_utf8;
+#$data =~ s/Copyright Start-Up/Copyright Large Corporation/g;
+$file->spew_utf8( $data );
+</code>
+
+
+<h2>File::Slurp</h2>
+
+This is an older version of it. It is less preferable than the Path::Tiny one, but
+if you already have <a href="https://metacpan.org/module/File::Slurp">File::Slurp</a> installed
+and then this can be the solution:
 
 <code lang="perl">
 use strict;
