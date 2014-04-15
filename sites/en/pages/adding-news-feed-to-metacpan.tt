@@ -114,7 +114,7 @@ and reloaded the page /news showed me the content as expected.
 <img src="/img/metacpan_news_static.png" alt="MetaCPAN news static page" />
 
 
-<h2>Create the News file</h2>
+<h2>Create the News file and displaying its content</h2>
 
 The next step was to create an external file for the News in Markdown format and then to
 load it and display the content of that file instead of the static page.
@@ -162,7 +162,21 @@ sub news : Local : Path('/news') {
 1;
 </code>
 
+I had to restart <hl>plackup</hl> and reload the page, but then I could see that the news page now
+gets its content from the controller.
 
+The next step is to read the content of the 'News' file and pass that to the template.
+The <hl>$c</hl> variable in the subroutin represents the Catalyst onject. Calling <hl>config</hl>
+returns a hash with configuration parameters. The <hl>home</hl> field provide full path to the
+root directory of the application. The 'News' file is right there.
+
+We use the <hl>path</hl> function provided by <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a>,
+and then we <a href="http://perlmaven.com/slurp">slurp</a> in the content.
+
+At first I passed the content as it is to the <hl>stash</hl> method, but later it seemed more
+convenient to add a <hl>Title:</hl> pre-tag to the title of eash news-item that will make
+it easier to separate the news itesm for the RSS feed. On the news page we don't need
+this extra word, so we can remove it by a regex.
 
 <code lang="perl">
 package MetaCPAN::Web::Controller::News;
@@ -186,28 +200,88 @@ sub news : Local : Path('/news') {
 1;
 </code>
 
+After restarting <hl>plackup</hl> and reloading the page, we can see that the content
+of the news page now comes from the News file.
 
+<h2>Adding RSS feed</h2>
 
+A news page is not fun without an RSS feed. MetaCPAN already provide a number of such feeds
+for <a href="https://metacpan.org/recent">most recently uploaded modules</a>, but where is the code?
 
+After a bit of looking around I found all the RSS feed generation in
+<a href="https://github.com/CPAN-API/metacpan-web/blob/master/lib/MetaCPAN/Web/Controller/Feed.pm">lib/MetaCPAN/Web/Controller/Feed.pm</a>
+and added the following method:
 
+<code lang="perl">
+sub news : Chained('index') PathPart Args(0) {
+    my ( $self, $c ) = @_;
 
-<h2>TBD</h2>
+    my $file = $c->config->{home} . '/News';
+    my $news = path($file)->slurp_utf8;
+    $news =~ s/^\s+|\s+$//g;
+    my @entries;
+    foreach my $str (split /^Title:\s*/m, $news) {
+        next if $str =~ /^\s*$/;
 
-search for 'Changes for version' found in several places:
+        my %e;
+        $e{name} = $str =~ s/\A(.+)$//m ? $1 : 'No title';
+        $str =~ s/\A\s*-+//g;
+        $e{date} = $str =~ s/^Date:\s*(.*)$//m ? $1 : '2014-01-01T00:00:00';
+        $e{link} = "http://metacpan.org/news#$e{name}";
+        $e{author} = 'METACPAN';
+        $str =~ s/^\s*|\s*$//g;
+        #$str =~ s{\[([^]]+)\]\(([^)]+)\)}{<a href="$2">$1</a>}g;
+        $e{abstract} = $str;
+        $e{abstract} = markdown($str);
 
-<code>
-root/release.html
-115:<strong>Changes for version <% v.version %></strong>
+        push @entries, \%e;
+    }
 
-t/controller/release.t
-122:    push @headings, 'Changes for version ' . $version;
+    $c->stash->{feed} = $self->build_feed(
+        title => "Recent MetaCPAN News",
+        entries => \@entries,
+    );
+}
+</code>
 
-var/tmp/templates/root/release.html.pl
-622:<strong>Changes for version ';
-</code>  
+This method starts the same way as the one in the News controller: We slurp in the content of the News file.
+Then we need to split it up into individual news entries and extract the title, and the date from each piece.
 
-It seems the one I looked at was seved from root/release.html
-to verify this I opened the file, changed the text a bit (to XChanges) and reloaded the page.
-Once I saw that the resulting html has also changed I knew I am in the right place.
+The author field expected by the feed generator method gets a fixed string and the abstract is the text
+converted from Markdown to HTML.
+
+As these news items will show up on the same page the 'link' should always link to that page, but
+in order to have distinct URLs, I aded the title of the news item as an anchor. I am not sure if 
+this is needed, or of the feed-readers can handle several news items that go to the exact same URL.
+
+I also had t add this line:
+
+<code lang="perl">
+        $entry->{link} //
+</code>
+
+to the <hl>build_entry</hl> method that now looks like this:
+
+<code lang="perl">
+sub build_entry {
+    my ( $self, $entry ) = @_;
+    my $e = XML::Feed::Entry->new('RSS');
+    $e->title( $entry->{name} );
+    $e->link(
+        $entry->{link} //
+        join( '/',
+            'http://metacpan.org', 'release',
+            $entry->{author},      $entry->{name} )
+    );
+    $e->author( $entry->{author} );
+    $e->issued( DateTime::Format::ISO8601->parse_datetime( $entry->{date} ) );
+    $e->summary( escape_html( $entry->{abstract} ) );
+    return $e;
+}
+</code>
+
+After finishing this, I had to add and commit the changes. I had to push it out to GitHub and send a pull-request.
+The core developers of MetaCPAN can then discuss the change, rejet it, ask for improvements, but once it is accepted
+and deployed, you'll be able to get news feed from the MetaCPAN developers.
 
 
