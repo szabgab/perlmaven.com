@@ -46,7 +46,7 @@ It seems that I just had to add the following code:
 
 After reloading the page I got the News entry in the menu-bar:
 
-<img src="/img/metacpan_menu_bar_new.png" alt="MetaCPAN menu bar with news" />
+<img src="/img/metacpan_menu_bar_news.png" alt="MetaCPAN menu bar with news" />
 
 <h2>Create a static page</h2>
 
@@ -112,6 +112,83 @@ I had to stop and start the plack-based web server for this to take effect, but 
 and reloaded the page /news showed me the content as expected.
 
 <img src="/img/metacpan_news_static.png" alt="MetaCPAN news static page" />
+
+
+<h2>Create the News file</h2>
+
+The next step was to create an external file for the News in Markdown format and then to
+load it and display the content of that file instead of the static page.
+I created a file called <hl>News</hl> and placed it in the root of the distribution.
+After some trial and error, I reached the following solution:
+In <hl>root/news.html</hl> that I created earlier, the static content was replaced
+by a single Template Toolkit directive:
+
+<code>
+<% news %>
+</code>
+
+The whole file looked like this:
+
+<code>
+<div class="content">
+<% USE Markdown -%>
+<% FILTER markdown %>
+
+<% news %>
+
+<% END %>
+
+</div>
+</code>
+
+To fill the field we also have to change the newly created <hl>lib/MetaCPAN/Web/Controller/News.pm</hl>
+
+at first I only added a key-value pair to the call to <hl>stash</hl>. This provides a string as the
+value for the Template Toolkit directive 'news';
+
+<code lang="perl">
+package MetaCPAN::Web::Controller::News;
+
+use Moose;
+
+BEGIN { extends 'MetaCPAN::Web::Controller' }
+
+sub news : Local : Path('/news') {
+    my ( $self, $c ) = @_;
+
+    $c->stash( template => 'news.html', news => 'Some text'  );
+}
+
+1;
+</code>
+
+
+
+<code lang="perl">
+package MetaCPAN::Web::Controller::News;
+
+use Moose;
+
+BEGIN { extends 'MetaCPAN::Web::Controller' }
+
+use Path::Tiny qw/path/;
+
+sub news : Local : Path('/news') {
+    my ( $self, $c ) = @_;
+
+    my $file = $c->config->{home} . '/News';
+    my $news = path($file)->slurp_utf8;
+    $news =~ s/^Title:\s*//gm;
+
+    $c->stash( template => 'news.html', news => $news  );
+}
+
+1;
+</code>
+
+
+
+
 
 
 <h2>TBD</h2>
