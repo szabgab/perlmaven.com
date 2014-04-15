@@ -1,0 +1,127 @@
+=title Adding news feed to MetaCPAN
+=timestamp 2014-04-15T20:30:01
+=indexes MetaCPAN
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+While <a href="https://metacpan.org/">Meta CPAN</a> is constantly being developed, I think very few people notice the changes.
+I hope that by providing a news feed, the developers of MetaCPAN will be able to communicate the changes in a simle way.
+
+Writing the patch that will enable such news feed was very interesting, and I hope that
+reading it will help you make another step towards <a href="/hacking-metacpan-the-first-steps">hacking MetaCPAN</a>.
+
+=abstract end
+
+
+
+
+<h2>First steps</h2>
+
+Git clone the <a href="https://github.com/CPAN-API/metacpan-web">repository</a>, install all the prerequisites,
+launch the server using <hl>plackup</hl>, browse to it at http://localhost:5000
+
+<h2>Add the /news link to the top menu bar</h2>
+
+<a href="http://metacpan.com/">MetaCPAN</a> has a menu bar at the top that looks like this:
+
+<img src="/img/metacpan_menu_bar.png" alt="MetaCPAN menu bar" />
+
+The first thing I need to do is to add the <b>News</b> menu option.
+In order to find the place I need to add this I had to search for something that is already in the menu.
+So I searched for the word "Feedback in the source-tree using <a href="http://beyondgrep.com/">ack</a>.
+It was found in the file <a href="https://github.com/CPAN-API/metacpan-web/blob/master/root/wrapper.html">root/wrapper.html</a>
+It seems that I just had to add the following code:
+
+<code>
+{
+  title = "News",
+  path = ["/news"],
+  class = 'hidden-phone',
+},
+
+
+<h2>Create a static page</h2>
+
+Let's start by creating a static page for the news.
+
+Clicking on the link "FAQ" leads to http://localhost:5000/about/faq
+which is a static page.  The title is quite unique, so
+I searched for  'FAQ's answered" and found it in root/about/faq.html
+
+Looking around the root/ directory, it seems that every page has a template there with .html extension.
+
+create  root/news.html based on the content of root/about.html
+
+<code>
+<div class="content">
+<% USE Markdown -%>
+<% FILTER markdown %>
+## News about MetaCPAN
+
+Some text
+
+* Item 1
+* Item 2
+
+<% END %> 
+
+</div>
+</code>
+
+But visiting http://localhost:5000/news shows me <b>Not Found</b>
+
+Maybe I need to enable the file somehow? let's search for about.html 
+
+It has one hit in lib/MetaCPAN/Web/Controller/About.pm
+
+I copied the file to lib/MetaCPAN/Web/Controller/News.pm
+and simplified the content to the following:
+
+<code lang="perl">
+package MetaCPAN::Web::Controller::News;
+
+use Moose;
+
+BEGIN { extends 'MetaCPAN::Web::Controller' }
+
+sub news : Local : Path('/news') {
+    my ( $self, $c ) = @_;
+    $c->stash( template => 'news.html' );
+}
+
+1;
+</code>
+
+I had to stop and start the web server for this to take effect, but once I did that and reloaded
+the page /news showed me the content as expected.
+
+
+
+
+
+<h2></h2>
+search for 'Changes for version' found in several places:
+
+<code>
+root/release.html
+115:<strong>Changes for version <% v.version %></strong>
+
+t/controller/release.t
+122:    push @headings, 'Changes for version ' . $version;
+
+var/tmp/templates/root/release.html.pl
+622:<strong>Changes for version ';
+</code>  
+
+It seems the one I looked at was seved from root/release.html
+to verify this I opened the file, changed the text a bit (to XChanges) and reloaded the page.
+Once I saw that the resulting html has also changed I knew I am in the right place.
+<img src="/img/metacpan_news_not_found.png" alt="MetaCPAN news not found" />
+<img src="/img/metacpan_news_static.png" alt="MetaCPAN news static page" />
+
+
