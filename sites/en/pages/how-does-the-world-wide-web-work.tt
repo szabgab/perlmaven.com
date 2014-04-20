@@ -1,7 +1,7 @@
 =title How does the world wide web work?
 =timestamp 2014-04-19T21:00:01
-=indexes URL, Ajax
-=status draft
+=indexes URL, Ajax, JSON, XML
+=status show
 =author szabgab
 =archive 1
 =comments 1
@@ -42,7 +42,7 @@ That program can be written in many different languages and there are a number o
 
 <h2>3 major ways to serve the dynamic page</h2>
 
-One of the most basic ways, and probably the oldest way is called <hl>CGI</hl>. Upon receiving a request from the browser,
+<b>CGI</b>: One of the most basic ways, and probably the oldest way is called <hl>CGI</hl>. Upon receiving a request from the browser,
 the web server will set certain environment variables, and run the requested program. That program will process
 the request and print the results to its standard output. The web server captures this output and sends back to your
 browser which will try to display it for you. These programs are usually written in Perl or in some other dynamic language
@@ -53,12 +53,12 @@ that for every request the web server will have to spawn a new process that can 
 that get only a few 10s of requests an hour this is usually not issue, but when the site gest busy this can have a bad impact
 on response time.
 
-Another way is to embed the interpreter of the desired "scripting language" inside the web server. PHP usually works this way
+<b>Embedded interpreter</b>: Another way is to embed the interpreter of the desired "scripting language" inside the web server. PHP usually works this way
 and <a href="https://perl.apache.org/">mod_perl</a> provides this functionality for Perl when using the Apache web server.
 This is much faster than CGI - for example mod_perl can be 200 times faster than CGI/Perl, but this ties the implementation
 language and the web server. This makes development and deployment a bit more rigid.
 
-The third way is using an "application server". In this case there is an additional server, often called an "application server"
+<b>Application server</b>: The third way is using an "application server". In this case there is an additional server, often called an "application server"
 running alongside the web server. Every time the web server receives a request for a dynamic page, it hands it over to the
 application server. The application server is language specific and it has all the application loaded in the memory and compiled once.
 Applications written in Java usually utilize an application server. 
@@ -69,8 +69,9 @@ Starman, and other <a href="http://plackperl.org/">PSGI-based</a> servers can wo
 (the Perl Maven site used to run on Starman as a web server), or as application servers. Usually this involves an Apache or Nginx
 server  in front of such PSGI-based server. (The Perl Maven site currently runs on Nginx in-front of a Starman.)
 In all of these cases the application written in Perl is embedded in the PSGI-based server providing speed and flexibility.
+Other languages, such as Python and Ruby have their respective "application servers".
 
-<h2>What you get back</h2>
+<h2>What you get back from the web server</h2>
 
 When you access a URL what you usually get back is a file with text in it using HTML (the Hyper Text Markup Language) that
 describes which part is the title, what are list items etc. In addition the HTML page usually refers to a number of
@@ -99,11 +100,12 @@ The technology it employs to talk to the server in the background is called Ajax
 It stands for <a href="http://en.wikipedia.org/wiki/Ajax_(programming)">Asynchronous JavaScript and XML</a>,
 even though in most modern applications the data is transferred using JSON instead of XML.
 
-The Ajax-based applications are basically client-server applications and as such, have two major moving parts.
+The Ajax-based applications are basically <a href="http://en.wikipedia.org/wiki/Client_server">client-server</a>
+applications and as such, have two major moving parts.
 The code that runs in the web browser which is referred to as the "client side" is written in JavaScript.
 The code that runs on the server which is referred to as the "server side" can be written in any language. Including Perl.
 The server-side part is quite similar in the two kinds of sites, the difference is only that in the first case it
-returns an HTML page while in the second case it returns serialized data. Usually as XML or JSON.
+returns an HTML page, while in the second case it returns serialized data. Usually as XML or JSON.
 
 <h2>Mixed sites</h2>
 
