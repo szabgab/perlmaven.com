@@ -202,6 +202,26 @@ Then we can brows to http://107.170.93.222/cgi-bin/echo.pl
 
 Congratulations, your first CGI script is running.
 
+<h2>Dynamic results</h2>
+
+This simple CGI script will show exactly the same content no matter who access it and when.
+Let's make a little change to the script so that we can see it is really generated
+dynamically.
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+print qq(Content-type: text/plain\n\n);
+
+print scalar localtime;
+</code>
+
+After changing the script if you access the page now it will display the current time on the server.
+If you reload the page, it will show the new current time.
+
+
 <h2>Trouble shooting</h2>
 
 If when you access the  http://107.170.93.222/cgi-bin/echo.pl URL you see
