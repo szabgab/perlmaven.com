@@ -9,16 +9,46 @@
 =social 1
 
 =abstract start
+
+Given a large CSV file, how can we split it into smaller pieces?
+
+There are two ways to split the file. Horizonally or vertically.
+Horizontally would mean that every N lines go into a separate files, but each line remains intact.
+
+Vertically would mean that every few columns go into a separate file.
+
 =abstract end
+
+<h2>Splitting horizontally</h2>
+
+If we can assume that the CSV file does not contain any embedded newlines, and if are running on a Linux
+machine, then we don't even need Perl. We can just use the <hl>split</hl> command of Linux.
+
+If we are on Windows, we could write a simple script to read the original file and every N lines save it in a new file.
+
+Unfortunately this soultion won't work correctly for a file like the following, where at least one of the fields has an embedded newline.
+
+<code>
+Tudor;Vidor;10;Hapci
+Szundi;Morgo;7;Szende
+Kuka;"Hofeherke; 
+alma";100;Kiralyno
+Boszorkany;Herceg;9;Meselo
+</code>
+
+(Also in this example the fields are separated using semi-colon <hl>;</hl>, instead of comma, but that's just for the extra fun.)
+
+This solution will work:
 
 <code lang="perl">
 use strict;
 use warnings;
 
 use Text::CSV;
-my $file = 'csv_with_newline.csv';
 
-my $size = 3;
+my ($file, $size) = @ARGV;
+die "Usage: $0 FILE LINES\n" if not $size;
+
 
 my $file_counter = 0;
 my $line_counter = 0;
