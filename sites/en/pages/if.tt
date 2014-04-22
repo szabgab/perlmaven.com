@@ -60,7 +60,7 @@ reader to see which parts of the code is inside the block and what is outside.
 There are languages, such as Python that force you to add such indentation. Perl is much more layed-back,
 and much more flexible in this area, but it still strongly recommended that you always indent your code.
 
-People love to debate whether one should use a <hl>tab</b> character or <hl>spaces</hl> for indentation,
+People love to debate whether one should use a <hl>tab</hl> character or <hl>spaces</hl> for indentation,
 and the "spaces" cam is also subdivided by the number of spaces. I think it is not the critical part.
 The important thing is that the code will be indented in a consistent way.
 
