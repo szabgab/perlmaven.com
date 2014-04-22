@@ -1,8 +1,7 @@
 =title Split CSV file into multiple small CSV files
 =timestamp 2014-01-15T07:30:01
-=indexes files
+=indexes Text::CSV, Text::CSV_XS, CSV
 =status draft
-=books beginner_book
 =author szabgab
 =archive 1
 =comments 1
