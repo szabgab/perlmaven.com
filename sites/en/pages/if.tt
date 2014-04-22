@@ -50,18 +50,18 @@ it will be skipped.
 
 <h2>Layout: Indentation</h2>
 
-As in Perl white-spaces are not significant we could have layed-out the code in a number of different ways, 
+As in Perl white-spaces are not significant we could have laid-out the code in a number of different ways, 
 without any impact on what the code does, but let me point out the way you see it here and why
 it is the recommended layout. The important part is that the code inside the curly braces does not start
 at the beginning of the line. It starts a few characters to the right. This is called <b>indentation</b>.
 In the tutorial we will see a number of statements that have an internal block (a pair of curly braces),
 and in each one of those we'll indent the code to the right. This indentation makes it easier for the
 reader to see which parts of the code is inside the block and what is outside.
-There are languages, such as Python that force you to add such indentation. Perl is much more layed-back,
+There are languages, such as Python that force you to add such indentation. Perl is much more laid-back,
 and much more flexible in this area, but it still strongly recommended that you always indent your code.
 
 People love to debate whether one should use a <hl>tab</hl> character or <hl>spaces</hl> for indentation,
-and the "spaces" cam is also subdivided by the number of spaces. I think it is not the critical part.
+and the "spaces" camp is also subdivided by the number of spaces. I think it is not the critical part.
 The important thing is that the code will be indented in a consistent way.
 
 In these examples I use 4 spaces, but when I write application I usually use <hl>TAB</hl> characters.
