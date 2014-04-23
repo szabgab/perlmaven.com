@@ -11,13 +11,14 @@
 =abstract start
 
 So far in the <a href="/perl-tutorial">tutorial</a> each statement got executed one after the other. There
-are cases when want to execute certain statements only if some condition exists.
+are cases when want to execute certain statements only if some condition is met. If the expression
+evaluates to "true".
 
 The <hl>if</hl> statement is used for this task.
 
 =abstract end
 
-The basic structure of the <hl>if</hl>-statement is 
+The basic structure of the <hl>if-statement</hl> is 
 
 <code lang="perl">
 if (CONDITION) {
@@ -46,7 +47,7 @@ Even if there is only one statement, that statement needs to be wrapped in a pai
 
 The condition itself can be any Perl-expression. If it is <a href="/boolean-values-in-perl">true</a>,
 the statement(s) inside the curly braces will be executed. If it is <a href="/boolean-values-in-perl">false</a>,
-it will be skipped.
+it will be skipped. (For what constitutes true and false, check the article about <a href="/boolean-values-in-perl">boolen values</a>.)
 
 <h2>Layout: Indentation</h2>
 
@@ -69,8 +70,9 @@ When I have to edit the code written by other people, I try to follow their styl
 
 <h2>if - else</h2>
 
-There are cases when you want to do something if a condition exists and something else if the condition does not
-exist. For this we can use the <hl>else</hl> extension of the <hl>if-statement</hl>:
+There are cases when you want to do something if a condition is met (when it is true),
+and something else if it is false.
+For this we can use the <hl>else</hl> extension of the <hl>if-statement</hl>:
 
 <code lang="perl">
 use strict;
@@ -174,6 +176,9 @@ This also sends the message that the 4 cases have the same importance.
 
 When you code, remember, the computer will understand you either way, but make it easy for the next reader to understand
 your intentions. Who knows, that person might be you...
+
+Please also note that the spelling of the "else if" construct has the most diversity among programming languages.
+In Perl it is written in one word with a single e: <hl>elsif</hl>.
 
 <h2>Empty block</h2>
 
