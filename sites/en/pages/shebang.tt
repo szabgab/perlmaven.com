@@ -132,7 +132,7 @@ Once we do this we can now run:
 <code>
 $ hello.pl
 Hello World
-<code>
+</code>
 
 <h2>How does the she-bang line work?<h2>
 
