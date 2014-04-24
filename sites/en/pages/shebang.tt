@@ -134,7 +134,7 @@ $ hello.pl
 Hello World
 </code>
 
-<h2>How does the she-bang line work?<h2>
+<h2>How does the she-bang line work?</h2>
 
 We added <hl>#!/usr/bin/perl</hl> as the first line of our script:
 
