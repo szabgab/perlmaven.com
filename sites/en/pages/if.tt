@@ -177,8 +177,10 @@ This also sends the message that the 4 cases have the same importance.
 When you code, remember, the computer will understand you either way, but make it easy for the next reader to understand
 your intentions. Who knows, that person might be you...
 
+<h2>else if in Perl</h2>
+
 Please also note that the spelling of the "else if" construct has the most diversity among programming languages.
-In Perl it is written in one word with a single e: <hl>elsif</hl>.
+In Perl it is written in one word with a single 'e': <hl>elsif</hl>.
 
 <h2>Empty block</h2>
 
