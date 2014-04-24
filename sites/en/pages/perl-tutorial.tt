@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on April 22, 2014.
+parts are being published every few days. The latest one was published on April 24, 2014.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -74,7 +74,8 @@ to practice what you have learned.
 <li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
 <li><a href="/if">Conditional statements: if</a></li>
 <li><a href="/boolean-values-in-perl">Boolean (true and false) values in Perl</a></li>
-<li>Numerical and string operators</li>
+<li><a href="/numerical-operators">Numerical operators</a></li>
+<li>String operators</li>
 <li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
 <li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
 <li><a href="/here-documents">Here documents</a></li>
