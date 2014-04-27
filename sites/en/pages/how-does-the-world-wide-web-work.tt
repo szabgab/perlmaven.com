@@ -30,7 +30,7 @@ automatically add it and change the address to http://www.google.com or http://p
 Then it does some background work translating the address to the IP number of the server, that we don't discuss here,
 and send a request to fetch the appropriate page from the right computer somewhere, possibly on the other side of the world.
 
-On the computer, on the other side runs a software called a web server. (Major flavors are 
+On the computer, on the other side runs a software called a web server. (Major flavors are
 the open source <a href="http://httpd.apache.org/">Apache</a> and <a href="http://nginx.org/">nginx</a> servers,
 and proprietary <a href="http://www.iis.net/">Microsoft IIS</a>.)
 
@@ -61,7 +61,7 @@ language and the web server. This makes development and deployment a bit more ri
 <b>Application server</b>: The third way is using an "application server". In this case there is an additional server, often called an "application server"
 running alongside the web server. Every time the web server receives a request for a dynamic page, it hands it over to the
 application server. The application server is language specific and it has all the application loaded in the memory and compiled once.
-Applications written in Java usually utilize an application server. 
+Applications written in Java usually utilize an application server.
 
 <a href="http://www.fastcgi.com/">FastCGI</a> is basically a language-independent application server with a slightly unfortunate name.
 
@@ -77,7 +77,7 @@ When you access a URL what you usually get back is a file with text in it using 
 describes which part is the title, what are list items etc. In addition the HTML page usually refers to a number of
 additional files. For example images. After the browser receives the HTML file it parses it, and will request
 the addition files from the web server. At the same time it tries to render the file and display it in your browser.
-Sometimes you will see that certain images appear on the page at once while others appear later. That's because 
+Sometimes you will see that certain images appear on the page at once while others appear later. That's because
 the fetching of the images and the rendering of the HTML file are done in parallel. Some of the images will
 arrive before the rendering is done, some will arrive only later. Yet others might never arrive, in which case the
 browser might display a picture of a "broken image".
