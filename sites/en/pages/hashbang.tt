@@ -1,4 +1,4 @@
-=title The Shebang (or sh-bang) line, or making Perl scripts executable on Linux
+=title The Hash-bang line, or how to make a Perl scripts executable on Linux
 =timestamp 2014-04-29T09:03:01
 =indexes #!, -w, -t, -T, /usr/bin/perl
 =status show
@@ -18,8 +18,8 @@ the <hl>#!/usr/bin/perl</hl> mean at the beginning of many Perl scripts.
 
 =abstract end
 
-Before going in the details, let me just point out that this line is called the <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">Shebang</a>,
-though actually different people have slightly differen naming for it.
+Before going in the details, let me just point out that this line is also called she-bang or 
+<a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">Shebang</a>, or sh-bang and a couple of other names.
 
 The first program people usually learn is the "Hello world" program. This is the script:
 
@@ -40,7 +40,7 @@ Would it be possible to run the script without running perl first? Would it be p
 
 On Unix-like systems it is quite easy. On Windows it is a different story that will be addressed separately.
 
-<h2>sh-bang on Unix-like systems</h2>
+<h2>hash-bang on Unix-like systems</h2>
 
 Let's try to run the script:
 
@@ -95,7 +95,7 @@ Much better :)
 Now we can already execute the script but it does not do what we want. It actually complains that it cannot
 find the commands 'use' and 'print'. What happened here is that the shell we use (probably bash) tried
 to interpret the commands in the file, but it does not find commands such as <hl>use</hl> and <hl>print</hl>
-in Linux/Unix. Somehow we need to tell the shell that this is a perl scripts. That's what the she-bang is used for.
+in Linux/Unix. Somehow we need to tell the shell that this is a perl scripts. That's what the hash-bang is used for.
 
 If we edit the file and add
 
@@ -120,7 +120,7 @@ $ hello.pl
 </code>
 
 In order to solve this we need to change the <hl>PATH</hl> environment variable. As our focus
-is mostly the she-bang line, I don't want to go into further extensive explanation so let me just give you the command:
+is mostly the hash-bang line, I don't want to go into further extensive explanation so let me just give you the command:
 
 <code>
 $ PATH=$PATH:$(pwd)
@@ -134,37 +134,37 @@ $ hello.pl
 Hello World
 </code>
 
-<h2>How does the she-bang line work?</h2>
+<h2>How does the hash-bang line work?</h2>
 
 We added <hl>#!/usr/bin/perl</hl> as the first line of our script:
 
 When we run the script, we run it in our current shell environment. For most people on Linux/Unix that will be Bash.
-Bash will read the first line of the script. If it starts with a hash and a bang (hash-bang or she-bang) <hl>#!</hl>
-then Bash will run execute the application that has its path on the she-bang line (in our case <hl>/usr/bin/perl</hl>
+Bash will read the first line of the script. If it starts with a hash and a bang (hash-bang) <hl>#!</hl>
+then Bash will run execute the application that has its path on the hash-bang line (in our case <hl>/usr/bin/perl</hl>
 which is the standard location of the perl compiler-interpreter on most modern Unix-like system.
 
-The she-bang line holds the path to the Perl compiler-interpreter.
+The hash-bang line holds the path to the Perl compiler-interpreter.
 
 If the first line did not start with <hl>#!</hl> as was the case with our original script, Bash would assume this
 script is written in Bash and would try to understand itself. That's what generated those errors.
 
-<h2>Alternative she-bang lines using env</h2>
+<h2>Alternative hash-bang lines using env</h2>
 
-While we used <hl>#!/usr/bin/perl</hl> as our she-bang line there can be other as well. For example if we have installed
+While we used <hl>#!/usr/bin/perl</hl> as our hash-bang line there can be other as well. For example if we have installed
 another version of perl in a different location and we would like our scripts to use that, then we can put the path
 to that version of perl. For example <hl>#!/opt/perl-5.18.2/bin/perl</hl>.
 
-The advantage of setting a she-bang (and turning on the executable bit) is that user does not
+The advantage of setting a hash-bang (and turning on the executable bit) is that user does not
 have to know the script is written in Perl and if you have multiple instances of Perl on your system
-the she-bang line can be used to pick which perl to be used. This will be the same for all the
+the hash-bang line can be used to pick which perl to be used. This will be the same for all the
 people on the specific machine.
-The drawback is that the perl listed in the she-bang line is only used if the script is executed as
+The drawback is that the perl listed in the hash-bang line is only used if the script is executed as
 <hl>./hello.pl</hl> or as <hl>hello.pl</hl>.
 If it is executed as <hl>perl hello.pl</hl> it will use the version of perl that is found first in the
-directories listed in PATH.  Which might be a different version of perl from the one in the she-bang line.
+directories listed in PATH.  Which might be a different version of perl from the one in the hash-bang line.
 
 Because of this, on modern Linux/Unix systems, people might prefer to use <hl>#!/usr/bin/env perl</hl>
-as the she-bang line. When Bash sees this line it will first run the <hl>env</hl> command passing the name
+as the hash-bang line. When Bash sees this line it will first run the <hl>env</hl> command passing the name
 <hl>perl</hl> to it. <hl>env</hl> will find the first perl in the directories of PATH, and run that.
 So if we have <hl>#!/usr/bin/env perl</hl> in our script it will always use the first perl in our PATH.
 Both when it is executed as <hl>./hello.pl</hl> and when it is executed as <hl>perl hello.pl</hl>.
@@ -172,21 +172,22 @@ This too has a disadvantage, because this relies on the users setting their PATH
 
 Here is a table that tries to explain the 4 cases:
 
-  the                                      Which perl is used to run the script
-  she-bang                   ./hello.pl                    perl hello.pl
+  the hash-bang              Which perl is used to run the script when call it either of these ways:
+                             ./hello.pl                    perl hello.pl
+
   /usr/bin/perl              /usr/bin/perl                 first perl in the PATH
   /usr/bin/env perl          first perl in the PATH        first perl in the PATH
 
 
-<h2>Flags on the she-bang line</h2>
+<h2>Flags on the hash-bang line</h2>
 
-On the she-bang line, after the path to perl we can add command-line flags to perl.
+On the hash-bang line, after the path to perl we can add command-line flags to perl.
 You will probably see lots of scripts starting with <hl>#!/usr/bin/perl -w</hl> or
 maybe <hl>#!/usr/bin/env perl -w</hl>.
-The <hl>-w</hl> in this she-bang turns on warnings. This is quite similar to what
+The <hl>-w</hl> in this hash-bang turns on warnings. This is quite similar to what
 <a href="/installing-perl-and-getting-started">use warnings</a> does, but this is the old style.
 You won't see this in most of the modern Perl scripts.
 
-Another common flags that you might see on the she-bang lines are <hl>-t</hl> and <hl>-T</hl>. They
+Another common flags that you might see on the hash-bang lines are <hl>-t</hl> and <hl>-T</hl>. They
 turn on the so-called <b>taint-mode</b> that will help you write more secure code.
 

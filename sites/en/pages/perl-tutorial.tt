@@ -49,7 +49,7 @@ to practice what you have learned.
 <b>Introduction</b>
 <ol>
 <li><a href="/installing-perl-and-getting-started">Install Perl, print Hello World, Safety net (use strict, use warnings)</a></li>
-<li><a href="/shebang">#!/usr/bin/perl - the sh-bang line</a></li>
+<li><a href="/hashbang">#!/usr/bin/perl - the hash-bang line</a></li>
 <li><a href="/perl-editor">Editors, IDEs, development environment for Perl</a></li>
 <li><a href="/help">Getting Help</a></li>
 <li><a href="/perl-on-the-command-line">Perl on the command line</a></li>
