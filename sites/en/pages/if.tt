@@ -11,7 +11,7 @@
 =abstract start
 
 So far in the <a href="/perl-tutorial">tutorial</a> each statement got executed one after the other. There
-are cases when want to execute certain statements only if some condition is met. If the expression
+are cases when we want to execute certain statements only if some condition is met: i.e. if the condition
 evaluates to "true".
 
 The <hl>if</hl> statement is used for this task.
