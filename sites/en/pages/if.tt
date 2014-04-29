@@ -47,7 +47,7 @@ Even if there is only one statement, that statement needs to be wrapped in a pai
 
 The condition itself can be any Perl-expression. If it is <a href="/boolean-values-in-perl">true</a>,
 the statement(s) inside the curly braces will be executed. If it is <a href="/boolean-values-in-perl">false</a>,
-it will be skipped. (For what constitutes true and false, check the article about <a href="/boolean-values-in-perl">boolen values</a>.)
+it will be skipped. (For what constitutes true and false, check the article about <a href="/boolean-values-in-perl">boolean values</a>.)
 
 <h2>Layout: Indentation</h2>
 
@@ -59,7 +59,7 @@ In the tutorial we will see a number of statements that have an internal block (
 and in each one of those we'll indent the code to the right. This indentation makes it easier for the
 reader to see which parts of the code is inside the block and what is outside.
 There are languages, such as Python that force you to add such indentation. Perl is much more laid-back,
-and much more flexible in this area, but it still strongly recommended that you always indent your code.
+and much more flexible in this area, but it is still strongly recommended that you always indent your code.
 
 People love to debate whether one should use a <hl>tab</hl> character or <hl>spaces</hl> for indentation,
 and the "spaces" camp is also subdivided by the number of spaces. I think it is not the critical part.
@@ -70,7 +70,7 @@ When I have to edit the code written by other people, I try to follow their styl
 
 <h2>if - else</h2>
 
-There are cases when you want to do something if a condition is met (when it is true),
+There are cases when we want to do something if a condition is met (when it is true),
 and something else if it is false.
 For this we can use the <hl>else</hl> extension of the <hl>if-statement</hl>:
 
@@ -104,7 +104,7 @@ my $age = <STDIN>;
 if ($age >= 18) {
     print "In most countries you can vote.\n";
     if ($age >= 23) {
-        print "You can also drink alcohol in the USA\n";
+        print "You can drink alcohol in the USA\n";
     }
 } else {
     print "You are too young to vote\n";
@@ -114,8 +114,9 @@ if ($age >= 18) {
 }
 </code>
 
-Both inside the if-block and in the else-block. Please note, the code inside the internal
-blocks are further indented to the right with another 4 spaces.
+Perl allows to add addition if-statements, bot in the if-block and in the else-block.
+
+Note, the code inside the internal blocks is further indented to the right with another 4 spaces.
 
 <h2>elsif</h2>
 
@@ -131,12 +132,12 @@ if ($age < 6) {
     print "You are before school\n";
 } else {
     if ($age < 18) {
-        print "You must got to school\n";
+        print "You must go to school\n";
     } else {
         if ($age < 23) {
             print "In most countries you can vote.\n";
         } else {
-            print "You can also drink alcohol in the USA\n";
+            print "You can drink alcohol in the USA\n";
         }
     }
 }
@@ -145,13 +146,13 @@ if ($age < 6) {
 This works properly, but it has two issues:
 
 One is that the width of the screen is limited. If you indent too much then either your rows will be too wide and won't fit in
-the screens or you'll have to wrap the code. Both make it harder to read the code.
+the screen or you'll have to wrap the code. Both make it harder to read the code.
 
 The second one is that most programmers when reading code tend to focus on what's on the left hand side and either neglect the right hand side
 of the code or just perceive as less important. So by indenting the code you send the message to the maintenance programmer, that the
 nested conditions are less important.
-If this is your intention then go ahead write the code this one, on the other hand, if the only reason to write nested conditions is
-because that's the easy order to evaluate the conditions then you'd be better off using <hl>elsif</hl> and flattening the construct.
+If this is your intention then go ahead write the code this way, on the other hand, if the only reason to write nested conditions is
+because that's the easy order to evaluate the conditions, then you'd be better off using <hl>elsif</hl> and flattening the construct.
 
 <code lang="perl">
 use strict;
@@ -162,11 +163,11 @@ my $age = <STDIN>;
 if ($age < 6) {
     print "You are before school\n";
 } elsif ($age < 18) {
-    print "You must got to school\n";
+    print "You must go to school\n";
 } elsif ($age < 23) {
     print "In most countries you can vote.\n";
 } else {
-    print "You can also drink alcohol in the USA\n";
+    print "You can drink alcohol in the USA\n";
 }
 </code>
 
@@ -179,8 +180,7 @@ your intentions. Who knows, that person might be you...
 
 <h2>else if in Perl</h2>
 
-Please also note that the spelling of the "else if" construct has the most diversity among programming languages.
-In Perl it is written in one word with a single 'e': <hl>elsif</hl>.
+Please also note that the spelling of the "else if" construct has the most diversity among programming languages.  In Perl it is written in one word with a single 'e': <hl>elsif</hl>.
 
 <h2>Empty block</h2>
 
@@ -226,15 +226,10 @@ if ($age < 0) {
 </code>
 
 The 3 dots there, is called the <hl>yada, yada operator</hl>. It is what most people would
-write when they know they will need to write more there and it is also a valid construct in
-Perl. It will throw an <hl>Unimplemented</hl> exception if it is executed. Very handy,
-put probably a bit premature to learn so early in the Perl Tutorial.
+write when they are jotting down some text and want to leave place for more. Some might write
+etc.
 
-
-
-
-
-
-
+Since version 5.10 came out,  it is also a valid construct in Perl. It will throw an <hl>Unimplemented</hl> exception if it is executed.
+It can be very handy, put probably a bit premature to learn so early in the <a href="/perl-tutorial">Perl Tutorial</a>.
 
 

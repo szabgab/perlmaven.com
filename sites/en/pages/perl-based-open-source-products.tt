@@ -807,6 +807,10 @@ programs and Perl libraries to process listings.
 <a href="http://shorewall.net/">Shorewall</a> is a gateway/firewall configuration tool for GNU/Linux. 
 </div>
 
+<div class="perl-product">
+<a href="http://www.asternic.org/">Asternic</a>, a flash operations panel for asterisk. which the server side is Perl and the client is Flash.
+</div>
+
 
 <!--
 <div class="perl-product">
