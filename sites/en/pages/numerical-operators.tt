@@ -28,7 +28,7 @@ say 8 / 2;   # 4
 say 8 / 3;   # 2.66666666666667
 </code>
 
-Please note that Perl will automatically switch to floating point number when necessary so when we divide 8 by 3 we get a floating point value.
+Note that Perl will automatically switch to floating point number when necessary so when we divide 8 by 3 we get a floating point value.
 
 <code lang="perl">
 use strict;
@@ -80,10 +80,12 @@ say $y;  # 5
 In the general case <hl>VARIABLE OP= EXPRESSION</hl> is the same as
 <hl>VARIABLE = VARIABLE OP EXPRESSION</hl>, but usually easier to read and less error-prone.
 (We don't repeat the name of VARIABLE.)
-You can use it with any operator:
+You can use it with any binary operator:
 
 <hl>+=</hl>, <hl>*=</hl>, <hl>-=</hl>, <hl>/=<hl>, even <hl>%=</hl>
 
+
+(binary operators work on to values.)
 
 <h2>Auto increment and auto decrement</h2>
 

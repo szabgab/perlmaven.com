@@ -24,8 +24,8 @@ On your computer, mobile phone or tablet you have a software application called 
 <a href="http://www.opera.com/">Opera</a>, and
 <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Microsoft Internet Explorer</a>).
 
-You type a web address (also called a "URL" or a "URI") in the address-bar: something like www.google.com or perlmaven.com/perl-tutorial,
-or even just an IP address like 127.0.0.1. If you have not supplied the <hl>protocol</hl>, the browser will
+You type a web address (also called a "<a href="https://en.wikipedia.org/wiki/Url">URL</a>") in the address-bar: something like www.google.com or perlmaven.com/perl-tutorial,
+or even just an <a href="https://en.wikipedia.org/wiki/Ip_address">IP address</a> like 127.0.0.1. If you have not supplied the <hl>protocol</hl>, the browser will
 automatically add it, and change the address to http://www.google.com or http://perlmaven.com/perl-tutorial .
 Then it does some background work translating the address to the IP number of the server, that we don't discuss here,
 and send a request to fetch the appropriate page from the right computer somewhere, possibly on the other side of the world.
@@ -37,8 +37,8 @@ and the proprietary <a href="http://www.iis.net/">Microsoft IIS</a>.)
 These web servers can be configured to map each request to a specific file on the file-system to be served as it-is.
 This would create a static web site. A site that cannot take any input from you, the user.
 
-On the other hand the web server can be configured to run an a program when the user requests a page.
-That program can be written in many different languages and there are a number of different ways to call them.
+On the other hand the web server can be configured to run a program when the user requests a page.
+That program can be written in many different programming languages and there are a number of different ways to call them.
 
 <h2>3 major ways to serve the dynamic page</h2>
 
