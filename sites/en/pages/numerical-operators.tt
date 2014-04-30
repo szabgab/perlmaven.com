@@ -115,4 +115,7 @@ They can be used as part of a larger expression when being pre-fix or post-fix r
 but in most cases I think the best is to avoid such expressions. They can be fun and a maintenance nightmare.
 We'll have an article explaining short-circuit and the pitfalls of auto increment with short-circuit.
 
+In addition the auto-increment operator can also work on a string as explained in the
+part about <a href="/string-operators">string operators</a>.
+
 
