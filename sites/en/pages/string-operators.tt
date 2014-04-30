@@ -1,5 +1,5 @@
 =title String operators: concatenation (.), repetition (x)
-=timestamp 2014-04-01T01:30:01
+=timestamp 2014-05-01T01:30:01
 =indexes x, ., ++
 =status show
 =books beginner_book
@@ -141,7 +141,7 @@ hello world
 
 <h2>++ on a string</h2>
 
-Although one migth expect the auto-increment operator (<hl>++<hl>) to
+Although one migth expect the auto-increment operator (<hl>++</hl>) to
 <a href="/numerical-operators">work only on numbers</a>, but Perl has a special use for the <hl>++</hl> operator
 on strings.
 
