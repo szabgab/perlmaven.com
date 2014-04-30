@@ -31,7 +31,7 @@ print "Hello World\n";
 </code>
 
 We can save it in a file called <hl>hello.pl</hl>, open the terminal (or Cmd in Windows). <hl>cd</hl> to the directory where we saved the file
-and tun the script by typing <hl>perl hello.pl</hl>.
+and run the script by typing <hl>perl hello.pl</hl>.
 
 That is, we run Perl and tell it to run our script.
 
@@ -60,13 +60,14 @@ $ ./hello.pl
 
 Now it already finds the script, but we don't have permission to run it.
 
-On Linux, or Mac OSX, or on any Unix system we can make every file "Executable" by flipping a bit in the so-called inode table of the file.
+On Linux, or Mac OSX, or on any Unix system we can make every file "Executable" by flipping a bit in files's standard attributes
+in the so-called <a href="https://en.wikipedia.org/wiki/Inode">inode table</a>.
 It can be easily done using the <hl>chmod</hl> command. We will use <hl>chmod u+x hello.pl</hl>:
 
 First we use the <hl>ls -l</hl> command of the Unix shell to show the situation before,
 then we use <hl>chmod</hl> to change the mode,
 and then we show the situation after.
-The hl>u+x</hl> part of the operation tells chmod to add executable (x) rights to the user (u) who owns this file,
+The <hl>u+x</hl> part of the operation tells chmod to add executable (x) rights to the user (u) who owns this file,
 but not for anybody else. (<hl>chmod +x hello.pl</hl> would give executable rights to everyone on the system.)
 
 <code>
@@ -95,7 +96,7 @@ Much better :)
 Now we can already execute the script but it does not do what we want. It actually complains that it cannot
 find the commands 'use' and 'print'. What happened here is that the shell we use (probably bash) tried
 to interpret the commands in the file, but it does not find commands such as <hl>use</hl> and <hl>print</hl>
-in Linux/Unix. Somehow we need to tell the shell that this is a perl scripts. That's what the hash-bang is used for.
+in Linux/Unix. Somehow we need to tell the shell that this is a perl script. That's what the hash-bang is used for.
 
 If we edit the file and add
 
@@ -172,11 +173,13 @@ This too has a disadvantage, because this relies on the users setting their PATH
 
 Here is a table that tries to explain the 4 cases:
 
+<code>
   the hash-bang              Which perl is used to run the script when call it either of these ways:
                              ./hello.pl                    perl hello.pl
 
   /usr/bin/perl              /usr/bin/perl                 first perl in the PATH
   /usr/bin/env perl          first perl in the PATH        first perl in the PATH
+</code>
 
 
 <h2>Flags on the hash-bang line</h2>
@@ -188,6 +191,6 @@ The <hl>-w</hl> in this hash-bang turns on warnings. This is quite similar to wh
 <a href="/installing-perl-and-getting-started">use warnings</a> does, but this is the old style.
 You won't see this in most of the modern Perl scripts.
 
-Another common flags that you might see on the hash-bang lines are <hl>-t</hl> and <hl>-T</hl>. They
+Another common flag that you might see on the hash-bang lines are <hl>-t</hl> and <hl>-T</hl>. They
 turn on the so-called <b>taint-mode</b> that will help you write more secure code.
 
