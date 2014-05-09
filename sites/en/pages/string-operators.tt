@@ -36,7 +36,7 @@ Hello World
 It attached the string from the variables and the literal empty-space thing into one new string.
 
 Actually in the above case we did not have to use the <hl>.</hl> concatenation to achieve this result.
-As Perl provide scalar variable interpolation in string, we could just write:
+As Perl provides scalar variable interpolation in string, we could just write:
 
 <code lang="perl">
 my $z = "$x $y";
@@ -46,7 +46,7 @@ and that would yield the same result.
 
 <h2>When interpolation is not the answer</h2>
 
-There are of courses cases when the concatenation cannot be replaced by interpolation. Take for example this example:
+There are of course cases when the concatenation cannot be replaced by interpolation. Take for example this code:
 
 <code lang="perl">
 use strict;
@@ -79,7 +79,7 @@ We get:
 Take (2 + 3)
 </code>
 
-You might have notice that I also changed the quotes from single-quote to double-quote when I wanted to
+You might have noticed that I also changed the quotes from single-quote to double-quote when I wanted to
 use interpolation. We'll discuss this in a separate article.
 
 <h2>x the repetition operator</h2>
@@ -109,7 +109,7 @@ Jar Jar Binks
 
 
 I think this operator is rarely used, but it can be quite useful in those rare cases.
-For example when you want to add a line the same lengths as the title of your report:
+For example when you want to add a line the same length as the title of your report:
 
 <code lang="perl">
 use strict;
@@ -141,11 +141,11 @@ hello world
 
 <h2>++ on a string</h2>
 
-Although one migth expect the auto-increment operator (<hl>++</hl>) to
-<a href="/numerical-operators">work only on numbers</a>, but Perl has a special use for the <hl>++</hl> operator
+Although one might expect the auto-increment operator (<hl>++</hl>) to
+<a href="/numerical-operators">work only on numbers</a>, Perl has a special use for the <hl>++</hl> operator
 on strings.
 
-It takes the last character and increments it by one accoring to the ASCII table restricted to letters.
+It takes the last character and increments it by one according to the ASCII table restricted to letters.
 Either lower-case letter or upper-case letters. If we increment a string that ends with the letter
 'y' it will change it to 'z'. If the string ends with 'z' then an increment will will change it to be
 the letter 'a', but the letter to the left of it will be incremented by one as well.
