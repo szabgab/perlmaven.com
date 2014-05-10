@@ -166,7 +166,8 @@ I had to restart <hl>plackup</hl> and reload the page, but then I could see that
 gets its content from the controller.
 
 The next step is to read the content of the 'News' file and pass that to the template.
-The <hl>$c</hl> variable in the subroutine represents the Catalyst object. Calling <hl>config</hl>
+The <hl>$c</hl> variable in the subroutine represents the <a href="http://www.catalystframework.org/">Catalyst</a> object.
+Calling <hl>config</hl>
 returns a hash with configuration parameters. The <hl>home</hl> field provides full path to the
 root directory of the application. The 'News' file is right there.
 
