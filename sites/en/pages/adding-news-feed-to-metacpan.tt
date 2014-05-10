@@ -10,7 +10,7 @@
 =abstract start
 
 While <a href="https://metacpan.org/">Meta CPAN</a> is constantly being developed, I think very few people notice the changes.
-I hope that by providing a news feed, the developers of MetaCPAN will be able to communicate the changes in a simle way.
+I hope that by providing a news feed, the developers of MetaCPAN will be able to communicate the changes in a simple way.
 
 Writing the patch that will enable such news feed was very interesting, and I hope that
 reading it will help you make another step towards <a href="/hacking-metacpan-the-first-steps">hacking MetaCPAN</a>.
@@ -20,7 +20,7 @@ reading it will help you make another step towards <a href="/hacking-metacpan-th
 <h2>First steps</h2>
 
 Git clone the <a href="https://github.com/CPAN-API/metacpan-web">repository</a>, install all the prerequisites,
-launch the server using <hl>plackup</hl>, browse to it at http://localhost:5000
+launch the server using <a href="http://plackperl.org/">plackup</a>, browse to it at http://localhost:5000
 
 <img src="/img/metacpan-logo.png" alt="MetaCPAN Logo" />
 
@@ -166,8 +166,8 @@ I had to restart <hl>plackup</hl> and reload the page, but then I could see that
 gets its content from the controller.
 
 The next step is to read the content of the 'News' file and pass that to the template.
-The <hl>$c</hl> variable in the subroutin represents the Catalyst onject. Calling <hl>config</hl>
-returns a hash with configuration parameters. The <hl>home</hl> field provide full path to the
+The <hl>$c</hl> variable in the subroutine represents the Catalyst object. Calling <hl>config</hl>
+returns a hash with configuration parameters. The <hl>home</hl> field provides full path to the
 root directory of the application. The 'News' file is right there.
 
 We use the <hl>path</hl> function provided by <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a>,
@@ -175,7 +175,7 @@ and then we <a href="http://perlmaven.com/slurp">slurp</a> in the content.
 
 At first I passed the content as it is to the <hl>stash</hl> method, but later it seemed more
 convenient to add a <hl>Title:</hl> pre-tag to the title of eash news-item that will make
-it easier to separate the news itesm for the RSS feed. On the news page we don't need
+it easier to separate the news items for the RSS feed. On the news page we don't need
 this extra word, so we can remove it by a regex.
 
 <code lang="perl">
@@ -251,10 +251,10 @@ The author field expected by the feed generator method gets a fixed string and t
 converted from Markdown to HTML.
 
 As these news items will show up on the same page the 'link' should always link to that page, but
-in order to have distinct URLs, I aded the title of the news item as an anchor. I am not sure if 
-this is needed, or of the feed-readers can handle several news items that go to the exact same URL.
+in order to have distinct URLs, I added the title of the news item as an anchor. I am not sure if 
+this is needed, or if the feed-readers can handle several news items that go to the exact same URL.
 
-I also had t add this line:
+I also had to add this line:
 
 <code lang="perl">
         $entry->{link} //
@@ -281,7 +281,7 @@ sub build_entry {
 </code>
 
 After finishing this, I had to add and commit the changes. I had to push it out to GitHub and send a pull-request.
-The core developers of MetaCPAN can then discuss the change, rejet it, ask for improvements, but once it is accepted
+The core developers of MetaCPAN can then discuss the change, reject it, ask for improvements, but once it is accepted
 and deployed, you'll be able to get news feed from the MetaCPAN developers.
 
 

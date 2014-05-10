@@ -82,8 +82,12 @@ we need to close the current output file  (if it is open and we crossed the plan
 
 The variable <hl>$file_counter</hl> is used to number the output files.
 
-In a more generic solution, we'd probably get both the input tile, the size and the format of the output files as command line parameters,
+In a more generic solution, we'd probably get the name of the input file, the size, and the format of the output files as command line parameters,
 but in this example we can use hard-coded values.
+
+If you are not yet familiar with Text::CSV, there is another article that shows <a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">how to read a CSV file</a> 
+with some more explanation. In a nutshell <hl>$row</hl> always containg a reference to an ARRAY and each element in that array is a field from the current line in the
+CSV file.
 
 <h2>Splitting vertically</h2>
 
@@ -109,7 +113,6 @@ while (my $row = $csv->getline($in)) {
             open my $out, ">:encoding(utf8)", $outfile or die "$outfile: $!";
             push @files, $out;
         }
-
     }
 
     my @fields = @$row;
@@ -155,6 +158,9 @@ For more convenience we copy the content of the current <hl>$row</hl> to the <hl
 the range of the fields that go into that file (<hl>$from</hl>, <hl>$to</hl>), and use the range operator to fetch the values
 of the specific columns: <hl>my @data = @fields[$from .. $to];</hl>.
 
+In the print statement we had to wrap <hl>$files[$i]</hl> in curly braces, in order to ensure perl will see the whole
+expression as the filehandle.
+
 <h2>Alternative code</h2>
 
 In the above code, we used a couple of temporary variables, such as <hl>@fields</hl> and <hl>@data</hl>.
@@ -178,6 +184,9 @@ eliminating the need for the <hl>@fields</hl> array. I'd probably not write this
 as this involved expressions such as <hl>$#$row</hl> and <hl>@$row[$from .. $to];</hl>,
 but I am showing it here so when you do encounter such expressions, you have a better
 chance to deal with them.
+
+If you know that <hl>$#$row<hl> is the same as <hl>$#{$row}</hl> then it might be easier to
+see why this does the same as the original code.
 
 In order to eliminate the need for the <hl>@data</hl> array we can replace this code:
 
