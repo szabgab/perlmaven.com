@@ -811,6 +811,10 @@ programs and Perl libraries to process listings.
 <a href="http://www.asternic.org/">Asternic</a>, a flash operations panel for asterisk. which the server side is Perl and the client is Flash.
 </div>
 
+<div class="perl-product">
+<a href="http://www.clipland.com/wrangler">Wrangler</a>, a desktop file manager with sophisticated metadata handling capabilities.
+</div>
+
 
 <!--
 <div class="perl-product">
