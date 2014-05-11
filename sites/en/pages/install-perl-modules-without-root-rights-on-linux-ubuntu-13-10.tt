@@ -475,8 +475,9 @@ So <hl>cpanm --notest Net::Server</hl> and then <hl>cpanm Starman</hl> already w
 
 <h2>PAR::Packer</h2>
 
-<hl>cpanm PAR::Packer</hl> failed for 1.017. I reported the problem. I don't see any cure in the source.
-I tried some of the earlier releases and none of them could be installed.
+Need to install the "Perl development" package, called libperl-dev on Debian/Ubuntu.
+
+<hl>cpanm PAR::Packer</hl>
 
 <h2>DBD::ODBC</h2>
 
