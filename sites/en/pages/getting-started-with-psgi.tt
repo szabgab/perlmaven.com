@@ -25,7 +25,7 @@ If you would like to build a <a href="/videos/modern-web-with-perl">modern web a
 you'd probably start with one of the web frameworks that provide a higher level of abstraction than PSGI.
 Frameworks such as <a href="/dancer">Dancer</a>, <a href="/mojolicious">Mojolicious</a>, or <a href="/catalyst">Catalyst</a>.
 In fact they all use PSGI in order to communicate with the web server.
-Similarily, if you'd like to build a "CGI application", you'd be probably better off writing a PSGI compilant web page
+Similarly, if you'd like to build a "CGI application", you'd be probably better off writing a PSGI compliant web page
 and then configure CGI in-front of the PSGI-based application.
 
 <h2>The Prerequisites</h2>
