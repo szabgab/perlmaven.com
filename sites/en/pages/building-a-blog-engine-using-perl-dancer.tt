@@ -16,7 +16,8 @@ simple blog engine using <a href="/dancer">Perl Dancer</a>.
 If you are on MS Windows start by downloading <a href="http://padre.perlide.org/">Padre on Strawberry Perl</a>
 that already has everything we need. On other system you'll have to install
 <a href="https://metacpan.org/pod/Dancer">Dancer</a>, <a href="https://metacpan.org/pod/File::Slurp">File::Slurp</a>
-and the <a href="https://metacpan.org/pod/Template">Template::Toolkit</a>.
+and the <a href="https://metacpan.org/pod/Template">Template::Toolkit</a>. (Please note, the last one is actually identified
+as Template, by the CPAN clients.)
 
 =abstract end
 

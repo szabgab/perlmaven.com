@@ -193,6 +193,57 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-regexes-2">Solution 2</a></li>
   <li><a href="/pro/beginner-perl/solution-regexes-3">Solution 3</a></li>
 </ul>
+
+<h3>Regular Expressions - part 2</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/alternatives">Alternatives</a></li>
+  <li><a href="/pro/beginner-perl/capturing">Capturing</a></li>
+  <li><a href="/pro/beginner-perl/anchors">Anchors</a></li>
+  <li><a href="/pro/beginner-perl/character-classes">Character classes</a></li>
+  <li><a href="/pro/beginner-perl/special-character-classes">Special character classes</a></li>
+  <li><a href="/pro/beginner-perl/exercise-number">Exercise: number</a></li>
+  <li><a href="/pro/beginner-perl/exercise-hexa-octal-binary">Exercise: hexa, octal, binary</a></li>
+  <li><a href="/pro/beginner-perl/exercise-roman-numbers">Exercise: Roman numbers</a></li>
+  <li><a href="/pro/beginner-perl/solutions-number">Solution: number</a></li>
+  <li><a href="/pro/beginner-perl/solution-hexa-octal-binary">Solution: hexa, octal, binary</a></li>
+</ul>
+
+
+<h3>Regular Expressions - part 3</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/m-for-matching">m for matching</a></li>
+  <li><a href="/pro/beginner-perl/case-insensitive">Case insensitive</a></li>
+  <li><a href="/pro/beginner-perl/multiple-lines">multiple lines</a></li>
+  <li><a href="/pro/beginner-perl/single-line">Single line</a></li>
+  <li><a href="/pro/beginner-perl/x-modifier">x-modifier</a></li>
+  <li><a href="/pro/beginner-perl/substitution">Substitution</a></li>
+  <li><a href="/pro/beginner-perl/global-substitution">global-substitution</a></li>
+  <li><a href="/pro/beginner-perl/greedy-quantifyers">greedy-quantifyers</a></li>
+  <li><a href="/pro/beginner-perl/minimal-matching">minimal-matching</a></li>
+  <li><a href="/pro/beginner-perl/trim">trim</a></li>
+  <li><a href="/pro/beginner-perl/fixing-assembly-with-perl">Fixing assembly with Perl</a></li>
+  <li><a href="/pro/beginner-perl/split">split</a></li>
+  <li><a href="/pro/beginner-perl/fixing-dates">Fixing dates</a></li>
+  <li><a href="/pro/beginner-perl/exercise-split-simple-cgi">Exercise: split simple cgi</a></li>
+  <li><a href="/pro/beginner-perl/exercise-split-http">Exercise split http</a></li>
+  <li><a href="/pro/beginner-perl/solution-split-http">Solution: split http</a></li>
+  <li><a href="/pro/beginner-perl/exercise-filename-dirname">Exercise: filename/dirname</a></li>
+  <li><a href="/pro/beginner-perl/exercise-split-path">Exercise: split path</a></li>
+  <li><a href="/pro/beginner-perl/solution-split-path">Solution: split path</a></li>
+  <li><a href="/pro/beginner-perl/exercise-sort-snmp-numbers">Exercise: sort SNMP numbers</a></li>
+  <li><a href="/pro/beginner-perl/solution-sort-snmp-numbers">Solution: sort SNMP numbers</a></li>
+  <li><a href="/pro/beginner-perl/exercise-parse-hours-log-file-and-produce-report">Exercise: parse hours log file and produce report</a></li>
+  <li><a href="/pro/beginner-perl/exercise-create-time-report">Exercise: create time report</a></li>
+  <li><a href="/pro/beginner-perl/exercise-parse-ini-file">Exercise: parse INI file</a></li>
+  <li><a href="/pro/beginner-perl/exercise-parse-perl-file">Exercise: parse perl file</a></li>
+</ul>
+
+<h3>Shell to Perl</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/"></a></li>
+  <li><a href="/pro/beginner-perl/"></a></li>
+</ul>
+
 -->
 
 <!--
