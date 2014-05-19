@@ -175,12 +175,15 @@ subscription service.
 <h3>Regular Expressions - part 1</h3>
 <ul>
   <li><a href="/pro/beginner-perl/regexes">Regexes</a></li>
-<!--
+  <li><a href="/pro/beginner-perl/where-can-i-use-regexes">Where can I use regexes</a></li>
+  <li><a href="/pro/beginner-perl/simple-use-of-regex">Simple use of regex</a></li>
+  <li><a href="/pro/beginner-perl/single-character-match">Single character match</a></li>
+  <li><a href="/pro/beginner-perl/match-any-character">Match any character</a></li>
+  <li><a href="/pro/beginner-perl/character-classes">Character classes</a></li>
+  <li><a href="/pro/beginner-perl/negated-character-class">Negated character class</a></li>
+  <li><a href="/pro/beginner-perl/optional-characters">Optional characters</a></li>
   <li><a href="/pro/beginner-perl/any-number-of-any-character">Any Number Of Any Character</a></li>
-  <li><a href="/pro/beginner-perl/"></a></li>
-  <li><a href="/pro/beginner-perl/"></a></li>
-  <li><a href="/pro/beginner-perl/"></a></li>
-  <li><a href="/pro/beginner-perl/"></a></li>
+<!--
   <li><a href="/pro/beginner-perl/"></a></li>
 -->
 </ul>
