@@ -182,7 +182,15 @@ subscription service.
   <li><a href="/pro/beginner-perl/character-classes">Character classes</a></li>
   <li><a href="/pro/beginner-perl/negated-character-class">Negated character class</a></li>
   <li><a href="/pro/beginner-perl/optional-characters">Optional characters</a></li>
-  <li><a href="/pro/beginner-perl/any-number-of-any-character">Any Number Of Any Character</a></li>
+  <li><a href="/pro/beginner-perl/any-number-of-any-character">Any Number Of Any Characters</a></li>
+  <li><a href="/pro/beginner-perl/quantifiers">Quantifiers</a></li>
+  <li><a href="/pro/beginner-perl/quantifiers-on-character-classes">Quantifiers on Character classes</a></li>
+
+  <li><a href="/pro/beginner-perl/finding-a-string-in-a-file">Finding a string in a file</a></li>
+  <li><a href="/pro/beginner-perl/exercise-regexes-1">Exercise: Regexes 1</a></li>
+  <li><a href="/pro/beginner-perl/solution-regexes-1">Solution 1</a></li>
+  <li><a href="/pro/beginner-perl/solution-regexes-2">Solution 2</a></li>
+  <li><a href="/pro/beginner-perl/solution-regexes-3">Solution 3</a></li>
 <!--
   <li><a href="/pro/beginner-perl/"></a></li>
 -->
