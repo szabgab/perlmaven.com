@@ -58,7 +58,7 @@ This will allow code like this:
 
 <code lang="perl">
 my $str = 'Usage:524944/1000000 messages';
-if ( $str = /Usage:(\d+)/) {
+if ( $str =~ /Usage:(\d+)/) {
    my $used = $1;
    # here we will have the 524944 in the $used variable
 }
@@ -114,7 +114,7 @@ example as I think we did not want to enforce that:
 
 <code lang="perl">
 my $str = 'Usage:524944/1000000 messages';
-if ( $str =   m{Usage:(\d+)/(\d+) messages} ) {
+if ( $str =~  m{Usage:(\d+)/(\d+) messages} ) {
    my ($used, $total) = ($1, $2);
    # here we will have the 524944 in the $used variable
    # and 1000000 in $total.
