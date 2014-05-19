@@ -59,27 +59,6 @@ Add an 128x128 image of you to the sites/en/img/ folder and an entry for yoursel
 in the authors.txt file in the root of the repository.
 
 
-Mailing list
-=============
-
-There is an invitation only, but publicly archived mailing list
-for the the people who would like to contribute to the Perl Maven
-site. A couple of ways to contribute:
-
-- translate an article to a language
-- proofreading in any language (including English)
-- promote the articles in one or more languages
-- site design
-- site code (once it becomes open source)
-- write original content for the English site
-
-The mailing list can be found here:
-
-http://mail.perlmaven.com/mailman/listinfo/perlmaven-contributor
-
-If you'd like to participate, please contact Gabor.
-
-
 TRANSLATIONS - LOCALIZATION
 ---------------------------
 Each language has a subdirectory in the sites/ folder.
