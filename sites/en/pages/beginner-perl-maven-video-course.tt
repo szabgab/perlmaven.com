@@ -172,11 +172,14 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-parse-variable-width-fields">Solution: Parse variable width fields</a></li>
 </ul>
 
+<!--
+
 <h3>Regular Expressions - part 1</h3>
 <ul>
   <li><a href="/pro/beginner-perl/regexes">Regexes</a></li>
   <li><a href="/pro/beginner-perl/where-can-i-use-regexes">Where can I use regexes</a></li>
   <li><a href="/pro/beginner-perl/simple-use-of-regex">Simple use of regex</a></li>
+  <li><a href="/pro/beginner-perl/finding-a-string-in-a-file">Finding a string in a file</a></li>
   <li><a href="/pro/beginner-perl/single-character-match">Single character match</a></li>
   <li><a href="/pro/beginner-perl/match-any-character">Match any character</a></li>
   <li><a href="/pro/beginner-perl/character-classes">Character classes</a></li>
@@ -185,17 +188,12 @@ subscription service.
   <li><a href="/pro/beginner-perl/any-number-of-any-character">Any Number Of Any Characters</a></li>
   <li><a href="/pro/beginner-perl/quantifiers">Quantifiers</a></li>
   <li><a href="/pro/beginner-perl/quantifiers-on-character-classes">Quantifiers on Character classes</a></li>
-
-  <li><a href="/pro/beginner-perl/finding-a-string-in-a-file">Finding a string in a file</a></li>
   <li><a href="/pro/beginner-perl/exercise-regexes-1">Exercise: Regexes 1</a></li>
   <li><a href="/pro/beginner-perl/solution-regexes-1">Solution 1</a></li>
   <li><a href="/pro/beginner-perl/solution-regexes-2">Solution 2</a></li>
   <li><a href="/pro/beginner-perl/solution-regexes-3">Solution 3</a></li>
-<!--
-  <li><a href="/pro/beginner-perl/"></a></li>
--->
 </ul>
-
+-->
 
 <!--
   <li><a href="/pro/beginner-perl/"></a></li>
