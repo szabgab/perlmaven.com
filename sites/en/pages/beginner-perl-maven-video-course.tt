@@ -240,13 +240,49 @@ subscription service.
 
 <h3>Shell to Perl</h3>
 <ul>
+  <li><a href="/pro/beginner-perl/shell-x">shell -x</a></li>
+  <li><a href="/pro/beginner-perl/external-programs">external programs</a></li>
+  <li><a href="/pro/beginner-perl/unix-and-dos-commands">Unix and DOS commands</a></li>
+  <li><a href="/pro/beginner-perl/file-globbing">file globbing</a></li>
+  <li><a href="/pro/beginner-perl/rename-files">rename files</a></li>
+  <li><a href="/pro/beginner-perl/directory-handle">directory handle</a></li>
+  <li><a href="/pro/beginner-perl/file-homedir">File::HomeDir</a></li>
+  <li><a href="/pro/beginner-perl/more-unix-commands">more Unix commands</a></li>
+  <li><a href="/pro/beginner-perl/file-spec">File::Spec</a></li>
+  <li><a href="/pro/beginner-perl/file-find">File::Find</a></li>
+</ul>
+
+<h3>CPAN</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/using-procedural-module">Using procedural module</a></li>
+  <li><a href="/pro/beginner-perl/using-object-oriented-module">Using object oriented module</a></li>
+  <li><a href="/pro/beginner-perl/changing-inc">Changing @INC</a></li>
+  <li><a href="/pro/beginner-perl/changing-inc-relative-path">Changing @INC relative path</a></li>
+  <li><a href="/pro/beginner-perl/what-is-cpan">What is CPAN</a></li>
+  <li><a href="/pro/beginner-perl/some-interesting-cpan-modules">Some interesting CPAN modules</a></li>
+  <li><a href="/pro/beginner-perl/installing-modules-from-the-os-vendor">Installing modules from the OS vendor</a></li>
+  <li><a href="/pro/beginner-perl/installing-modules-with-cpan">Installing modules with cpan</a></li>
+  <li><a href="/pro/beginner-perl/search-cpan-org">search.cpan.org</a></li>
+  <li><a href="/pro/beginner-perl/cpantesters-and-cpanratings">cpantesters and cpanratings</a></li>
   <li><a href="/pro/beginner-perl/"></a></li>
-  <li><a href="/pro/beginner-perl/"></a></li>
+</ul>
+
+<h3>Applications</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/create-linux-user">Create Linux user account</a></li>
+  <li><a href="/pro/beginner-perl/diskspace-usage-df">diskspace usage df</a></li>
+  <li><a href="/pro/beginner-perl/reporting-diskspace-usage-on-mail-server">Reporting diskspace usage on mail server</a></li>
+  <li><a href="/pro/beginner-perl/disk-usage-du">disk usage: du</a></li>
+  <li><a href="/pro/beginner-perl/send-email-with-attachments">Send email with attachments</a></li>
+  <li><a href="/pro/beginner-perl/reading-excel-file">Reading Excel file</a></li>
+  <li><a href="/pro/beginner-perl/read-fixed-width-records">read fixed-width records</a></li>
+  <li><a href="/pro/beginner-perl/process-config-file">Process config file</a></li>
 </ul>
 
 -->
 
 <!--
+  <li><a href="/pro/beginner-perl/"></a></li>
   <li><a href="/pro/beginner-perl/"></a></li>
 -->
 
