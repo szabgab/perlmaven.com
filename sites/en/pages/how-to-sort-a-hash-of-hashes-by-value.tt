@@ -98,7 +98,7 @@ between the two.
 <h2>Secondary sorting</h2>
 
 If we would like to sort the hash first by the Position value and among the entries with the
-same Position value to sort by the value of the <hl>Max</b> field, we can use the following
+same Position value to sort by the value of the <b>Max</b> field, we can use the following
 construct:
 
 <code lang="perl">
