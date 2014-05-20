@@ -69,6 +69,7 @@
 <b>정규표현식</b>
 <ol>
 <li><a href="/trim">trim - Perl로 문자열의 앞뒤 공백 문자 제거하기</a></li>
+<li><a href="/matching-numbers-using-perl-regex">Perl 정규표현식을 사용하여 숫자 추출하기</a></li>
 </ol>
 
 <b>Perl과 쉘에 관련된 기능</b>
