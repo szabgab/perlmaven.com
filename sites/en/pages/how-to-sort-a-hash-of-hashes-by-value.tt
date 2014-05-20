@@ -1,0 +1,122 @@
+=title How to sort a hash of hashes by value?
+=timestamp 2014-05-21T16:30:01
+=indexes hash, keys, values, sort, cmp, <=>, $a, $b
+=status show
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+<a href="http://perlmaven.com/how-to-sort-a-hash-in-perl">start here</a>
+
+
+=abstract end
+
+Given the following reference to a hash of hashes, how can we sort them based on the value of <b>Position</b>?
+
+<code>
+my $data = {
+  'Gaur 3' => {
+        'Max' => '85',
+        'Type' => 'text',
+        'Position' => '10',
+        'IsAdditional' => 'Y',
+        'Required' => 'Y',
+        'Mandatory' => 'Y',
+        'Min' => '40'
+  },
+  'Gaur 2' => {
+        'Max' => '90',
+        'Type' => 'text',
+        'Position' => '11',
+        'IsAdditional' => 'Y',
+        'Required' => 'Y',
+        'Mandatory' => 'Y',
+        'Min' => '60'
+  },
+  'Gaur 1' => {
+        'Max' => '80',
+        'Type' => 'text',
+        'Position' => '10',
+        'IsAdditional' => 'Y',
+        'Required' => 'Y',
+        'Mandatory' => 'Y',
+        'Min' => '40'
+   },
+};
+</code>
+
+We of course cannot really sort the hash, but we can sort the keys. As <hl>$data</hl> is a reference to a hash,
+first we need to de-reference it by putting a <hl>%</hl> in front of it. calling <hl>keys</hl> on this 
+construct will return the list of keys in a random order.
+
+<code lang="perl">
+my @keys = keys %$data;
+foreach my $k (@keys) {
+    say $k;
+}
+</code>
+
+Result might look like this, but it can be differnt on other runs:
+
+<code>
+Gaur 1
+Gaur 3
+Gaur 2
+</code>
+
+
+<hl>$a</hl> and <hl>$b</hl> are the standard place-holders of <hl>sort</hl>. For
+each comparision they will hold two keys from the list.
+In order to compare the <b>Position</b> value of two elements we need to access them
+using <hl>$a</hl> and <hl>$b</hl>.
+
+<code lang="perl">
+my @positioned = sort { $data->{$a}{Position} <=> $data->{$b}{Position} }  keys %$data;
+
+foreach my $k (@positioned) {
+    say $k;
+}
+</code>
+
+The result is:
+
+<code>
+Gaur 3
+Gaur 1
+Gaur 2
+</code>
+
+Though this result is not going to be the same always. After all the <b>Position</hl> values of
+'Gaur 1' and 'Gaur 3' are both the same number (10), so the space-ship operator cannot decide
+between the two.
+
+
+<h2>Secondary sorting</h2>
+
+If we would like to sort the hash first by the Position value and among the entries with the
+same Position value to sort by the value of the <hl>Max</b> field, we can use the following
+construct:
+
+<code lang="perl">
+my @maxed = sort {
+    $data->{$a}{Position} <=> $data->{$b}{Position}
+    or
+    $data->{$a}{Max} <=> $data->{$b}{Max}
+    }  keys %$data;
+
+foreach my $k (@maxed) {
+    say $k;
+}
+
+And the result is:
+
+<code>
+Gaur 1
+Gaur 3
+Gaur 2
+</code>
+
