@@ -111,6 +111,7 @@ my @maxed = sort {
 foreach my $k (@maxed) {
     say $k;
 }
+</code>
 
 And the result is:
 
