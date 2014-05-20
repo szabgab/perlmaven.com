@@ -1,7 +1,7 @@
 =title How to sort a hash of hashes by value?
 =timestamp 2014-05-21T16:30:01
 =indexes hash, keys, values, sort, cmp, <=>, $a, $b
-=status show
+=status draft
 =books beginner_book
 =author szabgab
 =archive 1
