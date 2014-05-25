@@ -1,0 +1,46 @@
+=title PSGI the superglue between perl web application frameworks and web servers
+=timestamp 2014-06-28T18:13:11
+=indexes PSGI
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+The beginning of a series of articles about <a href="http://plackperl.org/">PSGI/Plack</a>.
+
+=abstract end
+
+<h2>Free</h2>
+<ul>
+  <li><a href="/videos/modern-web-with-perl">Modern Web with Perl</a>, a quick overview (screencast)</li>
+  <li><a href="/getting-started-with-psgi">Getting Started with PSGI/Plack</a></li>
+  <li><a href="/how-to-build-a-dynamic-web-application-using-psgi">How to build a dynamic web aplication using PSGI</a></li>
+  <li><a href="/perl-cgi-mod-perl-psgi">Perl CGI, mod_perl, and PSGI</a></li>
+</ul>
+
+<!--
+<h2>Pro</h2>
+
+Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
+
+<ul>
+</ul>
+-->
+
+<!--
+  <li><a href=""></a></li>
+-->
+
+<h2>See Also</h2>
+
+The PSGI-enabled web frameworks.
+<ul>
+  <li><a href="/dancer">Dancer</a></li>
+  <li><a href="/mojolicious"></a>Mojolicious</li>
+  <li><a href="/catalyst"></a>Catalyst</li>
+</ul>
+
+
