@@ -39,8 +39,8 @@ Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
 The PSGI-enabled web frameworks.
 <ul>
   <li><a href="/dancer">Dancer</a></li>
-  <li><a href="/mojolicious"></a>Mojolicious</li>
-  <li><a href="/catalyst"></a>Catalyst</li>
+  <li><a href="/mojolicious">Mojolicious</a></li>
+  <li><a href="/catalyst">Catalyst</a></li>
 </ul>
 
 
