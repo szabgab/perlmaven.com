@@ -140,4 +140,24 @@ Good:
 open my $in, '>', $filename or die ...;
 </code>
 
+<h2>So what is it about 3-argument open that protects you from overwriting /etc/passwd?</h2>
+
+If we accept a filename form the user, and then we try to open it for writing, without checking
+the name of the file, then the 3-argument open won't help. (though I really hope you don't run
+your scripts as root and thus you will "only" overwrite files owned by a less privileged the user)
+
+OTOH if you are opening a file for reading then this is what can happen:
+
+<code lang="perl">
+my $filename = get_filename_from_user();
+
+open my $in, '<', $filname;
+
+open IN, $filename;
+</code>
+
+If <hl>get_filename_from_user</hl> return <hl>&gt;/etc/passwd</hl> then the first call to <hl>open</hl> would fail, as it 
+cannot find a file called <hl>&gt;/etc/passwd</hl>, on the other hand, the second call to <hl>open</hl> will happily open
+<hl>/etc/passwd</hl> for writing.
+
 
