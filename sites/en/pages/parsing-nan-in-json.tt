@@ -104,3 +104,9 @@ $VAR1 = {
         };
 </code>
 
+<h2>Conclusion</h2>
+
+The JSON parsers of Perl are correct in <b>not</b> parsing <hl>NaN</hl>.
+The file created by the Python script was invalid.
+
+
