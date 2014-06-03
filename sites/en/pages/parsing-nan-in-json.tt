@@ -15,6 +15,8 @@ and error message like this one:
 
 <hl>malformed JSON string, neither tag, array, object, number, string or atom, at character offset 14 (before "NaN,\n  "other" : "n...")</hl>
 
+I did not understand why Perl cannot parse a JSON file created by Python?
+
 =abstract end
 
 The problem boiled down to having a <hl>NaN</hl> (not a number) value in the JSON string:
