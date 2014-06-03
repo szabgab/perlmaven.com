@@ -19,12 +19,14 @@ Besides many "random" advanced articles the Pro account provides access to the s
 series of articles:
 <ul>
   <li><a href="/moo">Moo</a>, the Minimalist Object Oriented system for Perl</li>
+  <li><a href="/moose">Moose</a>, the 'post modern' Object Oriented system for Perl</li>
   <li><a href="/mojolicious">Mojolicious</a> the light-weight web framework</li>
-  <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers</li>
   <li><a href="/dancer">Perl Dancer</a>, light-weight web framework</li>
+  <li><a href="/psgi">PSGI/Plack</a>, the superglue between perl web application frameworks and web servers/li>
+  <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers</li>
   <li><a href="/mongodb">Perl and MongoDB</a>, the NoSQL database</li>
+  <li><a href="/anyevent">Anyevent</a>, asynchronous programming</li>
 </ul>
-
 
 =abstract end
 
