@@ -1,7 +1,7 @@
 =title Parsing NaN in JSON
-=timestamp 2014-01-15T07:30:01
-=indexes JSON
-=status draft
+=timestamp 2014-05-03T19:11:01
+=indexes JSON, NaN
+=status show
 =author szabgab
 =archive 1
 =comments 1
