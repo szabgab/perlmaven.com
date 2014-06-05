@@ -71,12 +71,6 @@ are individuals providing <a href="http://foswiki.org/Support/WikiConsultants">c
 </div>
 
 <div class="perl-product">
-<a href="http://www.icdevgroup.org/">Interchange CMS</a> is a customizable content management system (CMS)
-with transaction management capability. There is a list of <a
-href="http://www.icdevgroup.org/i/dev/support/index">companies providing commercial support for Interchange</a>.
-</div>
-
-<div class="perl-product">
 <a href="http://www.bricolagecms.org/">Bricolage CMS</a> is a web publishing system providing workflow management for publishers.
 It then generates pages that can be either static or even use some other language to be dynamic.
 (<a href="http://en.wikipedia.org/wiki/Bricolage_(software)">Wikipedia</a>)
@@ -301,6 +295,12 @@ It is also available <a href="https://metacpan.org/module/Dezi">on CPAN</a>.
 </div>
 
 <h2>E-commerce</h2>
+
+<div class="perl-product">
+<a href="http://www.icdevgroup.org/">Interchange CMS</a> is a customizable content management system (CMS)
+with transaction management capability. There is a list of <a
+href="http://www.icdevgroup.org/i/dev/support/index">companies providing commercial support for Interchange</a>.
+</div>
 
 <div class="perl-product">
 <a href="http://www.surfshopcart.com/">SurfShop</a> - web store system - shopping cart.
