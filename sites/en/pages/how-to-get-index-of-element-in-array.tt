@@ -1,0 +1,76 @@
+=title  How to get the index of specific elment (value) of an array?
+=timestamp 2013-08-18T14:30:01
+=indexes List::MoreUtils, first_index
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+Recently I received two very different question, but where the answer boils down to the same:
+
+How can we get index of particular value(element) of array quickly
+
+I have a input values in <hl>@user_array</hl> and I'd like to fine their reference in the <hl>@all_values</hl> array. 
+
+=abstract end
+
+Let's see an example for the first one:
+
+Given an array 
+
+<code lang="perl">
+my @planets = qw(
+   Mercury
+   Venus
+   Earth
+   Mars
+   Ceres
+   Jupiter
+   Saturn
+   Uranus
+   Neptune
+   Pluto
+   Charon
+);
+</code>
+
+Given the value <hl>Mars</hl> it should return the number 3 because <hl>$planets[3]</hl> is <hl>Mars</hl>.
+
+
+The quick answer is to use the <hl>first_index</hl> method of <a href="https://metacpan.org/pod/List::MoreUtils">List::MoreUtils</a>
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+use List::MoreUtils qw(first_index);
+
+my @planets = qw(
+   Mercury
+   Venus
+   Earth
+   Mars
+   Ceres
+   Jupiter
+   Saturn
+   Uranus
+   Neptune
+   Pluto
+   Charon
+);
+
+say first_index { $_ eq 'Mars' } @planets;
+</code>
+
+<!--
+TBD: How to implement it manually.
+What if like in the  second question we need to look it up several times?
+Benchmark it?
+-->
+
+
+
+
