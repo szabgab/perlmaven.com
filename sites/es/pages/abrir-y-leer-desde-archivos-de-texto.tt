@@ -1,4 +1,4 @@
-=title Open and read from text files
+=title Abrir y leer archivos de texto
 =timestamp 2014-06-09T14:00:56
 =indexes open, <$fh>, read, <, encoding, UTF-8, die, open or die
 =status show
