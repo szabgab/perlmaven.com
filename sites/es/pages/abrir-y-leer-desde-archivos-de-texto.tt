@@ -2,6 +2,7 @@
 =timestamp 2014-06-09T14:00:56
 =indexes open, <$fh>, read, <, encoding, UTF-8, die, open or die
 =status show
+=original open-and-read-from-files
 =books beginner_book
 =author szabgab
 =translator lenieto3
@@ -164,3 +165,4 @@ if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
   }
 }
 </code>
+
