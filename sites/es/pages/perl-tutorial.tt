@@ -88,7 +88,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li><a href="http://perlmaven.com/die">die (en)</a></li>
 <li><a href="http://perlmaven.com/writing-to-files-with-perl">Escribiendo en ficheros (en)</a></li>
 <li><a href="http://perlmaven.com/appending-to-files">Anexando texto a ficheros (en)</a></li>
-<li><a href="http://perlmaven.com/open-and-read-from-files">Abriendo y leyendo ficheros en Perl (en)</a></li>
+<li><a href="/abrir-y-leer-desde-archivos-de-texto">Abriendo y leyendo ficheros en Perl</a></li>
 <li><a href="http://perlmaven.com/open-files-in-the-old-way">No abras ficheros a la antigua usanza (en)</a></li>
 <li>Modo binario, tratando con Unicode</li>
 <li>Leyendo un fichero binario, read, eof</li>
