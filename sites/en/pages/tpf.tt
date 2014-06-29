@@ -25,18 +25,17 @@ Covered 2014.03.01-2014.06.03
 
 <h2>Perl 5 Core Maintenance Fund</h2>
 
-<a href="http://www.perlfoundation.org/perl_5_core_maintenance_fund">Perl 5 Core Maintenance Fund</a>
+Overview about the <a href="http://www.perlfoundation.org/perl_5_core_maintenance_fund">Perl 5 Core Maintenance Fund</a>
 
+<b>Maintaining Perl Grant - Tony Cook</b>
 <ul>
-  <li>Title: Maintaining Perl Grant</li>
-  <li>Name: Tony Cook</li>
   <li>Amount: $13,000 (260 hours * $50)</li>
   <li>Amount: extension  $20,000 (400 hours * $50)</li>
   <li>2013.05.19 <a href="http://news.perlfoundation.org/2013/05/grant-application-maintaining.html">Grant Application: Maintaining Perl 5</a></li>
   <li>2014.03.09 <a href="http://news.perlfoundation.org/2014/03/grant-extension-request-from-t.html">Extension request</a></li>
   <li>2014.03.12 <a href="http://news.perlfoundation.org/2014/03/maintaining-perl-5-grant-repor-6.html">Report 7</a></li>
   <li>2014.04.22 <a href="http://news.perlfoundation.org/2014/04/tony-cooks-grant-extension.html">Grant extended by 400 hours ($20,000)</a></li>
-  <li>2014.05.15 <a href="http://news.perlfoundation.org/2014/05/maintaining-perl-5-grant-repor-7.html">Month 8</a><li>
+  <li>2014.05.15 <a href="http://news.perlfoundation.org/2014/05/maintaining-perl-5-grant-repor-7.html">Month 8</a></li>
   <li>2014.06.01 <a href="http://news.perlfoundation.org/2014/06/maintaining-perl-5-grant-repor-8.html">Month 9</a></li>
   <li>Status: </li>
 </ul>
