@@ -12,12 +12,15 @@
 <a href="http://perlfoundation.org/">The Perl Foundation</a> has various grants. This page tries to provide an unofficial list
 of the on-going grants.
 
+If you find mistakes or omissions, please comment below or send a <a href="https://github.com/szabgab/perlmaven.com/blob/main/sites/en/pages/tpf.tt">pull request</a>.
+There is a TODO list at the end of the page.
+
 =abstract end
 
 Sources:
 <ul>
   <li>Dan Wright, the treasurer of TPF talking about <a href="http://perltv.org/v/tpf-year-in-review-2014">TPF Year in Review - 2014</a></li>
-  <li><a href="http://news.perlfoundation.org/">news.perlfoundation.org</a>. Covered 2013.01.01-2014.06.03</li>
+  <li><a href="http://news.perlfoundation.org/">news.perlfoundation.org</a>. Covered 2012.09.01-2014.06.03</li>
   <li><a href="http://blogs.perl.org/users/makoto_nozaki/">Makoto Nozaki</a>, the head of the <a href="http://www.perlfoundation.org/grants_committee_members">Grants Committee</a></li>
   <li><a href="http://blogs.perl.org/users/alberto_simoes/">Alberto Simões</a> the previous head of the Grants Committee</a></li>
 </ul>
@@ -38,10 +41,16 @@ Detailed financial informaton in this <a href="https://docs.google.com/spreadshe
   <li>Amount: $20,000 (400 hours * $50) extension</li>
   <li>2011.08.21 <a href="http://news.perlfoundation.org/2011/08/grant-proposal-improving-perl.html">proposal</a></li>
   <li>...</li>
+  <li>2012.09.03 <a href="http://news.perlfoundation.org/2012/09/improving-perl-5-grant-report-8.html">Month 11</a></li>
+  <li>2012.09.17 <a href="http://news.perlfoundation.org/2012/09/improving-perl-5-grant-report-9.html">Month 12</a></li>
+  <li>2012.10.04 <a href="http://news.perlfoundation.org/2012/10/improving-perl-5-grant-report-10.html">Month 13</a></li>
+  <li>2012.10.08 <a href="http://news.perlfoundation.org/2012/10/grant-extension-request---impr-2.html">Extension request ($20,000)</a></li>
+  <li>2012.10.21 <a href="http://news.perlfoundation.org/2012/10/improving-perl-5-grant-extende-1.html">Extension approved ($20,000)</a></li>
+  <li>2012.12.04 <a href="http://news.perlfoundation.org/2012/12/improving-perl-5-grant-report-11.html">Month 14</a></li>
   <li>2013.01.14 <a href="http://news.perlfoundation.org/2013/01/improving-perl-5-grant-report-12.html">Month 15</a></li>
   <li>2013.02.05 <a href="http://news.perlfoundation.org/2013/02/grant-extension-request---impr-3.html">Extension request ($20,000)</a></li>
   <li>2013.02.19 <a href="http://news.perlfoundation.org/2013/02/improving-perl-5-grant-report-13.html">Month 16</a></li>
-  <li>2013.03.04 <a href="http://news.perlfoundation.org/2013/03/improving-perl-5-grant-extende-2.html">extension approved ($20,000)</a></li>
+  <li>2013.03.04 <a href="http://news.perlfoundation.org/2013/03/improving-perl-5-grant-extende-2.html">Extension approved ($20,000)</a></li>
   <li>2013.04.22 <a href="http://news.perlfoundation.org/2013/04/improving-perl-5-grant-report-14.html">Month 17</a></li>
   <li>2013.04.25 <a href="http://news.perlfoundation.org/2013/04/improving-perl-5-grant-report-16.html">Month 18</a></li>
   <li>2013.06.12 <a href="http://news.perlfoundation.org/2013/06/improving-perl-5-grant-report-15.html">Month 19</a></li>
@@ -77,6 +86,9 @@ Detailed financial informaton in this <a href="https://docs.google.com/spreadshe
 <b>Fixing Perl 5 Core Bugs - Dave Mitchell</b>
 <ul>
   <li>...</li>
+  <li>2012.09.12 <a href="http://news.perlfoundation.org/2012/09/fixing-perl5-core-bugs-report-25.html">Month 29 and 30</a></li>
+  <li>2012.10.03 <a href="http://news.perlfoundation.org/2012/10/fixing-perl5-core-bugs-report-26.html">Month 31</a></li>
+  <li>2012.11.26 <a href="http://news.perlfoundation.org/2012/11/fixing-perl5-core-bugs-report-27.html">Month 32</a></li>
   <li>2013.01.15 <a href="http://news.perlfoundation.org/2013/01/fixing-perl5-core-bugs-report-28.html">Month 33</a></li>
   <li>2013.03.25 <a href="http://news.perlfoundation.org/2013/03/fixing-perl5-core-bugs-report-29.html">Month 35</a></li>
   <li>2013.04.22 <a href="http://news.perlfoundation.org/2013/04/fixing-perl5-core-bugs-report-30.html">Month 37</a></li>
@@ -102,6 +114,7 @@ Detailed financial informaton in this <a href="https://docs.google.com/spreadshe
 <b>Devel::Cover - Paul Johnson</b>
 <ul>
   <li>Amount: </li>
+  <li>2012.09.13 <a href="http://news.perlfoundation.org/2012/09/develcover-grant-report-for-au.html">August 2012 report</a></li>
   <li>2013.06.24 <a href="http://news.perlfoundation.org/2013/06/tpf-develcover-grant-report-ma.html">May 2013 report</a></li>
   <li>2013.09.03 <a href="http://news.perlfoundation.org/2013/09/develcover-grant-report-june.html">June 2013 report</a></li>
   <li>2013.09.03 <a href="http://news.perlfoundation.org/2013/09/develcover-grant-report-july.html">July 2013 report</a></li>
@@ -197,6 +210,8 @@ Total allocated in 2014: $4,800
 <b>Alien::Base Grant - Joel Berger</b>
 <ul>
   <li>Amount: </li>
+  <li>2012.10.27 <a href="http://news.perlfoundation.org/2012/10/alienbase-grant---report-6.html">Report #6</a></li>
+  <li>2012.11.30 <a href="http://news.perlfoundation.org/2012/11/alienbase-grant---report-7.html">Report #7</a></li>
   <li>2013.01.30 <a href="http://news.perlfoundation.org/2013/01/alienbase-grant---report-8.html">Report #8</a></li>
   <li>2013.05.08 <a href="http://news.perlfoundation.org/2013/05/alienbase-grant---report-9-fin.html">Report #9 (final)</a></li>
   <li>Status: done</li>
@@ -204,31 +219,60 @@ Total allocated in 2014: $4,800
 
 <b>Spanish Localization of the Perl Core Documentation - Enrique Nell and Joaquin Ferrero</b>
 <ul>
-  <li>2013.01.03 <a href="http://news.perlfoundation.org/2013/01/spanish-localization-of-the-pe-5.html">Report #6</a>
+  <li>2012.09.07 <a href="http://news.perlfoundation.org/2012/09/spanish-localization-of-the-pe-2.html">Report #2</a></li>
+  <li>2012.10.10 <a href="http://news.perlfoundation.org/2012/10/spanish-localization-of-the-pe-3.html">Report #3</a></li>
+  <li>2012.10.16 <a href="http://news.perlfoundation.org/2012/11/spanish-localization-of-the-pe-4.html">Report #4</a></li>
+  <li>2013.01.03 <a href="http://news.perlfoundation.org/2013/01/spanish-localization-of-the-pe-5.html">Report #6</a></li>
+</ul>
+
+
+<b>Adding tests to and refactoring the perl debugger - Shlomi Fish</b>
+<ul>
+  <li>2012.09.01 <a href="http://news.perlfoundation.org/2012/09/adding-tests-to-and-refactorin.html">Report</a></li>
+  <li>2012.09.07 <a href="http://news.perlfoundation.org/2012/09/adding-tests-to-and-refactorin-1.html">Report 1</a></li>
+  <li>2012.09.22 <a href="http://news.perlfoundation.org/2012/09/adding-tests-to-and-refactorin-2.html">Report 2</a></li>
+  <li>2012.10.18 <a href="http://news.perlfoundation.org/2012/10/adding-tests-to-and-refactorin-3.html">Report 3</a></li>
+  <li>2012.11.23 <a href="http://news.perlfoundation.org/2012/11/adding-tests-to-and-refactorin-4.html">Report 4</a></li>
+  <li>2012.12.10 <a href="http://news.perlfoundation.org/2012/12/adding-tests-to-and-refactorin-5.html">Report 5 - final report</a></li>
+</ul>
+
+<b>Improving Cross compilation of Perl 5 - Jess Robinson</a></b>
+<ul>
+  <li>2012.09.03 <a href="http://news.perlfoundation.org/2012/09/improving-cross-compilation-of.html">report</a></li>
 </ul>
 
 <pre>
-   Name         Amount    Start        Latest         End            Status
-   Spanish POD                                        2013.01.03     done
-   Alien::Base                                        2013.05.08     done
-   Pinto         3,000    2013.05.04                  2014.03.20     done
-   YACT          3,000    2013.04.04   2014.02.14                    in work 
-   Lint            800    2014.03.15   2014.06.03                    in work
-   MOOP          4,000    2014.05.11   2014.05.31                    in work
+   Name               Amount    Start        Latest         End            Status
+   Cross compilation                        2014.
+   Debugger                                                2012.12.10     done
+   Spanish POD                                             2013.01.03     done
+   Alien::Base                                             2013.05.08     done
+   Pinto              3,000    2013.05.04                  2014.03.20     done
+   YACT               3,000    2013.04.04   2014.02.14                    in work 
+   Lint                 800    2014.03.15   2014.06.03                    in work
+   MOOP               4,000    2014.05.11   2014.05.31                    in work
 </pre>
 
 <h2>Hague Grants</h2>
 
-<b></b>
+<b>Wrap up Perl 5 Interop for Rakudo Perl 6 on MoarVM - diakopter</b>
 <ul>
   <li>Amount: $10,000</li>
-  <li>2013.07.24 <a href="http://news.perlfoundation.org/2013/07/hague-grant-application.html">proposal</a></li>
-  <li>2013.02.24 <a href="http://news.perlfoundation.org/2013/09/hague-grant-application-accept.html">approved</a></li>
+  <li>2013.07.24 <a href="http://news.perlfoundation.org/2013/07/hague-grant-application.html">proposal ($10,000)</a></li>
+  <li>2013.02.24 <a href="http://news.perlfoundation.org/2013/09/hague-grant-application-accept.html">approved ($10,000)</a></li>
+</ul>
+
+<b>Implementation of Macros in Rakudo - Carl Mäsak</b>
+<ul>
+  <li>2012.12.02 <a href="http://news.perlfoundation.org/2012/12/grant-report-implementation-of.html">report</a></li>
+  <li>Status: </li>
 </ul>
 
 <h2>TPF in General</h2>
 
 <ul>
+  <li>2012.10.15 <a href="http://news.perlfoundation.org/2012/10/yapcna-2012-closing-financial.html">YAPC::NA 2012 Closing Financial Report</a></li>
+  <li>2012.10.25 <a href="http://news.perlfoundation.org/2012/10/sponsoring-metacpan.html">Sponsoring MetaCPAN</a></li>
   <li>2013.01.01 <a href="http://news.perlfoundation.org/2013/01/2012-year-end-report.html">2012 Year End Report</a></li>
   <li>2014.02.18 <a href="http://news.perlfoundation.org/2014/02/2013-year-end-report.html">2013 Year end report</a></li>
 </ul>
@@ -241,5 +285,6 @@ Total allocated in 2014: $4,800
   <li>Explain each grant type with links.</li>
   <li>Table for each grant type</li>
   <li>Add amount to each proposal and each approval line</li>
+  <li>Cover dates starting from 2008.01.01</li>
 </ul>
 
