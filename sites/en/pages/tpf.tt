@@ -1,4 +1,4 @@
-=title TPF - The Perl Foundation Grants
+=title Unofficial information about The Perl Foundation Grants
 =timestamp 2014-06-29T08:30:01
 =indexes TPF
 =status show
@@ -31,6 +31,7 @@ Overview about the <a href="http://www.perlfoundation.org/perl_5_core_maintenanc
   <li>Amount: $20,000 (400 hours * $50) extension</li>
   <li>2011.08.21 <a href="http://news.perlfoundation.org/2011/08/grant-proposal-improving-perl.html">proposal</a></li>
   <li>...</li>
+  <li>2013.06.12 <a href="http://news.perlfoundation.org/2013/06/improving-perl-5-grant-report-15.html">Month 19</a></li>
   <li>2013.07.16 <a href="http://news.perlfoundation.org/2013/07/grant-extension-request---impr-4.html">Extension request ($20,000)</a></li>
   <li>2013.07.30 <a href="http://news.perlfoundation.org/2013/07/improving-perl-5-grant-report-17.html">Month 19</a></li>
   <li>2013.07.31 <a href="http://news.perlfoundation.org/2013/07/improving-perl-5-grant-report-18.html">Month 20</a></li>
@@ -58,6 +59,11 @@ Overview about the <a href="http://www.perlfoundation.org/perl_5_core_maintenanc
   <li>2014.05.15 <a href="http://news.perlfoundation.org/2014/05/maintaining-perl-5-grant-repor-7.html">Month 8</a></li>
   <li>2014.06.01 <a href="http://news.perlfoundation.org/2014/06/maintaining-perl-5-grant-repor-8.html">Month 9</a></li>
   <li>Status: </li>
+</ul> 
+
+<b>Fixing Perl 5 Core Bugs - Dave Mitchell</b>
+<ul>
+  <li>2013.06.10 <a href="http://news.perlfoundation.org/2013/06/fixing-perl5-core-bugs-report-31.html">Month 39</a></li>
 </ul>
 
 <b>Title: Maintaining the Perl 5 Core - Dave Mitchell</b>
@@ -78,6 +84,7 @@ Overview about the <a href="http://www.perlfoundation.org/perl_5_core_maintenanc
 <b>Devel::Cover - Paul Johnson</b>
 <ul>
   <li>Amount: </li>
+  <li>2013.06.24 <a href="http://news.perlfoundation.org/2013/06/tpf-develcover-grant-report-ma.html">May 2013 report</a></li>
   <li>2013.09.03 <a href="http://news.perlfoundation.org/2013/09/develcover-grant-report-june.html">June 2013 report</a></li>
   <li>2013.09.03 <a href="http://news.perlfoundation.org/2013/09/develcover-grant-report-july.html">July 2013 report</a></li>
   <li>2013.09.03 <a href="http://news.perlfoundation.org/2013/09/develcover-grant-report-august-1.html">August 2013 report</a></li>
@@ -136,6 +143,7 @@ Total allocated in 2014: $4,800
 <b>YACT - Yet Another Conference Tool - Torsten Raudssus</b>
 <ul>
   <li>Amount: </li>
+  <li>2013.05.28 <a href="http://news.perlfoundation.org/2013/05/2013q2-grant-results.html">approved</a></li>
   <li>2014.11.01 <a href="http://news.perlfoundation.org/2013/11/yact---yet-another-conference.html">Report 1</a></li>
   <li>2014.02.14 <a href="http://news.perlfoundation.org/2014/02/yact---yet-another-conference-tool---grant-report-2.html">Report 2</a></li>
 </ul>
@@ -144,6 +152,7 @@ Total allocated in 2014: $4,800
 <ul>
   <li>Amount: $3,000</li>
   <li>2013.05.04 <a href="http://news.perlfoundation.org/2013/05/2013q2-gp-next-release-of-pint.html">proposal</a></li>
+  <li>2013.05.28 <a href="http://news.perlfoundation.org/2013/05/2013q2-grant-results.html">approved</a></li>
   <li>2013.07.22 <a href="http://news.perlfoundation.org/2013/07/next-release-of-pinto-with-key.html">Report 1</a></li>
   <li>2013.10.15 <a href="http://news.perlfoundation.org/2013/10/next-release-of-pinto-with-key-1.html">Report 2</a></li>
   <li>2013.11.20 <a href="http://news.perlfoundation.org/2013/11/next-release-of-pinto-with-key-2.html">Report 3</a></li>
@@ -158,7 +167,6 @@ Total allocated in 2014: $4,800
    YACT    
    Lint      800    2014.03.15   2014.06.03                    progress
    MOOP    4,000    2014.05.11   2014.05.31                    approved
-   
 </pre>
 
 <h2>Hague Grants</h2>
