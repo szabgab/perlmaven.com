@@ -1,0 +1,121 @@
+=title TPF - The Perl Foundation Grants
+=timestamp 2014-06-29T08:30:01
+=indexes TPF
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+<a href="http://perlfoundation.org/">The Perl Foundation</a> has various grants. This page tries to provide an unofficial list
+of the on-going grants.
+
+=abstract end
+
+See also Dan Wright, the treasurer of TPF talking about <a href="http://perltv.org/v/tpf-year-in-review-2014">TPF Year in Review - 2014</a>,
+and <a href="http://blogs.perl.org/users/makoto_nozaki/2014/06/grants-committee-2014-first-half.html">Makoto Nozaki</a>, the head of
+the <a href="http://www.perlfoundation.org/grants_committee_members">Grants Committee</a>.
+
+Status of this page: 
+Going through the reports on <a href="http://news.perlfoundation.org/">news.perlfoundation.org</a>.
+Covered 2014.03.01-2014.06.03
+
+
+<h2>Perl 5 Core Maintenance Fund</h2>
+
+<a href="http://www.perlfoundation.org/perl_5_core_maintenance_fund">Perl 5 Core Maintenance Fund</a>
+
+<ul>
+  <li>Title: Maintaining Perl Grant</li>
+  <li>Name: Tony Cook</li>
+  <li>Amount: $13,000 (260 hours * $50)</li>
+  <li>Amount: extension  $20,000 (400 hours * $50)</li>
+  <li>2013.05.19 <a href="http://news.perlfoundation.org/2013/05/grant-application-maintaining.html">Grant Application: Maintaining Perl 5</a></li>
+  <li>2014.03.09 <a href="http://news.perlfoundation.org/2014/03/grant-extension-request-from-t.html">Extension request</a></li>
+  <li>2014.03.12 <a href="http://news.perlfoundation.org/2014/03/maintaining-perl-5-grant-repor-6.html">Report 7</a></li>
+  <li>2014.04.22 <a href="http://news.perlfoundation.org/2014/04/tony-cooks-grant-extension.html">Grant extended by 400 hours ($20,000)</a></li>
+  <li>2014.05.15 <a href="http://news.perlfoundation.org/2014/05/maintaining-perl-5-grant-repor-7.html">Month 8</a><li>
+  <li>2014.06.01 <a href="http://news.perlfoundation.org/2014/06/maintaining-perl-5-grant-repor-8.html">Month 9</a></li>
+  <li>Status: </li>
+</ul>
+
+<ul>
+  <li>Title: Maintaining the Perl 5 Core</li>
+  <li>Name: Dave Mitchell</li>
+  <li>Amount: </li>
+  <li>2013.09.01 <a href="http://news.perlfoundation.org/2013/09/grant-application-maintaining-1.html">Grant Application: Maintaining the Perl 5 Core</a></li>
+  <li>2014.03.18 <a href="http://news.perlfoundation.org/2014/03/maintaining-the-perl-5-core-re-3.html">Report 3</a></li>
+  <li>2014.04.04 <a href="http://news.perlfoundation.org/2014/04/grant-extension-request-mainta.html">Grant Extension Request</a></li>
+  <li>2014.04.09 <a href="http://news.perlfoundation.org/2014/04/maintaining-the-perl-5-core-re-4.html">Report 4</a></li>
+  <li>2014.05.26 <a href="http://news.perlfoundation.org/2014/05/maintaining-the-perl-5-core-re-5.html">Report 5</a></li>
+  <li>Status: </li>
+</ul>
+
+<ul>
+  <li>Title: Devel::Cover</li>
+  <li>Name: Paul Johnson</li>
+  <li>Amount: </li>
+  <li>2014.04.29 <a href="http://news.perlfoundation.org/2014/04/develcover-grant-report-march.html">March 2014 report</a></li>
+  <li>2014.05.27 <a href="http://news.perlfoundation.org/2014/05/develcover-grant-report-april.html">April 2014 report</a></li>
+</ul>
+
+<ul>
+  <li>Title: Travel to QA Hackathon</li>
+  <li>Name: Ricardo Signes</li>
+  <li>Amount: $1,200</li>
+  <li>2014.01.29 <a href="http://news.perlfoundation.org/2014/01/perl-5-grant-application-trave-2.html">proposal</a></li>
+  <li>2014.03.02 <a href="http://news.perlfoundation.org/2014/03/qa-hackathon-travel-grants.html">approved</a></li>
+</ul>
+
+<ul>
+  <li>Title: Travel to QA Hackathon</li>
+  <li>Name: David Golden</li>
+  <li>Amount: $1,200</li>
+  <li>2014.02.07 <a href="http://news.perlfoundation.org/2014/02/perl-5-grant-application-trave-3.html">proposal</li>
+  <li>2014.03.02 <a href="http://news.perlfoundation.org/2014/03/qa-hackathon-travel-grants.html">approved</a></li>
+</ul>
+
+<h2>Outreach Program for Women</h2>
+
+<a href="http://news.perlfoundation.org/2014/03/outreach-program-for-women-201.html">Outreach Program for Women 2014</a>
+
+
+
+<h2>General TPF Grant</h2>
+
+Spent in 2013: $2,500.
+Budget for 2014: $16,000 (see <a href="http://perltv.org/v/tpf-year-in-review-2014">TPF Year in Review - 2014</a>)
+
+Total allocated: $4,800
+
+<ul>
+  <li>Title: Perl::Lint - Yet Another Static Analyzer for Perl5</li>
+  <li>Name: Taiki Kawakami</li>
+  <li>Amount: $800</li>
+  <li>Repo: <a href="https://github.com/moznion/Perl-Lint">Perl-Lint</a></li>
+  <li>2014.03.15 <a href="http://news.perlfoundation.org/2014/03/grant-proposal-perllint---yet.html">proposal</a></li>
+  <li>2014.03.31 <a href="http://news.perlfoundation.org/2014/03/march-2014-grant-votes.html">approved</a></li>
+  <li>2014.06.03 <a href="http://news.perlfoundation.org/2014/06/work-on-perllint-a-perl-5-stat.html">start of work</a></li>
+</ul>
+
+<ul>
+  <li>Title: Modern Object Oriented Programming in Perl</li>
+  <li>Name: Toby Inkster</li>
+  <li>Amoung: $4,000</li>
+  <li>2014 05.11 <a href="http://news.perlfoundation.org/2014/05/grant-proposal-modern-object-o.html">proposal</a></li>
+  <li>2014.05.31 <a href="http://news.perlfoundation.org/2014/05/may-2014-grant-votes.html">approved</a></li>
+</ul>
+
+<ul>
+  <li>Title: Next Release of Pinto With Key</li>
+  <li>Name: Jeffrey Ryan Thalhammer</li>
+  <li>Amount: $3000</li>
+  <li>2013.05.04 <a href="http://news.perlfoundation.org/2013/05/2013q2-gp-next-release-of-pint.html">proposal</a></li>
+  <li>2014.03.20 <a href="http://news.perlfoundation.org/2014/03/next-release-of-pinto-with-key-4.html">Report 5 - done</a></li>
+  <li>Status: </li>
+</ul>
+
+
+
