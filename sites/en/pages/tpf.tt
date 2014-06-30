@@ -20,7 +20,7 @@ There is a TODO list at the end of the page.
 Sources:
 <ul>
   <li>Dan Wright, the treasurer of TPF talking about <a href="http://perltv.org/v/tpf-year-in-review-2014">TPF Year in Review - 2014</a></li>
-  <li><a href="http://news.perlfoundation.org/">news.perlfoundation.org</a>. Covered 2010.01.01-2014.06.03</li>
+  <li><a href="http://news.perlfoundation.org/">news.perlfoundation.org</a>. Covered 2010.01.01-2014.06.29</li>
   <li><a href="http://blogs.perl.org/users/makoto_nozaki/">Makoto Nozaki</a>, the head of the <a href="http://www.perlfoundation.org/grants_committee_members">Grants Committee</a></li>
   <li><a href="http://blogs.perl.org/users/alberto_simoes/">Alberto Simões</a> the previous head of the Grants Committee</a></li>
 </ul>
@@ -274,12 +274,15 @@ Detailed financial information in this <a href="https://docs.google.com/spreadsh
   <li>2014.02.27 <a href="http://news.perlfoundation.org/2014/02/new-rules-of-operation---grant.html">New Rules of Operation</a></li>
 </ul>
 
-Spent in 2013: $2,500. Budget for 2014: $16,000 (see <a href="http://perltv.org/v/tpf-year-in-review-2014">TPF Year in Review - 2014</a>)
+Paid out in 2013: $2,500. Budget for 2014: $16,000 (see <a href="http://perltv.org/v/tpf-year-in-review-2014">TPF Year in Review - 2014</a>)
+
+(See also the official list of <a href="http://www.perlfoundation.org/running_grants">running grants</a> and the list of
+<a href="http://www.perlfoundation.org/completed_grants">completed grants</a>).
 
 Total allocated in 2014: $4,800
 
 <pre>
-   Title                        Person             Start        Latest       End         Amount
+   Title                        Person             Start        Latest       End         Amount  Status
    Mojolicious Documentation    Sebastian Riedel                             2010.12.16
    Perlbal documentation        José and Bruno     2010.08.01                2010.12.14   2,500
    Improvements to Dist::Zilla  Ricardo Signes
@@ -290,16 +293,16 @@ Total allocated in 2014: $4,800
    Changing the Perl 5 optree   Gerard Goossen                               2010.04.05
    Strawberry Perl              Curtis Jewell
    wxPerl documentation         Eric
-   Game with SDL                Kartik Thakore     2010.08.01                2011.01.23   1,500
-   Parrot                       Jonathan Leto      2010.11.04                2011.07.12   1,500
-   Alien::Base                  Joel Berger        2012.02.04                2013.05.08     500
-   Spanish POD                  Enrique Nell       2012.05.03                2013.01.03   2,000
-   YACT                         Torsten Raudssus   2013.04.04   2014.02.14                3,000
-   Pinto                        Jeffrey Thalhammer 2013.05.04                2014.03.20   3,000
-   Perl::Lint                   Taiki Kawakami     2014.03.15   2014.06.03                  800
-   MOOP                         Toby Inkster       2014.05.11   2014.05.31                4,000
-   Debugger                     Shlomi Fisch       2012.08.14                2012.12.10   1,500
-   Chef                         David Golden       2012.02.09                2012.08.17   2,000
+   Game with SDL                Kartik Thakore     2010.08.01                2011.01.23   1,500  done
+   Parrot                       Jonathan Leto      2010.11.04                2011.07.12   1,500  done
+   Chef                         David Golden       2012.02.09                2012.08.17   2,000  done
+   Alien::Base                  Joel Berger        2012.02.04                2013.05.08     500  done
+   Spanish POD                  Enrique Nell       2012.05.03                2013.01.03   2,000  done
+   Debugger                     Shlomi Fisch       2012.08.14                2012.12.10   1,500  done
+   YACT                         Torsten Raudssus   2013.04.04                2014.06.29  (3,000) cancelled
+   Pinto                        Jeffrey Thalhammer 2013.05.04                2014.06.29  (3,000) cancelled
+   Perl::Lint                   Taiki Kawakami     2014.03.15   2014.06.03                  800  running
+   Modern OOP                   Toby Inkster       2014.05.11   2014.05.31                4,000  running
 </pre>
 
 
@@ -364,7 +367,8 @@ Total allocated in 2014: $4,800
   <li>2013.05.28 <a href="http://news.perlfoundation.org/2013/05/2013q2-grant-results.html">approved</a></li>
   <li>2014.11.01 <a href="http://news.perlfoundation.org/2013/11/yact---yet-another-conference.html">Report 1</a></li>
   <li>2014.02.14 <a href="http://news.perlfoundation.org/2014/02/yact---yet-another-conference-tool---grant-report-2.html">Report 2</a></li>
-  <li>Status: active</li>
+  <li>2014.06.29 <a href="http://news.perlfoundation.org/2014/06/grants-cancellation.html">cancelled</a></li>
+  <li>Status: cancelled</li>
 </ul>
 
 <div>
@@ -377,8 +381,9 @@ Total allocated in 2014: $4,800
   <li>2013.10.15 <a href="http://news.perlfoundation.org/2013/10/next-release-of-pinto-with-key-1.html">Report 2</a></li>
   <li>2013.11.20 <a href="http://news.perlfoundation.org/2013/11/next-release-of-pinto-with-key-2.html">Report 3</a></li>
   <li>2014.01.20 <a href="http://news.perlfoundation.org/2014/01/next-release-of-pinto-with-key-3.html">Report 4</a></li>
-  <li>2014.03.20 <a href="http://news.perlfoundation.org/2014/03/next-release-of-pinto-with-key-4.html">Report 5 - done</a></li>
-  <li>Status: done</li>
+  <li>2014.03.20 <a href="http://news.perlfoundation.org/2014/03/next-release-of-pinto-with-key-4.html">Report 5</a></li>
+  <li>2014.06.29 <a href="http://news.perlfoundation.org/2014/06/grants-cancellation.html">cancelled</a></li>
+  <li>Status: cancelled</li>
 </ul>
 
 <div>
@@ -736,4 +741,8 @@ http://news.perlfoundation.org/2010/03/grants-failure-tcltk-access-in.html
 
 Closing grant 'Porting pyYAML to Perl'
 http://news.perlfoundation.org/2010/03/closing-grant-porting-pyyaml-t.html
+
+Change the display format, to include the status and the grant type in each row, be able to see a single table
+filter based on status, grant type. Sort by each column.
+
 -->
