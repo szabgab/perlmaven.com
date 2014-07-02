@@ -282,27 +282,26 @@ Paid out in 2013: $2,500. Budget for 2014: $16,000 (see <a href="http://perltv.o
 Total allocated in 2014: $4,800
 
 <pre>
-   Title                        Person             Start        Latest       End         Amount  Status
-   Mojolicious Documentation    Sebastian Riedel                             2010.12.16
-   Perlbal documentation        José and Bruno     2010.08.01                2010.12.14   2,500
+   Title                        Person                           First        Latest       Amount  Status
+   Mojolicious Documentation    Sebastian Riedel                              2010.12.16           done
+   Perlbal documentation        José and Bruno                   2010.08.01   2010.12.14   2,500
    Improvements to Dist::Zilla  Ricardo Signes
-   The Perl Survey              Kieren Diment                                2010.12.03
-   CPAN to deb autopackaging    Jozef Kutej        2010.08.01                             3,000
-   Embedding Perl into C++      Leon Timmermans                              2010.11.07
-   Test::Builder                Michael Schwern                 2011.12.03
-   Changing the Perl 5 optree   Gerard Goossen                               2010.04.05
+   The Perl Survey              Kieren Diment                                 2010.12.03
+   Embedding Perl into C++      Leon Timmermans                               2010.11.07
+   Test::Builder                Michael Schwern                               2011.12.03          done
+   Changing the Perl 5 optree   Gerard Goossen                                2010.04.05          done
    Strawberry Perl              Curtis Jewell
-   wxPerl documentation         Eric
-   Game with SDL                Kartik Thakore     2010.08.01                2011.01.23   1,500  done
-   Parrot                       Jonathan Leto      2010.11.04                2011.07.12   1,500  done
-   Chef                         David Golden       2012.02.09                2012.08.17   2,000  done
-   Alien::Base                  Joel Berger        2012.02.04                2013.05.08     500  done
-   Spanish POD                  Enrique Nell       2012.05.03                2013.01.03   2,000  done
-   Debugger                     Shlomi Fisch       2012.08.14                2012.12.10   1,500  done
-   YACT                         Torsten Raudssus   2013.04.04                2014.06.29  (3,000) cancelled
-   Pinto                        Jeffrey Thalhammer 2013.05.04                2014.06.29  (3,000) cancelled
-   Perl::Lint                   Taiki Kawakami     2014.03.15   2014.06.03                  800  running
-   Modern OOP                   Toby Inkster       2014.05.11   2014.05.31                4,000  running
+   wxPerl documentation         Eric                                                              cancelled
+   Game with SDL                Kartik Thakore                   2010.08.01   2011.01.23   1,500  done
+   Parrot                       Jonathan Leto                    2010.11.04   2011.07.12   1,500  done
+   Chef                         David Golden                     2012.02.09   2012.08.17   2,000  done
+   Alien::Base                  Joel Berger                      2012.02.04   2013.05.08     500  done
+   Spanish POD                  Enrique Nell and Joaquin Ferrero 2012.05.03   2013.01.03   2,000  done
+   Debugger                     Shlomi Fish                      2012.08.14   2012.12.10   1,500  done
+   YACT                         Torsten Raudssus                 2013.04.04   2014.06.29  (3,000) cancelled
+   Pinto                        Jeffrey Thalhammer               2013.05.04   2014.06.29  (3,000) cancelled
+   Perl::Lint                   Taiki Kawakami                   2014.03.15   2014.06.03     800  running
+   Modern OOP                   Toby Inkster                     2014.05.11   2014.05.31   4,000  running
 </pre>
 
 
@@ -416,7 +415,7 @@ Total allocated in 2014: $4,800
   <li>2012.10.10 <a href="http://news.perlfoundation.org/2012/10/spanish-localization-of-the-pe-3.html">Report #3</a></li>
   <li>2012.10.16 <a href="http://news.perlfoundation.org/2012/11/spanish-localization-of-the-pe-4.html">Report #4</a></li>
   <li>2013.01.03 <a href="http://news.perlfoundation.org/2013/01/spanish-localization-of-the-pe-5.html">Report #6</a></li>
-  <li>Status: </li>
+  <li>Status: done</li>
 </ul>
 
 
@@ -455,7 +454,7 @@ Total allocated in 2014: $4,800
 <ul class="details">
   <li>Amount: </li>
   <li>2010.04.05 <a href="http://news.perlfoundation.org/2010/04/grant-report-changing-the-perl.html">final report</a></li>
-  <li>Status: </li>
+  <li>Status: done</li>
 </ul>
 
 
@@ -467,7 +466,7 @@ Total allocated in 2014: $4,800
   <li>2010.09.09 <a href="http://news.perlfoundation.org/2010/09/updates-on-testbuilder2-grant.html">Update</a></li>
   <li>2011.06.06 <a href="http://news.perlfoundation.org/2011/01/testbuilder-2-is-not-dead.html">Test::Builder 2 is not dead</a></li>
   <li>2011.12.03 <a href="http://news.perlfoundation.org/2011/12/testbuilder-2-final-grant-repo.html">final report</a></li>
-  <li>Status: </li>
+  <li>Status: done</li>
 </ul>
 
 <div>
@@ -497,7 +496,7 @@ Total allocated in 2014: $4,800
 <ul class="details">
   <li>Amount: </li>
   <li>2010.06.23 <a href="http://news.perlfoundation.org/2010/06/grants-update-wxperl-documenta.html">Update</a></li>
-  <li>Status: </li>
+  <li>Status: cancelled</li>
 </ul>
 </div>
 
@@ -552,6 +551,9 @@ Total allocated in 2014: $4,800
 </ul>
 </div>
 
+<!--
+wa approved but not funded
+
 <div>
 <b class="title">CPAN to deb autopackaging - Jozef Kutej</b>
 <ul class="details">
@@ -561,7 +563,7 @@ Total allocated in 2014: $4,800
   <li>Status: ???</li>
 </ul>
 </div>
-
+-->
 
 <div>
 <b class="title">Embedding Perl into C++ Applications - Leon Timmermans</b>
