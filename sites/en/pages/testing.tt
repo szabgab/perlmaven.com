@@ -27,6 +27,7 @@ A series of articles about testing, and test automation using Perl.
 Articles and screencast available for <a href="/pro">Perl Maven Pro</a> subscribers:
 
 <ul>
+  <li><a href="/pro/introducing-test-simple">Introducing test automation with Test::Simple</a></li>
   <li><a href="/pro/mocking-function-to-fake-environment">Mocking function to fake environment</a></li>
   <li><a href="/pro/testing-session-mocking-time">Testing sessions by mocking time</a></li>
   <li><a href="/pro/testing-a-simple-tcpip-server">Testing a simple TCP/IP server using Net::Telnet</a></li>
