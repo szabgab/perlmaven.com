@@ -1,14 +1,12 @@
 =title Documentatiion du noyau Perl et documentation de module CPAN
-=timestamp 2014-07-18T18:57:56
+=timestamp 2014-07-23T09:57:56
 =indexes perldoc, documentation, POD, CPAN
 =status show
+=original core-perl-documentation-cpan-module-documentation
 =books beginner_book
 =author szabgab
 =translator arhuman
-=original core-perl-documentation-cpan-module-documentation
-=index 1
 =archive 1
-=feed 1
 =comments 1
 =social 1
 
