@@ -20,7 +20,7 @@ There is a TODO list at the end of the page.
 Sources:
 <ul>
   <li>Dan Wright, the treasurer of TPF talking about <a href="http://perltv.org/v/tpf-year-in-review-2014">TPF Year in Review - 2014</a></li>
-  <li><a href="http://news.perlfoundation.org/">news.perlfoundation.org</a>. Covered 2010.01.01-2014.07.31</li>
+  <li><a href="http://news.perlfoundation.org/">news.perlfoundation.org</a>. Covered 2010.01.01-2014.08.03</li>
   <li><a href="http://blogs.perl.org/users/makoto_nozaki/">Makoto Nozaki</a>, the head of the <a href="http://www.perlfoundation.org/grants_committee_members">Grants Committee</a></li>
   <li><a href="http://blogs.perl.org/users/alberto_simoes/">Alberto Simões</a> the previous head of the Grants Committee</a></li>
 </ul>
@@ -39,7 +39,7 @@ Detailed financial information in this <a href="https://docs.google.com/spreadsh
   Fixing Perl 5 Core Bugs      Dave Mitchell     2010.02.07   2013.06.10   35,500  done
   Improving Perl 5             Nicholas Clark    2011.08.21   2013.10.24  140,000  done
   Travel to QA Hackathon 2012  Ricardo Signes    2012.01.31   2012.02.20      900  done
-  Devel::Cover                 Paul Johnson      2012.04.03   2014.05.27   20,000  running
+  Devel::Cover                 Paul Johnson      2012.04.03   2014.08.03   20,000  running
   Cross compilation of Perl 5  Jess Robinson     2012.05.01   2012.09.03   10,000  running
   Travel to QA Hackathon 2013  Ricardo Signes    2013.02.05   2013.04.17    1,200  done
   Maintaining Perl 5           Tony Cook         2013.05.19   2014.07.08   46,000  running
@@ -200,6 +200,7 @@ Detailed financial information in this <a href="https://docs.google.com/spreadsh
   <li>2013.09.03 <a href="http://news.perlfoundation.org/2013/09/develcover-grant-report-august-1.html">August 2013 report</a></li>
   <li>2014.04.29 <a href="http://news.perlfoundation.org/2014/04/develcover-grant-report-march.html">March 2014 report</a></li>
   <li>2014.05.27 <a href="http://news.perlfoundation.org/2014/05/develcover-grant-report-april.html">April 2014 report</a></li>
+  <li>2014.08.03 <a href="http://news.perlfoundation.org/2014/08/develcover-grant-report-may-an.html">May and June 2014</a></li>
   <li>Status: running</li>
 </ul>
 </div>
