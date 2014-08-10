@@ -1,6 +1,7 @@
 =title Don't interpolate in printf (Missing argument in sprintf at ...)
 =timestamp 2014-08-10T15:30:01
 =indexes printf, sprintf
+=tags screencast
 =status draft
 =author szabgab
 =archive 1
@@ -16,6 +17,8 @@ you have a bug in your logging or debugging statement...
 Anyway, I created a smaller version of the problem. Look at the example:
 
 =abstract end
+
+<screencast file="/media/videos/dont-interpolate-in-printf.mp4" />
 
 In the root directory of the project I had two files, a script and a module representing the current file
 to be processed:
