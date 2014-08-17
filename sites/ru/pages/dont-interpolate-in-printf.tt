@@ -4,7 +4,8 @@
 =tags screencast
 =status show
 =original dont-interpolate-in-printf
-=author ymyasoedov
+=author szabgab
+=translator ymyasoedov
 =archive 1
 =comments 1
 =social 1
@@ -103,7 +104,7 @@ perl printf_interpolate.pl printf_interpolate.pl
 <hl>Missing argument in sprintf at printf_interpolate.pl line 27, <$fh> line 27.</hl>
 pointing us to the line where we call <hl>sprintf</hl>.
 
-На самом деле это <b>предупреждение</b>, т.к. код <h1>use warnings FATAL => 'all'</h1> включает обработку всех предупреждений как фатальные исключения.
+На самом деле это <b>предупреждение</b>, т.к. код <hl>use warnings FATAL => 'all'</hl> включает обработку всех предупреждений как фатальные исключения.
 
 Проблема заключается в том, что некоторые строки содержат фрагменты, которые похожи на заполнители, использующиеся в функции sprintf.
 Т.к. <hl>sprintf</hl> содержит некоторые встроенные (интерполированные) переменные (в частности, переменную <hl>$line</hl>), после интерполяции строка будет содержать более одного заполнителя <hl>%s</hl>.
