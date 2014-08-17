@@ -3,6 +3,7 @@
 =indexes printf, sprintf
 =tags screencast
 =status show
+=original dont-interpolate-in-printf
 =author ymyasoedov
 =archive 1
 =comments 1
