@@ -1,6 +1,7 @@
 =title How to break lines with max width?
 =timestamp 2014-08-24T08:30:01
 =indexes substr, rindex
+=tags screencast
 =status show
 =author szabgab
 =archive 1
@@ -15,6 +16,8 @@ or in other words, she has some long text and she wants to make sure every row i
 (separated by space) are kept in one piece.
 
 =abstract end
+
+<screencast file="/media/videos/break-lines-with-max-width.mp4" />
 
 Using <a href="/perl-split">split</a> might work, but we are not really looking for
 splitting up the the text along every space. We are looking for the right-most space in the first 100 characters.
