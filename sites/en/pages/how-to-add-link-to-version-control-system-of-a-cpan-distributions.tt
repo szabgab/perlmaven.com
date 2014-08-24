@@ -49,6 +49,23 @@ META_MERGE => {
 </code>
 
 If your version of ExtUtils::MakeMaker does not yet support this, just upgrade ExtUtils::MakeMaker.
+You can also write the following, if you'd like to make sure old version of ExtUtiles::MakeMaker won't
+freak out:
+
+<code lang="perl">
+(eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
+    'meta-spec' => { version => 2 },
+     resources => {
+         repository => {
+             type => 'git',
+             url  => 'https://github.com/dwimperl/Task-DWIM.git',
+             web  => 'https://github.com/dwimperl/Task-DWIM',
+         },
+     }})
+     : ()
+),
+</code>
+
 
 <h2>Module::Build</h2>
 
