@@ -1,4 +1,4 @@
-=title How to break lines with max width?
+=title How to break lines with max width? (wrap)
 =timestamp 2014-08-24T08:30:01
 =indexes substr, rindex, Text::Wrap, wrap
 =tags screencast
