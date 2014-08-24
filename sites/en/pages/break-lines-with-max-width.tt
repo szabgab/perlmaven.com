@@ -1,6 +1,6 @@
 =title How to break lines with max width?
 =timestamp 2014-08-24T08:30:01
-=indexes substr, rindex
+=indexes substr, rindex, Text::Wrap, wrap
 =tags screencast
 =status show
 =author szabgab
@@ -72,5 +72,35 @@ while ($text) {
     substr $text, 0, 1, '';
 }
 </code>
+
+<h2>use Text::Wrap</h2>
+
+I think this is not the first time I forget about <a href="https://metacpan.org/pod/Text::Wrap">Text::Wrap</a>, when solving this problem,
+I know I even found it in some of my notes, but this time, as Ralf Peine pointed to it, I am going to include the solution with this module:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my $text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+use Text::Wrap qw(wrap);
+local $Text::Wrap::columns = $max;
+say wrap('', '', $text);
+</code>
+
+The call to <hl>local</hl> is not stricly required there, but it is a good practice especialy if we wrap the whole code in a block to limit the impact of the assignment.
+Once the block is over, the value of <hl>columns</hl> will go back to the default, or whatever was set earlier.
+
+<code lang="perl">
+{
+    local $Text::Wrap::columns = $max;
+    say wrap('', '', $text);
+}
+</code>
+
+The two empty string provided as the first two parameters of the <hl>wrap</hl> function set the indentation of the first row, and all the subsequent
+rows. We wanted both to be the empty string.
 
 
