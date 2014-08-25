@@ -239,6 +239,3 @@ foreach my $name (sort { $planets{$a} <=> $planets{$b} or $a cmp $b } keys %plan
 With this code Charon will always come before Pluto as they have the same distance from the
 Sun, but C comes before P in the ASCII table.
 
-
-
-
