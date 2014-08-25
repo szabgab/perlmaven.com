@@ -1,0 +1,74 @@
+=title Useful Perl sites
+=timestamp 2014-08-24T08:30:02
+=indexes sites
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+
+=abstract start
+
+It must be the age, or the lack of frequent use of some of the sites, but I keep forgetting some URLs.
+
+I think I'd better collect here a bunch of URLs that are important for my use of Perl.
+
+Some I use daily and thus I don't really need to remind myself but can be useful for others to have.
+Others I are heavily linked from MetaCPAN and that's how I get to them.
+
+Maybe the others should be integrated into MetaCPAN as well. Anyway.
+
+=abstract end
+
+<a href="http://metacpan.org/">MetaCPAN</a> the search engine I use to access the data on <a href="http://www.cpan.org/">CPAN</a> itself.
+(There is also <a href="http://search.cpan.org/">search.cpan.org</a>, but IMHO it should not be recommended any more and it should be
+certainly clarified that there is nothing "official" with this site. Even though it is a subdomain of cpan.org it is still an independent site.)
+
+<a href="http://blogs.perl.org/">blogs.perl.org</a> where quite a lot  of Perl developers write and discuss stuff.
+
+<a href="http://www.perlmonks.org/">Perl Monks</a> where we can ask questions and get good answers.
+
+<a href="http://corelist.rpee.be/">Web::Module::CoreList</a> a web interface to <a href="https://metacpan.org/release/Module-CoreList">Module::CoreList</a>
+when you would like to know if a module comes with the core of perl, and specifically which version of the module came with which version of Perl. (*) 
+
+<a href="http://perlybook.org/">Perly book</a> converting POD (Plain Old Documentation) to EPUB or MOBI. (*)
+
+<a herf="http://prepan.org/">PrePAN</a> I never used this site, but it can be a good place to discuss a new module idea. (Along with the 
+<a href="http://lists.perl.org/list/module-authors.html">module-authors mailing list</a>.)
+
+<a herf="http://perldoc.perl.org/">perldoc.perl.org</a> provides HTML version of the standard documentation though I prefer the one
+on <a href="https://metacpan.org/release/perl">MetaCPAN</a>. I just wish it was integrated better so I don't need to send people to two site
+for searching.
+
+<a href="http://p3rl.org/">p3rl.org</a> is a link shortener for some Perl related pages. I don't think I have ever used it.
+
+<a href="http://lists.perl.org/">List of all mailing lists</a>, or at least most of them.
+
+<a href="http://pm.org/">Perl Mongers</a> list of the Perl Monger groups for when I visit a place, I can meet other Perl developers.
+
+<a href="http://perlweekly.com/">Perl Weekly</a>, is one of the sites I publish. Once in a while I need to look up an article I remember
+was posted there. So I check it in the <a href="http://perlweekly.com/all.html">list of all the articles</a>.
+
+<a href="http://perlmaven.com/">Perl Maven</a> another site I publish, but more and more frequently I need to use the search box at the top
+to locate old articles.
+
+<a href="http://perltv.org/">Perl TV</a> another site I maintain collecting Perl-related videos: presentations and screencasts.
+
+<h2>Specialized sites</h2>
+
+<a href="http://cpancover.com/">CPAN Cover</a>
+
+<a href="http://www.perlcritic.org/">Perl Critic</a>
+
+<a href="http://cpan.io/">cpan.io</a> is a new site. I have no idea how well it will work out.
+
+<a href="http://cpantesters.org/">CPAN Testers</a> while it is "heavily linked" from MetaCPAN, and I visit it quite often (so I don't think
+I'll forget the URL) but it might be worth mentioning separately as it has plenty of "subsites" with all kinds of extra information.
+
+<a href="http://cpants.cpanauthors.org/">CPANTS</a> provides "Kwalitee" metric for CPAN modules.
+
+<a href="http://changes.cpanhq.org/">Changes CPAN HQ</a> checks if the Changes file supplied in the distribution is according to the spec.
+
+(*) I think these sites should be integrated into MetaCPAN.
+
