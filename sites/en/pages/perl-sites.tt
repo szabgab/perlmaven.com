@@ -23,6 +23,7 @@ And then there are a few that I rarely use, but when I need them it would be han
 <a href="http://metacpan.org/">MetaCPAN</a> the search engine I use to access the data on <a href="http://www.cpan.org/">CPAN</a> itself.
 (There is also <a href="http://search.cpan.org/">search.cpan.org</a>, but IMHO it should not be recommended any more. It should be
 certainly clarified that there is nothing "official" with this site. Even though it is a subdomain of cpan.org it is still an independent site.)
+I rarely find a reason to go to cpan.org, though the list <a href="http://www.cpan.org/src/README.html">most recent Perl releases</a> is quite useful.
 
 <a href="http://blogs.perl.org/">blogs.perl.org</a> where quite a lot  of Perl developers write and discuss stuff.
 
@@ -70,6 +71,16 @@ I'll forget the URL) but it might be worth mentioning separately as it has plent
 <a href="http://cpants.cpanauthors.org/">CPANTS</a> provides "Kwalitee" metric for CPAN modules. (*)
 
 <a href="http://changes.cpanhq.org/">Changes CPAN HQ</a> checks if the Changes file supplied in the distribution is according to the spec. (*)
+
+<h2>Other</h2>
+
+<a href="http://perl.org/">perl.org</a> is called the "home of perl", but I rarely find a reason to go there.
+
+Once in a while <a href="http://perlnews.org/">perlnews.org</a> posts some news article, but unfortunately it could not gain a prominent status as the announcements on use.perl.org had.
+
+I don't need the main site of <a href="http://perlfoundation.org/">The Perl Foundation</a> too often, but I follow the news feed on <a href="http://news.perlfoundation.org/">their blog</a>.
+
+
 
 (*) I think these sites should be (better) integrated into MetaCPAN.
 
