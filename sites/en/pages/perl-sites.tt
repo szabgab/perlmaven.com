@@ -34,10 +34,10 @@ When you would like to know if a module comes with the core of perl, and specifi
 
 <a href="http://perlybook.org/">Perly book</a> converting POD (Plain Old Documentation) to EPUB or MOBI. (No PDF yet.) (*)
 
-<a herf="http://prepan.org/">PrePAN</a> I think I've never used this site, but it can be a good place to discuss a new module idea. (Along with the 
+<a href="http://prepan.org/">PrePAN</a> I think I've never used this site, but it can be a good place to discuss a new module idea. (Along with the 
 <a href="http://lists.perl.org/list/module-authors.html">module-authors mailing list</a>.)
 
-<a herf="http://perldoc.perl.org/">perldoc.perl.org</a> provides HTML version of the standard documentation though I prefer the one
+<a href="http://perldoc.perl.org/">perldoc.perl.org</a> provides HTML version of the standard documentation though I prefer the one
 on <a href="https://metacpan.org/release/perl">MetaCPAN</a>. I just wish the standard PODs were integrated into MetaCPAN better
 so I would not need to send people to two sites for searching.
 
