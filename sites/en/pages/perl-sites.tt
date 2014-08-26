@@ -55,6 +55,9 @@ to locate old articles.
 
 <a href="http://perltv.org/">Perl TV</a> another site I maintain collecting Perl-related videos: presentations and screencasts.
 
+<a href="http://perltricks.com/">Perltricks</a> written mostly by David Farrell has interesting and nicely formatted articles. This is the only other site I am aware
+of (besides the Perl Maven site you are reading) where the author actually has plans to bring in more readers.
+
 <h2>Specialized sites</h2>
 
 <a href="http://cpancover.com/">CPAN Cover</a> - test coverage report of a number of CPAN modules generatd by <a href="https://metacpan.org/pod/Devel::Cover">Devel::Cover</a>.
