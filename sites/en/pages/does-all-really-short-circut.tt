@@ -1,0 +1,52 @@
+=title Does List::MoreUtils::all really short-circut?
+=timestamp 2014-01-15T07:30:01
+=indexes List::MoreUtils
+=status draft
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+=abstract end
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+use List::MoreUtils qw(all);
+
+my @yes = (1, 1, 1, 1, 1);
+my @not = (1, 1, 0, 1, 1);
+
+say 'yes: ', (scalar @yes == grep { $_ } @yes);
+say 'no:  ', (scalar @not == grep { $_ } @not);
+
+say 'all yes: ', all { $_ } @yes;
+say 'all no:  ', all { $_ } @not;
+
+if (all { say $_; $_ } (@not)) {
+    say "all";
+}
+</code>
+
+Output:
+
+<code>
+yes: 1
+no:  
+all yes: 1
+all no:  
+1
+1
+0
+</code>
+
+<code lang="perl">
+</code>
+
+
+

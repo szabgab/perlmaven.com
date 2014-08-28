@@ -1,0 +1,26 @@
+=title Check several regexes on many strings
+=timestamp 2014-01-15T07:30:01
+=indexes regex
+=status draft
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+Once in a while I have to go through lines of a file that match 2, and sometimes even more regexes.
+
+If the two regexes are A and B the simple solution could be 
+
+while (my $line = <$fh>) {
+    if ($line =~ /
+
+
+=abstract end
+
+<code lang="perl">
+</code>
+
+
