@@ -41,7 +41,7 @@ When you would like to know if a module comes with the core of perl, and specifi
 on <a href="https://metacpan.org/release/perl">MetaCPAN</a>. I just wish the standard PODs were integrated into MetaCPAN better
 so I would not need to send people to two sites for searching.
 
-<a href="http://p3rl.org/">p3rl.org</a> is a link shortener for some Perl related pages. I don't think I have ever used it.
+<a href="http://p3rl.org/">p3rl.org</a> is a link shortener for some Perl related pages. I don't think I have ever used it, but I know <a href="http://joel-berger.com">some</a> people who love it.
 
 <a href="http://lists.perl.org/">List of all Perl-related mailing lists</a>. Or at least most of them.
 
@@ -82,6 +82,21 @@ I'll forget the URL) but it might be worth mentioning separately as it has plent
 Once in a while <a href="http://perlnews.org/">perlnews.org</a> posts some news article, but unfortunately it could not gain a prominent status as the announcements on use.perl.org had.
 
 I don't need the main site of <a href="http://perlfoundation.org/">The Perl Foundation</a> too often, but I follow the news feed on <a href="http://news.perlfoundation.org/">their blog</a>.
+
+The <a href="http://www.builtinperl.com/">Built in Perl</a> is a nice looking site that shows a number of companies and personal projects built using Perl.
+I don't frequently visit it but if you try to prove someone that others are also using Perl, this might help.
+
+<a href="http://perlbuzz.com/">Perlbuzz</a> is mostly a <a href="https://twitter.com/perlbuzz">Twitter feed</a> with Perl related news items that are then collected
+into a weekly blog-post.
+
+The <a href="http://perltraining.com.au/tips/">Perl Tips</a> of Perl Trainig Australia is a collection of some very good Perl-related articles. There is also
+a newsletter so you won't miss a newly published article.
+
+The sites maintained by brian d foy and branded to the appropriate books he wrote,
+<a href="http://www.learning-perl.com/">Learning Perl</a>,
+<a href="http://www.masteringperl.org/">Mastering Perl</a>, 
+and <a href="http://www.programmingperl.org/">Programming Perl</a>
+are useful for keeping up with new Perl features, as well as reading deeply analyzes about some existing functionality.
 
 <h2>Perl 6</h2>
 
