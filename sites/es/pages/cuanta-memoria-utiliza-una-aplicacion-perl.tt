@@ -2,8 +2,10 @@
 =timestamp 2013-12-12T12:45:01
 =indexes Memory::Usage, Linux
 =status show
+=original how-much-memory-does-the-perl-application-use
 =books cook_book
 =author szabgab
+=translator danimera
 =archive 1
 =comments 1
 =social 1
@@ -189,6 +191,5 @@ Si pudieras agregar este chequeo a pruebas automáticas aunque...
 <a href="https://metacpan.org/pod/Test::Memory::Usage">Test::Memory::Usage</a> es un contenedor
 <a href="https://metacpan.org/pod/Memory::Usage">Memory::Usage</a> que tu puedes utilizar 
 seguro de que tu módulo de no comenzará a utilizar mucha memoria más adelante. En Linux, por lo menos.
-
 
 
