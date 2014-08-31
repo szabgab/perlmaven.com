@@ -1,4 +1,4 @@
-=title Perl'de tekli ve çoklu bağlam, bir dizideki eleman sayısı
+=title Perl programlarında tekli ve çoklu bağlam, bir dizideki eleman sayısı
 =timestamp 2014-08-31T14:14:14
 =indexes scalar, list, array, size, length, context, Perl
 =status show
@@ -14,7 +14,7 @@
 
 <a href="/perl-tutorial">Perl dersimizin</a> bu bölümünde Perl'de <b>bağlam duyarlılığını</b> işleyeceğiz.
 
-Her dilde olduğu gibi Türkçe'de de aynı kelime farklı bağlamlarda farklı anlamlar ifade edebilir. Mesala "çakmak" fiili birçok anlam içerir:
+Her dilde olduğu gibi Türkçe'de de aynı kelime farklı bağlamlarda farklı anlamlar ifade edebilir. Mesela "çakmak" fiili birçok anlam içerir:
 
 Çivi çakmak
 
@@ -26,7 +26,7 @@ Perl 5 de buna benzer. Kelimeler, fonksiyon çağrıları ve diğer ifadeler bul
 
 =abstract end
 
-Perl dilinde <abbr title="scalar">tekli</abbr> ve <abbr title="list">çoklu</abbr> olmak üzere iki ana bağlam vardır.
+Perl dilinde <dfn title="scalar context">tekli bağlam</dfn> ve <dfn title="list context">çoklu bağlam</dfn> olmak üzere iki ana bağlam türü vardır.
 
 <h2>Çoklu bağlamda dizi</h2>
 
@@ -195,7 +195,7 @@ Bu, parantezlerin önemli olduğu nadir durumlardan biridir.
 
 Bu gözlem, <a href="/subroutines-and-functions-in-perl">fonksiyona parametre göndermek</a> konusuna geçtiğinizde çok önemli olacak.
 
-<h2>Teklik bağlama zorlamak</h2>
+<h2>Tekli bağlama zorlamak</h2>
 
 Hem <hl>print()</hl> hem de <hl>say()</hl> parametreleri için çoklu bağlam oluştururlar. Ya bir dizideki eleman sayısını yazdırmak isterseniz ne yapacaksınız? Ya da <hl>localtime()</hl> fonksiyonunun verdiği formatlanmış tarihi yazdırmak isterseniz?
 
@@ -247,9 +247,9 @@ Mon Nov  7 21:02:41 2011
 
 çıktısını verecektir.
 
-<h2>Perl'de bir dizinin uzunluğu veya boyutu</h2>
+<h2>Perl'de bir dizinin uzunluğu veya boyu</h2>
 
-Perl'de bir dizinin boyutunu <hl>scalar()</hl> fonksiyonunu kullanarak tekli bağlama zorlamak yoluyla alabilirsiniz.
+Perl'de bir dizinin boyunu, yani elemanlarının sayısını <hl>scalar()</hl> fonksiyonunu kullanarak tekli bağlama zorlamak yoluyla alabilirsiniz.
 
 <h2>Kurnaz yöntem</h2>
 
