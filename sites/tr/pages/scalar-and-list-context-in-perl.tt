@@ -1,7 +1,7 @@
-=title Perlde scalar ve list bağlam, bir dizinin boyutu
+=title Perl'de tekli ve çoklu bağlam, bir dizideki eleman sayısı
 =timestamp 2014-08-31T14:14:14
 =indexes scalar, list, array, size, length, context, Perl
-=status show"
+=status show
 =original scalar-and-list-context-in-perl
 =books beginner_book
 =author szabgab
