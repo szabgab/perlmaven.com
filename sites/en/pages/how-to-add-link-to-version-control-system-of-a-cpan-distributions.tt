@@ -121,6 +121,7 @@ adding the following line to the dist.ini file:
 
 <code>
 [GithubMeta]
+[MetaJSON]
 </code>
 
 <h2>Why shall I add this link?</h2>
