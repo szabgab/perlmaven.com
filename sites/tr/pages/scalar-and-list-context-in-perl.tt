@@ -1,39 +1,34 @@
-=title Perlde scalar ve list bağlam, bir dizinin boyutu
-=timestamp 2013-12-13T20:47:56
+=title Perl'de tekli ve çoklu bağlam, bir dizideki eleman sayısı
+=timestamp 2014-08-31T14:14:14
 =indexes scalar, list, array, size, length, context, Perl
 =status show
 =original scalar-and-list-context-in-perl
 =books beginner_book
 =author szabgab
-=translator kbeyazli
+=translator nanis
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-<a href="/perl-tutorial">Perl dersimizin</a> bu bölümünde Perlde <b>bağlam duyarlılığını</b>
-göreceğiz.
+<a href="/perl-tutorial">Perl dersimizin</a> bu bölümünde Perl'de <b>bağlam duyarlılığını</b> işleyeceğiz.
 
-İngilizcede diğer birçok konuşma dilinde olduğu gibi kelimelerin birden çok anlamı vardır.
-Mesela "left" kelimesi birçok anlam içerir:
+Her dilde olduğu gibi Türkçe'de de aynı kelime farklı bağlamlarda farklı anlamlar ifade edebilir. Mesala "çakmak" fiili birçok anlam içerir:
 
-I left the building.
+Çivi çakmak
 
-I turned left at the building.
+Çakmak çakmak
 
-Cümlede kullanılışına göre kelimenin doğru anlamının ne olduğunu anlarız.
-Buna bağlam denir.
+Kelimenin çevresindeki metin, yani kelimenin bulunduğu bağlam, kelimeyi doğru anlamamızı sağlar.
 
-Perl 5 de buna benzer. Kelimeler, fonksiyon çağrıları ve diğer ifadeler bağlama 
-göre farklı anlam içerir. Bu durum öğrenmeyi zorlaştırır, ama daha fazla
-anlamlılık sağlar.
+Perl 5 de buna benzer. Kelimeler, fonksiyon çağrıları ve diğer ifadeler bulundukları bağlamlara göre farklı anlamlar ifade edebilir. Bu durum öğrenmeyi zorlaştırır, ama ifade kabiliyetimizi zenginleştirir.
 
 =abstract end
 
-Perl dilinde 2 önemli bağlam vardır: SCALAR ve LIST bağlam.
+Perl dilinde <abbr title="scalar">tekli</abbr> ve <abbr title="list">çoklu</abbr> olmak üzere iki ana bağlam vardır.
 
-<h2>LIST bağlamda dizi</h2>
+<h2>Çoklu bağlamda dizi</h2>
 
 Bir örnek verelim:
 
@@ -42,33 +37,28 @@ my @words = ('Foo', 'Bar', 'Baz');
 my @names = @words;
 </code>
 
-Yukaridaki atama sonrası <hl>@names</hl> dizisi <hl>@words</hl> dizi değerlerinin kopyasını içerir;
+Yukaridaki atama sonrası <hl>@names</hl> dizisi <hl>@words</hl> dizi değerlerinin kopyalarını içerir.
 
 Bir diziyi başka bir diziye atama işlemi dizinin içeriğini diğer diziye kopyalar.
 
-<h2>SCALAR bağlamda dizi</h2>
+<h2>Tekli bağlamda dizi</h2>
 
 <code lang="perl">
 my @words = ('Foo', 'Bar', 'Baz');
 my $people =  @words;
 </code>
 
-Bu kez <hl>@words</hl> dizisini <hl>$people</hl> adlı scalar bir değişkene atadık.
+Bu kez <hl>@words</hl> dizisini <hl>$people</hl> adlı <abbr title="scalar">tek değerli</abbr> bir değişkene atadık.
 
-Diğer diller farklı davranabilir ama Perl dilinde
-bu atama işlemi <b>dizinin eleman sayısını</b>
-scalar değişkene kopyalar.
+Başka dillerde bu farklı sonuçlar doğurur ama Perl dilinde bu atama işlemi <b>dizinin eleman sayısını</b> tek değerli değişkene kopyalar.
 
-Bu işlem isteğe bağlıdır ve yukarıdaki kullanımın faydalı olduğu da söylenemez ama bu işlemin çok
-faydalı olduğu birçok başka durum vardır.
+Hem keyfî hem de yukarıdaki kullanımın faydalı olduğu da söylenemez olsa da bu işlemin çok faydalı olduğu birçok başka durum vardır.
 
-<h2>SCALAR ve LIST bağlam</h2>
+<h2>Tekli ve Çoklu Bağlam</h2>
 
-Yukarıda SCALAR and LIST bağlamdan bahsettik. Anlam olarak tek bir değer (SCALAR bağlam) 
-veya birden fazla değeri (LIST context) içermektedir.
-LIST bağlamda sayı değerleri 0, 1, 2 veya başka bir rakam olabilir.
+Yukarıda tekli, yani tek bir değer beklediğimiz, ve çoklu, yani birden çok değer beklediğimiz, bağlam örnekleri gördük. Çoklu bağlamda bir ifade 0, 1, 2 ya da başka herhangi bir sayıda değer içerebilir.
 
-<h2>if ifadesi bağlamı</h2>
+<h2>if ifadesinin bağlamı</h2>
 
 Aşağıdaki örneğe bakalım:
 
@@ -80,108 +70,97 @@ if (@words) {
 }
 </code>
 
-<hl>if</hl> ifadesinin koşul kısmında
-bir değer bekliyoruz. Bu durumda beklenen SCALAR bağlam olmalı.
+<hl>if</hl> ifadesinin koşul kısmında tek bir değer bekliyoruz. Bu durumda beklenen tekli bağlam olmalı.
 
-Şu an bir dizinin SCALAR bağlamdaki değerinin eleman sayısı olduğunu biliyoruz.
-Ayrıca eğer ki dizi boş ise bu değerin 0 (that is <a href="/boolean-values-in-perl">FALSE</a>)
-olduğunu, 1 veya daha fazla eleman içeriyor ise pozitif bir sayı (that is <a href="/boolean-values-in-perl">TRUE</a>)
-olduğunu da biliyoruz.
+Böylece bir dizinin tekli bağlamdaki değerinin dizideki eleman sayısı olduğunu biliyoruz. Ayrıca boş bir dizideki eleman sayısın sıfır (yani <a href="/boolean-values-in-perl">yanlış</a>) olduğunu, bir veya daha fazla eleman içeriyor ise pozitif bir sayı (yani <a href="/boolean-values-in-perl">doğru</a>) olduğunu da biliyoruz.
 
-Yukarıda bahsedilen durumlardan dolayı, <hl>if (@words)</hl> kod ifadesi
-dizide herhangi bir eleman olup olmadığını kontrol eder ve dizi boş ise koşul sağlanmamış olur.
+Yani, yukarıda bahsettiğimiz keyfî işlem sayesinde, <hl>if (@words)</hl> kod ifadesi dizide herhangi bir eleman olup olmadığını sınar. Dizi boş ise koşul sağlanmamış olur.
 
-if-koşulunu <hl>if (! @words)</hl> şekline çevirmemiz durumunda dizi
-boş ise true dönecektir.
+if-koşulunu <hl>if (! @words)</hl> şekline çevirmemiz durumunda dizi boş ise sınama doğru değeri verir.
 
-<h2>SCALAR and LIST bağlam</h2>
+<h2>Tekli and Çoklu Bağlam</h2>
 
-Bir <a href="/the-year-19100">önceki bölümde</a> <hl>localtime()</hl> ifadesinin 
-SCALAR ve LIST bağlamda nasıl davrandığını, şimdi ise bir dizinin SCALAR and LIST bağlamda nasıl davrandığını gördük.
+<a href="/the-year-19100">Bir önceki bölümde</a> <hl>localtime()</hl> ifadesinin tekli ve çoklu bağlamlarda nasıl davrandığını, şimdi ise bir dizinin tekli and çoklu bağlamlarda nasıl davrandığını gördük.
 
-Bağlam hakkında genel bir kural yoktur, özel durumları öğrenmek zorundasınız
-ama genellikle bunlar çok açıktır. Herhangi bir durumda <a href="/core-perl-documentation-cpan-module-documentation">perldoc</a>
-kullanan bir fonksiyona bakıyor iseniz, bu fonksiyonların her biri
-için bir açıklama göreceksiniz.
-En azından SCALAR ve LIST bağlamların farklı sonuçlar verdiği durumlarda.
+Bağlam üzerinde genel-geçer bir kural yoktur. Özel durumları öğrenmek zorundasınız ama genellikle bunlar çok açıktır. Ne olursa olsun, <a href="/core-perl-documentation-cpan-module-documentation">perldoc</a> kullanarak fonksiyonun dokümantasyonuna bakarsanız, tekli ve çoklu bağlamlara göre farklı değerler veren her fonksiyon için kısa bir açıklama göreceksiniz.
 
-Şimdi daha fazla Perl ifadelerine ve ne tip
-bağlam oluşturduklarına bakalım.
+Şimdi biraz daha Perl ifadelerine ve nasıl bağlamlar oluşturduklarına bakalım.
 
-<h2>SCALAR bağlam oluşturmak</h2>
+<h2>Tekli bağlam oluşturmak</h2>
 
-Herhangi scalar bir değişkene ne atamasi yapar iseniz yapın bunun SCALAR bir bağlam içereceğini gördük.
-Bunu aşağıda açıklayalım:
+Tek değerli herhangi bir değişkene ne atamasi yaparsanız yapın bu işlemin
+tekli bağlamda gerçekleştiğini gördük.  Bunu şöyle açıklayabiliriz:
 
 <code>
-$x = SCALAR;
+$x = TEKDEĞER;
 </code>
 
-Dizinin her bir elemanı scalar olduğundan, bunlara yapılan atamalar SCALAR bağlam oluşturur:
+Dizinin her bir elemanı da tek bir değer tuttuğundan, bunlara yapılan atamalar da tekli bağlam oluşturur:
 
 <code>
-$word[3] = SCALAR;
+$word[3] = TEKDEĞER;
 </code>
 
-Birleştirme operatörü her iki tarafında string beklediği için aşağıdaki 2 durumda da SCALAR bağlam oluşturur:
+Birleştirme operatörü her iki tarafında karakter dizesi beklediği için aşağıdaki iki durumda da tekli bağlam oluşturur:
 
 <code>
-"string" . SCALAR;
+"string" . TEKDEĞER;
 </code>
 
 ve ayrıca
 
 <code>
-SCALAR . "string"
+TEKDEĞER . "string"
 </code>
 
-Bu nedenle aşağıdaki kod parçası
+Yani
 
 <code lang="perl">
 my @words = ('Foo', 'Bar', 'Baz');
-say "Number of elements: " . @words;
-say "It is now " . localtime();
+say "Eleman sayisi: " . @words;
+say "Simdi " . localtime();
 </code>
 
-ekrana aşağıdakini yazacaktır
+programını çalıştırdığımızda
 
 <code>
-Number of elements: 3
-It is now Thu Feb 30 14:15:53 1998
+Eleman sayisi: 3
+Simdi Thu Feb 30 14:15:53 1998
 </code>
 
-Sayısal operatörler genellikle 2 sayı bekler - her iki tarafta - 2 scalar.
-Bu yüzden sayısal operatörler her iki taraftan SCALAR bağlam oluştururlar.
+çıktısını verir.
+
+Sayısal işlemler genellikle işlem imgesini her iki yanında iki sayı &mdash;iki tek değerli ifade&mdash; bekler. Bu nedenle sayısal işlemler her iki yanlarında tekli bağlam oluştururlar.
 
 <code>
-5 + SCALAR;
+5 + TEKDEĞER;
 
-SCALAR + 5;
+TEKDEĞER + 5;
 </code>
 
-<h2>LIST bağlam oluşturma</h2>
+<h2>Çoklu bağlam oluşturma</h2>
 
-LIST bağlam oluşturmak için bazı yaplar vardır:
+Belli başlı bazı yapılar çoklu bağlam oluşturur:
 
 Diziye atama yapmak bunlardan biridir:
 
 <code>
-@x = LIST;
+@x = LİSTE;
 </code>
 
 Bir listeye atama yapmak diğer bir yoldur:
 
 <code>
-($x, $y) = LIST;
+($x, $y) = LİSTE;
 </code>
 
 Bu liste tek bir eleman içerse dahi durum aynıdır:
 
 <code>
-($x) =  LIST;
+($x) =  LİSTE;
 </code>
 
-Bu insanları aldatmak için bize önemli bir ozellik sağlar:
+Bu da bize başkalarını kolayca tuzağa düşürmek bir yöntem verir:
 
 <h2>Parantezler ne zaman önemlidir?</h2>
 
@@ -199,35 +178,28 @@ say $x;
 say $y;
 </code>
 
-Ekran çıktısı:
+programı
 
 <code>
 Foo
 3
 </code>
 
+çıktısını verir.
+
 Bu, parantezlerin önemli olduğu nadir durumlardan biridir.
 
-İlk atama olan <hl>my ($x) = @words;</hl> ifadesinde bir <b>liste</b>ye
-scalar değişken(ler)i atadık.
-Bu işlem bize sağ tarafta LIST bağlam oluşturdu. Yani dizinin <b>değerleri</b>
-sol taraftaki listeye kopyalandı. Sadece bir scalar olduğundan, dizinin ilk elemanı
-kopyalandı, diğerleri kopyalanmadı.
+İlk atama olan <hl>my ($x) = @words;</hl> ifadesinde bir tekdeğerli değişken listesine atama yaptık. Bu işlem sağ tarafta çoklu bağlam oluşturdu. Yani dizinin <b>değerleri</b> sol taraftaki listeye kopyalandı. Sadece bir tek değerli değişken olduğundan, dizinin ilk elemanı kopyalandı, diğerleri kopyalanmadı.
 
-İkinci atama olan <hl>my $y = @words;</hl> ifadesinde <b>direkt</b> scalar
-bir değişkene atama yaptık. Bu işlem bize sağ tarafta SCALAR bağlam oluşturdu. 
-SCALAR bağlamda bir dizi eleman sayısını döndürür.
+İkinci atama olan <hl>my $y = @words;</hl> ifadesinde <b>doğrudan</b> tek değerli bir değişkene atama yaptık. Bu işlem sağ tarafta tekli bağlam oluşturdu.  Tekli bağlamda bir dizi, dizideki eleman sayısını verir.
 
-Bahsedilen bu durum <a href="/subroutines-and-functions-in-perl">fonksiyona parametre geçmek</a>
-konusuna geçtiğinizde çok önemli olacak.
+Bu gözlem, <a href="/subroutines-and-functions-in-perl">fonksiyona parametre göndermek</a> konusuna geçtiğinizde çok önemli olacak.
 
-<h2>SCALAR bağlama zorlamak</h2>
+<h2>Teklik bağlama zorlamak</h2>
 
-Hem <hl>print()</hl> hem de <hl>say()</hl> parametreleri için LIST bağlam oluştururlar.
-Peki bu durumda bir dizideki eleman sayısını ekrana basmak icin ne yazılması gerekiyor?
-Ya da <hl>localtime()</hl> fonksiyonundan dönen formatlı tarihi ekrana basmak isterseniz?
+Hem <hl>print()</hl> hem de <hl>say()</hl> parametreleri için çoklu bağlam oluştururlar. Ya bir dizideki eleman sayısını yazdırmak isterseniz ne yapacaksınız? Ya da <hl>localtime()</hl> fonksiyonunun verdiği formatlanmış tarihi yazdırmak isterseniz?
 
-Asağidakini deneyelim:
+Şu programı bir deneyelim:
 
 <code lang="perl">
 use strict;
@@ -240,42 +212,46 @@ say @words;
 say localtime();
 </code>
 
-Çıktı şu şekilde oluşur
+Çıktısı:
 
 <code>
 FooBarBaz
 3542071011113100
 </code>
-İlkinin anlaşılması bir şekilde mümkün, bunlar dizideki değerlerin gelişi güzel yazılmış halidir.
 
-İkinci ise daha karmaşıktır. Bu sonuc <hl>time()</hl> fonksiyonundan dönen değer ile aynı
-değildir. Bu aslında <hl>localtime()</hl> fonksiyonundan LIST bağlamda dönen 9 
-rakamdır. Hatırlamıyorsanız <a href="/the-year-19100">the year of 19100</a> adlı 
-bölümü inceleyebilirsiniz.
+İlkinin anlaşılması bir şekilde mümkün, bunlar dizideki değerlerin peşisıra
+yazılmış halidir.
 
-Çözümü SCALAR bağlamda veri döndüren <hl>scalar()</hl> fonksiyonunu kullanmaktır.
-Aslında bu <hl>scalar()</hl> fonksiyonunun yaptığı tüm iş denebilir. Her ne kadar bu kelimenin
-perl dünyasında sıkça kullanılmadığını düşünsem de, bazı insanlar bu fonksiyonu
-çoğul ifadeyi tekile dönüştüren <b>casting</b> gibi düşünebilir. 
+İkinci ise çok daha kafa karıştırıcı. Bu sonuc <hl>time()</hl>
+fonksiyonundan verdiği değer ile aynı değildir. Bu aslında
+<hl>localtime()</hl> fonksiyonunun çoklu bağlamda verdiği dokuz sayının peşi
+sıra yazılmış şeklidir. Hatırlamıyorsanız <a href="/the-year-19100">19100
+yılı</a> adlı bölüme bir göz atın.
+
+Çözüm, argümanına tekli bağlam yaratan <hl>scalar()</hl> fonksiyonunu
+kullanmaktır.  Aslında <hl>scalar()</hl> fonksiyonunun tek görevi budur. Bu
+fonksiyonu çoğul bir ifadeyi tekile dönüştüren <b>casting</b> gibi düşünmek
+mümkün ama Perl dünyasında bu kelimenin pek kullanılmadığını sanıyorum.
+
 <code lang="perl">
-
 say scalar @words;
 say scalar localtime();
 </code>
 
-Çıktı aşağıdaki gibi olacaktır:
+programını çalıştırdığımızda
 
 <code>
 3
 Mon Nov  7 21:02:41 2011
 </code>
 
-<h2>Perlde bir dizinin uzunluğu veya boyutu</h2>
+çıktısını verecektir.
 
-Perlde bir dizinin boyutunu almak isterseniz SCALAR bağlama zorlayan ve boyutunu döndüren
-<hl>scalar()</hl> fonksiyonunu kullanabilirsiniz.
+<h2>Perl'de bir dizinin uzunluğu veya boyutu</h2>
 
-<h2>Hileli metod</h2>
+Perl'de bir dizinin boyutunu <hl>scalar()</hl> fonksiyonunu kullanarak tekli bağlama zorlamak yoluyla alabilirsiniz.
+
+<h2>Kurnaz yöntem</h2>
 
 Bazen aşağıdaki gibi kod görebilirsiniz:
 
@@ -283,9 +259,7 @@ Bazen aşağıdaki gibi kod görebilirsiniz:
 0 + @words;
 </code>
 
-Bu dizinin boyutunu almanın hileli bir yöntemidir. <hl> + </hl> operatörü 
-her iki tarafta da scalar bağlam oluşturur. Bir dizi boyutunu SCALAR bağlamda döndürecektir.
-0 eklemek rakamı değiştirmez, bu nedenle yukarıdaki ifade dizinin boyutunu döndürür.
+Bu dizinin boyutunu almanın kurnaz yöntemidir. <hl> + </hl> işlem imgesi her iki tarafta da tekli bağlam oluşturur. Yani bu ifadede kullanılan <hl>@words</hl> boyutunu verecektir. Sıfır eklemek bir sayının değerini değiştirmez, bu nedenle yukarıdaki ifade dizinin boyutunu verir.
 
-<hl>scalar</hl> fonksiyonunu kullanarak biraz daha uzun ama daha net yazmanızı öneririm.
+<hl>scalar</hl> fonksiyonunu kullanarak biraz daha uzun ama daha açık yazmanızı öneririm.
 
