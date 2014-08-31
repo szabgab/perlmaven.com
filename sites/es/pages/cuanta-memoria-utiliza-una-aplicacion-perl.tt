@@ -1,5 +1,5 @@
 =title Cuanta memoria utiliza una aplicacion de Perl ?
-=timestamp 2013-12-12T12:45:01
+=timestamp 2014-08-29T19:45:01
 =indexes Memory::Usage, Linux
 =status show
 =original how-much-memory-does-the-perl-application-use
@@ -11,8 +11,9 @@
 =social 1
 
 =abstract start
+
 El otro dia tuve una queja que mi Perl script utilizaba mucha memoria. Asi que necesite una manera de verificar esto y monitorizarlo.
-EncontrÈ <a href="https://metacpan.org/pod/Memory::Usage">Memory::Usage</a> en CPAN.
+Encontr√© <a href="https://metacpan.org/pod/Memory::Usage">Memory::Usage</a> en CPAN.
 Aunque solo funciona in <b>Linux</b> (ni en BSD o Mac OSX), pero fue muy util ahi. 
 
 =abstract end
@@ -39,7 +40,7 @@ Despues de crear el objeto <h1>Memory::Usage</h1>, cada llamada a <h1>record</h1
 guardada el actual estado de uso de memoria en el actual proceso. (Basado en el id de proceso,
 procesos bifurificados no se mediran separadamente.)
 
-El llamado del metodo <h1>dump</h1> imprimir· el dato guardado.
+El llamado del metodo <h1>dump</h1> imprimir√° el dato guardado.
 
 Cada fila representa el dato obtenido en la llamada del <h1>record</h1>. Al final de cada fila
 nosotros podemos ver el texto pasado al metodo <h1>record</h1> en cada punto.
@@ -138,8 +139,8 @@ el metodo <h1>report</h1> que retorna un reporte como cadena. Entonces puedes gu
 
 <hl>dump</hl> es implementado como <hl>print STDERR $mu->report();</hl>
 
-Si desea crear informes afinado a˙n m·s finos, puede llamar al mÈtodo <hl>state</hl>
-para buscar los n˙meros individuales. Por ejemplo:
+Si desea crear informes afinado a√∫n m√°s finos, puede llamar al m√©todo <hl>state</hl>
+para buscar los n√∫meros individuales. Por ejemplo:
 
 
 <code lang="perl">
@@ -179,17 +180,17 @@ $VAR1 = bless( [
 </code>
 
 Arriba puedes ver el reporte generado por el metodo <hl>dump</hl>. Abajo puedes ver el raw data.
-you can see the raw data. Para m·s detalles, vÈase
+you can see the raw data. Para m√°s detalles, v√©ase
 <a href="https://metacpan.org/pod/Memory::Usage">Memory::Usage</a>.
 
 <h2>Test::Memory::Usage</h2>
 
-Comprobar que el cÛdigo no utiliza mucha memoria extra es ˙til, pero no lo har·s despuÈs de cada cambio.
-Si pudieras agregar este chequeo a pruebas autom·ticas aunque...
+Comprobar que el c√≥digo no utiliza mucha memoria extra es √∫til, pero no lo har√°s despu√©s de cada cambio.
+Si pudieras agregar este chequeo a pruebas autom√°ticas aunque...
 
 
 <a href="https://metacpan.org/pod/Test::Memory::Usage">Test::Memory::Usage</a> es un contenedor
 <a href="https://metacpan.org/pod/Memory::Usage">Memory::Usage</a> que tu puedes utilizar 
-seguro de que tu mÛdulo de no comenzar· a utilizar mucha memoria m·s adelante. En Linux, por lo menos.
+seguro de que tu m√≥dulo de no comenzar√° a utilizar mucha memoria m√°s adelante. En Linux, por lo menos.
 
 
