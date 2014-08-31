@@ -14,6 +14,7 @@ khadis;Khadis Thok;khadis.png;https://plus.google.com/117015659325563649853
 leprevost;Felipe da Veiga Leprevost;leprevost.jpg;https://plus.google.com/107515431915475316857
 mca;McA;mca.png
 mguttman;Meir Guttman;mguttman.png
+nanis;A. Sinan Unur;nanis.png;https://plus.google.com/+ASinanUnur/
 oval;Olivier Valuet;;https://plus.google.com/111231154240098109931
 shatlovsky;Alex Shatlovsky;shatlovsky.png;https://plus.google.com/104990662224926649617
 shelling;Shelling Ford;shelling.png;https://plus.google.com/113634082684193579669
