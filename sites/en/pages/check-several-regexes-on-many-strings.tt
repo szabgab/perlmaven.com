@@ -111,7 +111,7 @@ The 3 lines that match all 3 regexes.
 
 This solution works, but there are other solutions that are more compact and faster.
 
-<h2>Short-circuit with flag</hl>
+<h2>Short-circuit with flag</h2>
 
 We could short-circuit checking the regexes. After all there is no reason to go over all
 the regexes if we have already found one that does not match. If there is one that does not
@@ -154,7 +154,7 @@ then we will probably see the speed improvement.)
 This second solution is then faster, but it has the same length of code. Besides, that <hl>$failed</hl> flag just feels a bit
 cumbersome. We could improve this script by using a <b>label</b> on the outer loop.
 
-<h2>Short-circuit with label</hl>
+<h2>Short-circuit with label</h2>
 
 We put the <hl>LINE:</hl> label in-front of the outer loop. This allows us to call <hl>next LINE</hl> in the inner-loop
 and thereby skipping all the code till the outer loop. Including the <hl>print</hl> statement. This we we don't need to manually
