@@ -1,6 +1,6 @@
 =title Does List::MoreUtils::all really short-circut?
 =timestamp 2014-01-15T07:30:01
-=indexes List::MoreUtils
+=indexes List::MoreUtils, all
 =status draft
 =books beginner_book
 =author szabgab
@@ -9,6 +9,8 @@
 =social 1
 
 =abstract start
+
+The other day, someone on a mailing list asked 
 
 =abstract end
 
