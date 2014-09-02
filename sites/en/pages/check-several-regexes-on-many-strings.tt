@@ -34,7 +34,7 @@ But what happens if there are more than one regexes?
 
 =abstract end
 
-<screencast file="/media/pro/videos/check-several-regexes-on-many-strings.mp4" />
+<screencast file="/media/videos/check-several-regexes-on-many-strings.mp4" />
 
 What if we have 5-10 regexes and we would like to filter the rows that match <b>all of them</b>?
 
