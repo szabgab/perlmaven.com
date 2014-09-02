@@ -66,7 +66,7 @@ Ipsum passages, and more recently with desktop publishing software
 like Aldus PageMaker including versions of Lorem Ipsum.
 </code>
 
-We also use the <hl>DATA</hl> built-in file-handle which allows us to treat the <b>end of the script after the __DATA__ mark<b> as a file and read it line-by line.
+We also use the <hl>DATA</hl> built-in file-handle which allows us to treat the <b>end of the script after the __DATA__ mark</b> as a file and read it line-by line.
 There we put a few lines of text copied from <a href="http://www.lipsum.com/">Lorep ipsum</a> web site. (In the coming examples, I'll skip the part after the __DATA__
 mark, but in order to run the script, please add it back.)
 
