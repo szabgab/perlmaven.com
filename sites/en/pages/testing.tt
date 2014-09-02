@@ -30,6 +30,7 @@ Articles and screencast available for <a href="/pro">Perl Maven Pro</a> subscrib
   <li><a href="/pro/introducing-test-simple">Introducing test automation with Test::Simple</a></li>
   <li><a href="/pro/test-plan-and-test-descriptions">Test plan and test descriptions</a></li>
   <li><a href="/pro/refactoring-large-test-suite-separating-data-from-code">Refactoring large test suite - separating data from code</a></li>
+  <li><a href="/pro/test-without-a-plan">Test without a Plan</a></li>
   <li><a href=""></a></li>
   <li><a href="/pro/mocking-function-to-fake-environment">Mocking a function to fake environment</a></li>
   <li><a href="/pro/testing-session-mocking-time">Testing sessions by mocking time</a></li>
