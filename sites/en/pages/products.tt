@@ -16,7 +16,7 @@ The following products are available
 <h2>Pro</h2>
 
 Subscribers of the <a href="/pro">Perl Maven Pro</a> get access to additional articles
-and screencasts publish on the Perl Maven site.
+and screencasts published on the Perl Maven site.
 
 <h2>E-books</h2>
 <ul>
@@ -28,12 +28,12 @@ and screencasts publish on the Perl Maven site.
 
 <h2>Video courses</h2>
 
-Available via Udemy.
+Available to the <a href="/pro">Perl Maven Pro</a> subscribers.
 
 <ul>
   <li><a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a></li>
-  <li><a href="/advanced-perl-maven-video-course">Advanced Perl Maven video course</a></li>
+  <li><a href="/testing">Test Automation using Perl articles and video course</a></li>
 <!--
-  <li><a href=""></a></li>
+  <li><a href="/advanced-perl-maven-video-course">Advanced Perl Maven video course</a></li>
 -->
 </ul>
