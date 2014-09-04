@@ -1,3 +1,6 @@
+###Status
+[![Build Status](https://travis-ci.org/szabgab/perlmaven.com.png)](https://travis-ci.org/szabgab/perlmaven.com)
+
 Perl Maven
 ==============
 
