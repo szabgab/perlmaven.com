@@ -74,6 +74,8 @@ There are a few strange modules with <a href="https://metacpan.org/search?q=vers
 Some wildcards can be also used:
 <a href="https://metacpan.org/search?q=version%3A5.*">version:5.*</a>
 or include a bit more results: <a href="https://metacpan.org/search?q=version%3A5*">version:5*</a>
+or only one digit (character) after the dot: <a href="https://metacpan.org/search?q=version%3A5.?">version:5.?</a>
+
 
 <h2>Combined prefixes</h2>
 
