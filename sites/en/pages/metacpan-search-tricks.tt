@@ -33,6 +33,24 @@ Filter by module name:
 <a href="https://metacpan.org/search?q=module:Middleware">module:Middleware</a> search for all the <b>Middleware</b>. Apparently the <b>module:</b> prefix
 matches any full part of the module names. (Hint: searching for <a href="https://metacpan.org/search?q=module%3Aiddleware">module:iddleware</a> does not bring any results.)
 
+<h2>distribution:</h2>
+
+Filter by distribution:
+
+<a href="https://metacpan.org/search?q=distribution%3ADancer+auth">distribution:Dancer auth</a> search for <b>auth</b> in the Dancer distribution.
+
+vs
+
+<a href="https://metacpan.org/search?q=module%3ADancer+auth">module:Dancer auth</a> search for <b>auth</b> in the modules with Dancer in their name.
+
+
+<a href="https://metacpan.org/search?q=distribution%3ADancer-Plugin-Auth-CAS++auth">distribution:Dancer-Plugin-Auth-CAS  auth</a> search in the Dancer-Plugin-Auth-CAS
+distribution.
+
+vs
+
+<a href="https://metacpan.org/search?q=module%3ADancer%3A%3APlugin++auth">module:Dancer::Plugin  auth</a> search in all the modules in the Dancer::Plugins namespace.
+
 <h2>author:</h2>
 
 Filter by author:
