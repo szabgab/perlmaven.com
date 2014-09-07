@@ -40,7 +40,7 @@ There is an article trying to explain the, sometimes overlapping, meaning of
 
 Two articles that you might find useful covering the process of module installation are:
 <ul>
-<li><a href="http://perlmaven.com/how-to-install-a-perl-module-from-cpan">Installing a Perl Module from CPAN on Windows, Linux and Mac OSX</a><li>
+<li><a href="http://perlmaven.com/how-to-install-a-perl-module-from-cpan">Installing a Perl Module from CPAN on Windows, Linux and Mac OSX</a></li>
 <li><a href="http://perlmaven.com/install-perl-modules-without-root-rights-on-linux-ubuntu-13-10">Install Perl modules without root rights on Linux Ubuntu 13.10 x64</a></li>
 </ul>
 
@@ -57,7 +57,7 @@ This article and screencast might give you some ideas how to do that:
 
 <a href="http://perlmaven.com/contributing-to-a-perl-module-on-cpan-using-vim-and-github">Contributing to a Perl module on CPAN (using vim and Github)</a>
 
-<h2>For new authors</h2>
+<h2>New authors</h2>
 
 If you'd like to upload a module to CPAN you will need to create an account on <a href="http://pause.perl.org/">PAUSE</a>, The Perl Authors Upload Server.
 Creating the account is a manual process, don't ask why it is the tradition. Anyway, you can click on "<b>Request PAUSE account</b>" link on that site,
@@ -73,7 +73,14 @@ As far as I know it can take up to a few weeks to on of the admins to approve th
 
 Once you got your account approved, you are considered an author, and thus the rest is in the next section.
 
-<h2>For authors</h2>
+<!--
+
+<h2>Maintainers</h2>
+
+There is a small distinction between the "original author" of a module (distribution) and the current maintainer.
+-->
+
+<h2>Authors</h2>
 
 If you'd like to discuss your plans for a new module there are two places for that: <a href="http://prepan.org/">PrePAN</a>,
 and the <a href="http://lists.perl.org/list/module-authors.html">module-authors</a> mailing list. The latter is also very good
@@ -123,5 +130,5 @@ This article explains <a href="http://perlmaven.com/how-to-add-the-license-field
 This article is "in progress". I decided to share it in its current form as I think it already provides some valuable information.
 If you'd like to get updates on this article and on plenty of other issues with Perl, make sure you subscribe to the
 <a href="http://perlmaven.com/perl-maven-newsletter">newsletter</a>. If you also would like to get the <a href="/pro">Pro</a> articles and screencasts
-(see the list in <a href="http://perlmaven.com/archive">) then go ahead and subscribe to the <a href="/pro">Perl Maven Pro</a>.
+(see the list in <a href="http://perlmaven.com/archive">the archive</a>) then go ahead and subscribe to the <a href="/pro">Perl Maven Pro</a>.
 
