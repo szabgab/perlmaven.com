@@ -23,8 +23,8 @@ Try giving words that might be part of the name of the module you are looking fo
 
 
 There some extra tricks in using MetaCPAN. For example you can 
-<a href="http://perlmaven.com/listing-all-the-modules-in-a-namespace">search for all Plack Middleware or Perl::Critic Policies</a>
-or you can <a href="http://perlmaven.com/metacpan-search-tricks">limit your search by distribution name, version number or author.</a>
+<a href="/listing-all-the-modules-in-a-namespace">search for all Plack Middleware or Perl::Critic Policies</a>
+or you can <a href="/metacpan-search-tricks">limit your search by distribution name, version number or author.</a>
 
 <h3>Installing modules from CPAN</h3>
 
@@ -36,12 +36,12 @@ for example <a href="https://metacpan.org/release/HTML-Form">HTML-Form</a>, whil
 (Well, it could also contain 0 modules, but that's rare.)
 
 There is an article trying to explain the, sometimes overlapping, meaning of
-<a href="http://perlmaven.com/packages-modules-and-namespace-in-perl">Packages, modules, distributions, and namespaces in Perl</a>.
+<a href="/packages-modules-and-namespace-in-perl">Packages, modules, distributions, and namespaces in Perl</a>.
 
 Two articles that you might find useful covering the process of module installation are:
 <ul>
-<li><a href="http://perlmaven.com/how-to-install-a-perl-module-from-cpan">Installing a Perl Module from CPAN on Windows, Linux and Mac OSX</a></li>
-<li><a href="http://perlmaven.com/install-perl-modules-without-root-rights-on-linux-ubuntu-13-10">Install Perl modules without root rights on Linux Ubuntu 13.10 x64</a></li>
+<li><a href="/how-to-install-a-perl-module-from-cpan">Installing a Perl Module from CPAN on Windows, Linux and Mac OSX</a></li>
+<li><a href="/install-perl-modules-without-root-rights-on-linux-ubuntu-13-10">Install Perl modules without root rights on Linux Ubuntu 13.10 x64</a></li>
 </ul>
 
 
@@ -55,7 +55,7 @@ If the module is currently maintained by someone you can usually "send a patch" 
 
 This article and screencast might give you some ideas how to do that:
 
-<a href="http://perlmaven.com/contributing-to-a-perl-module-on-cpan-using-vim-and-github">Contributing to a Perl module on CPAN (using vim and Github)</a>
+<a href="/contributing-to-a-perl-module-on-cpan-using-vim-and-github">Contributing to a Perl module on CPAN (using vim and Github)</a>
 
 <h2>New authors</h2>
 
@@ -92,11 +92,11 @@ and that is the thing end-users download and install.
 
 Some of the articles that will be relevant to you as an author:
 
-<a href="http://perlmaven.com/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a>
+<a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a>
 
-<a href="http://perlmaven.com/how-to-add-images-to-cpan">How to add images to the documentation of Perl modules on CPAN</a>
+<a href="/how-to-add-images-to-cpan">How to add images to the documentation of Perl modules on CPAN</a>
 
-<a href="http://perlmaven.com/how-to-add-list-of-contributors-to-the-cpan-meta-files">Adding list of contributors to the CPAN META files</a>
+<a href="/how-to-add-list-of-contributors-to-the-cpan-meta-files">Adding list of contributors to the CPAN META files</a>
 
 <h2>Version Control</h2>
 
@@ -113,7 +113,7 @@ to your work.
 
 Here is an article that explains how can you do this:
 
-<a href="http://perlmaven.com/how-to-add-link-to-version-control-system-of-a-cpan-distributions">How to convince Meta CPAN to show a link to the version control system of a distribution?</a>
+<a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">How to convince Meta CPAN to show a link to the version control system of a distribution?</a>
 
 Even if you don't have a public version control system, please use a private one.
 
@@ -123,12 +123,12 @@ One of the key features of Open Source software is its license. There are certai
 on how to add license information to your distribution, but one of the often overlooked aspect is to add the license to the META files. Again, to let MetaCPAN,
 or any other program, easily extract it.
 
-This article explains <a href="http://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan">how to add the license field to the META.yml and META.json files on CPAN</a>.
+This article explains <a href="/how-to-add-the-license-field-to-meta-files-on-cpan">how to add the license field to the META.yml and META.json files on CPAN</a>.
 
 <h2>Caveat</h2>
 
 This article is "in progress". I decided to share it in its current form as I think it already provides some valuable information.
 If you'd like to get updates on this article and on plenty of other issues with Perl, make sure you subscribe to the
-<a href="http://perlmaven.com/perl-maven-newsletter">newsletter</a>. If you also would like to get the <a href="/pro">Pro</a> articles and screencasts
-(see the list in <a href="http://perlmaven.com/archive">the archive</a>) then go ahead and subscribe to the <a href="/pro">Perl Maven Pro</a>.
+<a href="/perl-maven-newsletter">newsletter</a>. If you also would like to get the <a href="/pro">Pro</a> articles and screencasts
+(see the list in <a href="/archive">the archive</a>) then go ahead and subscribe to the <a href="/pro">Perl Maven Pro</a>.
 
