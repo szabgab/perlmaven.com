@@ -40,3 +40,8 @@ BTW If you are looking for related articles on the Perl Maven site here are a fe
   <li>or type in Perl::Critic in the box on the top menu</li>
 </ul>
 
+<h2>Caveat</h2>
+
+As I Francisco Zarabozo commented and as I also <a href="/metacpan-search-tricks">found out later</a>, the <b>module:</b> keyword does not
+only match the beginning of the module name. It matches any whole part of the module name. So for example
+<a href="https://metacpan.org/search?q=module:Plugin">module:Plugin</a> will find any module that has Plugin in its name.
