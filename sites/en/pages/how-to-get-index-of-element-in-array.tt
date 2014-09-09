@@ -1,4 +1,4 @@
-=title  How to get the index of specific elment (value) of an array?
+=title  How to get the index of specific element (value) of an array?
 =timestamp 2014-09-09T16:00:01
 =indexes List::MoreUtils, first_index, grep
 =status show
@@ -69,7 +69,7 @@ say first_index { $_ eq 'Mars' } @planets;
 
 <h2>Get list of indexes</h2>
 
-Given the above array and another array listing elements we would like tor return the list of the indexes of these elements:
+Given the above array and another array listing elements we would like to return the list of the indexes of these elements:
 
 <code lang="perl">
 use strict;
@@ -139,7 +139,7 @@ say defined $index ? $index : -1;
 </code>
 
 The built-in <a href="/filtering-values-with-perl-grep">grep</a> function can filter the values of list or array based on some condition.
-As we are looking for the <b>index</b> of the specific value we need to filter the potential indexes of all the elemnts.
+As we are looking for the <b>index</b> of the specific value we need to filter the potential indexes of all the elements.
 The <hl>0 .. @planet-1</hl> expression generates the list of whole numbers between 0 and one less than the number of elements in the @planet array.
 As the indexing of an array starts by 0, this will be the largest index available in the array.
 
@@ -151,7 +151,7 @@ left-hand-side <hl>my ($index) = </hl> to create the list-context. By putting on
 value returned by grep. This distinction is only interesting if there could be more values in the original array matching the searched value and if we were
 interested all the indexes and not just the first one.
 
-With this the grep expression will work, but there is another difference. <hl>first_index</hl> will return -1 in case it did not find any mathching value,
+With this the grep expression will work, but there is another difference. <hl>first_index</hl> will return -1 in case it did not find any matching value,
 while <hl>grep</hl> will return an empty list and thus <hl>$index</hl> will be <a href="/undef-and-defined-in-perl">undefined</a>. This can be useful
 if we later want to check if there was any value by writing:
 
@@ -161,7 +161,7 @@ if (defined $index) {
 }
 </code>
 
-but if we would like to imitate the same behaviour as we had with <hl>first_index</hl> we can use
+but if we would like to imitate the same behavior as we had with <hl>first_index</hl> we can use
 the <a href="/the-ternary-operator-in-perl">ternary operator</a>:
 
 <code lang="perl">
@@ -217,7 +217,7 @@ The complexity of this solution is O(n+m), which, for large m and n values is mu
 <h2>Profiling and Benchmarking</h2>
 
 Of course computing the complexity is one thing, but actually comparing the performance of two solutions is
-a totally different issue. We won't discuss the details in this article, but before any "optimization" we sould
+a totally different issue. We won't discuss the details in this article, but before any "optimization" we should
 first use a profiler, probably the <a href="https://metacpan.org/pod/Devel::NYTProf">Devel::NYTProf</a> profiler
 to see if this part of the application has any measurable impact on the overall performance of the application.
 If yes, then we can use the <a href="https://metacpan.org/pod/Benchamrk">Benchmark</a> module to compare the
