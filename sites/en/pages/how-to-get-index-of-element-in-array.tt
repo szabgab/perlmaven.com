@@ -1,7 +1,7 @@
 =title  How to get the index of specific elment (value) of an array?
-=timestamp 2013-08-18T14:30:01
+=timestamp 2014-09-09T16:00:01
 =indexes List::MoreUtils, first_index, grep
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments 1
@@ -9,7 +9,7 @@
 
 =abstract start
 
-Recently I received two very different question, but where the answer boils down to the same:
+Recently I received two very different questions, where the answer is quite similar:
 
 <ul>
   <li>How can we get index of particular value(element) of array quickly?</li>
