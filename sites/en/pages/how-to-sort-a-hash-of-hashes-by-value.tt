@@ -93,7 +93,7 @@ Gaur 2
 </code>
 
 This would be nice, but unfortunatelly this result is not going to be the same always.
-After all the <b>Position</hl> values of 'Gaur 1' and 'Gaur 3' are both the same number (10),
+After all the <b>Position</b> values of 'Gaur 1' and 'Gaur 3' are both the same number (10),
 so the space-ship operator cannot really decide between the two.
 
 <h2>Secondary sorting</h2>
