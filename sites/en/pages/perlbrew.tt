@@ -1,0 +1,36 @@
+=title Perlbrew
+=timestamp 2014-01-15T07:30:01
+=indexes perlbrew
+=status draft
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+=abstract end
+
+perlbrew available lists all the versions of perl that are available in source code format on CPAN for you to use to brew (build) perl
+
+perlbrew list  - listing all the already brewed perl installation that you can use
+
+perlbrew install 
+
+perlbrew install -v perl-5.20.0 -Dusethreads --as perl-5.20.0_WITH_THREADS
+
+--threads ??
+
+
+While this is not a requirement, my next step is to install <a href="">App::cpanminus::reporter</a>
+to make sure every time I try to install a module, the test report will be sent to <a href="">CPAN Testers</a>.
+
+cpanm App::cpanminus::reporter
+
+
+<a href="http://www.perlmonks.org/?node=953822">App::perlbrew - Compiling Perl with thread support</a>
+
+<code lang="perl">
+</code>
+
+

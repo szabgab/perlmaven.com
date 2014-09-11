@@ -1,6 +1,6 @@
-=title PSGI the superglue between perl web application frameworks and web servers
+=title PSGI the superglue between Perl web application frameworks and web servers
 =timestamp 2014-06-28T18:13:11
-=indexes PSGI
+=indexes PSGI, Plack
 =status draft
 =author szabgab
 =archive 1
