@@ -43,7 +43,7 @@ en su POD.
 <h2>Entonces, cómo se puede hacer?</h2>
 
 Echemos un vistazo a:
-<a href="https://github.com/gphat/chart-clicker/blob/master/lib/Chart/Clicker.pm">source code of Char::Clicker</a>.
+<a href="https://github.com/gphat/chart-clicker/blob/master/lib/Chart/Clicker.pm">Codigo fuente de Char::Clicker</a>.
 
 Tiene la siguiente sección:
 
