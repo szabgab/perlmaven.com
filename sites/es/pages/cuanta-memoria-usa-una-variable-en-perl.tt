@@ -2,7 +2,9 @@
 =timestamp 2014-09-13T10:50:01
 =indexes memory, Devel::Size
 =status show
+=original how-much-memory-do-perl-variables-use
 =author szabgab
+=translator danimera
 =archive 1
 =comments 1
 =social 1
