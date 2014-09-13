@@ -1,9 +1,9 @@
 name: Felipe da Veiga Leprevost 
 img: leprevost.jpg
-url: www.leprevost.com.br
+url: http://www.leprevost.com.br
 twitter: leprevostfv
-gplus: plus.google.com/+FelipeLeprevost
-linkedin: www.linkedin.com/pub/felipe-leprevost/46/1b7/32
+gplus: +FelipeLeprevost
+linkedin: http://www.linkedin.com/pub/felipe-leprevost/46/1b7/32
 pause: LEPREVOST
 country: Brazil
 location: Curitiba, Paraná
