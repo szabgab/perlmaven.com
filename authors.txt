@@ -45,4 +45,4 @@ joaquinferrero;Joaquín Ferrero;joaquinferrero.png;https://plus.google.com/+Joaq
 name2rnd;Savenkova Natalya;natalya_savenkova.png;
 lenieto3;lenieto3;lenieto3.png;https://twitter.com/lenieto3
 ymyasoedov;Yuri Myasoedov;ymyasoedov.jpg;https://plus.google.com/111530493856272287515
-danimera;Daniel Mera;
+danimera;Daniel Otelch;
