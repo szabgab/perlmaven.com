@@ -88,6 +88,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li><a href="/acrescentando-em-arquivos">Acrescentando texto em arquivos (appending)</a></li>
 <li><a href="/abrindo-e-lendo-arquivos">Abrindo e Lendo Arquivos de Texto</a></li>
 <li><a href="/nao-abra-arquivos-na-forma-antiga">Não abra arquivos na forma antiga</a></li>
+<li><a href="/die">die</a></li>
 <li>Modo binário, lidando com Unicode</li>
 <li>Lendo de um arquivo binário, read, eof</li>
 <li>tell, seek</li>
