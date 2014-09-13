@@ -13,64 +13,51 @@
 
 Quando algo de errado acontece em seu script/programa, é de costume alertar o usuário sobre o problema. Em scripts executados pela linha de comando isso normalmente ocorre imprimindo na tela mensagens de aviso no <a href="/stdout-stderr-and-redirection"> canal de erro (Standard Error channel)</a>.
 
-When something goes slightly wrong in your script/program/application, it is customary to warn
-the user about the issue. In command line script this is normally done by printing
-a warning message to the <a href="/stdout-stderr-and-redirection">Standard Error channel</a>.
-
 =abstract end
 
-As explained in the article about the <a href="/stdout-stderr-and-redirection">standard output and error</a>,
-in Perl you can do it by printing to <hl>STDERR</hl>
+Como foi explicado no artigo sobre <a href="/stdout-stderr-and-redirection"> saída padrão e erros</a>,
+no Perl você pode fazer isso imprimindo diretamente em <hl>STDERR</hl>
 
 <code lang="perl">
 print STDERR "Slight problem here...\n";
 </code>
 
-There is a better, more standard way though, you could just call
-the <hl>warn</hl> function:
+Entretanto, há uma forma melhor e mais padronizada de se fazer isso, basta chamar a função <hl>warn</hl>:
 
 <code lang="perl">
 warn "Slight problem here.\n";
 </code>
 
-It is shorter, more expressive and in the above form has the same effect.
+Esse forma é menor, mais expressiva e possui o mesmo efeito do primeiro exemplo acima.
 
-In both cases the script, after printing the warning message, will keep running!
+Em ambos os casos acima, após imprimir a mensagem de aviso, o script continuará sendo executado!
 
-It provides more though.  If you leave out the trailing new-line (the <hl>\n</hl> at the end):
+Porém, ainda há mais. Se você excluir o caractere final de nova linha (o <hl>\n</hl> no final):
 
 <code lang="perl">
 warn "Slight problem here.";
 </code>
 
-then the output will include the name of the file and the line number,
-where the <hl>warn</hl> function was called:
+então a saída irá incluir o nome do arquivo e o número da linha onde a função <hl>warn</hl> foi chamada:
 
 <code>
 Slight problem here. at programming.pl line 5.
 </code>
 
-This can be very useful when you have a script that runs a lot of other scripts,
-or when you have a bigger application with many modules.
-This will make it much easier for you, or for the user of your program,
-to track down the source of the problem.
+Isso pode ser bastante útil quando você possui um script que executa vários outros scripts ou quando você possui uma aplicação maior com diferentes módulos. Dessa forma, será muito mais fácil para você, ou para o usuário do programa de rastrear a origem do problema.
 
-<h2>Catching warnings</h2>
+<h2>Capturando avisos</h2>
 
-There is even more.
+Ainda há mais.
 
-Perl introduced a special signal-handle for warnings.
-This means you, or someone else, can later add code to the program that
-<a href="/how-to-capture-and-save-warnings-in-perl">captures all the warnings</a>.
-This is a bit more advanced topic though, but if you are interested go ahead,
-check out that page.
+Perl possui um manipulador especial para avisos.
+Isso significa que você, ou outra pessoa, pode adicionar código ao programa que <a href="/how-to-capture-and-save-warnings-in-perl"> captura todos os avisos </a>. Isso é algo um pouco mais avançado, mas se você estiver interessado, vá em frente e veja esse tutorial.
 
-<h2>warning</h2>
+<h2>aviso</h2>
 
-A slight warning here. You might encounter cases when a warning called after
-a print statement shows up before the content of the print statement:
+Um pequeno aviso. Você pode encontrar casos onde um aviso que é chamado após a declaração <hl>print</hl> apareça antes do conteúdo a ser impresso.
 
-This code:
+O código abaixo:
 
 <code lang="perl">
 print "before";
@@ -79,7 +66,7 @@ print STDERR "More problems.\n";
 print "after";
 </code>
 
-generating this output:
+gera este resultado:
 
 <code>
 Slight problem here.
@@ -87,7 +74,7 @@ More problems.
 beforeafter
 </code>
 
-Where the word "before" appears after both warning messages.
+Onde a palavra “before” aparece após ambos os avisos.
 
-In that case read about <a href="/stdout-stderr-and-redirection#buffering">buffering</a>.
+Neste caso, leia sobre <a href="/stdout-stderr-and-redirection#buffering">buffering</a>.
 
