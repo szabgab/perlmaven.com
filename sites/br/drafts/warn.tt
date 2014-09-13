@@ -1,14 +1,17 @@
 =title Alertando quando algo da errado
-=timestamp 2013-07-09T09:01:01
+=timestamp 2014-09-13T09:38:00
 =indexes warn, STDERR
 =status show
 =books beginner_book
 =author szabgab
+= translator leprevost
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
+
+Quando algo de errado acontece em seu script/programa, é de costume alertar o usuário sobre o problema. Em scripts executados pela linha de comando isso normalmente ocorre imprimindo na tela mensagens de aviso no <a href="/stdout-stderr-and-redirection"> canal de erro (Standard Error channel)</a>.
 
 When something goes slightly wrong in your script/program/application, it is customary to warn
 the user about the issue. In command line script this is normally done by printing

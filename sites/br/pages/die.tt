@@ -31,20 +31,20 @@ Isso pode ajudar a resolver os problemas identificando a sua origem.
 <h2>Lançando Exceções</h2>
 
 Enquanto que em um simples script isso normalmente não é necessário, a função <hl>die</hl> na verdade lança exceções.
-Em scripts simples você provavelmente não terá um codigo especialmente escrito para tratar essas exceções.
+Em scripts simples você provavelmente não terá um código especialmente escrito para tratar essas exceções.
 Nestes casos você simplesmente usa a função <hl>die</hl> ao invés de invocar a função <a href="/warn">warn</a>
 e então <a href="/how-to-exit-from-perl-script">>exit</a>.
 
 
 Em aplicações maiores, você provavelmente irá querer lançar exceções e em seguida capturá-las usando <hl>eval</hl>. 
-Nós ireamos lidar sobre isso em um outro artigo.
+Nós iremos lidar sobre isso em um outro artigo.
 
 
 <h2>Colecionando chamadas</h2>
 
 De uma forma um pouco mais avançada, Perl fornece uma forma de se lidar com o sinal de chamada da função <hl>die</hl>,
-assim como é feito com a <hl>warn</hl>. A grande diferença é que o gerenciador do sinal que coleta a chanda da função <hl>die</hl>
+assim como é feito com a <hl>warn</hl>. A grande diferença é que o gerenciador do sinal que coleta a chamada da função <hl>die</hl>
 não impede que o programa seja interrompido. Neste caso é apenas interessante em casos onde você já capturou a exceção
 (p.ex. usando a função <hl>eval</hl>) e está interessado em encontrar onde alguém capturou uma exceção,
 mas não lidou de forma adequada.
-Para estes casos veja o artigo <a href="/how-to-capture-and-save-warnings-in-perl">capturando cahamdas</a>.
+Para estes casos veja o artigo <a href="/how-to-capture-and-save-warnings-in-perl">capturando chamadas</a>.
