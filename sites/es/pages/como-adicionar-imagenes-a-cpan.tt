@@ -8,7 +8,7 @@
 =social 1
 
 =abstract start
-Tener mucha documentaciÛn clara de un mÛdulo CPAN es impresionante, pero
+Tener mucha documentaci√≥n clara de un m√≥dulo CPAN es impresionante, pero
 ver un muro de texto mientras se lee  puede ser un poco aburrido.
 
 Afortunadamente ambos <a href="http://metacpan.org/"> MetaCPAN</a>
@@ -36,16 +36,16 @@ Primero vinculos de algunos ejemplos:
 <li><a href="http://search.cpan.org/dist/SVG/lib/SVG.pm">SVG</a></li>
 </ul>
 
-Como seÒalÛ el Èter en el hipervÌnculo <a href="http://blogs.perl.org/users/gabor_szabo/2013/08/adding-images-to-cpan.html"> blogs.perl.org</a>
-post, <a href="http://grep.cpan.me/?q=%3Dbegin+html"> grep.cpan.me</a> puede enumerar un montÛn de mÛdulos que pueden tener algunos HTML incrustado
+Como se√±al√≥ el √©ter en el hiperv√≠nculo <a href="http://blogs.perl.org/users/gabor_szabo/2013/08/adding-images-to-cpan.html"> blogs.perl.org</a>
+post, <a href="http://grep.cpan.me/?q=%3Dbegin+html"> grep.cpan.me</a> puede enumerar un mont√≥n de m√≥dulos que pueden tener algunos HTML incrustado
 en su POD.
 
-<h2>Entonces, cÛmo se puede hacer?</h2>
+<h2>Entonces, c√≥mo se puede hacer?</h2>
 
 Echemos un vistazo a:
 <a href="https://github.com/gphat/chart-clicker/blob/master/lib/Chart/Clicker.pm">Codigo fuente de Char::Clicker</a>.
 
-Tiene la siguiente secciÛn:
+Tiene la siguiente secci√≥n:
 
 <code>
 =begin HTML
@@ -56,22 +56,22 @@ width="500" height="250" alt="Line Chart" /></p>
 =end HTML
 </code>
 
-Eso es todo lo que necesitamos para incluir en el POD del mÛdulo.
+Eso es todo lo que necesitamos para incluir en el POD del m√≥dulo.
 
-Las im·genes sirven desde una <a href="http://pages.github.com/"> p·gina de Github</a>.
+Las im√°genes sirven desde una <a href="http://pages.github.com/"> p√°gina de Github</a>.
 
 <a href="http://gphat.github.io/chart-clicker/"> Chart::Clicker</a> tiene su propio sitio
-alojado en una p·gina de Github. Es muy f·cil de crear tal una p·gina Github para su proyecto.
-SÛlo siga <a href="https://help.github.com/articles/creating-project-pages-manually"> las instrucciones</a>.
-AllÌ puede incluir agregar las im·genes
+alojado en una p√°gina de Github. Es muy f√°cil de crear tal una p√°gina Github para su proyecto.
+S√≥lo siga <a href="https://help.github.com/articles/creating-project-pages-manually"> las instrucciones</a>.
+All√≠ puede incluir agregar las im√°genes
 
-En el <a href="https://github.com/szabgab/SVG/blob/master/lib/SVG.pm"> cÛdigo fuente de SVG</a> el
+En el <a href="https://github.com/szabgab/SVG/blob/master/lib/SVG.pm"> c√≥digo fuente de SVG</a> el
 ejemplo es ligeramente diferente:
 
 <code>
 =for HTML <p><img src="http://szabgab.com/img/SVG/circle.png" alt="SVG example circle" /></p>
 </code>
 
-AquÌ la imagen en realidad se obtiene de mi propio dominio personal.
+Aqu√≠ la imagen en realidad se obtiene de mi propio dominio personal.
 
 
