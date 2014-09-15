@@ -17,7 +17,8 @@ Felipe has a PhD in Bioinformatics and Computational Biology, he uses Perl mainl
 </p>
 
 <p>
-He started in 2011 the <a href="http://curitiba.pm.org/"> Curitiba Perl Mongers </a> group and is also the cofounder of <a href="http://www.hexabio.com.br>Hexabio</a> where he offers training and consultancy in Bioinformatics.
+He started in 2011 the <a href="http://curitiba.pm.org/"> Curitiba Perl Mongers </a> group and is also the cofounder of
+<a href="http://www.hexabio.com.br">Hexabio</a> where he offers training and consultancy in Bioinformatics.
 </p>
 
 <p>

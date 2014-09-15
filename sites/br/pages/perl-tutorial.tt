@@ -57,13 +57,13 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <ol>
 <li>Menssagens de Erro e Avisos Comuns<br />
 <ul>
-<li>Mensagem de erro: 'Global symbol requires explicit package name'</li>
+<li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
 <li><a href="/uso-de-valor-nao-inicializado">Uso de valor não inicializado</a></li>
 <li><a href="/palavras-soltas-em-perl">Palavra solta (bareword) em Perl</a></li>
-<li>Mensagem de erro: 'Name "main::x" used only once: possible typo at ...'</li>
+<li>Name "main::x" used only once: possible typo at ...</li>
 <li><a href="/categorias-desconhecidas-de-alertas">Categoria de alertas desconhecida</a></li>
-<li>Mensagem de erro: 'Scalar found where operator expected'</li>
-<li>Mensagem de erro: '"my" variable masks earlier declaration in same scope'</li>
+<li>Scalar found where operator expected</li>
+<li>"my" variable masks earlier declaration in same scope</li>
 </ul>
 </li>
 <li><a href="/conversao-automatica-entre-valores">Conversão Automática entre texto e número em Perl</a></li>
