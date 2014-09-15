@@ -18,7 +18,7 @@ Anyway, I created a smaller version of the problem. Look at the example:
 
 =abstract end
 
-<screencast file="/media/videos/dont-interpolate-in-printf.mp4" />
+<screencast file="/media/videos/dont-interpolate-in-printf" />
 
 In the root directory of the project I had two files, a script and a module representing the current file
 to be processed:
