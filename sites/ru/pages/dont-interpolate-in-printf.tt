@@ -1,7 +1,6 @@
 =title Не используйте интерполяцию в printf (отсутствующий аргумент в sprintf ...)
 =timestamp 2014-08-18T21:26:01
 =indexes printf, sprintf
-=tags screencast
 =status show
 =original dont-interpolate-in-printf
 =author szabgab
@@ -17,8 +16,6 @@
 В общем я написал небольшой пример, демонстрирующий проблему. Взглянем на пример:
 
 =abstract end
-
-<screencast file="http://perlmaven.com/media/videos/dont-interpolate-in-printf.mp4" />
 
 В корне проекта у меня находятся два файла, скрипт и модуль, который представляет текущий обрабатываемый файл:
 
