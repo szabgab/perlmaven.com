@@ -2,9 +2,10 @@
 =timestamp 2014-09-15T08:53:00
 =indexes strict, my, package, global symbol
 =status show
+=original global-symbol-requires-explicit-package-name
 =books beginner_book
 =author szabgab
-= translator leprevost
+=translator leprevost
 =archive 1
 =comments 1
 =social 1
