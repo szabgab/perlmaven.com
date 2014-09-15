@@ -33,6 +33,8 @@ Articles and screencast available for <a href="/pro">Perl Maven Pro</a> subscrib
   <li><a href="/pro/test-without-a-plan">Test without a Plan</a></li>
   <li><a href="/pro/separating-test-data-from-test-code">Separating test data from test code</a></li>
   <li><a href="/pro/prove-the-harness">prove, the harness</a></li>
+  <li><a href="/pro/moving-over-to-test-more">Moving over to Test::More</a> (is, isnt)</li>
+  <li><a href="/pro/diag-note-explain">Test diagnostic messages using diag, note, and explain</a></li>
   <li>---</li>
   <li><a href="/pro/what-is-the-status-of-the-current-test-script">	What is the status of the current test script?</a></li>
   <li><a href="/pro/mocking-function-to-fake-environment">Mocking a function to fake environment</a></li>
