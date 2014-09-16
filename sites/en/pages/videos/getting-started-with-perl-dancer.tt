@@ -19,18 +19,7 @@ first (and very basic) web application using Perl Dancer <b>regardless of your o
 
 =abstract end
 
-
-<script type="text/javascript" src="//cdn.sublimevideo.net/js/f68gs97x.js"></script>
-
-<video id="video1" class="sublime" width="960" height="540" data-uid="getting-started-wit-perl-dancer" preload="none">
-  <source src="http://perlmaven.com/media/videos/getting-started-with-perl-dancer-1280x720.mp4" data-quality="hd"  type="video/mp4" />
-  <source src="http://perlmaven.com/media/videos/getting-started-with-perl-dancer-1280x720.webm" data-quality="hd"  type="video/webm" />
-</video>
-
-<div id="downloads">Download:
-<a href="/media/videos/getting-started-with-perl-dancer-1280x720.mp4">mp4</a> (28 Mb)
-<a href="/media/videos/getting-started-with-perl-dancer-1280x720.webm">webm</a> (28 Mb)
-</div>
+<screencast file="/media/videos/getting-started-with-perl-dancer-1280x720" />
 
 <div id="text">
 
