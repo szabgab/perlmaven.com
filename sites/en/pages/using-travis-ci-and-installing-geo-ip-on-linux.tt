@@ -1,7 +1,7 @@
 =title Using Travic-CI and installing Geo::IP on Linux and OSX
-=timestamp 2014-01-15T07:30:01
+=timestamp 2014-09-16T10:30:01
 =indexes Travis-CI, Geo::IP
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments 1
@@ -68,7 +68,7 @@ $ wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.d
 $ gunzip GeoIP.dat.gz
 $ sudo mkdir -p /opt/geoip-1.6.2/share/GeoIP/
 $ sudo mv GeoIP.dat /opt/geoip-1.6.2/share/GeoIP/GeoIP.dat
-</cide>
+</code>
 
 Of coure, here I already assume the location of the GeoIP C library I've installed in the previous step. Here too, I only
 need to use <b>sudo</b> because I decided to install the C library in <b>/opt</b>.
