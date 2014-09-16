@@ -11,7 +11,7 @@
 
 Since the article published by Neil Bowers on using 
 <a href="http://blogs.perl.org/users/neilb/2014/08/try-travis-ci-with-your-cpan-distributions.html">Travis CI for CPAN distributions</a> I fell in love with the
-service. I provides early feedback to when I break something and makes me pay more attention to the changes I make. I just wish the reopened they had more platforms available.
+service. It provides early feedback when I break something, and makes me pay more attention to the changes I make. I just wish they had more platforms available.
 
 Anyway, one of my applications uses <a href="https://metacpan.org/pod/Geo::IP">Geo::IP</a>. I keep having problems installing it on my own machines and
 when I turned Travis-CI on for this particular distribution everything broke.
