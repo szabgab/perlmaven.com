@@ -86,6 +86,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>die, warn and exit</li>
 <li><a href="/escrevendo-em-arquivos-com-perl">Escrevendo em arquivos com Perl</a></li>
 <li><a href="/acrescentando-em-arquivos">Acrescentando texto em arquivos (appending)</a></li>
+<li><a href="/warn">warn: alertando quando algo dá errado</a></li>
 <li><a href="/abrindo-e-lendo-arquivos">Abrindo e Lendo Arquivos de Texto</a></li>
 <li><a href="/nao-abra-arquivos-na-forma-antiga">Não abra arquivos na forma antiga</a></li>
 <li><a href="/die">die</a></li>
