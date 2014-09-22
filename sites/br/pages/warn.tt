@@ -1,10 +1,11 @@
 =title Alertando quando algo dá errado
-=timestamp 2014-09-13T09:38:00
+=timestamp 2014-09-22T09:38:00
 =indexes warn, STDERR
 =status show
+=original warn
 =books beginner_book
 =author szabgab
-= translator leprevost
+=translator leprevost
 =archive 1
 =comments 1
 =social 1
