@@ -27,7 +27,7 @@ the Credit Card information for when they need to charge you money.
 Once you have done that you need to visit the <a href="https://cloud.digitalocean.com/settings/applications">Apps & API</a>.
 Because the CPAN module currently (version 0.09) only supports the old API of DigitalOcean you will need to follow the link
 that leads to <a href="https://cloud.digitalocean.com/api_access">API v1.0 Page</a>. There you'll see a <b>Client ID</b>
-and a big blue button <b>Generate new key</a>.  You need to click on that button. Then you'll have both a <b>Client ID</b>
+and a big blue button <b>Generate new key</b>.  You need to click on that button. Then you'll have both a <b>Client ID</b>
 and an <b>API Key</b>.
 
 <h2>Configuration</h2>
@@ -36,7 +36,7 @@ In order to avoid having this private information in the source code, I prefer t
 be in a version control system seen by many other people. So I created a file called <b>.digitalocean</b> in my home directory.
 On Windows, I'd probably create a file called <b>digitalocean.ini</b>.
 
-The configuation file does not need to be complex. Mine looks like this:
+The configuration file does not need to be complex. Mine looks like this:
 
 <code>
 [one]
@@ -69,7 +69,7 @@ $VAR1 = bless( {
 </code>
 
 <h>$Config</hl> is a reference to a two dimensional hash. 'one' which was just an arbitrary
-section name to hold the real data is a key in that hash refernce. Its values is a
+section name to hold the real data is a key in that hash reference. Its values is a
 reference to another hash where the keys are client_id and api_key.
 
 The constructor of the <a href="https://metacpan.org/pod/DigitalOcean">DigitalOcean</a> module
@@ -280,7 +280,7 @@ We can now manually check our e-mail, ssh to the droplet, do whatever we need to
 and then we can visit the list of <a href="https://cloud.digitalocean.com/droplets">droplets</a>
 and manually destroy it.
 
-We have made some progres, but we need to improve our code.
+We have made some progress, but we need to improve our code.
 
 <h2>Use SSH keys</h2>
 
