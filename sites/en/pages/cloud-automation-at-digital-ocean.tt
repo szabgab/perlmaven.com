@@ -293,7 +293,7 @@ and simpler.
 If I understood it correctly the API allow us to upload the SSH key, but I don't think I need to automate
 that. After all, I only need to upload my key once. So I visited the
 <a href="https://cloud.digitalocean.com/ssh_keys">SSH Keys</a> menu option, clicked on the big blue button that say
-<b>Add SSH Key</a> entered a name (just for identification in case there are several SSH keys) and copied the
+<b>Add SSH Key</b> entered a name (just for identification in case there are several SSH keys) and copied the
 content of <hl>~/.ssh/id_rsa.pub</hl> from my own machine.
 
 Then I had to write some code to get the DigitalOcean ID of this SSH key.
