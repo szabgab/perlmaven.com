@@ -19,7 +19,6 @@ It is about finding certain strings in a file, just as the command-line grep doe
 
 <h2>A grep-like script</h2>
 
-<!-- How do I grep for an exact match of a string in a file using perl -->
 
 This is mostly to experiment with regular expressions. The command line <b>grep</b> generally works like this:
 <hl>grep [options] REGEX FILEs</hl>
@@ -45,7 +44,16 @@ while (my $line = <$fh>) {
 
 Run the above script as <hl>perl grep.pl</hl> and it will tell you you need to pass a filename as a parameter.
 
+<h2>How to grep for an exact match of a string in a file using Perl?</h2>
+
+If we are looking for a line that has a string exactly what we are looking for then we probably not need to use
+a regex at all. We would probably need to us the <a href="/string-functions-length-lc-uc-index-substr">>index</a> function.
+
 <code lang="perl">
+    if (index $line, 'cat' >= 0) {
+        print "This line has a 'cat' in it:\n";
+        print $line;
+    }
 </code>
 
 <code lang="perl">
