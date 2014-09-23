@@ -87,6 +87,7 @@ $ cd Geo-IP-1.43
 $ perl Makefile.PL LIBS='-L/opt/geoip-1.6.2/lib' INC='-I/opt/geoip-1.6.2/include'
 $ make
 $ make test
+$ make install
 </code>
 
 This will test and install the Geo::IP Perl module.
