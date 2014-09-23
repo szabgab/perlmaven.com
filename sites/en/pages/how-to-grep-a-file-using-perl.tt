@@ -47,7 +47,7 @@ Run the above script as <hl>perl grep.pl</hl> and it will tell you you need to p
 <h2>How to grep for an exact match of a string in a file using Perl?</h2>
 
 If we are looking for a line that has a string exactly what we are looking for then we probably not need to use
-a regex at all. We would probably need to us the <a href="/string-functions-length-lc-uc-index-substr">>index</a> function.
+a regex at all. We would probably need to us the <a href="/string-functions-length-lc-uc-index-substr">index</a> function.
 
 <code lang="perl">
     if (index $line, 'cat' >= 0) {
