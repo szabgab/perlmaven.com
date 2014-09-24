@@ -369,12 +369,12 @@ that already contains the <b>ip_address</b>
 Given the IP address we could already SSH to the remote server, but there is a slight problem.
 When we ssh to a new IP address, the ssh command of Linux and OSX will ask if we really want to
 add the IP address to the list of known hosts. This would kill the automation. Luckily we can
-tell ssh to avoid this question by passing <hl>-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no</hl> to it.
+tell ssh to avoid this question by passing <hl>-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no</hl> to it.
 
 The full example looks like this:
 
 <code lang="perl">
-my $cmd = sprintf 'ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@%s "uname -a; uptime; hostname"',  $server->ip_address;
+my $cmd = sprintf 'ssh -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@%s "uname -a; uptime; hostname"',  $server->ip_address;
 say $cmd;
 system $cmd;
 </code>
@@ -426,7 +426,7 @@ say $server->id;
 say $server->name;
 say $server->ip_address;
 
-my $cmd = sprintf 'ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@%s "uname -a; uptime; hostname"',  $server->ip_address;
+my $cmd = sprintf 'ssh -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@%s "uname -a; uptime; hostname"',  $server->ip_address;
 say $cmd;
 system $cmd;
 
