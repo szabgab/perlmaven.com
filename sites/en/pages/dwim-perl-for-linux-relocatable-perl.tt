@@ -66,3 +66,5 @@ startperl
 </code>
 
 
+As I can see <a href="http://lists.gnu.org/archive/html/bug-gnulib/2014-01/msg00003.html">this thread</a> on the Perl 5 Porters
+list was about a solution for this problem.
