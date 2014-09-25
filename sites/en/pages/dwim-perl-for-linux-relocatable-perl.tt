@@ -52,5 +52,17 @@ adjusts the content of <hl>@INC</hl> to the location of perl. That part worked w
 I need to use to compile perl to make it adjust <hl>perlpath</hl> and maybe even some other variables?
 
 Running <hl>perl -MData::Dumper -MConfig -e'print Dumper \%Config'</hl> shows quite a few variables that contains the full path to where
-this perl was first installed.
+this perl was first installed. There are quite a few that show the new pathe but these variables include the old one, that does not
+exists any more:
+
+<code>
+config_arg3
+config_args
+initialinstalllocation
+installbin
+installprefix
+perlpath
+startperl
+</code>
+
 
