@@ -110,7 +110,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>Sensibilidade do contexto em Perl</li>
 <li>Ordenando arrays em Perl</li>
 <li>Valores únicos em um array em Perl</li>
-<li>Manipulando arrays em Perl: shift, unshift, push, pop</li>
+<li><a href="/manipulando-arrays-em-perl">Manipulando arrays em Perl: shift, unshift, push, pop</li>
 <li>Pilha e fila</li>
 <li>reverse</li>
 <li>O operador ternário</li>
