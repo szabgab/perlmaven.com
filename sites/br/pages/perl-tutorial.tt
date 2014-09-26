@@ -60,7 +60,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
 <li><a href="/uso-de-valor-nao-inicializado">Uso de valor não inicializado</a></li>
 <li><a href="/palavras-soltas-em-perl">Palavra solta (bareword) em Perl</a></li>
-<li>Name "main::x" used only once: possible typo at ...</li>
+<li><a href="name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...<a/></li>
 <li><a href="/categorias-desconhecidas-de-alertas">Categoria de alertas desconhecida</a></li>
 <li>Scalar found where operator expected</li>
 <li>"my" variable masks earlier declaration in same scope</li>
