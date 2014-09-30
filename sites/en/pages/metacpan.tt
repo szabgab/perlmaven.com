@@ -1,4 +1,4 @@
-=title MetaCPAN
+=title Meta::CPAN
 =timestamp 2014-09-05T07:30:01
 =indexes MetaCPAN
 =status draft
@@ -22,6 +22,7 @@ and related sites. This page collects the articles and screencasts published on 
   <li><a href="/metacpan-urls-and-issues">MetaCPAN URLs and Issues</a></li>
   <li><a href="/cpan-mcpan-metacpan">CPAN, mcpan, MetaCPAN</a></li>
   <li><a href="/metacpan-cpantesterts">MetaCPAN and the CPAN Testers</a></li>
+  <li><a href="/metacpan-recent-uploads">MetaCPAN recent uploads</a></li>
 </ul>
 
 <h2>For CPAN authors</h2>
@@ -43,7 +44,7 @@ and related sites. This page collects the articles and screencasts published on 
 <h2>For future MetaCPAN developers</h2>
 
 <ul>
-  <li><a href="/hacking-metacpan-the-first-steps">Hacking Meta::CPAN - the first steps</a> ()</li>
+  <li><a href="/hacking-metacpan-the-first-steps">Hacking Meta::CPAN - the first steps</a></li>
   <li><a href="/adding-news-feed-to-metacpan">Adding news feed to MetaCPAN</a></li>
 </ul>
 
