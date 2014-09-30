@@ -32,7 +32,12 @@ is a list of recommended modules for certain common tasks.
   <li><a href="https://metacpan.org/pod/Task::Kensho::Hackery">Task::Kensho::Hackery</a> for hacking?</li>
   <li><a href="https://metacpan.org/pod/Task::Kensho::Logging">Task::Kensho::Logging</a> for logging in modules and applications.</li>
   <li><a href="https://metacpan.org/pod/Task::Kensho::ModuleDev">Task::Kensho::ModuleDev</a> helping to write better quality code, helping to package modules.</li>
-  <li><a href="https://metacpan.org/pod/Task::Kensho::">Task::Kensho::</a></li>
-  <li><a href="https://metacpan.org/pod/Task::Kensho::">Task::Kensho::</a></li>
+  <li><a href="https://metacpan.org/pod/Task::Kensho::OOP">Task::Kensho::OOP</a> Object Oriented Programming</li>
+  <li><a href="https://metacpan.org/pod/Task::Kensho::Scalability">Task::Kensho::Scalability</a></li>
+  <li><a href="https://metacpan.org/pod/Task::Kensho::Testing">Task::Kensho::Testing</a></li>
+  <li><a href="https://metacpan.org/pod/Task::Kensho::Toolchain">Task::Kensho::Toolchain</a> to make it easier to work with CPAN.</li>
+  <li><a href="https://metacpan.org/pod/Task::Kensho::WebCrawling">Task::Kensho::WebCrawling</a> - accessing web site from your Perl script.</li>
+  <li><a href="https://metacpan.org/pod/Task::Kensho::WebDev">Task::Kensho::WebDev</a> tools and frameworks for Web Development.</li>
+  <li><a href="https://metacpan.org/pod/Task::Kensho::XML">Task::Kensho::XML</a> for processing XML and creating XML files.</li>
 </ul>
 
