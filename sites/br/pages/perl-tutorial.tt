@@ -67,7 +67,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 </ul>
 </li>
 <li><a href="/conversao-automatica-entre-valores">Conversão Automática entre texto e número em Perl</a></li>
-<li>Declarações condicionais: if</li>
+<li><a href="/if">Declarações condicionais: if</a></li>
 <li><a href="/valores-booleanos-em-perl">Valores Booleanos em Perl</a></li>
 <li>Operadores numéricos e textuais</li>
 <li><a href="/undef-e-definido-em-perl">undef, valor inicial e a função defined em Perl</a></li>
