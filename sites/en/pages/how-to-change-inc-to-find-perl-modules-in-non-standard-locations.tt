@@ -14,7 +14,9 @@ When using modules that are not installed in the standard directories
 of Perl, we need to change @INC so perl will be able to
 find them. There are several ways to do that solving different use-cases.
 
-Let's see these use-case first:
+We are going to see a use-case and a solution, but if you have arrived
+to this page, I wonder, do you really have a special case, or do you just need to
+<a href="/how-to-install-a-perl-module-from-cpan">install the Perl module</a>?
 
 =abstract end
 
