@@ -1,0 +1,301 @@
+=title How to process command line arguments in Perl using Getopt::Long
+=timestamp 2014-03-19T14:56:14
+=indexes @ARGV, Getopt::Long 
+=status draft
+=author 0
+=archive 0
+=comments 0
+=social 1
+
+=abstract start
+
+When a perl script is executed the user can pass artuments on the command line in various ways.
+For example <hl>perl program.pl file1.txt file2.txt</hl> or
+<hl>perl program.pl from-address to-address file1.txt file2.txt/hl> or, the most common and most useful
+way:
+
+<hl>perl program.pl -vd --from from-address --to to-address file1.txt file2.txt</hl>
+
+How can we deal with this information?
+
+=abstract end
+
+When the scripts starts to run, Perl will automaticall create an array called <hl>@ARGV</hl> and put all the values
+on the command line in that variable. It won't include <hl>perl</hl> and it won't include the name of our script
+(<hl>program.pl</hl> in our case), that will be placed in the <hl>$0</hl> variable. <hl>@ARGV</hl> will only
+inlcude the values located after the name of the script.
+
+In the above case <hl>@ARGV</hl> will contain:
+<hl>('-vd', '--from', 'from-address', '--to', 'to-address', 'file1.txt', 'file2.txt')</hl>
+
+We can access <hl>@ARGV</hl> manually as described in <a href="/argv-in-perl">article about @ARGV</a>, but there are
+a number of modules that will handle most of the work for you. In this article we'll see <a href="https://metacpan.org/pod/Getopt::Long">Getopt::Long</a>
+a mmodule that also comes with the standard installation of Perl.
+
+<h2>Explain the command line</h2>
+
+Just before doing that, let's see what is really our expectation from the command line processing.
+
+<ul>
+  <li>Long names with values: we would like to be able to accept paramters with long names followed by a value. For example <hl>--to VALUE</hl></li>
+  <li>Long names without value: We would like to accept flags that by their mere existence will turn some flag on. For example <hl>--verbose</hl></li>
+  <li>Short names with or without values. The above two just written <hl>-t VALUE</hl> and <hl>-v</hl></li>
+  <li>Combining short names: <hl>-vd</hl> should be understood as <hl>-v -d</hl>
+  <li>Non-affiliated values, values that don't have some name (--long or -s) in front of them. e.g <hl>file1.txt file2.txt</hl></li>
+</ul>
+
+There can be lots of other requirements and Getop::Long can handle quite a few of them, but we'll focus on the basics.
+
+<h2>Getopt::Long</h2>
+
+<a href="https://metacpan.org/pod/Getopt::Long">Getopt::Long</a> exports a function called <hl>GetOptions</hl>, that can process
+the content of <hl>@ARGV</hl> based on the configuration we give to it. It returns <a href="/boolean-values-in-perl">true or false</a>
+indicating if the procesing was succesful or not. During processing it removes the items from <hl>@ARGV</hl> that have been successfully
+process.  We'll take a look at possible errors later on. For now, let' see a small example we save in <hl>cli.pl</hl>:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+use Getopt::Long qw(GetOptions);
+
+my $source_address;
+GetOptions('from=s' => \$source_address) or die "Usage: $0 --from NAME\n";
+if ($source_address) {
+    say $source_address;
+}
+
+</code>
+
+After loading the module we declare a variable called <hl>$source_address</hl> where the value of the <hl>--from</hl> command line
+flag will be stored. We call <hl>GetOptions</hl> with key-value pairs. The keys (in this case one key) is the description
+of the flag (in this case the <hl>from=s</hl> declares that were are expecting a command line parameter called <hl>--from</hl>
+with a <b>string</b> after it. Becasue in Perl numbers can also be seen as strings, this basically means "pass me any value".
+This declaration is then mapped to variable we declared earlier. In case the syntax is unclear <hl>=></hl> is a "fat arrow"
+you might be familiar from <a href="/perl-hashes">hashes</a> and the back-slash <hl>\</hl> in-front of the variable indicates
+that we are passing a refeence to the variable.
+
+We can run this program in several ways: <hl>perl cli.pl --from Foo</hl> will print "Foo". The value passed after the <hl>-from</hl>
+flag is assigned to the <hl>$source_address</hl> variable. On the other hand <hl>perl cli.pl</hl> will not print anything as we have no
+passed any value.
+
+If e run it <hl>perl cli.pl Foo</hl>  it won't print anything either, as GetOptions only deals with options that start with a dash (<hl>-</hl>).
+(This is actually configurable, but let's not get there now.)
+
+<h2>Failurs</h2>
+
+So when will the <a href="/short-circuit">short circuit</a> <hl>or die</hl> kick-in?
+
+<h3>Unknown option</h3>
+
+If we run the script passing something that looks like a parameter name, but which has not been declared
+when calling <hl>GetOptions</hl>. Something that starts with a dash. For example:
+
+<hl>perl cli.pl --to Bar</hl>
+
+<code>
+Unknown option: to
+Usage: cli.pl --from NAME
+</code>
+
+The first line is a warning printed by <hl>GetOptions</hl>, the second line is the string we generated using <hl>die</hl>.
+
+<h3>Option requires an argument</h3>
+
+Another case is when we run the script, pass <hl>--from</hl>, but without passing a value after it:
+
+<hl>perl cli.pl --from</hl>
+
+In that case the output will look like this:
+
+<code>
+Option from requires an argument
+Usage: cli.pl --from NAME
+</code>
+
+Here too the first line was from GetOptions and the second from our call to <hl>die</hl>.
+When we called <hl>GetOptions</hl> we explicitely said <hl>=s</hl> that we are expecting a string after the <hl>--from</hl>.
+
+<h2>Default values</h2>
+
+Often we would like to give a default value to one of the options. For example in the case of the <hl>--from</hl> field we
+might want it to default to the word 'Maven'. We can do it by assigning this value to the <hl>$source_address</hl> variable:
+
+<code lang="perl">
+my $source_address = 'Maven';
+GetOptions('from=s' => \$source_address) or die "Usage: $0 --from NAME\n";
+if ($source_address) {
+    say $source_address;
+}
+</code>
+
+If the user does not pass the <hl>--from</hl> flag then GetOptions will not modify the value in the <hl>$source_address</hl>
+variable. Running <hl>perl cli.pl</hl> will result in "Maven".
+
+
+<h2>Flags without value</h2>
+
+In addition to paramters that require a value, we also would like to allow flags. Names, that by their presence make a difference.
+These things are used when we want to allow the users to turn on debugging, or to set the verbosity of the script.
+The 
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+use Getopt::Long qw(GetOptions);
+
+my $debug;
+GetOptions('debug' => \$debug) or die "Usage: $0 --debug\n";
+say $debug ? 'debug' : 'no debug';
+</code>
+
+Originally the <hl>$debug</hl> varibale contained <a href="/undef-and-defined-in-perl">undef</hl> which is
+<a href="/boolean-values-in-perl">false</a>, if the user passes the <hl>--debug</hl> flag, the corresponding
+variable will be set to some <a href="/boolean-values-in-perl">true</a> value.
+We then use the <a href="/the-ternary-operator-in-perl">ternary operator</a> to decide what to print.
+
+The various ways we call it and the output they produce:
+
+<code>
+$ perl cli.pl 
+no debug
+
+$ perl cli.pl --debug
+debug
+
+$ perl cli.pl --debug hello
+debug
+</code>
+
+The last example shows that values placed after such name are disregarded.
+
+
+<h2>Multiple flags</h2>
+
+Obviously in most of the scripts you will need to handle more than one flag. In that case we call GetOptions <b>once</b> and provide it with
+all the parameters:
+
+Combining these together we can have a larger example:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+use Getopt::Long qw(GetOptions);
+
+my $debug;
+my $source_address = 'Maven';
+GetOptions(
+    'from=s' => \$source_address,
+    'debug' => \$debug,
+) or die "Usage: $0 --debug  --from NAME\n";
+
+say $debug ? 'debug' : 'no debug';
+if ($source_address) {
+    say $source_address;
+}
+</code>
+
+Running without any paramter will leave <hl>$debug</hl> as <hl>undef</hl> and the <hl>$source_address</hl> as 'Maven':
+<code>
+$ perl cli.pl 
+no debug
+Maven
+</code>
+
+Passing <hl>--debug</hl> will set <hl>$debug</hl> to true:
+
+<code>
+$ perl cli.pl --debug
+debug
+Maven
+</code>
+
+Passing <hl>--from Foo</hl> will set the <hl>$source_address</hl>  but leave <hl>$debug</hl> as undef.
+<code>
+$ perl cli.pl  --from Foo
+no debug
+Foo
+</code>
+
+If we provide parameters, they will both set the respective variables:
+
+<code>
+$ perl cli.pl --debug --from Foo
+debug
+Foo
+</code>
+
+The order of the parameters on the command line does not matter:
+
+<code>
+$ perl cli.pl  --from Foo --debug
+debug
+Foo
+</code>
+
+<h2>Short names</hl>
+
+Getopt::Long automatically handles the short-name version of each flag. We can run the above script in the following manner:
+
+<code>
+$ perl files/cli.pl -f Foo -d
+debug
+Foo
+<code>
+
+<h2>Non-affiliated values</h2>
+
+The GetOptions function only handles the parameters that start with a dash, and their corresponding values, when they are relevant.
+Once it processed the options it will removed them from <hl>@ARGV</hl>. Any other, non-affiliated values on he command line will
+stay in <hl>@ARGV</hl>. Hence if we add <a href="https://metacpan.org/pod/Data::Dumper">Data::Dumper</a> to our script and
+use that to print the content of <hl>@ARGV</hl> at the end (<hl>print Dumper \@ARGV</hl>) as in this script:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+use Getopt::Long qw(GetOptions);
+use Data::Dumper;
+
+my $debug;
+my $source_address = 'Maven';
+GetOptions(
+    'from=s' => \$source_address,
+    'debug' => \$debug,
+) or die "Usage: $0 --debug  --from NAME\n";
+
+say $debug ? 'debug' : 'no debug';
+if ($source_address) {
+    say $source_address;
+}
+print Dumper \@ARGV;
+</code>
+
+We get the following results:
+
+<code>
+$ perl files/cli.pl  -f Foo -d file1.txt file2.txt
+debug
+Foo
+$VAR1 = [
+          'file1.txt',
+          'file2.txt'
+        ];
+</code>
+
+After processing the options, <hl>file1.txt</hl> and <hl>file2.txt</hl> were left in <hl>@ARGV</hl>. We can now do whatever we want
+with them, for example we can iterate over them using <hl>foreach</hl>.
+
+
+<h2>Advanced</h2>
+
+<a href="https://metacpan.org/pod/Getopt::Long">Getopt::Long</a> has tons of other options. You might want to check out the documentation.
+
+There are also other solutions, for example if you are using <a href="/moo">Moo</a> for light-weight object oriented programming,
+you could take a look at <a href="https://metacpan.org/pod/MooX::Options">MooX::Options</a>  explained in a number of advanced articles: for example
+<a href="http://perlmaven.com/pro/switching-to-moo-adding-command-line-parameters">Switching to Moo - adding command line parameters</a>
+and 
+<a href="http://perlmaven.com/pro/command-line-scripts-with-moo">Writing Command line scripts and accepting command line parameters using Moo</a>.
+

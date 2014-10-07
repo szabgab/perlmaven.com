@@ -1,6 +1,7 @@
 =title Perl Hash
 =timestamp 2013-08-03T23:12:06
-=indexes hash
+=description A Perl hash (associative array) can hold key-value pairs where the keys are strings, the values are scalars.
+=indexes hash, keys
 =status show
 =books beginner_book
 =author szabgab

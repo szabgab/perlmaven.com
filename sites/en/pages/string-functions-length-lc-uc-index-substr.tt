@@ -1,5 +1,6 @@
 =title String functions: length, lc, uc, index, substr
 =timestamp 2013-02-20T14:45:56
+=description perl substr(STRING, OFFSET, LENGTH, REPLACEMENT) - extract any part of a string; index(STRING, STR, OFFSET) - return location of substring
 =indexes length, lc, uc, index, substr, scalar
 =status show
 =books beginner_book
