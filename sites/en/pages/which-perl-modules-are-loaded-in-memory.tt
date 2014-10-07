@@ -1,7 +1,7 @@
 =title Which Perl modules are loaded in memory?
-=timestamp 2014-01-15T07:30:01
+=timestamp 2014-10-07T08:30:01
 =indexes %INC, @INC
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments 1
@@ -119,7 +119,8 @@ The output looks like this:
 </code>
 
 This can make it easy to see if a module that you have changed has been loaded, and from which location in the filesystem. Maybe <hl>@INC</hl>
-is not set up correctly and you are using the installed version of the module instaed of the development version?
-In that case you might want to see <a href="/pro/how-to-add-a-relative-directory-to-inc">how to add a relative directory to @INC</a>.
+is not set up correctly and you are using the installed version of the module instead of the development version?
+In that case you might want to see <a href="/pro/how-to-add-a-relative-directory-to-inc">how to add a relative directory to @INC</a>
+or <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">how to change @INC to find modules in non-standard locations</a>.
 
 
