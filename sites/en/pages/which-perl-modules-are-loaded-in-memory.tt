@@ -28,18 +28,18 @@ The most simple way to see it, is by using Data::Dumper with the following one-l
 
 <code>
 $VAR1 = {
-    'strict.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/strict.pm',
-    'overload.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/overload.pm',
-    'Carp.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/Carp.pm',
-    'constant.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/constant.pm',
-    'warnings/register.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/warnings/register.pm',
-    'XSLoader.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/XSLoader.pm',
-    'warnings.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/warnings.pm',
-    'bytes.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/bytes.pm',
-    'Exporter.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/Exporter.pm',
-    'overloading.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/overloading.pm',
-    'Data/Dumper.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/darwin-thread-multi-2level/Data/Dumper.pm',
-    'vars.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/vars.pm'
+  'strict.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/strict.pm',
+  'overload.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/overload.pm',
+  'Carp.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/Carp.pm',
+  'constant.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/constant.pm',
+  'warnings/register.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/warnings/register.pm',
+  'XSLoader.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/XSLoader.pm',
+  'warnings.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/warnings.pm',
+  'bytes.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/bytes.pm',
+  'Exporter.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/Exporter.pm',
+  'overloading.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/overloading.pm',
+  'Data/Dumper.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/darwin-thread-multi-2level/Data/Dumper.pm',
+  'vars.pm' => '/opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/vars.pm'
 };
 </code>
 
@@ -83,39 +83,39 @@ For some nicer layout, and without loading Data::Dumper, you might want to try t
 
 For example to see what <a href="/moo">Moo</a> loads:
 
-<hl>perl -e 'use Moo; printf qq{%40s %s\n}, $_, $INC{$_} for sort keys %INC;'</hl>
+<hl>perl -e 'use Moo; printf qq{%30s %s\n}, $_, $INC{$_} for sort keys %INC;'</hl>
 
 (Windows user will want to replace the single-quotes by double-quotes.)
 
 The output looks like this:
 
 <code>
-                                 Carp.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/Carp.pm
-                               Config.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/darwin-thread-multi-2level/Config.pm
-              Devel/GlobalDestruction.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Devel/GlobalDestruction.pm
-                             Exporter.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/Exporter.pm
-                          Import/Into.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Import/Into.pm
-                            List/Util.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/darwin-thread-multi-2level/List/Util.pm
-                       Module/Runtime.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Module/Runtime.pm
-                                  Moo.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo.pm
-             Moo/HandleMoose/_TypeMap.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo/HandleMoose/_TypeMap.pm
-                           Moo/Object.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo/Object.pm
-                           Moo/_Utils.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo/_Utils.pm
-                             Moo/_mro.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo/_mro.pm
-                       Moo/sification.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo/sification.pm
-                          Scalar/Util.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/darwin-thread-multi-2level/Scalar/Util.pm
-             Sub/Exporter/Progressive.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Sub/Exporter/Progressive.pm
-                             Sub/Name.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/darwin-thread-multi-2level/Sub/Name.pm
-                             XSLoader.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/XSLoader.pm
-                                 base.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/base.pm
-                             constant.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/constant.pm
-                                 main.pm -e
-                                  mro.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/darwin-thread-multi-2level/mro.pm
-                               strict.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/strict.pm
-                           strictures.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/strictures.pm
-                                 vars.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/vars.pm
-                             warnings.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/warnings.pm
-                    warnings/register.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/warnings/register.pm
+                       Carp.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/Carp.pm
+                     Config.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/darwin-thread-multi-2level/Config.pm
+    Devel/GlobalDestruction.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Devel/GlobalDestruction.pm
+                   Exporter.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/Exporter.pm
+                Import/Into.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Import/Into.pm
+                  List/Util.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/darwin-thread-multi-2level/List/Util.pm
+             Module/Runtime.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Module/Runtime.pm
+                        Moo.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo.pm
+   Moo/HandleMoose/_TypeMap.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo/HandleMoose/_TypeMap.pm
+                 Moo/Object.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo/Object.pm
+                 Moo/_Utils.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo/_Utils.pm
+                   Moo/_mro.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo/_mro.pm
+             Moo/sification.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Moo/sification.pm
+                Scalar/Util.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/darwin-thread-multi-2level/Scalar/Util.pm
+   Sub/Exporter/Progressive.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Sub/Exporter/Progressive.pm
+                   Sub/Name.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/darwin-thread-multi-2level/Sub/Name.pm
+                   XSLoader.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/XSLoader.pm
+                       base.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/base.pm
+                   constant.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/constant.pm
+                       main.pm -e
+                        mro.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/darwin-thread-multi-2level/mro.pm
+                     strict.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/strict.pm
+                 strictures.pm /opt/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/strictures.pm
+                       vars.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/vars.pm
+                   warnings.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/warnings.pm
+          warnings/register.pm /opt/perl-5.20.1_WITH_THREADS/lib/5.20.1/warnings/register.pm
 </code>
 
 This can make it easy to see if a module that you have changed has been loaded, and from which location in the filesystem. Maybe <hl>@INC</hl>
