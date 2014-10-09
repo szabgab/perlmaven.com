@@ -10,12 +10,10 @@
 
 =abstract start
 
-Another common warning.
-
-=abstract end
-
 If we have variables that were assigned values that contain numbers, even if they were assigned as strings
 (inside quotes), for any numerical operation, Perl will automatically convert them to the appropriate number:
+
+=abstract end
 
 <code lang="perl">
 use strict;

@@ -11,20 +11,31 @@
 =abstract start
 
 Perl has a <a href="/filtering-values-with-perl-grep">grep</a> function which is a generalized version of the <b>grep</b> command-line
-utility available on Unix/Linux systems. This article is not about the grep function.
+utility available on Unix/Linux systems. That <hl>grep</hl> function can filter values from a list of values or an array based on any kind of condition.
 
-It is about finding certain strings in a file, just as the command-line grep does.
+This article is not about the grep function.
+
+This article is about finding certain strings in a file, just as the command-line grep does.
 
 =abstract end
 
-<h2>A grep-like script</h2>
+Writing a Perl replacement of the Unix grep command does not have much value, unless you do something
+<a href="http://beyondgrep.com/">much better</a>, or if you want to <a href="https://metacpan.org/pod/PerlPowerTools">reimplement the Unix commands in Perl</a>.
+Nevertheless it can be a good exercise, and it can be a learning or teaching aid. We'll do this first.
 
+On the other hand having similar functionality to the Unix <hl>grep</hl> as part of a larger script
+might be very useful, and actually it happens quite often. We'll cover that later on.
+
+<h2>A grep-like script</h2>
 
 This is mostly to experiment with regular expressions. The command line <b>grep</b> generally works like this:
 <hl>grep [options] REGEX FILEs</hl>
 
-The following script saved as <hl>grep.pl</hl> does not accept any options, the REGEX itself needs to be included in the script
-replacing the word REGEX, and the script works on only one file. Nevertheless it can be a good toy to play with regexes.
+The following script on the other hand works like this: <hl>perl grep.pl FILEs</hl>
+
+Our <hl>grep.pl</hl> does not accept any options and the REGEX itself needs to be included in the script
+replacing the word REGEX. It is much more limited, but it can be a good toy to play with regexes.
+
 The reason I prefere to have the REGEX inside the script and not on the command line is that regexes use all kinds of special characters
 that the Unix shell might also think it knows what to do with. Therefore we would need to add quotes around the regex and maybe escape
 some of the characters. In general it would require an extra effort.
@@ -33,11 +44,13 @@ some of the characters. In general it would require an extra effort.
 use strict;
 use warnings;
 
-my $file = shift or die "Usage: $0 filename\n";
-open my $fh, '<:encoding(UTF-8)', $file or die;
-while (my $line = <$fh>) {
-    if ($line =~ /REGEX/) {
-        print $line;
+die "Usage: $0 FILENAMEs\n" if not @ARGV;
+foreach my $file (@ARGV) {
+    open my $fh, '<:encoding(UTF-8)', $file or die;
+    while (my $line = <$fh>) {
+        if ($line =~ /REGEX/) {
+            print $line;
+        }
     }
 }
 </code>
