@@ -1,8 +1,8 @@
 =title How to build perl from source on Linux
-=timestamp 2014-01-15T07:30:01
-=description Compiling from source code on RedHat, CentOS, Ubuntu, Debian and other Linux distribution
+=timestamp 2014-10-17T07:30:01
+=description Compiling Perl from source code on RedHat, Fedora, CentOS, Ubuntu, Debian and other Linux distributions.
 =indexes Linux
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments 1
@@ -19,6 +19,7 @@ There are even some Linux distributions that by default don't come with perl.
 For example the CentOS 5.10 system provided by <a href="/digitalocean">Digital Ocean</a> does not come with Perl preinstalled.
 
 You could install it using <b>yum install perl</b>, but instead of that's let's see how can we <b>compile perl from source</b>.
+As we would not want to assume an existing installation of Perl, we cannot use <a href="http://perlbrew.pl/">Perlbrew</a>.
 
 =abstract end
 
