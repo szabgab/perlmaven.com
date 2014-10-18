@@ -10,7 +10,7 @@
 
 =abstract start
 
-Every CPAN module comes with uint-tests. When you install a module the tests are executed. You can configure your cpan client to send
+Every CPAN module comes with unit-tests. When you install a module the tests are executed. You can configure your cpan client to send
 this report to the <a href="http://cpantesters.org/">CPAN Tester</a> who will collect and display the reports.
 <a href="https://metacpan.org/">Meta CPAN</a> displays the total number of test reports for each CPAN distribution.
 
