@@ -1,7 +1,7 @@
 =title Introduction to Regexes in Perl 5
 =timestamp 2014-01-15T07:30:01
 =indexes ., //, =~, !~
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
@@ -10,7 +10,7 @@
 
 =abstract start
 
-Regular Expressions, or regexes or regexp as some people like to call, are an integral part of the Perl programming languages.
+Regular Expressions, or Regexes or regexp as some people like to call, are an integral part of the Perl programming languages.
 Other languages and other tools also provide regex support but there are a number of differences.
 
 =abstract end
@@ -20,7 +20,7 @@ Other languages and other tools also provide regex support but there are a numbe
 First of all Regex can be thought of as a separate language that has various dialects and that can be used in various places.
 
 Regexes in Perl are not he same as in Python, Ruby, or PHP, even if some of them call them "Perl 5 compatible Regular Expressions".
-Then regexes used in grep, egrep, vim and emacs are also different from what you can use in Perl.
+Then Regexes used in grep, egrep, vim and emacs are also different from what you can use in Perl.
 The general idea is the same, most of the special characters are also the same, but these dialects of regexes differ in various places
 and certainly differ in their capabilities.
 

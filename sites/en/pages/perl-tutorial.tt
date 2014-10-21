@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on October 14, 2014.
+parts are being published every few days. The latest one was published on October 21, 2014.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -151,7 +151,7 @@ to practice what you have learned.
 
 <b>Regular Expressions</b>
 <ol>
-<li>Regular Expressions in Perl</li>
+<li><a href="/introduction-to-regexes-in-perl">Introduction to Regular Expressions in Perl</a></li>
 <li>Regex: character classes</li>
 <li>Regex: quantifiers</li>
 <li>Regex: Greedy and non-greedy match</li>

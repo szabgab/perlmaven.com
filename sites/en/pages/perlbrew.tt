@@ -71,3 +71,10 @@ cpanm App::cpanminus::reporter
 </code>
 
 
+Example by  Shawn H Corey
+
+<code>
+perlbrew --force install perl-5.20.1 -Dusethreads -Duselargefiles -Duse64bitall -Dccflags=-DDEBIAN -Dcccdlflags=-fPIC -Darchname=x86_64-linux-gnu -Dpager=/usr/bin/sensible-pager -Doptimize=-O2
+-Duseshrplib '-Dcf_by=Shawn H Corey' -Dcf_email=SHCOREY@cpan.org
+</code>
+
