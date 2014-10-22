@@ -1,7 +1,8 @@
 =title Building an open source clone of search.cpan.org using MetaCPAN API
-=timestamp 2014-01-15T07:30:01
+=timestamp 2014-10-22T11:30:01
 =indexes MetaCPAN
-=status draft
+=tags screencast
+=status show
 =author szabgab
 =archive 1
 =comments 1
@@ -15,6 +16,10 @@ This is the same back-end that powers the fancier <a href="https://metacpan.org/
 
 =abstract end
 
+<screencast file="/media/videos/search-cpan-org" />
+
+If you would like to follow the development of the project, subscribe to the <a href="/pro">Perl Maven Pro</a>.
+
 <h2>Objectives</h2>
 
 This project has a number of objectives:
@@ -23,7 +28,9 @@ This project has a number of objectives:
   <li>Some people complain that MetaCPAN.org is too fancy for them and they prefer the look-and-feel of search.cpan.org. On the other hand some of them also complain about bugs and missing features in search.cpan.org. This project can provide them an alternative.</li>
   <li>It will be able to provide a feedback to the MetaCPAN authors for the features that might be still missing in MetaCPAN or in MetaCPAN API.</li>
   <li>This can be an interesting exercise on rebuilding an existing service when you don't have access to its source code, or when you cannot read and understand the source code. (The former being a special case of the latter.)</li>
-  <li>This can be an interesting project to follow and explain with <a href="/pro">Perl Maven Pro</a> articles and screencasts.</li>
+  <li>This can be an interesting project to follow and explain with <a href="/pro">Perl Maven Pro</a> articles and screencasts. It is like many other rewrite project
+      when you already have a working web-site and you have the database behind it, but for some reason you cannot read the source code of the application. Either because it is
+      not available to you, or because it is so unreadable that trying to analyze it would take a lot of time.</li>
   <li>A nice exercise in writing tests for an existing project.</li>
   <li>The code behind this project will be open source hosted on <a href="https://github.com/szabgab/MetaCPAN-SCO">GitHub</a></li>
   <li>The project should be an almost exact replica of search.cpan.org. The places where it can differ might be minor bug-fixes and maybe some additional configurable flexibility.</li>
@@ -106,4 +113,8 @@ This list can be later updated and can be used as a sort-of specification.
 
 While having multiple interfaces to the data on CPAN can be a good idea, letting search engines get confused about which is the canonical URL is probably not a good idea.
 Hence we are going to set the robots.txt to disallow every well-behaving user-agent.
+
+<h2>Perl Maven Pro</h2>
+
+To follow the development of the project, subscribe to the <a href="/pro">Perl Maven Pro</a>.
 
