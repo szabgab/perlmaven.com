@@ -47,6 +47,7 @@ Articles and screencast available for <a href="/pro">Perl Maven Pro</a> subscrib
   <li><a href="/pro/is-any-to-test-multiple-expected-values">Implementing 'is_any' to test multiple expected values</a></li>
   <li><a href="/pro/is-any-create-test-module">Creating a testing module</a></li>
   <li><a href="/pro/test-builder-object">Test::Builder object</a></li>
+  <li><a href="/pro/subtest">Organizing a test script with subtests</a></li>
   <li>---</li>
   <li><a href="/pro/what-is-the-status-of-the-current-test-script">	What is the status of the current test script?</a></li>
   <li><a href="/pro/mocking-function-to-fake-environment">Mocking a function to fake environment</a></li>
