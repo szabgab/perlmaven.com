@@ -111,7 +111,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li><a href="/join">join</a></li>
 <li><a href="/el-anno-19100">El año 19100 (time, localtime, gmtime)</a> e introduciendo el contexto</li>
 <li><a href="/contexto-escalar-y-lista-en-perl">Sensibilidad al contexto en Perl</a></li>
-<li><a href="http://perlmaven.com/sorting-arrays-in-perl">Ordenando arrays en Perl (en)</a></li>
+<li><a href="/ordenando-arrays-en-perl">Ordenando arrays en Perl</a></li>
 <li><a href="http://perlmaven.com/unique-values-in-an-array-in-perl">Valores únicos en arrays (en)</a></li>
 <li><a href="http://perlmaven.com/manipulating-perl-arrays">Manipulando arrays: shift, unshift, push, pop (en)</a></li>
 <li>Pilas y <a href="http://perlmaven.com/using-a-queue-in-perl">colas (en)</a></li>
