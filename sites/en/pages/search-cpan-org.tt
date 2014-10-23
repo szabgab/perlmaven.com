@@ -11,7 +11,7 @@
 =abstract start
 
 This is an attempt to recreate the look-and-feel of <a href="http://search.cpan.org/">search.cpan.org</a>
-using the <a href="https://github.com/CPAN-API/cpan-api/">MetaCPAN API</a> as a back-end. 
+using the <a href="https://github.com/CPAN-API/cpan-api/">MetaCPAN API</a> as a back-end.
 This is the same back-end that powers the fancier <a href="https://metacpan.org/">MetaCPAN</a>.
 
 =abstract end
@@ -84,7 +84,7 @@ This list can be later updated and can be used as a sort-of specification.
     It looks exactly the same as the page of a specific version. The module names link to the canonical pages of the modules.
     </li>
 <li>Module  - specific version: http://search.cpan.org/~szabgab/Text-MediawikiFormat-1.01/lib/Text/MediawikiFormat.pm
-    The POD in simple HTML. 
+    The POD in simple HTML.
     Numbers from RT: Number of 'New' and 'Open' requests
     syntax highlighting selector at the bottom right
     <b>permalink</b>
@@ -100,7 +100,7 @@ This list can be later updated and can be used as a sort-of specification.
     </li>
 <li>Feedback - http://search.cpan.org/feedback (static) how to send feedback to the search.cpan.org developers and where to ask questions about CPAN modules.
     </li>
-<li>Search - every page has a search box, and a selector (All/Modules/Distributions/Authors). As far as I can tell each one will restrict the search to 
+<li>Search - every page has a search box, and a selector (All/Modules/Distributions/Authors). As far as I can tell each one will restrict the search to
     substrings in the names of the Modules/Distributions/Authors, and 'All' will somehow combine the 3 result sets and even search elsewhere, but I don't understand this perfectly.
     For example searching for <a href="http://search.cpan.org/search?query=sz&mode=author">sz among authors</a> shows only "Arpad Szasz" and does not show "Gabor Szabo"
     and searching for <a href="http://search.cpan.org/search?query=sza&mode=author">sza among authors</a> does not return anything.
