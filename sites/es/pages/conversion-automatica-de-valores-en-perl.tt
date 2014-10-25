@@ -1,5 +1,5 @@
 =title Conversión automática de texto a número en Perl
-=timestamp 2014-10-23T23:45:56
+=timestamp 2014-10-25T10:45:56
 =indexes is_number, looks_like_number, Scalar::Util, casting, type conversion
 =status show
 =original automatic-value-conversion-or-casting-in-perl
@@ -30,7 +30,7 @@ Sería frustrante, ¿cierto?
 
 En la mayoría de los lenguajes de programación el tipo de los operandos define como un operador se comporta.
 Por ejemplo, <i>sumando</i> dos números realizan una suma numérica, mientras que <i>sumando</i> dos strings
-se realizan una concatenación de ambas.
+realizan una concatenación de ambas.
 Esta característica se llama sobrecarga de operadores.
 
 Perl funciona mayormente de la manera opuesta.
@@ -42,24 +42,24 @@ valores serán automáticamente convertidos a números. Si usas operadores para 
 (como concatenar) ambos valores serán automáticamente convertidos a strings.
 
 Los programadores C probablemente llaman a este tipo de conversiones <b>casting</b>,
-pero este termino no se usa normalmente en el mundo Perl. Probablemente porque todo
+este termino no se usa normalmente en el mundo Perl. Probablemente porque todo
 esto es automático.
 
 A Perl no le importa si escribes algo como string o como número.
 Convierte de uno a otro automáticamente en base al contexto.
 
 La conversión <hl>número => string</hl> es fácil.
-Es como si simplemente imaginamos que " aparece antes y después del valor numérico.
+Simplemente imaginamos que " aparece antes y después del valor numérico.
 
-La conversión <hl>string => número</hl> puede hacer pensar un poco más.
-Si el string es simplemente un número entonces es fácil
+La conversión <hl>string => número</hl> puede ser un poco más difícil.
+Si el string es simplemente un número entonces es fácil.
 El valor numérico será lo mismo, eliminando las comillas.
 
 Si hay caracteres que no permiten a perl convertir de forma completa el string
 a número, perl usará todo lo que sean caracteres numéricos en la parte izquierda
 y descartara el resto.
 
-Veamoslo con algunos ejemplos:
+Veamos algunos ejemplos:
 
 <code>
 Original   Como string   Como número
@@ -77,13 +77,13 @@ Original   Como string   Como número
  "23\n"      "23\n"      23
 </code>
 
-En todos los casos donde la conversión de string a número no es perfecta,
-excepto en el último, perl mostrará un warning. Asumiendo que hayas
+En todos los casos donde la conversión de string a número no es perfecta, 
+perl mostrará un warning. Asumiendo que hayas
 usado <hl>use warnings</hl> como se recomienda.
 
 <h2>Ejemplo</h2>
 
-Ahora que ya has visto la tabla anterior veamoslo en código:
+Veamos ahora algunos ejemplos con código:
 
 <code lang="perl">
 use strict;
@@ -109,7 +109,7 @@ print $x + $y;  # 7
 
 <h2>Argument isn't numeric</h2>
 
-Perl te informa mediante este <a href="http://perlmaven.com/argument-isnt-numeric-in-numeric">warning (en)</a> 
+Perl te informa mediante este <a href="http://perlmaven.com/argument-isnt-numeric-in-numeric">warning (en)</a>
 que esta intentando convertir un string a número y la conversión no es perfecta.
 
 Hay otra serie de errores y warnings comunes en Perl.
@@ -119,12 +119,12 @@ y <a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized
 <h2>¿Como evitar el warning?</h2>
 
 Esta bien que perl te avise (si se lo pediste) cuando una conversión de tipos no ha sido perfecta, ¿pero no hay una
-función como <b>is_number</b> que comprueba que un string dado es un número?
+función como <b>is_number</b> que comprueba si un string dado es un número?
 
 Si y no.
 
 Perl no tiene una función <b>is_number</b> porque supondría que sabemos que es exactamente un número.
-Desafortunadamente el mundo no esta de acuerdo en es exactamente un número. Hay sistemas
+Desafortunadamente el mundo no esta de acuerdo en que es exactamente un número. Hay sistemas
 donde ".2" es aceptado como número, pero en otros sistemas no lo es. Más común es que "2." no sea aceptado como
 número, pero hay sistemas donde es perfectamente aceptable.
 

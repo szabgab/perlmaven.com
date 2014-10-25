@@ -65,7 +65,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li><a href="http://perlmaven.com/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope (en)</a></li>
 </ul>
 </li>
-<li><a href="http://perlmaven.com/automatic-value-conversion-or-casting-in-perl">Conversión automática de texto a número (en)</a></li>
+<li><a href="/conversion-automatica-de-valores-en-perl">Conversión automática de texto a número (en)</a></li>
 <li>Sentencias condicionales: if</li>
 <li><a href="/valores-booleanos-en-perl">Valores booleanos en Perl</a></li>
 <li>Operadores numericos y operadores de cadena</li>
