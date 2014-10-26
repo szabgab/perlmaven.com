@@ -27,5 +27,18 @@ explanation of each step, then subscribe to the <a href="/pro">Perl Maven Pro</a
 
 The list of Perl Maven Pro articles dealing with this project can be found at the bottom of the <a href="/search-cpan-org">specification</a>.
 
+The pages covered in this video are:
+
+<ul>
+ <li><a href="http://search.cpan.org/">Home</a></li>
+ <li><a href="http://search.cpan.org/author/">Authors</a></li>
+ <li><a href="http://search.cpan.org/author/?A">Authors starting with A</a></li>
+ <li><a href="http://search.cpan.org/recent">Recent</a></li>
+ <li><a href="http://search.cpan.org/recent?d=20141019">Recent a week ago</a></li>
+ <li><a href="http://search.cpan.org/recent?d=20141020">Recent on 7 days ending on 20 October 2014</a></li>
+ <li><i>News</i> which is hosted elsewhere</li>
+ <li><a href="http://search.cpan.org/faq.html">FAQ</a></li>
+ <li><a href="http://search.cpan.org/feedback">Feedback</a></li>
+</ul>
 
 
