@@ -1,0 +1,31 @@
+=title search.cpan.org Authors, Recent, FAQ, Feedback
+=timestamp 2014-10-26T09:30:01
+=indexes SCO
+=tags screencast
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+<a href="http://search.cpan.org/">search.cpan.org</a> is  the older interface to everything on CPAN. In this screencast we go over some of the features
+of the web site, specifically the list of authors, the recent page, the FAQ and the Feedback page.
+
+These screencast serve both as tool to help you get the most out of search.cpan.org and as a tool to create a
+<a href="/search-cpan-org">specification for the search.cpan.org cloning</a> project.
+
+=abstract end
+
+<screencast file="/media/videos/search-cpan-org-authors-and-recent" />
+
+For the textual description of this screencast and the specification check out the <a href="/search-cpan-org">main sco cloning page</a>.
+
+To follow the development of the cloning project, you can look at <a href="https://github.com/szabgab/MetaCPAN-SCO">GitHub repositor</a>, but if you'd also like to get detailed
+explanation of each step, then subscribe to the <a href="/pro">Perl Maven Pro</a>.
+
+The list of Perl Maven Pro articles dealing with this project can be found at the bottom of the <a href="/search-cpan-org">specification</a>.
+
+
+
