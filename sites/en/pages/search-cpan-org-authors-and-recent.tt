@@ -13,7 +13,7 @@
 <a href="http://search.cpan.org/">search.cpan.org</a> is  the older interface to everything on CPAN. In this screencast we go over some of the features
 of the web site, specifically the list of authors, the recent page, the FAQ and the Feedback page.
 
-These screencast serve both as tool to help you get the most out of search.cpan.org and as a tool to create a
+This screencast serves both as a tool to help you get the most out of search.cpan.org and as a tool to create a
 <a href="/search-cpan-org">specification for the search.cpan.org cloning</a> project.
 
 =abstract end
