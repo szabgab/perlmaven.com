@@ -1,0 +1,28 @@
+name: Felipe da Veiga Leprevost 
+img: leprevost.jpg
+url: http://www.leprevost.com.br
+twitter: leprevostfv
+gplus: +FelipeLeprevost
+linkedin: http://www.linkedin.com/pub/felipe-leprevost/46/1b7/32
+pause: LEPREVOST
+country: Brazil
+location: Curitiba, Paraná
+languages: Portuguese, English
+specialities: Training, Text Processing, Web Aplications, Data Analysis, Bioinformatics, Computational Biology.
+
+html: 
+
+<p>
+Felipe has a PhD in Bioinformatics and Computational Biology, he uses Perl mainly for software development and data analysis dedicated to biological data interpretation.
+</p>
+
+<p>
+He started in 2011 the <a href="http://curitiba.pm.org/"> Curitiba Perl Mongers </a> group and is also the cofounder of
+<a href="http://www.hexabio.com.br">Hexabio</a> where he offers training and consultancy in Bioinformatics.
+</p>
+
+<p>
+Felipe is an active member of the brazilian Perl community, was also the responsible for the YAPC::Brazil 2013 and is involved in the Portuguese translations of Perl Maven articles.
+</p>
+
+

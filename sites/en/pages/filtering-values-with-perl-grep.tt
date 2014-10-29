@@ -1,5 +1,6 @@
 =title Filtering values using Perl grep
 =timestamp 2012-09-02T18:45:56
+=description Perl grep { CONDITION } LIST a generalization of the Unix grep function to filter values of a list with any condition
 =indexes grep, filter, any, List::MoreUtils, <>, glob
 =status show
 =author szabgab

@@ -14,17 +14,15 @@ building TCP/IP servers using <a href="https://metacpan.org/module/Net::Server">
 
 =abstract end
 
-<!--
 <h2>Pro</h2>
 <p>
 Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
 </p>
--->
 <ul>
   <li><a href="/pro/getting-started-with-net-server">Getting started with Net::Server - building an echo server</a></li>
   <li><a href="/pro/testing-a-simple-tcpip-server">Testing a simple TCP/IP server using Net::Telnet</a></li>
   <li><a href="/pro/echo-server-with-net-server">Echo server with logging and timeout</a></li>
-  <li><a href="http://perlmaven.com/pro/chat-server-using-net-server">Creating a chat server using Net::Server</a></li>
+  <li><a href="/pro/chat-server-using-net-server">Creating a chat server using Net::Server</a></li>
 </ul>
 
 

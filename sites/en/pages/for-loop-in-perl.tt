@@ -1,5 +1,6 @@
 =title Perl for loop explained with examples
 =timestamp 2013-03-26T08:46:13
+=description for(INITIALIZE, TEST, STEP) {} C-style for loops in perl and the foreach loop for iterating over lists
 =indexes for, foreach, loop, infinite loop
 =status show
 =books beginner_book

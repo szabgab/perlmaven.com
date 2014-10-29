@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on November 21, 2013.
+parts are being published every few days. The latest one was published on October 21, 2014.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -49,7 +49,9 @@ to practice what you have learned.
 <b>Introduction</b>
 <ol>
 <li><a href="/installing-perl-and-getting-started">Install Perl, print Hello World, Safety net (use strict, use warnings)</a></li>
+<li><a href="/hashbang">#!/usr/bin/perl - the hash-bang line</a></li>
 <li><a href="/perl-editor">Editors, IDEs, development environment for Perl</a></li>
+<li><a href="/help">Getting Help</a></li>
 <li><a href="/perl-on-the-command-line">Perl on the command line</a></li>
 <li><a href="/core-perl-documentation-cpan-module-documentation">Core Perl documentation, CPAN module documentation</a></li>
 <li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
@@ -58,21 +60,24 @@ to practice what you have learned.
 
 <b>Scalars</b>
 <ol>
-<li>Common warnings and error messages<br />
-<ul>
-<li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
-<li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
-<li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
-<li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
-<li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
-<li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
-<li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
-</ul>
+<li><a href="/common-warnings-and-error-messages">Common warnings and error messages</a><br />
+  <ul>
+    <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
+    <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
+    <li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
+    <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
+    <li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
+    <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
+    <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
+    <li><a href="/cant-call-method-on-unblessed-reference">Can't call method ... on unblessed reference</a></li>
+    <li><a href="/argument-isnt-numeric-in-numeric">Argument ... isn't numeric in numeric ...</a></li>
+  </ul>
 </li>
 <li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
-<li>Conditional statements: if</li>
+<li><a href="/if">Conditional statements: if</a></li>
 <li><a href="/boolean-values-in-perl">Boolean (true and false) values in Perl</a></li>
-<li>Numerical and string operators</li>
+<li><a href="/numerical-operators">Numerical operators</a></li>
+<li><a href="/string-operators">String operators</a></li>
 <li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
 <li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
 <li><a href="/here-documents">Here documents</a></li>
@@ -82,6 +87,7 @@ to practice what you have learned.
 <li><a href="/number-guessing-game">Number Guessing game (rand, int)</a></li>
 <li><a href="/while-loop">Perl while loop</a></li>
 <li><a href="/scope-of-variables-in-perl">Scope of variables in Perl</a></li>
+<li><a href="/short-circuit">Boolean Short circuit</a></li>
 </ol>
 
 <b>Files</b>
@@ -110,16 +116,18 @@ to practice what you have learned.
 <li><a href="/perl-arrays">Arrays in Perl</a></li>
 <li><a href="/argv-in-perl">Process command line parameters @ARGV</a></li>
 <li>Process command line parameters using Getopt::Long</li>
+<li><a href="/perl-split">split</a></li>
 <li><a href="/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a></li>
 <li><a href="/join">join</a></li>
 <li><a href="/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
 <li><a href="/scalar-and-list-context-in-perl">Context sensitivity in Perl</a></li>
 <li><a href="/sorting-arrays-in-perl">Sorting arrays in Perl</a></li>
+<li><a href="/sorting-mixed-strings">Sorting mixed strings</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
 <li><a href="/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
 <li>Stack and <a href="/using-a-queue-in-perl">queue</a></li>
-<li>reverse</li>
-<li>the ternary operator</li>
+<li><a href="/reverse">reverse</a></li>
+<li><a href="/the-ternary-operator-in-perl">The ternary operator</a></li>
 <li>Loop controls: next and last</li>
 <li>min, max, sum using List::Util</li>
 </ol>
@@ -143,7 +151,7 @@ to practice what you have learned.
 
 <b>Regular Expressions</b>
 <ol>
-<li>Regular Expressions in Perl</li>
+<li><a href="/introduction-to-regexes-in-perl">Introduction to Regular Expressions in Perl</a></li>
 <li>Regex: character classes</li>
 <li>Regex: quantifiers</li>
 <li>Regex: Greedy and non-greedy match</li>
@@ -185,12 +193,12 @@ to practice what you have learned.
 <li>Reading Excel files using Perl</li>
 <li><a href="/pro/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (for <a href="/pro">Pro</a> subscribers.)</li>
 <li>Sending e-mail using Perl</li>
-<li>CGI scripts with Perl</li>
-<li>Web applications with Perl: PSGI</li>
+<li><a href="/perl-cgi-script-with-apache2">CGI scripts with Perl</a></li>
+<li><a href="/perl-cgi-mod-perl-psgi">Web applications with Perl: PSGI</a></li>
 <li>Parsing XML files</li>
 <li>Reading and writing JSON files</li>
 <li><a href="/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
-<li>Accessing LDAP using Perl</li>
+<li><a href="/reading-from-ldap-in-perl-using-net-ldap">Accessing LDAP using Perl</a></li>
 </ol>
 
 <b>Other</b>
@@ -201,6 +209,9 @@ to practice what you have learned.
 <li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a></li>
 <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
 <li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
+<li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
+<li><a href="/testing-a-simple-perl-module">Testing a simple Perl module</a></li>
+<li><a href="/what-are-sting-and-numeric-contexts">What are string and numeric contexts?</a></li>
 </ol>
 
 <b>Object Oriented Perl with Moo</b>

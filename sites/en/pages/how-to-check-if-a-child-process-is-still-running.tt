@@ -1,0 +1,117 @@
+=title How to check if a child process is still running in Perl?
+=timestamp 2014-04-10T07:50:01
+=indexes wait, waitpid, fork, WNOHANG, POSIX, Time::HiRes
+=status show
+=books cook_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+Sometimes, when we use <a href="/pro/fork">fork</a> to create one or more child-processes we would like to
+know if the child process has stopped working or if it is still alive.
+
+Normally we use <hl>wait</hl> or <hl>waitpid</hl> to notice when a child process has finished. The problem 
+with that these functions will wait, and block our execution till the child process stops working.
+
+What if we would like to do something while the child is still running but stop doing it when the child
+has finished?
+
+=abstract end
+
+In a nutshell, calling <hl>waitpid()</hl> with the process ID of the child process and with the
+<hl>WNOHANG</hl> flag imported from the <a href="https://metacpan.org/pod/POSIX">POSIX</a> module
+is a non-blocking call. It will return immediately, without waiting for the child to stop working.
+
+It will return a status code which is the actual process id we passed to it (<hl>$pid</hl>) if the child has already stopped running.
+the status code is -1 in case of some failure and it is 0 if the child is still running.
+
+The actual exit code of the child process is saved in the high byte of <hl>$?</hl>.
+
+A very simple usage would look like this:
+<code lang="perl">
+use POSIX ":sys_wait_h";
+
+my $res = waitpid($pid, WNOHANG);
+</code>
+
+
+<h2>Example</h2>
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+use POSIX ":sys_wait_h";
+use Time::HiRes qw(sleep);
+
+my $pid = fork();
+die "Could not fork\n" if not defined $pid;
+
+if (not $pid) {
+    say "In child";
+    sleep 1;
+    exit 3;
+}
+
+say "In parent of $pid";
+while (1) {
+    my $res = waitpid($pid, WNOHANG);
+    say "Res: $res";
+    sleep(0.1);
+
+    if ($res == -1) {
+        say "Some error occurred ", $? >> 8;
+        exit();
+    }
+    if ($res) {
+        say "Child $res ended with ", $? >> 8;
+        last;
+    }
+}
+
+say "about to wait()";
+say wait();
+say "wait() done";
+</code>
+
+In this example we create a single child process that will sleep for one second and then exit with exit code 3.
+(Just an arbitrary number to show how it works.)
+
+In the meantime the parent process enters an infinite while-loop and checks if the process is still running every 0.1 seconds.
+(We use the <hl>sleep</hl> function of <a href="https://metacpan.org/pod/Time::HiRes">Time::HiRes</a> for this.)
+
+If the result is -1, there was some error.
+
+If the result is some other non-null number then the child process has finished. We print the content of <hl>$res</hl>
+which is supposed to be the same as <hl>$pid</hl>, and the content of <hl>$?</hl> shifted 8 bit to the right. That is
+we print the high-byte of <hl>$?</hl> which is the exit code of the child process. (The number 3 we used for the demonstrations.)
+
+Lastly, we can see that if we call <hl>wait()</hl> after exiting the while-loop, it won't block as there are no more running
+child processes.
+
+The output:
+
+<code>
+In parent of 15469
+Res: 0
+In child
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 15469
+Child 15469 ended with 3
+about to wait()
+-1
+wait() done
+</code>
+

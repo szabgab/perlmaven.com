@@ -83,8 +83,8 @@ correio eletrônico precisam de um pouco mais atenção.
 Em aspas simples <hl>@</hl> não interpola.
 
 Em aspas duplas esse código gera um erro:
-<a href="/global-symbol-requires-explicit-package-name">Global symbol "@bar"
-requires explicit package name at ... line ...</a> (em inglês por enquanto)
+<a href="/simbolo-global-requer-nome-de-pacote-explicito">Global symbol "@bar"
+requires explicit package name at ... line ...</a>
 
 e um alerta:
 <b>Possible unintended interpolation of @bar in string at ... line ...</b>
@@ -327,7 +327,7 @@ The )name} is "foo"
 ... deve haver uma forma de utilizar os colchetes também, certo?
 
 
-<h2>q, o operator q-unico</h2>
+<h2>q, o operator q-único</h2>
 
 Semelhante ao <hl>qq</hl> existe também um operador chamado <hl>q</hl>. Ele
 também permite que você selecione os delimitadores da sua string, mas isso

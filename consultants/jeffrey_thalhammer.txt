@@ -1,0 +1,20 @@
+name: Jeffrey Ryan Thalhammer
+url: https://stratopan.com/services
+img: thalhammer.png
+twitter: thaljef
+gplus: 114605391649378336888 
+linkedin: http://www.linkedin.com/in/thaljef
+pause: THALJEF
+location: San Francisco, California
+country: US
+languages: English
+specialities: 
+
+html: 
+
+Jeffrey Thalhammer is the author of Pinto and the creator of <a href="http://metacpan.org/pod/Perl::Critic">Perl::Critic</a>,
+the lint tool of Perl. Jeff operates a small consulting company in San Francisco and has been active in the Perl community for many years.
+
+<p>
+He occassionally <a href="http://meta.perlmaven.com/contributor/thalhammer">guest-posts</a> on the Perl Maven site.
+

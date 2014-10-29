@@ -19,17 +19,7 @@ a modern web application using Perl, you have several options. In this screencas
 
 =abstract end
 
-<script type="text/javascript" src="//cdn.sublimevideo.net/js/f68gs97x.js"></script>
-
-<video id="video1" class="sublime" width="960" height="540" data-uid="modern-web-with-perl" preload="none">
-  <source src="http://perlmaven.com/media/videos/modern-web-with-perl-1280x720.mp4" data-quality="hd" type="video/mp4" />
-  <source src="http://perlmaven.com/media/videos/modern-web-with-perl-1280x720.webm" data-quality="hd" type="video/webm" />
-</video>
-
-<div id="downloads">Download:
-<a href="http://perlmaven.com/media/videos/modern-web-with-perl-1280x720.mp4">mp4</a> (6.4Mb)
-<a href="http://perlmaven.com/media/videos/modern-web-with-perl-1280x720.webm">webm</a> (9.4 Mb)
-</div>
+<screencast file="/media/videos/modern-web-with-perl-1280x720" />
 
 <div id="text">
 <ul>

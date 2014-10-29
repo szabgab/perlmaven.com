@@ -1,5 +1,6 @@
 =title Manipulating Perl arrays: shift, unshift, push, pop
 =timestamp 2013-02-06T14:45:56
+=description push(ARRAY, LIST) - extending the ARRAY with the content of LIST; LAST = pop(ARRAY) - fetching the last element; FIRST = shift(ARRAY); unshift(ARRAY, LIST)
 =indexes array, shift, unshift, push, pop
 =status show
 =books beginner_book
@@ -79,7 +80,7 @@ This is quite similar to <hl>pop</hl>, but it works on the lower end of the arra
 <h2>unshift</h2>
 
 This is the opposite operation of <hl>shift</hl>. <hl>unshift</hl> will
-take one or values (or 0 if that's what you like) and place it at the
+take one or more values (or even 0 if that's what you like) and place it at the
 beginning of the array moving all the other elements to the right.
 
 You can pass to it a single scalar value, and then that value will become the

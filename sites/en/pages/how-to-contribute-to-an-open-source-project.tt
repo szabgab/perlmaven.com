@@ -1,0 +1,82 @@
+=title How to contribute to an Open Source project?
+=timestamp 2013-11-15T07:30:01
+=indexes Open Source
+=status draft
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+In the article on <a href="/how-to-prepare-for-a-perl-job-interview">how to prepare for a Perl job interview</a>,
+I mentioned, one of the best ways to improve your <b>hireability</b> is to constantly learn new things, and constantly improve yourself.
+
+Probably the best way to do that is by building something. If it is an open source project it has the added benefit, that you
+can show the results to the prospective employer.
+
+You don't even have to build something from scratch, you can also contribute to an existing project.
+
+But how?
+And do you need to be an expert or can beginner join a project?
+
+=abstract end
+
+<h2>Who can contribute?</h2>
+
+Before explaining the how, let's see the preequisites. I would say there are no prerequisites, but that would not be really true.
+You are expected to be able to communicate - in some level.
+You are expected to be able to nice to other people, though I saw quite a few people who seem to think being nasty to others have some value.
+
+Do you need to be an expert in the field? e.g. an expert Perl programmer?
+
+Definitely not. As a beginner, you might not be able to tackle the most difficult issues, but there are always plenty of smaller,
+less involved issues. There are always better ways to document something. And if we are talking about a Perl Module, then
+the documentation might be just writing an example using the module.
+
+You probably should have some understanding of version control systems. Particularly Git and <a href="https://github.com/">GitHub</a> which
+has been a favorite by many developers.
+
+
+<h2>Find a project</h2>
+
+The first thing you need to do is to decide what project might interest you. If you are using Perl,
+there are tons of modules on <a href="http://metacpan.org/">CPAN</a> that have bugs, missing features or missing documentation.
+
+If you need are looking for a shorter list, there are plenty of modules on the
+<a href="http://neilb.org/adoption/index.html">CPAN Adoption Candidates list</a> created
+by <a href="http://neilb.org/">Neil Bowers</a>.
+
+Of course, adopting a module might feel to be too big a step if you have not published anything on CPAN yet.
+
+A smaller thing would be to find a module that is being developed, related to a field you are interested in, and try to contribute to that
+module. MetaCPAN provides the list of <a href="https://metacpan.org/recent">recently uploaded modules</a>. You can look around there
+and find a module that you are interested in. You can either send an e-mail to the person who uploaded the most recent version,
+asking them if you could help.
+
+Instead of sending an e-mail, you could also already send some improvement. But what and how?
+
+<h2>What to contribute?</h2>
+
+MetaCPAN links to the bug-tracking system of each module. You can find reported bugs there
+and you can try to fix a bug. Even if you cannot fix the bug, you could see if you can write a
+test case that will expose the bug.
+
+Alternatively, using <a href="https://metacpan.org/pod/Devel::Cover">Devel::Cover</a>, you can create a report
+to see which parts of the code have tests. Actually, you could even go to <a href="http://cpancover.com/latest/index.html">CPAN Cover</a>
+where you'll find test-coverage reports generated for each CPAN distribution.
+You could write a test case for a part of the code that is not covered yet, even if there is no reported bug in that area.
+
+<h2>How to contribute?</h2>
+
+Most active projects have a public version control system. The vast majority of them are using
+<a href="https://github.com/">GitHub</a>. So check if the module links to its version control system.
+If yes, there will be a link to it on the left-hand side of its Meta-CPAN page call "Repository".
+
+A while ago I've prepared a screencast showing an example on
+<a href="/contributing-to-a-perl-module-on-cpan-using-vim-and-github">how to contribute to a Perl module</a>.
+You could watch that and try to follow those steps.
+
+
+

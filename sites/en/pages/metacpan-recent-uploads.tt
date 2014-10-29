@@ -1,0 +1,23 @@
+=title MetaCPAN recent uploads
+=timestamp 2014-10-02T11:30:01
+=indexes MetaCPAN
+=tags screencast
+=status show
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+<a href="https://metacpan.org/">MetaCPAN</a> has a couple of links at the top. One of them shows the 
+<a href="https://metacpan.org/recent">recently uploaded distributions</a>. You can use a filter to see
+only thos that were uploaded for the first time.
+
+This is a great way to see what's is totally new on CPAN?
+
+=abstract end
+
+<screencast file="/media/videos/metacpan-recent-uploads" />
+
+

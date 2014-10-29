@@ -105,7 +105,7 @@ print $x + $y;  # 7
 
 <h2>Argument isn't numeric</h2>
 
-That's the warning you get when perl is trying to convert
+That's <a href="/argument-isnt-numeric-in-numeric">the warning</a> you get when perl is trying to convert
 a string to a number and the conversion isn't perfect.
 
 There are a number of other common warnings and errors in Perl.

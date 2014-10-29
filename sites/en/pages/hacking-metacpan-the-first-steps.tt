@@ -1,6 +1,6 @@
 =title Hacking Meta::CPAN - the first steps
 =timestamp 2013-11-22T15:46:01
-=indexes Meta::CPAN
+=indexes Meta::CPAN, MetaCPAN
 =status show
 =author szabgab
 =archive 1
@@ -95,7 +95,7 @@ you have your own Meta::CPAN.
 Try using it to make sure everything works and that it can connect to the
 back-end server.
 
-<h2>Adding links to Googl+</h2>
+<h2>Adding links to Google+</h2>
 
 If you "connect" a web page with your Google+ account, Google will display
 your face whenever that page appears in a search on Google itself.

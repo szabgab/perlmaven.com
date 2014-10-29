@@ -18,6 +18,8 @@ The beginning of a series of articles about
 <ul>
   <li><a href="/videos/modern-web-with-perl">Modern Web with Perl</a>, a quick overview (screencast)</li>
   <li><a href="/videos/getting-started-with-perl-dancer">Getting Started with Perl Dancer</a> (screencast)</li>
+  <li><a href="/building-a-blog-engine-using-perl-dancer">Building a blog engine using Perl Dancer (screencast)</a></li>
+  <lo><a href="/getting-started-with-perl-dancer-on-digital-ocean">Getting started with Perl Dancer on Digital Ocean</a></li>
 </ul>
 
 <!--
@@ -32,4 +34,10 @@ Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
 <!--
   <li><a href=""></a></li>
 -->
+
+<h2>See Also</h2>
+<ul>
+  <li><a href="/psgi">PSGI</a> - Dancer is a PSGI based web framework. Learning about the lower layer might be useful.</li>
+</ul>
+
 

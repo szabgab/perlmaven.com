@@ -12,16 +12,299 @@
 =social 0
 
 
-The Beginner Perl Maven video-course has been split in two parts.
-
-The video course includes the e-book with over 200 pages, 50 exercises with solution and the
-full "Beginner Perl Maven" training material.
-
 Watching the videos and doing all the exercises will allow you to start writing
 useful Perl scripts and/or to maintaining existing scripts.
 
-<h2>Table of Contents (part 1)</h2>
+You can get access to all the video by signing up to the <a href="/pro">Perl Maven Pro</a>
+subscription service.
 
+<h2>FREE preview</h2>
+
+Before you subscribe to the Perl Maven channel to watch the videos you might want to see
+how these look like. Watch the one about <a href="/pro/beginner-perl/the-year-of-19100">the Year of 19100</a>.
+
+
+
+<h2>Table of Contents</h2>
+<h3>Introduction</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/installation">Welcome and installation</a></li>
+  <li><a href="/pro/beginner-perl/editors">Editors, IDEs</a></li>
+  <li><a href="/pro/beginner-perl/command-line">Command line</a></li>
+  <li><a href="/pro/beginner-perl/hello-world">Hello World</a></li>
+  <li><a href="/pro/beginner-perl/safety-net">Safety Net</a></li>
+  <li><a href="/pro/beginner-perl/debugging">Debugging</a></li>
+  <li><a href="/pro/beginner-perl/comments">Comments</a></li>
+  <li><a href="/pro/beginner-perl/documentation">Documentation of Perl</a></li>
+  <li><a href="/pro/beginner-perl/pod">POD - Plain Old Documentation</a></li>
+  <li><a href="/pro/beginner-perl/exercise-hello-world">Exercise: Hello World</a></li>
+  <li><a href="/pro/beginner-perl/solution-hello-world-1">Solution: Hello World (part 1)</a></li>
+  <li><a href="/pro/beginner-perl/solution-hello-world-2">Solution: Hello World (part 2)</a></li>
+</ul>
+
+<h3>Scalars</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/scalar-values-and-variables">Scalar values and variables</a></li>
+  <li><a href="/pro/beginner-perl/common-errors">Common Errors</a></li>
+  <li><a href="/pro/beginner-perl/interpolation-stdin-chomp">User Input and Output</a></li>
+  <li><a href="/pro/beginner-perl/numerical-operators">Numerical Operators</a></li>
+  <li><a href="/pro/beginner-perl/string-operators">String Operators</a></li>
+  <li><a href="/pro/beginner-perl/if-statement">If statement</a></li>
+  <li><a href="/pro/beginner-perl/comparison-operators">Comparison Operators</a></li>
+  <li><a href="/pro/beginner-perl/string-number-conversion">String Number Conversion</a></li>
+  <li><a href="/pro/beginner-perl/compare-values">Compare Values</a></li>
+  <li><a href="/pro/beginner-perl/undef">Undef</a></li>
+  <li><a href="/pro/beginner-perl/logical-operators">Logical Operators</a></li>
+  <li><a href="/pro/beginner-perl/true-false">True and False values</a></li>
+  <li><a href="/pro/beginner-perl/short-circuit">Short circuit</a></li>
+  <li><a href="/pro/beginner-perl/string-functions-index">String function: index</a></li>
+  <li><a href="/pro/beginner-perl/substr">Substr</a></li>
+  <li><a href="/pro/beginner-perl/strings-in-double-quotes">String in Double quotes</a></li>
+  <li><a href="/pro/beginner-perl/strings-in-single-quotes">String in Single quotes</a></li>
+  <li><a href="/pro/beginner-perl/scope-of-variables">Scope of Variables</a></li>
+  <li><a href="/pro/beginner-perl/rand-and-int">Rand and Int</a></li>
+  <li><a href="/pro/beginner-perl/here-documents">Here documents</a></li>
+  <li><a href="/pro/beginner-perl/exercise-rectangular">Exercise: rectangular</a></li>
+  <li><a href="/pro/beginner-perl/solution-area-of-rectangular">Solution: area of rectangular</a></li>
+  <li><a href="/pro/beginner-perl/solution-area-prompt-and-warn">Solution: Area prompt and warn if values are less than 0</a></li>
+  <li><a href="/pro/beginner-perl/solution-concatenation">Solution: Concatenation</a></li>
+  <li><a href="/pro/beginner-perl/exercise-number-guessing-game">Exercise: Number guessing game</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game">Solution: Number guessing game</a></li>
+</ul>
+
+<h3>Files</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/die-warn-exit">die, warn, exit</a></li>
+  <li><a href="/pro/beginner-perl/open-file">Open File</a></li>
+  <li><a href="/pro/beginner-perl/open-file-all">Open File All</a></li>
+  <li><a href="/pro/beginner-perl/open-file-with-error-handling">Open File with Error Handling</a></li>
+  <li><a href="/pro/beginner-perl/open-or-die">open or die</a></li>
+  <li><a href="/pro/beginner-perl/no-such-file">No such file</a></li>
+  <li><a href="/pro/beginner-perl/read-one-line">Read one line</a></li>
+  <li><a href="/pro/beginner-perl/while-loop">While loop</a></li>
+  <li><a href="/pro/beginner-perl/read-file-line-by-line">Read file line by line</a></li>
+  <li><a href="/pro/beginner-perl/write-to-file">Write to file</a></li>
+  <li><a href="/pro/beginner-perl/sum-numbers-in-a-file">Sum numbers in a file</a></li>
+  <li><a href="/pro/beginner-perl/debug-sum-numbers">Debug the sum numbers script</a></li>
+  <li><a href="/pro/beginner-perl/analyze-apache-log-file">Analyze Apache log file</a></li>
+  <li><a href="/pro/beginner-perl/old-style-open">Old Style Open</a></li>
+  <li><a href="/pro/beginner-perl/exercise-add-more-statistics">Exercise: Add more statistics</a></li>
+  <li><a href="/pro/beginner-perl/solution-add-more-statistics">Solution: Add more statistics</a></li>
+  <li><a href="/pro/beginner-perl/exercise-write-report-to-file">Exercise: Write report to file</a></li>
+  <li><a href="/pro/beginner-perl/solution-write-report-to-file">Solution: Write report to file</a></li>
+</ul>
+
+
+<h3>Lists and Arrays</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/lists-in-perl">Lists in Perl</a></li>
+  <li><a href="/pro/beginner-perl/list-assignment">List Assignment</a></li>
+  <li><a href="/pro/beginner-perl/foreach-loop-over-list">Foreach Loop Over List</a></li>
+  <li><a href="/pro/beginner-perl/creating-an-array">Creating and Array</a></li>
+  <li><a href="/pro/beginner-perl/array-assignment">Array Assignment</a></li>
+  <li><a href="/pro/beginner-perl/exercise-more-statistics">Exercise: more statistics</a></li>
+  <li><a href="/pro/beginner-perl/array-indexes">Array indexes</a></li>
+  <li><a href="/pro/beginner-perl/array-indexes-screencast">Array indexes (screencast)</a></li>
+  <li><a href="/pro/beginner-perl/looks-like-number">Looks like number</a></li>
+  <li><a href="/pro/beginner-perl/command-line-parameters">Command line parameters</a></li>
+  <li><a href="/pro/beginner-perl/command-line-parameters-screencast">Command line parameters (screencast)</a></li>
+  <li><a href="/pro/beginner-perl/process-command-line-using-getopt-long">Processing command line using Getopt::Long</a></li>
+  <li><a href="/pro/beginner-perl/process-command-line-using-getopt-long-screencast">Processing command line using Getopt::Long (screencast)</a></li>
+  <li><a href="/pro/beginner-perl/process-csv-file">Process CSV file</a></li>
+  <li><a href="/pro/beginner-perl/process-csv-file-short-version">Process CSV file - short version</a></li>
+  <li><a href="/pro/beginner-perl/oneliner-sum-of-csv">Oneliner - Sum of values in CSV file</a></li>
+  <li><a href="/pro/beginner-perl/text-csv-xs">Process CSV file - using Text::CSV_XS</a></li> <!-- move from advanced arrays?  -->
+  <li><a href="/pro/beginner-perl/join">Join</a></li>
+  <li><a href="/pro/beginner-perl/exercise-improve-the-color-selector">Exercise: improve the color selector</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector">Solution: improve the color selector</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-check-input">Solution: improve the color selector - check input</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-force">Solution: improve the color selector - force</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-colors-txt">Solution: improve the color selector - colors.txt</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-filename">Solution: improve the color selector - --filename</a></li>
+  <li><a href="/pro/beginner-perl/exercise-improve-number-guessing-game">Exercise: improve the number guesssing game</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-multiple-guesses">Solution: improve the number guesssing game - multiple guesses</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-exit">Solution: improve the number guesssing game - exit</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-s-show">Solution: improve the number guesssing game - s for show</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-n-next-game">Solution: improve the number guesssing game - n for next game</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-d-debug-toggle">Solution: improve the number guesssing game - d for debug mode</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-m-move-toggle">Solution: improve the number guesssing game - m for move mode</a></li>
+</ul>
+
+<h3>Advanced Arrays</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/the-year-of-19100">The Year of 19100</a></li>
+  <li><a href="/pro/beginner-perl/array-in-context">Array in Context</a></li>
+  <li><a href="/pro/beginner-perl/context-sensitivity">Context Sensitivity</a></li>
+  <li><a href="/pro/beginner-perl/filehandle-in-scalar-and-list-context">Filehandle in SCALAR and LIST context</a></li>
+  <li><a href="/pro/beginner-perl/slurp">Slurp</a></li>
+  <li><a href="/pro/beginner-perl/pop-and-push">Pop and Push</a></li>
+  <li><a href="/pro/beginner-perl/loop-controls-next-last">Loop controls: next and last</a></li>
+  <li><a href="/pro/beginner-perl/shift-and-unshift">shift and unshift</a></li>
+  <li><a href="/pro/beginner-perl/shift">shift</a></li>
+  <li><a href="/pro/beginner-perl/reverse">reverse</a></li>
+  <li><a href="/pro/beginner-perl/sort">sort</a></li>
+  <li><a href="/pro/beginner-perl/ternary-operator">Ternary operator</a></li>
+  <li><a href="/pro/beginner-perl/count-digits">Count Digits</a></li>
+  <li><a href="/pro/beginner-perl/exercise-display-unique-rows-of-a-file">Exercise: Display unique rows of a file</a></li>
+  <li><a href="/pro/beginner-perl/exercise-sort-mixed-string">Exercise: sort mixed string</a></li>
+</ul>
+
+<h3>Functions and Subroutines</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/functions-and-subroutines">Functions and Subroutines</a></li>
+  <li><a href="/pro/beginner-perl/defining-subroutines">Defining Subroutines</a></li>
+  <li><a href="/pro/beginner-perl/exercise-number-guessing-in-sub">Exercise: Number guessing in sub</a></li>
+</ul>
+
+
+<h3>Hashes</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/a-hash-and-its-uses">A hash and its uses</a></li>
+  <li><a href="/pro/beginner-perl/creating-a-hash">Creating a hash</a></li>
+  <li><a href="/pro/beginner-perl/creating-a-hash-from-array">Creating a hash from an array</a></li>
+  <li><a href="/pro/beginner-perl/hash-in-scalar-context">Hash in scalar context</a></li>
+  <li><a href="/pro/beginner-perl/fetching-data-from-hash">Fetching data from hash</a></li>
+  <li><a href="/pro/beginner-perl/exists-delete-hash">Exists and Delete in hash</a></li>
+  <li><a href="/pro/beginner-perl/counting-words-in-a-file">Counting words in a file</a></li>
+  <li><a href="/pro/beginner-perl/dumping-hash">Dumping hash</a></li>
+  <li><a href="/pro/beginner-perl/exercise-parse-http-values">Exercise: parse HTTP values</a></li>
+  <li><a href="/pro/beginner-perl/solution-parse-http-values">Solution: parse HTTP values</a></li>
+  <li><a href="/pro/beginner-perl/exercise-improve-color-selector">Exercise: Improve color selector</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-color-selector">Solution: Improve color selector</a></li>
+  <li><a href="/pro/beginner-perl/exercise-sort-scores">Exercise: Sort scores</a></li>
+  <li><a href="/pro/beginner-perl/solution-sort-scores">Solution: Sort scores</a></li>
+  <li><a href="/pro/beginner-perl/exercise-improve-apache-analyzer">Exercise: Improve Apache log analyzer</a></li>
+  <li><a href="/pro/beginner-perl/solution-improve-apache-analyzer">Solution: Improve Apache log analyzer</a></li>
+  <li><a href="/pro/beginner-perl/exercise-parse-variable-width-fields">Exercise: Parse variable width fields</a></li>
+  <li><a href="/pro/beginner-perl/solution-parse-variable-width-fields">Solution: Parse variable width fields</a></li>
+</ul>
+
+
+<h3>Regular Expressions - part 1</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/regexes">Regexes</a></li>
+  <li><a href="/pro/beginner-perl/where-can-i-use-regexes">Where can I use regexes</a></li>
+  <li><a href="/pro/beginner-perl/simple-use-of-regex">Simple use of regex</a></li>
+  <li><a href="/pro/beginner-perl/finding-a-string-in-a-file">Finding a string in a file</a></li>
+  <li><a href="/pro/beginner-perl/single-character-match">Single character match</a></li>
+  <li><a href="/pro/beginner-perl/match-any-character">Match any character</a></li>
+  <li><a href="/pro/beginner-perl/character-classes">Character classes</a></li>
+  <li><a href="/pro/beginner-perl/negated-character-class">Negated character class</a></li>
+  <li><a href="/pro/beginner-perl/optional-characters">Optional characters</a></li>
+  <li><a href="/pro/beginner-perl/any-number-of-any-character">Any Number Of Any Characters</a></li>
+  <li><a href="/pro/beginner-perl/quantifiers">Quantifiers</a></li>
+  <li><a href="/pro/beginner-perl/quantifiers-on-character-classes">Quantifiers on Character classes</a></li>
+  <li><a href="/pro/beginner-perl/exercise-regexes-1">Exercise: Regexes 1</a></li>
+  <li><a href="/pro/beginner-perl/solution-regexes-1">Solution 1</a></li>
+  <li><a href="/pro/beginner-perl/solution-regexes-2">Solution 2</a></li>
+  <li><a href="/pro/beginner-perl/solution-regexes-3">Solution 3</a></li>
+</ul>
+
+<h3>Regular Expressions - part 2</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/alternatives">Alternatives</a></li>
+  <li><a href="/pro/beginner-perl/capturing">Capturing</a></li>
+  <li><a href="/pro/beginner-perl/anchors">Anchors</a></li>
+  <li><a href="/pro/beginner-perl/character-classes">Character classes</a></li>
+  <li><a href="/pro/beginner-perl/special-character-classes">Special character classes</a></li>
+  <li><a href="/pro/beginner-perl/exercise-number">Exercise: number</a></li>
+  <li><a href="/pro/beginner-perl/exercise-hexa-octal-binary">Exercise: hexa, octal, binary</a></li>
+  <li><a href="/pro/beginner-perl/exercise-roman-numbers">Exercise: Roman numbers</a></li>
+  <li><a href="/pro/beginner-perl/solutions-number">Solution: number</a></li>
+  <li><a href="/pro/beginner-perl/solution-hexa-octal-binary">Solution: hexa, octal, binary</a></li>
+</ul>
+
+
+<h3>Regular Expressions - part 3</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/m-for-matching">m for matching</a></li>
+  <li><a href="/pro/beginner-perl/case-insensitive">Case insensitive</a></li>
+  <li><a href="/pro/beginner-perl/multiple-lines">multiple lines</a></li>
+  <li><a href="/pro/beginner-perl/single-line">Single line</a></li>
+  <li><a href="/pro/beginner-perl/x-modifier">x-modifier</a></li>
+  <li><a href="/pro/beginner-perl/substitution">Substitution</a></li>
+  <li><a href="/pro/beginner-perl/global-substitution">global-substitution</a></li>
+  <li><a href="/pro/beginner-perl/greedy-quantifyers">greedy-quantifyers</a></li>
+  <li><a href="/pro/beginner-perl/minimal-matching">minimal-matching</a></li>
+  <li><a href="/pro/beginner-perl/trim">trim</a></li>
+  <li><a href="/pro/beginner-perl/fixing-assembly-with-perl">Fixing assembly with Perl</a></li>
+  <li><a href="/pro/beginner-perl/split">split</a></li>
+  <li><a href="/pro/beginner-perl/fixing-dates">Fixing dates</a></li>
+  <li><a href="/pro/beginner-perl/exercise-split-simple-cgi">Exercise: split simple cgi</a></li>
+  <li><a href="/pro/beginner-perl/exercise-split-http">Exercise split http</a></li>
+  <li><a href="/pro/beginner-perl/solution-split-http">Solution: split http</a></li>
+  <li><a href="/pro/beginner-perl/exercise-filename-dirname">Exercise: filename/dirname</a></li>
+  <li><a href="/pro/beginner-perl/exercise-split-path">Exercise: split path</a></li>
+  <li><a href="/pro/beginner-perl/solution-split-path">Solution: split path</a></li>
+  <li><a href="/pro/beginner-perl/exercise-sort-snmp-numbers">Exercise: sort SNMP numbers</a></li>
+  <li><a href="/pro/beginner-perl/solution-sort-snmp-numbers">Solution: sort SNMP numbers</a></li>
+  <li><a href="/pro/beginner-perl/exercise-parse-hours-log-file-and-produce-report">Exercise: parse hours log file and produce report</a></li>
+  <li><a href="/pro/beginner-perl/exercise-create-time-report">Exercise: create time report</a></li>
+  <li><a href="/pro/beginner-perl/exercise-parse-ini-file">Exercise: parse INI file</a></li>
+  <li><a href="/pro/beginner-perl/exercise-parse-perl-file">Exercise: parse perl file</a></li>
+</ul>
+
+<h3>Shell to Perl</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/shell-x">shell -x</a></li>
+  <li><a href="/pro/beginner-perl/external-programs">external programs</a></li>
+  <li><a href="/pro/beginner-perl/unix-and-dos-commands">Unix and DOS commands</a></li>
+  <li><a href="/pro/beginner-perl/file-globbing">file globbing</a></li>
+  <li><a href="/pro/beginner-perl/rename-files">rename files</a></li>
+  <li><a href="/pro/beginner-perl/directory-handle">directory handle</a></li>
+  <li><a href="/pro/beginner-perl/file-homedir">File::HomeDir</a></li>
+  <li><a href="/pro/beginner-perl/more-unix-commands">more Unix commands</a></li>
+  <li><a href="/pro/beginner-perl/file-spec">File::Spec</a></li>
+  <li><a href="/pro/beginner-perl/file-find">File::Find</a></li>
+</ul>
+
+<h3>CPAN</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/using-procedural-module">Using procedural module</a></li>
+  <li><a href="/pro/beginner-perl/using-object-oriented-module">Using object oriented module</a></li>
+  <li><a href="/pro/beginner-perl/changing-inc">Changing @INC</a></li>
+  <li><a href="/pro/beginner-perl/changing-inc-relative-path">Changing @INC relative path</a></li>
+  <li><a href="/pro/beginner-perl/what-is-cpan">What is CPAN</a></li>
+  <li><a href="/pro/beginner-perl/some-interesting-cpan-modules">Some interesting CPAN modules</a></li>
+  <li><a href="/pro/beginner-perl/installing-modules-from-the-os-vendor">Installing modules from the OS vendor</a></li>
+  <li><a href="/pro/beginner-perl/installing-modules-with-cpan">Installing modules with cpan</a></li>
+  <li><a href="/pro/beginner-perl/search-cpan-org">search.cpan.org</a></li>
+  <li><a href="/pro/beginner-perl/cpantesters-and-cpanratings">cpantesters and cpanratings</a></li>
+  <li><a href="/pro/beginner-perl/"></a></li>
+</ul>
+
+<h3>Applications</h3>
+<ul>
+  <li><a href="/pro/beginner-perl/create-linux-user">Create Linux user account</a></li>
+  <li><a href="/pro/beginner-perl/diskspace-usage-df">diskspace usage df</a></li>
+  <li><a href="/pro/beginner-perl/reporting-diskspace-usage-on-mail-server">Reporting diskspace usage on mail server</a></li>
+  <li><a href="/pro/beginner-perl/disk-usage-du">disk usage: du</a></li>
+  <li><a href="/pro/beginner-perl/send-email-with-attachments">Send email with attachments</a></li>
+  <li><a href="/pro/beginner-perl/reading-excel-file">Reading Excel file</a></li>
+  <li><a href="/pro/beginner-perl/read-fixed-width-records">read fixed-width records</a></li>
+  <li><a href="/pro/beginner-perl/process-config-file">Process config file</a></li>
+</ul>
+
+<!--
+-->
+
+<!--
+  <li><a href="/pro/beginner-perl/"></a></li>
+  <li><a href="/pro/beginner-perl/"></a></li>
+-->
+
+
+
+<!--
+
+<h2>Availability at Udemy</h2>
+
+The video courses are also available via Udemy where they have been split in two parts.
+
+There they include the e-book with over 200 pages, 50 exercises with solution and the
+full "Beginner Perl Maven" training material.
+
+<h2>Table of Contents (part 1)</h2>
 <ul>
 <li>How to install Perl, how to run scripts</li>
 <li>Basic I/O</li>
@@ -57,4 +340,6 @@ class="btn"><a href="http://ude.my/rMNRXI">Buy for $59</a></div></td></tr>
 screencasts<br />+ explanation of the solutions<br />+ The source code of the examples and exercises.</td><td><div
 class="btn"><a href="http://ude.my/vsWG4H">Buy for $59</a></div></td></tr>
 </table>
+
+-->
 

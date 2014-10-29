@@ -22,10 +22,11 @@ First let'slink to few examples:
 <h2>Including images in MetaCPAN</h2>
 
 <ul>
-<li><a href="https://metacpan.org/module/Chart::Clicker">Chart::Clicker</a></li>
-<li><a href="https://metacpan.org/module/SVG">SVGN</a></li>
-<li><a href="https://metacpan.org/module/Acme::CPANAuthors::Nonhuman">Acme::CPANAuthors::Nonhuman</a></li>
-<li><a href="https://metacpan.org/module/MOSES::MOBY">MOSES::MOBY</a></li>
+<li><a href="https://metacpan.org/pod/Chart::Clicker">Chart::Clicker</a></li>
+<li><a href="https://metacpan.org/pod/SVG">SVGN</a></li>
+<li><a href="https://metacpan.org/pod/Acme::CPANAuthors::Nonhuman">Acme::CPANAuthors::Nonhuman</a></li>
+<li><a href="https://metacpan.org/pod/MOSES::MOBY">MOSES::MOBY</a></li>
+<li><a href="https://metacpan.org/pod/Wrangler">Wrangler</a></li>
 </ul>
 
 <h2>Including images on search.cpan.org</h2>
@@ -72,7 +73,5 @@ example is slightly different:
 </code>
 
 Here the image is actually served from my own personal domain.
-
-
 
 

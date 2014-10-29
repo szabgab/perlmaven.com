@@ -1,6 +1,6 @@
 =title Finding files in a directory tree using Perl
 =timestamp 2013-09-09T23:30:00
-=tags Path::Iterator::Rule
+=tags Path::Iterator::Rule, recursive, directory tree
 =status show
 =author szabgab
 =archive 1

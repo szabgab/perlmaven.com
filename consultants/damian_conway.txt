@@ -1,0 +1,32 @@
+name: Damian Conway
+img: damianconway.jpg
+url: http://damian.conway.org/
+gplus: 107112730187761331780
+linkedin: http://www.linkedin.com/profile/view?id=104419
+pause: DCONWAY
+country: AU
+location: Melbourne, Australia
+languages: English
+specialities: Training, programming techniques, language design, API design, presentation skills
+html:
+
+    <p>
+    Damian Conway is a well-known speaker and trainer in the Open Source community.
+    </p>
+
+    <p>
+    He is the author of over 60
+    <a href="http://search.cpan.org/search?m=all&q=DCONWAY">CPAN modules</a>
+    and of several popular books on Perl:
+    <a href="http://www.manning.com/conway/"><em>"Object Oriented Perl"</em></a>,
+    <a href="http://shop.oreilly.com/product/9780596001735.do"><em>"Perl Best Practices"</em></a>,
+    and <a href="http://shop.oreilly.com/product/9780596526740.do"><em>"Perl Hacks"</em></a>.
+    </p>
+
+    <p>
+    Damian runs an international training
+    company&mdash;<a href="http://damian.conway.org/">Thoughtstream</a>&dash;through
+    which he provides programmer and speaker training from beginner to
+    masterclass level throughout Europe, North America, and Australasia.
+    </p>
+

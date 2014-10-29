@@ -48,7 +48,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li><a href="http://perlmaven.com/installing-perl-and-getting-started">Installer Perl, afficher "Bonjour tout le monde", filet de sécurité (use strict; use warnings;)</a> (EN)</li>
 <li><a href="http://perlmaven.com/perl-editor">Éditeurs et EDIs, environnements de développement pour Perl</a> (EN)</li>
 <li><a href="/perl-en-ligne-de-commande">Perl en ligne de commande</a></li>
-<li><a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">Documentation du noyau Perl et des modules CPAN</a> (EN)</li>
+<li><a href="/documentation-noyau-perl-documentation-module-cpan">Documentation du noyau Perl et des modules CPAN</a> (EN)</li>
 <li><a href="http://perlmaven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation : la bonne vieille documentation à la Perl</a> (EN)</li>
 <li><a href="/utiliser-le-debogueur-integre-de-perl">Déboguer des scripts Perl</a></li>
 </ol>
@@ -183,7 +183,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li><a href="http://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">splice pour trancher et découper les tableaux en Perl</a> (EN)</li>
 <li><a href="http://perlmaven.com/how-to-create-a-perl-module-for-code-reuse">Comment créer un module Perl pour la réutilisation du code ?</a> (EN)</li>
 <li><a href="http://perlmaven.com/object-oriented-perl-using-moose">Perl orienté objet avec Moose</a> (EN)</li>
-<li><a href="http://perlmaven.com/attribute-types-in-perl-classes-when-using-moose">Les types d'attributs dans les classes Perl avec Moose</a> (EN)</li>
+<li><a href="/types-d-attributs-dans-les-classes-perl-utilisant-moose">Les types d'attributs dans les classes Perl avec Moose</a></li>
 </ol>
 
 <hr />

@@ -169,7 +169,7 @@ and you'll have plenty to improve.
 
 If your code is written with OOP, using bless, or one
 of the accessor generators, it might improve your code
-to move to use <a href="/moo">Moo</a> or <a href="https://metacpan.org/pod/Moose">Moose</a>.
+to move to use <a href="/moo">Moo</a> or <a href="/moose">Moose</a>.
 
 
 

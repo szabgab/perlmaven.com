@@ -21,10 +21,18 @@ Let's see what is that, what is the problem with that and why to avoid?
 
 <h2>So what shall I do?</h2>
 
-Before explaining what you should not do, let me link you to the articles explain what you should do:
+Before explaining what you should <b>not</b> do, let me link you to the articles explain what you should do:
 
 Read <a href="/open-and-read-from-files">how to open file for reading in a modern way</a>
 or the one about <a href="/writing-to-files-with-perl">writing to file in Perl</a>.
+
+<h2>The danger</h2>
+
+Coming up with examples why using the old-style open is generally a bad idea, let me point you
+to the article explaining <a href="http://haxit.blogspot.com.es/2013/08/hacking-transcend-wifi-sd-cards.html">how to break in a Transcend WiFi SD Cards</a>.
+There are many programming mistakes exploited in that article, using old-style open is just one of them,
+but there is no good reason to keep using the old way.
+
 
 Now let's get back to the old, and not-so-good-any-more practices.
 
@@ -131,5 +139,25 @@ Good:
 <code lang="perl">
 open my $in, '>', $filename or die ...;
 </code>
+
+<h2>So what is it about 3-argument open that protects you from overwriting /etc/passwd?</h2>
+
+If we accept a filename form the user, and then we try to open it for writing, without checking
+the name of the file, then the 3-argument open won't help. (though I really hope you don't run
+your scripts as root and thus you will "only" overwrite files owned by a less privileged the user)
+
+OTOH if you are opening a file for reading then this is what can happen:
+
+<code lang="perl">
+my $filename = get_filename_from_user();
+
+open my $in, '<', $filname;
+
+open IN, $filename;
+</code>
+
+If <hl>get_filename_from_user</hl> return <hl>&gt;/etc/passwd</hl> then the first call to <hl>open</hl> would fail, as it 
+cannot find a file called <hl>&gt;/etc/passwd</hl>, on the other hand, the second call to <hl>open</hl> will happily open
+<hl>/etc/passwd</hl> for writing.
 
 

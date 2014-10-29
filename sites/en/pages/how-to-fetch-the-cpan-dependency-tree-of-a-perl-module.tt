@@ -216,6 +216,8 @@ is a loop processing each module.
 We know this recursive process will end as there is a finite number of CPAN modules and we made sure we don't try to
 process the same module or distribution twice.
 
+The script can also be found in the distribution of the <a href="https://metacpan.org/pod/MetaCPAN::Clients">MetaCPAN::Cliens</a> module.
+
 <h2>Caveat</h2>
 
 As far as I know, MetaCPAN takes its information from the META.yml or META.json file that comes with every modern CPAN

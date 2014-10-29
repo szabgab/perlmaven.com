@@ -18,15 +18,15 @@ Você irá aprender como utilizar o CPAN e vários outros módulos específicos.
 
 Será uma excelente base para você se apoiar.
 
-A versão on-line gratuita do tutorial está em desenvolvimento constante. Muitas das partes já estão prontas, e 
+A versão on-line gratuita do tutorial está em desenvolvimento constante. Muitas das partes já estão prontas, e
 em adição, muitas estão sendo liberadas semanalmente. Se você têm interesse em ser avisado quando novos capítulos
 do tutorial são lançados, por favor inscreva-se na <a href="/register">mailing list</a>.
 
-Há ainda o <a href="/beginner-perl-maven-e-book">e-book</a> correspondente ao material do tutorial, 
-disponível para compra (somente en inglês), em adição ao tutorial. O livro ainda inclui <i>slides</i> sobre o 
+Há ainda o <a href="/beginner-perl-maven-e-book">e-book</a> correspondente ao material do tutorial,
+disponível para compra (somente en inglês), em adição ao tutorial. O livro ainda inclui <i>slides</i> sobre o
 material apresentado tópicos exclusivos e exercícios.
 
-Você pode acompanhar também as vídeo aulas (também em inglês) 
+Você pode acompanhar também as vídeo aulas (também em inglês)
 <a href="/beginner-perl-maven-video-course">video-course</a> que incluem mais de 20 aulas, somando num total de
 mais de 5 horas de vídeo. O pacote inclui também o código fonte dos exemplos e exercícios.
 
@@ -57,19 +57,20 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <ol>
 <li>Menssagens de Erro e Avisos Comuns<br />
 <ul>
-<li>Mensagem de erro: 'Global symbol requires explicit package name'</li>
+<li><a href="/simbolo-global-requer-nome-de-pacote-explicito">Símbolo global requer nome de pacote explícito</a></li>
 <li><a href="/uso-de-valor-nao-inicializado">Uso de valor não inicializado</a></li>
 <li><a href="/palavras-soltas-em-perl">Palavra solta (bareword) em Perl</a></li>
-<li>Mensagem de erro: 'Name "main::x" used only once: possible typo at ...'</li>
+<li><a href="/nome-usado-apenas-uma-vez">Nome "main::x" usado apenas uma vez: possível erro em ...<a></li>
 <li><a href="/categorias-desconhecidas-de-alertas">Categoria de alertas desconhecida</a></li>
-<li>Mensagem de erro: 'Scalar found where operator expected'</li>
-<li>Mensagem de erro: '"my" variable masks earlier declaration in same scope'</li>
+<li>Scalar found where operator expected</li>
+<li>"my" variable masks earlier declaration in same scope</li>
 </ul>
 </li>
 <li><a href="/conversao-automatica-entre-valores">Conversão Automática entre texto e número em Perl</a></li>
-<li>Declarações condicionais: if</li>
+<li><a href="/if">Declarações condicionais: if</a></li>
 <li><a href="/valores-booleanos-em-perl">Valores Booleanos em Perl</a></li>
-<li>Operadores numéricos e textuais</li>
+<li><a href="/operadores-numericos">Operadores numéricos</a></li>
+<li>Operadores textuais</li>
 <li><a href="/undef-e-definido-em-perl">undef, valor inicial e a função defined em Perl</a></li>
 <li><a href="/aspas-interpolacao-e-strings-escapadas">Strings em Perl: entre aspas, interpoladas e 'escapadas'</a></li>
 <li>Here documents</li>
@@ -86,8 +87,10 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>die, warn and exit</li>
 <li><a href="/escrevendo-em-arquivos-com-perl">Escrevendo em arquivos com Perl</a></li>
 <li><a href="/acrescentando-em-arquivos">Acrescentando texto em arquivos (appending)</a></li>
+<li><a href="/warn">warn: alertando quando algo dá errado</a></li>
 <li><a href="/abrindo-e-lendo-arquivos">Abrindo e Lendo Arquivos de Texto</a></li>
 <li><a href="/nao-abra-arquivos-na-forma-antiga">Não abra arquivos na forma antiga</a></li>
+<li><a href="/die">die</a></li>
 <li>Modo binário, lidando com Unicode</li>
 <li>Lendo de um arquivo binário, read, eof</li>
 <li>tell, seek</li>
@@ -108,7 +111,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li>Sensibilidade do contexto em Perl</li>
 <li>Ordenando arrays em Perl</li>
 <li>Valores únicos em um array em Perl</li>
-<li>Manipulando arrays em Perl: shift, unshift, push, pop</li>
+<li><a href="/manipulando-arrays-em-perl">Manipulando arrays em Perl: shift, unshift, push, pop</li>
 <li>Pilha e fila</li>
 <li>reverse</li>
 <li>O operador ternário</li>
@@ -187,7 +190,7 @@ remover, copiar ou renomear um arquivo com Perl</a></li>
 <ol>
 <li><a href="/splice-para-fatiar-e-picar-arrays-em-perl">Splice para fatiar e picar arrays em Perl</a></li>
 <li><a href="/como-criar-um-modulo-perl-para-reutilizacao-de-codigo">Como criar um módulo Perl para reutilização de código</a></li>
-<li><a href="/perl-orientado-a-objeto-usando-o-moose">Perl Orientado a Objetos usando o Moose</a></li>
+<li><a href="/perl-orientado-a-objeto-usando-o-moose">Perl Orientado a Objeto usando o Moose</a></li>
 <li><a href="/tipos-de-atributos-em-classes-perl-ao-usar-o-moose">Tipos de atributos em classes Perl ao usar o Moose</a></li>
 </ol>
 

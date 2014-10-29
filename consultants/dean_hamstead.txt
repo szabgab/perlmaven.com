@@ -1,0 +1,17 @@
+name: Dean Hamstead
+img: deanhamstead.jpg
+url: http://bytefoundry.com.au
+twitter: perldean
+gplus: 
+linkedin: http://au.linkedin.com/in/deanhamstead
+pause: DJZORT
+country: AU
+location: Sydney, Australia
+languages: English, Tongan
+specialities: Web Development, Infrastructure Automation, Telecoms, Alarming & Monitoring, Lean
+html:
+
+<p>Dean has been coding perl since way back when (mid 90's). Although he has not authored any books, he has done work for lots of small companies and big organisations like Local Government, Optus, recently Amazon and even less obvious companies like Reece (plumbing supplies).</p>
+<p>As a partner in <a href="http://bytefoundry.com.au">ByteFoundry</a>, he provides consulation &amp; development in perl and infrastructure for general medium business as well as very large data centre's.</p>
+<p>Dean fancies himself as zealot of Toyota style lean infrastructure and software philosophy.</p>
+<p>Historically he was involved in the Sydney Linux Users Group, but has focused more recently on involvement with the Sydney Perl Mongers Group.</p>

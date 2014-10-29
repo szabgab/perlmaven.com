@@ -25,7 +25,7 @@ percentage (<hl>%</hl>) sign.
 
 It's a little mnemonic trick to help you remind about the key-value structure.
 
-Some people think that hashed are like arrays (the old name 'associative array' also indicates this, and in some other
+Some people think that hashes are like arrays (the old name 'associative array' also indicates this, and in some other
 languages, such as PHP, there is no difference between arrays and hashes.), but there are two major differences between arrays
 and hashes. Arrays are ordered, and you access an element of an array using its numerical index.
 Hashes are un-ordered and you access a value using a key which is a string.

@@ -1,5 +1,6 @@
 =title String functions: length, lc, uc, index, substr
 =timestamp 2013-02-20T14:45:56
+=description perl substr(STRING, OFFSET, LENGTH, REPLACEMENT) - extract any part of a string; index(STRING, STR, OFFSET) - return location of substring
 =indexes length, lc, uc, index, substr, scalar
 =status show
 =books beginner_book
@@ -90,7 +91,7 @@ that will start searching from the right hand side of the string:
 my $str = "The black cat climbed the green tree";
 say rindex $str, "e";              # 35
 say rindex $str, "e", 34;          # 34
-say rindex $str, "e", 33;          # 23
+say rindex $str, "e", 33;          # 29
 </code>
 
 <h2>substr</h2>
@@ -163,4 +164,7 @@ say $str;                  # The black cat jumped from the green tree
 
 So <hl>substr $str, 14, 7, "jumped from"</hl> returns the word <b>climbed</b>,
 but because of the 4th parameter, the original string was changed.
+
+There is also an <a href="/lvalue-substr">lvalue</a> version of this example, but
+only look there if you are brave.
 

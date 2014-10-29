@@ -40,7 +40,7 @@ $student->year('23 years ago');
 
 After loading the Person module (the class), we create the $student object
 by calling the "new" constructor of the class.
-Then we call the "year" accessor and set the value to 1998. After printing the value
+Then we call the "year" accessor and set the value to 1988. After printing the value
 we try to set it to "23 years ago".
 
 In the module you can see two attributes. The "year" attribute has an <hl>isa</hl> entry
@@ -67,7 +67,7 @@ Attribute (year) does not pass the type constraint because:
    Validation failed for 'Int' with value "23 years ago"
        at accessor Person::year (defined at lib/Person.pm line 5) line 4
    Person::year('Person=HASH(0x19a4120)', '23 years ago')
-       called at script/person.pl line 13
+       called at bin/app.pl line 13
 </code>
 
 This error message shows that Moose did not accept the string "23 years ago" as an Integer.
@@ -115,6 +115,6 @@ Attribute (birthday) does not pass the type constraint because:
     Validation failed for 'DateTime' with value 1988
        at accessor Person::birthday (defined at lib/Person.pm line 5) line 4
     Person::birthday('Person=HASH(0x2143928)', 1988)
-       called at script/person.pl line 14
+       called at bin/app.pl line 14
 </code>
 

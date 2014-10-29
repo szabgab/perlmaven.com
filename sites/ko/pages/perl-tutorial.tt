@@ -34,6 +34,7 @@
   <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
   <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
   <li><a href="/cant-locate-in-inc">Can't locate ... in @INC</a></li>
+  <li><a href="/cant-call-method-on-unblessed-reference">Can't call method ... on unblessed reference</a></li>
 </ul>
 </li>
 <li><a href="/boolean-values-in-perl">Perl의 불리언 값(참과 거짓)</a></li>
@@ -51,6 +52,7 @@
 <ol>
 <li><a href="/argv-in-perl">명령행 인자 @ARGV 처리하기</a></li>
 <li><a href="/scalar-and-list-context-in-perl">문맥 민감성</a></li>
+<li><a href="/sorting-mixed-strings">혼합된 문자열의 정렬</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">배열에서 고유 값들만 남기기</a></li>
 <li>스택과 <a href="/using-a-queue-in-perl">큐</a></li>
 </ol>
@@ -67,6 +69,7 @@
 <b>정규표현식</b>
 <ol>
 <li><a href="/trim">trim - Perl로 문자열의 앞뒤 공백 문자 제거하기</a></li>
+<li><a href="/matching-numbers-using-perl-regex">Perl 정규표현식을 사용하여 숫자 추출하기</a></li>
 </ol>
 
 <b>Perl과 쉘에 관련된 기능</b>
@@ -98,6 +101,9 @@
 <li><a href="/what-is-a-text-file">텍스트 파일과 바이너리 파일</a></li>
 <li><a href="/traversing-a-directory-tree-finding-required-files">디렉토리 트리를 순회하면서 필요한 파일들 찾기</a></li>
 <li><a href="/how-to-improve-my-perl-program">내 Perl 프로그램을 개선하는 법</a></li>
+<li><a href="/python-lambda-in-perl">Perl에서 Python의 람다처럼 익명 함수를 만드는 법</a></li>
+<li><a href="/static-and-state-variables-in-perl">Perl에서 정적 상태 변수 쓰기</a></li>
+<li><a href="/lvalue-substr">L밸류 substr - 스트링의 일부를 치환하기</a></li>
 </ol>
 
 <!--

@@ -106,6 +106,9 @@ BTW If you are interested in some very good one-liners, I'd recommend reading
 <a href="http://www.catonmat.net/blog/perl-book/">Perl One-Liners explained</a>
 by Peteris Krumins.
 
+If you need to do the same task, but as part of a larger script, check out
+the article on <a href="/how-to-replace-a-string-in-a-file-with-perl">how to replace a string in a file</a>.
+
 <h2>Next</h2>
 
 The next part is about
