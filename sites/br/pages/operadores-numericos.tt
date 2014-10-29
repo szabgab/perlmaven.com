@@ -30,7 +30,7 @@ say 8 / 2;   # 4
 say 8 / 3;   # 2.66666666666667
 </code>
 
-Note that Perl will automatically switch to floating point number when necessary so when we divide 8 by 3 we get a floating point value.
+Note que Perl vai automaticamente mudar para número de ponto flutuante quando necessário, então quando nós dividimos 8 por 3 nós pegamos um valor de ponto flutuante.
 
 <code lang="perl">
 use strict;
