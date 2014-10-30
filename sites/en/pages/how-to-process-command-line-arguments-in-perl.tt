@@ -266,7 +266,7 @@ and in that case we can even use single-dash <hl>-</hl> prefixes:
 $ perl files/cli.pl -f Foo -d
 debug
 Foo
-<code>
+</code>
 
 These however are not really single-character options, and as they are they cannot be combined:
 
@@ -274,7 +274,7 @@ These however are not really single-character options, and as they are they cann
 $ perl cli.pl -df Foo
 Unknown option: df
 Usage: cli.pl --debug  --from NAME
-<code>
+</code>
 
 <h2>Single-character options</h2>
 
