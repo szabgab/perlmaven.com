@@ -2,6 +2,7 @@
 =timestamp 2014-10-30T09:48:00
 =indexes x, ., ++
 =status show
+=original string-operators
 =books beginner_book
 =author szabgab
 =translator leprevost
