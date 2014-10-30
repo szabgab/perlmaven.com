@@ -288,7 +288,7 @@ GetOptions(
 ) or die "Usage: $0 --debug  --from NAME\n";
 </code>
 
-The second thing is that we need to enable the <b>gnu_getopt</hl> configuration option of Getopt::Long by calling
+The second thing is that we need to enable the <hl>gnu_getopt</hl> configuration option of Getopt::Long by calling
 <hl>Getopt::Long::Configure qw(gnu_getopt);</hl>
 
 <code lang="perl">
