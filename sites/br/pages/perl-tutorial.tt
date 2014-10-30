@@ -70,7 +70,7 @@ Quando possível irei também direcionar você a alguns exercícios para que pos
 <li><a href="/if">Declarações condicionais: if</a></li>
 <li><a href="/valores-booleanos-em-perl">Valores Booleanos em Perl</a></li>
 <li><a href="/operadores-numericos">Operadores numéricos</a></li>
-<li>Operadores textuais</li>
+<li><a href="/operadores-textuais">Operadores textuais</a></li>
 <li><a href="/undef-e-definido-em-perl">undef, valor inicial e a função defined em Perl</a></li>
 <li><a href="/aspas-interpolacao-e-strings-escapadas">Strings em Perl: entre aspas, interpoladas e 'escapadas'</a></li>
 <li>Here documents</li>
