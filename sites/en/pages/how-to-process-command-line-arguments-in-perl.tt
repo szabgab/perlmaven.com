@@ -11,7 +11,7 @@
 
 When a perl script is executed the user can pass arguments on the command line in various ways.
 For example <hl>perl program.pl file1.txt file2.txt</hl> or
-<hl>perl program.pl from-address to-address file1.txt file2.txt/hl> or, the most common and most useful
+<hl>perl program.pl from-address to-address file1.txt file2.txt</hl> or, the most common and most useful
 way:
 
 <hl>perl program.pl -vd --from from-address --to to-address file1.txt file2.txt</hl>
@@ -241,7 +241,7 @@ debug
 Foo
 </code>
 
-<h2>Short names</hl>
+<h2>Short names</h2>
 
 <a href="http://metacpan.org/pod/Getopt::Long">Getopt::Long</a> automatically handles shortening of the option names up to ambiguity.
 We can run the above script in the following manner:
@@ -276,7 +276,7 @@ Unknown option: df
 Usage: cli.pl --debug  --from NAME
 <code>
 
-<h2>Single-character options</hl>
+<h2>Single-character options</h2>
 
 In order to combine them we need two do two things. First, we need to declare the options as real single-character options.
 We can do this by providing alternate, single-character names in the definition of the options:
