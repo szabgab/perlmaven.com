@@ -10,6 +10,10 @@ my %opts = (
 		'Encode'               => 2.62,
 		'Encode::Guess'        => 2.06,
 		'Path::Tiny'           => 0,
+
+#		'HTML::Tidy'           => 0,
+#		'Test::HTML::Tidy'     => 0,
+
 	},
 );
 WriteMakefile( %opts );

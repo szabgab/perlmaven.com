@@ -5,7 +5,9 @@ use Cwd            qw(abs_path);
 use Data::Dumper   qw(Dumper);
 use File::Basename qw(basename dirname);
 use Path::Tiny qw(path);
+#use HTML::Tidy;
 use Test::More;
+#use Test::HTML::Tidy;
 
 # TODO check all the done/ and draft/ directories, remove them where they are empty
 # if they have not been touched for a long them then try to figure out what to do witht them
@@ -16,12 +18,20 @@ my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt prod
 my %english = map { substr(basename($_), 0, -3), 1 } glob "$root/sites/en/pages/*.tt";
 my %authors = read_authors();
 my %sitemap;
+#my $tidy = html_tidy();
 
 foreach my $lang (@languages) {
-	next if $lang eq 'en';
 
 	my @pages = grep { ! $META_PAGE{ basename $_ } } glob "$root/sites/$lang/pages/*.tt";
 	foreach my $file (@pages) {
+		if ($lang eq 'en') {
+			#my $html = path($file)->slurp_utf8;
+			#$html =~ s{<hl>}{<span>}g;
+			#$html =~ s{</hl>}{</span>}g;
+			#html_tidy_ok( $tidy, $html ) or diag "File $file";
+			next;
+		}
+
 		my @lines = path($file)->lines_utf8;
 		chomp @lines;
 		my $original;
@@ -34,6 +44,7 @@ foreach my $lang (@languages) {
 				$sitemap{$lang}{$file}{translator} = $translator = $1;
 			}
 		}
+
 		#diag $original;
 		#diag $translator;
 		my ($shortname) = $file =~ m{/(sites/$lang/pages/.*)};
@@ -44,6 +55,7 @@ foreach my $lang (@languages) {
 		ok $authors{$translator}, "File '$shortname' has no mathching translator for '$translator'" if $translator;
 	}
 }
+
 
 sub read_authors {
 	my %autho;
@@ -69,4 +81,47 @@ sub read_authors {
 }
 
 done_testing;
+
+
+sub html_tidy {
+	my $tidy = HTML::Tidy->new;
+
+	# HTML 4: <script src="/jquery.js" type="text/javascript"></script>
+	# HTML 5: <script src="/jquery.js"></script>
+	$tidy->ignore( text => qr{<script> inserting "type" attribute} );
+
+	# HTML 4: <link rel="stylesheet" href="/style.css" type="text/css" />
+	# HTML 5: <link rel="stylesheet" href="/style.css" />
+	$tidy->ignore( text => qr{<link> inserting "type" attribute} );
+
+	# HTML 4.01    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	# HTML 5       <meta charset="utf-8" />
+	$tidy->ignore( text => qr{<meta> proprietary attribute "charset"} );
+	$tidy->ignore( text => qr{<meta> lacks "content" attribute} );
+
+	# AFAIK HTML 5 does not support the "summary" attribute
+	$tidy->ignore( text => qr{<table> lacks "summary" attribute} );
+
+	# We should probably replace & in gravatar URLS by &amp; instead of hiding the warning:
+	#$tidy->ignore( text => qr{unescaped & or unknown entity "&d"} );
+
+	#$tidy->ignore( text => qr{inserting} ); #: <script> inserting "type" attribute} );
+
+	$tidy->ignore( text => qr{missing <!DOCTYPE> declaration} );
+	$tidy->ignore( text => qr{plain text isn't allowed in <head> elements} );
+	$tidy->ignore( text => qr{<head> previously mentioned} );
+	$tidy->ignore( text => qr{inserting implicit <body>} );
+	$tidy->ignore( text => qr{inserting missing 'title' element} );
+	#$tidy->ignore( text => qr{} );
+	#$tidy->ignore( text => qr{} );
+
+
+	# These are parts of <code> sections. Those should be disregarded!
+	$tidy->ignore( text => qr{<stdin> is not recognized!} );
+	$tidy->ignore( text => qr{discarding unexpected <stdin>} );
+
+
+	return $tidy;
+}
+
 
