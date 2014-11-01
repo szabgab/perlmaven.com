@@ -27,9 +27,10 @@ series of articles:
   <li><a href="/dancer">Perl Dancer</a>, light-weight web framework</li>
   <li><a href="/psgi">PSGI/Plack</a>, the superglue between perl web application frameworks and web servers/li>
   <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers</li>
-  <li><a href="/mongodb">Perl and MongoDB</a>, the NoSQL database</li>
-  <li><a href="/anyevent">Anyevent</a>, asynchronous programming</li>
 </ul>
 
 =abstract end
-
+<!--
+  <li><a href="/mongodb">Perl and MongoDB</a>, the NoSQL database</li>
+  <li><a href="/anyevent">Anyevent</a>, asynchronous programming</li>
+-->
