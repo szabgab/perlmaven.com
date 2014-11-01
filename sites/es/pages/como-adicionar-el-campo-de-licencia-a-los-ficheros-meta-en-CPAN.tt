@@ -1,55 +1,57 @@
 =title Como adicionar el campo de licencia a los ficheros META.yml y META.json en CPAN ?
-=timestamp 2012-12-28T16:45:56
+=timestamp 2014-11-01T07:45:56
 =indexes license, Perl, Perl 5, CPAN, META, ExtUtils::MakeMaker, Module::Build, Module::Install, Dist::Zilla, CPAN::Meta::Spec
 =status show
+=original how-to-add-list-of-contributors-to-the-cpan-meta-files
 =author szabgab
+=translator danimera
 =archive 1
 =comments 1
 =social 1
 
 =abstract start
 
-Cada distribuciÛn en CPAN puede incluir un META.yml y un archivo META.json.
-Ellos deberÌan tener la misma informaciÛn, META.json es sÛlo el m·s reciente formato.
-Encontrar·s muchas m·s distribuciones con sÛlo META.yml y encontrar·s
-una distribuciÛn pocos, probablemente muy antigua con ning˙n archivo META en absoluto.
+Cada distribuci√≥n en CPAN puede incluir un META.yml y un archivo META.json.
+Ellos deber√≠an tener la misma informaci√≥n, META.json es s√≥lo el m√°s reciente formato.
+Encontrar√°s muchas m√°s distribuciones con s√≥lo META.yml y encontrar√°s
+una distribuci√≥n pocos, probablemente muy antigua con ning√∫n archivo META en absoluto.
 
-Los archivos META pueden tener ambos un campo que indica la <b>licencia</b> de la distribuciÛn.
+Los archivos META pueden tener ambos un campo que indica la <b>licencia</b> de la distribuci√≥n.
 
-Tener la informaciÛn de licencia en los archivos del META lo pone muy f·cil para herramientas automatizadas
-para comprobar si un conjunto de mÛdulos tienen un determinado conjunto de licencias.
+Tener la informaci√≥n de licencia en los archivos del META lo pone muy f√°cil para herramientas automatizadas
+para comprobar si un conjunto de m√≥dulos tienen un determinado conjunto de licencias.
 
 =abstract end
 
-Como la META archivos generalmente se generan autom·ticamente cuando se suelta la distribuciÛn
+Como la META archivos generalmente se generan autom√°ticamente cuando se suelta la distribuci√≥n
 por el autor, voy a mostrarte como puedes decir los 4 sistemas de empaquetados principales
 incluir el campo de la licencia.
 
-En los ejemplos Utilizare los m·s comunes, asÌ llamado, licencia de <b>Perl</b>:
+En los ejemplos Utilizare los m√°s comunes, as√≠ llamado, licencia de <b>Perl</b>:
 
 
 <h2>ExtUtils::MakeMaker</h2>
 
-Si  est· usando <a href="https://metacpan.org/module/ExtUtils::MakeMaker"> ExtUtils::MakeMaker</a> agregar lo siguiente a tu Makefile.PL
-como par·metro en la funciÛn <b>WriteMakefile</b>:
+Si  est√° usando <a href="https://metacpan.org/module/ExtUtils::MakeMaker"> ExtUtils::MakeMaker</a> agregar lo siguiente a tu Makefile.PL
+como par√°metro en la funci√≥n <b>WriteMakefile</b>:
 
 <code lang="perl">
 'LICENSE'  => 'perl',
 </code>
 
 Si quieres estar seguro que viejas versiones de ExtUtils::MakeMaker no den advertencias sobre
-desconocido un campo de licencia, puede utilizar el cÛdigo siguiente:
+desconocido un campo de licencia, puede utilizar el c√≥digo siguiente:
 
 <code lang="perl">
 ($ExtUtils::MakeMaker::VERSION >= 6.3002 ? ('LICENSE'  => 'perl', ) : ()),
 </code>
 
-<a href="http://search.cpan.org/src/NWCLARK/perl-5.8.8/lib/ExtUtils/MakeMaker.pm"> la versiÛn distribuida con perl 5.8.8 es 6.30</a>
-por lo tanto  todavÌa no contiene esta caracterÌstica. lo mejor es si tu pudieses actualizarlo ExtUtils::MakeMaker.
+<a href="http://search.cpan.org/src/NWCLARK/perl-5.8.8/lib/ExtUtils/MakeMaker.pm"> la versi√≥n distribuida con perl 5.8.8 es 6.30</a>
+por lo tanto  todav√≠a no contiene esta caracter√≠stica. lo mejor es si tu pudieses actualizarlo ExtUtils::MakeMaker.
 
 <h2>Module::Build</h2>
 
-Si est· utilizando <a href="https://metacpan.org/module/Module::Build"> Module::Build</a>, agregue lo siguiente al Build.PL,
+Si est√° utilizando <a href="https://metacpan.org/module/Module::Build"> Module::Build</a>, agregue lo siguiente al Build.PL,
 en la llamada  Module::Build->new:
 
 <code lang="perl">
@@ -58,7 +60,7 @@ license               => 'perl',
 
 <h2>Module::Install</h2>
 
-Si  est· usando <a href="https://metacpan.org/module/Module::Install"> Module::Install</a> agregar lo siguiente a Makefile.PL:
+Si  est√° usando <a href="https://metacpan.org/module/Module::Install"> Module::Install</a> agregar lo siguiente a Makefile.PL:
 
 <code lang="perl">
 license        'perl';
@@ -66,7 +68,7 @@ license        'perl';
 
 <h2>Dist::Zilla</h2>
 
-Si est· utilizando <a href="http://dzil.org/"> Dist::Zilla</a>, simplemente agregue la siguiente entrada al archivo dist.ini:
+Si est√° utilizando <a href="http://dzil.org/"> Dist::Zilla</a>, simplemente agregue la siguiente entrada al archivo dist.ini:
 
 <code lang="perl">
 license = Perl_5
@@ -74,12 +76,12 @@ license = Perl_5
 
 <h2>META especificaciones</h2>
 
-Con el fin de revisar la actual lista de opciones v·lidas para el campo de la licencia,
-Consulte la <a href="https://metacpan.org/module/CPAN::Meta::Spec"> EspecificaciÛn CPAN::Meta</a>.
+Con el fin de revisar la actual lista de opciones v√°lidas para el campo de la licencia,
+Consulte la <a href="https://metacpan.org/module/CPAN::Meta::Spec"> Especificaci√≥n CPAN::Meta</a>.
 
 <h2>Derechos de autor y licencias</h2>
 
-Seg˙n la <a href="http://www.perlfoundation.org/cpan_licensing_guidelines"> CPAN licencias directrices</a>
-de la FundaciÛn Perl, es <b>necesario</b> tener informaciÛn de la licencia en los archivos META.
+Seg√∫n la <a href="http://www.perlfoundation.org/cpan_licensing_guidelines"> CPAN licencias directrices</a>
+de la Fundaci√≥n Perl, es <b>necesario</b> tener informaci√≥n de la licencia en los archivos META.
 
-Por supuesto, hay otros elementos necesarios de la concesiÛn de licencias. Este artÌculo sÛlo se enfoca en la entrada de los archivos  META.
+Por supuesto, hay otros elementos necesarios de la concesi√≥n de licencias. Este art√≠culo s√≥lo se enfoca en la entrada de los archivos  META.

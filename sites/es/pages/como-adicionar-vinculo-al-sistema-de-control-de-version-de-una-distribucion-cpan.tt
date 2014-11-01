@@ -1,8 +1,10 @@
 =title Como adicionar vinculo al sistema de control de version de una distribucion CPAN?
-=timestamp 2013-01-03T10:45:56
+=timestamp 2014-11-01T08:45:56
 =indexes Perl, Perl 5, CPAN, Git, Github, SVN, Subversion, VCS, META, ExtUtils::MakeMaker, Module::Build, Module::Install, Dist::Zilla, CPAN::Meta::Spec
 =status show
+=original how-to-add-link-to-version-control-system-of-a-cpan-distributions
 =author szabgab
+=translator danimera
 =archive 1
 =comments 1
 =social 1
@@ -10,31 +12,31 @@
 =abstract start
 
 Cuando se mira en <a href="https://www.metacpan.org/"> META CPAN</a>, o en
-<a href="http://search.cpan.org/"> search.cpan.org</a>,  ver· que algunos mÛdulos
-tienen un enlace a Github o alg˙n otro lugar donde hospedan su proyecto.
+<a href="http://search.cpan.org/"> search.cpan.org</a>,  ver√° que algunos m√≥dulos
+tienen un enlace a Github o alg√∫n otro lugar donde hospedan su proyecto.
 
-En search.cpan.org, es un simple enlace junto al tÌtulo del <b>Repositorio</b>, en Meta CPAN
-es un enlace o un pop-up bajo el tÌtulo <b>Repositorio clon</b> dependiendo del tipo de
+En search.cpan.org, es un simple enlace junto al t√≠tulo del <b>Repositorio</b>, en Meta CPAN
+es un enlace o un pop-up bajo el t√≠tulo <b>Repositorio clon</b> dependiendo del tipo de
 repositorio. (Github obtiene  pop-ups, repositorios privados tienden a enlaces simples).
 
 =abstract end
 
 Ambos sitios toman el enlace al sistema de Control de versiones de los archivos META incluidos en las distribuciones de CPAN.
-META.yml o el META.json m·s recientes. ( sÛlo difieren en su formato.)
+META.yml o el META.json m√°s recientes. ( s√≥lo difieren en su formato.)
 
-Como los META archivos generalmente se generan autom·ticamente cuando se suelta la distribuciÛn
+Como los META archivos generalmente se generan autom√°ticamente cuando se suelta la distribuci√≥n
 por el autor, voy a mostrarte como puedes decir a los 4 sistemas de paquetes principales 
 incluir el enlace del repositorio.
 
 En los ejemplos utilizare el enlace al repositorio de <a href="https://metacpan.org/module/Task::DWIM"> Task::DWIM</a>,
-que es una distribuciÛn experimental listado todos los mÛdulos incluidos en una <a href="http://dwimperl.com/"> DWIM Perl</a>
-distribuciÛn.
+que es una distribuci√≥n experimental listado todos los m√≥dulos incluidos en una <a href="http://dwimperl.com/"> DWIM Perl</a>
+distribuci√≥n.
 
 
 <h2>ExtUtils::MakeMaker</h2>
 
 Si utilizas <a href="https://metacpan.org/module/ExtUtils::MakeMaker"> ExtUtils::MakeMaker</a> agregar lo siguiente a tu Makefile.PL
-como par·metro en la funciÛn <b>WriteMakefile</b>:
+como par√°metro en la funci√≥n <b>WriteMakefile</b>:
 
 
 <code lang="perl">
@@ -50,7 +52,7 @@ META_MERGE => {
 },
 </code>
 
-Si su versiÛn de ExtUtils::MakeMaker no admite todavÌa esto, simplemente actualizar ExtUtils::MakeMaker.
+Si su versi√≥n de ExtUtils::MakeMaker no admite todav√≠a esto, simplemente actualizar ExtUtils::MakeMaker.
 
 <h2>Module::Build</h2>
 
@@ -78,15 +80,15 @@ repository 'https://github.com/dwimperl/Task-DWIM';
 
 Si utilizas <a href="http://dzil.org/"> Dist::Zilla</a>, el
 <a href="https://metacpan.org/module/Dist::Zilla::Plugin::Repository"> Dist::Zilla::plugin::Repository</a>
-agregar· autom·ticamente el enlace a su repositorio, aunque tambiÈn se puede especificar manualmente.
+agregar√° autom√°ticamente el enlace a su repositorio, aunque tambi√©n se puede especificar manualmente.
 
 <code lang="perl">
 [MetaResources]
 Repository.URL = https://github.com/dwimperl/Task-DWIM.git
 </code>
 
-Una versiÛn detallada incluye m·s detalles como en el ejemplo siguiente. Como puedo ver, estas piezas son solamente
-incluidas en el archivo META.json y no en el archivo META.yml. Para generar ese archivo, necesitar· tambiÈn
+Una versi√≥n detallada incluye m√°s detalles como en el ejemplo siguiente. Como puedo ver, estas piezas son solamente
+incluidas en el archivo META.json y no en el archivo META.yml. Para generar ese archivo, necesitar√° tambi√©n
 incluir el <a href="https://metacpan.org/module/Dist::Zilla::Plugin::MetaJSON"> MetaJSON plugin</a> de Dist::Zilla.
 
 <code lang="perl">
@@ -99,33 +101,33 @@ Repository.Type = git
 </code>
 
 
-Hay otras maneras de <a href="http://www.lowlevelmanager.com/2012/05/dzil-plugins-github-vs-githubmeta.html"> aÒadir
+Hay otras maneras de <a href="http://www.lowlevelmanager.com/2012/05/dzil-plugins-github-vs-githubmeta.html"> a√±adir
 los enlaces de repositorio</a> a los META archivos  cuando se utiliza Dist::Zilla.
 
-Probablemente la m·s simple forma es usar el
+Probablemente la m√°s simple forma es usar el
 <a href="https://metacpan.org/module/Dist::Zilla::Plugin::GithubMeta"> GithubMeta</a> plugin 
-aÒadiendo la siguiente lÌnea al archivo dist.ini:
+a√±adiendo la siguiente l√≠nea al archivo dist.ini:
 
 <code>
 [GithubMeta]
 </code>
 
-<h2>øPor quÈ debo aÒadir este enlace?</h2>
+<h2>¬øPor qu√© debo a√±adir este enlace?</h2>
 
-Es simple. Es m·s f·cil enviar parches a la versiÛn m·s reciente de su mÛdulo,
-m·s probable que los obtendr·.
+Es simple. Es m√°s f√°cil enviar parches a la versi√≥n m√°s reciente de su m√≥dulo,
+m√°s probable que los obtendr√°.
 
-TambiÈn podrÌa haber ya hecho algunos cambios a su mÛdulo desde la ˙ltima versiÛn.
-Tal vez ya has solucionado el error que me gustarÌa arreglar. Si puedo ver tu repositorio podemos evitar duplicar trabajo.
+Tambi√©n podr√≠a haber ya hecho algunos cambios a su m√≥dulo desde la √∫ltima versi√≥n.
+Tal vez ya has solucionado el error que me gustar√≠a arreglar. Si puedo ver tu repositorio podemos evitar duplicar trabajo.
 
 <h2>Otros recursos</h2>
 
-Si ya ha lidiado con esto, habrÌa que agregar otros recursos tambiÈn.
+Si ya ha lidiado con esto, habr√≠a que agregar otros recursos tambi√©n.
 El <a href="https://metacpan.org/module/CPAN::Meta::Spec#resources"> CPAN META Specification </a> tiene todo lo que aparece.
-Si algo no est· claro, sÛlo pregunta.
+Si algo no est√° claro, s√≥lo pregunta.
 
 <h2>Licencias</h2>
 
-En otro artÌculo mostrÈ <a href="/how-to-add-the-license-field-to-meta-files-on-cpan"> CÛmo agregar la informaciÛn de la licencia a los META archivos de distribuciones CPAN</a>.
-Si tuvieras un repositorio p˙blico, serÌa m·s f·cil para otros enviar ese parche tambiÈn.
+En otro art√≠culo mostr√© <a href="/how-to-add-the-license-field-to-meta-files-on-cpan"> C√≥mo agregar la informaci√≥n de la licencia a los META archivos de distribuciones CPAN</a>.
+Si tuvieras un repositorio p√∫blico, ser√≠a m√°s f√°cil para otros enviar ese parche tambi√©n.
 
