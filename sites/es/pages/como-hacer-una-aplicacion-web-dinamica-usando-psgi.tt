@@ -1,7 +1,8 @@
 =title Como hacer una aplicacion web dinamica usando PSGI
-=timestamp 2014-05-27T09:45:56
+=timestamp 2014-11-02T21:45:56
 =indexes PSGI, Plack, plackup
 =status show
+=original how-to-build-a-dynamic-web-application-using-psgi
 =author szabgab
 =translator danimera
 =archive 1
