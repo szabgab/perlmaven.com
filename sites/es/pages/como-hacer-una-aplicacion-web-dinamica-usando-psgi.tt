@@ -10,18 +10,18 @@
 
 =abstract start
 
-Ahora que hemos construido nuestra <a href="/getting-started-with-psgi"> primera aplicaciÛn web utilizando PSGI</a>
-podemos ir un paso m·s all· y construir algo que pueda responder a una consulta.
+Ahora que hemos construido nuestra <a href="/getting-started-with-psgi"> primera aplicaci√≥n web utilizando PSGI</a>
+podemos ir un paso m√°s all√° y construir algo que pueda responder a una consulta.
 
 =abstract end
 
-Con el fin de crear una aplicaciÛn web que puede aceptar la entrada de los usuarios que necesitamos
-para entender cÛmo <a href="http://plackperl.org/"> Plack/PSGI</a> define que
-parte de la interacciÛn.
+Con el fin de crear una aplicaci√≥n web que puede aceptar la entrada de los usuarios que necesitamos
+para entender c√≥mo <a href="http://plackperl.org/"> Plack/PSGI</a> define que
+parte de la interacci√≥n.
 
-En el mundo CGI tenÌamos una mezcla de variables de entorno en acciÛn.
-En PSGI todo lo interesante pasar·n a travÈs de un ˙nico par·metro
-a la subrutina anÛnima que implementa nuestra aplicaciÛn. Ese par·metro
+En el mundo CGI ten√≠amos una mezcla de variables de entorno en acci√≥n.
+En PSGI todo lo interesante pasar√°n a trav√©s de un √∫nico par√°metro
+a la subrutina an√≥nima que implementa nuestra aplicaci√≥n. Ese par√°metro
 es una referencia a un HASH. Vamos a ver lo que contiene:
 
 
@@ -46,7 +46,7 @@ my $app = sub {
 
 Guardar en un archivo llamado <hl>env.psgi</hl> y ejecutarlo con <hl>plackup env.psgi</hl>.
 Cuando se lanza, visite  http://localhost:5000/ con se navegador favorito.
-Se ver· algo como esto:
+Se ver√° algo como esto:
 
 <code>
 $VAR1 = {
@@ -85,39 +85,39 @@ $VAR1 = {
 };
 </code>
 
-Vamos a ver lo que tenemos aquÌ.
+Vamos a ver lo que tenemos aqu√≠.
 
-En el script utilizamos la funciÛn <hl>Dumper</hl> del
-mÛdulo Data::Dumper est·ndar.
-De forma predeterminada mostrarÌa los datos sin ning˙n orden.
+En el script utilizamos la funci√≥n <hl>Dumper</hl> del
+m√≥dulo Data::Dumper est√°ndar.
+De forma predeterminada mostrar√≠a los datos sin ning√∫n orden.
 Ajuste al variable del <hl>$Data::Dumper::Sortkeys</hl>  a 1
 cambia el comportamiento y las llaves de los hash son organizadas
-Eso lo hace mucho m·s f·cil de leer.
+Eso lo hace mucho m√°s f√°cil de leer.
 
-TambiÈn establecemos el <b>Content-Type</b> a ser <b>text/plain</b>. 
-HTML normalmente ignora espacios asÌ que con esto le estamos diciendo al navegador 
+Tambi√©n establecemos el <b>Content-Type</b> a ser <b>text/plain</b>. 
+HTML normalmente ignora espacios as√≠ que con esto le estamos diciendo al navegador 
 interpretar nuestros datos como texto sin formato.
-De esa forma se mostrar· los datos literales.
-Mantener los espacios y los saltos de lÌnea.
+De esa forma se mostrar√° los datos literales.
+Mantener los espacios y los saltos de l√≠nea.
 
 Los datos se pueden dividirse en dos partes.
-La primera parte - un conjunto de teclas May˙sculas - son el conjunto de variables de entorno familiar.
-La segunda parte es un conjunto de llaves especÌficas PSGI.
-No entrarÈ en alguno de estos, ests se describen en
+La primera parte - un conjunto de teclas May√∫sculas - son el conjunto de variables de entorno familiar.
+La segunda parte es un conjunto de llaves espec√≠ficas PSGI.
+No entrar√© en alguno de estos, ests se describen en
 <a href="http://plackperl.org/">PSGI specification</a>.
 
-Vamos a cambiar nuestra peticiÛn a la siguiente:
-<h2>Solicitud GET con par·metros</h2>
+Vamos a cambiar nuestra petici√≥n a la siguiente:
+<h2>Solicitud GET con par√°metros</h2>
 
-Si usted est· familiarizado con HTTP entonces deberÌas saber cÛmo aparece una peticiÛn GET
-con algunos par·metros en estos datos crudos.
+Si usted est√° familiarizado con HTTP entonces deber√≠as saber c√≥mo aparece una petici√≥n GET
+con algunos par√°metros en estos datos crudos.
 
-Vamos a cambiar nuestra peticiÛn a la siguiente:
+Vamos a cambiar nuestra petici√≥n a la siguiente:
 
 <hl>http://localhost:5000/page?name=value</hl>
 
 En los datos podemos ver los siguientes cambios:
-
+ 
 <code>
   'PATH_INFO' => '/page',
   'QUERY_STRING' => 'name=value',
@@ -126,23 +126,23 @@ En los datos podemos ver los siguientes cambios:
 
 <h2>Servidor simple Eco</h2>
 
-Con el fin de dar un pequeÒo paso m·s, vamos a construir un servidor simple eco.
-Esta es una p·gina con un campo de entrada ˙nica y un botÛn.
-Cuando usted presiona el botÛn se recarga a sÌ mismo y mostrar el texto
+Con el fin de dar un peque√±o paso m√°s, vamos a construir un servidor simple eco.
+Esta es una p√°gina con un campo de entrada √∫nica y un bot√≥n.
+Cuando usted presiona el bot√≥n se recarga a s√≠ mismo y mostrar el texto
 que ha escrito en el campo.
 
-Cuando se procesa la entrada  podrÌamos analizar el
+Cuando se procesa la entrada  podr√≠amos analizar el
 QUERY_STRING o el REQUEST_URI
 pero Plack nos brinda una mejor manera de hacer esto.
-Plack proporciona un mÛdulo llamado
+Plack proporciona un m√≥dulo llamado
 <a href="https://metacpan.org/pod/Plack::Request"> Plack::Request</a>
-que proporciona un mÈtodo llamado <hl>param</hl>
-que devolver· el valor de un par·metro enviado por el usuario.
+que proporciona un m√©todo llamado <hl>param</hl>
+que devolver√° el valor de un par√°metro enviado por el usuario.
 
-Con el fin de simplificar el cÛdigo he creado una funciÛn llamada <hl>get_html</hl>
-que devuelve un trozo de HTML est·tico. La forma que se mostrar·.
-El principal cÛdigo comprueba si el usuario ha pasado ning˙n par·metro.
-En caso afirmativo, el valor se une al cÛdigo HTML que ya tenemos.
+Con el fin de simplificar el c√≥digo he creado una funci√≥n llamada <hl>get_html</hl>
+que devuelve un trozo de HTML est√°tico. La forma que se mostrar√°.
+El principal c√≥digo comprueba si el usuario ha pasado ning√∫n par√°metro.
+En caso afirmativo, el valor se une al c√≥digo HTML que ya tenemos.
 Esto es lo que tenemos en la variable <hl>$html</hl> que enviamos hacia el navegador.
 
 <code lang="perl">
@@ -182,21 +182,21 @@ sub get_html {
 }
 </code>
 
-Obviamente para algo m·s grande moverÌamos el HTML a un
-archivo de plantilla y probablemente usarÌamos
+Obviamente para algo m√°s grande mover√≠amos el HTML a un
+archivo de plantilla y probablemente usar√≠amos
 un framework Web de nivel superior como <a href="/dancer">dancer</a> o <a href="/mojolicious"> Mojolicious</a>,
 pero nos interesa ahora el mecanismo de bajo nivel.
 
 
 <h2>Una calculadora?</h2>
 
-Si desea tomar este enfoque un poco m·s podrÌas tomar el script anterior y mejorarlo
-para obtener dos n˙meros y sumarlos.
+Si desea tomar este enfoque un poco m√°s podr√≠as tomar el script anterior y mejorarlo
+para obtener dos n√∫meros y sumarlos.
 
-Un ejemplo m·s complejo permitirÌa al usuario que proporcione dos n˙meros y uno de los principales
+Un ejemplo m√°s complejo permitir√≠a al usuario que proporcione dos n√∫meros y uno de los principales
 operadores (+, -, *, /) y devuelve el resultado. 
 
-<h2>QuÈ m·s?</h2>
+<h2>Qu√© m√°s?</h2>
 
-øQuÈ m·s quieres saber sobre Plack y <a href="/psgi"> PSGI</a>?
+¬øQu√© m√°s quieres saber sobre Plack y <a href="/psgi"> PSGI</a>?
 
