@@ -22,6 +22,7 @@ $rule->name('*.tt');
 my $it = $rule->iter('.');
 while ( my $file = $it->() ) {
 	#diag $file;
+	is $file, lc $file, 'filename is lower-case';
 	# is this a reasonable test, or will this be always true?
 	my @warns;
 	local $SIG{__WARN__} = sub { push @warns, @_ };
