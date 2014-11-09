@@ -1,0 +1,32 @@
+=title Regex: special character classes
+=timestamp 2014-11-09T09:30:01
+=indexes [], -
+=status draft
+=books beginner_book
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+Earlier we have learned about <a href="/regex-character-classes">character classes</a>, but we have not covered everything there.
+There are certain character classes that are so frequently used that a special sequence was created for them. A special sequence
+that will make the code shorter and more readable.
+
+=abstract end
+
+
+<hl>\d</hl> stands for "digit". It is the same as <hl>[0-9]</hl> except that it is much shorter to write and easier to reaad.
+So the regex <hl>/\d/</hl> would match a single digit. There are two ways to use this special character class.
+One is stand-alone as we just saw it or in this example: <hl>/#[XYZ]-\d\d\d/</hl> that will match strings like these:
+
+<code>
+#X-123
+#Y-666
+</code>
+
+
+
+
+

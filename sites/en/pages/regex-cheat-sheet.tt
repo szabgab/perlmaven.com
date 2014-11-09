@@ -15,12 +15,16 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
 
 =abstract end
 
+<a href="/introduction-to-regexes-in-perl">Introduction to regexes in Perl</a>
+
 <code>
    a           Just an 'a' character
    .           Any character except new-line
 </code>
 
 <h2>Character Classes</h2>
+
+<a href="/regex-character-classes">Regex Character Classes</a> and <a href="/regex-special-character-classes">Special Character classes</a>.
 
 <code>
    [bgh.]      One of the characters listed in the character class b,g,h or . in this case.
@@ -40,6 +44,8 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
 </code>
 
 <h2>Quantifiers</h2>
+
+<a href="/regex-quantifiers">Regex Quantifiers</a>
 
 <code>
    a?          0-1         'a' characters
