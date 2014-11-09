@@ -1,7 +1,7 @@
 =title Regex character classes
-=timestamp 2014-01-15T07:30:01
+=timestamp 2014-11-09T09:30:01
 =indexes [], -
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
@@ -12,9 +12,9 @@
 
 In the <a href="/introduction-to-regexes-in-perl">previous article</a> we saw how regular characters match themselves and how dot <hl>.</hl> can match any character.
 
-A character class is something in between those two two extremes. A character class is a list of characters that can be matched.
+A character class is something in between those two extremes. A character class is a list of characters that can be matched.
 
-A character class is a list of characters in square brackets <hl>[]</hl>.
+The list is placed in square brackets <hl>[]</hl>.
 
 For example <hl>[abc]</hl> will match either 'a' or 'b' or 'c'.
 
@@ -22,7 +22,7 @@ For example <hl>[abc]</hl> will match either 'a' or 'b' or 'c'.
 
 Just as a regular character or a <hl>.</hl> can match exactly one character so does a character class. Later we are going to learn
 about quantifiers that will allow us to say how many of something we would like to match, but for now remember that a character
-class always matches exaclty one character. If it cannot fullfill the match then the whole regex matching fails.
+class always matches exactly one character. If it cannot fulfill the match then the whole regex matching fails.
 
 So what if we have a bunch of strings and we would like to make sure only strings containing any of the following will match?
 <hl>#a#, #b#, #c#, #d#, #e#, #f#, #@# or #.#</hl>
@@ -51,26 +51,41 @@ but will not match any of the following:
 "#aa#"
 "# #"
 "###"
+"#-#"
 </code>
 
-A few notes: The regex won't match "##" or "#ab#" because the character class must match exactly one character between the two '#' characters.
-The '.' inside the character class lost its special meaning of "everything except newline" and can match a single '.' only.
-In general most special characters lose their special meaning inside a character class, but there are of course excpetions.
+Two notes:
+
+<ul>
+  <li>The regex won't match "##" or "#ab#" because the character class must match exactly one character between the two '#' characters.</li>
+  <li>The '.' inside the character class lost its special meaning of "everything except newline" and can match a single '.' only.</li>
+</ul>
+
+In general, most special characters lose their special meaning inside a character class, but there are of course exceptions.
 There are even character that gain special meaning inside a character class.
 
 <h2>Range in a character class</h2>
 
-Programmers are lazy typing in all the characters betwee 'a' and 'f' in the regex <hl>/#[abcdef@.]#/</hl> was really tiering. If we had to type
+Programmers are lazy typing in all the characters between 'a' and 'f' in the regex <hl>/#[abcdef@.]#/</hl> was really tiring. If we had to type
 in all the characters between 'a' and 'z' that would be even worse and it would be very error-prone. What if I miss one of the characters?
-Instead of that regexes allow use to define a range of characters from the ASCII table using a dash (<hl>-</hl>). The previous regex
+Instead of that regexes allow us to define a range of characters from the ASCII table using a dash (<hl>-</hl>). The previous regex
 could be written as <hl>/#[a-f@.]#/</hl>
+
+So as you can see a dash <hl>-</hl>, that did not have any special meaning outside of a character class, inside has the special "range-making" meaning.
+
+Of course you will then want to know how can you express that one of the characters you'd like to match in the character class is a dash, and the answer
+is that if you place the dash as the first or the last character in the character class, then it will be just a plain dash.
+So <hl>/#[a-f@.-]#/</hl> will match all the above and also "#-#".
+
+Another frequently asked question at this point is how to include a closing square bracket <hl>]</hl> in a character class. That's simple too.
+You just need to "escape" it be preceding with a back-slash: <hl>\]</hl>.
 
 
 <h2>Negated character class</h2>
 
 What if we would like to allow the matching of any character between two '#' characters <b>except</b> 'a', 'b', or 'c'? We would need to construct
-a character class with all the charcters in the world and <a href="http://en.wikipedia.org/wiki/Unicode">Unicode</a> has more that 110,000 characters.
-That would be a lot of work to type in. Instead of that Perl allows us to negate a character class. If we put a <a href="http://en.wikipedia.org/wiki/Caret">Caret</a>
+a character class with all the characters in the world and <a href="http://en.wikipedia.org/wiki/Unicode">Unicode</a> has more that 110,000 characters.
+That would be a lot of work to type in. Instead of that, Perl allows us to negate a character class. If we put a <a href="http://en.wikipedia.org/wiki/Caret">Caret</a>
  (<hl>^</hl>) as the first character in the character class it will mean the character class can match any one character except those mentioned in the character class.
 So <hl>[^abc]</hl> would match exactly one character that is not 'a', nor 'b', nor 'c'. Our full regex then would look like <hl>/#[^abc]#/</hl>.
 
@@ -102,17 +117,12 @@ Note, it won't match the string '##' or the string "#xyz#", because the negated 
 /a[2-]a/      # a2a, a-a        - has no special meaning at the ends
 /a[-8]a/      # a8a, a-a
 /a[6-C]a/     # a6a, a7a ... aCa
-              #      characters from the ASCII table: 6789:;<=>?@ABC but not recommended
-/a[C-6]a/     # syntax error 
+              #      characters from the ASCII table: 6789:;<=>?@ABC but this is not recommended, don't use it!
+/a[C-6]a/     # syntax error
 
-/a[^xy]a/     # "aba", "aca"  but not "aya", "axa"    what about "aa" ?
+/a[^xy]a/     # "aba", "aca"  but not "aya", "axa" and remember, not "aa"
               # ^ as the first character in a character class means 
               # a character that is not in the list
 /a[b^x]a/     # aba, a^a, axa,  but not aza
 </code>
-
-
-<code lang="perl">
-</code>
-
 
