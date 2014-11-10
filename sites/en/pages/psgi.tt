@@ -1,7 +1,7 @@
 =title PSGI the superglue between Perl web application frameworks and web servers
 =timestamp 2014-06-28T18:13:11
 =indexes PSGI, Plack
-=status draft
+=status done
 =author szabgab
 =archive 1
 =comments 1
@@ -31,6 +31,9 @@ Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
   <li><a href="/pro/psgi-and-ajax-for-single-page-applications">PSGI and AJAX for single-page applications</a></li>
   <li><a href="/pro/asynchronous-web-server-with-psgi-and-twiggy">Asynchronous web application with PSGI and Twiggy</a></li>
 </ul>
+
+The <a href="/search-cpan-org">Open source clone of search.cpan.org</a> is built on PSGI. A large part of that series
+deals with using PSGI.
 
 <!--
   <li><a href=""></a></li>

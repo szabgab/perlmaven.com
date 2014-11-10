@@ -1,4 +1,4 @@
-=title simple timestamp generation using POSIX strftime in Perl
+=title Simple timestamp generation using POSIX strftime in Perl
 =timestamp 2014-01-15T07:30:01
 =indexes POSIX, strftime
 =status draft
@@ -136,6 +136,62 @@ say strftime '%Z', @time; # Time zone name                                      
 say strftime '%A', @time; # Weekday as locale’s full name.                         Sunday
 say strftime '%b', @time; # Month as locale’s abbreviated name.                    Nov
 say strftime '%B', @time; # Month as locale’s full name.                           November
+</code>
+
+<h2>Very useful</h2>
+
+<code>
+      Explanation                                           Example
+%Y    Year        YYYY                                       2014
+%m    Month       mm                                           11
+%d    Day         dd                                           09
+%H    Hour        HH                                           08
+%M    Min         MM                                           05
+%S    Seconds     SS                                           07
+</code>
+
+
+<h2>Sometimes useful</h2>
+
+<code>
+     Explanation                                                      Example
+
+%j   Day of the year as a zero-padded decimal number.                  313
+     On January 1 this will be 001
+
+%U   Week number of the year as a zero padded decimal number.           45
+     (Sunday as the first day of the week)
+     All days in a new year preceding the first Sunday
+     are considered to be in week 0
+
+%W   Week number of the year as a decimal number.                       44
+     (Monday as the first day of the week)
+     All days in a new year preceding the first Monday
+     are considered to be in week 0.
+
+%w   Weekday as a decimal number, where 0 is Sunday and 6 is Saturday.   0
+
+%%   Literal %                                                           %
+
+%c   Locale’s appropriate date and time representation.                 Sun Nov  9 08:05:07 2014
+     I think this is what gmtime() would return in scalar context.
+</code>
+
+
+<h2>IMHO not very useful because they depend on the current locale.</h2>
+
+<code>
+     Explanation                                                Example
+
+%I   Hour (12-hour clock)                                       08
+%p   Locale’s equivalent of either AM or PM.                    AM
+%X   Locale’s appropriate time representation.                  08:05:07
+%x   Locale’s appropriate date representation.                  11/09/2014
+%y   Year without century as a zero-padded decimal number.      14
+%Z   Time zone name                                             IST (I have no idea why)
+%A   Weekday as locale’s full name.                             Sunday
+%b   Month as locale’s abbreviated name.                        Nov
+%B   Month as locale’s full name.                               November
 </code>
 
 
