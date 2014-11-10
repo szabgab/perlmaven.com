@@ -32,7 +32,10 @@ and/or working examples.
 So even if you are a beginner, you can try to use a module and write a minimal example. If you also add explanation to the
 example it is even better.
 
-
+For example look at the <a href="https://metacpan.org/release/AnyEvent">AnyEvent</a> or the 
+<a href="https://metacpan.org/release/Win32-GuiTest">Win32-GuiTest</a> distributions. 
+Scroll down a bit on those pages and you'll see plenty of examples.  Unfortunatelly they are
+not annotated, but at least there are a few examples.
 
 <h2>Who can contribute?</h2>
 
