@@ -205,7 +205,7 @@ to practice what you have learned.
 <ol>
 <li><a href="/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
 <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse</a></li>
-<li><a href="/object-oriented-perl-using-moose">Object Oriented Perl using Mooses</a></li>
+<li><a href="/object-oriented-perl-using-moose">Object Oriented Perl using Moose</a></li>
 <li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a></li>
 <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
 <li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>

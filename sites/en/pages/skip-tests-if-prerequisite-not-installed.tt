@@ -1,7 +1,7 @@
 =title Skip tests if prerequisites are not installed 
 =timestamp 2014-01-15T07:30:01
 =indexes Test::Pod, Test::Pod::Coverage, Test::Version, Test::Perl::Critic, Travis-CI, Test::DistManifest, Test::CheckManifest, Test::Code::TidyAll
-=status draft
+=status done
 =books beginner_book
 =author szabgab
 =archive 1
@@ -200,4 +200,19 @@ but currently Travis-CI is using Ubuntu 12.04 LTS which does not distribute Test
 the OS vendor distributes the module, they are usually older versions of the module. So you might be better off
 sticking to the installation using <hl>cpanm</hl>.
 
+
+<h2>AUTHOR_TESTING and RELEASE_TESTING</h2>
+
+A Caleb Cushing (author of Test::Version mentioned above) also suggested in his comment, this might not be the best solution for skipping the tests.
+He also referred us to the <a href="http://www.dagolden.com/index.php/2098/the-annotated-lancaster-consensus/">Lancaster Consensus</a> that
+was discussed at the <a href="http://act.qa-hackathon.org/qa2013/">QA Hackathon in 2013.
+
+One problem is that if I, as the author of the module under test, forget to install the specific test-related module, then the test will be skipped,
+almost silently and I won't notice if I broke some of the requirements I've set to myself.
+
+<a href="http://dzil.org/">Dist::Zilla</a> provides some nice facilities to allow the authot to configure in the dist.ini file certain standard test,
+and then Dist::Zilla will generate appropriate test files in the <hl>xt/</hl> diretory of the release and run these test during the release process.
+
+Dist::Zilla will also set both the AUTHOR_TESTING and RELEASE_TESTING environment variables to <a href="/boolean-values-in-perl">true</a> which can
+be used in other test script to run certain test only during the release process.
 
