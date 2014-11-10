@@ -1,7 +1,7 @@
 =title How to grep a file using Perl
 =timestamp 2014-01-15T07:30:01
 =indexes grep, regex
-=status draft
+=status done
 =books beginner_book
 =author szabgab
 =archive 1
@@ -23,7 +23,7 @@ Writing a Perl replacement of the Unix grep command does not have much value, un
 <a href="http://beyondgrep.com/">much better</a>, or if you want to <a href="https://metacpan.org/pod/PerlPowerTools">reimplement the Unix commands in Perl</a>.
 Nevertheless it can be a good exercise, and it can be a learning or teaching aid. We'll do this first.
 
-On the other hand having similar functionality to the Unix <hl>grep</hl> as part of a larger script
+On the other hand, having similar functionality to the Unix <hl>grep</hl> as part of a larger script
 might be very useful, and actually it happens quite often. We'll cover that later on.
 
 <h2>A grep-like script</h2>
@@ -36,7 +36,7 @@ The following script on the other hand works like this: <hl>perl grep.pl FILEs</
 Our <hl>grep.pl</hl> does not accept any options and the REGEX itself needs to be included in the script
 replacing the word REGEX. It is much more limited, but it can be a good toy to play with regexes.
 
-The reason I prefere to have the REGEX inside the script and not on the command line is that regexes use all kinds of special characters
+The reason I prefer to have the REGEX inside the script and not on the command line is that regexes use all kinds of special characters
 that the Unix shell might also think it knows what to do with. Therefore we would need to add quotes around the regex and maybe escape
 some of the characters. In general it would require an extra effort.
 
@@ -57,9 +57,17 @@ foreach my $file (@ARGV) {
 
 Run the above script as <hl>perl grep.pl</hl> and it will tell you you need to pass a filename as a parameter.
 
+In a nutshell, the script will receive the list of filenames provided on the command line,
+in the <a href="/argv-in-perl">@ARGV</a> array. We iterate over this list using <a href="/perl-arrays">foreach</a>.
+We open each file using <a href="/open-and-read-from-files">open</a> making sure we handle UTF-8 files properly.
+Then we iterate over the lines using a <a href="/while-loop">while loop</a>. Then comes the interesting part.
+For each line located in the <hl>$line</hl> variable, we check if it matches the given regular expression.
+If there is a match we print the line. Just as the Unix grep would do.
+
+
 <h2>How to grep for an exact match of a string in a file using Perl?</h2>
 
-If we are looking for a line that has a string exactly what we are looking for then we probably not need to use
+If we are looking for a line that has a string exactly what we are looking for then we probably don't need to use
 a regex at all. We would probably need to us the <a href="/string-functions-length-lc-uc-index-substr">index</a> function.
 
 <code lang="perl">
@@ -69,7 +77,16 @@ a regex at all. We would probably need to us the <a href="/string-functions-leng
     }
 </code>
 
-<code lang="perl">
-</code>
 
+<h2>Processing specific rows of a file</h2>
+
+Of course just printing out the matching lines is not very interesting. If that's all we need to do,
+can just use the existing Unix <hl>grep</hl> command.
+
+It is much more interesting when we need to process certain lines of a file. For example in a log file
+of a web server we would like to collect the IP address of of the clients who visited a specific
+page. For this we would need to go over the lines of the file, as we do it above, but instead of printing the
+line we would break it into parts, extract the IP address and put it in a hash.
+
+We'll see such an example in a separate article.
 
