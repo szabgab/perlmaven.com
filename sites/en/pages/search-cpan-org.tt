@@ -78,6 +78,22 @@ This list can be later updated and can be used as a sort-of specification.
     released by someone else the older version will still show up as long as it is still on CPAN. If it was removed and can only be found on BackPan, then
     it will disappear from this list as well.<br>
     This list also includes distributions that are "unauthorized", where the author did not have co-maintainer bit when the distribution was uploaded.
+    <br>
+    There are certain authors that have not uploaded any distribution, and some authors who have set their e-mail to be "not visible". For example
+    <a href="http://search.cpan.org/~quinnm/">Quinn Murphy</a>. This information is taken from the <a href="http://www.cpan.org/authors/00whois.xml">00whois.xml</a> 
+    file and this MetaCPAN won't provide it to us.
+    <br>The homepage value is also taken from the 00whois.xml file and MetaCPAN will supply some other value PAUSE users could set in their MetaCPAN account.
+    <a href="https://metacpan.org/about/faq">There is</a> now an explanation about the relationship between some information on MetaCPAN and what PAUSE supplies.
+    <br>
+    If the user has uploaded anything ever, then there is going to be a CPAN directory where the files currently on CPAN are list. There is also a link to the
+    "Archive" that leads to the directory of this user on BackPAN where all that file <b>ever</b> uploaded by this user can be found. Even file the user has
+    already deleted from CPAN.
+    <br>
+    Links to the CPAN Testers web site.
+    <br>
+    Avatar of the author.
+    <br>
+    List of Releases (Distributions) each one linking to the "home page" of that distribution.
     </li>
 <li>Distribution - specific version (e.g. <a href="http://search.cpan.org/~andya/CGI-Simple-1.113/">CGI-Simple-1.113</a>).
     Shows various meta data of the distribution, including the list of
@@ -125,6 +141,9 @@ This list can be later updated and can be used as a sort-of specification.
 
 <ul>
   <li><a href="/search-cpan-org-authors-and-recent">Authors, recent, FAQ and Feedback</a></li>
+  <!--
+  <li><a href="/search-cpan-org-author">Individual Author pages</a></li>
+  -->
 </ul>
 
 <h2>Notes</h2>
