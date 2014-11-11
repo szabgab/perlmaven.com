@@ -1,5 +1,5 @@
 =title undef, el valor por defecto y la función defined en Perl
-=timestamp 2014-11-02T20:58:56
+=timestamp 2014-11-10T20:53:56
 =indexes undef, defined
 =status show
 =original undef-and-defined-in-perl
@@ -13,7 +13,7 @@
 =abstract start
 
 En algunos lenguajes hay una forma especial de indicar "esta variable no tiene un valor".
-En <b>SQL</b>, <b>PHP</b> y <b>Java</b> este valor sería <hl>NULL</hl>. En <b>Python</b> es <hl>None</hl>.
+En <b>SQL</b>, <b>PHP</b> y <b>Java</b> este valor es <hl>NULL</hl>. En <b>Python</b>, <hl>None</hl>.
 En <b>Ruby</b> se llama <hl>Nil</hl>.
 
 En Perl este valor se llama <hl>undef</hl>.
@@ -31,10 +31,10 @@ my $x;
 </code>
 
 Algunas funciones devuelven <hl>undef</hl> para indicar un error mientras que otras
-simplemente pueden devolver undef porque no tienen nada importante que devolver.
+simplemente retornan undef porque no tienen nada importante que devolver.
 
 <code lang="perl">
-my $x = do_something();
+my $x = hacer_algo();
 </code>
 
 Puedes usar la función <hl>undef()</hl> para restablecer el valor de la variable a <hl>undef</hl>:
@@ -56,15 +56,15 @@ Los paréntesis después del nombre de la función son opcionales y no los he in
 Como puedes ver hay un diversas maneras de obtener <b>undef</b> en una variable escalar.
 La cuestión es, ¿que ocurre si usamos esa variable?
 
-Sin embargo, veremos otra cosa antes:
+Sin embargo, antes veremos:
 
 <h2>¿Como comprobar si una variable vale undef?</h2>
 
 La función <hl>defined()</hl> devolverá <a href="/valores-booleanos-en-perl">verdadero</a> si
-el valor dado <b>no es undef</b>. Devolverá <a href="/valores-booleanos-en-perl">falso</a>
-si el valor dado es <b>undef</b>.
+el valor proporcionado <b>no es undef</b>. Devolverá <a href="/valores-booleanos-en-perl">falso</a>
+si el valor proporcionado es <b>undef</b>.
 
-Lo puedes usar así:
+Se puede usar así:
 
 <code lang="perl">
 use strict;
@@ -73,7 +73,7 @@ use 5.010;
 
 my $x;
 
-# algun codigo que puede dar un valor a $x
+# algun codigo que puede asignar un valor a $x
 
 if (defined $x) {
     say '$x esta definido';
@@ -85,15 +85,15 @@ if (defined $x) {
 
 <h2>¿Cual es el valor real de undef?</h2>
 
-Aunque <b>undef</b> indica la ausencia de un valor es todavía usable.
+Aunque <b>undef</b> indica la ausencia de un valor, es todavía usable.
 Perl proporciona un par de valores por defecto asociados a undef.
 
 Si usas una variable que contiene undef en una operación numérica, actuará como si fuese 0.
 
-Si la usas en una operación de strings, actuará como el string vacío.
+Si la usas en una operación de strings, actuará como la cadena vacía.
 
 
-Mira el siguiente ejemplo:
+Observa el siguiente ejemplo:
 
 <code lang="perl">
 use strict;
@@ -109,12 +109,12 @@ say $x; # 1
 </code>
 
 En este ejemplo la variable $x, que vale undef por defecto, se comporta como 0 en la suma (+).
-En la concatenación (.) se comporta como el string vacío y de nuevo como 0 en la operación de
+En la concatenación (.) se comporta como la cadena vacía y de nuevo como 0 en la operación de
 auto-incremento (++).
 
 No será perfecto. Si has habilitado los warnings con la sentencia <hl>use warnings</hl>
 (<a href="/instalacion-y-primeros-pasos-con-perl">lo cual siempre se recomienda</a>)
-recibiras dos <a href="http://perlmaven.com/use-of-uninitialized-value">use of uninitialized value</a>
+recibiras dos <a href="http://perlmaven.com/use-of-uninitialized-value">use of uninitialized value (en)</a>
 warnings por las dos primeras operaciones, pero no por el auto-incremento:
 
 <code>
@@ -126,5 +126,5 @@ Creo que no recibes la advertencia para la operación de incremento porque perl 
 que es bastante conveniente en sitios donde quieres contar cosas.
 
 Puedes evitar los warnings inicializando la variable con el valor correcto (0 o la cadena vacía,
-dependiendo de lo que debería ser), o deshabilitando los warnings selectivamente.
+dependiendo de lo que corresponda), o deshabilitando los warnings selectivamente.
 Lo trataremos en una articulo separando.
