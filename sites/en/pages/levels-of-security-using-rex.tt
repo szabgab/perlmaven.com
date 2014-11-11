@@ -313,10 +313,12 @@ On the remote machine create a user <hl>foobar</hl> (or your favorite name) and 
 </code>
 
 
-Create a file called <hl>/etc/sudoers.d/foobar</hl> with the following content:
+Create a file called <hl>/etc/sudoers.d/foobar</hl> with the following commands:
 
 <code>
-foobar   ALL=(ALL:ALL) NOPASSWD: /usr/bin/aptitude
+# echo "foobar   ALL=(ALL:ALL) ALL"  >> /etc/sudoers.d/foobar
+# echo "foobar   ALL=(ALL:ALL) NOPASSWD: /usr/bin/aptitude" >> /etc/sudoers.d/foobar
+# chmod 440 /etc/sudoers.d/foobar
 </code>
 
 The <hl>Rexifile</hl>
@@ -334,7 +336,7 @@ task "update", group => "myserver", sub {
    say $output;
    my $update = run "sudo aptitude update";
    say $?;
-   my $upgrade = run "aptitude -y safe-upgrade";
+   my $upgrade = run "sudo aptitude -y safe-upgrade";
    say $?;
 };
 </code>
