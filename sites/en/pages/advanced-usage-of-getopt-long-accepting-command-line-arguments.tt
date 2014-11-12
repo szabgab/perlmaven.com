@@ -1,7 +1,7 @@
 =title Advanced usage of Getopt::Long for accepting command line arguments
 =timestamp 2013-03-15T07:30:01
 =indexes Getopt::Long
-=status draft
+=status done
 =author szabgab
 =archive 1
 =comments 1
@@ -12,7 +12,7 @@
 We have already seen <a href="/how-to-process-command-line-arguments-in-perl">how to use Getopt::Long to process command line arguments</a>,
 but there you can do a lot more with that module.
 
-Let's see how can we use the <a href="https://metacpan.org/module/Getopt::Long">Getop::Long</a>
+Let's see how else can we use the <a href="https://metacpan.org/module/Getopt::Long">Getop::Long</a> module:
 
 =abstract end
 
@@ -48,7 +48,7 @@ if ($verbose) {
 </code>
 
 That is, we'll check if <hl>$verbose</hl> is <a href="/boolean-values-in-perl">true</a> and if it is, then we print something to the console.
-Of course it does not have to be some extra printing. It can be some other change in the behaviour of the script.
+Of course it does not have to be some extra printing. It can be some other change in the behavior of the script.
 
 For example in one script I have an <hl>--all</hl> flag which means, the script needs to process all the files in the the given directory.
 
@@ -80,15 +80,15 @@ if (defined $verbose) {
 }
 </code>
 
-We put an exclamation mark <hl>!</hl> at the end of the flagname where we define the flags and we just printed out
+We put an exclamation mark <hl>!</hl> at the end of the flag name where we define the flags and we just printed out
 the value of <hl>$verbose</hl>.
 
-If we run the script without providing the <hl>--verobose</hl> flag, the variable will remain <hl>undef</hl>.
+If we run the script without providing the <hl>--verbose</hl> flag, the variable will remain <hl>undef</hl>.
 If we provide the <hl>--verbose</hl> flag, it will be set to be 1, a <a href="/boolean-values-in-perl">true</a> value.
 So far nothing changed. The difference is that now we can supply a <hl>--noverbose</hl> flag that will set the
 <hl>$verbose</hl> variable to <hl>0</hl>. In boolean context this is still <a href="/boolean-values-in-perl">false</a>
-just as the <hl>undeF</hl>, but now, if we want, we can differentiate in the two cases when the user did not ask for
-verboseness, and when the user explicitely ask for no verboseness:
+just as the <hl>undef</hl>, but now, if we want, we can differentiate in the two cases when the user did not ask for
+verboseness, and when the user explicitly ask for no verboseness:
 
 <code>
 $ perl cli.pl
@@ -99,7 +99,7 @@ $ perl cli.pl --noverbose
 0
 </code>
  
-In certain situation this might be usefule, though I have to admit, I have not encountered any such situation yet.
+In certain situation this might be useful, though I have to admit, I have not encountered any such situation yet.
 
 Just for the curiosity, after reading the next part I came back and wanted to see what happens if we supply both
 the <hl>--verbose</hl> and the <hl>--noverbose</hl> flags to the script. The answer is that it depends on their order:
@@ -111,7 +111,7 @@ $ perl cli.pl --verbose --noverbose
 0
 </code>
 
-It would be better to avoid such crazyness, but of course, you, as the author of the script
+It would be better to avoid such craziness, but of course, you, as the author of the script
 don't have control over what the user supplies on the command line.
 
 
@@ -174,12 +174,12 @@ Then again, we could have get the same effect by accepting an option called "tra
 
 <h2>Argument with a value</h2>
 
-In the next example we declare two options. Both are optional, but if the user suplies either of those options, the user also has to supply
+In the next example we declare two options. Both are optional, but if the user supplies either of those options, the user also has to supply
 a value. The <hl>--machine</hl> option is expected to be followed by any string (which of course can be a number as well), 
 the <hl>--trace</hl> option is expected to be followed by an integer. This is what the <hl>=s</hl> and the <hl>=i</hl> at the end of the
 declarations mean.
 
-If the user supplies either of those parameters without a proper value after it, the GetOptions function will print a warnig and
+If the user supplies either of those parameters without a proper value after it, the GetOptions function will print a warning and
 return false. That's when the <hl>or die</hl> added to this example, will be executed.
 
 <code lang="perl">
@@ -281,7 +281,7 @@ if ($log) {
 }
 </code>
 
-In this case we had to add an extra validation to the code, to notify the user that providing <hl>--logifile FILENAME</hl>
+In this case we had to add an extra validation to the code, to notify the user that providing <hl>--logfile FILENAME</hl>
 without turning on logging with <hl>--log</hl> does not have any meaning. Other than that we just have two flags,
 one with a required <hl>=s</hl> string after it.
 
@@ -298,7 +298,7 @@ $ perl cli.pl --log --logfile data.log
 logging to file data.log
 </code>
 
-We have the extra validation in case the user only supplies the <hl>--loggile FILENAME</hl>:
+We have the extra validation in case the user only supplies the <hl>--logfile FILENAME</hl>:
 
 <code>
 $ perl cli.pl --logfile data.log
@@ -307,7 +307,7 @@ $ perl cli.pl --logfile data.log
 
 
 If the user supplies <hl>--logfile</hl> without an argument the GetOptions will already warn about it and it
-will return false that will trigger the first <hl>die</hl> command showng the "Usage" string.
+will return false that will trigger the first <hl>die</hl> command showing the "Usage" string.
 
 <code>
 $ perl cli.pl --logfile
@@ -321,7 +321,7 @@ Usage: cli.pl [--log  [--logfile FILENAME]]
 
 <h3>Argument that can get a value (but not required to)</h3>
 
-The same can be accomplishe using an option with an optional value. We declare that by using <hl>:s</hl> at the end of the
+The same can be accomplish using an option with an optional value. We declare that by using <hl>:s</hl> at the end of the
 option name as in <hl>logfile:s</hl>.
 
 <code lang="perl">
