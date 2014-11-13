@@ -1,6 +1,6 @@
-=title Levels of security using Rex
+=title Levels of security using (R)?ex
 =timestamp 2014-01-15T07:30:01
-=indexes Rexify, DevOps, ssh
+=indexes Rex, DevOps, ssh
 =status draft
 =author szabgab
 =archive 1
@@ -25,17 +25,17 @@ In this article you'll see a couple of way to handle authentication. Each one wi
 The part of my <b>Rexfile</b> that does the real work looks like this:
 
 <code lang="perl">
-group myserver => "perlmaven.com", "perlide.org";
+group myservers => "perlmaven.com", "perlide.org";
 
 desc "Update all the packages";
-task "update", group => "myserver", sub {
+task "update", group => "myservers", sub {
    my $update = run "aptitude update";
    say $?;
    my $upgrade = run "aptitude -y safe-upgrade";
 };
 </code>
 
-The <hl>group myserver ...</hl> part declares a list of server names that the task can act upon.
+The <hl>group myservers ...</hl> part declares a list of server names that the task can act upon.
 
 The <hl>desc</hl> is, well, just a description of the task after it.
 
@@ -45,13 +45,19 @@ Then we would run <hl>aptitude -y safe-upgrade</hl> to upgrade all the necessary
 the upgrade.
 The exit code from the last <hl>run</hl> is placed in the <hl>$?</hl> variable. We print it out with the <hl>say</hl> command.
 
+<i>
+This example was specially designed to work on Debian/Ubuntu by the author who is just getting started with Rex.
+<a href="https://github.com/ferki">Ferenc Erki</a>, one of the core Rex developers pointed out that a more generic solution would be to
+call <hl>update_package_db;</hl> as that is the <a href="http://www.rexify.org/api/Rex/Commands/Pkg.pm.html">OS-agnostic package manager</a>.
+</i>
+
 Actually, in order to make the example run faster, and to get some feedback I ran a slightly different example:
 
 <code lang="perl">
-group myserver => "perlmaven.com";
+group myservers => "perlmaven.com";
 
 desc "Update all the packages";
-task "update", group => "myserver", sub {
+task "update", group => "myservers", sub {
    my $output = run "uptime";
    say $output;
    my $update = run "aptitude update";
@@ -328,10 +334,10 @@ user "foobar";
 private_key "/home/gabor/.ssh/id_rsa";
 public_key "/home/gabor/.ssh/id_rsa.pub";
 
-group myserver => "perlmaven.com", "perlide.org";
+group myservers => "perlmaven.com", "perlide.org";
 
 desc "Update all the packages";
-task "update", group => "myserver", sub {
+task "update", group => "myservers", sub {
    my $output = run "uptime";
    say $output;
    my $update = run "sudo aptitude update";
