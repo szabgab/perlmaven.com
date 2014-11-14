@@ -31,13 +31,16 @@ is in the <a href="https://github.com/RexOps/rexify-website/">rexify-website</a>
 code is in the <a href="https://github.com/jmacdotorg/ifcomp">ifcomp</a> repository.
 
 <a href="http://mojolicio.us/">Mojolicious</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/kraih/mojolicio.us">mojolicio.us</a>
-repository.
+repository. There is a <a href="https://github.com/kraih/mojo/wiki/Projects-and-Companies-Using-Mojolicious">list of web sites</a> powerd by Mojolicious.
 
 <a href="http://sco.perlmaven.com/">The search.cpan.org clone project</a>, which is not finished yet. Its source code is in the
 <a href="https://github.com/szabgab/MetaCPAN-SCO">MetaCPAN-SCO</a> repostory. It is written in <a href="/psgi">PSGI/Plack</a>.
 
 <a href="http://tracert.com/">Tracert.com</a> providing routing information from around the world. Its source code is in the
 <a href="https://github.com/szabgab/tracert.com">tracert.com</a> repository. It is written in <a href="/psgi">PSGI/Plack</a>. 
+
+<a href="http://soylentnews.org/">SoylentNews</a> is powered by a fork of Slashcode.
+The source code is available in <a href="https://github.com/SoylentNews/slashcode">this repository</a>
 
 <h2>Less frequently maintained site</h2>
 
@@ -52,6 +55,10 @@ which itslef is written in <a href="/dancer">Dancer</a>. The source code of amus
 <a href="http://perltv.org/">PerlTV</a> list Perl-related presentations and screencasts. It is based on <a href="/dancer">Dancer2</a>.
 Its source code is in the <a href="https://github.com/szabgab/perltv.org">perltv.org</a> repository.
 
+
+Most <a href="http://act.mongueurs.net/conferences.html">Perl conferences</a> (YAPCs, Workshops etc) run on <a href="http://act.mongueurs.net/">Act - A Conference Toolkit</a>.
+Its source code is in <a href="https://github.com/book/Act">the Act repository</a>.
+
 <h2>Site with no recent changes in the source code</h2>
 
 <a href="http://advent.perldancer.org/">Perl Dancer Advent Calendar</a> is itslef based on <a href="/dancer">Dancer</a>.
@@ -60,6 +67,10 @@ repository.
 
 <a href="http://perlresume.org/">My Perl Résumé</a> is based on <a href="/dancer">Dancer</a>. Its source code is in the
 <a href="https://github.com/vti/perlresume.org">perlresume.org</a> repository.
+
+<a href="http://look2remove.me/">Look2remove.me</a> allows you to upload a picture to be seen only once. Its source code
+is available in <a href="https://github.com/vti/look2remove.me">this repository</a> and it is based on <a href="https://github.com/vti/turnaround">Turnaround</a>
+a Perl TIMTOWTDI web framework.
 
 <a href="http://paste.perldancer.org/">Pastedance</a> a pastebin written in <a href="/dancer">Daner</a>. Source code in
 the <a href="https://github.com/datamuc/Pastedance">Pastedance</a> repository.
@@ -71,7 +82,9 @@ the <a href="https://github.com/throughnothing/Dancebin">Dancebin</a> repository
 Its web site is a single static page, but if you insist, its source code is
 in the <a href="https://github.com/miyagawa/plackperl.org">plackperl.org</a> repository.
 
-Thanks to the people <a href="http://www.reddit.com/r/perl/comments/2madw7/are_there_any_live_web_sites_running_on_perl_with/">Reddit</a> who suggested quite a few
-of the sites.
+<h2>Sources</h2>
+
+Thanks to the people <a href="http://www.reddit.com/r/perl/comments/2madw7/are_there_any_live_web_sites_running_on_perl_with/">Reddit</a>
+who suggested quite a few of the sites.
 
 
