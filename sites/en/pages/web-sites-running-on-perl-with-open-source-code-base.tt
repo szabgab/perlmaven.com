@@ -1,0 +1,45 @@
+=title Web sites running on Perl with Open Source code-base
+=timestamp 2014-01-31T10:30:01
+=indexes open source, web
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+This is a list of live web sites that are running on Perl where the whole source-code is available
+as Open Source.
+
+There is another, related list of the <a href="http://perlmaven.com/perl-based-open-source-products">Perl based open source products</a>.
+
+=abstract end
+
+
+<a href="https://metacpan.org/">MetaCPAN</a>, the Open Source search engine of CPAN. It has several sub-projects hosted
+in the <a href="https://github.com/CPAN-API/">CPAN-API</a> GitHub organization.
+<a href="https://github.com/CPAN-API/metacpan-web">metacpan-web</a> is the front-end written using <a href="http://www.catalystframework.org/">Catalyst</a>,
+and <a href="https://github.com/CPAN-API/cpan-api/">cpan-api</a> is the back-end.
+
+
+<a href="http://www.rexify.org/">(R)?ex</a>, the Deployment &amp; Configuration Management (aka DevOps) tool written in Perl. The source of its web site
+is in the <a href="https://github.com/RexOps/rexify-website/">rexify-website</a> GitHub project. It runs on <a href="http://mojolicio.us/">Mojolicious</a>.
+
+
+
+<a href="http://mojolicio.us/">Mojolicious</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/kraih/mojolicio.us">mojolicio.us</a>
+repository.
+
+<a href="http://perldancer.org/">Dancer</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/PerlDancer/perldancer-website">perldancer-website</a>
+repository.
+
+
+
+<a href="http://sco.perlmaven.com/">The search.cpan.org clone project</a>, which is not finished yet. Its source code is in the
+<a href="https://github.com/szabgab/MetaCPAN-SCO">MetaCPAN-SCO</a> repostory. It is written in <a href="http://plackperl.org/">PSGI/Plack</a>.
+
+
+
+
+
