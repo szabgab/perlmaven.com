@@ -167,7 +167,15 @@ The already existing articles and screencasts are going to be listed here:
   <li><a href="/pro/looking-at-specific-commit-in-github">Looking at a specific commit in GitHub</a></li>
 
 <!--
+  <li><a href="/pro/create-the-sco-look-and-feel">Create the search.cpan.org look and feel</a></li>
+  <li><a href="/pro/serving-static-files-with-plack">Serving static files such as favicon.ico and robots.txt using Plack</a></li>
+  <li><a href="/pro/get-cpanstats-from-metacpan">Get cpanstats from MetaCPAN using cron</a></li>
+  <li><a href="/pro/add-404-not-found-page.tt ">Add "404 Not Found" page and another static page</a></li>
+  <li><a href="/pro/list-authors-where-the-pauseid-starts-with-a-given-letter">List authors where the PAUSEID starts with a given letter</a></li>
+  <li><a href="/pro/"></a></li>
+  <li><a href="/pro/"></a></li>
   <li><a href="/pro/"></a></li>
 -->
+
 </ul>
 
