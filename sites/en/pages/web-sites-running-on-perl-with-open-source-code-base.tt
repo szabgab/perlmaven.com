@@ -31,15 +31,26 @@ is in the <a href="https://github.com/RexOps/rexify-website/">rexify-website</a>
 <a href="http://mojolicio.us/">Mojolicious</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/kraih/mojolicio.us">mojolicio.us</a>
 repository.
 
-<a href="http://perldancer.org/">Dancer</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/PerlDancer/perldancer-website">perldancer-website</a>
+<a id="daner" href="http://perldancer.org/">Dancer</a>, the web framework. The source code of its own web site is
+in the <a href="https://github.com/PerlDancer/perldancer-website">perldancer-website</a>
+repository. The <a href="http://perldancer.org/dancefloor">Dancefloor</a> might list more Dancer based open source sites.
+
+<a href="http://advent.perldancer.org/">Perl Dancer Advent Calendar</a> is itslef based on <a href="#dancer">Dancer</a>.
+Its source code is in the <a href="https://github.com/PerlDancer/advent-calendar">advent-calendar</a>
 repository.
 
+<a href="http://perlresume.org/">My Perl Résumé</a> is based on <a href="#dancer">Dancer</a>. Its source code is in the
+<a href="https://github.com/vti/perlresume.org">perlresume.org</a> repository.
+
+<a href="http://paste.perldancer.org/">Pastedance</a> A pastebin written in <a href="#dancer">Daner</a>. Source code in
+the <a href="https://github.com/datamuc/Pastedance">Pastedance</a> repository.
 
 
 <a href="http://sco.perlmaven.com/">The search.cpan.org clone project</a>, which is not finished yet. Its source code is in the
 <a href="https://github.com/szabgab/MetaCPAN-SCO">MetaCPAN-SCO</a> repostory. It is written in <a href="http://plackperl.org/">PSGI/Plack</a>.
 
 
-
+<a href="http://tracert.com/">Tracert.com</a> providing routing information from around the world. Its source code is in the
+<a href="https://github.com/szabgab/tracert.com">tracert.com</a> repository. It is written in <a href="http://plackperl.org/">PSGI/Plack</a>. 
 
 
