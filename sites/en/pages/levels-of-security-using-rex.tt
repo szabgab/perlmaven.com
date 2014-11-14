@@ -9,7 +9,7 @@
 
 =abstract start
 
-Just recently I've started to play with <a href="http://www.rexify.org/">Rexify</a> which is a tool for automating server management.
+Just recently I've started to play with <a href="http://www.rexify.org/">Rex</a> which is a tool for automating server management.
 Part of the <b>DevOps</b> revolution.
 I have not used <a href="https://www.getchef.com/">Chef</a> or <a href="http://puppetlabs.com/">Puppet</a> before, so I did not know what to
 expect, but so far I love it.
