@@ -1,4 +1,4 @@
-=title Web sites running on Perl with Open Source code-base
+=title Web sites powered by Perl with Open Source code-base
 =timestamp 2014-01-31T10:30:01
 =indexes open source, web
 =status draft
@@ -10,47 +10,68 @@
 =abstract start
 
 This is a list of live web sites that are running on Perl where the whole source-code is available
-as Open Source.
+as Open Source. If you are looking for a project to contribute to, these are all excellent choices.
 
 There is another, related list of the <a href="http://perlmaven.com/perl-based-open-source-products">Perl based open source products</a>.
 
 =abstract end
 
 
+<h2>Most actively maintained sites</h2>
+
 <a href="https://metacpan.org/">MetaCPAN</a>, the Open Source search engine of CPAN. It has several sub-projects hosted
 in the <a href="https://github.com/CPAN-API/">CPAN-API</a> GitHub organization.
-<a href="https://github.com/CPAN-API/metacpan-web">metacpan-web</a> is the front-end written using <a href="http://www.catalystframework.org/">Catalyst</a>,
+<a href="https://github.com/CPAN-API/metacpan-web">metacpan-web</a> is the front-end written using <a href="/catalyst">Catalyst</a>,
 and <a href="https://github.com/CPAN-API/cpan-api/">cpan-api</a> is the back-end.
 
-
 <a href="http://www.rexify.org/">(R)?ex</a>, the Deployment &amp; Configuration Management (aka DevOps) tool written in Perl. The source of its web site
-is in the <a href="https://github.com/RexOps/rexify-website/">rexify-website</a> GitHub project. It runs on <a href="http://mojolicio.us/">Mojolicious</a>.
+is in the <a href="https://github.com/RexOps/rexify-website/">rexify-website</a> GitHub project. It runs on <a href="/mojolicious">Mojolicious</a>.
 
-
+<a href="http://ifcomp.org/">IFcomp</a>, The Interactive Fiction Competition. Its web site is based on <a href="/catalyst">Catalyst</a>. Its source
+code is in the <a href="https://github.com/jmacdotorg/ifcomp">ifcomp</a> repository.
 
 <a href="http://mojolicio.us/">Mojolicious</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/kraih/mojolicio.us">mojolicio.us</a>
 repository.
 
-<a id="daner" href="http://perldancer.org/">Dancer</a>, the web framework. The source code of its own web site is
+<a href="http://sco.perlmaven.com/">The search.cpan.org clone project</a>, which is not finished yet. Its source code is in the
+<a href="https://github.com/szabgab/MetaCPAN-SCO">MetaCPAN-SCO</a> repostory. It is written in <a href="/psgi">PSGI/Plack</a>.
+
+<a href="http://tracert.com/">Tracert.com</a> providing routing information from around the world. Its source code is in the
+<a href="https://github.com/szabgab/tracert.com">tracert.com</a> repository. It is written in <a href="/psgi">PSGI/Plack</a>. 
+
+<h2>Less frequently maintained site</h2>
+
+<a href="http://perldancer.org/">Dancer</a>, the web framework. The source code of its own web site is
 in the <a href="https://github.com/PerlDancer/perldancer-website">perldancer-website</a>
 repository. The <a href="http://perldancer.org/dancefloor">Dancefloor</a> might list more Dancer based open source sites.
 
-<a href="http://advent.perldancer.org/">Perl Dancer Advent Calendar</a> is itslef based on <a href="#dancer">Dancer</a>.
+<a href="http://theanarchistlibrary.org/">The Anarchist Library</a> runs on <a href="https://gitorious.org/amuse-wiki">amuse-wiki</a>
+which itslef is written in <a href="/dancer">Dancer</a>. The source code of amuse-wiki is in <a href="https://gitorious.org/amuse-wiki">this</a> repository.
+
+
+<a href="http://perltv.org/">PerlTV</a> list Perl-related presentations and screencasts. It is based on <a href="/dancer">Dancer2</a>.
+Its source code is in the <a href="https://github.com/szabgab/perltv.org">perltv.org</a> repository.
+
+<h2>Site with no recent changes in the source code</h2>
+
+<a href="http://advent.perldancer.org/">Perl Dancer Advent Calendar</a> is itslef based on <a href="/dancer">Dancer</a>.
 Its source code is in the <a href="https://github.com/PerlDancer/advent-calendar">advent-calendar</a>
 repository.
 
-<a href="http://perlresume.org/">My Perl Résumé</a> is based on <a href="#dancer">Dancer</a>. Its source code is in the
+<a href="http://perlresume.org/">My Perl Résumé</a> is based on <a href="/dancer">Dancer</a>. Its source code is in the
 <a href="https://github.com/vti/perlresume.org">perlresume.org</a> repository.
 
-<a href="http://paste.perldancer.org/">Pastedance</a> A pastebin written in <a href="#dancer">Daner</a>. Source code in
+<a href="http://paste.perldancer.org/">Pastedance</a> a pastebin written in <a href="/dancer">Daner</a>. Source code in
 the <a href="https://github.com/datamuc/Pastedance">Pastedance</a> repository.
 
+<a href="http://danceb.in/">Dancebin">, another pastebin service written in <a href="/dancer">Dancer</a>. Source code in
+the <a href="https://github.com/throughnothing/Dancebin">Dancebin</a> repository.
 
-<a href="http://sco.perlmaven.com/">The search.cpan.org clone project</a>, which is not finished yet. Its source code is in the
-<a href="https://github.com/szabgab/MetaCPAN-SCO">MetaCPAN-SCO</a> repostory. It is written in <a href="http://plackperl.org/">PSGI/Plack</a>.
+<a href="http://plackperl.org/">PSGI/Plack</a> is the common building block of every <a href="http://perlmaven.com/videos/modern-web-with-perl">modern web application</a> written in Perl.
+Its web site is a single static page, but if you insist, its source code is
+in the <a href="https://github.com/miyagawa/plackperl.org">plackperl.org</a> repository.
 
-
-<a href="http://tracert.com/">Tracert.com</a> providing routing information from around the world. Its source code is in the
-<a href="https://github.com/szabgab/tracert.com">tracert.com</a> repository. It is written in <a href="http://plackperl.org/">PSGI/Plack</a>. 
+Thanks to the people <a href="http://www.reddit.com/r/perl/comments/2madw7/are_there_any_live_web_sites_running_on_perl_with/">Reddit</a> who suggested quite a few
+of the sites.
 
 
