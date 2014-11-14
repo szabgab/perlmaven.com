@@ -48,8 +48,8 @@ The exit code from the last <hl>run</hl> is placed in the <hl>$?</hl> variable. 
 <i>
 This example was specially designed to work on Debian/Ubuntu by the author who is just getting started with Rex.
 <a href="https://github.com/ferki">Ferenc Erki</a>, one of the core Rex developers pointed out, that a more generic solution would be to
-call <hl>update_package_db;</hl> as that is the <a href="http://www.rexify.org/api/Rex/Commands/Pkg.pm.html">OS-agnostic package manager</a>.
-There is also a command called <hl>update_system</hl>.
+use the built-in <hl>update_package_db</hl> command as that is the <a href="http://www.rexify.org/api/Rex/Commands/Pkg.pm.html">OS-agnostic
+way to update package definitions</a>. There is also a command called <hl>update_system</hl> to update all packages on a system.
 </i>
 
 <i>He also pointed out that instead of <hl>say $?;</hl> one might activate the <hl>verbose_run</hl> feature flag.
@@ -64,10 +64,10 @@ Currently Rex is using <hl>APT_LISTCHANGES_FRONTEND=text DEBIAN_FRONTEND=noninte
 Actually, in order to make the example run faster, and to get some feedback I ran a slightly different example:
 
 <code lang="perl">
-group myservers => "perlmaven.com";
+group myserver => "perlmaven.com";
 
 desc "Update all the packages";
-task "update", group => "myservers", sub {
+task "update", group => "myserver", sub {
    my $output = run "uptime";
    say $output;
    my $update = run "aptitude update";
@@ -91,7 +91,7 @@ nor have we supplied a password.
 In order to run the script anyway we can execute the following command:
 
 <code>
-rex update -u root -p SecretPassword
+rex -u root -p SecretPassword update
 </code>
 
 We supply the username and the password on the command line.
@@ -111,7 +111,7 @@ user "root";
 and then it is enough to provide the password:
 
 <code>
-rex update -p SecretPassword
+rex -p SecretPassword update
 </code>
 
 It might be more convenient, but the same problem with security.
@@ -190,7 +190,7 @@ public keys on my machine, copy them and use them to access the server.
 Although you'd normally try to protect the private key file much more than any almost any other file in your account.
 
 <i>As <a href="https://github.com/ferki">FErki</a> pointed out one can protect the private key using a
-passphrase as well, but then the process won't be fully unattended any more.</i>
+passphrase as well, but then the process will only be unattended if you include the passphrase in the Rexfile - which we would like to avoid.</i>
 
 Nevertheless, this is still an improvement over the case when we had the password in the Rexfile.
 If my user account on my local machine is compromised then there is no difference in the two approaches, but 
@@ -328,15 +328,6 @@ foobar is only allowed to execute <hl>sudo aptitude</hl> without providing a pas
 (Actually in this setup foobar cannot execute anything else with sudo, not even with password.)
 
 Running <hl>rex update</hl> will work again as expected.
-
-
-An even better way is to use the <hl>sudo</hl> command instead of the <hl>run</hl> command:
-
-<code lang="perl">
-   my $update = sudo "aptitude update";
-</code>
-
-See it documented <a href="http://www.rexify.org/api/Rex/Commands/Run.pm.html">here</a>
 
 
 <h2>TL;DR</h2>
