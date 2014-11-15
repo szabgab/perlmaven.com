@@ -72,10 +72,10 @@ repository.
 is available in <a href="https://github.com/vti/look2remove.me">this repository</a> and it is based on <a href="https://github.com/vti/turnaround">Turnaround</a>
 a Perl TIMTOWTDI web framework.
 
-<a href="http://paste.perldancer.org/">Pastedance</a> a pastebin written in <a href="/dancer">Daner</a>. Source code in
+<a href="http://paste.perldancer.org/">Pastedance</a> a pastebin written in <a href="/dancer">Dancer</a>. Source code in
 the <a href="https://github.com/datamuc/Pastedance">Pastedance</a> repository.
 
-<a href="http://danceb.in/">Dancebin">, another pastebin service written in <a href="/dancer">Dancer</a>. Source code in
+<a href="http://danceb.in/">Dancebin</a>, another pastebin service written in <a href="/dancer">Dancer</a>. Source code in
 the <a href="https://github.com/throughnothing/Dancebin">Dancebin</a> repository.
 
 <a href="http://plackperl.org/">PSGI/Plack</a> is the common building block of every <a href="http://perlmaven.com/videos/modern-web-with-perl">modern web application</a> written in Perl.
