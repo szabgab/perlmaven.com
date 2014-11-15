@@ -42,7 +42,16 @@ repository. There is a <a href="https://github.com/kraih/mojo/wiki/Projects-and-
 <a href="http://soylentnews.org/">SoylentNews</a> is powered by a fork of Slashcode.
 The source code is available in <a href="https://github.com/SoylentNews/slashcode">this repository</a>
 
-<h2>Less frequently maintained site</h2>
+<h2>Less frequently maintained sites</h2>
+
+<a href="https://rt.cpan.org/">rt.cpan.org</a>, the default bug-tracking system of every CPAN distribution runs <a href="http://bestpractical.com/rt/">RT</a>.
+Source code can be found <a href="http://bestpractical.com/rt/git.html">here</a>.
+
+<a href="http://irclog.perlgeek.de/">irclog.perlgeek.de</a> logs IRC channels. It uses <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>. Source code
+is <a href="https://github.com/moritz/ilbot/">here</a>.
+
+<a href="http://konzertgeek.de/">konzertgeek.de</a> is a location-aware search for music concerts in German, runs <a href="https://github.com/moritz/soonish-p5">soonish</a>.
+
 
 <a href="http://perldancer.org/">Dancer</a>, the web framework. The source code of its own web site is
 in the <a href="https://github.com/PerlDancer/perldancer-website">perldancer-website</a>
