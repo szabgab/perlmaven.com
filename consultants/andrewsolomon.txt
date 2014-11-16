@@ -5,7 +5,7 @@ twitter: geekuni
 gplus: +AndrewSolomonBrainDump
 linkedin: https://www.linkedin.com/in/asolomon
 pause: ILLY
-country: UK
+country: GB
 location: London
 languages: English
 specialities: E-Learning, Web Services and Devops
