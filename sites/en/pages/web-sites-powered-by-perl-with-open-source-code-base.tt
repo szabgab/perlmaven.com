@@ -81,6 +81,15 @@ Its source code is in the <a href="https://github.com/szabgab/perltv.org">perltv
 Most <a href="http://act.mongueurs.net/conferences.html">Perl conferences</a> (YAPCs, Workshops etc) run on <a href="http://act.mongueurs.net/">Act - A Conference Toolkit</a>.
 Its source code is in <a href="https://github.com/book/Act">the Act repository</a>.
 
+The <a href="http://cpxxxan.barnyard.co.uk/">cpXXXan</a> project has its source code in <a href="https://github.com/DrHyde/cpXXXan">GitHub</a>
+
+
+<a href="https://duck.co/">DuckDuckGo community platform</a> is based on <a href="/catalyst">Catalyst. Its source
+code is available <a href="https://github.com/duckduckgo/community-platform">here</a>.
+
+<a href="http://www.perl.org/">www.perl.org</a> and some of the related sites use the <a href="http://combust.develooper.com/">Combust</a>
+framework. Their source code is in <a href="https://github.com/perlorg/perlweb">this repository</a>.
+
 <h2>Site with no recent changes in the source code</h2>
 
 <a href="http://advent.perldancer.org/">Perl Dancer Advent Calendar</a> is itslef based on <a href="/dancer">Dancer</a>.
@@ -103,6 +112,23 @@ the <a href="https://github.com/throughnothing/Dancebin">Dancebin</a> repository
 <a href="http://plackperl.org/">PSGI/Plack</a> is the common building block of every <a href="http://perlmaven.com/videos/modern-web-with-perl">modern web application</a> written in Perl.
 Its web site is a single static page, but if you insist, its source code is
 in the <a href="https://github.com/miyagawa/plackperl.org">plackperl.org</a> repository.
+
+
+<h2>Second tier</h2>
+
+These are sites where the framework is in Perl and it is Open Source, but where the site-specific code is not. Most likely you won't be able to contribute to these sites.
+
+<a href="http://thegamecrafter.com/">The GameCrafter</a> runs on <a href="https://github.com/plainblack/Wing">Wing</a>. 
+
+<a href="http://www.krang.net/using-krang.html>These sites</a> are running on <a href="http://www.krang.net/">Krang</a>. Krang itslef is
+Open Source, but probably you won't be able to look at the source code of those web sites.
+
+<a href="http://everything2.com/">Everything2</a>, source code in <a href="https://github.com/everything2/everything2">this repository</a>.
+
+
+<a href="http://www.perlmonks.org/">PerlMonks</a> is based on a version of Everything. According to  <a href="http://www.perlmonks.org/?node_id=955375">this node</a>
+a different version of Everything (Everything2) is now open source, but there are some PerlMonks specific things that are not open source.
+
 
 <h2>Sources</h2>
 
