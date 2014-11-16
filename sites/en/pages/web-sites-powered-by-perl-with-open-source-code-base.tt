@@ -114,6 +114,11 @@ Its web site is a single static page, but if you insist, its source code is
 in the <a href="https://github.com/miyagawa/plackperl.org">plackperl.org</a> repository.
 
 
+<a href="http://blogs.perl.org/">blogs.perl.org</a>, the shared blog site of the Perl community runs on the 
+Professional Edition of <a href="http://movabletype.com/">Movable type</a> which is not open source.
+Nevertheless the templates of the site are available <a href="https://github.com/blogs-perl-org/blogs.perl.org">here</a>.
+
+
 <h2>Second tier</h2>
 
 These are sites where the framework is in Perl and it is Open Source, but where the site-specific code is not. Most likely you won't be able to contribute to these sites.
