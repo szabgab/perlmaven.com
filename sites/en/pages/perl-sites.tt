@@ -65,6 +65,8 @@ are useful for keeping up with new Perl features, as well as reading deeply anal
 
 <h2>Specialized sites</h2>
 
+<a href="http://cpxxxan.barnyard.co.uk/">cpXXXan</a> snapshots of CPAN for specific versions of Perl.
+
 <a href="http://cpancover.com/">CPAN Cover</a> - test coverage report of a number of CPAN modules generatd by <a href="https://metacpan.org/pod/Devel::Cover">Devel::Cover</a>.
 
 <!--
