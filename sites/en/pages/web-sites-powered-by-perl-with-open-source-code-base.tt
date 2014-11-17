@@ -30,6 +30,10 @@ is in the <a href="https://github.com/RexOps/rexify-website/">rexify-website</a>
 <a href="http://ifcomp.org/">IFcomp</a>, The Interactive Fiction Competition. Its web site is based on <a href="/catalyst">Catalyst</a>. Its source
 code is in the <a href="https://github.com/jmacdotorg/ifcomp">ifcomp</a> repository.
 
+<a href="https://musicbrainz.org/">MusicBrainz</a> is an open music encyclopedia that collects music metadata and makes it available to the public.
+Its source code is available from <a href="https://github.com/metabrainz/musicbrainz-server">GitHub</a>.
+For more details about the development <a href="https://musicbrainz.org/doc/Development/Git">look here</a>.
+
 <a href="http://mojolicio.us/">Mojolicious</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/kraih/mojolicio.us">mojolicio.us</a>
 repository. There is a <a href="https://github.com/kraih/mojo/wiki/Projects-and-Companies-Using-Mojolicious">list of web sites</a> powerd by Mojolicious.
 
@@ -115,8 +119,10 @@ in the <a href="https://github.com/miyagawa/plackperl.org">plackperl.org</a> rep
 
 
 <a href="http://blogs.perl.org/">blogs.perl.org</a>, the shared blog site of the Perl community runs on the 
-Professional Edition of <a href="http://movabletype.com/">Movable type</a> which is not open source.
+Professional Edition of <a href="http://movabletype.com/">Movable Type</a> which is not open source.
 Nevertheless the templates of the site are available <a href="https://github.com/blogs-perl-org/blogs.perl.org">here</a>.
+There is also a version of Movable Type on <a href="https://github.com/movabletype/movabletype">GitHub</a>, but it is unclear to
+me what is the license of that, and what is the relation of that to the one used on blogs.perl.org.
 
 
 <h2>Second tier</h2>
