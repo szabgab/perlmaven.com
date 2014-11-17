@@ -1,6 +1,6 @@
 name: Andrew Solomon
 img: andrewsolomon.jpg
-url: https://www.geekuni.com/
+url: https://geekuni.com?ref=perlmaven
 twitter: geekuni
 gplus: +AndrewSolomonBrainDump
 linkedin: https://www.linkedin.com/in/asolomon
@@ -12,7 +12,7 @@ specialities: E-Learning, Web Services and Devops
 html: 
 <p>
 Andrew Solomon is a full time Perl developer (focussing on Devops) as well
-as Founder and Mentor at <a href="https://www.geekuni.com/">Geekuni</a>.
+as Founder and Mentor at <a href="https://geekuni.com?ref=perlmaven">Geekuni</a>.
 </p>
 <p>
 Geekuni is an institute which provides online software development
