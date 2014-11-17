@@ -128,6 +128,10 @@ There is also a version of Movable Type on <a href="https://github.com/movablety
 me what is the license of that, and what is the relation of that to the one used on blogs.perl.org.
 
 
+<a href="http://perlybook.org/">Perlybook</a> is based on <a href="http://mojolicio.us">Mojolicious</a>. Its source code is in the
+<a href="https://github.com/reneeb/cpan2ebook">cpan2ebook</a> repository.
+
+
 <h2>Second tier</h2>
 
 These are sites where the framework is in Perl and it is Open Source, but where the site-specific code is not. Most likely you won't be able to contribute to these sites.
