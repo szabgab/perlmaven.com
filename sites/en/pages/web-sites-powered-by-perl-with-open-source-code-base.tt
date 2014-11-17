@@ -46,6 +46,9 @@ repository. There is a <a href="https://github.com/kraih/mojo/wiki/Projects-and-
 <a href="http://soylentnews.org/">SoylentNews</a> is powered by a fork of Slashcode.
 The source code is available in <a href="https://github.com/SoylentNews/slashcode">this repository</a>
 
+<a href="http://www.dreamwidth.org/">Dreamwidth</a> is a commuity blogging service. The code originally forked from the LiveJournal code-base, but
+it was kept <a href="http://www.dreamwidth.org/site/opensource">Open Source</a>. The source code is available in GitHub.
+
 <h2>Less frequently maintained sites</h2>
 
 
