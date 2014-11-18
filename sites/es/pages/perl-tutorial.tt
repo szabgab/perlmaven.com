@@ -70,7 +70,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li><a href="/valores-booleanos-en-perl">Valores booleanos en Perl</a></li>
 <li>Operadores numericos y operadores de cadena</li>
 <li><a href="/undef-y-defined-en-perl">undef, el valor inicial y la función defined</a></li>
-<li><a href="http://perlmaven.com/quoted-interpolated-and-escaped-strings-in-perl">Strings en Perl: entrecomillado, interpolación y secuencias de escape (en)</a></li>
+<li><a href="/strings-entrecomillados-interpolados-y-escapados-en-perl">Strings en Perl: entrecomillado, interpolación y secuencias de escape</a></li>
 <li><a href="http://perlmaven.com/here-documents">Here documents (en)</a></li>
 <li><a href="http://perlmaven.com/scalar-variables">Variables escalares (en)</a></li>
 <li><a href="http://perlmaven.com/comparing-scalars-in-perl">Comparando escalares (en)</a></li>

@@ -15,7 +15,7 @@
 Entender como las cadenas de texto, o strings, funcionan en cualquier lenguaje de
 programación es importante, más aún en Perl porque son parte de la esencia del lenguaje.
 Especialmente si tienes en cuenta que uno de los retroacronimos de Perl es
-<b>Practical Extraction and Reporting Language</b> y para eso necesitas usar muchos strings.
+<b>Practical Extraction and Reporting Language</b> y para eso necesitas manejar muchos strings.
 
 =abstract end
 
@@ -63,7 +63,7 @@ como estas hoy?
 Fíjate que hay un <hl>\n</hl> justo después de la coma y otro al final del string.
 
 Para cadenas de texto sencillas como 'Foo' y "hoy" que non contienen los caracteres
-<hl>$</hl>, <hl>@</hl>, y <hl>\</hl> da igual como las entrecomillemos.
+<hl>$</hl>, <hl>@</hl>, o <hl>\</hl> da igual como las entrecomillemos.
 
 Las dos siguientes líneas devolverían el mismo resultado:
 
@@ -76,16 +76,11 @@ $name = "Foo";
 <h2>Direcciones de correo</h2>
 
 El símbolo <hl>@</hl> es interpolado cuando aparece dentro de comillas dobles, por
-lo que escribir una dirección de correo requiere un poco más de atención.
+lo que escribir una dirección de correo requiere un poco de atención.
 
 Con comillas simples <hl>@</hl> no es interpolado.
 
-Con dobles comillas el código generará un error:
-<a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol "@bar" requires explicit package name at ... line ... (en)</a>
-y un warning:
-<b>Possible unintended interpolation of @bar in string at ... line ...</b>
-
-Este warning proporciona una mejor pista sobre cual es el problema.
+Con comillas dobles, este código:
 
 <code lang="perl">
 use strict;
@@ -93,7 +88,13 @@ use warnings;
 my $broken_email  = "foo@bar.com";
 </code>
 
-Por otro lado, este código con el email encerrado en comillas simples funcionará.
+Generará un error: <a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol "@bar" requires explicit package name at ... line ... (en)</a>
+y un warning:
+<b>Possible unintended interpolation of @bar in string at ... line ...</b>
+
+El warning proporciona una buena pista sobre cual es el problema.
+
+Por otro lado, este código con el email entrecomillado con comillas simples funcionará.
 
 <code lang="perl">
 use strict;
@@ -112,7 +113,7 @@ my $good_email  = "$name\@bar.com";
 print $good_email; # foo@bar.com
 </code>
 
-Siempre puedes <b>escapar</b> los caracteres especiales, en este caso el símbolo de la arroba <hl>@</hl>, usando el llamado <b>carácter de escape</b>
+Siempre puedes <b>escapar</b> los caracteres especiales, en este caso el símbolo de la arroba <hl>@</hl>, usando el <b>carácter de escape</b>
 que es la contrabarra <hl>\</hl>.
 
 <h2>Incluyendo el símbolo del dolar $ dentro de comillas dobles</h2>
@@ -172,7 +173,7 @@ y trata de entender como funciona.
 
 <h2>Escapando las comillas dobles</h2>
 
-Hemos visto como puedes encerrar variables escalares dentro de comillas dobles y también como puedes escapar
+Hemos visto como puedes entrecomillar variables escalares dentro de comillas dobles y también como puedes escapar
 el símbolo del dolar <hl>$</hl>.
 
 También hemos visto como puedes usar el carácter de escape <hl>\</hl> y como lo puedes escapar.
@@ -180,7 +181,7 @@ También hemos visto como puedes usar el carácter de escape <hl>\</hl> y como l
 ¿Y si quieres mostrar una comilla doble dentro de una cadena delimitada por comillas dobles?
 
 
-Este código tiene un error sintactico:
+Este código tiene un error sintáctico:
 
 <code lang="perl">
 use strict;
@@ -208,12 +209,12 @@ Esto mostrará:
 El "nombre" es "foo"
 </code>
 
-Funciona pero es bastante difícil de leer.
+Funciona, pero es bastante difícil de leer.
 
 
 <h2>El operador qq</h2>
 
-Aquí es donde puedes usar el operador <hl>qq</hl>:
+En estos casos es donde el operador <hl>qq</hl> es útil:
 
 <code lang="perl">
 use strict;
@@ -229,7 +230,7 @@ Remplazamos las comillas dobles <hl>"</hl> que envolvían a la cadena por los pa
 Esto quiere decir que las comillas dobles ya no son un operador especial en esta cadena, por tanto no necesitamos
 escaparlas.
 Esto hace el código mucho más legible.
-Incluso lo llamaría elegante, si no temiese la ira de los programadores Python.
+Incluso diría elegante, si no temiese la ira de los programadores Python.
 
 Pero, ¿y si quieres incluir paréntesis en tu string?
 
@@ -253,7 +254,7 @@ my $name = 'foo';
 print qq(El )nombre( es "$name"\n);
 </code>
 
-Perl te dará un error de sintaxis porque "nombre" es un <a href="http://perlmaven.com/barewords-in-perl">bareword</a>.
+Perl te dará un error de sintaxis porque "nombre" es un <a href="http://perlmaven.com/barewords-in-perl">bareword (en)</a>.
 Perl no puede entenderlo todo.
 
 Podrías, por supuesto, escapar los paréntesis en la cadena <hl>\)</hl> y <hl>\(</hl>, pero estaríamos volviendo a tener código
