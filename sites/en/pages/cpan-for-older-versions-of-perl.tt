@@ -1,0 +1,29 @@
+=title CPAN for older versions of Perl
+=timestamp 2014-08-26T11:00:02
+=indexes cpxxxan, CPAN
+=status draft
+=author szabgab
+=archive 1
+=comments 1
+=social 1
+
+=abstract start
+
+
+When you install a module using any of the CPAN clients (eg. <a href="https://metacpan.org/pod/cpan">cpan</a>, <a href="https://metacpan.org/pod/cpanp">cpanp</a>, or
+<a href="https://metacpan.org/pod/cpanm">cpanm</a>) you will get the most recent release of the requested module.
+
+You can visit <a href="https://metacpan.org/">MetaCPAN</a>, locate an older version of the module on <a href="http://www.cpan.org/">CPAN</a>,
+or if it was already deleted from CPAN then on <a href="http://backpan.perl.org/">BackPan</a>, but finding out the appropriate version of
+a module and then the appropriate version of all of its dependencies is a major pain.
+
+=abstract end 
+
+The <a href="http://cpxxxan.barnyard.co.uk/">cpXXXan</a> project maintained by David Cantrell provides one of the solutions for this problem.
+David maintains snapshots of CPAN with modules that will work on specific versions of Perl.
+
+You can configure your cpan client to use one of these CPAN mirror sites and then you can use the recursive installation capabilities
+of the cpan client to install the necessary modules.
+
+
+ 

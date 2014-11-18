@@ -1,6 +1,6 @@
 =title Open and read from text files
 =timestamp 2013-01-06T10:45:56
-=indexes open, <$fh>, read, <, encoding, UTF-8, die, open or die
+=indexes open, <$fh>, read, <, encoding, UTF-8, die, open or die, STDIN
 =status show
 =books beginner_book
 =author szabgab
