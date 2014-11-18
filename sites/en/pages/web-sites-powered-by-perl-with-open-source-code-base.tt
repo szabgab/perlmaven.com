@@ -135,7 +135,7 @@ me what is the license of that, and what is the relation of that to the one used
 <a href="http://perlybook.org/">Perlybook</a> is based on <a href="http://mojolicio.us">Mojolicious</a>. Its source code is in the
 <a href="https://github.com/reneeb/cpan2ebook">cpan2ebook</a> repository.
 
-<a href="http://cpan.io/">CPAN.io</a> is a static web site generated (hourly) by running <a href="http://metacpan.org/pod/wallflower"> on a <a href="http://metacpan.org/pod/Web::Simple">Web::Simple</a> application.
+<a href="http://cpan.io/">CPAN.io</a> is a static web site generated (hourly) by running <a href="http://metacpan.org/pod/wallflower">wallflower</a> on a <a href="http://metacpan.org/pod/Web::Simple">Web::Simple</a> application.
 It computes several <a href="http://cpan.io/boards/once-a/">leaderboards</a> for some CPAN-based competitions, and also renders a Markdown-based <a href="http://cpan.io/pulse/">blog</a>.
 Source code is on <a href="http://github.com/book/CPANio/">GitHub</a>. 
 
