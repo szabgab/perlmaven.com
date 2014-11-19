@@ -1,4 +1,4 @@
-=title Does all of List::MoreUtils really short-circuit?
+=title Does the 'all' function of List::MoreUtils really short-circuit?
 =timestamp 2014-11-19T07:30:01
 =indexes List::MoreUtils, all
 =status show
