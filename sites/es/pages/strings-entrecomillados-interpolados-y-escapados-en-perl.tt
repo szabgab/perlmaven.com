@@ -308,7 +308,7 @@ El )nombre} es "foo"
 
 De forma similar a <hl>qq</hl> también existe el operador <hl>q</hl>.
 Este operador también te permite seleccionar los delimitadores de tu string,
-pero funciona como las comillas simples <hl>'</hl>: <b>NO</hl> interpola las variables.
+pero funciona como las comillas simples <hl>'</hl>: <b>NO</b> interpola las variables.
 
 <code lang="perl">
 use strict;
