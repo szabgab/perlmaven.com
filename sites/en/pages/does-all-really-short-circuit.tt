@@ -58,7 +58,7 @@ and the no-lines printed only the text. They returned false.
 Now let's add a print-statement (or rather a say-statement) to both solutions.
 We now have <hl>{ say; $_ }</hl> in each expression.
 That is, in each block we have two statement. The first is <hl>say</hl> without any parameter.
-It will default to print the content of <hl>$_</h>. The second statement is <hl>$_</hl> itself
+It will default to print the content of <hl>$_</hl>. The second statement is <hl>$_</hl> itself
 that needs to be examined by <hl>grep</hl> and <hl>any</hl>.
 
 This way, as <hl>grep</hl> and <hl>any</hl> iterate over the elements in the <hl>@yes</hl> and <hl>@not</hl> arrays,
