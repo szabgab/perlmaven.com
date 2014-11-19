@@ -1,5 +1,5 @@
 =title Strings en Perl: entrecomillado, interpolación y escape
-=timestamp 2014-11-12T15:45:03
+=timestamp 2014-11-18T15:45:03
 =indexes strings, ', ", \, escape character, interpolation, quote, embedded characters, q, qq
 =status show
 =original quoted-interpolated-and-escaped-strings-in-perl
