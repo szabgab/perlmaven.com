@@ -103,6 +103,8 @@ code is available <a href="https://github.com/duckduckgo/community-platform">her
 <a href="http://www.perl.org/">www.perl.org</a> and some of the related sites use the <a href="http://combust.develooper.com/">Combust</a>
 framework. Their source code is in <a href="https://github.com/perlorg/perlweb">this repository</a>.
 
+<a href="https://pause.perl.org/">PAUSE</a> The Perl Authors Upload Server, the thing that feeds CPAN, has its source code on <a href="https://github.com/andk/pause/">GitHub</a>.
+
 <h2>Sites with no recent changes in the source code</h2>
 
 <a href="http://advent.perldancer.org/">Perl Dancer Advent Calendar</a> is itslef based on <a href="/dancer">Dancer</a>.
