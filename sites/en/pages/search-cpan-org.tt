@@ -171,9 +171,10 @@ The already existing articles and screencasts are going to be listed here:
 <!--
   <li><a href="/pro/get-cpanstats-from-metacpan">Get CPANstats from MetaCPAN using cron</a></li>
   <li><a href="/pro/show-cpanstats-on-every-page">Show CPANstats on every page</a></li>
-  <li><a href="/pro/add-404-not-found-page.tt ">Add "404 Not Found" page and another static page</a></li>
+  <li><a href="/pro/add-another-static-page">Add another static page</a></li>
+  <li><a href="/pro/add-404-not-found-page">Add "404 Not Found" page</a></li>
+  <li><a href="/pro/protecting-from-crash">Protecting from crash</a></li>
   <li><a href="/pro/list-authors-where-the-pauseid-starts-with-a-given-letter">List authors where the PAUSEID starts with a given letter</a></li>
-  <li><a href="/pro/"></a></li>
   <li><a href="/pro/"></a></li>
   <li><a href="/pro/"></a></li>
 -->
