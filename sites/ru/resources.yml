@@ -4,7 +4,7 @@ menu:
     menu:
       - title: Perl Tutorial
         url: /perl-tutorial
-        title: Нужна помощь?
+      - title: Нужна помощь?
         url: /pomosch
   - dir: right
     menu:
