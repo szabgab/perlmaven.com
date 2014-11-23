@@ -66,7 +66,7 @@ $ tree
         └── Date.pm
 </code>
 
-First the basic boiler-plate of <a href="http://perlmaven.com/strict">use strict</a>, and <hl>use warnings</hl> and
+First the basic boiler-plate of <a href="/strict">use strict</a>, and <hl>use warnings</hl> and
 the declaration of the minimal Perl version. (The only reason this code requires 5.10 is so that I can use the
 <hl>say</hl> function. Otherwise 5.6 could be used as well.)
 

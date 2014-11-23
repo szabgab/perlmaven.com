@@ -85,7 +85,7 @@ The variable <hl>$file_counter</hl> is used to number the output files.
 In a more generic solution, we'd probably get the name of the input file, the size, and the format of the output files as command line parameters,
 but in this example we can use hard-coded values.
 
-If you are not yet familiar with Text::CSV, there is another article that shows <a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">how to read a CSV file</a> 
+If you are not yet familiar with Text::CSV, there is another article that shows <a href="/how-to-read-a-csv-file-using-perl">how to read a CSV file</a> 
 with some more explanation. In a nutshell <hl>$row</hl> always containg a reference to an ARRAY and each element in that array is a field from the current line in the
 CSV file.
 

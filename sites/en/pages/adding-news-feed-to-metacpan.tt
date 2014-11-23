@@ -172,7 +172,7 @@ returns a hash with configuration parameters. The <hl>home</hl> field provides f
 root directory of the application. The 'News' file is right there.
 
 We use the <hl>path</hl> function provided by <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a>,
-and then we <a href="http://perlmaven.com/slurp">slurp</a> in the content.
+and then we <a href="/slurp">slurp</a> in the content.
 
 At first I passed the content as it is to the <hl>stash</hl> method, but later it seemed more
 convenient to add a <hl>Title:</hl> pre-tag to the title of eash news-item that will make

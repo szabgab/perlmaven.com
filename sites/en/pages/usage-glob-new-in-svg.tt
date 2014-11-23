@@ -52,7 +52,7 @@ a very similar problem happened to me too a while ago in Python.
 
 
 My conclusion from this error is to remind people
-to <a href="http://perlmaven.com/open-files-in-the-old-way">always use lexical variables as file handles</a>!
+to <a href="/open-files-in-the-old-way">always use lexical variables as file handles</a>!
 
 
 The working solution looks like this:

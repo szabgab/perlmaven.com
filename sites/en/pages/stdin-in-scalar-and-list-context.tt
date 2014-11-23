@@ -23,7 +23,7 @@ This time we'll look at reading from STDIN using <hl><STDIN></hl> in scalar and 
 <h2>STDIN in scalar context</h2>
 
 This is what we have have been doing right from the 
-<a href="http://perlmaven.com/installing-perl-and-getting-started">beginning</a> of the <a href="/perl-tutorial">Perl Tutorial</a>.
+<a href="/installing-perl-and-getting-started">beginning</a> of the <a href="/perl-tutorial">Perl Tutorial</a>.
 
 <code lang="perl">
 use strict;

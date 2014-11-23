@@ -10,7 +10,7 @@
 =abstract start
 
 Before attempting to sort a hash of hashes by values, one should make sure to be familiar with the
-question: <a href="http://perlmaven.com/how-to-sort-a-hash-in-perl">How to sort a hash in Perl?</a>
+question: <a href="/how-to-sort-a-hash-in-perl">How to sort a hash in Perl?</a>
 
 =abstract end
 

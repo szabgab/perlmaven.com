@@ -10,7 +10,7 @@
 =abstract start
 
 The other day I wrote about the possibility to
-<a href="http://perlmaven.com/listing-all-the-modules-in-a-namespace">list modules in a given namespace</a>
+<a href="/listing-all-the-modules-in-a-namespace">list modules in a given namespace</a>
 using the <hl>module:</hl> prefix.
 
 As it turns out there are more such prefixes that can be used.

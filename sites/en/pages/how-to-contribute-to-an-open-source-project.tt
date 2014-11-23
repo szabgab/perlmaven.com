@@ -78,7 +78,7 @@ Instead of sending an e-mail, you could also already send some improvement. But 
 
 MetaCPAN links to the bug-tracking system of each module. You can find reported bugs there
 and you can try to fix a bug. Even if you cannot fix the bug, you could see if you can write a
-test case that will expose the bug. The <a href="http://perlmaven.com/testing">testing</a> series will introduce you
+test case that will expose the bug. The <a href="/testing">testing</a> series will introduce you
 to the testing system of Perl.
 
 Alternatively, using <a href="https://metacpan.org/pod/Devel::Cover">Devel::Cover</a>, you can create a report

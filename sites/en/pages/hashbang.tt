@@ -10,7 +10,7 @@
 
 =abstract start
 
-In the very <a href="http://perlmaven.com/installing-perl-and-getting-started">first scripts</a> we wrote we
+In the very <a href="/installing-perl-and-getting-started">first scripts</a> we wrote we
 did not have this construct, but this can be useful for Perl scripts on Unix-like systems such as Linux and Mac OSX.
 
 Not really required, you can easily skip this article and come back later when you would like to understand what does

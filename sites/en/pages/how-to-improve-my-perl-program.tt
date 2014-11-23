@@ -84,7 +84,7 @@ is that you don't have to type it in.
 
 Major exceptions are
 <a href="/transforming-a-perl-array-using-map">map</a>,
-<a href="http://perlmaven.com/filtering-values-with-perl-grep">grep</a>
+<a href="/filtering-values-with-perl-grep">grep</a>
 and similar functions,
 where unfortunately you can't avoid it.
 
@@ -130,7 +130,7 @@ but even if for some reason you cannot use Path::Tiny, you can certainly
 use the one with lexical variable (my $fh) and with 3 parameters.
 
 In any case, please
-<a href="http://perlmaven.com/open-files-in-the-old-way">don't open files in the old way</a>.
+<a href="/open-files-in-the-old-way">don't open files in the old way</a>.
 
 <h2>Direct object notation</h2>
 

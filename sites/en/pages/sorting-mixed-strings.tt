@@ -134,7 +134,7 @@ my @y = sort { (($a =~ /(\d+)/)[0] || 0) <=> (($b =~ /(\d+)/)[0] || 0) } @x;
 <h2>Speed</h2>
 
 He also poined out that the Regex engine is "slow" and thus we can improve the
-speed of the expression by using the <a href="http://perlmaven.com/how-to-sort-faster-in-perl">Schwartzian transform</a>.
+speed of the expression by using the <a href="/how-to-sort-faster-in-perl">Schwartzian transform</a>.
 He pointed out that if the array has at least 5 elements, using the Schwartzian transform is faster. If it has 20 elements is twice as fast as the simple sort.
 
 The soultion he gave looks like this:

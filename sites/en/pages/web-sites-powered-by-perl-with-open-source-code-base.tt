@@ -124,7 +124,7 @@ the <a href="https://github.com/datamuc/Pastedance">Pastedance</a> repository.
 <a href="http://danceb.in/">Dancebin</a>, another pastebin service written in <a href="/dancer">Dancer</a>. Source code in
 the <a href="https://github.com/throughnothing/Dancebin">Dancebin</a> repository.
 
-<a href="http://plackperl.org/">PSGI/Plack</a> is the common building block of every <a href="http://perlmaven.com/videos/modern-web-with-perl">modern web application</a> written in Perl.
+<a href="http://plackperl.org/">PSGI/Plack</a> is the common building block of every <a href="/videos/modern-web-with-perl">modern web application</a> written in Perl.
 Its web site is a single static page, but if you insist, its source code is
 in the <a href="https://github.com/miyagawa/plackperl.org">plackperl.org</a> repository.
 

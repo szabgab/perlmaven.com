@@ -114,14 +114,14 @@ and increment the counter of the current string. At first the
 hash is going to be empty. When we first encounter the string 'hello'
 <hl>$count{$str}</hl> will not yet exists. Luckily if we access a hash
 element where the key does not exists yet, Perl will return 
-<a href="http://perlmaven.com/undef-and-defined-in-perl">undef</a>.
+<a href="/undef-and-defined-in-perl">undef</a>.
 
 Then we are trying to increment that undef using <hl>++</hl>.
 In numerical operations, such as <hl>++</hl> and undef will behave as if
 it was a <hl>0</hl>. Though in most cases the operation on 
-<a href="http://perlmaven.com/undef-and-defined-in-perl">undef</a> will
+<a href="/undef-and-defined-in-perl">undef</a> will
 generate a 
-<a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a>
+<a href="/use-of-uninitialized-value">Use of uninitialized value</a>
 warning, but <hl>++</hl>, the auto-increment operator is an exception.
 Perl will silently increment the undef to be 1, it will create the necessary
 key in the hash and assign the new value (which is <hl>1</hl>). This is a simple
