@@ -1,0 +1,19 @@
+recent_articles: Recent Articles
+menu:
+  - dir: left
+    menu:
+      - title: Perl Tutorial
+        url: /perl-tutorial
+      - title: Ayuda
+        url: /ayuda
+  - dir: right
+    menu:
+      - title: Type keyword:
+        url: /keywords
+      - searchbox: 1
+      - title: Archive
+        url: /archive
+      - title: About
+        url: /about
+      - atom: 1
+

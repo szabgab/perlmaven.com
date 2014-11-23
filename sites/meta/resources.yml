@@ -1,0 +1,10 @@
+recent_articles: Recent Articles
+menu:
+  - dir: right
+    menu:
+      - title: Archive
+        url: /archive
+      - title: About
+        url: /about
+      - atom: 1
+

@@ -1,0 +1,59 @@
+recent_articles: Recent Articles
+menu:
+  - dir: left
+    menu:
+      - title: Perl Tutorial
+        url: /perl-tutorial
+      - title: Pro
+        url: /pro
+      - title: Articles
+        dropdown: 
+          - title: Test Automation
+            url: /testing
+          - subtitle: Modern Web
+          - title: The search.cpan.org cloning project
+            url: /search-cpan-org
+          - title: Mojolicious
+            url: /mojolicious
+          - title: Dancer
+            url: /dancer
+          - title: Catalyst
+            url: /catalyst
+          - title: PSGI/Plack
+            url: /psgi
+          - title: CGI
+            url: /cgi
+          - subtitle: Object Oriented Perl
+          - title: Moo
+            url: /moo
+          - title: Moose
+            url: /moose
+          - subtitle: Other
+          - title: MetaCPAN
+            url: /metacpan
+          - title: 'Net::Server'
+            url: /net-server
+          - title: MongoDB
+            url: /mongodb
+          - title: AnyEvent, asynchronous programming
+            url: /anyevent
+          - title: Interviews with Perl developers
+            url: /tv
+          - divider: 1
+          - title: Pro
+            url: /pro
+          - title: Products
+            url: /products
+      - login: 1
+        title: Login
+  - dir: right
+    menu:
+      - title: Type keyword:
+        url: /keywords
+      - searchbox: 1
+      - title: Archive
+        url: /archive
+      - title: About
+        url: /about
+      - atom: 1
+
