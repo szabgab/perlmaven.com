@@ -105,6 +105,12 @@ framework. Their source code is in <a href="https://github.com/perlorg/perlweb">
 
 <a href="https://pause.perl.org/">PAUSE</a> The Perl Authors Upload Server, the thing that feeds CPAN, has its source code on <a href="https://github.com/andk/pause/">GitHub</a>.
 
+<a href="https://lut.im/">Let's Upload That Image</a> is a simple image hoster written in <a href="/mojolicious">Mojolicious</a>. Its source code is
+in <a href="https://github.com/ldidry/lutim">GitHub</a>.
+
+<a href="https://lstu.fr/">Let's Shorten That Url</a> is a URL shortener written in <a href="/mojolicious">Mojolicious</a>. Its source code
+is in <a href="https://github.com/ldidry/lstu">GitHub</a>
+
 <h2>Sites with no recent changes in the source code</h2>
 
 <a href="http://advent.perldancer.org/">Perl Dancer Advent Calendar</a> is itslef based on <a href="/dancer">Dancer</a>.
