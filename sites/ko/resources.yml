@@ -4,6 +4,8 @@ menu:
     menu:
       - title: Perl Tutorial
         url: /perl-tutorial
+      - login: 1
+        title: Login
   - dir: right
     menu:
       - title: Type keyword:
