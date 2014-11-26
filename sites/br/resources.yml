@@ -11,7 +11,7 @@ menu:
       - searchbox: 1
       - title: Arquivo
         url: /archive
-      - title: SObre
+      - title: Sobre
         url: /about
       - atom: 1
 
