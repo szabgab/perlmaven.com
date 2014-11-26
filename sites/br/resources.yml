@@ -1,17 +1,18 @@
 recent_articles: Artigos Recentes
 menu:
-  - dir: esquerda
+  - dir: left
     menu:
       - title: Tutorial Perl
-        url: /tutorial-perl
-  - dir: direita
+        url: /perl-tutorial
+  - dir: right
     menu:
-      - title: Digite palavras-chave:
-        url: /palavras-chave
+      - title: Digite uma palavra-chave:
+        url: /keywords
       - searchbox: 1
       - title: Arquivo
-        url: /arquivo
-      - title: Sobre
-        url: /sobre
+        url: /archive
+      - title: SObre
+        url: /about
       - atom: 1
+
 
