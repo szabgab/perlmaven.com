@@ -1,8 +1,8 @@
 =title Length of an array in Perl
-=timestamp 2013-02-20T14:45:56
+=timestamp 2014-11-26T08:20:56
 =description In Perl the length function is only used for strings. In order to get the length of an array use the scalar function.
 =indexes length, scalar
-=status done
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
@@ -113,11 +113,4 @@ So the <hl>scalar</hl> function returns the length of an array because an array 
 <h2>Conclusion</h2>
 
 <b>Always use strict and use warnings.</b>
-
-
-
-
-
-
-
 
