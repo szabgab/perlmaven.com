@@ -1,4 +1,4 @@
-=title Memory usasge and load time of Moose, Moo, and Class::Accessor
+=title Memory usage and load time of Moose, Moo, and Class::Accessor
 =timestamp 2014-11-28T11:20:01
 =indexes Moo, Moose, Memory::Usage, Class::Accessor
 =status show
@@ -19,7 +19,7 @@ two main object systems of Perl, and Class::Accessor that used to be a big hit b
 
 =abstract end
 
-The comparision won't be very scientific and will only check the loading of the
+The comparison won't be very scientific and will only check the loading of the
 main modules of each system.
 
 <code lang="perl">
@@ -45,7 +45,7 @@ works. The only difference is that in this case, instead of some code, we load a
 between the two calls of <hl>record</hl>. We do that using the <hl>require</hl> statement
 instead of the <hl>use</hl> statement as the former loads the module only at run-time.
 
-We save the script as memory.pl and then run it as <hl>time memory.pl</hli>
+We save the script as memory.pl and then run it as <hl>time memory.pl</hl>
 
 <h2>Moose</h2>
 
