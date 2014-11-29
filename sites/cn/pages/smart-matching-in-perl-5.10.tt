@@ -7,7 +7,6 @@
 =translator swuecho
 =archive 1
 =comments_disqus_enable 1
-=social 1
 
 =abstract start
 Perl 5.10 于 Perl 20 周年发布（2007年 12月 18 日）。该版本增添了不少新特性。

@@ -10,7 +10,7 @@
 =translator oval
 =archive 0
 =comments_disqus_enable 0
-=social 0
+=show_social 0
 
 Dans un avenir proche, le livre <b>Recettes de Perl Maven</b> aura des centaines d'exemples expliquant comment réaliser diverses tâches.
 

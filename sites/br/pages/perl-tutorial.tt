@@ -8,7 +8,6 @@
 =translator leprevost
 =archive 0
 =comments_disqus_enable 0
-=social 1
 
 O tutorial Perl Maven irá lhe ensinar o básico sobre a programação em Perl.
 Você será capaz de escrever scripts simples, analisar arquivos de logs e escrever arquivos do tipo CSV.

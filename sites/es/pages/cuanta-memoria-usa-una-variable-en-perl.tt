@@ -7,7 +7,6 @@
 =translator danimera
 =archive 1
 =comments_disqus_enable 1
-=social 1
 
 =abstract start
 Hay casos en que sería muy importante saber cuánto usa cada variable en Perl.

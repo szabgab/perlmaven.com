@@ -8,7 +8,6 @@
 =translator spidamoo
 =archive 1
 =comments_disqus_enable 1
-=social 1
 
 =abstract start
 Пока что все скрипты, приводимые в нашем <a href="/perl-tutorial">Учебнике Perl</a> заканчивались,

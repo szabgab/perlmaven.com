@@ -11,7 +11,7 @@
 =translator kbeyazli
 =archive 0
 =comments_disqus_enable 0
-=social 0
+=show_social 0
 
 
 The Beginner Perl Maven e-book Perl öğrenmeyi sizin için daha kolay hale getirecektir.

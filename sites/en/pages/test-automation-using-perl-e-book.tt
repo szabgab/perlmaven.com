@@ -9,7 +9,7 @@
 =author 0
 =archive 0
 =comments_disqus_enable 0
-=social 0
+=show_social 0
 
 Are you a Perl developer who would like to write unit tests for your code?
 

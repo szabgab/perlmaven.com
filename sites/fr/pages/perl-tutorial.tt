@@ -11,7 +11,6 @@
 =translator oval
 =archive 0
 =comments_disqus_enable 0
-=social 1
 
 <div class="main-content">
 Remarque : La <a href="http://perlmaven.com">version originale de ce tutoriel Perl</a> a été écrite en anglais par <a href="/about#auteur">Gabor Szabo</a> qui a fait appel à des bénévoles pour traduire <a href="/about#traduction">ce tutoriel Perl dans d'autres langues</a>. Cette traduction - dans votre cas, en français - devrait vous permettre de vous concentrer sur l'apprentissage du langage Perl, en faisant abstraction de la barrière de la langue, et ainsi de reporter l'apprentissage de la langue anglaise à plus tard, mais pas ad vinam aeternam. Tôt ou tard, vous devrez, comme tout programmeur Perl - et en fait, comme tout programmeur de n'importe quel langage, apprendre au moins les rudiments de la langue anglaise afin de profiter de toute la documentation originale rédigée en anglais sur différents supports : livres, forums, bulletins en ligne d'informations, blogues, etc. Tout hyperlien qui est contenu dans un article écrit dans une langue et qui référence un autre article non encore traduit dans cette langue est redirigé vers la version anglaise de cet autre article.

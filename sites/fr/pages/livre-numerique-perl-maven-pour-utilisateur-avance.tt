@@ -11,7 +11,7 @@
 =translator oval
 =archive 0
 =comments_disqus_enable 0
-=social 0
+=show_social 0
 
 <div class="btn"><a href="/buy?product=advanced_perl_maven_ebook">Achetez-le pour 32 USD (EN)</a></div>
 

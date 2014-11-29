@@ -9,7 +9,7 @@
 =translator oval
 =archive 0
 =comments_disqus_enable 0
-=social 0
+=show_social 0
 
 <p>
 Il y a des gens qui utilisent Perl pour des tâches d'<b>administration du système</b> ou de la <b>gestion de configuration</b>.<br />

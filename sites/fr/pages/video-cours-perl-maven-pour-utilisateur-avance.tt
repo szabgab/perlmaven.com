@@ -11,7 +11,7 @@
 =translator oval
 =archive 0
 =comments_disqus_enable 0
-=social 0
+=show_social 0
 
 La <b>formation avancée Perl</b> vous montrera comment créer des modules et des classes, et, en général, comment écrire et maintenir du code Perl avancé.
 
