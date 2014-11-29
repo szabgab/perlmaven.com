@@ -1,4 +1,6 @@
 recent_articles: Recent Articles
+written_by: Автор
+translated_by: Переводчик
 menu:
   - dir: left
     menu:
