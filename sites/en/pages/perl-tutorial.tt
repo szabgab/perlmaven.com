@@ -6,6 +6,7 @@
 =archive 0
 =comments_disqus_enable 0
 =social 1
+=show_related 0
 
 The Perl Maven tutorial will teach you the basics of the Perl programming language.
 You'll be able to write simple scripts, analyze log files and read and write CSV files.
