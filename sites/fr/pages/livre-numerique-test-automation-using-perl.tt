@@ -10,7 +10,7 @@
 =author 0
 =translator oval
 =archive 0
-=comments 0
+=comments_disqus_enable 0
 =social 0
 
 Êtes-vous un développeur Perl qui aimerait écrire des tests unitaires pour votre code ?

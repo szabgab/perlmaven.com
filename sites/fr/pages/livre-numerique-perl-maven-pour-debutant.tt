@@ -10,7 +10,7 @@
 =author 0
 =translator oval
 =archive 0
-=comments 0
+=comments_disqus_enable 0
 =social 0
 
 Le livre numérique Perl Maven pour débutant rendra plus facile votre apprentissage de Perl. Il fournit les premiers pas sur le chemin pour devenir un "Perl Maven».

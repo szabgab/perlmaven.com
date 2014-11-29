@@ -8,7 +8,7 @@
 =index 0
 =archive 0
 =feed 0
-=comments 0
+=comments_disqus_enable 0
 =social 0
 
 <h2> Bonvenon estonteco Perl Maven! </h2>

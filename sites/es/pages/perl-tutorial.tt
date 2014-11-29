@@ -6,7 +6,7 @@
 =author szabgab
 =translator davidegx
 =archive 0
-=comments 0
+=comments_disqus_enable 0
 =social 1
 
 El tutorial Perl Maven te enseñará los principios básicos del lenguaje de programación Perl.

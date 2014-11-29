@@ -8,7 +8,7 @@
 =author 0
 =translator 0
 =archive 0
-=comments 0
+=comments_disqus_enable 0
 =social 1
 
 Учебник Perl Maven научит вас основам программирования на Perl. Вы сможете писать простые скрипты,

@@ -1,6 +1,6 @@
 =title Comparing scalars in Perl =timestamp 2013-05-01T12:45:56
 =indexes eq, ne, lt, gt, le, ge, ==, !=, <, >, <=, >=
-=status show =books beginner_book =author szabgab =archive 1 =comments 1 =social 1
+=status show =books beginner_book =author szabgab =archive 1 =comments_disqus_enable 1 =social 1
 
 =abstract start
 
