@@ -3,7 +3,7 @@
 =description Productos de Perl Maven: e-books, cursos de video, clases de entrenamiento
 =tags entrenamiento, curso, e-book, videos
 =status show
-=showright 0
+=show_right 0
 =show_newsletter_form 0
 =published 0
 =author 0

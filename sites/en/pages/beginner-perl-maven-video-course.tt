@@ -3,7 +3,7 @@
 =description Beginner level, online video training course for people who would like to learn Perl.
 =tags video
 =status show
-=showright 0
+=show_right 0
 =show_newsletter_form 0
 =published 0
 =author 0
