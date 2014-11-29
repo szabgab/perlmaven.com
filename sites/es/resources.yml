@@ -1,6 +1,6 @@
-recent_articles: Recent Articles
-written_by: Escrito por
-translated_by: Traducido por
+text:
+  written_by: Escrito por
+  translated_by: Traducido por
 menu:
   - dir: left
     menu:

@@ -1,6 +1,7 @@
-recent_articles: Artigos Recentes
-writteb_by: Escrito por
-translated_by: Traduzido por
+text:
+  recent_articles: Artigos Recentes
+  writteb_by: Escrito por
+  translated_by: Traduzido por
 menu:
   - dir: left
     menu:
