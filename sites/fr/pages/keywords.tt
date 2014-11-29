@@ -2,7 +2,7 @@
 =timestamp 2013-04-15T00:00:23
 =status show
 =showright 1
-=newsletter 0
+=show_newsletter_form 0
 =published 0
 =author 0
 =translator oval

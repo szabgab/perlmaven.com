@@ -2,7 +2,7 @@
 =timestamp 2012-05-02T00:01:24
 =status show
 =showright 1
-=newsletter 0
+=show_newsletter_form 0
 =published 0
 =author 0
 =archive 0

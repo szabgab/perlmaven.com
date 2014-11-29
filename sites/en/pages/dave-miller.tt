@@ -5,7 +5,7 @@
 =mp3 /media/audio/dave-miller.mp3, 37286496, 38:31 
 =status show
 =showright 1
-=newsletter 0
+=show_newsletter_form 0
 =published 0
 =author 0
 =archive 1
