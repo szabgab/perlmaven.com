@@ -3,7 +3,6 @@
 =indexes cwd, tempdir, catfile, catdir, dirname, FindBin, $Bin, File::Spec, File::Basename, File::Temp, Cwd
 =status show
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 

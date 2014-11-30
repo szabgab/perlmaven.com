@@ -3,7 +3,6 @@
 =indexes hash, keys, values, sort, cmp, <=>, $a, $b
 =status show
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 =abstract start

@@ -3,7 +3,6 @@
 =indexes open, UTF-8, \p{Uppercase}, uc 
 =status show
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 =abstract start

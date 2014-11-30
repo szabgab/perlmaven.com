@@ -3,7 +3,6 @@
 =indexes Plack::Middleware, Perl::Critic::Policy, Dancer::Plugin, Dancer2::Plugin, Catalyst::Plugin, 
 =status show
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 =abstract start

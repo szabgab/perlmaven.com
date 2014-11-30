@@ -3,7 +3,6 @@
 =indexes ref, SCALAR, ARRAY, HASH, CODE, REF, GLOB, LVALUE, FORMAT, IO, VSTRING, Regexp
 =status show
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 =abstract start

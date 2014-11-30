@@ -3,7 +3,6 @@
 =indexes Text::CSV, Text::CSV_XS, CSV
 =status show
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 =abstract start

@@ -3,7 +3,6 @@
 =indexes license, Perl, Perl 5, CPAN, META, ExtUtils::MakeMaker, Module::Build, Module::Install, Dist::Zilla, CPAN::Meta::Spec
 =status show
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 =abstract start

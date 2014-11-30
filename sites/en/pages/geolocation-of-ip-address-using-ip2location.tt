@@ -3,7 +3,6 @@
 =indexes Geo::IP2Location
 =status draft
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 =abstract start

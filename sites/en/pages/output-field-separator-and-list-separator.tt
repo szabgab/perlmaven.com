@@ -3,7 +3,6 @@
 =indexes $LIST_SEPARATOR, $", $OUTPUT_FIELD_SEPARATOR, $OFS, $,
 =status show
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 =abstract start

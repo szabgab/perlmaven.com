@@ -4,7 +4,6 @@
 =indexes grep, filter, any, List::MoreUtils, <>, glob
 =status show
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 =abstract start

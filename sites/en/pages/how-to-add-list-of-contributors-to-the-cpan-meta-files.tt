@@ -3,7 +3,6 @@
 =indexes META, x_contributors, contributors, ExtUtils::MakeMaker, Module::Build, Module::Install, Dist::Zilla
 =status show
 =author szabgab
-=archive 1
 =comments_disqus_enable 1
 
 =abstract start
