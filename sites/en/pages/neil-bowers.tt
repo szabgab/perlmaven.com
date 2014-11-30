@@ -5,7 +5,7 @@
 =mp3 /media/audio/neil-bowers.mp3, 40100160, 41:29
 =status show
 =show_newsletter_form 0
-=published 0
+=show_date 0
 =author 0
 =comments_disqus_enable 1
 

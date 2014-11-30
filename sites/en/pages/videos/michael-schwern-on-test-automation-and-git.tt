@@ -5,7 +5,7 @@
 =mp3 /media/audio/michael-schwern.mp3, 23810208, 24:36
 =status show
 =show_newsletter_form 0
-=published 0
+=show_date 0
 =author 0
 =comments_disqus_enable 1
 

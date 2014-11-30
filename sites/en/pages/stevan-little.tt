@@ -4,7 +4,7 @@
 =mp3 /media/audio/stevan-little.mp3, 23768832, 24:32
 =status show
 =show_newsletter_form 0
-=published 0
+=show_date 0
 =author 0
 =comments_disqus_enable 1
 
