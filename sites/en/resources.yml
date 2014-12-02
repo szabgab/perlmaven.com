@@ -7,7 +7,9 @@ menu:
         url: /pro
       - title: Articles
         dropdown: 
-          - title: Test Automation
+          - title: Beginner Perl Maven video course
+            url: /beginner-perl-maven-video-course
+          - title: Test Automation video course
             url: /testing
           - subtitle: Modern Web
           - title: The search.cpan.org cloning project
