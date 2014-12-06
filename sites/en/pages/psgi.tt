@@ -14,7 +14,7 @@ The beginning of a series of articles about <a href="http://plackperl.org/">PSGI
 
 <h2>Free</h2>
 <ul>
-  <li><a href="/videos/modern-web-with-perl">Modern Web with Perl</a>, a quick overview (screencast)</li>
+  <li><a href="/modern-web-with-perl">Modern Web with Perl</a>, a quick overview (screencast)</li>
   <li><a href="/getting-started-with-psgi">Getting Started with PSGI/Plack</a></li>
   <li><a href="/how-to-build-a-dynamic-web-application-using-psgi">How to build a dynamic web aplication using PSGI</a></li>
   <li><a href="/perl-cgi-mod-perl-psgi">Perl CGI, mod_perl, and PSGI</a></li>

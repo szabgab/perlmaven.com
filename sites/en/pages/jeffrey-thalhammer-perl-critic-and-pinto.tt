@@ -241,7 +241,7 @@ Show notes:
     Jeffrey: I'll have to work on coming up with a better word for it. But you know you mentioned
     that Perl::Critic has enabled you to make some money from your clients and that is great.
     Think of the tens and thousands of developers and organizations that have all benefited
-    from <a href="/videos/michael-schwern-on-test-automation-and-git">Michael Schwern's</a>
+    from <a href="/michael-schwern-on-test-automation-and-git">Michael Schwern's</a>
     <a href="http://metacpan.org/module/Test::More">Test::More</a>, every time that they
     run that and a test passes or
     actually when a test fails, then you know, they have profited from that somehow,

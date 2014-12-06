@@ -319,7 +319,7 @@ While it says 0.0.0.0 as the IP address, you can actually use your own IP addres
 browse to http://1.2.3.4:3000 and you will see the default page of Dancer.
 
 You can go on and further improve the application by following the
-<a href="/videos/getting-started-with-perl-dancer">Getting started with Perl Dancer</a> screencast,
+<a href="/getting-started-with-perl-dancer">Getting started with Perl Dancer</a> screencast,
 but for now we'll focus on configuring the server.
 
 So let's stop the development server by pressing <hl>Ctrl-C</hl> on the console.

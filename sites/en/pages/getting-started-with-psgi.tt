@@ -19,7 +19,7 @@ a simple web application.
 <h2>Higher level abstraction</h2>
 
 Before looking at actual PSGI code, let's emphasize.
-If you would like to build a <a href="/videos/modern-web-with-perl">modern web application in Perl</a>,
+If you would like to build a <a href="/modern-web-with-perl">modern web application in Perl</a>,
 you'd probably start with one of the web frameworks that provide a higher level of abstraction than PSGI.
 Frameworks such as <a href="/dancer">Dancer</a>, <a href="/mojolicious">Mojolicious</a>, or <a href="/catalyst">Catalyst</a>.
 In fact they all use PSGI in order to communicate with the web server.

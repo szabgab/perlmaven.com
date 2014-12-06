@@ -54,7 +54,7 @@ Besides coming with Padre, <a href="http://padre.perlide.org/">the Perl IDE</a>,
 
 Out of the box it allows <a href="http://perldancer.org/">web development with Perl Dancer framework</a>.
 There is a post on how to
-<a href="/videos/getting-started-with-perl-dancer">get started with Perl Dancer</a>.
+<a href="/getting-started-with-perl-dancer">get started with Perl Dancer</a>.
 
 It also includes modules to read and write Microsoft Excel files and it comes with a lot more extensions.
 

@@ -19,7 +19,7 @@ who would like to get away from the "manual blessing", but don't want to "pay" f
 
 <h2>Free</h2>
 <ul>
-  <li><a href="/videos/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, creating a class with a single attribute that can be either read-only (immutable) or read-write (mutable) attribute.
+  <li><a href="/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, creating a class with a single attribute that can be either read-only (immutable) or read-write (mutable) attribute.
       Creating and instance (object).</li>
 </ul>
 

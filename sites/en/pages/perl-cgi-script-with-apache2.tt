@@ -337,7 +337,7 @@ or does not point to the correct path.
 
 That's it. Hopefully, you have your first CGI script in Perl running.
 
-Of course using PSGI is much more <a href="/videos/modern-web-with-perl">modern</a> and much more flexible 
+Of course using PSGI is much more <a href="/modern-web-with-perl">modern</a> and much more flexible 
 than CGI. For that you might want to check out the <a href="/dancer">Perl Dancer</a>, or the <a href="/mojolicious">Mojolicious</a> frameworks.
 They provide a better experience.
 

@@ -26,7 +26,7 @@ articles and screencasts related to CGI.
 
 <h2>Free</h2>
 <ul>
-  <li><a href="/videos/modern-web-with-perl">Modern Web with Perl</li>
+  <li><a href="/modern-web-with-perl">Modern Web with Perl</li>
   <li><a href="/perl-cgi-script-with-apache2">Perl/CGI script with Apache2</li>
   <li><a href="/perl-cgi-mod-perl-psgi">Which is better perl-CGI, mod_perl or PSGI?</li>
   <li><a href="/simple-cgi-script-to-send-form-by-email">Simple CGI Perl script to send form by e-mail</li>
