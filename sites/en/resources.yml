@@ -47,6 +47,8 @@ menu:
             url: /products
       - login: 1
         title: Login
+      - title: FREE Registration
+        button: 1
   - dir: right
     menu:
       - title: Type keyword:
