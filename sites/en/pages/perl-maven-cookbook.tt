@@ -21,7 +21,7 @@ In the meantime we are in the process of building it and you can get
 a copy free-of charge. More than that. You can actually help building
 it by sending ideas and comments on the existing examples.
 
-The very first edition (also numbered 0.01) has the following examples:
+The current edition has the following examples:
 
 <ul>
 <li>Create Linux/Unix user account - a wrapper around adduser</li>
@@ -39,6 +39,14 @@ The very first edition (also numbered 0.01) has the following examples:
 <li>Database access using DBI and DBD::SQLite</li>
 <li>Accessing and LDAP server using Net::LDAP</li>
 <li>Tie::File</li>
+</ul>
+
+Added to 0.02
+
+<ul>
+   <li>How to read a CSV file using Perl? (Added in 0.02)</li>
+   <li>How to create an Excel file with Perl  (added in 0.02)</li>
+   <li>Reading from LDAP in Perl using Net::LDAP (added in 0.02)</li>
 </ul>
 
 One of them even has detailed explanation.
