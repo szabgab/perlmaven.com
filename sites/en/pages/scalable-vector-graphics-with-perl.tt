@@ -249,3 +249,15 @@ If you have any bug reports or requests, please use the bug tracking system prov
 In case you'd like to contribute, use the <a href="https://github.com/szabgab/SVG">github repository</a>.
 
 
+<h2>For the Norwegian readers out there</h2>
+
+Let me point you to the Bachelor's thesis of Robin Smidsrød on the <a href="http://files.smidsrod.no/BAC309IN/">state of SVG support</a> in browsers (as of 2010).
+
+Chapter 4 gives a good overview of the SVG primitives available.
+
+He also created a charting library (for Java) as part of that thesis, which can be found <a href="https://github.com/robinsmidsrod/SVGChartLibrary">here</a>.
+
+He hasn't found a library that does the same thing in Perl yet, and I think the the API is interesting, in how it allows an arbitrary amount of axes for quite complicated charts.
+
+An app that uses the library, <a href="https://github.com/petterthunaes/SVGChartApp">SVGChartApp</a> (made by another student he worked with), takes CSV input files and generates charts in SVG.
+
