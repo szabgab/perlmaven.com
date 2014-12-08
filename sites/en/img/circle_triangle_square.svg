@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<rect height="40" style="fill: rgb(0, 255, 0); fill-opacity: 1; stroke: black; stroke-width: 0; stroke-opacity: 1" width="40" x="40" y="50" />
+	<circle cx="40" cy="40" r="20" style="fill: rgb(255, 0, 0); fill-opacity: 1; stroke: black; stroke-width: 0; stroke-opacity: 1" />
+	<polygon points="40,40 60,6 80,40 " style="fill: rgb(0,0,255); fill-opacity: 1; stroke: black; stroke-width: 0; stroke-opacity: 1" />
+	<!-- 
+	Generated using the Perl SVG Module V2.50
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>
