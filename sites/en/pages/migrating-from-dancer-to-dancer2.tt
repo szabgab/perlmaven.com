@@ -1,0 +1,139 @@
+=title Migrating (of the Perl Maven site) from Dancer 1 to Dancer2
+=timestamp 2014-01-15T07:30:01
+=indexes files
+=status draft
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+The <a href="https://github.com/szabgab/Perl-Maven">Perl Maven</a> site was based
+on the <a href="/dancer">Perl Dancer web framework</a>, more specifically
+on <a href="https://metacpan.org/pod/Dancer">Dancer</a>, the first major version of the framework.
+
+Dancer has a couple of issues I encountered that caused a lot of headache. I had several choices
+
+<ol>
+  <li>Leave Dancer and Write it based on plain <a href="/psgi">PSGI/Plack</a>.</li>
+  <li>Abandon Dancer and write in it some other framework such as <a href="/mojolicious">Mojolicious</a> or <a href="/catalyst">Catalyst</a>.</li>
+  <li>Fix the issues in Dancer</li>
+  <li>Migrate to Dancer2</li>
+</ol>
+
+I decided to try to migrate to Dancer 2. This article is (going to be) both a diary of the process,
+and hopefully a helping guide to others who would like to make similar migration.
+
+=abstract end
+
+Before we go on, let's first see why leave Dancer 1, and why try to migrate to Dancer 2 instead of any of the other options outlined above?
+
+<h2>Why Migrate to Dancer 2 ?</h2>
+
+In the last couple of days I have spend an enormous time trying to get Dancer do something that it probably cannot do.
+Specifically I wanted to create sessions and set cookies conditionally so I can avoid creating thousands of sessions for each request
+of each bot visiting the site. (If sessions are enabled, Dancer will create a session just because the <hl>template()</hl> function is called to render
+a page. I <a href="http://lists.preshweb.co.uk/pipermail/dancer-users/2014-December/004199.html">asked about this</a> and the answer was that
+it will probably not changed in Dancer 1. (Which is ok, they don't want to break backward compatibility and they don't want to spend a lot of time
+on the maintenance version of Dancer.) I tried enable/disable sessions on the fly, but apparently it does not work with the Plack::Builder
+deployment example explained <a href="https://metacpan.org/pod/Dancer::Deployment#In-case-you-have-issues-with-Template::Toolkit-on-Dotcloud">here</a>.
+I have not even reported this issue because I assume they won't want to work much on the now maintenance version of Dancer.
+
+Another thing I wanted to do is to configure the session_domain based on the current request and some configuration option.
+Dancer, by default, sets the cookie for the exact hostname of the request so visiting <a href="http://ru.perlmaven.com/">ru.perlmaven.com</a>
+and <a href="http://br.perlmaven.com/>br.perlmaven.com</a> would (and used to) yield two cookies. I could change this by setting the
+<hl>session_domain</hl> option in the configuration file, but as I want to make the application available to host other sites as well,
+I wanted this to be configured on-the-fly. I could not do this either.
+
+I could try to delve into the source code of Dancer to try to fix these, but do I really want to invest my time and energy in that?
+Would they even accept fixes for these issues? I have not seen a lot of Development on Dancer recently.
+
+So I arrived to the conclusion that I need to abandon Dancer and find an alternative.
+
+<h3>PSGI/Plack</h3>
+
+I could rewrite the application in <a href="/psgi">raw PSGI/Plack</a>. I have been using it for the
+<a href="/search-cpan-org">search.cpan.org cloning project</a> and in another project. It is fun, but as I could see from
+these projects I have been reinventing certain parts of Dancer. Specifically I already had a <hl>template()</hl> function and
+a route dispatcher which also acted as both a "before" and "after" hook.
+
+This is all fine, but why reinvent the wheel? Will my solution be better? Well, maybe in won't have the same bugs as Dancer has,
+but I am sure I'll have plenty of other bugs. After all, Dancer has been developed by many people each one of them being a better
+programmer than I am. Even if that was not true, the fact that it has been used by a lot of people means it has been field-tested
+by many people. So using raw PSGI/Plack might be a small step forward, but it will also be a big step backward.
+
+<h3>Mojolicious or Catalyst</h3>
+
+Switching to either <a href="/mojolicious">Mojolicious</a> or <a href="/catalyst">Catalyst</a> would required a major rewrite,
+and neither of those seem to be more appealing to me than Dancer. In my perception Catalyst is too big for this application,
+and Mojolicious feels like a moving target. It might be fun, but I want to spend my time on serving my customers and not running
+after the changes in the framework I use.
+
+<h3>Fix the issues in Dancer 1</h3>
+
+This would certainly be a very good option. Maybe this would require the smallest additional work from me, but because Dancer 1
+is in maintenance mode it will be probably harder to get changes in the code-base, and there will be fewer people willing to
+improve it. Most importantly, it feels like a waste of time. Eventually the core Dancer developers will all move to Dancer 2
+and I will either use an abandoned version of the framework, or will have to migrate to Dancer 2 anyway.
+
+<h3>Migrating to Dancer 2</h3>
+
+While I hear encouraging words from Sawyer and the <a href="http://advent.perldancer.org/2014">2014 Perl Dancer Advent calendar</a>
+is full of optimism with Dancer 2, I have not actually seen any application written in Dancer 2 yet, and I have not heard
+about any company that have migrated to Dancer 2 either.
+
+I am sure there will be issues. Probably a lot more issues than Dancer has currently, but it is being developed.
+So probably, if I report the bugs, they will be fixed much sooner than bugs in Dancer 1.
+Even if others don't fix it, it will feel much better to invest time in improving the next version of Dancer,
+than the previous one.
+
+So that's it. I am going to start the migration to <a href="https://metacpan.org/pod/Dancer2">Dancer 2</a>,
+and I'll record my process here.
+
+I am not sure if this is the best process to do it, but the
+<a href="https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual/Migration.pod">Dancer2::Manual::Migration</a>
+does not have a clear process how to do it.
+
+
+<h2>Create a branch for the Dancer 2 migration</h2>
+
+The very first thing was to create a branch called
+<a href="https://github.com/szabgab/Perl-Maven/tree/dancer2">dancer2</a> in the
+<a href="https://github.com/szabgab/Perl-Maven">GitHub repository</a> of the project.
+I'll use that branch for the migration, and I can still make progress with the application
+while the migration stabilizes.
+
+I'll keep rebasing it to master as I make progress.
+
+<h2>Update Makefile.PL with the new prerequisites</h2>
+
+The next thing I did was replacing the Dancer requirements by Dancer2 requirements in the <hl>Makefile.PL</hl>
+of the project and installing the modules. Besides <a href="https://metacpan.org/pod/Dancer">Dancer</a>,
+the only Dancer-related plug I have been using was the <a href="https://metacpan.org/pod/Dancer::Plugin::Passphrase">Dancer::Plugin::Passphrase</a>.
+
+So I changed Dancer to Dancer2 in both of these names and tried to install the respective modules.
+
+I managed to install <a href="https://metacpan.org/pod/Dancer2">Dancer2</a> without any problems, but
+installing <a href="https://metacpan.org/pod/Dancer2::Plugin::Passphrase">Dancer2::Plugin::Passphrase</a> failed.
+I have <a href="http://lists.preshweb.co.uk/pipermail/dancer-users/2014-December/004212.html">reported it here</a>,
+but the response was basically to wait.
+
+Not a good start, but this does not need to totally stop me. I might be able to migrate other parts of the system,
+faking that module while I wait for it to be fixed.
+
+Because of this failure, I have commented out the requirement for Dancer2::Plugin::Passphrase.
+
+As I have been using <a href="https://travis-ci.org/">Travis-CI</a> to provide continuous integration for
+the <a href="https://github.com/szabgab/Perl-Maven">Perl-Maven</a> code-base, I could use that as place
+to see which parts of the code-base need to be updated.
+
+So I pushed out the first change and got the
+<a href="https://travis-ci.org/szabgab/Perl-Maven/builds/43599657">first failure report</a> from Travis-CI.
+
+Not to surprisingly, the main (or even the only?) complain was the missing of the Dancer module, when trying
+to load the application in various tests scripts.
+
+
+
+
+
