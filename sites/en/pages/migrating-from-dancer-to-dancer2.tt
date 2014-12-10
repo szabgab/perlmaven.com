@@ -91,7 +91,7 @@ So that's it. I am going to start the migration to <a href="https://metacpan.org
 and I'll record my process here.
 
 I am not sure if this is the best process to do it, but the
-<a href="https://metacpan.org/pod/distribution/Dancer2/lib/Dancer2/Manual/Migration.pod">Dancer2::Manual::Migration</a>
+<a href="https://metacpan.org/pod/Dancer2::Manual::Migration">Dancer2::Manual::Migration</a>
 does not have a clear process how to do it.
 
 
@@ -133,7 +133,187 @@ So I pushed out the first change and got the
 Not to surprisingly, the main (or even the only?) complain was the missing of the Dancer module, when trying
 to load the application in various tests scripts.
 
+<h2>use Dancer ':syntax';    to Dancer2</h2>
 
+As the failure reported by travis was the lack of the Dancer module, the next step seemed to be natural to
+replace the 
+
+<code lang="perl">
+use Dancer ':syntax';
+</code>
+
+statement with
+
+<code lang="perl">
+use Dancer2;
+</code>
+
+statement in the <hl>Perl::Maven</hl> module, and with
+
+<code lang="perl">
+use Dancer2 appname => 'Perl::Maven';
+</code>
+
+in the <hl>Perl::Maven::Admin</hl>, <hl>Perl::Maven::PayPal</hl>, and <hl>Perl::Maven::WebTools</hl> modules.
+
+In addition, there was a use of the <a href="https://metacpan.org/pod/Dancer::Template::TemplateToolkit">Dancer::Template::TemplateToolkit</a>
+module. the actual use might not be necessary any more, but for now, I've replaced it with the used of the Dancer2 version of the same module.
+
+As I can understand from the <a href="https://metacpan.org/pod/Dancer2::Manual::Migration">migration guide</a>, there is no more need
+for the <hl>':syntax'</hl> part.
+
+In addition, because the <a href="https://metacpan.org/pod/Dancer2::Plugin::Passphrase">Dancer2::Plugin::Passphrase</a> cannot be installed yet,
+I've created a module called <b>Fake</b>, that will mock the behavior of the <hl>passphrase</hl> function. Luckily the API of that function
+was very simple. Having this fake version of it will allow me to continue with the migration process and see if I encounter other problems,
+even before the Passphrase issue is fixed.
+
+This is <hl>Fake.pm</hl>
+
+<code lang="perl">
+package Fake;
+use strict;
+use warnings;
+
+use Exporter qw(import);
+our @EXPORT_OK = qw(passphrase);
+
+sub passphrase {
+	my ($password) = @_;
+	return bless { password => $password}, 'Fake';
+}
+
+sub generate {
+	my ($self) = @_;
+	return $self->{password};
+}
+
+sub matches {
+	my ($self, $password) = @_;
+	return $self->{password} eq $password;
+}
+
+
+1;
+</code>
+
+
+then I ran the tests and also committed the changes to see what Travis-CI will tell us.
+Even before I got back the results from Travis-CI I ran the tests myself and got the following error message:
+
+<hl>Engine 'template_toolkit' is not supported.</hl>
+
+<h2>Template::Toolkit</h2>
+
+In order to understand what's going on, I created two applications using the
+<hl>dancer -a</hl> and the <hl>dancer2 -a</hl> commands and compared the configuration files.
+
+The result of my research is the following:
+
+The "Dancer 1 way" to enable the use of <a href="">Template::Toolkit</a> was to add
+the following line to <hl>config.yml</hl>:
+
+<code>
+template: "template_toolkit"
+</code>
+
+That was enough to get started. The start_tag and end_tag it used were the same as in
+the simple template &lt;% and %&gt; respectively.
+
+In the Perl::Maven application we had this:
+
+<code>
+template: "template_toolkit"
+engines:
+  template_toolkit:
+    encoding:  'utf8'
+    INCLUDE_PATH: 'views'
+</code>
+
+(I think that INCLUDE_PATH thing is just a left-over from one of my experiments.)
+
+In Dancer 2 you can also enable Template::Toolkit with the same configuration option:
+
+<code>
+template: "template_toolkit"
+</code>
+
+that wasn't the issue.
+
+The issue was that in the <hl>engine</hl> configuration option an extra level called
+<hl>template</hl> was added.
+Now, instead of the above, we need to write:
+
+<code>
+template: "template_toolkit"
+engines:
+  template:
+    template_toolkit:
+      encoding:  'utf8'
+      INCLUDE_PATH: 'views'
+</code>
+
+That still does not seem to be enough. As my experiments showed, the default start_tag and end_tag are now [% and %],
+(these are the same that Template::Toolkit really uses as defaults), but we have &lt;% and %&gt;
+so we need to change the start_tag and end_tag values.
+
+So we got the following section in the configuration file:
+
+<code>
+template: "template_toolkit"
+engines:
+  template:
+    template_toolkit:
+      encoding:  'utf8'
+      INCLUDE_PATH: 'views'
+      start_tag: '<%'
+      end_tag:   '%>'
+</code>
+
+I committed the changes here, but by that time I git  <a href="https://travis-ci.org/szabgab/Perl-Maven/builds/43621897">the report from Travis-CI</a>
+and it showed the problem there is still the missing <hl>Dancer.pm</hl> module. Now I started to wonder where else is it loaded that the tests
+fail.
+
+It wasn't difficult to find them using <hl>ack 'use Dancer'</hl>. Three of the tests scripts load it directly using
+<hl>use Dancer qw(:tests);</hl>.
+
+
+<h2>Perl::Critic - Dancer2 also implies use strict</h2>
+
+In addition, I noticed that a lot of the tests fail on my system with reports from <a href="https://metacpan.org/pod/Perl::Critic">Perl::Critic</h2>.
+Specifically they complain about <hl>Code before strictures are enabled</hl>
+
+The Perl::Maven project has a <a href="https://github.com/szabgab/Perl-Maven/blob/master/.perlcriticrc">.perlcriticrc</a> file in which
+we have an entry:
+
+<code>
+[TestingAndDebugging::RequireUseStrict]
+equivalent_modules = Moo Dancer
+
+[TestingAndDebugging::RequireUseWarnings]
+severity = 5
+equivalent_modules = Moo Dancer
+</code>
+
+This tells Perl::Critic, to accept having <hl>use Moo</hl>, or <hl>use Dancer</hl> instead of having
+<hl>use strict;</hl> and <hl>use warnings;</hl>. That's correct, because <hl>use Dancer;</hl> indeed
+loads both the <hl>strict</hl> and <hl>warnings</hl> pragma.
+
+The same is true for <hl>use Dancer2</hl> so we also need to tell Perl::Critic to stop complaining.
+I added <hl>Dancer2</hl> in the list of <hl>equivalent_modules</hl> for both entries.
+
+With that noise out of the way it is much easier to focus on the real issues.
+
+<h2>use Dancer ':test';</h2>
+
+
+<!--
+<code lang="perl">
+</code>
+
+
+<code lang="perl">
+</code>
+-->
 
 
 
