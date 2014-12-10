@@ -41,7 +41,7 @@ I have not even reported this issue because I assume they won't want to work muc
 
 Another thing I wanted to do is to configure the session_domain based on the current request and some configuration option.
 Dancer, by default, sets the cookie for the exact hostname of the request so visiting <a href="http://ru.perlmaven.com/">ru.perlmaven.com</a>
-and <a href="http://br.perlmaven.com/>br.perlmaven.com</a> would (and used to) yield two cookies. I could change this by setting the
+and <a href="http://br.perlmaven.com/">br.perlmaven.com</a> would (and used to) yield two cookies. I could change this by setting the
 <hl>session_domain</hl> option in the configuration file, but as I want to make the application available to host other sites as well,
 I wanted this to be configured on-the-fly. I could not do this either.
 
