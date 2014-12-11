@@ -45,10 +45,11 @@ and <a href="http://br.perlmaven.com/">br.perlmaven.com</a> would (and used to) 
 <hl>session_domain</hl> option in the configuration file, but as I want to make the application available to host other sites as well,
 I wanted this to be configured on-the-fly. I could not do this either.
 
-I could try to delve into the source code of Dancer to try to fix these, but do I really want to invest my time and energy in that?
-Would they even accept fixes for these issues? I have not seen a lot of Development on Dancer recently.
+I could try to delve into the source code of Dancer 1 to try to fix these, but do I really want to invest my time and energy in that?
+Would they even accept fixes for these issues? I have not seen a lot of Development on Dancer 1 recently, it seems tha most of the
+effort goes into Dancer 2.
 
-So I arrived to the conclusion that I need to abandon Dancer and find an alternative.
+So I arrived to the conclusion that I need to abandon Dancer 1 and find an alternative.
 
 <h3>PSGI/Plack</h3>
 
