@@ -180,18 +180,18 @@ use Exporter qw(import);
 our @EXPORT_OK = qw(passphrase);
 
 sub passphrase {
-	my ($password) = @_;
-	return bless { password => $password}, 'Fake';
+    my ($password) = @_;
+    return bless { password => $password}, 'Fake';
 }
 
 sub generate {
-	my ($self) = @_;
-	return $self->{password};
+    my ($self) = @_;
+    return $self->{password};
 }
 
 sub matches {
-	my ($self, $password) = @_;
-	return $self->{password} eq $password;
+    my ($self, $password) = @_;
+    return $self->{password} eq $password;
 }
 
 
@@ -349,6 +349,57 @@ There is no need to add <hl>:tests</hl> to the use-statement of Dancer2 and it i
 so I don't need to prefix them any more. (I listed them after the use-statement of Dancer2 in comments just to make it easier for a reader
 to locate the source of these keywords.)
 Finally, the PSGI application created by Dancer 2 is not returned directly from Dancer2, instead of Dancer::Handler.
+
+<h2>referer and user_agent in list context</h2>
+
+Then I encountered an exception related to logging code inserting date into MongoDB. It complained about <hl>.</hl> not being valid part of
+a key in MongoDB. It boiled down to this piece of code:
+
+<code lang="perl">
+my %details = (
+    sid        => setting('sid'),
+    time       => $time,
+    host       => request->host,
+    page       => request->uri,
+    referrer   => request->referer,
+    ip         => $ip,
+    user_agent => request->user_agent,
+    status     => $response->status,
+);
+log_to_mongodb( \%details );
+</code>
+
+This is actuall a well known and painful issue with Perl. The problem was that the behavior of
+<hl>request->referer</hl> and <hl>request->user_agent</hl> has changed. If they did not have a proper value,
+in Dancer 1 they always returned <hl>undef</hl>.
+Both in <a href="http://perlmaven.com/scalar-and-list-context-in-perl">scalar context and in list conetext</a>.
+
+In Dancer 2 the behavior changed. In scalar context they still return <a href="http://perlmaven.com/undef-and-defined-in-perl">undef</a>,
+but in list context they return an empty array. In the above code, the right-hand-side of the fat-comma operator (<hl>=></hl>) creates list context.
+This means that the empty lists were squashed, and the value of the 'referrer' key became the string 'ip'.
+Which had a cascading effect and the content of <hl>$ip</hl> became the next key which contains the <hl>.</hl> characters the exception was about.
+
+I have submitted a <a href="https://github.com/PerlDancer/Dancer2/issues/809">bug report</a>, or you might call in request for clarification,
+but I also wanted to fix this issue. 
+
+This can be done by forcing scalar context, using the <hl>scalar</hl> function:
+
+<code lang="perl">
+my %details = (
+	sid        => setting('sid'),
+	time       => $time,
+	host       => request->host,
+	page       => request->uri,
+	referrer   => scalar( request->referer ),
+	ip         => $ip,
+	user_agent => scalar( request->user_agent ),
+	status     => response->status,
+);
+</code>
+
+Depending on the response to that bug report I might have to update the code later and maybe I'll need to check my whole
+application. I can say that it was actually lucky this happened during the migration process and not only in the
+production code.
 
 <h2>public/ files</h2>
 
