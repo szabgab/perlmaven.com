@@ -1,7 +1,7 @@
 =title Migrating (of the Perl Maven site) from Dancer 1 to Dancer2
-=timestamp 2014-01-15T07:30:01
+=timestamp 2014-12-11T12:30:01
 =indexes files
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
@@ -402,6 +402,8 @@ Error 500 - Internal Server Error
 Hook error: Can't use an undefined value as a HASH reference at /Users/gabor/work/Perl-Maven/bin/../lib/Perl/Maven.pm line 202. at /Users/gabor/perl5/perlbrew/perls/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Dancer2/Core/Role/Hookable.pm line 141.
 Powered by Dancer2 0.156001
 </code>
+
+I am currently working on this problem.
 
 
 
