@@ -403,6 +403,9 @@ Hook error: Can't use an undefined value as a HASH reference at /Users/gabor/wor
 Powered by Dancer2 0.156001
 </code>
 
+It seems the source of this problem is a change how <hl>from_yaml</hl> behaves, but I am not sure if the change in the behavior was intentional and I need to update
+my code, or if is a bug in Dancer. I <a href="http://lists.preshweb.co.uk/pipermail/dancer-users/2014-December/004219.html">asked it</a>.
+
 I am currently working on this problem.
 
 
