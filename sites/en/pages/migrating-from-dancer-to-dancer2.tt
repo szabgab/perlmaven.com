@@ -174,6 +174,8 @@ package Fake;
 use strict;
 use warnings;
 
+our $VERSION = '0.11';
+
 use Exporter qw(import);
 our @EXPORT_OK = qw(passphrase);
 
@@ -303,7 +305,104 @@ I added <hl>Dancer2</hl> in the list of <hl>equivalent_modules</hl> for both ent
 
 With that noise out of the way it is much easier to focus on the real issues.
 
+Which is still having <hl>use Dancer</hl> in some places as the
+<a href="https://travis-ci.org/szabgab/Perl-Maven/builds/43621897">Travis report</a> shows.
+
 <h2>use Dancer ':test';</h2>
+
+The next issue I encountered were in some of the test files where I had code like this: (showing only the relevant part)
+
+<code lang="perl">
+use Dancer qw(:tests);
+
+Dancer::set( appdir => getcwd() );
+
+is Dancer::config->{'appdir'}, getcwd(), 'appdir';
+is Dancer::config->{'mymaven_yml'}, 'config/mymaven.yml', 'mymaven';
+
+use Perl::Maven;
+
+my $app = Dancer::Handler->psgi_app;
+</code>
+
+Here Dancer was loaded for testing and the <hl>appdir</hl> was set manuaally using the <hl>Dancer::set</hl> function.
+In the next line I checked if the this setting really worked (apparently the result of some failed experiments during the development),
+and then checking if the <hl>mymaven_yml</hl> key was found in <hl>config.yml</hl> and loaded properly. Probably these tests are not
+important for the application itself, they only check if the testing environment was set up correctly. Then I used the 
+<hl>Dancer::Handler->psgi_app</hl> to fetch the PSGI application created by Dancer.
+In Dancer2 thise code will be replaced by the following:
+
+<code lang="perl">
+use Dancer2;    # importing: set, config
+
+set( appdir => getcwd() );
+
+is config->{'appdir'}, getcwd(), 'appdir';
+is config->{'mymaven_yml'}, 'config/mymaven.yml', 'mymaven';
+
+use Perl::Maven;
+
+my $app = Dancer2->psgi_app;
+</code>
+
+There is no need to add <hl>:tests</hl> to the use-statement of Dancer2 and it imports both the <hl>set</hl> and the <hl>config</hl> keywords
+so I don't need to prefix them any more. (I listed them after the use-statement of Dancer2 in comments just to make it easier for a reader
+to locate the source of these keywords.)
+Finally, the PSGI application created by Dancer 2 is not returned directly from Dancer2, instead of Dancer::Handler.
+
+<h2>public/ files</h2>
+
+In the <hl>public/</hl> directory of the project there were 4 files that I think are not used by the Perl Maven application:
+<hl>404.html, 500.html, dispatch.cgi and dispatch.fcgi</hl>. I don't need to migrate them, but because the scripts load Dancer,
+I thought it would be better to get rid of them. So I temporarily switched back to the master branch of the Git repository.
+Removed these 4 files there. Ran the tests of the Dancer 1 version of the application and committed the changes.
+
+Then I switched back to the dancer2 branch of the repository and rebased the branch to the new master using  <hl>git rebase master</hl>.
+
+<h2>bin/app.pl</h2>
+
+The <hl>bin/appl.pl</h2> file is mostly used during development. In the Perl::Maven application it used to look like this:
+
+<code lang="perl">
+#!/usr/bin/env perl
+use Dancer;
+use Perl::Maven;
+dance;
+</code>
+
+Now it looks like this:
+
+<code lang="perl">
+#!/usr/bin/env perl
+use strict;
+use warnings;
+
+use FindBin;
+use lib "$FindBin::Bin/../lib";
+
+use Perl::Maven;
+Perl::Maven->dance;
+</code>
+
+It does not load Dancer (nor Dancer2) and so it should have <hl>use strict; use warnings;</hl>.
+Not only to satisfy Perl::Critic, but also to save us from some stupid mistake down the road when
+we might add some code to this script.
+
+It is also now recommended to <a href="/pro/how-to-add-a-relative-directory-to-inc">change @INC to a relative directory</a>,
+and finally, instead of calling the exported <hl>dance</hl> function, now we call the <hl>dance</hl> method.
+
+This still left us with <a href="https://travis-ci.org/szabgab/Perl-Maven/builds/43686362">some errors reported on Travis</a>
+that were not clear to me. None of those seemed provided any clue what changed between Dancer 1 and Dancer 2 that caused them.
+Luckily now I could launch the application using <hl>perl bin/app.pl</hl> and visit the development web page.
+It gave me the following error:
+
+<code>
+Error 500 - Internal Server Error
+
+Hook error: Can't use an undefined value as a HASH reference at /Users/gabor/work/Perl-Maven/bin/../lib/Perl/Maven.pm line 202. at /Users/gabor/perl5/perlbrew/perls/perl-5.20.1_WITH_THREADS/lib/site_perl/5.20.1/Dancer2/Core/Role/Hookable.pm line 141.
+Powered by Dancer2 0.156001
+</code>
+
 
 
 <!--
