@@ -30,12 +30,12 @@ Before we go on, let's first see why leave Dancer 1, and why try to migrate to D
 
 <h2>Why Migrate to Dancer 2 ?</h2>
 
-In the last couple of days I have spend an enormous time trying to get Dancer do something that it probably cannot do.
+In the last couple of days I have spent an enormous time trying to get Dancer do something that it probably cannot do.
 Specifically I wanted to create sessions and set cookies conditionally so I can avoid creating thousands of sessions for each request
 of each bot visiting the site. (If sessions are enabled, Dancer will create a session just because the <hl>template()</hl> function is called to render
 a page. I <a href="http://lists.preshweb.co.uk/pipermail/dancer-users/2014-December/004199.html">asked about this</a> and the answer was that
-it will probably not changed in Dancer 1. (Which is ok, they don't want to break backward compatibility and they don't want to spend a lot of time
-on the maintenance version of Dancer.) I tried enable/disable sessions on the fly, but apparently it does not work with the Plack::Builder
+it probably will not be changed in Dancer 1. (Which is ok, they don't want to break backward compatibility and they don't want to spend a lot of time
+on the maintenance version of Dancer.) I tried to enable/disable sessions on the fly, but apparently it does not work with the Plack::Builder
 deployment example explained <a href="https://metacpan.org/pod/Dancer::Deployment#In-case-you-have-issues-with-Template::Toolkit-on-Dotcloud">here</a>.
 I have not even reported this issue because I assume they won't want to work much on the now maintenance version of Dancer.
 
@@ -49,16 +49,16 @@ I could try to delve into the source code of Dancer 1 to try to fix these, but d
 Would they even accept fixes for these issues? I have not seen a lot of Development on Dancer 1 recently, it seems that most of the
 effort goes into Dancer 2.
 
-So I arrived to the conclusion that I need to abandon Dancer 1 and find an alternative.
+So I arrived at the conclusion that I need to abandon Dancer 1 and find an alternative.
 
 <h3>PSGI/Plack</h3>
 
 I could rewrite the application in <a href="/psgi">raw PSGI/Plack</a>. I have been using it for the
 <a href="/search-cpan-org">search.cpan.org cloning project</a> and in another project. It is fun, but as I could see from
-these projects I have been reinventing certain parts of Dancer. Specifically I already had a <hl>template()</hl> function and
+these projects I have been reinventing certain parts of Dancer. Specifically, I already had a <hl>template()</hl> function and
 a route dispatcher which also acted as both a "before" and "after" hook.
 
-This is all fine, but why reinvent the wheel? Will my solution be better? Well, maybe in won't have the same bugs as Dancer has,
+This is all fine, but why reinvent the wheel? Will my solution be better? Well, maybe it won't have the same bugs as Dancer has,
 but I am sure I'll have plenty of other bugs. After all, Dancer has been developed by many people each one of them being a better
 programmer than I am. Even if that was not true, the fact that it has been used by a lot of people means it has been field-tested
 by many people. So using raw PSGI/Plack might be a small step forward, but it will also be a big step backward.
@@ -66,7 +66,7 @@ by many people. So using raw PSGI/Plack might be a small step forward, but it wi
 <h3>Mojolicious or Catalyst</h3>
 
 Switching to either <a href="/mojolicious">Mojolicious</a> or <a href="/catalyst">Catalyst</a> would required a major rewrite,
-and neither of those seem to be more appealing to me than Dancer. In my perception Catalyst is too big for this application,
+and neither of those seem to be more appealing to me than Dancer. In my perception, Catalyst is too big for this application,
 and Mojolicious feels like a moving target. It might be fun, but I want to spend my time on serving my customers and not running
 after the changes in the framework I use.
 
@@ -132,7 +132,7 @@ to see which parts of the code-base need to be updated.
 So I pushed out the first change and got the
 <a href="https://travis-ci.org/szabgab/Perl-Maven/builds/43599657">first failure report</a> from Travis-CI.
 
-Not to surprisingly, the main (or even the only?) complain was the missing of the Dancer module, when trying
+Not so surprisingly, the main (or even the only?) complaint was the missing of the Dancer module, when trying
 to load the application in various tests scripts.
 
 <h2>use Dancer ':syntax';    to Dancer2</h2>
@@ -273,7 +273,7 @@ engines:
       end_tag:   '%>'
 </code>
 
-I committed the changes here, but by that time I git  <a href="https://travis-ci.org/szabgab/Perl-Maven/builds/43621897">the report from Travis-CI</a>
+I committed the changes here, but by that time I got  <a href="https://travis-ci.org/szabgab/Perl-Maven/builds/43621897">the report from Travis-CI</a>
 and it showed the problem there is still the missing <hl>Dancer.pm</hl> module. Now I started to wonder where else is it loaded that the tests
 fail.
 
@@ -354,7 +354,7 @@ Finally, the PSGI application created by Dancer 2 is not returned directly from 
 
 <h2>referer and user_agent in list context</h2>
 
-Then I encountered an exception related to logging code inserting date into MongoDB. It complained about <hl>.</hl> not being valid part of
+Then I encountered an exception related to logging code inserting data into MongoDB. It complained about <hl>.</hl> not being valid part of
 a key in MongoDB. It boiled down to this piece of code:
 
 <code lang="perl">
@@ -371,13 +371,14 @@ my %details = (
 log_to_mongodb( \%details );
 </code>
 
-This is actuall a well known and painful issue with Perl. The problem was that the behavior of
+This is actually a well known and painful issue with Perl. The problem was that the behavior of
 <hl>request->referer</hl> and <hl>request->user_agent</hl> has changed. If they did not have a proper value,
 in Dancer 1 they always returned <hl>undef</hl>.
-Both in <a href="http://perlmaven.com/scalar-and-list-context-in-perl">scalar context and in list conetext</a>.
+Both in <a
+href="http://perlmaven.com/scalar-and-list-context-in-perl">scalar context and in list context</a>.
 
 In Dancer 2 the behavior changed. In scalar context they still return <a href="http://perlmaven.com/undef-and-defined-in-perl">undef</a>,
-but in list context they return an empty array. In the above code, the right-hand-side of the fat-comma operator (<hl>=></hl>) creates list context.
+but in list context they return an empty list. In the above code, the right-hand-side of the fat-comma operator (<hl>=></hl>) creates list context.
 This means that the empty lists were squashed, and the value of the 'referrer' key became the string 'ip'.
 Which had a cascading effect and the content of <hl>$ip</hl> became the next key which contains the <hl>.</hl> characters the exception was about.
 
