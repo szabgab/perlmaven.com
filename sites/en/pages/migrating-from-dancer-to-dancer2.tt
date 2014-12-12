@@ -46,7 +46,7 @@ and <a href="http://br.perlmaven.com/">br.perlmaven.com</a> would (and used to) 
 I wanted this to be configured on-the-fly. I could not do this either.
 
 I could try to delve into the source code of Dancer 1 to try to fix these, but do I really want to invest my time and energy in that?
-Would they even accept fixes for these issues? I have not seen a lot of Development on Dancer 1 recently, it seems tha most of the
+Would they even accept fixes for these issues? I have not seen a lot of Development on Dancer 1 recently, it seems that most of the
 effort goes into Dancer 2.
 
 So I arrived to the conclusion that I need to abandon Dancer 1 and find an alternative.
@@ -91,10 +91,11 @@ than the previous one.
 So that's it. I am going to start the migration to <a href="https://metacpan.org/pod/Dancer2">Dancer 2</a>,
 and I'll record my process here.
 
-I am not sure if this is the best process to do it, but the
-<a href="https://metacpan.org/pod/Dancer2::Manual::Migration">Dancer2::Manual::Migration</a>
-does not have a clear process how to do it.
-
+I am not sure if this is the best process to do it, and if you follow it you might fall in the same pitfalls I did,
+or you might avoid them because you see my mistakes. In any case, I'd also recommend looking at
+<a href="https://metacpan.org/pod/Dancer2::Manual::Migration">Dancer2::Manual::Migration</a>,
+the migration document that comes with Dancer 2. It has some good advice and if it is missing some information,
+you can always as on the Dancer mailing list.
 
 <h2>Create a branch for the Dancer 2 migration</h2>
 
