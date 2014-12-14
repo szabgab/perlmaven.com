@@ -123,6 +123,8 @@ but the response was basically to wait.
 Not a good start, but this does not need to totally stop me. I might be able to migrate other parts of the system,
 faking that module while I wait for it to be fixed.
 
+<b>Update:</b> within two days the module was fixed, I could install it on both OSX and Linux.
+
 Because of this failure, I have commented out the requirement for Dancer2::Plugin::Passphrase.
 
 As I have been using <a href="https://travis-ci.org/">Travis-CI</a> to provide continuous integration for
@@ -164,7 +166,7 @@ module. the actual use might not be necessary any more, but for now, I've replac
 As I can understand from the <a href="https://metacpan.org/pod/Dancer2::Manual::Migration">migration guide</a>, there is no more need
 for the <hl>':syntax'</hl> part.
 
-In addition, because the <a href="https://metacpan.org/pod/Dancer2::Plugin::Passphrase">Dancer2::Plugin::Passphrase</a> cannot be installed yet,
+In addition, because the <a href="https://metacpan.org/pod/Dancer2::Plugin::Passphrase">Dancer2::Plugin::Passphrase</a> could not be installed yet,
 I've created a module called <b>Fake</b>, that will mock the behavior of the <hl>passphrase</hl> function. Luckily the API of that function
 was very simple. Having this fake version of it will allow me to continue with the migration process and see if I encounter other problems,
 even before the Passphrase issue is fixed.
@@ -200,8 +202,11 @@ sub matches {
 1;
 </code>
 
-
 then I ran the tests and also committed the changes to see what Travis-CI will tell us.
+
+<b>Update:</b> the Dancer2::Plugin::Passphrase module was fixed and I could get rid of the Fake.pm.
+Nevertheless I left it here in case you encounter a similar situation with another module.
+
 Even before I got back the results from Travis-CI I ran the tests myself and got the following error message:
 
 <hl>Engine 'template_toolkit' is not supported.</hl>
@@ -327,12 +332,12 @@ use Perl::Maven;
 my $app = Dancer::Handler->psgi_app;
 </code>
 
-Here Dancer was loaded for testing and the <hl>appdir</hl> was set manuaally using the <hl>Dancer::set</hl> function.
+Here Dancer was loaded for testing and the <hl>appdir</hl> was set manually using the <hl>Dancer::set</hl> function.
 In the next line I checked if the this setting really worked (apparently the result of some failed experiments during the development),
 and then checking if the <hl>mymaven_yml</hl> key was found in <hl>config.yml</hl> and loaded properly. Probably these tests are not
 important for the application itself, they only check if the testing environment was set up correctly. Then I used the 
 <hl>Dancer::Handler->psgi_app</hl> to fetch the PSGI application created by Dancer.
-In Dancer2 thise code will be replaced by the following:
+In Dancer2 this code will be replaced by the following:
 
 <code lang="perl">
 use Dancer2;    # importing: set, config
@@ -383,20 +388,20 @@ This means that the empty lists were squashed, and the value of the 'referrer' k
 Which had a cascading effect and the content of <hl>$ip</hl> became the next key which contains the <hl>.</hl> characters the exception was about.
 
 I have submitted a <a href="https://github.com/PerlDancer/Dancer2/issues/809">bug report</a>, or you might call in request for clarification,
-but I also wanted to fix this issue. 
+but I also wanted to fix this issue in the Perl Maven codebase. (The response to my report was that the change was intentional.)
 
 This can be done by forcing scalar context, using the <hl>scalar</hl> function:
 
 <code lang="perl">
 my %details = (
-	sid        => setting('sid'),
-	time       => $time,
-	host       => request->host,
-	page       => request->uri,
-	referrer   => scalar( request->referer ),
-	ip         => $ip,
-	user_agent => scalar( request->user_agent ),
-	status     => response->status,
+    sid        => setting('sid'),
+    time       => $time,
+    host       => request->host,
+    page       => request->uri,
+    referrer   => scalar( request->referer ),
+    ip         => $ip,
+    user_agent => scalar( request->user_agent ),
+    status     => response->status,
 );
 </code>
 
@@ -458,20 +463,167 @@ Powered by Dancer2 0.156001
 </code>
 
 It seems the source of this problem is a change how <hl>from_yaml</hl> behaves, but I am not sure if the change in the behavior was intentional and I need to update
-my code, or if is a bug in Dancer. I <a href="http://lists.preshweb.co.uk/pipermail/dancer-users/2014-December/004219.html">asked it</a>.
+my code, or if is a bug in Dancer. I asked it both on the <a href="http://lists.preshweb.co.uk/pipermail/dancer-users/2014-December/004219.html">mailing list</a>
+and as a <a href="https://github.com/PerlDancer/Dancer2/issues/812">bug report</a>.
+This was an intentional change so instead of using <hl>from_yaml</hl>, I changed my code to use the <hl>YAML::Load</hl> function.
 
-I am currently working on this problem.
+So instead of this code:
 
-
-
-<!--
 <code lang="perl">
+return from_yaml $p->slurp_utf8;
+</code>
+
+I have this code:
+
+<code lang="perl">
+return YAML::Load $p->slurp_utf8;
 </code>
 
 
-<code lang="perl">
-</code>
--->
+<h2>Converting a stand-alone script</h2>
 
+The Perl Maven site has a stand-alone script called <hl>bin/sendmail.pl</hl> that launches the application and uses it to generate the HTML e-mail
+sent out to the subscribers. It used a set of call very similar to what I had in the deployment app.psgi file:
+
+This is what I used to have:
+
+<code lang="perl">
+use Dancer ':syntax';
+my $dancer = sub {
+    my $env = shift;
+
+    my $name = 'Perl::Maven';
+    my $root = dirname( dirname( abs_path($0) ) );
+    local $ENV{DANCER_APPDIR} = $root;
+    setting appdir => $root;
+    load_app $name;
+    Dancer::App->set_running_app($name);
+    Dancer::Handler->init_request_headers($env);
+    my $request = Dancer::Request->new( env => $env );
+    Dancer->dance($request);
+};
+</code>
+
+Now this could have been greatly simplified to this code:
+
+<code lang="perl">
+use Dancer2;
+use Perl::Maven;
+
+my $dancer = Dancer2->psgi_app;
+</code>
+
+
+<h2>Absolute path for send_file</h2>
+
+This issue took the longest time to fix. I think I wasted on it more than 2 days and to be honest I still don't understand
+the problem.
+
+When I want to return a file (e.g. to let the user download a pdf file, but even in the development envrionment I am using Dancer
+to server images) I use the <hl>send_file</hl> function provided by Dancer. Because the files are not located under the public
+directory of Dancer, I also need to add <hl>system_path => 1</hl>. 
+
+Thing that drove me crazy that this featured worked in the Dancer 1 version and also all the tests passed.
+It also worked in the Dancer 2 version when I launched the application using <hl>perl bin/app.pl</hl> but it failed
+when I run the unit tests!!!!
+
+For days I was experimenting trying to find out the source of this problem. I think the issue was that the path
+to the file that I wanted to server was relative to the root of the application. In the tests of Dancer 1 this still
+worked but for some reason in Dancer 2 it did not server these files.
+
+Finally, after tearing out some of my remaining hear, the solution was to convert all the path-es to be absolute path-es.
+I made this <a href="https://github.com/szabgab/Perl-Maven/commit/cc435bb1911f699f2da24c466993f78d76b6c584">change</a> on the 'mater'
+branch that was still using Dancer 1, in order to make sure that version works properly with this new code, and then
+rebased the 'dancer2' branch to include this change.
+
+<h2>Fixing the code using Dancer2::Plugin::Passphrase</h2>
+
+After <a href="https://metacpan.org/pod/Dancer2::Plugin::Passphrase">Dancer2::Plugin::Passphrase</a> has been
+fixed and I could install it, the system still did not work. At first I did not know what the issue was, but
+after trying to print the result of the <hl>passphrase($password)->generate</hl> slowly I understood.
+
+Earlier, the <hl>generate</hl> method of <a href="https://metacpan.org/pod/Dancer::Plugin::Passphrase">Dancer::Plugin::Passphrase</a>
+returned an object that when printed would stringify to the value I had to save in the database. 
+The documentation recommended I should store the string returned by <hl>passphrase($password)->generate->rfc2307</hl>,
+but it also provided the convenience of stringification.
+
+The Dancer2 version of this module does not stringify (which might, or might not be a bug), but I have no choice, but to work with the
+explicit call to <hl>rfc2307</hl>. I think this make the code clearer, so I don't mind.
+
+In a nutshell, I had a bug in my code that did not manifest earlier because of a convenience feature of the module I was using.
+With the upgrade I had to fix my bug so instead of
+
+<code lang="perl">
+passphrase($password)->generate
+</code>
+
+now I have this code:
+
+<code lang="perl">
+passphrase($password)->generate->rfc2307;
+</code>
+
+First I implemented this <a href="https://github.com/szabgab/Perl-Maven/commit/ecc42e4763408288fe2af64d02633244434baad3">change</a>
+too on the master branch using Dancer 1 and rebased the dancer2 branch.
+
+
+<h2>Deployment</h2>
+
+With the above change I've finished migrating from Dancer 1 to Dancer 2. All the tests are passing on my development machine  and Travis-CI has also confirmed it.
+When I launch the application using <hl>perl bin/app.pl</hl> it seems to work properly.
+
+The only thing remains is to deploy the new version and to hope I have not overlooked something critical.
+
+This change is quite similar to what we already saw earlier in the sendmail example. The old code in <hl>app.psgi</hl> looked like this:
+
+<code lang="perl">
+use Dancer ':syntax';
+sub create_dancer {
+       my ($dir, $name) = @_;
+
+       return sub {
+               my $env = shift;
+               my $root = '/home/foobar/' . $dir;
+               local $ENV{DANCER_APPDIR} = $root;
+
+               setting appdir => $root;
+               load_app $name;
+               Dancer::App->set_running_app($name);
+               Dancer::Handler->init_request_headers($env);
+               #Dancer::Config->load;
+               my $request = Dancer::Request->new( env => $env );
+               #die Dumper $env;
+               Dancer->dance($request);
+       };
+}
+
+
+my $perlmaven = create_dancer('Perl-Maven', 'Perl::Maven');
+
+mount 'http://perlmaven.com/'       => builder { $perlmaven };
+foreach my $cc (qw(br cn cs de eo es fr he id it ko ne te ro ru tr tw meta)) {
+    mount "http://$cc.perlmaven.com/"       => builder { $perlmaven };
+}
+</code>
+
+The new code is much more simple:
+
+<code lang="perl">
+sub create_dancer {
+	my ($dir, $name) = @_;
+
+	eval "use $name";
+	die $@ if $@;
+	chdir "/home/foobar/$dir";
+	$name->dance;
+}
+
+my $perlmaven = create_dancer('Perl-Maven', 'Perl::Maven');
+
+mount 'http://perlmaven.com/'       => builder { $perlmaven };
+foreach my $cc (qw(br cn cs de eo es fr he id it ko ne te ro ru tr tw meta)) {
+    mount "http://$cc.perlmaven.com/"       => builder { $perlmaven };
+}
+</code>
 
 
