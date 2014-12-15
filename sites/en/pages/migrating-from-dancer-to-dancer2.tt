@@ -627,3 +627,34 @@ foreach my $cc (qw(br cn cs de eo es fr he id it ko ne te ro ru tr tw meta)) {
 </code>
 
 
+<h2>Regex route is not anchored any more</h2>
+
+This one I encountered only after employment. (Bad thing I did not have a test for this)
+The Perl Maven site has pathes such as <hl>/pro/...</hl> and also <hl>/media/pro/...</hl>.
+
+I had a route catching the former requests that looked like this:
+
+<code lang="perl">
+get qr{/pro/(.*)} => sub {
+    ...
+};
+</code>
+
+This worked well in Dancer 1 as this regex only matched the beginning of the path.
+
+In Dancer 2 this has changed. The abve regex started to also match the second type of URL
+and started to handle them incorrectly...
+
+My solution was to anchor the regex to the beginning of the path using a <hl>^</hl>:
+
+<code lang="perl">
+get qr{^/pro/(.*)} => sub {
+    ...
+};
+</code>
+
+This fixed the issue.
+
+See <a href="http://lists.preshweb.co.uk/pipermail/dancer-users/2014-December/004247.html">my post</a> to the Dancer mailing list.
+
+
