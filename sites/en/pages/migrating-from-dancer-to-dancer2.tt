@@ -657,4 +657,17 @@ This fixed the issue.
 
 See <a href="http://lists.preshweb.co.uk/pipermail/dancer-users/2014-December/004247.html">my post</a> to the Dancer mailing list.
 
+<h2>Performance</h2>
+
+Finally let me show you the graph I get from <a href="http://munin-monitoring.org/">Munin</a> showing the 
+average request processing time on the Perl Maven site. I switched the site over to use Dancer 2 on the 13th in the evening hours.
+The green line, showing the average time for the previous 5 minutes, immediately fell from about 285 ms to 192 and the blue line,
+that shows the average of the last 24 hours, joined it after 24 hours.
+
+In a nutshell: a performance increase of (285-192)/285 = 32%.
+
+(The hole the 11th was when I broke my logging. You can disregard it.)
+
+<img src="/img/average_request_processing_time_switch_to_dancer2.png" title="Average request processing time after switching to Dancer2" />
+
 
