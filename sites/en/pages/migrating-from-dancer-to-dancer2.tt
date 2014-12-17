@@ -670,4 +670,32 @@ In a nutshell: a performance increase of (285-192)/285 = 32%.
 
 <img src="/img/average_request_processing_time_switch_to_dancer2.png" title="Average request processing time after switching to Dancer2" />
 
+<h2>Cookies</h2>
+
+Unfortunatelly I found out this only 2 days after deployment of the Dancer 2 tree:
+
+When creating a session, by default both Dancer 1 and Dancer 2, set the cookie to be used for the exact hostname being served.
+This means when someone visits <a href="http://br.perlmaven.com/">br.perlmaven.com</a> that person will get a cookie for br.perlmaven.com
+and when that same person visits <a href="http://perlmaven.com/">perlmaven.com</a>, the system will set another cookie and thus
+a separate session.
+
+In order to have a single cookie and a single session, one needs to make sure the cookie is for <hl>.perlmaven.com</hl> (note the leading dot).
+
+In Dancer 1 this was done by setting the <hl>session_domain</hl> configuration variable in config.yml:
+
+<code>
+session_doamin: .perlmaven.com
+</code>
+
+In Dancer 2, apparently this key is gone and now I have to set
+
+<code>
+engines:
+  session:
+    YAML:
+      cookie_domain: ".perlmaven.com"
+</code>
+
+(YAML, becasue the PerlMaven site still uses YAML-file based sessions)
+
 
