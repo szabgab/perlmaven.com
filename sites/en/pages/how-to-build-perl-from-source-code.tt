@@ -10,7 +10,7 @@
 
 Most Linux distributions come with a version of perl, which is often referred as <b>system perl</b>. For certain tasks and in
 certain cases that's exactly what you need, but there are cases when it's better to build your own copy of Perl. For example,
-you might want to use a different version of perl than the one supplied by yoru vendor. Or you need a threaded (or a non-threaded) version.
+you might want to use a different version of perl than the one supplied by your vendor. Or you need a threaded (or a non-threaded) version.
 Something different from what the vendor of the operating system supplies.
 
 There are even some Linux distributions that by default don't come with perl.
