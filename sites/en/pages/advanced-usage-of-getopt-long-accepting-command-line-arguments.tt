@@ -10,7 +10,7 @@
 We have already seen <a href="/how-to-process-command-line-arguments-in-perl">how to use Getopt::Long to process command line arguments</a>,
 but you can do a lot more with that module.
 
-Let's see how else can we use the <a href="https://metacpan.org/module/Getopt::Long">Getop::Long</a> module:
+Let's see how else can we use the <a href="https://metacpan.org/module/Getopt::Long">Getopt::Long</a> module:
 
 =abstract end
 
@@ -25,7 +25,7 @@ Flags that don't need an additional value.
 use strict;
 use warnings;
 use 5.010;
-use Getop::Long qw(GetOptions);
+use Getopt::Long qw(GetOptions);
 
 my $verbose;
 
