@@ -220,7 +220,7 @@ undef
 $ perl cli.pl --trace 4 --machine big
 big
 4
-<code>
+</code>
 
 
 And two examples with improper invocation:
