@@ -157,11 +157,12 @@ $ perl cli.pl --trace --trace --trace
 </code>
 
 Actually, in this case it might be better to start with 0 as the default value: <hl>my $trace = 0;</hl>
-The only difference in the result is that now
+The only difference in the result is that if we set the default to be 0 then if we don't include any <hl>--trace</hl>
+on the command line we'll get 0:
 
 <code>
 $ perl cli.pl
-undef
+0
 </code>
 
 which will probably simplify the code checking the value of <hl>$trace</hl> as won't have to create a special
