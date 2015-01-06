@@ -1,0 +1,70 @@
+=title How to run the tests of a typical perl module
+=timestamp 2013-01-17T14:45:56
+=indexes Build.PL, Makefile.PL, dist.ini
+=status draft
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+If you'd like to contribute code to a Perl based project - typically a CPAN module - the
+first thing you need to make sure that the tests of the current version all work well on your platform.
+
+=abstract end
+
+<h2>Where are the unit tests of the Perl module?</h2>
+
+Almost all the Perl modules on CPAN have a t/ directory and in that directory there are files
+with .t extension. These files are the tests of the typical Perl project.
+
+In some cases you will find more tests in the subdirectories of t/.
+
+In other cases, especially in older modules, you'll find a file called test.pl in the root
+directory of the distribution.
+
+<h2>The normal workflow of the Perl module development</h2>
+
+There are 4 major packaging systems for Perl. The ones using
+<a href="https://metacpan.org/module/Module::Build">Module::Build</a> will have a file called Build.PL.
+In this case the workflow to run the tests is
+
+<code>
+perl Build.PL
+perl Build
+perl Build test
+</code>
+
+<a href="https://metacpan.org/module/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>
+and <a href="https://metacpan.org/module/Module::Install">Module::Insall</a> both use a file
+called Makefile.PL
+
+In this case the flow is:
+
+<code>
+perl Makefile.PL
+make
+make test
+</code>
+
+(On MS Windows, it is probably nmake or dmake instead of make.)
+
+<a href="http://dzil.org/">Dist::Zilla</a> can be recognized by the dist.ini file in the root directory.
+It needs less ceremony, you only need to type
+
+<code>
+dzil test
+</code>
+
+well, of course after you've installed all the dependencies.
+
+
+<h2>TODO</h2>
+
+Install dependencies?
+
+Ensure no tests are skipped due to lack of installed dependencies.
+
+How to run the tests in the xt/ directory.
+
+
+
