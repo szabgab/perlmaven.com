@@ -24,6 +24,7 @@ A series of articles introducing you to <a href="https://metacpan.org/pod/Moose"
   <li><a href="/pro/moose-constructor">Moose constructor</a></li>
   <li><a href="/pro/moose-test-constructor">Moose: Testing the constructor</a></li>
   <li><a href="/pro/moose-test-setter-getter">Moose test setter getter</a></li>
+  <li><a href="/pro/moose-type-constraint">Moose type constraint</a></li>
 </ul>
 
 
