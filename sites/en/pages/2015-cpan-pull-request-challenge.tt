@@ -27,6 +27,29 @@ To sign up to the 2015 CPAN Pull Request Challenge send an e-mail to <a href="ht
   <li>2015.01.05 <a href="http://neilb.org/2015/01/05/two-sides-of-pr.html">The two sides of a pull request</a> by Neil Bowers</li>
 </ul>
 
+<h2>Related articles</h2>
+
+CPAN Day was a one-day event organized by Neil, the same person who runs the CPAN Pull Request Challenge, and he wrote quite a few articles for that day.
+Most of them are relevant to this challenge as well.  <a href="http://blogs.perl.org/users/neilb/2014/08/cpan-day---start-your-engines.html">CPAN Day - start your engines!</a><
+
+<ul>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/08/specify-the-min-perl-version-for-your-distribution.html">Specify the min perl version for the distribution</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/08/put-your-cpan-distributions-on-github.html">Put your CPAN distributions on github</a> (this is mostly relevant to the author or if you are taking over maintenance)</li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/08/classify-your-rt-tickets-on-cpan-day.html">Classify RT tickets</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/08/acknowledge-your-contributors-on-cpan-day.html">Acknowledge the contributors</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/08/check-your-test-coverage-with-develcover.html">Check test coverage</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/08/craft-the-first-paragraph-of-your-description.html">Craft the first paragraph of the Module DESCRIPTION</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/08/fix-your-cpan-testers-failures.html">Fix CPAN Testers failures on CPAN Day</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/08/get-cpants-clean-on-cpan-day.html">Get 'CPANTS clean'</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/07/give-your-module-a-good-see-also-section.html">Add a good SEE ALSO section</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/07/give-your-modules-a-good-synopsis.html">Write a good SYNOPSIS</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/07/give-your-modules-a-good-abstract.html">Write a good abstract</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/08/try-travis-ci-with-your-cpan-distributions.html">Add Travis-CI to the distribution</a></li>
+  <li>And a few other related articles</li>
+  <li><a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">How to convince Meta CPAN to show a link to the version control system of a distribution?</a></li>
+  <li><a href="/how-to-add-the-license-field-to-meta-files-on-cpan">How to add the license field to the META.yml and META.json files on CPAN?</a></li>
+</ul>
+
 
 <h2>Reports</h2>
 
