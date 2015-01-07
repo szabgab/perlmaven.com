@@ -88,7 +88,7 @@ printing <hl>2</hl>.
 Unfortunataly the <hl><=></hl>, the spaceship operator will create scalar context on both of its sides.
 
 So how can we extract the value in scalar context?
-We can do that using <a href="/perl-split">array slices</a> on the fly:
+We can do that using <a href="/perl-split">array slices</a> on-the-fly:
 
 <code lang="perl">
 my ($number) = $str =~ /(\d+)/;
