@@ -1,7 +1,7 @@
 =title Web sites powered by Perl with Open Source code-base
-=timestamp 2014-01-31T10:30:01
+=timestamp 2015-01-12T22:00:01
 =indexes open source, web
-=status draft
+=status show
 =author szabgab
 =comments_disqus_enable 1
 
@@ -27,6 +27,9 @@ and its source code is available on <a href="https://github.com/szabgab/Perl-Mav
 in the <a href="https://github.com/CPAN-API/">CPAN-API</a> GitHub organization.
 <a href="https://github.com/CPAN-API/metacpan-web">metacpan-web</a> is the front-end written using <a href="/catalyst">Catalyst</a>,
 and <a href="https://github.com/CPAN-API/cpan-api/">cpan-api</a> is the back-end.
+
+<a href="http://perl6maven.com/">Perl 6 Maven</a> runs on <a href="http://perl6maven.com/bailador">Baildor</a>, a partially
+implemented Perl Dancer clone in Perl 6. Its source code is available <a href="https://github.com/szabgab/Perl6-Maven">on GitHub</a>.
 
 <a href="http://www.rexify.org/">(R)?ex</a>, the Deployment &amp; Configuration Management (aka DevOps) tool written in Perl.
 Rex itself is Open Source, but the source of its web site is also available in the
