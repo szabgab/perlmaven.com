@@ -102,6 +102,7 @@
 <li><a href="/python-lambda-in-perl">Perl에서 Python의 람다처럼 익명 함수를 만드는 법</a></li>
 <li><a href="/static-and-state-variables-in-perl">Perl에서 정적 상태 변수 쓰기</a></li>
 <li><a href="/lvalue-substr">L밸류 substr - 스트링의 일부를 치환하기</a></li>
+<li><a href="/how-to-get-the-size-of-a-file-in-perl">파일의 크기를 알아내는 법</a></li>
 </ol>
 
 <!--
