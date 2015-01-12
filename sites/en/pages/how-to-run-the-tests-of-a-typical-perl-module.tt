@@ -8,24 +8,24 @@
 =abstract start
 
 If you'd like to contribute code to a Perl based project - typically a CPAN module - the
-first thing you need to make sure that the tests of the current version all work well on your platform.
+first thing you need to make sure is that the tests of the current version all work well on your platform.
 
 =abstract end
 
 <h2>Where are the unit tests of the Perl module?</h2>
 
-Almost all the Perl modules on CPAN have a t/ directory and in that directory there are files
+Almost all the Perl modules on CPAN have a <hl>t/</hl> directory and in that directory there are files
 with .t extension. These files are the tests of the typical Perl project.
 
-In some cases you will find more tests in the subdirectories of t/.
+In some cases you will find more tests in the subdirectories of <hl>t/</hl>.
 
-In other cases, especially in older modules, you'll find a file called test.pl in the root
+In other cases, especially in older modules, you'll find a file called <hl>test.pl</hl> in the root
 directory of the distribution.
 
 <h2>The normal workflow of the Perl module development</h2>
 
 There are 4 major packaging systems for Perl. The ones using
-<a href="https://metacpan.org/module/Module::Build">Module::Build</a> will have a file called Build.PL.
+<a href="https://metacpan.org/module/Module::Build">Module::Build</a> will have a file called <hl>Build.PL</hl>.
 In this case the workflow to run the tests is
 
 <code>
