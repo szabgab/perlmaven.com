@@ -127,6 +127,11 @@ open source version of Live Journal.
 As I can see it has been removed from CPAN and has not been updated since 2009.
 </div>
 
+<div class="perl-product">
+<a href="http://simpleness.org/">Simpleness CMS</a> and open source Content Management system.
+Source code is available <a href="https://github.com/ivanoff/cms.simpleness.org">on GitHub</a>.
+</div>
+
 
 <h2>Help-desk, Request and Bug tracking</h2>
 
