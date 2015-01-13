@@ -115,7 +115,30 @@ If you'd like to understand more deeply, then you can also read the
 
 
 In <a href="https://github.com/github/gitignore">this repository</a> there is a sample 
-<a href="https://github.com/github/gitignore/blob/master/Perl.gitignore">gitignore file for Perl developers</a>.
+<a href="https://github.com/github/gitignore/blob/master/Perl.gitignore">gitignore file for Perl developers</a>
+I've repeated here:
+
+<code>
+/blib/
+/.build/
+_build/
+cover_db/
+inc/
+Build
+!Build/
+Build.bat
+.last_cover_stats
+/Makefile
+/Makefile.old
+/MANIFEST.bak
+/META.yml
+/META.json
+/MYMETA.*
+nytprof.out
+/pm_to_blib
+*.o
+*.bs
+</code>
 
 I'd probably add the following:
 
@@ -129,10 +152,10 @@ I'd probably add the following:
 # vim swap files:
 *.swp
 
-# random backup files
+# random backup files:
 *.bak
 
-# Code::TidyAll Test::Code::TidyAll cache
+# Code::TidyAll Test::Code::TidyAll cache:
 /.tidyall.d/
 </code>
 
