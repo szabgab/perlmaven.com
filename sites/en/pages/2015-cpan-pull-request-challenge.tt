@@ -31,6 +31,11 @@ To sign up to the 2015 CPAN Pull Request Challenge send an e-mail to <a href="ht
   <li>2015.01.01 <a href="http://perlgeek.de/blog-en/misc/2015-cpan-pr-challenge-authors.html">CPAN Pull Request Challenge: A call to the CPAN authors</a> by Moritz Lenz</li>
   <li>2015.01.01 <a href="https://news.ycombinator.com/item?id=8819108">Hacker News</a></li>
   <li>2015.01.05 <a href="http://neilb.org/2015/01/05/two-sides-of-pr.html">The two sides of a pull request</a> by Neil Bowers</li>
+  <li>2015.01.07 <a href="http://neilb.org/2015/01/07/what-to-do.html">What to do with a CPAN distribution</a> by Neil Bowers</li>
+  <li>2015.01.09 <a href="http://nbezzala.blogspot.ca/2015/01/how-to-make-your-first-contribution-to.html">How to make your first contribution to CPAN - the first steps</a> by Nitish Bezalla</li>
+  <li>2015.01.10 <a href="http://neilb.org/2015/01/10/pr-in-branch.html">Always do pull requests in branches</a> by Neil Bowers</li>
+  <li>2015.01.12 <a href="http://blogs.perl.org/users/neilb/2015/01/more-details-on-the-cpan-pull-request-challenge.html">More details on the CPAN Pull Request Challenge</a> by Neil Bowers</li>
+  <li>2015.01.12 <a href="http://blogs.perl.org/users/brian_d_foy/2015/01/what-should-be-in-a-cpan-distro-readme.html">What should be in a CPAN distro README?</a> by brian d foy</li>
 </ul>
 
 <h2>Related articles</h2>
@@ -62,6 +67,8 @@ Most of them are relevant to this challenge as well.  <a href="http://blogs.perl
 <ul>
   <li>2015.01.03 <a href="http://tinypig2.blogspot.co.il/2015/01/my-first-day-on-cpan-pull-request.html">My First Day on the CPAN Pull Request Challenge</a> by David Bradford</li>
   <li>2015.01.04 <a href="http://blogs.perl.org/users/alberto_simoes/2015/01/pr-challenge-january-1st-pr.html">PR-Challenge: January 1st PR</a> by Alberto Simões</li>
+  <li>2015.01.08 <a href="http://tinypig2.blogspot.co.il/2015/01/cpan-pull-request-challenge-pull-request.html">CPAN Pull Request Challenge: The Pull Request</a> by David Bradford</li>
+  <li>2015.01.11 <a href="https://huntingbears.nl/2015/01/11/cpan-pull-request-challenge-for-january-datetimeformatepoch/">CPAN Pull Request Challenge for January: DateTime::Format::Epoch</a> by Michiel Beijen</a></li>
 </ul>
 
 

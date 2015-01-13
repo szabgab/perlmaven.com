@@ -58,9 +58,27 @@ dzil test
 well, of course after you've installed all the dependencies.
 
 
+<h2>More than one packaging system</h2>
+
+Normally only one of the 3 files: <hl>Build.PL</hl>, <hl>Makefile.PL</hl>, or <hl>dist.ini</hl> should be
+in the source code repository of every CPAN distribution BUT:
+
+When releasasing a distribtion Dist::Zilla will create a <hl>Makefile.PL</hl> file. Some developers add this
+to their version control system, even though they probably should not.
+
+
+Because for a long time Build.PL could not handle itself al
+There are cases where more
+
+
+
+<h2>Install dependencies</h2>
+
+Normally the Build.PL, the Makefile.PL, or the dist
+
+
 <h2>TODO</h2>
 
-Install dependencies?
 
 Ensure no tests are skipped due to lack of installed dependencies.
 
