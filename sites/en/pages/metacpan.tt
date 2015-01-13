@@ -16,6 +16,7 @@ and related sites. This page collects the articles and screencasts published on 
 <h2>For CPAN users</h2>
 
 <ul>
+  <li><a href="/metacpan-is-awesome">MetaCPAN is awesome!</a></li>
   <li><a href="/jumping-from-search-cpan-org-to-metacpan-org">Neat trick to jump from search.cpan.org to metacpan.org</a></li>
   <li><a href="/metacpan-search-tricks">Some MetaCPAN advanced search tricks using prefixes</a></li>
   <li><a href="/metacpan-urls-and-issues">MetaCPAN URLs and Issues</a></li>
