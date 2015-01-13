@@ -1,0 +1,20 @@
+=title MetaCPAN is awesome!
+=timestamp 2015-10-18T09:30:01
+=indexes MetaCPAN
+=tags screencast
+=status done
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+I don't have better words than <a href="http://metacpan.org/">MetaCPAN is simply awesome</a>!
+You can connect either with your PAUSE, Twitter, Facebook or Github account and vote on modules!
+With one click!
+
+=abstract end
+
+
+<iframe width="640" height="510" src="http://www.youtube.com/embed/7N1lZY5E5gg?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+(This video was recorded in July 2011, but I still think MetaCPAN is awesome!)
