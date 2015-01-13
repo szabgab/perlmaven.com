@@ -56,7 +56,11 @@ Most of them are relevant to this challenge as well.  <a href="http://blogs.perl
   <li><a href="http://blogs.perl.org/users/neilb/2014/07/give-your-modules-a-good-synopsis.html">Write a good SYNOPSIS</a></li>
   <li><a href="http://blogs.perl.org/users/neilb/2014/07/give-your-modules-a-good-abstract.html">Write a good abstract</a></li>
   <li><a href="http://blogs.perl.org/users/neilb/2014/08/try-travis-ci-with-your-cpan-distributions.html">Add Travis-CI to the distribution</a></li>
-  <li>And a few other related articles</li>
+</ul>
+
+And a few other related articles:
+
+<ul>
   <li><a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">How to convince Meta CPAN to show a link to the version control system of a distribution?</a></li>
   <li><a href="/how-to-add-the-license-field-to-meta-files-on-cpan">How to add the license field to the META.yml and META.json files on CPAN?</a></li>
 </ul>
