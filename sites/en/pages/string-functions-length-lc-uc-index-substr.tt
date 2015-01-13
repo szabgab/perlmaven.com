@@ -2,6 +2,7 @@
 =timestamp 2013-02-20T14:45:56
 =description perl substr(STRING, OFFSET, LENGTH, REPLACEMENT) - extract any part of a string; index(STRING, STR, OFFSET) - return location of substring
 =indexes length, lc, uc, index, substr, scalar
+=tags screencast
 =status show
 =books beginner_book
 =author szabgab
@@ -13,6 +14,8 @@ In this part of the <a href="/perl-tutorial">Perl Tutorial</a> we are going to l
 about some of the functions Perl provides for manipulating strings.
 
 =abstract end
+
+<iframe width="640" height="510" src="http://www.youtube.com/embed/U2B5ZD59L7g?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 <h2>lc, uc, length</h2>
 
