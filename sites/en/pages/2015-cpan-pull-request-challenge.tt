@@ -63,6 +63,7 @@ And a few other related articles:
 <ul>
   <li><a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">How to convince Meta CPAN to show a link to the version control system of a distribution?</a></li>
   <li><a href="/how-to-add-the-license-field-to-meta-files-on-cpan">How to add the license field to the META.yml and META.json files on CPAN?</a></li>
+  <li><a href="/contributing-to-a-perl-module-on-cpan-using-vim-and-github">Contributing to a CPAN module (using Github)</a></li>
 </ul>
 
 
