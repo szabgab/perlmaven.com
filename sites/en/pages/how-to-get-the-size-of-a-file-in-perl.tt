@@ -55,7 +55,7 @@ my $size = (stat $filename)[7];
 say $size;
 </code>
 
-We don't even need the <hl>$size</hl> variable for that but we cannot simply write 
+We don't even need the <hl>$size</hl> variable for that, but we cannot simply write 
 <hl>say (stat $filename)[7];</hl> or <hl>print (stat $filename)[7];</hl>.
 
 The reason is that in this case perl will think the parentheses are part of the <hl>say</hl>
