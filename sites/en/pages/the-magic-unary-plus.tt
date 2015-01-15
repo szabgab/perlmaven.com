@@ -90,6 +90,6 @@ That a lot of code, but at least we have our extra parens back wrapping the para
 <a href="https://metacpan.org/pod/B::Deparse">B::Deparse</a> can be useful when you need to know how perl
 understands a code snippet.
 
-Check out the other <a href="/search?keyword=B::Deparse">articles about B::Deparse</a>.
+Check out the other <a href="/search/B::Deparse">articles about B::Deparse</a>.
 
 
