@@ -47,9 +47,8 @@ my $frozen = Storable::freeze $data;
 
 <h2>B::Deparse</h2>
 
-B::Deparse 모듈을 다시 사용해봅시다. 이 모듈은 
-Let's try to use B::Deparse again. Once it already
-<a href="http://perlmaven.com/bug-in-the-for-loop-b-deparse-to-the-rescue">for 루프 문제를 해결하는데 도움이 되었었습니다</a>.
+B::Deparse 모듈을 다시 사용해봅시다. 이 모듈은 예전에
+<a href="http://perlmaven.com/bug-in-the-for-loop-b-deparse-to-the-rescue">for 루프 문제를 해결하는 데에도 도움이 되었었습니다</a>.
 
 스크립트 첫번째 버전을 <hl>perl -MO=Deparse  store.pl</hl>과 같이 실행해봅시다:
 
