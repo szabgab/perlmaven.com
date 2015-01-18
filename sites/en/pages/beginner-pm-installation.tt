@@ -1,0 +1,27 @@
+=title Welcome and Installation
+=timestamp 2015-01-18T21:01:50
+=indexes DWIM Perl
+=status draft
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Welcome to the course and how to install Perl on Windows. This still shows the "Padre on Strawberry Perl" package even
+though it was already superseded by <a href="http://dwimperl.com/windows.html">DWIM Perl for Windows</a>.
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/introduction/installation" />
+
+
+<ul>
+  <li><a href="http://www.activestate.com/">ActiveState</a></li>
+  <li><a href="http://strawberryperl.com/">Strawberry Perl</a></li>
+  <li><a href="http://padre.perlide.org/">Padre, the Perl IDE</a></li>
+  <li><a href="http://dwimperl.com/">DWIM Perl</a></li>
+</ul>
+
+See also:
+<a href="/installing-perl-and-getting-started">Installing and getting started with Perl</a>
