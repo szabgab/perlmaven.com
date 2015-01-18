@@ -18,17 +18,10 @@ useful Perl scripts and/or to maintaining existing scripts.
 You can get access to all the video by signing up to the <a href="/pro">Perl Maven Pro</a>
 subscription service.
 
-<h2>FREE preview</h2>
-
-Before you subscribe to the Perl Maven channel to watch the videos you might want to see
-how these look like. Watch the one about <a href="/pro/beginner-perl/the-year-of-19100">the Year of 19100</a>.
-
-
-
 <h2>Table of Contents</h2>
 <h3>Introduction</h3>
 <ul>
-  <li><a href="/pro/beginner-perl/installation">Welcome and installation</a></li>
+  <li><a href="/beginner-perl-maven-installation">Welcome and installation</a></li>
   <li><a href="/pro/beginner-perl/editors">Editors, IDEs</a></li>
   <li><a href="/pro/beginner-perl/command-line">Command line</a></li>
   <li><a href="/pro/beginner-perl/hello-world">Hello World</a></li>
