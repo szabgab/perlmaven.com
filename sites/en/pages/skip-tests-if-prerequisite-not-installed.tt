@@ -1,7 +1,7 @@
 =title Skip tests if prerequisites are not installed 
-=timestamp 2014-01-15T07:30:01
+=timestamp 2015-01-19T17:00:01
 =indexes Test::Pod, Test::Pod::Coverage, Test::Version, Test::Perl::Critic, Travis-CI, Test::DistManifest, Test::CheckManifest, Test::Code::TidyAll
-=status done
+=status show
 =books beginner_book
 =author szabgab
 =comments_disqus_enable 1
