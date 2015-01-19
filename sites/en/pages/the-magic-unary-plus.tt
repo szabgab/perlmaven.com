@@ -60,7 +60,7 @@ run <hl>perl -MO=Deparse plus.pl</hl>, and the result is:
 
 <b>What???</b>
 
-That's surprising, and for a few seconds you don't really know what does tat mean, but then you remember that <hl>say</hl>
+That's surprising, and for a few seconds you don't really know what does that mean, but then you remember that <hl>say</hl>
 is not part of perl by default. You need to tell somehow that you want the <hl>say</hl> function to be part of your language.
 For example by writing <hl>use 5.010;</hl>.
 
