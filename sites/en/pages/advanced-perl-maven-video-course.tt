@@ -33,13 +33,32 @@ it will teach you how to use modern Perl tools to write new,
   <li>Object Oriented Programming in Perl (with and without Moose)</li>
 </ul>
 
-By purchasing the video you get unlimited updates as new editions are published!
+<h2>Episodes</h2>
 
-<table border="1">
-<tr><td>What</td><td>Details</td><td>Price</td></tr>
-<tr><td>Video course</td><td> 84 screencasts,<br /> a total of more than 2 hours of screencasts<br />+ explanation of
-the solutions.</td><td><div class="btn"><a href="http://ude.my/vtoOgj">Buy for $69</a></div></td></tr>
-</table>
+<h2>Libraries and Modules</h2>
+
+<ul>
+  <li><a href="/pro/perl4-libraries">Perl 4 libraries</a></li>
+  <li><a href="/pro/the-problem-with-libraries">The problem with Perl 4-style libraries</a></li>
+</ul>
+
+<h2>Object Oriented using Moose</h2>
+<ul>
+  <li><a href="/pro/moose-constructor">Moose constructor</a></li>
+  <li><a href="/pro/moose-test-constructor">Moose: Testing the constructor</a></li>
+  <li><a href="/pro/moose-test-setter-getter">Moose test setter getter</a></li>
+  <li><a href="/pro/moose-type-constraint">Moose type constraint</a></li>
+  <li><a href="/pro/moose-test-type-constraint">Moose testing type constraint</a></li>
+  <li><a href="/pro/moose-classes-as-constraints">Moose classes as constraints</a></li>
+  <li><a href="/pro/moose-creating-subtypes">Moose creating subtypes</a></li>
+  <li><a href="/pro/moose-coerce-to-subtype">Moose coerce to subtype</a></li>
+  <!-- see also on the /moose page -->
+</ul>
+
+
+<!--
+  <li><a href=""></a></li>
+--
 
 <h2>What do people say?</h2>
 
@@ -61,4 +80,16 @@ i was looking for help using perl Dancer and found your blog tutorial.
 </code>
 
 <a href="http://twitter.com/#!/captain_fwiffo">Captain Fwiffo</a>
+
+
+
+<!--
+By purchasing the video you get unlimited updates as new editions are published!
+
+<table border="1">
+<tr><td>What</td><td>Details</td><td>Price</td></tr>
+<tr><td>Video course</td><td> 84 screencasts,<br /> a total of more than 2 hours of screencasts<br />+ explanation of
+the solutions.</td><td><div class="btn"><a href="http://ude.my/vtoOgj">Buy for $69</a></div></td></tr>
+</table>
+-->
 
