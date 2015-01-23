@@ -1,0 +1,50 @@
+=title Editors, IDEs
+=timestamp 2015-01-23T07:01:24
+=indexes vim, emacs, Kate, Gedit, Notepad++, TextPad, Ultra Edit, TextMade, Komodo, Eclipse, Padre
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Editors and IDEs
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/editors" />
+
+
+<h2>Mostly for Linux/Unix</h2>
+<ul>
+  <li><a href="http://www.gnu.org/software/emacs/">Emacs</a></li>
+  <li><a href="http://www.vim.org/">vi, vim, gvim </a></li>
+  <li><a href="http://kate-editor.org/">Kate</a></li>
+  <li><a href="http://projects.gnome.org/gedit/">Gedit</a></li>
+</ul>
+
+<h2>Programmer's editors for Windows</h2>
+<ul>
+  <li><a href="http://notepad-plus-plus.org/">Notepad++</a></li>
+  <li><a href="http://www.textpad.com/">Textpad</a></li>
+  <li><a href="http://www.ultraedit.com/">Ultra Edit</a></li>
+</ul>
+
+<h2>Editor for Mac</h2>
+<ul>
+  <li><a href="http://macromates.com/">TextMate</a></li>
+</ul>
+
+<h2>IDEs</h2>
+<ul>
+  <li><a href="http://www.activestate.com/">Komodo of ActiveState</a></li>
+  <li><a href="http://www.eclipse.org/">Eclipse</a> with EPIC</li>
+  <li><a href="http://padre.perlide.org/">Padre, the Perl IDE</a> (bundled with <a href="http://dwimperl.com/">DWIM Perl</a>)
+  (Padre stands for <b>Perl Application Development and Refactoring Environment</b>)</li>
+</ul>
+
+See also the article about <a href="/perl-editor">editors and IDEs</a> with some extra comments.
+
+(Unfortunately since the recording of this video the development of Padre has almost halted, but its source code was moved to GitHub,
+so it will be very easy for you to pick up the pieces and improve it yourself.)
