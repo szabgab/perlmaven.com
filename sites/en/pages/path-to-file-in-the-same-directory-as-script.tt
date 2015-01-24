@@ -31,10 +31,9 @@ and of itself.
 
 <p>Can you tell what each of the following lines of code does?</p>
 
+(<a id="exampleA" href="https://bitbucket.org/jpeacock/version/src/d0a8bd97c2d89b0f72a314d39e10f237b2768f55/t/00impl-pp.t?at=default#cl-10">A</a>)
 <code lang="perl">
-(<a id="exampleA">A</a>) <a
-href="https://bitbucket.org/jpeacock/version/src/d0a8bd97c2d89b0f72a314d39e10f237b2768f55/t/00impl-pp.t?at=default#cl-10">(my
-$coretests = $0) =~ s'[^/]+\.t'coretests.pm';</a>
+(my $coretests = $0) =~ s'[^/]+\.t'coretests.pm';
 </code>
 
 <p>and</p>
