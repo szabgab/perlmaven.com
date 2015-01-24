@@ -72,10 +72,10 @@ subsequent line. Of course, there are many ways the substitution
 most straightforward cause of failure would be due to code being run on a
 system that does not use <b>/</b> as a directory separator in file names.
 
-While it is true that internal Windows APIs do not mind if you give them
-Unix style paths, programs invoked via the shell do not offer that luxury.
-Given that most Windows console programs, following the DOS tradition,
-use the <b>/</b> character for command line options.
+It is true that internal Windows APIs do not mind if you give them Unix
+style paths. But, programs invoked via the shell do not offer that luxury.
+Instead, most Windows console programs, following the DOS tradition, use the
+<b>/</b> character for command line options.
 
 When this test script is invoked as <code>t\00impl-pp.t</code>, the
 substitution ends up replacing the entire path in <hl>$coretests</hl> with
