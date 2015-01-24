@@ -82,7 +82,7 @@ substitution ends up replacing the entire path in <hl>$coretests</hl> with
 
 Similarly, the code in <a href="#exampleB">example&nbsp;B</a> simply tries
 to capture the path to the directory containing the current executable. Once
-gain, this fails on Windows because the path in <hl>$0</hl> is unlikely
+again, this fails on Windows because the path in <hl>$0</hl> is unlikely
 to contain a <b>/</b> in the right spot. In fact, much hilarity can
 ensue if the path contains a mixture of <b>\</b> and <b>/</b> as
 directory separators.
@@ -140,18 +140,31 @@ my $coretests = File::Spec->catfile($Bin, 'coretests.pm');
 been in the core since 5.000. You can simply do:
 
 <code lang="perl">
-my $bindir = dirname $0;
+use File::Basename ();
+my $bindir = File::Basename::dirname($0);
 </code>
 
-Now, this function tries to emulate the shell function by the same name, and
-you can't rely on whether the returned path includes a trailing directory
+This function tries to emulate the shell function by the same name, and you
+can't rely on whether the returned path includes a trailing directory
 separator, so, it may not be suitable in all circumstances, but, if anything
-does go wrong, at least the person who is trying to diagnose your code will
-know what you were trying to do.
+does go wrong, at least the person who is trying to diagnose your code
+will know what you were trying to do.
 
-Also, keep in mind that, as with <hl>$FindBin::Bin</hl> we still need a
-facility to portably concatenate a file name to this path. Therefore, you
-may just want to move directly to <hl>File::Spec</hl>.
+Keep in mind that, as with <hl>$FindBin::Bin</hl> we still need a facility
+to portably concatenate a file name to this path. Therefore, you may just
+want to move directly to <hl>File::Spec</hl>.
+
+One could also take advantage of the <a href="https://metacpan.org/pod/lib">lib</a>
+module to avoid having to explicitly construct the path to the file to be required:
+
+<code lang="perl">
+use File::Basename ();
+use lib File::Basename::dirname( $0 );
+
+# ...
+
+require coretests;
+</code>
 
 <h3>File::Spec</h3>
 
