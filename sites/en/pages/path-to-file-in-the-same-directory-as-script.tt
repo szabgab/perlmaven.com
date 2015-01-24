@@ -31,17 +31,16 @@ and of itself.
 
 <p>Can you tell what each of the following lines of code does?</p>
 
-(<a id="exampleA" href="https://bitbucket.org/jpeacock/version/src/d0a8bd97c2d89b0f72a314d39e10f237b2768f55/t/00impl-pp.t?at=default#cl-10">A</a>)
+(<a id="exampleA" href="https://bitbucket.org/jpeacock/version/src/d0a8bd97c2d89b0f72a314d39e10f237b2768f55/t/00impl-pp.t?at=default#cl-10">example A</a>)
 <code lang="perl">
 (my $coretests = $0) =~ s'[^/]+\.t'coretests.pm';
 </code>
 
 <p>and</p>
 
+(<a id="exampleB" href="https://github.com/ingydotnet/testml-pm/blob/80bda24252882194342a8bb1384d7c6e0e09a93f/lib/TestML/Runtime.pm#L19">example B</a>)
 <code lang="perl">
-(<a id="exampleB">B</a>) <a
-href="https://github.com/ingydotnet/testml-pm/blob/80bda24252882194342a8bb1384d7c6e0e09a93f/lib/TestML/Runtime.pm#L19">$self->{base}
-||= $0 =~ m!(.*)/! ? $1 : ".";</a>
+$self->{base} ||= $0 =~ m!(.*)/! ? $1 : ".";
 </code>
 
 <a href="#exampleA">Example&nbsp;A</a> is from <a href="https://metacpan.org/pod/version">version.pm</a>
