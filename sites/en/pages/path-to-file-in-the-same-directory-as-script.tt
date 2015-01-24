@@ -1,7 +1,7 @@
 =title Construct the path to a file in the same directory as the current script
-=timestamp 2014-01-15T07:30:01
+=timestamp 2015-01-24T22:30:01
 =indexes FindBin::Bin, File::Basename, File::Spec, Path::Tiny
-=status draft
+=status show
 =author nanis
 =archive 1
 =comments_disqus_enable 1
