@@ -13,14 +13,14 @@ clearer than some random regexp pattern that "works" for you.
 <h2>Motivation</h2>
 
 We live in a world where most of the a lot of developers can do just fine
-pretending that everything runs on a kind of a Unixy operating system.
-This seems to have led to programmers forgetting or never learning some
+pretending that everything runs on a kind of a Unixy operating system.  This
+seems to have led to programmers forgetting, or never learning, some
 important lessons in how to deal portably with operations involving files
 and directories.
 
 Even if you do not care about your code being able to run on a system that
-has different rules, using the facilities Perl and CPAN provide would add
-much needed amount clarity to your code which I regard as a worth goal in
+has different rules, using the facilities Perl and CPAN provide would add a
+much needed amount clarity to your code which I regard as a worthy goal in
 and of itself.
 
 <h2>A couple of cases in point</h2>
@@ -49,19 +49,25 @@ hand, <hl>TestML</hl> seems to be a sneaky dependency for the new
 <hl>Inline::C</hl> via Pegex. I am mentioning this to underline the fact
 that these are not modules no one cares about.
 
-Yet, their test code includes these two lines. I only became aware of these
-due to unexpected test failures on my perl 5.20.1 built using Microsoft's
-Visual Studio 2013 Community Edition on my Windows 8.1 system.
+Yet, their test code includes these unportable and opaque lines. I only
+became aware of these due to unexpected test failures on my <a
+href="http://blog.nu42.com/2014/11/64-bit-perl-5201-with-visual-studio.html">perl
+5.20.1 built using Microsoft's Visual Studio 2013 Community Edition</a> on
+ my Windows 8.1 system.
 
 But, let's get back to the topic: What do these lines do?
 
 <a href="#exampleA">Example&nbsp;A</a> is an attempt to construct a path to
-the file coretests.pm which is assumed to be in the same directory as the
-current script. This file is then <a
+the file <hl>coretests.pm</hl> which is assumed to be in the same directory as the
+current script. This is similar to <a
+href="http://perlmaven.com/pro/how-to-add-a-relative-directory-to-inc">adding
+a directory relative to the current script's location</a>.
+
+This file whose path is thus constructed is then <a
 href="https://metacpan.org/pod/perlfunc#require ">require</a>d on the
-subsequent line. Of course, there are many ways
-<hl>s'[^/]+\.t'coretests.pm'</hl> can fail to work as intended, but the most
-straightforward cause of failure would be due to code being run on a
+subsequent line. Of course, there are many ways the substitution
+<hl>s'[^/]+\.t'coretests.pm'</hl> can fail to work as intended, but the
+most straightforward cause of failure would be due to code being run on a
 system that does not use <b>/</b> as a directory separator in file names.
 
 While it is true that internal Windows APIs do not mind if you give them
@@ -70,8 +76,8 @@ Given that most Windows console programs, following the DOS tradition,
 use the <b>/</b> character for command line options.
 
 When this test script is invoked as <code>t\00impl-pp.t</code>, the
-substitution ends up replacing the entire path in <hl>>$coretests</hl> with
-<hl>>'coretests.pm'</hl>, and therefore the following
+substitution ends up replacing the entire path in <hl>$coretests</hl> with
+<hl>'coretests.pm'</hl>, and therefore the following
 <hl>require</hl> looks for this file in the wrong directory.
 
 Similarly, the code in <a href="#exampleB">example&nbsp;B</a> simply tries
@@ -85,13 +91,14 @@ directory separators.
 
 There are a number of ways of figuring out the directory in which the
 currently running script is located. Each and every one of these would be a
-better solution than these regular expression patterns. First, their use
-would make it clear to the person reading your code the intent behind the
-code. Second, if some other operating system with some other directory
-separator became popular, you wouldn't have to locate each and every place
-where you have used a string operation on a file name to make your code work
-again. Third, these methods are likely to be a lot more robust than your
-regular expression based solution.
+better solution than these regular expression patterns.
+
+First, their use would make it clear to the person reading your code the
+intent behind the code. Second, if some other operating system with some
+other directory separator became popular, you wouldn't have to locate each
+and every place where you have used a string operation on a file name to
+make your code work again. Third, these methods are likely to be a lot more
+robust than your regular expression based solution.
 
 For example, suppose you were running the test file from version.pm in the
 following fashion:
@@ -106,7 +113,8 @@ same directory as the current script, you can use the facilities offered by
 Perl and CPAN, and enjoy the benefits of the correctness and clarity they
 offer.
 
-Here are some alternatives:
+Here are some alternatives. This is not an exhaustive list. In fact, I have
+purposefully omitted a few for the sake of stimulating some discussion.
 
 <h3>Good old $FindBin::Bin</h3>
 
