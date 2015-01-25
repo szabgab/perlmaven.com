@@ -56,6 +56,8 @@ Most of them are relevant to this challenge as well.  <a href="http://blogs.perl
   <li><a href="http://blogs.perl.org/users/neilb/2014/07/give-your-modules-a-good-synopsis.html">Write a good SYNOPSIS</a></li>
   <li><a href="http://blogs.perl.org/users/neilb/2014/07/give-your-modules-a-good-abstract.html">Write a good abstract</a></li>
   <li><a href="http://blogs.perl.org/users/neilb/2014/08/try-travis-ci-with-your-cpan-distributions.html">Add Travis-CI to the distribution</a></li>
+  <li><a href="https://github.com/blog/1943-how-to-write-the-perfect-pull-request">How to write the perfect pull request</a></li>
+  <li><a href="http://codeinthehole.com/writing/pull-requests-and-other-good-practices-for-teams-using-github/">Effective pull requests and other good practices for teams using github</a></li>
 </ul>
 
 And a few other related articles:
