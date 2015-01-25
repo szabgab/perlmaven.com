@@ -16,6 +16,15 @@ from an array, but there are several solutions to the problem.
 
 =abstract end
 
+<h2>A small calrification</h2>
+
+I am not native English speaker, but it seems that at least in the world of computers, the word <b>unique</b> is a bit overloaded.
+As far as I can tell in most programming environments the word <b>unique</b> is a synonime of the word <b>distinct</b> and in
+this article we use that meaning. So given a list of values like this <hl>foo, bar, baz, foo, zorg, baz</hl> by <b>unique values</b>,
+we mean <hl>foo, bar, baz, zorg</hl>.
+
+The other meaning would be "those values that appear only once" which would give us <hl>bar, zorg</hl>.
+
 <h2>List::MoreUtils</h2>
 
 Depending on your situation, probably the simplest way is to use the <hl>uniq</hl>
@@ -270,6 +279,10 @@ my @unique = keys { map { $_ => 1 } @data };
 
 and we'll get back the unique values from <hl>@data</hl>
 
+<h2>Unique values in an array reference</h2>
+
+There is a separate article showing the above solution in case the data
+is in an <a href="/unique-values-in-an-array-reference-in-perl">reference to an array</a>.
 
 <h2>Exercise</h2>
 
