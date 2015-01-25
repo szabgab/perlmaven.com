@@ -1,7 +1,7 @@
 =title Unique values in an array reference in Perl
 =timestamp 2015-01-25T09:42:56
 =indexes unique, uniq, distinct, filter, grep, array
-=status draft
+=status done
 =books beginner_book
 =author szabgab
 =comments_disqus_enable 1
