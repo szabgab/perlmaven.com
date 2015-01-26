@@ -38,10 +38,11 @@ it will teach you how to use modern Perl tools to write new,
 <h2>Libraries and Modules</h2>
 
 <ul>
+  <li><a href="/pro/introduction-to-advanced-perl-course">Introduction to the Advanced Perl Maven course</a></li>
   <li><a href="/pro/perl4-libraries">Perl 4 libraries</a></li>
   <li><a href="/pro/the-problem-with-libraries">The problem with Perl 4-style libraries</a></li>
   <li><a href="/pro/namespaces-and-packages">Namespaces or packages</a></li>
-  <li><a href="/pro/modules">modules</a></li>
+  <li><a href="/pro/modules">Modules</a></li>
 </ul>
 
 <h2>Object Oriented using Moose</h2>
