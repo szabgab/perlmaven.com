@@ -16,11 +16,10 @@ clearer than some random regexp pattern that "works" for you.
 
 <h2>Motivation</h2>
 
-We live in a world where most of the a lot of developers can do just fine
-pretending that everything runs on a kind of a Unixy operating system.  This
-seems to have led to programmers forgetting, or never learning, some
-important lessons in how to deal portably with operations involving files
-and directories.
+We live in a world where most developers can do just fine pretending that
+everything runs on a kind of a Unixy operating system.  This seems to have
+led to programmers forgetting, or never learning, some important lessons in
+how to deal portably with operations involving files and directories.
 
 Even if you do not care about your code being able to run on a system that
 has different rules, using the facilities Perl and CPAN provide would add a
