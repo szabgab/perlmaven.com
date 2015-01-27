@@ -96,7 +96,7 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 * Please add the header to each file (the meta information) including the planned publication date
 * The links in the page should be working. If there is already a translation for the target page then link there,
   if it only exists in English, then please use full URLs including the hostname http://perlmaven.com/ .
-* Please update the hidden(!) section of the perl-tutorial.tt to include the links to the entries.
+* Please update the hidden(!) section of the perl-tutorial.txt to include the links to the entries.
 * The text listing the author and the translator are added by the system and are driven from the header
   tags =author and =translator.
 * Each author and translator has to have an entry in the authors.txt file listing a nickname (\w characters only),
@@ -111,7 +111,7 @@ the way Wikipedia describes: https://meta.wikimedia.org/wiki/List_of_Wikipedias
 The translation process:
 * The translator creates a new file in the sites/CC/drafts folder.
 * When s/he has finished the translations s/he
-  adds the link to the translation in the perl-tutorials.tt file in the open part,
+  adds the link to the translation in the perl-tutorials.txt file in the open part,
   and moves the translated file to the sites/CC/pages folder.
   and updates the =timestamp in the translated file to the current date/time, or slightly
   in the future (maybe 12 hours) to allow Gabor the time to publish it.
@@ -151,15 +151,15 @@ Getting started with the translation
     * Check on https://meta.wikimedia.org/wiki/List_of_Wikipedias what should be the hostname for the language
       and talk to Gabor about this.
     * cp -r skeleton sites/CC     (where CC is the hostname selected)
-* translate the first page sites/en/pages/installing-perl-and-getting-started.tt as
-                           sites/CC/drafts/installing-perl-and-getting-started.tt
-  or as                    sites/CC/drafts/TRANSLATED-BUT-TRANSLITERATED-TITLE.tt
+* translate the first page sites/en/pages/installing-perl-and-getting-started.txt as
+                           sites/CC/drafts/installing-perl-and-getting-started.txt
+  or as                    sites/CC/drafts/TRANSLATED-BUT-TRANSLITERATED-TITLE.txt
   as is acceptable in other sites in your language.
 * Add =original and =translator entries to the translated file
 * Add yourself to the authors.txt file and add a 128x128 picture of yourself to the sites/en/img/ folder.
 * Please read  option 2 here: http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
    and add the perlmaven.com site to the list of where you contribute.
-* Update sites/CC/pages/perl-tutorial.tt to include the page in the commented-out section.
+* Update sites/CC/pages/perl-tutorial.txt to include the page in the commented-out section.
 * Push your changes to your forked repository and send a pull request
 
 
@@ -290,7 +290,7 @@ be done once.
 Once the translation is ready. The file can be moved from drafts/ to pages/
 by either the translator or the reviewer:
 
-    $ git mv sites/CC/drafts/article.tt sites/CC/pages/article.tt
+    $ git mv sites/CC/drafts/article.txt sites/CC/pages/article.txt
 
 pushed it to Github and a merge request can be sent to Gabor.
 
