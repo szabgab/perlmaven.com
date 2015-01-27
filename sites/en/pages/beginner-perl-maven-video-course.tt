@@ -27,7 +27,7 @@ subscription service.
   <li><a href="/pro/beginner-perl/command-line">Command line</a></li>
 -->
   <li><a href="/beginner-perl-maven-hello-world">Hello World</a></li>
-  <li><a href="/pro/beginner-perl/safety-net">Safety Net</a></li>
+  <li><a href="/beginner-perl-maven-safety-net">Safety net (use strict; use warnings;)</a></li>
   <li><a href="/pro/beginner-perl/debugging">Debugging</a></li>
   <li><a href="/pro/beginner-perl/comments">Comments</a></li>
   <li><a href="/pro/beginner-perl/documentation">Documentation of Perl</a></li>
