@@ -14,15 +14,15 @@ use Test::More;
 
 my $root = dirname dirname abs_path $0;
 my @languages = map { basename $_ } glob "$root/sites/*";
-my %META_PAGE = map { $_ => 1 } qw(index.tt about.tt keywords.tt archive.tt products.tt perl-tutorial.tt contributor.tt);
-my %english = map { substr(basename($_), 0, -3), 1 } glob "$root/sites/en/pages/*.tt";
+my %META_PAGE = map { $_ => 1 } qw(index.txt about.txt keywords.txt archive.txt products.txt perl-tutorial.txt contributor.txt);
+my %english = map { substr(basename($_), 0, -3), 1 } glob "$root/sites/en/pages/*.txt";
 my %authors = read_authors();
 my %sitemap;
 #my $tidy = html_tidy();
 
 foreach my $lang (@languages) {
 
-	my @pages = grep { ! $META_PAGE{ basename $_ } } glob "$root/sites/$lang/pages/*.tt";
+	my @pages = grep { ! $META_PAGE{ basename $_ } } glob "$root/sites/$lang/pages/*.txt";
 	foreach my $file (@pages) {
 		if ($lang eq 'en') {
 			#my $html = path($file)->slurp_utf8;

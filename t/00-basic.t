@@ -18,7 +18,7 @@ eval {
 ok !$@, "Loading $sites" or diag $@;
 
 my $rule = Path::Iterator::Rule->new;
-$rule->name('*.tt');
+$rule->name('*.txt');
 my $it = $rule->iter('.');
 while ( my $file = $it->() ) {
 	#diag $file;
