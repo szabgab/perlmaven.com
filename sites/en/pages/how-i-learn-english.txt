@@ -13,24 +13,28 @@ Communication is impossible without knowledge of the language. From my point of 
 =abstract end
 
 English language will allow you:
-- to share your own experience and get it from developers and communities from another countries
-- to read documentations quickly and carefully
-- to talk to tech support directly using forums
-- to read books which will never be translated into your native language
-- to visit international summits without translator
-- and of course to write code without shameful mistakes
+<ul>
+  <li> To share your own experience and get it from developers and communities from another countries.
+  <li> To read documentations quickly and carefully.
+  <li> To talk to tech support directly using forums.
+  <li> To read books which will never be translated into your native language.
+  <li> To visit international summits without translator.
+  <li> And of course to write code without shameful mistakes.
+</ul>
 
 Eventually I realized that only technical English is not enough absolutely because even technical people use a lot of expressions. Most of them you won't be able to understand therefore you'll lose the meaning of phrase. But that phrase might be really important. So I began learning English.
 
 What I did:
-- set English language for interfaces of all my devices (computer, mobile phone...)
-- started studying at an english school near my home. It's just for motivating and keeping up the rhythm. And I have an opportunity to talk to teachers and other students in the school.
-- vocabulary is a big problem with studying languages. For improving it I use online-service http://lingualeo.com. You can watch videos, listen to the music, read texts and exercise words you want to remember.  It has mobile applications too. I use it while going to work.
-- began translating english articles but it's difficult if you have lack of time
-- subscribed on podcasts. It's convenient when you can't read for example. While cooking or walking on your feet. New poscasts automatically downloads on my ipad and deletes after listening.
-- started using English for searching something on the web. It was difficult at the beginning.
-- to be honest, I didn't begin reading professional books immediately because it's important for me to read it quick. If I have a translation of this books I prefer translation. My vocabulary is not enough good. But I read many technical articles on the web during the day.
-- if you want to improve speaking I suggest you to find speaking club in your city. Just for training your speech.
+<ul>
+  <li> Set English language for interfaces of all my devices (computer, mobile phone...).
+  <li> Started studying at an english school near my home. It's just for motivating and keeping up the rhythm. And I have an opportunity to talk to teachers and other students in the school.
+  <li> Vocabulary is a big problem with studying languages. For improving it I use online-service <a href="http://lingualeo.com" target="_blank">http://lingualeo.com</a>. You can watch videos, listen to the music, read texts and exercise words you want to remember.  It has mobile applications too. I use it while going to work.
+  <li> Began translating english articles but it's difficult if you have lack of time.
+  <li> Subscribed on podcasts. It's convenient when you can't read for example. While cooking or walking on your feet. New poscasts automatically downloads on my ipad and deletes after listening.
+  <li> Started using English for searching something on the web. It was difficult at the beginning.
+  <li> To be honest, I didn't begin reading professional books immediately because it's important for me to read it quick. If I have a translation of this books I prefer translation. My vocabulary is not enough good. But I read many technical articles on the web during the day.
+  <li> If you want to improve speaking I suggest you to find speaking club in your city. Just for training your speech.
+</ul>
 
 The most important thing is to keep up the rhythm.
 By this time I've been learning English for four month. It's not bad not I think.
