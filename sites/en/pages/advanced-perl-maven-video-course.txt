@@ -38,6 +38,8 @@ Some include screencasts, others contain just text.
   <li><a href="/pro/the-problem-with-libraries">The problem with Perl 4-style libraries</a></li>
   <li><a href="/pro/namespaces-and-packages">Namespaces or packages</a></li>
   <li><a href="/pro/modules">Modules</a></li>
+  <li><a href="/pro/require-at-inc">How does require find the module to be loaded?</a></li>
+
   <li>use, require and import</li>
   <li>Exporting selected functions</li>
   <li>@INC and the namespace hierarchy</li>
