@@ -32,8 +32,10 @@ Some include screencasts, others contain just text.
 
 <h2>References</h2>
 
-<ul>
-  <li>Handling mult-dimensional, complex data structures</li>
+<ol>
+<li>Introduction to References</li>
+  <li>Handling multi-dimensional, complex data structures</li>
+  <li>Manipulating Complex Data Structures</li>
   <li>Reference counting</li>
   <li>Debugging data structures</li>
   <li>Anonymous arrays and hashes</li>
@@ -49,42 +51,67 @@ Some include screencasts, others contain just text.
   <li>Array and hash slices</li>
   <li>Creating context sensitive functions using wantarray.</li>
   <li>Improving speed by using the Schwartzian transformation</li>
-</ul>
+  <li>Anonymous functions</li>
+  <li>Memoization</li>
+  <li>Data serialization</li>
+  <li>Practical use of function references</li>
+</ol>
 
 <h2>Libraries and Modules, Packages and Namespaces</h2>
 
-<ul>
+<ol>
   <li>Using namespaces for cleaner code</li>
-  <li>Creating a module</li>
+  <li>Creating libraries and modules</li>
   <li>Exporting functions automatically and on-demand</li>
   <li>use, require and import</li>
   <li>Packaging modules for distribution</li>
   <li>Writing unit tests</li>
   <li>Exception handling</li>
-</ul>
+</ol>
 
-<ul>
+<ol>
   <li><a href="/pro/introduction-to-advanced-perl-course">Introduction to the Advanced Perl Maven course</a></li>
   <li><a href="/pro/perl4-libraries">Perl 4 libraries</a></li>
   <li><a href="/pro/the-problem-with-libraries">The problem with Perl 4-style libraries</a></li>
   <li><a href="/pro/namespaces-and-packages">Namespaces or packages</a></li>
   <li><a href="/pro/modules">Modules</a></li>
-</ul>
+  <li>use, require and import</li>
+  <li>Exporting selected functions</li>
+  <li>@INC and the namespace hierarchy</li>
+  <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse?</a></li>
+</ol>
+
+<h2>Packaging modules for distribution</h2>
+<ol>
+  <li>The directory hierarchy of a CPAN module</li>
+  <li>Writing Unit Tests for Perl Modules</li>
+  <li>ExtUtils::MakeMaker</li>
+  <li>Module::Build</li>
+  <li>Module::Install</li>
+  <li>Dist::Zilla</li>
+</ol>
+
 
 <h2>Object Oriented Programming in Perl (with and without Moose)</h2>
-<ul>
-     <li>Constructor</li>
-     <li>Attributes, attribute types</li>
-     <li>Create your own type</li>
-     <li>Getters/Setters</li>
-     <li>Inheritance</li>
-     <li>Encapsulation</li>
-     <li>Singleton</li>
-     <li>Destructor</li>
-</ul>
+<ol>
+  <li>Constructors and destructors</li>
+  <li>Attributes, attribute types (members)</li>
+  <li>Create your own type</li>
+  <li>Getters/Setters</li>
+  <li>Inheritance</li>
+  <li>Polymorphism</li>
+  <li>Encapsulation</li>
+  <li>Singleton</li>
+  <li>Destructor</li>
+  <li>OOP: Bless, or what you will see in the wilde</li>
+  <li>OOP: Class::Accessor A small scale object oriented system in Perl</li>
+  <li>Class methods and Instance methods</li>
+  <li>Automatic Class creation</li>
+  <li><a href="/object-oriented-perl-using-moose">OOP: Creating a class with Moose</a></li>
+</ol>
 
 <h2>Object Oriented using Moose</h2>
-<ul>
+<ol>
   <li><a href="/pro/moose-constructor">Moose constructor</a></li>
   <li><a href="/pro/moose-test-constructor">Moose: Testing the constructor</a></li>
   <li><a href="/pro/moose-test-setter-getter">Moose test setter getter</a></li>
@@ -94,7 +121,40 @@ Some include screencasts, others contain just text.
   <li><a href="/pro/moose-creating-subtypes">Moose creating subtypes</a></li>
   <li><a href="/pro/moose-coerce-to-subtype">Moose coerce to subtype</a></li>
   <!-- see also on the /moose page -->
-</ul>
+</ol>
+
+<h2>Some other advanced topics</h2>
+
+<ol>
+  <li>Throwing exceptions in Perl</li>
+  <li>Catching exceptions in Perl</li>
+  <li>Always use strict and warnings</li>
+  <li><a href="/variable-declaration-in-perl">Variable declaration in Perl</a></li>
+  <li><a href="/symbolic-reference-in-perl">Symbolic references in Perl</a></li>
+  <li><a href="/barewords-in-perl">Barewords in Perl</a></li>
+  <li><a href="/how-to-capture-and-save-warnings-in-perl">How to handle warnings in an application?</a></li>
+  <li><a href="/unknown-warnings-category">Unknown warnings category</a>
+  <li>splain and use diagnostics</li>
+  <li>Fatal warnings</li>
+  <li>Array and hash slices</li>
+  <li><a href="/splice-to-slice-and-dice-arrays-in-perl">splice</a></li>
+  <li>AUTOLOAD</li>
+  <li>BEGIN and END</li>
+  <li>Schwartzian transformation</li>
+  <li>use autodie</li>
+  <li>Perl::Critic</li>
+  <li><a href="/avoid-unwanted-bitwise-operators">Avoid unwanted bitwise operators using Perl::Critic</a></li>
+  <li>Perl::Tidy</li>
+  <li>Saved variable: local</li>
+  <li>Who is calling? caller</li>
+  <li>Logging with Log::Dispatch</li>
+  <li>Time and date with DateTime</li>
+  <li><a href="/filtering-values-with-perl-grep">Filtering with grep in Perl</a></li>
+  <li><a href="/transforming-a-perl-array-using-map">Transforming a perl array using the map function</a></li>
+  <li>Signals and the kill function</li>
+  <li><a href="/the-default-variable-of-perl">default scalar variable of Perl</a></li>
+</ol>
+
 
 
 <!--
