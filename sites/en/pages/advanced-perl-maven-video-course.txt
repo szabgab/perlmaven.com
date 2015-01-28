@@ -30,6 +30,27 @@ Some of the episodes are already available, some are going to be published later
 Some require registrations to the <a href="/pro">Perl Maven Pro</a> others can be freely accessed by anyone.
 Some include screencasts, others contain just text.
 
+<h2>Libraries and Modules, Packages and Namespaces</h2>
+
+<ol>
+  <li><a href="/pro/introduction-to-advanced-perl-course">Introduction to the Advanced Perl Maven course</a></li>
+  <li><a href="/pro/perl4-libraries">Perl 4 libraries</a></li>
+  <li><a href="/pro/the-problem-with-libraries">The problem with Perl 4-style libraries</a></li>
+  <li><a href="/pro/namespaces-and-packages">Namespaces or packages</a></li>
+  <li><a href="/pro/modules">Modules</a></li>
+  <li>use, require and import</li>
+  <li>Exporting selected functions</li>
+  <li>@INC and the namespace hierarchy</li>
+  <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse?</a></li>
+  <li>Using namespaces for cleaner code</li>
+  <li>Creating libraries and modules</li>
+  <li>Exporting functions automatically and on-demand</li>
+  <li>use, require and import</li>
+  <li>Packaging modules for distribution</li>
+  <li>Writing unit tests</li>
+  <li>Exception handling</li>
+</ol>
+
 <h2>References</h2>
 
 <ol>
@@ -55,30 +76,6 @@ Some include screencasts, others contain just text.
   <li>Memoization</li>
   <li>Data serialization</li>
   <li>Practical use of function references</li>
-</ol>
-
-<h2>Libraries and Modules, Packages and Namespaces</h2>
-
-<ol>
-  <li>Using namespaces for cleaner code</li>
-  <li>Creating libraries and modules</li>
-  <li>Exporting functions automatically and on-demand</li>
-  <li>use, require and import</li>
-  <li>Packaging modules for distribution</li>
-  <li>Writing unit tests</li>
-  <li>Exception handling</li>
-</ol>
-
-<ol>
-  <li><a href="/pro/introduction-to-advanced-perl-course">Introduction to the Advanced Perl Maven course</a></li>
-  <li><a href="/pro/perl4-libraries">Perl 4 libraries</a></li>
-  <li><a href="/pro/the-problem-with-libraries">The problem with Perl 4-style libraries</a></li>
-  <li><a href="/pro/namespaces-and-packages">Namespaces or packages</a></li>
-  <li><a href="/pro/modules">Modules</a></li>
-  <li>use, require and import</li>
-  <li>Exporting selected functions</li>
-  <li>@INC and the namespace hierarchy</li>
-  <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse?</a></li>
 </ol>
 
 <h2>Packaging modules for distribution</h2>
