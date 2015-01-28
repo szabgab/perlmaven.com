@@ -47,12 +47,22 @@ Some include screencasts, others contain just text.
   <li>Exporting functions automatically and on-demand</li>
   <li>use, require and import</li>
   <li>Packaging modules for distribution</li>
-  <li>Writing unit tests</li>
+  <li>Writing Unit Tests for Perl Modules</li>
   <li>Exception handling</li>
+  <li>Exception handling with Try::Tiny</li>
+  <li>Warnings and errors from the users POV with Carp</li>
+  <li>Throwing exceptions with die and with Exception::Class</li>
+</ol>
+
+
+<h2>Using existing modules</h2>
+<ol>
+  <li>Using standard modules</li>
+  <li>Installing modules from CPAN</li>
+  <li>Using CPAN modules</li>
 </ol>
 
 <h2>References</h2>
-
 <ol>
 <li>Introduction to References</li>
   <li>Handling multi-dimensional, complex data structures</li>
@@ -64,6 +74,7 @@ Some include screencasts, others contain just text.
   <li>Dispatch tables</li>
   <li>Handling memory leak</li>
   <li>Deep copy of data structures</li>
+  <li>Static variables</li>
   <li>Closures</li>
   <li>Creating a caching system</li>
   <li>Signal handling</li>
@@ -99,12 +110,13 @@ Some include screencasts, others contain just text.
   <li>Polymorphism</li>
   <li>Encapsulation</li>
   <li>Singleton</li>
-  <li>Destructor</li>
+  <li>Destructor (DESTROY)</li>
   <li>OOP: Bless, or what you will see in the wilde</li>
   <li>OOP: Class::Accessor A small scale object oriented system in Perl</li>
   <li>Class methods and Instance methods</li>
   <li>Automatic Class creation</li>
   <li><a href="/object-oriented-perl-using-moose">OOP: Creating a class with Moose</a></li>
+  <li>Operator overloading</li>
 </ol>
 
 <h2>Object Oriented using Moose</h2>
