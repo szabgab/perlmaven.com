@@ -32,7 +32,7 @@ blended with the modern features of Perl and CPAN.
   <li>Using CPAN in an advanced way (changing @INC, using local::lib etc.)</li>
   <li>References
    <ul>
-     <li>handling mult-dimensional, complex data structures</li>
+     <li>Handling mult-dimensional, complex data structures</li>
      <li>Reference counting</li>
      <li>Debugging data structures</li>
      <li>Anonymous arrays and hashes</li>

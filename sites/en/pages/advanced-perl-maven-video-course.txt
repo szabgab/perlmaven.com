@@ -24,18 +24,44 @@ Taking this course will help you maintain existing code and
 it will teach you how to use modern Perl tools to write new,
 <b>nice and maintainable Perl code</b>.
 
-
 <h2>Table of Content</h2>
+
+Some of the episodes are already available, some are going to be published later on.
+Some require registrations to the <a href="/pro">Perl Maven Pro</a> others can be freely accessed by anyone.
+Some include screencasts, others contain just text.
+
+<h2>References</h2>
+
 <ul>
-  <li>References</li>
-  <li>Libraries and Modules, Package and Namespace</li>
-  <li>Packaging modules for distribution</li>
-  <li>Object Oriented Programming in Perl (with and without Moose)</li>
+  <li>Handling mult-dimensional, complex data structures</li>
+  <li>Reference counting</li>
+  <li>Debugging data structures</li>
+  <li>Anonymous arrays and hashes</li>
+  <li>Subroutine references</li>
+  <li>Dispatch tables</li>
+  <li>Handling memory leak</li>
+  <li>Deep copy of data structures</li>
+  <li>Closures</li>
+  <li>Creating a caching system</li>
+  <li>Signal handling</li>
+  <li>Handling warnings in the code</li>
+  <li>grep, map</li>
+  <li>Array and hash slices</li>
+  <li>Creating context sensitive functions using wantarray.</li>
+  <li>Improving speed by using the Schwartzian transformation</li>
 </ul>
 
-<h2>Episodes</h2>
+<h2>Libraries and Modules, Packages and Namespaces</h2>
 
-<h2>Libraries and Modules</h2>
+<ul>
+  <li>Using namespaces for cleaner code</li>
+  <li>Creating a module</li>
+  <li>Exporting functions automatically and on-demand</li>
+  <li>use, require and import</li>
+  <li>Packaging modules for distribution</li>
+  <li>Writing unit tests</li>
+  <li>Exception handling</li>
+</ul>
 
 <ul>
   <li><a href="/pro/introduction-to-advanced-perl-course">Introduction to the Advanced Perl Maven course</a></li>
@@ -43,6 +69,18 @@ it will teach you how to use modern Perl tools to write new,
   <li><a href="/pro/the-problem-with-libraries">The problem with Perl 4-style libraries</a></li>
   <li><a href="/pro/namespaces-and-packages">Namespaces or packages</a></li>
   <li><a href="/pro/modules">Modules</a></li>
+</ul>
+
+<h2>Object Oriented Programming in Perl (with and without Moose)</h2>
+<ul>
+     <li>Constructor</li>
+     <li>Attributes, attribute types</li>
+     <li>Create your own type</li>
+     <li>Getters/Setters</li>
+     <li>Inheritance</li>
+     <li>Encapsulation</li>
+     <li>Singleton</li>
+     <li>Destructor</li>
 </ul>
 
 <h2>Object Oriented using Moose</h2>
@@ -83,8 +121,6 @@ i was looking for help using perl Dancer and found your blog tutorial.
 </code>
 
 <a href="http://twitter.com/#!/captain_fwiffo">Captain Fwiffo</a>
-
-
 
 <!--
 By purchasing the video you get unlimited updates as new editions are published!
