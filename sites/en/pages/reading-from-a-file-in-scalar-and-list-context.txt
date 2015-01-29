@@ -1,8 +1,7 @@
 =title Reading from a file in scalar and list context
-=timestamp 2013-02-20T14:45:56
+=timestamp 2015-01-29T17:12:56
 =indexes scalar
-=status done
-=books beginner_book
+=status show
 =author szabgab
 =comments_disqus_enable 1
 
@@ -93,18 +92,4 @@ In that case it can be very useful to have the content of the whole file loaded
 into a single scalar variable. This what the Perl developers call <a href="/slurp">slurp mode</a>.
 In the referred article you can see examples how to read a file in slurp using core
 perl and how to do that using <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a>.
-
-
-
-<code lang="perl">
-</code>
-
-
-
-
-<code lang="perl">
-</code>
-
-
-
 
