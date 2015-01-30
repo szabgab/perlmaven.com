@@ -39,18 +39,15 @@ Some include screencasts, others contain just text.
   <li><a href="/pro/namespaces-and-packages">Namespaces or packages</a></li>
   <li><a href="/pro/modules">Modules</a></li>
   <li><a href="/pro/require-at-inc">How does require find the module to be loaded?</a></li>
+  <li><a href="/pro/use-require-import">What is the difference between require and use? What does import do?</a></li>
 
-  <li>use, require and import</li>
   <li>Exporting selected functions</li>
   <li>@INC and the namespace hierarchy</li>
   <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse?</a></li>
-  <li>Using namespaces for cleaner code</li>
-  <li>Creating libraries and modules</li>
   <li>Exporting functions automatically and on-demand</li>
-  <li>use, require and import</li>
   <li>Packaging modules for distribution</li>
   <li>Writing Unit Tests for Perl Modules</li>
-  <li>Exception handling</li>
+  <li>Exception handling with eval block</li>
   <li>Exception handling with Try::Tiny</li>
   <li>Warnings and errors from the users POV with Carp</li>
   <li>Throwing exceptions with die and with Exception::Class</li>
