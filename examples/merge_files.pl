@@ -12,7 +12,11 @@ foreach my $file (@sources) {
         while (my $line = <$in>) {
             print $out $line;
         }
+        close $in;
     } else {
         warn "Could not open '$file' for reading\n";
     }
 }
+close $out;
+
+print "done\n";
