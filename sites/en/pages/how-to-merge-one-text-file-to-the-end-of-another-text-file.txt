@@ -1,0 +1,40 @@
+=title How to merge one text file to the end of another text file?
+=timestamp 2015-01-30T07:30:01
+=indexes files, append, open, >>
+=status draft
+=books beginner_book
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Given one or more files, (e.g. <hl>1.txt</hl>, <hl>2.txt</hl>, <hl>3.txt<hl>, how can we merge them into another
+file, let's say called <hl>target.txt</hl>?
+
+=abstract end
+
+<h2>Unix/Linux specific non-Perl solution</h2>
+
+If you are using Linux or Unix the <hl>cat</hl> command can be used together with the <hl>&gt;&gt;</hl> redirection:
+
+<code>
+cat 1.txt 2.txt 3.txt >> target.txt
+</code>
+
+This will work regardless if <hl>target.txt</hl> existed before or not.
+
+<h2>Platform independent solution with Perl</h2>
+
+If you need to combine several files, and you want to make sure this will work on other platforms as well
+(most importantly MS Windows), then you can read the files in memmory and then write them out 
+<a href="/appending-to-files">appending</a> to the target file.
+
+Even that we should probably do line-by-line, in order to preserve memory. Instead of reading the
+input files in memory at once, we will read one line, the print it out to the target file.
+Then we read in another file and print it out. This will work even with huge file. File way
+bigger than the available memory in the computer.
+
+<include file="examples/merge_files.pl">
+
+
+
