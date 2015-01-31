@@ -29,7 +29,7 @@ subscription service.
   <li><a href="/beginner-perl-maven-hello-world">Hello World</a></li>
   <li><a href="/beginner-perl-maven-safety-net">Safety net (use strict; use warnings;)</a></li>
   <li><a href="/beginner-perl-maven-debugging">Debugging</a></li>
-  <li><a href="/pro/beginner-perl/comments">Comments</a></li>
+  <li><a href="/beginner-perl-maven-comments">Comments</a></li>
   <li><a href="/pro/beginner-perl/documentation">Documentation of Perl</a></li>
   <li><a href="/pro/beginner-perl/pod">POD - Plain Old Documentation</a></li>
   <li><a href="/pro/beginner-perl/exercise-hello-world">Exercise: Hello World</a></li>
