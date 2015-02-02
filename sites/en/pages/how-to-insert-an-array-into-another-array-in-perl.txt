@@ -96,7 +96,9 @@ as it was after the call to <hl>splice</hl>.
 
 <include file="examples/insert_array_in_array_change.pl">
 
+<code>
 $ perl examples/insert_array_in_array_change.pl 
+
 $VAR1 = [
           'Foo',
           'Perl',
@@ -120,6 +122,7 @@ $VAR1 = [
           'PHP',
           'Baz'
         ];
+</code>
 
 <h2>Changing the content of the references array</h2>
 
@@ -132,6 +135,8 @@ the internal array of <hl>@names</hl>. (See JavaScript in the 2 last dumps below
 <include file="examples/insert_array_ref_in_array_change.pl">
 
 <code>
+perl examples/insert_array_ref_in_array_change.pl 
+
 $VAR1 = [
           'Foo',
           [

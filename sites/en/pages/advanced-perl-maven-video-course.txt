@@ -40,8 +40,8 @@ Some include screencasts, others contain just text.
   <li><a href="/pro/modules">Modules</a></li>
   <li><a href="/pro/require-at-inc">How does require find the module to be loaded?</a></li>
   <li><a href="/pro/use-require-import">What is the difference between require and use? What does import do?</a></li>
+  <li><a href="/pro/import">Exporting and importing functions easily</a></li>
 
-  <li>Exporting selected functions</li>
   <li>@INC and the namespace hierarchy</li>
   <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse?</a></li>
   <li>Exporting functions automatically and on-demand</li>
