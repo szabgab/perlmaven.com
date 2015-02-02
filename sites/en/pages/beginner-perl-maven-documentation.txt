@@ -14,7 +14,7 @@ How to read the documentation of Perl using perldoc or in the browser.
 
 =abstract end
 
-<slidecast file="/media/pro/videos/beginner-perl/introduction/documentation" />
+<slidecast file="/media/videos/beginner-perl/documentation" />
 
 <code>
 perldoc perl
