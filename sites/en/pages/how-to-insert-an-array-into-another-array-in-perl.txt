@@ -17,14 +17,14 @@ but we have another issue with the task.
 
 =abstract end
 
-There can be two types of insertions. Flattening, when the elements of <hl>@language</hl> become elements of <hl>@names</hl>, and thus
-at the end of the operation <hl>@names</hl> will have 7 elements, or it can be non-flatening that will create a sort-of
+There can be two types of insertions. <b>Flattening</b>, when the elements of <hl>@language</hl> become elements of <hl>@names</hl>, and thus
+at the end of the operation <hl>@names</hl> will have 7 elements; or it can be <b>non-flatening</b>, that will create a sort-of
 two-dimensional array. In this case <hl>@names</hl> will have 4 elements after the operation, one of them is a refernce
 to an internal array that holds the elements of <hl>@languages</hl>.
 
 The solution to the two cases is quite similar. They both use the 
 <a href="http://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">splice</a> function.
-Maybe we just need to adjust our wording.
+Maybe we just need to adjust how we call the operation:
 
 In the first case we
 
