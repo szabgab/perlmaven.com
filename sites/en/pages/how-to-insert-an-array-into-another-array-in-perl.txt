@@ -1,4 +1,4 @@
-=title How to insert and array into another array in Perl?
+=title How to insert an array into another array in Perl?
 =timestamp 2015-02-04T19:05:01
 =indexes splice
 =status show
