@@ -1,7 +1,7 @@
 =title How to insert and array into another array in Perl?
-=timestamp 2015-02-01T11:30:01
+=timestamp 2015-02-04T19:05:01
 =indexes splice
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
