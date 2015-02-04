@@ -9,15 +9,15 @@
 
 =abstract start
 
-Given an array <hl>@names = qw(Foo Bar Baz);</hl> and another array called <hl>my @languages = qw(Perl Python Ruby PHP);</hl> how can
-the the <hl>@languages</hl> array be inserted in the "middle" of the @names array?
+Given an array called <hl>@names = qw(Foo Bar Baz);</hl> and another array called <hl>my @languages = qw(Perl Python Ruby PHP);</hl> how can
+the <hl>@languages</hl> array be inserted in the "middle" of the <hl>@names</hl> array?
 
-Of course I think the "middle" only means - "somewhere" and not that the same distance from the beginning and from the end,
+Of course I think the "middle" only means - "somewhere" and not that "the same distance from the beginning and from the end",
 but we have another issue with the task.
 
 =abstract end
 
-There can be types of insertions. Flattening, when the elements of <hl>@language</hl> become elements of <hl>@names</hl>, and thus
+There can be two types of insertions. Flattening, when the elements of <hl>@language</hl> become elements of <hl>@names</hl>, and thus
 at the end of the operation <hl>@names</hl> will have 7 elements, or it can be non-flatening that will create a sort-of
 two-dimensional array. In this case <hl>@names</hl> will have 4 elements after the operation, one of them is a refernce
 to an internal array that holds the elements of <hl>@languages</hl>.
