@@ -8,6 +8,11 @@
 
 =abstract start
 
+<i>
+This is a guest post by <a href="https://www.unur.com/">A. Sinan Unur</a> who usually writes about Perl on his
+<a href="http://blog.nu42.com/">Perl blog</a>.
+</i>
+
 Perl and CPAN provide a plethora of tools to help you deal with directories
 and files in a portable way. Using them also makes your intentions much
 clearer than some random regexp pattern that "works" for you.
