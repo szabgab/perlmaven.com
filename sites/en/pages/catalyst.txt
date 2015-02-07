@@ -1,7 +1,7 @@
 =title Catalyst, the MVC Perl web framework
-=timestamp 2013-10-24T18:13:12
+=timestamp 2015-02-07T09:13:12
 =indexes Catalyst
-=status draft
+=status show
 =author szabgab
 =comments_disqus_enable 1
 =show_related 0
@@ -17,6 +17,7 @@ and it also powers <a href="http://metacpan.org/">Meta CPAN</a>.
 
 <h2>Free</h2>
 <ul>
+  <li><a href="/hacking-metacpan-the-first-steps">Hacking Meta::CPAN - the first steps</a></li>
   <li><a href="/adding-news-feed-to-metacpan">Adding news feed to MetaCPAN</li>
   <li><a href="/modern-web-with-perl">Modern Web with Perl</li>
 </ul>
