@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on December 02, 2014.
+parts are being published every few days. The latest one was published on February 07, 2015.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -71,6 +71,7 @@ to practice what you have learned.
     <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
     <li><a href="/cant-call-method-on-unblessed-reference">Can't call method ... on unblessed reference</a></li>
     <li><a href="/argument-isnt-numeric-in-numeric">Argument ... isn't numeric in numeric ...</a></li>
+    <li><a href="/cant-locate-object-method-via-package-1">Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?)</a></li>
   </ul>
 </li>
 <li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
@@ -115,7 +116,8 @@ to practice what you have learned.
 <li>Using Modules</li>
 <li><a href="/perl-arrays">Arrays in Perl</a></li>
 <li><a href="/argv-in-perl">Process command line parameters @ARGV</a></li>
-<li>Process command line parameters using Getopt::Long</li>
+<li><a href="/how-to-process-command-line-arguments-in-perl">Process command line parameters using Getopt::Long</a></li>
+<li><a href="/advanced-usage-of-getopt-long-accepting-command-line-arguments">Advanced usage of Getopt::Long for accepting command line arguments</a></li>
 <li><a href="/perl-split">split</a></li>
 <li><a href="/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a></li>
 <li><a href="/join">join</a></li>
