@@ -1,12 +1,12 @@
 =title How I learn English
-=timestamp 2015-01-27T17:00:00
+=timestamp 2015-02-07T10:00:00
 =status show
 =author name2rnd
 =comments_disqus_enable 1
 
 =abstract start
 
-Some time ago Gabor has written the article <a href="http://perlmaven.com/improve-your-communication-skills">Want a job abroad? Improve your language and communication skills!</a>. He told about necessity of improving communication skills if you want to get job abroad.
+Some time ago Gabor has written the article <a href="/improve-your-communication-skills">Want a job abroad? Improve your language and communication skills!</a>. He told about necessity of improving communication skills if you want to get job abroad.
 
 Communication is impossible without knowledge of the language. From my point of view, first of all you should learn English even if you're going to work in your country.
 
@@ -28,7 +28,7 @@ What I did:
 <ul>
   <li> Set English language for interfaces of all my devices (computer, mobile phone...).
   <li> Started studying at an english school near my home. It's just for motivating and keeping up the rhythm. And I have an opportunity to talk to teachers and other students in the school.
-  <li> Vocabulary is a big problem with studying languages. For improving it I use online-service <a href="http://lingualeo.com" target="_blank">http://lingualeo.com</a>. You can watch videos, listen to the music, read texts and exercise words you want to remember.  It has mobile applications too. I use it while going to work.
+  <li> Vocabulary is a big problem with studying languages. For improving it I use online-service <a href="http://lingualeo.com/">Lingualeo</a>. You can watch videos, listen to the music, read texts and exercise words you want to remember.  It has mobile applications too. I use it while going to work.
   <li> Began translating english articles but it's difficult if you have lack of time.
   <li> Subscribed on podcasts. It's convenient when you can't read for example. While cooking or walking on your feet. New poscasts automatically downloads on my ipad and deletes after listening.
   <li> Started using English for searching something on the web. It was difficult at the beginning.

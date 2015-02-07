@@ -1,5 +1,5 @@
 =title Как я изучаю английский
-=timestamp 2015-01-28T10:00:00
+=timestamp 2015-02-07T10:00:01
 =status show
 =author name2rnd
 =translator name2rnd
