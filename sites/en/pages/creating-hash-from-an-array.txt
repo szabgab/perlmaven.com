@@ -1,4 +1,4 @@
-=title Creating hash from an array
+=title Creating hash from an array in Perl
 =timestamp 2015-02-08T10:30:01
 =indexes hash
 =status show
@@ -18,7 +18,7 @@ Let's say we have an array called <hl>@fruits</hl> with the following 6 values: 
 We can assign this array to a hash and perl will automatically look at the values in the array as if they were key-value pairs.
 The odd elements (first, third, fifth) will become the keys and the even elements (second, fourth, sixth) will become the corresponding values.
 
-<include file="/examples/hash_from_an_array.pl">
+<include file="examples/hash_from_an_array.pl">
 
 The output of this script is:
 
