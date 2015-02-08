@@ -71,7 +71,7 @@ $VAR1 = {
           'apple' => 'red',
           'purple' => undef
         };
-<code>
+</code>
 
 The first thing we can see is the warning Perl gives when it notices that the number of elements in the array which
 is being assigned to the hash cannot divided by 2. That the number of elements is odd.
