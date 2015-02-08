@@ -72,6 +72,7 @@ to practice what you have learned.
     <li><a href="/cant-call-method-on-unblessed-reference">Can't call method ... on unblessed reference</a></li>
     <li><a href="/argument-isnt-numeric-in-numeric">Argument ... isn't numeric in numeric ...</a></li>
     <li><a href="/cant-locate-object-method-via-package-1">Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?)</a></li>
+    <li><a href="/creating-hash-from-an-array">Odd number of elements in hash assignment</a></li>
   </ul>
 </li>
 <li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
@@ -123,6 +124,7 @@ to practice what you have learned.
 <li><a href="/join">join</a></li>
 <li><a href="/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
 <li><a href="/scalar-and-list-context-in-perl">Context sensitivity in Perl</a></li>
+<li><a href="/reading-from-a-file-in-scalar-and-list-context">Reading from a file in scalar and list context</a></li>
 <li><a href="/sorting-arrays-in-perl">Sorting arrays in Perl</a></li>
 <li><a href="/sorting-mixed-strings">Sorting mixed strings</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
@@ -146,6 +148,8 @@ to practice what you have learned.
 <b>Hashes, arrays</b>
 <ol>
 <li><a href="/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
+<li><a href="/creating-hash-from-an-array">Creating hash from an array</a></li>
+<li><a href="/perl-hash-in-scalar-and-list-context">Perl hash in scalar and list context</a></li>
 <li>exists, delete hash elements</li>
 <li><a href="/how-to-sort-a-hash-in-perl">Sorting a hash</a></li>
 <li><a href="/count-words-in-text-using-perl">Count word frequency in a text file</a></li>

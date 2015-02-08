@@ -1,4 +1,4 @@
-=title Creating hash from an array in Perl
+=title Creating a hash from an array in Perl
 =timestamp 2015-02-08T10:30:01
 =indexes hash
 =status show
