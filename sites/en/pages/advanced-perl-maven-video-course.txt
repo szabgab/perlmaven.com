@@ -42,10 +42,11 @@ Some include screencasts, others contain just text.
   <li><a href="/pro/use-require-import">What is the difference between require and use? What does import do?</a></li>
   <li><a href="/pro/import">Exporting and importing functions easily</a></li>
   <li><a href="/pro/restrict-the-import">Restrict the import by listing the functions to be imported</a></li>
+  <li><a href="/pro/on-demand-import">Import on demand</a></li>
 
   <li>@INC and the namespace hierarchy</li>
   <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse?</a></li>
-  <li>Exporting functions automatically and on-demand</li>
+  <li>Exporting functions automatically</li>
   <li>Packaging modules for distribution</li>
   <li>Writing Unit Tests for Perl Modules</li>
   <li>Exception handling with eval block</li>
