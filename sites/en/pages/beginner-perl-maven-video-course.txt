@@ -23,16 +23,13 @@ subscription service.
 <ul>
   <li><a href="/beginner-perl-maven-installation">Welcome and installation</a></li>
   <li><a href="/beginner-perl-maven-editors">Editors, IDEs</a></li>
-<!--
-  <li><a href="/pro/beginner-perl/command-line">Command line</a></li>
--->
   <li><a href="/beginner-perl-maven-hello-world">Hello World</a></li>
   <li><a href="/beginner-perl-maven-safety-net">Safety net (use strict; use warnings;)</a></li>
   <li><a href="/beginner-perl-maven-debugging">Debugging</a></li>
   <li><a href="/beginner-perl-maven-comments">Comments</a></li>
   <li><a href="/beginner-perl-maven-documentation">Documentation of Perl</a></li>
   <li><a href="/beginner-perl-maven-pod">POD - Plain Old Documentation</a></li>
-  <li><a href="/pro/beginner-perl/perl-on-the-command-line">Perl on the command line</a></li>
+  <li><a href="/beginner-perl-maven-command-line">Perl on the command line</a></li>
   <li><a href="/beginner-perl-maven-exercise-hello-world">Exercise: Hello World</a></li>
   <li><a href="/pro/beginner-perl/solution-hello-world-1">Solution: Hello World (part 1)</a></li>
   <li><a href="/pro/beginner-perl/solution-hello-world-2">Solution: Hello World (part 2)</a></li>

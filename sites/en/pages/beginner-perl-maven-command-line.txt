@@ -1,0 +1,48 @@
+=title Perl on the command line
+=timestamp 2015-02-09T15:30:06
+=indexes -v, -V, -e
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+In the <a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a> we will mostly write Perl programs that are
+saved in files, but Perl can also be used on the command line, without saving the code in a file.
+
+We are going to see an example here, and later on we are going to see a couple of more examples.
+
+=abstract end
+
+<slidecast file="/media/pro/videos/beginner-perl/introduction/command-line" />
+
+In order to open the command line, on Windows you need to click on <b>Start/Run</b> and then type in <hl>cmd</hl>.
+
+<code>
+$ perl -v
+</code>
+
+<code>
+$ perl -V
+</code>
+
+<code>
+$ perl -e "print 42"
+</code>
+
+
+If running on perl 5.10 or later, you can also:
+
+<code>
+$ perl -E "say 42"
+</code>
+
+
+On Unix/Linux you might prefer to use single quotes <hl>'</hl> around the code:
+
+<code>
+$ perl -E 'say 42'
+</code>
+
