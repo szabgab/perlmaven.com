@@ -9,14 +9,14 @@
 
 =abstract start
 
-In the <a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a> we will mostly write Perl programs that are
+In the <a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a> we will mostly write Perl that are
 saved in files, but Perl can also be used on the command line, without saving the code in a file.
 
 We are going to see an example here, and later on we are going to see a couple of more examples.
 
 =abstract end
 
-<slidecast file="/media/pro/videos/beginner-perl/introduction/command-line" />
+<slidecast file="/media/videos/beginner-perl/command-line" />
 
 In order to open the command line, on Windows you need to click on <b>Start/Run</b> and then type in <hl>cmd</hl>.
 
