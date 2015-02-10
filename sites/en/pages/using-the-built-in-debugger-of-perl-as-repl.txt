@@ -12,19 +12,126 @@ This screencast is showing how to use the command line debugger of perl to explo
 
 =abstract end
 
-<iframe width="640" height="390" src="http://www.youtube.com/embed/pL_nDlXNqLY" frameborder="0" allowfullscreen></iframe>
+<iframe width="1023" height="576" src="http://www.youtube.com/embed/pL_nDlXNqLY" frameborder="0" allowfullscreen></iframe>
 
-
-In this screencast you see:
-
+As you might know you can run perl code on the command line without even creating a script using the <hl>-e</hl> flag:
 <code>
 $ perl -e "print 42"
+</code>
 
+The same way you can also run the a code that consists of the number 1 only, that of course won't do anything:
+
+<code>
+$ perl -e 1
+</code>
+
+Except that we could include the <hl>-d</hl> flag and that would run that code in the debugger
+
+<code>
+$ perl -d -e 1
+</code>
+
+Because we can combine some of the command line flags, we can also write this:
+
+<code>
 $ perl -de1
 </code>
 
-  p - print scalar
-  x - print data structure
-  b subname - set breakpoint
+Code exampes
 
+<code>
+ DB<1> print 42
+42
+
+ DB<2> $x = 42
+
+ DB<3> print $x
+42
+
+ DB<4> p $x
+42
+
+ DB<5> @names = qw(Foo Bar Baz)
+
+ DB<6> print @names
+FooBarBaz
+
+ DB<7> print "@names"
+Foo Bar Baz
+
+ DB<8> x \@names
+0 ARRAY(0x1a41c68)
+  0  'Foo'
+  1  'Bar'
+  2  'Baz'
+
+ DB<9>  %h = (fname => 'Foo', lname => 'Bar')
+
+ DB<10> x \%h
+0 HASH(0x1a41d70)
+  'fname'  => 'Foo'
+  'lname'  => 'Bar'
+
+ DB<11> push @names, 'Moose'
+
+ DB<12> x \@names
+0 ARRAY(0x1a41c68)
+  0  'Foo'
+  1  'Bar'
+  2  'Baz'
+  3  'Moose'
+
+ DB<13> use Cwd
+
+ DB<14> cwd
+
+ DB<15> p cwd
+/home/gabor
+
+ DB<16> use File::Basename
+
+ DB<17> p basename(cwd)
+gabor
+
+ DB<18> b File::Basename::basename
+
+ DB<19> p basename(cwd)
+File::Basename::basename(/usr/share/perl/5.10/File/Basename.pm:215):
+215:	  my($path) = shift;
+
+ DB<<20>> l
+215==>b	  my($path) = shift;
+216 	
+217 	  # From BSD basename(1)
+218 	  # The basename utility deletes any prefix ending with the last slash '/'
+219 	  # character present in string (after first stripping trailing slashes)
+220:	  _strip_trailing_sep($path);
+221 	
+222:	  my($basename, $dirname, $suffix) = fileparse( $path, map("\Q$_\E",@_) );
+223 	
+224 	  # From BSD basename(1)
+
+ DB<<20>> l 200-220
+213 	
+214 	sub basename {
+215==>b	  my($path) = shift;
+216 	
+217 	  # From BSD basename(1)
+218 	  # The basename utility deletes any prefix ending with the last slash '/'
+219 	  # character present in string (after first stripping trailing slashes)
+220:	  _strip_trailing_sep($path);
+
+ DB<<21>> q
+
+$
+</code>
+
+<ul>
+  <li>p - print scalar</li>
+  <li>x - print data structure</li>
+  <li>b subname - set breakpoint</li>
+  <li>l - list the next few lines of the source code</li>
+  <li>l from-to - list source code between given lines</li>
+  <li>q - quit the debugger</li>
+</ul>
 
