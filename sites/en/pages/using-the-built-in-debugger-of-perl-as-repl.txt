@@ -1,8 +1,8 @@
 =title Using the built-in debugger of Perl as REPL
-=timestamp 2012-08-10T12:45:56
+=timestamp 2015-02-10T17:30:56
 =indexes REPL, -d
 =tags screencast
-=status draft
+=status show
 =author szabgab
 =comments_disqus_enable 1
 
@@ -17,7 +17,11 @@ This screencast is showing how to use the command line debugger of perl to explo
 
 In this screencast you see:
 
-  perl -de1
+<code>
+$ perl -e "print 42"
+
+$ perl -de1
+</code>
 
   p - print scalar
   x - print data structure
