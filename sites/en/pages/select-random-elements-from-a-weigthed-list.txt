@@ -8,7 +8,7 @@
 
 =abstract start
 
-Given a list of items <hl>my @items = qw(low mid hight)<hl> and a series of weights: <hl>@weights = (10, 100, 1000)</hl>
+Given a list of items <hl>my @items = qw(low mid hight)</hl> and a series of weights: <hl>@weights = (10, 100, 1000)</hl>
 how can we pick one (or more) items with the probability corresponding to their weight?
 
 That would mean that 10 out of 1110 should be the chance of "low" to be selected.
