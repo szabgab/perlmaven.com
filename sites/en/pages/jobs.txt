@@ -15,10 +15,11 @@ Finding a good Perl developer is not an easy task. Let me try to give you a few 
 
 <h2>Where to look for contract Perl developers?</h2>
 
-<a href="http://szabgab.com/about.html">Gabor Szabo</a> who runs this web site is available for contract Perl development,
-and you can find a number of other <a href="/perl-training-consulting">recommended Perl developers</a> who can provide
-contract Perl development services.
+Before going further, let me point out that <a href="http://szabgab.com/about.html">Gabor Szabo</a>, who runs this web site is available for contract Perl development.
+In addition you can find a number of other <a href="/perl-training-consulting">recommended Perl developers</a> who can provide
+contract Perl development and consulting services.
 
+And now let's turn to the general advice.
 
 <h2>Where to advertise?</h2>
 
@@ -27,10 +28,13 @@ If none of the above are available, or if you are looking for an employee then t
 <a href="http://jobs.perl.org/">jobs.perl.org</a> allows you to post a job-ad free of charge and for some extra fee your job post can also be "featured".
 When a job post is approved it also goes out to a mailing list.
 
+<a href="http://www.pm.org/">Perl Mongers</a> are location specific user groups with personal contacts and mailing lists. Some of them allow you to
+post job ads, but before doing that read the charter of the specific group. If it is not clear, ask the leader of the group listed on the central
+web site of the Perl Mongers.
+
 <a href="http://perlweekly.com/">Perl Weekly</a>, is the prime source of Perl-related news for over 5,000 Perl enthusiasts. It is published every Monday
 morning (GMT). It accepts sponsored ads that will be included in the newsletter sent out to 5,000+ subscribers and included in the archive of the web site.
 For more details check out the <a href="http://perlweekly.com/sponsors.html">sponsors</a> page.
-
 
 The <a href="/">Perl Maven</a> site is read by more that <b>10,000 Perl developers every day</b>. If you'd like to reach those people 
 <a href="/about#contact">contact Gabor</a> to discuss the possibilities.
@@ -47,21 +51,70 @@ The basic things like
 
 <h3>Job title</h3>
 
-  <li>Name of the company</li>
-  <li>Pay rate</li>
-</ul>
+<h3>Name of the company</h3>
+
+<h3>Pay rate</h3>
 
 Advertising the pay rate is a fishy subject, but if you pay above avarage then showing this will work for your advantage.
 
-Length of employment: is this a permanent job or a short contract job?</li>
-  <li>Location of the employment? There is no point in getting CVs from people who don't live in the same city let alone the same country or who are not interested to move there.</li>
-  <li>Can the employee telecommute? If yes do you have some 
+<h3>Length of employment</h3>
 
-Which version control system do you use?
-Which bug-tracking system do you use?
-Do you write unit-tests?
-Do you use continuous integration? Which tool?
-Do you use any DevOps tool? Which one? Chef/Pupper/Rex/?
+Is this a permanent job or a short contract job?
+Do you have a project to finish and you need someone to help with that?
+Do you need someone full-time or part-time is also good?
+
+
+<h3>Location of the employment?<h3>
+
+There is no point in getting CVs from people who don't live in the same city let alone the same country,
+or who are not interested to move there.
+
+<h3>Telecommute</h3>
+
+Can the employee work remotely?
+If yes, do you have some restrictions regarding time-zone?
+Do you still require on-site visits? How often? How long?
+
+<h3>Relocation, Visa</h3>
+
+If you rewquire the employee to be on-site, would you help with relocation to your area?
+Would you help with sponsoring visa, if necessary?
+
+<h3>Other legal requirements</h3>
+
+Do you have other legal requirements? (eg. citizen of certain country)
+
+
+<h2>Technical details</h2>
+
+In addition to providing the details of the job, providing a description of what kind of environment
+to expect can go a long way in getting the right candidates.
+
+<h3>Which version control system do you use?</h3>
+
+If you use Git, then be proud of it. Many developers know and like it.
+
+If you use Subversion, well, that's much better than using CVS or some proprietary version control system,
+but that will make it harder to hire good developers. You might also need to think why do you use something
+that makes it harder for your current developers to work.
+
+<h3>Which bug-tracking system do you use?</h3>
+
+<h3>Do you write autmated-tests?</h3>
+
+The main value of unit~, or any other form of automated tests is that it makes the developer sleep better.
+It allows them to make changes without fear of breaking other parts of the system. Therefore if you
+have lots of automated tests you should definitely talk about this.
+
+<h3>Do you use continuous integration?</h3>
+
+Which tool?
+
+<h3>Do you use any DevOps tool?<h3>
+
+Which one? Chef/Pupper/Rex/?
+
+
 If you have a web service, do you employ continuous deployment? How often do you deploy code?
 If you have a packaged product, how often do you release it?
 
