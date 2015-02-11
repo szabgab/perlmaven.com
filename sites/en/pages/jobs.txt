@@ -86,8 +86,31 @@ Would you help with sponsoring visa, if necessary?
 
 <h3>Other legal requirements</h3>
 
-Do you have other legal requirements? (eg. citizen of certain country)
+Do you have other legal requirements? (eg. citizen of certain country, work-permit, etc.)
 
+<h3>Hours of work</h3>
+
+What hours do people work in the office? 9-5, 10-7, midday to midnight?
+How flexible is that?
+Is overtime paid?
+
+<h3>Support</h3>
+
+Do developers support their own applications? Is out of hours support needed? Is this paid?
+
+<h3>Type of application</h3>
+
+Is is a web app or a batch processing application? A combination of both? Something else?
+If this is part of a public-facing web application, link to it!
+
+<h3>Type of work</h3>
+
+How much time do developers spend on new development compared to maintenance and bug fixing?
+
+<h3>Dev methodology?</h3>
+
+How agile are you? And what flavour? Scrum, Kanban, something else?
+Beyond the name of methodology, can you describe more in detail how do your teams work?
 
 <h2>Technical details</h2>
 
@@ -150,6 +173,7 @@ Oracle? MySQL? PostgreSQL? MongoDB?
 <h3>Any special software?</h3>
 
 If you use any other special software, please list those too.
+
 
 <h2>Need help?</h2>
 
