@@ -1,0 +1,72 @@
+=title Perl developer Jobs
+=timestamp 2015-02-01T07:30:01
+=indexes jobs
+=status draft
+=books beginner_book
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Finding a good Perl developer is not an easy task. Let me try to give you a few suggestions.
+
+=abstract end
+
+<h2>Where to look for contract Perl developers?</h2>
+
+<a href="http://szabgab.com/about.html">Gabor Szabo</a> who runs this web site is available for contract Perl development,
+and you can find a number of other <a href="/perl-training-consulting">recommended Perl developers</a> who can provide
+contract Perl development services.
+
+
+<h2>Where to advertise?</h2>
+
+If none of the above are available, or if you are looking for an employee then there are a few ways to find them:
+
+<a href="http://jobs.perl.org/">jobs.perl.org</a> allows you to post a job-ad free of charge and for some extra fee your job post can also be "featured".
+When a job post is approved it also goes out to a mailing list.
+
+<a href="http://perlweekly.com/">Perl Weekly</a>, is the prime source of Perl-related news for over 5,000 Perl enthusiasts. It is published every Monday
+morning (GMT). It accepts sponsored ads that will be included in the newsletter sent out to 5,000+ subscribers and included in the archive of the web site.
+For more details check out the <a href="http://perlweekly.com/sponsors.html">sponsors</a> page.
+
+
+The <a href="/">Perl Maven</a> site is read by more that <b>10,000 Perl developers every day</b>. If you'd like to reach those people 
+<a href="/about#contact">contact Gabor</a> to discuss the possibilities.
+
+
+<h2>What to include?</h2>
+
+In the hiring process the candidate checks the company at least as much as the company checks the candidate. If you receive 100 CVs
+and throw out most of them, the candidates have also seen hundreds of job posts and rejected most of them.
+
+There are a few thing you can do in your job ad and in your job description that will improve your chances to be selected by a good developer.
+
+The basic things like
+
+<h3>Job title</h3>
+
+  <li>Name of the company</li>
+  <li>Pay rate</li>
+</ul>
+
+Advertising the pay rate is a fishy subject, but if you pay above avarage then showing this will work for your advantage.
+
+Length of employment: is this a permanent job or a short contract job?</li>
+  <li>Location of the employment? There is no point in getting CVs from people who don't live in the same city let alone the same country or who are not interested to move there.</li>
+  <li>Can the employee telecommute? If yes do you have some 
+
+Which version control system do you use?
+Which bug-tracking system do you use?
+Do you write unit-tests?
+Do you use continuous integration? Which tool?
+Do you use any DevOps tool? Which one? Chef/Pupper/Rex/?
+If you have a web service, do you employ continuous deployment? How often do you deploy code?
+If you have a packaged product, how often do you release it?
+
+How many Perl developers do you have?
+Which Perl modules do you use?
+What database(s) do you use?
+Any special software?
+
