@@ -5,7 +5,7 @@ twitter: leprevostfv
 gplus: +FelipeLeprevost
 linkedin: http://www.linkedin.com/pub/felipe-leprevost/46/1b7/32
 pause: LEPREVOST
-country: Brazil
+country: BR
 location: Curitiba, Paraná
 languages: Portuguese, English
 specialities: Training, Text Processing, Web Aplications, Data Analysis, Bioinformatics, Computational Biology.
