@@ -77,7 +77,8 @@ And a few other related articles:
   <li>2015.01.08 <a href="http://tinypig2.blogspot.co.il/2015/01/cpan-pull-request-challenge-pull-request.html">CPAN Pull Request Challenge: The Pull Request</a> by David Bradford</li>
   <li>2015.01.11 <a href="https://huntingbears.nl/2015/01/11/cpan-pull-request-challenge-for-january-datetimeformatepoch/">CPAN Pull Request Challenge for January: DateTime::Format::Epoch</a> by Michiel Beijen</a></li>
   <li>2015.01.14 <a href="http://blogs.perl.org/users/alberto_simoes/2015/01/pr-challenge-january.html">PR-Challenge: January</a>  by Alberto Simões</li>
-  <li>2015.01.14 <a href=http://blogs.perl.org/users/luca_ferrari/2015/01/cpan-pull-request-a-little-patch-for-january-and-a-lot-more-to-learn.html">CPAN Pull Request: a little patch for January (and a lot more to learn!)</a> by Luca Ferrari</li>
+  <li>2015.01.14 <a href="http://blogs.perl.org/users/luca_ferrari/2015/01/cpan-pull-request-a-little-patch-for-january-and-a-lot-more-to-learn.html">CPAN Pull Request: a little patch for January (and a lot more to learn!)</a> by Luca Ferrari</li>
+  <li>2015.02.01 <a href="http://blogs.perl.org/users/e_choroba/2015/02/pull-request-challenge-january.html">Pull Request Challenge: January</a> by E. Choroba</li>
 </ul>
 
 
