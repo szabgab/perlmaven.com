@@ -26,7 +26,7 @@ And now let's turn to the general advice.
 If none of the above are available, or if you are looking for an employee then there are a few ways to find them:
 
 <a href="http://jobs.perl.org/">jobs.perl.org</a> allows you to post a job-ad free of charge and for some extra fee your job post can also be "featured".
-When a job post is approved it also goes out to a mailing list.
+When a job post is approved it also goes out to the <a href="http://lists.perl.org/list/jobs.html">jobs</a> mailing list.
 
 <a href="http://www.pm.org/">Perl Mongers</a> are location specific Perl user groups with personal contacts and mailing lists. Some of them allow you to
 post job ads, but before doing that read the charter of the specific group. If it is not clear, ask the leader of the group listed on the central
@@ -64,7 +64,7 @@ If not, then don't be surprised if you cannot find good developers.
 
 Is this a permanent job or a short contract job?
 Do you have a project to finish and you need someone to help with that?
-Do you need someone full-time or part-time is also good?
+Do you need someone full-time or is part-time also good?
 
 
 <h3>Location of the employment?</h3>
@@ -118,7 +118,7 @@ Same as with automated tests. Which tool do you use?
 
 <h3>Do you use any DevOps tool?</h3>
 
-Which one? Chef/Pupper/Rex/?
+Which one? Chef/Puppet/Rex/?
 
 If you have a web service, do you employ <b>continuous deployment</b>? How often do you deploy code?
 If you have a packaged product, how often do you release it?
