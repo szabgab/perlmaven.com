@@ -12,14 +12,13 @@ specialities: Training, Testing, Automation, Web applications, Refactoring
 html: 
 
 Gabor has been using Perl since 1995 and teaching it since 2000.
-He runs the Perl Maven site, the <a href="http://perlweekly.com/">Perl Weekly newsletter</a>,
-the <a href="http://perltv.org/">Perl TV</a>.
+He runs the <b>Perl Maven</b> site, the <a href="http://perlweekly.com/">Perl Weekly newsletter</a>,
+the <a href="http://perltv.org/">Perl TV</a>, and <a href="http://code-maven.com/">Code Maven</a> site.
 <p>
 He is the original author of <a href="http://padre.perlide.org/">Padre, the Perl IDE</a>.
 <p>
 Gabor received the White Camel award in 2008 for his contribution to the Perl community.
 <p>
-Mostly interested in growing the Perl Maven site and providing Perl training, but
-he would be also open to short consulting projects. Especially setting up testing environment
-and refactoring old code base.
+Gabor can provide Perl training, and contract developmen work.
+He is especially good at setting up testing environments, refactoring old code base, building web applications.
 
