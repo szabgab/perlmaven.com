@@ -1,11 +1,10 @@
 =title Perl developer jobs
-=timestamp 2015-02-01T07:30:01
+=timestamp 2015-02-12T09:00:01
 =indexes jobs
-=status draft
-=books beginner_book
+=status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 =show_ads 0
 
 =abstract start
