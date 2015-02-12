@@ -42,8 +42,8 @@ The <a href="/">Perl Maven</a> site is read by more that <b>10,000 Perl develope
 
 <h2>What should I include in a job ad?</h2>
 
-Generally speaking, a good Perl developer is more discerning than
-the potential employer when considering a new job.
+Generally speaking, a good Perl developer has more options to pick from than the potential employer,
+when considering a new job.
 
 There are, however, a few things you can do in the advertisement and job
 description which will improve the chances of your job being considered.
