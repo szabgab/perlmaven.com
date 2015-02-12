@@ -30,6 +30,8 @@ When a job post is approved it also goes out to the <a href="http://lists.perl.o
 post job ads, but before doing that read the charter of the specific group. If it is not clear, ask the leader of the group listed on the central
 <a href="http://www.pm.org/">Perl Mongers</a> web site.
 
+LinkedIn has a <a href="https://www.linkedin.com/groups?home=&gid=1332857">Perl Jobs group</a> where you can post your job ad.
+
 <a href="http://perlweekly.com/">Perl Weekly</a>, is the prime source of Perl-related news for over 5,000 Perl enthusiasts. It is published every Monday
 morning (GMT). It accepts sponsored ads that will be included in the newsletter sent out to 5,000+ subscribers and included in the archive of the web site.
 For more details check out the <a href="http://perlweekly.com/sponsors.html">sponsors</a> page.
