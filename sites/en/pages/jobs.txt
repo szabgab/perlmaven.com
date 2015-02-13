@@ -121,7 +121,7 @@ If you use Git, then be proud of it. Many developers know and like it.
 If you use Subversion, well, that's much better than using CVS or some proprietary version control system,
 but that will make it harder to hire good developers.
 
-(If you're not using Git, you should reflect on why you're using a version control system
+(If you're not using Git, or some other DVCS you should reflect on why you're using a version control system
 which makes it harder for your current developers to work.)
 
 <h3>Which bug-tracking system do you use?</h3>
