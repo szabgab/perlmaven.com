@@ -1,7 +1,7 @@
 =title SVG - Scalable Vector Graphics with Perl
-=timestamp 2015-02-13T08:30:01
+=timestamp 2015-02-13T10:30:01
 =indexes SVG
-=status draft
+=status show
 =author szabgab
 =comments_disqus_enable 1
 
@@ -31,7 +31,7 @@ Let's see a few simple examples.
 
 <h2>Draw circle</h2>
 
-<include file="examples/svg_draw_cicle.pl">
+<include file="examples/svg_draw_circle.pl">
 
 First we create the background of the image with a size of 40 x 40 pixels.
 We only need this so we can add elements to it in a size relative to this size.
@@ -70,7 +70,7 @@ If we run this script we'll see a small XML on our screen:
 We can save this by redirecting the output of the script to a file called
 
 <code>
-  perl circle.pl > black_circle.svg
+  perl svg_draw_circle.pl > black_circle.svg
 </code>
 
 Then we can open that file using our browser or by embedding in an html file using
@@ -81,6 +81,7 @@ the img tag:
 </code>
 
 and make sure that your web server returns the file with Content-type: <b>image/svg+xml</b>.
+The result look like this:
 
 <img src="/img/black_circle.svg" alt="black circle"/>
 
@@ -115,7 +116,11 @@ Add the following entry to the HTML
 <img src="/img/red_blue_circle.svg" alt="red and blue circle"/>
 </code>
 
+It will look like this:
+
 <img src="/img/red_blue_circle.svg" alt="red and blue circle"/>
+
+<h2>Enlarge the image</h2>
 
 While that SVG file has a default size of 20x20 we can tell the browser to display
 the same image at a larger size by setting the width and the height
@@ -127,97 +132,26 @@ the same image at a larger size by setting the width and the height
 
 <img src="/img/red_blue_circle.svg" width="200" height="200" alt="big red and blue circle"/>
 
-Finally, I changed the 'fill-opacity' of the circle to 0.5. This made the red lighter:
+This would work with raster images as well, but then the quality of the image would suffer. With Vector images,
+we can enlarge the image as much as we want, it will be the same quality.
+
+<h2>Opacity</h2>
+
+Finally, I've changed the 'fill-opacity' of the circle from 1 to 0.5. This made the red lighter:
 
 <img src="/img/transparent_red_blue_circle.svg" width="200" height="200" alt="big red and blue circle"/>
 
 <h2>Circle, Triangle and Square</h2>
 
-<code lang="perl">
-#!/usr/bin/perl
-use strict;
-use warnings;
-  
-use SVG;
-  
-# create an SVG object with a size of 100x100 pixels
-my $svg = SVG->new(
-    width  => 100,
-    height => 100,
-);
-  
-# create a rectangle (actually square) with the top left
-# corner being at (40, 50)
-# (0, 0) would mean being in the top left corner of the image.
-# The width and the height of the rectangular are also given
-# in pixels and we can add style just asw we  did with the circle.
-$svg->rectangle(
-    x => 40,
-    y => 50,
-    width  => 40,
-    height => 40,
-    style => {
-        'fill'           => 'rgb(0, 255, 0)',
-        'stroke'         => 'black',
-        'stroke-width'   =>  0,
-        'stroke-opacity' =>  1,
-        'fill-opacity'   =>  1,
-    },
-);
+<include file="examples/svg_draw_circle_triangle_square.pl">
 
-$svg->circle(
-    cx => 40,
-    cy => 40,
-    r  => 20,
-    style => {
-        'fill'           => 'rgb(255, 0, 0)',
-        'stroke'         => 'black',
-        'stroke-width'   =>  0,
-        'stroke-opacity' =>  1,
-        'fill-opacity'   =>  1,
-    },
-);
-
-# In order to create a triangle we are going to create a polygon
-# To make it easy to create various path based constructs, SVG.pm
-# provides a "get_path" method that, give a series of coordinates
-# and a type, return the respective data structure that is needed
-# for SVG.
-my $path = $svg->get_path(
-    x => [40, 60, 80],
-    y => [40, 6, 40],
-    -type => 'polygon');
-
-# Then we use that data structure to create a polygon
-$svg->polygon(
-    %$path,
-    style => {
-        'fill'           => 'rgb(0,0,255)',
-        'stroke'         => 'black',
-        'stroke-width'   =>  0,
-        'stroke-opacity' =>  1,
-        'fill-opacity'   =>  1,
-    },
-);
-
-# now render the SVG object, implicitly use svg namespace
-print $svg->xmlify;
-</code>
-
+The resulting image looks like this:
 
 <img src="/img/circle_triangle_square.svg" width="200", height="200" alt="Circle, Triangle and Square" />
 
 Set the 'fill-opacity' of the circle and that of the polygon to 0.5.
 
 <img src="/img/transparent_circle_triangle_square.svg" width="200", height="200" alt="Transparent Circle, Triangle and Square" />
-
-
-<h2>More of SVG</h2>
-
-Recently I got co-maintainership on the <a href="https://metacpan.org/pod/SVG">SVG</a> module. Made some small documentation fixes
-and started to modernize the tests a little bit. The above examples were also included.
-If you have any bug reports or requests, please use the bug tracking system provided by GitHub.
-In case you'd like to contribute, use the <a href="https://github.com/szabgab/SVG">github repository</a>.
 
 
 <h2>For the Norwegian readers out there</h2>
