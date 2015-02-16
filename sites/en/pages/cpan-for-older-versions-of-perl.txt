@@ -26,7 +26,7 @@ Platforms will include entries like <b>Windows (Cygwin)</b>, <b>Windows (Win32)<
 
 A section of the table looks like this:
 
-<a href="/img/cpantesters_term_readpassword_win32.png">
+<img src="/img/cpantesters_term_readpassword_win32.png" alt="CPAN Testers PASS matrix">
 
 Some of the fields are  empty. This does not mean the module won't work on that perl/platform pair, it just means no
 <b>PASS</b> reports were received for that perl/platform pair.
