@@ -1,7 +1,7 @@
 =title How to insert a hash in another hash in Perl
-=timestamp 2015-02-01T07:30:01
+=timestamp 2015-02-16T17:30:01
 =indexes hash
-=status done
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
