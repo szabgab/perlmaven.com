@@ -122,7 +122,7 @@ in the root of the repository.  <a href="https://subversion.apache.org/">Subvers
 on a directory to defined what items to ignore in that directory.  The SVN Book describes
 <a href="http://svnbook.red-bean.com/en/1.7/svn.advanced.props.special.ignore.html">how to ignore unversioned files in Subversion</a>.
 
-GitHub maintains a repository of <a href="https://github.com/github/gitignore">giginore files</a>.
+GitHub maintains a repository of <a href="https://github.com/github/gitignore">gitignore files</a>.
 They have language, project, operating system and editor specific gitignore files. A good gitignore file
 is for a perl project is probably a combination of several of these files.
 
