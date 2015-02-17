@@ -12,7 +12,7 @@ Sample code to produce a Venn diagram of 3 circles using <a href="/search/SVG">S
 
 =abstract end
 
-<img src="/img/venn_diagram.xml" alt="Venn diagram" />
+<img src="/img/venn_diagram.svg" alt="Venn diagram" />
 
 <include file="examples/svg_venn_diagram.psgi">
 
@@ -25,7 +25,7 @@ on top of the other circles. Otherwise we would not see the common areas as comm
 
 In the next example we make the circles clickable and link each circle to a different URL:
 
-<img src="/img/static/img/venn_diagram_clickable.xml" alt="Clickable Venn diagram" />
+<img src="/img/static/img/venn_diagram_clickable.svg" alt="Clickable Venn diagram" />
 
 The source code looks like this:
 
