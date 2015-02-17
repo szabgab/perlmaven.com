@@ -1,0 +1,34 @@
+=title Venn diagram with SVG
+=timestamp 2015-02-01T07:30:01
+=indexes SVG
+=status done
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Sample code to produce a Venn diagram of 3 circles using <a href="/search/SVG">SVG</a>.
+
+=abstract end
+
+<img src="/img/venn_diagram.xml" alt="Venn diagram" />
+
+<include file="examples/svg_venn_diagram.psgi">
+
+We create 3 circles with the same radius <hl>r => 50</hl>, but with different center position (<hl>cx, cy</hl>).
+
+It is also important to set the <hl>fill-opacity</hl> to something less than 1. Especially for the circles drawn
+on top of the other circles. Otherwise we would not see the common areas as common.
+
+<h2>Clickable Venn diagram in SVG</h2>
+
+In the next example we make the circles clickable and link each circle to a different URL:
+
+<img src="/img/static/img/venn_diagram_clickable.xml" alt="Clickable Venn diagram" />
+
+The source code looks like this:
+
+<include file="examples/svg_venn_diagram_clickable.psgi">
+
+

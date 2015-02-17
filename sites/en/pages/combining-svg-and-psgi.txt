@@ -1,7 +1,7 @@
 =title Combining SVG and PSGI
 =timestamp 2015-02-01T07:30:01
 =indexes SVG, PSGI
-=status draft
+=status done
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
