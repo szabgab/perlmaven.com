@@ -10,7 +10,7 @@
 =abstract start
 
 Before you get started programming in Perl, you need to pick an editor or and IDE to use. There are plenty of options.
-Here are a few recommenedd ones.
+Here are a few recommended ones.
 
 =abstract end
 

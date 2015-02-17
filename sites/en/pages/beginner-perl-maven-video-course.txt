@@ -115,13 +115,13 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-force">Solution: improve the color selector - force</a></li>
   <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-colors-txt">Solution: improve the color selector - colors.txt</a></li>
   <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-filename">Solution: improve the color selector - --filename</a></li>
-  <li><a href="/pro/beginner-perl/exercise-improve-number-guessing-game">Exercise: improve the number guesssing game</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-multiple-guesses">Solution: improve the number guesssing game - multiple guesses</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-exit">Solution: improve the number guesssing game - exit</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-s-show">Solution: improve the number guesssing game - s for show</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-n-next-game">Solution: improve the number guesssing game - n for next game</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-d-debug-toggle">Solution: improve the number guesssing game - d for debug mode</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-m-move-toggle">Solution: improve the number guesssing game - m for move mode</a></li>
+  <li><a href="/pro/beginner-perl/exercise-improve-number-guessing-game">Exercise: improve the number guessing game</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-multiple-guesses">Solution: improve the number guessing game - multiple guesses</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-exit">Solution: improve the number guessing game - exit</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-s-show">Solution: improve the number guessing game - s for show</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-n-next-game">Solution: improve the number guessing game - n for next game</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-d-debug-toggle">Solution: improve the number guessing game - d for debug mode</a></li>
+  <li><a href="/pro/beginner-perl/solution-number-guessing-game-m-move-toggle">Solution: improve the number guessing game - m for move mode</a></li>
 </ul>
 
 <h3>Advanced Arrays</h3>
@@ -261,7 +261,7 @@ subscription service.
   <li><a href="/pro/beginner-perl/what-is-cpan">What is CPAN</a></li>
   <li><a href="/pro/beginner-perl/some-interesting-cpan-modules">Some interesting CPAN modules</a></li>
   <li><a href="/pro/beginner-perl/installing-modules-from-the-os-vendor">Installing modules from the OS vendor</a></li>
-  <li><a href="/pro/beginner-perl/installing-modules-with-cpan">Installing modules with cpan</a></li>
+  <li><a href="/pro/beginner-perl/installing-modules-with-cpan">Installing modules with CPAN</a></li>
   <li><a href="/pro/beginner-perl/search-cpan-org">search.cpan.org</a></li>
   <li><a href="/pro/beginner-perl/cpantesters-and-cpanratings">cpantesters and cpanratings</a></li>
   <li><a href="/pro/beginner-perl/"></a></li>
