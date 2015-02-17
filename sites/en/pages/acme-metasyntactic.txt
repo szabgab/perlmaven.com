@@ -10,12 +10,12 @@
 I have to confess: When writing example applications, I almost always use variable names such as <b>foo</b> and <b>bar</b>.
 This gets boring, and it easily confuse the reader. Especially when I need to use more variables.
 
-Luckily <a href="http://www.bruhat.net/">Philippe Bruhat (BooK)</a> has already soled this problem a long time ago. Let's
+Luckily <a href="http://www.bruhat.net/">Philippe Bruhat (BooK)</a> has already solved this problem a long time ago. Let's
 see how?
 
 =abstract end
 
-If we look up <a href="http://en.wikipedia.org/wiki/Foobar">Foobar</a> on WikiPedia, we'll see they are
+If we look up <a href="http://en.wikipedia.org/wiki/Foobar">Foobar</a> on Wikipedia, we'll see they are
 also called <b>place-holder names</b> or 
 <a href="http://en.wikipedia.org/wiki/Metasyntactic_variable">Metasyntactic variable</a>.
 

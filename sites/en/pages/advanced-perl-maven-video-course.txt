@@ -115,7 +115,7 @@ Some include screencasts, others contain just text.
   <li>Encapsulation</li>
   <li>Singleton</li>
   <li>Destructor (DESTROY)</li>
-  <li>OOP: Bless, or what you will see in the wilde</li>
+  <li>OOP: Bless, or what you will see in the wild</li>
   <li>OOP: Class::Accessor A small scale object oriented system in Perl</li>
   <li>Class methods and Instance methods</li>
   <li>Automatic Class creation</li>
