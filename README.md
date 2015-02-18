@@ -11,7 +11,7 @@ Copyright
 ---------
 All the original English articles are copyright Gabor Szabo, except
 where the =author field has the name of someone else. In those cases the person listed in the
-=auhtor field owns the copyright.
+=author field owns the copyright.
 The translated articles are copyright the translator as mentioned in
 the =translator field and the original author as mentioned in the =author field.
 
