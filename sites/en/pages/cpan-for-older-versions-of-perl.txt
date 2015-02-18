@@ -68,17 +68,19 @@ has dependencies then this process will quickly become a nightmare.
 <h2>cpXXXan to the rescue</h2>
 
 The <a href="http://cpxxxan.barnyard.co.uk/">cpXXXan</a> project maintained by <a href="http://www.cantrell.org.uk/david/">David Cantrell</a> provides one of the solutions to this problem.
-David maintains snapshots of CPAN with modules that will work on specific versions of Perl on specific platforms and snapshots of CPAN at various dates in the past.
+David maintains snapshots of CPAN with modules that will work on specific versions of Perl, or on a specific platforms and snapshots of CPAN at various dates in the past.
 (First day of every month since January 1, 2000.)
 
 Not only that, but it also uses the test results of the CPAN testers, and for a particular snapshot it will only include distributions
-that has a pass report for the give platform/perl pair.
+that has a pass report for the give platform or given version of perl.
 
 This means you can configure your cpan client to use one of these CPAN mirror sites and then you can use the recursive installation capabilities
 of the cpan client to install the necessary modules. They will only pull in versions that had a pass-report so the chances that everything will
 install automatically are quite high.
 
 Of course you might not get the latest version of each module, but this seems like a reasonable trade-off.
+
+Oh and in case you need another specialized snapshot, David will probably be able to create if for you.
 
 
 <h2>Better control using Pinto or Carton</h2>
