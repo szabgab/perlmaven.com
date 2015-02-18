@@ -38,7 +38,7 @@ subscription service.
 
 <h3>Scalars</h3>
 <ul>
-  <li><a href="/pro/beginner-perl/scalar-values-and-variables">Scalar values and variables</a></li>
+  <li><a href="/beginner-perl-maven-scalar-values-and-variables">Scalar values and variables</a></li>
   <li><a href="/pro/beginner-perl/common-errors">Common Errors</a></li>
   <li><a href="/pro/beginner-perl/interpolation-stdin-chomp">User Input and Output</a></li>
   <li><a href="/pro/beginner-perl/numerical-operators">Numerical Operators</a></li>
