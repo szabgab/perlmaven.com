@@ -173,7 +173,7 @@ We use the <hl>path</hl> function provided by <a href="https://metacpan.org/pod/
 and then we <a href="/slurp">slurp</a> in the content.
 
 At first I passed the content as it is to the <hl>stash</hl> method, but later it seemed more
-convenient to add a <hl>Title:</hl> pre-tag to the title of eash news-item that will make
+convenient to add a <hl>Title:</hl> pre-tag to the title of each news-item that will make
 it easier to separate the news items for the RSS feed. On the news page we don't need
 this extra word, so we can remove it by a regex.
 
