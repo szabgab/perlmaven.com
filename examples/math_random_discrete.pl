@@ -12,5 +12,5 @@ my $thing = Math::Random::Discrete->new(
 	\@items,
 );
  
-print $thing->rand, "\n";
+say $thing->rand;
 
