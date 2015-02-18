@@ -8,7 +8,7 @@
 
 =abstract start
 
-Given a list of items <hl>my @items = qw(low mid hight)</hl> and a series of weights: <hl>@weights = (10, 100, 1000)</hl>
+Given a list of items <hl>my @items = qw(low mid high)</hl> and a series of weights: <hl>@weights = (10, 100, 1000)</hl>
 how can we pick one (or more) items with the probability corresponding to their weight?
 
 That would mean that 10 out of 1110 should be the chance of "low" to be selected.
@@ -69,5 +69,17 @@ previous example as well, if we wanted more than one items.
 
 The other change, the one that makes the difference between with and without replacement, is the last line
 <hl>$weights[$selected]--;</hl> where we adjust the weight.
+
+<h2>Math::Random::Discrete</h2>
+
+As Nick Wellnhofer pointed out, an even better solution would be to use
+<a href="https://metacpan.org/pod/Math::Random::Discrete">Math::Random::Discrete</a> that uses
+some magic algorithm (aka. <a href="http://en.wikipedia.org/wiki/Alias_method">Walker's alias method</a>)
+to make the rando value generation more efficient.
+
+As I understand it has some initial longer processing and only then will it be more efficient, so I am not
+sure it is the right solution for my current needs, but nevertheless, let's see the solution:
+
+<include file="examples/math_random_discrete.pl">
 
 

@@ -4,7 +4,7 @@ use 5.010;
 
 use List::Util qw(sum);
 
-my @items = qw(low mid hight);
+my @items = qw(low mid high);
 my @weights = (10, 100, 1000);
 
 my $N = 10;
