@@ -16,7 +16,7 @@
 Watching the videos and doing all the exercises will allow you to start writing
 useful Perl scripts and/or to maintaining existing scripts.
 
-You can get access to all the video by signing up to the <a href="/pro">Perl Maven Pro</a>
+The first few episodes can be watched free of charge. To access all the videos sign up to the <a href="/pro">Perl Maven Pro</a>
 subscription service.
 
 <h2>Table of Contents</h2>
