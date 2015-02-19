@@ -23,7 +23,7 @@ I'm trying to check this checkbox:
 This seems to pose a problem because it has no defined value.
 The WWW::Mechanize::tick() documentation has this to say about the value attribute:
 'Dies if there is no named check box for that value.'
-which is probably the reason why using 'undef' for the value doesnt work...
+which is probably the reason why using 'undef' for the value doesn't work...
 
 Using this:
 

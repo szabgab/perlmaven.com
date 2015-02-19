@@ -8,7 +8,7 @@
 =abstract start
 
 <a href="/digitalocean">Digital Ocean</a> is awesome. Not only can you get a Linux machine for $5/month, but you can even pay them by the hour.
-That means you can rent a Virtual machine with 16Gb memory and 8 cores for an hour and pay only $0.238. That can be great to test something
+That means you can rent a Virtual machine with 16GB memory and 8 cores for an hour and pay only $0.238. That can be great to test something
 or to use the machine to build your project.
 
 Not only that, but they will even give you some money back if you use the <a href="/digitalocean">affiliate link</a>.
@@ -145,7 +145,7 @@ The question, what values can be passed to <b>size_id</b>, <b>image_id</b>, and 
 <h2>Droplet sizes</h2>
 
 If you visit the web-site of <a href="/digitalocean">Digital Ocean</a> (DO) you'll see you can create Droplets
-starting from one with 512Mb memory up to 64Gb memory. The ,<hl>sizes</hl> method asks the DO API to list all the available
+starting from one with 512Mb memory up to 64GB memory. The ,<hl>sizes</hl> method asks the DO API to list all the available
 sizes. It returns a reference to an array, in which every element is a <a href="https://metacpan.org/pod/DigitalOcean::Size">DigitalOcean::Size</a> object:
 
 <code lang="perl">

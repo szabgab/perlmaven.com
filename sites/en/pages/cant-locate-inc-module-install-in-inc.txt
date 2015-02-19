@@ -41,7 +41,7 @@ So when the <hl>Makefile.PL</hl> reached the <hl>use inc::Module::Install;</hl> 
 
 In regular circumstances, when you install the module from CPAN, it already comes with inc::Module::Install, and
 everything works fine. On the other hand, when you try to install the module from the version control system,
-that usually does not include the <hl>inc/</hl> subdirectory. (And that's ok, these files should not be part of the
+that usually does not include the <hl>inc/</hl> subdirectory. (And that's OK, these files should not be part of the
 version control system of the module under development.) In this case you basically act as the a developer of the said
 module, and you are expected to install <a href="https://metacpan.org/pod/Module::Install">Module::Install</a> yourself
 to somewhere in <hl>@INC</hl>.

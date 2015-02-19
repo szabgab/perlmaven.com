@@ -40,11 +40,11 @@ Unfortunately we cannot see the columns in this screenshot, but they were as fol
  <li>MidnightBSD</li>
  <li>Windows (Win32)</li>
  <li>NetBSD</li>
- <li>OpebBSD</li>
+ <li>OpenBSD</li>
  <li>SunOS/Solaris</li>
 </ol>
 
-Some of the fields are  empty. This does not mean the module won't work on that perl/platform pair, it just means no
+Some of the fields are empty. This does not mean the module won't work on that perl/platform pair, it just means no
 <b>PASS</b> reports were received for that perl/platform pair.
 
 Some of the fields contain 0.05. For example the 5th column (displaying the reports from FreeBSD) in the row of 5.8.9
