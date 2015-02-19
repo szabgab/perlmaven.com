@@ -99,4 +99,13 @@ The list of distributions in every cpXXXan mirror is limited by the test reports
 a lot of test reports then the appropriate cpXXXan mirror will also suffer from this. The best you could do is to
 <a href="http://wiki.cpantesters.org/wiki/GettingStarted">set up a CPAN smoker</a> and start providing test reports on your perl/platform pair.
 
- 
+<h2>Improving the results of CPAN Testers</h2>
+
+The <a href="http://cpantesters.org/">CPAN Testers</a> can only provide data sent in by volunteers who run whatever hardware
+and operating system is available for them. This means it is mostly Linux and commodity-PC-hardware. Even Microsoft Windows
+and Mac OSX tends to be underrepresented. Other Operating System and other hardware has a lot less report.
+
+Therefore if you are interested in data from those system, you should consider setting up a
+<a href="http://wiki.cpantesters.org/">CPAN Smoker</a> and providing the input.
+
+
