@@ -23,7 +23,7 @@ if ($str eq '') {
 
 That would work, but if <hl>use warnings;</hl> is in effect, as it should be,
 then you might get a <a href="/use-of-uninitialized-value">Use of uninitialized value</a> warnings if <hl>$str</hl> is <a href="/undef-and-defined-in-perl">undef</a>. So it might
-be better to check this too, before any other comparision:
+be better to check this too, before any other comparison:
 
 <code lang="perl">
 if (not defined $str) {
@@ -31,7 +31,7 @@ if (not defined $str) {
 }
 </code>
 
-and to do the other comparisions only if <hl>$str</hl> is defined.
+and to do the other comparisons only if <hl>$str</hl> is defined.
 
 
 <h2>Has the string only spaces in it?</h2>

@@ -55,7 +55,7 @@ to install the module. If you don't have that, then try to install
 it again, but this time pay really close attention to what is being printed.
 
 It might say where does it fail, but if it was successful it will tell you
-in which directoy was it placed.
+in which directory was it placed.
 
 Then you can try to see if it is one of the directories listed in <hl>@INC</hl>.
 You can get the list of directory on the command line by typing <hl>perl -V</hl>.
@@ -77,7 +77,7 @@ Can't locate warning.pm in @INC ...
 </code>
 
  I often see this very special case when I am teaching Perl to beginners. The first thing I teach is
-to always add <hl>use warnings;</hl> at the beginning of every script. Unforutnately in many cases
+to always add <hl>use warnings;</hl> at the beginning of every script. Unfortunately in many cases
 people write <hl>use warning;</hl> leaving out the trailing <b>s</b>. So this is is just a simple case of typo.
 
 

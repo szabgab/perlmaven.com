@@ -229,7 +229,7 @@ DBD::CSV::db prepare failed: Bad table or column name: '='
                AcNo"] at banktran.pl line 32.
 </code>
 
-Woops.  It looks like SQL::Statement doesn't support the <b>CASE</b> syntax
+Whoops.  It looks like SQL::Statement doesn't support the <b>CASE</b> syntax
 that other databases do.  Well, this will mean we have to do a bit more work
 in perl to compensate.  And should we want to move to another database in
 the future, we may want to mark this so that we can come back to it.  The
@@ -341,7 +341,7 @@ print $tb;
 
 We load Text::Table, and then create the object.  Its constructor
 takes the column headers to use, so I fill that in.  The load could be
-done a little more readably, but, again, the main point is where we
+done a little more readily, but, again, the main point is where we
 do the subtraction of Cr from Dr.  Text::Table wants each row as an
 array reference, so we create that via map.  Outside of the map, we
 get all of the keys from %totals (from above, that was what we got

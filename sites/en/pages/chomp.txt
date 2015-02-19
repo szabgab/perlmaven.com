@@ -21,7 +21,7 @@ while (my $row = <$fh>) {
 }
 </code>
 
-This is not the whole storry though.
+This is not the whole story though.
 
 =abstract end
 
@@ -47,7 +47,7 @@ hold <hl>CRLF</hl> character-pair when running on Windows.
 <h2>chomp</h2>
 
 The <hl>chomp</hl> function uses the same Input record separator <hl>$/</hl> to determine what to remove
-from the end of the string. In normal circumstances the default behaviour is to remove the trailing,
+from the end of the string. In normal circumstances the default behavior is to remove the trailing,
 os-specific new-line from the parameter of <hl>chomp</hl>. That's what we do in most of the cases.
 
 
@@ -138,14 +138,14 @@ say $str;        # hello
 </code>
 
 
-This would be the same behaviour if we left the default value (the os-aware new-line) in <hl>$/</hl>.
+This would be the same behavior if we left the default value (the os-aware new-line) in <hl>$/</hl>.
 
 <h2>chomp on arrays</h2>
 
 If we put the read-line operator in <a href="/scalar-and-list-context-in-perl">list context</a>,
 for example by assigning it to an array, it will read all the "lines" into that array.
 Each line will become an element in the array. Of course we have to put the word "lines" in quotes,
-as we already know that separating the content of the file at the new-lines is "only" the default behaviour.
+as we already know that separating the content of the file at the new-lines is "only" the default behavior.
 By changing the <b>Input Record Separator</b> we can split the file at any substring.
 
 <code lang="perl">
