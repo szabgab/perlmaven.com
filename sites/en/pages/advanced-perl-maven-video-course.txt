@@ -46,6 +46,7 @@ Some include screencasts, others contain just text.
   <li><a href="/pro/behind-the-scenes">Behind the scenes</a></li>
   <li><a href="/pro/tools-to-package-modules">Tools to package Perl scripts, modules, and application</a></li>
   <li><a href="/pro/distribution-directory-layout">Distribution directory layout</a></li>
+  <li><a href="/pro/makefile-pl-of-extutils-makemaker">Makefile.PL of ExtUtils::MakeMaker</a></li>
 
   <li>@INC and the namespace hierarchy</li>
   <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse?</a></li>
