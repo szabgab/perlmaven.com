@@ -1,0 +1,34 @@
+=title Variable interpolation - User Input and Output - chomp
+=timestamp 2015-02-21T20:01:51
+=indexes chomp, <STDIN>
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+User Input and Output
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/interpolation-stdin-chomp" />
+
+<h2>Variable interpolation</h2>
+
+<include file="examples/perl/variable_interpolation.pl">
+
+More about <a href="/quoted-interpolated-and-escaped-strings-in-perl">strings and interpolation</a>.
+
+<h2>Read from the keyboard</h2>
+
+
+<include file="examples/perl/read_from_stdin.pl">
+
+<h2>chomp</h2>
+
+<include file="examples/perl/read_from_stdin_chomp.pl">
+
+
+
