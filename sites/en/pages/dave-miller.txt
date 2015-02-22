@@ -29,7 +29,7 @@ The interview is 38:31 min long.
 
 <h2>Notes</h2>
 
-Dave works at the <a href="https://www.mozilla.org/">Mozilla project</a> that was created when <a href="http://en.wikipedia.org/wiki/Netscape">Nestscape</a>
+Dave works at the <a href="https://www.mozilla.org/">Mozilla project</a> that was created when <a href="http://en.wikipedia.org/wiki/Netscape">Netscape</a>
 released the source code of their browser.
 
 He is the project leader of the <a href="http://www.bugzilla.org/">Bugzilla</a> project, which is one of the most well-known

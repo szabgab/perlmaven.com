@@ -83,7 +83,7 @@ $ mkdir project
 $ cd project/
 </code>
 
-In the project/ direcotry create a file called app.py with the following content:
+In the project/ directory create a file called app.py with the following content:
 
 <code>
 def application(env, start_response):
