@@ -49,14 +49,14 @@ In these examples a border was added around the image, using CSS, to make it cle
 <hl>my $img = GD::Simple->new(200, 100);</hl> creates the image. It accepts two parameters: <hl>(width, height)</hl>.
 
 The method of the <hl>$img</hl> object are commands to the "drawing head" or "pen". In the above case we set the
-background color to red using <hl>bgcolor</hl> and the forground color (the ink) to be blue using <hl>fgcolor</hl>.
+background color to red using <hl>bgcolor</hl> and the foreground color (the ink) to be blue using <hl>fgcolor</hl>.
 
-The <hl>rectangle</hl> method will draw a rectangle using the forground color and filled with the background color.
+The <hl>rectangle</hl> method will draw a rectangle using the fairground color and filled with the background color.
 The 4 parameters the <hl>rectangle</hl> method receives are
 <hl>(top left x, top left y, bottom right x, bottom right y)</hl> where the the <hl>(0,0)</hl>
 coordinates are in the top left corner. The next example shows this in a clearer way.
 
-The last 3 lines in the above example convert the internal represenatation to PNG format and save it in
+The last 3 lines in the above example convert the internal representation to PNG format and save it in
 the file called img.png.
 
 <h2>Empty Green Rectangular</h2>
@@ -78,7 +78,7 @@ and the part outside of the red square has white background.  The coordinates pr
 
 <h2>Drawing a straight green line (moveTo, lineTo)</h2>
 
-In the next part of the example we will draw a straigh line. For this we can use the <hl>lineTo</hl> method that will draw
+In the next part of the example we will draw a straight line. For this we can use the <hl>lineTo</hl> method that will draw
 a line from the current position of the "pen" to the given coordinates <hl>(x, y)</hl> measure from the top left corner of the image.
 
 To position the "pen" to a specific place we use the <hl>moveTo</hl> method providing the <hl>(x, y)</hl> coordinates.
@@ -130,8 +130,8 @@ In order to draw one we have to set the "pen" to the starting point of the arc, 
 provide the following parameters: <hl>($width, $height, $start, $end, $style)</hl>.
 
 If the width and the height are the same then this is part of a circle. 
-<hl>$start</hl> and <hl>$end</hl> are degrees from 0 to 360. Zero is at the righ hand side of the ellipse
-and the degrees grow clock-wise. Hence 0, 90 as given in the example will be the bottom righ quarter.
+<hl>$start</hl> and <hl>$end</hl> are degrees from 0 to 360. Zero is at the right hand side of the ellipse
+and the degrees grow clock-wise. Hence 0, 90 as given in the example will be the bottom Right quarter.
 
 <code lang="perl">
 # draw an arc filled with dark violet

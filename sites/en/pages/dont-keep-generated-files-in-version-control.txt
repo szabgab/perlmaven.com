@@ -88,7 +88,7 @@ local specialties of the system where the distribution is currently being instal
 but because they are site specific they should <b>NOT</b> be included in the distribution, and the should <b>NOT</b>
 be under version control.
 
-If you use <hl>MAINFEST.SKIP</hl> then I'd add <hl>/MANIFEST</hl> to the .gitignore file. 
+If you use <hl>MANIFEST.SKIP</hl> then I'd add <hl>/MANIFEST</hl> to the .gitignore file. 
 
 <hl>Distribution-Name-*</hl> - If this is a repository of a distribution that will be released as Distribution-Name-1.02.tar.gz then
 the build process is going to create a directory called Distribution-Name-1.02/ and then a

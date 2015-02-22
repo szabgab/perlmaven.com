@@ -547,11 +547,11 @@ the Moose training he runs at YAPC::NA. (19:19 min)
     other people are using it, so that's something.  There's
     definitely work to be done on
     that.  <span class="transcript-timeindex">9:41</span> I've been
-    working on some tools related to calling Postgress command line
+    working on some tools related to calling Postgres command line
     programs.  It's the Pg::CLI distro, which actually
     is <span class="transcript-timeindex">8:52</span> turned out to
     be something we need a lot at work as well.  We're trying to move
-    to Postrgess and for managing
+    to Postgres and for managing
     databases <span class="transcript-timeindex">9:59</span>.  And
     then I am working on something that I hope, I'm working on it
     slowly, very slowly, that I hope will eventually replaces Moose's
@@ -658,7 +658,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
     transaction fraud detection service that's built on top of that.
     <span class="transcript-timeindex">12:40</span> and GeoIP is
     available both as downloadable databases and web services.  So
-    those are kindof our two main things: the GeoIP stuff and then the
+    those are kind of our two main things: the GeoIP stuff and then the
     fraud detection.  <span class="transcript-timeindex">12:49</span>
     And so I work for them.  We have, I think, 5 developers working on
     our various products.  Yeah, that's what I do full time.  It's
@@ -688,10 +688,10 @@ the Moose training he runs at YAPC::NA. (19:19 min)
     </span>
 
     <span class="transcript-timeindex">13:25</span> There's a couple
-    free downloads, which are kindof a subset of the full data, and
+    free downloads, which are kind of a subset of the full data, and
     then there's more stuff you can pay for to subscribe to, and then
     there's even more stuff if you want to subscribe to the web
-    service.  So there's kindof three tiers, basically.
+    service.  So there's kind of three tiers, basically.
 
   </div>
 
@@ -896,7 +896,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
     want to help with some of my modules, there are a lot of bug
     reports, sadly, for them in rt.cpan.org, so that's always a good
     place to start if you want to fix some bugs.  I'm more than happy
-    to look at patches.  I will warn people, sometimes I'm kindof slow
+    to look at patches.  I will warn people, sometimes I'm kind of slow
     to respond.  I tend to have a lot of stuff going on.  I felt
     guilty about it, but it's not that I'm ignoring you.  And feel
     free to poke me.  If you send a path and I haven't looked at it in
