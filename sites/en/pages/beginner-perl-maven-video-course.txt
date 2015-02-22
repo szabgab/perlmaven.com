@@ -41,7 +41,7 @@ subscription service.
   <li><a href="/beginner-perl-maven-scalar-values-and-variables">Scalar values and variables</a></li>
   <li><a href="/beginner-perl-maven-common-errors">Common Errors</a></li>
   <li><a href="/beginner-perl-maven-variable-interpolation-stdin-chomp">Variable interpolation - User Input and Output - chomp</a></li>
-  <li><a href="/pro/beginner-perl/numerical-operators">Numerical Operators</a></li>
+  <li><a href="/beginner-perl-maven-numerical-operators">Numerical Operators</a></li>
   <li><a href="/pro/beginner-perl/string-operators">String Operators</a></li>
   <li><a href="/pro/beginner-perl/if-statement">If statement</a></li>
   <li><a href="/pro/beginner-perl/comparison-operators">Comparison Operators</a></li>

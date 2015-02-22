@@ -1,0 +1,16 @@
+=title Numerical Operators
+=timestamp 2015-02-22T16:01:59
+=indexes +, -, /, *, %
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Numerical Operators
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/numerical-operators" />
