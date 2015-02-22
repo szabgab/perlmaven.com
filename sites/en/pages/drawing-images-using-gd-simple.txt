@@ -51,7 +51,7 @@ In these examples a border was added around the image, using CSS, to make it cle
 The method of the <hl>$img</hl> object are commands to the "drawing head" or "pen". In the above case we set the
 background color to red using <hl>bgcolor</hl> and the foreground color (the ink) to be blue using <hl>fgcolor</hl>.
 
-The <hl>rectangle</hl> method will draw a rectangle using the fairground color and filled with the background color.
+The <hl>rectangle</hl> method will draw a rectangle using the foreground color and filled with the background color.
 The 4 parameters the <hl>rectangle</hl> method receives are
 <hl>(top left x, top left y, bottom right x, bottom right y)</hl> where the the <hl>(0,0)</hl>
 coordinates are in the top left corner. The next example shows this in a clearer way.
