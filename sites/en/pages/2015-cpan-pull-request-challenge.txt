@@ -71,16 +71,29 @@ And a few other related articles:
 
 <h2>Reports</h2>
 
+<h3>January</h3>
+
 <ul>
   <li>2015.01.03 <a href="http://tinypig2.blogspot.co.il/2015/01/my-first-day-on-cpan-pull-request.html">My First Day on the CPAN Pull Request Challenge</a> by David Bradford</li>
   <li>2015.01.04 <a href="http://blogs.perl.org/users/alberto_simoes/2015/01/pr-challenge-january-1st-pr.html">PR-Challenge: January 1st PR</a> by Alberto Simões</li>
+  <li>2015.01.05 <a href="http://www.manchicken.com/2015/perl/2015-pull-request-challenge-at-first-glance.html">2015 Pull Request Challenge: At First Glance</a> by manchicken</li>
+  <li>2015.01.07 <a href="http://herlug.org.uk/?q=CPANPullRequestChallengeDay1">CPAN Pull Request Challenge 2015- Day 1</a> by lesleyb</li>
   <li>2015.01.08 <a href="http://tinypig2.blogspot.co.il/2015/01/cpan-pull-request-challenge-pull-request.html">CPAN Pull Request Challenge: The Pull Request</a> by David Bradford</li>
   <li>2015.01.11 <a href="https://huntingbears.nl/2015/01/11/cpan-pull-request-challenge-for-january-datetimeformatepoch/">CPAN Pull Request Challenge for January: DateTime::Format::Epoch</a> by Michiel Beijen</a></li>
   <li>2015.01.14 <a href="http://blogs.perl.org/users/alberto_simoes/2015/01/pr-challenge-january.html">PR-Challenge: January</a>  by Alberto Simões</li>
   <li>2015.01.14 <a href="http://blogs.perl.org/users/luca_ferrari/2015/01/cpan-pull-request-a-little-patch-for-january-and-a-lot-more-to-learn.html">CPAN Pull Request: a little patch for January (and a lot more to learn!)</a> by Luca Ferrari</li>
+  <li>2015.01.20 <a href="http://blogs.perl.org/users/itcharlie/2015/01/short-and-sweet-but-definitely-a-good-value-pr.html">Short and sweet, but definitely a good value PR!</a> by itcharlie</li>
+  <li>2015.01.27 <a href="http://cpanpr.tumblr.com/">January: SOAP-Lite</a> by Maxim Vuets
   <li>2015.02.01 <a href="http://blogs.perl.org/users/e_choroba/2015/02/pull-request-challenge-january.html">Pull Request Challenge: January</a> by E. Choroba</li>
 </ul>
 
+<h3>February</h3>
+
+<ul>
+  <li>2015.02.19 <a href="http://blogs.perl.org/users/e_choroba/2015/02/analysing-cpan-testers-reports.html">
+Analysing CPAN Testers' Reports</a> by E. Choroba</li>
+  <li>2015.02.22 <a href="https://huntingbears.nl/2015/02/22/cpan-pull-request-challenge-for-february-archivebagit/">CPAN Pull Request Challenge for February: Archive::BagIt</a> by Michiel Beijen</li>
+</ul>
 
 <h2>German</h2>
 
