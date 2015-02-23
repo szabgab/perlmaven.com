@@ -387,7 +387,7 @@ links to Starman
 root@s12:~# find /etc/ | grep rc| grep nginx | xargs ls -l
 </code>
 
-These commands will creat the symbolic links:
+These commands will create the symbolic links:
 
 <code>
 root@s12:~# ln -s ../init.d/starman /etc/rc0.d/K20starman

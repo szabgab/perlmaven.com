@@ -1,4 +1,4 @@
-=title Expect_before amd expect_affter with perl and expect.pm
+=title Expect_before amd expect_after with perl and expect.pm
 =timestamp 2006-01-20T20:40:59
 =indexes Expect 
 =status show
