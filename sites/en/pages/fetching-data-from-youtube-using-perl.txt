@@ -55,7 +55,7 @@ say $s->total_upload_views;
 </code>
 
 This would fetch my user profile - without even logging in to YouTube - and 
-print out the statistics. I have 105 subscribers, when I prepared the screencast in Jine 2011. There are 551 in July 2014.
+print out the statistics. I have 105 subscribers, when I prepared the screencast in June 2011. There are 551 in July 2014.
 
 Then I wanted to send the resulting data to myself via Gmail. Another short search on Meta CPAN
 for <b>Gmail</b> and I found <a href="http://metacpan.org/pod/Email::Send::SMTP::Gmail">Email::Send::SMTP::Gmail</a>.

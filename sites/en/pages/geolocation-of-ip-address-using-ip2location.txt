@@ -14,7 +14,7 @@ in Malaysia.
 =abstract end
 
 Their web-site has a link for <a href="http://www.ip2location.com/developers">developers</a> where they 
-link to the client libraries in varius languages, including <a href="http://www.ip2location.com/developers/perl">Perl</a>.
+link to the client libraries in various languages, including <a href="http://www.ip2location.com/developers/perl">Perl</a>.
 
 
 <h2>Install</h2>

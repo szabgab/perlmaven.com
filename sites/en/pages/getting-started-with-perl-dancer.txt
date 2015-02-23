@@ -11,7 +11,7 @@
 =abstract start
 
 Perl Dancer is a modern, light weight, route-oriented web application framework for Perl. In the first few minutes of this screencast,
-you will learn how to set up your development envirionment on Microsoft Windows machine, and then you will see how to create your
+you will learn how to set up your development environment on Microsoft Windows machine, and then you will see how to create your
 first (and very basic) web application using Perl Dancer <b>regardless of your operating system</b>. (14:25 min)
 
 =abstract end
@@ -60,7 +60,7 @@ The CSS file gets the following:
 
 <hl>lib/Echo.pm</li> implements the application.
 
-The defaul content was this:
+The default content was this:
 
 <code lang="perl">
 package Echo;

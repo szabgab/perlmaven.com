@@ -100,11 +100,11 @@ While doing that, DPP "copies" XMP tags into resulting JPG file too, which is ex
 behaviour -except (as it seems), these tags cannot be modified later
 (no matter what ExifTool version being used).
 
-As you may know, Canon DPP modifies raw files too, by writting various DPP settings into file.
+As you may know, Canon DPP modifies raw files too, by writing various DPP settings into file.
 But that doesn't affect previously written XMP data inside CR2: I can modify
 XMP data in raw without problem later (after DPP wrote modify data inside CR2).
 
-So my conlusion: If XMP data exists inside CR2, Canon DPP doesn't know how to write
+So my conclusion: If XMP data exists inside CR2, Canon DPP doesn't know how to write
 that data properly into converted file.
 So,... keep on doing good work :-)
 
@@ -143,7 +143,7 @@ This would cause the EXIF to be processed, allowing the contained misplaced XMP 
 
 Posted on 2007-05-22 16:31:25-07 by bogdan in response to 5200
 
-Phil, this is genious.
+Phil, this is genius.
 If I understand you advice correctly, then I can use ifd1:iso as "dummy" tag -just to force
 ExifTool to do XMP work inside exif section. Of course in this case such
 XMP tags remain inside exif section, but at least we are able to change their content.
@@ -153,7 +153,7 @@ Following your suggestion, I was able to delete complete "old" XMP tags, by usin
 exiftool -xmp:all= ifd1:iso= my.jpg
 </code>
 
--and add new (correctly written) XMP tags... so nobody can blaim ExifTool doing something wrong :-)
+-and add new (correctly written) XMP tags... so nobody can blame ExifTool doing something wrong :-)
 
 I haven't tried, but I agree there's no point to give a note to Canon -I believe
 they use answering machines for such complains.
