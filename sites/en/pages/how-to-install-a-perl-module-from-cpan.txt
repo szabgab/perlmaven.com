@@ -96,7 +96,7 @@ TBD. <a href="http://www.cygwin.com/">Cygwin</a>.
 <h2 id="debian">Debian/Ubuntu Linux</h2>
 
 If you have <b>root</b> rights, and if you use the <b>system perl</b> located in <hl>/usr/bin/perl</hl>,
-then probably the best is to try to install from the package management sytem of your Linux distribution.
+then probably the best is to try to install from the package management system of your Linux distribution.
 If you don't have root rights, you could ask your system administrator to do it on your behalf.
 
 Apparently there is a nice way to <a href="http://deb.perl.it/">find out if a Perl module is on Debian or Ubuntu</a>.

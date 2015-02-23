@@ -35,7 +35,7 @@ perl Build test
 </code>
 
 <a href="https://metacpan.org/module/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>
-and <a href="https://metacpan.org/module/Module::Install">Module::Insall</a> both use a file
+and <a href="https://metacpan.org/module/Module::Install">Module::Install</a> both use a file
 called Makefile.PL
 
 In this case the flow is:
@@ -63,16 +63,16 @@ well, of course after you've installed all the dependencies.
 Normally only one of the 3 files: <hl>Build.PL</hl>, <hl>Makefile.PL</hl>, or <hl>dist.ini</hl> should be
 in the source code repository of every CPAN distribution BUT:
 
-When releasasing a distribtion Dist::Zilla will create a <hl>Makefile.PL</hl> file. Some developers add this
+When releasing a distribution Dist::Zilla will create a <hl>Makefile.PL</hl> file. Some developers add this
 to their version control system, even though they probably <a href="/dont-keep-generated-files-in-version-control">should not</a>.
 
 Build.PL can generate a Makefile.PL during the release process. Because for a long time Build.PL could not handle itself alone,
-many CPAN developers have opted to include this Makefile.PL in the distribution. Unfortunatelly some of them
+many CPAN developers have opted to include this Makefile.PL in the distribution. Unfortunately some of them
 have also added these to their version control system, even though they probably <a href="/dont-keep-generated-files-in-version-control">should not</a>.
 
 So if you see both <hl>Build.PL</hl> and <hl>Makefile.PL</hl> then it is probably Build.PL that is the source. The best would be
-to talk to the author and to either remove Makefile.PL from the verion control, or to switch the whole distribution
-to use either Dist::Zilla or one of the Makefile.PL based tools and remove Build.PL from the reposiotry.
+to talk to the author and to either remove Makefile.PL from the version control, or to switch the whole distribution
+to use either Dist::Zilla or one of the Makefile.PL based tools and remove Build.PL from the repository.
 Short of doing that, you can look into the Makefile.PL. If it has a comment like this:
 
 <code>

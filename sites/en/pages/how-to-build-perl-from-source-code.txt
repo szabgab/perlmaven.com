@@ -22,7 +22,7 @@ As we would not want to assume an existing installation of Perl, we cannot use <
 =abstract end
 
 Perl, the compiler/interpreter and the various extras that we usually think about when we say "The Perl programming language",
-is maintained by a group of people called <b>Perl 5 Porters</b>. They regularily release new versions that we can download from
+is maintained by a group of people called <b>Perl 5 Porters</b>. They regularly release new versions that we can download from
 <a href="http://www.cpan.org/src/README.html">this page on CPAN</a>.
 
 At the time of writing this article, the latest production release was <b>5.20.1</b>.
@@ -41,7 +41,7 @@ yum -y install gcc
 These are the only commands you need to run as <b>root</b>. The rest can be executed either as <b>root</b> or as any regular
 user.
 
-Once these are installed we can download the source code of perl, and then we can compile ot with the following instructions:
+Once these are installed we can download the source code of perl, and then we can compile it with the following instructions:
 
 <code>
 wget http://www.cpan.org/src/5.0/perl-5.20.1.tar.gz
@@ -68,12 +68,12 @@ export PATH=$HOME/localperl/bin:$PATH
 
 and then you can type <hl>perl -v</hl>.
 
-If you want to make this change persisten, add this line to $HOME/.bashrc
+If you want to make this change persistent, add this line to $HOME/.bashrc
 
 <h2>Threads</h2>
 
 By default the above commands will build a non-threaded perl.
-If you'd like to have threadding compiled into perl, you'll need to change the line running <hl>Configure</hl> to be the following:
+If you'd like to have threading compiled into perl, you'll need to change the line running <hl>Configure</hl> to be the following:
 
 <code>
 ./Configure -des -Dprefix=$HOME/localperl -Dusethreads
@@ -84,7 +84,7 @@ file that comes with the source code of perl.
 
 <h2>Faster testing</h2>
 
-The <hl>make test</hl> step will run a few hunder thousands unit-tests that come with the source code of perl. This can take
+The <hl>make test</hl> step will run a few hundred thousands unit-tests that come with the source code of perl. This can take
 a while, but if you have multiple cores, you can take advantage of them by running the tests in parallel. 
 In order to run 3 tests at a time, instead of <hl>make test</hl>, run the following:
 

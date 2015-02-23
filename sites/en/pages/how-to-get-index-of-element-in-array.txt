@@ -177,13 +177,13 @@ foreach my $place (@input) {
 </code>
 
 In this code we used the two lines created for the one-element version together with the ternary operator code to have -1 where
-the element was not found in the <hl>@plantes</hl> array
+the element was not found in the <hl>@planets</hl> array
 
 <h2>Performance issues?</h2>
 
 One of the big differences between the <hl>first_index</hl> solutions and the manual solutions is that the <hl>first_index</hl>
 function will return the index immediately when it was found, while <hl>grep</hl> will go over the list of all the planets before
-returning the result. Even if the first element already matched. This is not a problem if the <hl>@plantes</hl> array is very short
+returning the result. Even if the first element already matched. This is not a problem if the <hl>@planets</hl> array is very short
 or if we execute this code rarely, but in other cases this might have a performance penalty.
 
 <hl>grep</hl> is basically <hl>foreach</hl> loop, so if we look at the most recent solution, we can see that we have two loops

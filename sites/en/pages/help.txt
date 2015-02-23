@@ -54,7 +54,7 @@ The learn.perl.org site has some more information in its <a href="http://learn.p
 
 <h2>IRC</h2>
 
-On <a href="http://www.irc.perl.org/">perl.irc.org</a> there are many Perl related channles but specifically the one called #Perl is <b>not</b>
+On <a href="http://www.irc.perl.org/">perl.irc.org</a> there are many Perl related channels but specifically the one called #Perl is <b>not</b>
 a channel for helping people. For that you'd be better off going to the #perl channel on irc.freenode.net.
 
 In any case, please be warned that some channels might be rough at times.
