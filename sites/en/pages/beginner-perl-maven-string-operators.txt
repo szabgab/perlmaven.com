@@ -1,0 +1,16 @@
+=title String operators
+=timestamp 2015-02-24T17:33:07
+=indexes ., x
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+String operators
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/string-operators" />
