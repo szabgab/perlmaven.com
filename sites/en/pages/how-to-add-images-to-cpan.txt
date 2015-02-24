@@ -15,7 +15,7 @@ and <a href="http://search.cpan.org/">search.cpan.org</a>.
 
 =abstract end
 
-First let'slink to few examples:
+First let's link to few examples:
 
 <h2>Including images in MetaCPAN</h2>
 

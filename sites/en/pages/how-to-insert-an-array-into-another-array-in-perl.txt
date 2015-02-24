@@ -18,8 +18,8 @@ but we have another issue with the task.
 =abstract end
 
 There can be two types of insertions. <b>Flattening</b>, when the elements of <hl>@language</hl> become elements of <hl>@names</hl>, and thus
-at the end of the operation <hl>@names</hl> will have 7 elements; or it can be <b>non-flatening</b>, that will create a sort-of
-two-dimensional array. In this case <hl>@names</hl> will have 4 elements after the operation, one of them is a refernce
+at the end of the operation <hl>@names</hl> will have 7 elements; or it can be <b>non-flattening</b>, that will create a sort-of
+two-dimensional array. In this case <hl>@names</hl> will have 4 elements after the operation, one of them is a reference
 to an internal array that holds the elements of <hl>@languages</hl>.
 
 The solution to the two cases is quite similar. They both use the 
@@ -28,18 +28,18 @@ Maybe we just need to adjust how we call the operation:
 
 In the first case we
 
-<h2>Instert an array in another array</h2>
+<h2>Insert an array in another array</h2>
 
 <include file="examples/insert_array_in_array.pl">
 
 in the second case we 
 
-<h2>Insert and array refernce in another array</h2>
+<h2>Insert and array reference in another array</h2>
 
 <include file="examples/insert_array_ref_in_array.pl">
 
 The difference in the two code snippets is that in the first one we insert <hl>@languages</hl> and in
-the second onf we insert <hl>\@languages</hl>. Note the leading backslash.
+the second one we insert <hl>\@languages</hl>. Note the leading backslash.
 
 If we run the scripts:
 
@@ -59,7 +59,7 @@ $VAR1 = [
         ];
 </code>
 
-The second one generates a two-dimentsional array:
+The second one generates a two-dimensional array:
 
 <code>
 $ perl examples/insert_array_ref_in_array.pl 
@@ -88,12 +88,12 @@ in which we can reach the values of the inserted array by using the the appropri
 on the main array.
 
 
-Beside one leaveing a one-dimensional array behind and the other one creating a two-dimensionl array, there is another
+Beside one leaving a one-dimensional array behind and the other one creating a two-dimensional array, there is another
 big difference between the two. What if after inserting the array we change the original <hl>@languages</hl> array?
 
 <h2>Changing the content of the array</h2>
 
-In the first case, the content of <hl>@languages</hl> changes but the contet of <hl>@names</hl> remains the same
+In the first case, the content of <hl>@languages</hl> changes but the content of <hl>@names</hl> remains the same
 as it was after the call to <hl>splice</hl>.
 
 <include file="examples/insert_array_in_array_change.pl">

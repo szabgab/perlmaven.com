@@ -14,7 +14,7 @@ Posted on 2009-07-14 10:09:17-07 by jbphoto
 
 Hi, The pictures (jpg) I want to put on my website are about 60Ko with a 20Ko thumbnail inside!!! 
 How can I remove this thumbnail, but keeping Exif and IPTC info
-(wich are displayed on my site: http://www.jeb.photo.free.fr) 
+(which are displayed on my site: http://www.jeb.photo.free.fr) 
 
 Thanks for your help 
 JB
@@ -32,7 +32,7 @@ where FILE is one or more file or directory names.
 But doing this will leave behind some tags like the thumbnail resolution which
 are no longer necessary. So if you are dealing with JPEG images a
 better method would be to delete all IFD1 tags, which will remove the
-Thumbnailimage and all assocated tags. (IFD1 is the thumbnail IFD in JPEG images.):
+Thumbnailimage and all associated tags. (IFD1 is the thumbnail IFD in JPEG images.):
 
 <code>
 exiftool -ifd1:all= -ext jpg FILE

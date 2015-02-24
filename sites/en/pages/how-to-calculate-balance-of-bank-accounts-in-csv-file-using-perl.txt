@@ -93,7 +93,7 @@ and how can we try to implement what he needed?
 Before trying to improve the code, let's see if it runs, and what does it do? The script is saved
 as <b>banktran.pl</b> and the csv file as <b>banktran.csv</b>
 
-<b>perl bantran.pl</b>
+<b>perl banktran.pl</b>
 
 <code>
 Content-type:text/html

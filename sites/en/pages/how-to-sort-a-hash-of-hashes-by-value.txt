@@ -59,7 +59,7 @@ foreach my $k (@keys) {
 }
 </code>
 
-Result might look like this, but it can be in a differnt order on other runs:
+Result might look like this, but it can be in a different order on other runs:
 
 <code>
 Gaur 1
@@ -69,7 +69,7 @@ Gaur 2
 
 
 <hl>$a</hl> and <hl>$b</hl> are the standard place-holders of <hl>sort</hl>. For
-each comparision they will hold two keys from the list.
+each comparison they will hold two keys from the list.
 In order to compare the <b>Position</b> value of two elements we need to access them
 using <hl>$a</hl> and <hl>$b</hl> and compare the numerical(!) values using the
 spaceship-operator (<hl><=></hl>).
@@ -90,13 +90,13 @@ Gaur 1
 Gaur 2
 </code>
 
-This would be nice, but unfortunatelly this result is not going to be the same always.
+This would be nice, but unfortunately this result is not going to be the same always.
 After all the <b>Position</b> values of 'Gaur 1' and 'Gaur 3' are both the same number (10),
 so the space-ship operator cannot really decide between the two.
 
 <h2>Secondary sorting</h2>
 
-If we would like to make sure the result of sort is more predictbale, we will need to
+If we would like to make sure the result of sort is more predictable, we will need to
 sort based on two (or even more) values.
 
 For example we can sort the hash first by the <b>Position</b> value, and among the entries with the
