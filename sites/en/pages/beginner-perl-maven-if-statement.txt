@@ -1,0 +1,16 @@
+=title If statement
+=timestamp 2015-02-25T06:01:49
+=indexes if
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+If statement
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/if-statement" />

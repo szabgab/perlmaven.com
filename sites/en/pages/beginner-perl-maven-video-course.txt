@@ -43,7 +43,7 @@ subscription service.
   <li><a href="/beginner-perl-maven-variable-interpolation-stdin-chomp">Variable interpolation - User Input and Output - chomp</a></li>
   <li><a href="/beginner-perl-maven-numerical-operators">Numerical Operators</a></li>
   <li><a href="/beginner-perl-maven-string-operators">String Operators</a></li>
-  <li><a href="/pro/beginner-perl/if-statement">If statement</a></li>
+  <li><a href="/beginner-perl-maven-if-statement">If statement</a></li>
   <li><a href="/pro/beginner-perl/comparison-operators">Comparison Operators</a></li>
   <li><a href="/pro/beginner-perl/string-number-conversion">String Number Conversion</a></li>
   <li><a href="/pro/beginner-perl/compare-values">Compare Values</a></li>
