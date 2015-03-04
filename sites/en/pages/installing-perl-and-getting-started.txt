@@ -14,7 +14,7 @@ This is the first part of the <a href="/perl-tutorial">Perl tutorial</a>.
 In this part you will learn how to install Perl on Microsoft Windows and how to start
 using it on Windows, Linux or on a Mac.
 
-You'll get directions to set up your development environment, or in less grandious words:
+You'll get directions to set up your development environment, or in less grandiose words:
 which editor or IDE to use for writing Perl?
 
 We will also see the standard "Hello World" example.

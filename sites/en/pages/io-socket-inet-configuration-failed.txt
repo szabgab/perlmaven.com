@@ -18,7 +18,7 @@ I am trying to connect to SMTPS using Net::SMTP::SSL; library. while trying to c
 IO::Socket::INET configuration failederror:00000000:lib(0):func(0):reason(0)
 </code>
 
-I am able to connect to SMTP. I have tried the same with telnet and telnets which was successfull. Can anyone please give me some ideas about this error? Thanks in Advance Ravi Gowda
+I am able to connect to SMTP. I have tried the same with telnet and telnets which was successful. Can anyone please give me some ideas about this error? Thanks in Advance Ravi Gowda
 
 Posted on 2007-04-21 12:05:55-07 by edinburghrob in response to 3706
 
