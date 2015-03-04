@@ -8,7 +8,7 @@
 
 =abstract start
 
-We have already see a few <a href="/scalable-vector-graphics-with-perl">examples for SVG with Perl</a>, and we had a
+We have already seen a few <a href="/scalable-vector-graphics-with-perl">examples for SVG with Perl</a>, and we had a
 few articles <a href="/psgi">using PSGI</a>. Let's combine the two. This will make it easier to play with SVG as
 we can see our results immediately.
 
