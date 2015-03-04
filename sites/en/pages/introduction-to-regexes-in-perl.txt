@@ -13,7 +13,7 @@ Other languages and other tools also provide regex support but there are a numbe
 
 =abstract end
 
-<h2>Regex dialects and integrations</h2>
+<h2>Regex dialects and interactions</h2>
 
 First of all Regex can be thought of as a separate language that has various dialects and that can be used in various places.
 

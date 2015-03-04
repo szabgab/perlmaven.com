@@ -12,7 +12,7 @@
 
 Posted on 2006-05-01 21:05:05-07 by arul
 
-I have integrated NET:SFTP module and trying test the "sftp put" fuctionality.
+I have integrated NET:SFTP module and trying test the "sftp put" functionality.
 
 <code lang="perl">
 put($lclfile, "$remfile");

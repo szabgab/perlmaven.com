@@ -170,7 +170,7 @@ Show notes:
 
   <div class="speaker-section speaker-gs">
     7.35
-    Gabor: Ok, so I saw that there are like a 90 people and you don't know them but do you know
+    Gabor: OK, so I saw that there are like a 90 people and you don't know them but do you know
     what kind of people or did you talk to them or can you say who do you expect, what kind of
     background of these people would you expect more likely to give you some money for this?
   </div>
@@ -309,7 +309,7 @@ Show notes:
     Jeffrey: I haven't committed yet but I would like to go, I went last year to YAPC at Madison and had a blast.
     Last year I stayed at a hostel which was kind of a first for me, usually when I travel with my wife her
     tastes are a little more particular than mine.
-    So I was travelling alone, I stayed at a hostel and it really turned out to
+    So I was traveling alone, I stayed at a hostel and it really turned out to
     be the best part of the hole experience. I met
     <a href="http://blogs.perl.org/users/sawyer_x/">Sawyer</a> there, he is a
     really talented guy, we had some late night conversations.

@@ -27,9 +27,9 @@ Interview with Jay Hannah, who has been the administrator of the central Perl Mo
   <li><a href="http://omaha.pm.org/">Perl Mongers in Omaha, Nebraska</a> that Jay basically folded into the <a href="http://odlug.org/">Omaha Dynamic Language User Group</a></li>
   <li><a href="http://desmoines.pm.org/">Des Moines, Iowa</a> and 
       <a href="http://kc.pm.org/">Kansas City, Missouri</a> are two near-by Perl Monger groups.</li>
-  <li>55 Farenheit is 12.7778 Celsius. It is rather cold for bike riding :)</li>
+  <li>55 Fahrenheit is 12.7778 Celsius. It is rather cold for bike riding :)</li>
   <li><a href="http://jays.net">jays.net</a> for all things Jay. Or: 
-   <a href="https://www.facebook.com/deafferret">FaceBook</a>,
+   <a href="https://www.facebook.com/deafferret">Facebook</a>,
    <a href="https://twitter.com/deafferret">Twitter</a>,
    <a href="http://deafferret.tumblr.com/">Tumblr</a>, 
    <a href="http://www.youtube.com/deafferret">YouTube</a>,
@@ -44,7 +44,7 @@ Interview with Jay Hannah, who has been the administrator of the central Perl Mo
   <li>Apparently Jay works at <a href="http://www.iinteractive.com/">Infinity Interactive</a> too,
      together with <a href="/john-sj-anderson-genehack">John Anderson (genehack)</a> and <a href="/stevan-little">Stevan Little</a>.
      He'll be at <a href="http://www.yapcna.org/yn2013/">YAPC::NA</a> too helping with the
-     <a href="http://www.yapcna.org/yn2013/training.html">master classses</a> of the other two.
+     <a href="http://www.yapcna.org/yn2013/training.html">master classes</a> of the other two.
   <li>Perspective:
    <ul>
      <li>Jay: Omaha is a fairly small town</li>

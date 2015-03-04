@@ -74,7 +74,7 @@ If you need people to work in your office, make that clear otherwise you may be 
 CVs of people with no interest in moving to your city/country.
 
 A telecommute job increases your chances of getting a good developer.
-If you're ok with the employee working remotely,
+If you're OK with the employee working remotely,
 do you have restrictions regarding their time-zone?
 Do you still require on-site visits? How often? How long?
 

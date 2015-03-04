@@ -55,7 +55,7 @@ v5.14.2
 <h2>Disclaimer</h2>
 
 By default <hl>cpanm</hl> will try to install the latest version of each module.
-By the time you read this, modules had newer releaes, some of which might
+By the time you read this, modules had newer releases, some of which might
 not install as smoothly as you can see in this article.
 
 <h2>Prerequisites</h2>
@@ -81,7 +81,7 @@ a client program to install modules from CPAN.
 $ curl -L http://cpanmin.us | perl - App::cpanminus
 </code>
 
-The output will lool like this:
+The output will look like this:
 
 <code>
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -355,13 +355,13 @@ So we need to install the development files of the mysql client:
 # aptitude install libmysqlclient-dev
 </code>
 
-Tunning <hl>cpanm DBD::mysql</hl> will yield now a different output:
+Running <hl>cpanm DBD::mysql</hl> will yield now a different output:
 
 <code>
 ! Installing DBD::mysql failed. See /home/gabor/.cpanm/work/1395237315.26506/build.log for details. Retry with --force to force install it.
 </code>
 
-(Previously it failed in the Configurtion step. This time in the Installation step.)
+(Previously it failed in the Configuration step. This time in the Installation step.)
 Looking in the build.log file I see error like this:
 
 <code>
@@ -405,7 +405,7 @@ two test files that still failed.
 At this point we can do one or more of the following things: 
 
 <ol>
-  <li>Decied DBD::mysql isn't that important for our life and skip the installation.</li>
+  <li>Decide DBD::mysql isn't that important for our life and skip the installation.</li>
   <li>Send a bug report to bug-dbd-mysql@rt.cpan.org with the output.</li>
   <li>Look at the build.log file, configure the MySQL server access and try to install again using <hl>cpanm DBD::mysql</hl></li>
   <li>Install the module using the force  <hl>cpanm --force DBD::mysql</hl> (this will run the tests but disregard the failure)</li>
