@@ -1,7 +1,7 @@
 =title Creating bar graphs using Perl GD::Graph
-=timestamp 2015-02-01T07:30:01
+=timestamp 2015-03-05T20:50:01
 =indexes GD::Graph
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
@@ -12,6 +12,9 @@
 <a href="https://metacpan.org/pod/GD::Graph">GD::Graph</a> makes it easy to create various types of
 graphs using Perl. The distribution comes with an extensive set of examples. In this article we are
 going to see a bar-graph and how various parameters impact its look.
+
+We'll start with a script with a number of commented out and then one by one we're going to enable each one
+of the parameters. In the meantime we will keep the data (mostly) the same.
 
 =abstract end
 
@@ -194,6 +197,8 @@ of the drawing itself.
 <img src="/img/gdgraph/bars_shadowclr_dred.png" alt="shadowclr set to dred" />
 <img src="/img/gdgraph/bars_transparent.png" alt="transparent set" />
 </div>
+
+<h2>Conclusion</h2>
 
 There are even more parameters one can set for a <a href="https://metacpan.org/pod/GD::Graph">GD::Graph</a>
 and there are plenty more examples.
