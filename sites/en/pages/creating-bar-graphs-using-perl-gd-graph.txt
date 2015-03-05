@@ -190,7 +190,7 @@ and thus we see through the graph and see the red background of the HTML page.
 The right graph is drawn with transparency turned off <hl>transparent=0</hl> and so it has the background
 of the drawing itself.
 
-<div style="background-color: red">
+<div style="background-color: red; padding: 20px; width: 850px">
 <img src="/img/gdgraph/bars_shadowclr_dred.png" alt="shadowclr set to dred" />
 <img src="/img/gdgraph/bars_transparent.png" alt="transparent set" />
 </div>
