@@ -118,7 +118,12 @@ This means we might need to tilt our head to read them, but at least they don't 
 
 <img src="/img/gdgraph/bars_x_labels_vertical.png" alt="x_labels_vertical set" />
 
-<h2>bars_bar_spacing</h2>
+<h2>bar_spacing</h2>
+
+By default the bars touch each other. This makes the graph a bit bulky. The 
+<a href="https://metacpan.org/pod/GD::Graph#bar_spacing">bar_spacing</a> parameter
+allows us to set the number of pixels between the bars. We set it to 20 that made
+the bars to be very thin. This is probably too much for this graph.
 
 <code lang="perl">
     bar_spacing => 20,
@@ -126,9 +131,51 @@ This means we might need to tilt our head to read them, but at least they don't 
 
 <img src="/img/gdgraph/bars_bar_spacing.png" alt="bar_spacing set" />
 
+A value of 10 would probably look better:
+
+<img src="/img/gdgraph/bars_bar_spacing_10.png" alt="bar_spacing set" />
+
+<h2>shadow_depth</h2>
+
+In order for the bars to be more live (more 3D-like) we can add shadow. The shadown can be
+either on the right side or the left side of the bar. The <a href="https://metacpan.org/pod/GD::Graph#shadow_depth">shadow_depth</a>
+variable controls how many pixels the shadow will use and in which direction. A positive number will create a shadow
+to the right, as can be seen in our result:
+
+<code lang="perl">
+    shadow_depth    => 4,
+</code>
+
+<img src="/img/gdgraph/bars_shadow_depth.png" alt="shadow_depth set" />
+
+A negative number (-4 in this case) would put the shadow to the left:
+
+<img src="/img/gdgraph/bars_shadow_depth_left.png" alt="shadow_depth set" />
+
+If the <hl>shadow_depth</hl> is bigger than the <hl>bar_spacing</hl> this looks awkward.
+
+<h2>shadowclr = dred</h2>
+
+The <a href="https://metacpan.org/pod/GD::Graph#bgclr-fgclr-boxclr-accentclr-shadowclr">shadowclr</a> parameter
+allows us to set the colour (with the u) of the shadow. The example that came with the module used
+the colour called dred which I've never heard off, but looks like some deep-red. In any
+case the values needs to be one of the
+<a href="https://metacpan.org/pod/GD::Graph::colour">GD::Graph::colour</a>predefined colours</a>.
+
+<code lang="perl">
+    shadowclr       => 'dred',
+</code>
+
+<img src="/img/gdgraph/bars_shadowclr_dred.png" alt="shadowclr set to dred" />
 
 <h2>transparent</h2>
 
-<img src="/img/gdgraph/bars_all.png" alt="transparent set" />
+<a href="https://metacpan.org/pod/GD::Graph#transparent">transparent</a>
+
+<code lang="perl">
+    transparent     => 0,
+</code>
+
+<img src="/img/gdgraph/bars_transparent.png" alt="transparent set" />
 
 
