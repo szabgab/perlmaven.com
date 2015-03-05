@@ -44,7 +44,9 @@ Let's see what happens as we enable the rest of the parameters one-by-one.
 In the previous graph the y-axis ran from 0 to 10. I am not sure why did it run exactly to 10, it is somehow
 calculated from the max value that needs to be displayed. (In a simple experiment I changed one of the values to 12
 and the y-axis ran up to 25.) In any case, if you are not satisfied with the max y-axis value calculated by the module,
-you can supply your own number using the <hl>y_max_value</hl> parameter. We set it to 7 and got the following result:
+you can supply your own number using th
+<a href="https://metacpan.org/pod/GD::Graph#y_max_value-y_min_value">y_max_value</a> parameter.
+We set it to 7 and got the following result:
 
 <code lang="perl">
     y_max_value     => 7,
@@ -54,11 +56,24 @@ you can supply your own number using the <hl>y_max_value</hl> parameter. We set 
 
 <h2>y_tick_number</h2>
 
+If you look at the y-axis of the previous graphs, you'll see there are 5 numbers above the 0
+4 of them with little "ticks" and the 5th is the max-value of the y-axis.
+
+The number of ticks is controlled by the <a href="https://metacpan.org/pod/GD::Graph#y_tick_number">y_tick_number</a>
+parameter. It defaults to 5, but for the next graph we set it to be 8 and indeed we now have 8 numbers above the 0
+including the max value of the y-axis.
+
+These ticks can make it easier to see how tall each one of the bars is.
+
 <code lang="perl">
     y_tick_number   => 8,
 </code>
 
 <img src="/img/gdgraph/bars_y_tick_number.png" alt="y_tick_number set" />
+
+<h2>y_label_skip</h2>
+
+<img src="/img/gdgraph/bars_y_label_skip.png" alt="y_label_skip set" />
 
 
 <img src="/img/gdgraph/bars_all.png" alt="just a bar graph created by Perl GD::Graph" />
