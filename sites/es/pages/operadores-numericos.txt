@@ -1,5 +1,5 @@
 =title Operadores numéricos
-=timestamp 2015-03-01T17:30:01
+=timestamp 2015-03-05T21:30:01
 =indexes +, -, *, /, %, ++, --, +=, *=, -=, /=, %=
 =status show
 =original numerical-operators
@@ -10,7 +10,7 @@
 
 =abstract start
 
-Como en la mayoría de lenguajes de programación, Perl tiene los operadores numéricos básicos:
+Como la mayoría de lenguajes de programación, Perl tiene los operadores numéricos básicos:
 <hl>+</hl> para la suma, <hl>-</hl> para la resta, <hl>*</hl> para la multiplicación, <hl>/</hl> para la división:
 
 =abstract end
@@ -42,7 +42,7 @@ say 9 % 2;   # 1
 say 9 % 5;   # 4
 </code>
 
-Estos mismos operadores numéricos se pueden usar sobre <a href="http://perlmaven.com/scalar-variables">variables escalares (es)</a> también:
+Estos mismos operadores numéricos también se pueden usar sobre <a href="http://perlmaven.com/scalar-variables">variables escalares (en)</a>:
 
 <code lang="perl">
 use strict;
@@ -58,8 +58,8 @@ say $x / $y;  # 0.666666666666667
 
 <h2>Asignaciones compuestas</h2>
 
-La expresión <hl>$x += 3;</hl> es la versión abreviada de <hl>$x = $x + 3;</hl>, tienen exactamente
-el mismo resultado:
+La expresión <hl>$x += 3;</hl> es la versión abreviada de <hl>$x = $x + 3;</hl>, ambas producen
+exactamente el mismo resultado:
 
 <code lang="perl">
 use strict;
@@ -80,7 +80,7 @@ say $y;  # 5
 
 En general, <hl>VARIABLE OP= EXPRESION</hl> es lo mismo que
 <hl>VARIABLE = VARIABLE OP EXPRESION</hl>, normalmente es más fácil de leer y menos proclive a errores (No tenemos que repetir el nombre de la VARIABLE)
-Puedes usar este tipo de asignación compuesta con cualquier operador binario:
+Este tipo de asignación compuesta se puede utilizar con cualquier operador binario:
 
 <hl>+=</hl>, <hl>*=</hl>, <hl>-=</hl>, <hl>/=<hl>, incluso <hl>%=</hl>
 
@@ -89,7 +89,7 @@ Puedes usar este tipo de asignación compuesta con cualquier operador binario:
 
 Perl también proporciona los operadores <hl>++</hl> y <hl>--</hl> para auto incremento y auto decremento. Estos operadores incrementan y decrementan respectivamente el valor de una variable escalar por 1.
 
-  <code lang="perl">
+<code lang="perl">
 use strict;
 use warnings;
 use 5.010;
@@ -106,10 +106,10 @@ say $x; # 2
 Tanto las versiones postfijas <hl>$x++</hl> y <hl>$x--</hl>, como las versiones prefijas
 <hl>++$x</hl> y <hl>--$x</hl> están disponibles y funcionan de la misma manera que en
 otros lenguajes de programación.
-En caso de que no los conozcas, no es el mejor momento para explorarlos a fondo.
+En caso de que no las conozcas, no es el mejor momento para explorarlas a fondo.
 
 Cuando se usan dentro de una expresión más grande es cuando usar operadores prefijos o postfijos realmente importa. En
-la mayoría de los casos es mejor evitar esas expresiones, pueden provocarte dolores de cabeza fácilmente.
+la mayoría de los casos es mejor evitar esas expresiones, pueden provocar dolores de cabeza fácilmente.
 Tendremos un articulo explicando los corto circuitos en expresiones booleanas y los problemas
 con auto incrementos.
 
