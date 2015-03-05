@@ -21,7 +21,7 @@ subscription service.
 
 <h2>Table of Contents</h2>
 <h3>Introduction</h3>
-<ul>
+<ol>
   <li><a href="/beginner-perl-maven-installation">Welcome and installation</a></li>
   <li><a href="/beginner-perl-maven-editors">Editors, IDEs</a></li>
   <li><a href="/beginner-perl-maven-hello-world">Hello World</a></li>
@@ -34,18 +34,18 @@ subscription service.
   <li><a href="/beginner-perl-maven-exercise-hello-world">Exercise: Hello World</a></li>
   <li><a href="/beginner-perl-maven-solution-hello-world-1">Solution: Hello World (part 1)</a></li>
   <li><a href="/beginner-perl-maven-solution-hello-world-2">Solution: Hello World (part 2)</a></li>
-</ul>
+</ol>
 
 <h3>Scalars</h3>
-<ul>
+<ol>
   <li><a href="/beginner-perl-maven-scalar-values-and-variables">Scalar values and variables</a></li>
   <li><a href="/beginner-perl-maven-common-errors">Common Errors</a></li>
   <li><a href="/beginner-perl-maven-variable-interpolation-stdin-chomp">Variable interpolation - User Input and Output - chomp</a></li>
   <li><a href="/beginner-perl-maven-numerical-operators">Numerical Operators</a></li>
   <li><a href="/beginner-perl-maven-string-operators">String Operators</a></li>
   <li><a href="/beginner-perl-maven-if-statement">If statement</a></li>
-  <li><a href="/pro/beginner-perl/comparison-operators">Comparison Operators</a></li>
-  <li><a href="/pro/beginner-perl/string-number-conversion">String Number Conversion</a></li>
+  <li><a href="/beginner-perl-maven-comparison-operators">Comparison Operators</a></li>
+  <li><a href="/beginner-perl-maven-string-number-conversion">String to Number Conversion</a></li>
   <li><a href="/pro/beginner-perl/compare-values">Compare Values</a></li>
   <li><a href="/pro/beginner-perl/undef">Undef</a></li>
   <li><a href="/pro/beginner-perl/logical-operators">Logical Operators</a></li>
@@ -64,10 +64,10 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-concatenation">Solution: Concatenation</a></li>
   <li><a href="/pro/beginner-perl/exercise-number-guessing-game">Exercise: Number guessing game</a></li>
   <li><a href="/pro/beginner-perl/solution-number-guessing-game">Solution: Number guessing game</a></li>
-</ul>
+</ol>
 
 <h3>Files</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/die-warn-exit">die, warn, exit</a></li>
   <li><a href="/pro/beginner-perl/open-file">Open File</a></li>
   <li><a href="/pro/beginner-perl/open-file-all">Open File All</a></li>
@@ -86,11 +86,11 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-add-more-statistics">Solution: Add more statistics</a></li>
   <li><a href="/pro/beginner-perl/exercise-write-report-to-file">Exercise: Write report to file</a></li>
   <li><a href="/pro/beginner-perl/solution-write-report-to-file">Solution: Write report to file</a></li>
-</ul>
+</ol>
 
 
 <h3>Lists and Arrays</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/lists-in-perl">Lists in Perl</a></li>
   <li><a href="/pro/beginner-perl/list-assignment">List Assignment</a></li>
   <li><a href="/pro/beginner-perl/foreach-loop-over-list">Foreach Loop Over List</a></li>
@@ -122,10 +122,10 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-number-guessing-game-n-next-game">Solution: improve the number guessing game - n for next game</a></li>
   <li><a href="/pro/beginner-perl/solution-number-guessing-game-d-debug-toggle">Solution: improve the number guessing game - d for debug mode</a></li>
   <li><a href="/pro/beginner-perl/solution-number-guessing-game-m-move-toggle">Solution: improve the number guessing game - m for move mode</a></li>
-</ul>
+</ol>
 
 <h3>Advanced Arrays</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/the-year-of-19100">The Year of 19100</a></li>
   <li><a href="/pro/beginner-perl/array-in-context">Array in Context</a></li>
   <li><a href="/pro/beginner-perl/context-sensitivity">Context Sensitivity</a></li>
@@ -141,18 +141,18 @@ subscription service.
   <li><a href="/pro/beginner-perl/count-digits">Count Digits</a></li>
   <li><a href="/pro/beginner-perl/exercise-display-unique-rows-of-a-file">Exercise: Display unique rows of a file</a></li>
   <li><a href="/pro/beginner-perl/exercise-sort-mixed-string">Exercise: sort mixed string</a></li>
-</ul>
+</ol>
 
 <h3>Functions and Subroutines</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/functions-and-subroutines">Functions and Subroutines</a></li>
   <li><a href="/pro/beginner-perl/defining-subroutines">Defining Subroutines</a></li>
   <li><a href="/pro/beginner-perl/exercise-number-guessing-in-sub">Exercise: Number guessing in sub</a></li>
-</ul>
+</ol>
 
 
 <h3>Hashes</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/a-hash-and-its-uses">A hash and its uses</a></li>
   <li><a href="/pro/beginner-perl/creating-a-hash">Creating a hash</a></li>
   <li><a href="/pro/beginner-perl/creating-a-hash-from-array">Creating a hash from an array</a></li>
@@ -171,11 +171,11 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-improve-apache-analyzer">Solution: Improve Apache log analyzer</a></li>
   <li><a href="/pro/beginner-perl/exercise-parse-variable-width-fields">Exercise: Parse variable width fields</a></li>
   <li><a href="/pro/beginner-perl/solution-parse-variable-width-fields">Solution: Parse variable width fields</a></li>
-</ul>
+</ol>
 
 
 <h3>Regular Expressions - part 1</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/regexes">Regexes</a></li>
   <li><a href="/pro/beginner-perl/where-can-i-use-regexes">Where can I use regexes</a></li>
   <li><a href="/pro/beginner-perl/simple-use-of-regex">Simple use of regex</a></li>
@@ -192,10 +192,10 @@ subscription service.
   <li><a href="/pro/beginner-perl/solution-regexes-1">Solution 1</a></li>
   <li><a href="/pro/beginner-perl/solution-regexes-2">Solution 2</a></li>
   <li><a href="/pro/beginner-perl/solution-regexes-3">Solution 3</a></li>
-</ul>
+</ol>
 
 <h3>Regular Expressions - part 2</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/alternatives">Alternatives</a></li>
   <li><a href="/pro/beginner-perl/capturing">Capturing</a></li>
   <li><a href="/pro/beginner-perl/anchors">Anchors</a></li>
@@ -206,11 +206,11 @@ subscription service.
   <li><a href="/pro/beginner-perl/exercise-roman-numbers">Exercise: Roman numbers</a></li>
   <li><a href="/pro/beginner-perl/solutions-number">Solution: number</a></li>
   <li><a href="/pro/beginner-perl/solution-hexa-octal-binary">Solution: hexa, octal, binary</a></li>
-</ul>
+</ol>
 
 
 <h3>Regular Expressions - part 3</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/m-for-matching">m for matching</a></li>
   <li><a href="/pro/beginner-perl/case-insensitive">Case insensitive</a></li>
   <li><a href="/pro/beginner-perl/multiple-lines">multiple lines</a></li>
@@ -236,10 +236,10 @@ subscription service.
   <li><a href="/pro/beginner-perl/exercise-create-time-report">Exercise: create time report</a></li>
   <li><a href="/pro/beginner-perl/exercise-parse-ini-file">Exercise: parse INI file</a></li>
   <li><a href="/pro/beginner-perl/exercise-parse-perl-file">Exercise: parse perl file</a></li>
-</ul>
+</ol>
 
 <h3>Shell to Perl</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/shell-x">shell -x</a></li>
   <li><a href="/pro/beginner-perl/external-programs">external programs</a></li>
   <li><a href="/pro/beginner-perl/unix-and-dos-commands">Unix and DOS commands</a></li>
@@ -250,10 +250,10 @@ subscription service.
   <li><a href="/pro/beginner-perl/more-unix-commands">more Unix commands</a></li>
   <li><a href="/pro/beginner-perl/file-spec">File::Spec</a></li>
   <li><a href="/pro/beginner-perl/file-find">File::Find</a></li>
-</ul>
+</ol>
 
 <h3>CPAN</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/using-procedural-module">Using procedural module</a></li>
   <li><a href="/pro/beginner-perl/using-object-oriented-module">Using object oriented module</a></li>
   <li><a href="/pro/beginner-perl/changing-inc">Changing @INC</a></li>
@@ -265,10 +265,10 @@ subscription service.
   <li><a href="/pro/beginner-perl/search-cpan-org">search.cpan.org</a></li>
   <li><a href="/pro/beginner-perl/cpantesters-and-cpanratings">cpantesters and cpanratings</a></li>
   <li><a href="/pro/beginner-perl/"></a></li>
-</ul>
+</ol>
 
 <h3>Applications</h3>
-<ul>
+<ol>
   <li><a href="/pro/beginner-perl/create-linux-user">Create Linux user account</a></li>
   <li><a href="/pro/beginner-perl/diskspace-usage-df">diskspace usage df</a></li>
   <li><a href="/pro/beginner-perl/reporting-diskspace-usage-on-mail-server">Reporting diskspace usage on mail server</a></li>
@@ -277,7 +277,7 @@ subscription service.
   <li><a href="/pro/beginner-perl/reading-excel-file">Reading Excel file</a></li>
   <li><a href="/pro/beginner-perl/read-fixed-width-records">read fixed-width records</a></li>
   <li><a href="/pro/beginner-perl/process-config-file">Process config file</a></li>
-</ul>
+</ol>
 
 <!--
 -->

@@ -116,7 +116,16 @@ in <a href="https://github.com/ldidry/lutim">GitHub</a>.
 <a href="https://lstu.fr/">Let's Shorten That Url</a> is a URL shortener written in <a href="/mojolicious">Mojolicious</a>. Its source code
 is in <a href="https://github.com/ldidry/lstu">GitHub</a>
 
+<a href="http://blog.jmac.org/">The blog of Jason McIntosh</a> called <b>Plerd</b> which is a super-minimal, static
+blogging software working with Dropbox. It does not use any web framework, but it uses <a href="/moose">Moose</a>.
+Source code on <a href="https://github.com/jmacdotorg/plerd">GitHub</a>
+
+
 <h2>Sites with no recent changes in the source code</h2>
+
+<a href="http://spoilerific.jmac.org/">Spoilerific!</a> allows you to Share ROT13-encoded spoilers over Twitter! 
+Written by <a href="http://jmac.org/">Jason McIntosh</a> using <a href="/catalyst">Catalyst</a>.
+Source code on <a href="https://github.com/jmacdotorg/Spoilerific">GitHub</a>
 
 <a href="http://advent.perldancer.org/">Perl Dancer Advent Calendar</a> is itslef based on <a href="/dancer">Dancer</a>.
 Its source code is in the <a href="https://github.com/PerlDancer/advent-calendar">advent-calendar</a>

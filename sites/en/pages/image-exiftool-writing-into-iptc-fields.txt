@@ -35,7 +35,7 @@ ExifIFD or some other tag group name.
 
 I've taken your request seriously to provide useful comments to help with this.
 I am very good at that. I want to use Exiftool for a while longer first so I can make sure
-I understand it before sending you off with shortsghted comments to rework your web page.
+I understand it before sending you off with shortsighted comments to rework your web page.
 
 Cheers,
 Scott

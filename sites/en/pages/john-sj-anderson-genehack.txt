@@ -26,7 +26,7 @@ A biologist turned sysadmin, turned to DevOps engineer, turned to programmer, te
 <ul>
   <li><a href="http://genehack.org/">John SJ Anderson, genehack</a> (<a href="https://twitter.com/genehack">@genehack</a>)</li>
   <li>He works at <a href="http://www.iinteractive.com/">Infinity Interactive</a></li>
-  <li><a href="http://dc.pm.org/">DC Perl Mongers</a>, and <a href="http://thelackthereof.org/">Brock Wilcox (awwaiid)</a> took over the leadersip of DC Perl Mongers when genehack joined it.</li>
+  <li><a href="http://dc.pm.org/">DC Perl Mongers</a>, and <a href="http://thelackthereof.org/">Brock Wilcox (awwaiid)</a> took over the leadership of DC Perl Mongers when genehack joined it.</li>
   <li><a href="http://pghpw.org/">The Pittsburgh Perl Workshops</a></li>
   <li><a href="http://metacpan.org/module/Git::Wrapper">Git::Wrapper</a> the module genehack inherited from <a href="http://chris.prather.org/">Chris Prather (perigrin)</a> (originally started by <a href="https://metacpan.org/author/HDP">Hans Dieter Pearcey (HDP)</a></li>
   <li><a href="http://metacpan.org/author/GENEHACK">genehack</a> on CPAN</li>

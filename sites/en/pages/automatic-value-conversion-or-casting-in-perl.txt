@@ -22,6 +22,8 @@ That would be frustrating, wouldn't it?
 
 =abstract end
 
+See also the screencast about <a href="/beginner-perl-maven-string-number-conversion">string to number conversion in Perl</a>.
+
 <h2>Type conversion in Perl</h2>
 
 In most of the programming languages the type of the operands define how an operator behaves.

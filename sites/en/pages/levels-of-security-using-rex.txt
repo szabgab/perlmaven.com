@@ -55,7 +55,7 @@ See in <a href="http://www.rexify.org/howtos/backward_compatibility.html">all th
 
 And finally,
 
-<i>Achieveing unattendness can be a bit more complicated sometimes, than just adding -y.
+<i>Achieving unattendness can be a bit more complicated sometimes, than just adding -y.
 Currently Rex is using <hl>APT_LISTCHANGES_FRONTEND=text DEBIAN_FRONTEND=noninteractive apt-get -y -qq upgrade</hl> in Rex with <hl>update_system</hl>.
 </i>
 
@@ -187,7 +187,7 @@ public keys on my machine, copy them and use them to access the server.
 
 Although you'd normally try to protect the private key file much more than any almost any other file in your account.
 
-<i>As <a href="https://github.com/ferki">FErki</a> pointed out one can protect the private key using a
+<i>As <a href="https://github.com/ferki">Ferki</a> pointed out one can protect the private key using a
 passphrase as well, but then the process will only be unattended if you include the passphrase in the Rexfile - which we would like to avoid.</i>
 
 Nevertheless, this is still an improvement over the case when we had the password in the Rexfile.

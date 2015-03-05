@@ -56,9 +56,9 @@ Posted on 2006-04-11 06:45:41-07 by pdi in response to 2122
 
 Phil,
 
-Just one last point. Googling around I came accross 3 different versions of
+Just one last point. Googling around I came across 3 different versions of
 the 1:90 utf-8 escape sequence. Does it make any difference which string is used,
-or can ExifTool inerpret all of them?
+or can ExifTool interpret all of them?
 
 <code>
 1. "ESC % G", from your previous reply
@@ -93,7 +93,7 @@ and for convenience ExifTool allows you to also specify "UTF8" which is
 translated to the appropriate escape sequence internally.
 
 You can use the -n option to bypass this translation to see actual escape sequence
-(but in this case, the "ESC" character will appear as a "." because all control characers
+(but in this case, the "ESC" character will appear as a "." because all control characters
 are converted to "." in the output. But you can add the -b option to prevent
 this conversion too if you want.)
 
