@@ -123,7 +123,7 @@ That explains the extreme speed-up we got in our script reading the JSON file.
 
 In another conversation I have heard the module <a href="https://metacpan.org/pod/Cpanel::JSON::XS">Cpanel::JSON::XS</a>
 mentioned. It felt really strange, why is there a generic module named after a company and I did not even take a look back then.
-Now I looked at it and even installed. As it turns out this us just a fork of the JSON::XS module with some fixes and 
+Now I looked at it and even installed. As it turns out this is just a fork of the JSON::XS module with some fixes and 
 a public version control system. So it is actually more open than the original version.
 
 I installed the module and ran a benchmark with that too:
