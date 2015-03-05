@@ -16,13 +16,14 @@ $graph->set(
     x_label         => 'X Label',
     y_label         => 'Y label',
     title           => 'A Simple Bar Chart',
-    y_max_value     => 7,
+
+    #y_max_value     => 7,
     #y_tick_number   => 8,
-    #y_label_skip    => 2,
+    #y_label_skip    => 3,
 
     #x_labels_vertical => 1,
-    #
-    #bar_spacing     => 8,
+
+    #bar_spacing     => 10,
     #shadow_depth    => 4,
     #shadowclr       => 'dred',
 

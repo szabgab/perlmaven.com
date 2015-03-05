@@ -170,12 +170,33 @@ case the values needs to be one of the
 
 <h2>transparent</h2>
 
+By default the background of the graph is going to be transparent. On this page the background
+is white and thus the background of the graphs is also white.
+We can turn off transparency by setting the boolean parameter
 <a href="https://metacpan.org/pod/GD::Graph#transparent">transparent</a>
+to 0.
 
 <code lang="perl">
     transparent     => 0,
 </code>
 
+Drawing the graph again won't show any difference though.
+
 <img src="/img/gdgraph/bars_transparent.png" alt="transparent set" />
+
+What if we show the last two images but set the backround of the HTML page to red using the background-color
+property of CSS. The left graph is drawn with the default value of <hl>transparent</hl> (which is 1)
+and thus we see through the graph and see the red background of the HTML page.
+The right graph is drawn with transparency turned off <hl>transparent=0</hl> and so it has the background
+of the drawing itself.
+
+<div style="background-color: red">
+<img src="/img/gdgraph/bars_shadowclr_dred.png" alt="shadowclr set to dred" />
+<img src="/img/gdgraph/bars_transparent.png" alt="transparent set" />
+</div>
+
+There are even more parameters one can set for a <a href="https://metacpan.org/pod/GD::Graph">GD::Graph</a>
+and there are plenty more examples.
+
 
 
