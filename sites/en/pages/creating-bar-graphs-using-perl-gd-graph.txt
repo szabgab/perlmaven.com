@@ -73,13 +73,36 @@ These ticks can make it easier to see how tall each one of the bars is.
 
 <h2>y_label_skip</h2>
 
+While having many ticks and corresponding y-values can make it easier to read
+the grahp, but if we have two many of them then the graph might get ugly or
+the numbers might become unreadable. An alternative that you can see employed
+in many places is to have many ticks, but show the numbers only at some of them.
+
+The <a href="https://metacpan.org/pod/GD::Graph#x_label_skip-y_label_skip">y_label_skip</a> parameter
+controls this behavior. Though the name of the parameter is probably incorrect because the value of
+this parameter defines which ticks should have a number as well. <hl>y_label_skip => 2</hl> means
+show the number on every second tick, <hl>y_label_skip => 3</hl> means show the number on every 3rd
+tick.
+
+<code lang="perl">
+    y_label_skip    => 3,
+</code>
+
 <img src="/img/gdgraph/bars_y_label_skip.png" alt="y_label_skip set" />
 
+<h2>bars_x_labels_vertical.png</h2>
 
-<img src="/img/gdgraph/bars_all.png" alt="just a bar graph created by Perl GD::Graph" />
+<code lang="perl">
+    bars_x_labels_vertical => 1,
+</code>
+
+<img src="/img/gdgraph/bars_x_labels_vertical.png" alt="x_labels_vertical set" />
 
 
-<img src="/img/" alt="" />
 
+
+<h2>transparent</h2>
+
+<img src="/img/gdgraph/bars_all.png" alt="transparent set" />
 
 
