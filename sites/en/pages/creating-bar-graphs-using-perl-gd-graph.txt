@@ -40,8 +40,25 @@ It is clear that the content of the <hl>title</hl> parameter is at the top of th
 Let's see what happens as we enable the rest of the parameters one-by-one.
 
 <h2>y_max_value</h2>
-    
-<img src="/img/gdgraph/bars_y_max_value.png" alt="just a bar graph created by Perl GD::Graph" />
+
+In the previous graph the y-axis ran from 0 to 10. I am not sure why did it run exactly to 10, it is somehow
+calculated from the max value that needs to be displayed. (In a simple experiment I changed one of the values to 12
+and the y-axis ran up to 25.) In any case, if you are not satisfied with the max y-axis value calculated by the module,
+you can supply your own number using the <hl>y_max_value</hl> parameter. We set it to 7 and got the following result:
+
+<code lang="perl">
+    y_max_value     => 7,
+</code>
+ 
+<img src="/img/gdgraph/bars_y_max_value.png" alt="y_max_value set" />
+
+<h2>y_tick_number</h2>
+
+<code lang="perl">
+    y_tick_number   => 8,
+</code>
+
+<img src="/img/gdgraph/bars_y_tick_number.png" alt="y_tick_number set" />
 
 
 <img src="/img/gdgraph/bars_all.png" alt="just a bar graph created by Perl GD::Graph" />
