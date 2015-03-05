@@ -113,10 +113,18 @@ is useful. It is a boolean flag and by default is 0 (meaning off). If we set it 
 This means we might need to tilt our head to read them, but at least they don't overlap each other:
 
 <code lang="perl">
-    bars_x_labels_vertical => 1,
+    x_labels_vertical => 1,
 </code>
 
 <img src="/img/gdgraph/bars_x_labels_vertical.png" alt="x_labels_vertical set" />
+
+<h2>bars_bar_spacing</h2>
+
+<code lang="perl">
+    bar_spacing => 20,
+</code>
+
+<img src="/img/gdgraph/bars_bar_spacing.png" alt="bar_spacing set" />
 
 
 <h2>transparent</h2>
