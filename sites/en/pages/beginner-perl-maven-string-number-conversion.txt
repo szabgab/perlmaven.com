@@ -1,5 +1,5 @@
 =title String to number conversion
-=timestamp 2015-04-05T07:03:06
+=timestamp 2015-03-05T07:03:06
 =indexes string, number
 =tags screencast
 =status show
