@@ -1,0 +1,16 @@
+=title String number conversion
+=timestamp 2015-04-05T07:03:06
+=indexes string, number
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+string number conversion
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/string-number-conversion" />
