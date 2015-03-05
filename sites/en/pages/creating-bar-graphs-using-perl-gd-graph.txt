@@ -82,7 +82,7 @@ The <a href="https://metacpan.org/pod/GD::Graph#x_label_skip-y_label_skip">y_lab
 controls this behavior. Though the name of the parameter is probably incorrect because the value of
 this parameter defines which ticks should have a number as well. <hl>y_label_skip => 2</hl> means
 show the number on every second tick, <hl>y_label_skip => 3</hl> means show the number on every 3rd
-tick.
+tick, etc. (It defaults to 1, showing the number on every tick.)
 
 <code lang="perl">
     y_label_skip    => 3,
@@ -90,15 +90,33 @@ tick.
 
 <img src="/img/gdgraph/bars_y_label_skip.png" alt="y_label_skip set" />
 
-<h2>bars_x_labels_vertical.png</h2>
+<h2>x_labels_vertical</h2>
+
+Loking back at the previous graphs, you can see that the values on the x-axis were readable.
+(Well, if you have good eyes or good glasses.).
+What if the values are longer than what would fit under a single bar? In that case the values
+of the x-axis would overlap and we would not be able to read them. In order to demostrate this,
+I have changed the data to have longer values for the third and fourth column:
+
+<code lang="perl">
+    ["1st","2nd","third value","fourth value","5th","6th","7th", "8th", "9th"],
+</code>
+
+and generated the graph again. Here the text of those two columns overlap and is not readable.
+
+<img src="/img/gdgraph/bars_x_labels_not_vertical.png" alt="x_labels_vertical not set" />
+
+
+That's where the <a href="https://metacpan.org/pod/GD::Graph#x_labels_vertical">x_labels_vertical</a>
+is useful. It is a boolean flag and by default is 0 (meaning off). If we set it to some
+<a href="/boolean-values-in-perl">true value</a> (for example 1) then the names will be printed vertically.
+This means we might need to tilt our head to read them, but at least they don't overlap each other:
 
 <code lang="perl">
     bars_x_labels_vertical => 1,
 </code>
 
 <img src="/img/gdgraph/bars_x_labels_vertical.png" alt="x_labels_vertical set" />
-
-
 
 
 <h2>transparent</h2>
