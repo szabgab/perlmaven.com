@@ -31,10 +31,21 @@ In this example we save the image in a file, but if this was a web environment w
 
 Running the script will generated the following graph:
 
+<img src="/img/gdgraph/bars_plain.png" alt="just a bar graph created by Perl GD::Graph" />
+
+It is a bit "bulky", but we can clearly see the values on the x-axis we provided in the data.
+It is clear that the content of the <hl>title</hl> parameter is at the top of the graph and the values of the
+<hl>x_label</hl> and <hl>y_label</hl> parameters were added under the x-axis and next to the y-axis respectively.
+
+Let's see what happens as we enable the rest of the parameters one-by-one.
+
+<h2>y_max_value</h2>
+    
+<img src="/img/gdgraph/bars_y_max_value.png" alt="just a bar graph created by Perl GD::Graph" />
+
+
 <img src="/img/gdgraph/bars_all.png" alt="just a bar graph created by Perl GD::Graph" />
 
-<code lang="perl">
-</code>
 
 <img src="/img/" alt="" />
 

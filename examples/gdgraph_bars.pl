@@ -17,16 +17,16 @@ $graph->set(
     y_label         => 'Y label',
     title           => 'A Simple Bar Chart',
     y_max_value     => 7,
-    y_tick_number   => 8,
-    y_label_skip    => 2,
+    #y_tick_number   => 8,
+    #y_label_skip    => 2,
 
-    x_labels_vertical => 1,
-    
-    bar_spacing     => 8,
-    shadow_depth    => 4,
-    shadowclr       => 'dred',
+    #x_labels_vertical => 1,
+    #
+    #bar_spacing     => 8,
+    #shadow_depth    => 4,
+    #shadowclr       => 'dred',
 
-    transparent     => 0,
+    #transparent     => 0,
 ) or die $graph->error;
 
 $graph->plot($data) or die $graph->error;
