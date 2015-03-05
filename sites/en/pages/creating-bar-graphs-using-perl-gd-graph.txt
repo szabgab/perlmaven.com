@@ -1,0 +1,42 @@
+=title Creating bar graphs using Perl GD::Graph
+=timestamp 2015-02-01T07:30:01
+=indexes GD::Graph
+=status draft
+=books beginner_book
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+<a href="https://metacpan.org/pod/GD::Graph">GD::Graph</a> makes it easy to create various types of
+graphs using Perl. The distribution comes with an extensive set of examples. In this article we are
+going to see a bar-graph and how various parameters impact its look.
+
+=abstract end
+
+This code is based on the <a href="https://metacpan.org/release/GDGraph">sample11.pl</a> file included included
+in the distribution.
+
+<include file="examples/gdgraph_bars.pl">
+
+After loading the <a href="https://metacpan.org/pod/GD::Graph::Data">GD::Graph::Data</a> module that represents the
+raw data, and the <hl>GD::Graph::bars</hl> module that handles the creation of the vertical bar-graphs, we create the data.
+The first array reference holds the values of the x-axis, the second array reference holds the corresponding values
+of the y-axis.
+
+Then we create a <hl>GD::Graph::bars</hl> object. Set some parameters and call the <hl>plot</hl> method that
+draws the image. At the end we call <hl>$graph->gd->png</hl> that exports the image in <b>PNG</b> format.
+In this example we save the image in a file, but if this was a web environment we might just return the image.
+
+Running the script will generated the following graph:
+
+<img src="/img/gdgraph/bars_all.png" alt="just a bar graph created by Perl GD::Graph" />
+
+<code lang="perl">
+</code>
+
+<img src="/img/" alt="" />
+
+
+
