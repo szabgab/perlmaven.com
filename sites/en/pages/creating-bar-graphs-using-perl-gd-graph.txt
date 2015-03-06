@@ -77,7 +77,7 @@ These ticks can make it easier to see how tall each one of the bars is.
 <h2>y_label_skip</h2>
 
 While having many ticks and corresponding y-values can make it easier to read
-the grahp, but if we have two many of them then the graph might get ugly or
+the graph, but if we have two many of them then the graph might get ugly or
 the numbers might become unreadable. An alternative that you can see employed
 in many places is to have many ticks, but show the numbers only at some of them.
 
@@ -95,10 +95,10 @@ tick, etc. (It defaults to 1, showing the number on every tick.)
 
 <h2>x_labels_vertical</h2>
 
-Loking back at the previous graphs, you can see that the values on the x-axis were readable.
+Looking back at the previous graphs, you can see that the values on the x-axis were readable.
 (Well, if you have good eyes or good glasses.).
 What if the values are longer than what would fit under a single bar? In that case the values
-of the x-axis would overlap and we would not be able to read them. In order to demostrate this,
+of the x-axis would overlap and we would not be able to read them. In order to demonstrate this,
 I have changed the data to have longer values for the third and fourth column:
 
 <code lang="perl">
@@ -140,7 +140,7 @@ A value of 10 would probably look better:
 
 <h2>shadow_depth</h2>
 
-In order for the bars to be more live (more 3D-like) we can add shadow. The shadown can be
+In order for the bars to be more live (more 3D-like) we can add shadow. The shadow can be
 either on the right side or the left side of the bar. The <a href="https://metacpan.org/pod/GD::Graph#shadow_depth">shadow_depth</a>
 variable controls how many pixels the shadow will use and in which direction. A positive number will create a shadow
 to the right, as can be seen in our result:
@@ -187,7 +187,7 @@ Drawing the graph again won't show any difference though.
 
 <img src="/img/gdgraph/bars_transparent.png" alt="transparent set" />
 
-What if we show the last two images but set the backround of the HTML page to red using the background-color
+What if we show the last two images but set the background of the HTML page to red using the background-color
 property of CSS. The left graph is drawn with the default value of <hl>transparent</hl> (which is 1)
 and thus we see through the graph and see the red background of the HTML page.
 The right graph is drawn with transparency turned off <hl>transparent=0</hl> and so it has the background
