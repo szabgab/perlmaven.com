@@ -1,0 +1,45 @@
+=title Draw hexagons, octagons and other regular polygons using SVG
+=timestamp 2015-02-01T07:30:01
+=indexes files
+=status draft
+=books beginner_book
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+A <a href="http://en.wikipedia.org/wiki/Regular_polygon">regular polygon</a> has N nodes,
+and N edges of the same length and it has all kinds of other things you can read in that Wikipedia
+article. We are going to create a function that can draw such a polygon using the
+<a href="https://metacpan.org/pod/SVG">Perl SVG</a> module.
+
+=abstract end
+
+Let's see the results:
+
+<h3><a href="http://en.wikipedia.org/wiki/Hexagon">Hexagon</a></h3>
+
+<img src="/img/hexagon.svg" alt="Hexagon SVG" />
+
+<h3><a href="http://en.wikipedia.org/wiki/Octagon">Octagon</a></h3>
+
+<img src="/img/octagon.svg" alt="Octagon SVG" />
+
+<h3><a href="http://en.wikipedia.org/wiki/Dodecagon">Dodecagon</a></h3>
+
+<img src="/img/dodecagon.svg" alt="Dodecagon SVG" />
+
+<h2>The Code</h2>
+
+<include file="svg_regular_polygon.pl">
+
+
+#pi2 * 30 / 360;
+        # apparently pi2 is the double of pi, the same as 2*pi)
+
+
+
+
+
+
