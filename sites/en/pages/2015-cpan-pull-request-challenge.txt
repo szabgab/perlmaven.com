@@ -103,7 +103,8 @@ And a few other related articles:
 <h2>German</h2>
 
 <ul>
-  <li>2015.01.05 <a href="http://reneeb-perlblog.blogspot.co.il/2015/01/cpan-pullrequest-challenge-2015-die.html">CPAN PullRequest Challenge 2015 - die andere Seite</a> von Renée Bäcker</li>
   <li>2015.01.02 <a href="http://reneeb-perlblog.blogspot.co.il/2015/01/cpan-pullrequest-challenge-2015.html">CPAN PullRequest Challenge 2015</a> von Renée Bäcker</li>
+  <li>2015.01.05 <a href="http://reneeb-perlblog.blogspot.co.il/2015/01/cpan-pullrequest-challenge-2015-die.html">CPAN PullRequest Challenge 2015 - die andere Seite</a> von Renée Bäcker</li>
+  <li>2015.03.06 <a href="http://reneeb-perlblog.blogspot.co.il/2015/03/cpan-pullrequest-challenge-februar-2015.html">CPAN PullRequest Challenge: Februar 2015</a></li>
 </ul>
 
