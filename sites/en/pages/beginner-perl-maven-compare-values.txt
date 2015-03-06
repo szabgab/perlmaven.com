@@ -9,7 +9,7 @@
 
 =abstract start
 
-Compare values
+Compare values. See also the article <a href="/comparing-scalars-in-perl">comparing scalars in Perl</a>
 
 =abstract end
 

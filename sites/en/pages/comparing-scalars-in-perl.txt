@@ -19,6 +19,8 @@ to compare two scalars. That's what this part is about.
 
 <iframe width="640" height="510" src="http://www.youtube.com/embed/KXFn0rnBPrc?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
+An alternative screencast <a href="/beginner-perl-maven-compare-values">comparing values in Perl</a>
+
 Given two variables $x and $y how can we compare them?
 Are 1, 1.0 and 1.00 equal? What about "1.00" ?
 What is bigger "foo" or "bar"?
