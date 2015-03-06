@@ -46,7 +46,7 @@ subscription service.
   <li><a href="/beginner-perl-maven-if-statement">If statement</a></li>
   <li><a href="/beginner-perl-maven-comparison-operators">Comparison Operators</a></li>
   <li><a href="/beginner-perl-maven-string-number-conversion">String to Number Conversion</a></li>
-  <li><a href="/pro/beginner-perl/compare-values">Compare Values</a></li>
+  <li><a href="/beginner-perl-maven-compare-values">Compare Values</a></li>
   <li><a href="/pro/beginner-perl/undef">Undef</a></li>
   <li><a href="/pro/beginner-perl/logical-operators">Logical Operators</a></li>
   <li><a href="/pro/beginner-perl/true-false">True and False values</a></li>

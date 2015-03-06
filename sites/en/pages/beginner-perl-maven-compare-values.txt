@@ -1,0 +1,16 @@
+=title Compare Values
+=timestamp 2015-03-06T11:01:10
+=indexes ==, eq, <, >, lt, gt
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Compare values
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/compare-values" />
