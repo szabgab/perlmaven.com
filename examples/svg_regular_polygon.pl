@@ -1,9 +1,12 @@
 use strict;
 use warnings;
+use 5.010;
+
 use SVG;
 use Math::Trig qw(:pi);
 
-print create() unless caller();
+say create();
+
 sub create {
     my $svg = SVG->new(
         width  => 120,
@@ -39,4 +42,3 @@ sub create {
     return $svg->xmlify;
 }
 
-1;
