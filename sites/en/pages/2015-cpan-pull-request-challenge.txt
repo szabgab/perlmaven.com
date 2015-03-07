@@ -114,3 +114,6 @@ And a few other related articles:
   <li>2015.03.06 <a href="http://reneeb-perlblog.blogspot.co.il/2015/03/cpan-pullrequest-challenge-februar-2015.html">CPAN PullRequest Challenge: Februar 2015</a></li>
 </ul>
 
+
+This page is mostly maintained by <a href="https://github.com/choroba">E. Choroba</a>.
+
