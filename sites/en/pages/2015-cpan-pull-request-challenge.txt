@@ -84,6 +84,7 @@ And a few other related articles:
   <li>2015.01.14 <a href="http://blogs.perl.org/users/luca_ferrari/2015/01/cpan-pull-request-a-little-patch-for-january-and-a-lot-more-to-learn.html">CPAN Pull Request: a little patch for January (and a lot more to learn!)</a> by Luca Ferrari</li>
   <li>2015.01.20 <a href="http://blogs.perl.org/users/itcharlie/2015/01/short-and-sweet-but-definitely-a-good-value-pr.html">Short and sweet, but definitely a good value PR!</a> by itcharlie</li>
   <li>2015.01.27 <a href="http://cpanpr.tumblr.com/">January: SOAP-Lite</a> by Maxim Vuets
+  <li>2015.01.29 <a href="http://onionstand.blogspot.cz/2015/01/my-cpan-pull-request-challenge-for.html">My CPAN Pull Request Challenge for January: Fuse</a> by Breno G. de Oliveira</li>
   <li>2015.02.01 <a href="http://blogs.perl.org/users/e_choroba/2015/02/pull-request-challenge-january.html">Pull Request Challenge: January</a> by E. Choroba</li>
 </ul>
 
@@ -93,6 +94,7 @@ And a few other related articles:
   <li>2015.02.19 <a href="http://blogs.perl.org/users/e_choroba/2015/02/analysing-cpan-testers-reports.html">Analysing CPAN Testers' Reports</a> by E. Choroba</li>
   <li>2015.02.22 <a href="https://huntingbears.nl/2015/02/22/cpan-pull-request-challenge-for-february-archivebagit/">CPAN Pull Request Challenge for February: Archive::BagIt</a> by Michiel Beijen</li>
   <li>2015.02.26 <a href="http://blogs.perl.org/users/alberto_simoes/2015/02/the-moose-slippery---february-pr-challenge.html">The Moose Slippery - February PR Challenge</a> by Alberto Simões</li>
+  <li>2015.02.28 <a href="http://onionstand.blogspot.cz/2015/02/my-february-cpan-pr-challenge.html">My February CPAN PR Challenge: Template::Plugin::Autoformat </a> by Breno G. de Oliveira</li>
 </ul>
 
 <h3>March</h3>
