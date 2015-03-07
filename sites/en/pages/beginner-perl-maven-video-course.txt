@@ -51,7 +51,7 @@ subscription service.
   <li><a href="/beginner-perl-maven-logical-operators">Logical Operators</a></li>
   <li><a href="/beginner-perl-maven-true-false">True and False values</a></li>
   <li><a href="/beginner-perl-maven-short-circuit">Short circuit</a></li>
-  <li><a href="/pro/beginner-perl/string-functions-index">String function: index</a></li>
+  <li><a href="/beginner-perl-maven-string-functions-index">String functions: index</a></li>
   <li><a href="/pro/beginner-perl/substr">Substr</a></li>
   <li><a href="/pro/beginner-perl/strings-in-double-quotes">String in Double quotes</a></li>
   <li><a href="/pro/beginner-perl/strings-in-single-quotes">String in Single quotes</a></li>
