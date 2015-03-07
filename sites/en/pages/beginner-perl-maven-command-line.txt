@@ -1,6 +1,6 @@
-=title Perl on the command line
+=title Perl on the command line (screencast)
 =timestamp 2015-02-09T15:30:06
-=indexes -v, -V, -e
+=indexes -v, -V, -e, -E
 =tags screencast
 =status show
 =books beginner_video

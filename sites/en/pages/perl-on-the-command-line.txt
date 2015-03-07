@@ -9,7 +9,7 @@
 =abstract start
 
 While most of the <a href="/perl-tutorial">Perl tutorial</a> deals with scripts saved in a
-file, we'll also see a couple of examples of one-liners.
+file, we'll also see a couple of examples of <b>one-liners</b>.
 
 Even if you are using <a href="http://padre.perlide.org/">Padre</a>
 or some other IDE that would let you run your script from the editor itself,
