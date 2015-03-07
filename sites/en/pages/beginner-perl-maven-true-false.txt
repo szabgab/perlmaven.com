@@ -1,0 +1,16 @@
+=title True False
+=timestamp 2015-03-07T11:03:15
+=indexes true, false
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+True False
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/true-false" />

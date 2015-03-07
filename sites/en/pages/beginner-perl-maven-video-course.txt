@@ -49,7 +49,7 @@ subscription service.
   <li><a href="/beginner-perl-maven-compare-values">Compare Values</a></li>
   <li><a href="/beginner-perl-maven-undef">undef</a></li>
   <li><a href="/beginner-perl-maven-logical-operators">Logical Operators</a></li>
-  <li><a href="/pro/beginner-perl/true-false">True and False values</a></li>
+  <li><a href="/beginner-perl-maven-true-false">True and False values</a></li>
   <li><a href="/pro/beginner-perl/short-circuit">Short circuit</a></li>
   <li><a href="/pro/beginner-perl/string-functions-index">String function: index</a></li>
   <li><a href="/pro/beginner-perl/substr">Substr</a></li>
