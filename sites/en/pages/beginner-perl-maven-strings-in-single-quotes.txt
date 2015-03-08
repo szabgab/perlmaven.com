@@ -1,0 +1,16 @@
+=title strings in single quotes
+=timestamp 2015-03-08T19:03:09
+=indexes '
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+strings in single quotes
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/strings-in-single-quotes" />
