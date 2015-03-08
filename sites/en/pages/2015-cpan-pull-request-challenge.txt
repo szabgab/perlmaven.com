@@ -100,6 +100,7 @@ And a few other related articles:
 <h3>March</h3>
 <ul>
   <li>2015.03.05 <a href="http://blogs.perl.org/users/alberto_simoes/2015/03/cpan-pr-challenge-march-report-1.html">CPAN PR-Challenge: March Report #1</a> by Alberto Simões</li>
+  <li>2015.03.08 <a href="http://blogs.perl.org/users/alberto_simoes/2015/03/cpan-pr-challenge-march-report-2.html">CPAN PR-Challenge: March Report #2</a> by Alberto Simões</li>
 </ul>
 
 <!-- Template for adding new blogposts:
