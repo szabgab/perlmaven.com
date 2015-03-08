@@ -1,0 +1,16 @@
+=title strings in double quotes
+=timestamp 2015-03-08T18:04:08
+=indexes "
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+strings in double quotes
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/strings-in-double-quotes" />
