@@ -1,0 +1,16 @@
+=title Substr
+=timestamp 2015-03-08T17:03:10
+=indexes substr
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Substr
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/substr" />
