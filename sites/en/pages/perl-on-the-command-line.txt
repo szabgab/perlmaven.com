@@ -74,7 +74,8 @@ gabor@pm:~$ perl -e 'print 42'
 
 Please note, I used single-quote <hl>'</hl> in Linux and double-quote <hl>"</hl> on Windows.
 This is due to the different behaviour of the command line on these two operating systems.
-Nothing to do with Perl.
+Nothing to do with Perl.  In general on Linux/Unix always use single-quotes around the code snippet,
+on Windows always use double-quotes.
 
 The result is on the beginning of the line, immediately followed by the prompt.
 This difference is due to different in the behavior of the two command-line interpreters.
