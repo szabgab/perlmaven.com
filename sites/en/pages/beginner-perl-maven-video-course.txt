@@ -55,7 +55,7 @@ subscription service.
   <li><a href="/beginner-perl-maven-substr">Substr</a></li>
   <li><a href="/beginner-perl-maven-strings-in-double-quotes">String in Double quotes</a></li>
   <li><a href="/beginner-perl-maven-strings-in-single-quotes">String in Single quotes</a></li>
-  <li><a href="/pro/beginner-perl/scope-of-variables">Scope of Variables</a></li>
+  <li><a href="/beginner-perl-maven-scope-of-variables">Scope of Variables</a></li>
   <li><a href="/pro/beginner-perl/rand-and-int">Rand and Int</a></li>
   <li><a href="/pro/beginner-perl/here-documents">Here documents</a></li>
   <li><a href="/pro/beginner-perl/exercise-rectangular">Exercise: rectangular</a></li>
