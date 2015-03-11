@@ -1,0 +1,16 @@
+=title rand() and int()
+=timestamp 2015-01-11T10:02:13
+=indexes rand, int
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+rand and int
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/rand-and-int" />
