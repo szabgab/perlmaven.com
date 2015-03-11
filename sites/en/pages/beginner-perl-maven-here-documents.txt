@@ -1,0 +1,16 @@
+=title Here documents
+=timestamp 2015-03-11T11:01:48
+=indexes <<
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Here documents
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/here-documents" />
