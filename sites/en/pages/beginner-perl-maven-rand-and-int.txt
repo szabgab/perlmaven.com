@@ -1,5 +1,5 @@
 =title rand() and int()
-=timestamp 2015-01-11T10:02:13
+=timestamp 2015-03-11T10:02:13
 =indexes rand, int
 =tags screencast
 =status show
