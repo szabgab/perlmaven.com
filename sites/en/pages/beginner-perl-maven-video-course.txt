@@ -58,7 +58,7 @@ subscription service.
   <li><a href="/beginner-perl-maven-scope-of-variables">Scope of Variables</a></li>
   <li><a href="/beginner-perl-maven-rand-and-int">rand() and int()</a></li>
   <li><a href="/beginner-perl-maven-here-documents">Here documents</a></li>
-  <li><a href="/pro/beginner-perl/exercise-rectangular">Exercise: rectangular</a></li>
+  <li><a href="/beginner-perl-maven-exercise-rectangular">Exercise: rectangular</a></li>
   <li><a href="/pro/beginner-perl/solution-area-of-rectangular">Solution: area of rectangular</a></li>
   <li><a href="/pro/beginner-perl/solution-area-prompt-and-warn">Solution: Area prompt and warn if values are less than 0</a></li>
   <li><a href="/pro/beginner-perl/solution-concatenation">Solution: Concatenation</a></li>
