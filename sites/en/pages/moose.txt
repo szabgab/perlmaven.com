@@ -13,14 +13,9 @@ A series of articles introducing you to <a href="https://metacpan.org/pod/Moose"
 =abstract end
 
 
-<h2>Free</h2>
 <ul>
   <li><a href="/object-oriented-perl-using-moose">Object Oriented Perl using Moose</a></li>
   <li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a></li>
-</ul>
-
-<h2>Pro</h2>
-<ul>
   <li><a href="/pro/moose-constructor">Moose constructor</a></li>
   <li><a href="/pro/moose-test-constructor">Moose: Testing the constructor</a></li>
   <li><a href="/pro/moose-test-setter-getter">Moose test setter getter</a></li>

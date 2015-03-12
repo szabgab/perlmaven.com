@@ -15,21 +15,11 @@ and it also powers <a href="http://metacpan.org/">Meta CPAN</a>.
 
 =abstract end
 
-<h2>Free</h2>
 <ul>
   <li><a href="/hacking-metacpan-the-first-steps">Hacking Meta::CPAN - the first steps</a></li>
   <li><a href="/adding-news-feed-to-metacpan">Adding news feed to MetaCPAN</li>
   <li><a href="/modern-web-with-perl">Modern Web with Perl</li>
 </ul>
-
-<!--
-<h2>Pro</h2>
-
-Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
-
-<ul>
-</ul>
--->
 
 <!--
   <li><a href=""></a></li>
