@@ -37,16 +37,7 @@ If we then try to print it we get a <a href="/use-of-uninitialized-value">use of
 
 This is the <hl>programming.pl</hl>:
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-use Person;
-my $anonymous = Person->new;
-say $anonymous->name;
-say 'DONE';
-</code>
+<include file="examples/moo-required/programming.pl">
 
 <code>
 Use of uninitialized value in say at programming.pl line 7.
@@ -60,14 +51,7 @@ We can set it to be a <b>required</b> attribute:
 
 Let's change <hl>Person.pm</hl> to be:
 
-<code lang="perl">
-package Person;
-use Moo;
-
-has name => (is => 'rw', required => 1);
-
-1;
-</code>
+<include file="examples/moo-required/Person.pm">
 
 If we now run <hl>perl programming.pl</hl> we get the following exception:
 
@@ -78,10 +62,19 @@ Missing required arguments: name at (eval 13) line 30.
 This is the error you get from Moo 1.002000
 
 I raised the issue both with the author and on <a href="http://www.perlmonks.org/?node_id=1039117">Perl Monks</a>
-and while my fix was not accepted, it seems there will be some improvement in a later version of Moo
-and there is also a tool that we can use for some temporary improvement:
+and while my fix was not accepted, it seems there will be some improvement in a later version of Moo.
 
-Add <hl>use Carp::Always;</hl> to either programming.pl or Person.pm and run <hl>perl programming.pl</hl> again.
+I checked it again with Moo version 2.000000 and now I got the following error:
+
+<code>
+Missing required arguments: name at (eval 9) line 49.
+</code>
+
+In any case there is a tool that we can use for some temporary improvement:
+
+Add <hl>use Carp::Always;</hl> to either programming.pl or Person.pm and run <hl>perl programming.pl</hl> again, or
+run <hl>perl -MCarp::Always programming.pl</hl>.
+
 This time the exception will look like this:
 
 <code>
