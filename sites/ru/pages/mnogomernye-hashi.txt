@@ -88,7 +88,7 @@ Peti Bar, Literature: 88
 Здесь создается одна пара ключ-значение, где ключ <hl>Mathematics</hl> и значение <hl>97</hl>.
 
 В отличие от Python в Perl создание внутреннего хеша автоматическое и это поведение называют обычно 
-<a href="http://perlmaven.com/pro/autovivification">autovivification</a>.
+<a href="http://perlmaven.com/autovivification">autovivification</a>.
 
 Если вы используете Data::Dumper для вывода содержимого <hl>%grades</hl> сразу 
 после первого присвоения значения, то получите такой результат:

@@ -197,7 +197,7 @@ to practice what you have learned.
 <ol>
 <li><a href="/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
 <li>Reading Excel files using Perl</li>
-<li><a href="/pro/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (for <a href="/pro">Pro</a> subscribers.)</li>
+<li><a href="/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (for <a href="/pro">Pro</a> subscribers.)</li>
 <li>Sending e-mail using Perl</li>
 <li><a href="/perl-cgi-script-with-apache2">CGI scripts with Perl</a></li>
 <li><a href="/perl-cgi-mod-perl-psgi">Web applications with Perl: PSGI</a></li>

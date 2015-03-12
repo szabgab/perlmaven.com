@@ -123,7 +123,7 @@ generate a
 warning, but <hl>++</hl>, the auto-increment operator is an exception.
 Perl will silently increment the undef to be 1, it will create the necessary
 key in the hash and assign the new value (which is <hl>1</hl>). This is a simple
-case of <a href="/pro/autovivification">autovivification</a>.
+case of <a href="/autovivification">autovivification</a>.
 
 In subsequent cases, when we encounter the same string, the counter will be just simply
 incremented by one.

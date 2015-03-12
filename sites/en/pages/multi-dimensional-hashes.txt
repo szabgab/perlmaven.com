@@ -89,7 +89,7 @@ In the internal hash the above line created a single key-value pair. The key is
 <hl>Mathematics</hl> and the value is <hl>97</hl>.
 
 Unlike in Python, the creation of the internal hash is automatic and it
-is generally referred to as <a href="/pro/autovivification">autovivification</a>.
+is generally referred to as <a href="/autovivification">autovivification</a>.
 
 
 If we used Data::Dumper to print out the content of <hl>%grades</hl> right after

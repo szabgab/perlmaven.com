@@ -73,6 +73,6 @@ came from the first array, and which from the second.
 In order to solve this we'll need to learn about references.
 
 There is an article explaining
-<a href="/pro/passing-two-arrays-to-a-function">how to pass two arrays to a function</a>
+<a href="/passing-two-arrays-to-a-function">how to pass two arrays to a function</a>
 available to <a href="/pro">Perl Maven Pro</a> subscribers.
 

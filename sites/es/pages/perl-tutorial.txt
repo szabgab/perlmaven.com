@@ -185,7 +185,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <ol>
 <li><a href="http://perlmaven.com/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp) (en)</a></li>
 <li>Leyendo ficheros Excel usando Perl</li>
-<li><a href="http://perlmaven.com/pro/create-an-excel-file-with-perl">Creando ficheros Excel usando Perl (en)</a> (for <a href="/pro">Pro</a> subscribers.)</li>
+<li><a href="http://perlmaven.com/create-an-excel-file-with-perl">Creando ficheros Excel usando Perl (en)</a> (for <a href="/pro">Pro</a> subscribers.)</li>
 <li>Enviando emails usando Perl</li>
 <li>Scripts CGI en Perl</li>
 <li>Aplicaciones web en Perl: PSGI</li>

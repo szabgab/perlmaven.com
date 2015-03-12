@@ -82,7 +82,7 @@ Apparently I was using a <b>symbolic HASH reference</b>, by accident.
 
 In fact, I never touched the <hl>%person</hl> hash. In the second assignment
 I used the <hl>$person</hl> scalar as a reference to a hash. This would be OK
-if the variable <hl>$person</hl> was undef, it would <a href="/pro/autovivification">autovivify</a> (pro page)
+if the variable <hl>$person</hl> was undef, it would <a href="/autovivification">autovivify</a> (pro page)
 to be a reference to a hash. As it already contained a string Perl was trying to use that name, the content of the
 variable, as the name of a hash. Effectively I assigned 'Bar' to the 'name' key of the <hl>%Foo</hl> hash.
 

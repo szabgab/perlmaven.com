@@ -292,7 +292,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 </li>
 <li>Чтение из Excel-файлов с помощью Perl</li>
 <li>
-	<a href="http://perlmaven.com/pro/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (<a href="http://perlmaven.com/pro">Платная подписка (только по-английски)</a>)
+	<a href="http://perlmaven.com/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (<a href="http://perlmaven.com/pro">Платная подписка (только по-английски)</a>)
 </li>
 <li>Отправка электронной почты с помощью Perl</li>
 <li>CGI-скрипты на Perl</li>
@@ -333,18 +333,18 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <b>Объектно-ориентированный Perl с помощью Moo</b>
 <ol>
   <li>
-	<span href="/videos/oop-with-moo">ООП с помощью Moo</span> - скринкаст и текстовое объяснение основных принципов Moo,
+	<span href="http://perlmaven.com/oop-with-moo">ООП с помощью Moo</span> - скринкаст и текстовое объяснение основных принципов Moo,
 		создание класса с единственным свойством, которое может быть либо "только для чтения" (неизменяемое),
 		либо "для чтения и записи" (изменяемое). Создание экземпляра (объекта).
 	<a href="http://perlmaven.com/videos/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, 
 		creating a class with a single attrubue that can be either read-only (immutable) or read-write (mutable) attribute.
 		Creating and instance (object).
   </li>
-  <li><a href="/pro">Платная подписка (только по-английски)</a>:</li>
-  <li><a href="/pro/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
-  <li><a href="/pro/moo-and-required-attributes">required attributes</a></li>
+  <li><a href="http://perlmaven.com/pro">Платная подписка (только по-английски)</a>:</li>
+  <li><a href="http://perlmaven.com/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
+  <li><a href="http://perlmaven.com/moo-and-required-attributes">required attributes</a></li>
   <li><a href="http://perlmaven.com/pro/moo-attributes-with-default-values">Moo attributes with default values</a></li>
-  <li><a href="/pro/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
+  <li><a href="http://perlmaven.com/pro/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
 </ol>
 
 For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
