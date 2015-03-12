@@ -8,11 +8,10 @@
 
 =abstract start
 
-A series of articles (one of them free, most of them available to <a href="/pro">Perl Maven Pro</a> subscribers only)
-about Moo, the Minimalist Object Orientation system of Perl.
+A series of articles about <a href="http://metacpan.org/pod/Moo">Moo</a>, the Minimalist Object Orientation system of Perl.
 
 Moo is the little brother of <a href="/moose">Moose, the all magnificent object oriented framework of Perl</a>.
-Moo is smaller, faster, pure-Perl (no XS dependencies) than Moose. It can provide a solution for people
+Moo is smaller and faster than Moose and it pure-Perl (no XS dependencies). It can provide a solution for people
 who would like to get away from the "manual blessing", but don't want to "pay" for all the features of Moose.
 
 =abstract end
@@ -21,13 +20,6 @@ who would like to get away from the "manual blessing", but don't want to "pay" f
 <ul>
   <li><a href="/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, creating a class with a single attribute that can be either read-only (immutable) or read-write (mutable) attribute.
       Creating and instance (object).</li>
-</ul>
-
-<h2>Pro</h2>
-<p>
-Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
-</p>
-<ul>
   <li><a href="/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
   <li><a href="/pro/moose-like-type-system-for-moo">MooX::late</a> provides another type-system, similar to what Moose has.</li> 
   <li>Attributes:
