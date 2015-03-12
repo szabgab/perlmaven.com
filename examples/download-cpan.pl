@@ -10,9 +10,9 @@ my $dir = '/tmp';
 my $url = shift or die "Usage: $0 URL\n";
 
 my $name;
-if ($url =~ m{^https://metacpan.org/pod/([a-zA-Z:]+)$}) {
+if ($url =~ m{^https://metacpan.org/pod/([a-zA-Z0-9:]+)$}) {
 	$name = $1;
-} elsif ($url =~ m{^https://metacpan.org/release/([a-zA-Z-]+)$}) {
+} elsif ($url =~ m{^https://metacpan.org/release/([a-zA-Z0-9-]+)$}) {
 	$name = $1;
 }
 
@@ -23,6 +23,8 @@ my $w = WWW::Mechanize->new;
 $w->get($url);
 my $download_link = $w->find_link( text_regex => qr{^Download} );
 die "Could not find download link\n" if not $download_link;
+say $download_link;
+exit;
 my ($file) = $download_link->url =~ m{([^/]+)$};
 say $download_link->url;
 say $file;
