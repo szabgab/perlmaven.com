@@ -24,22 +24,12 @@ Ruby has <a href="http://rack.github.io/">Rack</a>, and Perl has <a href="/psgi"
 Nevertheless CGI is still available and in some cases still the appropriate choice. Therefore we have a few
 articles and screencasts related to CGI.
 
-<h2>Free</h2>
 <ul>
   <li><a href="/modern-web-with-perl">Modern Web with Perl</li>
   <li><a href="/perl-cgi-script-with-apache2">Perl/CGI script with Apache2</li>
   <li><a href="/perl-cgi-mod-perl-psgi">Which is better perl-CGI, mod_perl or PSGI?</li>
   <li><a href="/simple-cgi-script-to-send-form-by-email">Simple CGI Perl script to send form by e-mail</li>
 </ul>
-
-<!--
-<h2>Pro</h2>
-
-Articles available for <a href="/pro">Perl Maven Pro</a> subscribers:
-
-<ul>
-</ul>
--->
 
 <!--
   <li><a href=""></a></li>

@@ -17,7 +17,6 @@ who would like to get away from the "manual blessing", but don't want to "pay" f
 
 =abstract end
 
-<h2>Free</h2>
 <ul>
   <li><a href="/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, creating a class with a single attribute that can be either read-only (immutable) or read-write (mutable) attribute. Creating an instance (object).</li>
   <li><a href="/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
