@@ -116,7 +116,7 @@ END_SQL
 $dbh->do($sql);
 </code>
 
-The first statement is just a <a href="/here-document">here document</a> of an
+The first statement is just a <a href="/here-documents">here document</a> of an
 SQL statement to CREATE TABLE.
 Then we call the <hl>do</hl> method of the database handle which will send the
 SQL statement to the database.
