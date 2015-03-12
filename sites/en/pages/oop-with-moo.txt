@@ -1,6 +1,7 @@
 =title OOP with Moo
 =timestamp 2013-04-13T18:33:01
 =indexes OOP, Moo
+=books moo
 =tags screencast
 =status show
 =show_newsletter_form 0

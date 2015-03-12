@@ -2,7 +2,7 @@
 =timestamp 2013-02-12T10:45:56
 =indexes OOP, Moose, object oriented, class, object, instance, constructor, getter, setter, accessor
 =status show
-=books advanced_book
+=books moose
 =author szabgab
 =comments_disqus_enable 1
 

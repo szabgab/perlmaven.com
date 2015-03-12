@@ -1,6 +1,7 @@
 =title Type checking with Moo
 =timestamp 2015-03-02T13:10:01
 =indexes Moo, looks_like_number, Scalar::Util, MooX::Types::MooseLike, MooX::Types::CLike, Perl::Critic
+=books moo
 =status show
 =author szabgab
 =comments_disqus_enable 1
