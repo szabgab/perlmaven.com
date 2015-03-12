@@ -8,7 +8,7 @@
 
 =abstract start
 
-Earlier we saw how to <a href="/videos/oop-with-moo">create a class with attributes</a> and how
+Earlier we saw how to <a href="/oop-with-moo">create a class with attributes</a> and how
 to set up <a href="/type-checking-with-moo">type checking</a> in the setters.
 
 In this article you'll see how to set an attribute to be <b>required</b>.

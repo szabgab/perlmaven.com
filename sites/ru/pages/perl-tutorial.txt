@@ -336,7 +336,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 	<span href="http://perlmaven.com/oop-with-moo">ООП с помощью Moo</span> - скринкаст и текстовое объяснение основных принципов Moo,
 		создание класса с единственным свойством, которое может быть либо "только для чтения" (неизменяемое),
 		либо "для чтения и записи" (изменяемое). Создание экземпляра (объекта).
-	<a href="http://perlmaven.com/videos/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, 
+	<a href="http://perlmaven.com/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, 
 		creating a class with a single attrubue that can be either read-only (immutable) or read-write (mutable) attribute.
 		Creating and instance (object).
   </li>

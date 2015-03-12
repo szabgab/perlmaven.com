@@ -309,6 +309,6 @@ $|  = 1;
 
 Вот и все. Надеюсь, у вас теперь есть первый работающий CGI-скрипт на Perl.
 
-Конечно, использование PSGI это более <a href="http://perlmaven.com/videos/modern-web-with-perl">современно</a> и более гибко, чем CGI.
+Конечно, использование PSGI это более <a href="http://perlmaven.com/modern-web-with-perl">современно</a> и более гибко, чем CGI.
 Возможно, вам стоит посмотреть <a href="http://perlmaven.com/dancer">Perl Dancer</a> 
 или <a href="http://perlmaven.com/mojolicious">Mojolicious</a> фреймворки, чтобы получить больше опыта.
