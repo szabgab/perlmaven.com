@@ -37,6 +37,8 @@ I tried <hl>git-cpan clone WWW::Mechanize</hl>. It recognized that WWW::Mechaniz
 and cloned that repository. Unfortunately when I tried to run <hl>git-cpan clone XML::DT</hl> (a module that does not
 declare its repository), I got several errors. I have <a href="https://github.com/yanick/git-cpan-patch/issues/20">reported the issue</a>.
 
+<h2>Using WWW::Mechanize</h2>
+
 My main issue though is that I wanted something simple. So here is what I wrote:
 
 <include file="examples/download-cpan.pl">
