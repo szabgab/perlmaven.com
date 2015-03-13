@@ -1,0 +1,16 @@
+=title Solution: concatenation
+=timestamp 2015-03-13T10:02:27
+=indexes .
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Solution: concatenation
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-concatenation" />
