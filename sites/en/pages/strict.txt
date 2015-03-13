@@ -58,7 +58,7 @@ Ther are a number of modules that if you <hl>use</hl> them in a file, it will
 automatically and impicitely turn <hl>use strict</hl> on in that specific file.
 
 Among the modules are <a href="/moose">Moose</a>,
-<a href="/moo</a>, <a href="https://metacpan.org/module/Dancer">Dancer</a>,
+<a href="/moo">Moo</a>, <a href="https://metacpan.org/module/Dancer">Dancer</a>,
 and <a href="/mojolicious">Mojolicious</a>, but there are more.
 
 There is a <a href="https://github.com/szabgab/Test-Strict/blob/master/lib/Test/Strict.pm#L242">

@@ -12,7 +12,7 @@ The other day I wrote about checking the
 In that article we saw the memory footprint of some simple data, but have not looked at
 modules. Let's see how can we check the memory footprint and load time of modules.
 
-Especially interesting are <a href="/moo">Moo</a> and <a href="/Moose">Moose</a>, the
+Especially interesting are <a href="/moo">Moo</a> and <a href="/moose">Moose</a>, the
 two main object systems of Perl, and Class::Accessor that used to be a big hit before Moose came on the scene.
 
 =abstract end

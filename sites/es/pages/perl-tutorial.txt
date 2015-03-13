@@ -205,7 +205,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li><a href="http://perlmaven.com/multi-dimensional-hashes">Multi dimensional hashes (en)</a></li>
 <li><a href="http://perlmaven.com/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package (en)</a></li>
 <li><a href="http://perlmaven.com/testing-a-simple-perl-module">Testing a simple Perl module (en)</a></li>
-<li><a href="http://perlmaven.com/what-are-sting-and-numeric-contexts">What are string and numeric contexts? (en)</a></li>
+<li><a href="http://perlmaven.com/what-are-string-and-numeric-contexts">What are string and numeric contexts? (en)</a></li>
 </ol>
 
 <b>Perl Orientado a Objetos con Moo</b>
