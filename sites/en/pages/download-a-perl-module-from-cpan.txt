@@ -1,7 +1,7 @@
 =title How to download a Perl module from CPAN
-=timestamp 2015-02-01T07:30:01
+=timestamp 2015-03-14T02:30:01
 =indexes CPAN, WWW::Mechanize
-=status done
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1

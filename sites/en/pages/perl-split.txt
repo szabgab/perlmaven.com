@@ -1,4 +1,4 @@
-=title Perl split - to cut up a string into pieces (explode)
+=title Perl split - to cut up a string into pieces
 =timestamp 2013-12-15T23:30:01
 =description perl split(/PATTERN/, EXPR, LIMIT) splits the expression into a list of strings every place where the pattern matches.
 =indexes split, $_, explode
