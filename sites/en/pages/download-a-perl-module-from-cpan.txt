@@ -28,7 +28,8 @@ I don't really like that subshell. I'd like the downloaded and unzipped director
 
 <h2>cpan</h2>
 
-As pointed out by dnmfarrell on Reddit, the <hl>cpan</hl> command, which is the regular cpan client also has a usefule option.
+As pointed out by dnmfarrell on <a href="http://www.reddit.com/r/perl/comments/2yzuf4/how_to_download_a_perl_module_from_cpan/">Reddit</a>,
+the <hl>cpan</hl> command, which is the regular cpan client also has a usefule option.
 <hl>cpan -g WWW::Mechanize<hl> would download the zip file of the latest distribution providing the WWW::Mechanize module and
 would save it in the current directory. I would still need to unzip it, but this is also a great solution.
 
