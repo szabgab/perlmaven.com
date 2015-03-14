@@ -62,8 +62,8 @@ subscription service.
   <li><a href="/beginner-perl-maven-solution-area-of-rectangular">Solution: Area of rectangular</a></li>
   <li><a href="/beginner-perl-maven-solution-area-prompt-and-warn">Solution: Area prompt and warn if values are less than 0</a></li>
   <li><a href="/beginner-perl-maven-solution-concatenation">Solution: Concatenation</a></li>
-  <li><a href="/pro/beginner-perl/exercise-number-guessing-game">Exercise: Number guessing game</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game">Solution: Number guessing game</a></li>
+  <li><a href="/beginner-perl-maven-exercise-number-guessing-game">Exercise: Number guessing game</a></li>
+  <li><a href="/beginner-perl-maven-solution-number-guessing-game">Solution: Number guessing game</a></li>
 </ol>
 
 <h3>Files</h3>
