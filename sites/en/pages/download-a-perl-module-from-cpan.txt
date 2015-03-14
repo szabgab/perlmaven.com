@@ -32,6 +32,9 @@ As pointed out by dnmfarrell on Reddit, the <hl>cpan</hl> command, which is the 
 <hl>cpan -g WWW::Mechanize<hl> would download the zip file of the latest distribution providing the WWW::Mechanize module and
 would save it in the current directory. I would still need to unzip it, but this is also a great solution.
 
+There might be some bug using this feature on a newly configured cpan client as I've reported <a href="https://rt.cpan.org/Ticket/Display.html?id=102778">here</a>,
+but I think if you regularily use this cpan client then it will work fine.
+
 <h2>git-cpan</h2>
 
 Then there is <a href="https://metacpan.org/pod/Git::CPAN::Patch">Git::CPAN::Patch</a>
