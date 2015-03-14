@@ -22,9 +22,15 @@ Let's say I'd like to download the distribution that contains the <a href="https
 
 <h2>cpanm</h2>
 
-If I have <a href="http://cpanmin.us">CPAN Minus</a> installed I can type in <hl>cpanm --look WWW::Mechanize</hl>. It will download the distribution,
+If you have <a href="http://cpanmin.us">CPAN Minus</a> installed you can type in <hl>cpanm --look WWW::Mechanize</hl>. It will download the distribution,
 unzip it and open a subshell in the unzipped directory. That's cool, but in many cases I'd need to have several distributions to be around, and
 I don't really like that subshell. I'd like the downloaded and unzipped directory to be easily accessible later on from my regular shell.
+
+<h2>cpan</h2>
+
+As pointed out by dnmfarrell on Reddit, the <hl>cpan</hl> command, which is the regular cpan client also has a usefule option.
+<hl>cpan -g WWW::Mechanize<hl> would download the zip file of the latest distribution providing the WWW::Mechanize module and
+would save it in the current directory. I would still need to unzip it, but this is also a great solution.
 
 <h2>git-cpan</h2>
 
