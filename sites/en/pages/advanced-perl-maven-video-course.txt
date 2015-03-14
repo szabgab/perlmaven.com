@@ -111,7 +111,7 @@ Some include screencasts, others contain just text.
 </ol>
 
 
-<h2>Object Oriented Programming in Perl (with and without Moose)</h2>
+<h2>Object Oriented Programming in Perl using raw classes</h2>
 <ol>
   <li>Constructors and destructors</li>
   <li>Attributes, attribute types (members)</li>
@@ -126,22 +126,16 @@ Some include screencasts, others contain just text.
   <li>OOP: Class::Accessor A small scale object oriented system in Perl</li>
   <li>Class methods and Instance methods</li>
   <li>Automatic Class creation</li>
-  <li><a href="/object-oriented-perl-using-moose">OOP: Creating a class with Moose</a></li>
   <li>Operator overloading</li>
 </ol>
 
+<h2>Object Oriented using Moo</h2>
+
+See the <a href="/moo">Moo page</a>
+
 <h2>Object Oriented using Moose</h2>
-<ol>
-  <li><a href="/pro/moose-constructor">Moose constructor</a></li>
-  <li><a href="/pro/moose-test-constructor">Moose: Testing the constructor</a></li>
-  <li><a href="/pro/moose-test-setter-getter">Moose test setter getter</a></li>
-  <li><a href="/pro/moose-type-constraint">Moose type constraint</a></li>
-  <li><a href="/pro/moose-test-type-constraint">Moose testing type constraint</a></li>
-  <li><a href="/pro/moose-classes-as-constraints">Moose classes as constraints</a></li>
-  <li><a href="/pro/moose-creating-subtypes">Moose creating subtypes</a></li>
-  <li><a href="/pro/moose-coerce-to-subtype">Moose coerce to subtype</a></li>
-  <!-- see also on the /moose page -->
-</ol>
+
+See the <a href="/moose">Moose page</a>
 
 <h2>Some other advanced topics</h2>
 
