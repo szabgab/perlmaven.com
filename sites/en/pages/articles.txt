@@ -28,11 +28,16 @@ Article and screencast series on the Perl Maven site:
   <li><a href="/moose">Moose</a>, the 'post modern' Object Oriented system for Perl</li>
 </ul>
 
-<h2>Other</h2>
+<h2>Courses</h2>
 
 <ul>
-  <li><a href="/testing">Test Automation using Perl</a></li>
   <li><a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a></li>
+  <li><a href="/advanced-perl-maven-video-course">Advanced Perl Maven video course</a></li>
+  <li><a href="/testing">Test Automation using Perl</a></li>
+</ul>
+
+<h2>Other</h2>
+<ul>
   <li><a href="/mongodb">Perl and MongoDB</a>, the NoSQL database</li>
   <li><a href="/anyevent">Anyevent</a>, asynchronous programming</li>
   <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers</li>
