@@ -85,12 +85,13 @@ Some include screencasts, others contain just text.
   <li>Dispatch tables</li>
   <li>Handling memory leak</li>
   <li>Deep copy of data structures</li>
-  <li>Static variables</li>
+  <li><a href="/static-and-state-variables-in-perl">Static and state variables</a></li>
   <li>Closures</li>
   <li>Creating a caching system</li>
   <li>Signal handling</li>
   <li>Handling warnings in the code</li>
-  <li>grep, map</li>
+  <li><a href="/filtering-values-with-perl-grep">Filtering with grep in Perl</a></li>
+  <li><a href="/transforming-a-perl-array-using-map">Transforming a perl array using the map function</a></li>
   <li>Array and hash slices</li>
   <li>Creating context sensitive functions using wantarray.</li>
   <li>Improving speed by using the Schwartzian transformation</li>
@@ -148,13 +149,13 @@ See the <a href="/moose">Moose page</a>
   <li><a href="/barewords-in-perl">Barewords in Perl</a></li>
   <li><a href="/how-to-capture-and-save-warnings-in-perl">How to handle warnings in an application?</a></li>
   <li><a href="/unknown-warnings-category">Unknown warnings category</a>
-  <li>splain and use diagnostics</li>
+  <li><a href="/use-diagnostics-or-splain">splain and use diagnostics</a></li>
   <li>Fatal warnings</li>
   <li>Array and hash slices</li>
   <li><a href="/splice-to-slice-and-dice-arrays-in-perl">splice</a></li>
   <li>AUTOLOAD</li>
   <li>BEGIN and END</li>
-  <li>Schwartzian transformation</li>
+  <li><a href="/how-to-sort-faster-in-perl">How to sort faster in Perl - Schwartzian transformation</a></li>
   <li>use autodie</li>
   <li>Perl::Critic</li>
   <li><a href="/avoid-unwanted-bitwise-operators">Avoid unwanted bitwise operators using Perl::Critic</a></li>
@@ -163,8 +164,6 @@ See the <a href="/moose">Moose page</a>
   <li>Who is calling? caller</li>
   <li>Logging with Log::Dispatch</li>
   <li>Time and date with DateTime</li>
-  <li><a href="/filtering-values-with-perl-grep">Filtering with grep in Perl</a></li>
-  <li><a href="/transforming-a-perl-array-using-map">Transforming a perl array using the map function</a></li>
   <li>Signals and the kill function</li>
   <li><a href="/the-default-variable-of-perl">default scalar variable of Perl</a></li>
 </ol>
