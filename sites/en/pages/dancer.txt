@@ -20,6 +20,11 @@ The beginning of a series of articles about
   <lo><a href="/getting-started-with-perl-dancer-on-digital-ocean">Getting started with Perl Dancer on Digital Ocean</a></li>
 </ul>
 
+<h2>Dancer 2</h2>
+<ul>
+  <li><a href="/pro/hello-world-with-dancer2">Hello World with Dancer2</a></li>
+</ul>
+
 <!--
   <li><a href=""></a></li>
 -->
