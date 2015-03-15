@@ -38,8 +38,8 @@ but I think if you regularily use this cpan client then it will work fine.
 
 <h2>git-cpan</h2>
 
-Then there is <a href="https://metacpan.org/pod/Git::CPAN::Patch">Git::CPAN::Patch</a>
-and the <a href="https://metacpan.org/pod/distribution/Git-CPAN-Patch/bin/git-cpan">git-cpan</a> command line tool.
+Then there is the <a href="https://metacpan.org/pod/distribution/Git-CPAN-Patch/bin/git-cpan">git-cpan</a> command line tool
+that comes with <a href="https://metacpan.org/pod/Git::CPAN::Patch">Git::CPAN::Patch</a>.
 It seems to be everything I could want and more. It would fetch a distribution from CPAN, create a local Git repository
 and let you hack on the code.
 
