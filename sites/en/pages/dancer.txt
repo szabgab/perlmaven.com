@@ -2,6 +2,7 @@
 =timestamp 2013-10-24T18:13:11
 =indexes Dancer
 =status show
+=books dancer, dancer2
 =author szabgab
 =comments_disqus_enable 1
 =show_related 0
