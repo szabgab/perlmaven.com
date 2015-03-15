@@ -12,12 +12,7 @@
 =comments_disqus_enable 0
 =show_social 0
 
-
-Watching the videos and doing all the exercises will allow you to start writing
-useful Perl scripts and/or to maintaining existing scripts.
-
-The first few episodes can be watched free of charge. To access all the videos sign up to the <a href="/pro">Perl Maven Pro</a>
-subscription service.
+These are earlier recordings and they are a bit noisy, but the content is still good.
 
 <h2>Table of Contents</h2>
 <h3>Introduction</h3>
@@ -68,7 +63,7 @@ subscription service.
 
 <h3>Files</h3>
 <ol>
-  <li><a href="/pro/beginner-perl/die-warn-exit">die, warn, exit</a></li>
+  <li><a href="/beginner-perl-maven-die-warn-exit">die, warn, exit</a></li>
   <li><a href="/pro/beginner-perl/open-file">Open File</a></li>
   <li><a href="/pro/beginner-perl/open-file-all">Open File All</a></li>
   <li><a href="/pro/beginner-perl/open-file-with-error-handling">Open File with Error Handling</a></li>
