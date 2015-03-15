@@ -3,6 +3,7 @@
 =indexes Dancer, DWIM Perl, echo
 =tags screencast
 =status show
+=books dancer
 =show_newsletter_form 0
 =show_date 0
 =author 0

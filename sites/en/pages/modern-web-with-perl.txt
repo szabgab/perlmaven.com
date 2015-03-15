@@ -2,6 +2,7 @@
 =timestamp 2013-04-18T12:33:01
 =indexes Catalyst, Mojolicious, Dancer, PSGI, CGI
 =tags screencast
+=books dancer, catalyst, mojolicious, psgi, cgi
 =status show
 =show_newsletter_form 0
 =show_date 0

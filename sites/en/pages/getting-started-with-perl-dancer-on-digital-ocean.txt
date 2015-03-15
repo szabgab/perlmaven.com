@@ -2,6 +2,7 @@
 =timestamp 2013-10-09T11:40:01
 =indexes Dancer, nginx, Starman, Digital Ocean, VPS
 =status show
+=books dancer
 =author szabgab
 =comments_disqus_enable 1
 
