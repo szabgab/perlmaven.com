@@ -24,7 +24,7 @@ who would like to get away from the "manual blessing", but don't want to "pay" f
   <li>Attributes:
     <ul>
       <li><a href="/moo-and-required-attributes">Required attributes</a></li>
-      <li><a href="/pro/moo-attributes-with-default-values">Moo attributes with default values</a></li>
+      <li><a href="/moo-attributes-with-default-values">Moo attributes with default values</a></li>
       <li><a href="/pro/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
     </ul>
   </li>

@@ -343,7 +343,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
   <li><a href="http://perlmaven.com/pro">Платная подписка (только по-английски)</a>:</li>
   <li><a href="http://perlmaven.com/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
   <li><a href="http://perlmaven.com/moo-and-required-attributes">required attributes</a></li>
-  <li><a href="http://perlmaven.com/pro/moo-attributes-with-default-values">Moo attributes with default values</a></li>
+  <li><a href="http://perlmaven.com/moo-attributes-with-default-values">Moo attributes with default values</a></li>
   <li><a href="http://perlmaven.com/pro/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
 </ol>
 
