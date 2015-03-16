@@ -1,0 +1,16 @@
+=title Open file all
+=timestamp 2015-03-16T10:30:02
+=indexes  open, <, >, >>, +<
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Open file all
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/open-file-all" />

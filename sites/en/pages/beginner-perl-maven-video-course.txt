@@ -65,7 +65,7 @@ These are earlier recordings and they are a bit noisy, but the content is still 
 <ol>
   <li><a href="/beginner-perl-maven-die-warn-exit">die, warn, exit</a></li>
   <li><a href="/beginner-perl-maven-open-file">Open File</a></li>
-  <li><a href="/pro/beginner-perl/open-file-all">Open File All</a></li>
+  <li><a href="/beginner-perl-maven-open-file-all">Open File All</a></li>
   <li><a href="/pro/beginner-perl/open-file-with-error-handling">Open File with Error Handling</a></li>
   <li><a href="/pro/beginner-perl/open-or-die">open or die</a></li>
   <li><a href="/pro/beginner-perl/no-such-file">No such file</a></li>
