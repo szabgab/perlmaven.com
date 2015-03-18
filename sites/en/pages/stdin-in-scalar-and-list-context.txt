@@ -42,7 +42,7 @@ Then it will take everything we type, including the ENTER at the end, and assign
 
 <h2>STDIN in list context</h2>
 
-If we assign the <hl><STDIN></hl> readline operator to an array it means we put the readline operator in LIST context.
+If we assign the <hl>&lt;STDIN></hl> readline operator to an array it means we put the readline operator in LIST context.
 Let's see this example:
 
 <code lang="perl">
