@@ -4,10 +4,7 @@
 =tags video
 =status show
 =books beginner_video
-=show_right 0
-=show_newsletter_form 0
-=show_date 0
-=author 0
+=author szabgab
 =archive 0
 =comments_disqus_enable 0
 
