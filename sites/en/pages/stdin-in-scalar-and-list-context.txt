@@ -1,7 +1,7 @@
 =title STDIN in scalar and list context
-=timestamp 2013-02-20T14:45:56
+=timestamp 2015-03-18T09:45:56
 =indexes STDIN, <STDIN>, scalar
-=status done
+=status show
 =books beginner_book
 =author szabgab
 =comments_disqus_enable 1
@@ -103,6 +103,6 @@ On the last line we print out the <a href="/length-of-an-array">number of elemen
 <h2>Usage?</h2>
 
 Almost always you need to read from STDIN in scalar context,
-that is assigning the result to a scalar variable: <hl>$input = <STDIN>;</hl>.
+that is, assigning the result to a scalar variable: <hl>$input = <STDIN>;</hl>.
 
 
