@@ -13,7 +13,7 @@ how does <a href="/the-year-19100">localtime behave in scalar and list context</
 and array return in scalar context.
 We also saw how to <a href="">read from a file in SCALAR and LIST context</a>.
 
-This time we'll look at reading from STDIN using <hl><STDIN></hl> in scalar and list context.
+This time we'll look at reading from STDIN using <hl>&lt;STDIN></hl> in scalar and list context.
 
 =abstract end
 
@@ -103,6 +103,10 @@ On the last line we print out the <a href="/length-of-an-array">number of elemen
 <h2>Usage?</h2>
 
 Almost always you need to read from STDIN in scalar context,
-that is, assigning the result to a scalar variable: <hl>$input = <STDIN>;</hl>.
+that is, assigning the result to a scalar variable:
+
+<code lang="perl">
+$input = <STDIN>;
+</code>
 
 
