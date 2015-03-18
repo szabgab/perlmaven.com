@@ -3,7 +3,6 @@
 =description niveau débutant, vidéo en ligne du cours pour ceux qui aimeraient apprendre Perl
 =tags formation, cours, débutant, vidéo
 =status show
-=original beginner-perl-maven-video-course
 =show_right 0
 =show_newsletter_form 0
 =show_date 0
