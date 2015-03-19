@@ -1,0 +1,53 @@
+=title POD - processing Plain Old Documentation format
+=timestamp 2015-02-01T07:30:01
+=indexes POD
+=status draft
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+POD is the format the documentation of Perl and every Perl modules is written.
+
+There are many tools parsing them, extracting information and converting them to other formats.
+
+=abstract end
+
+<h2>Recommended</h2>
+
+<a href="https://metacpan.org/pod/Pod::Simple">Pod::Simple</a>, framework for parsing Pod.
+
+<h2>Other</h2>
+
+<a href="https://metacpan.org/pod/Pod::Tree">Pod::Tree</a> can create a syntax tree from POD file. Looks interesting though it had not seen
+a new release since 2010.
+
+<a href="https://metacpan.org/pod/Pod::S5">Pod::S5</a> Generate S5 slideshow from POD source.
+
+<a href="https://metacpan.org/pod/Pod::Perldoc::ToToc">Pod::Perldoc::ToToc</a> Translate Pod to a Table of Contents.
+
+<a href="https://metacpan.org/pod/Pod::POM">Pod::POM</a>, POD Object Model needs a new maintainer.
+
+<a href="https://metacpan.org/pod/Pod::Man">Pod::Man</a> Convert POD data to formatted *roff input. 
+
+<a href="https://metacpan.org/pod/Pod::XML">Pod::XML</a> Module to convert POD to XML. No version since 2007.
+
+<a href="https://metacpan.org/pod/Pod::Hlp">Pod::Hlp</a> convert POD data to formatted VMS HLP Help module text. No new release since 2001.
+<a href="https://metacpan.org/pod/Pod::Pdf">Pod::Pdf</a> A POD to PDF translator. No version since 2000. There are probably better solutions.
+
+
+<a href="https://metacpan.org/pod/Pod::SAX">Pod::SAX</a> a SAX parser for Pod.
+
+<a href="https://metacpan.org/pod/Tk::Pod">Tk::Pod</a> Pod browser toplevel widget for Perl/Tk.
+
+
+<a href="https://metacpan.org/pod/Pod::Parser">Pod::Parser</a> base class for creating POD filters and translators.
+This module is considered legacy; modern Perl releases (5.18 and higher) are going to remove Pod-Parser from core and use Pod-Simple for all things POD.
+
+<a href="https://metacpan.org/pod/Pod::PP">Pod::PP</a> POD pre-processor - has not seen any release for ages.
+It is based on Pod::Parser which itself is considered legacy code.
+
+<a href="https://metacpan.org/pod/Pod::Rtf">Pod::Rtf</a>, convert pod documentation to Rich Text Format (rtf) suitable for compilation by a Windows Help compiler.
+
+<a href="https://metacpan.org/pod/Lip::Pod">Lip::Pod</a> Literate Perl to POD conversion.
