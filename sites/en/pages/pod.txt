@@ -18,6 +18,8 @@ There are many tools parsing them, extracting information and converting them to
 
 <a href="https://metacpan.org/pod/Pod::Simple">Pod::Simple</a>, framework for parsing Pod.
 
+<a href="https://metacpan.org/pod/Test::Pod">Test::Pod</a> check for POD errors in files.
+
 <h2>Other</h2>
 
 (not categorized yet)
@@ -39,13 +41,32 @@ a new release since 2010.
 <a href="https://metacpan.org/pod/Pod::Pdf">Pod::Pdf</a> A POD to PDF translator. No version since 2000. There are probably better solutions.
 
 
+<a href="https://metacpan.org/pod/Pod::Tests">Pod::Tests</a> Extracts embedded tests and code examples from POD.
+
+
 <a href="https://metacpan.org/pod/Pod::SAX">Pod::SAX</a> a SAX parser for Pod.
 
 <a href="https://metacpan.org/pod/Tk::Pod">Tk::Pod</a> Pod browser toplevel widget for Perl/Tk.
 
+<a href="https://metacpan.org/pod/Pod::Loom">Pod::Loom</a> Weave pseudo-POD into real POD.
 
 <a href="https://metacpan.org/pod/Pod::Parser">Pod::Parser</a> base class for creating POD filters and translators.
 This module is considered legacy; modern Perl releases (5.18 and higher) are going to remove Pod-Parser from core and use Pod-Simple for all things POD.
+<a href="https://metacpan.org/pod/Pod::Find">Pod::Find</a>  find POD documents in directory trees (part of Pod::Parser).
+
+<a href="https://metacpan.org/pod/Pod::Spell">Pod::Spell</a> a formatter for spellchecking Pod
+
+<a href="https://metacpan.org/pod/Pod::CYOA">Pod::CYOA</a> Pod-based Choose Your Own Adventure website generator
+
+<a href="https://metacpan.org/release/Pod-PXML">Pod::PXML</a> Convert betwen POD and XML. (no release since 2004)
+
+<a href="https://metacpan.org/pod/Pod::Help">Pod::Help</a> Perl module to automate POD display.
+
+<a href="https://metacpan.org/pod/Pod::LaTeX">Pod::LaTeX</a> Convert Pod data to formatted Latex.
+
+<a href="https://metacpan.org/pod/LaTeX::Pod">LaTeX::Pod</a> Transform LaTeX source files to POD.
+
+<a href="https://metacpan.org/pod/Pod::Index">Pod::Index</a> Index and search PODs using X&lt;&gt; entries.
 
 <a href="https://metacpan.org/pod/Pod::PP">Pod::PP</a> POD pre-processor - has not seen any release for ages.
 It is based on Pod::Parser which itself is considered legacy code.
@@ -53,3 +74,27 @@ It is based on Pod::Parser which itself is considered legacy code.
 <a href="https://metacpan.org/pod/Pod::Rtf">Pod::Rtf</a>, convert pod documentation to Rich Text Format (rtf) suitable for compilation by a Windows Help compiler.
 
 <a href="https://metacpan.org/pod/Lip::Pod">Lip::Pod</a> Literate Perl to POD conversion.
+
+<a href="https://metacpan.org/pod/Pod::Cats">Pod::Cats</a> The POD-like markup language written for podcats.in
+
+<a href="https://metacpan.org/pod/Pod::Site">Pod::Site</a> Build browsable HTML documentation for your app.
+
+<a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a> convert pod files to HTML (part of Perl core).
+
+<a href="https://metacpan.org/pod/Pod::L10N">Pod::L10N</a> Pod with L10N.
+
+<a href="https://metacpan.org/pod/Pod::Wrap">Pod::Wrap</a> Wrap pod paragraphs, leaving verbatim text and code alone. (no release since 2004.)
+based on Pod::Parser.
+
+<a href="https://metacpan.org/pod/Pod::Stripper">Pod::Stripper</a> strip all pod, and output what's left. (no release since 2002)
+
+<a href="https://metacpan.org/pod/Pod::WSDL">Pod::WSDL</a> Creates WSDL documents from (extended) pod.
+
+<a href="https://metacpan.org/pod/Pod::Trac">Pod::Trac</a> Convert a POD to trac's wiki syntax and add it to the trac. (no release since 2007)
+
+<a href="https://metacpan.org/release/Pod-Tidy">Pod::Tidy</a> reformatting Pod Processor.
+
+
+<a href="https://metacpan.org/pod/Pod::HTML">Pod::HTML</a> Translate POD into HTML file (from 1996)
+
+
