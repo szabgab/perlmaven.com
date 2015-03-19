@@ -135,9 +135,11 @@ generating error such as <a href="/barewords-in-perl">Bareword not allowed while
 In practical term it means you need to put your strings within
 double or single quotes.
 
-  "Foo"       # good
-  'Bar'       # good
-  Baz         # not good
+<code>
+"Foo"       # good
+'Bar'       # good
+Baz         # not good
+</code>
 
 <h2>Avoid warnings</h2>
 
