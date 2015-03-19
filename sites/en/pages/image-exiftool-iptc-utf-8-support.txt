@@ -14,7 +14,7 @@ Posted on 2006-04-07 03:43:45-07 by pdi
 
 According to IIM v4.1 ("IPTC headers") specs, ch. 5 Envelope Record, 1:90 Coded Character Set,
 there seems to be a provision for utf-8 support.
-I understand this is not often implemented due both to implementation difficutlies
+I understand this is not often implemented due both to implementation difficulties
 and native utf-8 support in XMP. I've read ExifTool's documentation but
 I couldn't find anything on this. Is utf-8 for IPTC supported? Many thanks in advance.
 

@@ -34,7 +34,7 @@ In the last couple of days I have spent an enormous time trying to get Dancer do
 Specifically I wanted to create sessions and set cookies conditionally so I can avoid creating thousands of sessions for each request
 of each bot visiting the site. (If sessions are enabled, Dancer will create a session just because the <hl>template()</hl> function is called to render
 a page. I <a href="http://lists.preshweb.co.uk/pipermail/dancer-users/2014-December/004199.html">asked about this</a> and the answer was that
-it probably will not be changed in Dancer 1. (Which is ok, they don't want to break backward compatibility and they don't want to spend a lot of time
+it probably will not be changed in Dancer 1. (Which is OK, they don't want to break backward compatibility and they don't want to spend a lot of time
 on the maintenance version of Dancer.) I tried to enable/disable sessions on the fly, but apparently it does not work with the Plack::Builder
 deployment example explained <a href="https://metacpan.org/pod/Dancer::Deployment#In-case-you-have-issues-with-Template::Toolkit-on-Dotcloud">here</a>.
 I have not even reported this issue because I assume they won't want to work much on the now maintenance version of Dancer.
@@ -357,7 +357,7 @@ so I don't need to prefix them any more. (I listed them after the use-statement 
 to locate the source of these keywords.)
 Finally, the PSGI application created by Dancer 2 is not returned directly from Dancer2, instead of Dancer::Handler.
 
-<h2>referer and user_agent in list context</h2>
+<h2>referrer and user_agent in list context</h2>
 
 Then I encountered an exception related to logging code inserting data into MongoDB. It complained about <hl>.</hl> not being valid part of
 a key in MongoDB. It boiled down to this piece of code:
@@ -377,7 +377,7 @@ log_to_mongodb( \%details );
 </code>
 
 This is actually a well known and painful issue with Perl. The problem was that the behavior of
-<hl>request->referer</hl> and <hl>request->user_agent</hl> has changed. If they did not have a proper value,
+<hl>request->referrer</hl> and <hl>request->user_agent</hl> has changed. If they did not have a proper value,
 in Dancer 1 they always returned <hl>undef</hl>.
 Both in <a
 href="http://perlmaven.com/scalar-and-list-context-in-perl">scalar context and in list context</a>.
@@ -398,7 +398,7 @@ my %details = (
     time       => $time,
     host       => request->host,
     page       => request->uri,
-    referrer   => scalar( request->referer ),
+    referrer   => scalar( request->referrer ),
     ip         => $ip,
     user_agent => scalar( request->user_agent ),
     status     => response->status,
@@ -519,7 +519,7 @@ my $dancer = Dancer2->psgi_app;
 This issue took the longest time to fix. I think I wasted on it more than 2 days and to be honest I still don't understand
 the problem.
 
-When I want to return a file (e.g. to let the user download a pdf file, but even in the development envrionment I am using Dancer
+When I want to return a file (e.g. to let the user download a pdf file, but even in the development environment I am using Dancer
 to server images) I use the <hl>send_file</hl> function provided by Dancer. Because the files are not located under the public
 directory of Dancer, I also need to add <hl>system_path => 1</hl>. 
 
@@ -630,7 +630,7 @@ foreach my $cc (qw(br cn cs de eo es fr he id it ko ne te ro ru tr tw meta)) {
 <h2>Regex route is not anchored any more</h2>
 
 This one I encountered only after employment. (Bad thing I did not have a test for this)
-The Perl Maven site has pathes such as <hl>/pro/...</hl> and also <hl>/media/pro/...</hl>.
+The Perl Maven site has paths such as <hl>/pro/...</hl> and also <hl>/media/pro/...</hl>.
 
 I had a route catching the former requests that looked like this:
 
@@ -642,7 +642,7 @@ get qr{/pro/(.*)} => sub {
 
 This worked well in Dancer 1 as this regex only matched the beginning of the path.
 
-In Dancer 2 this has changed. The abve regex started to also match the second type of URL
+In Dancer 2 this has changed. The above regex started to also match the second type of URL
 and started to handle them incorrectly...
 
 My solution was to anchor the regex to the beginning of the path using a <hl>^</hl>:
@@ -672,7 +672,7 @@ In a nutshell: a performance increase of (285-192)/285 = 32%.
 
 <h2>Cookies</h2>
 
-Unfortunatelly I found out this only 2 days after deployment of the Dancer 2 tree:
+Unfortunately I found out this only 2 days after deployment of the Dancer 2 tree:
 
 When creating a session, by default both Dancer 1 and Dancer 2, set the cookie to be used for the exact hostname being served.
 This means when someone visits <a href="http://br.perlmaven.com/">br.perlmaven.com</a> that person will get a cookie for br.perlmaven.com
@@ -696,6 +696,6 @@ engines:
       cookie_domain: ".perlmaven.com"
 </code>
 
-(YAML, becasue the PerlMaven site still uses YAML-file based sessions)
+(YAML, because the Perlmaven site still uses YAML-file based sessions)
 
 

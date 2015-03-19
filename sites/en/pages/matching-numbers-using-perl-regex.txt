@@ -258,7 +258,7 @@ if (my ($used, $total) = $str =~ /^Usage:\s*
 </code>
 
 In this snippet of code we use the feature of <hl>=~</hl> that in <a href="/scalar-and-list-context-in-perl">LIST context</a>,
-if there are capturing parnthese, it will return the list created from the strings that were captured by these parantheses.
+if there are capturing parentheses, it will return the list created from the strings that were captured by these parentheses.
 So instead of having the values in <hl>$1</hl> and in <hl>$2</hl> they arrive directly to <hl>$used</hl> and <hl>$total</hl>.
 
 <h2>Named captures</h2>

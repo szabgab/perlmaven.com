@@ -91,7 +91,7 @@ f(2);
 Here too, you get the same compile-time warning (once) for the <hl>$x</hl> variable.
 Even though the variable <hl>$z</hl> will 'spring to existence' repeatedly,
 once for every call of the function.
-This is ok. The <hl>$z</hl> variable does not generate the warning:
+This is OK. The <hl>$z</hl> variable does not generate the warning:
 Perl can create the same variable twice, it is only you who are not supposed to do it.
 At least not within the same scope.
 

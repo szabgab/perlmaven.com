@@ -9,7 +9,7 @@
 =abstract start
 
 The beginning of a series of articles on how to use
-<a href="http://mongodb.org/">MongoDB</a>, the open-source NoSQL datyabase
+<a href="http://mongodb.org/">MongoDB</a>, the open-source NoSQL database
 with the Perl Programming language.
 
 =abstract end

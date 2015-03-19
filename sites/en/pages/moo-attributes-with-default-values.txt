@@ -176,7 +176,7 @@ Even if at first it does not look like a Perl function call.
 So how can we delay the call to <hl>time()</hl>? Moo allows us to pass a code reference
 to the <hl>default</hl> key, and it will call that code reference when the default is actually needed.
 
-so if we wrap the call to <hl>time</hl> in an anonymous function, we should be ok.
+so if we wrap the call to <hl>time</hl> in an anonymous function, we should be OK.
 Let's change the Person.pm file to have this:
 
 <code lang="perl">

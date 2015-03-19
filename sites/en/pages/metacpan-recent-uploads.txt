@@ -10,7 +10,7 @@
 
 <a href="https://metacpan.org/">MetaCPAN</a> has a couple of links at the top. One of them shows the 
 <a href="https://metacpan.org/recent">recently uploaded distributions</a>. You can use a filter to see
-only thos that were uploaded for the first time.
+only those that were uploaded for the first time.
 
 This is a great way to see what's is totally new on CPAN?
 

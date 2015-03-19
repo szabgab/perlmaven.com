@@ -68,7 +68,7 @@ Show notes:
 
   <div class="speaker-section speaker-jt">
     Jeffrey: So Pinto has been my baby for the last year almost 2 years
-    It started out as a project for a client actually. Ginentech has hired me to build them a custom CPAN repository.
+    It started out as a project for a client actually. Genetech has hired me to build them a custom CPAN repository.
     This is something I have done at 3-4 other companies. Basically any shop that uses Perl modules
     wrestles with the problem of churn in the public CPAN. There is always new modules coming and going
     and if you build up your application by installing modules from the public CPAN you never know what are you going to
@@ -301,7 +301,7 @@ Show notes:
 
   <div class="speaker-section speaker-gs">
     14.57
-    Gabor: Ok, great. I wanted to ask you because YAPC is combing, and we actually met for the
+    Gabor: OK, great. I wanted to ask you because YAPC is combing, and we actually met for the
     first time last year at YAPC North America. Are you planning to go?
   </div>
 
