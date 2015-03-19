@@ -22,6 +22,10 @@ There are many tools parsing them, extracting information and converting them to
 
 <a href="https://metacpan.org/pod/Pod::Weaver">Pod::Weaver</a> weave together a Pod document from an outline.
 
+<a href="https://metacpan.org/pod/Pod::Perldoc">Pod::Perldoc</a> Look up Perl documentation in Pod format. (This is what the <hl>perldoc</hl> command uses.)
+
+<a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a> convert pod files to HTML (part of Perl core. provides the <hl>pod2html</hl> command).
+
 <h2>Other</h2>
 
 (not categorized yet)
@@ -81,7 +85,6 @@ It is based on Pod::Parser which itself is considered legacy code.
 
 <a href="https://metacpan.org/pod/Pod::Site">Pod::Site</a> Build browsable HTML documentation for your app.
 
-<a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a> convert pod files to HTML (part of Perl core).
 
 <a href="https://metacpan.org/pod/Pod::L10N">Pod::L10N</a> Pod with L10N.
 
