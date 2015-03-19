@@ -20,6 +20,8 @@ There are many tools parsing them, extracting information and converting them to
 
 <a href="https://metacpan.org/pod/Test::Pod">Test::Pod</a> check for POD errors in files.
 
+<a href="https://metacpan.org/pod/Pod::Weaver">Pod::Weaver</a> weave together a Pod document from an outline.
+
 <h2>Other</h2>
 
 (not categorized yet)
