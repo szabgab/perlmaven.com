@@ -68,7 +68,7 @@ Show notes:
 
   <div class="speaker-section speaker-jt">
     Jeffrey: So Pinto has been my baby for the last year almost 2 years
-    It started out as a project for a client actually. Genetech has hired me to build them a custom CPAN repository.
+    It started out as a project for a client actually. Genentech has hired me to build them a custom CPAN repository.
     This is something I have done at 3-4 other companies. Basically any shop that uses Perl modules
     wrestles with the problem of churn in the public CPAN. There is always new modules coming and going
     and if you build up your application by installing modules from the public CPAN you never know what are you going to
@@ -76,7 +76,7 @@ Show notes:
     the modules you want in the specific versions you want. And there are existing tools for this.
     This is not a new idea, or anything. But I didn't really like any of them. They were all kind of hard to work with.
     Each one of these CPAN that I have built seemed to be very customized and not very general purpose.
-    So Genetech hired me and they gave me the opportunity to start from scratch. So Pinto is the result of that work.
+    So Genentech hired me and they gave me the opportunity to start from scratch. So Pinto is the result of that work.
   </div>
 
   <div class="speaker-section speaker-gs">

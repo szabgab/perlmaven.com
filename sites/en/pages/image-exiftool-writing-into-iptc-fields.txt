@@ -54,7 +54,7 @@ at least for all the problems. Thanks for this tool! I found a little problem wi
 although it is probably a problem of the camera manufacturer. -s -s -s -Make produces spaces
 at the end of "Caplio R1". Could you change it, that the output of -s -s -s has no blanks
 at the beginning and and the end?
-BTW should -sss work too, it didn't_t work. In the meantime my bash-script uses
+BTW should -sss work too, it didn't work. In the meantime my bash-script uses
 .. | sed 's/^ *//' | sed 's/ *$//' If you would like to have a picture for testing, 
 please tell me where to send it.
 
