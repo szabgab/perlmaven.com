@@ -102,4 +102,8 @@ based on Pod::Parser.
 
 <a href="https://metacpan.org/pod/Pod::HTML">Pod::HTML</a> Translate POD into HTML file (from 1996)
 
+<h2>POD Best Practices</h2>
+
+Read <a href="https://metacpan.org/pod/perlpod">perlpod</a> and <a href="https://metacpan.org/pod/perlpodstyle">perlpodstyle</a>.
+
 
