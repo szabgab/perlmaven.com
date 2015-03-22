@@ -1,0 +1,16 @@
+=title No such file
+=timestamp 2015-03-22T11:01:58
+=indexes  $!
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+No such file
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/no-such-file" />
