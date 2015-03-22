@@ -3,7 +3,7 @@
 =indexes time, Test::MockTime
 =tags screencast
 =status show
-=books testing_book
+=books testing
 =author szabgab
 =comments_disqus_enable 1
 
