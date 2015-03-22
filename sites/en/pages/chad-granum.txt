@@ -4,6 +4,7 @@
 =tags interview, tv
 =mp3 /media/audio/chad-granum.mp3, 30343200, 31:06
 =status show
+=books testing
 =show_newsletter_form 0
 =show_date 0
 =author 0

@@ -2,6 +2,7 @@
 =timestamp 2013-12-17T07:30:01
 =indexes TAP, Test::Harness, TAP::Formatter::HTML, Smolder
 =status show
+=books testing
 =author szabgab
 =comments_disqus_enable 1
 

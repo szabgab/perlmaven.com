@@ -2,6 +2,7 @@
 =timestamp 2012-07-03T10:10:10
 =indexes warnings, __WARN__, Test::Warn
 =status show
+=books testing
 =author szabgab
 =comments_disqus_enable 1
 

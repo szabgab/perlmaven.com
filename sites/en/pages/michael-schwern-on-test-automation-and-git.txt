@@ -4,6 +4,7 @@
 =tags interview, tv
 =mp3 /media/audio/michael-schwern.mp3, 23810208, 24:36
 =status show
+=books testing
 =show_newsletter_form 0
 =show_date 0
 =author 0
