@@ -14,7 +14,7 @@ Let's say after successful login, the system needs to let us use it for 60 secon
 it has to time out and prompt us for password. If we want to make sure it really prompts us for password
 we have to wait 60 seconds every time we run our tests. What if the requirement is to time out after 1 year?
 
-Clearly we cannot let our test script to wait for that. Even 60 secons is too much.
+Clearly we cannot let our test script to wait for that. Even 60 seconds is too much.
 
 Instead of that we can ask perl to lie about the time. In other words, we can mock time. 
 
@@ -22,7 +22,7 @@ Instead of that we can ask perl to lie about the time. In other words, we can mo
 
 <screencast file="/media/videos/testing-session-mocking-time" />
 
-This is <b>MySession.pm</b>. Probaby not the best implementation of a session object, but it will work for our purposes.
+This is <b>MySession.pm</b>. Probably not the best implementation of a session object, but it will work for our purposes.
 
 <code lang="perl">
 package MySession;
@@ -59,7 +59,7 @@ and providing credentials in the form of username/password. In this code we don'
 using the <hl>$username</hl> as the key and the current <hl>time</hl> as the value.
 
 Later, on every access our system will call the <hl>logged_in</hl> method with the username. It will check if the given user has an entry in the <hl>%SESSION</hl>
-hash, and if the time passed sinced then is less than the <hl>$TIMEOUT</hl> period.
+hash, and if the time passed since then is less than the <hl>$TIMEOUT</hl> period.
 
 When we use this should happen:
 
