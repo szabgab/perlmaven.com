@@ -25,37 +25,7 @@ http://creativecommons.org/licenses/by-nc-nd/3.0/
 
 FORMAT
 =======
-The format has evolved from POD, HTML and Docbook. It is now a mess. I know. I'll have to clean that up.
-
-Nevertheless the overview:
-
-In the header there are
-
-    =key value
-
-pairs of meta information. Currently the order is important, but I (Gabor) can check it and
-rearrange it before publication. So don't worry about the order.
-
-The text between
-
-    =abstract start
-
-    =abstract end
-
-is displayed on the front pages and is included in the RSS/Atom feed.
-
-
-`<h2>` is used for internal titles.
-
-`<hl></hl>` stands for highlight and usually code-snippets inside the text are marked with these.
-
-`<b></b>` is used to mark other important pieces. 
-
-Code snippets are wrapped in 
-
-    <code lang="perl">
-    </code>
-
+See  https://github.com/szabgab/Perl-Maven/blob/master/docs/FORMAT.md
 
 
 Add an 128x128 image of you to the sites/en/img/ folder and an entry for yourself
