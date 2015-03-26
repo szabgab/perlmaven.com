@@ -51,7 +51,7 @@ Website: http://perlmaven.com/
 Callbak URL:
 </code>
 
-The I had to read the <b>Developer Rules of the Road</b> at the bottom of that page, click on the checkbox
+Then I had to read the <b>Developer Rules of the Road</b> at the bottom of that page, click on the checkbox
 and press "Create your Twitter application".
 
 Apparently the "Name" must be unique across all the applications in Twitter.
@@ -87,7 +87,7 @@ api_secret=
 </code>
 
 In addition to the API key/secret pair, we will also need an <b>Access Token</b>. To obtain an access token scroll down
-the web page where you found the API key/secret pair. you will see there no access token created yet:
+the web page where you found the API key/secret pair. You will see there is no access token created yet:
 
 <img src="/img/twitter_no_access_token.png" alt="No access token" />
 
