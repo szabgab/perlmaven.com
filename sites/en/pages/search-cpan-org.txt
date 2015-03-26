@@ -156,7 +156,7 @@ explanation of each step, then subscribe to the <a href="/pro">Perl Maven Pro</a
 The already existing articles and screencasts are going to be listed here:
 
 <ul>
-  <li><a href="/pro/create-skeleton-for-sco">Getting started - Create skeleton for the SCO clone application</a></li>
+  <li><a href="/create-skeleton-for-sco">Getting started - Create skeleton for the SCO clone application</a></li>
   <li><a href="/pro/add-some-acceptance-tests">Add some acceptance tests using search.cpan.org</a></li>
   <li><a href="/pro/rename-the-sco-project">Rename the SCO cloning project</a></li>
   <li><a href="/pro/create-skeleton-psgi-application">Create skeleton PSGI application for the SCO project</a></li>
