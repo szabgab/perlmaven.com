@@ -1,0 +1,17 @@
+
+session: "YAML"
+logger: console
+log: core
+
+plugins:
+    Auth::Extensible:
+        realms:
+            config:
+                provider: Config
+                users:
+                    - user: 'foo'
+                      pass: '{SSHA}16SFBItoknJZZZ+iVeSVVxv/Xd+arT5/'
+                      name: 'George Foo'
+                      roles:
+                        - Marketing
+

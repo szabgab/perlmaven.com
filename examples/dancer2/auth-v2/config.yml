@@ -1,0 +1,17 @@
+
+session: simple
+logger: console
+log: core
+
+plugins:
+    Auth::Extensible:
+        realms:
+            config:
+                provider: Config
+                users:
+                    - user: 'foo'
+                      pass: 'secret_code'
+                      name: 'George Foo'
+                      roles:
+                        - Marketing
+
