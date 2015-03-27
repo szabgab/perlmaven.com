@@ -1,7 +1,7 @@
 =title qw - quote word
 =timestamp 2015-03-27T16:30:01
 =indexes qw
-=status draft
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
