@@ -40,7 +40,7 @@ $ count foo
 
 The front-end can be command line, or web, or maybe some other GUI.
 
-The back-end is some kind of a "database".  It can be a plain text file, some data serialization format, a relattional database, a NoSQL database
+The back-end is some kind of a "database".  It can be a plain text file, some data serialization format, a relational database, a NoSQL database
 and who knows what else.
 
 This is going to be a long project, but it might help understand various techniques for data serialization.
