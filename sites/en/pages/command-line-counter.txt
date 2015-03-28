@@ -39,7 +39,7 @@ Hence we need to do two things.
   <li>When we declare <hl>$counter</hl> using the <hl>my</hl> keyword we also initialize it to the dafult value of 0.
      This way, even if the counter.txt file does not exist yet we can pretend that the previous value 0.</li>
   <li>Then, before we attempt to open the 'counter.txt' file for reading, we check if it already exists using the <hl>-e</hl> operator.</li>
-<ol>
+</ol>
 
 Because at the first run the file does not exist, let's skip this code now and let's go straigh to the part after the closing <hl>}</hl>.
 
@@ -80,7 +80,7 @@ If the <hl>open</hl> was successful, the newly declared variable <hl>$hl</hl> wi
 <h2>No need to initialize the counter</h2>
 
 
-Actually when we declared the <hl>$counter</h> variable is was not really necessary to also asign 0 to it.
+Actually when we declared the <hl>$counter</hl> variable is was not really necessary to also asign 0 to it.
 It looks better for people coming from other programming languages, but in Perl even if we left it
 <a href="/undef-and-defined-in-perl">undef</a> the script would work perfectly well.
 
