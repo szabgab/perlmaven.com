@@ -85,8 +85,8 @@ It looks better for people coming from other programming languages, but in Perl 
 <a href="/undef-and-defined-in-perl">undef</a> the script would work perfectly well.
 
 That's because when usng the ++ <a href="/numerical-operators">auto increment</a> opertor on a variable that
-has <hl>undef</hl> in it, that <hl>undef</hl> will act as if it was actually 0. It is probbaly the
-simples form of <a href="/autovivification">autovivification</a> in Perl. So we could have written
+has <hl>undef</hl> in it, that <hl>undef</hl> will act as if it was actually 0. It is probably the
+simplest form of <a href="/autovivification">autovivification</a> in Perl. So we could have written
 
 <code>
 my $counter;
