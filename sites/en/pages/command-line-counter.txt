@@ -1,0 +1,94 @@
+=title Command line counter with plain text file back-end
+=timestamp 2015-03-28T15:41:02
+=indexes ++, open
+=status show
+=books counter
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+As part of the <a href="/counter">big counter example</a> project, this example runs on the command line and uses a plain text file as back-end 'database'.
+It is probably most basic version of all the <a href="/counter">counter examples</a>, that provides a single counter.
+
+=abstract end
+
+<h2>Front-end</h2>
+
+The front end is the command line. We just run the script as <hl>perl counter.pl</hl>.
+
+<h2>Back-end</h2>
+
+In this example the "database" is going to be a simple file called 'counter.txt' with only a number in it. The most recent value of the counter.
+
+<h2>Code</h2>
+
+<include file="examples/counter.pl">
+
+After the initial statements to enable <a href="/always-use-strict-and-use-warnings">strict and warnings</a>,
+we have declared a variable called <hl>$file</hl> that holds the
+name of the 'database' file we are going to use to store the latest value of the counter.
+
+During the execution of the script we will hold the value of the counter in the variable we cunningly called <hl>$counter</hl>.
+
+Next we should be reading in the previous value of the counter, but before we run the script for the first file, the counter file does not exist.
+Hence we need to do two things.
+
+<ol>
+  <li>When we declare <hl>$counter</hl> using the <hl>my</hl> keyword we also initialize it to the dafult value of 0.
+     This way, even if the counter.txt file does not exist yet we can pretend that the previous value 0.</li>
+  <li>Then, before we attempt to open the 'counter.txt' file for reading, we check if it already exists using the <hl>-e</hl> operator.</li>
+<ol>
+
+Because at the first run the file does not exist, let's skip this code now and let's go straigh to the part after the closing <hl>}</hl>.
+
+<code lang="perl">
+$count++;
+print "$count\n";
+
+open my $fh, '>', $file or die "Could not open '$file' for writing. $!";
+print $fh $count;
+close $fh;
+</code>
+
+Using <hl>++</hl> the auto-increment opeartor of Perl, we increment the value of <hl>$count</hl> (which is 0 during the first execution).
+Then we print it out to the screen.
+
+In the 3 lines after that, we open the 'counter.txt' file for <a href="/writing-to-files-with-perl">writing</a>. In the first run this will create the file,
+in subsequent runs this will clean up the file to have no content. Then we use the <hl>print</hl> statement to write the new content of <hl>$count</hl> into the now empty file.
+Finally, just to be nice, we close the filehandle using the <hl>close</hl> function.
+
+On the second an later executions of the script, the 'counter.txt' file will already exist, thus the <hl>if (-e $file)</hl> will return ture,
+and we enter the block:
+
+<code lang="perl">
+if (-e $file) {
+    open my $fh, '<', $file or die "Could not open '$file' for reading. $!";
+    $count = <$fh>;
+    close $fh;
+}
+
+</code>
+
+In this block we try to <a href="/open-and-read-from-files">open the file for reading</a> using the <hl>open</hl> function
+and <a href="/die">throw an exception</a> by calling the <hl>die</hl> function
+if we still cannot open the file. This should happen only in the most extreme situation and therefore it is ok to take drastical steps.
+If the <hl>open</hl> was successful, the newly declared variable <hl>$hl</hl> will have the filehandle in it. We can then use the
+<hl>&lt;$fh&gt;</hl> operator to read one line (the only one is has) from the file and finally we <hl>close</hl> the file
+
+<h2>No need to initialize the counter</h2>
+
+
+Actually when we declared the <hl>$counter</h> variable is was not really necessary to also asign 0 to it.
+It looks better for people coming from other programming languages, but in Perl even if we left it
+<a href="/undef-and-defined-in-perl">undef</a> the script would work perfectly well.
+
+That's because when usng the ++ <a href="/numerical-operators">auto increment</a> opertor on a variable that
+has <hl>undef</hl> in it, that <hl>undef</hl> will act as if it was actually 0. It is probbaly the
+simples form of <a href="/autovivification">autovivification</a> in Perl. So we could have written
+
+<code>
+my $counter;
+</code>
+
