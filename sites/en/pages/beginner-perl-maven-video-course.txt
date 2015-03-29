@@ -70,7 +70,7 @@ These are earlier recordings and they are a bit noisy, but the content is still 
   <li><a href="/beginner-perl-maven-while-loop">While loop</a></li>
   <li><a href="/beginner-perl-maven-read-file-line-by-line">Read file line by line</a></li>
   <li><a href="/beginner-perl-maven-write-to-file">Write to file</a></li>
-  <li><a href="/pro/beginner-perl/sum-numbers-in-a-file">Sum numbers in a file</a></li>
+  <li><a href="/beginner-perl-maven-sum-numbers-in-a-file">Sum numbers in a file</a></li>
   <li><a href="/pro/beginner-perl/debug-sum-numbers">Debug the sum numbers script</a></li>
   <li><a href="/pro/beginner-perl/analyze-apache-log-file">Analyze Apache log file</a></li>
   <li><a href="/pro/beginner-perl/old-style-open">Old Style Open</a></li>

@@ -1,0 +1,16 @@
+=title Sum numbers in a file
+=timestamp 2015-03-28T17:03:11
+=indexes sum
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Sum numbers in a file
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/sum-numbers-in-a-file" />
