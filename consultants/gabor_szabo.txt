@@ -19,6 +19,6 @@ He is the original author of <a href="http://padre.perlide.org/">Padre, the Perl
 <p>
 Gabor received the White Camel award in 2008 for his contribution to the Perl community.
 <p>
-Gabor can provide Perl training, and contract developmen work.
+Gabor can provide Perl training, and contract development work.
 He is especially good at setting up testing environments, refactoring old code base, building web applications.
 
