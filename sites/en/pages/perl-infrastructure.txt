@@ -45,6 +45,24 @@ h2>Strawberry Perl</h2>
 <a href="http://strawberryperl.com/">Strawberryperl.com</a> is just a few static pages.
 <a href="https://github.com/StrawberryPerl/strawberryperl.com">GitHub repository</a>
 
+The Webserver:
+
+<ul>
+  <li>DreamHost webhosting (some pricing plan with unlimited storage)</li>
+  <li>Adam Kennedy pays for the hosting + domain</li>
+</ul>
+
+There is also build server and CPAN smoker:
+
+<ul>
+  <li>VPS from www.wedos.com (Czech Republic)</li>
+  <li>Windows 2012 R2, 80GB HDD/SSD, 16GB RAM, 4 CPUs</li>
+  <li>the cost was approx. 700 USD/year</li>
+  <li>paid by Enlightened Perl Organisation</li>
+</ul>
+
+A couple of <a href="https://github.com/StrawberryPerl">GitHub repos</a>.
+
 <h2>Perl Dancer</h2>
 
 <a href="http://perldancer.org/">Dancer</a>, the web framework. The source code of its own web site is
