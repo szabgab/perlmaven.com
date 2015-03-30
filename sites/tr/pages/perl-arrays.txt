@@ -92,7 +92,7 @@ düzgün skalar bir değişken gibi davranış gösterir.
 
 <h2>Diziyi indeksleme</h2>
 
-Dizinin indeksi 0'dan başlar. Son index aşağıdaki değişkende tutulmaktadır
+Dizinin indeksi 0'dan başlar. Son index şu değişkende tutulmaktadır
 <hl>$#dizinin_adı</hl>. Bu nedenle
 
 <code lang="perl">
@@ -145,7 +145,6 @@ foreach my $i (0 .. $#names) {
 
 <h2>push kullanımı</h2>
 
-<hl>push</hl> appends a new value to the end of the array, extending it:
 <hl>push</hl> dizinin sonuna yeni bir eleman ekler, diziyi büyütür:
 
 <code lang="perl">
