@@ -123,6 +123,10 @@ Source code on <a href="https://github.com/jmacdotorg/plerd">GitHub</a>
 
 <h2>Sites with no recent changes in the source code</h2>
 
+<a href="http://strawberryperl.com/">Strawberryperl.com</a> is just a few static pages.
+<a href="https://github.com/StrawberryPerl/strawberryperl.com">GitHub repository</a>
+
+
 <a href="http://spoilerific.jmac.org/">Spoilerific!</a> allows you to Share ROT13-encoded spoilers over Twitter! 
 Written by <a href="http://jmac.org/">Jason McIntosh</a> using <a href="/catalyst">Catalyst</a>.
 Source code on <a href="https://github.com/jmacdotorg/Spoilerific">GitHub</a>
