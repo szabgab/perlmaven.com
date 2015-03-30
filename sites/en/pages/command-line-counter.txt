@@ -59,7 +59,7 @@ In the 3 lines after that, we open the 'counter.txt' file for <a href="/writing-
 in subsequent runs this will clean up the file to have no content. Then we use the <hl>print</hl> statement to write the new content of <hl>$count</hl> into the now empty file.
 Finally, just to be nice, we close the file handle using the <hl>close</hl> function.
 
-On the second an later executions of the script, the 'counter.txt' file will already exist, thus the <hl>if (-e $file)</hl> will return true,
+On the second and later executions of the script, the 'counter.txt' file will already exist, thus the <hl>if (-e $file)</hl> will return true,
 and we enter the block:
 
 <code lang="perl">
@@ -80,7 +80,7 @@ If the <hl>open</hl> was successful, the newly declared variable <hl>$hl</hl> wi
 <h2>No need to initialize the counter</h2>
 
 
-Actually when we declared the <hl>$counter</hl> variable is was not really necessary to also assign 0 to it.
+Actually when we declared the <hl>$counter</hl> variable it was not really necessary to also assign 0 to it.
 It looks better for people coming from other programming languages, but in Perl even if we left it
 <a href="/undef-and-defined-in-perl">undef</a> the script would work perfectly well.
 
