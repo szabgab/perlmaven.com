@@ -36,10 +36,12 @@ In particular it should contain information about the following aspects:
 
 <h2>Sites</h2>
 
-<a href="http://perlmaven.com/">Perl Maven</a>. The site (along with a few smaller sites of <a href="http://szabgab.com/">Gabor Szabo</a>)
-is hosted on  <a href="/linode">Linode</a> instance with 4Gb memory 4 CPUs paid by Gabor.
-It is based on <a href="/dancer">Dancer 2</a> its source code is available on <a href="https://github.com/szabgab/Perl-Maven">GitHub</a>.
-The content is also avilable on <a href="https://github.com/szabgab/perlmaven.com">GitHub</a>
+<h2>PerlMonks</h2>
+
+<a href="http://www.perlmonks.org/">PerlMonks</a> is based on a version of Everything. According to  <a href="http://www.perlmonks.org/?node_id=955375">this node</a>
+a different version of Everything (Everything2) is now open source, but there are some PerlMonks specific things that are not open source.
+
+h2>Strawberry Perl</h2>
 
 <a href="http://strawberryperl.com/">Strawberryperl.com</a> is just a few static pages.
 <a href="https://github.com/StrawberryPerl/strawberryperl.com">GitHub repository</a>
@@ -56,8 +58,15 @@ repository.
 
 Both sites run on the server of <a href="http://www.preshweb.co.uk/">David Precious</a>.
 
+<h2>Perl Maven</h2>
 
-<hr>
+<a href="http://perlmaven.com/">Perl Maven</a>. The site (along with a few smaller sites of <a href="http://szabgab.com/">Gabor Szabo</a>)
+is hosted on  <a href="/linode">Linode</a> instance with 4Gb memory 4 CPUs paid by Gabor.
+It is based on <a href="/dancer">Dancer 2</a> its source code is available on <a href="https://github.com/szabgab/Perl-Maven">GitHub</a>.
+The content is also avilable on <a href="https://github.com/szabgab/perlmaven.com">GitHub</a>
+
+
+<h2>perl.org sites</h2>
 
 
 Under the maintenence of Robert and Ask as liseted on the
@@ -88,35 +97,40 @@ Under the maintenence of Robert and Ask as liseted on the
 </ul>
 
 <ul>
-cpan.org
-search.cpan.org
-ftp.cpan.org
+  <li><a href="http://cpan.org/">cpan.org</a></li>
+  <li><a href="http://search.cpan.org/">search.cpan.org</a></li>
+  <li><a href="http://ftp.cpan.org/">ftp.cpan.org</a></li>
+</ul>
 
-bitcard.org perl.org authentication service
 
-www.perl.com
+<a href="http://perl6.org/">perl6.org</a>
+<a href="http://perl-tutorial.org/">perl-tutorial.org</a>
+<a href="http://perlnews.org/">perlnews.org</a>
+<a href="http://"></a>
+
+
+<a href="http://bitcard.org/">bitcard.org</a> perl.org authentication service
+
+<a href="http://www.perl.com/">www.perl.com</a>
 
 <a href="http://pm.org/">pm.org</a>
 https://github.com/perlorg/www.pm.org
 
 
-
 <h2>blogs.perl.org</h2>
 
 
-<h2>PerlMonks</h2>
+<h2>CPAN Testers</h2>
 
-<a href="http://www.perlmonks.org/">
-
-
-http://cpantesters.org/
+<a href="http://cpantesters.org/">cpantesters.org</a>
 
 
-mojolicio.us
-catalystframework.org
+<h2>Mojolicious</h2>
 
-perl6.org
-perl-tutorial.org
-perlnews.org
+<a href="http:/mojolicio.us/">mojolicio.us</a>
+
+<h2>Catalyst</h2>
+
+<a href=""http://catalystframework.org/">catalystframework.org</a>
 
 
