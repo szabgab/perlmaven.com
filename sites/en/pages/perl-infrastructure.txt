@@ -1,0 +1,122 @@
+=title Perl Infrastructure
+=timestamp 2015-02-01T07:30:01
+=indexes Web sites
+=status draft
+=books beginner_book
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Information about some of the machines serving Perl developers around the world.
+
+=abstract end
+
+<h2>What kind of information</h2>
+
+This page is (going to be) a collection of information about the hardware and software serving people who are using Perl.
+
+In particular it should contain information about the following aspects:
+
+<ul>
+  <li>Hardware - what kind of machines are used to provide the service. (VPS-es would be included here)</li>
+  <li>Who maintains them? Who and how should be contacted in case the service is malfunctiononing?</li>
+  <li>What software does the machine run to provide the service?</li>
+  <li>Is the source code of the service available to the public somewhere? (e.g. GitHub repository)</li>
+  <li>Who pays the bills? Is there a sponsor? Someone pays from her/his own pocket?</li>
+</ul>
+
+<h2>GitHub repositories</h2>
+
+<ul>
+  <li><a href="https://github.com/tpf">tpf</a></li>
+  <li><a href="https://github.com/perlorg">perlorg</a></li>
+</ul>
+
+<h2>Sites</h2>
+
+<a href="http://perlmaven.com/">Perl Maven</a>. The site (along with a few smaller sites of <a href="http://szabgab.com/">Gabor Szabo</a>)
+is hosted on  <a href="/linode">Linode</a> instance with 4Gb memory 4 CPUs paid by Gabor.
+It is based on <a href="/dancer">Dancer 2</a> its source code is available on <a href="https://github.com/szabgab/Perl-Maven">GitHub</a>.
+The content is also avilable on <a href="https://github.com/szabgab/perlmaven.com">GitHub</a>
+
+<a href="http://strawberryperl.com/">Strawberryperl.com</a> is just a few static pages.
+<a href="https://github.com/StrawberryPerl/strawberryperl.com">GitHub repository</a>
+
+<h2>Perl Dancer</h2>
+
+<a href="http://perldancer.org/">Dancer</a>, the web framework. The source code of its own web site is
+in the <a href="https://github.com/PerlDancer/perldancer-website">perldancer-website</a>
+repository.
+
+<a href="http://advent.perldancer.org/">Perl Dancer Advent Calendar</a> is itslef based on <a href="/dancer">Dancer</a>.
+Its source code is in the <a href="https://github.com/PerlDancer/advent-calendar">advent-calendar</a>
+repository.
+
+Both sites run on the server of <a href="http://www.preshweb.co.uk/">David Precious</a>.
+
+
+<hr>
+
+
+Under the maintenence of Robert and Ask as liseted on the
+<a href="http://noc.perl.org/">noc.perl.org</a>:
+
+<ul>
+  <li><a href="http://www.perl.org/">www.perl.org</a></li>
+  <li><a href="http://dev.perl.org/">dev.perl.org</a></li>
+  <li><a href="http://jobs.perl.org">jobs.perl.org</a></li>
+  <li><a href="http://www.nntp.perl.org/">www.nntp.perl.org</a></li>   
+  <li><a href="http://nntp.perl.org/">nntp.perl.org</a></li>
+  <li><a href="http://rt.perl.org/">rt.perl.org</a></li>
+  <li><a href="http://svn.perl.org/>svn.perl.org</a> (not in use any more)</li>
+  <li><a href="http://dbi.perl.org/">dbi.perl.org</a></li>
+  <li><a href="http://moose.perl.org/">moose.perl.org</a></li>
+  <li><a href="http://learn.perl.org/">learn.perl.org</a></li>
+  <li><a href="http://lists.perl.org/">lists.perl.org</a></li>
+  <li><a href="http://use.perl.org/">use.perl.org</a> old blog server of the Perl community. It is now static.</li>
+  <li><a href="http://history.perl.org/">history.perl.org</a></li>
+  <li><a href="http://debugger.perl.org/">debugger.perl.org</a></li>
+</ul>
+
+<ul>
+  <li><a href="http://www.perlfoundation.org/">www.perlfoundation.org</a></li>
+  <li><a href="http://news.perlfoundation.org/">news.perlfoundation.org</a></li>
+  <li><a href="http://perl-foundation.org/">perl-foundation.org</a> (redirects to perlfoundation.org</li>
+  <li><a href="http://news.perl-foundation.org/">news.perl-foundation.org</a> (redirects to news.perlfoundation.org</a>
+</ul>
+
+<ul>
+cpan.org
+search.cpan.org
+ftp.cpan.org
+
+bitcard.org perl.org authentication service
+
+www.perl.com
+
+<a href="http://pm.org/">pm.org</a>
+https://github.com/perlorg/www.pm.org
+
+
+
+<h2>blogs.perl.org</h2>
+
+
+<h2>PerlMonks</h2>
+
+<a href="http://www.perlmonks.org/">
+
+
+http://cpantesters.org/
+
+
+mojolicio.us
+catalystframework.org
+
+perl6.org
+perl-tutorial.org
+perlnews.org
+
+
