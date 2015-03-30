@@ -1,4 +1,4 @@
-=title Hashes in Perl
+=title Perl de Hashler
 =timestamp 2015-03-30T23:12:06
 =indexes hash, keys, value, associative, %, =>, fat arrow, fat comma
 =status show
