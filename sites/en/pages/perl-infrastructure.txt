@@ -40,6 +40,9 @@ and <a href="https://github.com/CPAN-API/cpan-api/">cpan-api</a> is the back-end
 <a href="http://www.perlmonks.org/">PerlMonks</a> is based on a version of Everything. According to  <a href="http://www.perlmonks.org/?node_id=955375">this node</a>
 a different version of Everything (Everything2) is now open source, but there are some PerlMonks specific things that are not open source.
 
+The website is hosted via three webservers in DNS rotation, with a MySQL backend. The webservers are provided by pair.com.
+The domains are provided by <a href="http://perlfoundation.org/">TPF</a> and managed by <a href="http://noc.perl.org/">noc.perl.org</a>.
+
 <h2>Strawberry Perl</h2>
 
 <a href="http://strawberryperl.com/">Strawberryperl.com</a> is just a few static pages.
