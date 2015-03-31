@@ -69,7 +69,7 @@ Functions are rarely used in Object Oriented Programming.
 <h2>Where is this relevant?</h2>
 
 To the untrained eyes it might seem that Perl has a number of different Object Orientation system.
-such as Moose, <a href="/moo">Moo</a>, blessed references and a few more.
+such as <a href="/moose">Moose</a>, <a href="/moo">Moo</a>, blessed references and a few more.
 In fact they are all the same underneath and thus the above applies to all of them.
 
 
