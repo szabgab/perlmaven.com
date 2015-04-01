@@ -43,6 +43,8 @@ a different version of Everything (Everything2) is now open source, but there ar
 The website is hosted via three webservers in DNS rotation, with a MySQL backend. The webservers are provided by pair.com.
 The domains are provided by <a href="http://perlfoundation.org/">TPF</a> and managed by <a href="http://noc.perl.org/">noc.perl.org</a>.
 
+Emergency contact: perlmonks.org at gmail.com
+
 <h2>Strawberry Perl</h2>
 
 <a href="http://strawberryperl.com/">Strawberryperl.com</a> is just a few static pages.
@@ -114,6 +116,13 @@ Under the maintenence of Robert and Ask as liseted on the
   <li><a href="http://ftp.cpan.org/">ftp.cpan.org</a></li>
 </ul>
 
+<a href="http://bitcard.org/">bitcard.org</a> perl.org authentication service
+
+<a href="http://www.perl.com/">www.perl.com</a>
+
+<a href="http://pm.org/">pm.org</a>
+https://github.com/perlorg/www.pm.org
+
 
 <h2>Perl 6</h2>
 
@@ -134,17 +143,19 @@ Source code can be found <a href="http://bestpractical.com/rt/git.html">here</a>
 <a href="http://irclog.perlgeek.de/">irclog.perlgeek.de</a> logs IRC channels. It uses <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>. Source code
 is <a href="https://github.com/moritz/ilbot/">here</a>.
 
+<h2>Perl Tutorial</h2>
 
 <a href="http://perl-tutorial.org/">perl-tutorial.org</a>
+
+Maintained by <a href="http://cat.eatsmou.se/">Christian Walde</a> (<a href="https://metacpan.org/author/MITHALDU">Mithaldu</a>)
+and <a href="https://github.com/perlpunk">Tina Müller (Tinita)</a>.
+
+<h2>Perl News</h2>
+
 <a href="http://perlnews.org/">perlnews.org</a>
 
+Maintained by <a href="http://leo.cuckoo.org/">Leo Lapworth (Ranguard)</a>
 
-<a href="http://bitcard.org/">bitcard.org</a> perl.org authentication service
-
-<a href="http://www.perl.com/">www.perl.com</a>
-
-<a href="http://pm.org/">pm.org</a>
-https://github.com/perlorg/www.pm.org
 
 <h2>blogs.perl.org</h2>
 
@@ -153,7 +164,6 @@ Professional Edition of <a href="http://movabletype.com/">Movable Type</a> which
 Nevertheless the templates of the site are available <a href="https://github.com/blogs-perl-org/blogs.perl.org">here</a>.
 There is also a version of Movable Type on <a href="https://github.com/movabletype/movabletype">GitHub</a>, but it is unclear to
 me what is the license of that, and what is the relation of that to the one used on blogs.perl.org.
-
 
 
 <h2>CPAN Testers</h2>
