@@ -33,9 +33,15 @@ A function will never get the object. (Well, unless you manually pass it as a pa
 Therefore a method normally acts on an instance (object), and sometimes it acts on the whole class (and then we call it class-method).
 A function on the other hand, <b>never</b> acts on an object. Though it might act on the class.
 
-<h2>Examples</h2>
+<h2>Examples - an object-method</h2>
 
 A regular or object-method:
+
+Methods always get the current object as the first parameter, therefore we need a way to assign that to a variable that is easily recognizable.
+That's what <hl>$self</hl> is. When we declare a method (a subroutine that is expected to be used as <hl>$p->do_something($value)</hl>,
+we assign the first parameter received in <hl>@_</hl> to <hl>$self</hl>. That will contain the current object.
+Using the name <hl>$self</hl> is a mere tradition, but one that makes it easier to the reader to recognize which variable holds the current object.
+(There are actually some people who use <hl>$me</hl> instead, but I think that is just confusing.)
 
 <code lang="perl">
 sub a_method {
@@ -44,7 +50,26 @@ sub a_method {
 }
 </code>
 
-A class-method:
+It is called by the user as:
+
+<code lang="perl">
+$p->a_method($value);
+</code>
+
+Behind the scenes, perl will run
+
+<code lang="perl">
+a_method($p, $value);
+</code>
+
+
+<h2>Examples - an class-method</h2>
+
+A class-method looks exactly like an object-method. The only difference is in the usage and that perl
+passes the class-name upon which method was called as the first parameter. (After all no specific object is related to this call.)
+
+Because the first parameter received is not an object, it might be better not to use <hl>$self</hl> as the variable name holding it.
+Using <hl>$class</hl> as the variable name will make this clearer:
 
 <code lang="perl">
 sub a_class_method {
@@ -53,7 +78,31 @@ sub a_class_method {
 }
 </code>
 
-A function:
+It is usually used as:
+
+<code lang="perl">
+Some::Class::Name->a_class_method($value);
+</code>
+
+For which perl will actually call
+
+<code lang="perl">
+a_class_method('Some::Class::Name', $value);
+</code>
+
+There are some cases, when the code needs to be even more flexible when there is something like this:
+
+<code lang="perl">
+my $module = 'Some::Class::Name';  # or some other module name
+...
+$module->a_class_method($value);
+</code>
+
+This will make the code a lot more flexible, but of course it should be only used when that kind of flexibility is needed.
+
+<h2>Examples - a plain function</h2>
+
+A function has not special parameter passing:
 
 <code lang="perl">
 sub a_function {
@@ -61,6 +110,19 @@ sub a_function {
   ...
 }
 </code>
+
+And it is used as
+
+<code lang="perl">
+a_function($value);
+</code>
+
+and perl will execute the same:
+
+<code lang="perl">
+a_function($value);
+</code>
+
 
 Methods are only used in Object Oriented Perl code.
 
