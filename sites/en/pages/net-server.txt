@@ -2,6 +2,7 @@
 =timestamp 2013-10-20T18:13:11
 =indexes Net::Server
 =status show
+=books net_server
 =author szabgab
 =comments_disqus_enable 1
 =show_related 0

@@ -2,6 +2,7 @@
 =timestamp 2015-04-01T08:10:01
 =indexes files
 =status show
+=books net_server
 =author szabgab
 =comments_disqus_enable 1
 
