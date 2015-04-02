@@ -170,11 +170,19 @@ me what is the license of that, and what is the relation of that to the one used
 
 <a href="http://cpantesters.org/">cpantesters.org</a>
 
-The <a href="http://deps.cpantesters.org/">CPANdeps</a> project has its source code in <a href="https://github.com/DrHyde/CPANdeps">GitHub</a>
+The <a href="http://deps.cpantesters.org/">CPANdeps</a> project has its source code in <a href="https://github.com/DrHyde/CPANdeps">GitHub</a>.
+It is on a dedicated server provided for free by UK2.net. It has 4GB RAM, 0.5TB disk, and some species of dual-core processor.
+It runs Debian Linux, MySQL, Apache and perl.
 
 <h2>cpXXXan</h2>
 
 The <a href="http://cpxxxan.barnyard.co.uk/">cpXXXan</a> project has its source code in <a href="https://github.com/DrHyde/cpXXXan">GitHub</a>
+cpXXXan is similar to CPANdeps and also provided for free by UK2.net. The hardware is identical apart from only 2GB of memory. It uses the same software.
+
+
+<a href="http://www.cantrell.org.uk/david/">David Cantrell</a>:
+My testing is done in a Linux VM running on a dedicated server that I rent. It nominally has 8GB RAM and 4 CPUs. The underlying hardware has 32GB and 8 CPUs. Virtualisation is done with Xen.
+Unfortunately I no longer test on any other OSes.
 
 <h2>YAPC</h2>
 
