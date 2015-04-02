@@ -70,9 +70,9 @@ read about in the <a href="/perldoc/tr">documentation of tr</a>.
 <h2>When is tr better than a regex?</h2>
 
 <hl>tr</hl> replaces character-by-character while a regex substitution will replace a match with a string.
-So they do different things.
+They do different things. So <hl>tr</hl> is only better if you want to do something els.
 
-If you want to imitate what <hl>tr</hl> does using a regex substitution you could write the following:
+BTW you can imitate what <hl>tr</hl> does using a regex substitution with the following code:
 
 <code lang="perl">
 use strict;
