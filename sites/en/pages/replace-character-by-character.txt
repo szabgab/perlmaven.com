@@ -53,7 +53,7 @@ $text =~ tr/ab/zx/;
 say $text;
 </code>
 
-Replaces every <hl>a</hl> character by <hl>z</hl>:
+Replaces every <hl>a</hl> character by <hl>z</hl> and every <hl>b<hl> character by <hl>x</hl>:
 
 <code>
 abc bad acdf
@@ -65,5 +65,60 @@ zxc xzd zcdf
 <hl>y</hl> is a synonym of <hl>tr</hl> available for historical reasons.
 There are a few modifiers and special cases with tr, that you can
 read about in the <a href="/perldoc/tr">documentation of tr</a>.
+
+
+<h2>When is tr better than a regex?</h2>
+
+<hl>tr</hl> replaces character-by-character while a regex substitution will replace a match with a string.
+So they do different things.
+
+If you want to imitate what <hl>tr</hl> does using a regex substitution you could write the following:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my %map = (
+    a => 'z',
+    b => 'x',
+);
+
+my $text = 'abc bad acdf';
+say $text;
+
+$text =~ s/([ab])/$map{$1}/g;
+say $text;
+</code>
+
+Here we have a hash called <hl>%map</hl> that maps the original string (original character) to the new string (character)
+and then uses a single global substitution to replace all the occurences of every "original character" by the corresponding
+"new character".
+
+Note, that in this solution we actually had to write the list of "orginal characters" both in the <hl>%map</hl> and in the regex.
+In order to avoid that we can have a more generic solution:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+my %map = (
+    a => 'z',
+    b => 'x',
+);
+
+my $text = 'abc bad acdf';
+say $text;
+
+my $chars = join '', keys %map;
+$text =~ s/([$chars])/$map{$1}/g;
+say $text;
+</code>
+
+Here we generate the list of characters that we want to replace from the keys
+of the <hl>%map</hl> hash.
+
+This will work exactly as the <hl>tr</hl> works, but then again, why not use a <hl>tr</hl> if this is what we would like to do?
 
 
