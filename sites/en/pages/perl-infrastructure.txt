@@ -37,11 +37,11 @@ and <a href="https://github.com/CPAN-API/cpan-api/">cpan-api</a> is the back-end
 Servers and hosting, donated by Bytemark and Liquid Web.
 For details see the <a href="https://github.com/CPAN-API/network-infrastructure/blob/master/servers.md">list of servers</a>.
 
-EVERYTHING is deployed via Puppet. Source code is in <a href="https://github.com/CPAN-API/metacpan-puppet">GitHub</a>.
+Everything is deployed via Puppet. Source code is in <a href="https://github.com/CPAN-API/metacpan-puppet">GitHub</a>.
 
 There are Vagrant development boxes for getting people started. See <a href="https://github.com/CPAN-API/metacpan-developer">MetaCPAN developer environment</a>,
 
-Every site we can sits behind <a href="http://www.fastly.com/">Fastly CDN</a>
+Every site sits behind <a href="http://www.fastly.com/">Fastly CDN</a>
 
 Everything is on <a href="https://github.com/CPAN-API/">GitHub</a>
 
