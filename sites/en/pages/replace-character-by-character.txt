@@ -53,7 +53,7 @@ $text =~ tr/ab/zx/;
 say $text;
 </code>
 
-Replaces every <hl>a</hl> character by <hl>z</hl> and every <hl>b<hl> character by <hl>x</hl>:
+Replaces every <hl>a</hl> character by <hl>z</hl> and every <hl>b</hl> character by <hl>x</hl>:
 
 <code>
 abc bad acdf
