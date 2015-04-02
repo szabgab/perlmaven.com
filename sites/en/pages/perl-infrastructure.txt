@@ -125,7 +125,10 @@ Under the maintenence of Robert and Ask as liseted on the
   <li><a href="http://cpan.org/">cpan.org</a></li>
   <li><a href="http://search.cpan.org/">search.cpan.org</a></li>
   <li><a href="http://ftp.cpan.org/">ftp.cpan.org</a></li>
+  <li><a href="https://rt.cpan.org/">rt.cpan.org</a>, the default bug-tracking system of every CPAN distribution runs <a href="http://bestpractical.com/rt/">RT</a>.
+    Source code can be found <a href="http://bestpractical.com/rt/git.html">here</a>.</li>
 </ul>
+
 
 <a href="http://bitcard.org/">bitcard.org</a> perl.org authentication service
 
@@ -138,7 +141,7 @@ https://github.com/perlorg/www.pm.org
 <h2>Perl 6</h2>
 
 <a href="http://perl6.org/">perl6.org</a>, the main Perl 6 website, consists
-of statig pages generated from <a href="http://github.com/perl6/perl6.org/">perl6/perl6.org</a>
+of static pages generated from <a href="http://github.com/perl6/perl6.org/">perl6/perl6.org</a>
 
 <a href="http://doc.perl6.org/">doc.perl6.org</a>, the Perl 6 documentation site consists of static pages generated from
 <a href="https://github.com/perl6/doc/">this repository</a>.
@@ -153,9 +156,6 @@ All perl6.org pages are served from the <a href="http://www.p6c.org/">Perl 6
 community server</a>, funded by community donations, and run by <a
 href="https://github.com/perl6/infrastructure-doc/blob/master/hosts/hack.p6c.org.pod#administration">several</a>
 <a href="https://github.com/perl6/infrastructure-doc/blob/master/hosts/www.p6c.org.pod#administration">volunteeers</a>.
-
-<a href="https://rt.cpan.org/">rt.cpan.org</a>, the default bug-tracking system of every CPAN distribution runs <a href="http://bestpractical.com/rt/">RT</a>.
-Source code can be found <a href="http://bestpractical.com/rt/git.html">here</a>.
 
 <a href="http://irclog.perlgeek.de/">irclog.perlgeek.de</a> logs IRC channels. It uses <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>. Source code
 is <a href="https://github.com/moritz/ilbot/">here</a>.
