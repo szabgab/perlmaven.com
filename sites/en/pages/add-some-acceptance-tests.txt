@@ -3,7 +3,7 @@
 =indexes Test::WWW::Mechanize, SCO
 =tags screencast
 =status show
-=books testing
+=books testing, search_cpan_org
 =author szabgab
 =comments_disqus_enable 1
 
