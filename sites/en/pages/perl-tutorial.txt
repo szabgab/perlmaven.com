@@ -196,7 +196,7 @@ to practice what you have learned.
 <li>Locating and evaluating CPAN modules</li>
 <li>Downloading and installing Perl Modules from CPAN</li>
 <li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
-<li><a href="/pro/how-to-add-a-relative-directory-to-inc">How to change @INC to a relative directory</a> (for <a href="/pro">Pro</a> subscribers.)</li>
+<li><a href="/pro/how-to-add-a-relative-directory-to-inc">How to change @INC to a relative directory</a><li>
 <li>local::lib</li>
 </ol>
 
@@ -204,8 +204,8 @@ to practice what you have learned.
 <ol>
 <li><a href="/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
 <li>Reading Excel files using Perl</li>
-<li><a href="/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (for <a href="/pro">Pro</a> subscribers.)</li>
-<li>Sending e-mail using Perl</li>
+<li><a href="/create-an-excel-file-with-perl">Creating Excel files using Perl</a></li>
+<li><a href="/sending-html-email-using-email-stuffer">Sending e-mail using Perl</a></li>
 <li><a href="/perl-cgi-script-with-apache2">CGI scripts with Perl</a></li>
 <li><a href="/perl-cgi-mod-perl-psgi">Web applications with Perl: PSGI</a></li>
 <li>Parsing XML files</li>
