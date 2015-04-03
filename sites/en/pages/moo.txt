@@ -36,10 +36,11 @@ who would like to get away from the "manual blessing", but don't want to "pay" f
   <li><a href="/pro/singleton-moo">Singleton</a></li>
 </ul>
 
+<!--
 <h2>Planned articles</h2>
 <ul>
   <li>The destructor of a Moo-based class</li>
   <li>Roles</li>
   <li>Extending Moo</li>
 </ul>
-
+-->
