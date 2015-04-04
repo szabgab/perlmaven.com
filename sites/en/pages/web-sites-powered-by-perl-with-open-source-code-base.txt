@@ -159,8 +159,6 @@ Nevertheless the templates of the site are available <a href="https://github.com
 There is also a version of Movable Type on <a href="https://github.com/movabletype/movabletype">GitHub</a>, but it is unclear to
 me what is the license of that, and what is the relation of that to the one used on blogs.perl.org.
 
-The server is maintained by <a href="http://dave.org.uk/">Dave Cross</a> and <a href="http://aaroncrane.co.uk/">Aaron Crane</a>.
-
 
 <a href="http://perlybook.org/">Perlybook</a> is based on <a href="http://mojolicio.us">Mojolicious</a>. Its source code is in the
 <a href="https://github.com/reneeb/cpan2ebook">cpan2ebook</a> repository.

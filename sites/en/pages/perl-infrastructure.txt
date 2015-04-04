@@ -178,9 +178,17 @@ Maintained by <a href="http://leo.cuckoo.org/">Leo Lapworth (Ranguard)</a>
 
 <a href="http://blogs.perl.org/">blogs.perl.org</a>, the shared blog site of the Perl community runs on the 
 Professional Edition of <a href="http://movabletype.com/">Movable Type</a> which is not open source.
+Though it might be the open source version with a few extra (proprietary) extensions.
+
 Nevertheless the templates of the site are available <a href="https://github.com/blogs-perl-org/blogs.perl.org">here</a>.
 There is also a version of Movable Type on <a href="https://github.com/movabletype/movabletype">GitHub</a>, but it is unclear to
 me what is the license of that, and what is the relation of that to the one used on blogs.perl.org.
+
+The site runs on a dedicated server at <a href="https://www.hetzner.de/en/">Hetzner</a>.
+It is an Intel i7 with four cores (plus hyperthreading), 8 GB of RAM, and software RAID. It's currently running Ubuntu.
+
+The server is maintained by <a href="http://dave.org.uk/">Dave Cross</a> and <a href="http://aaroncrane.co.uk/">Aaron Crane</a>.
+They also cover the expenses.
 
 
 <h2>CPAN Testers</h2>
