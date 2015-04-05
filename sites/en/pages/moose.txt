@@ -27,12 +27,13 @@ A series of articles introducing you to <a href="https://metacpan.org/pod/Moose"
 </ul>
 
 
-<h2>Related free articles and interviews</h2>
+<h2>Related articles and interviews</h2>
 
 <ul>
   <li><a href="/building-a-static-blog-using-blio-and-github">Building a static blog using Blio and Github</a> Blio uses Moose, though in this article we don't discuss the details</a></li>
   <li><a href="/stevan-little">Interview with Stevan Little, the author of Moose.</a></li>
   <li><a href="/dave-rolsky">Interview with Dave Rolsky</a></li>
+  <li><a href="/moo">Moo</a> the minimalist version of Moose</li>
 </ul>
 
 
