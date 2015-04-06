@@ -71,7 +71,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li>Sentencias condicionales: if</li>
 <li><a href="/valores-booleanos-en-perl">Valores booleanos en Perl</a></li>
 <li><a href="/operadores-numericos">Operadores numéricos</a></li>
-<li><a href="http://perlmaven.com//string-operators">String operators (en)</a></li>
+<li><a href="/operadores-string">Operadores para strings: concatenación (.) y repetición (x)</a></li>
 <li><a href="/undef-y-defined-en-perl">undef, el valor inicial y la función defined</a></li>
 <li><a href="/strings-entrecomillados-interpolados-y-escapados-en-perl">Strings en Perl: entrecomillado, interpolación y secuencias de escape</a></li>
 <li><a href="http://perlmaven.com/here-documents">Here documents (en)</a></li>
