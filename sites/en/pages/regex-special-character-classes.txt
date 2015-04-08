@@ -1,7 +1,7 @@
 =title Regex: special character classes
-=timestamp 2014-11-09T09:30:01
+=timestamp 2015-04-08T08:00:01
 =indexes [], \d, \w, \s, \D, \W, \S, \p, \P
-=status done
+=status show
 =books beginner_book
 =author szabgab
 =comments_disqus_enable 1

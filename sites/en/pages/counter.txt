@@ -48,6 +48,7 @@ This is going to be a long project, but it might help understand various techniq
 <ul>
   <li>A <a href="/command-line-counter">command-line counter script</a> that uses a plain file called <hl>counter.txt</hl> for a single counter.</li>
   <li><a href="http://code-maven.com/on-load-counter-with-javascript-and-local-storage">On-load counter with JavaScript and local storage</a></li>
+  <li><a href="/pro/multiple-command-line-counters">Multiple command line counters with plain TSV text file back-end</a></li>
 <!--
   <li><a href="/command-line-counter-with-json-backend">Command line counter with JSON backend</a>
 --> 
