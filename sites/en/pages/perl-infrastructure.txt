@@ -264,6 +264,15 @@ There's no real documentation for these, primarily because I doubt that
 my workflow is appealing to other people.
 </i>
 
+<h2>CPANTS - A CPAN Testing Service</h2>
+
+(Unrelated to CPAN Testers above!)
+
+<a href="http://cpants.cpanauthors.org/">cpants.cpanauthors.org</a> check various kwalitee metrics
+about CPAN modules.
+The service is maintained by <a href="http://d.hatena.ne.jp/charsbar/">Kenichi Ishigaki (charsbar)</a>.
+The source code of the web-site is in <a href="https://github.com/cpants/www-cpants/">GitHub</a>.
+
 <h2>YAPC</h2>
 
 Most <a href="http://act.mongueurs.net/conferences.html">Perl conferences</a> (YAPCs, Workshops etc) run on <a href="http://act.mongueurs.net/">Act - A Conference Toolkit</a>.
