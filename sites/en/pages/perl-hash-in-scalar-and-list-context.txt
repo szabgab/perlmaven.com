@@ -1,7 +1,7 @@
 =title Perl hash in scalar and list context
-=timestamp 2015-02-01T07:30:01
+=timestamp 2015-04-09T10:30:01
 =indexes hash
-=status done
+=status show
 =books beginner_book
 =author szabgab
 =archive 1
@@ -94,6 +94,5 @@ if (%color_of) {
 </code>
 
 and we can be sure that the block will be executed only if the hash was <b>not</b> empty.
-
 
 
