@@ -293,7 +293,19 @@ are hosted on the central ACT server.
 <a href="http://yapc.org/">yapc.org</a> Is a nice-looking, but outdated site linking to other YAPC. 
 
 
+<a href="http://yapcrussia.org/">yapcrussia.org</a> redirects to the ACT instance used to manage YAPC::Russia</a> events.
+
+<a href="http://yapc.tv/">yapc.tv</a>.
+
 <h3>YAPC::Asia</h3>
+
+<a href="http://www.perlworkshop.nl/">www.perlworkshop.nl</a> NLPW - Dutch Perl Workshop.
+
+<a href="http://dcbpw.org/">dcbpw.org</a> DC-Baltimore Perl Workshop.
+
+<a href="http://perl-workshop.ch/">perl-workshop.ch</a> Swiss Perl Workshop.
+
+<a href="http://qa-hackathon.org">qa-hackathon.org</a> QA Hackathon.
 
 
 <a href="http://lestrrat.github.io/">Daisuke Maki (lestrrat)</a>:
