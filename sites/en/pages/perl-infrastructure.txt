@@ -286,8 +286,33 @@ Its source code is in <a href="https://github.com/book/Act">the Act repository</
 
 <a href="http://yapc.org/">YAPC</a>
 
-<a href="http://yapcasia.org/">YAPC::Asia</a>
 
+<h3>YAPC::Asia</h3>
+
+
+<a href="http://lestrrat.github.io/">Daisuke Maki (lestrrat)</a>:
+<i>
+<a href="http://yapcasia.org/">yapcasia.org</a> hosts (or at least redirects to) all of the past YAPC::Asia Tokyo's that have been held, dating back to 2006. Up to 2009.
+The system behind was ACT, so the actual site lived with other YAPCs that it hosts.
+
+Since 2010, YAPC::Asia Tokyo's site's static content has been built using MovableType, and the dynamic content including user registration, payment (only for 2010 and 2011),
+talk submission and listing have been built using either bare PSGI servers that does the minimum job or a simple Mojolicious based application.
+Payments are handled by Peatix, Inc since 2012 -- until then we used to use a handmade QR-code solution.
+There's absolutely no fancy engineering behind them because we did not intend to put resources in the engineering side of the conference.
+
+A single nginx server handles all the frontend marshaling.
+
+In 2015, all the infrastructure has been moved to a Docker based architecture just for the heck of it, but in hindsight this was unnecessary,
+except for the fact that the yours truly learned a lot about how to use Docker :)
+
+The infrastructure is hosted under <a href="http://sakura.ad.jp/">Sakura VPS</a>.
+</i>
+
+<a href="http://lestrrat.github.io/">Daisuke Maki (lestrrat)</a>:
+
+<i>
+<a href="http://perlassociation.org">perlassociation.org</a> the site of Japan Perl Association, doesn't have much content in it, so it's built with a simple Mojolicious application and nginx, running on a VPS at CPI (http://www.cpi.ad.jp/scalable/). Most of what we do under the perlassociation.org domain is actual shuffling documents and so forth, so we use Google Apps to to handle this.
+</i>
 
 <h2>Mojolicious</h2>
 
@@ -314,9 +339,6 @@ It is hosted on  <a href="/linode">Linode</a> instance with 2Gb memory 2 CPUs, a
 <a href="http://perltv.org/">PerlTV</a> list Perl-related presentations and screencasts. It is based on <a href="/dancer">Dancer2</a>.
 Its source code is in the <a href="https://github.com/szabgab/perltv.org">perltv.org</a> repository.
 
-<h2>Other</h2>
-
-<a href="http://perlassociation.org">perlassociation.org</a> Japan Perl Association.
 
 
 <h2>Resources and other information</h2>
