@@ -195,19 +195,69 @@ They also cover the expenses.
 
 <a href="http://cpantesters.org/">cpantesters.org</a>
 
-The <a href="http://deps.cpantesters.org/">CPANdeps</a> project has its source code in <a href="https://github.com/DrHyde/CPANdeps">GitHub</a>.
+
+<h3>deps.cpantesters.org</h3>
+
+The <a href="http://deps.cpantesters.org/">CPANdeps</a> project run by <a href="http://www.cantrell.org.uk/david/">David Cantrell</a>,
+has its source code in <a href="https://github.com/DrHyde/CPANdeps">GitHub</a>.
 It is on a dedicated server provided for free by UK2.net. It has 4GB RAM, 0.5TB disk, and some species of dual-core processor.
 It runs Debian Linux, MySQL, Apache and perl.
 
-<h2>cpXXXan</h2>
+<h3>cpXXXan</h3>
 
-The <a href="http://cpxxxan.barnyard.co.uk/">cpXXXan</a> project has its source code in <a href="https://github.com/DrHyde/cpXXXan">GitHub</a>
+The <a href="http://cpxxxan.barnyard.co.uk/">cpXXXan</a> project run by 
+<a href="http://www.cantrell.org.uk/david/">David Cantrell</a>,
+has its source code in <a href="https://github.com/DrHyde/cpXXXan">GitHub</a>
 cpXXXan is similar to CPANdeps and also provided for free by UK2.net. The hardware is identical apart from only 2GB of memory. It uses the same software.
 
+<h3>matrix.cpantesters.org</h3>
 
-<a href="http://www.cantrell.org.uk/david/">David Cantrell</a>:
+<a href="http://rezic.de/">Slaven Rezic</a> runs 
+<a href="http://matrix.cpantesters.org">matrix.cpantesters.org</a> on a small
+one-CPU VM. Actually this VM
+is dedicated to another service of Slaven and the matrix is just a guest
+there. The alternative version of the matrix
+(<a href="http://217.199.168.174/cgi-bin/cpantestersmatrix.pl">the "log.txt" view</a>)
+runs on another
+machine setup by Barbie and sponsored by Webfusion (see the banner on
+that page). A possible task for the <a href="http://qa-hackathon.org/">QA hackathon</a> would be to move the
+regular matrix also to this machine, as it is bigger and dedicated to
+perl QA stuff (IIRC a physical machine with eight CPUs).
+
+The matrix is an old-fashioned CGI running in an old-fashioned Apache
+server. It's also possible to run it as a PSGI application, but
+currently there's no pressing need to do so. The software is at 
+<a href="https://github.com/eserte/cpan-testers-matrix">GitHub</a>.
+
+<h2>CPAN Testers - smokers</h2>
+
+<b><a href="http://www.cantrell.org.uk/david/">David Cantrell</a></b>:
+<i>
 My testing is done in a Linux VM running on a dedicated server that I rent. It nominally has 8GB RAM and 4 CPUs. The underlying hardware has 32GB and 8 CPUs. Virtualisation is done with Xen.
 Unfortunately I no longer test on any other OSes.
+</i>
+
+<b><a href="http://rezic.de/">Slaven Rezic</a></b>:
+<i>
+I maintain four regular smokers (two FreeBSD + two Linux, with several
+perl versions ranging from 5.8.9 to 5.21.10), all running in VMs. Three
+of them are located on my personal workstation and one is running on a
+server of another Berlin perl monger. Typically the machines are running
+24/7 except when I am on vacation. In these periods the "specialities"
+of my smokers (that is: provide first reports very quickly after PAUSE
+upload, and provide reports for a rather rare platform, FreeBSD) have to
+be done by other people (in this case, by Andreas Koenig and Chris
+Williams).
+
+The smokers are based on <a href="https://metacpan.org/pod/CPAN">CPAN.pm</a> and
+<a href="https://metacpan.org/pod/CPAN::Reporter</a>CPAN::Reporter</a>, but I don't use
+<a href="https://metacpan.org/pod/CPAN::Reporter::Smoker">CPAN::Reporter::Smoker</a>.
+Instead I have a couple of wrapper scripts
+(cpan_smoke_modules_wrapper3, cpan_smoke_modules) which may be found
+on <a href="https://github.com/eserte/srezic-misc/tree/master/scripts">GitHub</a>.
+There's no real documentation for these, primarily because I doubt that
+my workflow is appealing to other people.
+</i>
 
 <h2>YAPC</h2>
 
