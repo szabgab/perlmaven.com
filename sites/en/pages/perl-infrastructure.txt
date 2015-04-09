@@ -95,30 +95,35 @@ Both sites run on the server of <a href="http://www.preshweb.co.uk/">David Preci
 
 
 Under the maintenence of Robert and Ask as liseted on the
-<a href="http://noc.perl.org/">noc.perl.org</a>:
+<a href="http://noc.perl.org/">noc.perl.org</a> (<a href="https://github.com/perlorg/perlweb/tree/master/docs/noc">GitHub</a>:
 
 <ul>
-  <li><a href="http://www.perl.org/">www.perl.org</a></li>
-  <li><a href="http://dev.perl.org/">dev.perl.org</a></li>
+  <li><a href="http://www.perl.org/">www.perl.org</a> <a href="https://github.com/perlorg/perlweb/tree/master/docs/www">GitHub</a></li>
+  <li><a href="http://dev.perl.org/">dev.perl.org</a> <a href="https://github.com/perlorg/perlweb/tree/master/docs/dev">GitHub</a></li>
+  <li><a href="http://cpanratings.perl.org/">cpanratings.perl.org</a> <a href="https://github.com/perlorg/perlweb/tree/master/docs/cpanratings">GitHub</a></li>
+  <li><a href="http://dbi.perl.org/">dbi.perl.org</a> <a href="https://github.com/perlorg/perlweb/tree/master/docs/dbi">GitHub</a></li>
+  <li><a href="http://qa.perl.org/">qa.perl.org</a> Perl Quality Assurance Projects <a href="https://github.com/perlorg/perlweb/tree/master/docs/qa">GitHub</a></li>
+
   <li><a href="http://jobs.perl.org">jobs.perl.org</a></li>
-  <li><a href="http://www.nntp.perl.org/">www.nntp.perl.org</a></li>   
-  <li><a href="http://nntp.perl.org/">nntp.perl.org</a></li>
-  <li><a href="http://rt.perl.org/">rt.perl.org</a></li>
+  <li><a href="http://www.nntp.perl.org/">www.nntp.perl.org</a> news groups and the archive of the mailing lists hosted by noc.perl.org</li>
+  <li><a href="http://rt.perl.org/">rt.perl.org</a> Request Tracker for Perl 5 and Perl 6</li>
   <li><a href="http://svn.perl.org/>svn.perl.org</a> (not in use any more)</li>
-  <li><a href="http://dbi.perl.org/">dbi.perl.org</a></li>
-  <li><a href="http://moose.perl.org/">moose.perl.org</a></li>
-  <li><a href="http://learn.perl.org/">learn.perl.org</a></li>
-  <li><a href="http://lists.perl.org/">lists.perl.org</a></li>
+  <li><a href="http://moose.perl.org/">moose.perl.org</a> (redirects to moose.iinteractive.com) </li>
+  <li><a href="http://learn.perl.org/">learn.perl.org</a> <a href="https://github.com/perlorg/perlweb/tree/master/docs/learn">GitHub</a></li>
+  <li><a href="http://lists.perl.org/">lists.perl.org</a> A list of Perl-related, topic-oriented mailing lists. <a href="https://github.com/perlorg/perlweb/tree/master/docs/lists">GitHub</a></li>
   <li><a href="http://use.perl.org/">use.perl.org</a> old blog server of the Perl community. It is now static.</li>
   <li><a href="http://history.perl.org/">history.perl.org</a></li>
-  <li><a href="http://debugger.perl.org/">debugger.perl.org</a></li>
+  <li><a href="http://debugger.perl.org/">debugger.perl.org</a> <a href="https://github.com/perlorg/perlweb/tree/master/docs/debugger">GitHub</a></li>
+  <li><a href="http://pause.perl.org/">pause.perl.org</a> The Perl Authors Upload Server, the thing that feeds CPAN, has its source code on <a href="https://github.com/andk/pause/">GitHub</a>.</li>
+  <li><a href="http://auth.perl.org/">auth.perl.org</a></li>
+  <li><a href="http://perldoc.perl.org/">perldoc.perl.org</a> The standard documentation of Perl in HTML format. <a href="https://github.com/perlorg/perldoc.perl.org">GitHub</a></li>
 </ul>
 
 <ul>
   <li><a href="http://www.perlfoundation.org/">www.perlfoundation.org</a></li>
   <li><a href="http://news.perlfoundation.org/">news.perlfoundation.org</a></li>
-  <li><a href="http://perl-foundation.org/">perl-foundation.org</a> (redirects to perlfoundation.org</li>
-  <li><a href="http://news.perl-foundation.org/">news.perl-foundation.org</a> (redirects to news.perlfoundation.org</a>
+  <li><a href="http://perl-foundation.org/">perl-foundation.org</a> (redirects to perlfoundation.org)</li>
+  <li><a href="http://news.perl-foundation.org/">news.perl-foundation.org</a> (redirects to news.perlfoundation.org)</a>
 </ul>
 
 <ul>
@@ -134,9 +139,9 @@ Under the maintenence of Robert and Ask as liseted on the
 
 <a href="http://www.perl.com/">www.perl.com</a>
 
-<a href="http://pm.org/">pm.org</a>
-https://github.com/perlorg/www.pm.org
+<a href="http://pm.org/">pm.org</a> The central site of the Perl Mongers <a href="https://github.com/perlorg/www.pm.org">GitHub</a>
 
+<a href="http://www.annocpan.org/">AnnoCPAN</a>
 
 <h2>Perl 6</h2>
 
