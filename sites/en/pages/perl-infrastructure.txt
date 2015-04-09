@@ -297,8 +297,6 @@ are hosted on the central ACT server.
 
 <a href="http://yapc.tv/">yapc.tv</a>.
 
-<h3>YAPC::Asia</h3>
-
 <a href="http://www.perlworkshop.nl/">www.perlworkshop.nl</a> NLPW - Dutch Perl Workshop.
 
 <a href="http://dcbpw.org/">dcbpw.org</a> DC-Baltimore Perl Workshop.
@@ -307,6 +305,7 @@ are hosted on the central ACT server.
 
 <a href="http://qa-hackathon.org">qa-hackathon.org</a> QA Hackathon.
 
+<h3>YAPC::Asia</h3>
 
 <a href="http://lestrrat.github.io/">Daisuke Maki (lestrrat)</a>:
 <i>
@@ -326,8 +325,10 @@ except for the fact that the yours truly learned a lot about how to use Docker :
 The infrastructure is hosted under <a href="http://sakura.ad.jp/">Sakura VPS</a>.
 </i>
 
-<a href="http://lestrrat.github.io/">Daisuke Maki (lestrrat)</a>:
 
+<h2>Japan Perl Association</h2>
+
+<a href="http://lestrrat.github.io/">Daisuke Maki (lestrrat)</a>:
 <i>
 <a href="http://perlassociation.org">perlassociation.org</a> the site of Japan Perl Association, doesn't have much content in it, so it's built with a simple Mojolicious application and nginx, running on a VPS at CPI (http://www.cpi.ad.jp/scalable/). Most of what we do under the perlassociation.org domain is actual shuffling documents and so forth, so we use Google Apps to to handle this.
 </i>
