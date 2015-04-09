@@ -307,7 +307,7 @@ Its source code is in the <a href="https://github.com/szabgab/perltv.org">perltv
 
 
 
-<h2>Other information</h2>
+<h2>Resources and other information</h2>
 
 Some GitHub repositories
 
@@ -315,5 +315,9 @@ Some GitHub repositories
   <li><a href="https://github.com/tpf">tpf</a></li>
   <li><a href="https://github.com/perlorg">perlorg</a></li>
 </ul>
+
+Especially note the <a href="https://github.com/tpf/docs">docs repository</a> that has a list of domain names important to the Perl world
+and a list of web-sites belonging to <a href="http://www.perlfoundation.org/">The Perl Foundation</a>.
+
 
 
