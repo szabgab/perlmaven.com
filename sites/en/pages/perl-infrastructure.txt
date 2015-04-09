@@ -13,14 +13,14 @@ Information about some of the machines serving Perl developers around the world.
 
 =abstract end
 
-<h2>What kind of information</h2>
+<h2>What kind of information?</h2>
 
 This page is (going to be) a collection of information about the hardware and software serving people who are using Perl.
 
-In particular it should contain information about the following aspects:
+In particular, it should contain information about the following aspects:
 
 <ul>
-  <li>Hardware - what kind of machines are used to provide the service. (VPS-es would be included here)</li>
+  <li>Hardware - what kind of machines are used to provide the service? (VPS-es would be included here)</li>
   <li>Who maintains them? Who and how should be contacted in case the service is malfunctioning?</li>
   <li>What software does the machine run to provide the service?</li>
   <li>Is the source code of the service available to the public somewhere? (e.g. GitHub repository)</li>
@@ -29,7 +29,7 @@ In particular it should contain information about the following aspects:
 
 <h2>MetaCPAN</h2>
 
-<a href="https://metacpan.org/">MetaCPAN</a>, the Open Source search engine of CPAN. It has several sub-projects hosted
+<a href="https://metacpan.org/">metacpan.org</a>, the Open Source search engine of CPAN. It has several sub-projects hosted
 in the <a href="https://github.com/CPAN-API/">CPAN-API</a> GitHub organization.
 <a href="https://github.com/CPAN-API/metacpan-web">metacpan-web</a> is the front-end written using <a href="/catalyst">Catalyst</a>,
 and <a href="https://github.com/CPAN-API/cpan-api/">cpan-api</a> is the back-end.
@@ -48,7 +48,7 @@ Everything is on <a href="https://github.com/CPAN-API/">GitHub</a>
 
 <h2>PerlMonks</h2>
 
-<a href="http://www.perlmonks.org/">PerlMonks</a> is based on a version of Everything. According to  <a href="http://www.perlmonks.org/?node_id=955375">this node</a>
+<a href="http://www.perlmonks.org/">perlmonks.org</a> is based on a version of Everything. According to  <a href="http://www.perlmonks.org/?node_id=955375">this node</a>
 a different version of Everything (Everything2) is now open source, but there are some PerlMonks specific things that are not open source.
 
 The website is hosted via three webservers in DNS rotation, with a MySQL backend. The webservers are provided by pair.com.
@@ -58,7 +58,7 @@ Emergency contact: perlmonks.org at gmail.com
 
 <h2>Strawberry Perl</h2>
 
-<a href="http://strawberryperl.com/">Strawberryperl.com</a> is just a few static pages.
+<a href="http://strawberryperl.com/">strawberryperl.com</a> is just a few static pages.
 <a href="https://github.com/StrawberryPerl/strawberryperl.com">GitHub repository</a>
 
 The Webserver:
@@ -81,18 +81,17 @@ A couple of <a href="https://github.com/StrawberryPerl">GitHub repos</a>.
 
 <h2>Perl Dancer</h2>
 
-<a href="http://perldancer.org/">Dancer</a>, the web framework. The source code of its own web site is
+<a href="http://perldancer.org/">perldancer.org</a>, the web framework. The source code of its own web site is
 in the <a href="https://github.com/PerlDancer/perldancer-website">perldancer-website</a>
 repository.
 
-<a href="http://advent.perldancer.org/">Perl Dancer Advent Calendar</a> is itslef based on <a href="/dancer">Dancer</a>.
+<a href="http://advent.perldancer.org/">advent.perldancer.org</a> is itself based on <a href="/dancer">Dancer</a>.
 Its source code is in the <a href="https://github.com/PerlDancer/advent-calendar">advent-calendar</a>
 repository.
 
 Both sites run on the server of <a href="http://www.preshweb.co.uk/">David Precious</a>.
 
 <h2>perl.org sites</h2>
-
 
 Under the maintenence of Robert and Ask as liseted on the
 <a href="http://noc.perl.org/">noc.perl.org</a> (<a href="https://github.com/perlorg/perlweb/tree/master/docs/noc">GitHub</a>:
@@ -141,7 +140,7 @@ Under the maintenence of Robert and Ask as liseted on the
 
 <a href="http://pm.org/">pm.org</a> The central site of the Perl Mongers <a href="https://github.com/perlorg/www.pm.org">GitHub</a>
 
-<a href="http://www.annocpan.org/">AnnoCPAN</a>
+<a href="http://www.annocpan.org/">www.annocpan.org</a> AnnoCPAN is a service to easily annotate the documentation of CPAN modules.
 
 <h2>Perl 6</h2>
 
@@ -210,7 +209,7 @@ It runs Debian Linux, MySQL, Apache and perl.
 
 <h3>cpXXXan</h3>
 
-The <a href="http://cpxxxan.barnyard.co.uk/">cpXXXan</a> project run by 
+The <a href="http://cpxxxan.barnyard.co.uk/">cpXXXan.barnyard.co.uk</a> site run by 
 <a href="http://www.cantrell.org.uk/david/">David Cantrell</a>,
 has its source code in <a href="https://github.com/DrHyde/cpXXXan">GitHub</a>
 cpXXXan is similar to CPANdeps and also provided for free by UK2.net. The hardware is identical apart from only 2GB of memory. It uses the same software.
@@ -273,18 +272,25 @@ about CPAN modules.
 The service is maintained by <a href="http://d.hatena.ne.jp/charsbar/">Kenichi Ishigaki (charsbar)</a>.
 The source code of the web-site is in <a href="https://github.com/cpants/www-cpants/">GitHub</a>.
 
+<h2>CPAN::Changes Kwalitee Service</h2>
+
+<a href="http://changes.cpanhq.org/">changes.cpanhq.org</a> maintained by <a href="http://blog.alternation.net/">Brian Cassidy</a>
+Source code in <a href="https://github.com/bricas/cpan-changes-web">GitHub</a>.
+
+
 <h2>YAPC</h2>
 
 Most <a href="http://act.mongueurs.net/conferences.html">Perl conferences</a> (YAPCs, Workshops etc) run on <a href="http://act.mongueurs.net/">Act - A Conference Toolkit</a>.
 Its source code is in <a href="https://github.com/book/Act">the Act repository</a>.
 
-<a href="http://yapcna.org/">yapcna.org</a>
+<a href="http://yapcna.org/">yapcna.org</a> the domain for YAPC::NA. The actual sites are based on ACT and are hosted on the central ACT server.
 
-<a href="http://yapc.eu/">yapc.eu</a>
+<a href="http://yapc.eu/">yapc.eu</a> and <a href="http://www.yapceurope.org/">www.yapceurope.org</a>
+are the home page(s) of the YAPC::Europe Foundation. They are also used as the domain for the YAPC::EU events while the actual sites of the events
+are hosted on the central ACT server.
 
-<a href="http://www.yapceurope.org/">yapceurope</a>
 
-<a href="http://yapc.org/">YAPC</a>
+<a href="http://yapc.org/">yapc.org</a> Is a nice-looking, but outdated site linking to other YAPC. 
 
 
 <h3>YAPC::Asia</h3>
@@ -316,7 +322,7 @@ The infrastructure is hosted under <a href="http://sakura.ad.jp/">Sakura VPS</a>
 
 <h2>Mojolicious</h2>
 
-<a href="http://mojolicio.us/">Mojolicious</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/kraih/mojolicio.us">mojolicio.us</a>
+<a href="http://mojolicio.us/">mojolicio.us</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/kraih/mojolicio.us">mojolicio.us</a>
 repository.
 
 
@@ -326,19 +332,24 @@ repository.
 
 <h2>Perl Maven</h2>
 
-<a href="http://perlmaven.com/">Perl Maven</a>. The site (along with a few smaller sites of <a href="http://szabgab.com/">Gabor Szabo</a>)
+<a href="http://perlmaven.com/">perlmaven.com</a>. The site (along with a few smaller sites of <a href="http://szabgab.com/">Gabor Szabo</a>)
 is hosted on  <a href="/linode">Linode</a> instance with 4Gb memory 4 CPUs.
 It is based on <a href="/dancer">Dancer 2</a> its source code is available on <a href="https://github.com/szabgab/Perl-Maven">GitHub</a>.
 The content is also avilable on <a href="https://github.com/szabgab/perlmaven.com">GitHub</a>
 
-<a href="http://perl6maven.com/">Perl 6 Maven</a> runs on <a href="http://perl6maven.com/bailador">Baildor</a>, a partially
+<a href="http://perl6maven.com/">perl6maven.com</a> runs on <a href="http://perl6maven.com/bailador">Baildor</a>, a partially
 implemented Perl Dancer clone in Perl 6. Its source code is available <a href="https://github.com/szabgab/Perl6-Maven">on GitHub</a>.
 It is hosted on  <a href="/linode">Linode</a> instance with 2Gb memory 2 CPUs, along with a few other sites of
 <a href="http://szabgab.com/">Gabor Szabo</a>.
 
-<a href="http://perltv.org/">PerlTV</a> list Perl-related presentations and screencasts. It is based on <a href="/dancer">Dancer2</a>.
+<a href="http://perltv.org/">perltv.org</a> the PerlTV list Perl-related presentations and screencasts. It is based on <a href="/dancer">Dancer2</a>.
 Its source code is in the <a href="https://github.com/szabgab/perltv.org">perltv.org</a> repository.
 
+
+<h2>Perl Weekly</h2>
+
+<a href="http://perlweekly.com/">perlweekly.com</a> is the curated weekly newsletter about Perl. It is hosted on a <a href="/linode">Linode</a>
+instance along with a few other domains. Source code is in <a href="https://github.com/szabgab/perlweekly">GitHub</a>
 
 
 <h2>Resources and other information</h2>
