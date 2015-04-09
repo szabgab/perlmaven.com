@@ -250,7 +250,7 @@ be done by other people (in this case, by Andreas Koenig and Chris
 Williams).
 
 The smokers are based on <a href="https://metacpan.org/pod/CPAN">CPAN.pm</a> and
-<a href="https://metacpan.org/pod/CPAN::Reporter</a>CPAN::Reporter</a>, but I don't use
+<a href="https://metacpan.org/pod/CPAN::Reporter">CPAN::Reporter</a>, but I don't use
 <a href="https://metacpan.org/pod/CPAN::Reporter::Smoker">CPAN::Reporter::Smoker</a>.
 Instead I have a couple of wrapper scripts
 (cpan_smoke_modules_wrapper3, cpan_smoke_modules) which may be found
