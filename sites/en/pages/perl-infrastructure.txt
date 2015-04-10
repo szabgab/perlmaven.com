@@ -169,7 +169,8 @@ is <a href="https://github.com/moritz/ilbot/">here</a>.
 <a href="http://perl-tutorial.org/">perl-tutorial.org</a>
 
 Maintained by <a href="http://cat.eatsmou.se/">Christian Walde</a> (<a href="https://metacpan.org/author/MITHALDU">Mithaldu</a>)
-and <a href="https://github.com/perlpunk">Tina Müller (Tinita)</a>.
+and <a href="https://github.com/perlpunk">Tina Müller (Tinita)</a>. Information about the system can be found in their
+<a href="http://perl-tutorial.org/about/">about</a> page.
 
 <h2>Perl News</h2>
 
