@@ -1,0 +1,17 @@
+=title Analyze Apache log file
+=timestamp 2015-04-11T11:01:02
+=indexes Apache
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Analyze Apache log file
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/analyze-apache-log-file" />
+
