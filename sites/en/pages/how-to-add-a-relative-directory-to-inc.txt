@@ -227,6 +227,16 @@ is very useful for other tasks as well. We used it in the article
 <a href="/checking-the-whois-record-of-many-domains">fetching whois records</a>, for
 locating a file and reading the content into memory.
 
+<h2>Solution 6 - Path::Tiny</h2>
+
+As suggested by Yary H in the comments, we can even make it shorter and nicer by using the <hl>sibling</hl> method:
+
+<code lang="perl">
+use Path::Tiny qw(path);
+use lib path($0)->absolute->sibling('lib')->stringify;
+</code>
+
+
 <h2>Conclusion</h2>
 
 If you can install CPAN modules, and I really hope for your that you can, I'd recommend <hl>Path::Tiny</hl>.
