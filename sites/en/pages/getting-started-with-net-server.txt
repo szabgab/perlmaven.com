@@ -43,7 +43,7 @@ SkeletonServer->run(port => 8000);
 </code>
 
 First we add the <hl>lib</hl> directory to <hl>@INC</hl>.
-There are plenty of <a href="/pro/how-to-add-a-relative-directory-to-inc">other, nicer ways</a> to do this, but using
+There are plenty of <a href="/how-to-add-a-relative-directory-to-inc">other, nicer ways</a> to do this, but using
 <hl>FindBin</hl> is simple.
 
 Then we load the server and run it, opening it on port 8000.

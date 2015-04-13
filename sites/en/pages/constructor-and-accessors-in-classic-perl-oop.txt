@@ -68,7 +68,7 @@ First the basic boiler-plate of <a href="/strict">use strict</a>, and <hl>use wa
 the declaration of the minimal Perl version. (The only reason this code requires 5.10 is so that I can use the
 <hl>say</hl> function. Otherwise 5.6 could be used as well.)
 
-Then we <a href="/pro/how-to-add-a-relative-directory-to-inc">change @INC to a directory relative to the script</a>,
+Then we <a href="/how-to-add-a-relative-directory-to-inc">change @INC to a directory relative to the script</a>,
 and we load the <hl>My::Date</hl> module that contains our class definition.
 
 A class in Perl is just a module with slightly different behavior.

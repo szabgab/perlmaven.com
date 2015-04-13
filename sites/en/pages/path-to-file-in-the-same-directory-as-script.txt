@@ -65,9 +65,8 @@ But, let's get back to the topic: What do these lines do?
 
 <a href="#exampleA">Example&nbsp;A</a> is an attempt to construct a path to
 the file <hl>coretests.pm</hl> which is assumed to be in the same directory as the
-current script. This is similar to <a
-href="http://perlmaven.com/pro/how-to-add-a-relative-directory-to-inc">adding
-a directory relative to the current script's location</a>.
+current script. This is similar to
+<a href="/how-to-add-a-relative-directory-to-inc">adding a directory relative to the current script's location</a>.
 
 This file whose path is thus constructed is then <a
 href="https://metacpan.org/pod/perlfunc#require ">require</a>d on the

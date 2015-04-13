@@ -197,7 +197,7 @@ to practice what you have learned.
 <li>Locating and evaluating CPAN modules</li>
 <li>Downloading and installing Perl Modules from CPAN</li>
 <li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
-<li><a href="/pro/how-to-add-a-relative-directory-to-inc">How to change @INC to a relative directory</a><li>
+<li><a href="/how-to-add-a-relative-directory-to-inc">How to change @INC to a relative directory</a><li>
 <li>local::lib</li>
 </ol>
 
