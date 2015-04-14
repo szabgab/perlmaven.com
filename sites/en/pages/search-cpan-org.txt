@@ -18,8 +18,6 @@ This is the same back-end that powers the fancier <a href="https://metacpan.org/
 
 <screencast file="/media/videos/search-cpan-org" />
 
-If you would like to follow the development of the project, subscribe to the <a href="/pro">Perl Maven Pro</a>.
-
 <h2>Objectives</h2>
 
 This project has a number of objectives:
@@ -28,7 +26,7 @@ This project has a number of objectives:
   <li>Some people complain that MetaCPAN.org is too fancy for them and they prefer the look-and-feel of search.cpan.org. On the other hand some of them also complain about bugs and missing features in search.cpan.org. This project can provide them with an alternative.</li>
   <li>It will be able to provide some feedback to the MetaCPAN authors for the features that might be still missing in MetaCPAN or in MetaCPAN API.</li>
   <li>This can be an interesting exercise on rebuilding an existing service when you don't have access to its source code, or when you cannot read and understand the source code. (The former being a special case of the latter.)</li>
-  <li>This can be an interesting project to follow and explain with <a href="/pro">Perl Maven Pro</a> articles and screencasts. It is like many other rewrite project
+  <li>This can be an interesting project to follow and explain with articles and screencasts. It is like many other rewrite project
       when you already have a working web-site and you have the database behind it, but for some reason you cannot read the source code of the application. Either because it is
       not available to you, or because it is so unreadable that trying to analyze it would take a lot of time.</li>
   <li>A nice exercise in writing tests for an existing project.</li>
@@ -152,14 +150,12 @@ Hence we are going to set the robots.txt to disallow every well-behaving user-ag
 <h2>Perl Maven Pro</h2>
 
 To follow the development of the project, you can look at <a href="https://github.com/szabgab/MetaCPAN-SCO">GitHub repositor</a>, but if you'd also like to get detailed
-explanation of each step, then subscribe to the <a href="/pro">Perl Maven Pro</a>.
-
-The already existing articles and screencasts are going to be listed here:
+explanation of each step, then check out the following articles and screencasts:
 
 <ul>
   <li><a href="/create-skeleton-for-sco">Getting started - Create skeleton for the SCO clone application</a></li>
   <li><a href="/add-some-acceptance-tests">Add some acceptance tests using search.cpan.org</a></li>
-  <li><a href="/pro/rename-the-sco-project">Rename the SCO cloning project</a></li>
+  <li><a href="/rename-the-sco-project">Rename the SCO cloning project</a></li>
   <li><a href="/pro/create-skeleton-psgi-application">Create skeleton PSGI application for the SCO project</a></li>
   <li><a href="/pro/start-using-template-toolkit-to-show-empty-pages">Start using Template Toolkit to show the empty pages</a></li>
   <li><a href="/pro/looking-at-specific-commit-in-github">Looking at a specific commit in GitHub</a></li>
