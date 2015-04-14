@@ -286,6 +286,8 @@ Its source code is in <a href="https://github.com/book/Act">the Act repository</
 <a href="https://github.com/maddingue">Sébastien Aperghis-Tramoni (maddingue)</a>, <a href="http://philippe.bruhat.net/">Philippe Bruhat (BooK)</a>,
 and <a href="https://metacpan.org/author/CHOLET">Éric Cholet</a>.
 
+In case the service is not available you can ask for help on the <hl>#act</hl> channel on irc.perl.org. Specifically you might want to ping <hl>maddingue</hl> there.
+
 <h2>YAPC::EU</h2>
 
 <a href="http://yapc.eu/">yapc.eu</a> and <a href="http://www.yapceurope.org/">www.yapceurope.org</a>
