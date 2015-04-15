@@ -19,6 +19,8 @@ I knew it will be difficult, somehow I still don't like checking the speed of SQ
 
 <screencast file="/media/videos/comparing-the-speed-of-json-decoders" />
 
+<a href="https://www.youtube.com/watch?v=xGJkTOBvmY4">YouTube</a>
+
 In other cases I might have started by profiling the script, but our script had two very distinct parts, reading 
 the JSON file and then inserting data to the database, so even before involving some heavy weight profiling, 
 I added a print statement just after the JSON was read and ran the script.
