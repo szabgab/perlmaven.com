@@ -51,8 +51,7 @@ This is going to be a long project, but it might help understand various techniq
   <li><a href="/pro/multiple-command-line-counters">Multiple command line counters with plain TSV text file back-end</a></li>
   <li><a href="/pro/counter-with-database-backend-using-dbix-class">A command line counter with database back-end using DBIx::Class</a></li>
   <li><a href="/pro/command-line-counter-with-json-backend">Command line counter with JSON backend</a></li>
-<!--
---> 
+  <li><a href="/pro/counter-with-dancer-sessions">Counter with Dancer session</a></li>
 </ul>
 
 
