@@ -18,6 +18,8 @@ Anyway, I created a smaller version of the problem. Look at the example:
 
 <screencast file="/media/videos/dont-interpolate-in-printf" />
 
+<a href="https://www.youtube.com/watch?v=Plv9nT9RzdE&index=14">YouTube</a>
+
 In the root directory of the project I had two files, a script and a module representing the current file
 to be processed:
 
