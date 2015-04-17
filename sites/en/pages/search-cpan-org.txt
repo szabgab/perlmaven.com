@@ -156,7 +156,7 @@ explanation of each step, then check out the following articles and screencasts:
   <li><a href="/create-skeleton-for-sco">Getting started - Create skeleton for the SCO clone application</a></li>
   <li><a href="/add-some-acceptance-tests">Add some acceptance tests using search.cpan.org</a></li>
   <li><a href="/rename-the-sco-project">Rename the SCO cloning project</a></li>
-  <li><a href="/pro/create-skeleton-psgi-application">Create skeleton PSGI application for the SCO project</a></li>
+  <li><a href="/create-skeleton-psgi-application">Create skeleton PSGI application for the SCO project</a></li>
   <li><a href="/pro/start-using-template-toolkit-to-show-empty-pages">Start using Template Toolkit to show the empty pages</a></li>
   <li><a href="/pro/looking-at-specific-commit-in-github">Looking at a specific commit in GitHub</a></li>
   <li><a href="/pro/create-the-sco-look-and-feel">Create the search.cpan.org look and feel</a></li>
