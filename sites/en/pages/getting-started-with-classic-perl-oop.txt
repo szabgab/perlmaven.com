@@ -11,7 +11,7 @@
 While a lot of people recommend using advanced OOP systems for Perl
 such as <a href="/moose">Moose</a> or <a href="/moo">Moo</a>, there are many applications that use the 
 classic OOP system of Perl. If you want or need to understand such
-applications, you'd better make yourself familiar with the class OOP
+applications, you'd better make yourself familiar with the classic OOP
 system of Perl.
 
 Besides, both Moose and Moo are built on top
