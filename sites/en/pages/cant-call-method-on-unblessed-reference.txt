@@ -76,7 +76,7 @@ On the other hand, in the first script, the critical part of the code was change
 <hl>$data->Storable::freeze;</hl>.
 
 Perl thought that we are calling the <hl>Storable::freeze</hl> method on the <hl>$data</hl> object.
-This code would work if the <hl>$data</hl> was a <a href="/pro/getting-started-with-classic-perl-oop">blessed reference</a>,
+This code would work if the <hl>$data</hl> was a <a href="/getting-started-with-classic-perl-oop">blessed reference</a>,
 though it would probably do something different than what we meant.
 
 <h2>use</h2>

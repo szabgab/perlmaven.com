@@ -276,7 +276,7 @@ say $text;                       # The black cat abc the green tree
 <h2>Blessed references</h2>
 
 As <a href="/constructor-and-accessors-in-classic-perl-oop">explained elsewhere</a>,
-in the <a href="/pro/getting-started-with-classic-perl-oop">classic object oriented system</a> of Perl
+in the <a href="/getting-started-with-classic-perl-oop">classic object oriented system</a> of Perl
 the <hl>bless</hl> function is used to connect a hash reference to a namespace. (Actually
 it is the same in <a href="/moo">Moo</a> and <a href="/moose">Moose</a>, but there it is
 mostly hidden from our eyes.)
