@@ -69,14 +69,16 @@ When perl encounters <hl>use WWW::Mechanize</hl>, it searches the directories
 listed in <hl>@INC</hl> array. In each one of them it looks for a subdirectory
 called <hl>WWW</hl> and inside the subdirectory a file called <hl>Mechanize.pm</hl>
 
-Next to where the <hl>get.pl</hl> we create a subdirectory called <hl>lib</hl>, inside that a 
-subdirectory called <hl>WWW</hl>, and inside that directory a file called <hl>Mechanize.pm</hl>.
+In the same directory where the <hl>get.pl</hl> was saved, we create a subdirectory called <hl>lib</hl>,
+and inside that a subdirectory called <hl>WWW</hl>, and inside that directory a file called <hl>Mechanize.pm</hl>.
 We have a directory structure like this:
 
 <code>
   ../get.pl
      lib/WWW/Mechanize.pm
 </code>
+
+The content of Mechanize.pm will be the following:
 
 <code lang="perl">
 package WWW::Mechanize;
@@ -129,13 +131,13 @@ freaks out some unsuspecting readers of that code. In reality all
 Perl cares about is that the value will be <a href="/boolean-values-in-perl">boolean true</a> in the Perlish
 sense.
 
-<hl>The constructor</hl>
+<h2>The constructor</h2>
 
 So far we created a module but it is not a class yet.
 
 The next step is adding a constructor that will create
 an instance  (or object) of the class. If you come from another language or
-if you have seen Moose or <a href="/moo">Moo</a> you might be surprised that
+if you have seen <a href="/moose">Moose</a> or <a href="/moo">Moo</a> you might be surprised that
 we need to create a constructor, but this is how the classic OOP system
 of Perl works, and this is what happens in both Moose and Moo under the hood.
 
@@ -160,16 +162,16 @@ sub new {
 </code>
 
 The <hl>new</hl> <b>constructor</b> is just a regular subroutine declared with the
-<hl>sub</hl> keyword. Nothing is really special about it. Not even it name!
+<hl>sub</hl> keyword. Nothing is really special about it. Not even its name!
 In Perl, any subroutine can act as a constructor, the word <hl>new</hl> is not
 reserved, or special in any way, except that it is the most common name for the
 constructor.
 
 In Object Oriented programming people usually use the term <hl>method</hl>
 for all the actions you can do on the class and on the object. (In our
-example that mean <hl>get></hl>, <hl>content</hl> and even <hl>new</hl> are
+example that means <hl>get</hl>, <hl>content</hl> and even <hl>new</hl> are
 methods.  In Perl there is no special keyword to create a method. Methods
-(including the constructor) are declared using the <hl>sub</hl> key just
+(including the constructor) are declared using the <hl>sub</hl> keyword just
 as regular functions are. The difference is how you call them (methods are
 always called with the single-arrow notation) and what is their first parameter.
 When we call the <hl>new</hl> method on the class-name (in our case WWW::Mechanize), perl
@@ -254,7 +256,7 @@ again you will see:
 HASH(0x7fab54005480)
 </code>
 
-This is just a plain references to a hash without any relation to <hl>WWW::Mechanize</hl>.
+This is just a plain reference to a hash without any relation to <hl>WWW::Mechanize</hl>.
 
 This can be useful when you see something like that printed out by mistake or during a
 debugging session, so you can recognize if a reference is a plain reference or if it
@@ -329,11 +331,8 @@ as a simple way to fetch the web page. It is very simple and there are
 <a href="/simple-way-to-fetch-many-web-pages">other and more robust</a> ways to fetch the
 content of a web page, but it is good enough for our current purposes.
 
-Actually we disregard the arguments the user passed in the 
-
-
 The call <hl>LWP::Simple::get($address);</hl> will download the page and then we assign it to
-the hash representing the object: <hl>$self->{content}</hl>.
+a key in the hash representing the object: <hl>$self->{content}</hl>.
 
 Basically this is a new attribute of the object that was added during run time.
 As the object is just a hash we can do this. There is no need to declare
@@ -342,7 +341,7 @@ the attributes up front.
 <h2>Adding a getter</h2>
 
 An <hl>accessor</hl> (or getter) is just another simple subroutine, that receives the
-current object as the first (and only) parameter and return the content of the respective
+current object as the first (and only) parameter and returns the content of the respective
 element of the hash:
 
 <code lang="perl">
