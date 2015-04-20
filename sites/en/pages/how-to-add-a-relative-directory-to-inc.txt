@@ -236,9 +236,18 @@ use Path::Tiny qw(path);
 use lib path($0)->absolute->sibling('lib')->stringify;
 </code>
 
+<h2>Solution 7 - rlib</h2>
+
+I've never seen this before but Tony Edwardson has suggested  <a href="https://metacpan.org/pod/rlib">rlib</a> which looks great.
+It has not seen any release since 1998, but it very simple and it seems to "just work". (I've tried on Linux and OSX.)
+
+<code lang="perl">
+use rlib '../lib';
+</code>
+
 
 <h2>Conclusion</h2>
 
-If you can install CPAN modules, and I really hope for your that you can, I'd recommend <hl>Path::Tiny</hl>.
+If you can install CPAN modules, and I really hope for your that you can, I'd recommend <hl>Path::Tiny</hl> or <hl>rlib</hl>.
 
 
