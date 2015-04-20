@@ -1,6 +1,6 @@
 =title How to add a relative directory to @INC
 =timestamp 2015-04-13T09:50:00
-=indexes Path::Tiny, path, FindBin, $Bin, File::Spec, catdir, File::Basename, dirname, Dir::Self, __DIR__, @INC, lib
+=indexes Path::Tiny, path, FindBin, $Bin, File::Spec, catdir, File::Basename, dirname, Dir::Self, __DIR__, @INC, lib, rlib
 =status show
 =books advanced_book
 =author szabgab
