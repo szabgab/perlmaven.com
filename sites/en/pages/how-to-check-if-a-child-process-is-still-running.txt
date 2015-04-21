@@ -8,7 +8,7 @@
 
 =abstract start
 
-Sometimes, when we use <a href="/pro/fork">fork</a> to create one or more child-processes we would like to
+Sometimes, when we use <a href="/fork">fork</a> to create one or more child-processes we would like to
 know if the child process has stopped working or if it is still alive.
 
 Normally we use <hl>wait</hl> or <hl>waitpid</hl> to notice when a child process has finished. The problem 

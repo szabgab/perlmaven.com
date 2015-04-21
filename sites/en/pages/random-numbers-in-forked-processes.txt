@@ -22,7 +22,7 @@ $ perl -E 'say rand(6)'
 2.20041864735506
 </code>
 
-What happens when we use <a href="/pro/fork">fork()</a> or
+What happens when we use <a href="/fork">fork()</a> or
 <a href="https://metacpan.org/pod/Parallel::ForkManager">Parallel::ForkManager</a> to create child processes?
 
 =abstract end
