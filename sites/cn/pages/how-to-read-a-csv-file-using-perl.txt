@@ -106,7 +106,7 @@ Boszorkany,Herceg,9,Meselo
 
 <h2>Text::CSV</h2>
 
-好像有点复杂了，是吧，那好，求助 CPAN。幸运的是，<a href="https://metacpan.org/module/Text::CSV">Text::CSV</a> 能够帮助我们。
+好像有点复杂了，是吧，那好，求助 CPAN。幸运的是，<a href="https://metacpan.org/pod/Text::CSV">Text::CSV</a> 能够帮助我们。
 
 解决上个问题的代码：
 
@@ -171,10 +171,10 @@ alma",100,Kiralyno
 Boszorkany,Herceg,9,Meselo
 </code>
 
-我们的上个解决方案又不行了。不过 <a href="https://metacpan.org/module/Text::CSV">Text::CSV</a> 是可以解决这个问题的。
+我们的上个解决方案又不行了。不过 <a href="https://metacpan.org/pod/Text::CSV">Text::CSV</a> 是可以解决这个问题的。
 
 
-以下代码基于<a href="https://metacpan.org/module/Text::CSV_XS">Text::CSV_XS</a> 模块现任维护者的评论:
+以下代码基于<a href="https://metacpan.org/pod/Text::CSV_XS">Text::CSV_XS</a> 模块现任维护者的评论:
 
 <code lang="perl">
 #!/usr/bin/perl

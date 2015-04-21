@@ -148,7 +148,7 @@ then probably it is not worth the investment. On the other hand if the sorting
 is a larger part of the total run-time, you should probably use the Schwartzian
 transformation.
 
-In order to find out which is the case, use <a href="https://metacpan.org/module/Devel::NYTProf">Devel::NYTProf to
+In order to find out which is the case, use <a href="https://metacpan.org/pod/Devel::NYTProf">Devel::NYTProf to
 profile</a> your code.
 
 (Thanks to <a href="http://twitter.com/Smylers2">Smylers</a> for reviewing the article.)

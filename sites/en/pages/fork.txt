@@ -27,8 +27,9 @@ In both "instance" of the script there will be all the variables that already ex
 process, but there is no connection between the variables of the two processes. There is no direct
 way for one process to update (or even to check) the variables in the other process.
 
-When we call <hl>fork()</hl> it can return 3 different values. It will return <hl>undef</hl> if
-the <hl>fork</hl> did not succeed. For example because we reach the maximum number of processes
+When we call <hl>fork()</hl> it can return 3 different values: <hl>undef</hl>, 0, or some other number.
+
+It will return <hl>undef</hl> if the <hl>fork</hl> did not succeed. For example because we reach the maximum number of processes
 in the operating system. In that case we don't have much to do. We might report it and we might
 wait a bit, but that's about what we can do.
 

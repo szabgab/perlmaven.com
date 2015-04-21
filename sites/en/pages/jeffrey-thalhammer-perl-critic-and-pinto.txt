@@ -45,8 +45,8 @@ Show notes:
    0:00
    Gabor: Hi, this is Gabor Szabo in the first episode of the Perl Maven show, or television, with me is Jeffrey Thalhammer.
    I am really happy that he volunteered to be the first guinea pig, in the first interview. He is the author of the
-   <a href="https://metacpan.org/module/Perl::Critic">Perl::Critic</a> and more recently the
-   <a href="https://metacpan.org/module/Pinto">Pinto</a> application, module
+   <a href="https://metacpan.org/pod/Perl::Critic">Perl::Critic</a> and more recently the
+   <a href="https://metacpan.org/pod/Pinto">Pinto</a> application, module
    and I'd like him to... hi Jeffrey.. now maybe I'll talk to him so hi
   </div>
 

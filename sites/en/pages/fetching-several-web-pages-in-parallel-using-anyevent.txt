@@ -65,9 +65,9 @@ say 'Finish';
 
 <h2>Explanation</h2>
 
-We are using the <a href="https://metacpan.org/module/AnyEvent">AnyEvent</a> module,
+We are using the <a href="https://metacpan.org/pod/AnyEvent">AnyEvent</a> module,
 and with that we use the <hl>http_get</hl> function
-of the <a href="https://metacpan.org/module/AnyEvent::HTTP">AnyEvent::HTTP</a> helper module. 
+of the <a href="https://metacpan.org/pod/AnyEvent::HTTP">AnyEvent::HTTP</a> helper module. 
 
 Basically AnyEvent provides its own loop, the so-called <b>event-loop</b> that runs when
 we call <hl>$cv->recv</hl>. <hl>$cv</hl> has an internal counter. It is increased by every

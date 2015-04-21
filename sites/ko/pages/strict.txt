@@ -59,12 +59,12 @@ if (...) {
 많은 모듈들은 어떤 파일 안에서 그 모듈을 <hl>use</hl>했을 때 자동으로 그 파일에 대해
 <hl>use strict</hl>가 켜지게 되어 있습니다.
 
-그런 모듈의 예로는 <a href="https://metacpan.org/module/Moose">Moose</a>,
-<a href="https://metacpan.org/module/Moo">Moo</a>, <a href="https://metacpan.org/module/Dancer">Dancer</a>,
-<a href="https://metacpan.org/module/Mojolicious">Mojolicious</a> 등이 있고 이 외에도 더 있습니다.
+그런 모듈의 예로는 <a href="https://metacpan.org/pod/Moose">Moose</a>,
+<a href="https://metacpan.org/pod/Moo">Moo</a>, <a href="https://metacpan.org/module/Dancer">Dancer</a>,
+<a href="https://metacpan.org/pod/Mojolicious">Mojolicious</a> 등이 있고 이 외에도 더 있습니다.
 
 <a href="https://github.com/szabgab/Test-Strict/blob/master/lib/Test/Strict.pm#L242">그런 모듈의 목록</a>이
-<a href="https://metacpan.org/module/Test::Strict">Test::Strict</a>의 소스 안에 들어 있습니다.
+<a href="https://metacpan.org/pod/Test::Strict">Test::Strict</a>의 소스 안에 들어 있습니다.
 여러분이 그런 모듈을 추가로 발견한다면, Test::Strict의 버그 리포트를 통해 알려주시거나
 직접 고치신 후 pull 요청을 보내주시기 바랍니다.
 

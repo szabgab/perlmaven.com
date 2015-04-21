@@ -26,14 +26,14 @@ Como los META archivos generalmente se generan automáticamente cuando se suelta
 por el autor, voy a mostrarte como puedes decir a los 4 sistemas de paquetes principales 
 incluir el enlace del repositorio.
 
-En los ejemplos utilizare el enlace al repositorio de <a href="https://metacpan.org/module/Task::DWIM"> Task::DWIM</a>,
+En los ejemplos utilizare el enlace al repositorio de <a href="https://metacpan.org/pod/Task::DWIM"> Task::DWIM</a>,
 que es una distribución experimental listado todos los módulos incluidos en una <a href="http://dwimperl.com/"> DWIM Perl</a>
 distribución.
 
 
 <h2>ExtUtils::MakeMaker</h2>
 
-Si utilizas <a href="https://metacpan.org/module/ExtUtils::MakeMaker"> ExtUtils::MakeMaker</a> agregar lo siguiente a tu Makefile.PL
+Si utilizas <a href="https://metacpan.org/pod/ExtUtils::MakeMaker"> ExtUtils::MakeMaker</a> agregar lo siguiente a tu Makefile.PL
 como parámetro en la función <b>WriteMakefile</b>:
 
 
@@ -54,7 +54,7 @@ Si su versión de ExtUtils::MakeMaker no admite todavía esto, simplemente actua
 
 <h2>Module::Build</h2>
 
-Si utilizas <a href="https://metacpan.org/module/Module::Build"> Module::Build</a>, agregue lo siguiente al Build.PL,
+Si utilizas <a href="https://metacpan.org/pod/Module::Build"> Module::Build</a>, agregue lo siguiente al Build.PL,
 en la llamada <b>Module::Build->new</b>:
 
 <code lang="perl">
@@ -68,7 +68,7 @@ meta_merge => {
 
 <h2>Module::Install</h2>
 
-Si utilizas <a href="https://metacpan.org/module/Module::Install"> Module::Install</a> agregar lo siguiente a Makefile.PL:
+Si utilizas <a href="https://metacpan.org/pod/Module::Install"> Module::Install</a> agregar lo siguiente a Makefile.PL:
 
 <code lang="perl">
 repository 'https://github.com/dwimperl/Task-DWIM';
@@ -77,7 +77,7 @@ repository 'https://github.com/dwimperl/Task-DWIM';
 <h2>Dist::Zilla</h2>
 
 Si utilizas <a href="http://dzil.org/"> Dist::Zilla</a>, el
-<a href="https://metacpan.org/module/Dist::Zilla::Plugin::Repository"> Dist::Zilla::plugin::Repository</a>
+<a href="https://metacpan.org/pod/Dist::Zilla::Plugin::Repository"> Dist::Zilla::plugin::Repository</a>
 agregará automáticamente el enlace a su repositorio, aunque también se puede especificar manualmente.
 
 <code lang="perl">
@@ -87,7 +87,7 @@ Repository.URL = https://github.com/dwimperl/Task-DWIM.git
 
 Una versión detallada incluye más detalles como en el ejemplo siguiente. Como puedo ver, estas piezas son solamente
 incluidas en el archivo META.json y no en el archivo META.yml. Para generar ese archivo, necesitará también
-incluir el <a href="https://metacpan.org/module/Dist::Zilla::Plugin::MetaJSON"> MetaJSON plugin</a> de Dist::Zilla.
+incluir el <a href="https://metacpan.org/pod/Dist::Zilla::Plugin::MetaJSON"> MetaJSON plugin</a> de Dist::Zilla.
 
 <code lang="perl">
 [MetaResources]
@@ -103,7 +103,7 @@ Hay otras maneras de <a href="http://www.lowlevelmanager.com/2012/05/dzil-plugin
 los enlaces de repositorio</a> a los META archivos  cuando se utiliza Dist::Zilla.
 
 Probablemente la más simple forma es usar el
-<a href="https://metacpan.org/module/Dist::Zilla::Plugin::GithubMeta"> GithubMeta</a> plugin 
+<a href="https://metacpan.org/pod/Dist::Zilla::Plugin::GithubMeta"> GithubMeta</a> plugin 
 añadiendo la siguiente línea al archivo dist.ini:
 
 <code>
@@ -121,7 +121,7 @@ Tal vez ya has solucionado el error que me gustaría arreglar. Si puedo ver tu r
 <h2>Otros recursos</h2>
 
 Si ya ha lidiado con esto, habría que agregar otros recursos también.
-El <a href="https://metacpan.org/module/CPAN::Meta::Spec#resources"> CPAN META Specification </a> tiene todo lo que aparece.
+El <a href="https://metacpan.org/pod/CPAN::Meta::Spec#resources"> CPAN META Specification </a> tiene todo lo que aparece.
 Si algo no está claro, sólo pregunta.
 
 <h2>Licencias</h2>

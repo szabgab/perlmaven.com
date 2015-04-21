@@ -116,7 +116,7 @@ POD를 출력하는 데 사용되는 도구들은 통상적으로 head1의 텍�
 Perl에 딸려 있는 <hl>perldoc</hl> 명령어는 POD를 man 페이지처럼 출력합니다. 이것은 리눅스에는
 꽤 유용합니다. 윈도우에서는 그렇게까지 좋지는 않습니다.
 
-<a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> 모듈은 <hl>pod2html</hl>라는 명령행 도구를
+<a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a> 모듈은 <hl>pod2html</hl>라는 명령행 도구를
 제공합니다. 이것은 POD를 HTML 문서로 만들어서 브라우저에서 볼 수 있게 해줍니다.
 
 POD를 가지고 pdf나 mobi 파일을 만드는 도구들도 있습니다.

@@ -144,7 +144,7 @@ ASCII에서조차도, 파일 안에 글자 <hl>a</hl>가 들어있는 건 아니
 따라서 C 프로그래밍 언어로 작성된 프로그램은 텍스트 파일이지만, 이것을 컴파일하여 나온 결과물은
 바이너리입니다.
 
-Perl 프로그램은 텍스트 파일이지만, 이것을 <a href="https://metacpan.org/module/PAR::Packer">PAR::Packer</a>를
+Perl 프로그램은 텍스트 파일이지만, 이것을 <a href="https://metacpan.org/pod/PAR::Packer">PAR::Packer</a>를
 사용하여 압축한다면 바이너리 파일이 될 것입니다.
 
 마이크로소프트 워드 파일은 바이너리 파일입니다. 실제 텍스트 외에 글꼴의 크기와 색상을 지정하기 위한

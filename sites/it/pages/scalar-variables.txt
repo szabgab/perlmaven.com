@@ -305,7 +305,7 @@ Use of uninitialized value $y in addition (+) at example.pl line 9.
 Se volete evitare la conversione automatica di una stringa quando non può essere convertita completamente,
 potete controllare se la stringa ha l'aspetto di un numero quando la ricevete dal mondo esterno.
 
-A questo scopo dobbiamo caricare il modulo <a href="https://metacpan.org/module/Scalar::Util">Scalar::Util</a>,
+A questo scopo dobbiamo caricare il modulo <a href="https://metacpan.org/pod/Scalar::Util">Scalar::Util</a>,
 e usare la subroutine <hl>looks_like_number</hl> che esso fornisce.
 
 <code lang="perl">

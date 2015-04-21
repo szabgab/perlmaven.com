@@ -16,7 +16,7 @@ Par exemple, pour une distribution, ils peuvent indiquer :
 <li><a href="comment-ajouter-le-lien-vers-le-systeme-de-controle-de-versions-d-une-distribution-cpan">le lien vers le système de contrôle de version</a></li>
 </ul>
 
-Ces champs sont répertoriés dans la documentation du module <a href="https://metacpan.org/module/CPAN::Meta::Spec">CPAN::Meta::Spec</a>.
+Ces champs sont répertoriés dans la documentation du module <a href="https://metacpan.org/pod/CPAN::Meta::Spec">CPAN::Meta::Spec</a>.
 
 Il n'y a pas de champ spécifié pour la liste des contributeurs de la distribution, mais il y a un moyen d'ajouter des champs personnalisés :
 il suffit de les préfixer avec x_ ou X_.
@@ -86,7 +86,7 @@ Meta->add_metadata(
 <h2>Dist::Zilla</h2>
 
 Quand j'ai commencé à utiliser ce module, il n'y avait pas de façon manuelle pour ajouter un champ supplémentaire ayant plusieurs valeurs,
-mais David Golden a rapidement livré le module d'extension <a href="https://metacpan.org/module/Dist::Zilla::Plugin::Meta::Contributors">Dist::Zilla::Plugin::Meta::Contributors</a> qui vous permet d'écrire ceci :
+mais David Golden a rapidement livré le module d'extension <a href="https://metacpan.org/pod/Dist::Zilla::Plugin::Meta::Contributors">Dist::Zilla::Plugin::Meta::Contributors</a> qui vous permet d'écrire ceci :
 
 <code lang="perl">
 [Meta::Contributors]

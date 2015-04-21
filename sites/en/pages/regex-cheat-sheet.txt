@@ -92,3 +92,25 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
 </code>
 
 
+<h2>Extended</h2
+
+<code>
+  (?#text)             Embedded comment
+  (?adlupimsx-imsx)    One or more embedded pattern-match modifiers, to be turned on or off.
+  (?:pattern)          Non-capturing group.
+  (?|pattern)          Branch test.
+  (?=pattern)          A zero-width positive look-ahead assertion.
+  (?!pattern)          A zero-width negative look-ahead assertion.
+  (?<=pattern)         A zero-width positive look-behind assertion.
+  (?<!pattern)         A zero-width negative look-behind assertion.
+
+  (?'NAME'pattern)
+  (?<NAME>pattern)     A named capture group.
+  \k<NAME>
+  \k'NAME'             Named backreference.
+
+  (?{ code })          Zero-width assertion with code execution.
+  (??{ code })         A "postponed" regular subexpression with code execution.
+</code>
+
+

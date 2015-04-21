@@ -38,15 +38,15 @@ mai fi expus la potențialele probleme date de depozitul public CPAN.
 
 De-a lungul anilor, am construit mai multe depozite CPAN la comandă
 folosind unelte
-ca <a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a>
-și <a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>.
+ca <a href="https://metacpan.org/pod/CPAN::Mini">CPAN::Mini</a>
+și <a href="https://metacpan.org/pod/CPAN::Site">CPAN::Site</a>.
 
 Dar întotdeauna mi s-au părut greoaie, nu am fost niciodată mulțumit de
 ele.  Cu vreo doi ani în urmă un client m-a angajat să-i construiesc un
 alt depozit CPAN. Dar de data acesta am avut oportunitatea de a începe
 de la zero.  Pinto este rezultatul acestui efort.
 
-<a href="https://metacpan.org/module/Pinto">Pinto</a> este o unealtă
+<a href="https://metacpan.org/pod/Pinto">Pinto</a> este o unealtă
 robustă pentru crearea și administrarea de depozite CPAN, la comandă.
 Are mai multe caracteristici puternice care te ajută să administrezi
 în siguranță toate modulele Perl de care are nevoie aplicația

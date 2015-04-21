@@ -19,7 +19,7 @@ Super Large</b> no arquivo README.txt
 <h2>File::Slurp</h2>
 
 Se você puder instalar o <a
-href="https://metacpan.org/module/File::Slurp">File::Slurp</a> e se o arquivo
+href="https://metacpan.org/pod/File::Slurp">File::Slurp</a> e se o arquivo
 não for muito grande para ocupar a memória do seu computador, então esta pode
 ser uma solução:
 

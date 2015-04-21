@@ -10,7 +10,7 @@
 =abstract start
 
 前文介绍了<a
-href="http://perlmaven.com/how-to-add-link-to-version-control-system-of-a-cpan-distributions">如何添加指向版本控制的链接</a> 和 <a href="http://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan">如何添加证书字段</a> 到CPAN模块。<a href="https://metacpan.org/module/MetaCPAN::API">MetaCPAN::API</a>。
+href="http://perlmaven.com/how-to-add-link-to-version-control-system-of-a-cpan-distributions">如何添加指向版本控制的链接</a> 和 <a href="http://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan">如何添加证书字段</a> 到CPAN模块。<a href="https://metacpan.org/pod/MetaCPAN::API">MetaCPAN::API</a>。
 
 那么最近上传的模块中有多少是含有这种信息的？其实这都包含在<a href="https://metacpan.org/">Meta CPAN</a>，本节我们就用它来生成报告。
 
@@ -18,7 +18,7 @@ href="http://perlmaven.com/how-to-add-link-to-version-control-system-of-a-cpan-d
 
 <h2>完整的脚本</h2>
 
-使用<a href="https://metacpan.org/module/MetaCPAN::API">MetaCPAN::API</a>。
+使用<a href="https://metacpan.org/pod/MetaCPAN::API">MetaCPAN::API</a>。
 
 在命令行中，你必须传入要查询的模块数量，也可以选择使用PAUSE ID。（例如，当我检查我自己的发行模块时，这样执行<b>perl metacpan_meta.pl 100 SZABGAB</b>）。
 

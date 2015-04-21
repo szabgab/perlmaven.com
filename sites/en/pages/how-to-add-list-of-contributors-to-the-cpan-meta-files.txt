@@ -13,7 +13,7 @@ of automated information. For example it can list
 and <a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">link to the version control system</a>
 of the distribution.
 
-These fields are listed in the <a href="https://metacpan.org/module/CPAN::Meta::Spec">CPAN::Meta::Spec</a>.
+These fields are listed in the <a href="https://metacpan.org/pod/CPAN::Meta::Spec">CPAN::Meta::Spec</a>.
 
 There is no field specified for listing the contributors of a distribution,
 but there is a way to add arbitrary fields. They just need to start with x_ or X_.

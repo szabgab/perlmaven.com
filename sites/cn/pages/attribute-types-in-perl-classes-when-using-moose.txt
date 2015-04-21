@@ -65,7 +65,7 @@ Attribute (year) does not pass the type constraint because:
 
 <h2>用其它类作为类型限制</h2>
 
-除了 <a href="https://metacpan.org/module/Moose::Util::TypeConstraints#Default-Type-Constraints">默认类型限制</a>, Moose也允许你使用任何已有的类名作为类型限定。
+除了 <a href="https://metacpan.org/pod/Moose::Util::TypeConstraints#Default-Type-Constraints">默认类型限制</a>, Moose也允许你使用任何已有的类名作为类型限定。
 
 例如我们声明"birthday"属性是一个DateTime对象。
 

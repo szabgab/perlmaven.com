@@ -20,7 +20,7 @@ as well, though I have not tried them.
 
 =abstract end
 
-We are going to use the excellent <a href="https://metacpan.org/module/Excel::Writer::XLSX">Excel::Writer::XLSX</a>
+We are going to use the excellent <a href="https://metacpan.org/pod/Excel::Writer::XLSX">Excel::Writer::XLSX</a>
 module written by John McNamara and we are going to see several use-cases, based on the examples supplied with the
 package.
 

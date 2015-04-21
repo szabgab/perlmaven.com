@@ -27,14 +27,14 @@
 בלי לחשוף את עצמך לכל הפעלתנות של המאגר הציבורי של CPAN.
 
 במשך השנים בניתי מספר מאגרי CPAN מותאמים אישית באמצעות כלים כמו 
-<a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a>
-ו-<a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>.
+<a href="https://metacpan.org/pod/CPAN::Mini">CPAN::Mini</a>
+ו-<a href="https://metacpan.org/pod/CPAN::Site">CPAN::Site</a>.
 אך הם תמיד נראו מגושמים ולא ממש הייתי מאושר איתם. לפני מספר שנים, לקוח שכר אותו 
 לפתח עוד מערכת CPAN מותאמת ללקוח. אך הפעם הייתה לי הזדמנות להתחיל מאפס. 
 פינטו (Pinto) הוא התוצאה של אותו פרוייקט.
 
 
-<a href="https://metacpan.org/module/Pinto">פינטו</a> הוא כלי עתיר יכולות
+<a href="https://metacpan.org/pod/Pinto">פינטו</a> הוא כלי עתיר יכולות
 להקמת מאגר CPAN ולניהולו.
 יש לו מספר תכונות רבות עוצמה שמסייעות לנהל
  בביטחה את כל מודולי הפרל הנחוצים ליישום שלך.

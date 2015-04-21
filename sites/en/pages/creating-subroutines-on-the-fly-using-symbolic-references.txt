@@ -8,7 +8,7 @@
 
 =abstract start
 
-If you read the documentation of  <a href="https://metacpan.org/module/Log::Dispatch">Log::Dispatch</a>,
+If you read the documentation of  <a href="https://metacpan.org/pod/Log::Dispatch">Log::Dispatch</a>,
 you will see you can send a message to the logger by using the <hl>log</hl> method passing both the
 "log level" and the "message" like this: <hl>$logger->log( level => 'error', message => 'Blah, blah' );</hl>.
 For greater convenience you can also write <hl>$logger->error( 'Blah, blah' );</hl>.

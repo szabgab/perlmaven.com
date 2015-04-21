@@ -23,12 +23,12 @@ Soit le fichier META.yml, soit le fichier META.json, celui-ci étant le plus ré
 Comme les fichiers META sont généralement générés automatiquement lorsque la distribution est livrée par l'auteur,
 je vais vous montrer comment vous pouvez configurer les quatre principaux systèmes d'empaquetage pour inclure le champ dépôt.
 
-Dans les exemples ci-dessous, je vais utiliser le lien vers le dépôt de <a href="https://metacpan.org/module/Task::DWIM">Task::DWIM</a>
+Dans les exemples ci-dessous, je vais utiliser le lien vers le dépôt de <a href="https://metacpan.org/pod/Task::DWIM">Task::DWIM</a>
 qui est une distribution expérimentale qui liste tous les modules inclus dans la distribution <a href="http://dwimperl.com/">DWIM Perl</a>.
 
 <h2>ExtUtils::MakeMaker</h2>
 
-Si vous utilisez <a href="https://metacpan.org/module/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>,
+Si vous utilisez <a href="https://metacpan.org/pod/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>,
 ajoutez la ligne suivante dans votre Makefile.PL comme paramètre dans la fonction WriteMakefile :
 
 <code lang="perl">
@@ -43,7 +43,7 @@ Si votre version de ExtUtils::MakeMaker ne supporte pas cette fonctionnalité, i
 
 <h2>Module::Build</h2>
 
-Si vous utilisez <a href="https://metacpan.org/module/Module::Build">Module::Build</a>,
+Si vous utilisez <a href="https://metacpan.org/pod/Module::Build">Module::Build</a>,
 ajoutez la ligne suivante dans Build.PL, lors de l'appel à Module::Build->new :
 
 <code lang="perl">
@@ -56,7 +56,7 @@ meta_merge => {
 
 <h2>Module::Install</h2>
 
-Si vous utilisez <a href="https://metacpan.org/module/Module::Install">Module::Install</a>,
+Si vous utilisez <a href="https://metacpan.org/pod/Module::Install">Module::Install</a>,
 ajoutez la ligne suivante dans Makefile.PL :
 
 <code lang="perl">
@@ -66,7 +66,7 @@ repository 'https://github.com/dwimperl/Task-DWIM';
 <h2>Dist::Zilla</h2>
 
 Si vous utilisez <a href="http://dzil.org/">Dist::Zilla</a>,
-le module d'extension <a href="https://metacpan.org/module/Dist::Zilla::Plugin::Repository">Dist::Zilla::Plugin::Repository</a>
+le module d'extension <a href="https://metacpan.org/pod/Dist::Zilla::Plugin::Repository">Dist::Zilla::Plugin::Repository</a>
 ajoute automatiquement le lien vers votre dépôt, mais vous pouvez également le spécifier manuellement :
 
 <code lang="perl">
@@ -77,7 +77,7 @@ repository.url = https://github.com/dwimperl/Task-DWIM.git
 Une version détaillée incluerait plus de détails comme dans l'exemple suivant.
 Ces détails ne sont inclus que dans le fichier META.json, pas dans le fichier META.yml.
 Pour générer ce fichier, vous aurez également besoin de comprendre le module d'extension
-<a href="https://metacpan.org/module/Dist::Zilla::Plugin::MetaJSON">Dist::Zilla::Plugin::MetaJSON</a>.
+<a href="https://metacpan.org/pod/Dist::Zilla::Plugin::MetaJSON">Dist::Zilla::Plugin::MetaJSON</a>.
 
 <code lang="perl">
 [MetaResources]
@@ -101,7 +101,7 @@ Vous avez peut-être déjà fixé le bogue que j'aimerais corriger. Si je peux v
 <h2>Autres ressources</h2>
 
 Pendant que vous êtes dans la gestion des fichiers META, vous pouvez ajouter d'autres ressources de cette manière.
-La <a href="https://metacpan.org/module/CPAN::Meta::Spec#resources">spécification Meta CPAN</a> répertorie toutes ces ressources.
+La <a href="https://metacpan.org/pod/CPAN::Meta::Spec#resources">spécification Meta CPAN</a> répertorie toutes ces ressources.
 Si un point de cette documentation n'est pas clair, il suffit de demander de l'aide.
 
 <h2>Licences</h2>

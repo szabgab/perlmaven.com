@@ -305,7 +305,7 @@ Use of uninitialized value $y in addition (+) at example.pl line 9.
 перевод, вы можете проверять, выглядит ли строка как число, когда получаете ее из внешнего мира.
 
 Для этого нам нужно подгрузить модуль 
-<a href="https://metacpan.org/module/Scalar::Util">Scalar::Util</a> и содержащуюся в нем 
+<a href="https://metacpan.org/pod/Scalar::Util">Scalar::Util</a> и содержащуюся в нем 
 подпрограмму <hl>looks_like_number</hl>.
 
 <code lang="perl">

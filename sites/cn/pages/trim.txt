@@ -74,7 +74,7 @@ printf "<%s>\n", rtrim($z);  # < abc>
 
 要是实在不想拷贝那些东西，你可以安装一个模块。
 
-例如<a href="https://metacpan.org/module/String::Util">String::Util</a>提供了函数<hl>trim</hl>，你可以如下使用：
+例如<a href="https://metacpan.org/pod/String::Util">String::Util</a>提供了函数<hl>trim</hl>，你可以如下使用：
 
 <code lang="perl">
 use String::Util qw(trim);
@@ -90,7 +90,7 @@ printf "<%s>\n", trim( $z, left  => 0 );   # < abc>
 
 <h2>Text::Trim</h2>
 
-另一个模块<a href="https://metacpan.org/module/Text::Trim">Text::Trim</a>提供了3个函数，但是它极度采纳了Perl风格的写法，可能到了有些危险的地步。
+另一个模块<a href="https://metacpan.org/pod/Text::Trim">Text::Trim</a>提供了3个函数，但是它极度采纳了Perl风格的写法，可能到了有些危险的地步。
 
 如果你调用它并将返回值用在print语句或者赋给一个变量，它会返回整理过的字符串，并保持原始字符串不变。
 

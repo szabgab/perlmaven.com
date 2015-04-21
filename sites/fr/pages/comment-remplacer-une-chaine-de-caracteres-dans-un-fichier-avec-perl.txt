@@ -17,7 +17,7 @@ Vous devez maintenant remplacer <b>Tous droits réservés, Ma Jeune Pousse</b> p
 
 <h2>Remplacer le contenu avec File::Slurp</h2>
 
-Si vous pouvez installer <a href="https://metacpan.org/module/File::Slurp">File::Slurp</a> et
+Si vous pouvez installer <a href="https://metacpan.org/pod/File::Slurp">File::Slurp</a> et
 si le fichier n'est pas trop grand pour tenir dans la mémoire de votre ordinateur, alors ce qui suit peut être la solution :
 
 <code lang="perl">

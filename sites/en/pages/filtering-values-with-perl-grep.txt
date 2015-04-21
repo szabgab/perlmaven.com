@@ -84,7 +84,7 @@ If that's 0, the expression will evaluate to false, if it is any positive number
 
 This solution works, but because it depends on the context it might be unclear to some people.
 Let's see another solution using the <hl>any</hl> function of the
-<a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a> module.
+<a href="https://metacpan.org/pod/List::MoreUtils">List::MoreUtils</a> module.
 
 <h2>Do any of the elements match?</h2>
 

@@ -138,7 +138,7 @@ jedoch durch die Darstellungswerkzeuge.
 Das  <hl>perldoc</hl>-Kommando, das mit Perl mitkommt, stellt POD als Handbuch-Seiten (man pages) dar.
 Unter Linux ziemlich nützlich, unter Windows nicht ganz so gut.
 
-Das Modul <a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> stellt ein weiteres Kommandozeilen-Werkzeug
+Das Modul <a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a> stellt ein weiteres Kommandozeilen-Werkzeug
 mit dem Namen <hl>pod2html</hl> bereit. Dieses kann POD in HTML umwandeln, welches dann im Browser angezeigt werden kann.
 
 Es gibt andere Werkzeuge, um aus POD PDF oder Mobipocket-eBook-Dateien zu generieren.

@@ -120,7 +120,7 @@ files.
 
 
 Let's see an implementation of the first solution.
-We'll use <a href="https://metacpan.org/module/File::Find::Rule">File::Find::Rule</a> to traverse
+We'll use <a href="https://metacpan.org/pod/File::Find::Rule">File::Find::Rule</a> to traverse
 the file system and collect the filenames.
 
 <code lang="perl">
@@ -168,7 +168,7 @@ of File::Find::Rule is always case-sensitive. So the above code will only find f
 but not with <hl>.Pdf</hl> extension. The problem can easily be solved by writing: <hl>->name('*.[pP][dD][fF]')</hl>.
 That will disregard case for all 3 letters.
 
-The list of files returned by <a href="https://metacpan.org/module/File::Find::Rule">File::Find::Rule</a> contains the
+The list of files returned by <a href="https://metacpan.org/pod/File::Find::Rule">File::Find::Rule</a> contains the
 full path to each file, while we only need the filename. For that we create a new array called <hl>@files</hl>
 after we called <hl>basename()</hl> on each one of the entries. For this we used <a href="/transforming-a-perl-array-using-map">map</a>.
 We also called <hl>lc()</hl> on each name to turn them into a lower-case string.

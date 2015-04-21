@@ -19,7 +19,7 @@ Perl 5 並沒有內建函式可以移除陣列中重複的值，但這個題目�
 <h2>List::MoreUtils</h2>
 
 雖然視情況而定，但最簡單的方法多半是使
-用 <a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a>
+用 <a href="https://metacpan.org/pod/List::MoreUtils">List::MoreUtils</a>
 CPAN 模組中的 <hl>uniq</hl> 函式。
 
 <code lang="perl">

@@ -139,11 +139,11 @@ sub handle_item {
 이론적으로는 코드의 여러 부분을 정말로 동시에 병렬적으로 수행할 수 있을 것입니다.
 이를 위한 두 개의 주된 해결책은 <b>스레딩(threading)</b>과 <b>포킹(forking)</b>입니다.
 많은 프로그래밍 언어에서 스레딩이 더 선호되지만, Perl에서는 많은 이들이 포킹을 사용합니다.
-이렇게 하려면, CPAN에서 <a href="https://metacpan.org/module/Parallel::ForkManager">Parallel::ForkManager</a>
+이렇게 하려면, CPAN에서 <a href="https://metacpan.org/pod/Parallel::ForkManager">Parallel::ForkManager</a>
 모듈을 살펴보셔야 할 겁니다.
 
 비동기 또는 이벤트-드리븐 Perl 프로그래밍을 위해서는,
-<a href="https://metacpan.org/module/POE">POE</a>를 살펴보시는 게 좋을 겁니다.
+<a href="https://metacpan.org/pod/POE">POE</a>를 살펴보시는 게 좋을 겁니다.
 
 다른 기사에서, 각 경우에 대한 예를 살펴보도록 하겠습니다.
 

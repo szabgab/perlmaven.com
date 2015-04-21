@@ -148,7 +148,7 @@ So a program written in the C programming language is a text file, but after you
 compiled version is binary.
 
 A Perl program is a text file, but if you package it with
-<a href="https://metacpan.org/module/PAR::Packer">PAR::Packer</a> it will be a binary file.
+<a href="https://metacpan.org/pod/PAR::Packer">PAR::Packer</a> it will be a binary file.
 
 A Microsoft word file is a binary file as besides the actual text, it also contains various
 characters representing font size and color.

@@ -18,7 +18,7 @@ has this information. In this article we'll use it to create a report.
 
 <h2>The full script</h2>
 
-Using <a href="https://metacpan.org/module/MetaCPAN::API">MetaCPAN::API</a>.
+Using <a href="https://metacpan.org/pod/MetaCPAN::API">MetaCPAN::API</a>.
 
 On the command line you have to pass the number of distributions you'd like to fetch,
 and optionally you can also provide a PAUSE ID. (For example, when I check my own distributions

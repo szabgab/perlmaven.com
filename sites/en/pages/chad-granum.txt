@@ -36,13 +36,13 @@ interesting CPAN modules.  (31.06 min)
 </ul>
 
 <ul>
-  <li>Fennec on <a href="https://metacpan.org/module/Fennec">CPAN</a>, and the home page of <a href="http://exodist.github.io/Fennec/">Fennec</a></li>
-  <li><a href="https://metacpan.org/module/Fennec::Declare">Fennec::Declare</a> with all the magic of Devel::Declare.</li>
-  <li><a href="https://metacpan.org/module/Child">Child</a> wrapping fork, originally created for the <a href="https://github.com/schwern/perl5i">perl5i</a> project.</li>
+  <li>Fennec on <a href="https://metacpan.org/pod/Fennec">CPAN</a>, and the home page of <a href="http://exodist.github.io/Fennec/">Fennec</a></li>
+  <li><a href="https://metacpan.org/pod/Fennec::Declare">Fennec::Declare</a> with all the magic of Devel::Declare.</li>
+  <li><a href="https://metacpan.org/pod/Child">Child</a> wrapping fork, originally created for the <a href="https://github.com/schwern/perl5i">perl5i</a> project.</li>
   <li><a href="https://metacpan.org/release/Parallel::Runner">Parallel::Runner</a></li>
   <li>Check out the <a href="http://exodist.github.io/Fennec/#workflows-stages">workflow stages</a>, click on the 'step forward' to step through the code.</li>
-  <li><a href="https://metacpan.org/module/Mock::Quick">Mock::Quick</a></li>
+  <li><a href="https://metacpan.org/pod/Mock::Quick">Mock::Quick</a></li>
   <li><a href="http://www.dreamhost.com/">Dreamhost</a>, where Chad currently works, and where Fennec is being used.</li>
-  <li>The <a href="https://metacpan.org/module/DCI">DCI = Data, Context, Interactions</a> implementation on CPAN</li>
+  <li>The <a href="https://metacpan.org/pod/DCI">DCI = Data, Context, Interactions</a> implementation on CPAN</li>
 </ul>
 

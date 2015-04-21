@@ -16,7 +16,7 @@
 
 <h2>File::Slurp</h2>
 
-<a href="https://metacpan.org/module/File::Slurp">File::Slurp</a>을 설치 할수 있고 파일이 너무 커서 컴퓨터 메모리에 적재 할 수 없는 상황이 아니라면, 다음은 해결책이 될 수 있습니다. 
+<a href="https://metacpan.org/pod/File::Slurp">File::Slurp</a>을 설치 할수 있고 파일이 너무 커서 컴퓨터 메모리에 적재 할 수 없는 상황이 아니라면, 다음은 해결책이 될 수 있습니다. 
 
 <code lang="perl">
 use strict;

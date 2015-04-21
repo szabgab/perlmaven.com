@@ -91,7 +91,7 @@ there people won't want to hunt you down!
 <h2>Perl::Critic to the rescue</h2>
 
 The <a href="http://www.perlcritic.com/">Perl::Critic</a> has a policy called
-<a href="https://metacpan.org/module/Perl::Critic::Policy::ValuesAndExpressions::RequireQuotedHeredocTerminator">ValuesAndExpressions::RequireQuotedHeredocTerminator</a>
+<a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireQuotedHeredocTerminator">ValuesAndExpressions::RequireQuotedHeredocTerminator</a>
 that check exactly this situation.
 
 As explained in the <a href="/perl-critic-one-policy">article about improving your code</a>,

@@ -25,7 +25,7 @@ directory of the distribution.
 <h2>The normal workflow of the Perl module development</h2>
 
 There are 4 major packaging systems for Perl. The ones using
-<a href="https://metacpan.org/module/Module::Build">Module::Build</a> will have a file called <hl>Build.PL</hl>.
+<a href="https://metacpan.org/pod/Module::Build">Module::Build</a> will have a file called <hl>Build.PL</hl>.
 In this case the workflow to run the tests is
 
 <code>
@@ -34,8 +34,8 @@ perl Build
 perl Build test
 </code>
 
-<a href="https://metacpan.org/module/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>
-and <a href="https://metacpan.org/module/Module::Install">Module::Install</a> both use a file
+<a href="https://metacpan.org/pod/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>
+and <a href="https://metacpan.org/pod/Module::Install">Module::Install</a> both use a file
 called Makefile.PL
 
 In this case the flow is:

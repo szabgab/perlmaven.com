@@ -79,7 +79,7 @@ printf "<%s>\n", rtrim $z;  # < abc>
 
 정말, 정말로 앞에서 본 코드를 복사하고 싶지 않다면 늘 그렇듯 모듈을 설치하세요.
 
-예를 들면 <a href="https://metacpan.org/module/String::Util">String::Util</a>
+예를 들면 <a href="https://metacpan.org/pod/String::Util">String::Util</a>
 모듈은 <hl>trim</hl> 함수를 제공하며, 다음 예제처럼 사용할 수 있습니다.
 
 <code lang="perl">
@@ -99,7 +99,7 @@ By default it trims on both sides and you have to turn off trimming.
 
 <h2>Text::Trim</h2>
 
-또 다른 모듈인 <a href="https://metacpan.org/module/Text::Trim">Text::Trim</a>은
+또 다른 모듈인 <a href="https://metacpan.org/pod/Text::Trim">Text::Trim</a>은
 세 개의 함수를 모두 제공합니다.
 하지만 trim은 Perl스러운 방법으로 사용할 수 있는데 이것은 조금 위험할 수 있습니다.
 

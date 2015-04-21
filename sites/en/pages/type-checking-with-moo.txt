@@ -160,13 +160,13 @@ to load the module and import the function, and rewrite the isa-checking:
 <h2>Pre-defined types</h2>
 
 While Moo itself does not have types defined, there are several extension that provide
-type definitions. For example <a href="https://metacpan.org/module/MooX::Types::CLike">MooX::Types::CLike</a>
+type definitions. For example <a href="https://metacpan.org/pod/MooX::Types::CLike">MooX::Types::CLike</a>
 provides types a C programmer might be familiar with and
-<a href="https://metacpan.org/module/MooX::Types::MooseLike">MooX::Types::MooseLike</a>
-imitates the types of <a href="https://metacpan.org/module/MooseX::Types">MooseX::Types</a>.
+<a href="https://metacpan.org/pod/MooX::Types::MooseLike">MooX::Types::MooseLike</a>
+imitates the types of <a href="https://metacpan.org/pod/MooseX::Types">MooseX::Types</a>.
 
 It can be used to create your own type definitions, but it already comes with several types listed in
-<a href="https://metacpan.org/module/MooX::Types::MooseLike::Base">MooX::Types::MooseLike::Base</a>.
+<a href="https://metacpan.org/pod/MooX::Types::MooseLike::Base">MooX::Types::MooseLike::Base</a>.
 
 You can use the types it provides without any extra work.
 
@@ -233,10 +233,10 @@ inside-out objects, but they have a complexity price and they usually not worth 
 
 <h2>Perl::Critic</h2>
 
-A better approach is to use the regular objects and use <a href="https://metacpan.org/module/Perl::Critic">Perl::Critic</a> to
-locate code that breaks the encapsulation. Install <a href="https://metacpan.org/module/Perl::Critic::Nits">Perl::Critic::Nits</a>
+A better approach is to use the regular objects and use <a href="https://metacpan.org/pod/Perl::Critic">Perl::Critic</a> to
+locate code that breaks the encapsulation. Install <a href="https://metacpan.org/pod/Perl::Critic::Nits">Perl::Critic::Nits</a>
 and check your code for violation of
-<a href="https://metacpan.org/module/Perl::Critic::Policy::ValuesAndExpressions::ProhibitAccessOfPrivateData">Perl::Critic::Policy::ValuesAndExpressions::ProhibitAccessOfPrivateData</a>
+<a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitAccessOfPrivateData">Perl::Critic::Policy::ValuesAndExpressions::ProhibitAccessOfPrivateData</a>
 
 If you have them in your code you will get reports like this:
 

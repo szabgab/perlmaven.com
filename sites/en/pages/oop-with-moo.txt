@@ -22,7 +22,7 @@ the basics. (3:19 min)
 See on <a href="https://www.youtube.com/watch?v=aRkSb1AUS-0">YouTube</a>.
 
 <div id="text">
-We are going to see how to create a class using <a href="https://metacpan.org/module/Moo">Moo</a>.
+We are going to see how to create a class using <a href="https://metacpan.org/pod/Moo">Moo</a>.
 the Minimal Object Oriented system of Perl. In order to show this example, we need two files.
 One of them is a script called <hl>school.pl</hl> which has standard Perl preamble
 at the begining at it loads the <hl>Person</hl> module.

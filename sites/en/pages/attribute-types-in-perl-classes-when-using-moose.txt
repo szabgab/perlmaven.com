@@ -73,7 +73,7 @@ This error message shows that Moose did not accept the string "23 years ago" as 
 <h2>Another class as a type constraint</h2>
 
 Besides the
-<a href="https://metacpan.org/module/Moose::Util::TypeConstraints#Default-Type-Constraints">default type constraints</a>,
+<a href="https://metacpan.org/pod/Moose::Util::TypeConstraints#Default-Type-Constraints">default type constraints</a>,
 Moose also allows you to use the name of any existing class as a type constraint.
 
 For example you can declare that the "birthday" attribute must be a DateTime object.

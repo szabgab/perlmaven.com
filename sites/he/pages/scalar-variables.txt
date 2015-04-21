@@ -281,7 +281,7 @@ Use of uninitialized value $y in addition (+) at example.pl line 9.
 
 אם תירצו להמנע מהמרה אוטומטית של מחרוזות כשאין המרה מדוייקת, תוכלו לבדוק אם המחרוזת נראית כמו מספר כשאתם מקבלים אותה מהעולם החיצון.
 
-כדי לעשות זאת נשתמש במודול <a href="https://metacpan.org/module/Scalar::Util">Scalar::Util</a>,
+כדי לעשות זאת נשתמש במודול <a href="https://metacpan.org/pod/Scalar::Util">Scalar::Util</a>,
 ונשתמש בפונקציה שלה <hl>looks_like_number</hl> .
 
 <code lang="perl">

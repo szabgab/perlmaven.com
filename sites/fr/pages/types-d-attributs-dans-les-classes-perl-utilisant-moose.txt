@@ -78,7 +78,7 @@ Ce message d'erreur indique que Moose n'a pas accepté la chaîne "il y a 23 ans
 
 <h2>Définir un type de classe</h2>
 
-Outre les <a href="https://metacpan.org/module/Moose::Util::TypeConstraints#Default-Type-Constraints">contraintes de type par défaut (EN)</a> (comme <hl>Int</hl>),
+Outre les <a href="https://metacpan.org/pod/Moose::Util::TypeConstraints#Default-Type-Constraints">contraintes de type par défaut (EN)</a> (comme <hl>Int</hl>),
 Moose vous permet également d'utiliser le nom d'une classe existante comme une contrainte de type.
 
 Par exemple, vous pouvez déclarer que l'attribut "anniversaire" doit être un objet DateTime.

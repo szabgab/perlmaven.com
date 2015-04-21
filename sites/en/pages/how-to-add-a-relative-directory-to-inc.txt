@@ -161,7 +161,7 @@ That would still work the same way.
 
 <h2>Solution 4 - Dir::Self</h2>
 
-Another solution I saw recently uses <a href="https://metacpan.org/module/Dir::Self">Dir::Self</a>.
+Another solution I saw recently uses <a href="https://metacpan.org/pod/Dir::Self">Dir::Self</a>.
 When loading, this module will add a symbol <hl>__DIR__</hl> to the name-space of the current code.
 This symbol contains the absolute path to the directory where the file is located.
 So we only need to compute the relative directory using <hl>catdir</hl>:
@@ -188,7 +188,7 @@ File::Spec->rel2abs(join '', (File::Spec->splitpath($file))[0, 1])
 <h2>Solution 5 - Path::Tiny</h2>
 
 The solution that I currently like the best, involves the use of the
-<a href="https://metacpan.org/module/Path::Tiny">Path::Tiny</a> module
+<a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a> module
 
 <code lang="perl">
 use Path::Tiny qw(path);

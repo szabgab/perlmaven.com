@@ -27,7 +27,7 @@ In the examples  I'll use the most common, so called, <b>Perl</b> license:
 
 <h2>ExtUtils::MakeMaker</h2>
 
-If you are using <a href="https://metacpan.org/module/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a> add the following to your Makefile.PL
+If you are using <a href="https://metacpan.org/pod/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a> add the following to your Makefile.PL
 as parameter in the <b>WriteMakefile</b> function:
 
 <code lang="perl">
@@ -46,7 +46,7 @@ thus it does not yet contain this feature. The best if you could upgrade ExtUtil
 
 <h2>Module::Build</h2>
 
-If you are using <a href="https://metacpan.org/module/Module::Build">Module::Build</a>, add the following to Build.PL,
+If you are using <a href="https://metacpan.org/pod/Module::Build">Module::Build</a>, add the following to Build.PL,
 in the Module::Build->new call:
 
 <code lang="perl">
@@ -55,7 +55,7 @@ license               => 'perl',
 
 <h2>Module::Install</h2>
 
-If you are using <a href="https://metacpan.org/module/Module::Install">Module::Install</a> add the following to Makefile.PL:
+If you are using <a href="https://metacpan.org/pod/Module::Install">Module::Install</a> add the following to Makefile.PL:
 
 <code lang="perl">
 license        'perl';
@@ -72,7 +72,7 @@ license = Perl_5
 <h2>META specification</h2>
 
 In order to check the current list of valid options for the license field,
-check the <a href="https://metacpan.org/module/CPAN::Meta::Spec">CPAN::Meta specification</a>.
+check the <a href="https://metacpan.org/pod/CPAN::Meta::Spec">CPAN::Meta specification</a>.
 
 <h2>Copyright and Licensing</h2>
 

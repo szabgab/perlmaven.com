@@ -12,7 +12,7 @@ There are several ways to traverse a directory tree in Perl. It can be done with
 calls <hl>opendir</hl> and <hl>readdir</hl> that are part of the Perl language.
 It can be done using the <hl>File::Find</hl> module that comes with Perl.
 
-In this article we'll look at <a href="https://metacpan.org/module/Path::Iterator::Rule">Path::Iterator::Rule</a>.
+In this article we'll look at <a href="https://metacpan.org/pod/Path::Iterator::Rule">Path::Iterator::Rule</a>.
 
 =abstract end
 
@@ -130,7 +130,7 @@ $rule->size("> 1k");
 
 (1k = 1000, and 1ki = 1024, in accordance with the
 <a href="http://physics.nist.gov/cuu/Units/binary.html">IEC standard</a> as implemented
-by <a href="https://metacpan.org/module/Number::Compare">Number::Compare</a>.)
+by <a href="https://metacpan.org/pod/Number::Compare">Number::Compare</a>.)
 
 Similarly one could write
 
@@ -252,7 +252,7 @@ that too:
 $rule->skip_vcs;
 </code>
 
-(See the <a href="https://metacpan.org/module/Path::Iterator::Rule">documentation</a> to understand the specifics.)
+(See the <a href="https://metacpan.org/pod/Path::Iterator::Rule">documentation</a> to understand the specifics.)
 
 If you are not familiar with <a href="http://beyondgrep.com/">ack</a>, it is a perfect time to install it and start using it!
 

@@ -17,17 +17,17 @@ called DBI or <b>Database independent interface for Perl</b>.
 <h2>Architecture</h2>
 
 The Perl scripts use DBI, which in turn uses the appropriate
-<b>Database Driver</b> (e.g. <a href="https://metacpan.org/module/DBD::Oracle">DBD::Oracle</a>
+<b>Database Driver</b> (e.g. <a href="https://metacpan.org/pod/DBD::Oracle">DBD::Oracle</a>
 for <a href="http://www.oracle.com/">Oracle</a>,
-<a href="https://metacpan.org/module/DBD::Pg">DBD::Pg</a> for <a href="http://www.postgresql.org/">PostgreSQL</a>
-and <a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> to access <a href="http://sqlite.org/">SQLite</a>).
+<a href="https://metacpan.org/pod/DBD::Pg">DBD::Pg</a> for <a href="http://www.postgresql.org/">PostgreSQL</a>
+and <a href="https://metacpan.org/pod/DBD::SQLite">DBD::SQLite</a> to access <a href="http://sqlite.org/">SQLite</a>).
 
 Those drivers are compiled together with the C client libraries
 of the respective database engines. In case of SQLite, of course all the
 database engine gets embedded in the perl application.
 
 It is very hard to improve on the lovely ASCII-art that comes
-with the documentation of <a href="https://metacpan.org/module/DBI">DBI</a> so let me reproduce it here:
+with the documentation of <a href="https://metacpan.org/pod/DBI">DBI</a> so let me reproduce it here:
 
 <pre>
              |<- Scope of DBI ->|

@@ -96,9 +96,9 @@ sub handle_item {
 
 为此，你需要某种并行或异步处理的方法，这样<hl>accept_new_to_queue()</hl> 和 <hl>handle_item</hl>的执行就<b>“几乎同时进行”</b>。这里写“几乎”是因为不必平行执行，仅感觉上是这样就行。
 
-如果你的电脑是多CPU或者多核的，理论上可以同时执行多个代码。两种主要的解决方式是<b>多线程</b>和<b>多进程</b>。在很多语言中会选择多线程开发，不过大多数Perl工程师会使用多进程。如果你也是这么选择的，请看一下CPAN的<a href="https://metacpan.org/module/Parallel::ForkManager">Parallel::ForkManager</a>模块。
+如果你的电脑是多CPU或者多核的，理论上可以同时执行多个代码。两种主要的解决方式是<b>多线程</b>和<b>多进程</b>。在很多语言中会选择多线程开发，不过大多数Perl工程师会使用多进程。如果你也是这么选择的，请看一下CPAN的<a href="https://metacpan.org/pod/Parallel::ForkManager">Parallel::ForkManager</a>模块。
 
-关于异步和事件驱动编程，请参阅<a href="https://metacpan.org/module/POE">POE</a>。
+关于异步和事件驱动编程，请参阅<a href="https://metacpan.org/pod/POE">POE</a>。
 
 在其它文章中，我们会看到更多的例子。
 

@@ -132,7 +132,7 @@ these values while <hl>gmtime()</hl> just uses the raw value from the hardware c
 
 The built in <hl>time()</hl> function returns the current time in seconds. That means it cannot
 measure shorter time periods than a second. If you need higher precision in time measuring there
-is a module called <a href="https://metacpan.org/module/Time::HiRes">Time::HiRes</a> that can provide
+is a module called <a href="https://metacpan.org/pod/Time::HiRes">Time::HiRes</a> that can provide
 a replacement for the <hl>time()</hl> function.
 
 <code lang="perl">
@@ -154,7 +154,7 @@ And the output is:
 <h2>DateTime</h2>
 
 While the above functions can provide you with basic time and date manipulations, probably
-anything beyond the most simple need is better served by the <a href="https://metacpan.org/module/DateTime">DateTime</a> module from CPAN.
+anything beyond the most simple need is better served by the <a href="https://metacpan.org/pod/DateTime">DateTime</a> module from CPAN.
 
 We will learn about it later.
 

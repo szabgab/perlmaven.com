@@ -9,10 +9,10 @@
 
 Perl comes with a <a href="/using-the-built-in-debugger-of-perl">built-in command line debugger</a>,
 but many people dislike it as it is not visual enough.
-There is the venerable <a href="https://metacpan.org/module/Devel::ptkdb">Devel::ptkdb</a> of Andrew E Page,
+There is the venerable <a href="https://metacpan.org/pod/Devel::ptkdb">Devel::ptkdb</a> of Andrew E Page,
 but it has not been updated since 2004 and it requires Tk.
 
-Enter the <a href="https://metacpan.org/module/Devel::hdb">Devel::hdb</a> written by Anthony Brummett
+Enter the <a href="https://metacpan.org/pod/Devel::hdb">Devel::hdb</a> written by Anthony Brummett
 and you get a nice web based debugger.
 
 =abstract end
@@ -38,7 +38,7 @@ say $res->content;
 </code>
 
 
-First install <a href="https://metacpan.org/module/Devel::hdb">Devel::hdb</a> using <hl>cpan</hl>
+First install <a href="https://metacpan.org/pod/Devel::hdb">Devel::hdb</a> using <hl>cpan</hl>
 or <a href="http://cpanmin.us/">cpanm</a>.
 
 Then run the script using the <hl>-d:hdb</hl> flag:
@@ -114,7 +114,7 @@ enough for a first taste.
 
 <h2>The source</h2>
 
-<a href="https://metacpan.org/module/Devel::hdb">Devel::hdb</a> can be found on CPAN and the
+<a href="https://metacpan.org/pod/Devel::hdb">Devel::hdb</a> can be found on CPAN and the
 source code is on <a href="https://github.com/amb43790/Devel-hdb">GitHub</a> waiting for
 you to fork and improve.
 

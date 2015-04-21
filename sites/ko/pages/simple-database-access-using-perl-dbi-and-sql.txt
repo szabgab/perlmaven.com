@@ -21,16 +21,16 @@
 
 Perl 스크립트는 DBI를 사용하고, DBI는 다시 적절한 <b>데이타베이스 드라이버</b>를 사용합니다.
 (예를 들자면 <a href="http://www.oracle.com/">Oracle</a>을 사용하기 위한
-<a href="https://metacpan.org/module/DBD::Oracle">DBD::Oracle</a>,
+<a href="https://metacpan.org/pod/DBD::Oracle">DBD::Oracle</a>,
 <a href="http://www.postgresql.org/">PostgreSQL</a>을 사용하기 위한
-<a href="https://metacpan.org/module/DBD::Pg">DBD::Pg</a>,
+<a href="https://metacpan.org/pod/DBD::Pg">DBD::Pg</a>,
 <a href="http://sqlite.org/">SQLite</a>을 사용하기 위한
-<a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> 등등)
+<a href="https://metacpan.org/pod/DBD::SQLite">DBD::SQLite</a> 등등)
 
 이 드라이버들은 각각의 데이타베이스 엔진의 C 클라이언트 라이브러리와 같이 컴파일되어 있습니다.
 물론 SQLite의 경우는 데이타베이스 엔진 전체가 Perl 응용프로그램내에 내장됩니다.
 
-<a href="https://metacpan.org/module/DBI">DBI</a> 모듈 문서에 들어 있는 아스키 문자 그림이
+<a href="https://metacpan.org/pod/DBI">DBI</a> 모듈 문서에 들어 있는 아스키 문자 그림이
 너무도 잘 되어 있어서, 여기서는 그걸 그대로 보여드리겠습니다:
 
 <pre>

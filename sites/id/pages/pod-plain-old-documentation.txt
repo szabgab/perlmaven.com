@@ -121,7 +121,7 @@ biasa. Kendalinya berada pada program penampil.
 Perintah <hl>perldoc</hl> yang datang bersama Perl akan menampilkan POD sebagai panduan manual. Hal ini cukup berguna di Linux.
 Namun tidak terlalu bagus di Windows.
 
-Modul <a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> menyediakan command line yang disebut
+Modul <a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a> menyediakan command line yang disebut
 <hl>pod2html</hl>. ia dapat mengonversi POD ke dokumen HTML yang dapat dilihat melalui peramban.
 
 Ada juga beberapa program tambahan lagi yang bisa menggeneralisasi berkas pdf atau mobi dari POD.

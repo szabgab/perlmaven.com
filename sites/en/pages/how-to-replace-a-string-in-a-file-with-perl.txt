@@ -21,7 +21,7 @@ On the other hand, if this is a stand-alone work then you can do this with a
 
 <h2>Using Path::Tiny</h2>
 
-If you can install <a href="https://metacpan.org/module/Path::Tiny">Path::Tiny</a> and
+If you can install <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a> and
 if the file is not too large to fit in the memory of your computer,
 then this can be the solution:
 
@@ -40,7 +40,7 @@ $data =~ s/Copyright Start-Up/Copyright Large Corporation/g;
 $file->spew_utf8( $data );
 </code>
 
-The <hl>path</hl> function imported from <a href="https://metacpan.org/module/Path::Tiny">Path::Tiny</a> accepts
+The <hl>path</hl> function imported from <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a> accepts
 a path to a file and returns an object that can be used for all kinds of interesting things.
 The <hl>slurp_utf8</hl> method will read in the content of the file (after opening it with UTF8 encoding) and
 return all the content as a single string.
@@ -53,7 +53,7 @@ The <hl>spew_utf8</hl> method will write out the string passed to it to the unde
 <h2>File::Slurp</h2>
 
 This is an older version of it. It is less preferable than the Path::Tiny one, but
-if you already have <a href="https://metacpan.org/module/File::Slurp">File::Slurp</a> installed
+if you already have <a href="https://metacpan.org/pod/File::Slurp">File::Slurp</a> installed
 and then this can be the solution:
 
 <code lang="perl">

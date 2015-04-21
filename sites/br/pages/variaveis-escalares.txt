@@ -340,7 +340,7 @@ conversão exata, você pode verificar se a string parece um número quando voc�
 recebe-la do mundo exterior.
 
 Para isso vamos carregar o módulo <a
-href="https://metacpan.org/module/Scalar::Util">Scalar::Util</a>, e usar a
+href="https://metacpan.org/pod/Scalar::Util">Scalar::Util</a>, e usar a
 subrotina <hl>looks_like_number</hl> que ela provê.
 
 <code lang="perl">

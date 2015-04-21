@@ -34,12 +34,12 @@ la aplicación a partir de los módulos del repositorio personalizado sin expone
 público de CPAN.
 
 A lo largo de los años he creado varios repositorios personalizados de CPAN con herramientas como
-<a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a> y
-<a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>. Pero esta solución es un poco engorrosa y nunca
+<a href="https://metacpan.org/pod/CPAN::Mini">CPAN::Mini</a> y
+<a href="https://metacpan.org/pod/CPAN::Site">CPAN::Site</a>. Pero esta solución es un poco engorrosa y nunca
 me ha parecido realmente satisfactoria. Hace un par de años un cliente me contrató para desarrollar otro repositorio
 personalizado de CPAN. Esta vez, sin embargo, pude partir de cero. Pinto es el resultado de ese trabajo.
 
-<a href="https://metacpan.org/module/Pinto">Pinto</a> es una herramienta sólida que permite crear y administrar un
+<a href="https://metacpan.org/pod/Pinto">Pinto</a> es una herramienta sólida que permite crear y administrar un
 repositorio personalizado de CPAN. Ofrece varias características muy eficaces que ayudan a administrar de forma
 efectiva todos los módulos de Perl de los que depende una aplicación. Con este tutorial aprenderás a utilizar Pinto
 para crear un repositorio personalizado de CPAN y de paso verás cómo funcionan algunas de estas características.

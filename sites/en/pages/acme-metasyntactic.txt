@@ -19,7 +19,7 @@ If we look up <a href="http://en.wikipedia.org/wiki/Foobar">Foobar</a> on Wikipe
 also called <b>place-holder names</b> or 
 <a href="http://en.wikipedia.org/wiki/Metasyntactic_variable">Metasyntactic variable</a>.
 
-We'll go with that and install <a href="https://metacpan.org/module/Acme::MetaSyntactic">Acme::MetaSyntactic</a>.
+We'll go with that and install <a href="https://metacpan.org/pod/Acme::MetaSyntactic">Acme::MetaSyntactic</a>.
 
 Following its documentation we can write a short example:
 
@@ -39,7 +39,7 @@ This already provides some useful diversity, but let's go beyond that.
 
 <h2>OOP</h2>
 
-<a href="https://metacpan.org/module/Acme::MetaSyntactic">Acme::MetaSyntactic</a> provides
+<a href="https://metacpan.org/pod/Acme::MetaSyntactic">Acme::MetaSyntactic</a> provides
 an object oriented interface as well, and has a large number of themes. The default being
 the <b>foo</b> theme.
 
@@ -130,9 +130,9 @@ of the module. Would you like to use variable names such as <hl>Leon_Brocard</hl
 <h2>More themes</h2>
 
 Of course having only these themes would not be really interesting, so 
-<a href="https://metacpan.org/module/Acme::MetaSyntactic">Acme::MetaSyntactic</a> is extensible.
+<a href="https://metacpan.org/pod/Acme::MetaSyntactic">Acme::MetaSyntactic</a> is extensible.
 
-Install <a href="https://metacpan.org/module/Acme::MetaSyntactic::Themes">Acme::MetaSyntactic::Themes</a>,
+Install <a href="https://metacpan.org/pod/Acme::MetaSyntactic::Themes">Acme::MetaSyntactic::Themes</a>,
 and you will over 130 new themes.
 
 You don't even need to load the extra module the same code we had above, would list all the

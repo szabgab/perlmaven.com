@@ -122,7 +122,7 @@ semplice. Il controllo è nelle mani del tool di visualizazione.
 Il comando <hl>perldoc</hl> incluso nella distribuzione di perl visualizza il POD come una pagina di man. È piuttosto utile su Linux.
 Non altrettanto su Windows.
 
-Il modulo <a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> fornisce un altro tool da linea di comando chiamato
+Il modulo <a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a> fornisce un altro tool da linea di comando chiamato
 <hl>pod2html</hl>. Con esso potete convertire un POD in un documento HTML da visualizzare nel browser.
 
 Ci sono poi altri tool che permettono di generare file pdf o mobi dai POD.

@@ -20,7 +20,7 @@ Perl 5에는 배열에서 중복된 값을 걸러내는 내장 함수는 없지�
 <h2>List::MoreUtils</h2>
 
 상황에 따라서 다르겠지만, 아마 가장 간단한 방법은
-CPAN에 있는 <a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a>
+CPAN에 있는 <a href="https://metacpan.org/pod/List::MoreUtils">List::MoreUtils</a>
 모듈이 제공하는 <hl>uniq</hl> 함수를 사용하는 것입니다.
 
 <code lang="perl">

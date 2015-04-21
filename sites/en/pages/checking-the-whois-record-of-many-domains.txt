@@ -101,7 +101,7 @@ sub check_ns {
 
 <h2 id="explanation">Explanation</h2>
 
-I looked around and decided to use <a href="https://metacpan.org/module/Net::Whois::Raw">Net::Whois::Raw</a>.
+I looked around and decided to use <a href="https://metacpan.org/pod/Net::Whois::Raw">Net::Whois::Raw</a>.
 I did not remember it, but apparently I even maintained it a bit after the original author passed away.
 
 The first step was to see what does the <hl>whois</hl> function of this module return. I flipped on
@@ -166,7 +166,7 @@ foreach my $domain (@domains) {
 }
 </code>
 
-I am using <a href="https://metacpan.org/module/Path::Tiny">Path::Tiny</a>, the excellent module of David Golden
+I am using <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a>, the excellent module of David Golden
 to read the domains.txt file that is <b>expected to be in the same directory where the script is</b>.
 
 Path::Tiny automatically exports the <hl>path</hl> function, but I like it to be explicit, and I like when I can

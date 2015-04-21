@@ -78,7 +78,7 @@ if (grep { $visitor eq $_ } @names) {
 
 הפתרון עובד, אך כיוון שהוא מסתמך על הקשר ייתכן שהוא לא יהיה ברור לכולם.
 הנה פתרון נוסף שמשתמש בפונקציה <hl>any</hl> של המודול
-<a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a> .
+<a href="https://metacpan.org/pod/List::MoreUtils">List::MoreUtils</a> .
 
 <h2>האם קיים אלמנט כלשהו שמתאים?</h2>
 

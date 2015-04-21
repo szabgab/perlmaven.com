@@ -116,7 +116,7 @@ c.pdf
 한번에 하나의 파일명만 메모리에 보관하면 되지만, 각각의 파일에 대해서 디렉토리 구조를 순회해야
 합니다. 이것은 오랜 시간이 소요될 것이고, 특히 찾아볼 파일의 갯수가 많다면 더욱 그렇습니다.
 
-첫번째 방법을 구현한 것을 살펴봅시다. <a href="https://metacpan.org/module/File::Find::Rule">File::Find::Rule</a>
+첫번째 방법을 구현한 것을 살펴봅시다. <a href="https://metacpan.org/pod/File::Find::Rule">File::Find::Rule</a>
 모듈을 사용하여 파일 시스템을 순회하고 파일들의 이름을 수집하도록 하겠습니다.
 
 <code lang="perl">
@@ -164,7 +164,7 @@ close $fh;
 확장자가 <hl>.Pdf</hl>인 파일은 찾지 못할 것입니다. 이 문제는 <hl>->name('*.[pP][dD][fF]')</hl>처럼
 적음으로써 쉽게 해결할 수 있습니다. 이렇게 하면 세 글자 모두 대소문자에 무관하게 찾을 것입니다.
 
-<a href="https://metacpan.org/module/File::Find::Rule">File::Find::Rule</a>에 의해 반환된 파일 목록에는
+<a href="https://metacpan.org/pod/File::Find::Rule">File::Find::Rule</a>에 의해 반환된 파일 목록에는
 각 파일의 전체 경로명이 들어 있는데, 우리는 파일명 부분만 필요합니다. 그래서 목록의 각 명단에 대하여
 <hl>basename()</hl>을 수행한 후에 새 배열 <hl>@files</hl>를 만들었습니다. 이를 위해
 <a href="http://perlmaven.com/transforming-a-perl-array-using-map">map</a>을 사용하였습니다.

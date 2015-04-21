@@ -294,7 +294,7 @@ the data migrations, doing extraction, transformation, validation and load in a 
 <div class="perl-product">
 <a href="http://dezi.org/">Dezi</a> is an HTTP-based search platform capable of indexing multiple document formats
 (HTML, XML, PDF, DOC, XLS, etc) and returning faceted results in a variety of formats (XML, JSON).
-It is also available <a href="https://metacpan.org/module/Dezi">on CPAN</a>.
+It is also available <a href="https://metacpan.org/pod/Dezi">on CPAN</a>.
 </div>
 
 <h2>E-commerce</h2>
@@ -640,7 +640,7 @@ utilities.
 </div>
 
 <div class="perl-product">
-<a href="https://metacpan.org/module/App::Asciio">App::Asciio</a> allows you to draw ASCII diagrams in a modern, but simple graphical application. 
+<a href="https://metacpan.org/pod/App::Asciio">App::Asciio</a> allows you to draw ASCII diagrams in a modern, but simple graphical application. 
 </div>
 
 <div class="perl-product">

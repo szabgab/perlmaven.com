@@ -32,15 +32,15 @@ application from the modules in your custom repository without being
 exposed to all the churn in the public CPAN.
 
 Over the years, I've built several custom CPAN repositories using
-tools like <a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a>
-and <a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>.
+tools like <a href="https://metacpan.org/pod/CPAN::Mini">CPAN::Mini</a>
+and <a href="https://metacpan.org/pod/CPAN::Site">CPAN::Site</a>.
 But they always seemed clunky
 and I was never very happy with them.  A couple years ago, a
 client hired me to build them another custom CPAN.  But this time, I
 had an opportunity to start from scratch.  Pinto is the result of that
 work.
 
-<a href="https://metacpan.org/module/Pinto">Pinto</a> is a robust tool
+<a href="https://metacpan.org/pod/Pinto">Pinto</a> is a robust tool
 for creating and managing a custom CPAN repository.
 It has several powerful features that help you safely
 manage all the Perl modules your application depends on.  This

@@ -86,7 +86,7 @@ text
 <h2>Perl::Critic מציל אותנו!</h2>
 
 לכלי <a href="http://www.perlcritic.com/">Perl::Critic</a> יש מדיניות שנקראת
-<a href="https://metacpan.org/module/Perl::Critic::Policy::ValuesAndExpressions::RequireQuotedHeredocTerminator">ValuesAndExpressions::RequireQuotedHeredocTerminator</a>
+<a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireQuotedHeredocTerminator">ValuesAndExpressions::RequireQuotedHeredocTerminator</a>
 שבודקת את המצב המתואר.
 
 כפי שהוסבר <a href="http://perlmaven.com/perl-critic-one-policy">במאמר על שיפור הקוד</a>,

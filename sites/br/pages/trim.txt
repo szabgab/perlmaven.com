@@ -87,7 +87,7 @@ printf "<%s>\n", rtrim($z);  # < abc>
 Se você realmente não quer copiar aquilo, você pode sempre instalar um módulo.
 
 Por exemplo <a
-href="https://metacpan.org/module/String::Util">String::Util</a> provê uma
+href="https://metacpan.org/pod/String::Util">String::Util</a> provê uma
 função chamada <hl>trim</hl> que você pode usar dessa forma:
 
 <code lang="perl">
@@ -105,7 +105,7 @@ eu que ter o seu próprio <hl>ltrim</hl> e <hl>rtrim</hl> será mais claro.
 <h2>Text::Trim</h2>
 
 Outro módulo, um que provê todas as 3 funções é o <a
-href="https://metacpan.org/module/Text::Trim">Text::Trim</a>, mas ele leva o
+href="https://metacpan.org/pod/Text::Trim">Text::Trim</a>, mas ele leva o
 estilo Perl de escrever um passo adiante, e talvez para lugares ligeiramente
 perigosos.
 

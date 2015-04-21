@@ -307,7 +307,7 @@ This is the same message as was the first warning, but this time the script stop
 If you would like to avoid the automatic conversion of strings when there is no exact conversion,
 you could check if the string looks like a number when you receive it from the outside world.
 
-For this we are going to load the module <a href="https://metacpan.org/module/Scalar::Util">Scalar::Util</a>,
+For this we are going to load the module <a href="https://metacpan.org/pod/Scalar::Util">Scalar::Util</a>,
 and use the subroutine <hl>looks_like_number</hl> it supplies.
 
 <code lang="perl">

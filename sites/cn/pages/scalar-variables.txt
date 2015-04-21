@@ -259,7 +259,7 @@ Use of uninitialized value $y in addition (+) at example.pl line 9.
 
 如果想要在没有明确转换的时候避免字符串的自动转换，你可以当从外部获取数据的时候检查一下字符串是否看起来像数字。
 
-为此，我们会加载 <a href="https://metacpan.org/module/Scalar::Util">Scalar::Util</a>模块，并调用它提供的<hl>looks_like_number</hl>函数。
+为此，我们会加载 <a href="https://metacpan.org/pod/Scalar::Util">Scalar::Util</a>模块，并调用它提供的<hl>looks_like_number</hl>函数。
 
 <code lang="perl">
 use strict;

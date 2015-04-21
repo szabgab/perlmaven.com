@@ -133,7 +133,7 @@ mientras que <hl>gmtime()</hl> simplemente usa el valor devuelto por el reloj ha
 
 La función <hl>time()</hl> devuelve la fecha actual en segundos. Por lo que no puede
 medir periodos inferiores a un segundo. Si necesitas más precisión hay un modulo
-llamado <a href="https://metacpan.org/module/Time::HiRes">Time::HiRes</a> que puede
+llamado <a href="https://metacpan.org/pod/Time::HiRes">Time::HiRes</a> que puede
 sustituir el uso de <hl>time()</hl>.
 
 <code lang="perl">
@@ -155,7 +155,7 @@ Y la salida será:
 <h2>DateTime</h2>
 
 Las funciones anteriores proporcionan información básica sobre la hora y la fecha,
-probablemente es mejor usar el modulo <a href="https://metacpan.org/module/DateTime">DateTime</a> para cualquier necesidad no trivial.
+probablemente es mejor usar el modulo <a href="https://metacpan.org/pod/DateTime">DateTime</a> para cualquier necesidad no trivial.
 
 Lo veremos más adelante.
 

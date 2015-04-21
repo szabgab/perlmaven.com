@@ -30,13 +30,13 @@ o construtor do CPAN para instalar módulos a partir do seu próprio repositóri
 exposto ao CPAN público.
 
 Através dos anos eu construí vários repositórios personalizados do CPAN utilizando ferramentas como
-<a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a> e <a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>.
+<a href="https://metacpan.org/pod/CPAN::Mini">CPAN::Mini</a> e <a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>.
 Mas eles sempre me pareceram desajeitados e nunca estive satisfeito com eles.
 A alguns anos atrás, fui contratado por um cliente para construir outro repositório personalizado
 do CPAN. Mas desta vez eu tive a oportunidade de começar a partir do zero. O resultado disso tudo
 é o projeto Pinto.
 
-<a href="https://metacpan.org/module/Pinto">Pinto</a> é uma ferramenta robusta
+<a href="https://metacpan.org/pod/Pinto">Pinto</a> é uma ferramenta robusta
 para criar e manipular repositórios CPAN personalizados.
 Ele possui várias características poderosas que irão, de forma segura, lhe ajudar
 a gerenciar todos os módulos Perl cuja sua aplicação seja dependente.

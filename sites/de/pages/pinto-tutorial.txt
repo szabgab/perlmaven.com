@@ -36,15 +36,15 @@ mit den Modulen aus dem eigenen maßgeschneiderten Repository zusammenzubauen,
 ohne sich dem öffentlichen CPAN-Moloch auszusetzen.
 
 Über Jahre hinweg habe ich einige maßgeschneiderte CPAN-Repositorys
-mit <a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a>
-und <a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>
+mit <a href="https://metacpan.org/pod/CPAN::Mini">CPAN::Mini</a>
+und <a href="https://metacpan.org/pod/CPAN::Site">CPAN::Site</a>
 aufgebaut. Aber immer wirkten sie ein wenig hölzern und ich war nie
 mit ihnen zufrieden. Vor einigen Jahren wurde ich von einem Kunden
 beauftragt, ein weiteres maßgeschneidertes CPAN aufzubauen. Aber
 dieses Mal hatte ich die Chance, ganz von vorne anzufangen.
 Pinto ist das Ergebnis dieser Arbeit.
 
-<a href="https://metacpan.org/module/Pinto">Pinto</a> ist ein robustes
+<a href="https://metacpan.org/pod/Pinto">Pinto</a> ist ein robustes
 Hilfsmittel, um ein maßgeschneidertes CPAN-Repository zu
 erstellen und zu verwalten. Es hat einige mächtige Features, die es
 Dir ermöglichen, alle diejenigen Module sicher zu verwalten, von

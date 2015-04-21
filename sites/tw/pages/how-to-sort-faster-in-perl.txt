@@ -131,7 +131,7 @@ my @sorted =
 如果排序運算(1秒鐘)只佔你的程式(10 分鐘)的小部份的話，這個方式可能改善的有限。但是如果排序運算佔很重的部份的話，你應該使用Schwartzian 轉換。
  
 
-使用 <a href="https://metacpan.org/module/Devel::NYTProf">Devel::NYTProf to
+使用 <a href="https://metacpan.org/pod/Devel::NYTProf">Devel::NYTProf to
 profile</a> 來看看你的程式適不適合 Schwartzian 轉換。
 
 (感謝 <a href="http://twitter.com/Smylers2">Smylers</a> 審查這篇文章.)

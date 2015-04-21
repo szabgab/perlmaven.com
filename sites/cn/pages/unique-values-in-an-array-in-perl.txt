@@ -18,7 +18,7 @@ Perl 5没有过滤数组重复值的内建函数，但还是有很多解决方�
 
 <h2>List::MoreUtils</h2>
 
-对于你的问题，可能最简单的方式是使用<a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a>模块的<hl>uniq</hl>函数。
+对于你的问题，可能最简单的方式是使用<a href="https://metacpan.org/pod/List::MoreUtils">List::MoreUtils</a>模块的<hl>uniq</hl>函数。
 
 <code lang="perl">
 use List::MoreUtils qw(uniq);

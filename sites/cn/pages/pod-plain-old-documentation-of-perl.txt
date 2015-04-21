@@ -91,7 +91,7 @@ POD 只规定了标记格式，至于怎样显示，并不是POD 的事情。有
 
 Perl 自带的 <hl>perldoc</hl> 把 POD 显示为 man-page。在类 Linux 系统中，很方便，Windows 系统中，很鸡肋。 
 
-<a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> 模块提供了一个<hl>pod2html</hl>。可以把POD 转换成 HTML 格式，便于在浏览器中浏览。
+<a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a> 模块提供了一个<hl>pod2html</hl>。可以把POD 转换成 HTML 格式，便于在浏览器中浏览。
 
 当然，也有些工具可以把POD 转换为 pdf 格式，甚至是 mobi 和 epub。其实这些转换实质上是字符串操作，正是Perl的强项。
 

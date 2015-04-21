@@ -115,7 +115,7 @@ head2 que por sua vez irá ser exibida usando fontes maiores do que o texto norm
 O comando <hl>perldoc</hl> que vem com perl exibe o POD como uma página manual (<i>mand-page</i>). É uma ferramenta bastante útil em Linux.
 Mas não tão boa assim no Windows.
 
-O módulo <a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> fornece outra ferramenta de linha de comando chamado <hl>pod2html</hl>.
+O módulo <a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a> fornece outra ferramenta de linha de comando chamado <hl>pod2html</hl>.
 Essa ferramenta é capaz de converter um texto POD em um documento HTML que você pode ver em seu navegador.
 
 Há também ferramentas adicionais para geração de arquivos do tipo pdf ou arquivos mobi a partir do POD.

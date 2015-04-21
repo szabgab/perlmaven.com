@@ -8,9 +8,9 @@
 
 =abstract start
 
-In this article you will learn the basics on building a server using <a href="https://metacpan.org/module/Net::Server">Net::Server</a>.
+In this article you will learn the basics on building a server using <a href="https://metacpan.org/pod/Net::Server">Net::Server</a>.
 
-Why would you want to use <a href="https://metacpan.org/module/Net::Server">Net::Server</a>? Just visit that page on MetaCPAN and click on
+Why would you want to use <a href="https://metacpan.org/pod/Net::Server">Net::Server</a>? Just visit that page on MetaCPAN and click on
 the <a href="https://metacpan.org/requires/distribution/Net-Server?sort=[[2,1]]">Reverse dependencies</a> list on the left hand side.
 These are the modules that depend on Net::Server. I could just point out <a href="https://metacpan.org/release/Starman">Starman</a>
 which is probably the best stand-alone PSGI server on the market, but there are tens of other modules and applications depending
@@ -20,7 +20,7 @@ on Net::Server. It can provide a good foundation for you too.
 
 <h2>Installing Net::Server</h2>
 
-Start by installing <a href="https://metacpan.org/module/Net::Server">Net::Server</a>.
+Start by installing <a href="https://metacpan.org/pod/Net::Server">Net::Server</a>.
 I'll have a detailed article or two on installing any CPAN module, though in general you just type <hl>cpan Net::Server</hl>
 or <hl>cpanm Net::Server</hl>.
 

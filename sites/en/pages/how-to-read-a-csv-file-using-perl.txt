@@ -126,7 +126,7 @@ We need a more robust solution to read CSV files.
 
 <h2>Text::CSV</h2>
 
-Luckily we can find a module on CPAN called <a href="https://metacpan.org/module/Text::CSV">Text::CSV</a> that is a full CSV reader and writer.
+Luckily we can find a module on CPAN called <a href="https://metacpan.org/pod/Text::CSV">Text::CSV</a> that is a full CSV reader and writer.
 
 This module is written using Object Oriented Programming (OOP) principals.
 Even if you don't know what OOP is, you don't have to worry. We won't really learn OOP at this point,
@@ -220,11 +220,11 @@ alma",100,Kiralyno
 Boszorkany,Herceg,9,Meselo
 </code>
 
-The way we currently handle the CSV file cannot solve this problem but the <a href="https://metacpan.org/module/Text::CSV">Text::CSV</a>
+The way we currently handle the CSV file cannot solve this problem but the <a href="https://metacpan.org/pod/Text::CSV">Text::CSV</a>
 module provides a way to solve that too.
 
 This example is based on a comment by H.Merijn Brand, the maintainer of the
-<a href="https://metacpan.org/module/Text::CSV_XS">Text::CSV_XS</a> module:
+<a href="https://metacpan.org/pod/Text::CSV_XS">Text::CSV_XS</a> module:
 
 <code lang="perl">
 #!/usr/bin/perl

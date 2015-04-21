@@ -105,11 +105,11 @@ $isdst - 'is Daylight saving time' true if Daylight Saving Time is on in your co
 
 <h2>精确时间</h2>
 
-<hl>time()</hl>的最小单位是秒，如果你想得到更精确的时间，请参考 <a href="https://metacpan.org/module/Time::HiRes">Time::HiRes</a> 模块。
+<hl>time()</hl>的最小单位是秒，如果你想得到更精确的时间，请参考 <a href="https://metacpan.org/pod/Time::HiRes">Time::HiRes</a> 模块。
 
 <h2>DateTime</h2>
 
-以上介绍的函数，可以用来完成基本的时间和日期操作，由于此问题的复杂性，更多请参考 <a href="https://metacpan.org/module/DateTime">DateTime</a> 模块。
+以上介绍的函数，可以用来完成基本的时间和日期操作，由于此问题的复杂性，更多请参考 <a href="https://metacpan.org/pod/DateTime">DateTime</a> 模块。
 
 
 <h2>上下文</h2>

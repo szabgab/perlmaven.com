@@ -33,15 +33,15 @@ applicazione con i moduli del vostro archivio personalizzato, evitando di
 esporvi agli imprevisti che si possono verificare usando l'archivio CPAN pubblico.
 
 Nel corso degli anni ho creato svariati archivi CPAN personalizzati usando
-tool come <a href="https://metacpan.org/module/CPAN::Mini">CPAN::Mini</a>
-e <a href="https://metacpan.org/module/CPAN::Site">CPAN::Site</a>, ma
+tool come <a href="https://metacpan.org/pod/CPAN::Mini">CPAN::Mini</a>
+e <a href="https://metacpan.org/pod/CPAN::Site">CPAN::Site</a>, ma
 mi sono sempre sembrati macchinosi
 e non mi hanno mai lasciato completamente soddisfatto.  Un paio di anni fa un
 cliente mi ha assunto per creargli un ennessimo CPAN personalizzato. Questa volta, però, ho
 avuto l'opportunità di ricominciare da zero. Pinto è il risultato di quel
 lavoro.
 
-<a href="https://metacpan.org/module/Pinto">Pinto</a> è un tool affidabile
+<a href="https://metacpan.org/pod/Pinto">Pinto</a> è un tool affidabile
 per creare e gestire un archivio CPAN personalizzato.
 Ha molte funzionalità che vi aiutano efficacemente a gestire
 in modo sicuro tutti i moduli Perl da cui dipende la vostra applicazione. Questo

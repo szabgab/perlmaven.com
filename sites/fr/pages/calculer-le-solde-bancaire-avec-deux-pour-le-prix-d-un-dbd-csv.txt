@@ -12,7 +12,7 @@
 <i>Ceci est un article du contributeur <a href="http://www.linkedin.com/pub/darin-mcbride/32/a53/184">Darin McBride</a>.
 Darin est un développeur de logiciels au laboratoire canadien d'IBM et est l'auteur de <a href="https://www.metacpan.org/author/DMCBRIDE">plusieurs modules Perl sur CPAN</a>. Père de trois enfants, il essaie de déterminer comment <hl>use more 'sleep';</hl>. -- Gabor</i>
 
-Après que Gabor a répondu à la question d'un utilisateur <a href="http://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">Comment calculer les soldes bancaires en CSV</a>, j'ai suggéré que cela était un exemple criant pour utiliser <a href="https://metacpan.org/module/DBD::CSV">DBD::CSV</a>. Gabor m'a invité à synchroniser mes doigts avec ma bouche - pour ainsi dire - afin de m'expliquer plus en détails.
+Après que Gabor a répondu à la question d'un utilisateur <a href="http://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">Comment calculer les soldes bancaires en CSV</a>, j'ai suggéré que cela était un exemple criant pour utiliser <a href="https://metacpan.org/pod/DBD::CSV">DBD::CSV</a>. Gabor m'a invité à synchroniser mes doigts avec ma bouche - pour ainsi dire - afin de m'expliquer plus en détails.
 
 =abstract end
 
@@ -20,7 +20,7 @@ Après que Gabor a répondu à la question d'un utilisateur <a href="http://perl
 
 Presque à chaque fois que quelqu'un pose une question au sujet de CSV en Perl, ma première pensée est toujous la même : DBD::CSV. La raison en est double.
 
-Premièrement, en accèdant à des fichiers CSV via DBD::CSV, vous apprenez alors et/ou utilisez deux compétences qui sont transposables à beaucoup plus de projets que celle employée avec de naïfs splits ou même que celle employée avec <a href="https://metacpan.org/module/Text::CSV_XS">Text::CSV_XS</a> : <b>DBI</b> and <b>SQL</b>. Cela signifie que votre champ de compétences augmentera d'une manière plus utile à votre carrière, mais, plus rapidement, vous aurez également un plus grand nombre de personnes à qui vous pourrez demander de l'aide. Par exemple, tous les administrateurs de base de données devraient être en mesure de vous aider concernant vos questions SQL, mais probablement moins cocnernant vos questions Perl.
+Premièrement, en accèdant à des fichiers CSV via DBD::CSV, vous apprenez alors et/ou utilisez deux compétences qui sont transposables à beaucoup plus de projets que celle employée avec de naïfs splits ou même que celle employée avec <a href="https://metacpan.org/pod/Text::CSV_XS">Text::CSV_XS</a> : <b>DBI</b> and <b>SQL</b>. Cela signifie que votre champ de compétences augmentera d'une manière plus utile à votre carrière, mais, plus rapidement, vous aurez également un plus grand nombre de personnes à qui vous pourrez demander de l'aide. Par exemple, tous les administrateurs de base de données devraient être en mesure de vous aider concernant vos questions SQL, mais probablement moins cocnernant vos questions Perl.
 
 Deuxièmement, utiliser DBD::CSV vous fait raisonner différemment sur vos données. Souvent, selon mon expérience, simplement traiter le fichier CSV comme s'il s'agissait d'une table dans une base de données relationnelle peut être suffisant pour avoir de soudaines intuitions de solutions plus simples, même si l'ordinateur va passer beaucoup plus de temps à les exécuter.
 
@@ -64,7 +64,7 @@ use warnings;
 use DBI;
 </code>
 
-Notez que nous n'avons pas chargé le pilote CSV, mais seulement <a href="https://metacpan.org/module/DBI">DBI</a>. En résumé, DBI va charger DBD::CSV pour nous. Ceci est pratique car il y aura un seul endroit où nous devrons préciser quelle base de données dorsale nous utiliserons, ce qui signifie moins de changement s'il advient que nous désirions mettre à jour une base de données à part entière plus tard. Peu probable ici, mais, encore une fois, nous n'essayons pas simplement de calculer le solde d'un compte : nous apprenons DBI et SQL dans le cadre de cet article.
+Notez que nous n'avons pas chargé le pilote CSV, mais seulement <a href="https://metacpan.org/pod/DBI">DBI</a>. En résumé, DBI va charger DBD::CSV pour nous. Ceci est pratique car il y aura un seul endroit où nous devrons préciser quelle base de données dorsale nous utiliserons, ce qui signifie moins de changement s'il advient que nous désirions mettre à jour une base de données à part entière plus tard. Peu probable ici, mais, encore une fois, nous n'essayons pas simplement de calculer le solde d'un compte : nous apprenons DBI et SQL dans le cadre de cet article.
 
 <code lang="perl">
 use File::Basename qw(dirname);
@@ -220,7 +220,7 @@ Les clés de premier niveau sont les numéros de compte et les clés de second n
 
 <h2>La sortie sous forme de tableau</h2>
 
-Lors de l'affichage, je procède à la soustraction. Dans ce cas, je n'ai aucune idée de ce que le demandeur d'origine voulait vraiment, mais nous avons toutes les informations issues du fichier CSV que nous voulions, donc ce n'est vraiment pas si important que cela. J'ai choisi d'utiliser l'un de mes modules préférés : <a href="https://metacpan.org/module/Text::Table">Text::Table</a>.
+Lors de l'affichage, je procède à la soustraction. Dans ce cas, je n'ai aucune idée de ce que le demandeur d'origine voulait vraiment, mais nous avons toutes les informations issues du fichier CSV que nous voulions, donc ce n'est vraiment pas si important que cela. J'ai choisi d'utiliser l'un de mes modules préférés : <a href="https://metacpan.org/pod/Text::Table">Text::Table</a>.
 
 <code lang="perl">
 use Text::Table;

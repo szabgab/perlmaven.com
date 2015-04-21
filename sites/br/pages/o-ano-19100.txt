@@ -133,7 +133,7 @@ esses valores enquanto <hl>gmtime()</hl> apenas usa os valores "brutos" do reló
 
 A função interna <hl>time()</hl> retorna o tempo atual em segundos. Isso signiica que não é capaz de medir
 períodos mais curtos de tempo do que um segundo. Se você precisar de medidas de alta precisão, existe um
-módulo chamado <a href="https://metacpan.org/module/Time::HiRes">Time::HiRes</a> que pode prover um substituto
+módulo chamado <a href="https://metacpan.org/pod/Time::HiRes">Time::HiRes</a> que pode prover um substituto
 para a função <hl>time()</hl>.
 
 <code lang="perl">
@@ -156,7 +156,7 @@ E o resultado é:
 
 Enquanto que as funções acima podem lhe fornecer formas básicas de manipulação de datas e do tempo, provavelmente
 qualquer coisa além do mais simples pode ser realizado através do módulo do CPAN 
-<a href="https://metacpan.org/module/DateTime">DateTime</a>.
+<a href="https://metacpan.org/pod/DateTime">DateTime</a>.
 
 Nós iremos aprender sobre ele mais tarde.
 

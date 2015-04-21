@@ -123,7 +123,7 @@ El comando <hl>perldoc</hl> que viene incluido con perl muestra la documentació
 POD como páginas <a href="http://es.wikipedia.org/wiki/Man_%28Unix%29">man</a>. Es bastante útil en Linux.
 No tan conveniente en Windows.
 
-El módulo <a href="https://metacpan.org/module/Pod::Html">Pod::Html</a> proporciona
+El módulo <a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a> proporciona
 otra herramienta de línea de comandos llamada <hl>pod2html</hl>. Esta herramienta
 convierte el código POD en un documento HTML que puede verse en un navegador.
 

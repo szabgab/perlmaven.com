@@ -9,7 +9,7 @@
 =abstract start
 
 If you are as many other people, you will want to learn from more experienced people and improve your code.
-<a href="https://metacpan.org/module/Perl::Critic">Perl::Critic</a> is a wonderful tool for this.
+<a href="https://metacpan.org/pod/Perl::Critic">Perl::Critic</a> is a wonderful tool for this.
 
 Perl::Critic itself is a CPAN module, but it comes with a command line tool, that will let you check your
 code against a set of policies.

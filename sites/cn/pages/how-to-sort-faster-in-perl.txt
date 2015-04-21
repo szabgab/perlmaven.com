@@ -118,6 +118,6 @@ my @sorted =
 
 如果整个排序需要1秒钟，而脚本需要跑10分钟，就没有必要。相反，如果排序在整个运行时占用很大比重，你就应该使用Schwartzian转换方法。
 
-为了找出你处于那种情况，可以在代码中使用<a href="https://metacpan.org/module/Devel::NYTProf">Devel::NYTProf to profile</a>。
+为了找出你处于那种情况，可以在代码中使用<a href="https://metacpan.org/pod/Devel::NYTProf">Devel::NYTProf to profile</a>。
 
 (Thanks to <a href="http://twitter.com/Smylers2">Smylers</a> for reviewing the article.)

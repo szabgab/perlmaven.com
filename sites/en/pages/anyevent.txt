@@ -9,7 +9,7 @@
 =abstract start
 
 The beginning of a series of articles available to <a href="/pro">Perl Maven Pro</a> subscribers
-about Asynchronous programming using <a href="https://metacpan.org/module/AnyEvent">AnyEvent</a>,
+about Asynchronous programming using <a href="https://metacpan.org/pod/AnyEvent">AnyEvent</a>,
 <b>the DBI of event loop programming</b>.
 
 =abstract end

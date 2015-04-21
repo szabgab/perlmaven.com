@@ -22,12 +22,12 @@
 
 元文件通常在作者发布模块的時候自动生成，我这里只演示让四个主要的打包系统包含存储链接。
 
-这个例子中我会以<a href="https://metacpan.org/module/Task::DWIM">Task::DWIM</a>的存储链接为例，
+这个例子中我会以<a href="https://metacpan.org/pod/Task::DWIM">Task::DWIM</a>的存储链接为例，
 它是一个实验性模块，包含<a href="http://dwimperl.com/">DWIM Perl</a>发行版里的所有模块。
 
 <h2>ExtUtils::MakeMaker</h2>
 
-如果你使用 <a href="https://metacpan.org/module/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>
+如果你使用 <a href="https://metacpan.org/pod/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>
 把下边这段加到Makefile.PL里作为函数<b>WriteMakefile</b>的参数：
 
 <code lang="perl">
@@ -42,7 +42,7 @@ META_MERGE        => {
 
 <h2>Module::Build</h2>
 
-如果你使用 <a href="https://metacpan.org/module/Module::Build">Module::Build</a>，把下面代码加到Build.PL，
+如果你使用 <a href="https://metacpan.org/pod/Module::Build">Module::Build</a>，把下面代码加到Build.PL，
 作为 <b>Module::Build->new</b> 调用的参数：
 
 <code lang="perl">
@@ -55,7 +55,7 @@ meta_merge => {
 
 <h2>Module::Install</h2>
 
-如果你使用 <a href="https://metacpan.org/module/Module::Install">Module::Install</a> 把下面这段加入到 Makefile.PL：
+如果你使用 <a href="https://metacpan.org/pod/Module::Install">Module::Install</a> 把下面这段加入到 Makefile.PL：
 
 <code lang="perl">
 repository 'https://github.com/dwimperl/Task-DWIM';
@@ -64,7 +64,7 @@ repository 'https://github.com/dwimperl/Task-DWIM';
 <h2>Dist::Zilla</h2>
 
 如果你使用 <a href="http://dzil.org/">Dist::Zilla</a>，
-<a href="https://metacpan.org/module/Dist::Zilla::Plugin::Repository">Dist::Zilla::Plugin::Repository</a>会自动添加到存储的链接，不过你也可以手动指定。
+<a href="https://metacpan.org/pod/Dist::Zilla::Plugin::Repository">Dist::Zilla::Plugin::Repository</a>会自动添加到存储的链接，不过你也可以手动指定。
 
 <code lang="perl">
 [MetaResources]
@@ -73,7 +73,7 @@ repository.url = https://github.com/dwimperl/Task-DWIM.git
 
 详尽的版本会像下面这个例子一样包含更多细节。
 这部分只包含在文件META.json里，而不是META.yml。
-要生成这个文件，你需要包含Dist::Zilla的<a href="https://metacpan.org/module/Dist::Zilla::Plugin::MetaJSON">MetaJSON插件</a>。
+要生成这个文件，你需要包含Dist::Zilla的<a href="https://metacpan.org/pod/Dist::Zilla::Plugin::MetaJSON">MetaJSON插件</a>。
 
 <code lang="perl">
 [MetaResources]
@@ -96,7 +96,7 @@ Dist::Zilla还有许多其他办法可以<a href="http://www.lowlevelmanager.com
 <h2>其他资源</h2>
 
 如果你已经在做这些了，你也可以加入其它资源。
-<a href="https://metacpan.org/module/CPAN::Meta::Spec#resources">CPAN 元规范</a> 列出了所有的项目。
+<a href="https://metacpan.org/pod/CPAN::Meta::Spec#resources">CPAN 元规范</a> 列出了所有的项目。
 如果哪里不清楚，就去问它。
 
 <h2>许可证</h2>

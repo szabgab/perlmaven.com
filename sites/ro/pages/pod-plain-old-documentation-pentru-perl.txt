@@ -141,7 +141,7 @@ Comanda <hl>perldoc</hl> care vine cu Perl afișează documentele POD ca
 pagini de manual.  Este chiar folositor în Linux.  Nu chiar atât de bun
 pentru Windows.
 
-Modulul <a href="https://metacpan.org/module/Pod::Html">Pod::Html</a>
+Modulul <a href="https://metacpan.org/pod/Pod::Html">Pod::Html</a>
 furnizează o altă unealtă pentru linia de comandă
 numită <hl>pod2html</hl>. Aceasta poate converti documente POD în HTML
 care pot fi vizualizate într-un browser.

@@ -28,7 +28,7 @@ Dans les exemples ci-dessous, je vais utiliser la licence la plus courante, cell
 
 <h2>ExtUtils::MakeMaker</h2>
 
-Si vous utilisez <a href="https://metacpan.org/module/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>,
+Si vous utilisez <a href="https://metacpan.org/pod/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>,
 ajoutez la ligne suivante dans votre Makefile.PL comme paramètre dans la fonction WriteMakefile :
 
 <code lang="perl">
@@ -47,7 +47,7 @@ ne contient pas encore cette fonctionnalité. Le mieux serait de mettre à jour 
 
 <h2>Module::Build</h2>
 
-Si vous utilisez <a href="https://metacpan.org/module/Module::Build">Module::Build</a>,
+Si vous utilisez <a href="https://metacpan.org/pod/Module::Build">Module::Build</a>,
 ajoutez la ligne suivante dans Build.PL, lors de l'appel à Module::Build->new :
 
 <code lang="perl">
@@ -56,7 +56,7 @@ license => 'perl',
 
 <h2>Module::Install</h2>
 
-Si vous utilisez <a href="https://metacpan.org/module/Module::Install">Module::Install</a>,
+Si vous utilisez <a href="https://metacpan.org/pod/Module::Install">Module::Install</a>,
 ajoutez la ligne suivante dans Makefile.PL :
 
 <code lang="perl">
@@ -75,7 +75,7 @@ license = Perl_5
 <h2>Spécification des META</h2>
 
 Afin de vérifier la liste des options valides pour le champ de la licence,
-consultez la spécification des META dans la documentation du module <a href="https://metacpan.org/module/CPAN::Meta::Spec">CPAN::Meta::Spec</a>.
+consultez la spécification des META dans la documentation du module <a href="https://metacpan.org/pod/CPAN::Meta::Spec">CPAN::Meta::Spec</a>.
 
 <h2>Droit d'auteur et licence</h2>
 

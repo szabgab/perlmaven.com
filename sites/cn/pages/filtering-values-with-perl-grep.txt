@@ -71,7 +71,7 @@ if (grep { $visitor eq $_ } @names) {
 
 如果返回值是0, 表达式则为false，如果是任何正数，表达式为true。
 
-这种方法可以解决问题，但是因为它牵扯到上下文，可能对一些朋友不是很清晰。来看一下另外一个方案：<a href="https://metacpan.org/module/List::MoreUtils">List::MoreUtils</a>模块的<hl>any</hl>函数。
+这种方法可以解决问题，但是因为它牵扯到上下文，可能对一些朋友不是很清晰。来看一下另外一个方案：<a href="https://metacpan.org/pod/List::MoreUtils">List::MoreUtils</a>模块的<hl>any</hl>函数。
 
 <h2>有匹配的元素么?</h2>
 

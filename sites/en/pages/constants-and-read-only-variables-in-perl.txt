@@ -76,7 +76,7 @@ Nevertheless, let's see two other solutions:
 
 <h2>The Readonly module</h2>
 
-The <a href="https://metacpan.org/module/Readonly">Readonly</a> module from CPAN
+The <a href="https://metacpan.org/pod/Readonly">Readonly</a> module from CPAN
 allow us to designate some of our "variables" to be read-only. Effectively turning
 them into constants.
 
@@ -140,7 +140,7 @@ The biggest drawback of Readonly, is its relatively slow performance.
 
 <h2>Readonly::XS</h2>
 
-There is also the <a href="https://metacpan.org/module/Readonly::XS">Readonly::XS</a>
+There is also the <a href="https://metacpan.org/pod/Readonly::XS">Readonly::XS</a>
 module that can be installed. One does not need to make any changes to their code,
 once the <hl>use Readonly;</hl> statement notices that <hl>Readonly::XS</hl> is
 also installed, the latter will be used to provide a speed improvement.

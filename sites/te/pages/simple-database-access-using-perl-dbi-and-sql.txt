@@ -16,13 +16,13 @@
 =abstract end
 
 <h2>Architecture</h2>
-Perl స్క్రిప్ట్స్ DBI ద్వారా దానికి కావలసిన <b>Database Driver</b> కి కనెక్ట్ అవుతుంది . (e.g. <a href="https://metacpan.org/module/DBD::Oracle">DBD::Oracle</a>
+Perl స్క్రిప్ట్స్ DBI ద్వారా దానికి కావలసిన <b>Database Driver</b> కి కనెక్ట్ అవుతుంది . (e.g. <a href="https://metacpan.org/pod/DBD::Oracle">DBD::Oracle</a>
 for <a href="http://www.oracle.com/">Oracle</a>,
-<a href="https://metacpan.org/module/DBD::Pg">DBD::Pg</a> for <a href="http://www.postgresql.org/">PostgreSQL</a>
-and <a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> to access <a href="http://sqlite.org/">SQLite</a>).
+<a href="https://metacpan.org/pod/DBD::Pg">DBD::Pg</a> for <a href="http://www.postgresql.org/">PostgreSQL</a>
+and <a href="https://metacpan.org/pod/DBD::SQLite">DBD::SQLite</a> to access <a href="http://sqlite.org/">SQLite</a>).
 ఆ డ్రైవర్స్ డేటాబేస్ ఇంజిన్స్ యొక్క C క్లయింట్ లైబ్రరీస్ తో పాటు కంపైల్ అవుతాయి. అన్ని డేటాబేస్ ఇంజిన్స్ Perl అప్లికేషన్ తో ఎంబెడెడ్ చేయబడివుంటాయి.
 
-<a href="https://metacpan.org/module/DBI">DBI</a> డాక్యుమెంటేషన్ తో వచ్చే ASCII-art ని ఇంప్రూవ్ చెయ్యడం కష్టం.ఇక్కడ దానిని వాడుకుందాం.
+<a href="https://metacpan.org/pod/DBI">DBI</a> డాక్యుమెంటేషన్ తో వచ్చే ASCII-art ని ఇంప్రూవ్ చెయ్యడం కష్టం.ఇక్కడ దానిని వాడుకుందాం.
 
 <pre>
              |<- Scope of DBI ->|

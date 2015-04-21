@@ -79,7 +79,7 @@ como um Integer.
 <h2>Outra classe como restrição de tipo</h2>
 
 Apesar dos
-<a href="https://metacpan.org/module/Moose::Util::TypeConstraints#Default-Type-Constraints">tipos
+<a href="https://metacpan.org/pod/Moose::Util::TypeConstraints#Default-Type-Constraints">tipos
 de restrição padrão</a>, o Moose também permite que você use o nome de
 qualquer classe existente como restrição de tipo.
 

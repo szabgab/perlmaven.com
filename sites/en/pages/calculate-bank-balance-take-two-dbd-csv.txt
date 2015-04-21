@@ -15,7 +15,7 @@ A father of three, he is currently trying to figure out how to <hl>use more 'sle
 After Gabor answered a user's question on
 <a href="/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">how
 to calculate bank balances in CSV</a>, I suggested that this was just screaming
-for <a href="https://metacpan.org/module/DBD::CSV">DBD::CSV</a>.  Gabor invited
+for <a href="https://metacpan.org/pod/DBD::CSV">DBD::CSV</a>.  Gabor invited
 me to put my fingers where my mouth was, so to speak, and explain in greater
 detail.
 
@@ -27,7 +27,7 @@ Nearly every time someone has a question on CSV in Perl, the first thing
 in my mind is always the same thing: DBD::CSV.  The reason for this is two-fold.
 First, when accessing CSV files through DBD::CSV, you're learning and/or using
 two skills that are portable to far more projects than na&iuml;ve splits or
-even using <a href="https://metacpan.org/module/Text::CSV_XS">Text::CSV_XS</a>:
+even using <a href="https://metacpan.org/pod/Text::CSV_XS">Text::CSV_XS</a>:
 <b>DBI</b> and <b>SQL</b>. This means that your skill set will grow in ways that are more
 useful to your career, but, more immediately, you will also have a larger
 set of people to whom you can ask for help.  For example, nearly any Database
@@ -44,8 +44,8 @@ And a bonus reason is that once you realize your data is, well, data,
 the natural transition to another database system (SQLite, DB2, Oracle,
 whatever is handy) becomes natural.  And since you've already written your
 code with DBD::CSV, transitioning to
-<a href="https://metacpan.org/module/DBD::DB2">DBD::DB2</a> or
-<a href="https://metacpan.org/module/DBD::SQLite">DBD::SQLite</a> (the two I
+<a href="https://metacpan.org/pod/DBD::DB2">DBD::DB2</a> or
+<a href="https://metacpan.org/pod/DBD::SQLite">DBD::SQLite</a> (the two I
 use the most, YMMV) becomes simpler.
 
 <h2>The Approach</h2>
@@ -100,7 +100,7 @@ the magic:</p>
 use DBI;
 </code>
 
-Note that we don't load the CSV driver, but only <a href="https://metacpan.org/module/DBI">DBI</a>.
+Note that we don't load the CSV driver, but only <a href="https://metacpan.org/pod/DBI">DBI</a>.
 Shortly, DBI will load DBD::CSV for us.  This is convenient in that there will
 only be one place where we're specifying what back-end database we're using,
 meaning less to change should we desire to upgrade to a full-fledged database
@@ -324,7 +324,7 @@ about accidentally clobbering anything here.
 During output I do the subtraction.  In this case, I have no idea what
 the original requester really wanted, but we have all the information from
 the CSV that we wanted, so it's really not that important.  I've opted to
-use one of my favorite modules, <a href="https://metacpan.org/module/Text::Table">Text::Table</a>.
+use one of my favorite modules, <a href="https://metacpan.org/pod/Text::Table">Text::Table</a>.
 
 <code lang="perl">
 use Text::Table;
