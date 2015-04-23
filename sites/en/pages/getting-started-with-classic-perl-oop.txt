@@ -229,7 +229,7 @@ Can't locate object method "get" via package "WWW::Mechanize" at get.pl line 7.
 That looks good. It means, the call to <hl>new</hl> worked and we need to implement <hl>get</hl> now.
 Before we do that, let's make another small detour.
 
-<h2>Detour: how does the object look like?</h2>
+<h2>Detour: what does the object look like?</h2>
 
 First, change the script and a <hl>print</hl> statement right after the call to <hl>new</hl>
 
