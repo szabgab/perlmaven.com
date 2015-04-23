@@ -51,7 +51,7 @@ Some include screencasts, others contain just text.
   <li><a href="/pro/build-pl-of-module-build">Build.PL of Module::Build</a></li>
   <li><a href="/pro/changes-and-readme">Changes and README</a></li>
   <li><a href="/pro/manifest-and-manifest-skip">MANIFEST and MANIFEST.SKIP</a></li>
-  <li><a href="/pro/file-and-module">Pakcaging a script and a module</a></li>
+  <li><a href="/pro/file-and-module">Packaging a script and a module</a></li>
   <li><a href="/pro/packaging-with-makefile-pl">Packaging with Makefile.PL</a></li>
   <li><a href="/pro/packaging-with-build-pl">Packaging with Build.PL</a></li>
   <li><a href="/pro/test-file">test-file</a></li>
@@ -78,6 +78,8 @@ Some include screencasts, others contain just text.
 <h2>References</h2>
 <ol>
 <li>Introduction to References</li>
+  <li><a href="/passing-two-arrays-to-a-function">Passing two arrays to a function</a></li>
+  <li><a href="/pro/array-references-in-perl">Array references</a></li>
   <li>Handling multi-dimensional, complex data structures</li>
   <li>Manipulating Complex Data Structures</li>
   <li>Reference counting</li>
