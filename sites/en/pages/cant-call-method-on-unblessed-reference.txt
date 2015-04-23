@@ -2,7 +2,7 @@
 =timestamp 2014-04-03T08:10:01
 =indexes B::Deparse
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

@@ -3,7 +3,7 @@
 =indexes length, lc, uc, index, substr, scalar, texto
 =status show
 =original string-functions-length-lc-uc-index-substr
-=books beginner_book
+=books beginner
 =author szabgab
 =translator leprevost
 =comments_disqus_enable 1

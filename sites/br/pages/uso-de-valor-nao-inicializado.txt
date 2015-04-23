@@ -3,7 +3,7 @@
 =indexes undef, valor não inicializado, $|, alertas, buferização
 =status show
 =original use-of-uninitialized-value
-=books beginner_book
+=books beginner
 =author szabgab
 =translator fredlopes
 =comments_disqus_enable 1

@@ -3,7 +3,7 @@
 =indexes ;, alertas
 =status show
 =original unknown-warnings-category
-=books beginner_book
+=books beginner
 =author szabgab
 =translator fredlopes
 =comments_disqus_enable 1

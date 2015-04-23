@@ -2,7 +2,7 @@
 =timestamp 2015-02-01T07:30:01
 =indexes Web sites
 =status draft
-=books beginner_book
+=books beginner
 =author szabgab
 =archive 1
 =comments_disqus_enable 1

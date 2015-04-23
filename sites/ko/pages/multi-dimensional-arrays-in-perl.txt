@@ -3,7 +3,7 @@
 =indexes Data::Dumper, ARRAY
 =status show
 =original multi-dimensional-arrays-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

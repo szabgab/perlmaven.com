@@ -3,7 +3,7 @@
 =indexes undef, true, verdadeiro, false, falso, booleano
 =status show
 =original boolean-values-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator leprevost
 =comments_disqus_enable 1

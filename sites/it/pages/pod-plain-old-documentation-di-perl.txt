@@ -3,7 +3,7 @@
 =indexes POD, perldoc, =head1, =cut, =pod, =head2, documentazione, pod2html, pod2pdf
 =status show
 =original pod-plain-old-documentation-of-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator giatorta
 =comments_disqus_enable 1

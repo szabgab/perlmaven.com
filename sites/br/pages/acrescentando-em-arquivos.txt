@@ -3,7 +3,7 @@
 =indexes files, append, acrescentar, open, >>
 =status show
 =original appending-to-files
-=books beginner_book
+=books beginner
 =author szabgab
 =translator leprevost
 =comments_disqus_enable 1

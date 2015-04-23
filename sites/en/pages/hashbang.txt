@@ -2,7 +2,7 @@
 =timestamp 2014-04-29T09:03:01
 =indexes #!, -w, -t, -T, /usr/bin/perl
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

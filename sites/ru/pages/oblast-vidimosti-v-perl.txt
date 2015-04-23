@@ -3,7 +3,7 @@
 =indexes my, scope
 =status show
 =original scope-of-variables-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator spidamoo
 =comments_disqus_enable 1

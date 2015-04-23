@@ -2,7 +2,7 @@
 =timestamp 2013-09-14T18:30:01
 =indexes constant, Readonly, Readonly::XS
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

@@ -3,7 +3,7 @@
 =description In Perl the length function is only used for strings. In order to get the length of an array use the scalar function.
 =indexes length, scalar
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

@@ -3,7 +3,7 @@
 =indexes binmode, Unicode, UTF8
 =status show
 =original how-to-create-an-indian-rupee-symbol-with-perl-code
-=books beginner_book
+=books beginner
 =author szabgab
 =translator oval
 =comments_disqus_enable 1

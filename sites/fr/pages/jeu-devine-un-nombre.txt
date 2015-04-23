@@ -3,7 +3,7 @@
 =indexes rand, hasard, int, entier
 =status show
 =original number-guessing-game
-=books beginner_book
+=books beginner
 =author szabgab
 =translator oval
 =comments_disqus_enable 1

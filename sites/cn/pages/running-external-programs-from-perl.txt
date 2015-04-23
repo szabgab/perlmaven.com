@@ -3,7 +3,7 @@
 =indexes system
 =status show
 =original running-external-programs-from-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator terrencehan
 =comments_disqus_enable 1

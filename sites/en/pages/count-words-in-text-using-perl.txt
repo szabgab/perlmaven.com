@@ -2,7 +2,7 @@
 =timestamp 2013-11-21T12:07:01
 =indexes hash, open, /g, split 
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

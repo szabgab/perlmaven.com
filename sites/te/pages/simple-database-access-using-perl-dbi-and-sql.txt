@@ -3,7 +3,7 @@
 =indexes SQL, DBI, DBD::SQLite, SELECT, fetchrow_array, fetchrow_hashref
 =status show
 =original simple-database-access-using-perl-dbi-and-sql
-=books beginner_book
+=books beginner
 =author szabgab
 =translator balasatishreddykarri
 =comments_disqus_enable 1

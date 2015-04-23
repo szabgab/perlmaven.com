@@ -3,7 +3,7 @@
 =indexes strict, symbolic references
 =status show
 =original symbolic-reference-in-perl
-=books advanced_book
+=books advanced
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

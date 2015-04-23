@@ -4,7 +4,7 @@
 =tags screencast
 =status show
 =original installing-perl-and-getting-started
-=books beginner_book
+=books beginner
 =author szabgab
 =translator rampa
 =comments_disqus_enable 1

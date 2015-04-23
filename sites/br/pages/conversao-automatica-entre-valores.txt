@@ -3,7 +3,7 @@
 =indexes Scalar::Util, casting, conversão, tipo, texto, número
 =status show
 =original automatic-value-conversion-or-casting-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator leprevost
 =comments_disqus_enable 1

@@ -2,7 +2,7 @@
 =timestamp 2014-09-30T10:30:01
 =indexes or, open or die, sort
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

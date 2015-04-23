@@ -2,7 +2,7 @@
 =timestamp 2015-04-13T09:50:00
 =indexes Path::Tiny, path, FindBin, $Bin, File::Spec, catdir, File::Basename, dirname, Dir::Self, __DIR__, @INC, lib, rlib
 =status show
-=books advanced_book
+=books advanced
 =author szabgab
 =comments_disqus_enable 1
 

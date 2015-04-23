@@ -4,7 +4,7 @@
 =indexes length, lc, uc, index, substr, scalar
 =tags screencast
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

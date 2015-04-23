@@ -3,7 +3,7 @@
 =indexes scalar, list, array, size, length, context, Perl
 =status show
 =original scalar-and-list-context-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator yunchang
 =comments_disqus_enable 1

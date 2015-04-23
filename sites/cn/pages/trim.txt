@@ -3,7 +3,7 @@
 =indexes trim, ltrim, rtrim
 =status show
 =original trim
-=books beginner_book
+=books beginner
 =author szabgab
 =translator herolee
 =comments_disqus_enable 1

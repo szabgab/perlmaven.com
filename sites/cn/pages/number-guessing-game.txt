@@ -3,7 +3,7 @@
 =indexes rand, random, int, integer
 =status show
 =original number-guessing-game
-=books beginner_book
+=books beginner
 =author szabgab
 =translator swuecho
 =comments_disqus_enable 1

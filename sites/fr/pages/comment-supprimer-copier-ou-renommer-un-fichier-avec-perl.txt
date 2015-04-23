@@ -3,7 +3,7 @@
 =indexes unlink, remove, rm, del, delete, copy, cp, rename, move, mv, File::Copy
 =status show
 =original how-to-remove-copy-or-rename-a-file-with-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator oval
 =comments_disqus_enable 1

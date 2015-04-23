@@ -3,7 +3,7 @@
 =description A Perl hash (associative array) can hold key-value pairs where the keys are strings, the values are scalars.
 =indexes hash, keys
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

@@ -2,7 +2,7 @@
 =timestamp 2015-01-21T07:50:00
 =indexes autovivification
 =status show
-=books advanced_book
+=books advanced
 =author szabgab
 =comments_disqus_enable 1
 

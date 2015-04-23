@@ -2,7 +2,7 @@
 =timestamp 2013-03-12T12:45:51
 =indexes while, while (1), loop, infinite loop, last
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

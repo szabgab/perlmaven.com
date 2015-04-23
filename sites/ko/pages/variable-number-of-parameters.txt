@@ -3,7 +3,7 @@
 =indexes sub, @_
 =status show
 =original variable-number-of-parameters
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

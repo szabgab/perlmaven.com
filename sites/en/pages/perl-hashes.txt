@@ -2,7 +2,7 @@
 =timestamp 2013-03-19T11:12:06
 =indexes hash, keys, value, associative, %, =>, fat arrow, fat comma
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

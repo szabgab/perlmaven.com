@@ -3,7 +3,7 @@
 =indexes strings, ', ", \, escape character, interpolation, quote, embedded characters, q, qq
 =status show
 =original quoted-interpolated-and-escaped-strings-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator terrencehan
 =comments_disqus_enable 1

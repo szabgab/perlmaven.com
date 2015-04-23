@@ -2,7 +2,7 @@
 =timestamp 2013-08-08T08:22:13
 =indexes Unicode, UTF-8
 =status show
-=books beginner_book
+=books beginner
 =author mguttman
 =comments_disqus_enable 1
 

@@ -3,7 +3,7 @@
 =indexes -d, Data::Dumper, print, debug, debugging, $VAR1, $VAR2
 =status show
 =original debugging-perl-scripts
-=books beginner_book
+=books beginner
 =author szabgab
 =translator giatorta
 =comments_disqus_enable 1

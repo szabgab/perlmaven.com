@@ -3,7 +3,7 @@
 =indexes strict, warnings, say, print, chomp, scalar, $
 =status show
 =original installing-perl-and-getting-started
-=books beginner_book
+=books beginner
 =author szabgab
 =translator swuecho
 =comments_disqus_enable 1

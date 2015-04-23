@@ -3,7 +3,7 @@
 =indexes B::Deparse
 =status show
 =original cant-call-method-on-unblessed-reference
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

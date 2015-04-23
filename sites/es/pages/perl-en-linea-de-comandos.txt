@@ -2,7 +2,7 @@
 =timestamp 2013-07-09T10:00:00
 =status show
 =original perl-on-the-command-line
-=books beginner_book
+=books beginner
 =author szabgab
 =translator ileiva
 =comments_disqus_enable 1

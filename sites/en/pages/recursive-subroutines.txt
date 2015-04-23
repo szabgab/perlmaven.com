@@ -2,7 +2,7 @@
 =timestamp 2013-09-18T15:00:00
 =indexes sub, return, recursive, opendir, readdir
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

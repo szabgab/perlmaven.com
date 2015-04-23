@@ -3,7 +3,7 @@
 =indexes my, scope
 =status show
 =original my-variable-masks-earlier-declaration-in-same-scope
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

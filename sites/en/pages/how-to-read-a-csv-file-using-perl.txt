@@ -2,7 +2,7 @@
 =timestamp 2012-07-28T12:45:56
 =indexes CSV, split, Text::CSV, Text::CSV_XS
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

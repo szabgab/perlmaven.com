@@ -3,7 +3,7 @@
 =indexes for, foreach, loop, laço, infinite loop, laço infinito
 =status show
 =original for-loop-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator leprevost
 =comments_disqus_enable 1

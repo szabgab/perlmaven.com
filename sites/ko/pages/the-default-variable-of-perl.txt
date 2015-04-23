@@ -3,7 +3,7 @@
 =indexes Perl, $_, scalar, default, variable, topic
 =status show
 =original the-default-variable-of-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator johnkang
 =comments_disqus_enable 1

@@ -2,7 +2,7 @@
 =timestamp 2013-08-02T19:30:10
 =indexes ASCII, UTF-8, Unicode
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

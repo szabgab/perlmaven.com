@@ -3,7 +3,7 @@
 =indexes warnings, strict, eventueller Schreibfehler
 =status show
 =original name-used-only-once-possible-typo
-=books beginner_book
+=books beginner
 =author szabgab
 =translator mca
 =comments_disqus_enable 1

@@ -2,7 +2,7 @@
 =timestamp 2014-01-27T22:13:10
 =indexes chomp, $/, English, $INPUT_RECORD_SEPARATOR, $RS
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

@@ -3,7 +3,7 @@
 =indexes sort, $a, $b, cmp, <=>, substr
 =status show
 =original sorting-mixed-strings
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

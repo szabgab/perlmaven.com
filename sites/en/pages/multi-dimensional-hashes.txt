@@ -2,7 +2,7 @@
 =timestamp 2013-11-14T23:30:01
 =indexes hash, Data::Dumper
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

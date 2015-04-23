@@ -2,7 +2,7 @@
 =timestamp 2015-04-21T08:10:01
 =indexes fork, wait, waitpid
 =status show
-=books advanced_book
+=books advanced
 =author szabgab
 =comments_disqus_enable 1
 

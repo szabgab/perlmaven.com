@@ -2,7 +2,7 @@
 =timestamp 2013-06-25T12:50:10
 =indexes STDOUT, STDERR, /dev/null, $|, buffering
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

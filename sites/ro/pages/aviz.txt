@@ -3,7 +3,7 @@
 =indexes warn, STDERR
 =status show
 =original warn
-=books beginner_book
+=books beginner
 =author szabgab
 =translator stefansbv
 =comments_disqus_enable 1

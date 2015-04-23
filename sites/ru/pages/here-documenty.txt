@@ -3,7 +3,7 @@
 =indexes <<, /m, /g, q, qq
 =status show
 =original here-documents
-=books beginner_book
+=books beginner
 =author szabgab
 =translator spidamoo
 =comments_disqus_enable 1

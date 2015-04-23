@@ -3,7 +3,7 @@
 =indexes eq, ne, lt, gt, le, ge, ==, !=, <, >, <=, >=
 =status show
 =original comparing-scalars-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator giatorta
 =comments_disqus_enable 1

@@ -2,7 +2,7 @@
 =timestamp 2013-04-04T12:45:17
 =indexes time, localtime, gmtime, Time::HiRes, DateTime
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

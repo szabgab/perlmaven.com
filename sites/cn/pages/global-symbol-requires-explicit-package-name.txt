@@ -3,7 +3,7 @@
 =indexes strict, my, package, global symbol
 =status show
 =original global-symbol-requires-explicit-package-name
-=books beginner_book
+=books beginner
 =author szabgab
 =translator herolee
 =comments_disqus_enable 1

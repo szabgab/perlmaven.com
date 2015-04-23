@@ -3,7 +3,7 @@
 =indexes comando, one-liner, -v, -e, -p, -i
 =status show
 =original perl-on-the-command-line
-=books beginner_book
+=books beginner
 =author szabgab
 =translator leprevost
 =comments_disqus_enable 1

@@ -2,7 +2,7 @@
 =timestamp 2015-01-19T17:00:01
 =indexes Test::Pod, Test::Pod::Coverage, Test::Version, Test::Perl::Critic, Travis-CI, Test::DistManifest, Test::CheckManifest, Test::Code::TidyAll
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

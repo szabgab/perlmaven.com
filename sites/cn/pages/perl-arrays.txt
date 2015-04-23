@@ -3,7 +3,7 @@
 =indexes @, array, arrays, length, size, foreach, Data::Dumper, scalar, push, pop, shift
 =status show
 =original perl-arrays
-=books beginner_book
+=books beginner
 =author szabgab
 =translator swuecho
 =comments_disqus_enable 1

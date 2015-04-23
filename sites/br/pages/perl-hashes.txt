@@ -3,7 +3,7 @@
 =indexes hash, keys, value, associative, %, =>, fat arrow, fat comma
 =status show
 =original perl-hashes
-=books beginner_book
+=books beginner
 =author szabgab
 =translator aramisf
 =comments_disqus_enable 1

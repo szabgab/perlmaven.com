@@ -3,7 +3,7 @@
 =indexes open, close, write, die, open or die, >, encoding, UTF-8
 =status show
 =original writing-to-files-with-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator leprevost
 =comments_disqus_enable 1

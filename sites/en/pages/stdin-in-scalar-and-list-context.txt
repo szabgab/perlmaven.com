@@ -2,7 +2,7 @@
 =timestamp 2015-03-18T09:45:56
 =indexes STDIN, <STDIN>, scalar
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

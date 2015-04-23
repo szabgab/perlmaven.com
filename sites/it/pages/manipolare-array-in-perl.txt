@@ -3,7 +3,7 @@
 =indexes array, shift, unshift, push, pop
 =status show
 =original manipulating-perl-arrays
-=books beginner_book
+=books beginner
 =author szabgab
 =translator paologianrossi
 =comments_disqus_enable 1

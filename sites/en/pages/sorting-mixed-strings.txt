@@ -2,7 +2,7 @@
 =timestamp 2014-04-09T10:45:56
 =indexes sort, $a, $b, cmp, <=>, substr
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

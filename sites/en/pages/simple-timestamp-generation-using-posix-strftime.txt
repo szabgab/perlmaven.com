@@ -2,7 +2,7 @@
 =timestamp 2014-11-21T16:10:01
 =indexes POSIX, strftime
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

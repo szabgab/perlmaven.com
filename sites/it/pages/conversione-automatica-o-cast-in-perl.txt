@@ -3,7 +3,7 @@
 =indexes is_number, looks_like_number, Scalar::Util, cast, conversione di tipo
 =status show
 =original automatic-value-conversion-or-casting-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator giatorta
 =comments_disqus_enable 1

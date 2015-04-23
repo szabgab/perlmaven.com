@@ -3,7 +3,7 @@
 =indexes open, <$fh>, read, <, encoding, UTF-8, die, open or die
 =status show
 =original open-and-read-from-files
-=books beginner_book
+=books beginner
 =author szabgab
 =translator spidamoo
 =comments_disqus_enable 1

@@ -2,7 +2,7 @@
 =timestamp 2014-04-27T20:30:01
 =indexes wantarray
 =status show
-=books advanced_book
+=books advanced
 =author szabgab
 =comments_disqus_enable 1
 

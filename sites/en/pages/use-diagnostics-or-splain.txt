@@ -2,7 +2,7 @@
 =timestamp 2014-04-01T23:55:01
 =indexes diagnostics, splain
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

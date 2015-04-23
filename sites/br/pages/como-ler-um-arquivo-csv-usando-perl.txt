@@ -3,7 +3,7 @@
 =indexes CSV, split, Text::CSV, Text::CSV_XS
 =status show
 =original how-to-read-a-csv-file-using-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator leprevost
 =comments_disqus_enable 1

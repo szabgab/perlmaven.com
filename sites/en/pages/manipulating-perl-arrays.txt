@@ -3,7 +3,7 @@
 =description push(ARRAY, LIST) - extending the ARRAY with the content of LIST; LAST = pop(ARRAY) - fetching the last element; FIRST = shift(ARRAY); unshift(ARRAY, LIST)
 =indexes array, shift, unshift, push, pop
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

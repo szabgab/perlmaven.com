@@ -3,7 +3,7 @@
 =indexes download, install, Windows, Linux, UNIX, Mac OSX, DWIM Perl, ActivePerl, Citrus Perl
 =status show
 =original download-and-install-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator aramisf
 =comments_disqus_enable 1

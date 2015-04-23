@@ -3,7 +3,7 @@
 =description In Perl @ARGV contains the raw command line arguments as passed by the user running the script
 =indexes @ARGV, $ARGV[], $0, shift, argc
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

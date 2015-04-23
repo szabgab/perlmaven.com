@@ -2,7 +2,7 @@
 =timestamp 2012-09-20T21:42:56
 =indexes unique, uniq, distinct, filter, grep, array, List::MoreUtils, duplicate
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

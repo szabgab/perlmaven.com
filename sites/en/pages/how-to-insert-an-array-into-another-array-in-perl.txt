@@ -2,7 +2,7 @@
 =timestamp 2015-02-04T19:05:01
 =indexes splice
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =archive 1
 =comments_disqus_enable 1

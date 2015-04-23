@@ -3,7 +3,7 @@
 =indexes IDE, editor, Padre, vim, emacs, Eclipse, Komodo
 =status show
 =original perl-editor
-=books beginner_book
+=books beginner
 =author szabgab
 =translator giatorta
 =comments_disqus_enable 1

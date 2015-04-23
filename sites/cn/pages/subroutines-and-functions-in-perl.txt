@@ -3,7 +3,7 @@
 =indexes sub, return, subroutine, function, @_, $_[0]
 =status show
 =original subroutines-and-functions-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator herolee
 =comments_disqus_enable 1

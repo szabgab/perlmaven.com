@@ -2,7 +2,7 @@
 =timestamp 2013-05-19T20:30:01
 =indexes push, shift, queue, array, last, FIFO
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

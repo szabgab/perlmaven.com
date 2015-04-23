@@ -3,7 +3,7 @@
 =indexes perldoc, Dokumentation, POD, CPAN
 =status show
 =original core-perl-documentation-cpan-module-documentation
-=books beginner_book
+=books beginner
 =author szabgab
 =translator mca
 =comments_disqus_enable 1

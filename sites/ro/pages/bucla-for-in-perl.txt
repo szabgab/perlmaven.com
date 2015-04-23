@@ -3,7 +3,7 @@
 =indexes for, foreach, buclă, buclă infinită
 =status show
 =original for-loop-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator ggl
 =comments_disqus_enable 1

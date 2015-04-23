@@ -3,7 +3,7 @@
 =indexes ?:
 =status show
 =original the-ternary-operator-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator davidegx
 =comments_disqus_enable 1

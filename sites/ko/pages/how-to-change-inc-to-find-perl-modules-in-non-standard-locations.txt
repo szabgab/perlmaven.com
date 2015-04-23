@@ -3,7 +3,7 @@
 =indexes @INC, use, PERLLIB, PERL5LIB, lib, -I
 =status show
 =original how-to-change-inc-to-find-perl-modules-in-non-standard-locations
-=books beginner_book
+=books beginner
 =author szabgab
 =translator johnkang
 =comments_disqus_enable 1

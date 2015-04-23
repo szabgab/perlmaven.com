@@ -2,7 +2,7 @@
 =timestamp 2012-09-05T21:45:56
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

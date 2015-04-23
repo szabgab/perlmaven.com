@@ -2,7 +2,7 @@
 =timestamp 2013-01-27T10:45:56
 =indexes perldoc, documentation, POD, CPAN
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

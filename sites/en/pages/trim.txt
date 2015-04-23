@@ -2,7 +2,7 @@
 =timestamp 2013-04-12T10:01:01
 =indexes trim, ltrim, rtrim
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

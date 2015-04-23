@@ -3,7 +3,7 @@
 =indexes splice, array
 =status show
 =original splice-to-slice-and-dice-arrays-in-perl
-=books advanced_book
+=books advanced
 =author szabgab
 =translator aramisf
 =comments_disqus_enable 1

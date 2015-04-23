@@ -3,7 +3,7 @@
 =indexes open
 =status show
 =original open-files-in-the-old-way
-=books beginner_book
+=books beginner
 =author szabgab
 =translator terrencehan
 =comments_disqus_enable 1

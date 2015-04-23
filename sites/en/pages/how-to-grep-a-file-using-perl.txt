@@ -2,7 +2,7 @@
 =timestamp 2014-12-26T16:00:01
 =indexes grep, regex
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

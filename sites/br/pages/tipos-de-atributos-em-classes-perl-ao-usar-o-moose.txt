@@ -3,7 +3,7 @@
 =indexes OOP, Moose, object oriented, class, object, instance, constructor, getter, setter, accessor, attribute
 =status show
 =original attribute-types-in-perl-classes-when-using-moose
-=books advanced_book
+=books advanced
 =author szabgab
 =translator aramisf
 =comments_disqus_enable 1

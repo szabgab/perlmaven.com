@@ -2,7 +2,7 @@
 =timestamp 2013-02-08T00:05:56
 =indexes splice, array
 =status show
-=books advanced_book
+=books advanced
 =author szabgab
 =comments_disqus_enable 1
 

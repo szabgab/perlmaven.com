@@ -3,7 +3,7 @@
 =indexes open, close, replace, File::Slurp, read_file, write_file, slurp, $/, $INPUT_RECORD_SEPARATOR
 =status show
 =original how-to-replace-a-string-in-a-file-with-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator herolee
 =comments_disqus_enable 1

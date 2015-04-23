@@ -2,7 +2,7 @@
 =timestamp 2013-04-13T22:34:56
 =indexes sub, return, subroutine, function, @_, $_[0]
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

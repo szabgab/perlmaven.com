@@ -3,7 +3,7 @@
 =indexes static, state
 =status show
 =original static-and-state-variables-in-perl
-=books advanced_book
+=books advanced
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

@@ -3,7 +3,7 @@
 =indexes package, use, Exporter, import, @INC, @EXPORT_OK, $0, dirname, abs_path, Cwd, File::Basename, lib, 1;
 =status show
 =original how-to-create-a-perl-module-for-code-reuse
-=books advanced_book
+=books advanced
 =author szabgab
 =translator h2chang
 =comments_disqus_enable 1

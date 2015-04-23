@@ -2,7 +2,7 @@
 =timestamp 2013-04-19T16:46:56
 =indexes my, scope
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

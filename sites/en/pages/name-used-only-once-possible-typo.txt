@@ -2,7 +2,7 @@
 =timestamp 2013-03-05T20:31:10
 =indexes warnings, strict, possible typo
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

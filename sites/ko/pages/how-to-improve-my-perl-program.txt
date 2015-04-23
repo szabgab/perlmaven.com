@@ -3,7 +3,7 @@
 =indexes open, Perl::Critic, Perl::Tidy
 =status show
 =original how-to-improve-my-perl-program
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

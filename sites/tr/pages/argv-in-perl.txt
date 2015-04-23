@@ -3,7 +3,7 @@
 =indexes @ARGV, $ARGV[], $0, shift, argc
 =status show
 =original argv-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator kbeyazli
 =comments_disqus_enable 1

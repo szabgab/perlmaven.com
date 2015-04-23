@@ -3,7 +3,7 @@
 =indexes strict, my, undef, say, +, x, ., sigilli, $, @, %, warning FATAL
 =status show
 =original scalar-variables
-=books beginner_book
+=books beginner
 =author szabgab
 =translator giatorta
 =comments_disqus_enable 1

@@ -3,7 +3,7 @@
 =indexes ;, warnings, unknown warnings
 =status show
 =original unknown-warnings-category
-=books beginner_book
+=books beginner
 =author szabgab
 =translator khadis
 =comments_disqus_enable 1

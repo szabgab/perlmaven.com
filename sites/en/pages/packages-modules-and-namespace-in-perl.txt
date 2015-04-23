@@ -2,7 +2,7 @@
 =timestamp 2014-02-17T21:50:01
 =indexes package
 =status show
-=books advanced_book
+=books advanced
 =author szabgab
 =comments_disqus_enable 1
 

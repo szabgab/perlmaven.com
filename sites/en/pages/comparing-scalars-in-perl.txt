@@ -3,7 +3,7 @@
 =indexes eq, ne, lt, gt, le, ge, ==, !=, <, >, <=, >=
 =tags screencast
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

@@ -3,7 +3,7 @@
 =indexes exit, $?, >>
 =status show
 =original how-to-exit-from-perl-script
-=books beginner_book
+=books beginner
 =author szabgab
 =translator spidamoo
 =comments_disqus_enable 1

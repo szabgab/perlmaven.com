@@ -3,7 +3,7 @@
 =indexes ASCII, UTF-8, Unicode
 =status show
 =original what-is-a-text-file
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

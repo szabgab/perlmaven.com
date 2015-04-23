@@ -3,7 +3,7 @@
 =indexes while, while (1), loop, laço, infinite loop, laço infinito, last
 =status show
 =original while-loop
-=books beginner_book
+=books beginner
 =author szabgab
 =translator leprevost
 =comments_disqus_enable 1

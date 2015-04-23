@@ -3,7 +3,7 @@
 =description perl array denoted with @ - creating, checking size, iterating over the elements, accessing elements
 =indexes @, array, arrays, length, size, foreach, Data::Dumper, scalar, push, pop, shift, $#
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

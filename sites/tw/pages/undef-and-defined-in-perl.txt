@@ -3,7 +3,7 @@
 =indexes undef, defined
 =status show
 =original undef-and-defined-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gugod
 =comments_disqus_enable 1

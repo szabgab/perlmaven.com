@@ -2,7 +2,7 @@
 =timestamp 2013-05-15T11:45:03
 =indexes strings, ', ", \, escape character, interpolation, quote, embedded characters, q, qq
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

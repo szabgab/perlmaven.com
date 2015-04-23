@@ -3,7 +3,7 @@
 =indexes STDOUT, STDERR, /dev/null, $|, buffering
 =status show
 =original stdout-stderr-and-redirection
-=books beginner_book
+=books beginner
 =author szabgab
 =translator giatorta
 =comments_disqus_enable 1

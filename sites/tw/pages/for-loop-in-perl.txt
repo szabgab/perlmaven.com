@@ -3,7 +3,7 @@
 =indexes for, foreach, loop, infinite loop
 =status show
 =original for-loop-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gugod
 =comments_disqus_enable 1

@@ -2,7 +2,7 @@
 =timestamp 2013-02-15T01:05:06
 =indexes syntax error, scalar found, operator expected
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

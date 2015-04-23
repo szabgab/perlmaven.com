@@ -3,7 +3,7 @@
 =indexes undef, splice, array, delete
 =status show
 =original how-to-eliminate-a-value-in-the-middle-of-an-array-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

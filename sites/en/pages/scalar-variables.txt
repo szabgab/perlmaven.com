@@ -3,7 +3,7 @@
 =indexes strict, my, undef, say, +, x, ., sigil, $, @, %, FATAL warnings
 =tags screencast
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

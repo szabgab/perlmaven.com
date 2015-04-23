@@ -2,7 +2,7 @@
 =timestamp 2014-10-21T09:00:01
 =indexes ., //, =~, !~
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

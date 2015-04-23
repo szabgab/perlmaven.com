@@ -3,7 +3,7 @@
 =indexes map, transform, list, array
 =status show
 =original transforming-a-perl-array-using-map
-=books advanced_book
+=books advanced
 =author szabgab
 =translator terrencehan
 =comments_disqus_enable 1

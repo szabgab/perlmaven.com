@@ -3,7 +3,7 @@
 =indexes help
 =status show
 =original help
-=books beginner_book
+=books beginner
 =author szabgab
 =translator name2rnd
 =comments_disqus_enable 1

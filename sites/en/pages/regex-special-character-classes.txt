@@ -2,7 +2,7 @@
 =timestamp 2015-04-08T08:00:01
 =indexes [], \d, \w, \s, \D, \W, \S, \p, \P
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

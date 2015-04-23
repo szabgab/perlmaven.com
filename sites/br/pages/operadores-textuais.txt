@@ -3,7 +3,7 @@
 =indexes x, ., ++
 =status show
 =original string-operators
-=books beginner_book
+=books beginner
 =author szabgab
 =translator leprevost
 =comments_disqus_enable 1

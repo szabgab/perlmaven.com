@@ -2,7 +2,7 @@
 =timestamp 2013-05-09T10:01:01
 =indexes undef, splice, array, delete
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

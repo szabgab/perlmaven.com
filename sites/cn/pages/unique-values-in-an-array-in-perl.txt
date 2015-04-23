@@ -3,7 +3,7 @@
 =indexes unique, uniq, distinct, filter, grep, array, List::MoreUtils, duplicate
 =status show
 =original unique-values-in-an-array-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator terrencehan
 =comments_disqus_enable 1

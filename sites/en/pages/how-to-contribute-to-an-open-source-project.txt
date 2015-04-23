@@ -2,7 +2,7 @@
 =timestamp 2013-11-15T07:30:01
 =indexes Open Source
 =status done
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

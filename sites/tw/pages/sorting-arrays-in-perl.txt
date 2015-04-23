@@ -3,7 +3,7 @@
 =indexes sort, $a, $b, cmp, <=>
 =status show
 =original sorting-arrays-in-perl
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gugod
 =comments_disqus_enable 1

@@ -3,7 +3,7 @@
 =indexes package
 =status show
 =original packages-modules-and-namespace-in-perl
-=books advanced_book
+=books advanced
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

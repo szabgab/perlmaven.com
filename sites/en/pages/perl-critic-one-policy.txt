@@ -2,7 +2,7 @@
 =timestamp 2013-02-17T09:45:56
 =indexes Perl::Critic, perlcritic
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

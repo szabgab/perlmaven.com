@@ -3,7 +3,7 @@
 =indexes warnings, state, __WARN__, %SIG, $SIG{}, local 
 =status show
 =original how-to-capture-and-save-warnings-in-perl
-=books advanced_book
+=books advanced
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

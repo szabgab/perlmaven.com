@@ -2,7 +2,7 @@
 =timestamp 2013-01-29T11:45:56
 =indexes download, install, Windows, Linux, UNIX, Mac OSX, DWIM Perl, ActivePerl, Citrus Perl
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

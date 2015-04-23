@@ -3,7 +3,7 @@
 =indexes time, localtime, gmtime, Time::HiRes, DateTime
 =status show
 =original the-year-19100
-=books beginner_book
+=books beginner
 =author szabgab
 =translator swuecho
 =comments_disqus_enable 1

@@ -3,7 +3,7 @@
 =indexes strict, warnings, say, print, chomp, scalar, $, STDIN, <STDIN>
 =tags screencast
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 

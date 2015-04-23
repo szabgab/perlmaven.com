@@ -3,7 +3,7 @@
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show
 =original use-of-uninitialized-value
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gypark
 =comments_disqus_enable 1

@@ -3,7 +3,7 @@
 =indexes +, -, *, /, %, ++, --, +=, *=, -=, /=, %=
 =status show
 =original numerical-operators
-=books beginner_book
+=books beginner
 =author szabgab
 =translator davidegx
 =comments_disqus_enable 1

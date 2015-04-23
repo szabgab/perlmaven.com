@@ -3,7 +3,7 @@
 =indexes POO, orienté objet, classe, objet, instance, constructeur, accesseurs, modificateurs, mutateurs, attributs, Moose
 =status show
 =original object-oriented-perl-using-moose
-=books advanced_book
+=books advanced
 =author szabgab
 =translator oval
 =comments_disqus_enable 1

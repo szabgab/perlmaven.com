@@ -2,7 +2,7 @@
 =timestamp 2015-04-16T09:40:01
 =indexes strict, symbolic references
 =status show
-=books advanced_book
+=books advanced
 =author szabgab
 =comments_disqus_enable 1
 

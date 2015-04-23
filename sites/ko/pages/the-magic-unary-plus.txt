@@ -3,7 +3,7 @@
 =indexes B::Deparse, +
 =status show
 =original the-magic-unary-plus
-=books beginner_book
+=books beginner
 =author szabgab
 =translator gypark
 =archive 1

@@ -3,7 +3,7 @@
 =description for(INITIALIZE, TEST, STEP) {} C-style for loops in perl and the foreach loop for iterating over lists
 =indexes for, foreach, loop, infinite loop
 =status show
-=books beginner_book
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 
