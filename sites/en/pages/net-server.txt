@@ -15,7 +15,7 @@ A series of articles on building TCP/IP servers using <a href="https://metacpan.
 
 <ul>
   <li><a href="/getting-started-with-net-server">Getting started with Net::Server - building an echo server</a></li>
-  <li><a href="/pro/testing-a-simple-tcpip-server">Testing a simple TCP/IP server using Net::Telnet</a></li>
+  <li><a href="/testing-a-simple-tcpip-server">Testing a simple TCP/IP server using Net::Telnet</a></li>
   <li><a href="/pro/echo-server-with-net-server">Echo server with logging and timeout</a></li>
   <li><a href="/pro/chat-server-using-net-server">Creating a chat server using Net::Server</a></li>
 </ul>
