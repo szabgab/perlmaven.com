@@ -2,6 +2,7 @@
 =timestamp 2015-03-10T09:25:01
 =indexes sub, @_, \, ARRAY
 =status show
+=books advanced
 =author szabgab
 =comments_disqus_enable 1
 
