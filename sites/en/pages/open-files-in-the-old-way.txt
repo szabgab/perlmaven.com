@@ -86,7 +86,7 @@ The second difference is the fact that in these examples <hl>open</hl> got only 
 What if the variable <hl>$filename</hl>, that you are using to open
 a file for reading, contains >/etc/passwd ?
 
-Oups.
+Oops.
 
 The <hl>open IN, $filename</hl> will actually open that file for writing.
 

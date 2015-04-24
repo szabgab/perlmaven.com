@@ -128,7 +128,7 @@ since 5.00307. It used to have <a href="http://www.perlmonks.org/?node_id=41213"
 has been <a href="http://blogs.perl.org/users/tinita/2015/01/findbin-is-fixed.html">fixed
 in recent Perl distributions</a>. The bug resulted in the <hl>$PATH</hl> being
 searched if <hl>$0</hl> contained a relative path, so you may want to
-avoid it in code that is exepcted to run on older <code>perl</code>s.
+avoid it in code that is expected to run on older <code>perl</code>s.
 
 You can then use <hl>File::Spec->catfile</hl>:
 

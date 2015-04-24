@@ -28,11 +28,11 @@ Thanks, --xinhuan
 
 Posted on 2009-08-21 10:15:05-07 by byterock in response to 11339
 
-The ora-03124 has nothing to do with DBB::Oracle as this is either a disk/space issue a lisence issue
+The ora-03124 has nothing to do with DBB::Oracle as this is either a disk/space issue a license issue
 (as in you do not have the correct one) or you are trying to stuff too much data into a
 single row or field. You will have to look at you oracle logs to see what is going wrong.
 As it ran once I would go the too much data in a row or field and it might have something to
-do with non UTF8 chars By they way no one but me actully look at this list
+do with non UTF8 chars By they way no one but me actually look at this list
 (and I only when I have some spare time) You would be much better
 <a href="http://www.nntp.perl.org/group/perl.dbi.users/">off posting on the DBI mailing list</a>
 or raise a <a href="http://rt.cpan.org/Dist/Display.html?Queue=DBD-Oracle">RT ticket</a>

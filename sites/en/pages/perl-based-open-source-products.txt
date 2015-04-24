@@ -21,7 +21,7 @@ I tried to check which one of these products allow people to make money from the
 project promote the businesses. I'd be very interested to know which projects are actually supported by their
 commercial backers, and how do they feel about each other?
 
-Are they run by a single company? Is there a commercial interst behind the project shared by several individuals or
+Are they run by a single company? Is there a commercial interest behind the project shared by several individuals or
 companies? Is the project purely fun-based?
 
 
@@ -34,7 +34,7 @@ margin-bottom: 40px;
 
 <h2 id="cms">CMS / Publishing systems / Blog engines / wikis</h2>
 
-This is a mix of platforms. Some stared out as Content Management Systems (CMS) others as wikies, yet others as blog
+This is a mix of platforms. Some stared out as Content Management Systems (CMS) others as wikis, yet others as blog
 engines. In the end there is a huge overlap between what they do so I put them in one category.
 
 <div class="perl-product">
@@ -81,7 +81,7 @@ is not too active.
 </div>
 
 <div class="perl-product">
-<a href="http://blosxom.sourceforge.net/">Blosxom</a> is a simple blog engine genrating static pages.
+<a href="http://blosxom.sourceforge.net/">Blosxom</a> is a simple blog engine generating static pages.
 <!--
 Unfortunately it seems it has not been maintained for a while. Some of the links on the site don't work any more.
 Last time I checked, the <a href="http://www.blosxom.com/">Blosxom</a> site was down.
@@ -239,7 +239,7 @@ package on most systems.
 
 <div class="perl-product">
 <a href="http://simple-evcorr.sourceforge.net/">SEC - simple event correlator</a> to correlate events during a log file
-analyzis.
+analysis.
 </div>
 
 <h2>Games</h2>
@@ -317,7 +317,7 @@ other web hosting control panels.
 <h2>Tools for Sysadmins</h2>
 
 <div class="perl-product">
-<img src="/img/spamassasin_arrowlogo.png" alt="SPAM Assasin logo" style="float:right" width="167" height="74" />
+<img src="/img/spamassasin_arrowlogo.png" alt="SPAM Assassin logo" style="float:right" width="167" height="74" />
 <a href="http://spamassassin.apache.org/">SpamAssassin</a> is the well known SPAM filter software. It is part of
 the <a href="http://apache.org">Apache Software Foundation</a>. This is just one of the many projects,
 unrelated to the web server, that are managed by the ASF.
@@ -414,7 +414,7 @@ e.g. see <a href="http://git-scm.com/book/en/Git-on-the-Server-Gitolite">Git on 
 <h2 id="perl-developers">Tools for Perl Developers</h2>
 
 <div class="perl-product">
-<a href="http://padre.perlide.org">Perl Application Development and Refactoring Environment</a> (Padre) is an Integrat
+<a href="http://padre.perlide.org">Perl Application Development and Refactoring Environment</a> (Padre) is an Integrated
 Development Environment (IDE) written in Perl for Perl developers.
 </div>
 
@@ -644,7 +644,7 @@ utilities.
 </div>
 
 <div class="perl-product">
-<a href="http://www.mysqueezebox.com/">Logitect Squeezebox Server</a>, a streaming server for Logitech Squeezebox line of Internet radios supporting both its own SLIM protocol and DLNA.
+<a href="http://www.mysqueezebox.com/">Logitech Squeezebox Server</a>, a streaming server for Logitech Squeezebox line of Internet radios supporting both its own SLIM protocol and DLNA.
 <a href="http://en.wikipedia.org/wiki/Logitech_Media_Server">Wikipedia</a>
 </div>
 
@@ -730,7 +730,7 @@ a <a href="http://perldancer.com/">Perl Dancer</a> based web-interface to all yo
 </div>
 
 <div class="perl-product">
-<a href="http://mt-aws.com/">mt-aws</a> is a multithreaded synchornization tool from Linux to the
+<a href="http://mt-aws.com/">mt-aws</a> is a multi-threaded synchronization tool from Linux to the
 <a href="http://aws.amazon.com/glacier/">Amazon Glacier</a>, a low-cost storage system.
 </div>
 

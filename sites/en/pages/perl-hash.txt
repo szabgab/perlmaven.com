@@ -235,7 +235,7 @@ $VAR1 = {
 <h2>Perl Hash key</h2>
 
 Hashes are key-value pairs. Let's say we have a hash called <hl>%phone_number_of</hl>.
-If you know a specific key, which is just a string, and it is found in the variale <hl>$name</hl>,
+If you know a specific key, which is just a string, and it is found in the variable <hl>$name</hl>,
 then you can get the value of this key in the above hash by writing <hl>$phone_number_of{$name}</hl>.
 
 If you don't know what keys are in the hash you can fetch a list of keys using <hl>@names = keys %phone_number_of</hl>.
@@ -344,7 +344,7 @@ my %employee2 = (
     john  => [903610, 'Development', 'Sydney']    
 );
 
-#Retrive the location of all employees
+#Retrieve the location of all employees
 my @location = ($employee2{"jack"}->[2], $employee2{"peter"}->[2], $employee2{"john"}->[2]);
 
 #Print all employee's location
@@ -403,7 +403,7 @@ print "In the winter the store may open late " . $day_names{sun} . "\n";
 <h2>Size of an array in a hash</h2>
 
 Getting the size of an array within a hash is a matter of de-referencing it <hl>@{ $data{$key} }</hl>
-and putting that in scalar context either expicitely: <hl>scalar @{ $data{$key} }</hl>,
+and putting that in scalar context either explicitly: <hl>scalar @{ $data{$key} }</hl>,
 or one of the many implicit ways: <hl>$count = @{ $data{$key} }</hl>, <hl>if (@{ $data{$key} } < 10) { </hl>
 
 <code lang="perl">
