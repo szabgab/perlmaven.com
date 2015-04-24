@@ -103,14 +103,26 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
   (?!pattern)          A zero-width negative look-ahead assertion.
   (?<=pattern)         A zero-width positive look-behind assertion.
   (?<!pattern)         A zero-width negative look-behind assertion.
+</code>
 
+<code>
   (?'NAME'pattern)
   (?<NAME>pattern)     A named capture group.
   \k<NAME>
   \k'NAME'             Named backreference.
+</code>
 
+<code>
   (?{ code })          Zero-width assertion with code execution.
   (??{ code })         A "postponed" regular subexpression with code execution.
 </code>
 
+<h2>Other Regex related articles</h2>
+
+<ul>
+  <li><a href="/understanding-dates-using-regexes">Parsing dates using regular expressions</a></li>
+  <li><a href="/check-several-regexes-on-many-strings">Check several regexes on many strings</a></li>
+  <li><a href="/matching-numbers-using-perl-regex">Matching numbers using Perl regex</a></li>
+  <li><a href="/understanding-regular-expressions-found-in-getopt-std">Understanding Regular Expressions found in Getopt::Std</a></li>
+</ul>
 
