@@ -34,6 +34,7 @@ Some of the articles even include directions showing how to fix the error.
     <li><a href="/cant-locate-object-method-via-package-1">Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?)</a></li>
     <li><a href="/creating-hash-from-an-array">Odd number of elements in hash assignment</a></li>
     <li><a href="/qw-quote-word">Possible attempt to separate words with commas</a></li>
+    <li><a href="/pro/autoload">Undefined subroutine ... called</a></li>
 </ul>
 
 
