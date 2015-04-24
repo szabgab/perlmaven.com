@@ -147,7 +147,7 @@ See the <a href="/moose">Moose page</a>
 <ol>
   <li>Throwing exceptions in Perl</li>
   <li>Catching exceptions in Perl</li>
-  <li>Always use strict and warnings</li>
+  <li><a href="/always-use-strict-and-use-warnings">Always use strict and warnings</a></li>
   <li><a href="/variable-declaration-in-perl">Variable declaration in Perl</a></li>
   <li><a href="/symbolic-reference-in-perl">Symbolic references in Perl</a></li>
   <li><a href="/barewords-in-perl">Barewords in Perl</a></li>
@@ -157,11 +157,12 @@ See the <a href="/moose">Moose page</a>
   <li>Fatal warnings</li>
   <li>Array and hash slices</li>
   <li><a href="/splice-to-slice-and-dice-arrays-in-perl">splice</a></li>
-  <li>AUTOLOAD</li>
-  <li>BEGIN and END</li>
+  <li><a href="/pro/autoload">AUTOLOAD</a></li>
+  <li><a href="/pro/begin">BEGIN</a></li>
+  <li><a href="/pro/end">END</a></li>
   <li><a href="/how-to-sort-faster-in-perl">How to sort faster in Perl - Schwartzian transformation</a></li>
   <li>use autodie</li>
-  <li>Perl::Critic</li>
+  <li><a href="/search/Perl::Critic">Perl::Critic</a></li>
   <li><a href="/avoid-unwanted-bitwise-operators">Avoid unwanted bitwise operators using Perl::Critic</a></li>
   <li>Perl::Tidy</li>
   <li>Saved variable: local</li>
