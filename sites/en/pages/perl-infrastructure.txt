@@ -93,7 +93,7 @@ Both sites run on the server of <a href="http://www.preshweb.co.uk/">David Preci
 
 <h2>perl.org sites</h2>
 
-Under the maintenence of Robert and Ask as liseted on the
+Under the maintenance of Robert and Ask as listed on the
 <a href="http://noc.perl.org/">noc.perl.org</a> (<a href="https://github.com/perlorg/perlweb/tree/master/docs/noc">GitHub</a>:
 
 <ul>
@@ -159,7 +159,7 @@ This is a dynamic site. The source code is in <a href="https://github.com/perl6/
 All perl6.org pages are served from the <a href="http://www.p6c.org/">Perl 6
 community server</a>, funded by community donations, and run by <a
 href="https://github.com/perl6/infrastructure-doc/blob/master/hosts/hack.p6c.org.pod#administration">several</a>
-<a href="https://github.com/perl6/infrastructure-doc/blob/master/hosts/www.p6c.org.pod#administration">volunteeers</a>.
+<a href="https://github.com/perl6/infrastructure-doc/blob/master/hosts/www.p6c.org.pod#administration">volunteers</a>.
 
 <a href="http://irclog.perlgeek.de/">irclog.perlgeek.de</a> logs IRC channels. It uses <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>. Source code
 is <a href="https://github.com/moritz/ilbot/">here</a>.
@@ -190,7 +190,7 @@ There is also a version of Movable Type on <a href="https://github.com/movablety
 me what is the license of that, and what is the relation of that to the one used on blogs.perl.org.
 
 The site runs on a dedicated server at <a href="https://www.hetzner.de/en/">Hetzner</a>.
-It is an Intel i7 with four cores (plus hyperthreading), 8 GB of RAM, and software RAID. It's currently running Ubuntu.
+It is an Intel i7 with four cores (plus hyper-threading), 8 GB of RAM, and software RAID. It's currently running Ubuntu.
 
 The server is maintained by <a href="http://dave.org.uk/">Dave Cross</a> and <a href="http://aaroncrane.co.uk/">Aaron Crane</a>.
 They also cover the expenses.
@@ -248,7 +248,7 @@ I maintain four regular smokers (two FreeBSD + two Linux, with several
 perl versions ranging from 5.8.9 to 5.21.10), all running in VMs. Three
 of them are located on my personal workstation and one is running on a
 server of another Berlin perl monger. Typically the machines are running
-24/7 except when I am on vacation. In these periods the "specialities"
+24/7 except when I am on vacation. In these periods the "specialties"
 of my smokers (that is: provide first reports very quickly after PAUSE
 upload, and provide reports for a rather rare platform, FreeBSD) have to
 be done by other people (in this case, by Andreas Koenig and Chris
@@ -374,7 +374,7 @@ repository.
 <a href="http://perlmaven.com/">perlmaven.com</a>. The site (along with a few smaller sites of <a href="http://szabgab.com/">Gabor Szabo</a>)
 is hosted on  <a href="/linode">Linode</a> instance with 4Gb memory 4 CPUs.
 It is based on <a href="/dancer">Dancer 2</a> its source code is available on <a href="https://github.com/szabgab/Perl-Maven">GitHub</a>.
-The content is also avilable on <a href="https://github.com/szabgab/perlmaven.com">GitHub</a>
+The content is also available on <a href="https://github.com/szabgab/perlmaven.com">GitHub</a>
 
 <a href="http://perl6maven.com/">perl6maven.com</a> runs on <a href="http://perl6maven.com/bailador">Baildor</a>, a partially
 implemented Perl Dancer clone in Perl 6. Its source code is available <a href="https://github.com/szabgab/Perl6-Maven">on GitHub</a>.

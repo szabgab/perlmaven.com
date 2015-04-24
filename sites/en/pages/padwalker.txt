@@ -49,7 +49,7 @@ c:> ppm install PadWalker
 <h2>Debian/Ubuntu Linux</h2>
 
 If you have <b>root</b> rights then probably the best is to install
-from the package management sytem of your Linux distribution.
+from the package management system of your Linux distribution.
 
 You can use either <hl>aptitude</hl> or <hl>apt-get</hl>
 depending on your persona preferences:

@@ -76,7 +76,7 @@ print "$x\n";  # 42
 Please note, we don't <hl>use strict;</hl> in these examples. Even though you should <a href="/strict">always use strict</a>.
 We'll fix this in a bit.
 
-The default namespace in every perl script is called "main" and you can alway access variables using their full name
+The default namespace in every perl script is called "main" and you can always access variables using their full name
 including the namespace:
 
 <code lang="perl">

@@ -12,7 +12,7 @@
 =abstract start
 
 There are several ways to write Object Oriented Perl. You can manually bless references, you can use one of the constructor and accessor generator modules,
-or you can use on of the modules from the <a href="/moose">Moose</a> family. <a href="/moo">Moo</a> is the Minimalist Object Orientation with Moose compatiblity. In this screencast you'll learn
+or you can use on of the modules from the <a href="/moose">Moose</a> family. <a href="/moo">Moo</a> is the Minimalist Object Orientation with Moose compatibility. In this screencast you'll learn
 the basics. (3:19 min)
 
 =abstract end
@@ -25,7 +25,7 @@ See on <a href="https://www.youtube.com/watch?v=aRkSb1AUS-0">YouTube</a>.
 We are going to see how to create a class using <a href="https://metacpan.org/pod/Moo">Moo</a>.
 the Minimal Object Oriented system of Perl. In order to show this example, we need two files.
 One of them is a script called <hl>school.pl</hl> which has standard Perl preamble
-at the begining at it loads the <hl>Person</hl> module.
+at the beginning at it loads the <hl>Person</hl> module.
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -48,7 +48,7 @@ package Person;
 
 It does not have <hl>use strict;</hl> and <hl>use warnings;</hl>
 because we are going to <hl>use Moo;</hl>.
-and use Moo alredy declares that <hl>use strict;</hl> and <hl>use warnings;</hl>
+and use Moo already declares that <hl>use strict;</hl> and <hl>use warnings;</hl>
 are in effect in this file.
 
 The main thing that Moo does here, is that it provides a constructor:
@@ -60,7 +60,7 @@ use Moo;
 1;
 </code>
 
-Now we can go back to the script and create an obkect. Let's say this is a student
+Now we can go back to the script and create an object. Let's say this is a student
 and it gets the result of the constructor: <h>my $student = Person->new;</hl>.
 <hl>use Moo;</hl> in the module already added the constructor.
 

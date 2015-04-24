@@ -65,7 +65,7 @@ Please help me....
 
 Posted on 2010-12-23 21:35:12.810957-08 by ankit in response to 7273
 
-I could able to install the Padwalker sucessfully on Windows XP (Running Perl 5.8.x), I followed:
+I could able to install the Padwalker successfully on Windows XP (Running Perl 5.8.x), I followed:
 
 1) Downloaded the PadWalker.ppd from http://www.bribes.org/perl/ppm/
 And it saved under C:\Perl, but default it saved as .htm extension so

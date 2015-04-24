@@ -70,7 +70,7 @@ You can edit that file, and reload the page in the browser.
 Create the /var/cgi-bin directory
 
 (Please note, we don't create this inside the /var/www directory on purpose.
-This way, even if misconfigure the server it won't serve the source code of the script.
+This way, even if misconfigured the server it won't serve the source code of the script.
 Which is a good thing.)
 
 <code>
@@ -93,7 +93,7 @@ print "hi\n";
 Make the file executable by 
 
 <code>
-chomd +x /var/cgi-bin/echo.pl
+chmod +x /var/cgi-bin/echo.pl
 </code>
 
 and run it on the command line:
@@ -288,7 +288,7 @@ print qq(Content-type: text/plain\n\n);
 </code>
 
 This probably means that the script died before it managed to print the <hl>Content-type</hl>. The error.log, probably contains the
-exception that was noth caught just before the above line.
+exception that was not caught just before the above line.
 
 You can also turn of the buffering of STDOUT by setting <hl>$|</hl> to a <a href="/boolean-values-in-perl">true</a> value.
 

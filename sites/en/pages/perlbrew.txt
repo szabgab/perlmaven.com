@@ -22,7 +22,7 @@ or you can use <a href="http://perlbrew.pl/">Perlbrew</a> for this.
 
 Actually, we don't usually "upgrade" perl. We install a newer (or different) version of perl and leave the one
 we already had on the system intact. This is usually much better than replacing that version of perl with one we build.
-The one that came with the operationg system is usually referred to as <b>system perl</b> and it is there because several
+The one that came with the operating system is usually referred to as <b>system perl</b> and it is there because several
 parts of the operating system depend on this perl. Usually it is better to just leave it alone and install another
 copy of.
 
