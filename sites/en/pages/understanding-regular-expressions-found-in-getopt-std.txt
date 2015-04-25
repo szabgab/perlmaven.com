@@ -1,7 +1,7 @@
 =title Understanding Regular Expressions found in Getopt::Std
-=timestamp 2015-02-01T07:30:01
+=timestamp 2015-04-25T09:00:01
 =indexes regex
-=status draft
+=status show
 =books beginner
 =author szabgab
 =archive 1
@@ -97,3 +97,4 @@ followed by either the word "pod" or the word "head1".
 
 It is not checked if the string is =podcast  or =head123. Both of these will be accepted.
 
+For more example look at the <a href="/regex-cheat-sheet">regex cheat-sheet</a> and the links from there.
