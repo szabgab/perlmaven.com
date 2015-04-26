@@ -13,6 +13,11 @@ disables the inappropriate use of <b>barewords</b>.
 
 What does that mean?
 
+A bareword generally refers to a sequence of characters that is suitable for an identifier (i.e. A-Za-z_A-Za-z_0-9).
+The strict pragma bans most uses of barewords by default, but they still live on as the names of global filehandles,
+keys that don't require quoting in hashes, and things that are auto-quoted by the fat comma operator. In the latter
+two cases the set of allowed characters includes a leading hyphen.
+
 =abstract end
 
 Without this restriction code like this would work and print "hello".

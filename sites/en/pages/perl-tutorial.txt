@@ -16,7 +16,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on April 08, 2015.
+parts are being published every few days. The latest one was published on April 26, 2015.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -78,6 +78,7 @@ to practice what you have learned.
     <li><a href="/cant-locate-object-method-via-package-1">Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?)</a></li>
     <li><a href="/creating-hash-from-an-array">Odd number of elements in hash assignment</a></li>
     <li><a href="/qw-quote-word">Possible attempt to separate words with commas</a></li>
+    <li><a href="/pro/autoload">Undefined subroutine ... called</a></li>
   </ul>
 </li>
 <li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
@@ -135,7 +136,7 @@ to practice what you have learned.
 <li><a href="/sorting-mixed-strings">Sorting mixed strings</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
 <li><a href="/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
-<li>Stack and <a href="/using-a-queue-in-perl">queue</a></li>
+<li><a href="/pro/reverse-polish-calculator-in-perl">Stack</a> and <a href="/using-a-queue-in-perl">queue</a></li>
 <li><a href="/reverse">reverse</a></li>
 <li><a href="/the-ternary-operator-in-perl">The ternary operator</a></li>
 <li>Loop controls: next and last</li>
@@ -185,7 +186,7 @@ to practice what you have learned.
 <li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
 <li>Windows/DOS commands: del, ren, dir</li>
 <li>File globbing (Wildcards)</li>
-<li>Directory handles.</li>
+<li><a href="/reading-the-content-of-a-directory">Directory handles</a></li>
 <li>Traversing directory tree <a href="/recursive-subroutines">manually with recursion</a>,
 <a href="/traversing-the-filesystem-using-a-queue">manually using a queue</a> and using find.</li>
 </ol>
@@ -204,13 +205,13 @@ to practice what you have learned.
 <b>Few examples for using Perl</b>
 <ol>
 <li><a href="/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
-<li>Reading Excel files using Perl</li>
+<li><a href="/pro/read-an-excel-file-in-perl">Reading Excel files using Perl</a></li>
 <li><a href="/create-an-excel-file-with-perl">Creating Excel files using Perl</a></li>
 <li><a href="/sending-html-email-using-email-stuffer">Sending e-mail using Perl</a></li>
 <li><a href="/perl-cgi-script-with-apache2">CGI scripts with Perl</a></li>
 <li><a href="/perl-cgi-mod-perl-psgi">Web applications with Perl: PSGI</a></li>
 <li>Parsing XML files</li>
-<li>Reading and writing JSON files</li>
+<li><a href="/pro/json">Reading and writing JSON files</a></li>
 <li><a href="/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
 <li><a href="/reading-from-ldap-in-perl-using-net-ldap">Accessing LDAP using Perl</a></li>
 </ol>
@@ -219,8 +220,6 @@ to practice what you have learned.
 <ol>
 <li><a href="/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
 <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse</a></li>
-<li><a href="/object-oriented-perl-using-moose">Object Oriented Perl using Moose</a></li>
-<li><a href="/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a></li>
 <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
 <li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
 <li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
@@ -228,10 +227,10 @@ to practice what you have learned.
 <li><a href="/what-are-string-and-numeric-contexts">What are string and numeric contexts?</a></li>
 </ol>
 
-<b>Object Oriented Perl with Moo</b>
+<b>Object Oriented Perl with Moose or Moo</b>
 
 There is a whole series of articles on writing Object Oriented code, using the
-light-weight <a href="/moo">Moo</a> OOP framework.
+light-weight <a href="/moo">Moo</a> OOP framework or the full-blown <a href="/moose">Moose</a> OOP framework.
 
 <hr />
 

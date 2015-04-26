@@ -1,0 +1,117 @@
+=title Reading the content of a directory
+=timestamp 2015-04-26T09:30:01
+=indexes opendir, readdir, closedir
+=status show
+=books beginner
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+If we would like to know the list of file and other things in a given directory we could use the external <hl>ls</hl>
+command, but that would make our code platform dependent - Windows has the <hl>dir</hl> command for directory listing -
+and it would create an an unnecessary execution of an outside command. Instead of that Perl provide two alternatives.
+One of the is called file globbing, and it is usually useful if we are interested in certain subset of files (e.g. all
+the files with xml extension), the other one is using the manual <hl>opendir</hl> function with <hl>readdir</hl> and <hl>closedir</hl>.
+
+=abstract end
+
+This approach provides a lower level access than file globbing, and thus it is more flexible.
+
+A directory is quite similar to a file, but it has a special structure, and we cannot just "write to it" as we would
+do with a file. Still, before reading the content of this special thing called "directory" we have to ask the
+operating system to "open" it. Basically to somehow connect our process to the specific directory.
+Perl provides the <hl>opendir</hl> function for this.
+
+It has a slightly strange syntax, similarly to the <hl>open</hl> function but it only accepts two parameters:
+the first one is the not-yet defined variable that will hold the <hl>directory handle<hl>, the second is the
+relative or absolute path to the directory. Directory handle is quite similar to the file handle we saw
+when we <a href="/open-and-read-from-files">opened a file</a>.  In ancient times people used to use
+<a href="/barewords-in-perl">barewords</a> to hold this directory handle, something like <hl>DH</hl> or <hl>DIR</hl>.
+Nowadays we use regular lexical scalar variables, usually declared right in the <hl>opendir</hl> like in the following example:
+
+<code lang="perl">
+opendir my $dh, $dir;
+</code>
+
+<hl>opendir</hl> will return true on success, or false on failure setting <hl>$!</hl> with the actual error message
+just as <hl>open</hl> does, so a better construct will be to write the following:
+
+<code lang="perl">
+opendir my $dh, $dir or die "Could not open '$dir' for reading: $!\n";
+</code>
+
+<h2>readdir in SCALAR context</h2>
+
+Once we have the directory opened we can use the <hl>readdir</hl> function to read the content of
+the directory. It can be used either in <a href="/scalar-and-list-context-in-perl">list or scalar context</a>,
+just as we were <a href="/reading-from-a-file-in-scalar-and-list-context">reading from a file in scalar and list context</a>.
+
+In scalar context <hl>readdir</hl> will always item one, (the 'next') item from the directory. Once we read everything in,
+it will return <a href="/undef-and-defined-in-perl">undef</a>.
+
+A common way to write it is in a <hl>while</hl> loop:
+
+<code lang="perl">
+while (my $thing = readdir $dh) {
+    say $thing;
+}
+</code>
+
+<h2>readdir in LIST context</h2>
+
+The alternative would be to use <hl>readdir</hl> in LIST context. For example, to assign it to an array. In that
+case we might want to iterate over it using a <hl>for</hl> loop:
+
+<code lang="perl">
+my @things = readdir $dh;
+foreach my $thing (@things) {
+    say $thing;
+}
+</code>
+
+The big difference is that in the second example, all the content of the directory is read in the memory in one
+statement so it uses more memory. This is much less of an issue here than when we reading the content of a file,
+as the returned list only contains the names of the things in the directory, which is unlikely to be really big.
+
+Even if we have 100,000 files in a directory, and each one of them has a 10 character long name, it still fits in
+1Mb memory.
+
+<h2>closedir</h2>
+
+Once we are done reading all the things from the directory we can call <hl>closedir</hl> to officially shut
+down the connection between the directory handle and the directory on the disk. We don't have to do this though
+as perl will do it for us when the variable holding the directory handle goes <a href="/scope-of-variables-in-perl">out of scope</a>.
+
+<h2>What things?</h2>
+
+You might have wondered why did I use a variable name <hl>$thing</hl> instead of <hl>$filename</hl> for the things that <hl>readdir</hl>
+returned. The reason is that <hl>readdir</hl> will return everything one can find in a directory.
+Those can be filenames, directory names. On Unix/Linux we might have symbolic link and even some other things such as
+the things in the <hl>/dev</hl> directory of Unix/Linux. 
+
+The names will also include <hl>.</hl> representing the current directory, and <hl>..</hl> representing the parent directory.
+
+As in most cases we are not interested in those we can skip them using the following snippet:
+
+<code lang="perl">
+if ($thing eq '.' or $thing eq '..') {
+    next;
+}
+</code>
+
+Let's see the full examples:
+
+<h2>readdir in SCALAR context</h2>
+
+<include file="examples/list_dir_scalar.pl">
+
+<h2>readdir in LIST context</h2>
+
+<include file="examples/list_dir.pl">
+
+In list context, we might want to employ <a href="/filtering-values-with-perl-grep">grep to filter the unwanted values</a>:
+
+<include file="examples/list_dir_grep.pl">
+
