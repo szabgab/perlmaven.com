@@ -34,6 +34,8 @@ But what happens if there are more than one regexes?
 
 <screencast file="/media/videos/check-several-regexes-on-many-strings" />
 
+<a href="https://www.youtube.com/watch?v=5NzC66Lv1gg">YouTube</a>
+
 What if we have 5-10 regexes and we would like to filter the rows that match <b>all of them</b>?
 
 First of all, we need to store these regexes somehow. Probably the best approach is to store them in an array
