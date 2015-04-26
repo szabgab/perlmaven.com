@@ -25,7 +25,7 @@ operating system to "open" it. Basically to somehow connect our process to the s
 Perl provides the <hl>opendir</hl> function for this.
 
 It has a slightly strange syntax, similarly to the <hl>open</hl> function but it only accepts two parameters:
-the first one is the not-yet defined variable that will hold the <hl>directory handle<hl>, the second is the
+the first one is the not-yet defined variable that will hold the <hl>directory handle</hl>, the second is the
 relative or absolute path to the directory. Directory handle is quite similar to the file handle we saw
 when we <a href="/open-and-read-from-files">opened a file</a>.  In ancient times people used to use
 <a href="/barewords-in-perl">barewords</a> to hold this directory handle, something like <hl>DH</hl> or <hl>DIR</hl>.
