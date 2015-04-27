@@ -1,0 +1,16 @@
+=title Solution: add more statistics
+=timestamp 2015-04-27T06:10:24
+=indexes solution
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Solution: add more statistics
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-add-more-statistics" />
