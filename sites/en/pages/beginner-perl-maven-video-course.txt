@@ -79,7 +79,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-debug-sum-numbers">Debug the sum numbers script</a></li>
   <li><a href="/beginner-perl-maven-analyze-apache-log-file">Analyze Apache log file</a></li>
   <li><a href="/beginner-perl-maven-old-style-open">Old Style Open</a></li>
-  <li><a href="/pro/beginner-perl/exercise-add-more-statistics">Exercise: Add more statistics</a></li>
+  <li><a href="/beginner-perl-maven-exercise-add-more-statistics">Exercise: Add more statistics</a></li>
   <li><a href="/pro/beginner-perl/solution-add-more-statistics">Solution: Add more statistics</a></li>
   <li><a href="/pro/beginner-perl/exercise-write-report-to-file">Exercise: Write report to file</a></li>
   <li><a href="/pro/beginner-perl/solution-write-report-to-file">Solution: Write report to file</a></li>

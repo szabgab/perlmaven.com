@@ -28,9 +28,10 @@ Article and screencast series on the Perl Maven site:
   <li><a href="/moose">Moose</a>, the 'post modern' Object Oriented system for Perl</li>
 </ul>
 
-<h2>Courses</h2>
+<h2>Courses, tutorials</h2>
 
 <ul>
+  <li><a href="/perl-tutorial">Perl Tutorial</a></li>
   <li><a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a></li>
   <li><a href="/advanced-perl-maven-video-course">Advanced Perl Maven video course</a></li>
   <li><a href="/testing">Test Automation using Perl</a></li>
