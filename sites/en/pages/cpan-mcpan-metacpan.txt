@@ -16,6 +16,8 @@ By typing the letter 'm' in front of cpan.org in the URL, you can easily switch 
 
 <screencast file="/media/videos/cpan-mcpan-metacpan" />
 
+<a href="https://www.youtube.com/watch?v=gCczqcZdwvI">YouTube</a>
+
 There you can jump to the latest version of the module or to the distribution containing the module.
 
 This trick was also described in <a href="/jumping-from-search-cpan-org-to-metacpan-org">another article</a>, but now
