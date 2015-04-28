@@ -1,0 +1,16 @@
+=title Solution: write report to file
+=timestamp 2015-04-28T20:40:33
+=indexes solution
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Solution: write report to file
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-write-report-to-file" />
