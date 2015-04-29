@@ -36,26 +36,7 @@ Call <hl>srand();</hl> in the child process, immediately after forking.
 If we create a small script that will fork n=3 times and call <hl>rand()</hl> in each child process
 we can see it nicely prints out 3 random numbers: (tried in 5.18.2)
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-#say "Parent $$ generated " . rand();
-my $n = 3;
-for (1 .. $n) {
-    my $pid = fork();
-    if (not $pid) {
-       say "Child  $$ generated " . rand();
-       exit;
-    }
-}
-
-for (1 .. $n) {
-   wait();
-}
-
-</code>
+<include file="examples/rand_in_fork.pl">
 
 <code>
 Child 12943 generated  0.0551759396485103

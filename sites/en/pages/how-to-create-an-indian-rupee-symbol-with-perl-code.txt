@@ -54,3 +54,4 @@ So in HTML you would include <hl>&amp;#8360;</hl> and <hl>&amp;#8377;</hl> respe
 
 I have used perl 5.14.2 on Linux to test the above. In older versions of Perl the above might not work.
 
+<include file="examples/rupee.pl">
