@@ -18,4 +18,6 @@ This is a great way to see what's is totally new on CPAN?
 
 <screencast file="/media/videos/metacpan-recent-uploads" />
 
+<a href="https://www.youtube.com/watch?v=s9UPu95yHig">YouTube</a>
+
 
