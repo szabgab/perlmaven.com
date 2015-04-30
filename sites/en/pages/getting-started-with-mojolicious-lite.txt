@@ -1,0 +1,190 @@
+=title Getting started with Mojolicious::Lite
+=timestamp 2015-04-30T08:00:01
+=indexes Mojolicious::Lite
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+<a href="http://mojolicio.us/">Mojolicious</a> is one of the relatively new, light-weight,
+<a href="/modern-web-with-perl">modern web application frameworks</a>
+of Perl. If you look at its web site, it is full of rainbows, clouds and unicorns.
+
+In this article we'll see how to get started with it, or more specifically with
+<a href="http://mojolicio.us/perldoc/Mojolicious/Lite">Mojolicious::Lite</a>.
+
+=abstract end
+
+<h2>Installing Mojolicious</h2>
+
+If you already have a CPAN client configured, you can just install Mojolicious
+with the regular command <hl>cpan Mojolicious</hl>.
+
+Otherwise on Linux systems you can first install <hl>cpanminus</hl>
+by typing <hl>curl -L http://cpanmin.us | perl - App::cpanminus</hl>.
+Then you can install Mojolicious by typing <hl>cpanm Mojolicious</hl>.
+
+<h2>Hello World</h2>
+
+Save the following code as <hl>hello_world.pl</hl>:
+
+<code lang="perl">
+use Mojolicious::Lite;
+get '/' => { text => 'Hello World' };
+
+app->start;
+</code>
+
+And run it with <hl>morbo hello_world.pl</hl>. It will print the following to the screen:
+
+<code>
+[Sun Jul 28 18:05:56 2013] [info] Listening at "http://*:3000".
+Server available at http://127.0.0.1:3000.
+</code>
+
+Now you can take your browser and point it to <a href="http://localhost:3000">http://localhost:3000</a>.
+
+You will see <hl>Hello world</hl>.
+
+<img src="/img/mojolicious_lite_hello_world.png" alt="Mojolicious::Lite Hello World " />
+
+Congratulations! You've just created your first web application with Perl and Mojolicious.
+
+This code is quite simple. After loading the module with <hl>use Mojolicious::Lite;</hl>, we defined
+a <hl>route</hl>: what to do if a browser sends a <hl>get</hl> request to the root of our web site (<hl>/</hl>).
+We return the <hl>text</hl>, <hl>Hello World</hl>.  Please note, there is a <hl>;</hl> at the end of the block.
+
+The reason for that is that the block is actually just the second parameter of the <hl>get</hl> function
+imported by <hl>Mojolicious::Lite</hl>, and in Perl statements are separated by semicolons.
+
+The final line <hl>app->start;</hl> starts the web application.
+
+As you might have noticed we have not included <hl>use strict</hl> and <hl>use warnings</hl>.
+Including <hl>Mojolicious::Lite</hl> automatically turns on these pragmata.
+
+The <hl>morbo</hl> command runs our "application" using a small, built-in web server.
+
+Now take a look at the console, where you ran <hl>morbo</hl>. You will see some extra lines printed:
+
+<code>
+[Sun Jul 28 19:09:04 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jul 28 19:09:04 2013] [debug] GET "/".
+[Sun Jul 28 19:09:04 2013] [debug] 200 OK (0.000764s, 1308.901/s).
+</code>
+
+That's the standard log of Mojolicious.
+
+<h2>Your secret passphrase needs to be changed!!!</h2>
+
+The first line is a bit strange. It tells us that we need to set our secret passphrase.
+As explained in
+<a href="http://mojolicio.us/perldoc/Mojolicious/Guides/FAQ#What_does_Your_secret_passphrase_needs_to_be_changed_mean">the documentation</a>, we can do that by calling <hl>app->secret('My very secret passphrase.');</hl> just before calling
+<hl>app->start;</hl>.
+
+Stop the server by pressing <hl>Ctrl-C</hl> on the console where you see the log messages, start it again by running
+<hl>morbo hello_world.pl</hl>. If you reload the page now and check the log messages, you'll see the warning does not
+show up any more.
+
+Of course, if you have a public facing application, you might want to use some other super secret passphrase.
+
+<h2>Error pages</h2>
+
+What if we browse to a different page on our new web site?
+Let's try <a href="http://localhost:3000/echo">http://localhost:3000/echo</a>.
+
+We will see a page like this:
+
+<img src="/img/mojolicious_lite_simple_error.png" alt="Mojolicious::Lite simple error page" />
+
+This is a simple error page that list all the existing routes (we currently only have one)
+and links to the Mojolicious web site where we can get help. Very nice.
+
+<h2>Echo form</h2>
+
+Let's add the <hl>echo</hl> route to our application:
+
+<code lang="perl">
+get '/echo' => { text => q{
+   <form method="POST"><input name="q"><input type="submit" value="Echo"></form>
+}};
+</code>
+
+This is the same syntax as for the <hl>/</hl> route handler, but this time
+our text already includes an HTML form.
+
+We can even do this while the server is running. When we save the file,
+<hl>morbo</hl> will notice this, and restart the application.
+
+Now we can reload the <a href="http://localhost:3000/echo">/echo</a> page.
+We are going to see something like this:
+
+<img src="/img/mojolicious_lite_echo_form.png" alt="Mojolicious::Lite echo form" />
+
+I know this is not extremely exciting, just a regular HTML form, but we are making
+progress which is great!
+
+<h2>Submit the echo form</h2>
+
+We can now type in some text and press the <hl>Echo</hl> button.
+
+We'll see this:
+
+<img src="/img/mojolicious_lite_missing_post_error.png" alt="Mojolicious::Lite missing POST route error" />
+
+We are already familiar with this kind of error pages, but what happened now?
+We have two routes declared to <hl>/</hl> and <hl>/echo</hl> but only using the <hl>GET method</hl>. Our
+form was deliberately using <hl>POST method</hl>. 
+
+The point is, that Mojolicious::Lite allows us to define separate routes to each path and to each method.
+This provides much finer control to us, the developers.
+
+So let's implement the code that deals with the form submission. Let's add the following code to our
+<hl>hello_world.pl</hl> file.
+
+<code lang="perl">
+post '/echo' => sub {
+    my $self = shift;
+    $self->render( text => $self->param('q') );
+};
+</code>
+
+In this code, we define the action we want to do when the <hl>post</hl> method is invoked on the
+<hl>/echo</hl> route.  Because we want to do something more complex than just return a fixed string,
+instead of a plain block, we pass to the <hl>post()</hl> function an <b>anonymous subroutine</b>
+created by the <hl>sub</hl> keyword.
+
+In the anonymous subroutine we copy the current Mojolicious object into the "standard" <hl>$self</hl>
+variable and we use it for two things.
+We call the <hl>param</hl> method to receive the value typed in by the user
+(the string <hl>q</hl> was the name of the input field in our HTML page) and then
+we call the <hl>render</hl> method to create the page we return that will only contain
+what we typed in.
+
+<hl>morbo</hl> will automatically restart our web server and we can reload the page in our browser.
+The result is the text we typed in:
+
+<img src="/img/mojolicious_lite_welcome.png" alt="mojolicious_lite_welcome.png" />
+
+<h2>Welcome to Mojolicious</h2>
+
+The full code looks like this:
+
+<code lang="perl">
+use Mojolicious::Lite;
+get '/' => { text => 'Hello World' };
+
+get '/echo' => { text => q{
+   <form method="POST"><input name="q"><input type="submit" value="Echo"></form>
+}};
+
+post '/echo' => sub {
+    my $self = shift;
+    $self->render( text => $self->param('q') );
+};
+
+app->secret('My extra secret passphrase.');
+
+app->start;
+</code>
+
