@@ -1,4 +1,4 @@
-=title MetaCPAN Task::Kensho
+=title MetaCPAN Task::Kensho - recommended Perl modules
 =timestamp 2014-10-09T21:30:01
 =indexes MetaCPAN, Task::Kensho
 =tags screencast
@@ -15,6 +15,8 @@ is a list of recommended modules for certain common tasks.
 =abstract end
 
 <screencast file="/media/videos/metacpan-task-kensho" />
+
+<a href="https://www.youtube.com/watch?v=e3ZqUBCVjIQ">YouTube</a>
 
 <a href="https://metacpan.org/pod/Task::Kensho">Task::Kensho</a> itself is divided into several subjects:
 
