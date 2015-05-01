@@ -379,5 +379,5 @@ There are also other solutions, for example if you are using <a href="/moo">Moo<
 you could take a look at <a href="https://metacpan.org/pod/MooX::Options">MooX::Options</a>  explained in a number of advanced articles: for example
 <a href="/pro/switching-to-moo-adding-command-line-parameters">Switching to Moo - adding command line parameters</a>
 and 
-<a href="/pro/command-line-scripts-with-moo">Writing Command line scripts and accepting command line parameters using Moo</a>.
+<a href="/command-line-scripts-with-moo">Writing Command line scripts and accepting command line parameters using Moo</a>.
 

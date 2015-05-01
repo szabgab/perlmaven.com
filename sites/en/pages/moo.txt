@@ -32,7 +32,7 @@ who would like to get away from the "manual blessing", but don't want to "pay" f
   <li><a href="/methods-functions-and-subroutines-in-perl">Methods, Functions and Subroutines in Perl and what is $self ?</a></li>
   <li><a href="/inheritance-and-method-modifiers-in-moo">Inheritance and Method Modifiers</a></li>
   <li><a href="/replacing-an-attribute-with-a-method">Replacing an attribute by a method</a> - modifying the constructor (BUILDARGS)</li>
-  <li><a href="/pro/command-line-scripts-with-moo">Writing Command line scripts and accepting command line parameters using Moo</a></li>
+  <li><a href="/command-line-scripts-with-moo">Writing Command line scripts and accepting command line parameters using Moo</a></li>
   <li><a href="/pro/singleton-moo">Singleton</a></li>
 </ul>
 
