@@ -103,6 +103,10 @@ And a few other related articles:
   <li>2015.03.08 <a href="http://blogs.perl.org/users/alberto_simoes/2015/03/cpan-pr-challenge-march-report-2.html">CPAN PR-Challenge: March Report #2</a> by Alberto Simões</li>
 </ul>
 
+<h3>April</h3>
+  <li>2015.04.25 <a href="http://blogs.perl.org/users/alberto_simoes/2015/04/cpan-pr-challenge---april-report.html">CPAN PR-Challenge - April Report</a> by Alberto Simões</li>
+  <li>2015.04.30 <a href="http://onionstand.blogspot.cz/2015/04/my-march-april-cpan-pr-challenge-dists.html">My March &amp; April CPAN PR Challenge dists </a> by Breno G. de Oliveira</li>
+
 <!-- Template for adding new blogposts:
   <li>2015.. <a href=""></a> by </li>
 -->
