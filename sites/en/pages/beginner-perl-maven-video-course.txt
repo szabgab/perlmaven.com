@@ -88,7 +88,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 
 <h3>4. Lists and Arrays</h3>
 <ol>
-  <li><a href="/pro/beginner-perl/lists-in-perl">Lists in Perl</a></li>
+  <li><a href="/beginner-perl-maven-lists-in-perl">Lists in Perl</a></li>
   <li><a href="/pro/beginner-perl/list-assignment">List Assignment</a></li>
   <li><a href="/pro/beginner-perl/foreach-loop-over-list">Foreach Loop Over List</a></li>
   <li><a href="/pro/beginner-perl/creating-an-array">Creating and Array</a></li>

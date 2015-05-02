@@ -1,0 +1,16 @@
+=title Lists in Perl
+=timestamp 2015-05-02T10:20:54
+=indexes ()
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Lists in Perl
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/lists-in-perl" />
