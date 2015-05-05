@@ -18,6 +18,8 @@ This is the same back-end that powers the fancier <a href="https://metacpan.org/
 
 <screencast file="/media/videos/search-cpan-org" />
 
+<a href="https://www.youtube.com/watch?v=Gg5n1cevPCg">YouTube</a>
+
 <h2>Objectives</h2>
 
 This project has a number of objectives:

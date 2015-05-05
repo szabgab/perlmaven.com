@@ -15,3 +15,6 @@ this report to the <a href="http://cpantesters.org/">CPAN Tester</a> who will co
 =abstract end
 
 <screencast file="/media/videos/metacpan-cpantesters" />
+
+<a href="https://www.youtube.com/watch?v=ciddfMVsC2U">YouTube</a>
+
