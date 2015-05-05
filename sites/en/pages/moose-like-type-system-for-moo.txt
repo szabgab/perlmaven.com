@@ -12,8 +12,8 @@ Unlike its bigger brother, Moo does not come with a built-in type system.
 Instead, it allows us to add <a href="/type-checking-with-moo">home-made subroutines</a>
 to each attribute that will check the type when we call the constructor or a setter.
 
-MooX::late is a an extension for Moo, that provides several feature available in
-<a href="/moose">Moose</a>, but not in Moo.
+MooX::late is a an extension for Moo, that provides several features available in
+<a href="/moose">Moose</a>, but not in <a href="/moo">Moo</a>.
 
 For example, it allows us to set type-constraints in a declarative way
 using <a href="http://metacpan.org/module/Types::Standard">Types::Standard</a>
@@ -27,7 +27,7 @@ Let's see a bit more details how does that work:
 
 Let's start by an example without any constraint.
 
-The <hl>Person.pm</hl> contains the following code:
+The <hl>Person.pm</hl> file contains the following code:
 
 <code lang="perl">
 package Person;
@@ -39,7 +39,7 @@ has name => (is => 'rw');
 1;
 </code>
 
-The <hl>person.pl</hl> in the same directory contains the following:
+The <hl>person.pl</hl> file in the same directory contains the following:
 
 <code lang="perl">
 use strict;
