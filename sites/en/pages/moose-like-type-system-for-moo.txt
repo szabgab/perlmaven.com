@@ -89,7 +89,7 @@ Running <hl>perl person.pl</hl> will generate an exception:
 
 <hl>Value "tall" did not pass type constraint "Int" (in $self->{"height"}) at (eval 230) line 39.</hl>
 
-It is clear what is the problem but unfortunately it does not say in which file
+It is clear what is the problem, but unfortunately it does not say in which file
 and in which line of that file did we provide the incorrect value.
 
 Besides <hl>Int</hl>, there are a number of other types supplied by
@@ -148,9 +148,9 @@ Will print <hl>1987-12-18</hl>.
 
 <h2>Our class as a type constraint</h2>
 
-Any class-name can be used as type constraint from CPAN, once we create,
-even the one we are currently creating. For example each Person has
-a mother, who is also a Person. We change the <hl>Person.pm</hl> file
+Any class-name can be used as type constraint. The class can come in the form of a CPAN module,
+or it can be one we created for our project. A class can even use itself as one of the constraints.
+For example, each Person has a mother, who is also a Person. We change the <hl>Person.pm</hl> file
 to have the following:
 
 <code lang="perl">
@@ -175,7 +175,7 @@ say $student->name;
 say $student->mother->name;
 </code>
 
-First we create the object representing the mother, who is visiting his child,
+First we create the object representing the mother, who is visiting her child,
 hence the variable is called <hl>$visitor</hl>, then we pass this new object to
 the constructor.
 
