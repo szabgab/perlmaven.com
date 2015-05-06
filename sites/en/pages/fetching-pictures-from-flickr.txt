@@ -13,6 +13,8 @@ you to connect to it. <a href="http://iamcal.com/">Cal Henderson</a> created the
 
 =abstract end
 
+<img src="/img/flickr_logo-500x500.png" />
+
 <h2>Version</h2>
 
 The code of this article was tested with version 1.08 of 
