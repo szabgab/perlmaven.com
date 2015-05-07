@@ -3,7 +3,7 @@
 =indexes foreach
 =tags screencast
 =status show
-=books beginner_videoo
+=books beginner_video
 =author szabgab
 =comments_disqus_enable 1
 
