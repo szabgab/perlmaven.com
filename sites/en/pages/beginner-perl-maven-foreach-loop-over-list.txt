@@ -1,0 +1,16 @@
+=title foreach loop over list
+=timestamp 2015-05-07T07:20:44
+=indexes foreach
+=tags screencast
+=status show
+=books beginner_videoo
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+foreach loop over list
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/foreach-loop-over-list" />
