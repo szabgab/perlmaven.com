@@ -1,4 +1,4 @@
-=title How to sort faster in Perl?
+=title How to sort faster in Perl? (using the Schwartzian transform)
 =timestamp 2012-12-11T11:45:57
 =indexes map, sort, Schwartzian
 =status show
