@@ -1,0 +1,17 @@
+=title Array assignment
+=timestamp 2015-05-11T07:01:03
+=indexes @array, qw
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Array assignment
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/array-assignment" />
+
