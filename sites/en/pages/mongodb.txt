@@ -16,7 +16,7 @@ with the Perl Programming language.
 
 <ul>
   <li><a href="/getting-started-with-mongodb-using-perl-insert-and-update">Getting started with MongoDB using Perl - insert and simple update</a></li>
-  <li><a href="/pro/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
+  <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
   <li><a href="/pro/updating-mongodb-with-perl">Updating MongoDB using Perl</a></li>
 </ul>
 
