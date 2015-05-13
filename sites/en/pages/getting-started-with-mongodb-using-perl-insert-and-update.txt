@@ -2,6 +2,7 @@
 =timestamp 2015-04-27T06:50:01
 =indexes MongoDB
 =status show
+=books mongodb
 =author szabgab
 =comments_disqus_enable 1
 
