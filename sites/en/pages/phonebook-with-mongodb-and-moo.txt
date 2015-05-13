@@ -2,6 +2,7 @@
 =timestamp 2015-05-13T07:30:01
 =indexes MongoDB, Moo, MooX::Options
 =status show
+=books mongodb, moo
 =author szabgab
 =comments_disqus_enable 1
 
