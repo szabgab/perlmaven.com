@@ -1,6 +1,7 @@
 =title Which is better perl-CGI, mod_perl or PSGI?
 =timestamp 2013-02-18T22:45:56
 =indexes CGI, mod_perl, FastCGI, PSGI, Plack
+=books psgi, cgi, mod_perl
 =status show
 =author szabgab
 =comments_disqus_enable 1

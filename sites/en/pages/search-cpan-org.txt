@@ -3,7 +3,7 @@
 =indexes MetaCPAN
 =tags screencast
 =status show
-=books search_cpan_org
+=books search_cpan_org, psgi
 =author szabgab
 =comments_disqus_enable 1
 =show_related 0
