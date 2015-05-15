@@ -2,6 +2,7 @@
 =timestamp 2014-05-02T02:30:01
 =indexes MetaCPAN
 =status show
+=books catalyst, metacpan
 =author szabgab
 =comments_disqus_enable 1
 

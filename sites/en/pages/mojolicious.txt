@@ -2,6 +2,7 @@
 =timestamp 2013-09-13T18:13:11
 =indexes Mojolicious
 =status show
+=books mojolicious
 =author szabgab
 =comments_disqus_enable 1
 =show_related 0

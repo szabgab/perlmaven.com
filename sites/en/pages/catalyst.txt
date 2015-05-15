@@ -3,6 +3,7 @@
 =indexes Catalyst
 =status show
 =author szabgab
+=books catalyst
 =comments_disqus_enable 1
 =show_related 0
 
