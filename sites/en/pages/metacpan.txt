@@ -40,6 +40,8 @@ and related sites. This page collects the articles and screencasts published on 
   <li><a href="/fetching-meta-data-from-meta-cpan">Fetching META data from Meta CPAN</a></li>
   <li><a href="/how-to-fetch-the-cpan-dependency-tree-of-a-perl-module">How to fetch the CPAN dependency tree of a Perl module?</a></li>
   <li><a href="/list-all-the-perl-modules-and-distributions-in-a-namespace-using-meta-cpan">List all the Perl modules and distributions in a name-space using Meta CPAN</a></li>
+  <li><a href="/search-cpan-org">The search.cpan.org cloning project</a> uses MetaCPAN as the back-end.</li>
+<a href="/pro/get-cpanstats-from-metacpan.txt">
 </ul>
 
 <h2>For future MetaCPAN developers</h2>
