@@ -3,6 +3,7 @@
 =tags interview
 =mp3 /media/audio/stevan-little.mp3, 23768832, 24:32
 =status show
+=books moose
 =show_newsletter_form 0
 =show_date 0
 =author 0

@@ -2,6 +2,7 @@
 =timestamp 2013-09-19T07:13:11
 =indexes AnyEvent
 =status show
+=books anyevent
 =author szabgab
 =comments_disqus_enable 1
 =show_related 0
@@ -19,8 +20,4 @@ about Asynchronous programming using <a href="https://metacpan.org/pod/AnyEvent"
   <li><a href="/fetching-several-web-pages-in-parallel-using-anyevent">Fetching several web pages in parallel using AnyEvent</a></li>
   <li><a href="/pro/asynchronous-web-server-with-psgi-and-twiggy">Asynchronous web application with PSGI and Twiggy</a></li>
 </ul>
-
-<!--
-  <li><a href=""></a></li>
--->
 

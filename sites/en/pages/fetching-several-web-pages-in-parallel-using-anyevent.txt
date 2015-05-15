@@ -2,6 +2,7 @@
 =timestamp 2015-04-15T10:10:01
 =indexes AnyEvent
 =status show
+=books anyevent
 =author szabgab
 =comments_disqus_enable 1
 
