@@ -2,7 +2,7 @@
 =timestamp 2014-03-24T20:30:01
 =indexes CGI, Apache2
 =status show
-=books beginner
+=books beginner, cgi
 =author szabgab
 =comments_disqus_enable 1
 

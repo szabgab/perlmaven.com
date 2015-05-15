@@ -2,8 +2,10 @@
 =timestamp 2014-11-16T09:13:12
 =indexes CGI, cgi-bin
 =status show
+=books cgi
 =author szabgab
 =comments_disqus_enable 1
+=show_related 0
 
 =abstract start
 
@@ -30,8 +32,4 @@ articles and screencasts related to CGI.
   <li><a href="/perl-cgi-mod-perl-psgi">Which is better perl-CGI, mod_perl or PSGI?</li>
   <li><a href="/simple-cgi-script-to-send-form-by-email">Simple CGI Perl script to send form by e-mail</li>
 </ul>
-
-<!--
-  <li><a href=""></a></li>
--->
 
