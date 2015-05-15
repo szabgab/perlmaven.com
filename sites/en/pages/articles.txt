@@ -12,14 +12,13 @@ Article and screencast series on the Perl Maven site:
 
 =abstract end
 
-<h2>Modern Web</h2>
+<h2>Modern Web Frameworks</h2>
 <ul>
-  <li><a href="/search-cpan-org">The search.cpan.org cloning project</a></li>
   <li><a href="/mojolicious">Mojolicious</a> the light-weight web framework</li>
   <li><a href="/dancer">Perl Dancer</a>, light-weight web framework</li>
-  <li><a href="/psgi">PSGI/Plack</a>, the superglue between perl web application frameworks and web servers/li>
-  <li><a href="/catalyst">Catalyst</a></li>
-  <li><a href="/cgi">CGI</a></li>
+  <li><a href="/psgi">PSGI/Plack</a>, the superglue between perl web application frameworks and web servers</li>
+  <li><a href="/catalyst">Catalyst</a> The MVC web framework of Perl</li>
+  <li><a href="/cgi">CGI</a>, the Common Gateway Interface, for old-school web applications. </li>
 </ul>
 
 <h2>Object Oriented Perl</h2>
@@ -40,10 +39,15 @@ Article and screencast series on the Perl Maven site:
 <h2>Other Series</h2>
 <ul>
   <li><a href="/mongodb">Perl and MongoDB</a>, the NoSQL database</li>
-  <li><a href="/anyevent">Anyevent</a>, asynchronous programming</li>
+  <li><a href="/anyevent">AnyEvent</a>, asynchronous programming</li>
   <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers</li>
-  <li><a href="/metacpan">MetaCPAN</a></li>
-  <li><a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a></li>
+  <li><a href="/metacpan">MetaCPAN</a> - articles for CPAN users, CPAN authors, client developers, and MetaCPAN developrs.</li>
+</ul>
+
+<h2>Projets</h2>
+<ul>
+  <li><a href="/search-cpan-org">The search.cpan.org cloning project</a> (Implementing a CPAN search engine using Plack/PSGI with MetaCPAN back-end.)</li>
   <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
+  <li><a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a></li>
 </ul>
 
