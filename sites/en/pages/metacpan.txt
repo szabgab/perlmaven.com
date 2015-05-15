@@ -3,6 +3,7 @@
 =indexes MetaCPAN
 =status show
 =author szabgab
+=books metacpan
 =comments_disqus_enable 1
 =show_related 0
 

@@ -3,6 +3,7 @@
 =indexes MetaCPAN
 =tags screencast
 =status show
+=books metacpan, search_cpan_org
 =author szabgab
 =comments_disqus_enable 1
 

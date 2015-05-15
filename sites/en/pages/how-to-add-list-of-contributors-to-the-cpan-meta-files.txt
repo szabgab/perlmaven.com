@@ -2,6 +2,7 @@
 =timestamp 2013-02-27T20:45:56
 =indexes META, x_contributors, contributors, ExtUtils::MakeMaker, Module::Build, Module::Install, Dist::Zilla
 =status show
+=books metacpan
 =author szabgab
 =comments_disqus_enable 1
 

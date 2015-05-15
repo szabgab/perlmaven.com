@@ -2,6 +2,7 @@
 =timestamp 2014-09-05T07:30:01
 =indexes MetaCPAN
 =status show
+=books metacpan
 =author szabgab
 =comments_disqus_enable 1
 

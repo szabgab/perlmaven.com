@@ -2,6 +2,7 @@
 =timestamp 2012-12-28T16:45:56
 =indexes license, Perl, Perl 5, CPAN, META, ExtUtils::MakeMaker, Module::Build, Module::Install, Dist::Zilla, CPAN::Meta::Spec
 =status show
+=books metacpan
 =author szabgab
 =comments_disqus_enable 1
 

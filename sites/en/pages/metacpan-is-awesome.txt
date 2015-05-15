@@ -3,6 +3,7 @@
 =indexes MetaCPAN
 =tags screencast
 =status draft
+=books metacpan
 =author szabgab
 =comments_disqus_enable 1
 
