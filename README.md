@@ -7,6 +7,9 @@ Perl Maven
 These are the source files of the articles published on http://perlmaven.com/
 and its sub-domains.
 
+The source code of the application running on the server can be found in the
+https://github.com/szabgab/Perl-Maven repository.
+
 Copyright
 ---------
 All the original English articles are copyright Gabor Szabo, except
