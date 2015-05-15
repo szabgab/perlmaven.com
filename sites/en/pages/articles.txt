@@ -37,11 +37,13 @@ Article and screencast series on the Perl Maven site:
   <li><a href="/testing">Test Automation using Perl</a></li>
 </ul>
 
-<h2>Other</h2>
+<h2>Other Series</h2>
 <ul>
   <li><a href="/mongodb">Perl and MongoDB</a>, the NoSQL database</li>
   <li><a href="/anyevent">Anyevent</a>, asynchronous programming</li>
   <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers</li>
   <li><a href="/metacpan">MetaCPAN</a></li>
+  <li><a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a></li>
+  <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
 </ul>
 
