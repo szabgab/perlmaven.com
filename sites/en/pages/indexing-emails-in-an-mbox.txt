@@ -1,5 +1,5 @@
 =title Indexing e-mails in an mbox
-=timestamp 2014-01-28T19:30:01
+=timestamp 2015-05-15T07:30:01
 =indexes Path::Iterator::Rule, Email::Folder
 =books mongodb, mbox
 =status show
