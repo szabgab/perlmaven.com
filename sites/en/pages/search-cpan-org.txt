@@ -162,7 +162,7 @@ explanation of each step, then check out the following articles and screencasts:
   <li><a href="/start-using-template-toolkit-to-show-empty-pages">Start using Template Toolkit to show the empty pages</a></li>
   <li><a href="/looking-at-specific-commit-in-github">Looking at a specific commit in GitHub</a></li>
   <li><a href="/create-the-sco-look-and-feel">Create the search.cpan.org look and feel</a></li>
-  <li><a href="/pro/serving-static-files-with-plack">Serving static files such as favicon.ico and robots.txt using Plack</a></li>
+  <li><a href="/serving-static-files-with-plack">Serving static files such as favicon.ico and robots.txt using Plack</a></li>
   <li><a href="/pro/get-cpanstats-from-metacpan">Get CPANstats from MetaCPAN using cron</a></li>
   <li><a href="/pro/show-cpanstats-on-every-page">Show CPANstats on every page</a></li>
   <li><a href="/pro/add-another-static-page">Add another static page</a></li>
