@@ -149,8 +149,8 @@ explanation of each step, then check out the following articles and screencasts:
 
 <ol>
   <li><a href="/search-cpan-org">Building an open source clone of search.cpan.org using the MetaCPAN API</a> (this page)</li>
-  <li><a href="/search-cpan-org-authors-and-recent">Authors, recent, FAQ and Feedback</a></li>
-  <li><a href="/search-cpan-org-author">Individual Author pages</a></li>
+  <li><a href="/search-cpan-org-authors-and-recent">Authors, recent, FAQ and Feedback</a> (existing UI)</li>
+  <li><a href="/search-cpan-org-author">Individual Author pages</a> (existing UI)</li>
   <li><a href="/create-skeleton-for-sco">Getting started - Create skeleton for the SCO clone application</a></li>
   <li><a href="/add-some-acceptance-tests">Add some acceptance tests using search.cpan.org</a></li>
   <li><a href="/rename-the-sco-project">Rename the SCO cloning project</a></li>
