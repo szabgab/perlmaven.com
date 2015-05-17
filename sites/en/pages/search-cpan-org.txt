@@ -137,24 +137,20 @@ This list can be later updated and can be used as a sort-of specification.
     </li>
 </ul>
 
-<h2>search.cpan.org description videos</h2>
-
-<ul>
-  <li><a href="/search-cpan-org-authors-and-recent">Authors, recent, FAQ and Feedback</a></li>
-  <li><a href="/search-cpan-org-author">Individual Author pages</a></li>
-</ul>
-
 <h2>Notes</h2>
 
 While having multiple interfaces to the data on CPAN can be a good idea, letting search engines get confused about which is the canonical URL is probably not a good idea.
 Hence we are going to set the robots.txt to disallow every well-behaving user-agent.
 
-<h2>Perl Maven Pro</h2>
+<h2>Follow the development</h2>
 
 To follow the development of the project, you can look at <a href="https://github.com/szabgab/MetaCPAN-SCO">GitHub repositor</a>, but if you'd also like to get detailed
 explanation of each step, then check out the following articles and screencasts:
 
-<ul>
+<ol>
+  <li><a href="/search-cpan-org">Building an open source clone of search.cpan.org using the MetaCPAN API</a> (this page)</li>
+  <li><a href="/search-cpan-org-authors-and-recent">Authors, recent, FAQ and Feedback</a></li>
+  <li><a href="/search-cpan-org-author">Individual Author pages</a></li>
   <li><a href="/create-skeleton-for-sco">Getting started - Create skeleton for the SCO clone application</a></li>
   <li><a href="/add-some-acceptance-tests">Add some acceptance tests using search.cpan.org</a></li>
   <li><a href="/rename-the-sco-project">Rename the SCO cloning project</a></li>
@@ -168,5 +164,5 @@ explanation of each step, then check out the following articles and screencasts:
   <li><a href="/pro/add-another-static-page">Add another static page</a></li>
   <li><a href="/pro/add-404-not-found-page">Add "404 Not Found" page</a></li>
   <li><a href="/pro/protecting-from-crash">Protecting from crash</a></li>
-</ul>
+</ol>
 
