@@ -116,6 +116,7 @@ And a few other related articles:
   <li>2015.04.25 <a href="http://blogs.perl.org/users/alberto_simoes/2015/04/cpan-pr-challenge---april-report.html">CPAN PR-Challenge - April Report</a> by Alberto Simões</li>
   <li>2015.04.27 <a href="https://www.doyleyoung.net/cpan-pull-request-challenge-april/">CPAN Pull Request Challenge - April</a> by Doyle Young</li>
   <li>2015.04.30 <a href="http://onionstand.blogspot.cz/2015/04/my-march-april-cpan-pr-challenge-dists.html">My March &amp; April CPAN PR Challenge dists </a> by Breno G. de Oliveira</li>
+  <li>2015.05.17 <a href="http://blogs.perl.org/users/e_choroba/2015/05/how-i-didnt-fix-anyeventforkmanager.html">How I didn't fix AnyEvent::ForkManager</a> by E. Choroba</li>
 </ul>
 
 <!-- Template for adding new blogposts:
