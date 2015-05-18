@@ -238,6 +238,6 @@ That's it. We can now use the the basics of MongoDB.
 
 <ol>
  <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a> (this article)</li>
- <li><a href="/pro/updating-mongodb-with-perl">Updating MongoDB using Perl</a></li>
+ <li><a href="/updating-mongodb-with-perl">Updating MongoDB using Perl</a></li>
 </ol>
 
