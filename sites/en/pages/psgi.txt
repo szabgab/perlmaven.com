@@ -19,7 +19,7 @@ The beginning of a series of articles about <a href="http://plackperl.org/">PSGI
   <li><a href="/how-to-build-a-dynamic-web-application-using-psgi">How to build a dynamic web application using PSGI</a></li>
   <li><a href="/perl-cgi-mod-perl-psgi">Perl CGI, mod_perl, and PSGI</a></li>
   <li><a href="/pro/concurrent-requests-and-measuring-performance-with-apachebench">Concurrent Requests and measuring performance with ApacheBench</a></li>
-  <li><a href="/pro/routing-with-psgi">Routing with PSGI</a></li>
+  <li><a href="/routing-with-psgi">Routing with PSGI</a></li>
   <li><a href="/pro/psgi-and-ajax-for-single-page-applications">PSGI and AJAX for single-page applications</a></li>
   <li><a href="/pro/asynchronous-web-server-with-psgi-and-twiggy">Asynchronous web application with PSGI and Twiggy</a></li>
 </ul>
