@@ -23,6 +23,8 @@ The site can then fill the pages with the data from this file.
 
 <screencast file="/media/videos/get-cpanstats-from-metacpan" />
 
+<a href="https://www.youtube.com/watch?v=43LBO9xUqq0">YouTube</a>
+
 
 <h2>cron-job to fetch the data via MetaCPAN API</h2>
 
