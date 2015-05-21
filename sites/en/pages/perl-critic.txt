@@ -1,0 +1,79 @@
+=title Perl Critic
+=timestamp 2015-05-21T11:58:01
+=indexes Perl::Critic
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Perl::Critic is awesome.
+
+=abstract end
+
+<!-- This page was generated. Please do not edit directly -->
+
+<table>
+   <tr><th>Distribution</th><th>Abstract</th><th>Author</th><th>Date</th></tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic">Perl-Critic</a></td>
+       <td>Critique Perl source code for best-practices.</td>
+       <td><a href="https://metacpan.org/author/THALJEF">THALJEF</a></td>
+       <td>2015-03-03T05:40:47</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Lax">Perl-Critic-Lax</a></td>
+       <td>policies that let you slide on common exceptions</td>
+       <td><a href="https://metacpan.org/author/RJBS">RJBS</a></td>
+       <td>2014-07-11T03:41:56</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Tics">Perl-Critic-Tics</a></td>
+       <td>policies for things that make me wince</td>
+       <td><a href="https://metacpan.org/author/RJBS">RJBS</a></td>
+       <td>2014-07-28T19:26:56</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-More">Perl-Critic-More</a></td>
+       <td>Supplemental policies for Perl::Critic</td>
+       <td><a href="https://metacpan.org/author/THALJEF">THALJEF</a></td>
+       <td>2013-10-29T16:43:05</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Lokku">Perl-Critic-Lokku</a></td>
+       <td>A collection of Perl::Critic policies from Lokku</td>
+       <td><a href="https://metacpan.org/author/FLIMM">FLIMM</a></td>
+       <td>2015-03-02T16:47:32</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Swift">Perl-Critic-Swift</a></td>
+       <td>A set of additional policies for Perl::Critic.</td>
+       <td><a href="https://metacpan.org/author/ELLIOTJS">ELLIOTJS</a></td>
+       <td>2008-05-04T00:41:35</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Git">Perl-Critic-Git</a></td>
+       <td>Bond git and Perl::Critic to blame the right people for violations.</td>
+       <td><a href="https://metacpan.org/author/AUBERTG">AUBERTG</a></td>
+       <td>2014-04-21T03:18:51</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Bangs">Perl-Critic-Bangs</a></td>
+       <td>Perl::Critic::Bangs - A collection of policies for Perl::Critic</td>
+       <td><a href="https://metacpan.org/author/PETDANCE">PETDANCE</a></td>
+       <td>2012-08-20T20:02:43</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Moose">Perl-Critic-Moose</a></td>
+       <td>Policies for Perl::Critic concerned with using Moose</td>
+       <td><a href="https://metacpan.org/author/DROLSKY">DROLSKY</a></td>
+       <td>2015-04-21T20:19:44</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Itch">Perl-Critic-Itch</a></td>
+       <td>Perl::Critic::Itch - A collection of Policies to solve some Itches</td>
+       <td><a href="https://metacpan.org/author/MARCELO">MARCELO</a></td>
+       <td>2009-05-30T23:56:12</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Pulp">Perl-Critic-Pulp</a></td>
+       <td>Some add-on policies for Perl::Critic.</td>
+       <td><a href="https://metacpan.org/author/KRYDE">KRYDE</a></td>
+       <td>2015-03-07T08:21:45</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Test-Perl-Critic">Test-Perl-Critic</a></td>
+       <td>Use Perl::Critic in test programs.</td>
+       <td><a href="https://metacpan.org/author/THALJEF">THALJEF</a></td>
+       <td>2015-02-03T18:45:55</td>
+   </tr>
+</table>
