@@ -72,6 +72,56 @@ Perl::Critic is awesome.
        <td><a href="https://metacpan.org/author/KRYDE">KRYDE</a></td>
        <td>2015-03-07T08:21:45</td>
    </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Nits">Perl-Critic-Nits</a></td>
+       <td>policies of nits I like to pick.</td>
+       <td><a href="https://metacpan.org/author/KCOWGILL">KCOWGILL</a></td>
+       <td>2007-09-14T22:09:08</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Dynamic">Perl-Critic-Dynamic</a></td>
+       <td>Dynamic policies for Perl::Critic.</td>
+       <td><a href="https://metacpan.org/author/THALJEF">THALJEF</a></td>
+       <td>2010-09-30T22:07:27</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-RENEEB">Perl-Critic-RENEEB</a></td>
+       <td>A collection of handy Perl::Critic policies</td>
+       <td><a href="https://metacpan.org/author/RENEEB">RENEEB</a></td>
+       <td>2015-02-23T20:01:57</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-logicLAB">Perl-Critic-logicLAB</a></td>
+       <td>Perl::Critic policies implemented and used by logicLAB</td>
+       <td><a href="https://metacpan.org/author/JONASBN">JONASBN</a></td>
+       <td>2014-08-08T19:20:39</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Storable">Perl-Critic-Storable</a></td>
+       <td>policy for Storable.pm</td>
+       <td><a href="https://metacpan.org/author/MATTD">MATTD</a></td>
+       <td>2008-08-11T09:02:00</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-StricterSubs">Perl-Critic-StricterSubs</a></td>
+       <td>Perl::Critic plugin for stricter subroutine checking</td>
+       <td><a href="https://metacpan.org/author/THALJEF">THALJEF</a></td>
+       <td>2015-02-20T18:52:59</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Compatibility">Perl-Critic-Compatibility</a></td>
+       <td>Policies for Perl::Critic concerned with compatibility with various versions of Perl.</td>
+       <td><a href="https://metacpan.org/author/ELLIOTJS">ELLIOTJS</a></td>
+       <td>2008-06-17T20:59:00</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-Perlsecret">Perl-Critic-Policy-Perlsecret</a></td>
+       <td>Prevent perlsecrets entering your codebase</td>
+       <td><a href="https://metacpan.org/author/LANCEW">LANCEW</a></td>
+       <td>2014-09-14T20:41:25</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-CompileTime">Perl-Critic-Policy-CompileTime</a></td>
+       <td>Find code that runs in compile-time blocks</td>
+       <td><a href="https://metacpan.org/author/XAN">XAN</a></td>
+       <td>2014-09-26T20:34:02</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-PetPeeves-JTRAMMELL">Perl-Critic-PetPeeves-JTRAMMELL</a></td>
+       <td>policies to prohibit/require my pet peeves</td>
+       <td><a href="https://metacpan.org/author/JTRAMMELL">JTRAMMELL</a></td>
+       <td>2014-04-28T19:13:24</td>
+   </tr>
    <tr><td><a href="https://metacpan.org/release/Test-Perl-Critic">Test-Perl-Critic</a></td>
        <td>Use Perl::Critic in test programs.</td>
        <td><a href="https://metacpan.org/author/THALJEF">THALJEF</a></td>
@@ -120,6 +170,7 @@ Perl::Critic is awesome.
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::PerlMinimumVersionAndWhy">Compatibility::PerlMinimumVersionAndWhy</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::PodMinimumVersion">Compatibility::PodMinimumVersion</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::ProhibitUnixDevNull">Compatibility::ProhibitUnixDevNull</a></li>
+      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CompileTime">CompileTime</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitCascadingIfElse">ControlStructures::ProhibitCascadingIfElse</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitCStyleForLoops">ControlStructures::ProhibitCStyleForLoops</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitDeepNests">ControlStructures::ProhibitDeepNests</a></li>
@@ -190,6 +241,7 @@ Perl::Critic is awesome.
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitUseQuotedVersion">Modules::ProhibitUseQuotedVersion</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireBarewordIncludes">Modules::RequireBarewordIncludes</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireEndWithOne">Modules::RequireEndWithOne</a></li>
+      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireExplicitInclusion">Modules::RequireExplicitInclusion</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireExplicitPackage">Modules::RequireExplicitPackage</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireFilenameMatchesPackage">Modules::RequireFilenameMatchesPackage</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireNoMatchVarsWithUseEnglish">Modules::RequireNoMatchVarsWithUseEnglish</a></li>
@@ -203,6 +255,7 @@ Perl::Critic is awesome.
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::NamingConventions::Capitalization">NamingConventions::Capitalization</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::NamingConventions::ProhibitAmbiguousNames">NamingConventions::ProhibitAmbiguousNames</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Objects::ProhibitIndirectSyntax">Objects::ProhibitIndirectSyntax</a></li>
+      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Perlsecret">Perlsecret</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::References::ProhibitDoubleSigils">References::ProhibitDoubleSigils</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitCaptureWithoutTest">RegularExpressions::ProhibitCaptureWithoutTest</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitComplexRegexes">RegularExpressions::ProhibitComplexRegexes</a></li>
@@ -216,13 +269,18 @@ Perl::Critic is awesome.
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireBracesForMultiline">RegularExpressions::RequireBracesForMultiline</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireDotMatchAnything">RegularExpressions::RequireDotMatchAnything</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting">RegularExpressions::RequireExtendedFormatting</a></li>
+      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit">RegularExpressions::RequireExtendedFormattingExceptForSplit</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireLineBoundaryMatching">RegularExpressions::RequireLineBoundaryMatching</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitAmpersandSigils">Subroutines::ProhibitAmpersandSigils</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitBuiltinHomonyms">Subroutines::ProhibitBuiltinHomonyms</a></li>
+      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitCallsToUndeclaredSubs">Subroutines::ProhibitCallsToUndeclaredSubs</a></li>
+      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitCallsToUnexportedSubs">Subroutines::ProhibitCallsToUnexportedSubs</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExcessComplexity">Subroutines::ProhibitExcessComplexity</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExplicitReturnUndef">Subroutines::ProhibitExplicitReturnUndef</a></li>
+      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExportingUndeclaredSubs">Subroutines::ProhibitExportingUndeclaredSubs</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitManyArgs">Subroutines::ProhibitManyArgs</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitNestedSubs">Subroutines::ProhibitNestedSubs</a></li>
+      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitQualifiedSubDeclarations">Subroutines::ProhibitQualifiedSubDeclarations</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitReturnSort">Subroutines::ProhibitReturnSort</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitSubroutinePrototypes">Subroutines::ProhibitSubroutinePrototypes</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitUnusedPrivateSubroutines">Subroutines::ProhibitUnusedPrivateSubroutines</a></li>
@@ -284,6 +342,7 @@ Perl::Critic is awesome.
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitPunctuationVars">Variables::ProhibitPunctuationVars</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitReusedNames">Variables::ProhibitReusedNames</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitUnusedVariables">Variables::ProhibitUnusedVariables</a></li>
+      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitUselessInitialization">Variables::ProhibitUselessInitialization</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProtectPrivateVars">Variables::ProtectPrivateVars</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::RequireInitializationForLocalVars">Variables::RequireInitializationForLocalVars</a></li>
       <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::RequireLexicalLoopIterators">Variables::RequireLexicalLoopIterators</a></li>
