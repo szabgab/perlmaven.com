@@ -132,220 +132,1085 @@ Perl::Critic is awesome.
 
 <h2>Policies</h2>
 
-<ul>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitBooleanGrep">BuiltinFunctions::ProhibitBooleanGrep</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitComplexMappings">BuiltinFunctions::ProhibitComplexMappings</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitLvalueSubstr">BuiltinFunctions::ProhibitLvalueSubstr</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitReverseSortBlock">BuiltinFunctions::ProhibitReverseSortBlock</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitSleepViaSelect">BuiltinFunctions::ProhibitSleepViaSelect</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitStringyEval">BuiltinFunctions::ProhibitStringyEval</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitStringySplit">BuiltinFunctions::ProhibitStringySplit</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitUniversalCan">BuiltinFunctions::ProhibitUniversalCan</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitUniversalIsa">BuiltinFunctions::ProhibitUniversalIsa</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitUselessTopic">BuiltinFunctions::ProhibitUselessTopic</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitVoidGrep">BuiltinFunctions::ProhibitVoidGrep</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitVoidMap">BuiltinFunctions::ProhibitVoidMap</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::RequireBlockGrep">BuiltinFunctions::RequireBlockGrep</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::RequireBlockMap">BuiltinFunctions::RequireBlockMap</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::RequireGlobFunction">BuiltinFunctions::RequireGlobFunction</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::RequireSimpleSortBlock">BuiltinFunctions::RequireSimpleSortBlock</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ClassHierarchies::ProhibitAutoloading">ClassHierarchies::ProhibitAutoloading</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ClassHierarchies::ProhibitExplicitISA">ClassHierarchies::ProhibitExplicitISA</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ClassHierarchies::ProhibitOneArgBless">ClassHierarchies::ProhibitOneArgBless</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitFatCommaNewline">CodeLayout::ProhibitFatCommaNewline</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitHardTabs">CodeLayout::ProhibitHardTabs</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitIfIfSameLine">CodeLayout::ProhibitIfIfSameLine</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitParensWithBuiltins">CodeLayout::ProhibitParensWithBuiltins</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitQuotedWordLists">CodeLayout::ProhibitQuotedWordLists</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitTrailingWhitespace">CodeLayout::ProhibitTrailingWhitespace</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireASCII">CodeLayout::RequireASCII</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireConsistentNewlines">CodeLayout::RequireConsistentNewlines</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireFinalSemicolon">CodeLayout::RequireFinalSemicolon</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireTidyCode">CodeLayout::RequireTidyCode</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireTrailingCommaAtNewline">CodeLayout::RequireTrailingCommaAtNewline</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireTrailingCommas">CodeLayout::RequireTrailingCommas</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::ConstantLeadingUnderscore">Compatibility::ConstantLeadingUnderscore</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::ConstantPragmaHash">Compatibility::ConstantPragmaHash</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::Gtk2Constants">Compatibility::Gtk2Constants</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::PerlMinimumVersionAndWhy">Compatibility::PerlMinimumVersionAndWhy</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::PodMinimumVersion">Compatibility::PodMinimumVersion</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::ProhibitUnixDevNull">Compatibility::ProhibitUnixDevNull</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::CompileTime">CompileTime</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitCascadingIfElse">ControlStructures::ProhibitCascadingIfElse</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitCStyleForLoops">ControlStructures::ProhibitCStyleForLoops</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitDeepNests">ControlStructures::ProhibitDeepNests</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitLabelsWithSpecialBlockNames">ControlStructures::ProhibitLabelsWithSpecialBlockNames</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitMutatingListFunctions">ControlStructures::ProhibitMutatingListFunctions</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitNegativeExpressionsInUnlessAndUntilConditions">ControlStructures::ProhibitNegativeExpressionsInUnlessAndUntilConditions</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitPostfixControls">ControlStructures::ProhibitPostfixControls</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitUnlessBlocks">ControlStructures::ProhibitUnlessBlocks</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitUnreachableCode">ControlStructures::ProhibitUnreachableCode</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitUntilBlocks">ControlStructures::ProhibitUntilBlocks</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::PodSpelling">Documentation::PodSpelling</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitAdjacentLinks">Documentation::ProhibitAdjacentLinks</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitAdjacentLinks::Parser">Documentation::ProhibitAdjacentLinks::Parser</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitBadAproposMarkup">Documentation::ProhibitBadAproposMarkup</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitDuplicateHeadings">Documentation::ProhibitDuplicateHeadings</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitDuplicateSeeAlso">Documentation::ProhibitDuplicateSeeAlso</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitLinkToSelf">Documentation::ProhibitLinkToSelf</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitParagraphEndComma">Documentation::ProhibitParagraphEndComma</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitParagraphTwoDots">Documentation::ProhibitParagraphTwoDots</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitUnbalancedParens">Documentation::ProhibitUnbalancedParens</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitVerbatimMarkup">Documentation::ProhibitVerbatimMarkup</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequireEndBeforeLastPod">Documentation::RequireEndBeforeLastPod</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequireFilenameMarkup">Documentation::RequireFilenameMarkup</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequireFinalCut">Documentation::RequireFinalCut</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequireLinkedURLs">Documentation::RequireLinkedURLs</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequirePackageMatchesPodName">Documentation::RequirePackageMatchesPodName</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequirePodAtEnd">Documentation::RequirePodAtEnd</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequirePodLinksIncludeText">Documentation::RequirePodLinksIncludeText</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequirePodSections">Documentation::RequirePodSections</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Editor::RequireEmacsFileVariables">Editor::RequireEmacsFileVariables</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ErrorHandling::RequireCarping">ErrorHandling::RequireCarping</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ErrorHandling::RequireCheckingReturnValueOfEval">ErrorHandling::RequireCheckingReturnValueOfEval</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ErrorHandling::RequireUseOfExceptions">ErrorHandling::RequireUseOfExceptions</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitBacktickOperators">InputOutput::ProhibitBacktickOperators</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitBarewordFileHandles">InputOutput::ProhibitBarewordFileHandles</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitExplicitStdin">InputOutput::ProhibitExplicitStdin</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitInteractiveTest">InputOutput::ProhibitInteractiveTest</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitJoinedReadline">InputOutput::ProhibitJoinedReadline</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitOneArgSelect">InputOutput::ProhibitOneArgSelect</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitReadlineInForLoop">InputOutput::ProhibitReadlineInForLoop</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitTwoArgOpen">InputOutput::ProhibitTwoArgOpen</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireBracedFileHandleWithPrint">InputOutput::RequireBracedFileHandleWithPrint</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireBriefOpen">InputOutput::RequireBriefOpen</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireCheckedClose">InputOutput::RequireCheckedClose</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireCheckedOpen">InputOutput::RequireCheckedOpen</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireCheckedSyscalls">InputOutput::RequireCheckedSyscalls</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireEncodingWithUTF8Layer">InputOutput::RequireEncodingWithUTF8Layer</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::ProhibitComplexMappings::LinesNotStatements">Lax::ProhibitComplexMappings::LinesNotStatements</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::ProhibitEmptyQuotes::ExceptAsFallback">Lax::ProhibitEmptyQuotes::ExceptAsFallback</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::ProhibitLeadingZeros::ExceptChmod">Lax::ProhibitLeadingZeros::ExceptChmod</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::ProhibitStringyEval::ExceptForRequire">Lax::ProhibitStringyEval::ExceptForRequire</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::RequireEndWithTrueConst">Lax::RequireEndWithTrueConst</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::RequireExplicitPackage::ExceptForPragmata">Lax::RequireExplicitPackage::ExceptForPragmata</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::ProhibitFormats">Miscellanea::ProhibitFormats</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::ProhibitTies">Miscellanea::ProhibitTies</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::ProhibitUnrestrictedNoCritic">Miscellanea::ProhibitUnrestrictedNoCritic</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::ProhibitUselessNoCritic">Miscellanea::ProhibitUselessNoCritic</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::TextDomainPlaceholders">Miscellanea::TextDomainPlaceholders</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::TextDomainUnused">Miscellanea::TextDomainUnused</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::PerlMinimumVersion">Modules::PerlMinimumVersion</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitAutomaticExportation">Modules::ProhibitAutomaticExportation</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitConditionalUseStatements">Modules::ProhibitConditionalUseStatements</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitEvilModules">Modules::ProhibitEvilModules</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitExcessMainComplexity">Modules::ProhibitExcessMainComplexity</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitModuleShebang">Modules::ProhibitModuleShebang</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitMultiplePackages">Modules::ProhibitMultiplePackages</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitPOSIXimport">Modules::ProhibitPOSIXimport</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitUseQuotedVersion">Modules::ProhibitUseQuotedVersion</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireBarewordIncludes">Modules::RequireBarewordIncludes</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireEndWithOne">Modules::RequireEndWithOne</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireExplicitInclusion">Modules::RequireExplicitInclusion</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireExplicitPackage">Modules::RequireExplicitPackage</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireFilenameMatchesPackage">Modules::RequireFilenameMatchesPackage</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireNoMatchVarsWithUseEnglish">Modules::RequireNoMatchVarsWithUseEnglish</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequirePerlVersion">Modules::RequirePerlVersion</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireVersionVar">Modules::RequireVersionVar</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Moose::ProhibitDESTROYMethod">Moose::ProhibitDESTROYMethod</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Moose::ProhibitMultipleWiths">Moose::ProhibitMultipleWiths</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Moose::ProhibitNewMethod">Moose::ProhibitNewMethod</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Moose::RequireCleanNamespace">Moose::RequireCleanNamespace</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Moose::RequireMakeImmutable">Moose::RequireMakeImmutable</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::NamingConventions::Capitalization">NamingConventions::Capitalization</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::NamingConventions::ProhibitAmbiguousNames">NamingConventions::ProhibitAmbiguousNames</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Objects::ProhibitIndirectSyntax">Objects::ProhibitIndirectSyntax</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Perlsecret">Perlsecret</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::References::ProhibitDoubleSigils">References::ProhibitDoubleSigils</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitCaptureWithoutTest">RegularExpressions::ProhibitCaptureWithoutTest</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitComplexRegexes">RegularExpressions::ProhibitComplexRegexes</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitEnumeratedClasses">RegularExpressions::ProhibitEnumeratedClasses</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitEscapedMetacharacters">RegularExpressions::ProhibitEscapedMetacharacters</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitFixedStringMatches">RegularExpressions::ProhibitFixedStringMatches</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitSingleCharAlternation">RegularExpressions::ProhibitSingleCharAlternation</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitUnusedCapture">RegularExpressions::ProhibitUnusedCapture</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitUnusualDelimiters">RegularExpressions::ProhibitUnusualDelimiters</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitUselessTopic">RegularExpressions::ProhibitUselessTopic</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireBracesForMultiline">RegularExpressions::RequireBracesForMultiline</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireDotMatchAnything">RegularExpressions::RequireDotMatchAnything</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting">RegularExpressions::RequireExtendedFormatting</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit">RegularExpressions::RequireExtendedFormattingExceptForSplit</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireLineBoundaryMatching">RegularExpressions::RequireLineBoundaryMatching</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitAmpersandSigils">Subroutines::ProhibitAmpersandSigils</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitBuiltinHomonyms">Subroutines::ProhibitBuiltinHomonyms</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitCallsToUndeclaredSubs">Subroutines::ProhibitCallsToUndeclaredSubs</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitCallsToUnexportedSubs">Subroutines::ProhibitCallsToUnexportedSubs</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExcessComplexity">Subroutines::ProhibitExcessComplexity</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExplicitReturnUndef">Subroutines::ProhibitExplicitReturnUndef</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExportingUndeclaredSubs">Subroutines::ProhibitExportingUndeclaredSubs</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitManyArgs">Subroutines::ProhibitManyArgs</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitNestedSubs">Subroutines::ProhibitNestedSubs</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitQualifiedSubDeclarations">Subroutines::ProhibitQualifiedSubDeclarations</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitReturnSort">Subroutines::ProhibitReturnSort</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitSubroutinePrototypes">Subroutines::ProhibitSubroutinePrototypes</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitUnusedPrivateSubroutines">Subroutines::ProhibitUnusedPrivateSubroutines</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProtectPrivateSubs">Subroutines::ProtectPrivateSubs</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::RequireArgUnpacking">Subroutines::RequireArgUnpacking</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::RequireFinalReturn">Subroutines::RequireFinalReturn</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::ProhibitNoStrict">TestingAndDebugging::ProhibitNoStrict</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::ProhibitNoWarnings">TestingAndDebugging::ProhibitNoWarnings</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::ProhibitProlongedStrictureOverride">TestingAndDebugging::ProhibitProlongedStrictureOverride</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::RequireTestLabels">TestingAndDebugging::RequireTestLabels</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::RequireUseStrict">TestingAndDebugging::RequireUseStrict</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::RequireUseWarnings">TestingAndDebugging::RequireUseWarnings</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Tics::ProhibitLongLines">Tics::ProhibitLongLines</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Tics::ProhibitManyArrows">Tics::ProhibitManyArrows</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Tics::ProhibitUseBase">Tics::ProhibitUseBase</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::TryTiny::ProhibitExitingSubroutine">TryTiny::ProhibitExitingSubroutine</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::TryTiny::RequireCatch">TryTiny::RequireCatch</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ConstantBeforeLt">ValuesAndExpressions::ConstantBeforeLt</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::NotWithCompare">ValuesAndExpressions::NotWithCompare</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitArrayAssignAref">ValuesAndExpressions::ProhibitArrayAssignAref</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitBarewordDoubleColon">ValuesAndExpressions::ProhibitBarewordDoubleColon</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitCommaSeparatedStatements">ValuesAndExpressions::ProhibitCommaSeparatedStatements</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitComplexVersion">ValuesAndExpressions::ProhibitComplexVersion</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitConstantPragma">ValuesAndExpressions::ProhibitConstantPragma</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitDuplicateHashKeys">ValuesAndExpressions::ProhibitDuplicateHashKeys</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitEmptyCommas">ValuesAndExpressions::ProhibitEmptyCommas</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitEmptyQuotes">ValuesAndExpressions::ProhibitEmptyQuotes</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitEscapedCharacters">ValuesAndExpressions::ProhibitEscapedCharacters</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitFiletest_f">ValuesAndExpressions::ProhibitFiletest_f</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitImplicitNewlines">ValuesAndExpressions::ProhibitImplicitNewlines</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitInterpolationOfLiterals">ValuesAndExpressions::ProhibitInterpolationOfLiterals</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitLeadingZeros">ValuesAndExpressions::ProhibitLeadingZeros</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitLongChainsOfMethodCalls">ValuesAndExpressions::ProhibitLongChainsOfMethodCalls</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitMagicNumbers">ValuesAndExpressions::ProhibitMagicNumbers</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitMismatchedOperators">ValuesAndExpressions::ProhibitMismatchedOperators</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitMixedBooleanOperators">ValuesAndExpressions::ProhibitMixedBooleanOperators</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitNoisyQuotes">ValuesAndExpressions::ProhibitNoisyQuotes</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitNullStatements">ValuesAndExpressions::ProhibitNullStatements</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitQuotesAsQuotelikeOperatorDelimiters">ValuesAndExpressions::ProhibitQuotesAsQuotelikeOperatorDelimiters</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitSpecialLiteralHeredocTerminator">ValuesAndExpressions::ProhibitSpecialLiteralHeredocTerminator</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitUnknownBackslash">ValuesAndExpressions::ProhibitUnknownBackslash</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitVersionStrings">ValuesAndExpressions::ProhibitVersionStrings</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireConstantOnLeftSideOfEquality">ValuesAndExpressions::RequireConstantOnLeftSideOfEquality</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireConstantVersion">ValuesAndExpressions::RequireConstantVersion</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireInterpolationOfMetachars">ValuesAndExpressions::RequireInterpolationOfMetachars</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireNumberSeparators">ValuesAndExpressions::RequireNumberSeparators</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireNumericVersion">ValuesAndExpressions::RequireNumericVersion</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireQuotedHeredocTerminator">ValuesAndExpressions::RequireQuotedHeredocTerminator</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireUpperCaseHeredocTerminator">ValuesAndExpressions::RequireUpperCaseHeredocTerminator</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RestrictLongStrings">ValuesAndExpressions::RestrictLongStrings</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::UnexpandedSpecialLiteral">ValuesAndExpressions::UnexpandedSpecialLiteral</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitAugmentedAssignmentInDeclaration">Variables::ProhibitAugmentedAssignmentInDeclaration</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitConditionalDeclarations">Variables::ProhibitConditionalDeclarations</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitEvilVariables">Variables::ProhibitEvilVariables</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitLocalVars">Variables::ProhibitLocalVars</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitMatchVars">Variables::ProhibitMatchVars</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitPackageVars">Variables::ProhibitPackageVars</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitPerl4PackageNames">Variables::ProhibitPerl4PackageNames</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitPunctuationVars">Variables::ProhibitPunctuationVars</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitReusedNames">Variables::ProhibitReusedNames</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitUnusedVariables">Variables::ProhibitUnusedVariables</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitUselessInitialization">Variables::ProhibitUselessInitialization</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProtectPrivateVars">Variables::ProtectPrivateVars</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::RequireInitializationForLocalVars">Variables::RequireInitializationForLocalVars</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::RequireLexicalLoopIterators">Variables::RequireLexicalLoopIterators</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::RequireLocalizedPunctuationVars">Variables::RequireLocalizedPunctuationVars</a></li>
-      <li><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::RequireNegativeIndices">Variables::RequireNegativeIndices</a></li>
-  </ul>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Level</th>
+    <th>Abstract</th>
+  </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitBooleanGrep">BuiltinFunctions::ProhibitBooleanGrep</a></td>
+      <td>5</td>
+      <td>Use List::MoreUtils::any instead of grep in boolean context.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitComplexMappings">BuiltinFunctions::ProhibitComplexMappings</a></td>
+      <td>5</td>
+      <td>Map blocks should have a single statement.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitLvalueSubstr">BuiltinFunctions::ProhibitLvalueSubstr</a></td>
+      <td>5</td>
+      <td>Use 4-argument substr instead of writing substr($foo, 2, 6) = $bar.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitReverseSortBlock">BuiltinFunctions::ProhibitReverseSortBlock</a></td>
+      <td>5</td>
+      <td>Forbid $b before $a in sort blocks.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitSleepViaSelect">BuiltinFunctions::ProhibitSleepViaSelect</a></td>
+      <td>5</td>
+      <td>Use Time::HiRes instead of something like select(undef, undef, undef, .05).</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitStringyEval">BuiltinFunctions::ProhibitStringyEval</a></td>
+      <td>5</td>
+      <td>Write eval { my $foo; bar($foo) } instead of eval "my $foo; bar($foo);".</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitStringySplit">BuiltinFunctions::ProhibitStringySplit</a></td>
+      <td>5</td>
+      <td>Write split /-/, $string instead of split '-', $string.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitUniversalCan">BuiltinFunctions::ProhibitUniversalCan</a></td>
+      <td>5</td>
+      <td>Write < eval { $foo-can($name) } >> instead of UNIVERSAL::can($foo, $name).</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitUniversalIsa">BuiltinFunctions::ProhibitUniversalIsa</a></td>
+      <td>5</td>
+      <td>Write < eval { $foo-isa($pkg) } >> instead of UNIVERSAL::isa($foo, $pkg).</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitUselessTopic">BuiltinFunctions::ProhibitUselessTopic</a></td>
+      <td>5</td>
+      <td>Don't pass $_ to built-in functions that assume it, or to most filetest operators.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitVoidGrep">BuiltinFunctions::ProhibitVoidGrep</a></td>
+      <td>5</td>
+      <td>Don't use grep in void contexts.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitVoidMap">BuiltinFunctions::ProhibitVoidMap</a></td>
+      <td>5</td>
+      <td>Don't use map in void contexts.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::RequireBlockGrep">BuiltinFunctions::RequireBlockGrep</a></td>
+      <td>5</td>
+      <td>Write grep { /$pattern/ } @list instead of grep /$pattern/, @list.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::RequireBlockMap">BuiltinFunctions::RequireBlockMap</a></td>
+      <td>5</td>
+      <td>Write map { /$pattern/ } @list instead of map /$pattern/, @list.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::RequireGlobFunction">BuiltinFunctions::RequireGlobFunction</a></td>
+      <td>5</td>
+      <td>Use glob q{*} instead of <*>.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::RequireSimpleSortBlock">BuiltinFunctions::RequireSimpleSortBlock</a></td>
+      <td>5</td>
+      <td>Sort blocks should have a single statement.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ClassHierarchies::ProhibitAutoloading">ClassHierarchies::ProhibitAutoloading</a></td>
+      <td>5</td>
+      <td>AUTOLOAD methods should be avoided.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ClassHierarchies::ProhibitExplicitISA">ClassHierarchies::ProhibitExplicitISA</a></td>
+      <td>5</td>
+      <td>Employ use base instead of @ISA.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ClassHierarchies::ProhibitOneArgBless">ClassHierarchies::ProhibitOneArgBless</a></td>
+      <td>5</td>
+      <td>Write bless {}, $class; instead of just bless {};.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitFatCommaNewline">CodeLayout::ProhibitFatCommaNewline</a></td>
+      <td>5</td>
+      <td>keep a fat comma on the same line as its quoted word</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitHardTabs">CodeLayout::ProhibitHardTabs</a></td>
+      <td>5</td>
+      <td>Use spaces instead of tabs.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitIfIfSameLine">CodeLayout::ProhibitIfIfSameLine</a></td>
+      <td>5</td>
+      <td>don't put if after if on same line</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitParensWithBuiltins">CodeLayout::ProhibitParensWithBuiltins</a></td>
+      <td>5</td>
+      <td>Write open $handle, $path instead of open($handle, $path).</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitQuotedWordLists">CodeLayout::ProhibitQuotedWordLists</a></td>
+      <td>5</td>
+      <td>Write qw(foo bar baz) instead of ('foo', 'bar', 'baz').</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::ProhibitTrailingWhitespace">CodeLayout::ProhibitTrailingWhitespace</a></td>
+      <td>5</td>
+      <td>Don't use whitespace at the end of lines.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireASCII">CodeLayout::RequireASCII</a></td>
+      <td>5</td>
+      <td>Disallow high-bit characters.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireConsistentNewlines">CodeLayout::RequireConsistentNewlines</a></td>
+      <td>5</td>
+      <td>Use the same newline through the source.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireFinalSemicolon">CodeLayout::RequireFinalSemicolon</a></td>
+      <td>5</td>
+      <td>require a semicolon at the end of code blocks</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireTidyCode">CodeLayout::RequireTidyCode</a></td>
+      <td>5</td>
+      <td>Must run code through perltidy.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireTrailingCommaAtNewline">CodeLayout::RequireTrailingCommaAtNewline</a></td>
+      <td>5</td>
+      <td>comma at end of list at newline</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireTrailingCommas">CodeLayout::RequireTrailingCommas</a></td>
+      <td>5</td>
+      <td>Put a comma at the end of every multi-line list declaration, including the last one.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::ConstantLeadingUnderscore">Compatibility::ConstantLeadingUnderscore</a></td>
+      <td>5</td>
+      <td>new enough "constant" module for leading underscores</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::ConstantPragmaHash">Compatibility::ConstantPragmaHash</a></td>
+      <td>5</td>
+      <td>new enough "constant" module for multiple constants</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::Gtk2Constants">Compatibility::Gtk2Constants</a></td>
+      <td>5</td>
+      <td>new enough Gtk2 version for its constants</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::PerlMinimumVersionAndWhy">Compatibility::PerlMinimumVersionAndWhy</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::PodMinimumVersion">Compatibility::PodMinimumVersion</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::ProhibitUnixDevNull">Compatibility::ProhibitUnixDevNull</a></td>
+      <td>5</td>
+      <td>don't use explicit /dev/null</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CompileTime">CompileTime</a></td>
+      <td>4</td>
+      <td>Provide Perl::Critic support for hunting down compile-time side effects</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitCascadingIfElse">ControlStructures::ProhibitCascadingIfElse</a></td>
+      <td>5</td>
+      <td>Don't write long "if-elsif-elsif-elsif-elsif...else" chains.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitCStyleForLoops">ControlStructures::ProhibitCStyleForLoops</a></td>
+      <td>5</td>
+      <td>Write for(0..20) instead of for($i=0; $i<=20; $i++).</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitDeepNests">ControlStructures::ProhibitDeepNests</a></td>
+      <td>5</td>
+      <td>Don't write deeply nested loops and conditionals.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitLabelsWithSpecialBlockNames">ControlStructures::ProhibitLabelsWithSpecialBlockNames</a></td>
+      <td>5</td>
+      <td>Don't use labels that are the same as the special block names.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitMutatingListFunctions">ControlStructures::ProhibitMutatingListFunctions</a></td>
+      <td>5</td>
+      <td>Don't modify $_ in list functions.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitNegativeExpressionsInUnlessAndUntilConditions">ControlStructures::ProhibitNegativeExpressionsInUnlessAndUntilConditions</a></td>
+      <td>5</td>
+      <td>Don't use operators like not, !~, and le within until and unless.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitPostfixControls">ControlStructures::ProhibitPostfixControls</a></td>
+      <td>5</td>
+      <td>Write if($condition){ do_something() } instead of do_something() if $condition.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitUnlessBlocks">ControlStructures::ProhibitUnlessBlocks</a></td>
+      <td>5</td>
+      <td>Write if(! $condition) instead of unless($condition).</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitUnreachableCode">ControlStructures::ProhibitUnreachableCode</a></td>
+      <td>5</td>
+      <td>Don't write code after an unconditional die, exit, or next.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ControlStructures::ProhibitUntilBlocks">ControlStructures::ProhibitUntilBlocks</a></td>
+      <td>5</td>
+      <td>Write while(! $condition) instead of until($condition).</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::PodSpelling">Documentation::PodSpelling</a></td>
+      <td>5</td>
+      <td>Check your spelling.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitAdjacentLinks">Documentation::ProhibitAdjacentLinks</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitAdjacentLinks::Parser">Documentation::ProhibitAdjacentLinks::Parser</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitBadAproposMarkup">Documentation::ProhibitBadAproposMarkup</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitDuplicateHeadings">Documentation::ProhibitDuplicateHeadings</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitDuplicateSeeAlso">Documentation::ProhibitDuplicateSeeAlso</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitLinkToSelf">Documentation::ProhibitLinkToSelf</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitParagraphEndComma">Documentation::ProhibitParagraphEndComma</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitParagraphTwoDots">Documentation::ProhibitParagraphTwoDots</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitUnbalancedParens">Documentation::ProhibitUnbalancedParens</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::ProhibitVerbatimMarkup">Documentation::ProhibitVerbatimMarkup</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequireEndBeforeLastPod">Documentation::RequireEndBeforeLastPod</a></td>
+      <td>5</td>
+      <td>require __END__ before POD at end of file</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequireFilenameMarkup">Documentation::RequireFilenameMarkup</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequireFinalCut">Documentation::RequireFinalCut</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequireLinkedURLs">Documentation::RequireLinkedURLs</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequirePackageMatchesPodName">Documentation::RequirePackageMatchesPodName</a></td>
+      <td>5</td>
+      <td>The =head1 NAME section should match the package.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequirePodAtEnd">Documentation::RequirePodAtEnd</a></td>
+      <td>5</td>
+      <td>All POD should be after __END__.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequirePodLinksIncludeText">Documentation::RequirePodLinksIncludeText</a></td>
+      <td>5</td>
+      <td>Provide text to display with your pod links.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Documentation::RequirePodSections">Documentation::RequirePodSections</a></td>
+      <td>5</td>
+      <td>Organize your POD into the customary sections.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Editor::RequireEmacsFileVariables">Editor::RequireEmacsFileVariables</a></td>
+      <td>5</td>
+      <td>Per-file editor settings.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ErrorHandling::RequireCarping">ErrorHandling::RequireCarping</a></td>
+      <td>5</td>
+      <td>Use functions from Carp instead of warn or die.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ErrorHandling::RequireCheckingReturnValueOfEval">ErrorHandling::RequireCheckingReturnValueOfEval</a></td>
+      <td>5</td>
+      <td>You can't depend upon the value of $@/$EVAL_ERROR to tell whether an eval failed.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ErrorHandling::RequireUseOfExceptions">ErrorHandling::RequireUseOfExceptions</a></td>
+      <td>5</td>
+      <td>Use exceptions instead of die, croak, or confess.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitBacktickOperators">InputOutput::ProhibitBacktickOperators</a></td>
+      <td>5</td>
+      <td>Discourage stuff like @files = `ls $directory`.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitBarewordFileHandles">InputOutput::ProhibitBarewordFileHandles</a></td>
+      <td>5</td>
+      <td>Write open my $fh, q{<}, $filename; instead of open FH, q{<}, $filename;.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitExplicitStdin">InputOutput::ProhibitExplicitStdin</a></td>
+      <td>5</td>
+      <td>Use "<>" or "<ARGV>" or a prompting module instead of "<STDIN>".</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitInteractiveTest">InputOutput::ProhibitInteractiveTest</a></td>
+      <td>5</td>
+      <td>Use prompt() instead of -t.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitJoinedReadline">InputOutput::ProhibitJoinedReadline</a></td>
+      <td>5</td>
+      <td>Use local $/ = undef or File::Slurp instead of joined readline.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitOneArgSelect">InputOutput::ProhibitOneArgSelect</a></td>
+      <td>5</td>
+      <td>Never write select($fh).</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitReadlineInForLoop">InputOutput::ProhibitReadlineInForLoop</a></td>
+      <td>5</td>
+      <td>Write < while( $line = < ){...} >> instead of < for(<){...} >>.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitTwoArgOpen">InputOutput::ProhibitTwoArgOpen</a></td>
+      <td>5</td>
+      <td>Write < open $fh, q{<}, $filename; > instead of < open $fh, "<$filename"; >.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireBracedFileHandleWithPrint">InputOutput::RequireBracedFileHandleWithPrint</a></td>
+      <td>5</td>
+      <td>Write print {$FH} $foo, $bar; instead of print $FH $foo, $bar;.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireBriefOpen">InputOutput::RequireBriefOpen</a></td>
+      <td>5</td>
+      <td>Close filehandles as soon as possible after opening them.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireCheckedClose">InputOutput::RequireCheckedClose</a></td>
+      <td>5</td>
+      <td>Write < my $error = close $fh; > instead of < close $fh; >.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireCheckedOpen">InputOutput::RequireCheckedOpen</a></td>
+      <td>5</td>
+      <td>Write < my $error = open $fh, $mode, $filename; > instead of < open $fh, $mode, $filename; >.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireCheckedSyscalls">InputOutput::RequireCheckedSyscalls</a></td>
+      <td>5</td>
+      <td>Return value of flagged function ignored.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::RequireEncodingWithUTF8Layer">InputOutput::RequireEncodingWithUTF8Layer</a></td>
+      <td>5</td>
+      <td>Write < open $fh, q{<:encoding(UTF-8)}, $filename; > instead of < open $fh, q{{<:utf8}, $filename; >.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::ProhibitComplexMappings::LinesNotStatements">Lax::ProhibitComplexMappings::LinesNotStatements</a></td>
+      <td>6</td>
+      <td>prohibit multiline maps, not multistatement maps</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::ProhibitEmptyQuotes::ExceptAsFallback">Lax::ProhibitEmptyQuotes::ExceptAsFallback</a></td>
+      <td>6</td>
+      <td>empty quotes are okay as the fallback on the rhs of ||</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::ProhibitLeadingZeros::ExceptChmod">Lax::ProhibitLeadingZeros::ExceptChmod</a></td>
+      <td>6</td>
+      <td>leading zeroes are okay as the first arg to chmod</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::ProhibitStringyEval::ExceptForRequire">Lax::ProhibitStringyEval::ExceptForRequire</a></td>
+      <td>6</td>
+      <td>stringy eval is bad, but it's okay just to "require"</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::RequireEndWithTrueConst">Lax::RequireEndWithTrueConst</a></td>
+      <td>5</td>
+      <td>ending your package with a simple, fun true value is okay</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Lax::RequireExplicitPackage::ExceptForPragmata">Lax::RequireExplicitPackage::ExceptForPragmata</a></td>
+      <td>6</td>
+      <td>you can put strict and warnings before "package"</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::ProhibitFormats">Miscellanea::ProhibitFormats</a></td>
+      <td>5</td>
+      <td>Do not use format.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::ProhibitTies">Miscellanea::ProhibitTies</a></td>
+      <td>5</td>
+      <td>Do not use tie.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::ProhibitUnrestrictedNoCritic">Miscellanea::ProhibitUnrestrictedNoCritic</a></td>
+      <td>5</td>
+      <td>Forbid a bare ## no critic</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::ProhibitUselessNoCritic">Miscellanea::ProhibitUselessNoCritic</a></td>
+      <td>5</td>
+      <td>Remove ineffective "## no critic" annotations.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::TextDomainPlaceholders">Miscellanea::TextDomainPlaceholders</a></td>
+      <td>5</td>
+      <td>check placeholder names in Locale::TextDomain calls</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::TextDomainUnused">Miscellanea::TextDomainUnused</a></td>
+      <td>5</td>
+      <td>check for Locale::TextDomain imported but unused</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::PerlMinimumVersion">Modules::PerlMinimumVersion</a></td>
+      <td>5</td>
+      <td>Enforce backward compatible code.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitAutomaticExportation">Modules::ProhibitAutomaticExportation</a></td>
+      <td>5</td>
+      <td>Export symbols via @EXPORT_OK or %EXPORT_TAGS instead of @EXPORT.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitConditionalUseStatements">Modules::ProhibitConditionalUseStatements</a></td>
+      <td>5</td>
+      <td>Avoid putting conditional logic around compile-time includes.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitEvilModules">Modules::ProhibitEvilModules</a></td>
+      <td>5</td>
+      <td>Ban modules that aren't blessed by your shop.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitExcessMainComplexity">Modules::ProhibitExcessMainComplexity</a></td>
+      <td>5</td>
+      <td>Minimize complexity in code that is outside of subroutines.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitModuleShebang">Modules::ProhibitModuleShebang</a></td>
+      <td>5</td>
+      <td>don't put a #! line at the start of a module file</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitMultiplePackages">Modules::ProhibitMultiplePackages</a></td>
+      <td>5</td>
+      <td>Put packages (especially subclasses) in separate files.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitPOSIXimport">Modules::ProhibitPOSIXimport</a></td>
+      <td>5</td>
+      <td>don't import the whole of POSIX into a module</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::ProhibitUseQuotedVersion">Modules::ProhibitUseQuotedVersion</a></td>
+      <td>5</td>
+      <td>avoid quoted version number string in a "use" statement</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireBarewordIncludes">Modules::RequireBarewordIncludes</a></td>
+      <td>5</td>
+      <td>Write require Module instead of require 'Module.pm'.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireEndWithOne">Modules::RequireEndWithOne</a></td>
+      <td>5</td>
+      <td>End each module with an explicitly 1; instead of some funky expression.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireExplicitInclusion">Modules::RequireExplicitInclusion</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireExplicitPackage">Modules::RequireExplicitPackage</a></td>
+      <td>5</td>
+      <td>Always make the package explicit.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireFilenameMatchesPackage">Modules::RequireFilenameMatchesPackage</a></td>
+      <td>5</td>
+      <td>Package declaration must match filename.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireNoMatchVarsWithUseEnglish">Modules::RequireNoMatchVarsWithUseEnglish</a></td>
+      <td>5</td>
+      <td>use English must be passed a -no_match_vars argument.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequirePerlVersion">Modules::RequirePerlVersion</a></td>
+      <td>5</td>
+      <td>Require a use 5.006; or similar.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Modules::RequireVersionVar">Modules::RequireVersionVar</a></td>
+      <td>5</td>
+      <td>Give every module a $VERSION number.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Moose::ProhibitDESTROYMethod">Moose::ProhibitDESTROYMethod</a></td>
+      <td>5</td>
+      <td>Use DEMOLISH instead of DESTROY</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Moose::ProhibitMultipleWiths">Moose::ProhibitMultipleWiths</a></td>
+      <td>5</td>
+      <td>Require role composition</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Moose::ProhibitNewMethod">Moose::ProhibitNewMethod</a></td>
+      <td>5</td>
+      <td>Don't override Moose's standard constructors.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Moose::RequireCleanNamespace">Moose::RequireCleanNamespace</a></td>
+      <td>5</td>
+      <td>Require removing implementation details from you packages.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Moose::RequireMakeImmutable">Moose::RequireMakeImmutable</a></td>
+      <td>5</td>
+      <td>Ensure that you've made your Moose code fast</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::NamingConventions::Capitalization">NamingConventions::Capitalization</a></td>
+      <td>5</td>
+      <td>Distinguish different program components by case.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::NamingConventions::ProhibitAmbiguousNames">NamingConventions::ProhibitAmbiguousNames</a></td>
+      <td>5</td>
+      <td>Don't use vague variable or subroutine names like 'last' or 'record'.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Objects::ProhibitIndirectSyntax">Objects::ProhibitIndirectSyntax</a></td>
+      <td>5</td>
+      <td>Prohibit indirect object call syntax.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Perlsecret">Perlsecret</a></td>
+      <td>4</td>
+      <td>Prevent perlsecrets entering your codebase</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::References::ProhibitDoubleSigils">References::ProhibitDoubleSigils</a></td>
+      <td>5</td>
+      <td>Write @{ $array_ref } instead of @$array_ref.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitCaptureWithoutTest">RegularExpressions::ProhibitCaptureWithoutTest</a></td>
+      <td>5</td>
+      <td>Capture variable used outside conditional.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitComplexRegexes">RegularExpressions::ProhibitComplexRegexes</a></td>
+      <td>5</td>
+      <td>Split long regexps into smaller qr// chunks.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitEnumeratedClasses">RegularExpressions::ProhibitEnumeratedClasses</a></td>
+      <td>5</td>
+      <td>Use named character classes instead of explicit character lists.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitEscapedMetacharacters">RegularExpressions::ProhibitEscapedMetacharacters</a></td>
+      <td>5</td>
+      <td>Use character classes for literal meta-characters instead of escapes.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitFixedStringMatches">RegularExpressions::ProhibitFixedStringMatches</a></td>
+      <td>5</td>
+      <td>Use eq or hash instead of fixed-pattern regexps.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitSingleCharAlternation">RegularExpressions::ProhibitSingleCharAlternation</a></td>
+      <td>5</td>
+      <td>Use [abc] instead of a.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitUnusedCapture">RegularExpressions::ProhibitUnusedCapture</a></td>
+      <td>5</td>
+      <td>Only use a capturing group if you plan to use the captured value.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitUnusualDelimiters">RegularExpressions::ProhibitUnusualDelimiters</a></td>
+      <td>5</td>
+      <td>Use only // or {} to delimit regexps.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::ProhibitUselessTopic">RegularExpressions::ProhibitUselessTopic</a></td>
+      <td>5</td>
+      <td>Don't use $_ to match against regexes.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireBracesForMultiline">RegularExpressions::RequireBracesForMultiline</a></td>
+      <td>5</td>
+      <td>Use { and } to delimit multi-line regexps.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireDotMatchAnything">RegularExpressions::RequireDotMatchAnything</a></td>
+      <td>5</td>
+      <td>Always use the /s modifier with regular expressions.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting">RegularExpressions::RequireExtendedFormatting</a></td>
+      <td>5</td>
+      <td>Always use the /x modifier with regular expressions.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormattingExceptForSplit">RegularExpressions::RequireExtendedFormattingExceptForSplit</a></td>
+      <td>5</td>
+      <td>Always use the /x modifier with regular expressions, except when the regex is used</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireLineBoundaryMatching">RegularExpressions::RequireLineBoundaryMatching</a></td>
+      <td>5</td>
+      <td>Always use the /m modifier with regular expressions.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitAmpersandSigils">Subroutines::ProhibitAmpersandSigils</a></td>
+      <td>5</td>
+      <td>Don't call functions with a leading ampersand sigil.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitBuiltinHomonyms">Subroutines::ProhibitBuiltinHomonyms</a></td>
+      <td>5</td>
+      <td>Don't declare your own open function.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitCallsToUndeclaredSubs">Subroutines::ProhibitCallsToUndeclaredSubs</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitCallsToUnexportedSubs">Subroutines::ProhibitCallsToUnexportedSubs</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExcessComplexity">Subroutines::ProhibitExcessComplexity</a></td>
+      <td>5</td>
+      <td>Minimize complexity by factoring code into smaller subroutines.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExplicitReturnUndef">Subroutines::ProhibitExplicitReturnUndef</a></td>
+      <td>5</td>
+      <td>Return failure with bare return instead of return undef.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExportingUndeclaredSubs">Subroutines::ProhibitExportingUndeclaredSubs</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitManyArgs">Subroutines::ProhibitManyArgs</a></td>
+      <td>5</td>
+      <td>Too many arguments.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitNestedSubs">Subroutines::ProhibitNestedSubs</a></td>
+      <td>5</td>
+      <td>sub never { sub correct {} }.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitQualifiedSubDeclarations">Subroutines::ProhibitQualifiedSubDeclarations</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitReturnSort">Subroutines::ProhibitReturnSort</a></td>
+      <td>5</td>
+      <td>Behavior of sort is not defined if called in scalar context.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitSubroutinePrototypes">Subroutines::ProhibitSubroutinePrototypes</a></td>
+      <td>5</td>
+      <td>Don't write sub my_function (@@) {}.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitUnusedPrivateSubroutines">Subroutines::ProhibitUnusedPrivateSubroutines</a></td>
+      <td>5</td>
+      <td>Prevent unused private subroutines.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProtectPrivateSubs">Subroutines::ProtectPrivateSubs</a></td>
+      <td>5</td>
+      <td>Prevent access to private subs in other packages.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::RequireArgUnpacking">Subroutines::RequireArgUnpacking</a></td>
+      <td>5</td>
+      <td>Always unpack @_ first.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::RequireFinalReturn">Subroutines::RequireFinalReturn</a></td>
+      <td>5</td>
+      <td>End every path through a subroutine with an explicit return statement.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::ProhibitNoStrict">TestingAndDebugging::ProhibitNoStrict</a></td>
+      <td>5</td>
+      <td>Prohibit various flavors of no strict.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::ProhibitNoWarnings">TestingAndDebugging::ProhibitNoWarnings</a></td>
+      <td>5</td>
+      <td>Prohibit various flavors of no warnings.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::ProhibitProlongedStrictureOverride">TestingAndDebugging::ProhibitProlongedStrictureOverride</a></td>
+      <td>5</td>
+      <td>Don't turn off strict for large blocks of code.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::RequireTestLabels">TestingAndDebugging::RequireTestLabels</a></td>
+      <td>5</td>
+      <td>Tests should all have labels.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::RequireUseStrict">TestingAndDebugging::RequireUseStrict</a></td>
+      <td>5</td>
+      <td>Always use strict.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::RequireUseWarnings">TestingAndDebugging::RequireUseWarnings</a></td>
+      <td>5</td>
+      <td>Always use warnings.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Tics::ProhibitLongLines">Tics::ProhibitLongLines</a></td>
+      <td>5</td>
+      <td>80 x 40 for life!</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Tics::ProhibitManyArrows">Tics::ProhibitManyArrows</a></td>
+      <td>5</td>
+      <td>(this => is => not => good)</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Tics::ProhibitUseBase">Tics::ProhibitUseBase</a></td>
+      <td>5</td>
+      <td>do not use base.pm</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::TryTiny::ProhibitExitingSubroutine">TryTiny::ProhibitExitingSubroutine</a></td>
+      <td>5</td>
+      <td>Ban next/last/return in Try::Tiny blocks</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::TryTiny::RequireCatch">TryTiny::RequireCatch</a></td>
+      <td>5</td>
+      <td>Always include a "catch" block when using "try"</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ConstantBeforeLt">ValuesAndExpressions::ConstantBeforeLt</a></td>
+      <td>5</td>
+      <td>disallow bareword before <</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::NotWithCompare">ValuesAndExpressions::NotWithCompare</a></td>
+      <td>5</td>
+      <td>logical not used with compare</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitArrayAssignAref">ValuesAndExpressions::ProhibitArrayAssignAref</a></td>
+      <td>5</td>
+      <td>don't assign an anonymous arrayref to an array</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitBarewordDoubleColon">ValuesAndExpressions::ProhibitBarewordDoubleColon</a></td>
+      <td>5</td>
+      <td>don't use Foo:: style barewords</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitCommaSeparatedStatements">ValuesAndExpressions::ProhibitCommaSeparatedStatements</a></td>
+      <td>5</td>
+      <td>Don't use the comma operator as a statement separator.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitComplexVersion">ValuesAndExpressions::ProhibitComplexVersion</a></td>
+      <td>5</td>
+      <td>Prohibit version values from outside the module.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitConstantPragma">ValuesAndExpressions::ProhibitConstantPragma</a></td>
+      <td>5</td>
+      <td>Don't < use constant FOO = 15 >>.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitDuplicateHashKeys">ValuesAndExpressions::ProhibitDuplicateHashKeys</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitEmptyCommas">ValuesAndExpressions::ProhibitEmptyCommas</a></td>
+      <td>5</td>
+      <td>disallow empty consecutive commas</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitEmptyQuotes">ValuesAndExpressions::ProhibitEmptyQuotes</a></td>
+      <td>5</td>
+      <td>Write q{} instead of ''.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitEscapedCharacters">ValuesAndExpressions::ProhibitEscapedCharacters</a></td>
+      <td>5</td>
+      <td>Write "\N{DELETE}" instead of "\x7F", etc.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitFiletest_f">ValuesAndExpressions::ProhibitFiletest_f</a></td>
+      <td>5</td>
+      <td>don't use the -f file test</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitImplicitNewlines">ValuesAndExpressions::ProhibitImplicitNewlines</a></td>
+      <td>5</td>
+      <td>Use concatenation or HEREDOCs instead of literal line breaks in strings.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitInterpolationOfLiterals">ValuesAndExpressions::ProhibitInterpolationOfLiterals</a></td>
+      <td>5</td>
+      <td>Always use single quotes for literal strings.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitLeadingZeros">ValuesAndExpressions::ProhibitLeadingZeros</a></td>
+      <td>5</td>
+      <td>Write oct(755) instead of 0755.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitLongChainsOfMethodCalls">ValuesAndExpressions::ProhibitLongChainsOfMethodCalls</a></td>
+      <td>5</td>
+      <td>Long chains of method calls indicate tightly coupled code.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitMagicNumbers">ValuesAndExpressions::ProhibitMagicNumbers</a></td>
+      <td>5</td>
+      <td>Don't use values that don't explain themselves.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitMismatchedOperators">ValuesAndExpressions::ProhibitMismatchedOperators</a></td>
+      <td>5</td>
+      <td>Don't mix numeric operators with string operands, or vice-versa.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitMixedBooleanOperators">ValuesAndExpressions::ProhibitMixedBooleanOperators</a></td>
+      <td>5</td>
+      <td>Write  !$foo && $bar  instead of  not $foo && $bar or $baz.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitNoisyQuotes">ValuesAndExpressions::ProhibitNoisyQuotes</a></td>
+      <td>5</td>
+      <td>Use q{} or qq{} instead of quotes for awkward-looking strings.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitNullStatements">ValuesAndExpressions::ProhibitNullStatements</a></td>
+      <td>5</td>
+      <td>disallow empty statements (stray semicolons)</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitQuotesAsQuotelikeOperatorDelimiters">ValuesAndExpressions::ProhibitQuotesAsQuotelikeOperatorDelimiters</a></td>
+      <td>5</td>
+      <td>Don't use quotes (', ", `) as delimiters for the quote-like operators.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitSpecialLiteralHeredocTerminator">ValuesAndExpressions::ProhibitSpecialLiteralHeredocTerminator</a></td>
+      <td>5</td>
+      <td>Don't write  print <<'__END__' .</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitUnknownBackslash">ValuesAndExpressions::ProhibitUnknownBackslash</a></td>
+      <td>5</td>
+      <td>don't use undefined backslash forms</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitVersionStrings">ValuesAndExpressions::ProhibitVersionStrings</a></td>
+      <td>5</td>
+      <td>Don't use strings like v1.4 or 1.4.5 when including other modules.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireConstantOnLeftSideOfEquality">ValuesAndExpressions::RequireConstantOnLeftSideOfEquality</a></td>
+      <td>5</td>
+      <td>Putting the constant value on the left side of an equality exposes typos.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireConstantVersion">ValuesAndExpressions::RequireConstantVersion</a></td>
+      <td>5</td>
+      <td>Require $VERSION to be a constant rather than a computed value.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireInterpolationOfMetachars">ValuesAndExpressions::RequireInterpolationOfMetachars</a></td>
+      <td>5</td>
+      <td>Warns that you might have used single quotes when you really wanted double-quotes.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireNumberSeparators">ValuesAndExpressions::RequireNumberSeparators</a></td>
+      <td>5</td>
+      <td>Write  141_234_397.0145  instead of  141234397.0145 .</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireNumericVersion">ValuesAndExpressions::RequireNumericVersion</a></td>
+      <td>5</td>
+      <td>$VERSION a plain number</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireQuotedHeredocTerminator">ValuesAndExpressions::RequireQuotedHeredocTerminator</a></td>
+      <td>5</td>
+      <td>Write  print <<'THE_END'  or  print <<"THE_END" .</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireUpperCaseHeredocTerminator">ValuesAndExpressions::RequireUpperCaseHeredocTerminator</a></td>
+      <td>5</td>
+      <td>Write  <<'THE_END';  instead of  <<'theEnd'; .</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RestrictLongStrings">ValuesAndExpressions::RestrictLongStrings</a></td>
+      <td>5</td>
+      <td>Stop mixing long strings with code.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::UnexpandedSpecialLiteral">ValuesAndExpressions::UnexpandedSpecialLiteral</a></td>
+      <td>5</td>
+      <td>specials like __PACKAGE__ used literally</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitAugmentedAssignmentInDeclaration">Variables::ProhibitAugmentedAssignmentInDeclaration</a></td>
+      <td>5</td>
+      <td>Do not write  my $foo .= 'bar'; .</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitConditionalDeclarations">Variables::ProhibitConditionalDeclarations</a></td>
+      <td>5</td>
+      <td>Do not write  my $foo = $bar if $baz; .</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitEvilVariables">Variables::ProhibitEvilVariables</a></td>
+      <td>5</td>
+      <td>Ban variables that aren't blessed by your shop.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitLocalVars">Variables::ProhibitLocalVars</a></td>
+      <td>5</td>
+      <td>Use my instead of local, except when you have to.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitMatchVars">Variables::ProhibitMatchVars</a></td>
+      <td>5</td>
+      <td>Avoid $`, $&, $' and their English equivalents.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitPackageVars">Variables::ProhibitPackageVars</a></td>
+      <td>5</td>
+      <td>Eliminate globals declared with our or use vars.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitPerl4PackageNames">Variables::ProhibitPerl4PackageNames</a></td>
+      <td>5</td>
+      <td>Use double colon (::) to separate package name components instead of single quotes (').</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitPunctuationVars">Variables::ProhibitPunctuationVars</a></td>
+      <td>5</td>
+      <td>Write $EVAL_ERROR instead of $@.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitReusedNames">Variables::ProhibitReusedNames</a></td>
+      <td>5</td>
+      <td>Do not reuse a variable name in a lexical scope</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitUnusedVariables">Variables::ProhibitUnusedVariables</a></td>
+      <td>5</td>
+      <td>Don't ask for storage you don't need.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitUselessInitialization">Variables::ProhibitUselessInitialization</a></td>
+      <td>5</td>
+      <td>prohibit superfluous initializations</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProtectPrivateVars">Variables::ProtectPrivateVars</a></td>
+      <td>5</td>
+      <td>Prevent access to private vars in other packages.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::RequireInitializationForLocalVars">Variables::RequireInitializationForLocalVars</a></td>
+      <td>5</td>
+      <td>Write local $foo = $bar; instead of just local $foo;.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::RequireLexicalLoopIterators">Variables::RequireLexicalLoopIterators</a></td>
+      <td>5</td>
+      <td>Write for my $element (@list) {...} instead of for $element (@list) {...}.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::RequireLocalizedPunctuationVars">Variables::RequireLocalizedPunctuationVars</a></td>
+      <td>5</td>
+      <td>Magic variables should be assigned as "local".</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::RequireNegativeIndices">Variables::RequireNegativeIndices</a></td>
+      <td>5</td>
+      <td>Negative array index should be used.</td>
+    </tr>
+  </table>

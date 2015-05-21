@@ -14,6 +14,8 @@ This is an attempt to recreate the look-and-feel of <a href="http://search.cpan.
 using the <a href="https://github.com/CPAN-API/cpan-api/">MetaCPAN API</a> as a back-end.
 This is the same back-end that powers the fancier <a href="https://metacpan.org/">MetaCPAN</a>.
 
+The result can be found on <a href="http://sco.perlmaven.com/">sco.perlmaven.com</a>
+
 =abstract end
 
 <screencast file="/media/videos/search-cpan-org" />
