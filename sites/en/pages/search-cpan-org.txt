@@ -22,6 +22,8 @@ The result can be found on <a href="http://sco.perlmaven.com/">sco.perlmaven.com
 
 <a href="https://www.youtube.com/watch?v=Gg5n1cevPCg">YouTube</a>
 
+<a href="https://www.youtube.com/playlist?list=PLw7UYp3N0eUaUt6GgztiJPXd6ixDQnbpu">YouTube playlist</a>
+
 <h2>Objectives</h2>
 
 This project has a number of objectives:
