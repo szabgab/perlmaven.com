@@ -16,6 +16,8 @@ I decided to get started immediately.  At this phase of the project there is suc
 
 <screencast file="/media/videos/create-skeleton-for-sco" />
 
+<a href="https://www.youtube.com/watch?v=Wp1qhb_mJ9s">YouTube</a>
+
 <h2>Create Git repository, add README file</h2>
 
 The very first thing was to create a directory called "sco" - I did not have an idea yet how  I am going to call the project.
