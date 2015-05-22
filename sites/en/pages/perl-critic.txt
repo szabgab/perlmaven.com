@@ -5,10 +5,11 @@
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
+=show_related 0
 
 =abstract start
 
-Perl::Critic is configurable lint-like static analyzer for Perl that can provide recommendations how to improve your code and
+<a href="http://perlcritic.com/">Perl::Critic</a> is configurable lint-like static analyzer for Perl that can provide recommendations how to improve your code and
 can even locate code snippets that are sources of common errors. It has a base library that provides the engine and a large set of 
 policies (things to be checked). In addition there are a number of distributions on CPAN that provide further policies. 
 
@@ -27,6 +28,18 @@ In this article we collect <b>all</b> the CPAN distributions related to Perl::Cr
   <li><a href="/jeffrey-thalhammer-perl-critic-and-pinto">Interview with Jeffrey Thalhammer, author of Perl::Critic and Pinto</a></li>
   <li><a href="/pro/move-packages-to-their-own-files">Move packages to their own files - release Pod::Tree 1.21</a> part of the <a href="http://perlmaven.com/pro/becoming-a-co-maintainer">Refactoring and CPAN co-maintainer</a> series.</li>
   <li><a href="/type-checking-with-moo">Type checking with Moo</a> recommends the use of the <a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitAccessOfPrivateData">ValuesAndExpressions::ProhibitAccessOfPrivateData</a> policy from <a href="https://metacpan.org/pod/Perl::Critic::Nits">Perl::Critic::Nits</a>.</li>
+</ul>
+
+<h2>Other Articles</h2>
+
+<ul>
+  <li><a href="http://www.slideshare.net/joshua.mcadams/an-introduction-to-perl-critic">An Introduction To Perl Critic</a> slides from 2007</li>
+  <li><a href="http://perltraining.com.au/tips/2009-02-05.html">Automatically review your code</a></li>
+  <li><a href="http://blogs.perl.org/users/ovid/2012/07/integrating-perlcritic-and-vim.html">Integrating perlcritic and vim</a></li>
+  <li><a href="https://security.web.cern.ch/security/recommendations/en/codetools/perl_critic.shtml">Perl::Critic at CERN Computer Security Information</a></li>
+  <li><a href="http://chimera.labs.oreilly.com/books/1234000001527/ch07.html">Cleaning Up Perl</a> (Chapter 7 of <a href="http://www.masteringperl.org/">Mastering Perl</a>)</li>
+  <li><a href="http://devblog.nestoria.com/post/103804565528/module-of-the-month-november-2014-perl-critic">Module of the month November 2014</a></li>
+  <li><a href="http://www.uponmyshoulder.com/blog/2012/format-perlcritic-output-as-tap-to-integrate-with-jenkins/">Format perlcritic output as TAP to integrate with Jenkins</a></li>
 </ul>
 
 <h2>Distributions</h2>
@@ -142,6 +155,81 @@ In this article we collect <b>all</b> the CPAN distributions related to Perl::Cr
        <td>Use Perl::Critic in test programs.</td>
        <td><a href="https://metacpan.org/author/THALJEF">THALJEF</a></td>
        <td>2015-02-03T18:45:55</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Deprecated">Perl-Critic-Deprecated</a></td>
+       <td>Policies and modules that were formerly included with Perl::Critic itself, but which have been superseded by others.</td>
+       <td><a href="https://metacpan.org/author/THALJEF">THALJEF</a></td>
+       <td>2013-10-29T16:43:17</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-OTRS">Perl-Critic-OTRS</a></td>
+       <td>A collection of handy Perl::Critic policies</td>
+       <td><a href="https://metacpan.org/author/RENEEB">RENEEB</a></td>
+       <td>2015-01-25T08:27:30</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-CodeLayout-ProhibitSpaceIndentation">Perl-Critic-Policy-CodeLayout-ProhibitSpaceIndentation</a></td>
+       <td>Use tabs instead of spaces for indentation.</td>
+       <td><a href="https://metacpan.org/author/IXA">IXA</a></td>
+       <td>2012-10-04T23:30:39</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-CodeLayout-TabIndentSpaceAlign">Perl-Critic-Policy-CodeLayout-TabIndentSpaceAlign</a></td>
+       <td>Use tabs for indenting, spaces for aligning.</td>
+       <td><a href="https://metacpan.org/author/AUBERTG">AUBERTG</a></td>
+       <td>2014-06-09T07:06:32</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-Dynamic-NoIndirect">Perl-Critic-Policy-Dynamic-NoIndirect</a></td>
+       <td>Perl::Critic policy against indirect method calls.</td>
+       <td><a href="https://metacpan.org/author/VPIT">VPIT</a></td>
+       <td>2011-08-25T14:55:26</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-References-ProhibitComplexDoubleSigils">Perl-Critic-Policy-References-ProhibitComplexDoubleSigils</a></td>
+       <td>allow $$foo</td>
+       <td><a href="https://metacpan.org/author/XENU">XENU</a></td>
+       <td>2015-03-14T21:17:38</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-ValuesAndExpressions-PreventSQLInjection">Perl-Critic-Policy-ValuesAndExpressions-PreventSQLInjection</a></td>
+       <td>Prevent SQL injection in interpolated strings.</td>
+       <td><a href="https://metacpan.org/author/AUBERTG">AUBERTG</a></td>
+       <td>2014-04-21T03:30:39</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-Variables-ProhibitUnusedVarsStricter">Perl-Critic-Policy-Variables-ProhibitUnusedVarsStricter</a></td>
+       <td>Critique unused variables in Perl source</td>
+       <td><a href="https://metacpan.org/author/WYANT">WYANT</a></td>
+       <td>2014-12-12T16:04:02</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-logicLAB-ModuleBlacklist">Perl-Critic-Policy-logicLAB-ModuleBlacklist</a></td>
+       <td>blacklist modules you want to prohibit use of</td>
+       <td><a href="https://metacpan.org/author/JONASBN">JONASBN</a></td>
+       <td>2014-08-28T15:53:27</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-logicLAB-ProhibitShellDispatch">Perl-Critic-Policy-logicLAB-ProhibitShellDispatch</a></td>
+       <td>simple policy prohibiting dispatching to shell</td>
+       <td><a href="https://metacpan.org/author/JONASBN">JONASBN</a></td>
+       <td>2014-01-24T20:36:34</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-logicLAB-ProhibitUseLib">Perl-Critic-Policy-logicLAB-ProhibitUseLib</a></td>
+       <td>simple policy prohibiting the use of 'use lib'</td>
+       <td><a href="https://metacpan.org/author/JONASBN">JONASBN</a></td>
+       <td>2014-02-27T14:56:27</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-logicLAB-RequirePackageNamePattern">Perl-Critic-Policy-logicLAB-RequirePackageNamePattern</a></td>
+       <td>simple policy for enforcing a package naming policy</td>
+       <td><a href="https://metacpan.org/author/JONASBN">JONASBN</a></td>
+       <td>2014-03-09T16:12:12</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-logicLAB-RequireParamsValidate">Perl-Critic-Policy-logicLAB-RequireParamsValidate</a></td>
+       <td>simple policy for enforcing use of Params::Validate</td>
+       <td><a href="https://metacpan.org/author/JONASBN">JONASBN</a></td>
+       <td>2014-03-05T21:34:18</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-logicLAB-RequireSheBang">Perl-Critic-Policy-logicLAB-RequireSheBang</a></td>
+       <td>simple policy asserting she bang line</td>
+       <td><a href="https://metacpan.org/author/JONASBN">JONASBN</a></td>
+       <td>2014-08-11T19:31:04</td>
+   </tr>
+   <tr><td><a href="https://metacpan.org/release/Perl-Critic-Policy-logicLAB-RequireVersionFormat">Perl-Critic-Policy-logicLAB-RequireVersionFormat</a></td>
+       <td>a simple policy enforcing strict version formatting</td>
+       <td><a href="https://metacpan.org/author/JONASBN">JONASBN</a></td>
+       <td>2014-08-11T19:35:06</td>
    </tr>
 </table>
 
@@ -313,6 +401,11 @@ In this article we collect <b>all</b> the CPAN distributions related to Perl::Cr
       <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::RequireUseUTF8">CodeLayout::RequireUseUTF8</a></td>
       <td>5</td>
       <td>Require that all modules have a use utf8; statement.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::CodeLayout::TabIndentSpaceAlign">CodeLayout::TabIndentSpaceAlign</a></td>
+      <td>5</td>
+      <td>Use tabs for indenting, spaces for aligning.</td>
     </tr>
       <tr>
       <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::ConstantLeadingUnderscore">Compatibility::ConstantLeadingUnderscore</a></td>
@@ -630,6 +723,41 @@ In this article we collect <b>all</b> the CPAN distributions related to Perl::Cr
       <td>you can put strict and warnings before "package"</td>
     </tr>
       <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::logicLAB::ModuleBlacklist">logicLAB::ModuleBlacklist</a></td>
+      <td>5</td>
+      <td>blacklist modules you want to prohibit use of</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::logicLAB::ProhibitShellDispatch">logicLAB::ProhibitShellDispatch</a></td>
+      <td>5</td>
+      <td>simple policy prohibiting shell dispatching</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::logicLAB::ProhibitUseLib">logicLAB::ProhibitUseLib</a></td>
+      <td>5</td>
+      <td>simple policy prohibiting the use of 'use lib'</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::logicLAB::RequirePackageNamePattern">logicLAB::RequirePackageNamePattern</a></td>
+      <td>5</td>
+      <td>simple policy for enforcing a package naming policy</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::logicLAB::RequireParamsValidate">logicLAB::RequireParamsValidate</a></td>
+      <td>5</td>
+      <td>simple policy for enforcing use of Params::Validate</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::logicLAB::RequireSheBang">logicLAB::RequireSheBang</a></td>
+      <td>5</td>
+      <td>simple policy for keeping your shebang line uniform</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::logicLAB::RequireVersionFormat">logicLAB::RequireVersionFormat</a></td>
+      <td>5</td>
+      <td>assert version number formats</td>
+    </tr>
+      <tr>
       <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::ProhibitFormats">Miscellanea::ProhibitFormats</a></td>
       <td>5</td>
       <td>Do not use format.</td>
@@ -648,6 +776,11 @@ In this article we collect <b>all</b> the CPAN distributions related to Perl::Cr
       <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::ProhibitUselessNoCritic">Miscellanea::ProhibitUselessNoCritic</a></td>
       <td>5</td>
       <td>Remove ineffective "## no critic" annotations.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::RequireRcsKeywords">Miscellanea::RequireRcsKeywords</a></td>
+      <td>5</td>
+      <td>Put source-control keywords in every file.</td>
     </tr>
       <tr>
       <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Miscellanea::TextDomainPlaceholders">Miscellanea::TextDomainPlaceholders</a></td>
@@ -780,14 +913,89 @@ In this article we collect <b>all</b> the CPAN distributions related to Perl::Cr
       <td>Don't use vague variable or subroutine names like 'last' or 'record'.</td>
     </tr>
       <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::NamingConventions::ProhibitMixedCaseSubs">NamingConventions::ProhibitMixedCaseSubs</a></td>
+      <td>5</td>
+      <td>Write sub my_function{} instead of sub MyFunction{}.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::NamingConventions::ProhibitMixedCaseVars">NamingConventions::ProhibitMixedCaseVars</a></td>
+      <td>5</td>
+      <td>Write $my_variable = 42 instead of $MyVariable = 42.</td>
+    </tr>
+      <tr>
       <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Objects::ProhibitIndirectSyntax">Objects::ProhibitIndirectSyntax</a></td>
       <td>5</td>
       <td>Prohibit indirect object call syntax.</td>
     </tr>
       <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::ProhibitDumper">OTRS::ProhibitDumper</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::ProhibitFetchrowHashref">OTRS::ProhibitFetchrowHashref</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::ProhibitLocaltime">OTRS::ProhibitLocaltime</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::ProhibitLowPrecedenceOps">OTRS::ProhibitLowPrecedenceOps</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::ProhibitOpen">OTRS::ProhibitOpen</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::ProhibitPushISA">OTRS::ProhibitPushISA</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::ProhibitRequire">OTRS::ProhibitRequire</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::ProhibitRmtree">OTRS::ProhibitRmtree</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::ProhibitSomeCoreFunctions">OTRS::ProhibitSomeCoreFunctions</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::RequireCamelCase">OTRS::RequireCamelCase</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::RequireParensWithMethods">OTRS::RequireParensWithMethods</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::OTRS::RequireTrueReturnValueForModules">OTRS::RequireTrueReturnValueForModules</a></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+      <tr>
       <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Perlsecret">Perlsecret</a></td>
       <td>4</td>
       <td>Prevent perlsecrets entering your codebase</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::References::ProhibitComplexDoubleSigils">References::ProhibitComplexDoubleSigils</a></td>
+      <td>5</td>
+      <td>allow $$foo but not $$foo[1]-E<gt{dadsdas}-gt[7]>.</td>
     </tr>
       <tr>
       <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::References::ProhibitDoubleSigils">References::ProhibitDoubleSigils</a></td>
@@ -1010,6 +1218,11 @@ In this article we collect <b>all</b> the CPAN distributions related to Perl::Cr
       <td>logical not used with compare</td>
     </tr>
       <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::PreventSQLInjection">ValuesAndExpressions::PreventSQLInjection</a></td>
+      <td>5</td>
+      <td>Prevent SQL injection in interpolated strings.</td>
+    </tr>
+      <tr>
       <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitArrayAssignAref">ValuesAndExpressions::ProhibitArrayAssignAref</a></td>
       <td>5</td>
       <td>don't assign an anonymous arrayref to an array</td>
@@ -1216,6 +1429,11 @@ In this article we collect <b>all</b> the CPAN distributions related to Perl::Cr
     </tr>
       <tr>
       <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitUnusedVariables">Variables::ProhibitUnusedVariables</a></td>
+      <td>5</td>
+      <td>Don't ask for storage you don't need.</td>
+    </tr>
+      <tr>
+      <td><a href="https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitUnusedVarsStricter">Variables::ProhibitUnusedVarsStricter</a></td>
       <td>5</td>
       <td>Don't ask for storage you don't need.</td>
     </tr>
