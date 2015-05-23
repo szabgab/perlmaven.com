@@ -93,7 +93,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-foreach-loop-over-list">Foreach Loop Over List</a></li>
   <li><a href="/beginner-perl-maven-creating-an-array">Creating and Array</a></li>
   <li><a href="/beginner-perl-maven-array-assignment">Array Assignment</a></li>
-  <li><a href="/pro/beginner-perl/exercise-more-statistics">Exercise: more statistics</a></li>
+  <li><a href="/beginner-perl/exercise-more-statistics">Exercise: more statistics</a></li>
   <li><a href="/pro/beginner-perl/array-indexes">Array indexes</a></li>
   <li><a href="/pro/beginner-perl/array-indexes-screencast">Array indexes (screencast)</a></li>
   <li><a href="/pro/beginner-perl/looks-like-number">Looks like number</a></li>
