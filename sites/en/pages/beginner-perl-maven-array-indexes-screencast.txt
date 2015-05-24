@@ -1,0 +1,17 @@
+=title Array indexes (screencast)
+=timestamp 2015-05-24T08:01:05
+=indexes $#array, $array[1]
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Array indexes (screencast)
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/array-indexes-run" />
+
