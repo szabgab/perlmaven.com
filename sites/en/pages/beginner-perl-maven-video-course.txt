@@ -97,7 +97,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li>Solution: more statistics (placeholder)</li>
   <li><a href="/beginner-perl-maven-array-indexes">Array indexes</a></li>
   <li><a href="/beginner-perl-maven-array-indexes-screencast">Array indexes (screencast)</a></li>
-  <li><a href="/pro/beginner-perl/looks-like-number">Looks like number</a></li>
+  <li><a href="/beginner-perl-maven-looks-like-number">Looks like number</a></li>
   <li><a href="/pro/beginner-perl/command-line-parameters">Command line parameters</a></li>
   <li><a href="/pro/beginner-perl/command-line-parameters-screencast">Command line parameters (screencast)</a></li>
   <li><a href="/pro/beginner-perl/process-command-line-using-getopt-long">Processing command line using Getopt::Long</a></li>
