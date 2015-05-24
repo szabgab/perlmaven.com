@@ -16,6 +16,10 @@ Let's first see how can we write to a file, because that seems to be easier.
 
 =abstract end
 
+This article shows how to write to a file using core perl. There are much simpler
+and more readable ways to do that
+<a href="/pro/use-path-tiny-to-read-and-write-file">using Path::Tiny</a>.
+
 Before you can write to a file you need to <b>open</b> it, asking
 the operating system (Windows, Linux, OSX, etc) to open a channel
 for your program to "talk to" the file. For this Perl provides
