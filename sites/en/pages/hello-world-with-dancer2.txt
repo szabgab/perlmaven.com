@@ -46,8 +46,8 @@ another way:
 get('/',  sub { "Hello World!" });
 </code>
 
-In this form it is quite obvious that <hl>get</hl> is a functiom imported from the Dancer2 module.
-It accpets two parameters. The first one is a URL path on our server, in this case the root of all the
+In this form it is quite obvious that <hl>get</hl> is a function imported from the Dancer2 module.
+It accepts two parameters. The first one is a URL path on our server, in this case the root of all the
 path-es. The second parameter is a reference to a function, in this case this is an anonymous function
 created on-the-fly.
 
@@ -101,7 +101,7 @@ and files. You can <hl>cd Try-Me</hl> and launch the new application by typing i
 $ plackup -R . bin/app.psgi
 </code>
 
-This will launch the small built-in webserver and print the following:
+This will launch the small built-in web server and print the following:
 
 <code>
 Watching . bin/lib bin/app.psgi for file updates.
@@ -115,7 +115,7 @@ want to see if this is a real issue or not.
 
 Browsing to that page will show the default page Dancer provides.
 
-Try acessing <b>http://127.0.0.1:5000/welcome</b> and you'll get a big <hl>Error 404 - Not Found</hl>.
+Try accessing <b>http://127.0.0.1:5000/welcome</b> and you'll get a big <hl>Error 404 - Not Found</hl>.
 
 Now, without even shutting down the server, edit the <hl>lib/Try/Me.pm</hl> file.
 Originally it had this content:
