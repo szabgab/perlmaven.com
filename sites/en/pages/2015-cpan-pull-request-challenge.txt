@@ -119,6 +119,11 @@ And a few other related articles:
   <li>2015.05.17 <a href="http://blogs.perl.org/users/e_choroba/2015/05/how-i-didnt-fix-anyeventforkmanager.html">How I didn't fix AnyEvent::ForkManager</a> by E. Choroba</li>
 </ul>
 
+<h3>May</h3>
+<ul>
+  <li>2015.05.23 <a href="http://blogs.perl.org/users/alberto_simoes/2015/05/cpan-pr-challenge-may-report.html">CPAN PR-Challenge: May Report</a> by Alberto Simões</li>
+</ul>
+
 <!-- Template for adding new blogposts:
   <li>2015.. <a href=""></a> by </li>
 -->
