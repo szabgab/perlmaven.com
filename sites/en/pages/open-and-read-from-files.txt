@@ -10,9 +10,12 @@
 
 In this part of the <a href="/perl-tutorial">Perl tutorial</a> we are going to see <b>how to read from a file in Perl</b>.
 
-At this time, we are focusing on text files.
+At this time, we are focusing on <a href="/what-is-a-text-file">text files</a>.
 
 =abstract end
+
+In this article we see how to do this with core perl, but there are more modern and nicer ways to do this
+<a href="/pro/use-path-tiny-to-read-and-write-file">using Path::Tiny to read files</a>.
 
 There are two common ways to open a file depending on how would you like
 to handle error cases.

@@ -14,6 +14,10 @@ This time we'll look at <hl><$fh></hl>, the readline operator of Perl in scalar 
 
 =abstract end
 
+In this article you'll see how the readline operator works in scalar and list contex, but if you need
+to read in the whole content of a file into a scalar variable or into an array, you might be better off
+<a href="/pro/use-path-tiny-to-read-and-write-file">using Path::Tiny</a>. It will make your code look
+nicer.
 
 <h2>readline in SCALAR context</h2>
 
@@ -90,5 +94,5 @@ are trying to find a string that might start on one line and end on a later line
 In that case it can be very useful to have the content of the whole file loaded
 into a single scalar variable. This what the Perl developers call <a href="/slurp">slurp mode</a>.
 In the referred article you can see examples how to read a file in slurp using core
-perl and how to do that using <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a>.
+perl and how to do that using <a href="/pro/use-path-tiny-to-read-and-write-file">Path::Tiny</a>.
 

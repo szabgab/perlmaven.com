@@ -8,7 +8,7 @@
 
 =abstract start
 
-While in most of the cases we'd process a <a href="/what-is-a-text-file">text file</a> line-by-line,
+While in most of the cases we'd process a <a href="/what-is-a-text-file">text file</a> <a href="/open-and-read-from-files">line-by-line</a>,
 there are cases when it is easier to do the work if all the content of the file is in the memory in a single scalar variable.
 
 For example when we need to replace <b>Java is Hot</b> by <b>Jabba the Hutt</b> in a text file.
@@ -20,8 +20,11 @@ In any case you can escape now and read more about <a href="http://en.wikipedia.
 
 =abstract end
 
+Before you go on reading, please note, in this article first you'll see the "manual" way to slurp in a file. You can do
+that, but there are more modern and much more readable ways to do that
+<a href="/pro/use-path-tiny-to-read-and-write-file">using File::Slurp</a>.
 
-For example this is what we have in the data.txt file:
+Let's see an example. This is what we have in the data.txt file:
 
 <code>
 Java is Hot
@@ -164,7 +167,7 @@ an object. We can then call the <hl>slurp</hl> method on that object:
 use Path::Tiny qw( path );
 
 my $file = 'data.txt';
-my $data = path($file)->slurp;
+my $data = path($file)->slurp_utf8;
 </code>
 
 
