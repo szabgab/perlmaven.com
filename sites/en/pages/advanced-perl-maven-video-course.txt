@@ -158,7 +158,7 @@ See the <a href="/moose">Moose page</a>
   <li>Array and hash slices</li>
   <li><a href="/splice-to-slice-and-dice-arrays-in-perl">splice</a></li>
   <li><a href="/pro/autoload">AUTOLOAD</a></li>
-  <li><a href="/pro/begin">BEGIN</a></li>
+  <li><a href="/begin">BEGIN</a></li>
   <li><a href="/pro/end">END</a></li>
   <li><a href="/how-to-sort-faster-in-perl">How to sort faster in Perl - Schwartzian transformation</a></li>
   <li>use autodie</li>
