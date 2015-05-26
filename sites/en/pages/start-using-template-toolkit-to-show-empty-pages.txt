@@ -18,6 +18,8 @@ probably the most well known and most commonly used. It also has plenty of plugi
 
 <screencast file="/media/videos/start-using-template-toolkit-to-show-empty-pages" />
 
+<a href="https://www.youtube.com/watch?v=6hNWd48HxqU">YouTube</a>
+
 In <hl>lib/MetaCPAN/SCO.pm</hl> we replace the 
 
 <code>

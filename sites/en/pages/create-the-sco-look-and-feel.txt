@@ -18,6 +18,8 @@ to separate the Perl code from the HTML code. The next step is to create the loo
 
 <screencast file="/media/videos/create-the-sco-look-and-feel" />
 
+<a href="https://www.youtube.com/watch?v=H6bbo-LYpkw">YouTube</a>
+
 As we don't have access to the templates creating search.cpan.org, we are going to create those ourself.
 
 First step is to look at the source of the main page of search.cpan.org. We can do that either by
