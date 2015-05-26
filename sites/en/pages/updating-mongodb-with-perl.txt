@@ -30,7 +30,7 @@ option update => (is => 'ro');
 We expect the user to run the script:
 
 <code>
-perl phonebook.pl --updated --name Foo --phone 789
+perl phonebook.pl --update --name Foo --phone 789
 </code>
 
 meaning we would like to update the phone number of Foo to be 789.
