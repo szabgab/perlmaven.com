@@ -1,5 +1,5 @@
 (function(){
-	"use strict";
+    "use strict";
 
     this.Calc = function () {
         return Object.freeze({
