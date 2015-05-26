@@ -139,6 +139,6 @@ use Module::Name;
 <h2>Warning</h2>
 
 With this great power also comes great risk. Please, use this feature only if absolutely necessary.
-To much use of the <hl>BEGIN</hl> block reduces its usefulness in the rare cases when you'll really need it.
+Too much use of the <hl>BEGIN</hl> block reduces its usefulness in the rare cases when you'll really need it.
 Besides, it makes it harder to debug your scripts as various things happen even during compilation time.
 
