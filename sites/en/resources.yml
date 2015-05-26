@@ -5,8 +5,6 @@ menu:
         url: /perl-tutorial
       - title: Pro
         url: /pro
-      - title: Articles
-        url: /articles
       - login: 1
         title: Login
       - title: FREE Registration
