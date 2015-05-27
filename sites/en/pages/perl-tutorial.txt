@@ -211,7 +211,7 @@ to practice what you have learned.
 <li><a href="/perl-cgi-script-with-apache2">CGI scripts with Perl</a></li>
 <li><a href="/perl-cgi-mod-perl-psgi">Web applications with Perl: PSGI</a></li>
 <li>Parsing XML files</li>
-<li><a href="/pro/json">Reading and writing JSON files</a></li>
+<li><a href="/json">Reading and writing JSON files</a></li>
 <li><a href="/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
 <li><a href="/reading-from-ldap-in-perl-using-net-ldap">Accessing LDAP using Perl</a></li>
 </ol>
