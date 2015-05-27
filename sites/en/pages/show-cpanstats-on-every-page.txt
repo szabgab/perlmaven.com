@@ -17,6 +17,8 @@ Instead we add our code to the <hl>template()</hl> function that will be called 
 
 <screencast file="/media/videos/show-cpanstats-on-every-page" />
 
+<a href="https://www.youtube.com/watch?v=SG3sUB8S6b4">YouTube</a>
+
 Earlier we had this code generating the HTML page from the template and from the lack of (!) parameters passed to it.
 That empty hash in the middle is where we need to pass the parameters.
 
