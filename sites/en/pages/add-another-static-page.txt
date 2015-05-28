@@ -18,6 +18,8 @@ of search.cpan.org.
 
 <screencast file="/media/videos/add-another-static-page" />
 
+<a href="https://www.youtube.com/watch?v=vQWuioO1FSw">YouTube</a>
+
 <h2>Content</h2>
 
 First we need to retreive the unique content of this page. We can do that either by clicking view-source in the browser when visiting
