@@ -34,6 +34,9 @@ The beginning of a series of articles about
   <li><a href="/pro/ajax-and-dancer2">Ajax and Dancer</a></li>
   <li><a href="/pro/stand-alone-ajax-client">Stand-alone Ajax client and the Access-Control-Allow-Origin issue</a></li>
   <li><a href="/pro/dancer2-ajax-reverse-echo">Reverse Echo with Ajax and Dancer 2</a></li>
+  <li><a href="/pro/refactoring-dancer2-using-before-hook">Refactoring Dancer 2 app, using before hook</a></li>
+  <li><a href="/pro/silencing-the-dancer-tests">Silencing the noisy Dancer tests</a></li>
+  <li><a href="/pro/add-item-to-mongodb-database">Add and retrieve items - MongoDB, Dancer and Testing!</a></li>
 </ul>
 
 <h2>See Also</h2>
