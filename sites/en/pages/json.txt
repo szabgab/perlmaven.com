@@ -1,6 +1,6 @@
 =title JSON in Perl
 =timestamp 2015-05-27T18:00:01
-=indexes JSON, JSON::XS, JSON::Syck, Cpanel::JSON::XS, Mojo::JSON
+=indexes JSON, JSON::XS, JSON::Syck, Cpanel::JSON::XS, Mojo::JSON, decode_json, encode_json
 =status show
 =author szabgab
 =archive 1
