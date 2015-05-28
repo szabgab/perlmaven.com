@@ -18,6 +18,8 @@ Let's convert that to use the SCO look-and-feel as well.
 
 <screencast file="/media/videos/add-404-not-found-page" />
 
+<a href="https://www.youtube.com/watch?v=5E3-zJe4dGg">YouTube</a>
+
 <h2>Create the 404 template</h2>
 
 The <a href="/create-skeleton-psgi-application">PSGI skeleton</a> still has the code sending a plain
