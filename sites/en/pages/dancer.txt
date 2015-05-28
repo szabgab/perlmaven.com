@@ -29,9 +29,12 @@ The beginning of a series of articles about
   <li><a href="/pro/counter-with-dancer-sessions">Counter with Dancer session</a></li>
 </ul>
 
-<!--
-  <li><a href=""></a></li>
--->
+<h2>Dancer 2 and Ajax</h2>
+<ul>
+  <li><a href="/pro/ajax-and-dancer2">Ajax and Dancer</a></li>
+  <li><a href="/pro/stand-alone-ajax-client">Stand-alone Ajax client and the Access-Control-Allow-Origin issue</a></li>
+  <li><a href="/pro/dancer2-ajax-reverse-echo">Reverse Echo with Ajax and Dancer 2</a></li>
+</ul>
 
 <h2>See Also</h2>
 <ul>
