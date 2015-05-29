@@ -9,7 +9,7 @@
 =abstract start
 
 <a href="http://json.org/">JSON (JavaScript Object Notation)</a> is a lightweight data interchange (serialization) format inspired by JavaScript object literal syntax.
-The power if JSON comes from the fact that it maps rather well to the complex data structures of many programming languages and that there are converters
+The power of JSON comes from the fact that it maps rather well to the complex data structures of many programming languages and that there are converters
 between JSON and the data structures of over 60 programming languages. See the <a href="http://json.org/">JSON site</a> for specification and for the list of implementations.
 
 =abstract end
@@ -28,7 +28,7 @@ using JSON format. It is more light-weight than XML and fits the purpose much be
 Using it as a human edited configuration file is another use case. The fact that it allows the creation of deep hierarchies makes it much more useful that
 the INI-file format which was used extensively especially in Microsoft Windows.
 
-JSON can be used as a Data Serialization method for cashing.
+JSON can be used as a Data Serialization method for caching.
 
 A step-child of it, called <a href="http://en.wikipedia.org/wiki/BSON">BSON (Binary JSON)</a>,
 is being used as the data format in <a href="https://www.mongodb.org/">MongoDB</a>.
@@ -139,7 +139,7 @@ Further down you'll find an exercise that will do that.
 <h2>More about JSON</h2>
 
 Of course the above was just a taste into how the encoding/decoding works. There are quite a few issues you might need to be aware,
-probably the most important is how the encoding handless blessed Perl objects.
+probably the most important is how the encoding handles blessed Perl objects.
 
 <h2>Exercise</h2>
 
