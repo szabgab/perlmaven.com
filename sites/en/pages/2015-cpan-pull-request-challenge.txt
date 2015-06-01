@@ -108,6 +108,7 @@ And a few other related articles:
   <li>2015.03.08 <a href="http://blogs.perl.org/users/alberto_simoes/2015/03/cpan-pr-challenge-march-report-2.html">CPAN PR-Challenge: March Report #2</a> by Alberto Simões</li>
   <li>2015.03.25 <a href="https://www.doyleyoung.net/cpan-pull-request-challenge-march/">CPAN Pull Request Challenge - March</a> by Doyle Young</li>
   <li>2015.03.31 <a href="http://herlug.org.uk/?q=node/7">My March Assigment in CPR2015 - Filter::CommaEquals</a> by lesleyb</li>
+  <li>2015.04.06 <a href="http://fluca1978.blogspot.cz/2015/04/cpan-pull-request-challenge-march-done.html">CPAN Pull Request Challenge: March done!</a> by Luca Ferrari</li>
 </ul>
 
 <h3>April</h3>
@@ -122,6 +123,7 @@ And a few other related articles:
 <h3>May</h3>
 <ul>
   <li>2015.05.23 <a href="http://blogs.perl.org/users/alberto_simoes/2015/05/cpan-pr-challenge-may-report.html">CPAN PR-Challenge: May Report</a> by Alberto Simões</li>
+  <li>2015.05.23 <a href="http://fluca1978.blogspot.cz/2015/05/cpan-pr-challenge-may-done.html">CPAN PR Challenge: May done!</a> by Luca Ferrari</li>
 </ul>
 
 <!-- Template for adding new blogposts:
