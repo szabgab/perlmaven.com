@@ -377,7 +377,7 @@ with them, for example we can iterate over the <hl>@ARGV</hl> array using <hl>fo
 
 There are also other solutions, for example if you are using <a href="/moo">Moo</a> for light-weight object oriented programming,
 you could take a look at <a href="https://metacpan.org/pod/MooX::Options">MooX::Options</a>  explained in a number of advanced articles: for example
-<a href="/pro/switching-to-moo-adding-command-line-parameters">Switching to Moo - adding command line parameters</a>
+<a href="/switching-to-moo-adding-command-line-parameters">Switching to Moo - adding command line parameters</a>
 and 
 <a href="/command-line-scripts-with-moo">Writing Command line scripts and accepting command line parameters using Moo</a>.
 
