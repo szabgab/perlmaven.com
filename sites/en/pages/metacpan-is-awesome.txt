@@ -1,8 +1,8 @@
 =title MetaCPAN is awesome!
-=timestamp 2015-10-18T09:30:01
+=timestamp 2015-06-03T01:30:01
 =indexes MetaCPAN
 =tags screencast
-=status draft
+=status show
 =books metacpan
 =author szabgab
 =comments_disqus_enable 1
@@ -18,4 +18,4 @@ With one click!
 
 <iframe width="640" height="510" src="http://www.youtube.com/embed/7N1lZY5E5gg?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
-(This video was recorded in July 2011, but I still think MetaCPAN is awesome!)
+(This video was recorded in July 2011, but I still think <a href="/metacpan">MetaCPAN</a> is awesome!)
