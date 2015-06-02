@@ -64,44 +64,44 @@ ul.horizontal li {
 <div class="main-content">
 <h2>Modern Web Frameworks</h2>
 <ul>
-  <li><a href="/mojolicious">Mojolicious</a> the light-weight web framework</li>
-  <li><a href="/dancer">Perl Dancer</a>, light-weight web framework</li>
-  <li><a href="/psgi">PSGI/Plack</a>, the superglue between perl web application frameworks and web servers</li>
-  <li><a href="/catalyst">Catalyst</a> The MVC web framework of Perl</li>
+  <li><a href="/mojolicious">Mojolicious</a> light-weight web framework with rainbows and unicorns.</li>
+  <li><a href="/dancer">Perl Dancer</a> light-weight web framework to rock.</li>
+  <li><a href="/catalyst">Catalyst</a> The MVC web framework of Perl.</li>
+  <li><a href="/psgi">PSGI/Plack</a>, the low-level superglue between Perl web application frameworks and web servers.</li>
   <li><a href="/cgi">CGI</a>, the Common Gateway Interface, for old-school web applications. </li>
 </ul>
 
 <h2>Object Oriented Perl</h2>
 <ul>
-  <li><a href="/moo">Moo</a>, the Minimalist Object Oriented system for Perl</li>
-  <li><a href="/moose">Moose</a>, the 'post modern' Object Oriented system for Perl</li>
+  <li><a href="/moo">Moo</a>, the Minimalist Object Oriented system for Perl.</li>
+  <li><a href="/moose">Moose</a>, the 'post modern' Object Oriented system for Perl.</li>
 </ul>
 
 <h2>Courses, tutorials</h2>
 
 <ul>
-  <li><a href="/perl-tutorial">Perl Tutorial</a></li>
-  <li><a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a></li>
-  <li><a href="/advanced-perl-maven-video-course">Advanced Perl Maven video course</a></li>
-  <li><a href="/testing">Test Automation using Perl</a></li>
+  <li><a href="/perl-tutorial">Perl Tutorial</a> just a plain Perl tutorial. Nothing fancy.</li>
+  <li><a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a> slidecast of the training material.</li>
+  <li><a href="/advanced-perl-maven-video-course">Advanced Perl Maven video course</a> mixed slidecasts, screencasts and plain articles.</li>
+  <li><a href="/testing">Test Automation using Perl</a> for people who really want to sleep well.</li>
 </ul>
 
 <h2>Other Series</h2>
 <ul>
-  <li><a href="/mongodb">Perl and MongoDB</a>, the NoSQL database</li>
-  <li><a href="/anyevent">AnyEvent</a>, asynchronous programming</li>
-  <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers</li>
-  <li><a href="/metacpan">MetaCPAN</a> - articles for CPAN users, CPAN authors, client developers, and MetaCPAN developrs.</li>
+  <li><a href="/mongodb">Perl and MongoDB</a>, the NoSQL database used in Perl programs.</li>
+  <li><a href="/anyevent">AnyEvent</a>, asynchronous programming.</li>
+  <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers.</li>
+  <li><a href="/metacpan">MetaCPAN</a> -  articles for CPAN users, CPAN authors, client developers, and MetaCPAN developers.</li>
 </ul>
 
 <h2>Projets and Collections</h2>
 <ul>
-  <li><a href="/search-cpan-org">The search.cpan.org cloning project</a> (Implementing a CPAN search engine using Plack/PSGI with MetaCPAN back-end.)</li>
+  <li><a href="/search-cpan-org">The search.cpan.org cloning project</a> - Implementing a CPAN search engine using Plack/PSGI with MetaCPAN back-end.</li>
   <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
   <li><a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a></li>
-  <li><a href="/counter">Counter Examples</a></li>
+  <li><a href="/counter">Counter Examples</a> Various solution on the simple task of building a counter.</li>
   <li><a href="/pro/becoming-a-co-maintainer">Becomming a co-maintainer of a CPAN module - refactoring a CPAN module</a></li>
-  <li><a href="/perl-critic">Perl::Critic</a></li>
+  <li><a href="/perl-critic">Perl::Critic</a> lint-like static analyzer for Perl.</li>
 </ul>
 </div>
 
