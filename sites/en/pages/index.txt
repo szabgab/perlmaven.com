@@ -18,7 +18,7 @@ ul.horizontal li {
 }
 </style>
 
-
+<!--
 <div>
 <h2>Modern Web Frameworks</h2>
 <ul class="horizontal">
@@ -41,10 +41,6 @@ ul.horizontal li {
 <ul class="horizontal">
   <li><a href="/perl-tutorial"><img src="/img/beginner_perl_maven_150x212.png" alt="Beginner Perl Maven tutorial" title="Beginner Perl Maven tutorial" /></a></li>
   <li><a href="/beginner-perl-maven-video-course"><img src="/img/beginner_perl_maven_150x212.png" alt="Beginner Perl Maven video tutorial" title="Beginner Perl Maven video tutorial" /></a></li>
-<!--
-  <li><a href="/advanced-perl-maven-video-course">Advanced Perl Maven video course</a></li>
-  <li><a href="/testing">Test Automation using Perl</a></li>
--->
 </ul>
 
 
@@ -52,10 +48,6 @@ ul.horizontal li {
 <ul class="horizontal">
   <li><a href="/mongodb"><img src="/img/mongodb-logo.png" alt="Perl and MongoDB" title="Perl and MongoDB" /></a></li>
   <li><a href="/metacpan"><img src="/img/metacpan.png" alt="MetaCPAN" title="MetaCPAN" /></a></li>
-<!--
-  <li><a href="/anyevent">AnyEvent</a>, asynchronous programming</li>
-  <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers</li>
--->
 </ul>
 
 
@@ -64,14 +56,10 @@ ul.horizontal li {
   <li><a href="/search-cpan-org"><img src="/img/cpan_banner.png" alt="search.cpan.org cloning project" title="search.cpan.org cloning project" /></a></li>
   <li><a href="/indexing-emails-in-an-mbox"><img src="/img/red_mailbox.png" alt="Indexing Mailbox" title="Indexing Mailbox" /></a></li>
   <li><a href="/counter"><img src="/img/counter.png" alt="Counter Examples" title="Counter Examples" /></a></li>
-<!--
-  <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
-  <li><a href="/pro/becoming-a-co-maintainer">Becomming a co-maintainer of a CPAN module - refactoring a CPAN module</a></li>
-  <li><a href="/perl-critic">Perl::Critic</a></li>
--->
 </ul>
 
 </div>
+-->
 
 <div class="main-content">
 <h2>Modern Web Frameworks</h2>
