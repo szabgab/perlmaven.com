@@ -19,7 +19,7 @@ Well, sort of.
 
 <h2>BEGIN</h2>
 
-You can add a BEGIN-block to your code that will get exectued as soon
+You can add a BEGIN-block to your code that will get executed as soon
 as that part of the code was compiled and <b>before</b> the rest of
 the code is compiled. It can happen even before any of the modules are loaded.
 
@@ -62,7 +62,7 @@ syntax error at begin_with_syntax_error.pl line 10, near "= ;"
 Execution of begin_with_syntax_error.pl aborted due to compilation errors.
 </code>
 
-As you can see, the code inside the <hl>BEGIN</hl> block was exectued before Perl noticed that there
+As you can see, the code inside the <hl>BEGIN</hl> block was executed before Perl noticed that there
 is some syntax error in the code later on.
 
 Without the <hl>BEGIN</hl> block wrapping around that <hl>print</hl> statement, we would only get the
@@ -141,4 +141,32 @@ use Module::Name;
 With this great power also comes great risk. Please, use this feature only if absolutely necessary.
 Too much use of the <hl>BEGIN</hl> block reduces its usefulness in the rare cases when you'll really need it.
 Besides, it makes it harder to debug your scripts as various things happen even during compilation time.
+
+<h2>Warning++</h2>
+
+As <a href="http://www.doc.ic.ac.uk/~dcw/">Duncan White</a> mentioned in the comment section
+there is an even bigger issue with BEGIN blocks, though you need to know
+about it mostly as a consumer of code written by other people.
+(Or as someone who wants to attack the machines of other people.)
+
+You probably know that running <hl>perl -c filename</hl> will run a syntax-check on that file.
+In other words it will "compile" that file.
+
+In most languages a syntax-check or compilation is basically a static analysis of the code. It never executes any code
+that is being compiled.
+
+Not so in Perl.
+
+You've just learned about the <hl>BEGIN</hl> blocks that would be executed during compilation. So if someone supplies you
+an innocently looking perl script in which a line like this is hidden:
+
+<code lang="perl">
+BEGIN { system "rm -rf /" }
+</code>
+
+then just by "compiling" that code by running <hl>perl -c filename</hl> you'd wipe your disk rather clean.
+
+Moreover any <hl>use</hl> statement in the file will be also executed loading and syntax checking the modules
+and executing their <hl>BEGIN</hl> blocks.
+
 
