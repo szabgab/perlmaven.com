@@ -1,0 +1,81 @@
+=title Statement modifiers: reversed if statements
+=timestamp 2015-06-04T09:00:01
+=indexes if, unless
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+You'll become an expert, if you use Perl a lot.
+
+If you use Perl a lot, you'll become an expert. 
+
+These two sentences mean the same and if we are told either of those we'll understand the same thing.
+Maybe there is a slight difference in the focus of the sentence, but the real meaning is the same.
+
+Just as in English and in any other spoken language you can do the same reversal in Perl as well.
+
+=abstract end
+
+<h2>if-statement in Perl</h2>
+
+These two examples do the same in Perl:
+
+<code lang="perl">
+if (-e $file) {
+    die "File '$file' already exists";
+}
+</code>
+
+<code lang="perl">
+die "File '$file' already exist" if -e $file;
+</code>
+
+In both cases Perl first checks the condition (does the file <hl>$file</hl> exist?),
+and in both cases it executes the <hl>die</hl> statement only if the condition was met.
+
+You are already familiar with the first, the direct way of writing an if-statement
+and the block that belongs to it. In the second example we reversed the order of the two parts.
+We could also leave out the curly-braces of the block <hl>{}</hl>, and the parentheses <hl>()</hl>
+of the condition. That's the big advantage of writing this way.
+
+The disadvantage is that in this syntax there can be only one statement in the (not existing) block.
+There can be only one statement executed if the condition was met and there is no <hl>else</hl> part at all.
+
+
+This kind of statement is often used together with flow-control statements such as <hl>die</hl>, <hl>next</hl>, and <hl>last</hl>,
+to name a few.
+
+
+<h2>unless-statement in Perl</h2>
+
+Just as <hl>if</hl> can be used as a statement modifier, we can also use <hl>unless</hl> as a statement modifier.
+
+<code lang="perl">
+if (not -e $file) {
+    die "File '$file' does not exist";
+}
+</code>
+
+Is the same as
+
+<code lang="perl">
+unless (-e $file) {
+    die "File '$file' does not exist";
+}
+</code>
+
+Which is the same as
+
+<code lang="perl">
+die "File '$file' does not exist" if not -e $file;
+</code>
+
+which is the same as:
+
+<code lang="perl">
+die "File '$file' does not exist" unless -e $file;
+</code>
+
+

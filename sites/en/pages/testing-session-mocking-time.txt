@@ -22,6 +22,8 @@ Instead of that we can ask perl to lie about the time. In other words, we can mo
 
 <screencast file="/media/videos/testing-session-mocking-time" />
 
+<a href="https://www.youtube.com/watch?v=lVanBTERBAs">YouTube</a>
+
 This is <b>MySession.pm</b>. Probably not the best implementation of a session object, but it will work for our purposes.
 
 <code lang="perl">
