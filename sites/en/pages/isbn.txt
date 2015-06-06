@@ -1,7 +1,7 @@
 =title ISBN - International Standard Book Number - with Perl
 =timestamp 2015-06-06T10:10:01
 =indexes ISBN
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
@@ -10,7 +10,11 @@
 =abstract start
 
 ISBN, International Standard Book Number is a 10-13 digit long number that can identify
-books and other publications.
+books and other publications. There are two main groups of modules:
+One is <a href="https://metacpan.org/pod/Business::ISBN">Business::ISBN</a> that can
+handle the ISBN number itself without any connection to central databases
+and <a href="https://metacpan.org/pod/WWW::Scraper::ISBN">WWW::Scraper::ISBN</a>
+that, using individual drivers, can access ISBN database around the world.
 
 =abstract end
 
