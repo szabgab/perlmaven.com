@@ -23,7 +23,7 @@ that, using individual drivers, can access ISBN database around the world.
 <table>
    <tr><th>Distribution</th><th>Abstract</th><th>Author</th><th>Date</th></tr>
 [% FOR d IN distributions %]
-   <tr><td><a href="https://metacpan.org/release/[% d.name %]">[% d.name %]</a></td>
+   <tr><td><a href="https://metacpan.org/release/[% d.name %]">[% d.short_name %]</a></td>
        <td>[% d.abstract %]</td>
        <td><a href="https://metacpan.org/author/[% d.author %]">[% d.author %]</a></td>
        <td>[% d.date %]</td>
