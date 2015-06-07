@@ -46,6 +46,7 @@ There are several modules that can convert Perl data structures to JSON, and JSO
   <li><a href="https://metacpan.org/pod/Cpanel::JSON::XS">Cpanel::JSON::XS</a></li>
   <li><a href="https://metacpan.org/pod/Mojo::JSON">Mojo::JSON</a>, part of Mojolicious.</li>
   <li><a href="https://metacpan.org/pod/JSON::MaybeXS">JSON::MaybeXS</a> <b>The recommended!</b></li>
+  <li><a href="https://metacpan.org/pod/JSON::Meth">JSON::Meth</a></li>
 </ul>
 
 <a href="https://metacpan.org/pod/JSON::PP">JSON::PP</a> is a Pure-Perl implementation that can be found in the recent releases of
