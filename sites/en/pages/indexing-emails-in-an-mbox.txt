@@ -303,6 +303,6 @@ Probably: From, To, Date, CC (and Cc), Subject.
  <li><a href="/some-refactoring-and-add-logging-to-mail-boxer">Refactoring the script and add logging</a></li>
  <li><a href="/switching-to-moo-adding-command-line-parameters">Switching to Moo - adding command line parameters</a></li>
  <li><a href="/adding-the-to-field-to-the-mongodb-database">Adding the To: field to the MongoDB database</a></li>
- <li><a href="/pro/adding-date-size-cc-and-message-id">Adding Date, Size, CC, and Message-ID</a></li>
+ <li><a href="/adding-date-size-cc-and-message-id">Adding Date, Size, CC, and Message-ID</a></li>
 </ol>
 
