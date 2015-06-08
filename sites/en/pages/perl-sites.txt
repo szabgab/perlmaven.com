@@ -97,6 +97,22 @@ into a weekly blog-post.
 The <a href="http://perltraining.com.au/tips/">Perl Tips</a> of Perl Training Australia is a collection of some very good Perl-related articles. There is also
 a newsletter so you won't miss a newly published article.
 
+<a href="http://www.perlrdf.org/">Perl and RDF</a>
+
+<a href="http://www.template-toolkit.org/">Template Toolkit</a>
+
+<a href="http://mojolicio.us/">Mojolicious</a>
+
+<a href="http://www.catalystframework.org/">Catalyst</a>
+
+<a href="http://perldancer.org/">Perl Dancer</a>
+
+<a href="http://plackperl.org/">PSGI/Plack</a>
+
+<a href="http://cpanmin.us/">CPAN Minus</a> (redirects to GitHub)
+
+<a href="http://perlbrew.pl/">Perlbrew</a>
+
 <h2>Perl 6</h2>
 
 Once in a while, when I have time, I look at <a href="http://perl6.org/">Perl 6</a> and at <a href="http://rakudo.org/">Rakudo</a>, but unfortunately I rarely have time for these.
