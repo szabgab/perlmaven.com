@@ -39,11 +39,19 @@ The beginning of a series of articles about
   <li><a href="/pro/add-item-to-mongodb-database">Add and retrieve items - MongoDB, Dancer and Testing!</a></li>
   <li><a href="/pro/add-and-retreive-items-jquery-ajax">Add and retrieve elements - jQuery + Ajax</a></li>
   <li><a href="/pro/deleting-item-using-ajax-with-delete-and-options">Deleting item using Ajax request with DELETE and OPTIONS</a></li>
+  <li><a href="/pro/replace-manual-html-generation-by-handlebars">Replace manual HTML generation by the use of Handlebars</a></li>
+  <li><a href="/pro/add-date-to-items-in-mongodb">Add a date stamp to the items in the database and to the HTML</a></li>
+
 <!--
-TODO:
-  switch to use Handlebars temlates
-  Implement the idea of updating the list in the client only once, and letting it handle the data itself.
-  Then also implement a notification solution so if the data is changed on the server, the client will be notified.
+* Simple GET request to the same server returning JSON with "hello world" and displaying it
+* Simple GET cross-site set Access-Control-Allow-Origin in the server
+* An HTML form with single input field, sending the value in a GET request to the server displaying the result (the input reversed)
+* skip this: (the backend part setting up MongoDB, an implementing the back-end part of inserting an item and retrieving a list of items)
+* jQuery retreive list and show list (building HTML using string concatenation)
+* new HTML form, jQuery POST the text of the item
+* Change the list displayed and include a delete button with each item. When clicked send a DELETE request
+   Add Access-Control-Allow-Methods header and let the server respond to OPTIONS request to fix the issues.
+
 -->
 </ul>
 
