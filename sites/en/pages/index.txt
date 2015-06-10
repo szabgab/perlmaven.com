@@ -51,7 +51,7 @@ ul.horizontal li {
 </ul>
 
 
-<h2>Projets and Collections</h2>
+<h2>Projects and Collections</h2>
 <ul class="horizontal">
   <li><a href="/search-cpan-org"><img src="/img/cpan_banner.png" alt="search.cpan.org cloning project" title="search.cpan.org cloning project" /></a></li>
   <li><a href="/indexing-emails-in-an-mbox"><img src="/img/red_mailbox.png" alt="Indexing Mailbox" title="Indexing Mailbox" /></a></li>
@@ -94,13 +94,13 @@ ul.horizontal li {
   <li><a href="/metacpan">MetaCPAN</a> -  articles for CPAN users, CPAN authors, client developers, and MetaCPAN developers.</li>
 </ul>
 
-<h2>Projets and Collections</h2>
+<h2>Projects and Collections</h2>
 <ul>
   <li><a href="/search-cpan-org">The search.cpan.org cloning project</a> - Implementing a CPAN search engine using Plack/PSGI with MetaCPAN back-end.</li>
   <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
   <li><a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a></li>
   <li><a href="/counter">Counter Examples</a> Various solution on the simple task of building a counter.</li>
-  <li><a href="/pro/becoming-a-co-maintainer">Becomming a co-maintainer of a CPAN module - refactoring a CPAN module</a></li>
+  <li><a href="/pro/becoming-a-co-maintainer">Becoming a co-maintainer of a CPAN module - refactoring a CPAN module</a></li>
   <li><a href="/perl-critic">Perl::Critic</a> lint-like static analyzer for Perl.</li>
 </ul>
 </div>
@@ -118,7 +118,7 @@ subscribers of the <a href="/pro">Perl Maven Pro</a> service only.
 If you are interested to listen to or even see other Perl developers,
 the <a href="/tv">Perl Maven TV Show</a> is a collection of such interviews.
 
-Want to make sure you don't miss any of the Perl Maven articels?
+Want to make sure you don't miss any of the Perl Maven articles?
 Sign up to the <a href="/perl-maven-newsletter">newsletter</a>!
 </div>
 
