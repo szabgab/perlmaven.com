@@ -1,0 +1,16 @@
+=title Process command line using Getopt::Long (screencast)
+=timestamp 2016-06-11T10:02:09
+=indexes Getopt::Long
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Process command line using Getopt::Long (screencast)
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/process-command-line-using-getopt-long-run" />

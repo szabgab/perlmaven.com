@@ -101,7 +101,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-command-line-parameters">Command line parameters</a></li>
   <li><a href="/beginner-perl-maven-command-line-parameters-screencast">Command line parameters (screencast)</a></li>
   <li><a href="/beginner-perl-maven-process-command-line-using-getopt-long">Processing command line using Getopt::Long</a></li>
-  <li><a href="/pro/beginner-perl/process-command-line-using-getopt-long-screencast">Processing command line using Getopt::Long (screencast)</a></li>
+  <li><a href="/beginner-perl-maven-process-command-line-using-getopt-long-screencast">Processing command line using Getopt::Long (screencast)</a></li>
   <li><a href="/pro/beginner-perl/process-csv-file">Process CSV file</a></li>
   <li><a href="/pro/beginner-perl/process-csv-file-short-version">Process CSV file - short version</a></li>
   <li><a href="/pro/beginner-perl/oneliner-sum-of-csv">Oneliner - Sum of values in CSV file</a></li>
