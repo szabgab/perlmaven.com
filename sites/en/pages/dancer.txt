@@ -31,26 +31,25 @@ The beginning of a series of articles about
 
 <h2>Dancer 2 and Ajax</h2>
 <ul>
-  <li><a href="/pro/ajax-and-dancer2">Ajax and Dancer</a></li>
-  <li><a href="/pro/stand-alone-ajax-client">Stand-alone Ajax client and the Access-Control-Allow-Origin issue</a></li>
-  <li><a href="/pro/dancer2-ajax-reverse-echo">Reverse Echo with Ajax and Dancer 2</a></li>
+  <li><a href="/pro/ajax-and-dancer2">Ajax and Dancer</a> - Simple GET request to the same server returning JSON with "hello world" and displaying it.</li>
+  <li><a href="/pro/stand-alone-ajax-client">Stand-alone Ajax client and the Access-Control-Allow-Origin issue</a> - Simple cross-site GET request. Set Access-Control-Allow-Origin in the server.</li>
+  <li><a href="/pro/dancer2-ajax-reverse-echo">Reverse Echo with Ajax and Dancer 2</a> - An HTML form with single input field, sending the value in a GET request to the server displaying the result: the input reversed.</li>
   <li><a href="/pro/refactoring-dancer2-using-before-hook">Refactoring Dancer 2 app, using before hook</a></li>
   <li><a href="/pro/silencing-the-dancer-tests">Silencing the noisy Dancer tests</a></li>
-  <li><a href="/pro/add-item-to-mongodb-database">Add and retrieve items - MongoDB, Dancer and Testing!</a></li>
-  <li><a href="/pro/add-and-retreive-items-jquery-ajax">Add and retrieve elements - jQuery + Ajax</a></li>
-  <li><a href="/pro/deleting-item-using-ajax-with-delete-and-options">Deleting item using Ajax request with DELETE and OPTIONS</a></li>
+  <li><a href="/pro/add-item-to-mongodb-database">Add and retrieve items - MongoDB, Dancer and Testing!</a> - The backend part setting up MongoDB, an implementing the back-end part of inserting an item and retrieving a list of items</li>
+  <li><a href="/pro/add-and-retreive-items-jquery-ajax">Add and retrieve elements - jQuery + Ajax</a> - jQuery retrieve list and show list (building HTML using string concatenation). New HTML form, jQuery POST the text of the item</li>
+  <li><a href="/pro/deleting-item-using-ajax-with-delete-and-options">Deleting item using Ajax request with DELETE and OPTIONS</a> - Change the list displayed and include a delete button with each item. When clicked send a DELETE request. Add Access-Control-Allow-Methods header and let the server respond to OPTIONS request to fix the issues.</li>
   <li><a href="/pro/replace-manual-html-generation-by-handlebars">Replace manual HTML generation by the use of Handlebars</a></li>
-  <li><a href="/pro/add-date-to-items-in-mongodb">Add a date stamp to the items in the database and to the HTML</a></li>
+  <li><a href="/pro/add-date-to-items-in-mongodb">Add a date stamp to the items in the database and to the HTML</a> - Add a date stamp to the items in the database. Show the list including the date.</li>
+  <li><a href="/pro/convert-list-to-table-and-jquery-tablesorting-with-date-column">Convert list to table and add jQuery tablesorting with Date column</a> - Let the user sort the data in the browser based on text or based on date.</li>
+
 
 <!--
-* Simple GET request to the same server returning JSON with "hello world" and displaying it
-* Simple GET cross-site set Access-Control-Allow-Origin in the server
-* An HTML form with single input field, sending the value in a GET request to the server displaying the result (the input reversed)
-* skip this: (the backend part setting up MongoDB, an implementing the back-end part of inserting an item and retrieving a list of items)
-* jQuery retreive list and show list (building HTML using string concatenation)
-* new HTML form, jQuery POST the text of the item
-* Change the list displayed and include a delete button with each item. When clicked send a DELETE request
-   Add Access-Control-Allow-Methods header and let the server respond to OPTIONS request to fix the issues.
+* Stop fetching the full list on every action, so when the user adds a new element to the list,
+ let the server only indicate that it stored the new value, but insert the value in the list kept in the client.
+ Same for delete.
+  Implement the idea of updating the list in the client only once, and letting it handle the data itself.
+Then also implement a notification solution so if the data is changed on the server, the client will be notified.
 
 -->
 </ul>
@@ -59,5 +58,3 @@ The beginning of a series of articles about
 <ul>
   <li><a href="/psgi">PSGI</a> - Dancer is a PSGI based web framework. Learning about the lower layer might be useful.</li>
 </ul>
-
-
