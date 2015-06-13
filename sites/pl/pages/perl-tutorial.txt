@@ -9,13 +9,16 @@
 =archive 0
 =comments 0
 
-
-<ul>
 <!--
-  <li><a href=""></a></li>
+<p>
+<b>Wprowadzenie</b>
+<ol>
+<li><a href="/instalacja-perla-i-rozpoczecie-pracy">Instalacja Perla, wyświetlenie Hello World, zabezpieczenia (use strict, use warnings)</a></li>
+</ol>
+</p>
 -->
 
-</ul>
 
-For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
+<hr/>
 
+Wersję oryginalną znajdziesz na <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
