@@ -1,0 +1,11 @@
+=title Perl Maven
+=timestamp 2013-09-02T20:01:04
+=status show
+=show_newsletter_form 0
+=show_date 0
+=author 0
+=archive 0
+=comments 1
+=show_social 0
+
+List of keywords

@@ -1,0 +1,21 @@
+=title Perl Tutorial in LANGUAGE
+=timestamp 2013-09-02T20:01:05
+=status show
+=original perl-tutorial
+=show_newsletter_form 0
+=show_date 0
+=author 0
+=translator 0
+=archive 0
+=comments 0
+
+
+<ul>
+<!--
+  <li><a href=""></a></li>
+-->
+
+</ul>
+
+For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
+
