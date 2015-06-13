@@ -1,0 +1,16 @@
+=title Process CSV file
+=timestamp 2015-06-13T07:02:12
+=indexes CSV
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Process CSV file
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/process-csv-file" />
