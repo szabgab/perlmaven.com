@@ -149,7 +149,7 @@ OTOH if you are opening a file for reading then this is what can happen:
 <code lang="perl">
 my $filename = get_filename_from_user();
 
-open my $in, '<', $filname;
+open my $in, '<', $filename;
 
 open IN, $filename;
 </code>
