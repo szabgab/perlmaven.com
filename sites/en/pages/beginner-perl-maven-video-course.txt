@@ -104,7 +104,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-process-command-line-using-getopt-long-screencast">Processing command line using Getopt::Long (screencast)</a></li>
   <li><a href="/beginner-perl-maven-process-csv-file">Process CSV file</a></li>
   <li><a href="/beginner-perl-maven-process-csv-file-short-version">Process CSV file - short version</a></li>
-  <li><a href="/pro/beginner-perl/oneliner-sum-of-csv">Oneliner - Sum of values in CSV file</a></li>
+  <li><a href="/beginner-perl-maven-oneliner-sum-of-csv">Oneliner - Sum of values in CSV file</a></li>
   <li><a href="/pro/beginner-perl/text-csv-xs">Process CSV file - using Text::CSV_XS</a></li> <!-- move from advanced arrays?  -->
   <li><a href="/pro/beginner-perl/join">Join</a></li>
   <li><a href="/beginner-perl-maven-exercise-improve-the-color-selector">Exercise: improve the color selector</a></li>
