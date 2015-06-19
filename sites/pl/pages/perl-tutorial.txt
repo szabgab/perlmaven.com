@@ -1,11 +1,11 @@
 =title Perl Tutorial in Polish
-=timestamp 2013-09-02T20:01:05
+=timestamp 2015-06-20T20:01:05
 =status show
 =original perl-tutorial
 =show_newsletter_form 0
 =show_date 0
 =author 0
-=translator 0
+=translator rozie
 =archive 0
 =comments 0
 
