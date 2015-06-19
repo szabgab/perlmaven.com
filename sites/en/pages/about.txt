@@ -35,7 +35,7 @@ According to <a href="http://en.wikipedia.org/wiki/Maven">Wikipedia</a>:
 
 <b>A maven is a trusted expert in a particular field, who seeks to pass knowledge on to others.</b>
 
-My hope is that if you follow the articles of this site, read the books an watch the video lectures
+My hope is that if you follow the articles of this site, read the books and watch the video lectures
 you will constantly improve your Perl expertise. Soon you can <b>become a Perl Maven</b>.
 
 The site contains lots of articles available free of charge,
