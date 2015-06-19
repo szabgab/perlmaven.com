@@ -31,7 +31,7 @@ FORMAT
 See  https://github.com/szabgab/Perl-Maven/blob/master/docs/FORMAT.md
 
 
-Add an 128x128 image of you to the sites/en/img/ folder and an entry for yourself
+Add an 128x128 image of you to the static/img/ folder and an entry for yourself
 in the authors.txt file in the root of the repository.
 
 
@@ -129,7 +129,7 @@ Getting started with the translation
   or as                    sites/CC/drafts/TRANSLATED-BUT-TRANSLITERATED-TITLE.txt
   as is acceptable in other sites in your language.
 * Add =original and =translator entries to the translated file
-* Add yourself to the authors.txt file and add a 128x128 picture of yourself to the sites/en/img/ folder.
+* Add yourself to the authors.txt file and add a 128x128 picture of yourself to the static/img/ folder.
 * Please read  option 2 here: http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986
    and add the perlmaven.com site to the list of where you contribute.
 * Update sites/CC/pages/perl-tutorial.txt to include the page in the commented-out section.
