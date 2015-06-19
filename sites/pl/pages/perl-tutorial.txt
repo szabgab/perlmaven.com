@@ -1,4 +1,4 @@
-=title Perl Tutorial in LANGUAGE
+=title Perl Tutorial in Polish
 =timestamp 2013-09-02T20:01:05
 =status show
 =original perl-tutorial
