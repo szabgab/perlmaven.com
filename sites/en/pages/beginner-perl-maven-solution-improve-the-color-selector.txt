@@ -1,0 +1,16 @@
+=title Solution: improve the color selector
+=timestamp 2015-06-20T18:02:44
+=indexes solution
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Solution: improve the color selector
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-improve-the-color-selector" />
