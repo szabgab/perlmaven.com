@@ -207,7 +207,7 @@ sub long_process {
 </code>
 
 There are a couple of changes from the first script besides calling <hl>freeze</hl> before storing the data,
-and calling <hl>thaw</h> in the retrieved data. The <hl>long_process</hl> now generates two random numbers and
+and calling <hl>thaw</hl> in the retrieved data. The <hl>long_process</hl> now generates two random numbers and
 returns a reference to a hash. 
 
 Because I was lazy, we use <a href="https://metacpan.org/pod/Data::Dumper">Data::Dumper</a> to display the data,
