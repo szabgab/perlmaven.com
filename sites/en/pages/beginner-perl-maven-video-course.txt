@@ -110,7 +110,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-exercise-improve-the-color-selector">Exercise: improve the color selector</a></li>
   <li><a href="/beginner-perl-maven-solution-improve-the-color-selector">Solution: improve the color selector</a></li>
   <li><a href="/beginner-perl-maven-solution-improve-the-color-selector-check-input">Solution: improve the color selector - check input</a></li>
-  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-force">Solution: improve the color selector - force</a></li>
+  <li><a href="/beginner-perl-maven-solution-improve-the-color-selector-force">Solution: improve the color selector - force</a></li>
   <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-colors-txt">Solution: improve the color selector - colors.txt</a></li>
   <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-filename">Solution: improve the color selector - --filename</a></li>
   <li><a href="/pro/beginner-perl/exercise-improve-number-guessing-game">Exercise: improve the number guessing game</a></li>
