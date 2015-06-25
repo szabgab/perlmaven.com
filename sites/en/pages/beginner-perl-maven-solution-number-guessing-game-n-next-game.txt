@@ -1,5 +1,5 @@
-=title Solution: number guessing game - d next game
-=timestamp 2015-06-05T10:30:39
+=title Solution: number guessing game - n next game
+=timestamp 2015-06-25T10:30:39
 =indexes solution
 =tags screencast
 =status show
@@ -9,7 +9,7 @@
 
 =abstract start
 
-Solution: number guessing game - d next game
+Solution: number guessing game - n next game
 
 =abstract end
 
