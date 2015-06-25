@@ -118,7 +118,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-solution-number-guessing-game-exit">Solution: improve the number guessing game - exit</a></li>
   <li><a href="/beginner-perl-maven-solution-number-guessing-game-s-show">Solution: improve the number guessing game - s for show</a></li>
   <li><a href="/beginner-perl-maven-solution-number-guessing-game-n-next-game">Solution: improve the number guessing game - n for next game</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-d-debug-toggle">Solution: improve the number guessing game - d for debug mode</a></li>
+  <li><a href="/beginner-perl-maven-solution-number-guessing-game-d-debug-toggle">Solution: improve the number guessing game - d for debug mode</a></li>
   <li><a href="/pro/beginner-perl/solution-number-guessing-game-m-move-toggle">Solution: improve the number guessing game - m for move mode</a></li>
 </ol>
 
