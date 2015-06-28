@@ -1,5 +1,5 @@
 =title Conext sensitivity
-=timestamp 2015-06-28T08o:01:12
+=timestamp 2015-06-28T08:01:12
 =indexes  SCALAR, LIST
 =tags screencast
 =status show
