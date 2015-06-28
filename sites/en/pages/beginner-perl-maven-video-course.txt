@@ -127,7 +127,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-the-year-of-19100">The Year of 19100</a></li>
   <li><a href="/beginner-perl-maven-array-in-context">Array in Context</a></li>
   <li><a href="/beginner-perl-maven-context-sensitivity">Context Sensitivity</a></li>
-  <li><a href="/pro/beginner-perl/filehandle-in-scalar-and-list-context">Filehandle in SCALAR and LIST context</a></li>
+  <li><a href="/beginner-perl-maven-filehandle-in-scalar-and-list-context">Filehandle in SCALAR and LIST context</a></li>
   <li><a href="/pro/beginner-perl/slurp">Slurp</a></li>
   <li><a href="/pro/beginner-perl/pop-and-push">Pop and Push</a></li>
   <li><a href="/pro/beginner-perl/loop-controls-next-last">Loop controls: next and last</a></li>
