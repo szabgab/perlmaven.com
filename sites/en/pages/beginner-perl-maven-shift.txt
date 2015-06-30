@@ -1,0 +1,16 @@
+=title shift
+=timestamp 2015-06-30T23:20:21
+=indexes shift
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+shift
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/shift" />
