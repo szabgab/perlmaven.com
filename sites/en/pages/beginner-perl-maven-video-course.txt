@@ -133,7 +133,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-loop-controls-next-last">Loop controls: next and last</a></li>
   <li><a href="/beginner-perl-maven-shift-and-unshift">shift and unshift</a></li>
   <li><a href="/beginner-perl-maven-shift">shift</a></li>
-  <li><a href="/pro/beginner-perl/reverse">reverse</a></li>
+  <li><a href="/beginner-perl-maven-reverse">reverse</a></li>
   <li><a href="/pro/beginner-perl/sort">sort</a></li>
   <li><a href="/pro/beginner-perl/ternary-operator">Ternary operator</a></li>
   <li><a href="/pro/beginner-perl/count-digits">Count Digits</a></li>
