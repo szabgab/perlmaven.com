@@ -13,4 +13,4 @@ Solution: improve the color selector
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-improve-the-color-selector" />
+<slidecast file="/media/videos/beginner-perl/solution-improve-the-color-selector" youtube="tEbiTj31jLM" />

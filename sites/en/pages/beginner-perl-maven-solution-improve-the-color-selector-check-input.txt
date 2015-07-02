@@ -13,4 +13,4 @@ Solution: improve the color selector
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-improve-the-color-selector-check-input" />
+<slidecast file="/media/videos/beginner-perl/solution-improve-the-color-selector-check-input" youtube="LTUuNtntePI" />

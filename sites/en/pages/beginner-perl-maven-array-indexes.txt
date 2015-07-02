@@ -13,5 +13,5 @@ Array indexes
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/array-indexes" />
+<slidecast file="/media/videos/beginner-perl/array-indexes" youtube="HbgBwnPPxPo" />
 

@@ -13,4 +13,4 @@ Solution: number guessing game - multiple guesses
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-number-guessing-game-multiple-guesses" />
+<slidecast file="/media/videos/beginner-perl/solution-number-guessing-game-multiple-guesses" youtube="GwU7t0J1MJk" />

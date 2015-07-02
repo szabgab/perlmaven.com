@@ -13,4 +13,4 @@ Solution: number guessing game - n next game
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-number-guessing-game-n-next-game" />
+<slidecast file="/media/videos/beginner-perl/solution-number-guessing-game-n-next-game" youtube="sWIa9T4fkEA" />

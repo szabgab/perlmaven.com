@@ -13,4 +13,4 @@ Solution: number guessing game - m move toggle
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-number-guessing-game-m-move-toggle" />
+<slidecast file="/media/videos/beginner-perl/solution-number-guessing-game-m-move-toggle" youtube="qOrlob3LsI0" />

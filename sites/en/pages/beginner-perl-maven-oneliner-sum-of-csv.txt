@@ -13,4 +13,4 @@ One-liner sum of column in CSV
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/oneliner-sum-of-csv" />
+<slidecast file="/media/videos/beginner-perl/oneliner-sum-of-csv" youtube="9E7WzCZ8VME" />

@@ -13,4 +13,4 @@ Solution: number guessing game - d debug toggle
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-number-guessing-game-d-debug-toggle" />
+<slidecast file="/media/videos/beginner-perl/solution-number-guessing-game-d-debug-toggle" youtube="u96yEHssTsE" />
