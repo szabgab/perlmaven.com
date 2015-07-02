@@ -13,6 +13,6 @@ sort
 
 =abstract end
 
-<youtube id="0Bi4bIUiDi0" />
 
-<slidecast file="/media/videos/beginner-perl/sort" />
+<slidecast file="/media/videos/beginner-perl/sort" youtube="0Bi4bIUiDi0" />
+
