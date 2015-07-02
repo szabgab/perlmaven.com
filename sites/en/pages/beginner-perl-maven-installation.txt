@@ -17,7 +17,7 @@ though it was already superseded by <a href="http://dwimperl.com/windows.html">D
 =abstract end
 
 
-<slidecast file="/media/videos/beginner-perl/installation" />
+<slidecast file="/media/videos/beginner-perl/installation" youtube="dskYFZax1Qo" />
 
 <ul>
   <li><a href="http://www.activestate.com/">ActiveState</a></li>
