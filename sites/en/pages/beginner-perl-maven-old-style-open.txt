@@ -13,4 +13,4 @@ old style open
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/old-style-open" />
+<slidecast file="/media/videos/beginner-perl/old-style-open" youtube="v8rwdY-2_J4" />

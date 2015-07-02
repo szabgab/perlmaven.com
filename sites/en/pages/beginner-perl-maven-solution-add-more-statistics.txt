@@ -13,4 +13,4 @@ Solution: add more statistics
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-add-more-statistics" />
+<slidecast file="/media/videos/beginner-perl/solution-add-more-statistics" youtube="3HGuCAk2Vao" />

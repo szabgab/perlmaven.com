@@ -13,4 +13,4 @@ Debug sum numbers
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/debug-sum-numbers" />
+<slidecast file="/media/videos/beginner-perl/debug-sum-numbers" youtube="a0ueopvItko" />

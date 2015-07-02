@@ -13,4 +13,4 @@ Open file all
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/open-file-all" />
+<slidecast file="/media/videos/beginner-perl/open-file-all" youtube="h0NCqCrZTAc" />
