@@ -13,4 +13,4 @@ Count digits
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/count-digits" />
+<slidecast file="/media/videos/beginner-perl/count-digits" youtube="fvYS6kCzSAs" />
