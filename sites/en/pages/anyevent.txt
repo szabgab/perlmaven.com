@@ -18,6 +18,6 @@ about Asynchronous programming using <a href="https://metacpan.org/pod/AnyEvent"
 <ul>
   <li><a href="/simple-way-to-fetch-many-web-pages">A Simple way to download many web pages using Perl</a></li>
   <li><a href="/fetching-several-web-pages-in-parallel-using-anyevent">Fetching several web pages in parallel using AnyEvent</a></li>
-  <li><a href="/pro/asynchronous-web-server-with-psgi-and-twiggy">Asynchronous web application with PSGI and Twiggy</a></li>
+  <li><a href="/asynchronous-web-server-with-psgi-and-twiggy">Asynchronous web application with PSGI and Twiggy</a></li>
 </ul>
 
