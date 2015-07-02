@@ -13,4 +13,4 @@ The ternary operator
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/ternary-operator" />
+<slidecast file="/media/videos/beginner-perl/ternary-operator" youtube="Mym791AmBgc" />
