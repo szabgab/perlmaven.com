@@ -1,5 +1,5 @@
 =title The Ternary operator
-=timestamp 2015-06-02T10:53:12
+=timestamp 2015-07-02T10:53:12
 =indexes ?:
 =tags screencast
 =status show
