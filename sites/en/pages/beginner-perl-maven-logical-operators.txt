@@ -13,4 +13,4 @@ Logical Operators
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/logical-operators" />
+<slidecast file="/media/videos/beginner-perl/logical-operators" youtube="fuk9gedIlWI" />

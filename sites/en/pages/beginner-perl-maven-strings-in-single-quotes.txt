@@ -13,4 +13,4 @@ strings in single quotes
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/strings-in-single-quotes" />
+<slidecast file="/media/videos/beginner-perl/strings-in-single-quotes" youtube="mTbEv5KWBjc" />

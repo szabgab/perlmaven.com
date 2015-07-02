@@ -13,4 +13,4 @@ rand and int
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/rand-and-int" />
+<slidecast file="/media/videos/beginner-perl/rand-and-int" youtube="AzjdK4N3f5s" />

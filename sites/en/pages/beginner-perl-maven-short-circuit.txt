@@ -13,4 +13,4 @@ Short Circuit
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/short-circuit" />
+<slidecast file="/media/videos/beginner-perl/short-circuit" youtube="A_DT25jszDo" />

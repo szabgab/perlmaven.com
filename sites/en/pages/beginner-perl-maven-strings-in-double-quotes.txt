@@ -13,4 +13,4 @@ strings in double quotes
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/strings-in-double-quotes" />
+<slidecast file="/media/videos/beginner-perl/strings-in-double-quotes" youtube="HTsitWJrqCY" />
