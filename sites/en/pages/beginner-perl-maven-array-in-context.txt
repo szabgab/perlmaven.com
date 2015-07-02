@@ -13,5 +13,5 @@ array in context
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/array-in-context" />
+<slidecast file="/media/videos/beginner-perl/array-in-context" youtube="RQ-lbpGo4r8" />
 

@@ -13,4 +13,4 @@ Filehandle in SCALAR and LIST context
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/filehandle-in-scalar-and-list-context" />
+<slidecast file="/media/videos/beginner-perl/filehandle-in-scalar-and-list-context" youtube="PRp2yTNWHlA" />
