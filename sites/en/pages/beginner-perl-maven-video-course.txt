@@ -138,7 +138,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-ternary-operator">Ternary operator</a></li>
   <li><a href="/beginner-perl-maven-count-digits">Count Digits</a></li>
   <li><a href="/beginner-perl-maven-exercise-display-unique-rows-of-a-file">Exercise: Display unique rows of a file</a></li>
-  <li><a href="/pro/beginner-perl/exercise-sort-mixed-string">Exercise: sort mixed string</a></li>
+  <li><a href="/beginner-perl-maven-exercise-sort-mixed-string">Exercise: sort mixed string</a></li>
 </ol>
 
 <h3>6. Functions and Subroutines</h3>
