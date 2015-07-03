@@ -1,7 +1,6 @@
 =title Exercise: sort mixed string
 =timestamp 2015-07-03T07:01:40
 =indexes exercise
-=tags screencast
 =status show
 =books beginner_video
 =author szabgab
