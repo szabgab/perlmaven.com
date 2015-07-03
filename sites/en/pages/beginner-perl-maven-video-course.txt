@@ -145,7 +145,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 <ol>
   <li><a href="/beginner-perl-maven-functions-and-subroutines">Functions and Subroutines</a></li>
   <li><a href="/beginner-perl-maven-defining-subroutines">Defining Subroutines</a></li>
-  <li><a href="/pro/beginner-perl/exercise-number-guessing-in-sub">Exercise: Number guessing in sub</a></li>
+  <li><a href="/beginner-perl-maven-exercise-number-guessing-in-sub">Exercise: Number guessing in sub</a></li>
 </ol>
 
 
