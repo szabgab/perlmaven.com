@@ -9,6 +9,7 @@
 =archive 0
 =comments_disqus_enable 0
 
+<!--
 <p>
 <b>Wprowadzenie</b>
 <ol>
