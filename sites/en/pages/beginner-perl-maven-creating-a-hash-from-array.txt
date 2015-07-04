@@ -1,0 +1,16 @@
+=title Creating a hash from an array
+=timestamp 2015-07-04T12:01:15
+=indexes %
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Creating a hash from an array
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/creating-a-hash-from-array" />
