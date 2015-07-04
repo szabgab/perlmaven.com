@@ -13,4 +13,4 @@ A hash and its uses
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/a-hash-and-its-uses" />
+<slidecast file="/media/videos/beginner-perl/a-hash-and-its-uses" youtube="jW8HU8DufYo" />
