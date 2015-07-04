@@ -2,6 +2,7 @@
 =timestamp 2014-02-25T09:00:01
 =indexes sites, links, help
 =status show
+=books beginner
 =author szabgab
 =comments_disqus_enable 1
 =translator rozie
