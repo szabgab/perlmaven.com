@@ -155,7 +155,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-creating-a-hash">Creating a hash</a></li>
   <li><a href="/beginner-perl-maven-creating-a-hash-from-array">Creating a hash from an array</a></li>
   <li><a href="/beginner-perl-maven-hash-in-scalar-context">Hash in scalar context</a></li>
-  <li><a href="/pro/beginner-perl/fetching-data-from-hash">Fetching data from hash</a></li>
+  <li><a href="/beginner-perl-maven-fetching-data-from-hash">Fetching data from hash</a></li>
   <li><a href="/pro/beginner-perl/exists-delete-hash">Exists and Delete in hash</a></li>
   <li><a href="/pro/beginner-perl/counting-words-in-a-file">Counting words in a file</a></li>
   <li><a href="/pro/beginner-perl/dumping-hash">Dumping hash</a></li>
