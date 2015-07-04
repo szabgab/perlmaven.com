@@ -151,7 +151,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 
 <h3>7. Hashes</h3>
 <ol>
-  <li><a href="/pro/beginner-perl/a-hash-and-its-uses">A hash and its uses</a></li>
+  <li><a href="/beginner-perl-maven-a-hash-and-its-uses">A hash and its uses</a></li>
   <li><a href="/pro/beginner-perl/creating-a-hash">Creating a hash</a></li>
   <li><a href="/pro/beginner-perl/creating-a-hash-from-array">Creating a hash from an array</a></li>
   <li><a href="/pro/beginner-perl/hash-in-scalar-context">Hash in scalar context</a></li>
