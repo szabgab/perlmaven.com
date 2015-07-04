@@ -13,4 +13,4 @@ Fetching data from a hash
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/fetching-data-from-hash" />
+<slidecast file="/media/videos/beginner-perl/fetching-data-from-hash" youtube="zYrx5aNJqok" />
