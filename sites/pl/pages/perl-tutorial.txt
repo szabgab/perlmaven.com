@@ -9,7 +9,6 @@
 =archive 0
 =comments 0
 
-<!--
 <p>
 <b>Wprowadzenie</b>
 <ol>
