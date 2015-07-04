@@ -13,4 +13,4 @@ Creating a hash
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/creating-a-hash" />
+<slidecast file="/media/videos/beginner-perl/creating-a-hash" youtube="mSaC6s7r7ZA" />

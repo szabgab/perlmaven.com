@@ -13,4 +13,4 @@ Creating a hash from an array
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/creating-a-hash-from-array" />
+<slidecast file="/media/videos/beginner-perl/creating-a-hash-from-array" youtube="Dxu6RfRVfbc" />
