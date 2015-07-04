@@ -60,3 +60,12 @@ Na <a href="http://www.irc.perl.org/">perl.irc.org</a> jest wiele kanałów zwi�
 kanałęm do pomocy ludziom. W tym celu lepiej udaj się na kanał #perl na irc.freenode.net.
 
 W każdym razie, ostrzegam, że niektóre kanały mogą niekiedy być szorstkie.
+
+<h2>Po polsku</h2>
+
+Grupy Perl Mongers istnieją także w Polsce. Nie wszystkie są bardzo aktywne, ale jeśli koniecznie potrzebujesz pomocy po polsku,
+możesz próbować się z nimi kontaktować. W tym miejscu znajdziesz <a href="http://www.pm.org/groups/poland.html">listę polskich grup Perl Mongers</a>.
+Sposoby kontaktu podane są na stronach poszczególnych grup.
+
+Jeśli szukasz podstawowej pomocy związanej z Perlem, zwłaszcza w środowisku Linux, możesz spróbować zadać pytanie na kanale #debian.pl w sieci IRCnet.
+Jest tam paru administratorów, którym Perl nie jest obcy.
