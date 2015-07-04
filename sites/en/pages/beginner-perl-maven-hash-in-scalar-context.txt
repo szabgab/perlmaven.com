@@ -13,4 +13,4 @@ A hash in SCALAR context
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/hash-in-scalar-context" />
+<slidecast file="/media/videos/beginner-perl/hash-in-scalar-context" youtube="Rlqh_vygzEU" />
