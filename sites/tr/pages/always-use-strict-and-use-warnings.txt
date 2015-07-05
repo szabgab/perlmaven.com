@@ -1,4 +1,4 @@
-=title Always use strict and use warnings in your perl code!
+=title Perl kodunuzda her zaman use strict ve use warnings kullanın!
 =timestamp 2015-07-05T17:00:01
 =indexes strict, warnings
 =status show
