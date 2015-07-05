@@ -13,4 +13,4 @@ Dumping a hash
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/dumping-hash" />
+<slidecast file="/media/videos/beginner-perl/dumping-hash" youtube="VZ_SoKjPpCc" />
