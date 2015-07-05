@@ -25,7 +25,7 @@ Możesz też obejrzeć video o <a href="/beginner-perl-maven-editors">edytorach 
 Do programowania w Perlu możesz korzystać zarówno ze zwykłych edytorów tekstu jak i z
 <b>Zintegrowanych Środowisk Programistycznych</b>, zwanych inaczej IDE.
 
-Najpierw opiszę edytory na głównch platformach z których możesz korzystać,
+Najpierw opiszę edytory na głównych platformach z których możesz korzystać,
 następnie IDE, które są zwykle niezależne od platformy.
 
 <h2>Unix / Linux</h2>
@@ -54,8 +54,6 @@ Choć natywnie pochodzą z Uniksa/Linuksa, zarówno
 <h2>Edytory Perla dla Windows</h2>
 
 Na Windows, wielu ludzi używa tak zwanych "edytorów Programistycznych
-
-On Windows, many people are using the so-called "programmer's editors".
 
 <ul>
 <li><a href="http://www.ultraedit.com/">Ultra Edit</a> jest edytorem płatnym.</li>
