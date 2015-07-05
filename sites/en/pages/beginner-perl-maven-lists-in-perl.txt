@@ -13,4 +13,4 @@ Lists in Perl
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/lists-in-perl" />
+<slidecast file="/media/videos/beginner-perl/lists-in-perl" youtube="0b9AFsbWLT0" />

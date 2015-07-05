@@ -13,4 +13,4 @@ Looks like number
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/looks-like-number" />
+<slidecast file="/media/videos/beginner-perl/looks-like-number" youtube="hQrc2Eq9BNw" />

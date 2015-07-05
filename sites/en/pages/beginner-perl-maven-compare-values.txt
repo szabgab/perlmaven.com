@@ -13,4 +13,4 @@ Compare values. See also the article <a href="/comparing-scalars-in-perl">compar
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/compare-values" />
+<slidecast file="/media/videos/beginner-perl/compare-values" youtube="wglfrnlB9bk" />

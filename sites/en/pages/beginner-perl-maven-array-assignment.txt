@@ -13,5 +13,5 @@ Array assignment
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/array-assignment" />
+<slidecast file="/media/videos/beginner-perl/array-assignment" youtube="odFAkM7fxGU" />
 

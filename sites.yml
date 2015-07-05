@@ -42,6 +42,10 @@ ko:
   url: http://ko.perlmaven.com/
   english: Korean
   name: 한국어
+pl:
+  url: http://pl.perlmaven.com/
+  english: Rolish
+  name: Polish
 ro:
   url: http://ro.perlmaven.com/
   english: Romanian

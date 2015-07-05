@@ -1,8 +1,7 @@
 =title Jak otrzymać pomoc dotyczącą Perla?
-=timestamp 2014-02-25T09:00:01
+=timestamp 2015-07-03T22:00:01
 =indexes sites, links, help
 =status show
-=books beginner
 =author szabgab
 =comments_disqus_enable 1
 =translator rozie
@@ -70,3 +69,4 @@ Sposoby kontaktu podane są na stronach poszczególnych grup.
 
 Jeśli szukasz podstawowej pomocy związanej z Perlem, zwłaszcza w środowisku Linux, możesz spróbować zadać pytanie na kanale #debian.pl w sieci IRCnet.
 Jest tam paru administratorów, którym Perl nie jest obcy.
+

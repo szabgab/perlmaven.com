@@ -103,60 +103,60 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-process-command-line-using-getopt-long">Processing command line using Getopt::Long</a></li>
   <li><a href="/beginner-perl-maven-process-command-line-using-getopt-long-screencast">Processing command line using Getopt::Long (screencast)</a></li>
   <li><a href="/beginner-perl-maven-process-csv-file">Process CSV file</a></li>
-  <li><a href="/pro/beginner-perl/process-csv-file-short-version">Process CSV file - short version</a></li>
-  <li><a href="/pro/beginner-perl/oneliner-sum-of-csv">Oneliner - Sum of values in CSV file</a></li>
-  <li><a href="/pro/beginner-perl/text-csv-xs">Process CSV file - using Text::CSV_XS</a></li> <!-- move from advanced arrays?  -->
-  <li><a href="/pro/beginner-perl/join">Join</a></li>
+  <li><a href="/beginner-perl-maven-process-csv-file-short-version">Process CSV file - short version</a></li>
+  <li><a href="/beginner-perl-maven-oneliner-sum-of-csv">One-liner - Sum of values in CSV file</a></li>
+  <li><a href="/beginner-perl-maven-text-csv-xs">Process CSV file - using Text::CSV_XS</a></li> <!-- move from advanced arrays?  -->
+  <li><a href="/beginner-perl-maven-join">Join</a></li>
   <li><a href="/beginner-perl-maven-exercise-improve-the-color-selector">Exercise: improve the color selector</a></li>
-  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector">Solution: improve the color selector</a></li>
-  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-check-input">Solution: improve the color selector - check input</a></li>
-  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-force">Solution: improve the color selector - force</a></li>
-  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-colors-txt">Solution: improve the color selector - colors.txt</a></li>
-  <li><a href="/pro/beginner-perl/solution-improve-the-color-selector-filename">Solution: improve the color selector - --filename</a></li>
-  <li><a href="/pro/beginner-perl/exercise-improve-number-guessing-game">Exercise: improve the number guessing game</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-multiple-guesses">Solution: improve the number guessing game - multiple guesses</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-exit">Solution: improve the number guessing game - exit</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-s-show">Solution: improve the number guessing game - s for show</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-n-next-game">Solution: improve the number guessing game - n for next game</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-d-debug-toggle">Solution: improve the number guessing game - d for debug mode</a></li>
-  <li><a href="/pro/beginner-perl/solution-number-guessing-game-m-move-toggle">Solution: improve the number guessing game - m for move mode</a></li>
+  <li><a href="/beginner-perl-maven-solution-improve-the-color-selector">Solution: improve the color selector</a></li>
+  <li><a href="/beginner-perl-maven-solution-improve-the-color-selector-check-input">Solution: improve the color selector - check input</a></li>
+  <li><a href="/beginner-perl-maven-solution-improve-the-color-selector-force">Solution: improve the color selector - force</a></li>
+  <li><a href="/beginner-perl-maven-solution-improve-the-color-selector-colors-txt">Solution: improve the color selector - colors.txt</a></li>
+  <li><a href="/beginner-perl-maven-solution-improve-the-color-selector-filename">Solution: improve the color selector - --filename</a></li>
+  <li><a href="/beginner-perl-maven-exercise-improve-number-guessing-game">Exercise: improve the number guessing game</a></li>
+  <li><a href="/beginner-perl-maven-solution-number-guessing-game-multiple-guesses">Solution: improve the number guessing game - multiple guesses</a></li>
+  <li><a href="/beginner-perl-maven-solution-number-guessing-game-exit">Solution: improve the number guessing game - exit</a></li>
+  <li><a href="/beginner-perl-maven-solution-number-guessing-game-s-show">Solution: improve the number guessing game - s for show</a></li>
+  <li><a href="/beginner-perl-maven-solution-number-guessing-game-n-next-game">Solution: improve the number guessing game - n for next game</a></li>
+  <li><a href="/beginner-perl-maven-solution-number-guessing-game-d-debug-toggle">Solution: improve the number guessing game - d for debug mode</a></li>
+  <li><a href="/beginner-perl-maven-solution-number-guessing-game-m-move-toggle">Solution: improve the number guessing game - m for move mode</a></li>
 </ol>
 
 <h3>5. Advanced Arrays</h3>
 <ol>
-  <li><a href="/pro/beginner-perl/the-year-of-19100">The Year of 19100</a></li>
-  <li><a href="/pro/beginner-perl/array-in-context">Array in Context</a></li>
-  <li><a href="/pro/beginner-perl/context-sensitivity">Context Sensitivity</a></li>
-  <li><a href="/pro/beginner-perl/filehandle-in-scalar-and-list-context">Filehandle in SCALAR and LIST context</a></li>
-  <li><a href="/pro/beginner-perl/slurp">Slurp</a></li>
-  <li><a href="/pro/beginner-perl/pop-and-push">Pop and Push</a></li>
-  <li><a href="/pro/beginner-perl/loop-controls-next-last">Loop controls: next and last</a></li>
-  <li><a href="/pro/beginner-perl/shift-and-unshift">shift and unshift</a></li>
-  <li><a href="/pro/beginner-perl/shift">shift</a></li>
-  <li><a href="/pro/beginner-perl/reverse">reverse</a></li>
-  <li><a href="/pro/beginner-perl/sort">sort</a></li>
-  <li><a href="/pro/beginner-perl/ternary-operator">Ternary operator</a></li>
-  <li><a href="/pro/beginner-perl/count-digits">Count Digits</a></li>
-  <li><a href="/pro/beginner-perl/exercise-display-unique-rows-of-a-file">Exercise: Display unique rows of a file</a></li>
-  <li><a href="/pro/beginner-perl/exercise-sort-mixed-string">Exercise: sort mixed string</a></li>
+  <li><a href="/beginner-perl-maven-the-year-of-19100">The Year of 19100</a></li>
+  <li><a href="/beginner-perl-maven-array-in-context">Array in Context</a></li>
+  <li><a href="/beginner-perl-maven-context-sensitivity">Context Sensitivity</a></li>
+  <li><a href="/beginner-perl-maven-filehandle-in-scalar-and-list-context">Filehandle in SCALAR and LIST context</a></li>
+  <li><a href="/beginner-perl-maven-slurp">Slurp</a></li>
+  <li><a href="/beginner-perl-maven-pop-and-push">Pop and Push</a></li>
+  <li><a href="/beginner-perl-maven-loop-controls-next-last">Loop controls: next and last</a></li>
+  <li><a href="/beginner-perl-maven-shift-and-unshift">shift and unshift</a></li>
+  <li><a href="/beginner-perl-maven-shift">shift</a></li>
+  <li><a href="/beginner-perl-maven-reverse">reverse</a></li>
+  <li><a href="/beginner-perl-maven-sort">sort</a></li>
+  <li><a href="/beginner-perl-maven-ternary-operator">Ternary operator</a></li>
+  <li><a href="/beginner-perl-maven-count-digits">Count Digits</a></li>
+  <li><a href="/beginner-perl-maven-exercise-display-unique-rows-of-a-file">Exercise: Display unique rows of a file</a></li>
+  <li><a href="/beginner-perl-maven-exercise-sort-mixed-string">Exercise: sort mixed string</a></li>
 </ol>
 
 <h3>6. Functions and Subroutines</h3>
 <ol>
-  <li><a href="/pro/beginner-perl/functions-and-subroutines">Functions and Subroutines</a></li>
-  <li><a href="/pro/beginner-perl/defining-subroutines">Defining Subroutines</a></li>
-  <li><a href="/pro/beginner-perl/exercise-number-guessing-in-sub">Exercise: Number guessing in sub</a></li>
+  <li><a href="/beginner-perl-maven-functions-and-subroutines">Functions and Subroutines</a></li>
+  <li><a href="/beginner-perl-maven-defining-subroutines">Defining Subroutines</a></li>
+  <li><a href="/beginner-perl-maven-exercise-number-guessing-in-sub">Exercise: Number guessing in sub</a></li>
 </ol>
 
 
 <h3>7. Hashes</h3>
 <ol>
-  <li><a href="/pro/beginner-perl/a-hash-and-its-uses">A hash and its uses</a></li>
-  <li><a href="/pro/beginner-perl/creating-a-hash">Creating a hash</a></li>
-  <li><a href="/pro/beginner-perl/creating-a-hash-from-array">Creating a hash from an array</a></li>
-  <li><a href="/pro/beginner-perl/hash-in-scalar-context">Hash in scalar context</a></li>
-  <li><a href="/pro/beginner-perl/fetching-data-from-hash">Fetching data from hash</a></li>
-  <li><a href="/pro/beginner-perl/exists-delete-hash">Exists and Delete in hash</a></li>
+  <li><a href="/beginner-perl-maven-a-hash-and-its-uses">A hash and its uses</a></li>
+  <li><a href="/beginner-perl-maven-creating-a-hash">Creating a hash</a></li>
+  <li><a href="/beginner-perl-maven-creating-a-hash-from-array">Creating a hash from an array</a></li>
+  <li><a href="/beginner-perl-maven-hash-in-scalar-context">Hash in scalar context</a></li>
+  <li><a href="/beginner-perl-maven-fetching-data-from-hash">Fetching data from hash</a></li>
+  <li><a href="/beginner-perl-maven-exists-delete-hash">Exists and Delete in hash</a></li>
   <li><a href="/pro/beginner-perl/counting-words-in-a-file">Counting words in a file</a></li>
   <li><a href="/pro/beginner-perl/dumping-hash">Dumping hash</a></li>
   <li><a href="/pro/beginner-perl/exercise-parse-http-values">Exercise: parse HTTP values</a></li>

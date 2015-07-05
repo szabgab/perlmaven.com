@@ -1,0 +1,16 @@
+=title The Ternary operator
+=timestamp 2015-07-02T10:53:12
+=indexes ?:
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+The ternary operator
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/ternary-operator" youtube="Mym791AmBgc" />

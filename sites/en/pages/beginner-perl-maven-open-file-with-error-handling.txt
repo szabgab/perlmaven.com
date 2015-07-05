@@ -13,4 +13,4 @@ Open file with error handling
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/open-file-with-error-handling" />
+<slidecast file="/media/videos/beginner-perl/open-file-with-error-handling" youtube="9-7cSUxRxCw" />

@@ -13,4 +13,4 @@ Sum numbers in a file
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/sum-numbers-in-a-file" />
+<slidecast file="/media/videos/beginner-perl/sum-numbers-in-a-file" youtube="77MUdZp4FBc" />

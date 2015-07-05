@@ -1,0 +1,16 @@
+=title Defining subroutines
+=timestamp 2015-07-03T08:01:20
+=indexes sub
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Defining subroutines
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/defining-subroutines" youtube="2Mw8wASh31I" />

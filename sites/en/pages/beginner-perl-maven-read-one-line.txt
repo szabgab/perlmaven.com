@@ -13,4 +13,4 @@ read one line
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/read-one-line" />
+<slidecast file="/media/videos/beginner-perl/read-one-line" youtube="6A8XoUFyvak" />

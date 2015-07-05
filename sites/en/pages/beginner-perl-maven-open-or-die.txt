@@ -13,4 +13,4 @@ Open or die
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/open-or-die" />
+<slidecast file="/media/videos/beginner-perl/open-or-die" youtube="rrmToaZk0X0" />

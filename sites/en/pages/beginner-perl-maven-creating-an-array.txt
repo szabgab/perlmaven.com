@@ -13,4 +13,4 @@ Creating an array
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/creating-an-array" />
+<slidecast file="/media/videos/beginner-perl/creating-an-array" youtube="Mg44tP6eRek" />

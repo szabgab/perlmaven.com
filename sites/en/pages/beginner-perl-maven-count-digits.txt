@@ -1,0 +1,16 @@
+=title Count digits
+=timestamp 2015-07-02T13:01:13
+=indexes  $count[$c]++
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Count digits
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/count-digits" youtube="fvYS6kCzSAs" />

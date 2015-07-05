@@ -13,4 +13,4 @@ foreach loop over list
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/foreach-loop-over-list" />
+<slidecast file="/media/videos/beginner-perl/foreach-loop-over-list" youtube="ufchnxq9ks8" />

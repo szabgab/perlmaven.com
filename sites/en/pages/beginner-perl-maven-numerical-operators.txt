@@ -13,4 +13,4 @@ Numerical Operators
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/numerical-operators" />
+<slidecast file="/media/videos/beginner-perl/numerical-operators" youtube="wVlaBq73jT0" />

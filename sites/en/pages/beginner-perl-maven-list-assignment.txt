@@ -13,4 +13,4 @@ List assignment
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/list-assignment" />
+<slidecast file="/media/videos/beginner-perl/list-assignment" youtube="HG6_hj3BJGI" />

@@ -13,7 +13,7 @@ Errors and warnings while correct, they are not always that useful for beginners
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/common-errors" />
+<slidecast file="/media/videos/beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
 
 A much longer list of <a href="/common-warnings-and-error-messages">common warnings and errors</a>
 with detailed explanations.

@@ -1,0 +1,16 @@
+=title Solution: improve the color selector - colors.txt
+=timestamp 2015-06-23T05:03:01
+=indexes solution
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Solution: improve the color selector
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-improve-the-color-selector-colors-txt" youtube="TZRGOcBTCjA" />
