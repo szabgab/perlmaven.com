@@ -42,10 +42,6 @@ Istnieje wiele <a href="http://lists.perl.org/">tematycznych list mailowych</a> 
 jeśli nie używałeś Perla zbyt wiele, prawdopodobnie chcesz się zapisać na listę mailową <a href="http://lists.perl.org/list/beginners.html">dla początkujących w perlu</a> i
 tam zadawać pytania.
 
-There are lots of <a href="http://lists.perl.org/">topic specific mailing list</a> for Perl, but if you are a beginner, or
-if you have not used Perl a lot, you probably want to sign up to the <a href="http://lists.perl.org/list/beginners.html">perl beginners</a> mailing list,
-and ask there.
-
 Alternatywnie, często jest o wiele łatwiej pytać ludzi mówiących w Twoim języku albo po prostu żyjących w pobliżu. Sprawdź na 
 <a href="http://www.pm.org/">Perl Mongers</a> czy jest w pobliżu jakaś grupa Perl Monger, albo taka, która używa Twojego języka.
 Zwykle mają listy mailowe lub podobne środki komunikacji.
@@ -57,7 +53,7 @@ Strona learn.perl.org ma nieco informacji w swoim <a href="http://learn.perl.org
 
 <h2>IRC</h2>
 Na <a href="http://www.irc.perl.org/">perl.irc.org</a> jest wiele kanałów związanych z Perlem, ale zwłaszcza ten o nazwie #Perl <b>nie</b> jest
-kanałęm do pomocy ludziom. W tym celu lepiej udaj się na kanał #perl na irc.freenode.net.
+kanałem do pomocy ludziom. W tym celu lepiej udaj się na kanał #perl na irc.freenode.net.
 
 W każdym razie, ostrzegam, że niektóre kanały mogą niekiedy być szorstkie.
 
