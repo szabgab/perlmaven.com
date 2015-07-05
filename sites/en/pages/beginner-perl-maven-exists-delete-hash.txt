@@ -13,4 +13,4 @@ exists, delete in hash
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exists-delete-hash" />
+<slidecast file="/media/videos/beginner-perl/exists-delete-hash" youtube="sZ4w_V-L818" />
