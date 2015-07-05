@@ -23,7 +23,7 @@ Zobaczymy także standardowy przykład "Hello World".
 
 =abstract end
 
-Możesz takze <a href="http://perlmaven.com/beginner-perl-maven-installation">obejrzeć odpowiednie video</a>.
+Możesz także <a href="http://perlmaven.com/beginner-perl-maven-installation">obejrzeć odpowiednie video</a>.
 
 <h2>Windows</h2>
 
@@ -210,8 +210,6 @@ Wpisz powyższe i uruchom poprzez naciśnięcie F5.
 
 Zapyta Cię o Twoje imię. Wpisz swoje imię i naciśnij ENTER aby dać perlowi znać
 że skończyłeś wpisywanie swojego imienia.
-
-Type in the above and run it by pressing F5.
 
 Zauważysz, że wynik jest nieco zepsuty: przecinek po imieniu pojawia się w nowym wierszu.
 Dzieje się tak ponieważ ENTER, który nacisnąłeś, gdy wpisywałeś swoje imię,
