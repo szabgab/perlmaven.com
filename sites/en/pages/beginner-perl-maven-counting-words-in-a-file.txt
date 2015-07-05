@@ -1,0 +1,16 @@
+=title Counting words in a file
+=timestamp 2015-07-05T13:01:14
+=indexes $count{$word}++
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Counting words in a file
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/counting-words-in-a-file" />
