@@ -13,4 +13,4 @@ Counting words in a file
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/counting-words-in-a-file" />
+<slidecast file="/media/videos/beginner-perl/counting-words-in-a-file" youtube="6e6zyIIsAoo" />
