@@ -54,19 +54,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 
 <b>Escalares</b>
 <ol>
-<li>Mensajes de error y advertencia comunes<br />
-  <ul>
-    <li><a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name (en)</a></li>
-    <li><a href="http://perlmaven.com/use-of-uninitialized-value">Uso de valores no inicializados (en)</a></li>
-    <li><a href="http://perlmaven.com/barewords-in-perl">Bareword not allowed while "strict subs" in use (en)</a></li>
-    <li><a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ... (en)</a></li>
-    <li><a href="http://perlmaven.com/unknown-warnings-category">Unknown warnings category (en)</a></li>
-    <li><a href="http://perlmaven.com/scalar-found-where-operator-expected">Scalar found where operator expected (en)</a></li>
-    <li><a href="http://perlmaven.com/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope (en)</a></li>
-    <li><a href="http://perlmaven.com/cant-call-method-on-unblessed-reference">Can't call method ... on unblessed reference (en)</a></li>
-    <li><a href="http://perlmaven.com/argument-isnt-numeric-in-numeric">Argument ... isn't numeric in numeric ... (en)</a></li>
-  </ul>
-</li>
+<li><a href="/errores-y-warnings-comunes">Errores y warnings tipicos en Perl</a></li>
 <li><a href="/conversion-automatica-de-valores-en-perl">Conversión automática de texto a número</a></li>
 <li>Sentencias condicionales: if</li>
 <li><a href="/valores-booleanos-en-perl">Valores booleanos en Perl</a></li>
@@ -74,7 +62,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li><a href="/operadores-string">Operadores para strings: concatenación (.) y repetición (x)</a></li>
 <li><a href="/undef-y-defined-en-perl">undef, el valor inicial y la función defined</a></li>
 <li><a href="/strings-entrecomillados-interpolados-y-escapados-en-perl">Strings en Perl: entrecomillado, interpolación y secuencias de escape</a></li>
-<li><a href="http://perlmaven.com/here-documents">Here documents (en)</a></li>
+<li><a href="/here-documents">Here documents</a></li>
 <li><a href="http://perlmaven.com/scalar-variables">Variables escalares (en)</a></li>
 <li><a href="http://perlmaven.com/comparing-scalars-in-perl">Comparando escalares (en)</a></li>
 <li><a href="http://perlmaven.com/string-functions-length-lc-uc-index-substr">Funciones para tratar Strings: length, lc, uc, index, substr (en)</a></li>
@@ -194,6 +182,24 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li><a href="http://perlmaven.com/simple-database-access-using-perl-dbi-and-sql">Acceso a base de datos usando Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC) (en)</a></li>
 <li>Accediendo a LDAP usando Perl</li>
 </ol>
+<li>Mensajes de error y warnings comunes<br />
+  <ol>
+    <li><a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name (en)</a></li>
+    <li><a href="http://perlmaven.com/use-of-uninitialized-value">Uso de valores no inicializados (en)</a></li>
+    <li><a href="http://perlmaven.com/barewords-in-perl">Bareword not allowed while "strict subs" in use (en)</a></li>
+    <li><a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ... (en)</a></li>
+    <li><a href="http://perlmaven.com/unknown-warnings-category">Unknown warnings category (en)</a></li>
+    <li><a href="http://perlmaven.com/cant-locate-in-inc">Can't locate ... in @INC (en)</a></li>
+    <li><a href="http://perlmaven.com/scalar-found-where-operator-expected">Scalar found where operator expected (en)</a></li>
+    <li><a href="http://perlmaven.com/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope (en)</a></li>
+    <li><a href="http://perlmaven.com/cant-call-method-on-unblessed-reference">Can't call method ... on unblessed reference (en)</a></li>
+    <li><a href="http://perlmaven.com/argument-isnt-numeric-in-numeric">Argument ... isn't numeric in numeric ... (en)</a></li>
+    <li><a href="http://perlmaven.com/cant-locate-object-method-via-package-1">Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?) (en)</a></li>
+    <li><a href="http://perlmaven.com/creating-hash-from-an-array">Odd number of elements in hash assignment (en)</a></li>
+    <li><a href="http://perlmaven.com/qw-quote-word">Possible attempt to separate words with commas (en)</a></li>
+    <li><a href="http://perlmaven.com/pro/autoload">Undefined subroutine ... called (en)</a></li>
+  </ol>
+</li>
 
 <b>Other</b>
 <ol>
