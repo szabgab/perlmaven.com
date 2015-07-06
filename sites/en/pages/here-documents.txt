@@ -67,8 +67,7 @@ END_MESSAGE
 </code>
 
 It works and it behaves the same as if you put double-quotes around the END_MESSAGE like in the next example,
-but it is <b>deprecated</b> and will be removed from 5.20. Do <b>not</b> use it! Do not use here-document
-without quotes around the definition of the end-string.
+but it is less clear. I'd recommend you do not use here-document without quotes around the definition of the end-string.
 
 <code lang="perl">
 my $message = <<"END_MESSAGE";
