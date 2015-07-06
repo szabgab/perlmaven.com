@@ -160,7 +160,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-counting-words-in-a-file">Counting words in a file</a></li>
   <li><a href="/beginner-perl-maven-dumping-hash">Dumping hash</a></li>
   <li><a href="/beginner-perl-maven-exercise-parse-http-values">Exercise: parse HTTP values</a></li>
-  <li><a href="/pro/beginner-perl/solution-parse-http-values">Solution: parse HTTP values</a></li>
+  <li><a href="/beginner-perl-maven-solution-parse-http-values">Solution: parse HTTP values</a></li>
   <li><a href="/pro/beginner-perl/exercise-improve-color-selector">Exercise: Improve color selector</a></li>
   <li><a href="/pro/beginner-perl/solution-improve-color-selector">Solution: Improve color selector</a></li>
   <li><a href="/pro/beginner-perl/exercise-sort-scores">Exercise: Sort scores</a></li>
