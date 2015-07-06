@@ -1,0 +1,16 @@
+=title Exercise: parse HTTP values
+=timestamp 2015-07-06T11:01:37
+=indexes %
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Exercise: parse HTTP values
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/exercise-parse-http-values" />
