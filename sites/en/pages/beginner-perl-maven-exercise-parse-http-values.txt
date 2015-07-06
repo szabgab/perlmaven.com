@@ -13,4 +13,4 @@ Exercise: parse HTTP values
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-parse-http-values" />
+<slidecast file="/media/videos/beginner-perl/exercise-parse-http-values" youtube="Rm9D0w32e4Q" />
