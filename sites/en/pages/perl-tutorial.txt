@@ -238,8 +238,9 @@ light-weight <a href="/moo">Moo</a> OOP framework or the full-blown <a href="/mo
 
 <hr />
 
+<a href="/how-to-improve-my-perl-program">How to improve your Perl code</a>
+
 Just a reminder, there are corresponding <a href="/beginner-perl-maven-e-book">e-books</a> and
-<a href="/beginner-perl-maven-video-course">video courses</a> available for 
-<a href="/products">purchase</a>.
+<a href="/beginner-perl-maven-video-course">video courses</a> available.
 
 
