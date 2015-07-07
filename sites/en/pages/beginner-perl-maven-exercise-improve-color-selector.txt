@@ -13,4 +13,4 @@ Exercise: improve color selector
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-improve-color-selector" />
+<slidecast file="/media/videos/beginner-perl/exercise-improve-color-selector" youtube="7QEB2a-cinU" />
