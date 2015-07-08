@@ -162,7 +162,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-exercise-parse-http-values">Exercise: parse HTTP values</a></li>
   <li><a href="/beginner-perl-maven-solution-parse-http-values">Solution: parse HTTP values</a></li>
   <li><a href="/beginner-perl-maven-exercise-improve-color-selector">Exercise: Improve color selector</a></li>
-  <li><a href="/pro/beginner-perl/solution-improve-color-selector">Solution: Improve color selector</a></li>
+  <li><a href="/beginner-perl-maven-solution-improve-color-selector">Solution: Improve color selector</a></li>
   <li><a href="/pro/beginner-perl/exercise-sort-scores">Exercise: Sort scores</a></li>
   <li><a href="/pro/beginner-perl/solution-sort-scores">Solution: Sort scores</a></li>
   <li><a href="/pro/beginner-perl/exercise-improve-apache-analyzer">Exercise: Improve Apache log analyzer</a></li>
