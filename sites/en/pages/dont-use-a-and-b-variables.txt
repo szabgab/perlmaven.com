@@ -10,7 +10,8 @@
 =abstract start
 
 <hl>$a</hl> and <hl>$b</hl> are special variables used in
-<a href="/search/$a">various forms</a> of <a href="/sorting-arrays-in-perl">sort</a>.
+<a href="/search/$a">various forms</a> of <a href="/sorting-arrays-in-perl">sort</a>, in the <hl>reduce</hl> function
+provided by <a href="https://metacpan.org/pod/List::Util">List::Util</a> and maybe in a few other places.
 
 Because of that they are two variables that can be used without declaration even when <a href="http://perlmaven.com/strict">use strict</a>
 is in effect.
@@ -34,8 +35,8 @@ $b = 19;
 print $a+$b, "\n";   # 42
 </code>
 
-The problem is not really in the use of these variable outside of <hl>sort</hl>. They won't be even changed by a call to <hl>sort</hl>
-as they are going to be localized for the duration of <hl>sort</hl> as you can see here:
+The problem is not really in the use of these variable outside of <hl>sort</hl> and the other special cases.
+They won't be even changed by a call to <hl>sort</hl> as they are going to be localized for the duration of <hl>sort</hl> as you can see here:
 
 <code lang="perl">
 use strict;
