@@ -1,0 +1,16 @@
+=title Exercise: sort scores
+=timestamp 2015-07-09T14:01:32
+=indexes %
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Exercise: sort scores
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/exercise-sort-scores" />
