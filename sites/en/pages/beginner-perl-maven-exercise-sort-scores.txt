@@ -13,4 +13,4 @@ Exercise: sort scores
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-sort-scores" />
+<slidecast file="/media/videos/beginner-perl/exercise-sort-scores" youtube="oba286a-F10" />
