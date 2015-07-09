@@ -13,4 +13,4 @@ Exercise: improve Apache log analyzer
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-improve-apache-analyzer" />
+<slidecast file="/media/videos/beginner-perl/exercise-improve-apache-analyzer" youtube="oQTSLam_-xE" />
