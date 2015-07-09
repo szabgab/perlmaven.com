@@ -165,7 +165,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-solution-improve-color-selector">Solution: Improve color selector</a></li>
   <li><a href="/beginner-perl-maven-exercise-sort-scores">Exercise: Sort scores</a></li>
   <li><a href="/beginner-perl-maven-solution-sort-scores">Solution: Sort scores</a></li>
-  <li><a href="/pro/beginner-perl/exercise-improve-apache-analyzer">Exercise: Improve Apache log analyzer</a></li>
+  <li><a href="/beginner-perl-maven-exercise-improve-apache-analyzer">Exercise: Improve Apache log analyzer</a></li>
   <li><a href="/pro/beginner-perl/solution-improve-apache-analyzer">Solution: Improve Apache log analyzer</a></li>
   <li><a href="/pro/beginner-perl/exercise-parse-variable-width-fields">Exercise: Parse variable width fields</a></li>
   <li><a href="/pro/beginner-perl/solution-parse-variable-width-fields">Solution: Parse variable width fields</a></li>
