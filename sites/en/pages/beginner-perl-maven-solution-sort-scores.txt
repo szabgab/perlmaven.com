@@ -1,0 +1,16 @@
+=title Solution: sort scores
+=timestamp 2015-07-09T18:02:34
+=indexes %
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Solution: sort scores
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-sort-scores" />
