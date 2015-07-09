@@ -13,4 +13,4 @@ Solution: sort scores
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-sort-scores" />
+<slidecast file="/media/videos/beginner-perl/solution-sort-scores" youtube="nOVVS2qfwPQ" />
