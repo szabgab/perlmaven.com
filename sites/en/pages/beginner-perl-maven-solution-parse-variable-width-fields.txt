@@ -1,0 +1,16 @@
+=title Solution: parse variable width fields
+=timestamp 2015-07-10T12:02:35
+=indexes %
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Solution: parse variable width fields
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-parse-variable-width-fields" />
