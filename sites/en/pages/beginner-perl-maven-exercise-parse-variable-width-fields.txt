@@ -13,4 +13,4 @@ Exercise: parse variable width fields
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-parse-variable-width-fields" />
+<slidecast file="/media/videos/beginner-perl/exercise-parse-variable-width-fields" youtube="6NoHj4sehWc" />
