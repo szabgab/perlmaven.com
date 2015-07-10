@@ -1,0 +1,16 @@
+=title Solution: improve Apache log-analyzer
+=timestamp 2015-07-10T11:02:30
+=indexes %
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Solution: improve Apache log-analyzer
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-improve-apache-analyzer" />
