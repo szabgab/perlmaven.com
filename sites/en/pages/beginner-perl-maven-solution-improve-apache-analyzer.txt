@@ -13,4 +13,4 @@ Solution: improve Apache log-analyzer
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-improve-apache-analyzer" />
+<slidecast file="/media/videos/beginner-perl/solution-improve-apache-analyzer" youtube="KiUI6TQN8fg" />
