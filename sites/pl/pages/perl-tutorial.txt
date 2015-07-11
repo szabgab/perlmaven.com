@@ -16,6 +16,7 @@
 <li><a href="/hashbang">#!/usr/bin/perl - linia hashbang</a></li>
 <li><a href="/perl-editor">Edytory, IDE, środowisko developerskie dla Perla</a></li>
 <li><a href="/help">Uzyskiwanie pomocy</a></li>
+<li><a href="/perl-on-the-command-line">Perl w wierszu poleceń</a></li>
 </ol>
 </p>
 <!--
