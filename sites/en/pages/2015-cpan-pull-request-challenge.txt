@@ -132,7 +132,9 @@ And a few other related articles:
 <h3>June</h3>
 <ul>
   <li>2015.06.22 <a href="http://perl.bearcircle.net/2015/06/june-cpan-pr-challenge.html">June CPAN PR Challenge: App::DPath</a> by Bear Perl</li>
-
+  <li>2015.06.24 <a href="https://www.doyleyoung.net/cpan-pull-request-challenge-june/">CPAN Pull Request Challenge - June</a> by Doyle Young</li>
+  <li>2015.06.28 <a href="http://blogs.perl.org/users/alberto_simoes/2015/06/cpan-pr-challenge-june-report.html">CPAN PR-Challenge: June Report</a> by Alberto Simões</li>
+  <li>2015.07.12 <a href="http://blogs.perl.org/users/e_choroba/2015/07/test-failures-in-filelibmagic.html">Test failures in File::LibMagic</a> by E. Choroba</li>
 </ul>
 
 <!-- Template for adding new blogposts:
