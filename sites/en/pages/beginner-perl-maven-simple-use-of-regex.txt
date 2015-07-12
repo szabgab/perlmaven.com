@@ -13,4 +13,4 @@ Regexes
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/simple-use-of-regex" />
+<slidecast file="/media/videos/beginner-perl/simple-use-of-regex" youtube="DhdBGO8UBjg" />
