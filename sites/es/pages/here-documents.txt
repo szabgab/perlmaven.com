@@ -71,8 +71,8 @@ END_MESSAGE
 </code>
 
 Funciona y se comporta de la misma manera que si pusieses END_MESSAGE con comillas dobles, como en el
-siguiente ejemplo, pero este uso esta <b>deprecado</b> y será eliminado a partir de la versión 5.20 de Perl.
-¡<b>No</b> lo uses! No uses here-document sin las comillas alrededor de la marca de fin del mensaje.
+siguiente ejemplo, pero queda menos claro. Recomendaría usar siempre las comillas alrededor de la
+marca de fin de mensaje.
 
 <code lang="perl">
 my $mensaje = <<"END_MESSAGE";
