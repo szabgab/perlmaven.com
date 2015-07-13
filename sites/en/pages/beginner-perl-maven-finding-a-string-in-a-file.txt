@@ -13,4 +13,4 @@ Finding a string in a file like grep
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/finding-a-string-in-a-file" />
+<slidecast file="/media/videos/beginner-perl/finding-a-string-in-a-file" youtube="dzRfOvM-Ujk" />
