@@ -13,4 +13,4 @@ Regexes
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/optional-characters" />
+<slidecast file="/media/videos/beginner-perl/optional-characters" youtube="KArMFA7neRA" />
