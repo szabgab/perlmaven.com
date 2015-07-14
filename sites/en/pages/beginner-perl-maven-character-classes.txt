@@ -1,0 +1,16 @@
+=title Character classes
+=timestamp 2015-07-04T14:01:04
+=indexes regexes
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Character classes
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/character-classes" />
