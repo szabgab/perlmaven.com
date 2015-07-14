@@ -13,4 +13,4 @@ Character classes
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/character-classes" />
+<slidecast file="/media/videos/beginner-perl/character-classes" youtube="ijOUUMvoCSU" />
