@@ -1,0 +1,16 @@
+=title Negated character class
+=timestamp 2015-07-14T15:30:07
+=indexes regexes
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Regexes
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/negated-character-class" />
