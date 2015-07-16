@@ -13,4 +13,4 @@ Solution regexes-2
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-regexes-2" />
+<slidecast file="/media/videos/beginner-perl/solution-regexes-2" youtube="VG_m7pVBRmA" />
