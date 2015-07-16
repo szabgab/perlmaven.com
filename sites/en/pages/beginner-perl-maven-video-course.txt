@@ -188,7 +188,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-quantifiers-on-character-classes">Quantifiers on Character classes</a></li>
   <li><a href="/beginner-perl-maven-exercise-regexes-1">Exercise: Regexes 1</a></li>
   <li><a href="/beginner-perl-maven-solution-regexes-1">Solution 1</a></li>
-  <li><a href="/pro/beginner-perl/solution-regexes-2">Solution 2</a></li>
+  <li><a href="/beginner-perl-maven-solution-regexes-2">Solution 2</a></li>
   <li><a href="/pro/beginner-perl/solution-regexes-3">Solution 3</a></li>
 </ol>
 
