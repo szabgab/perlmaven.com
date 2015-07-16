@@ -11,4 +11,4 @@ Solution regexes-1
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-regexes-1" />
+<slidecast file="/media/videos/beginner-perl/solution-regexes-1" youtube="ZYqruvNyUiM" />
