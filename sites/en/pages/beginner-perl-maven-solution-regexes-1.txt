@@ -1,0 +1,14 @@
+=title Solution: regexes 1
+=timestamp 2015-07-16T18:00:14
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Solution regexes-1
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-regexes-1" />
