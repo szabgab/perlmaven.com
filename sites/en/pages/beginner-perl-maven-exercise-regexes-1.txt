@@ -38,3 +38,5 @@ out every line from the file that matches the requirement. You can use the scrip
   <li>Bonus: has a double character (e.g. 'oo')</li>
 </ul>
 
+<include file="examples/regex_exercise_1.pl">
+
