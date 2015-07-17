@@ -9,7 +9,7 @@
 
 =abstract start
 
-Solution regexes-2
+Second part of the solution for the <a href="/beginner-perl-maven-exercise-regexes-1">regex exercise</a>
 
 =abstract end
 
