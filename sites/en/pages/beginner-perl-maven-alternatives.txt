@@ -13,4 +13,4 @@ Alternatives
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/alternatives" />
+<slidecast file="/media/videos/beginner-perl/alternatives" youtube="qCfOdTQ7nYk" />
