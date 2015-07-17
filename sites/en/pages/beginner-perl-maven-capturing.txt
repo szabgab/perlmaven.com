@@ -1,0 +1,17 @@
+=title Regex Capturing
+=timestamp 2015-07-17T20:01:02
+=indexes ()
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Capturing
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/capturing" />
+
