@@ -196,7 +196,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 <ol>
   <li><a href="/beginner-perl-maven-alternatives">Regex Alternatives</a></li>
   <li><a href="/beginner-perl-maven-capturing">Regex Capturing</a></li>
-  <li><a href="/pro/beginner-perl/anchors">Regex Anchors</a></li>
+  <li><a href="/beginner-perl-maven-anchors">Regex Anchors</a></li>
   <li><a href="/pro/beginner-perl/character-classes">Character classes</a></li>
   <li><a href="/pro/beginner-perl/special-character-classes">Special character classes</a></li>
   <li><a href="/pro/beginner-perl/exercise-number">Exercise: number</a></li>
