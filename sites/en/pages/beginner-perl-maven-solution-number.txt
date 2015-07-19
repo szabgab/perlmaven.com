@@ -1,4 +1,4 @@
-=title Solutions: number
+=title Solution: Match numbers with regex
 =timestamp 2015-07-19T06:30:10
 =indexes regexes
 =tags screencast
@@ -13,4 +13,4 @@ Solution: number
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-number" />
+<slidecast file="/media/videos/beginner-perl/solution-number" youtube="pDkB0Z0jKOw" />
