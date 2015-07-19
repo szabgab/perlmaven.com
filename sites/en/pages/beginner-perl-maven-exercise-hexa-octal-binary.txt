@@ -21,4 +21,4 @@ Write functions that return true if the given value is a
   <li>Binary number</li>
 </ul>
 
-<slidecast file="/media/videos/beginner-perl/exercise-hexa-octal-binary" />
+<slidecast file="/media/videos/beginner-perl/exercise-hexa-octal-binary" youtube="TUr41AAm0Hg" />
