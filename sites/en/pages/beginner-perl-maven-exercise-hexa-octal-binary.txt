@@ -1,0 +1,24 @@
+=title Exercise: hexa, octal, binary
+=timestamp 2015-07-19T18:01:07
+=indexes regexes
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+hexa, octal, binary
+
+=abstract end
+
+Write functions that return true if the given value is a
+
+<ul>
+  <li>Hexadecimal number</li>
+  <li>Octal number</li>
+  <li>Binary number</li>
+</ul>
+
+<slidecast file="/media/videos/beginner-perl/exercise-hexa-octal-binary" />
