@@ -1,0 +1,16 @@
+=title Exercise: Roman numbers
+=timestamp 2015-07-20T10:40:09
+=indexes regexes
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Roman numbers
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/exercise-roman-numbers" />
