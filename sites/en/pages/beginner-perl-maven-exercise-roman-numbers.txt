@@ -13,4 +13,4 @@ Roman numbers
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-roman-numbers" />
+<slidecast file="/media/videos/beginner-perl/exercise-roman-numbers" youtube="0QI6QAZxNwg" />
