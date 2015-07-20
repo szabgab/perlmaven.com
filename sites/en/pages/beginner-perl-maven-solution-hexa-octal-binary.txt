@@ -13,4 +13,4 @@ Solution: hexa, octal, binary
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-hexa-octal-binary" />
+<slidecast file="/media/videos/beginner-perl/solution-hexa-octal-binary" youtube="icidRy3kiFQ" />
