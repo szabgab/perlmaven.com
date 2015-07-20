@@ -1,0 +1,16 @@
+=title Solution: hexa, octal, binary
+=timestamp 2015-07-20T10:01:12
+=indexes regexes
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Solution: hexa, octal, binary
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-hexa-octal-binary" />
