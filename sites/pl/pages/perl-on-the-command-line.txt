@@ -76,7 +76,7 @@ gabor@pm:~$ perl -e 'print 42'
 </code>
 
 Zauważ, że użyłem pojedynczego cudzysłowu (apostrofu) <hl>'</hl> pod Linuskem a podwójnego <hl>"</hl> na Windows.
-Zrobilem to z powodu różnego zachowania wiersza poleceń w tych dwóch systemach operacyjnych.
+Zrobiłem to z powodu różnego zachowania wiersza poleceń w tych dwóch systemach operacyjnych.
 Nic związanego z Perlem. Ogólnie, na Linux/Unix zawsze używaj pojedynczych cudzysłowów wokół kodu,
 na Windows zawsze używaj podwójnych.
 
@@ -86,8 +86,8 @@ Ta różnica wynika z różnego zachowania obu interpreterów wiersza poleceń.
 W tym przykładzie używamy flagi <hl>-e</hl>, która mówi perlowi,
 "Nie oczekuj pliku. Następna rzecz w wierszu poleceń to faktyczny kod Perla."
 
-Powyższe przykłady nie są oczywiścei zbyt interesujące. Pozwól, że pokażę Ci coś nieco badziej złożony
-przykłąd, bez wyjaśniania go:
+Powyższe przykłady nie są oczywiście zbyt interesujące. Pozwól, że pokażę Ci coś nieco bardziej złożony
+przykład, bez wyjaśniania go:
 
 <h2>Zamiana Java na Perl</h2>
 

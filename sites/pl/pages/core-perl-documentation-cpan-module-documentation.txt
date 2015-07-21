@@ -13,7 +13,7 @@
 Perl przychodzi z mnóstwem dokumentacji, ale
 potrzeba nieco czasu, zanim przywykniesz do używania jej. W tej części
 <a href="/perl-tutorial">samouczka Perla</a> wyjaśnię jak
-odnaleźć się podśród dokumentacji.
+odnaleźć się pośród dokumentacji.
 
 =abstract end
 
@@ -27,7 +27,7 @@ a także modułów, które przychodzą z podstawowym Perlem, jak zostały wydane
 
 Nie zawiera ona dokumentacji modułów CPAN.
 Istnieje jednak zazębienie, ponieważ część modułów jest zarówno dostępna
-przez CPAN, jak i włączona do stanardowej dystrybucji Perla.
+przez CPAN, jak i włączona do standardowej dystrybucji Perla.
 (Często odnosi się do nich jako <b>dual-lifed</b>.)
 
 Możesz użyć pola wyszukiwania w prawym górnym rogu. Na przykład możesz
@@ -47,7 +47,7 @@ włącznie z <a href="/while-loop">pętlą while</a>.
 
 Ta sama dokumentacja przychodzi z kodem źródłowym Perla, ale nie
 każda dystrybucja Linuksa instaluje go domyślnie. W niektórych przypadkach
-jest to osobny pakiet. Na przykłąd w Debianie i Ubuntu jest to pakiet
+jest to osobny pakiet. Na przykład w Debianie i Ubuntu jest to pakiet
 <b>perl-doc</b>. Musisz go zainstalować używając <hl>sudo aptitude install perl-doc</hl>,
 zanim będziesz mógł skorzystać z <hl>perldoc</hl>.
 
