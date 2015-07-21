@@ -2,7 +2,7 @@
 =timestamp 2015-07-21T10:30:00
 =indexes testing, TAP, Test::Simple
 =status show
-=original Testing a simple Perl module
+=original testing-a-simple-perl-module
 =author szabgab
 =translator johnkang
 =comments_disqus_enable 1
