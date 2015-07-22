@@ -1,0 +1,16 @@
+=title m-for-matching
+=timestamp 2015-07-22T09:02:01
+=indexes regexes, m
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+m-for-matching
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/m-for-matching" />
