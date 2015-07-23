@@ -1,0 +1,16 @@
+=title Case insensitive
+=timestamp 2015-07-23T10:02:02
+=indexes regexes, m
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+case insensitive
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/case-insensitive" />
