@@ -1,0 +1,16 @@
+=title multiple lines
+=timestamp 2015-07-24T06:02:03
+=indexes regexes, m
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+multiple-lines
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/multiple-lines" />
