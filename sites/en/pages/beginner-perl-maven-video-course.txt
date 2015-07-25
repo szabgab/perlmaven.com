@@ -210,9 +210,9 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 <h3>10. Regular Expressions - part 3</h3>
 <ol>
   <li><a href="/beginner-perl-maven-m-for-matching">m for matching regexes</a></li>
-  <li><a href="/beginner-perl-maven-case-insensitive">Case insensitive regexes</a></li>
-  <li><a href="/beginner-perl-maven-multiple-lines">multiple lines in regexes</a></li>
-  <li><a href="/pro/beginner-perl/single-line">Single line</a></li>
+  <li><a href="/beginner-perl-maven-case-insensitive">Case insensitive regexes using /i</a></li>
+  <li><a href="/beginner-perl-maven-multiple-lines">multiple lines in regexes using /m</a></li>
+  <li><a href="/beginner-perl-maven-single-line">Single line regexes using /s</a></li>
   <li><a href="/pro/beginner-perl/x-modifier">x-modifier</a></li>
   <li><a href="/pro/beginner-perl/substitution">Substitution</a></li>
   <li><a href="/pro/beginner-perl/global-substitution">global-substitution</a></li>
