@@ -214,7 +214,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-multiple-lines">multiple lines in regexes using /m</a></li>
   <li><a href="/beginner-perl-maven-single-line">Single line regexes using /s</a></li>
   <li><a href="/beginner-perl-maven-x-modifier">/x modifier for verbose regexes</a></li>
-  <li><a href="/pro/beginner-perl/substitution">Substitution</a></li>
+  <li><a href="/beginner-perl-maven-substitution">Substitution</a></li>
   <li><a href="/pro/beginner-perl/global-substitution">global-substitution</a></li>
   <li><a href="/pro/beginner-perl/greedy-quantifyers">greedy-quantifyers</a></li>
   <li><a href="/pro/beginner-perl/minimal-matching">minimal-matching</a></li>
