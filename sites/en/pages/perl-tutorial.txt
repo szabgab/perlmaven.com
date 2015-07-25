@@ -88,19 +88,25 @@ to practice what you have learned.
 <li><a href="/appending-to-files">Appending to files</a></li>
 <li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
 <li><a href="/open-files-in-the-old-way">Don't open files in the old way</a></li>
+<!--
 <li>Binary mode, dealing with Unicode</li>
 <li>Reading from a binary file, read, eof</li>
 <li>tell, seek</li>
 <li>truncate</li>
+-->
 <li><a href="/slurp">Slurp mode</a></li>
 </ol>
 
 <b>Lists and Arrays</b>
 <ol>
+<!--
 <li>Perl foreach loop</li>
+-->
 <li><a href="/for-loop-in-perl">The for loop in Perl</a></li>
+<!--
 <li>Lists in Perl</li>
 <li>Using Modules</li>
+-->
 <li><a href="/perl-arrays">Arrays in Perl</a></li>
 <li><a href="/argv-in-perl">Process command line parameters @ARGV</a></li>
 <li><a href="/how-to-process-command-line-arguments-in-perl">Process command line parameters using Getopt::Long</a></li>
@@ -119,8 +125,10 @@ to practice what you have learned.
 <li><a href="/pro/reverse-polish-calculator-in-perl">Stack</a> and <a href="/using-a-queue-in-perl">queue</a></li>
 <li><a href="/reverse">reverse</a></li>
 <li><a href="/the-ternary-operator-in-perl">The ternary operator</a></li>
+<!--
 <li>Loop controls: next and last</li>
 <li>min, max, sum using List::Util</li>
+-->
 <li><a href="/qw-quote-word">qw - quote word</a></li>
 </ol>
 
@@ -138,7 +146,9 @@ to practice what you have learned.
 <li><a href="/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
 <li><a href="/creating-hash-from-an-array">Creating hash from an array</a></li>
 <li><a href="/perl-hash-in-scalar-and-list-context">Perl hash in scalar and list context</a></li>
-<li>exists, delete hash elements</li>
+<!--
+<li>/exists, delete hash elements</li>
+-->
 <li><a href="/how-to-sort-a-hash-in-perl">Sorting a hash</a></li>
 <li><a href="/count-words-in-text-using-perl">Count word frequency in a text file</a></li>
 </ol>
@@ -149,23 +159,29 @@ to practice what you have learned.
 <li><a href="/regex-character-classes">Regex: character classes</a></li>
 <li><a href="/regex-special-character-classes">Regex: special character classes</a></li>
 <li><a href="/regex-quantifiers">Regex: quantifiers</a></li>
+<!--
 <li>Regex: Greedy and non-greedy match</li>
 <li>Regex: Grouping and capturing</li>
 <li>Regex: Anchors</li>
 <li>Regex options and modifiers</li>
 <li>Substitutions (search and replace)</li>
+-->
 <li><a href="/trim">trim - remove leading and trailing spaces</a></li>
 </ol>
 
 <b>Perl and Shell related functionality</b>
 <ol>
+<!--
 <li>Perl -X operators</li>
 <li>Perl pipes</li>
 <li>Running external programs <a href="/running-external-programs-from-perl">using system</a></li>
 <li>Unix commands: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
+-->
 <li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
+<!--
 <li>Windows/DOS commands: del, ren, dir</li>
 <li>File globbing (Wildcards)</li>
+-->
 <li><a href="/reading-the-content-of-a-directory">Directory handles</a></li>
 <li>Traversing directory tree <a href="/recursive-subroutines">manually with recursion</a>,
 <a href="/traversing-the-filesystem-using-a-queue">manually using a queue</a> and using find.</li>
@@ -174,12 +190,16 @@ to practice what you have learned.
 <b>CPAN</b>
 <ol>
 <li><a href="/download-and-install-perl">Download and install Perl (Strawberry Perl or manual compilation)</a></li>
+<!--
 <li>Download and install Perl using Perlbrew</li>
 <li>Locating and evaluating CPAN modules</li>
 <li>Downloading and installing Perl Modules from CPAN</li>
+-->
 <li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
 <li><a href="/how-to-add-a-relative-directory-to-inc">How to change @INC to a relative directory</a></li>
+<!--
 <li>local::lib</li>
+-->
 </ol>
 
 <b>Few examples for using Perl</b>
@@ -190,7 +210,9 @@ to practice what you have learned.
 <li><a href="/sending-html-email-using-email-stuffer">Sending e-mail using Perl</a></li>
 <li><a href="/perl-cgi-script-with-apache2">CGI scripts with Perl</a></li>
 <li><a href="/perl-cgi-mod-perl-psgi">Web applications with Perl: PSGI</a></li>
+<!--
 <li>Parsing XML files</li>
+-->
 <li><a href="/json">Reading and writing JSON files</a></li>
 <li><a href="/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
 <li><a href="/reading-from-ldap-in-perl-using-net-ldap">Accessing LDAP using Perl</a></li>
@@ -228,7 +250,7 @@ to practice what you have learned.
 <li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
 <li><a href="/testing-a-simple-perl-module">Testing a simple Perl module</a></li>
 <li><a href="/what-are-string-and-numeric-contexts">What are string and numeric contexts?</a></li>
-<li><a href="/statement-modifiers">Statement modifiers: reversed if statements</a><li>
+<li><a href="/statement-modifiers">Statement modifiers: reversed if statements</a></li>
 </ol>
 
 <b>Object Oriented Perl with Moose or Moo</b>
