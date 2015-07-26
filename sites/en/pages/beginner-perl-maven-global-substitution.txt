@@ -13,4 +13,4 @@ global-substitution
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/global-substitution" />
+<slidecast file="/media/videos/beginner-perl/global-substitution" youtube="UbqYQc-W1qs" />
