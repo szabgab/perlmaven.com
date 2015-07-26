@@ -163,6 +163,7 @@ to practice what you have learned.
 <li><a href="/regex-character-classes">Regex: character classes</a></li>
 <li><a href="/regex-special-character-classes">Regex: special character classes</a></li>
 <li><a href="/regex-quantifiers">Regex: quantifiers</a></li>
+<li><a href="/beginner-perl-maven-video-course#8">Regex videos - part I</a><li>
 <!--
 <li>Regex: Greedy and non-greedy match</li>
 <li>Regex: Grouping and capturing</li>

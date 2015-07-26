@@ -17,7 +17,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 
 
 <h2>Table of Contents</h2>
-<h3>1. Introduction</h3>
+<h3 id="1">1. Introduction</h3>
 <ol>
   <li><a href="/beginner-perl-maven-installation">Welcome and installation</a></li>
   <li><a href="/beginner-perl-maven-editors">Editors, IDEs</a></li>
@@ -33,7 +33,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-solution-hello-world-2">Solution: Hello World (part 2)</a></li>
 </ol>
 
-<h3>2. Scalars</h3>
+<h3 id="2">2. Scalars</h3>
 <ol>
   <li><a href="/beginner-perl-maven-scalar-values-and-variables">Scalar values and variables</a></li>
   <li><a href="/beginner-perl-maven-common-errors">Common Errors</a></li>
@@ -63,7 +63,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-solution-number-guessing-game">Solution: Number guessing game</a></li>
 </ol>
 
-<h3>3. Files</h3>
+<h3 id="3">3. Files</h3>
 <ol>
   <li><a href="/beginner-perl-maven-die-warn-exit">die, warn, exit</a></li>
   <li><a href="/beginner-perl-maven-open-file">Open File</a></li>
@@ -172,7 +172,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 </ol>
 
 
-<h3>8. Regular Expressions - part 1</h3>
+<h3 id="8">8. Regular Expressions - part 1</h3>
 <ol>
   <li><a href="/beginner-perl-maven-regexes">Regexes</a></li>
   <li><a href="/beginner-perl-maven-where-can-i-use-regexes">Where can I use regexes</a></li>
