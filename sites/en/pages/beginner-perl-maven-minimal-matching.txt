@@ -13,4 +13,4 @@ minimal-matching
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/minimal-matching" />
+<slidecast file="/media/videos/beginner-perl/minimal-matching" youtube="kj07K_M4HgI" />
