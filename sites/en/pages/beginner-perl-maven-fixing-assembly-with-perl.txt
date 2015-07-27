@@ -13,4 +13,4 @@ fixing-assembly-with-perl
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/fixing-assembly-with-perl" />
+<slidecast file="/media/videos/beginner-perl/fixing-assembly-with-perl" youtube="08aNlMNdDf0" />
