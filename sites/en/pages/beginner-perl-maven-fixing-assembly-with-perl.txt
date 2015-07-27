@@ -1,0 +1,16 @@
+=title Fixing Assembly with Perl
+=timestamp 2015-07-27T23:02:20
+=indexes regexes, m
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+fixing-assembly-with-perl
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/fixing-assembly-with-perl" />
