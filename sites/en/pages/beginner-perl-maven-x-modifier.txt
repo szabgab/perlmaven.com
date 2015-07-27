@@ -1,0 +1,16 @@
+=title /x modifier for verbose regexes
+=timestamp 2015-07-25T07:02:11
+=indexes regexes, x
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+x-modifier
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/x-modifier" youtube="rl-JxlP0hTQ" />

@@ -1,0 +1,16 @@
+=title Greedy regex quantifiers
+=timestamp 2015-07-26T10:02:16
+=indexes regexes
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+greedy-quantifyers
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/greedy-quantifiers" youtube="8ws6XBbNb7E" />
