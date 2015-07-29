@@ -13,4 +13,4 @@ fixing dates
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/fixing-dates" />
+<slidecast file="/media/videos/beginner-perl/fixing-dates" youtube="IP-me5WQFv8" />
