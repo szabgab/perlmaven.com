@@ -1,0 +1,16 @@
+=title split with regex
+=timestamp 2015-07-29T20:02:21
+=indexes regexes, split
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+split
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/split" />
