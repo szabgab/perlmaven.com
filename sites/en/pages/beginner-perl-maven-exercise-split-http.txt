@@ -13,7 +13,7 @@ Exercise: split http
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-split-http" />
+<slidecast file="/media/videos/beginner-perl/exercise-split-http" youtube="2SIu_TffPVc" />
 
 Given a string that looks like this:
 
