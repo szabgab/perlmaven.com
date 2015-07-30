@@ -261,7 +261,6 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/pro/beginner-perl/installing-modules-with-cpan">Installing modules with CPAN</a></li>
   <li><a href="/pro/beginner-perl/search-cpan-org">search.cpan.org</a></li>
   <li><a href="/pro/beginner-perl/cpantesters-and-cpanratings">cpantesters and cpanratings</a></li>
-  <li><a href="/pro/beginner-perl/"></a></li>
 </ol>
 
 <h3>13. Applications</h3>
@@ -275,15 +274,6 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/pro/beginner-perl/read-fixed-width-records">read fixed-width records</a></li>
   <li><a href="/pro/beginner-perl/process-config-file">Process config file</a></li>
 </ol>
-
-<!--
--->
-
-<!--
-  <li><a href="/pro/beginner-perl/"></a></li>
-  <li><a href="/pro/beginner-perl/"></a></li>
--->
-
 
 
 <!--
