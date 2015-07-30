@@ -1,0 +1,16 @@
+=title Solution: split HTTP using Regex
+=timestamp 2015-07-30T17:02:30
+=indexes regexes
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+solution-split-http
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-split-http" />
