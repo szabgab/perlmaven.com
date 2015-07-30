@@ -137,6 +137,11 @@ And a few other related articles:
   <li>2015.07.12 <a href="http://blogs.perl.org/users/e_choroba/2015/07/test-failures-in-filelibmagic.html">Test failures in File::LibMagic</a> by E. Choroba</li>
 </ul>
 
+<h3>July</h3>
+<ul>
+  <li>2015.07.26 <a href="http://varlogrant.blogspot.cz/2015/07/what-i-learned-from-perlbrew.html">What I learned from perlbrew </a> by Dave Jacoby</li>
+</ul>
+
 <!-- Template for adding new blogposts:
   <li>2015.. <a href=""></a> by </li>
 -->
