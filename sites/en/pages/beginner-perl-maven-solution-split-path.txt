@@ -1,0 +1,16 @@
+=title Solution: split path - filename/dirname
+=timestamp 2015-08-01T09:30:32
+=indexes regexes
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+solution-split-path
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/solution-split-path" />
