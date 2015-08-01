@@ -224,8 +224,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-fixing-dates">Fixing dates using Regexes</a></li>
   <li><a href="/beginner-perl-maven-exercise-split-http">Exercise split HTTP using Regexes</a></li>
   <li><a href="/beginner-perl-maven-solution-split-http">Solution: split HTTP using Regexes</a></li>
-  <li><a href="/pro/beginner-perl/exercise-filename-dirname">Exercise: filename/dirname</a></li>
-  <li><a href="/pro/beginner-perl/exercise-split-path">Exercise: split path</a></li>
+  <li><a href="/beginner-perl-maven-exercise-split-path">Exercise: split path - filename/dirname</a></li>
   <li><a href="/pro/beginner-perl/solution-split-path">Solution: split path</a></li>
   <li><a href="/pro/beginner-perl/exercise-sort-snmp-numbers">Exercise: sort SNMP numbers</a></li>
   <li><a href="/pro/beginner-perl/solution-sort-snmp-numbers">Solution: sort SNMP numbers</a></li>
