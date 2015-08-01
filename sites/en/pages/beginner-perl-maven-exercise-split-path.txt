@@ -16,6 +16,5 @@ Handle also the case of <b>c:\home\foo\.mozilla\cache\data.txt</b>.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-split-path" />
-
+<slidecast file="/media/videos/beginner-perl/exercise-split-path" youtube="ooejgCs6VC4" />
 
