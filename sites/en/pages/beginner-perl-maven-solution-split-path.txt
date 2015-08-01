@@ -13,4 +13,4 @@ solution-split-path
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-split-path" />
+<slidecast file="/media/videos/beginner-perl/solution-split-path" youtube="mJvMO8qmN2s" />
