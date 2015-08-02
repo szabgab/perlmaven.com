@@ -1,6 +1,6 @@
 name: Dean Hamstead
 img: deanhamstead.jpg
-url: http://bytefoundry.com.au
+url: http://bytefoundry.com.au/perl.html
 twitter: perldean
 gplus: 
 linkedin: http://au.linkedin.com/in/deanhamstead
