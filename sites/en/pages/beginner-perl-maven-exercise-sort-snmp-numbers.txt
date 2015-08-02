@@ -1,0 +1,26 @@
+=title Exercise: sort SNMP numbers
+=timestamp 2015-08-02T10:20:34
+=indexes regexes, SNMP
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+exercise-sort-snmp-numbers
+
+=abstract end
+
+Given a file with SNMP numbers (one number on every line) print them in sorted order comparing the first number of each SNMP number first. If they are equal then comparing the second number, etc...
+
+<code>
+1.2.7.6
+4.5.7.23
+1.2.7
+1.12.23
+2.3.5.7.10.8.9 
+</code>
+
+<slidecast file="/media/videos/beginner-perl/exercise-sort-snmp-numbers" />
