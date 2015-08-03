@@ -229,7 +229,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-exercise-sort-snmp-numbers">Exercise: sort SNMP numbers</a></li>
   <li><a href="/beginner-perl-maven-solution-sort-snmp-numbers">Solution: sort SNMP numbers</a></li>
   <li><a href="/beginner-perl-maven-exercise-parse-hours-log-file-and-create-time-report">Exercise: parse hours log file and create time report</a></li>
-  <li><a href="/pro/beginner-perl/exercise-create-time-report">Exercise: create time report</a></li>
+  <li>Solution: parse hours log file and create time report</li>
   <li><a href="/pro/beginner-perl/exercise-parse-ini-file">Exercise: parse INI file</a></li>
   <li><a href="/pro/beginner-perl/exercise-parse-perl-file">Exercise: parse perl file</a></li>
 </ol>

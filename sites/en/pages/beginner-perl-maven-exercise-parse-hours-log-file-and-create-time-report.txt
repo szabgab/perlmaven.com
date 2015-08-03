@@ -1,6 +1,7 @@
 =title Exercise: parse hours log file and create time report
 =timestamp 2015-08-03T10:20:01
 =indexes regexes
+=tags screencast
 =status show
 =books beginner_video
 =author szabgab
@@ -57,4 +58,6 @@ and
 Solutions: 95 minutes 9%
 Break 65 minutes 6% ...
 </code>
+
+<slidecast file="/media/videos/beginner-perl/exercise-create-time-report" />
 
