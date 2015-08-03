@@ -232,7 +232,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li>Solution: parse hours log file and create time report (placeholder)</li>
   <li><a href="/beginner-perl-maven-exercise-parse-ini-file">Exercise: parse INI file</a></li>
   <li>Solution: parse INI file (placeholder)</li>
-  <li><a href="/pro/beginner-perl/exercise-parse-perl-file">Exercise: parse Perl file</a></li>
+  <li><a href="/beginner-perl-maven-exercise-parse-perl-file">Exercise: parse Perl file</a></li>
   <li>Solution parse Perl file (placeholder)</li>
 </ol>
 
