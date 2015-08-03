@@ -14,6 +14,8 @@ Exercise
 
 =abstract end
 
+<slidecast file="/media/videos/beginner-perl/exercise-create-time-report" youtube="ICyJWvVAts4" />
+
 The log file looks like this:
 
 <code>
@@ -59,5 +61,4 @@ Solutions: 95 minutes 9%
 Break 65 minutes 6% ...
 </code>
 
-<slidecast file="/media/videos/beginner-perl/exercise-create-time-report" />
 
