@@ -9,11 +9,14 @@
 
 =abstract start
 
-exercise-sort-snmp-numbers
+Given a file with <a href="https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol">SNMP</a> numbers
+(one number on every line) print them in sorted order comparing the first number of each SNMP number first.
+If they are equal then comparing the second number, etc...
+
+Actually the format is called <a href="https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One">ASN 1</a>.
 
 =abstract end
 
-Given a file with SNMP numbers (one number on every line) print them in sorted order comparing the first number of each SNMP number first. If they are equal then comparing the second number, etc...
 
 <code>
 1.2.7.6
