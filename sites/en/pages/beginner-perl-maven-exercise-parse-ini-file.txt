@@ -13,4 +13,4 @@ exercise: parse-ini-file
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-parse-ini-file" />
+<slidecast file="/media/videos/beginner-perl/exercise-parse-ini-file" youtube="InGai4vtEhc" />
