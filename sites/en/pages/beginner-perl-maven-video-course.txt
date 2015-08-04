@@ -239,7 +239,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 <h3>11. Shell to Perl</h3>
 <ol>
   <li><a href="/beginner-perl-maven-shell-x">shell -x</a></li>
-  <li><a href="/pro/beginner-perl/external-programs">external programs</a></li>
+  <li><a href="/beginner-perl-maven-external-programs">Running external programs</a></li>
   <li><a href="/pro/beginner-perl/unix-and-dos-commands">Unix and DOS commands</a></li>
   <li><a href="/pro/beginner-perl/file-globbing">file globbing</a></li>
   <li><a href="/pro/beginner-perl/rename-files">rename files</a></li>
