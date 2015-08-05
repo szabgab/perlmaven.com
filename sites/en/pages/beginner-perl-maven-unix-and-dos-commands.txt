@@ -1,6 +1,6 @@
 =title Unix and DOS commands
 =timestamp 2015-08-05T20:04:03
-=indexes shell
+=indexes shell, unlink, rename, chmod, chown, chdir, mkdir, rmdir, link, symlink, dir, ls, mv, ln
 =tags screencast
 =status show
 =books beginner_video
