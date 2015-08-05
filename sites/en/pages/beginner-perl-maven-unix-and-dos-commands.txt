@@ -1,0 +1,16 @@
+=title Unix and DOS commands
+=timestamp 2015-08-05T20:04:03
+=indexes shell
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+unix-and-dos-commands
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/unix-and-dos-commands" />
