@@ -1,0 +1,16 @@
+=title rename files
+=timestamp 2015-08-06T08:04:05
+=indexes rename
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+rename-files
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/rename-files" />
