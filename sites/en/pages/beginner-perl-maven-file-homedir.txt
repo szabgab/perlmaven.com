@@ -1,0 +1,16 @@
+=title File::HomeDir
+=timestamp 2015-08-06T12:04:08
+=indexes File::HomeDir
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+File::HomeDir
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/file-homedir" />
