@@ -1,6 +1,6 @@
 =title rename files
 =timestamp 2015-08-06T08:04:05
-=indexes rename
+=indexes rename, glob
 =tags screencast
 =status show
 =books beginner_video
@@ -13,4 +13,4 @@ rename-files
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/rename-files" />
+<slidecast file="/media/videos/beginner-perl/rename-files" youtube="sBLJMaB3sro" />
