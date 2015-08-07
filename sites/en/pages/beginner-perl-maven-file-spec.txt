@@ -13,4 +13,4 @@ file-spec
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/file-spec" />
+<slidecast file="/media/videos/beginner-perl/file-spec" youtube="xNsUifyiMuU" />
