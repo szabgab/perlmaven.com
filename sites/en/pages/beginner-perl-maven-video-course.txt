@@ -252,7 +252,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 
 <h3>12. CPAN</h3>
 <ol>
-  <li><a href="/pro/beginner-perl/using-procedural-module">Using procedural module</a></li>
+  <li><a href="/beginner-perl-maven-using-procedural-module">Using procedural module</a></li>
   <li><a href="/pro/beginner-perl/using-object-oriented-module">Using object oriented module</a></li>
   <li><a href="/pro/beginner-perl/changing-inc">Changing @INC</a></li>
   <li><a href="/pro/beginner-perl/changing-inc-relative-path">Changing @INC relative path</a></li>
