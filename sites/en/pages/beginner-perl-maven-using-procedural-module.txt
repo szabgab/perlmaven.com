@@ -13,4 +13,4 @@ using procedural module
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/using-procedural-module" />
+<slidecast file="/media/videos/beginner-perl/using-procedural-module" youtube="kcqmtmM4cmQ" />
