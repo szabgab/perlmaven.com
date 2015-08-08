@@ -1,0 +1,16 @@
+=title Changing @INC
+=timestamp 2015-08-08T09:04:33
+=indexes @INC
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+changing-inc
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/changing-inc" />
