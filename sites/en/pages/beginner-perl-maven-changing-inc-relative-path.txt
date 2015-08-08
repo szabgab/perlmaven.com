@@ -1,6 +1,6 @@
 =title Changing @INC relative path
 =timestamp 2015-08-08T17:04:36
-=indexes @INC
+=indexes @INC, File::Spec, FindBin, File::Basename, rel2abs, catfile, lib
 =tags screencast
 =status show
 =books beginner_video
@@ -13,4 +13,4 @@ changing-inc-relative-path
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/changing-inc-relative-path" />
+<slidecast file="/media/videos/beginner-perl/changing-inc-relative-path" youtube="qANprSEDO9Y" />
