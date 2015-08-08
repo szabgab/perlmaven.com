@@ -17,6 +17,7 @@
 <li><a href="/perl-editor">Edytory, IDE, środowisko developerskie dla Perla</a></li>
 <li><a href="/help">Uzyskiwanie pomocy</a></li>
 <li><a href="/perl-on-the-command-line">Perl w wierszu poleceń</a></li>
+<li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
 </ol>
 </p>
 <!--
