@@ -1,0 +1,16 @@
+=title Changing @INC relative path
+=timestamp 2015-08-08T17:04:36
+=indexes @INC
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+changing-inc-relative-path
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/changing-inc-relative-path" />
