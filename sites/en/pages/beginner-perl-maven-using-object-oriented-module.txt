@@ -1,0 +1,16 @@
+=title Using object oriented modules
+=timestamp 2015-08-08T07:04:32
+=indexes OOP
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Using object oriented modules
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/using-object-oriented-module" />
