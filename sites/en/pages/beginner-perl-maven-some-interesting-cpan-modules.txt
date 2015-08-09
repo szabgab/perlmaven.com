@@ -13,5 +13,5 @@ Some interesting CPAN modules
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/some-interesting-cpan-modules" />
+<slidecast file="/media/videos/beginner-perl/some-interesting-cpan-modules" youtube="xjH9Bq58Tq0" />
 
