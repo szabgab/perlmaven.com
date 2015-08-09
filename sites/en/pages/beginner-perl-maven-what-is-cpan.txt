@@ -1,0 +1,16 @@
+=title What is CPAN?
+=timestamp 2015-08-09T07:04:38
+=indexes cpan
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+what-is-cpan
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/what-is-cpan" />

@@ -256,7 +256,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-using-object-oriented-module">Using object oriented module</a></li>
   <li><a href="/beginner-perl-maven-changing-inc">Changing @INC</a></li>
   <li><a href="/beginner-perl-maven-changing-inc-relative-path">Changing @INC relative path</a></li>
-  <li><a href="/pro/beginner-perl/what-is-cpan">What is CPAN</a></li>
+  <li><a href="/beginner-perl-maven-what-is-cpan">What is CPAN</a></li>
   <li><a href="/pro/beginner-perl/some-interesting-cpan-modules">Some interesting CPAN modules</a></li>
   <li><a href="/pro/beginner-perl/installing-modules-from-the-os-vendor">Installing modules from the OS vendor</a></li>
   <li><a href="/pro/beginner-perl/installing-modules-with-cpan">Installing modules with CPAN</a></li>
