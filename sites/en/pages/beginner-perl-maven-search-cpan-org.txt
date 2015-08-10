@@ -9,8 +9,10 @@
 
 =abstract start
 
-<a href="http://search.cpan.org/>search.cpan.org</a> and <a href="http://metacpan.org/">MetaCPAN.org</a>
+Once upon a time I recommended using <a href="http://search.cpan.org/">search.cpan.org</a>,
+but today I'd recommend <a href="http://metacpan.org/">MetaCPAN.org</a>.
+See the <a href="/metacpan">articles and vidoes about MetaCPAN</a>.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/search-cpan-org" />
+<slidecast file="/media/videos/beginner-perl/search-cpan-org" youtube="DZvLWJjVwZw" />
