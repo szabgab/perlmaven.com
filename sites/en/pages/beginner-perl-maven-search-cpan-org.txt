@@ -1,0 +1,16 @@
+=title search.cpan.org
+=timestamp 2015-08-10T22:34:45
+=indexes CPAN
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+<a href="http://search.cpan.org/>search.cpan.org</a> and <a href="http://metacpan.org/">MetaCPAN.org</a>
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/search-cpan-org" />
