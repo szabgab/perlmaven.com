@@ -13,4 +13,4 @@ installing modules with cpan
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/installing-modules-with-cpan" />
+<slidecast file="/media/videos/beginner-perl/installing-modules-with-cpan" youtube="OfCJFZ2zwe8" />
