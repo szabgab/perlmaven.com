@@ -261,7 +261,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-installing-modules-from-the-os-vendor">Installing modules from the OS vendor</a></li>
   <li><a href="/beginner-perl-maven-installing-modules-with-cpan">Installing Perl modules with cpan</a></li>
   <li><a href="/beginner-perl-maven-search-cpan-org">search.cpan.org</a></li>
-  <li><a href="/pro/beginner-perl/cpantesters-and-cpanratings">cpantesters and cpanratings</a></li>
+  <li><a href="/beginner-perl-maven-cpantesters-and-cpanratings">CPAN Testers and CPAN Ratings</a></li>
 </ol>
 
 <h3>13. Applications</h3>
