@@ -13,4 +13,4 @@
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/cpantesters-and-cpanratings" />
+<slidecast file="/media/videos/beginner-perl/cpantesters-and-cpanratings" youtube="AuG4aip3oDc" />
