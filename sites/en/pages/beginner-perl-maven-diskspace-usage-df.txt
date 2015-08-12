@@ -1,0 +1,16 @@
+=title Diskspace usage: df in Perl
+=timestamp 2015-08-12T08:05:01
+=indexes application
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+diskspace usage df
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/diskspace-usage-df" />
