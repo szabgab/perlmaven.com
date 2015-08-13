@@ -16,4 +16,4 @@ See also the <a href="/sending-html-email-using-email-stuffer">video about Email
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/reporting-diskspace-usage-on-mail-server" youtube="hU2yfAZCJ8w"> />
+<slidecast file="/media/videos/beginner-perl/reporting-diskspace-usage-on-mail-server" youtube="hU2yfAZCJ8w" />
