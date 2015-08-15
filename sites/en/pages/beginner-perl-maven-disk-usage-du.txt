@@ -1,6 +1,6 @@
 =title disk usage: du in Perl
 =timestamp 2015-08-15T16:05:06
-=indexes application
+=indexes Filesys::DiskUsage, du
 =tags screencast
 =status show
 =books beginner_video
@@ -9,9 +9,9 @@
 
 =abstract start
 
-du
+du using <a href="https://metacpan.org/pod/Filesys::DiskUsage">Filesys::DiskUsage</a>
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/disk-usage-du" />
+<slidecast file="/media/videos/beginner-perl/disk-usage-du" youtube="uOch-LIPix4" />
 
