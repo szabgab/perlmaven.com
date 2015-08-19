@@ -140,6 +140,8 @@ And a few other related articles:
 <h3>July</h3>
 <ul>
   <li>2015.07.26 <a href="http://varlogrant.blogspot.cz/2015/07/what-i-learned-from-perlbrew.html">What I learned from perlbrew </a> by Dave Jacoby</li>
+  <li>2015.07.31 <a href="http://blogs.perl.org/users/alberto_simoes/2015/07/cpan-prc-july-is-datadump.html">CPAN PRC: July is Data::Dump</a> by Alberto Simões</li>
+  <li>2015.07.31 <a href="https://www.doyleyoung.net/cpan-pull-request-challenge-july/">CPAN Pull Request Challenge - July</a> by Doyle Young</li>
 </ul>
 
 <!-- Template for adding new blogposts:
