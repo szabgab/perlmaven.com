@@ -1,6 +1,6 @@
 =title Sending email with attachments
 =timestamp 2015-08-20T20:05:08
-=indexes application
+=indexes MIME::Lite, File::Slurp, Pod::Usage, File::Basename, Getopt::Long
 =tags screencast
 =status show
 =books beginner_video
@@ -26,6 +26,6 @@ Sending email with attachments.
 This is a rather old video. Today, I'd  use
 <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a> instead of File::Slurp,
 and
-<a href="https://metacpan.org/pod/Email::Stuffer</a>Email::Suffer</a> instead of MIME::Lite.
+<a href="https://metacpan.org/pod/Email::Stuffer">Email::Suffer</a> instead of MIME::Lite.
 
 
