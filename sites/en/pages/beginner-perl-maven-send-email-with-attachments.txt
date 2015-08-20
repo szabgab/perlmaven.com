@@ -1,0 +1,16 @@
+=title Sending email with attachments
+=timestamp 2015-08-17T20:05:08
+=indexes application
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Sending email with attachments
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/send-email-with-attachments" />
