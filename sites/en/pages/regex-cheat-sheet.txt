@@ -54,7 +54,7 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
    a{n}        n           'a' characters
 </code>
 
-"Quantifier-modifier" aka. Minimal Matching
+<h2>"Quantifier-modifier" aka. Minimal Matching</h2>
 
 <code>
    a+?
