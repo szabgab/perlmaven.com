@@ -54,6 +54,18 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
    a{n}        n           'a' characters
 </code>
 
+"Quantifier-modifier" aka. Minimal Matching
+
+<code>
+   a+?
+   a*?
+   a{n,m}?
+   a{n,}?
+
+   a?? 
+   a{n}?
+</code>
+
 <h2>Other</h2>
 
 <code>
@@ -126,4 +138,12 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
   <li><a href="/understanding-regular-expressions-found-in-getopt-std">Understanding Regular Expressions found in Getopt::Std</a></li>
   <li><a href="/pro/email-validation-using-regular-expression-in-perl">Email validation using Regular Expression in Perl</a></li>
 </ul>
+
+<h2>Official documentation</h2>
+
+<ul>
+  <li><a href="https://metacpan.org/pod/perlref">perlref</a></li>
+  <li><a href="https://metacpan.org/pod/perlreftut">perlreftut</a></li>
+</ul>
+
 
