@@ -271,7 +271,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li><a href="/beginner-perl-maven-reporting-diskspace-usage-on-mail-server">Reporting diskspace usage on mail server</a></li>
   <li><a href="/beginner-perl-maven-disk-usage-du">disk usage: du</a></li>
   <li><a href="/beginner-perl-maven-send-email-with-attachments">Send email with attachments</a></li>
-  <li><a href="/pro/beginner-perl/reading-excel-file">Reading Excel file</a></li>
+  <li><a href="/beginner-perl-reading-excel-file">Reading Excel file</a></li>
   <li><a href="/pro/beginner-perl/read-fixed-width-records">read fixed-width records</a></li>
   <li><a href="/pro/beginner-perl/process-config-file">Process config file</a></li>
 </ol>
