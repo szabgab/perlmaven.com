@@ -15,4 +15,4 @@
 
 =abstract end
 
-<slidecast file="/media/pro/videos/beginner-perl/application/reading-excel-file" />
+<slidecast file="/media/videos/beginner-perl/reading-excel-file" />
