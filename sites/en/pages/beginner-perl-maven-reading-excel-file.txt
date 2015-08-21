@@ -10,8 +10,8 @@
 =abstract start
 
 <a href="https://metacpan.org/pod/Spreadsheet::ParseExcel::Simple">Spreadsheet::ParseExcel::Simple</a>
-https://metacpan.org/pod/Spreadsheet::ParseExcel">Spreadsheet::ParseExcel</a>
-https://metacpan.org/pod/Spreadsheet::Read">Spreadsheet::Read</a>
+<a href="https://metacpan.org/pod/Spreadsheet::ParseExcel">Spreadsheet::ParseExcel</a>
+<a href="https://metacpan.org/pod/Spreadsheet::Read">Spreadsheet::Read</a>
 
 =abstract end
 
