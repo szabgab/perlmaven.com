@@ -9,10 +9,12 @@
 
 =abstract start
 
-<a href="https://metacpan.org/pod/Spreadsheet::ParseExcel::Simple">Spreadsheet::ParseExcel::Simple</a>
-<a href="https://metacpan.org/pod/Spreadsheet::ParseExcel">Spreadsheet::ParseExcel</a>
-<a href="https://metacpan.org/pod/Spreadsheet::Read">Spreadsheet::Read</a>
+<ul>
+  <li><a href="https://metacpan.org/pod/Spreadsheet::ParseExcel::Simple">Spreadsheet::ParseExcel::Simple</a></li>
+  <li><a href="https://metacpan.org/pod/Spreadsheet::ParseExcel">Spreadsheet::ParseExcel</a></li>
+  <li><a href="https://metacpan.org/pod/Spreadsheet::Read">Spreadsheet::Read</a></li>
+</ul>
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/reading-excel-file" />
+<slidecast file="/media/videos/beginner-perl/reading-excel-file" youtube="z3YMGnUUCes" />
