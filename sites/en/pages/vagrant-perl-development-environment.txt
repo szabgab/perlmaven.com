@@ -231,7 +231,7 @@ will be gone too. (Including any modules you might have installed.) Starting the
 In either of the 3 methods you used to stop the VirtualBox, running
 
 <code>
-$ vagran up
+$ vagrant up
 </code>
 
 will start it again.
