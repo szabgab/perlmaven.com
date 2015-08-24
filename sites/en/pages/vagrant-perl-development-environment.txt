@@ -30,7 +30,7 @@ Vagrant 1.7.4
 <code>
 VirtualBox -h | grep Manager
 Oracle VM VirtualBox Manager 5.0.2
-</codee>
+</code>
 
 though a while ago it was working like this:
 
