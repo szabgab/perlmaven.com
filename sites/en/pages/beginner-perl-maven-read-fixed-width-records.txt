@@ -1,6 +1,6 @@
-=title Read fixed width records
+=title Read fixed width records - using unpack
 =timestamp 2015-08-25T07:05:12
-=indexes application
+=indexes unpack 
 =tags screencast
 =status show
 =books beginner_video
@@ -9,8 +9,8 @@
 
 =abstract start
 
-read-fixed-width-records
+read fixed width records
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/read-fixed-width-records" />
+<slidecast file="/media/videos/beginner-perl/read-fixed-width-records" youtube="avpjW-a0meM" />
