@@ -1,0 +1,16 @@
+=title Read fixed width records
+=timestamp 2015-08-25T07:05:12
+=indexes application
+=tags screencast
+=status show
+=books beginner_video
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+read-fixed-width-records
+
+=abstract end
+
+<slidecast file="/media/videos/beginner-perl/read-fixed-width-records" />
