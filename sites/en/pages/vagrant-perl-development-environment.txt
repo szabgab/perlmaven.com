@@ -59,7 +59,7 @@ say 'Hello World';
 </code>
 
 
-The following command will initialize the directory to use Vagrant with the specific image I've created for Perl development.
+The following command will initialize the directory to use Vagrant with <a href="https://github.com/szabgab/PDE">the specific image I've created for Perl development</a>.
 
 <code>
 $ vagrant init szabgab/pde
