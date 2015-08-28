@@ -94,6 +94,7 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
    \Z          End of string (or before new-line)
    \z          End of string
    \b          Word boundary (start-of-word or end-of-word)
+   \G          Match only at pos():  at the end-of-match position of prior m//g
 </code>
 
 <h2>Modifiers</h2>
