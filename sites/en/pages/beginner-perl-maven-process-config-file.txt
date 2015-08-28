@@ -13,4 +13,4 @@ process-config-file
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/process-config-file" />
+<slidecast file="/media/videos/beginner-perl/process-config-file" youtube="JDSX2YM5WuA" />
