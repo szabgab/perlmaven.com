@@ -144,6 +144,11 @@ And a few other related articles:
   <li>2015.07.31 <a href="https://www.doyleyoung.net/cpan-pull-request-challenge-july/">CPAN Pull Request Challenge - July</a> by Doyle Young</li>
 </ul>
 
+<h3>August</h3>
+<ul>
+  <li>2015.08.19 <a href="http://varlogrant.blogspot.cz/2015/08/i-need-to-write-this-up-to-understand.html">I Need To Write This Up To Understand It, or The Epic Battle between Wat and Derp!</a> by Dave Jacoby</li>
+</ul>
+
 <!-- Template for adding new blogposts:
   <li>2015.. <a href=""></a> by </li>
 -->
