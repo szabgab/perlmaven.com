@@ -1,4 +1,4 @@
-=title Errores y warnings tipicos en Perl
+=title Errores y warnings típicos en Perl
 =timestamp 2015-07-04T20:22:01
 =indexes 
 =status show
