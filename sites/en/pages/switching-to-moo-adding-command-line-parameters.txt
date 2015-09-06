@@ -49,7 +49,7 @@ Currently the script expects exactly one parameter, the path to the mail directo
 
 We remove the line that gets the parameter from the command line, 
 <hl>my $path_to_dir = shift or die "Usage: $0 path/to/mail\n";</hl>
-we won't need to do it ourself any more. 
+we won't need to do it ourselves any more. 
 
 Instead we add the declaration of the "path" option:
 
@@ -113,7 +113,7 @@ exit if defined $self->limit and $count > $self->limit;
 
 We only compare <hl>$count</hl> with limit if there was a limit set.
 
-Now if we run the script as above it will take a looong time (almost 4 minutes for me)
+Now if we run the script as above it will take a long time (almost 4 minutes for me)
 because it processes all the files. If we want to limit it to the first 20
 we also need to pass <hl>--limit 20</hl> on the command line.
 

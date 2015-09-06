@@ -12,7 +12,7 @@
 but what if the values we would like to sort are strings, but we would like to sort based on some number
 which is part of the string?
 
-For example what if we have an array containg values such as <hl>foo_11 bar_2 moo_3</hl>. How can we sort this
+For example what if we have an array containing values such as <hl>foo_11 bar_2 moo_3</hl>. How can we sort this
 based on the numbers?
 
 =abstract end
@@ -85,7 +85,7 @@ say $number;
 
 printing <hl>2</hl>.
 
-Unfortunataly the <hl><=></hl>, the spaceship operator will create scalar context on both of its sides.
+Unfortunately the <hl><=></hl>, the spaceship operator will create scalar context on both of its sides.
 
 So how can we extract the value in scalar context?
 We can do that using <a href="/perl-split">array slices</a> on-the-fly:
@@ -131,11 +131,11 @@ my @y = sort { (($a =~ /(\d+)/)[0] || 0) <=> (($b =~ /(\d+)/)[0] || 0) } @x;
 
 <h2>Speed</h2>
 
-He also poined out that the Regex engine is "slow" and thus we can improve the
+He also pointed out that the Regex engine is "slow" and thus we can improve the
 speed of the expression by using the <a href="/how-to-sort-faster-in-perl">Schwartzian transform</a>.
 He pointed out that if the array has at least 5 elements, using the Schwartzian transform is faster. If it has 20 elements is twice as fast as the simple sort.
 
-The soultion he gave looks like this:
+The solution he gave looks like this:
 
 <code lang="perl">
 my @y = map { $_->[1] }
@@ -150,10 +150,10 @@ code has any impact on the overall performance of the application. If not, then 
 
 In this case however I am not sure if the original version (especially after setting 0 as a default) is more
 readable that the one using the Schwartzian transform. That's because the expression to get the value we can use
-in the comparision is itself complex. In the original version we have two copies of the expression. In the Schwartzian transform
+in the comparison is itself complex. In the original version we have two copies of the expression. In the Schwartzian transform
 we only have one copy.
 
-Maybe this version, where we move the complex expression in a subroution, is even more readable:
+Maybe this version, where we move the complex expression in a subroutine, is even more readable:
 
 <code lang="perl">
 my @y = sort { getnum($a) <=> getnum($b) } @x;
@@ -167,7 +167,7 @@ sub getnum {
 
 <h2>Hiding the sort in a sub</h2>
 
-Another solution Octavian sent to me was using a separate subroution to hide the implementation details of the sort:
+Another solution Octavian sent to me was using a separate subroutine to hide the implementation details of the sort:
 
 <code lang="perl">
 my @y = sort by_number @x;
@@ -181,7 +181,7 @@ sub by_number {
 </code>
 
 The advantage of this is that you can use the same sort in many different places,
-while implementing it only once and if the name of the subroutin explains the sort,
+while implementing it only once and if the name of the subroutine explains the sort,
 then most people won't even need to look at the implementation.
 A common trait of subroutines.
 

@@ -80,7 +80,7 @@ fi
 (Remember to put " around the $@ or it will incorrectly handle command-line parameters
 with spaces in them, like "Perl Maven")
 
-See other <a href="http://tldp.org/LDP/abs/html/comparison-ops.html">comparision operators</a>.
+See other <a href="http://tldp.org/LDP/abs/html/comparison-ops.html">comparison operators</a>.
  
 <h2>for loop</h2>
 
@@ -128,7 +128,7 @@ but I am not yet sure why.
 
 Also always double quote your variables, always (unless you have a good reason not to - which
 requires you to know the reason. if you don't, quote your variables.) And using lowercase or
-camel case variable names avoids accidential overriding of environment variables.
+camel case variable names avoids accidental overriding of environment variables.
 
 <h2>Thanks</h2>
 

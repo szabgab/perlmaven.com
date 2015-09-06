@@ -145,7 +145,7 @@ The last step in this part of the code is to print the contents of the <hl>%data
 to send it back to the browser. We do this only to verify we managed to capture the values
 as they were submitted.
 
-<h3>Validation in Javascript?</h3>
+<h3>Validation in JavaScript?</h3>
 
 It is nice to provide this validation in some JavaScript that comes with the form.
 That can improve usability, but it does <b>NOT</b> provide the necessary protection
@@ -164,7 +164,7 @@ You might have noticed, the first line of the form processing code, the sh-bang 
 ended with <hl>-T</hl>. This flag is called the <hl>Taint mode</hl>. It helps you make
 your code more secure by restricting certain operations. For example, the e-mail sending
 code executes an external program. As we cannot fully trust the environment variables,
-the taint mode requires us to set the <hl>PATH</hl> environment variable by ourself.
+the taint mode requires us to set the <hl>PATH</hl> environment variable by ourselves.
 As we don't really need it for our script, we just set it to nothing: <hl>$ENV{PATH} = '';</hl>.
 
 <code lang="perl">

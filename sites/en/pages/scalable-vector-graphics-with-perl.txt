@@ -89,10 +89,10 @@ The result look like this:
 
 <code lang="perl">
 # add a circle with style
-#  fill is the color used tof fill the circle
+#  fill is the color used to fill the circle
 #  stroke is the color of the line used to draw the circle
 #     these both can be either a name of a color or an RGB triplet
-#  stroke-width is a non-negative integer, thw width of thr drawing line
+#  stroke-width is a non-negative integer, the width of the drawing line
 #  stroke-opacity and fill-opacity are floating point numbers between 0 and 1.
 #     1 means the line is totally opaque
 #     0 means the line is totally transparent
@@ -155,7 +155,7 @@ Set the 'fill-opacity' of the circle and that of the polygon to 0.5.
 
 <h2>JavaScript</h2>
 
-If you are intersted, I've also written an article showing <a href="http://code-maven.com/svg-with-javascript">how to create SVG images using JavaScript</a>
+If you are interested, I've also written an article showing <a href="http://code-maven.com/svg-with-javascript">how to create SVG images using JavaScript</a>
 
 
 <h2>For the Norwegian readers out there</h2>

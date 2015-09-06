@@ -46,7 +46,7 @@ MetaCPAN::SCO
 </code>
 
 This is the content of the page and it is plain text. To make the page really HTML we need to add some HTML-tags before and after.
-Every web page in a web project have some common attributes. If nothing else then the html tag at the beginnig of each file and the
+Every web page in a web project have some common attributes. If nothing else then the html tag at the beginning of each file and the
 closing html tag at the end. Usually though a lot more parts are common. In order to avoid repeating the same HTML code
 we can put these common elements in separate files and then include them in the main file. Even better Template::Toolkit understand
 that the beginning and the ending of each page is similar and allows us to configure templates to be processed before and
@@ -86,7 +86,7 @@ Calling it 3 times will return <hl/home/gabor/work/MetaCPAN-SCO</hl>, the root o
 of <hl>dirname</hl> always bothered me.)
 
 The constructor of <a href="https://metacpan.org/pod/Template">Template</a>, the main module of Template::Toolkit, accepts a number
-of paramters. <hl>INCLUDE_PATH</hl> is the path to the directory where it is going to look for templates. We just pass to it
+of parameters. <hl>INCLUDE_PATH</hl> is the path to the directory where it is going to look for templates. We just pass to it
 a full path to the <hl>tt/</hl> directory of our project.
 
 We set <hl>INTERPOLATE</hl>  to 0, to avoid expanding strings that look like perl scalars (e.g. <hl>$var</hl>).
@@ -106,7 +106,7 @@ header.tt and footer.tt files relative to the directory provided in the <hl>INCL
 <hl>$tt</hl> will hold the Template object.
 
 We call the <hl>process</hl> method of this object with 3 parameters. The first one is the name of the template file.
-It is the value our <hl>template()</hl> function received with the <hl>.tt</hl> extension. The second paramer is a hash
+It is the value our <hl>template()</hl> function received with the <hl>.tt</hl> extension. The second parameter is a hash
 reference where later we'll pass the values to be inserted into the template. The 3rd parameter is a reference to an empty
 scalar variable. The result of the processing will be placed in this variable. As I did not have better idea, I called <hl>die</hl>
 in case the process method returned failure. In a web context this might not be a good idea. We might be better off sending back

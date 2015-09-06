@@ -208,8 +208,8 @@ was discussed at the <a href="http://act.qa-hackathon.org/qa2013/">QA Hackathon 
 One problem is that if I, as the author of the module under test, forget to install the specific test-related module, then the test will be skipped,
 almost silently and I won't notice if I broke some of the requirements I've set to myself.
 
-<a href="http://dzil.org/">Dist::Zilla</a> provides some nice facilities to allow the authot to configure in the dist.ini file certain standard test,
-and then Dist::Zilla will generate appropriate test files in the <hl>xt/</hl> diretory of the release and run these test during the release process.
+<a href="http://dzil.org/">Dist::Zilla</a> provides some nice facilities to allow the author to configure in the dist.ini file certain standard test,
+and then Dist::Zilla will generate appropriate test files in the <hl>xt/</hl> directory of the release and run these test during the release process.
 
 Dist::Zilla will also set both the AUTHOR_TESTING and RELEASE_TESTING environment variables to <a href="/boolean-values-in-perl">true</a> which can
 be used in other test script to run certain test only during the release process.

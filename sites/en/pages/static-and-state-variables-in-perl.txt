@@ -223,7 +223,7 @@ outside the enclosing block can access it.
 
 As of now, you cannot use the <hl>state</hl> declaration in list context.
 This means you cannot write <hl>state @y = (1, 1);</hl>. This limitation could be overcome by
-some extra coding. For example in this implementation of the Fibinacci series, we checked if the
+some extra coding. For example in this implementation of the Fibonacci series, we checked if the
 array is empty and set the default values:
 
 <code lang="perl">

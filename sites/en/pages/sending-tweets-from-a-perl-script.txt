@@ -48,7 +48,7 @@ Fill in the form. I used the following:
 Name: Perl Maven Example
 Description: Test Application for Perl Maven
 Website: http://perlmaven.com/
-Callbak URL:
+Callback URL:
 </code>
 
 Then I had to read the <b>Developer Rules of the Road</b> at the bottom of that page, click on the checkbox
