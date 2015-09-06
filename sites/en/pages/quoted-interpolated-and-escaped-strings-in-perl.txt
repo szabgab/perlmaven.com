@@ -9,7 +9,7 @@
 =abstract start
 
 Understanding how strings work is important in every programming language, but in Perl they are
-part of the essence of the language. Especially if you consider that one of the backronimes of Perl
+part of the essence of the language. Especially if you consider that one of the acronyms of Perl
 is <b>Practical Extraction and Reporting Language</b> and for that you need to use lots of strings.
 
 =abstract end

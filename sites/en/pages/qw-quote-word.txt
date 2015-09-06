@@ -74,7 +74,7 @@ On the other hand this is going to be a 4-element array:
 my @name = qw(foo bar zorg morg);
 </code>
 
-So <hl>qw</hl> does not allow spaces in the string as it looks for space-delimitered "words".
+So <hl>qw</hl> does not allow spaces in the string as it looks for space-delimited "words".
 
 On the other hand the "letters" can be any other character.
 
