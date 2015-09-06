@@ -226,7 +226,7 @@ and <a href="http://www.staff.science.uu.nl/~penni101/mirmon/">mirmon</a> to mon
 </div>
 
 <div class="perl-product">
-<a href="http://www.yaala.org/">Yaala</a> is an analyser for all kinds of logfiles. As I can see there has been no major activity on the mailing list
+<a href="http://www.yaala.org/">Yaala</a> is an analyzer for all kinds of logfiles. As I can see there has been no major activity on the mailing list
 at all.
 </div>
 

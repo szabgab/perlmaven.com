@@ -64,7 +64,7 @@ This module is considered legacy; modern Perl releases (5.18 and higher) are goi
 
 <a href="https://metacpan.org/pod/Pod::CYOA">Pod::CYOA</a> Pod-based Choose Your Own Adventure website generator
 
-<a href="https://metacpan.org/release/Pod-PXML">Pod::PXML</a> Convert betwen POD and XML. (no release since 2004)
+<a href="https://metacpan.org/release/Pod-PXML">Pod::PXML</a> Convert between POD and XML. (no release since 2004)
 
 <a href="https://metacpan.org/pod/Pod::Help">Pod::Help</a> Perl module to automate POD display.
 
