@@ -11,7 +11,7 @@ Given a <hl>&lt;rlnrp:cell=all;</hl> (look at the first line of the file)
 type data file describing relationships between GSM cells,
 we need to flatten the multi-line records. Probably in order to import them into a database.
 
-Such tasks are often required by enginners in telco companies or companies that support them.
+Such tasks are often required by engineers in telco companies or companies that support them.
 
 =abstract end
 

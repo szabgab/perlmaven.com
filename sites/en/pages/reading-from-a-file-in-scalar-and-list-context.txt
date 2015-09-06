@@ -7,14 +7,14 @@
 
 =abstract start
 
-I have prevously written about <a href="/scalar-and-list-context-in-perl">scalar and list context in Perl</a>, how
+I have previously written about <a href="/scalar-and-list-context-in-perl">scalar and list context in Perl</a>, how
 <a href="/the-year-19100">localtime behaves in scalar and list context</a> and what an array returns in scalar context.
 
 This time we'll look at <hl><$fh></hl>, the readline operator of Perl in scalar and list context.
 
 =abstract end
 
-In this article you'll see how the readline operator works in scalar and list contex, but if you need
+In this article you'll see how the readline operator works in scalar and list context, but if you need
 to read in the whole content of a file into a scalar variable or into an array, you might be better off
 <a href="/pro/use-path-tiny-to-read-and-write-file">using Path::Tiny</a>. It will make your code look
 nicer.
@@ -78,7 +78,7 @@ Then, instead of using a <a href="/while-loop">while-loop</a> we use a foreach l
 <h2>Which one is better?</h2>
 
 In almost all the cases we would use the first approach, reading the file line-by-line. If we read the whole file into an array this means
-we use as much memory as the size of the file. If this is a big file (a few Gb-s) then this would probably not work. On the other hand
+we use as much memory as the size of the file. If this is a big file (a few GB-s) then this would probably not work. On the other hand
 when we read the file line-by-line as in the first case, we only need to hold in the memory one line at a time.
 
 Nevertheless, there can be cases when it is much easier to process a file when all of it is in memory. For example if we need to

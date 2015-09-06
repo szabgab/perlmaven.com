@@ -94,7 +94,7 @@ So in order to express the 3 common quantifiers we could use the curly braces:
 *  =  {0,}
 </code>
 
-Of coure in these cases it is much shorter and clearer to use the 3 common quantifiers than the curly braces.
+Of course in these cases it is much shorter and clearer to use the 3 common quantifiers than the curly braces.
 
 
 <h2>Quantifier table</h2>
