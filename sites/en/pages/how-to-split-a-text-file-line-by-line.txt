@@ -1,0 +1,38 @@
+=title How to split a text file line by line in Perl
+=timestamp 2015-09-07T07:30:01
+=indexes split, open
+=status draft
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+A commonly asked question is "how to split a text file line by line".
+
+=abstract end
+
+Normally you would read the file line by line, so the code is:
+
+<code lang="perl">
+open my $in, "<:encoding(utf8)", $file or die "$file: $!";
+while (my $line = <$in>) {
+    chomp $line;
+    # ...
+}
+close $in;
+</code>
+
+Alternatively you might want to read the whole file into memory at once
+and hold it in an array where each line is a separate element:
+
+<code lang="perl">
+open my $in, "<:encoding(utf8)", $file or die "$file: $!";
+my @lines = <$in>;
+close $in;
+
+chomp @lines;
+for my $line (@lines) {
+    # ...
+}
+</code>
