@@ -54,8 +54,8 @@ For examples, see the three articles above.
 
 <h2>hidden strict</h2>
 
-Ther are a number of modules that if you <hl>use</hl> them in a file, it will 
-automatically and impicitely turn <hl>use strict</hl> on in that specific file.
+There are a number of modules that if you <hl>use</hl> them in a file, it will 
+automatically and implicitly turn <hl>use strict</hl> on in that specific file.
 
 Among the modules are <a href="/moose">Moose</a>,
 <a href="/moo">Moo</a>, <a href="https://metacpan.org/pod/Dancer">Dancer</a>,

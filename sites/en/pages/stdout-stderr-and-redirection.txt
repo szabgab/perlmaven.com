@@ -20,7 +20,7 @@ and <b>redirect</b> one or both of them to a file.
 The idea is, that the regular output of the application goes to the Output channel,
 and all the warnings and error messages go to the Error channel.
 
-As a programmer you need to decide which output is considerd being part of the regular
+As a programmer you need to decide which output is considered being part of the regular
 flow of your program. You will send that to the Standard Output channel. The rest, that
 are the irregularities, will be sent to the Standard Error channel.
 
@@ -124,7 +124,7 @@ system will help you disregard all the "garbage".
 
 <hl>perl program.pl 2> /dev/null</hl>
 
-<h2>nul on MS Windows</h2>
+<h2>null on MS Windows</h2>
 
 On MS Windows the counterpart of <hl>/dev/null</hl> is just plain <hl>nul</hl>
 

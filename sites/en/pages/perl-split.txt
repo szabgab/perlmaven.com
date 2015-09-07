@@ -77,7 +77,7 @@ $VAR1 = [
 <h2>Assign to scalars</h2>
 
 Instead of assigning the result to a single array, we can also assign
-it to a list os scalar variables:
+it to a list of scalar variables:
 
 <code lang="perl">
 my $str = "root:*:0:0:System Administrator:/var/root:/bin/sh";

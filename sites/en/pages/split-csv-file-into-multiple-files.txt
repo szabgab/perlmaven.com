@@ -84,7 +84,7 @@ In a more generic solution, we'd probably get the name of the input file, the si
 but in this example we can use hard-coded values.
 
 If you are not yet familiar with Text::CSV, there is another article that shows <a href="/how-to-read-a-csv-file-using-perl">how to read a CSV file</a> 
-with some more explanation. In a nutshell <hl>$row</hl> always containg a reference to an ARRAY and each element in that array is a field from the current line in the
+with some more explanation. In a nutshell <hl>$row</hl> always containing a reference to an ARRAY and each element in that array is a field from the current line in the
 CSV file.
 
 <h2>Splitting vertically</h2>

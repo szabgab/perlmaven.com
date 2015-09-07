@@ -59,7 +59,7 @@ Hi, The number of sheets by itself (if not limited) does not have
 a big impact on the size of the workbook, if each sheet does not
 contain too much data. Doing more testing with the setting I have,
 I can see that the maximum number of sheets that Spreadsheet::WriteExcel
-can create go upto 247 sheets, but no more, without the resulting workbook being empty.
+can create go up to 247 sheets, but no more, without the resulting workbook being empty.
 The resulting size is less than 3MB.
 Really I doubt that Spreadsheet::WriteExcel explicitly limit the number of sheets it can create.
 The documentation states the/a solution to the "File with a size of 0 Byte" issue,
@@ -108,7 +108,7 @@ Also I always enable warning using the '-w' switch. Even with warnings on,
 S::WE (As you name it :) ) does not generate any warnings.
 As I pointed it out in one of my previous post, S::WE keeps accepting
 new sheet w/o complaining. Currently I am using version 2.11 of the Spreadsheet::WriteExcel.
-So for short, you're saiying that If it was a system limit causing this
+So for short, you're saying that If it was a system limit causing this
 than S:WE will be generating warning(s).
 If that's the current behaviour of S::WE, then I'm lost :) Do you think it is
 worth trying the *latest* version of Spreadsheet::WriteExcel ? TIA.
@@ -227,7 +227,7 @@ Posted on 2006-03-30 14:06:24-08 by jmcnamara in response to 2081
 Failed to created file number 254.
 
 This is the same limit that S::WE is encountering. I don't know why it is
-appoximately 256 and not 1024 as indicated by ulimit. Perhaps there is a smaller limit per process.
+approximately 256 and not 1024 as indicated by ulimit. Perhaps there is a smaller limit per process.
 
 Anyway, the 253 file limit indicated by the above program is also the limit
 to the number of worksheets that you can add. If you can increase this

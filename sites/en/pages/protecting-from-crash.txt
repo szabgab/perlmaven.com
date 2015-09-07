@@ -24,7 +24,7 @@ Error open (<:raw:encoding(UTF-8)) on '/Users/gabor/work/MetaCPAN-SCO/totals.jso
 
 Right, so apparently I have removed the <hl>totals.json</hl> form the root of the application and when I tried to load the main
 page it could not find the file and died when the object returned by <hl>path</hl> tried open in for reading.
-We should either make lots of checks: Does the file exist? Can it be opened? Is the content JSON? Can it be convered to Perl data structure?
+We should either make lots of checks: Does the file exist? Can it be opened? Is the content JSON? Can it be converted to Perl data structure?
 Or, we should wrap the whole thing in an eval-block and check if we have received an exception
 from either the <hl>open</hl> or from the <hl>from_json</hl>.
 

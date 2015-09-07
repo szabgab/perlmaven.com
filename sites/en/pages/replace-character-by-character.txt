@@ -70,7 +70,7 @@ read about in the <a href="/perldoc/tr">documentation of tr</a>.
 <h2>When is tr better than a regex?</h2>
 
 <hl>tr</hl> replaces character-by-character while a regex substitution will replace a match with a string.
-They do different things. So <hl>tr</hl> is only better if you want to do something els.
+They do different things. So <hl>tr</hl> is only better if you want to do something else.
 
 BTW you can imitate what <hl>tr</hl> does using a regex substitution with the following code:
 
@@ -92,10 +92,10 @@ say $text;
 </code>
 
 Here we have a hash called <hl>%map</hl> that maps the original string (original character) to the new string (character)
-and then uses a single global substitution to replace all the occurences of every "original character" by the corresponding
+and then uses a single global substitution to replace all the occurrences of every "original character" by the corresponding
 "new character".
 
-Note, that in this solution we actually had to write the list of "orginal characters" both in the <hl>%map</hl> and in the regex.
+Note, that in this solution we actually had to write the list of "original characters" both in the <hl>%map</hl> and in the regex.
 In order to avoid that we can have a more generic solution:
 
 <code lang="perl">

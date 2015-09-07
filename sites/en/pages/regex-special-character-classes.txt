@@ -16,7 +16,7 @@ that will make the code shorter and more readable.
 
 <h2>\d - digit - [0-9]</h2>
 
-<hl>\d</hl> stands for "digit". It is the same as <hl>[0-9]</hl> except that it is much shorter to write and easier to reaad.
+<hl>\d</hl> stands for "digit". It is the same as <hl>[0-9]</hl> except that it is much shorter to write and easier to read.
 So the regex <hl>/\d/</hl> would match a single digit. There are two ways to use this special character class.
 One is stand-alone as we just saw it or in this example: <hl>/#[XYZ]-\d\d\d/</hl> that will match strings like these:
 
@@ -25,7 +25,7 @@ One is stand-alone as we just saw it or in this example: <hl>/#[XYZ]-\d\d\d/</hl
 #Y-666
 </code>
 
-In this case we can put quantifiers on the character class. For exampl <hl>/#[XYZ]-\d{3}/</hl>  would mean the same as the previous
+In this case we can put quantifiers on the character class. For example <hl>/#[XYZ]-\d{3}/</hl>  would mean the same as the previous
 regex and <hl>/#[XYZ]-\d+/</hl> would allow any number of digits (at least one) after the dash.
 
 
@@ -52,7 +52,7 @@ so they are not exactly the same. For specific definition look at
 
 The third common character class sequence is <hl>\s</hl> representing a whitespace.
 The 5 characters it matches are horizontal tab, the newline, the form feed, the carriage return, and the space.
-In recent version of Perl there are some expermental changes that will probably not affect you. Check out the
+In recent version of Perl there are some experimental changes that will probably not affect you. Check out the
 <a href="https://metacpan.org/pod/perlrecharclass#Backslash-sequences">details</a> if in doubt.
 
 
@@ -60,12 +60,12 @@ In recent version of Perl there are some expermental changes that will probably 
 
 
 As you might <a href="/regex-character-classes">remember</a> putting a caret as the first character
-in a character-class means that the characte-class is negated. It will match any single
+in a character-class means that the character-class is negated. It will match any single
 character <b>except</b> the ones listed. So  <hl>[^\d]</hl> would mean any non-digit character.
 
-To make it eaier to write this, perl provides the <hl>\D</hl> character-class which means exactly the same.
+To make it easier to write this, perl provides the <hl>\D</hl> character-class which means exactly the same.
 
-Similar to <hl>\D</hl> there are also negated versions of the other two charcter classes:
+Similar to <hl>\D</hl> there are also negated versions of the other two character classes:
 
 <code>
 Character Class        Negated      Meaning
@@ -81,7 +81,7 @@ Character Class        Negated      Meaning
 
 <a href="http://en.wikipedia.org/wiki/POSIX">POSIX</a> is a family of standards for maintaining compatibility between operating systems.
 Among other things it also specifies a number of "groups of characters" with a name. It has groups called
-<hl>alpha</hl>, <hl>alnum</hl>, etc. Perl provides special sequneces to match a single character in one of these groups.
+<hl>alpha</hl>, <hl>alnum</hl>, etc. Perl provides special sequences to match a single character in one of these groups.
 
 The syntax is <hl>[:alpha:]</hl> to match a single character from the group called <hl>alpha</hl>.
 
@@ -105,7 +105,7 @@ You can use these as stand-alone character classes <hl>/\p{Thai}/</hl> or as par
 
 
 There are, of course, a lot more details, so if you need to handle interesting characters, 
-you shuld read the <a href="https://metacpan.org/pod/perlrecharclass#Unicode-Properties">documentation</a>
+you should read the <a href="https://metacpan.org/pod/perlrecharclass#Unicode-Properties">documentation</a>
 
 <code>
 Expression    Meaning                                              Usage

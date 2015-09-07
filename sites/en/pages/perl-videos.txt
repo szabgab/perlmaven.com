@@ -1,6 +1,6 @@
 =title Perl videos and screencasts
 =timestamp 2015-09-06T11:45:56
-=description Videos and screencasts about the Perl programmin language
+=description Videos and screencasts about the Perl programming language
 =tags video, screencast
 =status show
 =author szabgab

@@ -16,7 +16,7 @@ Is there information for beginners like myself who are trying to get started
 with Apple's Terminal and Perl and ExifTool all at the same time.
 I am really only interested in one feature at the moment and that
 is extracting JPEGs from CANON RAW image files.
-I have tried to follow the directions but I have been unsucessful and it's getting
+I have tried to follow the directions but I have been unsuccessful and it's getting
 quite painful. I would appreciate tutoring
 as my real work is photography and not computer programming.
 

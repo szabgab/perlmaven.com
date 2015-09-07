@@ -27,7 +27,7 @@ is not explained in the documentation what each of these mean.
 
 The <hl>sec</hl>, <hl>min</hl>, etc values are the seconds, minutes, etc. values of the time that we would like to use.
 
-These numbers can come frome any place, but they are actually corresponding to the values returned by either the
+These numbers can come from any place, but they are actually corresponding to the values returned by either the
 <hl>localtime</hl> or the <hl>gmtime</hl> functions in <a href="/scalar-and-list-context-in-perl">LIST context</a>.
 
 A simple example would be:
@@ -45,9 +45,9 @@ This creates (and the <hl>say</hl> prints) a string based on the years, month an
 at the time of running the script.
 
 If you are creating logfiles, or basically any other timestamp, it is probably much better to use the YYYY-MM-DD format
-instead of the British DD/MM/YYYY or the Amercian MM/DD/YYYY. Neither of those can be easily sorted and because both
-exists theya re extremly confusing. The YYYY-MM-DD is how Hungarians write it and therefore it is much better.
-(Remember other <a href="http://en.wikipedia.org/wiki/Hungarian_notation">Hungarian Notiations</a>, right?).
+instead of the British DD/MM/YYYY or the American MM/DD/YYYY. Neither of those can be easily sorted and because both
+exists they are extremely confusing. The YYYY-MM-DD is how Hungarians write it and therefore it is much better.
+(Remember other <a href="http://en.wikipedia.org/wiki/Hungarian_notation">Hungarian Notations</a>, right?).
 It also happens to correspond to the <a href="http://xkcd.com/1179/">ISO standard</a>.
 
 Another very useful format looks like this:
@@ -61,7 +61,7 @@ to think about it as <hl>YYYY-mm-dd-HH-MM-SS</hl> that will correspond to both t
 
 In a nutshell, it is Year, Month, Day, Hour, Minute, Second with 0 padding where necessary.
 
-It is very useful to create timestamps even though probably less usefule as filename. (Do you really want a new file every second?)
+It is very useful to create timestamps even though probably less useful as filename. (Do you really want a new file every second?)
 
 Oh and if you hope that this will be unique, then don't do it. With any luck after an hour of no file generation there will be two at the exact
 same second and then all the "uniqueness" is gone.

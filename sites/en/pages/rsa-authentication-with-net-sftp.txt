@@ -14,7 +14,7 @@ Posted on 2009-07-24 10:26:17-07 by cccc
 
 hi
 
-I've generated RSA key on my Debial Lenny using:
+I've generated RSA key on my Debian Lenny using:
 
 # ssh-keygen -t rsa
 

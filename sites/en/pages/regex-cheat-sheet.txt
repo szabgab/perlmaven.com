@@ -100,7 +100,7 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
 <h2>Modifiers</h2>
 
 <code>
-  /m           Change ^ and $ to macth beginning and end of line respectively
+  /m           Change ^ and $ to match beginning and end of line respectively
   /s           Change . to match new-line as well
   /i           Case insensitive pattern matching
   /x           Extended pattern (disregard white-space, allow comments starting with #)
