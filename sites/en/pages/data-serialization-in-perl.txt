@@ -88,13 +88,15 @@ it is quite good and does not have the security issue as we only serialize the d
 the binary data saved in a file to a data structure.
 
 It is faster than Data::Dumper and it parses the data instead of executing it. So it is safe.
+It has been distributed with standard perl since perl 5.8.
 Those are its advantages.
 
 The disadvantage is that it is only implemented for Perl and thus it cannot be used for
 inter-process communication if any of the processes is written in another language.
 
-It also requires a C-compiler to be installed which makes it a bit harder to install
-or to distribute.
+It requires a C-compiler to be installed which makes it a bit harder to install
+or to distribute in case you'd like to upgrade from the version that came with your
+distribution of perl.
 
 <h3 id="freezethaw">FreezeThaw</h3>
 
@@ -212,7 +214,7 @@ table .is {
 <table>
 <tr><th>Format</th>                                  <th>Standard</th>    <th>Pure Perl</th>      <th>Fast</th>        <th>Multi-language</th> <th>Secure</th>      </tr>
 <tr><td><a href="data-dumper">Data::Dumper</a></td>  <td class="ok"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="no"></td> </tr>
-<tr><td><a href="#storable">Storable</a></td>        <td class="no"></td> <td class="no"></td>    <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> </tr>
+<tr><td><a href="#storable">Storable</a></td>        <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> </tr>
 <tr><td><a href="#freezethaw">FreezeThaw</a></td>    <td class="no"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="ok"></td> </tr>
 <tr><td><a href="#yaml">YAML</a></td>                <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
 <tr><td><a href="#json">JSON</a></td>                <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
