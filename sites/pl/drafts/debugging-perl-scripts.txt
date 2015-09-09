@@ -1,0 +1,173 @@
+=title Debugging Perl scripts
+=timestamp 2013-03-07T19:45:57
+=indexes -d, Data::Dumper, print, debug, debugging, $VAR1, $VAR2
+=status show
+=books beginner
+=author szabgab
+=comments_disqus_enable 1
+=translator rozie
+=original debugging-perl-scripts
+
+=abstract start
+
+Kiedy studiowałem informatykę na uczelni, uczyliśmy się wiele o tym jak pisać programy,
+ale odkąd pamiętam nikt nie mówił nam o debugowaniu. Słyszeliśmy wiele o pięknym świecie tworzenia
+nowych rzeczy, ale nikt nie mówił nam, że większość czasu będziemy musieli spędzać na zrozumieniu
+kodu innych ludzi.
+
+Okazuje się, że o ile kochamy pisać program, to spędzamy
+o wiele więcej czasu na próbach zrozumienia co my (albo inni) piszą, i dlaczego
+zachowuje się to źle, niż na pisaniu go po raz pierwszy.
+
+=abstract end
+
+<h2>Czym jest debugowanie?</h2>
+
+Przed uruchomieniem programu wszystko było w dobrze znanym stanie.
+
+Po uruchomieniu programu coś jest jest nieoczekiwane i w złym stanie.
+
+Zadaniem jest znalezienie w którym miejscu coś poszło nie tak i poprawienie tego.
+
+<h2>Czym jest programowanie i czym jest błąd?</h2>
+
+Zasadniczo, programowanie to drobna zmiana świata przez przekazywanie danych w zmiennych.
+
+In every step of the program we change some data in a variable in the program, or something in the "real world".
+(For example on the disk or on the screen.)
+
+When you write a program you think through each step: what value should be moved to which variable.
+
+A bug is a case when you thought you put value X in some variable while in reality value Y went in.
+
+At one point, usually at the end of the program, you can see this as the program printed an incorrect value.
+
+During the execution of the program it can manifest in the appearance of a warning or in abnormal termination of the program.
+
+<h2>How to debug?</h2>
+
+The most straight forward way to debug a program is to run it, and at every step to check if all the variables
+hold the expected values. You can do that either <b>using a debugger</b> or you can embed <b>print statements</b> in the
+program and examine the output later.
+
+Perl comes with a very powerful command-line debugger. While I recommend learning it,
+it can be a bit intimidating at first. I prepared a video where I show the
+<a href="/using-the-built-in-debugger-of-perl">basic commands of the built-in debugger of Perl</a>.
+
+IDEs, such as <a href="http://www.activestate.com/">Komodo</a>,
+<a href="http://eclipse.org/">Eclipse</a> and
+<a href="http://padre.perlide.org/">Padre, the Perl IDE</a> come
+with a graphical debugger. At some point I'll prepare a video for some of those as well.
+
+<h2>Print statements</h2>
+
+Many people are using the age-old strategy of adding print statements to the code.
+
+In a language where the compilation and building can take a lot of time print statements
+are considered a bad way to debug code.
+Not so in Perl, where even large application compile and start running within a few seconds.
+
+When adding print statements one should take care of adding delimiters around the values. That will catch the
+case when there are leading or trailing spaces in the value that cause the problem.
+Those are hard to notice without a delimiter:
+
+Scalar values can be printed like this:
+
+<code lang="perl">
+print "<$file_name>\n";
+</code>
+
+Here the less than and greater than signs are there only to make it easier for the reader
+to see the exact content of the variable:
+
+<code>
+<path/to/file
+>
+</code>
+
+If the above is printed you can quickly notice that there is a trailing newline at the end of the $file_name
+variable. Probably you forgot to call <b>chomp</b>.
+
+<h2>Complex data structures</h2>
+
+We have not learned even scalars yet, but let me jump ahead here and show how you would
+print out the content of the more complex data structures. If you are reading this
+as part of the Perl tutorial then you probably want to skip to the next entry and come back later.
+This won't mean too much to you now.
+
+Otherwise, keep reading.
+
+For complex data structures (references, arrays and hashes) you can use the <hl>Data::Dumper</hl>
+
+<code lang="perl">
+use Data::Dumper qw(Dumper);
+
+print Dumper \@an_array;
+print Dumper \%a_hash;
+print Dumper $a_reference;
+</code>
+
+These will print something like this, which helps understand the content of the variables,
+but shows only a generic variable name such as <hl>$VAR1</hl> and <hl>$VAR2</hl>.
+
+<code>
+$VAR1 = [
+       'a',
+       'b',
+       'c'
+     ];
+$VAR1 = {
+       'a' => 1,
+       'b' => 2
+     };
+$VAR1 = {
+       'c' => 3,
+       'd' => 4
+     };
+</code>
+
+I'd recommend adding some more code and printing the name of the variable like this:
+
+<code lang="perl">
+print '@an_array: ' . Dumper \@an_array;
+</code>
+
+to gain:
+
+<code>
+@an_array: $VAR1 = [
+        'a',
+        'b',
+        'c'
+      ];
+</code>
+
+or with Data::Dumper like this:
+
+<code lang="perl">
+print Data::Dumper->Dump([\@an_array, \%a_hash, $a_reference],
+   [qw(an_array a_hash a_reference)]);
+</code>
+
+getting
+
+<code>
+$an_array = [
+            'a',
+            'b',
+            'c'
+          ];
+$a_hash = {
+          'a' => 1,
+          'b' => 2
+        };
+$a_reference = {
+               'c' => 3,
+               'd' => 4
+             };
+</code>
+
+There are nicer ways to print data structures but at this point <hl>Data::Dumper</hl>
+is good enough for our needs and it is available in every perl installation.
+We'll discuss other methods later on.
+
