@@ -10,7 +10,7 @@
 
 =abstract start
 
-Programiści zwykle nie lubią pisać dokumentajcji. Częściowo z tego powodu, że
+Programiści zwykle nie lubią pisać dokumentacji. Częściowo z tego powodu, że
 programy są zwykle plikami tekstowymi, a w wielu przypadkach od developerów
 wymaga się pisania dokumentacji w jakimś edytora tekstu.
 
@@ -55,7 +55,7 @@ Z drugiej strony, jeśli wpiszesz  <hl>perldoc script.pl</hl>, polecenie <b>perl
 zignoruje cały kod. Pobierze tylko linie pomiędzy <hl>=pod</hl> oraz <hl>=cut</hl>,
 sformatuje je według pewnych reguł i wyświetli je na ekranie.
 
-Reguły te zależą od Twojego systemu operacyjnego, ale są dokłądnie takie same jak
+Reguły te zależą od Twojego systemu operacyjnego, ale są dokładnie takie same jak
 te, które widziałeś kiedy uczyliśmy się o
 <a href="/core-perl-documentation-cpan-module-documentation">podstawowej dokumentacji Perla</a>.
 
@@ -68,10 +68,10 @@ dla siebie. Nawet na wewnętrzny użytek.
 
 Założeniem jest, że jeśli usuniesz większość przeszkód do pisania
 dokumentacji, wówczas ludzie będą pisać dokumentację. Zamiast uczyć się
-korzystania z edytora tekstu do tworzenia ładnie wyglądających dokuemntów, możesz po prostu
+korzystania z edytora tekstu do tworzenia ładnie wyglądających dokumentów, możesz po prostu
 wpisać trochę tekstu z dodatkowymi symbolami i otrzymasz rozsądnie wyglądających
 dokument. (Sprawdź domumentację na <a href="http://metacpan.org/">Meta CPAN</a>
-aby zobaczyć ładnie sformatowane wersjie POD.
+aby zobaczyć ładnie sformatowane wersje POD.
 
 <h2>Język znaczników</h2>
 
