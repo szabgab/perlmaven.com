@@ -146,6 +146,6 @@ polecenia <hl>perldoc</hl>.
 
 <h2>Podsumowanie</h2>
 
-Pisanie dokumentacji i sprawienie, by wyglądała ładnie jest jest tak trudne w Perlu.
+Pisanie dokumentacji i sprawienie, by wyglądała ładnie, nie jest tak trudne w Perlu.
 
 
