@@ -186,7 +186,8 @@ was specifically created for that.
 fast binary serialization and de-serialization of Perl data structures. According to their own measurements
 it is even faster than Storable though it has the same drawbacks:
 
-It is implemented for Perl only and it requires a C compiler to be installed.
+It is implemented for Perl and for a number of other languages. it requires a C compiler to be installed.
+For more details see the <a href="https://github.com/Sereal/Sereal">GitHub repository</a>
 
 <h3 id="data-serializer">Data::Serializer</h3>
 
@@ -234,3 +235,6 @@ that is fast. If "install-ability" is more important then pick a pure-perl imple
 
 Alternatively, you can also implement Sereal for the other languages you need, but that's probably a big task.
 
+<h2>Discussion</h2>
+
+<a href="https://www.reddit.com/r/perl/comments/3jz6lv/data_serialization_in_perl/">Reddit</a>
