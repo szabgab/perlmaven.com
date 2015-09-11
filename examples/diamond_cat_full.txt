@@ -1,0 +1,16 @@
+$ perl diamond_cat_full.pl  diamond_cat_full.pl diamond_cat.pl 
+diamond_cat_full.pl 1 use strict;
+diamond_cat_full.pl 2 use warnings;
+diamond_cat_full.pl 3 
+diamond_cat_full.pl 4 while (my $line = <>) {
+diamond_cat_full.pl 5     print "$ARGV $. $line";
+diamond_cat_full.pl 6 }
+diamond_cat_full.pl 7 
+diamond_cat.pl 8 use strict;
+diamond_cat.pl 9 use warnings;
+diamond_cat.pl 10 
+diamond_cat.pl 11 while (my $line = <>) {
+diamond_cat.pl 12     print $line;
+diamond_cat.pl 13 }
+diamond_cat.pl 14 
+
