@@ -41,7 +41,7 @@ When perl reaches the <hl>&lt;&gt;</hl> the first time it looks at the content o
 that, by default, contains the values passed on the command line. (Though we can actually change the content of
 <hl>@ARGV</hl> while our script runs.)
 
-It <a href="/manipulating-perl-arrays">shifts</hl the first element to the <hl>$ARGV</hl> scalar variable,
+It <a href="/manipulating-perl-arrays">shifts</a> the first element to the <hl>$ARGV</hl> scalar variable,
 opens the file that has its name in <hl>$ARGV</hl> and reads in the first line.
 
 Subsequent encounters with <hl>&lt;&gt;</hl> will read in subsequent lines of the same file.
