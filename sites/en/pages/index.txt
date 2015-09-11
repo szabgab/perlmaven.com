@@ -18,51 +18,20 @@ ul.horizontal li {
 }
 </style>
 
-<!--
-<div>
-<h2>Modern Web Frameworks</h2>
-<ul class="horizontal">
-  <li><a href="/mojolicious"><img src="/img/unicorn.png" alt="Mojolicious - rainbows, clouds and unicorns" title="Mojolicious - rainbows, clouds and unicorns" /></a></li>
-  <li><a href="/dancer"><img src="/img/perl_dancer.png" alt="Dancer - light-weight web framework for Perl" title="Dancer - light-weight web framework for Perl" /></a></li>
-  <li><a href="/psgi"><img src="/img/plack_psgi.png" alt="PSGI the web superglue" title="PSGI the web superglue" /></a></li>
-  <li><a href="/catalyst"><img src="/img/catalyst.png" alt="Catalyst, the Perl MVC web framework" title="Catalyst, the Perl MVC web framework" /></a></li>
-  <li><a href="/cgi"><img src="/img/cgi.png" alt="CGI - Common Gateway Interface" title="CGI - Common Gateway Interface" /></a></li>
-</ul>
-
-<h2>Object Oriented Perl</h2>
-<ul class="horizontal">
-  <li><a href="/moo"><img src="/img/cow_150x170.png" alt="Moo - the Minimalist Object Orientation system of Perl" title="Moo - the Minimalist Object Orientation system of Perl" /></a></li>
-  <li><a href="/moose"><img src="/img/moose.png" alt="Moose - the Post Modern object system of Perl" title="Moose - the Post Modern object system of Perl" /></a></li>
-</ul>
-
-
-<h2>Courses, tutorials</h2>
-
-<ul class="horizontal">
-  <li><a href="/perl-tutorial"><img src="/img/beginner_perl_maven_150x212.png" alt="Beginner Perl Maven tutorial" title="Beginner Perl Maven tutorial" /></a></li>
-  <li><a href="/beginner-perl-maven-video-course"><img src="/img/beginner_perl_maven_150x212.png" alt="Beginner Perl Maven video tutorial" title="Beginner Perl Maven video tutorial" /></a></li>
-</ul>
-
-
-<h2>Other Series</h2>
-<ul class="horizontal">
-  <li><a href="/mongodb"><img src="/img/mongodb-logo.png" alt="Perl and MongoDB" title="Perl and MongoDB" /></a></li>
-  <li><a href="/metacpan"><img src="/img/metacpan.png" alt="MetaCPAN" title="MetaCPAN" /></a></li>
-</ul>
-
-
-<h2>Projects and Collections</h2>
-<ul class="horizontal">
-  <li><a href="/search-cpan-org"><img src="/img/cpan_banner.png" alt="search.cpan.org cloning project" title="search.cpan.org cloning project" /></a></li>
-  <li><a href="/indexing-emails-in-an-mbox"><img src="/img/red_mailbox.png" alt="Indexing Mailbox" title="Indexing Mailbox" /></a></li>
-  <li><a href="/counter"><img src="/img/counter.png" alt="Counter Examples" title="Counter Examples" /></a></li>
-</ul>
-
-</div>
--->
-
 <div class="main-content">
-<h2>Modern Web Frameworks</h2>
+
+<h2>Perl tutorials and courses</h2>
+
+<ul>
+  <li><a href="/perl-tutorial">Perl Tutorial</a> just a plain Perl tutorial. Nothing fancy.</li>
+  <li><a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a> slidecast of the training material.</li>
+  <li><a href="/advanced-perl-maven-video-course">Advanced Perl Maven video course</a> mixed slidecasts, screencasts and plain articles.</li>
+  <li><a href="/testing">Test Automation using Perl</a> for people who really want to sleep well.</li>
+</ul>
+
+
+<h2>Modern Perl Web Frameworks</h2>
+
 <ul>
   <li><a href="/mojolicious">Mojolicious</a> light-weight web framework with rainbows and unicorns.</li>
   <li><a href="/dancer">Perl Dancer</a> light-weight web framework to rock.</li>
@@ -72,29 +41,24 @@ ul.horizontal li {
 </ul>
 
 <h2>Object Oriented Perl</h2>
+
 <ul>
   <li><a href="/moo">Moo</a>, the Minimalist Object Oriented system for Perl.</li>
   <li><a href="/moose">Moose</a>, the 'post modern' Object Oriented system for Perl.</li>
 </ul>
 
-<h2>Courses, tutorials</h2>
-
-<ul>
-  <li><a href="/perl-tutorial">Perl Tutorial</a> just a plain Perl tutorial. Nothing fancy.</li>
-  <li><a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a> slidecast of the training material.</li>
-  <li><a href="/advanced-perl-maven-video-course">Advanced Perl Maven video course</a> mixed slidecasts, screencasts and plain articles.</li>
-  <li><a href="/testing">Test Automation using Perl</a> for people who really want to sleep well.</li>
-</ul>
-
 <h2>Other Series</h2>
+
 <ul>
   <li><a href="/mongodb">Perl and MongoDB</a>, the NoSQL database used in Perl programs.</li>
   <li><a href="/anyevent">AnyEvent</a>, asynchronous programming.</li>
   <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers.</li>
   <li><a href="/metacpan">MetaCPAN</a> -  articles for CPAN users, CPAN authors, client developers, and MetaCPAN developers.</li>
+  <li><a href="/tv">Perl Maven TV Show</a> is a collection of interviews wit Perl developers.</li>
 </ul>
 
 <h2>Projects and Collections</h2>
+
 <ul>
   <li><a href="/search-cpan-org">The search.cpan.org cloning project</a> - Implementing a CPAN search engine using Plack/PSGI with MetaCPAN back-end.</li>
   <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
@@ -105,22 +69,12 @@ ul.horizontal li {
 </ul>
 </div>
 
-<!--
 <div class="main-content">
 <b>What can you do here?</b>
 
 If you are a beginner, or would like to refresh your Perl programming knowledge,
-you can go over the <a href="/perl-tutorial">Perl tutorial</a>.
-
-You will find a few advanced articles too, though most of the advanced articles are available to the
-subscribers of the <a href="/pro">Perl Maven Pro</a> service only.
-
-If you are interested to listen to or even see other Perl developers,
-the <a href="/tv">Perl Maven TV Show</a> is a collection of such interviews.
-
-Want to make sure you don't miss any of the Perl Maven articles?
-Sign up to the <a href="/perl-maven-newsletter">newsletter</a>!
-</div>
+you can go over the <a href="/perl-tutorial">Perl tutorial</a> or watch the
+<a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a>.
 
 
 <div class="main-content">
@@ -128,41 +82,19 @@ If you need to <b>maintain a large piece of software</b> written in Perl by othe
 that's a challenge. Especially if you did not get proper training in Perl. You are probably limited to
 a specific and old version of Perl. Check out, the <a href="/perl-tutorial">Perl tutorial</a>!
 You can probably skip the part about installing Perl, but the rest of the tutorial will be relevant for you.
-You can also sign up to the <a href="/perl-maven-newsletter">newsletter</a> to get updates on the new articles as they
-are published.
-</div>
-
-<div class="main-content">
-If you are a Unix/Linux <b>System Administrator</b> you probably have more control over the version of perl you use,
-and you probably write relatively small scripts. The <a href="/perl-tutorial">Perl tutorial</a> can be a good start
-for you and some of the examples in the <a href="/perl-maven-cookbook">Cookbook</a> will be relevant as well.
-</div>
-
-<div class="main-content">
-If you work in the field of <b>Software Configuration Management</b> (maybe designated as a <b>build engineer</b>)
-you probably have to write and maintain triggers (or post-commit hooks) and write scripts that help with
-the Continuous Integration. There will be special articles for you. Check out the
-<a href="/perl-maven-cookbook">Perl Maven Cookbook</a>. It might have a few examples for you that can be useful.
 </div>
 
 <div class="main-content">
 Perl is often used in <b>Test Automation</b>. If you work in this field, or if you'd like to work in this field
-(it is awesome to find bugs in other people's code :), then you can read the <a href="/perl-tutorial">Perl tutorial</a>
-and there is also a book you can purchase called <a href="/test-automation-using-perl-e-book">Test Automation using
-Perl</a>.
+(it is much more fun to find bugs in other people's code than in yours :), then you can read the <a href="/perl-tutorial">Perl tutorial</a>
+and the series on <a href="http://perlmaven.com/testing">Test Automation using Perl</a>.
 </div>
 
 <div class="main-content">
 If you build <b>new web applications</b> - either privately or inside a company - you can start by reading the
 article comparing <a href="/perl-cgi-mod-perl-psgi">CGI, mod_perl and PSGI</a>. From there you can go on reading
-the generic <a href="/perl-tutorial">Perl tutorial</a> and if you sign up to the <a
-href="/perl-maven-newsletter">newsletter</a>, you will be notified
-when I publish new articles about <b>web development with Perl</b>.
+the generic <a href="/perl-tutorial">Perl tutorial</a> or the articles on
+<a href="/mojolicious">Mojolicious</a>,  <a href="/dancer">Perl Dancer</a>, <a href="/catalyst">Catalyst</a>,
+<a href="/psgi">PSGI/Plack</a>, or even <a href="/cgi">CGI</a>, the Common Gateway Interface, for old-school web applications.
 </div>
 
-<div class="main-content">
-If any of this sounds familiar to you then you are in the right place.
-To get started you could read the <a href="/perl-tutorial">Perl tutorial</a> and sign up to the <a href="/perl-maven-newsletter">newsletter</a>.
-</div>
-
--->
