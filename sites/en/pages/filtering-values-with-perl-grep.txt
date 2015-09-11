@@ -3,6 +3,7 @@
 =description Perl grep { CONDITION } LIST a generalization of the Unix grep function to filter values of a list with any condition
 =indexes grep, filter, any, List::MoreUtils, <>, glob
 =status show
+=books advanced
 =author szabgab
 =comments_disqus_enable 1
 

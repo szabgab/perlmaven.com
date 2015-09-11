@@ -3,6 +3,7 @@
 =description Advanced level, online video training course for people who would like to improve their Perl programming skills
 =tags video
 =status show
+=books advanced
 =show_right 0
 =show_newsletter_form 0
 =show_date 0
@@ -118,7 +119,7 @@ Some include screencasts, others contain just text.
 
 <h2>Object Oriented Programming in Perl using raw classes</h2>
 <ol>
-  <li><a href="/pro/core-perl-oop-constructor">Core Perl OOP: Constructor</li>
+  <li><a href="/pro/core-perl-oop-constructor">Core Perl OOP: Constructor</a></li>
   <li>Destructor</li>
   <li>Attributes, attribute types (members)</li>
   <li>Create your own type</li>
@@ -176,10 +177,6 @@ See the <a href="/moose">Moose page</a>
 
 
 
-<!--
-  <li><a href=""></a></li>
---
-
 <h2>What do people say?</h2>
 
 <code>
@@ -201,13 +198,4 @@ i was looking for help using perl Dancer and found your blog tutorial.
 
 <a href="http://twitter.com/#!/captain_fwiffo">Captain Fwiffo</a>
 
-<!--
-By purchasing the video you get unlimited updates as new editions are published!
-
-<table border="1">
-<tr><td>What</td><td>Details</td><td>Price</td></tr>
-<tr><td>Video course</td><td> 84 screencasts,<br /> a total of more than 2 hours of screencasts<br />+ explanation of
-the solutions.</td><td><div class="btn"><a href="http://ude.my/vtoOgj">Buy for $69</a></div></td></tr>
-</table>
--->
 
