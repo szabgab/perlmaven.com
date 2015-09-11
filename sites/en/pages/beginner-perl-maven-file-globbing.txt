@@ -1,4 +1,4 @@
-=title file globbing
+=title File globbing
 =timestamp 2015-08-05T20:34:04
 =indexes glob, <>
 =tags screencast
