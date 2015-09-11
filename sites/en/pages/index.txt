@@ -70,11 +70,10 @@ ul.horizontal li {
 </div>
 
 <div class="main-content">
-<b>What can you do here?</b>
-
-If you are a beginner, or would like to refresh your Perl programming knowledge,
+If you are a <b>beginner</b>, or would like to refresh your Perl programming knowledge,
 you can go over the <a href="/perl-tutorial">Perl tutorial</a> or watch the
 <a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a>.
+</div>
 
 
 <div class="main-content">
