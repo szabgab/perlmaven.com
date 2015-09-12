@@ -18,6 +18,7 @@
 <li><a href="/help">Uzyskiwanie pomocy</a></li>
 <li><a href="/perl-on-the-command-line">Perl w wierszu poleceń</a></li>
 <li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
+<li><a href="/debugging-perl-scripts">Debugowanie skryptów Perla</a></li>
 </ol>
 </p>
 <!--
