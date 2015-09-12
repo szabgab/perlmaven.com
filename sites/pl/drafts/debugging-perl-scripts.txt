@@ -33,45 +33,47 @@ Zadaniem jest znalezienie w którym miejscu coś poszło nie tak i poprawienie t
 
 Zasadniczo, programowanie to drobna zmiana świata przez przekazywanie danych w zmiennych.
 
-In every step of the program we change some data in a variable in the program, or something in the "real world".
-(For example on the disk or on the screen.)
+W każdym kroku programu zmieniamy pewne dane w zmiennej w programie, albo coś w "prawdziwym świecie".
+(Na przykład na dysku albo na ekranie.)
 
-When you write a program you think through each step: what value should be moved to which variable.
+Kiedy piszesz program, myślisz krokami: jaka wartość powinna być przeniesiona do której zmiennej.
 
-A bug is a case when you thought you put value X in some variable while in reality value Y went in.
+Błąd jest w przypadku, kiedy myślałeś, że przekazujesz do zmiennej wartość X, podczas gdy w rzeczywistości
+przekazana została wartość Y.
 
-At one point, usually at the end of the program, you can see this as the program printed an incorrect value.
+W pewnym punkcie, zwykle na końcu programu, widzisz, że program wyświetlił nieprawidłową wartość.
 
-During the execution of the program it can manifest in the appearance of a warning or in abnormal termination of the program.
+Podczas wykonania programu, może się to objawiać wystąpieniem ostrzeżenia lub nienormalnym zakończeniem wykonania programu.
 
-<h2>How to debug?</h2>
+<h2>Jak debugować?</h2>
 
-The most straight forward way to debug a program is to run it, and at every step to check if all the variables
-hold the expected values. You can do that either <b>using a debugger</b> or you can embed <b>print statements</b> in the
-program and examine the output later.
+Najprostszym sposobem debugowania programu jest uruchomienie go, i sprawdzanie w każdym kroku, czy wszystkie zmienne
+posiadają oczekiwane wartości. Możesz to zrobić albo <b>używając debbugera</b> albo możesz umieścić <b>polecenia print</b> w
+programie i sprawdzić wynik później.
 
-Perl comes with a very powerful command-line debugger. While I recommend learning it,
-it can be a bit intimidating at first. I prepared a video where I show the
-<a href="/using-the-built-in-debugger-of-perl">basic commands of the built-in debugger of Perl</a>.
+Perl przychodzi z bardzo potężnym debbugerem wiersza poleceń. O ile polecam nauczenie się go,
+to może być on na początku nieco przerażający. Przygotowałem video, gdzie pokazuję
+<a href="/using-the-built-in-debugger-of-perl">podstawowe komendy wbudowanego debuugera Perla</a>.
+basic commands of the built-in debugger of Perl</a>.
 
-IDEs, such as <a href="http://www.activestate.com/">Komodo</a>,
+IDE takie jak <a href="http://www.activestate.com/">Komodo</a>,
 <a href="http://eclipse.org/">Eclipse</a> and
-<a href="http://padre.perlide.org/">Padre, the Perl IDE</a> come
-with a graphical debugger. At some point I'll prepare a video for some of those as well.
+<a href="http://padre.perlide.org/">Padre, the Perl IDE</a> przychodzą
+z graficznym debuggerem. W pewnym momencie przygotuję video także dla kilku z nich. 
 
-<h2>Print statements</h2>
+<h2>Polecania print</h2>
 
-Many people are using the age-old strategy of adding print statements to the code.
+Wielu ludzi używa wiekowej strategii dodawania poleceń print w kodzie.
 
-In a language where the compilation and building can take a lot of time print statements
-are considered a bad way to debug code.
-Not so in Perl, where even large application compile and start running within a few seconds.
+W językach, gdzie kompilacaja i budowa może zająć wiele czasu, polecenia print
+są uważane za zły sposób debugowania kodu.
+Nie jest tak w Perlu, gdzie nawet duże aplikacje kompilują się i zaczynają działać w przeciągu paru sekund.
 
-When adding print statements one should take care of adding delimiters around the values. That will catch the
-case when there are leading or trailing spaces in the value that cause the problem.
-Those are hard to notice without a delimiter:
+Przy dodawaniu poleceń print należy zadbać o dodanie delimiterów wokół wartości. To złapie przypadki
+gdzie są otwierające lub kończące spacje, które powodują problem.
+Trudno je zauważyć bez delimitera:
 
-Scalar values can be printed like this:
+Wartości skalarne mogą być wyświetlane tak:
 
 <code lang="perl">
 print "<$file_name>\n";
