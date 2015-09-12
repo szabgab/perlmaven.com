@@ -8,12 +8,13 @@
 
 =abstract start
 
-In the faq doc, it is mentioned that in the future <a href="https://metacpan.org/pod/Tie::IxHash">Tie::IxHash</a> could be use in
+In the <a href="https://metacpan.org/pod/distribution/XML-Simple/lib/XML/Simple/FAQ.pod">FAQ</a>,
+it is mentioned that in the future <a href="https://metacpan.org/pod/Tie::IxHash">Tie::IxHash</a> could be use in
 <a href="https://metacpan.org/pod/XML::Simple">XML::Simple</a>. I am using v2.18 at the moment, is there any hack to preserve the order of the data in the hashref?
 
 =abstract end
 
-To the above question Grant McLean answered:
+To the above question Grant McLean, the author of XML::Simple, answered:
 
 Retaining element order is not and never will be a feature of XML::Simple.
 For some XML document types you might be able to hack it in by subclassing
