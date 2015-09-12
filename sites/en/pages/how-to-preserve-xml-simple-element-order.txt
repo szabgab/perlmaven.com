@@ -57,7 +57,7 @@ variable:
 
 The output looks like this:
 
-<include file="examples/order_dump_out.xml">
+<include file="examples/order_dump_out.txt">
 
 Here we can see that XML::Simple has merged the content of the two 'pizza' tags into one hash.
 From this data structure we cannot rebuild the original order of pizza-drink-pizza.
