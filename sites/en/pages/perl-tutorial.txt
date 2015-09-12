@@ -2,6 +2,7 @@
 =timestamp 2013-07-16T10:00:04
 =description Free Perl Tutorial for people who need to maintain existing Perl code, for people who use Perl for small scripts, and for Perl application development.
 =status show
+=books beginner
 =author szabgab
 =archive 0
 =comments_disqus_enable 0
