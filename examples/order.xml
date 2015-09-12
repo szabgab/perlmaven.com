@@ -1,0 +1,14 @@
+<order>
+  <pizza>
+    <name>Margarita</name>
+    <size>large</size>
+  </pizza>
+  <drink>
+    <name>Coke</name>
+    <size>1.5 L</size>
+  </drink>
+  <pizza>
+    <name>Funghi</name>
+    <size>XXL</size>
+  </pizza>
+</order>
