@@ -150,11 +150,11 @@ See the <a href="/moose">Moose page</a>
   <li>Throwing exceptions in Perl</li>
   <li>Catching exceptions in Perl</li>
   <li><a href="/always-use-strict-and-use-warnings">Always use strict and warnings</a></li>
-  <li><a href="/variable-declaration-in-perl">Variable declaration in Perl</a></li>
-  <li><a href="/symbolic-reference-in-perl">Symbolic references in Perl</a></li>
-  <li><a href="/barewords-in-perl">Barewords in Perl</a></li>
+  <!-- <li><a href="/variable-declaration-in-perl">Variable declaration in Perl</a></li> -->
+  <!-- <li><a href="/symbolic-reference-in-perl">Symbolic references in Perl</a></li> -->
+  <!-- <li><a href="/barewords-in-perl">Barewords in Perl</a></li> -->
   <li><a href="/how-to-capture-and-save-warnings-in-perl">How to handle warnings in an application?</a></li>
-  <li><a href="/unknown-warnings-category">Unknown warnings category</a>
+  <!-- <li><a href="/unknown-warnings-category">Unknown warnings category</a> -->
   <li><a href="/use-diagnostics-or-splain">splain and use diagnostics</a></li>
   <li>Fatal warnings</li>
   <li>Array and hash slices</li>
