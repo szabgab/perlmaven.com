@@ -253,7 +253,6 @@ to practice what you have learned.
 <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
 <li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
 <li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
-<li><a href="/testing-a-simple-perl-module">Testing a simple Perl module</a></li>
 <li><a href="/what-are-string-and-numeric-contexts">What are string and numeric contexts?</a></li>
 <li><a href="/statement-modifiers">Statement modifiers: reversed if statements</a></li>
 </ol>
