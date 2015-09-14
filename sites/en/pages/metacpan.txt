@@ -14,7 +14,7 @@ and related sites. This page collects the articles and screencasts published on 
 
 =abstract end
 
-<h2>For CPAN users</h2>
+<h2>MetaCPAN for CPAN users</h2>
 
 <ul>
   <li><a href="/metacpan-is-awesome">MetaCPAN is awesome!</a></li>
@@ -26,7 +26,7 @@ and related sites. This page collects the articles and screencasts published on 
   <li><a href="/metacpan-recent-uploads">MetaCPAN recent uploads</a></li>
 </ul>
 
-<h2>For CPAN authors</h2>
+<h2>MetaCPAN for CPAN authors</h2>
 
 <ul>
   <li><a href="/how-to-add-list-of-contributors-to-the-cpan-meta-files">Adding list of contributors to the CPAN META files</a></li>

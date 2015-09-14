@@ -215,7 +215,6 @@ to practice what you have learned.
 <li><a href="/create-an-excel-file-with-perl">Creating Excel files using Perl</a></li>
 <li><a href="/sending-html-email-using-email-stuffer">Sending e-mail using Perl</a></li>
 <li><a href="/perl-cgi-script-with-apache2">CGI scripts with Perl</a></li>
-<li><a href="/perl-cgi-mod-perl-psgi">Web applications with Perl: PSGI</a></li>
 <!--
 <li>Parsing XML files</li>
 -->
