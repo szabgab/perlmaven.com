@@ -55,6 +55,7 @@ ul.horizontal li {
   <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers.</li>
   <li><a href="/metacpan">MetaCPAN</a> -  articles for CPAN users, CPAN authors, client developers, and MetaCPAN developers.</li>
   <li><a href="/tv">Perl Maven TV Show</a> is a collection of interviews wit Perl developers.</li>
+  <li><a href="/svg">SVG - Scalable Vector Graphics</a></li>
 </ul>
 
 <h2>Projects and Collections</h2>
@@ -67,6 +68,16 @@ ul.horizontal li {
   <li><a href="/becoming-a-co-maintainer">Becoming a co-maintainer of a CPAN module - refactoring a CPAN module</a></li>
   <li><a href="/perl-critic">Perl::Critic</a> lint-like static analyzer for Perl.</li>
 </ul>
+
+
+<h2>Code-Maven series</h2>
+<ul>
+  <li><a href="http://code-maven.com/angular">Angular JS</a></li>
+  <li><a href="http://code-maven.com/handlebars">Handlebars</a> the HTML templating system written in JavaScript.</li>
+  <li><a href="http://code-maven.com/javascript">JavaScript</a></li>
+  <li><a href="http://code-maven.com/nodejs">NodeJS</a></li>
+</ul>
+
 </div>
 
 <div class="main-content">
