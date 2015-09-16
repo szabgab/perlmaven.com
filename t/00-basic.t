@@ -6,6 +6,7 @@ use Test::More;
 use Path::Iterator::Rule;
 use Encode::Guess;
 use Path::Tiny qw(path);
+use File::Basename qw(basename);
 
 #plan tests => 2;
 
@@ -22,7 +23,7 @@ $rule->name('*.txt');
 my $it = $rule->iter('.');
 while ( my $file = $it->() ) {
 	#diag $file;
-	is $file, lc $file, 'filename is lower-case';
+	is basename($file), lc(basename($file)), 'filename is lower-case';
 	# is this a reasonable test, or will this be always true?
 	my @warns;
 	local $SIG{__WARN__} = sub { push @warns, @_ };
