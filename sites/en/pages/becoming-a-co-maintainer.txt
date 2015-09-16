@@ -221,7 +221,7 @@ Before that, let's create a list of items that need to be done.
 
 <ol>
   <li><a href="/becoming-a-co-maintainer">Becoming a co-maintainer of a CPAN-module - the first steps (Pod::Tree 1.17_01, 1.18)</a> (this article)</li>
-  <li>Update the packaging to <a href="/pro/add-meta-data-to-cpan-distribution">include license and link to repository in the META files</a>. Use GitHub as bug tracking. (Pod::Tee 1.19)</li>
+  <li>Update the packaging to <a href="/add-meta-data-to-cpan-distribution">include license and link to repository in the META files</a>. Use GitHub as bug tracking. (Pod::Tee 1.19)</li>
   <li>Add <a href="/pro/enable-travis-ci-for-continous-integration">Travis-CI for Continous Integration</a></li>
   <li><a href="/pro/refactoring-tests-to-use-test-more">Refactoring the tests to use Test::More</a> (Pod::Tree 1.20)</li>
   <li><a href="/pro/check-test-coverage-add-compile-tests">Check test coverage - add compile tests</li>
