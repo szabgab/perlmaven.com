@@ -18,6 +18,7 @@ IO::Socket::INET configuration failederror:00000000:lib(0):func(0):reason(0)
 I am able to connect to SMTP. I have tried the same with telnet and telnets which was successful.
 Can anyone please give me some ideas about this error?
 
+(Problem was fixed with <a href="https://metacpan.org/pod/IO::Socket::SSL">IO::Socket::SSL</a> version 1.06.)
 
 =abstract end
 
