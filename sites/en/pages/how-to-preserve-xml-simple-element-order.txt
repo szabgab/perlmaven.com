@@ -25,7 +25,6 @@ The short answer is that if you care about element order then you should <b>not 
 <a href="https://metacpan.org/pod/XML::LibXML">XML::LibXML</a> is an excellent alternative which for many use cases is really no harder
 to use than XML::Simple.
 
-<!-- from http://cpanforum.com/threads/6670 -->
 
 
 <h2>Sample XML file with ABA</h2>
@@ -75,3 +74,8 @@ Let's see how this round-trip works using <a href="https://metacpan.org/pod/XML:
 <include file="examples/xml_libxml_order.pl">
 
 Running this code we'll get the XML back exactly in the same order as we had in the original file.
+
+(This article was rescued from CPAN::Forum)
+<!-- from http://cpanforum.com/threads/6670 -->
+
+
