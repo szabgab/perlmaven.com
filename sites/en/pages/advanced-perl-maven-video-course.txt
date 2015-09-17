@@ -121,9 +121,7 @@ Some include screencasts, others contain just text.
 <ol>
   <li><a href="/pro/core-perl-oop-constructor">Core Perl OOP: Constructor</a></li>
   <li><a href="/pro/core-perl-oop-getter-setter">Core Perl OOP: Getter - Setter</a></li>
-<!--
-  <li><a href="/pro/accessor-with-type-constraint">Accessor with type constraint</a></li>
--->
+  <li><a href="/pro/what-should-setters-return">What should setters return?</a></li>
   <li>Destructor</li>
   <li>Attributes, attribute types (members)</li>
   <li>Create your own type</li>
