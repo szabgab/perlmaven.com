@@ -58,5 +58,7 @@ Then also implement a notification solution so if the data is changed on the ser
   <li><a href="/psgi">PSGI</a> - Dancer is a PSGI based web framework. Learning about the lower layer might be useful.</li>
 </ul>
 
-<button class="btn"><a href="/buy?product=dancer">Buy for $15</a></button>
+<span class="label label-lg label-success">
+  <a href="/buy?product=dancer" title="Buy Dancer book for $15" alt="Buy Dancer book for $15"></span> Buy Dancer book for $15</a>
+</span>
 
