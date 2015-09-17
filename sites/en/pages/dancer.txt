@@ -59,6 +59,6 @@ Then also implement a notification solution so if the data is changed on the ser
 </ul>
 
 <span class="label label-lg label-success">
-  <a href="/buy?product=dancer" title="Buy Dancer book for $15" alt="Buy Dancer book for $15"></span> Buy Dancer book for $15</a>
+  <a href="/buy?product=dancer" title="Buy Dancer book for $15" alt="Buy Dancer book for $15">Buy Dancer book for $15</a>
 </span>
 
