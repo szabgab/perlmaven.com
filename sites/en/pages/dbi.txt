@@ -9,7 +9,7 @@
 
 =abstract start
 
-DBI that stands for Database Interface is the standard library for Perl to access Relational Databases
+<a href="https://metacpan.org/pod/DBI">DBI</a> that stands for Database Independent Interface is the standard library for Perl to access Relational Databases
 (<a href="https://en.wikipedia.org/wiki/Relational_database_management_system">RDBMS</a>)
 using <a href="https://en.wikipedia.org/wiki/SQL">SQL</a>.
 
@@ -33,17 +33,19 @@ It can be used to access any RDBMS using the appropriated Database Driver.
  <li><a href="https://metacpan.org/pod/DBD::Sybase">DBD::Sybase</a> to connect to <a href="https://en.wikipedia.org/wiki/Adaptive_Server_Enterprise">SAP Sybase</a></li>
  <li><a href="https://metacpan.org/pod/DBD::Pg"></a> for <a href="http://www.postgresql.org/">PostgreSQL</a></li>
  <li><a href="https://metacpan.org/pod/DBD::SQLite"></a> for <a href="https://www.sqlite.org/">SQLite</a></li>
- <li><a href="https://metacpan.org/pod/DBD::Teradata">DBD::Teradata</a> to access <a href="https://en.wikipedia.org/wiki/Teradata">Teradata</a> though there is another module called <a href="https://metacpan.org/pod/Teradata::SQL">Teradata::SQL that does not seem to be used by DBI.</li>
+ <li><a href="https://metacpan.org/pod/DBD::Teradata">DBD::Teradata</a> to access <a href="https://en.wikipedia.org/wiki/Teradata">Teradata</a> though there is another module called <a href="https://metacpan.org/pod/Teradata::SQL">Teradata::SQL</a> that does not seem to be used by DBI.</li>
 </ul>
 
-Generic DBDs:
+<h3>Generic Database Drivers (DBDs)</h3>
 
 <ul>
  <li><a href="https://metacpan.org/pod/DBD::ADO">DBD::ADO</a> for Microsoft ADO (<a href="https://en.wikipedia.org/wiki/ActiveX_Data_Objects">ActiveX Data Objects</a>) (There is also a Win32::ADO module but that's not recommended.)</li>
  <li><a href="https://metacpan.org/pod/DBD::ODBC">DBD::ODBC</a> to connect to any database via <a href="https://en.wikipedia.org/wiki/Open_Database_Connectivity">ODBC (Open Database Connectivity)</a></li>
 </ul>
 
-Then there are all kinds of other Database Drivers that can be used to make data look like they are in a Relational Database.
+<h3>Special Database Drivers</h3>
+
+There are all kinds of other Database Drivers that can be used to make data look like they are in a Relational Database.
 
 <ul>
  <li><a href="https://metacpan.org/pod/DBD::PO">DBD::PO</a> for PO (Portable Object) files used by <a href="https://en.wikipedia.org/wiki/Gettext">gettext</a> for internationalization and localization (i18n)</li>
