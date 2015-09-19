@@ -1,8 +1,8 @@
 =title DBI - Database independent interface for Perl
 =timestamp 2015-02-01T07:30:01
-=indexes DBI
-=description DBI is the de-facto standard library in Perl for accessing Relational Databases (RDBMS) using SQL.
+=indexes DBI, DBD
 =status draft
+=description DBI that starnd for Database Independent Interface is the de-facto standard library in Perl to access Relational Databases (RDBMS) using SQL.  It can be used to access any RDBMS using the appropriated Database Driver.
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
@@ -17,10 +17,12 @@ It can be used to access any RDBMS using the appropriated Database Driver.
 
 =abstract end
 
+Many people, instead of directly using DBI, would opt to to use one of the <a href="https://en.wikipedia.org/wiki/Object-relational_mapping">ORMs (Object Realation Mapping)</a>
+available for Perl. The most poular being <a href="https://metacpan.org/pod/DBIx::Class">DBIx::Class (a.k.a. DBIC)</a> that wraps DBI.
 
 <h2>Examples</h2>
 
-<a href="/simple-database-access-using-perl-dbi-and-sql">Simple database access using Perl DB and SQL</a>
+<a href="/simple-database-access-using-perl-dbi-and-sql">Simple database access using Perl DBI and SQL</a>
 
 <h2>Database Drivers (DBDs)</h2>
 
@@ -34,6 +36,8 @@ It can be used to access any RDBMS using the appropriated Database Driver.
  <li><a href="https://metacpan.org/pod/DBD::Pg"></a> for <a href="http://www.postgresql.org/">PostgreSQL</a></li>
  <li><a href="https://metacpan.org/pod/DBD::SQLite"></a> for <a href="https://www.sqlite.org/">SQLite</a></li>
  <li><a href="https://metacpan.org/pod/DBD::Teradata">DBD::Teradata</a> to access <a href="https://en.wikipedia.org/wiki/Teradata">Teradata</a> though there is another module called <a href="https://metacpan.org/pod/Teradata::SQL">Teradata::SQL</a> that does not seem to be used by DBI.</li>
+ <li><a href="https://metacpan.org/pod/DBD::Unify">DBD::Unify</a> for the Unify database (currently <a href="https://en.wikipedia.org/wiki/Daegis_Inc.">Daegis Inc</a></li>
+ <li><a href="https://metacpan.org/pod/DBD::Neo4p">DBD::Neo4p</a> is a DBI-compliant wrapper for <a href="https://metacpan.org/pod/REST::Neo4p::Query">REST::Neo4p::Query</a> that allows for the execution of Neo4j Cypher language queries against a <a href="http://neo4j.com/">Neo4j</a> graph database. </li>
 </ul>
 
 <h3>Generic Database Drivers (DBDs)</h3>
@@ -51,11 +55,25 @@ There are all kinds of other Database Drivers that can be used to make data look
  <li><a href="https://metacpan.org/pod/DBD::PO">DBD::PO</a> for PO (Portable Object) files used by <a href="https://en.wikipedia.org/wiki/Gettext">gettext</a> for internationalization and localization (i18n)</li>
  <li><a href="https://metacpan.org/pod/DBD::CSV">DBD::CSV</a> allows us to access <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV files</a>. For example <a href="/calculate-bank-balance-take-two-dbd-csv">Calculating bank balance using DBD::CSV</a></li>
  <li><a href="https://metacpan.org/pod/DBD::DBM">DBD::DBM</a> for <a href="https://en.wikipedia.org/wiki/Dbm">DBM</a> and MLDBM files.</li>
+ <li><a href="https://metacpan.org/pod/DBD::Mock">DBD::Mock</a> is a database driver for testing</li>
+ <li><a href="https://metacpan.org/pod/DBD::iPod">DBD::iPod</a> connects DBI to an iPod</li>
+ <li><a href="https://metacpan.org/pod/DBD::Google">DBD::Google</a> to treat Google as relational database.</li>
+ <li><a href="https://metacpan.org/pod/DBD::Sys">DBD::Sys</a> treat System tables as a relational database.</li>
 </ul>
+
+<h3>Not Database Drivers</h3>
+
+There are some module in the DBD::* namespace that are not Database drivers.
+
+<ul>
+ <li><a href="https://metacpan.org/pod/DBD::Log">DBD::Log</a> is a logging mechanism for DBI</li>
+</ul>
+
+
+The comprehensive list of all the <a href="https://metacpan.org/search?q=module%3ADBD&size=20&search_type=modules">DBD modules</a>.
+
+<h2></h2>
 
 <!--
  <li><a href=""></a></li>
 -->
-
-
-
