@@ -1,0 +1,59 @@
+=title DBI - Database independent interface for Perl
+=timestamp 2015-02-01T07:30:01
+=indexes DBI
+=description DBI is the de-facto standard library in Perl for accessing Relational Databases (RDBMS) using SQL.
+=status draft
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+DBI that stands for Database Interface is the standard library for Perl to access Relational Databases
+(<a href="https://en.wikipedia.org/wiki/Relational_database_management_system">RDBMS</a>)
+using <a href="https://en.wikipedia.org/wiki/SQL">SQL</a>.
+
+It can be used to access any RDBMS using the appropriated Database Driver.
+
+=abstract end
+
+
+<h2>Examples</h2>
+
+<a href="/simple-database-access-using-perl-dbi-and-sql">Simple database access using Perl DB and SQL</a>
+
+<h2>Database Drivers (DBDs)</h2>
+
+<ul>
+ <li><a href="https://metacpan.org/pod/DBD::Oracle"></a> for <a href="https://en.wikipedia.org/wiki/Oracle_Database">Oracle</a></li>
+ <li>For <a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server">Microsoft SQL Server</a> you can use either DBD::ODBC or DBD::ADO.</li>
+ <li><a href="https://metacpan.org/pod/DBD::mysql">DBD::mysql</a> for <a href="https://www.mysql.com/">MySQL</a> and <a href="https://mariadb.org/">MariaDB</a></li>
+ <li><a href="https://metacpan.org/pod/DBD::DB2">DBD::DB2</a> for <a href="https://en.wikipedia.org/wiki/IBM_DB2">IBM DB2</a></li>
+ <li><a href="https://metacpan.org/pod/DBD::Informix">DBD::Informix</a> for <a href="https://en.wikipedia.org/wiki/IBM_Informix">IBM Informix</a></li>
+ <li><a href="https://metacpan.org/pod/DBD::Sybase">DBD::Sybase</a> to connect to <a href="https://en.wikipedia.org/wiki/Adaptive_Server_Enterprise">SAP Sybase</a></li>
+ <li><a href="https://metacpan.org/pod/DBD::Pg"></a> for <a href="http://www.postgresql.org/">PostgreSQL</a></li>
+ <li><a href="https://metacpan.org/pod/DBD::SQLite"></a> for <a href="https://www.sqlite.org/">SQLite</a></li>
+ <li><a href="https://metacpan.org/pod/DBD::Teradata">DBD::Teradata</a> to access <a href="https://en.wikipedia.org/wiki/Teradata">Teradata</a> though there is another module called <a href="https://metacpan.org/pod/Teradata::SQL">Teradata::SQL that does not seem to be used by DBI.</li>
+</ul>
+
+Generic DBDs:
+
+<ul>
+ <li><a href="https://metacpan.org/pod/DBD::ADO">DBD::ADO</a> for Microsoft ADO (<a href="https://en.wikipedia.org/wiki/ActiveX_Data_Objects">ActiveX Data Objects</a>) (There is also a Win32::ADO module but that's not recommended.)</li>
+ <li><a href="https://metacpan.org/pod/DBD::ODBC">DBD::ODBC</a> to connect to any database via <a href="https://en.wikipedia.org/wiki/Open_Database_Connectivity">ODBC (Open Database Connectivity)</a></li>
+</ul>
+
+Then there are all kinds of other Database Drivers that can be used to make data look like they are in a Relational Database.
+
+<ul>
+ <li><a href="https://metacpan.org/pod/DBD::PO">DBD::PO</a> for PO (Portable Object) files used by <a href="https://en.wikipedia.org/wiki/Gettext">gettext</a> for internationalization and localization (i18n)</li>
+ <li><a href="https://metacpan.org/pod/DBD::CSV">DBD::CSV</a> allows us to access <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV files</a>. For example <a href="/calculate-bank-balance-take-two-dbd-csv">Calculating bank balance using DBD::CSV</a></li>
+ <li><a href="https://metacpan.org/pod/DBD::DBM">DBD::DBM</a> for <a href="https://en.wikipedia.org/wiki/Dbm">DBM</a> and MLDBM files.</li>
+</ul>
+
+<!--
+ <li><a href=""></a></li>
+-->
+
+
+
