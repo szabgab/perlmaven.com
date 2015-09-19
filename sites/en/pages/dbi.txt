@@ -1,8 +1,8 @@
-=title DBI - Database independent interface for Perl
+=title DBI - Database Independent Interface for Perl
 =timestamp 2015-02-01T07:30:01
 =indexes DBI, DBD
 =status draft
-=description DBI that starnd for Database Independent Interface is the de-facto standard library in Perl to access Relational Databases (RDBMS) using SQL.  It can be used to access any RDBMS using the appropriated Database Driver.
+=description DBI that stands for Database Independent Interface is the de-facto standard library in Perl to access Relational Databases (RDBMS) using SQL.  It can be used to access any RDBMS using the appropriate Database Driver (DBD).
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
@@ -11,33 +11,31 @@
 
 <a href="https://metacpan.org/pod/DBI">DBI</a> that stands for Database Independent Interface is the standard library for Perl to access Relational Databases
 (<a href="https://en.wikipedia.org/wiki/Relational_database_management_system">RDBMS</a>)
-using <a href="https://en.wikipedia.org/wiki/SQL">SQL</a>.
-
-It can be used to access any RDBMS using the appropriated Database Driver.
+using <a href="https://en.wikipedia.org/wiki/SQL">SQL</a>. It can be used to access any RDBMS using the appropriate Database Driver (<a href="#dbd">DBD</a>).
 
 =abstract end
 
-Many people, instead of directly using DBI, would opt to to use one of the <a href="https://en.wikipedia.org/wiki/Object-relational_mapping">ORMs (Object Realation Mapping)</a>
-available for Perl. The most poular being <a href="https://metacpan.org/pod/DBIx::Class">DBIx::Class (a.k.a. DBIC)</a> that wraps DBI.
+Many people, instead of directly using DBI, would opt to to use one of the <a href="https://en.wikipedia.org/wiki/Object-relational_mapping">ORMs (Object Relation Mapping)</a>
+available for Perl. The most popular being <a href="https://metacpan.org/pod/DBIx::Class">DBIx::Class (a.k.a. DBIC)</a> that wraps DBI.
 
 <h2>Examples</h2>
 
 <a href="/simple-database-access-using-perl-dbi-and-sql">Simple database access using Perl DBI and SQL</a>
 
-<h2>Database Drivers (DBDs)</h2>
+<h2 id="dbd">Database Drivers (DBDs)</h2>
 
 <ul>
- <li><a href="https://metacpan.org/pod/DBD::Oracle"></a> for <a href="https://en.wikipedia.org/wiki/Oracle_Database">Oracle</a></li>
- <li>For <a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server">Microsoft SQL Server</a> you can use either DBD::ODBC or DBD::ADO.</li>
- <li><a href="https://metacpan.org/pod/DBD::mysql">DBD::mysql</a> for <a href="https://www.mysql.com/">MySQL</a> and <a href="https://mariadb.org/">MariaDB</a></li>
- <li><a href="https://metacpan.org/pod/DBD::DB2">DBD::DB2</a> for <a href="https://en.wikipedia.org/wiki/IBM_DB2">IBM DB2</a></li>
- <li><a href="https://metacpan.org/pod/DBD::Informix">DBD::Informix</a> for <a href="https://en.wikipedia.org/wiki/IBM_Informix">IBM Informix</a></li>
- <li><a href="https://metacpan.org/pod/DBD::Sybase">DBD::Sybase</a> to connect to <a href="https://en.wikipedia.org/wiki/Adaptive_Server_Enterprise">SAP Sybase</a></li>
- <li><a href="https://metacpan.org/pod/DBD::Pg"></a> for <a href="http://www.postgresql.org/">PostgreSQL</a></li>
- <li><a href="https://metacpan.org/pod/DBD::SQLite"></a> for <a href="https://www.sqlite.org/">SQLite</a></li>
- <li><a href="https://metacpan.org/pod/DBD::Teradata">DBD::Teradata</a> to access <a href="https://en.wikipedia.org/wiki/Teradata">Teradata</a> though there is another module called <a href="https://metacpan.org/pod/Teradata::SQL">Teradata::SQL</a> that does not seem to be used by DBI.</li>
- <li><a href="https://metacpan.org/pod/DBD::Unify">DBD::Unify</a> for the Unify database (currently <a href="https://en.wikipedia.org/wiki/Daegis_Inc.">Daegis Inc</a></li>
- <li><a href="https://metacpan.org/pod/DBD::Neo4p">DBD::Neo4p</a> is a DBI-compliant wrapper for <a href="https://metacpan.org/pod/REST::Neo4p::Query">REST::Neo4p::Query</a> that allows for the execution of Neo4j Cypher language queries against a <a href="http://neo4j.com/">Neo4j</a> graph database. </li>
+ <li>For <a href="https://en.wikipedia.org/wiki/Oracle_Database">Oracle</a> use <a href="https://metacpan.org/pod/DBD::Oracle">DBD::Oracle</a>.</li>
+ <li>For <a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server">Microsoft SQL Server</a> you can use either <a href="https://metacpan.org/pod/DBD::ODBC">DBD::ODBC</a> or <a href="https://metacpan.org/pod/DBD::ADO">DBD::ADO</a>.</li>
+ <li>For <a href="https://www.mysql.com/">MySQL</a> and <a href="https://mariadb.org/">MariaDB</a> use <a href="https://metacpan.org/pod/DBD::mysql">DBD::mysql</a>.</li>
+ <li>For <a href="https://en.wikipedia.org/wiki/IBM_DB2">IBM DB2</a> use <a href="https://metacpan.org/pod/DBD::DB2">DBD::DB2</a>.</li>
+ <li>For <a href="https://en.wikipedia.org/wiki/IBM_Informix">IBM Informix</a> use <a href="https://metacpan.org/pod/DBD::Informix">DBD::Informix</a>.</li>
+ <li>For <a href="https://en.wikipedia.org/wiki/Adaptive_Server_Enterprise">SAP Sybase</a> use <a href="https://metacpan.org/pod/DBD::Sybase">DBD::Sybase</a>.</li>
+ <li>For <a href="http://www.postgresql.org/">PostgreSQL</a> use <a href="https://metacpan.org/pod/DBD::Pg">DBD::Pg</a>.</li>
+ <li>For <a href="https://www.sqlite.org/">SQLite</a> use <a href="https://metacpan.org/pod/DBD::SQLite">DBD::SQLite</a>.</li>
+ <li>For <a href="https://en.wikipedia.org/wiki/Teradata">Teradata</a> you have two choices: <a href="https://metacpan.org/pod/DBD::Teradata">DBD::Teradata</a> is the older. It has a version off CPAN, but it is uncler to me if it is being maintained now.  <a href="https://metacpan.org/pod/Teradata::SQL">Teradata::SQL</a> is less comprehensive and it does not work with DBI. It has a different API.</li>
+ <li>For <a href="https://en.wikipedia.org/wiki/Daegis_Inc.">Daegis Inc</a>, what was formerly called the Unify database use <a href="https://metacpan.org/pod/DBD::Unify">DBD::Unify</a>.</li>
+ <li>For <a href="http://neo4j.com/">Neo4j</a> graph database you can use <a href="https://metacpan.org/pod/REST::Neo4p">REST::Neo4p</a> that allows for the execution of Neo4j Cypher language queries, or <a href="https://metacpan.org/pod/DBD::Neo4p">DBD::Neo4p</a> which is a DBI-compliant wrapper around that module.</li>
 </ul>
 
 <h3>Generic Database Drivers (DBDs)</h3>
@@ -70,7 +68,7 @@ There are some module in the DBD::* namespace that are not Database drivers.
 </ul>
 
 
-The comprehensive list of all the <a href="https://metacpan.org/search?q=module%3ADBD&size=20&search_type=modules">DBD modules</a>.
+See also the comprehensive list of all the <a href="https://metacpan.org/search?q=module%3ADBD&size=20&search_type=modules">DBD modules</a>.
 
 <h2></h2>
 
