@@ -1,7 +1,7 @@
 =title DBI - Database Independent Interface for Perl
-=timestamp 2015-02-01T07:30:01
+=timestamp 2015-09-20T00:30:01
 =indexes DBI, DBD
-=status draft
+=status show 
 =description DBI that stands for Database Independent Interface is the de-facto standard library in Perl to access Relational Databases (RDBMS) using SQL.  It can be used to access any RDBMS using the appropriate Database Driver (DBD).
 =author szabgab
 =archive 1
