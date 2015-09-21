@@ -49,7 +49,8 @@ This article is a collection of the XML-related modules available on CPAN.
 <h2>Articles</h2>
 
 <ul>
-  <li><a href="http://perlmaven.com/how-to-preserve-xml-simple-element-order">How to preserve XML::Simple element order</a></li>
-  <li><a href="http://perlmaven.com/xml-simple-sorting">XML::Simple sorting</a></li>
+  <li><a href="/how-to-preserve-xml-simple-element-order">How to preserve XML::Simple element order</a></li>
+  <li><a href="/xml-simple-sorting">XML::Simple sorting</a></li>
+  <li><a href="/count-elements-using-xml-xpath">Count elements using XML::XPath</a></li>
 </ul>
   

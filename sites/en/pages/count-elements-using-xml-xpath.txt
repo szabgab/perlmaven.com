@@ -1,6 +1,6 @@
 =title Count elements using XML::XPath
 =timestamp 2015-03-18T21:30:01
-=indexes XML::XPath
+=indexes XML, XML::XPath
 =status show
 =author szabgab
 =archive 1
