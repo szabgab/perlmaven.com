@@ -1,6 +1,6 @@
 =title How to preserve XML::Simple element order
 =timestamp 2015-09-12T08:10:31
-=indexes XML::Simple, XML::LibXML
+=indexes XML, XML::Simple, XML::LibXML
 =status show
 =author szabgab
 =archive 1

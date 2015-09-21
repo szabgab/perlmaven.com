@@ -1,6 +1,6 @@
 =title XML::Simple sorting
 =timestamp 2007-11-21T21:38:22
-=indexes XML::Simple
+=indexes XML, XML::Simple
 =status show
 =author 0
 =archive 0
