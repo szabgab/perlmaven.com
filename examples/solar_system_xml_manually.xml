@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<solar-system>
+  <planet name="Ceres">
+    <average-distance>2.77</average-distance>
+    <mass>0.00015</mass>
+  </planet>
+  <planet name="Charon">
+    <average-distance>39</average-distance>
+    <mass>0.000254</mass>
+  </planet>
+  <planet name="Earth">
+    <average-distance>1</average-distance>
+    <mass>1</mass>
+  </planet>
+  <planet name="Jupiter">
+    <average-distance>5.2</average-distance>
+    <mass>318</mass>
+  </planet>
+  <planet name="Mars">
+    <average-distance>1.5</average-distance>
+    <mass>0.107</mass>
+  </planet>
+  <planet name="Mercury">
+    <average-distance>0.4</average-distance>
+    <mass>0.055</mass>
+  </planet>
+  <planet name="Neptune">
+    <average-distance>30</average-distance>
+    <mass>17</mass>
+  </planet>
+  <planet name="Pluto">
+    <average-distance>39</average-distance>
+    <mass>0.00218</mass>
+  </planet>
+  <planet name="Saturn">
+    <average-distance>9.5</average-distance>
+    <mass>95</mass>
+  </planet>
+  <planet name="Uranus">
+    <average-distance>19.6</average-distance>
+    <mass>14</mass>
+  </planet>
+  <planet name="Venus">
+    <average-distance>0.7</average-distance>
+    <mass>0.815</mass>
+  </planet>
+</solar-system>

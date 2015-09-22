@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<solar-system>
+  <planet name="Mercury">
+    <average-distance>0.4</average-distance>
+    <mass>0.055</mass>
+  </planet>
+  ...
+</solar-system>
+
