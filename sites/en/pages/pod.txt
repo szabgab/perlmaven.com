@@ -1,7 +1,7 @@
-=title POD - processing Plain Old Documentation format
-=timestamp 2015-02-01T07:30:01
+=title POD - modules processing Plain Old Documentation format
+=timestamp 2015-09-23T08:30:01
 =indexes POD
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
