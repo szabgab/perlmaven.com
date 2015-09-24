@@ -72,7 +72,8 @@ There are some module in the DBD::* namespace that are not Database drivers.
 
 <ul>
  <li><a href="https://metacpan.org/pod/DBIx::Class">DBIx::Class (a.k.a. DBIC)</a></li>
- <li><a href="https://metacpan.org/pod/Pcore::DBD">Pcore::DBD</a>. It provides general API for:
+ <li><a href="https://metacpan.org/pod/Pcore::DBD">Pcore::DBD</a> works on top of the <a href="https://metacpan.org/pod/Pcore">Pcore</a> application framework.
+     It provides general API for:
     <ul>
        <li>Connections cache for use with forks and threads.</li>
        <li>Query builder with support of particular db server specific syntax.</li>

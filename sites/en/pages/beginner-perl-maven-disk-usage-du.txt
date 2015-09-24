@@ -15,3 +15,4 @@ du using <a href="https://metacpan.org/pod/Filesys::DiskUsage">Filesys::DiskUsag
 
 <slidecast file="/media/videos/beginner-perl/disk-usage-du" youtube="uOch-LIPix4" />
 
+<include file="examples/du.pl">
