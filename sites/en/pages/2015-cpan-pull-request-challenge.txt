@@ -149,6 +149,12 @@ And a few other related articles:
   <li>2015.08.19 <a href="http://varlogrant.blogspot.cz/2015/08/i-need-to-write-this-up-to-understand.html">I Need To Write This Up To Understand It, or The Epic Battle between Wat and Derp!</a> by Dave Jacoby</li>
 </ul>
 
+<h3>September</h3>
+<ul>
+  <li>2015.09.28 <a href="http://blogs.perl.org/users/e_choroba/2015/09/testaggregate-failures-under-the-recent-testbuilder.html">Test::Aggregate Failures under the Recent Test::Builder</a> by E. Choroba</li>
+</ul>
+
+
 <!-- Template for adding new blogposts:
   <li>2015.. <a href=""></a> by </li>
 -->
