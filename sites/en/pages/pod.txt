@@ -30,6 +30,8 @@ There are many tools parsing them, extracting information and converting them to
 
 (not categorized yet)
 
+<a href="https://metacpan.org/pod/Pod::Readme">Pod::Readme</a>
+
 <a href="https://metacpan.org/pod/Pod::Tree">Pod::Tree</a> can create a syntax tree from POD file. Looks interesting though it had not seen
 a new release since 2010.
 
