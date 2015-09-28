@@ -31,6 +31,7 @@ This article is a collection of the XML-related modules available on CPAN.
   <li><a href="https://metacpan.org/pod/XML::Loy">XML::Loy</a></li> 
   <li><a href="https://metacpan.org/pod/XML::Twig">XML::Twig</a></li>
   <li><a href="https://metacpan.org/pod/XML::Bare">XML::Bare</a></li>
+  <li><a href="https://metacpan.org/pod/XML::Compile">XML::Compile</a></li>
 </ul>
 
 <h3>Specialized XML libraries</h3>
@@ -43,6 +44,7 @@ This article is a collection of the XML-related modules available on CPAN.
   <li><a href="https://metacpan.org/pod/XML::Writer::Simple">XML::Writer::Simple</a></li>
   <li><a href="https://metacpan.org/pod/XML::DTDParser">XML::DTDParser</a> a DTD Parser</li>
   <li><a href="https://metacpan.org/pod/XML::DT">XML::DT</a></li>
+  <li><a href="https://metacpan.org/pod/SOAP::Lite">SOAP::Lite</a></li>
 </ul>
   
 
