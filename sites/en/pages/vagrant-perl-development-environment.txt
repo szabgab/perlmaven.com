@@ -80,6 +80,7 @@ Before we launch the VirtualBox image we need to make a small adjustment. Edit t
 and insert the following row just under the similar line that is commented out.
 
 <code>
+  config.vm.network "forwarded_port", guest: 3000, host:3000
   config.vm.network "forwarded_port", guest: 5000, host:5000
 </code>
 
@@ -95,23 +96,23 @@ The response looks like this:
 
 <code>
 Bringing machine 'default' up with 'virtualbox' provider...
-==> default: Box 'szabgab/pmde' could not be found. Attempting to find and install...
+==> default: Box 'szabgab/pde' could not be found. Attempting to find and install...
     default: Box Provider: virtualbox
     default: Box Version: >= 0
-==> default: Loading metadata for box 'szabgab/pmde'
-    default: URL: https://atlas.hashicorp.com/szabgab/pmde
-==> default: Adding box 'szabgab/pmde' (v0.0.1) for provider: virtualbox
-    default: Downloading: https://atlas.hashicorp.com/szabgab/boxes/pmde/versions/0.0.1/providers/virtualbox.box
+==> default: Loading metadata for box 'szabgab/pde'
+    default: URL: https://atlas.hashicorp.com/szabgab/pde
+==> default: Adding box 'szabgab/pde' (v1.1.0) for provider: virtualbox
+    default: Downloading: https://atlas.hashicorp.com/szabgab/boxes/pde/versions/1.1.0/providers/virtualbox.box
     default: Progress: 6% (Rate: 236k/s, Estimated time remaining: 0:15:50)
 </code>
 
 and when the download has finished it shows this:
 
 <code>
-==> default: Successfully added box 'szabgab/pmde' (v0.0.1) for 'virtualbox'!
-==> default: Importing base box 'szabgab/pmde'...
+==> default: Successfully added box 'szabgab/pde' (v1.1.0) for 'virtualbox'!
+==> default: Importing base box 'szabgab/pde'...
 ==> default: Matching MAC address for NAT networking...
-==> default: Checking if box 'szabgab/pmde' is up to date...
+==> default: Checking if box 'szabgab/pde' is up to date...
 ==> default: Setting the name of the VM: try_default_1427292263650_50259
 ==> default: Clearing any previously set network interfaces...
 ==> default: Preparing network interfaces based on configuration...
@@ -238,4 +239,13 @@ will start it again.
 
 Unlike the first time you ran this command, this time it won't need to download anything from the Internet and thus it will
 be much faster than the first time you ran this command.
+
+<h2>Upgrade from older version</h2>
+
+This article described the initial installation of the <b>Perl Development Environment</b>. Later as newer versions are released
+you might want to follow the instructions to
+<a href="/upgrade-vagrant-perl-development-environment">upgrade the Vagrant Perl Development Environment</a>.
+
+
+
 
