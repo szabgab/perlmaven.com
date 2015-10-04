@@ -39,6 +39,8 @@ $ VBoxManage -v
 4.3.24r98716
 </code>
 
+and by the time you are reading this, the version numbers most likely are going to be higher.
+
 <h2>Get the image an launch it</h2>
 
 Open the terminal (or Command Window if you use Microsoft Windows), create a directory for the environment and the cd into that directory.
@@ -143,9 +145,24 @@ We can access the machine via ssh:
 $ vagrant ssh
 </code>
 
-Though I am not sure what would be the command on MS Windows, put apparently you can use Putty
-to connect to the Vagrant based VirtualBox image. The
-<a href="https://github.com/nickryand/vagrant-multi-putty">Vagrant multi Putty</a> plugin might help.
+
+<h2>SSH to Vagrant on MS Windows</h2>
+
+On MS Windows you can use <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a>
+to connect to the Vagrant based VirtualBox image.
+
+You will need to download both putty.exe and puttygen.exe
+You can then follow <a href="http://www.sitepoint.com/getting-started-vagrant-windows/">these instructions</a>
+though the <hl>private_ket</hl> file I had to load was located in the <hl>.vagrant/machines/default/virualbox</hl>
+subderectory of the directory where I ran <hl>vagrant up</hl> and it does not have any extension so I had to change
+the filter in the "open private key" window.
+
+Then I had to save it again as "private key", just this time it was in the format Putty can use.
+
+Once you installed the private key, Putty will let you connect to the virtualbox. It will still prompt
+for a username though, where you need to type in 'vagrant'.
+
+
 
 This will get us inside the machine in the home directory of the 'vagrant' user. I think the best then is to
 
