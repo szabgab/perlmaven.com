@@ -16,8 +16,18 @@ with one of the tasks, ask me in the comment section.
 
 =abstract end
 
+Just to clarify, under "Open Source Perl Ecosystem" I mean the Perl 5 core, Perl 6 (e.g. Rakudo Perl 6), modules on CPAN.
+Perl 6 modules that are not on CPAN. Any <a href="/perl-based-open-source-products">Perl based open source application</a>
+and any <a href="/web-sites-powered-by-perl-with-open-source-code-base">web site powered by Perl</a> with publicly available source code.
 
-<h2>Link to Version Control system</h2>
+<ul>
+  <li><a href="#vcs">Link to Version Control system</a></li>
+  <li><a href="#travis">Add Travis-CI to GitHub repository</a></li>
+  <li><a href="#issues">Fix any issue reported against the distribution</a></li>
+  <li><a href="#cpan-prc">CPAN PR Challenge</a></li>
+</ul>
+
+<h2 id="vcs">Link to Version Control system</h2>
 
 For some distributions <a href="https://metacpan.org/">MetaCPAN</a> shows a link to the version control system where the code is maintained.
 The link is usually called "Clone repository". It is taken from the <hl>META.json</hl> file included in the distribution.
@@ -43,7 +53,9 @@ Required skills:
   <li>Probably Git, Mercury, or Subversion depending on the actual version control system.</li>
 </ul>
 
-<h2>Add Travis-CI to GitHub repository</h2>
+Relevant to CPAN modules.
+
+<h2 id="travis">Add Travis-CI to GitHub repository</h2>
 
 <a href="https://travis-ci.org/">Travis-CI</a> provides continuous integration for any code hosted on GitHub. It is free of charge
 if the code is in a public repository.
@@ -76,6 +88,8 @@ Required skills:
   <li>Understand how testing works in Perl.</li>
 </ul>
 
+Relevant to any Perl-based project that has GitHub repository.
+
 Sample <hl>.travis.yml</hl> file that requires mongodb to be installed:
 
 <code>
@@ -102,14 +116,14 @@ services:
 </code>
 
 
-<h2>Fix any issue reported against the distribution</h2>
+<h2 id="issues">Fix any issue reported against the distribution</h2>
 
 When looking at the page of any of the distributions on <a href="https://metacpan.org/">MetaCPAN</a> you will find a link to "issues", usually with a number next to it. Click on the link
 to see the list of 
 
 
 
-<h2>CPAN PR Challenge</h2>
+<h2 id="cpan-prc">CPAN PR Challenge</h2>
 
 <a href="http://neilb.org/">Neil Bowers</a> runs the <a href="/2015-cpan-pull-request-challenge">CPAN Pull Request challenge</a>
 You can join that and get a CPAN module assigned to you. As far as I know Neil does not give you any specific thing you need to
