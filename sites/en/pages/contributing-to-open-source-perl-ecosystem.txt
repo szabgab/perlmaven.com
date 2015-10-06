@@ -1,0 +1,117 @@
+=title Contributing to the Open Source Perl Ecosystem
+=timestamp 2015-10-06T13:30:01
+=indexes GitHub, CPAN, MetaCPAN
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+There are plenty of people who would like to contribute to Open Source and especially to Perl,
+but don't know what and how to start. In this page I am going to collect some of my suggestions.
+
+If you are interested, pick one of them and run with it. If you need further help how to get started
+with one of the tasks, ask me in the comment section.
+
+=abstract end
+
+
+<h2>Link to Version Control system</h2>
+
+For some distributions <a href="https://metacpan.org/">MetaCPAN</a> shows a link to the version control system where the code is maintained.
+The link is usually called "Clone repository". It is taken from the <hl>META.json</hl> file included in the distribution.
+Having this link makes it easier to everyone to contribute to the distribution. The task her to look at the 
+<a href="https://metacpan.org/recent">recently uploaded distributions</a> if they have this link.
+If not, then try add add it.
+
+<ol>
+  <li>Try to find the repository:
+    <ol>
+      <li>Check if other distributions of the same author have such link. If yes, the repository of this distribution might be next to it.</li>
+      <li>In <a href="https://github.com/">GitHub</a> search for the name of the distribution and/or the name of the module.</li>
+      <li>Send an e-mail to the author (more specifically the person who uploaded the most recent version of the distribution) and ask them.</li>
+    </ol></li>
+  <li>Patch the code using the explanation in the article on <a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">how to link to the version control system of a CPAN distribution</a> and send the patch (or the pull request) to the current maintainer.</li>
+</ol>
+
+Required skills:
+
+<ul>
+  <li>Communication in English with the author.</li>
+  <li>Basic Perl</li>
+  <li>Probably Git, Mercury, or Subversion depending on the actual version control system.</li>
+</ul>
+
+<h2>Add Travis-CI to GitHub repository</h2>
+
+<a href="https://travis-ci.org/">Travis-CI</a> provides continuous integration for any code hosted on GitHub. It is free of charge
+if the code is in a public repository.
+
+<ul>
+  <li>Look at the <a href="https://metacpan.org/recent">recently uploaded distributions</a> if they have a GitHub repository and if that repository does not have a <hl>.travis.yml</hl> file.<li>
+  <li>Fork and then clone the repository.</li>
+  <li>Run the tests locally on your computer. Learn which modules are recommended for the testing that are not required. You can tell Travis to install those before running the tests.</li>
+  <li>Send a pull request with a well constructed <hl>.travis.yml</hl> file.</li>
+</ul>
+
+You could write a script that would fetch the list of CPAN modules from MetaCPAN that have a GitHub link.
+Then the script could go to each one of the repos and check if it already has a .travis.yml file.
+If not, that's a distribution you might want to patch.
+
+A number of articles about Travis-CI and Perl:
+
+<ul>
+  <li><a href="http://perlmaven.com/enable-travis-ci-for-continous-integration">Enable Travis-CI for continuous integration</a></li>
+  <li><a href="http://perlmaven.com/using-travis-ci-and-installing-geo-ip-on-linux">Using Travis-CI and installing Geo::IP on Linux and OSX</a></li>
+  <li><a href="http://blogs.perl.org/users/neilb/2014/08/try-travis-ci-with-your-cpan-distributions.html">Try Travis CI with your CPAN distributions</a></li>
+  <li><a href="http://blogs.perl.org/users/gabor_szabo/2015/09/travis-ci-and-latest-version-of-perl-5.html">Travis-CI and latest version of Perl 5</a> (see the comments)</li>
+</ul>
+
+Required skills:
+
+<ul>
+  <li>Know how to use Git and GitHub</li>
+  <li>Being able to install CPAN modules. (The dependencies of the module being patched.)</li>
+  <li>Understand how testing works in Perl.</li>
+</ul>
+
+Sample <hl>.travis.yml</hl> file that requires mongodb to be installed:
+
+<code>
+branches:
+  except:
+    - gh-pages
+language: perl
+sudo: false
+perl:
+  - "blead"
+  - "5.20"
+  - "5.18"
+  - "5.16"
+  - "5.14"
+  - "5.12"
+  - "5.10"
+before_install:
+  - eval $(curl https://travis-perl.github.io/init) --auto
+  - cpanm --notest Test::Code::TidyAll 
+  - cpanm --notest Test::Perl::Critic
+  - cpanm --notest Test::Version
+services:
+  - mongodb
+</code>
+
+
+<h2>Fix any issue reported against the distribution</h2>
+
+When looking at the page of any of the distributions on <a href="https://metacpan.org/">MetaCPAN</a> you will find a link to "issues", usually with a number next to it. Click on the link
+to see the list of 
+
+
+
+<h2>CPAN PR Challenge</h2>
+
+<a href="http://neilb.org/">Neil Bowers</a> runs the <a href="/2015-cpan-pull-request-challenge">CPAN Pull Request challenge</a>
+You can join that and get a CPAN module assigned to you. As far as I know Neil does not give you any specific thing you need to
+do with the module. Which might fit you better.
+
