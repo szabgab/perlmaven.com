@@ -25,6 +25,8 @@ and any <a href="/web-sites-powered-by-perl-with-open-source-code-base">web site
   <li><a href="#travis">Add Travis-CI to GitHub repository</a></li>
   <li><a href="#issues">Fix any issue reported against the distribution</a></li>
   <li><a href="tests">Add tests to increase test coverage</a></li>
+  <li><a href="p5p">Perl 5 core</a></li>
+  <li><a href="perl6">Perl 6</a></li>
   <li><a href="#cpan-prc">CPAN PR Challenge</a></li>
 </ul>
 
@@ -142,6 +144,32 @@ Required skills:
    <li>Using <a href="https://metacpan.org/pod/Devel::Cover">Devel::Cover</a> check which parts of the code have been exercised during the test execution.</li>
    <li>Check the areas that were never called. Are they in use? Could they be removed? If they can be removed, send that as a patch to the author.</li>
    <li>If they are still in use then write test cases that exercise those parts of the code.</li>
+</ul>
+
+<h2 id="p5p">Perl 5 core</h2>
+
+The core perl is maintained by a group of people who call themselves <a href="http://dev.perl.org/perl5/">Perl 5 Porters</a>. Check out there.Check out there.Check out there.Check out there.
+
+Required skills: Perl, C.
+
+
+<h2 id="perl6">Perl 6</h2>
+
+<a href="http://perl6.org/">Perl 6</a> is getting close to its official release. You can help there with plenty of things while learning
+this new languages, or this new version of the old language. 
+
+<ol>
+   <li><a href="http://perl6maven.com/tutorial/perl6-installing-rakudo">Install Rakudo Perl 6</a></li>
+   <li><a href="http://modules.perl6.org/">Pick one of the modules</a></li>
+   <li>Try writing something with it</li>
+   <li>Submit bug reports, feature requests</li>
+   <li>Fix the bugs, implement the features</li>
+</ol>
+
+Required skills:
+
+<ul>
+   <li>You'll need to know Perl 6, but that's the whole points, isn't it? To have an excuse to learn Perl 6</li>
 </ul>
 
 
