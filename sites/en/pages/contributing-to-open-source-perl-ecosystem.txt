@@ -24,6 +24,7 @@ and any <a href="/web-sites-powered-by-perl-with-open-source-code-base">web site
   <li><a href="#vcs">Link to Version Control system</a></li>
   <li><a href="#travis">Add Travis-CI to GitHub repository</a></li>
   <li><a href="#issues">Fix any issue reported against the distribution</a></li>
+  <li><a href="tests">Add tests to increase test coverage</a></li>
   <li><a href="#cpan-prc">CPAN PR Challenge</a></li>
 </ul>
 
@@ -119,8 +120,29 @@ services:
 <h2 id="issues">Fix any issue reported against the distribution</h2>
 
 When looking at the page of any of the distributions on <a href="https://metacpan.org/">MetaCPAN</a> you will find a link to "issues", usually with a number next to it. Click on the link
-to see the list of 
+to see the list of open "issues": bugs, feature requests, and the occassional spam.
 
+These issues will range from very simple to very complex. Pick a module that you use. That will be probably easier to handle as you are already somewhat familiar with it.
+Try to reproduce a bug. If you managed to reproduce a bug write a test-case. You can already send that test to the author or maintainer of the module. That's already a huge help.
+
+Then if you know how to fix it do that too.
+
+Required skills:
+
+<ul>
+  <li>The testing system of Perl</li>
+  <li>The level of Perl is very much depends on the complexity of the bug. For writing a test you probably don't need such deep understanding of Perl.</li>
+  <li>XS and maybe C - for modules that are not pure Perl, you will 
+</ul>
+
+
+<h2 id="tests">Add tests to increase test coverage</h2>
+
+<ul>
+   <li>Using <a href="https://metacpan.org/pod/Devel::Cover">Devel::Cover</a> check which parts of the code have been exercised during the test execution.</li>
+   <li>Check the areas that were never called. Are they in use? Could they be removed? If they can be removed, send that as a patch to the author.</li>
+   <li>If they are still in use then write test cases that exercise those parts of the code.</li>
+</ul>
 
 
 <h2 id="cpan-prc">CPAN PR Challenge</h2>
