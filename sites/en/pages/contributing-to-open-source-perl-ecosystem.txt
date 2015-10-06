@@ -25,8 +25,9 @@ and any <a href="/web-sites-powered-by-perl-with-open-source-code-base">web site
   <li><a href="#travis">Add Travis-CI to GitHub repository</a></li>
   <li><a href="#issues">Fix any issue reported against the distribution</a></li>
   <li><a href="tests">Add tests to increase test coverage</a></li>
-  <li><a href="p5p">Perl 5 core</a></li>
-  <li><a href="perl6">Perl 6</a></li>
+  <li><a href="#pod">Improve documentation, examples for common use cases</a></li>
+  <li><a href="#p5p">Perl 5 core</a></li>
+  <li><a href="#perl6">Perl 6</a></li>
   <li><a href="#cpan-prc">CPAN PR Challenge</a></li>
 </ul>
 
@@ -135,6 +136,26 @@ Required skills:
   <li>The testing system of Perl</li>
   <li>The level of Perl is very much depends on the complexity of the bug. For writing a test you probably don't need such deep understanding of Perl.</li>
   <li>XS and maybe C - for modules that are not pure Perl, you will 
+</ul>
+
+
+<h2 id="pod">Improve documentation, examples for common use cases</h2>
+
+Most modules come witha <b>SYNOPSIS</b> that shows the basic usage of the module, but in many cases that's not a full example and it
+only show a very limited usage of the module.
+
+Some modules come with examples file usuall in the <hl>eg/</hl> or <hl>examples/</hl> subdriectory of the modules.
+
+Many modules don't come with examples and even the ones that have examples could make those more visible.
+
+So this taks would be to add more and better documentation, espacially with full examples embedded and explained in the POD.
+
+Required skills:
+
+<ul>
+  <li>Understanding how the module works and what it does.</li>
+  <li>Perl at a level to be able to explain the code.</li>
+  <li>The capability to see things as a beginner (for that particular module)</li>
 </ul>
 
 
