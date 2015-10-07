@@ -36,7 +36,7 @@ Algunos de los artículos incluyen también indicaciones sobre como solucionar e
     <li><a href="http://perlmaven.com/cant-locate-object-method-via-package-1">Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?) (en)</a></li>
     <li><a href="http://perlmaven.com/creating-hash-from-an-array">Odd number of elements in hash assignment (en)</a></li>
     <li><a href="http://perlmaven.com/qw-quote-word">Possible attempt to separate words with commas (en)</a></li>
-    <li><a href="http://perlmaven.com/pro/autoload">Undefined subroutine ... called (en)</a></li>
+    <li><a href="http://perlmaven.com/autoload">Undefined subroutine ... called (en)</a></li>
 </ul>
 
 
