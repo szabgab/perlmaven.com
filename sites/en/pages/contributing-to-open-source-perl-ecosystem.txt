@@ -35,8 +35,8 @@ and any <a href="/web-sites-powered-by-perl-with-open-source-code-base">web site
 
 For some distributions <a href="https://metacpan.org/">MetaCPAN</a> shows a link to the version control system where the code is maintained.
 The link is usually called "Clone repository". It is taken from the <hl>META.json</hl> file included in the distribution.
-Having this link makes it easier to everyone to contribute to the distribution. The task her to look at the 
-<a href="https://metacpan.org/recent">recently uploaded distributions</a> if they have this link.
+Having this link makes it easier to everyone to contribute to the distribution. The task here is to look at the 
+<a href="https://metacpan.org/recent">recently uploaded distributions</a> if they have this link or not.
 If not, then try add add it.
 
 <ol>
@@ -148,7 +148,7 @@ Some modules come with examples file usuall in the <hl>eg/</hl> or <hl>examples/
 
 Many modules don't come with examples and even the ones that have examples could make those more visible.
 
-So this taks would be to add more and better documentation, espacially with full examples embedded and explained in the POD.
+So this task would be to add more and better documentation, espacially with full examples embedded and explained in the POD.
 
 Required skills:
 
