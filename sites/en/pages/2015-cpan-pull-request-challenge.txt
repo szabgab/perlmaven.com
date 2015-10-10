@@ -147,11 +147,12 @@ And a few other related articles:
 <h3>August</h3>
 <ul>
   <li>2015.08.19 <a href="http://varlogrant.blogspot.cz/2015/08/i-need-to-write-this-up-to-understand.html">I Need To Write This Up To Understand It, or The Epic Battle between Wat and Derp!</a> by Dave Jacoby</li>
+  <li>2015.09.28 <a href="http://blogs.perl.org/users/e_choroba/2015/09/testaggregate-failures-under-the-recent-testbuilder.html">Test::Aggregate Failures under the Recent Test::Builder</a> by E. Choroba</li>
 </ul>
 
 <h3>September</h3>
 <ul>
-  <li>2015.09.28 <a href="http://blogs.perl.org/users/e_choroba/2015/09/testaggregate-failures-under-the-recent-testbuilder.html">Test::Aggregate Failures under the Recent Test::Builder</a> by E. Choroba</li>
+  <li>2015.10.11 <a href="http://blogs.perl.org/users/e_choroba/2015/10/last-minute-htmlelementreplacer.html">Last Minute: HTML::Element::Replacer</a> by E. Choroba</li>
 </ul>
 
 
