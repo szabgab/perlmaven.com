@@ -29,6 +29,7 @@ and any <a href="/web-sites-powered-by-perl-with-open-source-code-base">web site
   <li><a href="#p5p">Perl 5 core</a></li>
   <li><a href="#perl6">Perl 6</a></li>
   <li><a href="#cpan-prc">CPAN PR Challenge</a></li>
+  <li><a href="#rosetta">Adding examples to Rosetta Code</a></li>
 </ul>
 
 <h2 id="vcs">Link to Version Control system</h2>
@@ -199,4 +200,12 @@ Required skills:
 <a href="http://neilb.org/">Neil Bowers</a> runs the <a href="/2015-cpan-pull-request-challenge">CPAN Pull Request challenge</a>
 You can join that and get a CPAN module assigned to you. As far as I know Neil does not give you any specific thing you need to
 do with the module. Which might fit you better.
+
+<h2 id="rosetta">Adding examples to Rosetta Code</h2>
+
+Not directly the ecosystem, but very helpful: adding examples for both Perl 5 and Perl 6 to Rosetta Code.
+Next to a good programming language, good modules, good documentation, we also need good examples.
+<a href="http://www.perl6.org/community/rosettacode">Perl 6</a> and <a href="http://rosettacode.org/wiki/Rosetta_Code">Rosetta Code</a>.
+
+
 
