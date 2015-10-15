@@ -1,7 +1,7 @@
 =title Profiling and 100 times speed improvement
 =timestamp 2015-10-15T20:30:01
 =indexes YAML, YAML::XS, Devel::NYTProf
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
@@ -77,14 +77,17 @@ This is what the <a href="http://munin-monitoring.org/">Munin graphs</a> show ha
 <h2>Request processing time</h2>
 
 It went down from an average of 2-3 to almost nothing.
+The graph shows the last 24 hour. The green line shows the average request processing time in the preceding 5 minutes.
+It dropped immediately once I deployed the new version. The blue line show the average of the past 24 hours. It will
+catch up with the green line in 24 hours.
 
-<img src="/img/perl_maven_processing_time_2015_10_15.png" alt="Perl Maven site request processing time" />
+<img src="/img/perl_maven_processing_time_2015_10_15.png" alt="Perl Maven site request processing time" width="497" height="292" />
 
 <h2>CPU load</h2>
 
 At the same time the CPU load also went down.
 
-<img src="/img/perl_maven_cpu_usage_2015_10_15.png" alt="Perl Maven site CPU load" />
+<img src="/img/perl_maven_cpu_usage_2015_10_15.png" alt="Perl Maven site CPU load" width="497" height="376" />
 
 So based on this I won't need to upgrade the server any time soon, but probably more importantly,
 you the reader will get much better response time from the server.
