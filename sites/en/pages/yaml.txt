@@ -1,0 +1,22 @@
+=title YAML in Perl
+=timestamp 2015-05-27T18:00:02
+=indexes YAML, YAML::XS, YAML::Syck, YAML::Tiny, YAML::Any
+=status draft
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+
+=abstract end
+
+<ul>
+  <li><a href="https://metacpan.org/pod/YAML">YAML</a></li>
+  <li><a href="https://metacpan.org/pod/YAML::XS">YAML::XS</a></li>
+  <li><a href="https://metacpan.org/pod/YAML::Syck">YAML::Syck</a></li>
+  <li><a href="https://metacpan.org/pod/YAML::Tiny">YAML::Tiny</a></li>
+  <li><a href="https://metacpan.org/pod/YAML::Any">YAML::Any</a></li>
+</ul>
+
+

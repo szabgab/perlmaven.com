@@ -20,6 +20,6 @@ Write a program that computes the area of a rectangular.
   <li>Multiply them and print the result.</li>
   <li>Then change the code to prompt the user for two numbers.</li>
   <li>Multiply them and print the result.</li>
-  <li>Further modify the program to warn if one of the sids given was negative.</li>
+  <li>Further modify the program to warn if one of the sides given was negative.</li>
 </ul>
 
