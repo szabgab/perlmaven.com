@@ -37,7 +37,7 @@ One the above program was ready I ran the <a href="https://metacpan.org/pod/Deve
 the following command:
 
 <code>
-perl -d:NYTProf  load.pl
+perl -d:NYTProf  psgi_profiling.pl
 </code>
 
 This created a file called <hl>nytprof.out</hl>
