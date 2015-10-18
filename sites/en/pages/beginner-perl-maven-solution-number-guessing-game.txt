@@ -6,10 +6,16 @@
 =books beginner_video
 =author szabgab
 =comments_disqus_enable 1
+=perl6url http://perl6maven.com/number-guessing-game
+=perl6title Number guessing game in Perl 6
 
 =abstract start
 
-Solution: number guessing game
+Solution: <a href="http://code-maven.com/exercise-number-guessing-game">Number guessing game</a>.
+
+This <a href="/beginner-perl-maven-exercise-number-guessing-game">exercise</a> is also part of the
+<a href="http://code-maven.com/exercises">Code Maven exercises</a> where you can find a
+number of solutions in other languages as well.
 
 =abstract end
 
