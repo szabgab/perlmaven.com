@@ -86,10 +86,11 @@ And a few other related articles:
   <li>2015.01.14 <a href="http://blogs.perl.org/users/alberto_simoes/2015/01/pr-challenge-january.html">PR-Challenge: January</a>  by Alberto Simões</li>
   <li>2015.01.14 <a href="http://blogs.perl.org/users/luca_ferrari/2015/01/cpan-pull-request-a-little-patch-for-january-and-a-lot-more-to-learn.html">CPAN Pull Request: a little patch for January (and a lot more to learn!)</a> by Luca Ferrari</li>
   <li>2015.01.15 <a href="http://www.bambams.ca/2015/01/cpan-prc-2015-january.html">CPAN PRC 2015 - January (Plack::Session::State::URI) - Part 2 </a> by Brandon McCaig</li>
+  <li>2015.01.17 <a href="https://retout.co.uk/blog/2015/01/17/cpan-pr-challenge">CPAN PR Challenge - January - IO-Digest</a> by Tim Retout</li>
   <li>2015.01.20 <a href="http://blogs.perl.org/users/itcharlie/2015/01/short-and-sweet-but-definitely-a-good-value-pr.html">Short and sweet, but definitely a good value PR!</a> by itcharlie</li>
   <li>2015.01.24 <a href="https://www.doyleyoung.net/cpan-pull-request-challenge-january/">CPAN Pull Request Challenge - January</a> by Doyle Young</li>
   <li>2015.01.26 <a href="http://perl.bearcircle.net/2015/01/january-cpan-pull-request-challenge.html">January CPAN Pull Request Challenge </a> by Bear Perl</li>
-  <li>2015.01.27 <a href="http://cpanpr.tumblr.com/">January: SOAP-Lite</a> by Maxim Vuets
+  <li>2015.01.27 <a href="http://cpanpr.tumblr.com/post/109326154178/january-soap-lite">January: SOAP-Lite</a> by Maxim Vuets
   <li>2015.01.29 <a href="http://onionstand.blogspot.cz/2015/01/my-cpan-pull-request-challenge-for.html">My CPAN Pull Request Challenge for January: Fuse</a> by Breno G. de Oliveira</li>
   <li>2015.02.01 <a href="http://blogs.perl.org/users/e_choroba/2015/02/pull-request-challenge-january.html">Pull Request Challenge: January</a> by E. Choroba</li>
 </ul>
