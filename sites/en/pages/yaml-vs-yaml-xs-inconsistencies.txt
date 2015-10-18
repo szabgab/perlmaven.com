@@ -1,0 +1,29 @@
+=title YAML vs YAML::XS inconsitencies
+=timestamp 2015-10-16T11:30:01
+=indexes YAML, YAML::XS
+=status draft
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+<a href="/yaml">YAML is a great format for configuration files and for data serialization. There are several Perl modules
+implementing the function that convert a YAML string into a Perl data structure (deserialize) and that can convert a Perl
+data structure into a YAML string (serialize). 
+
+=abstract end
+
+<a href="">YAML::Tiny</a> clearly states that it only implements a subset of features, but YAML and YAML::XS are
+supposed to be drop-in replacements of each other.
+They might not implement all the features of the YAML syntax, but 
+
+<code lang="perl">
+</code>
+
+<img src="/img/" alt="" />
+
+<include file="">
+<try file="">
+
+
