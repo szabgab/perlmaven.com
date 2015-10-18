@@ -56,7 +56,7 @@ which means all the lines are read into memory at once and they are passed to th
 The <hl>sum</hl> function then adds them together and returns the result.
 
 
-<h2>Using Path::Tiny as well</hl>
+<h2>Using Path::Tiny as well</h22>
 
 In the third example we also use the <hl>path</hl> function of the <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a> module
 that opens a file and returns an object on which we can call the <hl>lines<hl> method. This will return the lines of the file.
