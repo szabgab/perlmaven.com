@@ -252,7 +252,7 @@ even though most people don't know that it is written in Perl using the <a href=
 <div class="perl-product">
 <a href="http://lacunaexpanse.com/">Lacuna Expanse</a> is the Massively Multi-player Online Space Strategy Game
 developed by <a href="http://plainblack.com/">Plain Black</a>. The source code can be found on
-<a href="https://github.com/plainblack/Lacuna-Server-Open">Github</a>. It's web site and the whole game is awesome.
+<a href="https://github.com/plainblack/Lacuna-Server-Open">GitHub</a>. The web site of the game, and the game itself, are awesome.
 Very addictive!
 </div>
 
@@ -771,7 +771,7 @@ programs and Perl libraries to process listings.
 </div>
 
 <div class="perl-product">
-<a href="http://www.gnu.org/software/stow/">GNU Stow</a> s a symlink farm manager.
+<a href="http://www.gnu.org/software/stow/">GNU Stow</a> is a symlink farm manager.
 </div>
 
 <div class="perl-product">
