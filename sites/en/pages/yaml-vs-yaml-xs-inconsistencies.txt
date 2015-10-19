@@ -1,6 +1,6 @@
-=title YAML vs YAML::XS inconsitencies
+=title YAML vs YAML::XS inconsitencies (YAML::Syck and YAML::Tiny too)
 =timestamp 2015-10-19T11:30:01
-=indexes YAML, YAML::XS
+=indexes YAML, YAML::XS, YAML::Syck, YAML::Tiny
 =status draft
 =author szabgab
 =archive 1
@@ -8,7 +8,7 @@
 
 =abstract start
 
-<a href="/yaml">YAML is a great format for configuration files and for data serialization. There are several Perl modules
+<a href="/yaml">YAML</a> is a great format for configuration files and for data serialization. There are several Perl modules
 implementing the function that convert a YAML string into a Perl data structure (deserialize) and that can convert a Perl
 data structure into a YAML string (serialize).
 
@@ -20,14 +20,16 @@ but as far as I understand YAML and YAML::XS are supposed to be drop-in replacem
 around several YAML processors, though at one point YAML itself will be promoted to do that job.
 
 
-Yet, when I tried to <a href="">switch from  YAML to YAML::XS</a> I've encountered two cases of incompatibility.
+Yet, when I tried to <a href="/profiling-and-speed-improvement">switch from  YAML to YAML::XS</a> I've encountered two cases of incompatibility.
 Probably in both cases the YAML file wasn't according to the specs, but in both cases YAML was forgiving and parsed
 the files as I expected them and in both cases YAML::XS threw exception. I've created minimal examples for both cases
-and I have tried to parse them with
+and I have tried to parse them with the following:
 
 <ul>
    <li><a href="https://metacpan.org/pod/YAML">YAML version 1.15</a></li>
    <li><a href="https://metacpan.org/pod/YAML::XS">YAML::XS version 0.59</a></li>
+   <li><a href="https://metacpan.org/pod/YAML::Tiny">YAML::Tiny version 1.69</a></li>
+   <li><a href="https://metacpan.org/pod/YAML::Syck">YAML::Syck version 1.29</a></li>
 </ul>
 
 <h2>Space required after :</h2>
@@ -56,6 +58,18 @@ YAML::XS::Load Error: The problem:
 
 was found at document: 1, line: 4, column: 1
 while scanning a simple key at line: 3, column: 3
+</code>
+
+<hl>perl yaml_tiny.pl files/space_required.yml</hl> threw exception:
+
+<code>
+YAML::Tiny failed to classify line '  'b':'b'' at yaml_tiny.pl line 11.
+</code>
+
+<hl>perl yaml_syck.pl files/space_required.yml</hl> threw exception:
+
+<code>
+Syck parser (line 4, column -1): syntax error 
 </code>
 
 The solution here is to put a space after the <hl>:</hl> in the line of 'b'.
@@ -92,6 +106,18 @@ YAML::XS::Load Error: The problem:
 was found at document: 1, line: 2, column: 9
 </code>
 
+<hl>perl yaml_tiny.pl files/quote_colon.yml</hl> throws exception:
+
+<code>
+YAML::Tiny found illegal characters in plain scalar: 'c:' at yaml_tiny.pl line 11.
+</code>
+
+<hl>perl yaml_syck.pl files/quote_colon.yml</hl> throws exception:
+
+<code>
+Syck parser (line 2, column 9): syntax error
+</code>
+
 the solution here is to put the value where we have the <hl>:</hl> between single-quote marks.
 
 Here to I've opened a <a href="https://github.com/ingydotnet/yaml-pm/issues/153">ticket</a> for consideration.
@@ -102,6 +128,6 @@ Here to I've opened a <a href="https://github.com/ingydotnet/yaml-pm/issues/153"
 
 <include file="examples/yaml_xs.pl">
 
-<include file="">
+<include file="examples/yaml_tiny.pl">
 
 

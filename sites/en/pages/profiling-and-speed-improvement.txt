@@ -62,8 +62,8 @@ the latter will be much faster. Just as
 So I decided to give it a try and replaced YAML by <a href="https://metacpan.org/pod/YAML::XS">YAML::XS</a>
 in the whole code.
 
-Though I thought they are fully compatible it turned out that there are several constructs
-that YAML allows and YAML::XS reject. Luckily the tests I had complained.
+Though I thought they are fully compatible it turned out that there are several
+<a href="/yaml-vs-yaml-xs-inconsistencies">constructs that YAML allows and YAML::XS rejects</a>. Luckily the tests I had complained.
 Then I spent about 2 hours trying to figure out the specific issues. The fix was easy, just locating
 the files was difficult. Maybe that too could be explained by the fact that I did this at 2 am
 after a full day of work.
