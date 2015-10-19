@@ -1,7 +1,7 @@
 =title YAML vs YAML::XS inconsitencies (YAML::Syck and YAML::Tiny too)
 =timestamp 2015-10-19T11:30:01
 =indexes YAML, YAML::XS, YAML::Syck, YAML::Tiny
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
@@ -72,11 +72,12 @@ YAML::Tiny failed to classify line '  'b':'b'' at yaml_tiny.pl line 11.
 Syck parser (line 4, column -1): syntax error 
 </code>
 
-The solution here is to put a space after the <hl>:</hl> in the line of 'b'.
+The solution here is to put a space after the <hl>:</hl> in the line of 'b' as in the following:
+
+<include file="examples/files/space_required_solved.yml">
 
 I am not sure if this is something that needs to be fixed in the YAML module, or just documented,
 but I've opened a <a href="https://github.com/ingydotnet/yaml-pm/issues/152">ticket</a>.
-
 
 <h2>Value with : needs to be quoted</h2>
 
@@ -118,9 +119,11 @@ YAML::Tiny found illegal characters in plain scalar: 'c:' at yaml_tiny.pl line 1
 Syck parser (line 2, column 9): syntax error
 </code>
 
-the solution here is to put the value where we have the <hl>:</hl> between single-quote marks.
+The solution here is to put the value with the <hl>:</hl> in it between single-quote marks:
 
-Here to I've opened a <a href="https://github.com/ingydotnet/yaml-pm/issues/153">ticket</a> for consideration.
+<include file="examples/files/quote_colon_solved.yml">
+
+Here too I've opened a <a href="https://github.com/ingydotnet/yaml-pm/issues/153">ticket</a> for consideration.
 
 <h2>The scripts I used</h2>
 
@@ -129,5 +132,7 @@ Here to I've opened a <a href="https://github.com/ingydotnet/yaml-pm/issues/153"
 <include file="examples/yaml_xs.pl">
 
 <include file="examples/yaml_tiny.pl">
+
+<include file="examples/yaml_syck.pl">
 
 
