@@ -1,4 +1,4 @@
-=title YAML vs YAML::XS inconsitencies (YAML::Syck and YAML::Tiny too)
+=title YAML vs YAML::XS inconsistencies (YAML::Syck and YAML::Tiny too)
 =timestamp 2015-10-19T11:30:01
 =indexes YAML, YAML::XS, YAML::Syck, YAML::Tiny
 =status show
