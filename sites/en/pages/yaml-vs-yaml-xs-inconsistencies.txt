@@ -1,5 +1,5 @@
 =title YAML vs YAML::XS inconsitencies
-=timestamp 2015-10-16T11:30:01
+=timestamp 2015-10-19T11:30:01
 =indexes YAML, YAML::XS
 =status draft
 =author szabgab
@@ -10,20 +10,98 @@
 
 <a href="/yaml">YAML is a great format for configuration files and for data serialization. There are several Perl modules
 implementing the function that convert a YAML string into a Perl data structure (deserialize) and that can convert a Perl
-data structure into a YAML string (serialize). 
+data structure into a YAML string (serialize).
 
 =abstract end
 
-<a href="">YAML::Tiny</a> clearly states that it only implements a subset of features, but YAML and YAML::XS are
-supposed to be drop-in replacements of each other.
-They might not implement all the features of the YAML syntax, but 
+<a href="https://metacpan.org/pod/YAML::Tiny">YAML::Tiny</a> clearly states that it only implements a subset of features,
+but as far as I understand YAML and YAML::XS are supposed to be drop-in replacements of each other.
+<a href="https://metacpan.org/pod/YAML::Any">YAM::Any</a> is a wrapper
+around several YAML processors, though at one point YAML itself will be promoted to do that job.
 
-<code lang="perl">
+
+Yet, when I tried to <a href="">switch from  YAML to YAML::XS</a> I've encountered two cases of incompatibility.
+Probably in both cases the YAML file wasn't according to the specs, but in both cases YAML was forgiving and parsed
+the files as I expected them and in both cases YAML::XS threw exception. I've created minimal examples for both cases
+and I have tried to parse them with
+
+<ul>
+   <li><a href="https://metacpan.org/pod/YAML">YAML version 1.15</a></li>
+   <li><a href="https://metacpan.org/pod/YAML::XS">YAML::XS version 0.59</a></li>
+</ul>
+
+<h2>Space required after :</h2>
+
+The YAML file:
+
+<include file="examples/files/space_required.yml">
+
+<hl>perl yaml.pl files/space_required.yml</hl>  parsed and created
+
+<code>
+$VAR1 = {
+          'x' => {
+                 'a' => 'a',
+                 'b' => 'b'
+               }
+        };
 </code>
 
-<img src="/img/" alt="" />
+<hl>perl yaml_xs.pl files/space_required.yml</hl>
+
+<code>
+YAML::XS::Load Error: The problem:
+
+    could not find expected ':'
+
+was found at document: 1, line: 4, column: 1
+while scanning a simple key at line: 3, column: 3
+</code>
+
+The solution here is to put a space after the <hl>:</hl> in the line of 'b'.
+
+I am not sure if this is something that needs to be fixed in the YAML module, or just documented,
+but I've opened a <a href="https://github.com/ingydotnet/yaml-pm/issues/152">ticket</a>.
+
+
+<h2>Value with : needs to be quoted</h2>
+
+The YAML file:
+
+<include file="examples/files/quote_colon.yml">
+
+<hl>perl yaml.pl files/quote_colon.yml</hl> properly parses the YAML file and generates this data structure:
+
+<code>
+$VAR1 = {
+          'a' => [
+                 {
+                   'b' => 'c:'
+                 }
+               ]
+        };
+</code>
+
+<hl>perl yaml_xs.pl files/quote_colon.yml</hl> throws exception:
+
+<code>
+YAML::XS::Load Error: The problem:
+
+    mapping values are not allowed in this context
+
+was found at document: 1, line: 2, column: 9
+</code>
+
+the solution here is to put the value where we have the <hl>:</hl> between single-quote marks.
+
+Here to I've opened a <a href="https://github.com/ingydotnet/yaml-pm/issues/153">ticket</a> for consideration.
+
+<h2>The scripts I used</h2>
+
+<include file="examples/yaml.pl">
+
+<include file="examples/yaml_xs.pl">
 
 <include file="">
-<try file="">
 
 
