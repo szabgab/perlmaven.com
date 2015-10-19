@@ -9,20 +9,20 @@
 =abstract start
 
 Some times ago I have noticed that the Perl Maven site got slower. I thought it might mean I have outgrown the server.
-Or maybe the the new calls to the MongoDB backend cause the problem. I even checked what would it cost
-to upgrade the <a href="/linode">Linode</a> I have, but as I did not know what is the real source of the problem
+Or maybe the the new calls to the MongoDB backend are causing the problem. I even checked what would it cost
+to upgrade the <a href="/linode">Linode</a> I have, but as I did not know what is the real source of the problem,
 I was not sure that would help.
 
 =abstract end
 
 <h2>Prepare for profiling</h2>
 
-The proper thing to in this case is to try to find out what is the source of the long processing.
+The proper thing to do in this case is to try to find out what is the source of the long processing.
 In order to do that I wrote a small script that would load a single page.
-My site s using <a href="/dancer">Dancer</a> and it has a <hl>app.psgi</hl> file that could be used to launch
-via any <a href="/psgi">PSGI</a> compilant server. 
+My site is using <a href="/dancer">Dancer</a> and it has an <hl>app.psgi</hl> file that could be used to launch Dancer
+via any <a href="/psgi">PSGI</a> compliant server.
 
-I wrote a small program, similar to how a test-script would look like that loads a single page. (Juts the HTML part.)
+I wrote a small program, similar to how a test-script would look like that loads a single page. (Just the HTML part.)
 
 <include file="examples/psgi_profiling.pl">
 
@@ -33,7 +33,7 @@ to provide an environment for the application and finally we use the <hl>GET</hl
 
 <h2>Run the profiler</h2>
 
-One the above program was ready I ran the <a href="https://metacpan.org/pod/Devel::NYTProf">Devel::NYTProf</a> profiler with
+Once the above program was ready I ran the <a href="https://metacpan.org/pod/Devel::NYTProf">Devel::NYTProf</a> profiler with
 the following command:
 
 <code>
@@ -70,15 +70,15 @@ after a full day of work.
 
 Once I finished, I ran the profiler again and was happy to see the YAML calls are almost totally gone.
 
-In the morning I've deplyed the new version.
+In the morning I've deployed the new version.
 
 This is what the <a href="http://munin-monitoring.org/">Munin graphs</a> show half a day later:
 
 <h2>Request processing time</h2>
 
 It went down from an average of 2-3 to almost nothing.
-The graph shows the last 24 hour. The green line shows the average request processing time in the preceding 5 minutes.
-It dropped immediately once I deployed the new version. The blue line show the average of the past 24 hours. It will
+The graph shows the last 24 hours. The green line shows the average request processing time in the preceding 5 minutes.
+It dropped immediately once I deployed the new version. The blue line shows the average of the past 24 hours. It will
 catch up with the green line in 24 hours.
 
 <img src="/img/perl_maven_processing_time_2015_10_15.png" alt="Perl Maven site request processing time" width="497" height="292" />
