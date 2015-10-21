@@ -106,7 +106,7 @@ you log-in.
 On <b>Windows</b> you can set the same in the cmd command window by typing
 
 <code>
-set PERL5LIB = c:\path\to\dir
+set PERL5LIB=c:\path\to\dir
 </code>
 
 For a more long term solution follow these steps:
