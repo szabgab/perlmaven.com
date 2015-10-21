@@ -1,7 +1,7 @@
 =title How to split a text file line by line in Perl
-=timestamp 2015-09-07T07:30:01
+=timestamp 2015-10-21T07:30:01
 =indexes split, open
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
@@ -36,3 +36,6 @@ for my $line (@lines) {
     # ...
 }
 </code>
+
+The latter has the disadvantage that it can only handle files that will fit into the memory of the computer,
+but sometime it is mor convenient to have all the file in memory at once.

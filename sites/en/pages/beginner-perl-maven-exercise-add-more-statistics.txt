@@ -12,7 +12,7 @@ Exercise: add more statistics
 
 =abstract end
 
-Take the script from the count sum example where we added up the numbers in each row of a file and add additional statistical values:
+Take the script from the <a href="/beginner-perl-maven-sum-numbers-in-a-file">count sum</a> example where we added up the numbers in each row of a file and add additional statistical values:
 
 minumum
 
