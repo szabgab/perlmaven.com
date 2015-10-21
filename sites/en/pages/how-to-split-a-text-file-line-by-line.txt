@@ -12,6 +12,8 @@ A commonly asked question is "how to split a text file line by line".
 
 =abstract end
 
+<h2>Read line by line</h2>
+
 Normally you would read the file line by line, so the code is:
 
 <code lang="perl">
@@ -22,6 +24,8 @@ while (my $line = <$in>) {
 }
 close $in;
 </code>
+
+<h2>Read all the lines at once</h2>
 
 Alternatively you might want to read the whole file into memory at once
 and hold it in an array where each line is a separate element:
@@ -39,3 +43,26 @@ for my $line (@lines) {
 
 The latter has the disadvantage that it can only handle files that will fit into the memory of the computer,
 but sometime it is mor convenient to have all the file in memory at once.
+
+
+<h2>split</h2>
+
+Finally, if you really want to use the <a href="http://perlmaven.com/perl-split">split</a> function, you could read the
+whole file into memory using <a hrf="http://perlmaven.com/slurp">slurp</a> and then split it along the newlines,
+though I don't know when would this have any advantage over the other methods.
+
+<code lang="perl">
+my @lines = read_lines('some_file.txt');
+
+sub read_lines {
+    my ($file) = @_;
+
+    open my $in, "<:encoding(utf8)", $file or die "$file: $!";
+    local $/ = undef;
+    my $content = <$in>;
+    close $in;
+    return split /\n/, $content;
+}
+</code>
+
+
