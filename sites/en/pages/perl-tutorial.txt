@@ -123,7 +123,7 @@ to practice what you have learned.
 <li><a href="/sorting-mixed-strings">Sorting mixed strings</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
 <li><a href="/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
-<li><a href="/pro/reverse-polish-calculator-in-perl">Stack</a> and <a href="/using-a-queue-in-perl">queue</a></li>
+<li><a href="/reverse-polish-calculator-in-perl">Stack</a> and <a href="/using-a-queue-in-perl">queue</a></li>
 <li><a href="/reverse">reverse</a></li>
 <li><a href="/the-ternary-operator-in-perl">The ternary operator</a></li>
 <!--
