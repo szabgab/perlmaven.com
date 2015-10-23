@@ -9,7 +9,7 @@ menu:
         url: /perl-tutorial
   - dir: right
     menu:
-      - title: Digite uma palavra-chave:
+      - title: 'Digite uma palavra-chave:'
         url: /keywords
       - searchbox: 1
       - title: Arquivo

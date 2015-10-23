@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use YAML;
+use YAML::XS;
 use Test::More;
 use Path::Iterator::Rule;
 use Encode::Guess;
@@ -14,7 +14,7 @@ my $sites = 'sites.yml';
 
 ok -e $sites;
 eval {
-	YAML::LoadFile($sites);
+	YAML::XS::LoadFile($sites);
 };
 ok !$@, "Loading $sites" or diag $@;
 
@@ -35,6 +35,12 @@ while ( my $file = $it->() ) {
 	my $enc = guess_encoding(path($file)->slurp);
 	like ref $enc, qr/^Encode::(utf8|XS)$/, "slurp $file";
 	is scalar @warns, 0, "no warnings for slurp $file" or diag explain @warns;
+}
+
+my @resources = glob 'sites/*/resources.yml';
+for my $file (@resources) {
+	eval { YAML::XS::LoadFile($file) };
+	is $@, '', $file;
 }
 
 done_testing;
