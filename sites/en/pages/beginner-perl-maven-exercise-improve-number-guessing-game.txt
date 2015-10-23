@@ -27,7 +27,7 @@ Allow various special keys too:
 
 Now I can tell you that this is actually a 1 dimensional space fight. The number is your distance from the enemy space ship.
 
-For training purposes limit the outher space to be between 0-100 so even when the move mode is on the space-ship won't fly off this area.
+For training purposes limit the outer space to be between 0-100 so even when the move mode is on the space-ship won't fly off this area.
 
 Finaly, keep track of the minimum and maximum score (number of guesses till hit) in a file.
 
