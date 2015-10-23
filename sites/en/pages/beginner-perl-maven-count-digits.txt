@@ -69,7 +69,7 @@ The other thing that might be strange is that when we first encounter a digit, i
 So how could we access it as a number and increment it with <hl>++</hl>?
 
 When we start the iteration the <hl>@count</hl> array is empty. Using our input file the first digit we are going to encounter will be <hl>2</hl>.
-When executing <hl>$count[$c]++</hl>, perl is actually executing <hl>$count[2]++</hl>. Perl will try to look up the value of <hl>$count[$c]</h2>
+When executing <hl>$count[$c]++</hl>, perl is actually executing <hl>$count[2]++</hl>. Perl will try to look up the value of <hl>$count[$c]</hl>
 It does not exist hence, because we are attempting a numeric operation on a value that does not exist, Perl will default to act as if there was a number 0.
 Incerementing it with <hl>++</hl> it will turn into a <hl>1</hl> and will be assigned back to <hl>$count[2]</hl>.
 
@@ -90,6 +90,29 @@ Another 3 will get us to this: <hl>@count = (undef, undef, 1, 2)</hl>
 The 4 after that will get us here: <hl>@count = (undef, undef, 1, 2, 1)</hl>,
 and then the 9, will cause the array to be further enlarged to this:
 <hl>@count = (undef, undef, 1, 2, 1, undef, undef, undef, undef, 1)</hl>.
+
+
+<h2>Display the results</h2>
+
+The last 3 lines in the program will show the results. We have a <hl>foreach</hl> loop there that iterates over the digits from 0 to 9.
+On each iteration it will print out the content of <hl>$i</hl>, the current digit, and then we use the
+<a href="/the-ternary-operator-in-perl">ternary operator</a> to print out the content of the <hl>@count</hl> array in that place.
+In the ternary operator, we check if <hl>$c[$i]</hl>, the counter containing the number of occurances of the digit currently in <hl>$i</hl>,
+has any value. If it has, it means we have encountered that digit at least once, so we print <hl>$count[$i]</hl>. Otherwise, if we
+have not encountered this digit we print out 0.
+
+If we did not have this ternary operator, and if just printed the content of <hl>$count[$i]</hl> we might encounter some issues in case
+one of digit did not appear in our file. In that case <hl>$count[$i]</hl> would be still <a href="/undef-and-defined-in-perl">undef</a>
+which if printed will do two things: It will act as en empty stirng and will print nothing, but becasue we have
+<a href="/always-use-strict-and-use-warnings">use warnings</a> we are also going to get a 
+<a href="/use-of-uninitialized-value">Use of uninitialized value</a> warning.
+
+That warning will certainly alarm any viewer of the results.
+
+Even if we turn off warnings, which I don't recommend, we'd get an output in which we have holes. Rows that show the
+digit, but no number showing the frequency of that digit. Any casual viewer will immediately think that it is a bug.
+So it is better that we put a 0 in there.
+
 
 <h2>The result:</h2>
 
