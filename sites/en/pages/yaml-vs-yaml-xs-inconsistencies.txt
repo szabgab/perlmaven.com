@@ -16,7 +16,7 @@ data structure into a YAML string (serialize).
 
 <a href="https://metacpan.org/pod/YAML::Tiny">YAML::Tiny</a> clearly states that it only implements a subset of features,
 but as far as I understand YAML and YAML::XS are supposed to be drop-in replacements of each other.
-<a href="https://metacpan.org/pod/YAML::Any">YAM::Any</a> is a wrapper
+<a href="https://metacpan.org/pod/YAML::Any">YAML::Any</a> is a wrapper
 around several YAML processors, though at one point YAML itself will be promoted to do that job.
 
 
