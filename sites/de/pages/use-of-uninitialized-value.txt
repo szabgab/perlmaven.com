@@ -38,7 +38,7 @@ Lass uns zurückkehren zu der eigentlichen Warnung, die ich erklären wollte.
 Use of uninitialized value $x in say at perl_warning_1.pl line 6.
 </code>
 
-Das bedeutet, die Variable <hl>$x</hl hat keinen Wert (der Wert ist der spezielle Wert <hl>undef</hl>).
+Das bedeutet, die Variable <hl>$x</hl> hat keinen Wert (der Wert ist der spezielle Wert <hl>undef</hl>).
 Entweder sie hatte nie einen Wert oder zu irgendeinem Punkt wurde  <hl>undef</hl> zugewiesen.
 
 Du solltest die Stellen identifizieren, an denen die Variable zuletzt Werte zugewiesen
