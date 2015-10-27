@@ -16,7 +16,7 @@ Es ist eine Warnung, die die Programmausführung nicht beeinträchtigt und nur d
 wird, wenn Warnungen eingeschaltet wurden. Was auch empfohlen ist.
 
 Der gängiste Weg Warnungen einzuschalten ist die Anweisung <hl>use warnings;</hl> am
-Anfang des Sktipts oder Moduls einzufügen.
+Anfang des Skripts oder Moduls einzufügen.
 
 =abstract end
 
@@ -116,16 +116,13 @@ Diese Eigenart ist das Ergebnis des <hl>IO-Bufferings</hl>.
 Im Standard puffert Perl STDOUT, den Standard-Ausgabe-Kanal,
 während es STDERR, den Standard-Fehler-Kanal, nicht puffert.
 
-So while the word 'OK' is waiting for the buffer to be flushed,
-the warning message already arrives to the screen.
-
 Also, während das Wort 'OK' darauf wartet, dass der Ausgabekanal
 geleert (geflusht) wird, hat die Warnmeldung den Bildschirm
 schon erreicht.
 
 <h2>Puffern abschalten</h2>
 
-Um genau zu vermeiden, kannst Du das Puffern von STDOUT abschalten.
+Um genau das zu vermeiden, kannst Du das Puffern von STDOUT abschalten.
 
 Das kann durch folgenen Code zu Beginn des Skripts erfolgen:
 <hl>$| = 1;</hl>
@@ -150,8 +147,7 @@ OKUse of uninitialized value $x in say at perl_warning_1.pl line 7.
 42
 </code>
 
-(The warning is on the same line as the <b>OK</b> because we have not printed a newline
-<hl>\n</hl> after the OK.)
+(Die Warnung ist auf der gleichen Zeile wie das <b>OK</b>, weil wir keine neue Zeile <h1>\n</h1> nach dem OK ausgegeben haben.)
 
 <h2>Der ungewollte Scope</h2>
 
