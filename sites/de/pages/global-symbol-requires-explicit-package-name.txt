@@ -33,7 +33,7 @@ Global symbol "$x" requires explicit package name at ...
 </code>
 
 Obwohl die Fehlermledung richtig ist, ist sie für
-Prl-Anfänger wenig hilfreich. Sie haben vielleicht noch
+Perl-Anfänger wenig hilfreich. Sie haben vielleicht noch
 nicht gelernt, was "Packages" sind. Noch weniger wissen
 sie, was expliziter sein sollte, als ein $x.
 
