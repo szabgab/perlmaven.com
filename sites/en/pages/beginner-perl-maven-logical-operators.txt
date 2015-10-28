@@ -17,10 +17,10 @@ Logical Operators
 
 In Perl there are two sets of logical operators. 
 One set is the words <hl>and</hl>, <hl>or</hl>, <hl>not</hl>, and <hl>xor</hl>.
-The other set signs: the double ampersand (<hl>&amp;&amp;</hl>), the double pipe (<hl>||</hl>), the exlamation mark (<hl>!</hl>),
+The other set signs: the double ampersand (<hl>&amp;&amp;</hl>), the double pipe (<hl>||</hl>), the exclamation mark (<hl>!</hl>),
 and <a href="/what-is-new-in-perl-5.10--say-defined-or-state">starting from perl 5.10</a> the defined or (<hl>//</hl>).
 
-You can either either of these and the meaning is the same so <hl>and</hl> is the same as <hl>&amp;&amp;</hl> except tha the precedence of these
+You can either either of these and the meaning is the same so <hl>and</hl> is the same as <hl>&amp;&amp;</hl> except that the precedence of these
 operators are different.
 
 Normally you'd write an expression like this:
@@ -53,7 +53,7 @@ For example when we would like to <a href="/how-to-set-default-values-in-perl">s
 to use <hl>||</hl> or <hl>//</hl>.
 
 In the case of <a href="/beginner-perl-maven-shift">shift or die</hl> it is important to use the word <hl>or</hl>.
-The expression will not work if we replaced it wirh <hl>||</hl>.
+The expression will not work if we replaced it with <hl>||</hl>.
 
 In the case of <a href="/open-and-read-from-files">open or die</a> you could use <hl>||</hl>, but that would require additional parentheses.
 I recommend always using <hl>or</hl> in that case too.
