@@ -156,6 +156,10 @@ And a few other related articles:
   <li>2015.10.11 <a href="http://blogs.perl.org/users/e_choroba/2015/10/last-minute-htmlelementreplacer.html">Last Minute: HTML::Element::Replacer</a> by E. Choroba</li>
 </ul>
 
+<h3>October</h3>
+<ul>
+  <li>2015.11.01 <a href="http://blogs.perl.org/users/e_choroba/2015/11/netsftpforeign-in-taint-mode.html"></a> by E. Choroba</li>
+</ul>
 
 <!-- Template for adding new blogposts:
   <li>2015.. <a href=""></a> by </li>
