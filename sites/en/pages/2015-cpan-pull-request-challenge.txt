@@ -158,7 +158,7 @@ And a few other related articles:
 
 <h3>October</h3>
 <ul>
-  <li>2015.11.01 <a href="http://blogs.perl.org/users/e_choroba/2015/11/netsftpforeign-in-taint-mode.html"></a> by E. Choroba</li>
+  <li>2015.11.01 <a href="http://blogs.perl.org/users/e_choroba/2015/11/netsftpforeign-in-taint-mode.html">Net::SFTP::Foreign in taint mode</a> by E. Choroba</li>
 </ul>
 
 <!-- Template for adding new blogposts:
