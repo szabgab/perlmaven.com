@@ -1,0 +1,20 @@
+menu:
+  - dir: left
+    menu:
+      - title: Perl Tutorial
+        url: /perl-tutorial
+      - login: 1
+        title: Login
+      - title: Register
+        url: /pm/register
+  - dir: right
+    menu:
+      - title: 'Type keyword:'
+        url: /keywords
+      - searchbox: 1
+      - title: Archive
+        url: /archive
+      - title: About
+        url: /about
+      - atom: 1
+
