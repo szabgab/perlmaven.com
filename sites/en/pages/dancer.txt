@@ -53,6 +53,8 @@ Then also implement a notification solution so if the data is changed on the ser
 -->
 </ul>
 
+<a href="/dancer2-angularjs-single-page-application">Single Page Application with Perl Dancer and AngularJS</a>
+
 <h2>See Also</h2>
 <ul>
   <li><a href="/psgi">PSGI</a> - Dancer is a PSGI based web framework. Learning about the lower layer might be useful.</li>
