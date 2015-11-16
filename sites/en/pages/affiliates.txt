@@ -21,12 +21,13 @@ the Perl Maven site a bit.
 </ul>
 
 
+<!--
 <h2>On-line training</h2>
 
 <ul>
    <li><a href="/codeschool">Code School</a></li>
 </ul>
-
+-->
 
 <!--
    <li><a href=""></a></li>
