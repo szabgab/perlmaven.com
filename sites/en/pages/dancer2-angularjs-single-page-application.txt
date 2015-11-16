@@ -21,7 +21,7 @@ application will use those.
 
 The <a href="https://github.com/szabgab/Dancer2-Angular-Skeleton">Dancer2-Angular-Skeleton</a> is such a set of files.
 
-Download the skeletin using the <a href="https://github.com/szabgab/Dancer2-Angular-Skeleton/archive/master.zip">Download ZIP</a> button in
+Download the skeleton using the <a href="https://github.com/szabgab/Dancer2-Angular-Skeleton/archive/master.zip">Download ZIP</a> button in
 the GitHub Repository. And unzip the file.
 
 <code>
@@ -31,7 +31,7 @@ $ dancer2 -a My::App -s Dancer2-Angular-Skeleton-master
 </code>
 
 Due to a bug for which I sent in a <a href="https://github.com/PerlDancer/Dancer2/pull/1060">pull request already</a> it will complain a bit
-with hundresds of rows like this:
+with hundreds of rows like this:
 
 <code>
 utf8 "\xAC" does not map to Unicode a ...
