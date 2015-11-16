@@ -1,5 +1,5 @@
 =title Debugowanie skryptów Perla
-=timestamp 2013-03-07T19:45:57
+=timestamp 2015-11-16T09:45:57
 =indexes -d, Data::Dumper, print, debug, debugging, $VAR1, $VAR2
 =status show
 =books beginner
