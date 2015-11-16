@@ -20,6 +20,11 @@
 <li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
 <li><a href="/debugging-perl-scripts">Debugowanie skryptów Perla</a></li>
 </ol>
+
+<b>Skalary</b>
+<ol>
+<li><a href="/common-warnings-and-error-messages">Typowe komunikaty ostreżeń i błędów</a></li>
+</ol>
 </p>
 <!--
 <li><a href="/hashbang">#!/usr/bin/perl - linia hashbang</a></li>

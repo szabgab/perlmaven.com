@@ -1,4 +1,4 @@
-=title Debugging Perl scripts
+=title Debugowanie skryptów Perla
 =timestamp 2013-03-07T19:45:57
 =indexes -d, Data::Dumper, print, debug, debugging, $VAR1, $VAR2
 =status show
@@ -65,7 +65,7 @@ z graficznym debuggerem. W pewnym momencie przygotuję video także dla kilku z 
 
 Wielu ludzi używa wiekowej strategii dodawania poleceń print w kodzie.
 
-W językach, gdzie kompilacaja i budowa może zająć wiele czasu, polecenia print
+W językach, gdzie kompilacja i budowa może zająć wiele czasu, polecenia print
 są uważane za zły sposób debugowania kodu.
 Nie jest tak w Perlu, gdzie nawet duże aplikacje kompilują się i zaczynają działać w przeciągu paru sekund.
 
@@ -79,27 +79,27 @@ Wartości skalarne mogą być wyświetlane tak:
 print "<$file_name>\n";
 </code>
 
-Here the less than and greater than signs are there only to make it easier for the reader
-to see the exact content of the variable:
+Znaki mniejszości i większości są tu jedynie po to, by czytający mógł łatwiej
+zobaczyć dokładną zawartość zmiennej:
 
 <code>
 <path/to/file
 >
 </code>
 
-If the above is printed you can quickly notice that there is a trailing newline at the end of the $file_name
-variable. Probably you forgot to call <b>chomp</b>.
+Jeśli powyższe zostanie wyświetlone, możesz łatwo zauważyć, że jest tam kończący znak nowejlinii na końcu zmiennej
+$file_name. Prawdopodobnie zapomniałeś wywołać <b>chomp</b>.
 
-<h2>Complex data structures</h2>
+<h2>Złożone struktury danych</h2>
 
-We have not learned even scalars yet, but let me jump ahead here and show how you would
-print out the content of the more complex data structures. If you are reading this
-as part of the Perl tutorial then you probably want to skip to the next entry and come back later.
-This won't mean too much to you now.
+Nie poznaliśmy jeszcze nawet skalarów, ale pozwól, że przeskoczę do przodu i pokażę Ci, jak
+wyświetlić zawartość bardziej złożonych struktur danych. Jeśli czytasz to jako
+część samouczka Perla, prawdopodobnie zechcesz pominąć następny wpis i wrócić później.
+Nie będzie on dla Ciebie teraz zbyt znaczący.
 
-Otherwise, keep reading.
+W innym wypadku, czytaj dalej.
 
-For complex data structures (references, arrays and hashes) you can use the <hl>Data::Dumper</hl>
+Dla złożonych struktur danych (referencje, tablice oraz hasze) możesz użyć <hl>Data::Dumper</hl>
 
 <code lang="perl">
 use Data::Dumper qw(Dumper);
@@ -109,8 +109,8 @@ print Dumper \%a_hash;
 print Dumper $a_reference;
 </code>
 
-These will print something like this, which helps understand the content of the variables,
-but shows only a generic variable name such as <hl>$VAR1</hl> and <hl>$VAR2</hl>.
+To wyświetli coś podobnego, co pomoże zrozumieć zawartość zmiennych,
+ale pokaże tylko ogólne nazwy zmiennych takie jak <hl>$VAR1</hl> oraz <hl>$VAR2</hl>.
 
 <code>
 $VAR1 = [
@@ -128,13 +128,13 @@ $VAR1 = {
      };
 </code>
 
-I'd recommend adding some more code and printing the name of the variable like this:
+Zalecam dodanie nieco większej ilości kodu i wyświetlenie nazw zmiennych, następująco:
 
 <code lang="perl">
 print '@an_array: ' . Dumper \@an_array;
 </code>
 
-to gain:
+by otrzymać:
 
 <code>
 @an_array: $VAR1 = [
@@ -144,14 +144,14 @@ to gain:
       ];
 </code>
 
-or with Data::Dumper like this:
+albo, z Data::Dumper, w taki sposób:
 
 <code lang="perl">
 print Data::Dumper->Dump([\@an_array, \%a_hash, $a_reference],
    [qw(an_array a_hash a_reference)]);
 </code>
 
-getting
+otrzymując:
 
 <code>
 $an_array = [
@@ -169,7 +169,6 @@ $a_reference = {
              };
 </code>
 
-There are nicer ways to print data structures but at this point <hl>Data::Dumper</hl>
-is good enough for our needs and it is available in every perl installation.
-We'll discuss other methods later on.
-
+Istnieją ładniejsze sposoby wyświetlania struktur danych ale w tym momencie <hl>Data::Dumper</hl>
+jest wystarczający dla naszych potrzeb i jest on dostępny w każdej instalacji perla.
+Inne metody omówimy później.
