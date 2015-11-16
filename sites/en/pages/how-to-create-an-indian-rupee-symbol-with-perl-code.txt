@@ -1,6 +1,6 @@
 =title How to create an Indian Rupee symbol with Perl code
 =timestamp 2013-03-16T10:30:02
-=indexes binmode, Unicode, UTF8
+=indexes binmode, Unicode, STDOUT, UTF8
 =status show
 =books beginner
 =author szabgab
