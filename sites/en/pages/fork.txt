@@ -283,9 +283,6 @@ If we only want the child process to send the results back to the parent
 we can let the child save the results in a file and the parent can read
 the file after the child terminates.
 
-We will see it in another article.
-
-
-
-
+We will see it in another article:
+<a href="/pro/speed-up-calculation-by-running-in-parallel">Speed up calculation by running in parallel</a>
 
