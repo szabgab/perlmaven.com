@@ -118,26 +118,8 @@ Some include screencasts, others contain just text.
 
 
 <h2>Object Oriented Programming in Perl using raw classes</h2>
-<ol>
-  <li><a href="/pro/core-perl-oop-constructor">Core Perl OOP: Constructor</a></li>
-  <li><a href="/pro/core-perl-oop-getter-setter">Core Perl OOP: Getter - Setter</a></li>
-  <li><a href="/pro/what-should-setters-return">What should setters return?</a></li>
-  <li><a href="/pro/core-perl-oop-constructor-arguments">constructor-arguments</a></li>
-  <li>Destructor</li>
-  <li>Attributes, attribute types (members)</li>
-  <li>Create your own type</li>
-  <li>Getters/Setters</li>
-  <li>Inheritance</li>
-  <li>Polymorphism</li>
-  <li>Encapsulation</li>
-  <li>Singleton</li>
-  <li>Destructor (DESTROY)</li>
-  <li>OOP: Bless, or what you will see in the wild</li>
-  <li>OOP: Class::Accessor A small scale object oriented system in Perl</li>
-  <li>Class methods and Instance methods</li>
-  <li>Automatic Class creation</li>
-  <li>Operator overloading</li>
-</ol>
+
+See the <a href="/oop">Classic Object Oriented Perl</a> page.
 
 <h2>Object Oriented using Moo</h2>
 

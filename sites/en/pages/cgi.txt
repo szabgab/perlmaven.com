@@ -26,6 +26,13 @@ Ruby has <a href="http://rack.github.io/">Rack</a>, and Perl has <a href="/psgi"
 Nevertheless CGI is still available and in some cases still the appropriate choice. Therefore we have a few
 articles and screencasts related to CGI.
 
+Up till version 5.20 the standard Perl distribution included the <a href="https://metacpan.org/pod/CGI">CGI</a> module.
+If  you have a version of Perl that does not come with the module you can either install
+<a href="https://metacpan.org/pod/CGI">CGI</a> from CPAN or you can install
+<a href="https://metacpan.org/pod/CGI::Simple">CGI::Simple</a> which a more light-weight version of the same.
+
+Alternatively you can install <a href="/psgi">PSGI</a> and if you have no better option, use it in CGI mode.
+
 <ul>
   <li><a href="/modern-web-with-perl">Modern Web with Perl</a></li>
   <li><a href="/perl-cgi-script-with-apache2">Perl/CGI script with Apache2</a></li>
@@ -33,6 +40,5 @@ articles and screencasts related to CGI.
   <li><a href="/simple-cgi-script-to-send-form-by-email">Simple CGI Perl script to send form by e-mail</a></li>
   <li><a href="/pro/hello-world-with-plain-cgi">Hello World with plain CGI</a></li>
   <li><a href="/pro/echo-with-plain-cgi">Echo with plain CGI</a></li>
-
 </ul>
 

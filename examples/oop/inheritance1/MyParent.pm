@@ -1,4 +1,4 @@
-package GrandParent;
+package MyParent;
 use strict;
 use warnings;
 
@@ -9,7 +9,7 @@ sub new {
  
 sub say_hi {
     my ($self) = @_;
-    print "Hi from GrandParent\n";
+    print "Hi from MyParent\n";
     return;
 }
 

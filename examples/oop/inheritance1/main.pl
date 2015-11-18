@@ -2,9 +2,9 @@
 use strict;
 use warnings;
 
-use Parent;
+use MyModule;
 
-my $myObj = Parent->new;
-$myObj->say_hello;
+my $myObj = MyModule->new;
 $myObj->say_hi;
+$myObj->say_hello;
 
