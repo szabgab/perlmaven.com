@@ -133,7 +133,7 @@ our @ISA = ('MyParent');
 </code>
 
 
-One side not. Never ever call your module "Parent.pm" or "Base.pm". That will break your code
+One side note. Never ever call your module "Parent.pm" or "Base.pm". That will break your code
 when you try to run it on an operating system with case insensitive filesystem such as MS Windows
 or Apple Mac OSX. I know. I fell in that trap while preparing this example.
 
