@@ -8,30 +8,10 @@
 
 =abstract start
 
-<a href="http://json.org/">JSON (JavaScript Object Notation)</a> is a lightweight data interchange (serialization) format inspired by JavaScript object literal syntax.
-The power of JSON comes from the fact that it maps rather well to the complex data structures of many programming languages and that there are converters
-between JSON and the data structures of over 60 programming languages. See the <a href="http://json.org/">JSON site</a> for specification and for the list of implementations.
+<a href="http://code-maven.com/json">JSON (JavaScript Object Notation)</a> is a
+lightweight data interchange (serialization) format inspired by JavaScript object literal syntax.
 
 =abstract end
-
-For our purposes JSON is a string that can be easily stored in a file, or can be easily transmitted over some networking protocol.
-This makes it an extremely useful format for data exchange between processes even if the process are running on different machine, at different times,
-and are written in different languages. It can be also used as a format for configuration files as it is rather readable and writable to humans as well.
-
-<h2>Use cases of JSON</h2>
-
-Ajax, that stands for <b>"asynchronous JavaScript and XML"</b>, describes how an application written in JavaScript running in a browser can communicate
-with the application running on the server that is most likely written in some other language, for example in Perl. Originally, as the name indicates,
-the data sent back-and-forth between the two applications was supposed to be in XML, but today, a large chunk of those applications communicate
-using JSON format. It is more light-weight than XML and fits the purpose much better.
-
-Using it as a human edited configuration file is another use case. The fact that it allows the creation of deep hierarchies makes it much more useful that
-the INI-file format which was used extensively especially in Microsoft Windows.
-
-JSON can be used as a Data Serialization method for caching.
-
-A step-child of it, called <a href="http://en.wikipedia.org/wiki/BSON">BSON (Binary JSON)</a>,
-is being used as the data format in <a href="https://www.mongodb.org/">MongoDB</a>.
 
 
 <h2>JSON implementations in Perl</h2>
