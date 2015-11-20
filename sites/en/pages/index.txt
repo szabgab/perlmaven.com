@@ -43,6 +43,7 @@ ul.horizontal li {
 <h2>Object Oriented Perl</h2>
 
 <ul>
+  <li><a href="/oop">OOP</a>, the classic way to write Object Oriented Perl code.</li>
   <li><a href="/moo">Moo</a>, the Minimalist Object Oriented system for Perl.</li>
   <li><a href="/moose">Moose</a>, the 'post modern' Object Oriented system for Perl.</li>
 </ul>
