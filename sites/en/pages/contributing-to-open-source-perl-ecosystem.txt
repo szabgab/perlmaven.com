@@ -24,8 +24,9 @@ and any <a href="/web-sites-powered-by-perl-with-open-source-code-base">web site
   <li><a href="#vcs">Link to Version Control system</a></li>
   <li><a href="#travis">Add Travis-CI to GitHub repository</a></li>
   <li><a href="#issues">Fix any issue reported against the distribution</a></li>
-  <li><a href="tests">Add tests to increase test coverage</a></li>
+  <li><a href="#tests">Add tests to increase test coverage</a></li>
   <li><a href="#pod">Improve documentation, examples for common use cases</a></li>
+  <li><a href="#adopt">Adopt a CPAN module</a></li>
   <li><a href="#p5p">Perl 5 core</a></li>
   <li><a href="#perl6">Perl 6</a></li>
   <li><a href="#cpan-prc">CPAN PR Challenge</a></li>
@@ -120,6 +121,8 @@ services:
   - mongodb
 </code>
 
+You can take a look at the <a href="/recent">list of most recent releases</a> where you can find which ones have no Travis-CI configuration.
+Fixing those, "while they are hot" is a good approach.
 
 <h2 id="issues">Fix any issue reported against the distribution</h2>
 
@@ -167,6 +170,19 @@ Required skills:
    <li>Check the areas that were never called. Are they in use? Could they be removed? If they can be removed, send that as a patch to the author.</li>
    <li>If they are still in use then write test cases that exercise those parts of the code.</li>
 </ul>
+
+
+<h2 id="adopt">Adopt a CPAN module</h2>
+
+This might be more than "low hanging fruit", but adopting a CPAN module and becoming its maintainer is a great way to contribute.
+There is a <a href="http://neilb.org/adoption/">list of CPAN modules</a> that can be good candidates for
+<a href="http://neilb.org/2013/07/24/adopt-a-module.html">taking over maintenance</a>, but in general if you find a module
+that does not have a recent release, especially if the author did not have any activity on CPAN, thos modules are probably
+good candidates for adoption.
+
+On <a href="https://metacpan.org/">MetaCPAN</> you can find the date of the most recent release of each distribution,
+and the when looking at the page of each individual author, you can see what was the last time s/he upload any module.
+
 
 <h2 id="p5p">Perl 5 core</h2>
 
