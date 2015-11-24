@@ -180,7 +180,7 @@ There is a <a href="http://neilb.org/adoption/">list of CPAN modules</a> that ca
 that does not have a recent release, especially if the author did not have any activity on CPAN, thos modules are probably
 good candidates for adoption.
 
-On <a href="https://metacpan.org/">MetaCPAN</> you can find the date of the most recent release of each distribution,
+On <a href="https://metacpan.org/">MetaCPAN</a> you can find the date of the most recent release of each distribution,
 and the when looking at the page of each individual author, you can see what was the last time s/he upload any module.
 
 
