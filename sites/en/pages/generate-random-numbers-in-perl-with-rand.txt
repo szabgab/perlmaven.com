@@ -43,7 +43,7 @@ The best to imagine is probably that there is a giant list of pre-defined number
 call <hl>rand()</hl> it will just return the next number. In some languages the built-in random generator
 starts from the beginning of this list every time a program starts. In order to
 let the list start from another place you can call the <hl>srand()</hl> function.
-So in other languages you might first need to call <hl>srnad()</hl> once and then you can call <hl>rand()</hl>
+So in other languages you might first need to call <hl>srand()</hl> once and then you can call <hl>rand()</hl>
 as many times as you want.
 
 Perl however will call <hl>srand()</hl> for you every time a new script starts so normally you'll
