@@ -46,7 +46,7 @@ due its name and hat's probably it is used in a lot of old code and people who n
   <li><a href="https://metacpan.org/pod/IO::Socket::SSL">IO::Socket::SSL</a></li>
   <li><a href="https://metacpan.org/pod/HTTP::Response">HTTP::Response</a></li>
   <li><a href="https://metacpan.org/pod/DBIx::Class::ResultSet">DBIx::Class::ResultSet</a></li>
-  <li><a href="https://metacpan.org/pod/Log::Log4perl">Log::Log4perl</a></li> 2200
+  <li><a href="https://metacpan.org/pod/Log::Log4perl">Log::Log4perl</a></li>
 </ol>
 
 
