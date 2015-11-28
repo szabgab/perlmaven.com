@@ -12,7 +12,7 @@
 =abstract start
 
 There are several ways to write Object Oriented Perl. You can manually bless references, you can use one of the constructor and accessor generator modules,
-or you can use on of the modules from the <a href="/moose">Moose</a> family. <a href="/moo">Moo</a> is the Minimalist Object Orientation with Moose compatibility. In this screencast you'll learn
+or you can use one of the modules from the <a href="/moose">Moose</a> family. <a href="/moo">Moo</a> is the Minimalist Object Orientation with Moose compatibility. In this screencast you'll learn
 the basics. (3:19 min)
 
 =abstract end
@@ -25,7 +25,7 @@ See on <a href="https://www.youtube.com/watch?v=aRkSb1AUS-0">YouTube</a>.
 We are going to see how to create a class using <a href="https://metacpan.org/pod/Moo">Moo</a>.
 the Minimal Object Oriented system of Perl. In order to show this example, we need two files.
 One of them is a script called <hl>school.pl</hl> which has standard Perl preamble
-at the beginning at it loads the <hl>Person</hl> module.
+at the beginning and loads the <hl>Person</hl> module.
 
 <code lang="perl">
 #!/usr/bin/perl
@@ -143,7 +143,7 @@ two parameters: the object itself and the 'Bar' value. That's where the error me
 came from.
 
 In reality, the exception is because in the declaration, in the Person module, we said
-that this attribute is read-only: <hl>ro</hl>. So if change that to be both readable
+that this attribute is read-only: <hl>ro</hl>. If we change that to be both readable
 and writable <hl>rw</hl> like this: <hl>has name => (is => 'rw');</hl>, save the file,
 go back to the console and run the script again: <hl>perl school.pl</hl> it will print out:
 
