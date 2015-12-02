@@ -23,7 +23,7 @@ You, or your team can set up your own standard, and use Perl::Critic to enforce 
 The <a href="https://metacpan.org/pod/Perl::Critic">Perl::Critic</a> module
 comes with a command line tool called <b>perlcritic</b>, but you
 can also integrate the use of Perl::Critic in your unit-tests via
-the <a href="://metacpan.org/pod/Test::Perl::Critic">Test::Perl::Critic</a>
+the <a href="http://metacpan.org/pod/Test::Perl::Critic">Test::Perl::Critic</a>
 wrapper.
 
 As an example, let's see the results of the default, the most gentle level of criticism
