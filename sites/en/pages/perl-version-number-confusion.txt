@@ -39,7 +39,10 @@ I am not yet sure which module is confused, but I am, for sure.
 
 
 It seems that <hl>Perl::Version</hl> thinks that <hl>5.11</hl> and <hl>v5.11</hl> are the same
-while <hl>version</hl> thinks they are different:
+while <hl>version</hl> thinks they are different.
+
+Not only that, but Perl::Version seems to thin <hl>5.11</hl> equals to <hl>5.011</hl>.
+I am fairly sure that should not be the case.
 
 <include file="examples/version_compare_confusion.pl">
 
