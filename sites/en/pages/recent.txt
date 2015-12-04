@@ -1,0 +1,108 @@
+=title Monitoring the most recent uploads to CPAN
+=timestamp 2015-11-24T18:00:01
+=indexes CPAN
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Monitoring the most recent upload to CPAN.
+
+=abstract end
+
+<script>
+angular.module('PerlMavenApp').controller('PerlMavenRecentCtrl', function($scope, $http) {
+    $http.get('/api/1/recent').then(function (response) {
+        console.log(response.data);
+        $scope.distributions = response.data;
+		$scope.distributions.forEach(function(d) {
+			d._local_ = {};
+			//console.log(d._cm_);
+			//console.log(d._cm_.repository_url);
+			if (! d._cm_) {
+				return;
+			}
+			var repository_url = d._cm_.repository_url || '';
+			var p = new RegExp('https://github.com/(.*)');
+			var match = p.exec(repository_url);
+			if (match) {
+				d._local_.repo = match[1];
+				console.log(d._local_.repo);
+			}
+		});
+		// var repo_url = d.cpan.metadata.resources.repository.web || d.cpan.metadata.resources.repository.url;
+    }, function(response) {
+        console.log('error');
+    });
+});
+</script>
+
+<div ng-controller="PerlMavenRecentCtrl">
+  <table>
+  <tr>
+    <th>Distribution</th>
+    <th>Abstract</th>
+    <th>Date</th>
+    <th>Repository</th>
+    <th>Travis-CI</th>
+    <th>License</th>
+    <th></th>
+  </tr>
+  <tr ng-repeat="d in distributions" ng-class-even="'even'" ng-class-odd="'odd'">
+    <td><a href="http://metacpan.org/release/{{d.cpan.distribution}}">{{d.cpan.distribution}}</a></td>
+    <td>{{d.cpan.abstract}}</td>
+    <td>{{d.cpan.date}}</td>
+    <!--<td><a href="">{{d.cpan.resources.repository.url}}</a></td>-->
+    <td>
+      <span ng-show="d._cm_.repository_url"><a href="{{d._cm_.repository_url}}"><span class="label label-success">Repo</span></a></span>
+      <span ng-show="!d._cm_.repository_url"><a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions"><span class="label label-danger">Add link!</span></a></span>
+    </td>
+    <td>
+       <span ng-show="d._cm_.travis_yml"><a href="https://travis-ci.org/{{d._local_.repo}}/"><span class="label label-success">Travis</span></a></span>
+       <span ng-show="!d._cm_.travis_yml">
+          <span ng-show="d._local_.repo">
+	          <a href="/enable-travis-ci-for-continous-integration"><span class="label label-danger">Enable!</span></a>
+          </span>
+          <span ng-show="!d._local_.repo">
+		       <span class="label label-default">Irrelevant</span>
+          </span>
+       </span>
+    </td>
+    <td>
+       <span ng-show="d.cpan.license[0] === 'unknown'"><a href="/how-to-add-the-license-field-to-meta-files-on-cpan"><span class="label label-danger">Add!</span></a></span>
+       <span ng-show="d.cpan.license[0] !== 'unknown'"><a href=""><span class="label label-success">{{d.cpan.license[0]}}</span></a></span>
+    </td>
+  </tr>
+  </table>
+
+  <div>Total: {{distributions.length}}</div>
+
+
+
+  <h2>Explanation</h2>
+  <ol>
+    <li>Name of the CPAN distribution.</li>
+    <li>Is there a link to a public Version control system?</li>
+    <li>Has .travis.yml file? (Only relevant if the distribution has a GitHub repository.)</li>
+  </ol>
+  
+  Having a Public VCS is a good thing for every Open Source Project. Having it included in the META file makes it easy for people to find it.
+  
+  <h3>Public VCS cases</h3>
+  <ul>
+    <li>No VCS and the author explicitly said s/he does not have a public VCS. Then link to explanation why would it be beneficial to have a public VCS.</li>
+    <li>No VCS. Then link to explanation how to start using GitHub.</li>
+    <li>Has GitHub link in the 'url' field and also has a 'web' field and a 'type' field. Then this is perfect.</li>
+    <li>Has GitHub link in the 'url' or 'web' fields but not like above. Then link to explanation how to improve it.</li>
+    <li>Has some other VCS link in the 'url' or 'web' fields. That's ok but nevertheless link to explanation that if it was on GitHub it could use Travis-CI.</li>
+  </ul>
+  
+  <div>
+  Note: Usernames on Github are case insensitive, but on Travis-CI they are <a href="https://github.com/travis-ci/travis-ci/issues/3198">still case sensitive</a>.
+  This can break the above report if the URL give in the META.yml is not in the same case as Travis-CI.
+  </div>
+
+
+</div>
+
