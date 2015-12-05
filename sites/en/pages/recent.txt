@@ -42,7 +42,7 @@ angular.module('PerlMavenApp').controller('PerlMavenRecentCtrl', function($scope
       <span ng-show="!d.repository_url"><a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions"><span class="label label-danger">Add link!</span></a></span>
     </td>
     <td>
-       <span ng-show="d.travis_yml"><a href="https://travis-ci.org/{{d.repo}/"><span class="label label-success">Travis</span></a></span>
+       <span ng-show="d.travis_yml"><a href="https://travis-ci.org/{{d.repo}}/"><span class="label label-success">Travis</span></a></span>
        <span ng-show="!d.travis_yml">
           <span ng-show="d.repo">
 	          <a href="/enable-travis-ci-for-continous-integration"><span class="label label-danger">Enable!</span></a>
