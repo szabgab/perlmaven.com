@@ -27,7 +27,8 @@ if ($new_db) {
    )}
     );
 }
-my ($timestamp, $status, $pid) = $dbh->selectrow_array('SELECT timestamp, status, pid FROM processes WHERE status="running"');
+my ($timestamp, $status, $pid)
+    = $dbh->selectrow_array('SELECT timestamp, status, pid FROM processes WHERE status="running"');
 
 if ($timestamp) {
     say "There is already a running process using PID $$ started at " . localtime($timestamp);
@@ -49,7 +50,8 @@ my $id = $dbh->last_insert_id('', 'main', 'processes', 'id');
 say "Running PID $$ id $id (will take $wait seconds)";
 sleep $wait;
 my $elapsed_time = time - $start_time;
-$dbh->do('UPDATE processes SET status=?, elapsed_time=?, pid=? WHERE id=?', undef, $end_status, $elapsed_time, undef, $id);
+$dbh->do('UPDATE processes SET status=?, elapsed_time=?, pid=? WHERE id=?',
+    undef, $end_status, $elapsed_time, undef, $id);
 
 system "echo .dump | sqlite3 $db_file";
 
