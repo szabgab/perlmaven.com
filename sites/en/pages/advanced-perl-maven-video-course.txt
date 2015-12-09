@@ -80,7 +80,7 @@ Some include screencasts, others contain just text.
 <ol>
 <li>Introduction to References</li>
   <li><a href="/passing-two-arrays-to-a-function">Passing two arrays to a function</a></li>
-  <li><a href="/pro/array-references-in-perl">Array references</a></li>
+  <li><a href="/array-references-in-perl">Array references</a></li>
   <li>Handling multi-dimensional, complex data structures</li>
   <li>Manipulating Complex Data Structures</li>
   <li>Reference counting</li>

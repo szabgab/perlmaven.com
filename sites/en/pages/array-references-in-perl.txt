@@ -1,0 +1,183 @@
+=title Array references in Perl
+=timestamp 2015-04-23T09:30:01
+=indexes @, \@, $#, $#$, @{ }, ARRAY(0x703dcf2), Data::Dumper
+=status show
+=books advanced
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+In this part of the <a href="/perl-tutorial">Perl Tutorial</a>
+we are going to learn about <b>array references</b>.
+
+=abstract end
+
+There are two main uses of array references. One is to make it easy 
+to <a href="/passing-two-arrays-to-a-function">pass more than one arrays to a subroutine</a>,
+the other is to build arrays of arrays or other multi-dimensional data structures.
+
+<h2>Creating a reference to a Perl array</h2>
+
+If we have an array called <hl>@names</hl>, we can create a reference
+to the array using a back-slash <hl>\</hl> in-front of the variable:
+<hl>my $names_ref  = \@names;</hl>.
+
+We use the _ref extension so it will stand out for us
+that we expect to have a reference in that scalar. This
+is not a requirement and Perl does not care,
+but it might be useful while learning about them.
+
+If we now call <hl>print $names_ref;</hl> we'll see the following:
+
+<code>
+ARRAY(0x703dcf2)
+</code>
+
+That is the address of the <hl>@names</hl> array in memory
+with the clear notion that it is the location of an ARRAY.
+
+The only thing you can do with an array reference, is to get back the original
+array.
+
+(If you are a C programmer, don't even think about pointer arithmetic.
+You can't do that in Perl.)
+
+Basically, if you see such value printed somewhere, you know that
+the code is accessing a reference to an array and that you should probably
+change the code to access the content of that array.
+
+<h2>Dereferencing an array</h2>
+
+If you have a reference to an array and if you would like to access
+the content of the array you need to <b>dereference</b> the <b>array reference</b>.
+It is done by placing the <hl>@</hl> symbol (the sigil representing arrays)
+in-front of the reference.
+
+This can be written either wrapped in curly braces: <hl>@{$names_ref}</hl>
+or without the curly braces: <hl>@$names_ref</hl>.
+
+You could also put spaces around the name and write: <hl>@{ $names_ref }</hl>.
+This usually makes things nicer, and more readable.
+
+You can then use this construct to access the array.
+For example: <hl>print "@{ $names_ref }";</hl>
+
+A full script might look like this:
+
+<code lang="perl">
+#!/usr/bin/env perl
+use strict;
+use warnings;
+
+my @names = qw(Foo Bar Baz);
+
+my $names_ref  = \@names;
+print "$names_ref\n";         # ARRAY(0x703dcf2)
+
+print "@$names_ref\n";        # Foo Bar Baz
+print "@{ $names_ref }\n";    # Foo Bar Baz
+</code>
+
+<h2>Individual elements</h2>
+
+If we have a reference to an array we can also easily access the individual elements.
+
+If we have the array <hl>@names</hl> we access the first element using <hl>$names[0]</hl>.
+That is, we replace the <hl>@</hl>-sign with a <hl>$</hl>-sign and put the index in 
+square brackets after the name.
+
+With references we do the same. If we have the array reference
+<hl>$names_ref</hl> then the original array is represented by <hl>@{$names_ref}</hl>.
+Replace the <hl>@</hl> by the <hl>$</hl> and put the index after the thing in square brackets.
+<hl>${$names_ref}[0]</hl> or <hl>$$names_ref[0]</hl> if you like the brace less style.
+
+Unfortunately both of these are a bit hard to read, but luckily Perl provides another, 
+much clearer syntax for this: <hl>$names_ref->[0]</hl>.
+In this code, on one hand we eliminated the double <hl>$</hl> signs and on the other hand
+we represent the dereferencing by a simple arrow.
+
+That's about it learning the basics of array references in Perl.
+
+<h2>Array references cheat sheet</h2>
+
+Given an array <hl>@names</hl> and an array reference called <hl>$names_ref</hl>
+that was created using <hl>my $names_ref = \@names;</hl> the following table shows
+how can we access the whole array, individual elements of an array and the length of
+an array in its normal array representation and the corresponding array reference
+representation:
+
+<code>
+                    Array                Array Reference
+Whole array:        @names               @{ $names_ref }
+Element of array:   $names[0]            ${ $names_ref }[0]
+                                         $names_ref->[0]
+Size of array:      scalar @names        scalar @$names_ref
+Largest index:      $#names              $#$names_ref
+</code>
+
+But you really don't want to use <hl>$#$names_ref</hl> among people....
+
+<h2>Data::Dumper for debugging</h2>
+
+When you have an array or an array reference, the best way to visualize it
+during a debug-by-print session is by using one of the data dumper modules,
+for example the built-in <a href="https://metacpan.org/pod/Data::Dumper">Data::Dumper</a> module.
+
+<code lang="perl">
+use strict;
+use warnings;
+use Data::Dumper;
+
+my @names = ('foo', 'bar', "moo\nand\nmoose");
+
+print Dumper \@names;
+</code>
+
+And the output is:
+
+<code>
+$VAR1 = [
+          'foo',
+          'bar',
+          'moo
+and
+moose'
+        ];
+</code>
+
+This clearly shows the individual elements even if some of the elements have spaces or newlines embedded in them.
+
+Exactly the same could be done if we already had an array reference in our hand:
+
+<code lang="perl">
+use strict;
+use warnings;
+use Data::Dumper;
+
+my @names = ('foo', 'bar', "moo\nand\nmoose");
+my $names_ref = \@names;
+
+print Dumper $names_ref;
+</code>
+
+
+<h2>Passing two arrays to a function</h2>
+
+If you want to write a function that gets <a href="/passing-two-arrays-to-a-function">two or more arrays</a>
+you have to use references. Let's say you'd like to write a function that adds the elements of two arrays, pair-wise.
+
+If you call <hl>add(@first, @second)</hl>, on the receiving end the two arrays will be flattened
+together into <hl>@_</hl> and you won't be able to tell them apart.
+
+Better to pass two reference like this: <hl>add(\@first, \@second)</hl> and then de-reference
+them inside the function:
+
+<code lang="perl">
+sub add {
+     my ($first_ref, $second_ref) = @_;
+     ...
+}
+</code>
+
