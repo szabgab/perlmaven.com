@@ -19,7 +19,7 @@ The most prominent case is when you are writing a log file.
 =abstract end
 
 This article shows how to do this using core perl function. There is a more modern and more readable
-way <a href="/pro/use-path-tiny-to-read-and-write-file">using Path::Tiny</a>.
+way <a href="/use-path-tiny-to-read-and-write-file">using Path::Tiny</a>.
 
 
 Calling
