@@ -1,0 +1,52 @@
+=title shift in Perl
+=timestamp 2015-12-17T18:55:56
+=indexes shift, @ARGV, @_
+=status show
+=books beginner
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+The <hl>shift</hl> function in Perl will remove the first value of the array passed to it and return it.
+
+=abstract end
+
+<code lang="perl">
+my @names = ('Foo', 'Bar', 'Moo');
+my $first = shift @names;
+print "$first\n";     # Foo
+print "@names\n";     # Bar Moo
+</code>
+
+Note, the array itself got shorter. The first element was removed from it!
+
+<h2>shift without parameters</h2>
+
+In case no array is passed to it, <hl>shift</hl> has two defaults  depending on the location of <hl>shift</hl>.
+
+If <hl>shift</hl> is outside any function it takes the first element of <hl>@ARGV</hl> (the parameter list of the program).
+
+<include file="examples/shift_argv.pl">
+
+<code>
+$ perl examples/shift_argv.pl one two
+one
+</code>
+
+If shift is inside a function it takes the first element of <hl>@_</hl> (the parameter list of the function).
+
+
+If the array <hl>shift</hl> works on (explicitely given to it or implicely selected based on the location of <hl>shift</hl>)
+is empty, then <hl>shift</hl> will return <hl>undef</hl>.
+
+<include file="examples/shift_in_sub.pl">
+
+<code>
+$ perl examples/shift_in_sub.pl one two
+hello
+</code>
+
+Here <hl>shift</hl> disregarde the content of <hl>@ARGV</hl> and took the first element of <hl>@_</hl>, the array
+holding the parameters passed to the function.
+
