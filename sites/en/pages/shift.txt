@@ -37,9 +37,6 @@ one
 If shift is inside a function it takes the first element of <hl>@_</hl> (the parameter list of the function).
 
 
-If the array <hl>shift</hl> works on (explicitely given to it or implicely selected based on the location of <hl>shift</hl>)
-is empty, then <hl>shift</hl> will return <hl>undef</hl>.
-
 <include file="examples/shift_in_sub.pl">
 
 <code>
@@ -47,6 +44,15 @@ $ perl examples/shift_in_sub.pl one two
 hello
 </code>
 
-Here <hl>shift</hl> disregarde the content of <hl>@ARGV</hl> and took the first element of <hl>@_</hl>, the array
+Here <hl>shift</hl> disregarded the content of <hl>@ARGV</hl> and took the first element of <hl>@_</hl>, the array
 holding the parameters passed to the function.
+
+<h2>Shift on empty array</h2>
+
+If the array <hl>shift</hl> works on is empty, then <hl>shift</hl> will return <hl>undef</hl>.
+
+Regardless if the array was explicitely given to it or implicely selected based on the location of <hl>shift</hl>.
+
+See <a href="http://perlmaven.com/beginner-perl-maven-shift-and-unshift">video explaining shift and unshift</a>
+or the example <a href="http://perlmaven.com/beginner-perl-maven-shift">using shift to get first parameter of a script</a>.
 
