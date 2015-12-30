@@ -161,6 +161,11 @@ And a few other related articles:
   <li>2015.11.01 <a href="http://blogs.perl.org/users/e_choroba/2015/11/netsftpforeign-in-taint-mode.html">Net::SFTP::Foreign in taint mode</a> by E. Choroba</li>
 </ul>
 
+<h3>November</h3>
+<ul>
+  <li>2015.11.18 <a href="https://www.doyleyoung.net/cpan_pull_request_challenge_november/">CPAN Pull Request Challenge - November</a> by Doyle Young</li>
+</ul>
+
 <!-- Template for adding new blogposts:
   <li>2015.. <a href=""></a> by </li>
 -->
