@@ -166,6 +166,11 @@ And a few other related articles:
   <li>2015.11.18 <a href="https://www.doyleyoung.net/cpan_pull_request_challenge_november/">CPAN Pull Request Challenge - November</a> by Doyle Young</li>
 </ul>
 
+<h3>December</h3>
+<ul>
+  <li>2016.01.02 <a href="http://blogs.perl.org/users/e_choroba/2016/01/post.html">Mocking a User Agent</a> by E. Choroba</li>
+</ul>
+
 <!-- Template for adding new blogposts:
   <li>2015.. <a href=""></a> by </li>
 -->
