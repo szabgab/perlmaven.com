@@ -139,7 +139,7 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
   <li><a href="/check-several-regexes-on-many-strings">Check several regexes on many strings</a></li>
   <li><a href="/matching-numbers-using-perl-regex">Matching numbers using Perl regex</a></li>
   <li><a href="/understanding-regular-expressions-found-in-getopt-std">Understanding Regular Expressions found in Getopt::Std</a></li>
-  <li><a href="/pro/email-validation-using-regular-expression-in-perl">Email validation using Regular Expression in Perl</a></li>
+  <li><a href="/email-validation-using-regular-expression-in-perl">Email validation using Regular Expression in Perl</a></li>
 </ul>
 
 <h2>Official documentation</h2>
