@@ -168,6 +168,7 @@ And a few other related articles:
 
 <h3>December</h3>
 <ul>
+  <li>2015.12.30 <a href="https://www.doyleyoung.net/cpan-pull-request-challenge-december/">CPAN Pull Request Challenge - December</a> by Doyle Young</li>
   <li>2016.01.02 <a href="http://blogs.perl.org/users/e_choroba/2016/01/post.html">Mocking a User Agent</a> by E. Choroba</li>
 </ul>
 
