@@ -89,6 +89,7 @@ And a few other related articles:
   <li>2015.01.17 <a href="https://retout.co.uk/blog/2015/01/17/cpan-pr-challenge">CPAN PR Challenge - January - IO-Digest</a> by Tim Retout</li>
   <li>2015.01.20 <a href="http://blogs.perl.org/users/itcharlie/2015/01/short-and-sweet-but-definitely-a-good-value-pr.html">Short and sweet, but definitely a good value PR!</a> by itcharlie</li>
   <li>2015.01.24 <a href="https://www.doyleyoung.net/cpan-pull-request-challenge-january/">CPAN Pull Request Challenge - January</a> by Doyle Young</li>
+  <li>2015.01.25 <a href="http://enetdown.org/hacktivity/posts/2015/01/25/cpan-pr-challenge-january-clone/">January PR Challenge: Clone: adding continuous integration and badges</a> by Zakariyya Mughal</li>
   <li>2015.01.26 <a href="http://perl.bearcircle.net/2015/01/january-cpan-pull-request-challenge.html">January CPAN Pull Request Challenge </a> by Bear Perl</li>
   <li>2015.01.27 <a href="http://cpanpr.tumblr.com/post/109326154178/january-soap-lite">January: SOAP-Lite</a> by Maxim Vuets
   <li>2015.01.29 <a href="http://onionstand.blogspot.cz/2015/01/my-cpan-pull-request-challenge-for.html">My CPAN Pull Request Challenge for January: Fuse</a> by Breno G. de Oliveira</li>
@@ -100,6 +101,7 @@ And a few other related articles:
 <ul>
   <li>2015.02.19 <a href="http://blogs.perl.org/users/e_choroba/2015/02/analysing-cpan-testers-reports.html">Analysing CPAN Testers' Reports</a> by E. Choroba</li>
   <li>2015.02.22 <a href="https://huntingbears.nl/2015/02/22/cpan-pull-request-challenge-for-february-archivebagit/">CPAN Pull Request Challenge for February: Archive::BagIt</a> by Michiel Beijen</li>
+  <li>2015.02.24 <a href="http://fluca1978.blogspot.cz/2015/02/2015-cpan-pull-request-february-pending.html">2015 CPAN Pull Request: February pending</a> by Luca Ferrari</li>
   <li>2015.02.26 <a href="http://blogs.perl.org/users/alberto_simoes/2015/02/the-moose-slippery---february-pr-challenge.html">The Moose Slippery - February PR Challenge</a> by Alberto Simões</li>
   <li>2015.02.26 <a href="https://www.doyleyoung.net/cpan-pull-request-challenge-february/">CPAN Pull Request Challenge - February</a> by Doyle Young</li>
   <li>2015.02.28 <a href="http://onionstand.blogspot.cz/2015/02/my-february-cpan-pr-challenge.html">My February CPAN PR Challenge: Template::Plugin::Autoformat </a> by Breno G. de Oliveira</li>
@@ -168,6 +170,7 @@ And a few other related articles:
 
 <h3>December</h3>
 <ul>
+  <li>2015.12.30 <a href="https://www.doyleyoung.net/cpan-pull-request-challenge-december/">CPAN Pull Request Challenge - December</a> by Doyle Young</li>
   <li>2016.01.02 <a href="http://blogs.perl.org/users/e_choroba/2016/01/post.html">Mocking a User Agent</a> by E. Choroba</li>
 </ul>
 
