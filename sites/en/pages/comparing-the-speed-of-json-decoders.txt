@@ -1,6 +1,6 @@
 =title Comparing the speed of JSON decoders
 =timestamp 2015-03-04T07:30:01
-=indexes JSON, JSON::XS, Cpanel::JSON::XS
+=indexes JSON, JSON::XS, Cpanel::JSON::XS, Benchmark
 =tags screencast
 =status show
 =author szabgab
@@ -39,28 +39,7 @@ After 30 seconds it was done.
 
 Let's compare the speed of these two modules
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-use JSON ();
-use JSON::XS ();
-use Benchmark qw(cmpthese);
-
-my $json = create_json(100);
-
-cmpthese(10000, {
-    'JSON'     => sub { JSON::decode_json($json) },
-    'JSON::XS' => sub { JSON::XS::decode_json($json) },
-});
-
-sub create_json {
-    my ($n) = @_;
-    my @data = map { { $_ => $_ } } 1 .. $n;
-    return JSON::encode_json \@data;
-}
-</code>
+<include file="examples/benchmar_json.pl">
 
 The <hl>create_json</hl> function will create a JSON file using the <hl>encode_json</hl> function of the JSON module.
 
