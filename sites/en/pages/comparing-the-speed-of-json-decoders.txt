@@ -39,7 +39,7 @@ After 30 seconds it was done.
 
 Let's compare the speed of these two modules
 
-<include file="examples/benchmar_json.pl">
+<include file="examples/benchmark_json.pl">
 
 The <hl>create_json</hl> function will create a JSON file using the <hl>encode_json</hl> function of the JSON module.
 
@@ -50,7 +50,7 @@ called if it ran for a second, and a comparison table showing the relative speed
 To my great surprise they were the same:
 
 <code>
-$ time perl benchmark.pl 
+$ time perl benchmark_json.pl 
             Rate JSON::XS     JSON
 JSON::XS 13889/s       --       0%
 JSON     13889/s       0%       --
@@ -85,7 +85,7 @@ cmpthese(10000, {
 The result of running the script is now:
 
 <code>
-$ time perl benchmark.pl 
+$ time perl benchmark_json.pl 
             Rate JSON::PP JSON::XS
 JSON::PP   222/s       --     -98%
 JSON::XS 12987/s    5742%       --
