@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
 <script>
 angular.module("DemoApp", ['ngRoute'])
-    .controller("DemoController", function($scope, $route, $location) {
+    .controller("DemoController", function($scope, $location) {
         $scope.title = "Simple Router Example";
         $scope.goto = function(page) {
             $location.path(page);
@@ -18,16 +18,16 @@ angular.module("DemoApp", ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.
             when('/abc', {
-                templateUrl: 'abc.html',
+				template: '<h2>ABC</h2> from the template',
             }).
-            when('/def', {
+             when('/def', {
                 templateUrl: 'def.html',
             }).
             when('/ghi', {
                 templateUrl: 'ghi.html',
             }).
             otherwise({
-                redirectTo: '/'
+                redirectTo: '/def'
             });
     }]);
 </script>
