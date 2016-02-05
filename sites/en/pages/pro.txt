@@ -26,7 +26,7 @@ See the previous articles <a href="/archive?tag=pro">in the archive</a> and on t
   <li><a href="/search-cpan-org">The search.cpan.org cloning project</a></li>
   <li><a href="/mojolicious">Mojolicious</a> the light-weight web framework</li>
   <li><a href="/dancer">Perl Dancer</a>, light-weight web framework</li>
-  <li><a href="/psgi">PSGI/Plack</a>, the superglue between perl web application frameworks and web servers/li>
+  <li><a href="/psgi">PSGI/Plack</a>, the superglue between perl web application frameworks and web servers</li>
 </ul>
 
 <h2>Object Oriented Perl</h2>
