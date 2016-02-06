@@ -63,6 +63,18 @@ print "$highest\n";
 print "$height{ $highest }\n";
 </code>
 
+Alternatively, as poined out by jameswmoth, you could use the <hl>reduce</hl> function that comes with
+<a href="https://metacpan.org/pod/List::Util">List::Util</a>:
+
+<code lang="perl">
+use List::Util qw(reduce);
+
+my $highest = List::Util::reduce { $height{$b} > $height{$a} ? $b : $a } keys %height;
+
+print "$highest\n";
+print "$height{ $highest }\n";
+</code>
+
 The built-in <hl>keys</hl> function of perl returns the list of keys from the given hash.
 The <hl>max_by</hl> function allows us to define an expression using <hl>$_</hl> as the place-holder for the "current value"
 that will generate the "values to be compared" from the "values to be ordered".
