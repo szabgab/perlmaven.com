@@ -13,9 +13,9 @@ my $url = 'http://www.ted.com/talks/tim_berners_lee_the_year_open_data_went_worl
 my $html = get $url;
 
 foreach my $script ($html =~ m{<script>(.*?)</script>}gs) {
-	my ($json) = $script =~ /^q\("talkPage\.init",(\{"talks".*)\)/s;
+    my ($json) = $script =~ /^q\("talkPage\.init",(\{"talks".*)\)/s;
     next if not $json;
     my $data = decode_json encode('utf8', $json);
-	print Dumper $data;
+    print Dumper $data;
 }
 
