@@ -48,3 +48,4 @@ ymyasoedov;Yuri Myasoedov;ymyasoedov.jpg;https://plus.google.com/111530493856272
 danimera;Dani Otelch;dani_otelch.png;
 rozie;Paweł Różański;rozie.jpg;
 rohan;Rohan Almeida;rohan.jpg;
+ferki;Ferenc Erki;ferki.png;
