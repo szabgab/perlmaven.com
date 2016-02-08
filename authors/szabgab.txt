@@ -1,0 +1,11 @@
+name: Gabor Szabo
+html:
+
+Gabor provides training and development services. He loves to help people improve their way of programming.
+He likes to write automated tests and refactor code.
+<p>
+
+He runs the <a href="http://perlweekly.com/">Perl Weekly</a> newsletter.
+<p>
+
+Gabor also runs the Perl Maven site.
