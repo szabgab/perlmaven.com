@@ -1,6 +1,3 @@
-Name: Ferenc Erki
-html:
-
 <a href="https://www.linkedin.com/in/ferki">Ferenc Erki</a> is a core developer of
 <a href="http://rexify.org/">Rex</a> and a system administrator
 at <a href="https://www.adjust.com/">adjust GmbH</a>,

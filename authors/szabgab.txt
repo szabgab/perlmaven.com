@@ -1,6 +1,3 @@
-name: Gabor Szabo
-html:
-
 Gabor provides training and development services. He loves to help people improve their way of programming.
 He likes to write automated tests and refactor code.
 <p>
