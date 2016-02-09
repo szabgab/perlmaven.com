@@ -49,3 +49,4 @@ danimera;Dani Otelch;dani_otelch.png;
 rozie;Paweł Różański;rozie.jpg;
 rohan;Rohan Almeida;rohan.jpg;
 ferki;Ferenc Erki;ferki.png;
+dsdickinson;Steve Dickinson;dsdickinson.jpg;https://plus.google.com/+SteveDickinsonJr
