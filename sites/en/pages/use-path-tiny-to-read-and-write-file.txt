@@ -47,7 +47,7 @@ If the file is too big to fit in the memory, or for some other reason we would l
 keep the memory usage low we need to read the file line-by-line. The traditional way,
 without using any extra modules, would be to <a href="/open-and-read-from-files">open the file and read from it</a>.
 The modern way using Path::Tiny would be to get an iterator and use that, but Path::Tiny version 0.068 does
-not support that yet. Instead it allows use to open the file in a more readable way than the built-in <hl>open</hl>
+not support that yet. Instead it allows us to open the file in a more readable way than the built-in <hl>open</hl>
 function and then we can use the file-handle as we would in the traditional case.
 
 <include file="examples/path_tiny_read_file.pl">
