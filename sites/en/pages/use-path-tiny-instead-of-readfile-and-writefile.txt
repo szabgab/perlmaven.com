@@ -1,4 +1,4 @@
-=title use Path::Tiny instead of ReadFile and WriteFile
+=title use Path::Tiny instead of home-made ReadFile and WriteFile
 =timestamp 2016-02-12T06:30:01
 =indexes Path::Tiny, slurp, spew
 =status show
