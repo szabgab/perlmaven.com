@@ -16,7 +16,8 @@ but on the other some of them had <hl>use diagnostics;</hl>.
 Usually you'd be better off having <hl>use warnings;</hl>,
 but <a href="/use-diagnostics-or-splain">use diagnostics</a>
 you only need if the shorter explanations did not help. Even then, you might find a more suitable
-explanation among the <a href="/common-warnings-and-error-messages">common errors and warnings of Perl</a>.
+explanation among the <a href="/common-warnings-and-error-messages">common errors and warnings of Perl</a>
+or by using <a href="/use-diagnostics-or-splain">splain</a>.
 
 =abstract end
 
