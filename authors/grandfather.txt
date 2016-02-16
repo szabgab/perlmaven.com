@@ -1,5 +1,6 @@
 <p>Peter is a software engineer with an electronics background and an interest in
-astronomy. He is GrandFather on <a href="http://perlmonks.org/">PerlMonks</a>.</p>
+astronomy. He is <a href="http://perlmonks.org/?node=GrandFather">GrandFather</a>
+on <a href="http://perlmonks.org/">PerlMonks</a>.</p>
 
 <p>He enjoys making tools to make people's life easier and happier. Perl plays a
 large part in that.</p>
