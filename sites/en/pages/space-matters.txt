@@ -75,7 +75,7 @@ but it can be surprising when it is used by mistake as in this case.
 So we had the warning about <hl>$_</hl> being uninitialized because it was really
 <a href="/undef-and-defined-in-perl">undefined</a>. Actually we were lucky that it
 was undefined, otherwise we might get a match on some string that is totally
-unrelated to our intention. It is usually much better to get an warning or an error,
+unrelated to our intention. It is usually much better to get a warning or an error,
 than to get get an incorrect value without any notification.
 
 Then the problem keeps growing. After the regex was executed, we apply the
