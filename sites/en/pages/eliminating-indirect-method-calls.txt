@@ -18,7 +18,7 @@ Specifically I am looking for eliminating the indirect method call syntax.
 
 =abstract end
 
-<h2>Reomve Exporter</h2>
+<h2>Remove Exporter</h2>
 
 Before going on though, I recall I saw in one of the files a <hl>require Exporter;</hl> while
 the documentation says that the module does not export anything. Let's see what's going on there.
@@ -57,13 +57,13 @@ for every violation. I'd like to have a more compact report.
 After playing with the verbosity numbers I gave up and went to read the
 <a href="https://metacpan.org/pod/distribution/Perl-Critic/bin/perlcritic">documentation of perlcritic</a>.
 It shows that in addition to the numerical verbosity levels, one can build her own format using the
-formatting placeholders. The one I got settled (for now) looks like this:
+formatting place holders. The one I got settled (for now) looks like this:
 
 <code>
 perlcritic -4 --verbose "%f: [%p] %m at line %l, column %c.\n" .
 </code>
 
-It still prints a lot of lines becauese there are a lot of violations, but it only prints
+It still prints a lot of lines because there are a lot of violations, but it only prints
 one line per violation, and that line contains both the filename and the name of the violation.
 
 This is especially useful if you'd like to fix the code
