@@ -230,7 +230,7 @@ Before that, let's create a list of items that need to be done.
   <li><a href="/use-strict-use-warnings-no-diagnostics">use strict; use warnings; no diagnostics</a></li>
   <li>Perl::Critic: <a href="/move-packages-to-their-own-files">Move packages to their own files</a> - release Pod::Tree 1.21</li>
   <li>Perl::Critic: fix the most important issues it finds and <a href="/enable-test-perl-critic">enable Test::Perl::Critic</a></li>
-  <li>Refactor pod and code to <a href="/pro/eliminating-indirect-method-calls">eliminate indirect method calls</a></li>
+  <li>Refactor pod and code to <a href="/eliminating-indirect-method-calls">eliminate indirect method calls</a></li>
   <li><a href="/pro/fixing-the-release-adding-version-numbers">Fixing the release, adding a version number (release Pod::Tree 1.22 and 1.23)</a></li>
   <li><a href="/pro/fix-perl-critic-test-failures-reported-by-cpantesters">Fix Perl::Critic test failures reported by CPAN Testers</a></li>
   <li><a href="/pro/consistent-version-numbers-of-modules">Enforce consistent version numbers of Perl all the modules in a distribution</a></li>
