@@ -233,7 +233,7 @@ Before that, let's create a list of items that need to be done.
   <li>Refactor pod and code to <a href="/eliminating-indirect-method-calls">eliminate indirect method calls</a></li>
   <li><a href="/fixing-the-release-adding-version-numbers">Fixing the release, adding a version number (release Pod::Tree 1.22 and 1.23)</a></li>
   <li><a href="/fix-perl-critic-test-failures-reported-by-cpantesters">Fix Perl::Critic test failures reported by CPAN Testers</a></li>
-  <li><a href="/pro/consistent-version-numbers-of-modules">Enforce consistent version numbers of Perl all the modules in a distribution</a></li>
+  <li><a href="/consistent-version-numbers-of-modules">Enforce consistent version numbers of Perl all the modules in a distribution</a></li>
   <li><a href="/pro/perl-critic-exclude-policies-fix-others">Perl::Critic exclude some policies - fix others</a> (Pod::Tree 1.24)</li>
   <li><a href="/how-to-declare-requrements">How to declare requirements of a CPAN distribution?</a></li>
   <li><a href="/pro/improve-kwalitee">Check CPANTS (Kwalitee)</a></li>
