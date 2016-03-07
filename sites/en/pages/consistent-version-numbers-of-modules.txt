@@ -1,4 +1,4 @@
-=title Enforce same version numbers of Perl all the modules in a distribution
+=title Enforce the same version numbers in all the Perl modules in a distribution
 =timestamp 2016-03-03T23:30:01
 =indexes Test::VERSION, $VERSION
 =status show
@@ -15,18 +15,18 @@ As PAUSE and the CPAN tools rely on module-level version numbers, these modules 
 
 It might not be a huge issue, but I'd rather make sure each module in the distribution has a verison number.
 
-Then another issue arises. How do I make sure a module that module gets a new version number when that specific module within the distribution has changed?
+Then another issue arises. How do I make sure that that module gets a new version number when that specific module within the distribution has changed?
 
 =abstract end
 
-I won't remember to update the numbers before every release, unless it is automated or if I am forced. My solution to this problem
-is to enforece that every module in a distribution must have a version number and they must have the same version number.
+I won't remember to update the numbers before every release, unless it is automated or if I am forced to. My solution to this problem
+is to enforce that every module in a distribution must have a version number and they must have the same version number.
 This will help me as the author (or maintainer) and it will help if one of the modules is found somewhere. The version number
-will indicate where did it came from.
+will tell where it came from.
 
 <h2>Unified $VERSION format</h2>
 
-Before enforcing the same version number, I wanted to do something else. I wanted to make sure all the modules uss the same format
+Before enforcing the same version number, I wanted to do something else. I wanted to make sure all the modules use the same format
 for setting the version number. I had to replace
 
 <code lang="perl">
@@ -50,7 +50,7 @@ Probably not something critical, but then there is no reason for them to look di
 <a href="https://metacpan.org/pod/Test::Version">Test::Version</a> helps to check if version numbers in modules are sane.
 It can also check if the version numbers are the same.
 
-I've added the following code as <hl>t/94-version.t</hl>
+I've added the following code as <hl>t/94-version.t</hl>:
 
 <code lang="perl">
 use strict;
@@ -76,7 +76,7 @@ to include the following:
 <code>
 before_install:
   - cpanm --notest Perl::Tidy
-  - cpanm --notest Test::Code::TidyAll 
+  - cpanm --notest Test::Code::TidyAll
   - cpanm --notest Test::Perl::Critic
   - cpanm --notest Test::Version
 </code>
