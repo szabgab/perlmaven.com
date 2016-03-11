@@ -9,7 +9,7 @@
 
 =abstract start
 
-The story of becomming a co-maintaner of <a href="https://metacpan.org/pod/Pod::Tree">Pod::Tree</a>, improving its distribution,
+The story of becoming a co-maintaner of <a href="https://metacpan.org/pod/Pod::Tree">Pod::Tree</a>, improving its distribution,
 refactoring the code and even accepting contributions from other people.
 
 =abstract end
