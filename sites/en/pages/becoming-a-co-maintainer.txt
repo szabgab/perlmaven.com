@@ -238,6 +238,8 @@ Before that, let's create a list of items that need to be done.
   <li><a href="/how-to-declare-requrements">How to declare requirements of a CPAN distribution?</a></li>
   <li><a href="/improve-kwalitee">Check CPANTS (Kwalitee)</a></li>
   <li><a href="/converting-indirect-calls">Eliminate more of the indirect calls</a></li>
+  <li><a href="/pro/fixing-test-failure-on-windows">Fixing test failure on Windows - Properly quoting regexes - Accepting GitHub pull request</a></li>
+
 
   <li>Make the Changes file standard compliant</li>
   <li>Eliminate extensive <a href="http://perlcritic.tigris.org/ds/viewMessage.do?dsForumId=4230&dsMessageId=3119165">use of short-circuit</a>. For example <hl>is_ok $obj and $node = $obj, last;</hl></li> 
