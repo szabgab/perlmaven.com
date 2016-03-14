@@ -1,0 +1,157 @@
+=title Stand-alone Ajax client and the Access-Control-Allow-Origin issue
+=timestamp 2016-03-14T20:30:01
+=indexes Access-Control-Allow-Origin
+=status show
+=books dancer2, jquery
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+In the <a href="/ajax-and-dancer2">first article</a> we have created a server and HTML page served from the same server that
+sent an Ajax request to the server, received response and displayed it.
+
+This time we are going to use the same back-end server, but will try to create a client that can be served from a different
+server, or can be even loaded from the local disk. (The latter mostly for development purposes.)
+
+=abstract end
+
+We'll put our code in the same <a href="https://github.com/szabgab/D2-Ajax/">GtiHub repository</a> just in a separate subdirectory.
+We create a new directory called <hl>client</hl> and in it we put the file <hl>client/v1.html</hl> with the following content:
+
+<code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <title>D2::Ajax - v1</title>
+  <script type="text/javascript" src="../public/javascripts/jquery.js"></script>
+</head>
+<body>
+
+<div id="msg"></div>
+
+<script>
+$(document).ready(function() {
+    jQuery.get('http://127.0.0.1:5000/api/v1/greeting', function(data) {
+        console.log(data);
+        $("#msg").html(data["text"]);
+    });
+});
+</script>
+
+</body>
+</html>
+
+</code>
+
+This is a simple HTML page with embedded JavaScript.
+
+We load <hl>jquery.js</hl> from the same public directory where Dancer put it. We could have a copy of the file inside our own directory
+or we could have loaded it from a CDN, but for the examples I think the best is to just reuse the one already in the repository.
+Especially as we are going to use this on the local disk and we want to make sure it is available even if
+I don't have Internet access.
+
+In the <hl>body</hl> we have the same <hl>div</hl> element as we had in the <a href="/ajax-and-dancer2">first version</a>,
+and the jQuery is also the same, except the URL which now needs to refer to the "remote" server  <hl>http://127.0.0.1:5000/api/v1/greeting</hl>
+where the back-end runs.
+
+If we open this file directly with a browser we'll get a blank page.
+Only if we open the JavaScript console of our browser will we see the error message:
+
+<code>
+XMLHttpRequest cannot load http://127.0.0.1:5000/api/v1/greeting. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access.
+</code>
+
+<h2>How to fix the Access-Control-Allow-Origin error?</h2>
+
+In a nutshell, for security reasons browsers will only allow to handle Ajax request to the same server where your script comes from, unless the server where you want
+to send the request to explicitly allows you by setting the Access-Control-Allow-Origin header and either declaring your site as one that can have the extra rights
+or they allow <b>every</b> site to have these right.
+If your plan was to offer a public API to your system, then allowing this seems totally reasonable. After all, once could set up a site that would proxy these requests
+to your site. The only difference would be that it is slower.
+
+For the long explanation check the 
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">HTTP access control (CORS)</a> of Mozilla.
+
+In our case we only need to add one line to the code:
+
+<code lang="perl">
+    header 'Access-Control-Allow-Origin' => '*';
+</code>
+
+and the new, stand-alone page  will suddenly start to work.
+
+Instead of that though, we are going to leave the existing route as it is and we are going to create a new route. If for nothing else, so it might be
+easier for us to later revisit this situation.
+
+So we add a new route for version 2 of the API:
+
+<code lang="perl">
+get '/api/v2/greeting' => sub {
+    header 'Access-Control-Allow-Origin' => '*';
+    header 'Content-Type' => 'application/json';
+    return to_json { text => 'Hello World' };
+};
+</code>
+
+It is the same as we already had, except we have <hl>v2</hl> in the URL instead of <hl>v1</hl> and we have the extra line adding the
+new entry to the header: Access-Control-Allow-Origin.
+
+We won't add an extra route to see this page, as from now on we are going to develop the stand-alone client only.
+On the other hand we create another html page called <hl>client/v2.html</hl> that has the exact same content as
+<hl>client/v1.html</hl>, except that it will access the v2 API at <hl>http://127.0.0.1:5000/api/v2/greeting</hl>.
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/dc25f4faa18a4f85a3cccec73a573eb6992084a2">commit</a>
+
+<h2>Testing the v1 and v2 API calls</h2>
+
+It's nice that we ran ahead and fixed the Access-Control issue, but if we were following the big-book of TDD (Test Driven Development)
+then we would first write the test. Of course in this case, we can't really test he failure without launching a real web server and
+without using a real browser - even if we automate it - so let's test the code how it supposed to work.
+
+We can replica the test for the v1 API call as the v2 API call, and that should still work, but then neither of the test would check
+the real culprit of the solution. The Access-Control-Allow-Origin header. So we should test that the v2 API call includes that header
+and that the v1 call does not include that header.
+
+So I added the following assertion to <hl>t/v1.t</hl> and incremented the test plan in the subtest to 4.
+
+<code lang="perl">
+    is $res->header('Access-Control-Allow-Origin'), undef;
+</code>
+
+Then I've copied <hl>t/v1.t</hl> to <hl>t/v2.t</hl> and made a few changes:
+
+This is the diff:
+
+<code>
+$ diff t/v1.t t/v2.t 
+9c9
+< subtest v1_greeting => sub {
+---
+> subtest v2_greeting => sub {
+15c15
+<     my $res  = $test->request( GET '/api/v1/greeting' );
+---
+>     my $res  = $test->request( GET '/api/v2/greeting' );
+20c20
+<     is $res->header('Access-Control-Allow-Origin'), undef;
+---
+>     is $res->header('Access-Control-Allow-Origin'), '*';
+</code>
+
+after that I could run
+
+<code>
+$ perl Makefile.PL
+$ make
+$ make test
+</code>
+
+again, and all was OK.
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/df5a55714b02aaecb21a22f297840b887ae40c3a">commit</a>
+
