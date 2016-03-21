@@ -1,0 +1,173 @@
+=title How to declare requirements of a CPAN distribution?
+=timestamp 2016-03-08T20:30:01
+=indexes ExtUtils::MakeMaker
+=status show
+=books cpan_co_maintainer
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+After <a href="/perl-critic-exclude-policies-fix-others">releasing version 1.24 of Pod::Tree</a>, the CPAN Testers
+reports started to flow in. Most of them <a href="http://www.cpantesters.org/distro/P/Pod-Tree.html?oncpan=1&distmat=1&version=1.24&grade=2">reported success</a>,
+but there were a few <a href="http://www.cpantesters.org/distro/P/Pod-Tree.html?oncpan=1&distmat=1&version=1.24&grade=3">failure reports</a> as well.
+
+Like <a href="http://www.cpantesters.org/cpan/report/fcd487c9-6bfc-1014-9bdf-5360fbbcbeb0">this report</a>.
+
+=abstract end
+
+They all seemed to complain about the same thing:
+
+<code>
+Can't locate object method "new" via package "Test::Compile" at t/00-compile.t line 6.
+t/00-compile.t ...... 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+No subtests run 
+</code>
+
+That was strange, but I recalled a <a href="https://github.com/hvoers/Pod-Tree/commit/61beb53ff389b83dbb491264b7537a2397b6d026">similar report</a> earlier
+by Henk van Oers. Back then we did not do anything with it, he has just upgraded <a href="https://metacpan.org/pod/Test::Compile">Test::Compile</a>
+to the latest release and that fixed the issue for him. I have not asled him how he even got to the situation where his version of Test::Compile
+was older than what I put as requirement into <hl>Makefile.PL</hl> that looked like this:
+
+<code>
+'Test::Compile'  => 1.2.1,
+</code>
+
+I figured, maybe he has not run <hl>perl Makefile.PL</hl> or for some reason disregarded when <hl>Makefile.PL</hl> ask him to upgrade
+the module. That happens when we do things manually, but that does not require any fixing in Pod::Tree.
+
+However this time the automated smoke-test gave similar error messages so
+I went to the <a href="http://www.cpantesters.org/cpan/report/fcd487c9-6bfc-1014-9bdf-5360fbbcbeb0">test report</a> again and
+looked at the "PREREQUISITES" section that looked like this:
+
+<pre>
+------------------------------
+PREREQUISITES
+------------------------------
+
+Prerequisite modules loaded:
+
+requires:
+
+    Module              Need  Have    
+    ------------------- ----- --------
+    File::Find          1     1.23    
+    HTML::Stream        1.49  1.60    
+    IO::File            1     1.16    
+    IO::String          1     1.08    
+    Path::Tiny          0.068 0.068   
+    Pod::Escapes        1.02  1.04    
+    Test::Compile       0     0.24    
+    Test::More          1     1.001002
+    Text::Template      1     1.46    
+
+build_requires:
+
+    Module              Need  Have    
+    ------------------- ----- --------
+    ExtUtils::MakeMaker 0     6.84    
+
+configure_requires:
+
+    Module              Need  Have    
+    ------------------- ----- --------
+    ExtUtils::MakeMaker 0     6.84    
+</pre>
+
+Specifically the "Need" column.
+
+For every other module Makefile.PL has correctly set the "Need" to the number we have in Makefile.PL except for Test::Compare.
+
+Obviously if the requirement is to have version 0 and a machine already has version 0.24 then it won't be upgraded and then
+we'll get the error Henk received and the CPAN Tester received. The question then
+
+<h2>Why does Makefile.PL think 1.2.1 is 0 ?</h2>
+
+I asked it on the <a href="http://lists.perl.org/list/cpan-testers-discuss.html">CPAN Testers discussion list</a> and I got a few
+responses in <a href="http://www.nntp.perl.org/group/perl.cpan.testers.discuss/2015/05/msg3630.html">this thread</a>.
+
+I got several answers, one of them from <a href="http://chorny.net/">Alexandr Ciornii</a>, the owner of that smoke-machine. It's nice to get a quick response from
+people who are so involved.
+
+Normally 1.2.1 should be seen as a so-called v-string, but old versions of <a href="https://metacpan.org/pod/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>
+don't recognize it and assume 0.
+
+The recommended solutions were either to add quotes around the thing (I can't really call it a number, can I?) and write
+
+<code>
+'Test::Compile'  => '1.2.1',
+</code>
+
+or it could be written in decimal form:
+
+<code>
+'Test::Compile'  => 1.002001,
+</code>
+
+A third alternative would be to just use one decimal point and disregard the extra digit, though this is not exactly
+the same requirement.
+
+<code>
+'Test::Compile'  => 1.2,
+</code>
+
+
+At the same time I also received a <a href="https://github.com/szabgab/Pod-Tree/pull/3">pull request</a> from
+<a href="http://chorny.net/">Alexandr Ciornii</a> using the <a href="https://github.com/chorny/Pod-Tree/commit/4710266078da5e09986cc7757f7b059df4ea83dc">quotes around the version number</a>.
+He even sneaked in a change <a href="https://github.com/chorny/Pod-Tree/commit/a9fbb8d8221944c13a3c5a1e5ab0798491fbd6bc">adding use 5.006</a> to <hl>Makefile.PL</hl>
+
+I have accepted the pull request and <a href="https://github.com/szabgab/Pod-Tree/commit/e384fbf900e8000f2389777d5a4e918ad2e3d7a2">merged it</a>.
+
+<h2>Do not declare test prereqs as runtime prereqs</h2>
+
+In addition to the above pull-request, I've also received a new <a href="https://github.com/szabgab/Pod-Tree/issues/4">issue</a>.
+
+The thing is that I've added several modules to the <hl>PREREQ_PM</hl> of the <hl>Makefile.PL</hl> that we only need for testings.
+For example Test::More and Test::Compile that we just had issues with.
+This means people who install the module will also need to install those modules and not just in a temporary directory.
+This means that downstream distributors (e.g. Linux distributions, and BSDs) that want to re-distribute the Pod-Tree distribution will
+have to set all these modules as runtime prerequisites.
+
+I don't think it is a big issue, disk space is very cheap, but I think it is better to state the requirements properly.
+
+So I changed the <hl>Makefile.PL</hl> a bit. Created a main <hl>%config</hl> that will be later passed to the <hl>WriteMakefile</hl> function.
+Moved the list of test-modules to a separate hash and added them back to the <hl>%config</hl> based on the version number of ExtUtils::MakeMaker.
+
+<code lang="perl">
+my %config = (
+    NAME         => 'Pod::Tree',
+    VERSION_FROM => 'lib/Pod/Tree.pm',    # finds $VERSION
+    DISTNAME     => 'Pod-Tree',
+    ...
+    PREREQ_PM => {
+        'File::Find'     => 1,
+        'HTML::Stream'   => 1.49,
+        'IO::File'       => 1,
+        'IO::String'     => 1,
+        'Pod::Escapes'   => 1.02,
+        'Text::Template' => 1,
+    },
+    ...
+);
+my %test_requires = (
+    'Test::More'    => 1,
+    'Test::Compile' => '1.2.1',
+    'Path::Tiny'    => 0.068,
+);
+
+if ( eval { ExtUtils::MakeMaker->VERSION(6.64) } ) {
+    $config{TEST_REQUIRES} = \%test_requires;
+}
+else {
+    $config{BUILD_REQUIRES} = \%test_requires;
+}
+
+WriteMakefile(%config);
+</code>
+
+<a href="https://github.com/szabgab/Pod-Tree/commit/3bdb082dbdc51ade68d68585595a9e932eacdced">commit</a>
+
+I hope this will work correctly.
+

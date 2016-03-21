@@ -1,0 +1,140 @@
+=title Refactoring large test suite - separating data from code
+=timestamp 2016-03-11T12:30:01
+=indexes Test::Simple
+=tags screencast
+=status show
+=books testing
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+If you follow through the request at the end of the <a href="/test-plan-and-test-descriptions">previous</a> part,
+you now have a tests script with lots of test. You might have noticed and got fed-up by the repetition in that code.
+
+Let's try to simplify that by separating the test data from the test code.
+
+=abstract end
+
+<screencast file="/media/videos/refactoring-large-test-suite-separating-data-from-code" youtube="RFHH3chwuuQ" />
+
+<h2>Enlarged test script</h2>
+
+I know it has not been enlarged by a lot, just enough to feel, all those lines have a lot of similarity.
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use FindBin qw($Bin);
+use lib "$Bin/lib";
+use MyCalc;
+
+use Test::Simple tests => 5;
+
+ok sum(1, 1) == 2,    'sum(1, 1) = 2';
+ok sum(2, 2) == 4,    'sum(2, 2) = 4';
+ok sum(2, 2, 2) == 6, 'sum(2, 2, 2) = 6';
+
+# negative numbers
+ok sum(-1, -1)  == -2, 'sum(-1, -1) = -2';
+
+# edge cases:
+ok sum(1, -1)   == 0,  'sum(1, -1) = 0';
+</code>
+
+
+<h2>Move test data to an array</h2>
+
+We move all the test data to an array called <hl>@cases</hl>.
+Each element of the array is itself a reference to an array. In these internal arrays,
+the first value is always the expected result, and all the other values are the input to the <hl>sum</hl> function.
+The we have a loop going over the internal array references one-by-one. In each iteration we dereference the
+array-ref and copy the values from it to <hl>$exp</hl>, the expected value, and <h>@params</hl>, the parameters to
+be passed to <hl>sum</hl>.
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use FindBin qw($Bin);
+use lib "$Bin/lib";
+use MyCalc;
+
+my @cases = (
+    [2,  1, 1],
+    [4,  2, 2],
+    [6,  2, 2, 2],
+# negative numbers
+    [-2, -1, -1],
+# edge cases:
+    [0,  1, -1],
+);
+
+use Test::Simple tests => 5;
+
+for my $c (@cases) {
+    my ($exp, @params) = @$c;
+    ok sum(@params) == $exp
+}
+</code>
+
+If we run <hl>perl test.pl</hl> we'll get the following:
+
+<code>
+1..5
+ok 1
+ok 2
+not ok 3
+#   Failed test at test.pl line 22.
+ok 4
+ok 5
+# Looks like you failed 1 test of 5.
+</code>
+
+That looks almost ok, except that we have lost the test descriptions.
+We could put those in the <hl>@case</hl> array as well, but because
+in this case all the test descriptions are uniform, we can even generate them on the fly:
+
+
+<code lang="perl">
+    my $descr = 'sum(' . join(', ', @params) . ") == $exp";
+    ok sum(@params) == $exp, $descr;
+</code>
+
+The full <hl>test.pl</hl> now looks like this:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use FindBin qw($Bin);
+use lib "$Bin/lib";
+use MyCalc;
+
+my @cases = (
+    [2,  1, 1],
+    [4,  2, 2],
+    [6,  2, 2, 2],
+# negative numbers
+    [-2, -1, -1],
+# edge cases:
+    [0,  1, -1],
+);
+
+use Test::Simple tests => 5;
+
+for my $c (@cases) {
+    my ($exp, @params) = @$c;
+    my $descr = 'sum(' . join(', ', @params) . ") == $exp";
+    ok sum(@params) == $exp, $descr;
+}
+</code>
+
+This is  much cleaner than we had earlier, and the data (the content of <hl>@cases</hl>) is almost
+totally separate from the code that executes it.
+There is a little issue, though that might bother you as a programmer
+if you like <a href="http://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a>.
+Do you know what is it?
+
+

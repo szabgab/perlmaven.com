@@ -1,0 +1,370 @@
+=title  Ajax and Dancer 2
+=timestamp 2016-02-27T16:10:01
+=indexes Dancer2, jQuery, Ajax
+=status show
+=books dancer2
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+In this project we are going to create a web application using <a href="/dancer">Dancer2</a> as back-end,
+and we are going to create front-end using JavaScript communicating with the seerver via Ajax requests.
+
+=abstract end
+
+
+<h2>Create project</h2>
+
+After installing <a href="https://metacpan.org/pod/Dancer2">Dancer2</a> I created the skeleton of the new project by running
+<hl>dancer2 -a D2::Ajax</hl>:
+
+<code>
+$ dancer2 -a D2::Ajax
+
++ D2-Ajax
++ D2-Ajax/config.yml
++ D2-Ajax/cpanfile
++ D2-Ajax/Makefile.PL
++ D2-Ajax/MANIFEST.SKIP
++ D2-Ajax/bin
++ D2-Ajax/bin/app.pl
++ D2-Ajax/bin/app.psgi
++ D2-Ajax/environments
++ D2-Ajax/environments/development.yml
++ D2-Ajax/environments/production.yml
++ D2-Ajax/lib/D2
++ D2-Ajax/lib/D2/Ajax.pm
++ D2-Ajax/public
++ D2-Ajax/public/dispatch.cgi
++ D2-Ajax/public/dispatch.fcgi
++ D2-Ajax/public/404.html
++ D2-Ajax/public/500.html
++ D2-Ajax/public/favicon.ico
++ D2-Ajax/public/css
++ D2-Ajax/public/css/error.css
++ D2-Ajax/public/css/style.css
++ D2-Ajax/public/images
++ D2-Ajax/public/images/perldancer-bg.jpg
++ D2-Ajax/public/images/perldancer.jpg
++ D2-Ajax/public/javascripts
++ D2-Ajax/public/javascripts/jquery.js
++ D2-Ajax/t
++ D2-Ajax/t/001_base.t
++ D2-Ajax/t/002_index_route.t
++ D2-Ajax/views
++ D2-Ajax/views/index.tt
++ D2-Ajax/views/layouts
++ D2-Ajax/views/layouts/main.tt
+</code>
+
+It created the <hl>D2-Ajax</hl> subdirectory and a bunch of files in it.
+
+Then I changed  directory and created the Git repository.
+
+<code>
+$ cd D2-Ajax
+$ git init
+
+Initialized empty Git repository in /Users/gabor/work/D2-Ajax/.git/
+</code>
+
+Added all the files and created the initial commit.
+
+<code>
+$ git add .
+$ git commit -m "initial"
+
+[master (root-commit) f54eade] initial
+ 24 files changed, 699 insertions(+)
+ create mode 100644 MANIFEST
+ create mode 100644 MANIFEST.SKIP
+ create mode 100644 Makefile.PL
+ create mode 100755 bin/app.pl
+ create mode 100755 bin/app.psgi
+ create mode 100644 config.yml
+ create mode 100644 cpanfile
+ create mode 100644 environments/development.yml
+ create mode 100644 environments/production.yml
+ create mode 100644 lib/D2/Ajax.pm
+ create mode 100644 public/404.html
+ create mode 100644 public/500.html
+ create mode 100644 public/css/error.css
+ create mode 100644 public/css/style.css
+ create mode 100755 public/dispatch.cgi
+ create mode 100755 public/dispatch.fcgi
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/images/perldancer-bg.jpg
+ create mode 100644 public/images/perldancer.jpg
+ create mode 100644 public/javascripts/jquery.js
+ create mode 100644 t/001_base.t
+ create mode 100644 t/002_index_route.t
+ create mode 100644 views/index.tt
+ create mode 100644 views/layouts/main.tt
+</code>
+
+I've also <a href="https://github.com/">created</a> a <a href="https://github.com/szabgab/D2-Ajax">GitHub repository</a> for the project
+and pushed out the code so far.
+
+<code>
+$ git remote add origin git@github.com:szabgab/D2-Ajax.git
+$ git push -u origin master
+Counting objects: 36, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (36/36), 49.35 KiB | 0 bytes/s, done.
+Total 36 (delta 3), reused 0 (delta 0)
+To git@github.com:szabgab/D2-Ajax.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+</code>
+
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/f54eade446f8ac138eb6d095461df8a570569538">commit</a>
+
+<h2>Run tests</h2>
+
+Then I ran the tests that came with the skeleton. The usual ritual for Perl projects:
+
+<code>
+$ perl Makefile.PL
+$ make
+$ make test
+</code>
+
+That worked, but as <hl>git status</hl> can show, it created a number of helper files.
+
+<code>
+$ git status
+
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+    MYMETA.json
+    MYMETA.yml
+    Makefile
+    blib/
+    pm_to_blib
+
+nothing added to commit but untracked files present (use "git add" to track)
+</code>
+
+
+<h2>Create .gitignore</h2>
+
+We don't want those to enter the repository by mistake when we use <hl>git add .</hl>
+so it is better to create a <hl>.gitiignore</hl> file with the following content:
+
+<code>
+/MYMETA.json
+/MYMETA.yml
+/Makefile
+/blib/
+/pm_to_blib
+</code>
+
+and add it to the repository:
+
+<code>
+$ git add .gitignore
+$ git commit -m "add .gitignore"
+</code>
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/ce62f3184240d2feb282baf74248d2d7ccdd65bb">commit</a>
+
+<h2>Clean up skeleton</h2>
+
+Before starting with the real thing, I wanted to remove some part of the skeleton, so it wont' get in the way.
+Specifically I've replaced the content of the main template in <hl>views/index.tt</hl> by just one line:
+
+<code>
+Dancer Ajax example
+</code>
+
+I've also removed all the content of the CSS file <hl>public/css/style.css</hl> and 
+In the <hl>views/layouts/main.tt</hl> file I've removed the footer section that had "Powered by Dancer2" in it.
+I'd rather focus on the task ahead.
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/e9309ac03e8ddde2b1d82f7d2f695e5ad78f03c5">commit</a>
+
+
+<h2>Gitignore swap files</h2>
+
+A minor thing I've forgotten earlier is to put <hl>*.swp</hl> in the <hl>.gitignore</hl> file
+to avoid swap files created by vim to Git by mistake.
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/1a49fafa41f6af1ae789995e4cbce6093d79723b">commit</a>
+
+<h2>Try the empty application</h2>
+
+In case you'd like to try the empty application you can launch a web server using
+
+<code>
+$ plackup -R lib bin/app.psgi 
+</code>
+
+and then you can visit the web site by accessing <hl>http://127.0.0.1:5000/</hl>
+
+It should be a white page with "Dancer Ajax example" on it.
+
+<h2>Route returning JSON</h2>
+
+In Dancer we need to add "routes" that map URLs to actions. More specificaly a "route" maps
+a URL to an anonymous function. The return value of that functions is going to be the response
+of this requst.
+
+By default <hl>lib/D2/Ajax.pm</hl>, the Perl module implementing our site contains a single route:
+
+<code lang="perl">
+get '/' => sub {
+    template 'index';
+};
+</code>
+
+This means that if a <hl>GET</hl> request arrives to the root of the web server (<hl>/</hl>) it will
+generate an HTML page using the "index" template that can be found in <hl>views/index.tt</hl>.
+(The file we put "Dancer Ajax example" earlier in.)
+
+We add another route to that file:
+
+<code lang="perl">
+get '/api/v1/greeting' => sub {
+    header 'Content-Type' => 'application/json';
+    return to_json { text => 'Hello World' };
+};
+</code>
+
+This means that if someone accesses the <hl>/api/v1/greeting</hl> URL with a <hl>GET</hl> request,
+the server will set the "Content-Type" of the response to be "application/json" and then
+it will send a stringified JSON object created from the hash reference <hl>{ text => 'Hello World' }</hl>.
+
+In the URL I've included <hl>v1</hl> to make it easier to create several versions of the API. This is version 1.
+
+Before creating the client side, we should test whether this works properly. For this we create a new
+test file called <hl>t/v1.t</hl> with the following content:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use D2::Ajax;
+use Test::More tests => 1;
+use Plack::Test;
+use HTTP::Request::Common;
+
+subtest v1_greeting => sub {
+    plan tests => 3;
+
+    my $app = D2::Ajax->to_app;
+
+    my $test = Plack::Test->create($app);
+    my $res  = $test->request( GET '/api/v1/greeting' );
+
+    ok $res->is_success, '[GET /] successful';
+    is $res->content, '{"text":"Hello World"}';
+    is $res->header('Content-Type'), 'application/json';
+};
+</code>
+
+In the test <hl>$app</hl> represents our application and <hl>$test</hl> is the web browser
+(like <a href="https://metacpan.org/pod/LWP::UserAgent">LWP::UserAgent</a>).
+It knows about our application as it received it in the constructor of <hl>Plack::Test</hl>.
+With <hl>$test->request</hl> we send a request to the application that runs in the same process. It returns a
+a <a href="https://metacpan.org/pod/HTTP::Response">HTTP::Response</a> object that can be interrogated.
+
+In the 3 assertions we check if the request was successfule, if the content is as expected (a stringified JSON object), 
+and if the header was set correctly.
+
+We can now run the tests
+
+<code>
+$ make test
+</code>
+
+and observe that everything is fine.
+
+<code>
+$ git add .
+$ git commit -m "add a route returning JSON"
+</code>
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/0c645133fb7d48355b144e66a834feacafcc99e4">commit</a>
+
+If you still have the web server running you can visit <hl>http://127.0.0.1:5000/api/v1/greeting</hl>
+and see the returned string <hl>{"text":"Hello World"}</hl>.
+
+Alternatively, you can open a separate console and run 
+
+<code>
+$ curl http://127.0.0.1:5000/api/v1/greeting
+</code>
+
+That will fetch the page and print it on the console.
+
+<h2>Add page sending Ajax request</h2>
+
+The next step is to create a page that will send an Ajax request to the route we have created earlier
+and display the result.
+
+First of all we create the template called <hl>views/v1.tt</hl> that contains a bit of HTML (a single <hl>div</hl>) and
+some JavaScript code using jQuery. (In a real application we would probably put the JavaScript in a separate
+file.)
+
+<code lang="perl">
+<div id="msg"></div>
+
+<script>
+$(document).ready(function() {
+    jQuery.get('/api/v1/greeting', function(data) {
+        console.log(data);
+        $("#msg").html(data["text"]);
+    });
+});
+</script>
+</code>
+
+In case you are not familiar with jQuery, <hl>$(document).ready()</hl> will execute the function passed to the 
+<hl>ready</hl> function when the page has been  fully rendered.
+
+Then there is an anonymous function defined with <hl>function() { ... }</hl> that will be executed when the
+document is ready.
+
+<hl>jQuery.get('/api/v1/greeting', ... </hl> sends an asynchronous request to the given path on the same server where
+the page containing this code came from and once the resones has arrived it will call the (anonymous) function passed
+to it. That function will receive the response as the first parameter. (This is what will be in <hl>data</hl>),
+but depending on the Content-Type of the page, the response will be processed first. If the server sends
+<hl>application/json</hl> as Content-Type then jQuery will first parse the response as JSON and will call
+the anonymous function with the JavaScript object.
+
+Inside the anonymous function we print the data to the console, just so we can see the whole structure,
+and then we take the value of the "text" key (in <hl>data["text"]</hl>) and put it on the page.
+
+<hl>$("#msg")</hl> will locate the object on the page with the id "msg" which is the <hl>div</hl> element
+we have on the page. The <hl>html</hl> method can set the content of the given page. 
+
+OK. So we have the HTML and JavaScript part of the page, but how can we try this?
+In order to show this template as a page we need to create a new route so we add the following
+lines to <hl>lib/D2/Ajax.pm</hl>:
+
+<code lang="perl">
+get '/v1' => sub {
+    return template 'v1';
+};
+</code>
+
+This is a simple route that returns the <hl>views/v1.tt</hl> template.
+
+Once we have both of these in place we can access <hl>http://127.0.0.1:5000/v1</hl> and
+it will display "Hello World".
+
+Congratulation, you've created the first web application in which the client talks to the server
+via Ajax.
+
+If you open the JavaScript console  of your browser then you can see something like this: <hl>Object {text: "Hello World"}</hl>.
+
+We can now commit this change.
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/99034e178ea414924c42cc355d6478ff7f84555e">commit</a>
+

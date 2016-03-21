@@ -1,0 +1,105 @@
+=title Move packages to their own files - release Pod::Tree 1.21
+=timestamp 2016-02-16T19:50:01
+=indexes Perl::Critic, perlcritic
+=status show
+=books cpan_co_maintainer
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+After fixing the <a href="/use-strict-use-warnings-no-diagnostics">use strict; use warnings;</a> we can go back to using Perl::Critic.
+I ran <hl>perlcritic lib/Pod</hl> that provides some issues to be fixed.
+
+=abstract end
+
+<h2>perlcritic</h2>
+
+The output of <hl>perlcritic lib/Pod</hl> looked like this:
+
+<code>
+lib/Pod/Tree/HTML.pm: Package declaration must match filename at line 11, column 1.  Correct the filename or package statement.  (Severity: 5)
+lib/Pod/Tree/HTML.pm: "return" statement with explicit "undef" at line 229, column 12.  See page 199 of PBP.  (Severity: 5)
+lib/Pod/Tree/HTML.pm: "return" statement with explicit "undef" at line 234, column 12.  See page 199 of PBP.  (Severity: 5)
+lib/Pod/Tree/Node.pm source OK
+lib/Pod/Tree/PerlBin.pm source OK
+lib/Pod/Tree/PerlDist.pm: Bareword file handle opened at line 155, column 3.  See pages 202,204 of PBP.  (Severity: 5)
+lib/Pod/Tree/PerlDist.pm: Two-argument "open" used at line 155, column 3.  See page 207 of PBP.  (Severity: 5)
+lib/Pod/Tree/PerlDist.pm: Bareword file handle opened at line 184, column 2.  See pages 202,204 of PBP.  (Severity: 5)
+lib/Pod/Tree/PerlDist.pm: Two-argument "open" used at line 184, column 2.  See page 207 of PBP.  (Severity: 5)
+lib/Pod/Tree/PerlFunc.pm source OK
+lib/Pod/Tree/PerlLib.pm source OK
+lib/Pod/Tree/PerlMap.pm source OK
+lib/Pod/Tree/PerlPod.pm source OK
+lib/Pod/Tree/PerlTop.pm: Package declaration must match filename at line 6, column 1.  Correct the filename or package statement.  (Severity: 5)
+lib/Pod/Tree/PerlUtil.pm: Integer with leading zeros: "0755" at line 10, column 24.  See page 58 of PBP.  (Severity: 5)
+lib/Pod/Tree/Pod.pm source OK
+lib/Pod/Tree.pm: Package declaration must match filename at line 5, column 1.  Correct the filename or package statement.  (Severity: 5)
+lib/Pod/Tree.pm: "return" statement with explicit "undef" at line 25, column 19.  See page 199 of PBP.  (Severity: 5)
+</code>
+
+<h2>Package declaration must match filename</h2>
+
+This is usually happens when we have  more than one <hl>package</hl> statements in a file. It works, but usually it is a lot more <b>readable</b>
+if every <hl>package</hl> is in its own file.
+
+I've moved the content of <hl>package Pod::Tree::BitBucket;</hl> to the <hl>lib/Pod/Tree/BitBucket.pm</hl> and
+the content of <hl>package Pod::Tree::StrStream;</hl> was moved to <hl>lib/Pod/Tree/StrStream.pm</hl>.
+In both cases I already had <hl>use strict;</hl> and <hl>use warnings;</hl> in the package. That's what
+I did in the <a href="/use-strict-use-warnings-no-diagnostics">earlier</a>, but I still had to add
+<hl>1;</hl> at the end of the files to let it <a href="/how-to-create-a-perl-module-for-code-reuse">return true</a>.
+
+Instead of those I put a
+<hl>use Pod::Tree::BitBucket;</hl> and <hl>use Pod::Tree::StrStream;</hl> statements in the lib/Pod/Tree/HTML.pm
+
+<a href="https://github.com/szabgab/Pod-Tree/commit/c1fd646f731b7f78a9ff91bedf32d842d90f9c26">commit</a>
+
+The next step was to do the same and factoring out the <hl>package Pod::Tree::Stream;</hl> from <hl>lib/Pod/Tree.pm</hl>
+to <hl>lib/Pod/Tree/Stream.pm</hl> replacing it with a <hl>use Pod::Tree::Stream;</hl> statement.
+
+<a href="https://github.com/szabgab/Pod-Tree/commit/fe47cb47f48af612ee88d25d89d3b736ef1a36f9">commit</a>
+
+Then there was the separation of <hl>package Pod::Tree::HTML::PerlTop;</hl> as well.
+
+<a href="https://github.com/szabgab/Pod-Tree/commit/d2747ddae5861610a834631a81bda7804e4f4ee2">commit</a>.
+
+After each such step, before committing the changes I've ran the tests and after committing the changes
+and pushing them out to GitHub, it has also triggered Travis-CI to build and test the code.
+
+This, along with the decent test coverage provides me the necessary confidence to make bold changes and move forward.
+
+<h2>perlcritic again</h2>
+
+I ran <hl>perlcritic lib/Pod</hl> again. This time the output was much smaller:
+
+<code>
+lib/Pod/Tree.pm source OK
+lib/Pod/Tree/BitBucket.pm source OK
+lib/Pod/Tree/HTML.pm: "return" statement with explicit "undef" at line 197, column 12.  See page 199 of PBP.  (Severity: 5)
+lib/Pod/Tree/HTML.pm: "return" statement with explicit "undef" at line 202, column 12.  See page 199 of PBP.  (Severity: 5)
+lib/Pod/Tree/Node.pm source OK
+lib/Pod/Tree/PerlBin.pm source OK
+lib/Pod/Tree/PerlDist.pm: Bareword file handle opened at line 155, column 3.  See pages 202,204 of PBP.  (Severity: 5)
+lib/Pod/Tree/PerlDist.pm: Two-argument "open" used at line 155, column 3.  See page 207 of PBP.  (Severity: 5)
+lib/Pod/Tree/PerlDist.pm: Bareword file handle opened at line 184, column 2.  See pages 202,204 of PBP.  (Severity: 5)
+lib/Pod/Tree/PerlDist.pm: Two-argument "open" used at line 184, column 2.  See page 207 of PBP.  (Severity: 5)
+lib/Pod/Tree/PerlFunc.pm source OK
+lib/Pod/Tree/PerlLib.pm source OK
+lib/Pod/Tree/PerlMap.pm source OK
+lib/Pod/Tree/PerlPod.pm source OK
+lib/Pod/Tree/PerlTop.pm source OK
+lib/Pod/Tree/PerlUtil.pm: Integer with leading zeros: "0755" at line 10, column 24.  See page 58 of PBP.  (Severity: 5)
+lib/Pod/Tree/Pod.pm source OK
+lib/Pod/Tree/StrStream.pm source OK
+lib/Pod/Tree/Stream.pm: "return" statement with explicit "undef" at line 21, column 19.  See page 199 of PBP.  (Severity: 5)
+lib/Pod/Tree/HTML/PerlTop.pm source OK
+</code>
+
+We can go forward making changes, but I think it is also a good idea to make use of the <a href="http://cpantesters.org/">CPAN Testers</a>.
+
+So I've release version 1.21.
+
+<a href="https://github.com/szabgab/Pod-Tree/commit/3b7c800429d9b74350e8b3e5f16669115e94da0f">commit</a>
+
+

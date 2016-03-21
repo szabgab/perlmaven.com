@@ -1,0 +1,208 @@
+=title Logging in modules with Log4perl the easy way
+=timestamp 2016-03-17T20:59:01
+=indexes Log::Log4perl, Log::Log4perl::Level
+=tags screencast
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+In the previous article we saw how we can <a href="/logging-with-log4perl-the-easy-way">get started logging with Log::Log4perl</a> in a script.
+This time we'll see the example extended to a module.
+
+=abstract end
+
+<screencast file="/media/videos/logging-in-modules-with-log4perl-the-easy-way" youtube="CmmPRLafJq4" />
+
+In order to show how this works, we have two files:
+
+<code>
+root/
+   log.pl
+   My/EasyApp.pm
+</code>
+
+
+The <hl>My/EasyApp.pm</hl> file has the following content: The <hl>new</hl> constructor is basic here
+and the <hl>run</hl> method just fetches the logger object and calls its method. The responsibility
+to set up the logging lies with the script launching it. I think this is a better approach then letting the module initialize the logger.
+After all, modules won't run on their own.
+
+<code lang="perl">
+package My::EasyApp;
+use strict;
+use warnings;
+
+use Log::Log4perl ();
+
+sub new {
+    my $self = bless {}, shift;
+    return $self;
+}
+
+sub run {
+    my $logger = Log::Log4perl->get_logger();
+    $logger->fatal("FATAL from EasyApp");
+    $logger->debug("DEBUG from EasyApp");
+}
+
+1;
+</code>
+
+Someone unaware of the logging code in the module will try to use it as follows:
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+use My::EasyApp;
+my $app = My::EasyApp->new;
+$app->run;
+</code>
+
+When running <hl>perl log.pl</hl> the script will emit a warning:
+
+<code>
+Log4perl: Seems like no initialization happened. Forgot to call init()?
+</code>
+
+This is of course disturbing as the module should be fully usable even without logging turned on.
+
+<h2>Initialize the logger in the module - on condition</h2>
+
+We can change the module to initialize the logger if it has not been initialized by the time the constructor is
+called. In this case we initialize the logger but turn any logging OFF:
+
+<code lang="perl">
+use Log::Log4perl::Level ();
+sub new {
+    my $self = bless {}, shift;
+
+    if (not Log::Log4perl->initialized()) {
+        Log::Log4perl->easy_init( Log::Log4perl::Level::to_priority( 'OFF' ) );
+    }
+
+    return $self;
+}
+</code>
+
+Running the script again will now work silently as expected.
+
+
+<h2>Turning on logging in the script</h2>
+
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.010;
+
+use My::EasyApp;
+use Log::Log4perl ();
+use Log::Log4perl::Level ();
+
+Log::Log4perl->easy_init(Log::Log4perl::Level::to_priority( 'WARN' ));
+
+my $app = My::EasyApp->new;
+$app->run;
+</code>
+
+The output:
+
+<code>
+2014/08/25 10:34:29 FATAL from EasyApp
+</code>
+
+<h2>Less typing in the module</h2>
+
+The one thing that sometimes disturbs me, is that in every method in the module I'll have to call
+
+<code lang="perl">
+my $logger = Log::Log4perl->get_logger();
+</code>
+
+in order to have the logger object. There is a way to reduce the typing, we can import the <hl>get_logger</hl>
+method from <a herf="https://metacpan.org/pod/Log::Log4perl">Log::Log4perl</a>.
+
+We can then write:
+
+<code lang="perl">
+use Log::Log4perl qw(get_logger);
+
+sub run {
+    my $logger = get_logger();
+    $logger->fatal("FATAL from EasyApp");
+    $logger->debug("DEBUG from EasyApp");
+}
+</code>
+
+or even the following, if we don't min the extra calls:
+
+<code lang="perl">
+sub run {
+    get_logger->fatal("FATAL from EasyApp");
+    get_logger->debug("DEBUG from EasyApp");
+}
+</code>
+
+
+<h2>The full code of the module</h2>
+
+Just to make it easier to copy-paste, this code uses both approaches at the same time in three separate methods.
+
+<code lang="perl">
+package My::EasyApp;
+use strict;
+use warnings;
+
+use Log::Log4perl qw(get_logger);
+use Log::Log4perl::Level ();
+
+sub new {
+    my $self = bless {}, shift;
+    if (not Log::Log4perl->initialized()) {
+        Log::Log4perl->easy_init(Log::Log4perl::Level::to_priority( 'OFF' ));
+    }
+    return $self;
+}
+
+sub run {
+    my ($self) = @_;
+    $self->run1;
+    $self->run2;
+    $self->run3;
+}
+
+sub run1 {
+    my $logger = Log::Log4perl->get_logger();
+    $logger->fatal("FATAL from EasyApp using \$logger");
+}
+
+sub run2 {
+    my $logger = get_logger();
+    $logger->fatal("FATAL from EasyApp using \$logger with get_logger()");
+}
+
+sub run3 {
+    get_logger->fatal("FATAL from EasyApp using get_logger");
+    get_logger->debug("DEBUG from EasyApp");
+}
+
+1;
+</code>
+
+running the script will result in
+
+<code>
+2014/08/25 10:51:07 FATAL from EasyApp using $logger
+2014/08/25 10:51:07 FATAL from EasyApp using $logger with get_logger()
+2014/08/25 10:51:07 FATAL from EasyApp using get_logger
+</code>
+
+<h2>Conclusion</h2>
+
+You can start adding logging code to your module and make sure it is off when the user of your module does not care.
+
+

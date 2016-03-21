@@ -14,7 +14,7 @@ This time we'll go on,
 
 =abstract end
 
-<screencast file="/media/videos/test-plan-and-test-descriptions" />
+<screencast file="/media/videos/test-plan-and-test-descriptions" youtube="uMtNpVAA1Fs" />
 
 Just to remind you, we have a file called <hl>lib/MyCalc.pm</hl> that we would like to test.
 (See the code in <a href="/introducing-test-simple">this article</a>.)

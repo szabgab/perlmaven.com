@@ -91,7 +91,7 @@ Perl actually has a well known expression called <hl>open or die</hl> where we u
 we normally have an expression like this:
 
 <code lang="perl">
-open(my $fh, '<', $filename) or die "Could not open file '$file'\n";
+open(my $fh, '<', $filename) or die "Could not open file '$filename'\n";
 </code>
 
 This is a boolean expression with the <hl>or</hl> operator, but without an <hl>if</hl> statement, and without anything

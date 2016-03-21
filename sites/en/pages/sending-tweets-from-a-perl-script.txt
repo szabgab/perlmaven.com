@@ -1,4 +1,4 @@
-=title Sending Tweets from a Perl script
+=title Using Twitter, sending Tweets from a Perl script
 =timestamp 2015-03-25T09:30:01
 =indexes File::HomeDir, Config::Tiny, Net::Twitter
 =status show
