@@ -21,7 +21,7 @@ I wanted to preserve this functionality.
 
 =abstract end
 
-<screencast file="/media/videos/what-is-the-status-of-the-current-test-script" />
+<screencast file="/media/videos/what-is-the-status-of-the-current-test-script" youtube="limsGlhl-9o" />
 
 In addition, I know there are many people who are not very familiar with Perl yet, who are helpless when
 a test fails. It might be an interesting idea to add a message that explains how to report the problem,
