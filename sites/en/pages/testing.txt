@@ -40,7 +40,7 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/pro/test-for-expected-warnings">Test for expected warnings</a></li>
   <li>---</li>
   <li><a href="/add-some-acceptance-tests">Add some acceptance tests using search.cpan.org</a></li>
-  <li><a href="/pro/what-is-the-status-of-the-current-test-script">	What is the status of the current test script?</a></li>
+  <li><a href="/what-is-the-status-of-the-current-test-script">	What is the status of the current test script?</a></li>
   <li><a href="/mocking-function-to-fake-environment">Mocking a function to fake environment</a></li>
   <li><a href="/testing-session-mocking-time">Testing sessions by mocking time</a></li>
   <li><a href="/testing-a-simple-tcpip-server">Testing a simple TCP/IP server using Net::Telnet</a></li>
