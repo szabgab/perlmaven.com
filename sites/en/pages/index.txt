@@ -55,7 +55,7 @@ ul.horizontal li {
   <li><a href="/anyevent">AnyEvent</a>, asynchronous programming.</li>
   <li><a href="/net-server">Net::Server</a> the framework to build TCP/IP servers.</li>
   <li><a href="/metacpan">MetaCPAN</a> -  articles for CPAN users, CPAN authors, client developers, and MetaCPAN developers.</li>
-  <li><a href="/tv">Perl Maven TV Show</a> is a collection of interviews wit Perl developers.</li>
+  <li><a href="/tv">Perl Maven TV Show</a> is a collection of interviews with Perl developers.</li>
   <li><a href="/svg">SVG - Scalable Vector Graphics</a></li>
 </ul>
 
