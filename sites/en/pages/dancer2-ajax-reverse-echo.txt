@@ -1,0 +1,135 @@
+=title Reverse Echo with Ajax and Dancer 2
+=timestamp 2016-03-22T22:00:01
+=indexes param
+=status show
+=books dancer2, jquery
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+We have seen how to implement <a href="/ajax-and-dancer2">sending data in JSON via an Ajax call</a>
+to a <a href="/stand-alone-ajax-client">stand alone client</a>
+and handling that with jQuery. Let's now go a step forward and see how can we implement two-way communication between the client and the server.
+
+Let's create a page with a text entry form where the user can type in some text and when the user clicks on the button "Reverse" the text will be sent to the server,
+which will return the reversed version of the same text in a JSON data structure which then will be displayed by the code in the client.
+
+Hmm, it sounds more complex than it really is.
+
+=abstract end
+
+<h2>Reverse string in Dancer</h2>
+
+Before implementing the clients side, let's implement the code for the server together with the tests as we had earlier.
+
+This is how we can implement the route in the <hl>lib/D2/Ajax.pm</hl> file:
+
+<code lang="perl">
+get '/api/v2/reverse' => sub {
+    header 'Access-Control-Allow-Origin' => '*';
+    header 'Content-Type' => 'application/json';
+    my $text = param('str');
+    my $rev = reverse $text;
+    return to_json { text => $rev };
+};
+</code>
+
+The difference between this and the one implementing the greeting is that we accept a parameter called 'str' and
+read it using the <hl>param</hl> function supplied by Dancer: <hl>param('str')</hl>.
+Then we call the <a href="/reverse">reverse</a> function of Perl and then we return a JSON including the
+reversed string.
+
+<h2>Test the new API call</h2>
+
+The test added to <hl>t/v2.t</hl> looks like this:
+
+<code lang="perl">
+subtest v2_reverse => sub {
+    plan tests => 6;
+
+    my $app = D2::Ajax->to_app;
+
+    my $test = Plack::Test->create($app);
+    my $res  = $test->request( GET '/api/v2/reverse?str=Hello world' );
+
+    ok $res->is_success, '[GET /] successful';
+    is $res->content, '{"text":"dlrow olleH"}';
+    is $res->header('Content-Type'), 'application/json';
+    is $res->header('Access-Control-Allow-Origin'), '*';
+
+    my $res2  = $test->request( GET '/api/v2/reverse?str=' );
+    is $res2->content, '{"text":""}';
+
+    my $res3  = $test->request( GET '/api/v2/reverse' );
+    is $res3->content, '{"text":""}';
+};
+</code>
+
+The first part of the test is quite similar to what we had earlier. The difference between this and the one we used for the greeting route is
+that the URL where we send the method call which is <hl>/api/v2/reverse</hl>.
+We also pass the argument: <hl>/api/v2/reverse?str=Hello world</hl>.
+and we have hard-coded the expected result, which is the already reversed string.
+
+Then there are 2 more calls testing some edge-cases. In those cases I've not added the testing of the headers any more.
+Just making sure the content is what we expect.
+
+We can run the tests now
+
+<code>
+$ make test
+</code>
+
+and it will tell us everything has passed.
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/b28f0c5bbabc19f7de61c111e0baa68627fe7e4a">commit</a>
+
+<h2>Client side of string reversion using jQuery</h2>
+
+We change the <hl>client/v2.html</hl> file add a simple HTML form to it:
+
+
+<code lang="html">
+<form>
+<input name="str" id="str">
+<input type="submit" id="reverse" value="Reverse">
+</form>
+</code>
+
+and the jQuery code as part of the document ready function:
+
+<code lang="javascript">
+    $("#reverse").click(function() {
+        var str = $("#str").val();
+        jQuery.get('http://127.0.0.1:5000/api/v2/reverse?str=' + str , function(data) {
+            console.log(data);
+            $("#msg").html(data["text"]);
+        });
+       return false;
+    });
+</code>
+
+This means that we locate the element that has the id "reverse" (which is the submit button in our form)
+and attach a callback to it 'click' event. In the callback function first we fetch the value of the
+element with the id "str" and assign it to the variable with the same name: <hl>var str = $("#str").val();</hl>
+Then we use that variable to construct our <hl>GET</hl> request which will have the same callback
+as the we had for the greeting route.
+
+Finally we call <hl>return false;</hl>. This ensures that after we reacted to the click-event the browser will stop
+handling this even and won't actually submit the form to the server. We don't want that as that would reload the
+whole page and ruin our application.
+
+Once this is saved we can open the <hl>client/v2.html</hl> in our browser and we can play with the form that looks like this:
+
+<img src="/img/dancer2_ajax_reverse_echo.png" />
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/6fc6c1b5148b4d99e15c20236c323e83720b4c7f">commit</a>
+
+The files:
+<ul>
+  <li><a href="https://github.com/szabgab/D2-Ajax/blob/6fc6c1b5148b4d99e15c20236c323e83720b4c7f/lib/D2/Ajax.pm">lib/D2/Ajax.pm</a></li>
+  <li><a href="https://github.com/szabgab/D2-Ajax/blob/6fc6c1b5148b4d99e15c20236c323e83720b4c7f/t/v2.t">t/v2.t</a></li>
+  <li><a href="https://github.com/szabgab/D2-Ajax/blob/6fc6c1b5148b4d99e15c20236c323e83720b4c7f/client/v2.html">client/v2.html</a></li>
+</ul>
+
