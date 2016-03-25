@@ -59,7 +59,8 @@ In the <hl>body</hl> we have the same <hl>div</hl> element as we had in the <a h
 and the jQuery is also the same, except the URL which now needs to refer to the "remote" server  <hl>http://127.0.0.1:5000/api/v1/greeting</hl>
 where the back-end runs.
 
-If we open this file directly with a browser we'll get a blank page.
+If we open this file directly with a browser using the File/Open menu we'll get a blank page.
+(In order to open this file we don't use a server, just access the disc directly.)
 Only if we open the JavaScript console of our browser will we see the error message:
 
 <code>
