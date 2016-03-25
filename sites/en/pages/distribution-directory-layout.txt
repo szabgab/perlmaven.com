@@ -13,7 +13,7 @@ If you are trying to package some code in Perl, first you need to create a direc
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/distribution-directory-layout" />
+<slidecast file="/media/videos/advanced-perl/distribution-directory-layout" youtube="CTVOjanKuSo" />
 
 <code>
   dir/
