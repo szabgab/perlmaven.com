@@ -194,7 +194,7 @@ file is taken in account.
 # service nginx restart
 </code>
 
-Now you can visit http://1.2.3.4 and see the output of the same script as you saw earlier.
+Now you can visit http://1.2.3.4/hello and see the output of the same script as you saw earlier.
 
 <h2>Show the environment</h2>
 
@@ -249,5 +249,17 @@ Of course you'd probably not build a real application this way, but it is a good
 play with the environment and see that everything works fine.
 
 It can also be very useful to write small web interfaces.
+
+<h2>502 Bad Gateway</h2>
+
+If, while alrady trying to use Nginx you happen to get the above error in the browser and you might also get something like this:
+
+<code>
+upstream prematurely closed connection while reading response header from upstream, client: 192.117.127.193, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "159.203.101.19"
+</code>
+
+in <hl>/var/log/nginx/error.log</hl> the error log on Nginx, then you probably have forgotten to replace <hl>http-socket</hl> by <hl>socket</hl> in the <b>project-uwsgi.ini></b> file
+or you have forgotten to reload uwsgi after doing so. This happened to me as well, and took me quite some time to figure out the problem.
+
 
 
