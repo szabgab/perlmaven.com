@@ -17,7 +17,7 @@ In this article we will go further and move the data into a separate file.
 
 =abstract end
 
-<screencast file="/media/videos/separating-test-data-from-test-code" />
+<screencast file="/media/videos/separating-test-data-from-test-code" youtube="DxYrs6Ur1aY" />
 
 We can create an arbitrary format like this:
 
