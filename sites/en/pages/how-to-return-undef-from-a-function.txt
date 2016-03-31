@@ -24,7 +24,7 @@ We just have to decide which one to avoid and which one to fall in.
 <h2>Return undef explicitly (and what's wrong with that)</h2>
 
 The solution that seems to be obvious to many people, especially who are new to Perl, is to explicitly return <hl>undef</hl> by writing:
-<hl>return undef;</hl>. This is what we try in the following example. We have a function called <hl>dev</hl> that will attempt to divide two
+<hl>return undef;</hl>. This is what we try in the following example. We have a function called <hl>div</hl> that will attempt to divide two
 numbers, but if the denominator is 0, we must signal an error as we cannot divide by 0. In that case we call <hl>return undef;</hl>
 We call the <hl>div</hl> function 4 times. Twice we assign the value to a scalar variable and twice we assign it to an array.
 
@@ -42,7 +42,7 @@ Success! We can divide 6 by 2
 Success! We can divide 42 by 0
 </code>
 
-The first 3 results are correct, but then in the 4th row we see an incorrect result. This code now things that perl can divide by 0.
+The first 3 results are correct, but then in the 4th row we see an incorrect result. This code now thinks that perl can divide by 0.
 
 The problem is that our function returned <hl>undef</hl> which got assigned to the <hl>@y_results</hl> array which means the content
 of the array became a single <hl>undef</hl>. As if we wrote <hl>@y_results = (undef);</hl>. A one-element array is not empty,
@@ -52,7 +52,7 @@ So let's try another solution.
 
 <h2>Return undef implicitly</h2>
 
-The only thing we changes is that now, in case of error, we call <hl>return;</hl> without explicitly returning <hl>undef</hl>
+The only thing we changed is that now, in case of error, we call <hl>return;</hl> without explicitly returning <hl>undef</hl>
 
 <include file="examples/implicit_return_undef.pl">
 
@@ -67,7 +67,7 @@ Failure!
 
 This happens because the parameter-less <hl>return</hl> has the magic feature that in
 <a href="/scalar-and-list-context-in-perl">scalar context</a>
-it return <hl>undef</hl>, but in <a href="/scalar-and-list-context-in-perl">list context</a>
+it returns <hl>undef</hl>, but in <a href="/scalar-and-list-context-in-perl">list context</a>
 it returns an empty list <hl>()</hl>.
 
 Sounds perfect.
@@ -83,17 +83,20 @@ Because this issue was part of the original <b>Perl Best Practices</b> book of D
 <a href="https://metacpan.org/pod/Perl::Critic">Perl::Critic</a> has a policy against it called
 <a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExplicitReturnUndef">Subroutines::ProhibitExplicitReturnUndef</a>.
 
-If, following the advice to <a href="/perl-critic-one-policy">check one policy at a time</a> we run the following
+If, following the advice to <a href="/perl-critic-one-policy">check one policy at a time</a> we run the next command:
 
 <code>
 perlcritic --single-policy Subroutines::ProhibitExplicitReturnUndef  examples/explicit_return_undef.pl 
 </code>
 
-We will get a report:
+we will get a report:
 
 <code>
 "return" statement with explicit "undef" at line 11, column 5.  See page 199 of PBP.  (Severity: 5)
 </code>
+
+Using this policy in our setup (e.g. in the <hl>.perlcriticrc</hl> file), will help us locate the places where <hl>undef</hl> was
+returned explicitely, and it will make sure we get notified if some adds such code to our code-based.
 
 <h2>When implicit return breaks our code</h2>
 
@@ -182,8 +185,8 @@ It is still probably better than the <b>explicit return undef</b>, but it is not
 
 <h2>Forbid list context</h2>
 
-Seeing all this trouble, and seeing that the trouble are only when the function is called in list context,
-as the author of the <hl>div</hl> function we can decide to forbid calling my function in list context.
+Seeing all this trouble, and seeing that the trouble only manifests when the function is called in list context,
+as the author of the <hl>div</hl> function, we can decide to forbid calling the function in list context.
 
 We can use <a href="/wantarray">wantarray</a> to recognize when is the function called in list context
 and throw an exception (using <hl>croak</hl>):
