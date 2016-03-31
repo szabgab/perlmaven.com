@@ -9,9 +9,9 @@
 =abstract start
 
 There are two major ways indicating failure in a function. One of them is to throw (or raise) an exception by calling
-<hl>die</hl>, <hl>croak</hl>, or some other method. he other one is to return a false value. In Perl this false values is usually an <hl>undef</hl>.
+<hl>die</hl>, <hl>croak</hl>, or some other method. The other one is to return a false value. In Perl this false values is usually an <hl>undef</hl>.
 
-Some people claim that throwing an exception is a better way to indicate error, but in case you (or the people who wrote code-base) have
+Some people claim that throwing an exception is a better way to indicate error, but in case you (or the people who wrote the code-base) have
 decided to return <hl>undef</hl> then the question remains:
 
 How to return <hl>undef</hl>?
