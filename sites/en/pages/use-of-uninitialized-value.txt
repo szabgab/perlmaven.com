@@ -19,7 +19,7 @@ at the beginning of your script or module.
 =abstract end
 
 The older way is adding a <hl>-w</hl> flag on the sh-bang line. Usually looks like this
-as the fist line of your script:
+as the first line of your script:
 
 <hl>#!/usr/bin/perl -w</hl>
 
