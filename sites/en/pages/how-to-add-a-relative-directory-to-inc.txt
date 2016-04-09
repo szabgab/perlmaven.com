@@ -1,6 +1,6 @@
 =title How to add a relative directory to @INC
 =timestamp 2015-04-13T09:50:00
-=indexes Path::Tiny, path, FindBin, $Bin, File::Spec, catdir, File::Basename, dirname, Dir::Self, __DIR__, @INC, lib, rlib
+=indexes Path::Tiny, path, FindBin, $Bin, File::Spec, catdir, File::Basename, dirname, Dir::Self, __DIR__, @INC, lib, rlib, FindBin::libs
 =status show
 =books advanced
 =author szabgab
@@ -246,8 +246,34 @@ use rlib '../lib';
 </code>
 
 
+<h2>Solution 8 - FindBin::libs<?h2>
+
+<a href="https://metacpan.org/pod/FindBin::libs">FindBin::libs</a> is a bit magical. By default it looks around the location
+of the currently running script, finds the <hl>lib</hl> directory and adds it to <hl>@INC</hl>. You only need to load the module:
+
+<code lang="perl">
+use FindBin::libs;
+</code>
+
+It will work with seeral directory layouts. I have tried the following two cases:
+
+<code>
+/bin/script.pl
+/lib/Module.pm
+</code>
+
+or if the script is in the root directory of the project:
+
+<code>
+script.pl
+/lib/Module.pm
+</code>
+
+Unlike the other solutions, if there is no <hl>lib</hl> directory, this won't add the path to a not-existing directory to <hl>@INC</hl>.
+
+
 <h2>Conclusion</h2>
 
-If you can install CPAN modules, and I really hope for your that you can, I'd recommend <hl>Path::Tiny</hl> or <hl>rlib</hl>.
+If you can install CPAN modules, and I really hope for your that you can, I'd recommend <hl>Path::Tiny</hl>, <hl>rlib</hl>, or <hl>FindBin::libs</hl>.
 
 
