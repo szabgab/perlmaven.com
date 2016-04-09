@@ -246,7 +246,7 @@ use rlib '../lib';
 </code>
 
 
-<h2>Solution 8 - FindBin::libs<?h2>
+<h2>Solution 8 - FindBin::libs</h2>
 
 <a href="https://metacpan.org/pod/FindBin::libs">FindBin::libs</a> is a bit magical. By default it looks around the location
 of the currently running script, finds the <hl>lib</hl> directory and adds it to <hl>@INC</hl>. You only need to load the module:
