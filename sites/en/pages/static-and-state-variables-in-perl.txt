@@ -98,8 +98,8 @@ world
 4
 </code>
 
-showing that the <hl>state $counter = say "hi";</hl> line only gets executed once, in the first call to <hl>count()</hl>
-(<hl>say</hl>, which was also <a href="/what-is-new-in-perl-5.10--say-defined-or-state">added in version 5.10</a> will return 1 upon success.
+showing that the <hl>state $counter = say "world";</hl> line only gets executed once. In the first call to <hl>count()</hl>
+<hl>say</hl>, which was also <a href="/what-is-new-in-perl-5.10--say-defined-or-state">added in version 5.10</a>, will return 1 upon success.
 
 
 <h2>static variables in the "traditional" way</h2>
