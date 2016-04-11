@@ -27,7 +27,7 @@ The beginning of a series of articles about
   <li><a href="/hello-world-with-dancer2">Hello World with Dancer2</a> (both single file and skeleton based version)</li>
   <li><a href="/password-protecting-web-pages-in-dancer2">Password protecting web pages in Dancer 2</a></li>
   <li><a href="/counter-with-dancer-sessions">Counter with Dancer session</a></li>
-  <li><a href="/pro/uploading-files-with-dancer2">Uploading files using Dancer</a></li>
+  <li><a href="/uploading-files-with-dancer2">Uploading files using Dancer</a></li>
 </ul>
 
 <h2>Dancer 2 and Ajax</h2>
