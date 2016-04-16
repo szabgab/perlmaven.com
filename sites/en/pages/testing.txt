@@ -25,7 +25,7 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/test-without-a-plan">Test without a Plan</a></li>
   <li><a href="/separating-test-data-from-test-code">Separating test data from test code</a></li>
   <li><a href="/prove-the-harness">prove, the harness</a></li>
-  <li><a href="/pro/moving-over-to-test-more">Moving over to Test::More</a> (is, isnt)</li>
+  <li><a href="/moving-over-to-test-more">Moving over to Test::More</a> (is, isnt)</li>
   <li><a href="/pro/diag-note-explain">Test diagnostic messages using diag, note, and explain</a></li>
   <li><a href="/pro/todo-testing-a-bug">TODO - testing a bug or a future feature</a></li>
   <li><a href="/pro/using-like-to-test-without-exact-values">Using like to test without exact values</a></li>

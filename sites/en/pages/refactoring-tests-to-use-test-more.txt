@@ -14,7 +14,7 @@ That's how they generated <a href="/tap-test-anything-protocol">TAP</a>.
 
 There are still some distributions on CPAN that use that technique, usually because the author did not have the time to move them
 over to be using <a href="/introducing-test-simple">Test::Simple</a> and then onto
-<a href="/pro/moving-over-to-test-more">Test::More</a>.
+<a href="/moving-over-to-test-more">Test::More</a>.
 
 We are going to that now.
 
