@@ -20,7 +20,7 @@ They allow us to be much more explicit in our testing functions and to get much 
 
 =abstract end
 
-<screencast file="/media/videos/moving-over-to-test-more" />
+<screencast file="/media/videos/moving-over-to-test-more" youtube="2HHhostZ0cE" />
 
 <h2>Where to get Test::More ?</h2>
 
