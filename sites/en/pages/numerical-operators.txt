@@ -83,7 +83,7 @@ You can use it with any binary operator:
 <hl>+=</hl>, <hl>*=</hl>, <hl>-=</hl>, <hl>/=<hl>, even <hl>%=</hl>
 
 
-(binary operators work on to values.)
+(binary operators work on two values.)
 
 <h2>Auto increment and auto decrement</h2>
 
@@ -105,7 +105,7 @@ say $x; # 2
 </code>
 
 Both the postfix versions <hl>$x++</hl>, <hl>$x--</hl> and the prefix versions 
-<hl>++$x</hl>, <hl>--$x</hl> and they behave the same way as in other language.
+<hl>++$x</hl>, <hl>--$x</hl> and they behave the same way as in other languages.
 In case you are not familiar with them, then this is not the time to become deeply
 acquainted with them.
 

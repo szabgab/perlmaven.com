@@ -63,7 +63,7 @@ People love to debate whether one should use a <hl>tab</hl> character or <hl>spa
 and the "spaces" camp is also subdivided by the number of spaces. I think it is not the critical part.
 The important thing is that the code will be indented in a consistent way.
 
-In these examples I use 4 spaces, but when I write application I usually use <hl>TAB</hl> characters.
+In these examples I use 4 spaces, but when I write an application I usually use <hl>TAB</hl> characters.
 When I have to edit the code written by other people, I try to follow their style. If there is one.
 
 <h2>if - else</h2>

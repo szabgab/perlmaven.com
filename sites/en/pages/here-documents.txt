@@ -53,7 +53,7 @@ regards
 The here document starts with two less-than characters <hl>&lt;&lt;</hl> followed by and arbitrary string that becomes
 the designated end-mark of the here-document, followed by the semi-colon <hl>;</hl> marking the end of the statement.
 This is a bit strange as the statement does not really end here. Actually the content of the here document
-just starts on the line after the semi-colon, (in our case with the word "Dear"), and continues till perl finds the
+just starts on the line after the semi-colon, (in our case with the word "Dear"), and continues till Perl finds the
 arbitrarily selected end-mark. In our case the string <b>END_MESSAGE</b>.
 
 If you have already seen here-documents in code, you are probably surprised by the single-quotes around the first
