@@ -246,7 +246,7 @@ my $name = 'foo';
 print qq(The )name( is "$name"\n);
 </code>
 
-Indeed, perl will give you a syntax error about "name" being a <a href="/barewords-in-perl">bareword</a>.
+Indeed, Perl will give you a syntax error about "name" being a <a href="/barewords-in-perl">bareword</a>.
 Perl can't understand everything, can it?
 
 You could, of course, escape the parentheses in the string<hl>\)</hl> and <hl>\(</hl>, but we were down that rabbit hole already.
