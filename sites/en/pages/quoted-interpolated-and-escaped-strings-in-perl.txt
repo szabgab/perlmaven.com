@@ -223,7 +223,7 @@ operator. This means the double-quotes are not special any more in this string, 
 That makes the code a lot more readable.
 I'd even call it beautiful, if I did not fear the wrath of the Python programmers.
 
-But what if you would like to include parentheses in you string?
+But what if you would like to include parentheses in your string?
 
 <code lang="perl">
 use strict;
