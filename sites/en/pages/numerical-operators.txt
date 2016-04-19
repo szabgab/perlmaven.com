@@ -83,7 +83,7 @@ You can use it with any binary operator:
 <hl>+=</hl>, <hl>*=</hl>, <hl>-=</hl>, <hl>/=<hl>, even <hl>%=</hl>
 
 
-(binary operators work on to values.)
+(binary operators work on two values.)
 
 <h2>Auto increment and auto decrement</h2>
 
