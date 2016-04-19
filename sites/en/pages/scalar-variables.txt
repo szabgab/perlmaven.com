@@ -222,7 +222,7 @@ Hopefully the result of <hl>$x + $y</hl> is now clear.
 
 <h2>Background</h2>
 
-To be sure, perl did not convert <hl>$y</hl> to 3.14. It just used the numerical
+To be sure, Perl did not convert <hl>$y</hl> to 3.14. It just used the numerical
 value for the addition.
 This probably explains the result of <hl>$z . $y</hl> as well.
 In that case perl is using the original string value.
