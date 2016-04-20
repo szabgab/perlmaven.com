@@ -222,10 +222,10 @@ Hopefully the result of <hl>$x + $y</hl> is now clear.
 
 <h2>Background</h2>
 
-To be sure, perl did not convert <hl>$y</hl> to 3.14. It just used the numerical
+To be sure, Perl did not convert <hl>$y</hl> to 3.14. It just used the numerical
 value for the addition.
 This probably explains the result of <hl>$z . $y</hl> as well.
-In that case perl is using the original string value.
+In that case Perl is using the original string value.
 
 You might wonder why <hl>$z x $y</hl> shows 222 while we had 3.14 on the right hand side,
 but apparently perl can only repeat a string along whole numbers... In the operation
@@ -237,7 +237,7 @@ would seem "the right thing" for most people who are not programmers.)
 Not only that, but we don't even see the warning of the
 "partial string to number" conversion that we saw in the case of <hl>+</hl>.
 
-This is not because the difference in the operator. If we comment out the addition
+This is not because of the difference in the operator. If we comment out the addition
 we will see the warning on this operation. The reason for the lack of a second warning
 is that when perl generated the numerical value of the string <hl>"3.14 is pi"</hl> it
 also stored it in a hidden pocket of the <hl>$y</hl> variable. So effectively <hl>$y</hl>
