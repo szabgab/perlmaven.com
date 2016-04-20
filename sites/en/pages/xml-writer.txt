@@ -1,0 +1,154 @@
+=title XML::Writer examples
+=timestamp 2016-04-20T18:30:01
+=indexes XML, XML::Writer 
+=status show
+=books xml
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+<a href="https://metacpan.org/pod/XML::Writer">XML::Writer</a> provides an easy way to create <a href="/xml">XML using Perl</a>. 
+In this article you'll see a number of examples with explanation, but let's ask why would we want to use a module
+when we could just concatenate strings?
+
+The answer is that XML::Writer provides <b>automatic character escaping</b> where needed and a certain level of
+<b>validity checking</b> to make sure the generated XML is at least <b>well formed</b>.
+
+=abstract end
+
+<h2>Simple human-readable XML creation</h2>
+
+<include file="examples/xml_writer_1.pl">
+
+Generates this XML:
+
+<include file="examples/xml_writer_1.xml">
+
+<h3>Details</h3>
+
+<hl>OUTPUT => 'self'</hl> tells XML::Writer that we want it to accumulate the XML string
+in itself and return it to us when we call the <hl>end</hl> method.
+Without this we would get the XML printed on STDOUT, or if we passed an approprite parameter
+then printed to that channel.
+
+<hl>DATA_MODE => 1</hl> tells XML::Writer to put every tag on a different line. Without that it would create one long row.
+
+<hl>DATA_INDENT => 2</hl> defines the number of spaces to use indenting every internal level of tags.
+
+<hl>$writer->xmlDecl('UTF-8');</hl> creates the first row of the document. It is not required by either XML::Writer or any of the parsers, but it is nice to have.
+Especially the part that indicates the encoding.
+
+
+<hl>$writer->startTag('people');</hl> inserts an opening XML tag with the given name: <hl>&lt;people&gt;</hl>
+
+<hl>$writer->startTag('user', name => 'Foo');</hl> inserts an opening XML tag with an attribute and its value. <hl>&lt;user name="Foo"&gt;</hl>.
+
+$writer->characters('content');  adds plain characters to the XML file.
+
+<hl>$writer->endTag('user');</hl> inserts an end tag <hl>&lt;/user&gt;</hl>. XML::Writer checks if we have closed every tag properly and give an error of not.
+Some of these checks happend while we build the XML, other when we later call the <hl>end</hl> method.
+We actually don't even need to supply a value for the <hl>endTag</hl> method. XML::Writer can pick the right value for us if we just call <hl>endTag</hl>
+without any parameters.
+
+
+<hl>$writer->dataElement('user', 'content', name => 'Bar');</hl> adds  <hl>&lt;user name="Bar"&gt;content&lt;/user&gt;</hl>.
+
+It is the same as
+
+<code lang="perl">
+$wirter->startTag('user', name => 'Bar');
+$writer->characters('content');
+$writer->endTag;
+</code>
+
+<hl>$writer->emptyTag('img', src => 'xml.png');</hl> creates an empty tag with the given name and attribute/value pair. An empty tag is one
+that has an opening tag which is also a closing tag at the same time indicated by the slash at the end of the tag.  <hl>&lt;img src="xml.png" /&gt;</hl>
+
+<hl>$writer->end</hl> indicates the end of the XML stream. In our case, because we set <hl>OUTPUT => 'self'</hl>, this call will also return the XML as a string.
+
+At the end of our example we use <a href="https://metacpan.org/pod/XML::LibXML">XML::LibXML</a> just to check if the XML was well formed.
+
+<h2>Create XML for machines</h2>
+
+IF we don't want to make the XML easily viewable by humans we don't need to extra lines and indentations. We can have the whole XML data
+on a single line. In that case use
+
+<hl>my $writer = XML::Writer->new(OUTPUT => 'self');</hl>
+
+Without <hl>DATA_MODE</hl> and without <hl>DATA_INDENT</hl>.
+
+The resulting XML has the same internal structure, but it has not newlines in it.
+
+
+<h2>Automatic closing of tags</h2>
+
+We don't need to provide the name of the tag when we call <hl>endTag</hl>. After all, from the structure of XML so far, the name
+of the closing tag can be deducted. If we call <hl>endTag</hl> without any parameter then XML::Writer will place the correct closing tag.
+
+<include file="examples/xml_writer_5.pl">
+
+This is convenient, but some people might feel that providing the name of the closing tag, and thus having XML::Writer check if we provided
+the right one, is a good way to add an extra level of validity checking to their code. I don't have a strong opinion on this.
+
+<h2>Escaping special characters</h2>
+
+Certain characters are not valid characters in an XML file, or they have special meaing. For exampl <hl>&lt;</hl>, <hl>&gt;</hl>, and <hl>&amp;</hl>.
+If we would like to insert such characters we need to replace them with special symbols.
+
+XML::Writer does this for us seamlessly.
+
+<include file="examples/xml_writer_6.pl">
+
+Generates the following XML file:
+
+<include file="examples/xml_writer_6.xml">
+
+<h2>Errors</h2>
+
+
+<h3>Document cannot end without a document element</h3>
+
+We need at least one element in the XML document. At least one call to <hl>startTag</hl>, or <hl>dataElement</hl>.
+
+<include file="examples/xml_writer_2.pl">
+
+<h3>Document ended with unmatched start tag(s): ...</h3>
+
+<include file="examples/xml_writer_3.pl">
+
+We called <hl>startTag</hl> but we have not called the appropriate <hl>endTag</hl>.
+
+<h3>End tag "..." does not close any open element</h3>
+
+<include file="examples/xml_writer_4.pl">
+
+We called <hl>endTag</hl> for an element that is not open. This might happen if we mistakenly
+call <hl>endTag</hl> or swap the order of the calls. In any case, if you runt the above example
+you'll see that it never prints "OK". That's because this check is done while we build the XML
+data and not only when we call <hl>end</hl>.
+
+
+<h2>Lack of error</h2>
+
+As an experiment I've tried to add a tag with a name that is not valid and then I tried to
+parse that XML file.
+
+<include file="examples/xml_writer_7.pl">
+
+The XML was generated:
+
+<include file="examples/xml_writer_7.xml">
+
+but then we got a parse error from XML::LibXML.
+
+I've opened a <a href="https://rt.cpan.org/Ticket/Display.html?id=107239">ticket</a> wondering if this should be enforced.
+
+
+<h2>Documentation</h2>
+
+If this is still not enought, you can read the official documentation of
+<a href="https://metacpan.org/pod/XML::Writer">XML::Writer</a>.
+
+
