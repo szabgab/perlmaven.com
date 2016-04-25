@@ -13,7 +13,7 @@ there are cases when it is easier to do the work if all the content of the file 
 
 For example when we need to replace <b>Java is Hot</b> by <b>Jabba the Hutt</b> in a text file.
 
-(Probably this is going to be funny only to programmers who are Start Wars fans and who have bad Hungarian accent in
+(Probably this is going to be funny only to programmers who are Start Wars fans and who have a bad Hungarian accent in
 English as I do. Or maybe not even to them.)
 
 In any case you can escape now and read more about <a href="http://en.wikipedia.org/wiki/Jabba_the_Hutt">Jabba the Hutt</a>.

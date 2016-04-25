@@ -76,7 +76,7 @@ using the <hl>scalar</hl> function or by putting the array in
 
 In case you arrive from the world of <b>Unix/Linux Shell programming</b> you will recognize <hl>$0</hl>
 is being the name of the script there too. In shell however <hl>$1</hl>, <hl>$2</hl>, etc.
-hold the rest of the command line parameter. These variables are used by
+hold the rest of the command line parameters. These variables are used by
 the regular expressions of Perl. The command line arguments are in <hl>@ARGV</hl>. Similar to <hl>$*</hl>
 in the Unix/Linux shell.
 
@@ -242,7 +242,7 @@ Can we live with the fact that our script might not handle a file called <b>0</b
 
 <h2>Complex cases</h2>
 
-There are a lot of other cases that are much more complex that the above one or two parameter cases.
+There are a lot of other cases that are much more complex than the above one or two parameter cases.
 For those cases you'd probably want to use a tool such as <hl>Getopt::Long</hl> that will be able to analyze
 the content of <hl>@ARGV</hl> based on some declaration of what kind of parameters you'd want to accept.
 

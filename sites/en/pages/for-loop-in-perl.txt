@@ -102,7 +102,7 @@ TEST is some kind of boolean expression that tests if the loop should stop or if
 It is executed at least once. TEST is executed one more time than either BODY or STEP are.
 
 BODY is a set of statements, usually that's what we want to do repeated
-times though in some cases an empty BODY can also makes sense.
+times though in some cases an empty BODY can also make sense.
 Well, probably all those cases can be rewritten in some nice way.
 
 STEP is another set of action usually used to increment or decrement some kind of an index.
