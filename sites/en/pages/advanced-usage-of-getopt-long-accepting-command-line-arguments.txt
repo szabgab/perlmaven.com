@@ -344,7 +344,7 @@ if (defined $logfile) {
 }
 </code>
 
-In this case we don't need the extra parameter checking, though the actual code is quite similar to what we have earlier.o
+In this case we don't need the extra parameter checking, though the actual code is quite similar to what we have earlier.
 We can run this script in various ways:
 
 <code>

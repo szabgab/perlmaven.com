@@ -87,7 +87,7 @@ $isdst - 'is Daylight saving time' true if Daylight Saving Time is on in your co
 </code>
 
 Note, that in the field representing the <b>month</b> 0 means January, and 11 means December.
-In the filed representing the <b>week day</b> 0 means Sunday and 6 means Saturday.
+In the field representing the <b>week day</b> 0 means Sunday and 6 means Saturday.
 
 On the other hand the field representing the <b>day of the month</b> ranges from 1-28,30 or 31 depending on the month.
 
@@ -164,7 +164,7 @@ All the above is important, but there is one very important aspect of all this t
 We slightly skipped over this major issue of Perl for which the <hl>localtime()</hl> function
 is just one example.
 
-If you look back in the example, you might notice that the <hl>localtime()</hl> function somehow knows if it return value
+If you look back in the example, you might notice that the <hl>localtime()</hl> function somehow knows if its return value
 is going to be assigned to a scalar variable, or an array,
 and returns either a human readable representation of time, or this other, 9-number representation of the same time.
 

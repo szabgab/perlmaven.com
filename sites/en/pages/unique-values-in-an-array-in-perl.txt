@@ -18,7 +18,7 @@ from an array, but there are several solutions to the problem.
 
 <h2>A small calrification</h2>
 
-I am not native English speaker, but it seems that at least in the world of computers, the word <b>unique</b> is a bit overloaded.
+I am not a native English speaker, but it seems that at least in the world of computers, the word <b>unique</b> is a bit overloaded.
 As far as I can tell in most programming environments the word <b>unique</b> is a synonime of the word <b>distinct</b> and in
 this article we use that meaning. So given a list of values like this <hl>foo, bar, baz, foo, zorg, baz</hl> by <b>unique values</b>,
 we mean <hl>foo, bar, baz, zorg</hl>.
@@ -200,7 +200,7 @@ sub uniq {
 <h2>Home made uniq - round 2</h2>
 
 Prakash Kailasa suggested an even shorted version of implementing uniq,
-for perl version 5.14 and above, if there is no requirement to preserve the order of elements.
+for Perl version 5.14 and above, if there is no requirement to preserve the order of elements.
 
 Inline:
 

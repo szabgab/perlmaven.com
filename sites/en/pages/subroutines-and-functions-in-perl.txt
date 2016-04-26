@@ -10,7 +10,7 @@
 
 The simplest way for reusing code is building subroutines.
 
-They allow executing the same code in several places in you application,
+They allow executing the same code in several places in your application,
 and they allow it to be executed with different parameters.
 
 =abstract end

@@ -78,8 +78,8 @@ the command line, we <hl>shift</hl> it out from <a href="/argv-in-perl">@ARGV</a
 but if no value was supplied we default to <hl>'.'</hl> which is the current directory.
 
 Then we call the <hl>traverse()</hl> function and pass the starting path to it.
-Actually we don't have to have subroutine for this, but having subroutines usually
-lead to cleaner code. Certainly more reusable code.
+Actually we don't have to have a subroutine for this, but having subroutines usually
+leads to cleaner code. Certainly more reusable code.
 
 Inside the subroutine we declare the <hl>@queue</hl> array with the values
 we just got from the caller. (In our case this will be one value.)
@@ -117,7 +117,7 @@ become empty and the main <hl>while</hl> loop will end.
 
 <h2>The result</h2>
 
-Running <hl>perl queue.pl root</hl> give the following output:
+Running <hl>perl queue.pl root</hl> gives the following output:
 
 <code>
 $ perl queue.pl root

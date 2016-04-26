@@ -52,7 +52,7 @@ execute the substitution <b>globally</b> (repeated times).
 
 <h2>Hiding in function</h2>
 
-If you really don't want to see those constructs in you code you can add these functions to your code:
+If you really don't want to see those constructs in your code you can add these functions to your code:
 
 <code lang="perl">
 sub ltrim { my $s = shift; $s =~ s/^\s+//;       return $s };
