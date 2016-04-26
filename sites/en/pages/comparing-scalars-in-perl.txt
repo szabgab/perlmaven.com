@@ -160,5 +160,5 @@ if ( $name == "" ) {   # wrong! you need to use eq instead of == here!
 </code>
 
 If you run this script and type in "abc" you will get that it is TRUE,
-as if perl thought "abc" is the same as the empty string
+as if Perl thought "abc" is the same as the empty string
 
