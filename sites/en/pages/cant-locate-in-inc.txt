@@ -11,7 +11,7 @@
 One of the frequent compile time errors people get from Perl looks like this:
 <hl>Can't locate Acme/NameX.pm in @INC (@INC contains: ... )</hl>
 
-Starting from perl version 5.18 it will say:
+Starting from Perl version 5.18 it will say:
 
 <hl>Can't locate Acme/NameX.pm in @INC (you may need to install the Acme::NameX module) (@INC contains: ... )</hl>
 
@@ -36,7 +36,7 @@ for a subdirectory called Acme, and inside that subdirectory a file called NameX
 
 If it cannot find the file, then you will get the above error.
 
-<h2>Why cannot Perl find the module?</h2>
+<h2>Why Perl cannot find the module?</h2>
 
 Either there is a typo in the name of the module
 (e.g. in our case the module is probably called Acme::Name),

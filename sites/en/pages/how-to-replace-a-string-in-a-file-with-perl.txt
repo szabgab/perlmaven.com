@@ -80,7 +80,7 @@ Then we save the content in the same file, again using <hl>binmode => ':utf8'</h
 to handle Unicode characters correctly.
 
 
-<h2>Replace content with pure perl</h2>
+<h2>Replace content with pure Perl</h2>
 
 If you cannot install File::Slurp you can implement a limited
 version of its function. In this case, the main body of the code is almost
@@ -123,7 +123,7 @@ sub write_file {
 
 The <hl>read_file</hl> function we set the <hl>$/</hl> variable (which is also called $INPUT_RECORD_SEPARATOR)
 to <hl>undef</hl>. This is what is usually referred to as <a href="/slurp">slurp mode</a>. It tells the "read-line" operator
-of perl to read in the content of all the file into the scalar variable on the left-hand-side of the
+of Perl to read in the content of all the file into the scalar variable on the left-hand-side of the
 assignment: <hl>my $all = &lt;$in>;</hl>. We even used the <hl>local</hl> keyword when we set <hl>$/</hl> so
 this change will be reverted once we exit the enclosing block - in this case, once we leave the <hl>read_file</hl>
 function.

@@ -8,7 +8,7 @@
 
 =abstract start
 
-This is a really common error message I see. One, that seems to be a bit difficult to understand.
+This is a really common error message I see. One that seems to be a bit difficult to understand.
 
 The thing is, people think about <b>numerical operators</b> and <b>string operators</b>,
 but they don't think about the comma <hl>,</hl> as an operator. For them the terminology of

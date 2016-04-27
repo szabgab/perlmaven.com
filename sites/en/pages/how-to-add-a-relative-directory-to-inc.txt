@@ -11,7 +11,7 @@
 When writing an application, or even "just" a module with a command line script,
 it is very useful to make sure every <hl>use</hl> statement
 will load the modules from a directory <b>relative</b>
-to where the main perl program can be found.
+to where the main Perl program can be found.
 
 This will make sure that when you are developing the code, it won't,
 by accident, load the old installed versions of the modules.
@@ -67,7 +67,7 @@ the <hl>@INC</hl> array that has a list of file-system directory paths in it.
 It will look for a subdirectory called <hl>App</hl> and within that subdirectory
 a file called <hl>Module.pm</hl>.
 
-The content of <hl>@INC</hl> was set when perl was installed and while in another article we can see
+The content of <hl>@INC</hl> was set when Perl was installed and while in another article we can see
 <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">how to change @INC</a>
 in several ways, but in all those cases we assumed we know the absolute location of the module within the file-system.
 
@@ -143,7 +143,7 @@ use lib File::Spec->catdir(
 </code>
 
 Because <hl>$0</hl> might contain just the name of the script we first need to
-ask the currently running perl to calculate the absolute path. We do that using
+ask the currently running Perl to calculate the absolute path. We do that using
 the <hl>rel2abs</hl> method of the <hl>File::Spec</hl> module. Once we have the
 absolute path, we get rid of the last part of the path which is the name of the file
 We do that by calling the <hl>dirname</hl> function of <hl>File::Basename</hl.

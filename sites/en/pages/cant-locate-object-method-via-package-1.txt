@@ -61,7 +61,7 @@ By this difference, can you already guess what was that <hl>package "1"</h> that
 
 The problem is that in the <hl>do_something</hl> subroutine we assigned the <hl>@_</hl> to a scalar variable that put it in <a href="/scalar-and-list-context-in-perl">SCALAR context</a>.
 In scalar context an array will return its size. The <a href="/length-of-an-array">number of elements of the array</a>. In the first case there was one parameter and so perl assigned
-the number 1 to the variable <hl>$object</hl>. In the second case there were no parameters and thus perl assigned the number 0 to <hl>$object</hl>.
+the number 1 to the variable <hl>$object</hl>. In the second case there were no parameters and thus Perl assigned the number 0 to <hl>$object</hl>.
 
 What if we call <hl>do_something</hl> with two parameters?
 

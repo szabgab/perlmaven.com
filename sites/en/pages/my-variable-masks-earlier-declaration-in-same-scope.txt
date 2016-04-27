@@ -118,9 +118,9 @@ Perl will allocate the memory for <hl>$z</hl> variable for every iteration.
 
 <h2>What does "my" really mean?</h2>
 
-The meaning of <hl>my $x</hl> is that you tell perl, and specifically to <hl>strict</hl>,
+The meaning of <hl>my $x</hl> is that you tell Perl, and specifically to <hl>strict</hl>,
 that you would like to use a private variable called <b>$x</b> in the <a href="/scope-of-variables-in-perl">current scope</a>.
-Without this, perl will look for a declaration in the upper scopes and if
+Without this, Perl will look for a declaration in the upper scopes and if
 it cannot find a declaration anywhere it will give a compile-time error
 <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
 Every entry in a block, every call to a function, every iteration in a loop is a new world.
@@ -130,7 +130,7 @@ thing twice to Perl. It is not necessary and usually it means there is a mistake
 
 In other words, the warning we got is related to the <b>compilation</b> of the code and not the running.
 It is related to the declaration of the variable by the developer and not to the memory-allocation
-done by perl during run-time.
+done by Perl during run-time.
 
 <h2>How to empty an existing variable?</h2>
 
@@ -148,7 +148,7 @@ $x = undef;
 %h = ();
 </code>
 
-So just to clarify. "my" tells perl you'd like to use a variable.
+So just to clarify. "my" tells Perl you'd like to use a variable.
 When Perl reaches the code where you have "my variable" it allocates memory for the variable and its content.
 When Perl reaches the code <hl>$x = undef;</hl>  or  <hl>@x = ();</hl>  or  <hl>undef @x;</hl> it will
 remove the content of the already existing variable.

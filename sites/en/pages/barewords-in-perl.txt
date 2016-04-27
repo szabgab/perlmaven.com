@@ -44,15 +44,15 @@ my $x = hello;
 print "$x\n";    # zzz
 </code>
 
-Yes. In this version perl sees the hello() subroutine, calls it and assigns
+Yes. In this version Perl sees the hello() subroutine, calls it and assigns
 its return value to $x.
 
 Then, if someone moves the subroutine to the end of your file,
-after the assignment, perl suddenly does not see the subroutine
+after the assignment, Perl suddenly does not see the subroutine
 at the time of the assignment so we are back, having "hello" in $x.
 
 No, you don't want to get in such a mess by accident. Or probably ever.
-Having <hl>use strict</hl> in your code perl will not allow that bareword
+Having <hl>use strict</hl> in your code Perl will not allow that bareword
 <b>hello</b> in your code, avoiding this type of confusion.
 
 <code lang="perl">
