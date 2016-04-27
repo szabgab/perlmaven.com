@@ -14,7 +14,7 @@ and you need to extract some information from there. Here is an example with thr
 
 Good, Better, Best.
 
-The first is a reasonable solution for simple CSV files, that does not require anything beyond perl.
+The first is a reasonable solution for simple CSV files, that does not require anything beyond Perl.
 
 The second fixes some problems caused by a slightly more complex CSV files.
 The third is probably the best solution. The price is that these solutions depend on a
@@ -62,7 +62,7 @@ and then use <hl>substr()</hl> but Perl has a much easier way for this.
 
 <h2>Using split</h2>
 
-<hl>split()</hl> usually gets two parameters. The first is a knife the second is the string that
+<hl>split()</hl> usually gets two parameters. The first is a knife, the second is the string that
 needs to be cut in pieces.
 
 The knife is actually a regular expression but for now we can stick to simple strings there.

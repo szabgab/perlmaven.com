@@ -7,7 +7,7 @@
 
 =abstract start
 
-When a perl script is executed the user can pass arguments on the command line in various ways.
+When a Perl script is executed the user can pass arguments on the command line in various ways.
 For example <hl>perl program.pl file1.txt file2.txt</hl> or
 <hl>perl program.pl from-address to-address file1.txt file2.txt</hl> or, the most common and most useful
 way:
@@ -138,8 +138,7 @@ variable. Running <hl>perl cli.pl</hl> will result in "Maven".
 <h2>Flags without value</h2>
 
 In addition to parameters that require a value, we also would like to allow flags. Names, that by their presence make a difference.
-These things are used when we want to allow the users to turn on debugging, or to set the verbosity of the script.
-The 
+These things are used when we want to allow the users to turn on debugging, or to set the verbosity of the script. 
 
 <code lang="perl">
 use strict;

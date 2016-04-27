@@ -69,7 +69,7 @@ In both results the first <hl>$VAR1</hl> represents the original hash, the secon
 As you can see the content of the hash is the same in both cases, but the order is different. In the case of that hash this change in the
 order is only in the representation, when we converted the hash into something we can print. After all, inside the hash there is no order.
 
-The order of the values is different between the two arrays as well. This, on the other hand is actual difference in the result.
+The order of the values is different between the two arrays as well. This, on the other hand is the actual difference in the result.
 When we assign the hash to an array, we basically put the hash in <hl>LIST context</hl>. When a hash is in LIST context Perl converts a hash into
 a list of alternating values. Each key-value pair in the original hash will become two values in the newly created list. For every pair the
 key will come first and the value will come after. In which order the pairs will be included in the resulting list is not defined.
