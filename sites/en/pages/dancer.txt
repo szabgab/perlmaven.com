@@ -36,7 +36,7 @@ The beginning of a series of articles about
   <li><a href="/stand-alone-ajax-client">Stand-alone Ajax client and the Access-Control-Allow-Origin issue</a> - Simple cross-site GET request. Set Access-Control-Allow-Origin in the server.</li>
   <li><a href="/dancer2-ajax-reverse-echo">Reverse Echo with Ajax and Dancer 2</a> - An HTML form with single input field, sending the value in a GET request to the server displaying the result: the input reversed.</li>
   <li><a href="/refactoring-dancer2-using-before-hook">Refactoring Dancer 2 app, using before hook</a></li>
-  <li><a href="/pro/silencing-the-dancer-tests">Silencing the noisy Dancer tests</a></li>
+  <li><a href="/silencing-the-dancer-tests">Silencing the noisy Dancer tests</a></li>
   <li><a href="/pro/add-item-to-mongodb-database">Add and retrieve items - MongoDB, Dancer and Testing!</a> - The backend part setting up MongoDB, an implementing the back-end part of inserting an item and retrieving a list of items</li>
   <li><a href="/pro/add-and-retreive-items-jquery-ajax">Add and retrieve elements - jQuery + Ajax</a> - jQuery retrieve list and show list (building HTML using string concatenation). New HTML form, jQuery POST the text of the item</li>
   <li><a href="/pro/deleting-item-using-ajax-with-delete-and-options">Deleting item using Ajax request with DELETE and OPTIONS</a> - Change the list displayed and include a delete button with each item. When clicked send a DELETE request. Add Access-Control-Allow-Methods header and let the server respond to OPTIONS request to fix the issues.</li>
