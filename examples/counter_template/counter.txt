@@ -1,3 +1,3 @@
 This is a file with several number For example 8
 In the second row there are two number 1 and 23
-There are also number between other characters: #15# and =40=
+There are also numbers between other characters: #15# and =40=
