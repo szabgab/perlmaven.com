@@ -22,7 +22,7 @@ In any case you can escape now and read more about <a href="http://en.wikipedia.
 
 Before you go on reading, please note, in this article first you'll see the "manual" way to slurp in a file. You can do
 that, but there are more modern and much more readable ways to do that
-<a href="/use-path-tiny-to-read-and-write-file">using File::Slurp</a>.
+<a href="/use-path-tiny-to-read-and-write-file">using Path::Tiny</a>.
 
 Let's see an example. This is what we have in the data.txt file:
 

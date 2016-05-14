@@ -9,8 +9,8 @@
 
 =abstract start
 
-If you have been learning from my <a href="/beginner-perl-maven.html">Beginner Perl Maven tutorial</a> 
-or in one of my class-room training classes you have already learned this. 
+If you have been learning from my <a href="/perl-tutorial">Beginner Perl Maven tutorial</a>
+or in one of my class-room training classes you have already learned this.
 Unfortunately there are still a few Perl developers who are not aware of the importance
 of <hl>use strict</hl> and <hl>use warnings</hl>.
 
@@ -25,7 +25,7 @@ Even when they use, they might not understand why do they need them.
 
 That's understandable, of course, as in many old tutorials and books
 they are mentioned only towards the end. If at all.
-In addition tons of code, both within companies and published on the web was written 
+In addition tons of code, both within companies and published on the web was written
 without these. Even worse, there are some people out there who fight
 against the use of these tools because "they reduce freedom".
 
