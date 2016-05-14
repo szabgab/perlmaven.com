@@ -17,7 +17,7 @@ Quando volete segnalare che qualcosa è andato tremendamente storto, e volete ge
 =abstract end
 
 Chi ha letto un po' di codice Perl dovrebbe avere familiarità con <hl>die</hl>.
-Una delle espressioni più note è la <hl>open or die</hl> usata per <a href="perlmaven.com/open-and-read-from-files">aprire un file</a>.
+Una delle espressioni più note è la <hl>open or die</hl> usata per <a href="http://perlmaven.com/open-and-read-from-files">aprire un file</a>.
 
 Una chiamata a <hl>die</hl> stampa la stringa data su <a href="/stdout-stderr-and-redirection">standard error (STDERR)</a>
 e poi termina il programma.
@@ -47,6 +47,6 @@ proprio come fa per i <hl>warn</hl>. La differenza fondamentale è che il gestor
 intercetta le chiamate a die non impedisce la terminazione del vostro script. Il suo interesse è limitato
 ai casi in cui l'eccezione viene già catturata (ad es. usando <hl>eval</hl>)
 e volete intercettare i casi in cui qualcuno ha catturato l'eccezione ma non l'ha gestita adeguatamente.
-Per tali casi leggete l'articolo su come <a href="perlmaven.com/how-to-capture-and-save-warnings-in-perl">catturare le chiamate a die</a>.
+Per tali casi leggete l'articolo su come <a href="http://perlmaven.com/how-to-capture-and-save-warnings-in-perl">catturare le chiamate a die</a>.
 
 
