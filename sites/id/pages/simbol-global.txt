@@ -126,7 +126,7 @@ print $y;
 
 Masalahnya adalah, bahwa variabel <hl>$y</hl> dideklarasikan di dalam blok
 (sepasang kurung kurawal) yang artinya ia tidak ada di luar blok tersebut.
-Ini disebut <a href="/scope-of-variables-in-perl"><b>scope variable</b></a>
+Ini disebut <a href="http://perlmaven.com/scope-of-variables-in-perl"><b>scope variable</b></a>
 
 Konsep tentang <b>scope</b> sangat berbeda di antara bahasa-bahasa pemrograman.
 Pada Perl, sebuah blok pada kurung kurawal akan menciptakan sebuah scope.
@@ -168,7 +168,7 @@ print $y;
 Metode apa yang Anda ambil akan bergantung pada tugas sebenarnya. Ini hanya solusi yang memungkinkan secara sintaktis.
 
 Tentu jika kita lupa menghapus <hl>my</hl> dari dalam blok, atau jika <hl>$x</hl>-nya salah,
-maka kita mendapati peringatan <a href="/use-of-uninitialized-value">penggunaan nilai tak terinisiasi</a>.
+maka kita mendapati peringatan <a href="http://perlmaven.com/use-of-uninitialized-value">penggunaan nilai tak terinisiasi</a>.
 
 <h2>Cara lain</h2>
 

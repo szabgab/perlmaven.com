@@ -12,7 +12,7 @@
 
 Perl hadir dengan banyak sekali dokumentasi, namun
 Anda akan perlu banyak waktu untuk terbiasa menggunakannya. Nah, pada
-<a href="/tutorial-perl"> tutorial Perl</a> kali ini saya akan menjelaskan bagaimana
+<a href="/perl-tutorial"> tutorial Perl</a> kali ini saya akan menjelaskan bagaimana
 cara mengakalinya.
 
 =abstract end
@@ -41,7 +41,7 @@ Salah satu halaman yang mungkin penting adalah <a href="http://perldoc.perl.org/
 di mana Anda dapat menemukan informasi mengenai variabel-variabel seperti <hl>$_</hl> dan <hl>@_</hl>.
 
 <a href="http://perldoc.perl.org/perlsyn.html">Perlsyn</a> memberikan penjelasan mengenai sintaks Perl
-termasuk <a href="/while-loop">while loop</a>
+termasuk <a href="http://perlmaven.com/while-loop">while loop</a>
 
 <h2>perldoc pada command line</h2>
 

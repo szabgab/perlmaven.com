@@ -57,7 +57,7 @@ memformatnya berdasarkan aturan tertentu, dan memunculkannya di layar.
 
 Aturan-aturan ini nantinya tergantung pada sistem operasi Anda, namun umumnya mereka sama dengan
 apa yang bisa Anda lihat ketika kita belajar
-<a href="/core-perl-documentation-cpan-module-documentation">dokumentasi standar Perl</a>.
+<a href="/dokumentasi-core-perl-dan-dokumentasi-modul-cpan">dokumentasi standar Perl</a>.
 
 Kelebihan dari penggunaan POD adalah bahwa kode Anda tidak akan secara sengaja diberitahukan
 tanpa dokumentasi, karena sudah ada di dalam modul-modul dan skrip-skripnya.

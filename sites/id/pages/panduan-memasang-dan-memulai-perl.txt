@@ -64,7 +64,7 @@ Ia memiliki banyak paket ekstensi Perl sehingga akan menghemat waktu Anda dalam 
 
 Jika Anda mau, Anda juga dapat melihat video
 <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world dengan Perl</a> yang saya unggah ke YouTube. Anda juga mungkin ingin melihat
-<a href="/beginner-perl-maven-video-course">video pelatihan Perl Maven untuk pemula</a>.
+<a href="http://perlmaven.com/beginner-perl-maven-video-course">video pelatihan Perl Maven untuk pemula</a>.
 
 <h2>Program pertama</h2>
 
