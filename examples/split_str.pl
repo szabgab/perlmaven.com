@@ -1,3 +1,6 @@
+use strict;
+use warnings;
+
 use Data::Dumper qw(Dumper);
 
 my $str = "abc 23 def";
