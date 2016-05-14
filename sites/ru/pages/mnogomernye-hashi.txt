@@ -218,7 +218,7 @@ Can't use string ("absent") as a HASH ref while "strict refs" in use at files/ha
 
 Data::Dumper работает отлично и показывает структуру верно (Joe не имеет фигурных скобок, 
 так как не содержит вложенный хеш), но часть кода, где мы вручную проходим наш хеш, 
-содержит ошибку. <a href="/strict">use strict</a> остановил программу, потому что мы 
+содержит ошибку. <a href="http://perlmaven.com/strict">use strict</a> остановил программу, потому что мы 
 пытались использовать строку 'absent' как <a href="http://perlmaven.com/symbolic-reference-in-perl">символьную ссылку</a>.
 Отличная штука.
 
