@@ -116,7 +116,7 @@ printf "<%s>\n", $z;       # < abc >
 
 반대로 빈 문맥(VOID context)에서 trim을 호출하면,
 즉 trim 함수의 반환값을 사용하지 않으면, trim 함수는 마치
-<a href="/perldoc/chomp">chomp</a> 함수처럼 매개변수 자신을 변경합니다.
+<a href="http://perlmaven.com/chomp">chomp</a> 함수처럼 매개변수 자신을 변경합니다.
 
 <code lang="perl">
 use Text::Trim qw(trim);

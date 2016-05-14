@@ -108,4 +108,4 @@ Java를 Perl로 바꾸어 버립니다.
 
 <h2>다음</h2>
 
-다음 편은 <a href="/core-perl-documentation-cpan-module-documentation">코어 Perl 문서와 CPAN 모듈 문서</a>입니다.
+다음 편은 <a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">코어 Perl 문서와 CPAN 모듈 문서</a>입니다.

@@ -108,7 +108,7 @@ printf "<%s>\n", $z;       # < abc >
 
 On the other hand, if you call it in VOID context, that is when you don't use
 the return value at all, the trim function will change its parameter, in a way
-similar to the behavior of <a href="/perldoc/chomp">chomp</a>.
+similar to the behavior of <a href="/chomp">chomp</a>.
 
 <code lang="perl">
 use Text::Trim qw(trim);
