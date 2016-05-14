@@ -252,7 +252,7 @@ It can also be very useful to write small web interfaces.
 
 <h2>502 Bad Gateway</h2>
 
-If, while alrady trying to use Nginx you happen to get the above error in the browser and you might also get something like this:
+If, while already trying to use Nginx you happen to get the above error in the browser and you might also get something like this:
 
 <code>
 upstream prematurely closed connection while reading response header from upstream, client: 192.117.127.193, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "159.203.101.19"

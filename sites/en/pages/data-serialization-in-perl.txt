@@ -214,7 +214,7 @@ table .is {
 
 <table>
 <tr><th>Format</th>                                  <th>Standard</th>    <th>Pure Perl</th>      <th>Fast</th>        <th>Multi-language</th> <th>Secure</th>      </tr>
-<tr><td><a href="data-dumper">Data::Dumper</a></td>  <td class="ok"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="no"></td> </tr>
+<tr><td><a href="#data-dumper">Data::Dumper</a></td> <td class="ok"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="no"></td> </tr>
 <tr><td><a href="#storable">Storable</a></td>        <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> </tr>
 <tr><td><a href="#freezethaw">FreezeThaw</a></td>    <td class="no"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="ok"></td> </tr>
 <tr><td><a href="#yaml">YAML</a></td>                <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>

@@ -56,7 +56,7 @@ This code fetches the content of British <a href="http://www.dailymail.co.uk/">D
 status of the world. Once the page is fetched we count how many times given specific strings appear and return the numbers as a reference
 to a hash containing <hl>"string" => count</hl> pairs.
 
-<h2>Test life web server</h2>
+<h2>Test live web server</h2>
 
 We can write a test script call <hl>webapi.t</hl> with the following content:
 
