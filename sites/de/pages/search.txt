@@ -1,0 +1,13 @@
+=title Perl Maven search results
+=timestamp 2016-05-14T10:00:05
+=status show
+=show_newsletter_form 0
+=show_date 0
+=author 0
+=archive 0
+=show_related 0
+=show_social 0
+=comments_disqus_enable 0
+
+
+
