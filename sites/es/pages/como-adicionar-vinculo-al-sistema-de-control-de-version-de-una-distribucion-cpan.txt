@@ -1,4 +1,4 @@
-=http://perlmaven.comtitle Como adicionar vinculo al sistema de control de version de una distribucion CPAN?
+=title Como adicionar vinculo al sistema de control de version de una distribucion CPAN?
 =timestamp 2014-11-01T08:45:56
 =indexes Perl, Perl 5, CPAN, Git, Github, SVN, Subversion, VCS, META, ExtUtils::MakeMaker, Module::Build, Module::Install, Dist::Zilla, CPAN::Meta::Spec
 =status show
