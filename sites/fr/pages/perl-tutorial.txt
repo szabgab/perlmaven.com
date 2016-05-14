@@ -28,7 +28,7 @@ Si vous êtes intéressé d'être mis au courant lorsque de nouveaux articles so
 
 Une <a href="http://perlmaven.com/beginner-perl-maven-e-book">version numérique de cette documentation (EN)</a> existe aussi et est disponible à l'achat. En plus du tutoriel gratuit, cette version comprend également les diapositives du cours correspondant, y compris de nombreux exercices et leurs solutions. Le matériel du cours couvre toutes les parties, y compris celles qui ne sont pas encore reproduites dans la version gratuite.
 
-La <a href="/video-cours-perl-maven-pour-débutant">vidéo du cours</a> comprend plus de 210 capture vidéos, sur un total de plus de 5 heures de vidéo. En plus de présenter le matériel, il fournit aussi des explications aux solutions de tous les exercices.
+La <a href="http://perlmaven.com/beginner-perl-maven-video-course">vidéo du cours</a> comprend plus de 210 capture vidéos, sur un total de plus de 5 heures de vidéo. En plus de présenter le matériel, il fournit aussi des explications aux solutions de tous les exercices.
 L'ensemble comprend également le code source de tous les exemples et les exercices.
 
 <h2>Le tutoriel en ligne gratuit Perl Maven pour débutant</h2>
