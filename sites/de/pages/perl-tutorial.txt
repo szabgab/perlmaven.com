@@ -36,12 +36,12 @@ Zusätzliche Teile werden alle paar Tage veröffentlicht. Der letzte wurde am 12
 Wenn Du daran interessiert bist, benachrichtigt zu werden, wenn neue Artikel verfügbar sind,
 dann melde Dich bitte zum <a href="/register">Newsletter</a> an.
 
-Es gibt auch eine <a href="/beginner-perl-maven-e-book">E-Book-Version</a> des gesamten Materials zum Kauf.
+Es gibt auch eine <a href="http://perlmaven.com/beginner-perl-maven-e-book">E-Book-Version</a> des gesamten Materials zum Kauf.
 Zusätzlich zum freien Tutorial enthält diese Version auch die Unterlagen der betreffenden Kurse inklusive
 vieler Übungen und derer Lösungen. Das Kursmaterial deckt alle Teile ab, inklusive der Bereiche, die
 noch nicht durch die freie Version abgedeckt sind.
 
-Der begleitende <a href="/beginner-perl-maven-video-course">Video-Kurs</a> beinhaltet über 210 Filme
+Der begleitende <a href="http://perlmaven.com/beginner-perl-maven-video-course">Video-Kurs</a> beinhaltet über 210 Filme
 mit einer Gesamtlänge über 5 Stunden. Zusätzlich zur Präsentation des Materials werden Erklärungen
 zur Lösungen aller Übungen gegeben.
 Das Paket beinhaltet ebenfalls den Source-Code aller Beispiele und Übungen.
@@ -100,7 +100,7 @@ mit denen Du das vertiefen kannst, was Du gerade gelernt hast.
 <ol>
 <li>die, warn and exit</li>
 <li><a href="http://perlmaven.com/writing-to-files-with-perl">In Dateien schreiben</a></li>
-<li><a href="appending-to-files">An Dateien anfügen</a></li>
+<li><a href="http://perlmaven.com/appending-to-files">An Dateien anfügen</a></li>
 <li><a href="http://perlmaven.com/open-and-read-from-files">Dateien öffnen und lesen</a></li>
 <li><a href="http://perlmaven.com/open-files-in-the-old-way">Dateien nicht auf die alte Art öffnen</a></li>
 <li>Binärmodus und mit Unicode umgehen</li>

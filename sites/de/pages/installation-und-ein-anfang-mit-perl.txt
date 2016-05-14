@@ -67,7 +67,7 @@ sparen wirst.
 
 Wenn Du es vorziehst, kannst Du auch das Video <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with Perl</a>
 auf YouTube ansehen. In diesem Fall willst Du Dir vielleicht auch den
-<a href="/beginner-perl-maven-video-course">"Beginner Perl Maven video course"</a> ansehen.
+<a href="http://perlmaven.com/beginner-perl-maven-video-course">"Beginner Perl Maven video course"</a> ansehen.
 
 <h2>Erstes Programm</h2>
 
