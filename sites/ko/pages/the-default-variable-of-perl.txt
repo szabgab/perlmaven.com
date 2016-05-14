@@ -165,8 +165,8 @@ while (my $line = <$fh>) {
 <h2>예외</h2>
 
 반드시 <hl>$_</hl>을 명시적으로 사용해야 할 때도 있습니다.
-<a href="/filtering-values-with-perl-grep">grep</a> 과
+<a href="http://perlmaven.com/filtering-values-with-perl-grep">grep</a> 과
 <a href="http://perlmaven.com/transforming-a-perl-array-using-map">map</a> 연산자 그리고
-또 다른 유사한 <a href="/filtering-values-with-perl-grep">any</a>와 같은 것들이 그러한 경우 입니다.
+또 다른 유사한 <a href="http://perlmaven.com/filtering-values-with-perl-grep">any</a>와 같은 것들이 그러한 경우 입니다.
 
 
