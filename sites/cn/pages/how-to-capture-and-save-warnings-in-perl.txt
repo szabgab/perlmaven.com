@@ -222,7 +222,7 @@ __WARN__在其处理函数执行过程中是自动被禁用的。所以在警告
 </code>
 
 
-更多细节，参阅<a href="/what-is-new-in-Perl-5.10--say-defined-or-state">关键词state</a>。
+更多细节，参阅<a href="/what-is-new-in-perl-5.10--say-defined-or-state">关键词state</a>。
 
 (感谢 Joel Berger 提醒的 <hl>state</hl>).
 
