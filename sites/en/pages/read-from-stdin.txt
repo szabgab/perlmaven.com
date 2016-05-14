@@ -1,6 +1,6 @@
 =title Prompt, read from STDIN, read from the keyboard in Perl
 =timestamp 2016-05-12T20:31:25
-=indexes STDIN, chomp
+=indexes STDIN, chomp, IO::Prompter
 =status show
 =books beginner
 =author szabgab
@@ -40,12 +40,12 @@ Finally, just to give some feedback, we call print again displaying the content
 the user has typed in.
 
 
-<h2>IO::Prompt</h2>
+<h2>IO::Prompter</h2>
 
 This was a very simple solution using only the core language and providing
 a very simple way to prompt for some input. For more complex and robust solution
 check out one of the modules on CPAN.
-For example <a href="https://metacpan.org/pod/IO::Prompt">IO::Prompt</a>.
+For example <a href="https://metacpan.org/pod/IO::Prompter">IO::Prompter</a>.
 
 <h2>Secure input</h2>
 
