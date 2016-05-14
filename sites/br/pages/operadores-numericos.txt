@@ -107,6 +107,6 @@ Ambos operadores <hl>$x++</hl>, <hl>$x--</hl> e as versões <hl>++$x</hl>, <hl>-
 Esses operadores podem ser utilizados como parte de grandes expressões quando as versões prefixo e sufixo são realmente importantes, mas na maioria dos casos eu acredito que seja melhor evitar tais expressões. Elas podem ser interessantes, mas um verdadeiro pesadelo para dar manutenção.
 Nós teremos no tutorial um artigoo para explicar os efeitos de curto-circuito e as suas vantagens e desvantagens 
 
-Em adição, o operador de auto-incremento também pode ser empregado em textos, como é explicado no artigo sobre <a href="/string-operators">operadores textuais</a>.
+Em adição, o operador de auto-incremento também pode ser empregado em textos, como é explicado no artigo sobre <a href="/operadores-textuais">operadores textuais</a>.
 
 

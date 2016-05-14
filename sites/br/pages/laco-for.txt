@@ -25,7 +25,7 @@ ser usada como o laço tradicional de três parâmetros. Essa forma é também
 conhecida como estilo C, porém existe em outras linguagens.
 
 Eu irei descrever como funciona, apesar de que prefiro escrever o <h>foreach</hl>
-descrito na seção sobre <a href="/perl-arrays">arrays</a>.
+descrito na seção sobre <a href="http://perlmaven.com/perl-arrays">arrays</a>.
 
 As duas palavras chave <hl>for</hl> e <hl>foreach</hl> podem ser usadas como 
 sinônimos. O Perl irá descrobrir qual você deseja utilizar.

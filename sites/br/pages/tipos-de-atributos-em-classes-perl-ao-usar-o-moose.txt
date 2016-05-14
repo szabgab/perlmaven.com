@@ -19,7 +19,7 @@ tipos através dos <i>setters</i>.
 
 =abstract end
 
-Depois da primeira <a href="/object-oriented-perl-using-moose">introdução ao
+Depois da primeira <a href="http://perlmaven.com/object-oriented-perl-using-moose">introdução ao
 Perl Orientado a Objetos com o Moose</a>, você provavelmente deve estar
 familiarizado com o sistema de verificação de tipo do Moose.
 

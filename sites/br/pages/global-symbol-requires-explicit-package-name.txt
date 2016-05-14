@@ -116,7 +116,7 @@ if ($x) {
 print $y;
 </code>
 
-O problema é que a variável <hl>$y</hl> está declarada dentro de um bloco (aquele par de chaves) o que significa que a variável não existe fora desse bloco. Isso é chamado de <a href=”/escopo-das-variaveis-em-perl”><b>escopo</b> de uma variável</a>.
+O problema é que a variável <hl>$y</hl> está declarada dentro de um bloco (aquele par de chaves) o que significa que a variável não existe fora desse bloco. Isso é chamado de <a href="/escopo-das-variaveis-em-perl"><b>escopo</b> de uma variável</a>.
 
 A ideia toda do <b>escopo</b> difere um pouco entre diferentes linguagens de programação.
 No Perl, um bloco cercado por chaves gera um escopo novo.

@@ -38,7 +38,7 @@ unlink @files;
 </code>
 
 Esta função usa <hl>$_</hl>, a <a
-href="/the-default-variable-of-perl">variável padrão do Perl</a> (em inglês) se nenhum
+href="http://perlmaven.com/the-default-variable-of-perl">variável padrão do Perl</a> (em inglês) se nenhum
 parâmetro é fornecido.
 
 Para ver a documentação completa acesse <a

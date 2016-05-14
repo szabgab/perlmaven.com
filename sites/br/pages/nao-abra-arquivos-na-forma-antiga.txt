@@ -24,8 +24,8 @@ Vamos ver o que é, qual é o problema e como evitá-la?.
 Antes de explicar o que você não deve fazer, deixe-me fornecer a você <i>links</i> para artigos explicando
 o que você deve fazer:
 
-Leia <a href="/open-and-read-from-files">como abrir arquivos para leitura no estilo moderno</a>
-ou o artigo sobre <a href="/writing-to-files-with-perl">escrever em arquivos utilziando o Perl</a>.
+Leia <a href="http://perlmaven.com/open-and-read-from-files">como abrir arquivos para leitura no estilo moderno</a>
+ou o artigo sobre <a href="http://perlmaven.com/writing-to-files-with-perl">escrever em arquivos utilziando o Perl</a>.
 
 Agora vamos retornar ao antigo, e não tão bom assim, modo de programar.
 
@@ -61,7 +61,7 @@ Existem duas grandes diferenças:
 A primeira diferença está no uso da estranha variável sem o sinal de <hl>$</hl> na frente
 para receber o <i>filehandle</i>.
 (Isto na verdade é uma <b>palavra solta (bareword)</b>, mas uma que não dispara o erro
-<a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a>).
+<a href="http://perlmaven.com/barewords-in-perl">Bareword not allowed while "strict subs" in use</a>).
 
 Funciona da mesma forma que antigamente nos primórdios do Perl, mas há vários problemas:
 

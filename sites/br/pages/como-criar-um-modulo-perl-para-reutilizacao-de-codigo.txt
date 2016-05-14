@@ -179,7 +179,7 @@ qw(add);</hl> vai encontrar o diretório 'My' em '.../algumdir/lib' e o
 A vantagem desta solução é que o usuário do script não tem que lembrar de
 colocar o -I... na linha de comando.
 
-Existem outras <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">formas de
+Existem outras <a href="http://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">formas de
 modificar @INC</a> para você usar em outras situações.
 
 <h2>Explicando o use</h2>

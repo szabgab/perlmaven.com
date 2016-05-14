@@ -154,7 +154,7 @@ deixa o <a href="/escopo-das-variaveis-em-perl">escopo</a>.
 
 Se você só quer "esvaziar" a variável escalar no escopo atual, atribua a ela
 um <hl>undef</hl>, e se a variável for um <a
-href="/undef-on-perl-arrays-and-hashes">array ou hash</a>, então esvazie-a
+href="http://perlmaven.com/undef-on-perl-arrays-and-hashes">array ou hash</a>, então esvazie-a
 atribuindo uma lista vazia:
 
 <code lang="perl">
