@@ -31,7 +31,7 @@ Un operador ternario tiene tres operandos.
 En Perl 5, como en la mayoría de lenguajes de programación, el <b>operador condicional</b> tiene 3 partes separadas por <hl>?</hl> y <hl>:</hl>.
 
 La primera parte, antes de <hl>?</hl> es la condición. Es evaluada en contexto booleano.
-Si es <a href="/valores-booleanos-en-perl.tt">verdadera</a>, la segunda parte, entre <hl>?<hl> y <hl>:</hl>
+Si es <a href="/valores-booleanos-en-perl">verdadera</a>, la segunda parte, entre <hl>?<hl> y <hl>:</hl>
 será evaluada y ese será el resultado de la expresión.
 En caso contrarío la tercera parte será evaluada y ese será el valor de la expresión.
 

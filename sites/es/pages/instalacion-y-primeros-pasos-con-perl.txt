@@ -55,7 +55,7 @@ de las herramientas estándar de instalación.
 <h2>Editor e IDE</h2>
 
 Aunque lo recomiendo, no tienes porque usar el IDE Padre para escribir código Perl.
-En la siguiente parte listaré un par de <a href="/perl-editor">editores e IDEs</a> que
+En la siguiente parte listaré un par de <a href="http://perlmaven.com/perl-editor">editores e IDEs</a> que
 puedes usar para programar en Perl. Incluso si usas otro editor recomendaría - para usuarios de
 Windows - instalar el mencionado paquete DWIM Perl. 
 
@@ -109,7 +109,7 @@ Vamos a mejorarlo un poco.
 
 <h2>Perl en la línea de comandos</h2>
 
-Si no estas usando Padre o algún otro <a href="/perl-editor">IDE</a>
+Si no estas usando Padre o algún otro <a href="http://perlmaven.com/perl-editor">IDE</a>
 no podrás ejecutar el tu script desde el mismo editor. Al menos no por defecto.
 Necesitarás abrir un terminal, moverte al directorio donde guardaste hola.pl
 y escribir:

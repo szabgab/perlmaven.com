@@ -154,7 +154,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li>Windows/DOS commands: del, ren, dir</li>
 <li>File globbing (Wildcards)</li>
 <li>Directory handles.</li>
-<li>Recorriendo un árbol de directorios <a href="/recursive-subroutines">de forma recursiva</a>,
+<li>Recorriendo un árbol de directorios <a href="http://perlmaven.com/recursive-subroutines">de forma recursiva</a>,
 <a href="http://perlmaven.com/traversing-the-filesystem-using-a-queue">uso de una cola (en)</a> y uso de find (en).</li>
 </ol>
 

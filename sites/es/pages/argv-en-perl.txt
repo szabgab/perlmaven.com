@@ -85,7 +85,7 @@ Los parámetros de la línea de comandos están en <hl>@ARGV</hl>. Similar a <hl
 La única diferencia con los arrays que tú creas, es que no hay necesidad de declararlo
 y es rellenado automáticamente por Perl cuando el programa arranca.
 
-Aparte de eso, puedes manipularlo como un <a href="/perl-arrays">array</a> normal.
+Aparte de eso, puedes manipularlo como un <a href="http://perlmaven.com/perl-arrays">array</a> normal.
 Puedes iterar sobre sus elementos usando <hl>foreach</hl>, o acceder a uno de ellos usando un índice: <hl>$ARGV[0]</hl>.
 
 También puedes usar <a href="http://perlmaven.com/manipulating-perl-arrays">shift, unshift, pop o push</a> en este array.

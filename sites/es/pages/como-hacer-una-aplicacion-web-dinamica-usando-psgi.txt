@@ -9,7 +9,7 @@
 
 =abstract start
 
-Ahora que hemos construido nuestra <a href="/getting-started-with-psgi"> primera aplicación web utilizando PSGI</a>
+Ahora que hemos construido nuestra <a href="http://perlmaven.com/getting-started-with-psgi"> primera aplicación web utilizando PSGI</a>
 podemos ir un paso más allá y construir algo que pueda responder a una consulta.
 
 =abstract end
@@ -183,7 +183,7 @@ sub get_html {
 
 Obviamente para algo más grande moveríamos el HTML a un
 archivo de plantilla y probablemente usaríamos
-un framework Web de nivel superior como <a href="/dancer">dancer</a> o <a href="/mojolicious"> Mojolicious</a>,
+un framework Web de nivel superior como <a href="http://perlmaven.com/dancer">dancer</a> o <a href="http://perlmaven.com/mojolicious"> Mojolicious</a>,
 pero nos interesa ahora el mecanismo de bajo nivel.
 
 
@@ -197,5 +197,5 @@ operadores (+, -, *, /) y devuelve el resultado.
 
 <h2>Qué más?</h2>
 
-¿Qué más quieres saber sobre Plack y <a href="/psgi"> PSGI</a>?
+¿Qué más quieres saber sobre Plack y <a href="http://perlmaven.com/psgi"> PSGI</a>?
 

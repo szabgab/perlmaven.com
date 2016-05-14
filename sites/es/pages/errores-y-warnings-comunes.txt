@@ -27,7 +27,7 @@ Algunos de los artículos incluyen también indicaciones sobre como solucionar e
     <li><a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ... (en)</a></li>
     <li><a href="http://perlmaven.com/unknown-warnings-category">Unknown warnings category (en)</a></li>
     <li>Can't use string ("Foo") as a HASH ref while "strict refs" in use at ...
-       explained in <a href="/symbolic-reference-in-perl">Symbolic references in Perl (en)</a></li>
+       explained in <a href="http://perlmaven.com/symbolic-reference-in-perl">Symbolic references in Perl (en)</a></li>
     <li><a href="http://perlmaven.com/cant-locate-in-inc">Can't locate ... in @INC (en)</a></li>
     <li><a href="http://perlmaven.com/scalar-found-where-operator-expected">Scalar found where operator expected (en)</a></li>
     <li><a href="http://perlmaven.com/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope (en)</a></li>
