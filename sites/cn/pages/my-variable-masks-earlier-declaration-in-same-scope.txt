@@ -121,7 +121,7 @@ for (1 .. 10) {
 
 首先，如果变量在某个作用域内声明（在花括号内），那么出了<a href="/scope-of-variables-in-perl">作用域</a>后它（变量）会自动消失。
 
-如果你仅仅想“清空”当前作用域的标量，把它赋值成<hundef</hl>就好了，如变量是<a href="/undef-on-perl-arrays-and-hashes">数组或hash表</a>，那么通过赋值成空列表就能清空：
+如果你仅仅想“清空”当前作用域的标量，把它赋值成<hundef</hl>就好了，如变量是<a href="http://perlmaven.com/undef-on-perl-arrays-and-hashes">数组或hash表</a>，那么通过赋值成空列表就能清空：
 
 <code lang="perl">
 $x = undef;

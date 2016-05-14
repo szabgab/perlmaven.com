@@ -56,7 +56,7 @@ while (@people) {
 
 这里我们使用<hl>@people</hl>数组来表示队列。开始的时候它有两个元素。之后在<a href="/while-loop">while 循环</a>中处理队列。只要还有名字在队列中，循环就会一直持续下去。
 
-（<hl>while ()</hl>循环的条件部分提供的是<a href="/scalar-and-list-context-in-perl">标量上下文</a>，数组返回的是其大小。如果数组为空，则返回0，也就是<a href="/boolean-values-in-perl">false</a>；如果数组中存在元素，那么它的大小为正数，也就是Perl中的<a href="/boolean-values-in-perl">true</a>。
+（<hl>while ()</hl>循环的条件部分提供的是<a href="http://perlmaven.com/scalar-and-list-context-in-perl">标量上下文</a>，数组返回的是其大小。如果数组为空，则返回0，也就是<a href="/boolean-values-in-perl">false</a>；如果数组中存在元素，那么它的大小为正数，也就是Perl中的<a href="/boolean-values-in-perl">true</a>。
 
 循环内部的第一步，我们通过<hl>shift</hl>函数获取到队列的第一个元素，这就是牙医下一个接待的人。之后应该调用<hl>treat($next_person);</hl>，但是现在仅仅打印出名字。
 
