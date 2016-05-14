@@ -22,7 +22,7 @@
 C 語言風味。
 
 關於此點，以下我會完整地描述。我比較偏好使用<hl>foreach</hl>風格的用法，
-在 <a href="/perl-arrays">Perl 陣列</a> 一文中另述。
+在 <a href="http://perlmaven.com/perl-arrays">Perl 陣列</a> 一文中另述。
 
 在 Perl 語言裡，<hl>for</hl> 與 <hl>foreach</hl> 這兩個關鍵字算是同義，就算
 搞混了，perl 也多半不太在意。
@@ -121,7 +121,7 @@ while (1) {
 }
 </code>
 
-這部份請參閱<a href="/while-loop">Perl 的 while 迴圈</a>。
+這部份請參閱<a href="http://perlmaven.com/while-loop">Perl 的 while 迴圈</a>。
 
 <h2>perldoc</h2>
 

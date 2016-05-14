@@ -67,7 +67,7 @@ if (grep { $visitor eq $_ } @names) {
 }
 </code>
 
-這個例子中，我們把 grep 放在 <a href="/scalar-and-list-context-in-perl">SCALAR 意境</a>中。
+這個例子中，我們把 grep 放在 <a href="http://perlmaven.com/scalar-and-list-context-in-perl">SCALAR 意境</a>中。
 在 SCALAR 意境中， <hl>grep</hl> 會傳回符合元素字串的數目。如果回傳 0, 代表這個表示式為 false。如果回傳正值，代表這個表示式為 true。
 
 這個方法可以運作是因為它利用了意境這個方式，但是有人可能對這個比較陌生。讓我們看看利用 <hl>any</hl> 函式，位在
