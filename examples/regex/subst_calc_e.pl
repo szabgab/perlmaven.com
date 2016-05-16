@@ -4,8 +4,6 @@ use warnings;
 
 my $str = "abc 24 def";
 
-$str =~ s/(\d)(\d)/$1 + $2/e; # abc 6 def
+$str =~ s/(\d)(\d)/$1 + $2/e;
 
-say $str;
-
-
+say $str;  # abc 6 def
