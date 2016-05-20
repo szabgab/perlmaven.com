@@ -1,4 +1,4 @@
-=title Enable Travis-CI for Continous Integration
+=title Enable Travis-CI for Continuous Integration
 =timestamp 2015-09-19T10:30:01
 =indexes Travis-CI
 =status show
@@ -9,17 +9,17 @@
 
 =abstract start
 
-<a href="https://travis-ci.org/">Travis-CI</a> provides Continous Integration for projects in GitHub repositories. For public repositories it is even free.
+<a href="https://travis-ci.org/">Travis-CI</a> provides Continuous Integration for projects in GitHub repositories. For public repositories it is even free.
 
 In other words, if Travis-CI is enabled and configured for your GitHub repository, then every time you <hl>push</hl> changes out to GitHub,
 Travis-CI will automatically run the test on the latest commit.
 
-This is great, as it means I can get feedback for my changes on multiple versions of Perl even before I relese my distribution to CPAN.
+This is great, as it means I can get feedback for my changes on multiple versions of Perl even before I release my distribution to CPAN.
 
 =abstract end
 
 As this is not the first time I <a href="/using-travis-ci-and-installing-geo-ip-on-linux">use Travis-CI</a>, I already had an account,
-and by the time I got to this, my repowas already synced.
+and by the time I got to this, my repositories were already synced.
 I only needed to enable to enable the <hl>Pod-Tree</hl> GitHub repository on <a href="https://travis-ci.org/">Tavis-CI</a>,
 add, the <hl>.travis.yml</hl> file to the root of the repository, 
 
