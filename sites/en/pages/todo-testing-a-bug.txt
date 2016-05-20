@@ -18,7 +18,7 @@ The question what do you do now?
 
 =abstract end
 
-<screencast file="/media/videos/todo-testing-a-bug" />
+<screencast file="/media/videos/todo-testing-a-bug" youtube="ildayXLOhR8" />
 
 If you leave the test-case in the test-suite you'll keep getting test failures. This is not good
 as every time, every person running the test-suite will have to stop thinking "ok, this test case is know to fail". That's both a waste
