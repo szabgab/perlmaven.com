@@ -51,3 +51,4 @@ rohan;Rohan Almeida;rohan.jpg;
 ferki;Ferenc Erki;ferki.png;
 dsdickinson;Steve Dickinson;dsdickinson.jpg;https://plus.google.com/+SteveDickinsonJr
 grandfather;Peter Jaquiery;grandfather.jpg;
+fenggao;Feng Gao;fenggao.jpg;https://www.linkedin.com/in/gao-feng-a347b653

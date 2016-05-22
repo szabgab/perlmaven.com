@@ -2,8 +2,10 @@
 =timestamp 2015-04-27T06:50:01
 =indexes MongoDB
 =status show
+=original getting-started-with-mongodb-using-perl-insert-and-update
 =books mongodb
 =author szabgab
+=translator fenggao
 =comments_disqus_enable 1
 
 =abstract start
