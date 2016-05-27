@@ -1,4 +1,4 @@
-=title Using like to test without exact values
+=title Using 'like' to test without exact values
 =timestamp 2016-05-27T08:30:01
 =indexes Test::More, like
 =tags screencast
@@ -20,7 +20,7 @@ So we need to be more flexible with our testing.
 
 =abstract end
 
-<screencast file="/media/videos/using-like-to-test-without-exact-values" />
+<screencast file="/media/videos/using-like-to-test-without-exact-values" youtube="2ENtXv_PaG4" />
 
 <h2>Timestamp</h2>
 
