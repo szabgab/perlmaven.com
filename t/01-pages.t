@@ -14,7 +14,7 @@ use Test::More;
 
 my $root = dirname dirname abs_path $0;
 my @languages = map { basename $_ } glob "$root/sites/*";
-my %META_PAGE = map { $_ => 1 } qw(index.txt about.txt keywords.txt archive.txt products.txt perl-tutorial.txt contributor.txt);
+my %META_PAGE = map { $_ => 1 } qw(index.txt about.txt keywords.txt archive.txt products.txt perl-tutorial.txt contributor.txt search.txt);
 my %english = map { substr(basename($_), 0, -4), 1 } glob "$root/sites/en/pages/*.txt";
 my %authors = read_authors();
 my %sitemap;
