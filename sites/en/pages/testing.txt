@@ -13,13 +13,23 @@ A series of articles about testing, and test automation using Perl.
 
 =abstract end
 
-<ul>
+<h2>Articles</h2>
+
+<ol>
   <li><a href="/tap-test-anything-protocol">TAP - Test Anything Protocol</a></li>
   <li><a href="/testing-a-simple-perl-module">Testing a simple Perl module</a></li>
   <li><a href="/test-for-warnings-in-a-perl-module">Test for warnings in a Perl Module</a></li>
+</ol>
+
+<h2>Interviews</h2>
+<ol>
   <li><a href="/chad-granum">Interview with Chad (Exodist) Granum, author of the Fennec testing tool</a></li>
   <li><a href="/michael-schwern-on-test-automation-and-git">Interview with Michael Schwern on test automation and Git</a></li>
-  <li><a href="/pro/introducing-test-simple">Introducing test automation with Test::Simple</a></li>
+</ol>
+
+<h2>Test Automation using Perl screencasts</h2>
+<ol>
+  <li><a href="/introducing-test-simple">Introducing test automation with Test::Simple</a></li>
   <li><a href="/test-plan-and-test-descriptions">Test plan and test descriptions</a></li>
   <li><a href="/refactoring-large-test-suite-separating-data-from-code">Refactoring large test suite - separating data from code</a></li>
   <li><a href="/test-without-a-plan">Test without a Plan</a></li>
@@ -47,9 +57,4 @@ A series of articles about testing, and test automation using Perl.
   <li>---</li>
   <li><a href="/pro/moose-test-constructor">Moose: Testing the constructor</a></li>
 </ul>
-
-<!--
-  <li><a href=""></a></li>
--->
-
 
