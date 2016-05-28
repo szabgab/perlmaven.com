@@ -19,10 +19,10 @@ In this article we'll see how to get started with it, or more specifically with
 
 <h2>Installing Mojolicious</h2>
 
-If you already have a CPAN client configured, you can just install Mojolicious
+If you already have a CPAN client configured, you can install Mojolicious
 with the regular command <hl>cpan Mojolicious</hl>.
 
-Otherwise on Linux systems you can first install <hl>cpanminus</hl>
+Otherwise on Linux systems you can first install <a href="http://cpanmin.us/">cpanminus</a>
 by typing <hl>curl -L http://cpanmin.us | perl - App::cpanminus</hl>.
 Then you can install Mojolicious by typing <hl>cpanm Mojolicious</hl>.
 
@@ -30,17 +30,11 @@ Then you can install Mojolicious by typing <hl>cpanm Mojolicious</hl>.
 
 Save the following code as <hl>hello_world.pl</hl>:
 
-<code lang="perl">
-use Mojolicious::Lite;
-get '/' => { text => 'Hello World' };
-
-app->start;
-</code>
+<include file="examples/mojolicious/lite/hello_world.pl">
 
 And run it with <hl>morbo hello_world.pl</hl>. It will print the following to the screen:
 
 <code>
-[Sun Jul 28 18:05:56 2013] [info] Listening at "http://*:3000".
 Server available at http://127.0.0.1:3000.
 </code>
 
@@ -50,44 +44,34 @@ You will see <hl>Hello world</hl>.
 
 <img src="/img/mojolicious_lite_hello_world.png" alt="Mojolicious::Lite Hello World " />
 
-Congratulations! You've just created your first web application with Perl and Mojolicious.
+Congratulations! You've just created your first web application with Perl and <a href="/mojolicious">Mojolicious</a>.
 
 This code is quite simple. After loading the module with <hl>use Mojolicious::Lite;</hl>, we defined
-a <hl>route</hl>: what to do if a browser sends a <hl>get</hl> request to the root of our web site (<hl>/</hl>).
-We return the <hl>text</hl>, <hl>Hello World</hl>.  Please note, there is a <hl>;</hl> at the end of the block.
+a <hl>route</hl>:
+A route is just a path in he URL and some code that will be executed when a browser sends a <hl>get</hl> request to the given path on the server. In our case the path is the root of our web site (<hl>/</hl>).
+The function returns the <hl>text</hl>, <hl>Hello World</hl>.  Please note, there is a <hl>;</hl> at the end of the block.
 
 The reason for that is that the block is actually just the second parameter of the <hl>get</hl> function
 imported by <hl>Mojolicious::Lite</hl>, and in Perl statements are separated by semicolons.
 
 The final line <hl>app->start;</hl> starts the web application.
 
-As you might have noticed we have not included <hl>use strict</hl> and <hl>use warnings</hl>.
-Including <hl>Mojolicious::Lite</hl> automatically turns on these pragmata.
+As you might have noticed even though we recommend
+to <a href="http://perlmaven.com/always-use-strict-and-use-warnings">always included <hl>use strict</hl> and <hl>use warnings</hl></a>,
+we have not done it in this case.
+This is because including <hl>Mojolicious::Lite</hl> automatically turns on these pragmata. Actually along with
+<hl>utf8</hl> and <hl>features</hl>.
 
 The <hl>morbo</hl> command runs our "application" using a small, built-in web server.
 
 Now take a look at the console, where you ran <hl>morbo</hl>. You will see some extra lines printed:
 
 <code>
-[Sun Jul 28 19:09:04 2013] [debug] Your secret passphrase needs to be changed!!!
-[Sun Jul 28 19:09:04 2013] [debug] GET "/".
-[Sun Jul 28 19:09:04 2013] [debug] 200 OK (0.000764s, 1308.901/s).
+Server available at http://127.0.0.1:3000
+[Sat May 28 15:16:19 2016] [debug] GET "/"
+[Sat May 28 15:16:19 2016] [debug] 200 OK (0.001099s, 909.918/s)
 </code>
 
-That's the standard log of Mojolicious.
-
-<h2>Your secret passphrase needs to be changed!!!</h2>
-
-The first line is a bit strange. It tells us that we need to set our secret passphrase.
-As explained in
-<a href="http://mojolicio.us/perldoc/Mojolicious/Guides/FAQ#What_does_Your_secret_passphrase_needs_to_be_changed_mean">the documentation</a>, we can do that by calling <hl>app->secret('My very secret passphrase.');</hl> just before calling
-<hl>app->start;</hl>.
-
-Stop the server by pressing <hl>Ctrl-C</hl> on the console where you see the log messages, start it again by running
-<hl>morbo hello_world.pl</hl>. If you reload the page now and check the log messages, you'll see the warning does not
-show up any more.
-
-Of course, if you have a public facing application, you might want to use some other super secret passphrase.
 
 <h2>Error pages</h2>
 
@@ -98,8 +82,44 @@ We will see a page like this:
 
 <img src="/img/mojolicious_lite_simple_error.png" alt="Mojolicious::Lite simple error page" />
 
+Earlier versions of Mojolicious had a much simpler error page:
+
+<img src="/img/mojolicious_lite_simple_error_old.png" alt="Mojolicious::Lite simple error page - old version" />
+
 This is a simple error page that list all the existing routes (we currently only have one)
 and links to the Mojolicious web site where we can get help. Very nice.
+
+If we look at the console again however we see the following output:
+
+<code>
+Server available at http://127.0.0.1:3000
+[Sat May 28 15:26:03 2016] [debug] GET "/"
+[Sat May 28 15:26:03 2016] [debug] 200 OK (0.001691s, 591.366/s)
+[Sat May 28 15:26:09 2016] [debug] GET "/echo"
+[Sat May 28 15:26:09 2016] [debug] Template "not_found.development.html.ep" not found
+[Sat May 28 15:26:09 2016] [debug] Template "not_found.html.ep" not found
+[Sat May 28 15:26:09 2016] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 28 15:26:09 2016] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 28 15:26:09 2016] [debug] Your secret passphrase needs to be changed
+[Sat May 28 15:26:09 2016] [debug] 404 Not Found (0.060596s, 16.503/s)
+</code>
+
+There is a line which is a bit strange. It tells us that we need to set our secret passphrase.
+
+<h2>Your secret passphrase needs to be changed!!!</h2>
+
+As explained in
+<a href="http://mojolicious.org/perldoc/Mojolicious/Guides/FAQ#What-does-Your-secret-passphrase-needs-to-be-changed-mean">the documentation</a>, we can do that by calling <hl>app->secret(['My very secret passphrase.']);</hl> just before calling
+<hl>app->start;</hl>.
+
+Stop the server by pressing <hl>Ctrl-C</hl> on the console where you see the log messages, start it again by running
+<hl>morbo hello_world.pl</hl>. If you reload the page now and check the log messages, you'll see the warning does not
+show up any more.
+
+Of course, if you have a public facing application, you might want to use some other super secret passphrase.
+
+In earlier versions of Mojolicious this call looked a bit different. It was in singular and accepted a single string instead
+of an array of strings. Like this: <hl>app->secret('My very secret passphrase.');</hl>.
 
 <h2>Echo form</h2>
 
@@ -188,4 +208,6 @@ app->secret('My extra secret passphrase.');
 
 app->start;
 </code>
+
+
 
