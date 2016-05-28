@@ -8,5 +8,3 @@ get '/echo' => { text => q{
 
 app->secrets(['My very secret passphrase.']);
 app->start;
-
-

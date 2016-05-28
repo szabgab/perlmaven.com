@@ -161,7 +161,7 @@ We'll see this:
 
 Again, earlier versions of Mojolicious used to show a much simpler response:
 
-<img src="/img/mojolicious_lite_missing_post_error.png" alt="Mojolicious::Lite missing POST route error" />
+<img src="/img/mojolicious_lite_missing_post_error_old.png" alt="Mojolicious::Lite missing POST route error" />
 
 We are already familiar with this kind of error page, but what happened now?
 We have two routes declared to <hl>/</hl> and <hl>/echo</hl> but only using the <hl>GET method</hl>. Our

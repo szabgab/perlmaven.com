@@ -13,6 +13,3 @@ post '/echo' => sub {
 
 app->secrets(['My very secret passphrase.']);
 app->start;
-
-
-
