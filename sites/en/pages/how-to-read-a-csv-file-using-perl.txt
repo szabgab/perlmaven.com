@@ -26,12 +26,7 @@ Pick the one that matches your needs.
 
 I got a CSV file that looked like this:
 
-<code>
-Tudor,Vidor,10,Hapci
-Szundi,Morgo,7,Szende
-Kuka,Hofeherke,100,Kiralyno
-Boszorkany,Herceg,9,Meselo
-</code>
+<include file="examples/data/simple.csv" >
 
 This is a CSV file. In each row there are fields separated with comma.
 
@@ -79,24 +74,7 @@ In our case the field separator character is a comma <hl>,</hl> and not a colon
 
 We can write our script like this:
 
-<code lang="perl">
-#!/usr/bin/perl
-use strict;
-use warnings;
-
-my $file = $ARGV[0] or die "Need to get CSV file on the command line\n";
-
-my $sum = 0;
-open(my $data, '<', $file) or die "Could not open '$file' $!\n";
-
-while (my $line = <$data>) {
-  chomp $line;
-
-  my @fields = split "," , $line;
-  $sum += $fields[2];
-}
-print "$sum\n";
-</code>
+<include file="examples/read_simple_csv.pl" >
 
 If you save this as csv.pl then you will be able to run it as
 <hl>perl csv.pl data.csv</hl> providing the input csv file on the command line.
@@ -110,12 +88,7 @@ Unfortunately at some point you get warnings while running your script.
 
 You open the CSV file and it looks like this:
 
-<code>
-Tudor,Vidor,10,Hapci
-Szundi,Morgo,7,Szende
-Kuka,"Hofeherke, alma",100,Kiralyno
-Boszorkany,Herceg,9,Meselo
-</code>
+<include file="examples/data/quoted.csv" >
 
 As you can see the 2nd field in the 3rd row has a comma in the value so the people who wrote the file
 put the whole field in quotes: <hl>"Hofeherke, alma"</hl>. This is totally normal within the "standard"
@@ -136,31 +109,7 @@ can connect to their knowledge.
 
 Here is the code:
 
-<code lang="perl">
-#!/usr/bin/perl
-use strict;
-use warnings;
-
-use Text::CSV;
-my $csv = Text::CSV->new({ sep_char => ',' });
-
-my $file = $ARGV[0] or die "Need to get CSV file on the command line\n";
-
-my $sum = 0;
-open(my $data, '<', $file) or die "Could not open '$file' $!\n";
-while (my $line = <$data>) {
-  chomp $line;
-
-  if ($csv->parse($line)) {
-
-      my @fields = $csv->fields();
-      $sum += $fields[2];
-
-  } else {
-      warn "Line could not be parsed: $line\n";
-  }
-}
-print "$sum\n";
+<include file="examples/read_quoted_csv.pl" >
 </code>
 
 <hl>Text::CSV</hl> is a 3rd-party extension to Perl. It provides a set of new functionality,
@@ -212,13 +161,7 @@ should be the required number.
 
 There can be further "problems" with the CSV file. For example some fields might contain embedded newlines.
 
-<code>
-Tudor,Vidor,10,Hapci
-Szundi,Morgo,7,Szende
-Kuka,"Hofeherke,
-alma",100,Kiralyno
-Boszorkany,Herceg,9,Meselo
-</code>
+<include file="examples/data/multiline.csv" >
 
 The way we currently handle the CSV file cannot solve this problem but the <a href="https://metacpan.org/pod/Text::CSV">Text::CSV</a>
 module provides a way to solve that too.
@@ -226,32 +169,7 @@ module provides a way to solve that too.
 This example is based on a comment by H.Merijn Brand, the maintainer of the
 <a href="https://metacpan.org/pod/Text::CSV_XS">Text::CSV_XS</a> module:
 
-<code lang="perl">
-#!/usr/bin/perl
-use strict;
-use warnings;
-
-use Text::CSV;
-
-my $file = $ARGV[0] or die "Need to get CSV file on the command line\n";
-
-my $csv = Text::CSV->new ({
-  binary    => 1,
-  auto_diag => 1,
-  sep_char  => ','    # not really needed as this is the default
-});
-
-my $sum = 0;
-open(my $data, '<:encoding(utf8)', $file) or die "Could not open '$file' $!\n";
-while (my $fields = $csv->getline( $data )) {
-  $sum += $fields->[2];
-}
-if (not $csv->eof) {
-  $csv->error_diag();
-}
-close $data;
-print "$sum\n";
-</code>
+<include file="examples/read_multiline_csv.pl" >
 
 This changes the whole way we handle the file. Instead of reading manually line-by-line,
 we ask the Text::CSV module to read, what it considers a line. This will let it handle
