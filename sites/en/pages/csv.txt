@@ -1,0 +1,98 @@
+=title CSV - Comma Separated Values and Perl
+=timestamp 2016-05-28T12:30:01
+=indexes Text::CSV
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+<a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> (where CSV stand for Comma-separated values) is one of the most
+common file formats as it can be used to easily represent table-like data. Similar to what you would put in an Excel file
+or in a Relational database where you used SQL.
+
+=abstract end
+
+<h2>CSV file with multi-line fields</h2>
+
+In this example we have simple fields separated by comma and we also have a field that contains both a comma and a newline as part of the value.
+That field is wrapped in quotes <hl>"</hl> to make it clear it is a single unit.
+
+<include file="examples/data/multiline.csv">
+
+This script expects the path to the CSV file as input and will print the content of each line using <hl>Data::Dumper</hl>.
+
+<include file="examples/read_and_print_multiline_csv.pl">
+
+The output will look like this:
+
+<code>
+$VAR1 = [
+          'Tudor',
+          'Vidor',
+          '10',
+          'Hapci'
+        ];
+$VAR1 = [
+          'Szundi',
+          'Morgo',
+          '7',
+          'Szende'
+        ];
+$VAR1 = [
+          'Kuka',
+          'Hofeherke,
+alma',
+          '100',
+          'Kiralyno'
+        ];
+$VAR1 = [
+          'Boszorkany',
+          'Herceg',
+          '9',
+          'Meselo'
+        ];
+</code>
+
+
+If you'd like to access the individual elements in each row you can do it with the following syntax:
+<hl>$fields->[2];</hl> which would access the 3rd element in the current row (indexing starts from 0).
+
+For more details see the article explaining <a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">how to read a CSV file using Perl</a>.
+
+
+<h2>Text::CSV or Text::CSV_XS ?</h2>
+
+<a href="https://metacpan.org/pod/Text::CSV">Text::CSV</a> is a pure-Perl implementation which means you can "install" it by downloading and unzipping the distribution.
+<a href="https://metacpan.org/pod/Text::CSV_XS">Text::CSV_XS</a> implements the CSV parser in C which makes it a lot faster.
+
+Luckily when using Text::CSV it will check if Text::CSV_XS is installed and if it is, the faster one will be used automatically.
+
+So unless you want to force your users to always use Text::CSV_XS, you'd be probably better off using Text::CSV and letting your users decide if they want to "pay the price"?
+
+
+<h2>Alternative modules</h2>
+
+<ul>
+    <li><a href="https://metacpan.org/pod/Text::CSV">Text::CSV</a> a pure-Perl implementation</li>
+    <li><a href="https://metacpan.org/pod/Text::CSV_XS">Text::CSV_XS</a> implement in C which makes it a lot faster</li>
+    <li><a href="https://metacpan.org/pod/DBD::CSV">DBD::CSV</a> use SQL statements to access the data</li>
+    <li><a href="https://metacpan.org/pod/Spreadsheet::Read">Spreadsheet::Read</a> a wrapper around Text::CSV and other spreadsheet readers to make your code nicer.</li>
+</ul>
+
+<h2>Related Articles</h2>
+
+<ul>
+    <li><a href="http://perlmaven.com/split-csv-file-into-multiple-files">Split CSV file into multiple small CSV files</a></li>
+    <li><a href="http://perlmaven.com/multiple-command-line-counters">Multiple command line counters with plain TSV text file back-end</a></li>
+    <li><a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">How to read a CSV file using Perl?</a></li>
+    <li><a href="http://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">How to calculate the balance of bank accounts in a CSV file, using Perl?</a></li>
+    <li><a href="http://perlmaven.com/calculate-bank-balance-take-two-dbd-csv">Calculating bank balance, take two: DBD::CSV</a></li>
+    
+    <li><a href="http://perlmaven.com/beginner-perl-maven-process-csv-file">Process CSV file (screencast)</a></li>
+    <li><a href="http://perlmaven.com/beginner-perl-maven-text-csv-xs">Process CSV file using Text::CSV_XS (screencast)</a></li>
+    <li><a href="http://perlmaven.com/beginner-perl-maven-process-csv-file-short-version">Process CSV file short version (screencast)</a></li>
+    <li><a href="http://perlmaven.com/beginner-perl-maven-oneliner-sum-of-csv">One-liner sum of column in CSV</a></li>
+</ul>
+
