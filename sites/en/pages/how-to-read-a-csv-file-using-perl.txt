@@ -26,7 +26,7 @@ Pick the one that matches your needs.
 
 I got a CSV file that looked like this:
 
-<include file="examples/data/simple.csv" >
+<include file="examples/data/simple.csv">
 
 This is a CSV file. In each row there are fields separated with comma.
 
@@ -74,7 +74,7 @@ In our case the field separator character is a comma <hl>,</hl> and not a colon
 
 We can write our script like this:
 
-<include file="examples/read_simple_csv.pl" >
+<include file="examples/read_simple_csv.pl">
 
 If you save this as csv.pl then you will be able to run it as
 <hl>perl csv.pl data.csv</hl> providing the input csv file on the command line.
@@ -88,7 +88,7 @@ Unfortunately at some point you get warnings while running your script.
 
 You open the CSV file and it looks like this:
 
-<include file="examples/data/quoted.csv" >
+<include file="examples/data/quoted.csv">
 
 As you can see the 2nd field in the 3rd row has a comma in the value so the people who wrote the file
 put the whole field in quotes: <hl>"Hofeherke, alma"</hl>. This is totally normal within the "standard"
@@ -109,7 +109,7 @@ can connect to their knowledge.
 
 Here is the code:
 
-<include file="examples/read_quoted_csv.pl" >
+<include file="examples/read_quoted_csv.pl">
 </code>
 
 <hl>Text::CSV</hl> is a 3rd-party extension to Perl. It provides a set of new functionality,
@@ -161,7 +161,7 @@ should be the required number.
 
 There can be further "problems" with the CSV file. For example some fields might contain embedded newlines.
 
-<include file="examples/data/multiline.csv" >
+<include file="examples/data/multiline.csv">
 
 The way we currently handle the CSV file cannot solve this problem but the <a href="https://metacpan.org/pod/Text::CSV">Text::CSV</a>
 module provides a way to solve that too.
@@ -169,7 +169,7 @@ module provides a way to solve that too.
 This example is based on a comment by H.Merijn Brand, the maintainer of the
 <a href="https://metacpan.org/pod/Text::CSV_XS">Text::CSV_XS</a> module:
 
-<include file="examples/read_multiline_csv.pl" >
+<include file="examples/read_multiline_csv.pl">
 
 This changes the whole way we handle the file. Instead of reading manually line-by-line,
 we ask the Text::CSV module to read, what it considers a line. This will let it handle
