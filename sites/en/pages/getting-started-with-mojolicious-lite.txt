@@ -109,12 +109,16 @@ There is a line which is a bit strange. It tells us that we need to set our secr
 <h2>Your secret passphrase needs to be changed!!!</h2>
 
 As explained in
-<a href="http://mojolicious.org/perldoc/Mojolicious/Guides/FAQ#What-does-Your-secret-passphrase-needs-to-be-changed-mean">the documentation</a>, we can do that by calling <hl>app->secret(['My very secret passphrase.']);</hl> just before calling
+<a href="http://mojolicious.org/perldoc/Mojolicious/Guides/FAQ#What-does-Your-secret-passphrase-needs-to-be-changed-mean">the documentation</a>, we can do that by calling <hl>app->secrets(['My very secret passphrase.']);</hl> just before calling
 <hl>app->start;</hl>.
 
 Stop the server by pressing <hl>Ctrl-C</hl> on the console where you see the log messages, start it again by running
 <hl>morbo hello_world.pl</hl>. If you reload the page now and check the log messages, you'll see the warning does not
 show up any more.
+
+The full script looks like thos now:
+
+<include file="examples/mojolicious/lite/hello_world_with_secret.pl">
 
 Of course, if you have a public facing application, you might want to use some other super secret passphrase.
 
@@ -140,7 +144,9 @@ We can even do this while the server is running. When we save the file,
 Now we can reload the <a href="http://localhost:3000/echo">/echo</a> page.
 We are going to see something like this:
 
+
 <img src="/img/mojolicious_lite_echo_form.png" alt="Mojolicious::Lite echo form" />
+
 
 I know this is not extremely exciting, just a regular HTML form, but we are making
 progress which is great!
@@ -153,11 +159,15 @@ We'll see this:
 
 <img src="/img/mojolicious_lite_missing_post_error.png" alt="Mojolicious::Lite missing POST route error" />
 
-We are already familiar with this kind of error pages, but what happened now?
+Again, earlier versions of Mojolicious used to show a much simpler response:
+
+<img src="/img/mojolicious_lite_missing_post_error.png" alt="Mojolicious::Lite missing POST route error" />
+
+We are already familiar with this kind of error page, but what happened now?
 We have two routes declared to <hl>/</hl> and <hl>/echo</hl> but only using the <hl>GET method</hl>. Our
 form was deliberately using <hl>POST method</hl>. 
 
-The point is, that Mojolicious::Lite allows us to define separate routes to each path and to each method.
+The point is, that Mojolicious::Lite allows us to define separate routes to each path and to each HTTP method.
 This provides much finer control to us, the developers.
 
 So let's implement the code that deals with the form submission. Let's add the following code to our
@@ -191,23 +201,5 @@ The result is the text we typed in:
 
 The full code looks like this:
 
-<code lang="perl">
-use Mojolicious::Lite;
-get '/' => { text => 'Hello World' };
-
-get '/echo' => { text => q{
-   <form method="POST"><input name="q"><input type="submit" value="Echo"></form>
-}};
-
-post '/echo' => sub {
-    my $self = shift;
-    $self->render( text => $self->param('q') );
-};
-
-app->secret('My extra secret passphrase.');
-
-app->start;
-</code>
-
-
+<include file="examples/mojolicious/lite/echo.pl">
 
