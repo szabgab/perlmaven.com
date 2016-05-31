@@ -19,34 +19,8 @@ and how to update a document.
 <h2>添加元素</h2>
 
 最简单的例子，集合里加两个元素。
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
 
-use MongoDB ();
-use Data::Dumper qw(Dumper);
-
-my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);
-my $db   = $client->get_database( 'example_' . $$ . '_' . time  );
-
-my $people_coll = $db->get_collection('people');
-
-$people_coll->insert( {
-    name => 'First',
-});
-
-$people_coll->insert( {
-    name => 'Second',
-});
-
-my $people = $people_coll->find;
-while (my $p = $people->next) {
-    print Dumper $p;
-}
-
-$db->drop;
-</code>
+<include file="example/mongodb_insert_two_elements.pl">
 
 <hl>my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);</hl>
 此处用来连接MongoDB服务，该服务以默认端口运行在本机。

@@ -18,34 +18,7 @@ and how to update a document.
 
 The most simple example is inserting two element in a collection.
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-use MongoDB ();
-use Data::Dumper qw(Dumper);
-
-my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);
-my $db   = $client->get_database( 'example_' . $$ . '_' . time  );
-
-my $people_coll = $db->get_collection('people');
-
-$people_coll->insert( {
-    name => 'First',
-});
-
-$people_coll->insert( {
-    name => 'Second',
-});
-
-my $people = $people_coll->find;
-while (my $p = $people->next) {
-    print Dumper $p;
-}
-
-$db->drop;
-</code>
+<include file="example/mongodb_insert_two_elements.pl">
 
 <hl>my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);</hl>
 connects to the MongoDB server running on the same machine at the default port.
@@ -217,8 +190,4 @@ of this example.
 
 The interesting part is that the second document now has both a 'name' and a 'phone'
 field while the first document only has a 'name'.
-
-
-
-
 
