@@ -20,7 +20,7 @@ and how to update a document.
 
 最简单的例子，集合里加两个元素。
 
-<include file="example/mongodb_insert_two_elements.pl">
+<include file="examples/mongodb_insert_two_elements.pl">
 
 <hl>my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);</hl>
 此处用来连接MongoDB服务，该服务以默认端口运行在本机。

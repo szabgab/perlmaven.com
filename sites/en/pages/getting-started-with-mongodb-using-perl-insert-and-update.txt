@@ -18,7 +18,7 @@ and how to update a document.
 
 The most simple example is inserting two element in a collection.
 
-<include file="example/mongodb_insert_two_elements.pl">
+<include file="examples/mongodb_insert_two_elements.pl">
 
 <hl>my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);</hl>
 connects to the MongoDB server running on the same machine at the default port.
