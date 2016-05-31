@@ -1,5 +1,5 @@
 =title perl和MongoDB入门 - 添加，简单的更新操作
-=timestamp 2015-04-27T06:50:01
+=timestamp 2016-05-31T06:50:01
 =indexes MongoDB
 =status show
 =original getting-started-with-mongodb-using-perl-insert-and-update
