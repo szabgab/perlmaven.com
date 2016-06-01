@@ -1,4 +1,4 @@
-=title perl和MongoDB入门 - 添加，简单的更新操作
+=title perl与MongoDB入门 - 简单的添加和更新操作
 =timestamp 2016-05-31T06:50:01
 =indexes MongoDB
 =status show
@@ -10,31 +10,25 @@
 
 =abstract start
 
-<a href="http://www.mongodb.org/">MongoDB</a> is an open-source NoSQL document database.
-In this article we see the basics: How to insert a document in a MongoDB collection
-and how to update a document.
+<a href="http://www.mongodb.org/">MongoDB</a>是一个开源的NoSQL数据库。本文我们将介绍其入门知识：如何在MongoDB集合中添加文档，以及如何更新之。
 
 =abstract end
 
 <h2>添加元素</h2>
 
-最简单的例子，集合里加两个元素。
+下面是最简单的一个例子：往集合里加两个元素。
 
 <include file="examples/mongodb_insert_two_elements.pl">
 
 <hl>my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);</hl>
 此处用来连接MongoDB服务，该服务以默认端口运行在本机。
 
-下面这行代码创建了一个新的数据库。
-<hl>my $db   = $client->get_database( 'example_' . $$ . '_' . time  );</hl>
+下面这行代码创建了一个新的数据库。<hl>my $db   = $client->get_database( 'example_' . $$ . '_' . time  );</hl>
 
 为了避免重名，数据库名由当前进程id<hl>$$</hl>和当前时间<hl>time</hl>组成。
 
-一旦有了数据库实例<hl>$db</hl>，我们就可以获取一个集合，类似于关系型数据库（比如sqlserver, mysql）中的表。
-不过和表不同的是，我们没必要运行sql命令来创建，也不需要表的定义（schema）。<hl>my $people_coll = $db->get_collection('people');</hl>
+一旦有了数据库实例<hl>$db</hl>，我们就可以获取一个集合，类似于关系型数据库（比如sqlserver,mysql）中的表。不过和表不同的是，我们没必要运行sql命令来创建，也不需要表的定义（schema）。<hl>my $people_coll = $db->get_collection('people');</hl>
 
-The next two calls insert data structures (hash references) in the collection.
-In the terminology of MongoDB they are called documents:
 在接下来的两行中，我们往集合里添加了两个元素，这两个元素都是哈希表。MongoDB的叫法是文档（documents）。
 
 <code lang="perl">
@@ -56,7 +50,8 @@ while (my $p = $people->next) {
 }
 </code>
 
-每次迭代都返回一个哈希表，<h1>$p</h1>。用Data::Dumper可以打印其值。
+每次迭代都返回一个哈希表<h1>$p</h1>,用Data::Dumper可以打印其值。
+
 <code>
 $VAR1 = {
           '_id' => bless( {
@@ -72,12 +67,11 @@ $VAR1 = {
         };
 </code>
 
-除了加入的名字外，每个文档还包括了一个特有的<hl>_id</hl>，也叫 <a href="http://docs.mongodb.org/manual/reference/object-id/">ObjectIDd</a>.
-(详情参见<a href="http://docs.mongodb.org/manual/reference/object-id/">规范</a>)
+除了加入的名字外，每个文档还包括了一个特有的<hl>_id</hl>，也叫 <a href="http://docs.mongodb.org/manual/reference/object-id/">ObjectIDd</a>.(详情参见<a href="http://docs.mongodb.org/manual/reference/object-id/">规范</a>)
 
 最后一行<hl>$db->drop;</hl>直接把当前数据库删除了. 
 
-<h2>手动删除数据看</h2>
+<h2>手动删除数据库</h2>
 如果因为某种原因，比如脚本抛了异常，导致数据库没被删除，这时我们也可以手动删除它，这个需要借助于<h1>mongo</h1>命令行。
 
 <code>
@@ -142,11 +136,9 @@ $people_coll->update(
 );
 </code>
 
-<hl>update</hl> 接受两个哈希表参数。第一个<hl>{ name => 'Second'}</hl>选中要更新的文档(类似于sql的where语句)。
-也就是说，挑出name等于“Second”的那个文档。
+<hl>update</hl> 接受两个哈希表参数。第一个<hl>{ name => 'Second'}</hl>选中要更新的文档(类似于sql的where语句)。也就是说，挑出name等于“Second”的那个文档。
 
-第二个参数指定了如何更新文档。 <hl>'$set'</hl> 是一条MongoDB命令，告诉数据库引擎重新设置键值对。<hl>{ phone => '1-123'}</hl> 就是
-新设置的键值对，不管键之前是否存在，该操作都会执行。
+第二个参数指定了如何更新文档。 <hl>'$set'</hl> 是一条MongoDB命令，告诉数据库引擎重新设置键值对。<hl>{ phone => '1-123'}</hl> 就是新设置的键值对，不管键之前是否存在，该操作都会执行。
 
 输出如下：
 <code>
@@ -165,8 +157,7 @@ $VAR1 = {
         };
 </code>
 
-ObjectIds 变了，因为程序重新跑了一次。这个不是重点，关键是第二个文档现在有'name','phone'两个属性了，而第一个文档还是只有
-一个属性'name'。
+ObjectIds 变了，因为程序重新跑了一次。这个不是重点，关键是第二个文档现在有'name','phone'两个属性了，而第一个文档还是只有一个属性'name'。
 
 
 
