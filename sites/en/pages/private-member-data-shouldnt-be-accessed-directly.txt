@@ -74,4 +74,4 @@ If the code is primarily object oriented, especially if it is based on <a href="
 <a href="/moose">Moose</a>, where you don't write your own accessors, then this policy can catch
 code that violates the encapsulation.
 
-
+<img src="/img/private-member-data-shouldnt-be-accessed-directly.png" alt="Accessing private member data directly" >
