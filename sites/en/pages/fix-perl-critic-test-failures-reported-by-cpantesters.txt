@@ -30,7 +30,7 @@ those in our own Perl::Critic rules.
 <h2>Violated extra policies</h2>
 
 At this point I did not go into checking what were these policy violations, but later I check out both the
-<a href="/pro/private-member-data-shouldnt-be-accessed-directly">Private Member Data shouldn't be accessed directly</a> violation
+<a href="/private-member-data-shouldnt-be-accessed-directly">Private Member Data shouldn't be accessed directly</a> violation
 and the 
 <a href="/pro/three-argument-form-of-open-used-and-it-is-not-available-until">Three-argument form of open used and it is not available until perl 5.6.</a>
 violation.

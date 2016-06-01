@@ -27,7 +27,7 @@ In this article we collect <b>all</b> the CPAN distributions related to Perl::Cr
   <li><a href="/jeffrey-thalhammer-perl-critic-and-pinto">Interview with Jeffrey Thalhammer, author of Perl::Critic and Pinto</a></li>
   <li><a href="/move-packages-to-their-own-files">Move packages to their own files - release Pod::Tree 1.21</a> part of the <a href="/becoming-a-co-maintainer">Refactoring and CPAN co-maintainer</a> series.</li>
   <li><a href="/type-checking-with-moo">Type checking with Moo</a> recommends the use of the <a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::ProhibitAccessOfPrivateData">ValuesAndExpressions::ProhibitAccessOfPrivateData</a> policy from <a href="https://metacpan.org/pod/Perl::Critic::Nits">Perl::Critic::Nits</a>.</li>
-  <li><a href="/pro/private-member-data-shouldnt-be-accessed-directly">Private Member Data shouldn't be accessed directly - encapsulation violation</a></li>
+  <li><a href="/private-member-data-shouldnt-be-accessed-directly">Private Member Data shouldn't be accessed directly - encapsulation violation</a></li>
   <li><a href="/pro/require-explicit-importing-of-functions">Always require explicit importing of functions</a></li>
 </ul>
 
