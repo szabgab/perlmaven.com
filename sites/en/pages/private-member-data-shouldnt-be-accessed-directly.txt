@@ -1,4 +1,4 @@
-=title  Private Member Data shouldn't be accessed directly - encapsualtion violation
+=title  Private Member Data shouldn't be accessed directly - encapsulation violation
 =timestamp 2016-06-01T09:30:01
 =indexes Perl::Critic, ValuesAndExpressions::ProhibitAccessOfPrivateData
 =status show
