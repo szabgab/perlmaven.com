@@ -114,6 +114,8 @@ I have even opened a <a href="https://github.com/rjbs/Test-Deep/issues/39">ticke
 my recommended solution is acceptable at all. In any case this little change helped me figuring out the source of the warnings.
 
 
+<h2>Screenshots</h2>
 
+<img src="/img/shots/undef-in-test-deep-regex.png" alt="Test::Deep example">
 
 
