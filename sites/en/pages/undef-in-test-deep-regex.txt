@@ -108,25 +108,7 @@ with the appropriate regex. This expression will only try to run the regex if th
 
 The following script can demonstrate the issue:
 
-<code lang="perl">
-use Test::More;
-use Test::Deep;
-
-plan tests => 1;
-
-my @data = (
-    {
-        name => 'Foo',
-    },
-    {
-        name => undef,
-    },
-);
-
-cmp_deeply \@data, array_each({
-    name => re('^.*$')
-});
-</code>
+<include file="examples/undef_in_test_deep_regex.pl">
 
 I have even opened a <a href="https://github.com/rjbs/Test-Deep/issues/39">ticket</a> with this issue, but I am not sure if
 my recommended solution is acceptable at all. In any case this little change helped me figuring out the source of the warnings.
