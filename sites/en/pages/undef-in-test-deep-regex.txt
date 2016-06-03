@@ -1,7 +1,7 @@
 =title Use of uninitialized value $got in pattern match (m//) at Test/Deep/Regexp.pm line 57.
 =timestamp 2016-06-03T07:30:01
-=indexes Test::Deep
-=status show, array_each, re
+=indexes Test::Deep, array_each, re
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
