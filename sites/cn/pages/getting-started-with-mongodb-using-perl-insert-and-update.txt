@@ -20,8 +20,7 @@
 
 <include file="examples/mongodb_insert_two_elements.pl">
 
-<hl>my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);</hl>
-此处用来连接MongoDB服务，该服务以默认端口运行在本机。
+<hl>my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);</hl>此处用来连接MongoDB服务，该服务以默认端口运行在本机。
 
 下面这行代码创建了一个新的数据库。<hl>my $db   = $client->get_database( 'example_' . $$ . '_' . time  );</hl>
 
@@ -50,7 +49,7 @@ while (my $p = $people->next) {
 }
 </code>
 
-每次迭代都返回一个哈希表<h1>$p</h1>,用Data::Dumper可以打印其值。
+每次迭代都返回一个哈希表<hl>$p</hl>, 用Data::Dumper可以打印其值。
 
 <code>
 $VAR1 = {
@@ -72,7 +71,7 @@ $VAR1 = {
 最后一行<hl>$db->drop;</hl>直接把当前数据库删除了. 
 
 <h2>手动删除数据库</h2>
-如果因为某种原因，比如脚本抛了异常，导致数据库没被删除，这时我们也可以手动删除它，这个需要借助于<h1>mongo</h1>命令行。
+如果因为某种原因，比如脚本抛了异常，导致数据库没被删除，这时我们也可以手动删除它，这个需要借助于<hl>mongo</hl>命令行。
 
 <code>
 $ mongo
