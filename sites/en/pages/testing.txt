@@ -17,8 +17,9 @@ A series of articles about testing, and test automation using Perl.
 
 <ol>
   <li><a href="/tap-test-anything-protocol">TAP - Test Anything Protocol</a></li>
-  <li><a href="/testing-a-simple-perl-module">Testing a simple Perl module</a></li>
-  <li><a href="/test-for-warnings-in-a-perl-module">Test for warnings in a Perl Module</a></li>
+  <li><a href="/testing-a-simple-perl-module">Testing a simple Perl module (Test::Simple)</a></li>
+  <li><a href="/test-for-warnings-in-a-perl-module">Test for warnings in a Perl Module (__WARN__, Test::Warn)</a></li>
+  <li><a href="/pro/testing-a-tree-data-structure-in-perl">Testing a tree data structure in Perl (Test::Deep)</a></li>
 </ol>
 
 <h2>Interviews</h2>
