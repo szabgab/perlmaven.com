@@ -25,7 +25,7 @@ cmp_deeply \@data, array_each({
     fname => re('^.*$'),
     lname => re('^.*$'),
     ...
-    email => re('^.*$')
+    email => re('^.*$'),
     address => re('^.*$')
 });
 </code>
