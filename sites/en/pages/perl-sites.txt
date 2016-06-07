@@ -61,6 +61,8 @@ of (besides the Perl Maven site you are reading) where the author actually expre
 and <a href="http://www.programmingperl.org/">Programming Perl</a>, the sites maintained by brian d foy and branded to the respective books he wrote,
 are useful for keeping up with new Perl features, as well as reading deeply analyzes about some existing functionality.
 
+<a href="http://mapofcpan.org/">Map of CPAN</a> Namespaces as tiles.
+
 <h2>Specialized sites</h2>
 
 <a href="http://cpxxxan.barnyard.co.uk/">cpXXXan</a> snapshots of CPAN for specific versions of Perl.
