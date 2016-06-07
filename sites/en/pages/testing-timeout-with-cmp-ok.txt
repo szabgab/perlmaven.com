@@ -9,8 +9,10 @@
 
 =abstract start
 
-As mentioned earlier, the <hl>is()</hl> function compares the values using string-<hl>eq</hl> which is correct in 99% of the cases, but
-if you'd like to compare the values with numerical-<hl>==</hl> you can do it using the <hl>cmp_ok</hl>.
+As mentioned earlier in the <a href="/testing">testing series</a>, the <hl>is()</hl> function provided by
+<a href="https://metacpan.org/pod/Test::More">Test::More</a> compares the values using string-<hl>eq</hl> which is correct in 99% of the cases.
+If you'd like to compare the values with the numerical <hl>==</hl> operator you can do it using the <hl>cmp_ok</hl>
+which is also provided by <a href="https://metacpan.org/pod/Test::More">Test::More</a> .
 
 More than that, with <hl>cmp_ok</hl> you can compare the two values with any operator, so you can check if the actual value is,
 let's say, smaller than an expected value.
@@ -18,6 +20,11 @@ let's say, smaller than an expected value.
 For example when measuring timeout, we cannot expect the result to be exact on the millisecond.
 
 =abstract end
+
+The <hl>cmp_ok</hl> function can get 3 or 4 parameters. <hl>cmp_ok $actual, OPERATOR, $expected, TITLE</hl>.
+The TITLE is optional as in most of the other functions provided by Test::More. The OPERATOR can be any of the
+binary operators. e.g. <hl>==</hl> or <hl>gt</hl>.  <hl>$actual</hl> is the actual value and <hl>$expected</hl>
+something we compare it to.
 
 <screencast file="/media/videos/testing-timeout-with-cmp-ok" youtube="zZ6XmbTjINs" />
 
