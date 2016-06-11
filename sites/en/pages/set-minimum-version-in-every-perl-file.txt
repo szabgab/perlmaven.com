@@ -1,0 +1,85 @@
+=title Set minimum version number in every Perl file
+=timestamp 2016-06-11T09:30:01
+=indexes Perl::Critic, Compatibility::PerlMinimumVersionAndWhy
+=status show
+=books cpan_co_maintainer
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+After <a href="/fix-perl-critic-test-failures-reported-by-cpantesters">hiding the Perl Critic issues reported by the CPAN Testers</a>
+I wanted to check what were those?
+
+One of them was <a href="/private-member-data-shouldnt-be-accessed-directly">Private Member Data shouldn't be accessed directly</a>
+and the other one <a href="/pro/three-argument-form-of-open-used-and-it-is-not-available-until">Three-argument form of open used and it is not available until perl 5.6.</a>
+
+The second policy lead me to the <a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::PerlMinimumVersionAndWhy">Compatibility::PerlMinimumVersionAndWhy</a>
+policy which seemed to be useful. It analyzes the source code and reports features that are only available in recent versions of perl.
+For example the <a href="/what-is-new-in-perl-5.10--say-defined-or-state">defined-or (<hl>//</hl>)</a> appeared in perl 5.10.
+
+The policy requires us to explicitly state the minimal version of perl in each one of our files.
+
+=abstract end
+
+I know, I've <a href="/use-strict-use-warnings-no-diagnostics">removed the use use 5.005 statement</a> earlier
+and now I am adding similar use-statements. I am not really convinced that adding the minimum version to
+every file is that useful, but that allows me to use this policy.
+
+The question:
+
+<h2>How to use the Compatibility::PerlMinimumVersionAndWhy policy?</h2>
+
+After installing the <a href="https://metacpan.org/release/Perl-Critic-Pulp">Perl-Critic-Pulp</a> distribution I could run:
+
+<code>
+perlcritic --single-policy Compatibility::PerlMinimumVersionAndWhy .
+</code>
+
+that generated quite a few lines, but all of them were versions of these lines:
+
+<code>
+[Compatibility::PerlMinimumVersionAndWhy] _perl_5006_pragmas requires 5.006 at line 2, column 1.
+[Compatibility::PerlMinimumVersionAndWhy] _Pulp__for_loop_variable_using_my requires 5.004 at line 13, column 1.
+[Compatibility::PerlMinimumVersionAndWhy] _Pulp__open_my_filehandle requires 5.006 at line 52, column 2.
+[Compatibility::PerlMinimumVersionAndWhy] _three_argument_open requires 5.006 at line 52, column 2.
+</code>
+
+That means adding <hl>use 5.006;</hl> to all the files will silence this policy, but before we do that, let's see how
+can we convince <hl>perlcritic</hl> to use this policy.
+
+In the <hl>.perlcriticrc</hl> file we need to enable the <hl>compatibility</hl> theme as well:
+
+<code>
+theme = core + compatibility
+</code>
+
+That's not enough because the severity level of this specific policy was quite low. I think it was 2.
+We had to tell perlcritic to use a higher severity:
+
+<code>
+[Compatibility::PerlMinimumVersionAndWhy]
+severity = 5
+</code>
+
+that's fine, and now <hl>perlcritic .</hl> already started to report the validations,
+but now it also reported about other violations. I had to turn the one I found off:
+
+<code>
+[-Compatibility::ProhibitThreeArgumentOpen]
+</code>
+
+Lastly, in order to get Travis-CI run these tests too I had to add
+
+<code>
+  - cpanm --notest Perl::Critic::Policy::Compatibility::PerlMinimumVersionAndWhy
+</code>
+
+to the <hl>.travis.yml</hl> file which I've actually failed at first, hence I had
+to make a second commit fixing <hl>.travis.yml</hl>. 
+
+
+<a href="https://github.com/szabgab/Pod-Tree/commit/72ffc7db0e1ad0f379050a5186055a0fef9fe6b5">commit: set minimum version number in every perl file</a>
+
+<a href="https://github.com/szabgab/Pod-Tree/commit/e0ab83ff25dce044c45f69ac47c62412a99f1b2e">commit: proper module name (in travis.yml file)</a>

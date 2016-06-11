@@ -34,10 +34,12 @@ refactoring the code and even accepting contributions from other people.
   <li><a href="/improve-kwalitee">Check CPANTS (Kwalitee)</a></li>
   <li><a href="/converting-indirect-calls">Eliminate more of the indirect calls</a></li>
   <li><a href="/pro/fixing-test-failure-on-windows">Fixing test failure on Windows - Properly quoting regexes - Accepting GitHub pull request</a></li>
+   <li><a href="/set-minimum-version-in-every-perl-file">Set minimum version number in every Perl file</a></li>
 
 
   <li>Make the Changes file standard compliant</li>
   <li>Eliminate extensive <a href="http://perlcritic.tigris.org/ds/viewMessage.do?dsForumId=4230&dsMessageId=3119165">use of short-circuit</a>. For example <hl>is_ok $obj and $node = $obj, last;</hl></li> 
   <li>Write tests to check round-trip and what might be missing from the round-trip regenerating the original POD.</li>
 </ol>
+
 
