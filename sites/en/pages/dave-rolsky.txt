@@ -22,10 +22,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/d-K_uoIrUKQ" frameborder="0" allowfullscreen></iframe>
 
-<div id="downloads">Download:
-<a href="/media/audio/dave-rolsky.mp3">mp3</a> (18 Mb)
-</div>
-
+<podcast>
 
 <style>
 .transcript              { }                           /* Container for transcription  */

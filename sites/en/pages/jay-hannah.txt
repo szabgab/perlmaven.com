@@ -17,9 +17,7 @@ Interview with Jay Hannah, who has been the administrator of the central Perl Mo
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/0m5E2CZmCww" frameborder="0" allowfullscreen></iframe>
 
-<div id="downloads">Download:
-<a href="/media/audio/jay-hannah.mp3">mp3</a> (23 Mb)
-</div>
+<podcast>
 
 <div id="text">
 <ul>

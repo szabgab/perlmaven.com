@@ -22,9 +22,7 @@ He also tells us about is upcoming course on Git.
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/Tsy9m_f-op8" frameborder="0" allowfullscreen></iframe>
 
-<div id="downloads">Download:
-<a href="/media/audio/michael-schwern.mp3">mp3</a> (23Mb)
-</div>
+<podcast>
 
 <div id="text">
 Show notes:

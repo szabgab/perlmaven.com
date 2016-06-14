@@ -17,9 +17,7 @@ A biologist turned sysadmin, turned to DevOps engineer, turned to programmer, te
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/Fb0A89T15MY" frameborder="0" allowfullscreen></iframe>
 
-<div id="downloads">Download:
-<a href="/media/audio/john-anderson-genehack.mp3">mp3</a> (19Mb)
-</div>
+<podcast>
 
 <div id="text">
 <h2>Show notes</h2>

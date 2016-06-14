@@ -20,10 +20,7 @@ He also gave a very surprising answer to the question: <b>Why would you want to 
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/4i2phyrKQCQ" frameborder="0" allowfullscreen></iframe>
 
-<div id="downloads">Download:
-<a href="/media/audio/tadeusz-sosnierz.mp3">mp3</a> (18Mb)
-</div>
-
+<podcast>
 
 <div id="text">
 <ul>

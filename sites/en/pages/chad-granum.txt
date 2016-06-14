@@ -24,9 +24,7 @@ interesting CPAN modules.  (31.06 min)
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/yjZiR03zckk" frameborder="0" allowfullscreen></iframe>
 
-<div id="downloads">Download:
-<a href="/media/audio/chad-granum.mp3">mp3</a> (29 Mb)
-</div>
+<podcast>
 
 <ul>
   <li>Chad Granum on <a href="https://metacpan.org/author/EXODIST">CPAN</a>, and on <a href="https://github.com/exodist">Github</a>.</li>

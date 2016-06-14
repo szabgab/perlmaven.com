@@ -26,10 +26,7 @@ He is also the joint owner of a small bootstrapped Perl-based start-up company.
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/GOK8lpiqFMY" frameborder="0" allowfullscreen></iframe>
 
-<div id="downloads">Download:
-<a href="/media/audio/neil-bowers.mp3">mp3</a> (39 Mb)
-</div>
-
+<podcast>
 
 <ul>
 <li><a href="http://neilb.org/">The blog of Neil Bowers</a> "running" on his own, not-yet-published static blog engine. (<a href="https://metacpan.org/author/NEILB">NEILB on CPAN</a>.)</li>

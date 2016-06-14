@@ -21,10 +21,7 @@ a prototype of an Ultra Modern Perl 5, but how did he get there from Art school?
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/shu-bVimOpM" frameborder="0" allowfullscreen></iframe>
 
-<div id="downloads">Download:
-<a href="/media/audio/stevan-little.mp3">mp3</a> (23Mb)
-</div>
-
+<podcast>
 
 <div id="text">
 <h2>Show notes</h2>
