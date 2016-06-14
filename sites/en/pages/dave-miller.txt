@@ -23,9 +23,7 @@ The interview is 38:31 min long.
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/T9sMy7ZxxFY" frameborder="0" allowfullscreen></iframe>
 
-<div id="downloads">Download:
-<a href="/media/audio/dave-miller.mp3">mp3</a> (36 Mb)
-</div>
+<podcast>
 
 <h2>Notes</h2>
 
