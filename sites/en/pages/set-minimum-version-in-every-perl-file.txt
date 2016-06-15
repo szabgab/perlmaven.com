@@ -13,7 +13,7 @@ After <a href="/fix-perl-critic-test-failures-reported-by-cpantesters">hiding th
 I wanted to check what were those?
 
 One of them was <a href="/private-member-data-shouldnt-be-accessed-directly">Private Member Data shouldn't be accessed directly</a>
-and the other one <a href="/pro/three-argument-form-of-open-used-and-it-is-not-available-until">Three-argument form of open used and it is not available until perl 5.6.</a>
+and the other one <a href="/three-argument-form-of-open-used-and-it-is-not-available-until">Three-argument form of open used and it is not available until perl 5.6.</a>
 
 The second policy lead me to the <a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::PerlMinimumVersionAndWhy">Compatibility::PerlMinimumVersionAndWhy</a>
 policy which seemed to be useful. It analyzes the source code and reports features that are only available in recent versions of perl.

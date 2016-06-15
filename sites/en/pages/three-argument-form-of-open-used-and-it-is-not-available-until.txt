@@ -1,0 +1,128 @@
+=title Three-argument form of open used and it is not available until perl 5.6.  
+=timestamp 2016-06-15T07:30:01
+=indexes Perl::Critic, Compatibility::ProhibitThreeArgumentOpen, Compatibility::PerlMinimumVersionAndWhy
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+The <a href="https://metacpan.org/release/Perl-Critic-Compatibility">Perl-Critic-Compatibility</a> distributions
+provides an additional policy for <a href="/perl-critic">Perl::Critic</a> called
+<a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::ProhibitThreeArgumentOpen">Compatibility::ProhibitThreeArgumentOpen</a>.
+
+If your code violates it you'll get a message:
+
+<pre>
+Three-argument form of open used at ...  Three-argument open is not available until perl 5.6.
+</pre>
+
+but I think this is mostly a distraction.
+
+=abstract end
+
+Normally you should use <a href="/always-use-3-argument-open">use 3-argument open</a>, but that
+does not work on perl before version 5.6 came out in 2000. If you have an environment where you need
+to use an older version of Perl, I'd suggest you run away. I am not sure what an older version of perl would do
+if it encountered a 3-argument open. Would in give a syntax error or would in misunderstand it? Probably the former
+so you don't really need a Perl::Critic policy for it.
+
+Nevertheless this policy exists, and if you are not careful, and someone runs perl critic on your code with this
+module being installed you'll get a report. Just as <a href="/fix-perl-critic-test-failures-reported-by-cpantesters">I did</a>.
+
+
+<h2>Example</h2>
+
+Let's see an example that will trigger this report:
+
+<include file="examples/three_argument_open.pl">
+
+If I run
+
+<code>
+$ perlcritic --single-policy Compatibility::ProhibitThreeArgumentOpen three_argument_open.pl 
+</code>
+
+I'll get:
+
+<pre>
+Three-argument form of open used at line 2, column 1.  Three-argument open is not available until perl 5.6.  (Severity: 5)
+Three-argument form of open used at line 4, column 1.  Three-argument open is not available until perl 5.6.  (Severity: 5)
+</pre>
+
+Using <a href="/beginner-perl-maven-old-style-open">old-style open</a> is out of the question, so how could we
+make sure we don't get this report?
+
+There are a number of ways to <a href="/fix-perl-critic-test-failures-reported-by-cpantesters">solve the report problem</a>
+in the generic case, but in the specific case we can actually do better.
+
+We can declare in the code that we require a version of perl which is version 5.6 or later.
+
+If we add
+
+
+<code lang="perl">
+use 5.006;
+</code>
+
+or if we require some later version of Perl:
+
+<code lang="perl">
+use 5.010;
+</code>
+
+then we won't get the above policy violation report.
+
+Having the minimum version number declared early in the code is actually a good idea.
+It will help you avoid needing to deal with reports about syntax errors when someone
+runs your code on a version of perl older than what you were expecting.
+
+<h2>Setting minimum version</h2>
+
+The requirement of a minimum version of perl for 3-argument open is just one special case among
+many cases when certain constructs require a minimum version of perl.
+
+There is another <a href="/perl-critic">Perl::Critic</a> policy that will check the code for
+any such violation, and will report what is the minimum version of perl needed for a specific piece
+of code.
+
+The policy is called 
+<a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::PerlMinimumVersionAndWhy">Compatibility::PerlMinimumVersionAndWhy</a>
+and it is part of the <a href="https://metacpan.org/release/Perl-Critic-Pulp">Perl-Critic-Pulp</a> distribution.
+
+If we run 
+
+<code>
+$ perlcritic --single-policy Compatibility::PerlMinimumVersionAndWhy three_argument_open.pl 
+</code>
+
+We'll get the following report:
+
+<code>
+_Pulp__open_my_filehandle requires 5.006 at line 2, column 1.  (no explanation).  (Severity: 2)
+_three_argument_open requires 5.006 at line 2, column 1.  (no explanation).  (Severity: 2)
+</code>
+
+It explains which construct in your code set which minimum requirements.
+
+Including
+
+<code lang="perl">
+use 5.006;
+</code>
+
+will silence this policy as well.
+
+
+<h2>Conclusion</h2>
+
+I don't recommend the use of the 
+<a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::ProhibitThreeArgumentOpen">Compatibility::ProhibitThreeArgumentOpen</a>
+policy, but I recommend the 
+<a href="https://metacpan.org/pod/Perl::Critic::Policy::Compatibility::PerlMinimumVersionAndWhy">Compatibility::PerlMinimumVersionAndWhy</a>
+and the inclusion of <a href="/set-minimum-version-in-every-perl-file">minimum version numbers in your source code</a>.
+
+
+
+
