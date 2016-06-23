@@ -112,7 +112,7 @@ if ($age >= 18) {
 }
 </code>
 
-Perl allows to add addition if-statements, bot in the if-block and in the else-block.
+Perl allows to add addition if-statements, both in the if-block and in the else-block.
 
 Note, the code inside the internal blocks is further indented to the right with another 4 spaces.
 
