@@ -29,15 +29,15 @@ We have the <hl>MyConf.pm</hl> file with the following content:
 <include file="examples/singleton-moo/MyConf.pm">
 
 For now it only receives a filename, the name of the configuration file it is supposed
-to read, but we don't actually read the file. Too keep the example small.
+to read, but to keep the example small we don't actually read the file. 
 
 Our "application" code looks like this:
 
 <include file="examples/singleton-moo/application.pl">
 
-Instead of calling <hl>new<hl> as the constructor, we must call the
-<hl>instance</hl> method. For the first call it behaves exactly the
-same as the <hl>new</hl> method would, but when we call it again it
+Instead of calling <hl>new</hl> as the constructor, we must call the
+<hl>instance</hl> method. For the first call it behaves exactly 
+as the <hl>new</hl> method would, but when we call it again it
 disregards the parameters and returns the exact same object as earlier.
 
 Calling <hl>new</hl> does not have any special behavior. The output of
@@ -70,7 +70,7 @@ an attribute called <hl>conf</hl>. This is doable, but it requires a lot of para
 
 Another solution is to have a global variable (e.g. <hl>our $conf = MyConf->new(...)</hl> in the
 main script and then access it via <hl>$main::conf</hl> from every part of the code. This kind of
-package global variable can work, but it does not look good, and in every place we now have
+<b>package global variable</b> can work, but it does not look good. In every place we now have
 to hard-code the fully qualified name of the variable. Soon we'll find a case (for example a test script)
 that needs to work differently.
 
@@ -87,50 +87,58 @@ the configuration file, and without duplicating the configuration data in the me
 <h2>Loading the content of the configuration file</h2>
 
 Getting back to the actual example, it is not enough to have the name of the configuration file
-in the <hl>MyConf</hl> class. We would also like to load the content of the configuration file.
+passed to the <hl>MyConf</hl> class. We would also like to load the content of the configuration file.
 
 In this case we assume the configuration file is a simple
 <a href="http://en.wikipedia.org/wiki/INI_file">INI file</a> with sections and key-value pairs:
 
-<code>
-[section A]
-key=value
-
-[section B]
-key=value
-</code>
+<include file="examples/singleton-moo-config/config.ini">
 
 We can load that using the <a href="https://metacpan.org/pod/Config::Tiny">Config::Tiny</a> module
-and we can do it in a <hl>BUILD</hl> subroutine. This means the configuration file will be loaded
-the first time we call <hl>instance</hl> method when we create the object in the main script.
-Later calls to <hl>instance</hl> won't call the <hl>BUILD</hl> method any more.
+and we can do it in a <hl>BUILD</hl> subroutine of Moo. This means the configuration file will be loaded
+the first time we call <hl>instance</hl> method where we are expected to pass the <hl>file => 'config.ini'</hl>
+parameters when we create the object in the main script or setup subroutine.
+
+Later calls to <hl>instance</hl> won't call the <hl>BUILD</hl> method any more and thus won't expect to have
+a <hl>file => ...</hl> parameter, nor will it even look at it.
+
+<include file="examples/singleton-moo-config/MyConf.pm">
+
+In the main script we call:
 
 <code lang="perl">
-package MyConf;
-use Moo;
-with 'MooX::Singleton';
-
-use Config::Tiny;
-
-has file => (is => 'ro', required => 1);
-has conf => (is => 'rw');
-
-sub BUILD {
-    my ($self) = @_;
-
-    my $conf = Config::Tiny->read($self->file, 'utf8')
-	    or die sprintf "Could not get configuration from '%s'", $self->file;
-    $self->conf($conf);
-}
-
-1;
+MyConf->instance( file => 'conf.ini' );
 </code>
 
-Then anywhere in our application we can have the following call to
+then anywhere in our application we can have the following call to
 fetch the configuration values:
 
 <code lang="perl">
 my $c = MyConf->instance();
 my $a_value = $c->conf->{'section A'}{key};
+</code>
+
+See the main script:
+
+<include file="examples/singleton-moo-config/application.pl">
+
+and two modules used by that script. In <b>ModuleA</b> we call
+<hl>instance</hl> without passing any parameter:
+
+<include file="examples/singleton-moo-config/ModuleA.pm">
+
+In <b>ModuleB</b> we pass a new <hl>file => ...</hl> parameter,
+but it is disregarded by the code. The <hl>BUILD</hl> function is not
+even called:
+
+<include file="examples/singleton-moo-config/ModuleB.pm">
+
+Running that script we get the following output:
+
+<code>
+$ perl application.pl
+BUILD called
+Foo
+Foo
 </code>
 
