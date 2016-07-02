@@ -26,14 +26,14 @@ extension of <a href="https://metacpan.org/pod/Moo">Moo</a>.
 
 We have the <hl>MyConf.pm</hl> file with the following content:
 
-<include file="examples/singleton-moo/MyConf.pm" />
+<include file="examples/singleton-moo/MyConf.pm">
 
 For now it only receives a filename, the name of the configuration file it is supposed
 to read, but we don't actually read the file. Too keep the example small.
 
 Our "application" code looks like this:
 
-<include file="examples/singleton-moo/application.pl" />
+<include file="examples/singleton-moo/application.pl">
 
 Instead of calling <hl>new<hl> as the constructor, we must call the
 <hl>instance</hl> method. For the first call it behaves exactly the
