@@ -26,43 +26,14 @@ extension of <a href="https://metacpan.org/pod/Moo">Moo</a>.
 
 We have the <hl>MyConf.pm</hl> file with the following content:
 
-<code lang="perl">
-package MyConf;
-use Moo;
-with 'MooX::Singleton';
-
-has file => (is => 'ro', required => 1);
-
-1;
-</code>
+<include file="examples/singleton-moo/MyConf.pm" />
 
 For now it only receives a filename, the name of the configuration file it is supposed
 to read, but we don't actually read the file. Too keep the example small.
 
 Our "application" code looks like this:
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-use MyConf;
-
-my $c = MyConf->instance( file => 'conf.ini' );
-say $c->file;
-
-my $d = MyConf->instance( file => 'data.ini' );
-say $d->file;
-
-my $w = MyConf->instance();
-say $w->file;
-
-my $o = MyConf->new( file => 'other.ini' );
-say $o->file;
-
-my $z = MyConf->new( file => 'zorg.ini' );
-say $z->file;
-</code>
+<include file="examples/singleton-moo/application.pl" />
 
 Instead of calling <hl>new<hl> as the constructor, we must call the
 <hl>instance</hl> method. For the first call it behaves exactly the
