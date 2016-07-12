@@ -284,5 +284,5 @@ we can let the child save the results in a file and the parent can read
 the file after the child terminates.
 
 We will see it in another article:
-<a href="/pro/speed-up-calculation-by-running-in-parallel">Speed up calculation by running in parallel</a>
+<a href="/speed-up-calculation-by-running-in-parallel">Speed up calculation by running in parallel</a>
 
