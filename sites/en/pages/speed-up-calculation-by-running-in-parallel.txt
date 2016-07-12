@@ -9,7 +9,7 @@
 =abstract start
 
 In this example we have a bunch of numbers. We need to make some heavy calculation on each number (using our <hl>calc</hl> function),
-and then collect the results in a hash where the keys are the original numbers, the values are the results.
+and then collect the results in a hash where the keys are the original numbers and the values are the results.
 
 =abstract end
 
@@ -18,7 +18,7 @@ For the sake of our example the "heavy computation" is generating and summing up
 <h2>The linear solution</h2>
 
 This is quite simple to do in linear code. We just need to iterate over the elements of the original array that holds the
-input numbers, call the <hl>calc</hl> function on each one of them. When the function is done it returns the result that we
+input numbers and call the <hl>calc</hl> function on each one of them. When the function is done it returns the result that we
 can then assign to the appropriate element in the hash.
 
 <include file="examples/calc_no_fork.pl">
@@ -46,12 +46,12 @@ my computer is fully used.
 
 <img src="/img/calc_no_fork.png" title="CPU load when running linear">
 
-I think the reason is that non of them is fully used is that the operating system moves the process around form CPU to CPU, but I am not 100% sure.
+I think the reason that none of them is fully used is that the operating system moves the process around form CPU to CPU, but I am not 100% sure in this.
 
 <h2>Using fork</h2>
 
 In order to allow the computer to better utilize all its resources we could use either <hl>threads</hl> or <a href="/fork">fork</a>.
-As <hl>threads</hl> are not a recommended technique in Perl we opt to use <hl>fork</hl> as described in the article on
+As <hl>threads</hl> are <a href="https://metacpan.org/pod/threads#WARNING">not a recommended technique in Perl</a> we opt to use <hl>fork</hl> as described in the article on
 <a href="http://perlmaven.com/fork">Using fork to spread load to multiple cores</a>. The problem, as it is also mentioned at the end of
 that article is that forked processes don't have shared memory, so the forked process cannot simple write back to the common <hl>%results</hl>
 hash. That's where the module <a href="https://metacpan.org/pod/Parallel::ForkManager">Parallel::ForkManager</a> comes into play.
@@ -67,7 +67,7 @@ The code starts with the creation of the Parallel::ForkManager object and settin
 my $pm = Parallel::ForkManager->new($forks);
 </code>
 
-then we create an anonymous function (a <hl>sub</hl> without a name) and pass it to the <hl>run_on_finish</hl> method of Parallel::ForkManager.
+Then we create an anonymous function (a <hl>sub</hl> without a name) and pass it to the <hl>run_on_finish</hl> method of Parallel::ForkManager.
 This function will be called once for each child process immediately as the child process terminates. It receives a number of parameters, but the
 one that is interesting to us now is the 6th, the last parameter which we assigned to the <hl>$data_structure_reference</hl> variable.
 
@@ -90,13 +90,13 @@ For each iteration we call <hl>my $pid = $pm->start and next;</hl> This will try
 a new fork. 
 If it is successful then at this point two processes will continue to run almost exactly the same way:
 the value returned by the <hl>start</hl> method is assigned to <hl>$pid</hl>.
-There is however a small difference.
+There is however a small difference in the two processes.
 
-In the parent process, this value is going to be the process ID of the child process, a non-zero number,
+In the <b>parent process</b>, this value is going to be the process ID of the child process, a non-zero number,
 and therefore the right-hand side of the <hl>and</hl> boolean operator
 will be evaluated and the main process will go to the <hl>next</hl> iteration of the <hl>foreach</hl> loop.
 
-In the child process the value returned by <hl>start</hl> will be 0. Which is false. Which means the right-hand side
+In the <b>child process</b> the value returned by <hl>start</hl> will be 0. Which is false. Which means the right-hand side
 of the <hl>and</hl> operator will not be executed. In the child process the next evaluated statement will be the
 <hl>calc($q);</hl>. While the child process is calculating using one of the CPUs of the computer,
 the main process can run using the other CPU and it can create more child-processes.
@@ -140,7 +140,7 @@ At the same time <hl>htop</hl> shows that all the CPUs are saturated.
 <img src="/img/calc_fork_manager.png" title="CPU load when running with Parallel::ForkManager">
 
 
-In some other measurements I've see a 3-time speedup, but I think you can't expect anything better with a 4-core machine.
+In some other measurements I've seen a 3-time speedup, but I think you can't expect anything better with a 4-core machine.
 After all there are many other tasks running in the system, so we don't really have 4 times more free CPU power than
 earlier, and the whole forking and managing the communication has some overhead.
 
@@ -148,7 +148,7 @@ earlier, and the whole forking and managing the communication has some overhead.
 <h2>Combined example</h2>
 
 Just in case you'd like to tweak the calc() function and would like to further experiment with this code,
-I've included a version of the two script combined together. If you run it without any parameter
+I've included a version of the two scripts combined together. If you run it without any parameter
 it will run the linear version. If you run it with any positive number, it will use that many parallel child processes.
 
 <include file="examples/calc_fork_manager_full.pl">
