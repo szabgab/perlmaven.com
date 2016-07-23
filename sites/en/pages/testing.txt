@@ -41,7 +41,7 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/todo-testing-a-bug">TODO - testing a bug or a future feature</a></li>
   <li><a href="/using-like-to-test-without-exact-values">Using like to test without exact values</a></li>
   <li><a href="/testing-timeout-with-cmp-ok">Testing timeout with cmp_ok</a></li>
-  <li><a href="/pro/comparing-complex-data-structures-with-is-deeply">Comparing complex data-structures using is_deeply</a></li>
+  <li><a href="/comparing-complex-data-structures-with-is-deeply">Comparing complex data-structures using is_deeply</a></li>
   <li><a href="/pro/done-testing">Forget your plan, just call done_testing</a></li>
   <li><a href="/pro/multiple-expected-values">	Multiple expected values - testing dice</a></li>
   <li><a href="/pro/is-any-to-test-multiple-expected-values">Implementing 'is_any' to test multiple expected values</a></li>

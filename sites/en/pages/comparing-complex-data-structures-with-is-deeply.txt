@@ -1,0 +1,297 @@
+=title Comparing complex data-structures using is_deeply
+=timestamp 2016-07-23T09:30:01
+=indexes Test::More, is_deeply
+=status show
+=tags screencast
+=books testing
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+So far we compared single scalar values to some expected value. What if your function returns an array, a hash, or a multi-dimensional
+data structure consisting of lots of arrays and hashes? How can you compare that to some expected data structure?
+
+<a href="https://metacpan.org/pod/Test::More">Test::More</a> provides the <hl>is_deeply</hl> function for this.
+
+=abstract end
+
+<screencast file="/media/videos/comparing-complex-data-structures-with-is-deeply" />
+
+We have a file called <hl>MyTools.pm</hl> (In order to let you try the example, the source code of this module is at the end of the article.).
+and that module has two public functions given a number $N <hl>fibo($N)</hl> will return the N-the number in the
+<a href="http://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci series</a>, and the function <hl>fibonacci($N)</hl> will return
+an array reference of the first N element in the series.
+
+As the series is expect to be 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 we can test the <hl>fib</hl> function easily:
+
+We have the following code in <hl>fib.t</hl> in the same directory where MyTools.pm is found:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use Test::More tests => 5;
+
+use MyTools;
+
+is fibo(1), 1, 'fib 1';
+is fibo(2), 1, 'fib 2';
+is fibo(3), 2, 'fib 3';
+is fibo(4), 3, 'fib 4';
+is fibo(5), 5, 'fib 5';
+</code>
+
+Then running <hl>prove fib.t</hl> will print:
+
+<code>
+fib.t .. 1/5 
+#   Failed test 'fib 5'
+#   at fib.t line 12.
+#          got: '7'
+#     expected: '5'
+# Looks like you failed 1 test of 5.
+fib.t .. Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/5 subtests 
+
+Test Summary Report
+-------------------
+fib.t (Wstat: 256 Tests: 5 Failed: 1)
+  Failed test:  5
+  Non-zero exit status: 1
+Files=1, Tests=5,  0 wallclock secs ( 0.04 usr  0.00 sys +  0.12 cusr  0.01 csys =  0.17 CPU)
+Result: FAIL
+</code>
+
+I added a bug to the function on purpose so we can see how failures are reported.
+
+This was the easy case as we had to compare only scalar values.
+
+
+<h2>is_deeply</h2>
+
+Testing the <hl>fibonacci()</hl> function is the more interesting part. It return an ARRAY-reference.
+That's the actual-value. The expected value is also an array reference (in square brackets!) and
+we use the <hl>is_deeply</hl> function to compare them.
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use Test::More tests => 5;
+
+use MyTools;
+
+is_deeply fibonacci(1), [1],              'fibonacci 1';
+is_deeply fibonacci(2), [1, 1],           'fibonacci 2';
+is_deeply fibonacci(3), [1, 1, 2],        'fibonacci 3';
+is_deeply fibonacci(4), [1, 1, 2, 3],     'fibonacci 4';
+is_deeply fibonacci(5), [1, 1, 2, 3, 5],  'fibonacci 5';
+</code>
+
+
+Running <hl>prove fibonacci.t</hl> will give the following result:
+
+<code>
+fibonacci.t .. 1/5 
+#   Failed test 'fibonacci 5'
+#   at fibonacci.t line 12.
+#     Structures begin differing at:
+#          $got->[2] = '4'
+#     $expected->[2] = '2'
+# Looks like you failed 1 test of 5.
+fibonacci.t .. Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/5 subtests 
+
+Test Summary Report
+-------------------
+fibonacci.t (Wstat: 256 Tests: 5 Failed: 1)
+  Failed test:  5
+  Non-zero exit status: 1
+Files=1, Tests=5,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.12 cusr  0.01 csys =  0.16 CPU)
+Result: FAIL
+</code>
+
+Here we can see that the test in line 12 called 'fibonacci 5' ha failed. The 3rd element (index 2) of the received
+array reference was the first value that differed from the corresponding value in the expected array reference.
+<hl>is_deeply</hl> does not tell you if the rest of the array looked the same or not, but that's usually not that important
+and failures, after the first one might be the cascading effect of failures. Usually better to focus on the first error
+and then run the test again.
+
+<h2>is_deeply on a hash</h2>
+
+In the previous example we saw how to test array references using <hl>is_deeply</hl>. Another interesting example
+would be to see how it works when we expect a hash, or a hash reference.
+MyTools has an additional function called <hl>fetch_data_from_bug_tracking_system</hl> that will return
+a hash reference based on the number we pass to it. We have a variable called <hl>%expected</hl> with, well the expected data
+structure and we use <hl>is_deeply</hl> to compare the results.
+
+<hl>bugs.t</hl> looks like this:
+
+<code lang="perl">
+#!/usr/bin/perl 
+use strict;
+use warnings;
+
+use Test::More tests => 3;
+use MyTools;
+
+my %expected = (
+    bugs     => 3,
+    errors   => 6,
+    failures => 8,
+    warnings => 1,
+);
+
+
+my %a = fetch_data_from_bug_tracking_system(0);
+is_deeply( \%a, \%expected, "Query 0" );
+
+my %b = fetch_data_from_bug_tracking_system(1);
+is_deeply( \%b, \%expected, "Query 1" );
+
+my %c = fetch_data_from_bug_tracking_system(2);
+is_deeply( \%c, \%expected, "Query 2" );
+</code>
+
+Running <hl>prove bugs.t</hl> prints this result:
+
+<code>
+bugs.t .. 1/3 
+#   Failed test 'Query 1'
+#   at bugs.t line 20.
+#     Structures begin differing at:
+#          $got->{errors} = '9'
+#     $expected->{errors} = '6'
+
+#   Failed test 'Query 2'
+#   at bugs.t line 23.
+#     Structures begin differing at:
+#          $got->{bugs} = Does not exist
+#     $expected->{bugs} = '3'
+# Looks like you failed 2 tests of 3.
+bugs.t .. Dubious, test returned 2 (wstat 512, 0x200)
+Failed 2/3 subtests 
+
+Test Summary Report
+-------------------
+bugs.t (Wstat: 512 Tests: 3 Failed: 2)
+  Failed tests:  2-3
+  Non-zero exit status: 2
+Files=1, Tests=3,  1 wallclock secs ( 0.03 usr  0.00 sys +  0.12 cusr  0.01 csys =  0.16 CPU)
+Result: FAIL
+</code>
+
+The first case passed. In the second case the value of key <hl>errors</hl> was incorrect.
+(We expected 6 but we got 9).
+In the third case the actual result was missing one of the keys. We expected to have a key called
+<hl>bugs</hl> but we did not have it in the actual result.
+
+<h2>Limitations of is_deeply</h2>
+
+While it is a very good tool, is_deeply has a number of limitations. It requires the whole data structure to match
+exactly. There is no place for any flexibility. For example what if one of the values is a time-stamp that we 
+would like to disregard or what if we would like to match it with a regular expression?
+What if there is an array references where all we case is that each element matches some regular expression,
+but we don't even care how many elements are there. For example in the case of the <hl>fetch_data_from_bug_tracking_system</hl>
+function, instead of expecting exact numbers, we might want to expect only the specific keys and "any numerical value".
+There is another module called <a href="https://metacpan.org/pod/Test::Deep">Test::Deep</a> that provides the solution.
+
+
+<h2>MyTools.pm</h2>
+
+In order to make it easier for you to test see the above code running, I have included the content of <b>MyTools.pm</b>:
+
+<code lang="perl">
+package MyTools;
+use strict;
+use warnings;
+use DateTime;
+
+our $VERSION = '0.01';
+
+use base 'Exporter';
+our @EXPORT = qw(fibonacci fibo fetch_data_from_bug_tracking_system);
+
+sub fibo {
+    my @f = _fibonacci(@_);
+    return $f[-1];
+}
+sub fibonacci {
+    return [ _fibonacci(@_) ];
+}
+
+sub _fibonacci {
+    my ($n) = @_;
+    die "Need to get a number\n" if not defined $n;
+    if ($n <= 0) {
+        warn "Given number must be > 0";
+        return 0;
+    }
+    return 1 if $n == 1;
+    if ($n ==2 ) { 
+        return (1, 1);
+    }
+
+    # add bug :-)
+    if ($n == 5) {
+        return (1, 1, 4, 3, 7);
+    }
+
+    my @fib = (1, 1);
+    for (3..$n) {
+        push @fib, $fib[-1]+$fib[-2];
+    }
+    return @fib;
+}
+
+sub fetch_data_from_bug_tracking_system {
+    my @sets = (
+        {   bugs     => 3,
+            errors   => 6,
+            failures => 8,
+            warnings => 1,
+        },
+        {   bugs     => 3,
+            errors   => 9,
+            failures => 8,
+            warnings => 1,
+        },
+        {   bogs     => 3,
+            erors    => 9,
+            failures => 8,
+            warnings => 1,
+        },
+        {   bugs     => 'many',
+            errors   => 6,
+            failures => 8,
+            warnings => 1,
+        },
+        {
+            bugs => [
+                {
+                    ts   => time,
+                    name => "System bug",
+                    severity => 3,
+                },
+                {
+                    ts    => time - int rand(100),
+                    name  => "Incorrect severity bug",
+                    severity => "extreme",
+                },
+                {
+                    ts    => time - int rand(200),
+                    name  => "Missing severity bug",
+                },
+            ],
+        },    
+    );
+    my $h = $sets[shift];
+    return %$h;
+}
+
+
+1;
+</code>
+
+
