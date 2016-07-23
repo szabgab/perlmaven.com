@@ -27,7 +27,7 @@ As the series is expect to be 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 we can t
 
 We have the following code in <hl>fib.t</hl> in the same directory where MyTools.pm is found:
 
-<include file="examples/is_deeply/fib.t" />
+<include file="examples/is_deeply/fib.t">
 
 Then running <hl>prove fib.t</hl> will print:
 
@@ -61,7 +61,7 @@ Testing the <hl>fibonacci()</hl> function is the more interesting part. It retur
 That's the actual-value. The expected value is also an array reference (in square brackets!) and
 we use the <hl>is_deeply</hl> function to compare them.
 
-<include file="examples/is_deeply/fibonacci.t" />
+<include file="examples/is_deeply/fibonacci.t">
 
 Running <hl>prove fibonacci.t</hl> will give the following result:
 
@@ -101,7 +101,7 @@ structure and we use <hl>is_deeply</hl> to compare the results.
 
 <hl>bugs.t</hl> looks like this:
 
-<include file="examples/is_deeply/bugs.t" />
+<include file="examples/is_deeply/bugs.t">
 
 Running <hl>prove bugs.t</hl> prints this result:
 
@@ -151,5 +151,5 @@ There is another module called <a href="https://metacpan.org/pod/Test::Deep">Tes
 
 In order to make it easier for you to test see the above code running, I have included the content of <b>MyTools.pm</b>:
 
-<include file="examples/is_deeply/MyTools.pm" />
+<include file="examples/is_deeply/MyTools.pm">
 
