@@ -16,7 +16,7 @@ data structure consisting of lots of arrays and hashes? How can you compare that
 
 =abstract end
 
-<screencast file="/media/videos/comparing-complex-data-structures-with-is-deeply" />
+<screencast file="/media/videos/comparing-complex-data-structures-with-is-deeply" youtube="E1Peox8ZxFM" />
 
 We have a file called <hl>MyTools.pm</hl> (In order to let you try the example, the source code of this module is at the end of the article.).
 and that module has two public functions given a number $N <hl>fibo($N)</hl> will return the N-the number in the
