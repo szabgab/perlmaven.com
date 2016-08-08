@@ -47,7 +47,7 @@ opens the file that has its name in <hl>$ARGV</hl> and reads in the first line.
 Subsequent encounters with <hl>&lt;&gt;</hl> will read in subsequent lines of the same file.
 
 After the last line was read in from the current file, the next encounter with the diamond operator will
-repeate the above operation starting by shifting the first value from <hl>@ARGV</hl> to <hl>$ARGV</hl>.
+repeat the above operation starting by shifting the first value from <hl>@ARGV</hl> to <hl>$ARGV</hl>.
 
 If there are no more entries in the <hl>@ARGV</hl> array, the diamond operator will return
 <a href="/undef-and-defined-in-perl">undef</a> and the <hl>while</hl> loop will exit.
@@ -58,7 +58,7 @@ opening of that file will fail. A warning will be printed to
 and the diamond operator will <hl>shift</hl> out the next element of the array.
 
 As a special case, if at the time of the first encounter with <hl>&lt;&gt;</hl>, the <hl>@ARGV</hl> array
-is empty (becasue we have not supplied anything on the command line, or becasues we have already emptied it),
+is empty (because we have not supplied anything on the command line, or because we have already emptied it),
 then the diamond operator will fall back to act as <hl>&lt;STDIN&gt;</hl>, reading from the standard input.
 
 
@@ -99,7 +99,7 @@ It is an almost correct solution, but due to the way <hl>$.</hl> and the Diamond
 the <hl>$.</hl> won't be reset after a file was exhausted and thus the counter will not show the line
 number in the second file, but the total lines read so far. See the 
 <a href="https://metacpan.org/pod/perlvar#pod17">documentation of $.</a> and the
-<a href="https://metacpan.org/pod/perlfunc#eof">soultion using eof</a>.
+<a href="https://metacpan.org/pod/perlfunc#eof">solution using eof</a>.
 
 <include file="examples/diamond_cat_full.txt">
 
