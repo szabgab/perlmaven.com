@@ -18,7 +18,7 @@ the classic Perl OOP described on this page.
 =abstract end
 
 <ol>
-  <li><a href="/pro/core-perl-oop-constructor">Core Perl OOP: Constructor</a></li>
+  <li><a href="/core-perl-oop-constructor">Core Perl OOP: Constructor</a></li>
   <li><a href="/pro/core-perl-oop-getter-setter">Core Perl OOP: Getter - Setter</a></li>
   <li><a href="/pro/what-should-setters-return">What should setters return?</a></li>
   <li><a href="/pro/core-perl-oop-constructor-arguments">constructor-arguments</a></li>
