@@ -14,7 +14,7 @@ Without any additional modules. Manually blessing a hash reference.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/core-perl-oop/constructor" />
+<slidecast file="/media/videos/advanced-perl/core-perl-oop/constructor" youtube="Hhmks2-JhBs" />
 
 In the previous chapter we have seen how to use <a href="/moose">Moose</a> to 
 create object oriented code in Perl. In this chapter we are going to implement similar functionality,
