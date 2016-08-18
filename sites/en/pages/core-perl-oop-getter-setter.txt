@@ -10,7 +10,7 @@
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/core-perl-oop/setter-getter" />
+<slidecast file="/media/videos/advanced-perl/core-perl-oop/setter-getter" youtube="JPRmQ5QNYaw" />
 
 
 Now that we have the <a href="/core-perl-oop-constructor">constructor</a>, let's see
