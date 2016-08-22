@@ -9,6 +9,6 @@
 
 List of Perl Maven Interviews.
 <p>
-Follow the interviews only via the <a href="/rss?tag=tv"><img src="/img/feed-icon16x16.png" alt="RSS feed" /></a>
+Follow the interviews only via the <a href="/rss/tv"><img src="/img/feed-icon16x16.png" alt="RSS feed" /></a>
 or subscribe to the <a href="/perl-maven-newsletter">Perl Maven Newsletter</a>.
 </p>
