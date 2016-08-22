@@ -1,4 +1,4 @@
-=title Using fork to spread load to multiple cores
+=title Using fork in Perl to spread load to multiple cores
 =timestamp 2015-04-21T08:10:01
 =indexes fork, wait, waitpid
 =status show
