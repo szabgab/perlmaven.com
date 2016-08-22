@@ -81,7 +81,7 @@ will be <hl>undef</hl>, but more importantly <hl>@_</hl> will only have one elem
 and the only thing we do is to return the value of the 'name' key from our hash reference.
 
 
-<h2>Checing if $value is undef</h2>
+<h2>Checking if $value is undef</h2>
 
 In some cases instead of checking if the user has passed exactly 2 parameters, people check if the <hl>$value</hl>
 is defined or not and based on this they decided if the function behaves as a setter or as a getter.
