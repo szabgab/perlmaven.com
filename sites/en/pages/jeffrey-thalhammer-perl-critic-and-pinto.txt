@@ -1,4 +1,4 @@
-=title Interview with Jeffrey Thalhammer, author of Perl::Critic and Pinto
+=title 1: Jeffrey Thalhammer, author of Perl::Critic and Pinto
 =timestamp 2013-04-25T22:33:01
 =indexes Perl::Critic, Pinto
 =tags interview, tv
