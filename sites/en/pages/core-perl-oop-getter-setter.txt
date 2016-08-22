@@ -43,7 +43,7 @@ We also have the implementation of the <hl>accessor</hl> which is also a <hl>get
 
 How does this work?
 
-When we call the <hl>$techer->name('Foo');</hl> perl will notice that <hl>$teacher is a <hl>blessed reference</hl>
+When we call the <hl>$techer->name('Foo');</hl> perl will notice that <hl>$teacher</hl> is a <hl>blessed reference</hl>
 to a hash and that it was bless-ed into the <hl>Person</hl> name-space. If it wasn't a blessed reference,
 perl wouldn't know what to do with the arrow and the "name" after that and it would throw an exception:
 <a href="/cant-call-method-on-unblessed-reference">Can't call method ... on unblessed reference</a>
