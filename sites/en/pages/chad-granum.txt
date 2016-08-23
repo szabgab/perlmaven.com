@@ -1,4 +1,4 @@
-=title Chad (Exodist) Granum, author of the Fennec testing tool
+=title 8: Chad (Exodist) Granum, author of the Fennec testing tool
 =timestamp 2013-07-21T20:33:01
 =indexes DCI, Fennec, testing, Chad Granum
 =tags interview, tv
