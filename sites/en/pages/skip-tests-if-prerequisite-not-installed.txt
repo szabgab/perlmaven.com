@@ -102,7 +102,7 @@ of <hl>1.23</hl> or <hl>v1.2.3</hl> though there is also a <i>lax</i> version of
 It will also check if the version number in each one of the modules in a distribution is the same. 
 
 Using it is a bit more involved than using the previous modules as one needs to provide a few parameters
-to the <hl>use</hl> statement and then <a href="/pro/done-testing">done_testing</a> needs to be called.
+to the <hl>use</hl> statement and then <a href="/done-testing">done_testing</a> needs to be called.
 
 <code lang="perl">
 use strict;
