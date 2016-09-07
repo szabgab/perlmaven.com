@@ -14,7 +14,7 @@ Just as a normal dice would do. How can we test this?
 
 =abstract end
 
-<screencast file="/media/videos/multiple-expected-values" />
+<screencast file="/media/videos/multiple-expected-values" youtube="gi6ICYTwkPo" />
 
 As we already know about the <a href="/testing-timeout-with-cmp-ok">cmp_ok</a> function of Test::More we can quickly write a test script using that:
 
