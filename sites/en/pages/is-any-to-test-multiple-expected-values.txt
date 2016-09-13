@@ -1,0 +1,167 @@
+=title Implementing 'is_any' to test multiple expected values
+=timestamp 2015-09-13T07:30:01
+=indexes Test::More, is_any
+=tags screencast
+=status show
+=books testing
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Previously we wrote a script to test the <hl>dice()</hl> function of our new start-up company. We made some nice
+progress, but we found that we have almost exactly the same code several times in our script. We would like
+to eliminate the duplication by moving the code in a subroution called <hl>is_any</hl>.
+
+<hl>is_any</hl> will receive 3 parameters: The first is the actual result of the function under test, the seconds is a reference
+to an array listing all the acceptable values. The third is the optional name of the test.
+
+=abstract end
+
+<screencast file="/media/videos/is-any-to-test-multiple-expected-values" />
+
+Our original code looked like this:
+
+<code lang="perl">
+my @expected = (1, 2, 3, 4, 5, 6, 7, 8);
+
+for (1..4) {
+    my $value = dice(8);
+    ok( (any {$_ eq $value} @expected), 'correct number')
+        or diag "Received: $value\nExpected:\n" .
+            join "", map {"         $_\n"} @expected;
+}
+</code>
+
+
+<code lang="perl">
+my @expected = (1, 2, 3, 4, 5, 6, 7, 8);
+
+for (1..4) {
+    my $value = dice(8);
+    is_any($value, \@expected, 'correct number');
+}
+
+sub is_any {
+    my ($actual, $expected, $name) = @_;
+    $name ||= '';
+
+    ok( (any {$_ eq $actual} @$expected), $name)
+        or diag "Received: $actual\nExpected:\n" .
+            join "", map {"         $_\n"} @$expected;
+}
+</code>
+
+All we did is to move the 3 lines starting by the call to <hl>ok</hl> to a new function.
+Renamed the variables a bit and used the new <hl>is_any</hl> function instead of the code
+we had in the loop.
+
+The full example looks like this:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use MyTools;
+
+use List::MoreUtils qw(any);
+
+use Test::More tests => 8;
+
+
+for (1..4) {
+    my $n = 6;
+    my @expected = (1..$n);
+    my $value = dice($n);
+    is_any($value, \@expected, 'correct number');
+}
+
+
+for (1..4) {
+    my $n = 4;
+    my @expected = (1..$n);
+    my $value = dice($n);
+    is_any($value, \@expected, 'correct number');
+}
+
+
+sub is_any {
+    my ($actual, $expected, $name) = @_;
+    $name ||= '';
+
+    ok( (any {$_ eq $actual} @$expected), $name)
+        or diag "Received: $actual\nExpected:\n" .
+            join "", map {"         $_\n"} @$expected;
+}
+</code>
+
+It looks nicer wven though we wrote quite some extra code by having a temorary variable called
+</hl>$value</hl> and another one called <hl>@expected</hl> in each loop.
+Running this script will give an output that look like this:
+
+<code>
+1..8
+not ok 1 - correct number
+#   Failed test 'correct number'
+#   at t/dice_is_any.t line 33.
+# Received: 5.5
+# Expected:
+#          1
+#          2
+#          3
+#          4
+#          5
+#          6
+ok 2 - correct number
+ok 3 - correct number
+ok 4 - correct number
+ok 5 - correct number
+not ok 6 - correct number
+#   Failed test 'correct number'
+#   at t/dice_is_any.t line 33.
+# Received: 1.5
+# Expected:
+#          1
+#          2
+#          3
+#          4
+ok 7 - correct number
+ok 8 - correct number
+# Looks like you failed 2 tests of 8.
+</code>
+
+It looks quite similar to what we had earlier, except for the random numbers in the results,
+but there is also an issue that we might first overlook.
+
+<h2>Where did this test fail?</h2>
+
+In both failures the line number reported was 33. It is clear that one of the failures was about the the 6-sided dice,
+while the other was about the 4-sided dice, but they both reported the line number where the <hl>ok</hl> function was called.'
+Inside the <hl>is_any</hl> subroutine. This is not very useful.
+
+If you are familiar with how some perl code can find out about it own call-stack using the <hl>caller</hl> function
+then you won't be surprised that the system behind the ok/is/like/is_deeply/etc. functions there is some code deep down
+that know exactly how far up in the call-stack was the actual function called. It even allows us to change this.
+That allows us to tell the reporting function to go one step, one call-fram further as we want to report the line
+where the <hl>is_any</hl> function was called.
+
+All we have to do is increment the value of <hl>$Test::Builder::Level</hl> variable by one. We could use the <hl>++</hl>
+autoincrement operator, but then the change would affect every place where we might call ok/is/like/etc...
+We would like to limit it to the block of the <hl>is_any</hl> functions, hence we localize it using the <hl>local</hl>
+keyword: <hl>local $Test::Builder::Level = $Test::Builder::Level + 1;</hl>
+
+<code lang="perl">
+sub is_any {
+    my ($actual, $expected, $name) = @_;
+    $name ||= '';
+
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
+    ok( (any {$_ eq $actual} @$expected), $name)
+        or diag "Received: $actual\nExpected:\n" .
+            join "", map {"         $_\n"} @$expected;
+}
+</code>
+
+Running the test again, it will report the failures in the correct place where the <hl>is_any</hl> was called.
+
+
