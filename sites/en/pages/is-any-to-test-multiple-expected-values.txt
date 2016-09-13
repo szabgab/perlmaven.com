@@ -18,7 +18,7 @@ to an array listing all the acceptable values. The third is the optional name of
 
 =abstract end
 
-<screencast file="/media/videos/is-any-to-test-multiple-expected-values" />
+<screencast file="/media/videos/is-any-to-test-multiple-expected-values" youtube="3U-H9Q5Jrac" />
 
 Our original code looked like this:
 
