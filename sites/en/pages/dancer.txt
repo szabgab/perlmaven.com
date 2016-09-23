@@ -42,7 +42,7 @@ The beginning of a series of articles about
   <li><a href="/deleting-item-using-ajax-with-delete-and-options">Deleting item using Ajax request with DELETE and OPTIONS</a> - Change the list displayed and include a delete button with each item. When clicked send a DELETE request. Add Access-Control-Allow-Methods header and let the server respond to OPTIONS request to fix the issues.</li>
   <li><a href="/replace-manual-html-generation-by-handlebars">Replace manual HTML generation by the use of Handlebars</a></li>
   <li><a href="/add-date-to-items-in-mongodb">Add a date stamp to the items in the database and to the HTML</a> - Add a date stamp to the items in the database. Show the list including the date.</li>
-  <li><a href="/pro/convert-list-to-table-and-jquery-tablesorting-with-date-column">Convert list to table and add jQuery tablesorting with Date column</a> - Let the user sort the data in the browser based on text or based on date.</li>
+  <li><a href="/convert-list-to-table-and-jquery-tablesorting-with-date-column">Convert list to table and add jQuery tablesorting with Date column</a> - Let the user sort the data in the browser based on text or based on date.</li>
   <li><a href="/pro/keep-data-in-client-and-fetch-only-changes">Keep data in client and fetch only changes</a> - Stop fetching the full list on every action, so when the user adds a new element to the list,
  let the server only indicate that it stored the new value, but insert the value in the list kept in the client.  Same for delete.</li>
 
