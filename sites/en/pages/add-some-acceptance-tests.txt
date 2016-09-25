@@ -30,7 +30,7 @@ that understand HTML. So you can tell it to click on a link or fill a form.
 In itself WWW::Mechanize is great to automate interaction with web sites, but if we want to write <b>unit-test</b> (even if in this case we call them <b>acceptance tests</b>)
 it is much better to use <a href="https://metacpan.org/pod/Test::WWW::Mechanize">Test::WWW::Mechanize</a> which is a wrapper around Mechanize providing test-functions
 using <a href="https://metacpan.org/pod/Test::Builder">Test::Builder</a> backend. Exactly the same way as it was explained in the testing mini-series that ended
-when we <a href="/pro/is-any-create-test-module">created a test module</a>.
+when we <a href="/is-any-create-test-module">created a test module</a>.
 
 
 Using <a href="https://metacpan.org/pod/Test::WWW::Mechanize">Test::WWW::Mechanize</a> is a bit different than the test module we created. This module provides an object
