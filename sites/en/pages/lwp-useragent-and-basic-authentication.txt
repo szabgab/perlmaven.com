@@ -367,7 +367,7 @@ And the result is again:
 
 <h2>A simpler solution with HTTP::Request::Common</h2>
 
-There is an even simpler solution using <a href="pro/basic-authentication-with-lwp-useragent-and-http-request-common">HTTP::Request::Common</a>.
+There is an even simpler solution using <a href="/basic-authentication-with-lwp-useragent-and-http-request-common">HTTP::Request::Common</a>.
 
 <h2>Conclusion</h2>
 

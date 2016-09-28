@@ -1,0 +1,24 @@
+=title Basic Authentication with LWP::UserAgent and HTTP::Request::Common
+=timestamp 2016-09-28T12:10:01
+=indexes LWP::UserAgent, HTTP::Request::Common
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+A while ago I wrote an article on <a href="/lwp-useragent-and-basic-authentication">LWP::UserAgent and Basic Authentication</a> and posted it on
+Reddit as well, where a user pointed to an even simpler solution, one that I did not find in the documentation myself.
+It uses <a href="https://metacpan.org/pod/LWP::UserAgent">LWP::UserAgent</a> and <a href="https://metacpan.org/pod/HTTP::Request::Common">HTTP::Request::Common</a>
+which is a dependency of LWP::UserAgent anyway.
+
+=abstract end
+
+(Actually, I think I saw and used this or a similar solution a few years ago, but I did not remember or could not find it again when I wrote the previous article.
+Now I seem to recall there was an issue with this solution when the request redirected to another URL that requred Basic Authentication,
+but I am not entirly sure. The point is that I think this solution works in most of the cases, but in the rare special cases you might still
+need the <a href="/lwp-useragent-and-basic-authentication">other solution</a>.)
+
+<include file="examples/basic_authentication.pl">
+
