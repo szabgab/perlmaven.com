@@ -24,6 +24,6 @@ need the <a href="/lwp-useragent-and-basic-authentication">other solution</a>.)
 
 <h2>Debugging the script</h2>
 
-If you have problems running the script, there are some nice techniquest to make
+If you have problems running the script, there are some nice techniques to make
 <a href="http://www.olafalders.com/2016/09/29/useragent-debugging-made-easy/">UserAgent Debugging Easy</a>.
 
