@@ -46,7 +46,7 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/multiple-expected-values">Multiple expected values - testing dice</a></li>
   <li><a href="/is-any-to-test-multiple-expected-values">Implementing 'is_any' to test multiple expected values</a></li>
   <li><a href="/is-any-create-test-module">Creating a testing module</a></li>
-  <li><a href="/pro/test-builder-object">Test::Builder object</a></li>
+  <li><a href="/test-builder-object">Test::Builder object</a></li>
   <li><a href="/pro/subtest">Organizing a test script with subtests</a></li>
   <li><a href="/pro/test-for-expected-warnings">Test for expected warnings</a></li>
   <li>---</li>
