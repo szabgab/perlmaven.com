@@ -1,0 +1,233 @@
+=title Keep data in client and fetch only changes
+=timestamp 2016-10-04T08:50:01
+=indexes Test::Deep, cmp_deeply, re
+=status show
+=books dancer2, javascript, jquery
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+So far we have been fetching the full list of items on every change. Both when the user has
+added a new item and when the user has deleted an item. If there are only a few
+items this is not a big issue, but as more and more items are going to be in our
+database, and if each item will contain all kinds of other data fields, then
+fetching the full list will become a burden on the server and will generate
+unnecessary network traffic.
+
+So let's change how the system works. Send the full list only when first loaded
+and from there on send only the updates.
+
+=abstract end
+
+<h2>Store the list in a variable in javascript</h2>
+
+Currently we have function called <hl>show_items</hl> that fetches
+all the items from the server and then displays them.
+
+We could split that function into two, one of them called <hl>get_items</hl>
+that would fetch the list and store the results in a variable and <hl>show_items</hl>
+that would show the items listed in that variable.
+
+We create a global variable to hold the list of items:
+
+<code lang="javascript">
+var items;
+</code>
+
+The new <hl>get_items</hl> function fetches the items from the server
+and stores them in the <hl>items</hl> variable. Then it calls <hl>show_items</hl>.
+
+I had to put the <hl>show_items</hl> in the call-back inside this function because
+when we first load the application the <hl>show_items</hl> should be only called
+after we got the list from the server.
+
+<code lang="javascript">
+function get_items() {
+    jQuery.get('http://127.0.0.1:5000/api/v2/items', function(data) {
+        items = data;
+        show_items();
+    });
+}
+</code>
+
+<hl>show_items</hl> is quite similar to what it was earlier, but instead
+of using the data received in the call-back, it assumes the data is already
+in the <hl>items</hl> variable and uses that.
+
+Actually as a safety mechanism, I've added this snippet that would call the
+<hl>get_items</hl> if the list of items has not been filled yet.
+
+<code lang="javascript">
+if (items === undefined) {
+    get_items()
+    return;
+}
+</code>
+
+In addition, at the places where we call <hl>show_items</hl> (after adding a new element or deleting one)
+first we call
+
+<code lang="javascript">
+items = undefined;
+</code>
+
+that will reset the list and force <hl>show_items</hl> to call <hl>get_items</hl>.
+Once we finish the rest of the code, and both the "add item" and "delete item" will
+be able to update the list in the memory, then we can remove this code, as <hl>items</hl>
+will have the correct content.
+
+We can try manually if the web application still works as earlier.
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/44dcc6ffe67d1dc04c6343f2cd5e800fbf85e98d">commit: separate get_items from show_items, and use the items global variable </a>
+
+<h2>Fetch information of individual element - backend code</h2>
+
+The next step is to write the back-end code that will allow us to fetch details about an individual item.
+This is important for us for the case when the user adds a new element.
+
+When the user types in the text and clicks on the button to save the element we don't have all the information to
+update the list of elements in the browser. First of all we don't have the exact timestamp the back-end saves in the database.
+We could generate a timestamp in the browser, but they will be different. In addition, we also need the id from the database
+in order to be able to delete the item. (In other, more complex applications we might need this id to change something about the item).
+
+We might also want to receive confirmation from the server that the item was indeed saved before we display it
+to the user.
+
+All this could be sent back in the response to the "insert item" call, but just as in the case of the list,
+I think it will be cleaner to have this in a separate API call. Even if this means another request to the server.
+(Later, if we want to optimize, we can include this information in the response to the "insert item".)
+
+The code in <hl>lib/D2/Ajax.pm</hl> implementing the back-end of the <hl>GET</hl> call to
+fetch information of a single item.
+
+<code lang="perl">
+get '/api/v2/item/:id' => sub {
+    my $id = param('id');
+
+    my $items = _mongodb('items');
+    my $data = $items->find_one({ _id => MongoDB::OID->new($id) });
+    my $json = JSON::MaybeXS->new;
+    $json->convert_blessed(1);
+    return $json->encode( { item =>  $data } );
+};
+</code>
+
+The corresponding tests in <hl>t/v2.t<hl>
+
+First we call the GET request with an ID number that does not exist
+in the database to see what will be the response:
+
+<code lang="perl">
+    my $get_item_0 =  $test->request( GET '/api/v2/item/12345' );
+    my $item_0 = decode_json($get_item_0->content);
+    is $item_0->{item}, undef;
+</code>
+
+Then we fetch the item based on the OID we've received in a request to
+get all the existing items. The resulting data is then compared
+to the data retrieved with the "/items" route.
+
+<code lang="perl">
+    my $get_item_1 =  $test->request( GET '/api/v2/item/' . $items1->{items}[0]{_id}{'$oid'});
+    my $item_1 = decode_json($get_item_1->content);
+    is_deeply $item_1->{item}, $items1->{items}[0];
+</code>
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/786a14ae55f814b49a8c60c2b8bb0ecf1884095f">commit: Fetch information on individual element - backend code </a>
+
+<h2>Include the OID in the reply to the insert call</h2>
+
+Before I could go back working on the client, I had to make another change to the server. When we insert a new item,
+the server sends a reply, but earlier it only included the corrected (!) text of the item and not the id.
+I am not even sure why did we need the text there, but we definitely need the id now.
+
+I could achieve that by changing the <hl>post '/api/v2/item' => sub {</hl> route to have
+the following:
+
+<code lang="perl">
+    my $obj = $items->insert({
+        text => $text,
+        date => DateTime::Tiny->now,
+    });
+    my $json = JSON::MaybeXS->new;
+    $json->convert_blessed(1);
+    return $json->encode( { ok => 1, text => $text, id => $obj->to_string } );
+</code>
+
+The <hl>insert</hl> method of MongoDB returns an OID object representing the id
+that was inserted. We can use the <hl>to_string</hl> method of this object
+to get the ID in string format.
+
+The corresponding tests also had to change.
+
+Because we can't know what the id is going to be, we will need to make our test case a bit more flexible.
+The <hl>is_deeply</hl> function provided by Test::More does not allow more flexibility, but the corresponding
+<hl>cmp_deeply</hl> function of <a href="https://metacpan.org/pod/Test::Deep">Test::Deep</a> does.
+
+So we load Test::Deep:
+
+<code lang="perl">
+use Test::Deep;
+</code>
+
+Create a regex matching a stringified OID:
+
+<code lang="perl">
+my  $OID = re('^[0-9a-f]{24}$');
+</code>
+
+and then use <hl>cmp_deeply</hl> to compare the received hash with one we are expecting:
+
+<code lang="perl">
+cmp_deeply decode_json($res->content), { ok => 1, text  => 'First Thing to do', id => $OID };
+</code>
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/7d4b302d9e81dee5356830e612928ca8b80bd51f">commit08include the oid in the reply to the insert call</a>
+
+<h2>Front-End: insert single element into the list without full reload</h2>
+
+Now that we have a back-end part finished, we can turn our attention to the front-end again and add a function called <hl>get_item</hl>
+that fetches the information of a single item identified by its OID, adds the returned data to the list of <hl>items</hl> and calls
+the <hl>show_items</hl> function to display the data.
+
+<code lang="javascript">
+function get_item(id) {
+    jQuery.get('http://127.0.0.1:5000/api/v2/item/' + id , function(data) {
+        items["items"].push(data["item"]);
+        show_items();
+    });
+}
+</code>
+
+We call this function once we received the confirmation from the server that the item was saved in the database.
+
+<code lang="javascript">
+  get_item(data["id"]);
+</code>
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/23ddc21281bab629ed1118e8a5ca260ed4aca3f3">commit: insert single element into the list, no full reload</a>
+
+<h2>Remove deleted item</h2>
+
+Before ending this article, let's add another change. When the user clicks on the [x] do delete an item, we send
+and Ajax request to the server to delete the item from the database, clear the list of items and reload the whole
+list again from the server. Here to we can make an improvement and we can remove the item from
+the client by ourself.
+
+For this, upon receiving confirmation that the item was deleted from the database on the server, we go over
+all the items in our global variable <hl>items</hl> an remove the one with the same ID number:
+
+<code lang="javascript">
+   var j;
+   for ( j = 0; j < items["items"].length; j++) {
+       if (items["items"][j]["_id"]["$oid"] === id) {
+           items["items"].splice(j, 1)
+           break;
+       }
+   }
+</code>
+
+<a href="https://github.com/szabgab/D2-Ajax/commit/3e4d782ac76ef1d86386069d9b97c79ef7c7e254">commit: remove deleted item</a>
+
