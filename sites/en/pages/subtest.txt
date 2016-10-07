@@ -17,7 +17,7 @@ we will constantly make mistakes of the number of tests and soon will will give 
 
 =abstract end
 
-<screencast file="/media/videos/subtest" />
+<screencast file="/media/videos/subtest" youtube="EOQhaIKbGkc" />
 
 Even if you are a borg, and you can count more than 10 tests, you will still be fed-up with the constant
 need to scroll up to the top of your tests script to update the test count and then find the place where you were adding the test
