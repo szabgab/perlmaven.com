@@ -40,7 +40,7 @@ to check the content of this page. In this case I went for a very minimalistic t
 
 At this point I already started to have concerns: In the clone, am I going to have the same title or will it explicitly say it is a clone? Am I going to
 be able to reuse these tests with the clone? I did not have an answer to these, but I kept going and added another
-<a href="/pro/subtest">subtest</a>. The <hl>follow_link_ok</hl> method clicks on the link that says "Authors", checks if there was such a link and
+<a href="/subtest">subtest</a>. The <hl>follow_link_ok</hl> method clicks on the link that says "Authors", checks if there was such a link and
 if the new page was loaded successfully.
 
 <code lang="perl">
