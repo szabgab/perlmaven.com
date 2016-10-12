@@ -48,7 +48,7 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/is-any-create-test-module">Creating a testing module</a></li>
   <li><a href="/test-builder-object">Test::Builder object</a></li>
   <li><a href="/subtest">Organizing a test script with subtests</a></li>
-  <li><a href="/pro/test-for-expected-warnings">Test for expected warnings</a></li>
+  <li><a href="/test-for-expected-warnings">Test for expected warnings</a></li>
   <li>---</li>
   <li><a href="/add-some-acceptance-tests">Add some acceptance tests using search.cpan.org</a></li>
   <li><a href="/what-is-the-status-of-the-current-test-script">	What is the status of the current test script?</a></li>
