@@ -16,17 +16,22 @@ The longer answer is as follows:
 
 =abstract end
 
+<h2>Switch Case</h2>
+
 Perl 5, the language itself does not have any statement similar to the <hl>switch</hl> and <hl>case</hl> statement of some other languages. (Neither does Python by the way.)
 
 There is, or rather used to be, a standard module called <a href="https://metacpan.org/pod/Switch">Switch</a> that could provide similar functionality,
 but reportedly it was buggy and it was removed from the core. That means recent version of Perl won't have it. If you read its documentation you'll see
 it recommends given/when.
 
+<h2>given when</h2>
+
 In version 5.10 the keywords <a href="http://perlmaven.com/switching-in-perl-5.10">given and when</a> were introduced trying to provide functionality
 similar to what <hl>case</hl> and <hl>switch</hl> are expected to do, but the design was copied from the design of Perl 6.
 
 Unfortunately due to some misunderstandings the implementation had various issues and thus in a later version this functionality was marked as <b>experimental</b>
 which means if you use it, perl will give you warnings such as <hl>given is experimental</hl> and <hl>when is experimental</hl>.
+It also means its behaviour might change in the future or that it will be removed.
 
 You can avoid those warnings if you add <hl>no warnings 'experimental';</hl> to your code.
 
