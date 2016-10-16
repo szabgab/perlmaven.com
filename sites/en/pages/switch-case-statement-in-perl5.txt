@@ -1,6 +1,6 @@
 =title Switch-Case statement in Perl 5 
 =timestamp 2016-10-16T07:30:01
-=indexes switch, case, if, elsif, else
+=indexes switch, case, if, elsif, else, given, when, ~~
 =status show
 =author szabgab
 =archive 1
@@ -24,7 +24,7 @@ There is, or rather used to be, a standard module called <a href="https://metacp
 but reportedly it was buggy and it was removed from the core. That means recent version of Perl won't have it. If you read its documentation you'll see
 it recommends given/when.
 
-<h2>given when</h2>
+<h2>Given When</h2>
 
 In version 5.10 the keywords <a href="http://perlmaven.com/switching-in-perl-5.10">given and when</a> were introduced trying to provide functionality
 similar to what <hl>case</hl> and <hl>switch</hl> are expected to do, but the design was copied from the design of Perl 6.
