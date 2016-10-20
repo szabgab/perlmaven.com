@@ -14,8 +14,8 @@ There are many ways to write Object Oriented code in Perl. In this screencast we
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/constructor" youtube="oMlCvwdgH84" />
-
+<slidecast file="/media/videos/advanced-perl/moose/constructor" />
+<!-- youtube="oMlCvwdgH84" -->
 We start with the most basic example and create a script called <b>person.pl</b> with the following content:
 
 <code lang="perl">
