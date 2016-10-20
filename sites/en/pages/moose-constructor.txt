@@ -1,0 +1,114 @@
+=title Moose constructor
+=timestamp 2016-10-21T00:00:11
+=indexes Moose, has, rw, new, constructor
+=tags screencast
+=books moose
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+There are many ways to write Object Oriented code in Perl. In this screencast we'll see how to do that using
+<a href="/moose">Moose</a>.
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/moose/constructor" />
+
+We start with the most basic example and create a script called <b>person.pl</b> with the following content:
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+use Person;
+
+my $teacher = Person->new;
+</code>
+
+Here we load the <hl>Person</hl> module, which declares the <hl>Person</hl> class and then call the <hl>new</hl> constructor of that class to create
+and instance, or object that we assign to the <hl>$teacher</hl> variable.
+
+The implementation of the <hl>Person</hl> class using <a href="/moose">Moose</a> is very simple. We just need to create a file called <b>Person.pm</b>
+with the following content:
+
+<code lang="perl">
+package Person;
+use Moose;
+
+1;
+</code>
+
+<hl>package Person;</hl> declares the <hl>Person</hl> namespace. Then we load <hl>Moose</hl> and we end the module with the mandatory true value.
+
+With just this code, Moose already provides a constructor for us. We can now run the <hl>person.pl</hl> script.
+
+A word about layout if both files are in the same directory, and if your are in that directory when you run the script then this should just work fine:
+
+<code>
+ dir/
+    person.pl
+    Person.pm
+</code>
+
+<h2>First attribute</h2>
+
+Of course having just a constructor is not very interesting so in the next example we will have an attribute called <hl>name</hl> with
+the appropriate setter and getter methods. The <hl>person.pl</hl> script, that uses the new version of the class looks like this:
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+use Person;
+
+my $teacher = Person->new;
+
+$teacher->name('Foo');
+
+say $teacher->name;
+</code>
+
+Here, after creating the <hl>Person</hl> object using the <hl>new</hl> constructor, we call the <hl>name</hl> method on the <hl>$teacher</hl> object.
+Because we also passed a value to the method, it acts as a <hl>setter</hl> and sets the <hl>name</hl> attribute of the <hl>$teacher</hl> object to be 'Foo'.
+
+On the next line we call the same <hl>name</hl> method, but this time we don't pass any value. In this case the method acts as a <hl>getter</hl>
+and returns the previously assigned value. 'Foo' in this case.
+
+This is what we need to write in the <hl>Person.pm</hl> file in order to have the attribute and the getter/setter method:
+
+<code lang="perl">
+package Person;
+use Moose;
+
+has 'name' => (is => 'rw');
+
+1;
+</code>
+
+That's it. By adding  <hl>has 'name' => (is => 'rw');</hl> we told Moose this class (and every object created from this class) will have
+an attribute called 'name'. This attribute need an accessor which can both <hl>read</hl> and <hl>write</hl> (That's what the 'rw' tells it).
+Which means Moose will create a method called <hl>name</hl> that is both a getter (to read) and a setter (to write) the value of the attribute.
+
+
+<h2>Attributes in the constructor</h2>
+
+Not only has Moose created a getter/setter accessor, it also changed the constructor, so we can already pass the value of <hl>name</hl>
+when we create the object using <hl>new</hl>. That way, we can create a new instance of the <hl>Person</hl> class and it will already
+have the <hl>name</hl> attribute set. See the new version of the <hl>person.pl</hl> script:
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+use Person;
+
+my $teacher = Person->new( name => 'Foo' );
+
+say $teacher->name;
+</code>
+
