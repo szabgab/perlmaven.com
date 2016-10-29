@@ -17,7 +17,7 @@ Let's start by testing the constructor we created in the <a href="/moose-constru
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/test-constructor" />
+<slidecast file="/media/videos/advanced-perl/moose/test-constructor" youtube="GnFTUi6Obt0" />
 
 <h2>Code layout</h2>
 
