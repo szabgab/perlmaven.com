@@ -1,0 +1,87 @@
+=title Moose: testing the setter and getter
+=timestamp 2016-11-11T23:00:11
+=indexes Moose
+=tags screencast
+=status show
+=books moose
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+In this part of the <a href="/moose">Moose tutorial</a> we keep writing tests. This time for the accessors created for the attribute
+we declared in the earlier example. 
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/moose/test-setter-getter" />
+
+In order to test the setter and getter methods we enlarge the test script we had earlier.
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+use Test::More tests => 5;
+
+use Person;
+
+my $p = Person->new;
+isa_ok($p, 'Person');
+
+is($p->name('Foo'), 'Foo', 'setter');
+is($p->name, 'Foo', 'getter');
+
+my $o = Person->new( name => 'Bar' );
+isa_ok($o, 'Person');
+is($o->name, 'Bar');
+</code>
+
+In the line <hl>is($p->name('Foo'), 'Foo', 'setter');</hl> we call the setter and then we expect it to return the value we've just set.
+The <hl>is</hl> function of Test::More receives 3 parameters: The actual value returned by the setter. The expected value ('Foo'), and the
+name of the test which can be any string.
+
+Testing the getter is similar.  <hl>is($p->name, 'Foo', 'getter');</hl> We call the getter and pass its return value to be the
+first parameter of the <hl>is</hl> function. The second parameter is the expected value ('Foo'), and the third parameter is just the
+name of this test.
+
+Then, as we saw earlier, we can pass the attribute to the constructor already. So we are going to test that too.
+So this time we call the constructor and pass a parameter to it. <hl>my $o = Person->new( name => 'Bar' );</hl>
+Then we check if the returned value is really an instance of the <b>Person</b> class. Then, calling the getter
+<hl>is($o->name, 'Bar');</hl> we check if the value was indeed set by the constructor.
+
+In this example I've even forgot to add the third parameter that would be the description of the test.
+
+we can run the tests now by typing in <hl>prove -l t</hl> and we get the following output:
+
+<code>
+t/01-name.t .. ok   
+All tests successful.
+Files=1, Tests=5,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.27 cusr  0.04 csys =  0.35 CPU)
+Result: PASS
+</code>
+
+<h2>Verbose test running</h2>
+
+If I want to see all the details of the test run, I can include the <hl>-v</hl> option on the command line and run
+<hl>prove -vl t</hl>.
+The output will look like this:
+
+<code>
+
+ok 1 - An object of class 'Person' isa 'Person'
+ok 2 - setter
+ok 3 - getter
+ok 4 - An object of class 'Person' isa 'Person'
+ok 5
+ok
+All tests successful.
+Files=1, Tests=5,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.25 cusr  0.02 csys =  0.32 CPU)
+Result: PASS
+</code>
+
+We can see the 5 test-units.  As you can see each one of them has a name (after the -), except the last one,
+where I left out the name. You can also see that <hl>isa_ok</hl> does not need an extra parameter
+as it automatically generates one from the second parameter.
+
