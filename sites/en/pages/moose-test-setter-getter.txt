@@ -14,7 +14,7 @@ we declared in the earlier example.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/test-setter-getter" />
+<slidecast file="/media/videos/advanced-perl/moose/test-setter-getter" youtube="y2O7qF7U9gs" />
 
 In order to test the setter and getter methods we enlarge the test script we had earlier.
 
