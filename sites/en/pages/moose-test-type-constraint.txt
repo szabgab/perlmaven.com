@@ -21,7 +21,7 @@ it will still throw an exception.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/test-type-constraint" />
+<slidecast file="/media/videos/advanced-perl/moose/test-type-constraint" youtube="Ja60YykI-1w" />
 
 
 Here is the new test script:
