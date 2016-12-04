@@ -172,7 +172,7 @@ print scalar keys %hash;
 <h2>Teşekkür</h2>
 
 Bu makalenin ilk sürümü <a href="http://www.leprevost.com.br/">Felipe da Veiga Leprevost</a> tarafından yazılmıştır. Kendisi aynı zamanda
-Perl Maven makalelerinin <a href="http://br.perlmaven.com/">Portekizce tercüme</a> sini yapmaktadır.
+Perl Maven makalelerinin <a href="https://br.perlmaven.com/">Portekizce tercüme</a> sini yapmaktadır.
 
 
 

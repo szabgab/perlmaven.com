@@ -1,4 +1,4 @@
-Chinese Translation of https://perlmaven.com/  hosted at http://tw.perlmaven.com/
+Chinese Translation of https://perlmaven.com/  hosted at https://tw.perlmaven.com/
 
 For further information check out the README file of https://github.com/szabgab/perl5maven.com
 
@@ -35,7 +35,7 @@ For further information check out the README file of https://github.com/szabgab/
 
 8. 送 pull request 到 szabgab/perl5maven.com，通知 @szabgab 編新版
 
-9. 在 http://tw.perlmaven.com 可以看到成品
+9. 在 https://tw.perlmaven.com 可以看到成品
 
 要注意的是這個 git repo 的主分支叫 "main" 而不叫 "master"，請勿建
 一個 master 出來，有跑出來的話我會砍掉。

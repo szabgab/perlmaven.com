@@ -76,7 +76,7 @@ languages, please contact Gabor.
 
 <h2>Translators</h2>
 
-See on the <a href="http://meta.perlmaven.com/">meta</a> site.
+See on the <a href="https://meta.perlmaven.com/">meta</a> site.
 
 <h2 id="contact">Contact information</h2>
 <p>

@@ -170,7 +170,7 @@ print scalar keys %hash;
 <h2>Thanks</h2>
 
 The first edition of this article was written by <a href="http://www.leprevost.com.br/">Felipe da Veiga Leprevost</a> who also makes the
-<a href="http://br.perlmaven.com/">Portuguese translation</a> of the Perl Maven articles.
+<a href="https://br.perlmaven.com/">Portuguese translation</a> of the Perl Maven articles.
 
 
 

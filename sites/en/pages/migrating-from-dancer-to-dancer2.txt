@@ -41,8 +41,8 @@ deployment example explained <a href="https://metacpan.org/pod/Dancer::Deploymen
 I have not even reported this issue because I assume they won't want to work much on the now maintenance version of Dancer.
 
 Another thing I wanted to do is to configure the session_domain based on the current request and some configuration option.
-Dancer, by default, sets the cookie for the exact hostname of the request so visiting <a href="http://ru.perlmaven.com/">ru.perlmaven.com</a>
-and <a href="http://br.perlmaven.com/">br.perlmaven.com</a> would (and used to) yield two cookies. I could change this by setting the
+Dancer, by default, sets the cookie for the exact hostname of the request so visiting <a href="https://ru.perlmaven.com/">ru.perlmaven.com</a>
+and <a href="https://br.perlmaven.com/">br.perlmaven.com</a> would (and used to) yield two cookies. I could change this by setting the
 <hl>session_domain</hl> option in the configuration file, but as I want to make the application available to host other sites as well,
 I wanted this to be configured on-the-fly. I could not do this either.
 
@@ -676,7 +676,7 @@ In a nutshell: a performance increase of (285-192)/285 = 32%.
 Unfortunately I found out this only 2 days after deployment of the Dancer 2 tree:
 
 When creating a session, by default both Dancer 1 and Dancer 2, set the cookie to be used for the exact hostname being served.
-This means when someone visits <a href="http://br.perlmaven.com/">br.perlmaven.com</a> that person will get a cookie for br.perlmaven.com
+This means when someone visits <a href="https://br.perlmaven.com/">br.perlmaven.com</a> that person will get a cookie for br.perlmaven.com
 and when that same person visits <a href="https://perlmaven.com/">perlmaven.com</a>, the system will set another cookie and thus
 a separate session.
 

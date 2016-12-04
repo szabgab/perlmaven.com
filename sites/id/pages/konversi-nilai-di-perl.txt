@@ -109,8 +109,8 @@ Itu adalah peringatan yang akan Anda dapat ketika Perl mencoba mengkonversikan
 sebuah string ke dalam angka dan konversinya tak sempurna.
 
 Ada banyak peringatan dan pesan kesalahan lainnya di Perl.
-Contohnya <a href="http://id.perlmaven.com/simbol-global">Simbol global</a>
-dan <a href="http://id.perlmaven.com/penggunaan-nilai-tak-terinisiasi">Penggunaan nilai tak terinisiasi</a>.
+Contohnya <a href="https://id.perlmaven.com/simbol-global">Simbol global</a>
+dan <a href="https://id.perlmaven.com/penggunaan-nilai-tak-terinisiasi">Penggunaan nilai tak terinisiasi</a>.
 
 <h2>Bagaimana menghindari munculnya pesan peringatan?</h2>
 

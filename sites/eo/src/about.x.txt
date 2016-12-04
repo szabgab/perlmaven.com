@@ -107,13 +107,13 @@ La retejo estas tradukita en aliaj lingvoj tiel.
 </p>
 <ul>
 <li><a href="http://br.perlmaven.com/">Brazila portugala</a></li>
-<li><a href="http://ro.perlmaven.com/">Rumana<</a></li>
-<li><a href="http://de.perlmaven.com/">germanaj</a></li>
-<li><a href="http://it.perlmaven.com/">itala</a></li>
-<li><a href="http://cn.perlmaven.com/">cxina</a></li>
-<li><a href="http://tw.perlmaven.com/">Tajvano</a></li>
-<li><a href="http://ru.perlmaven.com/">Rusa</a></li>
-<li><a href="http://ko.perlmaven.com/">koreo</a></li>
+<li><a href="https://ro.perlmaven.com/">Rumana<</a></li>
+<li><a href="https://de.perlmaven.com/">germanaj</a></li>
+<li><a href="https://it.perlmaven.com/">itala</a></li>
+<li><a href="https://cn.perlmaven.com/">cxina</a></li>
+<li><a href="https://tw.perlmaven.com/">Tajvano</a></li>
+<li><a href="https://ru.perlmaven.com/">Rusa</a></li>
+<li><a href="https://ko.perlmaven.com/">koreo</a></li>
 </ul>
 
 

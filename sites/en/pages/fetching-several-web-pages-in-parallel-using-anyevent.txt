@@ -43,8 +43,8 @@ use AnyEvent::HTTP;
 
 my @urls = qw(
 	https://perlmaven.com/
-	http://cn.perlmaven.com/
-	http://br.perlmaven.com/
+	https://cn.perlmaven.com/
+	https://br.perlmaven.com/
 );
 
 my $cv = AnyEvent->condvar;
@@ -122,11 +122,11 @@ If we run the script we'll see output like this:
 
 <code>
 Start https://perlmaven.com/
-Start http://cn.perlmaven.com/
-Start http://br.perlmaven.com/
+Start https://cn.perlmaven.com/
+Start https://br.perlmaven.com/
 Before the event-loop
-http://br.perlmaven.com/ received, Size: 12664
-http://cn.perlmaven.com/ received, Size: 13322
+https://br.perlmaven.com/ received, Size: 12664
+https://cn.perlmaven.com/ received, Size: 13322
 https://perlmaven.com/ received, Size: 20172
 Finish
 </code>
@@ -162,19 +162,19 @@ use AnyEvent::HTTP;
 
 my @urls = qw(
 	https://perlmaven.com/
-	http://cn.perlmaven.com/
-	http://br.perlmaven.com/
-	http://tw.perlmaven.com/
-	http://es.perlmaven.com/
-	http://it.perlmaven.com/
-	http://ko.perlmaven.com/
-	http://he.perlmaven.com/
-	http://te.perlmaven.com/
-	http://ru.perlmaven.com/
-	http://ro.perlmaven.com/
-	http://fr.perlmaven.com/
-	http://de.perlmaven.com/
-	http://id.perlmaven.com/
+	https://cn.perlmaven.com/
+	https://br.perlmaven.com/
+	https://tw.perlmaven.com/
+	https://es.perlmaven.com/
+	https://it.perlmaven.com/
+	https://ko.perlmaven.com/
+	https://he.perlmaven.com/
+	https://te.perlmaven.com/
+	https://ru.perlmaven.com/
+	https://ro.perlmaven.com/
+	https://fr.perlmaven.com/
+	https://de.perlmaven.com/
+	https://id.perlmaven.com/
 );
 
 my $cv = AnyEvent->condvar;
@@ -239,33 +239,33 @@ If you run the above script, the output will look something like this:
 
 <code>
 Start (1) https://perlmaven.com/
-Start (2) http://cn.perlmaven.com/
-Start (3) http://br.perlmaven.com/
-http://cn.perlmaven.com/ received, Size: 13322
-Start (3) http://tw.perlmaven.com/
-http://br.perlmaven.com/ received, Size: 12664
-Start (3) http://es.perlmaven.com/
-http://tw.perlmaven.com/ received, Size: 11286
-Start (3) http://it.perlmaven.com/
-http://it.perlmaven.com/ received, Size: 11428
-Start (3) http://ko.perlmaven.com/
-http://es.perlmaven.com/ received, Size: 11076
-Start (3) http://he.perlmaven.com/
+Start (2) https://cn.perlmaven.com/
+Start (3) https://br.perlmaven.com/
+https://cn.perlmaven.com/ received, Size: 13322
+Start (3) https://tw.perlmaven.com/
+https://br.perlmaven.com/ received, Size: 12664
+Start (3) https://es.perlmaven.com/
+https://tw.perlmaven.com/ received, Size: 11286
+Start (3) https://it.perlmaven.com/
+https://it.perlmaven.com/ received, Size: 11428
+Start (3) https://ko.perlmaven.com/
+https://es.perlmaven.com/ received, Size: 11076
+Start (3) https://he.perlmaven.com/
 https://perlmaven.com/ received, Size: 20166
-Start (3) http://te.perlmaven.com/
-http://ko.perlmaven.com/ received, Size: 12073
-Start (3) http://ru.perlmaven.com/
-http://he.perlmaven.com/ received, Size: 11483
-Start (3) http://ro.perlmaven.com/
-http://te.perlmaven.com/ received, Size: 11870
-Start (3) http://fr.perlmaven.com/
-http://ru.perlmaven.com/ received, Size: 12250
-Start (3) http://de.perlmaven.com/
-http://fr.perlmaven.com/ received, Size: 15820
-Start (3) http://id.perlmaven.com/
-http://de.perlmaven.com/ received, Size: 15422
-http://ro.perlmaven.com/ received, Size: 14611
-http://id.perlmaven.com/ received, Size: 11174
+Start (3) https://te.perlmaven.com/
+https://ko.perlmaven.com/ received, Size: 12073
+Start (3) https://ru.perlmaven.com/
+https://he.perlmaven.com/ received, Size: 11483
+Start (3) https://ro.perlmaven.com/
+https://te.perlmaven.com/ received, Size: 11870
+Start (3) https://fr.perlmaven.com/
+https://ru.perlmaven.com/ received, Size: 12250
+Start (3) https://de.perlmaven.com/
+https://fr.perlmaven.com/ received, Size: 15820
+Start (3) https://id.perlmaven.com/
+https://de.perlmaven.com/ received, Size: 15422
+https://ro.perlmaven.com/ received, Size: 14611
+https://id.perlmaven.com/ received, Size: 11174
 </code>
 
 If you look over the data, you will see that, for example the request to https://perlmaven.com/ that

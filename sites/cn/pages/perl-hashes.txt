@@ -166,7 +166,7 @@ print scalar keys %hash;
 
 <h2>致谢</h2>
 本文最初是<a href="http://www.leprevost.com.br/">Felipe da Veiga Leprevost</a> 所写，他同时是本教程
-<a href="http://br.perlmaven.com/">葡萄牙语</a>的译者。
+<a href="https://br.perlmaven.com/">葡萄牙语</a>的译者。
 
 
 

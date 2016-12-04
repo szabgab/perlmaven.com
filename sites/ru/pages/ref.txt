@@ -36,7 +36,7 @@ Regexp
 <h2>Простые скаляры</h2>
 
 Если мы передадим простой скаляр в функцию <hl>ref()</hl>, содержащий
-<a href="http://ru.perlmaven.com/undef-i-defined-v-perl">undef</a>, строку или число, то <hl>ref()</hl>
+<a href="https://ru.perlmaven.com/undef-i-defined-v-perl">undef</a>, строку или число, то <hl>ref()</hl>
 вернет пустую строку:
 
 <code lang="perl">
@@ -213,9 +213,9 @@ say 'version string ref: ', ref $vsref;  # VSTRING
 
 Lvalue-функции - это функция, которая принимает агрументы слева.
 Например, если вы хотите заменить часть строки, то можете использовать 
-<a href="http://ru.perlmaven.com/strokovye-funkcii-length-lc-uc-index-substr">версию substr с 4-мя аргументами</a>,
+<a href="https://ru.perlmaven.com/strokovye-funkcii-length-lc-uc-index-substr">версию substr с 4-мя аргументами</a>,
 где четвертый аргумент это строка-замена, либо можно использовать 
-<a href="http://ru.perlmaven.com/lvalue-substr">версию substr с 3-мя аргументами</a>, присваивая строку-замену слева.
+<a href="https://ru.perlmaven.com/lvalue-substr">версию substr с 3-мя аргументами</a>, присваивая строку-замену слева.
 
 Давайте посмотрим, что произойдет, если мы возмем ссылку на обычный вариант функции substr (c 4-ми аргументами):
 

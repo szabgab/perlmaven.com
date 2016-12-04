@@ -79,7 +79,7 @@ skontaktuj się z Gaborem.
 
 <h2>Tłumacze</h2>
 
-Patrz na stronie <a href="http://meta.perlmaven.com/">meta</a>.
+Patrz na stronie <a href="https://meta.perlmaven.com/">meta</a>.
 
 <h2 id="contact">Kontakt</h2>
 <p>

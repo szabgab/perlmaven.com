@@ -7,7 +7,7 @@
 
 =abstract start
 
-When someone tries to access a host, for example <a href="http://meta.perlmaven.com/">meta.perlmaven.com</a> first their computer needs
+When someone tries to access a host, for example <a href="https://meta.perlmaven.com/">meta.perlmaven.com</a> first their computer needs
 to find out the <a href="http://en.wikipedia.org/wiki/IP_address">IP address</a> of that machine. This information comes
 from the <a href="https://en.wikipedia.org/wiki/Authoritative_name_server#Authoritative_name_server">authoritative name servers</a>
 of our domain, but it is also cached by name servers on the way and even the computer of that person.

@@ -62,7 +62,7 @@ Use of uninitialized value $x in print at ...
 </code>
 
 Salah satu di antaranya adalah yang sedang kita bahas sekarang, sementara yang lainnya dibahas di
-<a href="http://id.perlmaven.com/penggunaan-nilai-tak-terinisiasi">penggunaan nilai tak terinisiasi</a>.
+<a href="https://id.perlmaven.com/penggunaan-nilai-tak-terinisiasi">penggunaan nilai tak terinisiasi</a>.
 
 
 <h2>Mana typo-nya?</h2>
@@ -97,7 +97,7 @@ Jika Anda ingin memecahkan masalah ini, gunakan saja <b>use strict</b>!
 Seperti yang dapat Anda lihat pada contoh-contoh di atas, saya tidak menggunakan strict. Jika saya menggunakannya,
 maka bukannya mendapatkan peringatan tentang kemungkinan kesalahan tulis, saya malah akan mendapat kesalahan soal
 waktu kompilasi:
-<a href="http://id.perlmaven.com/simbol-global">Global symbol requires explicit package name</a>.
+<a href="https://id.perlmaven.com/simbol-global">Global symbol requires explicit package name</a>.
 
 Hal tersebut akan terjadi bahkan jika Anda menggunakan variabel yang tidak tepat lebih dari sekali.
 
@@ -126,7 +126,7 @@ Peringatannya adalah: <b>Name "main::x" used only once: possible typo ...</b>
 
 Di sini tampak jelas dari mana 'main' berasal, atau pada
 contoh berikutnya, dari mana Mister berasal. (petunjuk: 'main' dan 'Mister' keduanya adalah nama paket.
-Jika tertarik, Anda bisa melihat <a href="http://id.perlmaven.com/simbol-global">pesan kesalahan lainnya yang melibatkan hilangnya nama-nama paket</a>).
+Jika tertarik, Anda bisa melihat <a href="https://id.perlmaven.com/simbol-global">pesan kesalahan lainnya yang melibatkan hilangnya nama-nama paket</a>).
 Pada contoh berikutnya, nama paketnya adalah 'Mister'.
 
 <code lang="perl">

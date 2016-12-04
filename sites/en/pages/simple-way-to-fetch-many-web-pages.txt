@@ -184,8 +184,8 @@ use HTTP::Tiny;
 
 my @urls = qw(
 	https://perlmaven.com/
-	http://cn.perlmaven.com/
-	http://br.perlmaven.com/
+	https://cn.perlmaven.com/
+	https://br.perlmaven.com/
 );
 
 my $ht = HTTP::Tiny->new;
@@ -212,9 +212,9 @@ This is the result:
 <code>
 Start https://perlmaven.com/
 Length: 19959
-Start http://cn.perlmaven.com/
+Start https://cn.perlmaven.com/
 Length: 13322
-Start http://br.perlmaven.com/
+Start https://br.perlmaven.com/
 Length: 12670
 </code>
 

@@ -64,18 +64,18 @@ Je suis conu pour être le créateur original de <a href="http://padre.perlide.o
 <p>
     Grâce à plusieurs bénévoles enthousiastes, <a href="https://perlmaven.com/perl-tutorial">la version originale en anglais de ce site</a> a déjà été traduite dans plusieurs autres langues. Si vous aimeriez aider dans l'une de ces langues ou dans une autre langue non encore répertoriée ci-dessous, alors veuillez svp contacter Gabor dont les coordonnées apparaissent en fin de cette page.
     <ul>
-    <li><a href="http://tw.perlmaven.com/">en chinois traditionel</a></li>
-    <li><a href="http://cn.perlmaven.com/perl-tutorial">en chinois simplifié</a></li>
-    <li><a href="http://it.perlmaven.com/">en italien</a></li>
-    <li><a href="http://br.perlmaven.com/perl-tutorial">en portugais</a></li>
-    <li><a href="http://ro.perlmaven.com/">en roumain</a></li>
-    <li><a href="http://ru.perlmaven.com/">en russe</a></li>
+    <li><a href="https://tw.perlmaven.com/">en chinois traditionel</a></li>
+    <li><a href="https://cn.perlmaven.com/perl-tutorial">en chinois simplifié</a></li>
+    <li><a href="https://it.perlmaven.com/">en italien</a></li>
+    <li><a href="https://br.perlmaven.com/perl-tutorial">en portugais</a></li>
+    <li><a href="https://ro.perlmaven.com/">en roumain</a></li>
+    <li><a href="https://ru.perlmaven.com/">en russe</a></li>
     </ul>
 </p>
 
 <h2>Les traducteurs</h2>
 
-Veuillez consulter <a href="http://meta.perlmaven.com">le site méta</a>.
+Veuillez consulter <a href="https://meta.perlmaven.com">le site méta</a>.
 
 <h2 id="contact">Coordonnées</h2>
 

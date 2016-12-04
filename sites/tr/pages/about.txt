@@ -76,7 +76,7 @@ lütfen Gabor ile iletişime geçiniz.
 
 <h2>Tercümanlar</h2>
 
-<a href="http://meta.perlmaven.com/">meta</a> sitesine bakınız.
+<a href="https://meta.perlmaven.com/">meta</a> sitesine bakınız.
 
 <h2 id="contact">İletişim bilgisi</h2>
 <p>

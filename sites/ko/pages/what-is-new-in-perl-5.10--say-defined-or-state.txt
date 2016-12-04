@@ -116,4 +116,4 @@ sub next_counter {
 
 매우 명확해졌습니다.
 
-<hl>state</hl> 키워드의 또다른 사용예는 <a href="http://ko.perlmaven.com/how-to-capture-and-save-warnings-in-perl">Perl에서 경고메시지를 가로채어 저장하기</a>를 확인 해보세요.
+<hl>state</hl> 키워드의 또다른 사용예는 <a href="https://ko.perlmaven.com/how-to-capture-and-save-warnings-in-perl">Perl에서 경고메시지를 가로채어 저장하기</a>를 확인 해보세요.

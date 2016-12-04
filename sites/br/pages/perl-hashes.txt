@@ -189,6 +189,6 @@ print scalar keys %hash;
 
 A primeira edição deste artigo foi escrita por <a
 href="http://www.leprevost.com.br/">Felipe da Veiga Leprevost</a> que também
-faz <a href="http://br.perlmaven.com/">traduções em Português</a> dos artigos
+faz <a href="https://br.perlmaven.com/">traduções em Português</a> dos artigos
 Perl Maven.
 
