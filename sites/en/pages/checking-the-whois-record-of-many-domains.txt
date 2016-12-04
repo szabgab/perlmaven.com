@@ -8,7 +8,7 @@
 =abstract start
 
 I have 35 domain names registered in various Top-level domains.
-Some, like <a href="http://szabgab.com/">szabgab.com</a> are in the .com TLD,
+Some, like <a href="https://szabgab.com/">szabgab.com</a> are in the .com TLD,
 Others, like <a href="http://perlide.org/">perlide.org</a> are in the .org TLD, yet others are
 <a href="http://perl.org.il/">perl.org.il</a> in the .il ccTLD.
 

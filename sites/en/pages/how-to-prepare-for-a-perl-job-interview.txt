@@ -107,7 +107,7 @@ you will want to find a new job, you have these new skill.
 
 The easiest way to do this is to get involved in some open source project.
 In the Perl world that could mean contributing to a CPAN module, or to
-one of the <a href="http://szabgab.com/perl-based-open-source-products.html">Perl based open source products</a>.
+one of the <a href="https://szabgab.com/perl-based-open-source-products.html">Perl based open source products</a>.
 
 So take some of your free time and get involved in some Open Source project,
 

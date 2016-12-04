@@ -15,7 +15,7 @@ Finding a good Perl developer is not an easy task. Let me try to give you a few 
 
 <h2>Where to look for contract Perl developers?</h2>
 
-Before going further, please note that I (<a href="http://szabgab.com/about.html">Gabor Szabo</a> who runs this web site) am available for contract Perl development. Alternatively, there are a number of other <a href="/perl-training-consulting">recommended Perl developers</a> offering
+Before going further, please note that I (<a href="https://szabgab.com/about.html">Gabor Szabo</a> who runs this web site) am available for contract Perl development. Alternatively, there are a number of other <a href="/perl-training-consulting">recommended Perl developers</a> offering
 development, consulting and training services.
 
 That said there's more work than we can do so - if you're looking for a Perl developer -
@@ -177,6 +177,6 @@ If you use any other special software, please list those too.
 <h2>Need help?</h2>
 
 Finally if you need help in writing your job description, or improving your code-base,
-you can always <a href="http://szabgab.com/about.html">contact Gabor</a>.
+you can always <a href="https://szabgab.com/about.html">contact Gabor</a>.
 
 

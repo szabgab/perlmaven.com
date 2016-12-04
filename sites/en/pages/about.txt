@@ -90,7 +90,7 @@ You'll be notified when a new article is published.
 
 <div class="about">
 <img src="/img/szabgab.png" alt="Gabor Szabo" />
-I am <a href="http://szabgab.com/">Gabor Szabo</a>,
+I am <a href="https://szabgab.com/">Gabor Szabo</a>,
 long time Perl developer and Perl trainer.
 I have been using Perl since 1995, and teaching Perl in corporate class rooms since 2000.
 I love doing class-room training, but unfortunately that limits the number of people I can reach.

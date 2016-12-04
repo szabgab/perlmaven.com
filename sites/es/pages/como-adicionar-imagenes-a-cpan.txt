@@ -69,7 +69,7 @@ En el <a href="https://github.com/szabgab/SVG/blob/master/lib/SVG.pm"> código f
 ejemplo es ligeramente diferente:
 
 <code>
-=for HTML <p><img src="http://szabgab.com/img/SVG/circle.png" alt="SVG example circle" /></p>
+=for HTML <p><img src="https://szabgab.com/img/SVG/circle.png" alt="SVG example circle" /></p>
 </code>
 
 Aquí la imagen en realidad se obtiene de mi propio dominio personal.

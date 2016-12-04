@@ -79,7 +79,7 @@ due its name and hat's probably it is used in a lot of old code and people who n
 <h2>Caveat - round 2</h2>
 
 Of course looking at these list without the corresponding number of visits is misleading. Especially because
-<a href="http://szabgab.com/cpan-number-of-visits.html">search.cpan.org still has 3-4 times more visitors than MetaCPAN.org</a>.
+<a href="https://szabgab.com/cpan-number-of-visits.html">search.cpan.org still has 3-4 times more visitors than MetaCPAN.org</a>.
 
 One has to take in account that XML::Simple, which is at the 5th place on search.cpan.org gets more readers than DBI which is
 at the 2nd place on MetaCPAN.

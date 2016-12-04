@@ -93,7 +93,7 @@ Otrzymasz informację o nowych artykułach.
 
 <div class="about">
 <img src="/img/szabgab.png" alt="Gabor Szabo" />
-Nazywam się <a href="http://szabgab.com/">Gabor Szabo</a>,
+Nazywam się <a href="https://szabgab.com/">Gabor Szabo</a>,
 wieloletni deweloper i nauczyciel Perla.
 Korzystam z Perla od 1995, a uczę go w salach korporacyjnych od 2000.
 Kocham szkolenia w klasach, ale niestety taki sposób ogranicza liczbę ludzi do których mogę dotrzeć.

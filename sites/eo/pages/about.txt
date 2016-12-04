@@ -74,7 +74,7 @@ Vi vidos kiel uzi pli novan version de Perl povas plibonigi vian kodon kaj anka&
 <h2>Pri la autoro / redaktanto</h2>
 
 <p>
-Mi estas <a href="http://szabgab.com/"> Gabor Szabo </a>,
+Mi estas <a href="https://szabgab.com/"> Gabor Szabo </a>,
 longe Perl developer kaj Perl trejnisto.
 <br>
 <center> <img src="/img/szabgab.png" alt="Gabor Szabo" /> </center>

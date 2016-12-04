@@ -136,7 +136,7 @@ on the left-hand side of the individual <a href="https://metacpan.org/author/SZA
 
 The other side of the "connection" was described in my post calling
 the CPAN authors to
-<a href="http://szabgab.com/claiming-your-cpan-authorship-at-google.html">connect their Google+ pages to MetaCPAN</a>.
+<a href="https://szabgab.com/claiming-your-cpan-authorship-at-google.html">connect their Google+ pages to MetaCPAN</a>.
 
 <h2>Conclusion</h2>
 

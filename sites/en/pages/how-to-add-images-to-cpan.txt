@@ -67,7 +67,7 @@ In the <a href="https://github.com/szabgab/SVG/blob/master/lib/SVG.pm">source co
 example is slightly different:
 
 <code>
-=for HTML <p><img src="http://szabgab.com/img/SVG/circle.png" alt="SVG example circle" /></p>
+=for HTML <p><img src="https://szabgab.com/img/SVG/circle.png" alt="SVG example circle" /></p>
 </code>
 
 Here the image is actually served from my own personal domain.
