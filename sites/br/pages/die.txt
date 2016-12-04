@@ -19,7 +19,7 @@ Quando você deseja sinalizar que algo deu muito errado, e quer jogar a toalha, 
 As pessoas que lidam com frequência com o Perl estão bem familiarizadas com a função <hl>die</hl>.
 Uma das expressões mais comuns é utilizada no estilo <hl>open or die</hl> de se <a href="/abrindo-e-lendo-arquivos">abrir um arquivo</a>.
 
-Uma chamada à função <hl>die</hl> irá imprimir um texto na saída de <a href="http://perlmaven.com/stdout-stderr-and-redirection">erro padrão (STDERR)</a>
+Uma chamada à função <hl>die</hl> irá imprimir um texto na saída de <a href="https://perlmaven.com/stdout-stderr-and-redirection">erro padrão (STDERR)</a>
 e em seguida terminará o programa sendo executado.
 
 Ela possui as mesmas características que a função <a href="/warn">warn</a> possui, ou seja se o texto que você passou a ela <b>não</b> terminar
@@ -32,7 +32,7 @@ Isso pode ajudar a resolver os problemas identificando a sua origem.
 Enquanto que em um simples script isso normalmente não é necessário, a função <hl>die</hl> na verdade lança exceções.
 Em scripts simples você provavelmente não terá um código especialmente escrito para tratar essas exceções.
 Nestes casos você simplesmente usa a função <hl>die</hl> ao invés de invocar a função <a href="/warn">warn</a>
-e então <a href="http://perlmaven.com/how-to-exit-from-perl-script">>exit</a>.
+e então <a href="https://perlmaven.com/how-to-exit-from-perl-script">>exit</a>.
 
 
 Em aplicações maiores, você provavelmente irá querer lançar exceções e em seguida capturá-las usando <hl>eval</hl>. 
@@ -46,4 +46,4 @@ assim como é feito com a <hl>warn</hl>. A grande diferença é que o gerenciado
 não impede que o programa seja interrompido. Neste caso é apenas interessante em casos onde você já capturou a exceção
 (p.ex. usando a função <hl>eval</hl>) e está interessado em encontrar onde alguém capturou uma exceção,
 mas não lidou de forma adequada.
-Para estes casos veja o artigo <a href="http://perlmaven.com/how-to-capture-and-save-warnings-in-perl">capturando chamadas</a>.
+Para estes casos veja o artigo <a href="https://perlmaven.com/how-to-capture-and-save-warnings-in-perl">capturando chamadas</a>.

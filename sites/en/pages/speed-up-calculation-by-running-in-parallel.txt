@@ -52,7 +52,7 @@ I think the reason that none of them is fully used is that the operating system 
 
 In order to allow the computer to better utilize all its resources we could use either <hl>threads</hl> or <a href="/fork">fork</a>.
 As <hl>threads</hl> are <a href="https://metacpan.org/pod/threads#WARNING">not a recommended technique in Perl</a> we opt to use <hl>fork</hl> as described in the article on
-<a href="http://perlmaven.com/fork">Using fork to spread load to multiple cores</a>. The problem, as it is also mentioned at the end of
+<a href="https://perlmaven.com/fork">Using fork to spread load to multiple cores</a>. The problem, as it is also mentioned at the end of
 that article is that forked processes don't have shared memory, so the forked process cannot simple write back to the common <hl>%results</hl>
 hash. That's where the module <a href="https://metacpan.org/pod/Parallel::ForkManager">Parallel::ForkManager</a> comes into play.
 

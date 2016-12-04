@@ -81,7 +81,7 @@ done
 
 我们最好在进一步处理之前先检查一下<hl>open()</hl>是否成功。
 
-幸运的是，<hl>open()</hl> 的函数调用本身会返回 <a href="http://perlmaven.com/boolean-values-in-perl">TRUE(成功)， FALSE(失败) </a>， 所以我们可以这么写:
+幸运的是，<hl>open()</hl> 的函数调用本身会返回 <a href="https://perlmaven.com/boolean-values-in-perl">TRUE(成功)， FALSE(失败) </a>， 所以我们可以这么写:
 
 <h2>Open or die</h2>
 

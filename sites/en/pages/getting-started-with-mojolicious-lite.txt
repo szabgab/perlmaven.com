@@ -57,7 +57,7 @@ imported by <hl>Mojolicious::Lite</hl>, and in Perl statements are separated by 
 The final line <hl>app->start;</hl> starts the web application.
 
 As you might have noticed even though we recommend
-to <a href="http://perlmaven.com/always-use-strict-and-use-warnings">always included <hl>use strict</hl> and <hl>use warnings</hl></a>,
+to <a href="https://perlmaven.com/always-use-strict-and-use-warnings">always included <hl>use strict</hl> and <hl>use warnings</hl></a>,
 we have not done it in this case.
 This is because including <hl>Mojolicious::Lite</hl> automatically turns on these pragmata. Actually along with
 <hl>utf8</hl> and <hl>features</hl>.

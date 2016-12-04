@@ -10,4 +10,4 @@
 =show_social 0
 
 
-Placeholder. Por enquanto veja a versão em inglês <a href="http://perlmaven.com/">English version</a>.
+Placeholder. Por enquanto veja a versão em inglês <a href="https://perlmaven.com/">English version</a>.

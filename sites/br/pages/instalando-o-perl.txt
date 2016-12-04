@@ -50,7 +50,7 @@ O pacote DWIM possui várias extensões em Perl empacotadas, dessa forma realiza
 <h2>Video</h2>
 
 Se você preferir poderá também assistir o vídeo <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with
-Perl</a> disponível no YouTube. Neste caso você também pode acessar o <a href="http://perlmaven.com/beginner-perl-maven-video-course">curso iniciante do Perl Maven</a>
+Perl</a> disponível no YouTube. Neste caso você também pode acessar o <a href="https://perlmaven.com/beginner-perl-maven-video-course">curso iniciante do Perl Maven</a>
 
 <h2>Primeiro programa</h2>
 

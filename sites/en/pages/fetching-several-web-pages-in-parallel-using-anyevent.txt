@@ -42,7 +42,7 @@ use AnyEvent;
 use AnyEvent::HTTP;
 
 my @urls = qw(
-	http://perlmaven.com/
+	https://perlmaven.com/
 	http://cn.perlmaven.com/
 	http://br.perlmaven.com/
 );
@@ -121,13 +121,13 @@ At that point the <hl>$cv-recv</hl> will stop waiting and the script will print 
 If we run the script we'll see output like this:
 
 <code>
-Start http://perlmaven.com/
+Start https://perlmaven.com/
 Start http://cn.perlmaven.com/
 Start http://br.perlmaven.com/
 Before the event-loop
 http://br.perlmaven.com/ received, Size: 12664
 http://cn.perlmaven.com/ received, Size: 13322
-http://perlmaven.com/ received, Size: 20172
+https://perlmaven.com/ received, Size: 20172
 Finish
 </code>
 
@@ -161,7 +161,7 @@ use AnyEvent;
 use AnyEvent::HTTP;
 
 my @urls = qw(
-	http://perlmaven.com/
+	https://perlmaven.com/
 	http://cn.perlmaven.com/
 	http://br.perlmaven.com/
 	http://tw.perlmaven.com/
@@ -238,7 +238,7 @@ of AnyEvent are empty.
 If you run the above script, the output will look something like this:
 
 <code>
-Start (1) http://perlmaven.com/
+Start (1) https://perlmaven.com/
 Start (2) http://cn.perlmaven.com/
 Start (3) http://br.perlmaven.com/
 http://cn.perlmaven.com/ received, Size: 13322
@@ -251,7 +251,7 @@ http://it.perlmaven.com/ received, Size: 11428
 Start (3) http://ko.perlmaven.com/
 http://es.perlmaven.com/ received, Size: 11076
 Start (3) http://he.perlmaven.com/
-http://perlmaven.com/ received, Size: 20166
+https://perlmaven.com/ received, Size: 20166
 Start (3) http://te.perlmaven.com/
 http://ko.perlmaven.com/ received, Size: 12073
 Start (3) http://ru.perlmaven.com/
@@ -268,7 +268,7 @@ http://ro.perlmaven.com/ received, Size: 14611
 http://id.perlmaven.com/ received, Size: 11174
 </code>
 
-If you look over the data, you will see that, for example the request to http://perlmaven.com/ that
+If you look over the data, you will see that, for example the request to https://perlmaven.com/ that
 went out as the first request, came back only after 5 others have finished.
 
 

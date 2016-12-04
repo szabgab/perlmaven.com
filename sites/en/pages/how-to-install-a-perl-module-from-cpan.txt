@@ -41,7 +41,7 @@ that we won't click on.
  <li><a href="#osx">Mac OSX</a></li>
  <li><a href="#cpan">Using the cpan client</a></li>
  <li><a href="#cpanm">Using cpanm</a></li>
- <li><a href="http://perlmaven.com/pro/install-perl-modules-on-freebsd">FreeBSD, system Perl with root rights</a></li>
+ <li><a href="https://perlmaven.com/pro/install-perl-modules-on-freebsd">FreeBSD, system Perl with root rights</a></li>
 </ul>
 
 

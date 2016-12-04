@@ -292,7 +292,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 </li>
 <li>Чтение из Excel-файлов с помощью Perl</li>
 <li>
-	<a href="https://perlmaven.com/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (<a href="http://perlmaven.com/pro">Платная подписка (только по-английски)</a>)
+	<a href="https://perlmaven.com/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (<a href="https://perlmaven.com/pro">Платная подписка (только по-английски)</a>)
 </li>
 <li>Отправка электронной почты с помощью Perl</li>
 <li>CGI-скрипты на Perl</li>

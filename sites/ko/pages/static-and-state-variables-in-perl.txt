@@ -53,7 +53,7 @@ say count();
 #say $counter;
 </code>
 
-이 예제에서, <a href="http://perlmaven.com/variable-declaration-in-perl">my를 써서 변수를 선언</a>하는
+이 예제에서, <a href="https://perlmaven.com/variable-declaration-in-perl">my를 써서 변수를 선언</a>하는
 대신에, <hl>state</hl> 키워드를 사용하였습니다.
 
 <hl>$counter</hl>는 딱 한 번만 0으로 초기화되며, 그 시점은 처음으로 <hl>counter()</hl>가 호출되었을

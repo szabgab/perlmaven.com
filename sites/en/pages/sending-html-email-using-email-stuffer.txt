@@ -110,7 +110,7 @@ END
 
 my $html = <<"END";
 <h1>Hi</h1>
-<a href="http://perlmaven.com/">Perl Maven</a>
+<a href="https://perlmaven.com/">Perl Maven</a>
 END
 
 Email::Stuffer
@@ -153,7 +153,7 @@ END
 
 my $html = <<"END";
 <h1>Hi</h1>
-<a href="http://perlmaven.com/">Perl Maven</a>
+<a href="https://perlmaven.com/">Perl Maven</a>
 END
 my $email = Email::Stuffer
     ->text_body($text)

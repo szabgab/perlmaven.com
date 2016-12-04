@@ -37,7 +37,7 @@ Actually I think there are very few applications where bitwise operators are nee
 It might be interesting to see which CPAN modules use them.
 
 When I encountered this issue I started to write an e-mail to the developers
-of <a href="http://perlmaven.com/how-to-set-default-values-in-perl">Perl::Critic</a>
+of <a href="https://perlmaven.com/how-to-set-default-values-in-perl">Perl::Critic</a>
 asking for their help catching code that uses bitwise operators.
 I have not even finished the message when I saw a posting by
 <a href="http://petdance.com/">Andy Lester</a> about exactly the same issue.
@@ -55,7 +55,7 @@ my $x = 3 & 4;
 $x |= 42;
 </code>
 
-(I use <a href="http://perlmaven.com/strict">strict and warnings</a> even when I write simple examples.)
+(I use <a href="https://perlmaven.com/strict">strict and warnings</a> even when I write simple examples.)
 
 and ran <b>perlcritic code.pl</b>
 

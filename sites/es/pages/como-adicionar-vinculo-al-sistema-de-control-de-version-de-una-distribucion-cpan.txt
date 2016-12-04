@@ -126,6 +126,6 @@ Si algo no está claro, sólo pregunta.
 
 <h2>Licencias</h2>
 
-En otro artículo mostré <a href="http://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan"> Cómo agregar la información de la licencia a los META archivos de distribuciones CPAN</a>.
+En otro artículo mostré <a href="https://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan"> Cómo agregar la información de la licencia a los META archivos de distribuciones CPAN</a>.
 Si tuvieras un repositorio público, sería más fácil para otros enviar ese parche también.
 

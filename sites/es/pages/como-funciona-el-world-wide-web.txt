@@ -25,7 +25,7 @@ En su ordenador, teléfono móvil o tablet tiene una aplicación de software lla
 <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Microsoft Internet Explorer</a>).
 
 Escribe una dirección web (también llamada una "<a href="https://en.wikipedia.org/wiki/Url"> URL</a>") en la barra de direcciones: algo como www.google.com o perlmaven.com/perl-tutorial,
-o incluso sólo una <a href="https://en.wikipedia.org/wiki/Ip_address"> dirección IP</a> como 127.0.0.1. Si no se suministra el <hl>Protocolo</hl>, el navegador lo añadirá y automáticamente cambia la dirección a http://www.google.com o http://perlmaven.com/perl-tutorial.
+o incluso sólo una <a href="https://en.wikipedia.org/wiki/Ip_address"> dirección IP</a> como 127.0.0.1. Si no se suministra el <hl>Protocolo</hl>, el navegador lo añadirá y automáticamente cambia la dirección a http://www.google.com o https://perlmaven.com/perl-tutorial.
 Luego hace un trabajo de fondo traduciendo la dirección con el número IP del servidor, que no vamos a discutir aquí,
 y envía una solicitud para traer la página adecuada desde el equipo correcto en algún lugar, posiblemente en el otro lado del mundo.
 

@@ -157,9 +157,9 @@ foreach my $value (@data) {
 
 Perl의 <hl>grep</hl> 함수는 Unix의 유명한 grep 명령을 일반화한 것입니다.
 
-이것은 기본적으로 <a href="http://perlmaven.com/filtering-values-with-perl-grep">필터</a>입니다.
+이것은 기본적으로 <a href="https://perlmaven.com/filtering-values-with-perl-grep">필터</a>입니다.
 우변에 배열을, 블럭 안에 표현식을 적으면, <hl>grep</hl> 함수는 배열의 원소를 하나씩 꺼내어
-<a href="http://perlmaven.com/the-default-variable-of-perl">Perl의 디폴트 스칼라 변수</a>인
+<a href="https://perlmaven.com/the-default-variable-of-perl">Perl의 디폴트 스칼라 변수</a>인
 <hl>$_</hl>에 넣고, 블럭 내의 코드를 실행합니다.
 블럭의 실행 결과가 참이 되면 이 원소는 통과하고, 거짓이 된다면 이 원소는 걸러집니다.
 

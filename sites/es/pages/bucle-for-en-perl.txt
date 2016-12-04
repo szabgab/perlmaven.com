@@ -24,7 +24,7 @@ un bucle estilo C de 3 partes. Normalmente se le llama estilo C
 pero existe en muchos lenguajes.
 
 Mostraré como funciona aunque prefiero escribir bucles <hl>foreach</hl> como
-se muestra en la sección <a href="http://perlmaven.com/perl-arrays">perl arrays</a>.
+se muestra en la sección <a href="https://perlmaven.com/perl-arrays">perl arrays</a>.
 
 Las palabras reservadas <hl>for</hl> y <hl>foreach</hl> se pueden usar como sinónimos.
 Perl averiguará cual es el significado que tenías en mente.
@@ -53,7 +53,7 @@ Justo después la parte TEST es ejecutada. Si devuelve falso
 el bucle será ignorado por completo. Si la parte TEST devuelve verdadero se ejecutará BODY
 seguido de STEP.
 
-(Para el significado real de VERDADERO y FALSO, revisa <a href="http://perlmaven.com/boolean-values-in-perl">valores booleanos en Perl</a>.)
+(Para el significado real de VERDADERO y FALSO, revisa <a href="https://perlmaven.com/boolean-values-in-perl">valores booleanos en Perl</a>.)
 
 Luego viene la parte TEST y se repite sucesivamente mientras la parte TEST devuelva un valor verdadero.
 Por lo tanto la ejecución se parece a:
@@ -127,7 +127,7 @@ while (1) {
 }
 </code>
 
-Esta explicado en el capitulo acerca del <a href="http://perlmaven.com/while-loop">bucle while en perl</a>.
+Esta explicado en el capitulo acerca del <a href="https://perlmaven.com/while-loop">bucle while en perl</a>.
 
 <h2>perldoc</h2>
 

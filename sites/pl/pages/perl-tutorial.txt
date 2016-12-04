@@ -33,4 +33,4 @@
 
 <hr/>
 
-Wersję oryginalną znajdziesz na <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
+Wersję oryginalną znajdziesz na <a href="https://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>

@@ -118,7 +118,7 @@ $dbh->do($sql);
 </code>
 
 첫번째 구문에서는 CREATE TABLE을 실행하는 SQL 구문을
-<a href="http://perlmaven.com/here-documents">here document</a>
+<a href="https://perlmaven.com/here-documents">here document</a>
 를 사용하여 변수에 담았습니다.
 
 그 다음 데이타베이스 핸들의 <hl>do</hl> 메쏘드를 호출하여 SQL 구문을 데이타베이스로 전송합니다.

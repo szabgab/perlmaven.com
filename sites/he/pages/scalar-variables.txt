@@ -54,7 +54,7 @@ say $name;
 
 אנחנו מעדיפים את הצורה הראשונה אם הלוגיקה של הקוד מאפשרת זאת.
 
-אם הכרזנו על משתמש אך טרם הצבנו בו ערך אז יהיה לו ערך שנקרא <a href="http://perlmaven.com/undef-and-defined-in-perl">undef</a> ערך זה דומה ל- <b>NULL</b> in databases,
+אם הכרזנו על משתמש אך טרם הצבנו בו ערך אז יהיה לו ערך שנקרא <a href="https://perlmaven.com/undef-and-defined-in-perl">undef</a> ערך זה דומה ל- <b>NULL</b> in databases,
 אבל יש לו התנהגות קצת שונה.
 
 ניתן לבדוק אם משתנה הוא <hl>undef</hl> באמצעות הפונקציה <hl>defined</hl> :

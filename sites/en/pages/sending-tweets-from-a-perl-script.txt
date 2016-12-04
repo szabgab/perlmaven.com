@@ -47,7 +47,7 @@ Fill in the form. I used the following:
 <code>
 Name: Perl Maven Example
 Description: Test Application for Perl Maven
-Website: http://perlmaven.com/
+Website: https://perlmaven.com/
 Callback URL:
 </code>
 
@@ -213,7 +213,7 @@ can help see the details.
 Finally, let's see how to post an update:
 
 <code lang="perl">
-$nt->update('Hello world! This is my first tweet using Net::Twitter, thanks to @perlmaven http://perlmaven.com/');
+$nt->update('Hello world! This is my first tweet using Net::Twitter, thanks to @perlmaven https://perlmaven.com/');
 </code>
 
 Unfortunately when we run the script, we get an error: <hl>Read-only application cannot POST. at...,/hl>

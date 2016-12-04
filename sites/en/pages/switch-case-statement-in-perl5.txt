@@ -26,7 +26,7 @@ it recommends given/when.
 
 <h2>Given When</h2>
 
-In version 5.10 the keywords <a href="http://perlmaven.com/switching-in-perl-5.10">given and when</a> were introduced trying to provide functionality
+In version 5.10 the keywords <a href="https://perlmaven.com/switching-in-perl-5.10">given and when</a> were introduced trying to provide functionality
 similar to what <hl>case</hl> and <hl>switch</hl> are expected to do, but the design was copied from the design of Perl 6.
 
 Unfortunately due to some misunderstandings the implementation had various issues and thus in a later version this functionality was marked as <b>experimental</b>

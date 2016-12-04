@@ -12,7 +12,7 @@
 <i>Ceci est un article du contributeur <a href="http://www.linkedin.com/pub/darin-mcbride/32/a53/184">Darin McBride</a>.
 Darin est un développeur de logiciels au laboratoire canadien d'IBM et est l'auteur de <a href="https://www.metacpan.org/author/DMCBRIDE">plusieurs modules Perl sur CPAN</a>. Père de trois enfants, il essaie de déterminer comment <hl>use more 'sleep';</hl>. -- Gabor</i>
 
-Après que Gabor a répondu à la question d'un utilisateur <a href="http://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">Comment calculer les soldes bancaires en CSV</a>, j'ai suggéré que cela était un exemple criant pour utiliser <a href="https://metacpan.org/pod/DBD::CSV">DBD::CSV</a>. Gabor m'a invité à synchroniser mes doigts avec ma bouche - pour ainsi dire - afin de m'expliquer plus en détails.
+Après que Gabor a répondu à la question d'un utilisateur <a href="https://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">Comment calculer les soldes bancaires en CSV</a>, j'ai suggéré que cela était un exemple criant pour utiliser <a href="https://metacpan.org/pod/DBD::CSV">DBD::CSV</a>. Gabor m'a invité à synchroniser mes doigts avec ma bouche - pour ainsi dire - afin de m'expliquer plus en détails.
 
 =abstract end
 
@@ -83,7 +83,7 @@ Ici, nous chargeons quelques modules qui rendent notre travail un peu plus facil
 
 Les autres paramètres ont besoin d'un peu plus d'explication.
 
-f_dir est le répertoire où DBD::CSV va chercher tous les fichiers CSV. Dans cet exemple, je précise que le répertoire est le même que celui du script. Si ce n'est pas votre cas, vous aurez besoin d'ajuster de manière appropriée. Dans <a href="http://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">l'article original</a>, Gabor a juste choisi le répertoire de travail courant, ce qui est aussi une approche valable.
+f_dir est le répertoire où DBD::CSV va chercher tous les fichiers CSV. Dans cet exemple, je précise que le répertoire est le même que celui du script. Si ce n'est pas votre cas, vous aurez besoin d'ajuster de manière appropriée. Dans <a href="https://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">l'article original</a>, Gabor a juste choisi le répertoire de travail courant, ce qui est aussi une approche valable.
 
 f_ext est l'extension ajoutée au nom d'une table afin de déterminer le nom du fichier lié à cette table. Avec cette extension, essayer <i>SELECT ... FROM foo</i> signifie que DBD::CSV va lire le fichier foo.csv (dans le f_dir spécifié ci-dessus).
 

@@ -102,5 +102,5 @@ Dist::Zilla还有许多其他办法可以<a href="http://www.lowlevelmanager.com
 <h2>许可证</h2>
 
 在另一篇文章中，我演示了
-<a href="http://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan">如何把许可证信息加入 CPAN 发行版的元文件中</a>。
+<a href="https://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan">如何把许可证信息加入 CPAN 发行版的元文件中</a>。
 如果你有一个公共存储，其他人发补丁就简单了。

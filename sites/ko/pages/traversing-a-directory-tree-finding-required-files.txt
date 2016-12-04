@@ -167,7 +167,7 @@ close $fh;
 <a href="https://metacpan.org/pod/File::Find::Rule">File::Find::Rule</a>에 의해 반환된 파일 목록에는
 각 파일의 전체 경로명이 들어 있는데, 우리는 파일명 부분만 필요합니다. 그래서 목록의 각 명단에 대하여
 <hl>basename()</hl>을 수행한 후에 새 배열 <hl>@files</hl>를 만들었습니다. 이를 위해
-<a href="http://perlmaven.com/transforming-a-perl-array-using-map">map</a>을 사용하였습니다.
+<a href="https://perlmaven.com/transforming-a-perl-array-using-map">map</a>을 사용하였습니다.
 또한 각각의 파일명에 대해 <hl>lc()</hl>를 적용하여 파일명을 소문자 문자열로 변환하였습니다.
 소문자로 변환하는 작업은 중요한데, 윈도우에서 파일명은 대소문자 구분을 하지 않는데 Perl 내의 문자열은
 대소문자를 구분하기 때문입니다. 이 스크립트가 리눅스/유닉스에서 실행된다면 대소문자에 대한 문제들은

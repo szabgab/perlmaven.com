@@ -11,4 +11,4 @@
 =comments_disqus_enable 0
 =show_social 0
 
-Os seguintes <a href="http://perlmaven.com/products">produtos estão disponíveis em Inglês</a>.
+Os seguintes <a href="https://perlmaven.com/products">produtos estão disponíveis em Inglês</a>.

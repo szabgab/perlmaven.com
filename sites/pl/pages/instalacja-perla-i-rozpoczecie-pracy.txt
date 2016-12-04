@@ -23,7 +23,7 @@ Zobaczymy także standardowy przykład "Hello World".
 
 =abstract end
 
-Możesz także <a href="http://perlmaven.com/beginner-perl-maven-installation">obejrzeć odpowiednie video</a>.
+Możesz także <a href="https://perlmaven.com/beginner-perl-maven-installation">obejrzeć odpowiednie video</a>.
 
 <h2>Windows</h2>
 
@@ -57,7 +57,7 @@ przy użyciu standardowych narzędzi instalacyjnych.
 <h2>Edytor i IDE</h2>
 
 Chociaż jest to zalecane, nie musisz korzystać z IDE Padre do pisania kodu w Perlu.
-W następnej części wymienię kilka <a href="http://perlmaven.com/perl-editor">edytorów oraz IDE</a> z których
+W następnej części wymienię kilka <a href="https://perlmaven.com/perl-editor">edytorów oraz IDE</a> z których
 możesz korzystać do swojego programowania w Perlu. Nawet jeśli wybierzesz inny edytor, zalecam
 użytkownikom Windows instalację wymienionego wyżej pakietu DWIM Perl.
 
@@ -72,7 +72,7 @@ które wgrałem na YouTube.
 <iframe width="640" height="360" src="//www.youtube.com/embed/c3qzmJsR2H0" frameborder="0" allowfullscreen></iframe>
 
 W takim przypadku możesz także chcieć zapoznać się z 
-<a href="http://perlmaven.com/beginner-perl-maven-video-course">Beginner Perl Maven video course</a>.
+<a href="https://perlmaven.com/beginner-perl-maven-video-course">Beginner Perl Maven video course</a>.
 
 <h2>Pierwszy program</h2>
 
@@ -115,7 +115,7 @@ Rozszerzmy go nieco.
 
 <h2>Perl w wierszu poleceń dla nieużywających Padre</h2>
 
-Jeśli nie używasz Padre lub jednego z innych <a href="http://perlmaven.com/perl-editor">IDE</a>
+Jeśli nie używasz Padre lub jednego z innych <a href="https://perlmaven.com/perl-editor">IDE</a>
 nie będziesz w stanie uruchomić skryptu z samego edytora.
 Przynajmniej nie domyślnie. Będziesz musiał otworzyć wiersz poleceń
 (albo cmd w Windows), zmienić katalog na ten w którym zapisałeś plik hello.pl
@@ -261,4 +261,4 @@ Wtedy wyświetl sumę tych dwóch liczb.
 <h2>Co dalej?</h2>
 
 Następną część samouczka jest o
-<a href="http://perlmaven.com/perl-editor">edytorach, IDE oraz środowiskach deweloperskich dla Perla.</a>.
+<a href="https://perlmaven.com/perl-editor">edytorach, IDE oraz środowiskach deweloperskich dla Perla.</a>.

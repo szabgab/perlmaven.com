@@ -72,7 +72,7 @@ print award(@good, @evil), "\n";
 들어 있는 것을 보게 되고, 어느 값들이 첫번째 배열에서 왔고 어느 값들이 두번째 배열에서 왔는지를
 알 수 있는 쉬운 방법은 없습니다. 이 문제를 해결하기 위해서는 레퍼런스에 대해 알아야 합니다.
 
-<a href="http://perlmaven.com/pro">Perl Maven Pro</a> 구독자들은
-<a href="http://perlmaven.com/passing-two-arrays-to-a-function">함수에 두 개의 배열을 전달하는 법</a>에
+<a href="https://perlmaven.com/pro">Perl Maven Pro</a> 구독자들은
+<a href="https://perlmaven.com/passing-two-arrays-to-a-function">함수에 두 개의 배열을 전달하는 법</a>에
 대한 기사를 볼 수 있습니다.
 

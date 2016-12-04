@@ -53,6 +53,6 @@ If the array <hl>shift</hl> works on is empty, then <hl>shift</hl> will return <
 
 Regardless if the array was explicitely given to it or implicely selected based on the location of <hl>shift</hl>.
 
-See <a href="http://perlmaven.com/beginner-perl-maven-shift-and-unshift">video explaining shift and unshift</a>
-or the example <a href="http://perlmaven.com/beginner-perl-maven-shift">using shift to get first parameter of a script</a>.
+See <a href="https://perlmaven.com/beginner-perl-maven-shift-and-unshift">video explaining shift and unshift</a>
+or the example <a href="https://perlmaven.com/beginner-perl-maven-shift">using shift to get first parameter of a script</a>.
 

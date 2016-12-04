@@ -62,7 +62,7 @@ Je suis conu pour être le créateur original de <a href="http://padre.perlide.o
 <h2>Les traductions</h2>
 
 <p>
-    Grâce à plusieurs bénévoles enthousiastes, <a href="http://perlmaven.com/perl-tutorial">la version originale en anglais de ce site</a> a déjà été traduite dans plusieurs autres langues. Si vous aimeriez aider dans l'une de ces langues ou dans une autre langue non encore répertoriée ci-dessous, alors veuillez svp contacter Gabor dont les coordonnées apparaissent en fin de cette page.
+    Grâce à plusieurs bénévoles enthousiastes, <a href="https://perlmaven.com/perl-tutorial">la version originale en anglais de ce site</a> a déjà été traduite dans plusieurs autres langues. Si vous aimeriez aider dans l'une de ces langues ou dans une autre langue non encore répertoriée ci-dessous, alors veuillez svp contacter Gabor dont les coordonnées apparaissent en fin de cette page.
     <ul>
     <li><a href="http://tw.perlmaven.com/">en chinois traditionel</a></li>
     <li><a href="http://cn.perlmaven.com/perl-tutorial">en chinois simplifié</a></li>

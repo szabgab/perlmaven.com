@@ -10,7 +10,7 @@
 
 =abstract start
 
-זה חלקו הראשון של <a href="http://perlmaven.com/perl-tutorial">המדריך לפרל (Perl)</a>.
+זה חלקו הראשון של <a href="https://perlmaven.com/perl-tutorial">המדריך לפרל (Perl)</a>.
 
 בחלק זה תלמדו כיצד להתקין פרל על Windows ואיך להתחיל להשתמש בפרל על Windows, לינוקס או מקינטוש.
 
@@ -59,7 +59,7 @@
 אם אתם מעדיפים, תוכלו לצפות בוידאו שהעליתי ל-Youtube
 <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with Perl</a>
 
-וייתכן שתתעניינו גם ב <a href="http://perlmaven.com/beginner-perl-maven-video-course">קורס הוידאו למתחילים  בפרל</a>.
+וייתכן שתתעניינו גם ב <a href="https://perlmaven.com/beginner-perl-maven-video-course">קורס הוידאו למתחילים  בפרל</a>.
 
 <h2>תוכנית ראשונה</h2>
 
@@ -105,7 +105,7 @@ print "Hello World\n";
 
 <h2>פרל על שורת הפקודה למי שאינו משתמש ב-Padre</h2>
 
-אם אינכם משתמשים ב-Padre או באחת <a href="http://perlmaven.com/perl-editor">מסביבות הפיתוח</a> האחרות
+אם אינכם משתמשים ב-Padre או באחת <a href="https://perlmaven.com/perl-editor">מסביבות הפיתוח</a> האחרות
 לא תוכלו להריץ את התוכנית שלכם ישירות מהעורך.
 לפחות לא כברירת מחדך. תצטרכו לפתוח shell (או cmd ב-Windows), לעבור לתיקייה שבה שמרתם את
 הקובץ hello.pl ולהקליד:
@@ -249,5 +249,5 @@ say "World";
 <h2>מה הלאה?</h2>
 
 החלק הבא של המדריך הוא על 
-<a href="http://perlmaven.com/perl-editor">עורכים, IDE, וסביבות עבודה ל-Perl</a>.
+<a href="https://perlmaven.com/perl-editor">עורכים, IDE, וסביבות עבודה ל-Perl</a>.
 

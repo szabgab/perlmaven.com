@@ -57,7 +57,7 @@ my %h = (
 
 If in the above code <hl>func</hl> calls <hl>return;</hl> without any argument, then it will return the empty list and the
 hash creation will complain about
-<a href="http://perlmaven.com/creating-hash-from-an-array">Odd number of elements in hash assignment</a>, but much worse,
+<a href="https://perlmaven.com/creating-hash-from-an-array">Odd number of elements in hash assignment</a>, but much worse,
 it will create a hash as if we had
 
 <code lang="perl">

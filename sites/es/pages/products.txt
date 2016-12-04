@@ -15,10 +15,10 @@ Los siguientes productos están disponibles en Inglés:
 
 <h2>E-books</h2>
 <ul>
-  <li><a href="http://perlmaven.com/beginner-perl-maven-e-book">Beginner Perl Maven e-book</a></li>
-  <li><a href="http://perlmaven.com/advanced-perl-maven-e-book">Advanced Perl Maven e-book</a></li>
-  <li><a href="http://perlmaven.com/test-automation-using-perl-e-book">Test Automation using Perl e-book</a></li>
-  <li><a href="http://perlmaven.com/perl-maven-cookbook">The Perl Maven Cookbook</a></li>
+  <li><a href="https://perlmaven.com/beginner-perl-maven-e-book">Beginner Perl Maven e-book</a></li>
+  <li><a href="https://perlmaven.com/advanced-perl-maven-e-book">Advanced Perl Maven e-book</a></li>
+  <li><a href="https://perlmaven.com/test-automation-using-perl-e-book">Test Automation using Perl e-book</a></li>
+  <li><a href="https://perlmaven.com/perl-maven-cookbook">The Perl Maven Cookbook</a></li>
 </ul>
 
 <h2>Video courses</h2>
@@ -26,6 +26,6 @@ Los siguientes productos están disponibles en Inglés:
 Disponibles a través de Udemy.
 
 <ul>
-  <li><a href="http://perlmaven.com/beginner-perl-maven-video-course">Beginner Perl Maven video course</a></li>
-  <li><a href="http://perlmaven.com/advanced-perl-maven-video-course">Advanced Perl Maven video course</a></li>
+  <li><a href="https://perlmaven.com/beginner-perl-maven-video-course">Beginner Perl Maven video course</a></li>
+  <li><a href="https://perlmaven.com/advanced-perl-maven-video-course">Advanced Perl Maven video course</a></li>
 </ul>

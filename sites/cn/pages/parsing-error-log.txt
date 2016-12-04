@@ -400,7 +400,7 @@ sub process {
 
 之后我们填充两个哈希数组，一个用于统计每个实体里有多少块，一个用于统计每个错误出现的次数。
 第二个不需要特殊处理，但是第一个有个例外。
-如前边所讨论，可能在第一个实体声明之前存在某个块。这样变量$entity就是<hl>undef</hl>了。这会引发一个<a href="http://perlmaven.com/use-of-uninitialized-value">使用未初始化的值</a>的警告。
+如前边所讨论，可能在第一个实体声明之前存在某个块。这样变量$entity就是<hl>undef</hl>了。这会引发一个<a href="https://perlmaven.com/use-of-uninitialized-value">使用未初始化的值</a>的警告。
 
 为了让它能正常工作，我们或是需要用单独的变量统计这些块，或者需要使用一个特殊的默认实体名称。
 我选择后者，并将$entry变量在声明时赋值为'_DEFAULT_'。
@@ -428,7 +428,7 @@ sub process_block {
 <h2>报表</h2>
 
 代码最后一部分是生成报表。process()函数结束后，我们得到两个填充了值的哈希。
-我们遍历每个哈希的键，根据键值<a href="http://perlmaven.com/sorting-arrays-in-perl">排序</a>之后打印出他们的内容。
+我们遍历每个哈希的键，根据键值<a href="https://perlmaven.com/sorting-arrays-in-perl">排序</a>之后打印出他们的内容。
 
 <code lang="perl">
 say "\nNumber of blocks in each Entity";

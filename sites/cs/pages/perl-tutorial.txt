@@ -19,5 +19,5 @@
   <li><a href="/perl-na-prikazove-radce">Perl na příkazové řádce</a></li>
 </ol>
 
-Originální verze je k dispozici zde: <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
+Originální verze je k dispozici zde: <a href="https://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
 

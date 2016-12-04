@@ -81,7 +81,7 @@ $x = 23;
 </code>
 
 Aceasta va funcționa, dar acest cod va genera o atenționare:
-<a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only
+<a href="https://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only
 once: possible typo at ...</a>.
 
 În orice caz, în mod normal nu v-ați conduce mașina fără centura de
@@ -133,7 +133,7 @@ print $y;
 Problema este că variabila <hl>$y</hl> este declarată în cadrul
 blocului, (între perechea de acolade) ceea ce înseamnă că nu există în
 afara acelui bloc.  Aceasta se
-numește <a href="http://perlmaven.com/scope-of-variables-in-perl"><b>vizibilitatea</b>
+numește <a href="https://perlmaven.com/scope-of-variables-in-perl"><b>vizibilitatea</b>
 variabilei</a> (n.t. en: <b>scope</b>).
 
 Conceptul de <b>vizibilitate</b> diferă în funcție de limbajul de
@@ -181,7 +181,7 @@ soluții posibile și corecte d.p.d.v. sintactic.
 
 Bine înțeles, dacă uităm să ștergem <hl>my</hl> din interiorul
 blocului, sau dacă <hl>$x</hl> este fals, atunci primim un mesaj de avertizare
-<a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a>
+<a href="https://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a>
 (folosirea unei valori neinițializate).
 
 <h2>Celelalte căi</h2>

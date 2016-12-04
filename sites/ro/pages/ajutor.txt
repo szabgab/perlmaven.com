@@ -14,7 +14,7 @@ Dacă ai nevoie de ajutor pentru limbajul Perl sau pentru o problemă chiar
 și înainte de a începe să scrii scriptul tău Perl există mai multe opțiuni.
 Cele pe care le recomand și sunt gratuite, sunt listate pe această
 pagină.  Dacă nici una dintre ele nu corespunde nevoilor tale îl poți
-contacta pe unul dintre <a href="http://perlmaven.com/perl-training-consulting">consultanții Perl recomandați</a> și poți cere o ofertă de preț.
+contacta pe unul dintre <a href="https://perlmaven.com/perl-training-consulting">consultanții Perl recomandați</a> și poți cere o ofertă de preț.
 
 =abstract end
 
@@ -22,13 +22,13 @@ contacta pe unul dintre <a href="http://perlmaven.com/perl-training-consulting">
 
 Grupul Perl Mongers din <a href="http://cluj.pm.org/">Cluj</a>.
 
-Sunt de asemenea și <a href="http://perlmaven.com/perl-training-consulting">consultanți Perl recomandați</a> vorbitori de limba română.
+Sunt de asemenea și <a href="https://perlmaven.com/perl-training-consulting">consultanți Perl recomandați</a> vorbitori de limba română.
 
 <h2>Situl Perl Maven</h2>
 
 Pe situl Perl Maven sunt multe articole.  Unele dintre ele pot fi de
 ajutor.  Poți vedea o listă a articolelor
-din <a href="http://perlmaven.com/archive">arhivă</a> şi poți căuta după cuvintele cheie folosind formularul de căutare din bara de meniu de deasupra.
+din <a href="https://perlmaven.com/archive">arhivă</a> şi poți căuta după cuvintele cheie folosind formularul de căutare din bara de meniu de deasupra.
 O parte dintre articole sunt traduse și în limba română și se găsesc în acestă <a href="/archive">arhivă</a>.
 
 Dacă trimiți o întrebare prin e-mail autorilor sitului Perl Maven, sau

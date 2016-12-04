@@ -49,7 +49,7 @@ Vielleicht findest Du einige nützliche Beispiele.
 <div class="main-content">
 Perl wird oft zur Test-Automation verwendet. Wenn Du in diesem Bereich arbeitest oder arbeiten willst (es ist großartig
 im Code anderer Leute Fehler zu finden :) ), kannst Du das <a href="/perl-tutorial">Perl-Tutorial</a> lesen. Es gibt
-auch das Buch <a href="http://perlmaven.com/test-automation-using-perl-e-book">Test Automation using Perl</a> zu kaufen.
+auch das Buch <a href="https://perlmaven.com/test-automation-using-perl-e-book">Test Automation using Perl</a> zu kaufen.
 </div>
 
 <div class="main-content">

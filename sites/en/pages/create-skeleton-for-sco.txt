@@ -248,7 +248,7 @@ if (eval { ExtUtils::MakeMaker->VERSION(6.3002) }) {
 #			bugtracker => {
 #				web        => 'http://github.com/szabgab/Module-Name/issues',
 #			},
-#			homepage   => 'http://perlmaven.com/',
+#			homepage   => 'https://perlmaven.com/',
 #		},
 #		x_contributors => [
 #			'Peti Bar <petibar@cpan.org>',

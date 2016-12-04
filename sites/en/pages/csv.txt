@@ -59,7 +59,7 @@ $VAR1 = [
 If you'd like to access the individual elements in each row you can do it with the following syntax:
 <hl>$fields->[2];</hl> which would access the 3rd element in the current row (indexing starts from 0).
 
-For more details see the article explaining <a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">how to read a CSV file using Perl</a>.
+For more details see the article explaining <a href="https://perlmaven.com/how-to-read-a-csv-file-using-perl">how to read a CSV file using Perl</a>.
 
 
 <h2>Text::CSV or Text::CSV_XS ?</h2>
@@ -84,15 +84,15 @@ So unless you want to force your users to always use Text::CSV_XS, you'd be prob
 <h2>Related Articles</h2>
 
 <ul>
-    <li><a href="http://perlmaven.com/split-csv-file-into-multiple-files">Split CSV file into multiple small CSV files</a></li>
-    <li><a href="http://perlmaven.com/multiple-command-line-counters">Multiple command line counters with plain TSV text file back-end</a></li>
-    <li><a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">How to read a CSV file using Perl?</a></li>
-    <li><a href="http://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">How to calculate the balance of bank accounts in a CSV file, using Perl?</a></li>
-    <li><a href="http://perlmaven.com/calculate-bank-balance-take-two-dbd-csv">Calculating bank balance, take two: DBD::CSV</a></li>
+    <li><a href="https://perlmaven.com/split-csv-file-into-multiple-files">Split CSV file into multiple small CSV files</a></li>
+    <li><a href="https://perlmaven.com/multiple-command-line-counters">Multiple command line counters with plain TSV text file back-end</a></li>
+    <li><a href="https://perlmaven.com/how-to-read-a-csv-file-using-perl">How to read a CSV file using Perl?</a></li>
+    <li><a href="https://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">How to calculate the balance of bank accounts in a CSV file, using Perl?</a></li>
+    <li><a href="https://perlmaven.com/calculate-bank-balance-take-two-dbd-csv">Calculating bank balance, take two: DBD::CSV</a></li>
     
-    <li><a href="http://perlmaven.com/beginner-perl-maven-process-csv-file">Process CSV file (screencast)</a></li>
-    <li><a href="http://perlmaven.com/beginner-perl-maven-text-csv-xs">Process CSV file using Text::CSV_XS (screencast)</a></li>
-    <li><a href="http://perlmaven.com/beginner-perl-maven-process-csv-file-short-version">Process CSV file short version (screencast)</a></li>
-    <li><a href="http://perlmaven.com/beginner-perl-maven-oneliner-sum-of-csv">One-liner sum of column in CSV</a></li>
+    <li><a href="https://perlmaven.com/beginner-perl-maven-process-csv-file">Process CSV file (screencast)</a></li>
+    <li><a href="https://perlmaven.com/beginner-perl-maven-text-csv-xs">Process CSV file using Text::CSV_XS (screencast)</a></li>
+    <li><a href="https://perlmaven.com/beginner-perl-maven-process-csv-file-short-version">Process CSV file short version (screencast)</a></li>
+    <li><a href="https://perlmaven.com/beginner-perl-maven-oneliner-sum-of-csv">One-liner sum of column in CSV</a></li>
 </ul>
 

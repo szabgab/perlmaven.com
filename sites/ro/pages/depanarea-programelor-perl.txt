@@ -63,7 +63,7 @@ printare</b> în program și poți examina rezultatul mai târziu.
 Perl vine cu un debugger în linie de comandă foarte puternic.  Deși
 recomand învățarea utilizării lui, poate fi de natură să intimideze la
 început.  Am pregătit un video unde
-prezint <a href="http://perlmaven.com/using-the-built-in-debugger-of-perl">
+prezint <a href="https://perlmaven.com/using-the-built-in-debugger-of-perl">
 comenzile de bază ale debugger-ului integrat în Perl</a>.
 
 IDE-uri, precum <a href="http://www.activestate.com/">Komodo</a>,

@@ -43,7 +43,7 @@ Die wichtigste Seite ist wahrscheinlich <a href="http://perldoc.perl.org/perlvar
 auf der Du Informationen über Variablen wie <hl>$_</hl> und <hl>@_</hl> erhältst.
 
 <a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> erklärt die Syntax von Perl
-einschließlich der <a href="http://perlmaven.com/while-loop">while loop</a>.
+einschließlich der <a href="https://perlmaven.com/while-loop">while loop</a>.
 
 <h2>perldoc auf der Kommandozeile</h2>
 

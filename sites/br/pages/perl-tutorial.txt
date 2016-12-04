@@ -21,12 +21,12 @@ A versão on-line gratuita do tutorial está em desenvolvimento constante. Muita
 em adição, muitas estão sendo liberadas semanalmente. Se você têm interesse em ser avisado quando novos capítulos
 do tutorial são lançados, por favor inscreva-se na <a href="/register">mailing list</a>.
 
-Há ainda o <a href="http://perlmaven.com/beginner-perl-maven-e-book">e-book</a> correspondente ao material do tutorial,
+Há ainda o <a href="https://perlmaven.com/beginner-perl-maven-e-book">e-book</a> correspondente ao material do tutorial,
 disponível para compra (somente en inglês), em adição ao tutorial. O livro ainda inclui <i>slides</i> sobre o
 material apresentado tópicos exclusivos e exercícios.
 
 Você pode acompanhar também as vídeo aulas (também em inglês)
-<a href="http://perlmaven.com/beginner-perl-maven-video-course">video-course</a> que incluem mais de 20 aulas, somando num total de
+<a href="https://perlmaven.com/beginner-perl-maven-video-course">video-course</a> que incluem mais de 20 aulas, somando num total de
 mais de 5 horas de vídeo. O pacote inclui também o código fonte dos exemplos e exercícios.
 
 <h2>Tutorial Perl Maven on-line e Gratuito para Iniciantes</h2>
@@ -196,5 +196,5 @@ remover, copiar ou renomear um arquivo com Perl</a></li>
 
 <hr />
 
-Apenas um lembrete, estão disponíveis para <a href="/products">compra</a> os <a href="http://perlmaven.com/beginner-perl-maven-e-book">e-books</a> e
-<a href="http://perlmaven.com/beginner-perl-maven-video-course">as vídeo aulas</a>.
+Apenas um lembrete, estão disponíveis para <a href="/products">compra</a> os <a href="https://perlmaven.com/beginner-perl-maven-e-book">e-books</a> e
+<a href="https://perlmaven.com/beginner-perl-maven-video-course">as vídeo aulas</a>.

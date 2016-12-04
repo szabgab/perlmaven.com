@@ -601,7 +601,7 @@ sub create_dancer {
 
 my $perlmaven = create_dancer('Perl-Maven', 'Perl::Maven');
 
-mount 'http://perlmaven.com/'       => builder { $perlmaven };
+mount 'https://perlmaven.com/'       => builder { $perlmaven };
 foreach my $cc (qw(br cn cs de eo es fr he id it ko ne te ro ru tr tw meta)) {
     mount "http://$cc.perlmaven.com/"       => builder { $perlmaven };
 }
@@ -621,7 +621,7 @@ sub create_dancer {
 
 my $perlmaven = create_dancer('Perl-Maven', 'Perl::Maven');
 
-mount 'http://perlmaven.com/'       => builder { $perlmaven };
+mount 'https://perlmaven.com/'       => builder { $perlmaven };
 foreach my $cc (qw(br cn cs de eo es fr he id it ko ne te ro ru tr tw meta)) {
     mount "http://$cc.perlmaven.com/"       => builder { $perlmaven };
 }
@@ -677,7 +677,7 @@ Unfortunately I found out this only 2 days after deployment of the Dancer 2 tree
 
 When creating a session, by default both Dancer 1 and Dancer 2, set the cookie to be used for the exact hostname being served.
 This means when someone visits <a href="http://br.perlmaven.com/">br.perlmaven.com</a> that person will get a cookie for br.perlmaven.com
-and when that same person visits <a href="http://perlmaven.com/">perlmaven.com</a>, the system will set another cookie and thus
+and when that same person visits <a href="https://perlmaven.com/">perlmaven.com</a>, the system will set another cookie and thus
 a separate session.
 
 In order to have a single cookie and a single session, one needs to make sure the cookie is for <hl>.perlmaven.com</hl> (note the leading dot).

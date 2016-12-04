@@ -80,8 +80,8 @@ If not, that's a distribution you might want to patch.
 A number of articles about Travis-CI and Perl:
 
 <ul>
-  <li><a href="http://perlmaven.com/enable-travis-ci-for-continous-integration">Enable Travis-CI for continuous integration</a></li>
-  <li><a href="http://perlmaven.com/using-travis-ci-and-installing-geo-ip-on-linux">Using Travis-CI and installing Geo::IP on Linux and OSX</a></li>
+  <li><a href="https://perlmaven.com/enable-travis-ci-for-continous-integration">Enable Travis-CI for continuous integration</a></li>
+  <li><a href="https://perlmaven.com/using-travis-ci-and-installing-geo-ip-on-linux">Using Travis-CI and installing Geo::IP on Linux and OSX</a></li>
   <li><a href="http://blogs.perl.org/users/neilb/2014/08/try-travis-ci-with-your-cpan-distributions.html">Try Travis CI with your CPAN distributions</a></li>
   <li><a href="http://blogs.perl.org/users/gabor_szabo/2015/09/travis-ci-and-latest-version-of-perl-5.html">Travis-CI and latest version of Perl 5</a> (see the comments)</li>
 </ul>

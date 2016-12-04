@@ -73,7 +73,7 @@ framework de programação Perl orientado a objetos pós moderno</a>.
 Sozinha, ela permite <a href="http://perldancer.org/">desenvolvimento web com
 o framework Perl Dancer</a>.
 Existe uma postagem sobre <a
-href="http://perlmaven.com/getting-started-with-perl-dancer">começando a usar o Perl
+href="https://perlmaven.com/getting-started-with-perl-dancer">começando a usar o Perl
 Dancer</a> (em inglês).
 
 Ela também inclui módulos para ler e escrever arquivos do Microsoft Excel e

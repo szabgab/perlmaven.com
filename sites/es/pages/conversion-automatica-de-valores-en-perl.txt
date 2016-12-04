@@ -107,12 +107,12 @@ print $x + $y;  # 7
 
 <h2>Argument isn't numeric</h2>
 
-Perl te informa mediante este <a href="http://perlmaven.com/argument-isnt-numeric-in-numeric">warning (en)</a>
+Perl te informa mediante este <a href="https://perlmaven.com/argument-isnt-numeric-in-numeric">warning (en)</a>
 que esta intentando convertir un string a número y la conversión no es perfecta.
 
 Hay otra serie de errores y warnings comunes en Perl.
-Por ejemplo <a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name (en)</a>
-y <a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value (en)</a>.
+Por ejemplo <a href="https://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name (en)</a>
+y <a href="https://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value (en)</a>.
 
 <h2>¿Como evitar el warning?</h2>
 

@@ -67,7 +67,7 @@ Segunda fila
 Tercera fila
 </code>
 
-Abrir un fichero para lectura es muy similar a como <a href="http://perlmaven.com/writing-to-files-with-perl">se abre para escritura</a>, pero en lugar del signo "mayor que" (<hl>></hl>), usamos el signo "menor que" (<hl><</hl>).
+Abrir un fichero para lectura es muy similar a como <a href="https://perlmaven.com/writing-to-files-with-perl">se abre para escritura</a>, pero en lugar del signo "mayor que" (<hl>></hl>), usamos el signo "menor que" (<hl><</hl>).
 
 Esta vez también configuramos la codificación como UTF-8. En la mayoría del código usted verá sólo el signo "menor que".
 

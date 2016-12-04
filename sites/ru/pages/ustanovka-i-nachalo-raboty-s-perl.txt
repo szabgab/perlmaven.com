@@ -65,7 +65,7 @@
 Вы можете посмотреть видео
 <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with Perl</a> (англ.),
 которое я загрузил на YouTube. Также обратите внимание на
-<a href="http://perlmaven/beginner-perl-maven-video-course">Beginner Perl Maven video course</a> (англ.).
+<a href="https://perlmaven.com/beginner-perl-maven-video-course">Beginner Perl Maven video course</a> (англ.).
 
 <h2>Первая программа</h2>
 

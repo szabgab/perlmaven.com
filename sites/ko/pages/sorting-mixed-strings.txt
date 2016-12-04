@@ -10,7 +10,7 @@
 
 =abstract start
 
-문자열로만 또는 숫자로만 구성된 <a href="http://perlmaven.com/sorting-arrays-in-perl">배열을 정렬하는 것</a>은
+문자열로만 또는 숫자로만 구성된 <a href="https://perlmaven.com/sorting-arrays-in-perl">배열을 정렬하는 것</a>은
 <hl>sort</hl> 함수를 사용하여 쉽게 할 수 있습니다.
 하지만 만일 문자열을 정렬하고자 하는데 그 문자열의 일부분을 구성하는 숫자들을 기준으로
 정렬하고 싶다면 어떻게 해야 할까요?
@@ -92,7 +92,7 @@ say $number;
 불행하게도 <hl><=></hl> 연산자는 좌변과 우변 모두 스칼라 문맥을 생성합니다.
 
 그러면 어떻게 스칼라 문맥에서 값을 추출해낼 수 있을까요? 이것은 
-<a href="http://perlmaven.com/perl-split">배열 슬라이스</a>를 즉석으로 만들어서
+<a href="https://perlmaven.com/perl-split">배열 슬라이스</a>를 즉석으로 만들어서
 해결할 수 있습니다.
 
 <code lang="perl">
@@ -136,7 +136,7 @@ my @y = sort { (($a =~ /(\d+)/)[0] || 0) <=> (($b =~ /(\d+)/)[0] || 0) } @x;
 
 <h2>속도</h2>
 
-그분은 또한 정규식 엔진은 "느리고" <a href="http://perlmaven.com/how-to-sort-faster-in-perl">Schwartzian transform</a>을
+그분은 또한 정규식 엔진은 "느리고" <a href="https://perlmaven.com/how-to-sort-faster-in-perl">Schwartzian transform</a>을
 사용하여 속도를 향상시킬 수 있다고 지적해주었습니다.
 그에 따르면 배열에 원소가 5개 이상 있다면, Schwartzian 변환이 더 빠릅니다.
 원소가 20개라면 단순한 정렬보다 두 배 빠를 것입니다.

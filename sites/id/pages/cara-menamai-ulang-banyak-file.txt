@@ -49,7 +49,7 @@ Pada <b>Windows</b> nama path bisa menggunakan tanda garis miring:
 ataupun menggunakan back-slash: <hl>my $dir = "c:\\full\\path\\to\\dir";</hl>.
 
 <a href="https://metacpan.org/pod/Path::Iterator::Rule">Path::Iterator::Rule</a> akan
-memungkinkan kita untuk <a href="http://perlmaven.com/finding-files-in-a-directory-using-perl">melompati alur direktori</a>,
+memungkinkan kita untuk <a href="https://perlmaven.com/finding-files-in-a-directory-using-perl">melompati alur direktori</a>,
 sehingga kita dapat menamai ulang semua file di semua alur.
 
 <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a> bisa membantu kita mengekstraksi nama

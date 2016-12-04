@@ -371,7 +371,7 @@ repository.
 
 <h2>Perl Maven</h2>
 
-<a href="http://perlmaven.com/">perlmaven.com</a>. The site (along with a few smaller sites of <a href="http://szabgab.com/">Gabor Szabo</a>)
+<a href="https://perlmaven.com/">perlmaven.com</a>. The site (along with a few smaller sites of <a href="http://szabgab.com/">Gabor Szabo</a>)
 is hosted on  <a href="/linode">Linode</a> instance with 4Gb memory 4 CPUs.
 It is based on <a href="/dancer">Dancer 2</a> its source code is available on <a href="https://github.com/szabgab/Perl-Maven">GitHub</a>.
 The content is also available on <a href="https://github.com/szabgab/perlmaven.com">GitHub</a>

@@ -32,7 +32,7 @@ Dans ce premier exemple, vous pouvez voir comment, étant donné un tableau de t
 la fonction <hl>pop</hl> enlève le dernier élément (celui avec l'indice le plus élevé) de ce tableau et le renvoie.
 
 Dans le cas particulier d'un tableau donné vide, la fonction <hl>pop</hl>
-retourne <a href="http://perlmaven.com/undef-and-defined-in-perl">undef (EN)</a>.
+retourne <a href="https://perlmaven.com/undef-and-defined-in-perl">undef (EN)</a>.
 
 <h2>La fonction prédéfinie push</h2>
 
@@ -74,7 +74,7 @@ print "@noms\n";     # Bar Moo
 </code>
 
 Dans le cas particulier d'un tableau donné vide, la fonction <b>shift</b>
-retourne <a href="http://perlmaven.com/undef-and-defined-in-perl">undef (EN)</a>.
+retourne <a href="https://perlmaven.com/undef-and-defined-in-perl">undef (EN)</a>.
 
 <h2>La fonction prédéfinie unshift</h2>
 

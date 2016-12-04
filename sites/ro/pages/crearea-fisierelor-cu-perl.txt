@@ -121,7 +121,7 @@ Mai bine am verifica dacă <hl>open()</hl> a fost cu succes înainte de
 a continua.
 
 Din fericire comanda <hl>open()</hl> ea însăși returnează
-<a href="http://perlmaven.com/boolean-values-in-perl">ADEVĂR la
+<a href="https://perlmaven.com/boolean-values-in-perl">ADEVĂR la
 succes și FALS la eșec</a>, deci putem scrie așa:
 
 <h2>Open or die</h2>

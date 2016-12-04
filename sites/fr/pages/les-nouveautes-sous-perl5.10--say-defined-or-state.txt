@@ -124,4 +124,4 @@ sub compteur_au_suivant {
 
 ce qui est plus clair.
 
-Pour un autre cas d'utilisation du mot-clé <hl>state</hl>, allez lire la section "Comment éviter d'afficher les répétitions des avertissements de Perl ?" dans l'article <a href="http://perlmaven.com/how-to-capture-and-save-warnings-in-perl">Comment capturer et sauver des avertissements en Perl ? (EN)</a>.
+Pour un autre cas d'utilisation du mot-clé <hl>state</hl>, allez lire la section "Comment éviter d'afficher les répétitions des avertissements de Perl ?" dans l'article <a href="https://perlmaven.com/how-to-capture-and-save-warnings-in-perl">Comment capturer et sauver des avertissements en Perl ? (EN)</a>.

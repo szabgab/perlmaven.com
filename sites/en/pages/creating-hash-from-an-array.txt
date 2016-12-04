@@ -9,7 +9,7 @@
 
 =abstract start
 
-When <a href="http://perlmaven.com/perl-hashes">learning about hashes</a> we have seen how we could create (or more specifically <b>initialize</b>)
+When <a href="https://perlmaven.com/perl-hashes">learning about hashes</a> we have seen how we could create (or more specifically <b>initialize</b>)
 a hash from a list of key-value pairs. What if we have this data in an array?
 
 =abstract end

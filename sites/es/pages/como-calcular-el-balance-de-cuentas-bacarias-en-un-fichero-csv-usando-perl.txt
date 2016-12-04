@@ -127,7 +127,7 @@ Bareword "Dr" not allowed while "strict subs" in use at banktran.pl line 18.
  Execution of banktran.pl aborted due to compilation errors.
 </code>
 
-<a href="http://perlmaven.com/barewords-in-perl"> Bareword not allowed while "strict subs" in use (en)</a>
+<a href="https://perlmaven.com/barewords-in-perl"> Bareword not allowed while "strict subs" in use (en)</a>
 es uno de los avisos comúnes que se describe en el <a href="/perl-tutorial"> tutorial de Perl Maven</a>.
 Tenemos que poner las comillas sencillas <hl>'</hl> a la cadena <b>Dr</b>
 
@@ -146,7 +146,7 @@ Total Balance of Account Number is Rs.880
 </code>
 
 
-La advertencia  <a href="http://perlmaven.com/use-of-uninitialized-value"> Use of uninitialized value (en)</a>
+La advertencia  <a href="https://perlmaven.com/use-of-uninitialized-value"> Use of uninitialized value (en)</a>
 es otra advertencia común en Perl. Significa que el <hl>$sum2</hl> era undef en línea 23.
 
 
@@ -196,7 +196,7 @@ Puse la palabra "moderno" entre comillas porque esto está disponible desde el a
 nuevo, pero aún así muchas personas aprenden primero el viejo estilo.
 
 Hay un artículo porqué uno
-<a href="http://perlmaven.com/open-files-in-the-old-way"> no debe abrir los archivos de la antigua forma en Perl (en)</a>,
+<a href="https://perlmaven.com/open-files-in-the-old-way"> no debe abrir los archivos de la antigua forma en Perl (en)</a>,
 No lo repetiré aquí, sólo lo arreglare el código:
 
 
@@ -265,7 +265,7 @@ Esto volvió un poco más larga la línea de arriba, pero hará el resto del có
 Esto también hace nos hace crear algunas variables innecesarias
 
 
-<a href="http://perlmaven.com/advanced-perl-maven-e-book">Advanced Perl developers (en)</a> podría hacerlo mejor mediante el uso de una rebanada de matriz:
+<a href="https://perlmaven.com/advanced-perl-maven-e-book">Advanced Perl developers (en)</a> podría hacerlo mejor mediante el uso de una rebanada de matriz:
 
 
 <code lang="perl">

@@ -67,7 +67,7 @@ angular.module('PerlMavenApp').controller('PerlMavenRecentCtrl', function($scope
 
     I believe Perl, just as any other Open Source technology can only strive if many people contribute a little-bit.
     Therefore I've started to create a page, that will help you find some "low hanging fruits". Things that I think
-    can be easy to contribute to. On <a href="http://perlmaven.com/recent">this page</a> you can find the 100 most recent
+    can be easy to contribute to. On <a href="https://perlmaven.com/recent">this page</a> you can find the 100 most recent
     uploads to CPAN. The first 3 columns give generic information.
 
   <h3>Repository - Is there a link to a public Version control system?</h3>

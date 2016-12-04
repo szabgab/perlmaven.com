@@ -48,7 +48,7 @@ my $frozen = Storable::freeze $data;
 <h2>B::Deparse</h2>
 
 B::Deparse 모듈을 다시 사용해봅시다. 이 모듈은 예전에
-<a href="http://perlmaven.com/bug-in-the-for-loop-b-deparse-to-the-rescue">for 루프 문제를 해결하는 데에도 도움이 되었었습니다</a>.
+<a href="https://perlmaven.com/bug-in-the-for-loop-b-deparse-to-the-rescue">for 루프 문제를 해결하는 데에도 도움이 되었었습니다</a>.
 
 스크립트 첫번째 버전을 <hl>perl -MO=Deparse  store.pl</hl>과 같이 실행해봅시다:
 
@@ -71,14 +71,14 @@ my $frozen = Storable::freeze($data);
 </code>
 
 두번째 버전은 우리가 파일에 작성한 코드와 완전히 똑같은 코드를 보여줍니다.
-(음, <a href="http://perlmaven.com/perl-hashes">fat-arrow</a>를 쉼표로 바꾼 것만 제외하면 말이죠,
+(음, <a href="https://perlmaven.com/perl-hashes">fat-arrow</a>를 쉼표로 바꾼 것만 제외하면 말이죠,
 하지만 이 두 가지가 동일한 것이란 걸 우리는 알고 있습니다.)
 
 반면에, 첫번째 버전에서는, 코드의 중요한 부분이 <hl>$data->Storable::freeze;</hl>와 같이 바뀌어 버렸습니다.
 
 Perl은 우리가 <hl>$data</hl> 객체에 대하여 <hl>Storable::freeze</hl> 메쏘드를 호출한 것으로 간주합니다.
 이 코드는 <hl>$data</hl>가
-<a href="http://perlmaven.com/getting-started-with-classic-perl-oop">bless된 레퍼런스</a>였다면
+<a href="https://perlmaven.com/getting-started-with-classic-perl-oop">bless된 레퍼런스</a>였다면
 동작했을 겁니다. 그 동작이 우리가 의도했던 것과 좀 다를지는 몰라도 말이죠.
 
 <h2>use</h2>

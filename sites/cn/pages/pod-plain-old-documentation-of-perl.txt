@@ -45,7 +45,7 @@ print "Here comes the code ... \n";
 如果你在终端中键入， <hl>perldoc script.pl</hl>，输出却是<hl>=pod</hl> and <hl>=cut</hl> 之间的部分。
 perl 和 perldoc 在这里功能正好想反，前者执行代码部分，后者提取文档部分，然后根据POD 的相应输出标准输出。
 
-输出的格式标准参见<a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">Perl 标准文档</a>.
+输出的格式标准参见<a href="https://perlmaven.com/core-perl-documentation-cpan-module-documentation">Perl 标准文档</a>.
 
 直接在代码中插入 POD 的好处是，文档和代码在一起，比不必维护两个文件。
 

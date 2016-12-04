@@ -24,7 +24,7 @@ On your computer, mobile phone or tablet you have a software application called 
 
 You type a web address (also called a "<a href="https://en.wikipedia.org/wiki/Url">URL</a>") in the address-bar: something like www.google.com or perlmaven.com/perl-tutorial,
 or even just an <a href="https://en.wikipedia.org/wiki/Ip_address">IP address</a> like 127.0.0.1. If you have not supplied the <hl>protocol</hl>, the browser will
-automatically add it, and change the address to http://www.google.com or http://perlmaven.com/perl-tutorial .
+automatically add it, and change the address to http://www.google.com or https://perlmaven.com/perl-tutorial .
 Then it does some background work translating the address to the IP number of the server, that we don't discuss here,
 and send a request to fetch the appropriate page from the right computer somewhere, possibly on the other side of the world.
 

@@ -91,7 +91,7 @@ print "response " . Dumper \%data;
 
 <h3>打印报头</h3>
 
-打印报头是通过<hl>print $q->header;</hl>这一行实现。这等价于我们在<a href="http://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">另一个例子中</a>看到的<hl>print "Content-Type: text/html; charset=ISO-8859-1\n\n";</hl>
+打印报头是通过<hl>print $q->header;</hl>这一行实现。这等价于我们在<a href="https://perlmaven.com/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">另一个例子中</a>看到的<hl>print "Content-Type: text/html; charset=ISO-8859-1\n\n";</hl>
 
 <h3>获取提交数据</h3>
 

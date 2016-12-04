@@ -32,7 +32,7 @@ use warnings;
 # Global symbol "$email" requires explicit package name at ...
 </code>
 
-위 코드에서 우리는 중괄호로 감싼 익명 블록 안에서 <hl>$email</hl> 이라는 새로운 변수를 선언했습니다. 이 변수는 변수가 선언된 시점부터 블록이 끝나는 시점까지 존재합니다. 따라서 닫는 중괄호 이후부터는 존재하지 않습니다. 위 예제에서 주석 처리된 아래의 출력문을 실행시키면 다음과 같은 컴파일 오류를 만나게 될 것입니다. <a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">'Global symbol "$email" requires explicit package name at ....'</a>
+위 코드에서 우리는 중괄호로 감싼 익명 블록 안에서 <hl>$email</hl> 이라는 새로운 변수를 선언했습니다. 이 변수는 변수가 선언된 시점부터 블록이 끝나는 시점까지 존재합니다. 따라서 닫는 중괄호 이후부터는 존재하지 않습니다. 위 예제에서 주석 처리된 아래의 출력문을 실행시키면 다음과 같은 컴파일 오류를 만나게 될 것입니다. <a href="https://perlmaven.com/global-symbol-requires-explicit-package-name">'Global symbol "$email" requires explicit package name at ....'</a>
 
 다시 말해 <b>my로 선언된 모든 변수는 블록 영역 안에만 존재</b>합니다.
 

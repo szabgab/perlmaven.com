@@ -48,7 +48,7 @@ so I would not need to send people to two sites for searching.
 <a href="http://perlweekly.com/">Perl Weekly</a>, is one of the sites I publish together with Yanick Champoux
 Once in a while I need to look up an article I remember was posted there. So I check it in the <a href="http://perlweekly.com/all.html">list of all the articles</a>.
 
-<a href="http://perlmaven.com/">Perl Maven</a> another site I publish, but more and more frequently I need to use the search box at the top
+<a href="https://perlmaven.com/">Perl Maven</a> another site I publish, but more and more frequently I need to use the search box at the top
 to locate old articles.
 
 <a href="http://perltv.org/">Perl TV</a> another site I maintain collecting Perl-related videos: presentations and screencasts.

@@ -40,5 +40,5 @@ Le livre numérique <b>Automatisation des tests avec Perl</b> (en anglais seulem
 
 En achetant ce livre, vous avez le droit pour un temps illimité aux mises à jour de ce livre dès que les nouvelles éditions sont publiées !
 
-<div class="btn"><a href="http://perlmaven.com/buy?product=test_automation_using_perl_ebook">Achetez-le pour 39 dollars US !</a></div>
+<div class="btn"><a href="https://perlmaven.com/buy?product=test_automation_using_perl_ebook">Achetez-le pour 39 dollars US !</a></div>
 

@@ -92,4 +92,4 @@ Normal, poți face ce face toată lumea, să fii unic, sau să-ți alegi editoru
 
 <h2>În continuare</h2>
 
-Următoarea parte a tutorialului este legată de Perl în linia de comandă (doar în engleză deocamdată): <a href="http://perlmaven.com/perl-on-the-command-line">Perl on the command line</a>.
+Următoarea parte a tutorialului este legată de Perl în linia de comandă (doar în engleză deocamdată): <a href="https://perlmaven.com/perl-on-the-command-line">Perl on the command line</a>.

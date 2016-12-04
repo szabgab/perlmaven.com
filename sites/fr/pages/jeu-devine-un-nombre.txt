@@ -74,5 +74,5 @@ C'est le début d'un jeu que nous allons écrire. Un jeu petit, mais amusant.
 Après que l'utilisateur a écrit au clavier le nombre auquel il pensait, l'ordinateur indique si ce nombre donné était plus grand ou plus petit que le nombre "pensé".
 
 A ce stade, <b>il n'est pas nécessaire</b> de permettre à l'utilisateur de deviner à plusieurs reprises.
-Nous y travaillerons dans un autre article. Bien sûr, je ne vais pas vous empêcher de lire la <a href="http://perlmaven.com/while-loop">boucle while en Perl (EN)</a>.
+Nous y travaillerons dans un autre article. Bien sûr, je ne vais pas vous empêcher de lire la <a href="https://perlmaven.com/while-loop">boucle while en Perl (EN)</a>.
 Vous pouvez lire cet article et laisser l'utilisateur deviner à plusieurs reprises.

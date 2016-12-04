@@ -25,7 +25,7 @@
 <h2>use strict의 세 가지 부분</h2>
 
 <hl>use strict 'vars';</hl>를 켜면 여러분이
-<a href="http://perlmaven.com/variable-declaration-in-perl">변수를 선언하지 않고 사용하려 하면</a> 컴파일 에러가 나게 됩니다.
+<a href="https://perlmaven.com/variable-declaration-in-perl">변수를 선언하지 않고 사용하려 하면</a> 컴파일 에러가 나게 됩니다.
 
 <hl>use strict 'refs';</hl>를 켜면 여러분이
 <a href="/symbolic-reference-in-perl">심볼릭 레퍼런스</a>를 사용하려 하면 런타임 에러가 나게 됩니다.

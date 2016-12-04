@@ -85,7 +85,7 @@ Can't use string ("Foo") as a HASH ref while "strict refs" in use at ...
 사실, 저는 <hl>%person</hl> 해시를 건드리지도 않았습니다. 두번째 할당 구문에서 저는
 <hl>$person</hl> 스칼라 변수를 해시 레퍼런스로 사용했습니다. 만일 <hl>$person</hl> 변수가 undef인 상태였다면
 이것은 문제가 없었을 것입니다. 이 변수는 해시 레퍼런스로
-<a href="http://perlmaven.com/autovivification">autovivify</a>(pro 페이지)
+<a href="https://perlmaven.com/autovivification">autovivify</a>(pro 페이지)
 되었을 것입니다. 이 변수가 이미 문자열을 담고 있기 때문에, Perl은 그 변수에 담긴 문자열을 해시의 이름으로
 사용하려고 시도합니다. 그 효과로 저는 <hl>%Foo</hl> 해시의 'name' 키에다 'Bar'를 할당했던 것입니다.
 

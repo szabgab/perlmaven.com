@@ -25,7 +25,7 @@ primești notificări pentru articolele publicate, te rog să te <a
 href="/register">înscrii la newsletter</a>.
 
 Există de asemenea și o carte în
-format <a href="http://perlmaven.com/beginner-perl-maven-e-book">e-book</a> a materialului
+format <a href="https://perlmaven.com/beginner-perl-maven-e-book">e-book</a> a materialului
 care poate fi achiziționată.  În completare la tutorialul gratuit,
 acea versiune include de asemenea și diapozitivele de prezentare de la
 cursul corespunzător și multe exerciții cu rezolvările lor. Materialul
@@ -33,7 +33,7 @@ de curs acoperă toate părțile, inclusiv pe cele care nu sunt încă în
 versiunea gratuită.
 
 Cursul este acompaniat și
-de <a href="http://perlmaven.com/beginner-perl-maven-video-course">video-course</a> în
+de <a href="https://perlmaven.com/beginner-perl-maven-video-course">video-course</a> în
 limba engleză și include peste 210 screencast-uri, un total de mai
 mult de 5 ore de vizionare. În plus față de materialul de prezentare,
 cuprinde de asemenea explicații ale soluțiilor pentru toate
@@ -78,35 +78,35 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li><a href="/cuvinte-goale-in-perl">Cuvintele "goale" nu sunt admise sub "strict subs"</a></li>
 <li><a href="/denumire-folosita-doar-o-data-posibila-eroare">Denumirea "main::x" este folosită doar o dată: posibilă eroare la ...</a></li>
 <li><a href="/categorie-de-avertizari-necunoscuta">Categorie de avertizări necunoscută</a></li>
-<li><a href="http://perlmaven.com/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
-<li><a href="http://perlmaven.com/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
+<li><a href="https://perlmaven.com/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
+<li><a href="https://perlmaven.com/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
 </ul>
 </li>
-<li><a href="http://perlmaven.com/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
+<li><a href="https://perlmaven.com/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
 <li>Instrucțiuni condiționale: if</li>
-<li><a href="http://perlmaven.com/boolean-values-in-perl">Boolean (true and false) values in Perl</a></li>
+<li><a href="https://perlmaven.com/boolean-values-in-perl">Boolean (true and false) values in Perl</a></li>
 <li>Operatori numerici și pentru șiruri</li>
-<li><a href="http://perlmaven.com/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
-<li><a href="http://perlmaven.com/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
+<li><a href="https://perlmaven.com/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
+<li><a href="https://perlmaven.com/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
 <li>Documente integrate (Here documents)</li>
-<li><a href="http://perlmaven.com/scalar-variables">Scalar variables</a></li>
-<li><a href="http://perlmaven.com/comparing-scalars-in-perl">Comparing scalars</a></li>
-<li><a href="http://perlmaven.com/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
-<li><a href="http://perlmaven.com/number-guessing-game">Number Guessing game (rand, int)</a></li>
-<li><a href="http://perlmaven.com/while-loop">Perl while loop</a></li>
-<li><a href="http://perlmaven.com/scope-of-variables-in-perl">Scope of variables in Perl</a></li>
+<li><a href="https://perlmaven.com/scalar-variables">Scalar variables</a></li>
+<li><a href="https://perlmaven.com/comparing-scalars-in-perl">Comparing scalars</a></li>
+<li><a href="https://perlmaven.com/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
+<li><a href="https://perlmaven.com/number-guessing-game">Number Guessing game (rand, int)</a></li>
+<li><a href="https://perlmaven.com/while-loop">Perl while loop</a></li>
+<li><a href="https://perlmaven.com/scope-of-variables-in-perl">Scope of variables in Perl</a></li>
 </ol>
 
 <b>Fișiere</b>
 <ol>
-<li><a href="http://perlmaven.com/how-to-exit-from-perl-script">exit</a></li>
-<li><a href="http://perlmaven.com/stdout-stderr-and-redirection">Standar Output, Standard Error and command line redirection</a></li>
+<li><a href="https://perlmaven.com/how-to-exit-from-perl-script">exit</a></li>
+<li><a href="https://perlmaven.com/stdout-stderr-and-redirection">Standar Output, Standard Error and command line redirection</a></li>
 <li><a href="/aviz">Aviz (warn)</a></li>
 <li>die</li>
 <li><a href="/crearea-fisierelor-cu-perl">Crearea fișierelor cu Perl</a></li>
 <li><a href="/adaugare-continut-la-fisiere">Adăugare conținut la fișiere</a></li>
-<li><a href="http://perlmaven.com/open-and-read-from-files">Open and read from files using Perl</a></li>
-<li><a href="http://perlmaven.com/open-files-in-the-old-way">Don't open files in the old way</a></li>
+<li><a href="https://perlmaven.com/open-and-read-from-files">Open and read from files using Perl</a></li>
+<li><a href="https://perlmaven.com/open-files-in-the-old-way">Don't open files in the old way</a></li>
 <li>Binary mode, dealing with Unicode</li>
 <li>Reading from a binary file, read, eof</li>
 <li>tell, seek</li>
@@ -119,15 +119,15 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li><a href="/bucla-for-in-perl">Bucla for în Perl</a></li>
 <li>Lists in Perl</li>
 <li>Using Modules</li>
-<li><a href="http://perlmaven.com/perl-arrays">Arrays in Perl</a></li>
+<li><a href="https://perlmaven.com/perl-arrays">Arrays in Perl</a></li>
 <li>Process command line parameters @ARGV, Getopt::Long</li>
-<li><a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a></li>
-<li><a href="http://perlmaven.com/join">join</a></li>
-<li><a href="http://perlmaven.com/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
-<li><a href="http://perlmaven.com/scalar-and-list-context-in-perl">Context sensitivity in Perl</a></li>
-<li><a href="http://perlmaven.com/sorting-arrays-in-perl">Sorting arrays in Perl</a></li>
-<li><a href="http://perlmaven.com/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
-<li><a href="http://perlmaven.com/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
+<li><a href="https://perlmaven.com/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a></li>
+<li><a href="https://perlmaven.com/join">join</a></li>
+<li><a href="https://perlmaven.com/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
+<li><a href="https://perlmaven.com/scalar-and-list-context-in-perl">Context sensitivity in Perl</a></li>
+<li><a href="https://perlmaven.com/sorting-arrays-in-perl">Sorting arrays in Perl</a></li>
+<li><a href="https://perlmaven.com/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
+<li><a href="https://perlmaven.com/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
 <li>Stack and queue</li>
 <li>reverse</li>
 <li>the ternary operator</li>
@@ -137,7 +137,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 
 <b>Subrutine</b>
 <ol>
-<li><a href="http://perlmaven.com/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
+<li><a href="https://perlmaven.com/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
 <li>Parameter passing and checking for subroutines</li>
 <li>Variable number of parameters</li>
 <li>Returning a list</li>
@@ -146,7 +146,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 
 <b>Tabele de dispersie (Hashes), Tablouri (arrays)</b>
 <ol>
-<li><a href="http://perlmaven.com/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
+<li><a href="https://perlmaven.com/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
 <li>exists, delete hash elements</li>
 </ol>
 
@@ -160,7 +160,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>Regex: Anchors</li>
 <li>Regex options and modifiers</li>
 <li>Substitutions (search and replace)</li>
-<li><a href="http://perlmaven.com/trim">trim - remove leading and trailing spaces</a></li>
+<li><a href="https://perlmaven.com/trim">trim - remove leading and trailing spaces</a></li>
 </ol>
 
 <b>Funcțiuni relative la Perl și Shell</b>
@@ -169,7 +169,7 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>Perl pipes</li>
 <li>Running external programs</li>
 <li>Unix commands: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
-<li><a href="http://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
+<li><a href="https://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
 <li>Windows/DOS commands: del, ren, dir</li>
 <li>File globbing (Wildcards)</li>
 <li>Directory handles</li>
@@ -178,18 +178,18 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 
 <b>CPAN</b>
 <ol>
-<li><a href="http://perlmaven.com/download-and-install-perl">Download and install Perl (Strawberry Perl or manual compilation)</a></li>
+<li><a href="https://perlmaven.com/download-and-install-perl">Download and install Perl (Strawberry Perl or manual compilation)</a></li>
 <li>Download and install Perl using Perlbrew</a></li>
 <li>Locating and evaluating CPAN modules</li>
 <li>Downloading and installing Perl Modules from CPAN</li>
-<li><a href="http://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
+<li><a href="https://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
 <li>How to change @INC to a relative directory</li>
 <li>local::lib</li>
 </ol>
 
 <b>Câteva exemple de utilizare pentru Perl</b>
 <ol>
-<li><a href="http://perlmaven.com/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
+<li><a href="https://perlmaven.com/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
 <li>Reading Excel files using Perl</li>
 <li>Creating Excel files using Perl</li>
 <li>Sending e-mail using Perl</li>
@@ -197,20 +197,20 @@ pe care să le rezolvi pentru a pune în practică ceea ce ai învățat.
 <li>Web applications with Perl: PSGI</li>
 <li>Parsing XML files</li>
 <li>Reading and writing JSON files</li>
-<li><a href="http://perlmaven.com/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
+<li><a href="https://perlmaven.com/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
 <li>Accessing LDAP using Perl</li>
 </ol>
 
 <b>Altele</b>
 <ol>
-<li><a href="http://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
-<li><a href="http://perlmaven.com/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse</a></li>
-<li><a href="http://perlmaven.com/object-oriented-perl-using-moose">Object Oriented Perl using Mooses</a></li>
-<li><a href="http://perlmaven.com/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a>
+<li><a href="https://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
+<li><a href="https://perlmaven.com/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse</a></li>
+<li><a href="https://perlmaven.com/object-oriented-perl-using-moose">Object Oriented Perl using Mooses</a></li>
+<li><a href="https://perlmaven.com/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a>
 </ol>
 
 
 <hr />
 
-Vă reamintim că există și varianta <a href="http://perlmaven.com/beginner-perl-maven-e-book">e-book</a> și 
-<a href="http://perlmaven.com/beginner-perl-maven-video-course">cursuri video</a> care pot fi <a href="/products">achiziționate</a>.
+Vă reamintim că există și varianta <a href="https://perlmaven.com/beginner-perl-maven-e-book">e-book</a> și 
+<a href="https://perlmaven.com/beginner-perl-maven-video-course">cursuri video</a> care pot fi <a href="/products">achiziționate</a>.

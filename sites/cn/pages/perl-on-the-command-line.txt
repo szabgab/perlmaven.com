@@ -89,4 +89,4 @@ gabor@pm:~$ perl -e "print 42"
 
 <h2>下一步</h2>
 
-下一部分是关于<a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">Perl核心文档和CPAN模块文档</a>。
+下一部分是关于<a href="https://perlmaven.com/core-perl-documentation-cpan-module-documentation">Perl核心文档和CPAN模块文档</a>。

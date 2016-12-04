@@ -79,7 +79,7 @@ if (eval { ExtUtils::MakeMaker->VERSION(6.46) }) {
             bugtracker => {
                 web        => 'http://github.com/szabgab/MetaCPAN-SCO/issues',
             },
-            homepage   => 'http://perlmaven.com/',
+            homepage   => 'https://perlmaven.com/',
         },
     };
 }

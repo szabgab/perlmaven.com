@@ -112,6 +112,6 @@ Alex Shatlovsky께서 <a href="http://www.sublimetext.com/">Sublime Text</a>를 
 
 <h2>다음</h2>
 
-튜토리알의 다음 내용은 <a href="http://perlmaven.com/perl-on-the-command-line">커맨드 라인에서 Perl 실행하기</a>에 관한 짧은 도움말입니다.
+튜토리알의 다음 내용은 <a href="https://perlmaven.com/perl-on-the-command-line">커맨드 라인에서 Perl 실행하기</a>에 관한 짧은 도움말입니다.
 
 

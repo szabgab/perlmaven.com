@@ -94,5 +94,5 @@ Au fait, si vous êtes intéressé par certains très bons unilignes, je vous re
 
 <h2>La suite</h2>
 
-La suite est disponible dans <a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">la documentation du noyau Perl et
+La suite est disponible dans <a href="https://perlmaven.com/core-perl-documentation-cpan-module-documentation">la documentation du noyau Perl et
 la documentation des modules sous CPAN</a>.

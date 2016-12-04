@@ -20,7 +20,7 @@ There is another, related list of the <a href="/perl-based-open-source-products"
 
 <h2>Most actively maintained sites</h2>
 
-<a href="http://perlmaven.com/">Perl Maven</a>, the web-site you are looking at now is based on <a href="/dancer">Dancer 2</a>
+<a href="https://perlmaven.com/">Perl Maven</a>, the web-site you are looking at now is based on <a href="/dancer">Dancer 2</a>
 and its source code is available on <a href="https://github.com/szabgab/Perl-Maven">GitHub</a>.
 
 <a href="https://metacpan.org/">MetaCPAN</a>, the Open Source search engine of CPAN. It has several sub-projects hosted

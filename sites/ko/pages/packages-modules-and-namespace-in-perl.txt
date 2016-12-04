@@ -89,8 +89,8 @@ print "$x\n";        # 23
 
 이것은 매우 혼란스럽습니다. <hl>$x</hl>라는 변수가 두 개 있는 걸로 보입니다.
 실제로 이 두 변수는 서로 다른 변수입니다. <hl>$main:x</hl>는 
-<a href="http://perlmaven.com/package-variables-and-lexical-variables-in-perl">패키지 변수</a>이고,
-<hl>$x</hl>는 <a href="http://perlmaven.com/package-variables-and-lexical-variables-in-perl">렉시컬 변수</a>입니다.
+<a href="https://perlmaven.com/package-variables-and-lexical-variables-in-perl">패키지 변수</a>이고,
+<hl>$x</hl>는 <a href="https://perlmaven.com/package-variables-and-lexical-variables-in-perl">렉시컬 변수</a>입니다.
 
 대부분의 경우는 <hl>my</hl>로 선언한 렉시컬 변수를 사용하며, 네임스페이스는
 함수들을 구분할 때만 씁니다.
@@ -151,7 +151,7 @@ $ perlcritic --single-policy Modules::ProhibitMultiplePackages script.pl
 Multiple "package" declarations at line 19, column 1.  Limit to one per file.  (Severity: 4)
 </code>
 
-<a href="http://perlmaven.com/perl-critic-one-policy">한 번에 한 가지 정책씩 검사하기</a>도
+<a href="https://perlmaven.com/perl-critic-one-policy">한 번에 한 가지 정책씩 검사하기</a>도
 읽어보세요.
 
 여기서는 <b>Foo</b> 네임스페이스를 foo.pl 파일에 옮기고, <hl>require</hl>를 써서 불러올 수 있습니다.

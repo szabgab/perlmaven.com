@@ -31,11 +31,11 @@ There are several modules that can convert Perl data structures to JSON, and JSO
 
 <a href="https://metacpan.org/pod/JSON::PP">JSON::PP</a> is a Pure-Perl implementation that can be found in the recent releases of
 Perl core. 
-According to comments on <a href="http://perlmaven.com/comparing-the-speed-of-json-decoders">this article</a>
+According to comments on <a href="https://perlmaven.com/comparing-the-speed-of-json-decoders">this article</a>
 <a href="https://metacpan.org/pod/Mojo::JSON">Mojo::JSON</a>, which is also a pure-Perl implementation, is 50% faster than
 JSON::PP.
 
-According to my measurements <a href="http://perlmaven.com/comparing-the-speed-of-json-decoders">Cpanel::JSON::XS is the fastest</a>
+According to my measurements <a href="https://perlmaven.com/comparing-the-speed-of-json-decoders">Cpanel::JSON::XS is the fastest</a>
 implementation and despite its name, the only connection to Cpanel is that they sponsor the maintenance of it.
 
 <a href="https://metacpan.org/pod/JSON::MaybeXS">JSON::MaybeXS</a> is a wrapper around a number of these implementations.

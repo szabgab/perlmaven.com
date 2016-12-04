@@ -10,11 +10,11 @@
 
 =abstract start
 
-Quando algo de errado acontece em seu script/programa, é de costume alertar o usuário sobre o problema. Em scripts executados pela linha de comando isso normalmente ocorre imprimindo na tela mensagens de aviso no <a href="http://perlmaven.com/stdout-stderr-and-redirection"> canal de erro (Standard Error channel)</a>.
+Quando algo de errado acontece em seu script/programa, é de costume alertar o usuário sobre o problema. Em scripts executados pela linha de comando isso normalmente ocorre imprimindo na tela mensagens de aviso no <a href="https://perlmaven.com/stdout-stderr-and-redirection"> canal de erro (Standard Error channel)</a>.
 
 =abstract end
 
-Como foi explicado no artigo sobre <a href="http://perlmaven.com/stdout-stderr-and-redirection"> saída padrão e erros</a>,
+Como foi explicado no artigo sobre <a href="https://perlmaven.com/stdout-stderr-and-redirection"> saída padrão e erros</a>,
 no Perl você pode fazer isso imprimindo diretamente em <hl>STDERR</hl>
 
 <code lang="perl">
@@ -50,7 +50,7 @@ Isso pode ser bastante útil quando você possui um script que executa vários o
 Ainda há mais.
 
 Perl possui um manipulador especial para avisos.
-Isso significa que você, ou outra pessoa, pode adicionar código ao programa que <a href="http://perlmaven.com/how-to-capture-and-save-warnings-in-perl"> captura todos os avisos </a>. Isso é algo um pouco mais avançado, mas se você estiver interessado, vá em frente e veja esse tutorial.
+Isso significa que você, ou outra pessoa, pode adicionar código ao programa que <a href="https://perlmaven.com/how-to-capture-and-save-warnings-in-perl"> captura todos os avisos </a>. Isso é algo um pouco mais avançado, mas se você estiver interessado, vá em frente e veja esse tutorial.
 
 <h2>aviso</h2>
 
@@ -75,5 +75,5 @@ beforeafter
 
 Onde a palavra “before” aparece após ambos os avisos.
 
-Neste caso, leia sobre <a href="http://perlmaven.com/stdout-stderr-and-redirection#buffering">buffering</a>.
+Neste caso, leia sobre <a href="https://perlmaven.com/stdout-stderr-and-redirection#buffering">buffering</a>.
 

@@ -86,7 +86,7 @@ use warnings;
 my $broken_email  = "foo@bar.com";
 </code>
 
-Generará un error: <a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol "@bar" requires explicit package name at ... line ... (en)</a>
+Generará un error: <a href="https://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol "@bar" requires explicit package name at ... line ... (en)</a>
 y un warning:
 <b>Possible unintended interpolation of @bar in string at ... line ...</b>
 
@@ -189,7 +189,7 @@ print "El "nombre" es "$name"\n";
 </code>
 
 Cuando Perl ve el símbolo de comilla doble justo antes de "nombre" piensa que es el final del string
-y se queja de que la palabra <b>nombre</b> es un <a href="http://perlmaven.com/barewords-in-perl">bareword (en)</a>
+y se queja de que la palabra <b>nombre</b> es un <a href="https://perlmaven.com/barewords-in-perl">bareword (en)</a>
 (texto sin comillas).
 
 Como probablemente has adivinado necesitamos escapar el símbolo <hl>"</hl>:
@@ -252,7 +252,7 @@ my $name = 'foo';
 print qq(El )nombre( es "$name"\n);
 </code>
 
-Perl te dará un error de sintaxis porque "nombre" es un <a href="http://perlmaven.com/barewords-in-perl">bareword (en)</a>.
+Perl te dará un error de sintaxis porque "nombre" es un <a href="https://perlmaven.com/barewords-in-perl">bareword (en)</a>.
 Perl no puede entenderlo todo.
 
 Podrías, por supuesto, escapar los paréntesis en la cadena <hl>\)</hl> y <hl>\(</hl>, pero estaríamos volviendo a tener código

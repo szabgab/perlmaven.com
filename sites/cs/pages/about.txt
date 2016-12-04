@@ -9,4 +9,4 @@
 =show_social 0
 
 
-Placeholder. Check out the <a href="http://perlmaven.com/">English version</a>.
+Placeholder. Check out the <a href="https://perlmaven.com/">English version</a>.

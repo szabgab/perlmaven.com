@@ -178,5 +178,5 @@ $VAR1 = [
       ];
 </code>
 
-Puedes ver algunos ejemplos más en <a href="http://perlmaven.com/sorting-mixed-strings">ordenando strings mixtos (en)</a>.
+Puedes ver algunos ejemplos más en <a href="https://perlmaven.com/sorting-mixed-strings">ordenando strings mixtos (en)</a>.
 

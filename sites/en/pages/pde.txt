@@ -76,7 +76,7 @@ Released on 2015.08.24
 Released on 2015.03.25
 
 Back then it was called PMDE (Perl Maven Development Environment), but later I dropped the M.
-It was announced exclusively to the <a href="http://perlmaven.com/pro/">Perl Maven Pro</a> subscribers.
+It was announced exclusively to the <a href="https://perlmaven.com/pro/">Perl Maven Pro</a> subscribers.
 
 
  

@@ -104,6 +104,6 @@ de Peteris Krumins.
 <h2>A continuación</h2>
 
 La siguiente parte de este tutorial trata sobre la
-<a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">Documentación del núcleo de Perl y documentación de módulos de CPAN</a>.
+<a href="https://perlmaven.com/core-perl-documentation-cpan-module-documentation">Documentación del núcleo de Perl y documentación de módulos de CPAN</a>.
 
 

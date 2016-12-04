@@ -12,7 +12,7 @@
 
 Dans cette leçon issue du <a href="/perl-tutorial">tutoriel de Perl</a>, nous allons voir <b>comment inclure des données en fin de ficher avec Perl</b>.
 
-Dans la précédente leçon, nous avons appris <a href="http://perlmaven.com/writing-to-files-with-perl">comment écrire dans des fichiers</a>.
+Dans la précédente leçon, nous avons appris <a href="https://perlmaven.com/writing-to-files-with-perl">comment écrire dans des fichiers</a>.
 Ce cas d'utilisation est bon quand nous sommes entrain de créer un fichier vide, mais il existe d'autres cas d'utilisation où vous aimeriez garder le contenu du fichier original tout en ajoutant quelques nouvelles lignes de contenu en fin de ce fichier.
 
 Le cas le plus répandu étant quand vous écrivez dans un fichier journal.

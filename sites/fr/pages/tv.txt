@@ -9,4 +9,4 @@
 =archive 0
 =comments_disqus_enable 0
 
-Les <a href="http://perlmaven.com/tv">interviews</a> de Perl Maven sont en anglais.
+Les <a href="https://perlmaven.com/tv">interviews</a> de Perl Maven sont en anglais.

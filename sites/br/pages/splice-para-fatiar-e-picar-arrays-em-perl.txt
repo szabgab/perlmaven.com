@@ -10,7 +10,7 @@
 
 =abstract start
 
-Depois de aprender sobre <a href="http://perlmaven.com/manipulating-perl-arrays">pop, push, shift,
+Depois de aprender sobre <a href="https://perlmaven.com/manipulating-perl-arrays">pop, push, shift,
 and unshift</a>, estudantes às vezes me perguntam como remover um elemento do
 meio de um array.
 

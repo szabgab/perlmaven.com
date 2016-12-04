@@ -27,7 +27,7 @@ modules, but let's have a small example here:
 use strict;
 use warnings;
 
-my $url = 'http://perlmaven.com/';
+my $url = 'https://perlmaven.com/';
 use WWW::Mechanize;
 my $mech = WWW::Mechanize->new( agent => 'wonderbot 1.01' );
 $mech->get( $url );
@@ -234,7 +234,7 @@ Before we do that, let's make another small detour.
 First, change the script and a <hl>print</hl> statement right after the call to <hl>new</hl>
 
 <code lang="perl">
-my $url = 'http://perlmaven.com/';
+my $url = 'https://perlmaven.com/';
 use WWW::Mechanize;
 my $mech = WWW::Mechanize->new( agent => 'wonderbot 1.01' );
 print "$mech\n";

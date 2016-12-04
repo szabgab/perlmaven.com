@@ -12,7 +12,7 @@
 =comments_disqus_enable 0
 
 <div class="main-content">
-Remarque : La <a href="http://perlmaven.com">version originale de ce tutoriel Perl</a> a été écrite en anglais par <a href="/about#auteur">Gabor Szabo</a> qui a fait appel à des bénévoles pour traduire <a href="/about#traduction">ce tutoriel Perl dans d'autres langues</a>. Cette traduction - dans votre cas, en français - devrait vous permettre de vous concentrer sur l'apprentissage du langage Perl, en faisant abstraction de la barrière de la langue, et ainsi de reporter l'apprentissage de la langue anglaise à plus tard, mais pas ad vinam aeternam. Tôt ou tard, vous devrez, comme tout programmeur Perl - et en fait, comme tout programmeur de n'importe quel langage, apprendre au moins les rudiments de la langue anglaise afin de profiter de toute la documentation originale rédigée en anglais sur différents supports : livres, forums, bulletins en ligne d'informations, blogues, etc. Tout hyperlien qui est contenu dans un article écrit dans une langue et qui référence un autre article non encore traduit dans cette langue est redirigé vers la version anglaise de cet autre article.
+Remarque : La <a href="https://perlmaven.com">version originale de ce tutoriel Perl</a> a été écrite en anglais par <a href="/about#auteur">Gabor Szabo</a> qui a fait appel à des bénévoles pour traduire <a href="/about#traduction">ce tutoriel Perl dans d'autres langues</a>. Cette traduction - dans votre cas, en français - devrait vous permettre de vous concentrer sur l'apprentissage du langage Perl, en faisant abstraction de la barrière de la langue, et ainsi de reporter l'apprentissage de la langue anglaise à plus tard, mais pas ad vinam aeternam. Tôt ou tard, vous devrez, comme tout programmeur Perl - et en fait, comme tout programmeur de n'importe quel langage, apprendre au moins les rudiments de la langue anglaise afin de profiter de toute la documentation originale rédigée en anglais sur différents supports : livres, forums, bulletins en ligne d'informations, blogues, etc. Tout hyperlien qui est contenu dans un article écrit dans une langue et qui référence un autre article non encore traduit dans cette langue est redirigé vers la version anglaise de cet autre article.
 </div>
 
 Le tutoriel Perl Maven va vous apprendre les bases du langage de programmation Perl.
@@ -26,9 +26,9 @@ Ce sera une bonne base pour vous permettre d'aller de l'avant.
 La version gratuite en ligne de ce tutoriel est actuellement en développement. De nombreux articles sont prêts. Des articles supplémentaires sont publiés régulièrement dans la langue originale.
 Si vous êtes intéressé d'être mis au courant lorsque de nouveaux articles sont publiés, s'il vous plaît, veuillez vous <a href="/perl-maven-bulletin-d-informations">abonner au bulletin d'informations</a>.
 
-Une <a href="http://perlmaven.com/beginner-perl-maven-e-book">version numérique de cette documentation (EN)</a> existe aussi et est disponible à l'achat. En plus du tutoriel gratuit, cette version comprend également les diapositives du cours correspondant, y compris de nombreux exercices et leurs solutions. Le matériel du cours couvre toutes les parties, y compris celles qui ne sont pas encore reproduites dans la version gratuite.
+Une <a href="https://perlmaven.com/beginner-perl-maven-e-book">version numérique de cette documentation (EN)</a> existe aussi et est disponible à l'achat. En plus du tutoriel gratuit, cette version comprend également les diapositives du cours correspondant, y compris de nombreux exercices et leurs solutions. Le matériel du cours couvre toutes les parties, y compris celles qui ne sont pas encore reproduites dans la version gratuite.
 
-La <a href="http://perlmaven.com/beginner-perl-maven-video-course">vidéo du cours</a> comprend plus de 210 capture vidéos, sur un total de plus de 5 heures de vidéo. En plus de présenter le matériel, il fournit aussi des explications aux solutions de tous les exercices.
+La <a href="https://perlmaven.com/beginner-perl-maven-video-course">vidéo du cours</a> comprend plus de 210 capture vidéos, sur un total de plus de 5 heures de vidéo. En plus de présenter le matériel, il fournit aussi des explications aux solutions de tous les exercices.
 L'ensemble comprend également le code source de tous les exemples et les exercices.
 
 <h2>Le tutoriel en ligne gratuit Perl Maven pour débutant</h2>
@@ -43,11 +43,11 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 
 <b>Introduction</b>
 <ol>
-<li><a href="http://perlmaven.com/installing-perl-and-getting-started">Installer Perl, afficher "Bonjour tout le monde", filet de sécurité (use strict; use warnings;)</a> (EN)</li>
-<li><a href="http://perlmaven.com/perl-editor">Éditeurs et EDIs, environnements de développement pour Perl</a> (EN)</li>
+<li><a href="https://perlmaven.com/installing-perl-and-getting-started">Installer Perl, afficher "Bonjour tout le monde", filet de sécurité (use strict; use warnings;)</a> (EN)</li>
+<li><a href="https://perlmaven.com/perl-editor">Éditeurs et EDIs, environnements de développement pour Perl</a> (EN)</li>
 <li><a href="/perl-en-ligne-de-commande">Perl en ligne de commande</a></li>
 <li><a href="/documentation-noyau-perl-documentation-module-cpan">Documentation du noyau Perl et des modules CPAN</a> (EN)</li>
-<li><a href="http://perlmaven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation : la bonne vieille documentation à la Perl</a> (EN)</li>
+<li><a href="https://perlmaven.com/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation : la bonne vieille documentation à la Perl</a> (EN)</li>
 <li><a href="/utiliser-le-debogueur-integre-de-perl">Déboguer des scripts Perl</a></li>
 </ol>
 
@@ -56,21 +56,21 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li>
     Avertissements et messages d'erreur courants :<br />
     <ul>
-    <li><a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a> (EN)</li>
-    <li><a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a> (EN)</li>
+    <li><a href="https://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a> (EN)</li>
+    <li><a href="https://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a> (EN)</li>
     <li><a href="/barewords-en-perl">Bareword not allowed while "strict subs" in use</a></li>
-    <li><a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a> (EN)</li>
+    <li><a href="https://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a> (EN)</li>
     <li><a href="/categorie-inconnue-d-avertissements">Unknown warnings category</a></li>
-    <li><a href="http://perlmaven.com/scalar-found-where-operator-expected">Scalar found where operator expected</a> (EN)</li>
+    <li><a href="https://perlmaven.com/scalar-found-where-operator-expected">Scalar found where operator expected</a> (EN)</li>
     </ul>
 </li>
-<li><a href="http://perlmaven.com/automatic-value-conversion-or-casting-in-perl">Conversion automatique d'une chaîne de caractères en nombre</a> (EN)</li>
+<li><a href="https://perlmaven.com/automatic-value-conversion-or-casting-in-perl">Conversion automatique d'une chaîne de caractères en nombre</a> (EN)</li>
 <li>Les instructions conditionnelles: if</li>
 <li><a href="/valeurs-booleennes-en-perl">Valeurs booléennes (vrai et faux) en Perl</a></li>
 <li>Opérateurs sur nombres et chaînes de caractères</li>
-<li><a href="http://perlmaven.com/undef-and-defined-in-perl">La valeur initiale undef et la fonction pré-définie defined</a> (EN)</li>
+<li><a href="https://perlmaven.com/undef-and-defined-in-perl">La valeur initiale undef et la fonction pré-définie defined</a> (EN)</li>
 <li>Les documents heredoc</li>
-<li><a href="http://perlmaven.com/string-functions-length-lc-uc-index-substr">Les fonctions prédéfinies pour les chaînes de caractères : length, lc, uc, index, substr</a> (EN)</li>
+<li><a href="https://perlmaven.com/string-functions-length-lc-uc-index-substr">Les fonctions prédéfinies pour les chaînes de caractères : length, lc, uc, index, substr</a> (EN)</li>
 <li><a href="/jeu-devine-un-nombre">Jeu "Devine le nombre" (rand, int)</a></li>
 <li><a href="/la-boucle-while-en-perl">La boucle while en Perl</a></li>
 </ol>
@@ -78,10 +78,10 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <b>Les fichiers</b>
 <ol>
 <li>die, warn et exit</li>
-<li><a href="http://perlmaven.com/writing-to-files-with-perl">Écrire dans des fichiers</a> (EN)</li>
+<li><a href="https://perlmaven.com/writing-to-files-with-perl">Écrire dans des fichiers</a> (EN)</li>
 <li><a href="/ajouter-en-fin-de-fichiers">Ajouter en fin de fichiers</a></li>
-<li><a href="http://perlmaven.com/open-and-read-from-files">Ouvrir et lire des fichiers avec Perl</a> (EN)</li>
-<li><a href="http://perlmaven.com/open-files-in-the-old-way">N'ouvrez pas de fichiers à l'ancienne!</a> (EN)</li>
+<li><a href="https://perlmaven.com/open-and-read-from-files">Ouvrir et lire des fichiers avec Perl</a> (EN)</li>
+<li><a href="https://perlmaven.com/open-files-in-the-old-way">N'ouvrez pas de fichiers à l'ancienne!</a> (EN)</li>
 <li>Le mode binaire, avec Unicode</li>
 <li>Lire un fichier binaire : read, eof</li>
 <li>dire, chercher</li>
@@ -96,12 +96,12 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li>Utiliser des modules</li>
 <li><a href="/les-tableaux-en-perl">Les tableaux en Perl</a></li>
 <li>Traiter les paramètres de la ligne de commande : @ARGV et Getopt::Long</li>
-<li><a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS</a> (EN)</li>
+<li><a href="https://perlmaven.com/how-to-read-a-csv-file-using-perl">Comment lire et traiter un fichier CSV ? split, Text::CSV_XS</a> (EN)</li>
 <li><a href="/la-fonction-predefinie-join">La fonction prédéfinie join</a></li>
-<li><a href="http://perlmaven.com/the-year-19100">L'année 19100 (time, localtime, gmtime)</a> (EN) et introduction au contexte</li>
-<li><a href="http://perlmaven.com/scalar-and-list-context-in-perl">Sensibilité au contexte en Perl</a> (EN)</li>
-<li><a href="http://perlmaven.com/sorting-arrays-in-perl">Trier des tableaux en Perl</a> (EN)</li>
-<li><a href="http://perlmaven.com/unique-values-in-an-array-in-perl">Valeurs uniques dans un tableau Perl</a> (EN)</li>
+<li><a href="https://perlmaven.com/the-year-19100">L'année 19100 (time, localtime, gmtime)</a> (EN) et introduction au contexte</li>
+<li><a href="https://perlmaven.com/scalar-and-list-context-in-perl">Sensibilité au contexte en Perl</a> (EN)</li>
+<li><a href="https://perlmaven.com/sorting-arrays-in-perl">Trier des tableaux en Perl</a> (EN)</li>
+<li><a href="https://perlmaven.com/unique-values-in-an-array-in-perl">Valeurs uniques dans un tableau Perl</a> (EN)</li>
 <li><a href="/manipuler-des-tableaux-avec-perl">Manipuler des tableaux en Perl : shift, unshift, push, pop</a></li>
 <li>La pile et la file d'attente</li>
 <li>La fonction prédéfinie reverse</li>
@@ -112,7 +112,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 
 <b>Les fonctions</b>
 <ol>
-<li><a href="http://perlmaven.com/subroutines-and-functions-in-perl">Les fonctions en Perl</a> (EN)</li>
+<li><a href="https://perlmaven.com/subroutines-and-functions-in-perl">Les fonctions en Perl</a> (EN)</li>
 <li>Passer et vérifier des paramètres de fonctions</li>
 <li>Nombre variable de paramètres</li>
 <li>Renvoyer une liste</li>
@@ -121,7 +121,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 
 <b>Les tables de hachage</b>
 <ol>
-<li><a href="http://perlmaven.com/perl-hashes">Les tables de hachages en Perl</a> : dictionnaire, tableau associatif, table de conversion (EN)</li>
+<li><a href="https://perlmaven.com/perl-hashes">Les tables de hachages en Perl</a> : dictionnaire, tableau associatif, table de conversion (EN)</li>
 <li>Vérifier l'existence d'une clé : exists ; Supprimer des éléments de la table de hachage : delete</li>
 </ol>
 
@@ -135,7 +135,7 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 <li>Regex: ancres</li>
 <li>Regex: options et modificateurs</li>
 <li>Substitutions (rechercher et remplacer)</li>
-<li><a href="http://perlmaven.com/trim">Couper/Supprimer les espaces avant et après</a> (EN)</li>
+<li><a href="https://perlmaven.com/trim">Couper/Supprimer les espaces avant et après</a> (EN)</li>
 </ol>
 
 <b>Fonctionnalités du système d'exploitation via Perl</b>
@@ -153,11 +153,11 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 
 <b>CPAN</b>
 <ol>
-<li><a href="http://perlmaven.com/download-and-install-perl">Télécharger et installer Perl : Strawberry Perl ou compilation manuelle</a> (EN)</li>
+<li><a href="https://perlmaven.com/download-and-install-perl">Télécharger et installer Perl : Strawberry Perl ou compilation manuelle</a> (EN)</li>
 <li>Télécharger et installer Perl : Perlbrew</li>
 <li>Localiser et évaluer des modules CPAN</li>
 <li>Télécharger et installer des modules CPAN avec Perl</li>
-<li><a href="http://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">Comment modifier @INC pour trouver des modules Perl dans un chemin non standard ?</a> (EN)</li>
+<li><a href="https://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">Comment modifier @INC pour trouver des modules Perl dans un chemin non standard ?</a> (EN)</li>
 <li>Comment modifier @INC dans un répertoire relatif ?</li>
 <li>local::lib</li>
 </ol>
@@ -178,9 +178,9 @@ Quand cela sera possible, j'essaierai d'enseigner de façon très orientée tâc
 
 <b>Autre</b>
 <ol>
-<li><a href="http://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">splice pour trancher et découper les tableaux en Perl</a> (EN)</li>
-<li><a href="http://perlmaven.com/how-to-create-a-perl-module-for-code-reuse">Comment créer un module Perl pour la réutilisation du code ?</a> (EN)</li>
-<li><a href="http://perlmaven.com/object-oriented-perl-using-moose">Perl orienté objet avec Moose</a> (EN)</li>
+<li><a href="https://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">splice pour trancher et découper les tableaux en Perl</a> (EN)</li>
+<li><a href="https://perlmaven.com/how-to-create-a-perl-module-for-code-reuse">Comment créer un module Perl pour la réutilisation du code ?</a> (EN)</li>
+<li><a href="https://perlmaven.com/object-oriented-perl-using-moose">Perl orienté objet avec Moose</a> (EN)</li>
 <li><a href="/types-d-attributs-dans-les-classes-perl-utilisant-moose">Les types d'attributs dans les classes Perl avec Moose</a></li>
 </ol>
 

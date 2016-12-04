@@ -11,4 +11,4 @@
 
 
 Placeholder. <a href="http://te.perlmaven.com/">తెలుగు వర్షన్ కోసం చూడండి</a>.
-Placeholder. Check out the <a href="http://perlmaven.com/">English version</a>.
+Placeholder. Check out the <a href="https://perlmaven.com/">English version</a>.

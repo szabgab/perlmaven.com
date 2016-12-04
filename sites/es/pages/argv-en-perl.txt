@@ -85,10 +85,10 @@ Los parámetros de la línea de comandos están en <hl>@ARGV</hl>. Similar a <hl
 La única diferencia con los arrays que tú creas, es que no hay necesidad de declararlo
 y es rellenado automáticamente por Perl cuando el programa arranca.
 
-Aparte de eso, puedes manipularlo como un <a href="http://perlmaven.com/perl-arrays">array</a> normal.
+Aparte de eso, puedes manipularlo como un <a href="https://perlmaven.com/perl-arrays">array</a> normal.
 Puedes iterar sobre sus elementos usando <hl>foreach</hl>, o acceder a uno de ellos usando un índice: <hl>$ARGV[0]</hl>.
 
-También puedes usar <a href="http://perlmaven.com/manipulating-perl-arrays">shift, unshift, pop o push</a> en este array.
+También puedes usar <a href="https://perlmaven.com/manipulating-perl-arrays">shift, unshift, pop o push</a> en este array.
 
 De hecho no solo puedes obtener el contenido de <hl>@ARGV</hl>, también puedes modificarlo.
 
@@ -215,7 +215,7 @@ my $filename = shift or die "Usa: $0 FILENAME\n";
 Partamos la línea en dos partes para entenderlo mejor:
 <hl>my $filename = shift</hl>
 
-Normalmente <a href="http://perlmaven.com/manipulating-perl-arrays">shift</a> recibe un array como parámetro
+Normalmente <a href="https://perlmaven.com/manipulating-perl-arrays">shift</a> recibe un array como parámetro
 pero en este caso la usamos sin ningún parámetro. Cuando no hay ningún parámetro  shift usa por defecto
 la variable <hl>@ARGV</hl>. (Si el código no esta dentro de una función)
 

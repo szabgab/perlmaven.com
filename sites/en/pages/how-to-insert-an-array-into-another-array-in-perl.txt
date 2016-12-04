@@ -23,7 +23,7 @@ two-dimensional array. In this case <hl>@names</hl> will have 4 elements after t
 to an internal array that holds the elements of <hl>@languages</hl>.
 
 The solution to the two cases is quite similar. They both use the 
-<a href="http://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">splice</a> function.
+<a href="https://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">splice</a> function.
 Maybe we just need to adjust how we call the operation:
 
 In the first case we

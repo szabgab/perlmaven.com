@@ -29,7 +29,7 @@ In the next example we make the circles clickable and link each circle to a diff
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<title >I am a title</title>
-	<a xlink:href="http://perlmaven.com/">
+	<a xlink:href="https://perlmaven.com/">
 		<circle cx="100" cy="100" id="red_circle" r="50" style="fill-opacity: 0.5; fill: #FF0000" />
 	</a>
 	<a xlink:href="http://code-maven.com/">
@@ -55,7 +55,7 @@ Each Anchor object will handle a single URL and a single circle.
 
 <code lang="perl">
 	my $red_tag = $svg->anchor(
-		-href => 'http://perlmaven.com/'
+		-href => 'https://perlmaven.com/'
 	);
 	my $red = $red_tag->circle(
        ...

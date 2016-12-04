@@ -60,7 +60,7 @@ exit 42;
 
 <h2>Perl 안에서 종료 상태값 검사하기</h2>
 
-만일, 예를 들어 <a href="http://perlmaven.com/running-external-programs-from-perl">system</a> 함수를 사용하여,
+만일, 예를 들어 <a href="https://perlmaven.com/running-external-programs-from-perl">system</a> 함수를 사용하여,
 하나의 펄 스크립트 안에서 다른 펄 스크립트를 실행한다면, Perl에도 동일한 <hl>$?</hl> 변수가 있어서
 "다른 프로그램"의 종료 상태값을 저장하게 됩니다.
 

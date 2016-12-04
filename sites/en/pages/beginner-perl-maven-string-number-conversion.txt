@@ -29,5 +29,5 @@ In the above case that means the numericla value is <hl>12.34</hl>.
 
 <slidecast file="/media/videos/beginner-perl/string-number-conversion" youtube="tYwlgLXsWVg" />
 
-See also the article about <a href="http://perlmaven.com/automatic-value-conversion-or-casting-in-perl">automatic string to number conversion</a>.
+See also the article about <a href="https://perlmaven.com/automatic-value-conversion-or-casting-in-perl">automatic string to number conversion</a>.
 

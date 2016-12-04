@@ -46,7 +46,7 @@ conoscenza di Perl. Presto, potresti diventare un <b>Perl
 Maven</b>.</p>
 
 <p>Questo sito contiene articoli disponibili a chiunque gratuitamente. Avremo vari
-  <a href="https://perlmaven.com/perl-books">libri</a> e <a href="http://perlmaven.com/perl-videos">corsi in
+  <a href="https://perlmaven.com/perl-books">libri</a> e <a href="https://perlmaven.com/perl-videos">corsi in
   video</a> su Perl in vendita.
 </p>
 

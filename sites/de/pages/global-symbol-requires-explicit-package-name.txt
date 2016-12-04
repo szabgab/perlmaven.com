@@ -126,7 +126,7 @@ print $y;
 
 Das Problem ist, dass die Variable <hl>$y</hl> innerhalb eines Blocks (innerhalb zweier
 geschwungener Klammern) deklariert wurde, was dazu führt, dass sie außerhalb des Blocks
-nicht existiert. Das wird als der <a href="http://perlmaven.com/scope-of-variables-in-perl"><b>Scope</b> einer Variable</a> bezeichnet.
+nicht existiert. Das wird als der <a href="https://perlmaven.com/scope-of-variables-in-perl"><b>Scope</b> einer Variable</a> bezeichnet.
 
 Das Grundprinzip des <b>Scopes</b> ist von Programmiersprache zu Programmiersprache verschieden.
 In Perl wird ein Scope durch einen Block innerhalb geschweifter Klammern gebildet.

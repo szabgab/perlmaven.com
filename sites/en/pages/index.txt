@@ -98,7 +98,7 @@ You can probably skip the part about installing Perl, but the rest of the tutori
 <div class="main-content">
 Perl is often used in <b>Test Automation</b>. If you work in this field, or if you'd like to work in this field
 (it is much more fun to find bugs in other people's code than in yours :), then you can read the <a href="/perl-tutorial">Perl tutorial</a>
-and the series on <a href="http://perlmaven.com/testing">Test Automation using Perl</a>.
+and the series on <a href="https://perlmaven.com/testing">Test Automation using Perl</a>.
 </div>
 
 <div class="main-content">

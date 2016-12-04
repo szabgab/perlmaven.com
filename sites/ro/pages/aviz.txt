@@ -14,12 +14,12 @@
 este uzual să avizezi utilizatorul despre problemă.  În scripturile
 pentru linia de comandă acesta se face în mod normal prin printarea
 unui mesaj de avertizare
-la <a href="http://perlmaven.com/stdout-stderr-and-redirection">Ieșirea de Eroare Standard</a>.
+la <a href="https://perlmaven.com/stdout-stderr-and-redirection">Ieșirea de Eroare Standard</a>.
 
 =abstract end
 
 Așa cum a fost explicat în articolul
-despre <a href="http://perlmaven.com/stdout-stderr-and-redirection">standard output and
+despre <a href="https://perlmaven.com/stdout-stderr-and-redirection">standard output and
 error</a>, în Perl se poate face prin direcționarea printării
 către <hl>STDERR</hl>
 
@@ -66,7 +66,7 @@ utilizatorul programului.
 Perl a introdus un așa numit <b>signal-handle</b> special pentru avizări.
 Acesta înseamnă că tu, sau altcineva, poate adăuga mai târziu cod în
 program care să
-<a href="http://perlmaven.com/how-to-capture-and-save-warnings-in-perl">captureze toate
+<a href="https://perlmaven.com/how-to-capture-and-save-warnings-in-perl">captureze toate
 avizările</a>.  Acesta este un subiect puțin mai avansat totuși, dar
 dacă ești interesat, mergi mai departe și citește acea pagină.
 
@@ -95,4 +95,4 @@ beforeafter
 
 Unde cuvântul "before" apare după ambele mesaje de avizare.
 
-În acest caz, citește despre <a href="http://perlmaven.com/stdout-stderr-and-redirection#buffering">folosirea memoriei tampon (buffering)</a>.
+În acest caz, citește despre <a href="https://perlmaven.com/stdout-stderr-and-redirection#buffering">folosirea memoriei tampon (buffering)</a>.

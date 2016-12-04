@@ -89,7 +89,7 @@ text
 <a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireQuotedHeredocTerminator">ValuesAndExpressions::RequireQuotedHeredocTerminator</a>
 שבודקת את המצב המתואר.
 
-כפי שהוסבר <a href="http://perlmaven.com/perl-critic-one-policy">במאמר על שיפור הקוד</a>,
+כפי שהוסבר <a href="https://perlmaven.com/perl-critic-one-policy">במאמר על שיפור הקוד</a>,
 אפשר להשתמש בפקודה <hl>perlcritic</hl> עך מנת לאתר הפרות של מדיניות מסוימת.
 
 נניח שיש לנו קובץ בשם programming.pl הכולל את הקוד הבא:

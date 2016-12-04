@@ -75,7 +75,7 @@ $name = "Foo";
 בגרשיים בודדים <hl>@</hl> לא עובר אינטרפולציה.
 
 בגרשיים כפולים הקוד יגרום  לשגיאה:
-<a href="http://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol "@bar" requires explicit package name at ... line ...</a>
+<a href="https://perlmaven.com/global-symbol-requires-explicit-package-name">Global symbol "@bar" requires explicit package name at ... line ...</a>
 ולאזהרה:
 <b>Possible unintended interpolation of @bar in string at ... line ...</b>
 
@@ -184,7 +184,7 @@ print "The "name" is "$name"\n";
 </code>
 
 כשפרל רואה את הגרש הכפול לפני המילה  "name" היא חושבת שזה סוף המחרוזת 
-ומתלוננת על כך ש-<b>name</b> היא <a href="http://perlmaven.com/barewords-in-perl"> מילה חשופה (bareword)</a>.
+ומתלוננת על כך ש-<b>name</b> היא <a href="https://perlmaven.com/barewords-in-perl"> מילה חשופה (bareword)</a>.
 
 כפי שודאי כבר ניחשת, צריך לעשות escapeg לתו <hl>"</hl> :
 
@@ -244,7 +244,7 @@ my $name = 'foo';
 print qq(The )name( is "$name"\n);
 </code>
 
-ואכן פרל תתריע על שגיאה ש- "name" היא  <a href="http://perlmaven.com/barewords-in-perl">) bareword מילה חשופה (</a>.
+ואכן פרל תתריע על שגיאה ש- "name" היא  <a href="https://perlmaven.com/barewords-in-perl">) bareword מילה חשופה (</a>.
 אפילו פרל לא יכולה להבין הכל.
 
 כמובן שאפשר לעשות escape  לסוגריים<hl>\)</hl> and <hl>\(</hl>, אבל שם כבר היינו.

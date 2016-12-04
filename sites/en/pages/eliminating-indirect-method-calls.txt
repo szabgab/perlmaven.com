@@ -67,7 +67,7 @@ It still prints a lot of lines because there are a lot of violations, but it onl
 one line per violation, and that line contains both the filename and the name of the violation.
 
 This is especially useful if you'd like to fix the code
-<a href="http://perlmaven.com/perl-critic-one-policy">one policy at a time</a>
+<a href="https://perlmaven.com/perl-critic-one-policy">one policy at a time</a>
 in several files.
 
 We can even configure the verbosity in the <hl>.perlcriticrc</hl> file, but please note,

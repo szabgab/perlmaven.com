@@ -25,7 +25,7 @@ limbaje.
 
 Voi descrie cum funcţionează aceasta deşi prefer să scriu bucla în stil <hl>foreach</hl>,
 aşa cum este descrisă în secţiunea despre  
-<a href="http://perlmaven.com/perl-arrays">vectori Perl</a>.
+<a href="https://perlmaven.com/perl-arrays">vectori Perl</a>.
 
 
 Cele două cuvinte cheie <hl>for</hl> şi <hl>foreach</hl> sunt sinonime.
@@ -55,7 +55,7 @@ toată bucla. Dacă partea TEST este adevărată atunci este executată partea B
 STEP.
 
 (Pentru semnificaţia reală a valorilor ADEVĂRAT sau FALS, vezi
-<a href="http://perlmaven.com/boolean-values-in-perl">valori logice în Perl</a>.)
+<a href="https://perlmaven.com/boolean-values-in-perl">valori logice în Perl</a>.)
 
 Apoi urmează din nou TEST şi tot aşa, atâta timp cât TEST se execută cu valoare de adevăr. 
 Deci arată aşa:
@@ -128,7 +128,7 @@ while (1) {
 }
 </code>
 
-Este descrisă în partea despre <a href="http://perlmaven.com/while-loop">bucla while
+Este descrisă în partea despre <a href="https://perlmaven.com/while-loop">bucla while
 în Perl</a>.
 
 <h2>perldoc</h2>

@@ -112,7 +112,7 @@ auto-incremento (++).
 
 No será perfecto. Si has habilitado los warnings con la sentencia <hl>use warnings</hl>
 (<a href="/instalacion-y-primeros-pasos-con-perl">lo cual siempre se recomienda</a>)
-recibiras dos <a href="http://perlmaven.com/use-of-uninitialized-value">use of uninitialized value (en)</a>
+recibiras dos <a href="https://perlmaven.com/use-of-uninitialized-value">use of uninitialized value (en)</a>
 warnings por las dos primeras operaciones, pero no por el auto-incremento:
 
 <code>

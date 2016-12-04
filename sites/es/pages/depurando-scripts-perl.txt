@@ -50,7 +50,7 @@ programa y examinar la salida posteriormente.
 
 Perl viene con un potente debugger en línea de comandos. Recomiendo aprenderlo aunque puede intimidar
 un poco al principio. He preparado un vídeo mostrando los 
-<a href="http://perlmaven.com/using-the-built-in-debugger-of-perl">comandos básicos del debugger integrado en Perl (en)</a>.
+<a href="https://perlmaven.com/using-the-built-in-debugger-of-perl">comandos básicos del debugger integrado en Perl (en)</a>.
 
 IDEs, como <a href="http://www.activestate.com/">Komodo</a>,
 <a href="http://eclipse.org/">Eclipse</a> y 

@@ -42,7 +42,7 @@ say 9 % 2;   # 1
 say 9 % 5;   # 4
 </code>
 
-Estos mismos operadores numéricos también se pueden usar sobre <a href="http://perlmaven.com/scalar-variables">variables escalares (en)</a>:
+Estos mismos operadores numéricos también se pueden usar sobre <a href="https://perlmaven.com/scalar-variables">variables escalares (en)</a>:
 
 <code lang="perl">
 use strict;
@@ -114,6 +114,6 @@ Tendremos un articulo explicando los corto circuitos en expresiones booleanas y 
 con auto incrementos.
 
 Adicionalmente, el operador de auto incremento también funciona con strings como se
-explica en <a href="http://perlmaven.com//string-operators">string operators (en)</a>.
+explica en <a href="https://perlmaven.com//string-operators">string operators (en)</a>.
 
 

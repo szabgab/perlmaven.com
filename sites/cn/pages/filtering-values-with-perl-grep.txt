@@ -67,7 +67,7 @@ if (grep { $visitor eq $_ } @names) {
 }
 </code>
 
-在这个例子中，grep函数位于<a href="http://perlmaven.com/scalar-and-list-context-in-perl">标量上下文</a>。在标量上下文中，<hl>grep</hl>返回通过过滤的元素个数。我们检查的条件是<hl>$visitor</hl>是否与当前元素相等，grep会返回相等的次数。
+在这个例子中，grep函数位于<a href="https://perlmaven.com/scalar-and-list-context-in-perl">标量上下文</a>。在标量上下文中，<hl>grep</hl>返回通过过滤的元素个数。我们检查的条件是<hl>$visitor</hl>是否与当前元素相等，grep会返回相等的次数。
 
 如果返回值是0, 表达式则为false，如果是任何正数，表达式为true。
 

@@ -100,6 +100,6 @@ gabor@pm:~$ perl -e "print 42"
 <h2>מה הלאה?</h2>
 
 החלק הבא הוא על 
-<a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">התיעוד של פרל, התיעוד שמגיע עם פרל ותיעוד המודולים</a>.
+<a href="https://perlmaven.com/core-perl-documentation-cpan-module-documentation">התיעוד של פרל, התיעוד שמגיע עם פרל ותיעוד המודולים</a>.
 
 

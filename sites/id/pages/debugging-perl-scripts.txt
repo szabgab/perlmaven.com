@@ -52,7 +52,7 @@ program dan menguji outputnya kemudian.
 
 Perl datang dengan command-line debugger yang sangat hebat. Meskipun saya merekomendasikan Anda untuk mempelajarinya,
 ia akan sedikit sulit di awalnya. Saya telah menyiapkan sebuah video di mana saya menunjukkan 
-<a href="http://perlmaven.com/using-the-built-in-debugger-of-perl">perintah dasar built-in debugger pada Perl</a>.
+<a href="https://perlmaven.com/using-the-built-in-debugger-of-perl">perintah dasar built-in debugger pada Perl</a>.
 
 IDE, seperti <a href="http://www.activestate.com/">Komodo</a>,
 <a href="http://eclipse.org/">Eclipse</a> dan

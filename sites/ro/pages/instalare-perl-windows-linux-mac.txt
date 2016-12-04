@@ -55,7 +55,7 @@ Vine la pachet cu o multitudine de extensii de Perl gata instalate și îți va 
 <h2>Video</h2>
 
 În caz că preferi filmulețele, poți viziona <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">"Hello world"-ul în Perl</a> pe Youtube (versiunea în limba engleză).
-În cazul acesta, s-ar putea să ți se pară interesant și cursul de <a href="http://perlmaven.com/beginner-perl-maven-video-course">Omnisciență în Perl</a> (de asemenea în limba engleza).
+În cazul acesta, s-ar putea să ți se pară interesant și cursul de <a href="https://perlmaven.com/beginner-perl-maven-video-course">Omnisciență în Perl</a> (de asemenea în limba engleza).
 
 <h2>Primul program</h2>
 

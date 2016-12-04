@@ -225,7 +225,7 @@ compute('+', 2, 3) == 5
 <h2>TAP</h2>
 
 펄을 이용하여 직접 실행한 테스트 스크립트의 출력물을
-<a href="http://perlmaven.com/tap-test-anything-protocol">TAP, the Test Anything Protocol</a> 이라고 불립니다.
+<a href="https://perlmaven.com/tap-test-anything-protocol">TAP, the Test Anything Protocol</a> 이라고 불립니다.
 
 우리가 위에서 <hl>prove()</hl> 사용 했을때, <hl>prove()</hl> 가 테스트 스크립트를 실행하여
 TAP 출력물을 수집/분석후 이에 대한 report를 생성한 것입니다.

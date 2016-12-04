@@ -56,7 +56,7 @@ durch das Einbetten von <b>print-Anweisungen</b>, deren Ausgabe Du am Ende des P
 
 Perl hat einen sehr mächtigen Kommandozeilen-Debugger. Obwohl ich dazu rate, ihn zu erlernen,
 kann er zu Beginn ein wenig einschüchternd sein. Ich habe ein Video vorbereitet, in dem ich 
-die <a href="http://perlmaven.com/using-the-built-in-debugger-of-perl">grundlegenden Befehle des eingebauten Perl-Debuggers</a> zeige.
+die <a href="https://perlmaven.com/using-the-built-in-debugger-of-perl">grundlegenden Befehle des eingebauten Perl-Debuggers</a> zeige.
 
 IDE, wie z.B.  <a href="http://www.activestate.com/">Komodo</a>, <a href="http://eclipse.org/">Eclipse</a> und
 <a href="http://padre.perlide.org/">Padre</a> haben einen grafischen Debugger. Ich habe vor,

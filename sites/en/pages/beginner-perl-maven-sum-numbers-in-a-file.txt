@@ -51,7 +51,7 @@ one we use the <hl>sum</hl> function of the standard <a href="https://metacpan.o
 <include file="examples/files/sum.pl">
 
 We open the file exactly the same way as we did in the previous example, but this pass the result of the read-file operator to the
-<hl>sum</hl> function. In this case we are actually <a href="http://perlmaven.com/reading-from-a-file-in-scalar-and-list-context">reading from the file in list context</a>
+<hl>sum</hl> function. In this case we are actually <a href="https://perlmaven.com/reading-from-a-file-in-scalar-and-list-context">reading from the file in list context</a>
 which means all the lines are read into memory at once and they are passed to the <hl>sum</hl> function as individual elements. (Each line is one element.)
 The <hl>sum</hl> function then adds them together and returns the result.
 

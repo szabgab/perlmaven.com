@@ -25,7 +25,7 @@ You can use the <hl>system</hl> function of Perl to execute external program so 
 following:
 
 <code lang="perl">
-my $url = 'http://perlmaven.com/';
+my $url = 'https://perlmaven.com/';
 system "wget $url"; 
 </code>
 
@@ -40,7 +40,7 @@ output of the external command, this can provide a convenient way to download a 
 a variable:
 
 <code lang="perl">
-my $url = 'http://perlmaven.com/';
+my $url = 'https://perlmaven.com/';
 my $html = qx{wget --quiet --output-document=- $url};
 </code>
 
@@ -58,7 +58,7 @@ and the <hl>--silent</hl> flag can tell it to avoid any other output.
 This is the solution with <hl>curl</hl>:
 
 <code lang="perl">
-my $url = 'http://perlmaven.com/';
+my $url = 'https://perlmaven.com/';
 my $html = qx{curl --silent $url};
 </code>
 
@@ -76,7 +76,7 @@ that fetch the content of a single URL:
 
 <code lang="perl">
 use LWP::Simple qw(get);
-my $url = 'http://perlmaven.com/';
+my $url = 'https://perlmaven.com/';
 my $html = get $url;
 </code>
 
@@ -89,7 +89,7 @@ For that <a href="http://metacpan.org/module/HTTP::Tiny">HTTP::Tiny</a> is much 
 
 <code lang="perl">
 use HTTP::Tiny;
-my $url = 'http://perlmaven.com/';
+my $url = 'https://perlmaven.com/';
 my $response = HTTP::Tiny->new->get($url);
 if ($response->{success}) {
     my $html = $response->{content};
@@ -115,7 +115,7 @@ use 5.010;
 use HTTP::Tiny;
 use Data::Dumper qw(Dumper);
 
-my $url = 'http://perlmaven.com/';
+my $url = 'https://perlmaven.com/';
 
 my $response = HTTP::Tiny->new->get($url);
 if ($response->{success}) {
@@ -165,7 +165,7 @@ $VAR1 = {
                        },
           'success' => 1,
           'reason' => 'OK',
-          'url' => 'http://perlmaven.com.local:5000/',
+          'url' => 'https://perlmaven.com.local:5000/',
           'status' => '200'
         };
 </code>
@@ -183,7 +183,7 @@ use 5.010;
 use HTTP::Tiny;
 
 my @urls = qw(
-	http://perlmaven.com/
+	https://perlmaven.com/
 	http://cn.perlmaven.com/
 	http://br.perlmaven.com/
 );
@@ -210,7 +210,7 @@ In order to save space in this article I only printed the size of each page.
 This is the result:
 
 <code>
-Start http://perlmaven.com/
+Start https://perlmaven.com/
 Length: 19959
 Start http://cn.perlmaven.com/
 Length: 13322

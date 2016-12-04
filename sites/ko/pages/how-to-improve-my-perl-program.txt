@@ -64,7 +64,7 @@ foreach my $a (@array1) {
 <h2>$a와 $b는 사용하지 마세요</h2>
 
 특별하게, <hl>$a</hl>와 <hl>$b</hl>는 
-<a href="http://perlmaven.com/sorting-arrays-in-perl">sort</a> 함수에서 사용되는
+<a href="https://perlmaven.com/sorting-arrays-in-perl">sort</a> 함수에서 사용되는
 특수 변수입니다.
 이 변수를 다른 곳에 쓰지 마세요. 짧은 일회용 코드에도요!
 그저 혼란스러워질 뿐이고 그 변수는 <hl>my</hl> 선언을 필요로 하지 않기 때문에
@@ -83,8 +83,8 @@ Perl의 디폴트 변수 <hl>$_</hl>는 굉장합니다만, 일반적으로는 �
 <hl>$_</hl>는 여러분들 코드에서 눈으로 볼 수는 없어야 합니다.
 
 주요 예외는 
-<a href="http://perlmaven.com/transforming-a-perl-array-using-map">map</a>,
-<a href="http://perlmaven.com/filtering-values-with-perl-grep">grep</a>
+<a href="https://perlmaven.com/transforming-a-perl-array-using-map">map</a>,
+<a href="https://perlmaven.com/filtering-values-with-perl-grep">grep</a>
 그리고 유사한 함수들입니다. 여기에서는 직접 적지 않을 수 없습니다.
 
 그 외의 곳에서는, 만일 여러분이 <hl>$_</hl>라고 타이핑해야 한다면, 그건 아마
@@ -93,7 +93,7 @@ Perl의 디폴트 변수 <hl>$_</hl>는 굉장합니다만, 일반적으로는 �
 <h2>언제나 strict 와 warnings를 사용하세요</h2>
 
 언제나 <a href="/strict">use strict</a>와
-<a href="http://perlmaven.com/installing-perl-and-getting-started">use warnings</a>를
+<a href="https://perlmaven.com/installing-perl-and-getting-started">use warnings</a>를
 사용하세요. 이것들은 여러분의 안전망입니다!
 
 <h2>렉시컬 파일핸들과 3인자 open</h2>
@@ -128,7 +128,7 @@ my $fh = path($filename)->openr_utf8;
 (my $fh)와 파라메터 3개를 사용하는 open을 쓰실 수는 있을 겁니다.
 
 어떤 경우에도,
-<a href="http://perlmaven.com/open-files-in-the-old-way">오래된 방법으로 파일을 열지는 마세요</a>.
+<a href="https://perlmaven.com/open-files-in-the-old-way">오래된 방법으로 파일을 열지는 마세요</a>.
 
 <h2>직접적인 객체 표기(Direct object notation)</h2>
 
@@ -166,6 +166,6 @@ new Module(param, param);
 
 여러분의 코드가 OOP로 작성되어 있거나, bless를 사용하고 있거나,
 접근자 생성기(accessor generator)를 쓰고 있다면, 
-<a href="http://perlmaven.com/moo">Moo</a>나
+<a href="https://perlmaven.com/moo">Moo</a>나
 <a href="https://metacpan.org/pod/Moose">Moose</a>를
 사용하도록 이전함으로써 코드를 개선할 수 있을지 모릅니다.

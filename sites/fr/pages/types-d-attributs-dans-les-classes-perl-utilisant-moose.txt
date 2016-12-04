@@ -17,7 +17,7 @@ Moose vous permet de définir un type pour chaque attribut, puis force les types
 
 =abstract end
 
-Après la première <a href="http://perlmaven.com/object-oriented-perl-using-moose">introduction à Perl orienté objet avec Moose</a>,
+Après la première <a href="https://perlmaven.com/object-oriented-perl-using-moose">introduction à Perl orienté objet avec Moose</a>,
 vous devriez vous familiariser avec le système de vérification de type de Moose.
 
 <h2>Définir le type Int</h2>

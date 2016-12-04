@@ -13,7 +13,7 @@
 <a href="/search/$a">various forms</a> of <a href="/sorting-arrays-in-perl">sort</a>, in the <hl>reduce</hl> function
 provided by <a href="https://metacpan.org/pod/List::Util">List::Util</a> and maybe in a few other places.
 
-Because of that they are two variables that can be used without declaration even when <a href="http://perlmaven.com/strict">use strict</a>
+Because of that they are two variables that can be used without declaration even when <a href="https://perlmaven.com/strict">use strict</a>
 is in effect.
 
 =abstract end

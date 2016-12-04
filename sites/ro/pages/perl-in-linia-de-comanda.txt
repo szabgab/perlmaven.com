@@ -111,5 +111,5 @@ explained</a> de Peteris Krumins.
 <h2>Mai departe</h2>
 
 Partea următoare este despre
-<a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">
+<a href="https://perlmaven.com/core-perl-documentation-cpan-module-documentation">
 documentația Perl și despre documentațiile modulelor CPAN</a>.
