@@ -86,11 +86,11 @@ if (@words) {
 
 <h2>הקשר סקלרי והקשר רשימתי</h2>
 
- <a href="http://perlmaven.com/the-year-19100">בחלק הקודם</a> ראינו איך <hl>localtime()</hl>
+ <a href="https://perlmaven.com/the-year-19100">בחלק הקודם</a> ראינו איך <hl>localtime()</hl>
 מתנהג בהקשר סקלרי ובהקשר רשימתי, ועכשיו אנחנו רואים איך מערך מתנהג בהקשר סקלרי ובהקשר רשימתי.
 
 אין כלל אחד לכל המקרים לגבי הקשר, ותצטרכו ללמוד את המקרים המסוימים, אך לרוב הם די ברורים. בכל מקרה, כשאתם קוראים את התיעוד של פונקציה באמצעות
-<a href="http://perlmaven.com/core-perl-documentation-cpan-module-documentation">perldoc</a>,
+<a href="https://perlmaven.com/core-perl-documentation-cpan-module-documentation">perldoc</a>,
 תיראו הסבר מתאים לכל פונקציה.
 לפחות במקרים שבהם הקשר סקלרי והקשר רשימתי מחזירים תוצאות שונות.
 
@@ -204,7 +204,7 @@ Foo
 בהצבה השנייה <hl>my $y   = @words;</hl> הצבנו <b>ישירות</b> למשתנה סקלרי. התוצאה של ההצבה הייתה יצירת הקשר סקלרי בצד ימין של ההצבה. מערך בהקשר סקלרי מחזיר את מספר האלמנטים במערך.
 
 הבחנה זו תהיה מאוד חשובה כשתסתכלו אן 
-<a href="http://perlmaven.com/subroutines-and-functions-in-perl">העברת פרמטרים לפונקציות.</a>.
+<a href="https://perlmaven.com/subroutines-and-functions-in-perl">העברת פרמטרים לפונקציות.</a>.
 
 <h2>אילוץ הקשר סקלרי</h2>
 

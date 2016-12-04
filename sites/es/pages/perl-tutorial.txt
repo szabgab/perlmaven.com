@@ -165,7 +165,7 @@ en perl y otros módulos externos, que instalaremos desde <b>CPAN</b>.
 <li>Buscando y evaluando módulos en CPAN</li>
 <li>Descargando e instalando módulos Perl desde CPAN</li>
 <li><a href="https://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">Como modificar @INC para usar módulos Perl que no están en directorios estándar (en)</a></li>
-<li><a href="https://perlmaven.com/how-to-add-a-relative-directory-to-inc">Como cambiar @INC para usar un ruta relativa (en)</a> (for <a href="http://perlmaven.com/pro">Pro</a> subscribers.)</li>
+<li><a href="https://perlmaven.com/how-to-add-a-relative-directory-to-inc">Como cambiar @INC para usar un ruta relativa (en)</a> (for <a href="https://perlmaven.com/pro">Pro</a> subscribers.)</li>
 <li>local::lib</li>
 </ol>
 

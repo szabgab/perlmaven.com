@@ -183,7 +183,7 @@ sub get_html {
 
 Obviamente para algo más grande moveríamos el HTML a un
 archivo de plantilla y probablemente usaríamos
-un framework Web de nivel superior como <a href="https://perlmaven.com/dancer">dancer</a> o <a href="http://perlmaven.com/mojolicious"> Mojolicious</a>,
+un framework Web de nivel superior como <a href="https://perlmaven.com/dancer">dancer</a> o <a href="https://perlmaven.com/mojolicious"> Mojolicious</a>,
 pero nos interesa ahora el mecanismo de bajo nivel.
 
 

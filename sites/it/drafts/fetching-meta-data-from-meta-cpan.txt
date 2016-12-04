@@ -11,8 +11,8 @@
 =abstract start
 
 In other articles you can learn <a
-href="http://perlmaven.com/how-to-add-link-to-version-control-system-of-a-cpan-distributions">how to add a link to
-version control</a> and <a href="http://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan">how to add the license field</a> to a CPAN module.
+href="https://perlmaven.com/how-to-add-link-to-version-control-system-of-a-cpan-distributions">how to add a link to
+version control</a> and <a href="https://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan">how to add the license field</a> to a CPAN module.
 
 So how many recently uploaded CPAN modules have this information? <a href="https://metacpan.org/">Meta CPAN</a> already
 has this information. In this article we'll use it to create a report.

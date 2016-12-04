@@ -421,7 +421,7 @@ Then we fill two hashes for counting the number of blocks per entry and for coun
 number of cases for each error. The second does not need any special treatment, but the first
 has a special case. As we discussed, there might be blocks before the first entity declaration.
 In those cases the $entity variable will be <hl>undef</hl> that would trigger the
-warning <a href="http://perlmaven.com/use-of-uninitialized-value">use of uninitialized value</a>.
+warning <a href="https://perlmaven.com/use-of-uninitialized-value">use of uninitialized value</a>.
 
 For this to work well, we either need count those blocks in a separate variable, or we need to
 use a special default entry name. I chose the latter and assigned '_DEFAULT_' to the $entry
@@ -449,7 +449,7 @@ sub process_block {
 <h2>Reporting</h2>
 
 The last part of code is the reporting. After the process() function finishes, we have two hashes filled with values.
-We can go through the keys of each hash, <a href="http://perlmaven.com/sorting-arrays-in-perl">sort</a>
+We can go through the keys of each hash, <a href="https://perlmaven.com/sorting-arrays-in-perl">sort</a>
 them according to the values and then print the content.
 
 <code lang="perl">

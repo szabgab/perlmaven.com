@@ -166,7 +166,7 @@ while (my $line = <$fh>) {
 <h2>Exceptions</h2>
 
 There are several cases where you can't really avoid, and you have to use <hl>$_</hl>
-explicitly. These are the <a href="http://perlmaven.com/filtering-values-with-perl-grep">grep</a>
-and <a href="http://perlmaven.com/transforming-a-perl-array-using-map">map</a> function, and the
-other similar ones, such as <a href="http://perlmaven.com/filtering-values-with-perl-grep">any</a>.
+explicitly. These are the <a href="https://perlmaven.com/filtering-values-with-perl-grep">grep</a>
+and <a href="https://perlmaven.com/transforming-a-perl-array-using-map">map</a> function, and the
+other similar ones, such as <a href="https://perlmaven.com/filtering-values-with-perl-grep">any</a>.
 

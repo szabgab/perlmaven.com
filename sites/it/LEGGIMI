@@ -80,7 +80,7 @@ https://github.com/szabgab/perl5maven.com repository.
 *) I nomi file dovrebbero più-o-meno corrispondere al titolo della pagina, possono contenere parole separate dal trattino.
 *) Per favore aggiungete l'intestazione ad ogni file (meta informazioni) includendo la data prevista di pubblicazione 
 *) I link nella pagina devono essere funzionanti. Se c'è già una traduzione per la pagina allora usa il link della pagina tradotta,
-    se esiste solo quella in inglese, allora inserisci url completo includendo il nome host (hostname) http://perlmaven.com/
+    se esiste solo quella in inglese, allora inserisci url completo includendo il nome host (hostname) https://perlmaven.com/
 *) Per favore aggiornate la sezione nascosta (!) del tutorial perl-tutorial.tt per includere i link alle pagine aggiunte.
 *) Gli elenchi dei testi l'autore ed il traduttore sono aggiunte al sistema e sono guidate dai tag di intestazione
    =author e =translator

@@ -107,7 +107,7 @@ still tried to print() something to it.
 We'd better check if the <hl>open()</hl> was successful before proceeding.
 
 Luckily the <hl>open()</hl> call itself returns
-<a href="http://perlmaven.com/boolean-values-in-perl">TRUE on success and FALSE on failure</a>, so we could write this:
+<a href="https://perlmaven.com/boolean-values-in-perl">TRUE on success and FALSE on failure</a>, so we could write this:
 
 <h2>Open or die</h2>
 

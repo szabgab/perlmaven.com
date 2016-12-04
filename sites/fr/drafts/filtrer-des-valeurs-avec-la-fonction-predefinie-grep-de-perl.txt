@@ -75,7 +75,7 @@ if (grep { $visitor eq $_ } @names) {
 </code>
 
 In this case the grep function was placed in
-<a href="http://perlmaven.com/scalar-and-list-context-in-perl">SCALAR context</a>.
+<a href="https://perlmaven.com/scalar-and-list-context-in-perl">SCALAR context</a>.
 In SCALAR context <hl>grep</hl> will return the number of elements that went through the filter.
 As we are checking if the <hl>$visitor</hl> equals to the current element this grep
 will return the number of times that happens.

@@ -90,8 +90,8 @@ Esas sevaral tradukoj en progreso je diversaj etapoj:
 <li> Nombraj kaj kordo operatoroj </li>
 <li> <a href="/undef-and-defined-in-perl"> undef, la komenca valoro kaj la difinita funkcio </a> </li>
 <li> Jen dokumentoj </li>
-<li> <a href="http://perlmaven.com/scalar-variables"> skalaroj </a> </li>
-<li> <a href="http://perlmaven.com/comparing-scalars-in-perl"> Komparante skalaroj </a> </li>
+<li> <a href="https://perlmaven.com/scalar-variables"> skalaroj </a> </li>
+<li> <a href="https://perlmaven.com/comparing-scalars-in-perl"> Komparante skalaroj </a> </li>
 <li> <a href="/string-functions-length-lc-uc-index-substr"> String funkcioj: longo, lc, uc, indico, substr </a> </li>
 <li> <a href="/number-guessing-game"> Numero diveni ludo (rand, _int_) </a> </li>
 <li> <a href="/while-loop"> Perl dum buklo </a> </li>

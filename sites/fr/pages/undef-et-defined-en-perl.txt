@@ -113,7 +113,7 @@ Dans l'exemple ci-dessus, la variable $x - qui est à <i>undef</i> par défaut -
 <li>un 0 de nouveau dans l'auto-incrémentation (++)</li>
 </ul>
 
-Cela n'est pas parfait, loin s'en faut. Si vous avez activé les avertissements via l'instruction <hl>use warnings</hl> (<a href="https://perlmaven.com/installing-perl-and-getting-started">ce qui est toujours recommandé</a>), vous serez confrontés à deux avertissements <a href="http://perlmaven.com/use-of-uninitialized-value">use of unitialized value</a> pour les deux premières instructions, mais pas pour celle de l'auto-incrémentation :
+Cela n'est pas parfait, loin s'en faut. Si vous avez activé les avertissements via l'instruction <hl>use warnings</hl> (<a href="https://perlmaven.com/installing-perl-and-getting-started">ce qui est toujours recommandé</a>), vous serez confrontés à deux avertissements <a href="https://perlmaven.com/use-of-uninitialized-value">use of unitialized value</a> pour les deux premières instructions, mais pas pour celle de l'auto-incrémentation :
 
 <code>
 Use of uninitialized value $x in addition (+) at ... line 6.
