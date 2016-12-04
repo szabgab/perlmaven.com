@@ -41,7 +41,7 @@ La pagina più rilevante potrebbe essere <a href="http://perldoc.perl.org/perlva
 dove troverete informazioni su variabili come <hl>$_</hl> e <hl>@_</hl>.
 
 <a href="http://perldoc.perl.org/perlsyn.html">perlsyn</a> spiega la sintassi di Perl
-inclusa quella del <a href="http://perlmaven.com/while-loop">ciclo while</a>.
+inclusa quella del <a href="https://perlmaven.com/while-loop">ciclo while</a>.
 
 <h2>perldoc da linea di comando</h2>
 

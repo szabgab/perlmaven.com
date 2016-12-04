@@ -46,7 +46,7 @@ binmode $out;
 print $out $img->png;
 </code>
 
-<img src="http://perlmaven.com/img/gd_simple/red_square.png" alt="Red square" class="bordered" />
+<img src="https://perlmaven.com/img/gd_simple/red_square.png" alt="Red square" class="bordered" />
 
 (В этом примере рамка была добавлена вокруг изображения средствами CSS, чтобы показать реальный размер изображения.)
 <hl>my $img = GD::Simple->new(200, 100);</hl> создает изображение. Принимает два параметра: <hl>(ширина, высота)</hl>.
@@ -73,7 +73,7 @@ $img->fgcolor('green');
 $img->rectangle(20, 40, 100, 60);
 </code>
 
-<img src="http://perlmaven.com/img/gd_simple/green_rectangular.png" alt="green rectangular" class="bordered" />
+<img src="https://perlmaven.com/img/gd_simple/green_rectangular.png" alt="green rectangular" class="bordered" />
 
 В этом примере заливка прозрачная, таким образом, часть прямоугольника, которая перекрывает красный квадрат, остается красной, а оставшаяся часть - белой.
 Координаты, переданные в метод <hl>rectangle</hl>, теперь более понятно показывают, что от чего зависит.
@@ -93,7 +93,7 @@ $img->moveTo(30, 0);   # (x, y)
 $img->lineTo(100, 40); # (x, y)
 </code>
 
-<img src="http://perlmaven.com/img/gd_simple/green_line.png" alt="green line" class="bordered" />
+<img src="https://perlmaven.com/img/gd_simple/green_line.png" alt="green line" class="bordered" />
 
 <h2>Рисует сплошной оранжевый эллипс</h2>
 
@@ -121,7 +121,7 @@ $img->fgcolor('orange');
 $img->ellipse(80, 20);   # (width height)
 </code>
 
-<img src="http://perlmaven.com/img/gd_simple/orange_ellipse.png" alt="orange ellipse" class="bordered" />
+<img src="https://perlmaven.com/img/gd_simple/orange_ellipse.png" alt="orange ellipse" class="bordered" />
 
 <h2>Рисуем дугу</h2>
 
@@ -143,7 +143,7 @@ $img->fgcolor('darkviolet');
 $img->arc(60, 60, 0, 90, gdEdged);
 </code>
 
-<img src="http://perlmaven.com/img/gd_simple/dark_violet_arc.png" alt="dark violet arc" class="bordered" />
+<img src="https://perlmaven.com/img/gd_simple/dark_violet_arc.png" alt="dark violet arc" class="bordered" />
 
 <h2>Рисуем теекст</h2>
 
@@ -157,6 +157,6 @@ $img->moveTo(10, 30);
 $img->string('Perl Maven');
 </code>
 
-<img src="http://perlmaven.com/img/gd_simple/text.png" alt="" class="bordered" />
+<img src="https://perlmaven.com/img/gd_simple/text.png" alt="" class="bordered" />
 
 Конечно, GD и GD::Simple умеют гораздо больше всего, но вы уже знаете кое-что, чтобы начать их использовать.

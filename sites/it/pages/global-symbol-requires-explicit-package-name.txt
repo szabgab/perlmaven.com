@@ -76,7 +76,7 @@ $x = 23;
 </code>
 
 che funziona, anche se genera un warning
-<a href="http://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a> (in Italiano: Nome "main::x" usato una volta sola: possibile errore di battitura ...).
+<a href="https://perlmaven.com/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a> (in Italiano: Nome "main::x" usato una volta sola: possibile errore di battitura ...).
 
 In ogni caso, normalmente non guidereste l'auto senza la cintura di sicurezza, vero?
 
@@ -125,7 +125,7 @@ print $y;
 
 Il problema è che la variabile <hl>$y</hl> è dichiarata dentro un blocco
 (delimitato dalle parentesi graffe) il che implica che essa non esiste al di fuori di quel blocco.
-In particolare, il blocco rappresenta <a href="http://perlmaven.com/scope-of-variables-in-perl">lo <b>scope</b> della variabile</a>.
+In particolare, il blocco rappresenta <a href="https://perlmaven.com/scope-of-variables-in-perl">lo <b>scope</b> della variabile</a>.
 
 Il concetto di <b>scope</b> varia da un linguaggio di programmazione ad un altro.
 In Perl, un blocco racchiuso tra parentesi graffe genera uno scope.
@@ -167,7 +167,7 @@ print $y;
 Quale delle due soluzioni sia giusto applicare varia da caso a caso. Quelle che abbiamo illustrato sono semplicemente le soluzioni corrette da un punto di vista sintattico.
 
 Naturalmente, se dimenticate di rimuovere il <hl>my</hl> nel blocco o se <hl>$x</hl> è falso,
-riceverete un warning <a href="http://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a>.
+riceverete un warning <a href="https://perlmaven.com/use-of-uninitialized-value">Use of uninitialized value</a>.
 
 <h2>Le alternative</h2>
 

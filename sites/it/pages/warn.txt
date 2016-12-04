@@ -58,7 +58,7 @@ C'è ancora di più.
 
 Perl ha introdotto uno speciale gestore di segnali per i warning.
 Ciò significa che voi o qualcun altro potete aggiungere al programma del codice per
-<a href="http://perlmaven.com/how-to-capture-and-save-warnings-in-perl">catturare tutti i warning</a>.
+<a href="https://perlmaven.com/how-to-capture-and-save-warnings-in-perl">catturare tutti i warning</a>.
 È un argomento un po' troppo avanzato per ora, ma se siete interessati vi invito a dare
 un'occhiata a quella pagina.
 

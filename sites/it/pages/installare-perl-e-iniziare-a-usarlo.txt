@@ -54,7 +54,7 @@ gli strumenti standard di installazione.
 <h2>Editor e IDE</h2>
 
 Anche se preferibile, non è necessario che usiate la IDE Padre per scrivere del codice Perl.
-In seguito elencherò un paio di <a href="http://perlmaven.com/perl-editor">editor e IDE</a> che
+In seguito elencherò un paio di <a href="https://perlmaven.com/perl-editor">editor e IDE</a> che
 potete usare per programmare in Perl. Anche se scegliete un altro editor,
 raccomando agli utenti Windows di installare comunque il package DWIM Perl menzionato sopra.
 
@@ -65,7 +65,7 @@ Contiene molte estensioni di Perl e vi farà risparmiare molto tempo nel seguito
 Se preferite, potete anche vedere il video
 <a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with Perl</a>
 che ho caricato su YouTube. In tal caso potreste essere interessati anche a dare uno
-sguardo al video <a href="http://perlmaven.com/beginner-perl-maven-video-course">Beginner Perl Maven video course</a>.
+sguardo al video <a href="https://perlmaven.com/beginner-perl-maven-video-course">Beginner Perl Maven video course</a>.
 
 <h2>Primo programma</h2>
 
@@ -108,7 +108,7 @@ Ora miglioriamolo un po'.
 
 <h2>Perl da linea di comando per chi non usa Padre</h2>
 
-Se non usate Padre o una delle altre <a href="http://perlmaven.com/perl-editor">IDE</a>
+Se non usate Padre o una delle altre <a href="https://perlmaven.com/perl-editor">IDE</a>
 non potete eseguire il vostro script da dentro l'editor stesso.
 Almeno non di default. Dovete quindi aprire una shell
 (o cmd in Windows), spostarvi nella directory dove avete salvato il file hello.pl

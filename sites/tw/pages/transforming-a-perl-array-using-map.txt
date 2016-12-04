@@ -89,7 +89,7 @@ Foo 1 Bar 1 Baz 1
 
 <h2>胖箭頭(=>)</h2>
 
-<hl>=></hl> 叫作 <b>胖箭頭</b> 或是 <b>胖逗號</b>。它基本上跟逗號的意義差不多，不過有個例外，不在這裡描述，請見 <a href="http://perlmaven.com/perl-hashes">Perl hashes</a>。
+<hl>=></hl> 叫作 <b>胖箭頭</b> 或是 <b>胖逗號</b>。它基本上跟逗號的意義差不多，不過有個例外，不在這裡描述，請見 <a href="https://perlmaven.com/perl-hashes">Perl hashes</a>。
 
 
 <h2>map 中複雜的表示式</h2>

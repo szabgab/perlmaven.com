@@ -16,7 +16,7 @@ numero di valori, anche se è sempre possibile generare una lista con un numero 
 
 =abstract end
 
-Abbiamo visto che <a href="http://perlmaven.com/filtering-values-with-perl-grep">la funzione grep di Perl</a> è una generalizzazione del
+Abbiamo visto che <a href="https://perlmaven.com/filtering-values-with-perl-grep">la funzione grep di Perl</a> è una generalizzazione del
 medesimo comando UNIX. La funzione seleziona alcuni o tutti (o nessuno!) degli elementi dalla 
 lista originale, e li ritorna intatti.
 
@@ -26,7 +26,7 @@ i valori della lista originale.
 La sintassi è simile. Basta passare alla funzione un blocco di codice ed una lista di valori: un array
 o qualche altra espressione che ritorni una lista di valori.
 Per ogni elemento della lista originale, il valore è copiato nella variabile <hl>$_</hl>,
-<a href="http://perlmaven.com/the-default-variable-of-perl">la variabile predefinita di Perl</a>, ed il blocco
+<a href="https://perlmaven.com/the-default-variable-of-perl">la variabile predefinita di Perl</a>, ed il blocco
 è eseguito. I valori risultanti sono passati alla lista risultante.
 
 <h2>Uso di map per trasformazioni semplici</h2>
@@ -42,8 +42,8 @@ print "@doubles\n";       # 2 4 6 8 10
 
 Se abbiamo una lista di valori può capitare, durante l'esecuzione del codice, 
 di voler controllare se un valore è compreso nella lista. Possiamo usare
-<a href="http://perlmaven.com/filtering-values-with-perl-grep">grep</a> ogni volta, per cercare se il 
-valore è nella lista. Possiamo anche usare la funzione <a href="http://perlmaven.com/filtering-values-with-perl-grep">any</a>
+<a href="https://perlmaven.com/filtering-values-with-perl-grep">grep</a> ogni volta, per cercare se il 
+valore è nella lista. Possiamo anche usare la funzione <a href="https://perlmaven.com/filtering-values-with-perl-grep">any</a>
 del package <a href="http://metacpan.org/modules/List::MoreUtils">List::MoreUtils</a>,
 ma può essere più leggibile e veloce usare una variabile hash per costruire una veloce tabella di look-up.
 
@@ -106,7 +106,7 @@ Foo 1 Bar 1 Baz 1
 
 Nel caso ve lo state chiedendo il simbolo <hl>=></hl> è chiamato la <b>fat arrow</b> or <b>fat comma</b>. Praticamente 
 si comporta come una virgola regolare <hl>,</hl> con una eccezione che non è rilevante nel nostro caso. (Per ogni dettaglio
-sul suo uso leggetevi l'articolo <a href="http://perlmaven.com/perl-hashes">Perl hashes</a>.)
+sul suo uso leggetevi l'articolo <a href="https://perlmaven.com/perl-hashes">Perl hashes</a>.)
 
 
 <h2>Espressioni complesse in map</h2>

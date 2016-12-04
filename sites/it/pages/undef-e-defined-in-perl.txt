@@ -117,7 +117,7 @@ concatenazione (.) e di nuovo come 0 nell'operazione di autoincremento
 
 Comunque, non filerà tutto liscio. Se si sono richiesti i warnings,
 attraverso il pragma <hl>use warnings</hl>
-(<a href="http://perlmaven.com/installing-perl-and-getting-started">cosa sempre
+(<a href="https://perlmaven.com/installing-perl-and-getting-started">cosa sempre
 raccomandata</a>), si otterranno due warning di
 tipo <a href="/use-of-uninitialized-value">use of unitialized
 value</a> per le prime due operazioni, ma non per l'autoincremento:

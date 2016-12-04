@@ -106,7 +106,7 @@ Dist::Zilla.還有許多其他方式可以
 <h2>許可證</h2>
 
 在另一篇文章中，我說明了
-<a href="http://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan">如何把許可證資訊加入 CPAN 模組的元文件中</a>。
+<a href="https://perlmaven.com/how-to-add-the-license-field-to-meta-files-on-cpan">如何把許可證資訊加入 CPAN 模組的元文件中</a>。
 如果你有一個公開倉儲，這樣讓其他人比較容易發送補丁。
 
 

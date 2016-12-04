@@ -28,8 +28,8 @@
 <li><a href="/sorting-arrays-in-perl">Perl 陣列的排序</a></li>
 <li><a href="/unique-values-in-an-array-in-perl">Perl 陣列中的獨特值</a></li>
 <!--
-<li><a href="http://perlmaven.com/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
+<li><a href="https://perlmaven.com/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
 -->
 </ul>
 
-For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
+For the original, visit the <a href="https://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>

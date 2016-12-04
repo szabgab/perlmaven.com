@@ -20,13 +20,13 @@
 Бесплатная онлайн-версия учебника создается сейчас. Многие части уже готовы. Новые материалы 
 публикуются и переводятся каждые несколько дней. Последний перевод был опубликован 10 июля 2013 г.
 Если вы хотите получать уведомления, когда публикуются новые материалы, пожалуйста
-<a href="http://perlmaven.com//register">подпишитесь на рассылку</a>.
+<a href="https://perlmaven.com//register">подпишитесь на рассылку</a>.
 
 Также можно купить версию англоязычных материалов в виде 
-<a href="http://perlmaven.com//beginner-perl-maven-e-book">электронной книги</a>. Вдобавок к бесплатным статьям, в этой
+<a href="https://perlmaven.com//beginner-perl-maven-e-book">электронной книги</a>. Вдобавок к бесплатным статьям, в этой
 версии есть другие материалы из соответствующих курсов, содержащие множество упражнений и решений.
 
-Еще есть <a href="http://perlmaven.com//beginner-perl-maven-video-course">видео-курс</a>, состоящий из более 210 скринкастов
+Еще есть <a href="https://perlmaven.com//beginner-perl-maven-video-course">видео-курс</a>, состоящий из более 210 скринкастов
 общей продолжительностью более 5 часов. В дополнение к представлению материала, он также включает
 объяснения решений всех упражнений, а также исходный код всех примеров и упражнений.
 
@@ -176,35 +176,35 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <li>Обработка параметров командной строки @ARGV, Getopt::Long</li>
 <li>
 	<span href="/how-to-read-a-csv-file-using-perl">Как прочесть и обработать CSV-файл? (split, Text::CSV_XS)</span>
-	(<a href="http://perlmaven.com/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a>)
+	(<a href="https://perlmaven.com/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a>)
 </li>
 <li>
 	<span href="/join">join</span>
-	(<a href="http://perlmaven.com/join">join</a>)
+	(<a href="https://perlmaven.com/join">join</a>)
 </li>
 <li>
 	<span href="/the-year-19100">Год 19100 (time, localtime, gmtime)</span> и введение контекста
-	(<a href="http://perlmaven.com/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context)
+	(<a href="https://perlmaven.com/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context)
 </li>
 <li>
 	<span href="/scalar-and-list-context-in-perl">Чувствительность к контексту Perl</span>
-	(<a href="http://perlmaven.com/scalar-and-list-context-in-perl">Context sensitivity in Perl</a>)
+	(<a href="https://perlmaven.com/scalar-and-list-context-in-perl">Context sensitivity in Perl</a>)
 </li>
 <li>
 	<span href="/sorting-arrays-in-perl">Сортировка массивов в Perl</span>
-	(<a href="http://perlmaven.com/sorting-arrays-in-perl">Sorting arrays in Perl</a>)
+	(<a href="https://perlmaven.com/sorting-arrays-in-perl">Sorting arrays in Perl</a>)
 </li>
 <li>
 	<span href="/unique-values-in-an-array-in-perl">Уникальные значения в массиве в Perl</span>
-	(<a href="http://perlmaven.com/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a>)
+	(<a href="https://perlmaven.com/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a>)
 </li>
 <li>
 	<span href="/manipulating-perl-arrays">Управление массивами в Perl: shift, unshift, push, pop</span>
-	(<a href="http://perlmaven.com/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a>)
+	(<a href="https://perlmaven.com/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a>)
 </li>
 <li>
 	Стек и <span href="/using-a-queue-in-perl">очередь</span>
-	(Stack and <a href="http://perlmaven.com/using-a-queue-in-perl">queue</a>)
+	(Stack and <a href="https://perlmaven.com/using-a-queue-in-perl">queue</a>)
 </li>
 <li>reverse</li>
 <li>троичный оператор</li>
@@ -216,7 +216,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <ol>
 <li>
 	<span href="/subroutines-and-functions-in-perl">Подпрограммы и функции в Perl</span>
-	(<a href="http://perlmaven.com/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a>)
+	(<a href="https://perlmaven.com/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a>)
 </li>
 <li>Передача и получение параметров в подпрограммах</li>
 <li>Переменное количество параметров</li>
@@ -228,7 +228,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <ol>
 <li>
 	<span href="/perl-hashes">Хэши в Perl (словарь, ассоциативный массив, справочная таблица)</span>
-	(<a href="http://perlmaven.com/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a>)
+	(<a href="https://perlmaven.com/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a>)
 </li>
 <li>exists, delete для элементов хэша</li>
 </ol>
@@ -245,7 +245,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <li>Подстановка (поиск и замена)</li>
 <li>
 	<span href="/trim">trim - убираем пробелы в начале и в конце</span>
-	(<a href="http://perlmaven.com/trim">trim - remove leading and trailing spaces</a>)
+	(<a href="https://perlmaven.com/trim">trim - remove leading and trailing spaces</a>)
 </li>
 </ol>
 
@@ -259,7 +259,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <li>Unix-команды: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
 <li>
 	<span href="/how-to-remove-copy-or-rename-a-file-with-perl">Как удалить, скопировать или переименовать файл с помощью Perl</span>
-	(<a href="http://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a>)
+	(<a href="https://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a>)
 </li>
 <li>Команды Windows/DOS: del, ren, dir</li>
 <li>Файловые подстановки (Wildcard'ы)</li>
@@ -271,14 +271,14 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <ol>
 <li>
 	<span href="/download-and-install-perl">Скачивание и установка Perl (Strawberry Perl или ручная сборка)</span>
-	(<a href="http://perlmaven.com/download-and-install-perl">Download and install Perl (Strawberry Perl or manual compilation)</a>)
+	(<a href="https://perlmaven.com/download-and-install-perl">Download and install Perl (Strawberry Perl or manual compilation)</a>)
 </li>
 <li>Скачивание и установка Perl с помощью Perlbrew</li>
 <li>Поиск и оценка модулей CPAN</li>
 <li>Скачивание и установка Perl-модулей со CPAN'а</li>
 <li>
 	<span href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">Как поменять @INC, чтобы находить Perl-модули в нестандартных местах?</span>
-	(<a href="http://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a>)
+	(<a href="https://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a>)
 </li>
 <li>Как поменять @INC на относительный адрес</li>
 <li>local::lib</li>
@@ -288,11 +288,11 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <ol>
 <li>
 	<span href="/how-to-replace-a-string-in-a-file-with-perl">Как заменить строку файла с помощью Perl? (slurp)</span>
-	(<a href="http://perlmaven.com/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a>)
+	(<a href="https://perlmaven.com/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a>)
 </li>
 <li>Чтение из Excel-файлов с помощью Perl</li>
 <li>
-	<a href="http://perlmaven.com/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (<a href="http://perlmaven.com/pro">Платная подписка (только по-английски)</a>)
+	<a href="https://perlmaven.com/create-an-excel-file-with-perl">Creating Excel files using Perl</a> (<a href="http://perlmaven.com/pro">Платная подписка (только по-английски)</a>)
 </li>
 <li>Отправка электронной почты с помощью Perl</li>
 <li>CGI-скрипты на Perl</li>
@@ -301,7 +301,7 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <li>Чтение и запись JSON-файлов</li>
 <li>
 	<span href="/simple-database-access-using-perl-dbi-and-sql">Работа с базами данных на Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</span>
-	(<a href="http://perlmaven.com/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a>)
+	(<a href="https://perlmaven.com/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a>)
 </li>
 <li>Работа с LDAP на Perl</li>
 </ol>
@@ -310,42 +310,42 @@ Perl-программисты, <b>модулях</b>. Мы рассмотрим 
 <ol>
 <li>
 	<span href="/splice-to-slice-and-dice-arrays-in-perl">Splice - режем массивы вдоль и поперек</span>
-	(<a href="http://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a>)
+	(<a href="https://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a>)
 </li>
 <li>
 	<span href="/how-to-create-a-perl-module-for-code-reuse">Как создать Perl-модуль для повторного использования кода</span>
-	(<a href="http://perlmaven.com/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse</a>)
+	(<a href="https://perlmaven.com/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse</a>)
 </li>
 <li>
 	<span href="/object-oriented-perl-using-moose">Объектно-ориентированный Perl с помощью Mooses</span>
-	(<a href="http://perlmaven.com/object-oriented-perl-using-moose">Object Oriented Perl using Mooses</a>)
+	(<a href="https://perlmaven.com/object-oriented-perl-using-moose">Object Oriented Perl using Mooses</a>)
 </li>
 <li>
 	<span href="/attribute-types-in-perl-classes-when-using-moose">Типы свойств в классах Perl при использовании Moose</span>
-	(<a href="http://perlmaven.com/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a>)
+	(<a href="https://perlmaven.com/attribute-types-in-perl-classes-when-using-moose">Attribute types in Perl classes when using Moose</a>)
 </li>
 <li>
 	<span href="/multi-dimensional-arrays-in-perl">Многомерные массивы</span>
-	(<a href="http://perlmaven.com/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a>)
+	(<a href="https://perlmaven.com/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a>)
 </li>
 </ol>
 
 <b>Объектно-ориентированный Perl с помощью Moo</b>
 <ol>
   <li>
-	<span href="http://perlmaven.com/oop-with-moo">ООП с помощью Moo</span> - скринкаст и текстовое объяснение основных принципов Moo,
+	<span href="https://perlmaven.com/oop-with-moo">ООП с помощью Moo</span> - скринкаст и текстовое объяснение основных принципов Moo,
 		создание класса с единственным свойством, которое может быть либо "только для чтения" (неизменяемое),
 		либо "для чтения и записи" (изменяемое). Создание экземпляра (объекта).
-	<a href="http://perlmaven.com/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, 
+	<a href="https://perlmaven.com/oop-with-moo">OOP with Moo</a> a screencast and text explaining the basics of Moo, 
 		creating a class with a single attrubue that can be either read-only (immutable) or read-write (mutable) attribute.
 		Creating and instance (object).
   </li>
-  <li><a href="http://perlmaven.com/pro">Платная подписка (только по-английски)</a>:</li>
-  <li><a href="http://perlmaven.com/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
-  <li><a href="http://perlmaven.com/moo-and-required-attributes">required attributes</a></li>
-  <li><a href="http://perlmaven.com/moo-attributes-with-default-values">Moo attributes with default values</a></li>
-  <li><a href="http://perlmaven.com/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
+  <li><a href="https://perlmaven.com/pro">Платная подписка (только по-английски)</a>:</li>
+  <li><a href="https://perlmaven.com/type-checking-with-moo">Type checking with Moo</a>. While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.</li>
+  <li><a href="https://perlmaven.com/moo-and-required-attributes">required attributes</a></li>
+  <li><a href="https://perlmaven.com/moo-attributes-with-default-values">Moo attributes with default values</a></li>
+  <li><a href="https://perlmaven.com/moo-attribute-predicate-and-clearer">Moo attribute predicate and clearer</a></li>
 </ol>
 
-For the original, visit the <a href="http://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
+For the original, visit the <a href="https://perlmaven.com/perl-tutorial">Perl Tutorial in English</a>
 

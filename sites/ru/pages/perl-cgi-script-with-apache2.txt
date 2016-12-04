@@ -10,7 +10,7 @@
 
 =abstract start
 
-Хотя лучше использовать <a href="http://perlmaven.com/perl-cgi-mod-perl-psgi">PSGI</a> сервер, чем CGI, все же очень полезно знать, как же писать cgi-скрипты. Особенно, если вам нужно поддерживать какой-нибудь из них.
+Хотя лучше использовать <a href="https://perlmaven.com/perl-cgi-mod-perl-psgi">PSGI</a> сервер, чем CGI, все же очень полезно знать, как же писать cgi-скрипты. Особенно, если вам нужно поддерживать какой-нибудь из них.
 
 Эта статья поможет настроить веб-сервер Apache для запуска с CGI-скриптов.
 
@@ -18,7 +18,7 @@
 
 <h2>Начнем с запуска Linux и установки Apache2</h2>
 
-Мы сконфигурируем <a href="http://perlmaven.com/digitalocean">Digital Ocean droplet</a>, используя Ubuntu 13.10 64bit.
+Мы сконфигурируем <a href="https://perlmaven.com/digitalocean">Digital Ocean droplet</a>, используя Ubuntu 13.10 64bit.
 
 После создания Droplet, ssh и установки всех обновлений перезапустим машину.
 (droplet, который я использую, имеет IP 107.170.93.222 )
@@ -56,7 +56,7 @@ root      2091  0.0  0.1   9452   908 pts/0    S+   14:16   0:00 grep --color=au
 
 Если все работает нормально, вы увидите в браузере что-то в этом роде:
 
-<img src="http://perlmaven.com/img/apache2_default_page_on_ubuntu_1310.png" alt="Apache2 default page on Ubuntu 13.10">
+<img src="https://perlmaven.com/img/apache2_default_page_on_ubuntu_1310.png" alt="Apache2 default page on Ubuntu 13.10">
 
 Это содержимое файла /var/www/index.html на сервере.
 
@@ -266,7 +266,7 @@ print qq(Content-type: text/plain\n\n);
 Это сообщение может означать, что скрипт завершил работу (умер) до того, как напечатал <hl>Content-type</hl>
 Error.log, вероятно, содержит исключение в строках выше.
 
-Также вы можете включить буферизацию STDOUT, установив <hl>$|</hl> в значение <a href="http://perlmaven.com/boolean-values-in-perl">Истина</a>.
+Также вы можете включить буферизацию STDOUT, установив <hl>$|</hl> в значение <a href="https://perlmaven.com/boolean-values-in-perl">Истина</a>.
 
 <code>
 $|  = 1;
@@ -309,6 +309,6 @@ $|  = 1;
 
 Вот и все. Надеюсь, у вас теперь есть первый работающий CGI-скрипт на Perl.
 
-Конечно, использование PSGI это более <a href="http://perlmaven.com/modern-web-with-perl">современно</a> и более гибко, чем CGI.
-Возможно, вам стоит посмотреть <a href="http://perlmaven.com/dancer">Perl Dancer</a> 
-или <a href="http://perlmaven.com/mojolicious">Mojolicious</a> фреймворки, чтобы получить больше опыта.
+Конечно, использование PSGI это более <a href="https://perlmaven.com/modern-web-with-perl">современно</a> и более гибко, чем CGI.
+Возможно, вам стоит посмотреть <a href="https://perlmaven.com/dancer">Perl Dancer</a> 
+или <a href="https://perlmaven.com/mojolicious">Mojolicious</a> фреймворки, чтобы получить больше опыта.

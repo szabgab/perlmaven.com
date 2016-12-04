@@ -71,7 +71,7 @@ per cui è stato generato un warning durante la compilazione.
 
 Nel secondo esempio dichiariamo anche <hl>$z</hl> due volte, ma non viene
 generato alcun warning. Ciò è dovuto al fatto che la <hl>$z</hl> nel blocco
-è in uno <a href="http://perlmaven.com/scope-of-variables-in-perl">scope</a> diverso.
+è in uno <a href="https://perlmaven.com/scope-of-variables-in-perl">scope</a> diverso.
 
 <h2>Scope di una funzione</h2>
 
@@ -121,7 +121,7 @@ Perl alloca la memoria per la variabile <hl>$z</hl> ad ogni iterazione.
 <h2>Che cosa significa "my"?</h2>
 
 Il significato di <hl>my $x</hl> è quello di dire a perl, e in particolare a <hl>strict</hl>,
-che volete usare una variabile privata <b>$x</b> nello <a href="http://perlmaven.com/scope-of-variables-in-perl">scope corrente</a>.
+che volete usare una variabile privata <b>$x</b> nello <a href="https://perlmaven.com/scope-of-variables-in-perl">scope corrente</a>.
 In mancanza di ciò, perl cerca una dichiarazione negli scope superiori e se
 non riesce a trovarla genera un errore di compilazione
 <a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
@@ -139,10 +139,10 @@ fatte da perl durante l'esecuzione.
 Se non possiamo scrivere <hl>my $x;</hl> due volte nello stesso scope, come facciamo a resettarne il valore?
 
 Anzitutto, se una variabile è dichiarata in uno scope, ovvero tra parentesi graffe, verrà automaticamente distrutta
-non appena l'esecuzione esce dallo <a href="http://perlmaven.com/scope-of-variables-in-perl">scope</a>.
+non appena l'esecuzione esce dallo <a href="https://perlmaven.com/scope-of-variables-in-perl">scope</a>.
 
 Se volete resettare una variabile scalare nello scope corrente, assegnatele il valore <hl>undef</hl>
-mentre se è un <a href="http://perlmaven.com/undef-on-perl-arrays-and-hashes">array o un hash</a>, assegnatele una lista vuota:
+mentre se è un <a href="https://perlmaven.com/undef-on-perl-arrays-and-hashes">array o un hash</a>, assegnatele una lista vuota:
 
 <code lang="perl">
 $x = undef;

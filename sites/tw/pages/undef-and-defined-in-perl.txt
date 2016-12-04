@@ -105,8 +105,8 @@ say $x; # 1
 而在之後的字串接續算式（.）裡，則變身為空字串。最後又有一次遞加運算（++），再次以 0 取代。
 
 但這機制並非無瑕。如果在程式中寫了 <hl>use warnings</hl>，啟用警告機制
-（<a href="http://perlmaven.com/installing-perl-and-getting-started">強力推薦使用</a>），那麼在執行程
-式時會印出兩次「<a href="http://perlmaven.com/use-of-uninitialized-value">use of unitialized
+（<a href="https://perlmaven.com/installing-perl-and-getting-started">強力推薦使用</a>），那麼在執行程
+式時會印出兩次「<a href="https://perlmaven.com/use-of-uninitialized-value">use of unitialized
 value</a>」警告訊息，不過最後一次的遞加運算不會有警告。
 
 <code>

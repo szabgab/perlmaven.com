@@ -72,7 +72,7 @@ esaminare il codice di uscita con <hl>echo $?</hl>.
 <h2>Controllare il codice di uscita in Perl</h2>
 
 Se vi capita di eseguire uno script perl da un altro script perl, usando per
-esempio la funzione <a href="http://perlmaven.com/running-external-programs-from-perl">system</a>, 
+esempio la funzione <a href="https://perlmaven.com/running-external-programs-from-perl">system</a>, 
 Perl ha la stessa variabile <hl>$?</hl> contenente il code di uscita dell'"altro programma".
 
 Se avete il codice sopra salvato in un file script.pl e avete un altro script "executor.pl" come questo:

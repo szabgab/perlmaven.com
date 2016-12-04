@@ -56,7 +56,7 @@
   <li><a href="/stdout-stderr-and-redirection">Standard Output, Standard Error e redirezione da linea di comando</a></li>
   <li><a href="/warn">warn</a></li>
   <li><a href="/die">die</a></li>
-  <li><a href="http://perlmaven.com/writing-to-files-with-perl">Scrivere su file</a></li>
+  <li><a href="https://perlmaven.com/writing-to-files-with-perl">Scrivere su file</a></li>
 </ol>
 
 <b>Liste e Array</b>
@@ -65,4 +65,4 @@
   <li><a href="/transforming-a-perl-array-using-map">Trasformare un array con map</a></li>
 </ol>
 
-Per l'originale, visitate il <a href="http://perlmaven.com/perl-tutorial">tutorial Perl in Inglese</a>
+Per l'originale, visitate il <a href="https://perlmaven.com/perl-tutorial">tutorial Perl in Inglese</a>

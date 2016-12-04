@@ -36,7 +36,7 @@ print "@names\n";     # Foo Bar
 
 Nel caso particolare in cui l'array di origine fosse vuoto, la
 funzione <hl>pop</hl>
-ritornerà <a href="http://perlmaven.com/undef-and-defined-in-perl">undef</a>.
+ritornerà <a href="https://perlmaven.com/undef-and-defined-in-perl">undef</a>.
 
 <h2>push</h2>
 

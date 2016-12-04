@@ -144,7 +144,7 @@ for (1 .. 10) {
 <a href="/oblast-vidimosti-v-perl">область видимости</a>.
 
 Если же вам нужно "обнулить" скалярную переменную в текущей области видимости, присвойте ей 
-<hl>undef</hl>, а если это <a href="http://perlmaven.com/undef-on-perl-arrays-and-hashes">массив или
+<hl>undef</hl>, а если это <a href="https://perlmaven.com/undef-on-perl-arrays-and-hashes">массив или
 хэш</a>, чтобы опустошить их, нужно присвоить им пустой список:
 
 <code lang="perl">

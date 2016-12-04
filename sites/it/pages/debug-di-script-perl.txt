@@ -51,7 +51,7 @@ contengono i valori che vi aspettate. Per ottenere questo scopo potete <b>usare 
 
 Perl viene distribuito con un debugger a linea di comando molto potente. Vi invito ad imparare a usarlo,
 anche se potrebbe apparire un po' ostico all'inizio. Ho preparato un video dove illustro i
-<a href="http://perlmaven.com/using-the-built-in-debugger-of-perl">comandi base del debugger nativo di Perl</a>.
+<a href="https://perlmaven.com/using-the-built-in-debugger-of-perl">comandi base del debugger nativo di Perl</a>.
 
 Le IDE, come <a href="http://www.activestate.com/">Komodo</a>,
 <a href="http://eclipse.org/">Eclipse</a> e

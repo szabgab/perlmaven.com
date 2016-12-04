@@ -108,7 +108,7 @@ print() on closed file-handle $fh at ...
 Лучше бы нам проверить, успешно ли сработал <hl>open()</hl>, прежде чем продолжать.
 
 К счастью, вызов <hl>open()</hl> сам по себе возвращает 
-<a href="http://perlmaven.com/boolean-values-in-perl">TRUE в случае успеха и FALSE при отказе</a>,
+<a href="https://perlmaven.com/boolean-values-in-perl">TRUE в случае успеха и FALSE при отказе</a>,
 так что мы можем сделать так:
 
 <h2>Открой или умри (open or die)</h2>

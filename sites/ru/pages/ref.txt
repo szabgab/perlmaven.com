@@ -11,7 +11,7 @@
 
 Функция <hl>ref()</hl> возвращает тип переданной ей ссылки. 
 Если параметр не задан, то будет возвращен тип ссылки для 
-<a href="http://perlmaven.com/the-default-variable-of-perl">$_, переменной по умолчанию в Perl.</a>
+<a href="https://perlmaven.com/the-default-variable-of-perl">$_, переменной по умолчанию в Perl.</a>
 
 Согласно документации, возможные возвращаемые значения функции <hl>ref()</hl> такие:
 
@@ -274,10 +274,10 @@ say $text;                       # The black cat abc the green tree
 
 <h2>Blessed-ссылки</h2>
 
-Как объясняется <a href="http://perlmaven.com/constructor-and-accessors-in-classic-perl-oop">тут</a>,
-в <a href="http://perlmaven.com/getting-started-with-classic-perl-oop">классической объектно-ориентированной модели</a> Perl
+Как объясняется <a href="https://perlmaven.com/constructor-and-accessors-in-classic-perl-oop">тут</a>,
+в <a href="https://perlmaven.com/getting-started-with-classic-perl-oop">классической объектно-ориентированной модели</a> Perl
 функция <hl>bless</hl> используется для присоединения ссылки на хеш к пространству имен. (Вообще-то
-в <a href="http://perlmaven.com/moo">Moo</a> и <a href="http://perlmaven.com/moose">Moose</a> происходит то же самое, но оно от нас скрыто.)
+в <a href="https://perlmaven.com/moo">Moo</a> и <a href="http://perlmaven.com/moose">Moose</a> происходит то же самое, но оно от нас скрыто.)
 
 Тем не менее, если мы вызовем функцию <hl>ref()</hl> для blessed-ссылки, то получим имя пространства имен:
 

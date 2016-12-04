@@ -67,7 +67,7 @@ Second row
 Third row
 </code>
 
-打開並且讀取檔案跟 <a href="http://perlmaven.com/writing-to-files-with-perl">寫入檔案</a> 很相似,
+打開並且讀取檔案跟 <a href="https://perlmaven.com/writing-to-files-with-perl">寫入檔案</a> 很相似,
 但是用 "<" 符號來取代 ">" 符號。(<hl><</hl>)
 
 這裡我們使用 UTF-8 來當作編碼。在這裡讀取檔案只會出現 "<" 符號。
@@ -86,7 +86,7 @@ print "done\n";
 </code>
 
 一旦我們有檔案符號，我們就能跟使用
-<a href="http://perlmaven.com/installing-perl-and-getting-started">從鍵盤讀取(STDIN)</a> 資料一樣的操作方式來從檔案符號讀取資料(readline)。.
+<a href="https://perlmaven.com/installing-perl-and-getting-started">從鍵盤讀取(STDIN)</a> 資料一樣的操作方式來從檔案符號讀取資料(readline)。.
 上面的程式碼會讀取檔案的第1行資料。然後我們可以印出在 $row 的內容資料，再印出 "done"。
 
 

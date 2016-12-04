@@ -81,7 +81,7 @@ più grande o più piccolo del numero generato.
 
 A questo punto <b>non</b> è necessario permettere all'utente di fare altri tentativi.
 Ci arriveremo in un prossimo episodio. Ma naturalmente non voglio impedirvi
-di studiare il <a href="http://perlmaven.com/while-loop">loop while</a>
+di studiare il <a href="https://perlmaven.com/while-loop">loop while</a>
 in Perl, potete leggerlo e poi permettere all'utente di fare più di un tentativo.
 
 
