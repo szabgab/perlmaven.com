@@ -1,68 +1,68 @@
 en:
-  url: http://perlmaven.com/
+  url: https://perlmaven.com/
   english: English
   name: English
 br:
-  url: http://br.perlmaven.com/
+  url: https://br.perlmaven.com/
   english: (Brazilian) Portuguese
   name: Português
 cn:
-  url: http://cn.perlmaven.com/
+  url: https://cn.perlmaven.com/
   english: Chinese (mainland)
   name: 简体中文
 cs:
-  url: http://cs.perlmaven.com/
+  url: https://cs.perlmaven.com/
   english: Czech
   name: Čeština
 de:
-  url: http://de.perlmaven.com/
+  url: https://de.perlmaven.com/
   english: German
   name: Deutsch
 es:
-  url: http://es.perlmaven.com/
+  url: https://es.perlmaven.com/
   english: Spanish
   name: Español
 fr:
-  url: http://fr.perlmaven.com/
+  url: https://fr.perlmaven.com/
   english: French
   name: Français
 he:
-  url: http://he.perlmaven.com/
+  url: https://he.perlmaven.com/
   english: Hebrew
   name: עברית
 id:
-  url: http://id.perlmaven.com/
+  url: https://id.perlmaven.com/
   english: Indonesian
   name: Bahasa Indonesia
 it:
-  url: http://it.perlmaven.com/
+  url: https://it.perlmaven.com/
   english: Italian
   name: Italiano
 ko:
-  url: http://ko.perlmaven.com/
+  url: https://ko.perlmaven.com/
   english: Korean
   name: 한국어
 pl:
-  url: http://pl.perlmaven.com/
+  url: https://pl.perlmaven.com/
   english: Rolish
   name: Polish
 ro:
-  url: http://ro.perlmaven.com/
+  url: https://ro.perlmaven.com/
   english: Romanian
   name: Română
 ru:
-  url: http://ru.perlmaven.com/
+  url: https://ru.perlmaven.com/
   english: Russian
   name: Русский
 te:
-  url: http://te.perlmaven.com/
+  url: https://te.perlmaven.com/
   english: Telugu
   name: తెలుగు
 tr:
-  url: http://tr.perlmaven.com/
+  url: https://tr.perlmaven.com/
   english: Turkish
   name: Türkçe
 tw:
-  url: http://tw.perlmaven.com/
+  url: https://tw.perlmaven.com/
   english: Chinese (traditional)
   name: 正體中文
