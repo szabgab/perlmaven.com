@@ -51,7 +51,7 @@ praktiki kion vi lernis.
 
 Esas sevaral tradukoj en progreso je diversaj etapoj:
 <ul>
-  <li> <a href="http://br.perlmaven.com/perl-tutorial"> Portugala </a> </li>
+  <li> <a href="https://br.perlmaven.com/perl-tutorial"> Portugala </a> </li>
   <li> <a href="https://cn.perlmaven.com/perl-tutorial"> cxina (CN) </a> </li>
   <li> <a href="https://tw.perlmaven.com/"> cxina (Tajvano) </a> </li>
   <li> <a href="https://it.perlmaven.com/"> Itala </a> </li>

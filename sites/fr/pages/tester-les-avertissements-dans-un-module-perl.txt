@@ -32,7 +32,7 @@ Comment pouvez-vous tester votre code pour vous assurer qu'il donne un avertisse
 
 <h2>Le signal d'avertissement __WARN__</h2>
 
-En Perl, tout appel à la fonction prédéfinie <hl>warn</hl> émet un signal interne. Vous pouvez configurer votre code de test pour <a href="http://www.perlmaven.com/how-to-capture-and-save-warnings-in-perl">capturer et enregistrer des avertissements</a> en utilisant <b>$SIG{__WARN__}</b>, puis examiner si l'avertissement était le bon.
+En Perl, tout appel à la fonction prédéfinie <hl>warn</hl> émet un signal interne. Vous pouvez configurer votre code de test pour <a href="https://perlmaven.com/how-to-capture-and-save-warnings-in-perl">capturer et enregistrer des avertissements</a> en utilisant <b>$SIG{__WARN__}</b>, puis examiner si l'avertissement était le bon.
 
 Quelque chose comme ceci :
 
@@ -55,7 +55,7 @@ Allons-nous créer notre propre fonction pour faire cela ?
 
 <h2>Test::Warn</h2>
 
-Heureusement, Janek Schleicher l'a déjà fait quand il a créé le module <a href="http://metacpan.org/module/Test::Warn">Test::Warn</a> qui est actuellement maintenu par <a href="http://chorny.net/">Alexandr Ciornii</a>.
+Heureusement, Janek Schleicher l'a déjà fait quand il a créé le module <a href="https://metacpan.org/module/Test::Warn">Test::Warn</a> qui est actuellement maintenu par <a href="http://chorny.net/">Alexandr Ciornii</a>.
 
 Vous pouvez utiliser les fonctions pratiques fournies par ce module et vous n'avez pas besoin de réinventer la roue.
 
