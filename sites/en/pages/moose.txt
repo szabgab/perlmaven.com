@@ -22,7 +22,7 @@ A series of articles introducing you to <a href="https://metacpan.org/pod/Moose"
   <li><a href="/moose-test-setter-getter">Moose test setter getter</a></li>
   <li><a href="/moose-type-constraint">Moose type constraint</a></li>
   <li><a href="/moose-test-type-constraint">Moose testing type constraint</a></li>
-  <li><a href="/pro/moose-classes-as-constraints">Moose classes as constraints</a></li>
+  <li><a href="/moose-classes-as-constraints">Moose classes as constraints</a></li>
   <li><a href="/pro/moose-creating-subtypes">Moose creating subtypes</a></li>
   <li><a href="/pro/moose-coerce-to-subtype">Moose coerce to subtype</a></li>
 </ul>
