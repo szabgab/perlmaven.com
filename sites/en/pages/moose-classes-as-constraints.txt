@@ -16,7 +16,7 @@ module.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/classes-as-constraints" />
+<slidecast file="/media/videos/advanced-perl/moose/classes-as-constraints" youtube="NYsAqRK3kmw" />
 
 Let's see the class itself in the <b>lib/Person.pm</b> file:
 
