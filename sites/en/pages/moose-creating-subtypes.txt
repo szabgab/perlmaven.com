@@ -1,0 +1,123 @@
+=title Creating subtypes for Moose
+=timestamp 2016-12-19T08:00:11
+=indexes Moose, Moose::Util::TypeConstraints;, subtype
+=tags screencast
+=status show
+=books moose
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+As we saw in the previous part we can <a href="/moose-classes-as-constraints">use the DateTime class as type constraint</a>
+in <a href="/moose">Moose</a>.
+So we can declare an attribute to be of type DateTime and Moose will enforce this in the setter.
+
+What if you'd like to create your own type
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/moose/creating-subtypes" />
+
+
+Of course you can create your own class and use that as a type, just as was the cases with DateTime, but in many
+cases that's just too much work.
+Moose allows you to create your own types in a very easy way.
+
+Let's say you'd like to create a type 'sex' attribute that should be either male or female.
+The setter is supposed to accept the letter m (for male) and a letter f (for female).
+This is the way we could use it: (<b>script/person.pl</b>)
+
+<code lang="perl">
+use strict;
+use warnings;
+use v5.10;
+
+use Person;
+use DateTime;
+
+my $student = Person->new( name => 'Foo' );
+
+$student->sex('m');
+say $student->sex;
+
+$student->sex('male');
+</code>
+
+We call the constructor giving the person a name and then using the <hl>sex</hl> method with the <b>'m'</b> value.
+Then if we call the getter of the same method, it will return 'm' and that will be printed by <hl>say</hl>.
+
+If we call the setter with some other string, for example 'male' as in the example, because we thought that should
+work as well, then the setter is supposed to throw an exception.
+
+Indeed we got an exception that looked like this:
+
+<code>
+Attribute (sex) does not pass the type constraint because:
+  (male) is not a valid sex.
+  Valid values are 'f' and 'm'. at script\person.pl line 13
+</code>
+
+
+The implementation in <hl>lib/Person.pm</hl> looks like this:
+    
+<code lang="perl">
+package Person;
+use Moose;
+use Moose::Util::TypeConstraints;
+
+subtype 'Person::Type::Sex'
+  => as 'Str'
+  => where { $_ eq 'f' or $_ eq 'm' }
+  => message { "($_) is not a valid sex. Valid values are 'f' and 'm'." };
+
+has 'name'     => (is => 'rw');
+has 'birthday' => (isa => 'DateTime', is => 'rw');
+has 'sex'      => (isa => 'Person::Type::Sex', is => 'rw');
+
+1;
+</code>
+
+We loaded the <a href="https://metacpan.org/pod/Moose::Util::TypeConstraints">Moose::Util::TypeConstraints</a> module that comes with Moose,
+and that provides the necessary functions to create a <hl>subtype</hl>.
+
+A subtype is also a class just like the DateTime class was, but without a the ceremony of creating a separate file and writing lots of code Perl requires.
+
+The <hl>subtype</hl> function works in the following way: The first parameter it gets is the name of the new constrains class.
+It can be any name that would be a valid Perl package name, but I'd suggest to have this name within the same namespace as your application is.
+Because in this example I am working on a class called <hl>Person</hl>, the type could be inside the <hl>Person::Type::</hl> namespace.
+
+This makes it easier to organize the types, and they won't clash with classes or type constraints in other parts of the project.
+
+The next part, <hl>as 'Str'</hl>,  tells us that the new subtype will be a subtype of the already existing <hl>Str</hl> type. This is right as our new
+type will be a string that can only accept the strings 'm' or 'f'.
+
+The next part <hl>where { $_ eq 'f' or $_ eq 'm' }</hl> is the constrain. It is a code snippet wrapped in curly braces. The actual value
+that was passed to the setter will be in <hl>$_</hl> and then this code-snippet will be executed. If the block returns <hl>True</hl>,
+it will be pass the type-constraint, if the block returns <hl>False</hl>, the value will be rejected.
+
+You can put any code snippet in there.
+
+In the last part of the declaration, we provide a "message". This is the error message that will be included in the exception if the
+value checked did not pass the test in the <hl>where</hl> part. Here too, <hl>$_</hl> contains the current value so we can include it in the message:
+
+<hl>message { "($_) is not a valid sex. Valid values are 'f' and 'm'." };</hl>
+
+
+Once we created this <hl>subtype</hl> we can start using it in the declaration of attributes. So the attribute 'sex' will have a constraint
+<hl>isa => 'Person::Type::Sex'</hl>
+
+
+So as we saw, we can either use an existing class such as the DateTime class or we can create our own subtypes based on existing types and
+use those in our Moose-based classes.
+
+
+<h2>Comments</h2>
+
+I know, some people will argue that the attribute and the constraint should have bee called "gender" and not "sex". No problem, we'll be able to
+fix this later.
+
+Other people will add that even if we call it "gender" we cannot use only two values. We also need to allow people to say "other".
+We'll figure out something in a later episode.
+
+
