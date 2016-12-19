@@ -17,7 +17,7 @@ What if you'd like to create your own type
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/creating-subtypes" />
+<slidecast file="/media/videos/advanced-perl/moose/creating-subtypes" youtube="R6gSMmowmYg" />
 
 
 Of course you can create your own class and use that as a type, just as was the cases with DateTime, but in many
