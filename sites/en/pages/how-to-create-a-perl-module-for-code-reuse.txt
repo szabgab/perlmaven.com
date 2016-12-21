@@ -128,7 +128,7 @@ Now it works.
 
 Let's explain the change:
 
-<h2>How to changed @INC to point to a relative directory</h2>
+<h2>How to change @INC to point to a relative directory</h2>
 
 This line:
 <hl>use lib dirname(dirname abs_path $0) . '/lib';</hl>
