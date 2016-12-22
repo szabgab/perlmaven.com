@@ -1,7 +1,7 @@
-=title What is @INC
+=title What is @INC in Perl?
 =timestamp 2016-12-22T07:01:01
+=indexes @INC, use, require, do
 =description @INC is the search-path for perl to find modules to be loaded
-=tags @INC, use, require
 =status show
 =author szabgab
 =archive 1
@@ -32,6 +32,8 @@ perl will go over the directories listed in <hl>@INC</hl> and check if the appro
 
 In our example, if we try to load <hl>Module::Name</hl>. Perl will check if there is a <hl>Module</hl> subdirectory in any of
 of the directories with a file called <hl>Name.pm</hl> in the directory.
+
+perl will load the first such file.
 
 <h2>Content of @INC</h2>
 
