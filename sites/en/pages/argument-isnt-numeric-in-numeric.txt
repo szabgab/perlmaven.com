@@ -43,7 +43,7 @@ say $x + $y;   # 2337.1
 
 Perl <a href="/automatic-value-conversion-or-casting-in-perl">automatically converts</a> the strings into
 numbers that are exactly the same as what we had in the string.  No warnings were emitted.
-(Think about writing numbers on a paper.  Are those strings or numbers? Who cares. The look like numbers.)
+(Think about writing numbers on a paper.  Are those strings or numbers? Who cares. They look like numbers.)
 
 
 <h2>Not numbers</h2>
