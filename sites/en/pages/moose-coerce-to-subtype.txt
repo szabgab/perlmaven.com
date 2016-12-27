@@ -19,7 +19,7 @@ For this in <a href="/moose">Moose</a> we can use coercion.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/coerce-to-subtype" />
+<slidecast file="/media/videos/advanced-perl/moose/coerce-to-subtype" youtube="z_w2ObbFfWY" />
 
 See the <b>script/person.pl</b> file for how we would like to use the class:
 
