@@ -18,7 +18,7 @@ What is this <hl>qw</hl> I often see in Perl code?
 
 =abstract end
 
-If you want to include a list of strings in your code, for example to initialize an array as in this example:
+If you want to include a list of strings in your code, this is one way:
 
 <code lang="perl">
 my @name = ('foo', 'bar', 'zorg');
@@ -30,7 +30,7 @@ Instead of that you can use the <hl>qw</hl> operator:
 my @name = qw(foo bar zorg);
 </code>
 
-Which is be the same as:
+Which is the same as:
 
 <code lang="perl">
 my @name = qw(foo bar    zorg);
@@ -59,16 +59,14 @@ Of course, there is no point in using <hl>split</hl> where we can use a <hl>qw</
 
 <h2>Why is it called quote word?</h2>
 
-As it split the give string on spaces if any of the strings in the original list of strings has a space in it,
-we cannot use qw. 
-
-For example this creates a 3 element array:
+Qw is slightly limited. Since it splits strings via spaces, no string in the created array can contain
+spaces. For example, this creates a 3-element array:
 
 <code lang="perl">
 my @name = ('foo', 'bar', 'zorg morg');
 </code>
 
-On the other hand this is going to be a 4-element array:
+On the other hand, this would make a 4-element array:
 
 <code lang="perl">
 my @name = qw(foo bar zorg morg);
@@ -94,8 +92,7 @@ So you can use any other characters as part of the "words".
 
 <h2>qw is not a function</h2>
 
-Although at first it might look like a function having parentheses after it, but in fact it is not and instead of parentheses we can write other
-delimiters as well.
+Although at first the parentheses after qw make it look like a function, it is not. We can use other delimiters as well.
 
 Slashes seem to be popular:
 
@@ -103,15 +100,14 @@ Slashes seem to be popular:
 my @name = qw/foo bar zorg/;
 </code>
 
-Any of the parentheses can be used:
+Brackets or braces also work:
 
 <code lang="perl">
 my @name = qw{foo bar zorg};
 my @name = qw[foo bar zorg];
-my @name = qw(foo bar zorg);
 </code>
 
-Quotes can be used:
+So do quotes:
 
 <code lang="perl">
 my @name = qw'foo bar zorg';
@@ -125,7 +121,7 @@ my @name = qw!foo bar zorg!;
 my @name = qw@foo bar zorg@;
 </code>
 
-Tough I like to stick to parentheses and I'd recommend you do that too.
+Though I like to stick to parentheses and I'd recommend you do that too.
 
 <h2>Possible attempt to separate words with commas</h2>
 
@@ -140,7 +136,7 @@ If your code has <a href="/always-use-strict-and-use-warnings">use warnings</a> 
 a warning about <hl>Possible attempt to separate words with commas</hl>.
 
 
-<h2>Importing function selectively</h2>
+<h2>Importing functions selectively</h2>
 
 One of the places where you'll often see the use of <hl>qw</hl> is where modules are loaded.
 You might see something like this:
