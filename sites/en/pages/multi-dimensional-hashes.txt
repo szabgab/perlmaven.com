@@ -329,6 +329,24 @@ And our own traversing cannot handle this either, but this time, instead
 of <hl>HASH(0x7fc409027d40)</hl> it prints <hl>ARRAY(0x7fc409028508)</hl>
 as this is a reference to an array and not to a hash.
 
+<h2>Checking if a key exists</h2>
 
+Given a multi-dimensional hash like <hl>%grades</hl> one can check the existance of a key using
+the <a href="/beginner-perl-maven-exists-delete-hash">exists</a> keyword:
 
+<code lang="perl">
+if (exists $grades{"Foo Bar"}) {
+    if (exists $grades{"Foo Bar"}{Programming}) {
+        ...
+    }
+}
+</code>
+
+One should also be careful using the second-level construct without trying the first-level first
+as that might trigger <a href="/autovivification">unwanted autovivification</a>.
+
+<code lang="perl">
+if (exists $grades{"Foo Bar"}{Programming}) {
+}
+</code>
 

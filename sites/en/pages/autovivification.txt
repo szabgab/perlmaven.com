@@ -1,6 +1,6 @@
 =title What is autovivification?
 =timestamp 2015-01-21T07:50:00
-=indexes autovivification
+=indexes autovivification, exists, delete
 =status show
 =books advanced
 =author szabgab
