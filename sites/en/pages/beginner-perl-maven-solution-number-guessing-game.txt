@@ -11,10 +11,10 @@
 
 =abstract start
 
-Solution: <a href="http://code-maven.com/exercise-number-guessing-game">Number guessing game</a>.
+Solution: <a href="https://code-maven.com/exercise-number-guessing-game">Number guessing game</a>.
 
 This <a href="/beginner-perl-maven-exercise-number-guessing-game">exercise</a> is also part of the
-<a href="http://code-maven.com/exercises">Code Maven exercises</a> where you can find a
+<a href="https://code-maven.com/exercises">Code Maven exercises</a> where you can find a
 number of solutions in other languages as well.
 
 =abstract end

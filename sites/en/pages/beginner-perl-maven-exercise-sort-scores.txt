@@ -15,6 +15,6 @@ Exercise: sort scores
 
 <slidecast file="/media/videos/beginner-perl/exercise-sort-scores" youtube="oba286a-F10" />
 
-For the full description visit the <a href="http://code-maven.com/exercise-sort-scores">sort scores exercise</a>
+For the full description visit the <a href="https://code-maven.com/exercise-sort-scores">sort scores exercise</a>
 on the Code Maven site.
 

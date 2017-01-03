@@ -17,6 +17,6 @@ A collection of articles about SVG - Scalable Vector Graphics with Perl and with
   <li><a href="/scalable-vector-graphics-with-perl">SVG - Scalable Vector Graphics with Perl</a></li>
   <li><a href="/combining-svg-and-psgi">Combining SVG and PSGI</a></li>
   <li><a href="/venn-diagram-with-svg">Venn diagram with SVG</a></li>
-  <li><a href="http://code-maven.com/svg">SVG (Scalable Vector Graphics) Tutorial and Exercises using JavaScript</a></li>
+  <li><a href="https://code-maven.com/svg">SVG (Scalable Vector Graphics) Tutorial and Exercises using JavaScript</a></li>
 </ul>
 

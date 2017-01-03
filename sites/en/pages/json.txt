@@ -8,7 +8,7 @@
 
 =abstract start
 
-<a href="http://code-maven.com/json">JSON (JavaScript Object Notation)</a> is a
+<a href="https://code-maven.com/json">JSON (JavaScript Object Notation)</a> is a
 lightweight data interchange (serialization) format inspired by JavaScript object literal syntax.
 
 =abstract end

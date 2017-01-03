@@ -11,7 +11,7 @@
 
 Single Page Applications heavily rely on some JavaScript framework and a back-end system that can provide communication using JSON.
 
-<a href="http://code-maven.com/angularjs">AngularJS</a> is a great JavaScript framework (or HTML framework, or whatever you might want to call it),
+<a href="https://code-maven.com/angularjs">AngularJS</a> is a great JavaScript framework (or HTML framework, or whatever you might want to call it),
 and <a href="/dancer">Perl Dancer</a> is a nice backend framework.
 
 Recent versions of Dancer2 started to allow custom skeletons which means, we can provide our own skeleton files and the new Dancer-based

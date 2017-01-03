@@ -132,6 +132,6 @@ $VAR1 = {
 <h2>Python</h2>
 
 In case you are interested, I've also written and article showing
-<a href="http://code-maven.com/how-to-insert-a-dictionary-in-another-dictionary-in-python">how to merge dictionaries in Python</a>.
+<a href="https://code-maven.com/how-to-insert-a-dictionary-in-another-dictionary-in-python">how to merge dictionaries in Python</a>.
 
 

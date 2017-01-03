@@ -32,7 +32,7 @@ In the next example we make the circles clickable and link each circle to a diff
 	<a xlink:href="https://perlmaven.com/">
 		<circle cx="100" cy="100" id="red_circle" r="50" style="fill-opacity: 0.5; fill: #FF0000" />
 	</a>
-	<a xlink:href="http://code-maven.com/">
+	<a xlink:href="https://code-maven.com/">
 		<circle cx="150" cy="100" id="blue_circle" r="50" style="fill: #0000FF; fill-opacity: 0.5" />
 	</a>
 	<a xlink:href="http://perl6maven.com/">

@@ -73,10 +73,10 @@ ul.horizontal li {
 
 <h2>Code-Maven series</h2>
 <ul>
-  <li><a href="http://code-maven.com/angular">Angular JS</a></li>
-  <li><a href="http://code-maven.com/handlebars">Handlebars</a> the HTML templating system written in JavaScript.</li>
-  <li><a href="http://code-maven.com/javascript">JavaScript</a></li>
-  <li><a href="http://code-maven.com/nodejs">NodeJS</a></li>
+  <li><a href="https://code-maven.com/angular">Angular JS</a></li>
+  <li><a href="https://code-maven.com/handlebars">Handlebars</a> the HTML templating system written in JavaScript.</li>
+  <li><a href="https://code-maven.com/javascript">JavaScript</a></li>
+  <li><a href="https://code-maven.com/nodejs">NodeJS</a></li>
 </ul>
 
 </div>

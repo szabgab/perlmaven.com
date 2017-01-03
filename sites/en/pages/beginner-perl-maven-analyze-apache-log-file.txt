@@ -9,9 +9,9 @@
 
 =abstract start
 
-This is the solution for the exercise <a href="http://code-maven.com/exercise-analyze-apache-log-file-count-localhost">Analyze Apache log file</>.
+This is the solution for the exercise <a href="https://code-maven.com/exercise-analyze-apache-log-file-count-localhost">Analyze Apache log file</>.
 
-See more <a href="http://code-maven.com/exercises">exercises</a> on the Code Maven site</a>.
+See more <a href="https://code-maven.com/exercises">exercises</a> on the Code Maven site</a>.
 
 =abstract end
 
