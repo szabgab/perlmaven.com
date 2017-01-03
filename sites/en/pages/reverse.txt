@@ -74,7 +74,7 @@ So the same function can be used for two similar things. This is nice, but it al
 
 <h2>The pitfalls</h2>
 
-The two behavior of <hl>reverse</hl> is not decided by its parameter, but by the construct that is on the left hand side.
+The two behaviors of <hl>reverse</hl> are not decided by its parameter, but by the construct that is on the left hand side.
 
 If you try to reverse an array but put the assignment in <a href="/scalar-and-list-context-in-perl">SCALAR context</a>,
 the result might surprise you:
@@ -126,7 +126,7 @@ It prints
 FooBarMoo
 </code>
 
-That might be surprising. Did the reveres not work there, or were the words already reversed?
+That might be surprising. Did the reverse not work there, or were the words already reversed?
 What if we do the same, but without the call to <hl>reverse</hl>:
 
 <code lang="perl">
@@ -140,7 +140,7 @@ FooBarMoo
 
 That would be baffling. As if <hl>reverse</hl> has not impact.
 Indeed, if you try to reverse a string (the result of <a href="/join">join</a> in this case), but put
-the call in <hl>LIST context</hl> created by the <hl>say</hl> function then it tries to reverse the
+the call in <hl>LIST context</hl> created by the <hl>say</hl> function, then it tries to reverse the
 list given to it string-by-string. Like in this case:
 
 <code lang="perl">
@@ -178,7 +178,7 @@ ooMraBooF
 <h2>Semordnilap</h2>
 
 BTW words like "stressed" and "desserts" are called 
-<a href="http://en.wikipedia.org/wiki/Palindrome#Semordnilap">Semordnilap</a>. The are a
+<a href="http://en.wikipedia.org/wiki/Palindrome#Semordnilap">Semordnilap</a>. They are a
 a strange form of <a href="http://en.wikipedia.org/wiki/Palindrome">Palindrome</a> where the
 reversed version of a word has a different, but valid meaning.
 

@@ -60,22 +60,22 @@ We present a prompt <hl>$ </hl>
 get the input from the user <hl>my $in = &lt;STDIN>;</hl>
 and remove the trailing new-line with <hl>chomp $in;</hl>.
 
-Then we check what was the input.
+Then we check what the input was.
 
-We expect that after every input the user presses ENTER.
+This is done every time the user hits ENTER, unless they enter special meta-commands.
 
 If the user pressed 'q' we leave the loop by calling <hl>last</hl> and that will end our script as well.
 
 Pressing 'c' removes the last thing from the stack and throws it away. This works like "Clear" on the calculators.
 
-Then there are 4 if-statements. Each one check if the input was one of the regular operators.
+Then there are 4 if-statements. Each one checks if the input was one of the regular operators.
 In each case we retrieve the last two values pushed onto the stack, execute the appropriate operation,
 and push the result back to the stack.
 
-The last if-statement checks if the user has entered '=' and, retrieves the last value placed on the
+The last if-statement checks if the user has entered '=' and, if so, retrieves the last value placed on the
 stack and displays it.
 
-Any other values is assumed to be a number that needs to be placed on the stack.
+Any other value is assumed to be a number that needs to be placed on the stack.
 That's what the last call to <hl>push @stack, $in;</hl> does.
 
 You can download the script and run it as <hl>perl rpn.pl</hl>:
@@ -94,13 +94,13 @@ $ q
 
 <h2>Using case / switch / given / when</h2>
 
-Perl does not have a <hl>case</hl> or <hl>switch</hl> statement but
-starting from version 5.10 that was released in 2007 it provide the <hl>given</hl> and <hl>when</hl> statements.
-This pair provides similar features as the <hl>case</hl> or <hl>switch</hl> statements of other languages. With some differences.
-Unfortunately the exact behavior of these statements have changes between releases of Perl and in 5.18 this feature was marked
-as "experimental" and they started to generate warnings.
+Perl does not have a <hl>case</hl> or <hl>switch</hl> statement, but
+starting from version 5.10 that was released in 2007, it provides the <hl>given</hl> and <hl>when</hl> statements.
+This pair provides similar features to the <hl>case</hl> or <hl>switch</hl> statements of other languages, with some differences.
+Unfortunately the exact behavior of these statements has changed between releases of Perl and in 5.18 this feature was marked
+as "experimental" and started to generate warnings.
 
-Nevertheless, let me included here a solution using the <hl>given</hl> and <hl>when</hl> statements:
+Nevertheless, let me include here a solution using the <hl>given</hl> and <hl>when</hl> statements:
 
 <include file="examples/rpn_given.pl">
 
@@ -111,7 +111,7 @@ because we don't check the input beyond those 5 specific cases. (The 4 operators
 
 <h2>Exercise</h2>
 
-A couple of ideas how to improve this:
+Several ideas how to improve this:
 
 <ol>
   <li>Add option <b>l</b> printing the size of the stack (number of elements in it).</li>

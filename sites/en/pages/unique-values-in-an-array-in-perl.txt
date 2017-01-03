@@ -16,10 +16,10 @@ from an array, but there are several solutions to the problem.
 
 =abstract end
 
-<h2>A small calrification</h2>
+<h2>A small clarification</h2>
 
 I am not a native English speaker, but it seems that at least in the world of computers, the word <b>unique</b> is a bit overloaded.
-As far as I can tell in most programming environments the word <b>unique</b> is a synonime of the word <b>distinct</b> and in
+As far as I can tell in most programming environments the word <b>unique</b> is a synonym of the word <b>distinct</b> and in
 this article we use that meaning. So given a list of values like this <hl>foo, bar, baz, foo, zorg, baz</hl> by <b>unique values</b>,
 we mean <hl>foo, bar, baz, zorg</hl>.
 
@@ -27,7 +27,7 @@ The other meaning would be "those values that appear only once" which would give
 
 <h2>List::MoreUtils</h2>
 
-Depending on your situation, probably the simplest way is to use the <hl>uniq</hl>
+Most of the time, the simplest way is to use the <hl>uniq</hl>
 function of the <a href="https://metacpan.org/pod/List::MoreUtils">List::MoreUtils</a> module from CPAN.
 
 <code lang="perl">
@@ -132,8 +132,8 @@ Meaning we have not seen this value yet. We push the value to the end of the new
 We also set the value of <hl>$seen{"foo"}</hl> to 1.
 Actually any value would do as long as it is considered "true" by Perl.
 
-The next time we encounter the same string we already have that key
-in the <hl>%seen</hl> hash and its value is true, so the <hl>if</hl> condition
+The next time we encounter the same string, we already have that key
+in the <hl>%seen</hl> hash. Since its value is true, the <hl>if</hl> condition
 will fail, and we won't <hl>push</hl> the duplicate value in the resulting array.
 
 
@@ -220,15 +220,15 @@ Let's take this expression apart:
 It goes over all the elements of the array, executes the block and passes the result to the left.
 
 In our case, for every value in the array it will pass the value itself followed by the number 1.
-Remember <hl>=&gt;</hl>, aka. fat comma, is just a comma. Assuming @data has ('a', 'b', 'a') in it,
+Remember <hl>=&gt;</hl>, a.k.a. fat comma, is just a comma. Assuming @data has ('a', 'b', 'a') in it,
 this expression will return ('a', 1, 'b', 1, 'a', 1).
 
 <code lang="perl">
 map { $_ => 1 } @data
 </code>
 
-If we assigned that expression to a hash, we would get the original data as keys, and the number 1-es as
-values. Try this:
+If we assigned that expression to a hash, we would get the original data as keys, each with value of the
+number 1. Try this:
 
 <code lang="perl">
 use strict;
@@ -249,7 +249,7 @@ $VAR1 = {
         };
 </code>
 
-If, instead of assigning it to an array we wrap the above expression in curly braces, we will get a reference to an
+If, instead of assigning it to an array, we wrap the above expression in curly braces, we will get a reference to an
 anonymous hash.
 
 <code lang="perl">
@@ -282,11 +282,11 @@ and we'll get back the unique values from <hl>@data</hl>
 <h2>Unique values in an array reference</h2>
 
 There is a separate article showing the above solution in case the data
-is in an <a href="/unique-values-in-an-array-reference-in-perl">reference to an array</a>.
+is in a <a href="/unique-values-in-an-array-reference-in-perl">reference to an array</a>.
 
 <h2>Exercise</h2>
 
-Given the following file print out the unique values:
+Given the following file, print out the unique values:
 
 input.txt:
 
