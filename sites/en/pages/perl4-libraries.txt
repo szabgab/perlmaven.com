@@ -15,7 +15,7 @@ This episode explains how Perl libraries work. Something from the age of Perl 4.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/perl4-libraries" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/perl4-libraries" youtube="ehcarfOHgEg" />
 
 <h2>Lack of code reuse</h2>
 
