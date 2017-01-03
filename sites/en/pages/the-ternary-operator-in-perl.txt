@@ -11,7 +11,7 @@
 The ternary operator is probably the saddest operator in the world. All the other operators have names,
 such as addition, unary negation, or binary negation, but this one is only described by its syntax.
 
-As in most languages this is the only operator with 3 parameters, most people don't know its real name.
+As in most languages, this is the only operator with 3 parameters. Most people don't know its real name.
 Even though, when it was born, it was called the <a href="http://en.wikipedia.org/wiki/%3F:">conditional operator</a>.
 
 =abstract end

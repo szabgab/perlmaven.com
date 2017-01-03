@@ -58,10 +58,9 @@ array to the end of the <hl>@names</hl> array, extending it to a 5-element array
 
 <h2>shift</h2>
 
-The <hl>shift</hl> function will move the whole array to the left.
-Assuming you imagine the array to start on the left hand side.
-The element that was the first element of the array will "fall off"
-the array and become the return value of the function.
+If you imagine the array starting on the left hand side,
+the <hl>shift</hl> function will move the whole array one unit to the left.
+The first element will "fall off" the array and become the function's return value.
 (If the array was empty, <b>shift</b> will return <a href="/undef-and-defined-in-perl">undef</a>.) 
 
 After the operation, the array will be one element shorter.
@@ -79,9 +78,9 @@ This is quite similar to <hl>pop</hl>, but it works on the lower end of the arra
 
 This is the opposite operation of <hl>shift</hl>. <hl>unshift</hl> will
 take one or more values (or even 0 if that's what you like) and place it at the
-beginning of the array moving all the other elements to the right.
+beginning of the array, moving all the other elements to the right.
 
-You can pass to it a single scalar value, and then that value will become the
+You can pass it a single scalar value, which will become the
 first element of the array. Or, as in the second example, you can pass a second
 array and then the elements of this second array (<hl>@others</hl> in our case)
 will be copied to the beginning of the main array (<hl>@names</hl> in our case)
