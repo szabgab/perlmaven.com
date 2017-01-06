@@ -36,7 +36,7 @@ Some include screencasts, others contain just text.
 <ol>
   <li><a href="/pro/introduction-to-advanced-perl-course">Introduction to the Advanced Perl Maven course</a></li>
   <li><a href="/perl4-libraries">Perl 4 libraries</a></li>
-  <li><a href="/pro/the-problem-with-libraries">The problem with Perl 4-style libraries</a></li>
+  <li><a href="/the-problem-with-libraries">The problem with Perl 4-style libraries</a></li>
   <li><a href="/pro/namespaces-and-packages">Namespaces or packages</a></li>
   <li><a href="/pro/modules">Modules</a></li>
   <li><a href="/pro/require-at-inc">How does require find the module to be loaded?</a></li>
