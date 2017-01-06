@@ -15,7 +15,7 @@ Although they are still in use, they belong to  much earlier era. Before Perl 5 
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/the-problem-with-libraries" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/the-problem-with-libraries" youtube="UZeEzD5459c" />
 
 All of nothing:
 The library (<hl>library.pl</hl>) we had in <a href="/perl4-libraries">Perl 4 libraries</a> had 3 functions in
