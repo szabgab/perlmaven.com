@@ -1,4 +1,4 @@
-=title Namespaces and packages
+=title Namespaces and packages in Perl
 =timestamp 2017-01-11T12:00:11
 =indexes package, ::
 =tags screencast
@@ -13,7 +13,7 @@ see a better solution using Perl 5 namespaces.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/namespaces" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/namespaces" youtube="VdtJqpD2ARA" />
 
 Other language also use namespaces. In Perl 5, in order to switch to another namespace we use the
 <hl>package</hl> keyword. (For some more clarification on what namespaces, packages, modules etc. are,
