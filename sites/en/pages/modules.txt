@@ -1,9 +1,114 @@
-=title Projects
-=timestamp 2015-09-28T13:45:50
+=title Modules in Perl
+=timestamp 2017-01-14T16:00:11
+=indexes require
+=tags screencast
+=books advanced
 =status show
-=show_newsletter_form 1
-=show_date 0
-=author 0
-=archive 0
+=author szabgab
 =comments_disqus_enable 1
+
+=abstract start
+
+Previously I explained what the <a href="/pro/namespaces">namespaces</a> are in Perl, using the <hl>package</hl> keyword,
+but we have not seen the actual solution to the <a href="/the-problem-with-libraries">problem we encountered</a> earlier.
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/modules" />
+
+We had our package (namespace) in the same file as our main code, but we could do the same in two separate files:
+
+The main script is in <b>namespace.pl</b> and we <hl>require</hl> the other file providing full (or relative) path to it.
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+require "namespace_lib.pl";
+
+print Calc::add(3, 4), "\n";
+</code>
+
+In the other file which we called <b>namespace_lib.pl</b> is everything starting from the <hl>package Calc;</hl>
+expression till where we had the <hl>package main;</hl> earlier. This time we don't need the second <hl>package</hl>
+statement, but we need to end the file with a true value. <hl>1;</hl> in this case.
+
+<code lang="perl">
+package Calc;
+use strict;
+use warnings;
+
+my $base = 10;
+
+sub add {
+    validate_parameters(@_);
+
+    my $total = 0;
+    $total += $_ for (@_);
+    return $total;
+}
+
+sub multiply {
+}
+
+sub validate_parameters {
+    die 'Not all of them are numbers'
+        if  grep {/\D/} @_;
+    return 1;
+}
+
+1;
+</code>
+
+So basically we took the <a href="/pro/namespaces">previous example</a>, moved the content of the Calc package into a separate file,
+and instead of that we put <hl>require "namespace_lib.pl";</hl> to load the new file.
+
+In this version we don't need to use prefixes for the function inside the file where the Calc namespace is defined. On the other hand we
+declare our global variables using <hl>my</hl>, because now we have <hl>use strict;</hl> and that forces us to do so. This way the
+variable <hl>$base</hl> will be global in the file declaring Calc, but it won't leak out to the file that uses it.
+
+Then we can call the <hl>add</hl> function of the <hl>Calc</hl> namespace in the main script using <hl>Calc::add()</hl>, the fully qualified name 
+of the function. We can use the other function of the Calc namespace, including the <hl>validate_parameters</hl> function, but they not part
+of the main namespace, and thus there can be no collision with functions from other namespaces, including the main namespace.
+
+So if we have a library with a Calc namespace and another one with the Inventory namespace, then even if both have and <hl>add</hl> function, one will be
+called <hl>Calc::add()</hl>, and the other one <hl>Inventory::add()</hl> and then for anyone reading the script, including perl, it
+will be clear which <hl>add</hl> function we are calling.
+
+That's how we can put the code of a namespace into a separate file.
+But how can we turn this into a <b>module</b>?
+
+<h2>Creating a module</h2>
+
+A <b>module</b> in Perl is just a file in which there is a single namespace (<hl>package</hl>) and where the name of the file is the same as the name of
+the package inside with the .pm extension. So in our case if we rename the <hl>namespace_lib.pl</hl> to be <hl>Calc.pm</hl> then suddenly we have a <b>module</b>.
+
+(Actually even if there are multiple packages in the same file we can call it a module but that's just creates more confusion so let's just leave that now.)
+
+The script (we call now <b>module.pl</b>) has changed a bit. Instead of <hl>require</hl>-ing the external file using a relative or full path to it, 
+we write <hl>require Calc;</hl> and perl will find the <hl>Calc.pm</hl> file and load it.
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+use lib 'examples/modules';
+
+require Calc;
+
+print Calc::add(3, 4), "\n";
+</code>
+
+The <hl>Calc.pm</hl> file, the module itself has exactly the same content as <hl>namespace_lin.pl</hl> had. Just the name of the file has changed.
+
+Seeing the <hl>require Calc;</hl> statement Perl will search for a file called <hl>Calc.pm</hl> in the directories listed in the
+<hl>@INC</hl> array. If the Calc.pm can be found in any of the directories listed in the <hl>@INC</hl> by default then perl will find the file.
+If the <hl>Calc.pm</hl> is located elsewhere then we need to
+<a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">change @INC</a>.
+The statement <hl>use lib 'examples/modules';</hl> adds the <b>examples/modules</b> directory to <hl>@INC</hl> which was needed when I 
+recorded the screencast.
+
+
 
