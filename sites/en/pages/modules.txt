@@ -9,12 +9,12 @@
 
 =abstract start
 
-Previously I explained what the <a href="/pro/namespaces">namespaces</a> are in Perl, using the <hl>package</hl> keyword,
+Previously I explained what the <a href="/namespaces-and-packages">namespaces</a> are in Perl, using the <hl>package</hl> keyword,
 but we have not seen the actual solution to the <a href="/the-problem-with-libraries">problem we encountered</a> earlier.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/modules" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/modules" youtube="BwRaMyHiuOc" />
 
 We had our package (namespace) in the same file as our main code, but we could do the same in two separate files:
 
