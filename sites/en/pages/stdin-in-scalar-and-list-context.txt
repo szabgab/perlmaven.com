@@ -9,8 +9,8 @@
 =abstract start
 
 We have learned about <a href="/scalar-and-list-context-in-perl">scalar and list context in Perl</a>, and we have seen
-how does <a href="/the-year-19100">localtime behave in scalar and list context</a>. We also saw what does
-and array return in scalar context.
+how <a href="/the-year-19100">localtime behaves in scalar and list context</a>. We also saw what an array returns
+ in scalar context.
 We also saw how to <a href="/reading-from-a-file-in-scalar-and-list-context">read from a file in SCALAR and LIST context</a>.
 
 This time we'll look at reading from STDIN using <hl>&lt;STDIN></hl> in scalar and list context.
@@ -57,15 +57,15 @@ print "Hello, I see you know " . scalar(@names) . "\n";
 </code>
 
 This script prints some text too and then waits for your input. Pressing ENTER after you typed in some text
-will not end the waiting of Perl. In order to tell Perl that you have finished typing you need to press
-ENTER (to get to the next empty line) and then send and <hl>EOF</hl> a.k.a. <hl>End of File</hl> signal.
-How to send that is easy, but it depend on the Operating system. On Linux/Unix system pressing <hl>Ctrl-D</hl>
+will leave Perl waiting for the next line. In order to tell Perl that you have finished typing, you need to press
+ENTER (to get to the next empty line) and then send an <hl>EOF</hl> a.k.a. <hl>End of File</hl> signal.
+This depends on the Operating system. On Linux/Unix system pressing <hl>Ctrl-D</hl>
 (also written as ^D sometimes) will send this signal.
 On MS Windows you have to type <hl>Ctrl-Z</hl> (sometimes written as ^Z) and then also press <hl>ENTER</hl>.
 
 In both cases you have to send the signal on a new line, that is, after pressing ENTER.
 
-Once you send that signal, perl will take everything you typed and assign to the <hl>@names</hl> array.
+Once you send that signal, Perl will assign everything you typed to the <hl>@names</hl> array.
 Every line you typed in, every string that you finished by pressing ENTER
 will be in a separate element of the array. So, if you type in:
 
@@ -102,8 +102,8 @@ On the last line we print out the <a href="/length-of-an-array">number of elemen
 
 <h2>Usage?</h2>
 
-Almost always you need to read from STDIN in scalar context,
-that is, assigning the result to a scalar variable:
+You almost always need to read from STDIN in scalar context,
+that is, to assign the result to a scalar variable:
 
 <code lang="perl">
 $input = <STDIN>;

@@ -9,7 +9,7 @@
 =abstract start
 
 I guess there is not much to say about the <hl>join</hl> function except that
-it is the counter part of the <hl>split</hl> function.
+it is the counterpart of the <hl>split</hl> function.
 
 =abstract end
 
