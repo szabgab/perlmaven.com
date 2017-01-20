@@ -82,7 +82,7 @@ and all the upper case letters are located earlier than the lower case letters.
 <h2>Comparison function</h2>
 
 The way <hl>sort</hl> works in Perl is that it goes over every two elements of
-the original array; In every turn it puts the value from the left side into the variable <hl>$a</hl>,
+the original array. In every turn it puts the value from the left side into the variable <hl>$a</hl>,
 and the value on the right side in the variable <hl>$b</hl>. Then it calls a <b>comparison function</b>.
 That "comparison function" will return 1 if the content of <hl>$a</hl> should be on the left, -1 if the content of
 <hl>$b</hl> should be on the left, or 0 if it does not matter as the two values are the same.

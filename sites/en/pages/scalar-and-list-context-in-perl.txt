@@ -242,7 +242,7 @@ And the output is
 FooBarBaz
 3542071011113100
 </code>
-The former is somehow understandable, these are the values in the array smashed together.
+The former is somehow understandable. These are the values in the array smashed together.
 
 The second one is confusing. It is NOT the same as the result of the <hl>time()</hl>
 function one might think. It is actually the 9 numbers returned by the <hl>localtime()</hl>
