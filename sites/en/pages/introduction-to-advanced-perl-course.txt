@@ -15,5 +15,5 @@ back to other parts that we are skipping right now.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/introduction" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/introduction" youtube="Rf2OxHuwkjw" />
 
