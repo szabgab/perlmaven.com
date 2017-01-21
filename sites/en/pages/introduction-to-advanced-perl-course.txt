@@ -1,0 +1,19 @@
+=title Introduction to the Advanced Perl course
+=timestamp 2017-01-21T17:00:11
+=indexes advanced
+=books advanced
+=tags screencast
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Let's just introduce myself and invite you to join me in the <a href="/advanced-perl-maven-video-course">Advanced Perl training course</a>.
+We are going to start with libraries and modules, and later we are going to come
+back to other parts that we are skipping right now.
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/introduction" />
+
