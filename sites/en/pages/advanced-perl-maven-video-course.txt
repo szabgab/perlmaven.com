@@ -39,7 +39,7 @@ Some include screencasts, others contain just text.
   <li><a href="/the-problem-with-libraries">The problem with Perl 4-style libraries</a></li>
   <li><a href="/namespaces-and-packages">Namespaces or packages</a></li>
   <li><a href="/modules">Modules</a></li>
-  <li><a href="/pro/require-at-inc">How does require find the module to be loaded?</a></li>
+  <li><a href="/require-at-inc">How does require find the module to be loaded?</a></li>
   <li><a href="/pro/use-require-import">What is the difference between require and use? What does import do?</a></li>
   <li><a href="/pro/import">Exporting and importing functions easily</a></li>
   <li><a href="/pro/restrict-the-import">Restrict the import by listing the functions to be imported</a></li>
