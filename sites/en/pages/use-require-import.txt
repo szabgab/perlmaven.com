@@ -1,4 +1,4 @@
-=title What is the difference between require and use? What does import do?
+=title What is the difference between require and use in Perl? What does import do?
 =timestamp 2017-01-27T10:00:11
 =indexes use, require, import, BEGIN
 =tags screencast
