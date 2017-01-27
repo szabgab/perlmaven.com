@@ -116,7 +116,7 @@ some of them can even add a <a href="/how-to-add-a-relative-directory-to-inc">pa
 but there can be cases when you need more complex code to calculate the path you'd want to add to <hl>@INC</hl>.
 
 You cannot do that in regular code as the <hl>use</hl> statements are executed during compile time
-of the code. (You can't always switch to <a href="/pro/use-require-import">require and import</a>.)
+of the code. (You can't always switch to <a href="/use-require-import">require and import</a>.)
 
 There was even this strange case, when I had to teach Perl at a company where the systems the students received to do their exercises on were so broken,
 perl could not even execute <hl>use lib</hl>. In an ideal world I'd ask the system administrators to fix the installation (These were Sun Solaris system

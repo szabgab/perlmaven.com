@@ -1,0 +1,110 @@
+=title What is the difference between require and use? What does import do?
+=timestamp 2017-01-27T10:00:11
+=indexes use, require, import, BEGIN
+=tags screencast
+=books advanced
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+We have learned about <a href="/modules">modules</a> and how to <a href="/require-at-inc">load them to memory</a>,
+but I have not explained the difference between <hl>use</hl> and <hl>require</hl>, and you probably have seen
+<hl>use</hl> in most places and I have only explained about <hl>require</hl> in the previous episode.
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/use-require-import" />
+
+
+<h2>require</h2>
+
+We saw
+
+<code lang="perl">
+require Math::Calc;
+</code>
+
+when the script is running and it reaches the above expression, it will go over the directories listed in
+the <hl>@INC</hl> array, check if any of them has a subdirectory called <hl>Math</hl> and if that subdirectory
+there is a file called <hl>Calc.pm</hl>. When it finds the fist such file, it loads it into memory, compiles it and stops the search.
+This will let you use the functions of the module with their <a href="/namespaces-and-packages">fully qualified name</a> (eg. <hl>Math::Calc::add()</hl>)
+
+<h2>use</h2>
+
+If you have either of these expressions in the code:
+ 
+<code lang="perl">
+use Math::Calc;
+</code>
+
+<code lang="perl">
+use Math::Calc qw(add);
+</code>
+
+then perl will load and compile the module during the compilation time of the script.
+That's because having <hl>use</hl> in the script will be replaced by the following piece of code
+in the file:
+
+<code lang="perl">
+BEGIN {
+    require Math::Calc;
+    Math::Calc->import( qw(add) );
+}
+</code>
+
+The <hl>BEGIN</hl> block means that we ask perl to run the code inside the block immediately when that
+part of the script has finished compiling.
+
+So during the compilation for phase, when perl finished compiling the code in the BEGIN-block, it will
+pause the compilation and execute the code inside the block. The first statement there is the <hl>require</hl>
+statement that means, find the <hl>Math/Calc.pm</hl> file, load it and compile it.
+The second statement in the <hl>BEGIN</hl> runs the <hl>import</hl> method of the newly loaded module if
+there is such a method. (If there is no <hl>import</hl> method then nothing happens.)
+
+If the user who typed in <hl>use Math::Calc ...</hl> also added a list of values, as we did in the second
+example with the <hl>qw(add)</hl>, then this list is passed to the <hl>import</hl> method.
+
+What the <hl>import</hl> method does is up to the author of the (<hl>Math::Calc</hl>) module, but in most
+cases it will arrange for the <hl>add</hl> function to be inserted in the name-space of the code where
+the <hl>use</hl> statement was located so that the author of that code can call <hl>add</hl> without
+providing the fully qualified name <hl>Math::Calc::add()</hl> of the function.
+
+In other words, the <hl>import</hl> method imports the <hl>add</hl> function to the name-space of the user.
+
+
+So that's the difference. <hl>require</hl> happens at run-time, and <hl>use</hl> happens and compile-time
+and the <hl>use</hl>, in addition to loading the module, it also imports some functions into the current name-space.
+
+<h2>Load conditionally</h2>
+
+So some people might think they want to load a module conditionally so they write:
+
+<code lang="perl">
+if ($holiday) {
+    use Vacation::Mode;
+}
+</code>
+
+but this <b>does NOT work</b> as we expect because the <hl>use</hl> statement, regardless of its location(!)
+will be executed during compile time. So when perl compiles this script and reaches the if-statement
+in the compilation, it will load the <hl>Vacation::Mode</hl> module and import its function, regardless
+of what value the variable <hl>$holiday</hl> will hold during run-time.
+
+If you want to load modules on condition, in order to save on start-up time, or save on memory consumption
+hoping that you won't need to load all the modules in a give process, then you can write the following:
+
+<code lang="perl">
+if ($holiday) {
+    require Vacation::Mode;
+    Vacation::Mode->import;
+}
+</code>
+
+Because <hl>requires</hl> is only executed during run-time, this piece of code will be executed only during run-time
+and only if the <hl>$holiday</hl> variable holds something that is considered True by Perl.
+
+Then you can call the <hl>import</hl> method of the module. If you want to.
+
+

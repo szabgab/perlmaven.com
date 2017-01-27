@@ -152,7 +152,7 @@ use Module::Name ('foo', '$bar');
 </code>
 
 This basically means we pass this list as parameters to the
-<a href="/pro/use-require-import">import</a> function of <hl>Module::Name</hl>
+<a href="/use-require-import">import</a> function of <hl>Module::Name</hl>
 which will import the 'foo' function and the '$bar' scalar variable into our code.
 
 See also <a href="/pro/on-demand-import">on-demand import</a>, for further explanation.
