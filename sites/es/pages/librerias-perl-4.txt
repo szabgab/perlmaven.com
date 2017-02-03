@@ -5,7 +5,7 @@
 =tags screencast
 =status show
 =author szabgab
-=original perl4-libraries.txt
+=original perl4-libraries
 =translator nselem
 =comments_disqus_enable 1
 
