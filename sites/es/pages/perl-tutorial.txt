@@ -226,3 +226,5 @@ Recordatorio, hay <a href="https://perlmaven.com/beginner-perl-maven-e-book">e-b
 <a href="https://perlmaven.com/products">comprar (en)</a>.
 
 
+<b>Introducción al curso avanzado de Perl</b>
+<li><a href="/librerias-perl-4.txt">Librerías en Perl 4</a></li>
