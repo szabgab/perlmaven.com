@@ -1,33 +1,27 @@
 =title The problem with Perl 4 style libraries
-=timestamp 2017-01-06T08:00:11
+=timestamp 2017-02-11T08:00:11
 =indexes -w
 =tags screencast
 =books advanced
 =status show
 =author szabgab
+=original the-problem-with-libraries
+=translator nselem
 =comments_disqus_enable 1
 
 =abstract start
 
-Now that we have seen how to use <a href="/perl4-libraries">Perl 4 libraries</a>, let's see what are the problems with them?
-
-Although they are still in use, they belong to  much earlier era. Before Perl 5 came out in 1995.
-
+Ahora que hemos aprendido a usar <a href="/librerias-perl-4">librerías en Perl 4</a>, estudiaremos qué problemas tienen.
+A pesar de que siguen en uso, pertenecen a una época muy antigua, antes de que Perl 5 apareciera en 1995.
 =abstract end
 
 <slidecast file="/media/videos/advanced-perl/libraries-and-modules/the-problem-with-libraries" youtube="UZeEzD5459c" />
 
-All of nothing:
-The library (<hl>library.pl</hl>) we had in <a href="/perl4-libraries">Perl 4 libraries</a> had 3 functions in
-it and a global variable (<hl>$base</hl>). If we <hl>import</hl> the file as we have done in the <hl>perl4_app.pl</hl>
-file then we will have all the functions and variables of the library in our script.
+De la nada:
+La librería (<hl>library.pl</hl>) que tenemos en <a href="/librerias-perl-4">librerías en Perl 4</a> contiene 3 funciones y una variable global (<hl>$base</hl>). Si nosotros hacemos <hl>import</hl> de la librería tal como está hecho en <hl>perl4_app.pl</hl>
+entonces tendremos todas las funciones y la variable disponibles en nuestro script.
 
-The problem is that if you have more than one libraries used in the same script and some of the function names are
-declared in both. For example there is an <hl>add</hl> function of the library dealing with math and a totally different
-<hl>add</hl> function in a library dealing with inventory. If you write a script that requires both libraries
-then both would import the <hl>add</hl> function and they would override each other. More specifically the second one
-loaded (using require) would override the first one. Which means the load order of the requires will matter, which
-will probably drive crazy someone who is trying to understand why the script acts strangely.
+El problema viene cuando usas más de una librería en un mismo script y algunas de las funciones están declaradas con el mismo nombre en ambas librerías. Por ejemplo tenemos una función matemática <hl>add</hl> en esta librería, supongamos que tenemos otra función <hl>add</hl> totalmente diferente relacionada con inventarios en otra librería. Si escribes un script que requiera ambas librerías, ambos importarán la función <hl>add</hl> y esta funciones se sobre escribirán una a la otra. Más específicamente, la segunda función cargada (usando require) sobre escribirá a la primera.Lo que significa pues que el orden de los requires importa, y probablemente enloquecerá a alguien que esté tratando de entender por qué el script actúa extraño.
 
 This potential of collision just increases with the number of additional libraries used.
 
