@@ -1,4 +1,4 @@
-=title The problem with Perl 4 style libraries
+=title El problema con las librerías estilo Perl 4
 =timestamp 2017-02-11T08:00:11
 =indexes -w
 =tags screencast
@@ -11,7 +11,7 @@
 
 =abstract start
 
-Ahora que hemos aprendido a usar <a href="/librerias-perl-4">librerías en Perl 4</a>, estudiaremos qué problemas tienen.
+Ahora que hemos aprendido a usar <a href="/librerias-perl-4">librerías en Perl 4</a>, estudiaremos los problemas que tienen.
 A pesar de que siguen en uso, pertenecen a una época muy antigua, antes de que Perl 5 apareciera en 1995.
 =abstract end
 
@@ -21,12 +21,13 @@ De la nada:
 La librería (<hl>library.pl</hl>) que tenemos en <a href="/librerias-perl-4">librerías en Perl 4</a> contiene 3 funciones y una variable global (<hl>$base</hl>). Si nosotros hacemos <hl>import</hl> de la librería tal como está hecho en <hl>perl4_app.pl</hl>
 entonces tendremos todas las funciones y la variable disponibles en nuestro script.
 
-El problema viene cuando usas más de una librería en un mismo script y algunas de las funciones están declaradas con el mismo nombre en ambas librerías. Por ejemplo tenemos una función matemática <hl>add</hl> en esta librería, supongamos que tenemos otra función <hl>add</hl> totalmente diferente relacionada con inventarios en otra librería. Si escribes un script que requiera ambas librerías, ambos importarán la función <hl>add</hl> y esta funciones se sobre escribirán una a la otra. Más específicamente, la segunda función cargada (usando require) sobre escribirá a la primera.Lo que significa pues que el orden de los requires importa, y probablemente enloquecerá a alguien que esté tratando de entender por qué el script actúa extraño.
+El problema viene cuando usas más de una librería en un mismo script y algunas de las funciones están declaradas con el mismo nombre en ambas librerías. Por ejemplo tenemos una función matemática <hl>add</hl> en esta librería, supongamos que tenemos otra función <hl>add</hl> totalmente diferente relacionada con inventarios en otra librería. Si escribes un script que requiera ambas librerías, ambos importarán la función <hl>add</hl> y estas funciones se sobre escribirán una a la otra. Más específicamente, la segunda función cargada (usando require) sobre escribirá a la primera.Lo que significa pues que el orden de los requires importa, y probablemente enloquecerá a alguien que esté tratando de entender por qué el script actúa extraño.
 
 Esta posible falla aumenta entre más librerías agreguemos a un script.
 
 Y perl no manda siquier una advertencia, por supuesto, porque es el estilo de Perl 4 de programar sin el <hl>use warnings</hl>.
-(Aunque podemos ativar las advertencias agregando <hl>-w</hl> a la línea sh-bang:
+
+Aunque podemos activar las advertencias agregando <hl>-w</hl> a la línea sh-bang:
 
 <code>
 #!/usr/bin/perl -w
