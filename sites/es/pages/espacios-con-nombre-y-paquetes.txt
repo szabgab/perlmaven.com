@@ -1,0 +1,75 @@
+=title Espacios con nombre y paquetes en Perl
+=timestamp 2017-01-11T12:00:11
+=indexes package, ::
+=tags screencast
+=status show
+=author szabgab
+=original namespaces-and-packages
+=comments_disqus_enable 1
+
+=abstract start
+
+Previamente estudiamos <a href="/the-problem-with-libraries">los problemas con las librerías estilo Perl 4</a>. veamos una mejor solución
+utilizando los espacios-con-nombre de Perl 5.
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/namespaces" youtube="VdtJqpD2ARA" />
+
+Otros lenguajes también utilizan espacios con nombre. En Perl 5, para cambiar de espacio con nombre utilizamos la palabra reservada
+<hl>package</hl>. (Para una mayor esplicación sobre espacios con nombre, paquetes, módulos etc. te recomendamos leer <a href="/packages-modules-and-namespace-in-perl">este artículo</a>.)
+
+Nosotros cambiamos a un espacio con nombre al escribir <hl>package</hl> seguido del nombre del espacio deseado. Por ejemplo
+<hl>Calc</hl> en nuestro ejemplo anterior. Namespaces usually start with a capital letter follower by lower-case letter,
+though this is more of a convention than a hard requirement of Perl.
+
+In this script we already have <hl>use strict;</hl> and <hl>use warnings;</hl> because we entered the new milleneum.
+
+Then we have <hl>package Calc;</hl> this means that from this point on, the code we write is in the Calc namespace
+until we call <hl>package</hl> again with some other namespace. We load <hl>use strict;</hl> and <hl>use warnings</hl>
+again, even though we don't really need them here, but we are planning to move the code of the package into another
+file and there we will already want them to be part of the code. Then we add functions. (OK, in this example there
+is only a single function that happens to be called <hl>add</hl>, but don't let this minor issue confuse you. You can put
+any number of functions inside the namespace.)
+
+The we return to the main package by writing <hl>package main;</hl>.
+
+This is something we have not talked about yet because there was no need for it, but when you start writing a perl
+script it is already inside a namespace called <hl>main</hl>. In most of the cases we don't have to do anything with
+it, but now it is handy so we can switch back to the namespace of the main script. The name itself is probably a left-over
+from the C programming language where you have to declare a function called main in order to have anything running.
+
+Note, it is called <hl>main</hl> with lower-case letters.
+
+So after the <hl>package main;</hl> statement we are back in the main namespace. If we now tried to call the <hl>add</hl>
+function <hl>add(3, 4)</hl>, we would get an exception and the script would die with 
+<b>Undefined subroutine &main::add called  at namespaces.pl line 20.</b>.
+
+That's because we don't have an <hl>add</hl> function in the main namespace. Instead of that we have to write the
+fully qualified name of the function, including the namespace as a prefix separated by double-colon:
+<hl>Calc::add(3, 4)</hl>
+
+<b>namespaces.pl</b>:
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+package Calc;
+use strict;
+use warnings;
+
+sub add {
+    my $total = 0;
+    $total += $_ for (@_);
+    return $total;
+}
+
+
+package main;
+
+print Calc::add(3, 4), "\n";
+</code>
+
+That's how you use <hl>package</hl> and that's how you create namespaces in Perl 5.
