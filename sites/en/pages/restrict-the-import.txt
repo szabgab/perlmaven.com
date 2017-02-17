@@ -17,7 +17,7 @@ This can be dangerous.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/restrict-the-import" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/restrict-the-import" youtube="cbZoVOAVkgA" />
 
 If I just import everything the module provides and then I upgrade the module, then
 in the new version the module might start to export several new functions that can collide
