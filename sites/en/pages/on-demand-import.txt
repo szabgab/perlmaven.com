@@ -16,7 +16,7 @@ the <hl>import</hl> function and we put the list of functions to be exported in 
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/on-demand-import" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/on-demand-import" youtube="yvig3dDKmy4" />
 
 As the number of functions we export grows, this soon can get out of hand. Especially
 for people who do not 
