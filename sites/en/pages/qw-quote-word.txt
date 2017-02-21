@@ -155,5 +155,5 @@ This basically means we pass this list as parameters to the
 <a href="/use-require-import">import</a> function of <hl>Module::Name</hl>
 which will import the 'foo' function and the '$bar' scalar variable into our code.
 
-See also <a href="/pro/on-demand-import">on-demand import</a>, for further explanation.
+See also <a href="/on-demand-import">on-demand import</a>, for further explanation.
 
