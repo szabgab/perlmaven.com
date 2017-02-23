@@ -35,6 +35,7 @@ Alternatively you can install <a href="/psgi">PSGI</a> and if you have no better
 
 <ul>
   <li><a href="/modern-web-with-perl">Modern Web with Perl</a></li>
+  <li><a href="https://code-maven.com/set-up-cgi-with-apache">Set up CGI with Apache on Ubuntu Linux</a></li>
   <li><a href="/perl-cgi-script-with-apache2">Perl/CGI script with Apache2</a></li>
   <li><a href="/perl-cgi-mod-perl-psgi">Which is better perl-CGI, mod_perl or PSGI?</a></li>
   <li><a href="/simple-cgi-script-to-send-form-by-email">Simple CGI Perl script to send form by e-mail</a></li>
