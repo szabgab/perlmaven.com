@@ -59,3 +59,8 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/moose-test-constructor">Moose: Testing the constructor</a></li>
 </ul>
 
+<h2>Other</h2>
+<ul>
+  <li><a href="/pro/testing-perl-cgi">Testing Perl CGI</a></li>
+</ul>
+
