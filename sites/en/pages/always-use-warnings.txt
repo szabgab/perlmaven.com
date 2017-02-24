@@ -309,7 +309,7 @@ I have never really tested this, but my perception is that by far the biggest be
 
 I'd recommend to <b>always</b> <hl>use warnings</hl> in your perl code.
 
-Possibly even <hl>use warnings FATAL => 'all';</hl> though the this might be better
-to be used only during development and testing.
+Possibly even <hl>use warnings FATAL => 'all';</hl> though this might be better
+fit during development and testing.
 
 
