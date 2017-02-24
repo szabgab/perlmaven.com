@@ -68,8 +68,12 @@ Use of uninitialized value $code_from_db in string eq at access_control.pl line 
 Accessing account information...
 </code>
 
-If we even make our warnings into fatal errors by adding this line
-<hl>use warnings FATAL => 'all';</hl>
+If we make our warnings into <b>fatal errors</b> by adding the following line
+
+<code lang="perl">
+use warnings FATAL => 'all';
+</code>
+
 we will avoid that problem. This will be the output:
 
 <code>
@@ -208,7 +212,7 @@ help if you have a 1,000,000 lines ancient code-base.
 
 <h2>"my" variable masks earlier declaration</h2>
 
-After learning that you <a href="/strict">must always use strict</hl> you started to declare all of your variables.
+After learning that you <a href="/strict">must always use strict</a> you started to declare all of your variables.
 Sometimes even twice like in this case:
 
 <include file="examples/mymy.pl">
