@@ -15,7 +15,8 @@ The recommendation to <a href="/strict">always use strict</a> is universally acc
 but the <hl>use warnings</hl> is still debated by some people.
 
 Here you will find a collections of cases where <hl>use warnings</hl> would catch a bug in your code. Some of them thanks to
-the members of <a href="https://www.facebook.com/groups/perlprogrammers/permalink/1447468815285902/">Perl Programmers on Facebook</a>.
+the members of <a href="https://www.facebook.com/groups/perlprogrammers/permalink/1447468815285902/">Perl Programmers on Facebook</a>
+and the <a href="https://www.linkedin.com/groups/106254">Perl group on LinkedIN</a>.
 
 It is of course, not enough to turn on warnings. One also needs to monitor the code to make sure no warnings are printed
 and there are warnings, one must investigate and fix the code that generated the warning message.
