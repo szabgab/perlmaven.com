@@ -16,6 +16,7 @@ Some of the articles even include directions showing how to fix the error.
 
 =abstract end
 
+<slidecast file="/media/videos/beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
 
 <ul>
     <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>

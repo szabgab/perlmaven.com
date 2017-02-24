@@ -11,6 +11,8 @@
 
 Errors and warnings while correct, they are not always that useful for beginners.
 
+There is also a listing of the articles about <a href="/common-warnings-and-error-messages">common errors and warnings in Perl</a>
+
 =abstract end
 
 <slidecast file="/media/videos/beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
