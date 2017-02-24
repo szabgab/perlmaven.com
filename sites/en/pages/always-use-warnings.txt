@@ -270,6 +270,20 @@ Possible precedence issue with control flow operator at examples/prec.pl line 14
 0
 </code>
 
+<h2>Assignment in if statement</h2>
+
+Another typo when we put a single <hl>=</hl> sign in a <hl>if statement</hl> as in this example.
+
+<include file="examples/assignment_in_if.pl">
+
+Running this code will print "True". Which is clearly false.
+
+Turning on <hl>warnings</hl> will show the follwing warning:
+
+<code>
+Found = in conditional, should be == at examples/assignment_in_if.pl line 6.
+</code>
+
 <!--
 
 <h2>War stories by Breno G. de Oliveira</h2>
