@@ -285,6 +285,38 @@ Turning on <hl>warnings</hl> will show the follwing warning:
 Found = in conditional, should be == at examples/assignment_in_if.pl line 6.
 </code>
 
+<h2>Missing argument in sprintf</h2>
+
+The beautiful example was supplied by Peter Jaquiery:
+
+<include file="examples/sprintf.pl">
+
+Running this code will print
+
+<code>
+51.72
+</code>
+
+Turning warnings on will generate:
+
+<code>
+Useless use of sprintf in void context at examples/sprintf.pl line 6.
+Missing argument in sprintf at examples/sprintf.pl line 6.
+51.72
+</code>
+
+The real problem is that the closing parenthese <hl>)</hl> of <hl>sprintf</hl>
+is in the wrong place. The fix looks like this:
+
+<include file="examples/sprintf_fixed.pl">
+
+and the result is
+
+<code>
+51.7
+</code>
+
+
 <!--
 
 <h2>War stories by Breno G. de Oliveira</h2>
