@@ -317,8 +317,6 @@ and the result is
 </code>
 
 
-<!--
-
 <h2>War stories by Breno G. de Oliveira</h2>
 
 Let me quote the story <b>Garu</b> has written in response to my inquiry about the usefulness of <hl>use warnings</hl>.
@@ -334,8 +332,6 @@ This other client had an issue with sub X not working properly. We updated it bu
 
 I have never really tested this, but my perception is that by far the biggest benefit I got from warnings is catching typos in hash keys, like <hl>$user->{naems}</hl> when you meant 'names'.
 </quote>
-
--->
 
 <h2>Conclusion</h2>
 
