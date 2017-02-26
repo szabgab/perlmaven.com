@@ -333,6 +333,22 @@ This other client had an issue with sub X not working properly. We updated it bu
 I have never really tested this, but my perception is that by far the biggest benefit I got from warnings is catching typos in hash keys, like <hl>$user->{naems}</hl> when you meant 'names'.
 </quote>
 
+
+<h2>A warning about warnings</h2>
+
+As brian d foy pointed out on <a href="https://www.reddit.com/r/perl/comments/5w047y/always_use_warnings_in_your_perl_code/">Redit</a>, one should be careful when upgrading Perl. New warnings are being added and if one does not monitor the log file of a web server these new warnings can easily eat up the diskspace and cause serious problems.
+
+I would definietly recommend always monitoring the log files and even getting alerts when there is a warning and investing the time into finding their sources and fixig them.
+
+The risk of upgrade problems can be largely avoided by a set of automated tests that check for warnings.
+(e.g. with <a href="https://metacpan.org/pod/Test::NoWarnings">Test::NoWarnings</a> or <a href="https://metacpan.org/pod/Test::FailWarnings">Test::FailWarnings</a>)
+Does not really matter if they are unit, integration, or acceptance tests.
+
+Mithaldu suggests the use of <a href="https://metacpan.org/pod/strictures">strictures</a>, but I've never used it. Check it out.
+
+
+
+
 <h2>Conclusion</h2>
 
 I'd recommend to <b>always</b> <hl>use warnings</hl> in your perl code.
