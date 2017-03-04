@@ -15,7 +15,7 @@ Even if your code is proprietary and you only would like to distribute it within
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/tools-to-package-modules" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/tools-to-package-modules" youtube="jw_kNnxYMjo" />
 
 There are basically 4 tools to package Perl modules:
 
