@@ -167,6 +167,33 @@ You can get it by placing the <hl>keys</hl> function in scalar context.
 print scalar keys %hash;
 </code>
 
+<h2>Using empty values in a hash</h2>
+
+A value cannot be "empty" but it can contain <a href="/undef-and-defined-in-perl">undef</a>
+which what people usually mean when they say "empty".
+
+We can assign <hl>undef</hl> to a key (new or existing):
+
+<code lang="perl">
+$color_of{water} = undef;
+</code>
+
+or when we create the hash:
+
+<code lang="perl">
+my %color_of = (
+    apple  => "red",
+    orange => "orange",
+    water  => undef,
+    grape  => "purple",
+);
+</code>
+
+Make sure you use the word <hl>undef</hl> and don't put them in quotes as in <hl>"undef"</hl>.
+That would insert the string <hl>"undef"</hl> which is not what you want.
+
+
+
 <h2>Thanks</h2>
 
 The first edition of this article was written by <a href="http://www.leprevost.com.br/">Felipe da Veiga Leprevost</a> who also makes the
