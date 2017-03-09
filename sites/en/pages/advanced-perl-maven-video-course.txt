@@ -47,7 +47,7 @@ Some include screencasts, others contain just text.
   <li><a href="/behind-the-scenes">Behind the scenes</a></li>
   <li><a href="/tools-to-package-modules">Tools to package Perl scripts, modules, and application</a></li>
   <li><a href="/distribution-directory-layout">Distribution directory layout</a></li>
-  <li><a href="/pro/makefile-pl-of-extutils-makemaker">Makefile.PL of ExtUtils::MakeMaker</a></li>
+  <li><a href="/makefile-pl-of-extutils-makemaker">Makefile.PL of ExtUtils::MakeMaker</a></li>
   <li><a href="/pro/makefile-pl-of-module-install">Makefile.PL of Module::Install</a></li>
   <li><a href="/pro/build-pl-of-module-build">Build.PL of Module::Build</a></li>
   <li><a href="/pro/changes-and-readme">Changes and README</a></li>

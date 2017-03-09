@@ -1,0 +1,70 @@
+=title Makefile.PL of ExtUtils::MakeMaker
+=timestamp 2017-03-09T08:00:11
+=indexes ExtUtils::MakeMaker
+=tags screencast
+=books advanced
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Let's see what do you need to do if you'd like to use <a href="https://metacpan.org/pod/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>
+to package your module?
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/makefile-pl-of-extutils-makemaker" />
+
+You need to create a file called <hl>Makefile.PL</hl>, then you might want to tell what is the minimal version
+of perl this Makefile.PL should run on by adding <hl>use 5.008;</hl> if you want to require 5.8 as a minimum.
+
+Then we load <a href="https://metacpan.org/pod/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a> and call the
+<hl>WriteMakefile</hl> function provided by that module. It gets a set of key-value pairs as parameters.
+
+The first one we see is the name of the application (<hl>NAME</hl>). Then we tell it where to take
+the version number from, so the version number of the whole distribution is now taken from one of
+the modules in the distribution. Usually the main module.
+
+<hl>PREREQ_PM</hl> is a key for a set of key-value pairs indicating the preprequisites of this distributions.
+The keys in this internal hash are the names of the required modules, the values are the required minimal version
+of each module. Putting a 0 as the version number means that we require that module but, we don't care
+which version. Even modules that are standard, that should come with the default installation of perl
+should be added here.
+
+
+If there are modules that are only needed during installation, for example the <a href="http://metacpan.org/pod/Test::More">Test::More</a>
+is used for the unit-testing of the module, but is not needed for the actual use of the module.
+Such build-time dependencies should be listed under the <hl>BUILD_REQUIRES</hl> key.
+
+
+If there are some script that you would like to be installed, you can list them under the <hl>EXE_FILES</hl> key.
+
+There are plenty of other properties that can be set in the Makefile.PL, for further information look at the documentation
+of <a href="https://metacpan.org/pod/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>.
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use 5.008;
+
+use ExtUtils::MakeMaker;
+WriteMakefile
+(
+    NAME         => 'App',
+    VERSION_FROM => 'lib/App.pm',
+    PREREQ_PM    => {
+          'File::Basename' => '0',
+          'Moose'          => '0.24',
+    },
+    BUILD_REQUIRES => {
+          'Test::More' => '0.47'
+    },
+    EXE_FILES' => [
+           'script/app.pl'
+    ],
+);
+</code>
+
+
