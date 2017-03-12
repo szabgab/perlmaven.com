@@ -14,7 +14,7 @@ within <hl>Makefile.PL</hl>?
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/makefile-pl-of-module-install" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/makefile-pl-of-module-install" youtube="bshmt9euW6o" />
 
 
 Module::Install does not use a separate file, it uses Makefile.PL, it just has a different API.
