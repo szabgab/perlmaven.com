@@ -1,0 +1,102 @@
+=title Makefile.PL of Module::Install
+=timestamp 2017-03-12T08:00:11
+=indexes Module::Install
+=tags screencast
+=books advanced
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+What shall we do if we would like to use <a href="https://metacpan.org/pod/Module::Install">Module::Install</a>
+within <hl>Makefile.PL</hl>?
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/makefile-pl-of-module-install" />
+
+
+Module::Install does not use a separate file, it uses Makefile.PL, it just has a different API.
+Because Module::Install does not come with standard Perl, it works differnt then
+<a href="/makefile-pl-of-extutils-makemaker">ExtUtils::MakeMaker</a>.
+
+On the development machine, where you work on the module and where you would like to release it, you'll
+need to install <a href="https://metacpan.org/pod/Module::Install">Module::Install</a> but when you
+package your module a part of Module::Install will be included in your distribution in the <hl>inc/</hl>
+subdirectory. When someone tries to install this distribution, perl will automaticall use this copy
+of Module::Install.
+
+That's why in the <hl>Makefile.PL</hl> we load <hl>inc::Module::Install</hl>.
+
+<code lang="perl">
+use strict;
+use warnings;
+use 5.008;
+use inc::Module::Install 1.00;
+
+
+name 'App';
+license 'perl';
+author 'Gabor Szabo';
+all_from 'lib/App.pm';
+requires 'perl' => '5.008';
+
+requires 'File::Basename';                     # no version number
+requires 'Win32' => '0.31' if $^O =~ /win32/i; # conditional requirement
+
+test_requires 'Test::More' => '0.47';
+
+homepage 'http://padre.perlide.org/';
+bugtracker 'http://padre.perlide.org/trac/';
+repository 'http://svn.perlide.org/padre/trunk/Padre/';
+
+install_script 'script/app.pl';
+
+# install_share;   # will install the share/ directory from the distribution
+                   # to be found by File::ShareDir::dist_dir('App') late on
+
+WriteAll;
+</code>
+
+Some of the keys that you can use in the Makefile.PL
+
+<hl>name</hl> is the name of your distribution.
+
+<hl>license</hl> is the type of license the code has. <hl>perl</hl> would mean the "perl license".
+
+<hl>author</hl> is the name and the e-mail of the person who created the module.
+
+<hl>all_from</hl> tells where to get the version number and the abstract of the distribution from. This usually points at the
+main module.
+
+<hl>requires</hl> can be issued multiple times. Each time it gets a either a single value, a name of a module, or
+a key-value pair. A name of a module and a mimimum version number.
+This is the list of prerequisites. If only the name of the required module is given then we don't care which version
+of that module.
+
+One of the requirements in this example is only relevant on MS Windows. Therefore, we check
+the <hl>$^O</hl> variable that indicates the operating system, and only if it is Windows, only
+then do we call the <hl>requires</hl> function.
+
+<hl>requires 'Win32' => '0.31' if $^O =~ /win32/i;</hl>
+
+<hl>test_requires</hl> helps you list the modules that are needed when testing the module even though they are not needed
+for the actual use of the module.
+
+
+The keywords <hl>homepage</hl>, <hl>bugtracker</hl>, <hl>repository</hl> help the user declare various other resources
+for this distribution. The information provided here will be added to the META files (META.yml and META.json) and
+then they will be used by the various displying system, such as <a href="https://metacpan.org/">MetaCPAN</a> to
+link to these resources.
+
+
+<hl>install_script</hl> can be used to designate perl-scripts to be installed.
+
+
+<hl>install_share</hl> helps you add even more files (e.g. templates, images etc.)
+
+Finally, after have declared everything we can call <hl>WriteAll</hl> that will check everything declared
+above and create the <hl>Makefile</hl> to be used by the installer.
+
+
