@@ -14,11 +14,15 @@ One of the important features of a hash, or hashmap, or dictionary,
 or associative array as some other languages
 like to call it, is that it is a set of <b>unsorted</b> key-value pairs.
 
-So when someone asks <b>how to sort a hash?</b>, the reaction usually is that you can't.
+So when someone asks <b>how to sort a hash?</b>, the reaction usually is that you <b>cannot sort a hash</b>.
+The other reaction might be pointing people to tool that can handle a <a href="/pro/sorted-hash-tie-ixhash">sorted hash</a>
+even though that has a significant run-time penalty.
 
-But what do people mean when they want to <b>sort a hash?</b>
+So what do people really mean when they want to <b>sort a hash?</b>
 
 =abstract end
+
+<h2>How to sort a hash?</h2>
 
 For example let's say we have a hash with the names of the planets in our
 <a href="http://en.wikipedia.org/wiki/Solar_System">Solar system</a> and with their
