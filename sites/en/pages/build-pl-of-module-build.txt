@@ -1,6 +1,6 @@
 =title Build.PL of Module::Build
 =timestamp 2017-03-15T07:00:11
-=indexes Modules::Build
+=indexes Modules::Build, Build.PL
 =tags screencast
 =books advanced
 =status show
@@ -18,7 +18,7 @@ You probbaly don't have any non-perl dependencies either.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/build-pl-of-module-build" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/build-pl-of-module-build" youtube="Up-WkcmC2Qw" />
 
 <hl>Build.PL</hl> starts the same way as any other Perl script with <hl>use strict;</hl> and <hl>use warnings;</hl>.
 
