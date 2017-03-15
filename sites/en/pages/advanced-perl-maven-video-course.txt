@@ -49,7 +49,7 @@ Some include screencasts, others contain just text.
   <li><a href="/distribution-directory-layout">Distribution directory layout</a></li>
   <li><a href="/makefile-pl-of-extutils-makemaker">Makefile.PL of ExtUtils::MakeMaker</a></li>
   <li><a href="/makefile-pl-of-module-install">Makefile.PL of Module::Install</a></li>
-  <li><a href="/pro/build-pl-of-module-build">Build.PL of Module::Build</a></li>
+  <li><a href="/build-pl-of-module-build">Build.PL of Module::Build</a></li>
   <li><a href="/pro/changes-and-readme">Changes and README</a></li>
   <li><a href="/pro/manifest-and-manifest-skip">MANIFEST and MANIFEST.SKIP</a></li>
   <li><a href="/pro/file-and-module">Packaging a script and a module</a></li>

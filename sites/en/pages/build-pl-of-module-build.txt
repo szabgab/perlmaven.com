@@ -1,0 +1,87 @@
+=title Build.PL of Module::Build
+=timestamp 2017-03-15T07:00:11
+=indexes Modules::Build
+=tags screencast
+=books advanced
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Let's see how <hl>Build.PL</hl> looks like.
+
+You'd normally use <hl>Build.PL</hl> if you wanted to use <a href="https://metacpan.org/pod/Module::Build">Module::Build</a>.
+The reason might be that you would like to have everything in Perl without depending on an external <hl>make</hl> command.
+
+You probbaly don't have any non-perl dependencies either.
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/build-pl-of-module-build" />
+
+<hl>Build.PL</hl> starts the same way as any other Perl script with <hl>use strict;</hl> and <hl>use warnings;</hl>.
+
+Then we load <hl>Module::Build</hl> itself and declare the minmal version of perl to be used for this script.
+It is usually recommended to put this requirement early, so if someone is trying to install this module on
+a perl which is too old, the person will get a clear error message at the beginning of the process.
+
+
+Then we call the constructor of the Module::Build module. Assign the result to a variable we called <hl>$builder</hl>
+here and then call the <hl>create_build_script</hl> method of the object. That will create a file called <hl>Build/hl>
+that will test and install the module.
+
+
+The constructor of Module::Build get a number of parameters:
+
+<hl>module_name</hl> is just the name of the distribution.
+
+<hl>license</hl> is a code identifying the license of this distribution.
+
+<hl>dist_author</hl> is the name and e-mail of the person who wrote the module.
+
+<hl>dist_abstract</hl> is a one-line explanation of the module doesn.
+
+
+As Module::Build has been added to core Perl only in the last couple of years, some people might
+not have it installed. In order to make life easier for them, Module::Build can create a Makefile.PL
+based on its paramaters. The <hl>create_makefile_pl</hl> parameter controls if we want it
+to generate a Makefile.PL and if yes, which type.
+
+<hl>script_files</hl> allows us to install additional perl scripts.
+
+Module::Build can create a README file from the documentaion of the main module.
+The <hl>create_readme</hl> will tell it to do so.
+
+<hl>requires</hl> is the list of prerequisites with the minimum version of each module.
+
+<hl>build_requires</hl> lists the modules that are needed for the installation, but not during
+the use of the module.
+
+<code lang="perl">
+use strict;
+use warnings;
+use Module::Build;
+
+use 5.008;
+
+my $builder = Module::Build->new(
+    module_name         => 'App',
+    license             => 'perl',
+    dist_author         => 'Gabor Szabo <gabor@szabgab.com>',
+    dist_abstract       => 'Framework to do something',
+    create_makefile_pl  => 0,     #'traditional',
+    script_files        => 'script/app.pl',
+    create_readme       => 0,
+    requires            => {
+        'File::Basename'      => '0',
+        'Moose'               => '0.24',
+    },
+    build_requires      => {
+        'Test::More'          => '0.47',
+    },
+);
+
+$builder->create_build_script();
+</code>
+

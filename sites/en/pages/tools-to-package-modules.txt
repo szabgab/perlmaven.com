@@ -22,7 +22,7 @@ There are basically 4 tools to package Perl modules:
 <ul>
     <li><a href="/makefile-pl-of-extutils-makemaker">ExtUtils::MakeMaker</a> on <a href="http://metacpan.org/pod/ExtUtils::MakeMaker">CPAN</a></li>
     <li><a href="/makefile-pl-of-module-install">Module::Install</a> on <a href="http://metacpan.org/pod/Module::Install">CPAN</a></li>
-    <li><a href="/pro/build-pl-of-module-build">Module::Build</a> on <a href="http://metacpan.org/pod/Module::Build">CPAN</a></li>
+    <li><a href="/build-pl-of-module-build">Module::Build</a> on <a href="http://metacpan.org/pod/Module::Build">CPAN</a></li>
     <li><a href="http://metacpan.org/pod/Dist::Zilla">Dist::Zilla</a></li>
 </ul>
 
