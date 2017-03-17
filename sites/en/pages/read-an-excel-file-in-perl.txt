@@ -40,7 +40,7 @@ sure if it is necessary at all.
 <h2>Create the Excel file</h2>
 
 I don't have Excel on my computer so instead of that I am going to use a file created using
-<a href="https://metacpan.org/pod/Excel::Writer::XLSX;">Excel::Writer::XLSX</a> as explained in the
+<a href="https://metacpan.org/pod/Excel::Writer::XLSX">Excel::Writer::XLSX</a> as explained in the
 <a href="/create-an-excel-file-with-perl">how to create Excel file</a> article.
 
 The script to create the Excel file is here:
