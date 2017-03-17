@@ -1,5 +1,5 @@
-=title Changes and README
-=timestamp 2015-03-17T07:00:11
+=title Changes and README files in a Perl distribution
+=timestamp 2017-03-17T07:00:11
 =indexes Changes, README
 =tags screencast
 =books advanced
