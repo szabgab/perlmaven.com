@@ -228,6 +228,6 @@ write when they are jotting down some text and want to leave place for more. Som
 etc.
 
 Since version 5.10 came out,  it is also a valid construct in Perl. It will throw an <hl>Unimplemented</hl> exception if it is executed.
-It can be very handy, put probably a bit premature to learn so early in the <a href="/perl-tutorial">Perl Tutorial</a>.
+It can be very handy, but probably a bit premature to learn so early in the <a href="/perl-tutorial">Perl Tutorial</a>.
 
 
