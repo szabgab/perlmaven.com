@@ -9,6 +9,10 @@
 
 =abstract start
 
+These days I'd suggest you to use <a href="/makefile-pl-of-extutils-makemaker">ExtUtils::MakeMaker</a>
+or <a href="http://metacpan.org/pod/Dist::Zilla">Dist::Zilla</a>,
+but if you encounter a module that only has a <b>Build.PL</b>, you will need to understand what is that.
+
 Let's see how <hl>Build.PL</hl> looks like.
 
 You'd normally use <hl>Build.PL</hl> if you wanted to use <a href="https://metacpan.org/pod/Module::Build">Module::Build</a>.

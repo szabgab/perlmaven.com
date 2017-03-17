@@ -12,6 +12,10 @@
 What shall we do if we would like to use <a href="https://metacpan.org/pod/Module::Install">Module::Install</a>
 within <hl>Makefile.PL</hl>?
 
+These days I would suggest you to use <a href="/makefile-pl-of-extutils-makemaker">ExtUtils::MakeMaker</a>
+or <a href="http://metacpan.org/pod/Dist::Zilla">Dist::Zilla</a>,
+but if you encounter a module that use Module::Install, you will need to understand what is that.
+
 =abstract end
 
 <slidecast file="/media/videos/advanced-perl/libraries-and-modules/makefile-pl-of-module-install" youtube="bshmt9euW6o" />
