@@ -40,10 +40,10 @@ sure if it is necessary at all.
 <h2>Create the Excel file</h2>
 
 I don't have Excel on my computer so instead of that I am going to use a file created using
-<a href="https://metacpan.org/pod/Excel::Writer::XLSX;">Excel::Writer::XLSX</a> as explained in the
+<a href="https://metacpan.org/pod/Excel::Writer::XLSX">Excel::Writer::XLSX</a> as explained in the
 <a href="/create-an-excel-file-with-perl">how to create Excel file</a> article.
 
-The script to cerate the Excel file is here:
+The script to create the Excel file is here:
 
 <include file="examples/create_excel.pl">
 
@@ -53,7 +53,7 @@ The resulting Excel file looks like this:
 
 <h2>Spreadsheet::Read</h2>
 
-Let's see the highest level abstraction that makes the easiest to access the content of the Excel file.
+Let's see the highest level of abstraction that makes it easiest to access the contents of the Excel file.
 
 <a href="https://metacpan.org/pod/Spreadsheet::Read">Spreadsheet::Read</a> exports a number of function that you either import,
 or use with their fully qualified name.
@@ -90,7 +90,7 @@ we need some other tools.
 <h2>Fetch a row</h2>
 
 The <hl>row</hl> function of Spreadsheet::Read will accept a sheet, and a row-number and will return an array representing the values of
-the given row. The size of the returned array depends on the right-most cell that has data. So even though Excel can have many-many columns,
+the given row. The size of the returned array depends on the right-most cell that has data. So even though Excel can have many, many columns,
 our arrays will only grow to the necessary size.
 
 Cells that are empty will have <hl>undef</hl> in the respective element of the array.
