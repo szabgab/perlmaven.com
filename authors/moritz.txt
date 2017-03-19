@@ -1,4 +1,4 @@
-<p> Moritz is a softwaredeveloper and a <a href="https://perlgeek.de/en/">blogger</a>
-and the author of the <a href="https://deploybook.com/">Deploy Book</a> covering
-Automating Software Deployment, A Practical Guide to Continuous Delivery.
+<p> Moritz is a software developer and a <a href="https://perlgeek.de/blog-en/">blogger</a>, and author of two books:
+<a href="https://leanpub.com/deploy">Automating Software Deployment,
+A Practical Guide to Continuous Delivery</a> and <a href="https://leanpub.com/perl6">Perl 6 by Example</a>.
 </p>
