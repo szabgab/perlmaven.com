@@ -16,7 +16,7 @@ No other file is included and no file is missing.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/manifest-and-manifest-skip" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/manifest-and-manifest-skip" youtube="QwjNHqcYig8" />
 
 Some people maintain the MAINFEST file manually and keep in it version control.
 
