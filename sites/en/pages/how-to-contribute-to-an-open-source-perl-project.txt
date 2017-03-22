@@ -1,0 +1,85 @@
+=title How to contribute to an Open Source Perl project
+=timestamp 2017-01-01T07:30:01
+=indexes Open Source
+=status done
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+In the article on <a href="/how-to-prepare-for-a-perl-job-interview">how to prepare for a Perl job interview</a>,
+I mentioned, one of the best ways to improve your <b>hireability</b> is to constantly learn new things, and constantly improve yourself.
+
+There is a generic article on <a href="https://code-maven.com/how-to-contribute-to-an-open-source-project">how to contribute to an Open Source project</a>.
+
+Let me collect a few specific related to Perl.
+
+=abstract end
+
+<h2>Finding a project</h2>
+
+There are tons of Perl modules on <a href="https://metacpan.org/">CPAN</a>,
+that would benefit from better documentation and/or working examples.
+
+Look around on <a href="https://metacpan.org/">CPAN</a> and take in account the source
+code of <a href="https://metacpan.org/">MetaCPAN</a> itself.
+
+If you need more directed suggestions, there are plenty of modules on the
+<a href="http://neilb.org/adoption/index.html">CPAN Adoption Candidates list</a> created
+by <a href="http://neilb.org/">Neil Bowers</a>.
+
+MetaCPAN also provides the list of <a href="https://metacpan.org/recent">recently uploaded modules</a>. You can look around there
+and find a module that you are interested in. You can event send an e-mail to the person who uploaded the most recent version,
+asking them if you could help.
+
+Instead of sending an e-mail, you could also already send some improvements. But what and how?
+
+<h2>What to contribute?</h2>
+
+MetaCPAN links to the bug-tracking system of each module. You can find reported bugs there
+and sometimes even feature requests.
+You can try to fix a bug or implement those features.
+
+Even if you cannot fix the bug, you could try to write a test case that will expose the bug.
+The <a href="/testing">testing</a> series will introduce you to the testing system of Perl.
+
+Alternatively, using <a href="https://metacpan.org/pod/Devel::Cover">Devel::Cover</a>, you can create a report
+to see which parts of the code have tests. Actually, you could even go to <a href="http://cpancover.com/">CPAN Cover</a>
+where you'll find test-coverage reports generated for each CPAN distribution.
+You could write a test case for a part of the code that is not covered yet, even if there is no reported bug in that area.
+
+<h2>How to contribute?</h2>
+
+Most Perl Modules use Git and GitHub as their version control system.
+If that's the case for the module you selected then there will be a link to it called "Repository"
+on the left-hand side of its MetaCPAN page.
+
+A while ago I've prepared a screencast showing an example on
+<a href="/contributing-to-a-perl-module-on-cpan-using-vim-and-github">how to contribute to a Perl module</a>.
+You could watch that and try to follow those steps.
+
+<h2>Adopting a module</h2>
+
+Adopting a module might feel to be too big a step if you have not published anything on CPAN yet, but nevertheless that's
+a good path for your self-education.
+
+<h2>License and link to GitHub</h2>
+
+A low hanging fruit is to <a href="/how-to-add-the-license-field-to-meta-files-on-cpan">add a license</a> to the META files of
+a distribution, or if does not have a link to its GitHub repository then 
+<a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">add a link to GitHub</a>
+or some other Version Control system.
+
+<h2>Continuous Integration</h2>
+
+<a href="/enable-travis-ci-for-continous-integration">Enable Travis-CI</a> for Continuous Integration.
+
+<h2>Other resources</h2>
+
+There are tons of articles written by <a href="http://neilb.org/">Neil Bowers</a> covering topics related to CPAN
+and contributing to CPAN. Check out his writings.
+
+
+
+
