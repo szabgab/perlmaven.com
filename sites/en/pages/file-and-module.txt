@@ -1,4 +1,4 @@
-=title Packaging a script and a module
+=title Packaging a Perl script and a Perl module
 =timestamp 2017-03-28T20:00:11
 =indexes SYNOPSIS, DESCRIPTION
 =tags screencast
@@ -13,7 +13,7 @@ What we are packaging is a script and a module.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/file-and-module" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/file-and-module" youtube="PEwkiG1tb5U" />
 
 The script is placed in the <hl>script/</hl> directory and it is just a regular script.
 You don't have to tell it where to load the modules from, you just load the module.
