@@ -1,0 +1,91 @@
+=title Packaging with Makefile.PL
+=timestamp 2017-03-30T09:10:11
+=indexes Makefile.PL, make
+=tags screencast
+=books advanced
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+If you have a <hl>Makefile.PL</hl>, either because you are using <a href="/makefile-pl-of-extutils-makemaker">ExtUtils::MakeMaker</a>,
+or because you are using <a href="/makefile-pl-of-module-install">Module::Install</a> you do the following to created the distribution:
+  
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/packaging-with-makefile-pl" />
+
+Firs of all you run:
+<code>
+perl Makefile.PL
+</code>
+
+this will check if all the dependencies are installed and if all the files listed in the <hl>MANIFEST</hl> file
+were included. Then it will generate the <hl>Makefile</hl> itself without any extension.
+
+
+Then we run
+
+<code>
+make
+</code>
+
+part of the "C toolchain". If the module is partially based on C os XS, this will compile the necessary code.
+Then it will copy all the necessary Perl files to the <hl>blib/</hl>  directory.  (blib stands for build lib).
+
+Then we run
+
+<code>
+make test
+</code>
+
+this will run all the unit- and other automated tests.
+
+Then here comes the command that will create the <a href="/manifest-and-manifest-skip">MANIFEST</a> file from
+all the files in the development directory excluding the files that have a matching entry in <hl>MANIFEST.SKIP</hl> file.
+This command is only needed if you maintain the <hl>MANIFEST.SKIP</hl>. If you maintain the <hl>MANIFEST</hl> file
+manually then you would not run this command.
+
+<code>
+make manifest
+</code>
+
+
+Then
+
+<code>
+make dist
+</code>
+
+will take all the files listed in the <hl>MANIFEST</hl> file, copy them to a special directoy
+with the name and the version number of the distribution and then create a tarball (a .tar.gz file)
+from that directory.
+
+This is the file you'd upload to <a href="http://pause.perl.org/">PAUSE</a> if you wanted to distribute
+it via <a href="http://www.cpan.org/">CPAN</a>, or that's the file you'd distribution
+in your in-house CPAN repository, or just send it to your clients and users.
+
+
+<h2>Installing the module</h2>
+
+When installing the module the first 3 steps are the same:
+
+<code>
+Perl Makefile.PL
+make
+make test
+</code>
+
+but then instead of the other 2 steps you'd just run
+
+<code>
+make install
+</code>
+
+that would install the module in the right place.
+
+
+On MS Windows, instead of <hl>make</hl> you'd probably have either <hl>dmake</hl> or <hl>nmake</hl> depending the toolchain you have.
+
+
