@@ -14,7 +14,7 @@ or because you are using <a href="/makefile-pl-of-module-install">Module::Instal
   
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/packaging-with-makefile-pl" />
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/packaging-with-makefile-pl" youtube="efUveYthyHw" />
 
 Firs of all you run:
 <code>
