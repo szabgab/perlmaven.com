@@ -16,6 +16,8 @@ This is the same back-end that powers the fancier <a href="https://metacpan.org/
 
 The result can be found on <a href="http://sco.perlmaven.com/">sco.perlmaven.com</a>
 
+The source code can be found on <a href="https://github.com/szabgab/MetaCPAN-SCO">GitHub</a>.
+
 =abstract end
 
 <screencast file="/media/videos/search-cpan-org" />
