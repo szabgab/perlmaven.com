@@ -1,0 +1,86 @@
+=title Packaging with Build.PL
+=timestamp 2017-04-05T20:20:11
+=indexes Build.PL, Build
+=tags screencast
+=books advanced
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+If you use <a href="/build-pl-of-module-build">Build.PL with Module::Build</a> then creating the
+distribution file has the following steps:
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/packaging-with-build-pl" />
+
+<code>
+perl Build.PL
+</code>
+
+will check if the dependencies are there (similar to <hl>perl Makefile.PL</hl> in the case of
+<a href="/packaging-with-makefile-pl">Makefile.PL</a>) and create a file called <hl>Build</hl>
+without any extension which is just another Perl script.
+
+Then we run
+
+<code>
+perl Build
+</code>
+
+that will rearrange directories, create the <hl>blib/</hl> directory and copy files there.
+
+The we run
+
+<code>
+perl Build test
+</code>
+
+that will run all the unit- and other automation tests checking if the distribution is ready.
+
+Then comes the time when you might want to create your <hl>MANIFEST</hl> file.
+If you maintain <hl>MANIFEST.SKIP</hl> then at this point you need to run
+
+<code>
+perl Build manifest
+</code>
+
+that will take all the files in the current directory tree, exclude the onse that
+match one of the regexes in <hl>MANIFEST.SKIP</hl> and include the list of the others
+in the <hl>MANIFEST</hl> file.
+
+Once you have the up-to-date <hl>MANIFEST</hl> file we can run
+
+<code>
+perl Build dist
+</code>
+
+to create the zip file.
+
+This is the file you'd distribute either via CPAN or directly to your clients.
+
+
+<h2>Installing a distribution</h2>
+
+If you want to install one of these distributions, you would run
+
+<code>
+perl Build.PL
+perl Build
+perl Build test
+</code>
+
+just as during the creationg of the distribution, but then you'd run
+
+<code>
+perl Build install
+</code>
+
+to install the files.
+
+
+
+
+
