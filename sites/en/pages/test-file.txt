@@ -1,0 +1,65 @@
+=title Test file
+=timestamp 2017-04-08T08:00:11
+=indexes test
+=tags screencast
+=books advanced
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Every package that you distribute via CPAN or internally should come with a bunch of tests.
+There should be a directory called <hl>t/</hl> and within that directory there should be files
+with <hl>.t</hl> extension.
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/test-file" />
+
+In earlier times there use to be a file called <hl>test.pl</hl> in the root of the distribution,
+so i you encounter such file then you'd probably know this is an old-style distribution.
+(Before 2002 or so.)
+
+The <hl>.t</hl> files are regular Perl scripts, but their output is formatted as
+<a href="/tap-test-anything-protocol">TAP, the Test Anything Protocol</a>.
+
+A test script is really simple, it is just using your module and makes sure it works as expected.
+That given specific input it provides the expected output.
+
+A basic test script looks like this:
+
+<code lang="perl">
+use strict;
+use warnings;
+
+use Test::More;
+
+plan tests => 3;
+
+use_ok('App');
+
+ok(App::add(1, 1) == 2, "1+1 = 2");
+
+is(App::add(2, 3),  5, "2+3 = 5");
+</code>
+
+After the usual <hl>use strict; use warnings;</hl> we load the <a href="https://metacpan.org/pod/Test::More">Test::More</a> module.
+
+The we declare our "plan" telling the system we are going to have 3 unit-tests, or 3 assertions.
+
+I usually cal them "test units" becasue they are not necessarily "unit tests". Thy might test the interaction of
+several subsystem. Stillthey would have some input and then we can check if the output matches th expected values.
+
+In this script we have 3 cases.
+
+The first one <hl>use_ok('App');</hl> is checking if the module can be loaded with a <hl>use</hl> statement.
+Actually I think the use of <hl>use_ok</hl> is now discouraged. We should just load the module with regular <hl>use App;</hl>.
+If something is wrong it will throw an exception anyway.
+
+Then we call the <hl>add</hl> function of the <hl>App</hl> module and check if the result is indeed 2.
+
+A better way to comparing real and expected values is by using the <hl>is</hl> function provided by Test::More.
+That, in addition to checking if the real value is the same as the exected value, will also provide a detailed
+report in case the result does not match.
+

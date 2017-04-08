@@ -55,7 +55,7 @@ Some include screencasts, others contain just text.
   <li><a href="/file-and-module">Packaging a script and a module</a></li>
   <li><a href="/packaging-with-makefile-pl">Packaging with Makefile.PL</a></li>
   <li><a href="/packaging-with-build-pl">Packaging with Build.PL</a></li>
-  <li><a href="/pro/test-file">test-file</a></li>
+  <li><a href="/test-file">test-file</a></li>
 
   <li>@INC and the namespace hierarchy</li>
   <li><a href="/how-to-create-a-perl-module-for-code-reuse">How to create a Perl Module for code reuse?</a></li>
