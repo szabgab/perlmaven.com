@@ -1,5 +1,5 @@
 =title Exception handling in Perl: How to deal with fatal errors in external modules
-=timestamp 2017-04-r106T13:30:01
+=timestamp 2017-04-16T13:30:01
 =indexes eval, $@, Time::Piece, do
 =status show
 =books advanced
