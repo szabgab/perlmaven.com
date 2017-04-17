@@ -22,6 +22,34 @@ my $size = -s $filename;
 say $size;
 </code>
 
+<without any functions>
+#!/usr/bin/perl
+
+@files = `ls`;
+chomp @files;
+foreach $file (@files)
+{
+        $size{$file}= (-s "$file");
+}
+
+foreach $file (keys %size)
+{
+        print "$file - $size{$file} \n";
+}
+
+@files_sortbysize = sort {$size{$a} <=> $size{$b}} (keys %size);
+print "$files_sortbysize[0] - $size{$files_sortbysize[0]}\n";
+
+print "$files_sortbysize[$#files_sortbysize]-$size{$files_sortbysize[$#files_sortbysize]}\n";
+
+$sum=0;
+foreach $file (keys%size)
+{
+        $sum = $sum + $size{$file};
+}
+$sizemb = $sum/(1024*1024);
+print "all files size is -$sizemb MB \n";
+
 
 <h2>stat function</h2>
 
