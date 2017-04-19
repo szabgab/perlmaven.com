@@ -14,7 +14,7 @@ a 'getter'.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/core-perl-oop/constructor-arguments" />
+<slidecast file="/media/videos/advanced-perl/core-perl-oop/constructor-arguments" youtube="60PdxXn_36I" />
 
 
 <include file="examples/Moose/person01/script/person.pl">
