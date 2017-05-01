@@ -14,15 +14,7 @@ Exercise: display unique rows of a file
 
 Given a the following file:
 
-<code>
-A 1
-B 2
-A 2
-C 3
-B 2
-D 4
-C 1 
-</code>
+<include file="examples/rows_of_file.txt">
 
 Create another file in which the first character is unique:
 
