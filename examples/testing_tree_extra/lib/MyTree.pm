@@ -48,7 +48,7 @@ Calling <hl>get_tree(0.5, 3)</hl> means at the first level there are going to be
 to have a subtree. Each such subtree will have 2 nodes. Each such node will have 50% chance to have a subtree, but those
 subtrees will only have 1 node. So the depth of the tree is also controlled by the second parameter.
 
-The payload is just a hash with two keys and each key has a <a href="/pro/generate-random-text-with-perl">random value generated</a>.
+The payload is just a hash with two keys and each key has a <a href="/generate-random-text-with-perl">random value generated</a>.
 
 For example running <hl>MyTree::get_tree(0.5, 3)</hl> might generated this tree.
 
