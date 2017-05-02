@@ -37,6 +37,8 @@ Some of the articles even include directions showing how to fix the error.
     <li><a href="/qw-quote-word">Possible attempt to separate words with commas</a></li>
     <li><a href="/autoload">Undefined subroutine ... called</a></li>
     <li><a href="/pro/useless-use-of-hash-element-in-void-context">Useless use of hash element in void context</a></li>
+    <li><a href="/pro/useless-use-of-private-variable-in-void-context">Useless use of private variable in void context</a></li>
+    <li><a href="/pro/readline-on-closed-filehandle">readline() on closed filehandle</>a></li>
 </ul>
 
 
