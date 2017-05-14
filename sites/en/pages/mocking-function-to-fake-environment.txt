@@ -96,7 +96,7 @@ I can add the following test case:
 As it can be seen from the result, the MyWebAPI module does not handle such cases. Is this a bug, or is this the correct behavior?
 That's beyond the scope of this article, but now at least we know how to check what happens in this extreme case.
 
-<h2>A bug</h2>
+<h2>A bug when lines are wrapped</h2>
 
 What if the web site contains the name "Cyrus Miley" broken in two lines like in the following example?
 
@@ -118,6 +118,8 @@ not ok 4
 </code>
 
 We can now update the module fixing this case and we can test it in a controlled environment.
+
+The full test script that will generate the error for the line wrapping bug.
 
 <include file="examples/mocking-functions/linewrap.t">
 
