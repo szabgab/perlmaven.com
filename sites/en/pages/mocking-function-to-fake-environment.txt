@@ -24,33 +24,7 @@ Let's try a simple example in which we fetch a web page and count specific strin
 
 More specifically we have a file called <hl>MyWebAPI.pm</hl> with the following code in it:
 
-<code lang="perl">
-package MyWebAPI;
-use strict;
-use warnings;
-
-use LWP::Simple qw(get);
-
-my $URL = 'http://www.dailymail.co.uk/';
-
-sub new {
-    return bless {}, shift;
-}
-
-sub count_strings {
-    my ($self, @strings) = @_;
-
-    my $content = get $URL;
-
-    my %data;
-    foreach my $str (@strings) {
-        $data{$str} = () = $content =~ /$str/ig;
-    }
-    return \%data;
-}
-
-1;
-</code>
+<include file="examples/mocking-functions/MyWebAPI.pm">
 
 This code fetches the content of British <a href="http://www.dailymail.co.uk/">Daily Mail</a> that provides reliable information on the 
 status of the world. Once the page is fetched we count how many times given specific strings appear and return the numbers as a reference
@@ -60,26 +34,7 @@ to a hash containing <hl>"string" => count</hl> pairs.
 
 We can write a test script call <hl>webapi.t</hl> with the following content:
 
-<code lang="perl">
-use strict;
-use warnings;
-
-use FindBin qw($Bin);
-use lib $Bin;
-
-use Test::More;
-plan tests => 1;
-
-use MyWebAPI;
-
-my $w = MyWebAPI->new;
-
-is_deeply $w->count_strings('Beyonce', 'Miley Cyrus'), 
-    {
-        'Beyonce'     => 26,
-        'Miley Cyrus' => 3,
-    };
-</code>
+<include file="examples/mocking-functions/webapi.t">
 
 We check the relative popularity of Beyonce and Miley Cyrus and as we can see Beyonce is winnint 26 to 3.
 If we run this script <hl>perl webapi.t</hl> the output will indicate that everything is ok:
@@ -121,78 +76,14 @@ $mock->add(get => sub {
 We also adjusted the values in the expected hash to reflect the string we return. This is the new version of
 the test script:
 
-<code lang="perl">
-use strict;
-use warnings;
-
-use FindBin qw($Bin);
-use lib $Bin;
-
-use Test::More;
-plan tests => 1;
-
-use Test::Mock::Simple;
-my $mock = Test::Mock::Simple->new(module => 'MyWebAPI');
-
-my $w = MyWebAPI->new;
-
-$mock->add(get => sub {
-    return 'Beyonce Beyonce Miley Cyrus';
-});
-is_deeply $w->count_strings('Beyonce', 'Miley Cyrus'), 
-    {
-        'Beyonce'     => 2,
-        'Miley Cyrus' => 1,
-    };
-</code>
+<include file="examples/mocking-functions/fake_webapi.t">
 
 <h2>More test cases</h2>
 
 We can now add more test cases, including one when the <hl>get</hl> function returns the empty string. We just have to remember to update the <hl>plan</hl>
 as well.
 
-<code lang="perl">
-use strict;
-use warnings;
-
-use FindBin qw($Bin);
-use lib $Bin;
-
-use Test::More;
-plan tests => 3;
-
-use Test::Mock::Simple;
-my $mock = Test::Mock::Simple->new(module => 'MyWebAPI');
-
-my $w = MyWebAPI->new;
-
-$mock->add(get => sub {
-    return 'Beyonce Beyonce Miley Cyrus';
-});
-is_deeply $w->count_strings('Beyonce', 'Miley Cyrus'), 
-    {
-        'Beyonce'     => 2,
-        'Miley Cyrus' => 1,
-    };
-
-$mock->add(get => sub {
-    return 'Beyonce';
-});
-is_deeply $w->count_strings('Beyonce', 'Miley Cyrus'), 
-    {
-        Beyonce => 1,
-        'Miley Cyrus' => 0,
-    };
-
-$mock->add(get => sub {
-    return '';
-});
-is_deeply $w->count_strings('Beyonce', 'Miley Cyrus'), 
-    {
-        Beyonce => 0,
-        'Miley Cyrus' => 0,
-    };
-</code>
+<include file="examples/mocking-functions/more_webapi.t">
 
 <h2>Testing exception</h2>
 
@@ -200,16 +91,7 @@ As a tester I don't know if the <hl>get</hl> function of LWP::Simple would ever 
 
 I can add the following test case:
 
-<code lang="perl">
-$mock->add(get => sub {
-    die 'Something went wrong'; 
-});
-is_deeply $w->count_strings('Beyonce', 'Miley Cyrus'), 
-    {
-        Beyonce => 0,
-        'Miley Cyrus' => 0,
-    };
-</code>
+<include file="examples/mocking-functions/exception_snippet.t">
 
 As it can be seen from the result, the MyWebAPI module does not handle such cases. Is this a bug, or is this the correct behavior?
 That's beyond the scope of this article, but now at least we know how to check what happens in this extreme case.
@@ -218,17 +100,7 @@ That's beyond the scope of this article, but now at least we know how to check w
 
 What if the web site contains the name "Cyrus Miley" broken in two lines like in the following example?
 
-<code lang="perl">
-$mock->add(get => sub {
-    return 'Beyonce Miley Cyrus Miley
-Cyrus';
-});
-is_deeply $w->count_strings('Beyonce', 'Miley Cyrus'), 
-    {
-        Beyonce => 1,
-        'Miley Cyrus' => 2,
-    };
-</code>
+<include file="examples/mocking-functions/linewrap_snippet.t">
 
 Indeed this test fails now:
 
@@ -246,4 +118,6 @@ not ok 4
 </code>
 
 We can now update the module fixing this case and we can test it in a controlled environment.
+
+<include file="examples/mocking-functions/linewrap.t">
 
