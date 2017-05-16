@@ -1,4 +1,4 @@
-=title Command line counter with MongoDB as storage 
+=title Command line counter in Perl with MongoDB as storage 
 =timestamp 2017-05-16T18:50:01
 =indexes MongoDB, findAndModify, upsert
 =status show
