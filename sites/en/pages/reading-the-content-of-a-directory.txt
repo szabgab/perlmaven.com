@@ -115,3 +115,18 @@ In list context, we might want to employ <a href="/filtering-values-with-perl-gr
 
 <include file="examples/list_dir_grep.pl">
 
+<h2>what does my $dir = shift // '.' mean?</h2>
+
+It is setting a <a href="/how-to-set-default-values-in-perl">default value</a> to be <hl>.</hl>.
+
+<a href="/shift">shift</a>, if it is outside of any function and does not have a paramater, will return the first element from <a href="/argv-in-perl"">@ARGV</a>.
+That is the first parameter on the command line.
+
+<hl>//</hl> is the <a href="/what-is-new-in-perl-5.10--say-defined-or-state">defined-or operator</a>. It will return
+the value on the left hand side if it is <a href="/undef-and-defined-in-perl">defined</a>. Otherwise it will return the right hand side.
+
+Together this expression says: If there is a value on the command line, put that in <hl>$dir</hl>. If there is no value on the command line
+put <hl>'.'</hl> in <hl>$dir</hl> that representes the current directory.
+
+
+
