@@ -1,0 +1,183 @@
+=title List and Array Utilities in Perl
+=timestamp 2017-06-28T22:30:01
+=indexes List::Util, List::MoreUtils, List::AllUtils, Util::Any, List::UtilsBy, List::Pairwise
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+There are many utilities in perl that work on arrays or even on lists of values that have not been assigned
+to an array. Some of these are built in the languages. Others come in a standard module, yet even more of
+them can be installed from CPAN. Here you'll find a number of these utility functions and pointers where
+can you get them from.
+
+
+=abstract end
+
+<h2>Built-in functions</h2>
+
+<ul>
+  <li><a href="/filtering-values-with-perl-grep">grep</a> can be used to filter values according to some rule. It usually reduces a longer list to a shorter or even empty list. In scalar context it is used to check if there is any element that fulfills certain condition.</li>
+  <li><a href="/transforming-a-perl-array-using-map">map</a> can be used to transform values of a list or an array (e.g. double each number).</li>
+  <li><a href="/search/sort">sort</a> to sort values by any condition.</li>
+  <li><a href="/reverse">reverse</a> returns the list of values in reverse order</li>
+  <li><a href="/manipulating-perl-arrays">pop, push, shift, unshift</a> to add and remove elements at either the beginning or the end of an array.</li>
+  <li><a href="/splice-to-slice-and-dice-arrays-in-perl">splice</a> to add and remove elements anywhere in an array.</li>
+  <li><a href="/join">join</a> to combine a list of values into a string.</li>
+</ul>
+
+
+<h2><a href="https://metacpan.org/pod/List::Util">List::Util</a></h2>
+(checked in version 1.42 of the <a href="https://metacpan.org/release/Scalar-List-Utils">Scalar-List-Utils</a> distribution.)
+
+<ul>
+  <li><b>reduce</b> - Generic function to reduce a list of value to a single value according to some rule. Many other function in this module are special cases of <hl>reduce</hl>. (For example <hl>sum(@numbers)</hl> is the same as <hl>reduce { $a + $b } @numbers</hl>)</li>
+</ul>
+
+<ul>
+  <li><b>first</b> - like grep but will only return the first value matching the conditional in the block. The two expressions below will set the same value, but the <hl>first</hl> is faster as
+it stops after it found the first element while <hl>grep</hl> has to go over all the elements before returning the results.
+
+<code lang="perl">
+my $val = first { COND } @list;
+
+my ($val) = grep { COND } @list;
+</code>
+  </li>
+  <li><b>max</b> returns the element with the highest numerical value</li>
+  <li><b>maxstr</b> returns the element with the highest "string" value as returned by the <hl>gt</hl> operator.</li>
+  <li><b>min</b> returns the element with the smallest numerical value</li>
+  <li><b>minstr</b> returnes smallest "string" value.</li>
+  <li><a href="/filtering-values-with-perl-grep">any</a> is like <hl>grep</hl> in scalar context, but in addition it short-circuites making it potentially much faster. It returns <a href="/how-to-sort-faster-in-perl">true</a> if any of the values in the given list match the supplied condition.
+  <include file="examples/list_util_any.pl">
+  </li>
+  <li><a href="/does-all-really-short-circuit">all</a> returns true if all the elements in the given list fulfill the condition. It is faster than grep as it short-circuits on the first failure.
+  <include file="examples/list_util_all.pl">
+  </li>
+  <li><b>none</b> - is like <hl>not all</hl>. It will return true if none of the element meet the condition. The following example shows 2 sets of 3-3 identical results:
+  <include file="examples/list_util_none.pl">
+  </li>
+  <li><b>noall</b> - is like <hl>not any</hl>. The following example shows 2 sets of 3-3 identical results:
+  <include file="examples/list_util_none.pl">
+  </li>
+</ul>
+
+<ul>
+  <li><b>sum</b> -  <hl>sum(@numbers)</hl> - returns the sum of numbers given. For backwards compatibility, if <hl>@numbes</hl> is empty then <hl>undef</hl> is returned. Use <hl>sum0</hl> instead!</li>
+  <li><b>sum0</b> -  Just like <hl>sum</hl> but this will return <hl>0</hl> if the given list was empty.
+  <include file="examples/list_util_sum.pl">
+  </li>
+  <li><b>product</b> - multiply the numbers passed to the function. Return 1 if no value was supplied.
+  <include file="examples/list_util_product.pl">
+  </li>
+</ul>
+
+<ul>
+  <li><b>shuffle</b> - Returns the values of the input in a random order.</li>
+</ul>
+
+<ul>
+  <li><a href="/operation-on-value-pairs-in-perl">pairs</a> - create pairs from a list of values.</li>
+  <li><a href="/operation-on-value-pairs-in-perl">unpairs</a> - flatten a list of pairs into a single list of values.</li>
+  <li><a href="/operation-on-value-pairs-in-perl">pairkeys</a> - return a list of the odd elements of the given list</li>
+  <li><a href="/operation-on-value-pairs-in-perl">pairvalues<a> - return a list of the even elements of the given list</li>
+  <li><a href="/operation-on-value-pairs-in-perl">pairgrep<a> - it is like the built-in grep, except that it works on two elements in each iteration</li>
+  <li><a href="/operation-on-value-pairs-in-perl">pairfirst<a> - it is like the pairgrep, except that it returns the first hit</li>
+  <li><a href="/operation-on-value-pairs-in-perl">pairmap<a> - it is like the built-in map, except that it works on two elements in each iteration</li>
+</ul>
+
+<h2><a href="https://metacpan.org/pod/List::MoreUtils">List::MoreUtils</a></h2>
+
+(any, all, none, notall)
+
+<ul>
+  <li>one</li>
+  <li>apply</li>
+  <li>insert_after</li>
+  <li>insert_after_string</li>
+  <li>pairwise</li>
+  <li>mesh</li>
+  <li>zip</li>
+  <li>uniq</li>
+  <li>distinct</li>
+  <li>singleton</li>
+  <li></li>
+  <li>after</li>
+  <li>before</li>
+  <li>part</li>
+  <li>each_array</li>
+  <li>natatime</li>
+  <li>bsearch</li>
+  <li>bsearchidx</li>
+  <li>bsearch_index</li>
+  <li>firstval</li>
+  <li>first_value</li>
+  <li>onlyval</li>
+  <li>only_value,</li>
+  <li>lastval</li>
+  <li>last_value</li>
+  <li>firstres</li>
+  <li>first_result</li>
+  <li>onlyres</li>
+  <li>only_result</li>
+  <li>lastres</li>
+  <li>last_result</li>
+  <li>indexes</li>
+  <li>firstidx</li>
+  <li>first_index</li>
+  <li>onlyidx</li>
+  <li>only_index</li>
+  <li>lastidx</li>
+  <li>last_index</li>
+  <li>sort_by - a more readable, and potentially faster  version of the built-in sort function.</li>
+  <li>nsort_by - like sort_by, but compares values as numbers. </li>
+  <li>true</li>
+  <li>false</li>
+  <li>minmax</li>
+</ul>
+
+
+<h2><a href="https://metacpan.org/pod/List::AllUtils">List::AllUtils</a></h2>
+
+Combines List::Util and List::MoreUtils in one bite-sized package.
+
+<h2><a href="https://metacpan.org/pod/Util::Any">Util::Any</a></h2>
+
+Makes it easy to built list and array utilities
+
+
+<h2><a href="https://metacpan.org/pod/List::UtilsBy">List::UtilsBy</a></h2>
+
+<ul>
+  <li>sort_by - see List::MoreUtil</li>
+  <li>nsort_by - see List::MoreUtil</li>
+  <li>rev_sort_by - the same as <hl>reverse sort_by ...</hl></li>
+  <li>rev_nsort_by - the same as <hl>reverse nsort_by ...</hl></li>
+  <li>min_by - the value with the smallest derivative. </li>
+  <li>max_by</li>
+  <li>uniq_by</li>
+  <li>partition_by</li>
+  <li>count_by</li>
+  <li>zip_by</li>
+  <li>unzip_by</li>
+  <li>extract_by</li>
+  <li>weighted_shuffle_by</li>
+  <li>bundle_by</li>
+</ul>
+
+<h2><a href="https://metacpan.org/pod/List::Pairwise">List::Pairwise</a></h2>
+
+This module has a bunch of pair-wise function, but since its release List::Util was exteneded with functions providing the same service.
+See the <a href="/operation-on-value-pairs-in-perl">list of pairwise functions of List::Util</a>.
+
+<ul>
+  <li>mapp, map_pairwise</li>
+  <li>grepp, grep_pairwise</li>
+  <li>firstp, first_pairwise</li>
+  <li>lastp, last_pairwise</li>
+  <li>pair</li>
+</ul>
+
+
