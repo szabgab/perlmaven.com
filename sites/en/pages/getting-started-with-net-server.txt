@@ -11,7 +11,7 @@
 In this article you will learn the basics on building a server using <a href="https://metacpan.org/pod/Net::Server">Net::Server</a>.
 
 Why would you want to use <a href="https://metacpan.org/pod/Net::Server">Net::Server</a>? Just visit that page on MetaCPAN and click on
-the <a href="https://metacpan.org/requires/distribution/Net-Server?sort=[[2,1]]">Reverse dependencies</a> list on the left hand side.
+the <a href="https://metacpan.org/requires/distribution/Net-Server?sort=[[2,1]]">Reverse dependencies</a> list on the right hand side.
 These are the modules that depend on Net::Server. I could just point out <a href="https://metacpan.org/release/Starman">Starman</a>
 which is probably the best stand-alone PSGI server on the market, but there are tens of other modules and applications depending
 on Net::Server. It can provide a good foundation for you too.
@@ -67,7 +67,7 @@ sub process_request {
 It subclasses the <hl>Net::Server</hl>. The only thing it needs to implement is the <hl>process_request</hl> method.
 Once that's done we are ready. We can launch the server by running:
 
-<hl>perl skeleton_server.pl</hl>
+<hl>perl bin/skeleton_server.pl</hl>
 
 It will print something like this on the console:
 
