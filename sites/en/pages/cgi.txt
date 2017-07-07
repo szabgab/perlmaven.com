@@ -39,7 +39,7 @@ Alternatively you can install <a href="/psgi">PSGI</a> and if you have no better
   <li><a href="/perl-cgi-script-with-apache2">Perl/CGI script with Apache2</a></li>
   <li><a href="/perl-cgi-mod-perl-psgi">Which is better perl-CGI, mod_perl or PSGI?</a></li>
   <li><a href="/simple-cgi-script-to-send-form-by-email">Simple CGI Perl script to send form by e-mail</a></li>
-  <li><a href="/pro/hello-world-with-plain-cgi">Hello World with plain CGI</a></li>
+  <li><a href="/hello-world-with-plain-cgi">Hello World with plain CGI</a></li>
   <li><a href="/pro/echo-with-plain-cgi">Echo with plain CGI</a></li>
   <li><a href="/pro/testing-perl-cgi">Testing Perl CGI</a></li>
 </ul>
