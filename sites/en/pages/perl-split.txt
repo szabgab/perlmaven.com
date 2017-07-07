@@ -243,6 +243,28 @@ $VAR1 = [
         ];
 </code>
 
+<h2>Beware of regex special characters</h2>
+
+A common pitfall with split, especially if you use a string as the separator (<hl>split STRING, STRING</hl>) as in <hl>split ';', $line;</hl>
+is that even if you pass the first parameters as a string it still behaves as a regex. So for example
+
+<code>
+split '|', $line;
+</code>
+
+is the same as
+
+<code>
+split /|/, $line;
+</code>
+
+and both will split the string character by character. The right way to split on a pipe <hl>|</hl> character is to escape
+the special regex character:
+
+<code>
+split /\|/, $line;
+</code>
+
 <h2>Other examples</h2>
 
 Though in the general case <hl>split</hl> is not the right tool for this job,
