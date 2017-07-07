@@ -13,6 +13,8 @@ CGI, the <a href="/cgi">Common Gateway Interface</a> was the real workhorse behi
 and while there are other, more modern alternatives, such as <a href="/psgi">PSGI</a>, we still encounter environments
 where only CGI scripts are used or only CGI script can be used.
 
+This article for those who are stuck in such environments.
+
 =abstract end
 
 First of all you'll have to make sure your web server was properly <a href="http://code-maven.com/set-up-cgi-with-apache">set up to serve CGI script</a>.
