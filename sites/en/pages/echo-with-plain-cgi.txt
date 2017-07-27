@@ -1,5 +1,5 @@
 =title Echo with plain CGI
-=timestamp 2017-11-12T10:30:01
+=timestamp 2017-07-12T10:30:01
 =indexes CGI, CGI::Simple, QUERY_STRING, %ENV
 =status show
 =books cgi
