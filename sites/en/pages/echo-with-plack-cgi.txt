@@ -1,0 +1,64 @@
+=title Echo with Plack in CGI mode
+=timestamp 2017-07-27T20:30:01
+=indexes Plack::Handler::CGI
+=status show
+=books psgi
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+A <a href="http://code-maven.com/exercise-web-echo">web application that can echo back text</a> show almost all the capabilities one needs to know
+before they can embark on building a larger application. It involves sending data to the server, and showing a response to it.
+
+In this case we are going to use <a href="/psgi">Plack/PSGI</a> in <a href="/cgi">CGI</a> mode.
+
+=abstract end
+
+<include file="examples/psgi-cgi-echo.pl">
+
+We start in a similar way to our <a href="/hello-world-with-plack-cgi">Hello World in PSGI CGI</a> example,
+but we also load the <a href="https://metacpan.org/pod/Plack::Request">Plack::Request</a> module that can properly parse
+the <hl>QUERY_STRING</hl> environment variable created by the Apache web server.
+
+If we put this script in a <a href="http://code-maven.com/set-up-cgi-with-apache">CGI-enabled directory of Apache</a>,
+we can access it as 
+
+<code>
+http://127.0.0.1/cgi-bin/echo.pl
+</code>
+
+or we can pass parameters on the URL:
+
+<code>
+http://127.0.0.1/cgi-bin/echo.pl?name=Foo
+</code>
+
+The Apache web server will put the string after the <hl>?</hl> question mark in an environment variable
+called <hl>QUERY_STRING</hl>. We need to parse it. Luckily, just as <a href="/echo-with-plain-cgi">CGI and CGI::Simple</a>,
+Plack can also parse this information. That's part of what Plack::Request does.
+
+In our solution we grab the parameter passed to our main subroutine. That's where the Plack passes in all the environment
+information. So we don't need to know if the web server used the QUERY_STRING environment variable or some other means.
+
+The Plack::Request module uses the information in this hash reference to construct an object with a <hl>param</hl> method,
+just as the CGI, and CGI::Simple modules provided that method.
+
+We get the value of the 'name' parameter and use the <hl>|| ''</hl> construct to set it to the empty string in case the user
+has not passed any value.
+
+
+<h2>Echo with Plack in CGI mode and full HTML5</h2>
+
+This is basically the same code, but instead of sending back a small HTML snippet containing only "Hello $name!" 
+we build a slightly bigger HTML snippet with all the parts that are required for an HTML 5 page.
+
+Then we send back the content of the <hl>$html</hl> variable.
+
+<include file="examples/psgi-cgi-html5-echo.pl">
+
+The indentation is a bit off due to the <a href="/here-documents">here document</a>, something we could solve by using external
+template files.
+
+
