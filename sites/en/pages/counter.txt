@@ -57,7 +57,8 @@ This is going to be a long project, but it might help understand various techniq
   <li><a href="https://code-maven.com/counter-in-mongodb-client">Several counters in MongoDB client</a></li>
   <li><a href="/command-line-counter-with-mongodb">Command line counter with MongoDB as storage</a></li>
   <li><a href="/pro/comman-line-counter-in-python">Command-line counter in Python</a> for a single counter.</li>
-  <li><a href=/pro/counter-with-mojolicious-lite">Counter with Mojolicious Lite</a></li>
+  <li><a href="/pro/counter-with-mojolicious-lite">Counter with Mojolicious Lite</a></li>
+  <li><a href="/pro/command-line-counter-with-memchached">Command line counter with Memcached</a></li>
 </ul>
 
 
