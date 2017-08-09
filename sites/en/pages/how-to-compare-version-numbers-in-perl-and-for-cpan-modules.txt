@@ -1,0 +1,63 @@
+=title How to compare version numbers in Perl and for CPAN modules
+=timestamp 2017-08-09T09:00:01
+=indexes Perl::Version, version, $VERSION
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Version numbers are very flexible in Perl and unfortunately people have been abusing this freedom.
+even though <a href="http://www.dagolden.com/index.php/369/version-numbers-should-be-boring/">Version numbers should be boring</a>.
+
+=abstract end
+
+A couple of examples for version numbers:
+
+<code>
+5.010
+v5.10
+5.010.002
+
+1.10
+1.10_02
+
+1.10_TEST
+</code>
+
+
+You might also know that <hl>5.010</hl> is the same as <hl>v5.10</hl> which creates a great deal of confusion to
+people who are not aware of this.
+
+There are at least two modules that handle version numbers: <a href="https://metacpan.org/pod/version">version</a>
+and <a href="https://metacpan.org/pod/Perl::Version">Perl::Version</a>, but it seems only the
+<a href="http://perlmaven.com/perl-version-number-confusion">former works properly</a>.
+
+So I recomment the <b>version</b> module.
+
+It <a href="https://metacpan.org/pod/overload">operator overloading</a> to allow us to use the various numerical
+comparision operators such as <hl>&gt;</hl>, <hl>&lt;</hl> and even the spaceship operators <hl>&lt;=&gt;</hl>
+to sort a bunch of version numbers.
+
+<include file="examples/version_example.pl">
+
+It seems to be working properly as the following cases show:
+
+<include file="examples/version.pl">
+
+You can also sort version numbers:
+
+<include file="examples/sort_versions.pl">
+
+<h2>Invalid version format</h2>
+
+The module will not properly parse the last example:
+
+<code>
+say version->parse('1.23_TEST');
+</code>
+
+Will generate an excpetion  saying <b>Invalid version format (misplaced underscore) at ...</b>
+
+
