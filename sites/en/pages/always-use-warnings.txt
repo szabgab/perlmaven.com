@@ -120,7 +120,7 @@ If we run this code, it will silently ignore the <hl>$default_code</hl>.
 If we enable <hl>use warnings</hl> then we get the following warning:
 
 <code>
-Useless use of private variable in void context at set_default.pl line 13.
+Useless use of private variable in void context at set_default.pl line 11.
 </code>
 
 <h3>Useless use of a constant</h3>
