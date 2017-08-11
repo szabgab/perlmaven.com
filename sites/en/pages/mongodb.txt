@@ -20,7 +20,7 @@ with the Perl Programming language.
   <li><a href="/updating-mongodb-with-perl">Updating MongoDB using Perl</a></li>
   <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a> (short series)</li>
   <li><a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a> (series)</li>
-  <li><a href="/pro/mongodb-insert-and-delete-with-perl">MongoDB with Perl: insert, find and delete</a></li>
+  <li><a href="/mongodb-insert-and-delete-with-perl">MongoDB with Perl: insert, find and delete</a></li>
 </ul>
 
 
