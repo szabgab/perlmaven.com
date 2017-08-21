@@ -1,6 +1,6 @@
 =title New on CPAN - week ending on 2017-08-20
 =timestamp 2017-08-20T23:59:59
-=indexes files
+=indexes CPAN, Data::Tersify, Map::Tube::Kolkatta, Log::Colorize::Helper, Net::DNS::Resolver::Mock
 =status show
 =author szabgab
 =archive 1
