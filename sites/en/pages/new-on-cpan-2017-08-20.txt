@@ -1,0 +1,22 @@
+=title New on CPAN - week ending on 2017-08-20
+=timestamp 2017-08-20T23:59:59
+=indexes files
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Selected modules that have been recently released to CPAN. You can see the full list at the <a href="https://metacpan.org/recent">recent</a> section of MetaCPAN.
+You can get the daily update via <a href="https://twitter.com/perlweekly">Perl Weekly Twitter account</a>.
+
+=abstract end
+
+<ul>
+   <li><a href="https://metacpan.org/pod/Data::Tersify">Data::Tersify - generate terse equivalents of complex data structures</a></li>
+   <li><a href="https://metacpan.org/pod/Map::Tube::Kolkatta">Map::Tube::Kolkatta - Interface to the Kolkatta Metro Map</a></li>
+   <li><a href="https://metacpan.org/pod/Log::Colorize::Helper">Log::Colorize::Helper - Makes searching and colorizing logs trivial with out all the need for piping</a></li>
+   <li><a href="https://metacpan.org/pod/Net::DNS::Resolver::Mock">Net::DNS::Resolver::Mock - Mock a DNS Resolver object for testing</a></li>
+</ul>
+
