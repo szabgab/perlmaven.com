@@ -84,7 +84,7 @@ and we can add comments after <hl>#</hl> or we can comment out certain entries i
 <h2>Which modules to forbid?</h2>
 
 This of course will entirely depend on your situation and your judgment, but let me give you a few suggestions with recommended
-error messages:
+error messages.
 
 <code>
 DateTime         Use DateTime::Tiny or Time::Moment instead.
@@ -102,4 +102,9 @@ YAML             Use YAML::XS instead of YAML.
 lib              Only scripts should change @INC. Modules should not.
 Acme::Damn       Use Data::Structure::Util for unbless instead of Acme::Damn.
 </code>
+
+To be clear this list does not mean the modules on the left hand side are not receommended.
+Especially in the case of DateTime which is awesome. We (at a client of mine) just had a situation where DateTime::Tiny
+was enough and we wanted to make sure others in the organization will switch to the lighter module.
+
 
