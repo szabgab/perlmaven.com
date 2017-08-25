@@ -1,0 +1,3 @@
+This is a file with several number For example 10
+In the second row there are two number 5 and 25
+There are also numbers between other characters: #17# and =42=
