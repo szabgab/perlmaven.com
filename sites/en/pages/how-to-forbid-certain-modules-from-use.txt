@@ -107,4 +107,6 @@ To be clear this list does not mean the modules on the left hand side are not re
 Especially in the case of DateTime which is awesome. We (at a client of mine) just had a situation where DateTime::Tiny
 was enough and we wanted to make sure others in the organization will switch to the lighter module.
 
+Same with some of the other modules.
+
 
