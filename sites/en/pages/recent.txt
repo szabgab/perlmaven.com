@@ -22,6 +22,7 @@ angular.module('PerlMavenApp').controller('PerlMavenRecentCtrl', function($scope
 });
 </script>
 
+<!--
 <div ng-controller="PerlMavenRecentCtrl">
   <table>
   <tr>
@@ -61,7 +62,12 @@ angular.module('PerlMavenApp').controller('PerlMavenRecentCtrl', function($scope
 
   <div>Total: {{distributions.length}}</div>
 
+-->
 
+<ul>
+  <li><a href="http://cpan.perlmaven.com/#lab/no-repository">Recent CPAN releases without a repository in the META files</a></li>
+  <li><a href="http://cpan.perlmaven.com/#lab/no-license">Recent releases without a "license" field in the META files</a></li>
+</ul>
 
   <h2>Explanation</h2>
 
