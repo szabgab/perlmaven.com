@@ -1,5 +1,5 @@
 =title YAML in Perl
-=timestamp 2015-05-27T18:00:02
+=timestamp 2017-08-27T18:00:02
 =indexes YAML, YAML::XS, YAML::Syck, YAML::Tiny, YAML::Any
 =status draft
 =author szabgab
@@ -8,8 +8,18 @@
 
 =abstract start
 
+<a href="http://www.yaml.org/">YAML: YAML Ain't Markup Language</a> is a text format that provides hierarchical data structruse similar to
+<a href="/json">JSON</a>, but it is especially human friendly.
+
+It can be used for data serialization, though probbaly it is most often used for hierarchical configuration files.
+
+YAML format allow the user to have key-value pair and list data structures.
+
+Plenty of languages have YAML reader and write libraries.
 
 =abstract end
+
+In Perl the following libraries exist:
 
 <ul>
   <li><a href="https://metacpan.org/pod/YAML">YAML</a></li>
@@ -19,4 +29,7 @@
   <li><a href="https://metacpan.org/pod/YAML::Any">YAML::Any</a></li>
 </ul>
 
+<h2>Other articles about YAML</h2>
+
+<a href="/yaml-vs-yaml-xs-inconsistencies">YAML vs YAML::XS inconsistencies (YAML::Syck and YAML::Tiny too)</a>
 

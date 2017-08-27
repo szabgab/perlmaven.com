@@ -59,6 +59,7 @@ This is going to be a long project, but it might help understand various techniq
   <li><a href="http://code-maven.com/comman-line-counter-in-python">Command-line counter in Python</a> for a single counter.</li>
   <li><a href="/pro/counter-with-mojolicious-lite">Counter with Mojolicious Lite</a></li>
   <li><a href="/pro/command-line-counter-with-memchached">Command line counter with Memcached</a></li>
+  <li><a href="/pro/increase-numbers-in-a-file">increasing numbers in a text file</a></li>
 </ul>
 
 
