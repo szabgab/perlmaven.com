@@ -99,7 +99,8 @@ The full example can be seen here:
 <h2>Recent versions of Perl</h2>
 
 As <a href="https://dave.org.uk/">Dave Cross</a> pointed out in the comments in modern versions of Perl
-(experimental in 5.20 and 5.22, stable since 5.24), you can also use the postfix dereferencing syntax.
+(experimental in 5.20 and 5.22, stable since 5.24), you can also use the
+<a href="https://metacpan.org/pod/distribution/perl/pod/perlref.pod#Postfix-Dereference-Syntax">Postfix Dereferencing Syntax</a>.
 
 <code>
 my @slice = $kings->@[2,4,1];
