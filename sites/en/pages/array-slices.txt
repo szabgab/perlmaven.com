@@ -42,7 +42,7 @@ See the full example here:
 
 This warning will appear if you try to use an array slice with a single index as in this example:
 
-<h2>my @s = @kings[2];</h2>
+<hl>my @s = @kings[2];</hl>
 
 This is how <a href="/use-diagnostics-or-splain">splain</a> explains the warning:
 
@@ -64,12 +64,12 @@ Scalar value @kings[2] better written as $kings[2] at array_slice.pl line 14 (#1
 
 If you would like to create a new array using a single element of another array then you should probably write:
 
-<h2>my @s = $kings[2];</h2>
+<hl>my @s = $kings[2];</hl>
 
 or if you want to make sure readers of your code won't be surprised by the assignment of a scalar to an
 array, then you can even put parentheses around the value.
 
-<h2>my @s = ($kings[2]);</h2>
+<hl>my @s = ($kings[2]);</hl>
 
 
 <h2>Slice of an array reference</h2>
