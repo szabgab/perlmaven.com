@@ -20,6 +20,7 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/testing-a-simple-perl-module">Testing a simple Perl module (Test::Simple)</a></li>
   <li><a href="/test-for-warnings-in-a-perl-module">Test for warnings in a Perl Module (__WARN__, Test::Warn)</a></li>
   <li><a href="/pro/testing-a-tree-data-structure-in-perl">Testing a tree data structure in Perl (Test::Deep)</a></li>
+  <li><a href="pro/testing-for-no-warnings">Testing for no warnings in Perl</a></li>
 </ol>
 
 <h2>Interviews</h2>
