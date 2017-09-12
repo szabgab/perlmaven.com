@@ -122,3 +122,12 @@ my @capitals = ('Belmopan', 'Bishkek');
 See the full sample script I used to generate the code snippets:
 
 <include file="examples/hash_slices.pl">
+
+<h2>Perl 5.20 and newer</h2>
+
+As <a href="https://culturedperl.com/">Dave Cross</a> pointed out, starting from Perl version 5.20 you can also write:
+
+<code>
+my %africa = %capital_of{'Zimbabwe', 'Eritrea', 'Botswana'};
+</code>
+
