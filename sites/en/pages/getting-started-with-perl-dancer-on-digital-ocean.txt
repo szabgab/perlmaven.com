@@ -327,53 +327,22 @@ So let's stop the development server by pressing <hl>Ctrl-C</hl> on the console.
 
 <h2 id="starman">Configuring Starman</h2>
 
-As user <hl>starman</hl> create <hl>/home/starman/starman.pl</hl> containing the following code:
+As user <hl>starman</hl> create <hl>/home/starman/starman_daemon.pl</hl> containing the following code:
 
-<code lang="perl">
-#!/home/starman/perl5/perlbrew/perls/perl-5.18.1/bin/perl
-use warnings;
-use strict;
-use Daemon::Control;
-
-use Cwd qw(abs_path);
-
-Daemon::Control->new(
-    {
-        name      => "Starman",
-        lsb_start => '$syslog $remote_fs',
-        lsb_stop  => '$syslog',
-        lsb_sdesc => 'Starman Short',
-        lsb_desc  => 'Starman controls the web sites.',
-        path      => abs_path($0),
-
-        program      => '/home/starman/perl5/perlbrew/perls/perl-5.18.1/bin/starman',
-        program_args => [ '--workers', '3', '/home/starman/Demo/bin/app.pl' ],
-
-        user  => 'starman',
-        group => 'starman',
-
-        pid_file    => '/tmp/starman.pid',
-        stderr_file => '/tmp/starman.err',
-        stdout_file => '/tmp/starman.out',
-
-        fork => 2,
-
-    }
-)->run;
-</code>
+<include file="examples/starman_daemon.pl">
 
 
 set the executable bit using
 
 <code>
-starman@s12:~$ chmod +x /home/starman/starman.pl
+starman@s12:~$ chmod +x /home/starman/starman_daemon.pl
 </code>
 
 Then leave the <hl>starman</hl> user using <hl>exit</hl> and as user <hl>root</hl> create a symbolic link
 to the newly created file and then start the Starman service:
 
 <code>
-root@s12:~# ln -s /home/starman/starman.pl /etc/init.d/starman
+root@s12:~# ln -s /home/starman/starman_daemon.pl /etc/init.d/starman
 root@s12:~# service starman start
 </code>
 
@@ -410,17 +379,7 @@ http://1.2.3.4:5000
 
 As user <hl>starman</hl> create the file <b>/home/starman/nginx-demo.conf</b> with the following content:
 
-<code>
-server {
-  location / {
-      proxy_set_header Host $http_host;
-      proxy_set_header X-Forwarded-Host $http_host;
-      proxy_set_header X-Real-IP $remote_addr;
-      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-      proxy_pass http://localhost:5000;
-    }
-}
-</code>
+<include file="examples/nginx-demo.conf">
 
 Then <hl>exit</hl> from the user, and as <hl>root</hl> remove the default configuration file,
 create a symbolic link to from the nginx configuration directory to the  nginx-demo.conf file.
