@@ -17,7 +17,7 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 It will be a good foundation for you to build on.
 
 The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on May 12, 2016.
+parts are being published every few days. The latest one was published on Oct 6, 2017.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
@@ -232,7 +232,7 @@ to practice what you have learned.
     <li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
     <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
     <li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
-    <li>Can't use string ("Foo") as a HASH ref while "strict refs" in use at ...
+    <li><a href="/pro/cant-use-string-as-a-hash-ref-while-strict-refs-in-use">Can't use string (...) as a HASH ref while "strict refs" in use at ...</a>
        explained in <a href="/symbolic-reference-in-perl">Symbolic references in Perl</a></li>
     <li><a href="/cant-locate-in-inc">Can't locate ... in @INC</a></li>
     <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
@@ -242,7 +242,11 @@ to practice what you have learned.
     <li><a href="/cant-locate-object-method-via-package-1">Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?)</a></li>
     <li><a href="/creating-hash-from-an-array">Odd number of elements in hash assignment</a></li>
     <li><a href="/qw-quote-word">Possible attempt to separate words with commas</a></li>
-    <!-- <li><a href="/autoload">Undefined subroutine ... called</a></li> -->
+    <li><a href="/autoload">Undefined subroutine ... called</a></li>
+    <li><a href="/pro/useless-use-of-hash-element-in-void-context">Useless use of hash element in void context</a></li>
+    <li><a href="/pro/useless-use-of-private-variable-in-void-context">Useless use of private variable in void context</a></li>
+    <li><a href="/pro/readline-on-closed-filehandle">readline() on closed filehandle</a></li>
+    <li><a href="possible-precedence-issue-with-control-flow-operator">Possible precedence issue with control flow operator</a></li>
 </ol>
 
 
