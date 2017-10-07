@@ -1,0 +1,179 @@
+=title How to install Perl modules on FreeBSD
+=timestamp 2017-10-07T08:00:00
+=description How to install Perl modules on FreeBSD using the pkg command.
+=indexes FreeBSD, package, pkg, cpan, cpanm, DateTime::Event::Cron
+=status show
+=author dsdickinson
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+This tutorial is intended for users that want to maintain Perl modules on a FreeBSD Unix system.
+
+FreeBSD has its own binary package system. It allows for easy installation and management of system software. 
+With this package system you can also manage the installation of Perl modules.
+=abstract end
+
+<h2>Search For Module</h2>
+
+First you'll want to search the package system to see if the Perl module you want to install exists. Note that not all modules have binary packages.
+If there is no package for your module in the repository than you will need to use another <a href="http://perlmaven.com/how-to-install-a-perl-module-from-cpan">
+method of installation such as CPAN or CPANM</a>.
+
+To search the package repository for your module type the following:
+
+<code lang="shell">
+[steve@blackbox] pkg search event-cron
+p5-DateTime-Event-Cron-0.08_1
+</code>
+
+The search results gives us the full name of the package in the repository, which matched 
+"<a href="https://metacpan.org/pod/DateTime::Event::Cron">p5-DateTime-Event-Cron-0.08_1</a> using our search of "event-cron".
+Knowing the full name of a package is important, particularly if there are multiple versions of a package. 
+
+For instance, if we wanted to install perl5 we would be given the following search results by search for "perl5":
+
+<code lang="shell">
+[steve@blackbox] pkg search perl5
+perl5-5.20.3_8                 Practical Extraction and Report Language
+perl5-devel-5.23.7.66          Practical Extraction and Report Language
+perl5.18-5.18.4_17             Practical Extraction and Report Language
+perl5.22-5.22.1_4              Practical Extraction and Report Language
+</code>
+
+Now that we have all the different package names for each version, we can tell the system the exact package to install. 
+If we wanted to install perl5.20 for example, we would enter this command to install that specific version of perl5:
+
+<code lang="shell">
+[steve@blackbox] sudo pkg install perl5-5.20.3_8 
+</code>
+
+<h2>Install Module</h2>
+
+Going back to our original example, since the package for our module exists (p5-DateTime-Event-Cron-0.08_1) and we now have its full name, let's install it. 
+You will want to run this using sudo so the install process can write the package files using root permissions:
+
+<code lang="shell">
+[steve@blackbox] sudo pkg install p5-DateTime-Event-Cron-0.08_1
+Updating FreeBSD repository catalogue...
+Fetching meta.txz: 100%    944 B   0.9kB/s    00:01
+Fetching packagesite.txz: 100%    5 MiB   1.4MB/s    00:04
+Processing entries: 100%
+FreeBSD repository update completed. 24579 packages processed.
+The following 4 package(s) will be affected (of 0 checked):
+
+New packages to be INSTALLED:
+        p5-DateTime-Event-Cron: 0.08_1
+        p5-Set-Crontab: 1.03_1
+        p5-DateTime-Set: 0.34_1
+        p5-Set-Infinite: 0.65_1
+
+The process will require 296 KiB more space.
+100 KiB to be downloaded.
+
+Proceed with this action? [y/N]: y
+Fetching p5-DateTime-Event-Cron-0.08_1.txz: 100%   11 KiB  11.1kB/s    00:01
+Fetching p5-Set-Crontab-1.03_1.txz: 100%    5 KiB   4.9kB/s    00:01
+Fetching p5-DateTime-Set-0.34_1.txz: 100%   46 KiB  47.6kB/s    00:01
+Fetching p5-Set-Infinite-0.65_1.txz: 100%   38 KiB  39.2kB/s    00:01
+Checking integrity... done (0 conflicting)
+[1/4] Installing p5-Set-Infinite-0.65_1...
+[1/4] Extracting p5-Set-Infinite-0.65_1: 100%
+[2/4] Installing p5-Set-Crontab-1.03_1...
+[2/4] Extracting p5-Set-Crontab-1.03_1: 100%
+[3/4] Installing p5-DateTime-Set-0.34_1...
+[3/4] Extracting p5-DateTime-Set-0.34_1: 100%
+[4/4] Installing p5-DateTime-Event-Cron-0.08_1...
+[4/4] Extracting p5-DateTime-Event-Cron-0.08_1: 100%
+</code>
+
+The first thing this process does is update the FreeBSD repository catalogue, in case there have been any changes since its last update.
+Next, it provides information about all the packages it intends to install.
+As you can see, any dependencies that the module requires will also be installed automatically.
+Finally, it confirms that you want to proceed with the installation.
+
+<h2>Additional Commands</h2>
+
+Once the installation is done there are additional commands available to help manage the installed module package.
+
+<h2>View Module Details</h2>
+
+To view information about your installed module type the following:
+
+<code lang="shell">
+[steve@blackbox] pkg info p5-DateTime-Event-Cron-0.08_1
+p5-DateTime-Event-Cron-0.08_1
+Name           : p5-DateTime-Event-Cron
+Version        : 0.08_1
+Installed on   : Thu Sep 24 11:34:30 2015 EDT
+Origin         : devel/p5-DateTime-Event-Cron
+Architecture   : freebsd:10:x86:64
+Prefix         : /usr/local
+Categories     : devel perl5
+Licenses       :
+Maintainer     : perl@FreeBSD.org
+WWW            : http://datetime.perl.org/
+Comment        : DateTime extension for generating recurrence sets from crontab
+Annotations    :
+    repo_type      : binary
+    repository     : FreeBSD
+Flat size      : 27.4KiB
+Description    :
+DateTime::Event::Cron generated DateTime events or DateTime::Set objects based
+on crontab-style entries.
+
+WWW: http://datetime.perl.org/
+</code>
+
+<h2>View Module File Locations</h2>
+
+To view the locations of all of the files installed for the module package type:
+
+<code lang="shell">
+[steve@blackbox] pkg info -l p5-DateTime-Event-Cron-0.08_1
+p5-DateTime-Event-Cron-0.08_1:
+    /usr/local/lib/perl5/site_perl/DateTime/Event/Cron.pm
+    /usr/local/lib/perl5/site_perl/mach/5.20/auto/DateTime/Event/Cron/.packlist
+    /usr/local/lib/perl5/site_perl/man/man3/DateTime::Event::Cron.3.gz
+</code>
+
+<h2>Update Module</h2>
+
+To apply updates to your installed module simply type the following:
+
+<code lang="shell">
+[steve@blackbox] sudo pkg update p5-DateTime-Event-Cron-0.08_1
+Updating FreeBSD repository catalogue...
+FreeBSD repository is up-to-date.
+All repositories are up-to-date.
+Checking integrity... done (0 conflicting)
+Your packages are up to date.
+
+In this case, there are no updates to be applied.
+</code>
+
+<h2>Delete Module</h2>
+
+To delete the module package altogether type the following (remember again to use sudo):
+
+<code lang="shell">
+[steve@blackbox] sudo pkg delete p5-DateTime-Event-Cron-0.08_1
+Checking integrity... done (0 conflicting)
+Deinstallation has been requested for the following 1 packages (of 0 packages in the universe):
+
+Installed packages to be REMOVED:
+    p5-DateTime-Event-Cron-0.08_1
+
+The operation will free 27 KiB.
+
+Proceed with deinstalling packages? [y/N]: y
+[1/1] Deinstalling p5-DateTime-Event-Cron-0.08_1...
+[1/1] Deleting files for p5-DateTime-Event-Cron-0.08_1: 100%
+
+The package has been removed from the system.
+</code>
+
+<h2>Conclusion</h2>
+
+There you have it. A simply and effective way to manage your Perl modules on a FreeBSD system using binary packages.
