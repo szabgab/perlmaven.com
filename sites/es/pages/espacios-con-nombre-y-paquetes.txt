@@ -8,7 +8,6 @@
 =translator nselem
 =original namespaces-and-packages
 =comments_disqus_enable 1
-=timestamp 2017-02-03T23:00:11
 
 
 
