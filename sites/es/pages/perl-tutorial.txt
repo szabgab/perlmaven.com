@@ -229,4 +229,4 @@ Recordatorio, hay <a href="https://perlmaven.com/beginner-perl-maven-e-book">e-b
 <b>Introducción al curso avanzado de Perl</b>
 <li><a href="/librerias-perl-4.txt">Librerías en Perl 4</a></li>
 <li><a href="/el-problema-con-las-librerias.txt">El problema con las librerías en Perl 4</a></li>
-<li><a href="/el-problema-con-las-librerias.txt">Espacios con nombre y paquetes</a></li>
+<li><a href="/espacios-con-nombre-y-paquetes.txt">Espacios con nombre y paquetes</a></li>
