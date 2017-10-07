@@ -1,5 +1,5 @@
 =title Espacios con nombre y paquetes en Perl
-=timestamp 2017-01-11T12:00:11
+=timestamp 2017-10-07T12:00:11
 =indexes package, ::
 =tags screencast
 =status show
