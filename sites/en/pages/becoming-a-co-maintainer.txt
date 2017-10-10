@@ -33,7 +33,7 @@ refactoring the code and even accepting contributions from other people.
   <li><a href="/how-to-declare-requrements">How to declare requirements of a CPAN distribution?</a></li>
   <li><a href="/improve-kwalitee">Check CPANTS (Kwalitee)</a></li>
   <li><a href="/converting-indirect-calls">Eliminate more of the indirect calls</a></li>
-  <li><a href="/pro/fixing-test-failure-on-windows">Fixing test failure on Windows - Properly quoting regexes - Accepting GitHub pull request</a></li>
+  <li><a href="/fixing-test-failure-on-windows">Fixing test failure on Windows - Properly quoting regexes - Accepting GitHub pull request</a></li>
    <li><a href="/set-minimum-version-in-every-perl-file">Set minimum version number in every Perl file</a></li>
 
 
