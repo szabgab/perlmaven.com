@@ -11,7 +11,7 @@
 
 =abstract start
 
-The <b>Perl Maven Pro</b> is a paid service where subscribers get 2-3 new articles and screencast every week.
+The <b>Perl Maven Pro</b> is a paid service where subscribers get 5-6 new articles and screencast every month.
 See the previous articles <a href="/archive?tag=pro">in the archive</a> and on the following pages:
 
 <h2>Generic Courses</h2>
