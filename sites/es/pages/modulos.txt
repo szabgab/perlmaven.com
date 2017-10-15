@@ -1,1 +1,118 @@
+=title Modules in Perl
+=timestamp 2017-10-14T16:00:11
+=indexes require
+=tags screencast
+=books advanced
+=status show
+=author szabgab
+=translator nselem
+=comments_disqus_enable 1
 
+=abstract start
+
+Previamente expliqué qué son los<a href="/namespaces-and-packages">paquetes</a> en perl, y cómo usar la palabra 
+reservada <hl>package</hl>, pero no hemos
+visto la solución a <a href="/the-problem-with-libraries">, el problema de las librerías</a> que encontramos antes.
+
+=abstract end
+
+<slidecast file="/media/videos/advanced-perl/libraries-and-modules/modules" youtube="BwRaMyHiuOc" />
+
+Ahora tenemos nuestro paquete (o espacio con nombre) en el mismo archivo que nuestro código principal, 
+pero podemos tenerlo en dos archivos separados:
+
+El programa principal está en <b>namespace.pl</b> y llamamos con <hl>require</hl> a el otro archivo
+proporcionando su dirección absoluta (o relativa).
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+require "namespace_lib.pl";
+
+print Calc::add(3, 4), "\n";
+</code>
+
+En el otro archivo que llamamos <b>namespace_lib.pl</b>, todo empieza dentro del paquete <hl>package Calc;</hl>
+, y antes, esto continuaba hasta que hacíamos un segundo llamado a <hl>package main;</hl>.
+Esta vez no necesitamos el segundo <hl>package</hl> llamado, pero sí necesitamos terminar el archivo con un valor verdadero.
+<hl>1;</hl> en este caso.
+
+<code lang="perl">
+package Calc;
+use strict;
+use warnings;
+
+my $base = 10;
+
+sub add {
+    validate_parameters(@_);
+
+    my $total = 0;
+    $total += $_ for (@_);
+    return $total;
+}
+
+sub multiply {
+}
+
+sub validate_parameters {
+    die 'Not all of them are numbers'
+        if  grep {/\D/} @_;
+    return 1;
+}
+
+1;
+</code>
+
+Así que básicamente tomamos el<a href="/pro/namespaces">ejemplo anterior</a>,y movemos el contenido de el paquete Calc a un archivo diferente,
+y además agregamos las palabras <hl>require "namespace_lib.pl";</hl> para cargar el nuevo archivo.
+
+En esta versión no necesitamos el uso de prefijos dentro del archivo donde el paquete Calc está definido. Por otro lado, declaramos variables globales
+usando la palabra <hl>my</hl>, porque ahora tenemos <hl>use strict;</hl> y eso nos obliga a hacerlo. De esta manera la varbiable
+<hl>$base</hl> en el archivo donde declaramos Calc, pero esto no se fitrará al archivo que la usa.
+
+Después llamamos a <hl>add</hl>, la función del paquete <hl>Calc</hl>, la llamamos dentro del script principal usando <hl>Calc::add()</hl>, 
+el nombre completo de la función. Podemos también usar la otra función del paquete Calc, incluyendo la función <hl>validate_parameters</hl>
+, pero estas no son parte del paquete main, y entonces no habrá colisiones con funciones de otros paquetes, incluido el paquete name.
+
+Así que si tenemos una librería con el paquete Calc y otra librería con el paquete Inventory, entonces, aún si ambas
+tienen una función <hl>add</hl>, una la llamaremos como <hl>Calc::add()</hl>, y la otra como <hl>Inventory::add()</hl> 
+y entonces para todos los que lean el programa, incluyendo perl, será claro cuál de las funciones <hl>add</hl> está siendo llamada.
+
+Así es como ponemos código de un paquete en un archivo separado.
+Pero cómo podemos transformar esto en un módulo <b>module</b>?
+
+<h2>Creado un módulo</h2>
+
+Un módulo <b>module</b> en Perl en el cual hay un sólo paquete (<hl>package</hl>) y donde el nombre del archivo, con extensión .pm, es el mismo que el nombre del paquete
+colocado dentro de él. Así que en nuestro caso renombramos <hl>namespace_lib.pl</hl> a <hl>Calc.pm</hl> así de repente, ya tenemos un <b>módulo</b>.
+
+(De hecho, aún si hay varios paquetes en un mismo archivo podemos seguir llamándolo módulo, pero eso solo te va a crear más confunsión, así que por ahora
+dejémoslo así).
+
+El script (que ahora llamamos <b>module.pl</b>) a cambiado un poco. En lugar de usar <hl>require</hl> proporcionando una ruta al archivo, 
+ahora escribimos <hl>require Calc;</hl> y como es un módulo, perl buscará el archivo <hl>Calc.pm</hl> y lo cargará.
+
+<code lang="perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+use lib 'examples/modules';
+
+require Calc;
+
+print Calc::add(3, 4), "\n";
+</code>
+El archivo <hl>Calc.pm</hl>, de hecho el módulo tiene exactamente el mismo contenido que <hl>namespace_lin.pl</hl>tenía. 
+Sólo el nombre del archivo ha cambiado.
+
+Cuando las palabras <hl>require Calc;</hl>son vistas, Perl buscará un archivo llamado <hl>Calc.pm</hl>
+en los directorios listados en el arreglo <hl>@INC</hl>.
+Si el archivo Calc.pm se encuentra en cualquiera de los directorios de <hl>@INC</hl> por default perl lo encontrará.
+Si el archivo <hl>Calc.pm</hl> está localizado en cualquier otro lado
+<a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">cambiamos @INC</a>.
+Las palabras <hl>use lib 'examples/modules';</hl> agregan el directorio <b>examples/modules</b> a <hl>@INC</hl> 
+lo que era necesario cuando grabé este video.
