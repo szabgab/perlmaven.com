@@ -11,9 +11,9 @@
 
 =abstract start
 
-Vamos a hablar sobre libreras y módulos en Perl.
+Vamos a hablar sobre librerías y módulos en Perl.
 
-En este capítulo explicaremos cómo funcionan las libreras en Perl. Esto es algo de la época de Perl 4.
+En este capítulo explicaremos cómo funcionan las libreras en Perl, algo de la época de Perl 4.
 
 =abstract end
 
@@ -21,9 +21,9 @@ En este capítulo explicaremos cómo funcionan las libreras en Perl. Esto es alg
 
 <h2>Falta de reutilización de código</h2>
 
-Mientras escribes más y más código en perl, prroducirás más y más scripts y en algunos de ellos 
-tendrás funciones que hacen los mismo. Tal vez lo resuelves copiando la función que escribiste antes en un script
-pero necesitas en el otro.I Si continuas en esa dirección tendrás toneladas de código, y una gran parte de 
+Mientras escribes más y más código en perl, producirás más y más scripts y en algunos de ellos 
+tendrás funciones que hacen lo mismo. Tal vez lo resuelvas copiando la función que escribiste antes en un script pero que ahora
+necesitas en el otro. Pero, si continuas en esa dirección tendrás toneladas de código, y una gran parte de 
 la base del código serán pedazos o incluso funciones enteras de código copiado de un lado a otro.
 
 El principal problema es el mantenimiento, si tu quieres hacer un cambio en una función ya sea por un nuevo
@@ -35,9 +35,9 @@ El problema es la falta de reutilización de código.
 
 En Perl 4 la solución era crear librerías.
 
-Primero vamos a aprender cómo usar librerías. No porque sea una forma recomendada de trabajar, sino porque
-aún hay muchas sitios donde se sigue usando y es importante para ti entender qué está pasando, 
-y hasta tal vez cambiar el código hacia técnicas más modernas.
+Primero vamos a aprender cómo usar librerías. No porque ahora sea una forma recomendada de trabajar, sino porque
+aún hay muchos sitios donde se sigue usando y es importante para ti entender qué está pasando, 
+y hasta tal vez colaborar y cambiar el código hacia técnicas más modernas.
 
 En este ejemplo tenemos dos archivos. Ambos con la extensión.pl.
 
@@ -79,7 +79,7 @@ print "$base\n";
 </code>
 
 
-El script (<b>perl4_app.pl</b>) comienza con la linea <a href="/hashbang">sh-bang</a>. No contiene <hl>use strict;</hl> no tampoco utiliza <hl>use warnings;</hl>. 
+El script (<b>perl4_app.pl</b>) comienza con la linea <a href="/hashbang">sh-bang</a>. No contiene <hl>use strict;</hl> tampoco utiliza <hl>use warnings;</hl>. 
 Recuerda, este es código de estilo Perl 4. Estas <a href="/installing-perl-and-getting-started">redes de seguridad</a>
 no estuvieron disponibles hasta Perl 5.
 
