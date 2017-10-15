@@ -66,19 +66,7 @@ For example: <hl>print "@{ $names_ref }";</hl>
 
 A full script might look like this:
 
-<code lang="perl">
-#!/usr/bin/env perl
-use strict;
-use warnings;
-
-my @names = qw(Foo Bar Baz);
-
-my $names_ref  = \@names;
-print "$names_ref\n";         # ARRAY(0x703dcf2)
-
-print "@$names_ref\n";        # Foo Bar Baz
-print "@{ $names_ref }\n";    # Foo Bar Baz
-</code>
+<include file="examples/array_ref.pl">
 
 <h2>Individual elements</h2>
 
@@ -125,15 +113,7 @@ When you have an array or an array reference, the best way to visualize it
 during a debug-by-print session is by using one of the data dumper modules,
 for example the built-in <a href="https://metacpan.org/pod/Data::Dumper">Data::Dumper</a> module.
 
-<code lang="perl">
-use strict;
-use warnings;
-use Data::Dumper;
-
-my @names = ('foo', 'bar', "moo\nand\nmoose");
-
-print Dumper \@names;
-</code>
+<include file="examples/dump_array.pl">
 
 And the output is:
 
@@ -151,16 +131,7 @@ This clearly shows the individual elements even if some of the elements have spa
 
 Exactly the same could be done if we already had an array reference in our hand:
 
-<code lang="perl">
-use strict;
-use warnings;
-use Data::Dumper;
-
-my @names = ('foo', 'bar', "moo\nand\nmoose");
-my $names_ref = \@names;
-
-print Dumper $names_ref;
-</code>
+<include file="examples/dump_array_ref.pl">
 
 
 <h2>Passing two arrays to a function</h2>
