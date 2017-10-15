@@ -14,33 +14,32 @@
 =abstract start
 
 Previamente estudiamos <a href="/the-problem-with-libraries">los problemas con las librerías estilo Perl 4</a>. veamos una mejor solución
-utilizando los espacios-con-nombre de Perl 5.
+utilizando los paquetes de Perl 5.
 
 =abstract end
 
 <slidecast file="/media/videos/advanced-perl/libraries-and-modules/namespaces" youtube="VdtJqpD2ARA" />
+Otros lenguajes también utilizan paquetes. En Perl 5, para cambiar de paquete utilizamos la palabra reservada
+<hl>package</hl>. (Para una mayor explicación sobre espacios con nombre, paquetes, módulos etc. te recomendamos leer <a href="/packages-modules-and-namespace-in-perl">este artículo</a>.)
 
-Otros lenguajes también utilizan espacios con nombre. En Perl 5, para cambiar de espacio con nombre utilizamos la palabra reservada
-<hl>package</hl>. (Para una mayor esplicación sobre espacios con nombre, paquetes, módulos etc. te recomendamos leer <a href="/packages-modules-and-namespace-in-perl">este artículo</a>.)
-
-Nosotros cambiamos a un espacio con nombre al escribir <hl>package</hl> seguido del nombre del espacio deseado. Por ejemplo
-<hl>Calc</hl> en nuestro ejemplo anterior. Los espacios con nombre usualmente empiezan con una letra mayúscula seguida de minúsculas, aunque esto una convención, no es algo obligatorio en Perl.
+Nosotros cambiamos de paquete al escribir <hl>package</hl> seguido del nombre del paquete deseado. Por ejemplo
+<hl>Calc</hl> en nuestro ejemplo anterior. Los paquete usualmente empiezan con una letra mayúscula seguida de minúsculas, aunque esto una convención, no es algo obligatorio en Perl.
 
 En este script hemos puesto <hl>use strict;</hl> y <hl>use warnings;</hl> porque ya entramos al nuevo milenio.
 
-Asi que tenemos <hl>package Calc;</hl> lo que significa que de ahora en adelante, el codigo que escribamos en el espacio con nombre Calc hasta que llamemos a <hl>package</hl> otra vez con algun otro espacio con nombre. Cargamos <hl>use strict;</hl> y <hl>use warnings</hl>
-otra vez, an cuando no lo necesitamos ahi, pero stamos planeando mover el cdifo del paquete a otro archivo y ahi lo queremos como parte del código. Después agregamos funciones. (OK, en este ejemplo hay una sola función que llamamos <hl>add</hl>, bpero no dejes que estas minucias te distraigan. Tu puedes poner cualquier número de funciones en el espacio nombrado.)
+Asi que tenemos <hl>package Calc;</hl> lo que significa que de ahora en adelante, el codigo que escribamos está en el paquete Calc hasta que llamemos a <hl>package</hl> otra vez con el nombre de algun otro paquete. Cargamos <hl>use strict;</hl> y <hl>use warnings</hl>
+otra vez, realmente no lo necesitamos aquí, pero estamos planeando mover el código del paquete a otro archivo y ahi sí lo queremos como parte del código. Después agregamos funciones. (OK, en este ejemplo hay una sola función, a la que llamamos <hl>add</hl>, pero no te dejes distraer, tú puedes poner cualquier número de funciones en el paquete).
 
-Después, regresamos al pauete principal escribiendo <hl>package main;</hl>.
+Después, regresamos al paquete principal escribiendo <hl>package main;</hl>.
 
-Esto algo de no que habamos hablad porque no había necesidad, pero cuando empiezas a escribir un script de perl es reamente dentro de un espacio llamado <hl>main</hl>. En la mayoría de los casos no tenemos nada que hacer con el, pero ahora es útil, de manera que podemos regresar al espacio con nombre del script main.El nombre es probablemente una reminiscencia del lenguaje de programación C donde se tiene que declarar una funcin main si se quiere tener algo corriendo.
+Esto algo de no que habíamos hablado porque no había necesidad, pero cuando empiezas a escribir un script de perl es realmente dentro de un espacio llamado <hl>main</hl>. En la mayoría de los casos no tenemos nada que hacer con el, pero ahora es útil, pues podemos regresar al paquete main. El nombre es probablemente una reminiscencia del lenguaje de programación C donde se tiene que declarar una función main si se quiere tener algo corriendo.
 
 Nota, se llama <hl>main</hl> solo minúsculas.
 
-Asúi pues, despues de la declaración del paquete <hl>package main;</hl> estamos otra vez en el espacio nombrado main.Si ahora tratamos de llamar la función <hl>add</hl> usando <hl>add(3, 4)</hl>, tendremos una excepción y el script morirá con
+Así pues, despues de la declaración del paquete <hl>package main;</hl> estamos otra vez en el paquete main. Si ahora tratamos de llamar la función <hl>add</hl> usando <hl>add(3, 4)</hl>, tendremos una excepción y el script morirá con
 <b>Undefined subroutine &main::add called  at namespaces.pl line 20.</b>.
 
-Esto es porque no tenemos una función <hl>add</hl> en el espacio con nombre main. En lugar de eso tenemos que escribir el nombre completo de la función, incluyendo el espacio con nombre separado por doble signo de dos puntos:
+Esto es porque no tenemos una función <hl>add</hl> en el paquete main. En lugar de eso tenemos que escribir el nombre completo de la función, incluyendo el paquete separado por doble signo de dos puntos:
 <hl>Calc::add(3, 4)</hl>
 
 <b>namespaces.pl</b>:
@@ -66,4 +65,4 @@ package main;
 print Calc::add(3, 4), "\n";
 </code>
 
-Así es como creamos un <hl>package</hl> y así es como creamos espacios con nombre en Perl 5.
+Así es, creamos un <hl>package</hl>, y así es como creamos paquete en Perl 5.
