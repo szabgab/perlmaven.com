@@ -10,6 +10,7 @@
 =abstract start
 
 Information about some of the machines serving Perl developers around the world.
+To suggest updates check out <a href="https://github.com/szabgab/perlmaven.com/blob/main/sites/en/pages/perl-infrastructure.txt">the source</a>.
 
 =abstract end
 
