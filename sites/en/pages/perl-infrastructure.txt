@@ -405,4 +405,12 @@ Especially note the <a href="https://github.com/tpf/docs">docs repository</a> th
 and a list of web-sites belonging to <a href="http://www.perlfoundation.org/">The Perl Foundation</a>.
 
 
+<ul>
+  <li><a href="https://grep.cpan.me/">grep.cpan.me</a> (and <a href="https://grep.metacpan.org/">grep.metacpan.org</a> when the former doesn't work)</li>
+  <li><a href="http://www.irc.perl.org">www.irc.perl.org</a> as an introduction to the Perl community on IRC</li>
+  <li><a href="http://perl6intro.com/">perl6intro.com</a> as a place to dip one's toes into the Perl 6 pool</li>
+  <li><a href="https://perl.meetup.com/">perl.meetup.com</a> run by the Meetup company.</li>
+  <li><a href="https://www.reddit.com/r/perl/">Perl on Reddit</a> and <a href="https://www.reddit.com/r/perl6/">Perl 6 on Reddit</a>. Can be useful to share links, ask Perl-related questions, or ask around why one of the other services does not work.</li> 
+</ul>
+
 
