@@ -273,5 +273,5 @@ it can be employed for <a href="/how-to-read-a-csv-file-using-perl">reading simp
 It is also a critical part of the example showing
 <a href="/count-words-in-text-using-perl">how to count words in a text file</a>.
 
-Another special case helps to <a href="/pro/split-retaining-the-separator">retain the separator or parts of it</a>.
+Another special case helps to <a href="/split-retaining-the-separator">retain the separator or parts of it</a>.
 
