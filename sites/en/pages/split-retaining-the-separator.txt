@@ -36,7 +36,7 @@ $VAR1 = [
         ];
 </code>
 
-<h2>Only what is captures is retained</h2>
+<h2>Only what is captured is retained</h2>
 
 Remember, not the separator, the substring that was matched, will be retained, but whatever is in
 the capturing parentheses.
