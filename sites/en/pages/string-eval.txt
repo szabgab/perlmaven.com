@@ -117,3 +117,9 @@ but if there is a bug in the input validation ....
 
 String-eval is very powerful and its use should be minimal and should
 be preceded by strong input validation.
+
+<h2>Alternative</h2>
+
+<a href="https://metacpan.org/pod/Module::Runtime">Module::Runtime</a> is a safer alternative for
+delayed loading of modules that does not use string-eval.
+
