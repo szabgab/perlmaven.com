@@ -8,5 +8,5 @@ my %module = (
 );
 
 if ($module{ $^O }) {
-    eval $module{ $^O };
+    eval 'use ' . $module{ $^O };
 }
