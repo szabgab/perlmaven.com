@@ -88,7 +88,7 @@ isa check for "age" failed: 'old' is not an integer! at (eval 11) line 37.
 </code>
 
 Not exactly what we expected. Apparently Moo wraps the isa-checking code in
-a string-eval of its own.
+a <a href="/string-eval">string-eval</a> of its own.
 
 Let's try the <hl>confess</hl> function of <hl>Carp</hl> then. That too
 is similar to <hl>die</hl> but it provides the full stack-trace from point
