@@ -1,0 +1,90 @@
+=title Basic Authentication without a Challenge
+=timestamp 2017-11-07T08:50:01
+=indexes LWP::UserAgent, MIME::Base64
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+In another article you can read how <a href="/lwp-useragent-and-basic-authentication">how handle Basic Authentication using LWP::Simple</a>.
+In normal circumstances when accessing a site that uses <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic Authentication</a>
+to protect some pages, you'll see a "challenge". On the HTTP level it is a <hl>401 Not Authorized</hl> response with a header containing
+
+<code>
+WWW-Authenticate: Basic realm="insert realm"
+</code>
+
+Browsers usually show a pop-up window asking for username/password.
+
+There are however sites that do not provide this challenge.
+
+=abstract end
+
+This article is originally from 2014. Since then Gittip was renamed to be Gratipay and in November 2017 it was shut down. Nevertheless the technique is still useful.
+
+
+I am not even sure if it is according to the specification of <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic Authentication</a>,
+to expect the credentials without sending the challenge but there are sites that work that way.
+
+For example, recently I was trying to implement the <a href="http://metacpan.org/pod/WWW::Gittip">Perl API client of Gittip</a>.
+The <a href="https://github.com/gittip/www.gittip.com#api">API of Gittip</a> is described in their <a href="https://github.com/gittip/www.gittip.com/">GitHub</a> repository.
+There is a request, not even documented yet to <a href="https://www.gittip.com/for/communities.json">get the communities</a>. Currently, if it is accessed without
+authentication it returns an empty list. If an authenticated user access it, it will return the list of all the communities and for each community a flag indicating if the
+current user is member of that community or not. This worked in the browser when I was logged in.
+
+It worked using <hl>curl/hl> on the command line:
+
+<code>
+curl -u 123-456: https://www.gittip.com/for/communities.json
+</code>
+
+(If the API KEY listed in <a href="https://gittip.com/about/me/account">user account</a> is 123-456, we need to use that as the "user name"
+and use an empty password. The <h>-u</hl> parameter of <hl>curl</hl> allows us to pass a username:password pair as in this example: <hl>curl -u username:password http://...</hl>)
+
+Unfortunately it did not work using <a href="/lwp-useragent-and-basic-authentication">LWP::UserAgent</a> solution.
+
+The reason that did not work is because LWP::UserAgent first tried to access the page without authentication and it received a <hl>200 OK</hl> answer with an empty list
+instead of an authentication challenge. 
+
+I took this as a personal challenge and started to read the code of LWP::Simple. First I was looking for the place where
+the method <hl>get_basic_credentials</hl> is called.
+Then I tried to determine the actual process from the place where we call the <a href="https://metacpan.org/source/MSCHILLI/libwww-perl-6.06/lib/LWP/UserAgent.pm#L407">>get</a>
+method on the UserAgent. That is a very short method that in the end calls the 
+<a href="https://metacpan.org/source/MSCHILLI/libwww-perl-6.06/lib/LWP/UserAgent.pm#L278">request</a> method.
+
+Here I noticed the code mentioned <hl>WWW-Authenticate</hl> and further looking at the code I noticed the call to
+<hl>$class->authenticate</hl> where the <hl>$class</hl> was built from <hl>LWP::Authen::$scheme</hl> The <hl>$scheme</hl> is actually "Basic" in our case
+and thus the code implementing the <hl>authenticate</hl> method is in <a href="https://metacpan.org/pod/LWP::Authen::Basic">LWP::Authen::Basic</a>.
+That's where <hl>get_basic_credentials</hl> is actually called, and that's where a new entry is added to the header of the request.
+It is the <hl>"Authorization"</hl> and the value is created by <hl>auth_header</hl> method:
+
+<code lang="perl">
+return "Basic " . MIME::Base64::encode("$user:$pass", "");
+</code>
+
+I was looking for, but I could not find a way to tell LWP::UserAgent to always send the credentials, even if there was no challenge
+so I needed another way.
+
+It turned out to be quite easy. All I had to do is to call the <hl>default_header</hl> method of the UserAgent object
+before I call the <hl>get</hl> method. The <hl>default_header</hl> method gets two parameters. The first is the name of
+the header, <hl>Authorization</hl> in our case, the second is a base64 encoded version of the "username:password" string.
+According to the API documentation, Gittip expects the API_KEY to be the username and the password to be the empty string.
+
+So this is what we had to add to our code:
+
+<code lang="perl">
+use MIME::Base64;
+$ua->default_header('Authorization',  "Basic " . MIME::Base64::encode('123-456:', '') );
+</code>
+
+This is the full script. (Of course instead of '123-345' we have to put out API_KEY there.
+
+<include file="examples/gittip.pl">
+
+<h2>Conclusion</h2>
+
+While this is certainly a working solution, I wonder if there is a better solution with the tools already built in LWP::UserAgent,
+and if not whether there should be. 
+
+
