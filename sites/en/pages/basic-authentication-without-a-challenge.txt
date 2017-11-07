@@ -33,7 +33,7 @@ There is a request, not even documented yet to <a href="https://www.gittip.com/f
 authentication it returns an empty list. If an authenticated user access it, it will return the list of all the communities and for each community a flag indicating if the
 current user is member of that community or not. This worked in the browser when I was logged in.
 
-It worked using <hl>curl/hl> on the command line:
+It worked using <hl>curl</hl> on the command line:
 
 <code>
 curl -u 123-456: https://www.gittip.com/for/communities.json
