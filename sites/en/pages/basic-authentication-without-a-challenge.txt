@@ -21,7 +21,7 @@ There are however sites that do not provide this challenge.
 
 =abstract end
 
-This article is originally from 2014. Since then Gittip was renamed to be Gratipay and in November 2017 it was shut down. Nevertheless the technique is still useful.
+<b>This article is originally from 2014. Since then Gittip was renamed to be Gratipay and in November 2017 it was shut down. Nevertheless the technique is still useful.</b>
 
 
 I am not even sure if it is according to the specification of <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic Authentication</a>,
