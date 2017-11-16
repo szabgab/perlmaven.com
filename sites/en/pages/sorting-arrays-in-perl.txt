@@ -84,7 +84,7 @@ and all the upper case letters are located earlier than the lower case letters.
 The way <hl>sort</hl> works in Perl is that it goes over every two elements of
 the original array. In every turn it puts the value from the left side into the variable <hl>$a</hl>,
 and the value on the right side in the variable <hl>$b</hl>. Then it calls a <b>comparison function</b>.
-That "comparison function" will return 1 if the content of <hl>$a</hl> should be on the left, -1 if the content of
+That "comparison function" will return -1 if the content of <hl>$a</hl> should be on the left, 1 if the content of
 <hl>$b</hl> should be on the left, or 0 if it does not matter as the two values are the same.
 
 By default you don't see this comparison function and <b>sort</b> compares the values according to the ASCII table,
@@ -99,7 +99,7 @@ This code will provide the exact same result as the one without the block: <hl>s
 Here you can see that, by default, perl uses <hl>cmp</hl> in the comparison function.
 That's because cmp is doing exactly what we need here. It compares the values on its two sides as strings,
 returns 1 if the left argument is "less than" the right argument; returns -1 if the left argument
-is "greater than" the right argument; and returns 0 if they are the same.
+is "less than" the right argument; and returns 0 if they are the same.
 
 <h2>Sorting in alphabetical order</h2>
 
