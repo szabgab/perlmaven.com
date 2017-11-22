@@ -5,11 +5,11 @@ use Text::Lorem;
 
 sub create_payload {
     my $tl = Text::Lorem->new();
-	return {
-		fname   => $tl->words(1),
-		lname   => $tl->words(1),
-		address => $tl->words(7),
-	}
+    return {
+        fname   => $tl->words(1),
+        lname   => $tl->words(1),
+        address => $tl->words(7),
+    }
 }
 
 use Data::Dumper qw(Dumper);
