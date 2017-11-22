@@ -16,13 +16,13 @@ for (1 .. $f) {
     if (not $pid) { # in the child process
         # srand();  # explicitely set srand in the child process
         for (1 .. $n) {
-	        tempdir( CLEANUP => 1, DIR => $dir );
+            tempdir( CLEANUP => 1, DIR => $dir );
         }
-		exit;
+        exit;
     }
 }
 
 for (1 .. $f ) {
-	wait;
+    wait;
 }
 rmtree $dir;
