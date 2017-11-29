@@ -22,7 +22,9 @@ I think this is a bad idea.
 
 Travis itself might not need to be concerned with the security implications of this setting for their own servers. After all the allow us to run whatever code we want on their servers. This setting, however does not reflect the harsher natural environment your code will run in and thus the setting will hide issues you might have with your code. In other words. Tests might pass on Perl 5.26 on Travis-CI, but not on a Perl 5.26 out in the wild.
 
-IMHO Travis should remove the <hl>PERL_USE_UNSAFE_INC=1</hl> from the Perl environments to make it more similar to real world environments.
+IMHO Travis should remove the <hl>PERL_USE_UNSAFE_INC=1</hl> from the Perl environments to make it more similar to real world environments. I've <a href="https://github.com/travis-ci/travis-ci/issues/8822">asked them</a> to do so.
+
+At least they should mention this in the documentation of <a href="https://docs.travis-ci.com/user/languages/perl/">Perl on Travis-CI</a>.
 
 In the meantime you can add the following entry to your <hl>.travis.yml</hl> file. That will remove "." from @INC in Perl 5.26 and higher.
 
