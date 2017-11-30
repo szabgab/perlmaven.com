@@ -31,7 +31,7 @@ env:
   - PERL_USE_UNSAFE_INC=0
 </code>
 
-I think I also need to apologize to Travis as I blamed this issue on them incorrectly.
+I think I also need to apologize to Travis as in the original version of this blog post I blamed this issue on them incorrectly.
 
 I have no idea why does Test::Harness set this environment and unfortunately the <a href="https://github.com/Perl-Toolchain-Gang/Test-Harness/blob/62688b0c26fedf4760e809ef90186c47d2307b96/Changes">Changes</a> only include the fact of the change, but not the reason why is this envrionemnt variable set?
 
