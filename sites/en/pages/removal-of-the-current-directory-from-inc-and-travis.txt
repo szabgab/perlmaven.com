@@ -14,24 +14,27 @@ due to security concerns in Perl 5.26 it was removed. That means code that relie
 The Perl delta explains
 <a href="https://metacpan.org/pod/release/XSAWYERX/perl-5.26.0/pod/perldelta.pod#Removal-of-the-current-directory-%28%22.%22%29-from-@INC">how to deal with the removal</a> safely and not so safely.
 
-It seems as of 29 November 2017 <a href="https://travis-ci.org/">Travis-CI</a> sets the <hl>PERL_USE_UNSAFE_INC</hl> environment variable to 1 that tells Perl to add "." back to <hl>@INC</hl> restoring the potential security issue.
+As of 29 November 2017 when you use <a href="https://travis-ci.org/">Travis-CI</a>, the leading Continuous Integration system of the Open Source world, you will see that the <hl>PERL_USE_UNSAFE_INC</hl> environment variable was set to 1 that tells Perl to add "." back to <hl>@INC</hl> restoring the potential security issue. This is however, as I learned after <a href="https://github.com/travis-ci/travis-ci/issues/8822">reporting the issue</a>, is not done by Travis itself. It was done by <a href="https://metacpan.org/pod/Test::Harness">Test::Harness</a> that is used in the "make test" phase.
 
 I think this is a bad idea.
 
 =abstract end
 
-Travis itself might not need to be concerned with the security implications of this setting for their own servers. After all the allow us to run whatever code we want on their servers. This setting, however does not reflect the harsher natural environment your code will run in and thus the setting will hide issues you might have with your code. In other words. Tests might pass on Perl 5.26 on Travis-CI, but not on a Perl 5.26 out in the wild.
+This setting, unfortunately does not reflect the harsher natural environment your code will run in and thus the setting will hide issues you might have with your code. In other words. Tests might pass on Perl 5.26 on Travis-CI and on your local test environment, but not on a Perl 5.26 out in the wild.
 
-IMHO Travis should remove the <hl>PERL_USE_UNSAFE_INC=1</hl> from the Perl environments to make it more similar to real world environments. I've <a href="https://github.com/travis-ci/travis-ci/issues/8822">asked them</a> to do so.
+As it turns out Test::Harness will <a href="https://github.com/Perl-Toolchain-Gang/Test-Harness/blob/62688b0c26fedf4760e809ef90186c47d2307b96/lib/Test/Harness.pm#L150">only set PERL_USE_UNSAFE_INC if it is not defined yet</a>. This means that if you set <hl>PERL_USE_UNSAFE_INC=0</hl> in your <hl>.travis.yml</hl> file that will remove "." from @INC in Perl 5.26. At least as long as Test::Harness will take that in account.
 
-At least they should mention this in the documentation of <a href="https://docs.travis-ci.com/user/languages/perl/">Perl on Travis-CI</a>.
-
-In the meantime you can add the following entry to your <hl>.travis.yml</hl> file. That will remove "." from @INC in Perl 5.26 and higher.
+You can and probably also should set <hl>PERL_USE_UNSAFE_INC=0</hl> on your development and testing machines to make them more similar to real world environments. 
 
 <code>
 env:
   - PERL_USE_UNSAFE_INC=0
 </code>
 
-BTW There are plenty of way to <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">change @INC to find Perl modules in non-standard locations</a> or in a <a href="/beginner-perl-maven-changing-inc-relative-path">relative directory</a> without compromising the security of your system.
+I think I also need to apologize to Travis as I blamed this issue on them incorrectly.
+
+I have no idea why does Test::Harness set this environment and unfortunately the <a href="https://github.com/Perl-Toolchain-Gang/Test-Harness/blob/62688b0c26fedf4760e809ef90186c47d2307b96/Changes">Changes</a> only include the fact of the change, but not the reason why is this envrionemnt variable set?
+
+
+In any case, there are plenty of way to <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">change @INC to find Perl modules in non-standard locations</a> or in a <a href="/beginner-perl-maven-changing-inc-relative-path">relative directory</a> without compromising the security of your system.
 
