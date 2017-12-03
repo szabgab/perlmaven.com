@@ -1,0 +1,70 @@
+=title Virtualenv in Perl 5 - install 2 different versions of the same module
+=timestamp 2016-12-03T07:30:01
+=indexes cpanm, cpanminus
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Virtualenv is a great tool in Python that allows the user to separate the 3rd-part package installations of various projects.
+
+When we have multiple projects on the same system using the same modules but requiring different versions we have a problem.
+
+We need to be able to install two different version of the same module. Perl 5 does not provide a way to do this.
+
+=abstract end
+
+<h2>The solution with CPAN Minus</h2>
+
+<code>
+cd project_root/
+
+export PERL5LIB=venv/lib/perl5
+export PATH=venv/bin/:$PATH
+cpanm -l venv/ --installdeps .
+</code>
+
+CPAN Minus is one of the clients of CPAN that makes module installation easy. We just type in
+
+<code>
+cpanm Module::Name
+</code>
+
+and it will install the module.
+
+If we have a <hl>Makefile.PL</hl> that lists all the dependencies of our project we can then use
+
+<code>
+cpanm --installdeps .
+</code>
+
+to install all the dependencies of our project.
+
+Using the <hl>-l</hl> flag we can tell <hl>cpanm</hl> where to install the modules.
+
+If we would like to use the <hl>venv</hl> (any arbitrary directory name would work) directory
+inside the root of our project we can pass <hl>-l venv</hl> to <hl>cpanm</hl> and it will
+install the modules in that directory.
+
+We also want to make sure the modules that were installed can be found.
+This is important any time a module is to be used, including when it is used during
+the installation of another module depending on it.
+So we assign the appropriate value relative to the <hl>venv</hl> directory:
+
+<code>
+export PERL5LIB=venv/lib/perl5
+</code>
+
+<b>before</b> we try to install modules.
+
+
+Finally, some modules will install executables in the <hl>venv/bin</hl> directory.
+We would want the command line to find them:
+
+<code>
+export PATH=venv/bin/:$PATH
+</code>
+
+
