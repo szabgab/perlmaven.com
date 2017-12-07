@@ -1,0 +1,106 @@
+=title Open file to read and write in Perl, oh and lock it too
+=timestamp 2017-12-07T07:30:01
+=indexes open, flock, seek, truncate, Fcntl, SEEK_END
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+If you don't have time to read this, just use
+
+<code lang="perl">
+open my $fh, '+<', $filename or die;
+</code>
+
+If you have time, read on.
+
+In most cases when you need to updated a file the best strategy is to read the entire file into memory,
+make the changes and then write the whole file back. Well, of course unless the file is too big, which is
+a separate story.
+
+=abstract end
+
+In most of these cases it is ok to
+<ol>
+   <li><a href="/open-and-read-from-files">open the file for reading</a></li>
+   <li><a href="/slurp">read the whole content</a></li>
+   <li>make changes in memory</li>
+   <li>open the file again, this time <a href="/writing-to-files-with-perl">for writing</a></li>
+   <li>write out the whole content</li>
+</ol>
+
+However, sometimes you need to make this operation "atomic", that is, you need to make sure
+no other process will change the file while your are changing it.
+
+OK, so just to clarify, you pobably <b>never</b> want other process to modify the file
+while you do it, but in most cases you don't have to worry about that as no other processes
+are dealing with the file.
+
+What happens when there are competing processes? Even if that is the same script?
+
+This script is a counter that for every invocation increases the number in the <hl>counter.txt</hl>
+file by one and prints it to the screen:
+
+<include file="examples/counter_plain.pl">
+
+Create a file called <hl>counter.txt</hl> with a single 0 in it and then run:
+
+<code>
+perl counter_plain.pl
+</code>
+
+several times. You'll see the number incremented as expected.
+
+What if several people invoke the script at the same time?
+
+To demonstrate that we will run the script 1000 times in two seperate windows.
+
+IF you are using Linux or Mac you can use the following Bash snippet:
+
+<code>
+for x in {1..1000}; do perl counter_plai.pl; done
+</code>
+
+I have not tried this on Windows, and because it has a different file-locking methodology
+the results might be totally different.
+
+If you execute the above command in two terminals at more or less the same time, you'll
+see the numbers progressing, but they'll not reach 2,000. They might even get reset
+to 1 from time-to-time as the file operations of two instances of the script collide.
+
+<h2>Locking</h2>
+
+On Unix-like operating systems, such as Linux and OSX, we can use the native file locking mechnism
+via the <hl>flock</hl> function of Perl.
+
+For this however we need to open the file for both reading and writing.
+
+<include file="examples/counter_lock.pl">
+
+In this script we
+<ol>
+  <li>Open the file for reading and writing</li>
+  <li>Ask for an exclusive lock on it. (Wait till we get it).</li>
+  <li>Read the file content.</li>
+  <li>Make the changes in memory. (increment by 1)</li>
+  <li>Rewind the filehandle to the beginning using the <hl>seek</hl> function.</li>
+  <li>Remove the content of the file using <hl>truncate</hl>.</li>
+  <li>Write the new content</li>
+  <li><hl>close</hl> the file (and by that free the lock)</li>
+</ol>
+
+We could not open the file separately once for reading and once for writing,
+the closing of the filehandle always frees the lock. So the other instance of our script
+might come between the two open calls in our instance.
+
+We needed to rewind the filehandle (using <hl>seek</hl>) so we write the new content at the beginning of the file and not
+at the end.
+
+In this case we did not have to <hl>truncate</hl> the file as the new content is never going to be shorter than
+the old content (after all the numbers are only incrementing), but in the general case it is a better practice.
+It will ensure that we don't have left-over content from the previous version of the file.
+
+If you try to run this script 1,000 each in two separate windows you'll see it reaches 2,000 as expected.
+
