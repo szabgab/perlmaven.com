@@ -265,6 +265,11 @@ There's no real documentation for these, primarily because I doubt that
 my workflow is appealing to other people.
 </i>
 
+See also the <a href="https://github.com/glasswalk3r/cpan-openbsd-smoker">CPAN OpenBSD Smoker</a>
+and the <a href="https://github.com/glasswalk3r/docker-metabase-relayd">Docker Metabase Relayd</a>.
+Both by Alceu Rodrigues de Freitas Junior.
+
+
 <h2>CPANTS - A CPAN Testing Service</h2>
 
 (Unrelated to CPAN Testers above!)
