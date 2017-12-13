@@ -1,0 +1,135 @@
+=title Modulino: both script and module in Perl
+=timestamp 2017-12-13T08:30:01
+=indexes use, caller
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+In the Python world it is quite straight forward to make files work either as executables or as modules.
+In Perl it is a bit strange, but doable.
+
+brian d foy has written a number of <a href="https://www.masteringperl.org/category/chapters/modulinos/">articles about Modulinos</a>,
+but in nutshell a Modulino is a Perl file that can act both as an executable (a script that you would invoke directly)
+or as a module (Something you load into memory and expect to execute code only when you call one of its functions or
+methods).
+
+=abstract end
+
+The way to implement this in Perl is to put every executable code inside function and leave only the following statement in the main body of your code:
+
+<code lang="perl">
+main() if not caller();
+</code>
+
+assuming you have a function called <hl>main</hl> that implements the behavior you'd want to see when the file is
+executed as a stand-alone script.
+
+Here is an example to demonstrate the concept:
+
+<include file="examples/modulino.pm">
+
+If we run it as a script we will have the following output:
+
+<code>
+$ perl modulino.pm
+Hello from main() of modulino.pl
+</code>
+
+If we load it as a module, it will generate no output:
+
+<code>
+$ perl -Mmodulino -e1
+</code>
+
+that's because it will not execute the <hl>main()</hl> function.
+
+However, we can use its functions:
+
+<code>
+$ perl -Mmodulino -e"main()"
+Hello from main() of modulino.pl
+</code>
+
+We can also use it inside another script:
+
+<include file="examples/modulino_user.pl">
+
+<code>
+$ perl modulino_user.pl
+Hello from main() of modulino.pl
+</code>
+
+<h2>What is this caller ?</h2>
+
+To quote from its documentation:
+
+<q>The caller function of Perl returns the context of the current pure perl subroutine call.
+In scalar context, returns the caller's package name if there is a caller 
+(that is, if we're in a subroutine or "eval" or "require") and the undefined value otherwise.</q>
+
+In other words, when we execute the file directly <hl>caller</hl> returns <hl>undef</hl>, but when
+we load it with a <hl>use</hl> statement (which is just a wrapper around <hl>require</hl>) then
+it will have some value other than undef. Something <a href="/boolean-values-in-perl">true</a>.
+
+The <hl>caller</hl> function has other uses as well, but for our purposes this is what we need to know about it.
+
+<h2>Modulino with print</h2>
+
+In case you'd like to look at another example to see how this works check out this one:
+
+<include file="examples/modulino_with_print.pm">
+
+Here we have an extra print-statement in the main body of the file.
+
+When executing directly we see both lines:
+
+<code>
+$ perl modulino_with_print.pm
+Hello from the body of modulino.pl
+Hello from main() of modulino.pl
+</code>
+
+When loaded as a module, only the one in the body of the file is executed.
+
+<code>
+$ perl -Mmodulino_with_print  -e1
+Hello from the body of modulino.pl
+</code>
+
+BTW, that's one of the reasons it is not recommended to put any code outside of functions. Especially not in modules.
+
+<h2>Modulino in a package</h2>
+
+To show yet another case, here we can see that we can use the same trick in a namespace as well:
+
+<include file="examples/MyModulino.pm">
+
+In this case we have our code inside a <a href="/search/package">package</a>.
+This is how the output looks like if we try to run it directly:
+
+<code>
+$ perl MyModulino.pm
+
+Hello from main() of modulino.pl
+</code>
+
+We can create a script using the module:
+
+<include file="examples/use_my_modulino.pl">
+
+And this is its output if we run the script:
+
+<code>
+$ perl use_my_modulino.pl
+
+before
+Hello from main() of modulino.pl
+after
+</code>
+
+If we did not call <hl>MyModulino::hi();</hl> we would only see the "before" and "after" lines.
+
+
