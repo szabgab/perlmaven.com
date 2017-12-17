@@ -1,4 +1,4 @@
-=title How to dereference a reference to a hash or to an array in Perl?
+=title How to dereference a reference to a hash or to an array in Perl
 =timestamp 2017-12-17T08:30:01
 =indexes HASH, ARRAY, @$, %$, $$
 =status show
