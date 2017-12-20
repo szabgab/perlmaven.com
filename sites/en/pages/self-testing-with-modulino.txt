@@ -1,0 +1,79 @@
+=title Self testing Perl modules using the Modulino concept
+=timestamp 2017-12-20T14:30:01
+=indexes Test::More, tests, modulino
+=status show
+=books testing
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Earlier we saw how to create a <a href="/modulino-both-script-and-module">modulino which is both a module and a script</a>.  In this example we'll see how to use this feature, to create a file that can include its own unit-tests.
+
+=abstract end
+
+We are going to create a module called <b>SelfTestingCalc.pm</b>  and a script called <b>use_self_testing_calc.pl</b>.
+The latter looks like any other Perl script. It loads a module importing a function and then calls that function.
+Nothing special:
+
+<include file="examples/use_self_testing_calc.pl">
+
+If we run this script we see the result printed on the screen:
+<code>
+$ perl use_self_testing_calc.pl
+7
+</code>
+
+On the other hand, if we try to "run" the module we see the same <a href="/tap-test-anything-protocol">Test Anything output</a> as we would see if we ran a <a href="/testing-a-simple-perl-module">unit test</a>.
+Including potential test failures:
+
+<code>
+$ perl SelfTestingCalc.pm
+1..4
+ok 1
+ok 2
+not ok 3
+#   Failed test at SelfTestingCalc.pm line 24.
+#          got: '42'
+#     expected: '0'
+ok 4
+# Looks like you failed 1 test of 4.
+</code>
+
+The source code of the module is here:
+
+<include file="examples/SelfTestingCalc.pm">
+
+The first part of the module is exactly the same as we would write any "normal" module.
+Well, maybe except of the fact that I added a deliberate error case in the <hl>add</hl> function
+just so I can show you a test failure.
+
+The difference is that we also have a <hl>self_test</hl> function and then we call this function
+at the bottom of our module if it is <a href="/modulino-both-script-and-module">executed as a script</a>
+
+In the <hl>self_test</hl> function we write almost exactly the same as we would write in an external
+test file discussed in the <a href="/testing">testing series</a>.
+
+There are two differences:
+
+One is that we load the module using the run-time <a href="/use-require-import">require</a> and the
+<a href="/use-require-import">import</a>, instead of the compile-time <a href="/use-require-import">use</a> statement.
+
+The other is that we have to put parentheses after each one of the functions imported from the <a href="https://metacpan.org/pod/Test::More">Test::More</a> module such as <hl>plan</hl>, <hl>ok</hl>, <hl>is</hl>, <hl>like</hl>, ...
+
+
+<h2>Why write self testing modules?</h2>
+
+Just as having documentation embedded in the module in <a href="/pod-plain-old-documentation-of-perl">pod</a> format will ensure that the code is not distributed without documentation, having test-code embedded in the module will also make sure you can always test the module.
+
+Despite this advantage of course the need to compile this extra code on every invocation of the module might make some people feel uncomfortable and this does not provide a clear suggestion where to put cross-module tests, but this certainly can be an option. Especially in projects where the directory layout is different from the <a href="/distribution-directory-layout">"standard Perl project layout"</a>.
+
+
+
+
+
+
+
+
+

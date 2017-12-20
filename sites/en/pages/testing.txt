@@ -63,5 +63,6 @@ A series of articles about testing, and test automation using Perl.
 <h2>Other</h2>
 <ul>
   <li><a href="/pro/testing-perl-cgi">Testing Perl CGI</a></li>
+  <li><a href="/self-testing-with-modulino">Self testing Perl modules using the Modulino concept</a></li>
 </ul>
 
