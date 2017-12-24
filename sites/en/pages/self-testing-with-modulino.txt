@@ -70,7 +70,7 @@ Just as having documentation embedded in the module in <a href="/pod-plain-old-d
 Despite this advantage of course the need to compile this extra code on every invocation of the module might make some people feel uncomfortable and this does not provide a clear suggestion where to put cross-module tests, but this certainly can be an option. Especially in projects where the directory layout is different from the <a href="/distribution-directory-layout">"standard Perl project layout"</a>.
 
 
-<h2>More about self testing Modulinos<h2>
+<h2>More about self testing Modulinos</h2>
 
 Read more about self testing Modulionos in 
 <a href="https://www.amazon.com/gp/product/144939311X/?tag=szabgab-20">Mastering Perl</a> by brian d foy who coined the term.
