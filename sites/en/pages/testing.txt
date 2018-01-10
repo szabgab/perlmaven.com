@@ -22,7 +22,7 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/testing-a-tree-data-structure-in-perl">Testing a tree data structure in Perl (Test::Deep)</a></li>
   <li><a href="/pro/testing-for-no-warnings">Testing for no warnings in Perl</a></li>
   <li><a href="/self-testing-with-modulino">Self testing Perl modules using the Modulino concept</a></li>
-  <li><a href="/pro/testing-perl-cgi">Testing Perl CGI</a></li>
+  <li><a href="/testing-perl-cgi">Testing Perl CGI</a></li>
 </ol>
 
 <h2>Interviews</h2>

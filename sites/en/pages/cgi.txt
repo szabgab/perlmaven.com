@@ -41,6 +41,6 @@ Alternatively you can install <a href="/psgi">PSGI</a> and if you have no better
   <li><a href="/simple-cgi-script-to-send-form-by-email">Simple CGI Perl script to send form by e-mail</a></li>
   <li><a href="/hello-world-with-plain-cgi">Hello World with plain CGI</a></li>
   <li><a href="/echo-with-plain-cgi">Echo with plain CGI</a></li>
-  <li><a href="/pro/testing-perl-cgi">Testing Perl CGI</a></li>
+  <li><a href="/testing-perl-cgi">Testing Perl CGI</a></li>
 </ul>
 
