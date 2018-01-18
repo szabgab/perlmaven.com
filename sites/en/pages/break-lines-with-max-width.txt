@@ -22,9 +22,9 @@ or in other words, she has some long text and she wants to make sure every row i
 Using <a href="/perl-split">split</a> might work, but we are not really looking for
 splitting up the the text along every space. We are looking for the right-most space in the first 100 characters.
 
-In Python there is an <a href="http://edumaven.com/python-programming/rindex-in-string-range">rindex</a> function that will
+In Python there is an <a href="https://code-maven.com/slides/python-programming/rindex-in-string-range">rindex</a> function that will
 accept a range. So we could easily find the right-most white-space within the first 100 characters using <hl>text.rindex(' ', 0, 100)</hl>
-and then we can get the appropriate prefix of the original text using the <a href="http://edumaven.com/python-programming/string-slice">string slice notation</a>.
+and then we can get the appropriate prefix of the original text using the <a href="https://code-maven.com/slides/python-programming/string-slice">string slice notation</a>.
 
 In Perl there is also an <a href="/string-functions-length-lc-uc-index-substr">rindex</a> function to return the right-most location
 of a substring, but it only accepts a starting position. In order to limit the search to only a part of the original string we can use
