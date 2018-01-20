@@ -1,6 +1,6 @@
 Chinese Translation of https://perlmaven.com/  hosted at https://cn.perlmaven.com/
 
-For further information check out the README file of https://github.com/szabgab/perl5maven.com
+For further information check out the README file of https://github.com/szabgab/perlmaven.com
 
 ### Workflow
 

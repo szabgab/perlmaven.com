@@ -1,6 +1,6 @@
 Chinese Translation of https://perlmaven.com/  hosted at https://tw.perlmaven.com/
 
-For further information check out the README file of https://github.com/szabgab/perl5maven.com
+For further information check out the README file of https://github.com/szabgab/perlmaven.com
 
 -->8-- 中文說明分隔線 --8<--
 
@@ -9,7 +9,7 @@ For further information check out the README file of https://github.com/szabgab/
 1. 要有 github 帳號，並且在 perltaiwan organization 內
   - 回個推文報一下 github 帳號我可以加入各位
 
-2. clone https://github.com/perltaiwan/perl5maven.com 下來
+2. clone https://github.com/perltaiwan/perlmaven.com 下來
 
 3. sites/ 底下依語言分目錄, en/ 是原作。
    在 sites/en/pages/ 底下有許多 .tt 檔，是文章原始檔。
@@ -33,7 +33,7 @@ For further information check out the README file of https://github.com/szabgab/
 
 7. 把自已的 id 跟資料加入 tw/authors.txt 裡
 
-8. 送 pull request 到 szabgab/perl5maven.com，通知 @szabgab 編新版
+8. 送 pull request 到 szabgab/perlmaven.com，通知 @szabgab 編新版
 
 9. 在 https://tw.perlmaven.com 可以看到成品
 

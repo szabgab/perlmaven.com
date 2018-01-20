@@ -34,7 +34,7 @@ Le righe di codice sono all'interno dei tag
 
 TRADUZIONI
 -------------
-La repository https://github.com/szabgab/perl5maven.com archivia tutto il materiale tradotto
+La repository https://github.com/szabgab/perlmaven.com archivia tutto il materiale tradotto
 per Perl Maven per l'Italiano.
 
 PROMOZIONE
@@ -72,7 +72,7 @@ Aggiungi una tua immagine 128x128 nella directory img/ .
 TRADUZIONI - LOCALIZZAZIONI
 ---------------------------
 Qui c'è l'inizio delle traduzioni del Portoghese Brasiliano 
-https://github.com/szabgab/perl5maven.com repository.
+https://github.com/szabgab/perlmaven.com repository.
 
 *) I nomi file (che diventano URLs) dovranno essere nella LINGUA_LOCALE (LOCAL_LANGUAGE), ma occorrerà usare solo caratteri ASCII.
    Traslitterato in inglese. (Non sono sicuro di questo. Potrebbe essere meglio usare i caratteri LOCAL_LANGUAGE nell' URLs?)
