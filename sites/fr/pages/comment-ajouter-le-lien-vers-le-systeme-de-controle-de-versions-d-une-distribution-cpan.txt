@@ -24,7 +24,7 @@ Comme les fichiers META sont généralement générés automatiquement lorsque l
 je vais vous montrer comment vous pouvez configurer les quatre principaux systèmes d'empaquetage pour inclure le champ dépôt.
 
 Dans les exemples ci-dessous, je vais utiliser le lien vers le dépôt de <a href="https://metacpan.org/pod/Task::DWIM">Task::DWIM</a>
-qui est une distribution expérimentale qui liste tous les modules inclus dans la distribution <a href="http://dwimperl.com/">DWIM Perl</a>.
+qui est une distribution expérimentale qui liste tous les modules inclus dans la distribution <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>.
 
 <h2>ExtUtils::MakeMaker</h2>
 

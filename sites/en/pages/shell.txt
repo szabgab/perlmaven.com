@@ -11,7 +11,7 @@ While this site is primarily about Perl programming, a real Perl Maven needs to 
 Bash, one of the most commonly used Unix/Linux shell language. 
 
 I am not a frequent Shell-script writer, but for example I needed this for the
-build script of <a href="http://dwimperl.com/linux.html">DWIM Perl for Linux</a>.
+build script of <a href="http://dwimperl.szabgab.com/linux.html">DWIM Perl for Linux</a>.
 
 =abstract end
 

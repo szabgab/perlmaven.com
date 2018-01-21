@@ -24,11 +24,11 @@ Kita juga akan melihat contoh sederhana penulisan "Hello World".
 
 <h2>Windows</h2>
 
-Untuk Windows, kita akan menggunakan <a href="http://dwimperl.com/">DWIM Perl</a>. Ia merupakan sebuah paket
+Untuk Windows, kita akan menggunakan <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>. Ia merupakan sebuah paket
 yang mengandung Perl compiler / interpreter, <a href="http://padre.perlide.org/">Padre, IDE untuk Perl</a>
 dan sejumlah ekstensi tambahan dari CPAN.
 
-Untuk memulai silahkan kunjungi <a href="http://dwimperl.com/">DWIM Perl</a>
+Untuk memulai silahkan kunjungi <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>
 dan ikuti tautan untuk mengunduh <b>DWIM Perl untuk Windows</b>.
 
 Lalu, unduh berkas exe-nya dan instal di komputer Anda. Sebelumnya,

@@ -36,7 +36,7 @@ PSGI-tabanlı uygulamanın önünde CGI kullanırsınız
 Yükleme işleminin nasıl yapılacağı konusunda <a href="/how-to-install-a-perl-module-from-cpan">detaya</a> girmeyeceğim, genel
 olarak konsola <hl>cpan Plack</hl> ya da <hl>cpanm Plack</hl> yazarak yapabilirsiniz.
 
-Eğer Windows kullanıyorsanız <a href="http://dwimperl.com/">DWIM Perl for Windows</a> sürümü
+Eğer Windows kullanıyorsanız <a href="http://dwimperl.szabgab.com/">DWIM Perl for Windows</a> sürümü
 Plack modülünü içermektedir.
 
 <h2>İlk script</h2>

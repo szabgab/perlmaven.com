@@ -23,9 +23,9 @@ Também vamos conferir o clássico exemplo do “Olá Mundo”.
 
 <h2>Windows</h2>
 
-Para trabalhar no Windows iremos utilizar o pacote <a href="http://dwimperl.com/">DWIM Perl</a>. Nele podemos encontrar o tradicional compilador/interpretador perl, a IDE de desenvolvimento PADRE, escrita em Perl e mais um conjunto de extensões presentes no <a href="http://padre.perlide.org/">CPAN.</a>
+Para trabalhar no Windows iremos utilizar o pacote <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>. Nele podemos encontrar o tradicional compilador/interpretador perl, a IDE de desenvolvimento PADRE, escrita em Perl e mais um conjunto de extensões presentes no <a href="http://padre.perlide.org/">CPAN.</a>
 
-Para que possamos começar, entre na página do <a href="http://dwimperl.com/">DWIM Perl</a> e clique no link para realizar o Download do <b>DWIM Perl for Windows</b>.
+Para que possamos começar, entre na página do <a href="http://dwimperl.szabgab.com/">DWIM Perl</a> e clique no link para realizar o Download do <b>DWIM Perl for Windows</b>.
 
 Baixe para a sua máquina o executável <i>.exe</i> e instale-o em seu sistema. Antes de prosseguir com a instalação certifique-se de que não há outras versões do Perl instaladas.
 

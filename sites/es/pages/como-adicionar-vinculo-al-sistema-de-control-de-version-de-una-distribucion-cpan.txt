@@ -27,7 +27,7 @@ por el autor, voy a mostrarte como puedes decir a los 4 sistemas de paquetes pri
 incluir el enlace del repositorio.
 
 En los ejemplos utilizare el enlace al repositorio de <a href="https://metacpan.org/pod/Task::DWIM"> Task::DWIM</a>,
-que es una distribución experimental listado todos los módulos incluidos en una <a href="http://dwimperl.com/"> DWIM Perl</a>
+que es una distribución experimental listado todos los módulos incluidos en una <a href="http://dwimperl.szabgab.com/"> DWIM Perl</a>
 distribución.
 
 

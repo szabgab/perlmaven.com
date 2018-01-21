@@ -25,7 +25,7 @@ Github 或是其他用來放置他們專案之處。
 元文件通常在作者發佈模組的時候自動產生，這裡要告訴你如何讓四個主要的打包系統包含倉儲的連結。
 
 這個範例中我使用 <a href="https://metacpan.org/pod/Task::DWIM">Task::DWIM</a> 的倉儲連結
-這是一個實驗性質的模組，列出了所有 <a href="http://dwimperl.com/">DWIM Perl</a> 所含的模組。
+這是一個實驗性質的模組，列出了所有 <a href="http://dwimperl.szabgab.com/">DWIM Perl</a> 所含的模組。
 
 <h2>ExtUtils::MakeMaker</h2>
 

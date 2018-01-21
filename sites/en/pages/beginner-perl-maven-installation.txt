@@ -12,7 +12,7 @@
 Welcome to the <a href="/beginner-perl-maven-video-course">Beginner Perl Maven course</a>.
 
 Let's see how to install Perl on Windows. This still shows the "Padre on Strawberry Perl" package even
-though it was already superseded by <a href="http://dwimperl.com/windows.html">DWIM Perl for Windows</a>.
+though it was already superseded by <a href="http://dwimperl.szabgab.com/windows.html">DWIM Perl for Windows</a>.
 
 =abstract end
 
@@ -23,7 +23,7 @@ though it was already superseded by <a href="http://dwimperl.com/windows.html">D
   <li><a href="http://www.activestate.com/">ActiveState</a></li>
   <li><a href="http://strawberryperl.com/">Strawberry Perl</a></li>
   <li><a href="http://padre.perlide.org/">Padre, the Perl IDE</a></li>
-  <li><a href="http://dwimperl.com/">DWIM Perl</a></li>
+  <li><a href="http://dwimperl.szabgab.com/">DWIM Perl</a></li>
 </ul>
 
 See also:

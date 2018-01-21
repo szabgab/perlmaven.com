@@ -60,7 +60,7 @@ estará desatualizado alguns anos.
 Existe um número de distribuições Perl no Windows.
 
 Atualmente eu recomendo a distribuição <a
-href="http://dwimperl.com/windows.html">DWIM Perl para Windows</a>.  É uma
+href="http://dwimperl.szabgab.com/windows.html">DWIM Perl para Windows</a>.  É uma
 derivada da muito bem sucedida distribuição <a
 href="http://strawberryperl.com/">Strawberry Perl</a> com centenas de módulos
 extra do Perl, provenientes do CPAN. (Nota de esclarecimento: Eu sou o

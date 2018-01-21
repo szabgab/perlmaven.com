@@ -24,11 +24,11 @@ We will also see the standard "Hello World" example.
 
 <h2>Windows</h2>
 
-For Windows we are going to use <a href="http://dwimperl.com/">DWIM Perl</a>. It is a package
+For Windows we are going to use <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>. It is a package
 that contains the Perl compiler/interpreter, <a href="http://padre.perlide.org/">Padre, the Perl IDE</a>
 and a number of extensions from CPAN.
 
-In order to get started visit the website of <a href="http://dwimperl.com/">DWIM Perl</a>
+In order to get started visit the website of <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>
 and follow the link to download <b>DWIM Perl for Windows</b>.
 
 Go ahead, download the exe file and install it on your system. Before doing so,

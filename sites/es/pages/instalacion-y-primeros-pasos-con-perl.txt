@@ -25,11 +25,11 @@ Veremos el típico ejemplo "Hola mundo".
 
 <h2>Windows</h2>
 
-Para Windows usaremos <a href="http://dwimperl.com/">DWIM Perl</a>. Es un paquete
+Para Windows usaremos <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>. Es un paquete
 que contiene el compilador/interprete de Perl, <a href="http://padre.perlide.org/">Padre, el IDE Perl</a>
 y unas cuantas extensiones de CPAN.
 
-Para empezar entra en <a href="http://dwimperl.com/">DWIM Perl</a>
+Para empezar entra en <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>
 y pincha en el enlace para descargar <b>DWIM Perl para Windows</b>.
 
 Continua, descarga el fichero exe e instálalo en tu sistema. Antes de hacerlo

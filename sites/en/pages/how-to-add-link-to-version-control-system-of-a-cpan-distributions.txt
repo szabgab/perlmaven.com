@@ -26,7 +26,7 @@ by the author, I am going to show you how you can tell the 4 main packaging syst
 to include the repository link.
 
 In the examples I'll use the link to the repository of <a href="https://metacpan.org/pod/Task::DWIM">Task::DWIM</a>,
-which is an experimental distribution listing all the modules included in a <a href="http://dwimperl.com/">DWIM Perl</a>
+which is an experimental distribution listing all the modules included in a <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>
 distribution.
 
 <h2>ExtUtils::MakeMaker</h2>

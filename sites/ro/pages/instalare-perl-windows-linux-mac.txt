@@ -22,10 +22,10 @@ De asemenea vom vedea cum se implementează faimosul program "Hello World" în P
 
 <h2>Windows</h2>
 
-Pentru Windows vom folosi <a href="http://dwimperl.com/">DWIM Perl</a>. Este un pachet care conține compilatorul/interpretorul de Perl,
+Pentru Windows vom folosi <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>. Este un pachet care conține compilatorul/interpretorul de Perl,
 <a href="http://padre.perlide.org/">Padre, IDE-ul pentru Perl</a>, precum și un număr de extensii din CPAN.
 
-Pentru început, du-te la site-ul <a href="http://dwimperl.com/">DWIM Perl</a>
+Pentru început, du-te la site-ul <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>
 și dă click pe linkul de download cu titlul <b>DWIM Perl for Windows</b>.
 
 Downloadează fișierul executabil și instalează-l la tine pe calculator. Înainte de asta, asigură-te că nu mai ai nici o versiune de Perl instalată.

@@ -116,6 +116,6 @@ Installing the necessary modules can take quite a lot of time, and some of them 
 to be <a href="/install-perl-modules-without-root-rights-on-linux-ubuntu-13-10">installed as root</a>.
 
 If you don't really want to build your own perl and spend hours installing tons of modules, 
-you can just download install <a href="http://dwimperl.com/linux.html">DWIM Perl for Linux</a> which is a
+you can just download install <a href="http://dwimperl.szabgab.com/linux.html">DWIM Perl for Linux</a> which is a
 "batteries included" binary distribution of perl.
 

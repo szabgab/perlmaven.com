@@ -24,11 +24,11 @@ Wir werden auch das Standard-Beispiel "Hallo Welt" sehen.
 
 <h2>Windows</h2>
 
-Für Windows werden wir <a href="http://dwimperl.com/">DWIM-Perl</a> benutzen. Das ist
+Für Windows werden wir <a href="http://dwimperl.szabgab.com/">DWIM-Perl</a> benutzen. Das ist
 ein Paket, welches den Perl Compiler/Interpreter, <a href="http://padre.perlide.org/">Padre, die Perl-Entwicklungsumgebung</a>
 und eine Sammlung von CPAN-Erweiterungen enthält.
 
-Um loslegen zu können, besuche die Webseite von <a href="http://dwimperl.com/">DWIM Perl</a>
+Um loslegen zu können, besuche die Webseite von <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>
 und folgen dem Link zum Download von <b>DWIM Perl for Windows</b>.
 
 Lade die exe-Datei herunter und installiere sie auf Deinem System.
