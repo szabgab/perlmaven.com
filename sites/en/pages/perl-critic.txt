@@ -20,7 +20,7 @@ In this article we collect <b>all</b> the CPAN distributions related to Perl::Cr
 <h2>Articles</h2>
 
 <ul>
-  <li><a href="/pro/getting-started-with-perl-critic">Getting Started with Perl::Critic (the linter for Perl)</a></li>
+  <li><a href="/getting-started-with-perl-critic">Getting Started with Perl::Critic (the linter for Perl)</a></li>
   <li><a href="/avoid-unwanted-bitwise-operators">Avoid (unwanted) bitwise operators</a> using <a href="https://metacpan.org/pod/Perl::Critic::Bangs">Perl::Critic::Bangs</a></li>
   <li><a href="/bare-here-documents-are-deprecated">Bare Here documents are deprecated - How to find offending code?</a> using the core <a href="https://metacpan.org/pod/Perl::Critic::Policy::ValuesAndExpressions::RequireQuotedHeredocTerminator">ValuesAndExpressions::RequireQuotedHeredocTerminator</a> policy.</li>
   <li><a href="/how-to-improve-my-perl-program">How to improve my Perl program?</a> - just use Perl::Critic</li>
