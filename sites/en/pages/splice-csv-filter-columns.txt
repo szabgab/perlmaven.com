@@ -1,0 +1,56 @@
+=title How to splice a CSV file in Perl (filter columns of CSV file)
+=timestamp 2018-01-26T10:30:01
+=indexes Text::CSV, splice
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+<a href="/splice-to-slice-and-dice-arrays-in-perl">splice</a> is the super-tool in Perl
+to extract elements from an array or to replace some elements.
+
+You cannot apply it directly to CSV file but we know we can use the <a href="/search/Text%3A%3ACSV">Text::CSV</a>
+module to read and write arbitrary CSV files. We can use that to read in a CSV file line-by-line
+and as each line is represented as an array we can use <hl>splice</hl> on the array.
+
+Effectively working on the columns of the CSV file.
+
+=abstract end
+
+Given this CSV file
+
+<include file="examples/data/multiline.csv">
+
+we would like to create another file that features the 1st, 2nd, and 4th column.
+
+Here is our solution:
+
+<include file="examples/splice_csv_file.pl">
+
+At first we create an instance of <a href="https://metacpan.org/pod/Text::CSV">Text::CSV</a>, the de-facto
+standard CSV-parser of Perl.
+
+We open both the original file for <a href="/open-and-read-from-files">reading</a>, and the output file for
+<a href="/writing-to-files-with-perl">writing</a>.
+
+Then we use the <hl>getline</hl> method of the CSV parser to read the logical lines of the CSV file.
+We need to do this instead of reading ourselves, because some fiels in the CSV file might contain
+embeddd newline, just as in our example we have <b>"Hofeherke,\nalma"</b>.
+
+For each logical row, <hl>getline</hl> will return a <a href="/array-references-in-perl">reference to an array</a>
+that holds the fields of the current line. Dereferencing it by writing <hl>@$row</hl> allows us to use
+<hl>splice</hl> on the array.
+
+Then we use the <hl>combine</hl> method of the CSV parser that puts together the fields and adds
+the quotes where necessary. It returns a <a href="/boolean-values-in-perl">boolean</a> value
+indicating the success or failur of combining the fields. (Though I am not sure what can ogo wrong here.)
+
+The <hl>string</hl> method returns the actual CSV string representing the current line.
+We can print it to the output file followed by a new-line.
+
+The resulting file is this:
+
+<include file="examples/data/multiline_spliced.csv">
+
