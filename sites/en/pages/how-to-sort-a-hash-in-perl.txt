@@ -15,7 +15,7 @@ or associative array as some other languages
 like to call it, is that it is a set of <b>unsorted</b> key-value pairs.
 
 So when someone asks <b>how to sort a hash?</b>, the reaction usually is that you <b>cannot sort a hash</b>.
-The other reaction might be pointing people to tool that can handle a <a href="/pro/sorted-hash-tie-ixhash">sorted hash</a>
+The other reaction might be pointing people to tool that can handle a <a href="/sorted-hash-tie-ixhash">sorted hash</a>
 even though that has a significant run-time penalty.
 
 So what do people really mean when they want to <b>sort a hash?</b>
