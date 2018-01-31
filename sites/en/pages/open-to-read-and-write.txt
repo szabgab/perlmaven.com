@@ -34,7 +34,7 @@ In most of these cases it is ok to
 However, sometimes you need to make this operation "atomic", that is, you need to make sure
 no other process will change the file while your are changing it.
 
-OK, so just to clarify, you pobably <b>never</b> want other process to modify the file
+OK, so just to clarify, you probably <b>never</b> want other process to modify the file
 while you do it, but in most cases you don't have to worry about that as no other processes
 are dealing with the file.
 
@@ -55,12 +55,12 @@ several times. You'll see the number incremented as expected.
 
 What if several people invoke the script at the same time?
 
-To demonstrate that we will run the script 1000 times in two seperate windows.
+To demonstrate that we will run the script 1000 times in two separate windows.
 
 IF you are using Linux or Mac you can use the following Bash snippet:
 
 <code>
-for x in {1..1000}; do perl counter_plai.pl; done
+for x in {1..1000}; do perl counter_plain.pl; done
 </code>
 
 I have not tried this on Windows, and because it has a different file-locking methodology
@@ -72,7 +72,7 @@ to 1 from time-to-time as the file operations of two instances of the script col
 
 <h2>Locking</h2>
 
-On Unix-like operating systems, such as Linux and OSX, we can use the native file locking mechnism
+On Unix-like operating systems, such as Linux and OSX, we can use the native file locking mechanism
 via the <hl>flock</hl> function of Perl.
 
 For this however we need to open the file for both reading and writing.
