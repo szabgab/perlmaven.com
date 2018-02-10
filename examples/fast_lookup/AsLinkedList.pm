@@ -10,8 +10,8 @@ sub new {
 
     my $self = bless {}, $class;
     $self->{data} = {};
-    $self->{first} = undef;
-    $self->{last} = undef;
+    $self->{_first} = undef;
+    $self->{_last} = undef;
 
     return $self;
 }
@@ -24,17 +24,17 @@ sub add {
        payload => $payload,
        date    => time,
        _next   => undef,
-       _prev   => $self->{last},
+       _prev   => $self->{_last},
     };
-    my $last  = $self->{last};
+    my $last  = $self->{_last};
     if ($last) {
         $self->{data}{$last}{_next} = $name;
     }
-    if (not $self->{first}) {
-        $self->{first} = $name;
+    if (not $self->{_first}) {
+        $self->{_first} = $name;
     }
 
-    $self->{last} = $name;
+    $self->{_last} = $name;
 
     return;
 }
@@ -42,7 +42,7 @@ sub add {
 sub remove_oldest {
     my ($self) = @_;
 
-    my $first = $self->{first};
+    my $first = $self->{_first};
     return if not $first;
 
     return $self->remove_by_name($first);
@@ -57,11 +57,11 @@ sub remove_by_name {
     $self->{data}{$next}{_prev} = $prev if $next;
     $self->{data}{$prev}{_next} = $next if $prev;
 
-    if ($self->{first} eq $name) {
-        $self->{first} = $next;
+    if ($self->{_first} eq $name) {
+        $self->{_first} = $next;
     }
-    if ($self->{last} eq $name) {
-        $self->{last} = $prev;
+    if ($self->{_last} eq $name) {
+        $self->{_last} = $prev;
     }
 
     delete $element->{_next};
