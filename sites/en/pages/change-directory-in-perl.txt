@@ -68,10 +68,12 @@ For this one needs to understand how processes work in Unix/Linux.
 When we launch a Perl script the operating system creates a new process that inherits
 everything from the original process. Including the current working directory.
 In order to protect the original process from anything bad the new process might do,
-the Operating System will reset everything, including the current working directory,
-after the process has finished.
+each process can only impact its own environment and not the environment of the
+parent process.
+To the naked eye it looks as if the Operating System would reset everything,
+including the current working directory, after the process has finished.
 
-So no process can make changes on the environment of the parent process.
+So no process can make changes to the environment of the parent process.
 
 <h2>Shell script to change directory permanently</h2>
 
