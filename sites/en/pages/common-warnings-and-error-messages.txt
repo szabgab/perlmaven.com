@@ -42,6 +42,7 @@ Some of the articles even include directions showing how to fix the error.
     <li><a href="/possible-precedence-issue-with-control-flow-operator">Possible precedence issue with control flow operator</a></li>
     <li><a href="/pro/scalar-value-better-written-as">Scalar value ... better written as ...</a></li>
     <li><a href="/have-exceeded-the-maximum-number-of-attempts">Have exceeded the maximum number of attempts (1000) to open temp file/dir</a></li>
+    <li><a href="/pro/substr-outside-of-string">substr outside of string at ...</a></li>
 </ul>
 
 
