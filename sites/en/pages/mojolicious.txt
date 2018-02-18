@@ -19,5 +19,6 @@ about <a href="http://mojolicio.us/">Mojolicious</a>, the light-weight web frame
   <li><a href="/getting-started-with-mojolicious-lite">Getting started with Mojolicious::Lite</a></li>
   <li><a href="/pro/mojolicious-lite-with-embedded-templates">Mojolicious::Lite with embedded templates</a></li>
   <li><a href="/pro/adding-layout-to-mojolicious-lite-based-application">Adding a layout to a Mojolicious::Lite based application</a></li>
+  <li><a href="/deploying-a-mojolicious-application">Deploying a Mojolicious Application using Hypnotoad and Apache</a></li>
 </ul>
 
