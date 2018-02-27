@@ -44,4 +44,4 @@ that way, the author has first created an array from the list returned by the
 <a href="/perl-split">split</a> and then tried to use <a href="/array-slices">array slicing</a>.
 
 
-The solution is in <a href="/pro/why-does-this-code-not-work-solution">another article</a>.
+The solution is in <a href="/why-does-this-code-not-work-solution">another article</a>.
