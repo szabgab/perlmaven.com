@@ -7,7 +7,7 @@
 
 =abstract start
 
-In my last article (<a href="/pro/marpa-for-building-parsers">Marpa for building
+In my last article (<a href="/marpa-for-building-parsers">Marpa for building
 parsers - a first look</a>) we had a first look at the Marpa parsing engine.
 This current article was going to be about building a ini file parser, but
 trouble along the way has turned it into an article about debugging Marpa
