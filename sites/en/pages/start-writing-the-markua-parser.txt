@@ -76,6 +76,13 @@ $ mkdir t
 
 Nothing fancy. Just checking if the generated object is an instance of the class.
 
+We can run the tests by typing in
+
+<code>
+$ prove -l
+</code>
+
+
 <code>
 $ git add .
 $ git commit -m "create module with constructor and test it"

@@ -1,0 +1,79 @@
+=title Creating Makefile.PL and a CPAN distribution for the Markua Parser
+=timestamp 2018-03-03T07:30:01
+=indexes make, Makefile.PL, ExtUtils::MakeMaker
+=status draft
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+When you start writing a project, especially when it is in-house, creating a CPAN distribution might not be high on
+your priorities, but having the capability will simplify the use of various tools and services. So I recommend that
+you prepare your module/application in a similar way.
+
+=abstract end
+
+We need to create a file called Makefile.PL that holds the list of dependencies of our code and a few other instructions
+how to install it. For simple Perl-only modules (that don't include code in C or XS or in some other language), the Makefile.PL
+is quite simple and standard.
+
+<include file="examples/markua-parser/79f7a57fd459144a0720e99abeae7191a622ee1f/Makefile.PL">
+
+For detailed explanation see the <a href="/makefile-pl-of-extutils-makemaker">Makefile.PL of ExtUtils::MakeMaker</a>
+and the <a href="/packaging-with-makefile-pl">packaging with Makefile.PL</a> articles.
+
+
+The first time you run it with <hl>perl Makefile.PL</hl> you'll get a warning:
+
+<code>
+WARNING: Setting VERSION via file 'lib/Markua/Parser.pm' failed
+</code>
+
+In order to fix this we add the version number to the 'lib/Markua/Parser.pm' file:
+
+<code lang="perl">
+our $VERSION = 0.01;
+</code>
+
+The whole file can be seen here:
+
+<include file="examples/markua-parser/79f7a57fd459144a0720e99abeae7191a622ee1f/lib/Markua/Parser.pm">
+
+<h2>Run the tests and generate the distribution</h2>
+
+The following sequence of command will
+
+<ol>
+  <li>Check if all the prerequisites are met and generate <hl>Makefile</hl>.</li>
+  <li>Rearrange the files in the <hl>blib</hl> subdirectory in the same structure as they will be after installation.</li>
+  <li>Run the tests</li>
+  <li>Generate the <hl>MANIFEST</hl> that lists all the file that need to be included in the distribution. (This is based on the <hl>MANIFEST.SKIP</hl> file, but we did not need it for the simple case.</li>
+  <li>Generate the tar.gz file that can be uploaded to PAUSE or distributed in another way.</li>
+</ol>
+
+<code>
+$ perl Makefile.PL
+$ make
+$ make test
+$ make manifest
+$ make dist
+</code>
+
+<h2>gitignore generated files</h2>
+
+The above process generates a few files and directories that don't need to be in version control.
+The best approach is to add their names to the <hl>.gitignore</hl> file so git will ignore them.
+
+This is what I had to create:
+
+<include file="examples/markua-parser/79f7a57fd459144a0720e99abeae7191a622ee1f/.gitignore">
+
+<code>
+$ git add .
+$ git commit -m "create Makefile.PL"
+</code>
+
+<a href="https://github.com/szabgab/perl5-markua-parser/commit/79f7a57fd459144a0720e99abeae7191a622ee1f">commit</a>
+
+
