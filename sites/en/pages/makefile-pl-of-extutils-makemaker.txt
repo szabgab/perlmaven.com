@@ -58,8 +58,11 @@ WriteMakefile
           'File::Basename' => '0',
           'Moose'          => '0.24',
     },
-    BUILD_REQUIRES => {
+    TEST_REQUIRES => {
           'Test::More' => '0.47'
+    },
+    BUILD_REQUIRES => {
+          'Other::Module' => '0'
     },
     EXE_FILES' => [
            'script/app.pl'
