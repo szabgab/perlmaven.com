@@ -1,0 +1,40 @@
+=title Markua
+=timestamp 2018-03-02T10:30:00
+=indexes Markua
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+<a href="https://leanpub.com/markua/">Markua</a> is a Magical Typewriter. It is a <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>-inspired
+format to write books. It was created by <a href="https://twitter.com/peterarmstrong">Peter Armstrong</a> and use by <a href="https://leanpub.com/">LeanPub</a> 
+for writing books.
+
+In this project I am going to create a Markua parser in Perl 5, or at least I start doing it and will implement enough of so I can start writing the Perl Maven
+articles in Markua. That will allow me to easily include Perl Maven articles in an eBook published on LeanPub.
+For example to create the <a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/pmarticle0302">eBook of the Perl Maven Tutorial</a>.
+
+=abstract end
+
+<ol>
+   <li><a href="/start-writing-the-markua-parser">Start writing the Markua parser in Perl</a></li>
+</ol>
+
+<h2>TODO</h2>
+
+Some of my plans in not necessarily the right order
+
+<ol>
+    <li><a href="https://travis-ci.org/">Travis-CI</a></li>
+    <li><a href="https://www.appveyor.com/">Appveyor</a></li>
+    <li><a href="https://coveralls.io/">Coveralls</a></li>
+    <li>Parse all the headers</li>
+    <li>Include file</li>
+    <li>Embed image</li>
+    <li>Embed code</li>
+    <li>Inline code</li>
+    <li>Bold text</li>
+</ol>
+ 
