@@ -20,6 +20,7 @@ For example to create the <a href="https://www.indiegogo.com/projects/updating-t
 
 <ol>
    <li><a href="/start-writing-the-markua-parser">Start writing the Markua parser in Perl</a></li>
+   <li><a href="/creating-makefile-pl-and-a-cpan-distribution-for-the-markua-parser">Creating Makefile.PL and a CPAN distribution for the Markua Parser</a></li>
 </ol>
 
 <h2>TODO</h2>
