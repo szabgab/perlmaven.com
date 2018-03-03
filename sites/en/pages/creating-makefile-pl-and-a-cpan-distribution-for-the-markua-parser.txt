@@ -1,7 +1,7 @@
 =title Creating Makefile.PL and a CPAN distribution for the Markua Parser
-=timestamp 2018-03-03T07:30:01
+=timestamp 2018-03-03T20:30:01
 =indexes make, Makefile.PL, ExtUtils::MakeMaker
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
