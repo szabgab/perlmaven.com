@@ -17,7 +17,7 @@ In this project I am going to create a Markua parser in Perl 5, or at least I st
 =abstract end
 
 <ol>
-   <li><a href="/start-writing-the-markua-parser">Start writing the Markua parser in Perl</a></li>
+   <li><a href="/start-writing-the-markua-parser">Start writing the Markua parser in Perl - h1 tag</a></li>
    <li><a href="/creating-makefile-pl-and-a-cpan-distribution-for-the-markua-parser">Creating Makefile.PL and a CPAN distribution for the Markua Parser</a></li>
    <li><a href="/travis-ci-for-markua-parser">Travis-CI for the Markua Parser project</a></li>
 </ol>
@@ -26,14 +26,18 @@ In this project I am going to create a Markua parser in Perl 5, or at least I st
 
 Some of my plans in not necessarily the right order
 
-<ol>
+<ul>
     <li><a href="https://www.appveyor.com/">Appveyor</a></li>
     <li><a href="https://coveralls.io/">Coveralls</a></li>
-    <li>Parse all the headers</li>
+    <li>Parse all the headers h1-h6 tags</li>
+    <li>Free text (paragraph)</li>
     <li>Include file</li>
     <li>Embed image</li>
     <li>Embed code</li>
     <li>Inline code</li>
     <li>Bold text</li>
-</ol>
+    <li>Bullet points: both numbered and plain</li>
+    <li>Some horizontal separator like the <hl>hr</hl> tag of HTML?</li>
+    <li>Some way to separate an "abstract" that will be displayed on the front page.</li>
+</ul>
  
