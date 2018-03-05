@@ -21,6 +21,7 @@ For example to create the <a href="https://www.indiegogo.com/projects/updating-t
 <ol>
    <li><a href="/start-writing-the-markua-parser">Start writing the Markua parser in Perl</a></li>
    <li><a href="/creating-makefile-pl-and-a-cpan-distribution-for-the-markua-parser">Creating Makefile.PL and a CPAN distribution for the Markua Parser</a></li>
+   <li><a href="/travis-ci-for-markua-parser">Travis-CI for the Markua Parser project</a></li>
 </ol>
 
 <h2>TODO</h2>
@@ -28,7 +29,6 @@ For example to create the <a href="https://www.indiegogo.com/projects/updating-t
 Some of my plans in not necessarily the right order
 
 <ol>
-    <li><a href="https://travis-ci.org/">Travis-CI</a></li>
     <li><a href="https://www.appveyor.com/">Appveyor</a></li>
     <li><a href="https://coveralls.io/">Coveralls</a></li>
     <li>Parse all the headers</li>
