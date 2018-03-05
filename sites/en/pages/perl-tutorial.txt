@@ -225,6 +225,7 @@ to practice what you have learned.
 <li>Substitutions (search and replace)</li>
 -->
 <li><a href="/trim">trim - remove leading and trailing spaces</a></li>
+    <li><a href="/regex-cheat-sheet">Perl 5 Regex Cheat sheet</a></li>
 </ol>
 
 <b>Perl and Shell related functionality</b>
