@@ -22,9 +22,9 @@ The following people were generous enough to already support the campaign:
    <li>Serguei Novikov</li>
    <li>Samuel John</li>
    <li>Miller Hall</li>
-   <li>Tushar Dave</li>
-   <li>Laurent Rosenfeld</li>
-   <li>Richard Noble</li>
+   <li><a href="https://www.linkedin.com/in/tushardavebioinformatics/">Tushar Dave</a></li>
+   <li><a href="https://www.linkedin.com/in/laurentrosenfeld/">Laurent Rosenfeld</a></li>
+   <li><a href="https://www.linkedin.com/in/richard-noble-13272515/">Richard Noble</a></li>
    <li>Jeffrey Wong</li>
    <li>Ekkehard (Ekki) Plicht</li>
    <li>Jeremy Carman</li>
