@@ -1,0 +1,26 @@
+[
+    {
+        "tag" : "h1",
+        "text" : "Heading One"
+    },
+    {
+        "tag" : "h2",
+        "text" : "Heading Two"
+    },
+    {
+        "tag" : "h3",
+        "text" : "Heading Three"
+    },
+    {
+        "tag" : "h4",
+        "text" : "Heading Four"
+    },
+    {
+        "tag" : "h5",
+        "text" : "Heading Five"
+    },
+    {
+        "tag" : "h6",
+        "text" : "Heading Six"
+    }
+]
