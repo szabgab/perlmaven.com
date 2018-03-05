@@ -26,7 +26,7 @@ I searched for perl5-markua-parser and as I hovered over the name the "+ add" li
 on the right hand side. Clicking that I told Appveyor to start monitoring the project.
 
 
-<h2>Configure Appveyor</a>
+<h2>Configure Appveyor</h2>
 
 In order to tell Appveyor what to do you need to create a file called <hl>appveyor.yml</hl> or
 <hl>.appveyor.yml</hl> (with a leading dot). It needs to include some instructions installing
