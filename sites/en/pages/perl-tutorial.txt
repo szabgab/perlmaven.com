@@ -48,10 +48,15 @@ The following people were generous enough to already support the campaign:
    <li>Anonymous</li>
    <li>Meir Guttman</li>
    <li><a href="https://www.linkedin.com/in/christopher-hahn-9a49878/">Christopher Hahn</a></li>
+   <li>Markus Hechenberger</li>
+   <li>Anonymous</li>
+   <li>Russ Brewer</li>
+   <li>Andrew Dorman</li>
+   <li>Anonymous</li>
+
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
    <li>Walter Crombez</li>
-   <li>Markus Hechenberger</li>
    <li><a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">Your name here ...</a></li>
 </ul>
 
