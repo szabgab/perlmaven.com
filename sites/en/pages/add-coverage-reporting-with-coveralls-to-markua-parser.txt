@@ -61,7 +61,7 @@ report and with the given flags it will also send the data to Coveralls.
 
 If in your project you already have either <hl>before_install</hl> or <hl>after_success</hl> entries, make sure you merge the appropriate sections and don't have two sections of the same name.
 
-<include file="examples/markua-parser/854277be1e308abbb3f599cd2e8d85746bd720f0/.travis.yml">
+<include file="examples/markua-parser/854277b/.travis.yml">
 
 I can now <a href="https://github.com/szabgab/perl5-markua-parser/commit/854277be1e308abbb3f599cd2e8d85746bd720f0">commit</a> and push out the changes.
 
@@ -82,7 +82,7 @@ Click on the "Embed" button, select the appropriate snippet (I selected the Mark
 in Markdown format.)
 I've pasted that snippet of code in the README.md just under the Travis-CI badge.
 
-<include file="examples/markua-parser/a7decfc045a4d849059b42f557c8bd202a762271/README.md">
+<include file="examples/markua-parser/a7decfc/README.md">
 
 <code>
 $ git add .

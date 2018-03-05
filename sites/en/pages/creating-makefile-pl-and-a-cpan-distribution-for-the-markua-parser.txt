@@ -18,7 +18,7 @@ We need to create a file called Makefile.PL that holds the list of dependencies 
 how to install it. For simple Perl-only modules (that don't include code in C or XS or in some other language), the Makefile.PL
 is quite simple and standard.
 
-<include file="examples/markua-parser/79f7a57fd459144a0720e99abeae7191a622ee1f/Makefile.PL">
+<include file="examples/markua-parser/79f7a57/Makefile.PL">
 
 For detailed explanation see the <a href="/makefile-pl-of-extutils-makemaker">Makefile.PL of ExtUtils::MakeMaker</a>
 and the <a href="/packaging-with-makefile-pl">packaging with Makefile.PL</a> articles.
@@ -38,7 +38,7 @@ our $VERSION = 0.01;
 
 The whole file can be seen here:
 
-<include file="examples/markua-parser/79f7a57fd459144a0720e99abeae7191a622ee1f/lib/Markua/Parser.pm">
+<include file="examples/markua-parser/79f7a57/lib/Markua/Parser.pm">
 
 <h2>Run the tests and generate the distribution</h2>
 
@@ -67,7 +67,7 @@ The best approach is to add their names to the <hl>.gitignore</hl> file so git w
 
 This is what I had to create:
 
-<include file="examples/markua-parser/79f7a57fd459144a0720e99abeae7191a622ee1f/.gitignore">
+<include file="examples/markua-parser/79f7a57/.gitignore">
 
 <code>
 $ git add .

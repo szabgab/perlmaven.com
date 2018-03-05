@@ -33,7 +33,7 @@ In order to tell Appveyor what to do you need to create a file called <hl>appvey
 <a href="http://strawberryperl.com/">Strawberry Perl</a>, installing any prerequisites, and then
 running the tests with <hl>gmake test</hl>.
 
-The full file can be seen here: <include file="examples/markua-parser/6564d15bf98c0fe5ee08d34fbc36bea92e4e0c29/.appveyor.yml">.appveyor.yml</a>.
+The full file can be seen here: <include file="examples/markua-parser/6564d15/.appveyor.yml">.appveyor.yml</a>.
 
 <code>
 $ git add .appveyor.yml

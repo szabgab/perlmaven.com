@@ -52,7 +52,7 @@ So there are instructions for <a href="https://docs.travis-ci.com/user/languages
 Basically you need to create a file called <hl>.travis.yml</hl> in the root of your Git repository with the following content
 listing the versions of perl you'd like to be used by Travis:
 
-<include file="examples/markua-parser/87a69da4c3c8ec459a6cb0554f577694f996eb1a/.travis.yml">
+<include file="examples/markua-parser/87a69da/.travis.yml">
 
 The file is in <a href="/yaml">YAML</a> format.
 
@@ -61,6 +61,8 @@ $ git add
 $ git commit -m "add travis configuration file"
 $ git push
 </code>
+
+<a href="https://github.com/szabgab/perl5-markua-parser/commit/87a69da4c3c8ec459a6cb0554f577694f996eb1a">commit</a>
 
 Once you push the file to GitHub it will trigger Travis-CI and that will start a build. Because we requested the build
 on 4 different versions of Perl, Travis will spun-off 4 virtual machines and run the builds and the tests in parallel.
@@ -87,7 +89,7 @@ the appropriate code for the badge.
 
 I've pasted the Markdown example into the README.md file of the project:
 
-<include file="examples/markua-parser/3986c230ed82f7575789db7a0e1f00177c6fe656/README.md">
+<include file="examples/markua-parser/3986c23/README.md">
 
 <code>
 $ git add .
