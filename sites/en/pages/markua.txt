@@ -9,12 +9,10 @@
 =abstract start
 
 <a href="https://leanpub.com/markua/">Markua</a> is a Magical Typewriter. It is a <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>-inspired
-format to write books. It was created by <a href="https://twitter.com/peterarmstrong">Peter Armstrong</a> and use by <a href="https://leanpub.com/">LeanPub</a> 
+format to write books. It was created by <a href="https://twitter.com/peterarmstrong">Peter Armstrong</a> and used by <a href="https://leanpub.com/">LeanPub</a> 
 for writing books.
 
-In this project I am going to create a Markua parser in Perl 5, or at least I start doing it and will implement enough of so I can start writing the Perl Maven
-articles in Markua. That will allow me to easily include Perl Maven articles in an eBook published on LeanPub.
-For example to create the <a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/pmarticle0302">eBook of the Perl Maven Tutorial</a>.
+In this project I am going to create a Markua parser in Perl 5, or at least I start doing it and will implement enough of it so I can start writing the Perl Maven articles in Markua. That will allow me to easily include Perl Maven articles in an eBook published on LeanPub. For example to create the <a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/pmarticle0302">eBook of the Perl Maven Tutorial</a>.
 
 =abstract end
 
