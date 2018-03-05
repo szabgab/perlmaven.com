@@ -98,7 +98,7 @@ This of course will trigger a new build on Travis and a new report on Coveralls,
 
 The report BTW looks like this:
 
-<img src="/img/markua-parser-coverlls-reoprt-100.png" alt="Coveralls report">
+<img src="/img/markua-parser-coveralls-reoprt-100.png" alt="Coveralls report">
 
 It tells us we have reached 100 test coverage which is rare, but in our case not very surprising. After all we hardly have any code and we wrote a test or two. Later in the project we'll probably fall behind a bit, but this a good start.
 
