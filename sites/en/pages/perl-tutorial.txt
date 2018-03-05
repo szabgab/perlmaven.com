@@ -10,14 +10,48 @@
 
 <hr>
 There is an effort to update this tutorial and an ongoing <a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">crowdfunding campaign</a> to support the effort. 
-
-<!--
-The following people were generous enough to already support the campaign in abc order.
+The following people were generous enough to already support the campaign:
 
 <ul>
-   <li></li>
+   <li>Atul Kalia</li>
+   <li>Magnus Enger</li>
+   <li>Saif Ahmed</li>
+   <li>Jean F. Delpech</li>
+   <li>Anonymous</li>
+   <li>Jason Hunt</li>
+   <li>Serguei Novikov</li>
+   <li>Samuel John</li>
+   <li>Miller Hall</li>
+   <li>Tushar Dave</li>
+   <li>Laurent Rosenfeld</li>
+   <li>Richard Noble</li>
+   <li>Jeffrey Wong</li>
+   <li>Ekkehard (Ekki) Plicht</li>
+   <li>Jeremy Carman</li>
+   <li>David Djurberg</li>
+   <li>Björn Wesselbaum</li>
+   <li>Uri Bruck</li>
+   <li>Mark Tagawa</li>
+   <li>Vladimir Ivashchenko</li>
+   <li>Gert van Oss</li>
+   <li>Enrique Nell</li>
+   <li>Daniel W Harper</li>
+   <li>Leho Larven</li>
+   <li>Håkon Hægland</li>
+   <li>Rab McGill</li>
+   <li>Peter Ulvskov</li>
+   <li>Kristen Kjoberg</li>
+   <li>Packy Anderson</li>
+   <li>Liz &amp; Wendy Mattijsen &amp; Van Dijk</li>
+   <li>Duncan White</li>
+   <li>Craig Votava</li>
+   <li>Anonymous</li>
+   <li>Meir Guttman</li>
+   <li>Christopher Hahn</li>
+   <li><a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">Your name here ...</a></li>
 </ul>
--->
+
+<a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">Support it too</a> be proud of it and have your name mentioned in this list. (or not, if you prefer to stay anonymous.)
 
 <hr>
 
