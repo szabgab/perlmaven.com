@@ -79,3 +79,6 @@ $ git push
 If you visit the project now <a href="https://github.com/szabgab/perl5-markua-parser">perl5-markua-parser</a> and scroll down where the content of the README.md is displayed then you will see the badges. (By the time you visit it, you might see additional badges. So don't be surprised.
 
 
+Now that we have enabled Continuous Integrtion both on Linux and on Windows, and we also monitor our test coverage
+we can proceed with the actual code.
+
