@@ -1,16 +1,14 @@
 =title Travis-CI for the Markua Parser project
-=timestamp 2018-01-01T07:30:01
+=timestamp 2018-03-05T09:30:01
 =indexes Markua, Travis-CI, YAML
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
 
 =abstract start
 
-It is very useful to write unit-tests for your project, but it is a bit annoying that you have to remember running it every time before you
-push out a new request. Especially if you'd like to run your tests on multiple versions of Perl and maybe with different values of certain
-environment variables.
+It is very useful to write unit-tests for your project, but it is a bit annoying that you have to remember running it every time before you push out a new request. Especially if you'd like to run your tests on multiple versions of Perl and maybe with different values of certain environment variables.
 
 <a href="https://travis-ci.org/">Travis-CI</a> is a cloud-based Continuous Integration system that will run your tests on every commit
 on as many versions of Perl as you like and with as many environment variables as you configure.
