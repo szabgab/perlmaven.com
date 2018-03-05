@@ -8,6 +8,19 @@
 =comments_disqus_enable 0
 =show_related 0
 
+<hr>
+There is an effort to update this tutorial and an ongoing <a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">crowdfunding campaign</a> to support the effort. 
+
+<!--
+The following people were generous enough to already support the campaign in abc order.
+
+<ul>
+   <li></li>
+</ul>
+-->
+
+<hr>
+
 The Perl Maven tutorial will teach you the basics of the Perl programming language.
 You'll be able to write simple scripts, analyze log files and read and write CSV files.
 Just to name a few common tasks.
