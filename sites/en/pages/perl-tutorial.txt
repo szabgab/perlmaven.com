@@ -100,180 +100,180 @@ to practice what you have learned.
 <p>
 <b>Introduction</b>
 <ol>
-<li><a href="/installing-perl-and-getting-started">Install Perl, print Hello World, Safety net (use strict, use warnings)</a></li>
-<li><a href="/hashbang">#!/usr/bin/perl - the hash-bang line</a></li>
-<li><a href="/perl-editor">Editors, IDEs, development environment for Perl</a></li>
-<li><a href="/help">Getting Help</a></li>
-<li><a href="/perl-on-the-command-line">Perl on the command line</a></li>
-<li><a href="/core-perl-documentation-cpan-module-documentation">Core Perl documentation, CPAN module documentation</a></li>
-<li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
-<li><a href="/debugging-perl-scripts">Debugging Perl scripts</a></li>
+    <li><a href="/installing-perl-and-getting-started">Install Perl, print Hello World, Safety net (use strict, use warnings)</a></li>
+    <li><a href="/hashbang">#!/usr/bin/perl - the hash-bang line</a></li>
+    <li><a href="/perl-editor">Editors, IDEs, development environment for Perl</a></li>
+    <li><a href="/help">Getting Help</a></li>
+    <li><a href="/perl-on-the-command-line">Perl on the command line</a></li>
+    <li><a href="/core-perl-documentation-cpan-module-documentation">Core Perl documentation, CPAN module documentation</a></li>
+    <li><a href="/pod-plain-old-documentation-of-perl">POD - Plain Old Documentation</a></li>
+    <li><a href="/debugging-perl-scripts">Debugging Perl scripts</a></li>
 </ol>
 
 <b>Scalars</b>
 <ol>
-<li><a href="/common-warnings-and-error-messages">Common warnings and error messages</a></li>
-<li><a href="/read-from-stdin">Prompt, read from STDIN, read from the keyboard</a></li>
-<li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
-<li><a href="/if">Conditional statements: if</a></li>
-<li><a href="/boolean-values-in-perl">Boolean (true and false) values in Perl</a></li>
-<li><a href="/numerical-operators">Numerical operators</a></li>
-<li><a href="/string-operators">String operators</a></li>
-<li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
-<li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
-<li><a href="/here-documents">Here documents</a></li>
-<li><a href="/scalar-variables">Scalar variables</a></li>
-<li><a href="/comparing-scalars-in-perl">Comparing scalars</a></li>
-<li><a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
-<li><a href="/number-guessing-game">Number Guessing game (rand, int)</a></li>
-<li><a href="/while-loop">Perl while loop</a></li>
-<li><a href="/scope-of-variables-in-perl">Scope of variables in Perl</a></li>
-<li><a href="/short-circuit">Boolean Short circuit</a></li>
+    <li><a href="/common-warnings-and-error-messages">Common warnings and error messages</a></li>
+    <li><a href="/read-from-stdin">Prompt, read from STDIN, read from the keyboard</a></li>
+    <li><a href="/automatic-value-conversion-or-casting-in-perl">Automatic string to number conversion</a></li>
+    <li><a href="/if">Conditional statements: if</a></li>
+    <li><a href="/boolean-values-in-perl">Boolean (true and false) values in Perl</a></li>
+    <li><a href="/numerical-operators">Numerical operators</a></li>
+    <li><a href="/string-operators">String operators</a></li>
+    <li><a href="/undef-and-defined-in-perl">undef, the initial value and the defined function</a></li>
+    <li><a href="/quoted-interpolated-and-escaped-strings-in-perl">Strings in Perl: quoted, interpolated and escaped</a></li>
+    <li><a href="/here-documents">Here documents</a></li>
+    <li><a href="/scalar-variables">Scalar variables</a></li>
+    <li><a href="/comparing-scalars-in-perl">Comparing scalars</a></li>
+    <li><a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a></li>
+    <li><a href="/number-guessing-game">Number Guessing game (rand, int)</a></li>
+    <li><a href="/while-loop">Perl while loop</a></li>
+    <li><a href="/scope-of-variables-in-perl">Scope of variables in Perl</a></li>
+    <li><a href="/short-circuit">Boolean Short circuit</a></li>
 </ol>
 
 <b>Files</b>
 <ol>
-<li><a href="/how-to-exit-from-perl-script">exit</a></li>
-<li><a href="/stdout-stderr-and-redirection">Standard Output, Standard Error and command line redirection</a></li>
-<li><a href="/warn">warn</a></li>
-<li><a href="/die">die</a></li>
-<li><a href="/writing-to-files-with-perl">Writing to files</a></li>
-<li><a href="/appending-to-files">Appending to files</a></li>
-<li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
-<li><a href="/open-files-in-the-old-way">Don't open files in the old way</a></li>
+    <li><a href="/how-to-exit-from-perl-script">exit</a></li>
+    <li><a href="/stdout-stderr-and-redirection">Standard Output, Standard Error and command line redirection</a></li>
+    <li><a href="/warn">warn</a></li>
+    <li><a href="/die">die</a></li>
+    <li><a href="/writing-to-files-with-perl">Writing to files</a></li>
+    <li><a href="/appending-to-files">Appending to files</a></li>
+    <li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
+    <li><a href="/open-files-in-the-old-way">Don't open files in the old way</a></li>
 <!--
-<li>Binary mode, dealing with Unicode</li>
-<li>Reading from a binary file, read, eof</li>
-<li>tell, seek</li>
-<li>truncate</li>
+    <li>Binary mode, dealing with Unicode</li>
+    <li>Reading from a binary file, read, eof</li>
+    <li>tell, seek</li>
+    <li>truncate</li>
 -->
-<li><a href="/slurp">Slurp mode</a></li>
+    <li><a href="/slurp">Slurp mode</a></li>
 </ol>
 
 <b>Lists and Arrays</b>
 <ol>
 <!--
-<li>Perl foreach loop</li>
+    <li>Perl foreach loop</li>
 -->
-<li><a href="/for-loop-in-perl">The for loop in Perl</a></li>
+    <li><a href="/for-loop-in-perl">The for loop in Perl</a></li>
 <!--
-<li>Lists in Perl</li>
-<li>Using Modules</li>
+    <li>Lists in Perl</li>
+    <li>Using Modules</li>
 -->
-<li><a href="/perl-arrays">Arrays in Perl</a></li>
-<li><a href="/argv-in-perl">Process command line parameters @ARGV</a></li>
-<li><a href="/how-to-process-command-line-arguments-in-perl">Process command line parameters using Getopt::Long</a></li>
-<li><a href="/advanced-usage-of-getopt-long-accepting-command-line-arguments">Advanced usage of Getopt::Long for accepting command line arguments</a></li>
-<li><a href="/perl-split">split</a></li>
-<li><a href="/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a></li>
-<li><a href="/join">join</a></li>
-<li><a href="/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
-<li><a href="/scalar-and-list-context-in-perl">Context sensitivity in Perl</a></li>
-<li><a href="/reading-from-a-file-in-scalar-and-list-context">Reading from a file in scalar and list context</a></li>
-<li><a href="/stdin-in-scalar-and-list-context">STDIN in scalar and list context</a></li>
-<li><a href="/sorting-arrays-in-perl">Sorting arrays in Perl</a></li>
-<li><a href="/sorting-mixed-strings">Sorting mixed strings</a></li>
-<li><a href="/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
-<li><a href="/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
-<li><a href="/reverse-polish-calculator-in-perl">Stack</a> and <a href="/using-a-queue-in-perl">queue</a></li>
-<li><a href="/reverse">reverse</a></li>
-<li><a href="/the-ternary-operator-in-perl">The ternary operator</a></li>
+    <li><a href="/perl-arrays">Arrays in Perl</a></li>
+    <li><a href="/argv-in-perl">Process command line parameters @ARGV</a></li>
+    <li><a href="/how-to-process-command-line-arguments-in-perl">Process command line parameters using Getopt::Long</a></li>
+    <li><a href="/advanced-usage-of-getopt-long-accepting-command-line-arguments">Advanced usage of Getopt::Long for accepting command line arguments</a></li>
+    <li><a href="/perl-split">split</a></li>
+    <li><a href="/how-to-read-a-csv-file-using-perl">How to read and process a CSV file? (split, Text::CSV_XS)</a></li>
+    <li><a href="/join">join</a></li>
+    <li><a href="/the-year-19100">The year of 19100 (time, localtime, gmtime)</a> and introducing context</li>
+    <li><a href="/scalar-and-list-context-in-perl">Context sensitivity in Perl</a></li>
+    <li><a href="/reading-from-a-file-in-scalar-and-list-context">Reading from a file in scalar and list context</a></li>
+    <li><a href="/stdin-in-scalar-and-list-context">STDIN in scalar and list context</a></li>
+    <li><a href="/sorting-arrays-in-perl">Sorting arrays in Perl</a></li>
+    <li><a href="/sorting-mixed-strings">Sorting mixed strings</a></li>
+    <li><a href="/unique-values-in-an-array-in-perl">Unique values in an array in Perl</a></li>
+    <li><a href="/manipulating-perl-arrays">Manipulating Perl arrays: shift, unshift, push, pop</a></li>
+    <li><a href="/reverse-polish-calculator-in-perl">Stack</a> and <a href="/using-a-queue-in-perl">queue</a></li>
+    <li><a href="/reverse">reverse</a></li>
+    <li><a href="/the-ternary-operator-in-perl">The ternary operator</a></li>
 <!--
-<li>Loop controls: next and last</li>
-<li>min, max, sum using List::Util</li>
+    <li>Loop controls: next and last</li>
+    <li>min, max, sum using List::Util</li>
 -->
-<li><a href="/qw-quote-word">qw - quote word</a></li>
+    <li><a href="/qw-quote-word">qw - quote word</a></li>
 </ol>
 
 <b>Subroutines</b>
 <ol>
-<li><a href="/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
+    <li><a href="/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
 <!--
-<li>Parameter passing and checking for subroutines</li>
+    <li>Parameter passing and checking for subroutines</li>
 -->
-<li><a href="/variable-number-of-parameters">Variable number of parameters</a></li>
+    <li><a href="/variable-number-of-parameters">Variable number of parameters</a></li>
 <!--
-<li>Returning a list, returning an array</li>
+    <li>Returning a list, returning an array</li>
 -->
-<li><a href="/recursive-subroutines">Recursive subroutines</a></li>
+    <li><a href="/recursive-subroutines">Recursive subroutines</a></li>
 </ol>
 
 <b>Hashes, arrays</b>
 <ol>
-<li><a href="/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
-<li><a href="/creating-hash-from-an-array">Creating hash from an array</a></li>
-<li><a href="/perl-hash-in-scalar-and-list-context">Perl hash in scalar and list context</a></li>
+    <li><a href="/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
+    <li><a href="/creating-hash-from-an-array">Creating hash from an array</a></li>
+    <li><a href="/perl-hash-in-scalar-and-list-context">Perl hash in scalar and list context</a></li>
 <!--
-<li>/exists, delete hash elements</li>
+    <li>/exists, delete hash elements</li>
 -->
-<li><a href="/how-to-sort-a-hash-in-perl">Sorting a hash</a></li>
-<li><a href="/count-words-in-text-using-perl">Count word frequency in a text file</a></li>
+    <li><a href="/how-to-sort-a-hash-in-perl">Sorting a hash</a></li>
+    <li><a href="/count-words-in-text-using-perl">Count word frequency in a text file</a></li>
 </ol>
 
 <b>Regular Expressions</b>
 <ol>
-<li><a href="/introduction-to-regexes-in-perl">Introduction to Regular Expressions in Perl</a></li>
-<li><a href="/regex-character-classes">Regex: character classes</a></li>
-<li><a href="/regex-special-character-classes">Regex: special character classes</a></li>
-<li><a href="/regex-quantifiers">Regex: quantifiers</a></li>
-<li><a href="/beginner-perl-maven-video-course#8">Regex videos - part I</a></li>
+    <li><a href="/introduction-to-regexes-in-perl">Introduction to Regular Expressions in Perl</a></li>
+    <li><a href="/regex-character-classes">Regex: character classes</a></li>
+    <li><a href="/regex-special-character-classes">Regex: special character classes</a></li>
+    <li><a href="/regex-quantifiers">Regex: quantifiers</a></li>
+    <li><a href="/beginner-perl-maven-video-course#8">Regex videos - part I</a></li>
 <!--
-<li>Regex: Greedy and non-greedy match</li>
-<li>Regex: Grouping and capturing</li>
-<li>Regex: Anchors</li>
-<li>Regex options and modifiers</li>
-<li>Substitutions (search and replace)</li>
+    <li>Regex: Greedy and non-greedy match</li>
+    <li>Regex: Grouping and capturing</li>
+    <li>Regex: Anchors</li>
+    <li>Regex options and modifiers</li>
+    <li>Substitutions (search and replace)</li>
 -->
-<li><a href="/trim">trim - remove leading and trailing spaces</a></li>
+    <li><a href="/trim">trim - remove leading and trailing spaces</a></li>
     <li><a href="/regex-cheat-sheet">Perl 5 Regex Cheat sheet</a></li>
 </ol>
 
 <b>Perl and Shell related functionality</b>
 <ol>
 <!--
-<li>Perl -X operators</li>
-<li>Perl pipes</li>
-<li>Running external programs <a href="/running-external-programs-from-perl">using system</a></li>
-<li>Unix commands: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
+    <li>Perl -X operators</li>
+    <li>Perl pipes</li>
+    <li>Running external programs <a href="/running-external-programs-from-perl">using system</a></li>
+    <li>Unix commands: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
 -->
-<li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
+    <li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
 <!--
-<li>Windows/DOS commands: del, ren, dir</li>
-<li>File globbing (Wildcards)</li>
+    <li>Windows/DOS commands: del, ren, dir</li>
+    <li>File globbing (Wildcards)</li>
 -->
-<li><a href="/reading-the-content-of-a-directory">Directory handles</a></li>
-<li>Traversing directory tree <a href="/recursive-subroutines">manually with recursion</a>,
-<a href="/traversing-the-filesystem-using-a-queue">manually using a queue</a> and using find.</li>
+    <li><a href="/reading-the-content-of-a-directory">Directory handles</a></li>
+    <li>Traversing directory tree <a href="/recursive-subroutines">manually with recursion</a></li>
+    <li>Traversing directory tree <a href="/traversing-the-filesystem-using-a-queue">manually using a queue</a> and using find.</li>
 </ol>
 
 <b>CPAN</b>
 <ol>
-<li><a href="/download-and-install-perl">Download and install Perl (Strawberry Perl or manual compilation)</a></li>
+    <li><a href="/download-and-install-perl">Download and install Perl (Strawberry Perl or manual compilation)</a></li>
 <!--
-<li>Download and install Perl using Perlbrew</li>
-<li>Locating and evaluating CPAN modules</li>
-<li>Downloading and installing Perl Modules from CPAN</li>
+    <li>Download and install Perl using Perlbrew</li>
+    <li>Locating and evaluating CPAN modules</li>
+    <li>Downloading and installing Perl Modules from CPAN</li>
 -->
-<li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
-<li><a href="/how-to-add-a-relative-directory-to-inc">How to change @INC to a relative directory</a></li>
+    <li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
+    <li><a href="/how-to-add-a-relative-directory-to-inc">How to change @INC to a relative directory</a></li>
 <!--
-<li>local::lib</li>
+    <li>local::lib</li>
 -->
 </ol>
 
 <b>Few examples for using Perl</b>
 <ol>
-<li><a href="/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
-<li><a href="/read-an-excel-file-in-perl">Reading Excel files using Perl</a></li>
-<li><a href="/create-an-excel-file-with-perl">Creating Excel files using Perl</a></li>
-<li><a href="/sending-html-email-using-email-stuffer">Sending e-mail using Perl</a></li>
-<li><a href="/perl-cgi-script-with-apache2">CGI scripts with Perl</a></li>
+    <li><a href="/how-to-replace-a-string-in-a-file-with-perl">How to replace a string in a file with Perl? (slurp)</a></li>
+    <li><a href="/read-an-excel-file-in-perl">Reading Excel files using Perl</a></li>
+    <li><a href="/create-an-excel-file-with-perl">Creating Excel files using Perl</a></li>
+    <li><a href="/sending-html-email-using-email-stuffer">Sending e-mail using Perl</a></li>
+    <li><a href="/perl-cgi-script-with-apache2">CGI scripts with Perl</a></li>
 <!--
-<li>Parsing XML files</li>
+    <li>Parsing XML files</li>
 -->
-<li><a href="/json">Reading and writing JSON files</a></li>
-<li><a href="/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
-<li><a href="/reading-from-ldap-in-perl-using-net-ldap">Accessing LDAP using Perl</a></li>
+    <li><a href="/json">Reading and writing JSON files</a></li>
+    <li><a href="/simple-database-access-using-perl-dbi-and-sql">Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)</a></li>
+    <li><a href="/reading-from-ldap-in-perl-using-net-ldap">Accessing LDAP using Perl</a></li>
 </ol>
 
 <b>Common warnings and error messages</b>
@@ -305,12 +305,12 @@ to practice what you have learned.
 
 <b>Other</b>
 <ol>
-<li><a href="/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
-<li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
-<li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
-<li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
-<li><a href="/what-are-string-and-numeric-contexts">What are string and numeric contexts?</a></li>
-<li><a href="/statement-modifiers">Statement modifiers: reversed if statements</a></li>
+    <li><a href="/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
+    <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
+    <li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
+    <li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
+    <li><a href="/what-are-string-and-numeric-contexts">What are string and numeric contexts?</a></li>
+    <li><a href="/statement-modifiers">Statement modifiers: reversed if statements</a></li>
 </ol>
 
 <b>Object Oriented Perl with Moose or Moo</b>
