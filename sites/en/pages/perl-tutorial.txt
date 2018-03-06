@@ -44,7 +44,7 @@ The following people were generous enough to already support the campaign:
    <li><a href="https://www.linkedin.com/in/packy-anderson/">Packy Anderson</a></li>
    <li><a href="https://www.linkedin.com/in/elizabeth-mattijsen-7483002/">Liz</a> &amp; <a href="https://www.linkedin.com/in/wendyga/">Wendy</a> Mattijsen &amp; Van Dijk</li>
    <li><a href="https://www.linkedin.com/in/duncan-white-32a81154/">Duncan White</a></li>
-   <li>Craig Votava</li>
+   <li><a href="https://www.linkedin.com/in/craig-votava-2245424/">Craig Votava</a></li>
    <li>Anonymous</li>
    <li>Meir Guttman</li>
    <li><a href="https://www.linkedin.com/in/christopher-hahn-9a49878/">Christopher Hahn</a></li>
@@ -53,6 +53,7 @@ The following people were generous enough to already support the campaign:
    <li>Russ Brewer</li>
    <li>Andrew Dorman</li>
    <li>Anonymous</li>
+   <li>Nikolai Schlegel</li>
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
