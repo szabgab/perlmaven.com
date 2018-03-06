@@ -49,11 +49,13 @@ The following people were generous enough to already support the campaign:
    <li>Meir Guttman</li>
    <li><a href="https://www.linkedin.com/in/christopher-hahn-9a49878/">Christopher Hahn</a></li>
    <li>Markus Hechenberger</li>
-   <li>Anonymous</li>
+   <li>Gregory Foletta</li>
    <li>Russ Brewer</li>
    <li>Andrew Dorman</li>
    <li>Anonymous</li>
    <li>Nikolai Schlegel</li>
+   <li>Bruno Contreras</li>
+   <li>Mark Schnee</li>
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
