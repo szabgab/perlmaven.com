@@ -6,6 +6,6 @@ Gabor can help refactor your old Perl code-base.
 <p>
 He runs the <a href="http://perlweekly.com/">Perl Weekly</a> newsletter.
 <p>
-He is the author of a number of <a href="https://leanpub.com/u/szabgab">eBooks</a>.
+<a href="https://szabgab.com/contact.html">Contact Gabor</a> if you'd like to hire his service.
 <p>
-<a href="https://szabgab.com/contact.html">Contact Gabor</a> for more details.
+Buy his <a href="https://leanpub.com/u/szabgab">eBooks</a> or if you just would like to support him, do it via <a href="https://www.patreon.com/szabgab">Patreon</a>.
