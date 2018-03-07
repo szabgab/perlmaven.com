@@ -1,8 +1,11 @@
-Gabor provides training and development services. He loves to help people improve their way of programming.
-He likes to write automated tests and refactor code.
+Gabor who runs the Perl Maven site helps companies set up <b>test automation</b>, CI/CD
+<b>Continuous Integration</b> and <b>Continuous Deployment</b> and other <b>DevOps</b> related
+systems.
 <p>
-
+Gabor can help refactor your old Perl code-base.
+<p>
 He runs the <a href="http://perlweekly.com/">Perl Weekly</a> newsletter.
 <p>
-
-Gabor also runs the Perl Maven site.
+He is the author of a number of <a href="https://leanpub.com/u/szabgab">eBooks</a>.
+<p>
+<a href="https://szabgab.com/contact.html">Contact Gabor</a> for more details.
