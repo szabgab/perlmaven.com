@@ -52,7 +52,7 @@ The following people were generous enough to already support the campaign:
    <li>Gregory Foletta</li>
    <li>Russ Brewer</li>
    <li>Andrew Dorman</li>
-   <li>Anonymous</li>
+   <li><a href="https://www.linkedin.com/in/enrico-marantidis-807ab918/">Enrico Marantidis</a></li>
    <li>Nikolai Schlegel</li>
    <li>Bruno Contreras</li>
    <li>Mark Schnee</li>
@@ -61,6 +61,8 @@ The following people were generous enough to already support the campaign:
    <li>Santosh Angadi</li>
    <li>Thomas McKernan</li>
    <li>Sachin Dangol</li>
+   <li><a href="https://www.linkedin.com/in/stephen-hall-b5b3826/">Stephen Hall</a></li>
+   <li><a href="https://www.linkedin.com/in/matija-grabnar-a209b/">Matija Grabnar</a></li>
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
