@@ -50,7 +50,7 @@ The following people were generous enough to already support the campaign:
    <li><a href="https://www.linkedin.com/in/christopher-hahn-9a49878/">Christopher Hahn</a></li>
    <li>Markus Hechenberger</li>
    <li>Gregory Foletta</li>
-   <li>Russ Brewer</li>
+   <li><a href="https://www.linkedin.com/in/russ-brewer-533a7012/">Russ Brewer</a></li>
    <li>Andrew Dorman</li>
    <li><a href="https://www.linkedin.com/in/enrico-marantidis-807ab918/">Enrico Marantidis</a></li>
    <li>Nikolai Schlegel</li>
@@ -63,10 +63,12 @@ The following people were generous enough to already support the campaign:
    <li>Sachin Dangol</li>
    <li><a href="https://www.linkedin.com/in/stephen-hall-b5b3826/">Stephen Hall</a></li>
    <li><a href="https://www.linkedin.com/in/matija-grabnar-a209b/">Matija Grabnar</a></li>
+   <li>Anonymous</li>
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
-   <li>Walter Crombez</li>
+   <li><a href="https://www.linkedin.com/in/walter-crombez-2369b61/">Walter Crombez</a></li>
+   <li>Dennis Nendza</li>
    <li><a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">Your name here ...</a></li>
 </ul>
 
