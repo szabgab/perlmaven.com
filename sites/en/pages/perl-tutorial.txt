@@ -56,6 +56,11 @@ The following people were generous enough to already support the campaign:
    <li>Nikolai Schlegel</li>
    <li>Bruno Contreras</li>
    <li>Mark Schnee</li>
+   <li>A Norwegian</li>
+   <li><a href="https://www.linkedin.com/in/johnbusco/">John Busco</a></li>
+   <li>Santosh Angadi</li>
+   <li>Thomas McKernan</li>
+   <li>Sachin Dangol</li>
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
