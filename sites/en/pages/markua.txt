@@ -20,6 +20,7 @@ In this project I am going to create a Markua parser in Perl 5, or at least I st
    <li><a href="/start-writing-the-markua-parser">Start writing the Markua parser in Perl - h1 tag</a></li>
    <li><a href="/creating-makefile-pl-and-a-cpan-distribution-for-the-markua-parser">Creating Makefile.PL and a CPAN distribution for the Markua Parser</a></li>
    <li><a href="/travis-ci-for-markua-parser">Travis-CI for the Markua Parser project</a></li>
+   <li><a href="/add-coverage-reporting-with-coveralls-to-markua-parser">Add test coverage reporting with Coveralls to Markua Parser in Perl</a></li>
 </ol>
 
 <h2>TODO</h2>
@@ -28,7 +29,6 @@ Some of my plans in not necessarily the right order
 
 <ul>
     <li><a href="https://www.appveyor.com/">Appveyor</a></li>
-    <li><a href="https://coveralls.io/">Coveralls</a></li>
     <li>Parse all the headers h1-h6 tags</li>
     <li>Free text (paragraph)</li>
     <li>Include file</li>
