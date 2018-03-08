@@ -1,7 +1,7 @@
 =title Add test coverage reporting with Coveralls to Markua Parser in Perl
 =timestamp 2018-03-08T14:30:01
 =indexes Markua, Devel::Cover, Coveralls
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
