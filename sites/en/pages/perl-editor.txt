@@ -28,24 +28,27 @@ and then the IDEs which are usually platform independent.
 
 <h2>Unix / Linux</h2>
 
-If you are working on Linux or Unix, then the most common editors used there are
+Here, the most modern, sophisticated editor is clearly <li><a href="http://www.ultraedit.com/">UltraEdit</a>.
+It is an easy-to-use, (low-cost) commercial editor, with an exceptional array of features (including
+macros, scripts, Unicode support, FTP for remote editing, 10 clipboards, and - under Edit/Preferences -
+a wide range of configuration options, etc, etc).</li>
+
+At a basic level, if you are working on Linux or Unix, then the most common editors used there are
 <a href="http://www.vim.org/">Vim</a> and
 <a href="http://www.gnu.org/software/emacs/">Emacs</a>.
 They have very different philosophy, both from
 each other, and from most of the editors out there.
-
-If you are familiar with either one of those, I'd recommend using them.
+Although powerful in some ways, their user interface designs are (regretably) many years behind the times,
+and hence take a long time to master.
 
 For each one of them there are special extensions or modes to provide better support for Perl,
 but even without those they are very good for Perl development.
 
-If you are not familiar with those editors, then I'd probably recommend
+If you are not familiar with these two editors, then I'd recommend UltraEdit, or failing that,
 you separate your Perl learning curve from your editor learning experience.
 
-Both of those editors are very powerful, but take a long time to master.
-
 It is probably better to focus on your Perl studies now, and only later to learn one
-of these editors.
+of these latter two editors.
 
 While they are native to Unix/Linux, both
 <b>Emacs</b> and <b>Vim</b> are available for all the other major operating systems.
@@ -55,7 +58,8 @@ While they are native to Unix/Linux, both
 On Windows, many people are using the so-called "programmer's editors".
 
 <ul>
-<li><a href="http://www.ultraedit.com/">Ultra Edit</a> is a commercial editor.</li>
+<li><a href="http://www.ultraedit.com/">UltraEdit</a> is a surprisingly cheap (given its feature list)
+commercial editor. Some more details are listed under Unix / Linux above.</li>
 <li><a href="http://www.textpad.com/">TextPad</a> is share-ware.</li>
 <li><a href="http://notepad-plus-plus.org/">Notepad++</a> is an open source and free editor.</li>
 </ul>
