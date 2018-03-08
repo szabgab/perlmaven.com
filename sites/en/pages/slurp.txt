@@ -8,21 +8,25 @@
 
 =abstract start
 
-While in most of the cases we'd process a <a href="/what-is-a-text-file">text file</a> <a href="/open-and-read-from-files">line-by-line</a>,
-there are cases when it is easier to do the work if all the content of the file is in the memory in a single scalar variable.
+While in most of the cases we'd process a <a href="/what-is-a-text-file">text file</a>
+<a href="/open-and-read-from-files">line-by-line</a>,
+there are cases when it is easier to do the work if all the content of the file is in the memory in
+a single scalar variable.
 
 For example when we need to replace <b>Java is Hot</b> by <b>Jabba the Hutt</b> in a text file.
 
-(Probably this is going to be funny only to programmers who are Start Wars fans and who have a bad Hungarian accent in
+(Probably this is going to be funny only to programmers who are Start Wars fans and who have a bad
+Hungarian accent in
 English as I do. Or maybe not even to them.)
 
-In any case you can escape now and read more about <a href="http://en.wikipedia.org/wiki/Jabba_the_Hutt">Jabba the Hutt</a>.
+In any case you can escape now and read more about
+<a href="http://en.wikipedia.org/wiki/Jabba_the_Hutt">Jabba the Hutt</a>.
 
 =abstract end
 
-Before you go on reading, please note, in this article first you'll see the "manual" way to slurp in a file. You can do
-that, but there are more modern and much more readable ways to do that
-<a href="/use-path-tiny-to-read-and-write-file">using Path::Tiny</a>.
+Before you go on reading, please note, in this article first you'll see the "manual" way to slurp
+in a file. You can do that, but there are more modern and much more readable ways to do that
+<a href="/use-path-tiny-to-read-and-write-file">using Path::Slurper</a>.
 
 Let's see an example. This is what we have in the data.txt file:
 
@@ -157,17 +161,28 @@ error message in case on of the system calls fail.
 In the article <a href="/how-to-replace-a-string-in-a-file-with-perl">replacing a string in a file</a> we had a similar example,
 except that there we used the <hl>read_file</hl> function of the <a href="https://metacpan.org/pod/File::Slurp">File::Slurp</a> module.
 
-<h2>Path::Tiny</h2>
+<h2>File::Slurper</h2>
 
-An even better solution is to use the <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a>
-module. It exports the <hl>path</hl> function that gets a path to a file as a parameter and returns
-an object. We can then call the <hl>slurp</hl> method on that object:
+An even better solution is to use the <a href="https://metacpan.org/pod/File::Slurper">File::Slurper</a>
+module. It's aim is to compensate for the perceived deficiencies of the various earlier modules of a  similar
+nature listed in its <a href = 'https://metacpan.org/pod/File::Slurper#SEE-ALSO'>See Also</a> section.
+
+It will optionally export these functions ($encoding and $crlf default to sensible values):
+
+<ul>
+	<li>read_text($filename, $encoding, $crlf)</li>
+	<li>read_binary($filename)</li>
+	<li>read_lines($filename, $encoding, $crlf, $skip_chomp)</li>
+	<li>write_text($filename, $content, $encoding, $crlf)</li>
+	<li>write_binary($filename, $content)</li>
+	<li>read_dir($dirname)</li>
+</ul>
 
 <code lang="perl">
-use Path::Tiny qw( path );
+use File::Slurper 'read_text';
 
 my $file = 'data.txt';
-my $data = path($file)->slurp_utf8;
+my $data = read_text($file);
 </code>
 
 
