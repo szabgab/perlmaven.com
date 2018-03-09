@@ -29,7 +29,7 @@ The following people were generous enough to already support the campaign:
    <li>Ekkehard (Ekki) Plicht</li>
    <li><a href="https://www.linkedin.com/in/james-carman-0658578/">Jeremy Carman</a></li>
    <li><a href="https://www.linkedin.com/in/david-djurberg-4a6671a8/">David Djurberg</a></li>
-   <li>Björn Wesselbaum</li>
+   <li><a href="https://www.linkedin.com/in/bj%C3%B6rn-wesselbaum-b58bbb154/">Björn Wesselbaum</a></li>
    <li><a href="https://www.linkedin.com/in/uribruck/">Uri Bruck</a></li>
    <li><a href="https://www.linkedin.com/in/marktagawa/">Mark Tagawa</a></li>
    <li><a href="https://www.linkedin.com/in/hazard/">Vladimir Ivashchenko</a></li>
@@ -64,11 +64,17 @@ The following people were generous enough to already support the campaign:
    <li><a href="https://www.linkedin.com/in/stephen-hall-b5b3826/">Stephen Hall</a></li>
    <li><a href="https://www.linkedin.com/in/matija-grabnar-a209b/">Matija Grabnar</a></li>
    <li><a href="https://www.linkedin.com/in/tractaylor/">Trac Taylor</a></li>
+   <li>Spikkie</li>
+   <li>Desmond Hokin</li>
+   <li>Rob Dixon</li>
+   <li>Anonymous</li>
+   <li><a href="https://www.linkedin.com/in/nathanwaddell/">Nathan Waddell</a></li>
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
    <li><a href="https://www.linkedin.com/in/walter-crombez-2369b61/">Walter Crombez</a></li>
    <li>Dennis Nendza</li>
+   <li>Georgy Vladimirov</li>
    <li><a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">Your name here ...</a></li>
 </ul>
 
