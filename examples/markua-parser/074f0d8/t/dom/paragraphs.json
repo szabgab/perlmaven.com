@@ -1,0 +1,14 @@
+[
+    {
+        "tag" : "p",
+        "text" : "A line that will become a paragraph."
+    },
+    {
+        "tag" : "p",
+        "text" : "After an empty row another line.\nAnd immediately after it another one. The two will become a separate paragraph.\n    Even if there are 4 spaces at the beginning of the line. It is still the same paragraph."
+    },
+    {
+        "tag" : "p",
+        "text" : "After several empty rows, another paragraph."
+    }
+]
