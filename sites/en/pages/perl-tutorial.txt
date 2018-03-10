@@ -67,10 +67,12 @@ The following people were generous enough to already support the campaign:
    <li>Spikkie</li>
    <li>Desmond Hokin</li>
    <li>Rob Dixon</li>
-   <li>atoomic</li>
+   <li><a href="https://metacpan.org/author/ATOOMIC">atoomic</a></li>
    <li><a href="https://www.linkedin.com/in/nathanwaddell/">Nathan Waddell</a></li>
    <li><a href="https://www.linkedin.com/in/xguzman/">Xavier Guzman</a></li>
    <li><a href="https://www.linkedin.com/in/emilperhinschi/">Emil Nicolaie Perhinschi</a></li>
+   <li>Edward W. Brem</li>
+   <li>Larry Sherwood</li>
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
