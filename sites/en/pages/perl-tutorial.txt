@@ -74,12 +74,15 @@ The following people were generous enough to already support the campaign:
    <li>Edward W. Brem</li>
    <li><a href="https://www.linkedin.com/in/laurence-sherwood-9731a14/">Larry Sherwood</a></li>
    <li>Vladimir Ivashchenko</li>
+   <li><a href="https://www.linkedin.com/in/lorneschachter/">Lorne Schachter</a></li>
+   <li><a href="https://www.linkedin.com/in/yaron-pacht-839215/">Yaron Pacht</a></li>
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
    <li><a href="https://www.linkedin.com/in/walter-crombez-2369b61/">Walter Crombez</a></li>
    <li>Dennis Nendza</li>
    <li>Georgy Vladimirov</li>
+   <li><a href="https://www.linkedin.com/in/dimitar-mitov-12388982/">Dimitar Mitov</a></li>
    <li><a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">Your name here ...</a></li>
 </ul>
 
