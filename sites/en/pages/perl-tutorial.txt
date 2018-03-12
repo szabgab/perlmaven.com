@@ -73,7 +73,7 @@ The following people and companies were generous enough to already support the c
    <li>Spikkie</li>
    <li>Desmond Hokin</li>
    <li>Rob Dixon</li>
-   <li><a href="https://metacpan.org/author/ATOOMIC">atoomic</a></li>
+   <li><a href="https://www.linkedin.com/in/nicolas-rochelemagne-71b4722/">atoomic</a></li>
    <li><a href="https://www.linkedin.com/in/nathanwaddell/">Nathan Waddell</a></li>
    <li><a href="https://www.linkedin.com/in/xguzman/">Xavier Guzman</a></li>
    <li><a href="https://www.linkedin.com/in/emilperhinschi/">Emil Nicolaie Perhinschi</a></li>
@@ -84,6 +84,12 @@ The following people and companies were generous enough to already support the c
    <li><a href="https://www.linkedin.com/in/yaron-pacht-839215/">Yaron Pacht</a></li>
    <li>Ron Wickersham</li>
    <li><a href="https://www.linkedin.com/in/slu369dk/">Søren Lund</a></li>
+   <li>Shaun Adkins</li>
+   <li>Anonymous</li>
+   <li>jason (again)</li>
+   <li>Kevin Phair</li>
+   <li>Susan Wood</li>
+
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
