@@ -76,6 +76,7 @@ The following people were generous enough to already support the campaign:
    <li>Vladimir Ivashchenko</li>
    <li><a href="https://www.linkedin.com/in/lorneschachter/">Lorne Schachter</a></li>
    <li><a href="https://www.linkedin.com/in/yaron-pacht-839215/">Yaron Pacht</a></li>
+   <li>Ron Wickersham</li>
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
