@@ -9,10 +9,14 @@
 =show_related 0
 
 <hr>
-There is an effort to update this tutorial and an ongoing <a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">crowdfunding campaign</a> to support the effort. 
-The following people were generous enough to already support the campaign:
+There is an effort to update this tutorial and an ongoing <a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">crowdfunding campaign</a> to support the effort.
+
+The campaign already reached its goal, but you can still support it for a few days and get on the list of supporters! Don't miss the opportunity.
+
+The following people and companies were generous enough to already support the campaign:
 
 <ul>
+   <li><a href="http://cpanel.com/">cPanel, Inc.</a> picked up almost 50% of the tab. Thanks to <a href="https://www.linkedin.com/in/bennyvasquez/">Benny Vasquez</a></li>
    <li>Atul Kalia</li>
    <li>Magnus Enger</li>
    <li>Saif Ahmed</li>
@@ -77,6 +81,7 @@ The following people were generous enough to already support the campaign:
    <li><a href="https://www.linkedin.com/in/lorneschachter/">Lorne Schachter</a></li>
    <li><a href="https://www.linkedin.com/in/yaron-pacht-839215/">Yaron Pacht</a></li>
    <li>Ron Wickersham</li>
+   <li><a href="https://www.linkedin.com/in/slu369dk/">Søren Lund</a></li>
 
    <li>Leo Chan</li>
    <li>Eduard Wulff</li>
