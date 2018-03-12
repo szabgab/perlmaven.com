@@ -13,6 +13,8 @@ There is an effort to update this tutorial and an ongoing <a href="https://www.i
 
 The campaign already reached its goal, but you can still support it for a few days and get on the list of supporters! Don't miss the opportunity.
 
+Alternatively, if you are only interested in the eBook version of the tutorial, you can already <a href="https://leanpub.com/perl-maven/">buy it</a>.
+
 The following people and companies were generous enough to already support the campaign:
 
 <ul>
@@ -315,14 +317,12 @@ to practice what you have learned.
 
 <b>Common warnings and error messages</b>
 <ol>
-    <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a>
-         also explained in <a href="/variable-declaration-in-perl">Variable declaration in Perl</a></li>
+    <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a> also explained in <a href="/variable-declaration-in-perl">Variable declaration in Perl</a></li>
     <li><a href="/use-of-uninitialized-value">Use of uninitialized value</a></li>
     <li><a href="/barewords-in-perl">Bareword not allowed while "strict subs" in use</a></li>
     <li><a href="/name-used-only-once-possible-typo">Name "main::x" used only once: possible typo at ...</a></li>
     <li><a href="/unknown-warnings-category">Unknown warnings category</a></li>
-    <li><a href="/pro/cant-use-string-as-a-hash-ref-while-strict-refs-in-use">Can't use string (...) as a HASH ref while "strict refs" in use at ...</a>
-       explained in <a href="/symbolic-reference-in-perl">Symbolic references in Perl</a></li>
+    <li><a href="/pro/cant-use-string-as-a-hash-ref-while-strict-refs-in-use">Can't use string (...) as a HASH ref while "strict refs" in use at ...</a> explained in <a href="/symbolic-reference-in-perl">Symbolic references in Perl</a></li>
     <li><a href="/cant-locate-in-inc">Can't locate ... in @INC</a></li>
     <li><a href="/scalar-found-where-operator-expected">Scalar found where operator expected</a></li>
     <li><a href="/my-variable-masks-earlier-declaration-in-same-scope">"my" variable masks earlier declaration in same scope</a></li>
@@ -335,7 +335,7 @@ to practice what you have learned.
     <li><a href="/pro/useless-use-of-hash-element-in-void-context">Useless use of hash element in void context</a></li>
     <li><a href="/pro/useless-use-of-private-variable-in-void-context">Useless use of private variable in void context</a></li>
     <li><a href="/pro/readline-on-closed-filehandle">readline() on closed filehandle</a></li>
-    <li><a href="possible-precedence-issue-with-control-flow-operator">Possible precedence issue with control flow operator</a></li>
+    <li><a href="/possible-precedence-issue-with-control-flow-operator">Possible precedence issue with control flow operator</a></li>
 </ol>
 
 
