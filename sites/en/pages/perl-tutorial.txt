@@ -142,7 +142,6 @@ Where possible I'll also direct you to some exercises you can do
 to practice what you have learned.
 
 
-<p>
 <b>Introduction</b>
 <ol>
     <li><a href="/installing-perl-and-getting-started">Install Perl, print Hello World, Safety net (use strict, use warnings)</a></li>
