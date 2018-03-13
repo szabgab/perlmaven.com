@@ -181,8 +181,8 @@ And you can't. For one the mapping of the hash is one-directional: from key to v
 more importantly, the values are not required to be unique. In our example, both Pluto and Charon
 are at the same average distance from the Sun.
 
-What is more likely is that we wanted to <b>Sort the names of the planets according to their
-distance form the Sun</b>. In more general wording:
+What is more likely is that we wanted to <b>Sort the names of the planets according to their distance form the Sun</b>.
+In more general wording:
 
 <h2>Sort the keys of the hash according to the values</h2> 
 
