@@ -138,20 +138,15 @@ You'll learn how to use the CPAN and several specific CPAN modules.
 
 It will be a good foundation for you to build on.
 
-The free on-line version of the tutorial is currently in development. Many parts are ready. Additional
-parts are being published every few days. The latest one was published on Oct 6, 2017.
 If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
-There is also an <a href="/beginner-perl-maven-e-book">e-book</a> version of the material available for purchase.
-In addition to the free tutorial, that version also includes the slides from the corresponding course including
-many exercises and their solutions. The course material covers all the parts, including the areas
-that are not yet covered in the free version.
+There is also an <a href="https://leanpub.com/perl-maven/">e-book</a> version of the material available for purchase.
+That eBook includes the material that is currently only available to paying <a href="/pro">pro</a> subscribers.
 
 The companion <a href="/beginner-perl-maven-video-course">video-course</a> includes over 210 screencasts,
 a total of more than 5 hours of video. In addition to presenting the material it also provides explanations
 to the solutions of all the exercise.
-The package also includes the source code of all the examples and exercises.
 
 <h2>Free on-line Beginner Perl Maven tutorial</h2>
 
