@@ -34,7 +34,8 @@ useful Perl scripts and/or to maintaining existing applications.
 <img src="/img/beginner_perl_maven_150x212.png" alt="Beginner Perl Maven book cover"  />
 </div>
 
-<div class="btn"><a href="/buy?product=beginner_perl_maven_ebook">Buy for $32</a></div>
+<a href="https://leanpub.com/perl-maven/">Buy on LeanPub</a>
+
 
 <h2>Table of Contents</h2>
 
@@ -87,6 +88,7 @@ useful Perl scripts and/or to maintaining existing applications.
 
 By purchasing the book you get unlimited updates as new editions are published!
 
-<div class="btn"><a href="/buy?product=beginner_perl_maven_ebook">Buy for $32</a></div>
+<a href="https://leanpub.com/perl-maven/">Buy on LeanPub</a>
+
 
 
