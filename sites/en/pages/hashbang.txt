@@ -21,12 +21,7 @@ Before going in the details, let me just point out that this line is also called
 
 The first program people usually learn is the "Hello world" program. This is the script:
 
-<code lang="perl">
-use strict;
-use warnings;
- 
-print "Hello World\n";
-</code>
+<include file="examples/hello_world.pl">
 
 We can save it in a file called <hl>hello.pl</hl>, open the terminal (or Cmd in Windows). <hl>cd</hl> to the directory where we saved the file
 and run the script by typing <hl>perl hello.pl</hl>.
