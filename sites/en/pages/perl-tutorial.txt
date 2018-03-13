@@ -19,92 +19,111 @@ The following people and companies were generous enough to already support the c
 
 <ul>
    <li><a href="http://cpanel.com/">cPanel, Inc.</a> picked up almost 50% of the tab. Thanks to <a href="https://www.linkedin.com/in/bennyvasquez/">Benny Vasquez</a></li>
+</ul>
+
+<ul>
+   <li><a href="https://www.linkedin.com/in/elizabeth-mattijsen-7483002/">Liz</a> &amp; <a href="https://www.linkedin.com/in/wendyga/">Wendy</a> Mattijsen &amp; Van Dijk</li>
+   <li>Desmond Hokin</li>
+   <li>Kevin Phair</li>
+</ul>
+
+<ul>
+   <li>Jason Hunt</li>
+</ul>
+<ul>
+   <li><a href="https://www.linkedin.com/in/richard-noble-13272515/">Richard Noble</a></li>
+   <li><a href="https://www.linkedin.com/in/russ-brewer-533a7012/">Russ Brewer</a></li>
+   <li>Spikkie</li>
+</ul>
+<ul>
+   <li><a href="https://www.linkedin.com/in/bj%C3%B6rn-wesselbaum-b58bbb154/">Björn Wesselbaum</a></li>
+   <li><a href="https://www.linkedin.com/in/craig-votava-2245424/">Craig Votava</a></li>
+   <li><a href="https://www.linkedin.com/in/enrico-marantidis-807ab918/">Enrico Marantidis</a></li>
+   <li><a href="https://www.linkedin.com/in/matija-grabnar-a209b/">Matija Grabnar</a></li>
+   <li><a href="https://www.linkedin.com/in/yaron-pacht-839215/">Yaron Pacht</a></li>
+   <li>Ron Wickersham</li>
+   <li>Len Weisberg</li>
+   <li>Anonymous</li>
+   <li>Anonymous</li>
+</ul>
+<ul>
+   <li><a href="https://www.linkedin.com/in/gert-van-oss-4228b13/">Gert van Oss</a><li>
+   <li><a href="https://www.linkedin.com/in/packy-anderson/">Packy Anderson</a></li>
+</ul>
+<ul>
+   <li><a href="https://www.linkedin.com/in/enriquenell/">Enrique Nell</a></li>
+   <li>Rab McGill</li>
+   <li>Meir Guttman</li>
+   <li>Gregory Foletta</li>
+   <li><a href="https://www.linkedin.com/in/laurence-sherwood-9731a14/">Larry Sherwood</a></li>
+   <li>Vladimir Ivashchenko</li>
+</ul>
+
+<ul>
+   <li>Georgy Vladimirov</li>
+   <li>Eduard Wulff</li>
+   <li>Andrew Dorman</li>
+   <li><a href="https://www.linkedin.com/in/walter-crombez-2369b61/">Walter Crombez</a></li>
+</ul>
+<ul>
    <li>Atul Kalia</li>
-   <li>Magnus Enger</li>
    <li>Saif Ahmed</li>
    <li>Jean F. Delpech</li>
-   <li>Anonymous</li>
-   <li>Jason Hunt</li>
    <li>Serguei Novikov</li>
    <li>Samuel John</li>
    <li>Miller Hall</li>
    <li><a href="https://www.linkedin.com/in/tushardavebioinformatics/">Tushar Dave</a></li>
    <li><a href="https://www.linkedin.com/in/laurentrosenfeld/">Laurent Rosenfeld</a></li>
-   <li><a href="https://www.linkedin.com/in/richard-noble-13272515/">Richard Noble</a></li>
    <li>Jeffrey Wong</li>
    <li>Ekkehard (Ekki) Plicht</li>
-   <li><a href="https://www.linkedin.com/in/james-carman-0658578/">Jeremy Carman</a></li>
    <li><a href="https://www.linkedin.com/in/david-djurberg-4a6671a8/">David Djurberg</a></li>
-   <li><a href="https://www.linkedin.com/in/bj%C3%B6rn-wesselbaum-b58bbb154/">Björn Wesselbaum</a></li>
    <li><a href="https://www.linkedin.com/in/uribruck/">Uri Bruck</a></li>
    <li><a href="https://www.linkedin.com/in/marktagawa/">Mark Tagawa</a></li>
-   <li><a href="https://www.linkedin.com/in/hazard/">Vladimir Ivashchenko</a></li>
-   <li><a href="https://www.linkedin.com/in/gert-van-oss-4228b13/">Gert van Oss</a></li>
-   <li><a href="https://www.linkedin.com/in/enriquenell/">Enrique Nell</a></li>
    <li>Daniel W Harper</li>
-   <li><a href="https://www.linkedin.com/in/leholarven/">Leho Larven</a></li>
-   <li>Håkon Hægland</li>
-   <li>Rab McGill</li>
    <li>Peter Ulvskov</li>
    <li><a href="https://www.linkedin.com/in/kristen-kjoberg-050a402/">Kristen Kjoberg</a></li>
-   <li><a href="https://www.linkedin.com/in/packy-anderson/">Packy Anderson</a></li>
-   <li><a href="https://www.linkedin.com/in/elizabeth-mattijsen-7483002/">Liz</a> &amp; <a href="https://www.linkedin.com/in/wendyga/">Wendy</a> Mattijsen &amp; Van Dijk</li>
    <li><a href="https://www.linkedin.com/in/duncan-white-32a81154/">Duncan White</a></li>
-   <li><a href="https://www.linkedin.com/in/craig-votava-2245424/">Craig Votava</a></li>
-   <li>Anonymous</li>
-   <li>Meir Guttman</li>
    <li><a href="https://www.linkedin.com/in/christopher-hahn-9a49878/">Christopher Hahn</a></li>
    <li>Markus Hechenberger</li>
-   <li>Gregory Foletta</li>
-   <li><a href="https://www.linkedin.com/in/russ-brewer-533a7012/">Russ Brewer</a></li>
-   <li>Andrew Dorman</li>
-   <li><a href="https://www.linkedin.com/in/enrico-marantidis-807ab918/">Enrico Marantidis</a></li>
    <li><a href="https://www.linkedin.com/in/nikolaischlegel/">Nikolai Schlegel</a></li>
-   <li>Bruno Contreras</li>
    <li>Mark Schnee</li>
-   <li>A Norwegian</li>
-   <li><a href="https://www.linkedin.com/in/johnbusco/">John Busco</a></li>
    <li>Santosh Angadi</li>
    <li>Thomas McKernan</li>
    <li>Sachin Dangol</li>
-   <li><a href="https://www.linkedin.com/in/stephen-hall-b5b3826/">Stephen Hall</a></li>
-   <li><a href="https://www.linkedin.com/in/matija-grabnar-a209b/">Matija Grabnar</a></li>
    <li><a href="https://www.linkedin.com/in/tractaylor/">Trac Taylor</a></li>
-   <li>Spikkie</li>
-   <li>Desmond Hokin</li>
    <li>Rob Dixon</li>
    <li><a href="https://www.linkedin.com/in/nicolas-rochelemagne-71b4722/">atoomic</a></li>
    <li><a href="https://www.linkedin.com/in/nathanwaddell/">Nathan Waddell</a></li>
    <li><a href="https://www.linkedin.com/in/xguzman/">Xavier Guzman</a></li>
-   <li><a href="https://www.linkedin.com/in/emilperhinschi/">Emil Nicolaie Perhinschi</a></li>
    <li>Edward W. Brem</li>
-   <li><a href="https://www.linkedin.com/in/laurence-sherwood-9731a14/">Larry Sherwood</a></li>
-   <li>Vladimir Ivashchenko</li>
    <li><a href="https://www.linkedin.com/in/lorneschachter/">Lorne Schachter</a></li>
-   <li><a href="https://www.linkedin.com/in/yaron-pacht-839215/">Yaron Pacht</a></li>
-   <li>Ron Wickersham</li>
    <li><a href="https://www.linkedin.com/in/slu369dk/">Søren Lund</a></li>
    <li><a href="https://www.linkedin.com/in/shaun-adkins-00775131/">Shaun Adkins</a></li>
    <li>Anonymous</li>
-   <li>jason (again)</li>
-   <li>Kevin Phair</li>
    <li>Susan Wood</li>
    <li>Brian Gaboury</li>
    <li>Ross Steiner</li>
    <li>Anonymous</li>
-   <li>Anonymous</li>
    <li>Alexa Cristina</li>
    <li>Anonymous</li>
    <li>Jeffrey Culverhouse</li>
-
-
-   <li>Leo Chan</li>
-   <li>Eduard Wulff</li>
-   <li><a href="https://www.linkedin.com/in/walter-crombez-2369b61/">Walter Crombez</a></li>
+   <li>Anonymous</li>
+   <li>Anonymous</li>
    <li>Dennis Nendza</li>
-   <li>Georgy Vladimirov</li>
+   <li>Leo Chan</li>
+
    <li><a href="https://www.linkedin.com/in/dimitar-mitov-12388982/">Dimitar Mitov</a></li>
-   <li><a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">Your name here ...</a></li>
+
+   <li>Magnus Enger</li>
+   <li><a href="https://www.linkedin.com/in/james-carman-0658578/">Jeremy Carman</a></li>
+   <li><a href="https://www.linkedin.com/in/hazard/">Vladimir Ivashchenko</a></li>
+   <li><a href="https://www.linkedin.com/in/leholarven/">Leho Larven</a></li>
+   <li>Håkon Hægland</li>
+   <li>Bruno Contreras</li>
+   <li>A Norwegian</li>
+   <li><a href="https://www.linkedin.com/in/johnbusco/">John Busco</a></li>
+   <li><a href="https://www.linkedin.com/in/stephen-hall-b5b3826/">Stephen Hall</a></li>
+   <li><a href="https://www.linkedin.com/in/emilperhinschi/">Emil Nicolaie Perhinschi</a></li>
 </ul>
 
 <a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">Support it too</a> be proud of it and have your name mentioned in this list. (or not, if you prefer to stay anonymous.)
