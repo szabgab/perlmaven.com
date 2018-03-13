@@ -303,9 +303,9 @@ to practice what you have learned.
 <!--
     <li>Perl -X operators</li>
     <li>Perl pipes</li>
-    <li>Running external programs <a href="/running-external-programs-from-perl">using system</a></li>
     <li>Unix commands: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
 -->
+    <li>Running external programs <a href="/running-external-programs-from-perl">using system</a></li>
     <li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
 <!--
     <li>Windows/DOS commands: del, ren, dir</li>
@@ -322,8 +322,8 @@ to practice what you have learned.
 <!--
     <li>Download and install Perl using Perlbrew</li>
     <li>Locating and evaluating CPAN modules</li>
-    <li>Downloading and installing Perl Modules from CPAN</li>
 -->
+    <li><a href="/how-to-install-a-perl-module-from-cpan">Downloading and installing Perl Modules from CPAN</a></li>
     <li><a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">How to change @INC to find Perl modules in non-standard locations?</a></li>
     <li><a href="/how-to-add-a-relative-directory-to-inc">How to change @INC to a relative directory</a></li>
 <!--
@@ -367,6 +367,8 @@ to practice what you have learned.
     <li><a href="/pro/useless-use-of-private-variable-in-void-context">Useless use of private variable in void context</a></li>
     <li><a href="/pro/readline-on-closed-filehandle">readline() on closed filehandle</a></li>
     <li><a href="/possible-precedence-issue-with-control-flow-operator">Possible precedence issue with control flow operator</a></li>
+    <li><a href="/pro/scalar-value-better-written-as">Scalar value better written as ...</a></li>
+    <li><a href="/pro/substr-outside-of-string">substr outside of string at ...</a></li>
 </ol>
 
 
@@ -379,6 +381,7 @@ to practice what you have learned.
     <li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
     <li><a href="/what-are-string-and-numeric-contexts">What are string and numeric contexts?</a></li>
     <li><a href="/statement-modifiers">Statement modifiers: reversed if statements</a></li>
+    <li><a href="/autovivification">autovivification</a></li>
 </ol>
 
 <b>Object Oriented Perl with Moose or Moo</b>
