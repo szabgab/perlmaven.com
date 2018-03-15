@@ -33,7 +33,7 @@ The following people and companies were generous enough to already support the c
 <ul>
    <li><a href="https://www.linkedin.com/in/richard-noble-13272515/">Richard Noble</a></li>
    <li><a href="https://www.linkedin.com/in/russ-brewer-533a7012/">Russ Brewer</a></li>
-   <li>Spikkie</li>
+   <li><a href="https://www.linkedin.com/in/bas-spikmans/">Bas Spikmans</a></li>
 </ul>
 <ul>
    <li><a href="https://www.linkedin.com/in/bj%C3%B6rn-wesselbaum-b58bbb154/">Björn Wesselbaum</a></li>
@@ -117,6 +117,8 @@ The following people and companies were generous enough to already support the c
    <li>Jeff Pelkey</li>
    <li><a href="https://www.linkedin.com/in/ian-gates-5b49211/">Ian Gates</a></li>
    <li><a href="https://www.linkedin.com/in/peter-gal/">Péter Gál</a></li>
+   <li>Dave Horsfall</li>
+   <li><a href="https://www.linkedin.com/in/stdownes/">Stephen Downes</a></li>
 
    <li><a href="https://www.linkedin.com/in/dimitar-mitov-12388982/">Dimitar Mitov</a></li>
 
