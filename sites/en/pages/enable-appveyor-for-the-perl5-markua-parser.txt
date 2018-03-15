@@ -1,14 +1,14 @@
 =title Enable Appveyor (CI on Windows) for the Perl 5 Markua Parser
-=timestamp 2018-01-01T07:30:01
+=timestamp 2018-03-15T21:30:01
 =indexes Markua
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
 
 =abstract start
 
-<a href="/travis-ci-for-markua-parser">Travis-CI</a> runs the test on a Linux box and I think it could also run on OSX, but I never tried that. <a href="https://www.appveyor.com/">Appveyor</a> on the other hand is a cloud-based Continuous Integration that runs your tests on MS Windows.
+<a href="/travis-ci-for-markua-parser">Travis-CI</a> runs the test on a Linux box and I think it could also run on OSX, but I never tried that. <a href="https://www.appveyor.com/">Appveyor</a> on the other hand is a cloud-based Continuous Integration that runs your tests on MS Windows. (Actually I just saw an e-mail from them inviting me to try their Linux servers as well. For now let's stick to the Windows machines.)
 
 The Markua parser should have no platform dependent part. So our could is expected to run on MS Windows as well. I only have an old Windows 7 at home and I'd avoid using it. Luckily Appveyor can provide the platform to test the code.
 
@@ -79,6 +79,6 @@ $ git push
 If you visit the project now <a href="https://github.com/szabgab/perl5-markua-parser">perl5-markua-parser</a> and scroll down where the content of the README.md is displayed then you will see the badges. (By the time you visit it, you might see additional badges. So don't be surprised.
 
 
-Now that we have enabled Continuous Integrtion both on Linux and on Windows, and we also monitor our test coverage
+Now that we have enabled Continuous Integration both on Linux and on Windows, and we also monitor our test coverage
 we can proceed with the actual code.
 
