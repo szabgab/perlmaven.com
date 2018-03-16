@@ -8,14 +8,9 @@
 =comments_disqus_enable 0
 =show_related 0
 
-<hr>
-There is an effort to update this tutorial and an ongoing <a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">crowdfunding campaign</a> to support the effort.
+<h2>Supporters</h2>
 
-The campaign already reached its goal, but you can still support it for a few days and get on the list of supporters! Don't miss the opportunity.
-
-Alternatively, if you are only interested in the eBook version of the tutorial, you can already <a href="https://leanpub.com/perl-maven/">buy it</a>.
-
-The following people and companies were generous enough to already support the campaign:
+The updating of Perl Tutorial was supported by a number of people and corporations via a crowdfunding campaign. Some people wanted to stay anonymous, but most of them are listed here. Thanks to all of you for making this ongoing work possible!
 
 <ul>
    <li><a href="http://cpanel.com/">cPanel, Inc.</a> picked up almost 50% of the tab. Thanks to <a href="https://www.linkedin.com/in/bennyvasquez/">Benny Vasquez</a></li>
@@ -32,20 +27,18 @@ The following people and companies were generous enough to already support the c
    <li>Jason Hunt</li>
 </ul>
 <ul>
+   <li><a href="https://www.linkedin.com/in/bas-spikmans/">Bas Spikmans</a></li>
    <li><a href="https://www.linkedin.com/in/richard-noble-13272515/">Richard Noble</a></li>
    <li><a href="https://www.linkedin.com/in/russ-brewer-533a7012/">Russ Brewer</a></li>
-   <li><a href="https://www.linkedin.com/in/bas-spikmans/">Bas Spikmans</a></li>
 </ul>
 <ul>
    <li><a href="https://www.linkedin.com/in/bj%C3%B6rn-wesselbaum-b58bbb154/">Björn Wesselbaum</a></li>
    <li><a href="https://www.linkedin.com/in/craig-votava-2245424/">Craig Votava</a></li>
    <li><a href="https://www.linkedin.com/in/enrico-marantidis-807ab918/">Enrico Marantidis</a></li>
-   <li><a href="https://www.linkedin.com/in/matija-grabnar-a209b/">Matija Grabnar</a></li>
-   <li><a href="https://www.linkedin.com/in/yaron-pacht-839215/">Yaron Pacht</a></li>
-   <li>Ron Wickersham</li>
    <li>Len Weisberg</li>
-   <li>Anonymous</li>
-   <li>Anonymous</li>
+   <li><a href="https://www.linkedin.com/in/matija-grabnar-a209b/">Matija Grabnar</a></li>
+   <li>Ron Wickersham</li>
+   <li><a href="https://www.linkedin.com/in/yaron-pacht-839215/">Yaron Pacht</a></li>
 </ul>
 <ul>
    <li><a href="https://www.linkedin.com/in/gert-van-oss-4228b13/">Gert van Oss</a><li>
@@ -53,91 +46,110 @@ The following people and companies were generous enough to already support the c
 </ul>
 <ul>
    <li><a href="https://www.linkedin.com/in/enriquenell/">Enrique Nell</a></li>
-   <li>Rab McGill</li>
-   <li>Meir Guttman</li>
    <li>Gregory Foletta</li>
    <li><a href="https://www.linkedin.com/in/laurence-sherwood-9731a14/">Larry Sherwood</a></li>
+   <li>Meir Guttman</li>
+   <li>Rab McGill</li>
    <li>Vladimir Ivashchenko</li>
 </ul>
-
 <ul>
-   <li>Georgy Vladimirov</li>
-   <li>Eduard Wulff</li>
    <li>Andrew Dorman</li>
+   <li>Eduard Wulff</li>
+   <li>Georgy Vladimirov</li>
    <li><a href="https://www.linkedin.com/in/walter-crombez-2369b61/">Walter Crombez</a></li>
 </ul>
 <ul>
+   <li>Alexa Cristina</li>
    <li>Atul Kalia</li>
-   <li>Saif Ahmed</li>
-   <li>Jean F. Delpech</li>
-   <li>Serguei Novikov</li>
-   <li>Samuel John</li>
-   <li>Miller Hall</li>
-   <li><a href="https://www.linkedin.com/in/tushardavebioinformatics/">Tushar Dave</a></li>
-   <li><a href="https://www.linkedin.com/in/laurentrosenfeld/">Laurent Rosenfeld</a></li>
-   <li>Jeffrey Wong</li>
-   <li>Ekkehard (Ekki) Plicht</li>
-   <li><a href="https://www.linkedin.com/in/david-djurberg-4a6671a8/">David Djurberg</a></li>
-   <li><a href="https://www.linkedin.com/in/uribruck/">Uri Bruck</a></li>
-   <li><a href="https://www.linkedin.com/in/marktagawa/">Mark Tagawa</a></li>
-   <li>Daniel W Harper</li>
-   <li>Peter Ulvskov</li>
-   <li><a href="https://www.linkedin.com/in/kristen-kjoberg-050a402/">Kristen Kjoberg</a></li>
-   <li><a href="https://www.linkedin.com/in/duncan-white-32a81154/">Duncan White</a></li>
+   <li>Brian Gaboury</li>
    <li><a href="https://www.linkedin.com/in/christopher-hahn-9a49878/">Christopher Hahn</a></li>
-   <li>Markus Hechenberger</li>
-   <li><a href="https://www.linkedin.com/in/nikolaischlegel/">Nikolai Schlegel</a></li>
-   <li>Mark Schnee</li>
-   <li>Santosh Angadi</li>
-   <li>Thomas McKernan</li>
-   <li>Sachin Dangol</li>
-   <li><a href="https://www.linkedin.com/in/tractaylor/">Trac Taylor</a></li>
-   <li>Rob Dixon</li>
-   <li><a href="https://www.linkedin.com/in/nicolas-rochelemagne-71b4722/">atoomic</a></li>
-   <li><a href="https://www.linkedin.com/in/nathanwaddell/">Nathan Waddell</a></li>
-   <li><a href="https://www.linkedin.com/in/xguzman/">Xavier Guzman</a></li>
+   <li>Daniel W Harper</li>
+   <li>Dave Horsfall</li>
+   <li><a href="https://www.linkedin.com/in/david-djurberg-4a6671a8/">David Djurberg</a></li>
+   <li>Dennis Nendza</li>
+   <li><a href="https://www.linkedin.com/in/duncan-white-32a81154/">Duncan White</a></li>
    <li>Edward W. Brem</li>
+   <li>Ekkehard (Ekki) Plicht</li>
+   <li><a href="https://www.linkedin.com/in/ian-gates-5b49211/">Ian Gates</a></li>
+   <li>Jean F. Delpech</li>
+   <li>Jeff Pelkey</li>
+   <li>Jeffrey Culverhouse</li>
+   <li>Jeffrey Wong</li>
+   <li><a href="https://www.linkedin.com/in/kristen-kjoberg-050a402/">Kristen Kjoberg</a></li>
+   <li>Leo Chan</li>
+   <li><a href="https://www.linkedin.com/in/laurentrosenfeld/">Laurent Rosenfeld</a></li>
    <li><a href="https://www.linkedin.com/in/lorneschachter/">Lorne Schachter</a></li>
+   <li><a href="https://www.linkedin.com/in/marktagawa/">Mark Tagawa</a></li>
+   <li>Mark Schnee</li>
+   <li>Markus Hechenberger</li>
+   <li>Miller Hall</li>
+   <li><a href="https://www.linkedin.com/in/nathanwaddell/">Nathan Waddell</a></li>
+   <li><a href="https://www.linkedin.com/in/nicolas-rochelemagne-71b4722/">atoomic</a></li>
+   <li><a href="https://www.linkedin.com/in/nikolaischlegel/">Nikolai Schlegel</a></li>
+   <li><a href="https://www.linkedin.com/in/norman-gaywood-b7684610/">Norman Gaywood</a></li>
+   <li>Peter Ulvskov</li>
+   <li><a href="https://www.linkedin.com/in/peter-gal/">Péter Gál</a></li>
+   <li>Rob Dixon</li>
+   <li>Ross Steiner</li>
+   <li>Sachin Dangol</li>
+   <li>Saif Ahmed</li>
+   <li>Samuel John</li>
+   <li>Santosh Angadi</li>
+   <li>Serguei Novikov</li>
    <li><a href="https://www.linkedin.com/in/slu369dk/">Søren Lund</a></li>
    <li><a href="https://www.linkedin.com/in/shaun-adkins-00775131/">Shaun Adkins</a></li>
-   <li>Anonymous</li>
    <li>Susan Wood</li>
-   <li>Brian Gaboury</li>
-   <li>Ross Steiner</li>
-   <li>Anonymous</li>
-   <li>Alexa Cristina</li>
-   <li>Anonymous</li>
-   <li>Jeffrey Culverhouse</li>
-   <li>Anonymous</li>
-   <li>Anonymous</li>
-   <li>Dennis Nendza</li>
-   <li>Leo Chan</li>
+   <li><a href="https://www.linkedin.com/in/stdownes/">Stephen Downes</a></li>
    <li>Sven Opitz</li>
    <li>Son Thomsen</li>
-   <li><a href="https://www.linkedin.com/in/norman-gaywood-b7684610/">Norman Gaywood</a></li>
-   <li>Jeff Pelkey</li>
-   <li><a href="https://www.linkedin.com/in/ian-gates-5b49211/">Ian Gates</a></li>
-   <li><a href="https://www.linkedin.com/in/peter-gal/">Péter Gál</a></li>
-   <li>Dave Horsfall</li>
-   <li><a href="https://www.linkedin.com/in/stdownes/">Stephen Downes</a></li>
-
-   <li><a href="https://www.linkedin.com/in/dimitar-mitov-12388982/">Dimitar Mitov</a></li>
-
-   <li>Magnus Enger</li>
-   <li><a href="https://www.linkedin.com/in/james-carman-0658578/">Jeremy Carman</a></li>
-   <li><a href="https://www.linkedin.com/in/hazard/">Vladimir Ivashchenko</a></li>
-   <li><a href="https://www.linkedin.com/in/leholarven/">Leho Larven</a></li>
-   <li>Håkon Hægland</li>
-   <li>Bruno Contreras</li>
-   <li>A Norwegian</li>
-   <li><a href="https://www.linkedin.com/in/johnbusco/">John Busco</a></li>
-   <li><a href="https://www.linkedin.com/in/stephen-hall-b5b3826/">Stephen Hall</a></li>
-   <li><a href="https://www.linkedin.com/in/emilperhinschi/">Emil Nicolaie Perhinschi</a></li>
+   <li>Thomas McKernan</li>
+   <li><a href="https://www.linkedin.com/in/tractaylor/">Trac Taylor</a></li>
+   <li><a href="https://www.linkedin.com/in/tushardavebioinformatics/">Tushar Dave</a></li>
+   <li><a href="https://www.linkedin.com/in/uribruck/">Uri Bruck</a></li>
+   <li><a href="https://www.linkedin.com/in/xguzman/">Xavier Guzman</a></li>
 </ul>
 
-<a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/perl-maven">Support it too</a> be proud of it and have your name mentioned in this list. (or not, if you prefer to stay anonymous.)
+<ul>
+   <li><a href="https://www.linkedin.com/in/dimitar-mitov-12388982/">Dimitar Mitov</a></li>
+</ul>
 
-<hr>
+<ul>
+   <li>A Norwegian</li>
+   <li>Bruno Contreras</li>
+   <li><a href="https://www.linkedin.com/in/emilperhinschi/">Emil Nicolaie Perhinschi</a></li>
+   <li><a href="https://www.linkedin.com/in/james-carman-0658578/">Jeremy Carman</a></li>
+   <li><a href="https://www.linkedin.com/in/johnbusco/">John Busco</a></li>
+   <li><a href="https://www.linkedin.com/in/leholarven/">Leho Larven</a></li>
+   <li>Magnus Enger</li>
+   <li><a href="https://www.linkedin.com/in/stephen-hall-b5b3826/">Stephen Hall</a></li>
+   <li><a href="https://www.linkedin.com/in/hazard/">Vladimir Ivashchenko</a></li>
+   <li>Håkon Hægland</li>
+</ul>
+
+<h2>Extended eBook</h2>
+
+An extended version of the Perl Tutorial is available as an <a href="https://leanpub.com/perl-maven/">eBook</a>.
+It contains all the materials from the free tutorial and a number of additional articles that are only available
+to the <a href="/pro">Pro</a> subscribers.
+
+<h2>Brand new or Legacy?</h2>
+
+In every tutorial and in every book there is a tension between teaching the most modern techniques
+or teach how the legacy code works.
+
+The most recent techniques will only be available to people who can use the most recent version of Perl.
+They are probably only relevant to new projects. People who need need to use older versions of Perl or
+who cannot install modern CPAN modules will just get frustrated seeing all the nice stuff, but not able
+to use it.
+
+The old techniques on the other hand will allow you to maintain existing applications and will allow you to write new
+applications on both old and new versions of Perl. The drawback here is that in many cases you might need to write
+more code, sometimes a lot more code, than you would if you used a recent version of Perl and recent CPAN modules.
+
+This tutorial, and this eBook tries to provide a solution to this dilemma by providing both. Telling you about
+the alternative options and giving advice which one to use in which situation.
+
+<h2>About this Tutorial and eBook</h2>
 
 The Perl Maven tutorial will teach you the basics of the Perl programming language.
 You'll be able to write simple scripts, analyze log files and read and write CSV files.
@@ -151,16 +163,15 @@ If you are interested in getting updated when new parts are published,
 please <a href="/register">subscribe to the newsletter</a>.
 
 There is also an <a href="https://leanpub.com/perl-maven/">e-book</a> version of the material available for purchase.
-That eBook includes the material that is currently only available to paying <a href="/pro">pro</a> subscribers.
+In addition to the tutorial, the eBook also includes some material that is only available <a href="/pro">pro</a> subscribers.
 
-The companion <a href="/beginner-perl-maven-video-course">video-course</a> includes over 210 screencasts,
+There is also a free <a href="/beginner-perl-maven-video-course">video-course</a> that includes over 210 screencasts,
 a total of more than 5 hours of video. In addition to presenting the material it also provides explanations
 to the solutions of all the exercise.
 
 <h2>Free on-line Beginner Perl Maven tutorial</h2>
 
-In this tutorial you are going to learn how to use the Perl 5 programming language
-to <b>get your job done</b>.
+In this tutorial you are going to learn how to use the Perl 5 programming language to <b>get your job done</b>.
 
 You will learn both general language features, and extensions or libraries or as the
 Perl programmers call them <b>modules</b>. We will see both standard modules, that come with
@@ -168,8 +179,7 @@ perl and 3rd-party modules, that we install from <b>CPAN</b>.
 
 When it is possible I'll try to teach things in a very task oriented way.
 I'll draw up tasks and then we'll learn the necessary tools to solve them.
-Where possible I'll also direct you to some exercises you can do
-to practice what you have learned.
+Where possible I'll also direct you to some exercises you can do to practice what you have learned.
 
 
 <b>Introduction</b>
@@ -374,7 +384,6 @@ to practice what you have learned.
     <li><a href="/pro/scalar-value-better-written-as">Scalar value better written as ...</a></li>
     <li><a href="/pro/substr-outside-of-string">substr outside of string at ...</a></li>
 </ol>
-
 
 
 <b>Other</b>
