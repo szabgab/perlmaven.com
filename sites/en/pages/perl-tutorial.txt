@@ -57,7 +57,7 @@ The updating of Perl Tutorial was supported by a number of people and corporatio
    <li><a href="https://www.linkedin.com/in/yaron-pacht-839215/">Yaron Pacht</a></li>
 </ul>
 <ul>
-   <li><a href="https://www.linkedin.com/in/gert-van-oss-4228b13/">Gert van Oss</a><li>
+   <li><a href="https://www.linkedin.com/in/gert-van-oss-4228b13/">Gert van Oss</a></li>
    <li><a href="https://www.linkedin.com/in/packy-anderson/">Packy Anderson</a></li>
 </ul>
 <ul>
