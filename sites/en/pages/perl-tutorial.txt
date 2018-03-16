@@ -285,7 +285,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/recursive-subroutines">Recursive subroutines</a></li>
 </ol>
 
-<b>Hashes, arrays</b>
+<b>Hashes</b>
 <ol>
     <li><a href="/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
     <li><a href="/creating-hash-from-an-array">Creating hash from an array</a></li>
@@ -315,7 +315,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/regex-cheat-sheet">Perl 5 Regex Cheat sheet</a></li>
 </ol>
 
-<b>Perl and Shell related functionality</b>
+<b>Shell related functionality</b>
 <ol>
 <!--
     <li>Perl -X operators</li>
