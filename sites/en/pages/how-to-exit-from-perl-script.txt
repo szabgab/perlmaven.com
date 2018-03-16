@@ -17,20 +17,7 @@ For example, you ask the users how old they are, and if they are under 13 you st
 
 =abstract end
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-print "How old are you? ";
-my $age = <STDIN>;
-if ($age < 13) {
-    print "You are too young for this\n";
-    exit;
-}
-
-print "Doing some stuff ...\n";
-</code>
+<include file="examples/exit_on_condition.pl">
 
 Just a plain call to <hl>exit</hl>.
 
@@ -75,16 +62,7 @@ Perl has the same variable <hl>$?</hl> containing the exit code of the "other pr
 
 If you have the above code saved as script.pl and you have another "executor.pl" like this:
 
-
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-say system "perl script.pl";
-say $?;
-say $? >> 8;
-</code>
+<include file="examples/examine_exit_code.pl">
 
 The output will be:
 
