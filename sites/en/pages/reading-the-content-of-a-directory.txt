@@ -119,7 +119,7 @@ In list context, we might want to employ <a href="/filtering-values-with-perl-gr
 
 It is setting a <a href="/how-to-set-default-values-in-perl">default value</a> to be <hl>.</hl>.
 
-<a href="/shift">shift</a>, if it is outside of any function and does not have a paramater, will return the first element from <a href="/argv-in-perl"">@ARGV</a>.
+<a href="/shift">shift</a>, if it is outside of any function and does not have a paramater, will return the first element from <a href="/argv-in-perl">@ARGV</a>.
 That is the first parameter on the command line.
 
 <hl>//</hl> is the <a href="/what-is-new-in-perl-5.10--say-defined-or-state">defined-or operator</a>. It will return
