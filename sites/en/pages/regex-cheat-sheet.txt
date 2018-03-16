@@ -41,7 +41,7 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
    \P{...}     Complementary Unicode character classes.
 </code>
 
-<!-- TODO: add examples \w and \d matching unicode letters and numebers -->
+TODO: add examples \w and \d matching unicode letters and numebers.
 
 <h2>Quantifiers</h2>
 
