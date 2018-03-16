@@ -39,7 +39,7 @@ that we won't click on.
  <li><a href="#debian">Debian/Ubuntu Linux, system Perl with root rights</a></li>
  <li><a href="#fedora">Fedora/RedHat/Centos Linux, system Perl with root rights</a></li>
  <li><a href="#osx">Mac OSX</a></li>
- <li><a href="#cpan">Using the cpan client</a></li>
+ <li><a href="#cpan-client">Using the cpan client</a></li>
  <li><a href="#cpanm">Using cpanm</a></li>
  <li><a href="https://perlmaven.com/pro/install-perl-modules-on-freebsd">FreeBSD, system Perl with root rights</a></li>
 </ul>
@@ -156,7 +156,7 @@ maintained by <a href="http://perlschool.co.uk/">Dave Cross</a>.
 
 Follow the instructions with <b>cpan/cpanm</b> below.
 
-<h2 id="cpan">Using the cpan client</h2>
+<h2 id="cpan-client">Using the cpan client</h2>
 
 While the <hl>cpan</hl> program comes with most operating system,
 and it works well after some configuration, there is probably a better,
