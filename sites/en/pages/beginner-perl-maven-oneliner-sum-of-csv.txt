@@ -1,4 +1,4 @@
-=title One-liner sum of column in CSV
+=title One-liner sum of column in CSV - video
 =timestamp 2015-06-19T08:32:01
 =indexes CSV, -n, -a, -F, -e
 =tags screencast

@@ -1,4 +1,4 @@
-=title Solution: regexes 2
+=title Solution: regexes 2 - video
 =timestamp 2015-07-16T23:00:15
 =indexes regexes
 =tags screencast

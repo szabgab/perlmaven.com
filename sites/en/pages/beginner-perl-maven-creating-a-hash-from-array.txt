@@ -1,4 +1,4 @@
-=title Creating a hash from an array
+=title Creating a hash from an array - video
 =timestamp 2015-07-04T12:01:15
 =indexes %
 =tags screencast

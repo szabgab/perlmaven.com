@@ -1,4 +1,4 @@
-=title Fixing Assembly with Perl
+=title Fixing Assembly with Perl - video
 =timestamp 2015-07-27T23:02:20
 =indexes regexes, m
 =tags screencast

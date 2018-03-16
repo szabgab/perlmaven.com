@@ -1,4 +1,4 @@
-=title Exercise: parse INI file
+=title Exercise: parse INI file - video
 =timestamp 2015-08-03T11:34:40
 =indexes regexes
 =tags screencast

@@ -1,4 +1,4 @@
-=title Variable interpolation - User Input and Output - chomp
+=title Variable interpolation - User Input and Output - chomp - video
 =timestamp 2015-02-21T20:01:51
 =indexes chomp, <STDIN>
 =tags screencast

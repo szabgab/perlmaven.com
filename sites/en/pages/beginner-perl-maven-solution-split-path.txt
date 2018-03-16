@@ -1,4 +1,4 @@
-=title Solution: split path - filename/dirname
+=title Solution: split path - filename/dirname - video
 =timestamp 2015-08-01T09:30:32
 =indexes regexes
 =tags screencast

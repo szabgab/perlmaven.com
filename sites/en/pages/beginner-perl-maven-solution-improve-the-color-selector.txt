@@ -1,4 +1,4 @@
-=title Solution: improve the color selector
+=title Solution: improve the color selector - video
 =timestamp 2015-06-20T18:02:44
 =indexes solution
 =tags screencast

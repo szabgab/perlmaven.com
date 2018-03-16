@@ -1,4 +1,4 @@
-=title Logical Operators in Perl
+=title Logical Operators in Perl - video
 =timestamp 2015-03-07T09:01:55
 =indexes and, or, not, xor, &&, ||, //, !
 =tags screencast

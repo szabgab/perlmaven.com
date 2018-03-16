@@ -1,4 +1,4 @@
-=title No such file
+=title No such file - video
 =timestamp 2015-03-22T11:01:58
 =indexes  $!
 =tags screencast

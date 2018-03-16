@@ -1,4 +1,4 @@
-=title Loop controls: next last
+=title Loop controls: next last - video
 =timestamp 2015-06-30T09:30:57
 =indexes next, last
 =tags screencast

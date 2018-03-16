@@ -1,4 +1,4 @@
-=title Solution: write report to file
+=title Solution: write report to file - video
 =timestamp 2015-04-28T20:40:33
 =indexes solution
 =tags screencast

@@ -1,4 +1,4 @@
-=title Solution: Hello World part 2 (what is the difference between comment and POD?)
+=title Solution: Hello World part 2 (what is the difference between comment and POD?) - video
 =timestamp 2015-02-15T12:02:29
 =indexes perldoc, pod2html, lynx
 =tags screencast

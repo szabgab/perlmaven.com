@@ -1,4 +1,4 @@
-=title Exercise: split HTTP GET request
+=title Exercise: split HTTP GET request - video
 =timestamp 2015-07-30T10:02:24
 =indexes regexes, m
 =tags screencast

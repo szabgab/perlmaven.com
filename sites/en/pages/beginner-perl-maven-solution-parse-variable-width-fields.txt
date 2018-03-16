@@ -1,4 +1,4 @@
-=title Solution: parse variable width fields
+=title Solution: parse variable width fields - video
 =timestamp 2015-07-10T12:02:35
 =indexes %
 =tags screencast

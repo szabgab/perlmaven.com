@@ -1,4 +1,4 @@
-=title Exercise: Regexes 1
+=title Exercise: Regexes 1 - video
 =timestamp 2015-07-16T08:50:13
 =indexes Exercise
 =status show

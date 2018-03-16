@@ -1,4 +1,4 @@
-=title Solution: area of rectangular
+=title Solution: area of rectangular - video
 =timestamp 2015-03-13T09:20:25
 =indexes solution
 =tags screencast

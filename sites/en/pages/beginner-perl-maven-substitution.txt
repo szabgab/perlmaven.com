@@ -1,4 +1,4 @@
-=title substitution
+=title substitution - video
 =timestamp 2015-07-25T10:02:13
 =indexes regexes, s/
 =tags screencast

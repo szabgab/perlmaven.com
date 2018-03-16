@@ -1,4 +1,4 @@
-=title Exercise: number guessing game
+=title Exercise: number guessing game - video
 =timestamp 2015-03-14T08:01:35
 =indexes exercise
 =status show

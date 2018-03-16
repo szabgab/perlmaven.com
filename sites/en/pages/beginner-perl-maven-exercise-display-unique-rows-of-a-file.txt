@@ -1,4 +1,4 @@
-=title Exercise: display unique rows of a file
+=title Exercise: display unique rows of a file - video
 =timestamp 2015-07-02T13:20:26
 =indexes exercise
 =status show

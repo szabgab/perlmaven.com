@@ -1,4 +1,4 @@
-=title Exercise: parse hours log file and create time report
+=title Exercise: parse hours log file and create time report - video
 =timestamp 2015-08-03T10:20:01
 =indexes regexes
 =tags screencast

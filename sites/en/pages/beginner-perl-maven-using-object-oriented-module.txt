@@ -1,4 +1,4 @@
-=title Using object oriented modules
+=title Using object oriented modules - video
 =timestamp 2015-08-08T07:04:32
 =indexes OOP, WWW::Mechanize
 =tags screencast

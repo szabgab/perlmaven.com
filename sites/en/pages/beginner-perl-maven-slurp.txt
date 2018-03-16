@@ -1,4 +1,4 @@
-=title slurp
+=title slurp - video
 =timestamp 2015-06-29T13:02:23
 =indexes slurp
 =tags screencast

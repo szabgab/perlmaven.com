@@ -1,4 +1,4 @@
-=title disk usage: du in Perl
+=title disk usage: du in Perl - video
 =timestamp 2015-08-15T16:05:06
 =indexes Filesys::DiskUsage, du
 =tags screencast

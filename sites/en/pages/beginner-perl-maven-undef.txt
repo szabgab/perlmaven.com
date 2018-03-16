@@ -1,4 +1,4 @@
-=title undef
+=title undef - video
 =timestamp 2015-03-06T13:30:16
 =indexes undef
 =tags screencast

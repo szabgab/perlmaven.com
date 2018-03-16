@@ -1,4 +1,4 @@
-=title Finding a string in a file
+=title Finding a string in a file - video
 =timestamp 2015-07-12T20:00:11
 =indexes regexes
 =tags screencast

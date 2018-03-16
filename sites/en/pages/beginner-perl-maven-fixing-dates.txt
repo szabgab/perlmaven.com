@@ -1,4 +1,4 @@
-=title Fixing dates using Regexes
+=title Fixing dates using Regexes - video
 =timestamp 2015-07-29T23:02:22
 =indexes regexes
 =tags screencast

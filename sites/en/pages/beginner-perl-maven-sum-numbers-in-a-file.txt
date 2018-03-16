@@ -1,4 +1,4 @@
-=title Sum numbers in a file
+=title Sum numbers in a file - video
 =timestamp 2015-03-28T17:03:11
 =indexes sum
 =tags screencast

@@ -1,4 +1,4 @@
-=title Beginner Perl Maven e-book
+=title Beginner Perl Maven e-book - video
 =timestamp 2012-07-06T11:45:56
 =description Beginner level, e-book for people who would like to learn Perl.
 =tags e-book

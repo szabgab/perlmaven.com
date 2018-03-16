@@ -1,4 +1,4 @@
-=title sort
+=title sort - video
 =timestamp 2015-07-02T07:03:04
 =indexes sort
 =tags screencast

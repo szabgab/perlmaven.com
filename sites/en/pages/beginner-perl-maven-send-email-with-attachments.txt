@@ -1,4 +1,4 @@
-=title Sending email with attachments
+=title Sending email with attachments - video
 =timestamp 2015-08-20T20:05:08
 =indexes MIME::Lite, File::Slurp, Pod::Usage, File::Basename, Getopt::Long
 =tags screencast

@@ -1,4 +1,4 @@
-=title split with regex
+=title split with regex - video
 =timestamp 2015-07-29T20:02:21
 =indexes regexes, split
 =tags screencast

@@ -1,4 +1,4 @@
-=title Safety net (use strict; use warnings;)
+=title Safety net (use strict; use warnings;) - video
 =timestamp 2015-01-27T08:02:17
 =indexes strict, warnings, diagnostics
 =tags screencast

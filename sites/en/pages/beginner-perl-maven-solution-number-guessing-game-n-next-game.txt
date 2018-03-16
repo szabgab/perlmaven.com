@@ -1,4 +1,4 @@
-=title Solution: number guessing game - n next game
+=title Solution: number guessing game - n next game - video
 =timestamp 2015-06-25T10:30:39
 =indexes solution
 =tags screencast

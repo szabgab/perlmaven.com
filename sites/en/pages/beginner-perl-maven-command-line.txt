@@ -1,4 +1,4 @@
-=title Perl on the command line (screencast)
+=title Perl on the command line (screencast) - video
 =timestamp 2015-02-09T15:30:06
 =indexes -v, -V, -e, -E
 =tags screencast

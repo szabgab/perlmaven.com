@@ -1,4 +1,4 @@
-=title Compare Values
+=title Compare Values - video
 =timestamp 2015-03-06T11:01:10
 =indexes ==, eq, <, >, lt, gt
 =tags screencast

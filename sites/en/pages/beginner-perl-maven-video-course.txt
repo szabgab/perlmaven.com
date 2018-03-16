@@ -1,4 +1,4 @@
-=title Beginner Perl Maven video course
+=title Beginner Perl Maven video course - video
 =timestamp 2012-07-06T00:03:04
 =description Beginner level, online video training course for people who would like to learn Perl.
 =tags video

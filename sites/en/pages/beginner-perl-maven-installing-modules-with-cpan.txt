@@ -1,4 +1,4 @@
-=title Installing Perl modules using cpan
+=title Installing Perl modules using cpan - video
 =timestamp 2015-08-10T22:04:43
 =indexes cpan
 =tags screencast

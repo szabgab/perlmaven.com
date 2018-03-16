@@ -1,4 +1,4 @@
-=title Solution: add more statistics
+=title Solution: add more statistics - video
 =timestamp 2015-04-27T06:10:24
 =indexes solution
 =tags screencast

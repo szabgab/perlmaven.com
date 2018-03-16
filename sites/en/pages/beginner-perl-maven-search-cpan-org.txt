@@ -1,4 +1,4 @@
-=title search.cpan.org
+=title search.cpan.org - video
 =timestamp 2015-08-10T22:34:45
 =indexes CPAN
 =tags screencast

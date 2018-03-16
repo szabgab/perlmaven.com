@@ -1,4 +1,4 @@
-=title What is CPAN?
+=title What is CPAN? - video
 =timestamp 2015-08-09T07:04:38
 =indexes cpan
 =tags screencast

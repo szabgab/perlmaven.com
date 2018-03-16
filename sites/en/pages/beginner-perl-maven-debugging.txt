@@ -1,4 +1,4 @@
-=title Debugging Perl scripts
+=title Debugging Perl scripts - video
 =timestamp 2015-01-28T18:01:19
 =indexes -d
 =tags screencast

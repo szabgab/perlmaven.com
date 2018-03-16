@@ -1,4 +1,4 @@
-=title Simple use of Regexes
+=title Simple use of Regexes - video
 =timestamp 2015-07-12T18:30:03
 =indexes regexes
 =tags screencast

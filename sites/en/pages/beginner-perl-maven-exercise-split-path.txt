@@ -1,4 +1,4 @@
-=title Exercise: split path - filename/dirname
+=title Exercise: split path - filename/dirname - video
 =timestamp 2015-08-01T09:02:01
 =indexes regexes
 =tags screencast

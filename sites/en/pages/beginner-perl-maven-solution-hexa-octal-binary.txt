@@ -1,4 +1,4 @@
-=title Solution: hexa, octal, binary
+=title Solution: hexa, octal, binary - video
 =timestamp 2015-07-20T10:01:12
 =indexes regexes
 =tags screencast

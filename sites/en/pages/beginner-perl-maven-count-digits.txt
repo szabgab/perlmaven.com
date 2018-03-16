@@ -1,4 +1,4 @@
-=title Count digits
+=title Count digits - video
 =timestamp 2015-07-02T13:01:13
 =indexes  $count[$c]++
 =tags screencast

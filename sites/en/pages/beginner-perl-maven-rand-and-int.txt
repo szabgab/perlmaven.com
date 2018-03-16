@@ -1,4 +1,4 @@
-=title rand() and int()
+=title rand() and int() - video
 =timestamp 2015-03-11T10:02:13
 =indexes rand, int
 =tags screencast

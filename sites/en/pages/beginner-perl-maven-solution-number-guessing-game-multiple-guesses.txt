@@ -1,4 +1,4 @@
-=title Solution: number guessing game - multiple guesses
+=title Solution: number guessing game - multiple guesses - video
 =timestamp 2015-06-24T06:40:40
 =indexes solution
 =tags screencast

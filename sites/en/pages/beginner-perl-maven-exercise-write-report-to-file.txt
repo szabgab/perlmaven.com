@@ -1,4 +1,4 @@
-=title Exercise: write report to file
+=title Exercise: write report to file - video
 =timestamp 2015-04-28T20:01:41
 =indexes exercise
 =status show

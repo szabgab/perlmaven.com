@@ -1,4 +1,4 @@
-=title Exercise: add more statistics
+=title Exercise: add more statistics - video
 =timestamp 2015-04-27T06:01:25
 =indexes exerise
 =status show

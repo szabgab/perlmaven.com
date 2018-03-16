@@ -1,4 +1,4 @@
-=title Your first script: Hello world
+=title Your first script: Hello world - video
 =timestamp 2015-01-26T09:01:47
 =indexes print, ;, \n
 =tags screencast

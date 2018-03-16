@@ -1,4 +1,4 @@
-=title Solution: number guessing game - s show
+=title Solution: number guessing game - s show - video
 =timestamp 2015-06-25T09:40:38
 =indexes solution
 =tags screencast

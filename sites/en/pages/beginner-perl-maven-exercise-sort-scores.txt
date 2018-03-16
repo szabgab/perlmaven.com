@@ -1,4 +1,4 @@
-=title Exercise: sort scores
+=title Exercise: sort scores - video
 =timestamp 2015-07-09T14:01:32
 =indexes %
 =tags screencast

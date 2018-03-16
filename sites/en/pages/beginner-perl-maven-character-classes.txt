@@ -1,4 +1,4 @@
-=title Character classes
+=title Character classes - video
 =timestamp 2015-07-14T14:01:04
 =indexes regexes
 =tags screencast

@@ -1,4 +1,4 @@
-=title CPAN Testers and CPAN Ratings
+=title CPAN Testers and CPAN Ratings - video
 =timestamp 2015-08-11T08:04:49
 =indexes cpan
 =tags screencast

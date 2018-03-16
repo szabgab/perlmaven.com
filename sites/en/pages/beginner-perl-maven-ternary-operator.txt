@@ -1,4 +1,4 @@
-=title The Ternary operator
+=title The Ternary operator - video
 =timestamp 2015-07-02T10:53:12
 =indexes ?:
 =tags screencast

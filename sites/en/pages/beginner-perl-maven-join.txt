@@ -1,4 +1,4 @@
-=title Join
+=title Join - video
 =timestamp 2015-06-20T11:01:52
 =indexes join
 =tags screencast

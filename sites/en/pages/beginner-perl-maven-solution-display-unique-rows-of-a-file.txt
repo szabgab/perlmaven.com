@@ -1,4 +1,4 @@
-=title Solution: display unique rows of a file
+=title Solution: display unique rows of a file - video
 =timestamp 2017-05-01T11:30:01
 =indexes substr, ord
 =status show

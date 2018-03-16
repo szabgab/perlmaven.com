@@ -1,4 +1,4 @@
-=title trim
+=title trim - video
 =timestamp 2015-07-26T16:02:19
 =indexes regexes, trim
 =tags screencast

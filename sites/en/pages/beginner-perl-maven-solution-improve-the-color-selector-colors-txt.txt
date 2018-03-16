@@ -1,4 +1,4 @@
-=title Solution: improve the color selector - colors.txt
+=title Solution: improve the color selector - colors.txt - video
 =timestamp 2015-06-23T05:03:01
 =indexes solution
 =tags screencast

@@ -1,4 +1,4 @@
-=title Solution: Hello World part 1
+=title Solution: Hello World part 1 - video
 =timestamp 2015-02-14T19:02:28
 =indexes Solution
 =tags screencast

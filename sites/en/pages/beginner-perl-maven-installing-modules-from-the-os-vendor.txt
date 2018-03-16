@@ -1,4 +1,4 @@
-=title Installing modules from the OS vendor
+=title Installing modules from the OS vendor - video
 =timestamp 2015-08-10T00:04:42
 =indexes aptitude, yum, ppm
 =tags screencast

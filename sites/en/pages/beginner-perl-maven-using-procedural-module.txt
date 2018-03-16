@@ -1,4 +1,4 @@
-=title Using procedural Perl modules
+=title Using procedural Perl modules - video
 =timestamp 2015-08-07T21:04:21
 =indexes cpan
 =tags screencast

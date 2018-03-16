@@ -1,4 +1,4 @@
-=title True False
+=title True False - video
 =timestamp 2015-03-07T11:03:15
 =indexes true, false
 =tags screencast

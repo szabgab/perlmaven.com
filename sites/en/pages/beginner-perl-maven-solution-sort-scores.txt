@@ -1,4 +1,4 @@
-=title Solution: sort scores
+=title Solution: sort scores - video
 =timestamp 2015-07-09T18:02:34
 =indexes %
 =tags screencast

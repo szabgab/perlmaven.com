@@ -1,4 +1,4 @@
-=title Exercise: improve Apache log analyzer
+=title Exercise: improve Apache log analyzer - video
 =timestamp 2015-07-09T23:01:28
 =indexes %
 =tags screencast

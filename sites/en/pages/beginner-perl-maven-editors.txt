@@ -1,4 +1,4 @@
-=title Editors and IDEs for Perl developers
+=title Editors and IDEs for Perl developers - video
 =timestamp 2015-01-23T07:01:24
 =indexes vim, emacs, Kate, Gedit, Notepad++, TextPad, Ultra Edit, TextMade, Komodo, Eclipse, Padre
 =tags screencast

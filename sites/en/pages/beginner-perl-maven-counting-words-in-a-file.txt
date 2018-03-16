@@ -1,4 +1,4 @@
-=title Counting words in a file
+=title Counting words in a file - video
 =timestamp 2015-07-05T13:01:14
 =indexes $count{$word}++
 =tags screencast

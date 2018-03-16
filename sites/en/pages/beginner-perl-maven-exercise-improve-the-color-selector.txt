@@ -1,4 +1,4 @@
-=title Exercise: improve the color selector
+=title Exercise: improve the color selector - video
 =timestamp 2015-05-24T10:01:30
 =indexes exercise
 =status show

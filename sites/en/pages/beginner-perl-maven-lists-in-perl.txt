@@ -1,4 +1,4 @@
-=title Lists in Perl
+=title Lists in Perl - video
 =timestamp 2015-05-02T10:20:54
 =indexes ()
 =tags screencast

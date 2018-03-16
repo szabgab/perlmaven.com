@@ -1,4 +1,4 @@
-=title Substr
+=title Substr - video
 =timestamp 2015-03-08T17:03:10
 =indexes substr
 =tags screencast

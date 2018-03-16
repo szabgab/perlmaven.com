@@ -1,4 +1,4 @@
-=title The year of 19100
+=title The year of 19100 - video
 =timestamp 2015-06-27T23:03:14
 =indexes  time, localtime, gmtime
 =tags screencast

@@ -1,4 +1,4 @@
-=title Solution: area prompt and warn
+=title Solution: area prompt and warn - video
 =timestamp 2015-03-13T09:40:26
 =indexes solution
 =tags screencast

@@ -1,4 +1,4 @@
-=title Open file all
+=title Open file all - video
 =timestamp 2015-03-16T10:30:02
 =indexes  open, <, >, >>, +<
 =tags screencast

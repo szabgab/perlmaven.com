@@ -1,4 +1,4 @@
-=title Global substitution with regexes
+=title Global substitution with regexes - video
 =timestamp 2015-07-26T07:02:15
 =indexes regexes, g
 =tags screencast

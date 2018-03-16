@@ -1,4 +1,4 @@
-=title Exercise: rectangular
+=title Exercise: rectangular - video
 =timestamp 2015-03-12T11:01:39
 =indexes exercise
 =status show

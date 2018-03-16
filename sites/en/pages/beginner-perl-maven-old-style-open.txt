@@ -1,4 +1,4 @@
-=title Old style open
+=title Old style open - video
 =timestamp 2015-04-26T23:02:00
 =indexes open, FH
 =tags screencast

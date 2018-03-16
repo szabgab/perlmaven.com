@@ -1,4 +1,4 @@
-=title Exercise: sort mixed string
+=title Exercise: sort mixed string - video
 =timestamp 2015-07-03T07:01:40
 =indexes exercise
 =status show

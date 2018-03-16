@@ -1,4 +1,4 @@
-=title Exercise: number guessing in sub
+=title Exercise: number guessing in sub - video
 =timestamp 2015-07-03T08:10:36
 =indexes exercise
 =status show

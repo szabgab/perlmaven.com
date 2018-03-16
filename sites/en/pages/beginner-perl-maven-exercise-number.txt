@@ -1,4 +1,4 @@
-=title Exercise: Match numbers with regex
+=title Exercise: Match numbers with regex - video
 =timestamp 2015-07-19T06:01:06
 =indexes regexes
 =tags screencast

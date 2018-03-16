@@ -1,4 +1,4 @@
-=title Exercise: hexa, octal, binary
+=title Exercise: hexa, octal, binary - video
 =timestamp 2015-07-19T18:01:07
 =indexes regexes
 =tags screencast

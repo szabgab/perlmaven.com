@@ -1,4 +1,4 @@
-=title Solution: number guessing game - d debug toggle
+=title Solution: number guessing game - d debug toggle - video
 =timestamp 2015-06-25T11:30:43
 =indexes solution
 =tags screencast

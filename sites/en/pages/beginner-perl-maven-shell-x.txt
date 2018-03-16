@@ -1,4 +1,4 @@
-=title shell-x
+=title shell-x - video
 =timestamp 2015-08-04T14:14:01
 =indexes shell
 =tags screencast
