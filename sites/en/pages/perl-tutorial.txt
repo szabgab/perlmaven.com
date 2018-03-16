@@ -405,7 +405,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
 There is a whole series of articles on writing Object Oriented code, using the
 light-weight <a href="/moo">Moo</a> OOP framework or the full-blown <a href="/moose">Moose</a> OOP framework.
 
-<hr />
+<hr>
 
 <a href="/how-to-improve-my-perl-program">How to improve your Perl code</a>
 
