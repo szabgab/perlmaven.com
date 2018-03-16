@@ -72,11 +72,11 @@ In October 2009 I ran a poll and asked <a href="http://perlide.org/poll200910/">
 
 <h2>Platform independent editors</h2>
 
-Alex Shatlovsky recommended <a href="http://www.sublimetext.com/">Sublime Text</a>, which is a platform independent editor, but one that costs some money.
-
-Peter Ulvskov recommended <a href="https://www.geany.org/">Geany</a> which is a cross-platform Open Source editor.
-
-<a href="https://atom.io/">Atom</a> is another cross-platform Open Source editor.
+<ul>
+    <li>Alex Shatlovsky recommended <a href="http://www.sublimetext.com/">Sublime Text</a>, which is a platform independent editor, but one that costs some money.</li>
+    <li>Peter Ulvskov recommended <a href="https://www.geany.org/">Geany</a> which is a cross-platform Open Source editor.</li>
+    <li><a href="https://atom.io/">Atom</a> is another cross-platform Open Source editor.</li>
+</ul>
 
 While they are native to Unix/Linux, both <b>Emacs</b> and <b>Vim</b> are available for all the other major operating systems.
 
