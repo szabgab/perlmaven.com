@@ -20,7 +20,7 @@ the Moose training he runs at YAPC::NA. (19:19 min)
 
 =abstract end
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/d-K_uoIrUKQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="//www.youtube.com/embed/d-K_uoIrUKQ" frameborder="0" allowfullscreen></iframe>
 
 <podcast>
 

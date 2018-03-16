@@ -9,7 +9,7 @@
 
 =abstract start
 
-In this <a href="http://www.youtube.com/watch?v=NGX5pgKWVoc">screencast</a> we build a
+In this <a href="https://www.youtube.com/watch?v=NGX5pgKWVoc">screencast</a> we build a
 simple blog engine using <a href="/dancer">Perl Dancer</a>.
 
 If you are on MS Windows start by downloading <a href="http://padre.perlide.org/">Padre on Strawberry Perl</a>
@@ -21,7 +21,7 @@ as Template, by the CPAN clients.)
 =abstract end
 
 <iframe width="640" height="390" 
-src="http://www.youtube.com/embed/NGX5pgKWVoc" frameborder="0" allowfullscreen></iframe>
+src="//www.youtube.com/embed/NGX5pgKWVoc" frameborder="0" allowfullscreen></iframe>
 
 The application we build is going to be called <a href="http://dwimmer.org/">Dwimmer</a>. We need to 
 use the command line to build the skeleton of our application by typing in

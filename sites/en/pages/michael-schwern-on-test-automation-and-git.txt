@@ -20,7 +20,7 @@ He also tells us about is upcoming course on Git.
 
 =abstract end
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/Tsy9m_f-op8" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="//www.youtube.com/embed/Tsy9m_f-op8" frameborder="0" allowfullscreen></iframe>
 
 <podcast>
 
@@ -28,26 +28,26 @@ He also tells us about is upcoming course on Git.
 Show notes:
 <ul>
   <li><a href="http://twitter.com/schwern">@schwern</a> Michael Schwern on Twitter</li>
-  <li><a href="http://metacpan.org/module/Test::Simple">Test::Simple</a></li>
-  <li><a href="http://metacpan.org/module/Test::More">Test::More</a></li>
-  <li><a href="http://metacpan.org/module/Test::Harness">Test::Harness</a></li>
+  <li><a href="https://metacpan.org/module/Test::Simple">Test::Simple</a></li>
+  <li><a href="https://metacpan.org/module/Test::More">Test::More</a></li>
+  <li><a href="https://metacpan.org/module/Test::Harness">Test::Harness</a></li>
   <li><a href="http://testanything.org/">TAP Test Anything Protocol</a></li>
   <li><a href="http://www.yapcna.org/">YAPC::NA</a> the Perl conference.</li>
   <li><a href="http://www.yapcna.org/yn2013/training.html#git1">Git Master class</a> at YAPC::NA on June 2, 2013 and repeated on June 6, 2013</li>
   <li>Programming Perl:
-      <a href="http://www.amazon.com/gp/product/0596004923/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0596004923&linkCode=as2&tag=szabgab-20">Book</a>
-      and for <a href="http://www.amazon.com/gp/product/B007S291SA/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B007S291SA&linkCode=as2&tag=szabgab-20">Kindle</a>
+      <a href="https://www.amazon.com/gp/product/0596004923/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0596004923&linkCode=as2&tag=szabgab-20">Book</a>
+      and for <a href="https://www.amazon.com/gp/product/B007S291SA/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B007S291SA&linkCode=as2&tag=szabgab-20">Kindle</a>
       (Pink Camel was the first edition)
   </li>
   <li>Learning Perl:
-      <a href="http://www.amazon.com/gp/product/1449303587/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1449303587&linkCode=as2&tag=szabgab-20">Book</a>
-      and for the <a href="http://www.amazon.com/gp/product/B005EI865O/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B005EI865O&linkCode=as2&tag=szabgab-20">Kindle</a>.
+      <a href="https://www.amazon.com/gp/product/1449303587/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1449303587&linkCode=as2&tag=szabgab-20">Book</a>
+      and for the <a href="https://www.amazon.com/gp/product/B005EI865O/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B005EI865O&linkCode=as2&tag=szabgab-20">Kindle</a>.
   </li>
   <li>Code Complete:
-      <a href="http://www.amazon.com/gp/product/0735619670/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0735619670&linkCode=as2&tag=szabgab-20">Book</a>
-      and for <a href="http://www.amazon.com/gp/product/B004OR1XGK/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004OR1XGK&linkCode=as2&tag=szabgab-20">Kindle</a>
+      <a href="https://www.amazon.com/gp/product/0735619670/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0735619670&linkCode=as2&tag=szabgab-20">Book</a>
+      and for <a href="https://www.amazon.com/gp/product/B004OR1XGK/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004OR1XGK&linkCode=as2&tag=szabgab-20">Kindle</a>
       </li>
-  <li><a href="http://en.wikipedia.org/wiki/Object-relational_mapping">ORM</a>
+  <li><a href="https://en.wikipedia.org/wiki/Object-relational_mapping">ORM</a>
 </ul>
 </div>
 

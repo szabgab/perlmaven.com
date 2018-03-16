@@ -8,13 +8,13 @@
 
 =abstract start
 
-The new screencast is about <a href="http://www.youtube.com/watch?v=jiYZcV3khdY">using the built-in debugger of Perl</a>.
+The new screencast is about <a href="https://www.youtube.com/watch?v=jiYZcV3khdY">using the built-in debugger of Perl</a>.
 I gave talks about this at various Perl workshops and conferences and there were always lots of
 people who have never used the debugger. I hope this will help more people to start using it.
 
 =abstract end
 
-<iframe width="640" height="480" src="http://www.youtube.com/embed/jiYZcV3khdY"
+<iframe width="640" height="480" src="https://www.youtube.com/embed/jiYZcV3khdY"
 frameborder="0" allowfullscreen></iframe>
 
 Running the debugger:

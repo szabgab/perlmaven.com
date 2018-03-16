@@ -22,14 +22,14 @@ interesting CPAN modules.  (31.06 min)
 
 =abstract end
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/yjZiR03zckk" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/yjZiR03zckk" frameborder="0" allowfullscreen></iframe>
 
 <podcast>
 
 <ul>
   <li>Chad Granum on <a href="https://metacpan.org/author/EXODIST">CPAN</a>, and on <a href="https://github.com/exodist">Github</a>.</li>
   <li>He is <b>exodist</b> on the #fennec and other channels on <a href="http://www.irc.perl.org/">irc.perl.org</a></li>
-  <li>You can also find him on <a href="http://www.linkedin.com/pub/chad-granum/17/183/52b">LinkedIN</a>.</li>
+  <li>You can also find him on <a href="https://www.linkedin.com/pub/chad-granum/17/183/52b">LinkedIN</a>.</li>
 <!-- <a href="http://www.open-exodus.net">Open Exodus</a> -->
 </ul>
 

@@ -15,7 +15,7 @@ about some of the functions Perl provides for manipulating strings.
 
 =abstract end
 
-<iframe width="640" height="510" src="http://www.youtube.com/embed/U2B5ZD59L7g?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="510" src="https://www.youtube.com/embed/U2B5ZD59L7g?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 <h2>lc, uc, length</h2>
 

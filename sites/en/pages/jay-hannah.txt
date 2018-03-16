@@ -15,7 +15,7 @@ Interview with Jay Hannah, who has been the administrator of the central Perl Mo
 
 =abstract end
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/0m5E2CZmCww" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="//www.youtube.com/embed/0m5E2CZmCww" frameborder="0" allowfullscreen></iframe>
 
 <podcast>
 
@@ -30,8 +30,8 @@ Interview with Jay Hannah, who has been the administrator of the central Perl Mo
    <a href="https://www.facebook.com/deafferret">Facebook</a>,
    <a href="https://twitter.com/deafferret">Twitter</a>,
    <a href="http://deafferret.tumblr.com/">Tumblr</a>, 
-   <a href="http://www.youtube.com/deafferret">YouTube</a>,
-   <a href="http://www.linkedin.com/in/jhannah">LinkedIn</a>,
+   <a href="https://www.youtube.com/deafferret">YouTube</a>,
+   <a href="https://www.linkedin.com/in/jhannah">LinkedIn</a>,
    <a href="https://github.com/jhannah">github</a>,
    <a href="https://metacpan.org/author/JHANNAH">CPAN</a>
   </li>

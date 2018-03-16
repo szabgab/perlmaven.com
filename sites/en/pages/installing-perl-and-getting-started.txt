@@ -64,7 +64,7 @@ It has lots of Perl extensions bundled so it will save you a lot of time down th
 <h2>Video</h2>
 
 If you prefer, you can also watch the
-<a href="http://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with Perl</a>
+<a href="https://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with Perl</a>
 video I uploaded to YouTube.
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/c3qzmJsR2H0" frameborder="0" allowfullscreen></iframe>

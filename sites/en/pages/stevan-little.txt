@@ -11,7 +11,7 @@
 
 =abstract start
 
-From art school to <a href="http://en.wikipedia.org/wiki/Moe_%28slang%29">萌え</a>.
+From art school to <a href="https://en.wikipedia.org/wiki/Moe_%28slang%29">萌え</a>.
 
 Stevan Little wrote Moose, the object system for Perl 5, and he is now writing Moe,
 a prototype of an Ultra Modern Perl 5, but how did he get there from Art school?
@@ -19,7 +19,7 @@ a prototype of an Ultra Modern Perl 5, but how did he get there from Art school?
 
 =abstract end
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/shu-bVimOpM" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="//www.youtube.com/embed/shu-bVimOpM" frameborder="0" allowfullscreen></iframe>
 
 <podcast>
 
