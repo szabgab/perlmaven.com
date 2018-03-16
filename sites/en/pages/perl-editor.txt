@@ -8,110 +8,76 @@
 
 =abstract start
 
-Perl scripts or Perl programs are just simple text files.
-You can use any kind of text editor to create them, but you should
-not use any word processor. Let me suggest a couple of editors and IDEs.
-
-BTW this article is part of the <a href="/perl-tutorial">Perl tutorial</a>.
+Perl scripts or Perl programs are just simple <a href="/what-is-a-text-file">text files</a>. You can use any kind of text editor to create them, but you should not use any word processor. Let me suggest a couple of editors and IDEs.
 
 =abstract end
 
-You can also watch the video about <a href="/beginner-perl-maven-editors">editors and IDEs</a>.
-
 <h2>Editor or IDE?</h2>
 
-For Perl development you can either use a plain text editor or an
-<b>Integrated Development Environment</b>, also called IDE.
+For Perl development you can either use a plain text editor or an <b>Integrated Development Environment</b>, also called IDE.
 
-First I'll describe the editors on the major platforms you might use,
-and then the IDEs which are usually platform independent.
+First I'll describe the editors on the major platforms you might use, and then the IDEs which are usually platform independent.
 
 <h2>Unix / Linux</h2>
 
-If you are working on Linux or Unix, then the most common editors used there are
-<a href="http://www.vim.org/">Vim</a> and
-<a href="http://www.gnu.org/software/emacs/">Emacs</a>.
-They have very different philosophy, both from
-each other, and from most of the editors out there.
+If you are working on Linux or Unix, then the most common editors used there are <a href="http://www.vim.org/">Vim</a> and <a href="http://www.gnu.org/software/emacs/">Emacs</a>. They have very different philosophy, both from each other, and from most of the editors out there.
 
 If you are familiar with either one of those, I'd recommend using them.
 
-For each one of them there are special extensions or modes to provide better support for Perl,
-but even without those they are very good for Perl development.
+For each one of them there are special extensions or modes to provide better support for Perl. Even without those they are very good for Perl development.
 
-If you are not familiar with those editors, then I'd probably recommend
-you separate your Perl learning curve from your editor learning experience.
+If you are not familiar with those editors, then I'd probably recommend you separate your Perl learning curve from your editor learning experience.
 
 Both of those editors are very powerful, but take a long time to master.
 
-It is probably better to focus on your Perl studies now, and only later to learn one
-of these editors.
+It is probably better to focus on your Perl studies now, and only later to learn one of these editors.
 
-While they are native to Unix/Linux, both
-<b>Emacs</b> and <b>Vim</b> are available for all the other major operating systems.
+While they are native to Unix/Linux, both <b>Emacs</b> and <b>Vim</b> are available for all the other major operating systems.
 
 <h2>Perl editors for Windows</h2>
 
 On Windows, many people are using the so-called "programmer's editors".
 
 <ul>
-<li><a href="http://www.ultraedit.com/">Ultra Edit</a> is a commercial editor.</li>
-<li><a href="http://www.textpad.com/">TextPad</a> is share-ware.</li>
-<li><a href="http://notepad-plus-plus.org/">Notepad++</a> is an open source and free editor.</li>
+    <li><a href="http://www.ultraedit.com/">Ultra Edit</a> is a commercial editor.</li>
+    <li><a href="http://www.textpad.com/">TextPad</a> is share-ware.</li>
+    <li><a href="http://notepad-plus-plus.org/">Notepad++</a> is an open source and free editor.</li>
 </ul>
 
-I have been using <b>Notepad++</b> a lot and I keep it installed on my Windows machine
-as it can be very useful.
+I have been using <b>Notepad++</b> a lot and I keep it installed on my Windows machine as it can be very useful.
 
 <h2>Mac OSX</h2>
 
-I don't have a Mac but according to popular vote,
-<a href="http://macromates.com/">TextMate</a> is the most often used Mac
-specific editor for Perl development.
+According to popular vote, <a href="http://macromates.com/">TextMate</a> is the most often used Mac specific editor for Perl development.
+
+As OSX is just a Unix machine you can probably use the same editors as you'd on a Linux box. Personally I use
+vim even on Mac.
+
 
 <h2>Perl IDEs</h2>
 
-Neither of the above are IDEs, that is, neither of them provide
-real, built-in debugger for Perl. They also don't provide language specific help.
+Neither of the above are IDEs, that is, neither of them provide real, built-in debugger for Perl. They also don't provide language specific help.
 
-<a href="http://www.activestate.com/">Komodo</a> from ActiveState costs a few hundreds of USD.
-It has a free version with limited capabilities.
+<a href="http://www.activestate.com/">Komodo</a> from ActiveState costs a few hundreds of USD. It has a free version with limited capabilities.
 
-People who are already <a href="http://www.eclipse.org/">Eclipse</a> users might want to know
-that there is a Perl plug-in for Eclipse called EPIC. There is also a project called
-<a href="https://github.com/skorg/perlipse">Perlipse</a>.
+People who are already <a href="http://www.eclipse.org/">Eclipse</a> users might want to know that there is a Perl plug-in for Eclipse called EPIC. There is also a project called <a href="https://github.com/skorg/perlipse">Perlipse</a>.
 
 <h2>Padre, the Perl IDE</h2>
 
-In July 2008 I started to write an <b>IDE for Perl in Perl</b>. I called it Padre -
-Perl Application Development and Refactoring Environment or
-<a href="http://padre.perlide.org/">Padre, the Perl IDE</a>.
+In July 2008 I started to write an <b>IDE for Perl in Perl</b>. I called it Padre - Perl Application Development and Refactoring Environment or <a href="http://padre.perlide.org/">Padre, the Perl IDE</a>.
 
-Many people joined the project. It is distributed by the major Linux distributions
-and it can also be installed from CPAN. See the
-<a href="http://padre.perlide.org/download.html">download</a> page for details.
-
-In some aspects it is still not as strong as Eclipse or Komodo but in some other,
-Perl specific areas it is already better than the other two.
-
-Moreover, it is very actively developed.
-If you are looking for a <b>Perl editor</b> or a <b>Perl IDE</b>,
-I'd recommend to give it a try.
+Many people joined the project. For some time it was distributed by the major Linux distributions and it could also be installed from CPAN. See the <a href="http://padre.perlide.org/download.html">download</a> page for details. Unfortunatelly development has stopped at the end of 2013. I'd only recommend it if you would actually like to improve Padre itself.
 
 <h2>The big Perl editor poll</h2>
 
-In October 2009 I ran a poll and asked
-<a href="http://perlide.org/poll200910/">Which editor(s) or IDE(s) are you using for Perl development?</a>
+In October 2009 I ran a poll and asked <a href="http://perlide.org/poll200910/">Which editor(s) or IDE(s) are you using for Perl development?</a>
 
 Now you can go with the crowd, against the crowd, or you can pick a perl editor that fits you.
 
 <h2>Other</h2>
 
-Alex Shatlovsky recommended <a href="http://www.sublimetext.com/">Sublime Text</a>, which is a platform independent editor,
-but one that costs some money.
+Alex Shatlovsky recommended <a href="http://www.sublimetext.com/">Sublime Text</a>, which is a platform independent editor, but one that costs some money.
 
-<h2>Next</h2>
+Peter Ulvskov recommended <a href="https://www.geany.org/">Geany</a> which is a cross-platform Open Source editor.
 
-Then next part in the tutorial is a small side-step to talk about <a href="/perl-on-the-command-line">Perl on the command line</a>.
-
-
+<a href="https://atom.io/">Atom</a> is another cross-platform Open Source editor.
