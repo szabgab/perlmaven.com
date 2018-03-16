@@ -8,6 +8,22 @@
 =comments_disqus_enable 0
 =show_related 0
 
+<h2>About this Tutorial and eBook</h2>
+
+The Perl Maven tutorial will teach you the basics of the Perl programming language.
+You'll be able to write simple scripts, analyze log files and read and write CSV files.
+Just to name a few common tasks.
+
+You'll learn how to use CPAN and several specific CPAN modules.
+
+It will be a good foundation for you to build on.
+
+If you are interested in getting updated when new parts are published,
+please <a href="/register">subscribe to the newsletter</a>.
+
+There is also an <a href="https://leanpub.com/perl-maven/">e-book</a> version of the material available for purchase.
+In addition to the tutorial, the eBook also includes some material that is only available <a href="/pro">pro</a> subscribers.
+
 <h2>Supporters</h2>
 
 The updating of Perl Tutorial was supported by a number of people and corporations via a crowdfunding campaign. Some people wanted to stay anonymous, but most of them are listed here. Thanks to all of you for making this ongoing work possible!
@@ -149,25 +165,12 @@ more code, sometimes a lot more code, than you would if you used a recent versio
 This tutorial, and this eBook tries to provide a solution to this dilemma by providing both. Telling you about
 the alternative options and giving advice which one to use in which situation.
 
-<h2>About this Tutorial and eBook</h2>
+<h2>Video series</h2>
 
-The Perl Maven tutorial will teach you the basics of the Perl programming language.
-You'll be able to write simple scripts, analyze log files and read and write CSV files.
-Just to name a few common tasks.
-
-You'll learn how to use the CPAN and several specific CPAN modules.
-
-It will be a good foundation for you to build on.
-
-If you are interested in getting updated when new parts are published,
-please <a href="/register">subscribe to the newsletter</a>.
-
-There is also an <a href="https://leanpub.com/perl-maven/">e-book</a> version of the material available for purchase.
-In addition to the tutorial, the eBook also includes some material that is only available <a href="/pro">pro</a> subscribers.
-
-There is also a free <a href="/beginner-perl-maven-video-course">video-course</a> that includes over 210 screencasts,
+There is a free <a href="/beginner-perl-maven-video-course">video course</a> that includes over 210 screencasts,
 a total of more than 5 hours of video. In addition to presenting the material it also provides explanations
 to the solutions of all the exercise.
+
 
 <h2>Free on-line Beginner Perl Maven tutorial</h2>
 
