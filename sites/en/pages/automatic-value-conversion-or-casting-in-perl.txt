@@ -133,23 +133,7 @@ That's exactly what you think it is. It will check if the given string looks lik
 It is provided by the <a href="http://perldoc.perl.org/Scalar/Util.html">Scalar::Util</a> module
 and you can use it like this:
 
-<code lang="perl">
-use strict;
-use warnings;
-
-use Scalar::Util qw(looks_like_number);
-
-print "How many loaves of bread shall I buy? ";
-my $loaves = <STDIN>;
-chomp $loaves;
-
-if (looks_like_number($loaves)) {
-    print "I am on it...\n";
-} else {
-    print "Sorry, I don't get it\n";
-}
-</code>
-
+<include file="examples/type_conversion.pl">
 
 Don't forget the milk too!
 
