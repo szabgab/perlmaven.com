@@ -92,7 +92,7 @@ Note, the code inside the internal blocks is further indented to the right with 
 
 In another example we can see how we can easily have several levels of indentation:
 
-<include file="examples/deep_indendation.pl">
+<include file="examples/deep_indentation.pl">
 
 This works properly, but it has two issues:
 
