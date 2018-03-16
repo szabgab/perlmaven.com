@@ -19,6 +19,7 @@ The following people and companies were generous enough to already support the c
 
 <ul>
    <li><a href="http://cpanel.com/">cPanel, Inc.</a> picked up almost 50% of the tab. Thanks to <a href="https://www.linkedin.com/in/bennyvasquez/">Benny Vasquez</a></li>
+   <li><a href="http://theperlshop.com">The Perl Shop</a> added increased the support with a last-minute pledge.</li>
 </ul>
 
 <ul>
