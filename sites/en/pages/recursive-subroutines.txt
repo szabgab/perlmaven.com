@@ -77,28 +77,7 @@ and <hl>..</hl> representing the parent director. We want to skip them, so we ca
 <hl>next</hl> when we encounter either of those. Then we print whatever we found in
 the directory.
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $path = shift || '.';
-
-traverse($path);
-
-sub traverse {
-    my ($thing) = @_;
-
-    return if not -d $thing;
-    opendir my $dh, $thing or die;
-    while (my $sub = readdir $dh) {
-        next if $sub eq '.' or $sub eq '..';
-        say "$thing/$sub";
-    }
-    close $dh;
-    return;
-}
-</code>
+<include file="examples/flat.pl">
 
 What happens if we run it with a path to one of the bottom directories?
 It will print the content.
@@ -139,29 +118,7 @@ For this the only thing we need to do is to add a call to
 <hl>traverse("$thing/$sub");</hl>, right after we printed the name of
 that directory. The full script will look like this:
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $path = shift || '.';
-
-traverse($path);
-
-sub traverse {
-    my ($thing) = @_;
-
-    return if not -d $thing;
-    opendir my $dh, $thing or die;
-    while (my $sub = readdir $dh) {
-        next if $sub eq '.' or $sub eq '..';
-        say "$thing/$sub";
-        traverse("$thing/$sub");
-    }
-    close $dh;
-    return;
-}
-</code>
+<include file="examples/tree.pl">
 
 If we happen to call this on the root directory, we'll see the following:
 
@@ -241,30 +198,7 @@ code reaches 100 level depth. If <hl>use warnings;</hl> is in effect.
 
 The full code of the top-down approach looks like this:
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $path = shift || '.';
-
-traverse($path);
-
-sub traverse {
-    my ($thing) = @_;
-	
-    say $thing;
-    return if not -d $thing;
-    opendir my $dh, $thing or die;
-    while (my $sub = readdir $dh) {
-        next if $sub eq '.' or $sub eq '..';
-
-        traverse("$thing/$sub");
-    }
-    close $dh;
-    return;
-}
-</code>
+<include file="examples/recurse.pl">
 
 And the result of its run is exactly what we wanted:
 
