@@ -371,7 +371,6 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
     <li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
     <li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
-    <li><a href="/what-are-string-and-numeric-contexts">What are string and numeric contexts?</a></li>
     <li><a href="/statement-modifiers">Statement modifiers: reversed if statements</a></li>
     <li><a href="/autovivification">autovivification</a></li>
 </ol>
