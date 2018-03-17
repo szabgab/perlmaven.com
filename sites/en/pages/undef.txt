@@ -1,0 +1,18 @@
+=title undef
+=timestamp 2018-03-17T07:30:01
+=indexes undef
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+<hl>undef</hl> is the "unknown value" of Perl. <a href="/undef-and-defined-in-perl">undef is the initial value of scalar variables</a>.
+
+=abstract end
+
+See <a href="/beginner-perl-maven-undef">undef explained in a video</a> and <a href="/how-to-return-undef-from-a-function">how to return nothing (or undef) from a function in Perl?</a>
+
+It is also a function that can be used to set variables to be undefined. See <a href="/undef-on-perl-arrays-and-hashes">undef on Perl arrays and hashes</a>.
+
