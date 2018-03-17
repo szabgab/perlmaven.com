@@ -25,30 +25,7 @@ and it always returns a value. Perl programmers often use the two words
 For example, let's say you'd like to prompt the user
 and ask a question:
 
-<code lang="perl">
-ask_question();
-my $answer = get_answer();
-# some code
-ask_question();
-my $second_answer = get_answer();
-
-########## sub declarations come here
-
-sub ask_question {
-  print "Have we arrived already?";
-  return;
-}
-
-sub get_answer {
-  my $answer = <STDIN>;
-  chomp $answer;
-  return $answer;
-}
-
-sub terminate {
-   die "Hasta La Vista";
-}
-</code>
+<include file="examples/simple_question.pl">
 
 In the first part of the code we called the <hl>ask_question</hl> function twice,
 and also called the <hl>get_answer</hl> function twice. In the second part of the code,
@@ -78,37 +55,13 @@ the <hl>ask_question()</hl> function.
 
 It would be probably much more interesting to combine the two functions so you could write:
 
-<code lang="perl">
-my $answer = prompt();
-# some code
-my $second_answer = prompt();
-
-sub prompt {
-   print "Have we arrived already?";
-
-   my $answer = <STDIN>;
-   chomp $answer;
-   return $answer;
-}
-</code>
+<include file="examples/a_prompt.pl">
 
 Of course in each situations you might want the <hl>prompt()</hl> function to display some unique text.
 So probably you'd want to be able to set the text of the prompt where you call the <hl>prompt()</hl>
 function. Something like this:
 
-<code lang="perl">
-my $first_name = prompt("First name: ");
-my $last_name = prompt("Last name: ");
-
-sub prompt {
-   my ($text) = @_;
-   print $text;
-
-   my $answer = <STDIN>;
-   chomp $answer;
-   return $answer;
-}
-</code>
+<include file="examples/prompt_with_text.pl">
 
 In this example we called the prompt() function twice.
 In each case we passed a string that is the text of the
@@ -199,5 +152,4 @@ at the end of the function declaration.
 If there is nothing to return just call <hl>return;</hl> without any argument.
 That will ensure that you really return nothing, and not the result of the
 last statement.This will eliminate some surprises for the users of this function.
-
 
