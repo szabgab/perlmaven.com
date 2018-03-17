@@ -70,7 +70,7 @@ foreach my $word (reverse sort { $count{$a} <=> $count{$b} } keys %count) {
 Now that we know how we are going to print the results,
 let's assume the words are given in an array.
 
-<include file="examples/store_numer_of_occurances.pl">
+<include file="examples/store_number_of_occurances.pl">
 
 We iterate over the elements of the array using <hl>foreach</hl>
 and increment the counter of the current string. At first the
