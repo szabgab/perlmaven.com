@@ -23,27 +23,7 @@ or the number of hits on a web site that came from various IP addresses.
 Here is an example counting the frequency of strings in a text file.
 The following script counts the frequency of strings separated by spaces:
 
-<code lang="perl">
-use strict;
-use warnings;
-
-my %count;
-my $file = shift or die "Usage: $0 FILE\n";
-open my $fh, '<', $file or die "Could not open '$file' $!";
-while (my $line = <$fh>) {
-    chomp $line;
-    foreach my $str (split /\s+/, $line) {
-        $count{$str}++;
-    }
-}
-
-foreach my $str (sort keys %count) {
-    printf "%-31s %s\n", $str, $count{$str};
-}
-</code>
-
- 
-
+<include file="examples/count_words.pl">
 
 <h2>The task</h2>
 
@@ -90,22 +70,7 @@ foreach my $word (reverse sort { $count{$a} <=> $count{$b} } keys %count) {
 Now that we know how we are going to print the results,
 let's assume the words are given in an array.
 
-<code lang="perl">
-use strict;
-use warnings;
-
-my @strings = ('hello', 'world', 'hello', 'Perl');
-
-my %count;
-
-foreach my $str (@strings) {
-    $count{$str}++;
-}
-
-foreach my $str (sort keys %count) {
-    printf "%-31s %s\n", $str, $count{$str};
-}
-</code>
+<include file="examples/store_numer_of_occurances.pl">
 
 We iterate over the elements of the array using <hl>foreach</hl>
 and increment the counter of the current string. At first the
@@ -188,24 +153,7 @@ in the memory of our computer.
 It is usually better to process the file line-by-line like in the following
 example:
 
-<code lang="perl">
-use strict;
-use warnings;
-
-my %count;
-my $file = shift or die "Usage: $0 FILE\n";
-open my $fh, '<', $file or die "Could not open '$file' $!";
-while (my $line = <$fh>) {
-    chomp $line;
-    foreach my $str (split /\s+/, $line) {
-        $count{$str}++;
-    }
-}
-
-foreach my $str (sort keys %count) {
-    printf "%-31s %s\n", $str, $count{$str};
-}
-</code>
+<include file="examples/strings_in_a_file.pl">
 
 <h2>Extracting real words</h2>
 
