@@ -24,17 +24,7 @@ The function <hl>reverse</hl> can be used in both cases:
 
 <h2>Reverse array</h2>
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my @words = qw(Foo Bar Moo);
-say join ' ', @words;
-
-my @sdrow = reverse @words;
-say join ' ', @sdrow;
-</code>
+<include file="examples/reverse_array.pl">
 
 And the output is:
 
@@ -45,21 +35,7 @@ Moo Bar Foo
 
 <h2>Reverse a scalar: string or number</h2>
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $str = 'stressed';
-say $str;
-my $rev = reverse $str;
-say $rev;
-
-my $n = 3.14;
-say $n;
-my $u = reverse $n;
-say $u;
-</code>
+<include file="examples/reverse_scalar.pl">
 
 And the output is:
 
