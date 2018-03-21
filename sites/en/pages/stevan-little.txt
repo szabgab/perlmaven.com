@@ -32,7 +32,7 @@ a prototype of an Ultra Modern Perl 5, but how did he get there from Art school?
  <li>Moe contributor <a href="https://github.com/prakashk">Prakash Kailasa</a> known as "sahadev" on IRC was mentioned.
      He is using the <a href="http://aperiodic.net/phil/scala/s-99/">99 Scala Problems</a> for example driven development of Moe.</li>
  <li><a href="http://www.perl6.org/">Perl 6</a></li>
- <li><a href="https://metacpan.org/author/AUDREYT">Audrey Tang</a> and the mostly defunct <a href="http://www.pugscode.org/">Pugs project</a>.</li>
+ <li><a href="https://metacpan.org/author/AUDREYT">Audrey Tang</a> and the mostly defunct Pugs project (was pugscode.org).</li>
  <li><a href="https://metacpan.org/pod/Class::MOP">Class::MOP</a> the Meta Object Protocol Moose sits on top of.</li>
  <li><a href="https://github.com/gaal">Gaal Yahas</a> and <a href="http://blog.woobling.org/">Yuval Kogman (nothingmuch)</a>, who came up with the name Moose.</li>
  <li><a href="http://blog.urth.org/">Dave Rolsky (autarch)</a> who rewrote the manual of Moose. (See the <a href="/dave-rolsky">interview with Dave Rolsky</a>)</li>
