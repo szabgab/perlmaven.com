@@ -363,15 +363,19 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/pro/substr-outside-of-string">substr outside of string at ...</a></li>
 </ol>
 
-
-<b>Other</b>
+<b>Extra articles</b>
 <ol>
-    <li><a href="/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
     <li><a href="/multi-dimensional-arrays-in-perl">Multi dimensional arrays</a></li>
     <li><a href="/multi-dimensional-hashes">Multi dimensional hashes</a></li>
     <li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
     <li><a href="/statement-modifiers">Statement modifiers: reversed if statements</a></li>
     <li><a href="/autovivification">autovivification</a></li>
+</ol>
+
+<b>From other books</b>
+<ol>
+    <li><a href="/splice-to-slice-and-dice-arrays-in-perl">Splice to slice and dice arrays in Perl</a></li>
+    <li><a href="/how-to-improve-my-perl-program">How to improve your Perl code</a></li>
 </ol>
 
 <b>Object Oriented Perl with Moose or Moo</b>
@@ -380,8 +384,6 @@ There is a whole series of articles on writing Object Oriented code, using the
 light-weight <a href="/moo">Moo</a> OOP framework or the full-blown <a href="/moose">Moose</a> OOP framework.
 
 <hr>
-
-<a href="/how-to-improve-my-perl-program">How to improve your Perl code</a>
 
 There is a corresponding <a href="/beginner-perl-maven-video-course">video courses</a> and the whole tutorial
 is available as <a href="https://leanpub.com/perl-maven/">eBook</a>.
