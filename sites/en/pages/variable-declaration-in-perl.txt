@@ -120,7 +120,7 @@ using this "fully qualified" form of the variable.
 As <hl>use strict</hl> does not apply to the package variables, you can easily make a typo
 as I actually did when I wrote the first version of the example:
 
-<include file="exampes/fully_qualified_name_with_typo.pl">
+<include file="examples/fully_qualified_name_with_typo.pl">
 
 and it printed nothing. No error. No warning. Nothing.
 
@@ -131,7 +131,7 @@ some places, but we'll talk about that another time.
 
 Anyway, this brings me to the importance of the <hl>use warnings</hl> pragmata. If we used that too,
 
-<include file="exampes/fully_qualified_name_with_warnings.pl">
+<include file="examples/fully_qualified_name_with_warnings.pl">
 
 we would get the following run-time warnings:
 
@@ -145,7 +145,7 @@ Might not be the best solution, but at least we get some indication that somethi
 
 Even that warning can disappear if I am extremely bad at typing.
 
-<include file="exampes/fully_qualified_name_bad_typing.pl">
+<include file="examples/fully_qualified_name_bad_typing.pl">
 
 Here I made the exact same typo twice (maybe a copy paste?) and the result is
 
