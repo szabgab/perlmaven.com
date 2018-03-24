@@ -19,6 +19,8 @@ Solution: of the <a href="/beginner-perl-maven-exercise-sort-scores">sort scores
 
 We run it as <hl>perl score_data.pl score_data.txt</hl>.
 
+<include file="examples/hashes/score_data.txt">
+
 The code starts with the usual <a href="/hashbang">hash-bang</a> line followed by
 <a href="/always-use-strict-and-use-warnings">use strict; and use warnings;</a>.
 
