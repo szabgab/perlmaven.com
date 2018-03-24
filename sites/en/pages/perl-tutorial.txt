@@ -136,7 +136,7 @@ The updating of Perl Tutorial was supported by a number of people and corporatio
    <li><a href="https://www.linkedin.com/in/james-carman-0658578/">Jeremy Carman</a></li>
    <li><a href="https://www.linkedin.com/in/johnbusco/">John Busco</a></li>
    <li><a href="https://www.linkedin.com/in/leholarven/">Leho Larven</a></li>
-   <li>Magnus Enger</li>
+   <li><a href="https://www.linkedin.com/in/magnusenger/">Magnus Enger</a></li>
    <li><a href="https://www.linkedin.com/in/stephen-hall-b5b3826/">Stephen Hall</a></li>
    <li><a href="https://www.linkedin.com/in/hazard/">Vladimir Ivashchenko</a></li>
    <li>Håkon Hægland</li>
