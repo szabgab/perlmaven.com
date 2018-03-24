@@ -228,8 +228,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/appending-to-files">Appending to files</a></li>
     <li><a href="/open-and-read-from-files">Open and read from files using Perl</a></li>
     <li><a href="/open-files-in-the-old-way">Don't open files in the old way</a></li>
-    <li>Binary mode, dealing with Unicode</li>
-    <li>Reading from a binary file, read, eof</li>
+    <li><a href="/pro/reading-and-writing-binary-files">Binary mode - reading and writing binary files</a></li>
     <li>tell, seek</li>
     <li>truncate</li>
     <li><a href="/slurp">Slurp mode</a></li>
