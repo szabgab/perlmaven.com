@@ -300,7 +300,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
 
 <b>Shell related functionality</b>
 <ol>
-    <li>Perl -X operators</li>
+    <li><a href="/file-test-operators">Perl -X operators</a></li>
     <li>Perl pipes</li>
     <li>Unix commands: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
     <li>Running external programs <a href="/running-external-programs-from-perl">using system</a></li>
