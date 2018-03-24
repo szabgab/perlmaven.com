@@ -302,9 +302,9 @@ Where possible I'll also direct you to some exercises you can do to practice wha
 <ol>
     <li><a href="/file-test-operators">Perl -X operators</a></li>
     <li>Perl pipes</li>
-    <li>Unix commands: rm, mv, chmod, chown, cd, mkdir, rmdir, ln, ls, cp</li>
+    <li>Unix commands: chmod, chown, cd, mkdir, rmdir, ln, ls</li>
     <li>Running external programs <a href="/running-external-programs-from-perl">using system</a></li>
-    <li><a href="/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
+    <li>Unix commands: rm, mv, cp: <a href="/how-to-remove-copy-or-rename-a-file-with-perl">How to remove, copy or rename a file with Perl</a></li>
     <li>Windows/DOS commands: del, ren, dir</li>
     <li>File globbing (Wildcards)</li>
     <li><a href="/reading-the-content-of-a-directory">Directory handles</a></li>
