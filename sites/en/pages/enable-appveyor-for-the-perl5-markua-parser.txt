@@ -64,7 +64,7 @@ There is a canonical link to the <a href="https://ci.appveyor.com/project/szabga
 </code>
 
 The new file i this: 
-<include file="examples/markua-parser/d3708181fc8934d7c0d2e0bd2abbd58c702c2903/README.md">
+<include file="examples/markua-parser/d370818.md">
 
 Then the usual:
 
