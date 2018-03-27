@@ -155,7 +155,7 @@ In every tutorial and in every book there is a tension between teaching the most
 or teach how the legacy code works.
 
 The most recent techniques will only be available to people who can use the most recent version of Perl.
-They are probably only relevant to new projects. People who need need to use older versions of Perl or
+They are probably only relevant to new projects. People who need to use older versions of Perl or
 who cannot install modern CPAN modules will just get frustrated seeing all the nice stuff, but not able
 to use it.
 
