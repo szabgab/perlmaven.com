@@ -7,6 +7,7 @@
 =archive 0
 =comments_disqus_enable 0
 =show_related 0
+=sample 1
 
 <h2>About this Tutorial and eBook</h2>
 
