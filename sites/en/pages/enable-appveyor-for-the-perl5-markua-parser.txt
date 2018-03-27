@@ -63,8 +63,8 @@ There is a canonical link to the <a href="https://ci.appveyor.com/project/szabga
 [![Build status](https://ci.appveyor.com/api/projects/status/github/szabgab/perl5-markua-parser?svg=true)](https://ci.appveyor.com/project/szabgab/perl5-markua-parser/branch/master)
 </code>
 
-The new file i this: 
-<include file="examples/markua-parser/d370818.md">
+The new file is this: 
+<include file="examples/markua-parser/d370818/README.md">
 
 Then the usual:
 
