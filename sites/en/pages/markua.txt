@@ -26,6 +26,10 @@ In this project I am going to create a Markua parser in Perl 5, or at least I st
     <li>The rest of the articles are available to <a href="/pro">Pro</a> subscribers and to readers of the <a href="https://leanpub.com/markua-parser-in-perl5">Markua Parser in Perl 5</a> eBook.</li>
     <li><a href="/pro/process-the-six-headers-of-markua">Process the 6 headers of Markua</a></li>
     <li><a href="/pro/refactor-test-cases-of-markua-parser">Refactor test cases of the Markua Parser in Perl 5</a></li>
+    <li><a href="/pro/collecting-errors-while-parsing-markua">Collecting errors while parsing Markua in Perl 5 - disregarding empty rows</a></li>
+    <li><a href="/pro/get-coveralls-notify-when-test-coverage-shrinks">Get Coveralls to notify when test-coverage shrinks</a></li>
+    <li><a href="/pro/consider-everything-to-be-a-paragraph-in-markua">Consider everything not recognizable as a paragraph in Markua</a></li>
+    <li><a href="/pro/markua-resources-include-files">Markua resources: Include files</a></li>
 </ol>
 
 <h2>TODO</h2>
@@ -33,8 +37,6 @@ In this project I am going to create a Markua parser in Perl 5, or at least I st
 Some of my plans in not necessarily the right order
 
 <ul>
-    <li>Free text (paragraph)</li>
-    <li>Include file</li>
     <li>Embed image</li>
     <li>Embed code</li>
     <li>Inline code</li>
