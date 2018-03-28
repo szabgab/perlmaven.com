@@ -84,6 +84,37 @@ and instead of the <hl>undef</hl>, here we have <hl>null</hl>. Oh and the keys a
 
 We can now take this string, save it to  file or send it to another computer.
 
+<h2>Encoding JSON in a human-readable way</h2>
+
+While the above JSON is compact, it is also quite difficult to read and manually edit. We can ask the JSON
+encoder to make the JSON pretty. (Sometime this is called JSON beautification or JSON beautifier).
+The syntax is slightly different:
+
+<include file="examples/json_encode_pretty.pl">
+
+<code>
+$ perl examples/json_encode_pretty.pl
+</code>
+
+So is the result:
+
+<code>
+{
+   "address" : {
+      "city" : "Fooville",
+      "planet" : "Earth"
+   },
+   "name" : "Foo Bar",
+   "email" : "foo@bar.com",
+   "gender" : null,
+   "classes" : [
+      "Chemistry",
+      "Math",
+      "Litreture"
+   ]
+}
+</code>
+
 <h2>Decoding JSON to Perl</h2>
 
 In the other way around, let's assume we have a JSON string in the <hl>$student_json</hl> variable.

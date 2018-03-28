@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use 5.010;
 
-use Cpanel::JSON::XS qw(encode_json decode_json);
+use JSON::MaybeXS qw(encode_json decode_json);
 
 my $student_json = '{"classes":["Chemistry","Math","Litreture"],"gender":null,"name":"Foo Bar","email":"foo@bar.com","address":{"city":"Fooville","planet":"Earth"}}';
 

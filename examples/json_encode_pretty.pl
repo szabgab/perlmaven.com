@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use 5.010;
 
-use JSON::MaybeXS qw(encode_json decode_json);
+use JSON::MaybeXS ();
 
 my $student = {
     name => 'Foo Bar',
@@ -19,6 +19,8 @@ my $student = {
     },
 };
 
-my $student_json = encode_json $student;
+my $json = JSON::MaybeXS->new(utf8 => 1, pretty => 1);
+my $student_json = $json->encode($student);
 say $student_json;
+
 
