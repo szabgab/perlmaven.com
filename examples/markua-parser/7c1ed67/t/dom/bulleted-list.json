@@ -1,0 +1,51 @@
+[
+   {
+      "list" : {
+         "bullet" : "*",
+         "items" : [
+            "A list with a single bullet"
+         ],
+         "ok" : 1,
+         "space" : " ",
+         "type" : "bulleted"
+      },
+      "tag" : "list"
+   },
+   {
+      "list" : {
+         "bullet" : "*",
+         "items" : [
+            "Two spaces",
+            "Another bullet point with 2 spaces"
+         ],
+         "ok" : 1,
+         "space" : "  ",
+         "type" : "bulleted"
+      },
+      "tag" : "list"
+   },
+   {
+      "list" : {
+         "bullet" : "*",
+         "items" : [
+            "Four spaces is still a bulleted list"
+         ],
+         "ok" : 1,
+         "space" : "    ",
+         "type" : "bulleted"
+      },
+      "tag" : "list"
+   },
+   {
+      "tag" : "p",
+      "text" : "*     Five spaces is not a bulletted list"
+   },
+   {
+      "tag" : "p",
+      "text" : "One spaceAnother number of spaces. The whole thing becomes a paragraph"
+   },
+   {
+      "tag" : "p",
+      "text" : "*No space means it is a paragraph"
+   }
+]
