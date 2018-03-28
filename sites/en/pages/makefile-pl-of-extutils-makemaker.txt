@@ -43,31 +43,7 @@ If there are some script that you would like to be installed, you can list them 
 There are plenty of other properties that can be set in the Makefile.PL, for further information look at the documentation
 of <a href="https://metacpan.org/pod/ExtUtils::MakeMaker">ExtUtils::MakeMaker</a>.
 
-<code lang="perl">
-use strict;
-use warnings;
+<include file="examples/Makefile.PL">
 
-use 5.008;
-
-use ExtUtils::MakeMaker;
-WriteMakefile
-(
-    NAME         => 'App',
-    VERSION_FROM => 'lib/App.pm',
-    PREREQ_PM    => {
-          'File::Basename' => '0',
-          'Moose'          => '0.24',
-    },
-    TEST_REQUIRES => {
-          'Test::More' => '0.47'
-    },
-    BUILD_REQUIRES => {
-          'Other::Module' => '0'
-    },
-    EXE_FILES' => [
-           'script/app.pl'
-    ],
-);
-</code>
-
+See also <a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">How to convince Meta CPAN to show a link to the version control system of a distribution?</a> and <a href="/how-to-add-the-license-field-to-meta-files-on-cpan">How to add the license field to the META.yml and META.json files on CPAN?</a>
 
