@@ -1,0 +1,11 @@
+^.appveyor.yml
+^.travis.yml
+^.git/
+^.gitignore
+^MYMETA.*
+^MYMETA.yml
+^pm_to_blib
+^Makefile$
+^MANIFEST.bak
+^MANIFEST.SKIP
+^blib/
