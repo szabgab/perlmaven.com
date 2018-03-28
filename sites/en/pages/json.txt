@@ -87,10 +87,12 @@ We can now take this string, save it to  file or send it to another computer.
 <h2>Encoding JSON in a human-readable way</h2>
 
 While the above JSON is compact, it is also quite difficult to read and manually edit. We can ask the JSON
-encoder to make the JSON pretty. (Sometime this is called JSON beautification or JSON beautifier).
+encoder to make the JSON pretty. (Sometimes this is called JSON beautification or JSON beautifier).
 The syntax is slightly different:
 
 <include file="examples/json_encode_pretty.pl">
+
+(You might need a relatively recent version of <a href="https://metacpan.org/pod/Cpanel::JSON::XS">Cpanel::JSON::XS</a> to support the <hl>sort_by</hl> parameter.
 
 <code>
 $ perl examples/json_encode_pretty.pl
@@ -104,14 +106,14 @@ So is the result:
       "city" : "Fooville",
       "planet" : "Earth"
    },
-   "name" : "Foo Bar",
-   "email" : "foo@bar.com",
-   "gender" : null,
    "classes" : [
       "Chemistry",
       "Math",
       "Litreture"
-   ]
+   ],
+   "email" : "foo@bar.com",
+   "gender" : null,
+   "name" : "Foo Bar"
 }
 </code>
 

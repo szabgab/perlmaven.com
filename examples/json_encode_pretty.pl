@@ -19,7 +19,7 @@ my $student = {
     },
 };
 
-my $json = JSON::MaybeXS->new(utf8 => 1, pretty => 1);
+my $json = JSON::MaybeXS->new(utf8 => 1, pretty => 1, sort_by => 1);
 my $student_json = $json->encode($student);
 say $student_json;
 
