@@ -37,16 +37,3 @@ The first few articles are available to everyone. The rest of the articles are o
     <li><a href="/pro/release-markua-parser-to-cpan">Release the Markua::Parser to CPAN</a></li>
 </ol>
 
-<h2>TODO</h2>
-
-Some of my plans in not necessarily the right order
-
-<ul>
-    <li>Embed image</li>
-    <li>Embed code</li>
-    <li>Inline code</li>
-    <li>Bold text</li>
-    <li>Some horizontal separator like the <hl>hr</hl> tag of HTML?</li>
-    <li>Some way to separate an "abstract" that will be displayed on the front page.</li>
-</ul>
- 
