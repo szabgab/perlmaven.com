@@ -15,7 +15,7 @@ for writing books.
 
 In this project I am going to create a Markua parser in Perl 5, or at least I start doing it and will implement enough of it so I can start writing the Perl Maven articles in Markua. That will allow me to easily include Perl Maven articles in an eBook published on LeanPub. For example to create the <a href="https://leanpub.com/perl-maven/">eBook of the Perl Maven Tutorial</a> or to create the <a href="https://leanpub.com/markua-parser-in-perl5">Markua Parser in Perl 5 eBook</a>
 
-The first few articles are available to everyone. The rest of the articles are only available to <a href="/pro">Perl Maven Pro</a> subscribers and to readers of the <a href="https://leanpub.com/markua-parser-in-perl5">Markua Parser in Perl 5</a> eBook.</li>
+The first few articles are available to everyone. The rest of the articles are only available to <a href="/pro">Perl Maven Pro</a> subscribers and to readers of the <a href="https://leanpub.com/markua-parser-in-perl5">Markua Parser in Perl 5</a> eBook.
 
 =abstract end
 
