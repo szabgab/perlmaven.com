@@ -51,7 +51,7 @@ $ git remote add origin git@github.com:szabgab/perl5-markua-parser.git
 $ git push -u origin master
 </code>
 
-<a href="https://github.com/szabgab/perl5-markua-parser/commit/605d7df604a819748a3ab393c44e19f59a478183"">commit</a>.
+<a href="https://github.com/szabgab/perl5-markua-parser/commit/605d7df604a819748a3ab393c44e19f59a478183">commit</a>.
 
 <h2>Create constructor and test it</h2>
 
