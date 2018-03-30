@@ -12,8 +12,6 @@
 =show_social 0
 
 
-<div class="btn"><a href="/buy?product=advanced_perl_maven_ebook">Buy for $32</a></div>
-
 Reading this <b>Advanced Perl book</b> will teach you how to create modules and classes
 and in general how to write and maintain advanced Perl code.
 
@@ -77,7 +75,4 @@ By purchasing the e-book you get unlimited updates as new editions are published
 
 Currently it is available in PDF format and contains 171 pages. Other formats will be
 added later and will be available without additional payment.
-
-<div class="btn"><a href="/buy?product=advanced_perl_maven_ebook">Buy for $32</a></div>
-
 

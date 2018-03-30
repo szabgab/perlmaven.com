@@ -39,5 +39,3 @@ The <b>Test Automation using Perl</b> e-book will teach you from the ground up h
 
 By purchasing the book you get unlimited updates as new editions are published!
 
-<div class="btn"><a href="/buy?product=test_automation_using_perl_ebook">Buy for $39</a></div>
-

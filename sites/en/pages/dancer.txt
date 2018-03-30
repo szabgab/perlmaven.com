@@ -60,15 +60,3 @@ Then also implement a notification solution so if the data is changed on the ser
   <li><a href="/psgi">PSGI</a> - Dancer is a PSGI based web framework. Learning about the lower layer might be useful.</li>
 </ul>
 
-<!--
-<h2>Dancer Book</h2>
-
-This book contains all the articles related to Dancer, including those that are only available to the <a href="/pro">Perl Maven Pro</a> subscribers.
-
-<h2>
-<span class="label label-lg label-success buy-button">
-  <a href="/buy?product=dancer" title="Buy Dancer book for $15" alt="Buy Dancer book for $15">Buy Dancer book for $15</a>
-</span>
-</h2>
--->
-

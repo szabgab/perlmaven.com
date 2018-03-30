@@ -36,8 +36,6 @@ yazmanıza ve/veya var olan uygulamaları yönetmenize katkı sağlayacaktır.
 <img src="/img/beginner_perl_maven_150x212.png" alt="Beginner Perl Maven kitap kapağı"  />
 </div>
 
-<div class="btn"><a href="/buy?product=beginner_perl_maven_ebook">$32'a satın al</a></div>
-
 <h2>İçerik Tablosu</h2>
 
 <ul>
@@ -88,7 +86,4 @@ yazmanıza ve/veya var olan uygulamaları yönetmenize katkı sağlayacaktır.
 
 
 Kitabı satın almakla yeni baskı guncellenmelerini elde etmeye de hak kazanacaksınız!
-
-<div class="btn"><a href="/buy?product=beginner_perl_maven_ebook">$32'a satın al</a></div>
-
 
