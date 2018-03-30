@@ -24,6 +24,7 @@ and related sites. This page collects the articles and screencasts published on 
   <li><a href="/cpan-mcpan-metacpan">CPAN, mcpan, MetaCPAN</a></li>
   <li><a href="/metacpan-cpantesters">MetaCPAN and the CPAN Testers</a></li>
   <li><a href="/metacpan-recent-uploads">MetaCPAN recent uploads</a></li>
+  <li><a href="/listing-all-the-modules-in-a-namespace">Listing all the modules in a namespace</a>  Finding all Plack Middleware or Perl::Critic Policies</li>
 </ul>
 
 <h2>MetaCPAN for CPAN authors</h2>
