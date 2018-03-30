@@ -13,8 +13,6 @@
 =comments_disqus_enable 0
 =show_social 0
 
-<div class="btn"><a href="/buy?product=advanced_perl_maven_ebook">Achetez-le pour 32 USD (EN)</a></div>
-
 Lire <b>ce livre Perl niveau avancé</b> vous montrera comment créer des modules et des classes, et, en général, comment écrire et maintenir du code Perl avancé.
 
 Ce livre vous montrera comment écrire du code orienté objet :
@@ -86,5 +84,3 @@ mélangées avec des caractéristiques contemporaines de Perl et de CPAN.
 En achetant ce livre, vous obtenez les mises à jour illimitées des nouvelles éditions dès leur publication !
 
 Aujourd'hui, ce livre est disponible au format PDF et contient 171 pages. D'autres formats seront ajoutés plus tard et seront disponibles sans coût supplémentaire.
-
-<div class="btn"><a href="/buy?product=advanced_perl_maven_ebook">Achetez-le pour 32 USD (EN)</a></div>

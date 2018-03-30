@@ -31,8 +31,6 @@ Lire ce livre et résoudre tous les exercices vous permettra de commencer à éc
 <img src="/img/beginner_perl_maven_150x212.png" alt="Couverture du livre numérique Perl Maven pour débutant" />
 </div>
 
-<div class="btn"><a href="/buy?product=beginner_perl_maven_ebook">Achetez-le pour 32 USD (EN)</a></div>
-
 <h2>Table des matières</h2>
 
 <ul>
@@ -87,4 +85,3 @@ Lire ce livre et résoudre tous les exercices vous permettra de commencer à éc
 
 En achetant ce livre, vous obtenez les mises à jour illimitées des nouvelles éditions dès leur publication !
 
-<div class="btn"><a href="/buy?product=beginner_perl_maven_ebook">Achetez-le pour 32 USD (EN)</a></div>
