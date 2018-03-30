@@ -25,12 +25,6 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/testing-perl-cgi">Testing Perl CGI</a></li>
 </ol>
 
-<h2>Interviews</h2>
-<ol>
-  <li><a href="/chad-granum">Interview with Chad (Exodist) Granum, author of the Fennec testing tool</a></li>
-  <li><a href="/michael-schwern-on-test-automation-and-git">Interview with Michael Schwern on test automation and Git</a></li>
-</ol>
-
 <h2>Test Automation using Perl screencasts</h2>
 <ol>
   <li><a href="/introducing-test-simple">Introducing test automation with Test::Simple</a></li>
@@ -60,6 +54,12 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/testing-a-simple-tcpip-server">Testing a simple TCP/IP server using Net::Telnet</a></li>
   <li>---</li>
   <li><a href="/moose-test-constructor">Moose: Testing the constructor</a></li>
+</ol>
+
+<h2>Interviews</h2>
+<ol>
+  <li><a href="/chad-granum">Interview with Chad (Exodist) Granum, author of the Fennec testing tool</a></li>
+  <li><a href="/michael-schwern-on-test-automation-and-git">Interview with Michael Schwern on test automation and Git</a></li>
 </ol>
 
 
