@@ -9,7 +9,7 @@
 =abstract start
 
 When <a href="/perl-tutorial">getting started with Perl</a> one of the first things you need to
-now is how to interact with the user on the command line. In other words you need to be able to
+know is how to interact with the user on the command line. In other words you need to be able to
 handle basic Input Output (I/O).
 
 =abstract end
