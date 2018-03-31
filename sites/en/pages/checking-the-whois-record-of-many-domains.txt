@@ -43,11 +43,15 @@ interesting ones listed in the documentation of the module. The module names
 
 <include file="examples/try_whois.pl">
 
-This printed out the same information as the command line <b>whois</b> would do. For examples:
+This printed out the same information as the command line <b>whois</b> would do. 
+
+For examples this command:
 
 <code>
 perl examples/try_whois.pl google.com
-<code>
+</code>
+
+generated this output:
 
 <include file="examples/whois_google.txt">
 
