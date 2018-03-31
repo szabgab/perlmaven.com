@@ -132,7 +132,7 @@ The subroutine is expected to get the result of the <hl>whois</hl>.
 sub get_ns {
     my ($data) = @_;
 
-    my @ns = map { uc $_ } sort $data =~ /^Name Server:(\S+)\s*$/mg;
+    my @ns = map { uc $_ } sort $data =~ /^Name Server:\s*(\S+)\s*$/mg;
 
     if (not @ns) {
         @ns = map { uc $_ } sort $data =~ /^nserver:\s*(\S+)\s*$/mg;
