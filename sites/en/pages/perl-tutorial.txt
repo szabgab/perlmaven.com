@@ -37,7 +37,7 @@ The updating of Perl Tutorial was supported by a number of people and corporatio
 <ul>
    <li><a href="https://www.linkedin.com/in/elizabeth-mattijsen-7483002/">Liz</a> &amp; <a href="https://www.linkedin.com/in/wendyga/">Wendy</a> Mattijsen &amp; Van Dijk</li>
    <li>Desmond Hokin</li>
-   <li>Kevin Phair</li>
+   <li><a href="https://www.linkedin.com/in/kevin-phair-1914602/">Kevin Phair</a></li>
 </ul>
 
 <ul>
@@ -67,7 +67,7 @@ The updating of Perl Tutorial was supported by a number of people and corporatio
    <li><a href="https://www.linkedin.com/in/laurence-sherwood-9731a14/">Larry Sherwood</a></li>
    <li>Meir Guttman</li>
    <li>Rab McGill</li>
-   <li>Vladimir Ivashchenko</li>
+   <li><a href="https://www.linkedin.com/in/hazard/">Vladimir Ivashchenko</a></li>
 </ul>
 <ul>
    <li>Andrew Dorman</li>
@@ -107,8 +107,8 @@ The updating of Perl Tutorial was supported by a number of people and corporatio
    <li>Peter Ulvskov</li>
    <li><a href="https://www.linkedin.com/in/peter-gal/">Péter Gál</a></li>
    <li>Rob Dixon</li>
-   <li>Ross Steiner</li>
-   <li>Sachin Dangol</li>
+   <li><a href="https://www.linkedin.com/in/rdsteiner/">Ross Steiner</a></li>
+   <li><a href="https://www.linkedin.com/in/sachin-dangol-7b609627/">Sachin Dangol</a></li>
    <li>Saif Ahmed</li>
    <li>Samuel John</li>
    <li>Santosh Angadi</li>
@@ -132,14 +132,13 @@ The updating of Perl Tutorial was supported by a number of people and corporatio
 
 <ul>
    <li>A Norwegian</li>
-   <li>Bruno Contreras</li>
+   <li><a href="https://www.linkedin.com/in/bruno-contreras-moreira-6233519/">Bruno Contreras Moreira</a></li>
    <li><a href="https://www.linkedin.com/in/emilperhinschi/">Emil Nicolaie Perhinschi</a></li>
    <li><a href="https://www.linkedin.com/in/james-carman-0658578/">Jeremy Carman</a></li>
    <li><a href="https://www.linkedin.com/in/johnbusco/">John Busco</a></li>
    <li><a href="https://www.linkedin.com/in/leholarven/">Leho Larven</a></li>
    <li><a href="https://www.linkedin.com/in/magnusenger/">Magnus Enger</a></li>
    <li><a href="https://www.linkedin.com/in/stephen-hall-b5b3826/">Stephen Hall</a></li>
-   <li><a href="https://www.linkedin.com/in/hazard/">Vladimir Ivashchenko</a></li>
    <li>Håkon Hægland</li>
 </ul>
 
