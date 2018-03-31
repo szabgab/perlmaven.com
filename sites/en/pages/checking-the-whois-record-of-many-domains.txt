@@ -28,76 +28,9 @@ Let's see how can I automate this.
 
 Look at the whole script, or jump to the <a href="#explanation">explanations</a>
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
+<include file="examples/whois.pl">
 
-use Data::Dumper qw(Dumper);
-use Net::Whois::Raw;
-use Path::Tiny qw(path);
-
-$Net::Whois::Raw::CHECK_FAIL = 1;
-$Net::Whois::Raw::OMIT_MSG = 1;
-
-my @domains = path($0)->parent->child('domains.txt')->lines( { chomp => 1 } );
-if (@ARGV) {
-    @domains = @ARGV;
-}
-
-foreach my $domain (@domains) {
-    say $domain;
-    my $data = whois($domain);
-    my @ns = get_ns($data);
-    check_ns($domain, @ns);
-
-    if ($domain =~ /\.org$/) {
-        say 'Waiting 16 seconds to avoid rate limit';
-        sleep 16;
-    }
-}
-
-
-sub get_ns {
-    my ($data) = @_;
-
-    my @ns = map { uc $_ } sort $data =~ /^Name Server:(\S+)\s*$/mg;
-
-    if (not @ns) {
-        @ns = map { uc $_ } sort $data =~ /^nserver:\s*(\S+)\s*$/mg;
-    }
-
-    if (not @ns) {
-        my @lines = split /\n/, $data;
-        my $in_ns = 0;
-        for my $line (@lines) {
-            if ($line =~ /^\s*Domain servers in listed order:\s*$/) {
-                $in_ns = 1;
-                next;
-            }
-            if ($line =~ /^\s*$/) {
-                $in_ns = 0;
-            }
-            if ($in_ns) {
-                $line =~ s/^\s+|\s+$//g;
-                push @ns, uc $line;
-            }
-        }
-        @ns = sort @ns;
-    }
-
-    return @ns;
-}
-
-sub check_ns {
-    my ($domain, @ns) = @_;
-
-    if (@ns != 2 or $ns[0] ne 'NS.TRACERT.COM' or $ns[1] ne 'NS2.TRACERT.COM') {
-        say "Error in $domain";
-        say Dumper \@ns;
-    }
-}
-</code>
+<include files="examples/domains.txt">
 
 <h2 id="explanation">Explanation</h2>
 
@@ -108,23 +41,16 @@ The first step was to see what does the <hl>whois</hl> function of this module r
 two of the configuration bits (<hl>CHECK_FAIL</hl> and <hl>OMIT_MSG</hl>), though there are a few other,
 interesting ones listed in the documentation of the module. The module names
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
+<include file="examples/try_whois.pl">
 
-use Net::Whois::Raw;
+This printed out the same information as the command line <b>whois</b> would do. For examples:
 
-$Net::Whois::Raw::CHECK_FAIL = 1;
-$Net::Whois::Raw::OMIT_MSG = 1;
+<code>
+perl examples/try_whois.pl google.com
+<code>
 
-my $domain = shift or die "Usage: $0 DOMAIN\n";
+<include file="examples/whois_google.txt">
 
-my $data = whois($domain);
-say $data;
-</code>
-
-This printed out the same information as the command line <b>whois</b> would do.
 Later, this script will be even more useful when I noticed that the output can be different
 for the various domain names. (I have not checked the details, but I think it depends on
 the TLDs: .com, .org, .net, .il etc.)
@@ -143,28 +69,7 @@ perl.org.il
 
 and changed a code a bit:
 
-
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-use Net::Whois::Raw;
-use Path::Tiny qw(path);
-
-$Net::Whois::Raw::CHECK_FAIL = 1;
-$Net::Whois::Raw::OMIT_MSG = 1;
-
-my @domains = path($0)->parent->child('domains.txt')->lines( { chomp => 1 } );
-if (@ARGV) {
-    @domains = @ARGV;
-}
-
-foreach my $domain (@domains) {
-    my $data = whois($domain);
-    say $data;
-}
-</code>
+<include file="examples/whois_domains.pl">
 
 I am using <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a>, the excellent module of David Golden
 to read the domains.txt file that is <b>expected to be in the same directory where the script is</b>.
