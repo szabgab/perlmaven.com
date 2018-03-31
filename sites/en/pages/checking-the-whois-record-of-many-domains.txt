@@ -30,7 +30,6 @@ Look at the whole script, or jump to the <a href="#explanation">explanations</a>
 
 <include file="examples/whois.pl">
 
-<include files="examples/domains.txt">
 
 <h2 id="explanation">Explanation</h2>
 
@@ -65,11 +64,7 @@ The next step was to go over all the domain I have.
 I created a file called <hl>domains.txt</hl>
 in which each line was a domain name:
 
-<code>
-szabgab.com
-perlide.org
-perl.org.il
-</code>
+<include files="examples/domains.txt">
 
 and changed a code a bit:
 
