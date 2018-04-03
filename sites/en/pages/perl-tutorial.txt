@@ -63,7 +63,7 @@ The updating of Perl Tutorial was supported by a number of people and corporatio
 </ul>
 <ul>
    <li><a href="https://www.linkedin.com/in/enriquenell/">Enrique Nell</a></li>
-   <li>Gregory Foletta</li>
+   <li><a href="https://www.linkedin.com/in/gregfoletta/">Gregory Foletta</a></li>
    <li><a href="https://www.linkedin.com/in/laurence-sherwood-9731a14/">Larry Sherwood</a></li>
    <li>Meir Guttman</li>
    <li>Rab McGill</li>
