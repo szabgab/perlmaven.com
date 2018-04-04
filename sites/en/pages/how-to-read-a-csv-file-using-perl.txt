@@ -110,7 +110,6 @@ can connect to their knowledge.
 Here is the code:
 
 <include file="examples/read_quoted_csv.pl">
-</code>
 
 <hl>Text::CSV</hl> is a 3rd-party extension to Perl. It provides a set of new functionality,
 namely reading, parsing and writing CSV files.

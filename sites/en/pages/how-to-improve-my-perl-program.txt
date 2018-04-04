@@ -60,7 +60,9 @@ The same goes for the loop variables. Instead of <hl>$x</hl> and <hl>$y</hl> the
 longer, and more descriptive names.
 
 
-<h2><a href="/dont-use-a-and-b-variables">Don't use $a and $b</a></h2>
+<h2>Don't use $a and $b</h2>
+
+<a href="/dont-use-a-and-b-variables">Don't use $a and $b</a>
 
 As a special case, <hl>$a</hl> and <hl>$b</hl> are special variables used by the
 <a href="/sorting-arrays-in-perl">sort</a> function.

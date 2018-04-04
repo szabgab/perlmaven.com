@@ -54,11 +54,9 @@ We get the following output:
 
 Look at line 4. It is of course strange, but basically it means
 
-<pre>
-Return the content of <hl>$param</hl> and if the return call resulted 
+Return the content of <hl>$param</hl> and if the return call resulted
 something <a href="http://perlmaven.com/beginner-perl-maven-true-false">false</a>, then check the content of 'default',
 but don't do anything with it.
-</pre>
 
 Not very clever, but that's what perl understands.
 
