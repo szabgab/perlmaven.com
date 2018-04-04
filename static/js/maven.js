@@ -5,6 +5,8 @@ $(document).ready(function() {
 
 //    $('#top-poster').html(msg);
 //    $('#top-poster').css('font-size', '30px');
+//    $('#top-poster').css('background-color', '#42e8f4'); // blueish
+// background-color: orange;
 //    $('#top-poster').show();
 
     $('#after-abstract').html(msg);
@@ -13,5 +15,6 @@ $(document).ready(function() {
 
     $('#after-content').html(msg);
     $('#after-content').css('font-size', '30px');
+    $('#after-content').css('background-color', '#42e8f4'); // blueish
     $('#after-content').show();
 })
