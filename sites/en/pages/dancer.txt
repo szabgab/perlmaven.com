@@ -208,7 +208,7 @@ Sven Kirmess,
 Tim Van den Langenbergh,
 Tony Edwardson,
 <a href="https://www.linkedin.com/in/tushardavebioinformatics/">Tushar Dave</a>,
-Valerio Paolini,
+<a href="https://www.linkedin.com/in/valeriopaolini/">Valerio Paolini</a>,
 Wolfgang Biker,
 Zak Zebrowski,
 
