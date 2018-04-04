@@ -166,6 +166,8 @@ Well, except of
 <a href="https://metacpan.org/release/Task-MetaSyntactic">Task-MetaSyntactic</a> list all the related modules
 as dependencies, making it super easy to install all of them with one command.
 
+List of modules in the <a href="https://metacpan.org/search?q=module:Acme::MetaSyntactic">module:Acme::MetaSyntactic</a> namespace.
+
 In the end we have 168 themes.
 
 Of course not everyone will want to install a bunch of Perl modules just to get some good ideas for
