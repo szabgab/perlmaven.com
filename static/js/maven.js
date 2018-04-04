@@ -3,9 +3,9 @@ $(document).ready(function() {
     var msg = 'Are you serious about Perl? Check out my <a href="https://leanpub.com/perl-maven/c/pmtop-2018-04">Beginner Perl Maven book</a>.<br>I have written it for you!'
 
 
-    $('#top-poster').html(msg);
-    $('#top-poster').css('font-size', '30px');
-    $('#top-poster').show();
+//    $('#top-poster').html(msg);
+//    $('#top-poster').css('font-size', '30px');
+//    $('#top-poster').show();
 
     $('#after-abstract').html(msg);
     $('#after-abstract').css('font-size', '30px');
