@@ -90,7 +90,7 @@ The updating of Perl Tutorial was supported by a number of people and corporatio
    <li><a href="https://www.linkedin.com/in/ian-gates-5b49211/">Ian Gates</a></li>
    <li>Jean F. Delpech</li>
    <li>Jeff Pelkey</li>
-   <li>Jeffrey Culverhouse</li>
+   <li><a href="https://www.linkedin.com/in/jculverhouse/">Jeffrey Culverhouse</a></li>
    <li>Jeffrey Wong</li>
    <li><a href="https://www.linkedin.com/in/kristen-kjoberg-050a402/">Kristen Kjoberg</a></li>
    <li>Leo Chan</li>
