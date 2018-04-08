@@ -70,7 +70,7 @@ The updating of Perl Tutorial was supported by a number of people and corporatio
    <li><a href="https://www.linkedin.com/in/hazard/">Vladimir Ivashchenko</a></li>
 </ul>
 <ul>
-   <li>Andrew Dorman</li>
+   <li><a href="https://www.linkedin.com/in/andy-dorman-0a253029/">Andrew Dorman</a></li>
    <li>Eduard Wulff</li>
    <li>Georgy Vladimirov</li>
    <li><a href="https://www.linkedin.com/in/walter-crombez-2369b61/">Walter Crombez</a></li>
@@ -359,7 +359,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/creating-hash-from-an-array">Odd number of elements in hash assignment</a></li>
     <li><a href="/qw-quote-word">Possible attempt to separate words with commas</a></li>
     <li><a href="/autoload">Undefined subroutine ... called</a></li>
-    <li><a href="/pro/useless-use-of-hash-element-in-void-context">Useless use of hash element in void context</a></li>
+    <li><a href="/useless-use-of-hash-element-in-void-context">Useless use of hash element in void context</a></li>
     <li><a href="/pro/useless-use-of-private-variable-in-void-context">Useless use of private variable in void context</a></li>
     <li><a href="/pro/readline-on-closed-filehandle">readline() on closed filehandle</a></li>
     <li><a href="/possible-precedence-issue-with-control-flow-operator">Possible precedence issue with control flow operator</a></li>
