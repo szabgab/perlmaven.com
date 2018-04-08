@@ -13,7 +13,7 @@ lightweight data interchange (serialization) format inspired by JavaScript objec
 
 =abstract end
 
-<include file="examples/sample.json" />
+<include file="examples/sample.json">
 
 <h2>JSON implementations in Perl</h2>
 
