@@ -8,8 +8,10 @@
 
 =abstract start
 
-<a href="http://www.yaml.org/">YAML: YAML Ain't Markup Language</a> is a text format that provides hierarchical data structures similar to
+<a href="http://yaml.org/">YAML: YAML Ain't Markup Language</a> is a text format that provides hierarchical data structures similar to
 <a href="/json">JSON</a>, but it is especially human readable.
+
+<include file="examples/sample.yml" />
 
 It can be used for data serialization, though probbaly it is most often used for hierarchical configuration files.
 
