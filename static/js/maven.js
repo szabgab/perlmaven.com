@@ -20,6 +20,7 @@ $(document).ready(function() {
         return;
     }
 
+    msg = 'Was this article useful? Support me via <a href="https://www.patreon.com/szabgab">Patreon</a>!';
     $('#after-content').html(msg);
     $('#after-content').css('font-size', '30px');
     $('#after-content').css('background-color', '#42e8f4'); // blueish
