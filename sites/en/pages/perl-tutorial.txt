@@ -30,7 +30,7 @@ In addition to the tutorial, the eBook also includes some material that is only 
 The updating of Perl Tutorial was supported by a number of people and corporations via a crowdfunding campaign. Some people wanted to stay anonymous, but most of them are listed here. Thanks to all of you for making this ongoing work possible!
 
 <ul>
-   <li><a href="http://cpanel.com/">cPanel, Inc.</a> picked up almost 50% of the tab. Thanks to <a href="https://www.linkedin.com/in/bennyvasquez/">Benny Vasquez</a></li>
+   <li><a href="http://cpanel.com/">cPanel, Inc.</a> picked up almost 50% of the tab. Thanks to <a href="https://www.linkedin.com/in/bennyvasquez/">benny Vasquez</a></li>
    <li><a href="http://theperlshop.com">The Perl Shop</a> also provided substantial support.</li>
 </ul>
 
