@@ -1,0 +1,29 @@
+module : test
+A_width : 1
+B_width : 4
+
+module : test
+A_width : 2
+B_width : 5
+
+module : test
+A_width : 3
+B_width : 6
+
+module : test
+B_width : x
+
+module : prod
+C_width : 7
+D_width : 10
+
+module : prod
+C_width : 8
+D_width : 11
+
+module : prod
+C_width : 9
+D_width : 12
+
+module : prod
+C_width : y
