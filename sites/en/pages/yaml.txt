@@ -33,5 +33,8 @@ In Perl the following libraries exist:
 
 <h2>Other articles about YAML</h2>
 
-<a href="/yaml-vs-yaml-xs-inconsistencies">YAML vs YAML::XS inconsistencies (YAML::Syck and YAML::Tiny too)</a>
+<ul>
+   <li><a href="/yaml-vs-yaml-xs-inconsistencies">YAML vs YAML::XS inconsistencies (YAML::Syck and YAML::Tiny too)</a></li>
+   <li><a href="https://code-maven.com/yaml">YAML in other languages</a></li>
+</ul>
 
