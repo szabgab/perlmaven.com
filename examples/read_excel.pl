@@ -5,7 +5,7 @@ use 5.010;
 
 use Spreadsheet::Read qw(ReadData);
 
-my $book = ReadData ('simple.xlsx');
+my $book = ReadData('simple.xlsx');
 
 say 'A1: ' . $book->[1]{A1}; 
 
