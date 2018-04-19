@@ -15,6 +15,8 @@ This makes it almost trivial to write functions such as <hl>sum</hl> where all w
 of the same type of value. (e.g. numbers in case of the <hl>sum</hl> function, or "filename", or
 "email addresses" etc. for other functions).
 
+This is not how you accept <a href="/pro/passing-multiple-parameters-to-a-function">multiple different parameters in a function</a>.
+
 =abstract end
 
 <h2>Variable-length parameter lists of functions in Perl</h2>
