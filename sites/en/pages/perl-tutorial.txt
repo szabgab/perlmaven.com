@@ -269,7 +269,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
 <b>Subroutines</b>
 <ol>
     <li><a href="/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
-    <li>Parameter passing and checking for subroutines</li>
+    <li><a href="/pro/passing-multiple-parameters-to-a-function">Passing multiple parameters to a function</a></li>
     <li><a href="/variable-number-of-parameters">Variable number of parameters</a></li>
     <li>Returning a list, returning an array</li>
     <li>Recursive subroutines</li>
