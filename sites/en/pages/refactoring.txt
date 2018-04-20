@@ -52,17 +52,12 @@ Some of the tools that can be used for refactoring Perl code.
 
 <h2>Related Articles</h2>
 
-The <a href="/markua">Markua parser series</a> and the <a href="https://leanpub.com/markua-parser-in-perl5">Markua in Perl eBook</a> contains a good description of the process of writing tests, monitoring test coverage and refactoring code. These practices are introduced right from the beginning of the project so it is somewhat different than starting this process on an existing code base, but it can teach you good practices.
-
-<a href="/benchmark-refactoring-md5-calculation-in-rex">Benchmark: Refactoring MD5 calculation in Rex</a> is more about checking the speed of the results of a refactoring than the refactoring itself.
-
-In the <a href="/dancer">Dancer series</a> we also have an article on <a href="/refactoring-dancer2-using-before-hook">Refactoring Dancer 2 app</a>.
-
-In the <a href="/testing">Testing with Perl</a> series we have an article on <a href="/refactoring-large-test-suite-separating-data-from-code">Refactoring large test suite</a>.
-
-In the <a href="/becoming-a-co-maintainer">Becoming a co-maintainer of a CPAN-module</a> series we 
-<a href="/refactoring-tests-to-use-test-more"">Refactor the tests to use Test::More</a>.
-
-In the <a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a> series 
-we are <a href="/some-refactoring-and-add-logging-to-mail-boxer">Refactoring the script and add logging</a>.
+<ul>
+    <li>The <a href="/markua">Markua parser series</a> and the <a href="https://leanpub.com/markua-parser-in-perl5">Markua in Perl eBook</a> contains a good description of the process of writing tests, monitoring test coverage and refactoring code. These practices are introduced right from the beginning of the project so it is somewhat different than starting this process on an existing code base, but it can teach you good practices.</li>
+    <li><a href="/benchmark-refactoring-md5-calculation-in-rex">Benchmark: Refactoring MD5 calculation in Rex</a> is more about checking the speed of the results of a refactoring than the refactoring itself.</li>
+    <li>In the <a href="/dancer">Dancer series</a> we also have an article on <a href="/refactoring-dancer2-using-before-hook">Refactoring Dancer 2 app</a>.</li>
+    <li>In the <a href="/testing">Testing with Perl</a> series we have an article on <a href="/refactoring-large-test-suite-separating-data-from-code">Refactoring large test suite</a>.</li>
+    <li>In the <a href="/becoming-a-co-maintainer">Becoming a co-maintainer of a CPAN-module</a> series we <a href="/refactoring-tests-to-use-test-more"">Refactor the tests to use Test::More</a>.</li>
+    <li>In the <a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a> series we are <a href="/some-refactoring-and-add-logging-to-mail-boxer">Refactoring the script and add logging</a>.</li>
+</ul>
 
