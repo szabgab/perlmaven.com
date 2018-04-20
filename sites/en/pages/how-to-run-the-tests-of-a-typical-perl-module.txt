@@ -68,8 +68,10 @@ well, of course after you've installed <a href="https://metacpan.org/pod/Dist::Z
 Normally only one of the 3 files: <hl>Build.PL</hl>, <hl>Makefile.PL</hl>, or <hl>dist.ini</hl> should be
 in the source code repository of every CPAN distribution BUT:
 
-When releasing a distribution Dist::Zilla will create a <hl>Makefile.PL</hl> file. Some developers add this
-to their version control system, even though they probably <a href="/dont-keep-generated-files-in-version-control">should not</a>.
+When releasing a distribution Dist::Zilla will create a <hl>Makefile.PL</hl> file. Some developers add this file
+to their version control system to make it easier to contribute to their code, even though they probably <a href="/dont-keep-generated-files-in-version-control">should not</a> as it is a generated file.
+
+On one hand the argument is that you should never include any file in your source repository that can be generated from the other files of your repository, on the other hand having the already generated Makefile.PL will make it a lot easier for someone to contribute without installing the whole Dist::Zilla toolchain. While the latter approach is more pragmatic and easier for the drive-by contributors, there is a risk that the two files diverge. Either by someone mistakenly editing the Makefile.PL or by not updating the Makefile.PL after the dzil.ini file was updated.
 
 Build.PL can generate a Makefile.PL during the release process. Because for a long time Build.PL could not handle itself alone,
 many CPAN developers have opted to include this Makefile.PL in the distribution. Unfortunately some of them
