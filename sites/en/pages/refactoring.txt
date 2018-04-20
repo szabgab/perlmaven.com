@@ -1,0 +1,68 @@
+=title Refactoring Perl code
+=timestamp 2018-04-20T09:30:01
+=indexes PPI
+=status show
+=books refactoring
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Refactoring is the task of changing code to make it more readable, more maintainable, while not changing it's behavior at all.
+
+The simplest example I usually give is that of changing a variable name to be meaningful.
+
+We all know that naming things is really hard so when we write code and we read in some data we can easily start using meaningless variables. For example <hl>$x</hl>, <hl>$data</hl>, or <hl>$temp</hl>. We might finish our implementation, the code starts doing what we expected it to do, but we still have these meaningless variables.
+
+When a few days or month later we need to come back to make changes we'll be baffled by the meaning of these variables.
+
+It is better to change them to something meaningful to make it easier to read and understand the code.
+
+The process of these changes is called <b>refactoring</b>. In this series of articles we are going to see how to do that.
+
+=abstract end
+
+<h2>Tasks</h2>
+
+There are many tasks we need to do before and during refactoring. Let's list a few that later will tackle.
+
+<ul>
+    <li>Write unit and integration <a href="/testing">tests</a>.</li>
+    <li>Set up Continuous Integration (CI) to run the tests.</li>
+    <li>Check and monitor code coverage of your tests.</li>
+    <li>Use <a href="/perl-critic">Perl::Critic</a> to locate areas that need improvement.</li>
+    <li>Go over all the .pl and .pm files in a given directory and list all the functions declared in all the files (Limitations of this approach).</li>
+    <li>List all the functions that are *not called* in any other file. (What about function called from other projects?)</li>
+    <li>Explicit import: Replace the "use Module;" statement by a "use Module qw(func1 func2 func3);" statement in every file listing only the functions that are use in that file.</li>
+    <li>Renaming a variable. Making sure we only replace based on scope and not based on text so if we have the same variable name used in two functions, or even just two blocks, we will replace only the selected one of them.</li>
+    <li>Rename a function and all the places it is being called.</li>
+    <li>Extract subroutine: Take a selected set of lines of code, move them to a newly created function. Place a function call instead of the code we moved. Make sure the variables used in the function are passed in as parameters.</li>
+</ul>
+
+<h2>Tools</h2>
+
+Some of the tools that can be used for refactoring Perl code.
+
+<ul>
+    <li><a href="http://metacpan.org/pod/PPI">PPI</a></li>
+    <li><a href="http://metacpan.org/pod/PPIx::EditorTools">PPIx::EditorTools</a></li>
+    <li><a href="/perl-critic">Perl::Critic</a></li>
+</ul>
+
+<h2>Related Articles</h2>
+
+The <a href="/markua">Markua parser series</a> and the <a href="https://leanpub.com/markua-parser-in-perl5">Markua in Perl eBook</a> contains a good description of the process of writing tests, monitoring test coverage and refactoring code. These practices are introduced right from the beginning of the project so it is somewhat different than starting this process on an existing code base, but it can teach you good practices.
+
+<a href="/benchmark-refactoring-md5-calculation-in-rex">Benchmark: Refactoring MD5 calculation in Rex</a> is more about checking the speed of the results of a refactoring than the refactoring itself.
+
+In the <a href="/dancer">Dancer series</a> we also have an article on <a href="/refactoring-dancer2-using-before-hook">Refactoring Dancer 2 app</a>.
+
+In the <a href="/testing">Testing with Perl</a> series we have an article on <a href="/refactoring-large-test-suite-separating-data-from-code">Refactoring large test suite</a>.
+
+In the <a href="/becoming-a-co-maintainer">Becoming a co-maintainer of a CPAN-module</a> series we 
+<a href="/refactoring-tests-to-use-test-more"">Refactor the tests to use Test::More</a>.
+
+In the <a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a> series 
+we are <a href="/some-refactoring-and-add-logging-to-mail-boxer">Refactoring the script and add logging</a>.
+
