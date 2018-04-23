@@ -1,0 +1,10 @@
+[
+   {
+      "tag" : "p",
+      "text" : "1. First number\n* The bullet"
+   },
+   {
+      "tag" : "p",
+      "text" : "* Start with bullet\n2. Then have a number"
+   }
+]

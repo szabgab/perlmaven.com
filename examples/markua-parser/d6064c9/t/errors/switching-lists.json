@@ -1,0 +1,12 @@
+[
+   {
+      "error" : "A bulleted list starts in the middle of another element.",
+      "line" : "* The bullet\n",
+      "row" : 3
+   },
+   {
+      "error" : "A number list starts in the middle of another element.",
+      "line" : "2. Then have a number\n",
+      "row" : 7
+   }
+]
