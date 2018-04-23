@@ -29,7 +29,7 @@ Numeric    String         Meaning
 <             lt           less than
 >             gt           greater than
 <=            le           less than or equal
->=            ge           greater then or equal
+>=            ge           greater than or equal
 </code>
 
 左侧的操作符会按照数字的形式比较值，而右侧的（中间一列）会根据ASCII码表或者当前的位置比较值。

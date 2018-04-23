@@ -41,7 +41,7 @@ Numeric    String         Meaning
 <             lt           less than
 >             gt           greater than
 <=            le           less than or equal
->=            ge           greater then or equal
+>=            ge           greater than or equal
 </code>
 
 The operators on the left will compare the values as numbers while

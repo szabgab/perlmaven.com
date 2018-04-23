@@ -23,7 +23,7 @@ Numeric    String         Meaning
 <             lt           less than
 >             gt           greater than
 <=            le           less than or equal
->=            ge           greater then or equal
+>=            ge           greater than or equal
 </code>
 
 האופרטורים מצד שמאל משווים את הערכים כמספרים בעוד שהאופרטורים בצד ימין (הטור האמצעי) משווים את הערכים על פי טבלת ASCII או על פי הגדרת האזור.
