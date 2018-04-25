@@ -38,7 +38,7 @@ Some of the articles even include directions showing how to fix the error.
     <li><a href="/autoload">Undefined subroutine ... called</a></li>
     <li><a href="/useless-use-of-hash-element-in-void-context">Useless use of hash element in void context</a></li>
     <li><a href="/pro/useless-use-of-private-variable-in-void-context">Useless use of private variable in void context</a></li>
-    <li><a href="/pro/readline-on-closed-filehandle">readline() on closed filehandle</a></li>
+    <li><a href="/readline-on-closed-filehandle">readline() on closed filehandle</a></li>
     <li><a href="/possible-precedence-issue-with-control-flow-operator">Possible precedence issue with control flow operator</a></li>
     <li><a href="/pro/scalar-value-better-written-as">Scalar value ... better written as ...</a></li>
     <li><a href="/have-exceeded-the-maximum-number-of-attempts">Have exceeded the maximum number of attempts (1000) to open temp file/dir</a></li>
