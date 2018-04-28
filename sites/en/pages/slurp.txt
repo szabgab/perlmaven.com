@@ -11,12 +11,18 @@
 While in most of the cases we'd process a <a href="/what-is-a-text-file">text file</a> <a href="/open-and-read-from-files">line-by-line</a>,
 there are cases when it is easier to do the work if all the content of the file is in the memory in a single scalar variable.
 
-For example when we need to replace <b>Java is Hot</b> by <b>Jabba the Hutt</b> in a text file.
+For example when we need to replace <b>Java is Hot</b> by <b>Jabba the Hutt</b> in a text file where the original text migh be spread
+over more than one lines. For example:
 
-(Probably this is going to be funny only to programmers who are Start Wars fans and who have a bad Hungarian accent in
+<code>
+... We think that Java
+is Hot. ....
+</code>
+
+(Probably this is going to be funny only to programmers who are Start Wars fans and who have a Hungarian accent in
 English as I do. Or maybe not even to them.)
 
-In any case you can escape now and read more about <a href="http://en.wikipedia.org/wiki/Jabba_the_Hutt">Jabba the Hutt</a>.
+In any case you can escape now and read more about <a href="http://en.wikipedia.org/wiki/Jabba_the_Hutt">Jabba the Hutt</a> or about <a href="https://code-maven.com/java">Java</a>.
 
 =abstract end
 
@@ -33,23 +39,7 @@ Java is
 Hot
 </code>
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $file = 'data.txt';
-open my $fh, '<', $file or die;
-$/ = undef;
-my $data = <$fh>;
-close $fh;
-print $data;
-
-$data =~ s/Java\s+is\s+Hot/Jabba The Hutt/g;
-say '-' x 30;
-
-print $data;
-</code>
+<include file="examples/slurp_in_main.pl">
 
 Running the above Perl program we get the following output:
 
@@ -67,16 +57,25 @@ Jabba The Hutt
 <h2>Explanation</h2>
 
 The <hl>$/</hl> variable is the <b>Input Record Separator</b> in Perl. When we put the read-line operator in scalar
-context, for example by assigning to a scalar variable <hl>$x = <$fh></hl>, perl will read from the file up-to
+context, for example by assigning to a scalar variable <hl>$x = <$fh></hl>, Perl will read from the file up-to
 and including the <b>Input Record Separator</b> which is, by default, the new-line <hl>\n</hl>.
 
 What we did here is we assigned <a href="/undef-and-defined-in-perl">undef</a> to <hl>$/</hl>. So the read-line operator
 will read the file up-till the first time it encounters <b>undef</b> in the file. That never happens so it reads till
 the end of the file. This is what is called <b>slurp mode</b>, because of the sound the file makes when we read it.
 
+In case you are wondering about the regex part here is the quick recap provided by <a href="http://jlbfuentes.com/">J.L. Bismarck Fuentes</a>.
 
-The big problem with the above code is that <hl>$/</hl> is a global variable. This if we change <hl>$/</hl> in one place
-of our code, this will change the behavior of perl in other places of our code and even in third-party modules.
+<ul>
+   <li><hl>=~</hl> regex matches <hl>$data</hl></li>
+   <li><hl>s</hl> substitution, its syntax is <hl>s/regex_to_match/substitution/modifiers</hl></li>
+   <li><hl>\s+</hl>  One or more whitespaces</li>
+   <li><hl>g</hl> Globally match the pattern repeatedly in the string</li>
+</ul>
+
+The big problem with the above code is that <hl>$/</hl> is a global variable. This mean if we change <hl>$/</hl> in one place
+of our code, it will change the behavior of Perl in other places of our code.
+It will impact even third-party modules used in our application. That is certainly not good.
 
 So it is better to localize it:
 
@@ -149,8 +148,8 @@ sub slurp {
 }
 </code>
 
-Of course we could further improve our slurp function by setting the encoding to utf-8 and by providing better
-error message in case on of the system calls fail.
+Of course we could further improve our slurp function by setting the encoding to <hl>utf-8</hl> and by providing better
+error message in case one of the system calls fail.
 
 <h2>File::Slurp</h2>
 
@@ -161,7 +160,7 @@ except that there we used the <hl>read_file</hl> function of the <a href="https:
 
 An even better solution is to use the <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a>
 module. It exports the <hl>path</hl> function that gets a path to a file as a parameter and returns
-an object. We can then call the <hl>slurp</hl> method on that object:
+an object. We can then call the <hl>slurp</hl> or <hl>slurp_utf8</hl> methods on that object:
 
 <code lang="perl">
 use Path::Tiny qw( path );
@@ -169,5 +168,10 @@ use Path::Tiny qw( path );
 my $file = 'data.txt';
 my $data = path($file)->slurp_utf8;
 </code>
+
+<h2>Installing the modules</h2>
+
+Neither of these modules come with the standard Perl distribution so you will need to install them first.
+There are a number of ways to <a href="/how-to-install-a-perl-module-from-cpan">install a Perl module from CPAN</a>.
 
 
