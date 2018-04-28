@@ -81,26 +81,7 @@ So it is better to localize it:
 
 <h2>localize the change</h2>
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $file = 'data.txt';
-my $data;
-{
-    open my $fh, '<', $file or die;
-    local $/ = undef;
-    $data = <$fh>;
-    close $fh;
-}
-print $data;
-
-$data =~ s/Java\s+is\s+Hot/Jabba The Hutt/g;
-say '-' x 30;
-
-print $data;
-</code>
+<include file="examples/slurp_localized.pl">
 
 
 We have 3 changes in this code:
@@ -123,30 +104,7 @@ to other places where we might need the same functionality we can just call the 
 
 This makes the main body of our code much nicer.
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $file = 'data.txt';
-my $data = slurp($file);
-
-print $data;
-
-$data =~ s/Java\s+is\s+Hot/Jabba The Hutt/g;
-say '-' x 30;
-
-print $data;
-
-sub slurp {
-    my $file = shift;
-    open my $fh, '<', $file or die;
-    local $/ = undef;
-    my $cont = <$fh>;
-    close $fh;
-    return $cont;
-}
-</code>
+<include file="examples/slurp_in_function.pl">
 
 Of course we could further improve our slurp function by setting the encoding to <hl>utf-8</hl> and by providing better
 error message in case one of the system calls fail.
@@ -162,12 +120,7 @@ An even better solution is to use the <a href="https://metacpan.org/pod/Path::Ti
 module. It exports the <hl>path</hl> function that gets a path to a file as a parameter and returns
 an object. We can then call the <hl>slurp</hl> or <hl>slurp_utf8</hl> methods on that object:
 
-<code lang="perl">
-use Path::Tiny qw( path );
-
-my $file = 'data.txt';
-my $data = path($file)->slurp_utf8;
-</code>
+<include file="examples/slurp_path_tiny.pl">
 
 <h2>Installing the modules</h2>
 
