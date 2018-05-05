@@ -37,52 +37,33 @@ If you need a reminder about those functions check out the <a href="/manipulatin
 
 Let's see an example:
 
-<code lang="perl">
-#!/usr/bin/perl
-use strict;
-use warnings;
-
-my @people = ("Foo", "Bar");
-while (@people) {
-    my $next_person = shift @people;
-    print "$next_person\n"; # do something with this person
-
-    print "Type in the names of more people:";
-    while (my $new = <STDIN>) {
-        chomp $new;
-        if ($new eq "") {
-            last;
-        }
-        push @people, $new;
-    }
-    print "\n";
-}
-</code>
+<include file="examples/queue.pl">
 
 Here we use the <hl>@people</hl> array to hold the queue. It starts out with two elements.
-Then the whole queue processing is in the <a href="/while-loop">while loop</a>.
+Then the whole queue processing is inside the <a href="/while-loop">while loop</a>.
 That loop will run as long as there are names in the queue.
 
-(In case you wonder, in <a href="/scalar-and-list-context-in-perl">scalar context</a> as is the
-condition of the <hl>while ()</hl> loop, the array returns its size, the number of elements it holds.
+In case you wonder, in the condition of the <hl>while ()</hl> loop,
+the array finds itself in <a href="/scalar-and-list-context-in-perl">scalar context</a>
+in which case the array returns its size, the number of elements it holds.
 If the array is empty this will be 0 which is <a href="/boolean-values-in-perl">false</a>.
-If there are elements in the array the size is a positive integer which is 
-<a href="/boolean-values-in-perl">true</a> in Perl.)
+If there are elements in the array the size is a positive integer which is considered
+<a href="/boolean-values-in-perl">true</a> in Perl.
 
 As the first thing inside the loop, we fetch the first element from the queue using the
 <hl>shift</hl> function. This is the next person to be treated by the dentist.
-The next thing we should call is <hl>treat($next_person);</hl> but for now we just print his name.
+The next thing we should call is <hl>treat($next_person);</hl> but for now we just print the name.
 
 Once the treatment is over we can check if there are more people waiting to be added to the queue.
 We implemented this in another <hl>while</hl> loop. We wait for the user to type in names one-by-one.
 We remove the trailing newline, and then check if the input was empty or not. If it was empty,
 meaning the user pressed ENTER without typing in any name, we call <hl>last</hl>.
 That will terminate the internal while loop and reach the <hl>print "\n";</hl> line.
-Then perl will go back to the beginning of the main <hl>while-loop</hl> treating the next person.
-If the user typed in a name, that name will be <b>pushed</b> to the end of the <hl>@people</hl> array,
-to the end of the queue. Then, still in the internal loop, we wait for another name to be typed in.
+Then Perl will go back to the beginning of the main <hl>while-loop</hl> treating the next person.
+If the user typed in a name, that name will be <b>pushed</b> to the end of the <hl>@people</hl> array.
+To the end of the queue. Then, still in the internal loop, we wait for another name to be typed in.
 
-As long as there are more people arriving than we can treat, the queue will grow, but if for a while
+As long as there are more people arriving than we can treat, the queue will grow. If for a while
 no new people arrive, the process will slowly deal with all the people in the queue.
 At one point the array will become empty and the main while-loop will finish.
 
@@ -90,42 +71,24 @@ At one point the array will become empty and the main while-loop will finish.
 
 The following code is a more abstract version of the same code using
 <a href="/subroutines-and-functions-in-perl">functions</a>
-that we have not implemented yet.
+that we have not implemented here.
 
-<code lang="perl">
-#!/usr/bin/perl
-use strict;
-use warnings;
-
-my @queue = accept_new_to_queue();
-while (@queue) {
-    my $next_item = shift @queue;
-	handle_item($next_item);
-
-	push @queue, accept_new_to_queue()
-}
-
-sub accept_new_to_queue {
-    ...
-}
-sub handle_item {
-    ...
-}
-</code>
-
+<include file="examples/queue_abstract.pl">
 
 <h2>Parallel or Asynchronous processing</h2>
 
 The above implementation can work in simple cases, but it has a major problem.
 Both the <hl>accept_new_to_queue()</hl> and the <hl>handle_item()</hl> are blocking.
-That is, while you are handling an item, no other items can be added to the queue.
+That is, while you are handling an item, no other items can be added to the queue
+and while waiting for someone to be added to the queue, no item can be handled.
+
 This can be acceptable when processing a directory tree or a list of dependencies,
 but people would be upset at the dentist if they could not even enter the waiting room
 while one of the patients is receiving treatment.
 
 For this you need some way of parallel or asynchronous processing so the
 <hl>accept_new_to_queue()</hl> and the <hl>handle_item</hl> can be run <b>"virtually at the same time"</b>.
-I wrote virtually as they don't necessarily need to run in parallel. We just need to perceive as if they did.
+I wrote virtually as they don't necessarily need to run in parallel. We just need to perceive it as if they did.
 
 If you have multiple CPUs or at least multiple cores, which is the case in all modern computer,
 you could theoretically run parts of the code really at the same time. The two major solutions
@@ -135,7 +98,7 @@ If you go that way, you should probably take a look at the
 <a href="https://metacpan.org/pod/Parallel::ForkManager">Parallel::ForkManager</a>
 module on CPAN.
 
-For asynchronous or even-driven perl programming, you might want to take a look
+For asynchronous or even-driven Perl programming, you might want to take a look
 at <a href="https://metacpan.org/pod/POE">POE</a>.
 
 We will see examples for both cases in other articles.
