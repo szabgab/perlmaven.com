@@ -54,3 +54,7 @@ The resulting file is this:
 
 <include file="examples/data/multiline_spliced.csv">
 
+<h2>Other CSV related articles</h2>
+
+<a href="/csv">CSV in Perl</a>
+
