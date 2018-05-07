@@ -1,0 +1,39 @@
+=title Split up and flatten CSV file
+=timestamp 2018-05-07T15:30:01
+=indexes CSV, split, Text::CSV
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Given a CSV file like this:
+
+<include file="examples/plain.csv">
+
+How can you convert it to a file like this:
+
+<include file="examples/flattened.csv">
+
+=abstract end
+
+<h2>Solution with split</h2>
+
+Using <a href="/how-to-read-a-csv-file-using-perl">split</a> is not going to work for every CSV file,but for simple ones, like the input file on our example it can work as well.
+
+<include file="examples/flatten_csv.pl">
+
+Run it this way:
+
+<code>
+perl examples/flatten_csv.pl examples/plain.csv examples/flattened.csv
+</code>
+
+
+<h2>Solution using Text::CSV</h2>
+
+The more generic solution using Text::CSV:
+
+<include file="examples/flatten_text_csv.pl">
+
