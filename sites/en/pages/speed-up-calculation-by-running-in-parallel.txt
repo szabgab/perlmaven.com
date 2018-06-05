@@ -153,4 +153,5 @@ it will run the linear version. If you run it with any positive number, it will 
 
 <include file="examples/calc_fork_manager_full.pl">
 
+BTW, the "DATA_LOOP" in this example is not really needed, it only tries to make the code a bit more readable.
 
