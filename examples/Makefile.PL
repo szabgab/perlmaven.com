@@ -21,7 +21,7 @@ WriteMakefile
     BUILD_REQUIRES => {
           'Other::Module' => '0'
     },
-    EXE_FILES' => [
+    EXE_FILES => [
            'script/app.pl'
     ],
     META_MERGE    => {
