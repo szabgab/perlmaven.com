@@ -12,9 +12,9 @@ perl:
 before_install:
    - /bin/echo before_install
 before_script:
-   - bash "echo before_script"
+   - /bin/echo before_script
 after_script:
-   - bash "echo after_script"
+   - /bin/echo after_script
 after_failure:
-   - bash echo "after failure"
+   - /bin/echo after_failure
    #- bash cat /home/travis/.cpanm/work/*/build.log
