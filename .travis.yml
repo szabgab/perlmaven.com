@@ -9,6 +9,7 @@ perl:
 #  - "5.14"
 #  - "5.12"
 #  - "5.10"
+install: cpanm --quiet --installdeps --verbose --notest .
 before_install:
    - /bin/echo before_install
 before_script:
