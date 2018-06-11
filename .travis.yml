@@ -9,5 +9,8 @@ perl:
 #  - "5.14"
 #  - "5.12"
 #  - "5.10"
+after_script:
+   - bash "echo after_script"
 after_failure:
-   - bash cat /home/travis/.cpanm/work/*/build.log
+   - bash echo "after failure"
+   #- bash cat /home/travis/.cpanm/work/*/build.log
