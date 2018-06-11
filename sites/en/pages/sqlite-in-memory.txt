@@ -1,0 +1,34 @@
+=title SQLite in Memory
+=timestamp 2018-06-11T05:50:01
+=indexes SQLite, memory, :memory:
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+There are many cases where we have some data we would like to interrogate where using SQL would make it easier to fetch data.
+However we would like to make things fast. Having all the data in memory is always much faster than having it on disk.
+Even with modern SSD-based disks.
+
+<a href="http://sqlite.org/">SQLite</a> allows us to create a database entirely in memory.
+
+Of course this means the amount of data we can hold is limited to the available free memory and the data, in this format,
+will be lost once the process ends.
+
+Nevertheless it can be very useful as temporary data storage instead of using hashes, arrays.
+
+=abstract end
+
+In order to create an in-memory SQLite database we need to connect to the database using <hl>:memory:</hl> pseudo-name
+instead of a filename.
+
+<include file="examples/sqlite_in_memory.pl">
+
+Once we have the database handle (<hl>$dbh</hl>) we can do all the usual operations.
+We will usually start by creating tables and indexes.
+Then we can INSERT rows.
+
+Except of the connection string our code is not aware that it is talking to an in-memory database.
+
