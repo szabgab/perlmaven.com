@@ -9,6 +9,8 @@ perl:
 #  - "5.14"
 #  - "5.12"
 #  - "5.10"
+before_script:
+   - bash "echo before_script"
 after_script:
    - bash "echo after_script"
 after_failure:
