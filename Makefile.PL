@@ -2,6 +2,7 @@ use ExtUtils::MakeMaker;
 
 my %opts = (
 	'NAME'      => 'Perl::Maven',
+	'NORECURS'  => 1,     # avoid trying to use examples/Makefile.PL
 	'VERSION'   => '0.1',
 	'PREREQ_PM' => {
 		'Test::More'           => 1,
