@@ -1,0 +1,8 @@
+.main-content {
+  margin: 20px;
+  background-color: #DDEEFF;
+  padding: 10px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
