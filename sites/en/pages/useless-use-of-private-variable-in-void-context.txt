@@ -1,0 +1,58 @@
+=title Useless use of private variable in void context
+=timestamp 2018-06-23T08:30:01
+=indexes warnings, B::Deparse
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+This is another version of the <a href="/useless-use-of-hash-element-in-void-context">Useless use of hash element in void context</a>
+warning that you might get if you follow my suggestion and turn on <a href="/always-use-warnings">warnings in Perl</a>.
+
+=abstract end
+
+This example:
+
+<include file="examples/set_default.pl">
+
+was taken from the article where you can see how adding <a href="/always-use-warnings">use warnings</a> to some
+code can uncover bugs. For example if we run the above code we see no output at all, but if we enable <hl>use warnings</hl>
+or run the code using the <hl>-w</hl> flag of Perl then we get the following:
+
+<code>
+perl -w examples/set_default.pl
+Useless use of private variable in void context at ...
+</code>
+
+As with the <a href="/useless-use-of-hash-element-in-void-context">other example</a>, here too
+we can use <a href="https://metacpan.org/pod/B::Deparse">B::Deparse</a> to uncover the truth:
+
+<code>
+perl -MO=Deparse,-p examples/set_default.pl
+
+use strict;
+(my $default_code = 42);
+((my $code = get_code()) or $default_code);
+sub get_code {
+
+}
+</code>
+
+The precedence of <hl>=</hl> is higher than that of <hl>or</hl> and so the <hl>or $default_code</hl>
+has no impact on anything.
+
+<h2>This or That</h2>
+
+An even simpler case of the problem can be seen here:
+
+<include file="examples/this_or_that.pl">
+
+<h2>Solution</h2>
+
+The solution is to use <hl>||</hl> or <hl>//</hl> instead of <hl>or</hl>
+and to <a href="/always-use-warnings">always use warnings</a>!
+
+
+
