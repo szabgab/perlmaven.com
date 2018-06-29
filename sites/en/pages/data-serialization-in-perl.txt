@@ -213,14 +213,14 @@ table .is {
 </style>
 
 <table>
-<tr><th>Format</th>                                  <th>Standard</th>    <th>Pure Perl</th>      <th>Fast</th>        <th>Multi-language</th> <th>Secure</th>      </tr>
-<tr><td><a href="#data-dumper">Data::Dumper</a></td> <td class="ok"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="no"></td> </tr>
-<tr><td><a href="#storable">Storable</a></td>        <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> </tr>
-<tr><td><a href="#freezethaw">FreezeThaw</a></td>    <td class="no"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="ok"></td> </tr>
-<tr><td><a href="#yaml">YAML</a></td>                <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
-<tr><td><a href="#json">JSON</a></td>                <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
-<tr><td><a href="#xml">XML</a></td>                  <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
-<tr><td><a href="#sereal">Sereal</a></td>            <td class="no"></td> <td class="no"></td>    <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> </tr>
+<tr><th>Format</th>                                              <th>Standard</th>    <th>Pure Perl</th>      <th>Fast</th>        <th>Multi-language</th> <th>Secure</th>      </tr>
+<tr><td><a href="#data-dumper">Data::Dumper</a> (perl code)</td> <td class="ok"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="no"></td> </tr>
+<tr><td><a href="#storable">Storable</a> (binary)</td>           <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> </tr>
+<tr><td><a href="#freezethaw">FreezeThaw</a> (text-ish)</td>     <td class="no"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="ok"></td> </tr>
+<tr><td><a href="#yaml">YAML</a></td>                            <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
+<tr><td><a href="#json">JSON</a></td>                            <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
+<tr><td><a href="#xml">XML</a></td>                              <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
+<tr><td><a href="#sereal">Sereal</a> (binary)</td>               <td class="no"></td> <td class="no"></td>    <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> </tr>
 </table>
 
 [1] - have both pure-Perl and XS based implementation. The latter is probably much faster than the former.
