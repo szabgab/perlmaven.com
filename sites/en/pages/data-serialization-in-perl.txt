@@ -213,7 +213,7 @@ table .is {
 </style>
 
 <table>
-<tr><th>Format</th>                                           <th><th>            <th>Standard</th>    <th>Pure Perl</th>      <th>Fast</th>        <th>Multi-language</th> <th>Secure</th>      </tr>
+<tr><th>Format</th>                                           <th></th>           <th>Standard</th>    <th>Pure Perl</th>      <th>Fast</th>        <th>Multi-language</th> <th>Secure</th>      </tr>
 <tr><td><a href="#data-dumper">Data::Dumper</a></td>          <td>perl code</td>  <td class="ok"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="no"></td> </tr>
 <tr><td><a href="#storable">Storable</a></td>                 <td>binary</td>     <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> </tr>
 <tr><td><a href="#freezethaw">FreezeThaw</a></td>             <td>text-ish</td>   <td class="no"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="ok"></td> </tr>
