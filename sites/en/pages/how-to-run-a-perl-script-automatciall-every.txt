@@ -60,4 +60,10 @@ Every 2 minutes:
 */2 * * * * command
 </code>
 
+<h2>MS Windows</h2>
+
+MS Windows has a service called
+<a href="https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page">Windows Task Scheduler</a>. Use that.
+
+
 
