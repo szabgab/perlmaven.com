@@ -1,0 +1,57 @@
+=title Can't use string (...) as an HASH ref while "strict refs" in use at ...
+=timestamp 2018-08-04T20:30:01
+=indexes warnings
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+A less frequently seen error, but nevertheless an annoying one.
+It usually stems from incorrect use of an Object Oriented module.
+
+=abstract end
+
+In our example we used the excellent <a href="https://metacpan.org/pod/DateTime">DateTime</a> module to create a string representing the Year, Month, and Day. The module has a method called <hl>ymd</hl> that will return the date in YYYY-MM-DD format.
+
+However this is a method of a DateTime object and not the DateTime class.
+
+So when someone write the following code and runs it:
+
+<include file="examples/datetime_ymd_incorrectly.pl">
+
+we get:
+
+<code>
+Can't use string ("DateTime") as a HASH ref while "strict refs" in use at .../DateTime.pm line 682.
+</code>
+
+Unfortunately it looks as if the error was in the DateTime module (line 682) while the actual problem was the way we called it.
+
+The correct way to use this is by first creating a DateTime object with one of the constructors. e.g. using <hl>now</hl>
+and then calling <hl>ymd</hl> on the object representing the current time:
+
+<include file="examples/datetime_ymd_correctly.pl">
+
+<code>
+2017-08-11
+</code>
+
+
+<h2>Can't use string (...) as an HASH ref while "strict refs" in use at ...</h2>
+
+So what is this error message?
+
+As you might know <a href="/strict">strict</a> has 3 parts. This error was triggered by the part called
+<hl>strict refs</hl> that disables <a href="/symbolic-reference-in-perl">Symbolic references</a>. Which is a good thing.
+
+The error manifested itself inside the DateTime module where we had code that effectively did something like this:
+
+<include file="examples/datetime_ymd_error.pl">
+
+In which we are trying to use the content of <hl>$self</hl> which is <hl>DateTime</hl> in our case, as a reference to a HASH.
+
+Some people might blame <hl>strict</hl> for the error and try to turn it off, but that will just bring us a silent error that
+will bite us later.
+

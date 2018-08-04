@@ -78,7 +78,7 @@ I got the following error message:
 Can't use string ("Foo") as a HASH ref while "strict refs" in use at ...
 </code>
 
-See another case of <a href="/pro/cant-use-string-as-a-hash-ref-while-strict-refs-in-use">Can't use string (...) as an HASH ref while "strict refs" in use at ...</a>.
+See another case of <a href="/cant-use-string-as-a-hash-ref-while-strict-refs-in-use">Can't use string (...) as an HASH ref while "strict refs" in use at ...</a>.
 
 Apparently I was using a <b>symbolic HASH reference</b>, by accident.
 
