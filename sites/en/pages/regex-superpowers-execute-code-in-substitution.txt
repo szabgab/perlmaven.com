@@ -1,0 +1,102 @@
+=title Perl Regex superpowers - execute code in substitution - what are /e and /ee ?
+=timestamp 2018-08-13T07:30:01
+=indexes e, ee
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+You are probably familiar with the power of regexes and substitution in Perl,
+but there are many rarely needed, but incredible features you might not know yet.
+
+A simple example of something you are probably familiar with looks like this:
+
+<include file="examples/regex/subst.pl">
+
+Here we capture two digits in the original string and swap them.
+
+That's nice, but what if we would like to replace the two digits by their sum?
+
+=abstract end
+
+<h2>Try calculation in substitution</h2>
+
+Let's try this:
+
+<include file="examples/regex/subst_calc.pl">
+
+The result is not the sum of the digits, but the digits themselves with
+a <hl>+</hl> sign between them. Of course this is not surprising, after all
+the second part of a substitution behaves like a normal
+<a href="/quoted-interpolated-and-escaped-strings-in-perl">string in double quotes</a>
+where we have interpolation, but no code execution.
+
+That's where the <hl>e</hl> modifier of the regexes/substitutions comes into play.
+
+<hl>e as in eval</hl>
+
+<include file="examples/regex/subst_calc_e.pl">
+
+Here there result is <hl>abc 6 def</hl>.
+
+Instead of using the substitution string as a plain string, in this case perl
+called <a href="/string-eval">string eval</a> on the string and the result of that <hl>eval</hl>
+call was used as the replacement string.
+
+As you can read in that other article <a href="/string-eval">string eval</a> can be dangerous as it can execute
+arbitrary perl code, but if we make sure the input can only be a very restricted set of values then it is secure as well.
+
+Here is a rather dangerous version:
+
+<include file="examples/regex/subst_unlink_e.pl">
+
+This one will extract the name of a file from the given string and then call <a href="/search/unlink">unlink</a> on it that will remove the file.
+The result in the <hl>$str</hl> variable will be the return value of the <hl>unlink</hl> function which is 1 on success and 0 on failure.
+
+<h2>ee as in eval the eval</h2>
+
+If the <hl>/e</hl> modifier was not crazy enough, Perl allows us to double it to have the <hl>/ee</hl> modifier.
+It calls <hl>eval</hl> on the string on the substitution part and then calls <hl>eval</hl> again on the results.
+
+I tried to put together an examples here: Given some text that we somehow places in the <hl>$text</hl> variable,
+(maybe we read it in from a file), we would like to replace each occurrence off STRING_DIGITS by the result of
+the function with the same name.
+
+So the string "xy_1" would be replaced by 11 as that's the number returned by the function.
+
+In this solution we have a substitution that matches the strings that look like the functions we are looking for,
+creates the functions in the first eval, and calls the functions in the second eval provided by <hl>/ee</hl>.
+We added <hl>g</hl> at the end to do this globally.
+
+Here are the 3 version of the substitution with <hl>/ee</hl>
+
+<include file="examples/regex/subst_func_ee.pl">
+
+with <hl>/e</hl>:
+
+<include file="examples/regex/subst_func_e.pl">
+
+without any <hl>eval</hl>:
+
+<include file="examples/regex/subst_func.pl">
+
+<h2>Another example for /ee</h2>
+
+<include file="examples/regex/subst_str.pl">
+
+<include file="examples/regex/subst_str_e.pl">
+
+<include file="examples/regex/subst_str_ee.pl">
+
+<h2>Examples on CPAN</h2>
+
+You might find better or crazier examples for <hl>/ee</hl> via the
+<a href="http://grep.cpan.me/?q=%2Fee([gi%20])">grep.cpan.me</a> site.
+
+<h2>Another sample article</h2>
+
+In the article <a href="/pro/increase-numbers-in-a-file">increasing numbers in a text file</a>
+you can see another use-cases of <hl>/ee</hl>.
+

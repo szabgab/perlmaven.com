@@ -95,7 +95,7 @@ Regular Expressions or in short Regex, Regexes, or Regexp are one of the most we
 
 <ul>
     <li><a href="/fixing-test-failure-on-windows">Fixing test failure on Windows - Properly quoting regexes - Accepting GitHub pull request</a></li>
-    <li><a href="/pro/regex-superpowers-execute-code-in-substitution">Perl Regex superpowers - execute code in substitution - what are /e and /ee ?</a></li>
+    <li><a href="/regex-superpowers-execute-code-in-substitution">Perl Regex superpowers - execute code in substitution - what are /e and /ee ?</a></li>
 <!--
     <li><a href=""></a></li>
 -->
