@@ -74,10 +74,20 @@ ul.horizontal li {
 
 <h2>Code-Maven series</h2>
 <ul>
-  <li><a href="https://code-maven.com/angular">Angular JS</a></li>
+  <li><a href="https://code-maven.com/angularjs">Angular JS</a></li>
+  <li><a href="https://code-maven.com/ansible">Ansible</a></li>
+  <li><a href="https://code-maven.com/flask">Flask</a>, the Python microframework.</li>
+  <li><a href="https://code-maven.com/groovy">Groovy</a>, the programming language used for Jenkins pipelines.</li>
   <li><a href="https://code-maven.com/handlebars">Handlebars</a> the HTML templating system written in JavaScript.</li>
+  <li><a href="https://code-maven.com/java">Java</a></li>
   <li><a href="https://code-maven.com/javascript">JavaScript</a></li>
+  <li><a href="https://code-maven.com/jenkins">Jenkins</a>, the automation server used for Continuous Integration and Continuous Delivery.</li>
+  <li><a href="https://code-maven.com/linux">Linux</a></li>
   <li><a href="https://code-maven.com/nodejs">NodeJS</a></li>
+  <li><a href="https://code-maven.com/php">PHP</a></li>
+  <li><a href="https://code-maven.com/python">Python</a></li>
+  <li><a href="https://code-maven.com/ruby">Ruby</a></li>
+  <li><a href="https://code-maven.com/svg">SVG</a>, Scalable Vector Graphics examples in JavaScript and Python.</li>
 </ul>
 
 </div>
