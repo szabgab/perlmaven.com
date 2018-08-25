@@ -13,7 +13,7 @@ my $parser = qr{
 
     <rule: Document>    \A <Text> \Z
 
-    <rule: Text>   <[Paragraph]>+ % <_Sep=(\n\n)>
+    <rule: Text>   <[Paragraph]>+ % <_Sep=(\n\s*\n)>
 
     <token: Paragraph>   ^.*?$
 }xsm;

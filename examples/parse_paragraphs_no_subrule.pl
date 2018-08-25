@@ -9,19 +9,17 @@ my $input = path('data/text_with_paragraphs.txt')->slurp();
 
 my $parser = qr{
     <nocontext:>
-    <Document>
+    <Text>
 
-    <rule: Document>    \A <Text> \Z
-
-    <rule: Text>   <[Paragraph]>+ % <Sep>
-
-    <token: Sep>    \n\s*\n
+    <rule: Text> \A  <[Paragraph]>+ % \n\s*\n \Z
 
     <token: Paragraph>   ^.*?$
 }xsm;
 
+
 if ($input =~ $parser) {
     print Dumper \%/;
 }
+
 
 
