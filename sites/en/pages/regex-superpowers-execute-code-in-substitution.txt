@@ -97,6 +97,6 @@ You might find better or crazier examples for <hl>/ee</hl> via the
 
 <h2>Another sample article</h2>
 
-In the article <a href="/pro/increase-numbers-in-a-file">increasing numbers in a text file</a>
+In the article <a href="/increase-numbers-in-a-file">increasing numbers in a text file</a>
 you can see another use-cases of <hl>/ee</hl>.
 
