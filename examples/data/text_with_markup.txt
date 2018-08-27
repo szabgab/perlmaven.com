@@ -1,0 +1,4 @@
+The _Regexp::Grammars_ module is awesome. It makes parsing text in *Perl* even _easier than before_.
+You can *easily* _create_ *recursive* grammars, and once you figure it out, it is also easy to
+parse text like this. Read more about it at link:https://metacpan.org/pod/Regexp::Grammars[Regexp::Grammars]
+Enjoy!
