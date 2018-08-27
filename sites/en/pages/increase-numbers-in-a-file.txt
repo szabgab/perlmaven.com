@@ -68,7 +68,7 @@ And the 'counter.txt' file will be updated with these numbers to become this:
 
 Let's see a bit more detailed explanation:
 
-<h2>Split retainig the separator or parts of it</h2>
+<h2>Split retaining the separator or parts of it</h2>
 
 In our example, you can see that the <hl>@pieces</hl> array
 contains all the content of the original file including the newlines
