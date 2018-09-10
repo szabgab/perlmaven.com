@@ -88,6 +88,6 @@ It says:
 to newer version of perl, run your tests there too. At least your compile-test.
 They can reveal all kinds of potential bugs.
 
-Also <a href="/pro/testing-for-no-warnings">check for no warnings</a> during the tests. That will help you locate
+Also <a href="/testing-for-no-warnings">check for no warnings</a> during the tests. That will help you locate
 new warnings that were not around in previous versions of Perl.
 
