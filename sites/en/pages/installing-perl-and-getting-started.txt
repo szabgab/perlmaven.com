@@ -89,7 +89,7 @@ Let me explain it step-by-step.
 <h2>Hello world</h2>
 
 Once you installed DWIM Perl you can click on
-"Start -&gt; All programs -> DWIM Perl -> Padre" which will open the editor
+"Start -&gt; All programs -&gt; DWIM Perl -&gt; Padre" which will open the editor
 with and empty file.
 
 Type in
@@ -104,7 +104,7 @@ Strings are enclosed in double-quotes <hl>"</hl>.
 The <hl>print</hl> function prints to the screen.
 When this is executed perl will print the text and at the end it will print a newline.
 
-Save the file as hello.pl and then you can run the code by selecting "Run -> Run Script"
+Save the file as hello.pl and then you can run the code by selecting "Run -&gt; Run Script"
 You will see a separate window showing up with the output.
 
 That's it, you wrote your first perl script.
@@ -135,7 +135,7 @@ print "Hello World\n";
 </code>
 
 Once you typed this in, you can run the script again by selecting
-"Run -> Run Script" or by pressing <b>F5</b>.
+"Run -&gt; Run Script" or by pressing <b>F5</b>.
 That will automatically save the file before running it.
 
 It is generally a good practice to tell what is the minimum version of perl your code requires.
