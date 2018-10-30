@@ -272,7 +272,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/pro/passing-multiple-parameters-to-a-function">Passing multiple parameters to a function</a></li>
     <li><a href="/variable-number-of-parameters">Variable number of parameters</a></li>
     <li>Returning a list, returning an array</li>
-    <li>Recursive subroutines</li>
+    <li><a href="/pro/recursion">Recursive subroutines</a></li>
 </ol>
 
 <b>Hashes</b>
