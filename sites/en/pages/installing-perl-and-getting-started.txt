@@ -89,7 +89,7 @@ Let me explain it step-by-step.
 <h2>Hello world</h2>
 
 Once you installed DWIM Perl you can click on
-"Start -> All programs -> DWIM Perl -> Padre" which will open the editor
+"Start -&gt; All programs -> DWIM Perl -> Padre" which will open the editor
 with and empty file.
 
 Type in
