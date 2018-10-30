@@ -23,12 +23,12 @@ prompt, probably ending with a $ sign.
 
 If you are using Windows open a command window: Click on
 
-Start -> Run -> type in "cmd" -> ENTER
+Start -&gt; Run -&gt; type in "cmd" -&gt; ENTER
 
 You will see the black window of CMD with a prompt that probably looks like this:
 
 <code>
-c:\>
+c:\&gt;
 </code>
 
 <h2>Perl version</h2>
