@@ -36,7 +36,7 @@ c:\&gt;
 Type in <hl>perl -v</hl>. This will print something like this:
 
 <code>
-C:\> perl -v
+c:\&gt; perl -v
 
 This is perl 5, version 12, subversion 3 (v5.12.3)
   built for MSWin32-x86-multi-thread
@@ -60,9 +60,9 @@ Now type in <hl>perl -e "print 42"</hl>.
 This will print the number <hl>42</hl> on the screen. On Windows the prompt will appear on the next line
 
 <code>
-c:>perl -e "print 42"
+c:&gt;perl -e "print 42"
 42
-c:>
+c:&gt;
 </code>
 
 On Linux you will see something like this:

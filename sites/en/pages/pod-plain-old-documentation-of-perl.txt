@@ -72,7 +72,7 @@ There is <hl>=cut</hl> to mark the end of a POD section and
 Any string that starts with an equal sign <hl>=</hl> as the first character in a row will
 be interpreted as a POD markup, and will start a POD section closed by <hl>=cut</hl>
 
-POD even allows the embedding of hyper-links using the L&lt;some-link> notation.
+POD even allows the embedding of hyper-links using the L&lt;some-link&gt; notation.
 
 Text between the markup parts will be shown as paragraphs of plain text.
 
