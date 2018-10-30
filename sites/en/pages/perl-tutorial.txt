@@ -261,7 +261,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/using-a-queue-in-perl">Queue</a></li>
     <li><a href="/reverse">reverse</a></li>
     <li><a href="/the-ternary-operator-in-perl">The ternary operator</a></li>
-    <li>Loop controls: next and last</li>
+    <li><a href="/pro/loop-controls-next-last">Loop controls: next and last</a></li>
     <li><a href="/pro/min-max-sum-using-list-util">min, max, sum using List::Util</a></li>
     <li><a href="/qw-quote-word">qw - quote word</a></li>
 </ol>
