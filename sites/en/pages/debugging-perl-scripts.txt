@@ -97,21 +97,7 @@ For complex data structures (references, arrays and hashes) you can use the <hl>
 These will print something like this, which helps understand the content of the variables,
 but shows only a generic variable name such as <hl>$VAR1</hl> and <hl>$VAR2</hl>.
 
-<code>
-$VAR1 = [
-       'a',
-       'b',
-       'c'
-     ];
-$VAR1 = {
-       'a' => 1,
-       'b' => 2
-     };
-$VAR1 = {
-       'c' => 3,
-       'd' => 4
-     };
-</code>
+<include file="examples/data_dumper_out.pl">
 
 I'd recommend adding some more code and printing the name of the variable like this:
 
@@ -138,21 +124,7 @@ print Data::Dumper->Dump([\@an_array, \%a_hash, $a_reference],
 
 getting
 
-<code>
-$an_array = [
-            'a',
-            'b',
-            'c'
-          ];
-$a_hash = {
-          'a' => 1,
-          'b' => 2
-        };
-$a_reference = {
-               'c' => 3,
-               'd' => 4
-             };
-</code>
+<include file="examples/data_dumper_out2.pl">
 
 There are nicer ways to print data structures but at this point <hl>Data::Dumper</hl>
 is good enough for our needs and it is available in every perl installation.
