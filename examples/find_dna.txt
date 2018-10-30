@@ -1,0 +1,9 @@
+human:
+DNA:ACTGGTATTA
+
+mouse: 
+DNA:ACTGTAACTG
+
+elephant:
+DNA:AACCTTGGAA
+ 
