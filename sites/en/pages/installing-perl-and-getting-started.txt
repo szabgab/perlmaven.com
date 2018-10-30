@@ -167,13 +167,7 @@ In addition in every script I'd strongly recommend to make some further modifica
 the behavior of Perl. For this we add 2, so called pragmatas, that are very similar to compiler flags
 in other languages:
 
-<code lang="perl">
-use 5.010;
-use strict;
-use warnings;
-
-say "Hello World";
-</code>
+<include file="examples/hello_world.pl">
 
 In this case the <hl>use</hl> keyword tells perl to load and enable each pragma.
 
@@ -186,15 +180,7 @@ They are very handy.
 Now let's improve our example by asking the user her name and including
 it in the response.
 
-<code lang="perl">
-use 5.010;
-use strict;
-use warnings;
-
-say "What is your name? ";
-my $name = <STDIN>;
-say "Hello $name, how are you?";
-</code>
+<include file="examples/hello_name.pl">
 
 <hl>$name</hl> is called a scalar variable.
 
@@ -215,16 +201,7 @@ got into the <hl>$name</hl> variable.
 
 <h2>Getting rid of newlines</h2>
 
-<code lang="perl">
-use 5.010;
-use strict;
-use warnings;
-
-say "What is your name? ";
-my $name = <STDIN>;
-chomp $name;
-say "Hello $name, how are you?";
-</code>
+<include file="examples/hello_name_chomp.pl">
 
 It is such a common task in Perl, that there is a special function called <hl>chomp</hl>
 to remove the trailing newlines from strings.
@@ -240,14 +217,7 @@ I promised exercises.
 
 Try the following script:
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-say "Hello ";
-say "World";
-</code>
+<include file="examples/hello_and_world.pl">
 
 It did not show on one line. Why? How to fix it?
 
