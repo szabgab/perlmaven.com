@@ -64,7 +64,7 @@ The next step was to go over all the domain I have.
 I created a file called <hl>domains.txt</hl>
 in which each line was a domain name:
 
-<include files="examples/domains.txt">
+<include file="examples/domains.txt">
 
 and changed a code a bit:
 
