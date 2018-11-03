@@ -85,18 +85,7 @@ use interpolation. We'll discuss this in a separate article.
 The <hl>x</hl> operator expects a string on its left-hand side and a number on its right hand side.
 It will return the string on the left hand side repeated as many times as the value on the right hand side.
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $y = 'Jar ';
-
-my $z = $y x 2;
-say $z;
-
-say $y x 2 . 'Binks';
-</code>
+<include file="examples/string_repetition.pl">
 
 yields:
 
@@ -109,19 +98,7 @@ Jar Jar Binks
 I think this operator is rarely used, but it can be quite useful in those rare cases.
 For example when you want to add a line the same length as the title of your report:
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-
-print "Please type in the title: ";
-my $title = <STDIN>;
-chomp $title;
-
-say $title;
-say '-' x length $title;
-</code>
+<include file="examples/string_repetition_width.pl">
 
 Here the line we print under the title is exactly the same lengths (in number of characters) as the title itself.
 

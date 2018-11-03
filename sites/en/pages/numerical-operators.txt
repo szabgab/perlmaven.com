@@ -80,7 +80,7 @@ In the general case <hl>VARIABLE OP= EXPRESSION</hl> is the same as
 (We don't repeat the name of VARIABLE.)
 You can use it with any binary operator:
 
-<hl>+=</hl>, <hl>*=</hl>, <hl>-=</hl>, <hl>/=<hl>, even <hl>%=</hl>
+<hl>+=</hl>, <hl>*=</hl>, <hl>-=</hl>, <hl>/=</hl>, even <hl>%=</hl>
 
 
 (binary operators work on two values.)

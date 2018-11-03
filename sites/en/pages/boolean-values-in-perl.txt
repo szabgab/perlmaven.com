@@ -51,21 +51,21 @@ From perlsyn under "Truth and Falsehood".
 So the following scalar values are considered false:
 
 <ul>
-<li>undef - the undefined value</li>
-<li>0  the number 0, even if you write it as 000  or 0.0</li>
-<li>''   the empty string.</li>
-<li>'0'  the string that contains a single 0 digit.</li>
+   <li>undef - the undefined value</li>
+   <li>0  the number 0, even if you write it as 000  or 0.0</li>
+   <li>''   the empty string.</li>
+   <li>'0'  the string that contains a single 0 digit.</li>
 </ul>
 
 All other scalar values, including the following are true:
 
 <ul>
-<li>1 any non-0 number</li>
-<li>' '   the string with a space in it</li>
-<li>'00'   two or more 0 characters in a string</li>
-<li>"0\n"  a 0 followed by a newline</li>
-<li>'true'</li>
-<li>'false'   yes, even the string 'false' evaluates to true.</li>
+  <li>1 any non-0 number</li>
+  <li>' '   the string with a space in it</li>
+  <li>'00'   two or more 0 characters in a string</li>
+  <li>"0\n"  a 0 followed by a newline</li>
+  <li>'true'</li>
+  <li>'false'   yes, even the string 'false' evaluates to true.</li>
 </ul>
 
 I think this is because <a href="http://www.wall.org/~larry/">Larry Wall</a>,

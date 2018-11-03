@@ -1,6 +1,6 @@
 =title Conditional statements, using if, else, elsif in Perl
 =timestamp 2014-04-22T20:30:01
-=indexes if, else, elsif, indentation, else if
+=indexes if, else, elsif, indentation, else if, ...
 =status show
 =books beginner
 =author szabgab
@@ -28,16 +28,7 @@ if (CONDITION) {
 
 For example
 
-<code lang="perl">
-use strict;
-use warnings;
-
-print "What is your age? ";
-my $age = <STDIN>;
-if ($age >= 18) {
-    print "In most countries you can vote.\n";
-}
-</code>
+<include file="examples/input_and_condition.pl">
 
 Both the parentheses around the <b>condition</b> and the curly braces <hl>{}</hl> are required.
 (A special note for people with background in the C programming language:
@@ -122,44 +113,18 @@ Please also note that the spelling of the "else if" construct has the most diver
 
 Though usually it is not necessary, in Perl we can also have empty blocks:
 
-<code lang="perl">
-use strict;
-use warnings;
-
-print "What is your age? ";
-my $age = <STDIN>;
-if ($age < 0) {
-}
-</code>
+<include file="examples/empty_block.pl">
 
 Sometimes we write this when first we write the skeleton of the program and only later
 add the code that needs to be in the block.
 
 We can add comments inside, but we don't have to.
 
-<code lang="perl">
-use strict;
-use warnings;
-
-print "What is your age? ";
-my $age = <STDIN>;
-if ($age < 0) {
-    # TODO
-}
-</code>
+<include file="examples/empty_block_comment.pl">
 
 Actually, there is even a special code-snippet that was added to version 5.10 of perl:
 
-<code lang="perl">
-use strict;
-use warnings;
-
-print "What is your age? ";
-my $age = <STDIN>;
-if ($age < 0) {
-    ...
-}
-</code>
+<include file="examples/block_with_yada_yada.pl">
 
 The 3 dots there, is called the <hl>yada, yada operator</hl>. It is what most people would
 write when they are jotting down some text and want to leave place for more. Some might write

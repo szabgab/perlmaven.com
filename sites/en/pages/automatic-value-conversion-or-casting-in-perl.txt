@@ -44,10 +44,10 @@ not used in the Perl world. Probably because the whole thing is automatic.
 Perl does not care if you write something as number or as string.
 It converts between the two automatically based on the context.
 
-The <hl>number => string</hl> conversion is easy.
+The <hl>number =&gt; string</hl> conversion is easy.
 It is just a matter of imaging as if "" appeared around the number value.
 
-The <hl>string => number</hl> conversion might leave you thinking a bit.
+The <hl>string =&gt; number</hl> conversion might leave you thinking a bit.
 If the string looks like a number to perl, then it is easy.
 The numerical value is just the same thing. Without the quotes.
 
