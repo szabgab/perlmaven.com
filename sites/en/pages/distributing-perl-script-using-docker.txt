@@ -50,7 +50,7 @@ to the <hl>/opt</hl> directory of the Docker image we are creating.
 
 Unlike in the <a href="/getting-started-with-perl-on-docker">get started</a> case when we wanted to have the script on the host machine to make it easy to edit it, this time we would like it to be part of the Docker image so we can distributed it easily.
 
-Finally we use the <hl>ENDPOINT</hl> directive in the Dockerfile to tell docker what to execute when the container starts to run.
+Finally we use the <hl>ENTRYPOINT</hl> directive in the Dockerfile to tell docker what to execute when the container starts to run.
 
 
 <h2>Directory layout</h2>
