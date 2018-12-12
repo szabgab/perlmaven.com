@@ -26,8 +26,8 @@ When we run the script at this point it will wait for the user to type in some s
 and press <hl>ENTER</hl>.
 
 Once the user has done this the code will continue to run and he stuff the user typed in,
-including the character represnting the <hl>ENTER</hl> will be assigned to the <hl>$name</hl>
-variable on the lefth hand side of the <hl>=</hl> assignment operator.
+including the character representing the <hl>ENTER</hl> will be assigned to the <hl>$name</hl>
+variable on the left hand side of the <hl>=</hl> assignment operator.
 
 The <hl>my</hl> operator at the beginning of the line declares this variable.
 This is the way we tell Perl that would like to use this variable called <hl>$name</hl>.
