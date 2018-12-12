@@ -17,7 +17,7 @@ handle basic Input Output (I/O).
 <include file="examples/prompt.pl">
 
 After including the <a href="/installing-perl-and-getting-started">safety net</a>
-in the form of <a href="/always-use-strict-and-use-warnings">use stict; use warnings;</a>
+in the form of <a href="/always-use-strict-and-use-warnings">use strict; use warnings;</a>
 we call the <hl>print</hl> function that will display the text after it on the screen.
 As we have not included <hl>\n</hl> (the sign representing the newline) in our string the
 blinking cursor will be shown on the same line where the text was printed.
