@@ -192,7 +192,7 @@ The solution that I currently like the best, involves the use of the
 
 <code lang="perl">
 use Path::Tiny qw(path);
-use lib path($0)->absolute->parent->child('lib')->stringify;
+use lib path($0)->absolute->parent(2)->child('lib')->stringify;
 </code>
 
 <hl>Path::Tiny</hl> by default exports the <hl>path</hl> function, but I like to be explicit
@@ -233,7 +233,7 @@ As suggested by Yary H in the comments, we can even make it shorter and nicer by
 
 <code lang="perl">
 use Path::Tiny qw(path);
-use lib path($0)->absolute->sibling('lib')->stringify;
+use lib path($0)->absolute->parent->sibling('lib')->stringify;
 </code>
 
 <h2>Solution 7 - rlib</h2>
