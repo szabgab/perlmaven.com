@@ -56,6 +56,11 @@ Related articles:
 
 <a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExplicitReturnUndef">Subroutines::ProhibitExplicitReturnUndef</a>
 
+<ul>
+    <li><a href="/how-to-return-undef-from-a-function">How to return nothing (or undef) from a function in Perl?</a></li>
+    <li><a href="/wantarray">wantarray - returning list or scalar based on context</a></li>
+</ul>
+
 <h2>Nested named subroutine</h2>
 
 <include file="examples/critic/nested_subs.pl">
