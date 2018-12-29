@@ -1,0 +1,104 @@
+=title Dancer in Docker
+=timestamp 2018-12-29T22:00:01
+=indexes Dancer, Docker
+=status show
+=books dancer
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+A simple case of developing and then running a Dancer (1) based application.
+
+
+=abstract end
+
+Install <a href="https://www.docker.com/">Docker</a>
+
+Create a new directory and put a file called <b>Dockerfile</b> with the following content:
+
+<code>
+FROM ubuntu:18.04
+RUN apt-get update                      && \
+    apt-get upgrade -y                  && \
+    apt-get install -y less wget        && \
+    apt-get install -y build-essential  && \
+    apt-get install -y libdancer-perl   && \
+    echo "DONE"
+</code>
+
+Build the Docker image and call it "dancer":
+
+<code>
+docker build -t dancer .
+</code>
+
+Launch the Docker container (that is a running Docker image):
+
+<code>
+docker run --rm -it -p 3001:3000 -v $(pwd):/opt dancer
+</code>
+
+This will run the docker image and map the internal port 3000 to the port 3001 of the host system.
+It will also map the /opt directory of the container to the current directory of the host system.
+
+It will show you a prompt like this:
+
+<code>
+root@6401bb1ec929:/# 
+</code>
+
+
+Go to the shared directory and create a Dancer application called My::App. This will create a directory called
+My-App on the filesystem of your host computer in the directory where you started the Docker container:
+
+<code>
+cd /opt
+dancer -a My::App
+</code>
+
+<code>
+perl My-App/bin/app.pl
+</code>
+
+Will launch the Dancer application in the container and you can visit it from your desktop by browsing to:
+http://127.0.0.1:3001/ 
+
+
+<h2>Manual testing environment</h2>
+
+Change the Dockerfile:
+
+<code>
+FROM ubuntu:18.04
+RUN apt-get update                      && \
+    apt-get upgrade -y                  && \
+    apt-get install -y less wget        && \
+    apt-get install -y build-essential  && \
+    apt-get install -y libdancer-perl   && \
+    echo "DONE"
+
+ADD My-App /My-App
+
+ENTRYPOINT perl /My-App/bin/app.pl
+</code>
+
+This will copy the Dancer application from the host filesytem to the Docker image which can be distributed.
+
+It will also tell the Docker image to launch the Dancer application when the Docker container starts.
+
+
+Launch the Docker instance:
+
+<code lang="perl">
+docker run --rm -it -p 3001:3000 dancer
+</code>
+
+Internally, in the Docker instance, this will launch the Dancer application listening on port 3000.
+
+Docker will map it to port 3001 of the host system. 
+
+You can now visit http://127.0.0.1:3001/ and see the site.
+
+
