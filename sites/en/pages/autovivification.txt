@@ -339,7 +339,7 @@ $VAR1 = {};
 
 <h2>no autovification</h2>
 
-As an alternatively, there is a pragma on CPAN called
+As an alternative, there is a pragma on CPAN called
 <a href="https://metacpan.org/pod/autovivification">autovivification</a>
 that can turn off the bad effects in a lexical scope (within a pair of curly braces),
 but it is not widely used:
