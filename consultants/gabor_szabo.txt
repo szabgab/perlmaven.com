@@ -9,16 +9,15 @@ country: IL
 location: Modiin, Israel
 languages: English, Hebrew, Hungarian
 specialities: Training, Testing, Automation, Web applications, Refactoring
-html: 
+html:
 
 Gabor has been using Perl since 1995 and teaching it since 2000.
 He runs the <b>Perl Maven</b> site, the <a href="http://perlweekly.com/">Perl Weekly newsletter</a>,
-the <a href="http://perltv.org/">Perl TV</a>, and <a href="http://code-maven.com/">Code Maven</a> site.
+and <a href="http://code-maven.com/">Code Maven</a> site.
 <p>
 He is the original author of <a href="http://padre.perlide.org/">Padre, the Perl IDE</a>.
 <p>
 Gabor received the White Camel award in 2008 for his contribution to the Perl community.
 <p>
-Gabor can provide Perl training, and contract development work.
-He is especially good at setting up testing environments, refactoring old code base, building web applications.
-
+Gabor can help you by setting up testing environments, refactoring old code base, introducing CI/CD pipeline
+and practices to your organization.

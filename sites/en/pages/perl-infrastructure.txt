@@ -387,9 +387,6 @@ implemented Perl Dancer clone in Perl 6. Its source code is available <a href="h
 It is hosted on  <a href="/linode">Linode</a> instance with 2Gb memory 2 CPUs, along with a few other sites of
 <a href="https://szabgab.com/">Gabor Szabo</a>.
 
-<a href="http://perltv.org/">perltv.org</a> the PerlTV list Perl-related presentations and screencasts. It is based on <a href="/dancer">Dancer2</a>.
-Its source code is in the <a href="https://github.com/szabgab/perltv.org">perltv.org</a> repository.
-
 
 <h2>Perl Weekly</h2>
 

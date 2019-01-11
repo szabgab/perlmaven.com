@@ -130,7 +130,7 @@ So we used the <hl>map</hl> two extract the '_id', and 'name' fields, the latter
 with a key 'fields'. Then we took the resultng list of small hashes and sorted them according to their ID.
 That's how they were presented on the original page on search.cpan.org.
 
-The eval-block you see here might be strange. I learned in in <a href="http://perltv.org/v/growing-perl-developers">this presentation</a>.
+The eval-block you see here might be strange.
 
 Then came the question, how to turn this list into groups of 4 as they are represented on <a href="http://search.cpan.org/author/?A">search.cpan.org</a>
 

@@ -17,7 +17,7 @@ There is a TODO list at the end of the page.
 
 Sources:
 <ul>
-  <li>Dan Wright, the treasurer of TPF talking about <a href="http://perltv.org/v/tpf-year-in-review-2014">TPF Year in Review - 2014</a></li>
+  <li>Dan Wright, the treasurer of TPF talking about TPF Year in Review - 2014</li>
   <li><a href="http://news.perlfoundation.org/">news.perlfoundation.org</a>. Covered 2010.01.01-2014.08.09</li>
   <li><a href="http://blogs.perl.org/users/makoto_nozaki/">Makoto Nozaki</a>, the head of the <a href="http://www.perlfoundation.org/grants_committee_members">Grants Committee</a></li>
   <li><a href="http://blogs.perl.org/users/alberto_simoes/">Alberto Simões</a> the previous head of the Grants Committee</li>
@@ -279,7 +279,7 @@ Detailed financial information in this <a href="https://docs.google.com/spreadsh
   <li>2014.02.27 <a href="http://news.perlfoundation.org/2014/02/new-rules-of-operation---grant.html">New Rules of Operation</a></li>
 </ul>
 
-Paid out in 2013: $2,500. Budget for 2014: $16,000 (see <a href="http://perltv.org/v/tpf-year-in-review-2014">TPF Year in Review - 2014</a>)
+Paid out in 2013: $2,500. Budget for 2014: $16,000 (see the TPF Year in Review - 2014)
 
 (See also the official list of <a href="http://www.perlfoundation.org/running_grants">running grants</a> and the list of
 <a href="http://www.perlfoundation.org/completed_grants">completed grants</a>).

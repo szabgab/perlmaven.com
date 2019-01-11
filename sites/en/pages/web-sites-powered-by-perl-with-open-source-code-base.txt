@@ -95,10 +95,6 @@ repository.
 which itslef is written in <a href="/dancer">Dancer</a>. The source code of amuse-wiki is in <a href="https://gitorious.org/amuse-wiki">this</a> repository.
 
 
-<a href="http://perltv.org/">PerlTV</a> list Perl-related presentations and screencasts. It is based on <a href="/dancer">Dancer2</a>.
-Its source code is in the <a href="https://github.com/szabgab/perltv.org">perltv.org</a> repository.
-
-
 Most <a href="http://act.mongueurs.net/conferences.html">Perl conferences</a> (YAPCs, Workshops etc) run on <a href="http://act.mongueurs.net/">Act - A Conference Toolkit</a>.
 Its source code is in <a href="https://github.com/book/Act">the Act repository</a>.
 

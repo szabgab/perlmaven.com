@@ -51,8 +51,6 @@ Once in a while I need to look up an article I remember was posted there. So I c
 <a href="https://perlmaven.com/">Perl Maven</a> another site I publish, but more and more frequently I need to use the search box at the top
 to locate old articles.
 
-<a href="http://perltv.org/">Perl TV</a> another site I maintain collecting Perl-related videos: presentations and screencasts.
-
 <a href="http://perltricks.com/">Perltricks</a> written mostly by David Farrell has interesting and nicely formatted articles. This is the only other site I am aware
 of (besides the Perl Maven site you are reading) where the author actually expressed a  desire to bring in more readers.
 

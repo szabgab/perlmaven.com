@@ -110,19 +110,19 @@ sub process {
 As a first version it was ok to call <hl>say</hl> to report what the code is doing and to call
 <hl>warn</hl> to report about strange situations, but as the script grows, it is better to
 switch to one of the logging modules from CPAN. I've used
-<a href="https://metacpan.org/pod/Log::Dispatch">Log::Dispatch</a> quite a lot, 
-but after watching <a href="http://perltv.org/v/monitoring-your-code-with-log4perl">the presentation of Tom Hukins</a>
+<a href="https://metacpan.org/pod/Log::Dispatch">Log::Dispatch</a> quite a lot,
+but after watching a presentation of Tom Hukins
 I decided to give <a href="https://metacpan.org/pod/Log::Log4perl">Log::Log4perl</a> try.
 
 After some reading I created a file called <hl>log.conf</hl> and put the following in it:
 
 <code>
 log4perl.rootLogger=DEBUG, LOGFILE
- 
+
 log4perl.appender.LOGFILE=Log::Log4perl::Appender::File
 log4perl.appender.LOGFILE.filename=process.log
 log4perl.appender.LOGFILE.mode=append
- 
+
 log4perl.appender.LOGFILE.layout=PatternLayout
 log4perl.appender.LOGFILE.layout.ConversionPattern=[%r] %F %L %c - %m%n
 </code>
