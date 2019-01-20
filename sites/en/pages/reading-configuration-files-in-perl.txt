@@ -1,0 +1,54 @@
+=title Reading configuration INI files in Perl
+=timestamp 2019-01-20T21:30:01
+=indexes Config::Tiny
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+The <a href="https://en.wikipedia.org/wiki/INI_file">INI file format</a> is a simple file format that allows 2-level configuration options. It was extensively used in MS DOS and MS Windows, and it can be used in lots of places as it is very simple.
+
+<include file="examples/config.ini">
+
+This format consists of section names (in square brackets) and in each section key-value pairs separated by and <hl>=</hl> sign and padded by spaces.
+
+=abstract end
+
+There are several articles showing how to read them using plain Perl for example <a href="/beginner-perl-maven-process-config-file">processing config file</a>
+and the exercise <a href="/beginner-perl-maven-exercise-parse-ini-file">parse INI file</a>
+however there are several modules on CPAN that would do the work for you in a more generic way.
+
+We'll use <a href="https://metacpan.org/pod/Config::Tiny">Config::Tiny</a>
+
+<include file="examples/read_config.pl">
+
+The line that reads and parses the configuration file is <hl>Config::Tiny->read</hl>.
+
+It returns a reference to a 2-dimensional hash. The main hash has the sections as keys and the values are the hashes representing each individual section.
+
+We can then access the specific values using the <hl>$config->{section}{key}</hl> construct.
+
+If we use Data::Dumper we can see the whole data structure:
+
+<code>
+$VAR1 = bless( {
+                 'digital_ocean' => {
+                                      'api' => 'seaworld'
+                                    },
+                 'openweathermap' => {
+                                       'api' => 'asdahkaky131'
+                                     },
+                 'aws' => {
+                            'api_code' => 'qkhdkadyday',
+                            'api_key' => 'myaws7980'
+                          }
+               }, 'Config::Tiny' );
+</code>
+
+<h2>Write config file</h2>
+
+<a href="https://metacpan.org/pod/Config::Tiny">Config::Tiny</a> can also write config files
+and it can also handle key-value pairs without any section. Check the documentation for details.
+
