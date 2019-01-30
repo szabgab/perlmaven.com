@@ -1,0 +1,6 @@
+IMPORT.fpds_awards_raw,Raw import data from FPDS stored as the XML Tag Name (as-is).,isEconomicallyDisadvantagedWomenOwnedSmallBusiness,VARCHAR(255),Null,Reference FPDS data dictionary (XML Tag Name).,
+IMPORT.fpds_awards_raw,Raw import data from FPDS stored as the XML Tag Name (as-is).,isJointVentureWomenOwnedSmallBusiness,VARCHAR(255),Null,Reference FPDS data dictionary (XML Tag Name).,
+IMPORT.fpds_awards_raw,Raw import data from FPDS stored as the XML Tag Name (as-is).,isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness,VARCHAR(255),Null,Reference FPDS data dictionary (XML Tag Name).,
+IMPORT.fpds_awards_raw,Raw import data from FPDS stored as the XML Tag Name (as-is).,isVeteranOwned,VARCHAR(255),Null,Reference FPDS data dictionary (XML Tag Name).,
+IMPORT.fpds_awards_raw,Raw import data from FPDS stored as the XML Tag Name (as-is).,isServiceRelatedDisabledVeteranOwnedBusiness,VARCHAR(255),Null,Reference FPDS data dictionary (XML Tag Name).,
+IMPORT.fpds_awards_raw,Raw import data from FPDS stored as the XML Tag Name (as-is).,award_idv_flag,CHAR(1),Not Null,"Indicates whether record is from the Award or Closed_Award Atom Feed Entry (""A"") or IDV or Closed_IDV Atom Feed Entry (""I"").",
