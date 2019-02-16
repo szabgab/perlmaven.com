@@ -1,0 +1,22 @@
+image: perl:5.26
+
+definitions:
+  services:
+    mysql:
+      image: mysql:5.7
+      environment:
+        MYSQL_DATABASE: 'test_db'
+        MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+        MYSQL_USER: 'test_user'
+        MYSQL_PASSWORD: 'test_password'
+
+pipelines:
+  default:
+    - step:
+        script:
+          - cpanm DBD::mysql
+          - perl check_mysql.pl
+        services:
+          - mysql
+
+
