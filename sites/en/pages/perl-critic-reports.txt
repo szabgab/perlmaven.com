@@ -73,4 +73,6 @@ Related articles:
 
 <h2>Use of "open" is not allowed .....  Use file operation methods of MainObject instead.</h2>
 
+<h2>I/O layer ":utf8" used ....  Use ":encoding(UTF-8)" to get strict validation.</h2>
+
 
