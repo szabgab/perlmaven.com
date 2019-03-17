@@ -10,7 +10,7 @@
 <style>
 ul.horizontal {
    list-style-type: none;
-   
+
 }
 ul.horizontal li {
     display: inline-block;
@@ -118,5 +118,11 @@ article comparing <a href="/perl-cgi-mod-perl-psgi">CGI, mod_perl and PSGI</a>. 
 the generic <a href="/perl-tutorial">Perl tutorial</a> or the articles on
 <a href="/mojolicious">Mojolicious</a>,  <a href="/dancer">Perl Dancer</a>, <a href="/catalyst">Catalyst</a>,
 <a href="/psgi">PSGI/Plack</a>, or even <a href="/cgi">CGI</a>, the Common Gateway Interface, for old-school web applications.
+</div>
+
+<div class="main-content">
+In the off chance you are interested in topics other than Perl, especially related to Test Automation, Continuous
+Integration, Continuous Deployment, DevOps, then you are welcome to check out the list of
+<a href="https://hostlocal.com/">DevOps related training courses</a>.
 </div>
 
