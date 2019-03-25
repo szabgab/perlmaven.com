@@ -1,0 +1,37 @@
+=title substr outside of string at ...
+=timestamp 2019-03-25T08:30:01
+=indexes substr, warnings
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+I don't encounter this warning often, but when I do it indicates a bug in my code.
+
+I saw this at two my clients recently, one we turned <a href="/always-use-warnings">use warinings</a> on. Frankly I don't understand why even in 2018 some companies insist on not using <hl>warnings</hl>.
+
+=abstract end
+
+This is the script:
+
+<include file="examples/hello_perl_world.pl">
+
+
+It does not do anything special. It just runs <a href="/string-functions-length-lc-uc-index-substr">substr</a> on a string. In the first 2 cases the 2nd parameter, that indicates the beginning of the substring is inside the original string. This does not generate a warning even if the full substring is expected to be longer than what we have the string.
+
+
+In the 3rd case however, the 2nd parameter is bigger than the full length of the string, which means that already the beginning of the substring is outside the original string.
+
+That generates a warning.
+
+<code>
+$ perl hello_perl_world.pl
+
+'Perl'
+'World'
+substr outside of string at hello_perl_world.pl line 13.
+</code>
+
+See all the other <a href="/common-warnings-and-error-messages">common warnings and errors in Perl</a>.
