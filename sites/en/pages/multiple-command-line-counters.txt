@@ -9,8 +9,8 @@
 
 =abstract start
 
-As part of the <a href="/counter">big counter example</a> project, this example runs on the command line and uses a plain text file as back-end 'database'.
-It is the second most basic version of all the <a href="/counter">counter examples</a>, that provides multiple counters.
+As part of the <a href="https://code-maven.com/counter">big counter example</a> project, this example runs on the command line and uses a plain text file as back-end 'database'.
+It is the second most basic version of all the <a href="https://code-maven.com/counter">counter examples</a>, that provides multiple counters.
 (The most simple one provided a <a href="/pro/command-line-counter">single counter</a>.
 It accepts a value (a word) on the command line and uses a separate counter for each such value.
 
@@ -171,6 +171,6 @@ foreach my $str (sort keys %counter) {
 This is not really an issue, but let me just mention it.
 In this solution on every run of the script we load the whole 'counters.txt' into memory. If there are many counters (in the millions)
 then this can be both time-consuming and it can take a lot of memory of the script. There will be other solutions
-in the <a href="/counter">counter examples</a> with different back-ends that will make it easy to fecth and store a single entry.
+in the <a href="https://code-maven.com/counter">counter examples</a> with different back-ends that will make it easy to fecth and store a single entry.
 
 

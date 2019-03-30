@@ -9,7 +9,7 @@
 =abstract start
 
 In this simple example we'll see how to use <a href="https://metacpan.org/pod/DBIx::Class">DBIx::Class</a> (aka. DBIC) to
-create and use a database for a simple command-line <a href="/counter">counter</a> script.
+create and use a database for a simple command-line <a href="https://code-maven.com/counter">counter</a> script.
 
 DBIx::Class is an ORM, an Object Relational Mapper. It tries to bridge the conceptual difference between the representation
 of the data in a Relational database where it is stored in tables, and the application where the data is stored in

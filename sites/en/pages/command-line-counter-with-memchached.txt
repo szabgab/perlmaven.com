@@ -12,7 +12,7 @@
 
 It can be used for caching data and reusing them among processes. It can also be used as an in-memory database. Today it falls in the key-value category of the NoSQL databases.
 
-In this example we are going to use a pure Perl implementation of the server - because it is easy to install - and a pure Perl client. We are going to create a simple <a href="/counter">counter</a> with it.
+In this example we are going to use a pure Perl implementation of the server - because it is easy to install - and a pure Perl client. We are going to create a simple <a href="https://code-maven.com/counter">counter</a> with it.
 
 =abstract end
 

@@ -9,7 +9,7 @@
 
 =abstract start
 
-As part of the <a href="/counter">big counter example</a> project, this example runs on the command line and uses a JSON file as back-end 'database'.
+As part of the <a href="https://code-maven.com/counter">big counter example</a> project, this example runs on the command line and uses a JSON file as back-end 'database'.
 It helps simplify the back-end part we saw in the <a href="/multiple-command-line-counters">multiple command line counter with TSV file</a> case.
 
 =abstract end

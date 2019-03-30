@@ -9,8 +9,8 @@
 
 =abstract start
 
-As part of the <a href="/counter">big counter example</a> project, this example runs on the command line and uses a plain text file as back-end 'database'.
-It is probably most basic version of all the <a href="/counter">counter examples</a>, that provides a single counter.
+As part of the <a href="https://code-maven.com/counter">big counter example</a> project, this example runs on the command line and uses a plain text file as back-end 'database'.
+It is probably most basic version of all the <a href="https://code-maven.com/counter">counter examples</a>, that provides a single counter.
 
 =abstract end
 

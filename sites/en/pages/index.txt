@@ -65,7 +65,7 @@ ul.horizontal li {
   <li><a href="/search-cpan-org">The search.cpan.org cloning project</a> - Implementing a CPAN search engine using Plack/PSGI with MetaCPAN back-end.</li>
   <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
   <li><a href="/indexing-emails-in-an-mbox">Indexing e-mails in an mbox</a></li>
-  <li><a href="/counter">Counter Examples</a> Various solution on the simple task of building a counter.</li>
+  <li><a href="https://code-maven.com/counter">Counter Examples</a> Various solution on the simple task of building a counter.</li>
   <li><a href="/becoming-a-co-maintainer">Becoming a co-maintainer of a CPAN module - refactoring a CPAN module</a></li>
   <li><a href="/perl-critic">Perl::Critic</a> lint-like static analyzer for Perl.</li>
   <li><a href="/markua">Implementing a Markua Parser in Perl 5</a></li>

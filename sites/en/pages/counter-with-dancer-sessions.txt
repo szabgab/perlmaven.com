@@ -8,7 +8,7 @@
 
 =abstract start
 
-How to create a personal <a href="/counter">counter</a> with only a session object in the <a href="/dancer">Perl Dancer</a> framework?
+How to create a personal <a href="https://code-maven.com/counter">counter</a> with only a session object in the <a href="/dancer">Perl Dancer</a> framework?
 
 =abstract end
 
@@ -197,7 +197,7 @@ If we open another browser we can see it has a separate counter.
 
 <h2>Per session counter</h2>
 
-So this counter we created is not the same kind of counter we wanted to create in the big <a href="/counter">counter example</a>
+So this counter we created is not the same kind of counter we wanted to create in the big <a href="https://code-maven.com/counter">counter example</a>
 project, but still a useful exercise in using sessions and cookies.
 
 

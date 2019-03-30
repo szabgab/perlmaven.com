@@ -8,7 +8,7 @@
 
 =abstract start
 
-There are already a number of solution in the <a href="/counter">counter example</a>
+There are already a number of solution in the <a href="https://code-maven.com/counter">counter example</a>
 series, but this one is quite different. It is actually based on a question I got from one of my former students
 at one of the big hi-tech companies.
 
