@@ -290,7 +290,7 @@ The other thing is that some people prefer that the application will throw a
 hard exception instead of the soft warning. If that's your thing, you could change the beginning of the script and write
 
 <code lang="perl">
-use warnings FATAL => "all";
+use warnings FATAL =&gt; "all";
 </code>
 
 Having that in the code, the script will print the number 3, and then throw an exception:
@@ -310,29 +310,7 @@ you could check if the string looks like a number when you receive it from the o
 For this we are going to load the module <a href="https://metacpan.org/pod/Scalar::Util">Scalar::Util</a>,
 and use the subroutine <hl>looks_like_number</hl> it supplies.
 
-<code lang="perl">
-use strict;
-use warnings FATAL => "all";
-use 5.010;
-
-use Scalar::Util qw(looks_like_number);
-
-my $z = 3;
-say $z;
-my $y = "3.14";
-
-if (looks_like_number($z) and looks_like_number($y)) {
-  say $z + $y;
-}
-
-say $z . $y;
-
-if (defined $y) {
-  say "defined";
-} else {
-  say "NOT";
-}
-</code>
+<include file="examples/fatal_warning.pl">
 
 
 <h2>operator overloading</h2>
