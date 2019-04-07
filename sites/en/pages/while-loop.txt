@@ -12,19 +12,7 @@ In this episode of the <a href="/perl-tutorial">Perl tutorial</a> we are going t
 
 =abstract end
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $counter = 10;
-
-while ($counter > 0) {
-  say $counter;
-  $counter -= 2;
-}
-say 'done';
-</code>
+<include file="examples/while_loop.pl">
 
 The <hl>while</hl> loop has a condition, in our case checking if the variable $counter is larger than 0,
 and then a block of code wrapped in curly braces.
@@ -82,22 +70,8 @@ One of them is calling the <hl>last</hl> statement inside the while loop.
 That will skip the rest of the block and won't check the condition again.
 Effectively ending the loop. People usually put it in some kind of a condition.
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
 
-while (1) {
-  print "Which programming language are you learning now? ";
-  my $name = <STDIN>;
-  chomp $name;
-  if ($name eq 'Perl') {
-    last;
-  }
-  say 'Wrong! Try again!';
-}
-say 'done';
-</code>
+<include file="examples/infinite_while_loop.pl">
 
 In this example we ask the user a question and hope he will be able to
 answer it using the correct case. He will be stuck with this question
@@ -107,13 +81,13 @@ So the conversation might go on like this:
 
 <code>
 Which programming language are you learning now?
->  Java
+$ Java
 Wrong! Try again!
 Which programming language are you learning now?
->  PHP
+$ PHP
 Wrong! Try again!
 Which programming language are you learning now?
->  Perl
+$ Perl
 done
 </code>
 
