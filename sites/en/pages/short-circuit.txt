@@ -21,12 +21,7 @@ If it finds the final answer before it calculated the whole expression, it will 
 
 Let's see a real-life example:
 
-
-<code lang="perl">
-if ($my_money > 1_000_000 or $my_salary > 10_000) {
-    print "I can live well.\n";
-}
-</code>
+<include file="examples/my_money_my_salary.pl">
 
 This code will check if I have a lot of money (some currency) or if I earn a nice monthly sum. If either of this is true,
 it will print that <b>I can live well</b>.
@@ -36,11 +31,7 @@ That expression is nice, and I check this every time there is a "salary review" 
 But frankly I expect at every "salary review"  I get a raise. I am not greedy, I am ok with a raise of 1.
 So I rewrite the expression to use <hl>++</hl>, the auto-increment operator:
 
-<code lang="perl">
-if ($my_money > 1_000_000 or $my_salary++ > 10_000) {
-    print "I can live well.\n";
-}
-</code>
+<include file="examples/my_money_my_salary_inc.pl">
 
 Of course I check this every few hours, so my salary is raised quite often, but as I said, I am not greedy.
 
@@ -61,14 +52,14 @@ But no worry, after all it must have grown a lot since the last time I relied on
 My salary stayed the same as it was the day I won the lottery.
 
 The reason is the short-circuit. Perl will evaluate the above expression from left to right. First it will check if
-the <hl>$my_money > 1_000_000</hl>. When this returned false (before I won the lottery), it checked the other side of
-the <hl>or</hl> operator as well. When it executed the <hl>$my_salary++ > 10_000</hl> expression, it also
+the <hl>$my_money &gt; 1_000_000</hl>. When this returned false (before I won the lottery), it checked the other side of
+the <hl>or</hl> operator as well. When it executed the <hl>$my_salary++ &gt; 10_000</hl> expression, it also
 executed the <hl>++</hl> auto-increment operator and my salary got one bigger.
 
 As the second expression was also false, and because <hl>false or false</hl> is <hl>false</hl>, that's
-what the expression returned. 
+what the expression returned.
 
-Once I won on the lottery, the first part of the boolean expression <hl>$my_money > 1_000_000</hl> became true.
+Once I won on the lottery, the first part of the boolean expression <hl>$my_money &gt; 1_000_000</hl> became true.
 At that point perl noticed that it does not matter what the second expression will return, the whole expression
 will always be true. That's because both <hl>true or false</hl> and <hl>true or true</hl> will return <hl>true</hl>.
 If the second expression won't make a difference in the end-result then perl, as a matter of optimization, won't
@@ -87,11 +78,11 @@ side-effects. It can literally cost you money...
 <h2>open or die</h2>
 
 Perl actually has a well known expression called <hl>open or die</hl> where we use the short-circuit behavior of the
-<hl>or</hl> operator. When we <a href="/open-and-read-from-files">open a file for reading</a> 
+<hl>or</hl> operator. When we <a href="/open-and-read-from-files">open a file for reading</a>
 we normally have an expression like this:
 
 <code lang="perl">
-open(my $fh, '<', $filename) or die "Could not open file '$filename'\n";
+open(my $fh, '&lt;', $filename) or die "Could not open file '$filename'\n";
 </code>
 
 This is a boolean expression with the <hl>or</hl> operator, but without an <hl>if</hl> statement, and without anything
@@ -110,14 +101,7 @@ on the right side of <hl>or</hl> which will call <hl>die</hl> that will <a href=
 When we are sorting with two sorting conditions e.g. we sort the strings according to length, and the
 strings with equal length we sort according to the ASCII table, we also use the short-circuit of the <hl>or</hl> operator:
 
-
-<code lang="perl">
-@sorted = sort {
-   length $a <=> length $b
-     or
-    $a cmp $b
-} @strings;
-</code>
+<include file="examples/sort_short_circuit.pl">
 
 Here for every two strings in <hl>$a</hl> and <hl>$b</hl>, we first compare their length using the
 spaceship-operator. If they differ in length the result will be either 1 or -1. In either case
