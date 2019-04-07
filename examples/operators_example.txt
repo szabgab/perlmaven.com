@@ -1,0 +1,8 @@
+ 2  < 3  is TRUE because < compares the two numbers.
+
+ 2  lt 3 is also TRUE as 2 is before 3 in the ASCII table
+
+12 > 3  is TRUE obviously.
+
+12 gt 3 will give you FALSE
+

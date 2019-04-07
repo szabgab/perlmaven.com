@@ -34,15 +34,7 @@ how they are compared.
 
 The two sets of operators are as follows:
 
-<code>
-Numeric    String         Meaning
-==            eq           equal
-!=            ne           not equal
-<             lt           less than
->             gt           greater than
-<=            le           less than or equal
->=            ge           greater than or equal
-</code>
+<include file="examples/operators.txt">
 
 The operators on the left will compare the values as numbers while
 the operators on the right (the middle column) will compare the
@@ -74,15 +66,7 @@ A more interesting situation will be comparing
 
 which is also TRUE as the <hl>==</hl> operator of Perl converts the string to a number.
 
-<code>
- 2  < 3  is TRUE because < compares the two numbers.
-
- 2  lt 3 is also TRUE as 2 is before 3 in the ASCII table
-
-12 > 3  is TRUE obviously.
-
-12 gt 3 will give you FALSE
-</code>
+<include file="examples/operators_example.txt">
 
 This might be surprising for some people at first but if you think about it, the
 way Perl compares the two strings is character by character. So it compares "1" to "3"
@@ -125,39 +109,13 @@ and
 
 This table might be handy to see the results:
 
-<code>
- 12.0   == 12    TRUE
-"12.0"  == 12    TRUE
-"12.0"  eq 12    FALSE
-  2     <   3    TRUE
-  2    lt   3    TRUE
- 12     >   3    TRUE
- 12    gt   3    FALSE ! (look out, might not be obvious at first)
-"foo"  ==  ""    TRUE  ! (You get warnings if you used the "warnings" pragmata)
-"foo"  eq  ""    FALSE
-"foo"  == "bar"  TRUE  ! (You get warnings if you used the "warnings" pragmata)
-"foo"  eq "bar"  FALSE
-</code>
+<include file="examples/comparision.txt">
 
 Finally an example where people can fall in a trap is when you get some input from the
 user and after carefully chomping off the newline from the end you try to check if the
 given string is empty.
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-print "input: ";
-my $name = <STDIN>;
-chomp $name;
-
-if ( $name == "" ) {   # wrong! you need to use eq instead of == here!
-  say "TRUE";
-} else {
-  say "FALSE";
-}
-</code>
+<include file="examples/incorrect_use_of_equal.pl">
 
 If you run this script and type in "abc" you will get that it is TRUE,
 as if Perl thought "abc" is the same as the empty string
