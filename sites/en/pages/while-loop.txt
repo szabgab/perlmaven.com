@@ -17,8 +17,9 @@ In this episode of the <a href="/perl-tutorial">Perl tutorial</a> we are going t
 The <hl>while</hl> loop has a condition, in our case checking if the variable $counter is larger than 0,
 and then a block of code wrapped in curly braces.
 
-When the execution first reaches the beginning of the while loop it checks if the condition is <a href="/boolean-values-in-perl">true or
-false</a>. If it is <hl>FALSE</hl> the block is skipped and the next statement, in our case printing 'done' is executed.
+When the execution first reaches the beginning of the while loop it checks if the condition is
+<a href="/boolean-values-in-perl">true or false</a>.
+If it is <hl>FALSE</hl> the block is skipped and the next statement, in our case printing 'done' is executed.
 
 If the condition of the <hl>while</hl> is <hl>TRUE</hl>, the block gets executed, and then the execution goes back
 to the condition again. It is evaluated again. If it is false the block is skipped and the 'done'
