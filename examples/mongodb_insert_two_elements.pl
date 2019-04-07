@@ -10,11 +10,11 @@ my $db   = $client->get_database( 'example_' . $$ . '_' . time  );
 
 my $people_coll = $db->get_collection('people');
 
-$people_coll->insert( {
+$people_coll->insert_one( {
     name => 'First',
 });
 
-$people_coll->insert( {
+$people_coll->insert_one( {
     name => 'Second',
 });
 

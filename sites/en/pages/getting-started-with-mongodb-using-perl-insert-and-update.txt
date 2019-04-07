@@ -1,6 +1,6 @@
 =title Getting started with MongoDB using Perl - insert and simple update
 =timestamp 2015-04-27T06:50:01
-=indexes MongoDB
+=indexes MongoDB, insert, insert_one
 =status show
 =books mongodb
 =author szabgab
@@ -25,7 +25,7 @@ connects to the MongoDB server running on the same machine at the default port.
 
 The next call:
 <hl>my $db   = $client->get_database( 'example_' . $$ . '_' . time  );</hl>
-returns a database. In order to reduce the chances that we access an already 
+returns a database. In order to reduce the chances that we access an already
 existing database we create the name of the database on the fly using the
 current process id <hl>$$</hl> and the current <hl>time</hl> in seconds.
 
@@ -38,11 +38,11 @@ The next two calls insert data structures (hash references) in the collection.
 In the terminology of MongoDB they are called documents:
 
 <code lang="perl">
-$people_coll->insert( {
+$people_coll->insert_one( {
     name => 'First',
 });
 
-$people_coll->insert( {
+$people_coll->insert_one( {
     name => 'Second',
 });
 </code>
