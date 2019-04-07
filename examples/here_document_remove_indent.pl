@@ -1,0 +1,3 @@
+    (my $message = <<"    END_MESSAGE") =~ s/^ {8}//gm;
+        ...
+    END_MESSAGE

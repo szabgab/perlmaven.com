@@ -1,0 +1,3 @@
+my $message = <<"END_MESSAGE";
+...
+END_MESSAGE

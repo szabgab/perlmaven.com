@@ -20,24 +20,7 @@ starting from the word Dear till the line before the second appearance of END_ME
 
 <h2>Non-interpolating here document</h2>
 
-<code lang="perl">
-#!/usr/bin/perl
-use strict;
-use warnings;
-
-my $name = 'Foo';
-
-my $message = <<'END_MESSAGE';
-Dear $name,
-
-this is a message I plan to send to you.
-
-regards
-  the Perl Maven
-END_MESSAGE
-
-print $message;
-</code>
+<include file="examples/non_interpolating_here_document.pl">
 
 Output:
 
@@ -60,20 +43,12 @@ If you have already seen here-documents in code, you are probably surprised by t
 <b>END_MESSAGE</b>. I think if you find examples of here-documents on the Internet, or behind the corporate firewalls,
 you'll probably see the opening part without any quotes around it. Like this:
 
-<code lang="perl">
-my $message = <<END_MESSAGE;
-...
-END_MESSAGE
-</code>
+<include file="examples/non_interpolating_here_document_default.pl">
 
 It works and it behaves the same as if you put double-quotes around the END_MESSAGE like in the next example,
 but it is less clear. I'd recommend you do not use here-document without quotes around the definition of the end-string.
 
-<code lang="perl">
-my $message = <<"END_MESSAGE";
-...
-END_MESSAGE
-</code>
+<include file="examples/non_interpolating_here_document_double_quotes.pl">
 
 If you already know the
 <a href="/quoted-interpolated-and-escaped-strings-in-perl">difference between single-quotes and double-quotes</a>
@@ -84,26 +59,14 @@ around the end-mark and not the actual string. If no quotes are provided, Perl d
 If you look back to the first example, you will notice we had <hl>$name</hl> part of the here-document
 and it also remained part of the output. That's because Perl did not try to fill the place
 with the content of the <hl>$name</hl> variable. (We did not even have to declare that variable in the
-code. You can try the script, even without the <hl>my $name = 'Foo';</hl> part.) 
+code. You can try the script, even without the <hl>my $name = 'Foo';</hl> part.)
 
 <h2>Interpolating here document</h2>
 
 In the next example we use double quotes around the end-mark and thus it will interpolate
 the <hl>$name</hl> variable:
 
-<code lang="perl">
-use strict;
-use warnings;
-
-my $name = 'Foo';
-my $message = <<"END_MSG";
-Hello $name,
-
-how are you?
-END_MSG
-
-print $message;
-</code>
+<include file="examples/interpolating_here_document.pl">
 
 The result of running this script is:
 
@@ -127,37 +90,18 @@ If the here document needs to be in a place where we'd normally indent
 code, we have two problems:
 
 
-<code lang="perl">
-#!/usr/bin/perl
-use strict;
-use warnings;
-
-my $name = 'Foo';
-my $send = 1;
-
-if ($send) {
-    my $message = <<"END_MESSAGE";
-        Dear $name,
-    
-        this is a message I plan to send to you.
-    
-        regards
-          the Perl Maven
-END_MESSAGE
-    print $message;
-}
-</code>
+<include file="examples/here_document_with_indentation.pl">
 
 One is that as I mentioned above, the end string must be exactly the same both at its
-declaration and at the end of the string, so you cannot indent it at the end. 
+declaration and at the end of the string, so you cannot indent it at the end.
 
 The other problem is that the output will have all those leading whites-spaces in every line:
 
 <code>
         Dear Foo,
-    
+
         this is a message I plan to send to you.
-    
+
         regards
           the Perl Maven
 </code>
@@ -167,19 +111,11 @@ includes enough leading white-spaces: (I am using 4 real spaces here, as the tab
 work well in the article, but they could work in real code. If you are in the indent-by-tab
 camp.)
 
-<code lang="perl">
-    my $message = <<"    END_MESSAGE";
-       ...
-    END_MESSAGE
-</code>
+<include file="examples/here_document_indent.pl">
 
 The extra indentation of the actual text can be removed using a substitution at the assignment.
 
-<code lang="perl">
-    (my $message = <<"    END_MESSAGE") =~ s/^ {8}//gm; 
-        ...
-    END_MESSAGE
-</code>
+<include file="examples/here_document_remove_indent.pl">
 
 In the substitution we replace 8 leading spaces by the empty string. We use two modifiers:
 <hl>/m</hl> changes the behavior of <hl>^</hl> from matching at the <b>beginning of the string</b>
@@ -201,24 +137,5 @@ With all this explanation, actually I am not sure if I should really recommend u
 In many cases, instead of here-documents, I use either the <hl>qq</hl> or the <hl>q</hl> operator.
 Depending if I want interpolating, or non-interpolating strings:
 
-<code lang="perl">
-#!/usr/bin/perl
-use strict;
-use warnings;
-
-my $name = 'Foo';
-my $send = 1;
-
-if ($send) {
-    (my $message = qq{
-        Dear $name,
-    
-        this is a message I plan to send to you.
-    
-        regards
-          the Perl Maven
-        }) =~ s/^ {8}//mg;
-    print $message;
-}
-</code>
+<include file="examples/using_q_or_qq.pl">
 
