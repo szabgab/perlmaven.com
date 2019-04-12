@@ -1,0 +1,90 @@
+=title min, max, sum in Perl using List::Util
+=timestamp 2019-04-12T18:40:01
+=indexes  min, minstr, max, maxstr, sum, sum0, product, List::Util
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+The <a href="https://metacpan.org/pod/List::Util">List::Util</a> module provides a number of simple 
+and some more complex functions that can be used on lists, anything that returns a list anything that can
+be seen as a list.
+
+For example these can be used on arrays as they "return their content" in <a href="m/scalar-and-list-context-in-perl">list context</a>.
+
+=abstract end
+
+<h2>min</h2>
+
+If given a list of numbers to it, it will return the smallest number:
+
+<include file="examples/min.pl">
+
+If one of the arguments is a string that cannot be fully converted to a number automatically and if you have <a href="/always-use-warnings">use warnings on as you should</a>, then you'll see the following warnings: <hl>Argument ... isn't numeric in subroutine entry at ...</hl>
+
+<h2>minstr</h2>
+
+There is a corresponding function called <hl>minstr</hl> that will accept strings and sort them according to the ASCII order,
+though I guess it will work with Unicode as well if that's what you are feeding it.
+
+<include file="examples/minstr.pl">
+
+It can also accept numbers as parameters and will treat them as strings.
+The result might surprise you, if you are not familiar with the automatic number to string conversion of Perl,
+and that the string "11" is ahead of the string "2" because the comparison works character-by-character and
+in this case the first character of "11" is ahead of the first (and only) character of "2" in the ASCII table.
+
+<include file="examples/minstr_numbers.pl">
+
+After all internally it uses the <hl>lt</hl> operator.
+
+<h2>max</h2>
+
+Similar to <hl>min</hl> just returns the biggest number.
+
+<h2>maxstr</h2>
+
+Similar to <hl>minstr</hl>, returns the biggest string in ASCII order.
+
+<h2>sum</h2>
+
+The <hl>sum</hl> function adds up the provided numbers and returns their sum. If one or more of the values provided is a string that cannot be fully converted to a number it will generate a warning like this: <hl>Argument ... isn't numeric in subroutine entry at ...</hl>. If the parameters of <hl>sum</hl> are empty the function returns <a href="/undef">undef</a>. This is unfortunate as it should be 0, but in order to provide backwards compatibility, if the provided list is empty then undef is returned.
+
+<include file="examples/sum.pl">
+
+<h2>sum0</h2>
+
+In order to fix the above issue, that <hl>sum()</hl> return <hl>undef</hl>, in version 1.26 of the module, in 2012, a new function called <hl>sum0</hl> was introduced that behaves exactly like the <hl>sum</hl> function, but returns 0 if no values was supplied.
+
+<include file="examples/sum0.pl">
+
+<h2>product</h2>
+
+The <hl>product</hl> function multiplies its parameters. As this function is newer it was not constrained with backward compatibility issues so if the provided list is empty, the returned value will be 1.
+
+<include file="examples/product.pl">
+
+
+<h2>Other functions of List::Util</h2>
+
+The module has a number of other functions that were used in various other articles:
+
+<h2>first</h2>
+
+<hl>first</hl> returns the first element from a list that satisfies the given condition. For examples on how to use it an why is it good check out the articles <a href="/fast-lookup-by-name-or-by-date">Fast lookup by name or by date - Array - Hash - Linked List</a> and <a href="/search-for-hash-in-array-of-hashes">Search for hash in an array of hashes</a>.
+
+<h2>any</h2>
+
+The <hl>any</hl> function will return <a href="/boolean-values-in-perl">true</a> if any of the given values satisfies the given condition. It is shown in the article <a href="/filtering-values-with-perl-grep">Filtering values using Perl grep</a> as a better solution.
+
+It is also used in the example showing how to <a href="/is-any-create-test-module">create a testing module</a> and how to <a href="/is-any-to-test-multiple-expected-values">implement 'is_any' to test multiple expected values</a>.
+
+<h2>all</h2>
+
+The <hl>all</hl> function will return <a href="/boolean-values-in-perl">true</a> if all the supplied values satisfy the given condition. It can be seen in the article <a href="/check-several-regexes-on-many-strings"">Check several regexes on many strings</a>.
+
+<h2>reduce</h2>
+
+The <hl>reduce</hl> function might be familiar to you from the <a href="https://en.wikipedia.org/wiki/MapReduce">MapReduce</a> programming model that was lauded around "BigData". It makes it provides a way to summarize data in an easy way. <a href="/factorial-in-perl">Implementing factorial in Perl - n!</a> is a good and simple example. It is also used in the <a href="/fast-lookup-by-name-or-by-date">Fast lookup by name or by date - Array - Hash - Linked List</a> article.
