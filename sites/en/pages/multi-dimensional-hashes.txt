@@ -8,11 +8,12 @@
 
 =abstract start
 
-Every value in a hash in Perl can be a reference to another hash.
+Every value in a hash in Perl can be a reference to another hash or to another array.
 If used correctly the data structure can behave
 as a two-dimensional or multi-dimensional hash.
 
 =abstract end
+
 
 Let's see the following example:
 
@@ -349,4 +350,12 @@ as that might trigger <a href="/autovivification">unwanted autovivification</a>.
 if (exists $grades{"Foo Bar"}{Programming}) {
 }
 </code>
+
+<h2>Other examples</h2>
+
+<ul>
+    <li><a href="/hash-of-arrays">Hash of arrays</a></li>
+    <li><a href="/pro/printing-hash-of-hash-of-arrays-by-the-array">Hash of hashes of arrays</a></li>
+</ul>
+
 

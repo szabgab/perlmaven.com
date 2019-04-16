@@ -1,0 +1,9 @@
+id,group
+1,Mathematics
+2,Chemistry
+3,Sport
+4,Physics
+5,Spanish
+6,Theatre
+7,Hungarian
+8,Hebrew

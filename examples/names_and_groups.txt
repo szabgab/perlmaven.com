@@ -1,0 +1,51 @@
+$VAR1 = {
+          'Mary' => [
+                      'Mathematics',
+                      'Chemistry',
+                      'Sport',
+                      'Physics',
+                      'Spanish'
+                    ],
+          'Barbie' => [
+                        'Mathematics',
+                        'Chemistry',
+                        'Physics',
+                        'Hungarian',
+                        'Hebrew'
+                      ],
+          'Joe' => [
+                     'Sport',
+                     'Theatre'
+                   ]
+        };
+-------------
+$VAR1 = {
+          'Hungarian' => [
+                           'Barbie'
+                         ],
+          'Mathematics' => [
+                             'Mary',
+                             'Barbie'
+                           ],
+          'Theatre' => [
+                         'Joe'
+                       ],
+          'Physics' => [
+                         'Mary',
+                         'Barbie'
+                       ],
+          'Sport' => [
+                       'Mary',
+                       'Joe'
+                     ],
+          'Hebrew' => [
+                        'Barbie'
+                      ],
+          'Chemistry' => [
+                           'Mary',
+                           'Barbie'
+                         ],
+          'Spanish' => [
+                         'Mary'
+                       ]
+        };
