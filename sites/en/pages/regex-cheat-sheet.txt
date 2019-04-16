@@ -27,7 +27,7 @@ can be quite useful to have a place for quick look-up. I hope this Regex Cheat-s
 <code>
    [bgh.]      One of the characters listed in the character class b,g,h or . in this case.
    [b-h]       The same as [bcdefgh].
-   [a-z]       Lower case Latin letters. 
+   [a-z]       Lower case Latin letters.
    [bc-]       The characters b, c or - (dash).
    [^bx]       Complementary character class. Anything except b or x.
    \w          Word characters: [a-zA-Z0-9_].
@@ -64,7 +64,7 @@ TODO: add examples \w and \d matching unicode letters and numebers.
    a{n,m}?
    a{n,}?
 
-   a?? 
+   a??
    a{n}?
 </code>
 
@@ -90,7 +90,7 @@ TODO: add examples \w and \d matching unicode letters and numebers.
 <code>
    ^           Beginning of string (or beginning of line if /m enabled)
    $           End of string (or end of line if /m enabled)
-   \A          Beginning of string  
+   \A          Beginning of string
    \Z          End of string (or before new-line)
    \z          End of string
    \b          Word boundary (start-of-word or end-of-word)
@@ -145,8 +145,8 @@ TODO: add examples \w and \d matching unicode letters and numebers.
 <h2>Official documentation</h2>
 
 <ul>
-  <li><a href="https://metacpan.org/pod/perlref">perlref</a></li>
-  <li><a href="https://metacpan.org/pod/perlreftut">perlreftut</a></li>
+  <li><a href="https://metacpan.org/pod/perlre">perlre</a></li>
+  <li><a href="https://metacpan.org/pod/perlretut">perlretut</a></li>
 </ul>
 
 
