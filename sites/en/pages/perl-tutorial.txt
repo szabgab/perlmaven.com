@@ -377,6 +377,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/minimal-requirement-to-build-a-sane-cpan-package">Minimal requirement to build a sane CPAN package</a></li>
     <li><a href="/statement-modifiers">Statement modifiers: reversed if statements</a></li>
     <li><a href="/autovivification">autovivification</a></li>
+    <li><a href="/printf">Formatted printing in Perl</a> using printf and sprintf</li>
 </ol>
 
 <b>From other books</b>

@@ -1,0 +1,20 @@
+=title Formatted printing in Perl using printf and sprintf
+=timestamp 2019-04-20T09:30:01
+=indexes printf, sprintf
+=status show
+=books beginner
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+<hl>printf</hl> can be used to create a formatted print to the screen.
+
+<hl>sprintf</hl> accepts the same parameters, but it will return the formatted string instead of printing
+it so you can collect the string and print them later, or save them to a file or send them in an e-mail.
+
+=abstract end
+
+<include file="examples/printf.pl">
+
