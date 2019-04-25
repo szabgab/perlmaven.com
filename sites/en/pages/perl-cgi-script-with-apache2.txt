@@ -160,6 +160,12 @@ Now you should have:
 </VirtualHost>
 </code>
 
+
+This will configure http. For a real public site consider using https.
+Check out <a href="https://code-maven.com/the-importance-of-https">the importance of using https</a>
+if you'd like to know why.
+
+
 By default this Apache instance does not have the CGI module enabled.
 This we can see by noticing that the mods-enabled directory does not have any of the cgi files
 that are available in the mods-available directory:
