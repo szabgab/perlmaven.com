@@ -24,7 +24,9 @@ The beginning of a series of articles about
 <h2>Dancer 1</h2>
 <ul>
    <li><a href="/dancer-hello-world">Hello World with Dancer</a></li>
+   <li><a href="/dancer-test-hello-world">Test Dancer Hello World</a></li>
    <li><a href="/dancer-skeleton">Dancer 1 skeleton</a></li>
+
 </ul>
 
 <h2>Dancer 2</h2>
