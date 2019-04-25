@@ -18,7 +18,12 @@ The beginning of a series of articles about
   <li><a href="/modern-web-with-perl">Modern Web with Perl</a>, a quick overview (screencast)</li>
   <li><a href="/getting-started-with-perl-dancer">Getting Started with Perl Dancer</a> - Creating an Echo application (screencast)</li>
   <li><a href="/building-a-blog-engine-using-perl-dancer">Building a blog engine using Perl Dancer (screencast)</a></li>
-  <li><a href="/getting-started-with-perl-dancer-on-digital-ocean">Getting started with Perl Dancer on Digital Ocean</a></li>
+  <li><a href="/getting-started-with-perl-dancer-on-digital-ocean">Getting started with Perl Dancer 2 on Digital Ocean</a></li>
+</ul>
+
+<h2>Dancer 1</h2>
+<ul>
+   <li><a href="/dancer-hello-world">Hello World with Dancer</a></li>
 </ul>
 
 <h2>Dancer 2</h2>
