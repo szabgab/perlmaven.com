@@ -34,11 +34,11 @@ The two files:
 
 The script to launch the application:
 
-<include file="examples/dancer/app1/lib/app.pl">
+<include file="examples/dancer/app1/bin/app.pl">
 
 The application itself:
 
-<include file="examples/dancer/app1/bin/App.pm">
+<include file="examples/dancer/app1/lib/App.pm">
 
 cd into the root of the project and type:
 
