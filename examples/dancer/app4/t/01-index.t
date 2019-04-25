@@ -1,4 +1,4 @@
-use Test::More tests => 3;
+use Test::More tests => 2;
 use strict;
 use warnings;
 
@@ -10,18 +10,12 @@ use Dancer::Test;
 subtest index => sub {
     my $resp = dancer_response GET => '/';
     is $resp->status, 200;
-    like $resp->content, qr{<h1>Echo with GET</h1>};
+    like $resp->content, qr{<h1>Echo with POST</h1>};
     like $resp->content, qr{<form};
 };
 
-subtest echo_get_1 => sub {
-    my $resp = dancer_response GET => '/echo?txt=Hello World!';
-    is $resp->status, 200;
-    is $resp->content, 'You sent: Hello World!'
-};
-
-subtest echo_get_2 => sub {
-    my $resp = dancer_response GET => '/echo', {
+subtest echo_post => sub {
+    my $resp = dancer_response POST => '/echo', {
         params => {
             txt => 'Hello World!',
         }

@@ -26,6 +26,7 @@ The beginning of a series of articles about
    <li><a href="/dancer-hello-world">Hello World with Dancer</a></li>
    <li><a href="/dancer-test-hello-world">Test Dancer Hello World</a></li>
    <li><a href="/dancer-echo-get">Dancer 1 echo using GET and testing GET</a></li>
+   <li><a href="/dancer-echo-post">Dancer 1 echo using POST and testing POST</a></li>
    <li><a href="/dancer-skeleton">Dancer 1 skeleton</a></li>
 
 </ul>
