@@ -21,6 +21,6 @@ subtest echo_post => sub {
         }
     };
     is $resp->status, 200;
-    is $resp->content, 'You sent: Hello World!'
+    is $resp->content, 'You sent: Hello World!';
 };
 
