@@ -11,7 +11,7 @@
 <a href="https://metacpan.org/pod/Test2">Test2</a> is a relatively new framework for testing Perl code.
 
 Let's see how to get started with it, or more specifically with
-<a href="https://metacpan.org/pod/Test2::V0">Test::V0</a>.
+<a href="https://metacpan.org/pod/Test2::V0">Test2::V0</a>.
 
 =abstract end
 
@@ -112,7 +112,7 @@ but we can do better than that.
 <h2>Test failure with details</h2>
 
 Instead of using the <hl>ok</hl> function that accepts a boolean we used the <hl>is</hl>
-function provided by Test::V0. It accepts two values. We pass to it the the real result of
+function provided by Test2::V0. It accepts two values. We pass to it the the real result of
 an operation followed by expected value.
 
 <include file="examples/test2-first/t/03-test.t">
@@ -154,4 +154,7 @@ even when we are comparing numbers.
 
 In any case this pretty nice.
 
+<h2>About Test2</h2>
+
+For more information see also the <a href="http://test-more.github.io/Test2-Suite/">Test2-Suite</a> by Chad 'Exodist' Granum.
 
