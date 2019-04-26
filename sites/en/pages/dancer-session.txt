@@ -1,0 +1,50 @@
+=title Dancer Simple Session and testing a session
+=timestamp 2019-04-26T22:30:01
+=indexes Dancer, Session
+=status show
+=books dancer
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+In this example you'll see how to use a <b>session</b> to store some information sent in by a user and how to retreive
+it in another request. You'll also see how to test it.
+
+=abstract end
+
+<h2>Directory Layout</h2>
+
+<code>
+.
+├── bin
+│   └── app.pl
+├── lib
+│   └── App.pm
+└── t
+    └── 01-index.t
+</code>
+
+<h2>Code launching the app</h2>
+
+<include file="examples/dancer/app5/bin/app.pl">
+
+
+<h2>The code of the application</h2>
+
+<include file="examples/dancer/app5/lib/App.pm">
+
+
+<h2>The test code</h2>
+
+<include file="examples/dancer/app5/t/01-index.t">
+
+<h2>Running the tests</h2>
+
+Be in the root directory of your project. (The common parent directory of bin, lib, and t.) and type:
+
+<code>
+prove -l
+</code>
+

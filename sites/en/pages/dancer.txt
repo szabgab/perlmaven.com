@@ -28,7 +28,7 @@ The beginning of a series of articles about
    <li><a href="/dancer-echo-get">Dancer 1 echo using GET and testing GET</a></li>
    <li><a href="/dancer-echo-post">Dancer 1 echo using POST and testing POST</a></li>
    <li><a href="/dancer-skeleton">Dancer 1 skeleton</a></li>
-
+   <li><a href="/dancer-session">Dancer 1 session</a></li>
 </ul>
 
 <h2>Dancer 2</h2>
