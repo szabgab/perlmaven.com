@@ -23,7 +23,8 @@ it in another request. You'll also see how to test it.
 ├── lib
 │   └── App.pm
 └── t
-    └── 01-index.t
+    ├── 01-index.t
+    └── 02-psgi.t
 </code>
 
 <h2>Code launching the app</h2>
@@ -39,6 +40,14 @@ it in another request. You'll also see how to test it.
 <h2>The test code</h2>
 
 <include file="examples/dancer/app5/t/01-index.t">
+
+<h2>Testing with Test::WWW::Mechanize::PSGI</h2>
+
+<a href="https://metacpan.org/pod/Test::WWW::Mechanize::PSGI">Test::WWW::Mechanize::PSGI</a> is an excellent testing
+library that makes it easy to create more complex interactions and to represent more than one browsers at the same time.
+So you can observe that while one user (<hl>$mech1</hl>) sees the newly set text use two <hl>$mech2</hl> does not.
+
+<include file="examples/dancer/app5/t/02-psgi.t">
 
 <h2>Running the tests</h2>
 
