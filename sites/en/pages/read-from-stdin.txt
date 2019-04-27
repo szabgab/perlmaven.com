@@ -45,7 +45,7 @@ the user has typed in.
 This was a very simple solution using only the core language and providing
 a very simple way to prompt for some input. For more complex and robust solution
 check out one of the modules on CPAN.
-For example <a href="https://metacpan.org/pod/IO::Prompter">IO::Prompter</a>.
+For example <a href="/prompt-using-io-prompter">IO::Prompter</a>.
 
 <h2>Secure input</h2>
 

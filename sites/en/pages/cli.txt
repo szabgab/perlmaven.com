@@ -1,0 +1,62 @@
+=title CLI - Command Line Interface in Perl
+=timestamp 2019-04-27T11:30:01
+=indexes @ARGV, GetOpt::Long, STDIN
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Some of the Perl code has <a href="/gui">GUI - Graphical User Interface</a>, many applications have
+a <a href="/modern-web-with-perl">web interface</a>, but most of the Perl code we write are command line tools.
+
+=abstract end
+
+A command line tool will get user input from two places:
+
+<ul>
+   <li>Command line paramerers</li>
+   <li>Prompts on the STDOUT and responses typed in to the STDIN</li>
+</ul>
+
+Of course they also read files and databases, but the user who runs the code has those two options.
+
+<h2>Command line parameter or command line arguments</h2>
+
+The come in the following forms:
+
+<code>
+myapp.pl param1 param2 param3
+
+myapp.pl --name param1 --age param2 --height param3 --debug
+
+myapp.pl -n param1 -a param2 -h param3 -d
+</code>
+
+There are plenty of related articles. Look especially at the first two:
+
+<ul>
+   <li><a href="/argv-in-perl">Processing command line arguments - @ARGV in Perl</a></li>
+   <li><a href="/how-to-process-command-line-arguments-in-perl">How to process command line arguments in Perl using Getopt::Long</a></li>
+   <li><a href="/beginner-perl-maven-process-command-line-using-getopt-long-screencast">Process command line using Getopt::Long (screencast)</a></li>
+   <li><a href="/beginner-perl-maven-command-line-parameters-screencast">Command line parameters (screencast)</a></li>
+   <li><a href="/switching-to-moo-adding-command-line-parameters">Switching to Moo - adding command line parameters</a></li>
+   <li><a href="/phonebook-with-mongodb-and-moo">Command line phonebook with MongoDB and Moo</a></li>
+</ul>
+
+
+<h2>STDOUT/STDIN - Standart output/Standard Input</h2>
+
+The other possibility is to ask the user questions during the run-time of the process. The code would print out a
+question to the screen (STDOUT or Standard Output) and the user would type in the answer that would be received
+by the program from the keyboard on STDIN or Standard Input.
+
+
+<ul>
+   <li><a href="/read-from-stdin">Prompt, read from STDIN, read from the keyboard in Perl</a></li>
+   <li><a href="/stdin-in-scalar-and-list-context">STDIN in scalar and list context</a></li>
+   <li><a href="/how-to-read-a-password-on-the-command-line">How to read a password on the command line?</a></li>
+   <li><a href="/prompt-using-io-prompter">IO::Prompter</a></li>
+</ul>
+
