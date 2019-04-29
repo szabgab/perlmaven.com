@@ -52,6 +52,10 @@ This is the Perl binding to the <a href="https://www.gnome.org/">Gnome Toolkit</
 <a href="https://metacpan.org/release/Tk">Perl Tk</a> is the binding of the Toolkit from
 <a href="https://www.tcl.tk/">Tcl/Tk</a>.
 
+<h2>Tkx</h2>
+
+<a href="https://metacpan.org/pod/Tkx">Tkx</a> provides another Tk based interface.
+
 It is the oldest and probably the least beautiful, but a very powerful and capable toolkit.
 
 <h2>Prima</h2>
