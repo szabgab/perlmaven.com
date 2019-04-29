@@ -1,8 +1,8 @@
-=title Upgrading perl on Linux or OSX - installing perl using perlbrew without being #root
+=title Upgrading perl on Linux or OSX - installing perl using perlbrew without being root
 =timestamp 2019-04-29T07:30:01
 =description Installing new version of Perl on RedHat, CentOS, Debian, Ubuntu, Fedora, or any other Linux distribution.
 =indexes perlbrew
-=status show
+=status draft
 =author szabgab
 =comments_disqus_enable 1
 
