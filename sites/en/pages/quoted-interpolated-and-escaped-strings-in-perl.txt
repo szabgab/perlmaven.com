@@ -66,6 +66,42 @@ $name = 'Foo';
 $name = "Foo";
 </code>
 
+<h2>Interpolating variables followed by other letters</h2>
+
+In the following example we would like to print "Mb" immediately after the value that is in the variable.
+
+<include file="examples/interpolation_speed.pl">
+
+We expected:
+
+<code>
+The download speed is 100Mb
+</code>
+
+but we get:
+
+<code>
+The download speed is
+</code>
+
+because Perl looks for the variable called <hl>$speedMb</hl>
+
+
+If we have <a href="/always-use-strict-and-use-warnings">use strict</a> enabled, as should always:
+
+<include file="examples/interpolation_speed_strict.pl">
+
+then we would get a compilation error:
+
+<code>
+Global symbol "$speedMb" requires explicit package name (did you forget to declare "my $speedMb"?) at interpolation_speed_strict.pl line 6.
+Execution of interpolation_speed_strict.pl aborted due to compilation errors.
+</code>
+
+The way to handle this case is to wrap the real variable name in curly braces:
+
+<include file="examples/interpolation_speed_strict_fixed.pl">
+
 
 <h2>E-mail addresses</h2>
 
