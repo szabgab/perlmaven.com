@@ -2,7 +2,7 @@
 =timestamp 2019-04-29T07:30:01
 =description Installing new version of Perl on RedHat, CentOS, Debian, Ubuntu, Fedora, or any other Linux distribution.
 =indexes perlbrew
-=status draft
+=status show
 =author szabgab
 =comments_disqus_enable 1
 
@@ -31,7 +31,7 @@ we already had on the system intact. This is usually much better than replacing 
 The one that came with the operating system is usually referred to as the <b>system perl</b> and it is there because several
 parts of the operating system depend on this perl. Usually it is better to just leave it alone and install another
 copy of. If you do change it, be prepared that some of the most important tools in your OS (e.g. apt-get) will stop
-functioning properly. It is a fantastic exercies in wasting time.
+functioning properly. It is a fantastic exercise in wasting time.
 
 <h2>Build Perl manually from source</h2>
 
@@ -40,7 +40,7 @@ There is another article explaining <a href="/how-to-build-perl-from-source-code
 <h2>Using Perlbrew</h2>
 
 There is a separate article with an example for <a href="/perlbrew-on-linux">Perlbrew on Linux</a> that shows an example
-where we used the perlbrew that was supplid by the OS.
+where we used the perlbrew that was supplied by the OS.
 
 In this article we are going to us <a href="http://perlbrew.pl/">Perlbrew</a> that hides some of the steps we had to do in the
 manual process and makes it easy to manage the installation and the use of several versions of perl.
@@ -57,7 +57,7 @@ yum -y install make
 yum -y install gcc
 </code>
 
-On Ubnuntu we need these:
+On Ubuntu we need these:
 
 <code>
 apt-get -y install build-essential
@@ -94,7 +94,7 @@ Happy brewing!
 
 <h2>Perlbrew</h2>
 
-Once the intsallation was ready and I source-ed the configuration with:
+Once the installation was ready and I source-ed the configuration with:
 
 <code>
 source ~/perl5/perlbrew/etc/bashrc
