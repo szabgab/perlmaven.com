@@ -1,9 +1,9 @@
 =title Writing Makefile for <any module> -- NOT OK
 =timestamp 2005-05-26T23:45:45
-=indexes 
+=indexes CPAN
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start

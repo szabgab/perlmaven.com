@@ -3,7 +3,7 @@
 =indexes Net::Appliance::Session, threads
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -13,7 +13,7 @@
 Posted on 2008-01-22 12:41:21-08 by miky
 
 Hello, I'm not sure it's a Net::Appliance::Session related problem but I just wanted to have your opinion.
-So far I'm using Net::Telnet and Net::Telnet::Cisco and threads, everything is working fine. 
+So far I'm using Net::Telnet and Net::Telnet::Cisco and threads, everything is working fine.
 When I use Net::Appliance::Session launched by a thread it segfaults.
 I wrote this little script that reflects my problem and which is more simple that the script I use.
 

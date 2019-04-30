@@ -3,7 +3,7 @@
 =indexes Image::ExifTool, IPTC
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -18,7 +18,7 @@ Posted on 2005-05-31 15:14:28-07 by exiftool in response to 524
 
 Writing IPTC is the same as writing any other type of meta information with ExifTool.
 
-"exiftool -city=kingston test.jpg" will write the IPTC city tag since "City" 
+"exiftool -city=kingston test.jpg" will write the IPTC city tag since "City"
 doesn't exist in the EXIF or GPS information, and the IPTC is the next highest priority group.
 (The priority order is 1) EXIF, 2) GPS, 3) IPTC, 4) XMP, 5) MakerNotes).
 
@@ -55,7 +55,7 @@ although it is probably a problem of the camera manufacturer. -s -s -s -Make pro
 at the end of "Caplio R1". Could you change it, that the output of -s -s -s has no blanks
 at the beginning and and the end?
 BTW should -sss work too, it didn't work. In the meantime my bash-script uses
-.. | sed 's/^ *//' | sed 's/ *$//' If you would like to have a picture for testing, 
+.. | sed 's/^ *//' | sed 's/ *$//' If you would like to have a picture for testing,
 please tell me where to send it.
 
 Posted on 2005-05-31 19:35:03-07 by exiftool in response to 537

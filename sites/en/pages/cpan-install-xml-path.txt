@@ -3,7 +3,7 @@
 =indexes XML::XPath
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -53,7 +53,7 @@ I greatly appreciate any help.
 Posted on 2011-07-13 09:51:25.195473-07 by dejonsen in response to 13396
 
 The CPAN command-line utility is case-sensitive, so make sure the capitalization
-on the command line matches that on the "use" statement in the Perl script you're 
+on the command line matches that on the "use" statement in the Perl script you're
 trying to use. Looks like it might be "XML::XPath" rather than "XML::Xpath".
 
 (This article is based on a thread on the CPAN::Forum.)

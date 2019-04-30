@@ -1,9 +1,9 @@
-=title RSA authentication with Net-SFTP 
+=title RSA authentication with Net-SFTP
 =timestamp 2009-07-24T10:26:17
 =indexes Net::SFTP
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start

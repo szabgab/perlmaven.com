@@ -3,7 +3,7 @@
 =indexes Spreadsheet::WriteExcel
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -15,13 +15,13 @@ Posted on 2006-03-28 20:53:14-08 by freshr
 
 Hi, First thx for this very very useful and efficient package.
 Since a couple of days I am struggling with a "Too many open files" issue.
-I usually create workbook with more than 200 sheets. For a project I am working 
-on I need to create more than 650 sheets. I succeeded in finding a work-around 
+I usually create workbook with more than 200 sheets. For a project I am working
+on I need to create more than 650 sheets. I succeeded in finding a work-around
 for the "Too many open files" problem, but now the generated excel sheets is *empty*.
-Reducing the number of sheets to below 250 work fine, that is, the created workbook 
-is not empty and contains the correct information. But when I try to go beyond that 
+Reducing the number of sheets to below 250 work fine, that is, the created workbook
+is not empty and contains the correct information. But when I try to go beyond that
 number the resulting file is always empty. What is strange being that
-Spreadsheet-WriteExcel doesn't complain about a limit being reached. 
+Spreadsheet-WriteExcel doesn't complain about a limit being reached.
 It keeps accepting new sheets being added from 200 to more than 650.
 
 Question: Is there a limitation in the number of sheet in a single workbook ?

@@ -3,7 +3,7 @@
 =indexes Imager
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -34,7 +34,7 @@ while making the background white?
 Posted on 2013-01-16 03:56:25.050922-08 by tonyc in response to 13860
 
 Create a new image, fill it with white and use rubthrough to compose
-the original over the background: 
+the original over the background:
 
 <code lang="perl">
 # source in $image

@@ -3,7 +3,7 @@
 =indexes SOAP::WSDL
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -61,11 +61,11 @@ Posted on 2008-12-14 17:40:42-08 by mkutter in response to 9527
 
 Hi bobby,
 
-this is a limitation of the current SOAP-WSDL distribution: It does not handle recuresive data structures. 
-You may want to try the "Typemap" branch from SOAP::WSDL's svn (which will eventually become the 2.1 release): 
-http://soap-wsdl.svn.sourceforge.net/svnroot/soap-wsdl/SOAP-WSDL/branches/Typemap/ 
+this is a limitation of the current SOAP-WSDL distribution: It does not handle recuresive data structures.
+You may want to try the "Typemap" branch from SOAP::WSDL's svn (which will eventually become the 2.1 release):
+http://soap-wsdl.svn.sourceforge.net/svnroot/soap-wsdl/SOAP-WSDL/branches/Typemap/
 This branch removes the use of Typemaps (e.g. lookup tables for the XML Element to Perl Class mapping), which do not allow recursive structures.
-Note, however, that some bug fixes already included in trunk/ or even a CPAN release might not yet be ported to that branch. 
+Note, however, that some bug fixes already included in trunk/ or even a CPAN release might not yet be ported to that branch.
 
 Martin
 

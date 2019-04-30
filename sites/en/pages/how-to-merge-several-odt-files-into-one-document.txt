@@ -3,7 +3,7 @@
 =indexes OpenOffice::OODoc
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -12,15 +12,15 @@
 
 Posted on 2009-02-12 08:29:49-08 by benat
 
-Hello, 
+Hello,
 
 I'm trying to join several ODT files (one page each) into a single document containing
 all of them, one per page. After spending some time on the documentation
-I ended with the following code, which at a first glance does what I need: 
+I ended with the following code, which at a first glance does what I need:
 
 <code lang="perl">
-$oodoc1->appendElement( 
-    '//office:body', 
+$oodoc1->appendElement(
+    '//office:body',
     0,
     $oodoc2->exportXMLElement( '//office:text' )
 );
@@ -28,13 +28,13 @@ $oodoc1->appendElement(
 
 This code exports the &lt;office:text&gt; node from $oodoc2 and appends it,
 as a new child, into node &lt;office:body&gt; of $oodoc1.
-This way, the generated document gets two &lt;office:text&gt; nodes. 
+This way, the generated document gets two &lt;office:text&gt; nodes.
 
 Well, it works and I can open the merged document (~60 files joined) in
 an OpenOffice application, but the point is that I'm not sure it conforms to the ODF schema:
 shouldn't the <office:text> node be unique? Moreover, I would need the whole document
 be somewhat "reorganized" (styles and alike), but the "reorganize" method throws
-an error message saying it's no longer implemented. 
+an error message saying it's no longer implemented.
 
 Please does anybody know a cleaner way to do such document joins?
 Google didn't help. Thanks a lot.

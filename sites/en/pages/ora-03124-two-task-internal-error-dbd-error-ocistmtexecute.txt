@@ -3,7 +3,7 @@
 =indexes DBD::Oracle
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -14,7 +14,7 @@ Posted on 2009-08-21 01:14:34-07 by xinhuan
 
 I am getting ORA-03124: two-task internal error (DBD ERROR: OCIStmtExecute)
 when using DBD::Oracle version 1.23. This is a select query. Oracle server is 11g
-and client is also 11g. The select statement is like this: 
+and client is also 11g. The select statement is like this:
 
 <code>
 select col1, col2 from table where key = '12335|678999|345667';

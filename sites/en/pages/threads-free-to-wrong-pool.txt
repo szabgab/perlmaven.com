@@ -3,7 +3,7 @@
 =indexes threads
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -18,7 +18,7 @@ Is there a way of avoiding this problem?
 
 Posted on 2006-07-18 23:04:15-07 by jdhedden in response to 2642
 
-1. You need to ensure you're using the lastest version of the 'threads' module from CPAN. 
+1. You need to ensure you're using the lastest version of the 'threads' module from CPAN.
 
 2. Not all modules are thread-safe, especially modules that use XS code.
 Therefore, whatever module you're getting the ->Documents method from may be at fault.
@@ -44,7 +44,7 @@ You can get the version number using:
 perl -Mthreads -e 'print "$threads::VERSION\n"'
 </code>
 
-As of this posting, the lastest version is 1.36. 
+As of this posting, the lastest version is 1.36.
 
 To keep non-thread-safe modules out of threads, you can create the threads
 in a BEGIN block before including the non-thread-safe modules, and then feed
@@ -99,7 +99,7 @@ $_->join() foreach threads->list();
 
 
 Thread::Queue only works with scalars. If you need to pass anything more complex
-to the threads, then use Thread::Queue::Any. 
+to the threads, then use Thread::Queue::Any.
 
 In regards to one of your earlier posts, note the last statement
 for waiting on the threads. You don't have to worry about joining the main thread:
@@ -151,7 +151,7 @@ c:/Perl1/lib/Carp.pm line 258
 </code>
 
 Can any 1 please help in in this regard i am attaching the snipet of code dealing with thread as
- 
+
 <code lang="perl">
 for ($j=1; $j<=$col1; $j++) {
 			for ($i=1; $i<=$row1; $i++) {
@@ -175,16 +175,16 @@ sub req {
 	$c = $_[2];
 	$d = $_[3];
 	$sheet = $_[4];
-	
+
 	$a1 = $a+2;
 	$b1 = $b;
 	$c1 = $c+2;
 	$d1 = $d+1;
 
-	print "req $c1\t$d1\n";	
-	
+	print "req $c1\t$d1\n";
+
 	if ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*US.*$/) {
-	
+
 		while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
 			$ram3->Cells($c1++,$d1)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
 		}
@@ -196,12 +196,12 @@ sub req {
     }
 
 sub table11 {
-#    local $i,$j,$k,$l,$sheet; 
+#    local $i,$j,$k,$l,$sheet;
 #	$a = i;
 #	local$b = $j;
 #	$c = $k;
 #	$d = $l;
-#	$sheet = $sheet;   
+#	$sheet = $sheet;
 #	local $a = $_[0];
 #	local $b = $_[1];
 #	local $c = $_[2];
@@ -213,49 +213,49 @@ sub table11 {
 	 $c = $_[2];
 	 $d = $_[3];
 	 $sheet = $_[4];
-	 
+
 
 	print "table11 $c\t$d\n";
 
 	# For copying the loop lengths
 	$a1 = $a+2;
 	$c1 = $c+2;
-    
+
 	while ($sheet->Cells($a1,$b)->{Value} !~ /^\s*$/) {
 		$ram3->Cells($c1++,$d)->{Value} = $sheet->Cells($a1++,$b)->{Value};
 	}
 
 	# For copying the required data rates...
 	$b1 = $b;
-	
+
 	while ($sheet->Cells($a,$b1)->{Value} !~ /^\s*$/) {
 		if (($sheet->Cells($a,$b1)->{Value} =~ /^.*Req.*$/) && ($sheet == $ram1)) {
 			my $thread2 =  threads->new( \&req,$a,$b1,$c,$d,$sheet);
 			$retval2 = $thread2->detach();
 			#$retval = $thread1->eval;   # catch join errors
-					
-		} 
-	
+
+		}
+
 		elsif ($sheet->Cells($a,$b1)->{Value} =~ /^.*Act.*$/) {
-		    
+
 			my $thread3 =  threads->new( \&act ,$a,$b1,$c,$d,$sheet);
 			$retva3 = $thread3->detach;   # catch join errors
 			#act ($a,$b1,$c,$d,$sheet);
-							
+
 		} elsif ($sheet->Cells($a,$b1)->{Value} =~ /^.*Mrg.*$/) {
 		   my $thread4 =  threads->new( \&mrg ,$a,$b1,$c,$d,$sheet);
 		   $retva3 = $thread4->detach();   # catch join errors
 			#mrg ($a,$b1,$c,$d,$sheet);
-						
+
 		}
 
 		$b1++;
-		
-	}
- 
-	
 
-	$ram1 -> Activate;                   
+	}
+
+
+
+	$ram1 -> Activate;
 	$ram1 -> Cells(2,1) -> Select;
 	$ram2 -> Activate;
 	$ram2 -> Cells(2,1) -> Select;
@@ -268,13 +268,13 @@ sub table11 {
 	$comp = $file11."-".$oldfirm.".xls";
 	$workbook3->SaveAs($comp);
 	$workbook3->Close;
-	
+
 	$workbook->Save;
 	$workbook->Close;
-	
+
 	$workbook1->Save;
 	$workbook1->Close;
-	
+
 	$workbook2->Save;
 	$workbook2->Close;
 
@@ -286,10 +286,10 @@ sub table11 {
 	undef $workbook3;
 
 	print "\nAnnex-A NA Comparison finished.....\n";
-	
+
   }
 	sub mrg {
-    
+
 	$a = $_[0];
 	$b = $_[1];
 	$c = $_[2];
@@ -318,10 +318,10 @@ sub table11 {
 			$ram3->Cells($c1++,$d1+3)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
 		}
 	}
-}	
+}
 # For the actual data rate fields
 sub act {
-    
+
 
 	$a = $_[0];
 	$b = $_[1];
@@ -337,7 +337,7 @@ sub act {
 
 	$d1 = $d+3;
 
-	if ($sheet == $ram2) {  
+	if ($sheet == $ram2) {
 		$d1++;
 	}
 
@@ -352,15 +352,15 @@ sub act {
 			$ram3->Cells($c1++,$d1+3)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
 		}
 	}
-}	
+}
 </code>
- 
+
 waiting for prompt reply Regards Imran Khalid
 
 Posted on 2006-12-14 14:06:39-08 by jdhedden in response to 3763
 
 Win32::OLE is not thread-safe. You may be able to rewrite your
-code using the fork module from CPAN. 
+code using the fork module from CPAN.
 
 In any case, you should also upgrade to the latest versions of
 the 'threads' and 'threads::shared' modules off of CPAN.

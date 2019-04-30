@@ -3,7 +3,7 @@
 =indexes Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -30,7 +30,7 @@ From the Image::ExifTool documentation:
 User-defined tags can be added via the ExifTool configuration
 file or by defining the %Image::ExifTool::UserDefined hash
 before calling any ExifTool functions. See " ExifTool_config"
-in the ExifTool distribution for more details. 
+in the ExifTool distribution for more details.
 
 - Phil
 
@@ -42,11 +42,11 @@ the syntax got the better of me. Not your job to teach me Perl, I know!
 What's confusing me is the kind of hierarchy that we seem to adding to.
 I'd like to define, say, Mytag1, Mytag2 and Mytag3 within an XMP namespace called, say, myNs.
 How would the sample look? This is how far I've got. I'm not really
-clear on what the GROUPS element is for 
+clear on what the GROUPS element is for
 
 <code>
 %Image::ExifTool::UserDefined::myNs = ( GROUPS => { 0 => 'XMP', 1 => 'XMP-myNs', 2 => 'Image' },
-# not sure what the third leve 'image' is doing here 
+# not sure what the third leve 'image' is doing here
 NAMESPACE => { 'myNs' => 'http://ns.myNs.com/xxx/1.0/' },
 WRITABLE => 'string',
 </code>
@@ -69,10 +69,10 @@ The "2 => 'Image'" sets the family 2 group name for tags in the table
 for your convenience and doesn't affect what is written.
 
 You don't need anything inside the braces in the tag definition
-for simple strings in XMP. The examples show how to specify a 
+for simple strings in XMP. The examples show how to specify a
 different family 2 group name for an individual tag, and how to make a "List"-type tag.
 The "List" tags are written differently, and multiple may contain multiple
-values (like a keywords list). 
+values (like a keywords list).
 
 If you want to do anything more complex, check lib/Image/ExifTool/XMP.pm
 for examples of how it is done, and read lib/Image/ExifTool/README
@@ -120,17 +120,17 @@ FAQ if you are having problems with the user-defined tags.
 Posted on 2008-03-20 10:24:51-07 by sparkie in response to 7416
 
 Phil, is this OK for adding a namespace to the table. I'm still getting a
-tag does not exist error. My namespace is 'defra' 
+tag does not exist error. My namespace is 'defra'
 
 <code>
 %Image::ExifTool::UserDefined = (
-   'Image::ExifTool::XMP::Main' => { 
+   'Image::ExifTool::XMP::Main' => {
        defra => {
            SubDirectory => {
               TagTable =< 'Image::ExifTool::UserDefined::defra',
            },
-       }, 
-   } 
+       },
+   }
 );
 </code>
 
@@ -161,7 +161,7 @@ $ExifTool->SetNewValue('XMP-defra:Tag1','Val1');
 Posted on 2008-03-20 12:52:36-07 by sparkie in response to 7422
 
 Hello, Phil. Here's my code: I really appreciate this.
-I'm running the config code inline for now: 
+I'm running the config code inline for now:
 
 <code lang="perl">
 #!usr/bin/perl
@@ -169,13 +169,13 @@ use warnings;
 	# ============================== Load modules ====================================
  #use DBI;
  use Image::ExifTool qw(:Public);
-		
+
 	my $picFile, $picFileMod;
 	$picFile = 'C:\pics\pic2.jpg';
 	$picFileMod = 'C:\pics\pic2ModByExifTool.jpg';
 	#define ExifTool object;
 	my $ExifTool = new Image::ExifTool;
-		
+
 	%$ExifTool::UserDefined::defra = (
     GROUPS => { 0 => 'XMP', 1 => 'XMP-defra', 2 => 'Image' },
     NAMESPACE => { 'defra' => 'http://ns.defra.com/' },
@@ -205,12 +205,12 @@ use warnings;
 			print "$_ => $$info{$_}\n";
 		}
 		$ExifTool->SetNewValue('Tag1','Val1');
-		$ExifTool->SetNewValue('Tag2','Val2');		
-		$ExifTool->SetNewValue('Tag3','Val3');		
-				
+		$ExifTool->SetNewValue('Tag2','Val2');
+		$ExifTool->SetNewValue('Tag3','Val3');
+
 		$ExifTool->WriteInfo($picFile, $picFileMod);
 	}
-		
+
 		print 'After mod=============================================== \n';
 		my $info = ImageInfo($picFileMod);
 		foreach (keys %$info) {
@@ -235,13 +235,13 @@ use warnings;
 # ============================== Load modules ====================================
 #use DBI;
 use Image::ExifTool qw(:Public);
-		
+
 my ($picFile, $picFileMod);
 $picFile = 'a.jpg';
 $picFileMod = 'b.jpg';
 #define ExifTool object;
 my $ExifTool = new Image::ExifTool;
-    
+
 %Image::ExifTool::UserDefined::defra = (
     GROUPS => { 0 => 'XMP', 1 => 'XMP-defra', 2 => 'Image' },
     NAMESPACE => { 'defra' => 'http://ns.defra.com/' },
@@ -270,12 +270,12 @@ if(-e $picFile)
         print "$_ => $$info{$_}\n";
     }
     $ExifTool->SetNewValue('Tag1','Val1');
-    $ExifTool->SetNewValue('Tag2','Val2');		
-    $ExifTool->SetNewValue('Tag3','Val3');		
-            
+    $ExifTool->SetNewValue('Tag2','Val2');
+    $ExifTool->SetNewValue('Tag3','Val3');
+
     $ExifTool->WriteInfo($picFile, $picFileMod);
 }
-    
+
 print "After mod=============================================== \n";
 my $info = ImageInfo($picFileMod);
 foreach (keys %$info) {
@@ -288,7 +288,7 @@ foreach (keys %$info) {
 Also, you will save yourself a lot of headaches in the future
 if you check the return value from WriteInfo() and Error and Warning
 messages to see if there were any problems when writing the file.
-The the API documentation on WriteInfo for details. 
+The the API documentation on WriteInfo for details.
 
 - Phil
 
@@ -318,9 +318,9 @@ my family's image-archiving project without it. -Stan
 
 Posted on 2009-08-21 19:18:51-07 by gloubibou in response to 9471
 
-Very interesting read! 
+Very interesting read!
 
-Is it possible to achieve the same thing using exiftool at the command line? 
+Is it possible to achieve the same thing using exiftool at the command line?
 
 Pierre
 

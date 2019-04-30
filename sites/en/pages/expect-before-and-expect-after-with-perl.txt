@@ -1,9 +1,9 @@
 =title Expect_before amd expect_after with perl and expect.pm
 =timestamp 2006-01-20T20:40:59
-=indexes Expect 
+=indexes Expect
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -71,7 +71,7 @@ Posted on 2006-02-06 10:34:12-08 by rgiersig in response to 1669
 
 Short answer: I didn't need exp_before and exp_after
 (I prefer to use the callback style and write out all the possibilities explicitely),
-so I didn't invest anything into the code (just took the code that Austin had written). 
+so I didn't invest anything into the code (just took the code that Austin had written).
 
 How about writing it like this:
 

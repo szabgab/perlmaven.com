@@ -1,9 +1,9 @@
 =title Extra information in Canon EOS 350 .CR2 after using Digital Photo Professional
 =timestamp 2005-09-27T16:03:36
-=indexes Image::ExifTool 
+=indexes Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -40,7 +40,7 @@ but if anyone has some pointers for how to go about investigating this then I'd 
 If others wish to look then I can provide any number of example images
 (but they are all aorund 8MB in size).
 TTFN,
--- 
+--
 Ian Spray
 
 Posted on 2005-09-27 16:32:22-07 by exiftool in response to 1055
@@ -72,7 +72,7 @@ Thanks for taking the time to have a look at it: I expect you'll get there faste
 Recipe's can also be saved out as stand-alone files from DPP, so I'll have a look to see
 if the data is the same in each case, and then try to see if there's anything helpfully
 unique about the block that you might be able to use.
--- 
+--
 Ian
 
 Posted on 2005-09-27 20:03:36-07 by exiftool in response to 1059
@@ -85,8 +85,8 @@ I have added some code to keep track of the last data block read from the TIFF, 
 copy anything found after this to the new file. I don't like polluting my general
 TIFF writer code to copy this non-TIFF information, but it seemed to be the simplest way.
 
-I have modified the 5.64 pre-release version with this change (OK, so I was a bit quicker than I thought), 
-and if you want to test it out you can download it from 
+I have modified the 5.64 pre-release version with this change (OK, so I was a bit quicker than I thought),
+and if you want to test it out you can download it from
 http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-5.64.tar.gz.
 I still want to do more testing to be sure this is doing what I want before
 I release this version officially.
@@ -101,19 +101,19 @@ CANON OPTIONAL DATA
 After a check of another couple of hundred untouched files it appears that the camera
 never appends this string. Obviously, it's possible that this might come up inside a free-form text tag,
 but if it's possible to examine the portion of the file between the last declared block
-and the fsize idea of the file length (hmm, showing too much C there: sorry), then looking for 
-those strings and keeping the data in between ought to be fairly safe. ie: only accept the string 
+and the fsize idea of the file length (hmm, showing too much C there: sorry), then looking for
+those strings and keeping the data in between ought to be fairly safe. ie: only accept the string
 as a block delimiter outside of the TIFF structure.
 
 HTH,
--- 
+--
 Ian.
 
 Posted on 2005-09-27 20:15:20-07 by minimal in response to 1060
 
 Gah - spent so long getting the formatting right our posts overlapped !
 Thanks for that very speedy work: I'll try it out and see if I can break it :)
--- 
+--
 Ian.
 
 Posted on 2005-09-28 13:30:19-07 by exiftool in response to 1062
@@ -143,7 +143,7 @@ They didn't.
 
 I look forward to the official release, but I'm off to play with this one some more now.
 TTFN,
--- 
+--
 Ian.
 
 Posted on 2005-09-28 14:57:58-07 by exiftool in response to 1065

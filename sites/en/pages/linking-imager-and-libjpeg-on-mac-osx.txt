@@ -3,7 +3,7 @@
 =indexes Imager
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -17,7 +17,7 @@ I hope this might somebody else - or another reader may wish to share another so
 
 <h2>The Issue</h2>
 
-The MakeMaker tool (perl Makefile.PL; make ; sudo make install) wants to build 
+The MakeMaker tool (perl Makefile.PL; make ; sudo make install) wants to build
 a "universal" binary (compiled for i386 and x86_64). However, libjpeg-7 wouldn't
 build as a universal - so we get linker errors. I think (although I'm not certain),
 that MakeMaker "learns" its archflags from the file
@@ -46,7 +46,7 @@ step a) build jpeg-7 (default = x86_64)
 $ cd ~/gnu/jpeg-7
 $ make clean
 $ ./configure
-$ make 
+$ make
 $ sudo make install
 </code>
 
@@ -80,8 +80,8 @@ step a) build "universal libjpeg.7.dylib
 
 <code>
 $ cd ~/gnu/Imager-0.87/
-$ make clean 
-$ ./configure CC=gcc "CFLAGS=-arch i386" --enable-shared 
+$ make clean
+$ ./configure CC=gcc "CFLAGS=-arch i386" --enable-shared
 $ make ; cp ./.libs/libjpeg.7.dylib libjpeg.7.dylib.i386
 $ make clean
 $ ./configure CC=gcc "CFLAGS=-arch x86_64" --enable-shared

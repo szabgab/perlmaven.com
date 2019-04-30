@@ -3,7 +3,7 @@
 =indexes WWW::Mechanize
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -12,10 +12,10 @@
 
 Posted on 2006-09-07 12:33:10-07 by gab
 
-I'm trying to check this checkbox: 
+I'm trying to check this checkbox:
 
 <code>
-<input type="checkbox" id="tandcs" name="tandcs"> 
+<input type="checkbox" id="tandcs" name="tandcs">
 </code>
 
 (BTW: 'tandcs' stands for 'Terms And Conditions')
@@ -28,7 +28,7 @@ which is probably the reason why using 'undef' for the value doesn't work...
 Using this:
 
 <code lang="perl">
-$mech->tick('tandcs' => undef); 
+$mech->tick('tandcs' => undef);
 </code>
 
 resulted in the following error:

@@ -3,7 +3,7 @@
 =indexes Net::SFTP, utf8
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -30,7 +30,7 @@ More precisely I get this error first time after SFTP setup.After exchanging the
 Posted on 2006-07-03 05:30:56-07 by lyask in response to 2226
 
 Hi arul, Have you resolved this issue yet? I also encountered this problem when using Net-SFTP. i
-It seems wired and I can't find the exactly solution to it. 
+It seems wired and I can't find the exactly solution to it.
 -Leo
 
 Posted on 2006-08-03 12:18:18-07 by rahed in response to 2569
@@ -46,7 +46,7 @@ The following code worked for me:
 
 <code lang="perl">
 use utf8;
-# .. MORE CODE HERE .. 
+# .. MORE CODE HERE ..
 # GET USER PASSWORD
 print "\nPassword for $UserName\n";
 system('stty', '-echo') == 0 or die "can't turn off echo: $?";

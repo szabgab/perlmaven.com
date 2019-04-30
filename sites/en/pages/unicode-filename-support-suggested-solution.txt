@@ -3,7 +3,7 @@
 =indexes Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -25,7 +25,7 @@ Posted on 2009-05-09 10:41:20-07 by exiftool in response to 10658
 Hi Chris,
 
 ExifTool uses the standard Perl "open" function to open a file. If anyone knows how to make this compatible with
-Windows UTF-8 filenames while maintaining platform independence, please let me know. 
+Windows UTF-8 filenames while maintaining platform independence, please let me know.
 
 The work-around is to pass exiftool the DOS-equivalent filenames. I know some exiftool users are doing this,
 but I don't know the details of how to implement this.
@@ -36,16 +36,16 @@ Posted on 2009-05-09 15:14:00-07 by johnrellis in response to 10659
 
 On Perl 5.10 for Windows, I recently discovered an easy workaround for filenames containing characters whose ordinal
 value is in the range 128 to 255, the Latin-1 Supplement characters, which include the common European characters such as German umlauts.
-(Note that I am expert neither in Perl, Unicode, or Win32, so take everything here with two grains of salt, and please correct me if I have said anything wrong.) 
+(Note that I am expert neither in Perl, Unicode, or Win32, so take everything here with two grains of salt, and please correct me if I have said anything wrong.)
 
 Internally, though Perl uses UTF-8 to represent strings, it apparently has two different representations for such characters: a single byte and the
 UTF-8 encoding as two bytes. For example, the Unicode character 00FC could be represented internally by Perl either as
-the single byte 0xfc or as two bytes 0xc3 0xbc. According to the Perl documentation, chr(0xfc) uses the single-byte representation for backward compatibility. 
+the single byte 0xfc or as two bytes 0xc3 0xbc. According to the Perl documentation, chr(0xfc) uses the single-byte representation for backward compatibility.
 
 If you force a string representing a filename to use the single-byte representation, then the Perl filesystem calls such as open()
-will handle the filename correctly. See the function SingleByteStr below for a brute-force method of doing this. There may be a more elegant way, but I could not find it. 
+will handle the filename correctly. See the function SingleByteStr below for a brute-force method of doing this. There may be a more elegant way, but I could not find it.
 
-Of course, this solution does not work for characters larger than 255, but it was an easy, partial fix for a very common case. 
+Of course, this solution does not work for characters larger than 255, but it was an easy, partial fix for a very common case.
 
 
 <code lang="perl">
@@ -98,11 +98,11 @@ Using the Win32 Unicode APIs, it might actually be quite simple to be 100% Unico
 
 <code lang="perl">
 use Win32API::File qw(CreateFileW OsFHandleOpenFd :FILE_ OPEN_EXISTING);
-my $h = CreateFileW(encode("UTF-16LE", "\x{2030}.jpg\0"), FILE_READ_DATA, 0, [], OPEN_EXISTING, 0, []); 
+my $h = CreateFileW(encode("UTF-16LE", "\x{2030}.jpg\0"), FILE_READ_DATA, 0, [], OPEN_EXISTING, 0, []);
 </code>
 
 I am not sure if Perl has to offer any alternatives to Win32API::CreateFileW().
-Would it be possible to make use of such a platform-specific API? 
+Would it be possible to make use of such a platform-specific API?
 
 Thanks. Chris
 
@@ -149,20 +149,20 @@ Posted on 2009-05-12 00:36:56-07 by johnrellis in response to 10677
 
 Phil, I just went through that same learning process for my application and came to the
 same conclusion -- punt. (My partial solution above allows the Latin-1 Supplement characters in filenames,
-but that was as much as I was willing to do for now.) 
+but that was as much as I was willing to do for now.)
 
 But here's a brainstorm: What if Exiftool had a global variable called "io" whose value
 was an object with a method for each of the Perl builtin i/o functions: open(), close(), rename(), unlink(), exists(), etc.
 The signature of each method would be identical to the Perl builtin function.
 By default, Exiftool would initialize "io" to an instance that simply called the Perl built-ins.
-But a client could set "io" to a value whose methods called the Win32 equivalents. 
+But a client could set "io" to a value whose methods called the Win32 equivalents.
 
 This would require straightforward but tedious editing of the Exiftool source to change all i/o calls,
 e.g. unlink ($f) to io->unlink ($f), etc. You could decide to implement only the default instance of "io",
-letting some other brave soul implement the Win32 instance. 
+letting some other brave soul implement the Win32 instance.
 
 I am not pushing for this, just putting it out as an approach that would minimize the disruption and changes to Exiftool,
-if you ever decide to take it on. 
+if you ever decide to take it on.
 
 John
 
@@ -172,7 +172,7 @@ Hi John,
 
 Thanks for your suggestion. This is a good idea, and would avoid messing up the code.
 Of course, I would have to introduce functions instead of the file test operators that I use, but that isn't a big problem.
-And with any luck the extra function call for each i/o operation wouldn't have much impact on performance. 
+And with any luck the extra function call for each i/o operation wouldn't have much impact on performance.
 
 - Phil
 
@@ -272,7 +272,7 @@ ExifTool can be used in a pipe exactly as you specified by using "-" as the file
 
 Posted on 2009-05-13 19:32:24-07 by ce in response to 10694
 
-Great! Something that might work as well. 
+Great! Something that might work as well.
 Chris
 
 Posted on 2009-09-05 11:15:10-07 by tni in response to 10677

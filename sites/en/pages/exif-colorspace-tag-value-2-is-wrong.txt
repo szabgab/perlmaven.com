@@ -3,7 +3,7 @@
 =indexes Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -14,12 +14,12 @@ Posted on 2006-08-14 15:36:06-07 by boscarol
 
 Hi all.
 
-At this page tag ColorSpace is listed with values 1 = sRGB, 2 = Adobe RGB, 65535 = Uncalibrated. 
+At this page tag ColorSpace is listed with values 1 = sRGB, 2 = Adobe RGB, 65535 = Uncalibrated.
 
-I think that value 2 (Adobe RGB) is wrong. 
+I think that value 2 (Adobe RGB) is wrong.
 
 The specification for EXIF 2.21 (JEITA CP3451-1, section 4.6.5-B) states that
-"if a color space other than sRGB is used, Uncalibrated (=FFFF.H) is set. 
+"if a color space other than sRGB is used, Uncalibrated (=FFFF.H) is set.
 
 In fact Exif 2.21 discriminates between sRGB and AdobeRGB not by means of ColorSpace tag,
 but of InterOperability Index tag.

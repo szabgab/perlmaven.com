@@ -3,7 +3,7 @@
 =indexes Win32::IEAutomation
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -15,8 +15,8 @@ Posted on 2010-12-27 22:39:09.205807-08 by shrutic
 Hello, I m using Win32::IEAutomation package from CPAN on Windows platform. I m trying to find out the text on the table using cells function.
 
 <code lang="perl">
-$ie->getTable("id:", "rt_NS");   
-print "\n$ie"; 
+$ie->getTable("id:", "rt_NS");
+print "\n$ie";
  my $third_cell = $ie->cells(1);
 print "\n$third_cell";
 $text = $third_cell->cellText;
@@ -37,7 +37,7 @@ my $third_cell = $table-&gt;cells(1);
 print "\n$third_cell";
 
 $text = $third_cell-&gt;cellText;
-print "\ntext=$text"; 
+print "\ntext=$text";
 </code>
 
 (This article is based on a thread on the CPAN::Forum.)

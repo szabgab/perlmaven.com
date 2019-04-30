@@ -3,7 +3,7 @@
 =indexes Crypt::SSLeay
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -12,13 +12,13 @@
 
 Posted on 2012-07-25 07:46:09.991024-07 by jiman
 
-Hello, 
+Hello,
 
 I'm writing a client on top of an API that uses Crypt::SSLeay to connect to a https site.
 Could you please give some clarification on what this error message means, and further,
-what typically causes this? I looked through your perldoc and did not see it documented. 
+what typically causes this? I looked through your perldoc and did not see it documented.
 
-Thank you for your time and assistance, 
+Thank you for your time and assistance,
 -Jiman
 
 Posted on 2012-07-29 20:38:17.656048-07 by nanis in response to 13754

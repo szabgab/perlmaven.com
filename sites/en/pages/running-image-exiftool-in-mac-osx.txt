@@ -1,9 +1,9 @@
 =title Running exiftool in Mac OS X
 =timestamp 2005-06-07T09:42:06
-=indexes Image::ExifTool 
+=indexes Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -291,7 +291,7 @@ No such file or directory
 
 yubana147:~ home$ u88:~/source/qsno_cvs home$ printenv PATH -bash: u88:~/source/qsno_cvs: No such file or directory
 yubana147:~ home$ -bash: u88:~/source/qsno_cvs home$ printenv PATH/bin:/sbin:/usr/bin:/sbin:/Users/home/bin:/usr/local/bin -bash: -bash:: command not found
-yubana147:~ home$ u88:~/source/qsno_cvs home$ ls -l /usr/local/bin/exiftool -rwxr-xr-x 1 home home 88398 Dec 15 07:36 /usr/local/bin/exiftool -bash: u88:~/source/qsno_cvs: No such file or directory 
+yubana147:~ home$ u88:~/source/qsno_cvs home$ ls -l /usr/local/bin/exiftool -rwxr-xr-x 1 home home 88398 Dec 15 07:36 /usr/local/bin/exiftool -bash: u88:~/source/qsno_cvs: No such file or directory
 yubana147:~ home$ u88:~/source/qsno_cvs home$ which exiftool /usr/local/bin/exiftool -bash: u88:~/source/qsno_cvs: No such file or directory
 yubana147:~ home$ u88:~/source/qsno_cvs home$ exiftool -ver 6.66 -bash: u88:~/source/qsno_cvs: No such file or directory
 yubana147:~ home$ Thanks for all your help. Pedro

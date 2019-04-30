@@ -3,7 +3,7 @@
 =indexes ExtUtils::Embed
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -12,8 +12,8 @@
 
 Posted on 2006-01-24 02:21:32-08 by guitarmarkus
 
-Hi, I'm trying to use PERL inside C code. I got to the point where I can run a simple perl program in C code. Now I want to use some existing code that uses dynamic loading such as use Data::Dumper; 
-I read in many places that you have to add some "glue" code for it to work: 
+Hi, I'm trying to use PERL inside C code. I got to the point where I can run a simple perl program in C code. Now I want to use some existing code that uses dynamic loading such as use Data::Dumper;
+I read in many places that you have to add some "glue" code for it to work:
 
 <code>
 EXTERN_C void boot_DynaLoader (pTHX_ CV* cv);
@@ -26,21 +26,21 @@ EXTERN_C void xs_init(pTHX) { char *file = __FILE__;
 }
 </code>
 
-but when I try compiling I get an error: 
+but when I try compiling I get an error:
 
 <code>
-Building target: 
+Building target:
 testC i686-pc-linux-gnu-gcc -L/usr/lib/ -rdynamic -L/usr/local/lib /usr/lib/perl5/5.8.6/i686-linux/auto/DynaLoader/DynaLoader.a -L/usr/lib/perl5/5.8.6/i686-linux/CORE
    -lperl -lpthread -lnsl -ldl -lm -lcrypt -lutil -lc -o testC seq
 Test.o test.o -lperl -lJudy seq
 Test.o: In function xs_init': ../seq
 Test.c:26: undefined reference to boot_DynaLoader' ../seq
-Test.c:27: undefined reference to boot_Socket' 
+Test.c:27: undefined reference to boot_Socket'
 </code>
 
-I use all the flags and libraries that were used to build my perl. I run on Linux with GenToo. 
+I use all the flags and libraries that were used to build my perl. I run on Linux with GenToo.
 
-I've been struggling with this one for half a day and running out of ideas... Anybody have a clue what could be wrong? 
+I've been struggling with this one for half a day and running out of ideas... Anybody have a clue what could be wrong?
 
 Thanks Mark
 
@@ -72,7 +72,7 @@ For more refrence, refer <a href="http://perldoc.perl.org/perlembed.html#Using-P
 
 Posted on 2007-05-24 13:39:44-07 by karthic in response to 1693
 
-And it should not be 
+And it should not be
 
 <code>
 -L/usr/local/lib /usr/lib/perl5/5.8.6/i686-linux/auto/DynaLoader/DynaLoader.a
@@ -81,7 +81,7 @@ And it should not be
 
 It should be
 
-<code> 
+<code>
 /usr/local/lib /usr/lib/perl5/5.8.6/i686-linux/auto/DynaLoader/DynaLoader.a
 </code>
 

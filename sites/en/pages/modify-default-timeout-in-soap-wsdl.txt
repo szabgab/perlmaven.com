@@ -1,9 +1,9 @@
-=title Modify default timeout in SOAP::WSDL 
+=title Modify default timeout in SOAP::WSDL
 =timestamp 2008-04-30T15:25:54
 =indexes SOAP::WSDL
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start

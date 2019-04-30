@@ -3,7 +3,7 @@
 =indexes Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -49,7 +49,7 @@ Hi Bogdan,
 
 Are you sure that the old City tag is XMP? ExifTool writes IPTC by default,
 so if you used "-City=name" you wrote the IPTC, not the XMP tag. Use -g1 -a
-when extracting information to see where the tags are stored. (This is FAQ #3). 
+when extracting information to see where the tags are stored. (This is FAQ #3).
 
 - Phil
 
@@ -82,7 +82,7 @@ reproduce this. Give me a bit of time to sort this one out.
 If you can give me any details about the history of the file, it may be helpful.
 (ie. were the tags ever copied from a TIFF or RAW image?)
 
-Thanks for pointing out this problem. 
+Thanks for pointing out this problem.
 
 - Phil
 

@@ -3,7 +3,7 @@
 =indexes XML, XML::Simple
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start

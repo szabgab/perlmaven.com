@@ -1,9 +1,9 @@
 =title Embed ICC Color Profile in JPEG
 =timestamp 2006-08-30T20:10:26
-=indexes Image::ExifTool 
+=indexes Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start

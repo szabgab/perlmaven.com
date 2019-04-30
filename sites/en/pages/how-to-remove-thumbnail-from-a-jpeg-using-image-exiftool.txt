@@ -3,7 +3,7 @@
 =indexes Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -12,11 +12,11 @@
 
 Posted on 2009-07-14 10:09:17-07 by jbphoto
 
-Hi, The pictures (jpg) I want to put on my website are about 60Ko with a 20Ko thumbnail inside!!! 
+Hi, The pictures (jpg) I want to put on my website are about 60Ko with a 20Ko thumbnail inside!!!
 How can I remove this thumbnail, but keeping Exif and IPTC info
-(which are displayed on my site: http://www.jeb.photo.free.fr) 
+(which are displayed on my site: http://www.jeb.photo.free.fr)
 
-Thanks for your help 
+Thanks for your help
 JB
 
 Posted on 2009-07-14 11:00:47-07 by exiftool in response to 11170
@@ -27,7 +27,7 @@ To remove just the thumbnail:
 exiftool -thumbnailimage= FILE
 </code>
 
-where FILE is one or more file or directory names. 
+where FILE is one or more file or directory names.
 
 But doing this will leave behind some tags like the thumbnail resolution which
 are no longer necessary. So if you are dealing with JPEG images a
@@ -40,23 +40,23 @@ exiftool -ifd1:all= -ext jpg FILE
 
 Here I have added "-ext jpg" to be sure only JPEG images are processed
 if FILE is a directory. This is important because you don't want to delete
-IFD1 from other image formats. 
+IFD1 from other image formats.
 
 - Phil
 
 Posted on 2009-07-14 11:41:11-07 by jbphoto in response to 11172
 
-Hi Phil, 
+Hi Phil,
 
 <code>
 exiftool -ifd1:all= -ext jpg FILE
 </code>
 
 seems to work perfectly my test file went from 57.584b to 42.702b for jpg
-to web it's about 15% great!! 
+to web it's about 15% great!!
 
-the more I use Exiftool, the more I like it!! 
-I have another question about reducing the size of jpg for the web but I'll open a new thread. 
+the more I use Exiftool, the more I like it!!
+I have another question about reducing the size of jpg for the web but I'll open a new thread.
 
 JB
 

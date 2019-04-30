@@ -1,9 +1,9 @@
 =title Script to restore EXIF data from saved JPEGs (After image editing)
 =timestamp 2007-05-22T04:15:23
-=indexes Image::ExifTool 
+=indexes Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -15,7 +15,7 @@ Posted on 2007-05-22 04:15:23-07 by morganglines
 Is there a stock script for backup / restore of EXIF data to files you'd be willing to share?
 I'm particularly curious about doing this via bash at the moment.
 I think I've got the backup part -- in DOS this seems to work:
- 
+
 <code>
 for %f in (*.cr2) do if not exist %~nf.jpg exiftool -b -PreviewImage -w .thumb %f
 for %f in (*.thumb) do if exist %~nf.cr2 exiftool -b -AllTagsFromFile %~nf.cr2 -o %~nf.jpg %f
@@ -23,19 +23,19 @@ for %f in (*.thumb) do if exist %~nf.cr2 exiftool -b -AllTagsFromFile %~nf.cr2 -
 
 and in BASH:
 
-<code> 
+<code>
 exiftool -if '$jpgfromraw' -b -jpgfromraw -w %d%f.jpg -execute -if '$previewimage' -b -previewimage
     -w %d%f.jpg -execute -tagsfromfile @ -srcfile %d%f.jpg -overwrite_original -common_args --ext jpg
-    --ext xmp FolderNameHere 
+    --ext xmp FolderNameHere
 </code>
 
 But restoring from the backed up JPEGs to edited JPEGs to over-write the mangled EXIF is eluding me.
 I did try Google and am surprised that I don't find instructions for backup / restore using EXIFtool.
 I've had pretty good results using a program called EXIFer but EXIFTool seems to support more tags.
 Any examples of backing up EXIF data for all files in a folder then restoring, particularly in
-BASH that you might share? 
+BASH that you might share?
 
-Thank you in advance, 
+Thank you in advance,
 
 -mg
 
@@ -154,7 +154,7 @@ backing up the whole JPEG image.
 Is it possible to restore from an HTML dump?
 
 <code>
-exiftool -htmldump -w ./EXIFBackup/%f%e.htm . 
+exiftool -htmldump -w ./EXIFBackup/%f%e.htm .
 </code>
 
 works fine for backup too but it seems to stop on restore.

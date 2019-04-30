@@ -3,7 +3,7 @@
 =indexes Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -41,7 +41,7 @@ them with the desired character set. ExifTool does not translate IPTC character 
 So to write UTF-8, the values that you assign must be valid UTF-8 byte sequences.
 
 The value of setting CodedCharacterSet is that it informs other applications that
-your IPTC strings contain UTF-8 characters. As far as ExifTool is concerned though 
+your IPTC strings contain UTF-8 characters. As far as ExifTool is concerned though
 it doesn't matter, because ExifTool places the translation in your hands.
 
 So maybe you shouldn't be so amazed after all... ;)

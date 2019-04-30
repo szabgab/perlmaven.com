@@ -3,7 +3,7 @@
 =indexes XMP, Image::ExifTool
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -25,7 +25,7 @@ My current guess runs something like this:
 <code lang="perl">
 my $exif = Image::ExifTool->new();
 $exif->SetNewValuesFromFile( $xmpfn, 'XMP:*' );
-$exif->WriteInfo( $fn );	
+$exif->WriteInfo( $fn );
 </code>
 
 Clarification? Anyone? Erik
@@ -43,7 +43,7 @@ open FILE, $xmpfn or die;
 read FILE, $data, 1000000 or die;
 close FILE;
 $exif->SetNewValue( 'XMP', $data );
-$exif->WriteInfo( $fn );	
+$exif->WriteInfo( $fn );
 </code>
 
 Of course, this code imposes an arbitrary restriction of 1000000 bytes on the size of the XMP file -- this was done just to simplify the example.

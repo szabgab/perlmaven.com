@@ -3,7 +3,7 @@
 =indexes Time::Local
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -51,12 +51,12 @@ Real Melancon.
 
 Posted on 2006-09-18 21:36:11-07 by methylal in response to 2881
 
-Looking at the module: 
+Looking at the module:
 
 You will see that Months are set in an array:
 
 <code lang="perl">
-my @MonthDays = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31); 
+my @MonthDays = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 </code>
 
 
@@ -64,7 +64,7 @@ Therefore, when it tries to pull the number of days for the month you passed to 
 it's searching it's index from 0 to 11.
 So when you pass in your Month as 10 (October), it's searching the array
 and thinking only 30 days are avilable and failing when you specify 31
-since you are technically 'out of range'. 
+since you are technically 'out of range'.
 
 Three solutions:
 

@@ -3,7 +3,7 @@
 =indexes CAM::PDF
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -21,13 +21,13 @@ CAM::PDF is a low-level library designed for high-performance manipulation of PD
 
 Posted on 2012-01-07 06:06:07.91582-08 by jochenhayek in response to 13582
 
-I have been using CAM::PDF and also "pdftohtml", 
-and I would like to suggest the latter for your task. 
-As Chris mentioned, "you'd be doing a lot of heuristic coding", but according to my experience you are better off with the output of "pdftohtml -xml", supposing you are fine with xml parsing. 
-I used XML::Simple for that purpose, but maybe you are more experienced. 
-There is no such concept as tables in PDF, and you would have to do a lot of guessing (-> heuristics) as to what are columns and rows and cells on these pages. 
-If you are really progressing on this, let us now! 
-Me personally, I am quite interested in that kind of utility as well, maybe I am going to work on it as well. 
+I have been using CAM::PDF and also "pdftohtml",
+and I would like to suggest the latter for your task.
+As Chris mentioned, "you'd be doing a lot of heuristic coding", but according to my experience you are better off with the output of "pdftohtml -xml", supposing you are fine with xml parsing.
+I used XML::Simple for that purpose, but maybe you are more experienced.
+There is no such concept as tables in PDF, and you would have to do a lot of guessing (-> heuristics) as to what are columns and rows and cells on these pages.
+If you are really progressing on this, let us now!
+Me personally, I am quite interested in that kind of utility as well, maybe I am going to work on it as well.
 
 Posted on 2012-01-07 14:26:00.78895-08 by jochenhayek in response to 13581
 

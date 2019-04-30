@@ -1,9 +1,9 @@
 =title PadWalker for Windows Solution
 =timestamp 2008-03-05T14:42:33
-=indexes PadWalker  
+=indexes PadWalker
 =status show
 =author 0
-=archive 0
+=archive 1
 =comments_disqus_enable 0
 
 =abstract start
@@ -48,15 +48,15 @@ Launched the C:\perl\bin\ppm.bat
 Went to Edit--Preferences-- Repositories
 Added http://www.bribes.org/perl/ppm/ site
 
-get below error: 
+get below error:
 
 <code>
 Synchronizing Database
-... 
+...
 Downloading ActiveState Package Repository packlist ...
 failed 500 Can't connect to ppm4.activestate.com:80 (connect: Unknown error)
 
-Downloading http://www.bribes.org/perl/ppm/ packlist ... 
+Downloading http://www.bribes.org/perl/ppm/ packlist ...
 failed 500 Can't connect to www.bribes.org:80 (connect: Unknown error)
 Synchronizing Database done
 </code>
@@ -71,7 +71,7 @@ I could able to install the Padwalker successfully on Windows XP (Running Perl 5
 And it saved under C:\Perl, but default it saved as .htm extension so
 I have renames the extension to .ppd (so the file name becomes C:\Perl\PadWalker.ppd) And then ran
 
-2) C:\Perl# ppm install PadWalker.ppd 
+2) C:\Perl# ppm install PadWalker.ppd
 
 it gave error "ppm install failed: No file at C:\Perl\PadWalker-1.92-PPM58.tar.gz"
 
@@ -97,11 +97,11 @@ Otherwise it will keep failing with: ppm install failed: No file ...
 
 Posted on 2013-04-11 19:39:19.655946-07 by ankutiger in response to 7273
 
-Here follow the steps to install padwalker on windows. 
+Here follow the steps to install padwalker on windows.
 
 Follow 3 simple steps
 <a href="http://perfect-blog-url.blogspot.com/2010/04/install-padwalker-on-windows-for-epic.html">here</a>
 
 (This article is based on a thread on the CPAN::Forum.)
-<!-- from http://cpanforum.com/threads/7273 --> 
+<!-- from http://cpanforum.com/threads/7273 -->
 
