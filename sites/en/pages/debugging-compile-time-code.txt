@@ -1,0 +1,69 @@
+=title Debugging compile time code (debugging BEGIN block)
+=timestamp 2019-05-06T14:30:01
+=indexes -d, $DB::single
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Using the debugger feature of Perl to <a href="/add-debugger-breakpoint-to-your-code">add a breakpoint to our code we
+can even debug code that is executed during compilation.
+
+Using the <a href="/begin">BEGIN block</a> Perl allows us to write code that will be executed even before the rest
+of the code is compiled. It is rarely needed, but it is a very powerful tool.
+
+However if you try to use the built-in debugger of Perl you will notice that the first statement it stops
+at is the first statement in your main code. By that time it already executed or tried to execute the BEGIN blocks.
+
+How can you debug that code?
+
+=abstract end
+
+In this rather stupid example we have a few statements in the BEGIN block
+
+<include file="examples/begin_block_code.pl">
+
+If I run this normally:
+
+<code>
+$ perl begin_block_code.pl
+</code>
+
+I get the expected output:
+
+<code>
+Hello World 42
+DONE
+</code>
+
+
+If I run it with the debugger:
+
+<code>
+$ perl -d begin_block_code.pl
+</code>
+
+I get the debugger prompt, but as you can observe, it already printed the "Hello World 42" that comes from the BEGIN
+block.
+
+<include file="examples/begin_block_code_1.txt">
+
+Adding an enabling the following line:
+
+<code>
+$DB::single = 1;
+</code>
+
+as the first statement of the BEGIN-block will tell the debugger, to stop at that point and let you debug:
+
+<code>
+$ perl -d begin_block_code.pl
+</code>
+
+<include file="examples/begin_block_code_2.txt">
+
+Here you can see that the next statement to be executed is the first statement of the BEGIN-block.
+
+

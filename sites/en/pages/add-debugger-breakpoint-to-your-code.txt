@@ -1,0 +1,106 @@
+=title Add (conditional) debugger breakpoints to your code
+=timestamp 2019-05-06T13:30:01
+=indexes -d, $DB::single
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+In most programming language and most programming environments when you would like to debug some code, you can use an
+external tool, a debugger, to try to locate problems in your code. This debugger is usually part of an IDE.
+
+With Perl you could use the "build-in" debugger that comes with Perl via the <hl>-d</hl> flag. See for
+example <a href="/beginner-perl-maven-debugging">how to debug Perl scripts</a>
+
+These external debuggers, including the one that comes with perl allow you to set <b>breakpoints</b> in the code
+where the execution will stop so you can look around the code and the values of the variables.
+
+Perl allows you to save these breakpoints in your code using the <hl>$DB::single</hl> variable.
+
+=abstract end
+
+<h2>Inserting conditional breakpoint in a complex application</h2>
+
+This isn't a really good example because Fibonacci is too simple a case, but imagine that you have a complex and
+long running application that you'd like to debug.
+
+If you insert the following statement in your code, then when your code is executed using th e built in debugger,
+it will automatically stop right after executing that assignment.
+
+<code>
+$DB::single = 1;
+</code>
+
+Actually you can do even more interesting thing, you can make that assignment conditional, for example like this:
+
+<code>
+$DB::single = 1 if $n == 6;
+</code>
+
+That will allow to stop the execution of a function only on certain parameters, or the execution of a loop when
+you have had a certain number of iterations.
+
+
+In a simple Fibonacci function it could look like this.
+
+<include file="examples/fibonacci_with_breakpoint.pl">
+
+You can run this code with any paraamter and that special assignment will have no effect.
+
+<code>
+perl fibonacci_with_breakpoint.pl 3
+2
+
+perl fibonacci_with_breakpoint.pl 7
+13
+</code>
+
+
+<h2>Use the debugger</h2>
+
+
+<code>
+perl -d fibonacci_with_breakpoint.pl 3
+</code>
+
+<include file="examples/fibonacci_with_breakpoint_1.txt">
+
+You type in <b>c</b> at this prompt to tell the debugger to "continue" to the first breakpoint.
+
+As the condition of the breakpoint setting is never met the code will run till the end printing the result
+and then another prompt:
+
+<include file="examples/fibonacci_with_breakpoint_2.txt">
+
+Here you can type <b>q</b> to quit the debugger.
+
+
+In the second attempt we run the code with a larger input number:
+
+<code>
+perl -d fibonacci_with_breakpoint.pl 7
+</code>
+
+
+We get the first out put and the prompt:
+
+<include file="examples/fibonacci_with_breakpoint_1.txt">
+
+If we type <b>c</b> here it will continue to run till it encounters the conditional breakpoint and show this:
+
+<include file="examples/fibonacci_with_breakpoint_3.txt">
+
+At this point we can start using all the other commands of the debugger to look around and explore the situation.
+
+
+BTW if you are curious what is that <hl>no warnings</hl> statement, it tells perl
+to avoid printing the <a href="/name-used-only-once-possible-typo">Name "DB::single" used only once: possible typo at</a> warning.
+
+See the full list of <a href="https://metacpan.org/pod/warnings">warnings</a>.
+
+
+See also <a href="/debugging-compile-time-code">how to debug compile-time code</a>.
+
+

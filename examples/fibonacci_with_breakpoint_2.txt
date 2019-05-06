@@ -1,0 +1,6 @@
+2
+Debugged program terminated.  Use q to quit or R to restart,
+use o inhibit_exit to avoid stopping after program termination,
+h q, h R or h o to get additional info.
+  DB<1>
+
