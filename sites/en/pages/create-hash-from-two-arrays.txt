@@ -1,0 +1,40 @@
+=title Create hash from two arrays: keys and values
+=timestamp 2019-05-08T20:30:01
+=indexes keys, values
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Given a hash we can easily create a list of all its keys and all its values by using the <hl>keys</hl> and
+<hl>values</hl> functions respectively.
+
+How can we do the opposite?
+
+How can we create a hash from an array of the future keys and an array of the future values?
+
+=abstract end
+
+<h2>Simple keys and values</h2>
+
+<include file="examples/hash_from_two_arrays.pl">
+
+What you see here is <a href="/hash-slice">hash slices in action</a>.
+
+The results:
+
+<include file="examples/hash_from_two_arrays.txt">
+
+Remember, the keys inside the hash are not in any particular order.
+
+<h2>Values containing a list of array references</h2>
+
+A slightly more complex case:
+
+<include file="examples/hash_from_keys_and_array_refs.pl">
+
+And the results:
+
+<include file="examples/hash_from_keys_and_array_refs.txt">

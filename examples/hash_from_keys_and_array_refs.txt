@@ -1,0 +1,17 @@
+$VAR1 = {
+          'name3' => [
+                       'name13',
+                       'name23',
+                       undef
+                     ],
+          'name2' => [
+                       'name12',
+                       'name22',
+                       'name32'
+                     ],
+          'name1' => [
+                       'name11',
+                       'name21',
+                       'name31'
+                     ]
+        };

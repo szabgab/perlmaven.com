@@ -1,0 +1,5 @@
+$VAR1 = {
+          'three' => 'tres',
+          'two' => 'dos',
+          'one' => 'uno'
+        };
