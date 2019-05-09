@@ -20,3 +20,7 @@ A matrix can be transposed. (Replace the rows by arrays.)
 
 <include file="examples/transpose_matrix.pl">
 
+The result looks like this, printing the before and after versions.
+
+<include file="examples/transpose_matrix.txt">
+
