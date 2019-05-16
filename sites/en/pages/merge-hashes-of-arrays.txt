@@ -25,7 +25,7 @@ In the first one we just merge the arrays. Duplicate values remain.
 
 <include file="examples/merge_hashes_of_arrays.txt">
 
-<h2>Merge excluding value duplication - ensuring values are unique<h2>
+<h2>Merge excluding value duplication - ensuring values are unique</h2>
 
 In the second we only keep distinct values withine each array.
 
