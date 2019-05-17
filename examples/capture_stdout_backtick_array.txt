@@ -1,0 +1,6 @@
+Some warning to STDERR
+==Hello
+==
+==World
+==
+

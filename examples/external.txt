@@ -1,0 +1,3 @@
+Hello
+Some warning to STDERR
+World
