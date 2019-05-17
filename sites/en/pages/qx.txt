@@ -76,7 +76,7 @@ Instead of assigning to a scalar variable we can also assign the backtick to an 
 In this case whatever the external program printed to STDOUT is split into rows and are assigned to the array. Each row
 is a separate line in the resulting array. So the number of elements in the array is the number of rows on the STDOUT.
 
-<include file="examples/capture_stdout_backtick_array.pl">
+<include file="examples/capture_stdout_backtick_array.txt">
 
 <h2>qx in list context</h2>
 

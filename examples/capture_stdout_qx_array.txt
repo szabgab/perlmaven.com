@@ -1,2 +1,3 @@
+Some warning to STDERR
 ==Hello
 ==
