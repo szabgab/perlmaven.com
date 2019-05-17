@@ -3,6 +3,8 @@ use strict;
 use warnings;
 
 # the order is important
+# load all the parts of the Application (including hooks)
+# before loading the Test:: module.
 use App;
 use Test::WWW::Mechanize::PSGI;
 
