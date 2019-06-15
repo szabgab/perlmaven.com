@@ -1,6 +1,6 @@
 =title Perl 5 Regex Cheat sheet
 =timestamp 2015-08-19T07:30:01
-=indexes ?, +, *, {}, ., [], |
+=indexes ?, +, *, {}, ., [], |, $1, $2, $3, $4
 =status show
 =books beginner
 =author szabgab
@@ -77,11 +77,11 @@ TODO: add examples \w and \d matching unicode letters and numebers.
 <h2>Grouping and capturing</h2>
 
 <code>
-   (...)       Grouping and capturing
-   \1, \2      Capture buffers during regex matching
-   $1, $2      Capture variables after successful matching
+   (...)                Grouping and capturing
+   \1, \2, \3, \4 ...   Capture buffers during regex matching
+   $1, $2, $3, $4 ...   Capture variables after successful matching
 
-   (?:...)     Group without capturing (don't set \1 nor $1)
+   (?:...)              Group without capturing (don't set \1 nor $1)
 </code>
 
 
