@@ -84,6 +84,8 @@ The same can be done with the <hl>qx</hl> operator.
 
 <include file="examples/capture_stdout_qx_array.pl">
 
+And the output:
+
 <include file="examples/capture_stdout_qx_array.txt">
 
 
