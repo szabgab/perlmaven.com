@@ -17,6 +17,11 @@ How could you fetch the list of the dependencies?
 
 =abstract end
 
+<h2>Deprecation notice</h2>
+
+This article uses the deprecated <a href="https://metacpan.org/pod/MetaCPAN::API">MetaCPAN::API</a>. Instead of that you
+will need to use the <a href="https://metacpan.org/pod/MetaCPAN::Client">MetaCPAN::Client</a>.
+
 <h2>MetaCPAN knows it</h2>
 
 Luckily, <a href="https://www.metacpan.org/">MetaCPAN</a> already collected all the information we need, so we only need to fetch the data
