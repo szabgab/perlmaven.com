@@ -5,7 +5,7 @@
 =books dancer
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 =abstract end

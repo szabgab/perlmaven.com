@@ -1,0 +1,53 @@
+=title Hacktoberfest 2019 and Perl
+=timestamp 2019-10-01T00:00:01
+=indexes MetaCPAN
+=status draft
+=books dancer
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+
+=abstract start
+
+<a href="/digitalocean">Digital Ocean</a>, one of my favorite VPS providers is running its
+<a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a> again. The goal is to encourage more people
+to contribute to Open Source projects.
+
+In a nutshell: After you register on their website you need to send 4 pull-requests to any GitHub hosted project
+in October. The first 50,000 people get a cool T-shirt.
+
+So what can you do if you care about Perl?
+
+=abstract end
+
+<ul>
+  <li>You can read the <a href="https://www.perl.com/article/hacktoberfest-2019/">Hacktoberfest article</a> on perl.com and follow those suggestions.</li>
+  <li>You can fix some stuff in the <a href="https://github.com/szabgab/Perl-Maven">code running the Perl Maven site</a>.</li>
+  <li>You can fix issues in the <a href="https://github.com/szabgab/perlmaven.com">content of the Perl Maven site</a>.</li>
+  <li>You can help improve the <a href="https://github.com/szabgab/perlweekly">Perl Weekly</a>.</li>
+  <li>You can find some low-hanging fruits on CPAN:</li>
+</ul>
+
+<a href="https://metacpan.org/">MetaCPAN</a> provides a lot of information about CPAN modules, but not all the modules
+provide this information. I have written a small script using
+<a href="https://metacpan.org/pod/MetaCPAN::Client">MetaCPAN::Client</a> to fetch the N most recently uploaed modules
+and check some of these meta data.
+
+The script is here:
+
+<include file="examples/recent_cpan_modules.pl">
+
+
+You can download it and run it yourself to see the most up to date information. You can also improve the script
+and send a PR with the improvement. The source of the script is <a href="">here</a>.
+
+Currently it checks if the META files contain a license.
+If it does not the here is an aritcle that explains
+<a href="/how-to-add-the-license-field-to-meta-files-on-cpan">how to add the license field to the META.yml and META.json
+files on CPAN</a>.
+
+
+I ran the script on the 1,000
+
+
+
