@@ -25,6 +25,7 @@ So what can you do if you care about Perl?
   <li>You can fix some stuff in the <a href="https://github.com/szabgab/Perl-Maven">code running the Perl Maven site</a>.</li>
   <li>You can fix issues in the <a href="https://github.com/szabgab/perlmaven.com">content of the Perl Maven site</a>.</li>
   <li>You can help improve the <a href="https://github.com/szabgab/perlweekly">Perl Weekly</a>.</li>
+  <li>Imoprove <a href="/metacpan">MetaCPAN</a> itself.</li>
   <li>You can find some low-hanging fruits on CPAN:</li>
 </ul>
 
@@ -81,6 +82,7 @@ If there are no tests, add any simple test-case.
 Once there is at least one test, you can create a <b>.travis.yml</b>, enable Travis-CI for your clone and once the tests
 are passing on Travis-CI as well you can send a pull-request with that file and the information needed to enable
 Travis-CI.
+
 
 
 On 30 September 2019 I ran the script on the 1,000 most recently uploaded modules and this is what I got.
