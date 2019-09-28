@@ -15,10 +15,12 @@ sub main {
     $count //= 10;
     my $recent = $mcpan->recent($count);      # https://metacpan.org/pod/MetaCPAN::Client::ResultSet
 
+    my %seen;
     #say $recent->total;
     while (my $this = $recent->next) {
         #say $this;      # https://metacpan.org/pod/MetaCPAN::Client::Release
         #say $this->name;
+        #say $this->distribution;
         #say $this->author;
         #say $this->date;
         #say $this->version;
@@ -26,6 +28,10 @@ sub main {
         #say Dumper $this->license;
         #say Dumper $this->metadata;
         #say '---------------';
+
+        # check only the mosy recent upload of a distribution
+        next if $seen{ $this->distribution };
+        $seen{ $this->distribution } = 1;
 
         my @issues;
 
