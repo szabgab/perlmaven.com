@@ -88,3 +88,704 @@ Travis-CI.
 On 30 September 2019 I ran the script on the 1,000 most recently uploaded modules and this is what I got.
 
 
+<a href="https://metacpan.org/release/PSRSBSNS/Business-CreditCard-0.38">Business-CreditCard-0.38</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/GANGLION/Audio-Nama-1.216">Audio-Nama-1.216</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/LNATION/DateTime-Ordinal-0.01">DateTime-Ordinal-0.01</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/AFUERST/devtools-0.02">devtools-0.02</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/JPIERCE/IO-Pager-0.43">IO-Pager-0.43</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PMEVZEK/Net-DRI-0.96_13">Net-DRI-0.96_13</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MHASCH/Bundle-Maintainer-MHASCH-0.002">Bundle-Maintainer-MHASCH-0.002</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/CRLCU/Mojolicious-Command-scaffold-0.0.2">Mojolicious-Command-scaffold-0.0.2</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEASWORTH/Tangle-0.01">Tangle-0.01</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MLEHMANN/AnyEvent-WebDriver-1.01">AnyEvent-WebDriver-1.01</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/DOOM/Text-Capitalize-1.5">Text-Capitalize-1.5</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SUNDQUIST/Google-Ads-AdWords-Client-5.8.2">Google-Ads-AdWords-Client-5.8.2</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/GPAREDES/SUNAT-0.01">SUNAT-0.01</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEVANS/IO-Async-Loop-Mojo-0.06">IO-Async-Loop-Mojo-0.06</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/ASPOSEAPI/AsposeCellsCloud-CellsApi-19.9">AsposeCellsCloud-CellsApi-19.9</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/TURNERJW/Date-Time2fmtstr-1.03">Date-Time2fmtstr-1.03</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/BOFTX/MooX-Role-CliOptions-0.05">MooX-Role-CliOptions-0.05</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/COUDOT/Lemonldap-NG-Portal-2.0.6">Lemonldap-NG-Portal-2.0.6</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/COUDOT/Lemonldap-NG-Manager-2.0.6">Lemonldap-NG-Manager-2.0.6</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/COUDOT/Lemonldap-NG-Handler-2.0.6">Lemonldap-NG-Handler-2.0.6</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEKINGSAM/Bioinfo-0.1.15">Bioinfo-0.1.15</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/AMALTSEV/XAO-Indexer-1.05">XAO-Indexer-1.05</a><br>
+License in META files is unknown<br>
+
+<p>
+
+<a href="https://metacpan.org/release/AMALTSEV/XAO-ImageCache-1.22">XAO-ImageCache-1.22</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/AMALTSEV/XAO-Catalogs-1.04">XAO-Catalogs-1.04</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/AMALTSEV/XAO-Content-1.06">XAO-Content-1.06</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/CPANLNCSA/API-INSEE-Sirene-3.504">API-INSEE-Sirene-3.504</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MPOURASG/Dancer2-Plugin-WebService-4.1.8">Dancer2-Plugin-WebService-4.1.8</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/DAEMON/POE-Component-FunctionBus-0.02">POE-Component-FunctionBus-0.02</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SLANNING/Net-Graphite-0.18">Net-Graphite-0.18</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/KRYDE/Tie-TZ-10">Tie-TZ-10</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/KRYDE/Gtk2-Ex-MenuView-5">Gtk2-Ex-MenuView-5</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/KRYDE/Math-OEIS-13">Math-OEIS-13</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SCHIECHEO/Getopt-O2-v1.1.0">Getopt-O2-v1.1.0</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/GLBRUNE/Sim-OPT-0.463">Sim-OPT-0.463</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/HEXONET/WebService-Hexonet-Connector-v2.2.4">WebService-Hexonet-Connector-v2.2.4</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/EHUELS/PGObject-Util-DBMethod-1.00.003">PGObject-Util-DBMethod-1.00.003</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/EHUELS/PGObject-Util-DBChange-0.050.3">PGObject-Util-DBChange-0.050.3</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/RAJ/Telugu-Itrans-0.03">Telugu-Itrans-0.03</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/JOHNH/Fsdb-2.68">Fsdb-2.68</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/CRLCU/mojo-console-0.0.7">mojo-console-0.0.7</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/TEAM/Job-Async-Redis-0.004">Job-Async-Redis-0.004</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/TURNERJW/StreamFinder-1.21">StreamFinder-1.21</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/CAVAC/Net-Clacks-6.1">Net-Clacks-6.1</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MLEHMANN/AnyEvent-7.17">AnyEvent-7.17</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEVANS/App-perlsh-0.02">App-perlsh-0.02</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/JLEFLER/Data-SeaBASS-0.192600">Data-SeaBASS-0.192600</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/WSNYDER/Parallel-Forker-1.250">Parallel-Forker-1.250</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/VAXMAN/IO-HyCon-0.2">IO-HyCon-0.2</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/IMACAT/Locale-Maketext-Gettext-1.30">Locale-Maketext-Gettext-1.30</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/DMALONE/Crypt-IDA-0.03">Crypt-IDA-0.03</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/FROGGS/Date-Holidays-DE-2.03">Date-Holidays-DE-2.03</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MTHURN/WWW-Search-Ebay-3.054">WWW-Search-Ebay-3.054</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MLEHMANN/AnyEvent-Fork-RPC-2.0">AnyEvent-Fork-RPC-2.0</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/LUIZBENE/Siffra-Tools-0.15">Siffra-Tools-0.15</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/JCB/WARC-v0.0.0_6">WARC-v0.0.0_6</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/VLADO/Text-Starfish-1.29">Text-Starfish-1.29</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MLEHMANN/AnyEvent-ZabbixSender-1.1">AnyEvent-ZabbixSender-1.1</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/THINC/DateTime-Format-Flexible-0.32">DateTime-Format-Flexible-0.32</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PIXEL/Finance-Bank-LaPoste-9.02">Finance-Bank-LaPoste-9.02</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/LMEUNIER/Bio-Palantir-0.192560">Bio-Palantir-0.192560</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/DMALONE/Math-FastGF2-0.07">Math-FastGF2-0.07</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SYBER/XS-Install-1.2.11">XS-Install-1.2.11</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/GAISSMAI/Net-SNMP-Mixin-InetCidrRouteTable-0.03">Net-SNMP-Mixin-InetCidrRouteTable-0.03</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/WSNYDER/Verilog-Perl-3.468">Verilog-Perl-3.468</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/CRLCU/mojo-debugbar-0.0.3">mojo-debugbar-0.0.3</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/CRLCU/mojo-events-0.0.2">mojo-events-0.0.2</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/CRLCU/Mojolicious-Plugin-Events-0.3.3">Mojolicious-Plugin-Events-0.3.3</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/RATCLIFFE/Image-Sane-4">Image-Sane-4</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MHASCH/Math-Polynomial-1.015">Math-Polynomial-1.015</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/ZEFRAM/Time-OlsonTZ-Data-0.201903">Time-OlsonTZ-Data-0.201903</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/VAXMAN/HC-HyCon-0.1">HC-HyCon-0.1</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/TVDW/AnyEvent-YACurl-0.13">AnyEvent-YACurl-0.13</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/JWRIGHT/AWS-CDK-0.001_01">AWS-CDK-0.001_01</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/JWRIGHT/JSII-0.001_01">JSII-0.001_01</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEVANS/Device-Chip-CC1101-0.02">Device-Chip-CC1101-0.02</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PRBRENAN/Dita-GB-Standard-20190911">Dita-GB-Standard-20190911</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/CFOUTS/MARC-File-JSON-0.005">MARC-File-JSON-0.005</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SOMMAR/Win32-SqlServer-2.012">Win32-SqlServer-2.012</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PRBRENAN/Dita-GB-Standard-Types-20190911">Dita-GB-Standard-Types-20190911</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MGV/Code-Quality-0.002">Code-Quality-0.002</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/DDICK/WebService-HIBP-0.15">WebService-HIBP-0.15</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/RKELSCH/Graphics-Framebuffer-6.35">Graphics-Framebuffer-6.35</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEVANS/IO-Termios-0.08">IO-Termios-0.08</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/RAJ/Telugu-Utils-0.03">Telugu-Utils-0.03</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/CRLCU/Mojolicious-Plugin-Debugbar-0.0.2">Mojolicious-Plugin-Debugbar-0.0.2</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/DDRP/Test-Module-Runnable-0.4.2">Test-Module-Runnable-0.4.2</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEVANS/Future-AsyncAwait-0.33">Future-AsyncAwait-0.33</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEVANS/Data-Bitfield-0.04">Data-Bitfield-0.04</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEVANS/Device-Chip-HTU21D-0.04">Device-Chip-HTU21D-0.04</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEVANS/Device-Chip-AnalogConverters-0.08">Device-Chip-AnalogConverters-0.08</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MIKEFLAN/Data-Douglas_Peucker-0.01">Data-Douglas_Peucker-0.01</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEVANS/Syntax-Keyword-Try-0.11">Syntax-Keyword-Try-0.11</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PRBRENAN/Data-Edit-Xml-20190906">Data-Edit-Xml-20190906</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/GRABZIT/GrabzItClient.3.3.6">GrabzItClient.3.3.6</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/DCONWAY/Test-Expr-0.000009">Test-Expr-0.000009</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/LEONT/Dist-Banshee-0.002">Dist-Banshee-0.002</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/DDICK/Firefox-Marionette-0.82">Firefox-Marionette-0.82</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/VVELOX/Proc-ProcessTable-piddler-0.2.0">Proc-ProcessTable-piddler-0.2.0</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MOB/Forks-Queue-0.12">Forks-Queue-0.12</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/IPFINDER/IO-IPFinder-1.0">IO-IPFinder-1.0</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/VVELOX/Net-Connection-ncnetstat-0.5.0">Net-Connection-ncnetstat-0.5.0</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SLAFFAN/Task-Biodiverse-NoGUI-3.001">Task-Biodiverse-NoGUI-3.001</a><br>
+License in META files is unknown<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SLAFFAN/Task-Biodiverse-3.00">Task-Biodiverse-3.00</a><br>
+License in META files is unknown<br>
+
+<p>
+
+<a href="https://metacpan.org/release/HMBRAND/App-ccdiff-0.28">App-ccdiff-0.28</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MZIESCHA/Geoffrey-Changelog-Database-0.000202">Geoffrey-Changelog-Database-0.000202</a><br>
+License in META files is unknown<br>
+
+<p>
+
+<a href="https://metacpan.org/release/AUDREYT/Unicode-EastAsianWidth-12.0">Unicode-EastAsianWidth-12.0</a><br>
+License in META files is unknown<br>
+
+<p>
+
+<a href="https://metacpan.org/release/CHROMATIC/Pod-PseudoPod-0.19">Pod-PseudoPod-0.19</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/JOYREX/grpc-xs-0.32">grpc-xs-0.32</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SCHIECHEO/Getopt-OO-v1.0.19">Getopt-OO-v1.0.19</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SCHIECHEO/libgetopt-oo-perl-v1.0.19">libgetopt-oo-perl-v1.0.19</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/RUISTEVE/AI-ML-0.001">AI-ML-0.001</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/KRYDE/Math-Polynomial-Horner-4">Math-Polynomial-Horner-4</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/KRYDE/math-image-113">math-image-113</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/KRYDE/Glib-Ex-ConnectProperties-20">Glib-Ex-ConnectProperties-20</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SHLOMIF/HTML-T5-0.006">HTML-T5-0.006</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/PEVANS/Syntax-Keyword-Dynamically-0.01_001">Syntax-Keyword-Dynamically-0.01_001</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/MDEHOON/Algorithm-Cluster-1.59">Algorithm-Cluster-1.59</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/NICOMEN/Mojo-UserAgent-Cached-1.07">Mojo-UserAgent-Cached-1.07</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/ECKARDT/Script-Toolbox-0.63">Script-Toolbox-0.63</a><br>
+License in META files is unknown<br>
+
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/TANIGUCHI/Number-ZipCode-JP-0.20190830">Number-ZipCode-JP-0.20190830</a><br>
+Missing repository from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/NLNETLABS/Net-DNS-1.21">Net-DNS-1.21</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/JOHANL/Devel-PerlySense-0.0221">Devel-PerlySense-0.0221</a><br>
+Missing resources from META files<br>
+
+<p>
+
+<a href="https://metacpan.org/release/SADAMS/Mojolicious-Command-static-0.02">Mojolicious-Command-static-0.02</a><br>
+License in META files is unknown<br>
+
+<p>
+
