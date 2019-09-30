@@ -16,15 +16,23 @@ to contribute to Open Source projects.
 In a nutshell: After you register on their website you need to send 4 pull-requests to any GitHub hosted project
 in October. The first 50,000 people get a cool T-shirt.
 
-So what can you do if you care about Perl?
-
 =abstract end
+
+<h2>How?</h2>
+
+The Hacktoberfest page has some explanation on how to contribute, but if you'd like a deeper explanation,
+you can pick up my eBook on <a href="https://leanpub.com/collab-dev-git">Collaborative Development using Git and GitHub</a>
+
+<h2>What?</h2>
+
+So what can you do if you care about Perl?
 
 <ul>
   <li>You can read the <a href="https://www.perl.com/article/hacktoberfest-2019/">Hacktoberfest article</a> on perl.com and follow those suggestions.</li>
   <li>You can fix some stuff in the <a href="https://github.com/szabgab/Perl-Maven">code running the Perl Maven site</a>.</li>
   <li>You can fix issues in the <a href="https://github.com/szabgab/perlmaven.com">content of the Perl Maven site</a>.</li>
   <li>You can help improve the <a href="https://github.com/szabgab/perlweekly">Perl Weekly</a>.</li>
+  <li>You can join the <a href="https://perlweeklychallenge.org/">Perl Weekly Challenge</a> (see <a href="http://blogs.perl.org/users/mohammad_s_anwar/2019/09/hacktoberfest-with-perl-weekly-challenge.html">Hacktoberfest with Perl Weekly Challenge</a>)</li>
   <li>Improve <a href="/metacpan">MetaCPAN</a> itself.</li>
   <li>You can find some low-hanging fruits on CPAN:</li>
 </ul>
