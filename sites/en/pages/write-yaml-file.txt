@@ -1,0 +1,22 @@
+=title Write YAML file
+=timestamp 2019-10-16T15:30:01
+=indexes YAML, DumpFile
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+
+=abstract start
+
+<a href="/yaml">YAML</a> is primarily used as a configuration file that people write and the program reads, but it can
+be used for <a href="/data-serialization-in-perl">data serialization</a> as well. In addition, especially when writing
+tests, there are other cases as well when we would like to save a data structure as a YAML file.
+
+=abstract end
+
+<include file="examples/save_yaml.pl">
+
+The result will look like this:
+
+<include file="examples/data/data.yml">
+

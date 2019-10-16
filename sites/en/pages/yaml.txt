@@ -13,7 +13,7 @@
 
 <include file="examples/sample.yml">
 
-It can be used for data serialization, though probbaly it is most often used for hierarchical configuration files.
+It can be used for <a href="/data-serialization-in-perl">data serialization</a>, though probbaly it is most often used for hierarchical configuration files.
 
 YAML format allows the user to have key-value pair and list data structures.
 
@@ -35,6 +35,7 @@ In Perl the following libraries exist:
 
 <ul>
    <li><a href="/yaml-vs-yaml-xs-inconsistencies">YAML vs YAML::XS inconsistencies (YAML::Syck and YAML::Tiny too)</a></li>
+   <li><a href="/write-yaml-file">Write YAML file</a></li>
    <li><a href="https://code-maven.com/yaml">YAML in other languages</a></li>
 </ul>
 
