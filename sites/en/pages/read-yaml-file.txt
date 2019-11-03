@@ -1,8 +1,7 @@
 =title Read YAML file
 =timestamp 2019-11-03T07:30:01
-=indexes YAML
+=indexes YAML, LoadFile
 =status show
-=books dancer
 =author szabgab
 =archive 1
 =comments_disqus_enable 0
