@@ -1,7 +1,7 @@
 =title File modify date - When was a file last changed?
-=timestamp 2019-11-14T07:30:01
+=timestamp 2019-11-09T15:30:01
 =indexes stat, -M, DateTime, localtime, $^T
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 0
