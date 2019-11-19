@@ -14,3 +14,9 @@ file-find
 =abstract end
 
 <slidecast file="/media/videos/beginner-perl/file-find" youtube="0HE_2pGeR1I" />
+
+
+<a href="https://code-maven.com/slides/perl-programming/solution-tree">tree</a>
+
+<a href="https://code-maven.com/slides/perl-programming/file-find">File::Find</a>
+
