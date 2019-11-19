@@ -5,6 +5,7 @@
 =author szabgab
 =archive 1
 =comments_disqus_enable 1
+=show_related 0
 
 =abstract start
 
@@ -37,6 +38,10 @@ In Perl the following libraries exist:
    <li><a href="/yaml-vs-yaml-xs-inconsistencies">YAML vs YAML::XS inconsistencies (YAML::Syck and YAML::Tiny too)</a></li>
    <li><a href="/read-yaml-file">Reead YAML file</a> (load YAMl)</li>
    <li><a href="/write-yaml-file">Write YAML file</a> (save YAML)</li>
-   <li><a href="https://code-maven.com/yaml">YAML in other languages</a></li>
+   <li><a href="/cli-counter-with-yaml-backend">Counter example using YAML file to store the data</a></li>
 </ul>
 
+<h2>YAML in other languages</h2>
+<ul>
+   <li><a href="https://code-maven.com/yaml">YAML in other languages</a></li>
+</ul>

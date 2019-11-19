@@ -1,0 +1,16 @@
+=title Counter example using YAML file to store the data
+=timestamp 2019-11-19T21:30:01
+=indexes YAML
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+
+=abstract start
+
+A <a href="https://code-maven.com/counter">counter example</a> using <a href="/yaml">YAML</a> file to store the data.
+
+=abstract end
+
+<include file="examples/counter_yml.pl">
+
