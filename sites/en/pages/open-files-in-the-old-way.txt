@@ -140,7 +140,7 @@ open my $in, '>', $filename or die ...;
 
 <h2>So what is it about 3-argument open that protects you from overwriting /etc/passwd?</h2>
 
-If we accept a filename form the user, and then we try to open it for writing, without checking
+If we accept a filename from the user, and then we try to open it for writing, without checking
 the name of the file, then the 3-argument open won't help. (though I really hope you don't run
 your scripts as root and thus you will "only" overwrite files owned by a less privileged the user)
 
