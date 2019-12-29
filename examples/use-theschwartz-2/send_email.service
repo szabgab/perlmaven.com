@@ -1,0 +1,12 @@
+# vi /etc/systemd/system/send_email.service
+[Unit]
+Description=Service for send_email runner.
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/send_email_runner.pl
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
