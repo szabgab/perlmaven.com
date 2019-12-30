@@ -2,7 +2,7 @@
 =timestamp 2019-12-28T12:00:00
 =description How to use TheSchwartz Perl module (Part 2)
 =indexes FreeBSD, PostgreSQL, cpan, cpanm, TheSchwartz, TheSchwartz::Worker, TheSchwartz::Simple, TheSchwartz::Simple::Job
-=status show
+=status draft
 =books intermediate
 =author dsdickinson
 =archive 1
