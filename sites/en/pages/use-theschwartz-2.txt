@@ -1,5 +1,5 @@
 =title How To Use TheSchwartz Perl Module (Part 2)
-=timestamp 2019-12-28T12:00:00
+=timestamp 2020-01-01T00:00:00
 =description How to use TheSchwartz Perl module (Part 2)
 =indexes FreeBSD, PostgreSQL, cpan, cpanm, TheSchwartz, TheSchwartz::Worker, TheSchwartz::Simple, TheSchwartz::Simple::Job
 =status draft
@@ -11,8 +11,8 @@
 =abstract start
 
 Welcome to the second part of how to setup and use <a href="https://metacpan.org/pod/TheSchwartz">TheSchwartz</a> Perl module.
-In <a href="https://perlmaven.com/use-theschwartz">part one</a> of this tutorial, we covered how to setup the required database and write a script to insert a job for queueing.
-In this continuation, we will finish things up by adding the worker scripts to process the jobs inserted into the database.  
+In <a href="/use-theschwartz">part one</a> of this tutorial, we covered how to setup the required database and write a script to insert a job for queueing.
+In this continuation, we will finish things up by adding the worker scripts to process the jobs inserted into the database.
 Finally we will create a service script to daemonize the runner that does the processing. This will give us a complete queueing system we can use and expand on for many different types of tasks.
 
 =abstract end
@@ -52,7 +52,7 @@ require Worker::SendEmail;
 </code>
 We assume you have the credentials squared away properly in the database with access to the schwartz database.
 So as you can see we are connecting to the database so the script can query the available jobs that have been inserted into the database.
-On the following line we are specifying which type of job we want to process. Here, we specify the "Worker::SendEmail" type of job from funcmap.funcname in the database. 
+On the following line we are specifying which type of job we want to process. Here, we specify the "Worker::SendEmail" type of job from funcmap.funcname in the database.
 <code lang="perl">
 $sclient->can_do("Worker::SendEmail");
 </code>
@@ -70,7 +70,7 @@ open(LOG,">>$log_file") or die "Can not open $log_file!";
 Next we create the infinite loop that will continue to check our database queue for jobs until the script is stopped.
 <code lang="perl">
 $loopcount = 0;
-$sleepint = 10; 
+$sleepint = 10;
 if ($loopcount eq 0) {
     # main loop of program; goes forever, running jobs
     $sclient->work($sleepint);
@@ -78,11 +78,11 @@ if ($loopcount eq 0) {
     for (my $i = 0; $i <= $loopcount; $i++) {
         $sclient->work_once();
         sleep $sleepint;
-    }   
+    }
 }
 </code>
-The sleepint value gives the work() function a seconds value to sleep before it looks at the queue again which you can adjust in case there are performance concerns. 
-Here we are specifing 10 seconds between checks. We've also added some flexibilty here for testing with the work_once() function. 
+The sleepint value gives the work() function a seconds value to sleep before it looks at the queue again which you can adjust in case there are performance concerns.
+Here we are specifing 10 seconds between checks. We've also added some flexibilty here for testing with the work_once() function.
 If we set loopcount > 0 it will goto the else statement and then it will only get one job off the queue.
 
 So how does it now what to do to when it hits the work() function? Well, that is another function we are going to code in a new and seperate library module we will be creating next.
@@ -90,7 +90,7 @@ So how does it now what to do to when it hits the work() function? Well, that is
 <h2>Worker Runner Script Library Module</h2>
 <b>/usr/local/lib/Worker/SendEmail.pm</b><br/>
 
-This is where we will put our work() function. <a href="https://metacpan.org/pod/TheSchwartz::Worker">TheSchwartz::Worker</a> page has some valuable information on using the 
+This is where we will put our work() function. <a href="https://metacpan.org/pod/TheSchwartz::Worker">TheSchwartz::Worker</a> page has some valuable information on using the
 superclass as we will be doing in the below code.
 
 Here's the full script:<br/>
@@ -116,7 +116,7 @@ open(LOG,">>$log_file") or die "Can not open $log_file!";
 }
 </code>
 
-As we enter the work(), you'll notice we are passing in the arguments data that the job holds from the database record. 
+As we enter the work(), you'll notice we are passing in the arguments data that the job holds from the database record.
 
 <code lang="perl">
 	my $args		= $job->arg;
@@ -125,20 +125,20 @@ As we enter the work(), you'll notice we are passing in the arguments data that 
 Here's a database refresher of our data:
 
 <code lang="shell">
-schwartz=# SELECT 
-j.jobid, fm.funcname, encode(j.arg,'escape') as "args", to_timestamp(j.insert_time) as insert_time, to_timestamp(j.run_after) as run_after 
+schwartz=# SELECT
+j.jobid, fm.funcname, encode(j.arg,'escape') as "args", to_timestamp(j.insert_time) as insert_time, to_timestamp(j.run_after) as run_after
 FROM
-job j 
-INNER JOIN 
-funcmap fm ON (fm.funcid = j.funcid) 
+job j
+INNER JOIN
+funcmap fm ON (fm.funcid = j.funcid)
 ORDER BY insert_time DESC;
- jobid |     funcname      |                        args                        |      insert_time       |       run_after        
+ jobid |     funcname      |                        args                        |      insert_time       |       run_after
 -------+-------------------+----------------------------------------------------+------------------------+------------------------
      9 | Worker::SendEmail | \x05    \x03\000\000\000\x04                      +| 2019-12-24 04:24:32-05 | 2019-12-24 04:24:42-05
-       |                   | \x17I, am your father. -Dad\000\000\000\x04body   +|                        | 
-       |                   | \x1Cluke.skywalker@cloudcity.com\000\000\000\x02to+|                        | 
-       |                   | \x04Luke\000\000\000\x07subject                   +|                        | 
-       |                   | \x19darth.vader@cloudcity.com\000\000\000\x04from  |                        | 
+       |                   | \x17I, am your father. -Dad\000\000\000\x04body   +|                        |
+       |                   | \x1Cluke.skywalker@cloudcity.com\000\000\000\x02to+|                        |
+       |                   | \x04Luke\000\000\000\x07subject                   +|                        |
+       |                   | \x19darth.vader@cloudcity.com\000\000\000\x04from  |                        |
 (1 row)
 </code>
 
@@ -159,7 +159,7 @@ We are simplying grabbing those args values, setting them to some variables and 
 	}
 </code>
 
-Finally, the script creates the email and sends it out via the sendmail command. I know there are much better ways of doing this using email perl modules 
+Finally, the script creates the email and sends it out via the sendmail command. I know there are much better ways of doing this using email perl modules
 such as <a href="https://metacpan.org/pod/Mail::Sendmail">Mail::Sendmail</a> but I wanted to keep things simple by not introducing any other modules.
 <code lang="perl">
 	my $sendmail	= "/usr/sbin/sendmail -t";
@@ -184,12 +184,12 @@ Once the email gets sent by the worker, the job is marked as completed in the 'e
 
 <code lang="shell">
 schwartz=# select * from exitstatus;
- jobid | funcid | status | completion_time | delete_after 
+ jobid | funcid | status | completion_time | delete_after
 -------+--------+--------+-----------------+--------------
      9 |      4 |      0 |      1577179546 |   1577179547
 
 schwartz=# select * from job;
- jobid | funcid | arg | uniqkey | insert_time | run_after | grabbed_until | priority | coalesce 
+ jobid | funcid | arg | uniqkey | insert_time | run_after | grabbed_until | priority | coalesce
 -------+--------+-----+---------+-------------+-----------+---------------+----------+----------
 (0 rows)
 </code>
@@ -218,8 +218,8 @@ Here is a flow chart to give a clearer picture of how the whole process works:
 <div style="text-align:left"><a><img src="/img/use-theschwartz-2-chart.png" /></a></div>
 
 <h2>Conclusion</h2>
-This concludes the tutorial for setting up a queueing system using TheSchwartz. It's a pretty good system that proves to be reliable. I have used it in 
+This concludes the tutorial for setting up a queueing system using TheSchwartz. It's a pretty good system that proves to be reliable. I have used it in
 the past to run many different types of runners concurrently on the same system without fail. Enjoy and may TheSchwartz be with you!<br/><br/>
 
-Related article: <a href="https://perlmaven.com/use-theschwartz">How to Use TheSchwartz Perl Module (Part 1)</a>
+Related article: <a href="/use-theschwartz">How to Use TheSchwartz Perl Module (Part 1)</a>
 
