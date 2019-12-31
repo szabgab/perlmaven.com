@@ -11,18 +11,20 @@
 =abstract start
 
 Welcome to the second part of how to setup and use <a href="https://metacpan.org/pod/TheSchwartz">TheSchwartz</a> Perl module.
-In part one of this tutorial, we covered how to setup the relative database and write a script to insert a job for queueing.
+In <a href="https://perlmaven.com/use-theschwartz">part one</a> of this tutorial, we covered how to setup the required database and write a script to insert a job for queueing.
 In this continuation, we will finish things up by adding the worker scripts to process the jobs inserted into the database.  
-Finally we will create a service script to daemonize the runner. This will give us a complete queueing system we can use and expand for many different types of tasks.
+Finally we will create a service script to daemonize the runner that does the processing. This will give us a complete queueing system we can use and expand on for many different types of tasks.
 
 =abstract end
 
 <h2>Overview</h2>
 Once we are done with this lesson, we will have coded four seperate files for our queueing system.
-1) Job insert script (send_email.pl)
-2) Worker runner script (send_email_runner.pl)
-3) Worker library (Worker/SendEmail.pm)
-4) Daemon service script (send_email.service)
+<ol>
+<li>Job insert script (send_email.pl)</li>
+<li>Worker runner script (send_email_runner.pl)</li>
+<li>Worker library (Worker/SendEmail.pm)</li>
+<li>Daemon service script (send_email.service)</li>
+</ol>
 
 We have already coded the first file (send_email.pl) in part one of this lesson. In part two we will cover coding the above files 2, 3 and 4.
 
@@ -39,7 +41,7 @@ This is where everything will go on our system respectively from the list above:
 This will be the script that constantly runs in the background to monitor our database for new jobs to process.
 Later, we will daemonize this script to run as a service.
 
-Here's what our worker runner script will look like:
+Here's what our worker runner script will look like:<br/>
 <include file="examples/use-theschwartz-2/send_email_runner.pl">
 
 Note, the following lines at the top are important as it tells our script how to get to our library that houses the ever important work() function, which we will get to a bit later.
@@ -56,7 +58,7 @@ $sclient->can_do("Worker::SendEmail");
 </code>
 So this script will only process those types of jobs.
 
-Typically I like to also add logging to these process to facilitate troubleshooting which is what is happening here.
+Typically I like to also add logging to these processes to facilitate troubleshooting which is what is happening here.
 <code lang="perl">
 my $log_file = "/var/tmp/send_email_runner.log";
 open(LOG,">>$log_file") or die "Can not open $log_file!";
@@ -91,7 +93,7 @@ So how does it now what to do to when it hits the work() function? Well, that is
 This is where we will put our work() function. <a href="https://metacpan.org/pod/TheSchwartz::Worker">TheSchwartz::Worker</a> page has some valuable information on using the 
 superclass as we will be doing in the below code.
 
-Here's the full script:
+Here's the full script:<br/>
 <include file="examples/use-theschwartz-2/lib/Worker/SendEmail.pm">
 
 This is the work() function that the runner script will execute. At the top of the script you will notice four values we are setting for the worker:
@@ -100,9 +102,9 @@ sub grab_for { 120 };
 sub max_retries { 30 };
 sub retry_delay { 60 };
 </code>
-grab_for = Timeout value for the job. After this time expires and the job hasn't completed or failed it assumes it has crashed and becomes available for another worker.
-max_retries = Number of times a worker should attempt to process any given job.
-retry_delay = Number of seconds to wait to retry a failed job again.
+<i>grab_for</i> = Timeout value for the job. After this time expires and the job hasn't completed or failed it assumes it has crashed and becomes available for another worker.<br/>
+<i>max_retries</i> = Number of times a worker should attempt to process any given job.<br/>
+<i>retry_delay</i> = Number of seconds to wait to retry a failed job again.<br/><br/>
 So in the above example, we will retry a failed job once a minute for half an hour, after which it will be permanently marked as failed and not attempted anymore.
 Again, we have added logging which can be crucial for troubleshooting whats going on in these worker bees.
 <code lang="perl">
@@ -114,13 +116,13 @@ open(LOG,">>$log_file") or die "Can not open $log_file!";
 }
 </code>
 
-As we enter the work() you'll notice we are passing in the arguments data that the job holds from the database record. 
+As we enter the work(), you'll notice we are passing in the arguments data that the job holds from the database record. 
 
 <code lang="perl">
 	my $args		= $job->arg;
 </code>
 
-Here's a database refresher:
+Here's a database refresher of our data:
 
 <code lang="shell">
 schwartz=# SELECT 
@@ -158,7 +160,7 @@ We are simplying grabbing those args values, setting them to some variables and 
 </code>
 
 Finally, the script creates the email and sends it out via the sendmail command. I know there are much better ways of doing this using email perl modules 
-such as <a href="https://metacpan.org/pod/Mail::Sendmail">Mail::Sendmail</a> but I wanted to keep things simple by not introducing any other tech.
+such as <a href="https://metacpan.org/pod/Mail::Sendmail">Mail::Sendmail</a> but I wanted to keep things simple by not introducing any other modules.
 <code lang="perl">
 	my $sendmail	= "/usr/sbin/sendmail -t";
 
@@ -197,10 +199,10 @@ schwartz=# select * from job;
 Now our final step will be to setup our worker runner to A) always run in the background and B) always startup when the system starts. To do this we will
 need to create a new systemd service. This is fairly straight forward to accomplish.
 
-Create the following file:
+Create the following file:<br/>
 <include file="examples/use-theschwartz-2/send_email.service">
 
-Get the service up and running.
+Get the service up and running:
 <code lang="shell">
 > sudo chmod 644 /etc/systemd/system/send_email.service
 > sudo systemctl daemon-reload
@@ -217,5 +219,7 @@ Here is a flow chart to give a clearer picture of how the whole process works:
 
 <h2>Conclusion</h2>
 This concludes the tutorial for setting up a queueing system using TheSchwartz. It's a pretty good system that proves to be reliable. I have used it in 
-the past to run many different types of runners concurrently on the same system without fail. Enjoy and may TheSchwartz be with you!
+the past to run many different types of runners concurrently on the same system without fail. Enjoy and may TheSchwartz be with you!<br/><br/>
+
+Related article: <a href="https://perlmaven.com/use-theschwartz">How to Use TheSchwartz Perl Module (Part 1)</a>
 
