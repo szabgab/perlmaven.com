@@ -1,0 +1,55 @@
+$VAR1 = {
+          'Distance (AU)' => '0.4',
+          'Mass' => '0.055',
+          'Planet name' => 'Mercury'
+        };
+$VAR1 = {
+          'Planet name' => 'Venus',
+          'Mass' => '0.815',
+          'Distance (AU)' => '0.7'
+        };
+$VAR1 = {
+          'Distance (AU)' => '1',
+          'Planet name' => 'Earth',
+          'Mass' => '1'
+        };
+$VAR1 = {
+          'Distance (AU)' => '1.5',
+          'Mass' => '0.107',
+          'Planet name' => 'Mars'
+        };
+$VAR1 = {
+          'Distance (AU)' => '2.77',
+          'Mass' => '0.00015',
+          'Planet name' => 'Ceres'
+        };
+$VAR1 = {
+          'Distance (AU)' => '5.2',
+          'Planet name' => 'Jupiter',
+          'Mass' => '318'
+        };
+$VAR1 = {
+          'Planet name' => 'Saturn',
+          'Mass' => '95',
+          'Distance (AU)' => '9.5'
+        };
+$VAR1 = {
+          'Mass' => '14',
+          'Planet name' => 'Uranus',
+          'Distance (AU)' => '19.6'
+        };
+$VAR1 = {
+          'Distance (AU)' => '30',
+          'Mass' => '17',
+          'Planet name' => 'Neptune'
+        };
+$VAR1 = {
+          'Planet name' => 'Pluto',
+          'Mass' => '0.00218',
+          'Distance (AU)' => '39'
+        };
+$VAR1 = {
+          'Distance (AU)' => '39',
+          'Planet name' => 'Charon',
+          'Mass' => '0.000254'
+        };
