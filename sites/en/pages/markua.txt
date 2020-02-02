@@ -28,7 +28,7 @@ The first few articles are available to everyone. The rest of the articles are o
     <li><a href="/process-the-six-headers-of-markua">Process the 6 headers of Markua</a></li>
     <li><a href="/refactor-test-cases-of-markua-parser">Refactor test cases of the Markua Parser in Perl 5</a></li>
     <li><a href="/collecting-errors-while-parsing-markua">Collecting errors while parsing Markua in Perl 5 - disregarding empty rows</a></li>
-    <li><a href="/pro/get-coveralls-notify-when-test-coverage-shrinks">Get Coveralls to notify when test-coverage shrinks</a></li>
+    <li><a href="/get-coveralls-notify-when-test-coverage-shrinks">Get Coveralls to notify when test-coverage shrinks</a></li>
     <li><a href="/pro/consider-everything-to-be-a-paragraph-in-markua">Consider everything not recognizable as a paragraph in Markua</a></li>
     <li><a href="/pro/markua-resources-include-files">Markua resources: Include files</a></li>
     <li><a href="/pro/generate-test-expectations-for-markua-parser">Generate test expectations for the Markua parser</a></li>
