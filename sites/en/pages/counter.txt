@@ -1,6 +1,6 @@
 =title Counter Examples
 =timestamp 2015-03-28T15:40:01
-=indexes 
+=indexes counter
 =status show
 =books counter
 =author szabgab
