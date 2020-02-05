@@ -27,9 +27,16 @@ while ( my $file = $it->() ) {
 	# is this a reasonable test, or will this be always true?
 	my @warns;
 	local $SIG{__WARN__} = sub { push @warns, @_ };
-	my $enc_utf8 = guess_encoding(path($file)->slurp_utf8);
+    my $content = path($file)->slurp_utf8;
+	my $enc_utf8 = guess_encoding($content);
 	is ref $enc_utf8, 'Encode::utf8', "slurp_utf8 $file";
 	is scalar @warns, 0, "no warnings for slurp_utf8 $file" or diag explain @warns;
+    if ($content =~ /\t/) {
+        fail("there are tabs in $file");
+    }
+    if ($content =~ /\s$/m) {
+        fail("there trailing spaces in $file");
+    }
 
 	undef @warns;
 	my $enc = guess_encoding(path($file)->slurp);

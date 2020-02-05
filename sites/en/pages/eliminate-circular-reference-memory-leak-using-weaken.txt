@@ -25,7 +25,7 @@ sub create_pair {
     my %x;
     my %y;
     $x{other} = \%y;
-	$y{other} = \%x;
+    $y{other} = \%x;
 
     return;
 }
@@ -49,8 +49,8 @@ sub create_pair {
     my %x;
     my %y;
     $x{other} = \%y;
-	$y{other} = \%x;
-	weaken $y{other};
+    $y{other} = \%x;
+    weaken $y{other};
 
     return;
 }
@@ -88,8 +88,8 @@ sub create_pair {
     my %x;
     my %y;
     $x{other} = \%y;
-	$y{other} = \%x;
-	#weaken $y{other};
+    $y{other} = \%x;
+    #weaken $y{other};
 
     return;
 }
