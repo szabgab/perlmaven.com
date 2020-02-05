@@ -47,7 +47,7 @@ my $EOL   = "\015\012";
 
 sub process_request {
     print "Welcome to the Echo server, please type in some text and press enter. Say 'bye' if you want to leave$EOL";
-	print STDERR "New user connected\n";
+    print STDERR "New user connected\n";
     eval {
         local $SIG{ALRM} = sub { die "Timeout\n" };
 
@@ -58,12 +58,12 @@ sub process_request {
             print qq(You said "$line"$EOL);
             last if $line eq "bye";
         }
-    	alarm(0);
+        alarm(0);
     };
-	my $err = $@;
+    my $err = $@;
     alarm(0);
     if ( $err ) {
-		chomp $err;
+        chomp $err;
         if ( $err eq 'Timeout' ) {
             print "Timed Out. Disconnecting...$EOL";
             print STDERR "Client timed Out.\n";
@@ -172,7 +172,7 @@ from the client, we immediately set the <hl>alarm(0)</hl>. This will turn off ou
             print qq(You said "$line"$EOL);
             last if $line eq "bye";
         }
-    	alarm(0);
+        alarm(0);
     };
 </code>
 
@@ -198,10 +198,10 @@ some other exception occurred. (Which is very unlikely in our simple example, bu
 in more complex code.)
 
 <code lang="perl">
-	my $err = $@;
+    my $err = $@;
     alarm(0);
     if ( $err ) {
-		chomp $err;
+        chomp $err;
         if ( $err eq 'Timeout' ) {
             print "Timed Out. Disconnecting...$EOL";
             print STDERR "Client timed Out.\n";

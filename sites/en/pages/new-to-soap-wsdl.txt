@@ -94,8 +94,8 @@ print "$sesstoken \n";
 print "\n ... going to send a keepAlive\n";
 # $bfs->no_dispatch( 1 );
 my $resp = $bfs->keepAlive (
-	{ request => { header => { sessionToken => $sesstoken } } }
-    );
+    { request => { header => { sessionToken => $sesstoken } } }
+);
 
 die $resp if not $resp;
 print $resp;
@@ -109,8 +109,8 @@ this will give you following output:
 
 
 <code>
-dom@dom-inspiron:~/Soap-Wsdl-Betfair/sources/w2p$ perl ../test3.pl                                
-                                                         
+dom@dom-inspiron:~/Soap-Wsdl-Betfair/sources/w2p$ perl ../test3.pl
+
  ... going to log in now!
 <loginResponse xmlns="http://www.betfair.com/publicapi/v3/BFGlobalService/"><Result><header xmlns="
 "><errorCode>OK</errorCode><minorErrorCode xmlns=""></minorErrorCode><sessionToken xmlns="">tiZEmQ
