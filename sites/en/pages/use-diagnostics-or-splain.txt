@@ -63,9 +63,9 @@ Illegal division by zero at x.pl line 4 (#1)
     (F) You tried to divide a number by 0.  Either something was wrong in
     your logic, or you need to put a conditional in to guard against
     meaningless input.
-    
+
 Uncaught exception from user code:
-	Illegal division by zero at x.pl line 4.
+    Illegal division by zero at x.pl line 4.
 </code>
 
 
@@ -82,7 +82,7 @@ perl x.pl 2> x.err
 The we run:
 
 <code>
-splain x.err 
+splain x.err
 </code>
 
 It will print

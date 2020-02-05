@@ -70,11 +70,11 @@ use 5.010;
 $/ = 'perl';
 open my $fh, '<', 'data.txt' or die;
 while (my $row = <$fh>) {
-	say $row;
-	say '---';
-	chomp $row;
-	say $row;
-	say '==========';
+    say $row;
+    say '---';
+    chomp $row;
+    say $row;
+    say '==========';
 }
 </code>
 

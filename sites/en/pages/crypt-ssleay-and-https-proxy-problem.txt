@@ -38,19 +38,19 @@ On a stock ubuntu 12.04 this script fails with:
 <code lang="perl">
 $VAR1 = 'read failed:  at /usr/share/perl5/Net/HTTP/Methods.pm line 256
  at /usr/lib/perl5/Net/SSL.pm line 210
-	Net::SSL::die_with_error(\'LWP::Protocol::https::Socket=GLOB(0x13ce178)\', \'read failed\') called at /usr/lib/perl5/Net/SSL.pm line 223
-	Net::SSL::read(\'LWP::Protocol::https::Socket=GLOB(0x13ce178)\', \'\', 1024, 0) called at /usr/share/perl5/Net/HTTP/Methods.pm line 256
-	Net::HTTP::Methods::my_readline(\'LWP::Protocol::https::Socket=GLOB(0x13ce178)\', \'Status\') called at /usr/share/perl5/Net/HTTP/Methods.pm line 343
-	Net::HTTP::Methods::read_response_headers(\'LWP::Protocol::https::Socket=GLOB(0x13ce178)\', \'laxed\', 1, \'junk_out\', \'ARRAY(0x13a5d78)\') called at /usr/share/perl5/LWP/Protocol/http.pm line 378
-	LWP::Protocol::http::request(\'LWP::Protocol::https=HASH(0x1379f70)\', \'HTTP::Request=HASH(0x13460a8)\', undef, undef, undef, 180) called at /usr/share/perl5/LWP/UserAgent.pm line 192
-	eval {...} called at /usr/share/perl5/LWP/UserAgent.pm line 191
-	LWP::UserAgent::send_request(\'WWW::Mechanize=HASH(0x12505d0)\', \'HTTP::Request=HASH(0x13460a8)\', undef, undef) called at /usr/share/perl5/LWP/UserAgent.pm line 274
-	LWP::UserAgent::simple_request(\'WWW::Mechanize=HASH(0x12505d0)\', \'HTTP::Request=HASH(0x13460a8)\', undef, undef) called at /usr/share/perl5/LWP/UserAgent.pm line 282
-	LWP::UserAgent::request(\'WWW::Mechanize=HASH(0x12505d0)\', \'HTTP::Request=HASH(0x13460a8)\') called at /usr/share/perl5/WWW/Mechanize.pm line 2503
-	WWW::Mechanize::_make_request(\'WWW::Mechanize=HASH(0x12505d0)\', \'HTTP::Request=HASH(0x13460a8)\') called at /usr/share/perl5/WWW/Mechanize.pm line 2217
-	WWW::Mechanize::request(\'WWW::Mechanize=HASH(0x12505d0)\', \'HTTP::Request=HASH(0x13460a8)\') called at /usr/share/perl5/LWP/UserAgent.pm line 410
-	LWP::UserAgent::get(\'WWW::Mechanize=HASH(0x12505d0)\', \'https://10.8.142.7\') called at /usr/share/perl5/WWW/Mechanize.pm line 407
-	WWW::Mechanize::get(\'WWW::Mechanize=HASH(0x12505d0)\', \'https://10.8.142.7\') called at ./ssl.pl line 27
+    Net::SSL::die_with_error(\'LWP::Protocol::https::Socket=GLOB(0x13ce178)\', \'read failed\') called at /usr/lib/perl5/Net/SSL.pm line 223
+    Net::SSL::read(\'LWP::Protocol::https::Socket=GLOB(0x13ce178)\', \'\', 1024, 0) called at /usr/share/perl5/Net/HTTP/Methods.pm line 256
+    Net::HTTP::Methods::my_readline(\'LWP::Protocol::https::Socket=GLOB(0x13ce178)\', \'Status\') called at /usr/share/perl5/Net/HTTP/Methods.pm line 343
+    Net::HTTP::Methods::read_response_headers(\'LWP::Protocol::https::Socket=GLOB(0x13ce178)\', \'laxed\', 1, \'junk_out\', \'ARRAY(0x13a5d78)\') called at /usr/share/perl5/LWP/Protocol/http.pm line 378
+    LWP::Protocol::http::request(\'LWP::Protocol::https=HASH(0x1379f70)\', \'HTTP::Request=HASH(0x13460a8)\', undef, undef, undef, 180) called at /usr/share/perl5/LWP/UserAgent.pm line 192
+    eval {...} called at /usr/share/perl5/LWP/UserAgent.pm line 191
+    LWP::UserAgent::send_request(\'WWW::Mechanize=HASH(0x12505d0)\', \'HTTP::Request=HASH(0x13460a8)\', undef, undef) called at /usr/share/perl5/LWP/UserAgent.pm line 274
+    LWP::UserAgent::simple_request(\'WWW::Mechanize=HASH(0x12505d0)\', \'HTTP::Request=HASH(0x13460a8)\', undef, undef) called at /usr/share/perl5/LWP/UserAgent.pm line 282
+    LWP::UserAgent::request(\'WWW::Mechanize=HASH(0x12505d0)\', \'HTTP::Request=HASH(0x13460a8)\') called at /usr/share/perl5/WWW/Mechanize.pm line 2503
+    WWW::Mechanize::_make_request(\'WWW::Mechanize=HASH(0x12505d0)\', \'HTTP::Request=HASH(0x13460a8)\') called at /usr/share/perl5/WWW/Mechanize.pm line 2217
+    WWW::Mechanize::request(\'WWW::Mechanize=HASH(0x12505d0)\', \'HTTP::Request=HASH(0x13460a8)\') called at /usr/share/perl5/LWP/UserAgent.pm line 410
+    LWP::UserAgent::get(\'WWW::Mechanize=HASH(0x12505d0)\', \'https://10.8.142.7\') called at /usr/share/perl5/WWW/Mechanize.pm line 407
+    WWW::Mechanize::get(\'WWW::Mechanize=HASH(0x12505d0)\', \'https://10.8.142.7\') called at ./ssl.pl line 27
 </code>
 
 I then tried upgrading Crypt::SSleay via cpanm to version 0.64. After upgrading my little script just blocks forever.

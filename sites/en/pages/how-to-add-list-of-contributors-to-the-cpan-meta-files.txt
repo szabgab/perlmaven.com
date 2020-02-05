@@ -50,7 +50,7 @@ already has this in the call of WriteMakefile:
         'Foo Bar <foo@bar.com>',
         'Zorg <zorg@cpan.org>',
        ],
-	},
+    },
 </code>
 
 <h2>Module::Build</h2>

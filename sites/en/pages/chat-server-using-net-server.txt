@@ -194,7 +194,7 @@ sub mux_close {
     my ($self, $mux, $fh) = @_;
 
     if (exists $self->{peerport}) {
-    	print $fh "Goodbye$EOL"; # pointless call
+        print $fh "Goodbye$EOL"; # pointless call
         my $peer = "$self->{peeraddr}:$self->{peerport}";
         print STDERR "DEBUG: Client [$peer] closed connection!\n";
     }

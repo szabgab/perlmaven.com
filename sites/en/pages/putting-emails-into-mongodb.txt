@@ -63,7 +63,7 @@ or, if the From field was missing or could not be recognized, aborted the curren
 
 As I noticed some (and strangely not all) the mail boxes have one e-mail at the beginning of the
 box holding some internal data. Later I'll have to investigate why is the difference, but for now
-let's just filter out these messages: 
+let's just filter out these messages:
 
 <code lang="perl">
     if ($from[0]->name eq 'Mail System Internal Data') {
@@ -75,9 +75,9 @@ let's just filter out these messages:
 
 Now that we have the sender addresses from all the messages, let's start putting the data in MongoDB.
 
-We load the <a href="https://metacpan.org/pod/MongoDB">perl driver to MongoDB</a>, connect to the server using the 
+We load the <a href="https://metacpan.org/pod/MongoDB">perl driver to MongoDB</a>, connect to the server using the
 <a href="https://metacpan.org/pod/MongoDB::MongoClient">MongoDB::MongoClient</a>.
-Then we need to select the database using the <hl>get_database</hl> method. 
+Then we need to select the database using the <hl>get_database</hl> method.
 (In MongoDB we don't need to create a database. It is enough just to add some data to it and
 the MongoDB server will automatically create the database as well.)
 
@@ -175,7 +175,7 @@ In this script the user can type in a string that will be used as a regular expr
 against the e-mail addresses in the database.
 The <hl>find</hl> method receives the search path - the keys in the hash structure separated by dots -
 and a regular expression to match against the field. The <hl>next</hl> calls in the iterator will
-return the next document as we inserted in the other script. 
+return the next document as we inserted in the other script.
 
 In addition to the actual data we inserted, each hash also contains a key <hl>_id</hl> holding a
 MongoDB::OID object. That's the unique id of the document.
@@ -241,39 +241,39 @@ my $count = 0;
 my $rule = Path::Iterator::Rule->new;
 my $it = $rule->iter( $path_to_dir );
 while ( my $file = $it->() ) {
-	next if not -f $file;
-	say $file;
-	my $folder = Email::Folder->new($file);
-	while (my $msg = $folder->next_message) {  # Email::Simple objects
-		$count++;
-		my $from_string = $msg->header('From');
+    next if not -f $file;
+    say $file;
+    my $folder = Email::Folder->new($file);
+    while (my $msg = $folder->next_message) {  # Email::Simple objects
+        $count++;
+        my $from_string = $msg->header('From');
         if (not defined $from_string) {
-			warn "There is no From field in this message";
-			next;
-		}
-		my @from = Email::Address->parse($from_string);
-		if (@from > 1) {
-			warn "Strange, there were more than one emails recognized in the From field: " . $msg->header('From');
-		}
-		if (not @from) {
-			warn "Very strange. No email in the From field! " . $msg->header('From');
-			next;
-		}
-		say $from[0]->address;
-		say $from[0]->name;
-		if ($from[0]->name eq 'Mail System Internal Data') {
-			next;
-		}
-		my %doc = (
-			From => {
-				name => $from[0]->name,
-				address => $from[0]->address,
-			},
-			Subject => $msg->header('Subject'),
-		);
-		$collection->insert(\%doc);
-		exit if $count > 20;
-	}
+            warn "There is no From field in this message";
+            next;
+        }
+        my @from = Email::Address->parse($from_string);
+        if (@from > 1) {
+            warn "Strange, there were more than one emails recognized in the From field: " . $msg->header('From');
+        }
+        if (not @from) {
+            warn "Very strange. No email in the From field! " . $msg->header('From');
+            next;
+        }
+        say $from[0]->address;
+        say $from[0]->name;
+        if ($from[0]->name eq 'Mail System Internal Data') {
+            next;
+        }
+        my %doc = (
+            From => {
+                name => $from[0]->name,
+                address => $from[0]->address,
+            },
+            Subject => $msg->header('Subject'),
+        );
+        $collection->insert(\%doc);
+        exit if $count > 20;
+    }
 }
 say $count;
 </code>

@@ -64,7 +64,7 @@ saves it to the <b>/tmp</b> directory an unzips it.
 
 The script uses <a href="https://metacpan.org/pod/WWW::Mechanize">WWW::Mechanize</a> module to fetch the HTML page of MetaCPAN
 
-Get the parameter from the command line. Exit with an error message if there was not parameter on the command line.: 
+Get the parameter from the command line. Exit with an error message if there was not parameter on the command line.:
 
 <code lang="perl">
 my $url = shift or die "Usage: $0 URL\n";
@@ -78,9 +78,9 @@ site and then containing letters, numbers and some extra characters.
 <code lang="perl">
 my $name;
 if ($url =~ m{^https://metacpan.org/pod/([a-zA-Z0-9:]+)$}) {
-	$name = $1;
+    $name = $1;
 } elsif ($url =~ m{^https://metacpan.org/release/([a-zA-Z0-9-]+)$}) {
-	$name = $1;
+    $name = $1;
 }
 </code>
 
@@ -127,8 +127,8 @@ Apparently we have already downloaded this version of this  distribution:
 <code lang="perl">
 my $path = "$dir/$file";
 if (-e $path) {
-	say "Already downloaded to $path";
-	exit;
+    say "Already downloaded to $path";
+    exit;
 }
 </code>
 

@@ -154,204 +154,204 @@ Can any 1 please help in in this regard i am attaching the snipet of code dealin
 
 <code lang="perl">
 for ($j=1; $j<=$col1; $j++) {
-			for ($i=1; $i<=$row1; $i++) {
-				if ($ram1->Cells($i,$j)->{Value} =~ /^.*$table[$z].*$/) {
-					print "$i\t$j...\n";
-					$sheet = $ram1;
-					my $thread1 =  threads->new( &table11,$i,$j,$k,$l,$sheet,$ram1);
-		            $retval1 = $thread1->detach();
-					print"Going in table11 thread\n";
-					#table11 ($i,$j,$k,$l,$sheet);
-					last;
-				}
-			}
-		}
+            for ($i=1; $i<=$row1; $i++) {
+                if ($ram1->Cells($i,$j)->{Value} =~ /^.*$table[$z].*$/) {
+                    print "$i\t$j...\n";
+                    $sheet = $ram1;
+                    my $thread1 =  threads->new( &table11,$i,$j,$k,$l,$sheet,$ram1);
+                    $retval1 = $thread1->detach();
+                    print"Going in table11 thread\n";
+                    #table11 ($i,$j,$k,$l,$sheet);
+                    last;
+                }
+            }
+        }
 
 
 sub req {
 
-	$a = $_[0];
-	$b = $_[1];
-	$c = $_[2];
-	$d = $_[3];
-	$sheet = $_[4];
+    $a = $_[0];
+    $b = $_[1];
+    $c = $_[2];
+    $d = $_[3];
+    $sheet = $_[4];
 
-	$a1 = $a+2;
-	$b1 = $b;
-	$c1 = $c+2;
-	$d1 = $d+1;
+    $a1 = $a+2;
+    $b1 = $b;
+    $c1 = $c+2;
+    $d1 = $d+1;
 
-	print "req $c1\t$d1\n";
+    print "req $c1\t$d1\n";
 
-	if ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*US.*$/) {
+    if ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*US.*$/) {
 
-		while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
-			$ram3->Cells($c1++,$d1)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
-		}
-	}elsif ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*DS.*$/) {
-		while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
-			$ram3->Cells($c1++,$d1+1)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
-		}
-		}
+        while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
+            $ram3->Cells($c1++,$d1)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
+        }
+    }elsif ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*DS.*$/) {
+        while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
+            $ram3->Cells($c1++,$d1+1)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
+        }
+        }
     }
 
 sub table11 {
 #    local $i,$j,$k,$l,$sheet;
-#	$a = i;
-#	local$b = $j;
-#	$c = $k;
-#	$d = $l;
-#	$sheet = $sheet;
-#	local $a = $_[0];
-#	local $b = $_[1];
-#	local $c = $_[2];
-#	local $d = $_[3];
-#	local $sheet = $_[4];
+#    $a = i;
+#    local$b = $j;
+#    $c = $k;
+#    $d = $l;
+#    $sheet = $sheet;
+#    local $a = $_[0];
+#    local $b = $_[1];
+#    local $c = $_[2];
+#    local $d = $_[3];
+#    local $sheet = $_[4];
 
-     $a = $_[0];
-	 $b = $_[1];
-	 $c = $_[2];
-	 $d = $_[3];
-	 $sheet = $_[4];
-
-
-	print "table11 $c\t$d\n";
-
-	# For copying the loop lengths
-	$a1 = $a+2;
-	$c1 = $c+2;
-
-	while ($sheet->Cells($a1,$b)->{Value} !~ /^\s*$/) {
-		$ram3->Cells($c1++,$d)->{Value} = $sheet->Cells($a1++,$b)->{Value};
-	}
-
-	# For copying the required data rates...
-	$b1 = $b;
-
-	while ($sheet->Cells($a,$b1)->{Value} !~ /^\s*$/) {
-		if (($sheet->Cells($a,$b1)->{Value} =~ /^.*Req.*$/) && ($sheet == $ram1)) {
-			my $thread2 =  threads->new( \&req,$a,$b1,$c,$d,$sheet);
-			$retval2 = $thread2->detach();
-			#$retval = $thread1->eval;   # catch join errors
-
-		}
-
-		elsif ($sheet->Cells($a,$b1)->{Value} =~ /^.*Act.*$/) {
-
-			my $thread3 =  threads->new( \&act ,$a,$b1,$c,$d,$sheet);
-			$retva3 = $thread3->detach;   # catch join errors
-			#act ($a,$b1,$c,$d,$sheet);
-
-		} elsif ($sheet->Cells($a,$b1)->{Value} =~ /^.*Mrg.*$/) {
-		   my $thread4 =  threads->new( \&mrg ,$a,$b1,$c,$d,$sheet);
-		   $retva3 = $thread4->detach();   # catch join errors
-			#mrg ($a,$b1,$c,$d,$sheet);
-
-		}
-
-		$b1++;
-
-	}
+    $a = $_[0];
+    $b = $_[1];
+    $c = $_[2];
+    $d = $_[3];
+    $sheet = $_[4];
 
 
+    print "table11 $c\t$d\n";
 
-	$ram1 -> Activate;
-	$ram1 -> Cells(2,1) -> Select;
-	$ram2 -> Activate;
-	$ram2 -> Cells(2,1) -> Select;
-	$ram3 -> Activate;
-	$ram3 -> Cells(2,1) -> Select;
+    # For copying the loop lengths
+    $a1 = $a+2;
+    $c1 = $c+2;
 
-	# Output file path...
-	$fille11 ="test_danube";
-	$oldfirm = "Amz";
-	$comp = $file11."-".$oldfirm.".xls";
-	$workbook3->SaveAs($comp);
-	$workbook3->Close;
+    while ($sheet->Cells($a1,$b)->{Value} !~ /^\s*$/) {
+        $ram3->Cells($c1++,$d)->{Value} = $sheet->Cells($a1++,$b)->{Value};
+    }
 
-	$workbook->Save;
-	$workbook->Close;
+    # For copying the required data rates...
+    $b1 = $b;
 
-	$workbook1->Save;
-	$workbook1->Close;
+    while ($sheet->Cells($a,$b1)->{Value} !~ /^\s*$/) {
+        if (($sheet->Cells($a,$b1)->{Value} =~ /^.*Req.*$/) && ($sheet == $ram1)) {
+            my $thread2 =  threads->new( \&req,$a,$b1,$c,$d,$sheet);
+            $retval2 = $thread2->detach();
+            #$retval = $thread1->eval;   # catch join errors
 
-	$workbook2->Save;
-	$workbook2->Close;
+        }
 
-	$application->Quit(); # leave excel
-	undef $application;
-	undef $workbook1;
-	undef $workbook,
-	undef $workbook2;
-	undef $workbook3;
+        elsif ($sheet->Cells($a,$b1)->{Value} =~ /^.*Act.*$/) {
 
-	print "\nAnnex-A NA Comparison finished.....\n";
+            my $thread3 =  threads->new( \&act ,$a,$b1,$c,$d,$sheet);
+            $retva3 = $thread3->detach;   # catch join errors
+            #act ($a,$b1,$c,$d,$sheet);
+
+        } elsif ($sheet->Cells($a,$b1)->{Value} =~ /^.*Mrg.*$/) {
+           my $thread4 =  threads->new( \&mrg ,$a,$b1,$c,$d,$sheet);
+           $retva3 = $thread4->detach();   # catch join errors
+            #mrg ($a,$b1,$c,$d,$sheet);
+
+        }
+
+        $b1++;
+
+    }
+
+
+
+    $ram1 -> Activate;
+    $ram1 -> Cells(2,1) -> Select;
+    $ram2 -> Activate;
+    $ram2 -> Cells(2,1) -> Select;
+    $ram3 -> Activate;
+    $ram3 -> Cells(2,1) -> Select;
+
+    # Output file path...
+    $fille11 ="test_danube";
+    $oldfirm = "Amz";
+    $comp = $file11."-".$oldfirm.".xls";
+    $workbook3->SaveAs($comp);
+    $workbook3->Close;
+
+    $workbook->Save;
+    $workbook->Close;
+
+    $workbook1->Save;
+    $workbook1->Close;
+
+    $workbook2->Save;
+    $workbook2->Close;
+
+    $application->Quit(); # leave excel
+    undef $application;
+    undef $workbook1;
+    undef $workbook,
+    undef $workbook2;
+    undef $workbook3;
+
+    print "\nAnnex-A NA Comparison finished.....\n";
 
   }
-	sub mrg {
+    sub mrg {
 
-	$a = $_[0];
-	$b = $_[1];
-	$c = $_[2];
-	$d = $_[3];
-	$sheet = $_[4];
-	$a1 = $a+2;
+    $a = $_[0];
+    $b = $_[1];
+    $c = $_[2];
+    $d = $_[3];
+    $sheet = $_[4];
+    $a1 = $a+2;
 
-	$b1 = $b;
+    $b1 = $b;
 
-	$c1 = $c+2;
+    $c1 = $c+2;
 
-	$d1 = $d+9;
+    $d1 = $d+9;
 
-	if ($sheet == $ram2) {
-		$d1++;
-	}
+    if ($sheet == $ram2) {
+        $d1++;
+    }
 
-	print "mrg $c1\t$d1\n";
+    print "mrg $c1\t$d1\n";
 
-	if ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*US.*$/) {
-		while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
-			$ram3->Cells($c1++,$d1)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
-		}
-	} elsif ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*DS.*$/) {
-		while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
-			$ram3->Cells($c1++,$d1+3)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
-		}
-	}
+    if ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*US.*$/) {
+        while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
+            $ram3->Cells($c1++,$d1)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
+        }
+    } elsif ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*DS.*$/) {
+        while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
+            $ram3->Cells($c1++,$d1+3)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
+        }
+    }
 }
 # For the actual data rate fields
 sub act {
 
 
-	$a = $_[0];
-	$b = $_[1];
-	$c = $_[2];
-	$d = $_[3];
-	$sheet = $_[4];
+    $a = $_[0];
+    $b = $_[1];
+    $c = $_[2];
+    $d = $_[3];
+    $sheet = $_[4];
 
-	$a1 = $a+2;
+    $a1 = $a+2;
 
-	$b1 = $b;
+    $b1 = $b;
 
-	$c1 = $c+2;
+    $c1 = $c+2;
 
-	$d1 = $d+3;
+    $d1 = $d+3;
 
-	if ($sheet == $ram2) {
-		$d1++;
-	}
+    if ($sheet == $ram2) {
+        $d1++;
+    }
 
-	print "act $c1\t$d1\n";
+    print "act $c1\t$d1\n";
 
-	if ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*US.*$/) {
-		while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
-			$ram3->Cells($c1++,$d1)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
-		}
-	} elsif ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*DS.*$/) {
-		while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
-			$ram3->Cells($c1++,$d1+3)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
-		}
-	}
+    if ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*US.*$/) {
+        while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
+            $ram3->Cells($c1++,$d1)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
+        }
+    } elsif ($sheet->Cells(($a+1),$b)->{Value} =~ /^.*DS.*$/) {
+        while ($sheet->Cells($a1,$b1)->{Value} !~ /^\s*$/) {
+            $ram3->Cells($c1++,$d1+3)->{Value} = $sheet->Cells($a1++,$b1)->{Value};
+        }
+    }
 }
 </code>
 

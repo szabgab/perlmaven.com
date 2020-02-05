@@ -19,7 +19,7 @@ It complained about several things. We are going to deal with these issues now.
 One of the issues reported by perlcritic was the pair  <hl>Bareword file handles</hl> and <hl>Two-argument "open"</hl> in <hl>lib/Pod/Tree/PerlDist.pm</hl>
 They are somewhat related.  I agree that one should <a href="/always-use-3-argument-open">always use the 3-argument open</a>, so that's the first step now.
 
-Instead of 
+Instead of
 
 <code lang="perl">
 open( FILE, $source )
@@ -104,7 +104,7 @@ t/95-tidyall.t .. 1/40 # [checked] lib/Pod/Tree/HTML.pm
 # *** needs tidying
 # Looks like you failed 2 tests of 40.
 t/95-tidyall.t .. Dubious, test returned 2 (wstat 512, 0x200)
-Failed 2/40 subtests 
+Failed 2/40 subtests
 </code>
 
 This means I have to run <hl>tidyall -a</hl> to let it rearrange the code.
@@ -258,7 +258,7 @@ my %skip = map { ( $_ => 1 ) } qw(
 my @files = grep { !$skip{$_} } ( Perl::Critic::Utils::all_perl_files(qw( Makefile.PL bin lib t )) );
 
 foreach my $file (@files) {
-	critic_ok( $file, $file );
+    critic_ok( $file, $file );
 }
 
 done_testing();
@@ -287,11 +287,11 @@ If I run <hl>prove t/96-perl-critic.t</hl> I get a rather verbose (level 11) ver
 saw earlier.
 
 <code>
-air:Pod-Tree gabor$ prove t/96-perl-critic.t 
-t/96-perl-critic.t .. 1/? 
+air:Pod-Tree gabor$ prove t/96-perl-critic.t
+t/96-perl-critic.t .. 1/?
 #   Failed test 'Makefile.PL'
 #   at t/96-perl-critic.t line 20.
-# 
+#
 #   Code before strictures are enabled at line 6, near 'WriteMakefile('.
 #   TestingAndDebugging::RequireUseStrict (Severity: 5)
 #     Using strictures is probably the single most effective way to improve
@@ -299,17 +299,17 @@ t/96-perl-critic.t .. 1/?
 #     statement must come before any other statements except `package',
 #     `require', and other `use' statements. Thus, all the code in the entire
 #     package will be affected.
-# 
+#
 #     There are special exemptions for Moose, Moose::Role, and
 #     Moose::Util::TypeConstraints because they enforces strictness; e.g.
 #     `'use Moose'' is treated as equivalent to `'use strict''.
-# 
+#
 #     The maximum number of violations per document for this policy defaults
 #     to 1.
-t/96-perl-critic.t .. 16/? 
+t/96-perl-critic.t .. 16/?
 #   Failed test 't/pod2html.d/values.pl'
 #   at t/96-perl-critic.t line 20.
-# 
+#
 #   Code before strictures are enabled at line 1, near '$Pod::Tree::HTML::color = 'black';'.
 #   TestingAndDebugging::RequireUseStrict (Severity: 5)
 #     Using strictures is probably the single most effective way to improve
@@ -317,16 +317,16 @@ t/96-perl-critic.t .. 16/?
 #     statement must come before any other statements except `package',
 #     `require', and other `use' statements. Thus, all the code in the entire
 #     package will be affected.
-# 
+#
 #     There are special exemptions for Moose, Moose::Role, and
 #     Moose::Util::TypeConstraints because they enforces strictness; e.g.
 #     `'use Moose'' is treated as equivalent to `'use strict''.
-# 
+#
 #     The maximum number of violations per document for this policy defaults
 #     to 1.
 #   Failed test 't/pods2html.d/values.pl'
 #   at t/96-perl-critic.t line 20.
-# 
+#
 #   Code before strictures are enabled at line 1, near '$Pod::Tree::HTML::color = 'black';'.
 #   TestingAndDebugging::RequireUseStrict (Severity: 5)
 #     Using strictures is probably the single most effective way to improve
@@ -334,16 +334,16 @@ t/96-perl-critic.t .. 16/?
 #     statement must come before any other statements except `package',
 #     `require', and other `use' statements. Thus, all the code in the entire
 #     package will be affected.
-# 
+#
 #     There are special exemptions for Moose, Moose::Role, and
 #     Moose::Util::TypeConstraints because they enforces strictness; e.g.
 #     `'use Moose'' is treated as equivalent to `'use strict''.
-# 
+#
 #     The maximum number of violations per document for this policy defaults
 #     to 1.
 t/96-perl-critic.t .. 32/? # Looks like you failed 3 tests of 36.
 t/96-perl-critic.t .. Dubious, test returned 3 (wstat 768, 0x300)
-Failed 3/36 subtests 
+Failed 3/36 subtests
 </code>
 
 

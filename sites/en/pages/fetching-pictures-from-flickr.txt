@@ -17,7 +17,7 @@ you to connect to it. <a href="http://iamcal.com/">Cal Henderson</a> created the
 
 <h2>Version</h2>
 
-The code of this article was tested with version 1.08 of 
+The code of this article was tested with version 1.08 of
 <a href="http://metacpan.org/pod/Flickr::API">Flickr::API</a>.
 
 <h2>Getting the API key</h2>
@@ -26,7 +26,7 @@ Visit the <a href="http://www.flickr.com/services/">Flickr App Garden</a>,
 log in with your Yahoo account and ask for an API key:
 
 Click on <a href="http://www.flickr.com/services/apps/create/">Create an app</a>,
-there click on <a href="http://www.flickr.com/services/apps/create/apply/">Request an API Key</a> 
+there click on <a href="http://www.flickr.com/services/apps/create/apply/">Request an API Key</a>
 
 You will have to select if it is for non-commercial/SMB,
 or if you are big corp/big money.
@@ -80,15 +80,15 @@ my $request = Flickr::API::Request->new({
 my $response = $api->execute_request($request);
 </code>
 
-The <hl>$response</hl> is a 
+The <hl>$response</hl> is a
 <a href="https://metacpan.org/pod/Flickr::API::Response">Flickr::API::Response</a>
 object which is a subclass of
 <a href="https://metacpan.org/pod/HTTP::Response">HTTP::Response</a>,
-with a few extra keys in the hash: <hl>tree</hl>, <hl>success</hl>, 
+with a few extra keys in the hash: <hl>tree</hl>, <hl>success</hl>,
 <hl>error_code</hl>, and <hl>error_message</hl>.
 
 <hl>success</hl> is either <a href="/boolean-values-in-perl">True or False</a>.
- 
+
 The <hl>tree</hl> is the result of parsing by
 <a href="http://metacpan.org/module/XML::Parser::Lite::Tree">XML::Parser::Lite::Tree</a>,
 which has some strange behavior that makes it a bit difficult to use the module.
@@ -177,7 +177,7 @@ actual image:
         $attr->{farm}, $attr->{server}, $attr->{id}, $attr->{secret});
     say $url;
 </code>
- 
+
 <h2>Get the sizes</h2>
 
 Instead of that we can use another query to fetch the available sizes
@@ -280,7 +280,7 @@ foreach my $img (@images) {
     my ($smallest) = sort { $a->{attributes}{height} <=> $b->{attributes}{height} } @sizes;
 
     # get the last part of the URL which is the filename
-	my ($file) = ($smallest->{attributes}{source} =~ m{([^/]*)$});
+    my ($file) = ($smallest->{attributes}{source} =~ m{([^/]*)$});
 
     say "$smallest->{attributes}{source}, $dir/$file";
     getstore($smallest->{attributes}{source}, "$dir/$file");

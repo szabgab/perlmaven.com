@@ -53,7 +53,7 @@ The code that implements the actual change looks like this:
 After 2 lines of very basic input validation we call the
 <hl>update</hl> method on the <b>collection</b>. It receives
 two hash references as parameters. The first one selects the
-documents that need to be updated. 
+documents that need to be updated.
 <hl>{ name => $self->name }</hl> means to select the document
 with the given name.
 
@@ -66,7 +66,7 @@ That's it.
 
 <h2>Duplicate people</h2>
 
-By default MongoDB does not enforce uniqueness on the documents, 
+By default MongoDB does not enforce uniqueness on the documents,
 so we can add several people called Borg:
 
 <code>
@@ -105,11 +105,11 @@ Setting the <hl>multiple</hl> option to be true will tell MongoDB to update all
 the documents that match the criteria.
 
 <code lang="perl">
-		$people_coll->update(
-			{ name => $self->name },
-			{ '$set' => { phone => $self->phone }},
-			{ multiple => 1 },
-		);
+        $people_coll->update(
+            { name => $self->name },
+            { '$set' => { phone => $self->phone }},
+            { multiple => 1 },
+        );
 </code>
 
 See also the MongoDB reference about
@@ -133,13 +133,13 @@ Let's start from scratch.
 
 MongoDB provide the <hl>remove</hl> method. It accepts a hash reference
 describing one or more documents (just as in the case of <hl>update</hl>)
-and removes <b>all</b> matches. 
+and removes <b>all</b> matches.
 
 
 <code lang="perl">
-	} elsif ($self->delete) {
-		die "--name is needed" if not $self->name;
-		$people_coll->remove({ name => $self->name });
+    } elsif ($self->delete) {
+        die "--name is needed" if not $self->name;
+        $people_coll->remove({ name => $self->name });
 </code>
 
 We also need to add the attribute at the top:

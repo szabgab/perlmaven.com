@@ -18,7 +18,7 @@ next one could be made. While this make the program simple to write, it wastes a
 and resources.
 
 After all the CPU in your computer does not do anything while it is waiting for the response from the remote
-server, and your network is not saturated either.  
+server, and your network is not saturated either.
 
 If you had 100 pages to download, and each one took 6 sec. That would take a total of 600 sec = 10 minutes.
 
@@ -42,21 +42,21 @@ use AnyEvent;
 use AnyEvent::HTTP;
 
 my @urls = qw(
-	https://perlmaven.com/
-	https://cn.perlmaven.com/
-	https://br.perlmaven.com/
+    https://perlmaven.com/
+    https://cn.perlmaven.com/
+    https://br.perlmaven.com/
 );
 
 my $cv = AnyEvent->condvar;
 
 foreach my $url (@urls) {
-	say "Start $url";
-	$cv->begin;
-	http_get $url, sub {
-		my ($html) = @_;
-		say "$url received, Size: ", length $html;
-		$cv->end;
-	};
+    say "Start $url";
+    $cv->begin;
+    http_get $url, sub {
+        my ($html) = @_;
+        say "$url received, Size: ", length $html;
+        $cv->end;
+    };
 }
 
 say 'Before the event-loop';
@@ -68,7 +68,7 @@ say 'Finish';
 
 We are using the <a href="https://metacpan.org/pod/AnyEvent">AnyEvent</a> module,
 and with that we use the <hl>http_get</hl> function
-of the <a href="https://metacpan.org/pod/AnyEvent::HTTP">AnyEvent::HTTP</a> helper module. 
+of the <a href="https://metacpan.org/pod/AnyEvent::HTTP">AnyEvent::HTTP</a> helper module.
 
 Basically AnyEvent provides its own loop, the so-called <b>event-loop</b> that runs when
 we call <hl>$cv->recv</hl>. <hl>$cv</hl> has an internal counter. It is increased by every
@@ -90,7 +90,7 @@ of the page to be fetched. The second one is an anonymous function that works as
 
 When the event-loop of AnyEvent, will send out the first HTTP request, it won't stop to wait for the response.
 Instead it will wait for the response while doing other things. In our case the "other things" will
-be sending out two more HTTP requests. Once those have been sent, AnyEvent will keep waiting 
+be sending out two more HTTP requests. Once those have been sent, AnyEvent will keep waiting
 at the <hl>$cv->recv</hl> call, till the counter in the <hl>$cv</hl> object becomes 0.
 
 Because the <hl>http_get</hl> does not wait for the response, it cannot "return" the result either.
@@ -102,10 +102,10 @@ The anonymous function is quite simple:
 
 <code lang="perl">
  sub {
-		my ($html) = @_;
-		say "$url received, Size: ", length $html;
-		$cv->end;
-	};
+        my ($html) = @_;
+        say "$url received, Size: ", length $html;
+        $cv->end;
+    };
 </code>
 
 It receives the content of the remote page as its first parameter. Prints out the address of the requested page
@@ -161,20 +161,20 @@ use AnyEvent;
 use AnyEvent::HTTP;
 
 my @urls = qw(
-	https://perlmaven.com/
-	https://cn.perlmaven.com/
-	https://br.perlmaven.com/
-	https://tw.perlmaven.com/
-	https://es.perlmaven.com/
-	https://it.perlmaven.com/
-	https://ko.perlmaven.com/
-	https://he.perlmaven.com/
-	https://te.perlmaven.com/
-	https://ru.perlmaven.com/
-	https://ro.perlmaven.com/
-	https://fr.perlmaven.com/
-	https://de.perlmaven.com/
-	https://id.perlmaven.com/
+    https://perlmaven.com/
+    https://cn.perlmaven.com/
+    https://br.perlmaven.com/
+    https://tw.perlmaven.com/
+    https://es.perlmaven.com/
+    https://it.perlmaven.com/
+    https://ko.perlmaven.com/
+    https://he.perlmaven.com/
+    https://te.perlmaven.com/
+    https://ru.perlmaven.com/
+    https://ro.perlmaven.com/
+    https://fr.perlmaven.com/
+    https://de.perlmaven.com/
+    https://id.perlmaven.com/
 );
 
 my $cv = AnyEvent->condvar;
@@ -189,22 +189,22 @@ $cv->recv;
 
 
 sub send_url {
-	return if $count >= $max;
+    return if $count >= $max;
 
-	my $url = shift @urls;
-	return if not $url;
+    my $url = shift @urls;
+    return if not $url;
 
-	$count++;
-	say "Start ($count) $url";
-	$cv->begin;
-	http_get $url, sub {
-		my ($html) = @_;
-		say "$url received, Size: ", length $html;
-		$count--;
-		$cv->end;
-		send_url();
-	};
-	return 1;
+    $count++;
+    say "Start ($count) $url";
+    $cv->begin;
+    http_get $url, sub {
+        my ($html) = @_;
+        say "$url received, Size: ", length $html;
+        $count--;
+        $cv->end;
+        send_url();
+    };
+    return 1;
 }
 </code>
 
@@ -217,7 +217,7 @@ execute the <hl>send_url()</hl> function several times to fill the internal queu
 As AnyEvent would just send out all the requests it has in its queue, we have to make sure there
 are no more requests than what we decided to be the <hl>$max</hl> number.
 
-The <hl>send_url()</hl> function is the heart of our system. 
+The <hl>send_url()</hl> function is the heart of our system.
 It will attempt to put another <hl>http_get</hl> request on the internal queue of AnyEvent,
 but it will only do it
 <ol>
@@ -276,9 +276,9 @@ went out as the first request, came back only after 5 others have finished.
 
 In order to see the impact of the asynchronous operation, you could run the above
 script with different values in the <hl>$max</hl> variable. (Maybe you should also select
-10-20 URLs on other sites, so it won't be only my server handling the load ...) 
+10-20 URLs on other sites, so it won't be only my server handling the load ...)
 
-You can also compare the results (the elapsed time) with one of the 
+You can also compare the results (the elapsed time) with one of the
 <a href="/simple-way-to-fetch-many-web-pages">linear solutions</a>.
 
 I ran the above script with <hl>$max = 2</hl> and the total elapsed time was 9 sec.

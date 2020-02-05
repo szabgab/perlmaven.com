@@ -208,29 +208,29 @@ I wrote the following Win32 C++ function that determines file name compatibility
 <code>
 BOOL IsConvertibleText( PCWSTR sFile )
 {
-	if ( !sFile )
-		return FALSE;
+    if ( !sFile )
+        return FALSE;
 
-	int iBuffer = WideCharToMultiByte( CP_ACP, 0, sFile, -1, NULL, 0, NULL, NULL );
-	if ( iBuffer == 0 )
-		return FALSE;
-	iBuffer += 1;
-	PSTR a = (PSTR)HeapAlloc( GetProcessHeap(), 0, iBuffer );
-	if ( !WideCharToMultiByte( CP_ACP, 0, sFile, -1, a, iBuffer, NULL, NULL ) )
-		return FALSE;
-	iBuffer = MultiByteToWideChar( CP_ACP, 0, a, -1, NULL, 0 );
-	if ( iBuffer == 0 )
-		return FALSE;
-	iBuffer = ( iBuffer + 1 ) * sizeof(WCHAR);
-	PWSTR w = (PWSTR)HeapAlloc( GetProcessHeap(), 0, iBuffer );
-	if ( !MultiByteToWideChar( CP_ACP, 0, a, -1, w, iBuffer ) )
-		return FALSE;
-	HeapFree( GetProcessHeap(), 0, a );
-	BOOL bRet = FALSE;
-	if ( CompareStringW( LOCALE_SYSTEM_DEFAULT, 0, sFile, -1, w, -1 ) == CSTR_EQUAL )
-		bRet = TRUE;
-	HeapFree( GetProcessHeap(), 0, w );
-	return bRet;
+    int iBuffer = WideCharToMultiByte( CP_ACP, 0, sFile, -1, NULL, 0, NULL, NULL );
+    if ( iBuffer == 0 )
+        return FALSE;
+    iBuffer += 1;
+    PSTR a = (PSTR)HeapAlloc( GetProcessHeap(), 0, iBuffer );
+    if ( !WideCharToMultiByte( CP_ACP, 0, sFile, -1, a, iBuffer, NULL, NULL ) )
+        return FALSE;
+    iBuffer = MultiByteToWideChar( CP_ACP, 0, a, -1, NULL, 0 );
+    if ( iBuffer == 0 )
+        return FALSE;
+    iBuffer = ( iBuffer + 1 ) * sizeof(WCHAR);
+    PWSTR w = (PWSTR)HeapAlloc( GetProcessHeap(), 0, iBuffer );
+    if ( !MultiByteToWideChar( CP_ACP, 0, a, -1, w, iBuffer ) )
+        return FALSE;
+    HeapFree( GetProcessHeap(), 0, a );
+    BOOL bRet = FALSE;
+    if ( CompareStringW( LOCALE_SYSTEM_DEFAULT, 0, sFile, -1, w, -1 ) == CSTR_EQUAL )
+        bRet = TRUE;
+    HeapFree( GetProcessHeap(), 0, w );
+    return bRet;
 }
 </code>
 
@@ -239,9 +239,9 @@ For those using C#:
 <code>
 bool IsConvertibleText( string sFile )
 {
-	byte[] b = Encoding.Default.GetBytes( sFile );
-	string s = Encoding.Default.GetString( b );
-	return sFile.Equals( s, StringComparison.CurrentCulture );
+    byte[] b = Encoding.Default.GetBytes( sFile );
+    string s = Encoding.Default.GetString( b );
+    return sFile.Equals( s, StringComparison.CurrentCulture );
 }
 </code>
 

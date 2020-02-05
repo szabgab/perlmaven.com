@@ -22,7 +22,7 @@ I hope the following explanation will help you too:
 Just to be clear, if you are reading this because you really
 want to <a href="/finding-files-in-a-directory-using-perl">
 go through a directory tree</a>, then you should probably
-read the article about 
+read the article about
 <a href="/finding-files-in-a-directory-using-perl">Path::Iterator::Rule</a>.
 What you read here is a more manual approach to the problem, that helps
 us learn about <b>recursion</b>.
@@ -156,7 +156,7 @@ traverse($path);
 
 sub traverse {
     my ($thing) = @_;
-	
+
     say $thing;
     return;
 }
@@ -178,7 +178,7 @@ This is the additional code:
     }
     close $dh;
 </code>
- 
+
 Each one of the calls to <hl>traverse()</hl> will print the current item
 and if it was a directory, it will go over all the elements in it and call
 <hl>traverse()</hl> on each subdirectory.
@@ -226,7 +226,7 @@ itself with a different set of parameters than it was called earlier.
 
 <h2>Other solution using a queue</h2>
 
-Besides using recursion this problem can also be solved by 
+Besides using recursion this problem can also be solved by
 <a href="/traversing-the-filesystem-using-a-queue">using a queue</a>.
 
 

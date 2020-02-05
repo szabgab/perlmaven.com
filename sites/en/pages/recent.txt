@@ -46,10 +46,10 @@ angular.module('PerlMavenApp').controller('PerlMavenRecentCtrl', function($scope
        <span ng-show="d.travis_yml"><a href="https://travis-ci.org/{{d.repo}}/"><span class="label label-success">Travis</span></a></span>
        <span ng-show="!d.travis_yml">
           <span ng-show="d.repo">
-	          <a href="/enable-travis-ci-for-continous-integration"><span class="label label-danger">Enable!</span></a>
+              <a href="/enable-travis-ci-for-continous-integration"><span class="label label-danger">Enable!</span></a>
           </span>
           <span ng-show="!d.repo">
-		       <span class="label label-default">Irrelevant</span>
+              <span class="label label-default">Irrelevant</span>
           </span>
        </span>
     </td>
@@ -85,7 +85,7 @@ angular.module('PerlMavenApp').controller('PerlMavenRecentCtrl', function($scope
    author (using MetaCPAN). That can lead you to the repository of this module.
 
   Having a Public VCS is a good thing for every Open Source Project. Having it included in the META file makes it easy for people to find it.
-  
+
   <ul>
     <!-- <li>No VCS and the author explicitly said s/he does not have a public VCS. Then link to explanation why would it be beneficial to have a public VCS. (this is not implemented yet)</li> -->
     <li>No VCS. Then link to explanation how to start using GitHub.</li>
@@ -93,9 +93,9 @@ angular.module('PerlMavenApp').controller('PerlMavenRecentCtrl', function($scope
     <li>Has GitHub link in the 'url' or 'web' fields but not like above. Then link to explanation how to improve it.</li>
     <li>Has some other VCS link in the 'url' or 'web' fields. That's ok but nevertheless link to explanation that if it was on GitHub it could use Travis-CI.</li>
   </ul>
- 
+
    <h3>Travis-CI</h3>
-   
+
    Travis-CI provides free continuous integration to Open Source projects on GitHub. The next column is green if the
    specific distribution has Travis configured. Red if it does not have it configured. Grey if it is not relevant (yet).
    This could be either because we don't know where is the public version control repository of the project, or because it
@@ -109,7 +109,7 @@ angular.module('PerlMavenApp').controller('PerlMavenRecentCtrl', function($scope
   </div>
 
    <h3>License</h3>
-   
+
    Authors can declare the license of their module in the META files. If this field is red, the author has not done this yet.
    Red buttons lead you to the explanation how to add the license information. Talk to the author and send a patch or
    a GitHub pull-request in order to get this fixed.

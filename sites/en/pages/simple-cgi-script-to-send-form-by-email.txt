@@ -82,8 +82,8 @@ $data{question} = $q->param('question');
 
 print $q->header;
 if ($data{fullname} !~ /^[\s\w.-]+$/) {
-	print "Name must contain only alphanumerics, spaces, dots and dashes.";
-	exit;
+    print "Name must contain only alphanumerics, spaces, dots and dashes.";
+    exit;
 }
 
 print "response " . Dumper \%data;
@@ -130,8 +130,8 @@ make sure each field received only acceptable values.
 
 <code lang="perl">
 if ($data{fullname} !~ /^[\s\w.-]+$/) {
-	print "Name must contain only alphanumerics, spaces, dots and dashes.";
-	exit;
+    print "Name must contain only alphanumerics, spaces, dots and dashes.";
+    exit;
 }
 </code>
 

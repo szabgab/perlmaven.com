@@ -736,18 +736,18 @@ wa approved but not funded
 
 <script>
 function toggle_details() {
-	//console.log(this);
-	var mode = this.parentElement.children[1].style.display == 'block';
-	this.parentElement.children[1].style.display =  mode ? 'none' : 'block';
-	this.children[0].style.display = mode ? 'none'  : 'inline';
-	this.children[1].style.display = mode ? 'inline' : 'none';
+    //console.log(this);
+    var mode = this.parentElement.children[1].style.display == 'block';
+    this.parentElement.children[1].style.display =  mode ? 'none' : 'block';
+    this.children[0].style.display = mode ? 'none'  : 'inline';
+    this.children[1].style.display = mode ? 'inline' : 'none';
 }
 function on_load() {
     var titles = document.getElementsByClassName('title');
     for (var i=0; i<titles.length; i++) {
         titles[i].addEventListener('click', toggle_details);
         titles[i].style.cursor = "pointer";
-		titles[i].innerHTML = '<img src="/img/icon-minus.gif" style="display:none;" /><img src="/img/icon-plus.gif" />' + titles[i].innerHTML;
+        titles[i].innerHTML = '<img src="/img/icon-minus.gif" style="display:none;" /><img src="/img/icon-plus.gif" />' + titles[i].innerHTML;
     }
     var details = document.getElementsByClassName('details');
     for (var i=0; i<details.length; i++) {

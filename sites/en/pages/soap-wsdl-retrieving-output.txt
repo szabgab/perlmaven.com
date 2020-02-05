@@ -17,12 +17,12 @@ the returned data. my code is as follows:
 
 <code lang="perl">
 my $response = $interface->fsPublic_SQL( { # MyTypes::fsPublic_SQLInput
-	QryIn =>  {
-		StrQuery =>  $q,
-		option =>  'XML',
-		keepRowHeader =>  'false',
-		},
-	},,
+    QryIn =>  {
+        StrQuery =>  $q,
+        option =>  'XML',
+        keepRowHeader =>  'false',
+        },
+    },,
 );
 die $response if not $response;
 

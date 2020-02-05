@@ -95,8 +95,7 @@ use Test::More;
 
 ## no critic
 eval 'use Test::Code::TidyAll 0.20';
-plan skip_all => "Test::Code::TidyAll 0.20 required to check if the code is clean."
-	if $@;
+plan skip_all => "Test::Code::TidyAll 0.20 required to check if the code is clean." if $@;
 tidyall_ok();
 </code>
 
@@ -111,21 +110,21 @@ before running the tests. We can do that by adding the following lines to <hl>.t
 
 <cod>
 before_install:
-  - cpanm --notest Test::Code::TidyAll 
+  - cpanm --notest Test::Code::TidyAll
 </code>
 
 Then I <a href="https://github.com/szabgab/Pod-Tree/commit/3451d9166170f3d861e7255e9d77046615d5baff">commited</a> the changes and went for a walk.
 
 <h2>Travis failure</h2>
 
-When I cam back and e-mail was already waiting for me, showing a 
+When I cam back and e-mail was already waiting for me, showing a
 <a href="https://travis-ci.org/szabgab/Pod-Tree/builds/63151328">failure on Travis</a>.
 
 Clicking though one of the reports I saw this failure:
 
 <code>
 t/95-tidyall.t .. could not load plugin class 'Code::TidyAll::Plugin::PerlTidy':
-   Can't locate Perl/Tidy.pm in @INC (you may need to install the Perl::Tidy module) 
+   Can't locate Perl/Tidy.pm in @INC (you may need to install the Perl::Tidy module)
 </code>
 
 This surprised me a bit. Apparently <a href="https://metacpan.org/pod/Test::Code::TidyAll">Test::Code::TidyAll</a>
@@ -136,7 +135,7 @@ So I changed <hl>.travis.yml</hl> to install Perl::Tidy as well:
 <code>
 before_install:
   - cpanm --notest Perl::Tidy
-  - cpanm --notest Test::Code::TidyAll 
+  - cpanm --notest Test::Code::TidyAll
 </code>
 
 and <a href="https://github.com/szabgab/Pod-Tree/commit/5e2f3c1da03a76538c320444e9d364ea713da3d6">commtted</a> it.

@@ -79,7 +79,7 @@ This time the exception will look like this:
 
 <code>
 Missing required arguments: name at (eval 13) line 30.
-	Person::new('Person') called at programming.pl line 7
+    Person::new('Person') called at programming.pl line 7
 </code>
 
 In the second line of the exception we can see the point in our code
@@ -112,9 +112,9 @@ beginning of the script:
 
 <code>
 Missing required arguments: name at (eval 13) line 30.
-	Person::new('Person') called at programming.pl line 15
-	main::bar() called at programming.pl line 10
-	main::foo() called at programming.pl line 7
+    Person::new('Person') called at programming.pl line 15
+    main::bar() called at programming.pl line 10
+    main::foo() called at programming.pl line 7
 </code>
 
 We will have a harder time noticing the source of the problem, which is in
@@ -190,9 +190,9 @@ new).
 
 <code>
 isa check for "name" failed: cannot be undef at (eval 13) line 38.
-	Sub::Quote::__ANON__('cannot be undef at Person.pm line 9.\x{a}') called at Person.pm line 9
-	Person::__ANON__(undef) called at (eval 13) line 40
-	Person::new('Person', 'name', undef) called at programming.pl line 8
+    Sub::Quote::__ANON__('cannot be undef at Person.pm line 9.\x{a}') called at Person.pm line 9
+    Person::__ANON__(undef) called at (eval 13) line 40
+    Person::new('Person', 'name', undef) called at programming.pl line 8
 </code>
 
 <h2>The values of required</h2>

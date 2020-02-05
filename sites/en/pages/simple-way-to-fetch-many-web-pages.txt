@@ -7,7 +7,7 @@
 
 =abstract start
 
-There are plenty of choices when you need to fetch a page or two from the Internet. 
+There are plenty of choices when you need to fetch a page or two from the Internet.
 We are going to see several simple examples using wget, curl,
 <a href="http://metacpan.org/module/LWP::Simple">LWP::Simple</a>,
 and <a href="http://metacpan.org/module/HTTP::Tiny">HTTP::Tiny</a>.
@@ -26,7 +26,7 @@ following:
 
 <code lang="perl">
 my $url = 'https://perlmaven.com/';
-system "wget $url"; 
+system "wget $url";
 </code>
 
 This will download the main page from the perlmaven.com domain and save it on the disk.
@@ -126,10 +126,10 @@ if ($response->{success}) {
     }
     if (length $response->{content}) {
         say 'Length: ', length $response->{content};
-		delete $response->{content};
+        delete $response->{content};
     }
-	print "\n";
-	print Dumper $response;
+    print "\n";
+    print Dumper $response;
 } else {
     say "Failed: $response->{status} $response->{reasons}";
 }
@@ -183,15 +183,15 @@ use 5.010;
 use HTTP::Tiny;
 
 my @urls = qw(
-	https://perlmaven.com/
-	https://cn.perlmaven.com/
-	https://br.perlmaven.com/
+    https://perlmaven.com/
+    https://cn.perlmaven.com/
+    https://br.perlmaven.com/
 );
 
 my $ht = HTTP::Tiny->new;
 
 foreach my $url (@urls) {
-	say "Start $url";
+    say "Start $url";
     my $response = $ht->get($url);
     if ($response->{success}) {
         say 'Length: ', length $response->{content};
@@ -220,7 +220,7 @@ Length: 12670
 
 The simplicity has a price of course. It means that we wait for each request  to be finished
 before we send out a new request. As most of the time is spent waiting for the the request to travel
-to the remote server, then waiting for the remote server to process the request, 
+to the remote server, then waiting for the remote server to process the request,
 and then waiting till the response reaches us, we waste quite a lot of time. We could have sent all 3
 requests in parallel and we would get our results much sooner.
 

@@ -219,9 +219,9 @@ The result is, that if we run <hl>perl process.pl</hl> we get the following outp
 <code>
 file is missing
 USAGE: process.pl [-h] [long options...]
-	--file       no doc for file
-	--verbose    no doc for verbose
-	-h --help    show this help message
+    --file       no doc for file
+    --verbose    no doc for verbose
+    -h --help    show this help message
 </code>
 
 That looks interesting. Without doing anything further we already
@@ -272,9 +272,9 @@ Running <hl>perl process.pl --help</hl> will then print:
 
 <code>
 USAGE: process6.pl [-h] [long options...]
-	--file       File name to be processed
-	--verbose    Print details
-	-h --help    show this help message
+    --file       File name to be processed
+    --verbose    Print details
+    -h --help    show this help message
 </code>
 
 Much nicer, and all the information about the options are in a single place.

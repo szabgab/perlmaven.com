@@ -169,7 +169,7 @@ So we only need to compute the relative directory using <hl>catdir</hl>:
 <code lang="perl">
 use Dir::Self;
 use lib File::Spec->catdir(
-			__DIR__,
+            __DIR__,
             '..',
             'lib');
 </code>

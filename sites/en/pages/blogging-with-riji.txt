@@ -17,7 +17,7 @@ I was looking at <a href="https://metacpan.org/pod/Text::Xslate">Text::Xslate</a
 and its dependencies. That's how I bumped
 into <a href="https://metacpan.org/pod/Riji">Riji</a>
 
-The current release is version 0.0.11 and 
+The current release is version 0.0.11 and
 <a href="https://github.com/Songmu">Masayuki Matsuki</a>,
 the author says it is not ready yet.
 But when did that stop us from trying something?
@@ -90,7 +90,7 @@ $ tree
 4 directories, 10 files
 </code>
 
-Riji is mostly for using via GitHub Pages, but 
+Riji is mostly for using via GitHub Pages, but
 it comes with a small built-in web-server to make the development faster.
 To start the server type <hl>riji server -L Shotgun</hl>:
 
@@ -113,7 +113,7 @@ Then use your browser to access <a href="http://localhost:3650/">port 3650 on yo
 In the root directory there is a configuration file called <hl>riji.yml</hl>.
 
 The <hl>article</hl> directory contains the source of the articles.
-For example the default sample page you can see is served from 
+For example the default sample page you can see is served from
 <hl>article/entry/sample.md</hl>
 
 
@@ -177,7 +177,7 @@ After reloading the browser you'll see the following:
 
 <h2>Individual pages</h2>
 
-Besides having a main page with the content of the articles, 
+Besides having a main page with the content of the articles,
 Riji also provides the pages on their individual URLS.
 For example, the new tutorial page can also be accessed
 as <a href="http://localhost:3650/entry/tutorial.html">/entry/tutorial.html</a>
@@ -234,13 +234,13 @@ $ git status
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	modified:   article/entry/sample.md
-#	modified:   riji.yml
+#   modified:   article/entry/sample.md
+#   modified:   riji.yml
 #
 # Untracked files:
 #   (use "git add <file>..." to include in what will be committed)
 #
-#	article/entry/tutorial.md
+#   article/entry/tutorial.md
 no changes added to commit (use "git add" and/or "git commit -a")
 </code>
 
@@ -260,7 +260,7 @@ In another article you can find explanation
 Let's see what did I do:
 
 <hl>riji publish</hl> generates the static pages in the <hl>blog/</hl> subdirectory.
-This can be used, or you can add 
+This can be used, or you can add
 
 <code>
 publish_dir: .
@@ -269,7 +269,7 @@ publish_dir: .
 to the <hl>riji.yml</hl> file and then the files will be generated in the root directory
 of your repository.
 
-Instead of that I put 
+Instead of that I put
 
 <code>
 publish_dir: 'blog'

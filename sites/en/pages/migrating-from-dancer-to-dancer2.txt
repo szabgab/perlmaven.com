@@ -141,7 +141,7 @@ to load the application in various tests scripts.
 <h2>use Dancer ':syntax';    to Dancer2</h2>
 
 As the failure reported by travis was the lack of the Dancer module, the next step seemed to be natural to
-replace the 
+replace the
 
 <code lang="perl">
 use Dancer ':syntax';
@@ -336,7 +336,7 @@ my $app = Dancer::Handler->psgi_app;
 Here Dancer was loaded for testing and the <hl>appdir</hl> was set manually using the <hl>Dancer::set</hl> function.
 In the next line I checked if the this setting really worked (apparently the result of some failed experiments during the development),
 and then checking if the <hl>mymaven_yml</hl> key was found in <hl>config.yml</hl> and loaded properly. Probably these tests are not
-important for the application itself, they only check if the testing environment was set up correctly. Then I used the 
+important for the application itself, they only check if the testing environment was set up correctly. Then I used the
 <hl>Dancer::Handler->psgi_app</hl> to fetch the PSGI application created by Dancer.
 In Dancer2 this code will be replaced by the following:
 
@@ -522,7 +522,7 @@ the problem.
 
 When I want to return a file (e.g. to let the user download a pdf file, but even in the development environment I am using Dancer
 to server images) I use the <hl>send_file</hl> function provided by Dancer. Because the files are not located under the public
-directory of Dancer, I also need to add <hl>system_path => 1</hl>. 
+directory of Dancer, I also need to add <hl>system_path => 1</hl>.
 
 Thing that drove me crazy that this featured worked in the Dancer 1 version and also all the tests passed.
 It also worked in the Dancer 2 version when I launched the application using <hl>perl bin/app.pl</hl> but it failed
@@ -544,7 +544,7 @@ fixed and I could install it, the system still did not work. At first I did not 
 after trying to print the result of the <hl>passphrase($password)->generate</hl> slowly I understood.
 
 Earlier, the <hl>generate</hl> method of <a href="https://metacpan.org/pod/Dancer::Plugin::Passphrase">Dancer::Plugin::Passphrase</a>
-returned an object that when printed would stringify to the value I had to save in the database. 
+returned an object that when printed would stringify to the value I had to save in the database.
 The documentation recommended I should store the string returned by <hl>passphrase($password)->generate->rfc2307</hl>,
 but it also provided the convenience of stringification.
 
@@ -611,12 +611,12 @@ The new code is much more simple:
 
 <code lang="perl">
 sub create_dancer {
-	my ($dir, $name) = @_;
+    my ($dir, $name) = @_;
 
-	eval "use $name";
-	die $@ if $@;
-	chdir "/home/foobar/$dir";
-	$name->dance;
+    eval "use $name";
+    die $@ if $@;
+    chdir "/home/foobar/$dir";
+    $name->dance;
 }
 
 my $perlmaven = create_dancer('Perl-Maven', 'Perl::Maven');
@@ -660,7 +660,7 @@ See <a href="http://lists.preshweb.co.uk/pipermail/dancer-users/2014-December/00
 
 <h2>Performance</h2>
 
-Finally let me show you the graph I get from <a href="http://munin-monitoring.org/">Munin</a> showing the 
+Finally let me show you the graph I get from <a href="http://munin-monitoring.org/">Munin</a> showing the
 average request processing time on the Perl Maven site. I switched the site over to use Dancer 2 on the 13th in the evening hours.
 The green line, showing the average time for the previous 5 minutes, immediately fell from about 285 ms to 192 and the blue line,
 that shows the average of the last 24 hours, joined it after 24 hours.
