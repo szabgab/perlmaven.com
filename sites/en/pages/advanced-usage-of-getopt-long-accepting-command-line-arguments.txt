@@ -16,7 +16,7 @@ Let's see how else can we use the <a href="https://metacpan.org/pod/Getopt::Long
 
 <h2>Simple boolean (on/off) argument</h2>
 
-We would like to enable a boolean flag such as 
+We would like to enable a boolean flag such as
 <hl>--verbose</hl>, <hl>--quiet</hl>, or <hl>--debug</hl> that just by their mere presence make an impact.
 Flags that don't need an additional value.
 
@@ -95,7 +95,7 @@ $ perl cli.pl --verbose
 $ perl cli.pl --noverbose
 0
 </code>
- 
+
 In certain situation this might be useful, though I have to admit, I have not encountered any such situation yet.
 
 Just for the curiosity, after reading the next part I came back and wanted to see what happens if we supply both
@@ -173,7 +173,7 @@ Then again, we could have get the same effect by accepting an option called "tra
 <h2>Argument with a value</h2>
 
 In the next example we declare two options. Both are optional, but if the user supplies either of those options, the user also has to supply
-a value. The <hl>--machine</hl> option is expected to be followed by any string (which of course can be a number as well), 
+a value. The <hl>--machine</hl> option is expected to be followed by any string (which of course can be a number as well),
 the <hl>--trace</hl> option is expected to be followed by an integer. This is what the <hl>=s</hl> and the <hl>=i</hl> at the end of the
 declarations mean.
 
@@ -263,19 +263,19 @@ use Getopt::Long qw(GetOptions);
 my $log;
 my $logfile;
 GetOptions(
-	'log'        => \$log,
-	'logfile=s'  => \$logfile,
+    'log'        => \$log,
+    'logfile=s'  => \$logfile,
 ) or die "Usage: $0 [--log  [--logfile FILENAME]]\n";
 die "--logfile does not do anything when --log is not supplied\n" if $logfile and not $log;
 
 if ($log) {
-	if ($logfile) {
+    if ($logfile) {
         say "logging to file $logfile\n";
-		#open ...
-	} else {
+        #open ...
+    } else {
         say "logging to STDERR\n";
-		#print STDERR ...;
-	}
+        #print STDERR ...;
+    }
 }
 </code>
 
@@ -286,7 +286,7 @@ one with a required <hl>=s</hl> string after it.
 Running the above code with different command line parameters look like this:
 
 <code>
-$ perl cli.pl 
+$ perl cli.pl
 
 
 $ perl cli.pl --log
@@ -330,17 +330,17 @@ use Getopt::Long qw(GetOptions);
 
 my $logfile;
 GetOptions(
-	'logfile:s'        => \$logfile,
+    'logfile:s'        => \$logfile,
 ) or die "Usage: $0 [--logfile [FILENAME]]\n";
 
 if (defined $logfile) {
     if ($logfile) {
         say "logging to file $logfile\n";
-		#open ...
-	} else {
+        #open ...
+    } else {
         say "logging to STDERR\n";
-		#print STDERR ...;
-	}
+        #print STDERR ...;
+    }
 }
 </code>
 

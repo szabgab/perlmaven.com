@@ -36,7 +36,7 @@ my $z = int 3;
 say $z;          # também irá imprimir 3.
 
 my $w = int 3.99999;
-say $w;		# até mesmo isso irá imprimir 3.
+say $w;          # até mesmo isso irá imprimir 3.
 
 say int -3.14;   # irá imprimir -3
 </code>
@@ -70,7 +70,7 @@ Se adicionarmos 1 ao resultado então teremos qualquer um dos números 1,2,3,4,5
 
 Este é o início de um jogo que iremos escrever. Um simples porém divertido jogo.
 
-Escreva um script onde ao utilizar a função <hl>rand()</hl> o computador "pensa" em um número 
+Escreva um script onde ao utilizar a função <hl>rand()</hl> o computador "pensa" em um número
 entre 1 e 200. O usuário deverá adivinhar o número.
 
 Após o usuário escrever seu palpite o computador avisa se o número é maior ou menor do que o valor gerado.

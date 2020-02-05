@@ -166,17 +166,17 @@ I'm running the config code inline for now:
 <code lang="perl">
 #!usr/bin/perl
 use warnings;
-	# ============================== Load modules ====================================
- #use DBI;
- use Image::ExifTool qw(:Public);
+# ============================== Load modules ====================================
+#use DBI;
+use Image::ExifTool qw(:Public);
 
-	my $picFile, $picFileMod;
-	$picFile = 'C:\pics\pic2.jpg';
-	$picFileMod = 'C:\pics\pic2ModByExifTool.jpg';
-	#define ExifTool object;
-	my $ExifTool = new Image::ExifTool;
+my $picFile, $picFileMod;
+$picFile = 'C:\pics\pic2.jpg';
+$picFileMod = 'C:\pics\pic2ModByExifTool.jpg';
+#define ExifTool object;
+my $ExifTool = new Image::ExifTool;
 
-	%$ExifTool::UserDefined::defra = (
+%$ExifTool::UserDefined::defra = (
     GROUPS => { 0 => 'XMP', 1 => 'XMP-defra', 2 => 'Image' },
     NAMESPACE => { 'defra' => 'http://ns.defra.com/' },
     WRITABLE => 'string',
@@ -196,26 +196,26 @@ use warnings;
     }
 );
 
-	if(-e $picFile)
-	{
-		my $info = $ExifTool->ImageInfo($picFile);
-		print '\n';
-		print '\n';
-		foreach (keys %$info) {
-			print "$_ => $$info{$_}\n";
-		}
-		$ExifTool->SetNewValue('Tag1','Val1');
-		$ExifTool->SetNewValue('Tag2','Val2');
-		$ExifTool->SetNewValue('Tag3','Val3');
+if(-e $picFile)
+{
+    my $info = $ExifTool->ImageInfo($picFile);
+    print '\n';
+    print '\n';
+    foreach (keys %$info) {
+        print "$_ => $$info{$_}\n";
+    }
+    $ExifTool->SetNewValue('Tag1','Val1');
+    $ExifTool->SetNewValue('Tag2','Val2');
+    $ExifTool->SetNewValue('Tag3','Val3');
 
-		$ExifTool->WriteInfo($picFile, $picFileMod);
-	}
+    $ExifTool->WriteInfo($picFile, $picFileMod);
+}
 
-		print 'After mod=============================================== \n';
-		my $info = ImageInfo($picFileMod);
-		foreach (keys %$info) {
-			print "$_ => $$info{$_}\n";
-		}
+print 'After mod=============================================== \n';
+my $info = ImageInfo($picFileMod);
+foreach (keys %$info) {
+    print "$_ => $$info{$_}\n";
+}
 </code>
 
 Posted on 2008-03-20 13:17:49-07 by exiftool in response to 7423

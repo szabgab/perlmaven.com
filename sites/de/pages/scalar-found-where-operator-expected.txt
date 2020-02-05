@@ -44,7 +44,7 @@ Execution of ex.pl aborted due to compilation errors.
 
 Es wird ganz klar angegeben, auf welcher Zeile das Problem ist. Ich sehen schon vor mir,
 wie viele Leute gleich zum Editor greifen, um den Fehler zu beheben, obwohl sie
-die Fehlermeldung nicht gelesen haben. Sie werden eine Änderung durchführen in der 
+die Fehlermeldung nicht gelesen haben. Sie werden eine Änderung durchführen in der
 Hoffnung, dass dies den Fehler beheben wird, um danach eine andere Fehlermeldung
 zu erhalten.
 
@@ -150,7 +150,7 @@ my $z =  $x $y;
 
 <code>
 Scalar found where operator expected at ... line 7, near "$x $y"
-	(Missing operator before $y?)
+    (Missing operator before $y?)
 syntax error at ... line 7, near "$x $y"
 Execution of ... aborted due to compilation errors.
 </code>

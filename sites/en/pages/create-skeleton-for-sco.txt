@@ -21,7 +21,7 @@ I decided to get started immediately.  At this phase of the project there is suc
 <h2>Create Git repository, add README file</h2>
 
 The very first thing was to create a directory called "sco" - I did not have an idea yet how  I am going to call the project.
-Then I added a README file with some text explaining what this is about. 
+Then I added a README file with some text explaining what this is about.
 
 <code>
 $ mkdir sco
@@ -97,7 +97,7 @@ SCO - search.cpan.org clone
 1;
 </code>
 
-<hl>package</hl> declares the <a href="/packages-modules-and-namespace-in-perl">name-space</a> of the module. 
+<hl>package</hl> declares the <a href="/packages-modules-and-namespace-in-perl">name-space</a> of the module.
 <hl>use strict;</hl> and <hl>use warnings;</hl> are the standard we <a href="/strict">always add</a>.
 Creating the <a href="/installing-perl-and-getting-started">safety net</a> for your perl program.
 
@@ -148,7 +148,7 @@ pass;
 </code>
 
 The content is just a skeleton tests script loading <a href="http://metacpan.org/pod/Test::More">Test::More</a>, declaring one test and calling <hl>pass</hl> just to make sure
-the test script is successful. I also loaded <a href="https://metacpan.org/pod/Test::WWW::Mechanize">Test::WWW::Mechanize</a> as I was planning to use it 
+the test script is successful. I also loaded <a href="https://metacpan.org/pod/Test::WWW::Mechanize">Test::WWW::Mechanize</a> as I was planning to use it
 to write tests that access <a href="http://search.cpan.org/">search.cpan.org</a>. We'll see that later. For a gentle introduction to testing
 follow the articles in the <a href="/testing">testing</a> series.
 
@@ -186,7 +186,7 @@ $ make test
 
 
 <code>
-t/10-sco.t .. ok   
+t/10-sco.t .. ok
 All tests successful.
 Files=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.15 cusr  0.03 csys =  0.21 CPU)
 Result: PASS
@@ -222,70 +222,70 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 my %conf = (
-	NAME         => 'SCO',
-	AUTHOR       => 'Gabor Szabo <szabgab@cpan.org>',
-	VERSION_FROM => 'lib/SCO.pm',
+    NAME         => 'SCO',
+    AUTHOR       => 'Gabor Szabo <szabgab@cpan.org>',
+    VERSION_FROM => 'lib/SCO.pm',
     ABSTRACT_FROM => 'lib/SCO.pm',
-	PREREQ_PM    => {
-	},
+    PREREQ_PM    => {
+    },
 );
 
 if (eval { ExtUtils::MakeMaker->VERSION(6.3002) }) {
-	$conf{LICENSE} = 'perl';
+    $conf{LICENSE} = 'perl';
 }
 
 
 #if (eval { ExtUtils::MakeMaker->VERSION(6.46) }) {
-#	$conf{META_MERGE} = {
-#		'meta-spec' => { version => 2 },
-#		resources => {
-#			repository => {
-#				type       => 'git',
-#				url        => 'http://github.com/szabgab/Module-Name.git',
-#				web        => 'http://github.com/szabgab/Module-Name',
-#				license    => 'http://dev.perl.org/licenses/',
-#			},
-#			bugtracker => {
-#				web        => 'http://github.com/szabgab/Module-Name/issues',
-#			},
-#			homepage   => 'https://perlmaven.com/',
-#		},
-#		x_contributors => [
-#			'Peti Bar <petibar@cpan.org>',
-#		],
-#		x_IRC => 'irc://irc.perl.org/#perl',
-#		x_MailingList => 'http://lists.perl.org/list/perl-qa.html',
-#	};
+#    $conf{META_MERGE} = {
+#        'meta-spec' => { version => 2 },
+#        resources => {
+#            repository => {
+#                type       => 'git',
+#                url        => 'http://github.com/szabgab/Module-Name.git',
+#                web        => 'http://github.com/szabgab/Module-Name',
+#                license    => 'http://dev.perl.org/licenses/',
+#            },
+#            bugtracker => {
+#                web        => 'http://github.com/szabgab/Module-Name/issues',
+#            },
+#            homepage   => 'https://perlmaven.com/',
+#        },
+#        x_contributors => [
+#            'Peti Bar <petibar@cpan.org>',
+#        ],
+#        x_IRC => 'irc://irc.perl.org/#perl',
+#        x_MailingList => 'http://lists.perl.org/list/perl-qa.html',
+#    };
 #}
 
 my %configure_requires = (
-	'ExtUtils::MakeMaker' => '6.64',
+    'ExtUtils::MakeMaker' => '6.64',
 );
 my %build_requires = ();
 my %test_requires = (
-	'Test::More'      => '1.00',
-	'Test::WWW::Mechanize' => '0',
+    'Test::More'      => '1.00',
+    'Test::WWW::Mechanize' => '0',
 
-	# standard modules:
-	#'File::Temp' => 0,
+    # standard modules:
+    #'File::Temp' => 0,
 );
 
 ###   merging data "standard code"
 if (eval { ExtUtils::MakeMaker->VERSION(6.52) }) {
-	$conf{CONFIGURE_REQUIRES} = \%configure_requires;
+    $conf{CONFIGURE_REQUIRES} = \%configure_requires;
 } else {
-	%{ $conf{PREREQ_PM} } = (%{ $conf{PREREQ_PM} }, %configure_requires);
+    %{ $conf{PREREQ_PM} } = (%{ $conf{PREREQ_PM} }, %configure_requires);
 }
 
 if (eval { ExtUtils::MakeMaker->VERSION(6.5503) }) {
-	$conf{BUILD_REQUIRES} = \%build_requires;
+    $conf{BUILD_REQUIRES} = \%build_requires;
 } else {
-	%{ $conf{PREREQ_PM} } = (%{ $conf{PREREQ_PM} }, %build_requires);
+    %{ $conf{PREREQ_PM} } = (%{ $conf{PREREQ_PM} }, %build_requires);
 }
 if (eval { ExtUtils::MakeMaker->VERSION(6.64) }) {
-	$conf{TEST_REQUIRES} = \%test_requires;
+    $conf{TEST_REQUIRES} = \%test_requires;
 } else {
-	%{ $conf{PREREQ_PM} } = (%{ $conf{PREREQ_PM} }, %test_requires);
+    %{ $conf{PREREQ_PM} } = (%{ $conf{PREREQ_PM} }, %test_requires);
 }
 
 WriteMakefile(%conf);

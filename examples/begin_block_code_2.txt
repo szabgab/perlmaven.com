@@ -5,6 +5,5 @@ Editor support available.
 Enter h or 'h h' for help, or 'man perldebug' for more help.
 
 main::CODE(0x55c169ea9dd0)(begin_block_code.pl:8):
-8:	    my $welcome = 'Hello World';
+8:    my $welcome = 'Hello World';
   DB<1>
-

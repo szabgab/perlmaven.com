@@ -136,7 +136,7 @@ my $z =  $x $y;
 
 <code>
 Scalar found where operator expected at ... line 7, near "$x $y"
-	(Missing operator before $y?)
+   (Missing operator before $y?)
 syntax error at ... line 7, near "$x $y"
 Execution of ... aborted due to compilation errors.
 </code>

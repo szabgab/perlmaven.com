@@ -16,7 +16,7 @@ see how?
 =abstract end
 
 If we look up <a href="http://en.wikipedia.org/wiki/Foobar">Foobar</a> on Wikipedia, we'll see they are
-also called <b>place-holder names</b> or 
+also called <b>place-holder names</b> or
 <a href="http://en.wikipedia.org/wiki/Metasyntactic_variable">Metasyntactic variable</a>.
 
 We'll go with that and install <a href="https://metacpan.org/pod/Acme::MetaSyntactic">Acme::MetaSyntactic</a>.
@@ -54,7 +54,7 @@ use 5.010;
 use Acme::MetaSyntactic;
 
 foreach my $t (Acme::MetaSyntactic->themes) {
-	say $t;
+    say $t;
 }
 </code>
 
@@ -93,7 +93,7 @@ use Acme::MetaSyntactic;
 
 my $ams = Acme::MetaSyntactic->new;
 foreach my $n (sort $ams->name('foo', 0)) {
-	say $n;
+    say $n;
 }
 </code>
 
@@ -129,7 +129,7 @@ of the module. Would you like to use variable names such as <hl>Leon_Brocard</hl
 
 <h2>More themes</h2>
 
-Of course having only these themes would not be really interesting, so 
+Of course having only these themes would not be really interesting, so
 <a href="https://metacpan.org/pod/Acme::MetaSyntactic">Acme::MetaSyntactic</a> is extensible.
 
 Install <a href="https://metacpan.org/pod/Acme::MetaSyntactic::Themes">Acme::MetaSyntactic::Themes</a>,
@@ -146,7 +146,7 @@ use 5.010;
 use Acme::MetaSyntactic;
 
 foreach my $t (sort Acme::MetaSyntactic->themes) {
-	say $t;
+    say $t;
 }
 </code>
 
