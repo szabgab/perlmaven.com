@@ -133,13 +133,14 @@ my $job    = TheSchwartz::Simple::Job->new;
 </code>
 
 Now we need to define our job. When we do that, we will be giving the job specific argument values that can be used by the worker during job processing.
+
 <code lang="shell">
 $job->funcname("Worker::SendEmail");
 $job->arg({
-	from	=> "darth.vader@cloudcity.com",
-	to		=> "luke.skywalker@cloudcity.com",
-	subject => "Luke",
-	body	=> "I, am your father. -Dad",
+    from    => "darth.vader@cloudcity.com",
+    to      => "luke.skywalker@cloudcity.com",
+    subject => "Luke",
+    body    => "I, am your father. -Dad",
 });
 </code>
 

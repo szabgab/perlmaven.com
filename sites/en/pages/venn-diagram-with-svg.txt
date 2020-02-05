@@ -28,20 +28,20 @@ In the next example we make the circles clickable and link each circle to a diff
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<title >I am a title</title>
-	<a xlink:href="https://perlmaven.com/">
-		<circle cx="100" cy="100" id="red_circle" r="50" style="fill-opacity: 0.5; fill: #FF0000" />
-	</a>
-	<a xlink:href="https://code-maven.com/">
-		<circle cx="150" cy="100" id="blue_circle" r="50" style="fill: #0000FF; fill-opacity: 0.5" />
-	</a>
-	<a xlink:href="http://perl6maven.com/">
-		<circle cx="125" cy="150" id="green_circle" r="50" style="fill: #00FF00; fill-opacity: 0.5" />
-	</a>
-	<!-- 
-	Generated using the Perl SVG Module V2.59
-	by Ronan Oger
-	Info: http://www.roitsystems.com/
+    <title >I am a title</title>
+    <a xlink:href="https://perlmaven.com/">
+        <circle cx="100" cy="100" id="red_circle" r="50" style="fill-opacity: 0.5; fill: #FF0000" />
+    </a>
+    <a xlink:href="https://code-maven.com/">
+        <circle cx="150" cy="100" id="blue_circle" r="50" style="fill: #0000FF; fill-opacity: 0.5" />
+    </a>
+    <a xlink:href="http://perl6maven.com/">
+        <circle cx="125" cy="150" id="green_circle" r="50" style="fill: #00FF00; fill-opacity: 0.5" />
+    </a>
+    <!--
+    Generated using the Perl SVG Module V2.59
+    by Ronan Oger
+    Info: http://www.roitsystems.com/
  -->
 </svg>
 
@@ -54,10 +54,10 @@ we create Anchor objects from SVG and then from those Anchor object we create th
 Each Anchor object will handle a single URL and a single circle.
 
 <code lang="perl">
-	my $red_tag = $svg->anchor(
-		-href => 'https://perlmaven.com/'
-	);
-	my $red = $red_tag->circle(
+    my $red_tag = $svg->anchor(
+        -href => 'https://perlmaven.com/'
+    );
+    my $red = $red_tag->circle(
        ...
 </code>
 

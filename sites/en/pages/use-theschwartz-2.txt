@@ -119,7 +119,7 @@ open(LOG,">>$log_file") or die "Can not open $log_file!";
 As we enter the work(), you'll notice we are passing in the arguments data that the job holds from the database record.
 
 <code lang="perl">
-	my $args		= $job->arg;
+   my $args = $job->arg;
 </code>
 
 Here's a database refresher of our data:
@@ -144,38 +144,38 @@ ORDER BY insert_time DESC;
 
 We are simplying grabbing those args values, setting them to some variables and checking that they are all there.
 <code lang="perl">
-	my $from		= $args->{from} ||= 'noreply@someplace.com';
-	my $to			= $args->{to};
-	my $subject		= $args->{subject};
-	my $body		= $args->{body};
+    my $from      = $args->{from} ||= 'noreply@someplace.com';
+    my $to        = $args->{to};
+    my $subject   = $args->{subject};
+    my $body      = $args->{body};
 
-	my @rqd_fields = qw(from to subject body);
-	foreach my $rqd_field (@rqd_fields){
-		if ( ! exists $args->{$rqd_field} || $args->{$rqd_field} eq ""){
-			print LOG "Worker::SendEmail FAILED!  Missing required data!! (field: $rqd_field) \n";
-			$job->permanent_failure( "Worker::SendEmail missing required field", 1 );
-			return(1);
-		}
-	}
+    my @rqd_fields = qw(from to subject body);
+    foreach my $rqd_field (@rqd_fields){
+        if ( ! exists $args->{$rqd_field} || $args->{$rqd_field} eq ""){
+            print LOG "Worker::SendEmail FAILED!  Missing required data!! (field: $rqd_field) \n";
+            $job->permanent_failure( "Worker::SendEmail missing required field", 1 );
+            return(1);
+        }
+    }
 </code>
 
 Finally, the script creates the email and sends it out via the sendmail command. I know there are much better ways of doing this using email perl modules
 such as <a href="https://metacpan.org/pod/Mail::Sendmail">Mail::Sendmail</a> but I wanted to keep things simple by not introducing any other modules.
 <code lang="perl">
-	my $sendmail	= "/usr/sbin/sendmail -t";
+    my $sendmail    = "/usr/sbin/sendmail -t";
 
-	print LOG "sendmail: $sendmail\n";
+    print LOG "sendmail: $sendmail\n";
 
-	# Do not change the order of the headers.
-	open(SENDMAIL, "|$sendmail") or die "Cannot open $sendmail: $!";
-	print SENDMAIL "From: $from" . "\n";
-	print SENDMAIL "To: $to" . "\n";
-	print SENDMAIL "Subject: $subject " . "\n";
-	print SENDMAIL "Content-type: text/plain" . "\n";
-	print SENDMAIL $body;
-	close (SENDMAIL);
+    # Do not change the order of the headers.
+    open(SENDMAIL, "|$sendmail") or die "Cannot open $sendmail: $!";
+    print SENDMAIL "From: $from" . "\n";
+    print SENDMAIL "To: $to" . "\n";
+    print SENDMAIL "Subject: $subject " . "\n";
+    print SENDMAIL "Content-type: text/plain" . "\n";
+    print SENDMAIL $body;
+    close (SENDMAIL);
 
-	print LOG "All done!\n";
+    print LOG "All done!\n";
 
     $job->completed();
 </code>
