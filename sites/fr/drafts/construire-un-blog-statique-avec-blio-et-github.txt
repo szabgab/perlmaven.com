@@ -178,7 +178,7 @@ In my case you try <a href="http://szabgab.github.com/">szabgab.github.com</a> t
 
 Obviously this is only the first step in creating your on blog, but I hope this little tutorial will help you get started.
 You can read more details about Blio in its documentation. Both <a href="https://github.com/domm/Blio/blob/master/bin/blio.pl">blio.pl</a>
-and <a herf="https://github.com/domm/Blio/blob/master/lib/Blio.pm">Blio.pm</a> have some documentation.
+and <a href="https://github.com/domm/Blio/blob/master/lib/Blio.pm">Blio.pm</a> have some documentation.
 
 If you have any question, comments, don't hesitate to post them here and don't forget to share this article.
 If enough people share it, I'll consider myself encouraged to extend the article...

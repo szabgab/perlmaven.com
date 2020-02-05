@@ -43,7 +43,7 @@ and doing an appraisal at the end of the year for their employees.</li>
 <li>Working with <a href="http://www.wundercounter.com/">Olaf Alders</a> (<a href="https://metacpan.org/author/OALDERS">OALDERS</a>)
     to produce a single module for parsing user agent strings.</li>
 <li>Neil mentioned <a href="http://wardley.org/">Andy Wardly</a>, <a href="http://metacpan.org/author/ABW">ABW on CPAN</a>, and the <a href="http://metacpan.org/module/Template">Template Toolkit</a></li>
-<li><a herf="http://www.bruhat.net/">Philippe Bruhat</a> (<a href="http://metacpan.org/author/BOOK">BooK</a>) who is (considering) writing his own static blogging software.</li>
+<li><a href="http://www.bruhat.net/">Philippe Bruhat</a> (<a href="http://metacpan.org/author/BOOK">BooK</a>) who is (considering) writing his own static blogging software.</li>
 <li><a href="http://www.fysh.org/~zefram/">Zefram (Andrew Main)</a> and <a href="http://metacpan.org/author/ZEFRAM">Zefram on CPAN</a></li>
 <li><a href="http://questhub.io/">Questhub</a> and its creator <a href="http://berekuk.ru/">Vyacheslav Matyukhin</a> <a href="https://metacpan.org/author/MMCLERIC">BEREKUK</a></li>
 <li><a href="https://metacpan.org/author/YANICK">Yanick Champoux</a>'s <a href="http://techblog.babyl.ca/entry/metacpan-recommendations">proposal</a>

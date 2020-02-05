@@ -124,7 +124,7 @@ my $logger = Log::Log4perl->get_logger();
 </code>
 
 in order to have the logger object. There is a way to reduce the typing, we can import the <hl>get_logger</hl>
-method from <a herf="https://metacpan.org/pod/Log::Log4perl">Log::Log4perl</a>.
+method from <a href="https://metacpan.org/pod/Log::Log4perl">Log::Log4perl</a>.
 
 We can then write:
 

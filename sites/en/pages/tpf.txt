@@ -717,7 +717,7 @@ wa approved but not funded
   <li>2011.09.22 <a href="http://news.perlfoundation.org/2011/09/liquid-web-donate-to-p5-cmf.html">Liquid Web Donate to P5 CMF</a></li>
   <li>2011.12.10 <a href="http://news.perlfoundation.org/2011/12/grant-from-bookingcom-conclude.html">Grant from Booking.Com concludes.</a></li>
   <li>2012.01.01 <a href="http://news.perlfoundation.org/2012/01/bookingcom-sponsors-100000-to.html">Booking.com Sponsors  €100,000 to Perl 5 Development</a></li>
-  <li>2012.01.24 <a herf="http://news.perlfoundation.org/2012/01/craigslist-charitable-fund-don.html">craigslist Charitable Fund Donates $100,000</a></li>
+  <li>2012.01.24 <a href="http://news.perlfoundation.org/2012/01/craigslist-charitable-fund-don.html">craigslist Charitable Fund Donates $100,000</a></li>
   <li>2012.10.15 <a href="http://news.perlfoundation.org/2012/10/yapcna-2012-closing-financial.html">YAPC::NA 2012 Closing Financial Report</a></li>
   <li>2012.10.25 <a href="http://news.perlfoundation.org/2012/10/sponsoring-metacpan.html">Sponsoring MetaCPAN</a></li>
   <li>2013.01.01 <a href="http://news.perlfoundation.org/2013/01/2012-year-end-report.html">2012 Year End Report</a></li>

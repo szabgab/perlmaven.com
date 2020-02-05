@@ -8,7 +8,7 @@
 =abstract start
 
 Perl has a lot of command line options. Some of them can be used to do very useful things, others are more esoteric.
-In the <a herf="/perl-tutorial">Perl tutorial</a> we already saw how to use <a href="/perl-on-the-command-line">Perl on the command line</a>,
+In the <a href="/perl-tutorial">Perl tutorial</a> we already saw how to use <a href="/perl-on-the-command-line">Perl on the command line</a>,
 let's now extend that list.
 
 =abstract end

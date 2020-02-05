@@ -114,6 +114,6 @@ namun ia merupakan aplikasi berbayar.
 
 <h2>Selanjutnya</h2>
 
-Tutorial berikutnya adalah <a herf="/perl-on-the-command-line">Perl pada command line</a>
+Tutorial berikutnya adalah <a href="/perl-on-the-command-line">Perl pada command line</a>
 
 

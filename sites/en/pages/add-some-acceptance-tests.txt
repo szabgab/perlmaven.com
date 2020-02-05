@@ -152,6 +152,6 @@ $ git add .
 $ git commit -m "add some more tests"
 </code>
 
-<a herf="https://github.com/szabgab/MetaCPAN-SCO/commit/0a6b97396145f8a109ee3647f2aa5b3e9200892e">commit</a>
+<a href="https://github.com/szabgab/MetaCPAN-SCO/commit/0a6b97396145f8a109ee3647f2aa5b3e9200892e">commit</a>
 
 

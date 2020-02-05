@@ -34,6 +34,9 @@ while ( my $file = $it->() ) {
     if ($content =~ /\t/) {
         fail("there are tabs in $file");
     }
+    if ($content =~ /herf/) {
+        fail("there is an herf in $file");
+    }
     #if ($content =~ /^(.*\s)\n$/m) {
     #    fail("there trailing spaces in line '$1' in $file");
     #}
