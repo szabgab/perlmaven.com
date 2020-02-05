@@ -34,9 +34,9 @@ while ( my $file = $it->() ) {
     if ($content =~ /\t/) {
         fail("there are tabs in $file");
     }
-    if ($content =~ /\s$/m) {
-        fail("there trailing spaces in $file");
-    }
+    #if ($content =~ /^(.*\s)\n$/m) {
+    #    fail("there trailing spaces in line '$1' in $file");
+    #}
 
 	undef @warns;
 	my $enc = guess_encoding(path($file)->slurp);
