@@ -1,0 +1,88 @@
+=title Partially hide data fields
+=timestamp 2020-04-21T07:30:01
+=indexes regex
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+
+=abstract start
+
+On a web site, but maybe even an API, there might be cases when you would like to display only part of a value.
+For example you might want to display the last 4 digits of a credit card number.
+Or the first 4 letters of an e-mail address.
+
+Sometimes you might want to display only part of the field. Sometimes you might want to replace the rest of the filed by some
+"hiding character".
+
+=abstract end
+
+<h2>Examples</h2>
+
+input: "abcdefghijklmnopqrs"
+
+Show only the last 4 characters: "pqrs".
+
+Show the last 4 characters and replace (mask) the rest with stars: "***************pqrs".
+
+Show the last 4 characters and mask the rest, but without indicating the length of the original string.
+So no matter what was the original length we'll show 4 stars and the last 4 characters: "****pqrs".
+
+Show only the first 4 characters: "abcd".
+
+The examples can go on.
+
+Now go ahead an for each idea above write a regex that will accomplish the task.
+
+If you feel that regexes might not be the right answer write functions (one for each masking-type) that will
+accept a string and returned the "masked" string.
+
+<h2>The real task</h2>
+
+So how is the above related to a real-world problem?
+You might retrieve some data from a database. Each row of data will be in a hash, where the keys
+are the names of the columns in the database and the values are, well, the values. Some of the fields
+need to be masked, but even those some need to be masked in one way, others need to be masked in some other way.
+
+Write some generic solution for these.
+
+<h2>Solution for the individual masking</h2>
+
+First a few examples of regexes solving the masking/hiding problem for individual strings:
+
+<include file="examples/mask.pl">
+
+The third example is probably the simplest:  <hl>$out3 =~ s/^(.{4})(.*)$/$1****/;</hl>.
+We capture the first 4 characters using <hl>(.{4})</hl> then
+we capture the rest of the string using <hl>(.*)</hl>. We then replace the first 4 characters
+by themselves (ok, so nothing changes there) and the rest of the characters by exactly 4 stars.
+The same could have been done with <hl>$out3 = substr($in, 0, 4) . '****';</hl>.
+
+
+The second example is slightly more difficult on: <hl>$out2 =~ s/^(.*)(.{4})$/****$2/;</hl>.
+Here we capture everything <hl>(.*)</hl>, but then we want to capture 4 characters at the end of the string
+<hl>(.{4})</hl> that will limit the first part to "everything besides the last 4 characters".
+An alternative would be <hl>'****' . substr($in, -4);</hl>
+
+The 4th example is a lot more interesting. Here we need to replace each character, except the last 4.
+I have some feeling that we might be able to solve this without the <hl>/e</hl> modifier, but could not
+come up with the solution so here is the one I managed to write: <hl>$out4 =~ s/^(.{4})(.*)$/$1 . "*" x length($2)/e;</hl>
+<hl>/e</hl> means that instead of using the replacement part as an interpolated string we use it as a piece of Perl code
+and evaluate it. (With <a href="/string-eval">eval</a>) The capturing part is the same as before, but
+in the replacement part we have Perl code.
+An alternative would be: <hl>say substr($in, 0, 4) . "*" x (length($in) - 4);</hl>.
+
+Frankly, after writing all the non-regex examples, I am not sure why would we want to use regexes here.
+
+<h2>Generic solution for field masking/hiding/replacement</h2>
+
+We assume that the user has a hash with the data retrieved from the database.
+We prepare a dispatch table, a hash, in which the keys are names of the fields that need to be masked
+and the values are references to functions that can do the masking for an individual string.
+
+Then we have a function called "mask_fields" that gets a reference to the data and a reference to the
+dispatch table and applies the appropriate function to each on of the fields.
+
+<include file="examples/mask_fields.pl">
+
+
