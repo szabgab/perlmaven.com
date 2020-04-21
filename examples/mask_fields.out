@@ -1,0 +1,10 @@
+$VAR1 = {
+          'balance' => 42,
+          'account' => 'abcdefghijklmnopqrs',
+          'creditcard' => '1234567890abcd'
+        };
+$VAR1 = {
+          'balance' => 42,
+          'account' => '****pqrs',
+          'creditcard' => '**********abcd'
+        };

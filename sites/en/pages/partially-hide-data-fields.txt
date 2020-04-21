@@ -74,6 +74,10 @@ An alternative would be: <hl>say substr($in, 0, 4) . "*" x (length($in) - 4);</h
 
 Frankly, after writing all the non-regex examples, I am not sure why would we want to use regexes here.
 
+Running the above script will yield the following output:
+
+<include file="examples/mask.out">
+
 <h2>Generic solution for field masking/hiding/replacement</h2>
 
 We assume that the user has a hash with the data retrieved from the database.
@@ -85,4 +89,7 @@ dispatch table and applies the appropriate function to each on of the fields.
 
 <include file="examples/mask_fields.pl">
 
+Running the above script will yield the following output:
+
+<include file="examples/mask_fields.out">
 
