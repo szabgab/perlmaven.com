@@ -80,6 +80,7 @@ Running the above script will yield the following output:
 
 <h2>Generic solution for field masking/hiding/replacement</h2>
 
+
 We assume that the user has a hash with the data retrieved from the database.
 We prepare a dispatch table, a hash, in which the keys are names of the fields that need to be masked
 and the values are references to functions that can do the masking for an individual string.
@@ -89,7 +90,24 @@ dispatch table and applies the appropriate function to each on of the fields.
 
 <include file="examples/mask_fields.pl">
 
+This line: <hl>$data->{$key} = $masks->{$key}->($data->{$key});</hl> is probabbly the key to this solution.
+On the left hand side of the assignment we "simply" de-reference a reference to a hash.
+On the right hand side we first de-reference a reference to a hash <hl>$masks->{$key}</hl>,
+and then using the <hl>->()</hl> syntax we de-refernce and call a reference to a function.
+
 Running the above script will yield the following output:
 
 <include file="examples/mask_fields.out">
+
+One idea here was to store the tranformation regexes or transformation functions in the database,
+but I would stringly recommend agains that. That creates an unnecessary attach vector because if someone
+manages to insert malicious data in the database, and that data is then executed as code,
+then effectively we allow the person to execute arbitrary code on our server.
+
+Besides, code in files and on the disk can be tested, debugged, and version controlled(!) much easily than
+data in a database.
+
+
+
+
 
