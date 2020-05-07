@@ -8,8 +8,8 @@
 
 =abstract start
 
-If you were wondering where can you find videos about Perl on YouTube, now thanks to some folks on Reddit, especially thanks to
-<a href="http://www.joaquinferrero.com/">Joaquin Ferrero</a> we have a list.
+If you were wondering where can you find videos about Perl on YouTube, now thanks to some folks on <a href="https://www.reddit.com/r/perl/comments/geeigp/perl_on_youtube/">Reddit</a>,
+especially thanks to <a href="http://www.joaquinferrero.com/">Joaquin Ferrero</a> we have a list.
 
 =abstract end
 
