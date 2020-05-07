@@ -27,7 +27,7 @@ You'll find here videos in English, Spanish, and German. (and maybe some other l
     <li><a href="https://www.youtube.com/channel/UC0Vcas2AGcUK9hHlKRSKUBg">Barcelona Perl Workshop</a> (13 subscribers) (it seems all the videos are in English)</li>
     <li><a href="https://www.youtube.com/channel/UCnJtr1q-U0OUQ0P5qT8RHWw">yapctv</a> (175 subscribers)</li>
     <li><a href="https://www.youtube.com/channel/UCdM3oybCdg_6I_LZRlqFvmA">Madrid Perl Mongers</a> (15 subscribers)</li>
-    <li><a href="https://www.youtube.com/playlist?list=PLjARR1053fYmN9oYz-H6ZI1fOkrjLz6L2">Tutorial de Perl en Español</a> (18.8K subscribers)</li>
+    <li><a href="https://www.youtube.com/playlist?list=PLjARR1053fYmN9oYz-H6ZI1fOkrjLz6L2">Tutorial de Perl en Español</a> (18,800 subscribers)</li>
     <li><a href="https://www.youtube.com/playlist?list=PLEyWBJ532xjG0X01rv4O3X5j0gcil6pyi">Curso Básico de #Perl Gratis en Español</a> (384 subscribers)</li>
     <li><a href="http://mojocasts.com/">Mojocast</a> (not on YouTube)</li>
     <li><a href="https://www.youtube.com/channel/UCIyUXbyDW6rTd5OJpDDbZsQ">Phoenix Perl Mongers</a> (454 subscribers) </li>
