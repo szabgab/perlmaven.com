@@ -13,26 +13,30 @@ If you were wondering where can you find videos about Perl on YouTube, now thank
 
 =abstract end
 
+You'll find here videos in English, Spanish, and German. (and maybe some other languages I have not noticed yet).
+
 
 <ul>
     <li><a href="https://www.youtube.com/channel/UCn7t_JB2atzCs_K4V1EwPyg">London Perl Workshop</a> (144 subscribers)</li>
     <li><a href="https://www.youtube.com/channel/UC7PuZDAIVMyE7mgkZHunXGw">YAPC EU</a> (307 subscribers)</li>
-    <li><a href="https://www.youtube.com/channel/UCPl0v0Gg-kaHYLzRsaDtEDw">German Perl Workshop</a> (67 subscribers)</li>
+    <li><a href="https://www.youtube.com/channel/UCPl0v0Gg-kaHYLzRsaDtEDw">German Perl Workshop</a> (67 subscribers) (Some videos are in English, some are in German)</li>
     <li><a href="https://www.youtube.com/channel/UCd9Fs_oZBMmTUWKJKuR_qdg">The Perl Conference</a> (295 subscribers)</li>
     <li><a href="https://www.youtube.com/channel/UCiZ6mo3Zd8z6CNm1280s7yg">London PM TV</a> (160 subscribers)</li>
     <li><a href="https://www.youtube.com/channel/UCV3oXF6JSn-WwIDa_7KMuEA">Swiss Perl Workshop</a> (81 subscribers)</li>
     <li><a href="https://www.youtube.com/channel/UCgk2wCZr5Rk-cewLTtQA_Fg">Nordic Perl Workshop and Mojoconf</a> (? subscribers)</li>
-    <li><a href="https://www.youtube.com/channel/UC0Vcas2AGcUK9hHlKRSKUBg">Barcelona Perl Workshop</a> (13 subscribers)</li>
+    <li><a href="https://www.youtube.com/channel/UC0Vcas2AGcUK9hHlKRSKUBg">Barcelona Perl Workshop</a> (13 subscribers) (it seems all the videos are in English)</li>
     <li><a href="https://www.youtube.com/channel/UCnJtr1q-U0OUQ0P5qT8RHWw">yapctv</a> (175 subscribers)</li>
     <li><a href="https://www.youtube.com/channel/UCdM3oybCdg_6I_LZRlqFvmA">Madrid Perl Mongers</a> (15 subscribers)</li>
     <li><a href="https://www.youtube.com/playlist?list=PLjARR1053fYmN9oYz-H6ZI1fOkrjLz6L2">Tutorial de Perl en Español</a> (18.8K subscribers)</li>
     <li><a href="https://www.youtube.com/playlist?list=PLEyWBJ532xjG0X01rv4O3X5j0gcil6pyi">Curso Básico de #Perl Gratis en Español</a> (384 subscribers)</li>
     <li><a href="http://mojocasts.com/">Mojocast</a> (not on YouTube)</li>
+    <li><a href="https://www.youtube.com/channel/UCIyUXbyDW6rTd5OJpDDbZsQ">Phoenix Perl Mongers</a> (454 subscribers) </li>
     <li><a href="https://www.youtube.com/playlist?list=PLw7UYp3N0eUaMgghpYRURx8NzJYg6qKSV">Test Automation with Perl</a> (1,710 subscribers)</li>
     <li><a href="https://www.youtube.com/playlist?list=PLw7UYp3N0eUYiICZUFR3p299TvjXZ4zFj">Beginner Perl Maven tutorial</a> (1,710 subscribers)</li>
     <li><a href="https://www.youtube.com/playlist?list=PLw7UYp3N0eUa3AQWUqL4t8pYrZ0b3mKYy">Advanced Perl Maven tutorial</a> (1,710 subscribers)</li>
     <li><a href="https://www.youtube.com/playlist?list=PLw7UYp3N0eUa-chb557JSrfiD8C9mYzpv">Interviews with Perl developers</a> (1,710 subscribers)</li>
     <li><a href="https://www.youtube.com/playlist?list=PLw7UYp3N0eUbuQSr0Ci1gFOWq7czvtnf6">CMOS</a> (1,710 subscribers) Interviews, some of them with Perl developers.</li>
+    <li><a href="https://www.youtube.com/playlist?list=PL7276AE613D15C5A4">Padre, the Perl IDE</a> (1,710 subscribers)</li>
 </ul>
 <!--
     <li><a href=""></a></li>
