@@ -29,6 +29,8 @@ You'll find here videos in English, Spanish, and German. (and maybe some other l
     <li><a href="https://www.youtube.com/channel/UCnJtr1q-U0OUQ0P5qT8RHWw">yapctv</a> (175 subscribers)</li>
     <li><a href="http://mojocasts.com/">Mojocast</a> (not on YouTube)</li>
     <li><a href="https://www.youtube.com/channel/UCIyUXbyDW6rTd5OJpDDbZsQ">Phoenix Perl Mongers</a> (454 subscribers) </li>
+    <li><a href="https://www.youtube.com/playlist?list=PLxavAW22r8AlyuBXU_RLQb85G9xh0mBFr">The Perl Conference in Glasgow 2018</a> (319 subscribers)</li>
+    <li><a href="https://www.youtube.com/playlist?list=PLN67UrRtAE0o6JY2GQR7XJCrpbymwWwUl">2018 The Perl Conference in Glasgow</a> (4 subscribers)</li>
 </ul>
 
 <h2>German and English</h2>
