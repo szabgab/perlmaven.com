@@ -47,6 +47,12 @@ You'll find here videos in English, Spanish, and German. (and maybe some other l
     <li><a href="https://www.youtube.com/playlist?list=PLEyWBJ532xjG0X01rv4O3X5j0gcil6pyi">Curso Básico de #Perl Gratis en Español</a> (384 subscribers)</li>
 </ul>
 
+<h2>French</h2>
+
+<ul>
+    <li><a href="https://www.youtube.com/channel/UCKd-usT0DQ3L5GwnHMmTxMA">Mongueurs de Perl</a></li>
+</ul>
+
 <h2>Various playlists of the Perl Maven + Code Maven site</h2>
 
 They are all in the same channel that has 1,710 subscribers.
