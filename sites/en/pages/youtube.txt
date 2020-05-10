@@ -50,7 +50,7 @@ You'll find here videos in English, Spanish, and German. (and maybe some other l
 <h2>French</h2>
 
 <ul>
-    <li><a href="https://www.youtube.com/channel/UCKd-usT0DQ3L5GwnHMmTxMA">Mongueurs de Perl</a></li>
+    <li><a href="https://www.youtube.com/channel/UCKd-usT0DQ3L5GwnHMmTxMA">Mongueurs de Perl</a> (150 subscribers)</li>
 </ul>
 
 <h2>Various playlists of the Perl Maven + Code Maven site</h2>
