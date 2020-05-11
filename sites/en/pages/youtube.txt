@@ -32,6 +32,9 @@ You'll find here videos in English, Spanish, French, and German. (and maybe some
     <li><a href="https://www.youtube.com/channel/UCIyUXbyDW6rTd5OJpDDbZsQ">Phoenix Perl Mongers</a> (454 subscribers) </li>
     <li><a href="https://www.youtube.com/playlist?list=PLxavAW22r8AlyuBXU_RLQb85G9xh0mBFr">The Perl Conference in Glasgow 2018</a> (319 subscribers)</li>
     <li><a href="https://www.youtube.com/playlist?list=PLN67UrRtAE0o6JY2GQR7XJCrpbymwWwUl">2018 The Perl Conference in Glasgow</a> (4 subscribers)</li>
+    <li><a href="https://www.youtube.com/channel/UCtOI4JeJkVI-ObKWoY04tVg">PerlCon Riga</a> (87 subscribers)</li>
+    <li><a href="https://www.youtube.com/playlist?list=PLN67UrRtAE0p2NxU_kmfb9wfp1nCFYSQj">2018 FOSDEM, Perl DevRoom</a> (4 subscribers)</li>
+    <li><a href="https://www.youtube.com/playlist?list=PLN67UrRtAE0pfixiCm79c_BNK7dA6o37-">Perl Interviews</a></li>
     <li><a href="https://www.youtube.com/channel/UCGsgaBYSAcia5op2Umer-9g">Perl Maven + Code Maven</a> (1,710 subscribers)</li>
 </ul>
 
