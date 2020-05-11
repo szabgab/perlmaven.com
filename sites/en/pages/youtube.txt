@@ -13,7 +13,7 @@ especially thanks to <a href="http://www.joaquinferrero.com/">Joaquin Ferrero</a
 
 =abstract end
 
-You'll find here videos in English, Spanish, and German. (and maybe some other languages I have not noticed yet).
+You'll find here videos in English, Spanish, French, and German. (and maybe some other languages I have not noticed yet).
 
 
 <h2>English</h2>
