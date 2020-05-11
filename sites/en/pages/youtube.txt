@@ -27,6 +27,7 @@ You'll find here videos in English, Spanish, French, and German. (and maybe some
     <li><a href="https://www.youtube.com/channel/UCgk2wCZr5Rk-cewLTtQA_Fg">Nordic Perl Workshop and Mojoconf</a> (? subscribers)</li>
     <li><a href="https://www.youtube.com/channel/UC0Vcas2AGcUK9hHlKRSKUBg">Barcelona Perl Workshop</a> (13 subscribers) (it seems all the videos are in English)</li>
     <li><a href="https://www.youtube.com/channel/UCnJtr1q-U0OUQ0P5qT8RHWw">yapctv</a> (175 subscribers)</li>
+    <li><a href="https://www.youtube.com/user/yapcna">Conference in the Cloud A Perl and Raku Conf</a> (2,010 subscribers)</li>
     <li><a href="http://mojocasts.com/">Mojocast</a> (not on YouTube)</li>
     <li><a href="https://www.youtube.com/channel/UCIyUXbyDW6rTd5OJpDDbZsQ">Phoenix Perl Mongers</a> (454 subscribers) </li>
     <li><a href="https://www.youtube.com/playlist?list=PLxavAW22r8AlyuBXU_RLQb85G9xh0mBFr">The Perl Conference in Glasgow 2018</a> (319 subscribers)</li>
