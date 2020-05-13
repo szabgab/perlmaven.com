@@ -39,6 +39,8 @@ Probably even more strangely using <hl>scalar</hl> on a scalar variable got us p
 
 So what happened there? Why did <hl>say length @many_strings;</hl> print 1 and why did <hl>say scalar $one_string;</hl> print "hello world"?
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
+
 <h2>How to avoid?</h2>
 
 Before trying to explain with my own words let's see what does Perl say?

@@ -34,6 +34,8 @@ you'll will need to wait a bit till we reach the references.)
 
 Let's see some code now:
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
+
 <h2>Create an empty hash</h2>
 
 <code lang="perl">

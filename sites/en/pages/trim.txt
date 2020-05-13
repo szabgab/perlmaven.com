@@ -29,6 +29,8 @@ $str =~ s/^\s+//;
 
 From the beginning of the string <hl>^</hl> take 1 or more white spaces (<hl>\s+</hl>), and replace them with an empty string.
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
+
 <h2>right trim</h2>
 
 <b>rtrim</b> or <b>rstrip</b> removes white spaces from the right side of a string:

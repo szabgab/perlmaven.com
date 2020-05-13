@@ -48,6 +48,8 @@ Basically, if you see such value printed somewhere, you know that
 the code is accessing a reference to an array and that you should probably
 change the code to access the content of that array.
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
+
 <h2>Dereferencing an array</h2>
 
 If you have a reference to an array and if you would like to access

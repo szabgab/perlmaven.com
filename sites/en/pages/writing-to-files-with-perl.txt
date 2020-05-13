@@ -29,6 +29,8 @@ the <hl>open</hl> function with a slightly strange syntax.
 
 This is a good working example and we'll get back to it, but let's start with a simpler example:
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
+
 <h2>Simple example</h2>
 
 <include file="examples/open_file_for_writing_simple.pl">

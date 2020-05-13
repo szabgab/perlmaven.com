@@ -73,6 +73,7 @@ STEP
 TEST
 </code>
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
 
 <h2>foreach</h2>
 

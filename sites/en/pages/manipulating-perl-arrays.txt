@@ -34,6 +34,8 @@ print "@names\n";     # Foo Bar
 In the special case of the original array being empty, the <hl>pop</hl> function
 will return <a href="/undef-and-defined-in-perl">undef</a>.
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
+
 <h2>push</h2>
 
 The <hl>push</hl> function can add one or more values to the end of an array.

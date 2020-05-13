@@ -63,6 +63,8 @@ If you are coming from another programming language, you might be wondering:
 The name of the program being executed, in the above case <b>programming.pl</b>, is always in the <hl>$0</hl>
 variable of Perl. (Please note, <hl>$1</hl>, <hl>$2</hl>, etc. are unrelated!)
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
+
 <h2>C programmer</h2>
 
 In case you know the <b>C programming language</b>, this is similar to <b>argv</b>, except that the

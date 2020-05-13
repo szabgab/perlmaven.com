@@ -73,6 +73,8 @@ data structure and thus we put a back-slash <hl>\</hl> in front of <hl>%grades</
 
 The order of the keys is random as hashes do not keep them in any specific order.
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
+
 <h2>Explanation</h2>
 
 Let's see the details.
