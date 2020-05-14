@@ -171,10 +171,6 @@ services but as I can see it is well hidden on the site and I don't think anyone
 It even has its own <a href="http://en.wikipedia.org/wiki/Majordomo_%28software%29">Wikipedia entry</a>.
 </div>
 
-<div class="perl-product">
-<a href="http://www.mml.org.ua/">Minimalist</a>  - Minimalistic Mailing Lists Manager.
-</div>
-
 <h2>Web mail</h2>
 
 <div class="perl-product">
