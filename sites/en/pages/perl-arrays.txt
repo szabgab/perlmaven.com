@@ -39,7 +39,6 @@ Declare and assign values:
 my @names = ("Foo", "Bar", "Baz");
 </code>
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
 
 <h2>Debugging of an array</h2>
 
@@ -211,3 +210,4 @@ $VAR1 = [
       ];
 </code>
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />

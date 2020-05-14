@@ -29,7 +29,6 @@ $str =~ s/^\s+//;
 
 From the beginning of the string <hl>^</hl> take 1 or more white spaces (<hl>\s+</hl>), and replace them with an empty string.
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
 
 <h2>right trim</h2>
 
@@ -120,5 +119,6 @@ trim $z;
 printf "<%s>\n", $z;       # <abc>
 </code>
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
 
 

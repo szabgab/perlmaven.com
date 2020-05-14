@@ -58,7 +58,6 @@ The following two examples give you the same results.
   system($cmd);
 </code>
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
 
 <h2>system with multiple arguments</h2>
 
@@ -160,3 +159,4 @@ input characters. You can force yourself to think about these issues by enabling
 
 You can read more in the <a href="/perldoc/system">documentation of system</a>.
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />

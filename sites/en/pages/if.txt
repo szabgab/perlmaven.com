@@ -38,7 +38,6 @@ The condition itself can be any Perl-expression. If it is <a href="/boolean-valu
 the statement(s) inside the curly braces will be executed. If it is <a href="/boolean-values-in-perl">false</a>,
 it will be skipped. (For what constitutes true and false, check the article about <a href="/boolean-values-in-perl">boolean values</a>.)
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
 
 <h2>Layout: Indentation</h2>
 
@@ -135,4 +134,4 @@ etc.
 Since version 5.10 came out,  it is also a valid construct in Perl. It will throw an <hl>Unimplemented</hl> exception if it is executed.
 It can be very handy, but probably a bit premature to learn so early in the <a href="/perl-tutorial">Perl Tutorial</a>.
 
-
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />

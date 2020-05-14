@@ -73,7 +73,6 @@ data structure and thus we put a back-slash <hl>\</hl> in front of <hl>%grades</
 
 The order of the keys is random as hashes do not keep them in any specific order.
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
 
 <h2>Explanation</h2>
 
@@ -360,4 +359,5 @@ if (exists $grades{"Foo Bar"}{Programming}) {
     <li><a href="/pro/printing-hash-of-hash-of-arrays-by-the-array">Hash of hashes of arrays</a></li>
 </ul>
 
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
 
