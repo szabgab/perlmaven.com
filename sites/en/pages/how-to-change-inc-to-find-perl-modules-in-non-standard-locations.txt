@@ -53,8 +53,6 @@ Can't locate My/Module.pm in @INC (@INC contains:
 
 Perl cannot find your module.
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
-
 <h2>Upgrading a Perl module</h2>
 
 On a system you are thinking to upgrade a module that came from CPAN.

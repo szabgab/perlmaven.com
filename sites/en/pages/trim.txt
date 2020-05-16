@@ -119,6 +119,3 @@ trim $z;
 printf "<%s>\n", $z;       # <abc>
 </code>
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
-
-

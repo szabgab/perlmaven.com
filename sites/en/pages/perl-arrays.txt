@@ -209,5 +209,3 @@ $VAR1 = [
         'Baz',
       ];
 </code>
-
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />

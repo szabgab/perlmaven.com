@@ -38,8 +38,6 @@ while (my $row = <$fh>) {
 }
 </code>
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
-
 <h2>Warn or keep silent</h2>
 
 Case 2: Give a warning if you cannot open the file, but keep running:

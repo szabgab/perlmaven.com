@@ -158,5 +158,3 @@ input characters. You can force yourself to think about these issues by enabling
 <b>taint mode</b> using the <hl>-T</hl> flag on the sh-bang line.
 
 You can read more in the <a href="/perldoc/system">documentation of system</a>.
-
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />

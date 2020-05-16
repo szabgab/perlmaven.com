@@ -204,5 +204,3 @@ as UTF-8. To do that you need to tell Perl, you are opening the file with UTF-8 
 open(my $fh, '>:encoding(UTF-8)', $filename)
   or die "Could not open file '$filename'";
 </code>
-
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />

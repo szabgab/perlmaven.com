@@ -28,8 +28,6 @@ match of the REGEX.
 
 <hl>split</hl> without any parameter will split the content of <hl>$_</hl> using <hl>/\s+/</hl> as REGEX.
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
-
 <h2>Simple cases</h2>
 
 <hl>split</hl> returns a list of strings:

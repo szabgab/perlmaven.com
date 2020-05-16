@@ -135,5 +135,3 @@ You can find the official description of the for-loop in the
 <b>perlsyn</b> section of the
 <a href="http://perldoc.perl.org/perlsyn.html#For-Loops">Perl documentation</a>.
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
-

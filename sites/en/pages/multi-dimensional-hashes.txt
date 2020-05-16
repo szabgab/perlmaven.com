@@ -359,5 +359,3 @@ if (exists $grades{"Foo Bar"}{Programming}) {
     <li><a href="/pro/printing-hash-of-hash-of-arrays-by-the-array">Hash of hashes of arrays</a></li>
 </ul>
 
-<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
-
