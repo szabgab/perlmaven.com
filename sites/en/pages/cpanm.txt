@@ -9,7 +9,7 @@
 =abstract start
 
 There are several ways to install Perl modules on your system from CPAN, but probably the best is to use
-<a href="https://metacpan.org/pod/App::cpanminus">App::cpanminus</a> also known as <a href="https://cpanmin.us/>cpanmin.us</a>
+<a href="https://metacpan.org/pod/App::cpanminus">App::cpanminus</a> also known as <a href="https://cpanmin.us/">cpanmin.us</a>
 or just <b>cpanm</b>.
 
 =abstract end
