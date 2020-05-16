@@ -22,3 +22,5 @@ Probably the best way to install a Perl module is to use <a href="/cpanm">cpanm<
 <code>
 cpanm Term::ReadLine::Gnu
 </code>
+
+<screencast file="welcome-to-perlmaven" youtube="nr3SSEjdpgg" />
