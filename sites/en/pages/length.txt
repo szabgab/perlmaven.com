@@ -1,0 +1,21 @@
+=title length
+=timestamp 2020-05-16T19:30:10
+=indexes length, Encode, decode
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+
+=abstract start
+=abstract end
+
+The number of characters in a string:
+
+<include file="examples/length.pl">
+
+See also the explanation in <a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a>.
+
+Alternatively check out the <a href="/length-of-an-array">length of an array</a>.
+
+<a href="https://metacpan.org/pod/perlfunc#length-EXPR">documentation</a>
+

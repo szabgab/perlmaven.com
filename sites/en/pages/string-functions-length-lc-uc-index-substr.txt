@@ -25,17 +25,7 @@ Then there is <b>length</b> to return the number of characters in the given stri
 
 See the following example:
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $str = 'HeLlo';
-
-say lc $str;      # hello
-say uc $str;      # HELLO
-say length $str;  # 5
-</code>
+<include file="examples/uc_lc_length.pl">
 
 Please note, in order to get the <a href="/length-of-an-array">length of an array</a> you don't use the <b>length</b> function.
 Instead, you put it in <a href="/scalar-and-list-context-in-perl">scalar context</a> using the <b>scalar</b> function.

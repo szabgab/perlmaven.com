@@ -17,3 +17,4 @@ You can also add a 3rd parameter that will tell <hl>index</hl> where to start th
 It is like the <a href="/rindex">rindex</a> function but starts searching from the left-hand side of the string.
 See also the explanation in <a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a>.
 
+<a href="https://metacpan.org/pod/perlfunc#index-STR-SUBSTR-POSITION">documentation</a>.

@@ -14,3 +14,4 @@
 It is like the <a href="/index-function">index</a> function but starts searching from the right-hand side.
 See also the explanation in <a href="/string-functions-length-lc-uc-index-substr">String functions: length, lc, uc, index, substr</a>.
 
+<a href="https://metacpan.org/pod/perlfunc#rindex-STR,SUBSTR,POSITION">documentation</a>
