@@ -1,0 +1,22 @@
+=title cpanm
+=timestamp 2020-05-16T21:30:01
+=indexes cpanm, cpanminus, App::cpanminus, install
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+
+=abstract start
+
+There are several ways to install Perl modules on your system from CPAN, but probably the best is to use
+<a href="https://metacpan.org/pod/App::cpanminus">App::cpanminus</a> also known as <a href="https://cpanmin.us/>cpanmin.us</a>
+or just <b>cpanm</b>.
+
+=abstract end
+
+This is the command you need to install cpanminus before you can use it to install additional modules.
+
+<code>
+curl -L https://cpanmin.us | perl - App::cpanminus
+</code>
+

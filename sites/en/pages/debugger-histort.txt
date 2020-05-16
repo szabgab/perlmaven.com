@@ -1,0 +1,24 @@
+=title History in the Perl debugger, make the up arrow work
+=timestamp 2020-05-16T22:30:01
+=indexes Term::ReadLine::Gnu, Term::ReadLine, ReadLine, debugger, -d
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+
+=abstract start
+
+Perl comes with a built-in debugger that can be invoked by passing the <hl>-d</hl> flag to perl.
+
+The default <a href="https://metacpan.org/pod/Term::ReadLine">Term::ReadLine</a> that comes with
+Perl does not provide history (pressing the up arrow) in the debugger.
+
+You need to install <a href="https://metacpan.org/pod/Term::ReadLine::Gnu">Term::ReadLine::Gnu</a> for that.
+
+=abstract end
+
+Probably the best way to install a Perl module is to use <a href="/cpanm">cpanm</a>.
+
+<code>
+cpanm Term::ReadLine::Gnu
+</code>
