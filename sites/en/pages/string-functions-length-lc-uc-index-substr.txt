@@ -46,18 +46,7 @@ Instead, you put it in <a href="/scalar-and-list-context-in-perl">scalar context
 Then there is the <b>index</b> function. This function will get two strings and return
 the location of the second string within the first string.
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $str = "The black cat climbed the green tree";
-
-say index $str, 'cat';             # 10
-say index $str, 'dog';             # -1
-say index $str, "The";             # 0
-say index $str, "the";             # 22
-</code>
+<include file="examples/index.pl">
 
 The first call to <hl>index</hl> returned 10, because the string "cat" starts on the 10th character.
 The second call to <hl>index</hl> returned -1 indicating there is no "dog" in that sentence.
@@ -79,24 +68,14 @@ say index $str, "e ";              # 2
 to start searching. So as we found "e " to start at the 2nd character of the first string,
 we could try to search starting from the 3rd place to see if there is another occurrence of "e ":
 
-<code lang="perl">
-my $str = "The black cat climbed the green tree";
-say index $str, "e ";              # 2
-say index $str, "e ", 3;           # 24
-say index $str, "e", 3;            # 19
-</code>
+<include file="examples/index_more.pl">
 
 Looking for "e" without a space will yield a different result.
 
 Lastly, there is another function called <b>rindex</b> (right index)
 that will start searching from the right hand side of the string:
 
-<code lang="perl">
-my $str = "The black cat climbed the green tree";
-say rindex $str, "e";              # 35
-say rindex $str, "e", 34;          # 34
-say rindex $str, "e", 33;          # 29
-</code>
+<include file="examples/rindex.pl">
 
 <h2>substr</h2>
 
