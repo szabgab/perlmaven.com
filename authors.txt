@@ -1,35 +1,35 @@
-aramisf;Aramis Fernandes;aramisf.jpg;https://plus.google.com/111823334458712205300
-arhuman;Arnaud Assad;;https://plus.google.com/100710257875177734406
-balasatishreddykarri;Balasatish Reddy Karri;balasatishreddykarri.png;https://plus.google.com/105558350789685960778
-bruck;Uri Bruck;uribruck.jpg;https://plus.google.com/108060244899341646747
-chsanch;Christian Sánchez;chsanch.jpg;https://plus.google.com/104433299874463240657
-davidegx;David Escribano García;davidegx.jpg;https://plus.google.com/111533339396404795696
-dmcbride;Darin McBride;dmcbride.png;https://plus.google.com/111788256959042644924
-fayland;Fayland Lam;fayland.jpg;https://plus.google.com/105867669014322690270
+aramisf;Aramis Fernandes;aramisf.jpg;https://www.linkedin.com/in/aramisfernandes/
+arhuman;Arnaud Assad;;https://www.linkedin.com/in/arnaudassad/
+balasatishreddykarri;Balasatish Reddy Karri;balasatishreddykarri.png;https://www.linkedin.com/in/balasatish/
+bruck;Uri Bruck;uribruck.jpg;https://www.linkedin.com/in/uribruck/
+chsanch;Christian Sánchez;chsanch.jpg;https://www.linkedin.com/in/chsanch/
+davidegx;David Escribano García;davidegx.jpg;https://www.linkedin.com/in/davidescribano/
+dmcbride;Darin McBride;dmcbride.png;https://www.linkedin.com/in/darin-mcbride/
+fayland;Fayland Lam;fayland.jpg;https://www.linkedin.com/in/faylandlam/
 fredlopes;Frederico José Andries Lopes;fredlopes.jpg;https://plus.google.com/101664615812027775183
-giatorta;Gianluca Torta;giatorta.jpg;https://plus.google.com/102233996322873848584
-gugod;Kang-min Liu;gugod.png;https://plus.google.com/118077021111350586131
-keedi;Keedi Kim;keedi.png;https://plus.google.com/116555192679485363257
-khadis;Khadis Thok;khadis.png;https://plus.google.com/117015659325563649853
-leprevost;Felipe da Veiga Leprevost;leprevost.jpg;https://plus.google.com/107515431915475316857
+giatorta;Gianluca Torta;giatorta.jpg;https://www.linkedin.com/in/gianluca-torta-a0206b2/
+gugod;Kang-min Liu;gugod.png;https://www.linkedin.com/in/gugod/
+keedi;Keedi Kim;keedi.png;https://www.linkedin.com/in/keedi-kim-21684757/
+khadis;Khadis Thok;khadis.png;https://www.linkedin.com/in/khadis-a3977755/
+leprevost;Felipe da Veiga Leprevost;leprevost.jpg;https://www.linkedin.com/in/leprevost/
 mca;McA;mca.png
-mguttman;Meir Guttman;mguttman.png
-nanis;A. Sinan Unur;nanis.png;https://plus.google.com/+ASinanUnur/
+mguttman;Meir Guttman;mguttman.png;https://www.linkedin.com/in/meir-guttman-17b790161/
+nanis;A. Sinan Unur;nanis.png;https://www.linkedin.com/in/sinanunur/
 oval;Olivier Valuet;;https://plus.google.com/111231154240098109931
 nselem;Nelly Selem;nellyHub.jpg;https://plus.google.com/u/0/112224471038090317539
-shatlovsky;Alex Shatlovsky;shatlovsky.png;https://plus.google.com/104990662224926649617
+shatlovsky;Alex Shatlovsky;shatlovsky.png;https://www.linkedin.com/in/shatlovsky/
 shelling;Shelling Ford;shelling.png;https://plus.google.com/113634082684193579669
-stefansbv;Ștefan Suciu;stefansbv.png;https://plus.google.com/116214972136525132964
-swuecho;Hao Wu;swuecho.png;https://plus.google.com/103923416736713796285
-szabgab;Gabor Szabo;szabgab.png;https://plus.google.com/102810219707784087582
+stefansbv;Ștefan Suciu;stefansbv.png;https://www.linkedin.com/in/stefansuciu/
+swuecho;Hao Wu;swuecho.png;https://www.linkedin.com/in/echowuhao/
+szabgab;Gabor Szabo;szabgab.png;https://www.linkedin.com/in/szabgab/
 terrencehan;Terrence Han;terrencehan.png;https://plus.google.com/115247155710052422629
-tudorconstantin;Tudor Constantin;tudorconstantin.jpg;https://plus.google.com/116443916281342539112
-paologianrossi;Paolo Gianrossi;paologianrossi.png;https://plus.google.com/106669867472720382849
-yongbin;Yongbin Yu;yongbin.jpg;https://plus.google.com/111269003708517945935
+tudorconstantin;Tudor Constantin;tudorconstantin.jpg;https://www.linkedin.com/in/tudorconstantin/
+paologianrossi;Paolo Gianrossi;paologianrossi.png;https://www.linkedin.com/in/gianrossi/
+yongbin;Yongbin Yu;yongbin.jpg;https://www.linkedin.com/in/yongbin/
 herolee;Yingjie Li;herolee.png
-thalhammer;Jeffrey Thalhammer;thalhammer.png;https://plus.google.com/114605391649378336888
+thalhammer;Jeffrey Thalhammer;thalhammer.png;https://www.linkedin.com/in/thaljef/
 vti;Вячеслав Тихановский;vti.png;https://plus.google.com/109117812087018133975
-enrique;Enrique Nell;enrique.png;https://plus.google.com/102480927985449768119
+enrique;Enrique Nell;enrique.png;https://www.linkedin.com/in/enriquenell/
 grubert65;Marco Masetti;marcomasetti.png;https://plus.google.com/105304174562920013376
 h2chang;Hsin-Hsiung Chang;
 gypark;Geunyoung Park;gypark.jpg;https://plus.google.com/102624623438100467935
