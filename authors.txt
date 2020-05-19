@@ -39,7 +39,7 @@ johnkang;John Kang;johnkang.jpg;https://plus.google.com/112513302897448870436
 ileiva;Israel Leiva;ileiva.png;https://plus.google.com/115251093728227570944
 yunchang;Yunchang Kang;yunchang.jpg;https://www.linkedin.com/in/yunchang-kang-74202647/
 spidamoo;Vladimir Zatoloka;spidamoo.jpg;https://www.linkedin.com/in/spidamoo/
-rampa;Lukáš Rampa;rampa.jpg;https://plus.google.com/109591447228309550336
+rampa;Lukáš Rampa;rampa.jpg;https://www.linkedin.com/in/lukas-rampa/
 kbeyazli;Kadir Beyazlı;kbeyazli.jpg;https://www.linkedin.com/in/kadirbeyazli/
 ovid;Curtis "Ovid" Poe;ovid.jpg;https://www.linkedin.com/in/curtispoe/
 joaquinferrero;Joaquín Ferrero;joaquinferrero.png;https://www.linkedin.com/in/joaquinferrero/
