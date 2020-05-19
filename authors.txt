@@ -30,27 +30,27 @@ herolee;Yingjie Li;herolee.png
 thalhammer;Jeffrey Thalhammer;thalhammer.png;https://www.linkedin.com/in/thaljef/
 vti;Вячеслав Тихановский;vti.png;https://plus.google.com/109117812087018133975
 enrique;Enrique Nell;enrique.png;https://www.linkedin.com/in/enriquenell/
-grubert65;Marco Masetti;marcomasetti.png;https://plus.google.com/105304174562920013376
+grubert65;Marco Masetti;marcomasetti.png;https://www.linkedin.com/in/masettimarco/
 h2chang;Hsin-Hsiung Chang;
 gypark;Geunyoung Park;gypark.jpg;https://plus.google.com/102624623438100467935
-mlx;Brian T. Wightman (MLX@cpan);;https://plus.google.com/116563303078084996059
+mlx;Brian T. Wightman (MLX@cpan);;https://www.linkedin.com/in/briantwightman/
 ggl;Gelu Lupaş;;https://plus.google.com/109248329865538291977
 johnkang;John Kang;johnkang.jpg;https://plus.google.com/112513302897448870436
 ileiva;Israel Leiva;ileiva.png;https://plus.google.com/115251093728227570944
-yunchang;Yunchang Kang;yunchang.jpg;https://plus.google.com/111798479978880511587
-spidamoo;Vladimir Zatoloka;spidamoo.jpg;https://plus.google.com/108953362301851379228
+yunchang;Yunchang Kang;yunchang.jpg;https://www.linkedin.com/in/yunchang-kang-74202647/
+spidamoo;Vladimir Zatoloka;spidamoo.jpg;https://www.linkedin.com/in/spidamoo/
 rampa;Lukáš Rampa;rampa.jpg;https://plus.google.com/109591447228309550336
-kbeyazli;Kadir Beyazlı;kbeyazli.jpg;https://plus.google.com/110621377637284058504
-ovid;Curtis "Ovid" Poe;ovid.jpg;https://plus.google.com/+CurtisPoe
-joaquinferrero;Joaquín Ferrero;joaquinferrero.png;https://plus.google.com/+Joaqu%C3%ADnFerrero
-name2rnd;Savenkova Natalya;natalya_savenkova.png;
+kbeyazli;Kadir Beyazlı;kbeyazli.jpg;https://www.linkedin.com/in/kadirbeyazli/
+ovid;Curtis "Ovid" Poe;ovid.jpg;https://www.linkedin.com/in/curtispoe/
+joaquinferrero;Joaquín Ferrero;joaquinferrero.png;https://www.linkedin.com/in/joaquinferrero/
+name2rnd;Savenkova Natalya;natalya_savenkova.png;https://www.linkedin.com/in/savenkova-natalya-ba1b7285/
 lenieto3;lenieto3;lenieto3.png;https://twitter.com/lenieto3
 ymyasoedov;Yuri Myasoedov;ymyasoedov.jpg;https://plus.google.com/111530493856272287515
 danimera;Dani Otelch;dani_otelch.png;
 rozie;Paweł Różański;rozie.jpg;
-rohan;Rohan Almeida;rohan.jpg;
-ferki;Ferenc Erki;ferki.png;
+rohan;Rohan Almeida;rohan.jpg;https://www.linkedin.com/in/rohanalmeida/
+ferki;Ferenc Erki;ferki.png;https://www.linkedin.com/in/ferki/
 dsdickinson;Steve Dickinson;dsdickinson.jpg;https://plus.google.com/+SteveDickinsonJr
 grandfather;Peter Jaquiery;grandfather.jpg;
 fenggao;Feng Gao;fenggao.jpg;https://plus.google.com/107683205430064440954
-moritz;Moritz Lenz;moritz_lenz.jpg;
+moritz;Moritz Lenz;moritz_lenz.jpg;https://www.linkedin.com/in/perlgeek/
