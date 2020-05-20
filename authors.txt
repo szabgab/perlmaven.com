@@ -16,7 +16,7 @@ mca;McA;mca.png
 mguttman;Meir Guttman;mguttman.png;https://www.linkedin.com/in/meir-guttman-17b790161/
 nanis;A. Sinan Unur;nanis.png;https://www.linkedin.com/in/sinanunur/
 oval;Olivier Valuet;;https://plus.google.com/111231154240098109931
-nselem;Nelly Selem;nellyHub.jpg;https://plus.google.com/u/0/112224471038090317539
+nselem;Nelly Selem;nellyHub.jpg;https://www.linkedin.com/in/nelly-selem-14993025/
 shatlovsky;Alex Shatlovsky;shatlovsky.png;https://www.linkedin.com/in/shatlovsky/
 shelling;Shelling Ford;shelling.png;https://plus.google.com/113634082684193579669
 stefansbv;Ștefan Suciu;stefansbv.png;https://www.linkedin.com/in/stefansuciu/
