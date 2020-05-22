@@ -6,9 +6,6 @@ menu:
       - title: Pro
         url: /pro
       - login: 1
-        title: Login
-      - title: Register
-        url: /pm/register
   - dir: right
     menu:
       - title: 'Type keyword:'
