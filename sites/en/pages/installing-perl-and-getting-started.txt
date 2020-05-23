@@ -5,7 +5,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -76,13 +76,7 @@ out the <a href="/beginner-perl-maven-video-course">Beginner Perl Maven video co
 
 Your first program will look like this:
 
-<code lang="perl">
-use 5.010;
-use strict;
-use warnings;
-
-say "Hello World";
-</code>
+<include file="examples/hello_world.pl">
 
 Let me explain it step-by-step.
 
