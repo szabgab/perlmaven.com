@@ -9,7 +9,7 @@
 
 =abstract start
 
-I am not sure if we have fully implemented the <a href="/pro/parse-bulleted-list-in-markua">bulleted list parsing</a>, but we can sat that aside for now and start to implement the <a href="https://leanpub.com/markua/read#numbered-lists">numbered lists</a>. It seems to be a lot more complicated as the bulleted list. There are a lot more options.
+I am not sure if we have fully implemented the <a href="/parse-bulleted-list-in-markua">bulleted list parsing</a>, but we can sat that aside for now and start to implement the <a href="https://leanpub.com/markua/read#numbered-lists">numbered lists</a>. It seems to be a lot more complicated as the bulleted list. There are a lot more options.
 
 Also I have a feeling that there are some issues in the spec or just some thing that I have not understood yet. I've asked Peter, the author about them. We'll see.
 
@@ -25,7 +25,7 @@ As before we start with the creation of test cases.
 
 <h2>Processing numbered lists</h2>
 
-In the case of the <a href="/pro/parse-bulleted-list-in-markua">bulleted lists</a> we constantly checked if the list is still as expected and we maintained an attribute called "ok" to indicated if it is still ok or if there was a problem.
+In the case of the <a href="/parse-bulleted-list-in-markua">bulleted lists</a> we constantly checked if the list is still as expected and we maintained an attribute called "ok" to indicated if it is still ok or if there was a problem.
 
 In the case of the numbered lists this is going to be a lot harder the numbers can be ascendig, descending, or fixed. In order to know which one and if the list behaves properly we would need the information for the whole list.
 
