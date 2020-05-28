@@ -7,7 +7,7 @@ menu:
         url: /pro
       - login: 1
       - title: Books
-        url: https://code-maven.com/books
+        url: /books
   - dir: right
     menu:
       - title: 'Type keyword:'
