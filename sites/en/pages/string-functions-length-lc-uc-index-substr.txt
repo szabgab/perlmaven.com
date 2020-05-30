@@ -73,18 +73,10 @@ I think the most interesting function in this article is <hl>substr</hl>.
 It is basically the opposite of index(). While index() will tell you
 <b>where is a given string</b>, substr will give you the <b>substring at a given locations</b>.
 Normally <hl>substr</hl> gets 3 parameters. The first one is the string. The second is a
-0-based location, also called the <b>offset</b>, and the third is the <b>length</b> of the 
+0-based location, also called the <b>offset</b>, and the third is the <b>length</b> of the
 substring we would like to get.
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $str = "The black cat climbed the green tree";
-
-say substr $str, 4, 5;                      # black
-</code>
+<include file="examples/substr.pl">
 
 substr is 0 based so the character at the offset 4 is the letter b.
 
