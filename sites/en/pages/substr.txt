@@ -14,7 +14,7 @@ Moreover <hl>substr</hl> can also replace the content of a string.
 
 =abstract end
 
-In the following exampl I have collected all the interesting cases of substr.
+In the following example I have collected all the interesting cases of substr.
 
 <include file="examples/substr_all.pl">
 
