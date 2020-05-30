@@ -42,7 +42,7 @@ Which one you use will depend on how can you best describe the location of the s
 
 The <hl>substr</hl> can also be used to make changes to a script.
 
-<include file="examples/substr_all.pl">
+<include file="examples/substr_replace.pl">
 
 <ol>
   <li>The 1st example shows what happens if you provide a 4th paramater to the <hl>substr</hl> function.
