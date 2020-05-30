@@ -18,21 +18,23 @@ In the following exampl I have collected all the interesting cases of substr.
 
 <include file="examples/substr_all.pl">
 
-In the 1st example we provide the string, the beginning of the substring and the length of it.
-So starting from character 4 give me 5 characters.
+<ol>
+  <li>In the 1st example we provide the string, the beginning of the substring and the length of it.
+So starting from character 4 give me 5 characters.</li>
 
-In the second example we omit the length so we say: give me the substring starting on character 22 till the end of the original string.
+<li>In the second example we omit the length so we say: give me the substring starting on character 22 till the end of the original string.</li>
 
-In the 3rd example the 3rd argument is a negative number. This indicates the number of characters from the end of the string that we don't want.
+<li>In the 3rd example the 3rd argument is a negative number. This indicates the number of characters from the end of the string that we don't want.
 Instead of saying how many you characters you would like, we can say how many we don't want. In the comment of the 3rd example you can also
-see an expression where we use the <a href="/length">length</a> function to get the same result. Isn't our example neater?
+see an expression where we use the <a href="/length">length</a> function to get the same result. Isn't our example neater?</li>
 
-In the 4th example we indicate the location of the starting character with a negative number. In this we indicate where to start as
-counted from the right-hand-side of the string. As if we wrote <hl>length($str)-4</hl>. In this example too you can see the expression in the comment.
+<li>In the 4th example we indicate the location of the starting character with a negative number. In this we indicate where to start as
+counted from the right-hand-side of the string. As if we wrote <hl>length($str)-4</hl>. In this example too you can see the expression in the comment.</li>
 
-In the 5th example we indicate the starting point as a negative number (so counting from the right end) and then we indicate the length.
+<li>In the 5th example we indicate the starting point as a negative number (so counting from the right end) and then we indicate the length.</li>
 
-In the 6th example we use negative number for both.
+<li>In the 6th example we use negative number for both.</li>
+</ol>
 
 Which one you use will depend on how can you best describe the location of the substring you are interested in.
 
@@ -49,3 +51,6 @@ assignment operator. However the return value of the whole expression is the sam
 and not the original part as we had in the previous expression.
 
 You can find more example about <a href="string-functions-length-lc-uc-index-substr">substr</a>.
+
+
+<a href="https://metacpan.org/pod/perlfunc#substr-EXPR,OFFSET,LENGTH,REPLACEMENT">documentation</a>
