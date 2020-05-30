@@ -6,3 +6,5 @@ text:
   login: Login
   logout: Logout
   register: Register
+  comments: If you have any comments or questions, feel free to post them on the source of this page in GitHub.
+  source: Source on GitHub.
