@@ -6,6 +6,7 @@
 =author szabgab
 =archive 1
 =comments_disqus_enable 0
+=show_related 1
 
 =abstract start
 =abstract end
@@ -18,3 +19,4 @@
 <include file="">
 <try file="">
 
+<screencast file="" youtube="" />
