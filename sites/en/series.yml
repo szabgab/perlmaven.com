@@ -1,0 +1,716 @@
+---
+perl-tutorial:
+  chapters:
+    - title: Introduction
+      sub:
+        - installing-perl-and-getting-started
+        - hashbang
+        - perl-editor
+        - help
+        - perl-on-the-command-line
+        - core-perl-documentation-cpan-module-documentation
+        - pod-plain-old-documentation-of-perl
+        - debugging-perl-scripts
+    - title: Scalars
+      sub:
+        - common-warnings-and-error-messages
+        - read-from-stdin
+        - automatic-value-conversion-or-casting-in-perl
+        - if
+        - boolean-values-in-perl
+        - numerical-operators
+        - string-operators
+        - undef-and-defined-in-perl
+        - quoted-interpolated-and-escaped-strings-in-perl
+        - here-documents
+        - scalar-variables
+        - comparing-scalars-in-perl
+        - string-functions-length-lc-uc-index-substr
+        - number-guessing-game
+        - while-loop
+        - scope-of-variables-in-perl
+        - short-circuit
+    - title: Files
+      sub:
+        - how-to-exit-from-perl-script
+        - stdout-stderr-and-redirection
+        - warn
+        - die
+        - writing-to-files-with-perl
+        - appending-to-files
+        - open-and-read-from-files
+        - open-files-in-the-old-way
+        - reading-and-writing-binary-files
+        - end-of-file-in-perl
+        - pro/tell
+        - pro/seek
+        - slurp
+    - title: Lists and Arrays
+      sub:
+        - for-loop-in-perl
+        - perl-arrays
+        - argv-in-perl
+        - how-to-process-command-line-arguments-in-perl
+        - advanced-usage-of-getopt-long-accepting-command-line-arguments
+        - perl-split
+        - how-to-read-a-csv-file-using-perl
+        - join
+        - the-year-19100
+        - scalar-and-list-context-in-perl
+        - reading-from-a-file-in-scalar-and-list-context
+        - stdin-in-scalar-and-list-context
+        - sorting-arrays-in-perl
+        - sorting-mixed-strings
+        - unique-values-in-an-array-in-perl
+        - manipulating-perl-arrays
+        - reverse-polish-calculator-in-perl
+        - using-a-queue-in-perl
+        - reverse
+        - the-ternary-operator-in-perl
+        - pro/loop-controls-next-last
+        - min-max-sum-using-list-util
+        - qw-quote-word
+    - title: Subroutines
+      sub:
+        - subroutines-and-functions-in-perl
+        - pro/passing-multiple-parameters-to-a-function
+        - variable-number-of-parameters
+        - pro/returning-a-list-from-a-subroutine
+        - recursive-subroutines
+    - title: Hashes
+      sub:
+        - perl-hashes
+        - creating-hash-from-an-array
+        - perl-hash-in-scalar-and-list-context
+        - pro/exists
+        - pro/delete
+        - how-to-sort-a-hash-in-perl
+        - count-words-in-text-using-perl
+    - title: Regular Expressions
+      sub:
+        - introduction-to-regexes-in-perl
+        - regex-character-classes
+        - regex-special-character-classes
+        - regex-quantifiers
+        - trim
+        - regex-cheat-sheet
+    - title: Shell related functionality
+      sub:
+        - file-test-operators
+        - current-working-directory
+        - running-external-programs-from-perl
+        - qx
+        - how-to-remove-copy-or-rename-a-file-with-perl
+        - reading-the-content-of-a-directory
+        - traversing-the-filesystem-using-a-queue
+    - title: CPAN
+      sub:
+        - download-and-install-perl
+        - how-to-install-a-perl-module-from-cpan
+        - how-to-change-inc-to-find-perl-modules-in-non-standard-locations
+        - how-to-add-a-relative-directory-to-inc
+    - title: Examples for using Perl
+      sub:
+        - how-to-replace-a-string-in-a-file-with-perl
+        - read-an-excel-file-in-perl
+        - create-an-excel-file-with-perl
+        - sending-html-email-using-email-stuffer
+        - perl-cgi-script-with-apache2
+        - json
+        - simple-database-access-using-perl-dbi-and-sql
+        - reading-from-ldap-in-perl-using-net-ldap
+    - title: Common warnings and error messages
+      sub:
+        - global-symbol-requires-explicit-package-name
+        - variable-declaration-in-perl
+        - use-of-uninitialized-value
+        - barewords-in-perl
+        - name-used-only-once-possible-typo
+        - unknown-warnings-category
+        - cant-use-string-as-a-hash-ref-while-strict-refs-in-use
+        - symbolic-reference-in-perl
+        - cant-locate-in-inc
+        - scalar-found-where-operator-expected
+        - my-variable-masks-earlier-declaration-in-same-scope
+        - cant-call-method-on-unblessed-reference
+        - argument-isnt-numeric-in-numeric
+        - cant-locate-object-method-via-package-1
+        - useless-use-of-hash-element-in-void-context
+        - useless-use-of-private-variable-in-void-context
+        - readline-on-closed-filehandle
+        - possible-precedence-issue-with-control-flow-operator
+        - scalar-value-better-written-as
+        - substr-outside-of-string
+        - have-exceeded-the-maximum-number-of-attempts
+        - use-of-implicit-split-to-is-deprecated
+    - title: Other
+      sub:
+        - multi-dimensional-arrays-in-perl
+        - multi-dimensional-hashes
+        - minimal-requirement-to-build-a-sane-cpan-package
+        - statement-modifiers
+        - autovivification
+        - printf
+beginner-perl-maven-video-course:
+  chapters:
+    - title: Introduction
+      sub:
+        - beginner-perl-maven-installation
+        - beginner-perl-maven-editors
+        - beginner-perl-maven-hello-world
+        - beginner-perl-maven-safety-net
+        - beginner-perl-maven-debugging
+        - beginner-perl-maven-comments
+        - beginner-perl-maven-documentation
+        - beginner-perl-maven-pod
+        - beginner-perl-maven-command-line
+        - beginner-perl-maven-exercise-hello-world
+        - beginner-perl-maven-solution-hello-world-1
+        - beginner-perl-maven-solution-hello-world-2
+    - title: Scalars
+      sub:
+        - beginner-perl-maven-scalar-values-and-variables
+        - beginner-perl-maven-common-errors
+        - beginner-perl-maven-variable-interpolation-stdin-chomp
+        - beginner-perl-maven-numerical-operators
+        - beginner-perl-maven-string-operators
+        - beginner-perl-maven-if-statement
+        - beginner-perl-maven-comparison-operators
+        - beginner-perl-maven-string-number-conversion
+        - beginner-perl-maven-compare-values
+        - beginner-perl-maven-undef
+        - beginner-perl-maven-logical-operators
+        - beginner-perl-maven-true-false
+        - beginner-perl-maven-short-circuit
+        - beginner-perl-maven-string-functions-index
+        - beginner-perl-maven-substr
+        - beginner-perl-maven-strings-in-double-quotes
+        - beginner-perl-maven-strings-in-single-quotes
+        - beginner-perl-maven-scope-of-variables
+        - beginner-perl-maven-rand-and-int
+        - beginner-perl-maven-here-documents
+        - beginner-perl-maven-exercise-rectangular
+        - beginner-perl-maven-solution-area-of-rectangular
+        - beginner-perl-maven-solution-area-prompt-and-warn
+        - beginner-perl-maven-solution-concatenation
+        - beginner-perl-maven-exercise-number-guessing-game
+        - beginner-perl-maven-solution-number-guessing-game
+    - title: Files
+      sub:
+        - beginner-perl-maven-die-warn-exit
+        - beginner-perl-maven-open-file
+        - beginner-perl-maven-open-file-all
+        - beginner-perl-maven-open-file-with-error-handling
+        - beginner-perl-maven-open-or-die
+        - beginner-perl-maven-no-such-file
+        - beginner-perl-maven-read-one-line
+        - beginner-perl-maven-while-loop
+        - beginner-perl-maven-read-file-line-by-line
+        - beginner-perl-maven-write-to-file
+        - beginner-perl-maven-sum-numbers-in-a-file
+        - beginner-perl-maven-debug-sum-numbers
+        - beginner-perl-maven-analyze-apache-log-file
+        - beginner-perl-maven-old-style-open
+        - beginner-perl-maven-exercise-add-more-statistics
+        - beginner-perl-maven-solution-add-more-statistics
+        - beginner-perl-maven-exercise-write-report-to-file
+        - beginner-perl-maven-solution-write-report-to-file
+    - title: Lists and Arrays
+      sub:
+        - beginner-perl-maven-lists-in-perl
+        - beginner-perl-maven-list-assignment
+        - beginner-perl-maven-foreach-loop-over-list
+        - beginner-perl-maven-creating-an-array
+        - beginner-perl-maven-array-assignment
+        - beginner-perl-maven-exercise-more-statistics
+        - beginner-perl-maven-array-indexes
+        - beginner-perl-maven-array-indexes-screencast
+        - beginner-perl-maven-looks-like-number
+        - beginner-perl-maven-command-line-parameters
+        - beginner-perl-maven-command-line-parameters-screencast
+        - beginner-perl-maven-process-command-line-using-getopt-long
+        - beginner-perl-maven-process-command-line-using-getopt-long-screencast
+        - beginner-perl-maven-process-csv-file
+        - beginner-perl-maven-process-csv-file-short-version
+        - beginner-perl-maven-oneliner-sum-of-csv
+        - beginner-perl-maven-text-csv-xs
+        - beginner-perl-maven-join
+        - beginner-perl-maven-exercise-improve-the-color-selector
+        - beginner-perl-maven-solution-improve-the-color-selector
+        - beginner-perl-maven-solution-improve-the-color-selector-check-input
+        - beginner-perl-maven-solution-improve-the-color-selector-force
+        - beginner-perl-maven-solution-improve-the-color-selector-colors-txt
+        - beginner-perl-maven-solution-improve-the-color-selector-filename
+        - beginner-perl-maven-exercise-improve-number-guessing-game
+        - beginner-perl-maven-solution-number-guessing-game-multiple-guesses
+        - beginner-perl-maven-solution-number-guessing-game-exit
+        - beginner-perl-maven-solution-number-guessing-game-s-show
+        - beginner-perl-maven-solution-number-guessing-game-n-next-game
+        - beginner-perl-maven-solution-number-guessing-game-d-debug-toggle
+        - beginner-perl-maven-solution-number-guessing-game-m-move-toggle
+    - title: Advanced Arrays
+      sub:
+        - beginner-perl-maven-the-year-of-19100
+        - beginner-perl-maven-array-in-context
+        - beginner-perl-maven-context-sensitivity
+        - beginner-perl-maven-filehandle-in-scalar-and-list-context
+        - beginner-perl-maven-slurp
+        - beginner-perl-maven-pop-and-push
+        - beginner-perl-maven-loop-controls-next-last
+        - beginner-perl-maven-shift-and-unshift
+        - beginner-perl-maven-shift
+        - beginner-perl-maven-reverse
+        - beginner-perl-maven-sort
+        - beginner-perl-maven-ternary-operator
+        - beginner-perl-maven-count-digits
+        - beginner-perl-maven-exercise-display-unique-rows-of-a-file
+        - beginner-perl-maven-exercise-sort-mixed-string
+        - beginner-perl-maven-solution-display-unique-rows-of-a-file
+    - title: Functions and Subroutines
+      sub:
+        - beginner-perl-maven-functions-and-subroutines
+        - beginner-perl-maven-defining-subroutines
+        - beginner-perl-maven-exercise-number-guessing-in-sub
+    - title: Hashes
+      sub:
+        - beginner-perl-maven-a-hash-and-its-uses
+        - beginner-perl-maven-creating-a-hash
+        - beginner-perl-maven-creating-a-hash-from-array
+        - beginner-perl-maven-hash-in-scalar-context
+        - beginner-perl-maven-fetching-data-from-hash
+        - beginner-perl-maven-exists-delete-hash
+        - beginner-perl-maven-counting-words-in-a-file
+        - beginner-perl-maven-dumping-hash
+        - beginner-perl-maven-exercise-parse-http-values
+        - beginner-perl-maven-solution-parse-http-values
+        - beginner-perl-maven-exercise-improve-color-selector
+        - beginner-perl-maven-solution-improve-color-selector
+        - beginner-perl-maven-exercise-sort-scores
+        - beginner-perl-maven-solution-sort-scores
+        - beginner-perl-maven-exercise-improve-apache-analyzer
+        - beginner-perl-maven-solution-improve-apache-analyzer
+        - beginner-perl-maven-exercise-parse-variable-width-fields
+        - beginner-perl-maven-solution-parse-variable-width-fields
+    - title: Regular Expressions - part 1
+      sub:
+        - beginner-perl-maven-regexes
+        - beginner-perl-maven-where-can-i-use-regexes
+        - beginner-perl-maven-simple-use-of-regex
+        - beginner-perl-maven-finding-a-string-in-a-file
+        - beginner-perl-maven-single-character-match
+        - beginner-perl-maven-match-any-character
+        - beginner-perl-maven-character-classes
+        - beginner-perl-maven-negated-character-class
+        - beginner-perl-maven-optional-characters
+        - beginner-perl-maven-any-number-of-any-character
+        - beginner-perl-maven-quantifiers
+        - beginner-perl-maven-quantifiers-on-character-classes
+        - beginner-perl-maven-exercise-regexes-1
+        - beginner-perl-maven-solution-regexes-1
+        - beginner-perl-maven-solution-regexes-2
+        - beginner-perl-maven-solution-regexes-3
+    - title: Regular Expressions - part 2
+      sub:
+        - beginner-perl-maven-alternatives
+        - beginner-perl-maven-capturing
+        - beginner-perl-maven-anchors
+        - beginner-perl-maven-more-about-character-classes
+        - beginner-perl-maven-special-character-classes
+        - beginner-perl-maven-exercise-number
+        - beginner-perl-maven-solution-number
+        - beginner-perl-maven-exercise-hexa-octal-binary
+        - beginner-perl-maven-solution-hexa-octal-binary
+        - beginner-perl-maven-exercise-roman-numbers
+    - title: Regular Expressions - part 3
+      sub:
+        - beginner-perl-maven-m-for-matching
+        - beginner-perl-maven-case-insensitive
+        - beginner-perl-maven-multiple-lines
+        - beginner-perl-maven-single-line
+        - beginner-perl-maven-x-modifier
+        - beginner-perl-maven-substitution
+        - beginner-perl-maven-global-substitution
+        - beginner-perl-maven-greedy-quantifiers
+        - beginner-perl-maven-minimal-matching
+        - beginner-perl-maven-trim
+        - beginner-perl-maven-fixing-assembly-with-perl
+        - beginner-perl-maven-split
+        - beginner-perl-maven-fixing-dates
+        - beginner-perl-maven-exercise-split-http
+        - beginner-perl-maven-solution-split-http
+        - beginner-perl-maven-exercise-split-path
+        - beginner-perl-maven-solution-split-path
+        - beginner-perl-maven-exercise-sort-snmp-numbers
+        - beginner-perl-maven-solution-sort-snmp-numbers
+        - beginner-perl-maven-exercise-parse-hours-log-file-and-create-time-report
+        - beginner-perl-maven-exercise-parse-ini-file
+        - beginner-perl-maven-exercise-parse-perl-file
+    - title: Shell to Perl
+      sub:
+        - beginner-perl-maven-shell-x
+        - beginner-perl-maven-external-programs
+        - beginner-perl-maven-unix-and-dos-commands
+        - beginner-perl-maven-file-globbing
+        - beginner-perl-maven-rename-files
+        - beginner-perl-maven-directory-handle
+        - beginner-perl-maven-file-homedir
+        - beginner-perl-maven-more-unix-commands
+        - beginner-perl-maven-file-spec
+        - beginner-perl-maven-file-find
+    - title: CPAN
+      sub:
+        - beginner-perl-maven-using-procedural-module
+        - beginner-perl-maven-using-object-oriented-module
+        - beginner-perl-maven-changing-inc
+        - beginner-perl-maven-changing-inc-relative-path
+        - beginner-perl-maven-what-is-cpan
+        - beginner-perl-maven-some-interesting-cpan-modules
+        - beginner-perl-maven-installing-modules-from-the-os-vendor
+        - beginner-perl-maven-installing-modules-with-cpan
+        - beginner-perl-maven-search-cpan-org
+        - beginner-perl-maven-cpantesters-and-cpanratings
+    - title: Applications
+      sub:
+        - beginner-perl-maven-create-linux-user
+        - beginner-perl-maven-diskspace-usage-df
+        - beginner-perl-maven-reporting-diskspace-usage-on-mail-server
+        - beginner-perl-maven-disk-usage-du
+        - beginner-perl-maven-send-email-with-attachments
+        - beginner-perl-maven-reading-excel-file
+        - beginner-perl-maven-read-fixed-width-records
+        - beginner-perl-maven-process-config-file
+advanced-perl-maven-video-course:
+  chapters:
+    - title: Libraries and Modules, Packages and Namespaces
+      sub:
+        - introduction-to-advanced-perl-course
+        - perl4-libraries
+        - the-problem-with-libraries
+        - namespaces-and-packages
+        - modules
+        - require-at-inc
+        - use-require-import
+        - import
+        - restrict-the-import
+        - on-demand-import
+        - behind-the-scenes
+        - tools-to-package-modules
+        - distribution-directory-layout
+        - makefile-pl-of-extutils-makemaker
+        - makefile-pl-of-module-install
+        - build-pl-of-module-build
+        - changes-and-readme
+        - manifest-and-manifest-skip
+        - file-and-module
+        - packaging-with-makefile-pl
+        - packaging-with-build-pl
+        - test-file
+        - how-to-create-a-perl-module-for-code-reuse
+    - title: References
+      sub:
+        - passing-two-arrays-to-a-function
+        - array-references-in-perl
+        - static-and-state-variables-in-perl
+        - filtering-values-with-perl-grep
+        - transforming-a-perl-array-using-map
+    - title: Object Oriented Programming in Perl using raw classes
+      sub:
+        - core-perl-oop-constructor
+        - core-perl-oop-getter-setter
+        - what-should-setters-return
+        - core-perl-oop-constructor-arguments
+        - accessor-with-type-constraint
+        - class-as-type-constraint
+    - title: Some other advanced topics
+      sub:
+        - always-use-strict-and-use-warnings
+        - how-to-capture-and-save-warnings-in-perl
+        - use-diagnostics-or-splain
+        - splice-to-slice-and-dice-arrays-in-perl
+        - autoload
+        - begin
+        - end
+        - how-to-sort-faster-in-perl
+        - the-default-variable-of-perl
+testing:
+  chapters:
+    - title: Testing Articles
+      sub:
+        - tap-test-anything-protocol
+        - testing-a-simple-perl-module
+        - test-for-warnings-in-a-perl-module
+        - testing-a-tree-data-structure-in-perl
+        - self-testing-with-modulino
+        - testing-for-no-warnings
+        - testing-perl-cgi
+    - title: Test Automation using Perl
+      sub:
+        - introducing-test-simple
+        - test-plan-and-test-descriptions
+        - refactoring-large-test-suite-separating-data-from-code
+        - test-without-a-plan
+        - separating-test-data-from-test-code
+        - prove-the-harness
+        - moving-over-to-test-more
+        - diag-note-explain
+        - todo-testing-a-bug
+        - using-like-to-test-without-exact-values
+        - testing-timeout-with-cmp-ok
+        - comparing-complex-data-structures-with-is-deeply
+        - done-testing
+        - multiple-expected-values
+        - is-any-to-test-multiple-expected-values
+        - is-any-create-test-module
+        - test-builder-object
+        - subtest
+        - test-for-expected-warnings
+        - what-is-the-status-of-the-current-test-script
+        - mocking-function-to-fake-environment
+        - testing-session-mocking-time
+        - testing-a-simple-tcpip-server
+mojolicious:
+  chapters:
+    - title: Mojolicious
+      sub:
+        - getting-started-with-mojolicious-lite
+        - pro/mojolicious-lite-with-embedded-templates
+        - pro/adding-layout-to-mojolicious-lite-based-application
+        - deploying-a-mojolicious-application
+dancer:
+  chapters:
+    - title: General
+      sub:
+        - getting-started-with-perl-dancer
+        - building-a-blog-engine-using-perl-dancer
+        - getting-started-with-perl-dancer-on-digital-ocean
+    - title: Dancer 1
+      sub:
+        - dancer-hello-world
+        - dancer-test-hello-world
+        - dancer-echo-get
+        - dancer-echo-post
+        - dancer-skeleton
+        - dancer-session
+    - title: Dancer 2
+      sub:
+        - migrating-from-dancer-to-dancer2
+        - hello-world-with-dancer2
+        - password-protecting-web-pages-in-dancer2
+        - counter-with-dancer-sessions
+        - uploading-files-with-dancer2
+    - title: Dancer 2 and Ajax
+      sub:
+        - ajax-and-dancer2
+        - stand-alone-ajax-client
+        - dancer2-ajax-reverse-echo
+        - refactoring-dancer2-using-before-hook
+        - silencing-the-dancer-tests
+        - add-item-to-mongodb-database
+        - add-and-retreive-items-jquery-ajax
+        - deleting-item-using-ajax-with-delete-and-options
+        - replace-manual-html-generation-by-handlebars
+        - add-date-to-items-in-mongodb
+        - convert-list-to-table-and-jquery-tablesorting-with-date-column
+        - keep-data-in-client-and-fetch-only-changes
+psgi:
+  chapters:
+    - title: PSGI/Plack
+      sub:
+        - modern-web-with-perl
+        - getting-started-with-psgi
+        - how-to-build-a-dynamic-web-application-using-psgi
+        - perl-cgi-mod-perl-psgi
+        - concurrent-requests-and-measuring-performance-with-apachebench
+        - routing-with-psgi
+        - psgi-and-ajax-for-single-page-applications
+        - asynchronous-web-server-with-psgi-and-twiggy
+        - serving-static-site-using-plack-psgi
+        - testing-psgi-based-web-applications
+        - hello-world-with-plack-cgi
+        - echo-with-plack-cgi
+cgi:
+  chapters:
+    - title: CGI
+      sub:
+        - simple-cgi-script-to-send-form-by-email
+        - hello-world-with-plain-cgi
+        - echo-with-plain-cgi
+moo:
+  chapters:
+    - title: Moo
+      sub:
+        - oop-with-moo
+        - type-checking-with-moo
+        - moose-like-type-system-for-moo
+        - moo-and-required-attributes
+        - moo-attributes-with-default-values
+        - moo-attribute-predicate-and-clearer
+        - moo-with-public-and-private-methods
+        - methods-functions-and-subroutines-in-perl
+        - inheritance-and-method-modifiers-in-moo
+        - replacing-an-attribute-with-a-method
+        - command-line-scripts-with-moo
+        - singleton-moo
+moose:
+  chapters:
+    - title: Moose
+      sub:
+        - object-oriented-perl-using-moose
+        - attribute-types-in-perl-classes-when-using-moose
+        - moose-constructor
+        - moose-test-constructor
+        - moose-test-setter-getter
+        - moose-type-constraint
+        - moose-test-type-constraint
+        - moose-classes-as-constraints
+        - moose-creating-subtypes
+        - moose-coerce-to-subtype
+mongodb:
+  chapters:
+    - title: MongoDB
+      sub:
+        - getting-started-with-mongodb-using-perl-insert-and-update
+anyevent:
+  chapters:
+    - title: Anyevent
+      sub:
+        - simple-way-to-fetch-many-web-pages
+        - fetching-several-web-pages-in-parallel-using-anyevent
+net-server:
+  chapters:
+    - title: Net::Server
+      sub:
+        - getting-started-with-net-server
+        - echo-server-with-net-server
+        - chat-server-using-net-server
+metacpan:
+  chapters:
+    - title: MetaCPAN for CPAN users
+      sub:
+        - metacpan-is-awesome
+        - jumping-from-search-cpan-org-to-metacpan-org
+        - metacpan-search-tricks
+        - metacpan-urls-and-issues
+        - cpan-mcpan-metacpan
+        - metacpan-cpantesters
+        - metacpan-recent-uploads
+        - listing-all-the-modules-in-a-namespace
+    - title: MetaCPAN for CPAN authors
+      sub:
+        - how-to-add-list-of-contributors-to-the-cpan-meta-files
+        - how-to-add-link-to-version-control-system-of-a-cpan-distributions
+        - how-to-add-the-license-field-to-meta-files-on-cpan
+    - title: MetaCPAN API calls
+      sub:
+        - fetching-meta-data-from-meta-cpan
+        - how-to-fetch-the-cpan-dependency-tree-of-a-perl-module
+        - list-all-the-perl-modules-and-distributions-in-a-namespace-using-meta-cpan
+    - title: For future MetaCPAN developers
+      sub:
+        - hacking-metacpan-the-first-steps
+        - adding-news-feed-to-metacpan
+search-cpan-org:
+  chapters:
+    - title: cloning
+      sub:
+        - search-cpan-org-authors-and-recent
+        - search-cpan-org-author
+        - create-skeleton-for-sco
+        - add-some-acceptance-tests
+        - rename-the-sco-project
+        - create-skeleton-psgi-application
+        - start-using-template-toolkit-to-show-empty-pages
+        - looking-at-specific-commit-in-github
+        - create-the-sco-look-and-feel
+        - serving-static-files-with-plack
+        - get-cpanstats-from-metacpan
+        - show-cpanstats-on-every-page
+        - add-another-static-page
+        - add-404-not-found-page
+        - protecting-from-crash
+        - list-authors-where-the-pauseid-starts-with-a-given-letter
+phonebook-with-mongodb-and-moo:
+  chapters:
+    - title: Phonebook
+      sub:
+        - updating-mongodb-with-perl
+indexing-emails-in-an-mbox:
+  chapters:
+    - title: Indexing Emails
+      sub:
+        - putting-emails-into-mongodb
+        - some-refactoring-and-add-logging-to-mail-boxer
+        - switching-to-moo-adding-command-line-parameters
+        - adding-the-to-field-to-the-mongodb-database
+        - adding-date-size-cc-and-message-id
+becoming-a-co-maintainer:
+  chapters:
+    - title: TODO
+      sub:
+        - becoming-a-co-maintainer-first-steps
+        - add-meta-data-to-cpan-distribution
+        - enable-travis-ci-for-continous-integration
+        - refactoring-tests-to-use-test-more
+        - check-test-coverage-add-compile-tests
+        - run-perl-tidy-to-beautify-the-code
+        - use-path-tiny-instead-of-readfile-and-writefile
+        - use-strict-use-warnings-no-diagnostics
+        - move-packages-to-their-own-files
+        - enable-test-perl-critic
+        - eliminating-indirect-method-calls
+        - fixing-the-release-adding-version-numbers
+        - fix-perl-critic-test-failures-reported-by-cpantesters
+        - consistent-version-numbers-of-modules
+        - perl-critic-exclude-policies-fix-others
+        - how-to-declare-requrements
+        - improve-kwalitee
+        - converting-indirect-calls
+        - fixing-test-failure-on-windows
+        - set-minimum-version-in-every-perl-file
+perl-critic:
+  chapters:
+    - title: Articles
+      sub:
+        - getting-started-with-perl-critic
+        - avoid-unwanted-bitwise-operators
+        - bare-here-documents-are-deprecated
+        - how-to-improve-my-perl-program
+        - perl-critic-one-policy
+        - private-member-data-shouldnt-be-accessed-directly
+        - require-explicit-importing-of-functions
+interviews:
+  chapters:
+    - title: Interviews
+      sub:
+        - jeffrey-thalhammer-perl-critic-and-pinto
+        - michael-schwern-on-test-automation-and-git
+        - dave-rolsky
+        - tadeusz-sosnierz
+        - stevan-little
+        - john-sj-anderson-genehack
+        - jay-hannah
+        - chad-granum
+        - neil-bowers
+        - dave-miller
+markua:
+  chapters:
+    - title: Markua parser
+      sub:
+        - start-writing-the-markua-parser
+        - creating-makefile-pl-and-a-cpan-distribution-for-the-markua-parser
+        - travis-ci-for-markua-parser
+        - add-coverage-reporting-with-coveralls-to-markua-parser
+        - enable-appveyor-for-the-perl5-markua-parser
+        - process-the-six-headers-of-markua
+        - refactor-test-cases-of-markua-parser
+        - collecting-errors-while-parsing-markua
+        - get-coveralls-notify-when-test-coverage-shrinks
+        - consider-everything-to-be-a-paragraph-in-markua
+        - markua-resources-include-files
+        - generate-test-expectations-for-markua-parser
+        - parse-bulleted-list-in-markua
+        - parse-numbered-list-in-markua
+        - pro/release-markua-parser-to-cpan
+        - pro/add-attributes-to-markua-round-1
+        - devel-cover-for-markua-parser
+
