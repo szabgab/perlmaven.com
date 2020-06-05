@@ -474,7 +474,7 @@ mojolicious:
       sub:
         - getting-started-with-mojolicious-lite
         - pro/mojolicious-lite-with-embedded-templates
-        - pro/adding-layout-to-mojolicious-lite-based-application
+        - adding-layout-to-mojolicious-lite-based-application
         - deploying-a-mojolicious-application
 dancer:
   chapters:
