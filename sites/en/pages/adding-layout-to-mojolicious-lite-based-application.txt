@@ -9,7 +9,7 @@
 =abstract start
 
 In the previous article we saw how we can move our HTML to
-<a href="/pro/mojolicious-lite-with-embedded-templates">embedded templates</a>.
+<a href="/mojolicious-lite-with-embedded-templates">embedded templates</a>.
 
 We even had an exercise to create a template for the <hl>/</hl> route.
 
@@ -304,7 +304,7 @@ A favicon.ico file can be also cute. You can create one <a href="http://www.favi
 
 
 
-As in the <a href="/pro/mojolicious-lite-with-embedded-templates">previous article</a>,
+As in the <a href="/mojolicious-lite-with-embedded-templates">previous article</a>,
 we have a <a href="https://github.com/PerlMaven/mojolicious-lite-move-template-to-file">GitHub repository</a> again.
 You are more than welcome to fork it, send a pull
 request and even to comment the solutions created by other people.

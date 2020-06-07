@@ -473,7 +473,7 @@ mojolicious:
     - title: Mojolicious
       sub:
         - getting-started-with-mojolicious-lite
-        - pro/mojolicious-lite-with-embedded-templates
+        - mojolicious-lite-with-embedded-templates
         - adding-layout-to-mojolicious-lite-based-application
         - deploying-a-mojolicious-application
 dancer:
