@@ -710,7 +710,7 @@ markua:
         - generate-test-expectations-for-markua-parser
         - parse-bulleted-list-in-markua
         - parse-numbered-list-in-markua
-        - pro/release-markua-parser-to-cpan
+        - release-markua-parser-to-cpan
         - pro/add-attributes-to-markua-round-1
         - devel-cover-for-markua-parser
 
