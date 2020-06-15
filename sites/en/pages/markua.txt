@@ -6,6 +6,7 @@
 =archive 1
 =comments_disqus_enable 1
 =sample 1
+=show_related 0
 
 =abstract start
 
