@@ -711,6 +711,6 @@ markua:
         - parse-bulleted-list-in-markua
         - parse-numbered-list-in-markua
         - release-markua-parser-to-cpan
-        - pro/add-attributes-to-markua-round-1
+        - add-attributes-to-markua-round-1
         - devel-cover-for-markua-parser
 
