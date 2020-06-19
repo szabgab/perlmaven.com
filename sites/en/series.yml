@@ -43,7 +43,7 @@ perl-tutorial:
         - reading-and-writing-binary-files
         - end-of-file-in-perl
         - pro/tell
-        - pro/seek
+        - seek
         - slurp
     - title: Lists and Arrays
       sub:

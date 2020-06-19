@@ -231,7 +231,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/reading-and-writing-binary-files">Binary mode - reading and writing binary files</a></li>
     <li><a href="/end-of-file-in-perl">eof, end of file in Perl</a></li>
     <li><a href="/pro/tell">tell</a></li>
-    <li><a href="/pro/seek">seek</a></li>
+    <li><a href="/seek">seek</a></li>
     <li>truncate</li>
     <li><a href="/slurp">Slurp mode</a></li>
 </ol>
