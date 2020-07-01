@@ -1,6 +1,6 @@
 =title Compare the speed of Perl and Python regexes
-=timestamp 2020-01-01T09:30:01
-=indexes grep, Python, re, time
+=timestamp 2020-01-07T09:30:01
+=indexes Perl, Python, re, time
 =status show
 =author szabgab
 =archive 1
