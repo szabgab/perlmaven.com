@@ -3,6 +3,7 @@
 =status show
 =show_date 0
 =author 0
+=description Find answers to all your Perl related questions on the Perl Maven site. Watch the beginner and advanced video series. Learn about web application developmen in Perl.
 =archive 0
 =comments_disqus_enable 0
 =show_related 0
