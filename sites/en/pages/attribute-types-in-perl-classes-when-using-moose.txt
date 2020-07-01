@@ -3,6 +3,7 @@
 =indexes OOP, Moose, object oriented, class, object, instance, constructor, getter, setter, accessor, attribute
 =status show
 =books advanced, moose
+=description Moose is the most comprehensive OOP framework for Perl. This article covers the attribute types avaliable in Moose.
 =author szabgab
 =comments_disqus_enable 1
 

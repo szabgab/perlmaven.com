@@ -3,6 +3,7 @@
 =indexes PSGI, Plack::Request, AnyEvent, Twiggy
 =status show
 =books psgi, anyevent
+=description Twiggy is an asynchronous application server for Perl compatible with PSGI. Check out our example on how to use it.
 =author szabgab
 =comments_disqus_enable 1
 
@@ -31,53 +32,7 @@ The line <hl>my $request = Plack::Request->new($env);</hl> gets the current requ
 if the <hl>field</hl> parameter has been supplied. If not, we immediately return (after the if-block) with the
 simple content returned by the <hl>get_html</hl> function.
 
-<code lang="perl">
-#!/usr/bin/perl
-use strict;
-use warnings;
-
-use Plack::Request;
-
-my $app = sub {
-    my $env = shift;
- 
-    my $html = get_html();
-
-    my $request = Plack::Request->new($env);
-    if ($request->param('field')) {
-        return sub {
-            my $response = shift;
-            my $t;
-            $t = AnyEvent->timer(after => 2, cb => sub {
-                undef $t;
-                $html .= 'You said: ' . $request->param('field') . '<br>';
-                return $response->([
-                    '200',
-                    [ 'Content-Type' => 'text/html' ],
-                    [ $html ],
-                ]);
-            });
-        };
-    }
-
-    return [
-        '200',
-        [ 'Content-Type' => 'text/html' ],
-        [ $html ],
-    ];
-}; 
-
-sub get_html {
-    return q{
-      <form>
-
-      <input name="field">
-      <input type="submit" value="Echo">
-      </form>
-      <hr>
-    }
-}
-</code>
+<include file="examples/async_echo_delay.psgi">
 
 The interesting part is what happens when the "field" has a true value and we enter the if-block.
 In there, we create and return an anonymous function. Once that function is returned, the application
@@ -123,7 +78,7 @@ Completed 200 requests
 Finished 200 requests
 
 
-Server Software:        
+Server Software:
 Server Hostname:        127.0.0.1
 Server Port:            5000
 
