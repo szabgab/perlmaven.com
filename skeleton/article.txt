@@ -5,6 +5,7 @@
 =books dancer
 =author szabgab
 =archive 1
+=description
 =comments_disqus_enable 0
 =show_related 1
 
