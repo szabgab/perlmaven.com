@@ -10,7 +10,7 @@
 =abstract start
 
 After writing the article on <a href="https://code-maven.com/compare-the-speed-of-grep-with-python-regex">comparing the speed of <b>grep</b> with <b>Python</b> regexes</a>
-and arriving to the conclusiong that grep is 50-100 times faster I though, what about <b>Perl</b>?
+and arriving to the conclusiong that grep is 50-100 times faster than Python I thought, what about <b>Perl</b>?
 
 =abstract end
 
