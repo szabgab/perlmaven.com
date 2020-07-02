@@ -26,7 +26,7 @@ In the original article you can also find the script that generated the text fil
 
 <include file="examples/grep_speed.py">
 
-<h2>Grep with Python regexes</h2>
+<h2>Grep with Perl regexes</h2>
 
 <include file="examples/grep_speed.pl">
 
