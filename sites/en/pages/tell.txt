@@ -1,0 +1,54 @@
+=title tell how far have we read a file
+=timestamp 2020-07-03T14:30:01
+=indexes tell, read
+=status show
+=books beginner
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+In very rare cases you might need very some very fine-tuned file reading operations in which after reading some part of a file you might need to re-read that part,
+or you might need to jump over large sections of a file. The two tools for this are <hl>tell</hl> and <hl>seek</hl>.
+
+<hl>tell</hl> can, well, tell you the current position of the filehandle. How far are the reader head from the beginning of the file.
+
+<hl>seek</hl> can move the current position of the filehandle very fast.
+
+=abstract end
+
+<h2>tell</h2>
+
+In the first example we expect a filename on the command line. After opening it, first we use the readline operator to read the first line. The we display the content of this line, the size of it and what <hl>tell</hl> thinks of the location of the file reader.
+
+Then we use the <hl>read</hl> function that we saw when we were dealing with <a href="/reading-and-writing-binary-files">binary files</a> to read in another 20 bytes. This time instead of reading a whole line we read a chunk that might be shorter or longer than a line. Then we print the content again together with the current location of the reader and the size of what we read in.
+
+<include file="examples/read-and-tell.pl">
+
+The easiest might be to feed the script with itself. That is, use the script as the parameter as well. That way we don't need to prepare an additional input file for the example.
+So we run this:
+
+<code>
+$  perl examples/read-and-tell.pl examples/read-and-tell.pl
+</code>
+
+The result looks like this:
+
+<code>
+'use strict;
+'
+12
+12
+'use warnings;
+use 5.'
+20
+32
+</code>
+
+Here we can see that the readline operator <hl>&lt;$fh&gt;</hl> read in the first line including the trailing newline. It was 12 bytes long and thus the file-reader is at position 12.
+
+Then the instruction to read in 20 bytes read in the next line and a few bytes from the 3rd line as well. The length of what we read is not very surprisingly 20. After all that's the number we asked for. The only way that this will read in a different number of bytes is if the file does not have that many bytes left.
+
+We can then observer that the current position of the reader is 32 bytes from the head of the file. That is 12+20.
+

@@ -85,7 +85,7 @@ ranus
 68
 </code>
 
-After opening the file <a href="/pro/tell">tell</a> will return 0 as we are at the beginning of the file.
+After opening the file <a href="/tell">tell</a> will return 0 as we are at the beginning of the file.
 Then we read a line (and chomp off the newline from the end). This is "Ceres".
 <hl>tell</hl> now returns 6 as our read operations stopped after the newline which is 1 character on Linux and Unix.
 so we read the 5 characters of Ceres and the newlines.

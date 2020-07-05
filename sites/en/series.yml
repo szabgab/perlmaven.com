@@ -42,7 +42,7 @@ perl-tutorial:
         - open-files-in-the-old-way
         - reading-and-writing-binary-files
         - end-of-file-in-perl
-        - pro/tell
+        - tell
         - seek
         - slurp
     - title: Lists and Arrays
