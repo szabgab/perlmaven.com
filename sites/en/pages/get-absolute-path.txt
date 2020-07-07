@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=description
+=description Convert a relative file or directory path to an absolute or canonical path.
 =comments_disqus_enable 0
 =show_related 1
 
