@@ -1,6 +1,6 @@
 =title How to contribute to an Open Source Perl project
-=timestamp 2017-08-19T07:30:01
-=indexes Open Source
+=timestamp 2020-07-10T18:30:01
+=indexes Open Source, MetaCPAN, CPANCover, Travis-CI
 =status show
 =author szabgab
 =archive 1
@@ -9,13 +9,31 @@
 =abstract start
 
 In the article on <a href="/how-to-prepare-for-a-perl-job-interview">how to prepare for a Perl job interview</a>,
-I mentioned, one of the best ways to improve your <b>hireability</b> is to constantly learn new things, and constantly improve yourself.
+I mentioned, one of the best ways to improve your <b>hire-ability</b> is to constantly learn new things, and constantly improve yourself.
 
 There is a generic article on <a href="https://code-maven.com/how-to-contribute-to-an-open-source-project">how to contribute to an Open Source project</a>.
 
 Let me collect a few specific related to Perl.
 
 =abstract end
+
+<h2>Low hanging fruit vs. a more involved contribution?</h2>
+
+If you have never contributed to any Open Source project then I think the best thing is to start by small and relatively external contributions.
+Find a small and relatively new CPAN module and contribute something small. e.g. a test-case for which you "only" need to know how to use the module
+you don't need to understand the code.
+
+You could also write an example on how to use the module and improve the documentation.
+
+In any case I'd select a recently uploaded module to <a href="https://metacpan.org/">MetaCPAN</a> because you have more chances of finding an active author
+and thus you have abetter chance for your contribution to be dealt with soon.
+
+Alternatively you could pick a large and complex project you have already used and try to fix a bug there or add a feature. It requires a lot more involvement
+and a lot more time investment, but the potential reward is also bigger.
+
+I'd probably start with small projects and once I got used to the idea and once I had a few successes I'd get more involved in the small projects and
+then move on to larger ones.
+
 
 <h2>Finding a project</h2>
 
@@ -63,7 +81,7 @@ a good path for your self-education.
 <h2>License and link to GitHub</h2>
 
 A low hanging fruit is to <a href="/how-to-add-the-license-field-to-meta-files-on-cpan">add a license</a> to the META files of
-a distribution, or if it does not have a link to its GitHub repository then 
+a distribution, or if it does not have a link to its GitHub repository then
 <a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">add a link to GitHub</a>.
 
 <h2>Continuous Integration</h2>
@@ -74,6 +92,48 @@ a distribution, or if it does not have a link to its GitHub repository then
 
 There are tons of articles written by <a href="http://neilb.org/">Neil Bowers</a> covering topics related to CPAN
 and contributing to CPAN. Check out his writings.
+
+
+<h2>Tasks that you could do</h2>
+
+<h3>CPAN Cover Site - order by date</h3>
+
+It would be nice if we could look at <a href="http://cpancover.com/">CPAN Cover</a> and see the information about the most recently uploaded
+modules, or at least we could look at the list of modules there ordered by their upload date. The logic is that recently uploaded modules
+are maintained more actively so contributing there would more likely to be accepted.
+
+<h3>CPAN Cover site - order by coverage</h3>
+
+It would be nice if on <a href="http://cpancover.com/">CPAN Cover</a> we could see the modules listed in order of the test coverage they have.
+The idea that contributing to modules with low coverage is probably easier and have bigger impact on that specific module.
+
+<h3>Link from MetaCPAN to CPAN Cover</h3>
+
+It would be nice if each module on <a href="https://metacpan.org/">MetaCPAN</a> would link to its information on <a href="http://cpancover.com/">CPAN Cover</a>.
+
+<h3>Fix Kwalitee of a module</h3>
+
+Find a module on <a href="https://metacpan.org/">MetaCPAN</a>, (looking at the recently uploaded modules could be a good idea), follow
+the link to its Kwalitee metric on the top left side. Try to improve this metric.
+
+<h3>Add test to a module</h3>
+
+Find a module on <a href="https://metacpan.org/">MetaCPAN</a> that has no tests, or that has low test-coverage.
+(See <a href="http://cpancover.com/">CPAN Cover</a> for that information).
+Add tests to the module to increase test coverage.
+
+<h3>Add CI to a CPAN module</h3>
+
+Find a module on <a href="https://metacpan.org/">MetaCPAN</a> that already has test and check if the module has any
+of the CI systems enabled. e.g. <a href="https://travis-ci.org/">Travis-CI</a>. If not, fork the module, make sure it
+can be tested on Travis-CI and then send a Pull-request explaining the author what to do.
+Here is an explanation how to <a href="/enable-travis-ci-for-continous-integration">enable Travis-CI for Continuous Integration</a>
+
+
+
+
+
+
 
 
 
