@@ -1,0 +1,22 @@
+=title DWIM Perl
+=timestamp 2020-07-13T07:30:01
+=indexes PerlMaven
+=status show
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Dwimperl was a Perl distribution that included a lot of pre-compile CPAN modules. As the project has not been maintained for a long period of
+time its website was disabled.
+
+=abstract end
+
+
+You can find the <a href="https://github.com/dwimperl/dwimperl.com">source of the website</a> and in general
+the <a href="https://github.com/dwimperl">sources of the project</a> on GitHub.
+
+Feel free to reuse them as you find that fit.
