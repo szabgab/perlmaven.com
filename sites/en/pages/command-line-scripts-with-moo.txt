@@ -22,17 +22,7 @@ Of course these scripts will also need to accept parameters from the command lin
 
 Let's save the following code as <hl>process.pl</hl>:
 
-<code lang="perl">
-use Moo;
-use 5.010;
-
-sub run {
-    my ($self) = @_;
-    say 'Processing ...';
-}
-
-main->new->run;
-</code>
+<include file="examples/moo-cli-1/process.pl">
 
 We don't create a separate file with a separate module, but we <hl>use Moo</hl> right at the beginning of the script.
 (Of course we could have added a sh-bang line like this: <hl>#!/usr/bin/env perl</hl> as the first line of the script,
@@ -86,21 +76,7 @@ and pass it to the constructor.
 
 The new version of the script looks like this:
 
-<code lang="perl">
-use Moo;
-use 5.010;
-
-has file => (is => 'ro', required => 1);
-
-sub run {
-    my ($self) = @_;
-    say 'Processing ' . $self->file;
-}
-
-my $file = shift or die "Usage: $0 FILE\n";
-
-main->new(file => $file)->run;
-</code>
+<include file="examples/moo-cli-2/process.pl">
 
 If we run it without any parameters: <hl>perl process.pl</hl> we will get <hl>Usage: process.pl FILE</hl>
 and if we provide a parameter <hl>perl process.pl data.txt</hl> it will print <hl>Processing data.txt</hl>.
@@ -130,25 +106,7 @@ not obvious what the <hl>1</hl> means on the command line.
 
 The new version of the script looks like this:
 
-<code lang="perl">
-use Moo;
-use 5.010;
-
-has verbose => (is => 'ro');
-has file    => (is => 'ro', required => 1);
-
-sub run {
-    my ($self) = @_;
-    if ($self->verbose) {
-        say 'Processing ' . $self->file;
-    }
-}
-
-my ($file, $verbose) = @ARGV;
-die "Usage: $0 FILE [1]\n" if not $file;
-
-main->new(file => $file, verbose => $verbose)->run;
-</code>
+<include file="examples/moo-cli-3/process.pl">
 
 <hl>perl process.pl</hl> will print <hl>Usage: process.pl FILE [1]</hl>
 
@@ -189,23 +147,7 @@ a name without any value: <hl>-v</hl> for the single-character version, or <hl>-
 <a href="https://metacpan.org/pod/MooX::Options">MooX::Options</a> is an extension of <a href="https://metacpan.org/pod/Moo">Moo</a>
 that solves problem 2 above. Let's see the new version of our code. Still not perfect, but a step in the right direction:
 
-<code lang="perl">
-use Moo;
-use MooX::Options;
-use 5.010;
-
-option verbose => (is => 'ro');
-option file    => (is => 'ro', required => 1);
-
-sub run {
-    my ($self) = @_;
-    if ($self->verbose) {
-        say 'Processing ' . $self->file;
-    }
-}
-
-main->new_with_options->run;
-</code>
+<include file="examples/moo-cli-4/process.pl">
 
 After loading the module with <hl>use MooX::Options;</hl>, we replaced the <hl>has</hl> statements by
 <hl>option</hl> statements. The <hl>option</hl> statements do everything the <hl>has</hl> statements do,
@@ -386,32 +328,7 @@ foreach my $ip (@{ $self->ips }) {
 
 Let's conclude this article with the full example we have developed:
 
-<code lang="perl">
-use Moo;
-use MooX::Options;
-use 5.010;
-use Data::Dumper qw(Dumper);
-
-option verbose => (is => 'ro', doc => 'Print details');
-option file    => (is => 'ro', required => 1, format => 's',
-    doc => 'File name to be processed');
-
-has counter => (is => 'rw', default => 0);
-option ips => (is => 'ro', doc => 'IP addresses', format => 's@', default => sub { [] } );
-
-sub run {
-    my ($self) = @_;
-    if ($self->verbose) {
-        say 'Processing ' . $self->file;
-        say Dumper $self->ips;
-        foreach my $ip (@{ $self->ips }) {
-            say $ip;
-        }
-    }
-}
-
-main->new_with_options->run;
-</code>
+<include file="examples/moo-cli-full/process.pl">
 
 <h2>Exercise 1</h2>
 
