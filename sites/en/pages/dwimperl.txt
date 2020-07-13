@@ -13,7 +13,25 @@
 Dwimperl was a Perl distribution that included a lot of pre-compile CPAN modules. As the project has not been maintained for a long period of
 time its website was disabled.
 
+Instead of that I suggest:
+
 =abstract end
+
+<h2>MS Windows</h2>
+
+<a href="http://strawberryperl.com/">Strawberry Perl</a>
+
+<h2>Linux</h2>
+
+The Perl that comes with the Operating System.
+
+<!--
+<h2>Apple Mac OSX</h2>
+-->
+
+<h2>DWIM Perl</h2>
+
+If you'd really like to find DWIM Perl you can do so on GitHub:
 
 
 You can find the <a href="https://github.com/dwimperl/dwimperl.com">source of the website</a> and in general
