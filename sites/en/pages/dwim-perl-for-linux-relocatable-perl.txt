@@ -7,9 +7,9 @@
 
 =abstract start
 
-The last couple of days I've spent re-building <a href="http://dwimperl.szabgab.com/linux.html">DWIM Perl for Linux</a> using a cpanfile, carton,
+The last couple of days I've spent re-building <a href="/dwimperl">DWIM Perl for Linux</a> using a cpanfile, carton,
 running builds on Travis-CI and on a <a href="/digitalocean">Digital Ocean Droplet</a>.
-<a href="http://dwimperl.szabgab.com/linux.html">DWIM Perl for Linux</a> is a <b>batteries included</b> binary distribution of
+<a href="/dwimperl">DWIM Perl for Linux</a> is a <b>batteries included</b> binary distribution of
 <b>standard perl + lots of CPAN modules</b>. The hope that it will make
 it extremely easy for people to get started using Perl. Without the need to encounter the installation headaches that might come with cpan.
 
@@ -32,8 +32,8 @@ I compiled and originally installed this perl to the <b>/home/dwimperl/dwimperl-
 
 One solution would be to send a patch to the maintainers of <a href="https://metacpan.org/pod/Test::Differences">Test::Differences</a>
 to use <hl>$^X</hl> instead of <hl>$Config{perlpath}</hl>, but I am not sure they'd accept, I don't know if this would be right to do,
-and most importantly, this would only solve this specific case. Surely there are going to be other modules using <hl>$Config{perlpath}</hl> 
-and they'd be broken as well. Even the real users of <a href="http://dwimperl.szabgab.com/linux.html">DWIM Perl for Linux</a> might us that value
+and most importantly, this would only solve this specific case. Surely there are going to be other modules using <hl>$Config{perlpath}</hl>
+and they'd be broken as well. Even the real users of <a href="/dwimperl">DWIM Perl for Linux</a> might us that value
 and the system will be broken for them.
 
 <h2>Skip the test</h2>

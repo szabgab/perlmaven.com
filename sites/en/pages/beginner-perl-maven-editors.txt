@@ -46,8 +46,6 @@ Here are a few recommended ones.
 <ul>
   <li><a href="http://www.activestate.com/">Komodo of ActiveState</a></li>
   <li><a href="http://www.eclipse.org/">Eclipse</a> with EPIC</li>
-  <li><a href="http://padre.perlide.org/">Padre, the Perl IDE</a> (bundled with <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>)
-  (Padre stands for <b>Perl Application Development and Refactoring Environment</b>)</li>
 </ul>
 
 See also the article about <a href="/perl-editor">editors and IDEs</a> with some extra comments

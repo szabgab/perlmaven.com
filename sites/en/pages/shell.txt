@@ -8,10 +8,10 @@
 =abstract start
 
 While this site is primarily about Perl programming, a real Perl Maven needs to be familiar with a lot of other technologies. Not only Perl. This page is a collection of expressions in
-Bash, one of the most commonly used Unix/Linux shell language. 
+Bash, one of the most commonly used Unix/Linux shell language.
 
 I am not a frequent Shell-script writer, but for example I needed this for the
-build script of <a href="http://dwimperl.szabgab.com/linux.html">DWIM Perl for Linux</a>.
+build script of <a href="/dwimperl">DWIM Perl for Linux</a>.
 
 =abstract end
 

@@ -25,12 +25,10 @@ You can also <a href="/beginner-perl-maven-installation">watch the related video
 
 <h2>Windows</h2>
 
-For Windows we are going to use <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>. It is a package
-that contains the Perl compiler/interpreter, <a href="http://padre.perlide.org/">Padre, the Perl IDE</a>
-and a number of extensions from CPAN.
+For Windows we are going to use <a href="http://strawberryperl.com/">Strawberry Perl</a>.
 
-In order to get started visit the website of <a href="http://dwimperl.szabgab.com/">DWIM Perl</a>
-and follow the link to download <b>DWIM Perl for Windows</b>.
+In order to get started visit the website of <a href="http://strawberryperl.com/">Strawberry Perl</a>
+and follow the link to download it.
 
 Go ahead, download the exe file and install it on your system. Before doing so,
 please make sure you don't have any other Perl installed.

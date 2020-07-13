@@ -44,10 +44,7 @@ This means that the so called <b>system Perl</b> on Linux distributions will be 
 
 There are a number of distributors of Perl on Windows.
 
-Currently I recommend the
-<a href="http://dwimperl.szabgab.com/windows.html">DWIM Perl for Windows</a> distribution.
-It is a derivative of the very successful <a href="http://strawberryperl.com/">Strawberry Perl</a> distribution
-with hundreds of extra Perl modules from CPAN. (Disclosure: I am the maintainer of DWIM Perl).
+Currently I recommend the <a href="http://strawberryperl.com/">Strawberry Perl</a> distribution.
 
 Besides coming with Padre, <a href="http://padre.perlide.org/">the Perl IDE</a>, it also includes
 <a href="http://moose.perl.org/">Moose, the postmodern object oriented programming</a> framework of Perl.

@@ -203,7 +203,7 @@ Show notes:
     people that: look I gave, so you can also give. Because without that it's like "go ahead and give money",
     a bit funny.
     And well I definitely would like to see Pinto succeed and be better and maybe I could use
-    it for the <a href="http://dwimperl.szabgab.com/">DWIM Perl</a> packaging,
+    it for the <a href="/dwimperl">DWIM Perl</a> packaging,
     but maybe the main reason was Perl::Critic actually,
     that I have been using Perl::Critic for a long time, I used it at a lot customers.
     So basically I think I made a lot of money or allowed me to earn some money,

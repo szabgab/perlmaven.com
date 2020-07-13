@@ -47,8 +47,6 @@ with the documentation of <a href="https://metacpan.org/pod/DBI">DBI</a> so let 
 
 I'll use SQLite to demonstrate the examples. That will make it
 very easy for you to try them on your computer.
-(e.g All versions of <a href="http://dwimperl.com/">DWIM Perl</a> already come
-with the necessary modules.)
 
 <code lang="perl">
 #!/usr/bin/perl

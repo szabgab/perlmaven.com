@@ -16,8 +16,7 @@ you can install as root.
 
 If you don't have those prerequisites then you will need to build the modules on another, similar machine
 where you do have root rights and then transfer the whole directory tree. That's another story that
-will be covered in a separate article. In that situation you'd be probably better off downloading and using
-<a href="http://dwimperl.szabgab.com/">DWIM Perl</a>
+will be covered in a separate article.
 
 =abstract end
 

@@ -23,7 +23,7 @@ first (and very basic) web application using Perl Dancer <b>regardless of your o
 
 <div id="text">
 
-Showing how to install <a href="http://dwimperl.szabgab.com/">DWIM Perl on Windows</a>, 
+Showing how to install <a href="/dwimperl">DWIM Perl on Windows</a>,
 configure the cmd window enlarging the fonts and resizing the window.
 
 Then we upgrade Dancer using <hl>cpanm --verbose Dancer</hl>.

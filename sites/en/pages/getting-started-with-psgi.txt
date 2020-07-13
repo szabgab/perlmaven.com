@@ -34,8 +34,8 @@ In order to be able to run the example, first you need to have <a href="http://p
 I won't go into <a href="/how-to-install-a-perl-module-from-cpan">details</a> how to do that, in general you should be able to type
 <hl>cpan Plack</hl>, or <hl>cpanm Plack</hl>.
 
-If you are using Windows, then the <a href="http://dwimperl.com/">DWIM Perl for Windows</a>
-distribution already includes Plack.
+If you are using Windows, then the use <a href="http://strawberryperl.com/">Strawberry Perl for Windows</a>
+distribution and install Plack.
 
 <h2>First script</h2>
 

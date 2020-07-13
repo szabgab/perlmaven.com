@@ -20,9 +20,8 @@ you have, let's see the instructions:
 
 <h2>Strawberry Perl or DWIM Perl on Windows</h2>
 
-Both <a href="http://strawberryperl.com/">Strawberry Perl</a>,
-and its derivative <a href="http://dwimperl.szabgab.com/">DWIM Perl for Windows</a>
-come with an already configured cpan client.
+<a href="http://strawberryperl.com/">Strawberry Perl</a>,
+comes with an already configured cpan client.
 
 Open the Command Window (Start -> Run -> type in cmd) When you get the "DOS" prompt
 type in <hl>cpan PadWalker</hl>.
