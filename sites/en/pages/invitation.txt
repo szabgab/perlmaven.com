@@ -1,0 +1,30 @@
+=title Invitation
+=timestamp 2020-07-22T13:40:01
+=indexes invitation
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+On this site we cover a lot of different topic related programming in Perl.
+We also have another site called <a href="https://code-maven.com/">Code Maven</a> where we cover every tech-related topic other than Perl.
+
+=abstract end
+
+On the <a href="/">front page</a> you can find the list of all the series we have.
+
+
+Some of our content is only <a href="https://code-maven.com/archive?tag=pro">available to paying subscribers</a>, but some of those
+are always available to <a href="https://code-maven.com/archive?tag=preview">preview</a>.
+You only need to <a href="/pm/register">register</a> on the site to get access to the videos in preview mode.
+
+If you are not interested registering here you can get updates from us via our <a href="https://code-maven.com/linkedin">Code Maven LinkedIn page</a>
+or the <a href="https://linkedin.com/showcase/perl-maven/">Perl Maven page</a>.
+
+You'll get tips and examples 3-5 times a week.
+
+You can also follow out <a href="/youtube">YouTube channel</a> where we have a mix of technical videos and webinar recordings.
+
