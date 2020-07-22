@@ -329,7 +329,7 @@ if ($source_address) {
 
 The GetOptions function only handles the parameters that start with a dash and their corresponding values, when they are relevant.
 Once it processed the options it will remove them from <hl>@ARGV</hl>. (Both the option name and the option value will be removed.)
-Any other, non-affiliated values on he command line will
+Any other, non-affiliated values on the command line will
 stay in <hl>@ARGV</hl>. Hence if we add <a href="https://metacpan.org/pod/Data::Dumper">Data::Dumper</a> to our script and
 use that to print the content of <hl>@ARGV</hl> at the end (<hl>print Dumper \@ARGV</hl>) as in this script:
 
