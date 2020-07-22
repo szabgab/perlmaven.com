@@ -21,8 +21,13 @@ $(document).ready(function() {
         return;
     }
 
-    var re = new RegExp('^/archive/?');
-    if (re.exec(path)) {
+    var re_archive = new RegExp('^/archive/?');
+    if (re_archive.exec(path)) {
+        return;
+    }
+
+    var re_invitation = new RegExp('^/invitation$');
+    if (re_invitation.exec(path)) {
         return;
     }
 
@@ -30,6 +35,6 @@ $(document).ready(function() {
     // 'Are you here for a quick solution or would you really like to know Perl? If the former, go ahed find the content you need!<p>If you would like to know more, let me suggest you pick up one of the eBooks I wrote: The <a href="https://leanpub.com/perl-maven/c/pmtop-2018-04">Perl Maven eBook</a>, the <a href="https://leanpub.com/markua-parser-in-perl5">TDD case study in Perl</a>, and the <a href="https://leanpub.com/dancer-spa/">Dancer SPA</a>.'
     // 'Are you serious about Perl? Check out my <a href="https://leanpub.com/perl-maven">Beginner Perl Maven book</a>.<br>I have written it for you!'
     // 'Was this article useful? Support me via <a href="https://www.patreon.com/szabgab">Patreon</a>!';
-    show_top('One you are done <a href="/invitation">check out</a> the other resources you can find on this site!')
+    show_top('Once you are done <a href="/invitation">check out</a> the other resources you can find on this site!')
     show_bottom('Was this article useful? <a href="/invitation">Check out</a> what else can you get from this site!');
 })
