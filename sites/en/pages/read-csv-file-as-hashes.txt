@@ -10,7 +10,7 @@
 
 Given the following <a href="/csv">CSV file</a> how can we read it line-by-line?
 
-There are two main ways, read eacch line as an array, or read each line as a hash,
+There are two main ways, read each line as an array, or read each line as a hash,
 where the keys are taken from the first row of the file.
 
 =abstract end
