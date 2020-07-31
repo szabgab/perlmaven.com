@@ -7,7 +7,7 @@
 =show_newsletter_form 0
 =show_date 0
 =author 0
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

@@ -18,7 +18,7 @@ keyword.
 
 =abstract end
 
-Let's see an example: 
+Let's see an example:
 
 There is a Person.pm module in which we have an 'age' attribute that defaults to 0.
 After all, most us are born at the age of 0.
@@ -281,55 +281,14 @@ As in the case with the <a href="/moo-and-required-attributes">required</a> attr
 you'd probably also need to set up a minimal <a href="/type-checking-with-moo">type checking</a>,
 just to make sure the value passed is not <hl>undef</hl>.
 
+
 <h2>Array reference as attribute</h2>
 
-Moo can also have attributes where the value is an ARRAY reference and you might want to ensure that
-even if the user has not supplied an ARRAY reference at the construction time, the attribute still has
-an empty array. So you write this code:
+<a href="/moo-with-array-refernce-as-attribute">Moo with array reference as attributes - with or without default values</a>
 
-<code lang="perl">
-has children => (is => 'rw', default => []);
-</code>
+<h2>Hash reference as attribute</h2>
 
-When you try to create a new Person object in the programming.pl script:
-
-<code lang="perl">
-use Person;
-
-my $joe = Person->new;
-say $joe->children;
-
-my $pete = Person->new;
-say $pete->children;
-</code>
-
-We get the following exception:
-
-<code>
-Invalid default 'ARRAY(0xcbf708)' for Person->children not a coderef
-   or a non-ref or code-convertible object at .../Method/Generate/Accessor.pm line 588.
-Compilation failed in require at programming.pl line 5.
-BEGIN failed--compilation aborted at programming.pl line 5.
-</code>
-
-This is the same problem as we faced with <hl>time()</hl>, but here Moo can already recognize
-the problem and stop us before hurting ourselves.
-
-The fix is similar, wrap the default creation in an anonymous subroutine:
-
-<code lang="perl">
-has children => (is => 'rw', default => sub { [] });
-</code>
-
-And the output looks like this:
-
-<code>
-ARRAY(0x27b26b0)
-ARRAY(0x27b26f8)
-DONE
-</code>
-
-Two different ARRAY references.
+<a href="/moo-with-hash-refernce-as-attribute">Moo with hash reference as attributes - with or without default values</a>
 
 <h2>Conclusion</h2>
 
