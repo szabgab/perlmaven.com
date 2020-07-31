@@ -544,6 +544,8 @@ moo:
         - moose-like-type-system-for-moo
         - moo-and-required-attributes
         - moo-attributes-with-default-values
+        - moo-with-array-refernce-as-attribute
+        - moo-with-hash-refernce-as-attribute
         - moo-attribute-predicate-and-clearer
         - moo-with-public-and-private-methods
         - methods-functions-and-subroutines-in-perl
