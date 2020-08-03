@@ -266,7 +266,7 @@ This is quite unfortunate.
 This means we have changed the state of the <hl>%people</hl> has just by 
 <a href="http://en.wikipedia.org/wiki/Observer_effect_%28physics%29">observing it</a>.
 
-<h2>autovification and deleting elements</h2>
+<h2>autovivification and deleting elements</h2>
 
 It looks even worse if we are trying to delete an element that does not exist:
 
