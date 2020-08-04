@@ -59,7 +59,7 @@ The results are exactly the same:
 
 <include file="examples/capture_stdout_qx_scalar.txt">
 
-However <hl>qx</hl> allows and pair of delimiters so you could use curly braces instead of parentheses
+However <hl>qx</hl> allows any pair of delimiters so you could use curly braces instead of parentheses
 and that would still do the exact same thing:
 
 <include file="examples/capture_stdout_qx_scalar_curly.pl">
