@@ -9,7 +9,7 @@
 =abstract start
 
 People knowing shell are familiar with the back-ticks <hl>``</hl> that allow us to execute external commands and capture
-their output. In Per you can use the back-ticks or the <hl>qx</hl> operator that does exactly the same, just makes the
+their output. In Perl you can use the back-ticks or the <hl>qx</hl> operator that does exactly the same, just makes the
 code more readable.
 
 In Perl there are several ways to run external programs depending on your needs.
