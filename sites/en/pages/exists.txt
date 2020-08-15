@@ -1,0 +1,64 @@
+=title exists - check if a key exists in a hash
+=timestamp 2020-08-15T18:00:01
+=indexes exists
+=status show
+=books beginner
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+In a hash a key-value pair have 3 different possible statuses.
+
+The <hl>defined</hl> function checks if a <b>value</b> is <a href="/undef">undef</a> or not.
+
+The <hl>exists</hl> function check if a <b>key</b> is in the hash or not.
+
+Those two conditions create 3 valid situations.
+
+=abstract end
+
+<h2>Syntax of exists</h2>
+
+<code lang="perl">
+if (exists $phone_of{Foo}) {
+}
+</code>
+
+This code checks of the hash <hl>%phone_of</hl> has a key "Foo".
+
+
+<h2>The 3 valid situations of a key-value pair</h2>
+
+<ul>
+   <li>There is a key and the value which is not <hl>undef</hl> then both the <hl>exists</hl> and <hl>defined</hl> functions will return true.</li>
+   <li>There is a key and the value is <hl>undef</hl> then <hl>exists</hl> will return true and <hl>defined</hl> will return false.</li>   <li>If there is no such key, then there cannot be a corresponding values. In that case both <hl>exists</hl> and <hl>defined</hl> will return false.</li>
+</ul>
+
+<h2>An example</h2>
+
+<include file="examples/exists.pl">
+
+In this hash the key Foo <hl>exists</hl> and its value is <hl>defined</hl>.
+
+The key Qux <hl>exists</hl> but its values is NOT <hl>defined</hl>.
+
+Finally the key <hl>Bar</hl> NOT <hl>exists</hl> and if we check the defined-ness of its value we get false.
+
+<code>
+Foo exists
+Foo: defined
+Qux exists
+Qux not defined
+Bar does not exist
+Bar not defined
+</code>
+
+
+<h2>Conclusion</h2>
+
+If <hl>defined $hash{key}</hl> is false we still don't know if the key is in the hash or not.
+So normally first you need to check <hl>exists $hash{key}</hl> and only then <hl>defined $hash{key}</hl>.
+
+

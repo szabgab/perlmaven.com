@@ -82,7 +82,7 @@ perl-tutorial:
         - perl-hashes
         - creating-hash-from-an-array
         - perl-hash-in-scalar-and-list-context
-        - pro/exists
+        - exists
         - pro/delete
         - how-to-sort-a-hash-in-perl
         - count-words-in-text-using-perl

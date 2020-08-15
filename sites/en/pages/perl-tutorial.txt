@@ -280,7 +280,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/perl-hashes">Perl Hashes (dictionary, associative array, look-up table)</a></li>
     <li><a href="/creating-hash-from-an-array">Creating hash from an array</a></li>
     <li><a href="/perl-hash-in-scalar-and-list-context">Perl hash in scalar and list context</a></li>
-    <li><a href="/pro/exists">exists</a> hash element</li>
+    <li><a href="/exists">exists</a> hash element</li>
     <li><a href="/pro/delete">delete</a> hash elements</li>
     <li><a href="/how-to-sort-a-hash-in-perl">Sorting a hash</a></li>
     <li><a href="/count-words-in-text-using-perl">Count word frequency in a text file</a></li>
