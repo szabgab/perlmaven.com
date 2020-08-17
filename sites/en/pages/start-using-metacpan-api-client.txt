@@ -3,6 +3,7 @@
 =indexes MetaCPAN::Client, MetaCPAN::API, MetaCPAN
 =status show
 =author szabgab
+=tags screencast
 =archive 1
 =description How to locate the module that can be used to access the MetaCPAN API. It is called MetaCPAN::Client.
 =comments_disqus_enable 0
@@ -19,7 +20,7 @@ For example we would like to be able to fetch the most recently uploaded modules
 
 =abstract end
 
-For this forst need to locate the module that implements the client for the API. It is called
+For this first we need to locate the module that implements the client for the API. It is called
 <a href="https://metacpan.org/pod/MetaCPAN::Client">MetaCPAN::Client</a>
 
 Then we need to install the module
@@ -31,6 +32,10 @@ cpanm MetaCPAN::Client
 Then we play around a bit with the documentation and get this script:
 
 <include file="examples/meta.pl">
+
+We found the <b>recent</b> method of <a href="https://metacpan.org/pod/MetaCPAN::Client">MetaCPAN::Client</a> to return
+an instance of <a href="https://metacpan.org/pod/MetaCPAN::Client::ResultSet">MetaCPAN::Client::ResultSet</a> holding a list
+of <a href="https://metacpan.org/pod/MetaCPAN::Client::Release">MetaCPAN::Client::Release</a> objects.
 
 <screencast file="english-start-using-metacpan-client.mkv" youtube="7iy5VNpHSZk" />
 
