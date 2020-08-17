@@ -1,0 +1,29 @@
+=title Fix the documentation of the MetaCPAN::Client
+=timestamp 2020-08-17T07:30:01
+=indexes MetaCPAN, Git, GitHub
+=status show
+=author szabgab
+=tags screencast
+=description Contributing to an open source project does not need to be a huge investment. Making a simple improvement to the documentation of a Perl module on CPAN already counts.
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Earlier we tried to write some code to <a href="/start-using-metacpan-api-client">fetch the list of most recently uploaded Perl modules</a>.
+
+We found that the documentation of <a href="https://metacpan.org/pod/MetaCPAN::Client::Release">MetaCPAN::Client::Release</a> isn't accurate.
+
+The <b>name</b> attribute returns the name including the version number and the <b>distribution</b> returns the name only.
+
+=abstract end
+
+In order to fix this we had to find the source on GitHub and the send a pull request. It was accepted within a few hours.
+
+This is the script to see the values of the attributes.
+
+<include file="examples/meta.pl">
+
+<screencast file="english-fix-documentation-of-metacpan-client.mkv" youtube="qauLDUHb9xY" />
+
