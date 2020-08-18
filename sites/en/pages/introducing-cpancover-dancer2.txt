@@ -1,0 +1,20 @@
+=title Introducting CPANCover - Showing Test coverage reports of Perl modules
+=timestamp 2020-08-18T12:30:01
+=indexes Perl, CPAN, testing, Devel::Cover, CPANCover, Dancer2
+=status show
+=author szabgab
+=archive 1
+=description CPANCover shows the test-coverage reports of the Perl modules uploaded to CPAN.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+=abstract end
+
+<screencast file="introducting-cpancover-dancer2.mkv" youtube="qzo1K0S8GBI" />
+
+<ul>
+    <li><a href="http://cpancover.com/">CPANCover</a></li>
+    <li><a href="https://metacpan.org/pod/Devel::Cover">Devel::Cover</a></li>
+</ul>
+
