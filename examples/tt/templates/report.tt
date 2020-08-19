@@ -1,0 +1,17 @@
+[% title %]
+===================
+
+
+Languages
+----------------
+[% FOREACH name IN languages %]
+* [% name %]
+[% END %]
+
+
+People
+----------------
+[% FOREACH person IN people %]
+* [% person.name %] [% IF person.email %]mail: [% person.email %][% END -%]
+[% END %]
+
