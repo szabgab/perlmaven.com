@@ -16,5 +16,8 @@ my %data = (
         { name => 'Bar', email => 'Bar@perlmaven.com' },
     ],
 );
-$tt->process('report.tt', \%data) or die $tt->error(), "\n";
+
+my $report;
+$tt->process('report.tt', \%data, \$report) or die $tt->error(), "\n";
+print $report;
 
