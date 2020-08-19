@@ -1,6 +1,6 @@
 =title Introduction to Template::Toolkit
 =timestamp 2020-08-19T16:30:01
-=indexes Template, Template::Toolkit
+=indexes Template, Template::Toolkit, FOREACH, IN, IF, END, INCLUDE_PATH
 =status show
 =author szabgab
 =archive 1
@@ -37,6 +37,13 @@ Before you start using it you will have to install Template::Toolkit.
 </code>
 
 
+<h2>Execution</h2>
+
+<code>
+$ cd to-the-root-dir-where-create.pl-is-located
+$ perl create.pl
+</code>
+
 <h2>The Result</h2>
 
 <code lang="perl">
@@ -53,7 +60,7 @@ Languages
 
 * Hungarian
 
-* Henrew
+* Hebrew
 
 
 
@@ -66,4 +73,7 @@ People
 </code>
 
 
+Let me point out the empty rows between the languages. They are there because TT by defaults add a newline at the end of the tag we are inlcuing.
+You can change this by adding a dash at the closing part of the expression. This is what happened in the rows of the People where on line 15 you can see
+a dash before the last percentage sign: <hl>-%]</hl>.
 

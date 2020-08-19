@@ -9,7 +9,7 @@ my $tt = Template->new({
 
 my %data = (
     title      => 'This is your title',
-    languages  => ['English', 'Spanish', 'Hungarian', 'Henrew'],
+    languages  => ['English', 'Spanish', 'Hungarian', 'Hebrew'],
     people     => [
         { name => 'Foo', email => 'foo@perlmaven.com' },
         { name => 'Zorg' },
