@@ -1,4 +1,4 @@
-=title Templat Toolkit processing Hash of Hashes
+=title Template Toolkit processing Hash of Hashes
 =timestamp 2020-08-23T14:30:01
 =indexes Template::Toolkit
 =status show
