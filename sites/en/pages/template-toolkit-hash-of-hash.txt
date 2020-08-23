@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=description
+=description Temlate::Toolkit is a great tool. In this example we show to use it in two differnt ways to display a hash of hashes.
 =comments_disqus_enable 0
 =show_related 1
 
