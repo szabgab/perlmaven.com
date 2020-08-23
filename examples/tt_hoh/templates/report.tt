@@ -1,0 +1,25 @@
+[% FOR name IN payload.keys.sort %]
+    [% name %]
+    -------------
+       [%- FOR field IN payload.$name.keys.sort %]
+           [% field %] : [% payload.$name.$field -%]
+       [% END %]
+[% END %]
+
+===============================================
+
+[% USE String %]
+
+Name                    atbats so   bb  rbis hits runs
+[% FOR name IN payload.keys.sort %]
+[% fname  = String.new(name) -%]
+[% atbats = String.new(payload.$name.atbats) -%]
+[% so     = String.new(payload.$name.so) -%]
+[% bb     = String.new(payload.$name.bb ) -%]
+[% rbis   = String.new(payload.$name.rbis) -%]
+[% hits   = String.new(payload.$name.hits) -%]
+[% runs   = String.new(payload.$name.runs) -%]
+[% fname.left(22)  %] [% atbats.right(3) -%]    [% so.right(3) -%] [% bb.right(3) -%]  [% rbis.right(3) -%]   [% hits.right(3) -%]  [% runs.right(3) -%]
+[% END  %]
+
+

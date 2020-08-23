@@ -1,0 +1,79 @@
+=title Templat Toolkit processing Hash of Hashes
+=timestamp 2020-08-23T14:30:01
+=indexes Template::Toolkit
+=status show
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+<a href="/template-toolkit">Template Toolkit</a> is an excellent and very powerful templating language.
+In this example we'll see how can we display a hash of hashes.
+
+=abstract end
+
+<h2>Plain Text display</h2>
+
+In the script you can see the data structure that was taken, with slight modifications from a question that was posted
+to the <a href="http://perldancer.org/">Perl Dancer</a> mailing list.
+
+<include file="examples/tt_hoh/create.pl">
+
+First let's see a template to display the data in plain text format. This template actually includes two examples. In the first
+one we just iterate over the keys of the external hash and then the keys of each on of the internal hashes.
+
+
+In the second example we have a rather well-formatted table.
+
+<include file="examples/tt_hoh/templates/report.tt">
+
+<code>
+    BryceJones(2021)
+    -------------
+           atbats : 4
+           bb : 1
+           hits : 2
+           rbis : 4
+           runs : 2
+           so : 1
+
+    ChaseLangan(2022)
+    -------------
+           atbats : 5
+           bb : 0
+           hits : 24
+           rbis : 2
+           runs : 4
+           so : 1
+
+    TylerMontgomery(2022)
+    -------------
+           atbats : 117
+           bb : 1
+           hits : 2
+           rbis : 0
+           runs : 2
+           so : 1
+
+
+===============================================
+
+
+
+Name                    atbats so   bb  rbis hits runs
+
+BryceJones(2021)         4      1   1    4     2    2
+ChaseLangan(2022)        5      1   0    2    24    4
+TylerMontgomery(2022)  117      1   1    0     2    2
+</code>
+
+<h2>HTML page</h2>
+
+Creating an HTML page using this template is a lot easier as we don't have to worry about padding with spaces.
+That's handled by HTML and CSS.
+
+
+
