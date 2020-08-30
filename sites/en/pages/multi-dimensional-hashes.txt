@@ -356,6 +356,6 @@ if (exists $grades{"Foo Bar"}{Programming}) {
 
 <ul>
     <li><a href="/hash-of-arrays">Hash of arrays</a></li>
-    <li><a href="/pro/printing-hash-of-hash-of-arrays-by-the-array">Hash of hashes of arrays</a></li>
+    <li><a href="/printing-hash-of-hash-of-arrays-by-the-array">Hash of hashes of arrays</a></li>
 </ul>
 
