@@ -26,17 +26,14 @@ In this example we use a regex, but we don't check if it was successful or not. 
 use the content of $1. The result:
 
 <code>
-</code>
-
-This was a very simplified example, and thus running it made it easy to see the problem. For both input strings,
-the result was the same, matched by the first string.
-
-<code>
 abcde
 a
 12345
 a
 </code>
+
+This was a very simplified example, and thus running it made it easy to see the problem. For both input strings,
+the result was the same, matched by the first string.
 
 
 <h2>Show when was it matching</h2>
