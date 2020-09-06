@@ -12,7 +12,6 @@
 
 One of the readers of the Perl Maven site asked the following question:
 
-<quote>
 I have three arrays of extracted information, of more than 100 lines each array, like this:
 
 <code>
@@ -22,7 +21,6 @@ I have three arrays of extracted information, of more than 100 lines each array,
 </code>
 
 How can I store them in a new one with 3 columns by n rows, to export it that way either in .txt or .csv format
-</quote>
 
 =abstract end
 
