@@ -5,7 +5,7 @@
 =books tk
 =author szabgab
 =archive 1
-=description
+=description With Perl Tk you can create a console-like behavior so people, especially on Windows, won't feel lost when they need to run your script. They will get a window where you can print out the progress of your script.
 =comments_disqus_enable 0
 =show_related 1
 
