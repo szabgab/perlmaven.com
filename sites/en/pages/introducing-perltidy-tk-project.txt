@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=description
+=description Use the Perl::Tidy module in out own code as an experient to build a GUI around it.
 =comments_disqus_enable 0
 =show_related 1
 
