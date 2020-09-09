@@ -1,0 +1,74 @@
+=title Introducing the Perl Tidy GUI project
+=timestamp 2020-09-09T17:30:01
+=indexes Perl::Tidy, perltidy, Path::Tiny, path, slurp
+=status show
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+The <a href="https://metacpan.org/pod/distribution/Perl-Tidy/bin/perltidy">perltidy</a> script allows you to
+convert your Perl source code to some unified layout. The <a href="https://metacpan.org/pod/Perl::Tidy">Perl::Tidy</a>
+module, behind the scenes allows us to build tools like perltidy.
+
+Let's experiment with it so we can try to build a GUI for it.
+
+=abstract end
+
+<screencast file="english-introducing-perltidy-tk-project.mkv" youtube="XkltoJZfBX8" />
+
+<h2>Code to be beautified</h2>
+
+<include file="examples/perltidy0/code.pl">
+
+<h2>Current experiment</h2>
+
+<include file="examples/perltidy0/tidy.pl">
+
+<h2>Output</h2>
+
+<code>
+--indent-columns=4
+--maximum-line-length=80
+--variable-maximum-line-length
+--whitespace-cycle=0
+
+use strict;
+use warnings;
+
+my $x = "a";
+my $y="b";
+if($x){ print $y }
+
+if($y) {
+    print "Hello World";
+}
+
+
+if($y)
+    {
+print "Hello World";
+}
+
+--------
+use strict;
+use warnings;
+
+my $x = "a";
+my $y = "b";
+if ($x) { print $y }
+
+if ($y) {
+    print "Hello World";
+}
+
+if ($y) {
+    print "Hello World";
+}
+</code>
+
+
+
