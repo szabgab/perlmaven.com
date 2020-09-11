@@ -1,0 +1,23 @@
+=title Perl Tk
+=timestamp 2020-09-11T14:30:01
+=indexes PerlMaven
+=status show
+=books tk
+=author szabgab
+=archive 1
+=description PerlTk is a wrapper arount Tcl/Tk and makes it easy to create cross-platform GUI using Perl.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+=abstract end
+
+<ul>
+   <li><a href="/pro/perl-tk-label-button-entry-widgets">Perl Tk: The label, button, and entry widgets</a></li>
+   <li><a href="/perl-tk-text-to-be-used-as-a-console">Perl Tk text widget to be used as a console</a></li>
+   <li><a href="https://code-maven.com/slides/perl/tk">Perl Tk slides</a></li>
+<ul>
+
+<!--
+   <li><a href=""></a></li>
+-->
