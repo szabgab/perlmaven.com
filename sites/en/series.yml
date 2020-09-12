@@ -715,4 +715,12 @@ markua:
         - release-markua-parser-to-cpan
         - add-attributes-to-markua-round-1
         - devel-cover-for-markua-parser
+tk:
+  chapters:
+    - title: Perl Tk
+      sub:
+        - app-perltidy-tk-0-01
+        - perl-tk-text-to-be-used-as-a-console
+        - pro/perl-tk-label-button-entry-widgets
+        - pro/perl-tk-menu
 
