@@ -5,7 +5,7 @@
 =books perltk
 =author szabgab
 =archive 1
-=description
+=description The first version of the Perl Tk based GUI for the Perl Tidy configuration options.
 =comments_disqus_enable 0
 =show_related 1
 
