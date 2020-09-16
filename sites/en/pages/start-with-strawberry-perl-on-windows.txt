@@ -5,7 +5,7 @@
 =tags screencast
 =author szabgab
 =archive 1
-=description
+=description See how to install Strawberry Perl for Windows and how to get started writing Perl code.
 =comments_disqus_enable 0
 =show_related 1
 
