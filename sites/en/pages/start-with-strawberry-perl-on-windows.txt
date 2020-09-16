@@ -1,0 +1,19 @@
+=title Getting started with Perl on Windows using Strawberry Perl
+=timestamp 2020-09-16T12:30:01
+=indexes Strawberry Perl
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+=abstract end
+
+<screencast file="english-perl-on-windows-strawberryperl-notepad-plus-plus.mkv" youtube="tN9J-EExjKE" />
+
+<ul>
+    <li><a href="https://code-maven.com/slides/perl">Perl Slides</a></li>
+</ul>
