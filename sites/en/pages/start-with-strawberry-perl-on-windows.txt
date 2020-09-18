@@ -1,4 +1,4 @@
-=title Getting started with Perl on Windows using Strawberry Perl
+=title Getting started with Perl on Windows using Strawberry Perl (2020 edition)
 =timestamp 2020-09-16T12:30:01
 =indexes Strawberry Perl
 =status show
