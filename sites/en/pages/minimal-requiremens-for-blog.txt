@@ -1,0 +1,45 @@
+=title Minimal requirements for a blog
+=timestamp 2020-09-23T11:30:01
+=indexes Perl, blog
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=description Writing a blog engine can be an intersting exercise.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+A while ago I've started to think about creating a project that could be used as a replacement for the blogs.perl.org site and as a
+teaching tool to show various technologies. I asked a number of people about it. Many said they think it would be too big a project
+and I would not be able to get enought people supporting it. They might be right.
+
+Since then there was also a small movement agains having a shared blogging platform for Perl, so maybe I should not get in this project.
+
+In any case, let me publish here a few notes I made as minimal requirements.
+
+In case I, or someone else will like to pick up the idea later on.
+
+=abstract end
+
+<ul>
+     <li>Authenticate with fixed usernames and passwords.</li>
+     <li>Edit page. Page can be saved on disk.</li>
+     <li>Accept free text escape any less than sign.</li>
+     <li>Accept markdown.</li>
+     <li>Embed videos.</li>
+     <li>Upload images and show them.</li>
+     <li>Archive of posts.</li>
+     <li>Global RSS feed for new posts.</li>
+     <li>Global RSS feed for everything, including posts and comments.</li>
+     <li>Individual RSS feed.</li>
+     <li>Admin hide post.</li>
+     <li>Admin disable account.</li>
+     <li>Commenting system with flat view.</li>
+     <li>Commenting system with hierarchical view.</li>
+     <li>Change password.</li>
+     <li>Reset password.</li>
+     <li>Register with email verification.</li>
+     <li>Email notifications?</li>
+</ul>
