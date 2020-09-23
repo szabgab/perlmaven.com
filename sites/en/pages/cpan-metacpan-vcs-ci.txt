@@ -1,0 +1,39 @@
+=title Perl modules on CPAN having links to VCS and having CI configured
+=timestamp 2020-09-21T07:30:01
+=indexes CPAN, MetaCPAN, VCS, CI, PerlWeekly
+=status show
+=tags screencast
+=books dancer
+=author szabgab
+=archive 1
+=description Modules that arrive to CPAN can have meta-data that includes a link to their VCS where they might have a CI system set up.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+=abstract end
+
+<screencast file="english-cpan-metacpan-vcs-ci.mkv" youtube="fz1SeFJrpdk" />
+
+<ul>
+   <li><a href="https://perlweekly.com/">Perl Weekly</a></li>
+   <li><a href="https://metacpan.org/">MetaCPAN</a></li>
+   <li><a href="https://perlweekly.com/metacpan.html">Perl Weekly MetaCPAN statistics</a></li>
+</ul>
+
+Module authors can <a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">indicated the location of their VCS (Version Control System)</a>.
+
+In the script used for the stats on the PerlWeekly site we are checking some of the following files:
+
+<ul>
+   <li><b>.travis.yml</b> for Travis CI</li>
+   <li><b>.appveyor.yml</b> or appveyor.yml for Appveyor</li>
+   <li>Something in <b>.github/workflows</b> for GitHub actions (but may not be CI)</li>
+   <li><b>.circleci/config.yml</b> for Circle CI</li>
+   <li><b>.gitlab-ci.yml</b> for Gitlab Pipelines</li>
+   <li><b>Jenkinsfile</b> for Jenkins</li>
+   <li>...</li>
+</ul>
+
+There is a lot more work to do with that script.
+
