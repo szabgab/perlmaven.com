@@ -5,7 +5,7 @@
 =tags screencast
 =author szabgab
 =archive 1
-=description
+=description Financing the time you put in Open Source projects is not easy. FErki uses a model of giving away his work only if there are at least 8 sponsors. Interesting.
 =comments_disqus_enable 0
 =show_related 1
 
@@ -13,6 +13,8 @@
 =abstract end
 
 <screencast file="english-sponsoring-ferki.mkv" youtube="MsLwxO301nI" />
+
+I am really looking forward to see his success.
 
 <ul>
     <li><a href="https://github.com/sponsors/ferki">Sponsor FErki</a></li>
