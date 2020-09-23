@@ -3,12 +3,11 @@
 =indexes CPAN, MetaCPAN, VCS, CI, PerlWeekly
 =status show
 =tags screencast
-=books dancer
 =author szabgab
 =archive 1
 =description Modules that arrive to CPAN can have meta-data that includes a link to their VCS where they might have a CI system set up.
 =comments_disqus_enable 0
-=show_related 1
+=show_related 0
 
 =abstract start
 =abstract end
