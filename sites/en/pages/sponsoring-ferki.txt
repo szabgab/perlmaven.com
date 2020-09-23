@@ -21,6 +21,7 @@ I am really looking forward to see his success.
     <li><a href="https://twitter.com/erkiferenc/status/1308360031725850624">The Tweet</a></li>
     <li><a href="https://twitter.com/erkiferenc/">Ferenc Erki on Twitter</a></li>
     <li><a href="https://gist.github.com/ferki/40162adeae40886d6a7e3dccfec67ade">The gist of Secret::Store 0.1.0</a></li>
+    <li><a href="https://www.facebook.com/groups/perlprogrammers/permalink/3597108936988535/">The Facebook discussion</a></li>
     <li><a href="https://www.linkedin.com/in/ferki/">FErki on LinkedIn</a></li>
 </ul>
 
