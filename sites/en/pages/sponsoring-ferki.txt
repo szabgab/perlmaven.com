@@ -1,0 +1,28 @@
+=title Sponsoring FErki
+=timestamp 2020-09-23T10:30:01
+=indexes Perl, Rex
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+=abstract end
+
+<screencast file="english-sponsoring-ferki.mkv" youtube="MsLwxO301nI" />
+
+<ul>
+    <li><a href="https://github.com/sponsors/ferki">Sponsor FErki</a></li>
+    <li><a href="https://twitter.com/erkiferenc/status/1308360031725850624">The Tweet</a></li>
+    <li><a href="https://twitter.com/erkiferenc/">Ferenc Erki on Twitter</a></li>
+    <li><a href="https://gist.github.com/ferki/40162adeae40886d6a7e3dccfec67ade">The gist of Secret::Store 0.1.0</a></li>
+    <li><a href="https://www.linkedin.com/in/ferki/">FErki on LinkedIn</a></li>
+</ul>
+
+
+<ul>
+    <li><a href="https://www.patreon.com/szabgab">Patreon of Gabor</a></li>
+</ul>
