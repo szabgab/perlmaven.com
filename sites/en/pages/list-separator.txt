@@ -1,0 +1,27 @@
+=title $" $LIST_SEPARATOR
+=timestamp 2020-09-23T19:30:01
+=indexes $", $LIST_SEPARATOR
+=status show
+=author szabgab
+=archive 1
+=description The $" variable, also called the $LIST_SEPARATOR indicates what goes between array elements when they are intepolated in a string.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+The $" variable, also called the $LIST_SEPARATOR indicates what goes between array elements when they are intepolated in a string.
+
+
+=abstract end
+
+<include file="examples/list_separator.pl">
+
+By default it contains a single space, but you can replace it by any othere string. Including the empty string.
+
+Unless you'd like to to impact the whole code-base it is recommended to wrap the assignment in a block (with curly braces)
+and use <a href="/local">local</a> to localize the change. (You cannot use <b>my</b> on this variable.)
+
+Mnemonic: works in double-quoted context.
+
+See also the <a href="https://metacpan.org/pod/perlvar#LIST_SEPARATOR">official documentation</a>.
