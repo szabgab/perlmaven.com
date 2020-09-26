@@ -20,7 +20,7 @@ Recently I received two very different questions, where the answer is quite simi
 
 Let's see an example for the first one:
 
-Given an array 
+Given an array
 
 <code lang="perl">
 my @planets = qw(
