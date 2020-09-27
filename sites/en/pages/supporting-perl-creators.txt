@@ -26,13 +26,12 @@ among the recipients.
     <li><b><a href="https://www.patreon.com/rperl">Will 'the Chill' Braswell</a></b> creator of <a href="http://rperl.org/">RPerl</a> and the <a href="http://perl11.org/">Perl 11 cooperative</a>.</li>
     <li><b><a href="https://www.patreon.com/manwar">Mohammad S Anwar</a></b>, creator of <a href="https://perlweeklychallenge.org/">The Weekly Challenge</a>, creator of the
        <a href="https://www.youtube.com/user/ipllondon">Live Coding videos on YouTube</a>, editor of the <a href="https://perlweekly.com/">Perl Weekly newsletter</a></li>
-    <li><a href="https://www.patreon.com/exodist"><b>Chad 'Exodist' Granum</b></a> who maintains several perl modules such as Test-Simple, Test2, or yath) </li>
-    <li><a href="https://github.com/sponsors/ferki"><b>Ferenc Erki</b></a> who maintains and supports Rex and tons of other things.</li>
+    <li><a href="https://www.patreon.com/exodist"><b>Chad 'Exodist' Granum</b></a> who maintains <a href="https://metacpan.org/author/EXODIST">several perl modules</a> such as Test-Simple, Test2, or yath) </li>
+    <li><a href="https://github.com/sponsors/ferki"><b>Ferenc Erki</b></a> who maintains and supports <a href="https://metacpan.org/release/Rex">Rex</a> and tons of <a href="https://github.com/ferki">other things</a>.</li>
     <li><a href="https://www.patreon.com/marpa"><b>Jeffrey Kegler</b></a> author of <a href="http://savage.net.au/Marpa.html">Marpa</a>. See also the <a href="https://jeffreykegler.github.io/Marpa-web-site/">Marpa web site</a> </li>
-    <li><a href="https://github.com/sponsors/briandfoy"><b>brian d foy</b></a> author of many Perl books and many Perl modules.</li>
+    <li><a href="https://github.com/sponsors/briandfoy"><b>brian d foy</b></a> author of many Perl books including the <a href="https://www.effectiveperlprogramming.com/">Effective Perl</a> and many <a href="https://metacpan.org/author/BDFOY">Perl modules</a>.</li>
     <li><b><a href="https://www.patreon.com/szabgab">Gabor Szabo</a></b>, author of the <a href="https://perlmaven.com/">Perl Maven</a> site, author of the <a href="https://code-maven.com/">Code Maven</a> site, chief
-editor of the <a href="https://perlweekly.com/">Perl Weekly newsletter</a>, small-time <a href="https:/code-maven.com/youtube
-">YouTuber</a>. Yours truly.</li>
+editor of the <a href="https://perlweekly.com/">Perl Weekly newsletter</a>, small-time <a href="https:/code-maven.com/youtube">YouTuber</a>. Yours truly.</li>
 </ul>
 
 <h2>What is Patreon?</h2>
