@@ -1,0 +1,46 @@
+=title Supporting Perl Creators vis Patreon, GitHub, and more
+=timestamp 2020-09-27T07:30:01
+=indexes Perl, Patreon, GitHub, sponsorship
+=status show
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Creating open source code, documentation, books, videos is a lot of fun, but the creators still need to put food on the table.
+Some have full time jobs and do the public creation in their free time, others use time that otherwise would be sold as consulting hours.
+
+In either case people appreciate when they have financial supporters.
+
+This is the list of all the Perl-related authors and creators who are open to receive financial support for their contributions to the Perl Ecosystem.
+
+Decide on some monthly budget you are willing to allocate to improve the Perl world (e.g. 10-20-30 USD/month) and the decide how do you split it up
+among the recipients.
+
+=abstract end
+
+<ul>
+    <li><b><a href="https://www.patreon.com/rperl">Will 'the Chill' Braswell</a></b> creator of <a href="http://rperl.org/">RPerl</a> and the <a href="http://perl11.org/">Perl 11 cooperative</a>.</li>
+    <li><b><a href="https://www.patreon.com/manwar">Mohammad S Anwar</a></b>, creator of <a href="https://perlweeklychallenge.org/">The Weekly Challenge</a>, creator of the
+       <a href="https://www.youtube.com/user/ipllondon">Live Coding videos on YouTube</a>, editor of the <a href="https://perlweekly.com/">Perl Weekly newsletter</a></li>
+    <li><a href="https://www.patreon.com/exodist"><b>Chad 'Exodist' Granum</b></a> who maintains several perl modules such as Test-Simple, Test2, or yath) </li>
+    <li><a href="https://github.com/sponsors/ferki"><b>Ferenc Erki</b></a> who maintains and supports Rex and tons of other things.</li>
+    <li><a href="https://www.patreon.com/marpa"><b>Jeffrey Kegler</b></a> author of <a href="http://savage.net.au/Marpa.html">Marpa</a>. See also the <a href="https://jeffreykegler.github.io/Marpa-web-site/">Marpa web site</a> </li>
+    <li><a href="https://github.com/sponsors/briandfoy"><b>brian d foy</b></a> author of many Perl books and many Perl modules.</li>
+    <li><b><a href="https://www.patreon.com/szabgab">Gabor Szabo</a></b>, author of the <a href="https://perlmaven.com/">Perl Maven</a> site, author of the <a href="https://code-maven.com/">Code Maven</a> site, chief
+editor of the <a href="https://perlweekly.com/">Perl Weekly newsletter</a>, small-time <a href="https:/code-maven.com/youtube
+">YouTuber</a>. Yours truly.</li>
+</ul>
+
+<h2>What is Patreon?</h2>
+
+<a href="https://www.patreon.com/">Patreon</a> is a service where you can give a <b>monthly donation</b> to your favorite creator. Donations can be as low as $1 / month.
+
+<h2>What is GitHub Sponsors?</h2>
+
+<a href="https://github.com/sponsors">GitHub Sponsors</a> is a way that allows you to support Open Source developers. (It isn't available in every country yet.)
+
+
