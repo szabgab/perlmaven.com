@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=description
+=description Ways to financially support people who create Perl-related Open Source code, documentation, blog posts, books, videos and more.
 =comments_disqus_enable 0
 =show_related 1
 
