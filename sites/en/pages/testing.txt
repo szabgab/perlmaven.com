@@ -56,6 +56,15 @@ A series of articles about testing, and test automation using Perl.
   <li><a href="/moose-test-constructor">Moose: Testing the constructor</a></li>
 </ol>
 
+<h2>Test2</h2>
+<ol>
+  <li><a href="/getting-started-with-test2">Getting started testing Perl module with Test2</a>li>
+  <li><a href="/test2-capture-warnings">Test2 capture warnings</a>li>
+<!--
+  <li><a href=""></a>li>
+-->
+</ol>
+
 <h2>Interviews</h2>
 <ol>
   <li><a href="/chad-granum">Interview with Chad (Exodist) Granum, author of the Fennec testing tool</a></li>

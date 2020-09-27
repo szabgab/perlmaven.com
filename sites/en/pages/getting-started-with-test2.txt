@@ -1,6 +1,6 @@
 =title Getting started testing Perl module with Test2
 =timestamp 2019-04-19T12:30:01
-=indexes Test2::V0, ok, is, prove
+=indexes Test2, Test2::V0, ok, is, prove
 =status show
 =author szabgab
 =archive 1
@@ -17,6 +17,10 @@ Let's see how to get started with it, or more specifically with
 
 Before you can use it you need to install it on your computer. Look for one of the articles
 explaining <a href="/archive">how to install Perl Modules</a>.
+
+<code>
+cpanm Test2
+</code>
 
 
 <h2>Project directory structure</h2>

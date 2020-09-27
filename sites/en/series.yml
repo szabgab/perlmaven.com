@@ -468,6 +468,10 @@ testing:
         - mocking-function-to-fake-environment
         - testing-session-mocking-time
         - testing-a-simple-tcpip-server
+    - title: Test2
+      sub:
+        - getting-started-with-test2
+        - test2-capture-warnings
 mojolicious:
   chapters:
     - title: Mojolicious
