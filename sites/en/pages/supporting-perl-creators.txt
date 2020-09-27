@@ -1,4 +1,4 @@
-=title Supporting Perl Creators vis Patreon, GitHub, and more
+=title Supporting Perl Creators via Patreon, GitHub, and more
 =timestamp 2020-09-27T07:30:01
 =indexes Perl, Patreon, GitHub, sponsorship
 =status show
