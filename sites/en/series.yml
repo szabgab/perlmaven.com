@@ -727,4 +727,4 @@ tk:
         - perl-tk-text-to-be-used-as-a-console
         - pro/perl-tk-label-button-entry-widgets
         - pro/perl-tk-menu
-
+        - pro/perl-tk-keyboard-and-mouse-events
