@@ -2,7 +2,6 @@
 =timestamp 2020-09-23T11:30:01
 =indexes Perl, blog
 =status show
-=tags screencast
 =author szabgab
 =archive 1
 =description Writing a blog engine can be an intersting exercise.
