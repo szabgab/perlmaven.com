@@ -37,7 +37,7 @@ Cela libère un peu le développeur de logiciels du codage en dur lié au déplo
 Bien sûr, presque personne n'écrit du code pur Plack/PSGI. Presque tout le monde utilise l'un des cadriciels Perl de développement d'applications web.
 
 Les petites et moyennes applications reposent généralement soit sur <a href="http://perldancer.org/">Perl Dancer</a>,
-soit sur <a href="http://mojolicio.us/">Mojolicious</a>. Les grandes applications reposent sur <a href="http://www.catalystframework.org/">Catalyst</a>.
+soit sur <a href="http://mojolicious.org/">Mojolicious</a>. Les grandes applications reposent sur <a href="http://www.catalystframework.org/">Catalyst</a>.
 
 Maintenant, j'ai "seulement" besoin d'écrire mes tutoriels pour tous ces cadriciels ...
 

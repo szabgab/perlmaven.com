@@ -8,12 +8,12 @@
 
 =abstract start
 
-<a href="http://mojolicio.us/">Mojolicious</a> is one of the relatively new, light-weight,
+<a href="/mojolicious">Mojolicious</a> is one of the relatively new, light-weight,
 <a href="/modern-web-with-perl">modern web application frameworks</a>
 of Perl. If you look at its web site, it is full of rainbows, clouds and unicorns.
 
 In this article we'll see how to get started with it, or more specifically with
-<a href="http://mojolicio.us/perldoc/Mojolicious/Lite">Mojolicious::Lite</a>.
+<a href="https://mojolicious.org/perldoc/Mojolicious/Lite">Mojolicious::Lite</a>.
 
 =abstract end
 

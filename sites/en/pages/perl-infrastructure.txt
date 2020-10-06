@@ -367,7 +367,7 @@ The infrastructure is hosted under <a href="http://sakura.ad.jp/">Sakura VPS</a>
 
 <h2>Mojolicious</h2>
 
-<a href="http://mojolicio.us/">mojolicio.us</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/kraih/mojolicio.us">mojolicio.us</a>
+<a href="http://mojolicious.org/">Mojolicious</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/mojolicio/mojo">Mojolicious</a>
 repository.
 
 

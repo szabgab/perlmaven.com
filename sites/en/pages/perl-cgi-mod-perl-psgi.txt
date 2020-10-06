@@ -40,9 +40,9 @@ That somewhat frees the software developer from hard-coding deployment-related c
 Of course almost no one writes plain Plack/PSGI code. Almost everyone uses one of the web application development
 frameworks of Perl.
 
-For lighter application people usually use either <a href="http://perldancer.org/">Perl Dancer</a>
-or <a href="http://mojolicio.us/">Mojolicious</a>.
-For bigger applications people use <a href="http://www.catalystframework.org/">Catalyst</a>.
+For lighter application people usually use either <a href="/dancer">Perl Dancer</a>
+or <a href="/mojolicious">Mojolicious</a>.
+For bigger applications people use <a href="/catalyst">Catalyst</a>.
 
 Now I "only" need to write my tutorials for all these frameworks ...
 

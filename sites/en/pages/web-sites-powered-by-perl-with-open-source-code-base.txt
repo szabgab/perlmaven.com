@@ -42,14 +42,14 @@ code is in the <a href="https://github.com/jmacdotorg/ifcomp">ifcomp</a> reposit
 Its source code is available from <a href="https://github.com/metabrainz/musicbrainz-server">GitHub</a>.
 For more details about the development <a href="https://musicbrainz.org/doc/Development/Git">look here</a>.
 
-<a href="http://mojolicio.us/">Mojolicious</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/kraih/mojolicio.us">mojolicio.us</a>
+<a href="/mojolicious">Mojolicious</a>, the web framework. The source code of its own web site is in the <a href="https://github.com/mojolicio/mojo">Mojolicious</a>
 repository. There is a <a href="https://github.com/kraih/mojo/wiki/Projects-and-Companies-Using-Mojolicious">list of web sites</a> powered by Mojolicious.
 
 <a href="http://sco.perlmaven.com/">The search.cpan.org clone project</a>, which is not finished yet. Its source code is in the
 <a href="https://github.com/szabgab/MetaCPAN-SCO">MetaCPAN-SCO</a> repository. It is written in <a href="/psgi">PSGI/Plack</a>.
 
 <a href="http://tracert.com/">Tracert.com</a> providing routing information from around the world. Its source code is in the
-<a href="https://github.com/szabgab/tracert.com">tracert.com</a> repository. It is written in <a href="/psgi">PSGI/Plack</a>. 
+<a href="https://github.com/szabgab/tracert.com">tracert.com</a> repository. It is written in <a href="/psgi">PSGI/Plack</a>.
 
 <a href="http://soylentnews.org/">SoylentNews</a> is powered by a fork of Slashcode.
 The source code is available in <a href="https://github.com/SoylentNews/slashcode">this repository</a>
@@ -149,25 +149,25 @@ Its web site is a single static page, but if you insist, its source code is
 in the <a href="https://github.com/miyagawa/plackperl.org">plackperl.org</a> repository.
 
 
-<a href="http://blogs.perl.org/">blogs.perl.org</a>, the shared blog site of the Perl community runs on the 
+<a href="http://blogs.perl.org/">blogs.perl.org</a>, the shared blog site of the Perl community runs on the
 Professional Edition of <a href="http://movabletype.com/">Movable Type</a> which is not open source.
 Nevertheless the templates of the site are available <a href="https://github.com/blogs-perl-org/blogs.perl.org">here</a>.
 There is also a version of Movable Type on <a href="https://github.com/movabletype/movabletype">GitHub</a>, but it is unclear to
 me what is the license of that, and what is the relation of that to the one used on blogs.perl.org.
 
 
-<a href="http://perlybook.org/">Perlybook</a> is based on <a href="http://mojolicio.us">Mojolicious</a>. Its source code is in the
+<a href="http://perlybook.org/">Perlybook</a> is based on <a href="/mojolicious">Mojolicious</a>. Its source code is in the
 <a href="https://github.com/reneeb/cpan2ebook">cpan2ebook</a> repository.
 
 <a href="http://cpan.io/">CPAN.io</a> is a static web site generated (hourly) by running <a href="http://metacpan.org/pod/wallflower">wallflower</a> on a <a href="http://metacpan.org/pod/Web::Simple">Web::Simple</a> application.
 It computes several <a href="http://cpan.io/boards/once-a/">leaderboards</a> for some CPAN-based competitions, and also renders a Markdown-based <a href="http://cpan.io/pulse/">blog</a>.
-Source code is on <a href="http://github.com/book/CPANio/">GitHub</a>. 
+Source code is on <a href="http://github.com/book/CPANio/">GitHub</a>.
 
 <h2>Second tier</h2>
 
 These are sites where the framework is in Perl and it is Open Source, but where the site-specific code is not. Most likely you won't be able to contribute to these sites.
 
-<a href="http://thegamecrafter.com/">The GameCrafter</a> runs on <a href="https://github.com/plainblack/Wing">Wing</a>. 
+<a href="http://thegamecrafter.com/">The GameCrafter</a> runs on <a href="https://github.com/plainblack/Wing">Wing</a>.
 
 <a href="http://www.krang.net/using-krang.html>These sites</a> are running on <a href="http://www.krang.net/">Krang</a>. Krang itslef is
 Open Source, but probably you won't be able to look at the source code of those web sites.

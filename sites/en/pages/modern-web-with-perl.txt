@@ -23,9 +23,9 @@ a modern web application using Perl, you have several options. In this screencas
 
 <div id="text">
 <ul>
-  <li><a href="http://www.catalystframework.org/">Catalyst MVC framework</a></li>
-  <li><a href="http://mojolicio.us/">Mojolicious</a></li>
-  <li><a href="http://perldancer.org/">Perl Dancer</a></li>
+  <li><a href="/catalyst">Catalyst MVC framework</a></li>
+  <li><a href="/mojolicious">Mojolicious</a></li>
+  <li><a href="/dancer">Perl Dancer</a></li>
   <li><a href="http://plackperl.org/">PSGI/Plack</a></li>
 </ul>
 </div>

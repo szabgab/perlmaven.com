@@ -102,7 +102,7 @@ a newsletter so you won't miss a newly published article.
 
 <a href="http://www.template-toolkit.org/">Template Toolkit</a>
 
-<a href="http://mojolicio.us/">Mojolicious</a>
+<a href="https://mojolicious.org/">Mojolicious</a>
 
 <a href="http://www.catalystframework.org/">Catalyst</a>
 

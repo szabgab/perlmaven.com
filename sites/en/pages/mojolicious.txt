@@ -9,12 +9,12 @@
 
 =abstract start
 
-The beginning of a series of articles available to <a href="/pro">Perl Maven Pro</a> subscribers
-about <a href="http://mojolicio.us/">Mojolicious</a>, the light-weight web framework of Perl.
+This series is about <a href="http://mojolicious.org/">Mojolicious</a>, the light-weight web framework of Perl.
 
 =abstract end
 
 <ul>
+  <li><a href="/hello-world-with-mojolicious-in-docker">Hello World with Mojolicious in Docker</a> (screencast)</li>
   <li><a href="/modern-web-with-perl">Modern Web with Perl</a>, a quick overview (screencast)</li>
   <li><a href="/getting-started-with-mojolicious-lite">Getting started with Mojolicious::Lite</a></li>
   <li><a href="/mojolicious-lite-with-embedded-templates">Mojolicious::Lite with embedded templates</a></li>

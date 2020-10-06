@@ -30,7 +30,7 @@ Plack</a>. 简单的说，PSGI 规定了是Perl网络程序与服务器交互的
 尽管如此，很少人会直接在Plack基础之上写程序，多数人会选择一个基于Plack的框架。
 
 对于相对简单的网站，多数人会在 <a href="http://perldancer.org/">Perl Dancer</a>
-和 <a href="http://mojolicio.us/">Mojolicious</a>间选择。
+和 <a href="http://mojolicious.org/">Mojolicious</a>间选择。
 如果是复杂的网站， <a href="http://www.catalystframework.org/">Catalyst</a>是标准的选择。
 
 

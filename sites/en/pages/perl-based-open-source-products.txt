@@ -361,7 +361,7 @@ href="http://en.wikipedia.org/wiki/Anti-Spam_SMTP_Proxy">Wikipedia</a>. (The ass
 </div>
 
 <div class="perl-product">
-<a href="http://ashafix.net/">Ashafix</a> is a Postfixadmin clone in Perl using the <a href="http://mojolicio.us/">Mojolicious</a> framework.
+<a href="http://ashafix.net/">Ashafix</a> is a Postfixadmin clone in Perl using the <a href="/mojolicious">Mojolicious</a> framework.
 </div>
 
 <div class="perl-product">
@@ -438,16 +438,16 @@ table.
 </div>
 
 <div class="perl-product">
-<a href="http://www.catalystframework.org/">Catalyst - Perl MVC framework</a>
-</div> 
+<a href="/catalyst">Catalyst - Perl MVC framework</a>
+</div>
 
 <div class="perl-product">
-<a href="http://perldancer.org/">Perl Dancer</a>, a simple but powerful web application framework.
-</div> 
+<a href="/dancer">Perl Dancer</a>, a simple but powerful web application framework.
+</div>
 
 <div class="perl-product">
-<a href="http://mojolicio.us/">Mojolicious</a>, a next generation web framework for the Perl programming language.
-</div> 
+<a href="/mojolicious">Mojolicious</a>, a next generation web framework for the Perl programming language.
+</div>
 
 <h2>Some more Perl projects</h2>
 
@@ -691,7 +691,7 @@ access control (NAC) solution.
 
 
 <div class="perl-product">
-<a href="http://www.dbtoria.org/">DbToRia</a> a Database to Rich Internet Application. 
+<a href="http://www.dbtoria.org/">DbToRia</a> a Database to Rich Internet Application.
 </div>
 
 <div class="perl-product">
@@ -704,20 +704,20 @@ and provisioning automation software for ISPs and WISPs, VoIP providers.
 </div>
 
 <div class="perl-product">
-<a href="http://gitprep.org/">GitPrep</a> a GitHub clone based on <a href="http://mojolicio.us/">Mojolicious</a>.
+<a href="http://gitprep.org/">GitPrep</a> a GitHub clone based on <a href="/mojolicious">Mojolicious</a>.
 <a href="https://github.com/yuki-kimoto/gitprep">Source code</a> by <a href="https://github.com/yuki-kimoto/">Yuki Kimoto</a>.
 </div>
 
 <div class="perl-product">
 <a href="http://questhub.io/">Questhub</a> is a public and social task manager written by
 <a href="https://github.com/berekuk">Vyacheslav Matyukhin</a>.
-It is using <a href="http://perldancer.org/">Perl Dancer</a>.
+It is using <a href="/dancer">Perl Dancer</a>.
 Source code is on <a href="https://github.com/berekuk/questhub/">GitHub</a>
 </div>
 
 <div class="perl-product">
 <a href="https://github.com/sukria/WebKeePass">WebKeePass</a>
-a <a href="http://perldancer.com/">Perl Dancer</a> based web-interface to all your passwords. Written by 
+a <a href="/dancer">Perl Dancer</a> based web-interface to all your passwords. Written by
 <a href="http://blog.sukria.net/2013/08/27/webkeepass-or-how-to-build-your-own-cloud-aware-keyring/">Alexis Sukrieh</a>.
 </div>
 
