@@ -3,7 +3,7 @@
 =indexes Mojolicious, Docker
 =status show
 =tags screencast
-=books dancer
+=books mojolicious
 =author szabgab
 =archive 1
 =description Tiny experiment to show Hello World with Mojolicious in Docker.
