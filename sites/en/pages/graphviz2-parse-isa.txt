@@ -37,3 +37,6 @@ It did not work out of the box, but after I made some small changes (commented o
 
 <img src="/img/graphviz2_parse_isa_example.svg" alt="" />
 
+
+More examples on the <a href="https://graphviz-perl.github.io/">Graphviz Perl web site</a>
+
