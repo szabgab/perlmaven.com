@@ -35,7 +35,7 @@ The other usage is to put the <hl>\d</hl> in square brackets as part of a larger
 This is a character class that can match a digit of a hexa-decimal number.
 
 Actually, we  would probably not want to spell out the 6 letters but would write <hl>[\dA-F]</hl> and looking at this
-example I am not even sure I would not write <hl>[0-9A-Z]</hl> instead. It is a bit longer, but in this case it feels clearer.
+example I am not even sure I would not write <hl>[0-9A-F]</hl> instead. It is a bit longer, but in this case it feels clearer.
 
 In a nutshell, they do the same, write the one that looks more readable to you.
 
