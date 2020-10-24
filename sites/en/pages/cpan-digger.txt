@@ -1,0 +1,32 @@
+=title CPAN Digger
+=timestamp 2020-10-24T12:30:01
+=indexes CPAN
+=status show
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+In the CPAN Digger our goal is to understand and to help to improve the code that is CPAN.
+
+=abstract end
+
+A few steps:
+
+<h2>Weekly report in the Perl Weekly</h2>
+
+In the <a href="https://perlweekly.com/">Perl Weekly</a> newsteller I've started to share weekly <a href="https://perlweekly.com/metacpan.html">statistics from MetaCPAN</a>
+
+
+<h2>TODO</h2>
+
+<ul>
+    <li>Locate CPAN distributions that don't include a link to their VCS (Version Control System). Suggest to the author to add one.</li>
+    <li>Locate distributions that have VCS, but don't have CI configured. Ask the author if they are interested and send a Pull-Request to set up CI</li>
+    <li>Help authors configure the Meta-data that links MetaCPAN to the issue-tracking system they prefer to use.</li>
+    <li>Set up a separate site where we collect the Meta information about CPAN distributions.</li>
+</ul>
+
