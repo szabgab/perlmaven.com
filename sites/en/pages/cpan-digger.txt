@@ -26,10 +26,22 @@ In the <a href="https://perlweekly.com/">Perl Weekly</a> newsteller I've started
 Locate CPAN distributions that don't include a link to their VCS (Version Control System). Suggest to the author to add one.
 <a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">How to convince Meta CPAN to show a link to the version control system of a distribution?</a>
 
+Some people might expect a patch in e-mail, but these days very few people know how to do that. A lot more know how to send a pull-request.
+It is also much better as the potential contributor can easily see the changes since the most recent release that are still only in the repository.
+
+If it is an open source project having an accessible public version control system seems like a very sensible option. Linking to it in the meta-data of the package
+makes it easy for other tools, e.g. MetaCPAN to display it.
+
 
 <h2>Configure Continuous Integration (CI) for the project</h2>
 
 Locate distributions that have VCS, but don't have CI configured. Ask the author if they are interested and send a Pull-Request to set up CI.
+
+If <a href="http://www.cpantesters.org/">CPAN Testers</a> already test your module then why would you need a CI system on your VCS?
+Well, the CI on the VCS runs <b>before</b> you release your module. It can also run on pull-requests improving the feedback loop to
+the potential contributors.
+
+A few articles:
 
 <a href="/enable-travis-ci-for-continous-integration">Enable Travis-CI for Continuous Integration</a>
 
@@ -47,4 +59,5 @@ Help authors configure the Meta-data that links MetaCPAN to the issue-tracking s
 <ul>
     <li>Set up a separate site where we collect the Meta information about CPAN distributions.</li>
 </ul>
+
 
