@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=description
+=description CPAN Digger is going to be a web site collecting data about Perl-related code and helping the authors to improve that code.
 =comments_disqus_enable 0
 =show_related 1
 
@@ -21,12 +21,30 @@ A few steps:
 In the <a href="https://perlweekly.com/">Perl Weekly</a> newsteller I've started to share weekly <a href="https://perlweekly.com/metacpan.html">statistics from MetaCPAN</a>
 
 
-<h2>TODO</h2>
+<h2>Link to Public Version Control System</h2>
 
+Locate CPAN distributions that don't include a link to their VCS (Version Control System). Suggest to the author to add one.
+<a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">How to convince Meta CPAN to show a link to the version control system of a distribution?</a>
+
+
+<h2>Configure Continuous Integration (CI) for the project</h2>
+
+Locate distributions that have VCS, but don't have CI configured. Ask the author if they are interested and send a Pull-Request to set up CI.
+
+<a href="/enable-travis-ci-for-continous-integration">Enable Travis-CI for Continuous Integration</a>
+
+<a href="/using-travis-ci-and-installing-geo-ip-on-linux">Using Travis-CI and installing Geo::IP on Linux and OSX</a>
+
+<h2>Link the the desired issue-tracking system</h2>
+
+Help authors configure the Meta-data that links MetaCPAN to the issue-tracking system they prefer to use.
+
+<h2>License field</h2>
+
+<a href="/how-to-add-the-license-field-to-meta-files-on-cpan">How to add the license field to the META.yml and META.json files on CPAN?</a>
+
+<h2>TODO</h2>
 <ul>
-    <li>Locate CPAN distributions that don't include a link to their VCS (Version Control System). Suggest to the author to add one.</li>
-    <li>Locate distributions that have VCS, but don't have CI configured. Ask the author if they are interested and send a Pull-Request to set up CI</li>
-    <li>Help authors configure the Meta-data that links MetaCPAN to the issue-tracking system they prefer to use.</li>
     <li>Set up a separate site where we collect the Meta information about CPAN distributions.</li>
 </ul>
 
