@@ -73,7 +73,7 @@ perl-tutorial:
     - title: Subroutines
       sub:
         - subroutines-and-functions-in-perl
-        - pro/passing-multiple-parameters-to-a-function
+        - passing-multiple-parameters-to-a-function
         - variable-number-of-parameters
         - pro/returning-a-list-from-a-subroutine
         - recursive-subroutines
