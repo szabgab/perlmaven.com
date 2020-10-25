@@ -75,24 +75,36 @@ Emails suggesting to add link to VCS. There always will be people who don't want
 On the other hand where the email bounced or where there was no response we might try to find another way to contact the author.
 
 <style>
+td {
+    padding-left: 10px;
+}
+.success {
+   color: green;
+}
+.todo {
+   color: yellow;
+}
+.failure {
+   color: red;
+}
 </style>
 
 <table>
 <tr class="neutral"><td>2020.08.25</td><td><a href="https://metacpan.org/author/JOYREX">Vincent van Dam</a>       </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.08.25</td><td><a href="https://metacpan.org/author/TVV">Vitaliy V. Tokarev</a>       </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.10.25</td><td><a href="https://metacpan.org/author/RATCLIFFE">Jeffrey Ratcliffe</a>  </td><td>                                                    </td></tr>
-<tr class="neutral"><td>2020.10.25</td><td><a href="https://metacpan.org/author/NLNETLABS">NLnet Labs</a>         </td><td>It is in the README and they prefer not to add to the META data. <a href="https://rt.cpan.org/Public/Bug/Display.html?id=101777">see also</a></td></tr>
+<tr class="failure"><td>2020.10.25</td><td><a href="https://metacpan.org/author/NLNETLABS">NLnet Labs</a>         </td><td>It is in the README and they prefer not to add to the META data. <a href="https://rt.cpan.org/Public/Bug/Display.html?id=101777">see also</a></td></tr>
 <tr class="neutral"><td>2020.10.25</td><td><a href="https://metacpan.org/author/LNATION">Robert Acock</a>         </td><td>                                                    </td></tr>
 <tr class="neutral"><td>2020.10.25</td><td><a href="https://metacpan.org/author/PRBRENAN">Philip R Brenan</a>     </td><td>positive reply                                      </td></tr>
-<tr class="neutral"><td>2020.08.19</td><td><a href="https://metacpan.org/author/IPENBURG">Roland van Ipenburg</a> </td><td>success                                             </td></tr>
-<tr class="neutral"><td>2020.08.19</td><td><a href="https://metacpan.org/author/VANHOESEL">Theo van Hoesel</a>    </td><td>projects were internal on their way to public VCSs. </td></tr>
-<tr class="neutral"><td>2020.08.19</td><td><a href="https://metacpan.org/author/SNEZ">Szymon Nieznański</a>       </td><td>projects were internal on their way to public VCSs. </td></tr>
-<tr class="neutral"><td>2020.08.19</td><td><a href="https://metacpan.org/author/PECO">Juan Jose San Martin</a>    </td><td>no response                                                    </td></tr>
-<tr class="neutral"><td>2020.08.19</td><td><a href="https://metacpan.org/author/PEVANS">Paul "LeoNerd" Evans</a>  </td><td>no objection, but does not see much value in the links. - result: no links.</td></tr>
+<tr class="success"><td>2020.08.19</td><td><a href="https://metacpan.org/author/IPENBURG">Roland van Ipenburg</a> </td><td>success                                             </td></tr>
+<tr class="success"><td>2020.08.19</td><td><a href="https://metacpan.org/author/VANHOESEL">Theo van Hoesel</a>    </td><td>projects were internal on their way to public VCSs. </td></tr>
+<tr class="success"><td>2020.08.19</td><td><a href="https://metacpan.org/author/SNEZ">Szymon Nieznański</a>       </td><td>projects were internal on their way to public VCSs. </td></tr>
+<tr class="todo"   ><td>2020.08.19</td><td><a href="https://metacpan.org/author/PECO">Juan Jose San Martin</a>    </td><td>no response                                                    </td></tr>
+<tr class="failure"><td>2020.08.19</td><td><a href="https://metacpan.org/author/PEVANS">Paul "LeoNerd" Evans</a>  </td><td>no objection, but does not see much value in the links. - result: no links.</td></tr>
 <tr class="neutral"><td>2020.08.10</td><td><a href="https://metacpan.org/author/JDEGUEST">Jacques Degues</a>      </td><td>positive response, partial success                  </td></tr>
-<tr class="neutral"><td>2020.08.09</td><td><a href="https://metacpan.org/author/MIKEJONES">Mike Jones</a>         </td><td>success                                             </td></tr>
-<tr class="neutral"><td>2020.08.09</td><td><a href="https://metacpan.org/author/KNOWZERO">Know Zero</a>           </td><td>Email bounced                                       </td></tr>
-<tr class="neutral"><td>2020.08.08</td><td><a href="https://metacpan.org/author/GUGOD">Kang-min Liu</a>           </td><td>success: just missed it                             </td></tr>
+<tr class="success"><td>2020.08.09</td><td><a href="https://metacpan.org/author/MIKEJONES">Mike Jones</a>         </td><td>success                                             </td></tr>
+<tr class="todo"   ><td>2020.08.09</td><td><a href="https://metacpan.org/author/KNOWZERO">Know Zero</a>           </td><td>Email bounced                                       </td></tr>
+<tr class="success"><td>2020.08.08</td><td><a href="https://metacpan.org/author/GUGOD">Kang-min Liu</a>           </td><td>success: just missed it                             </td></tr>
 </table>
 
 <!--
