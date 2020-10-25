@@ -67,6 +67,7 @@ Help authors configure the Meta-data that links MetaCPAN to the issue-tracking s
 </ul>
 
 
+<!--
 
 <h2>Log</h2>
 
@@ -89,9 +90,8 @@ td {
 }
 </style>
 
-<!--
 <table>
-<tr class="neutral"><td>2020.08.25</td><td><a href="https://metacpan.org/author/JOYREX">Vincent van Dam</a>       </td><td>                                             </td></tr>
+<tr class="success"><td>2020.08.25</td><td><a href="https://metacpan.org/author/JOYREX">Vincent van Dam</a>       </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.08.25</td><td><a href="https://metacpan.org/author/TVV">Vitaliy V. Tokarev</a>       </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.10.25</td><td><a href="https://metacpan.org/author/RATCLIFFE">Jeffrey Ratcliffe</a>  </td><td>                                                    </td></tr>
 <tr class="failure"><td>2020.10.25</td><td><a href="https://metacpan.org/author/NLNETLABS">NLnet Labs</a>         </td><td>It is in the README and they prefer not to add to the META data. <a href="https://rt.cpan.org/Public/Bug/Display.html?id=101777">see also</a></td></tr>
