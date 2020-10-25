@@ -74,10 +74,13 @@ in the <b>Module::Build->new</b> call:
 <code lang="perl">
 meta_merge => {
     resources => {
-            repository => 'https://github.com/dwimperl/Task-DWIM'
+        repository => 'https://github.com/dwimperl/Task-DWIM'
+        bugtracker => 'https://github.com/dwimperl/Task-DWIM/issues'
     }
 },
 </code>
+
+This will include a link to both the GitHub repository and the GitHub issues.
 
 <h2>Module::Install</h2>
 
