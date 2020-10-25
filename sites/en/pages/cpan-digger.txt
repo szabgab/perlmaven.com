@@ -67,3 +67,35 @@ Help authors configure the Meta-data that links MetaCPAN to the issue-tracking s
 </ul>
 
 
+<!--
+
+Emails suggesting to add link to VCS. There always will be people who don't want to share the link to their public version control. That's fine. We should not bother them again.
+
+On the other hand where the email bouncde or where there was no response we might try to find another way to contact the author.
+
+
+<table>
+<tr><td>2020.08.25</td><td><a href="https://metacpan.org/author/JOYREX">Vincent van Dam</a>       </td><td>                                             </td></tr>
+<tr><td>2020.08.25</td><td><a href="https://metacpan.org/author/TVV">Vitaliy V. Tokarev</a>       </td><td>                                             </td></tr>
+<tr><td>2020.10.25</td><td><a href="https://metacpan.org/author/RATCLIFFE">Jeffrey Ratcliffe</a>  </td><td>                                                    </td></tr>
+<tr><td>2020.10.25</td><td><a href="https://metacpan.org/author/NLNETLABS">NLnet Labs</a>         </td><td>                                                    </td></tr>
+<tr><td>2020.10.25</td><td><a href="https://metacpan.org/author/LNATION">Robert Acock</a>         </td><td>                                                    </td></tr>
+<tr><td>2020.10.25</td><td><a href="https://metacpan.org/author/PRBRENAN">Philip R Brenan</a>     </td><td>positive reply                                      </td></tr>
+<tr><td>2020.08.19</td><td><a href="https://metacpan.org/author/IPENBURG">Roland van Ipenburg</a> </td><td>success                                             </td></tr>
+<tr><td>2020.08.19</td><td><a href="https://metacpan.org/author/VANHOESEL">Theo van Hoesel</a>    </td><td>projects were internal on their way to public VCSs. </td></tr>
+<tr><td>2020.08.19</td><td><a href="https://metacpan.org/author/SNEZ">Szymon Nieznański</a>       </td><td>projects were internal on their way to public VCSs. </td></tr>
+<tr><td>2020.08.19</td><td><a href="https://metacpan.org/author/PECO">Juan Jose San Martin</a>    </td><td><b>no response</b>                                                    </td></tr>
+<tr><td>2020.08.19</td><td><a href="https://metacpan.org/author/PEVANS">Paul "LeoNerd" Evans</a>  </td><td>no objection, but does not see much value in the links. - result: no links.</td></tr>
+<tr><td>2020.08.10</td><td><a href="https://metacpan.org/author/JDEGUEST">Jacques Degues</a>      </td><td>positive response, partial success                  </td></tr>
+<tr><td>2020.08.09</td><td><a href="https://metacpan.org/author/MIKEJONES">Mike Jones</a>         </td><td>success                                             </td></tr>
+<tr><td>2020.08.09</td><td><a href="https://metacpan.org/author/KNOWZERO">Know Zero</a>           </td><td><b>Email bounced</b>                                </td></tr>
+<tr><td>2020.08.08</td><td><a href="https://metacpan.org/author/GUGOD">Kang-min Liu</a>           </td><td>success: just missed it                             </td></tr>
+
+
+<tr><td>2020.08.</td><td><a href=""></a>         </td><td>                                             </td></tr>
+
+
+</table>
+
+
+-->
