@@ -82,13 +82,14 @@ td {
    color: green;
 }
 .todo {
-   color: yellow;
+   color: brown;
 }
 .failure {
    color: red;
 }
 </style>
 
+<!--
 <table>
 <tr class="neutral"><td>2020.08.25</td><td><a href="https://metacpan.org/author/JOYREX">Vincent van Dam</a>       </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.08.25</td><td><a href="https://metacpan.org/author/TVV">Vitaliy V. Tokarev</a>       </td><td>                                             </td></tr>
@@ -106,6 +107,7 @@ td {
 <tr class="todo"   ><td>2020.08.09</td><td><a href="https://metacpan.org/author/KNOWZERO">Know Zero</a>           </td><td>Email bounced                                       </td></tr>
 <tr class="success"><td>2020.08.08</td><td><a href="https://metacpan.org/author/GUGOD">Kang-min Liu</a>           </td><td>success: just missed it                             </td></tr>
 </table>
+-->
 
 <!--
 <tr><td>2020.08.</td><td><a href=""></a>         </td><td>                                             </td></tr>
