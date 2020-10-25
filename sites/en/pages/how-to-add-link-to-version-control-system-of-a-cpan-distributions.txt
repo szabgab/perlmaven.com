@@ -74,7 +74,7 @@ in the <b>Module::Build->new</b> call:
 <code lang="perl">
 meta_merge => {
     resources => {
-        repository => 'https://github.com/dwimperl/Task-DWIM'
+        repository => 'https://github.com/dwimperl/Task-DWIM',
         bugtracker => 'https://github.com/dwimperl/Task-DWIM/issues'
     }
 },
