@@ -8,13 +8,10 @@
 
 =abstract start
 
-When you look at either <a href="https://www.metacpan.org/">META CPAN</a>, or at
-<a href="http://search.cpan.org/">search.cpan.org</a>, you will see that some modules
+When you look at <a href="https://www.metacpan.org/">META CPAN</a>, you will see that some modules
 have a link to Github or some other place where they host their project.
 
-On search.cpan.org, it is a plain link next to the title <b>Repository</b>, on Meta CPAN
-it is a link, or a pop-up under the title <b>Clone repository</b> depending on the type of
-repository. (Github gets nice pop-ups, private repositories tend to get simple links.)
+On Meta CPAN it is a link on the left-hand side of the page called "Clone repository".
 
 =abstract end
 
