@@ -56,9 +56,15 @@ A few articles:
 
 <h2>Link the the desired issue-tracking system</h2>
 
+By default MetaCPAN will link to the <a href="https://rt.cpan.org/">Request Tracker</a>, but you might prefer that your users
+will submite bug-reports and feature requests via some other issue-tracking system. For example the one that comes with your
+Version Control system.
+
 Help authors configure the Meta-data that links MetaCPAN to the issue-tracking system they prefer to use.
 
 <h2>License field</h2>
+
+The license field in the META data of a CPAN packages allows an easy way to automatically check the license of each package.
 
 <a href="/how-to-add-the-license-field-to-meta-files-on-cpan">How to add the license field to the META.yml and META.json files on CPAN?</a>
 
