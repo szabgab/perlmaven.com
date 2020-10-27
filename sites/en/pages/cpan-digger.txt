@@ -37,9 +37,10 @@ makes it easy for other tools, e.g. MetaCPAN to display it.
 
 Locate distributions that have VCS, but don't have CI configured. Ask the author if they are interested and send a Pull-Request to set up CI.
 
-If <a href="http://www.cpantesters.org/">CPAN Testers</a> already test your module then why would you need a CI system on your VCS?
-Well, the CI on the VCS runs <b>before</b> you release your module. It can also run on pull-requests improving the feedback loop to
-the potential contributors.
+<a href="http://www.cpantesters.org/">CPAN Testers</a> are awesome, I wrote about them a number of times. They test most of the modules uploaded to CPAN on various platforms.
+However they only run on modules already uploaded to CPAN. A CI-system configured to your repo can run every time you push a file.
+Every time someone sends a pull-requests shortening the  the feedback loop to the potential contributors. It can run scheduled, for examples once a day,
+to see if a change in one of your dependencies did not break your code. Again, to get back feedback as soon as possible.
 
 If the project is hosted on GitHub there are a number of options such as GitHub Actions, Travis-CI, Appveyor, Circle-CI.
 
@@ -91,9 +92,9 @@ td {
 </style>
 
 <table>
-<tr class="success"><td>2020.08.25</td><td><a href="https://metacpan.org/author/JOYREX">Vincent van Dam</a>       </td><td>                                             </td></tr>
-<tr class="neutral"><td>2020.08.25</td><td><a href="https://metacpan.org/author/TVV">Vitaliy V. Tokarev</a>       </td><td>                                             </td></tr>
-<tr class="neutral"><td>2020.10.25</td><td><a href="https://metacpan.org/author/RATCLIFFE">Jeffrey Ratcliffe</a>  </td><td>                                                    </td></tr>
+<tr class="success"><td>2020.08.25</td><td><a href="https://metacpan.org/author/JOYREX">Vincent van Dam</a>       </td><td>Pull-request sent                                   </td></tr>
+<tr class="neutral"><td>2020.08.25</td><td><a href="https://metacpan.org/author/TVV">Vitaliy V. Tokarev</a>       </td><td>Will fix in the next issue                          </td></tr>
+<tr class="failure"><td>2020.10.25</td><td><a href="https://metacpan.org/author/RATCLIFFE">Jeffrey Ratcliffe</a>  </td><td>Did not sound enthusiastic about the idea.          </td></tr>
 <tr class="failure"><td>2020.10.25</td><td><a href="https://metacpan.org/author/NLNETLABS">NLnet Labs</a>         </td><td>It is in the README and they prefer not to add to the META data. <a href="https://rt.cpan.org/Public/Bug/Display.html?id=101777">see also</a></td></tr>
 <tr class="neutral"><td>2020.10.25</td><td><a href="https://metacpan.org/author/LNATION">Robert Acock</a>         </td><td>                                                    </td></tr>
 <tr class="neutral"><td>2020.10.25</td><td><a href="https://metacpan.org/author/PRBRENAN">Philip R Brenan</a>     </td><td>positive reply                                      </td></tr>
