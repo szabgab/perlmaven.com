@@ -1,0 +1,23 @@
+name: Testing
+
+on: [push, pull_request]
+
+jobs:
+  perl-job:
+    runs-on: ubuntu-latest
+    container:
+      image: perldocker/perl-tester:${{ matrix.perl-version }}     # https://hub.docker.com/r/perldocker/perl-tester
+    strategy:
+      fail-fast: false
+      matrix:
+        perl-version:
+          - '5.30'
+#          - '5.32'
+#          - 'latest'
+    name: Perl ${{ matrix.perl-version }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Regular tests
+        run: |
+          perl Build.PL
+          perl Build test
