@@ -40,7 +40,7 @@ The beginning of a series of articles about
   <li><a href="/uploading-files-with-dancer2">Uploading files using Dancer</a></li>
 </ul>
 
-<h2>Dancer 2 and Ajax</h2>
+<h2>Dancer 2 API and AJAX</h2>
 <ul>
   <li><a href="/ajax-and-dancer2">Ajax and Dancer</a> - Simple GET request to the same server returning JSON with "hello world" and displaying it.</li>
   <li><a href="/stand-alone-ajax-client">Stand-alone Ajax client and the Access-Control-Allow-Origin issue</a> - Simple cross-site GET request. Set Access-Control-Allow-Origin in the server.</li>
