@@ -97,6 +97,8 @@ cpan-digger --recent 10 --report --log INFO --github --sleep 3
 </ul>
 
 
+<screencast file="english-cpan-digger-v1.01.mkv" youtube="imJjt5SgQII" />
+
 <!--
 
 <h2>Log</h2>
