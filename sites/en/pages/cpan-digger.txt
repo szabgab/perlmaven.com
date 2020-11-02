@@ -10,7 +10,7 @@
 
 =abstract start
 
-In the CPAN Digger our goal is to understand and to help to improve the code that is CPAN.
+The goal of the CPAN Digger project is to understand and to help to improve the code that is on CPAN.
 
 =abstract end
 
@@ -67,6 +67,29 @@ Help authors configure the Meta-data that links MetaCPAN to the issue-tracking s
 The license field in the META data of a CPAN packages allows an easy way to automatically check the license of each package.
 
 <a href="/how-to-add-the-license-field-to-meta-files-on-cpan">How to add the license field to the META.yml and META.json files on CPAN?</a>
+
+<h2>Tools</h2>
+
+You can install the <a href="https://metacpan.org/pod/CPAN::Digger">CPAN::Digger</a> module and run
+
+<code>
+cpan-digger --author SZABGAB --report --log INFO
+</code>
+
+replacing my PAUSE ID with yours. This will give you a list of your distributions that do not have a link to a Version Control System.
+
+<code>
+cpan-digger --author SZABGAB --report --log INFO --github --sleep 3
+</code>
+
+Alternatively you can ask information about the N most recently uploaded distributions.
+
+<code>
+cpan-digger --recent 10 --report --log INFO --github --sleep 3
+</code>
+
+
+
 
 <h2>TODO</h2>
 <ul>
