@@ -1,0 +1,51 @@
+=title How to change an element of an array in Perl
+=timestamp 2020-11-02T08:30:01
+=indexes @array, $array[$i]
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+<code lang="perl">
+$i = 3;
+$array[$i] = $new_value;
+</code>
+
+=abstract end
+
+<h2>Full example</h2>
+
+<include file="examples/replace_element_of_array.pl">
+
+Before:
+
+<code lang="perl">
+$VAR1 = [
+          'Issac Asimov',
+          'Arthor C. Clarke',
+          'Ray Bradbury',
+          'Foo Bar',
+          'Philip K. Dick',
+          'H. G. Wells',
+          'Frank Herbert'
+        ];
+</code>
+
+After:
+
+<code lang="perl">
+$VAR1 = [
+          'Issac Asimov',
+          'Arthor C. Clarke',
+          'Ray Bradbury',
+          'Jules Verne',
+          'Philip K. Dick',
+          'H. G. Wells',
+          'Frank Herbert'
+        ];
+</code>
+
+Read more about <a href="/perl-arrays">arrays in Perl</a>.
+
