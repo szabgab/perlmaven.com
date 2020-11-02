@@ -98,6 +98,7 @@ td {
 </style>
 
 <table>
+<tr class="neutral"><td>2020.10.31</td><td><a href="https://metacpan.org/author/CREDO">Dustin La Ferney</a>       </td><td>                                             </td></tr>
 <tr class="success"><td>2020.08.25</td><td><a href="https://metacpan.org/author/JOYREX">Vincent van Dam</a>       </td><td>Pull-request sent                                   </td></tr>
 <tr class="neutral"><td>2020.08.25</td><td><a href="https://metacpan.org/author/TVV">Vitaliy V. Tokarev</a>       </td><td>Will fix in the next issue                          </td></tr>
 <tr class="failure"><td>2020.10.25</td><td><a href="https://metacpan.org/author/RATCLIFFE">Jeffrey Ratcliffe</a>  </td><td>Did not sound enthusiastic about the idea.          </td></tr>
@@ -117,5 +118,5 @@ td {
 -->
 
 <!--
-<tr><td>2020.08.</td><td><a href=""></a>         </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.</td><td><a href=""></a>         </td><td>                                             </td></tr>
 -->
