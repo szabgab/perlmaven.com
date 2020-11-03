@@ -99,7 +99,6 @@ cpan-digger --recent 10 --report --log INFO --github --sleep 3
 
 <screencast file="english-cpan-digger-v1.01.mkv" youtube="imJjt5SgQII" />
 
-<!--
 
 <h2>Log</h2>
 
@@ -123,6 +122,7 @@ td {
 </style>
 
 <table>
+<tr class="neutral"><td>2020.11.03</td><td><a href="https://metacpan.org/author/SYBER">Oleg Pronin</a>            </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.10.31</td><td><a href="https://metacpan.org/author/CREDO">Dustin La Ferney</a>       </td><td>                                             </td></tr>
 <tr class="success"><td>2020.08.25</td><td><a href="https://metacpan.org/author/JOYREX">Vincent van Dam</a>       </td><td>Pull-request sent                                   </td></tr>
 <tr class="neutral"><td>2020.08.25</td><td><a href="https://metacpan.org/author/TVV">Vitaliy V. Tokarev</a>       </td><td>Will fix in the next issue                          </td></tr>
@@ -140,7 +140,6 @@ td {
 <tr class="todo"   ><td>2020.08.09</td><td><a href="https://metacpan.org/author/KNOWZERO">Know Zero</a>           </td><td>Email bounced                                       </td></tr>
 <tr class="success"><td>2020.08.08</td><td><a href="https://metacpan.org/author/GUGOD">Kang-min Liu</a>           </td><td>success: just missed it                             </td></tr>
 </table>
--->
 
 <!--
 <tr class="neutral"><td>2020.11.</td><td><a href=""></a>         </td><td>                                             </td></tr>
