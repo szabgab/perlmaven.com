@@ -1,0 +1,38 @@
+=title Checking a GitHub URL for existance
+=timestamp 2020-11-04T10:30:01
+=indexes LWP::UserAgent, Test::More, GET, HTTP
+=status show
+=author szabgab
+=archive 1
+=description Check the status code of an HTTP GET request using Perl
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+In the <a href="/cpan-digger">CPAN::Digger</a> project I've encountered an issue. The process cloning the repositories will ask for a "Username"
+and get stuck whenever an incorrect URL was supplied. This could happen by a plain typo, if the repository was made private, and maybe other cases.
+
+If someone has renamed a repository and forgot to update the URL in the META files the clone should still work, at least for some time.
+This is what's happening to the old name of the CPAN::Digger repository.
+
+All of these cases must be reported, but they should not cause the checking process to get stuck.
+
+One of the fixes I have applied is checking if the repository URL returns <b>"OK 200"</b> when accessing with a simple GET requests.
+
+=abstract end
+
+This is a sample code showing how to do it and how to verify that code.
+
+In this example we use <a href="https://metacpan.org/pod/LWP::UserAgent">LWP::UserAgent</a> to send a GET request and then we check
+if the response was <b>"200 OK"</b> or <b>"404 Not Found"</b>.
+
+In the default behavior of the LWP::UserAgent it allows for redirects and reports the results of the last call. This is
+what you can see in the first solution.
+
+In the second solution we set the <b>max_redirect</b> to be 0 and thus the response we got was <b>"301 Moved Permanently"</b>.
+
+The CPAN::Digger should probably report these cases so the author can notice them and fix them.
+
+<include file="examples/check_git_url.t">
+
