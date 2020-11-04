@@ -1,4 +1,4 @@
-=title Checking a GitHub URL for existance
+=title Checking a GitHub URL for existence
 =timestamp 2020-11-04T10:30:01
 =indexes LWP::UserAgent, Test::More, GET, HTTP
 =status show
