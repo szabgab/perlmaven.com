@@ -1,6 +1,12 @@
-name: CI
+name: CI Makefile
 
-on: [push, pull_request]
+on:
+    push:
+        branches: '*'
+    pull_request:
+        branches: '*'
+    schedule:
+        - cron: '42 5 * * 0'
 
 jobs:
   perl-job:
