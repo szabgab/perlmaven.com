@@ -1,0 +1,32 @@
+=title CI for CPAN modules
+=timestamp 2020-11-04T07:30:01
+=indexes CI
+=status draft
+=tags screencast
+=author szabgab
+=archive 1
+=description Mini series to help CPAN authors to set up CI system for their modules
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+The goal of this mini-series is to get to the point where all the CPAN modules that use GitHub for
+version control have a CI system configured.
+
+=abstract end
+
+
+<ul>
+   <li>What is Continuous Integration (CI) and why is it useful?</li>
+   <li>What is the difference between a CI on GitHub and the <a href="http://www.cpantesters.org/">CPAN Testers</a></li>
+   <li>What Cloud-based CI systems are available for GitHub users? GitHub Actions, Travis-CI, Appveyor, CircleCI</li>
+   <li>What are GitHub Actions?</li>
+   <li>We'll look at a few examples on how various Perl projects use GitHub Actions</li>
+   <li>We'll see how to find a CPAN module that does not have CI yet. (Check out the <a href="/cpan-digger">CPAN::Digger</a> project.</li>
+   <li>How to configure GitHub Actions</li>
+   <li>How to send a pull-request</li>:
+</ul>
+
+
+<screencast file="" youtube="" />
