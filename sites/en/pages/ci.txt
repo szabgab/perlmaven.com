@@ -3,7 +3,7 @@
 =indexes CI
 =status draft
 =tags screencast
-=author szabgab
+=author 
 =archive 1
 =description Mini series to help CPAN authors to set up CI system for their modules
 =comments_disqus_enable 0
