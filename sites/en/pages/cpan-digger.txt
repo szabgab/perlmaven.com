@@ -122,6 +122,7 @@ td {
 </style>
 
 <table>
+<tr class="neutral"><td>2020.11.05</td><td><a href="https://metacpan.org/author/GAISSMAI">Karl Gaissmaier</a>      </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.03</td><td><a href="https://metacpan.org/author/CHA">Christoph Halbartschlager</a> </td><td>                                             </td></tr>
 <tr class="success"><td>2020.11.03</td><td><a href="https://metacpan.org/author/GRAVATTJ">John Gravatt</a>         </td><td>John added the VCS link within a few hours   </td></tr>
 <tr class="neutral"><td>2020.11.03</td><td><a href="https://metacpan.org/author/SYBER">Oleg Pronin</a>             </td><td>                                             </td></tr>
