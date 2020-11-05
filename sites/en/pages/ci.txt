@@ -1,9 +1,9 @@
 =title CI for CPAN modules
-=timestamp 2020-11-04T07:30:01
+=timestamp 2020-11-05T07:30:01
 =indexes CI
-=status draft
+=status show
 =tags screencast
-=author 
+=author szabgab
 =archive 1
 =description Mini series to help CPAN authors to set up CI system for their modules
 =comments_disqus_enable 0
@@ -29,4 +29,4 @@ version control have a CI system configured.
 </ul>
 
 
-<screencast file="" youtube="" />
+<screencast file="english-perlmaven-ci.mkv" youtube="c_PgAYBnNkY" />
