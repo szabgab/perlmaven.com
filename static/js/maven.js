@@ -38,5 +38,5 @@ $(document).ready(function() {
     //show_top('Once you are done <a href="/invitation">check out</a> the other resources you can find on this site!')
     //show_bottom('Was this article useful? <a href="/invitation">Check out</a> what else can you get from this site!');
     //show_top('Once you are done <a href="/invitation">check out</a> the other resources you can find on this site and consider <a href="https://www.patreon.com/szabgab">supporting me via Patreon</a>.')
-    show_bottom('Was this article useful? Please <a href="https://www.patreon.com/szabgab">support me via Patreon</a> so I can keep writing about Perl as well!');
+    //show_bottom('Was this article useful? Please <a href="https://www.patreon.com/szabgab">support me via Patreon</a> so I can keep writing about Perl as well!');
 })
