@@ -11,8 +11,6 @@ on:
 jobs:
   perl-job:
     runs-on: ubuntu-latest
-    container:
-      image: perldocker/perl-tester:${{ matrix.perl-version }}     # https://hub.docker.com/r/perldocker/perl-tester
     strategy:
       fail-fast: false
       matrix:
@@ -20,6 +18,8 @@ jobs:
           - '5.30'
 #          - '5.32'
 #          - 'latest'
+    container:
+      image: perldocker/perl-tester:${{ matrix.perl-version }}     # https://hub.docker.com/r/perldocker/perl-tester
     name: Perl ${{ matrix.perl-version }}
     steps:
       - uses: actions/checkout@v2
