@@ -22,7 +22,7 @@ One of the fixes I have applied is checking if the repository URL returns <b>"OK
 
 =abstract end
 
-This is a sample code showing how to do it and how to verify that code.
+This is a sample code showing 3 different ways how to do it and how to verify that code.
 
 In this example we use <a href="https://metacpan.org/pod/LWP::UserAgent">LWP::UserAgent</a> to send a GET request and then we check
 if the response was <b>"200 OK"</b> or <b>"404 Not Found"</b>.
@@ -36,3 +36,4 @@ The CPAN::Digger should probably report these cases so the author can notice the
 
 <include file="examples/check_git_url.t">
 
+Remember, you pick one of the 3 functions, whichever feels more convenient to you. Or you roll your own.
