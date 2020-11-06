@@ -23,9 +23,15 @@ version control have a CI system configured.
    <li>What Cloud-based CI systems are available for GitHub users? GitHub Actions, Travis-CI, Appveyor, CircleCI</li>
    <li>What are GitHub Actions?</li>
    <li>We'll look at a few examples on how various Perl projects use GitHub Actions</li>
-   <li>We'll see how to find a CPAN module that does not have CI yet. (Check out the <a href="/cpan-digger">CPAN::Digger</a> project.</li>
+   <li><a href="https://github.com/davorg/array-compare/">Array::Compare</a> of Dave Cross</li>
+   <li><a href="https://github.com/briandfoy/PerlPowerTools">Perl Power Tools</a> of brian d foy</li>
+   <li><a href="https://github.com/graphviz-perl/GraphViz2/">GraphViz2</a> of Ron Savage and Ed J</li>
+   <li><a href="https://github.com/Perl/docker-perl-tester">Docker Perl Tester</a> by Nicolas R and Olaf Alders</li>
+   <li>Maybe others<a href=""></a></li>
+   <li>We'll also take a look at the <a href="https://code.perlhacks.com/">CPAN Dashboard</a> Dave Cross has </li>
+   <li>We'll see how to find a CPAN module that does not have CI yet. (Check out the <a href="/cpan-digger">CPAN::Digger</a> project.)</li>
    <li>How to configure GitHub Actions</li>
-   <li>How to send a pull-request</li>:
+   <li>How to send a pull-request</li>
 </ul>
 
 
