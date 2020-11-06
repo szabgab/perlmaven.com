@@ -1,0 +1,40 @@
+=title Log::Log4perl layouts and formatting options
+=timestamp 2020-11-06T17:30:01
+=indexes Log::Log4perl, Log::Log4perl::Layout
+=status show
+=author szabgab
+=archive 1
+=description Log4Perl is a roboust logging system for Perl, but you can get started with it quite easily without the need of configuration files.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+<a href="https://metacpan.org/pod/Log::Log4perl">Log::Log4perl</a> is a roboust logging system for Perl, but you can get started with it quite easily without the need of configuration files.
+
+=abstract end
+
+<h2>Install</h2>
+
+Remember, before you use this module you need to install it. e.g. using <a href="/cpanm">cpanm</a>:
+
+<code>
+cpanm Log::Log4perl
+</code>
+
+
+<h2>Log::Log4perl example</h2>
+
+This code:
+
+<include file="examples/log4perl.pl">
+
+Will show this log message:
+
+<code>
+2020-11-06 17:41:49 - INFO - log4perl.pl-12-main:: - This is info
+</code>
+
+You can learn a lot more about <a href="https://metacpan.org/pod/Log::Log4perl::Layout::PatternLayout">Layout patterns</a>
+and the <a href="https://metacpan.org/pod/Log::Log4perl::DateFormat">date-formatting</a> options.
+
