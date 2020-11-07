@@ -728,3 +728,10 @@ tk:
         - pro/perl-tk-label-button-entry-widgets
         - pro/perl-tk-menu
         - pro/perl-tk-keyboard-and-mouse-events
+ci:
+  chapters:
+    - title: CI for CPAN
+      sub:
+        - cpan-digger
+        - cpan-dashboard
+
