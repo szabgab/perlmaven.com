@@ -42,7 +42,7 @@ However they only run on modules already uploaded to CPAN. A CI-system configure
 Every time someone sends a pull-requests shortening the  the feedback loop to the potential contributors. It can run scheduled, for examples once a day,
 to see if a change in one of your dependencies did not break your code. Again, to get back feedback as soon as possible.
 
-If the project is hosted on GitHub there are a number of options such as GitHub Actions, Travis-CI, Appveyor, Circle-CI.
+If the project is hosted on GitHub there are a number of options such as GitHub Actions, Travis-CI, Appveyor, Circle-CI, Azure Pipelines.
 
 If the project is hosted on GitLab, they provide the GitLab pipelines.
 
@@ -122,6 +122,11 @@ td {
 </style>
 
 <table>
+<tr class="neutral"><td>2020.11.07</td><td><a href="https://metacpan.org/author/FACILA">LE GALL Thierry</a>        </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.07</td><td><a href="https://metacpan.org/author/TOMOYAMA">Tomohiro Yamashita</a>   </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.07</td><td><a href="https://metacpan.org/author/GWYN">Philip Gwyn</a>              </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.07</td><td><a href="https://metacpan.org/author/PETEK">Pete Krawczyk</a>           </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.07</td><td><a href="https://metacpan.org/author/JPIERCE">Jerrad Pierce</a>         </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.05</td><td><a href="https://metacpan.org/author/TURNERJW">Jim Turner</a>           </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.05</td><td><a href="https://metacpan.org/author/GAISSMAI">Karl Gaissmaier</a>      </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.03</td><td><a href="https://metacpan.org/author/CHA">Christoph Halbartschlager</a> </td><td>                                             </td></tr>
