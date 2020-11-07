@@ -18,24 +18,34 @@ A few steps:
 
 <h2>Weekly report in the Perl Weekly</h2>
 
+Before setting out to make the small improvements I can offer, I wanted to measure the current state and I wanted to have a way to measure progress.
+
 In the <a href="https://perlweekly.com/">Perl Weekly</a> newsteller I've started to share weekly <a href="https://perlweekly.com/metacpan.html">statistics from MetaCPAN</a>
 
+What I saw is that the numbers are fluctuating quite a lot (even the percentages). About 20-25% of the distributions have not links to GitHub or other public VCS.
+About 40-60% of those that have a link don't have a CI system configured.
 
 <h2>Link to Public Version Control System</h2>
 
-Locate CPAN distributions that don't include a link to their VCS (Version Control System). Suggest to the author to add one.
-<a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">How to convince Meta CPAN to show a link to the version control system of a distribution?</a>
-
+If a distribution does not have a link to a public VCS in their META file then it will be difficult to contribute to that distribution.
 Some people might expect a patch in e-mail, but these days very few people know how to do that. A lot more know how to send a pull-request.
 It is also much better as the potential contributor can easily see the changes since the most recent release that are still only in the repository.
+If it is an open source project having an accessible public version control system seems like a very sensible option.
+Linking to it in the meta-data of the package makes it easy for other tools, e.g. MetaCPAN to display it.
 
-If it is an open source project having an accessible public version control system seems like a very sensible option. Linking to it in the meta-data of the package
-makes it easy for other tools, e.g. MetaCPAN to display it.
+Also without a link to a VCS it will be outright impossible to see if it has a CI system configured.
 
+So the first step is to locate CPAN distributions that don't include a link to their VCS (Version Control System). Suggest to the author to add one.
+<a href="/how-to-add-link-to-version-control-system-of-a-cpan-distributions">How to convince Meta CPAN to show a link to the version control system of a distribution?</a>
+This has to be done by contacting the author personally.
 
 <h2>Configure Continuous Integration (CI) for the project</h2>
 
-Locate distributions that have VCS, but don't have CI configured. Ask the author if they are interested and send a Pull-Request to set up CI.
+Using a hosted <a href="/ci">Continuous Integration system</a> helps the author catch many issues before the distribution reaches CPAN.
+It can catch issues with changing dependencies even while the code itself does not change and it can help noticing if our changes
+would break any of the downstream dependencies before we release the code to CPAN.
+
+In this step we need to locate distributions that have VCS, but don't have CI configured. Ask the author if they are interested and send a Pull-Request to set up CI.
 
 <a href="http://www.cpantesters.org/">CPAN Testers</a> are awesome, I wrote about them a number of times. They test most of the modules uploaded to CPAN on various platforms.
 However they only run on modules already uploaded to CPAN. A CI-system configured to your repo can run every time you push a file.
@@ -73,23 +83,25 @@ The license field in the META data of a CPAN packages allows an easy way to auto
 You can install the <a href="https://metacpan.org/pod/CPAN::Digger">CPAN::Digger</a> module and run
 
 <code>
-cpan-digger --author SZABGAB --report --log INFO
+cpan-digger --author SZABGAB --report
 </code>
 
 replacing my PAUSE ID with yours. This will give you a list of your distributions that do not have a link to a Version Control System.
 
 <code>
-cpan-digger --author SZABGAB --report --log INFO --github --sleep 3
+cpan-digger --author SZABGAB --report --github --sleep 3 --limit 30
 </code>
 
-Alternatively you can ask information about the N most recently uploaded distributions.
+This will also check the 30 most recently uploaded distributions for having a CI system.
+This will clone each repository in a temporary directory so you might want to set the "--sleep" flag to hammer GitHub a bit less frequently.
+
 
 <code>
-cpan-digger --recent 10 --report --log INFO --github --sleep 3
+cpan-digger --recent 30 --report --github --sleep 3
 </code>
 
-
-
+Finally you can ask information about the N most recently uploaded distributions by any author. This can be useful
+if you would like to help others linking to the VCS or setting up a CI system.
 
 <h2>TODO</h2>
 <ul>
