@@ -734,4 +734,5 @@ ci:
       sub:
         - cpan-digger
         - cpan-dashboard
+        - github-actions-running-on-3-operating-systems
 
