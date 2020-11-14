@@ -137,8 +137,13 @@ td {
 </style>
 
 <table>
+<tr class="neutral"><td>2020.11.14</td><td><a href="https://metacpan.org/author/MIRK">Mike Taylor</a>              </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.14</td><td><a href="https://metacpan.org/author/PRATZLAFF">Pete Ratzlaff</a>       </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.14</td><td><a href="https://metacpan.org/author/DOHNUTS">S. Falempin</a>           </td><td>Email bounced                                </td></tr>
+<tr class="neutral"><td>2020.11.14</td><td><a href="https://metacpan.org/author/MIKAGE">Sano Taku</a>              </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.14</td><td><a href="https://metacpan.org/author/MRSCOTTY">Scott T. Hardin</a>      </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.12</td><td><a href="https://metacpan.org/author/BPSCHUCK">Bruce Schuck</a>         </td><td>                                             </td></tr>
-<tr class="neutral"><td>2020.11.12</td><td><a href="https://metacpan.org/author/MRDVT">Michael R. Davis</a>        </td><td>                                             </td></tr>
+<tr class="success"><td>2020.11.12</td><td><a href="https://metacpan.org/author/MRDVT">Michael R. Davis</a>        </td><td>Moving once private repos to GitHub          </td></tr>
 <tr class="neutral"><td>2020.11.12</td><td><a href="https://metacpan.org/author/WFANSH">Wang Fan</a>               </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.12</td><td><a href="https://metacpan.org/author/AFUERST">Armin Fuerst</a>          </td><td>Email bounced                                </td></tr>
 <tr class="neutral"><td>2020.11.09</td><td><a href="https://metacpan.org/author/GIACOMONI">Franck Giacomoni</a>    </td><td>                                             </td></tr>
