@@ -106,6 +106,9 @@ if you would like to help others linking to the VCS or setting up a CI system.
 <h2>TODO</h2>
 <ul>
     <li>Set up a separate site where we collect the Meta information about CPAN distributions.</li>
+    <li>Run Perl Critic on the source code of the modules and show statistics which rules are usually followed and which not. See <a href="https://kritika.io/">Kritika</a></li>
+    <li>Run Perl Tidy on the source code and see what layout is usually used.</li>
+    <li>Check Cyclomatic Complexity of the code - <a href="https://metacpan.org/pod/Perl::Metrics::Simple">Perl::Metrics::Simple</a></li>
 </ul>
 
 
@@ -134,11 +137,17 @@ td {
 </style>
 
 <table>
+<tr class="neutral"><td>2020.11.12</td><td><a href="https://metacpan.org/author/BPSCHUCK">Bruce Schuck</a>         </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.12</td><td><a href="https://metacpan.org/author/MRDVT">Michael R. Davis</a>        </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.12</td><td><a href="https://metacpan.org/author/WFANSH">Wang Fan</a>               </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.12</td><td><a href="https://metacpan.org/author/AFUERST">Armin Fuerst</a>          </td><td>Email bounced                                </td></tr>
+<tr class="neutral"><td>2020.11.09</td><td><a href="https://metacpan.org/author/GIACOMONI">Franck Giacomoni</a>    </td><td>                                             </td></tr>
+<tr class="neutral"><td>2020.11.09</td><td><a href="https://metacpan.org/author/DDICK">David Dick</a>              </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.07</td><td><a href="https://metacpan.org/author/FACILA">LE GALL Thierry</a>        </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.07</td><td><a href="https://metacpan.org/author/TOMOYAMA">Tomohiro Yamashita</a>   </td><td>                                             </td></tr>
-<tr class="neutral"><td>2020.11.07</td><td><a href="https://metacpan.org/author/GWYN">Philip Gwyn</a>              </td><td>                                             </td></tr>
+<tr class="failure"><td>2020.11.07</td><td><a href="https://metacpan.org/author/GWYN">Philip Gwyn</a>              </td><td>Not using public VCS                         </td></tr>
 <tr class="neutral"><td>2020.11.07</td><td><a href="https://metacpan.org/author/PETEK">Pete Krawczyk</a>           </td><td>                                             </td></tr>
-<tr class="neutral"><td>2020.11.07</td><td><a href="https://metacpan.org/author/JPIERCE">Jerrad Pierce</a>         </td><td>                                             </td></tr>
+<tr class="failure"><td>2020.11.07</td><td><a href="https://metacpan.org/author/JPIERCE">Jerrad Pierce</a>         </td><td>Not using public VCS                         </td></tr>
 <tr class="neutral"><td>2020.11.05</td><td><a href="https://metacpan.org/author/TURNERJW">Jim Turner</a>           </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.05</td><td><a href="https://metacpan.org/author/GAISSMAI">Karl Gaissmaier</a>      </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.03</td><td><a href="https://metacpan.org/author/CHA">Christoph Halbartschlager</a> </td><td>                                             </td></tr>

@@ -58,6 +58,7 @@ version control have a CI system configured.
    <li>What Cloud-based CI systems are available for GitHub users? GitHub Actions, Travis-CI, Appveyor, CircleCI, Azure Pipelines</li>
    <li>What are GitHub Actions?</li>
    <li>We'll look at a few examples on how various Perl projects use GitHub Actions</li>
+   <li><a herf="/setup-github-actions">Setup GitHub Actions for a Perl module</a></li>
    <li><a href="/github-actions-running-on-3-operating-systems">Run on Windows, MacOSX, Linux</a> based on <a href="https://github.com/davorg/array-compare/">Array::Compare</a> of Dave Cross</li>
    <li><a href="https://github.com/briandfoy/PerlPowerTools">Perl Power Tools</a> of brian d foy</li>
    <li><a href="https://github.com/graphviz-perl/GraphViz2/">GraphViz2</a> of Ron Savage and Ed J</li>
