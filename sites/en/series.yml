@@ -736,4 +736,4 @@ ci:
         - cpan-dashboard
         - setup-github-actions
         - github-actions-running-on-3-operating-systems
-
+        - github-actions-showing-error-log-on-linux-mac-windows
