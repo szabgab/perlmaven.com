@@ -140,9 +140,9 @@ td {
 <tr class="neutral"><td>2020.11.15</td><td><a href="https://metacpan.org/author/STRZELEC">Strzelecki Łukasz</a>    </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.15</td><td><a href="https://metacpan.org/author/REEDFISH">Brian Kelly</a>          </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.15</td><td><a href="https://metacpan.org/author/LSTROUS">Louis Strous</a>          </td><td>                                             </td></tr>
-<tr class="neutral"><td>2020.11.15</td><td><a href="https://metacpan.org/author/LSTEVENS">Ludovico Stevens</a>     </td><td>                                             </td></tr>
+<tr class="failure"><td>2020.11.15</td><td><a href="https://metacpan.org/author/LSTEVENS">Ludovico Stevens</a>     </td><td>Not using public VCS                         </td></tr>
 <tr class="neutral"><td>2020.11.15</td><td><a href="https://metacpan.org/author/MHX">Marcus Holland-Moritz</a>     </td><td>Pull-request sent                            </td></tr>
-<tr class="failure"><td>2020.11.15</td><td><a href="https://metacpan.org/author/JOHNH">John Heidemann</a>          </td><td>Has private repo                             </td></tr>
+<tr class="failure"><td>2020.11.15</td><td><a href="https://metacpan.org/author/JOHNH">John Heidemann</a>          </td><td>Not using public VCS                         </td></tr>
 <tr class="neutral"><td>2020.11.14</td><td><a href="https://metacpan.org/author/MIRK">Mike Taylor</a>              </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.14</td><td><a href="https://metacpan.org/author/PRATZLAFF">Pete Ratzlaff</a>       </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.14</td><td><a href="https://metacpan.org/author/DOHNUTS">S. Falempin</a>           </td><td>Email bounced                                </td></tr>
