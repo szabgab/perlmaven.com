@@ -2,7 +2,6 @@
 =timestamp 2020-11-13T07:30:01
 =indexes PerlMaven
 =status show
-=tags screencast
 =author szabgab
 =archive 1
 =comments_disqus_enable 0
