@@ -732,6 +732,7 @@ ci:
   chapters:
     - title: CI for CPAN
       sub:
+        - what-is-ci
         - cpan-digger
         - cpan-dashboard
         - setup-github-actions

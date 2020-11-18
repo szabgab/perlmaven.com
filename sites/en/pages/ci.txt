@@ -2,7 +2,6 @@
 =timestamp 2020-11-05T07:30:01
 =indexes CI
 =status show
-=tags screencast
 =author szabgab
 =archive 1
 =description Mini series to help CPAN authors to set up CI system for their modules
@@ -53,7 +52,7 @@ version control have a CI system configured.
 
 
 <ul>
-   <li>What is Continuous Integration (CI) and why is it useful?</li>
+   <li><a href="/what-is-ci">What is Continuous Integration (CI) and why is it useful?</a></li>
    <li>What is the difference between a CI on GitHub and the <a href="http://www.cpantesters.org/">CPAN Testers</a></li>
    <li>What Cloud-based CI systems are available for GitHub users? GitHub Actions, Travis-CI, Appveyor, CircleCI, Azure Pipelines</li>
    <li>What are GitHub Actions?</li>
@@ -72,4 +71,3 @@ version control have a CI system configured.
 </ul>
 
 
-<screencast file="english-perlmaven-ci.mkv" youtube="c_PgAYBnNkY" />

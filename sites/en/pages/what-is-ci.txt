@@ -1,0 +1,20 @@
+=title What is CI and why is it good for you?
+=timestamp 2020-11-18T23:30:01
+=indexes CI
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+A Continuous Integration system (aka CI) can shorten the feedback cycle for your code.
+It will usually run all your tests immediately after you push the code to your cloud-based Git host.
+
+You can run your code on various Operating Systems and multiple versions of Perl.
+
+=abstract end
+
+<screencast file="english-perlmaven-ci.mkv" youtube="c_PgAYBnNkY" />
