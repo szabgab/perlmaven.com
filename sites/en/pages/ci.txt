@@ -53,9 +53,13 @@ version control have a CI system configured.
 
 <ul>
    <li><a href="/what-is-ci">What is Continuous Integration (CI) and why is it useful?</a></li>
-   <li>What is the difference between a CI on GitHub and the <a href="http://www.cpantesters.org/">CPAN Testers</a></li>
+   <li>What is the difference between the CI systems mentioned above and the <a href="http://www.cpantesters.org/">CPAN Testers</a></li>
    <li>What Cloud-based CI systems are available for GitHub users? GitHub Actions, Travis-CI, Appveyor, CircleCI, Azure Pipelines</li>
    <li>What are GitHub Actions?</li>
+   <li>What is Travis-CI and how to set it up? See the following articles:</li>
+   <li><a href="/travis-ci-for-markua-parser">Travis-CI for the Markua Parser project</a> (part of the <a href="/markua">Markua</a> series)</li>
+   <li><a href="/enable-travis-ci-for-continous-integration">Enable Travis-CI for Continuous Integration</a> (part of the <a href="/becoming-a-co-maintainer">Become a co-maintainer</a> series)</li>
+   <li><a href="/using-travis-ci-and-installing-geo-ip-on-linux">Using Travis-CI and installing Geo::IP on Linux and OSX</a></li>
    <li>We'll look at a few examples on how various Perl projects use GitHub Actions</li>
    <li><a href="/setup-github-actions">Setup GitHub Actions for a Perl module</a></li>
    <li><a href="/github-actions-running-on-3-operating-systems">Run on Windows, MacOSX, Linux</a> based on <a href="https://github.com/davorg/array-compare/">Array::Compare</a> of Dave Cross</li>
