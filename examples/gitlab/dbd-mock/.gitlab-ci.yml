@@ -1,0 +1,33 @@
+stages:
+  - test
+
+before_script:
+  - cpanm Module::Build::Tiny Test::Pod Test::Pod::Coverage DBI@1.627
+  - cpanm --installdeps .
+  - perl Build.PL
+  - perl Build
+
+unitTestsLatest:
+    image: perl:latest
+    stage: test
+    script:
+      - REPORT_TEST_ENVIRONMENT=1 perl Build test
+      - cpanm DBI
+      - REPORT_TEST_ENVIRONMENT=1 perl Build test
+
+unitTestsV5.30:
+    image: perl:5.30-threaded
+    stage: test
+    script:
+      - REPORT_TEST_ENVIRONMENT=1 perl Build test
+      - cpanm DBI
+      - REPORT_TEST_ENVIRONMENT=1 perl Build test
+
+unitTestsV5.28:
+    image: perl:5.28-threaded
+    stage: test
+    script:
+      - REPORT_TEST_ENVIRONMENT=1 perl Build test
+      - cpanm DBI
+      - REPORT_TEST_ENVIRONMENT=1 perl Build test
+
