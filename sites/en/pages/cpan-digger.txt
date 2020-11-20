@@ -137,9 +137,9 @@ td {
 </style>
 
 <table>
-<tr class="neutral"><td>2020.11.18</td><td><a href="https://metacpan.org/author/GUS">Guido Socher</a>              </td><td>                                             </td></tr>
+<tr class="failure"><td>2020.11.18</td><td><a href="https://metacpan.org/author/GUS">Guido Socher</a>              </td><td>Not using public VCS                         </td></tr>
 <tr class="neutral"><td>2020.11.18</td><td><a href="https://metacpan.org/author/OLLY">Olly Betts</a>               </td><td>                                             </td></tr>
-<tr class="neutral"><td>2020.11.18</td><td><a href="https://metacpan.org/author/MAMAWE">Mathias Weidner</a>        </td><td>                                             </td></tr>
+<tr class="success"><td>2020.11.18</td><td><a href="https://metacpan.org/author/MAMAWE">Mathias Weidner</a>        </td><td>Links added                                  </td></tr>
 <tr class="neutral"><td>2020.11.15</td><td><a href="https://metacpan.org/author/STRZELEC">Strzelecki Łukasz</a>    </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.15</td><td><a href="https://metacpan.org/author/REEDFISH">Brian Kelly</a>          </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.15</td><td><a href="https://metacpan.org/author/LSTROUS">Louis Strous</a>          </td><td>                                             </td></tr>

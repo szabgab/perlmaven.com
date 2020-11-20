@@ -735,6 +735,11 @@ ci:
         - what-is-ci
         - cpan-digger
         - cpan-dashboard
+    - title: GitHub Actions
+      sub:
         - setup-github-actions
         - github-actions-running-on-3-operating-systems
         - github-actions-showing-error-log-on-linux-mac-windows
+    - title: GitLab CI
+      sub:
+        - gitlab-ci-module-build

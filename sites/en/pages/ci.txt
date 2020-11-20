@@ -74,4 +74,11 @@ version control have a CI system configured.
    <li>How to send a pull-request</li>
 </ul>
 
+<h2>GitLab</h2>
+
+<ul>
+   <li><a href="/gitlab-ci-module-build">GitLab CI Pipeline for Perl DBD::Mock using Module::Build</a></li>
+</ul>
+
+
 
