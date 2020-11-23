@@ -48,6 +48,8 @@ Finally, some distributions have <b>No</b> there. These are distributions where 
 not interested to include the link in the META files. They prefer potential contributors to contact them first and discuss any potential changes. They also expect
 them to send patches via email.
 
+See <a href="/cpan-digger">all the responses</a> to my inquiry about the public VCS-es.
+
 The statistics show that having public VCS is the common thing, but I can accept if some people don't want to have them.
 
 <h2>Issues</h2>
