@@ -19,7 +19,7 @@ CPAN Digger monitors the most recently uploaded distributions, CPAN Dashboard pr
 
 <ul>
     <li><a href="https://cpan-digger.perlmaven.com/">CPAN Digger</a></li>
-    <li><a href="https://cpandashboard.com/">CPAN Dashboar</a></li>
+    <li><a href="https://cpandashboard.com/">CPAN Dashboard</a></li>
     <li><a href="https://cpan.rocks/">CPAN Rocks</a></li>
     <li><a href="https://www.patreon.com/szabgab">Patreon</a></li>
 </ul>
