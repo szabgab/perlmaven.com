@@ -1,0 +1,25 @@
+=title CPAN Digger - CPAN Dashboard - CPAN Rocks
+=timestamp 2020-11-26T13:30:01
+=indexes CPAN, Digger, Dashboard, Rocks, MetaCPAN
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=description CPAN Digger monitors the most recently uploaded distributions, CPAN Dashboard provides an overview to the authors, CPAN Rocks provides stats from Meta::CPAN.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+CPAN Digger monitors the most recently uploaded distributions, CPAN Dashboard provides an overview to the authors, CPAN Rocks provides stats from Meta::CPAN.
+
+=abstract end
+
+<screencast file="english-cpan-digger-dashboard-rocks.mkv" youtube="Lv50UM8X0A4" />
+
+<ul>
+    <li><a href="https://cpan-digger.perlmaven.com/">CPAN Digger</a></li>
+    <li><a href="https://cpandashboard.com/">CPAN Dashboar</a></li>
+    <li><a href="https://cpan.rocks/">CPAN Rocks</a></li>
+    <li><a href="https://www.patreon.com/szabgab">Patreon</a></li>
+</ul>
