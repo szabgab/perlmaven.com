@@ -13,6 +13,10 @@
 When you need to find the first element in an array that satisfies some condition, the first solution that might come to mind is to loop
 over all the elements using <b>for</b> and check them one by one. This would yield a working code, but there are nicer solution.
 
+BTw if you are interested I've also written a solution to
+<a href="https://code-maven.com/python-find-first-element-in-list-matching-condition">find the first matching element of a list in Python</a>.
+It might be interesting to compare.
+
 =abstract end
 
 The condition is simple, the first animal that is longer than 5 characters.
