@@ -1,7 +1,6 @@
 use strict;
 use warnings;
 use 5.010;
-use List::Util qw(first);
 
 my @animals = ('snake', 'camel', 'etruscan shrew', 'ant', 'hippopotamus', 'giraffe');
 
