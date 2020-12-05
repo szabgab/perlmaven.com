@@ -40,6 +40,15 @@ The beginning of a series of articles about
   <li><a href="/uploading-files-with-dancer2">Uploading files using Dancer</a></li>
 </ul>
 
+<h2>Dancer 2 video course</h2>
+Avialbale as a stand-alone purchase via <a href="">Leanpub</a>
+<ul>
+    <li><a href="/pro/dancer2-install">Install</a></li>
+    <li><a href="/pro/dancer2-hello-world">Hello World</a></li>
+    <li><a href="/pro/dancer2-hello-world-testing">Testing Hello World</a></li>
+    <li><a href="/pro/dancer2-hello-world-with-vscode">Hello World with Visual Studio Code</a></li>
+</ul>
+
 <h2>Dancer 2 API and AJAX</h2>
 <ul>
   <li><a href="/ajax-and-dancer2">Ajax and Dancer</a> - Simple GET request to the same server returning JSON with "hello world" and displaying it.</li>

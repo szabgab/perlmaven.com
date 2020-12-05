@@ -502,6 +502,12 @@ dancer:
         - password-protecting-web-pages-in-dancer2
         - counter-with-dancer-sessions
         - uploading-files-with-dancer2
+    - title: Dancer 2 video cours
+      sub:
+        - pro/dancer2-install
+        - pro/dancer2-hello-world
+        - pro/dancer2-hello-world-testing
+        - pro/dancer2-hello-world-with-vscode
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2
