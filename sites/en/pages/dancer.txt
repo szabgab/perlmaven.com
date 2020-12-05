@@ -47,6 +47,7 @@ Avialbale as a stand-alone purchase via <a href="">Leanpub</a>
     <li><a href="/pro/dancer2-hello-world">Hello World</a></li>
     <li><a href="/pro/dancer2-hello-world-testing">Testing Hello World</a></li>
     <li><a href="/pro/dancer2-hello-world-with-vscode">Hello World with Visual Studio Code</a></li>
+    <li><a href="/pro/dancer2-plackup-reload">Plackup reload on Windows and Linux</a></li>
 </ul>
 
 <h2>Dancer 2 API and AJAX</h2>

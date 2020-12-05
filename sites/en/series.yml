@@ -508,6 +508,7 @@ dancer:
         - pro/dancer2-hello-world
         - pro/dancer2-hello-world-testing
         - pro/dancer2-hello-world-with-vscode
+        - pro/dancer2-plackup-reload
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2
