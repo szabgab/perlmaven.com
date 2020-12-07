@@ -513,6 +513,7 @@ dancer:
         - pro/dancer2-current-time
         - pro/dancer2-testing-404-and-500-responses
         - pro/dancer2-process-get-and-post-requests
+        - pro/dancer2-exercise-1
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2
