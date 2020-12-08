@@ -53,6 +53,7 @@ Avialbale as a stand-alone purchase via <a href="">Leanpub</a>
     <li><a href="/pro/dancer2-testing-404-and-500-responses">Test 404 and 500 response codes</a></li>
     <li><a href="/pro/dancer2-process-get-and-post-requests">Process GET and POST requests</a></li>
     <li><a href="/pro/dancer2-exercise-1">Exercise 1: Calculator, Counter</a></li>
+    <li><a href="/pro/dancer2-solution-1-calculator">Solution 1: Calculator</a></li>
 </ul>
 
 <h2>Dancer 2 API and AJAX</h2>
