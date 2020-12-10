@@ -55,6 +55,8 @@ Avialbale as a stand-alone purchase via <a href="">Leanpub</a>
     <li><a href="/pro/dancer2-exercise-1">Exercise 1: Calculator, Counter</a></li>
     <li><a href="/pro/dancer2-solution-1-calculator">Solution 1: Calculator</a></li>
     <li><a href="/pro/dancer2-solution-1-calculator-fixing">Solution 1: Calculator - fixing</a></li>
+    <li><a href="/pro/dancer2-solution-1-counter">Solution 1: Counter</a></li>
+    <li><a href="/pro/dancer2-show-errors-during-development">Show errors during development</a></li>
 </ul>
 
 <h2>Dancer 2 API and AJAX</h2>
