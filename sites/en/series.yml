@@ -518,6 +518,8 @@ dancer:
         - pro/dancer2-solution-1-calculator-fixing
         - pro/dancer2-solution-1-counter
         - pro/dancer2-show-errors-during-development
+        - pro/dancer2-logging
+        - pro/dancer2-route-parameters
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2
