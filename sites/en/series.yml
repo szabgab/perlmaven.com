@@ -521,6 +521,7 @@ dancer:
         - pro/dancer2-logging
         - pro/dancer2-route-parameters
         - pro/dancer2-more-route-parameters
+        - pro/dancer2-exercise-2
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2
