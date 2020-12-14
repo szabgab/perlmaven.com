@@ -522,6 +522,7 @@ dancer:
         - pro/dancer2-route-parameters
         - pro/dancer2-more-route-parameters
         - pro/dancer2-exercise-2
+        - pro/dancer2-solution-2-route-based-multicounter
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2
