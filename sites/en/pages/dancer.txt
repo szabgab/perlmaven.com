@@ -62,6 +62,8 @@ Avialbale as a stand-alone purchase via <a href="">Leanpub</a>
     <li><a href="/pro/dancer2-more-route-parameters">More Route parameters and redirect</a></li>
     <li><a href="/pro/dancer2-exercise-2">Exercise 2: Multi-Counter, Random redirect</a></li>
     <li><a href="/pro/dancer2-solution-2-route-based-multicounter">Solution 2: Route-based Multi-Counter</a></li>
+    <li><a href="/pro/dancer2-solution-2-random-redirect">Solution 2: Random Redirect</a></li>
+    <li><a href="/pro/dancer2-configuration">Configuration</a></li>
 </ul>
 
 <h2>Dancer 2 API and AJAX</h2>
