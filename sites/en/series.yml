@@ -525,6 +525,7 @@ dancer:
         - pro/dancer2-solution-2-route-based-multicounter
         - pro/dancer2-solution-2-random-redirect
         - pro/dancer2-configuration
+        - pro/dancer2-sessions
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2
