@@ -526,6 +526,7 @@ dancer:
         - pro/dancer2-solution-2-random-redirect
         - pro/dancer2-configuration
         - pro/dancer2-sessions
+        - pro/dancer2-return-json
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2
