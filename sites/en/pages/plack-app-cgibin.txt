@@ -17,6 +17,8 @@ Plackup using <a href="https://metacpan.org/pod/Plack::App::CGIBin">Plack::App::
 
 =abstract end
 
+<screencast file="english-run-cgi-using-plack.mkv" youtube="9LO6FPLKkSk" />
+
 <h2>Our CGI "application"</h2>
 
 We have a simple Perl script which is a <a href="/cgi">CGI</a> application. It is called app.pl and it is located in a directory called <b>cgi-bin</b>
@@ -62,5 +64,4 @@ We can access it at this URL:
 
 http://localhost:5000/cgi/app.pl
 
-<screencast file="" youtube="" />
 
