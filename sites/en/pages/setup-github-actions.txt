@@ -64,3 +64,12 @@ The following are a few sample YAML files.
 <h2>GitHub Actions for projects using Build.PL</h2>
 
 <include file="examples/workflows/build_tester.yml">
+
+<h2>Dist::Zilla Native</h2>
+
+<include file="examples/workflows/dzil_native.yml">
+
+<h2>Makefile.PL Native</h2>
+
+<include file="examples/workflows/makefile_native.yml">
+
