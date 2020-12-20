@@ -528,6 +528,7 @@ dancer:
         - pro/dancer2-sessions
         - pro/dancer2-return-json
         - pro/dancer2-hooks
+        - pro/dancer2-exercise-3
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2

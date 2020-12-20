@@ -67,6 +67,7 @@ Avialbale as a stand-alone purchase via <a href="">Leanpub</a>
     <li><a href="/pro/dancer2-sessions">Sessions</a></li>
     <li><a href="/pro/dancer2-return-json">Return JSON</a></li>
     <li><a href="/pro/dancer2-hooks">Before and after Hooks</a></li>
+    <li><a href="/pro/dancer2-exercise-3">Exercise 3: Simple Single-user TODO list API</a></li>
 </ul>
 
 <h2>Dancer 2 API and AJAX</h2>
