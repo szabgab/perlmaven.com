@@ -1,0 +1,66 @@
+=title Running CGI sccript as a Plack application with Plack::App::CGIBin
+=timestamp 2020-12-20T16:30:01
+=indexes Plack::App::CGIBin, CGI, plackup
+=status show
+=books cgi
+=tags screencast
+=author szabgab
+=archive 1
+=description Good old CGI scripts needed Apache server. this examples shows how to run them as using Plackup.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Good old <a href="https://metacpan.org/pod/CGI">CGI</a> scripts needed Apache server. this examples shows how to run them via
+Plackup using <a href="https://metacpan.org/pod/Plack::App::CGIBin">Plack::App::CGIBin</a>
+
+=abstract end
+
+<h2>Our CGI "application"</h2>
+
+We have a simple Perl script which is a <a href="/cgi">CGI</a> application. It is called app.pl and it is located in a directory called <b>cgi-bin</b>
+
+We probably use it via <a href="/perl-cgi-script-with-apache2">HTTP Apache 2 server</a>. We could even <a href="/testing-perl-cgi">test the CGI script</a>.
+
+<include file="examples/cgi-bin/app.pl">
+
+We can run it on the command line:
+
+<code>
+perl cgi-bin/app.pl
+</code>
+
+We can even supply it with query string parameters:
+
+<code>
+perl cgi-bin/app.pl "text=hello world"
+</code>
+
+After installing <a href="https://metacpan.org/pod/Plack::App::CGIBin">Plack::App::CGIBin</a> we can run it as
+
+<code>
+plackup -MPlack::App::CGIBin -e 'Plack::App::CGIBin->new(root => "cgi-bin")->to_app'
+</code>
+
+In this case we can access it as http://localhost:5000/app.pl
+
+
+Alternatively we can create a scrip like this:
+
+<include file="examples/plack_app_cgibin.pl">
+
+That I place just outside the cgi-bin directory.
+
+Here first we calculate the relative location of the cgi-bin directory (so we'll be able to run this script from any working directory).
+
+Then we launch the application.
+
+Finally we map it to the "/cgi" path in the URL. Just so we can see a different solution.
+
+We can access it at this URL:
+
+http://localhost:5000/cgi/app.pl
+
+<screencast file="" youtube="" />
+
