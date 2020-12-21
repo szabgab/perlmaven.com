@@ -529,6 +529,7 @@ dancer:
         - pro/dancer2-return-json
         - pro/dancer2-hooks
         - pro/dancer2-exercise-3
+        - pro/dancer2-solution-3-simple-todo-api
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2
