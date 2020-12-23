@@ -69,3 +69,11 @@ and the name used on the server.)
 
 Then we use the <hl>link_to</hl> method to actually move the file from its temporary location
 to the the place and name we want it to be.
+
+
+<h2>Full example with test</h2>
+
+<a href="https://code-maven.com/slides/dancer/upload-a-file">Uploading a file using Dancer</a>
+
+<a href="https://code-maven.com/slides/dancer/testing-upload-a-file">Testing uploadig a file using Dancer</a>
+
