@@ -84,7 +84,7 @@ ul.horizontal li {
   <li><a href="https://code-maven.com/javascript">JavaScript</a></li>
   <li><a href="https://code-maven.com/jenkins">Jenkins</a>, the automation server used for Continuous Integration and Continuous Delivery.</li>
   <li><a href="https://code-maven.com/linux">Linux</a></li>
-  <li><a href="https://code-maven.com/nodejs">NodeJS</a></li>
+  <li><a href="https://code-maven.com/nodejs">NodeJS</a> - Server side JavaScript</li>
   <li><a href="https://code-maven.com/php">PHP</a></li>
   <li><a href="https://code-maven.com/python">Python</a></li>
   <li><a href="https://code-maven.com/ruby">Ruby</a></li>
