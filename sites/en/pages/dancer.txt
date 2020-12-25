@@ -74,6 +74,7 @@ Availbale as a stand-alone purchase via <a href="https://leanpub.com/c/dancer">L
     <li><a href="/pro/dancer2-upload-file">Upload files</a></li>
     <li><a href="/pro/dancer2-template-tiny">Template::Tiny</a></li>
     <li><a href="/pro/dancer2-template-toolkit">Template::Toolkit</a></li>
+    <li><a href="/pro/dancer2-skeleton">Sekeleton</a></li>
 </ul>
 
 <h2>Dancer 2 API and AJAX</h2>
