@@ -1,0 +1,43 @@
+=title Evaluate Perl project for new client - assessment
+=timestamp 2020-12-30T07:30:01
+=indexes Perl
+=status show
+=author szabgab
+=archive 1
+=description How to evaluate a Perl-related project at a new potential client?
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Recently a number of people have contacted me with various Perl-based projects. I had the opportunity to have an email exchange with them
+to try to understand what they need and if I can provide the help. A few question came up and for my future reference I wrote them down.
+
+These were almost always old projects that needed some new feature added.
+
+=abstract end
+
+<ul>
+   <li>Which Operating system does the project expected to run? Windows, Linux, Mac OSX? Something else? Which Linux distribution? Which version of the OS?</li>
+   <li>Which version of Perl is the project currently using? 5.6? 5.32? Which should it support?</li>
+   <li>Can we install new software on the production boxes?</li>
+   <li>More specifically, can we install new modules from CPAN? Does the system have access to CPAN?</li>
+   <li>Can I get access to the production system or a system similar to it? Do I need to set it up myself?</li>
+   <li>Do I get access to all the source files and the full list of libraries (and their version numbers) in use?</li>
+   <li>Does the current version only work if I install it on Windows from an installer?</li>
+   <li>If this is some kind of a batch-job, do I get a reasonable variation of input files and expected output files?</li>
+   <li>Does the code use strict and warnings?</li>
+   <li>Is there some kind of version control system in use?</li>
+   <li>Are there any tests for this application? Can I run them? Do they pass?</li>
+   <li>Is there a CI system set up?</li>
+   <li>How will we know the job is done and nothing else broke? Who and how will this be verified?</li>
+</ul>
+
+And a few more:
+
+<ul>
+   <li>Do I get a clear description of what is needed?</li>
+   <li>Is the client going to be available for questions and clarifications?</li>
+</ul>
+
+
