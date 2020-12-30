@@ -23,7 +23,8 @@ These were almost always old projects that needed some new feature added.
    <li>Can we install new software on the production boxes?</li>
    <li>More specifically, can we install new modules from CPAN? Does the system have access to CPAN?</li>
    <li>Can I get access to the production system or a system similar to it? Do I need to set it up myself?</li>
-   <li>Do I get access to all the source files and the full list of libraries (and their version numbers) in use?</li>
+   <li>Do I get access to all the source files or is the client only dripping them piece by piece? Do they even know what belongs to the code-base?</li>
+   <li>Do I get access to the full list of libraries (and their version numbers) in use?</li>
    <li>Does the current version only work if I install it on Windows from an installer?</li>
    <li>If this is some kind of a batch-job, do I get a reasonable variation of input files and expected output files?</li>
    <li>Does the code use strict and warnings?</li>
