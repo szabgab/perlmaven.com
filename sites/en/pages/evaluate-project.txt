@@ -41,4 +41,13 @@ And a few more:
    <li>Is the client going to be available for questions and clarifications?</li>
 </ul>
 
+Non-Perl dependencies
+
+<ul>
+   <li>Does the application assume specific web server? (e.g. Apache + CGI or mod_perl)</li>
+   <li>What databases are used by the project?</li>
+   <li>What other softtware (and which version) is used by the project?</li>
+   <li>Does the project have a well defined release and deployment process? Is it automated?</li>
+   <li>How long does it take to release a newly committed piece of code?</li>
+</ul>
 
