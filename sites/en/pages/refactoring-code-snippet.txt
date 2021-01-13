@@ -46,7 +46,7 @@ $VAR1 = [
 </code>
 
 
-<h2>Add <b>use strict</b>, Use lexical file-handle<h2>
+<h2>Add <b>use strict</b>, Use lexical file-handle</h2>
 
 That forces us to declare our varibales with <b>my</b>.
 
