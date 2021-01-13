@@ -137,7 +137,6 @@ td {
 </style>
 
 <table>
-<tr class="neutral"><td>2020.11.</td><td><a href=""></a>         </td><td>                                             </td></tr>
 <tr class="neutral"><td>2020.11.21</td><td><a href="https://metacpan.org/author/JCARTY">Jason Carty</a>            </td><td>Email bounced                                </td></tr>
 <tr class="failure"><td>2020.11.18</td><td><a href="https://metacpan.org/author/GUS">Guido Socher</a>              </td><td>Not using public VCS                         </td></tr>
 <tr class="success"><td>2020.11.18</td><td><a href="https://metacpan.org/author/OLLY">Olly Betts</a>               </td><td>Link added                                   </td></tr>
