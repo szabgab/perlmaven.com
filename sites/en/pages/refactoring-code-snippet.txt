@@ -1,0 +1,62 @@
+=title Refactoring code snippet
+=timestamp 2021-01-13T10:30:01
+=indexes refactoring
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Recently I encountered a Perl script that had some issues. e.g. Lack of <a href="/always-use-strict-and-use-warnings">use strict</a>.
+
+Let me show a quick refactoring of it:
+
+=abstract end
+
+<h2>Part of the original code</h2>
+
+<include file="examples/code_snippet0.pl">
+
+There are some interesting things here:
+
+<ul>
+   <li>missing <b>use strict</b></li>
+   <li>But declaring the global variable <b>$copyrightsfile</b> using <b>my</b></li>
+   <li>Not declaring <b>@COPYRIGHTS</b> (in plural) at all even though it is a global variable.</li>
+   <li>Not declaring <b>@COPYRIGHT</b> (in singular) either, even though it should be locally scoped. And the confusion of having two arrays with very similar names.</li>
+   <li>Using the implicit <b>$_</b> might be considered "perlish" by some, but I prefer to have a named variable in its place.</li>
+   <li>I addedd the Data::Dumper code to make it easier to see the results.</li>
+</ul>
+
+<h2>Sample imput file</h2>
+
+<include file="examples/code_snippet.txt">
+
+Result:
+
+<code>
+$VAR1 = [
+          {
+            'firstname' => 'Jane',
+            'lastname' => 'Doe'
+          }
+        ];
+</code>
+
+
+<h2>Add <b>use strict</b>, Use lexical file-handle<h2>
+
+That forces us to declare our varibales with <b>my</b>.
+
+<include file="examples/code_snippet1.pl">
+
+<h2>Replace @COPYRIGHT, by $firstname, $lastname</h2>
+
+<include file="examples/code_snippet2.pl">
+
+<h2>Use explicit $line instead of $_ in the while loop</h2>
+
+<include file="examples/code_snippet3.pl">
+
