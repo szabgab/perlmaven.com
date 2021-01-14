@@ -4,7 +4,7 @@ use warnings;
 my $copyrightsfile = shift @ARGV;
 my @COPYRIGHTS;
 
-open my $COPYR,"<$copyrightsfile" or die "Can't open copyrights $copyrightsfile";
+open my $COPYR, '<', $copyrightsfile or die "Can't open copyrights $copyrightsfile";
 while(<$COPYR>){
     chomp;
 	next if /^#/;

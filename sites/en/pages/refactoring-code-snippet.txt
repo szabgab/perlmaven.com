@@ -48,6 +48,8 @@ $VAR1 = [
 
 <h2>Add <b>use strict</b>, Use lexical file-handle</h2>
 
+Lexical file-handles and 3-part open.
+
 That forces us to declare our varibales with <b>my</b>.
 
 <include file="examples/code_snippet1.pl">
