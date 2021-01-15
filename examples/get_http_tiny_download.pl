@@ -10,7 +10,7 @@ my @urls = qw(
     https://br.perlmaven.com/
 
     https://httpbin.org/status/404
-    https://httpbin.org/status/509
+    https://httpbin.org/status/599
 );
 
 my $ht = HTTP::Tiny->new;

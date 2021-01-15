@@ -157,8 +157,8 @@ Start https://br.perlmaven.com/
 Length: 12670
 Start https://httpbin.org/status/404
 Failed: 404 NOT FOUND
-Start https://httpbin.org/status/509
-Failed: 509 UNKNOWN
+Start https://httpbin.org/status/599
+Failed: 599 UNKNOWN
 </code>
 
 The simplicity has a price of course. It means that we wait for each request  to be finished
