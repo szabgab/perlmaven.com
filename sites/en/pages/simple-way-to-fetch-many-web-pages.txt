@@ -155,6 +155,10 @@ Start https://cn.perlmaven.com/
 Length: 13322
 Start https://br.perlmaven.com/
 Length: 12670
+Start https://httpbin.org/status/404
+Failed: 404 NOT FOUND
+Start https://httpbin.org/status/509
+Failed: 509 UNKNOWN
 </code>
 
 The simplicity has a price of course. It means that we wait for each request  to be finished
@@ -164,6 +168,4 @@ and then waiting till the response reaches us, we waste quite a lot of time. We 
 requests in parallel and we would get our results much sooner.
 
 However, this is going to be covered in another article.
-
-
 
