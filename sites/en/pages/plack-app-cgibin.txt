@@ -12,8 +12,13 @@
 
 =abstract start
 
-Good old <a href="https://metacpan.org/pod/CGI">CGI</a> scripts needed Apache server. this examples shows how to run them via
-Plackup using <a href="https://metacpan.org/pod/Plack::App::CGIBin">Plack::App::CGIBin</a>
+While <a href="https://metacpan.org/pod/CGI">CGI</a> might have served the needs of your company for many years there are more advanced techniques these days.
+One drawback of CGI is that you usually need to have the Apache web server running it. You might also need to use mod_perl
+to improve the speed of your site.
+
+This examples shows how to run them via Plackup using <a href="https://metacpan.org/pod/Plack::App::CGIBin">Plack::App::CGIBin</a> that will make
+it easier to further develop your code and to run it using any modern Perl-based application server.
+It will also open the door and easier transition to <a href="/dancer">Dancer</a> or <a href="/mojolicious">Mojolicious</a>.
 
 =abstract end
 
