@@ -19,7 +19,7 @@ while (my $line = <$fh>) {
         next;     # don't process empty rows, go to next line
     }
 
-    print "'$line'\n";
+    print "Process '$line'\n";
     $empty++;
                                     ### next jumps here ###
 }

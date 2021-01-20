@@ -34,9 +34,9 @@ Given this input file:
 the output will be this:
 
 <code>
-'First line'
-'Line after empty line'
-'Another text line'
+Process 'First line'
+Process 'Line after empty line'
+Process 'Another text line'
 Number of non empty rows: 3 out of a total of 6
 </code>
 
