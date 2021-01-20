@@ -46,7 +46,7 @@ The <hl>g</hl> modifier is only there to fetch <hl>globally</hl>, <b>all</b> the
 
 The next step was to extract the JSON from within the 'script' tag. For this I had to use a Regex again as
 the JSON is embedded in a JavaScript function called 'q'. It looked something like this:
- 
+
 <code lang="perl">
 q("talkPage.init",({"talks" ... }))
 </code>
@@ -56,7 +56,7 @@ except that there was a lot more code instead the 3 dots.
 For this I used the following expression:
 
 <code lang="perl">
-	my ($json) = $script =~ /^q\("talkPage\.init",(\{"talks".*)\)/s;
+    my ($json) = $script =~ /^q\("talkPage\.init",(\{"talks".*)\)/s;
 </code>
 
 The left-hand side of the assignment must be in parentheses to create <a href="http://perlmaven.com/scalar-and-list-context-in-perl">LIST context</a>

@@ -61,7 +61,7 @@ are no more talks.  at first I was hoping to get a <a href="https://en.wikipedia
 error page when accessing page=61, but it turns out that TED return
 a <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">200 success</a> page. So we cannot rely on that.
 
-Then I had two ideas. In one of them I'd count the number of talks on a given page and if there are 0 talks then I know 
+Then I had two ideas. In one of them I'd count the number of talks on a given page and if there are 0 talks then I know
 we can stop fetching the pages. The second idea was to look for a string in page=61 and then after we fetched a page
 check if the it contains this string.
 
@@ -74,7 +74,7 @@ This is the code:
 In addition, at the end of the loop you can see this:
 
 <code lang="perl">
-	last if $page > 3;
+    last if $page > 3;
 </code>
 
 I've added it only so when I try the script it won't run and download all the 60 pages.
