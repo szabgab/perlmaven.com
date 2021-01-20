@@ -67,7 +67,7 @@ perl-tutorial:
         - using-a-queue-in-perl
         - reverse
         - the-ternary-operator-in-perl
-        - pro/loop-controls-next-last
+        - loop-controls-next-last
         - min-max-sum-using-list-util
         - qw-quote-word
     - title: Subroutines
