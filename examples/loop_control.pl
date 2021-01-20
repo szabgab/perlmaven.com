@@ -16,7 +16,7 @@ while (my $line = <$fh>) {
     }
 
     if ($line eq "") {
-        next;
+        next;     # don't process empty rows, go to next line
     }
 
     print "'$line'\n";
