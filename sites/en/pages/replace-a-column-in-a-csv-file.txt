@@ -1,0 +1,65 @@
+=title How to replace a column in a CSV file using Perl
+=timestamp 2021-01-26T11:30:01
+=indexes CSV, Text::CSV, split
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Given a CSV file, how can we replace the values in one of the columns?
+
+For example given this file:
+
+<include file="examples/test_cases.csv">
+
+how can we replace the 4th column to contain the value 'CIS' in every line?
+
+=abstract end
+
+Our expected result looks like this:
+
+<include file="examples/test_cases_cis.csv">
+
+
+<h2>Using Text::CSV</h2>
+
+The best tool to read and write CSV files in perl is the <a href="https://metacpan.org/pod/Text::CSV">Text::CSV</a> module.
+It is a pure-perl implementation that is very easy to install.
+
+<include file="examples/replace_column_in_csv_file.pl">
+
+First we expect 2 filenames on the command line and assign them to two scalar variables <hl>$infile</hl> is expected to be the name of the current CSV file. <hl>$outfile</hl> is expected to be the name of the newly created file.
+
+Then we check if the second parameter was passed to us and if the name in the first parameter is an existing file? Using the <hl>-e</hl> operator.
+
+Then we open both files. The first one for reading. The second one for writing.
+
+In the <hl>while</hl> loop we read the content of the CSV file line-by-line and split them assigning the values to the <hl>$fields</hl> variable as a reference to an array.
+
+<hl>$fields->[3] = 'CIF';</hl> is the expression that replaces the 4th element (index starts from 0) in a reference to an array.
+
+Then we print out the content of the <hl>$fields</hl> (reference to an) array and follow it with a new-line.
+
+Finally, after the <hl>while</hl>-loop, we close both filehandles.
+
+That's it.
+
+
+<h2>Using Text::CSV_XS</h2>
+
+<a href="https://metacpan.org/pod/Text::CSV_XS">Text::CSV_XS</a> is another module that can read and write CSV files.
+It is written in C and it is much faster which can be important if you have a lot of large CSV files.
+
+Installing it is a bit more difficult that installing Text::CSV, but using it is the same. Actually you don't
+even need to change anything in the above code. Text::CSV will recognize if Text::CSV_XS is also installed and
+will use that as its back-end if it is there.
+
+<h2>Using split and join</h2>
+
+If the CSV file does not have any special feature (e.g. no quotes around fields, no embedded newline in any field) then
+we can even use the internal <hl>split</hl> and <hl>join</hl> functions of Perl as explained in <a href="/how-to-read-a-csv-file-using-perl">this example</a>. Just remember, this will only work in the simple cases.
+
+<include file="examples/replace_column_in_csv_file_split.pl">
+

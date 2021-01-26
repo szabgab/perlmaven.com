@@ -89,12 +89,12 @@ So unless you want to force your users to always use Text::CSV_XS, you'd be prob
     <li><a href="/how-to-read-a-csv-file-using-perl">How to read a CSV file using Perl?</a></li>
     <li><a href="/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl">How to calculate the balance of bank accounts in a CSV file, using Perl?</a></li>
     <li><a href="/calculate-bank-balance-take-two-dbd-csv">Calculating bank balance, take two: DBD::CSV</a></li>
-    
+
     <li><a href="/beginner-perl-maven-process-csv-file">Process CSV file (screencast)</a></li>
     <li><a href="/beginner-perl-maven-text-csv-xs">Process CSV file using Text::CSV_XS (screencast)</a></li>
     <li><a href="/beginner-perl-maven-process-csv-file-short-version">Process CSV file short version (screencast)</a></li>
     <li><a href="/beginner-perl-maven-oneliner-sum-of-csv">One-liner sum of column in CSV</a></li>
-    <li><a href="/pro/replace-a-column-in-a-csv-file">How to replace a column in a CSV file using Perl</a></li>
+    <li><a href="/replace-a-column-in-a-csv-file">How to replace a column in a CSV file using Perl</a></li>
     <li><a href="/splice-csv-filter-columns">How to splice a CSV file in Perl (filter columns of CSV file)</a></li>
 </ul>
 
