@@ -14,7 +14,7 @@ For example given this file:
 
 <include file="examples/test_cases.csv">
 
-how can we replace the 4th column to contain the value 'CIS' in every line?
+how can we replace the 4th column to contain the value 'CIF' in every line?
 
 =abstract end
 
