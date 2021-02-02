@@ -1,3 +1,4 @@
 There is a snake in the first line.
 No such word in the second line.
 Another snake in the 3rd line.
+There is a blue snake and a red snake here.
