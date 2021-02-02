@@ -31,7 +31,7 @@ among the recipients.
     <li><a href="https://www.patreon.com/marpa"><b>Jeffrey Kegler</b></a> author of <a href="http://savage.net.au/Marpa.html">Marpa</a>. See also the <a href="https://jeffreykegler.github.io/Marpa-web-site/">Marpa web site</a> </li>
     <li><a href="https://github.com/sponsors/briandfoy"><b>brian d foy</b></a> author of many Perl books including the <a href="https://www.effectiveperlprogramming.com/">Effective Perl</a> and many <a href="https://metacpan.org/author/BDFOY">Perl modules</a>.</li>
     <li><b><a href="https://www.patreon.com/szabgab">Gabor Szabo</a></b>, author of the <a href="https://perlmaven.com/">Perl Maven</a> site, author of the <a href="https://code-maven.com/">Code Maven</a> site, chief
-editor of the <a href="https://perlweekly.com/">Perl Weekly newsletter</a>, small-time <a href="https:/code-maven.com/youtube">YouTuber</a>. Yours truly.</li>
+editor of the <a href="https://perlweekly.com/">Perl Weekly newsletter</a>, small-time <a href="https:/code-maven.com/youtube">YouTuber</a>. Yours truly. Instead of donations you might also consider buying his <a href="https://courses.code-maven.com/">courses</a> or his <a href="https://leanpub.com/u/szabgab">books</a>.</li>
 </ul>
 
 <h2>What is Patreon?</h2>
