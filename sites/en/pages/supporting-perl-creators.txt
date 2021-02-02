@@ -35,6 +35,7 @@ editor of the <a href="https://perlweekly.com/">Perl Weekly newsletter</a>, smal
     <li><b><a href="https://www.patreon.com/marpa">Jeffrey Kegler</a></b> author of <a href="http://savage.net.au/Marpa.html">Marpa</a>. See also the <a href="https://jeffreykegler.github.io/Marpa-web-site/">Marpa web site</a> CPAN::<a href="https://metacpan.org/author/KEGLER">KEGLER</a></li>
     <li><b><a href="https://www.patreon.com/manwar">Mohammad S Anwar</a></b>, creator of <a href="https://perlweeklychallenge.org/">The Weekly Challenge</a>, creator of the
        <a href="https://www.youtube.com/user/ipllondon">Live Coding videos on YouTube</a>, editor of the <a href="https://perlweekly.com/">Perl Weekly newsletter</a> CPAN::<a href="https://metacpan.org/author/MANWAR">MANWAR</a></li>
+    <li><b><a href="https://github.com/tobyink">Toby Inkster</a></b> CPAN::<a href="https://metacpan.org/author/TOBYINK">TOBYINK</a></li>
     <li><b><a href="https://www.patreon.com/rperl">Will 'the Chill' Braswell</a></b> creator of <a href="http://rperl.org/">RPerl</a>. CPAN::<a href="https://metacpan.org/author/WBRASWELL">WBRASWELL</a></li>
 </ul>
 
