@@ -17,7 +17,7 @@ In either case people appreciate when they have financial supporters.
 
 This is the list of all the Perl-related authors and creators who are open to receive financial support for their contributions to the Perl Ecosystem.
 
-Decide on some monthly budget you are willing to allocate to improve the Perl world (e.g. 10-20-30 USD/month) and the decide how do you split it up
+Decide on some monthly budget you are willing to allocate to improve the Perl world (e.g. 10-20-30 USD/month) and then decide how do you split it up
 among the recipients.
 
 =abstract end
