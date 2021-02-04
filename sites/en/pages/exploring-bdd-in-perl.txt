@@ -1,0 +1,17 @@
+=title Exploring BDD in Perl - using Test::BDD::Cucumber
+=timestamp 2020-02-04T20:30:01
+=indexes testing, BDD, Cucumber
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+BDD - <a href="https://en.wikipedia.org/wiki/Behavior-driven_development">Beahavior Driven Development</a>
+
+=abstract end
+
+<screencast file="english-live-perl-test-bdd-cucumber.mkv" youtube="HuwOzKfTVsc" />
