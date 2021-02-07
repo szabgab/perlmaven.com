@@ -1,5 +1,5 @@
-=title Exploring BDD in Perl - using Test::BDD::Cucumber
-=timestamp 2021-02-04T20:29:01
+=title Exploring BDD in Perl - using Test::BDD::Cucumber - part 1
+=timestamp 2021-02-04T20:30:01
 =indexes testing, BDD, Cucumber
 =status show
 =tags screencast
@@ -17,9 +17,4 @@ Live stream via <a href="https://www.twitch.tv/szabgab">Twitch</a>
 
 =abstract end
 
-<ul>
-   <li><a href="/exploring-bdd-in-perl-1">Part 1</a></li>
-   <li><a href="/exploring-bdd-in-perl-2">Part 2</a></li>
-   <li><a href="/exploring-bdd-in-perl-3">Part 3</a></li>
-   <li><a href="/exploring-bdd-in-perl-4">Part 4</a></li>
-</li>
+<screencast file="english-live-perl-test-bdd-cucumber.mkv" youtube="HuwOzKfTVsc" />
