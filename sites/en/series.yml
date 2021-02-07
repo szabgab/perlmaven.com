@@ -775,3 +775,12 @@ ci:
     - title: GitLab CI
       sub:
         - gitlab-ci-module-build
+exploring-bdd-in-perl:
+  chapters:
+    - title: BDD
+      sub:
+        - exploring-bdd-in-perl-1
+        - exploring-bdd-in-perl-2
+        - exploring-bdd-in-perl-3
+        - exploring-bdd-in-perl-4
+
