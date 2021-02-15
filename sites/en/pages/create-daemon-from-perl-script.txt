@@ -1,5 +1,5 @@
 =title Create Daemon (service) from a Perl script using Daemon::Control
-=timestamp 2020-02-15T12:30:01
+=timestamp 2021-02-15T12:30:01
 =indexes Daemon::Control
 =status show
 =author szabgab
