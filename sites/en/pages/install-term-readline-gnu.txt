@@ -1,0 +1,45 @@
+=title Install Term::ReadLine::Gnu
+=timestamp 2021-02-16T13:30:01
+=indexes Term::ReadLine::Gnu
+=status show
+=author szabgab
+=archive 1
+=description It is not always easy to install the Perl module Term::ReadLine::Gnu
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+<a href="https://metacpan.org/release/Term-ReadLine-Gnu">Term-ReadLine-Gnu</a> is used by quite a few modules, including Dist::Zilla,
+but it isn't always clear how to install it. Here I collected some of the instructins and tested them on
+using Github Actions in <a href="https://github.com/szabgab/testing-Term-ReadLine-Gnu/actions">this reposiotry</a>.
+
+=abstract end
+
+<h2>Ubuntu system perl</h2>
+
+<code>
+sudo apt-get install libterm-readline-gnu-perl
+</code>
+
+<h2>Ubuntu other Perl</h2>
+
+Check if the <b>$TERM</b> environment variable is set. If not set it:
+
+<code>
+export TERM=xterm-256color
+</code>
+
+Install the development files of the readline C library:
+
+<code>
+apt-get install -y libreadline-dev
+</code>
+
+<code>
+cpanm Term::ReadLine::Gnu
+</code>
+
+
+<h2>TODO<h2>
+
