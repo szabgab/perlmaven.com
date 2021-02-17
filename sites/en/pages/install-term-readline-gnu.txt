@@ -16,6 +16,16 @@ using Github Actions in <a href="https://github.com/szabgab/testing-Term-ReadLin
 
 =abstract end
 
+<h2>Show Installed version</h2>
+
+Before we see how to install it, let's see how can we display the version after we installed it:
+
+<code>
+perl -MTerm::ReadLine -e 'print "Term::ReadLine $Term::ReadLine::VERSION\n"'
+perl -MTerm::ReadLine -e 'print "Term::ReadLine::Gnu $Term::ReadLine::Gnu::VERSION\n"'
+</code>
+
+
 <h2>Ubuntu system perl</h2>
 
 <code>
@@ -40,6 +50,12 @@ apt-get install -y libreadline-dev
 cpanm Term::ReadLine::Gnu
 </code>
 
+<h2>Centos system Perl</h2>
 
-<h2>TODO<h2>
+<code>
+yum install -y perl
+yum install -y epel-release
+yum install -y perl-Term-ReadLine-Gnu
+</code>
+
 
