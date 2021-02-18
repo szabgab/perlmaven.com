@@ -54,7 +54,7 @@ The result (slightly shortened to make it clearer):
 
 <code>
 Can't decode ill-formed UTF-8 octet sequence <FF> at /usr/local/lib/perl5/site_perl/5.30.3/Path/Tiny.pm line 1801.
-	Path::Tiny::slurp(undef, undef) called at t/00-basic.t line 31
+    Path::Tiny::slurp(undef, undef) called at t/00-basic.t line 31
 # Tests were run but no plan was declared and done_testing() was not seen.
 t/00-basic.t ..........
 # Looks like your test exited with 25 just after 263.
@@ -62,4 +62,6 @@ t/00-basic.t ..........
 
 
 OK, so now I know it is on line 31 of the test script. I can now figure out what happened there.
+
+Now I "only" need to fix the bug.
 
