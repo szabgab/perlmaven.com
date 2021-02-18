@@ -7,6 +7,7 @@ use Path::Iterator::Rule;
 use Encode::Guess;
 use Path::Tiny qw(path);
 use File::Basename qw(basename);
+use Carp::Always;
 
 #plan tests => 2;
 
