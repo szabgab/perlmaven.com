@@ -1,0 +1,21 @@
+=title GitHub Actions CI job for Perl Test::Class - checking downstream dependencies as well
+=timestamp 2021-02-22T17:30:01
+=indexes Test::Class, CI, GitHub
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+<a href="https://metacpan.org/release/Test-Class">Test::Class</a> is Perl module that allows you to write jUnit or xUnit style tests. Recently I became the maintainer
+of the module. The first thing I did, actually even before becomming the maintainer, is setting up a CI system using GitHub Actions that will test the code
+on various versions of Perl.
+
+Then it will proceed and test some of the modules that depend on Test::Class to make sue the changes I make don't break those modules.
+
+=abstract end
+
+<screencast file="perl-github-actions-ci-job-for-test-class-2021-02-22.mkv" youtube="YCRljeO0tIA" />
