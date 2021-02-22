@@ -1,0 +1,225 @@
+name: CI
+
+on:
+  push:
+    branches: '*'
+  pull_request:
+    branches: '*'
+  schedule:
+    - cron: '42 5 * * *'
+
+# Build the module on several versions of Perl using an image that already has a lot of modules installed.
+# This will provide a fast feedback if a commit broke anything in the unit-tests.
+# Using 5.32 we also create the tar.gz file and save it as an artifact.
+#
+# Once this job passed we launch several jobs in parallel
+# 1) Verify that we can install the created distribution on many versions of Perl using a Linux Docker image with vanilla Perl.
+# 2) Verify that we can install the created distribution on native Linux/Windows/OSX.
+# 3) Verify that the changes won't break some selected downstream distributions.
+
+# We run the job on every push and every pull-request.
+# We also run them periodically to makes sure none of changes in our dependencies break it even during the days when
+# the developers of this project rest.
+
+jobs:
+  build-in-container:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        perl-version:
+          - '5.32'
+          - '5.30'
+          - '5.20'
+
+    container:
+      image: perldocker/perl-tester:${{ matrix.perl-version }}     # https://hub.docker.com/r/perldocker/perl-tester
+
+    name: Build on Linux with Perl ${{ matrix.perl-version }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Regular tests
+        run: |
+            perl -v
+            cpanm --notest Contextual::Return
+            perl Makefile.PL
+            make
+            make test
+
+      - name: Install Extra dependencies
+        run: |
+            for module in Test::Pod::Coverage Test::Perl::Critic Pod::Simple Test::Pod Perl::MinimumVersion Test::MinimumVersion Test::Spelling File::Which Test::Perl::Critic
+             do
+                echo Start installing $module
+                date
+                set -x
+                cpanm --notest $module
+                perl -M$module -e "print qq{$module \$$module::VERSION\n}"
+                echo Finished installing $module
+                echo "==================="
+            done
+
+      - name: Release tests
+        run: |
+            RELEASE_TESTING=1 prove -l t/pod.t
+            RELEASE_TESTING=1 prove -l t/documented.t
+            RELEASE_TESTING=1 prove -l t/pmv.t
+            RELEASE_TESTING=1 prove -l t/spelling.t
+            RELEASE_TESTING=1 prove -l t/perlcritic.t
+
+      - name: Create release
+        if: ${{ matrix.perl-version == '5.32' }}
+        run: |
+            # Increase the version number by 0.000001 so in the reports we can be sure we are using the code to be released.
+            perl -i -p -e "s/VERSION\s*=\s*'(\d+\.\d+)'/q{VERSION = '} . (\$1 + 0.01) . q{'}/e" lib/Test/*.pm lib/Test/Class/*.pm
+            perl Makefile.PL
+            make
+            make manifest
+            make dist
+
+      - name: Archive artifacts
+        if: ${{ matrix.perl-version == '5.32' }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: the-release
+          path: |
+            Test-Class-*.tar.gz
+
+
+  test-on-clean-perl:
+    runs-on: ubuntu-latest
+    needs: build-in-container
+
+    strategy:
+      fail-fast: false
+      matrix:
+        perl-version:
+          - "5.32"
+          - "5.30"
+          - "5.28"
+          - "5.26"
+          - "5.24"
+          - "5.22"
+          - "5.20"
+          - "5.18"
+          - "5.16"
+          - "5.14"
+          - "5.12"
+          - "5.10"
+
+    container:
+      image: perl:${{ matrix.perl-version }}
+
+    name: Test on ${{ matrix.perl-version }}
+    steps:
+      - name: Download a single artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: the-release
+
+      - name: Install Module
+        run: |
+            perl -v
+            cpanm Test-Class-*.tar.gz
+
+
+  test-downstream:
+    runs-on: ubuntu-latest
+    needs: build-in-container
+
+    strategy:
+      fail-fast: false
+      matrix:
+        perl-version:
+          - '5.32'
+
+    container:
+      image: perldocker/perl-tester:${{ matrix.perl-version }}     # https://hub.docker.com/r/perldocker/perl-tester
+
+    name: Test downstream on ${{ matrix.perl-version }}
+    steps:
+      - name: Download a single artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: the-release
+
+      - name: Install Module
+        run: |
+            perl -v
+            cpanm Test-Class-*.tar.gz
+
+      - name: Testing selected downstream modules
+        run: |
+            echo "Reverse dependencies ordered by River stage"
+            for module in CHI Test::Class::Most MooseX::Getopt::Usage Ubic
+            do
+                echo Start testing $module
+                date
+                set -x
+                cpanm --notest --installdeps $module
+                cpanm --verbose $module
+                echo Finish testing $module
+                echo "==================="
+            done
+            #cpanm --verbose Debug::Client   # currently failing
+            #cpanm --verbose Math::GSL  # needs gsl-config
+            #cpanm --verbose EntityModel # fails
+
+            echo "Other reverse dependencies listed by ABC"
+            for module in App::GitGot App::Scaffolder::Puppet cPanel::APIClient Class::Mockable File::Random Mail::Pyzor Test::Class::Simple Business::FO::Postalcode Business::DK::Postalcode
+            do
+                echo Start testing $module
+                date
+                set -x
+                cpanm --notest $module
+                cpanm --verbose --test-only $module
+                echo Finished testing $module
+                echo "==================="
+            done
+            #cpanm --verbose Analizo # failed
+            #cpanm --verbose App::PRT # failed
+            #cpanm --verbose Term::CLI  # needs Term::ReadLine::Gnu
+
+  native:
+    needs: build-in-container
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest, macos-latest, windows-latest]
+        perl: [ '5.32' ]
+
+    runs-on: ${{matrix.runner}}
+    name: Native on OS ${{matrix.runner}} Perl ${{matrix.perl}}
+
+    steps:
+      - name: Download a single artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: the-release
+
+      - name: Set up perl
+        uses: shogo82148/actions-setup-perl@v1
+        with:
+            perl-version: ${{ matrix.perl }}
+            distribution: ${{ ( startsWith( matrix.runner, 'windows-' ) && 'strawberry' ) || 'default' }}
+
+      - name: Install Module on Windows
+        if: ${{ startsWith( matrix.runner, 'windows-' )  }}
+        run: |
+            perl -v
+
+            Set-Content -NoNewline "cpanm --verbose " install.bat
+            Get-ChildItem -Name Test-Class* >> install.bat
+            dir
+            type install.bat
+            .\install.bat
+            perl -MTest::Class -e "print qq{$Test::Class::VERSION\n}"
+
+      - name: Install Module on Linux and OSX
+        if: ${{ ! startsWith( matrix.runner, 'windows-' )  }}
+        run: |
+            cpanm --verbose Test-Class-*.tar.gz
+            perl -MTest::Class -e 'print qq{$Test::Class::VERSION\n}'
+
