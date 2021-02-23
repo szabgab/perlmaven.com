@@ -9,7 +9,7 @@
 
 =abstract start
 
-The process number of the current script / program / executable.
+The process number of the current script / program / executable. Natively Perl provieds the <b>$$</b> variable, but if you load the <a href="/english">English</a>
 
 =abstract end
 
