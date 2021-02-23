@@ -1,0 +1,27 @@
+=title $$, $PROCESS_ID, $PID- The process number of the current script / program / executable.
+=timestamp 2021-02-23T18:30:01
+=indexes $$, $PROCESS_ID, $PID
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+The process number of the current script / program / executable.
+
+=abstract end
+
+See also <a href="/pro/forking-pid-ppid">Forking, Process ID, Parent Process ID, init</a>
+
+<include file="examples/process_id.pl">
+
+<code>
+1228561
+1228561
+1228561
+</code>
+
+<a href="https://metacpan.org/pod/perlvar#$PROCESS_ID">perldoc</a>
+
