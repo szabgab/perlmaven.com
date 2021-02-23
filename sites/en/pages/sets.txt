@@ -10,15 +10,34 @@
 
 =abstract start
 
-<a href="https://metacpan.org/pod/Set::Scalar">Set::Scalar</a>
+In order to use sets easily in Perl we first need to install the <a href="https://metacpan.org/pod/Set::Scalar">Set::Scalar</a> module from CPAN. You would usually use
+
+<code>
+cpanm Set::Scalar
+</code>
+
+to do this.
 
 =abstract end
 
+There are many additional ways to use the module, but let me show some of the basic examples using two sets, a few words in English and a few words in Spanish.
+
+<h2>Method calls</h2>
+
+
+We can use method calls to do operations:
+
 <include file="examples/sets.pl">
 
-Check out the <a href="https://en.wikipedia.org/wiki/Venn_diagram">Venn diagrams</a> on Wikipedia if you'd like to refresh your memory or if you need to learn about sets.
 
 <h2>Operator overloading</h2>
 
+We can also use overloaded operators:
+
 <include file="examples/sets_operators.pl">
+
+
+<h2>Sets and Venn diagrams</h2>
+
+Check out the <a href="https://en.wikipedia.org/wiki/Venn_diagram">Venn diagrams</a> on Wikipedia if you'd like to refresh your memory or if you need to learn about sets.
 
