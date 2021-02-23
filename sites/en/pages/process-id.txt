@@ -9,7 +9,8 @@
 
 =abstract start
 
-The process number of the current script / program / executable. Natively Perl provieds the <b>$$</b> variable, but if you load the <a href="/english">English</a>
+The process number of the current script / program / executable. Natively Perl provieds the <b>$$</b> variable, but if you load the <a href="/english">English</a> module
+you can also use the <b>$PROCESS_ID</b> or the <b>$PID</b> variable names for the same thing.
 
 =abstract end
 
