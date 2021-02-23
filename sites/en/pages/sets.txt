@@ -1,0 +1,24 @@
+=title Sets in Perl using Set::Scalar
+=timestamp 2021-02-23T17:30:01
+=indexes sets, Set::Scalar, intersection, union, difference, symmetric_difference
+=status show
+=author szabgab
+=archive 1
+=description Sets are rarely used in programming, but when they are needed it is great to to be able to use them natively in the language or at least by installing a module.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+<a href="https://metacpan.org/pod/Set::Scalar">Set::Scalar</a>
+
+=abstract end
+
+<include file="examples/sets.pl">
+
+Check out the <a href="https://en.wikipedia.org/wiki/Venn_diagram">Venn diagrams</a> on Wikipedia if you'd like to refresh your memory or if you need to learn about sets.
+
+<h2>Operator overloading</h2>
+
+<include file="examples/sets_operators.pl">
+
