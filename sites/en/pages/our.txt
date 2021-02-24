@@ -1,0 +1,73 @@
+=title our
+=timestamp 2021-02-23T20:50:01
+=indexes our
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+In Perl the <b>our</b> keyword is used to declare one or more package variables. More exactly it creates lexical alias to a packaga variable, but for our practical
+purposes <b>our</b> means we are allowed to use the package variable without giving the fully qualified name and without violating the rules
+of <a href="/strict">use strict</a>.
+
+With that out of the way, in most cases, you'd want to declare variables in a lexical scope using the <a href="/my">my</a> keyword.
+
+=abstract end
+
+<h2>With our</h2>
+
+<include file="examples/our.pl">
+
+This works printing "Jane" in both cases.
+
+<h2>Without our</h2>
+
+<include file="examples/without_our.pl">
+
+we get the following compilation error:
+
+<code>
+Variable "$name" is not imported at examples/without_our.pl line 9.
+Global symbol "$name" requires explicit package name (did you forget to declare "my $name"?) at examples/without_our.pl line 9.
+Execution of examples/without_our.pl aborted due to compilation errors.
+</code>
+
+<h2>Only our</h2>
+
+<include file="examples/just_our.pl">
+
+
+<h2>Fully qualified name</h2>
+
+The "Fully qualified name" is when the name of a variable is preceded by the name of a <b>package</b>.
+The name of the default package in a script is called <b>main</b>.
+
+<h2>Variables in the main package</h2>
+
+In this example we have a package in its own file and it uses the fully-qualified name of a variable in the main script which is the <b>main</b> package to access
+a variable declared using <b>our</b>.
+
+<include file="examples/variables_in_main.pl">
+<include file="examples/CreatorOfPerl.pm">
+
+<code>
+perl -I examples examples/variables_in_main.pl
+</code>
+
+<h2>Other articles related to our</h2>
+
+Check out other articles covering the <a href="/search/our">our</a> keyword. For examples <a href="/scope-of-variables-in-perl">scope of variables in Perl</a>,
+and <a href="/variable-declaration-in-perl">variable declaration in Perl</a>.
+
+Also check out the difference between <a href="/package-variables-and-lexical-variables-in-perl">Package variables declared with <b>our</b> and Lexical variables declared with <b>my</b> in Perl</a>.
+
+<a href="/strict">use strict</a> will force you and your co-workers do declare every variable. It is a good thing. <a href="/always-use-strict-and-use-warnings">Always use strict and use warnings in your perl code!</a>.
+
+Check other articles about <a href="/search/strict">strict</a>.
+
+<a href="https://metacpan.org/pod/perlfunc#our-VARLIST">perldoc</a>
+
+

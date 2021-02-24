@@ -25,3 +25,5 @@ Also check out the difference between <a href="/package-variables-and-lexical-va
 <a href="/strict">use strict</a> will force you and your co-workers do declare every variable. It is a good thing. <a href="/always-use-strict-and-use-warnings">Always use strict and use warnings in your perl code!</a>.
 
 Check other articles about <a href="/search/strict">strict</a>.
+
+<a href="https://metacpan.org/pod/perlfunc#my-VARLIST">perldoc</a>
