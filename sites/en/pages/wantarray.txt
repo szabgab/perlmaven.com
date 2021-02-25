@@ -2,6 +2,7 @@
 =timestamp 2014-04-27T20:30:01
 =indexes wantarray
 =status show
+=tags screencast
 =books advanced
 =author szabgab
 =comments_disqus_enable 0
@@ -80,7 +81,7 @@ the <a href="/the-ternary-operator-in-perl">ternary operator</a>.
 The result looks like this:
 
 <code>
-$ perl fibonacci.pl 
+$ perl fibonacci.pl
 1 1 2 3
 5
 There is no point in calling fibo() in VOID context at fibonacci.pl line 9.
@@ -100,6 +101,8 @@ just adds to this confusion. On the other hand, beginner Perl programmers probab
 Finally, Perl actually has more fine-grained contexts, for example <a href="/what-are-string-and-numeric-contexts">string and numeric context</a>.
 In another article we'll see how we can create a function that will aware of those contexts as well.
 
+You can also use the Want module to find out <a href="/what-return-is-expected">what return is expected from your function</a>.
 
 
 
+<screencast file="perl-context-wantarray-and-want.mkv" youtube="nv1QFKSRrxs" />
