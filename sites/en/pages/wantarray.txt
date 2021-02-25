@@ -59,52 +59,12 @@ wantarray will return
 
 Here is the skeleton of the code with 3 different invocations:
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-sub fibo {
-   if (wantarray) {
-       say 'LIST';
-   } elsif (defined wantarray) {
-       say  'SCALAR';
-   } else {
-       say  'VOID';
-   }
-}
-
-my @numbers = fibo();  # LIST
-my $value   = fibo();  # SCALAR
-fibo();                # VOID
-</code>
+<include file="examples/wantarray_fibo_skeleton.pl">
 
 
 And now let's implement the Fibonacci:
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-sub fibo {
-   my ($n) = @_;
-
-   die 'There is no point in calling fibo() in VOID context'
-       if not defined wantarray;
-
-   my @fibo = (1, 1);
-   push @fibo, $fibo[-1] + $fibo[-2] for 3 .. $n;
-
-   return wantarray ? @fibo : $fibo[-1];
-}
-
-my @numbers = fibo(4);
-say "@numbers";
-my $value   = fibo(5);
-say $value;
-fibo(100);
-</code>
+<include file="examples/wantarray_fibo.pl">
 
 It is written slightly differently from the skeleton.
 The first thing we check is if <hl>wantarray</hl> returns undef. If it does, meaning the user
