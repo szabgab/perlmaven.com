@@ -10,7 +10,7 @@
 =abstract start
 
 In the recent months I talked quite a lot about setting up CI systems for the development of Perl Modules. I have even sent pull-requests to the Git repositories
-to add the configuration of a CI system. Many people accepted the PR, but I hear some people thing <a href="http://www.cpantesters.org/">CPAN Testers</a> are enough.
+to add the configuration of a CI system. Many people accepted the PR, but I hear some people think <a href="http://www.cpantesters.org/">CPAN Testers</a> are enough.
 
 I think that the CPAN Testers are awesome, but if you care about your project you should not rely on them.
 
