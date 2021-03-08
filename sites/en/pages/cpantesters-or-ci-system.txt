@@ -82,3 +82,5 @@ There is also a video <a href="https://perlmaven.com/github-actions-ci-job-for-t
 Having CPAN Testers is very valuable, but I think setting up a CI system to get earlier feedback
 is a natural step towards improved software, both for open source and proprietary software.
 
+So it is not either or, but having both.
+
