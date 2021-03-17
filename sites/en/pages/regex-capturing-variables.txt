@@ -1,5 +1,5 @@
 =title Regex capturing variables $1, $2, $3, $4, $5, $6, ...
-=timestamp 2021-03-17T17:30:01
+=timestamp 2021-03-17T17:50:01
 =indexes $1, $2, $3, $4, $5, $6, $7, $8, $9
 =status show
 =author szabgab
