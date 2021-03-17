@@ -161,6 +161,13 @@ while (my $line = <$fh>) {
 }
 </code>
 
+<h2>List of uses of $_</h2>
+
+I've started to put together a list of places that default to <b>$_</b>:
+
+<ul>
+   <li><a href="/ord">ord</a></li>
+</ul>
 
 <h2>Exceptions</h2>
 

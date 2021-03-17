@@ -1,0 +1,31 @@
+=title ord
+=timestamp 2021-03-17T15:30:01
+=indexes ord, utf8
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Returns the numeric value of the first character of EXPR. If EXPR is an empty string, returns 0. If EXPR is omitted, uses <a href="/the-default-variable-of-perl">$_</a>.
+
+=abstract end
+
+<h2>When utf8 is properly set</h2>
+
+<include file="examples/ord_utf8.pl">
+
+<h2>When utf8 is not set</h2>
+
+<include file="examples/ord.pl">
+
+<ul>
+   <li><a href="https://www.compart.com/en/unicode/U+00F1">Spanish ñ</a></li>
+   <li><a href="https://www.compart.com/en/unicode/U+0171">Hungarian ű</a></li>
+   <li><a href="https://www.compart.com/en/unicode/U+05D0">Hebrew Aleph</a></li>
+   <li><a href="https://www.compart.com/en/unicode/U+05D1">Hebrew Bet</a></li>
+   <li><a href="https://www.compart.com/en/unicode/U+0663">Arabic 3</a></li>
+</ul>
+
