@@ -1,0 +1,22 @@
+=title chr
+=timestamp 2021-03-17T17:30:01
+=indexes chr, binmode, utf8
+=status show
+=author szabgab
+=archive 1
+=description chr in Perl returns the character represented by that NUMBER in the character set.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+chr in Perl returns the character represented by that NUMBER in the character set.
+
+=abstract end
+
+<include file="examples/chr.pl">
+
+See also the <a href="/ord">ord</a> function that does the opposite.
+
+
+<a href="https://metacpan.org/pod/perlfunc#chr-NUMBER">documentation</a>

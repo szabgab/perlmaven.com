@@ -29,3 +29,5 @@ Returns the numeric value of the first character of EXPR. If EXPR is an empty st
    <li><a href="https://www.compart.com/en/unicode/U+0663">Arabic 3</a></li>
 </ul>
 
+
+See also the <a href="/chr">chr</a> function as the opposite of <b>ord</b>.
