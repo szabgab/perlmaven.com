@@ -1,6 +1,6 @@
 =title The destructor called DESTROY
 =timestamp 2021-03-19T07:30:01
-=indexes destructor, DESTROY
+=indexes destructor, DESTROY, END
 =status show
 =author szabgab
 =archive 1
