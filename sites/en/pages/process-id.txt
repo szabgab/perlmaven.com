@@ -14,7 +14,7 @@ you can also use the <b>$PROCESS_ID</b> or the <b>$PID</b> variable names for th
 
 =abstract end
 
-See also <a href="/pro/forking-pid-ppid">Forking, Process ID, Parent Process ID, init</a>
+See also <a href="/forking-pid-ppid">Forking, Process ID, Parent Process ID, init</a>
 
 <include file="examples/process_id.pl">
 
