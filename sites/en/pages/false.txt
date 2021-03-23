@@ -19,6 +19,15 @@ The values that evaluate to false in boolean context in Perl are <a href="/undef
 the empty string, the empty array, the empty hash. In general anything that is considered to be empty.
 Everything else evaluates to <b>true</b>.
 
+<code>
+undef
+0
+0.00
+''
+my @arr;
+my %h;
+</code>
+
 <include file="examples/boolean.pl">
 
 The output will be:
