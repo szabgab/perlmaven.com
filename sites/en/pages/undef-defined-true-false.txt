@@ -1,0 +1,34 @@
+=title undef - defined - true -false
+=timestamp 2021-03-23T08:30:01
+=indexes false, true, undef, defined
+=status show
+=author szabgab
+=archive 1
+=description defined checks if a variable is undef or not, this is different from being true or false.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+The <a href="/defined">defined</a> function checks if a variable is <a href="/undef">undef</a> or not.
+This is different from being evaluated to <a href="/true">true</a> or <a href="/false">false</a>.
+
+=abstract end
+
+See also the explanation about <a href="/boolean-values-in-perl">boolean values</a> in Perl.
+
+<code>
+          defined?      if ()
+
+undef        no          no
+0            yes         no
+0.00         yes         no
+''           yes         no
+my @arr;     N/A         no
+my %h;       N/A         no
+1            yes         yes
+'0'          yes         no
+'00'         yes         yes
+</code>
+
+

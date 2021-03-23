@@ -24,6 +24,7 @@ undef
 0
 0.00
 ''
+'0'
 my @arr;
 my %h;
 </code>
@@ -39,6 +40,8 @@ empty hash is false
 0 is false
 0 is false
  is false
+0 is false
+00 is true
 0
  is true
 ARRAY(0x55e25f1ce470) is true
@@ -46,6 +49,9 @@ HASH(0x55e25f1f1080) is true
 true is true
 false is true
 </code>
+
+(When printing "0\n" the "is true" part was printed on the next row because of the newline we print.)
+
 
 <h2>Boolean context</h2>
 

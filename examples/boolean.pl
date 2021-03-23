@@ -24,7 +24,7 @@ if (%hash) {
     say 'empty hash is false';
 }
 
-my @values = (0, 0.00, '', "0\n", [], {}, 'true', 'false');
+my @values = (0, 0.00, '', '0', '00', "0\n", [], {}, 'true', 'false');
 for my $value (@values) {
     if ($value) {
         say "$value is true";
