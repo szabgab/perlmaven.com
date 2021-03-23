@@ -16,3 +16,5 @@ See <a href="/beginner-perl-maven-undef">undef explained in a video</a> and <a h
 
 It is also a function that can be used to set variables to be undefined. See <a href="/undef-on-perl-arrays-and-hashes">undef on Perl arrays and hashes</a>.
 
+You can tell apart variables that are <b>undef</b> and that are not by using the <a href="/defined">defined</a> function.
+

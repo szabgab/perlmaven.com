@@ -1,0 +1,27 @@
+=title defined
+=timestamp 2021-03-23T07:30:01
+=indexes defined, undef
+=status show
+=author szabgab
+=archive 1
+=description The defined keyword in Perl checks if the given value is anything but undef
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+The <b>defined</b> function in Perl checks if the given value is anything but <a href="/undef">undef</a>
+
+=abstract end
+
+<include file="examples/defined.pl">
+
+<b>defined</b> means it is NOT <a href="/undef">undef</a>
+
+<b>not defined</b> means it is <a href="/undef">undef</a>
+
+Being "<a href="/false">false</a>" or "<a href="/true">true</a>" have different meaning than being "defined" or "not defined".
+
+
+
+<a href="https://metacpan.org/pod/perlfunc#defined-EXPR">documentation</a>

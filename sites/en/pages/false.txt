@@ -1,0 +1,51 @@
+=title false
+=timestamp 2021-03-23T08:00:01
+=indexes false
+=status show
+=author szabgab
+=archive 1
+=description There is no special value that means false in Perl. There are certain values that evaluate to false in boolean context.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+There is no special <a href="/boolean-values-in-perl">boolean values</a> in Perl that would mean <b>false</b> or <b>true</b>.
+There are certain values that evaluate to false or <a href="/true">true</a> in boolean context.
+
+=abstract end
+
+The values that evaluate to false in boolean context in Perl are <a href="/undef">undef</a>, the number 0 (also when written as 0.00),
+the empty string, the empty array, the empty hash. In general anything that is considered to be empty.
+Everything else evaluates to <b>true</b>.
+
+<include file="examples/boolean.pl">
+
+The output will be:
+
+<code>
+undef is false
+empty array is false
+empty hash is false
+0 is false
+0 is false
+ is false
+0
+ is true
+ARRAY(0x55e25f1ce470) is true
+HASH(0x55e25f1f1080) is true
+true is true
+false is true
+</code>
+
+<h2>Boolean context</h2>
+
+Boolean context means an <b>if statement</b>, and <b>unless</b> statement. The conditional of a <b>while</b> loop,
+a ternary operator, etc.
+
+
+<h2>undef and being defined</h2>
+
+
+Being "<a href="/defined">defined</a>" or being "<a href="/undef">undef</a>" have different meaning in Perl.
+
