@@ -47,4 +47,23 @@ A system to handle exercise submissions and reviews.
     <li>A student who has submitted an exercise can see the solutions of others of the same exercise and maybe even comment on them.</li>
 </ul>
 
+<ul>
+    <li><a href="https://github.com/szabgab/course-management">Git Repository</a></li>
+    <li><a href="https://docs.mojolicious.org/Mojo/File">Mojo::File</a></li>
+    <li><a href="https://stackoverflow.com/questions/10152973/how-upload-file-using-mojolicious">How Upload file using Mojolicious?</a></li>
+    <li><a href="https://docs.mojolicious.org/Mojo/Upload">Mojo::Upload</a></li>
+    <li><a href="https://docs.mojolicious.org/Mojolicious/Routes/Route">Mojolicious::Routes::Route</a></li>
+    <li><a href="https://mojolicious.io/blog/2017/12/02/day-2-the-stash/">The Stash</a></li>
+    <li><a href="https://docs.mojolicious.org/Mojolicious/Plugin/NotYAMLConfig">NotYAMLConfig</a></li>
+</ul>
 
+<code>
+perl -MMojolicious -E 'say $Mojolicious::VERSION'
+cpanm Mojolicious
+
+mojo generate app Course::Management
+perl script/course_management daemon
+morbo script/course_management
+</code>
+
+<screencast file="mojolicious-1-1920x1080.mp4" youtube="_AInPp-dneQ" />
