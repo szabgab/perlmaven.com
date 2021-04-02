@@ -13,7 +13,7 @@
 BDD - <a href="https://en.wikipedia.org/wiki/Behavior-driven_development">Behavior Driven Development</a>
 using <a href="https://metacpan.org/pod/Test::BDD::Cucumber">Test::BDD::Cucumber</a>
 
-Live stream via <a href="https://www.twitch.tv/szabgab">Twitch</a>
+Live streamed via <a href="https://www.twitch.tv/szabgab">Twitch</a>
 
 =abstract end
 
@@ -22,4 +22,5 @@ Live stream via <a href="https://www.twitch.tv/szabgab">Twitch</a>
    <li><a href="/exploring-bdd-in-perl-2">Part 2</a></li>
    <li><a href="/exploring-bdd-in-perl-3">Part 3</a></li>
    <li><a href="/exploring-bdd-in-perl-4">Part 4</a></li>
+   <li><a href="/exploring-bdd-in-perl-5">Part 5</a> with Erik Hülsmann</li>
 </li>

@@ -1,0 +1,23 @@
+=title Exploring BDD in Perl - using Test::BDD::Cucumber - part 5 - with Erik Hülsmann
+=timestamp 2021-04-02T08:30:01
+=indexes testing, BDD, Cucumber
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+BDD - <a href="https://en.wikipedia.org/wiki/Behavior-driven_development">Behavior Driven Development</a>
+using <a href="https://metacpan.org/pod/Test::BDD::Cucumber">Test::BDD::Cucumber</a>
+
+This time it will be together with <a href="https://www.linkedin.com/in/erikhuelsmann/">Erik Hülsmann</a> the maintainer of the module.
+
+=abstract end
+
+Scheduled for April 11: 12:00 Israel - Check out your time on the registration page.
+
+<a class="btn btn-lg btn-success" href="https://us02web.zoom.us/meeting/register/tZAlde2vpz8jEt1ZIJgHEI3NVEbz9oQH0Lzl">Register here</a>
+
