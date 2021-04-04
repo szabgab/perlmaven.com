@@ -1,0 +1,39 @@
+=title Generate Calendar in ICal format
+=timestamp 2021-04-04T07:50:01
+=indexes ICal, calendar, Data::ICal, Data::ICal::Entry::Event, DateTime, DateTime::Format::ICal, DateTime::Duration
+=status show
+=author szabgab
+=archive 1
+=description Generate a calendar in ICal format using Perl.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+You can serve calendars in ICal format from your web application on-the fly or you can save it to the disk as an *.ical file and serve the static file.
+Then people can add it to their calendar application and see the events you list.
+
+=abstract end
+
+The modules in use:
+
+<ul>
+    <li><a href="https://metacpan.org/pod/Data::ICal">Data::ICal</a></li>
+    <li><a href="https://metacpan.org/pod/Data::ICal::Entry::Event">Data::ICal::Entry::Event</a></li>
+    <li><a href="https://metacpan.org/pod/DateTime">DateTime</a></li>
+    <li><a href="https://metacpan.org/pod/DateTime::Duration">DateTime::Duration</a></li>
+    <li><a href="https://metacpan.org/pod/DateTime::Format::ICal">DateTime::Format::ICal</a></li>
+</ul>
+
+This code generates two events. The first one has a beginning and ending date. The second one has a beginninng and a duration. It also includes a link to Zoom as the "location".
+
+<include file="examples/generate_ical.pl">
+
+The output is this:
+
+<include file="examples/example.ical">
+
+<h2>Real world examples</h2>
+
+For example the <a href="https://perlweekly.com/">Perl Weekly newsletter</a> has a <a href="https://perlweekly.com/perlweekly.ical">calendar of Perl events</a>
+based on the <a href="https://perlweekly.com/events.html">list of Perl events</a>.

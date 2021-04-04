@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Data::ICal 0.24
+BEGIN:VEVENT
+DESCRIPTION:A longer description that can also have ebedded newlines.\nThen
+  it can continue on a second and\nthird line.
+DTEND:20210405T170000
+DTSTART:20210405T150000
+LOCATION:The local coffee shop
+SUMMARY:Short title of the event
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Description
+DTSTART:20210406T060000
+DURATION:+PT3H15M
+LOCATION:https://zoom.us/
+SUMMARY:Another event
+END:VEVENT
+END:VCALENDAR
