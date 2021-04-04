@@ -21,3 +21,5 @@ Scheduled for April 11: 12:00 Israel - Check out your time on the registration p
 
 <a class="btn btn-lg btn-success" href="https://us02web.zoom.us/meeting/register/tZAlde2vpz8jEt1ZIJgHEI3NVEbz9oQH0Lzl">Register here</a>
 
+Use this link to include the the schedule in your calendar: <a href="https://code-maven.com/events.ics">https://code-maven.com/events.ics</a>.
+

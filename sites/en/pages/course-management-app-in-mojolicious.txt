@@ -25,6 +25,8 @@ Part 2 is scheduled for April 4: 18:00 Israel check out your time on the registr
 
 (If you registered to the first event you are already registered to this one as well.)
 
+Use this link to include the the schedule in your calendar: <a href="https://code-maven.com/events.ics">https://code-maven.com/events.ics</a>.
+
 <h2>Plan</h2>
 
 That will evolve.
