@@ -1,4 +1,4 @@
-=title Running CGI sccript as a Plack application with Plack::App::CGIBin
+=title Running CGI script as a Plack application with Plack::App::CGIBin
 =timestamp 2020-12-20T16:30:01
 =indexes Plack::App::CGIBin, CGI, plackup
 =status show
