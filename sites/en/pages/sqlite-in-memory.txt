@@ -32,3 +32,6 @@ Then we can INSERT rows.
 
 Except of the connection string our code is not aware that it is talking to an in-memory database.
 
+
+See also the <a href="/counter-with-dancer-using-in-memory-sqlite-database">counter example using Perl Dancer and an in-memory SQLite database</a>
+
