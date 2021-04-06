@@ -5,7 +5,6 @@
 =books dancer
 =author szabgab
 =archive 1
-=description
 =comments_disqus_enable 0
 =show_related 1
 
@@ -17,3 +16,9 @@ A <a href="https://code-maven.com/counter">counter example</a> using <a href="/d
 
 <include file="examples/dancer_counter_in_memory_sqlite.psgi">
 
+This was an interesting example to write, but I am not sure what would be the value of having an in-memory database for something like this as this means the data won't survive a restart of the application-server.
+
+The data and the database is persistent among the requests that are served from the same process, but different processes will have different database (and in any real world situation you'll want to
+have more than one process) and if you need to restart the application server (e.g. Starman) then you will lose all the data.
+
+An external caching used by the application might make more sense.
