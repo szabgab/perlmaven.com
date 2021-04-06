@@ -1,0 +1,12 @@
+<h1>[== $title ==]</h1>
+
+[== join(" ", @$planets) =]
+
+<ul>
+<?pl for my $planet (@$planets) { ?>
+   <li>[== $planet ==]</li>
+<?pl } ?>
+</ul>
+
+[= time =]
+
