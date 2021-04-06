@@ -1,0 +1,19 @@
+=title Counter with Dancer using in-memory SQLite database
+=timestamp 2021-04-06T07:30:01
+=indexes Dancer, DBI, SQLite
+=status show
+=books dancer
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+A <a href="https://code-maven.com/counter">counter example</a> using <a href="/dancer">Perl Dancer</a> and an <a href="/sqlite-in-memory">in-memory SQLite database</a>.
+
+=abstract end
+
+<include file="examples/dancer_counter_in_memory_sqlite.psgi">
+
