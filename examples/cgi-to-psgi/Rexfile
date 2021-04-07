@@ -22,8 +22,8 @@ task install_apache => sub {
     service 'apache2', ensure => 'started';
 };
 
-desc 'Setup Apache';
-task setup_apache => sub {
+desc 'Setup CGI';
+task setup_cgi => sub {
     # mkdir
     file '/var/cgi-bin', ensure => 'directory';
 
@@ -31,12 +31,6 @@ task setup_apache => sub {
     file '/var/cgi-bin/app.cgi',
         source => 'files/var/cgi-bin/app.cgi',
         mode => '0755';
-
-    #copy file, set mode
-    file '/var/cgi-bin/app.psgi',
-        source => 'files/var/cgi-bin/app.psgi',
-        mode => '0755';
-
 
     # install  CGI.pm
     for my $pkg (qw(libcgi-pm-perl)) {
@@ -50,7 +44,6 @@ task setup_apache => sub {
     };
     die "Could not run CGI script on the command line $@" if $@;
 
-
     file '/etc/apache2/sites-enabled/000-default.conf', ensure => 'absent';
     file '/etc/apache2/sites-enabled/apache.conf',
         source => 'files/etc/apache2/sites-enabled/apache.conf';
@@ -59,10 +52,25 @@ task setup_apache => sub {
 
     service 'apache2' => 'restart';
 
-    do_task('verify_application');
+    do_task('verify_cgi');
 };
 
-task verify_application => sub {
+desc 'Setup PSGI as CGI';
+task setup_psgi => sub {
+    #copy file, set mode
+    file '/var/cgi-bin/app.psgi',
+        source => 'files/var/cgi-bin/app.psgi',
+        mode => '0755';
+
+    # install  Plack
+    for my $pkg (qw(libplack-perl)) {
+        pkg $pkg, ensure => 'present';
+    }
+
+    do_task('verify_psgi');
+};
+
+task verify_cgi => sub {
     use LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
     my $server = connection->server;
@@ -74,5 +82,20 @@ task verify_application => sub {
     my $html_post = $res_post->decoded_content;
     die "Wrong output '$html_post'" if $html_post ne "Hello Foo\n";
 };
+
+task verify_psgi => sub {
+    use LWP::UserAgent;
+    my $ua = LWP::UserAgent->new;
+    my $server = connection->server;
+    my $res_get = $ua->get("http://$server/cgi-bin/app.psgi?name=Foo");
+    my $html_get = $res_get->decoded_content;
+    die "Wrong output '$html_get'" if $html_get ne "Hello Foo\n";
+
+    my $res_post = $ua->post("http://$server/cgi-bin/app.psgi", {name => 'Foo' });
+    my $html_post = $res_post->decoded_content;
+    die "Wrong output '$html_post'" if $html_post ne "Hello Foo\n";
+};
+
+
 
 # vim: syntax=perl
