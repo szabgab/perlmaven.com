@@ -1,0 +1,72 @@
+=title Moving from CGI to PSGI and Starman
+=timestamp 2021-01-01T07:30:01
+=indexes CGI, PSGI, Plack, Starman, Apache, Rex
+=status draft
+=author szabgab
+=archive 1
+=description Moving from an old CGI application to PSGI in CGI mode and to running it in the Staraman application server.
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+There are still companies out there that run applications in Perl using CGI. While it is a reasonable way to run small applications,
+there are a lot of benefits in moving to PSGI and running in an application server such as Starman.
+
+In this article we take a simple CGI script and we'll convert it to use PSGI. We also demonstrate how the old script runs as a plain CGI script,
+and how the new version can run both as a CGI script and loaded by the application server.
+
+=abstract end
+
+<h2>The layout of the project</h2>
+
+<code>
+.
+├── files
+│   ├── etc
+│   │   ├── apache2
+│   │   │   └── sites-enabled
+│   │   │       └── apache.conf
+│   │   └── systemd
+│   │       └── system
+│   │           └── starman.service
+│   └── var
+│       └── cgi-bin
+│           ├── app.cgi
+│           └── app.psgi
+├── Rexfile
+└── t
+    ├── cgi.t
+    └── psgi.t
+</code>
+
+<h2>The original CGI script</h2>
+
+<include file="examples/cgi-to-psgi/files/var/cgi-bin/app.cgi">
+
+<h2>Test for the CGI script</h2>
+
+<include file="examples/cgi-to-psgi/t/cgi.t">
+
+<h2>The PSGI version</h2>
+
+<include file="examples/cgi-to-psgi/files/var/cgi-bin/app.psgi">
+
+<h2>Test for the PSGI version</h2>
+
+<include file="examples/cgi-to-psgi/t/psgi.t">
+
+<h2>The Apache configuration file</h2>
+
+<include file="examples/cgi-to-psgi/file/etc/apache2/sites-enavled/apache.conf">
+
+<h2>The Systemd configuration file</h2>
+
+<include file="examples/cgi-to-psgi/file/etc/systemd/system/starman.service">
+
+
+<h2>The Rexfile to install it all</h2>
+
+<include file="examples/cgi-to-psgi/Rexfile">
+
+
