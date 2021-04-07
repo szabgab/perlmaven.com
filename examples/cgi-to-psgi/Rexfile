@@ -7,7 +7,7 @@ use Rex -feature => [qw( 1.4 exec_autodie)];
 # Set up Starman to run the PSGI without the CGI
 # Map Apache to be able to serve from Starman as well.
 
-group all => qw(206.189.239.162);
+group all => qw(206.189.232.135);
 user 'root';
 
 desc 'Just printing hostname';
@@ -20,6 +20,19 @@ task install_apache => sub {
     update_package_db;
     pkg 'apache2', ensure => 'present';
     service 'apache2', ensure => 'started';
+};
+
+desc 'Setup Apache';
+task setup_apache => sub {
+    file '/etc/apache2/sites-enabled/000-default.conf', ensure => 'absent';
+    file '/etc/apache2/sites-enabled/apache.conf',
+        source => 'files/etc/apache2/sites-enabled/apache.conf';
+
+    run('a2enmod cgid');
+    run('a2enmod proxy');
+    run('a2enmod proxy_http');
+
+    service 'apache2' => 'restart';
 };
 
 desc 'Setup CGI';
@@ -44,14 +57,6 @@ task setup_cgi => sub {
     };
     die "Could not run CGI script on the command line $@" if $@;
 
-    file '/etc/apache2/sites-enabled/000-default.conf', ensure => 'absent';
-    file '/etc/apache2/sites-enabled/apache.conf',
-        source => 'files/etc/apache2/sites-enabled/apache.conf';
-
-    run('a2enmod cgid');
-
-    service 'apache2' => 'restart';
-
     do_task('verify_cgi');
 };
 
@@ -69,6 +74,18 @@ task setup_psgi => sub {
 
     do_task('verify_psgi');
 };
+
+task setup_starman => sub {
+    for my $pkg (qw(starman)) {
+        pkg $pkg, ensure => 'present';
+    }
+
+    file '/etc/systemd/system/starman.service',
+        source => 'files/etc/systemd/system/starman.service';
+    service 'starman', ensure => 'started';
+    service 'starman', ensure => 'enabled';
+};
+
 
 task verify_cgi => sub {
     use LWP::UserAgent;
@@ -96,6 +113,34 @@ task verify_psgi => sub {
     die "Wrong output '$html_post'" if $html_post ne "Hello Foo\n";
 };
 
+task verify_starman => sub {
+    use LWP::UserAgent;
+    my $ua = LWP::UserAgent->new;
+    my $server = connection->server;
+    my $res_get = $ua->get("http://$server:81/cgi-bin/app.psgi?name=Foo");
+    my $html_get = $res_get->decoded_content;
+    die "Wrong output '$html_get'" if $html_get ne "Hello Foo\n";
+
+    my $res_post = $ua->post("http://$server:81/cgi-bin/app.psgi", {name => 'Foo' });
+    my $html_post = $res_post->decoded_content;
+    die "Wrong output '$html_post'" if $html_post ne "Hello Foo\n";
+};
+
+
+task setup => sub {
+    for my $task (qw(
+        install_apache
+        setup_apache
+        setup_cgi
+        setup_psgi
+        setup_starman
+        verify_cgi
+        verify_psgi
+        verify_starman
+        )) {
+        do_task($task);
+    }
+};
 
 
 # vim: syntax=perl

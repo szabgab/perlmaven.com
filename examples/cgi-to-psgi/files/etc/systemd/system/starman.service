@@ -1,0 +1,18 @@
+[Unit]
+Description=Starman
+
+[Service]
+# Environment=key=value
+
+Type=simple
+User=root
+Group=root
+ExecStart=starman --workers 3 --port 81 /var/cgi-bin/app.psgi
+Restart=always
+WorkingDirectory=/var/cgi-bin/
+Nice=19
+LimitNOFILE=16384
+
+[Install]
+WantedBy=multi-user.target
+
