@@ -18,5 +18,4 @@ use Capture::Tiny qw(capture);
     is_string $out, "Content-Type: text/html; charset=utf8\r\n\r\nHello Foo Bar\n";
 }
 
-
 done_testing;
