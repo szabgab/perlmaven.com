@@ -16,6 +16,20 @@ A <a href="https://code-maven.com/counter">counter example</a> using <a href="/d
 
 <include file="examples/dancer_counter_in_memory_sqlite.psgi">
 
+In order to run this you'll have to have <a href="https://metacpan.org/pod/Dancer2">Dancer2</a>, <a href="https://metacpan.org/pod/DBI">DBI</a>, and <a href="https://metacpan.org/pod/DBD::SQLite">DBD::SQLite</a> installed.
+
+<code>
+cpanm Dancer2 DBI DBD::SQLite
+</code>
+
+Then you can launch the development server:
+
+<code>
+plackup dancer_counter_in_memory_sqlite.psgi
+</code>
+
+and access the application via http://localhost:5000/
+
 This was an interesting example to write, but I am not sure what would be the value of having an in-memory database for something like this as this means the data won't survive a restart of the application-server.
 
 The data and the database is persistent among the requests that are served from the same process, but different processes will have different database (and in any real world situation you'll want to
