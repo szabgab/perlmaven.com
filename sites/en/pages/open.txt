@@ -1,0 +1,36 @@
+=title open a file in Perl
+=timestamp 2021-04-07T14:30:01
+=indexes open
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+Open for reading:
+
+<code>
+open my $fh, '<:encoding(utf8)', $filename or die "Could not open '$filename' $!"
+</code>
+
+=abstract end
+
+Open for writing:
+
+<code>
+open my $fh, '>:encoding(utf8)', $filename or die "Could not open '$filename' $!"
+</code>
+
+Open to append:
+
+<code>
+open my $fh, '>>:encoding(utf8)', $filename or die "Could not open '$filename' $!"
+</code>
+
+
+<ul>
+  <li><a href="/open-and-read-from-files">Open and read from file</a></li>
+  <li>Always use <a href="/always-use-3-argument-open">3-argument open</a></li>
+  <li>Never the <a href="/open-files-in-the-old-way">old way</a></li>
+</ol>
+
