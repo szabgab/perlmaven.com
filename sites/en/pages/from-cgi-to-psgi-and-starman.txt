@@ -4,14 +4,14 @@
 =status show
 =author szabgab
 =archive 1
-=description Moving from an old CGI application to Plack/PSGI in CGI mode and to running it in the Staraman application server.
+=description Moving from an old CGI application to Plack/PSGI in CGI mode and to running it in the Starman application server.
 =comments_disqus_enable 0
 =show_related 1
 
 =abstract start
 
 There are still some organizations out there that run applications written in Perl using plain old CGI. While it is a reasonable way to run small applications,
-there are a lot of benefits in moving to some of the new frameworks such ast <a href="/dancer">Perl Dancer</a> or <a href="/mojolicious">Mojolicious</a>.
+there are a lot of benefits in moving to some of the new frameworks such as <a href="/dancer">Perl Dancer</a> or <a href="/mojolicious">Mojolicious</a>.
 
 However that move might need a lot of changes to the code-base. An intermediate step, that can often be enough to reap a lot of the benefits, is to
 move to Plack/PSGI. That will make the code easier to test and it can be served by an application server such as <b> Starman</b>.
@@ -40,7 +40,7 @@ There are two test files in the t/ directory to verify the CGI and Plack/PSGI sc
 
 Finally there is the Rexfile that includes the deployment script.
 
-Of course you can use any other tool for deployment, but including the one I used makes it easier fo you to check the solution yourself and it was certainly easier
+Of course you can use any other tool for deployment, but including the one I used makes it easier for you to check the solution yourself and it was certainly easier
 for me to develop it.
 
 <code>
@@ -69,7 +69,7 @@ for me to develop it.
 
 The script used the CGI.pm module.
 
-It has two cases, if the parameter <b>pid<b> is passed to the server then it sends back the current process ID.
+It has two cases, if the parameter <b>pid</b> is passed to the server then it sends back the current process ID.
 We are using this to show that a CGI script will create a new process on every invocation.
 
 The second case is when pid is not supplied. The user can send a parameter called <b>name</b> with some content and the "application" will echo it back prefixing it with the word "Hello".
@@ -116,7 +116,7 @@ You can also try <b>http://0.0.0.0:5000/?name=Foo</b> and also <b>http://0.0.0.0
 
 <include file="examples/cgi-to-psgi/t/psgi.t">
 
-This is the test script for the PSGI version. We usr load_psgi to load our application in the memory of the test script.
+This is the test script for the PSGI version. We use load_psgi to load our application in the memory of the test script.
 From that we create a test-object and then we use the test-object to send in various requests.
 
 These tests demonstrate that it is quite easy to send in different date to a GET and a POST request and then to verify the results.
@@ -143,7 +143,7 @@ CGI version and for running the PSGI version in CGI mode.
 This configuration file is needed to create a Starman service (or Daemon as it is usually called in the Unix/Linux world).
 
 It has instruction on how to run the starman command. In this version Starman is configured to listen on port 81 for all the traffic.
-This makes it easier to debug, but not a recommended choics for production.
+This makes it easier to debug, but not a recommended choice for production.
 
 On a real production environment it would either only listen to requests coming from the localhost or it would use a socket.
 
@@ -166,7 +166,7 @@ rex -g all setup
 
 It takes a few minutes till it installs everything, but then it also verifies the installation.
 
-I've added some comments to the Rexfile, basically we excute the "setup" task that will execute all the other tasks in a given order.
+I've added some comments to the Rexfile, basically we execute the "setup" task that will execute all the other tasks in a given order.
 
 
 <h2>Verify the results</h2>
@@ -190,7 +190,7 @@ http://IP:81?name=Foo Bar
 http://IP/starman/?name=Foo Bar
 </code>
 
-To check the persistency of the Plackup/PSGI/Starman solution vs. the CGI-mode solution try the following requets.
+To check the persistence of the Plackup/PSGI/Starman solution vs. the CGI-mode solution try the following requests.
 Try to reload each one several times. The first 2 will show an always changing (growing) number as each request is handled
 by a separate process.
 
