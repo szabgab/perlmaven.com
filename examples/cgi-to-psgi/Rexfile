@@ -1,13 +1,13 @@
 use Rex -feature => [qw( 1.4 exec_autodie)];
 
 # Plan:
-# Setup Apache
-# Add a simple CGI script written in Perl using CGI.pm (maybe even one parsing $ENV{QUERY_STRING}
-# Convert the script to use PSGI and run it as CGI
-# Set up Starman to run the PSGI without the CGI
-# Map Apache to be able to serve from Starman as well.
+# Setup and configure Apache
+# Add a simple CGI script written in Perl using CGI.pm
+# Convert the script to use PSGI and run it as CGI.
+# Set up Starman to run the PSGI without the CGI.
+# Map Apache as a reverse proxy to be able to serve from Starman as well.
 
-group all => qw(206.189.232.135);
+group all => qw(142.93.61.85);
 user 'root';
 
 desc 'Just printing hostname';
@@ -75,6 +75,7 @@ task setup_psgi => sub {
     do_task('verify_psgi');
 };
 
+desc 'Install Starman and configure it as a service';
 task setup_starman => sub {
     for my $pkg (qw(starman)) {
         pkg $pkg, ensure => 'present';
@@ -82,11 +83,13 @@ task setup_starman => sub {
 
     file '/etc/systemd/system/starman.service',
         source => 'files/etc/systemd/system/starman.service';
+
     service 'starman', ensure => 'started';
     service 'starman', ensure => 'enabled';
 };
 
 
+desc 'Access the CGI script through the public URL';
 task verify_cgi => sub {
     use LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
@@ -100,6 +103,7 @@ task verify_cgi => sub {
     die "Wrong output '$html_post'" if $html_post ne "Hello Foo\n";
 };
 
+desc 'Access the PSGI script in CGI mode';
 task verify_psgi => sub {
     use LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
@@ -113,10 +117,12 @@ task verify_psgi => sub {
     die "Wrong output '$html_post'" if $html_post ne "Hello Foo\n";
 };
 
+desc 'Access the PSGI script via Starman';
 task verify_starman => sub {
     use LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
     my $server = connection->server;
+
     my $res_get = $ua->get("http://$server:81/cgi-bin/app.psgi?name=Foo");
     my $html_get = $res_get->decoded_content;
     die "Wrong output '$html_get'" if $html_get ne "Hello Foo\n";

@@ -8,13 +8,18 @@ my $app = sub {
     my $env = shift;
 
     my $request = Plack::Request->new($env);
-    my $name = $request->param('name') || '';
+    my $html;
+    if ($request->param('pid')) {
+        $html = $$;
+    } else {
+        my $name = $request->param('name') || '';
+        $html = "Hello $name\n";
+    }
 
     return [
       '200',
       [ 'Content-Type' => 'text/html; charset=utf8' ],
-      [ "Hello $name\n" ],
+      [ $html ],
     ];
 };
 
-# plackup files/var/cgi-bin/app.psgi

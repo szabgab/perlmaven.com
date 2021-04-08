@@ -6,7 +6,12 @@ use CGI qw(-utf8);
 my $q = CGI->new;
 print $q->header(-charset => 'utf8');
 
-my $name = $q->param('name') || '';
+my $html;
+if ($q->param('pid')) {
+    $html = $$;
+} else {
+    my $name = $q->param('name') || '';
+    $html = "Hello $name\n";
+}
 
-print "Hello $name\n";
-
+print $html;
