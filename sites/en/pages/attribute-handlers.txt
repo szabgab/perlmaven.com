@@ -29,7 +29,7 @@ After sum(-1, 1, 7) resulting in: (7)
 
 The Wrap function is marked to be a attribute handler for subroutines (CODE).
 
-Inside we create a new anonymous subroutin and assign it to the variable <b>$new</b> and the replace (redefine)
+Inside we create a new anonymous subroutine and assign it to the variable <b>$new</b> and the replace (redefine)
 the original function with this new function.
 
 Inside the new function we call the original function by
@@ -40,13 +40,13 @@ my @results = $referent->(@_);
 
 Before that we execute some code then after the original function returned we execute some code.
 
-Then there is a totally ordenary function called "sub" that is marked with our new "Wrap".
+Then there is a totally ordinary function called "sub" that is marked with our new "Wrap".
 
 Now every time we call <b>sum()</b> our "$new" function is going to be called.
 
-<h2>Separating Attrbute to module</h2>
+<h2>Separating Attribute to module</h2>
 
-Probbaly you'd like to make your wrapper more reusable and move it out to a module:
+Probably you'd like to make your wrapper more reusable and move it out to a module:
 
 <include file="examples/attributes/MyWrapper.pm">
 
@@ -91,7 +91,7 @@ After fibonacci(4) resulting in: (2)
 
 Another example is a wrapper that measures the elapsed time in the real function.
 
-<includd file="examples/attributes/MyTimer.pm">
+<include file="examples/attributes/MyTimer.pm">
 
 This is how we use it:
 
