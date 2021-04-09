@@ -19,8 +19,10 @@ Perl gives access to the environment variables via the <b>%ENV</b> hash.
 
 =abstract end
 
-As examples <a href="https://docs.docker.com/compose/env-file/">Docker</a> and <a href="https://laravel.com/docs/8.x/configuration">Laravel</a> both make use of the file
-and apparently Philippe Bruhat (BooK) already crated a module called <a href="https://metacpan.org/pod/Dotenv">Dotenv</a> that handles this.
+As examples <a href="https://docs.docker.com/compose/env-file/">Docker</a> and <a href="https://laravel.com/docs/8.x/configuration">Laravel</a> both make use of the file.
+Even <a href="https://www.ibm.com/docs/en/aix/7.2?topic=files-env-file">IBM has it in AIX</a>.
+
+Apparently Philippe Bruhat (BooK) already crated a module called <a href="https://metacpan.org/pod/Dotenv">Dotenv</a> that handles this.
 
 Here is a script that uses it and then prints out the content of th whole <b>%ENV</b> hash and then two specific values.
 
