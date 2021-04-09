@@ -15,7 +15,7 @@ I encountered <b>Invalid CODE attribute</b> error quite a few times while trying
 
 In a basic case this would happen if you try to set an attribute on a function that has not been declared.
 
-The obvious case is this:
+The obvious case is this, when we have not declared the <b>Wrap</b> attribute in the code:
 
 <include file="examples/attributes/wrap.pl">
 
