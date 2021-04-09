@@ -1,12 +1,9 @@
 =title .env - the dot env application configuration file
 =timestamp 2021-01-01T07:30:01
 =indexes Dotenv, .env, %ENV, $ENV
-=status draft
-=tags screencast
-=books dancer
+=status show
 =author szabgab
 =archive 1
-=description
 =comments_disqus_enable 0
 =show_related 1
 
