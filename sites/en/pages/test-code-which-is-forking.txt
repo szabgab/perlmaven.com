@@ -1,0 +1,47 @@
+=title Test code which is using fork
+=timestamp 2021-04-09T12:30:01
+=indexes fork, Test::More
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+There are cases when you have some code using <b>fork</b> the question arises how to test them.
+
+Here is a simple example:
+
+=abstract end
+
+The application that is forking:
+
+<include file="examples/test-fork/MyApp.pm">
+
+The code to use it:
+
+<include file="examples/test-fork/use_my_app.pl">
+
+Run it as
+
+<code>
+perl -I. use_my_app.pl
+</code>
+
+To turn on debug printing run it like this:
+
+<code>
+DEBUG=1 perl -I. use_my_app.pl
+</code>
+
+Here is a test script:
+
+<include file="examples/test-fork/test.t">
+
+Run it as:
+
+<code>
+prove -I. test.t
+</code>
+
