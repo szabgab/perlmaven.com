@@ -1,0 +1,45 @@
+=title Attribute::Handlers to wrap a function
+=timestamp 2021-04-09T11:30:01
+=indexes Attribute::Handlers
+=status show
+=author szabgab
+=archive 1
+=description Attribute Handlers in Perl are like decorators in Python
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Attribute Handlers in Perl are like decorators in Python
+
+=abstract end
+
+<include file="examples/attributes/wrap_function.pl">
+
+Output:
+
+<code>
+Before sum(2, 3)
+After sum(2, 3) resulting in: (5)
+5
+Before sum(-1, 1, 7)
+After sum(-1, 1, 7) resulting in: (7)
+7
+</code>
+
+The Wrap function is marked to be a attribute handler for subroutines (CODE).
+
+Inside we create a new anonymous subroutin and assign it to the variable <b>$new</b> and the replace (redefine)
+the original function with this new function.
+
+Inside the new function we call the original function by
+
+<code>
+my @results = $referent->(@_);
+</code>
+
+Before that we execute some code then after the original function returned we execute some code.
+
+Then there is a totally ordenary function called "sub" that is marked with our new "Wrap".
+
+Now every time we call <b>sum()</b> our "$new" function is going to be called.
