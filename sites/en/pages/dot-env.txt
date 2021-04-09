@@ -1,0 +1,70 @@
+=title .env - the dot env application configuration file
+=timestamp 2021-01-01T07:30:01
+=indexes Dotenv, .env, %ENV, $ENV
+=status draft
+=tags screencast
+=books dancer
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+There are a numeber of frameworks and applications that check if there is a <b>.env</b> file in the root directory
+of the project and if there is one, then load it to enhance the content of the Environment variables.
+
+Perl gives access to the environment variables via the <b>%ENV</b> hash.
+
+=abstract end
+
+As examples <a href="https://docs.docker.com/compose/env-file/">Docker</a> and <a href="https://laravel.com/docs/8.x/configuration">Laravel</a> both make use of the file
+and apparently Philippe Bruhat (BooK) already crated a module called <a href="https://metacpan.org/pod/Dotenv">Dotenv</a> that handles this.
+
+Here is a script that uses it and then prints out the content of th whole <b>%ENV</b> hash and then two specific values.
+
+<include file="examples/env/app.pl">
+
+Here is the config file that consists of plain <b>key=value</b> pairs.
+
+<include file="examples/env/.env">
+
+I use variable names starting with an X so thei will be printed last when I print the %ENV in ABC order. Otherwise there is nothing special about them.
+
+Running
+<code>
+perl app.pl
+</code>
+
+will print out:
+
+<code>
+...
+X_ANSWER                   42
+X_TEXT                     left side = right side
+_                          /usr/bin/perl
+-------------------------
+42
+left side = right side
+</code>
+
+
+Rmember thatDoteenv will not overwrite existing keys, so if you already have an environment variable in your, well, environment,
+then Dotenv will keeep that value. This means you can also change the value ad-hoc when running the application:
+
+<code>
+X_ANSWER=23 perl app.pl
+</code>
+
+<code>
+...
+X_ANSWER                   23
+X_TEXT                     left side = right side
+_                          /usr/bin/perl
+-------------------------
+23
+left side = right side
+</code>
+
+
