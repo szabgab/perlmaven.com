@@ -9,7 +9,9 @@ open my $fh, '>', $filename or die;
 say -s $filename; # 0
 
 if ($autoflush) {
-    $fh->autoflush;
+    my $old = select $fh;
+    $| = 1;
+    select $old;
 }
 
 print $fh "Hello World\n";

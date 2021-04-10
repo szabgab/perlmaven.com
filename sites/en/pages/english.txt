@@ -26,4 +26,5 @@ That will avoid the inclusion of some of the regex-related variables that slowed
 
 <ul>
     <li><a href="/process-id">$$ - $PROCESS_ID - $PID</a></li>
+    <li><a href="/output-autoflush">$| - $OUTPUT_AUTOFLUSH</a><li>
 </ul>
