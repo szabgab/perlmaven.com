@@ -1,4 +1,4 @@
-=title Perl On-liner: countdown on the command line:
+=title Perl One-liner: countdown on the command line:
 =timestamp 2021-04-10T10:30:01
 =indexes Perl, $|
 =status show
