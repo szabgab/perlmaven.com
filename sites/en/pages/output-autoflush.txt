@@ -44,6 +44,8 @@ so the text arrives in the same order as it was sent in.
 
 <h2>Autoflush to a file</h2>
 
+In this example you will see how to use <b>$|</b> to set autoflush on a filehandle, but a better, and more modern way is to use the <a href="/autoflush</a> method of the filehandle.
+
 <include file="examples/autoflush_select.pl">
 
 By default a filehandle is buffered. In this example we use the <b>select</b> keyword to change the "current default output channel",
@@ -68,4 +70,5 @@ First time we run it without <b>autoflush</b> being on and as you can see the fi
 
 The second time we turn <b>buffering</b> off on the filehandle using <b>select</b> and <b>$|</a> and thus after every <b>print</b> statement we see the file growing.
 
+<a href="https://metacpan.org/pod/perlvar#OUTPUT_AUTOFLUSH">documentation</a>
 

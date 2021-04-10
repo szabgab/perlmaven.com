@@ -1,0 +1,33 @@
+=title Perl On-liner: countdown on the command line:
+=timestamp 2021-04-10T10:30:01
+=indexes Perl, $|
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+This one-line written in Perl will show a coundown on the command line: Try it.
+
+=abstract end
+
+<img src="static/img/countdown.gif" alt="countdown">
+
+<code>
+perl -e '$|=1; print "hi\n"; $sec = 180; while ($sec--) { printf "Starting in %3s seconds\r", $sec; sleep 1 }'
+</code>
+
+Explanation:
+
+<ul>
+   <li>-e tells perl to execute the string following it as perl code</li>
+   <li><a href="/output-autoflush">$| = 1;</a> tells perl to avoid buffering STDOUT, that is to make every print arrive to the screen immediately</li>
+   <li><b>print "hi\n";</b> there only to be nice</li>
+   <li><b>$sec = 180;</b> sets the timer in seconds.</li>
+   <li>The key however is that we print <b>\r</b> carrige return at the each of each print instead of <b>\n</b> newline. This each print overwrite the output of the previous one creating the effect of only the counter number changing.</li>
+</ul>
+
+<img src="static/img/countdown_wide.gif" alt="wide screen countdown">
+
