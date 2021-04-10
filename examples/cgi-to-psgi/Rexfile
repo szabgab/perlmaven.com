@@ -7,7 +7,7 @@ use Rex -feature => [qw( 1.4 exec_autodie)];
 # Set up Starman to run the PSGI without the CGI.
 # Map Apache as a reverse proxy to be able to serve from Starman as well.
 
-group all => qw(142.93.61.85);
+group all => qw(104.131.31.71);
 user 'root';
 
 desc 'Just printing hostname';
@@ -16,14 +16,14 @@ task 'print_hostname', sub {
 };
 
 desc 'Install Apache';
-task install_apache => sub {
+task 'install_apache', sub {
     update_package_db;
     pkg 'apache2', ensure => 'present';
     service 'apache2', ensure => 'started';
 };
 
 desc 'Setup Apache';
-task setup_apache => sub {
+task 'setup_apache',  sub {
     file '/etc/apache2/sites-enabled/000-default.conf', ensure => 'absent';
     file '/etc/apache2/sites-enabled/apache.conf',
         source => 'files/etc/apache2/sites-enabled/apache.conf';
@@ -32,11 +32,12 @@ task setup_apache => sub {
     run('a2enmod proxy');
     run('a2enmod proxy_http');
 
+    # TODO collect information if the files were changed and if modules had to be enabled and only restart if something really changed.
     service 'apache2' => 'restart';
 };
 
 desc 'Setup CGI';
-task setup_cgi => sub {
+task 'setup_cgi', sub {
     # mkdir
     file '/var/cgi-bin', ensure => 'directory';
 
@@ -45,10 +46,9 @@ task setup_cgi => sub {
         source => 'files/var/cgi-bin/app.cgi',
         mode => '0755';
 
-    # install  CGI.pm
-    for my $pkg (qw(libcgi-pm-perl)) {
-        pkg $pkg, ensure => 'present';
-    }
+    # install CGI.pm
+    my $packages = ['libcgi-pm-perl'];
+    pkg $packages, ensure => 'present';
 
     # Verify that we can run /var/cgi-bin/app.cgi
     eval {
@@ -56,41 +56,34 @@ task setup_cgi => sub {
         die "Wrong output $out" if index($out, 'Content-Type: text/html; charset=utf8') < 0;
     };
     die "Could not run CGI script on the command line $@" if $@;
-
-    do_task('verify_cgi');
 };
 
 desc 'Setup PSGI as CGI';
-task setup_psgi => sub {
+task 'setup_psgi', sub {
     #copy file, set mode
     file '/var/cgi-bin/app.psgi',
         source => 'files/var/cgi-bin/app.psgi',
         mode => '0755';
 
     # install  Plack
-    for my $pkg (qw(libplack-perl)) {
-        pkg $pkg, ensure => 'present';
-    }
-
-    do_task('verify_psgi');
+    my $packages =  ['libplack-perl'];
+    pkg $packages, ensure => 'present';
 };
 
 desc 'Install Starman and configure it as a service';
-task setup_starman => sub {
-    for my $pkg (qw(starman)) {
-        pkg $pkg, ensure => 'present';
-    }
+task 'setup_starman', sub {
+    my $packages = ['starman'];
+    pkg $packages, ensure => 'present';
 
     file '/etc/systemd/system/starman.service',
         source => 'files/etc/systemd/system/starman.service';
 
     service 'starman', ensure => 'started';
-    service 'starman', ensure => 'enabled';
 };
 
 
 desc 'Access the CGI script through the public URL';
-task verify_cgi => sub {
+task 'verify_cgi', sub {
     use LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
     my $server = connection->server;
@@ -104,7 +97,7 @@ task verify_cgi => sub {
 };
 
 desc 'Access the PSGI script in CGI mode';
-task verify_psgi => sub {
+task 'verify_psgi', sub {
     use LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
     my $server = connection->server;
@@ -118,7 +111,7 @@ task verify_psgi => sub {
 };
 
 desc 'Access the PSGI script via Starman';
-task verify_starman => sub {
+task 'verify_starman', sub {
     use LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
     my $server = connection->server;
@@ -133,7 +126,7 @@ task verify_starman => sub {
 };
 
 
-task setup => sub {
+task 'setup', sub {
     for my $task (qw(
         install_apache
         setup_apache
@@ -144,7 +137,7 @@ task setup => sub {
         verify_psgi
         verify_starman
         )) {
-        do_task($task);
+        do_task($task); # run task?, batch
     }
 };
 
