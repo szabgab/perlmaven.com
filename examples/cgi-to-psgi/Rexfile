@@ -85,7 +85,7 @@ task 'setup_starman', sub {
 
 
 desc 'Access the CGI script through the public URL';
-task 'verify_cgi', sub {
+no_ssh task 'verify_cgi', sub {
     use LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
     my $server = connection->server;
@@ -99,7 +99,7 @@ task 'verify_cgi', sub {
 };
 
 desc 'Access the PSGI script in CGI mode';
-task 'verify_psgi', sub {
+no_ssh task 'verify_psgi', sub {
     use LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
     my $server = connection->server;
@@ -113,7 +113,7 @@ task 'verify_psgi', sub {
 };
 
 desc 'Access the PSGI script via Starman';
-task 'verify_starman', sub {
+no_ssh task 'verify_starman', sub {
     use LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
     my $server = connection->server;
