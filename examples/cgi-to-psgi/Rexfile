@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 use Rex -feature => [qw( 1.4 exec_autodie)];
 
 # Plan:
@@ -116,13 +118,29 @@ task 'verify_starman', sub {
     my $ua = LWP::UserAgent->new;
     my $server = connection->server;
 
-    my $res_get = $ua->get("http://$server:81/cgi-bin/app.psgi?name=Foo");
-    my $html_get = $res_get->decoded_content;
-    die "Wrong output '$html_get'" if $html_get ne "Hello Foo\n";
+    {
+        my $res_get = $ua->get("http://$server:81?name=Foo");
+        my $html_get = $res_get->decoded_content;
+        die "Wrong output '$html_get'" if $html_get ne "Hello Foo\n";
+    }
 
-    my $res_post = $ua->post("http://$server:81/cgi-bin/app.psgi", {name => 'Foo' });
-    my $html_post = $res_post->decoded_content;
-    die "Wrong output '$html_post'" if $html_post ne "Hello Foo\n";
+    {
+        my $res_post = $ua->post("http://$server:81", {name => 'Foo' });
+        my $html_post = $res_post->decoded_content;
+        die "Wrong output '$html_post'" if $html_post ne "Hello Foo\n";
+    }
+
+    {
+        my $res_get = $ua->get("http://$server/starman/?name=Foo");
+        my $html_get = $res_get->decoded_content;
+        die "Wrong output '$html_get'" if $html_get ne "Hello Foo\n";
+    }
+
+    {
+        my $res_post = $ua->post("http://$server/starman/", {name => 'Foo' });
+        my $html_post = $res_post->decoded_content;
+        die "Wrong output '$html_post'" if $html_post ne "Hello Foo\n";
+    }
 };
 
 
