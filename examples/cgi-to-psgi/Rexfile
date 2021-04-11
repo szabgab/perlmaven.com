@@ -30,9 +30,11 @@ task 'setup_apache',  sub {
     file '/etc/apache2/sites-enabled/apache.conf',
         source => 'files/etc/apache2/sites-enabled/apache.conf';
 
-    run('a2enmod cgid');
-    run('a2enmod proxy');
-    run('a2enmod proxy_http');
+    for my $module (qw(cgid proxy proxy_http)) {
+        a2enmod($module);
+
+    }
+
 
     # TODO collect information if the files were changed and if modules had to be enabled and only restart if something really changed.
     service 'apache2' => 'restart';
@@ -159,5 +161,9 @@ task 'setup', sub {
     }
 };
 
+sub a2enmod {
+    my ($module) = @_;
+    run("a2enmod $module", unless => qq{apache2ctl -M | grep -P '\\b$module\\b'});
+}
 
 # vim: syntax=perl
