@@ -10,7 +10,7 @@
 
 =abstract start
 
-In this live session Sawyer X and myself will be creating a Perl binding to a C library using FFI.
+In this live session <a href="https://github.com/xsawyerx">Sawyer X</a> and myself will be creating a Perl binding to a C library using FFI.
 
 =abstract end
 
