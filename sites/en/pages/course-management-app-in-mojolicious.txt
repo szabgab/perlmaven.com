@@ -14,11 +14,11 @@
 In my <a href="https://code-maven.com/courses">training course</a> I give exercises to my students. They can (and in some of these course they must) submit them.
 I can then review them and give comments. I would like to have a web application to keep track of all the exercises and the submission.
 
-In this experimental project <a href="https://phoenixtrap.com/">Mark Gardner</a> and myself will develop this application using Driver-Navigator live pair programming.
-
+In this experimental project <a href="https://phoenixtrap.com/">Mark Gardner</a> and myself will develop this application using live pair programming.
 
 =abstract end
 
+<!--
 Part 2 is scheduled for April 11: 18:00 Israel check out your time on the registration page.
 
 (it was moved from Arpil 4)
@@ -26,6 +26,8 @@ Part 2 is scheduled for April 11: 18:00 Israel check out your time on the regist
 <a class="btn btn-lg btn-success" href="https://us02web.zoom.us/meeting/register/tZEvf-6pqjsrHdFJKQkP-cDG74BSaNSGmCxC">Register here</a>
 
 (If you registered to the first event you are already registered to this one as well.)
+
+-->
 
 Use this link to include the the schedule in your calendar: <a href="https://code-maven.com/events.ics">https://code-maven.com/events.ics</a>.
 
@@ -36,7 +38,7 @@ That will evolve.
 A system to handle exercise submissions and reviews.
 
 <ul>
-    <li>Admin can create (schedule) a course. (CLI is acceptable)<li>
+    <li>Admin can create (schedule) a course. (CLI is acceptable)</li>
     <li>Admin can add a list of exercises to a course. An exercise can be just a link a page to the appropriate <a href="https://code-maven.com/slides/">slide</a>. (Some of them might be marked as mandatory.) (CLI is acceptable)</li>
     <li>Admin can add names and email addresses, and associate them with a course. (Same user might come back to another course. That should be possible.) (CLI is acceptable)</li>
     <li>Students can log in using the email address and a one-time code they get to the email that will keep them logged in for 24 hours from the last time they accessed the page. I think there is no need to store and manage passwords.</li>
@@ -54,21 +56,12 @@ A system to handle exercise submissions and reviews.
 
 <ul>
     <li><a href="https://github.com/szabgab/course-management">Git Repository</a></li>
-    <li><a href="https://docs.mojolicious.org/Mojo/File">Mojo::File</a></li>
-    <li><a href="https://stackoverflow.com/questions/10152973/how-upload-file-using-mojolicious">How Upload file using Mojolicious?</a></li>
-    <li><a href="https://docs.mojolicious.org/Mojo/Upload">Mojo::Upload</a></li>
-    <li><a href="https://docs.mojolicious.org/Mojolicious/Routes/Route">Mojolicious::Routes::Route</a></li>
-    <li><a href="https://mojolicious.io/blog/2017/12/02/day-2-the-stash/">The Stash</a></li>
-    <li><a href="https://docs.mojolicious.org/Mojolicious/Plugin/NotYAMLConfig">NotYAMLConfig</a></li>
 </ul>
 
-<code>
-perl -MMojolicious -E 'say $Mojolicious::VERSION'
-cpanm Mojolicious
-
-mojo generate app Course::Management
-perl script/course_management daemon
-morbo script/course_management
-</code>
-
-<screencast file="mojolicious-1-1920x1080.mp4" youtube="_AInPp-dneQ" />
+<ul>
+    <li><a href="/course-management-app-in-mojolicious-1">Part 1</a></li>
+<!--
+    <li><a href="/course-management-app-in-mojolicious-2">Part 2</a></li>
+    <li><a href=""></a></li>
+-->
+</ul>
