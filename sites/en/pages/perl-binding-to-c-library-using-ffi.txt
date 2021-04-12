@@ -1,0 +1,24 @@
+=title Creating a Perl binding to a C library using FFI with Sawyer X
+=timestamp 2021-04-12T10:30:01
+=indexes FFI, live
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+In this live session Sawyer X and myself will be creating a Perl binding to a C library using FFI.
+
+=abstract end
+
+Date: 2021.04.18 at 19:00 Jerusalem.
+
+<a class="btn btn-lg btn-success" href="https://us02web.zoom.us/meeting/register/tZcpdeqgrjooHtQftuuWiIifgTt8S8hmaSim">Register here</a>
+
+Check out all the other <a href="https://code-maven.com/live">live</a> events and the calendar where you'll be able to see the time given in your time-zone.
+
+
