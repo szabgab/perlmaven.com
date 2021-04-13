@@ -60,8 +60,8 @@ A system to handle exercise submissions and reviews.
 
 <ul>
     <li><a href="/course-management-app-in-mojolicious-1">Part 1</a></li>
-<!--
     <li><a href="/course-management-app-in-mojolicious-2">Part 2</a></li>
+<!--
     <li><a href=""></a></li>
 -->
 </ul>
