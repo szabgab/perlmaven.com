@@ -1,5 +1,5 @@
 =title Course Management Application in Mojolicious
-=timestamp 2021-03-18T17:30:01
+=timestamp 2021-04-13T17:30:01
 =indexes Mojolicous
 =status show
 =books mojolicious
@@ -18,16 +18,13 @@ In this experimental project <a href="https://phoenixtrap.com/">Mark Gardner</a>
 
 =abstract end
 
-<!--
-Part 2 is scheduled for April 11: 18:00 Israel check out your time on the registration page.
+Part 3 is scheduled for April 18: 18:00 Israel check out your time on the registration page.
 
-(it was moved from Arpil 4)
+Part 5 is scheduled for April 25: 18:00 Israel check out your time on the registration page.
 
 <a class="btn btn-lg btn-success" href="https://us02web.zoom.us/meeting/register/tZEvf-6pqjsrHdFJKQkP-cDG74BSaNSGmCxC">Register here</a>
 
 (If you registered to the first event you are already registered to this one as well.)
-
--->
 
 Use this link to include the the schedule in your calendar: <a href="https://code-maven.com/events.ics">https://code-maven.com/events.ics</a>.
 
