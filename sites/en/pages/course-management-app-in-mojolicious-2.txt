@@ -1,7 +1,8 @@
-=title Course Management Application in Mojolicious
+=title Course Management Application in Mojolicious - part 2
 =timestamp 2021-04-13T09:30:01
 =indexes Mojolicous
 =status show
+=tags screencast
 =books mojolicious
 =author szabgab
 =archive 1
