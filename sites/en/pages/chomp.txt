@@ -37,12 +37,10 @@ in the current operating system.
 
 In order to do this, Perl maintains a variable called the <b>Input Record Separator</b>.
 In native Perl this is the <hl>$/</hl> variable, but if you use the
-<a href="https://metacpan.org/pod/English">>English</a> module
+<a href="https://metacpan.org/pod/English">English</a> module
 you can use the name <hl>$INPUT_RECORD_SEPARATOR</hl> or <hl>$RS</hl> as well.
-This variable contains the characters that mean "new-line" in the current operating system.
+This variable contains <hl>LF</hl> (ASCII character 10).
 
-That is, it will hold a <hl>LF</hl> character when running on OSX/Unix/Linux, and it will
-hold <hl>CRLF</hl> character-pair when running on Windows.
 
 <h2>chomp</h2>
 
