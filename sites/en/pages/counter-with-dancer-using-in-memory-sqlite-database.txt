@@ -36,3 +36,5 @@ The data and the database is persistent among the requests that are served from 
 have more than one process) and if you need to restart the application server (e.g. Starman) then you will lose all the data.
 
 An external caching used by the application might make more sense.
+
+Using Redis for example provides persistence as well as atomic updates of the counter for performance via blocking incr().
