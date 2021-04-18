@@ -37,4 +37,4 @@ have more than one process) and if you need to restart the application server (e
 
 An external caching used by the application might make more sense.
 
-Using Redis for example provides persistence as well as atomic updates of the counter for performance via blocking incr().
+<a href="/counter-dancer2-redis-docker">Using Redis</a> for example provides persistence as well as atomic updates of the counter for performance via blocking incr().
