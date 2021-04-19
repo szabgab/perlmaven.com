@@ -4,9 +4,8 @@ use DigitalOcean;
 use Data::Dumper qw(Dumper);
 use Getopt::Long qw(GetOptions);
 
-# Visit https://cloud.digitalocean.com/account/api/tokens to Generate a new Token
-
 main();
+exit();
 
 sub main {
     eval {
@@ -17,10 +16,16 @@ sub main {
     my $token = $ENV{DIGITAL_OCEAN_TOKEN};
     my $list;
     my $dump;
+    my $create;
+    my $droplet;
     GetOptions(
         'token=s' => \$token,
         'list=s'  => \$list,
         'dump'    => \$dump,
+
+        'droplet=s' => \$droplet,
+
+        'create'  => \$create,
     ) or usage();
 
     usage("We need a token") if not $token;
@@ -28,51 +33,67 @@ sub main {
     my $do = DigitalOcean->new(oauth_token => $token, wait_on_actions => 1);
     if ($list) {
         if ($list eq 'sizes') {
-            my $sizes_collection = $do->sizes;
             # TODO could we easily sort them by name or by size or by price?
-            while (my $obj = $sizes_collection->next) {
-                if ($dump) {
-                    print Dumper $obj;
-                    exit;
-                }
-                print $obj->slug, "\n"; # no name method here
-            }
+            list($do->sizes, $dump, ['slug']); # no name method here
         } elsif ($list eq 'images') {
-            my $images_collection = $do->images;
-            while (my $obj = $images_collection->next) {
-                if ($dump) {
-                    print Dumper $obj;
-                    exit;
-                }
-                printf "%s  %s\n", $obj->slug, $obj->name;
-            }
+            list($do->images, $dump, ['slug', 'name']);
         } elsif ($list eq 'regions') {
-            my $regions_collection = $do->regions;
-            while (my $obj = $regions_collection->next) {
-                if ($dump) {
-                    print Dumper $obj;
-                    exit;
-                }
-                printf "%s  %s\n", $obj->slug, $obj->name;
-            }
+            list($do->regions, $dump, ['slug', 'name']);
+        } elsif ($list eq 'ssh') {
+            list($do->ssh_keys, $dump, ['name', 'id']);
+        } elsif ($list eq 'droplets') {
+            list($do->droplets, $dump, ['name', 'id']);
         } else {
             usage("Incorrect --list value '$list'");
         }
+    } elsif ($droplet) {
+        my $droplet_obj = $do->droplet($droplet);
+        print $droplet_obj->name, "\n";
+        print $droplet_obj->created_at, "\n";
+        #print Dumper $droplet_obj->DigitalOcean;
+        #print Dumper $droplet_obj;
+        for my $network (@{ $droplet_obj->networks->v4 }) {
+            print $network->type, "\n";
+            print $network->ip_address, "\n";
+        }
+    } elsif ($create) {
+        my $size_id = 's-1vcpu-1gb';
+        my $image_id = 'ubuntu-20-04-x64'; # 72067660   20.04 (LTS) x64';
+        my $region_id = 'nyc1';
+        my $ssh_id = '24064194';
+
+        # This Will print "going to wait" then "waiting" several times then "comlete"
+        # TODO how to stop it?
+        # TODO how to get the IP address and the ssh signature of the server?
+        # TODO set ssh
+        my $response = $do->create_droplet(
+            name => 'demo',
+            size => $size_id,
+            image => $image_id,
+            region => $region_id,
+            ssh_keys => [$ssh_id],
+            backups => 0,
+            ipv6 => 0,
+            private_networking => 0,
+            wait_on_event => 1,
+        );
+        print Dumper $response;
     }
-    if (0) {
-        # Will print "going to wait" then "waiting" several times then "comlete"
-        #my $size_id = 's-1vcpu-1gb';
-        #my $image_id = 'ubuntu-20-04-x64'; # 72067660   20.04 (LTS) x64';
-        #my $region_id = 'nyc1';
-        #
-        #my $droplet = $do->create_droplet(
-        #    name => 'demo',
-        #    size => $size_id,
-        #    image => $image_id,
-        #    region => $region_id,
-        #    wait_on_event => 1,
-        #);
-        #print Dumper $droplet;
+}
+
+sub list {
+    my ($collection, $dump, $fields) = @_;
+
+    while (my $obj = $collection->next) {
+        if ($dump) {
+            print Dumper $obj;
+            exit;
+        }
+        my $str = '';
+        for my $field (@$fields) {
+            $str .= $obj->$field . '   ';
+        }
+        print "$str\n";
     }
 }
 
@@ -81,9 +102,12 @@ sub usage {
     print "$msg\n\n" if $msg;
     print qq{
 Usage: $0
-         --token TOKEN
-         --list [sizes|images|regions]
-         --dump         Dump the first listed structure and exit
+        --token TOKEN
+        --list [sizes|images|regions|ssh|droplets]
+        --dump         Dump the first listed structure and exit
+
+        --droplet ID     (returned by --list droplets)
+        --create      Create a droplet with fixed definitions
 
 You can supply the token either on the command line or as an environment variable DIGITAL_OCEAN_TOKEN
 or by saving it in the .env file as
