@@ -58,6 +58,7 @@ A system to handle exercise submissions and reviews.
     <li><a href="/exploring-bdd-in-perl-5">BDD - Describing the project using Cucumber</a></li>
     <li><a href="/course-management-app-in-mojolicious-2">Part 2</a></li>
     <li><a href="/course-management-app-in-mojolicious-3">Part 3</a></li>
+    <li><a href="/course-management-app-in-mojolicious-4">Part 3</a></li>
 <!--
     <li><a href=""></a></li>
 -->

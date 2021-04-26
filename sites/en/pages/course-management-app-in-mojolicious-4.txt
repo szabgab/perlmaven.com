@@ -1,0 +1,34 @@
+=title Course Management Application in Mojolicious - part 4
+=timestamp 2021-04-26T09:30:01
+=indexes Mojolicous
+=status show
+=tags screencast
+=books mojolicious
+=author szabgab
+=archive 1
+=description Building a web application in Mojolicous for course management
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+The fourth part of the live development <a href="/course-management-app-in-mojolicious">course management application</a> using Mojolicous together with <a href="https://phoenixtrap.com/">Mark Gardner</a>.
+
+=abstract end
+
+<ul>
+    <li><a href="https://github.com/szabgab/course-management">Git Repository</a></li>
+    <li><a href="https://docs.mojolicious.org/Test/Mojo">Test::Mojo</a></li>
+    <li><a href="https://docs.mojolicious.org/Mojolicious/Guides/Routing">Mojolicious::Guides::Routing</a></li>
+    <li><a href="https://docs.mojolicious.org/Mojolicious/Guides/Routing#Under">Mojolicious::Guides::Routing - under</a></li>
+    <li><a href="https://metacpan.org/pod/Devel::Cover">Devel::Cover</a></li>
+    <li><a href="https://docs.mojolicious.org/Test/Harness">Test::Harness</a></li>
+</ul>
+
+<code>
+morbo script/course_management
+
+prove -vl
+</code>
+
+<screencast file="mojolicious-4-1920x1080.mp4" youtube="C4YYt0yh8_c" />
