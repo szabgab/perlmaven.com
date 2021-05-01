@@ -55,10 +55,11 @@ A system to handle exercise submissions and reviews.
 
 <ul>
     <li><a href="/course-management-app-in-mojolicious-1">Part 1</a></li>
-    <li><a href="/exploring-bdd-in-perl-5">BDD - Describing the project using Cucumber</a></li>
+    <li><a href="/exploring-bdd-in-perl-5">BDD - Describing the project using Cucumber</a> with Erik Hülsmann</li>
     <li><a href="/course-management-app-in-mojolicious-2">Part 2</a></li>
     <li><a href="/course-management-app-in-mojolicious-3">Part 3</a></li>
     <li><a href="/course-management-app-in-mojolicious-4">Part 4</a></li>
+    <li><a href="https://code-maven.com/setting-up-ci-and-docker-for-course-management-app">DevOps work - setting up CI and Docker for the course management project</a> with Thomas Klausner</li>
 <!--
     <li><a href=""></a></li>
 -->
