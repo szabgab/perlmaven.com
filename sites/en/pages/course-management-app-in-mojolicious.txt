@@ -18,9 +18,7 @@ In this experimental project <a href="https://phoenixtrap.com/">Mark Gardner</a>
 
 =abstract end
 
-Part 6 is scheduled for May 23: 18:00 Israel check out your time on the registration page.
-
-<div id="localdate" x-schedule="2021-05-23T18:00:00+03:00"></div>
+Part 6 is scheduled for <span id="localdate" x-schedule="2021-05-23T18:00:00+03:00"></span>
 
 <a class="btn btn-lg btn-success" href="https://us02web.zoom.us/meeting/register/tZEvf-6pqjsrHdFJKQkP-cDG74BSaNSGmCxC">Register here</a>
 
