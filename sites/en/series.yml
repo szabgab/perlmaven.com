@@ -784,3 +784,14 @@ exploring-bdd-in-perl:
         - exploring-bdd-in-perl-3
         - exploring-bdd-in-perl-4
         - exploring-bdd-in-perl-5
+course-management-app-in-mojolicious:
+  chapters:
+    - title: Course Management
+      sub:
+        - course-management-app-in-mojolicious-1
+        - course-management-app-in-mojolicious-2
+        - course-management-app-in-mojolicious-3
+        - course-management-app-in-mojolicious-4
+        - course-management-app-in-mojolicious-5
+        - course-management-app-in-mojolicious-6
+
