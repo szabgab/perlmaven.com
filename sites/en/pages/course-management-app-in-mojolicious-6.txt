@@ -21,4 +21,4 @@ The fifth part of the live development <a href="/course-management-app-in-mojoli
     <li><a href="https://docs.mojolicious.org/Mojo/Upload">Mojo::Upload</a></li>
 </ul>
 
-<screencast file=""mojolicious-6-1920x1080.mp4 youtube="T1vh3zcPOT0" />
+<screencast file="mojolicious-6-1920x1080.mp4" youtube="T1vh3zcPOT0" />
