@@ -46,7 +46,7 @@ my $nothing;
 my $string = 'abc';
 my $number = 42;
 
-say 'nothing:    ', ref $nothing;   # 
+say 'nothing:    ', ref $nothing;   #
 say 'string:     ', ref $string;    #
 say 'number:     ', ref $number;    #
 say 'nothing:    ', defined ref $nothing;   # 1
@@ -57,7 +57,7 @@ say 'number:     ', defined ref $number;    # 1
 
 <h2>Reference to SCALAR</h2>
 
-If we take the reference to either of the simple scalars, event the undef,
+If we take the reference to either of the simple scalars, even the one holding <hl>undef</hl>,
 the <hl>ref()</hl> function will return the string <hl>SCALAR</hl>.
 
 <code lang="perl">
