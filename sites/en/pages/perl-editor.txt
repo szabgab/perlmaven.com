@@ -76,6 +76,7 @@ In October 2009 I ran a poll and asked <a href="http://perlide.org/poll200910/">
     <li>Alex Shatlovsky recommended <a href="http://www.sublimetext.com/">Sublime Text</a>, which is a platform independent editor, but one that costs some money.</li>
     <li>Peter Ulvskov recommended <a href="https://www.geany.org/">Geany</a> which is a cross-platform Open Source editor.</li>
     <li><a href="https://atom.io/">Atom</a> is another cross-platform Open Source editor.</li>
+    <li><a href="https://code.visualstudio.com/">Visual Studio Code</a> (aka. VSCode from Microsoft)</li>
 </ul>
 
 While they are native to Unix/Linux, both <b>Emacs</b> and <b>Vim</b> are available for all the other major operating systems.
