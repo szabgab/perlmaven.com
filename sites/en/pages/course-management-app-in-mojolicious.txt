@@ -62,6 +62,7 @@ A system to handle exercise submissions and reviews.
     <li><a href="https://code-maven.com/setting-up-ci-and-docker-for-course-management-app">DevOps work - setting up CI and Docker for the course management project</a> with Thomas Klausner</li>
     <li><a href="/course-management-app-in-mojolicious-5">Part 5</a></li>
     <li><a href="/course-management-app-in-mojolicious-6">Part 6</a></li>
+    <li><a href="/course-management-app-in-mojolicious-7">Part 7</a></li>
 <!--
     <li><a href=""></a></li>
 -->
