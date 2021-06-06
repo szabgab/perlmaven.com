@@ -37,10 +37,10 @@ and suddenly we got and error:
 
 In order to fix this we first need to understand what happened. So we printed out the content of <hl>$pat</hl>.
 It has <hl>(\)</hl> in it. That helped me understand that by the time $pat arrived in the regex Perl already "ate"
-on of the backslashes so now the regex engine see the opening parentheses as a special character,
+one of the backslashes so now the regex engine see the opening parentheses as a special character,
 but not the closing parenthes as it was escaped.
 
-On solution would be to write:
+One solution would be to write:
 
 <code>
 my $pat = '(\\\\)';
