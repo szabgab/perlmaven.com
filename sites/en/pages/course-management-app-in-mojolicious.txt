@@ -18,6 +18,7 @@ In this experimental project <a href="https://phoenixtrap.com/">Mark Gardner</a>
 
 =abstract end
 
+<!--
 Part 6 is scheduled for <span id="localdate" x-schedule="2021-06-13T18:00:00+03:00"></span>
 
 <a class="btn btn-lg btn-success" href="https://us02web.zoom.us/meeting/register/tZEvf-6pqjsrHdFJKQkP-cDG74BSaNSGmCxC">Register here</a>
@@ -25,6 +26,7 @@ Part 6 is scheduled for <span id="localdate" x-schedule="2021-06-13T18:00:00+03:
 (If you registered to the first event you are already registered to this one as well.)
 
 Use this link to include the the schedule in your calendar: <a href="https://code-maven.com/events.ics">https://code-maven.com/events.ics</a>.
+-->
 
 <h2>Plan</h2>
 
