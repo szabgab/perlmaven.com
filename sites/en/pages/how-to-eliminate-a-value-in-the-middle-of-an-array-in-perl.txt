@@ -113,3 +113,8 @@ This is how you can <b>delete an element from an array</b>.
 
 For further details check <a href="/splice-to-slice-and-dice-arrays-in-perl">how to splice arrays in Perl</a>.
 
+<h2>Remove duplicate elements</h2>
+
+How to <a href="/unique-values-in-an-array-in-perl">remove duplicate elements from an array</a>.
+
+
