@@ -1,0 +1,239 @@
+=title Regexp::Grammars parse text with markup or markdown
+=timestamp 2021-07-19T06:15:01
+=indexes Regexp::Grammars
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Parsing text with markup (or markdown) is not easy. It took me several days to wrap my head around this, but eventually I think I've figured it out.
+
+=abstract end
+
+<h2>The input</h2>
+
+We have some sample text. It has special parts enclosed in underscores <hl>_</hl>, other special parts enclosed in stars <hl>*</hl>, and
+links with the format <hl>link:URL[TITLE]</hl>. How can we parse this and split it up into usable chunks?
+
+<include file="examples/data/text_with_markup.txt">
+
+<h2>Recursive parsing and flattening at the end</h2>
+
+<include file="examples/parse_text_flatten_with_structure.pl">
+
+If we run this script, it will generate the following output:
+
+<code lang="perl">
+$VAR1 = {
+          'Document' => {
+                          'Text' => {
+                                      'FreeText' => 'The ',
+                                      'Text' => {
+                                                  'FreeText' => ' module is awesome. It makes parsing text in ',
+                                                  'Star' => '*Perl*',
+                                                  'Text' => {
+                                                              'FreeText' => ' even ',
+                                                              'Text' => {
+                                                                          'FreeText' => '.
+You can ',
+                                                                          'Star' => '*easily*',
+                                                                          'Text' => {
+                                                                                      'FreeText' => ' ',
+                                                                                      'Text' => {
+                                                                                                  'FreeText' => ' ',
+                                                                                                  'Star' => '*recursive*',
+                                                                                                  'Text' => {
+                                                                                                              'FreeText' => ' grammars, and once you figure it out, it is also easy to
+parse text like this. Read more about it at ',
+                                                                                                              'Link' => 'link:https://metacpan.org/pod/Regexp::Grammars[Regexp::Grammars]',
+                                                                                                              'Text' => {
+                                                                                                                          'FreeText' => '
+Enjoy!'
+                                                                                                                        }
+                                                                                                            }
+                                                                                                },
+                                                                                      'Underscore' => '_create_'
+                                                                                    }
+                                                                        },
+                                                              'Underscore' => '_easier than before_'
+                                                            }
+                                                },
+                                      'Underscore' => '_Regexp::Grammars_'
+                                    }
+                        }
+        };
+</code>
+
+followed by this output 
+
+<code lang="perl">
+$VAR1 = [
+          [
+            'Text',
+            'The '
+          ],
+          [
+            'Underscore',
+            '_Regexp::Grammars_'
+          ],
+          [
+            'Text',
+            ' module is awesome. It makes parsing text in '
+          ],
+          [
+            'Star',
+            '*Perl*'
+          ],
+          [
+            'Text',
+            ' even '
+          ],
+          [
+            'Underscore',
+            '_easier than before_'
+          ],
+          [
+            'Text',
+            '.
+You can '
+          ],
+          [
+            'Star',
+            '*easily*'
+          ],
+          [
+            'Text',
+            ' '
+          ],
+          [
+            'Underscore',
+            '_create_'
+          ],
+          [
+            'Text',
+            ' '
+          ],
+          [
+            'Star',
+            '*recursive*'
+          ],
+          [
+            'Text',
+            ' grammars, and once you figure it out, it is also easy to
+parse text like this. Read more about it at '
+          ],
+          [
+            'Link',
+            'link:https://metacpan.org/pod/Regexp::Grammars[Regexp::Grammars]'
+          ],
+          [
+            'Text',
+            '
+Enjoy!'
+          ]
+        ];
+
+</code>
+
+
+Let's have an explanation for this working solution. Then we can see some other working solutions and then some failed experiments. Hopefully they will help better understand how this,
+and Regexp::Grammars in general work.
+
+Before you can get started, you'll need to <a href="/how-to-install-a-perl-module-from-cpan">install</a> <a href="https://metacpan.org/pod/Regexp::Grammars">Regexp::Grammars</a>
+and <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a> that I used as a helper module to read in the content of the text file.
+
+In this solution first I used Regexp::Grammar to parse the text into a deep structure, and then added a loop to flatten it.
+
+<ul>
+  <li><hl>nocontext</hl> is included only to eliminate some additional tags that are primarily used for debugging.</li>
+  <li>We use the <hl>\A</hl> and <hl>\Z</hl> anchors to indicate that we would like the text to match the whole text.
+      This is actually strange, I though the parser will match the whole text by default, but without those the last free-text part (the string "Enjoy!" was left off).</li>
+  <li>The additional level of the "Document" is only needed so we can have the first text enclosed between those two anchors.</li>
+  <li>The catch-all "FreeText"-only alternative in the definition of "Text" must be the last option or it will capture all the text not allowing the other parts to match anything.</li>
+  <li>A "Text" is defined using "Text" itself, but it is critical that the recursive use of the "Text" token will come at the end of the expression. If it would come at the beginning, get an <hl>Infinite recursion in regex</hl> exception.</li>
+  <li>We must use "token" for definition if we would like to keep the white-spaces between the words.</li>
+</ul>
+
+
+<h2>Even flatter</h2>
+
+Changing the flattening part (pushing the values only instead of small arrays)  will make the result even more compact,
+but we lose the information about the types of elements we found.
+
+<include file="examples/parse_text_flatten.pl">
+
+The result of the flattening now looks like this:
+
+<code lang="perl">
+$VAR1 = [
+          'The ',
+          '_Regexp::Grammars_',
+          ' module is awesome. It makes parsing text in ',
+          '*Perl*',
+          ' even ',
+          '_easier than before_',
+          '.
+You can ',
+          '*easily*',
+          ' ',
+          '_create_',
+          ' ',
+          '*recursive*',
+          ' grammars, and once you figure it out, it is also easy to
+parse text like this. Read more about it at ',
+          'link:https://metacpan.org/pod/Regexp::Grammars[Regexp::Grammars]',
+          '
+Enjoy!'
+        ];
+</code>
+
+<h2>Catch-all must be the last alternative</h2>
+
+In our solution the "FreeText" token will catch everything. Therefore in the definition of "Text",
+the stand alone-case of "FreeText" must be the last art of the alternatives separated by <hl>|</hl>.
+
+If we would put it as the first expression like in this version:
+
+<include file="examples/parse_text_short_first.pl">
+
+we would get the following results:
+
+<code>
+$VAR1 = {
+          'Document' => {
+                          'Text' => {
+                                      'FreeText' => 'The _Regexp::Grammars_ module is awesome. It makes parsing text in *Perl* even _easier than before_.
+You can *easily* _create_ *recursive* grammars, and once you figure it out, it is also easy to
+parse text like this. Read more about it at link:https://metacpan.org/pod/Regexp::Grammars[Regexp::Grammars]
+Enjoy!'
+                                    }
+                        }
+        };
+</code>
+
+The very first time "FreeText" will eat all the text.
+
+<h2>The recursive call must be at the end of the expression</h2>
+
+Inside the complex parts of the definition of "Text" we use "Text" itself, thereby creating a recursive
+definition. Here we must ensure that the recursive call is not the first one. If we turned it around and
+put "Text" at the beginning as in this example:
+
+<include file="examples/parse_text_recursive_first.pl">
+
+We would get an exception, even before we have a chance to use the regex.
+
+<code>
+Infinite recursion in regex at parse_text_recursive_first.pl line 26.
+</code>
+
+<h2>Everything must be tokens</h2>
+
+You might have noticed that we only used "token"s in this grammar. No "rule" was used. While in many parsing
+operations we might want to disregard spaces, here we probably need to keep the spaces between the structure
+as we will need them when we want to put the text back together in some other format. So every declaration
+is a "rule".
+
+
