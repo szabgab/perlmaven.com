@@ -6,11 +6,11 @@
 =books beginner
 =author szabgab
 =translator bruck
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
-בחלק זה של  <a href="/perl-tutorial">המדריך לפרל</a> אנחנו הולכים לדבר על 
+בחלק זה של  <a href="/perl-tutorial">המדריך לפרל</a> אנחנו הולכים לדבר על
  <b>לולאת ה-for ב-Perl</b>. יש המכנים אותה <b>לולאת for  בסגנון C</b>,אך למעשה מבנה זה קיים בשפות תיכנות רבות.
 
 =abstract end

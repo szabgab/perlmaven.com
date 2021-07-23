@@ -1,4 +1,4 @@
-=title מערכים בפרל 
+=title מערכים בפרל
 =timestamp 2013-10-15T20:45:02
 =indexes @, array, arrays, length, size, foreach, Data::Dumper, scalar, push, pop, shift
 =status show
@@ -6,7 +6,7 @@
 =books beginner
 =author szabgab
 =translator bruck
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -15,7 +15,7 @@
 
 שמות משתנים של מערכים בפרל תמיד מתחילים בסימן: <hl>@</hl>.
 
-כיוון שאנחנו מתעקשים להשתמש ב <hl>strict</hl> יש להכריז על המשתנים באמצעות מלת המפתחhl>my</hl> 
+כיוון שאנחנו מתעקשים להשתמש ב <hl>strict</hl> יש להכריז על המשתנים באמצעות מלת המפתחhl>my</hl>
 לפני השימוש הראשון בהם.
 
 =abstract end
