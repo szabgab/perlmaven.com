@@ -5,7 +5,7 @@
 =original bare-here-documents-are-deprecated
 =author szabgab
 =translator bruck
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,7 +13,7 @@
 
 מסתבר שלא הבנתי נכון את השינוי ב perl 5.20, אי לכך מאמר זה עודכן בהתאם.
 
-אני רוצה להודות שוב ל <a href="https://twitter.com/jonjensen0"> ג'ון ג'נסן Jon Jensen</a> שהפנה אותי  
+אני רוצה להודות שוב ל <a href="https://twitter.com/jonjensen0"> ג'ון ג'נסן Jon Jensen</a> שהפנה אותי
 <a href="https://rt.perl.org/rt3/Public/Bug/Display.html?id=118511#txn-1228753">להערה</a>
 שמבהירה את הנושא. ותודה לג'ואל ברגר שהסביר זאת בהערה שלו.
 

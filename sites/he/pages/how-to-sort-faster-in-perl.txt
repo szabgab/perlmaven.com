@@ -2,10 +2,10 @@
 =timestamp 2013-09-01T00:00:10
 =indexes map, sort, Schwartzian
 =status show
-=original how-to-sort-faster-in-perl 
+=original how-to-sort-faster-in-perl
 =author szabgab
 =translator bruck
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 
 =abstract start

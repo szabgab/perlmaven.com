@@ -1,11 +1,11 @@
-=title Pinto -- פינטו 
+=title Pinto -- פינטו
 =timestamp 2013-05-04T08:00:00
 =indexes cpan, pinto
 =status show
 =original pinto-tutorial
 =author thalhammer
 =translator bruck
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
