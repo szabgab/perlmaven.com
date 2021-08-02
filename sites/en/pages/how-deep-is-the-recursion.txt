@@ -54,7 +54,7 @@ You might want to find out the depth in more than one function. Instead of copy-
 we can move it out to an external function. For this to work we slightly had to adjust the numbers because now 
 the real function is already 1 level up from the current stack frame of the <hl>depth</hl> function.
 
-<include file="examples/recursion_depth.pl">
+<include file="examples/recursion_depth_external.pl">
 
 <h2>Caveat</h2>
 
