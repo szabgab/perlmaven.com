@@ -22,8 +22,8 @@ at the end of the operation <hl>@names</hl> will have 7 elements; or it can be <
 two-dimensional array. In this case <hl>@names</hl> will have 4 elements after the operation, one of them is a reference
 to an internal array that holds the elements of <hl>@languages</hl>.
 
-The solution to the two cases is quite similar. They both use the 
-<a href="https://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl">splice</a> function.
+The solution to the two cases is quite similar. They both use the
+<a href="/splice-to-slice-and-dice-arrays-in-perl">splice</a> function.
 Maybe we just need to adjust how we call the operation:
 
 In the first case we
@@ -32,7 +32,7 @@ In the first case we
 
 <include file="examples/insert_array_in_array.pl">
 
-in the second case we 
+in the second case we
 
 <h2>Insert and array reference in another array</h2>
 
@@ -46,7 +46,7 @@ If we run the scripts:
 The first one generates a simple, flat array:
 
 <code>
-$ perl examples/insert_array_in_array.pl 
+$ perl examples/insert_array_in_array.pl
 
 $VAR1 = [
           'Foo',

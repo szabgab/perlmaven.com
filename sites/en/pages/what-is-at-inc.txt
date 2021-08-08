@@ -42,7 +42,7 @@ based on the version of perl and your operating system.
 You can however change it in a number of ways via the <hl>PERLLIB</hl> and <hl>PERL5LIB</hl> environment variables,
 using the <hl>-I</hl> command line flag, or inside the code by manipulating <hl>@INC</hl> directly.
 
-Search for <a href="https://perlmaven.com/search/@INC">@INC</a> and you'll find your 
+Search for <a href="/search/@INC">@INC</a> and you'll find your
 
 <h2>Real examples</h2>
 
