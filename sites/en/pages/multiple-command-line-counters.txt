@@ -11,7 +11,7 @@
 
 As part of the <a href="https://code-maven.com/counter">big counter example</a> project, this example runs on the command line and uses a plain text file as back-end 'database'.
 It is the second most basic version of all the <a href="https://code-maven.com/counter">counter examples</a>, that provides multiple counters.
-(The most simple one provided a <a href="/pro/command-line-counter">single counter</a>.
+(The most simple one provided a <a href="/command-line-counter">single counter</a>.
 It accepts a value (a word) on the command line and uses a separate counter for each such value.
 
 =abstract end
@@ -73,7 +73,7 @@ will throw an excpetion if the user has not supplied any value on the command li
 
 Then we declare the hash <hl>%counters</hl> where we are going to store our counters in memory.
 
-Unlike in the <a href="/pro/command-line-counter">single command line counter</a> case, here we cannot assign an initial 0 to all the keys
+Unlike in the <a href="/command-line-counter">single command line counter</a> case, here we cannot assign an initial 0 to all the keys
 as any string can be a key. We will have to rely on the <a href="/autovivification">autovivification</a> feature of Perl.
 When we increment the value of one of the keys that did not exists before (e.g. <hl>$counters{foo}++;</hl>),
 that key will just spring into existence pretending its value is 0 which is then incremented to 1.
@@ -124,7 +124,7 @@ if (-e $file) {
 After making sure that the file exists using the <hl>-e</hl> operator we try to <a href="/open-and-read-from-files">open the file for reading</a> and throw
 an exception using <hl>die</hl> we we don't succeed.
 Then we need to go over all the rows of the file which we do using the <hl>while</hl> loop. As the condition of the <hl>while</hl>
-statement we can see a simple call to the readline operator of Perl. Just we have seen in the <a href="/pro/command-line-counter">simple example</a>.
+statement we can see a simple call to the readline operator of Perl. Just we have seen in the <a href="/command-line-counter">simple example</a>.
 Then we do something different though. We call the <a href="/chomp">chomp</a> function to remove the trailing newline.
 The <hl>$line</hl> variable holds a string followed by a TAB, followed by a number. We use <a href="/perl-split">split</a> along the TAB to cut the string into
 two pieces and we assign those two pieces to <hl>$str</hl> and <hl>$count</hl> respsectively.

@@ -27,7 +27,7 @@ print 42, "\n";
 
 <b>chmod u+x hello_world.pl</b>
 
-See also the <a href="https://perlmaven.com/installing-perl-and-getting-started">getting started article</a>
-and the one about the <a href="https://perlmaven.com/hashbang">sh-bang, she-bang or hashbang</a>.
+See also the <a href="/installing-perl-and-getting-started">getting started article</a>
+and the one about the <a href="/hashbang">sh-bang, she-bang or hashbang</a>.
 
 

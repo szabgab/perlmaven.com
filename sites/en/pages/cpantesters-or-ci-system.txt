@@ -75,7 +75,7 @@ another project.
 I've recently set up GitHub Actions for <a href="https://github.com/PerlDancer/Dancer2/">Perl Dancer 2</a> and an even better
 one for <a href="https://github.com/szabgab/test-class">Test::Class</a>. (Check the .github/workflows) directories.
 
-There is also a video <a href="https://perlmaven.com/github-actions-ci-job-for-test-class">explaining GitHub Actions for Test::Class</a>.
+There is also a video <a href="/github-actions-ci-job-for-test-class">explaining GitHub Actions for Test::Class</a>.
 
 <h2>Conclusion</h2>
 

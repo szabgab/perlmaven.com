@@ -8,7 +8,7 @@
 
 =abstract start
 
-When calling a function in <a href="/pro/recursion">recursion</a> we have to be careful to check the stop condition before we call the recursion. If not, we can end up with an infinite recursion that will end only when we have exhausted the resources of our computer.
+When calling a function in <a href="/recursion">recursion</a> we have to be careful to check the stop condition before we call the recursion. If not, we can end up with an infinite recursion that will end only when we have exhausted the resources of our computer.
 
 In order to protect the user from never ending recursions, perl has a hard limit on the number of recursion and if you reach that limit you'll get a warning: <hl>Deep recursion on subroutine</hl>. The rather arbitrary limit is 100.
 
@@ -18,7 +18,7 @@ Let's see an example.
 
 <h2>Recursive Factorial with an mistake</h2>
 
-We used factorial in the example about <a href="/pro/recursion">recursion</a>, so let's use it here too:
+We used factorial in the example about <a href="/recursion">recursion</a>, so let's use it here too:
 
 <include file="examples/recursive_factorial_bad.pl">
 

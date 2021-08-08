@@ -8,7 +8,7 @@
 
 =abstract start
 
-After you <a href="/pro/adding-layout-to-mojolicious-lite-based-application">developed your first Mojolicious application</a>, you'll want to show it the world. That means running it on an Internet-facing web server.
+After you <a href="/adding-layout-to-mojolicious-lite-based-application">developed your first Mojolicious application</a>, you'll want to show it the world. That means running it on an Internet-facing web server.
 
 Let's walk through the steps of getting an application running in a robust and reliable way.
 

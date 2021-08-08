@@ -103,7 +103,7 @@ It tries to load the <a href="https://metacpan.org/release/Code-TidyAll">Test::C
 and skips the tests if it could not load the test module. We can now run <hl>make test</hl>
 and in addition to the regular tests, it will also check if the code is tidy.
 
-What would be really good though is if this test also ran on <a href="/pro/enable-travis-ci-for-continous-integration">Travis-CI</a>.
+What would be really good though is if this test also ran on <a href="/enable-travis-ci-for-continous-integration">Travis-CI</a>.
 
 No problem, we only have to tell Travis-CI to install the <a href="https://metacpan.org/release/Code-TidyAll">Test::Code::TidyAll</a> module,
 before running the tests. We can do that by adding the following lines to <hl>.travis.yml</hl>
