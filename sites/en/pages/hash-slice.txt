@@ -72,7 +72,7 @@ my @african_capitals = @capital_of{'Zimbabwe', 'Eritrea', 'Botswana'};
 
 Results in the same list of capitals.
 
-If you want to avoid the quotes and spaces you can also use <a href="http://perlmaven.com/qw-quote-word">qw</a>:
+If you want to avoid the quotes and spaces you can also use <a href="/qw-quote-word">qw</a>:
 
 <code lang="perl">
 my @african_capitals = @capital_of{qw(Zimbabwe Eritrea Botswana)};

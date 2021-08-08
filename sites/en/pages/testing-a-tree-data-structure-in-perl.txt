@@ -11,7 +11,7 @@
 
 <a href="https://metacpan.org/pod/Test::More">Test::More</a> has a function called <hl>is_deeply</a>
 that allows us to
-<a href="http://perlmaven.com/comparing-complex-data-structures-with-is-deeply">compare and test any complex data structure</a>,
+<a href="/comparing-complex-data-structures-with-is-deeply">compare and test any complex data structure</a>,
 but it can only do exact comparison.
 
 <a href="https://metacpan.org/pod/Test::Deep">Test::Deep</a> on the other hand provides us tools to test arbitrary data structures
@@ -29,16 +29,16 @@ is another array containing nodes. The depth and the width of the tree can be an
 [
      {
          id      =>   ID_NUMBER,
-         payload => DATA_STRUCTURE, 
+         payload => DATA_STRUCTURE,
          subtree =>  [ ... ]
      },
      {
          id =>,
-         payload => 
+         payload =>
      },
      {
          id =>,
-         payload => 
+         payload =>
          subtree =>  [ ... ]
      }
 ]

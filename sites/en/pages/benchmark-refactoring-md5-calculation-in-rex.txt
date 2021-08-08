@@ -23,7 +23,7 @@ sure we are not slowing things down.
 
 =abstract end
 
-<a href="http://perlmaven.com/levels-of-security-using-rex">As you might
+<a href="/levels-of-security-using-rex">As you might
 already know</a>, Rex is a deployment and configuration management framework
 written in Perl. Since those kind of tasks very often boil down to file
 manipulation, the ability to identify content changes, or to identify
@@ -276,7 +276,7 @@ count=1024</hl> or similar</li>
 
 <h2>Related articles</h2>
 <ul>
-<li><a href="http://perlmaven.com/comparing-the-speed-of-json-decoders">
+<li><a href="/comparing-the-speed-of-json-decoders">
 Comparing the speed of JSON decoders</a></li>
 </ul>
 

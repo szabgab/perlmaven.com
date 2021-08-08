@@ -53,7 +53,7 @@ and this way we can make sure the URLs we save are unique. Every duplicate menti
 
 We are also taking advantage of the fact that when <hl>++</hl> comes after the variable and acts a the post-increment operator,
 then the value of the expression will be the value before, the increment.
-This is the same technique that was used to <a href="http://perlmaven.com/unique-values-in-an-array-in-perl">filter out duplicates from an array</a>.
+This is the same technique that was used to <a href="/unique-values-in-an-array-in-perl">filter out duplicates from an array</a>.
 
 Currently there are 60 pages, but as they keep publishing new talks the number of talks will grow and with that the number of pages.
 So we cannot just fetch the pages 1..60. We need to increment the page counter beyond 60 and use some other way to find out if there

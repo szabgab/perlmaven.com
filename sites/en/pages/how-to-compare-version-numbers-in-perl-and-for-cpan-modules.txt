@@ -32,7 +32,7 @@ people who are not aware of this.
 
 There are at least two modules that handle version numbers: <a href="https://metacpan.org/pod/version">version</a>
 and <a href="https://metacpan.org/pod/Perl::Version">Perl::Version</a>, but it seems only the
-<a href="http://perlmaven.com/perl-version-number-confusion">former works properly</a>.
+<a href="/perl-version-number-confusion">former works properly</a>.
 
 So I recomment the <b>version</b> module.
 

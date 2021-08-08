@@ -31,7 +31,7 @@ find many entries, but it might take up a lot more memory.
 
 <h2>Finding a single entry using 'grep'</h2>
 
-In this case we are going to use the <a href="http://perlmaven.com/filtering-values-with-perl-grep">grep</a> command.
+In this case we are going to use the <a href="/filtering-values-with-perl-grep">grep</a> command.
 
 <include file="examples/find_one_person.pl">
 
@@ -62,7 +62,7 @@ Though I have not measure at what value of "many" and "early" this can be measur
 
 For the the third solution we create a lookup-hash where the keys are the ID values
 and the values are the small hashes. Once we have this the look-up is trivially fast
-as it is just a hash lookup. We use the <a href="http://perlmaven.com/transforming-a-perl-array-using-map">map</a> function for this that will transform each hash ref (found in <hl>$_</hl>) to
+as it is just a hash lookup. We use the <a href="/transforming-a-perl-array-using-map">map</a> function for this that will transform each hash ref (found in <hl>$_</hl>) to
 a key-value pair where <hl>$_->{id}</hl> is the key.
 
 <include file="examples/find_many_people.pl">
@@ -80,8 +80,8 @@ references the hashes in the original array and the actual data of these small h
 is not copied.
 
 As an exercise, you could use <a href="href://metacpan.org/pod/Devel::Size">Devel::Size</a>
-to measure the <a href="http://perlmaven.com/how-much-memory-do-perl-variables-use">memory usage</a>
-of the Perl variables and to measure the <a href="http://perlmaven.com/how-much-memory-does-the-perl-application-use">memory usage of the Perl script</a>.
+to measure the <a href="/how-much-memory-do-perl-variables-use">memory usage</a>
+of the Perl variables and to measure the <a href="/how-much-memory-does-the-perl-application-use">memory usage of the Perl script</a>.
 
 I am quite sure the growth is negligible.
 

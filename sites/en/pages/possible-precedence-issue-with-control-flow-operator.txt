@@ -30,9 +30,9 @@ that should be written as:
     return $param || 'default';
 </code>
 
-or, if we only want to  <a href="http://perlmaven.com/how-to-set-default-values-in-perl">use the 'default' value</a>
+or, if we only want to  <a href="/how-to-set-default-values-in-perl">use the 'default' value</a>
 in case <hl>$param</hl> is
-<a href="http://perlmaven.com/beginner-perl-maven-undef">undef</a> then, starting from perl 5.10 we should write
+<a href="/beginner-perl-maven-undef">undef</a> then, starting from perl 5.10 we should write
 
 <code lang="perl">
     return $param // 'default';
@@ -55,7 +55,7 @@ We get the following output:
 Look at line 4. It is of course strange, but basically it means
 
 Return the content of <hl>$param</hl> and if the return call resulted
-something <a href="http://perlmaven.com/beginner-perl-maven-true-false">false</a>, then check the content of 'default',
+something <a href="/beginner-perl-maven-true-false">false</a>, then check the content of 'default',
 but don't do anything with it.
 
 Not very clever, but that's what perl understands.
@@ -65,7 +65,7 @@ Not very clever, but that's what perl understands.
 Now that we know this code is incorrect, we can hopefully go and fix it replacing <hl>or</hl> with <hl>||</hl>,
 but given a huge code-base, how can we find all the other places where such code was written?
 
-As you can notice this code-base omitted the <a href="http://perlmaven.com/always-use-strict-and-use-warnings">use warnings</a> statement.
+As you can notice this code-base omitted the <a href="/always-use-strict-and-use-warnings">use warnings</a> statement.
 
 So what happens if we add <hl>use warnings;</hl> ?
 
@@ -84,7 +84,7 @@ It says:
 
 <h2>Conclusion</h2>
 
-<a href="http://perlmaven.com/always-use-strict-and-use-warnings">Always use warnings</a>, and even if you don't plan to upgrade
+<a href="/always-use-strict-and-use-warnings">Always use warnings</a>, and even if you don't plan to upgrade
 to newer version of perl, run your tests there too. At least your compile-test.
 They can reveal all kinds of potential bugs.
 

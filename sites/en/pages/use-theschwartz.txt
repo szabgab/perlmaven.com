@@ -41,7 +41,7 @@ We will then setup our completed program as a daemon service so it can startup a
 Throughout this discussion and the examples, I will be using PostgreSQL database references and syntax.
 
 <h2>Install The Modules</h2>
-There are several ways to <a href="http://perlmaven.com/how-to-install-a-perl-module-from-cpan">install the required perl modules</a> depending
+There are several ways to <a href="/how-to-install-a-perl-module-from-cpan">install the required perl modules</a> depending
 on your preference. In this article we will use <a href="https://metacpan.org/pod/App::cpanminus">cpanm</a>.
 
 To install the required modules using cpanm type the following (output edited for brevity):

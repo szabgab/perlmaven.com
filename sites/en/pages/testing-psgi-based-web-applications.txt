@@ -36,7 +36,7 @@ The two modules <a href="https://metacpan.org/pod/Plack::Test">Plack::Test</a> a
 <a href="https://metacpan.org/pod/HTTP::Request::Common">HTTP::Request::Common</a> are the core of our test script.
 
 <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a> is only used as a helper module to make it easy
-to <a href="http://perlmaven.com/slurp">slurp</a> in the content of a file.
+to <a href="/slurp">slurp</a> in the content of a file.
 
 By running <hl>my $app = do 'app.psgi';</hl> we load the content of the <hl>app.psgi</hl> file and assign its return value to
 the <hl>$app</hl> variable. In every PSGI-based application, and so in ours too, the <hl>app.psgi</hl> file is expected to return a reference to

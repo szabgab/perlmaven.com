@@ -11,14 +11,14 @@
 
 This tutorial is intended for users that want to maintain Perl modules on a FreeBSD Unix system.
 
-FreeBSD has its own binary package system. It allows for easy installation and management of system software. 
+FreeBSD has its own binary package system. It allows for easy installation and management of system software.
 With this package system you can also manage the installation of Perl modules.
 =abstract end
 
 <h2>Search For Module</h2>
 
 First you'll want to search the package system to see if the Perl module you want to install exists. Note that not all modules have binary packages.
-If there is no package for your module in the repository than you will need to use another <a href="http://perlmaven.com/how-to-install-a-perl-module-from-cpan">
+If there is no package for your module in the repository than you will need to use another <a href="/how-to-install-a-perl-module-from-cpan">
 method of installation such as CPAN or CPANM</a>.
 
 To search the package repository for your module type the following:
@@ -28,9 +28,9 @@ To search the package repository for your module type the following:
 p5-DateTime-Event-Cron-0.08_1
 </code>
 
-The search results gives us the full name of the package in the repository, which matched 
+The search results gives us the full name of the package in the repository, which matched
 "<a href="https://metacpan.org/pod/DateTime::Event::Cron">p5-DateTime-Event-Cron-0.08_1</a> using our search of "event-cron".
-Knowing the full name of a package is important, particularly if there are multiple versions of a package. 
+Knowing the full name of a package is important, particularly if there are multiple versions of a package.
 
 For instance, if we wanted to install perl5 we would be given the following search results by search for "perl5":
 
@@ -42,16 +42,16 @@ perl5.18-5.18.4_17             Practical Extraction and Report Language
 perl5.22-5.22.1_4              Practical Extraction and Report Language
 </code>
 
-Now that we have all the different package names for each version, we can tell the system the exact package to install. 
+Now that we have all the different package names for each version, we can tell the system the exact package to install.
 If we wanted to install perl5.20 for example, we would enter this command to install that specific version of perl5:
 
 <code lang="shell">
-[steve@blackbox] sudo pkg install perl5-5.20.3_8 
+[steve@blackbox] sudo pkg install perl5-5.20.3_8
 </code>
 
 <h2>Install Module</h2>
 
-Going back to our original example, since the package for our module exists (p5-DateTime-Event-Cron-0.08_1) and we now have its full name, let's install it. 
+Going back to our original example, since the package for our module exists (p5-DateTime-Event-Cron-0.08_1) and we now have its full name, let's install it.
 You will want to run this using sudo so the install process can write the package files using root permissions:
 
 <code lang="shell">

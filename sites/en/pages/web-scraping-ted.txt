@@ -31,7 +31,7 @@ to fetch the page, find the 'script' tags and extract their content. The first t
 was expecting to extract the 'text' inside the 'script' tags did not return anything. So I filed a
 <a href="https://github.com/tokuhirom/Web-Query/issues/48">bug-report/question</a>.
 
-I did not want to wait for a reply so to have a faster solution I turned to <a href="http://perlmaven.com/regex-cheat-sheet">Regular Expression</a>.
+I did not want to wait for a reply so to have a faster solution I turned to <a href="/regex-cheat-sheet">Regular Expression</a>.
 Normally parsing HTML using Regexes is considered a sin, but in this case we had to extract a single tag that did not have any other tags in
 it and is very unlikely to contain a string that looks like a closing 'script' tag.
 
@@ -59,7 +59,7 @@ For this I used the following expression:
     my ($json) = $script =~ /^q\("talkPage\.init",(\{"talks".*)\)/s;
 </code>
 
-The left-hand side of the assignment must be in parentheses to create <a href="http://perlmaven.com/scalar-and-list-context-in-perl">LIST context</a>
+The left-hand side of the assignment must be in parentheses to create <a href="/scalar-and-list-context-in-perl">LIST context</a>
 and we again use <hl>s</hl> modifier again to change the behavior of <hl>.</hl>.
 
 There are many 'script' tags on this page, but only one is expected to match this regex and that is expected to return a
