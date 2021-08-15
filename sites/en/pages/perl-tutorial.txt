@@ -271,7 +271,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li><a href="/subroutines-and-functions-in-perl">Subroutines and Functions in Perl</a></li>
     <li><a href="/passing-multiple-parameters-to-a-function">Passing multiple parameters to a function</a></li>
     <li><a href="/variable-number-of-parameters">Variable number of parameters</a></li>
-    <li><a href="/pro/returning-a-list-from-a-subroutine">Returning a list, returning an array</a></li>
+    <li><a href="/returning-a-list-from-a-subroutine">Returning a list, returning an array</a></li>
     <li><a href="/recursive-subroutines">Recursive subroutines</a></li>
 </ol>
 

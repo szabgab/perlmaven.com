@@ -75,7 +75,7 @@ perl-tutorial:
         - subroutines-and-functions-in-perl
         - passing-multiple-parameters-to-a-function
         - variable-number-of-parameters
-        - pro/returning-a-list-from-a-subroutine
+        - returning-a-list-from-a-subroutine
         - recursive-subroutines
     - title: Hashes
       sub:
