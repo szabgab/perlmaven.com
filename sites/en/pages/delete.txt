@@ -1,0 +1,34 @@
+=title delete an element from a hash
+=timestamp 2021-09-30T08:30:01
+=indexes delete, exists
+=status show
+=books beginner
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+The <a href="https://metacpan.org/pod/perlfunc#delete-EXPR">delete</a> function will remove the given key from a hash.
+
+=abstract end
+
+<include file="examples/delete.pl">
+
+At first the key "Foo" <hl>exists</hl> in the hash and after calling <hl>delete</hl> it does not exist any more.
+
+Result:
+
+<code>
+Foo exists
+$VAR1 = {
+          'Foo' => '111',
+          'Moo' => undef,
+          'Bar' => '222'
+        };
+Foo does not exist
+$VAR1 = {
+          'Moo' => undef,
+          'Bar' => '222'
+        };
+</code>

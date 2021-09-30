@@ -83,7 +83,7 @@ perl-tutorial:
         - creating-hash-from-an-array
         - perl-hash-in-scalar-and-list-context
         - exists
-        - pro/delete
+        - delete
         - how-to-sort-a-hash-in-perl
         - count-words-in-text-using-perl
     - title: Regular Expressions
