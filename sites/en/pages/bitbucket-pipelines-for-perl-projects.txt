@@ -1,0 +1,105 @@
+=title Bitbucket Pipelines (the CI system) for Perl projects
+=timestamp 2021-10-25T10:30:01
+=indexes Bitbucket, Pipelines
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+Bitbucket Pipelines (the CI system) for Perl projects
+
+=abstract end
+
+<h2>Create a local git repository</h2>
+
+<h2>Create an empty repository on Bitbucket</h2>
+
+<h2>Enable Pipelines</h2>
+
+You could visit the Pipelines entry on the web page and select a language, but I have not
+seen Perl mentioned there so let's do it our way.
+
+All you need to do is create a file called <b>bitbucket-pipelines.yml</b> with the proper content
+and add it to the root of your repository and push it out to Bitbucket.
+
+Sample content for the <b>bitbucket-pipelines.yml</b> file.
+
+<code>
+image: perl:5.26
+
+pipelines:
+  default:
+    - step:
+        script:
+          - perl -v
+</code>
+
+Then visit the page of your repository on Bitbucket and click on the Pipelines entry on the left hand side.
+
+<img src="/img/bitbucket_left_menu_pipelines.png" alt="" />
+
+It will recognize your file, validate it, and ofer you to click on the "enable" button at the bottom of the
+screen.
+
+Once you did that everything is set. The pipeline will run every time you push out new code to your repository.
+
+One strange thing is that despite having the bitbucket-pipelines.yml file already committed, Bibucket still added
+an empty commit when I pressed the "enable" button. You'll have to pull it down to you local clone of the
+repository.
+
+<h2>What is this configuration?</h2>
+
+The above configuration tells Bitbucket to use the <a href="https://hub.docker.com/_/perl/">Perl 5.26 Docker image</a>
+and run <hl>perl -v</hl> on it. 
+
+The listing of the results will looks something like this:
+
+<img src="/img/bitbucket_pipelines_list_1.png">
+
+If you click on the link you'll see the details:
+
+<img src="/img/bitbucket_pipelines_results_1.png">
+
+You can then click on the individual stages to see the output of each stage.
+
+<h2>Running a Perl script in the Bitbucket pipeline</h2>
+
+For the next experiment we added a new file to the reposiitory called <hl>try.pl</hl> with the following content:
+
+<code>
+use strict;
+use warnings;
+
+exit(1);
+</code>
+
+and also changed the <b>bitbucket-pipelines.yml</b> file to execute the <hl>try.pl</hl> instead
+of just showing the version number of Perl.
+
+<code>
+image: perl:5.26
+
+pipelines:
+  default:
+    - step:
+        script:
+          - perl try.pl
+</code>
+
+Once we push this out to Bitbucket it will load the Docker image and run our script. The result looks like this:
+
+<img src="/img/bitbucket_pipelines_2.png">
+
+The pipeline reports failure as our script exited with 1 that indicates a failure. (0 indicates succcess any other number indicates failure.)
+
+<h2>Fixing the failure</h2>
+
+Changing the <hl>exit(1);</hl> to <hl>exit(0);</hl>, commiting the code and pushing it out again.
+
+This time the pipeline was succesful as you can also see in the listings:
+
+<img src="/img/bitbucket_pipelines_3.png">
+
+
