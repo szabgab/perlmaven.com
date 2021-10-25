@@ -243,6 +243,48 @@ $VAR1 = [
         ];
 </code>
 
+<h2>Including trailing empty fields</h2>
+
+By default <code>split</code> will exclude any fields at the end of the string that are empty. However you can pass a 3rd parameter to be <b>-1</b>.
+If the 3rd parameter is a positive number it limits the number of fields returned. When it is <b>-1</b>, it instructs <b>split</b> to include
+all the fields. Even the trailing empty fields.
+
+<include file="examples/split_empty_trailing.pl">
+
+
+<code>
+$VAR1 = [
+          '',
+          'a',
+          'b',
+          'c'
+        ];
+
+$VAR1 = [
+          '',
+          'a',
+          'b',
+          'c'
+        ];
+
+$VAR1 = [
+          '',
+          'a',
+          'b',
+          'c'
+        ];
+
+$VAR1 = [
+          '',
+          'a',
+          'b',
+          'c',
+          '',
+          ''
+        ];
+</code>
+
+
 <h2>Beware of regex special characters</h2>
 
 A common pitfall with split, especially if you use a string as the separator (<hl>split STRING, STRING</hl>) as in <hl>split ';', $line;</hl>
