@@ -1,0 +1,63 @@
+=title Bitbucket Pipelines testing Perl projects
+=timestamp 2021-11-01T07:30:01
+=indexes Bitbucket, make, Test::More, cpanm
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+We saw how to <a href="/bitbucket-pipelines-for-perl-projects">get started with Bitbucket Pipelines for Perl</a>.
+The same can be used to run any perl code on Bitbucket, but in our next step we'll see how to run the tests
+of a <a href="/distribution-directory-layout">Perl module with standard layout</a>.
+
+=abstract end
+
+For this we needed a <a href="/packaging-with-makefile-pl">Makefile.PL</a>, a module in the <hl>lib</hl> directory
+and a test file in the <hl>t/</hl> directory. (You can read a lot more about <a href="/testing">tesing Perl code</a>)
+
+The really interesting part is the content of the <hl>bitbucket-pipelines.yml</hl> file that lists the 3 steps
+we usually run to prepare a module for testing and then running the tests.
+
+<code>
+image: perl:5.26
+
+pipelines:
+  default:
+    - step:
+        script:
+          - perl Makefile.PL
+          - make
+          - make test
+</code>
+
+<h2>Adding dependencies</h2>
+
+In the first case I only used standard module in my code. That is, modules that are available in every decent installation of Perl. For the next step I added a module called Path::Tiny that is only available form CPAN.
+
+I've included a <hl>use Path::Tiny;</hl> in the module and also added Path::Tiny to the list of dependencies we maintain in Makefile.PL. When I pushed the changes out Bitbucket reported that the pipeline failed at the <hl>make test</hl> stage
+when we tried to load our module with the missing dependency.
+
+We need to install the dependencies on the Docker image before running our tests.
+
+On our own development machine we would use <hl>cpanm --installdeps .</hl> and so will we do in the pipeline.
+We only ned to add that as an entry in the scripts.
+
+<code>
+image: perl:5.26
+
+pipelines:
+  default:
+    - step:
+        script:
+          - cpanm --installdeps .
+          - perl Makefile.PL
+          - make
+          - make test
+</code>
+
+After commit this change and pushing it to Bitbucket the pipeline runs fine.
+
+
+
