@@ -757,7 +757,7 @@ tk:
       sub:
         - app-perltidy-tk-0-01
         - perl-tk-text-to-be-used-as-a-console
-        - pro/perl-tk-label-button-entry-widgets
+        - perl-tk-label-button-entry-widgets
         - pro/perl-tk-menu
         - pro/perl-tk-keyboard-and-mouse-events
 ci:
