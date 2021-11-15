@@ -1,0 +1,19 @@
+=title Perl Tk: The label, button, and entry widgets
+=timestamp 2021-11-15T08:00:01
+=indexes Tk, Tk::Menu, separator
+=status show
+=books perltk
+=author szabgab
+=tags screencast
+=description Showing how to create a menu for a Perl::Tk application.
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+=abstract end
+
+<screencast file="english-perl-tk-menu.mkv" youtube="xIopwtsSQ60" />
+
+<a href="https://code-maven.com/slides/perl/tk">Perl::Tk slides</a>
+
