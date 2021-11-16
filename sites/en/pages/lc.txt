@@ -1,6 +1,6 @@
 =title lc
 =timestamp 2020-05-16T19:40:40
-=indexes lc
+=indexes lc, lower, tolower
 =status show
 =author szabgab
 =archive 1
