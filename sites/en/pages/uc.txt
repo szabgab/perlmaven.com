@@ -1,6 +1,6 @@
 =title uc
 =timestamp 2020-05-16T19:50:10
-=indexes uc
+=indexes uc, upper, uppercase, capital
 =status show
 =author szabgab
 =archive 1
