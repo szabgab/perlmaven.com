@@ -1,0 +1,22 @@
+=title Perl Tk: Keyboard and Mouse events
+=timestamp 2021-11-21T09:00:01
+=indexes Tk, Tk::bind, Mouse, Keyboard
+=status show
+=books perltk
+=author szabgab
+=tags screencast
+=description Showing how to create to bind keyboard an mouse events to functions in a Perl Tk based application.
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Showing how to create to bind keyboard an mouse events to functions in a Perl Tk based application.
+
+=abstract end
+
+<screencast file="english-perl-tk-keyboard-and-mouse-events.mkv" youtube="FLPAue8L5Y0" />
+
+<a href="https://code-maven.com/slides/perl/tk">Perl::Tk slides</a>
+
