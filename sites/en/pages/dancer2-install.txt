@@ -1,0 +1,20 @@
+=title Dancer2: Install Perl, editor, Dancer2
+=timestamp 2021-11-29T09:30:01
+=indexes Dancer2
+=status show
+=books dancer2
+=author szabgab
+=tags screencast
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Part of the Dancer2 video course available both to <a href="/pro">Pro</a> subscribers and attendees of the <a href="https://leanpub.com/c/dancer">Perl Dancer course</a> on Leanpub.
+
+=abstract end
+
+<a href="https://code-maven.com/slides/dancer/install-perl-for-dancer">Install Perl on Windows</a>
+
+<screencast file="english-dancer2-install-perl-and-dancer.mkv" youtube="g756RC1N4Rs" />

@@ -504,7 +504,7 @@ dancer:
         - uploading-files-with-dancer2
     - title: Dancer 2 video course
       sub:
-        - pro/dancer2-install
+        - dancer2-install
         - pro/dancer2-install-perl-on-linux
         - pro/dancer2-hello-world
         - pro/dancer2-hello-world-testing

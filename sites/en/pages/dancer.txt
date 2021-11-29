@@ -47,7 +47,7 @@ The beginning of a series of articles about
 Availbale as a stand-alone purchase via <a href="https://leanpub.com/c/dancer">Leanpub</a>.
 
 <ul>
-    <li><a href="/pro/dancer2-install">Install on Windows</a></li>
+    <li><a href="/dancer2-install">Install on Windows</a></li>
     <li><a href="/pro/dancer2-install-perl-on-linux">Install on Linux and Mac OSX</a></li>
     <li><a href="/pro/dancer2-hello-world">Hello World</a></li>
     <li><a href="/pro/dancer2-hello-world-testing">Testing Hello World</a></li>
