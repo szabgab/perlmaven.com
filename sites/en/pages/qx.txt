@@ -98,4 +98,8 @@ use-case.
 
 They block the main process and wait till the external program finished so it can collect all the output.
 
+<h2>Capture::Tiny</h2>
+
+The Capture::Tiny is an excellen alternative to the <b>qx</b> operator. See the example how to
+<a href="/capture-stdout-stderr-of-external-program">capture STDOUT and STDERR of an external program</a>.
 
