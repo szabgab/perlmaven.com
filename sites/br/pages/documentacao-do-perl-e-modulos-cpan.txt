@@ -1,4 +1,4 @@
-﻿=title Documentação do núcleo da linguagem e de módulos do CPAN
+=title Documentação do núcleo da linguagem e de módulos do CPAN
 =timestamp 2013-03-27T23:22:14
 =indexes perldoc, documentação, POD, CPAN
 =status show

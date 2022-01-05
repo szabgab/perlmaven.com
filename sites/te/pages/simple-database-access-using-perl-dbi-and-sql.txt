@@ -1,4 +1,4 @@
-﻿=title Perl DBI మరియు SQL ని ఉపయోగించి డేటాబేస్ని access చెయ్యడం
+=title Perl DBI మరియు SQL ని ఉపయోగించి డేటాబేస్ని access చెయ్యడం
 =timestamp 2013-05-25T04:04:56
 =indexes SQL, DBI, DBD::SQLite, SELECT, fetchrow_array, fetchrow_hashref
 =status show

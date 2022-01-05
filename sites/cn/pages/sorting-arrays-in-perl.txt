@@ -1,4 +1,4 @@
-﻿=title Perl数组排序
+=title Perl数组排序
 =timestamp 2013-05-06T10:45:56
 =indexes sort, $a, $b, cmp, <=>
 =status show

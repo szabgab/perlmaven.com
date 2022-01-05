@@ -1,4 +1,4 @@
-﻿=title 如何使用Perl对文本进行字符串替换
+=title 如何使用Perl对文本进行字符串替换
 =timestamp 2013-05-04T13:10:10
 =indexes open, close, replace, File::Slurp, read_file, write_file, slurp, $/, $INPUT_RECORD_SEPARATOR
 =status show

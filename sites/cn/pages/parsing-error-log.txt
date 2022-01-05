@@ -1,4 +1,4 @@
-﻿=title perl来帮忙（解析错误日志）
+=title perl来帮忙（解析错误日志）
 =timestamp 2013-05-09T11:45:56
 =indexes parsing
 =status show

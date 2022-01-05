@@ -1,4 +1,4 @@
-﻿=title Perl命令行
+=title Perl命令行
 =timestamp 2013-05-18T20:45:56
 =indexes -v, -e, -p, -i
 =status show

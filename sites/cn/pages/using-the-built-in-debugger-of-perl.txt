@@ -1,4 +1,4 @@
-﻿=title 使用内置Perl调试器
+=title 使用内置Perl调试器
 =timestamp 2013-04-29T19:45:56
 =indexes debugger, -d, debug, screencast
 =status show

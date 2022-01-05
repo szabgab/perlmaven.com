@@ -1,4 +1,4 @@
-﻿=title 使用未初始化的值
+=title 使用未初始化的值
 =timestamp 2013-05-01T21:45:56
 =indexes undef, uninitialized value, $|, warnings, buffering
 =status show

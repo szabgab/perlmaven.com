@@ -1,4 +1,4 @@
-﻿=title Perl Pada Command Line
+=title Perl Pada Command Line
 =timestamp 2013-05-04T05:55:00
 =indexes -v, -e, -p, i
 =status show

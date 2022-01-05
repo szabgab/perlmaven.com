@@ -1,4 +1,4 @@
-﻿=title Perl Tutorial in Telugu (తెలుగు)
+=title Perl Tutorial in Telugu (తెలుగు)
 =timestamp 2012-05-02T00:01:13
 =status show
 =original perl-tutorial

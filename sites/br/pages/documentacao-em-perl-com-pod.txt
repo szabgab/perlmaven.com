@@ -1,4 +1,4 @@
-﻿=title Documentação em Perl com POD - Plain Old Documentation
+=title Documentação em Perl com POD - Plain Old Documentation
 =timestamp 2013-04-05T10:50:59
 =indexes POD, perldoc, =head1, =cut, =pod, =head2, documentation, documentação, pod2html, pod2pdf
 =status show

@@ -1,4 +1,4 @@
-﻿=title Редактор для Perl
+=title Редактор для Perl
 =timestamp 2013-04-08T15:09:00
 =indexes IDE, editor, Padre, vim, emacs, Eclipse, Komodo
 =status show

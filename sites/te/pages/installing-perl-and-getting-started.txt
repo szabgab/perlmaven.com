@@ -1,4 +1,4 @@
-﻿=title Perl ని ఇన్‌స్టాల్ చెయ్యడం మరియు ప్రారంభించడం
+=title Perl ని ఇన్‌స్టాల్ చెయ్యడం మరియు ప్రారంభించడం
 =timestamp 2013-04-22T01:22:02
 =indexes strict, warnings, say, print, chomp, scalar, $
 =status show

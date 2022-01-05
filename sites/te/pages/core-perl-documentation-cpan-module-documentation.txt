@@ -1,4 +1,4 @@
-﻿=title Core Perl డాక్యుమెంటేషన్ and CPAN module డాక్యుమెంటేషన్
+=title Core Perl డాక్యుమెంటేషన్ and CPAN module డాక్యుమెంటేషన్
 =timestamp 2013-05-18T06:54:56
 =indexes perldoc, documentation, POD, CPAN
 =status show

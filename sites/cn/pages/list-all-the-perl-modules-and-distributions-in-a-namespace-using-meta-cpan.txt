@@ -1,4 +1,4 @@
-﻿=title 使用Meta CPAN列出名空间的所有Perl模块和版本
+=title 使用Meta CPAN列出名空间的所有Perl模块和版本
 =timestamp 2013-05-23T12:46:56
 =indexes CPAN, MetaCPAN, MetaCPAN::API, MetaCPAN::Clients
 =status show

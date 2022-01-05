@@ -1,4 +1,4 @@
-﻿=title 简单的Perl CGI脚本通过电子邮件发送表单
+=title 简单的Perl CGI脚本通过电子邮件发送表单
 =timestamp 2013-05-23T12:45:56
 =indexes CGI
 =status show

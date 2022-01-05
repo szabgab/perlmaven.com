@@ -1,4 +1,4 @@
-﻿=title Perl默认变量$_
+=title Perl默认变量$_
 =timestamp 2013-05-17T08:41:51
 =indexes Perl, $_, scalar, default, variable, topic
 =status show

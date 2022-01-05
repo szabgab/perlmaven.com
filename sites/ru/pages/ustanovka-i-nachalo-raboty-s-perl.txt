@@ -1,4 +1,4 @@
-﻿=title Установка и начало работы с Perl
+=title Установка и начало работы с Perl
 =timestamp 2013-04-05T23:38:00
 =indexes strict, warnings, say, print, chomp, scalar, $
 =status show

@@ -1,4 +1,4 @@
-﻿=title Perl 5.10有何新特点？ say, //, state
+=title Perl 5.10有何新特点？ say, //, state
 =timestamp 2013-05-04T15:45:56
 =indexes v5.10, 5.010, say, //, defined or, state
 =status show

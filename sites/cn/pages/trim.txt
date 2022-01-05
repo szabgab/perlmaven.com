@@ -1,4 +1,4 @@
-﻿=title trim - 使用Perl删除前导和拖尾空白
+=title trim - 使用Perl删除前导和拖尾空白
 =timestamp 2013-05-05T10:01:01
 =indexes trim, ltrim, rtrim
 =status show

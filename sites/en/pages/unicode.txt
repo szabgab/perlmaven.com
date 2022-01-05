@@ -1,4 +1,4 @@
-﻿=title What is Unicode
+=title What is Unicode
 =timestamp 2013-08-08T08:22:13
 =indexes Unicode, UTF-8
 =status show

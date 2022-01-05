@@ -1,4 +1,4 @@
-﻿=title 全局符号需要明确包名
+=title 全局符号需要明确包名
 =timestamp 2013-05-02T12:45:56
 =indexes strict, my, package, global symbol
 =status show

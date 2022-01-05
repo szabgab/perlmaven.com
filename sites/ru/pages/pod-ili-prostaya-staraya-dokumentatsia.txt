@@ -1,4 +1,4 @@
-﻿=title POD, или Простая cтарая документация
+=title POD, или Простая cтарая документация
 =timestamp 2013-04-21T13:13:17
 =indexes POD, perldoc, =head1, =cut, =pod, =head2, documentation, pod2html, pod2pdf
 =status show

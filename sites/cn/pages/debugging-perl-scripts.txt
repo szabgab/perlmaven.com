@@ -1,4 +1,4 @@
-﻿=title 调试Perl脚本
+=title 调试Perl脚本
 =timestamp 2013-05-21T19:45:57
 =indexes -d, Data::Dumper, print, debug, debugging, $VAR1, $VAR2
 =status show

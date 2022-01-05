@@ -1,4 +1,4 @@
-﻿=title Основная документация Perl и документация на модули CPAN
+=title Основная документация Perl и документация на модули CPAN
 =timestamp 2013-04-13T02:38:44
 =indexes perldoc, documentation, POD, CPAN
 =status show
