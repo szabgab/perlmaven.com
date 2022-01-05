@@ -5,7 +5,7 @@
 =books psgi, anyevent
 =description Twiggy is an asynchronous application server for Perl compatible with PSGI. Check out our example on how to use it.
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

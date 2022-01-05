@@ -5,12 +5,12 @@
 =books dancer2
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
 Now that we have the basics, it might be time to connect to a database, add items to it and fetch the items we have added.
-We are going to use MongoDB as our database. In order to use that you'll need to install the 
+We are going to use MongoDB as our database. In order to use that you'll need to install the
 <a href="https://metacpan.org/pod/MongoDB">MongoDB</a> driver.
 
 This process will require several steps.

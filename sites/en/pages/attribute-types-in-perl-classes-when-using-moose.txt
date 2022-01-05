@@ -5,7 +5,7 @@
 =books advanced, moose
 =description Moose is the most comprehensive OOP framework for Perl. This article covers the attribute types avaliable in Moose.
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
