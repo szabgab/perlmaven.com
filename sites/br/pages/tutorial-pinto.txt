@@ -5,7 +5,7 @@
 =original pinto-tutorial
 =author thalhammer
 =translator leprevost
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
