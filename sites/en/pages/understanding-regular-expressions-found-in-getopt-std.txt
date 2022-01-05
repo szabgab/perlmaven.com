@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -37,13 +37,13 @@ Looking at <a href="https://metacpan.org/pod/Getopt::Std">Getopt::Std</a> I saw 
 while (@ARGV && ($_ = $ARGV[0]) =~ /^-(.)(.*)/) {
 </code>
 
-The regex <hl>/^-(.)(.*)/</hl> is quite simple. 
-<hl>^</hl> at the beginning of the string there must be a 
+The regex <hl>/^-(.)(.*)/</hl> is quite simple.
+<hl>^</hl> at the beginning of the string there must be a
 dash <hl>-</hl>. After that any character matched by <hl>.</hl>
 and captured by the parentheses <hl>(.)</hl> into <hl>$1</hl>.
 The <hl>(.*)</hl> will capture any leftover characters from the string.
 
-So this regex will match things like "-a", "-abc",  but it won't match "--xyz" nor "abc".
+So this regex will match things like "-a", "-abc", or "--xyz" (the (.) will match the 2nd dash), but it won't match "abc".
 
 This is of course not surprising as the purpose of <a href="https://metacpan.org/pod/Getopt::Std">Getopt::Std</a> is to handle
 command line parameters with single leading dash.
