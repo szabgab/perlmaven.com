@@ -3,7 +3,7 @@
 =indexes v5.10, 5.010, say, //, defined or, state, ||=, //=
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
