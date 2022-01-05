@@ -6,7 +6,7 @@
 =books advanced
 =author szabgab
 =translator grubert65
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
