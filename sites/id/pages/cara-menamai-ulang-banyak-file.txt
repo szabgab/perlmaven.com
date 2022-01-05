@@ -5,7 +5,7 @@
 =original how-to-rename-multiple-files
 =author szabgab
 =translator khadis
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
