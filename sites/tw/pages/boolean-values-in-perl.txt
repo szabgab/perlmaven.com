@@ -6,7 +6,7 @@
 =books beginner
 =author szabgab
 =translator shelling
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

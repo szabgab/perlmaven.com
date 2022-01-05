@@ -5,7 +5,7 @@
 =original how-to-add-link-to-version-control-system-of-a-cpan-distributions
 =author szabgab
 =translator shelling
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

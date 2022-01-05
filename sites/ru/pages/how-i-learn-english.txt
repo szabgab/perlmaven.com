@@ -2,7 +2,7 @@
 =timestamp 2015-02-07T10:00:01
 =status show
 =author name2rnd
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 =original how-i-learn-english
 
 =abstract start

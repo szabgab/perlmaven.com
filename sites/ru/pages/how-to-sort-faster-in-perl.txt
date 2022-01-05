@@ -5,7 +5,7 @@
 =original how-to-sort-faster-in-perl
 =author szabgab
 =translator ymyasoedov
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

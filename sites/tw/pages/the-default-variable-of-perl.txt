@@ -5,7 +5,7 @@
 =original the-default-variable-of-perl
 =author szabgab
 =translator h2chang
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

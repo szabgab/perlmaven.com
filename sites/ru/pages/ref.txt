@@ -5,7 +5,7 @@
 =original ref
 =author szabgab
 =translator name2rnd
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

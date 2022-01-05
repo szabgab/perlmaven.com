@@ -5,7 +5,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 =original installing-perl-and-getting-started
 =translator rozie
 
