@@ -5,7 +5,7 @@
 =original smart-matching-in-perl-5.10
 =author szabgab
 =translator swuecho
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 Perl 5.10 于 Perl 20 周年发布（2007年 12月 18 日）。该版本增添了不少新特性。

@@ -5,7 +5,7 @@
 =original list-all-the-perl-modules-and-distributions-in-a-namespace-using-meta-cpan
 =author szabgab
 =translator herolee
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

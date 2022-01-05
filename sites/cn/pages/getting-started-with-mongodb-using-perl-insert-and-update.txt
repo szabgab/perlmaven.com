@@ -6,7 +6,7 @@
 =books mongodb
 =author szabgab
 =translator fenggao
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

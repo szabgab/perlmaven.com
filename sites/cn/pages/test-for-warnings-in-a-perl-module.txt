@@ -5,7 +5,7 @@
 =original test-for-warnings-in-a-perl-module
 =author szabgab
 =translator terrencehan
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
