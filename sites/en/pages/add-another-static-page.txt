@@ -5,7 +5,7 @@
 =status show
 =books search_cpan_org
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -32,7 +32,7 @@ instead of the mail address of the real search.cpan.org site, and to explicitly 
 
 <h2>Mapping URL (routing)</h2>
 
-We need to map the path <hl>/feedback</hl> in the URL to yhe appropriate template. This is done in the 
+We need to map the path <hl>/feedback</hl> in the URL to yhe appropriate template. This is done in the
 <hl>run</hl> function of
 <a href="https://github.com/szabgab/MetaCPAN-SCO/blob/66f0732a58ca0bae5a635738e40730d1bb8ab26b/lib/MetaCPAN/SCO.pm">lib/MetaCPAN/SCO.pm</a>
 by adding the following lines:
