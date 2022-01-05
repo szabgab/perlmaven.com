@@ -7,7 +7,7 @@
 =author szabgab
 =original the-problem-with-libraries
 =translator nselem
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

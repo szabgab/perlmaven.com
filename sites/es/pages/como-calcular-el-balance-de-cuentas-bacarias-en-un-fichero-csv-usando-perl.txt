@@ -5,7 +5,7 @@
 =original how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl
 =author szabgab
 =translator danimera
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

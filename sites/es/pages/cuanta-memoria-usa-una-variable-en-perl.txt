@@ -5,7 +5,7 @@
 =original how-much-memory-do-perl-variables-use
 =author szabgab
 =translator danimera
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 Hay casos en que sería muy importante saber cuánto usa cada variable en Perl.

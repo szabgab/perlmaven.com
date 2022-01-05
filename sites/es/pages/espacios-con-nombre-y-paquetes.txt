@@ -7,7 +7,7 @@
 =books advanced
 =translator nselem
 =original namespaces-and-packages
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 
 

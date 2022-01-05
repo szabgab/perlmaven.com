@@ -6,7 +6,7 @@
 =original fetching-data-from-youtube-using-perl
 =author szabgab
 =translator lenieto3
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

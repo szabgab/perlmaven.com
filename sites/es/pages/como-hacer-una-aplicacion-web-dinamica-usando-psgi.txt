@@ -5,7 +5,7 @@
 =original how-to-build-a-dynamic-web-application-using-psgi
 =author szabgab
 =translator danimera
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
