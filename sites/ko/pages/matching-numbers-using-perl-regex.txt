@@ -5,7 +5,7 @@
 =original matching-numbers-using-perl-regex
 =author szabgab
 =translator gypark
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
