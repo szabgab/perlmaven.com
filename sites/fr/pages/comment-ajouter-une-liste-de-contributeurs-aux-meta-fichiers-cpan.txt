@@ -5,7 +5,7 @@
 =original how-to-add-list-of-contributors-to-the-cpan-meta-files
 =author szabgab
 =translator oval
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

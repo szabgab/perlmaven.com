@@ -6,7 +6,7 @@
 =author 0
 =translator oval
 =archive 0
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 =show_social 0
 
 Ceci est la liste des mots clés ou sujets à partir desquels vous pouvez retrouver des articles.

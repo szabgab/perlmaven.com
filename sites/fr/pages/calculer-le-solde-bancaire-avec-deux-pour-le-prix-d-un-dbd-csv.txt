@@ -5,7 +5,7 @@
 =original calculate-bank-balance-take-two-dbd-csv
 =author dmcbride
 =translator oval
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
