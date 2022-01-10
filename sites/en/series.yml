@@ -505,7 +505,7 @@ dancer:
     - title: Dancer 2 video course
       sub:
         - dancer2-install
-        - pro/dancer2-install-perl-on-linux
+        - dancer2-install-perl-on-linux
         - pro/dancer2-hello-world
         - pro/dancer2-hello-world-testing
         - pro/dancer2-hello-world-with-vscode
