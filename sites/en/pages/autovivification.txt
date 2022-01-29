@@ -22,7 +22,7 @@ which means <b>to bring to life</b>.
 
 <h2>The simple cases for hashes</h2>
 
-The most simple form of it is when you have a hash and you set a value of a
+The simplest form of autovivification is when you have a hash and you set a value of a
 key that did not exist before.
 
 <code lang="perl">
@@ -85,8 +85,8 @@ $VAR1 = {
         };
 </code>
 
-Perl treats the not-existent value as <a href="/undef-and-defined-in-perl">undef</a>.
-When <hl>undef</hl> is used in a <a href="/numerical-operators">numerical operation</a> it acts as if it was 0.
+Perl treats the nonexistent value as <a href="/undef-and-defined-in-perl">undef</a>.
+When <hl>undef</hl> is used in a <a href="/numerical-operators">numerical operation</a> it acts as if it were 0.
 In most cases this would generate a <a href="/use-of-uninitialized-value"">use of uninitialized value"</a> warning,
 but specifically in the auto-increment operation it works without complaining.
 
@@ -94,8 +94,8 @@ The resulting value is then assigned back to the hash, creating the key.
 
 <h2>The simple cases for arrays</h2>
 
-In case of an array, if you assign a value to a not-existing element of the array,
-or use auto-increment on such element, Perl will automatically enlarge the array
+In the case of an array, if you assign a value to a nonexistent element,
+or use auto-increment on such an element, Perl will automatically enlarge the array
 creating all the elements up to the required index, and assigning <hl>undef</hl>
 to each intermediate element.
 
@@ -124,14 +124,14 @@ $VAR1 = [
         ];
 </code>
 
-This means writing <hl>$counter[1_000_000]++;</hl> will enlarge the array to have a million elements almost all of them being <hl>undef</hl>.
+This means writing <hl>$counter[1_000_000]++;</hl> will enlarge the array to have a million elements with almost all of them being <hl>undef</hl>.
 Such a <a href="http://en.wikipedia.org/wiki/Sparse_array">sparse array</a> is a huge waste of memory.
 In such cases a hash would be probably a better data structure to use.
 
 
 <h2>Complex data structures</h2>
 
-Autovivification starts to be really interesting on deep data structures. Even when creating a two dimensional hash,
+Autovivification starts to be really interesting in deep data structures. Even when creating a two dimensional hash,
 you can just write <hl>$people{Foo}{phone} = '123-456';</hl> and Perl will create the internal hash for the 'Foo' key:
 
 <code lang="perl">
@@ -327,8 +327,8 @@ if (exists $people{Foo}) {
 print Dumper \%people;
 </code>
 
-If first we check if the key to the outer hash <hl>exists</hl> and only then
-do we go on checking the phone number, or trying to delete it.
+If we first check if the key to the outer hash <hl>exists</hl> and only then
+check the phone number, or try to delete it, the element will not be created.
 
 This will keep the outer hash clean:
 
@@ -387,7 +387,7 @@ $VAR1 = {
 Autovivification is a good thing but we need to be careful we don't create unnecessary
 elements while trying to check (or delete) internal elements.
 
-Or at least we know why were they created.
+At least now we know why were they created.
 
 
 
