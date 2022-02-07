@@ -506,7 +506,7 @@ dancer:
       sub:
         - dancer2-install
         - dancer2-install-perl-on-linux
-        - pro/dancer2-hello-world
+        - dancer2-hello-world
         - pro/dancer2-hello-world-testing
         - pro/dancer2-hello-world-with-vscode
         - pro/dancer2-plackup-reload

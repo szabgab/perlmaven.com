@@ -1,0 +1,20 @@
+=title Dancer2: Hello World
+=timestamp 2022-02-07T08:00:01
+=indexes Dancer2, plackup
+=status show
+=books dancer2
+=author szabgab
+=tags screencast
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Part of the Dancer2 video course available both to <a href="/pro">Pro</a> subscribers and attendees of the <a href="https://leanpub.com/c/dancer">Perl Dancer course</a> on Leanpub.
+
+=abstract end
+
+<a href="https://code-maven.com/slides/dancer/hello-world-with-dancer">Hello World</a>
+
+<screencast file="english-dancer2-hello-world.mkv" youtube="qK9tDFTvHlo" />
