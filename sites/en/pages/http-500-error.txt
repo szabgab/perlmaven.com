@@ -130,7 +130,7 @@ or makes sure the upload does the conversion. (ftp text mode)
 
 Sample code:
 
-<include file="examples/without_definedness_checkig/app.pl">
+<include file="examples/without_definedness_checking/app.pl">
 
 <code>
 $ ./app.pl
@@ -151,7 +151,7 @@ It is expected to be 0 after every successful run.
 
 Fixing: check if the parameters you are expecting were supplied.
 
-<include file="examples/without_definedness_checkig/app.pl">
+<include file="examples/without_input_checkig/app.pl">
 
 This works now:
 
