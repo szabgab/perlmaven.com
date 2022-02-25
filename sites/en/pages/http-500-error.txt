@@ -18,6 +18,16 @@ On this page you'll find some of the most common cases and their solutions.
 
 =abstract end
 
+<ul>
+   <li>The CGI script is not executable</li>
+   <li>First line is not an sh-bang line</li>
+   <li>No header (no Content-type)</li>
+   <li>DOS-style line endings</li>
+   <li>Exception in the code</li>
+</ul>
+
+
+
 <h2>The CGI script is not executable</h2>
 
 Check if the rights on the file:
@@ -27,7 +37,7 @@ $ ls -l app.pl
 -rw-rw-r-- 1 gabor gabor 378 Feb 25 08:57 app.pl
 </code>
 
-Solution: Make it exewcutable:
+Solution: Make it executable:
 
 <code>
 chmod +x app.pl
@@ -106,7 +116,7 @@ my $q = CGI->new;
 print $q->header(-charset => 'utf-8');
 </code>
 
-<h2>DOS-tyep line endings</h2>
+<h2>DOS-style line endings</h2>
 
 <code>
 $ ./app.pl
