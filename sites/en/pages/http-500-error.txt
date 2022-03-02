@@ -26,6 +26,21 @@ On this page you'll find some of the most common cases and their solutions.
    <li>Exception in the code</li>
 </ul>
 
+<h2>Checking syntax errors</h2>
+
+A basic thing would be to make sure we do not have a syntax error in the file on the server:
+
+<code>
+perl -c app.pl
+</code>
+
+It might be also useful to turn on warnings using the <b>-w</b> flag and to make sure there are no warnings emitted
+by the program, but if you wrote it carefully following my suggestions to <a href="/always-use-warnings">always use warnings</a>
+then this is not necessary. In any case you could try this:
+
+<code>
+perl -cw app.pl
+</code>
 
 
 <h2>The CGI script is not executable</h2>
