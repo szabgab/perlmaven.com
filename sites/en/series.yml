@@ -509,7 +509,7 @@ dancer:
         - dancer2-hello-world
         - dancer2-hello-world-testing
         - dancer2-hello-world-with-vscode
-        - pro/dancer2-plackup-reload
+        - dancer2-plackup-reload
         - pro/dancer2-current-time
         - pro/dancer2-testing-404-and-500-responses
         - pro/dancer2-process-get-and-post-requests
