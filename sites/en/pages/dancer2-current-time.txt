@@ -1,0 +1,25 @@
+=title Dancer2: Show current time
+=timestamp 2022-04-11T07:30:01
+=indexes Dancer2
+=status show
+=books dancer2
+=author szabgab
+=tags screencast
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Part of the Dancer2 video course available both to <a href="/pro">Pro</a> subscribers and attendees of the <a href="https://leanpub.com/c/dancer">Perl Dancer course</a> on Leanpub.
+
+=abstract end
+
+<screencast file="english-dancer2-current-time.mkv" youtube="mO4HywcTWUI" />
+
+<ul>
+    <li><a href="https://code-maven.com/slides/dancer/showing-the-current-time-with-dancer">Showing the current time with Dancer</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/testing-the-current-time-with-dancer">Testing the current time with Dancer</a></li>
+</ul>
+
+
