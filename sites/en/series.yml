@@ -511,7 +511,7 @@ dancer:
         - dancer2-hello-world-with-vscode
         - dancer2-plackup-reload
         - dancer2-current-time
-        - pro/dancer2-testing-404-and-500-responses
+        - dancer2-testing-404-and-500-responses
         - pro/dancer2-process-get-and-post-requests
         - pro/dancer2-exercise-1
         - pro/dancer2-solution-1-calculator

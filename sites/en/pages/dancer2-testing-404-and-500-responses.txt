@@ -1,0 +1,26 @@
+=title Dancer2: Testing 404 and 500 error responses
+=timestamp 2022-04-25T07:30:01
+=indexes Dancer2
+=status show
+=books dancer2
+=author szabgab
+=tags screencast
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Part of the Dancer2 video course available both to <a href="/pro">Pro</a> subscribers and attendees of the <a href="https://leanpub.com/c/dancer">Perl Dancer course</a> on Leanpub.
+
+=abstract end
+
+<screencast file="english-dancer2-testing-404-and-500-responses.mkv" youtube="lfutny_FIJ4" />
+
+<ul>
+    <li><a href="https://code-maven.com/slides/dancer/dancer-404-not-found-error">404 Not Found in Dancer</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/dancer-500-internal-server-error">500 Internal Server Error in Dancer</a></li>
+</ul>
+
+
+
