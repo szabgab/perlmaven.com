@@ -11,8 +11,8 @@
 =abstract start
 
 <a href="https://metacpan.org/release/Term-ReadLine-Gnu">Term-ReadLine-Gnu</a> is used by quite a few modules, including Dist::Zilla,
-but it isn't always clear how to install it. Here I collected some of the instructins and tested them on
-using Github Actions in <a href="https://github.com/szabgab/testing-Term-ReadLine-Gnu/actions">this reposiotry</a>.
+but it isn't always clear how to install it. Here I collected some of the instructions and tested them on
+using Github Actions in <a href="https://github.com/szabgab/testing-Term-ReadLine-Gnu/actions">this repository</a>.
 
 =abstract end
 
