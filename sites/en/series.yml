@@ -512,7 +512,7 @@ dancer:
         - dancer2-plackup-reload
         - dancer2-current-time
         - dancer2-testing-404-and-500-responses
-        - pro/dancer2-process-get-and-post-requests
+        - dancer2-process-get-and-post-requests
         - pro/dancer2-exercise-1
         - pro/dancer2-solution-1-calculator
         - pro/dancer2-solution-1-calculator-fixing
