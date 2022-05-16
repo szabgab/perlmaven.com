@@ -1,0 +1,24 @@
+=title Dancer2: Exercise 1 - Calculator, Counter
+=timestamp 2022-05-16T07:30:01
+=indexes Dancer2
+=status show
+=books dancer2
+=author szabgab
+=tags screencast
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Part of the Dancer2 video course available both to <a href="/pro">Pro</a> subscribers and attendees of the <a href="https://leanpub.com/c/dancer">Perl Dancer course</a> on Leanpub.
+
+=abstract end
+
+<screencast file="english-dancer2-exercise-1.mkv" youtube="EYUTvW7pGWE" />
+
+<ul>
+    <li><a href="https://code-maven.com/slides/dancer/exercise-dancer-calculator">Exercise: Dancer Calculator</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/exercise-dancer-counter">Exercise: Dancer Counter</a></li>
+</ul>
+
