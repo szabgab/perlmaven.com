@@ -516,7 +516,7 @@ dancer:
         - dancer2-exercise-1
         - dancer2-solution-1-calculator
         - dancer2-solution-1-calculator-fixing
-        - pro/dancer2-solution-1-counter
+        - dancer2-solution-1-counter
         - pro/dancer2-show-errors-during-development
         - pro/dancer2-logging
         - pro/dancer2-route-parameters
