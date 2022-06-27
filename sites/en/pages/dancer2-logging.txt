@@ -1,0 +1,23 @@
+=title Dancer2: Logging
+=timestamp 2022-06-27T07:40:01
+=indexes Dancer2
+=status show
+=books dancer2
+=author szabgab
+=tags screencast
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Part of the Dancer2 video course available both to <a href="/pro">Pro</a> subscribers and attendees of the <a href="https://leanpub.com/c/dancer">Perl Dancer course</a> on Leanpub.
+
+=abstract end
+
+<screencast file="english-dancer2-logging.mkv" youtube="tHJ7gomQk3A" />
+
+<ul>
+    <li><a href="https://code-maven.com/slides/dancer/dancer-logging">Dancer: Logging</a></li>
+</ul>
+
