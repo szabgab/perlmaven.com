@@ -1,4 +1,4 @@
-=title Dancer2: Route parameters and seding 404 manually
+=title Dancer2: Route parameters and sending 404 manually
 =timestamp 2022-07-04T08:15:01
 =indexes Dancer2
 =status show
