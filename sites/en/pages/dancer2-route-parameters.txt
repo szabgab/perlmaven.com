@@ -1,0 +1,28 @@
+=title Dancer2: Route parameters and seding 404 manually
+=timestamp 2022-07-04T08:15:01
+=indexes Dancer2
+=status show
+=books dancer2
+=author szabgab
+=tags screencast
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Part of the Dancer2 video course available both to <a href="/pro">Pro</a> subscribers and attendees of the <a href="https://leanpub.com/c/dancer">Perl Dancer course</a> on Leanpub.
+
+=abstract end
+
+<screencast file="english-dancer2-route-parameters.mkv" youtube="3S-bKdvvKFg" />
+
+<ul>
+    <li><a href="https://code-maven.com/slides/dancer/receive-parameter-in-route-dancer">Dancer: Receive parameter in route</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/test-parameter-in-route-dancer">Dancer: Test parameter in route</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/type-checking-for-the-route-parameters">Dancer: Type-checking for the route parameters</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/test-type-checking-for-the-route-parameters">Dancer: Test Type-checking for the route parameters</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/send-404-not-found-manually-dancer">Dancer: Send 404 Not Found manually</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/test-send-404-not-found-manually-dancer">Dancer: Test sending 404 Not Found manually</a></li>
+</ul>
+
