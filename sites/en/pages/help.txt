@@ -36,6 +36,18 @@ It has a very modern look, but the types of questions you are allowed to ask the
 
 <a href="http://www.linkedin.com/">LinkedIN</a> has several Perl groups. You can ask questions there too.
 
+There are also people asking questions on <a href="https://www.reddit.com/r/perl">Reddit /r/perl</a>
+
+<h2>Facebook</h2>
+
+There are several Perl-related Facebook pages where you can try to ask for help:
+
+<a href="https://www.facebook.com/groups/perlprogrammers/">Perl programmers</a>
+
+<a href="https://www.facebook.com/groups/perlcommunity/">Perl Community</a>
+
+<a href="https://www.facebook.com/groups/perlmonger/">Perl Mongers</a>
+
 <h2>Mailing lists</h2>
 
 There are lots of <a href="http://lists.perl.org/">topic specific mailing list</a> for Perl, but if you are a beginner, or
