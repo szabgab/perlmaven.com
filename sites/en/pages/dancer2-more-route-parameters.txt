@@ -1,0 +1,27 @@
+=title Dancer2: More route parameters
+=timestamp 2022-07-17T09:40:01
+=indexes Dancer2
+=status show
+=books dancer2
+=author szabgab
+=tags screencast
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Part of the Dancer2 video course available both to <a href="/pro">Pro</a> subscribers and attendees of the <a href="https://leanpub.com/c/dancer">Perl Dancer course</a> on Leanpub.
+
+=abstract end
+
+<screencast file="english-dancer2-more-route-parameters.mkv" youtube="WMJQzMyBHKE" />
+
+
+<ul>
+    <li><a href="https://code-maven.com/slides/dancer/optional-route-parameter">Dancer: Optional route parameter</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/regex-route-parameter">Dancer: Regex route parameter</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/wildcard-route-parameter">Dancer: Wildcard route parameter</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/redirect">Redirect</a></li>
+</ul>
+
