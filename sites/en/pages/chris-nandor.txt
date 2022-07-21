@@ -17,6 +17,8 @@ As I have not heard much from him in recent years I thought it would be interest
 
 =abstract end
 
+<img src="/img/chris-nandor.jpeg" alt="Chris Nandor" />
+
 <h2>When and how did you first start using Perl?</h2>
 
 I started in 1995. I had just gotten my degree in journalism, and I got a job at
