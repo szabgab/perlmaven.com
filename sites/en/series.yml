@@ -523,7 +523,7 @@ dancer:
         - dancer2-more-route-parameters
         - dancer2-exercise-2
         - dancer2-solution-2-route-based-multicounter
-        - pro/dancer2-solution-2-random-redirect
+        - dancer2-solution-2-random-redirect
         - pro/dancer2-configuration
         - pro/dancer2-sessions
         - pro/dancer2-return-json
