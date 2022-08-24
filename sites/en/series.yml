@@ -524,7 +524,7 @@ dancer:
         - dancer2-exercise-2
         - dancer2-solution-2-route-based-multicounter
         - dancer2-solution-2-random-redirect
-        - pro/dancer2-configuration
+        - dancer2-configuration
         - pro/dancer2-sessions
         - pro/dancer2-return-json
         - pro/dancer2-hooks
