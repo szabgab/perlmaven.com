@@ -1,0 +1,27 @@
+=title Dancer2: Sessions
+=timestamp 2022-09-02T14:30:01
+=indexes Dancer2, session, Test::WWW::Mechanize::PSGI
+=status show
+=books dancer2
+=author szabgab
+=tags screencast
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Part of the Dancer2 video course available both to <a href="/pro">Pro</a> subscribers and attendees of the <a href="https://leanpub.com/c/dancer">Perl Dancer course</a> on Leanpub.
+
+=abstract end
+
+<ul>
+    <li><a href="https://code-maven.com/slides/dancer/session">Session</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/session-test">Test Session</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/session-test-use-cookie-jar">Test Session use cookie jar</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/session-test-use-cookie-jar-2">Test Session use cookie jar - 2 browsers</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/session-test-use-mechanize-psgi">Test Session use Test::WWW::Mechanize::PSGI</a></li>
+    <li><a href="https://code-maven.com/slides/dancer/session-test-use-mechanize-psgi-2">Test Session use Test::WWW::Mechanize::PSGI - 2 browsers</a></li>
+</ul>
+
+<screencast file="english-dancer2-sessions.mkv" youtube="fvs3vyEfLuk" />
