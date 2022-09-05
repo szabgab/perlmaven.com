@@ -43,6 +43,7 @@ while ( my $file = $it->() ) {
         #    fail("there trailing spaces in line '$1' in $file");
         #}
 
+        next if $file =~ /\.txt$/;
 	    undef @warns;
 	    my $enc = guess_encoding(path($file)->slurp);
 	    like ref $enc, qr/^Encode::(utf8|XS)$/, "slurp $file";
