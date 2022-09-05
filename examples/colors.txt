@@ -1,0 +1,10 @@
+Plain text in the default color
+[0;32m
+Green text
+[0;31m
+Red text
+[0;33m yellow [0;32m green [0;31m red
+[0;37m
+White text
+[0;30m
+Black text

@@ -1,0 +1,77 @@
+=title ANSI command line colors with Perl
+=timestamp 2022-09-05T07:30:01
+=indexes ANSI, cat, color, more, less
+=status show
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Many command on the Unix/Linux command line will print out text in various colors. For example the <hl>ls</hl> command accepts a <hl>--color</hl>
+flag and then it adds color to the file-system listings. You can convince your prompt to change color based on some condition.
+e.g. the weather outside.
+
+How can you create such colorful output with Perl and how could you do it manually?
+
+=abstract end
+
+The key to this is the <a href="https://en.wikipedia.org/wiki/ANSI_escape_code">ANSI escape code tabel</a>
+where you can find how to give instructions to the screen of a command-line window. Some of these instructions are related to color.
+
+Here is an example script:
+
+<include file="examples/colors.pl">
+
+Here I selected a few colors from the ANSI escape code table and put them in plain scalar variables. Then I only needed to print them to the screeen.
+
+Running this script:
+
+<code>
+perl colors.pl
+</code>
+
+resulted in the following output on my computer:
+
+<img src="/img/ansi-colors.png" alt="ansi colored output text">
+
+
+<h2>Color file content manually</h2>
+
+If I run the same script and redirect the output to a file
+
+<code>
+perl color.pl > colors.txt
+</code>
+
+I'll get a "regular" text file that looks like this if I open it with any regular editor. e.g. vim.
+
+<include file="examples/colors.txt">
+
+However using <hl>cat</hl> to display the file will evaluate the ANSI escape codes
+
+<code>
+cat colors.txt
+</code>
+
+and you will see the same as previously when we ran the Perl script.
+
+<img src="/img/ansi-colors.png" alt="ansi colored output text">
+
+However you don't need a Perl script to create the file. You can edit it manually as well.
+
+The <hl>more</hl> command gives you the same colorful result:
+
+<code>
+more colors.txt
+</code>
+
+However, these ANSI escape codes confuse the <hl>less</hl> command:
+
+<code>
+less colors.txt
+"colors.txt" may be a binary file.  See it anyway?
+</code>
+
