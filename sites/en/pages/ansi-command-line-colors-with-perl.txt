@@ -74,3 +74,17 @@ less colors.txt
 "colors.txt" may be a binary file.  See it anyway?
 </code>
 
+
+<h2>less -rf and <a href="https://metacpan.org/pod/Term::ANSIColor">Term::ANSIColor</a></h2>
+
+After posting this article I received a comment from Thomas Köhler telling me that <hl>less -r</hl>
+would show the color. That helped me overcome my lazyness and checked the manual page of <hl>less</hl>.
+I found that the <hl>-f</hl> flag would suppress the <b>may be a binary file.  See it anyway?</b> warning.
+So you can use
+
+<code>
+less -rf colors.txt
+</code>
+
+He also showed two other ways to <a href="http://gott-gehabt.de/800_wer_wir_sind/thomas/Homepage/Computer/perl/ansi-colors.html">use ANSI colors in Perl</a>.
+
