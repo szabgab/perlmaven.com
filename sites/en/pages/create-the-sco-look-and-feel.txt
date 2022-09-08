@@ -16,9 +16,7 @@ to separate the Perl code from the HTML code. The next step is to create the loo
 
 =abstract end
 
-<screencast file="/media/videos/create-the-sco-look-and-feel" />
-
-<a href="https://www.youtube.com/watch?v=H6bbo-LYpkw">YouTube</a>
+<screencast file="create-the-sco-look-and-feel" youtube="H6bbo-LYpkw" />
 
 As we don't have access to the templates creating search.cpan.org, we are going to create those ourself.
 

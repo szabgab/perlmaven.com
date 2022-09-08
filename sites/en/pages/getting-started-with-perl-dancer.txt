@@ -17,9 +17,7 @@ first (and very basic) web application using Perl Dancer <b>regardless of your o
 
 =abstract end
 
-<screencast file="/media/videos/getting-started-with-perl-dancer-1280x720" />
-
-<a href="https://www.youtube.com/watch?v=266P43Nk4vk">YouTube</a>
+<screencast file="getting-started-with-perl-dancer-1280x720" youtube="266P43Nk4vk" />
 
 <div id="text">
 

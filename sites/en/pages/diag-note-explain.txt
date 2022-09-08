@@ -14,7 +14,7 @@ In addition to the various functions that improved versions of the <hl>ok()</hl>
 
 =abstract end
 
-<screencast file="/media/videos/diag-note-explain" youtube="QBGIsZqolIs" />
+<screencast file="diag-note-explain" youtube="QBGIsZqolIs" />
 
 While we could use simple <hl>print</hl> statements instead of these functions, using these functions will ensure that our diagnostic messages won't
 interfere with any future changes in <a href="/tap-test-anything-protocol">TAP, the Test Anything Protocol</a>. So it is worth using them

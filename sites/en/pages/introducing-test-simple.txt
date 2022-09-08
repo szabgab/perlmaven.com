@@ -13,7 +13,7 @@ Let's start by understanding the concept of automated unit test.
 
 =abstract end
 
-<screencast file="/media/videos/introducing-test-simple" youtube="NTQ7W1kCu74" />
+<screencast file="introducing-test-simple" youtube="NTQ7W1kCu74" />
 
 Let's say we have a very simple file called <hl>lib/MyCalc.pm</hl> with the following content:
 

@@ -16,7 +16,7 @@ with lots of knobs to fiddle with, but there is an easy way to get started using
 
 =abstract end
 
-<screencast file="/media/videos/logging-with-log4perl-the-easy-way" youtube="BVhSPYZjjHg" />
+<screencast file="logging-with-log4perl-the-easy-way" youtube="BVhSPYZjjHg" />
 
 <h2>Log in a script</h2>
 

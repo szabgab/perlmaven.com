@@ -13,7 +13,7 @@ This time we'll see the example extended to a module.
 
 =abstract end
 
-<screencast file="/media/videos/logging-in-modules-with-log4perl-the-easy-way" youtube="CmmPRLafJq4" />
+<screencast file="logging-in-modules-with-log4perl-the-easy-way" youtube="CmmPRLafJq4" />
 
 In order to show how this works, we have two files:
 

@@ -16,7 +16,7 @@ Similarly if we would like to deny access based on a set of rules regarding the 
 
 =abstract end
 
-<screencast file="/media/videos/is-this-ip-in-the-given-subnet" youtube="M7Ki3r8g5-o" />
+<screencast file="is-this-ip-in-the-given-subnet" youtube="M7Ki3r8g5-o" />
 
 <h2>Fixed list of IP add resses</h2>
 
