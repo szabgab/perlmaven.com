@@ -16,11 +16,9 @@ probably the most well known and most commonly used. It also has plenty of plugi
 
 =abstract end
 
-<screencast file="/media/videos/start-using-template-toolkit-to-show-empty-pages" />
+<screencast file="start-using-template-toolkit-to-show-empty-pages" youtube="6hNWd48HxqU" />
 
-<a href="https://www.youtube.com/watch?v=6hNWd48HxqU">YouTube</a>
-
-In <hl>lib/MetaCPAN/SCO.pm</hl> we replace the 
+In <hl>lib/MetaCPAN/SCO.pm</hl> we replace the
 
 <code>
 return [ '200', [ 'Content-Type' => 'text/plain' ], ['Hello'], ];

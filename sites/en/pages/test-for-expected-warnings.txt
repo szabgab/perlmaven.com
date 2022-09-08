@@ -21,7 +21,7 @@ likes to eliminate warnings....
 
 =abstract end
 
-<screencast file="/media/videos/test-for-expected-warnings" youtube="U_aLg4YzeqQ" />
+<screencast file="test-for-expected-warnings" youtube="U_aLg4YzeqQ" />
 
 Let's see a simple example. Let's say the <hl>fibonacci</hl> function exported by the <hl>MyTools</hl> module will warn if
 the users passes a negative number:

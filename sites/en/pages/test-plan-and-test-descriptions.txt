@@ -10,11 +10,11 @@
 =abstract start
 
 In the first steps we saw how a naive test script can lead us the <a href="/introducing-test-simple">use of Test::Simple</a>.
-This time we'll go on, 
+This time we'll go on.
 
 =abstract end
 
-<screencast file="/media/videos/test-plan-and-test-descriptions" youtube="uMtNpVAA1Fs" />
+<screencast file="test-plan-and-test-descriptions" youtube="uMtNpVAA1Fs" />
 
 Just to remind you, we have a file called <hl>lib/MyCalc.pm</hl> that we would like to test.
 (See the code in <a href="/introducing-test-simple">this article</a>.)

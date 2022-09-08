@@ -13,9 +13,7 @@ provides a very simple API for using some of the well written e-mail sending mod
 
 =abstract end
 
-<screencast file="/media/videos/sending-html-email-using-email-stuffer" />
-
-<a href="https://www.youtube.com/watch?v=_z_F4HPfYt8">YouTube</a>
+<screencast file="sending-html-email-using-email-stuffer" youtube="_z_F4HPfYt8" />
 
 <h2>Sending simple text e-mail</h2>
 

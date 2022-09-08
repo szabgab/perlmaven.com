@@ -17,15 +17,15 @@ In this article we will go further and move the data into a separate file.
 
 =abstract end
 
-<screencast file="/media/videos/separating-test-data-from-test-code" youtube="DxYrs6Ur1aY" />
+<screencast file="separating-test-data-from-test-code" youtube="DxYrs6Ur1aY" />
 
 We can create an arbitrary format like this:
 
 <code>
-2 = 1, 1 
-4 = 2, 2     
-6 = 2, 2, 2 
-6 = 3, 3 
+2 = 1, 1
+4 = 2, 2
+6 = 2, 2, 2
+6 = 3, 3
 
 # negative
 

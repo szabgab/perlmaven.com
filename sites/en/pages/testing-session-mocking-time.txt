@@ -16,13 +16,11 @@ we have to wait 60 seconds every time we run our tests. What if the requirement 
 
 Clearly we cannot let our test script to wait for that. Even 60 seconds is too much.
 
-Instead of that we can ask perl to lie about the time. In other words, we can mock time. 
+Instead of that we can ask perl to lie about the time. In other words, we can mock time.
 
 =abstract end
 
-<screencast file="/media/videos/testing-session-mocking-time" />
-
-<a href="https://www.youtube.com/watch?v=lVanBTERBAs">YouTube</a>
+<screencast file="testing-session-mocking-time" youtube="lVanBTERBAs" />
 
 This is <b>MySession.pm</b>. Probably not the best implementation of a session object, but it will work for our purposes.
 

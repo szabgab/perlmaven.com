@@ -26,7 +26,7 @@ The TITLE is optional as in most of the other functions provided by Test::More. 
 binary operators. e.g. <hl>==</hl> or <hl>gt</hl>.  <hl>$actual</hl> is the actual value and <hl>$expected</hl>
 something we compare it to.
 
-<screencast file="/media/videos/testing-timeout-with-cmp-ok" youtube="zZ6XmbTjINs" />
+<screencast file="testing-timeout-with-cmp-ok" youtube="zZ6XmbTjINs" />
 
 Let's say we have a function called <hl>wait_for_input_with_timeout</hl> that accepts a number, the number of
 seconds to wait for input before timing out. How can we test that this timeout really works?
