@@ -17,9 +17,7 @@ This screencast serves both as a tool to help you get the most out of search.cpa
 
 =abstract end
 
-<screencast file="/media/videos/search-cpan-org-authors-and-recent" />
-
-<a href="https://www.youtube.com/watch?v=36ByneOiNY8">YouTube</a>
+<screencast file="search-cpan-org-authors-and-recent" youtube="36ByneOiNY8" />
 
 For the textual description of this screencast and the specification check out the <a href="/search-cpan-org">main sco cloning page</a>.
 

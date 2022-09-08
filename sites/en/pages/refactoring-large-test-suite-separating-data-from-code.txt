@@ -16,7 +16,7 @@ Let's try to simplify that by separating the test data from the test code.
 
 =abstract end
 
-<screencast file="/media/videos/refactoring-large-test-suite-separating-data-from-code" youtube="RFHH3chwuuQ" />
+<screencast file="refactoring-large-test-suite-separating-data-from-code" youtube="RFHH3chwuuQ" />
 
 <h2>Enlarged test script</h2>
 

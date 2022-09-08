@@ -20,9 +20,7 @@ The source code can be found on <a href="https://github.com/szabgab/MetaCPAN-SCO
 
 =abstract end
 
-<screencast file="/media/videos/search-cpan-org" />
-
-<a href="https://www.youtube.com/watch?v=Gg5n1cevPCg">YouTube</a>
+<screencast file="search-cpan-org" youtube="Gg5n1cevPCg" />
 
 <a href="https://www.youtube.com/playlist?list=PLw7UYp3N0eUaUt6GgztiJPXd6ixDQnbpu">YouTube playlist</a>
 

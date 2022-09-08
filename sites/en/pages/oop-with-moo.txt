@@ -17,9 +17,7 @@ the basics. (3:19 min)
 
 =abstract end
 
-<screencast file="/media/videos/oop_with_moo_1280x720" />
-
-See on <a href="https://www.youtube.com/watch?v=aRkSb1AUS-0">YouTube</a>.
+<screencast file="oop_with_moo_1280x720" youtube="aRkSb1AUS-0" />
 
 <div id="text">
 We are going to see how to create a class using <a href="https://metacpan.org/pod/Moo">Moo</a>.

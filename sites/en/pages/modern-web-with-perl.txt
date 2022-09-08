@@ -17,9 +17,7 @@ a modern web application using Perl, you have several options. In this screencas
 
 =abstract end
 
-<screencast file="/media/videos/modern-web-with-perl-1280x720" />
-
-<a href="https://www.youtube.com/watch?v=tmd3UVqTq-A">YouTube</a>
+<screencast file="modern-web-with-perl-1280x720" youtube="tmd3UVqTq-A" />
 
 <div id="text">
 <ul>
