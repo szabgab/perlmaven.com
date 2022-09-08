@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -46,10 +46,13 @@ Here are a few recommended ones.
 <ul>
   <li><a href="http://www.activestate.com/">Komodo of ActiveState</a></li>
   <li><a href="http://www.eclipse.org/">Eclipse</a> with EPIC</li>
+  <li>JetBrains has Perl support as well</li>
+  <li>Visual Studio Code</li>
+  <li>Atim</li>
 </ul>
 
 See also the article about <a href="/perl-editor">editors and IDEs</a> with some extra comments
 and check out the <a href="http://perlide.org/poll200910/">Perl IDE and Editor Poll, October 2009</a> if you like that kind of stuff.
 
-(Unfortunately since the recording of this video the development of Padre has almost halted, but its source code was moved to GitHub,
+(Unfortunately since the recording of this video Padre is not developed any more. Its source code was moved to GitHub,
 so it will be very easy for you to pick up the pieces and improve it yourself.)
