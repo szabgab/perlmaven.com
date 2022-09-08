@@ -32,9 +32,7 @@ But what happens if there are more than one regexes?
 
 =abstract end
 
-<screencast file="/media/videos/check-several-regexes-on-many-strings" />
-
-<a href="https://www.youtube.com/watch?v=5NzC66Lv1gg">YouTube</a>
+<screencast file="check-several-regexes-on-many-strings" youtube="5NzC66Lv1gg" />
 
 What if we have 5-10 regexes and we would like to filter the rows that match <b>all of them</b>?
 

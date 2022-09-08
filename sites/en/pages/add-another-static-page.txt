@@ -16,9 +16,7 @@ of search.cpan.org.
 
 =abstract end
 
-<screencast file="/media/videos/add-another-static-page" />
-
-<a href="https://www.youtube.com/watch?v=vQWuioO1FSw">YouTube</a>
+<screencast file="add-another-static-page" youtube="vQWuioO1FSw" />
 
 <h2>Content</h2>
 

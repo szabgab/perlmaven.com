@@ -15,9 +15,7 @@ or in other words, she has some long text and she wants to make sure every row i
 
 =abstract end
 
-<screencast file="/media/videos/break-lines-with-max-width" />
-
-<a href="https://www.youtube.com/watch?v=u7G5wij_tFQ">YouTube</a>
+<screencast file="break-lines-with-max-width" youtube="u7G5wij_tFQ" />
 
 Using <a href="/perl-split">split</a> might work, but we are not really looking for
 splitting up the the text along every space. We are looking for the right-most space in the first 100 characters.

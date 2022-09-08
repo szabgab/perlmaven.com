@@ -16,7 +16,7 @@ data structure consisting of lots of arrays and hashes? How can you compare that
 
 =abstract end
 
-<screencast file="/media/videos/comparing-complex-data-structures-with-is-deeply" youtube="E1Peox8ZxFM" />
+<screencast file="comparing-complex-data-structures-with-is-deeply" youtube="E1Peox8ZxFM" />
 
 We have a file called <hl>MyTools.pm</hl> (In order to let you try the example, the source code of this module is at the end of the article.).
 and that module has two public functions given a number $N <hl>fibo($N)</hl> will return the N-the number in the
@@ -32,14 +32,14 @@ We have the following code in <hl>fib.t</hl> in the same directory where MyTools
 Then running <hl>prove fib.t</hl> will print:
 
 <code>
-fib.t .. 1/5 
+fib.t .. 1/5
 #   Failed test 'fib 5'
 #   at fib.t line 12.
 #          got: '7'
 #     expected: '5'
 # Looks like you failed 1 test of 5.
 fib.t .. Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/5 subtests 
+Failed 1/5 subtests
 
 Test Summary Report
 -------------------

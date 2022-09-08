@@ -16,9 +16,7 @@ Let's convert that to use the SCO look-and-feel as well.
 
 =abstract end
 
-<screencast file="/media/videos/add-404-not-found-page" />
-
-<a href="https://www.youtube.com/watch?v=5E3-zJe4dGg">YouTube</a>
+<screencast file="add-404-not-found-page" youtube="5E3-zJe4dGg" />
 
 <h2>Create the 404 template</h2>
 
@@ -35,7 +33,7 @@ we <a href="http://search.cpan.org/xyz">worked so hard to try to replicate</a>.
 First thing is to create the template with the unique content of the 404 page.
 
 We can visit a page that does not exists, for example http://search.cpan.org/xyz and click on view-source.
-There we can find the content specific to this page and copy it tot a file called 
+There we can find the content specific to this page and copy it tot a file called
 <a href="https://github.com/szabgab/MetaCPAN-SCO/blob/e865a6c2fd04ac3edb5026180de2b567c73a4763/tt/404.tt">tt/404.tt</a>.
 That was quite easy. Now we need to use that template to create the HTML file.
 

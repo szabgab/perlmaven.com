@@ -14,9 +14,7 @@ tests as a suite of <b>acceptance tests</b> for the <a href="/search-cpan-org">s
 
 =abstract end
 
-<screencast file="/media/videos/add-some-acceptance-tests" />
-
-<a href="https://www.youtube.com/watch?v=Puzc9QkV_Vg">YouTube</a>
+<screencast file="add-some-acceptance-tests" youtube="Puzc9QkV_Vg" />
 
 While working on the next step, I noticed that the swap-files used by vim show up as untracked file by git. In order to avoid adding
 them to Git, I added <hl>*.swp</hl> to the <hl>.gitignore file. <a href="https://github.com/szabgab/MetaCPAN-SCO/commit/a87232f428308f93b45ab70009d3254cde77f9cb">commit</a>.
