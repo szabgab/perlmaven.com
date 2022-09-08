@@ -13,4 +13,4 @@ String functions: index
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/string-functions-index" youtube="AKm5lh3p9u0" />
+<slidecast file="beginner-perl/string-functions-index" youtube="AKm5lh3p9u0" />

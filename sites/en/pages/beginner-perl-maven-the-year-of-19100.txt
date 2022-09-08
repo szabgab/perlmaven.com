@@ -13,5 +13,5 @@ The year of 19100
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/the-year-of-19100" youtube="p9TT8YGHzYM" />
+<slidecast file="beginner-perl/the-year-of-19100" youtube="p9TT8YGHzYM" />
 

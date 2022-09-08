@@ -13,4 +13,4 @@ split
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/split" youtube="t8OxEgYjsNg" />
+<slidecast file="beginner-perl/split" youtube="t8OxEgYjsNg" />

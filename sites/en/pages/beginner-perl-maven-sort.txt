@@ -14,5 +14,5 @@ sort
 =abstract end
 
 
-<slidecast file="/media/videos/beginner-perl/sort" youtube="0Bi4bIUiDi0" />
+<slidecast file="beginner-perl/sort" youtube="0Bi4bIUiDi0" />
 

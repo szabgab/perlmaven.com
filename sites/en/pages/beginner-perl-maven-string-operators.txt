@@ -13,4 +13,4 @@ String operators
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/string-operators" youtube="PA7r8ZuT4iI" />
+<slidecast file="beginner-perl/string-operators" youtube="PA7r8ZuT4iI" />

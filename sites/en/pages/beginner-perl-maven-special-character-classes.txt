@@ -13,4 +13,4 @@ special character classes
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/special-character-classes" youtube="QKm1QiPUnUk" />
+<slidecast file="beginner-perl/special-character-classes" youtube="QKm1QiPUnUk" />

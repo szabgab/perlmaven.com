@@ -13,4 +13,4 @@ substitution
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/substitution" youtube="uPAvPm2CYIg" />
+<slidecast file="beginner-perl/substitution" youtube="uPAvPm2CYIg" />
