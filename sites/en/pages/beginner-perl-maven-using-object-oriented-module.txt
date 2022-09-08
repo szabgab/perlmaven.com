@@ -13,4 +13,4 @@ Using object oriented modules <a href="https://metacpan.org/pod/WWW::Mechanize">
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/using-object-oriented-module" youtube="fxWrAGP9xao" />
+<slidecast file="beginner-perl/using-object-oriented-module" youtube="fxWrAGP9xao" />

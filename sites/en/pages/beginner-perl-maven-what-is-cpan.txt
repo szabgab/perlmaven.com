@@ -13,7 +13,7 @@ What is cpan?
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/what-is-cpan" youtube="0dxCexTgVQU" />
+<slidecast file="beginner-perl/what-is-cpan" youtube="0dxCexTgVQU" />
 
 <p>Evaluating modules, getting information about them</p>
 <ul>

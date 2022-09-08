@@ -13,4 +13,4 @@ unix-and-dos-commands
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/unix-and-dos-commands" youtube="7JQqQts3oug" />
+<slidecast file="beginner-perl/unix-and-dos-commands" youtube="7JQqQts3oug" />

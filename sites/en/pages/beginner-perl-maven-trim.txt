@@ -13,4 +13,4 @@ trim
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/trim" youtube="C-dO20lgA_c" />
+<slidecast file="beginner-perl/trim" youtube="C-dO20lgA_c" />

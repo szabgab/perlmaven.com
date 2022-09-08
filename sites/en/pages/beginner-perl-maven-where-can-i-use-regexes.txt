@@ -13,4 +13,4 @@ Regexes
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/where-can-i-use-regexes" youtube="xHOMqOI5KE8" />
+<slidecast file="beginner-perl/where-can-i-use-regexes" youtube="xHOMqOI5KE8" />

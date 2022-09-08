@@ -13,4 +13,4 @@ Substr
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/substr" youtube="OxQRAQk-nQk" />
+<slidecast file="beginner-perl/substr" youtube="OxQRAQk-nQk" />

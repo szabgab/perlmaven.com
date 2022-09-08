@@ -13,7 +13,7 @@ Sum numbers in a file
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/sum-numbers-in-a-file" youtube="77MUdZp4FBc" />
+<slidecast file="beginner-perl/sum-numbers-in-a-file" youtube="77MUdZp4FBc" />
 
 Let's do now something slightly useful with our knowledge.
 In this example we have a file called <hl>numbers.txt</hl> that has numbers in it. Each line is a number:

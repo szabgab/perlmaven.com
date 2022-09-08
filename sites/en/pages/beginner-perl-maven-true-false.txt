@@ -13,4 +13,4 @@ True False
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/true-false" youtube="Z53KzFegRRU" />
+<slidecast file="beginner-perl/true-false" youtube="Z53KzFegRRU" />
