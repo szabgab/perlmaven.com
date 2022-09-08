@@ -14,9 +14,7 @@ is a list of recommended modules for certain common tasks.
 
 =abstract end
 
-<screencast file="/media/videos/metacpan-task-kensho" />
-
-<a href="https://www.youtube.com/watch?v=e3ZqUBCVjIQ">YouTube</a>
+<screencast file="metacpan-task-kensho" youtube="e3ZqUBCVjIQ" />
 
 <a href="https://metacpan.org/pod/Task::Kensho">Task::Kensho</a> itself is divided into several subjects:
 

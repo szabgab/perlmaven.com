@@ -20,9 +20,7 @@ experience and at least at this point, the project does not need fancy things th
 
 =abstract end
 
-<screencast file="/media/videos/create-skeleton-psgi-application" />
-
-<a href="https://www.youtube.com/watch?v=tqzdNkX8GDo">YouTube</a>
+<screencast file="create-skeleton-psgi-application" youtube="tqzdNkX8GDo" />
 
 The first thing I wanted to create is a skeleton for the PSGI-based web application.
 Something simple like when we once <a href="/getting-started-with-psgi">started with PSGI</a>, but with more robust layout.

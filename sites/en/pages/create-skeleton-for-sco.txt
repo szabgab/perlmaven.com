@@ -14,9 +14,7 @@ I decided to get started immediately.  At this phase of the project there is suc
 
 =abstract end
 
-<screencast file="/media/videos/create-skeleton-for-sco" />
-
-<a href="https://www.youtube.com/watch?v=Wp1qhb_mJ9s">YouTube</a>
+<screencast file="create-skeleton-for-sco" youtube="Wp1qhb_mJ9s" />
 
 <h2>Create Git repository, add README file</h2>
 

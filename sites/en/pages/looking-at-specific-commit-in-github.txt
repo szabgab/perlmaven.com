@@ -16,9 +16,7 @@ Here is what you can do:
 
 =abstract end
 
-<screencast file="/media/videos/looking-at-specific-commit-in-github" />
-
-<a href="https://www.youtube.com/watch?v=0Ve6knIftYc">YouTube</a>
+<screencast file="looking-at-specific-commit-in-github" youtube="0Ve6knIftYc" />
 
 On the <a href="https://github.com/szabgab/MetaCPAN-SCO">main GitHub page</a> of the project click on <hl>NNN commits</hl>
 in the top left. You can see the list of commits from the most recent at the top, to older commits below that.

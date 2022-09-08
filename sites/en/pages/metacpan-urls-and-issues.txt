@@ -18,9 +18,7 @@ then we reach the most recent release of this distribution. For example: <a href
 
 =abstract end
 
-<screencast file="/media/videos/metacpan-urls-and-issues" />
-
-<a href="https://www.youtube.com/watch?v=qT7WdlJlgvM">YouTube</a>
+<screencast file="metacpan-urls-and-issues" youtube="qT7WdlJlgvM" />
 
 MetaCPAN also has a link to the <a href="https://rt.cpan.org/">Request Tracker of CPAN</a> where each CPAN distribution has its own queue. The link also
 include the number of open bug reports. Module authors might want to use a different bug tracking system. They can tell about it via the

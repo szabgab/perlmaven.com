@@ -15,9 +15,7 @@ By typing the letter 'm' in front of cpan.org in the URL, you can easily switch 
 
 =abstract end
 
-<screencast file="/media/videos/cpan-mcpan-metacpan" />
-
-<a href="https://www.youtube.com/watch?v=gCczqcZdwvI">YouTube</a>
+<screencast file="cpan-mcpan-metacpan" youtube="gCczqcZdwvI" />
 
 There you can jump to the latest version of the module or to the distribution containing the module.
 
