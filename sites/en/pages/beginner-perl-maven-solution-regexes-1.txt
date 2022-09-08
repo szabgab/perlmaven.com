@@ -12,4 +12,4 @@ First part of the solution for the <a href="/beginner-perl-maven-exercise-regexe
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-regexes-1" youtube="ZYqruvNyUiM" />
+<slidecast file="beginner-perl/solution-regexes-1" youtube="ZYqruvNyUiM" />

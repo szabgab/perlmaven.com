@@ -13,4 +13,4 @@
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-sort-snmp-numbers" youtube="6-svetTQrb4" />
+<slidecast file="beginner-perl/solution-sort-snmp-numbers" youtube="6-svetTQrb4" />

@@ -13,4 +13,4 @@ Solution: parse variable width fields
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-parse-variable-width-fields" youtube="yQFCLIL4Jls" />
+<slidecast file="beginner-perl/solution-parse-variable-width-fields" youtube="yQFCLIL4Jls" />

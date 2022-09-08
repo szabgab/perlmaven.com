@@ -13,7 +13,7 @@ Solution: of the <a href="/beginner-perl-maven-exercise-sort-scores">sort scores
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-sort-scores" youtube="nOVVS2qfwPQ" />
+<slidecast file="beginner-perl/solution-sort-scores" youtube="nOVVS2qfwPQ" />
 
 <include file="examples/hashes/score_data.pl">
 

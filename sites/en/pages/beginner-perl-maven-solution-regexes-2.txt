@@ -13,4 +13,4 @@ Second part of the solution for the <a href="/beginner-perl-maven-exercise-regex
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-regexes-2" youtube="VG_m7pVBRmA" />
+<slidecast file="beginner-perl/solution-regexes-2" youtube="VG_m7pVBRmA" />

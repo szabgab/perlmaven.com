@@ -13,4 +13,4 @@ while loop
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/while-loop" youtube="tSoKHHEBeCw" />
+<slidecast file="beginner-perl/while-loop" youtube="tSoKHHEBeCw" />

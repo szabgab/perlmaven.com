@@ -13,4 +13,4 @@ x-modifier
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/x-modifier" youtube="rl-JxlP0hTQ" />
+<slidecast file="beginner-perl/x-modifier" youtube="rl-JxlP0hTQ" />

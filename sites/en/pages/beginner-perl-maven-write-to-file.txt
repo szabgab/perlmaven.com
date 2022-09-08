@@ -13,4 +13,4 @@
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/write-to-file" youtube="F2Gl-6SLxWw" />
+<slidecast file="beginner-perl/write-to-file" youtube="F2Gl-6SLxWw" />

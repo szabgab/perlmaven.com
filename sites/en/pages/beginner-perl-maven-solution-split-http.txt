@@ -13,4 +13,4 @@ solution-split-http
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-split-http" youtube="4_suCC3V2-8" />
+<slidecast file="beginner-perl/solution-split-http" youtube="4_suCC3V2-8" />
