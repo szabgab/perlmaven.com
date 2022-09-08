@@ -18,9 +18,7 @@ Error open (<:raw:encoding(UTF-8)) on '/Users/gabor/work/MetaCPAN-SCO/totals.jso
 
 =abstract end
 
-<screencast file="/media/videos/protecting-from-crash" />
-
-<a href="https://www.youtube.com/watch?v=YGtaate3ois">YouTube</a>
+<screencast file="protecting-from-crash" youtube="YGtaate3ois" />
 
 Right, so apparently I have removed the <hl>totals.json</hl> form the root of the application and when I tried to load the main
 page it could not find the file and died when the object returned by <hl>path</hl> tried open in for reading.

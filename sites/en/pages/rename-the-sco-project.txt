@@ -15,9 +15,7 @@ And thus I had to rename the already existing parts of the project.
 
 =abstract end
 
-<screencast file="/media/videos/rename-the-sco-project" />
-
-<a href="https://www.youtube.com/watch?v=s16pT3J1hRo">YouTube</a>
+<screencast file="rename-the-sco-project" youtube="s16pT3J1hRo" />
 
 Create lib/MetaCPAN and move lib/SCP.pm to lib/MetaCPAN/SCO.pm
 

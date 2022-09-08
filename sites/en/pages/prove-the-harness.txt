@@ -17,7 +17,7 @@ being the critical people we are, the few failures. How can focus on the failure
 
 =abstract end
 
-<screencast file="/media/videos/prove-the-harness" youtube="aGNB4MTRJHo" />
+<screencast file="prove-the-harness" youtube="aGNB4MTRJHo" />
 
 <hl>sum.txt</hl> has the following test cases in it:
 

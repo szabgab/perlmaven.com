@@ -15,9 +15,7 @@ content of this page.
 
 =abstract end
 
-<screencast file="/media/videos/search-cpan-org-author" />
-
-<a href="https://www.youtube.com/watch?v=ShvnAXfJW4c">YouTube</a>
+<screencast file="search-cpan-org-author" youtube="ShvnAXfJW4c" />
 
 For the textual description of this screencast and the specification check out the <a href="/search-cpan-org">main sco cloning page</a>.
 
