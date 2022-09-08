@@ -20,7 +20,7 @@ As we create <a href="/is-any-to-test-multiple-expected-values">is_any</a>, othe
 
 =abstract end
 
-<screencast file="/media/videos/test-builder-object" youtube="P5MrMboOsnI" />
+<screencast file="test-builder-object" youtube="P5MrMboOsnI" />
 
 There are effecively hundresds of these modules and we'll take a look at quite a few of them. For now though, I'd like to say a few words
 about Test::Builder and hopefully eliminate a confusion that I lived in for quite some time.

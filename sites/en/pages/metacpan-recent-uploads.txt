@@ -9,7 +9,7 @@
 
 =abstract start
 
-<a href="https://metacpan.org/">MetaCPAN</a> has a couple of links at the top. One of them shows the 
+<a href="https://metacpan.org/">MetaCPAN</a> has a couple of links at the top. One of them shows the
 <a href="https://metacpan.org/recent">recently uploaded distributions</a>. You can use a filter to see
 only those that were uploaded for the first time.
 
@@ -17,8 +17,5 @@ This is a great way to see what's is totally new on CPAN?
 
 =abstract end
 
-<screencast file="/media/videos/metacpan-recent-uploads" />
-
-<a href="https://www.youtube.com/watch?v=s9UPu95yHig">YouTube</a>
-
+<screencast file="metacpan-recent-uploads" youtube="s9UPu95yHig" />
 

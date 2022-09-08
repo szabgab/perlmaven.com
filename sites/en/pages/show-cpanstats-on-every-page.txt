@@ -15,9 +15,7 @@ Instead we add our code to the <hl>template()</hl> function that will be called 
 
 =abstract end
 
-<screencast file="/media/videos/show-cpanstats-on-every-page" />
-
-<a href="https://www.youtube.com/watch?v=SG3sUB8S6b4">YouTube</a>
+<screencast file="show-cpanstats-on-every-page" youtube="SG3sUB8S6b4" />
 
 Earlier we had this code generating the HTML page from the template and from the lack of (!) parameters passed to it.
 That empty hash in the middle is where we need to pass the parameters.
@@ -46,7 +44,7 @@ This is the HTML code with the Template::Toolkit (TT) tags:
 
 <code>
 <div class="footer"><div class="cpanstats">
-<% totals.distribution %> Distributions, <% totals.module %> Modules, <% totals.author %> Authors 
+<% totals.distribution %> Distributions, <% totals.module %> Modules, <% totals.author %> Authors
 </div></div>
 </code>
 

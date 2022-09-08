@@ -18,9 +18,7 @@ Let's try a simple example in which we fetch a web page and count specific strin
 
 =abstract end
 
-<screencast file="/media/videos/mocking-function-to-fake-environment" />
-
-<a href="https://www.youtube.com/watch?v=kwiJttQdtQY">YouTube</a>
+<screencast file="mocking-function-to-fake-environment" youtube="kwiJttQdtQY" />
 
 More specifically we have a file called <hl>MyWebAPI.pm</hl> with the following code in it:
 
