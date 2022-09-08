@@ -14,11 +14,11 @@ You get a bug report. In order to verify it, you write a test-case reproducing t
 Many times you can't immediately get the bug fixed. Either because the programmer who needs to fix the bug is not available, or there are
 more urgent tasks.
 
-The question what do you do now? 
+The question what do you do now?
 
 =abstract end
 
-<screencast file="/media/videos/todo-testing-a-bug" youtube="ildayXLOhR8" />
+<screencast file="todo-testing-a-bug" youtube="ildayXLOhR8" />
 
 If you leave the test-case in the test-suite you'll keep getting test failures. This is not good
 as every time, every person running the test-suite will have to stop thinking "ok, this test case is know to fail". That's both a waste

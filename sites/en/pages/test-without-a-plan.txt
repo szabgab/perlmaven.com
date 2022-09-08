@@ -19,7 +19,7 @@ Not a big issue, but we as programmers are supposed to avoid any such repetition
 
 =abstract end
 
-<screencast file="/media/videos/test-without-a-plan" youtube="WU_K-zx5qNw" />
+<screencast file="test-without-a-plan" youtube="WU_K-zx5qNw" />
 
 This was the code from the previous article.
 

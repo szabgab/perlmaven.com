@@ -17,9 +17,7 @@ What about robots.txt which is another, usually static file. How can we serve th
 
 =abstract end
 
-<screencast file="/media/videos/serving-static-files-with-plack" />
-
-<a href="https://www.youtube.com/watch?v=FN_coL2JgLE">YouTube</a>
+<screencast file="serving-static-files-with-plack" youtube="FN_coL2JgLE" />
 
 <a href="http://plackperl.org/">Plack</a> provides an excellent way to add various middlewares to the stack serving the application.
 One of the middlewares is called <a href="https://metacpan.org/pod/Plack::Middleware::Static">Plack::Middleware::Static</a> and
