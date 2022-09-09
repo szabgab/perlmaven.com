@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Solution: improve the color selector
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-improve-the-color-selector" youtube="tEbiTj31jLM" />
+<slidecast file="beginner-perl/solution-improve-the-color-selector" youtube="tEbiTj31jLM" />

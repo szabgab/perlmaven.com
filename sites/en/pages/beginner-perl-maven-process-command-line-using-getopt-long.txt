@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Process command line using Getopt::Long
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/process-command-line-using-getopt-long" youtube="SJ5_k3_-qcI" />
+<slidecast file="beginner-perl/process-command-line-using-getopt-long" youtube="SJ5_k3_-qcI" />
