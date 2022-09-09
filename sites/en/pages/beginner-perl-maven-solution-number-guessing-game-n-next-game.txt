@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Solution: number guessing game - n next game
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-number-guessing-game-n-next-game" youtube="sWIa9T4fkEA" />
+<slidecast file="beginner-perl/solution-number-guessing-game-n-next-game" youtube="sWIa9T4fkEA" />

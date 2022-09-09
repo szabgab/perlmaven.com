@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Exercise: parse variable width fields
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-parse-variable-width-fields" youtube="6NoHj4sehWc" />
+<slidecast file="beginner-perl/exercise-parse-variable-width-fields" youtube="6NoHj4sehWc" />

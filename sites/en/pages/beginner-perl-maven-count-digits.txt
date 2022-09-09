@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,7 +13,7 @@ Count digits
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/count-digits" youtube="fvYS6kCzSAs" />
+<slidecast file="beginner-perl/count-digits" youtube="fvYS6kCzSAs" />
 
 Given a file like this, that has line, and each line has numbers separated by a space.
 Our task is to count digits. Not numbers, but digits.

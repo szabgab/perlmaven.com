@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Exercise: parse HTTP values
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-parse-http-values" youtube="Rm9D0w32e4Q" />
+<slidecast file="beginner-perl/exercise-parse-http-values" youtube="Rm9D0w32e4Q" />

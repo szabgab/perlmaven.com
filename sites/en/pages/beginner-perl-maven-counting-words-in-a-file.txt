@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Counting words in a file
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/counting-words-in-a-file" youtube="6e6zyIIsAoo" />
+<slidecast file="beginner-perl/counting-words-in-a-file" youtube="6e6zyIIsAoo" />

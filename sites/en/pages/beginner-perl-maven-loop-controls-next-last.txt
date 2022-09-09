@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Loop controls: next last
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/loop-controls-next-last" youtube="tcAzt2vbTTA" />
+<slidecast file="beginner-perl/loop-controls-next-last" youtube="tcAzt2vbTTA" />

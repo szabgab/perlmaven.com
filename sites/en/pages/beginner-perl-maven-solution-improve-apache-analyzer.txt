@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Solution: improve Apache log-analyzer
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-improve-apache-analyzer" youtube="KiUI6TQN8fg" />
+<slidecast file="beginner-perl/solution-improve-apache-analyzer" youtube="KiUI6TQN8fg" />
