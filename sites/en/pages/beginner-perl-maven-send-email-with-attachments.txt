@@ -13,7 +13,7 @@ Sending email with attachments.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/send-email-with-attachments" youtube="QjHLbVbs6sY" />
+<slidecast file="beginner-perl/send-email-with-attachments" youtube="QjHLbVbs6sY" />
 
 <ul>
   <li><a href="https://metacpan.org/pod/File::Basename">File::Basename</a></li>

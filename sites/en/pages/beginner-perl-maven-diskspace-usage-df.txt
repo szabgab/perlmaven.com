@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Diskspace usage: df using <a href="http://metacpan.org/pod/Filesys::DfPortable">
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/diskspace-usage-df" youtube="iauUQhsICAA" />
+<slidecast file="beginner-perl/diskspace-usage-df" youtube="iauUQhsICAA" />

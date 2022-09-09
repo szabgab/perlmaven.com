@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -14,7 +14,7 @@ Exercise
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-create-time-report" youtube="ICyJWvVAts4" />
+<slidecast file="beginner-perl/exercise-create-time-report" youtube="ICyJWvVAts4" />
 
 The log file looks like this:
 

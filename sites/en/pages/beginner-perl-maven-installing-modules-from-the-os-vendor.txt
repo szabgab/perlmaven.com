@@ -1,11 +1,11 @@
-=title Installing modules from the OS vendor - video
+=title Installing Perl modules from the OS vendor - video
 =timestamp 2015-08-10T00:04:42
 =indexes aptitude, yum, ppm
 =tags screencast
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,7 +13,7 @@ installing-modules-from-the-os-vendor
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/installing-modules-from-the-os-vendor" youtube="RiDiOC3N3Ds" />
+<slidecast file="beginner-perl/installing-modules-from-the-os-vendor" youtube="RiDiOC3N3Ds" />
 
 Vendors: Debian, Ubuntu Fedora, Red Hat
 

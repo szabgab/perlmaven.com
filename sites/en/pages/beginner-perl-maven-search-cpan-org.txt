@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -15,4 +15,4 @@ See the <a href="/metacpan">articles and vidoes about MetaCPAN</a>.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/search-cpan-org" youtube="DZvLWJjVwZw" />
+<slidecast file="beginner-perl/search-cpan-org" youtube="DZvLWJjVwZw" />

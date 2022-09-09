@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -16,5 +16,5 @@ Handle also the case of <b>c:\home\foo\.mozilla\cache\data.txt</b>.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-split-path" youtube="ooejgCs6VC4" />
+<slidecast file="beginner-perl/exercise-split-path" youtube="ooejgCs6VC4" />
 

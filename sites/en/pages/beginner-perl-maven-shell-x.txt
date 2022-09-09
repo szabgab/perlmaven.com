@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ shell-x
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/shell-x" youtube="D_cWKkoXFYU" />
+<slidecast file="beginner-perl/shell-x" youtube="D_cWKkoXFYU" />

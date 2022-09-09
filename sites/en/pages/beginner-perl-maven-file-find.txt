@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,7 +13,7 @@ file-find
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/file-find" youtube="0HE_2pGeR1I" />
+<slidecast file="beginner-perl/file-find" youtube="0HE_2pGeR1I" />
 
 
 <a href="https://code-maven.com/slides/perl-programming/solution-tree">tree</a>

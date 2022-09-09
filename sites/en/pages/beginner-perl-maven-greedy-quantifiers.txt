@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ greedy-quantifyers
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/greedy-quantifiers" youtube="8ws6XBbNb7E" />
+<slidecast file="beginner-perl/greedy-quantifiers" youtube="8ws6XBbNb7E" />

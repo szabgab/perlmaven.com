@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Regexes
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/regexes" youtube="D7b_OC_-ZC4" />
+<slidecast file="beginner-perl/regexes" youtube="D7b_OC_-ZC4" />

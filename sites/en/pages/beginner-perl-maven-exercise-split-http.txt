@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,18 +13,18 @@ Exercise: split http
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/exercise-split-http" youtube="2SIu_TffPVc" />
+<slidecast file="beginner-perl/exercise-split-http" youtube="2SIu_TffPVc" />
 
 Given a string that looks like this:
 
 <code>
-my $str = 'fname=Foo&lname=Bar&email=foo@bar.com'; 
+my $str = 'fname=Foo&lname=Bar&email=foo@bar.com';
 </code>
 
 Create a hash where the keys are fname, lname, email or if the string looks like this:
 
 <code>
-my $str = 'title=Stargates&year=2005&chapter=03&bitrate=128'; 
+my $str = 'title=Stargates&year=2005&chapter=03&bitrate=128';
 </code>
 
 then create a hash where the keys are title, year, chapter, bitrate Use a single statement (with split) to achieve this.

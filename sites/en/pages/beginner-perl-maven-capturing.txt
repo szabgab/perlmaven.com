@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,5 +13,5 @@ Capturing
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/capturing" youtube="zJYS-pYymhc" />
+<slidecast file="beginner-perl/capturing" youtube="zJYS-pYymhc" />
 

@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -21,4 +21,4 @@ Write functions that return true if the given value is a
   <li>Binary number</li>
 </ul>
 
-<slidecast file="/media/videos/beginner-perl/exercise-hexa-octal-binary" youtube="TUr41AAm0Hg" />
+<slidecast file="beginner-perl/exercise-hexa-octal-binary" youtube="TUr41AAm0Hg" />

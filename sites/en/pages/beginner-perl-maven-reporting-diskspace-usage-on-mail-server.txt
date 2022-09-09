@@ -5,15 +5,15 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
-In this example I was using <a href="https://metacpan.org/pod/Filesys::DfPortable">Filesys::DfPortable</a> 
+In this example I was using <a href="https://metacpan.org/pod/Filesys::DfPortable">Filesys::DfPortable</a>
 and <a href="https://metacpan.org/pod/Mail::Sendmail">Mail::Sendmail</a>. Today I'd probably use
 <a href="https://metacpan.org/pod/Email::Stuffer">Email::Stuffer</a> but the basicas are the same.
 See also the <a href="/sending-html-email-using-email-stuffer">video about Email::Stuffer</a>.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/reporting-diskspace-usage-on-mail-server" youtube="hU2yfAZCJ8w" />
+<slidecast file="beginner-perl/reporting-diskspace-usage-on-mail-server" youtube="hU2yfAZCJ8w" />

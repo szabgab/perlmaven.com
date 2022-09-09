@@ -13,6 +13,6 @@ du using <a href="https://metacpan.org/pod/Filesys::DiskUsage">Filesys::DiskUsag
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/disk-usage-du" youtube="uOch-LIPix4" />
+<slidecast file="beginner-perl/disk-usage-du" youtube="uOch-LIPix4" />
 
 <include file="examples/du.pl">

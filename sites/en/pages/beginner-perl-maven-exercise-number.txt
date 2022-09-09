@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -22,4 +22,4 @@ Write a function that given a string it return true if the string is a number. A
   <li>In scientific notation. (something like this: 2.123e4 )</li>
 </ul>
 
-<slidecast file="/media/videos/beginner-perl/exercise-number" youtube="NB5_G3DLVRQ" />
+<slidecast file="beginner-perl/exercise-number" youtube="NB5_G3DLVRQ" />
