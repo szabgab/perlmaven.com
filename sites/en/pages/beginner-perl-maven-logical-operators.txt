@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,9 +13,9 @@ Logical Operators
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/logical-operators" youtube="fuk9gedIlWI" />
+<slidecast file="beginner-perl/logical-operators" youtube="fuk9gedIlWI" />
 
-In Perl there are two sets of logical operators. 
+In Perl there are two sets of logical operators.
 One set is the words <hl>and</hl>, <hl>or</hl>, <hl>not</hl>, and <hl>xor</hl>.
 The other set signs: the double ampersand (<hl>&amp;&amp;</hl>), the double pipe (<hl>||</hl>), the exclamation mark (<hl>!</hl>),
 and <a href="/what-is-new-in-perl-5.10--say-defined-or-state">starting from perl 5.10</a> the defined or (<hl>//</hl>).

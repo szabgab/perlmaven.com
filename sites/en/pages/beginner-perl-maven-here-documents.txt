@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,7 +13,7 @@ Here documents
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/here-documents" youtube="uXgnmhzwehQ" />
+<slidecast file="beginner-perl/here-documents" youtube="uXgnmhzwehQ" />
 
 A gotcha: The <hl>END_STRING</hl> we have put at the end of the string must be exactly the same as we have at the beginning.
 You can't even have extra whitespaces! So make sure the <hl>END_STRING</hl> at the end of the here document starts at the first character of the line and has no spaces,

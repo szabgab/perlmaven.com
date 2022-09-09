@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Compare values. See also the article <a href="/comparing-scalars-in-perl">compar
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/compare-values" youtube="wglfrnlB9bk" />
+<slidecast file="beginner-perl/compare-values" youtube="wglfrnlB9bk" />

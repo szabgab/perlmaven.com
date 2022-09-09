@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ rand and int
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/rand-and-int" youtube="AzjdK4N3f5s" />
+<slidecast file="beginner-perl/rand-and-int" youtube="AzjdK4N3f5s" />
