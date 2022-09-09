@@ -15,7 +15,7 @@ There is also a listing of the articles about <a href="/common-warnings-and-erro
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
+<slidecast file="beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
 
 A much longer list of <a href="/common-warnings-and-error-messages">common warnings and errors</a>
 with detailed explanations.

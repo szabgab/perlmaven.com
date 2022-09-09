@@ -16,7 +16,7 @@ and of CPAN modules.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/pod" youtube="1LDHUTf-LHo" />
+<slidecast file="beginner-perl/pod" youtube="1LDHUTf-LHo" />
 
 Also read the <a href="/pod-plain-old-documentation-of-perl">article about POD</a> and
 another article on

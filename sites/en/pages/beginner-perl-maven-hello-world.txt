@@ -14,7 +14,7 @@ Separate parameters with comma: <hl>,<hl>. Print newlines using <hl>\n</hl>.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/hello-world" youtube="h0VHYdESJWM" />
+<slidecast file="beginner-perl/hello-world" youtube="h0VHYdESJWM" />
 
 <code lang="perl">
 #!/usr/bin/env perl

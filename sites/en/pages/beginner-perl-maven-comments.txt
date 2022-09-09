@@ -13,4 +13,4 @@ Comments starts with a pound-sign: <hl>#</hl>.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/comments" youtube="SIWS8t59vH0" />
+<slidecast file="beginner-perl/comments" youtube="SIWS8t59vH0" />

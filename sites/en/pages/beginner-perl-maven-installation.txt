@@ -18,7 +18,7 @@ though it was already superseded by DWIM Perl for Windows. Today my recommendati
 =abstract end
 
 
-<slidecast file="/media/videos/beginner-perl/installation" youtube="dskYFZax1Qo" />
+<slidecast file="beginner-perl/installation" youtube="dskYFZax1Qo" />
 
 <ul>
   <li><a href="http://www.activestate.com/">ActiveState</a></li>

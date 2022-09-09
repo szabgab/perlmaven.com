@@ -14,7 +14,7 @@ or with <hl>print</hl> statements.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/debugging" youtube="MxwB63zFglo" />
+<slidecast file="beginner-perl/debugging" youtube="MxwB63zFglo" />
 
 See the full <a href="/debugging-perl-scripts">article about debugging Perl scripts</a>
 

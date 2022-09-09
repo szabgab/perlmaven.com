@@ -13,7 +13,7 @@ User Input and Output
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/interpolation-stdin-chomp" youtube="qyQFq6Cu2N4" />
+<slidecast file="beginner-perl/interpolation-stdin-chomp" youtube="qyQFq6Cu2N4" />
 
 <h2>Variable interpolation</h2>
 

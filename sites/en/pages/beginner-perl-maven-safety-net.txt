@@ -15,7 +15,7 @@ To avoid common errors use the compiler flags: <hl>use strict; use warnings;</hl
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/safety-net" youtube="w7hi8Vp8v_E" />
+<slidecast file="beginner-perl/safety-net" youtube="w7hi8Vp8v_E" />
 
 Some of the <a href="/common-warnings-and-error-messages">common warnings and errors</a> you can
 catch by using <hl>strict</hl> and <hl>warnings</hl>.

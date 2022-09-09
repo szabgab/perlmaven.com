@@ -13,7 +13,7 @@ First exercise, second part
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/solution-hello-world-2" youtube="QpRnR_w8FVk" />
+<slidecast file="beginner-perl/solution-hello-world-2" youtube="QpRnR_w8FVk" />
 
 <h2>Write a simple script that prints     Hello world</h2>
 

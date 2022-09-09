@@ -14,7 +14,7 @@ Here are a few recommended ones.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/editors" youtube="7mvy8sUcigM" />
+<slidecast file="beginner-perl/editors" youtube="7mvy8sUcigM" />
 
 
 <h2>Mostly for Linux/Unix</h2>

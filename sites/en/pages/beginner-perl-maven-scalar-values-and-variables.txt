@@ -13,7 +13,7 @@ Scalar values (numbers and string) and scalar variables holding such values.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/scalar-values-and-variables" youtube="oBh4bfKMK5o" />
+<slidecast file="beginner-perl/scalar-values-and-variables" youtube="oBh4bfKMK5o" />
 
 See also for <a href="/installing-perl-and-getting-started">strict and warnings</a>.
 

@@ -16,7 +16,7 @@ We are going to see an example here, and later on we are going to see a couple o
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/command-line" youtube="cjKol7gTlkA" />
+<slidecast file="beginner-perl/command-line" youtube="cjKol7gTlkA" />
 
 In order to open the command line, on Windows you need to click on <b>Start/Run</b> and then type in <hl>cmd</hl>.
 
