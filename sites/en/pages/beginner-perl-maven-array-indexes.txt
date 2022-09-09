@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,5 +13,5 @@ Array indexes
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/array-indexes" youtube="HbgBwnPPxPo" />
+<slidecast file="beginner-perl/array-indexes" youtube="HbgBwnPPxPo" />
 

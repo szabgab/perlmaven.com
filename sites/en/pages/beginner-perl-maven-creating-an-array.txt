@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Creating an array
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/creating-an-array" youtube="Mg44tP6eRek" />
+<slidecast file="beginner-perl/creating-an-array" youtube="Mg44tP6eRek" />

@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,5 +13,5 @@ Array assignment
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/array-assignment" youtube="odFAkM7fxGU" />
+<slidecast file="beginner-perl/array-assignment" youtube="odFAkM7fxGU" />
 
