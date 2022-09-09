@@ -1,11 +1,11 @@
 =title Open file - video
 =timestamp 2015-03-16T10:02:04
-=indexes open 
+=indexes open
 =tags screencast
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Open file
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/open-file" youtube="UImoG8PaWR4" />
+<slidecast file="beginner-perl/open-file" youtube="UImoG8PaWR4" />

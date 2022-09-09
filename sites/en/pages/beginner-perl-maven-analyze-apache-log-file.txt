@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -15,7 +15,7 @@ See more <a href="https://code-maven.com/exercises">exercises</a> on the Code Ma
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/analyze-apache-log-file" youtube="xoBllrape9I" />
+<slidecast file="beginner-perl/analyze-apache-log-file" youtube="xoBllrape9I" />
 
 We have a log file of the Apache web server (or for that matter Nginx or any other web server).
 Each line describes a request made to the server. Each line starts with the IP address of the client
@@ -39,7 +39,7 @@ and <hl>$remote</hl> to count all the other requests.
 We have the filename in a variable called <hl>$file</hl> and then we use the <hl>open</hl> function to
 <a href="/beginner-perl-maven-open-file">open the file for reading</a> <hl>or die</hl> if we could not open the file.
 
-Then using a <hl>while</hl> loop we go over the file line by line. 
+Then using a <hl>while</hl> loop we go over the file line by line.
 
 Inside the loop the first thing we do is call <a href="/chomp">chomp</a> to remove the new-line from the end of the row
 even though in our case this does not matter, but we are used to it.

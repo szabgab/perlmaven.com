@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ read one line
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/read-one-line" youtube="6A8XoUFyvak" />
+<slidecast file="beginner-perl/read-one-line" youtube="6A8XoUFyvak" />

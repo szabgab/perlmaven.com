@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ No such file
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/no-such-file" youtube="ON9eQwol9BM" />
+<slidecast file="beginner-perl/no-such-file" youtube="ON9eQwol9BM" />

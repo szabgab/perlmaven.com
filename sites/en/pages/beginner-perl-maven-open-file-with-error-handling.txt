@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Open file with error handling
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/open-file-with-error-handling" youtube="9-7cSUxRxCw" />
+<slidecast file="beginner-perl/open-file-with-error-handling" youtube="9-7cSUxRxCw" />

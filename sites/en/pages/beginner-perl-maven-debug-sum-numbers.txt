@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Debug sum numbers
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/debug-sum-numbers" youtube="a0ueopvItko" />
+<slidecast file="beginner-perl/debug-sum-numbers" youtube="a0ueopvItko" />

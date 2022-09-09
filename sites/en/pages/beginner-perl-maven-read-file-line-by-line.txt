@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ Read file line by line
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/read-file-line-by-line" youtube="sn7xi1BZUxI" />
+<slidecast file="beginner-perl/read-file-line-by-line" youtube="sn7xi1BZUxI" />

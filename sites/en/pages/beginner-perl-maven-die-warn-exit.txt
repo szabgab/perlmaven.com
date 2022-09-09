@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -13,4 +13,4 @@ die, warn, exit
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/die-warn-exit" youtube="iRU3ALq6yGA" />
+<slidecast file="beginner-perl/die-warn-exit" youtube="iRU3ALq6yGA" />
