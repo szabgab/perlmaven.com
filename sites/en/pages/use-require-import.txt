@@ -15,7 +15,7 @@ but I have not explained the difference between <hl>use</hl> and <hl>require</hl
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/use-require-import" youtube="1W_llZqt74k" />
+<slidecast file="advanced-perl/libraries-and-modules/use-require-import" youtube="1W_llZqt74k" />
 
 
 <h2>require</h2>

@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -14,7 +14,7 @@ the scenes of the modules.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/behind-the-scenes" youtube="5P3EbdwGNmQ" />
+<slidecast file="advanced-perl/libraries-and-modules/behind-the-scenes" youtube="5P3EbdwGNmQ" />
 
 You already know that when perl encounters a <hl>use</hl> statement, it will look for a file with the same
 name, but with <hl>.pm</hl> extension in the directories listed in the <hl>@INC</hl> array.

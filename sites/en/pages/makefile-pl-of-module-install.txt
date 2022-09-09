@@ -18,7 +18,7 @@ but if you encounter a module that use Module::Install, you will need to underst
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/makefile-pl-of-module-install" youtube="bshmt9euW6o" />
+<slidecast file="advanced-perl/libraries-and-modules/makefile-pl-of-module-install" youtube="bshmt9euW6o" />
 
 
 Module::Install does not use a separate file, it uses Makefile.PL, it just has a different API.

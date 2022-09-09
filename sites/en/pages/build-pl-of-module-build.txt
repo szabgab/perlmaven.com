@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -22,7 +22,7 @@ You probbaly don't have any non-perl dependencies either.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/build-pl-of-module-build" youtube="Up-WkcmC2Qw" />
+<slidecast file="advanced-perl/libraries-and-modules/build-pl-of-module-build" youtube="Up-WkcmC2Qw" />
 
 <hl>Build.PL</hl> starts the same way as any other Perl script with <hl>use strict;</hl> and <hl>use warnings;</hl>.
 

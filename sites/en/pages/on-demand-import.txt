@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -16,10 +16,10 @@ the <hl>import</hl> function and we put the list of functions to be exported in 
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/on-demand-import" youtube="yvig3dDKmy4" />
+<slidecast file="advanced-perl/libraries-and-modules/on-demand-import" youtube="yvig3dDKmy4" />
 
 As the number of functions we export grows, this soon can get out of hand. Especially
-for people who do not 
+for people who do not
 <a href="/restrict-the-import">restrict the import by listing the functions to be imported</a>.
 People who just write <hl>use Module::Name;</hl> are going to receive a growing number
 of function in their namespace. Many of those functions they will probably never use and they

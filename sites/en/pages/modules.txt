@@ -14,7 +14,7 @@ but we have not seen the actual solution to the <a href="/the-problem-with-libra
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/modules" youtube="BwRaMyHiuOc" />
+<slidecast file="advanced-perl/libraries-and-modules/modules" youtube="BwRaMyHiuOc" />
 
 We had our package (namespace) in the same file as our main code, but we could do the same in two separate files:
 

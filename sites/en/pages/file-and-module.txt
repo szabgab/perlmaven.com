@@ -13,7 +13,7 @@ What we are packaging is a script and a module.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/file-and-module" youtube="PEwkiG1tb5U" />
+<slidecast file="advanced-perl/libraries-and-modules/file-and-module" youtube="PEwkiG1tb5U" />
 
 The script is placed in the <hl>script/</hl> directory and it is just a regular script.
 You don't have to tell it where to load the modules from, you just load the module.

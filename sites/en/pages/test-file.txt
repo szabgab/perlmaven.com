@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -15,7 +15,7 @@ with <hl>.t</hl> extension.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/test-file" youtube="x6hWi89ZOtk" />
+<slidecast file="advanced-perl/libraries-and-modules/test-file" youtube="x6hWi89ZOtk" />
 
 In earlier times there use to be a file called <hl>test.pl</hl> in the root of the distribution,
 so i you encounter such file then you'd probably know this is an old-style distribution.

@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -14,7 +14,7 @@ distribution file has the following steps:
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/packaging-with-build-pl" youtube="yy9aypG3IiM" />
+<slidecast file="advanced-perl/libraries-and-modules/packaging-with-build-pl" youtube="yy9aypG3IiM" />
 
 <code>
 perl Build.PL

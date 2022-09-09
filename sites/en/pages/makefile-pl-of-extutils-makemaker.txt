@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -14,7 +14,7 @@ to package your module?
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/makefile-pl-of-extutils-makemaker" youtube="7IKvWbd5_MA" />
+<slidecast file="advanced-perl/libraries-and-modules/makefile-pl-of-extutils-makemaker" youtube="7IKvWbd5_MA" />
 
 You need to create a file called <hl>Makefile.PL</hl>, then you might want to tell what is the minimal version
 of perl this Makefile.PL should run on by adding <hl>use 5.008;</hl> if you want to require 5.8 as a minimum.

@@ -5,7 +5,7 @@
 =tags screencast
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -14,7 +14,7 @@ file in the previous example? After all we only wrote <hl>require Calc;</hl>.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/require-at-inc"  youtube="ZDLkN2kCx2Y" />
+<slidecast file="advanced-perl/libraries-and-modules/require-at-inc"  youtube="ZDLkN2kCx2Y" />
 
 
 Before going further though two things:

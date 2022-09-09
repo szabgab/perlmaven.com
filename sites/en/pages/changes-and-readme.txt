@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -15,7 +15,7 @@ create a <a href="https://metacpan.org/pod/CPAN::Changes::Spec">specification fo
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/changes-and-readme" youtube="tlrm0Zm3Lr8" />
+<slidecast file="advanced-perl/libraries-and-modules/changes-and-readme" youtube="tlrm0Zm3Lr8" />
 
 Even the name of the Changes file is not standardizd. Some people write <hl>CHANGES</hl>,
 others write <hl>Changes</hl>, yet others write <hl>ChangeLog</hl>.
