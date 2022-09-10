@@ -5,7 +5,7 @@
 =books advanced
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -27,7 +27,7 @@ function needs to return <hl>undef</hl>.
 
 There are two ways to do this either by calling <hl>return undef;</hl> or by calling <hl>return;</hl> without providing anything.
 In the "Perl Best Practices" book Damian Conway recommended the latter and thus <a href="/search/perlcritic">Perl::Critic</a>
-has a policy to 
+has a policy to
 <a href="https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExplicitReturnUndef">prohibit explicit return undef</a>, but
 in fact both have its advantages and disadvantages.
 
@@ -114,5 +114,8 @@ will let the users chaining method calls.
 For example some of the methods of <a href="https://metacpan.org/pod/Path::Iterator::Rule">Path::Iterator::Rule</a>
 work like this as showing in the last example of <a href="/finding-files-in-a-directory-using-perl">finding files in a directory tree</a>.
 
+It is also probably confusing as the reader and writer of the code where this is used can only differentiate between getter and setter by the presence or lack of presence of a parameter.
+This compounded by the fact the using it as a getter or as a setter will return different things might be confusing and thus might be the source of errors.
 
+In the implementation inside the if-condition we return <hl>$self</hl>, the instance, while outside the if-condition we return <hl>$self->{field}</hl>, the current value of the field.
 

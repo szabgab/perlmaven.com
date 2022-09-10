@@ -14,7 +14,7 @@ we are going to learn about <b>array references</b>.
 
 =abstract end
 
-There are two main uses of array references. One is to make it easy 
+There are two main uses of array references. One is to make it easy
 to <a href="/passing-two-arrays-to-a-function">pass more than one arrays to a subroutine</a>,
 the other is to build arrays of arrays or other multi-dimensional data structures.
 

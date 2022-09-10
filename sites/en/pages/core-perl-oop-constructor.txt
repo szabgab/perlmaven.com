@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -14,9 +14,9 @@ Without any additional modules. Manually blessing a hash reference.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/core-perl-oop/constructor" youtube="Hhmks2-JhBs" />
+<slidecast file="advanced-perl/core-perl-oop/constructor" youtube="Hhmks2-JhBs" />
 
-In the previous chapter we have seen how to use <a href="/moose">Moose</a> to 
+In the previous chapter we have seen how to use <a href="/moose">Moose</a> to
 create object oriented code in Perl. In this chapter we are going to implement similar functionality,
 but without the use of any object oriented system from CPAN.
 
@@ -113,4 +113,13 @@ In case you are familiar with other programming languages they usually call it e
 
 
 
+<h2>Question</h2>
+
+How about the following?
+
+<code>
+my $class = ref $class || $class;
+</code>
+
+That would allow people to call the constructor on instances which in turn will confuse the readers.
 

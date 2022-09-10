@@ -4,13 +4,13 @@
 =tags screencast
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/core-perl-oop/setter-getter" youtube="JPRmQ5QNYaw" />
+<slidecast file="advanced-perl/core-perl-oop/setter-getter" youtube="JPRmQ5QNYaw" />
 
 
 Now that we have the <a href="/core-perl-oop-constructor">constructor</a>, let's see
@@ -36,7 +36,7 @@ In core Perl we need the following:
 
 <include file="examples/oop/person01/lib/Person.pm">
 
-We have the <a href="/core-perl-oop-constructor">constructor</a> slightly changed. 
+We have the <a href="/core-perl-oop-constructor">constructor</a> slightly changed.
 We'll talk about that again a little bit later.
 
 We also have the implementation of the <hl>accessor</hl> which is also a <hl>getter</hl> and a <hl>setter</hl>.
