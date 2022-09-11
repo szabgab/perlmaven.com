@@ -4,11 +4,11 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
-While for new applications it would be recommended to use <a href="/moo">Moo</a> or <a href="/moose">Moose</a> for writing Object Oriented Perl code, 
+While for new applications it would be recommended to use <a href="/moo">Moo</a> or <a href="/moose">Moose</a> for writing Object Oriented Perl code,
 sometimes you cannot use them. For example when you maintain an old code base, or when your management does not let you install modules
 form CPAN.
 
@@ -20,7 +20,7 @@ We call our class "My::Date". It is usually recommended to put each class in its
 implementing modules or classes in the lib directory. As the <hl>::</hl> separator is mapped to subdirectories, the
 code of the <hl>My::Date</hl> class should be placed in the <hl>lib/My/Date.pm</pl> file of the project.
 
-(aka "best practices") 
+(aka "best practices")
 
 <code lang="perl">
 package My::Date;

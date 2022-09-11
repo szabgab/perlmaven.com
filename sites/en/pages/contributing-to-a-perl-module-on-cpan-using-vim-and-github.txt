@@ -4,7 +4,7 @@
 =tags screencast
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -23,7 +23,7 @@ small contributions like that can really lead to big ones.
  -  Gervase Byomujuni
 </blockquote>
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/aB90XVLWyYk" frameborder="0" allowfullscreen></iframe>
+<screencast file="contributing-to-mime-lite-2011.07.13.ogv" youtube="aB90XVLWyYk" />
 
 It is not recommend solution any more, but back then I picked the
 <a href="https://metacpan.org/pod/MIME::Lite">MIME::Lite</a> distribution
@@ -33,8 +33,8 @@ It even asked me if I want to install <hl>File::Basename</hl> which is a standar
 
 The path of action was:
 
-Search on <a href="http://metacpan.org/">MetaCPAN</a> and locate 
-<a href="https://metacpan.org/pod/MIME::Lite">MIME::Lite</a> 
+Search on <a href="http://metacpan.org/">MetaCPAN</a> and locate
+<a href="https://metacpan.org/pod/MIME::Lite">MIME::Lite</a>
 to see where the source code lives. This module did not provide the information in
 its META file nor in its documentation. (BTW Already back then I saw that it was already
 added in the not-yet-released version, and since then the new version was uploaded).

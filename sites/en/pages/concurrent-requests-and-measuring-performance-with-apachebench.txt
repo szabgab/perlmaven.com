@@ -4,7 +4,7 @@
 =status show
 =books psgi
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -29,7 +29,7 @@ use Plack::Request;
 
 my $app = sub {
     my $env = shift;
- 
+
     my $html = get_html();
 
     my $request = Plack::Request->new($env);
@@ -43,7 +43,7 @@ my $app = sub {
         [ 'Content-Type' => 'text/html' ],
         [ $html ],
     ];
-}; 
+};
 
 sub get_html {
     return q{
