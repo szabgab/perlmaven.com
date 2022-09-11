@@ -6,7 +6,7 @@
 =author 0
 =archive 0
 =show_related 0
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 =show_social 0
 
 This is the list of keywords or topics you can find articles about. You can look up these keywords from anywhere on the

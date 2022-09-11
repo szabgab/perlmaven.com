@@ -1,9 +1,9 @@
 =title Finding all Plack Middleware or Perl::Critic Policies
 =timestamp 2014-08-31T16:30:01
-=indexes Plack::Middleware, Perl::Critic::Policy, Dancer::Plugin, Dancer2::Plugin, Catalyst::Plugin, 
+=indexes Plack::Middleware, Perl::Critic::Policy, Dancer::Plugin, Dancer2::Plugin, Catalyst::Plugin
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
