@@ -3,7 +3,7 @@
 =indexes B::Deparse, for, foreach
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

@@ -3,7 +3,7 @@
 =indexes <<, Perl::Critic, perlcritic
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -11,7 +11,7 @@
 
 Apparently I misunderstood the change in perl 5.20, so this article has been fixed accordingly.
 
-Thanks again to <a href="https://twitter.com/jonjensen0">Jon Jensen</a> to pointing to 
+Thanks again to <a href="https://twitter.com/jonjensen0">Jon Jensen</a> to pointing to
 <a href="https://rt.perl.org/rt3/Public/Bug/Display.html?id=118511#txn-1228753">the comment</a>
 that clarifies this. And thanks to Joel Berger who made that point as well in his comment.
 
