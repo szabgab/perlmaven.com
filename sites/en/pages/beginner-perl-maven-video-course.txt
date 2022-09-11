@@ -13,7 +13,7 @@ These are earlier recordings and they are a bit noisy, sorry for that.
 
 You can watch the episodes on YouTube, or on this site. Some of the pages here have extra text.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLw7UYp3N0eUYiICZUFR3p299TvjXZ4zFj" frameborder="0" allowfullscreen></iframe>
+<screencast file="installation.ogv" youtube="dskYFZax1Qo">
 
 
 <h2>Table of Contents</h2>

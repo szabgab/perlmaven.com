@@ -14,8 +14,7 @@ people who have never used the debugger. I hope this will help more people to st
 
 =abstract end
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/jiYZcV3khdY"
-frameborder="0" allowfullscreen></iframe>
+<screencast file="perl_debugger_intro.mp4" youtube="jiYZcV3khdY" />
 
 Running the debugger:
 

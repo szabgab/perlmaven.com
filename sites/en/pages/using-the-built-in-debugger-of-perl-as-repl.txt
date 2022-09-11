@@ -12,7 +12,7 @@ This screencast is showing how to use the command line debugger of perl to explo
 
 =abstract end
 
-<iframe width="1023" height="576" src="//www.youtube.com/embed/pL_nDlXNqLY" frameborder="0" allowfullscreen></iframe>
+<screencast file="perl_debugger_as_repl.mp4" youtube="pL_nDlXNqLY" />
 
 As you might know you can run perl code on the command line without even creating a script using the <hl>-e</hl> flag:
 <code>

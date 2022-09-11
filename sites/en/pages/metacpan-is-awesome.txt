@@ -16,6 +16,6 @@ With one click!
 =abstract end
 
 
-<iframe width="640" height="510" src="https://www.youtube.com/embed/7N1lZY5E5gg?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+<screencast file="2011_07_25_metacpan.ogv" youtube="7N1lZY5E5gg" />
 
 (This video was recorded in July 2011, but I still think <a href="/metacpan">MetaCPAN</a> is awesome!)

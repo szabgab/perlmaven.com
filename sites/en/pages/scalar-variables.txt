@@ -17,7 +17,7 @@ known as dictionaries, look-up tables or associative arrays in other languages.
 
 =abstract end
 
-<iframe width="640" height="510" src="https://www.youtube.com/embed/4jyGQPGXOK0?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+<screencast file="modern-perl-tutorial-part-02-scalars.ogv" youtube="4jyGQPGXOK0" />
 
 Variables in Perl are always preceded with a sign called a <b>sigil</b>. These signs are <hl>$</hl> for scalars,
 <hl>@</hl> for arrays, and <hl>%</hl> for hashes.

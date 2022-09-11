@@ -65,7 +65,7 @@ If you prefer, you can also watch the
 <a href="https://www.youtube.com/watch?v=c3qzmJsR2H0">Hello world with Perl</a>
 video I uploaded to YouTube.
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/c3qzmJsR2H0" frameborder="0" allowfullscreen></iframe>
+<screencast file="perl_tutorial_01.mp4" youtube="c3qzmJsR2H0" />
 
 In that case you might also want to check
 out the <a href="/beginner-perl-maven-video-course">Beginner Perl Maven video course</a>.

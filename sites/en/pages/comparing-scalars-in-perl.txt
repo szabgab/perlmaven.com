@@ -17,7 +17,7 @@ to compare two scalars. That's what this part is about.
 
 =abstract end
 
-<iframe width="640" height="510" src="//www.youtube.com/embed/KXFn0rnBPrc?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+<screencast file="modern-perl-tutorial-part-03-comparing-scalar" youtube="KXFn0rnBPrc" />
 
 An alternative screencast <a href="/beginner-perl-maven-compare-values">comparing values in Perl</a>
 

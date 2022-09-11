@@ -8,18 +8,17 @@
 
 =abstract start
 
-As I am trying to follow how <a href="https://www.youtube.com/gabor529">my screencasts</a> 
+As I am trying to follow how <a href="https://www.youtube.com/gabor529">my screencasts</a>
 are doing on YouTube I keep visiting the web site checking out the number of subscribers
-and the number of views of the videos. It's getting a bit boring so I thought I should 
+and the number of views of the videos. It's getting a bit boring so I thought I should
 automate it.
 
 =abstract end
 
-<iframe width="640" height="390" src="https://www.youtube.com/embed/a03jf68iz-M" 
-frameborder="0" allowfullscreen></iframe>
+<screencast file="youtube_api.mp4" youtube="a03jf68iz-M" />
 
 YouTube provides an <a href="http://code.google.com/apis/youtube/overview.html">API</a>
-for a lot of things. I wanted to be able to fetch the statistics of 
+for a lot of things. I wanted to be able to fetch the statistics of
 <a href="https://www.youtube.com/gabor529">my account</a>.
 
 I started by installing the <a href="http://padre.perlide.org/">Padre on Strawberry Perl for Windows</a>
@@ -27,7 +26,7 @@ package but it would work on any other distribution of Perl, and on any other op
 
 Then I went to <a href="https://www.metacpan.org/">Meta CPAN</a> to search for something related to
 <b>Youtube</b> and settled with <a href="https://metacpan.org/pod/WebService::GData">WebService::GData</a>.
-I went to the CPAN shell in the Strawberry -> Tools submenu and typed in 
+I went to the CPAN shell in the Strawberry -> Tools submenu and typed in
 
 <code>
 cpan> install WebService::GData
