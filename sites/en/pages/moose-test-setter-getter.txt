@@ -5,16 +5,16 @@
 =status show
 =books moose
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
 In this part of the <a href="/moose">Moose tutorial</a> we keep writing tests. This time for the accessors created for the attribute
-we declared in the earlier example. 
+we declared in the earlier example.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/test-setter-getter" youtube="y2O7qF7U9gs" />
+<slidecast file="advanced-perl/moose/test-setter-getter" youtube="y2O7qF7U9gs" />
 
 In order to test the setter and getter methods we enlarge the test script we had earlier.
 

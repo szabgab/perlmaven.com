@@ -1,11 +1,11 @@
 =title Moose: Testing the constructor
 =timestamp 2016-10-29T15:00:11
-=indexes Moose, 
+=indexes Moose
 =tags screencast
 =books moose
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -17,7 +17,7 @@ Let's start by testing the constructor we created in the <a href="/moose-constru
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/test-constructor" youtube="GnFTUi6Obt0" />
+<slidecast file="advanced-perl/moose/test-constructor" youtube="GnFTUi6Obt0" />
 
 <h2>Code layout</h2>
 

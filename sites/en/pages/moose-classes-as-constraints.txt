@@ -5,7 +5,7 @@
 =books moose
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -16,7 +16,7 @@ module.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/classes-as-constraints" youtube="NYsAqRK3kmw" />
+<slidecast file="advanced-perl/moose/classes-as-constraints" youtube="NYsAqRK3kmw" />
 
 Let's see the class itself in the <b>lib/Person.pm</b> file:
 

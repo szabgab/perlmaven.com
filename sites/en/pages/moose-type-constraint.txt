@@ -5,7 +5,7 @@
 =tags screencast
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -14,7 +14,7 @@ but <a href="/moose">Moose</a> can provide such type-checking in its setters.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/moose/type-constraint" youtube="oDIEsHcK3d4" />
+<slidecast file="advanced-perl/moose/type-constraint" youtube="oDIEsHcK3d4" />
 
 In this example  we a script called <hl>script/person.pl</hl> that looks like this:
 
