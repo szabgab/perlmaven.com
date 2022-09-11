@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -42,7 +42,7 @@ The page now shows a red circle.
 <img src="/img/red_circle.svg" alt="red circle"/>
 
 Then, as another example, let's remove the <hl>#</hl> from the <hl>'fill-opacity' => 0.5,</hl> line as well.
-The results in the following: 
+The results in the following:
 
 <img src="/img/red_circle_opacity_05.svg" alt="red circle"/>
 

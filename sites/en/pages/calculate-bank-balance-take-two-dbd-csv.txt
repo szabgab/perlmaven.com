@@ -3,7 +3,7 @@
 =indexes DBD::CSV, CSV, SQL, DBI
 =status show
 =author dmcbride
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

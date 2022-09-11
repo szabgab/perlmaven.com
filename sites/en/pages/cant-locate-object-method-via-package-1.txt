@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -30,7 +30,7 @@ print "after\n";
 We get the following output:
 
 <code>
-$ perl code.pl 
+$ perl code.pl
 
 before
 Can't locate object method "method" via package "1" (perhaps you forgot to load "1"?) at code.pl line 4.
