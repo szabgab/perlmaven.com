@@ -20,10 +20,7 @@ as Template, by the CPAN clients.)
 
 =abstract end
 
-<iframe width="640" height="390"
-src="//www.youtube.com/embed/NGX5pgKWVoc" frameborder="0" allowfullscreen></iframe>
-
-<screencast file="na" youtube="NGX5pgKWVoc" />
+<screencast file="dwimmer_mpeg4_1000.mp4" youtube="NGX5pgKWVoc" />
 
 The application we build is going to be called <a href="http://dwimmer.org/">Dwimmer</a>. We need to
 use the command line to build the skeleton of our application by typing in
