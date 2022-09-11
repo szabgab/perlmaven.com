@@ -1,9 +1,9 @@
 =title How to add images to the documentation of Perl modules on CPAN 
 =timestamp 2013-08-22T14:30:01
-=indexes 
+=indexes CPAN
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

@@ -1,9 +1,9 @@
 =title How to check if a string is all upper case (lower case) characters?
 =timestamp 2013-11-17T17:30:01
-=indexes open, UTF-8, \p{Uppercase}, uc 
+=indexes open, UTF-8, \p{Uppercase}, uc
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

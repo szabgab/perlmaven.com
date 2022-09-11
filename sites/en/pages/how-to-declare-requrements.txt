@@ -5,7 +5,7 @@
 =books cpan_co_maintainer
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -21,9 +21,9 @@ They all seemed to complain about the same thing:
 
 <code>
 Can't locate object method "new" via package "Test::Compile" at t/00-compile.t line 6.
-t/00-compile.t ...... 
+t/00-compile.t ......
 Dubious, test returned 255 (wstat 65280, 0xff00)
-No subtests run 
+No subtests run
 </code>
 
 That was strange, but I recalled a <a href="https://github.com/hvoers/Pod-Tree/commit/61beb53ff389b83dbb491264b7537a2397b6d026">similar report</a> earlier

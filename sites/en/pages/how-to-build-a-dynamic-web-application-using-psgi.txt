@@ -4,16 +4,16 @@
 =status show
 =books psgi
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
 Now that we have built our <a href="/getting-started-with-psgi">first web application using PSGI</a>
-we can go a step further and build something that can respond to a query. 
+we can go a step further and build something that can respond to a query.
 
 =abstract end
 
-In order to build a web application that can accept input from users we need 
+In order to build a web application that can accept input from users we need
 to understand how <a href="http://plackperl.org/">Plack/PSGI</a> defined that
 part of the interaction.
 

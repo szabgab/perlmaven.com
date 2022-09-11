@@ -4,12 +4,12 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
 Once in a while people send me sample code with some problems to fix.
-Besides fixing the problems I often find myself recommending a few 
+Besides fixing the problems I often find myself recommending a few
 things they can do to quickly improve their Perl code.
 
 =abstract end

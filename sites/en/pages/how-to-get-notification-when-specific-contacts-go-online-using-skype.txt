@@ -4,7 +4,7 @@
 =status show
 =books cook_book
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -25,11 +25,11 @@ Before looking at the actual code. As I read in the documentation, the module
 I tried this on Mac OSX.
 
 After installing <a href="https://metacpan.org/pod/Skype::Any">Skype::Any</a>
-I also had to install 
+I also had to install
 <a href="https://metacpan.org/pod/Cocoa::Skype">Cocoa::Skype</a>, and
 <a href="https://metacpan.org/pod/Cocoa::EventLoop">Cocoa::EventLoop</a> separately.
 
-The module also comes with a warning. Apparently Skype is  
+The module also comes with a warning. Apparently Skype is
 <a href="https://support.skype.com/en/faq/FA12349/skype-says-my-application-will-stop-working-with-skype-in-december-2013-why-is-that">shutting down part of this API</a> in December 2013. That's now. So this whole solution might go away in a few weeks. We'll see.
 
 <h2>The Selective Skype Notification Agent</h2>
@@ -40,7 +40,7 @@ use warnings;
 use 5.010;
 
 use Skype::Any;
- 
+
 my $skype = Skype::Any->new(name => "Selective Notification Agent");
 
 $skype->user(sub {

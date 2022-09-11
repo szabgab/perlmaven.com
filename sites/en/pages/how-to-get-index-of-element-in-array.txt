@@ -3,7 +3,7 @@
 =indexes List::MoreUtils, first_index, grep
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

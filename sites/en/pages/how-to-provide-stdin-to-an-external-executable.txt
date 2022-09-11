@@ -5,7 +5,7 @@
 =books testing
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -31,7 +31,7 @@ If we run this it will prompt us twice. First it expects 'a' or 'b' as answers a
 if we provided one of the available values. An interaction might look like this:
 
 <code>
-$ perl exe.pl 
+$ perl exe.pl
 Please select:
 a) Hello
 b) World
