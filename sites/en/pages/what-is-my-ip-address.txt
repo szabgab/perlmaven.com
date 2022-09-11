@@ -3,7 +3,7 @@
 =indexes Net::Address::IP::Local, IPv4, IPv6
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

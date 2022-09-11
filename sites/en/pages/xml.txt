@@ -4,7 +4,8 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
+=show_related 0
 
 =abstract start
 
@@ -28,7 +29,7 @@ This article is a collection of the XML-related modules available on CPAN.
   <li><a href="https://metacpan.org/pod/XML::SAX::Writer">XML::SAX::Writer</a></li>
   <li><a href="https://metacpan.org/pod/XML::Writer">XML::Writer</a></li>
   <li><a href="https://metacpan.org/pod/XML::Simple">XML::Simple</a></li>
-  <li><a href="https://metacpan.org/pod/XML::Loy">XML::Loy</a></li> 
+  <li><a href="https://metacpan.org/pod/XML::Loy">XML::Loy</a></li>
   <li><a href="https://metacpan.org/pod/XML::Twig">XML::Twig</a></li>
   <li><a href="https://metacpan.org/pod/XML::Bare">XML::Bare</a></li>
   <li><a href="https://metacpan.org/pod/XML::Compile">XML::Compile</a></li>
@@ -46,7 +47,7 @@ This article is a collection of the XML-related modules available on CPAN.
   <li><a href="https://metacpan.org/pod/XML::DT">XML::DT</a></li>
   <li><a href="https://metacpan.org/pod/SOAP::Lite">SOAP::Lite</a></li>
 </ul>
-  
+
 
 <h2>Articles</h2>
 
@@ -56,4 +57,4 @@ This article is a collection of the XML-related modules available on CPAN.
   <li><a href="/count-elements-using-xml-xpath">Count elements using XML::XPath</a></li>
   <li><a href="/xml-writer">XML::Writer examples</a></li>
 </ul>
-  
+

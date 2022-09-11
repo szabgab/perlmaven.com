@@ -3,7 +3,7 @@
 =indexes context
 =status show
 =author ovid
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -23,8 +23,8 @@ use 5.010;
 
 my @first  = ( 'foo', 'bar', 'baz' );
 my @second = ( 'this', 'that' );
-say @first + @second; 
-say @first . @second; 
+say @first + @second;
+say @first . @second;
 </code>
 
 That prints <hl>5</hl> on one line and <hl>32</hl> on the second! What the

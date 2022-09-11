@@ -3,11 +3,11 @@
 =indexes Travis-CI, Geo::IP
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
-Since the article published by Neil Bowers on using 
+Since the article published by Neil Bowers on using
 <a href="http://blogs.perl.org/users/neilb/2014/08/try-travis-ci-with-your-cpan-distributions.html">Travis CI for CPAN distributions</a> I fell in love with the
 service. It provides early feedback when I break something, and makes me pay more attention to the changes I make. I just wish they had more platforms available.
 
