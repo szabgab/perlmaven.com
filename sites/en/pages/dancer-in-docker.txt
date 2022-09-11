@@ -5,7 +5,7 @@
 =books dancer
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -46,7 +46,7 @@ It will also map the /opt directory of the container to the current directory of
 It will show you a prompt like this:
 
 <code>
-root@6401bb1ec929:/# 
+root@6401bb1ec929:/#
 </code>
 
 
@@ -63,7 +63,7 @@ perl My-App/bin/app.pl
 </code>
 
 Will launch the Dancer application in the container and you can visit it from your desktop by browsing to:
-http://127.0.0.1:3001/ 
+http://127.0.0.1:3001/
 
 
 <h2>Manual testing environment</h2>
@@ -97,7 +97,7 @@ docker run --rm -it -p 3001:3000 dancer
 
 Internally, in the Docker instance, this will launch the Dancer application listening on port 3000.
 
-Docker will map it to port 3001 of the host system. 
+Docker will map it to port 3001 of the host system.
 
 You can now visit http://127.0.0.1:3001/ and see the site.
 
