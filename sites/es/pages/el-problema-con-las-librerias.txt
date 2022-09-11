@@ -15,7 +15,7 @@ Ahora que hemos aprendido a usar <a href="/librerias-perl-4">librerías en Perl 
 A pesar de que siguen en uso, pertenecen a una época muy antigua, antes de que Perl 5 apareciera en 1995.
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/the-problem-with-libraries" youtube="UZeEzD5459c" />
+<slidecast file="advanced-perl/libraries-and-modules/the-problem-with-libraries" youtube="UZeEzD5459c" />
 
 De la nada:
 La librería (<hl>library.pl</hl>) que tenemos en <a href="/librerias-perl-4">librerías en Perl 4</a> contiene 3 funciones y una variable global (<hl>$base</hl>). Si nosotros hacemos <hl>import</hl> de la librería tal como está hecho en <hl>perl4_app.pl</hl>

@@ -17,7 +17,7 @@ En este capítulo explicaremos cómo funcionan las libreras en Perl. Esto es alg
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/perl4-libraries" youtube="ehcarfOHgEg" />
+<slidecast file="advanced-perl/libraries-and-modules/perl4-libraries" youtube="ehcarfOHgEg" />
 
 <h2>Falta de reutilización de código</h2>
 

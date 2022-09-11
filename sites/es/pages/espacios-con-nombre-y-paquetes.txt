@@ -18,7 +18,7 @@ utilizando los espacios-con-nombre de Perl 5.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/libraries-and-modules/namespaces" youtube="VdtJqpD2ARA" />
+<slidecast file="advanced-perl/libraries-and-modules/namespaces" youtube="VdtJqpD2ARA" />
 
 Otros lenguajes también utilizan espacios con nombre. En Perl 5, para cambiar de espacio con nombre utilizamos la palabra reservada
 <hl>package</hl>. (Para una mayor esplicación sobre espacios con nombre, paquetes, módulos etc. te recomendamos leer <a href="/packages-modules-and-namespace-in-perl">este artículo</a>.)
