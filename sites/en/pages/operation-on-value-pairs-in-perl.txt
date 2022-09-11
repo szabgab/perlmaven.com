@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -15,7 +15,7 @@ dealing with data in pairs without creating little hashes.
 
 <h2>pairs</h2>
 
-Given a list of values, e.g 
+Given a list of values, e.g
 
 <code lang="perl">
 my @things = ('foo', 3, 'bar', 5, 'moo', 7);

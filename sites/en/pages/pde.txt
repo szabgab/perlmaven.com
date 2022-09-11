@@ -4,7 +4,7 @@
 =status draft
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -41,7 +41,7 @@ that were explicitely installed. (In addition there are many others that were pu
 
 <h2>Sources</h2>
 
-The code that is need to build and rebuild PDE can be found in 
+The code that is need to build and rebuild PDE can be found in
 <a href="https://github.com/szabgab/PDE/">this GitHub repository</a> along with the instructions.
 If something is not clear to you then ask. It probably means it was not clear to me either and I'd better
 fix it.

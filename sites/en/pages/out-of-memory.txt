@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -22,7 +22,7 @@ The first test script was this:
 In this example we create a very long sting of the same character.
 
 On the Linux machine that has 2Gb memory and no swap-space allocated, the script started to die
-printing <b>Out of memory!</b> on the terminal when I tried to allocate 1800 Mb memory. This is not surprising 
+printing <b>Out of memory!</b> on the terminal when I tried to allocate 1800 Mb memory. This is not surprising
 as the operating system also takes some memory. So basically once we ran out of memory the script just died.
 
 The same script on the host OSX that has 4 Gb memory and swap space, could allocate 20 Gb memory and was still working.

@@ -4,7 +4,7 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -28,7 +28,7 @@ Quick explanation:
   <li><b>package</b> is a keyword of Perl that switches to a new namespace. Sometimes people refer to a particular <b>release</b> or a <b>distribution</b> as being a <b>package</b>,
        but that only happens because when we zip up several files of a <b>release</b> we often think about the English word <b>package</b>.</li>
   <li><b>module</b> is the name of a package (namespace) that is kept in a file derived from its name. (a package/namespace called Some::Thing kept in a file called Some/Thing.pm is called a module.
-      Unfortunately when we say "module" we often refer to a whole distribution.</li> 
+      Unfortunately when we say "module" we often refer to a whole distribution.</li>
 
 <h2>Details</h2>
 
