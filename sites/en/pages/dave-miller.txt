@@ -2,12 +2,12 @@
 =timestamp 2013-08-04T23:33:01
 =indexes Bugzilla, Dave Miller
 =tags interview, tv
-=mp3 /media/audio/dave-miller.mp3, 37286496, 38:31 
+=mp3 /media/audio/dave-miller.mp3, 37286496, 38:31
 =status show
 =show_newsletter_form 0
 =show_date 0
 =author 0
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -21,9 +21,7 @@ The interview is 38:31 min long.
 
 =abstract end
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/T9sMy7ZxxFY" frameborder="0" allowfullscreen></iframe>
-
-<podcast>
+<podcast file="justdave72_2013-08-03_08-55-31.mp4" youtube="T9sMy7ZxxFY" />
 
 <h2>Notes</h2>
 
