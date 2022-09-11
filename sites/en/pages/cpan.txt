@@ -3,7 +3,7 @@
 =indexes CPAN
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -20,7 +20,7 @@ you use <a href="https://metacpan.org/">MetaCPAN</a>.  You visit MetaCPAN and ju
 Try giving words that might be part of the name of the module you are looking for, or part of the description of what it does.
 
 
-There some extra tricks in using MetaCPAN. For example you can 
+There some extra tricks in using MetaCPAN. For example you can
 <a href="/listing-all-the-modules-in-a-namespace">search for all Plack Middleware or Perl::Critic Policies</a>
 or you can <a href="/metacpan-search-tricks">limit your search by distribution name, version number or author.</a>
 

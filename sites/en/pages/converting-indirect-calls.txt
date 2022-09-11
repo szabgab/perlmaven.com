@@ -1,11 +1,11 @@
 =title Converting indirect calls
 =timestamp 2016-03-10T19:50:01
-=indexes Perl::Critic, Objects::ProhibitIndirectSyntax 
+=indexes Perl::Critic, Objects::ProhibitIndirectSyntax
 =status show
 =books cpan_co_maintainer
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

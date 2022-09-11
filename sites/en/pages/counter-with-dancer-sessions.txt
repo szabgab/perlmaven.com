@@ -4,7 +4,7 @@
 =status show
 =books dancer2, counter
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -17,7 +17,7 @@ We create a Dancer application using <hl>dancer2 -a Counter</hl> and change dire
 We launch the application using plack:
 
 <code>
-$ plackup -R . bin/app.psgi 
+$ plackup -R . bin/app.psgi
 </code>
 
 The <hl>-R .</hl> will monitor the whole directory structure and if anything changes it will reload the application.

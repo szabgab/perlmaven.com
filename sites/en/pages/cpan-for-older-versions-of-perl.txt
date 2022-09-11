@@ -3,7 +3,7 @@
 =indexes cpxxxan, CPAN
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -12,7 +12,7 @@ When you install a module using any of the CPAN clients (eg. <a href="https://me
 
 What if that does not work on your platform on your version of Perl?
 
-=abstract end 
+=abstract end
 
 You can use the data collected by the <a href="http://cpantesters.org/">CPAN Testers</a>. For example if you visit the
 page listing the <a href="http://www.cpantesters.org/distro/T/Term-ReadPassword-Win32.html">test reports of Term::ReadPassword::Win32</a>,
