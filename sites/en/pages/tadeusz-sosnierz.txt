@@ -6,7 +6,7 @@
 =show_newsletter_form 0
 =show_date 0
 =author 0
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -18,7 +18,7 @@ He also gave a very surprising answer to the question: <b>Why would you want to 
 
 =abstract end
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/4i2phyrKQCQ" frameborder="0" allowfullscreen></iframe>
+<screencast file="tadzikes_2013-05-01_17-58-02.mp4" youtube="4i2phyrKQCQ" />
 
 <podcast>
 

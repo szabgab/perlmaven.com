@@ -22,7 +22,7 @@ interesting CPAN modules.  (31.06 min)
 
 =abstract end
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/yjZiR03zckk" frameborder="0" allowfullscreen></iframe>
+<screencast file="numerascii_2013-07-20_17-56-14.mp4" youtube="yjZiR03zckk" />
 
 <podcast>
 

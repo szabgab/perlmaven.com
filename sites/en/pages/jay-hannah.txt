@@ -6,7 +6,7 @@
 =show_newsletter_form 0
 =show_date 0
 =author 0
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -15,7 +15,7 @@ Interview with Jay Hannah, who has been the administrator of the central Perl Mo
 
 =abstract end
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/0m5E2CZmCww" frameborder="0" allowfullscreen></iframe>
+<screencast file="deafferret_2013-05-21_21-36-33.mp4" youtube="0m5E2CZmCww" />
 
 <podcast>
 
@@ -23,13 +23,13 @@ Interview with Jay Hannah, who has been the administrator of the central Perl Mo
 <ul>
   <li><a href="http://www.pm.org/">Perl Mongers International</a> where Jay is the chief ticket monkey</li>
   <li><a href="http://omaha.pm.org/">Perl Mongers in Omaha, Nebraska</a> that Jay basically folded into the <a href="http://odlug.org/">Omaha Dynamic Language User Group</a></li>
-  <li><a href="http://desmoines.pm.org/">Des Moines, Iowa</a> and 
+  <li><a href="http://desmoines.pm.org/">Des Moines, Iowa</a> and
       <a href="http://kc.pm.org/">Kansas City, Missouri</a> are two near-by Perl Monger groups.</li>
   <li>55 Fahrenheit is 12.7778 Celsius. It is rather cold for bike riding :)</li>
-  <li><a href="http://jays.net">jays.net</a> for all things Jay. Or: 
+  <li><a href="http://jays.net">jays.net</a> for all things Jay. Or:
    <a href="https://www.facebook.com/deafferret">Facebook</a>,
    <a href="https://twitter.com/deafferret">Twitter</a>,
-   <a href="http://deafferret.tumblr.com/">Tumblr</a>, 
+   <a href="http://deafferret.tumblr.com/">Tumblr</a>,
    <a href="https://www.youtube.com/deafferret">YouTube</a>,
    <a href="https://www.linkedin.com/in/jhannah">LinkedIn</a>,
    <a href="https://github.com/jhannah">github</a>,

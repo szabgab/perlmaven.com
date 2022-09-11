@@ -7,7 +7,7 @@
 =show_newsletter_form 0
 =show_date 0
 =author 0
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -19,7 +19,7 @@ a prototype of an Ultra Modern Perl 5, but how did he get there from Art school?
 
 =abstract end
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/shu-bVimOpM" frameborder="0" allowfullscreen></iframe>
+<screencast file="ii_stevan_2013-05-02_18-41-43.mp4" youtube="shu-bVimOpM" />
 
 <podcast>
 

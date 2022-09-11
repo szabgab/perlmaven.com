@@ -8,7 +8,7 @@
 =show_newsletter_form 0
 =show_date 0
 =author 0
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -20,7 +20,7 @@ He also tells us about is upcoming course on Git.
 
 =abstract end
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/Tsy9m_f-op8" frameborder="0" allowfullscreen></iframe>
+<screencast file="schwern_2013-04-27_21-13-51.mp4" youtube="Tsy9m_f-op8" />
 
 <podcast>
 

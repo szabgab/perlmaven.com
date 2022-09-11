@@ -6,7 +6,7 @@
 =show_newsletter_form 0
 =show_date 0
 =author 0
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -15,7 +15,7 @@ A biologist turned sysadmin, turned to DevOps engineer, turned to programmer, te
 
 =abstract end
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Fb0A89T15MY" frameborder="0" allowfullscreen></iframe>
+<screencast file="genehack112_2013-05-10_21-16-40.mp4" youtube="Fb0A89T15MY" />
 
 <podcast>
 
