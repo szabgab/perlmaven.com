@@ -4,7 +4,7 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -28,7 +28,7 @@ we need to "overload" the stringification operator. It can be done using the <a 
 This is what needs to be added to the Date.pm file in the <a href="/constructor-and-accessors-in-classic-perl-oop">previous example</a>.
 
 <code lang="perl">
-use overload 
+use overload
     '""' => 'stringify';
 
 sub stringify {

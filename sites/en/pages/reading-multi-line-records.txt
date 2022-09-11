@@ -3,7 +3,7 @@
 =indexes GSM
 =status draft
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -38,7 +38,7 @@ TRHYST  TROFFSETP  TROFFSETN  AWOFFSET  BQOFFSET
  2       0                     5         3
 
 HIHYST  LOHYST  OFFSETP  OFFSETN  BQOFFSETAFR  BQOFFSETAWB
- 5       3       0                 3           
+ 5       3       0                 3
 
 CELLR     DIR     CAND   CS
 G37911    MUTUAL  BOTH   NO
@@ -50,7 +50,7 @@ TRHYST  TROFFSETP  TROFFSETN  AWOFFSET  BQOFFSET
  2       0                     5         3
 
 HIHYST  LOHYST  OFFSETP  OFFSETN  BQOFFSETAFR  BQOFFSETAWB
- 5       3       0                 3           
+ 5       3       0                 3
 
 CELL
 G37521
@@ -65,7 +65,7 @@ TRHYST  TROFFSETP  TROFFSETN  AWOFFSET  BQOFFSET
  2       0                     5         3
 
 HIHYST  LOHYST  OFFSETP  OFFSETN  BQOFFSETAFR  BQOFFSETAWB
- 5       3       0                 3           
+ 5       3       0                 3
 
 CELLR     DIR     CAND   CS
 G37421    MUTUAL  BOTH   YES
@@ -77,7 +77,7 @@ TRHYST  TROFFSETP  TROFFSETN  AWOFFSET  BQOFFSET
  2       0                     5         3
 
 HIHYST  LOHYST  OFFSETP  OFFSETN  BQOFFSETAFR  BQOFFSETAWB
- 5       3       0                 3           
+ 5       3       0                 3
 
 END
 </code>
@@ -91,10 +91,10 @@ output file.
 <code>
 CELL CELLR DIR CAND CS KHYST KOFFSETP KOFFSETN LHYST LOFFSETP LOFFSETN TRHYST TROFFSETP TROFFSETN AWOFFSET BQOFFSET HIHYST LOHYST OFFSETP OFFSETN BQOFFSETAFR BQOFFSETAWB
 
-G37423 G31761    MUTUAL  BOTH   NO  3       0                    3       0  2       0                     5         3  5       3       0                 3           
-G37423 G37911    MUTUAL  BOTH   NO  3       0                    3       0  2       0                     5         3  5       3       0                 3           
-G37521 G37422    MUTUAL  BOTH   YES  3       0                    3       0  2       0                     5         3  5       3       0                 3           
-G37521 G37421    MUTUAL  BOTH   YES  3       0                    3       0  2       0                     5         3  5       3       0                 3           
+G37423 G31761    MUTUAL  BOTH   NO  3       0                    3       0  2       0                     5         3  5       3       0                 3
+G37423 G37911    MUTUAL  BOTH   NO  3       0                    3       0  2       0                     5         3  5       3       0                 3
+G37521 G37422    MUTUAL  BOTH   YES  3       0                    3       0  2       0                     5         3  5       3       0                 3
+G37521 G37421    MUTUAL  BOTH   YES  3       0                    3       0  2       0                     5         3  5       3       0                 3
 </code>
 
 <h2 id="description">A bit of description</h2>

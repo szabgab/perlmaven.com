@@ -1,10 +1,10 @@
-=title Three-argument form of open used and it is not available until perl 5.6.  
+=title Three-argument form of open used and it is not available until perl 5.6.
 =timestamp 2016-06-15T07:30:01
 =indexes Perl::Critic, Compatibility::ProhibitThreeArgumentOpen, Compatibility::PerlMinimumVersionAndWhy
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

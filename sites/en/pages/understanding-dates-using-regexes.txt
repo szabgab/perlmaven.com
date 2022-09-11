@@ -3,7 +3,7 @@
 =indexes regex, regular expression, ?, m, \, /, next
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

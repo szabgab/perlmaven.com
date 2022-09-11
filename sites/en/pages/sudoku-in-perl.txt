@@ -4,11 +4,11 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
-What if you ran out of the Sudoku boards in the paper and would like to create your own? No problem 
+What if you ran out of the Sudoku boards in the paper and would like to create your own? No problem
 <a href="http://d.hatena.ne.jp/charsbar/">Kenichi Ishigaki (aka charsbar)</a> has created a module called
 <a href="https://metacpan.org/pod/Games::Sudoku::Component">Games::Sudoku::Component</a> that will generate
 a Sudoku board for you.

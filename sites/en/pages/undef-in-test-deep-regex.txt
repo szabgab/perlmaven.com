@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -41,7 +41,7 @@ sub descend
 {
         my $self = shift;
         my $got = shift;
- 
+
         my $re = $self->{val};
         if (my $match_exp = $self->{matches})
         {

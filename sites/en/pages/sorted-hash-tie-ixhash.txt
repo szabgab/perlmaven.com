@@ -4,12 +4,12 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
-Though you <a href="/how-to-sort-a-hash-in-perl">cannot sort a hash</a>, but using the 
-<a href="/search/tie">tie</a> keyword and the 
+Though you <a href="/how-to-sort-a-hash-in-perl">cannot sort a hash</a>, but using the
+<a href="/search/tie">tie</a> keyword and the
 <a href="https://metacpan.org/pod/Tie::IxHash">Tie::IxHash</a> module we can create a hash
 that keeps the keys ordered.
 

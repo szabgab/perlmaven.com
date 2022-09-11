@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -25,7 +25,7 @@ Why is this interesting? You might ask.
 In order to compute the expression <hl>3 + 4 * 2</hl> correctly we need to
 know the <b>precedence</b> rules.
 In this case that multiplication should be executed before addition.
-This gives 11. 
+This gives 11.
 
 In case of the <hl>8 - 4 - 2</hl> expression, we  need to know the rules of <b>associativity</b>,
 In this case that negation is left associative, that we have to execute the left-most operation first and only then the right operation.
@@ -33,8 +33,8 @@ This gives 2.
 
 If we want to implement this in software or hardware, we need to work hard.
 
-In case of the Reverse Polish Notation (RPN), once you wrote the expression, 
-it has no ambiguity at all. RPN has no other rule than 
+In case of the Reverse Polish Notation (RPN), once you wrote the expression,
+it has no ambiguity at all. RPN has no other rule than
 "Every operator works on the last two numbers".
 
 The above two expression written in RPN are <hl>3 4 2 * +</hl> and

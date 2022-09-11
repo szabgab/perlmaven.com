@@ -3,14 +3,14 @@
 =indexes v5.10, switch, case, given, when
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
 TL;DR
 
 There is <b>no case/switch statement on Perl</b>. Use if/elsif/elsif/...
- 
+
 One of the complaints about Perl was always that it lacks a real
 case or switch statement. While you could always fake one, people
 were not satisfied. Even though Python does not have one either...

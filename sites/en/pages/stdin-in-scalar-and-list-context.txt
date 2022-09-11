@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -20,13 +20,13 @@ This time we'll look at reading from STDIN using <hl>&lt;STDIN></hl> in scalar a
 
 <h2>STDIN in scalar context</h2>
 
-This is what we have have been doing right from the 
+This is what we have have been doing right from the
 <a href="/installing-perl-and-getting-started">beginning</a> of the <a href="/perl-tutorial">Perl Tutorial</a>.
 
 <code lang="perl">
 use strict;
 use warnings;
- 
+
 print "Please type in your name: ";
 my $name = <STDIN>;
 chomp $name;

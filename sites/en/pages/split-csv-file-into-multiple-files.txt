@@ -3,7 +3,7 @@
 =indexes Text::CSV, Text::CSV_XS, CSV
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -28,7 +28,7 @@ Unfortunately these solutions won't work correctly for a file like the following
 <code>
 Tudor;Vidor;10;Hapci
 Szundi;Morgo;7;Szende
-Kuka;"Hofeherke; 
+Kuka;"Hofeherke;
 alma";100;Kiralyno
 Boszorkany;Herceg;9;Meselo
 </code>

@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -24,7 +24,7 @@ This setting, unfortunately does not reflect the harsher natural environment you
 
 As it turns out Test::Harness will <a href="https://github.com/Perl-Toolchain-Gang/Test-Harness/blob/62688b0c26fedf4760e809ef90186c47d2307b96/lib/Test/Harness.pm#L150">only set PERL_USE_UNSAFE_INC if it is not defined yet</a>. This means that if you set <hl>PERL_USE_UNSAFE_INC=0</hl> in your <hl>.travis.yml</hl> file that will remove "." from @INC in Perl 5.26. At least as long as Test::Harness will take that in account.
 
-You can and probably also should set <hl>PERL_USE_UNSAFE_INC=0</hl> on your development and testing machines to make them more similar to real world environments. 
+You can and probably also should set <hl>PERL_USE_UNSAFE_INC=0</hl> on your development and testing machines to make them more similar to real world environments.
 
 <code>
 env:

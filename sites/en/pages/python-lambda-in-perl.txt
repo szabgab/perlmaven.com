@@ -3,7 +3,7 @@
 =indexes lambda, sub
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -14,7 +14,7 @@ Python has a tool called <hl>lambda</hl> that allows to create anonymous functio
 
 In the following example the <hl>make_incrementor</hl> function returns a new, anonymous function.
 
-<h2>In Python using lambda</h2> 
+<h2>In Python using lambda</h2>
 
 <code lang="python">
 def make_incrementor(n):

@@ -3,7 +3,7 @@
 =indexes File::Find::Rule, map
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -35,7 +35,7 @@ I have list of pdf file & i want to check whether it is available in a directory
                  dir2        dir3         dir4      dir5       dir6
                   |                        |
                   |                        |
-       ----------------------         -------------- 
+       ----------------------         --------------
        |                    |         |            |
      dir7                  dir8      dir9         dir10
 </code>
