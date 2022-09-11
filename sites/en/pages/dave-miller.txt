@@ -21,7 +21,9 @@ The interview is 38:31 min long.
 
 =abstract end
 
-<podcast file="justdave72_2013-08-03_08-55-31.mp4" youtube="T9sMy7ZxxFY" />
+<screencast file="justdave72_2013-08-03_08-55-31.mp4" youtube="T9sMy7ZxxFY" />
+
+<podcast>
 
 <h2>Notes</h2>
 
