@@ -5,8 +5,6 @@
 =show_date 0
 =author 0
 =archive 0
-=comments_disqus_enable 1
-
-
+=comments_disqus_enable 0
 
 

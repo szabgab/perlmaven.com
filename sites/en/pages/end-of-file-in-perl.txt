@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -14,7 +14,7 @@ when they reach the end of the file or when they reach the end of the data avail
 
 =abstract end
 
-<h2>Reading text file in while loop</h2> 
+<h2>Reading text file in while loop</h2>
 
 <hl><$fh></hl>, the "readline" operator in Perl returns <hl>undef</hl> when there is no more to read from the file-handle:
 

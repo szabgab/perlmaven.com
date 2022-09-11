@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -18,7 +18,7 @@ Install Perl::Critic
 
 Create a file called <hl>.perlcriticrc</hl> with the following:
 
-<code> 
+<code>
 severity = 5
 #verbose = 11
 #verbose = %f: [%p] %m at line %l, column %c.\n%d\n
@@ -33,7 +33,7 @@ modules_file = .forbidden_modules
 </code>
 
 Create the <hl>.forbidden_modules</hl> file with the following:
- 
+
 <code>
 Switch           Use if, elsif instead of the deprecated Switch module
 Fatal            Use autodie instead of Fatal
