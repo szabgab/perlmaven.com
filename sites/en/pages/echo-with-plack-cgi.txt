@@ -5,7 +5,7 @@
 =books psgi
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -23,7 +23,7 @@ but we also load the <a href="https://metacpan.org/pod/Plack::Request">Plack::Re
 the <hl>QUERY_STRING</hl> environment variable created by the Apache web server.
 
 If we put this script in a <a href="http://code-maven.com/set-up-cgi-with-apache">CGI-enabled directory of Apache</a>,
-we can access it as 
+we can access it as
 
 <code>
 http://127.0.0.1/cgi-bin/echo.pl

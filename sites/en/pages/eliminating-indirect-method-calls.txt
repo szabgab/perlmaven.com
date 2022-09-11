@@ -5,14 +5,14 @@
 =books cpan_co_maintainer
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
 While in the <a href="">previous article</a> we seemed to have finished the refactoring based on Perl::Critic,
 but in fact we have only covered level 5, the violation considered most important.
 
-There are a few issues that are IMHO important but are categorized as level 4. 
+There are a few issues that are IMHO important but are categorized as level 4.
 
 Specifically I am looking for eliminating the indirect method call syntax.
 
@@ -31,7 +31,7 @@ $ ack Exporter
 lib/Pod/Tree.pm
 7:require Exporter;
 14:use base qw(Exporter);
-</code> 
+</code>
 
 When opening the file I looked for the word EXPORT (looking for <hl>@EXPORT</hl>, or <hl>@EXPORT_OK</hl>, or even <hl>%EXPORT_TAGS</hl>),
 but none of them were present. This, as far as I understand means the <a href="https://metacpan.org/pod/Exporter">Exporter</a> module does
