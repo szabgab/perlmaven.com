@@ -4,7 +4,7 @@
 =tags screencast
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -14,7 +14,7 @@ a 'getter'.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/core-perl-oop/constructor-arguments" youtube="60PdxXn_36I" />
+<slidecast file="advanced-perl/core-perl-oop/constructor-arguments" youtube="60PdxXn_36I" />
 
 
 <include file="examples/Moose/person01/script/person.pl">

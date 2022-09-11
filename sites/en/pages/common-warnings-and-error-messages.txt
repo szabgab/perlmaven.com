@@ -1,10 +1,10 @@
 =title Common Warnings and Error messages in Perl
 =timestamp 2014-03-28T15:02:01
-=indexes 
+=indexes warn
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -16,7 +16,7 @@ Some of the articles even include directions showing how to fix the error.
 
 =abstract end
 
-<slidecast file="/media/videos/beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
+<slidecast file="beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
 
 <ul>
     <li><a href="/global-symbol-requires-explicit-package-name">Global symbol requires explicit package name</a></li>
