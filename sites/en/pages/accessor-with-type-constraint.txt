@@ -13,7 +13,7 @@ in the correct type.
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/core-perl-oop/accessor-with-type-constraint" />
+<slidecast file="advanced-perl/core-perl-oop/accessor-with-type-constraint" youtube="V1m9Y-PU6F4" />
 
 The next thing we did in the example with <a href="/moose">Moose</a> earlier, we created another attribute which has some type.
 We used it this way.
