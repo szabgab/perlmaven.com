@@ -17,7 +17,7 @@ when we had <a href="/accessor-with-type-constraint">accessor with type constrai
 
 =abstract end
 
-<slidecast file="/media/videos/advanced-perl/core-perl-oop/class-as-type-constraint" />
+<slidecast file="advanced-perl/core-perl-oop/class-as-type-constraint" youtube="LeILpUZHx5c" />
 
 <include file="examples/oop/person03/lib/Person.pm">
 
