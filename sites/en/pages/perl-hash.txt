@@ -5,7 +5,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 <!-- Please wait with the translation till this article is finished and this comment is removed -->
 

@@ -4,14 +4,14 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 =show_related 0
 
 =abstract start
 
 <a href="http://perlcritic.com/">Perl::Critic</a> is configurable lint-like static analyzer for Perl that can provide recommendations how to improve your code and
-can even locate code snippets that are sources of common errors. It has a base library that provides the engine and a large set of 
-policies (things to be checked). In addition there are a number of distributions on CPAN that provide further policies. 
+can even locate code snippets that are sources of common errors. It has a base library that provides the engine and a large set of
+policies (things to be checked). In addition there are a number of distributions on CPAN that provide further policies.
 
 In this article we collect <b>all</b> the CPAN distributions related to Perl::Critic and all the policies available.
 

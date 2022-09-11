@@ -5,7 +5,7 @@
 =books cpan_co_maintainer
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -15,8 +15,8 @@ what happens if we run <hl>perlcritic</hl> at level 4. Tons of policy violations
 
 =abstract end
 
-We have already tried the <a href="/perl-critic-one-policy">one policy at a time strategy</a>, when 
-we set the level of the 
+We have already tried the <a href="/perl-critic-one-policy">one policy at a time strategy</a>, when
+we set the level of the
 <a href="https://metacpan.org/pod/Perl::Critic::Policy::Objects::ProhibitIndirectSyntax">Objects::ProhibitIndirectSyntax</a>
 policy to be level-5. That <a href="/eliminating-indirect-method-calls">worked well</a>
 
