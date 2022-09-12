@@ -6,6 +6,7 @@
 =author szabgab
 =archive 1
 =comments_disqus_enable 0
+=show_related 0
 
 =abstract start
 
