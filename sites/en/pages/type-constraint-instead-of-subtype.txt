@@ -1,0 +1,13 @@
+=title Type constraint instead of subtype
+=timestamp 2014-12-30T17:00:11
+=indexes Modules
+=tags screencast
+=status show
+=author szabgab
+=comments_disqus_enable 0
+
+=abstract start
+
+=abstract end
+
+<slidecast file="advanced-perl/core-perl-oop/type-constraint-instead-of-subtype" youtube="cx5JQaBfua4" />

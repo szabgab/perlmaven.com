@@ -604,6 +604,7 @@ moose:
         - moose-creating-subtypes
         - moose-coerce-to-subtype
         - home-made-coercion
+        - type-constraint-instead-of-subtype
 mongodb:
   chapters:
     - title: MongoDB
