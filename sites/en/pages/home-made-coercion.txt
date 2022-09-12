@@ -1,0 +1,14 @@
+=title Home-made coercion
+=timestamp 2014-12-30T17:00:11
+=indexes Modules
+=tags screencast
+=status show
+=author szabgab
+=comments_disqus_enable 1
+
+=abstract start
+
+=abstract end
+
+<slidecast file="advanced-perl/core-perl-oop/home-made-coercion" youtube="kJJAzROaEYY" />
+

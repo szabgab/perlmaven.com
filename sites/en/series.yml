@@ -603,6 +603,7 @@ moose:
         - moose-classes-as-constraints
         - moose-creating-subtypes
         - moose-coerce-to-subtype
+        - home-made-coercion
 mongodb:
   chapters:
     - title: MongoDB

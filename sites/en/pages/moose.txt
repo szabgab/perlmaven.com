@@ -25,6 +25,7 @@ A series of articles introducing you to <a href="https://metacpan.org/pod/Moose"
   <li><a href="/moose-classes-as-constraints">Moose classes as constraints</a></li>
   <li><a href="/moose-creating-subtypes">Moose creating subtypes</a></li>
   <li><a href="/moose-coerce-to-subtype">Moose coerce to subtype</a></li>
+  <li><a href="/home-made-coercion">Home Made coercion</a></li>
 </ul>
 
 
