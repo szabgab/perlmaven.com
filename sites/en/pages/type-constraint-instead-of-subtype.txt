@@ -1,5 +1,5 @@
 =title Type constraint instead of subtype
-=timestamp 2014-12-30T17:00:11
+=timestamp 2014-12-30T17:00:12
 =indexes Modules
 =tags screencast
 =status show
