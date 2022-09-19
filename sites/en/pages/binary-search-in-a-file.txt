@@ -1,0 +1,67 @@
+=title Binary search in a file
+=timestamp 2022-09-19T16:30:01
+=indexes files
+=status draft
+=author szabgab
+=archive 1
+=comments_disqus_enable 1
+
+=abstract start
+
+If you have a file that contains some sorted information, e.g. a dictionary of words and you are trying to look up a given word, using in-memory array and <a href="/binary-search-in-perl-array">Binary search in a Perl array</a> is probably the first thing I would try to do.
+
+However, if the file is big, if it is bigger than the available free memory of the computer, then this is not possible. We need another solution.
+
+Reading the words one-by-one sequentially is possible as the memory requirement of that is the size of a single word (or a single line if we are talking about something longer than words).
+However, reading them sequentially might be a waste. Especially if the lines are already sorted.
+
+=abstract end
+
+We already saw in the <a href="/binary-search-in-perl-array">binary search in arrays</a> that sequential search has a complexity of <hl>O(n)</hl>
+and binary search has a complexity of <hl>O(log2(n))</hl>. On large files it can have a huge impact.
+
+At 10,000 items, the linear version does 10,000 iterations while the binary search does 14 iterations.
+
+At 10,000 items even if the fixed cost of every binary iteration is 100 times bigger than the fixed cost of a single linear iteration, we are still better off with the binary search.
+
+<h2>Planets</h2>
+
+For the example I am using a very small file listing some of the planets in the Solar system:
+
+<include file="examples/data/planets.txt">
+
+For a larger text file you might want to search for "list of english words in plain text files".
+
+<h2>Solution 0: In-memory search</h2>
+
+For small files the best solution might be to read the whole file into memory into an array
+and then use the <a href="/binary-search-in-perl-array">binary search on the array</a>.
+
+<include file="examples/read_file_into_array.pl">
+
+<code>
+$ perl examples/read_file_into_array.pl Pluto examples/data/planets.txt
+Pluto found at 7
+</code>
+
+and
+
+<code>
+$ perl examples/read_file_into_array.pl "Brodo Asogi" examples/data/planets.txt
+Brodo Asogi not found
+</code>
+
+<h2>Linear search in file</h2>
+
+<includ file="examples/linear_search_in_file.pl">
+
+<code>
+$ perl examples/linear_search_in_file.pl Pluto examples/data/planets.txt
+Pluto found in row 8
+</code>
+
+<code>
+$ perl examples/linear_search_in_file.pl "Brodo Asogi" examples/data/planets.txt
+Brodo Asogi not found
+</code>
+
