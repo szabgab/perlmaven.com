@@ -53,7 +53,7 @@ $ perl examples/read_file_into_array.pl "Brodo Asogi" examples/data/planets.txt
 Brodo Asogi not found
 </code>
 
-<h2>Linear search in file</h2>
+<h2>Solution 1: Linear search in file</h2>
 
 <include file="examples/linear_search_in_file.pl">
 
@@ -72,11 +72,32 @@ So element with index 7 in an array is the 8th element in the original list.
 Which number is the more correct one will depend on the situation.
 I'll leave that as an exercise to you, the reader.
 
-<h2>Binary search in a file</h2>
+<h2>Solution 2: Binary search in a file</h2>
 
 <include file="examples/binary_search_in_file.pl">
 
+Here we maintain a range of bytes using the variables <hl>$min</hl> and <hl>$max</hl>.
+On every iteration we go to the byte that's half way between the min and max places.
+As this might be in the a line we read to the end of the current line.
+
+Then we check if we are not at the $max, if we are then we should go to $min and start reading from there.
+
+Then we read the current line, chomp it, and compare it to the string we are looking for.
+
+Then either we change the $min or the $max to make the sections smaller.
 
 
+<h2>Testing the solutions</h2>
+
+I wanted to make sure the solutions work and if later I find improvements I can easily verify that
+the changes to the code don't change the results. So I wrote a few tests:
+
+<include file="examples/test_binary_search.t">
+
+Run them as:
+
+<code>
+prove examples/test_binary_search.t
+</code>
 
 
