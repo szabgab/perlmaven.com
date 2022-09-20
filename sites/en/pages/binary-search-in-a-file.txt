@@ -4,15 +4,15 @@
 =status draft
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
-If you have a file that contains some sorted information, e.g. a dictionary of words and you are trying to look up a given word, using in-memory array and <a href="/binary-search-in-perl-array">Binary search in a Perl array</a> is probably the first thing I would try to do.
+If you have a file that contains some sorted information, e.g. a list of words, and you are trying to look up a given word, using in-memory array and <a href="/binary-search-in-perl-array">Binary search in a Perl array</a> is probably the first thing I would try to do.
 
 However, if the file is big, if it is bigger than the available free memory of the computer, then this is not possible. We need another solution.
 
-Reading the words one-by-one sequentially is possible as the memory requirement of that is the size of a single word (or a single line if we are talking about something longer than words).
+Reading the words one-by-one sequentially would be a solution as the memory requirement of that is the size of a single word (or a single line if we are talking about something longer than words).
 However, reading them sequentially might be a waste. Especially if the lines are already sorted.
 
 =abstract end
@@ -23,6 +23,8 @@ and binary search has a complexity of <hl>O(log2(n))</hl>. On large files it can
 At 10,000 items, the linear version does 10,000 iterations while the binary search does 14 iterations.
 
 At 10,000 items even if the fixed cost of every binary iteration is 100 times bigger than the fixed cost of a single linear iteration, we are still better off with the binary search.
+
+How could we implement a binary search without reading the whole file into memory?
 
 <h2>Planets</h2>
 
@@ -53,7 +55,7 @@ Brodo Asogi not found
 
 <h2>Linear search in file</h2>
 
-<includ file="examples/linear_search_in_file.pl">
+<include file="examples/linear_search_in_file.pl">
 
 <code>
 $ perl examples/linear_search_in_file.pl Pluto examples/data/planets.txt
@@ -64,4 +66,17 @@ Pluto found in row 8
 $ perl examples/linear_search_in_file.pl "Brodo Asogi" examples/data/planets.txt
 Brodo Asogi not found
 </code>
+
+The results are off-by one. This is due to the fact that in arrays the first element has index 0.
+So element with index 7 in an array is the 8th element in the original list.
+Which number is the more correct one will depend on the situation.
+I'll leave that as an exercise to you, the reader.
+
+<h2>Binary search in a file</h2>
+
+<include file="examples/binary_search_in_file.pl">
+
+
+
+
 
