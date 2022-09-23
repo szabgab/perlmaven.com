@@ -528,7 +528,7 @@ dancer:
         - dancer2-sessions
         - dancer2-return-json
         - dancer2-hooks
-        - pro/dancer2-exercise-3
+        - dancer2-exercise-3
         - pro/dancer2-solution-3-simple-todo-api
         - pro/dancer2-upload-file
         - pro/dancer2-template-tiny
