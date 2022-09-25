@@ -1,0 +1,64 @@
+=title Enable GitHub Actions for CI on Math::Polynomial::Chebyshev
+=timestamp 2022-09-25T08:30:01
+=indexes CI
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+When looking at the <a href="https://metacpan.org/recent">recent uploads to CPAN</a> I bumped into the <a href="https://metacpan.org/dist/Math-Polynomial-Chebyshev">Math-Polynomial-Chebyshev</a>
+and noticed it does not have any CI system enabled. So I guess I could contribute to this package a bit by adding GitHub Actions to it.
+
+=abstract end
+
+<screencast file="enable-github-actions-on-chebyshev.mp4" youtube="dULcU-uEWEw" />
+
+I cloned the GitHub repository to my computer:
+
+<code>
+git clone git@github.com:pjacklam/p5-Math-Polynomial-Chebyshev.git
+</code>
+
+Ran the tests locally:
+
+<code>
+cpanm --installdeps .
+perl Makefile.PL
+make
+make test
+</code>
+
+Created a branch
+
+<code>
+git checkout -b ci
+</code>
+
+Copied the perl.yml file from the <a href="https://github.com/szabgab/try-github-actions/">try-github-actions</a> repository.
+
+I saved a copy of the file here so even if the file changes in the future you'll be able to find the original copy:
+
+<include file="examples/chebyshev-ci.yml">
+
+Then had to fork the original repository on GitHub so I will be able to push out my changes.
+
+<code>
+git remote add fork git@github.com:szabgab/p5-Math-Polynomial-Chebyshev.git
+git remote -v
+</code>
+
+
+Then pushed it out the changes to my repository.
+
+<code>
+git push --set-upstream fork ci
+</code>
+
+Chyecked the <b>Actions</b> tab to see if everything works fine.
+
+Finally I sent a pull-request asking the author to accept these changes.
+
