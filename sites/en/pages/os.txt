@@ -1,0 +1,30 @@
+=title OS
+=timestamp 2022-10-05T15:50:01
+=indexes PerlMaven
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Videos on contributing to Open Source Perl projects.
+
+=abstract end
+
+<ul>
+    <li><a href="/enable-github-actions-on-chebyshev">Enable GitHub Actions on Math::Polynomial::Chebyshev Perl module</a></li>
+    <li><a href="/cpan-digger-and-hacktoberfest">CPAN Digger and the Hacktoberfest</a></li>
+    <li><a href="/add-github-actions-to-graphics-toolkit-color">Add GitHub Actions (CI) to Graphics-Toolkit-Color Perl module</a></li>
+</ul>
+
+Videos and articles for other, non-Perl projects can be found on the <a href="https://code-maven.com/os">Code Maven</a> web site.
+
+<!--
+    <li><a href=""></a></li>
+-->
+
+
+
