@@ -1,0 +1,162 @@
+=title Adding GitHub Actions to Test2::Harness::UI
+=timestamp 2022-10-06T08:30:01
+=indexes GitHub, testing, CI
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+<a href="https://metacpan.org/dist/Test2-Harness-UI">Test2-Harness-UI</a> is a web interface for viewing and inspecting yath test logs.
+It is still in development, but it (obviously) has some tests. Those tests will be executed by the <a href="http://www.cpantesters.org/">CPAN Testers</a>
+<b>after</b> a new version was released, but we can shorten the feedback cycle by configuring a Continuous Integration (CI) system.
+
+On GitHub it is usually GitHub Actions.
+
+=abstract end
+
+<screencast file="perl-adding-github-actions-to-test2-harness-ui.mp4" youtube="AIYmgub4QYU" />
+
+
+All what we need to do is to add a YAML file in the <b>.github/workflows</b> folder of the project with the instructions.
+
+In this case I added the following file:
+
+<include file="examples/test2-harness-ui-ci.yml">
+
+A quick explanation:
+
+<h2>The name of the file</h2>
+
+I used in the repository was <b>ci.yml</b>, but any name would do and I think both the yml and yaml extensions work.
+
+<h2>Name</h2>
+
+<code>
+name: Perl
+</code>
+
+There must be a name field, but the content is anything you like.
+
+<h2>Trigger</h2>
+<code>
+on:
+  push:
+  pull_request:
+</code>
+
+Means the job will run on every push and on every pull-request.
+
+
+<h2>Jobs</h2>
+
+There can be a number of jobs, the names of the jobs can be anything. In our case we have one job and I called it <b>test</b>
+
+<code>
+jobs:
+  test:
+</code>
+
+
+<h2>Strategy and Matrix</h2>
+
+<code>
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest] # , macos-latest, windows-latest
+        perl: [ '5.32' ]
+</code>
+
+The matrix keyword allows us to define several variables (We used the words runner and perl in this case) to define a list of values.
+This allows us to run the tests in various conditions. In this case I configured the tests to run on Ubuntu only and on perl version 5.32,
+but later both can be extended.
+
+The <b>fail-fast</b> parameter tells Github Actions what to do if one of the jobs in the matrix fails.
+<b>false</b> means to run all the jobs to the end.
+<b>true</b> would mean to cancel all other jobs if one of the jobs derived from the matrix fails.
+
+
+<h2>The platform</h2>
+
+The <b>runs-on</b> keyword is using one of the variables from the matrix to select on which platform to run on.
+The <b>name</b> uses both variables from the matrix, but it is only used for logging.
+
+<code>
+    runs-on: ${{matrix.runner}}
+    name: OS ${{matrix.runner}} Perl ${{matrix.perl}}
+</code>
+
+<h2>steps</h2>
+
+In each job there can be a number of steps.
+
+
+<h2>step: Check out the current repository</h2>
+
+The first step is to check out (clone) the current repository.
+
+<code>
+    - uses: actions/checkout@v2
+</code>
+
+<h2>step: Set up Perl</h2>
+
+
+<code>
+    - name: Set up perl
+      uses: shogo82148/actions-setup-perl@v1
+      with:
+          perl-version: ${{ matrix.perl }}
+          distribution: ${{ ( startsWith( matrix.runner, 'windows-' ) && 'strawberry' ) || 'default' }}
+</code>
+
+Here we use to pick the version of perl using the variable from the matrix.
+
+<h2>step: Show Perl Version</h2>
+
+<code>
+    - name: Show Perl Version
+      run: |
+        perl -v
+</code>
+
+We display the version of the actually installed perl. Just so we will be able to verify it, if needed.
+
+<h2>step: Install dependencies</h2>
+
+We use <b>cpanm</b> to install the dependencies. We use the <b>--notest</b> flag to reduce the time spent
+on installing the dependencies.
+
+<code>
+    - name: Install Modules
+      run: |
+        cpanm -v
+        cpanm --installdeps --notest .
+</code>
+
+<h2>step: Run tests</h2>
+
+Finally we have the step to run the tests:
+
+<code>
+    - name: Run tests
+      run: |
+        perl Makefile.PL
+        make
+        make test
+</code>
+
+<h2>What to do now?</h2>
+
+Once the file is added to the repository (once my pull-request is accepted) on every push GitHub will run this workflow
+and it will send the author an email if anything fails with a link to the logs.
+
+There are, of course many other options one can use, but as a first step it is great to get feedback on every push.
+
+The workflow will also run on every pull-request, meaning that the author of the pull-request will be able to get feedback
+even before the author has time to review the changes.
+
