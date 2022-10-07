@@ -3,7 +3,7 @@
 =indexes PerlMaven
 =status show
 =tags screencast
-=author szabgab
+=author 0
 =archive 1
 =comments_disqus_enable 0
 =show_related 0
