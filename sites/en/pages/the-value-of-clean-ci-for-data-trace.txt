@@ -86,7 +86,7 @@ One thing I also missed in this report was that one of the tests was still skipp
 
 <h2>GitHub Action configuration file</h2>
 
-I a configuration file as <b>.github/workflows/ci.yml</b> and pushed out the changes to my cloned version of the repository.
+I added the following configuration file as <b>.github/workflows/ci.yml</b> and pushed out the changes to my forked version of the repository.
 
 <include file="examples/data-trace-ci.yml">
 
