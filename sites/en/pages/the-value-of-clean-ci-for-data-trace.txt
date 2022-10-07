@@ -58,8 +58,8 @@ t/pod-coverage.t ..... 1/2
 #   Failed test 'Pod coverage on Data::Tie::Watch'
 #   at /usr/share/perl5/Test/Pod/Coverage.pm line 133.
 # Coverage for Data::Tie::Watch is 71.4%, with 2 naked subroutines:
-# 	base_watch
-# 	callback
+#   base_watch
+#   callback
 # Looks like you failed 1 test of 2.
 t/pod-coverage.t ..... Dubious, test returned 1 (wstat 256, 0x100)
 Failed 1/2 subtests
