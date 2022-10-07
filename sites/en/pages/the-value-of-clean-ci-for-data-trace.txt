@@ -1,4 +1,4 @@
-=title The value of clean CI system (Data-Trace)
+=title The value of a clean Continuous Integration (CI) system (for Data-Trace)
 =timestamp 2022-10-07T16:00:01
 =indexes Data::Trace, GitHub
 =status show
