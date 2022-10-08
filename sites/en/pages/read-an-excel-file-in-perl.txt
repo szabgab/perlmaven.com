@@ -65,6 +65,7 @@ or even a plain CSV file. It will use the file-extension to guess which format t
 load the appropriate back-end module and use that module to load and parse the file. In the end it will create an array reference representing the whole file:
 
 <code lang="perl">
+# May require installing Spreadsheet::XLSX.
 use Spreadsheet::Read qw(ReadData);
 my $book = ReadData ('simple.xlsx');
 </code>
@@ -102,16 +103,14 @@ and then it will loop over the indexes and display the content of each field. (d
 <code lang="perl">
 my @row = Spreadsheet::Read::row($book->[1], 1);
 for my $i (0 .. $#row) {
-    say 'A' . ($i+1) . ' ' . ($row[$i] // '');
+    say $row[$i] // '';
 }
 </code>
 
 <code>
-A1 Hi Excel!
-A2 
-A3 
-A4 
-A5 10
+A1
+B1
+C1
 </code>
 
 
@@ -125,10 +124,9 @@ represents one row in the spreadsheet.
 This is how we iterate over all the elements:
 
 <code lang="perl">
-my @rows = Spreadsheet::Read::rows($book->[1]);
-foreach my $i (1 .. scalar @rows) {
-    foreach my $j (1 .. scalar @{$rows[$i-1]}) {
-        say chr(64+$i) . " $j " . ($rows[$i-1][$j-1] // '');
+foreach my $i (0 .. $#rows) {
+    foreach my $j (0 .. $#{$rows[$i]}) {
+        say chr(ord('A')+$j) . ($i+1) . ": " . ($rows[$i][$j] // '');
     }
 }
 </code>
@@ -136,36 +134,15 @@ foreach my $i (1 .. scalar @rows) {
 The result is
 
 <code>
-A 1 Hi Excel!
-A 2 
-A 3 
-A 4 
-A 5 10
-B 1 second row
-B 2 
-B 3 
-B 4 
-B 5 11
-C 1 1
-C 2 2
-C 3 3
-C 4 
-C 5 12
-D 1 
-D 2 
-D 3 
-D 4 
-D 5 
-E 1 4
-E 2 6
-E 3 
-E 4 
-E 5 
-F 1 5
-F 2 7
-F 3 
-F 4 
-F 5 
+A1: A1
+B1: B1
+C1: C1
+A2: A2
+B2: B2
+C2: C2
+A3: A3
+B3: B3
+C3: C3
 </code>
 
 With this we can already work quite well.
