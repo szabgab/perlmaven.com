@@ -1,4 +1,4 @@
-=title Show error logs - Install developer dependencies first (Test::CSS)
+=title Show error logs on Github Actions - Install developer dependencies first (Test::CSS)
 =timestamp 2022-10-08T09:30:01
 =indexes Github
 =status show
