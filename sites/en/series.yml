@@ -807,3 +807,4 @@ os:
         - using-ci-to-locate-missing-test-dependencies-in-dist-zilla-perlsrvde
         - adding-github-actions-to-test2-harness-ui
         - the-value-of-clean-ci-for-data-trace
+        - install-developer-dependencies-first-test-css
