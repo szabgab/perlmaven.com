@@ -1,0 +1,79 @@
+=title GitHub Actions for Geo::TCX
+=timestamp 2022-10-11T10:00:01
+=indexes GitHub
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Loking at <a href="https://cpan-digger.perlmaven.com/">CPAN::Digger</a> I saw that <a href="https://metacpan.org/dist/Geo-TCX">Geo-TCX</a> does not have any CI configured.
+Let's contribute that to the project.
+
+=abstract end
+
+<h2>Unnecessary Makefile.PL ?</h2>
+
+Looking at the source code of the prorject I was a bit confused as the <b>Makefile.PL</b> did not contain any reference to GitHub, but somehow MetaCPAN did know about the GitHub
+of this project. Then I noticed there is also a <b>dist.ini</b> file. This looks confusing and probably unnecessary.
+
+So I tried to install the dependencies and running the tests using <b>dzil</b> just to have it complain:
+
+<code>
+$ dzil test
+[DZ] building distribution under .build/KWtstz9M9b for installation
+[DZ] beginning to build Geo-TCX
+[DZ] guessing dist's main_module is lib/Geo/TCX.pm
+[VersionFromModule] dist version 1.01 (from lib/Geo/TCX.pm)
+[DZ] attempt to add Makefile.PL multiple times; added by: filename set by GatherDir (Dist::Zilla::Plugin::GatherDir line 235); encoded_content added by @Basic/GatherDir (Dist::Zilla::Plugin::GatherDir line 236); content set by MakeMaker (Dist::Zilla::Plugin::MakeMaker line 337); content added by @Basic/MakeMaker (Dist::Zilla::Plugin::MakeMaker line 152)
+aborting; duplicate files would be produced at /home/gabor/perl5/lib/perl5/Dist/Zilla/App/Command/test.pm line 82.
+</code>
+
+I guess that Makefile.PL is really problematic. So I opened an <a href="https://github.com/patjoly/geo-tcx/issues/1">issue</a>.
+
+<h2>test failure</h2>
+
+After removing Makefile.PL (rm Makefile.PL) the tests could be executed, but they still failed with this:
+
+<code>
+t/01_main.t ........ 1/72 Uncaught exception from user code:
+	/home/gabor/Data/Garmin/ not a valid directory at t/01_main.t line 75.
+	Geo::TCX::set_wd(Geo::TCX=HASH(0x55bb2977a578), "~/Data/Garmin") called at /home/gabor/os/geo-tcx/.build/1zo6gQMAHa/blib/lib/Geo/TCX.pm line 164
+	Geo::TCX::new("Geo::TCX", "t/2014-08-11-10-25-15.tcx", "work_dir", "~/Data/Garmin") called at t/01_main.t line 75
+# Looks like your test exited with 2 just after 19.
+</code>
+
+This looks scary. Why does this module look at a directory outside its data structure. I hope it did not do anything else.
+
+This was also <a href="https://github.com/patjoly/geo-tcx/issues/2">reported</a>.
+
+<h2>.gitignore .build</h2>
+
+Dist::Zilla also generates a directory called <b>.build</b>. It should be ignored.
+<a href="https://github.com/patjoly/geo-tcx/pull/3">pull request</a>.
+
+
+<h2>GitHub Actions</h2>
+
+Then came the <hl>.github/workflows/ci.yml</hl> file with a special command in one of the steps. Before installing all the dependencies
+we remove the Makefile.PL.
+
+<code>
+    - name: Install Modules
+      run: |
+        rm -f Makefile.PL
+        dzil authordeps --missing | cpanm --notest
+        dzil listdeps --missing | cpanm --notest
+</code>
+
+If the author agrees to my earlier suggestion and removes the Makefile.PL from the repository then this command should also be removed from here,
+but for now we need it.
+
+The CI process fails with the same error as I have already reported, but once this issue is fixed then the CI should also pass.
+
+I saved the full configuration file here, so even if the author changes it later, you'll still see the original version:
+
+<include file="examples/geo-tcx-ci.yml">
+
