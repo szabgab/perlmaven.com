@@ -22,6 +22,7 @@ Videos on contributing to Open Source Perl projects.
     <li><a href="/adding-github-actions-to-test2-harness-ui">Adding GitHub Actions to Test2::Harness::UI</a></li>
     <li><a href="/the-value-of-clean-ci-for-data-trace">The value of a clean Continuous Integration (CI) system (for Data-Trace)</a></li>
     <li><a href="/install-developer-dependencies-first-test-css">Show error logs on Github Actions - Install developer dependencies first (Test::CSS)</a></li>
+    <li><a href="/github-actions-for-moox-role-cachedurl">GitHub Actions for MooX-Role-CachedURL</a></li>
 </ul>
 
 Videos and articles for other, non-Perl projects can be found on the <a href="https://code-maven.com/os">Code Maven</a> web site.

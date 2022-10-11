@@ -1,0 +1,68 @@
+name: Perl
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest, macos-latest, windows-latest]
+        perl: [ '5.32' ]
+
+    runs-on: ${{matrix.runner}}
+    name: OS ${{matrix.runner}} Perl ${{matrix.perl}}
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up perl
+      uses: shogo82148/actions-setup-perl@v1
+      with:
+          perl-version: ${{ matrix.perl }}
+          distribution: ${{ ( startsWith( matrix.runner, 'windows-' ) && 'strawberry' ) || 'default' }}
+
+    - name: Show Perl Version
+      run: |
+        perl -v
+
+    - name: Install Dist::Zilla
+      run: |
+        cpanm -v
+        cpanm --notest Dist::Zilla
+        cpanm --notest Dist::Zilla::Plugin::GithubMeta
+        cpanm --notest Dist::Zilla::Plugin::Git::Tag
+
+    - name: Install Modules
+      run: |
+        dzil listdeps --missing | cpanm --notest
+        dzil authordeps --missing | cpanm --notest
+        cpanm Test::File
+        cpanm File::HomeDir
+        cpanm Time::Duration::Parse
+        cpanm File::Touch
+        cpanm PerlIO::gzip
+
+    - name: Run tests
+      run: |
+        dzil test
+
+    - name: Show Errors
+      if:  ${{ failure() && startsWith( matrix.runner, 'windows-')}}
+      run: |
+         ls -l C:/Users/
+         ls -l C:/Users/RUNNER~1/
+         cat C:/Users/runneradmin/.cpanm/work/*/build.log
+
+    - name: Show Errors on Ubuntu
+      if:  ${{ failure() && startsWith( matrix.runner, 'ubuntu-')}}
+      run: |
+         cat /home/runner/.cpanm/work/*/build.log
+
+    - name: Show Errors on OSX
+      if:  ${{ failure() && startsWith( matrix.runner, 'macos-')}}
+      run: |
+         cat  /Users/runner/.cpanm/work/*/build.log
+
