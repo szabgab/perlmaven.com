@@ -811,3 +811,5 @@ os:
         - github-actions-for-moox-role-cachedurl
         - github-actions-for-geo-tcx
         - github-actions-for-pinto-remote-selfcontained
+        - github-actions-for-math-numerical
+

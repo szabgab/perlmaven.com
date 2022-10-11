@@ -1,0 +1,65 @@
+name: Perl
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest, macos-latest] # , windows-latest
+        perl: [ '5.36' ]
+
+    runs-on: ${{matrix.runner}}
+    name: OS ${{matrix.runner}} Perl ${{matrix.perl}}
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up perl
+      uses: shogo82148/actions-setup-perl@v1
+      with:
+          perl-version: ${{ matrix.perl }}
+          distribution: ${{ ( startsWith( matrix.runner, 'windows-' ) && 'strawberry' ) || 'default' }}
+
+    - name: Show Perl Version
+      run: |
+        perl -v
+
+    - name: Install Modules
+      run: |
+        cpanm -v
+        cpanm --installdeps --notest .
+        cpanm --notest Test2::V0
+        cpanm --notest Test2::Tools::PerlCritic
+        cpanm --notest Test::Pod
+        cpanm --notest IPC::Run3
+        cpanm --notest Readonly
+
+    - name: Run tests
+      env:
+        TEST_AUTHOR: 1
+      run: |
+        perl Makefile.PL
+        make
+        make test
+
+    - name: Show Errors on Windows
+      if:  ${{ failure() && startsWith( matrix.runner, 'windows-')}}
+      run: |
+         ls -l C:/Users/
+         ls -l C:/Users/RUNNER~1/
+         cat C:/Users/runneradmin/.cpanm/work/*/build.log
+
+    - name: Show Errors on Ubuntu
+      if:  ${{ failure() && startsWith( matrix.runner, 'ubuntu-')}}
+      run: |
+         cat /home/runner/.cpanm/work/*/build.log
+
+    - name: Show Errors on OSX
+      if:  ${{ failure() && startsWith( matrix.runner, 'macos-')}}
+      run: |
+         cat  /Users/runner/.cpanm/work/*/build.log
+

@@ -25,6 +25,7 @@ Videos on contributing to Open Source Perl projects.
     <li><a href="/github-actions-for-moox-role-cachedurl">GitHub Actions for MooX-Role-CachedURL</a></li>
     <li><a href="/github-actions-for-geo-tcx">GitHub Actions for Geo::TCX</a></li>
     <li><a href="/github-actions-for-pinto-remote-selfcontained">GitHub Actions for Pinto-Remote-SelfContained</a></li>
+    <li><a href="/github-actions-for-math-numerical">Adding GitHub Actions to Math::Numerical</a></li>
 </ul>
 
 Videos and articles for other, non-Perl projects can be found on the <a href="https://code-maven.com/os">Code Maven</a> web site.
