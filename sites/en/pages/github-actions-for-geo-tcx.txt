@@ -39,9 +39,9 @@ After removing Makefile.PL (rm Makefile.PL) the tests could be executed, but the
 
 <code>
 t/01_main.t ........ 1/72 Uncaught exception from user code:
-	/home/gabor/Data/Garmin/ not a valid directory at t/01_main.t line 75.
-	Geo::TCX::set_wd(Geo::TCX=HASH(0x55bb2977a578), "~/Data/Garmin") called at /home/gabor/os/geo-tcx/.build/1zo6gQMAHa/blib/lib/Geo/TCX.pm line 164
-	Geo::TCX::new("Geo::TCX", "t/2014-08-11-10-25-15.tcx", "work_dir", "~/Data/Garmin") called at t/01_main.t line 75
+    /home/gabor/Data/Garmin/ not a valid directory at t/01_main.t line 75.
+    Geo::TCX::set_wd(Geo::TCX=HASH(0x55bb2977a578), "~/Data/Garmin") called at /home/gabor/os/geo-tcx/.build/1zo6gQMAHa/blib/lib/Geo/TCX.pm line 164
+    Geo::TCX::new("Geo::TCX", "t/2014-08-11-10-25-15.tcx", "work_dir", "~/Data/Garmin") called at t/01_main.t line 75
 # Looks like your test exited with 2 just after 19.
 </code>
 
