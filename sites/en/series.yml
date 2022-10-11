@@ -810,3 +810,4 @@ os:
         - install-developer-dependencies-first-test-css
         - github-actions-for-moox-role-cachedurl
         - github-actions-for-geo-tcx
+        - github-actions-for-pinto-remote-selfcontained
