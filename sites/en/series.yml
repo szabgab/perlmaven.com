@@ -812,4 +812,4 @@ os:
         - github-actions-for-geo-tcx
         - github-actions-for-pinto-remote-selfcontained
         - github-actions-for-math-numerical
-
+        - ci-for-cpan-modules
