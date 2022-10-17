@@ -29,7 +29,8 @@ so <a href="https://github.com/gh0stwizard/p5-EAV-XS/issues/1">I asked for help<
 Ben Bullock, the author, quickly replied and made some adjustments so I could make some progress (even though I did not exaactly liked the solution).
 Anyway I bumped into <a href="https://github.com/benkasminbullock/gzip-libdeflate/issues/4">another issue</a>.
 
-<a href="https://metacpan.org/dist/Memoize">Memoize</a>  I found some generated files that <a href="https://github.com/ap/Memoize/pull/2">were not in .gitignore</a>. 
+<a href="https://metacpan.org/dist/Memoize">Memoize</a>  I found some generated files that <a href="https://github.com/ap/Memoize/pull/2">were not in .gitignore</a>.
+adding GitHub Actions was <a href="https://github.com/ap/Memoize/pull/3">quite easy</a>.
 
 
 
