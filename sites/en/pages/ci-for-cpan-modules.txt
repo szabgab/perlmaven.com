@@ -1,0 +1,35 @@
+=title CI for CPAN modules
+=timestamp 2022-10-17T10:30:01
+=indexes GitHub
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+After I read the editorial of <a href="https://perlweekly.com/archive/586.html">Perl Weekly issue 586</a> I though I should try to send
+as many PR as I can to enable GitHub Actions on CPAN projects.
+
+I started at <a href="https://cpan-digger.perlmaven.com/">CPAN Digger</a>
+
+=abstract end
+
+<a href="https://metacpan.org/dist/Test-Spy">Test-Spy</a> - thar was easy. I configure <a href="https://github.com/bbrtj/perl-test-spy/pull/1">GitHub Actions</a>.
+Everything worked, except that it seems Perl 5.36 is not available on Windows to be used pn GitHub Actions. The Pull-request was accepted within a few minutes.
+
+<a href="https://metacpan.org/dist/Weather-GHCN-Fetch">Weather-GHCN-Fetch</a> I have added <a href="https://github.com/jgpuckering/Weather-GHCN-Fetch/pull/2">GitHub Action configuration files</a>.
+The tests are failing with <a href="https://github.com/jgpuckering/Weather-GHCN-Fetch/issues/1">Bailout called. Further testing stopped: *E* cached folder is missing</a>.
+
+<a href="https://metacpan.org/dist/EAV-XS">EAV-XS</a> has a number of non-perl dependencies listed in the README that I did not know how to install
+so <a href="https://github.com/gh0stwizard/p5-EAV-XS/issues/1">I asked for help</a>.
+
+<a href="https://metacpan.org/dist/Gzip-Libdeflate">Gzip-Libdeflate</a> was complaining that it <a href="https://github.com/benkasminbullock/gzip-libdeflate/issues/3">Could not open 'lib/Gzip/Libdeflate.pod'</a>.
+Ben Bullock, the author, quickly replied and made some adjustments so I could make some progress (even though I did not exaactly liked the solution).
+Anyway I bumped into <a href="https://github.com/benkasminbullock/gzip-libdeflate/issues/4">another issue</a>.
+
+<a href="https://metacpan.org/dist/Memoize">Memoize</a>  I found some generated files that <a href="https://github.com/ap/Memoize/pull/2">were not in .gitignore</a>. 
+
+
+
