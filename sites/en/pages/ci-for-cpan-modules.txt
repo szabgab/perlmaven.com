@@ -16,6 +16,11 @@ I started at <a href="https://cpan-digger.perlmaven.com/">CPAN Digger</a>
 
 =abstract end
 
+2022.10.11 <a href="https://metacpan.org/dist/Pinto-Remote-SelfContained">Pinto-Remote-SelfContained</a>
+I add a GitHub Actions configuration file, but bumped into an error:
+<a href="https://github.com/reyjrar/Pinto-Remote-SelfContained/issues/2">Error: [PodWeaver] [Support] No bugtracker in metadata!</a>
+Locally I get a different error: <a href="https://github.com/reyjrar/Pinto-Remote-SelfContained/issues/3">Can't locate Test/EOL.pm</a>.
+
 2022.10.17 <a href="https://metacpan.org/dist/Test-Spy">Test-Spy</a> - thar was easy. I configure <a href="https://github.com/bbrtj/perl-test-spy/pull/1">GitHub Actions</a>.
 Everything worked, except that it seems Perl 5.36 is not available on Windows to be used pn GitHub Actions. The Pull-request was accepted within a few minutes. <b>DONE</b>
 
@@ -29,9 +34,14 @@ so <a href="https://github.com/gh0stwizard/p5-EAV-XS/issues/1">I asked for help<
 2022.10.17 <a href="https://metacpan.org/dist/Gzip-Libdeflate">Gzip-Libdeflate</a> was complaining that it <a href="https://github.com/benkasminbullock/gzip-libdeflate/issues/3">Could not open 'lib/Gzip/Libdeflate.pod'</a>.
 Ben Bullock, the author, quickly replied and made some adjustments so I could make some progress (even though I did not exaactly liked the solution).
 Anyway I bumped into <a href="https://github.com/benkasminbullock/gzip-libdeflate/issues/4">another issue</a>.
+After I was told how to proceed (and basically how to set up a development environment) I could finish the
+<a href="https://github.com/benkasminbullock/gzip-libdeflate/pull/5">working CI workflow</a>.
 
-2022.10.17 <a href="https://metacpan.org/dist/Memoize">Memoize</a>  I found some generated files that <a href="https://github.com/ap/Memoize/pull/2">were not in .gitignore</a>.
+2022.10.17 <a href="https://metacpan.org/dist/Memoize">Memoize</a>  I found some generated files that <a href="https://github.com/ap/Memoize/pull/2">were not in .gitignore</a>. (Apparently Aristotle does not want to ignore anything as he
+removed the .gitignore file a few monthes ago.)
 adding GitHub Actions was <a href="https://github.com/ap/Memoize/pull/3">quite easy</a>.
 
-
+2022.10.18 <a href="https://metacpan.org/dist/Dancer2-Plugin-RPC-RESTISH">Dancer2-Plugin-RPC-RESTISH</a>
+It was quite simple to <a href="https://github.com/abeltje/Dancer2-Plugin-RPC-RESTISH/pull/1">add GitHub Actions</a> to this module,
+but it seems that the installation of the dependencies was a bit flaky when I first set up GA.
 
