@@ -45,3 +45,10 @@ adding GitHub Actions was <a href="https://github.com/ap/Memoize/pull/3">quite e
 It was quite simple to <a href="https://github.com/abeltje/Dancer2-Plugin-RPC-RESTISH/pull/1">add GitHub Actions</a> to this module,
 but it seems that the installation of the dependencies was a bit flaky when I first set up GA.
 
+2022.10.18 <a href="https://metacpan.org/dist/Hustle-Table">Hustle-Table</a> It was <a href="https://github.com/drclaw1394/perl5-hustle-table/pull/1">easy to enable CI</a>.
+
+2022.10.18 <a href="https://metacpan.org/dist/Term-TablePrint">Term-TablePrint</a> It was <a href="https://github.com/kuerbis/Term-TablePrint/pull/2">easy to enable CI</a>.
+
+2022.10.18 <a href="https://metacpan.org/dist/PAUSE-Packages">PAUSE-Packages</a> It was <a href="https://github.com/neilb/PAUSE-Packages/pull/11">easy to enable CI</a> though the tests
+fail on MS Windows so I had to disable that platform.
+
