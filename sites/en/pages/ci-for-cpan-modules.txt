@@ -16,20 +16,21 @@ I started at <a href="https://cpan-digger.perlmaven.com/">CPAN Digger</a>
 
 =abstract end
 
-<a href="https://metacpan.org/dist/Test-Spy">Test-Spy</a> - thar was easy. I configure <a href="https://github.com/bbrtj/perl-test-spy/pull/1">GitHub Actions</a>.
-Everything worked, except that it seems Perl 5.36 is not available on Windows to be used pn GitHub Actions. The Pull-request was accepted within a few minutes.
+2022.10.17 <a href="https://metacpan.org/dist/Test-Spy">Test-Spy</a> - thar was easy. I configure <a href="https://github.com/bbrtj/perl-test-spy/pull/1">GitHub Actions</a>.
+Everything worked, except that it seems Perl 5.36 is not available on Windows to be used pn GitHub Actions. The Pull-request was accepted within a few minutes. <b>DONE</b>
 
-<a href="https://metacpan.org/dist/Weather-GHCN-Fetch">Weather-GHCN-Fetch</a> I have added <a href="https://github.com/jgpuckering/Weather-GHCN-Fetch/pull/2">GitHub Action configuration files</a>.
+2022.10.17 <a href="https://metacpan.org/dist/Weather-GHCN-Fetch">Weather-GHCN-Fetch</a> I have added <a href="https://github.com/jgpuckering/Weather-GHCN-Fetch/pull/2">GitHub Action configuration files</a>.
 The tests are failing with <a href="https://github.com/jgpuckering/Weather-GHCN-Fetch/issues/1">Bailout called. Further testing stopped: *E* cached folder is missing</a>.
+I also sent a <a href="https://github.com/jgpuckering/Weather-GHCN-Fetch/pull/3">PR with .gitignore</a>
 
-<a href="https://metacpan.org/dist/EAV-XS">EAV-XS</a> has a number of non-perl dependencies listed in the README that I did not know how to install
-so <a href="https://github.com/gh0stwizard/p5-EAV-XS/issues/1">I asked for help</a>.
+2022.10.17 <a href="https://metacpan.org/dist/EAV-XS">EAV-XS</a> has a number of non-perl dependencies listed in the README that I did not know how to install
+so <a href="https://github.com/gh0stwizard/p5-EAV-XS/issues/1">I asked for help</a>. <b>DONE</b>
 
-<a href="https://metacpan.org/dist/Gzip-Libdeflate">Gzip-Libdeflate</a> was complaining that it <a href="https://github.com/benkasminbullock/gzip-libdeflate/issues/3">Could not open 'lib/Gzip/Libdeflate.pod'</a>.
+2022.10.17 <a href="https://metacpan.org/dist/Gzip-Libdeflate">Gzip-Libdeflate</a> was complaining that it <a href="https://github.com/benkasminbullock/gzip-libdeflate/issues/3">Could not open 'lib/Gzip/Libdeflate.pod'</a>.
 Ben Bullock, the author, quickly replied and made some adjustments so I could make some progress (even though I did not exaactly liked the solution).
 Anyway I bumped into <a href="https://github.com/benkasminbullock/gzip-libdeflate/issues/4">another issue</a>.
 
-<a href="https://metacpan.org/dist/Memoize">Memoize</a>  I found some generated files that <a href="https://github.com/ap/Memoize/pull/2">were not in .gitignore</a>.
+2022.10.17 <a href="https://metacpan.org/dist/Memoize">Memoize</a>  I found some generated files that <a href="https://github.com/ap/Memoize/pull/2">were not in .gitignore</a>.
 adding GitHub Actions was <a href="https://github.com/ap/Memoize/pull/3">quite easy</a>.
 
 
