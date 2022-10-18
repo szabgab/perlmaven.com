@@ -52,3 +52,8 @@ but it seems that the installation of the dependencies was a bit flaky when I fi
 2022.10.18 <a href="https://metacpan.org/dist/PAUSE-Packages">PAUSE-Packages</a> It was <a href="https://github.com/neilb/PAUSE-Packages/pull/11">easy to enable CI</a> though the tests
 fail on MS Windows so I had to disable that platform.
 
+2022.10.18 <a href="https://metacpan.org/dist/Bio-ToolBox">Bio-ToolBox</a> the tests are currently failing. It was
+<a href="https://rt.cpan.org/Public/Bug/Display.html?id=144444">reported</a> a few weeks ago. The first iteration of the
+CI showed the same error.
+
+
