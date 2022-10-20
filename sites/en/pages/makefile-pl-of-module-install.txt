@@ -20,7 +20,6 @@ but if you encounter a module that use Module::Install, you will need to underst
 
 <slidecast file="advanced-perl/libraries-and-modules/makefile-pl-of-module-install" youtube="bshmt9euW6o" />
 
-
 Module::Install does not use a separate file, it uses Makefile.PL, it just has a different API.
 Because Module::Install does not come with standard Perl, it works differnt then
 <a href="/makefile-pl-of-extutils-makemaker">ExtUtils::MakeMaker</a>.
@@ -33,35 +32,7 @@ of Module::Install.
 
 That's why in the <hl>Makefile.PL</hl> we load <hl>inc::Module::Install</hl>.
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.008;
-use inc::Module::Install 1.00;
-
-
-name 'App';
-license 'perl';
-author 'Gabor Szabo';
-all_from 'lib/App.pm';
-requires 'perl' => '5.008';
-
-requires 'File::Basename';                     # no version number
-requires 'Win32' => '0.31' if $^O =~ /win32/i; # conditional requirement
-
-test_requires 'Test::More' => '0.47';
-
-homepage 'http://padre.perlide.org/';
-bugtracker 'http://padre.perlide.org/trac/';
-repository 'http://svn.perlide.org/padre/trunk/Padre/';
-
-install_script 'script/app.pl';
-
-# install_share;   # will install the share/ directory from the distribution
-                   # to be found by File::ShareDir::dist_dir('App') late on
-
-WriteAll;
-</code>
+<include file="examples/module-install/Makefile.PL">
 
 Some of the keys that you can use in the Makefile.PL
 
