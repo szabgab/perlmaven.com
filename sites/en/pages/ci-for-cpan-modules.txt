@@ -79,3 +79,6 @@ a spell checker is still missing.
 I also trid to run the CI on all versions of Perl betwee 5.10 and 5.36, but it seems some of the dependencies need perl 5.26 so I limited the
 matrix for that. Anyway here is the <a href="https://github.com/maddingue/Net-Pcap/pull/14">Pull-Request</a>
 
+2022.10.21 <a href="https://metacpan.org/dist/WebFetch">WebFetch</a>. I configured the CI, but encountered and reported a problem:
+<a href="https://github.com/ikluft/WebFetch/issues/2">Error: Duplication of element resources.repository.web</a>.
+
