@@ -60,6 +60,7 @@ CI showed the same error.
 
 2022.10.21 <a href="https://metacpan.org/dist/Sniffer-HTTP">Sniffer-HTTP</a>. When I tried to install it I got a problem that Net-Pcap,
 one of the dependencies would not install out of the box. So first I looked at that module to see if I can figure out how to install that.
+Then <a href="https://github.com/Corion/sniffer-http/pull/1">this Pull-Request</a> was much easier.
 
 2022.10.21 <a href="https://metacpan.org/dist/Net-Pcap">Net-Pcap</a> wasn't difficult after all, but I had to install some external dependencies using
 <code>
@@ -76,5 +77,5 @@ I had to install a bunch of extra Perl modules for the tests, enable an environm
 a spell checker is still missing.
 
 I also trid to run the CI on all versions of Perl betwee 5.10 and 5.36, but it seems some of the dependencies need perl 5.26 so I limited the
-matrix for that. Anyway here is the <a href="">Pull-Request</a>
+matrix for that. Anyway here is the <a href="https://github.com/maddingue/Net-Pcap/pull/14">Pull-Request</a>
 
