@@ -10,7 +10,7 @@
 
 =abstract start
 
-A Continuous Integration system (aka CI) can shorten the feedback cycle you get for your code.
+A <a href="/ci">Continuous Integration system (aka CI)</a> can shorten the feedback cycle you get for your code.
 
 Usually it will run your unit-tests, (or whatever you tell it to run) every time you push code to your VCS - Version Control System. (GitHub, GitLab, BitBucket, or even Subversion.)
 It can run it on multiple versions of Perl on the 3 major Operating Systems.

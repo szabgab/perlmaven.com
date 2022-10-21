@@ -12,6 +12,8 @@
 After I read the editorial of <a href="https://perlweekly.com/archive/586.html">Perl Weekly issue 586</a> I though I should try to send
 as many PR as I can to enable GitHub Actions on CPAN projects.
 
+There is a whole series about <a href="/ci">why use CI and how to set up CI</a> and several <a href="/os">examples with videos</a>.
+
 I started at <a href="https://cpan-digger.perlmaven.com/">CPAN Digger</a>
 
 =abstract end
@@ -56,4 +58,23 @@ fail on MS Windows so I had to disable that platform.
 <a href="https://rt.cpan.org/Public/Bug/Display.html?id=144444">reported</a> a few weeks ago. The first iteration of the
 CI showed the same error.
 
+2022.10.21 <a href="https://metacpan.org/dist/Sniffer-HTTP">Sniffer-HTTP</a>. When I tried to install it I got a problem that Net-Pcap,
+one of the dependencies would not install out of the box. So first I looked at that module to see if I can figure out how to install that.
+
+2022.10.21 <a href="https://metacpan.org/dist/Net-Pcap">Net-Pcap</a> wasn't difficult after all, but I had to install some external dependencies using
+<code>
+    - name: Install external dependencies on Ubuntu
+      if:  ${{ startsWith( matrix.runner, 'ubuntu-')}}
+      run: |
+        sudo apt-get install libpcap-dev
+</code>
+
+I only figured out how to do it on Ubuntu. Either the author of the module will add the installation on OSX and Windows as well, or if they tell me how to do
+it I might have the time to figure out how to do it on the CI server.
+
+I had to install a bunch of extra Perl modules for the tests, enable an environment variable and even create a directory. Though as I can see
+a spell checker is still missing.
+
+I also trid to run the CI on all versions of Perl betwee 5.10 and 5.36, but it seems some of the dependencies need perl 5.26 so I limited the
+matrix for that. Anyway here is the <a href="">Pull-Request</a>
 
