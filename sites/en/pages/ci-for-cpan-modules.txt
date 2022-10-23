@@ -82,3 +82,6 @@ matrix for that. Anyway here is the <a href="https://github.com/maddingue/Net-Pc
 2022.10.21 <a href="https://metacpan.org/dist/WebFetch">WebFetch</a>. I configured the CI, but encountered and reported a problem:
 <a href="https://github.com/ikluft/WebFetch/issues/2">Error: Duplication of element resources.repository.web</a>.
 
+2022.10.23 <a href="https://metacpan.org/dist/MooseX-Types-Parameterizable">MooseX-Types-Parameterizable</a>
+<a href="https://github.com/jjn1056/MooseX-Types-Parameterizable/pull/10">PR to add GitHub Actions</a>
+
