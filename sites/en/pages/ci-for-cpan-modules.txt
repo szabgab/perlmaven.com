@@ -41,7 +41,7 @@ After I was told how to proceed (and basically how to set up a development envir
 
 2022.10.17 <a href="https://metacpan.org/dist/Memoize">Memoize</a>  I found some generated files that <a href="https://github.com/ap/Memoize/pull/2">were not in .gitignore</a>. (Apparently Aristotle does not want to ignore anything as he
 removed the .gitignore file a few monthes ago.)
-adding GitHub Actions was <a href="https://github.com/ap/Memoize/pull/3">quite easy</a>.
+adding GitHub Actions was <a href="https://github.com/ap/Memoize/pull/3">quite easy</a>. <b>DONE</b>
 
 2022.10.18 <a href="https://metacpan.org/dist/Dancer2-Plugin-RPC-RESTISH">Dancer2-Plugin-RPC-RESTISH</a>
 It was quite simple to <a href="https://github.com/abeltje/Dancer2-Plugin-RPC-RESTISH/pull/1">add GitHub Actions</a> to this module,
@@ -60,7 +60,7 @@ CI showed the same error.
 
 2022.10.21 <a href="https://metacpan.org/dist/Sniffer-HTTP">Sniffer-HTTP</a>. When I tried to install it I got a problem that Net-Pcap,
 one of the dependencies would not install out of the box. So first I looked at that module to see if I can figure out how to install that.
-Then <a href="https://github.com/Corion/sniffer-http/pull/1">this Pull-Request</a> was much easier.
+Then <a href="https://github.com/Corion/sniffer-http/pull/1">this Pull-Request</a> was much easier. <b>DONE</b>`
 
 2022.10.21 <a href="https://metacpan.org/dist/Net-Pcap">Net-Pcap</a> wasn't difficult after all, but I had to install some external dependencies using
 <code>
