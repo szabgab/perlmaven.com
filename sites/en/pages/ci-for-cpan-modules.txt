@@ -99,7 +99,7 @@ but there were various errors reported in the logs here too. I hope these will b
 I was expecting <b>dzil</b> to install the test dependencies, but it did not.
 I opened an <a href="https://github.com/ology/Perl-Metrics-Halstead/issues/1">issue</a>. After I got a response there
 it was just a matter of adding a flag to dzil to have <a href="https://github.com/ology/Perl-Metrics-Halstead/pull/2">GitHub Actions PR</a>.
-It currently fails on Windows.
+It currently fails on Windows. <b>DONE</b>
 
 
 
