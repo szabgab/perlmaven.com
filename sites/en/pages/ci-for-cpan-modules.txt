@@ -97,7 +97,9 @@ but there were various errors reported in the logs here too. I hope these will b
 
 2022.10.24 <a href="https://metacpan.org/dist/Perl-Metrics-Halstead">Perl-Metrics-Halstead</a> I ran into some strange behaviour.
 I was expecting <b>dzil</b> to install the test dependencies, but it did not.
-I opened an <a href="https://github.com/ology/Perl-Metrics-Halstead/issues/1">issue</a>
+I opened an <a href="https://github.com/ology/Perl-Metrics-Halstead/issues/1">issue</a>. After I got a response there
+it was just a matter of adding a flag to dzil to have <a href="https://github.com/ology/Perl-Metrics-Halstead/pull/2">GitHub Actions PR</a>.
+It currently fails on Windows.
 
 
 
