@@ -85,3 +85,19 @@ matrix for that. Anyway here is the <a href="https://github.com/maddingue/Net-Pc
 2022.10.23 <a href="https://metacpan.org/dist/MooseX-Types-Parameterizable">MooseX-Types-Parameterizable</a>
 <a href="https://github.com/jjn1056/MooseX-Types-Parameterizable/pull/10">PR to add GitHub Actions</a>
 
+2022.10.24 <a href="https://metacpan.org/dist/Math-MPFR">Math-MPFR</a> I had to play around a bit till I managed to send the <a href="https://github.com/sisyphus/math-mpfr/pull/8">Pull-Request</a>
+<ul>
+  <li>There were two external dependencies to be installed on Linux. However I did not understand what was going on on OSX and Windows. Do they already have those external dependencies or are the tests somehow passing despite not being able to compile the code?</li>
+  <li>I had to install some extra modules to run all the tests, but some of these extra modules failed on OSX so they are only installed on Linux and Windows.</li>
+  <li>There were lots of warnings and errors in all the runs that I did not understand.</li>
+</ul>
+
+2022.10.24 <a href="https://metacpan.org/dist/Math-NV">Math-NV</a> once I managed to set up the PR for Math-MPFR, this was alread <a href="https://github.com/sisyphus/math-nv/pull/1">easy</a>,
+but there were various errors reported in the logs here too. I hope these will be more meaningful to the author of the modules.
+
+2022.10.24 <a href="https://metacpan.org/dist/Perl-Metrics-Halstead">Perl-Metrics-Halstead</a> I ran into some strange behaviour.
+I was expecting <b>dzil</b> to install the test dependencies, but it did not.
+I opened an <a href="https://github.com/ology/Perl-Metrics-Halstead/issues/1">issue</a>
+
+
+
