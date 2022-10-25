@@ -1,0 +1,31 @@
+=title DBIx::Simple - CREATE - INSERT - SELECT hashes
+=timestamp 2016-05-31T07:30:01
+=indexes DBIx::Simple
+=status draft
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+
+=abstract start
+
+An example using <a href="https://www.sqlite.org/">SQLite</a> to create a table, insert some data,
+and then fetch all the entries generating an array of hashes. Each hash represents one row from
+the result set. The keys are the names of the columns. The values are the actual values from the
+database.
+
+<include file="examples/dbix_simple.pl">
+
+<a href="https://metacpan.org/pod/DBIx::Simple">DBIx::Simple</a>
+
+<!--
+<h2>Screenshots</h2>
+<img src="/img/shots/dbix-simple-create-insert-select-hashes.png" alt="DBIx::Simple" />
+-->
+
+=abstract end
+
+This is an experimental post with publicly visble code snippet and not content (yet).
+An image of the code was posted to Twitter to see if people like the idea.
+
+
+
