@@ -38,5 +38,6 @@ The first few articles are available to everyone. The rest of the articles are o
     <li><a href="/release-markua-parser-to-cpan">Release the Markua::Parser to CPAN</a></li>
     <li><a href="/add-attributes-to-markua-round-1">Add attributes to Markua - round 1</a></li>
     <li><a href="/devel-cover-for-markua-parser">Test coverage report with Devel::Cover for the Markua Parser</a></li>
+    <li><a href="/add-more-tests-to-markua-parser">Add more tests to the Markua parser</a></li>
 </ol>
 

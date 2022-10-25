@@ -753,6 +753,7 @@ markua:
         - release-markua-parser-to-cpan
         - add-attributes-to-markua-round-1
         - devel-cover-for-markua-parser
+        - add-more-tests-to-markua-parser
 tk:
   chapters:
     - title: Perl Tk
