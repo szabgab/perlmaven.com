@@ -532,7 +532,7 @@ dancer:
         - dancer2-solution-3-simple-todo-api
         - dancer2-upload-file
         - dancer2-template-tiny
-        - pro/dancer2-template-toolkit
+        - dancer2-template-toolkit
         - pro/dancer2-skeleton
     - title: Dancer 2 and Ajax
       sub:

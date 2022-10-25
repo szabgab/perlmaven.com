@@ -1,0 +1,25 @@
+=title Dancer2: Template Toolkit
+=timestamp 2022-10-25T10:10:01
+=indexes Dancer2, Template::Toolkit, INCLUDE, layout
+=status show
+=books dancer2
+=author szabgab
+=tags screencast
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+Part of the Dancer2 video course available both to <a href="/pro">Pro</a> subscribers and attendees of the <a href="https://leanpub.com/c/dancer">Perl Dancer course</a> on Leanpub.
+
+=abstract end
+
+<ul>
+   <li><a href="https://code-maven.com/slides/dancer/template-toolkit">Template Toolkit</a></li>
+   <li><a href="https://code-maven.com/slides/dancer/template-toolkit-change-tags">Template Toolkit change tags</a></li>
+   <li><a href="https://code-maven.com/slides/dancer/template-toolkit-include">Template Toolkit include</a></li>
+   <li><a href="https://code-maven.com/slides/dancer/template-toolkit-layout">Template Toolkit layout</a></li>
+</ul>
+
+<screencast file="english-dancer2-template-toolkit.mkv" youtube="-cU3GVSkkRw" />
