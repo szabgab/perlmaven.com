@@ -1,0 +1,21 @@
+=title Statsd with Perl
+=timestamp 2018-10-20T07:30:01
+=indexes Datadog, Statsd
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+
+=abstract start
+
+Sample scripts in Perl to use statsd. See also <a href="https://code-maven.com/statsd-python">Statsd with Python</a>.
+
+=abstract end
+
+<include file="examples/statsd/datadog_demo.pl">
+
+
+<include file="examples/statsd/net_statsd.pl">
+
+<include file="examples/statsd/net_statsd_client.pl">
+
