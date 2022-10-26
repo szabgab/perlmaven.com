@@ -91,9 +91,11 @@ matrix for that. Anyway here is the <a href="https://github.com/maddingue/Net-Pc
   <li>I had to install some extra modules to run all the tests, but some of these extra modules failed on OSX so they are only installed on Linux and Windows.</li>
   <li>There were lots of warnings and errors in all the runs that I did not understand.</li>
 </ul>
+The authoris not interested in have CI. <b>Nope</b>
 
 2022.10.24 <a href="https://metacpan.org/dist/Math-NV">Math-NV</a> once I managed to set up the PR for Math-MPFR, this was alread <a href="https://github.com/sisyphus/math-nv/pull/1">easy</a>,
 but there were various errors reported in the logs here too. I hope these will be more meaningful to the author of the modules.
+The authoris not interested in have CI. <b>Nope</b>
 
 2022.10.24 <a href="https://metacpan.org/dist/Perl-Metrics-Halstead">Perl-Metrics-Halstead</a> I ran into some strange behaviour.
 I was expecting <b>dzil</b> to install the test dependencies, but it did not.
@@ -101,7 +103,7 @@ I opened an <a href="https://github.com/ology/Perl-Metrics-Halstead/issues/1">is
 it was just a matter of adding a flag to dzil to have <a href="https://github.com/ology/Perl-Metrics-Halstead/pull/2">GitHub Actions PR</a>.
 It currently fails on Windows. <b>DONE</b>
 
-2022.10.24 <a href="https://metacpan.org/dist/Music-ToRoman">Music-ToRoman</a> and <a href="https://github.com/ology/Music-ToRoman/pull/1">PR</a>. The idea was rejected as this is only a "fun module".
+2022.10.24 <a href="https://metacpan.org/dist/Music-ToRoman">Music-ToRoman</a> and <a href="https://github.com/ology/Music-ToRoman/pull/1">PR</a>. The idea was rejected as this is only a "fun module". <b>Nope</b>
 
-2022.10.24 <a href="https://metacpan.org/dist/Music-ScaleNote">Music-ScaleNote</a> I bumped into some issues. Luckily I did not waste too much time on trying to figure out the problem as it would have been rejected anyway.
+2022.10.24 <a href="https://metacpan.org/dist/Music-ScaleNote">Music-ScaleNote</a> I bumped into some issues. Luckily I did not waste too much time on trying to figure out the problem as it would have been rejected anyway. <b>Nope</b>
 
