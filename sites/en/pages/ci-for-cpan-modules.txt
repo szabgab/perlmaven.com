@@ -107,6 +107,9 @@ It currently fails on Windows. <b>DONE</b>
 
 2022.10.24 <a href="https://metacpan.org/dist/Music-ScaleNote">Music-ScaleNote</a> I bumped into some issues. Luckily I did not waste too much time on trying to figure out the problem as it would have been rejected anyway. <b>Nope</b>
 
+2022.10.25 Steven Bakker took issues in his own hands. He <a href="https://github.com/szabgab/perlmaven.com/issues/567">asked for help</a>, but then resolved it alone and now <a href="https://metacpan.org/dist/Term-CLI">Term-CLI</a> also has
+<a href="https://github.com/sbakker/perl-Term-CLI">GitHub Actions</a> enabled. It could be interesting to see how this is being done for <a href="https://metacpan.org/dist/Term-ReadLine-Gnu">Term-ReadLine-Gnu</a> and <a
+href="https://metacpan.org/dist/TermReadKey">Term::ReadKey</a>. Anyway this is now <b>done</b>.
 
 At this point I thought it might be better to first open issues asking the authors if they are interested at all in CI.
 
@@ -119,5 +122,4 @@ At this point I thought it might be better to first open issues asking the autho
 2022.10.26 <a href="https://metacpan.org/dist/App-Elog">App-Elog</a> <a href="https://github.com/zorgnax/elog/issues/1">issue</a> <a href="https://github.com/zorgnax/elog/pull/3">PR</a>. <b>done</b>
 
 2022.10.26 <a href="https://metacpan.org/dist/BmltClient-ApiClient">BmltClient-ApiClient</a> <a href="https://github.com/bmlt-enabled/bmlt-root-server-perl-client/issues/1">issue</a>.
-
 
