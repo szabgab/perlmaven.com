@@ -533,7 +533,7 @@ dancer:
         - dancer2-upload-file
         - dancer2-template-tiny
         - dancer2-template-toolkit
-        - pro/dancer2-skeleton
+        - dancer2-skeleton
     - title: Dancer 2 and Ajax
       sub:
         - ajax-and-dancer2
