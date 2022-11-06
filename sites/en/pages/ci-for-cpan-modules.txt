@@ -123,3 +123,17 @@ At this point I thought it might be better to first open issues asking the autho
 
 2022.10.26 <a href="https://metacpan.org/dist/BmltClient-ApiClient">BmltClient-ApiClient</a> <a href="https://github.com/bmlt-enabled/bmlt-root-server-perl-client/issues/1">issue</a>.
 
+
+2022.11.06 <a href="https://metacpan.org/dist/Math-Round-SignificantFigures">Math::Round::SignificantFigures</a> <a href="https://github.com/mrdvt92/perl-Math-Round-SignificantFigures/pull/1">Pull-request</a>
+
+2022.11.06 <a href="https://metacpan.org/dist/List-NSect">List-NSect</a> <a href="https://github.com/mrdvt92/perl-List-NSect/pull/1">Pull-request</a>
+
+2022.11.06 <a href="https://metacpan.org/dist/Scope-OnExit">Scope-OnExit</a> marked as deprecated so I did not send the PR.
+
+2022.11.06 <a href="https://metacpan.org/dist/App-Puppet-Environment-Updater">App-Puppet-Environment-Updater</a> This is strange. In this <a href="https://github.com/mstock/App-Puppet-Environment-Updater/">repository</a> the default branch
+is called <b>releases</b> and it does NOT have GitHub Actions enabled, but there is a separate branch called <b>master</b>.
+See the the video on <a href="/separate-release-branch-for-app-puppet-environment-updater">separate release branch for App::Puppet::Environment::Updater</a>.
+
+
+2022.11.06 <a href="https://metacpan.org/dist/Sys-OsPackage">Sys-OsPackage</a> <a href=""></a> (had to disable testing on OSX and Windows)
+

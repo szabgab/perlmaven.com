@@ -814,3 +814,4 @@ os:
         - github-actions-for-pinto-remote-selfcontained
         - github-actions-for-math-numerical
         - ci-for-cpan-modules
+        - separate-release-branch-for-app-puppet-environment-updater
