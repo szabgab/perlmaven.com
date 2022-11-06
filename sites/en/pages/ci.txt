@@ -74,6 +74,8 @@ version control have a CI system configured.
    <li>How to send a pull-request</li>
 </ul>
 
+A nice collection of <a href="https://github.com/FGasper/perl-github-action-tips">Tips for testing Perl modules via GitHub Actions</a> by Felipe Gasper.
+
 <h2>GitLab</h2>
 
 <ul>
