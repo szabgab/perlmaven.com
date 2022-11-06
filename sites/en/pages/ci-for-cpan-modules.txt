@@ -135,5 +135,5 @@ is called <b>releases</b> and it does NOT have GitHub Actions enabled, but there
 See the the video on <a href="/separate-release-branch-for-app-puppet-environment-updater">separate release branch for App::Puppet::Environment::Updater</a>.
 
 
-2022.11.06 <a href="https://metacpan.org/dist/Sys-OsPackage">Sys-OsPackage</a> <a href=""></a> (had to disable testing on OSX and Windows)
+2022.11.06 <a href="https://metacpan.org/dist/Sys-OsPackage">Sys-OsPackage</a> had to disable testing on OSX and Windows and could not enable RELEASE_TESTING either. <a href="https://github.com/ikluft/Sys-OsPackage/pull/2">Pull-Request</a>.
 
