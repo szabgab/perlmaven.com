@@ -27,23 +27,7 @@ currently maintained by RJBS. Let's give it a try.
 Even before I do that I need a way to go over all the files. For  this
 I used <a href="https://metacpan.org/pod/Path::Iterator::Rule">Path::Iterator::Rule</a> that I have already <a href="/finding-files-in-a-directory-using-perl">used</a>.
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-use Path::Iterator::Rule;
-
-my $path_to_dir = shift or die "Usage: $0 path/to/mail\n";
-
-my $rule = Path::Iterator::Rule->new;
-my $it = $rule->iter( $path_to_dir );
-while ( my $file = $it->() ) {
-    next if not -f $file;
-    say $file;
-    }
-}
-</code>
+<include file="examples/traversing_directory_tree.pl">
 
 I run this using <hl>time</hl> so I can see how long it takes:
 
@@ -70,31 +54,7 @@ and just go through all the messages:
     }
 </code>
 
-
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-use Path::Iterator::Rule;
-use Email::Folder;
-
-my $path_to_dir = shift or die "Usage: $0 path/to/mail\n";
-
-my $count = 0;
-
-my $rule = Path::Iterator::Rule->new;
-my $it = $rule->iter( $path_to_dir );
-while ( my $file = $it->() ) {
-    next if not -f $file;
-    say $file;
-    my $folder = Email::Folder->new($file);
-    while (my $msg = $folder->next_message) {  # Email::Simple objects
-        $count++;
-    }
-}
-say $count;
-</code>
+<include file="examples/traversing_messages.pl">
 
 I ran this again with <hl>time</hl> and it took almost 2 minutes. I even added a counter to see how many messages I have.
 There are 119,026 messages in my folders. Clearly I can't just write a script to search things in these folders.
