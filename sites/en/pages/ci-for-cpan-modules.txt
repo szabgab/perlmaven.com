@@ -116,7 +116,7 @@ At this point I thought it might be better to first open issues asking the autho
 2022.10.26 <a href="https://metacpan.org/dist/Kelp-Module-Sereal">Kelp-Module-Sereal</a> <a href="https://github.com/bbrtj/perl-kelp-module-sereal/issues/2">issue</a>. <b>rejected</b>.
 
 2022.10.26 <a href="https://metacpan.org/dist/IO-FD">IO-FD</a> <a href="https://github.com/drclaw1394/perl-io-fd/issues/1">issue</a>.
-<a href="https://github.com/drclaw1394/perl-io-fd/pull/2">Pull-Request</a>
+<a href="https://github.com/drclaw1394/perl-io-fd/pull/2">Pull-Request</a> <b>done</b>
 
 2022.10.26 <a href="https://metacpan.org/dist/Quiq">Quiq</a> <a href="https://github.com/s31tz/Quiq/issues/3">issue</a>.
 
