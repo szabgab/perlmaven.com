@@ -49,7 +49,7 @@ but it seems that the installation of the dependencies was a bit flaky when I fi
 
 2022.10.18 <a href="https://metacpan.org/dist/Hustle-Table">Hustle-Table</a> It was <a href="https://github.com/drclaw1394/perl5-hustle-table/pull/1">easy to enable CI</a>.
 
-2022.10.18 <a href="https://metacpan.org/dist/Term-TablePrint">Term-TablePrint</a> It was <a href="https://github.com/kuerbis/Term-TablePrint/pull/2">easy to enable CI</a>.
+2022.10.18 <a href="https://metacpan.org/dist/Term-TablePrint">Term-TablePrint</a> It was <a href="https://github.com/kuerbis/Term-TablePrint/pull/2">easy to enable CI</a>. <b>DONE</b>
 
 2022.10.18 <a href="https://metacpan.org/dist/PAUSE-Packages">PAUSE-Packages</a> It was <a href="https://github.com/neilb/PAUSE-Packages/pull/11">easy to enable CI</a> though the tests
 fail on MS Windows so I had to disable that platform.
