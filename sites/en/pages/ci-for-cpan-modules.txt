@@ -116,13 +116,13 @@ At this point I thought it might be better to first open issues asking the autho
 2022.10.26 <a href="https://metacpan.org/dist/Kelp-Module-Sereal">Kelp-Module-Sereal</a> <a href="https://github.com/bbrtj/perl-kelp-module-sereal/issues/2">issue</a>. <b>rejected</b>.
 
 2022.10.26 <a href="https://metacpan.org/dist/IO-FD">IO-FD</a> <a href="https://github.com/drclaw1394/perl-io-fd/issues/1">issue</a>.
+<a href="https://github.com/drclaw1394/perl-io-fd/pull/2">Pull-Request</a>
 
 2022.10.26 <a href="https://metacpan.org/dist/Quiq">Quiq</a> <a href="https://github.com/s31tz/Quiq/issues/3">issue</a>.
 
 2022.10.26 <a href="https://metacpan.org/dist/App-Elog">App-Elog</a> <a href="https://github.com/zorgnax/elog/issues/1">issue</a> <a href="https://github.com/zorgnax/elog/pull/3">PR</a>. <b>done</b>
 
 2022.10.26 <a href="https://metacpan.org/dist/BmltClient-ApiClient">BmltClient-ApiClient</a> <a href="https://github.com/bmlt-enabled/bmlt-root-server-perl-client/issues/1">issue</a>.
-
 
 2022.11.06 <a href="https://metacpan.org/dist/Math-Round-SignificantFigures">Math::Round::SignificantFigures</a> <a href="https://github.com/mrdvt92/perl-Math-Round-SignificantFigures/pull/1">Pull-request</a>
 
@@ -134,6 +134,20 @@ At this point I thought it might be better to first open issues asking the autho
 is called <b>releases</b> and it does NOT have GitHub Actions enabled, but there is a separate branch called <b>master</b>.
 See the the video on <a href="/separate-release-branch-for-app-puppet-environment-updater">separate release branch for App::Puppet::Environment::Updater</a>.
 
-
 2022.11.06 <a href="https://metacpan.org/dist/Sys-OsPackage">Sys-OsPackage</a> had to disable testing on OSX and Windows and could not enable RELEASE_TESTING either. <a href="https://github.com/ikluft/Sys-OsPackage/pull/2">Pull-Request</a>.  <b>DONE</b>
+
+2022.11.15 <a href="https://metacpan.org/dist/Types-ULID">Types-ULID</a>, <a href="https://github.com/bbrtj/perl-types-ulid/pull/1">Pull-Request</a>
+
+2022.11.15 <a href="https://metacpan.org/dist/Template-Perlish">Template-Perlish</a>, <a href="https://github.com/polettix/Template-Perlish/pull/5">Pull-Request</a>
+
+2022.11.15 <a href="https://metacpan.org/dist/Data-ULID">Data-ULID</a>, <a href="https://github.com/bk/Data-ULID/pull/10">Pull-Request</a>
+
+2022.11.15 <a href="https://metacpan.org/dist/Text-Markdown-Discount">Text-Markdown-Discount</a> <a href="https://github.com/sekimura/text-markdown-discount/pull/31">Pull-Request</a>
+
+2022.11.15 <a href="https://metacpan.org/dist/UTF8-R2">UTF8-R2</a> <a href="https://github.com/ina-cpan/UTF8-R2/pull/1">Pull-Request</a>
+
+<!--
+2022.11.15 <a href="https://metacpan.org/dist/Apache-Solr">Apache-Solr</a> <a href=""></a>
+2022.11.15 <a href=""></a> <a href=""></a>
+-->
 
