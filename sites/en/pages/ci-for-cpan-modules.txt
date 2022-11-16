@@ -136,9 +136,9 @@ See the the video on <a href="/separate-release-branch-for-app-puppet-environmen
 
 2022.11.06 <a href="https://metacpan.org/dist/Sys-OsPackage">Sys-OsPackage</a> had to disable testing on OSX and Windows and could not enable RELEASE_TESTING either. <a href="https://github.com/ikluft/Sys-OsPackage/pull/2">Pull-Request</a>.  <b>DONE</b>
 
-2022.11.15 <a href="https://metacpan.org/dist/Types-ULID">Types-ULID</a>, <a href="https://github.com/bbrtj/perl-types-ulid/pull/1">Pull-Request</a>
+2022.11.15 <a href="https://metacpan.org/dist/Types-ULID">Types-ULID</a>, <a href="https://github.com/bbrtj/perl-types-ulid/pull/1">Pull-Request</a> <b>done</b>
 
-2022.11.15 <a href="https://metacpan.org/dist/Template-Perlish">Template-Perlish</a>, <a href="https://github.com/polettix/Template-Perlish/pull/5">Pull-Request</a>
+2022.11.15 <a href="https://metacpan.org/dist/Template-Perlish">Template-Perlish</a>, <a href="https://github.com/polettix/Template-Perlish/pull/5">Pull-Request</a> <b>done</b>
 
 2022.11.15 <a href="https://metacpan.org/dist/Data-ULID">Data-ULID</a>, <a href="https://github.com/bk/Data-ULID/pull/10">Pull-Request</a>
 
@@ -146,8 +146,18 @@ See the the video on <a href="/separate-release-branch-for-app-puppet-environmen
 
 2022.11.15 <a href="https://metacpan.org/dist/UTF8-R2">UTF8-R2</a> <a href="https://github.com/ina-cpan/UTF8-R2/pull/1">Pull-Request</a>
 
+2022.11.15 <a href="https://metacpan.org/dist/Game-TileMap">Game-TileMap</a> <a href="https://github.com/bbrtj/perl-game-tilemap/pull/1">Pull-Request</a> <b>done</b>.
+
+2022.11.16 <a href="https://metacpan.org/dist/Algorithm-QuadTree-XS">Algorithm-QuadTree-XS</a> <a href="https://github.com/bbrtj/perl-algorithm-quadtree-xs/pull/3">Pull-Request</a> <b>done</b>
+
+2022.11.16 <a href="https://metacpan.org/dist/POE-Component-EasyDBI">POE-Component-EasyDBI</a> <a href=""></a>
+
+2022.11.16 <a href="https://metacpan.org/dist/Dancer2-Plugin-DoFile">Dancer2-Plugin-DoFile</a> <a href="https://github.com/Pero-Moretti/Perl-Dancer2-Plugin-DoFile/pull/2">Pull-Request</a>
+
+2022.11.16 <a href="https://metacpan.org/dist/Algorithm-QuadTree">Algorithm-QuadTree</a> <a href="https://github.com/bbrtj/perl-algorithm-quadtree/pull/1">Pull-Request</a> <b>rejected, but will be done later by the author</b>.
+
 <!--
-2022.11.15 <a href="https://metacpan.org/dist/Apache-Solr">Apache-Solr</a> <a href=""></a>
-2022.11.15 <a href=""></a> <a href=""></a>
+2022.11.16 <a href="https://metacpan.org/dist/Apache-Solr">Apache-Solr</a> <a href=""></a>
+2022.11.16 <a href=""></a> <a href=""></a>
 -->
 
