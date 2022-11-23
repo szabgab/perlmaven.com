@@ -1,7 +1,7 @@
 =title PDE - Perl Development Environment
 =timestamp 2015-02-01T07:30:01
 =indexes Vagrant, VirtualBox
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 0
@@ -78,5 +78,3 @@ Released on 2015.03.25
 Back then it was called PMDE (Perl Maven Development Environment), but later I dropped the M.
 It was announced exclusively to the <a href="https://perlmaven.com/pro/">Perl Maven Pro</a> subscribers.
 
-
- 
