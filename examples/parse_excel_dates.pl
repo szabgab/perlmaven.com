@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use 5.010;
 use Spreadsheet::ParseExcel;
+use DateTime;
 
 my $file = shift or die "Usage: $0 FILENAME\n";
 
@@ -26,7 +27,6 @@ say 'A4: ' . $worksheets[0]->get_cell( 3, 0 )->unformatted;
 
 say '';
 
-use DateTime;
 # December 31, 1899
 my $start_date = DateTime->new(
     year       => 1899,
@@ -36,5 +36,8 @@ my $start_date = DateTime->new(
     minute     => 0,
     second     => 0,
 );
+
+say "--- Use the date from a cell ---";
+say $start_date->ymd;
 my $date = $start_date->clone->add( days => $worksheets[0]->get_cell( 0, 0 )->unformatted );
 say $date->ymd;

@@ -43,9 +43,18 @@ then you also need to install <a href="https://metacpan.org/release/Spreadsheet-
 though <a href="https://metacpan.org/release/Spreadsheet-ParseExcel">Spreadsheet-ParseExcel</a> might be enough.
 It depends on the version of your Excel file.
 
+<h2>Spreadsheet::Read</h2>
+
+In the first example we use  Spreadsheet::Read that makes the code reading the values very simple:
+
 <include file="examples/read_excel_dates.pl">
+
+
+<h2>Spreadsheet::ParseExcel</h2>
+
+In the second example we used Spreadsheet::ParseExcel for a more detailed reading.
 
 <include file="examples/parse_excel_dates.pl">
 
-<a href="https://practicaldatamanagement.wordpress.com/2014/07/02/dealing-with-dates-as-data-in-excel/">
+See also <a href="https://practicaldatamanagement.wordpress.com/2014/07/02/dealing-with-dates-as-data-in-excel/">dealing with dates as data in Excel</a>
 
