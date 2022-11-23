@@ -140,7 +140,7 @@ See the the video on <a href="/separate-release-branch-for-app-puppet-environmen
 
 2022.11.15 <a href="https://metacpan.org/dist/Template-Perlish">Template-Perlish</a>, <a href="https://github.com/polettix/Template-Perlish/pull/5">Pull-Request</a> <b>done</b>
 
-2022.11.15 <a href="https://metacpan.org/dist/Data-ULID">Data-ULID</a>, <a href="https://github.com/bk/Data-ULID/pull/10">Pull-Request</a>
+2022.11.15 <a href="https://metacpan.org/dist/Data-ULID">Data-ULID</a>, <a href="https://github.com/bk/Data-ULID/pull/10">Pull-Request</a> <b>done</b>
 
 2022.11.15 <a href="https://metacpan.org/dist/Text-Markdown-Discount">Text-Markdown-Discount</a> <a href="https://github.com/sekimura/text-markdown-discount/pull/31">Pull-Request</a> <b>done</b>
 
