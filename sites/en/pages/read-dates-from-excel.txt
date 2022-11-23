@@ -1,7 +1,7 @@
-=title Read dates from Excel file
-=timestamp 2018-01-01T07:30:01
+=title Read dates from Excel file using Perl
+=timestamp 2022-11-23T05:30:01
 =indexes Excel
-=status draft
+=status show
 =author szabgab
 =archive 1
 =comments_disqus_enable 0
@@ -49,12 +49,38 @@ In the first example we use  Spreadsheet::Read that makes the code reading the v
 
 <include file="examples/read_excel_dates.pl">
 
+The output when using this script with the above Excel file:
+
+<code>
+A1: 05/14/48
+A2: 05/14/1948
+A3: Friday, May 14, 1948
+A4: 14.05.1948
+</code>
 
 <h2>Spreadsheet::ParseExcel</h2>
 
 In the second example we used Spreadsheet::ParseExcel for a more detailed reading.
 
 <include file="examples/parse_excel_dates.pl">
+
+The output when using this script with the above Excel file:
+
+<code>
+A1: 05/14/48
+A2: 05/14/1948
+A3: Friday, May 14, 1948
+A4: 14.05.1948
+
+A1: 17667
+A2: 17667
+A3: 17667
+A4: 14.05.1948
+
+--- Use the date from a cell ---
+1899-12-30
+1948-05-14
+</code>
 
 See also <a href="https://practicaldatamanagement.wordpress.com/2014/07/02/dealing-with-dates-as-data-in-excel/">dealing with dates as data in Excel</a>
 
