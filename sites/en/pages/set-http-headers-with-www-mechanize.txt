@@ -9,7 +9,7 @@
 
 =abstract start
 
-Perl has several module on several levels of abstraction to interact with web sites using HTTP requests. One of the nice modules is <a href="https://metacpan.org/pod/WWW::Mechanize">WWW::Mechanize</a> that is built on top of <a href="https://metacpan.org/pod/LWP::UserAgent">LWP::UserAgent</a>. In this example we'll see how to set the header in the HTTP request using WWW::Mechanize.
+Perl has several modules on several levels of abstraction to interact with web sites using HTTP requests. One of the nice modules is <a href="https://metacpan.org/pod/WWW::Mechanize">WWW::Mechanize</a> that is built on top of <a href="https://metacpan.org/pod/LWP::UserAgent">LWP::UserAgent</a>. In this example we'll see how to set the header in the HTTP request using WWW::Mechanize.
 
 We'll use the service provided by the <a href="https://httpbin.org/">httpbin.org</a> web site to see the headers we set.
 
