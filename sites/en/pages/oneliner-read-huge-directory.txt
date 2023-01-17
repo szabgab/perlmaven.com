@@ -19,9 +19,22 @@ At a client we have a networked disk with millions of files. I was trying to lis
 perl -E 'opendir(my $dh, "/huge_dir"); my $c = 0; while (my $d = readdir($dh)) { say $d; exit if ++$c > 3 }'
 </code>
 
+In a different layout that could be put in a file
+
+<code lang="perl">
+use feature 'say';
+opendir(my $dh, "/huge_dir");
+my $c = 0;
+while (my $d = readdir($dh)) {
+    say $d;
+    exit if ++$c > 3
+}
+</code>
+
+
 Explanation:
 
-<b>perl -E</b> tells perl that the next string is a piece of perl code that should executed. (as opposed to being a filename) This is what let's us write one-liners in Perl.
+<b>perl -E</b> tells perl that the next string is a piece of perl code that should executed. (as opposed to being a filename) This is what let's us write one-liners in Perl. Using the capital letter <b>-E</b> turns on the feature <b>say</b> among other things.
 
 <b>opendir(my $dh, "/huge_dir");</b> opens a directory and assigns the directory handle to the new variable called <b>$dh</b> that was declared on the spot with <b>my</b>
 
