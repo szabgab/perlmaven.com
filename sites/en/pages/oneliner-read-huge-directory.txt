@@ -1,0 +1,35 @@
+=title oneliner: read first elements of a huge directory
+=timestamp 2023-10-01T07:30:01
+=indexes oneliners
+=status show
+=author szabgab
+=archive 1
+=description
+=comments_disqus_enable 0
+=show_related 1
+
+=abstract start
+
+At a client we have a networked disk with millions of files. I was trying to list the first few files to see what's going on.
+
+<b>ls -l | head</b> takes ages, but here is a Perl one-liner to make it work:
+
+=abstract end
+
+<code lang="perl">
+perl -E 'opendir(my $dh, "/huge_dir"); my $c = 0; while (my $d = readdir($dh)) { say $d; exit if ++$c > 3}'
+</code>
+
+I was even a bit overdoing with declarations, I can shorten it:
+
+<code>
+perl -E 'opendir($dh, "/huge_dir"); while ($d = readdir($dh)) { say $d; exit if ++$c > 3}'
+</code>
+
+And I don't need that <b>$d</b> variable either. Instead of that I can use the invisible <b>$_</b>:
+
+<code>
+perl -E 'opendir($dh, "/huge_dir"); while (readdir($dh)) { say; exit if ++$c > 3}'
+</code>
+
+
