@@ -15,7 +15,7 @@ At a client we have a networked disk with millions of files. I was trying to lis
 
 =abstract end
 
-<code lang="perl">
+<code>
 perl -E 'opendir(my $dh, "/huge_dir"); my $c = 0; while (my $d = readdir($dh)) { say $d; exit if ++$c > 3}'
 </code>
 
