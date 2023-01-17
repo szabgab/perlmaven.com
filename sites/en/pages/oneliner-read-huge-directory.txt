@@ -1,5 +1,5 @@
 =title oneliner: read first elements of a huge directory
-=timestamp 2023-10-01T07:30:01
+=timestamp 2023-01-17T10:55:01
 =indexes oneliners
 =status show
 =author szabgab
