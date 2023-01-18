@@ -57,4 +57,14 @@ And I don't need that <b>$d</b> variable either. Instead of that I can use the i
 perl -E 'opendir($dh, "/huge_dir"); while (readdir($dh)) { say; exit if ++$c > 3}'
 </code>
 
+<h2>Improvement with for loop</h2>
+
+<a href="http://plasmasturm.org/">Aristotle Pagaltzis</a> posted an improved version as a comment on my <a href="https://dev.to/szabgab/one-liner-read-first-elements-of-a-huge-directory-2h8c">dev.to</a> post.
+
+This one does not need a named counter variable as we are using a for loop with the invisibele <b>$_</b> and we don't need a variable for the filename as we are printing out right away.
+
+<code>
+perl -Mautodie -E 'opendir DH, "/huge_dir"; for ( 1 .. 3 ) { say readdir DH // last }'
+</code>
+
 
