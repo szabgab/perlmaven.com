@@ -66,7 +66,7 @@ if (-e $file) {
 
 </code>
 
-In this block we try to <a href="/open-and-read-from-files">open the file for reading</a> using the <hl>open</hl> function and <a href="/die">throw an exception</a> by calling the <hl>die</hl> function if we still cannot open the file. This should happen only in the most extreme situation and therefore it is ok to take drastical steps. If the <hl>open</hl> was successful, <hl>$fh</hl>, the newly declared variable will have the file handle in it. We can then use the <hl>&lt;$fh&gt;</hl> operator to read one line (the only one it has) from the file and finally we <hl>close</hl> the file.
+In this block we try to <a href="/open-and-read-from-files">open the file for reading</a> using the <hl>open</hl> function and <a href="/die">throw an exception</a> by calling the <hl>die</hl> function if we still cannot open the file. This should happen only in the most extreme situation and therefore it is ok to take drastic steps. If the <hl>open</hl> was successful, <hl>$fh</hl>, the newly declared variable will have the file handle in it. We can then use the <hl>&lt;$fh&gt;</hl> operator to read one line (the only one it has) from the file and finally we <hl>close</hl> the file.
 
 <h2>No need to initialize the counter</h2>
 
