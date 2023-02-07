@@ -310,7 +310,7 @@ split /\|/, $line;
 <h2>Other examples</h2>
 
 Though in the general case <hl>split</hl> is not the right tool for this job,
-it can be employed for <a href="/how-to-read-a-csv-file-using-perl">reading simple CSV files</a>.
+it can be employed for <a href="/how-to-read-a-csv-file-using-perl">reading simple CSV files</a>. Check that article for much better ways to read a CSV or TSV file.
 
 It is also a critical part of the example showing
 <a href="/count-words-in-text-using-perl">how to count words in a text file</a>.
