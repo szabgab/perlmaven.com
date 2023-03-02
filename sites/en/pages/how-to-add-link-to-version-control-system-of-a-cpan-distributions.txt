@@ -114,6 +114,7 @@ to include the <a href="https://metacpan.org/pod/Dist::Zilla::Plugin::MetaJSON">
 [MetaResources]
 repository.web = https://github.com/dwimperl/Task-DWIM
 repository.url = https://github.com/dwimperl/Task-DWIM.git
+bugtracker.web = https://github.com/dwimperl/Task-DWIM/issues
 repository.type = git
 
 [MetaJSON]
@@ -128,6 +129,7 @@ adding the following line to the dist.ini file:
 
 <code>
 [GithubMeta]
+issues = 1
 [MetaJSON]
 </code>
 
