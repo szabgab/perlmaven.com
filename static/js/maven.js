@@ -41,5 +41,5 @@ $(document).ready(function() {
     //show_bottom('Was this article useful? Please <a href="https://www.patreon.com/szabgab">support me via Patreon</a> so I can keep writing about Perl as well!');
 
     //show_top('Are you interested to invest some money in the stock market, but don\'t want to waste time chasing data sources? Are you overwhelmed by the meaningless data dumps from the big web-sites? Try <a href=\"https://torto.ai/welcome?utm_source=code-maven&utm_medium=web&utm_campaign=code-maven-top\">Torto.AI</a>.')
-    show_top('Are you interested to invest some money in the stock market? Try <a href=\"https://torto.ai/welcome?utm_source=code-maven&utm_medium=web&utm_campaign=code-maven-top\">Torto.AI</a>.')
+    //show_top('Are you interested to invest some money in the stock market? Try <a href=\"https://torto.ai/welcome?utm_source=code-maven&utm_medium=web&utm_campaign=code-maven-top\">Torto.AI</a>.')
 })
