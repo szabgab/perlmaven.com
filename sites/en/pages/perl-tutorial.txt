@@ -27,120 +27,7 @@ In addition to the tutorial, the eBook also includes some material that is only 
 
 <h2>Supporters</h2>
 
-The updating of Perl Tutorial was supported by a number of people and corporations via a crowdfunding campaign. Some people wanted to stay anonymous, but most of them are listed here. Thanks to all of you for making this ongoing work possible!
-
-<ul>
-   <li><a href="http://cpanel.com/">cPanel, Inc.</a> picked up almost 50% of the tab. Thanks to <a href="https://www.linkedin.com/in/bennyvasquez/">benny Vasquez</a></li>
-   <li><a href="http://theperlshop.com">The Perl Shop</a> also provided substantial support.</li>
-</ul>
-
-<ul>
-   <li><a href="https://www.linkedin.com/in/elizabeth-mattijsen-7483002/">Liz</a> &amp; <a href="https://www.linkedin.com/in/wendyga/">Wendy</a> Mattijsen &amp; Van Dijk</li>
-   <li><a href="https://www.linkedin.com/in/desmondhokin/">Desmond Hokin</a></li>
-   <li><a href="https://www.linkedin.com/in/kevin-phair-1914602/">Kevin Phair</a></li>
-</ul>
-
-<ul>
-   <li>Jason Hunt</li>
-</ul>
-<ul>
-   <li><a href="https://www.linkedin.com/in/bas-spikmans/">Bas Spikmans</a></li>
-   <li><a href="https://www.linkedin.com/in/richard-noble-13272515/">Richard Noble</a></li>
-   <li><a href="https://www.linkedin.com/in/russ-brewer-533a7012/">Russ Brewer</a></li>
-</ul>
-<ul>
-   <li><a href="https://www.linkedin.com/in/bj%C3%B6rn-wesselbaum-b58bbb154/">Björn Wesselbaum</a></li>
-   <li><a href="https://www.linkedin.com/in/craig-votava-2245424/">Craig Votava</a></li>
-   <li><a href="https://www.linkedin.com/in/enrico-marantidis-807ab918/">Enrico Marantidis</a></li>
-   <li>Len Weisberg</li>
-   <li><a href="https://www.linkedin.com/in/matija-grabnar-a209b/">Matija Grabnar</a></li>
-   <li>Ron Wickersham</li>
-   <li><a href="https://www.linkedin.com/in/yaron-pacht-839215/">Yaron Pacht</a></li>
-</ul>
-<ul>
-   <li><a href="https://www.linkedin.com/in/gert-van-oss-4228b13/">Gert van Oss</a></li>
-   <li><a href="https://www.linkedin.com/in/packy-anderson/">Packy Anderson</a></li>
-</ul>
-<ul>
-   <li><a href="https://www.linkedin.com/in/enriquenell/">Enrique Nell</a></li>
-   <li><a href="https://www.linkedin.com/in/gregfoletta/">Gregory Foletta</a></li>
-   <li><a href="https://www.linkedin.com/in/laurence-sherwood-9731a14/">Larry Sherwood</a></li>
-   <li><a href="https://www.linkedin.com/in/meir-guttman-17b790161/">Meir Guttman</a></li>
-   <li>Rab McGill</li>
-   <li><a href="https://www.linkedin.com/in/hazard/">Vladimir Ivashchenko</a></li>
-</ul>
-<ul>
-   <li><a href="https://www.linkedin.com/in/andy-dorman-0a253029/">Andrew Dorman</a></li>
-   <li>Eduard Wulff</li>
-   <li>Georgy Vladimirov</li>
-   <li><a href="https://www.linkedin.com/in/walter-crombez-2369b61/">Walter Crombez</a></li>
-</ul>
-<ul>
-   <li>Alexa Cristina</li>
-   <li>Atul Kalia</li>
-   <li>Brian Gaboury</li>
-   <li><a href="https://www.linkedin.com/in/christopher-hahn-9a49878/">Christopher Hahn</a></li>
-   <li>Daniel W Harper</li>
-   <li>Dave Horsfall</li>
-   <li><a href="https://www.linkedin.com/in/david-djurberg-4a6671a8/">David Djurberg</a></li>
-   <li>Dennis Nendza</li>
-   <li><a href="https://www.linkedin.com/in/duncan-white-32a81154/">Duncan White</a></li>
-   <li>Edward W. Brem</li>
-   <li>Ekkehard (Ekki) Plicht</li>
-   <li><a href="https://www.linkedin.com/in/ian-gates-5b49211/">Ian Gates</a></li>
-   <li>Jean F. Delpech</li>
-   <li>Jeff Pelkey</li>
-   <li><a href="https://www.linkedin.com/in/jculverhouse/">Jeffrey Culverhouse</a></li>
-   <li>Jeffrey Wong</li>
-   <li><a href="https://www.linkedin.com/in/kristen-kjoberg-050a402/">Kristen Kjoberg</a></li>
-   <li>Leo Chan</li>
-   <li><a href="https://www.linkedin.com/in/laurentrosenfeld/">Laurent Rosenfeld</a></li>
-   <li><a href="https://www.linkedin.com/in/lorneschachter/">Lorne Schachter</a></li>
-   <li><a href="https://www.linkedin.com/in/marktagawa/">Mark Tagawa</a></li>
-   <li>Mark Schnee</li>
-   <li>Markus Hechenberger</li>
-   <li>Miller Hall</li>
-   <li><a href="https://www.linkedin.com/in/nathanwaddell/">Nathan Waddell</a></li>
-   <li><a href="https://www.linkedin.com/in/nicolas-rochelemagne-71b4722/">atoomic</a></li>
-   <li><a href="https://www.linkedin.com/in/nikolaischlegel/">Nikolai Schlegel</a></li>
-   <li><a href="https://www.linkedin.com/in/norman-gaywood-b7684610/">Norman Gaywood</a></li>
-   <li>Peter Ulvskov</li>
-   <li><a href="https://www.linkedin.com/in/peter-gal/">Péter Gál</a></li>
-   <li>Rob Dixon</li>
-   <li><a href="https://www.linkedin.com/in/rdsteiner/">Ross Steiner</a></li>
-   <li><a href="https://www.linkedin.com/in/sachin-dangol-7b609627/">Sachin Dangol</a></li>
-   <li>Saif Ahmed</li>
-   <li>Samuel John</li>
-   <li>Santosh Angadi</li>
-   <li>Serguei Novikov</li>
-   <li><a href="https://www.linkedin.com/in/slu369dk/">Søren Lund</a></li>
-   <li><a href="https://www.linkedin.com/in/shaun-adkins-00775131/">Shaun Adkins</a></li>
-   <li>Susan Wood</li>
-   <li><a href="https://www.linkedin.com/in/stdownes/">Stephen Downes</a></li>
-   <li>Sven Opitz</li>
-   <li>Son Thomsen</li>
-   <li>Thomas McKernan</li>
-   <li><a href="https://www.linkedin.com/in/tractaylor/">Trac Taylor</a></li>
-   <li><a href="https://www.linkedin.com/in/tushardavebioinformatics/">Tushar Dave</a></li>
-   <li><a href="https://www.linkedin.com/in/uribruck/">Uri Bruck</a></li>
-   <li><a href="https://www.linkedin.com/in/xguzman/">Xavier Guzman</a></li>
-</ul>
-
-<ul>
-   <li><a href="https://www.linkedin.com/in/dimitar-mitov-12388982/">Dimitar Mitov</a></li>
-</ul>
-
-<ul>
-   <li>A Norwegian</li>
-   <li><a href="https://www.linkedin.com/in/bruno-contreras-moreira-6233519/">Bruno Contreras Moreira</a></li>
-   <li><a href="https://www.linkedin.com/in/emilperhinschi/">Emil Nicolaie Perhinschi</a></li>
-   <li><a href="https://www.linkedin.com/in/james-carman-0658578/">Jeremy Carman</a></li>
-   <li><a href="https://www.linkedin.com/in/johnbusco/">John Busco</a></li>
-   <li><a href="https://www.linkedin.com/in/leholarven/">Leho Larven</a></li>
-   <li><a href="https://www.linkedin.com/in/magnusenger/">Magnus Enger</a></li>
-   <li><a href="https://www.linkedin.com/in/stephen-hall-b5b3826/">Stephen Hall</a></li>
-   <li>Håkon Hægland</li>
-</ul>
+<a href="/perl-tutorial-supporters">Financial supporters of the Perl Tutorial</a>
 
 <h2>Extended eBook</h2>
 
@@ -171,6 +58,7 @@ There is a free <a href="/beginner-perl-maven-video-course">video course</a> tha
 a total of more than 5 hours of video. In addition to presenting the material it also provides explanations
 to the solutions of all the exercise.
 
+There is also a free <a href="/advanced-perl-maven-video-course">advanced Perl course</a>.
 
 <h2>Free on-line Beginner Perl Maven tutorial</h2>
 
