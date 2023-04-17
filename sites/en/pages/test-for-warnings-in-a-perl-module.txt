@@ -11,7 +11,7 @@
 There are cases when you write a Perl module that - as part of its API -
 issues warnings in certain cases.
 
-It would be nice if we could make sure this warning won't disappear
+It would be nice if we could make sure these warnings won't disappear
 when someone changes the code later trying to fix some bug or add some feature.
 
 Probably the easiest way to do this, is to write a test case that checks

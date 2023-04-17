@@ -11,10 +11,10 @@
 
 When testing a function, the best is if we can test that the function returns exactly what we expected.
 Unfortunately this is not always possible or worth the effort. For example, what if part of the return value
-is a timestamp that will be different every time we run the script.
+is a timestamp that will be different every time we run the script?
 We can <a href="/testing-session-mocking-time">mock the time</a> to pretend it is some other time 
 of the year, but even that might not work out. If we get a newer machine, the process might run faster
-and by the returned time might not be exactly the same.
+and the returned time might not be exactly the same.
 
 So we need to be more flexible with our testing.
 
@@ -36,7 +36,7 @@ If we call this subroutine it will return <hl>This page was last updated at 2014
 But it will return it only once at that exact second. (Wow, was I really awake at 4 am, or is this
 giving me the time in London?)
 
-So test code like this, won't work well:
+So test code like this won't work well:
 
 <code lang="perl">
 is( last_update(), 'This page was last updated at 2014-09-23T04:43:44', 'last_update' );
@@ -47,11 +47,11 @@ is( last_update(), 'This page was last updated at 2014-09-23T04:43:44', 'last_up
 
 So how can we test if the subroutine returns the correct value?
 (For the purpose of this example, I've included the <hl>last_update</hl> function in the test script,
-but in normal situation that would be in a real module.)
+but in normal situations that would be in a real module.)
 
 We can use a regular expression to check if the returned string contains the text we expect and we can
 just disregard the time. We can use the <hl>ok()</hl> function to check and report if the match was correct,
-but as we have already learned, there are better tools, that will be especially interesting if the test
+but as we have already learned, there are better tools that will be especially interesting if the test
 actually fails.
 
 <code lang="perl">
@@ -87,7 +87,7 @@ However there is another issue here. In this test we have basically disregarded 
 word 'at'. The function might not return a timestamp, or it might return some 4-letter words after the 'at' and
 we won't catch it with this test.
 
-The middle-ground between exact value that will never succeed and matching only the prefix that can succeed even when
+The middle-ground between exact value that will never succeed, and matching only the prefix that can succeed even when
 the code behind it is broken, is to use a more specific regex:
 
 <code lang="perl">
@@ -132,7 +132,7 @@ ok 2 - last_update like
 ok 3 - last_update full match
 </code>
 
-<h2>Displaying error</h2>
+<h2>Displaying errors</h2>
 
 So what if someone changes the <hl>last_update</hl> function to the following:
 
@@ -157,7 +157,7 @@ not ok 3 - last_update full match
 # Looks like you failed 1 test of 3.
 </code>
 
-The first two test-units have printed <hl>ok</hl> as they both have disregarded the time-stamp.
+The first two test-cases have printed <hl>ok</hl> as they have both disregarded the time-stamp.
 The 3rd test will fail and print an interesting diagnosis. It will print the actual string we have
 passed to <hl>like()</hl> as the first parameter and the regex we were trying to match.
 

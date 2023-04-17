@@ -35,7 +35,7 @@ There are two test-cases. One for a <b>GET</b> request and one for a <b>POST</b>
 <h2>GET</h2>
 
 For the <b>GET</b> request we need to put the parameters that you'd see in the URL into
-the <b>QUERY_STRING</b> environment variable. In addition we need to set the <hl>REQUEST_METHOD</hl>
+the <hl>QUERY_STRING</hl> environment variable. In addition we need to set the <hl>REQUEST_METHOD</hl>
 to <hl>GET</hl>. Then we can run our CGI script. We use <hl>./cgi.pl</hl> instead of  <hl>$^X cgi.pl</hl>
 or even just <hl>perl cgi.pl</hl> as this will ensure we use the same perl for the execution of the
 CGI script as it is used by the server.
@@ -50,7 +50,7 @@ that should be empty.
 The 3rd value returned by the <hl>capture</hl> function is the exit-code of the <hl>system</hl> call in the block.
 Normally it should be 0, indicating success.
 
-Once we got the responses, we can use the regular functions of <a href="https://metacpan.org/pod/Test::More">Test::More</a>
+Once we have the responses, we can use the regular functions of <a href="https://metacpan.org/pod/Test::More">Test::More</a>
 such as <hl>is</hl> and <hl>like</hl> to compare the result to the expected values or to check if the result contains
 something we expect.
 
@@ -65,7 +65,7 @@ of the STDIN of the cgi.pl execution.
 <h2>local</h2>
 
 <hl>local</hl> is used when setting the environment variables as that, and the curly-braces around the <hl>subtest</hl> functions
-will prevent these settings to leak between the subtest.
+will prevent these settings from leaking between the subtests.
 
 <h2>Running the test</h2>
 

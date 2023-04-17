@@ -10,7 +10,7 @@ my $worksheet = $workbook->add_worksheet();
 my @data_for_row = (1, 2, 3);
 my @table = (
     [4, 5],
-	[6, 7],
+    [6, 7],
 );
 my @data_for_column = (10, 11, 12);
 

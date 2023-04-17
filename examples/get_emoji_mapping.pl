@@ -18,10 +18,10 @@ my $tr = $page->find('table tr');
 say $tr;
 say '---';
 $page->find('table')->each(sub {
-	my $what = shift;
-	say $what;
-	say $_;
-	#exit;
+    my $what = shift;
+    say $what;
+    say $_;
+    #exit;
 });
 
 #    ->find('div.head dt')

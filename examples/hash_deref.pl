@@ -4,7 +4,7 @@ use warnings;
 use Data::Dumper qw(Dumper);
 
 my $hr = {
-   	name => 'Foo',
+    name => 'Foo',
     email => 'foo@corp.com',
 };
 

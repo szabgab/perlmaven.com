@@ -8,14 +8,14 @@
 
 =abstract start
 
-When you write test you might have tests cases that pass, but at the same time your code might generate warnings.
-Some of these warnings might harmless, but other might indicated some problem. Either in the application under test
-or in the tests.
+When you write tests you might have test cases that pass, but at the same time your code might generate warnings.
+Some of these warnings might be harmless, but others might indicated some problem. Either in the application under test
+or in the tests themselves.
 
-In addition if someone looks at the output and sees warnings, the person rightly will be worried that there might
+In addition if someone looks at the output and sees warnings, the person will be rightly worried that there might
 be issues with the code.
 
-If nothing else then that using it will fill the log files of a web server causing denial of service.
+If nothing else, warnings can fill the log files of a web server causing denial of service.
 
 The problem is that a warning does not stop the tests and so new warnings might not be noticed in a CI system.
 
@@ -23,7 +23,7 @@ The problem is that a warning does not stop the tests and so new warnings might 
 
 Of course there are tools to overcome this issue.
 
-You can ask your Test2 based tests to fail if there is any unexpected warning during the test run.
+You can ask your Test2 based tests to fail if there are any unexpected warnings during the test run.
 
 All you need to do is install and import the
 <a href="https://metacpan.org/pod/Test2::Plugin::NoWarnings">Test2::Plugin::NoWarnings</a> module.
@@ -52,7 +52,7 @@ The application under test:
 <include file="examples/test2-nowarnings/t/01-test.t">
 
 <code>
-prove -l t/01-test.t
+$ prove -l t/01-test.t
 </code>
 
 <code>
@@ -70,7 +70,7 @@ Tests are successful, but there is a warning.
 <include file="examples/test2-nowarnings/t/02-test.t">
 
 <code>
-prove -l t/02-test.t
+$ prove -l t/02-test.t
 </code>
 
 The results:
@@ -103,7 +103,7 @@ Test2::Plugin::NoWarnings in the code.
 <include file="examples/test2-nowarnings/t/03-test.t">
 
 <code>
-prove -l t/03-test.t
+$ prove -l t/03-test.t
 </code>
 
 <code>

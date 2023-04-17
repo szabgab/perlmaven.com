@@ -9,14 +9,14 @@
 
 =abstract start
 
-What we saw in the earlier articles and screencasts, was an introduction to testing with Perl. We made some nice progress but we kept using
+What we saw in the earlier articles and screencasts was an introduction to testing with Perl. We made some nice progress but we kept using
 <a href="https://metacpan.org/pod/Test::Simple">Test::Simple</a> which only provides a single <hl>ok()</hl> function with some additional features.
 
 When a test case succeeds we get a nice <hl>ok N</hl> printed, but the problem is that even when a test case fails we only get a simple <hl>not ok</hl>
 with the title of the test case, if we set one, and the line number. We could get so much more information. That's where
 <a href="https://metacpan.org/pod/Test::More">Test::More</a>, and later a lot of other testing modules come in.
 
-They allow us to be much more explicit in our testing functions and to get much more detailed error message that just <b>not ok</b>.
+They allow us to be much more explicit in our testing functions and to get much more detailed error messages than just <b>not ok</b>.
 
 =abstract end
 
@@ -69,7 +69,7 @@ not ok 3 - 2+2+2
 # Looks like you failed 1 test of 3.
 </code>
 
-We can see that the test where we add <hl>2+2+2</hl> fails, but cannot see what we were really expecting nor what we actually received.
+We can see that the test where we add <hl>2+2+2</hl> fails, but we cannot see what we were really expecting nor what we actually received.
 I know, most of us have a fairly good idea what should we expect from 2+2+2, but what if this was a more complex example and not even related to math?
 
 That's where Test::More shines.
@@ -83,8 +83,8 @@ The <hl>is()</hl> function provided by Test::More accepts 3 parameters:
   <li>The name of the test case</hl>
 </ul>
 
-It compares the actual result with the expected result using <hl>eq</hl>. If they are equal, it prints <hl>ok</hl>,
-if they are different it prints <hl>not ok</hl> and then it goes on printing the actual result and the expected result.
+It compares the actual result with the expected result using <hl>eq</hl>. If they are equal, it prints <hl>ok</hl>.
+If they are different, it prints <hl>not ok</hl>, and then it goes on to print the actual result and the expected result.
 Let's see the above test script rewritten with <hl>is()</hl>:
 
 
@@ -118,7 +118,7 @@ not ok 3 - 2+2+2
 
 This will make it much easier for an observer to understand the actual problem behind this test failure.
 
-One minor thing that you might be put-off with is the fact that <hl>is()</hl> always uses <hl>eq</hl>.
+One minor thing that you might be put-off by is the fact that <hl>is()</hl> always uses <hl>eq</hl>.
 The reason is that in almost every case, even when comparing numbers, the <hl>eq()</hl> will behave the same
 as <hl>==</hl>. In the rare cases when you really need the numerical comparison of <hl>==</hl> you can use
 the <hl>cmp_ok</hl> function that will be explained later.
@@ -159,6 +159,6 @@ ok 2
 # Looks like you failed 1 test of 2.
 </code>
 
-The first test case fails, because we expected a variable not to be <hl>undef</hl>, but it was.
+The first test case fails because we expected a variable not to be <hl>undef</hl>, but it was.
 
 

@@ -12,7 +12,7 @@ sub BUILD {
  
     print "BUILD called\n";
     my $conf = Config::Tiny->read($self->file, 'utf8')
-	    or die sprintf "Could not get configuration from '%s'", $self->file;
+        or die sprintf "Could not get configuration from '%s'", $self->file;
     $self->conf($conf);
 }
  

@@ -67,7 +67,7 @@ sub work {
 
 	print LOG "All done!\n";
 
-    $job->completed();
+	$job->completed();
 }
 
 1;

@@ -81,7 +81,7 @@ Files=1, Tests=5,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.25 cusr  0.02 csys
 Result: PASS
 </code>
 
-We can see the 5 test-units.  As you can see each one of them has a name (after the -), except the last one,
+We can see the 5 test-cases.  As you can see each one of them has a name (after the -), except the last one,
 where I left out the name. You can also see that <hl>isa_ok</hl> does not need an extra parameter
 as it automatically generates one from the second parameter.
 

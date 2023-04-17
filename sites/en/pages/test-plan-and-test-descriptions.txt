@@ -9,7 +9,7 @@
 
 =abstract start
 
-In the first steps we saw how a naive test script can lead us the <a href="/introducing-test-simple">use of Test::Simple</a>.
+In the first steps we saw how a naive test script can lead us to the <a href="/introducing-test-simple">use of Test::Simple</a>.
 This time we'll go on.
 
 =abstract end
@@ -19,7 +19,7 @@ This time we'll go on.
 Just to remind you, we have a file called <hl>lib/MyCalc.pm</hl> that we would like to test.
 (See the code in <a href="/introducing-test-simple">this article</a>.)
 
-The first thing we'll do is we are going to remove the parentheses around the parameters of <hl>ok()</hl>.
+The first thing we'll do is to remove the parentheses around the parameters of <hl>ok()</hl>.
 Now that we are using a function imported before the first call to it, we don't need the parentheses any more.
 
 <code lang="perl">
@@ -39,9 +39,9 @@ ok sum(2, 2, 2) == 6;
 
 
 
-In the last example we used Test::Simple and saw how does the output look like when the one of the tests fails.
+In the last example we used Test::Simple and saw what the output looks like when one of the tests fails.
 
-Let's comment out failing test, and adjust the expected number of tests to see how it would look like if everything
+Let's comment out the failing test, and adjust the expected number of tests to see how it would look if everything
 was ok. So <hl>test.pl</hl> now looks like this:
 
 <code lang="perl">
@@ -74,9 +74,9 @@ Nice and clean.
 Why do we really need to explicitly say how many tests we are going to run? After all Test::Simple counts
 the tests itself.
 
-Now imagine you have have test suite with hundreds of tests. One  of those fail. In order to fix the application you
-will have to run the test script several time. The whole test script, even when focusing on the single failure.
-In order to avoid that you might comment out all the later tests. You fix the failure, commit the changes to version controls,
+Now imagine you have have test suite with hundreds of tests. One of those fails. In order to fix the application you
+will have to run the test script several times. The whole test script, even when focusing on the single failure.
+In order to avoid that you might comment out all the later tests. You fix the failure, commit the changes to version control,
 and then you get distracted by your manager. It can easily happen that the test file will remain there with the majority
 of the test cases commented out.
 
@@ -99,7 +99,7 @@ ok 2
 
 There is a clear indication that something went wrong.
 
-Just for the show let's go back to the test script and change the test plan to 1 and run <hl>perl test.pl</hl> again.
+Just to show it, let's go back to the test script and change the test plan to 1 and run <hl>perl test.pl</hl> again.
 The result is very similar:
 
 <code>
@@ -115,9 +115,9 @@ tests might also indicate some issue. Probably with the test itself.
 
 <h2>Test names</h2>
 
-In addition to the counting, and the reporting of mismatch in the number of tests, the <hl>ok()</hl> function of
+In addition to the counting, and the reporting of a mismatch in the number of tests, the <hl>ok()</hl> function of
 <a href="https://metacpan.org/pod/Test::Simple">Test::Simple</a> also provides another feature. It accepts
-a second parameter which is the name or the title of the test case. It is usually a description of the specific case.
+a second parameter which is the name or title of the test case. It is usually a description of the specific case.
 In most cases it can be some text, but our case is so simple we will just indicate the call we are testing.
 
 The new test.pl file looks like this:

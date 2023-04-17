@@ -9,10 +9,10 @@
 
 =abstract start
 
-<a href="https://metacpan.org/pod/Test::More">Test::More</a> has a function called <hl>is_deeply</a>
+<a href="https://metacpan.org/pod/Test::More">Test::More</a> has a function called <hl>is_deeply</hl>
 that allows us to
 <a href="/comparing-complex-data-structures-with-is-deeply">compare and test any complex data structure</a>,
-but it can only do exact comparison.
+but it can only do exact comparisons.
 
 <a href="https://metacpan.org/pod/Test::Deep">Test::Deep</a> on the other hand provides us tools to test arbitrary data structures
 in a very flexible way.
@@ -51,26 +51,30 @@ and a list of 7 cases where there is some problem. Either there is extra data or
 or the structure was not correct. Then in our test code we go through the test cases.
 
 We expect the good ones to pass and the bad ones to fail. If you save the files as
-<hl>lib/MyTee.pm</hl> and <hl>t/tree.t</hl> then you can run the tests as
+<hl>lib/MyTree.pm</hl> and <hl>t/tree.t</hl> then you can run the tests as
 
-<hl>perl -Ilib t/testing_tree.t</hl>
+<code>
+$ perl -Ilib t/testing_tree.t
+</code>
 
 or as
 
-<hl>prove -l</hl>
+<code>
+$ prove -l
+</code>
 
 <h2>The test code</h2>
 
 <include file="examples/testing_tree/t/tree.t">
 
-First we create a hash called <hl>%end_node</hl> that is expected to match
+First we created a hash called <hl>%end_node</hl> that is expected to match
 a node without a subtree in it. We used the <hl>re</hl> function provided by
 Test::Deep to create a regex that should match.
 
 Then we created another hash called <hl>%mid_node</hl> that is expected to
 match a node with a subtree in it. It is the same as the previous hash
 with an additional key called <hl>subtree</hl> that has a value which is an array
-of element. Each element is expected to be either another <hl>%mid_tree</hl> or an <hl>%end_tree</hl>.
+of elements. Each element is expected to be either another <hl>%mid_tree</hl> or an <hl>%end_tree</hl>.
 
 The whole tree then can also be expressed as an array where each element is either a mid_node or an end_node.
 

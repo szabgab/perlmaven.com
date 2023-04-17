@@ -83,7 +83,7 @@ and there are programmers who can interact with the application under test (AUT)
 these two group of people don't necessarily overlap.
 
 If we can separate the data (input and expected output) we need for the test from the code that actually interacts with the
-application, then we can improve our environment by a lot. The domain experts can provide input in some format
+application, then we can improve our environment a lot. The domain experts can provide input in some format
 comfortable for them. It could even be an spreadsheet using Excel or Open Office.
 
 The programmers can then focus on writing the code to exercise the input data and compare the results to the expected output.

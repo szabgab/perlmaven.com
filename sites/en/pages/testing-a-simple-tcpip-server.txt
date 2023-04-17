@@ -8,7 +8,7 @@
 
 =abstract start
 
-Before we continue to develop our TCP/IP based server using Net::Server, let's take a look at how
+Before we continue to develop our TCP/IP based server using <hl>Net::Server</hl>, let's take a look at how
 we can test the server? We are going to use <a href="https://metacpan.org/pod/Test::More">Test::More</a>,
 the standard testing system of Perl and <a href="https://metacpan.org/pod/Net::Telnet">Net::Telnet</a>,
 that is a telnet client implementation in Perl.
@@ -106,14 +106,14 @@ second one was the raw TAP output.
 <h2>Explaining the test script</h2>
 
 We need to test a client-server application. For this we are going to launch our server from the
-test script in a forked process. This is useful as then we know the process id of the server and
-we can shut id down at the end of our test.
+test script in a forked process. This is useful as we then know the process id of the server and
+we can shut it down at the end of our test.
 
 We also have to deal with a couple of other issues. If we have Test::More loaded in a script
 it will expect to have a "plan" and to have test assertions in it. In our case only the client
 is a real test script, the server is not. So we have to make sure we load <hl>Test::More</hl>
 only in the parent process, which is going to be the client.
-We also have to make sure that none of the out from the server will be mixed in the output
+We also have to make sure that none of the output from the server will be mixed in with the output
 of our test script or it can confuse the <hl>Test::Harness</hl>.
 
 Let's go over the test script.
@@ -122,7 +122,7 @@ Let's go over the test script.
 
 This code <a href="/fork">forks</a>, and the child process runs the server. Because the server will print various
 things on the Standard Error channel of its console, first <hl>close STDERR</hl> in the child
-process. Then we call <hl>exec</hl> to tun the external script. This will make sure the external
+process. Then we call <hl>exec</hl> to run the external script. This will make sure the external
 script has the same process id as the child process and when the external script exits, the
 child process itself exits. For that reason there is no need to call <hl>exit</hl> in the
 child process.
@@ -158,13 +158,13 @@ END {
 <h2>Loading Test::More late and planning late</h2>
 
 Then we sleep a bit, just to let the server launch - this is a bit problematic.
-On very slow system 1 sec might not be enough for the server to launch, on fast systems this
-is a waste of time. Even if it is only one second. The good part is that it is a simple solution.
+On very slow systems 1 second might not be enough for the server to launch, on fast systems this
+is a waste of time. Even if it is only one second. The good thing is that there is a simple solution.
 
 After sleeping we load <hl>Test::More</hl>, using the <hl>require</hl> function. We don't call <hl>use</hl>
 as that would load <hl>Test::More</hl> at compile-time and thus it would be loaded even before the forking.
 Regardless of the physical location of the <hl>use</hl>-statement. <hl>require</hl> on the other hand will
-load the module during run-time. <hl>import</hl> will, well import the various testing function such as <hl>ok()</hl>
+load the module during run-time. <hl>import</hl> will, well, import the various testing functions such as <hl>ok()</hl>
 and <hl>is()</hl> and <hl>plan()</hl>.
 
 We also load <hl>Net::Telnet</hl> in the client. We don't need to import anything from there as it is an object
@@ -185,7 +185,7 @@ plan(tests => 7);
 
 <h2>Connect to the server</h2>
 
-This is just creating a <hl>Net::Telnet</hl> object and the opening a connection to the server.
+This is just creating a <hl>Net::Telnet</hl> object and then opening a connection to the server.
 The result is going to be <a href="/boolean-values-in-perl">true</a> if the connection succeeded.
 
 Nothing fancy here:
@@ -201,7 +201,7 @@ Once our connection is established, the server is supposed to send a welcome mes
 It is sometimes called a <b>banner</b>. So we tell the telnet client to wait for a sign that should be the end of the
 banner. As our application does not have a <hl>prompt</hl> we have to rely on the expected content. So we call
 the <hl>waitfor</hl> method of the <hl>Net::Telnet</hl> object with a regular expression. For historical reasons this
-needs to be regex inside a string. That's why we have both single-quote <hl>'</hl> and a slash <hl>/</hl>.
+needs to be a regex inside a string. That's why we have both single-quote <hl>'</hl> and a slash <hl>/</hl>.
 
 The telnet client collects everything the server sends to the client in a buffer. The <hl>waitfor</hl> method watches that
 buffer and tries to match the regex. Once the regex is matched the <hl>waitfor</hl> method returns two values.
@@ -213,7 +213,7 @@ for something that fits the regex between the parentheses, but when it matches i
 This means we are expecting <hl>$&</hl> and thus the <hl>$match</hl> variable to be empty and the <hl>$pre</hl> variable
 to contain the whole banner. Even the part that was in our regex.
 
-Once we have <hl>$pre</hl> and <hl>$pre</hl> we can use the regular testing functions <hl>is()</hl> to compare
+Once we have <hl>$pre</hl> and <hl>$match</hl> we can use the regular testing functions <hl>is()</hl> to compare
 them to the expected values.
 
 <code lang="perl">
@@ -224,13 +224,13 @@ them to the expected values.
 }
 </code>
 
-One more thing about this code. We put the 3 lines in a pair of curly braces because in the next few test we will want to
-use the same variables <hl>$pre</hl> and <hl>$match</hl> and we want to avoid accidentally checking an older
+One more thing about this code. We put the 3 lines in a pair of curly braces because in the next few tests we will want to
+use the same variables (<hl>$pre</hl> and <hl>$match</hl>) and we want to avoid accidentally checking an older
 version of these values in a later test case. Putting them in a block restricts their scope.
 
 <h2>Testing the echo</h2>
 
-The rest of test script is the main part of the testing, but we have covered almost all the aspects of
+The rest of the test script is the main part of the testing, but we have covered almost all the aspects of
 the test script already. One thing remains. In both of the cases below, first we call the <hl>print</hl>
 method of <hl>Net::Telnet</hl>. This simply sends its parameter to the server.
 

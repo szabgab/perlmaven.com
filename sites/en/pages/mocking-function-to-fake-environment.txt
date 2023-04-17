@@ -9,7 +9,7 @@
 
 =abstract start
 
-How can we test an application that makes calles to some external system, for example needs to access a website or a web-base API?
+How can we test an application that makes calls to some external system, for example needs to access a website or a web-base API?
 We can hit the external system for every test-run, but that will probably slow down our testing, might get us banned from the web site,
 but maybe most importantly (for the tester), the test will be unreliable. In addition, it will be impossible to test cases when the
 external web site returns some error condition.
@@ -34,7 +34,7 @@ We can write a test script call <hl>webapi.t</hl> with the following content:
 
 <include file="examples/mocking-functions/webapi.t">
 
-We check the relative popularity of Beyonce and Miley Cyrus and as we can see Beyonce is winnint 26 to 3.
+We check the relative popularity of Beyonce and Miley Cyrus and as we can see Beyonce is winning 26 to 3.
 If we run this script <hl>perl webapi.t</hl> the output will indicate that everything is ok:
 
 <code>
@@ -43,15 +43,15 @@ ok 1
 </code>
 
 Unfortunately the actual content of the website changes and thus the numbers will change. That means our test
-will soon break eve though thet actual "application" is still working correctly.
+will soon break even though the actual "application" is still working correctly.
 
-We can solve this by either disregarding the actual number in the result and check only if there was a number.
+We can solve this by either disregarding the actual number in the result and only checking if there was a number.
 This will make our test more universal, but weaker. Or, we can replace the content of the web site as returned
 by the <hl>get</hl> function of <a href="https://metacpan.org/pod/LWP::Simple">LWP::Simple</a>. 
 
 We have other issues as well. For example how can we test the behaviour of our application in the case when
-the Daily Maily web site is down or returns garbage? We could build our fake version of Daily Maily, but it
-is probably more simple to fake the <hl>get</hl> function.
+the Daily Mail web site is down or returns garbage? We could build our fake version of the Daily Mail, but it
+is probably simpler to fake the <hl>get</hl> function.
 
 That's what we are going to do. We are going to use <a href="https://metacpan.org/pod/Test::Mock::Simple">Test::Mock::Simple</a>
 to fake (or mock) the <hl>get</hl> function.
@@ -62,7 +62,7 @@ We load the module using <hl>use Test::Mock::Simple;</hl> and then
 instead of <hl>use MyWebAPI</hl> we load our module to be tested using
 <hl>my $mock = Test::Mock::Simple->new(module => 'MyWebAPI');</hl>
 
-then we replace the <hl>get</hl> function imported from LWP::Simple, but an anonymous function we provide,
+Then we replace the <hl>get</hl> function imported from <hl>LWP::Simple</hl> with an anonymous function we provide,
 which will return a simple string:
 
 <code lang="perl">
@@ -78,27 +78,27 @@ the test script:
 
 <h2>More test cases</h2>
 
-We can now add more test cases, including one when the <hl>get</hl> function returns the empty string. We just have to remember to update the <hl>plan</hl>
+We can now add more test cases, including one where the <hl>get</hl> function returns the empty string. We just have to remember to update the <hl>plan</hl>
 as well.
 
 <include file="examples/mocking-functions/more_webapi.t">
 
 <h2>Testing exception</h2>
 
-As a tester I don't know if the <hl>get</hl> function of LWP::Simple would ever throw an exception, but I wonder how would the MyWebAPI module handle it?
+As a tester I don't know if the <hl>get</hl> function of <hl>LWP::Simple</hl> would ever throw an exception, but I wonder how would the <hl>MyWebAPI</hl> module handle it?
 
 I can add the following test case:
 
 <include file="examples/mocking-functions/exception_snippet.t">
 
-As it can be seen from the result, the MyWebAPI module does not handle such cases. Is this a bug, or is this the correct behavior?
+As can be seen from the result, the <hl>MyWebAPI</hl> module does not handle such cases. Is this a bug, or is this the correct behavior?
 That's beyond the scope of this article, but now at least we know how to check what happens in this extreme case.
 
 The full example of the test script with the exception testing:
 
 <include file="examples/mocking-functions/exception_snippet.t">
 
-and the result:
+And the result:
 
 <code>
 1..2
@@ -131,7 +131,7 @@ not ok 4
 
 We can now update the module fixing this case and we can test it in a controlled environment.
 
-The full test script that will generate the error for the line wrapping bug.
+The full test script that will generate the error for the line wrapping bug:
 
 <include file="examples/mocking-functions/linewrap.t">
 

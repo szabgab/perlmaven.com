@@ -10,7 +10,7 @@
 
 Let's assume you have just started to write a new module in Perl,
 and you would like to go with the flow and start by writing some
-automated test.
+automated tests.
 
 In order to make it simple I use the good old math example.
 
@@ -34,7 +34,7 @@ root/
 </code>
 
 We created the first version of our <hl>Math.pm</hl> module, and placed it
-in <hl>lib/Math.pm</hl>
+in <hl>lib/Math.pm</hl>.
 
 <h2>The module</h2>
 
@@ -130,8 +130,8 @@ not impact the execution of the test script.
 
 Trust me, it happens to all of us.
 
-In order to ensure you perl finds the correct version of your module
-you need to tell it where to look for the module. The usual way for this
+In order to ensure your perl finds the correct version of your module
+you need to tell it where to look for the module. The usual way to do this
 is to supply the path via the <hl>-I</hl> command-line parameter,
 as <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">explained elsewhere</a>.
 
@@ -158,7 +158,7 @@ knows the modules should be in the <hl>lib/</hl> subdirectory.
 prove -l t/01_compute.t
 </code>
 
-The output is a little different then before:
+The output is a little different than before:
 
 <code>
 t/01_compute.t .. ok
@@ -190,7 +190,7 @@ call the <hl>ok()</hl> function that came with <a href="https://metacpan.org/pod
 
 This is the call that generates the <hl>1..2</hl> in the output stream.
 
-We declare this so Test::Simple will be able to notice
+We declare this so <a href="https://metacpan.org/pod/Test::Simple">Test::Simple</a> will be able to notice
 if we have not executed the same number of test units as
 we planned.
 
@@ -198,7 +198,7 @@ The <hl>ok()</hl> function is a very simple one. It gets a single scalar
 value and prints "<hl>ok</hl>" if the value was true,
 or prints "<hl>not ok</hl>", if the value was false.
 It also counts how many times it was called
-and prints this number at the end. That's how we get the output
+and prints this number at the end. That's how we get the output:
 
 <code>
 1..2

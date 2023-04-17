@@ -61,7 +61,7 @@ early exit from the test script that might hide many failing tests.
 We can run the tests using the <hl>prove</hl> command:
 
 <code>
-prove -l t/01-test.t
+$ prove -l t/01-test.t
 </code>
 
 The output will look like this:
@@ -75,7 +75,7 @@ Result: PASS
 </code>
 
 
-<h2>Showing error</h2>
+<h2>Showing errors</h2>
 
 The observer might notice that the above success was a happy (or not so happy?) coincidence.
 With almost any other pair of input values the test would fail.
@@ -88,7 +88,7 @@ in full.
 Let's run it:
 
 <code>
-prove -l t/02-test.t
+$ prove -l t/02-test.t
 </code>
 
 The result looks like this:
@@ -151,12 +151,12 @@ Result: FAIL
 </code>
 
 Not only can you see the failure, it also tells us what was the received value (GOT) and
-what was the expected value (CHECK). It also tells us that the operator use to compare the two
-values was <hl>eq</hl>. While it is not ideal for numbers, it is good in most of the cases
+what was the expected value (CHECK). It also tells us that the operator used to compare the two
+values was <hl>eq</hl>. While it is not ideal for numbers, it is good in most cases
 even when we are comparing numbers.
 
 
-In any case this pretty nice.
+In any case this is pretty nice.
 
 <h2>About Test2</h2>
 

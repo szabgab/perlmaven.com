@@ -12,7 +12,7 @@
 I am not a fan of it, as I really like when my script knows how many tests it is going to run,
 but sometimes it is really difficult to know up-front. It might depend on the number of
 files in a directory. We might be able to compute the number at the beginning of our test-script,
-but in some case this might be too difficult with a lot of value.
+but in some cases this might be too difficult.
 
 In that case we can <a href="/test-without-a-plan">test without a plan</a>
 or we can call <hl>done_testing</hl>.
@@ -47,11 +47,13 @@ ok 2 - 2+2
 1..2
 </code>
 
-The difference is that in this case we explicitely need to tell the testing environment that we have finished all the
+The difference is that in this case we explicitly need to tell the testing environment that we have finished all the
 tests. This means if we <hl>exit()</hl> early, even the line immediately before <hl>done_testing()</hl>
 we won't get the plan printed at the end, instead we'll have a comment:
 
-<hl>perl test.t</hl>
+<code>
+$ perl test.t
+</code>
 
 <code>
 ok 1 - 1+1
@@ -62,7 +64,9 @@ ok 2 - 2+2
 If we use the <a href="/prove-the-harness">harness</a> our test will be
 reported as failed:
 
-<hl>prove test.t</hl>
+<code>
+$ prove test.t
+</code>
 
 <code>
 t/test.t .. 1/? # Tests were run but no plan was declared and done_testing() was not seen.
@@ -79,7 +83,7 @@ Result: FAIL
 </code>
 
 
-We will still disregard cases when a loop that was supposed to run 1000 times, testng 1000 things
+We will still disregard cases when a loop that was supposed to run 1000 times, testing 1000 things,
 ran only 3 times, but it is a step up from <hl>no_plan</hl>.
 
 Please don't overuse it.

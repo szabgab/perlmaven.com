@@ -12,7 +12,7 @@
 We left the <a href="/refactoring-large-test-suite-separating-data-from-code">previous article</a>
 with a small issue involving lack of <a href="http://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a>-ness.
 
-The slight problem was, that we hard-coded the number of tests in the <hl>use Test::Simple tests => 5;</hl> expression.
+The slight problem was that we hard-coded the number of tests in the <hl>use Test::Simple tests => 5;</hl> expression.
 If we now add a new test-entry to the <hl>@cases</hl> array, we have to remember to update the test plan as well.
 
 Not a big issue, but we as programmers are supposed to avoid any such repetition. So how can we do that?
@@ -78,7 +78,7 @@ That's not good. Let's look for other solutions.
 
 The expected number of tests is also usually referred to as <b>the plan</b>.
 <a href="http://metacpan.org/pod/Test::Simple">Test::Simple</a> actually allows us to run
-the tests without any <b>plan</b>. We only need to tell it that we have <hl>no_plan</hl>
+the tests without any <b>plan</b>. We only need to tell it that we have <hl>no_plan</hl>.
 
 Let's try this:
 
@@ -105,7 +105,7 @@ Please note that the line <hl>1..5</hl> has been printed at the end. Effectively
 
 It is a bit funny if you think about it.
 
-Please also note, that the test (row number 3) that used to fail still fails as earlier. So what happens if someone
+Please also note that the test (row number 3) that used to fail still fails as earlier. So what happens if someone
 comments out that test-case:
 
 <code lang="perl">
@@ -124,7 +124,7 @@ ok 4 - sum(1, -1) == 0
 
 Everything is fine!
 
-On one hand it is nice that we don't need to update the test plan manually, on the other hand we won't easily notice
+On the one hand it is nice that we don't need to update the test plan manually, on the other hand we won't easily notice
 if for some reason only part of the test-cases ran and the test-script exited prematurely.
 
 In a later article we'll also cover <hl>done_testing</hl>, a slightly better tool to solve the problem. Stay tuned for that article.
@@ -167,7 +167,7 @@ ok 5 - sum(1, -1) == 0
 # Looks like you failed 1 test of 5.
 </code>
 
-The <hl>1..5</hl> moved to the front, if for some reason our test script will execute less than 5 tests, Test::Simple will complain
+The <hl>1..5</hl> moved to the front, if for some reason our test script will execute fewer than 5 tests, Test::Simple will complain
 as explained in the article about <a href="/test-plan-and-test-descriptions">test plans and descriptions</a>.
 
 Unfortunately, this solution will not notice the problem if we comment out the bad test case as we did in the previous example.

@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 BEGIN {
-	$ENV{HTTP_HOST} = 'http://perlmaven.com/';
+    $ENV{HTTP_HOST} = 'http://perlmaven.com/';
 }
 
 use Plack::Test;

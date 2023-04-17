@@ -9,7 +9,7 @@
 
 =abstract start
 
-Earlier we saw how to create a <a href="/modulino-both-script-and-module">modulino which is both a module and a script</a>.  In this example we'll see how to use this feature, to create a file that can include its own unit-tests.
+Earlier we saw how to create a <a href="/modulino-both-script-and-module">modulino which is both a module and a script</a>.  In this example we'll see how to use this feature to create a file that can include its own unit-tests.
 
 =abstract end
 
@@ -50,7 +50,7 @@ Well, maybe except of the fact that I added a deliberate error case in the <hl>a
 just so I can show you a test failure.
 
 The difference is that we also have a <hl>self_test</hl> function and then we call this function
-at the bottom of our module if it is <a href="/modulino-both-script-and-module">executed as a script</a>
+at the bottom of our module if it is <a href="/modulino-both-script-and-module">executed as a script</a>.
 
 In the <hl>self_test</hl> function we write almost exactly the same as we would write in an external
 test file discussed in the <a href="/testing">testing series</a>.
@@ -72,6 +72,6 @@ Despite this advantage of course the need to compile this extra code on every in
 
 <h2>More about self testing Modulinos</h2>
 
-Read more about self testing Modulionos in 
+Read more about self testing Modulinos in 
 <a href="https://www.amazon.com/gp/product/144939311X/?tag=szabgab-20">Mastering Perl</a> by brian d foy who coined the term.
 
