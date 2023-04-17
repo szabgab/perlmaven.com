@@ -10,7 +10,7 @@
 =abstract start
 
 If you follow through the request at the end of the <a href="/test-plan-and-test-descriptions">previous</a> part,
-you now have a tests script with lots of test. You might have noticed and got fed-up by the repetition in that code.
+you now have a test script with lots of tests. You might have noticed and got fed up with the repetition in that code.
 
 Let's try to simplify that by separating the test data from the test code.
 
@@ -20,7 +20,7 @@ Let's try to simplify that by separating the test data from the test code.
 
 <h2>Enlarged test script</h2>
 
-I know it has not been enlarged by a lot, just enough to feel, all those lines have a lot of similarity.
+I know it has not been enlarged by a lot, just enough to feel that all those lines have a lot of similarity.
 
 <code lang="perl">
 use strict;
@@ -49,7 +49,7 @@ ok sum(1, -1)   == 0,  'sum(1, -1) = 0';
 We move all the test data to an array called <hl>@cases</hl>.
 Each element of the array is itself a reference to an array. In these internal arrays,
 the first value is always the expected result, and all the other values are the input to the <hl>sum</hl> function.
-The we have a loop going over the internal array references one-by-one. In each iteration we dereference the
+Then we have a loop going over the internal array references one-by-one. In each iteration we dereference the
 array-ref and copy the values from it to <hl>$exp</hl>, the expected value, and <h>@params</hl>, the parameters to
 be passed to <hl>sum</hl>.
 
@@ -133,8 +133,8 @@ for my $c (@cases) {
 
 This is  much cleaner than we had earlier, and the data (the content of <hl>@cases</hl>) is almost
 totally separate from the code that executes it.
-There is a little issue, though that might bother you as a programmer
+There is a little issue, though, that might bother you as a programmer
 if you like <a href="http://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a>.
-Do you know what is it?
+Do you know what it is?
 
 

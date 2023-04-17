@@ -5,11 +5,11 @@ use Data::Dumper qw(Dumper);
 
 my $hr = {
     player_a => {
-   	    name => 'Foo',
+        name => 'Foo',
         email => 'foo@corp.com',
     },
     player_b => {
-   	    name => 'Bar',
+        name => 'Bar',
         email => 'bar@corp.com',
     },
 };

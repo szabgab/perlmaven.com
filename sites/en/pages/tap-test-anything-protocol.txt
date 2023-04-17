@@ -75,7 +75,7 @@ if it failed.
 
 N is a counter that in our case should go from 1 to 42 as
 declared in the header and "name of unit" is some
-arbitrary, and optional text to describe the unit.
+arbitrary, and optional, text to describe the unit.
 
 Sprinkled throughout this output there can be comments staring
 with a # sign.
@@ -103,7 +103,7 @@ So far this was a simplified description on how TAP looks like.
 For this to work we need two entities. <hl>TAP producers</hl> that
 can generate TAP output and <hl>TAP consumers</hl> that can read
 this output and provide nice reports. Actually we might need
-three parts as we also need a tool called harness to run the
+three parts as we also need a tool called a harness to run the
 test scripts. In most current implementations the consumer
 and the harness are in one tool.
 
@@ -117,7 +117,7 @@ C and even PgSQL with some more listed on
 
 <h2>TAP Producers</h2>
 
-This will be especially important for application where several
+This will be especially important for applications where several
 technologies or programming languages are involved.
 
 If you think about a web application it will require HTML, CSS,
@@ -174,7 +174,7 @@ summary created by the harness does not get much longer.
 has a command-line tool called
 <hl>prove</hl> that allows us to run tests easily.
 
-The nice thing of <b>prove</b> is that you can actually separate the
+The nice thing about <b>prove</b> is that you can actually separate the
 two steps as well. You can run run <b>prove</b> with the -a option
 and archive your TAP output for later use. That is, <b>prove</b> is
 now only used to run the tests, it does not actually
@@ -187,13 +187,13 @@ Especially to the eyes of management.
 
 <h2>TAP as HTML</h2>
 
-So you could use <a href="https://metacpan.org/pod/TAP::Formatter::HTML">TAP::Formatter::HTML</a> of Steve Purkis to generate reports like
+So you could use <a href="https://metacpan.org/pod/TAP::Formatter::HTML">TAP::Formatter::HTML</a> by Steve Purkis to generate reports like
 <a href="http://www.spurkis.org/TAP-Formatter-HTML/test-output.html">this one</a>
 
 <h2>Smolder</h2>
 
-You can also use <a href="https://metacpan.org/pod/Smolder">Smolder</a> of Michael Peters.
-to collect your TAP output and provide historical reports
+You can also use <a href="https://metacpan.org/pod/Smolder">Smolder</a> by Michael Peters
+to collect your TAP output and provide historical reports.
 
 As TAP becomes even more widespread, TAP parsers will be
 written in other languages as well, not only in Perl.

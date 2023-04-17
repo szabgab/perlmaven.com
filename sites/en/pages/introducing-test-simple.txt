@@ -9,7 +9,7 @@
 
 =abstract start
 
-Let's start by understanding the concept of automated unit test. 
+Let's start by understanding the concept of automated unit tests. 
 
 =abstract end
 
@@ -36,7 +36,7 @@ How can we test if the <hl>sum</hl> function works properly?
 
 <h2>First test script</h2>
 
-We can start by writing a script that will call the function, pass certain input to it. We can print the return values
+We can start by writing a script that will call the function, and pass certain input to it. We can print the return values
 and observe them.
 
 So we create a file called <hl>test.pl</hl> with the following content:
@@ -68,7 +68,7 @@ will find the MyCalc.pm file in the <hl>lib</hl> subdirectory.
 
 Then we have 3 examples calling the <hl>sum</hl> function and printing the result.
 
-We can run our test script by typing in <hl>perl test.pl</hl> and the output is
+We can run our test script by typing in <hl>perl test.pl</hl> and the output is:
 
 <code>
 2
@@ -108,7 +108,7 @@ The output now looks like this:
 
 <h2>Let the computer compare</h2>
 
-This is an improvement as now we don't' need the expert any more, but it still needs a lot of attention to manually compare
+This is an improvement as now we don't need the expert any more, but it still needs a lot of attention to manually compare
 the actual result with the expected result. Let's change our tests script to do that for us, and instead of the values,
 print only <hl>ok</hl> on success and <hl>not ok</hl> on failure.
 
@@ -217,7 +217,7 @@ not ok 3
 # Looks like you failed 1 test of 3.
 </code>
 
-Test::Simple required us to tell how many times we are going to call the <hl>ok()</hl> function,
+Test::Simple required us to state how many times we are going to call the <hl>ok()</hl> function,
 that's the <hl>tests => 3</hl> in the use-statement.
 In return it provided us with a counter and at the end it even reported that one out of three tests have failed.
 

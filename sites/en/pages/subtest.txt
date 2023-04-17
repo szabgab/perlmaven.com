@@ -11,19 +11,19 @@
 
 As our test script grows we face several issues.
 
-One is that most humans cannot count more than 10. So when the number of test-units passes that number
-we will constantly make mistakes of the number of tests and soon will will give it up, using a solution such as <a href="/test-without-a-plan">no_plan</a>.
+One is that most humans cannot count more than 10. So when the number of test-cases passes that number
+we will constantly make mistakes in the number of tests and will soon give up, using a solution such as <a href="/test-without-a-plan">no_plan</a>.
 
 
 =abstract end
 
 <screencast file="subtest" youtube="EOQhaIKbGkc" />
 
-Even if you are a borg, and you can count more than 10 tests, you will still be fed-up with the constant
-need to scroll up to the top of your tests script to update the test count and then find the place where you were adding the test
+Even if you are the borg, and you can count more than 10 tests, you will still be fed up with the constant
+need to scroll up to the top of your test script to update the test count and then find the place where you were adding the test
 which can be anywhere in the script.
 
-There is also the issue of test separation. A test script usually consists several rounds of the following iteration:
+There is also the issue of test separation. A test script usually consists of several rounds of the following iteration:
 
 <ul>
   <li>create the environment</li>
@@ -57,10 +57,10 @@ the name of the subtest, if it is a simple string, can be a <a href="/barewords-
 Don't forget that this is a statement that happens to end with curly braces, so you have to add a semi-colon <hl>;</hl>
 at the end.
 
-Inside the subtest, you can do anything you do in the main body of the test. In particular each subtest will count as one test
+Inside the subtest, you can do anything you would do in the main body of the test. In particular each subtest will count as one test
 in the script regardless of the number of tests inside, and each subtest has its own internal test counting with its own internal <b>plan</b>.
 So in order to keep the test-count up-to-date for the whole test, you only need to  count the number of subtests.
-To keep the test count of each subtest correct, you only need to count the tests inside the subtest which will be much easier that for
+To keep the test count of each subtest correct, you only need to count the tests inside the subtest which will be much easier than for
 the whole script. It is likely that each subtest will fit in a single screen.
 
 This solves both the incorrect test-counting and the constant scrolling.

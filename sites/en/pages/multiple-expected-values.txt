@@ -10,13 +10,13 @@
 =abstract start
 
 In our application there is a function called <hl>dice()</hl> that when called will return a whole number between 1 and 6.
-Just as a normal dice would do. How can we test this?
+Just as a normal die would do. How can we test this?
 
 =abstract end
 
 <screencast file="multiple-expected-values" youtube="gi6ICYTwkPo" />
 
-As we already know about the <a href="/testing-timeout-with-cmp-ok">cmp_ok</a> function of Test::More we can quickly write a test script using that:
+As we already know about the <a href="/testing-timeout-with-cmp-ok">cmp_ok</a> function of Test::More we can quickly write a test script using it:
 
 <code lang="perl">
 use strict;
@@ -49,12 +49,12 @@ ok 8 - smaller than 6
 
 Everything looks ok. We ship the product.
 
-Then the bug reports start to arrive. People complaining about strange behavior. As if the dice was broken.
+Then the bug reports start to arrive. People complaining about strange behavior. As if the die was broken.
 After long hours of running after the bug we decide to amend the above test script by a call to <hl>diag $value;</hl>
-to see the real values returned by the <hl>dice()</hl> function. To our surprise we see values such as 1.5, 2, 2.5 etc.
+to see the real values returned by the <hl>dice()</hl> function. To our surprise we see values such as 1.5, 2.5, etc.
 
 We can now run and fix the bug in our application, but before we do that, we should also improve our test script.
-We need a way to check if <hl>$value</hl>, returns one of the values <hl>1, 2, 3, 4, 5, 6<hl>.
+We need a way to check if <hl>$value</hl> returns one of the values: <hl>1, 2, 3, 4, 5, 6<hl>.
 
 <h2>List::MoreUtils any</h2>
 
@@ -65,7 +65,7 @@ if (grep { $value == $_ } (1, 2, 3, 4, 5, 6)) {
 }
 </code>
 
-Even though the code looks exactly the same, but it is probably more expressive to
+Even though the code looks exactly the same, it is probably more expressive to
 use the <hl>any</hl> function provided by <a href="https://metacpan.org/pod/List::MoreUtils">List::MoreUtils</a>.
 
 <code lang="perl">
@@ -110,7 +110,7 @@ ok 4 - correct number
 
 OK, so we can now see that there is some problem, but we cannot yet see the actual results.
 We could add back the <hl>diag $value;</hl> as we did earlier, but there is really no point in printing
-our the value in every case. Only in case of failure.
+out the value in every case. Only in case of failure.
 
 <h2>Provide failure diagnostics</h2>
 
@@ -152,18 +152,18 @@ ok 4 - correct number
 </code>
 
 This is much better. Now we can go and fix the <hl>dice()</hl> function and our test will work much better than earlier.
-(We are still up to our luck to actually encounter on of the problematic cases, so we might prefer to run the above
+(We are still unlikely to actually encounter one of the problematic cases, so we might prefer to run the above
 test 100 times and not only 4 times.)
 
 
-<h2>The 8 sided dice</h2>
+<h2>The 8-sided dice</h2>
 
 What if our marketing team comes to the conclusion that we need to generalize the <hl>dice()</hl> function and let it handle
-dice with all kind of sizes? As developers we'll have to provide a solution for the dice() function itself, but as a tester
+dice with all kinds of sizes? As developers we'll have to provide a solution for the dice() function itself, but as a tester
 we need to be able to test it.
 
-The decision is that calling dice($N) with any number will return a random whole number between 1 .. $N.
-Testing this is simple for specific values of $N. We just need to copy-paste our previous solution:
+The decision is that calling <hl>dice($N)</hl> with any number will return a random whole number between <hl>1 .. $N</hl>.
+Testing this is simple for specific values of <hl>$N</hl>. We just need to copy-paste our previous solution:
 
 <code lang="perl">
 use strict;
@@ -201,8 +201,8 @@ between 1 and some $N, we could change our code to say so in words:
 That would work, but we would still have a lot of copies of the same code and we have a chance to solve
 a much more interesting problem. What if the list of values is not numbers from 1 to some $N, but some
 arbitrary list of values? In that case, the information about the expected values should list all the expected values.
-In order to make it easier we put the expected values in an array and use that both with the <hl>any</hl> function
-and when printing the expected values. We have also replaced the <hl>==</hl> operator by the <hl>eq</hl> operator in the
+In order to make it easier we put the expected values in an array and use it both with the <hl>any</hl> function
+and when printing the expected values. We have also replaced the <hl>==</hl> operator with the <hl>eq</hl> operator in the
 <hl>any</hl> expression. It does not have an effect on our case of numbers between 1..$N, but it provides a more generic
 way to compare scalar values.
 

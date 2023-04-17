@@ -11,9 +11,9 @@
 
 Previously we wrote a script to test the <hl>dice()</hl> function of our new start-up company. We made some nice
 progress, but we found that we have almost exactly the same code several times in our script. We would like
-to eliminate the duplication by moving the code in a subroution called <hl>is_any</hl>.
+to eliminate the duplication by moving the code in a subroutine called <hl>is_any</hl>.
 
-<hl>is_any</hl> will receive 3 parameters: The first is the actual result of the function under test, the seconds is a reference
+<hl>is_any</hl> will receive 3 parameters: The first is the actual result of the function under test, the second is a reference
 to an array listing all the acceptable values. The third is the optional name of the test.
 
 =abstract end
@@ -52,7 +52,7 @@ sub is_any {
 }
 </code>
 
-All we did is to move the 3 lines starting by the call to <hl>ok</hl> to a new function.
+All we did is to move the 3 lines starting with the call to <hl>ok</hl> to a new function.
 Renamed the variables a bit and used the new <hl>is_any</hl> function instead of the code
 we had in the loop.
 
@@ -95,9 +95,9 @@ sub is_any {
 }
 </code>
 
-It looks nicer wven though we wrote quite some extra code by having a temorary variable called
+It looks nicer even though we wrote quite some extra code by having a temporary variable called
 </hl>$value</hl> and another one called <hl>@expected</hl> in each loop.
-Running this script will give an output that look like this:
+Running this script will give an output that looks like this:
 
 <code>
 1..8
@@ -135,19 +135,19 @@ but there is also an issue that we might first overlook.
 
 <h2>Where did this test fail?</h2>
 
-In both failures the line number reported was 33. It is clear that one of the failures was about the the 6-sided dice,
-while the other was about the 4-sided dice, but they both reported the line number where the <hl>ok</hl> function was called.'
+In both failures the line number reported was 33. It is clear that one of the failures was about the 6-sided die,
+while the other was about the 4-sided die, but they both reported the line number where the <hl>ok</hl> function was called.
 Inside the <hl>is_any</hl> subroutine. This is not very useful.
 
-If you are familiar with how some perl code can find out about it own call-stack using the <hl>caller</hl> function
-then you won't be surprised that the system behind the ok/is/like/is_deeply/etc. functions there is some code deep down
-that know exactly how far up in the call-stack was the actual function called. It even allows us to change this.
-That allows us to tell the reporting function to go one step, one call-fram further as we want to report the line
+If you are familiar with how some perl code can find out about its own call-stack using the <hl>caller</hl> function
+then you won't be surprised that with the system behind the ok/is/like/is_deeply/etc. functions there is some code deep down
+that knows exactly how far up in the call-stack was the actual function called. It even allows us to change this.
+That allows us to tell the reporting function to go one step, one call-frame, further as we want to report the line
 where the <hl>is_any</hl> function was called.
 
-All we have to do is increment the value of <hl>$Test::Builder::Level</hl> variable by one. We could use the <hl>++</hl>
+All we have to do is increment the value of the <hl>$Test::Builder::Level</hl> variable by one. We could use the <hl>++</hl>
 autoincrement operator, but then the change would affect every place where we might call ok/is/like/etc...
-We would like to limit it to the block of the <hl>is_any</hl> functions, hence we localize it using the <hl>local</hl>
+We would like to limit it to the block containing the <hl>is_any</hl> functions, hence we localize it using the <hl>local</hl>
 keyword: <hl>local $Test::Builder::Level = $Test::Builder::Level + 1;</hl>
 
 <code lang="perl">

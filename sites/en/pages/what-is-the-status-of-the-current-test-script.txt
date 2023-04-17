@@ -12,9 +12,9 @@
 The other day I looked at the tests of the <a href="https://metacpan.org/pod/Expect">Expect</a> module, and was surprised to see that it
 was still using the old-style, home-brewed testing system. Something like the one we used when we introduced
 <a href="/introducing-test-simple">test automation</a>. I wanted to convert it to use <a href="http://metacpan.org/pod/Test::More">Test::More</a>,
-but in addition to an <hl>ok()</hl> function, this home-made system had a unique functionality.
+but in addition to an <hl>ok()</hl> function, this home-made system had unique functionality.
 
-At the end of the script it printed a message something along the line "Don't worry if a test fails, this can happen.", but it only printed
+At the end of the script it printed a message something along the lines of "Don't worry if a test fails, this can happen.", but it was only printed
 if any of the ok() functions of the test script failed.
 
 I wanted to preserve this functionality.
@@ -66,11 +66,11 @@ ok 3
 
 <h2>is_passing of Test::Builder</h2>
 
-Behind all the Test::* infrastructure lies the <a href="https://metacpan.org/pod/Test::Builder">Test::Builder</a> module.
+Behind all the <hl>Test::*</hl> infrastructure lies the <a href="https://metacpan.org/pod/Test::Builder">Test::Builder</a> module.
 It does all the counting and reporting that we saw from <a href="https://metacpan.org/pod/Test::Simple">Test::Simple</a>
-and friends. We can also access the Test::Builder object during the test run. We only need 3 things:
+and friends. We can also access the <hl>Test::Builder</hl> object during the test run. We only need 3 things:
 
-Load Test::Builder with <hl>use</hl>. Call the <hl>new</hl> method. As it is a singleton, it will return the only Test::Builder object available in a process.
+Load <hl>Test::Builder</hl> with <hl>use</hl>. Call the <hl>new</hl> method. As it is a singleton, it will return the only <hl>Test::Builder</hl> object available in a process.
 Then the <hl>is_passing</hl> method will return <a href="/boolean-values-in-perl">true or false</a>. It will return <hl>true</hl>, as long
 as one of the <hl>ok()</hl> assertions has not failed.
 
@@ -123,8 +123,8 @@ ok 3
 <h2>Caveats of is_passing</h2>
 
 There are a few issues with <hl>is_passing</hl> though.
-If no tests were executed it will report success, but Test::Harness would actually report failure.
-If all the tests are successful, but the actual number of tests is smaller than the <hl>test plan</hl>, <hl>is_passing</hl>
+If no tests were executed it will report success, but <hl>Test::Harness</hl> would actually report failure.
+If all the tests are successful, but the actual number of tests is smaller than the test plan, <hl>is_passing</hl>
 will still return true. (Interestingly, if the actual number of tests is bigger than the planned number
 then it will notice the problem.)
 
@@ -132,10 +132,10 @@ Let's try some other tools.
 
 <h2>The plan: expected_tests and summary</h2>
 
-Test::Builder provide a few more methods that we can use. For example there is the <hl>expected_tests</hl> method
+<hl>Test::Builder</hl> provides a few more methods that we can use. For example there is the <hl>expected_tests</hl> method
 that returns the number of tests planned. In our case it will return 3.
 
-In addition there is also the <hl>summary</hl> method that returns an array true/false values for each ok() call
+In addition there is also the <hl>summary</hl> method that returns an array of true/false values for each <hl>ok()</hl> call
 executed so far.
 
 So we can add the following 3 lines to compare the expected number of tests with the
@@ -168,7 +168,7 @@ for ($Test->summary) { $cnt++ if $_ }
 diag $cnt == $Test->expected_tests ? 'success' : 'failure';
 </code>
 
-Unlike the <hl>is_passing</hl> method, this method will provide the correct answer even if the number of test executed
+Unlike the <hl>is_passing</hl> method, this method will provide the correct answer even if the number of tests executed
 does not match the planned number.
 
 

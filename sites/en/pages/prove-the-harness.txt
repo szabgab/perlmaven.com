@@ -12,8 +12,8 @@
 Now that we finally managed to <a href="/separating-test-data-from-test-code">separate the test data from the test code</a>,
 nothing stops us from expanding the number of tests. We can hire an expert in the "sum" function, and let her create a file full of test cases.
 
-The problem we encounter is that we are now going to be flooded with lines of success, while what are mostly interested in,
-being the critical people we are, the few failures. How can focus on the failures?
+The problem we encounter is that we are now going to be flooded with lines of success, while what we are mostly interested in,
+being the critical people we are, are the few failures. How can focus on the failures?
 
 =abstract end
 
@@ -76,7 +76,7 @@ being the critical people we are, the few failures. How can focus on the failure
 0 = 23, -23
 </code>
 
-The <hl>test.pl</hl> script looks like this. Just as we finished in the <a href="/separating-test-data-from-test-code">earlier article</a>
+The <hl>test.pl</hl> script looks like this. Just as we finished in the <a href="/separating-test-data-from-test-code">earlier article</a>:
 
 <code lang="perl">
 use strict;
@@ -108,7 +108,7 @@ for my $c (@cases) {
 }
 </code>
 
-If we now run <hl>perl test.pl</hl> we get a long output
+If we now run <hl>perl test.pl</hl> we get a long output:
 
 <code>
 1..45
@@ -162,9 +162,9 @@ ok 45 - sum(23, -23) == 0
 # Looks like you failed 1 test of 45.
 </code>
 
-Most likely, this will be longer than what our screen allows to print. The only part that we are really interested in, he part about the failure is not in our view
+Most likely, this will be longer than what fits on our screen. The only thing that we are really interested in, the part about the failure is not in our view
 any more. The only indication about the failure will be the last line, and then we need to scroll up to find the actual problem.
-Even with 45 it is already disturbing, what if there were 10,000 test cases?
+Even with 45 test cases it is already disturbing, what if there were 10,000 test cases?
 
 
 <h2>The Harness</h2>
@@ -186,7 +186,9 @@ runtests @ARGV;
 
 and then we can run our script using the harness with the following command:
 
-<hl>perl harness.pl test.pl</hl>
+<code>
+$ perl harness.pl test.pl
+</code>
 
 The test script is a parameter of the harness script.
 
@@ -210,21 +212,21 @@ Result: FAIL
 Failed 1/1 test programs. 1/45 subtests failed.
 </code>
 
-While it is more information than what we had earlier, but it is also shorter. It hides all the success printouts and only shows the failures.
-It also provides a summary, telling us that the <hl>test.pl</hl> script has failed test number 3 in it.
+While it is more information than we had earlier, it is also shorter. It hides all the success output and only shows the failures.
+It also provides a summary, telling us that the <hl>test.pl</hl> script has failed test number 3.
 There is some additional information about the time it took to run the test, but that's not relevant to us now.
 
-The important part is that we can now focus on the failure.
+The important thing is that we can now focus on the failure.
 
 
 <h2>prove</h2>
 
-While we could keep using the <hl>harness.pl</hl> written above, but actually perl, or more specifically
-<a href="https://metacpan.org/pod/Test::Harness">Test::Harness</a> module comes with a command called
+While we could keep using the <hl>harness.pl</hl> written above, perl, or more specifically
+the <a href="https://metacpan.org/pod/Test::Harness">Test::Harness</a> module, comes with a command called
 <a href="https://metacpan.org/pod/distribution/Test-Harness/bin/prove">prove</a>. It is the ultimate tool to run
 our tests.
 
-Running <hl>prove test.pl</hl> will generate the same output as the harness.pl did, except that part of it
+Running <hl>prove test.pl</hl> will generate the same output as <hl>harness.pl</hl> did, except that part of it
 will be probably red, indicating the failure. <hl>prove</hl> also has a number of command-line options.
 We'll discuss those later.
 
@@ -232,7 +234,7 @@ We'll discuss those later.
 <h2>Everything is ok with prove</h2>
 
 Now that we saw that using <hl>prove</hl> for running our tests will let us focus on the, hopefully few, errors,
-let's see what happens if all the test-case were successful?
+let's see what happens if all the test-cases were successful.
 For this we have a test script that contains 4 test cases which are all successful.
 
 <hl>prove s.pl</hl>
@@ -248,10 +250,12 @@ The result is really compact, and if you run it on on a console, it will also ha
 
 <h2>prove when plan is broken</h2>
 
-Another issue we saw earlier is when all of our tests are successful, but when we actually run less tests than we planned for.
+Another issue we saw earlier is when all of our tests are successful, but when we actually run fewer tests than we planned for.
 For this we have another test script prepared:
 
-<hl>prove few.pl</hl>
+<code>
+$ prove few.pl
+</code>
 
 <code>
 few.pl .. 1/5 # Looks like you planned 5 tests but ran 4.
@@ -268,7 +272,7 @@ Result: FAIL
 </code>
 
 The upper part of the report shows the last line of the original output, the line that indicates
-the plan was not met. Although no test-unit failed, prove, the harness reports the whole test script
+the plan was not met. Although no test-case failed, prove, the harness reports the whole test script
 as a failure. That's exactly what we want in this case.
 
 <h2>prove without a plan</h2>
@@ -284,7 +288,7 @@ Files=1, Tests=4,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.03 cusr  0.00 csys
 Result: PASS
 </code>
 
-In case of one of the tests failing, we'll get a report like this:
+In case of one of the tests fails, we'll get a report like this:
 
 <code>
 no_plan.pl .. 1/? 

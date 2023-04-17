@@ -7,7 +7,7 @@ say "Hello from the body of modulino.pl";
 main() if not caller();
 
 sub main {
-	say "Hello from main() of modulino.pl";
+    say "Hello from main() of modulino.pl";
 }
 
 1;

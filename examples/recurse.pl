@@ -8,7 +8,7 @@ traverse($path);
 
 sub traverse {
     my ($thing) = @_;
-	
+
     say $thing;
     return if not -d $thing;
     opendir my $dh, $thing or die;

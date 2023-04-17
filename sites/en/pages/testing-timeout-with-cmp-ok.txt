@@ -10,14 +10,14 @@
 =abstract start
 
 As mentioned earlier in the <a href="/testing">testing series</a>, the <hl>is()</hl> function provided by
-<a href="https://metacpan.org/pod/Test::More">Test::More</a> compares the values using string-<hl>eq</hl> which is correct in 99% of the cases.
+<a href="https://metacpan.org/pod/Test::More">Test::More</a> compares the values using the string <hl>eq</hl> operator which is correct in 99% of the cases.
 If you'd like to compare the values with the numerical <hl>==</hl> operator you can do it using the <hl>cmp_ok</hl>
-which is also provided by <a href="https://metacpan.org/pod/Test::More">Test::More</a> .
+which is also provided by <a href="https://metacpan.org/pod/Test::More">Test::More</a>.
 
 More than that, with <hl>cmp_ok</hl> you can compare the two values with any operator, so you can check if the actual value is,
 let's say, smaller than an expected value.
 
-For example when measuring timeout, we cannot expect the result to be exact on the millisecond.
+For example when measuring timeout, we cannot expect the result to be exact to the millisecond.
 
 =abstract end
 
@@ -31,7 +31,7 @@ something we compare it to.
 Let's say we have a function called <hl>wait_for_input_with_timeout</hl> that accepts a number, the number of
 seconds to wait for input before timing out. How can we test that this timeout really works?
 We cannot really expect the system to wait exactly the given amount of seconds. After all there are all kinds of other things
-going on in the computer. What we can expect is that it will time out at the given amount of seconds +- some margin.
+going on in the computer. What we can expect is that it will time out at the given amount of seconds +/- some margin.
 
 Then, based on the actual business-case, the margin will change. Our expectation for time-accuracy is quite different when
 we click on the 'like'-button on a web-page, than when we wait for feedback from our airplane navigation system.
@@ -46,10 +46,9 @@ sub wait_for_input_with_timeout {
 </code>
 
 
-In the test script then we can call the function and measure the elapsed time.
+In the test script we can then call the function and measure the elapsed time.
 
 <code lang="perl">
-
 my $start = time;
 wait_for_input_with_timeout(3);
 my $end = time;
@@ -90,7 +89,7 @@ ok 1 - process was waiting at least 2 secs
 ok 2 - process was waiting at most 3 secs
 </code>
 
-And sometimes, when the actual timeout is out of the 
+And sometimes, when the actual timeout is out of the accepted range:
 
 <code>
 1..2

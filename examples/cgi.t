@@ -27,7 +27,7 @@ subtest get => sub {
 subtest post => sub {
     plan tests => 5;
 
-	my $params = 'language=Perl&creator=TimToady';
+    my $params = 'language=Perl&creator=TimToady';
     local $ENV{REQUEST_METHOD} = 'POST';
     local $ENV{CONTENT_LENGTH} = length($params);
 

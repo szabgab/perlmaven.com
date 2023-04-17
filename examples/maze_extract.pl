@@ -5,7 +5,7 @@ sub f {
     my ($txt) = @_;
     if ($txt = ~/(\d+)/) {
         print $1;
-	}
+    }
 }
 
 f("abc def");

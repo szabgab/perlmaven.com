@@ -11,9 +11,9 @@ my $url = shift or die "Usage: $0 URL\n";
 
 my $name;
 if ($url =~ m{^https://metacpan.org/pod/([a-zA-Z0-9:]+)$}) {
-	$name = $1;
+    $name = $1;
 } elsif ($url =~ m{^https://metacpan.org/release/([a-zA-Z0-9-]+)$}) {
-	$name = $1;
+    $name = $1;
 }
 
 
@@ -30,8 +30,8 @@ say $download_link->url;
 say $file;
 my $path = "$dir/$file";
 if (-e $path) {
-	say "Already downloaded to $path";
-	exit;
+    say "Already downloaded to $path";
+    exit;
 }
 
 $w->follow_link( text_regex => qr{^Download} );

@@ -9,8 +9,8 @@
 
 =abstract start
 
-In addition to the various functions that improved versions of the <hl>ok()</hl> function such as <a href="/moving-over-to-test-more">is and isnt</a>,
-<a href="https://metacpan.org/pod/Test::More">Test::More</a> also provide a few functions to help displaying extra diagnostic messages.
+In addition to the various functions that improved on the <hl>ok()</hl> function, such as <a href="/moving-over-to-test-more">is and isnt</a>,
+<a href="https://metacpan.org/pod/Test::More">Test::More</a> also provides a few functions to help display extra diagnostic messages.
 
 =abstract end
 
@@ -102,8 +102,8 @@ Result: PASS
 
 <h2>explain</h2>
 
-<hl>explain</hl> comes in handy when we need to print out complex data structures. It is like a smart version
-a href="https://metacpan.org/pod/Data::Dumper">Data::Dumper</a>. If we give it a simple scalar it will return
+<hl>explain</hl> comes in handy when we need to print out complex data structures. It is like a smart version of
+<a href="https://metacpan.org/pod/Data::Dumper">Data::Dumper</a>. If we give it a simple scalar it will return
 the same scalar and if we give it a reference to a data structure, we get a nicely formatted version of that data
 structure. Of course we still need to print it using either <hl>diag()</hl>, or <hl>note()</hl>, but it is nice
 and compact.
@@ -176,10 +176,10 @@ beforehand.
 
 When debugging a test script it is definitely a good idea to print the content of variables using <hl>diag explain</hl>.
 
-Sometimes the test script will have strange output that look like a failure or that have windows opening and closing
+Sometimes the test script will have strange output that looks like a failure or that have windows opening and closing
 on the desktop. It would be a good idea to warn the user about these.
 
-If a test case fails the appropriate <hl>ok</hl> or <hl>is</hl> function will return false. It can be a good idea to print
+If a test case fails, the appropriate <hl>ok</hl> or <hl>is</hl> function will return false. It can be a good idea to print
 extra information using the following construct:
 
 <code lang="perl">

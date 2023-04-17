@@ -5,27 +5,27 @@ use warnings;
 use Text::Lorem;
 
 sub create_payload {
-	return {
-		fname => Text::Lorem->new()->words(1),
-		lname => Text::Lorem->new()->words(1),
-	}
+    return {
+        fname => Text::Lorem->new()->words(1),
+        lname => Text::Lorem->new()->words(1),
+    }
 }
 
 sub get_tree {
-	my ($rand, $n) = @_;
+    my ($rand, $n) = @_;
 
-	my $id = 1;
+    my $id = 1;
 
-	my @tree;
-	foreach (1 .. $n) {
-		my %node = (id => $id++, payload => create_payload() );
-		if (rand() < $rand and $n > 1) {
-			$node{subtree} = get_tree($rand, $n-1);
-		}
-		push @tree, \%node;
-	}
-	return \@tree;
-	
+    my @tree;
+    foreach (1 .. $n) {
+        my %node = (id => $id++, payload => create_payload() );
+        if (rand() < $rand and $n > 1) {
+            $node{subtree} = get_tree($rand, $n-1);
+        }
+        push @tree, \%node;
+    }
+    return \@tree;
+
 
 }
 

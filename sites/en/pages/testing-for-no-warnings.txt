@@ -19,7 +19,7 @@ There are several solution for this.
 
 As described in <a href="/test-for-expected-warnings">test for expected warnings</a> we can use the
 <hl>warning_is</hl> function provided by <a href="https://metacpan.org/pod/Test::Warn">Test::Warn</a>
-to check if a piece of code, for a specific input will emit the expected waring.
+to check if a piece of code, for a specific input, will emit the expected waring.
 
 In addition, once we made the rest of our code <b>warning-free</b>, we will want to make sure that no
 warnings start to appear. It is especially important as <a href="/always-use-warnings">new warnings are added to Perl</a>
@@ -33,18 +33,18 @@ Let's see this code:
 <include file="examples/warn/lib/MyModule.pm">
 
 I know this is a slightly contrived example, but one we can easily control and thus easily show the issue.
-Here we have a module with two function. The <hl>add</hl> function is very simple. If we did not check that we
+Here we have a module with two functions. The <hl>add</hl> function is very simple. If we did not check that we
 have enough parameters we would get the dreaded <a href="/use-of-uninitialized-value">Use of uninitialized value in addition</a> warning.
 
-In order to avoid that we first check if we have enough arguments. Emit our own warning if the number of parameter is smaller than 2
+In order to avoid that, we first check if we have enough arguments. Emit our own warning if the number of parameters is smaller than 2
 and then call <hl>return</hl>. We also check if the user has supplied too many parameters and emit a similar warning in that case.
 
 I know this is a bit of a mouthful for this function, but let's pretend this is a more important function.
 
-We also have another totally lame function that would emit a warning if our version of Perl is higher than 5.022 which is commonly know as 5.22.
+We also have another totally lame function that would emit a warning if our version of Perl is higher than 5.022 which is commonly known as 5.22.
 
 We write a test file that first tests the <hl>add</hl> function with two parameters. Then tests whether the <hl>add</hl> function emits
-the proper warning when we supply too few or too many parameters. We also have a test case that check the return value of the <hl>other</hl>
+the proper warning when we supply too few or too many parameters. We also have a test case that checks the return value of the <hl>other</hl>
 function.
 
 <include file="examples/warn/t/test_warnings.t">

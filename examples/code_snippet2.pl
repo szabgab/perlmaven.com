@@ -7,13 +7,13 @@ my @COPYRIGHTS;
 open my $COPYR, '<', $copyrightsfile or die "Can't open copyrights $copyrightsfile";
 while(<$COPYR>){
     chomp;
-	next if /^#/;
-	my ($firstname, $lastname) = split /,/;
-	next if not defined $lastname or $lastname eq '';
-	push @COPYRIGHTS,{
-		firstname => $firstname,
-		lastname => $lastname,
-	};
+    next if /^#/;
+    my ($firstname, $lastname) = split /,/;
+    next if not defined $lastname or $lastname eq '';
+    push @COPYRIGHTS,{
+        firstname => $firstname,
+        lastname => $lastname,
+    };
 }
 close $COPYR;
 

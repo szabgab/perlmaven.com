@@ -17,7 +17,7 @@ This time we are going to move it to a separate module to be useful in other tes
 <screencast file="is-any-create-test-module" youtube="p5hYAkDkc1g" />
 
 We can now reuse the <hl>is_any</hl> function in this test script, but what if we would like to use it in several scripts?
-What if we would like to allow other people in our organization to use it? And what, if we want to share it via CPAN
+What if we would like to allow other people in our organization to use it? And what if we want to share it via CPAN
 so everyone using Perl will benefit from it?
 
 In either case we need to create a module that provides this function. If we also want to share it publicly,
@@ -28,9 +28,9 @@ use Test::More tests => 8;
 use Test::Any qw(is_any);
 </code>
 
-and then in that test-script we can freely use the <hl>is_any</hl> function.
+And then in that test-script we can freely use the <hl>is_any</hl> function.
 
-As our our first step we create a standr-looking file called <hl>Test/Any.pm</hl> and move the
+As our first step, we create a standard-looking file called <hl>Test/Any.pm</hl> and move the
 <hl>is_any</hl> function there:
 
 <code lang="perl">
@@ -59,7 +59,7 @@ sub is_any {
 </code>
 
 We declared the <hl>$VERSION</hl> variable, just because it is good practice, and we also had to export the <hl>is_any</hl> function.
-For this we load the <a href="https://metacpan.org/pod/Exporter">Exporter</a> module and import the <hl>import</hl> functionn from it.
+For this we load the <a href="https://metacpan.org/pod/Exporter">Exporter</a> module and import the <hl>import</hl> function from it.
 (I know, it is a bit strange, I'll explain it in a separate article.)
 
 Then, we also need to declare which functions are we ready to export. We do this by listing them in the <hl>@EXPORT_OK</hl> variable
@@ -67,18 +67,18 @@ declared using <hl>our</hl>.
 
 That's it.
 
-Excpet that we have a problem. In our code we call the <hl>is</hl> function and the <hl>like</hl> function and they are provided by
+Except that we have a problem. In our code we call the <hl>is</hl> function and the <hl>like</hl> function and they are provided by
 <hl>Test::More</hl>. We should also load the <hl>Test::More</hl> module, but that's not really proper. That module should be only loaded
 by actual test scripts that will also set a plan.
 
-Instead, what we need to do is reach to the engine behind Test::More, and behind the plethora of Test::* modules on CPAN that provides
+Instead, what we need to do is reach to the engine behind <hl>Test::More</hl>, and behind the plethora of <hl>Test::*</hl> modules on CPAN that provides
 this functionality. Namely, we need to use <a href="https://metacpan.org/pod/Test::Builder::Module">Test::Builder::Module</a>.
 
 After loading that module we can call <hl>my $Test = Test::Builder::Module->builder;</hl> which will return the object that describes
-the currently running test. As this module is a singleton, there is alwasy going to be only one such object in every process.
+the currently running test. As this module is a singleton, there is alwas going to be only one such object in every process.
 
-This is the object that supplies the <hl>ok</hl> method and the <hl>diag</hl> method that are behind the respective funnctions of
-Test::More. Our code changes to the following:
+This is the object that supplies the <hl>ok</hl> method and the <hl>diag</hl> method that are behind the respective functions of
+<hl>Test::More</hl>. Our code changes to the following:
 
 <code lang="perl">
 package Test::Any;
@@ -110,9 +110,9 @@ sub is_any {
 1;
 </code>
 
-Please note, we don't need to adjust the <hl>Level</hl> variable any more. That's because now our is_any function is at the same level
-as the ok/is/like/etc... functions exported by Test::More. We created a function equivalent to the functions of Test::More and of
-Test::* modules.
+Please note, we don't need to adjust the <hl>Level</hl> variable any more. That's because now our <hl>is_any</hl> function is at the same level
+as the ok/is/like/etc... functions exported by <hl>Test::More</hl>. We created a function equivalent to the functions of <hl>Test::More</hl> and of
+<hl>Test::*</hl> modules.
 
 We just need to be able to distribute this and the user needs to be able to load it via a <hl>use</hl> statement.
 
