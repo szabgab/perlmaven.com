@@ -24,7 +24,7 @@ The question how to deal with that?
 
 In this example we use the <a href="https://metacpan.org/pod/Time::Piece">Time::Piece</a> module
 to parse strings represent dates. The <hl>strptime</hl> method accept a string representing
-a date and a forma string using <hl>strptime</hl> formatting instructions. It then tries to parse the
+a date and a format string using <hl>strptime</hl> formatting instructions. It then tries to parse the
 string according to the formatting instructions. In our example the formatting instructions
 <hl>"%d %b, %Y"</hl> mean we are expecting to have a number representing the days, followed
 by a string representing the month (e.g. 'Nov'), and then a 4-digit number representing the year.
@@ -73,7 +73,7 @@ eval {
      1;  # always return true to indicate success
 }
 or do {
-    # this block executes if eval did not return true (bacuse of an exception)
+    # this block executes if eval did not return true (because of an exception)
 
     # save the exception and use 'Unknown failure' if the content of $@ was already
     # removed
