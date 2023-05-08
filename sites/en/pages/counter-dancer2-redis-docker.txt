@@ -16,6 +16,14 @@ The code runs in a Docker container and we have another container running the Re
 
 =abstract end
 
+For this example to work we need the 4 files that you can see below (app.psgi, cpanfile, Dockerfile, docker-compose.yml) in a folder and you have to be in
+that forlder. You can download the individual files or you can clone the repository of the Perl Maven web site:
+
+<code>
+git clone https://github.com/szabgab/perlmaven.com.git
+cd perlmaven.com/examples/redis_counter/
+</code>
+
 Install Docker and docker-compose then run the command:
 
 <code lang="perl">
