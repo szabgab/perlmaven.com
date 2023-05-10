@@ -9,7 +9,7 @@
 
 =abstract start
 
-There are a numeber of frameworks and applications that check if there is a <b>.env</b> file in the root directory
+There are a number of frameworks and applications that check if there is a <b>.env</b> file in the root directory
 of the project and if there is one, then load it to enhance the content of the Environment variables.
 
 Perl gives access to the environment variables via the <b>%ENV</b> hash.
