@@ -2,7 +2,7 @@
 =timestamp 2023-05-29T07:30:01
 =indexes GitHub, CI
 =status show
-=author szabgab
+=author 0
 =archive 1
 =comments_disqus_enable 0
 =show_related 1
@@ -17,6 +17,8 @@ setting up a CI system has a number of benefits even for CPAN developers.
 
 =abstract end
 
+<h2>Why CI in general</h2>
+
 <ul>
     <li>A CI system can help you prevent uploading broken releases to CPAN</li>
     <li>It can give you feedback to the changes you made within minutes after you pushed them out to GitHub.</li>
@@ -25,6 +27,8 @@ setting up a CI system has a number of benefits even for CPAN developers.
     <li>You can store secrets, for-example API keys, so the tests can even access APIs that require authentication.</li>
     <li>You can even automate the release to PAUSE, if that's what you'd like to do.</li>
 </ul>
+
+<h2>Why GitHub Actions?</h2>
 
 <ul>
     <li>GitHub Actions can run on every push and every pull-request and there are other triggers as well you can configure.</li>
