@@ -55,7 +55,7 @@ version control have a CI system configured.
    <li><a href="/what-is-ci">What is Continuous Integration (CI) and why is it useful?</a></li>
    <li>What is the difference between the CI systems mentioned above and the <a href="http://www.cpantesters.org/">CPAN Testers</a></li>
    <li>What Cloud-based CI systems are available for GitHub users? GitHub Actions, Travis-CI, Appveyor, CircleCI, Azure Pipelines</li>
-   <li>What are GitHub Actions?</li>
+   <li><a href="/github-actions">Why use GitHub Actions?</a></li>
    <li>What is Travis-CI and how to set it up? See the following articles:</li>
    <li><a href="/travis-ci-for-markua-parser">Travis-CI for the Markua Parser project</a> (part of the <a href="/markua">Markua</a> series)</li>
    <li><a href="/enable-travis-ci-for-continous-integration">Enable Travis-CI for Continuous Integration</a> (part of the <a href="/becoming-a-co-maintainer">Become a co-maintainer</a> series)</li>
