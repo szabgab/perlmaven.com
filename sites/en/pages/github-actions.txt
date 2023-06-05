@@ -17,7 +17,7 @@ setting up a CI system has a number of benefits even for CPAN developers.
 
 =abstract end
 
-<h2>Why CI in general</h2>
+<h2>Why to have CI in general?</h2>
 
 <ul>
     <li>A CI system can help you prevent uploading broken releases to CPAN</li>
@@ -28,7 +28,7 @@ setting up a CI system has a number of benefits even for CPAN developers.
     <li>You can even automate the release to PAUSE, if that's what you'd like to do.</li>
 </ul>
 
-<h2>Why GitHub Actions?</h2>
+<h2>Why to use GitHub Actions?</h2>
 
 <ul>
     <li>GitHub Actions can run on every push and every pull-request and there are other triggers as well you can configure.</li>
