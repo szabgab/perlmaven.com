@@ -45,7 +45,7 @@ Take 1 or more white spaces (<hl>\s+</hl>) till the end of the string (<hl>$</hl
 <b>trim</b> remove white space from both ends of a string:
 
 <code lang="perl">
-$str =~ s/^\s+|\s+$//g
+$str =~ s/^\s+|\s+$//g;
 </code>
 
 The above two regexes were united with an an alternation mark <hl>|</hl> and we added a <hl>/g</hl> at the end to
