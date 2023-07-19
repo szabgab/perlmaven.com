@@ -1,0 +1,41 @@
+=title CPAN Monitor
+=timestamp 2015-02-01T07:30:01
+=indexes CPAN
+=status show
+=books perl
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+
+=abstract start
+
+The CPAN Monitor will send details about the distributions released in the last 24 hours and filtered
+according to various rules. Each such rule-set is called a "subscription".
+
+(These are some old plans that were never implemented.)
+
+=abstract end
+
+Each user can have several "subscriptions".
+
+Each "subscription" has a "title" that will be used in the subject line of the e-mail for easy identification of the monitor.
+
+Each "subscription" has one or more of the following rules:
+
+<ul>
+  <li><b>all</b>      - (True/False.) All the recently uploaded distributions. Probably the same as the <a href="https://metacpan.org/recent">recent on MetaCPAN</a>.</li>
+  <li><b>unique</b>   - (True/False.) Filter the distribution to include each one only once. (In case more than one version was uploaded recently.)</li>
+  <li><b>new</b>      - (True/False.) This is the first time the distribution was released. <a href="https://metacpan.org/recent?f=n">MetaCPAN also provides this</a>.</li>
+  <li><b>modules</b>  - (A list of module names.) Include distributions that provide any of the listed modules.</li>
+  <li><b>author</b>   - (A list of PAUSE ids.) Include distributions released by any of the given authors.</li>
+  <li><b>partials</b> - (A list of regexes.) Any disribution where either the distribution name or any of the provided modules match the given regex. The regex can currently use <hl>^</hl> and <hl>$</hl> anchors and anything mathching [a-zA-Z0-9].</li>
+</ul>
+
+
+<h2>Use cases</h2>
+
+<ul>
+  <li>Monitor modules you use for updates</li>
+  <li>Monitor all the modules that match <hl>^Test</hl></li>
+</ul>
+
