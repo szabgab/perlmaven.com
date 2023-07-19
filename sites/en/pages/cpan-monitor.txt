@@ -1,5 +1,5 @@
 =title CPAN Monitor
-=timestamp 2015-02-01T07:30:01
+=timestamp 2015-02-01T07:30:02
 =indexes CPAN
 =status show
 =books perl
