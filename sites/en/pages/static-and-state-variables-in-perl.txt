@@ -133,7 +133,7 @@ not accessible from the outside world because it was declared inside the block.
 Lastly, but probably most importantly, it does not get destroyed when we leave the <hl>count()</hl> function (or when
 the execution is outside the block), because the existing <hl>count()</hl> function still references it.
 
-Thus <hl>$count</hl> is effectively a static variable.
+Thus <hl>$counter</hl> is effectively a static variable.
 
 <h2>First assignment time</h2>
 
