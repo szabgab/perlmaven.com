@@ -21,6 +21,8 @@ The following script generates a number of warnings.
 
 <include file="examples/with_warnings.pl">
 
+This is the output:
+
 <code>
 "my" variable $x masks earlier declaration in same scope at examples/with_warnings.pl line 24.
 5
@@ -39,6 +41,8 @@ explicitly listing them. Like this: <code>no warnings 'uninitialized';</code>.
 The next file is exactly the same as the above, but we turned off warnings inside a functions.
 
 <include file="examples/with_no_warnings.pl">
+
+This is the output:
 
 <code>
 "my" variable $x masks earlier declaration in same scope at examples/with_no_warnings.pl line 25.
