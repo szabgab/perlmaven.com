@@ -14,27 +14,12 @@ I was working on some examples when I had to calculate <hl>factorial</hl>.  (<hl
 
 The solution without any modules:
 
-<code lang="perl">
-use strict;
-use warnings;
-use 5.010;
-
-my $f = 1;
-my $i = 1;
-my $n = 4;
-$f *= ++$i while $i < $n;
-say $f;
-</code>
-
+<include file="examples/factorial.pl">
 
 The solution when using the <hl>reduce</hl> function of the
 standard <a href="https://metacpan.org/pod/List::Util">List::Util</a> module:
 
-<code lang="perl">
-use List::Util qw(reduce);
-my $fact = reduce { $a * $b } 1 .. $n;
-say $fact;
-</code>
+<include file="examples/factorial_with_reduce.pl">
 
 <hl>reduce</hl> will take the first two values of the list on the right hand side, assign them to
 <hl>$a</hl> and <hl>$b</hl> respectively, execute the block.
@@ -42,4 +27,6 @@ say $fact;
 Then it will take the result, assign it to <hl>$a</hl> and take the next element from the list,
 assign it to <hl>$b</hl> and execute the block. This step will be repeated till the end of the list.
 
+This code has two versions. The first one is more simple, but does not handle 0! properly.
+The second works well for 0! as well.
 
