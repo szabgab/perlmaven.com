@@ -40,13 +40,8 @@ There are also people asking questions on <a href="https://www.reddit.com/r/perl
 
 <h2>Facebook</h2>
 
-There are several Perl-related Facebook pages where you can try to ask for help:
-
-<a href="https://www.facebook.com/groups/perlprogrammers/">Perl programmers</a>
-
-<a href="https://www.facebook.com/groups/perlcommunity/">Perl Community</a>
-
-<a href="https://www.facebook.com/groups/perlmonger/">Perl Mongers</a>
+There are several Perl-related Facebook pages, I can recommend the one called <a href="https://www.facebook.com/groups/perlcommunity/">Perl Community</a>
+to ask for help.
 
 <h2>Mailing lists</h2>
 
