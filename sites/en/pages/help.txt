@@ -19,9 +19,8 @@ you can contact on of the <a href="/perl-training-consulting">recommended perl c
 On the Perl Maven site there are lots of articles. Some of them might help. You can see a list of all the articles
 in the <a href="/archive">archive</a>, and you can search the keywords using the search-box in the menu bar above.
 
-If you send a question by e-mail to the authors of the Perl Maven site, or if you post your question on an unrelated
-page on the Perl Maven site, you might get lucky and get an answer. Most likely though, 
-you'll be referred back to this page to look for help in a place better suited for such questions.
+Unfortunately I rarely have time to answer questions, so send one by e-mail to the author(s) of the Perl Maven site, or posting your question on an unrelated
+page on the Perl Maven site, you'll be referred back to this page to look for help in a place better suited for such questions.
 
 
 <h2>Forums</h2>
@@ -56,7 +55,7 @@ They usually have mailing lists or some other means to communicate.
 
 <h2>Learn Perl</h2>
 
-The learn.perl.org site has some more information in its <a href="http://learn.perl.org/faq/">FAQ</a> including the
+The <a href="https://learn.perl.org/">learn.perl.org</a> site has some more information in its <a href="http://learn.perl.org/faq/">FAQ</a> including the
 <b>Perl FAQ</b> on the right-hand side of that page.
 
 <h2>IRC</h2>
