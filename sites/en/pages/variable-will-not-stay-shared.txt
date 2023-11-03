@@ -80,7 +80,7 @@ PID of child seen from parent: 48600
 
 <h2>Sharing variables</h2>
 
-When using <b>fork</b> non of the variables will remain shared. For that you need to use threading which does not work too well in Perl.
+When using <b>fork</b> none of the variables will remain shared. For that you need to use threading which does not work too well in Perl.
 
 There are ways to exchanged data between parent and child processes, but the most common way is to pass every value to the child process
 when it is created and then let the child send back data when it is done. <b>Parallel::ForkManager</b> implements this.
