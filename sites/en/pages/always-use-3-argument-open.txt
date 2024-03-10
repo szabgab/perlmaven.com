@@ -1,6 +1,6 @@
 =title Always use 3-argument open
 =timestamp 2014-04-06T23:30:01
-=indexes open
+=indexes open, utf8
 =status show
 =author szabgab
 =comments_disqus_enable 0
