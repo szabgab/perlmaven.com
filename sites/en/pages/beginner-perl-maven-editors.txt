@@ -30,6 +30,7 @@ Here are a few recommended ones.
   <li><a href="http://notepad-plus-plus.org/">Notepad++</a></li>
   <li><a href="http://www.textpad.com/">Textpad</a></li>
   <li><a href="http://www.ultraedit.com/">Ultra Edit</a></li>
+  <li><a href="https://codelobster.com/">Codelobster</a></li>
 </ul>
 
 <h2>Editor for Mac</h2>
