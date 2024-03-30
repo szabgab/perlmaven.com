@@ -11,8 +11,13 @@
 
 =abstract start
 
+All the Perl Maven Pro content is available free of charge now.
+
+<!--
 The <b>Perl Maven Pro</b> is a paid service where subscribers get 5-6 new articles and screencast every month.
 See the previous articles <a href="/archive?tag=pro">in the archive</a> and on the following pages:
+-->
+
 
 <h2>Generic Courses</h2>
 <ul>
