@@ -75,6 +75,7 @@ ul.horizontal li {
 
 <h2>Code-Maven series</h2>
 <ul>
+  <li><a href="https://rust.code-maven.com/">Rust Maven</a></li>
   <li><a href="https://code-maven.com/angularjs">Angular JS</a></li>
   <li><a href="https://code-maven.com/ansible">Ansible</a></li>
   <li><a href="https://code-maven.com/flask">Flask</a>, the Python microframework.</li>
