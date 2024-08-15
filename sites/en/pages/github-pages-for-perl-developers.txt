@@ -12,6 +12,7 @@
     <li><a href="https://jamstack.org/generators/">Static Site Generators</a></li>
     <li><a href="https://github.szabgab.com/">github.szabgab.com</a> and <a href="https://github.com/szabgab/real-szabgab.github.io">source</a></li>
     <li><a href="https://perlweekly.com/">Perl Weekly</a> and <a href="https://github.com/szabgab/perlweekly">source</a></li>
+    <li><a href="https://szabgab.com/">szabgab.com</a> and <a href="https://github.com/szabgab/szabgab.com">source</a></li>
     <li><a href="https://kantoniko.com/">Kantoniko</a> and <a href="https://github.com/kantoniko/">source</a></li>
     <li><a href="https://perl.theplanetarium.org/">Planet Perl</a> and <a href="https://github.com/PerlToolsTeam/planetperl">source</a>   <a href="https://learn.davecross.co.uk/">Learn with Dave Cross</a></li>
     <li><a href="https://forem.code-maven.com/">Forem Reports</a> and <a href="https://github.com/szabgab/forem-reports">source</a></li>
