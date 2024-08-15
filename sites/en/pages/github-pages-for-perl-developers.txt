@@ -1,0 +1,21 @@
+=title GitHub Pages for Perl developers
+=timestamp 2024-08-15T20:30:01
+=indexes PerlMaven
+=status show
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+<ul>
+    <li><a href="https://github.szabgab.com/">github.szabgab.com</a> and <a href="https://github.com/szabgab/real-szabgab.github.io">source</a></li>
+    <li><a href="https://perlweekly.com/">Perl Weekly</a> and <a href="https://github.com/szabgab/perlweekly">source</a></li>
+    <li><a href="https://kantoniko.com/">Kantoniko</a> and <a href="https://github.com/kantoniko/">source</a></li>
+    <li><a href="https://perl.theplanetarium.org/">Planet Perl</a> and <a href="https://github.com/PerlToolsTeam/planetperl">source</a>   <a href="https://learn.davecross.co.uk/">Learn with Dave Cross</a></li>
+    <li><a href="https://forem.code-maven.com/">Forem Reports</a> and <a href="https://github.com/szabgab/forem-reports">source</a></li>
+    <li><a href="https://events.code-maven.com/">(Rust) virtual events</a> and <a href="https://github.com/szabgab/virtual-events">source</a></li>
+    <li><a href="https://ruby-digger.code-maven.com/">ruby Digger</a> and <a href="https://github.com/szabgab/ruby-digger">source</a></li>
+    <li><a href="https://github.com/szabgab/monitor/">monitor</a></li>
+    <li><a href=""></a> and <a href="">source</a></li>
+</ul>
+
