@@ -8,6 +8,8 @@
 =show_related 1
 
 <ul>
+    <li><a href="https://jekyllrb.com/">Jekyll</a></li>
+    <li><a href="https://jamstack.org/generators/">Static Site Generators</a></li>
     <li><a href="https://github.szabgab.com/">github.szabgab.com</a> and <a href="https://github.com/szabgab/real-szabgab.github.io">source</a></li>
     <li><a href="https://perlweekly.com/">Perl Weekly</a> and <a href="https://github.com/szabgab/perlweekly">source</a></li>
     <li><a href="https://kantoniko.com/">Kantoniko</a> and <a href="https://github.com/kantoniko/">source</a></li>
@@ -16,6 +18,6 @@
     <li><a href="https://events.code-maven.com/">(Rust) virtual events</a> and <a href="https://github.com/szabgab/virtual-events">source</a></li>
     <li><a href="https://ruby-digger.code-maven.com/">ruby Digger</a> and <a href="https://github.com/szabgab/ruby-digger">source</a></li>
     <li><a href="https://github.com/szabgab/monitor/">monitor</a></li>
-    <li><a href=""></a> and <a href="">source</a></li>
+    <li><a href="https://rust.code-maven.com/">Rust Maven</a> and <a href="https://ssg.code-maven.com/">source</a></li>
 </ul>
 
