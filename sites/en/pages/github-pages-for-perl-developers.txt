@@ -39,4 +39,8 @@ but I need that repo for future presentations so I renamed the repository to <a 
 </ul>
 
 
+<h2>Other sites</h2>
 
+<ul>
+    <li><a href="https://slides.code-maven.com/">slides</a></li>
+</ul>
