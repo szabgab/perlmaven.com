@@ -1,0 +1,11 @@
+=title GitHub Actions for Perl projects
+=timestamp 2024-08-05T07:30:01
+=indexes GitHub
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=comments_disqus_enable 0
+=show_related 1
+
+<screencast file="github-actions-for-perl-projects-2024-08-04.mp4" youtube="nE7jdKPEkTM" />
