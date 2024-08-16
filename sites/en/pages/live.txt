@@ -1,0 +1,18 @@
+=title Perl Maven Live presentations
+=timestamp 2025-08-16T07:30:01
+=indexes Zoom, presentations
+=status show
+=author szabgab
+=archive 1
+=description Zoom-based live presentations and their video recordings
+=comments_disqus_enable 0
+=show_related 1
+
+Live on-line presentations and video recordings. See the full list of the <a href="https://workshops.code-maven.com/">Code Maven live events</a>
+
+
+<ul>
+    <li>2024.06.13 <a href="/getting-started-with-docker-for-perl-developers">Getting Started with Docker for Perl Developers</a></li>
+    <li>2024.08.04 <a href="/github-actions-for-perl-projects">GitHub Actions for Perl projects</a></li>
+    <li>2024.08.15 <a href="/github-pages-for-perl-developers">GitHub pages for Perl developers</a></li>
+</ul>
