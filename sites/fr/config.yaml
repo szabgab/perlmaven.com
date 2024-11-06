@@ -59,6 +59,10 @@ authors:
   - name: Jeffrey Thalhammer
     nickname: thalhammer
     picture: thalhammer.png
+  - name: Darin McBride
+    nickname: dmcbride
+    picture: dmcbride.png
+
 
 # The following section defines the menu. The "start" will be left-aligned the "end" will be right aligned.
 # TODO: Once we implement rtl site this will probably be the other direction too

@@ -1,5 +1,5 @@
 ---
-title: "le livre numérique "Test Automation using Perl""
+title: "le livre numérique 'Test Automation using Perl'"
 timestamp: 2013-04-19T10:30:06
 description: "livre numérique pour ceux qui aimeraient tester leur propre code ou aimerait écrire des tests automatisés pour n'importe quelle application logicielle"
 types:

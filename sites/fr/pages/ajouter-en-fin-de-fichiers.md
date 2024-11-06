@@ -5,7 +5,7 @@ tags:
   - files
   - append
   - open
-  - >>
+  - ">>"
 published: true
 original: appending-to-files
 books:

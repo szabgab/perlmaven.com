@@ -6,7 +6,7 @@ tags:
   - tableaux
   - longueur
   - taille
-  - @
+  - "@"
   - foreach
   - Data::Dumper
   - scalar

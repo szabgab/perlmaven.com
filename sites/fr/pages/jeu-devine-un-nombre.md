@@ -1,5 +1,5 @@
 ---
-title: "Jeu "Devine un nombre""
+title: "Jeu 'Devine un nombre'"
 timestamp: 2013-05-26T22:45:17
 tags:
   - rand
