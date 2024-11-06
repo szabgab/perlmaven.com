@@ -3,9 +3,6 @@ title: "字符串：引起，内插替换和转义"
 timestamp: 2013-05-28T09:11:42
 tags:
   - strings
-  - '
-  - "
-  - \
   - escape character
   - interpolation
   - quote

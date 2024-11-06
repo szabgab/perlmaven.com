@@ -9,11 +9,11 @@ tags:
   - le
   - ge
   - ==
-  - !=
-  - <
-  - >
-  - <=
-  - >=
+  - "!="
+  - "<"
+  - ">"
+  - "<="
+  - ">="
 published: true
 original: comparing-scalars-in-perl
 books:
