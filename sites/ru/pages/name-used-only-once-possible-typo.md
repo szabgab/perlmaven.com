@@ -1,5 +1,5 @@
 ---
-title: "Name "main::x" used only once: possible typo at ..."
+title: "Name 'main::x' used only once: possible typo at ..."
 timestamp: 2013-07-09T08:00:03
 tags:
   - warnings

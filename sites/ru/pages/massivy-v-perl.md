@@ -2,7 +2,7 @@
 title: "Perl Arrays"
 timestamp: 2013-12-21T12:00:02
 tags:
-  - @
+  - "@"
   - array
   - arrays
   - length

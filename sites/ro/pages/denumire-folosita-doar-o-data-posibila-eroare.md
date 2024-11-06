@@ -1,5 +1,5 @@
 ---
-title: "Denumirea "main::x" este folosită doar o dată: posibilă eroare la ..."
+title: "Denumirea 'main::x' este folosită doar o dată: posibilă eroare la ..."
 timestamp: 2013-12-14T20:31:10
 tags:
   - warnings

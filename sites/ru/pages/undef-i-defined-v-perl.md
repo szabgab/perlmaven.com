@@ -1,5 +1,5 @@
 ---
-title: "undef, начальное значение и функция "defined" в Perl"
+title: "undef, начальное значение и функция 'defined' в Perl"
 timestamp: 2013-09-05T12:00:01
 tags:
   - undef

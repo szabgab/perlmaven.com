@@ -1,5 +1,5 @@
 ---
-title: "Cuvinte "goale" în Perl"
+title: "Cuvinte 'goale' în Perl"
 timestamp: 2013-12-14T10:45:56
 tags:
   - bareword

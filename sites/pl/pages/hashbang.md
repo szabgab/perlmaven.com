@@ -2,7 +2,7 @@
 title: "Linia hash-bang czyli jak uruchamiać skrypty Perla pod Linuksem"
 timestamp: 2015-06-24T19:03:01
 tags:
-  - #!
+  - "#!"
   - -w
   - -t
   - -T

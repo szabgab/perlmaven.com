@@ -1,5 +1,5 @@
 ---
-title: "Barewords - "голые" слова в Perl"
+title: "Barewords - 'голые' слова в Perl"
 timestamp: 2013-07-25T13:00:01
 tags:
   - bareword

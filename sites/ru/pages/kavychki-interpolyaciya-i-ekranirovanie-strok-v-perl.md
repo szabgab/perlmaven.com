@@ -3,9 +3,6 @@ title: "Строки в Perl: кавычки, интерполяция и экр
 timestamp: 2013-09-06T16:00:01
 tags:
   - strings
-  - '
-  - "
-  - \
   - escape character
   - interpolation
   - quote
