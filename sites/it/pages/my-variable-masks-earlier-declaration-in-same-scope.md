@@ -1,5 +1,5 @@
 ---
-title: ""my" variable masks earlier declaration in same scope"
+title: "'my' variable masks earlier declaration in same scope"
 timestamp: 2013-06-23T18:00:01
 tags:
   - my

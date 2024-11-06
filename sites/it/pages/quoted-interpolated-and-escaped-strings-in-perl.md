@@ -3,9 +3,6 @@ title: "Stringhe in Perl: quotate, interpolate e con escape"
 timestamp: 2013-07-26T20:00:00
 tags:
   - stringhe
-  - '
-  - "
-  - \
   - carattere di escape
   - interpolazione
   - quotatura
