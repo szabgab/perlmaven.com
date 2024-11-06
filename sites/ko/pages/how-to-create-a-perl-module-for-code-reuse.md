@@ -6,8 +6,8 @@ tags:
   - use
   - Exporter
   - import
-  - @INC
-  - @EXPORT_OK
+  - "@INC"
+  - "@EXPORT_OK"
   - $0
   - dirname
   - abs_path

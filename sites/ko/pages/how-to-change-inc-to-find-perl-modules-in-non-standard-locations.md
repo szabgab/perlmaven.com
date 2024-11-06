@@ -2,7 +2,7 @@
 title: "일반적이지 않은 위치에서 펄 모듈을 찾기 위해 어떻게 @INC를 수정 하는가"
 timestamp: 2013-06-04T15:30:00
 tags:
-  - @INC
+  - "@INC"
   - use
   - PERLLIB
   - PERL5LIB

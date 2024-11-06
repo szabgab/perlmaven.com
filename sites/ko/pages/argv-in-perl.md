@@ -2,9 +2,9 @@
 title: "Perl의 @ARGV"
 timestamp: 2013-07-22T23:00:00
 tags:
-  - @ARGV
-  - $ARGV[]
-  - $0
+  - "@ARGV"
+  - "$ARGV[]"
+  - "$0"
   - shift
   - argc
 published: true

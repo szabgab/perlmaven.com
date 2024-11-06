@@ -5,9 +5,9 @@ tags:
   - warnings
   - state
   - __WARN__
-  - %SIG
-  - $SIG{}
-  - local 
+  - "%SIG"
+  - "$SIG{}"
+  - local
 published: true
 original: how-to-capture-and-save-warnings-in-perl
 books:

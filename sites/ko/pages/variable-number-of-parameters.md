@@ -3,7 +3,7 @@ title: "Perl 서브루틴의 가변 길이 파라메터"
 timestamp: 2013-07-04T01:00:00
 tags:
   - sub
-  - @_
+  - "@_"
 published: true
 original: variable-number-of-parameters
 books:

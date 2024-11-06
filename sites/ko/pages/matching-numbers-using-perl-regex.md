@@ -4,8 +4,8 @@ timestamp: 2014-05-20T14:00:00
 tags:
   - ^
   - +
-  - []
-  - *
+  - "[]"
+  - "*"
 published: true
 original: matching-numbers-using-perl-regex
 author: szabgab
