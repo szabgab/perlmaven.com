@@ -1,6 +1,6 @@
 ---
 title: "Perl lernilo"
-timestamp: 2012-07-06T11: 45:56
+timestamp: 2012-07-06T11:45:57
 description: "Libera Perl Tutorial por homoj, kiuj bezonas por subteni ekzistantaj Perl kodo, por homoj kiuj uzas Perl por malgrandaj skriptoj, kaj por Perl apliko disvolvigo."
 types:
   - trejnado

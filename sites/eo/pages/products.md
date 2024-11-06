@@ -1,6 +1,6 @@
 ---
 title: "Perl Maven Products"
-timestamp: 2012-07-17T11: 45:56
+timestamp: 2012-07-17T11:45:56
 description: "Perl Maven produktojn: e-libroj, filmetoj kursoj, sur-ejo trejnado klasoj"
 types:
   - trejnado
