@@ -2,7 +2,7 @@
 title: "如何更改 @INC 來找到不位在標準目錄的 Perl 模組"
 timestamp: 2013-05-11T06:01:02
 tags:
-  - @INC
+  - "@INC"
   - use
   - PERLLIB
   - PERL5LIB
