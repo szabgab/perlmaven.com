@@ -3,9 +3,6 @@ title: "מחרוזות בפרל: בגרשיים, באינטרפולציה, וע�
 timestamp: 2013-07-14T23:00:00
 tags:
   - strings
-  - '
-  - "
-  - \
   - escape character
   - interpolation
   - quote

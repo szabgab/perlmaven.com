@@ -2,9 +2,9 @@
 title: "מערך @ARGV בפרל"
 timestamp: 2014-02-02T16:20:00
 tags:
-  - @ARGV
-  - $ARGV[]
-  - $0
+  - "@ARGV"
+  - "$ARGV[]"
+  - "$0"
   - shift
   - argc
 published: true

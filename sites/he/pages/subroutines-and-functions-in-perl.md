@@ -6,8 +6,8 @@ tags:
   - return
   - subroutine
   - function
-  - @_
-  - $_[0]
+  - "@_"
+  - "$_[0]"
 published: true
 original: subroutines-and-functions-in-perl
 books:
