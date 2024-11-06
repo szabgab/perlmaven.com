@@ -1,5 +1,5 @@
 ---
-title: "Instalando o Perl, imprimindo “Olá Mundo", Segurança (use strict, use warnings)"
+title: "Instalando o Perl, imprimindo 'Olá Mundo', Segurança (use strict, use warnings)"
 timestamp: 2013-03-12T18:45:56
 tags:
   - strict

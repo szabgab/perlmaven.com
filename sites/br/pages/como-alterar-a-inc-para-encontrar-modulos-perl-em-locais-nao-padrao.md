@@ -2,7 +2,7 @@
 title: "Como alterar a @INC para encontrar módulos Perl em locais não padrão?"
 timestamp: 2013-05-30T19:10:00
 tags:
-  - @INC
+  - "@INC"
   - use
   - PERLLIB
   - PERL5LIB

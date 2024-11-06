@@ -6,7 +6,7 @@ tags:
   - keys
   - value
   - associative
-  - %
+  - "%"
   - =>
   - fat arrow
   - fat comma

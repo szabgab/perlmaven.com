@@ -1,5 +1,5 @@
 ---
-title: "Variável "my" mascara declaração anterior no mesmo escopo"
+title: "Variável 'my' mascara declaração anterior no mesmo escopo"
 timestamp: 2014-11-12T22:01:56
 tags:
   - my

@@ -3,9 +3,7 @@ title: "Strings em Perl: entre aspas, interpoladas e escapadas"
 timestamp: 2013-05-31T17:15:03
 tags:
   - strings
-  - '
-  - "
-  - \
+  - "'"
   - escape character
   - interpolation
   - quote

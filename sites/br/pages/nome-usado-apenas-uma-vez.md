@@ -1,5 +1,5 @@
 ---
-title: "Nome "main::x" usado apenas uma vez: possível erro em ..."
+title: "Nome 'main::x' usado apenas uma vez: possível erro em ..."
 timestamp: 2014-02-21T00:50:10
 tags:
   - warnings

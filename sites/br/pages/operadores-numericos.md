@@ -3,17 +3,17 @@ title: "Operadores Numéricos"
 timestamp: 2014-10-29T09:28:00
 tags:
   - +
-  - -
-  - *
+  - "-"
+  - "*"
   - /
-  - %
+  - "%"
   - ++
   - --
   - +=
-  - *=
-  - -=
+  - "*="
+  - "-="
   - /=
-  - %=
+  - "%="
 published: true
 original: numerical-operators
 books:

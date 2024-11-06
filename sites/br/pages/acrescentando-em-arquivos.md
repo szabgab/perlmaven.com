@@ -6,7 +6,7 @@ tags:
   - append
   - acrescentar
   - open
-  - >>
+  - ">>"
 published: true
 original: appending-to-files
 books:

@@ -11,8 +11,8 @@ tags:
   - .
   - sigil
   - $
-  - @
-  - %
+  - "@"
+  - "%"
   - FATAL warnings
 published: true
 original: scalar-variables
