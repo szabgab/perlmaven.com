@@ -3,7 +3,7 @@ title: "Perl Dizileri"
 timestamp: 2015-03-29T20:45:02
 description: "perl array denoted with @ - creating, checking size, iterating over the elements, accessing elements"
 tags:
-  - @
+  - "@"
   - array
   - arrays
   - length

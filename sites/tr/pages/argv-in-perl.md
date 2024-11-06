@@ -2,8 +2,8 @@
 title: "@ARGV in Perl"
 timestamp: 2013-12-10T08:13:10
 tags:
-  - @ARGV
-  - $ARGV[]
+  - "@ARGV"
+  - "$ARGV[]"
   - $0
   - shift
   - argc
