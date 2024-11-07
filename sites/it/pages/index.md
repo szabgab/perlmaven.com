@@ -1,5 +1,5 @@
 ---
-title: "Perl Maven in Italian "
+title: "Perl Maven in Italian"
 timestamp: 2013-06-02T00:01:23
 published: true
 archive: false
