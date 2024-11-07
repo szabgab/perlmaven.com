@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -19,7 +19,7 @@ over more than one lines. For example:
 is Hot. ....
 </code>
 
-(Probably this is going to be funny only to programmers who are Start Wars fans and who have a Hungarian accent in
+(Probably this is going to be funny only to programmers who are Star Wars fans and who have a Hungarian accent in
 English as I do. Or maybe not even to them.)
 
 In any case you can escape now and read more about <a href="http://en.wikipedia.org/wiki/Jabba_the_Hutt">Jabba the Hutt</a> or about <a href="https://code-maven.com/java">Java</a>.
@@ -126,5 +126,43 @@ an object. We can then call the <hl>slurp</hl> or <hl>slurp_utf8</hl> methods on
 
 Neither of these modules come with the standard Perl distribution so you will need to install them first.
 There are a number of ways to <a href="/how-to-install-a-perl-module-from-cpan">install a Perl module from CPAN</a>.
+
+<h2>Comments</h2>
+
+As so far, it is not explained how this works:
+$data =~ s/Java\s+is\s+Hot/Jabba The Hutt/g;
+
+=~ -> regex matches $data
+s -> substitution, its syntax is s/<regex_to_match>/<substitution>/<modifiers>
+\s+ -> One or more whitespaces
+g -> Globally match the pattern repeatedly in the string
+See the perl documentation for more info https://perldoc.perl.org/perlre
+
+<hr>
+
+Once the file is slurped into $data is it possible to read line by line from $data?
+
+You can split it by newline and do that, but I wonder, if you'd like to process it line-by-line then why read the whole file in memory?
+
+Good point. I can explain why I wanted to do this in this way: I'm not a "real" programmer and I use mainly R (and SQL) where I usually read files into a so called dataframe (=table). From there I can work on this table, for example, selecting only rows which fullfills some criteria. So, now I learned that I have reconsider my habits. I will read line-by-line and create arrays or hashes according to the row criteria. By the way thank you very much for your blog.
+
+
+<hr>
+
+Please do not recommend File::Slurp. Use File::Slurper instead.
+
+<hr>
+
+In examples 2 and 3 the close $fh isn't needed. Perl will close the $fh when it reaches end of the scope.
+
+<hr>
+
+I prefer Path::Class slurp
+
+
+use Path::Class qw{file};
+my $content = file("filename")->slurp();
+my @lines = file("filename")->slurp(chomp=>1);
+
 
 
