@@ -3,9 +3,6 @@ menu:
     menu:
       - title: Perl Tutorial
         url: /perl-tutorial
-      - title: Pro
-        url: /pro
-      - login: 1
       - title: Books
         url: /books
   - dir: right
