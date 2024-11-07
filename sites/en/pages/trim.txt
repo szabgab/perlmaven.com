@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -118,4 +118,17 @@ my $z = " abc ";
 trim $z;
 printf "<%s>\n", $z;       # <abc>
 </code>
+
+<h2>Comments</h2>
+
+Suppose I have a row of:
+A, 1,2,3,4
+how can i get rid of A and create new array with only numeric values?
+
+
+Is that an array? A string? Learn about regexes Learn about CSV.
+
+my $str = 'A, 1,2,3,4';
+my @digits = $str =~ /\d/g;
+
 
