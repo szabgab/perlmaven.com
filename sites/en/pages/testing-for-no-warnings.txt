@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -213,3 +213,7 @@ Result: FAIL
 Feel free to use either of these solutions. I personally still prefer the use of plans, but the <hl>done_testing</hl>
 also has its place and the <hl>Warn::FailWarnings</hl> module has nicer reports.
 
+<h2>Comments</h2>
+
+Another advanced warning usage is custom categories definition. Then you could enable a fine-grained exception system based on your requirements and make warn statements FATAL in your test suites.
+https://perldoc.perl.org/warnings#Reporting-Warnings-from-a-Module

@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -66,5 +66,19 @@ We would want the command line to find them:
 <code>
 export PATH=venv/bin/:$PATH
 </code>
+
+
+<h2>Comments</h2>
+
+Also check out carton... A much more robust way of doing this.
+
+<hr>
+
+Does not work: I exactly followed your instructions.
+
+$ cpanm -l venv/ --installdeps .
+--> Working on .
+Configuring /Users/tperiasa/work/perl-dev ... OK
+find_module_by_name() requires a package name at /usr/local/bin/cpanm line 35.
 
 
