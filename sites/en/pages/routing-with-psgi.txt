@@ -4,7 +4,7 @@
 =status show
 =books psgi
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -121,5 +121,10 @@ sub get_html {
     }
 }
 </code>
+
+
+<h2>Comments</h2>
+
+Would be nice to list (and compare?) here also url dispatching modules from CPAN like Path::Router, Path::Dispatcher, HTTP::Router, Router::Simple, Router::Boom, Router::R3, ....
 
 

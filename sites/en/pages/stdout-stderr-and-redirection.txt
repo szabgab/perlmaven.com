@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -197,4 +197,8 @@ after
 
 
 
+<h2>Comments</h2>
 
+How to STDOUt to a display device? e.g. on a dual monitor, is it possible?
+
+STDOUT is connected to the cmd or terminal window. It does not itself open or place a new window. So wherever you have your cmd/terminal open that's where STDOUT will be.

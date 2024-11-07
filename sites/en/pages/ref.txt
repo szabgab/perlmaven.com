@@ -3,7 +3,7 @@
 =indexes ref, SCALAR, ARRAY, HASH, CODE, REF, GLOB, LVALUE, FORMAT, IO, VSTRING, Regexp
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -313,3 +313,6 @@ say ref $r;               # Class::Name
 The documentation of <a href="https://metacpan.org/pod/perlref">perlref</a> has a lot more details about the <hl>ref</hl>
 function and about references in general.
 
+<h2>Comments</h2>
+
+In reference to "Blessed references" it is important to note; that any reference can be blessed in a package not just hash references.

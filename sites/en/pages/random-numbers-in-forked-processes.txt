@@ -3,7 +3,7 @@
 =indexes fork, rand, srand, Parallel::ForkManager
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -168,4 +168,9 @@ Child  13051 generated 0.877628553033905
 Let me just repeat here what the documentation of <hl>rand</hl> also says:
 
 <b>"rand()" is not cryptographically secure.  You should not rely on it in security-sensitive situations.</b>
+
+<h2>Comments</h2>
+
+Is seeding srand with time+$$: the best option? As time is in seconds (and therefore potentially different by 1 for child processes) and process number is often going to be sequential for child processes, you are possibly going to occasionally get child processes seeded with the same number.
+
 

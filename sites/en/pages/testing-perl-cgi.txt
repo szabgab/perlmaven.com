@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -101,4 +101,20 @@ local $ENV{HTTP_USER_AGENT} =
 local $ENV{PATH_INFO}       =
 </code>
 
+<h2>Comments</h2>
 
+There is also CGI::Emulate::PSGI ( https://metacpan.org/pod/CGI::Emulate::PSGI ) which you can use to easily port existing CGI code into a PSGI environment - where testing and debugging immediately becomes a lot easier.
+
+
+<hr>
+
+oh, dearest old command line CGI testing :)
+
+too bad most of the time a lot of work is done in the web server configuration or in rewrite rules or in load balancers or in reverse proxies etc.
+
+the only right way to test CGI is with LWP
+
+
+<hr>
+
+Another module for absolute beginners is https://metacpan.org/dist/CGI-Echo ,  but I'd only use it to explain the transfer of data between the client and the server. I.e. the aim is not to think in terms of the CGI module. From there perhaps introducing a HTML templating module would come next, to stop them reinventing the wheel.

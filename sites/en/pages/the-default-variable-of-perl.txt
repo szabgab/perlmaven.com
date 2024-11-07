@@ -3,7 +3,7 @@
 =indexes Perl, $_, scalar, default, variable, topic
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -175,5 +175,37 @@ There are several cases where you can't really avoid, and you have to use <hl>$_
 explicitly. These are the <a href="/filtering-values-with-perl-grep">grep</a>
 and <a href="/transforming-a-perl-array-using-map">map</a> function, and the
 other similar ones, such as <a href="/filtering-values-with-perl-grep">any</a>.
+
+<h2>Comments</h2>
+
+short and up to the point description
+
+<hr>
+
+I use `foreach (my $inputLine = <stdin>)` and B::Lint still complains `Implicit use of $_ in foreach`.
+
+That should be while and not foreach.
+<hr>
+
+I'm learning Perl slowly from your website, I'm new to scripting
+I have this line in one of the script "print "$number\t", $name, "\n" if($number =~ /^[0-9]/) ;" when I run it prints the results on screen all good, but I want to modify it to print the results to a file ( results.csv or results.txt)
+I would really appreciated if you can help as this is my first month of scripting
+
+foreach( @numberCsv ){
+my $number=$$_[0];
+my $name=$names{ $classifier->($number) };
+print "$number\t", $name, "\n" if($number =~ /^[0-9]/) ;
+}
+
+
+
+You need open a file for writing https://perlmaven.com/begin... and then print to the filehandle instead of just print.
+
+You might also want to use a named variable instead of $_
+foreach my $row (@numberCsV) {
+}
+
+
+
 
 

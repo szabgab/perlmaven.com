@@ -5,7 +5,7 @@
 =status show
 =books search_cpan_org, psgi
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 =show_related 0
 
 =abstract start

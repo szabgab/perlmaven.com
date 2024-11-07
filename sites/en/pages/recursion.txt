@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -119,4 +119,27 @@ so computer-resource-wise this is not an ideal solution, but it can illustrate r
 One critical aspect of every recursive implementation is that we have to have some "simple and obvious case"
 that does not require further recursion and that case must be recognized before we call the function in recursion.
 Otherwise our recursion will never end and you might think that Perl or your computer is "stuck".
+
+<h2>Comments</h2>
+
+I remember in college thinking "When am I ever going to use this recursion bs in any real world situation?" I can say without a doubt that you will. I have written multiple recursive methods over the decades for traversing nested structures and object interfaces. You end up needing this kind of functionality way more than you would think.
+
+<hr>
+
+The Fibonacci example can be made a lot more efficient with caching:
+
+use strict;
+use warnings;
+use 5.020;
+use experimental qw(signatures);
+
+sub fibonacci($n)
+{
+    say "f($n)";
+    state $cache = [0, 1];
+    return $cache->[$n] //= fibonacci($n-1) + fibonacci($n-2);
+}
+
+say fibonacci(6);
+
 

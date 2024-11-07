@@ -5,7 +5,7 @@
 =books dancer2
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -76,4 +76,41 @@ to the the place and name we want it to be.
 <a href="https://code-maven.com/slides/dancer/upload-a-file">Uploading a file using Dancer</a>
 
 <a href="https://code-maven.com/slides/dancer/testing-upload-a-file">Testing uploadig a file using Dancer</a>
+
+<h2>Comments</h2>
+
+Thanks for your posts. They've been helpful.
+
+I've set up a handler similar to above. The problem I'm having is that the JSON serializer is throwing an error:
+
+[api:2908] core @2020-12-21 15:28:48> Failed to deserialize content: malformed number (no digits after initial minus), at character offset 1 (before "--------------------...") at /usr/local/share/perl5/Dancer2/Serializer/JSON.pm line 47. in /usr/local/share/perl5/Dancer2/Core/Role/Serializer.pm l. 71
+
+Any idea how to disable the serializer for this request?
+
+
+I've added two links at the bottom of the article showing a full example and a test case. If you can send me a similar example that exhibits the error you see I might be able to help.
+
+
+
+Basically, in your example, if you had:
+
+set serializer => 'JSON';
+
+
+or a config.yml entry:
+
+serializer: JSON
+
+the upload fails (I tried Mutable serializer and it fails, too). It seems that Dancer2 does not work well when APIs need to have different serializers (e.g., JSON for most APIs, but form-data for uploads).
+
+I don't know if you have dealt with this issue or know a way to work around it?
+
+
+I have not encountered this but I'll try to replicate it.
+
+
+See issue https://github.com/PerlDancer/Dancer2/issues/1677
+and PR to fix https://github.com/PerlDancer/Dancer2/pull/1678
+
+
 

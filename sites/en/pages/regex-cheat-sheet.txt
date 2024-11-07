@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -148,5 +148,9 @@ TODO: add examples \w and \d matching unicode letters and numebers.
   <li><a href="https://metacpan.org/pod/perlre">perlre</a></li>
   <li><a href="https://metacpan.org/pod/perlretut">perlretut</a></li>
 </ul>
+
+<h2>Comments</h2>
+
+You didn't mention \R character class which matches familiar end of line sequences.
 
 

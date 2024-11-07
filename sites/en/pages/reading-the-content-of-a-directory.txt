@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -128,5 +128,49 @@ the value on the left hand side if it is <a href="/undef-and-defined-in-perl">de
 Together this expression says: If there is a value on the command line, put that in <hl>$dir</hl>. If there is no value on the command line
 put <hl>'.'</hl> in <hl>$dir</hl> that representes the current directory.
 
+
+<h2>Comments</h2>
+
+what would be te syntax if i want the user to assign the path of the directory
+
+<hr>
+
+could you explain more detail about why '.' represent the current directory not ./ ??
+
+Because that's how it is defined.
+AFAIK in most cases they are the same. The trailing slash is optional though in certain shell commands they might behave slightly differently.
+
+<hr>
+
+Good article. One additional thing I think is important to mention is that the $thing you get from readdir is the name of the item, *not* the full path to the item. So if you want to then pass it to open(), a file test operator, or other things expecting a filename, you need to concatenate it to the directory path you opened ($dir in your example). my $path = "$dir/$thing" is usually sufficient but you can also use File::Spec to be portable. It is very common that people miss this when using readdir to iterate.
+
+<hr>
+
+In you book do you highlight the differences between Win32/Linux and Mac OSX or is it Windows or Linux centric
+
+<h2>
+
+Do you have suggestions for adding error handling for the readdir failure in scalar context?
+
+I have been trying to find documentation on how to do error handling for the readdir, but its all a little confusing. I would expect it to be something like:
+
+use strict;
+use warnings;
+use 5.010;
+
+my $dir = shift // '.';
+
+local $!;
+opendir my $dh, $dir or die "Could not open '$dir' for reading '$!'\n";
+while (my $thing = readdir $dh) {
+if($!) {
+die $!;
+}
+say $thing;
+}
+closedir $dh;
+
+
+<hr>
 
 

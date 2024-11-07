@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -34,4 +34,27 @@ Except of the connection string our code is not aware that it is talking to an i
 
 
 See also the <a href="/counter-with-dancer-using-in-memory-sqlite-database">counter example using Perl Dancer and an in-memory SQLite database</a>
+
+<h2>Comments</h2>
+
+Hmmm.... been using sqlite for some time now and never even thought of using a memory only db. This could be very handy on an RPi connected to an Arduino where there might be smaller amounts of data which one does not need to store, but might need to display or analyze and then send on the results and subsequently get rid of. Nice! Thanks for pointing that out.
+
+<hr>
+
+Hi Gabor, have you ever compared the performance of this compared to standard hashes when doing thousands of queries?
+
+<hr>
+
+Would be nice to know how to do this with a web app. For example, various web users are querying data, so we'd need to know how to make the connection to the in-memory database persistent across multiple runs of the same Perl cgi script.
+
+If you are using plain old CGI then you cannot do this as CGI will run a separate process for each request. If you use something like Dancer or Mojolicious then you can. See this example: https://perlmaven.com/counter-with-dancer-using-in-memory-sqlite-database
+However I am not sure in which situation would that be useful.
+
+My app would be a web-based chat app that would support 20 users for about 15 minutes.
+
+The Dancer count example is unclear, that article doesn't accept comments, I'm referred to GitHub where it's painfully unclear how to comment.
+
+What is unclear in the Dancer example?
+
+
 

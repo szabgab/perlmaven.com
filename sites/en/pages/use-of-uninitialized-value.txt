@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -176,5 +176,25 @@ There are of course cases when I need to declare a variable inside an if block, 
 When I do that by mistake it is painful to find the bug.
 
 
+
+<h2>Comments</h2>
+
+Using Padre to code Perl, when I try to execute, in this statement
+$yeara = $year + 1900;
+I got this error:
+Global symbol "$yeara" requires explicit package name at ....
+Please, tell me where may I get the info about that in order to fix it,
+(other error messages too)
+thanks in advance
+
+
+https://perlmaven.com/common-warnings-and-error-messages
+
+
+<hr>
+
+When I am calling perl script thorugh jenkins Execute shell I am getting error"Use of uninitialized value in string eq " but from the same jenkins server(linux backen) when I am running that perl it runs fine .
+
+Is there anything else in that warning you get? Such as name of the variable or the line of code that generated this warning? What is the version of perl on that server?
 
 

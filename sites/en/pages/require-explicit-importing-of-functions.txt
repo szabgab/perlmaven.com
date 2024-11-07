@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -76,3 +76,10 @@ always asked to do it urgently, you will forget to do this. I certainly would.
 In those cases it is a huge help to have a Perl::Critic policy configured and enabled in the tests that will remind
 me to do this 2-second long task.
 
+<h2>Comments</h2>
+
+even better: always use the fully qualified name if at all possible :) , then you don't have to prefix your subs to make the names meaningfull
+
+<hr>
+
+should be described also how to prevent importing: use Xxxx();

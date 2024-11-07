@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -348,5 +348,60 @@ prints:
 <code>
 The )name} is "$name"\n
 </code>
+
+<h2>Comments</h2>
+
+Is there a way to print "test0A, test1A, test2A" using a loop, by something like print "test$iA\n"; and not print
+"test" . $i . "A\n";?
+
+
+print "test${i}A\n"
+
+
+Ahhh, would've saved me hours during the past seven years had I learnt it back then. Thanks so much! Last question, do you know of any way to do, for example,
+
+"test1A, test3A, test5A" similarly using "test${i*2+1}A\n" of some sort? Doing calculations inline... Am I reaching? Kosz szepen!
+
+
+Well, you can, but I'd probably advise against it as that might make your code harder to read and maintain.
+See this:
+
+print "@{[$x++]}\n"
+
+
+<hr>
+
+I don't understand why I get "Unmatched ( in regex" in the example below. Can you explain it ?
+
+  my $pat='(\\)';
+  '\\'=~/^(\\)/  ? print "OK" : print "NO MATCH!\n";   # OK
+  '\\'=~/^$pat/  ? print "OK" : print "NO MATCH!\n";   # Unmatched ( in regex
+
+
+What I understand m// interpolates as a double quoted string. That should expand $pat, which contains (\\), If I add an extra backslash, e.g. $pat='(\\\)' then it prints OK. Dont understand that at all. Using Perl 5.16.
+
+
+I wrote you an answer in this example: https://perlmaven.com/escaping-regexes I hope that helps
+
+Thanks for your answer. Was not aware of the qr// quoting operator. However I can still not avoid modifying an arbitrary regex in qr//, since I must quote the end-delimiter. On stackoverflow I found this suggestion:
+$pat = <<'EOF';
+(\\)/'
+EOF
+
+Why do you need to quote the end-delimiter? Show me the code that did not work.
+
+I want to enter regexps from puzzles like this one https://regexcrossword.com/playerpuzzles/58a687880d4d8 to debug my entries. As the regexps can be tricky I want to avoid changing them.
+
+Show me one specific that does not work with qr//
+
+E.g. this regexp /;.* would require change if inserted in qr//
+
+then use qr{} or qr!!
+
+<hr>
+
+how to escape special characters like a single inverted quote (’ ) in Perl. Example: Patient’s Phone
+
+backslash
 
 

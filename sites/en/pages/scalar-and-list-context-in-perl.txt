@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -284,4 +284,18 @@ Adding 0 to it does not change the number, so the above expression returns the s
 
 I'd recommend writing the slightly longer but clearer way using the <hl>scalar</hl> function.
 
+<h2>Comments</h2>
+
+Great tutorial as always, Gabor!
+
+Question: when reading in a file and then pulling out rows of data, does it make sense to read it in as a LIST or SCALAR? Can I avoid using a loop to get that data?
+
+
+Do you need all the data in memory at once and do you have enough memory for that? If yes see https://perlmaven.com/reading-from-a-file-in-scalar-and-list-context If not then why would you want to avoid a loop?
+
+I'm not trying to avoid loops, just wondering if there's a more efficient way of getting the data I want. I don't need all of the data at once, just two rows, actually. I'm reading a configuration file for an application (key value pairs).
+Reading the file is not the issue. I'm just looking for efficiencies on what I've always done in the past.
+
+Then the most efficient way is to read line by line in a loop. Or, if it is a config file (an ini file), then use the appropriate module. e.g.
+Config::Tiny
 

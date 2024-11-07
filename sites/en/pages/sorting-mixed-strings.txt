@@ -1,10 +1,10 @@
-=title Sorting mixed strings 
+=title Sorting mixed strings
 =timestamp 2014-04-09T10:45:56
 =indexes sort, $a, $b, cmp, <=>, substr
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -184,5 +184,11 @@ The advantage of this is that you can use the same sort in many different places
 while implementing it only once and if the name of the subroutine explains the sort,
 then most people won't even need to look at the implementation.
 A common trait of subroutines.
+
+<h2>Comments</h2>
+
+In the last part, "Hiding the sort in a sub", the by_number subroutine does not receive any parameters. Is that because $a and $b are specifically reserved by Perl for the sort function?
+
+yes, and they are global.
 
 

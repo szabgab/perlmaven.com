@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -152,4 +152,25 @@ at the end of the function declaration.
 If there is nothing to return just call <hl>return;</hl> without any argument.
 That will ensure that you really return nothing, and not the result of the
 last statement.This will eliminate some surprises for the users of this function.
+
+<h2>Comments</h2>
+
+Why not use parenthesis in a subroutine definition?
+
+<hr>
+
+Your example
+
+sub prompt {
+my ($text) = @_;
+...
+
+does not work when I feed prompt two strings: prompt("First","Name"). It does not print the expected prompt.
+
+This does work (no idea if it has disadvantages, I came here for a reason ...):
+
+sub prompt2{
+my @text = @_; #we could simply use @_ here
+print join " ",@text;
+
 
