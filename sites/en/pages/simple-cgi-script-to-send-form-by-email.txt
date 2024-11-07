@@ -4,7 +4,7 @@
 =status show
 =books cgi
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -221,5 +221,13 @@ the fields in the e-mail header: To, From, Reply-To, Subject in this case.
 This can create an <a href="http://en.wikipedia.org/wiki/Open_mail_relay">open mail relay</a>,
 that can be used to send spam.
 
+
+<h2>Comments</h2>
+
+Thanks Gabor. You have no idea how many of your articles I have read to help me with my perl projects. Regards.
+
+<hr>
+
+Hi, I want to do something similar to your article. I want to display "Thanks for your submission" after submitting input by the user and simultaneously execute the cgi script. How can I do that?
 
 

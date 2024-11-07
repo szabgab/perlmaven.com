@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -186,4 +186,16 @@ say strftime '%B', @time; #  November
 
 See also <a href="http://strftime.org/">strftime in Python</a> that I used as the source of some of
 the explanations.
+
+<h2>Comments</h2>
+
+%z is useful. +0100 is often handy.
+
+<hr>
+
+It's POSIX -- the placeholder values are supplies by your operating system. I agree that the perldoc could be useful and echo these, but on at least FreeBSD, "man strftime" lists all the supported values for that platform.
+
+<hr>
+
+In Python's strftime, if you want a decimal hour (e.g. "2" instead of "02") you can use "%-I" instead of "%I" ... Is there any equivalent approach in this Perl strftime function?
 

@@ -5,7 +5,7 @@
 =books testing
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -72,6 +72,26 @@ Despite this advantage of course the need to compile this extra code on every in
 
 <h2>More about self testing Modulinos</h2>
 
-Read more about self testing Modulinos in 
+Read more about self testing Modulinos in
 <a href="https://www.amazon.com/gp/product/144939311X/?tag=szabgab-20">Mastering Perl</a> by brian d foy who coined the term.
+
+<h2>Comments</h2>
+
+Wow! It's a neat concept :) What really surprised me is the "import Test::More;". If I understand correctly, It's indirect method calling, right?
+
+
+Some odd little corners of Perl. I hope this helps clear things up.
+
+It's just doing what `use` does at compile time at run time. That way you only get the Test::More overhead if you are actually using it. See https://perldoc.perl.org/functions/use
+
+Indirect method calls are when you use the `my_method MyClass arg1, arg2, ...` syntax. You don't see it much because we have learned to avoid it due to the fact that it is ambiguous. See https://perldoc.perl.org/perlobj#Indirect-Object-Syntax
+
+It's all in TFM, assuming you can find it. I've been rereading the darn things for nearly 20 years and sometimes things still surprise me.
+
+
+<hr>
+
+the need to compile this extra code on every invocation
+
+Compromise might be to move tests to t/xxx.t once you have finished development. And add a "require" in the self_test sub.
 

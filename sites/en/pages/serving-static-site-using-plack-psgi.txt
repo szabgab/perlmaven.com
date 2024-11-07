@@ -5,7 +5,7 @@
 =books psgi
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -25,4 +25,9 @@ In this code we use the <a href="https://metacpan.org/pod/Plack::Middleware::Dir
 middleware that handles the files in the given directory.
 
 Check out the other <a href="/psgi">articles on Plack/PSGI</a>.
+
+
+<h2>Comments</h2>
+
+There is handy oneliner as well: plackup -MPlack::App::Directory -e 'Plack::App::Directory->new(root => ".")->to_app'
 
