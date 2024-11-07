@@ -1,11 +1,11 @@
 =title XML::Writer examples
 =timestamp 2016-04-20T18:30:01
-=indexes XML, XML::Writer 
+=indexes XML, XML::Writer
 =status show
 =books xml
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
