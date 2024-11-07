@@ -6,7 +6,7 @@
 =books intermediate
 =author dsdickinson
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -217,3 +217,24 @@ Continue reading <a href="/use-theschwartz-2">How to Use TheSchwartz Perl Module
 
 For further reading here is another short article on TheSchwartz by Gavin Carr:
 <a href="http://www.openfusion.net/web/theschwartz">Notes on TheSchwartz</a>
+
+
+<h2>Comments</h2>
+
+When will the followup article be posted? I just started looking into using TheSchwartz and your article is great!
+
+Originally this article was a paid guest-post that was accessible to the paying subscribers. In the end I could not make the whole process work financially well for both the authors and myself so there were only a few paid articles. Nevertheless I am sending a note to Steve asking him.
+
+Thanks for the update, fingers crossed!
+
+<hr>
+
+Randal L. Schwartz:
+It is someone odd that I have not found a use for this module in some client code. :)
+
+<hr>
+
+You used TheSchwartz::Simple to make it easier to access TheSchwarz.
+What do you think about TheSchwartz::Moosified?
+
+

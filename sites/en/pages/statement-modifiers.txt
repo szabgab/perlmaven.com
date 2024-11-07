@@ -3,7 +3,7 @@
 =indexes if, unless
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -77,5 +77,24 @@ which is the same as:
 <code lang="perl">
 die "File '$file' does not exist" unless -e $file;
 </code>
+
+
+<h2>Comments</h2>
+
+The use of "if" as a statement modifier is a favorite of mine. It was a feature of Digital Equipment Corporation's Basic-Plus language dating back to the 1970's as was using "for" as well:
+
+print i% for i% = 0% to 10%
+
+Unfortunately the "for" syntax was not carried into Perl.
+
+
+Perl has very similar "for" statement modifier.
+
+say "$_%" for (0..10) # will evaluate say for each list element
+
+https://perldoc.perl.org/perlsyn#Statement-Modifiers
+
+
+Sure enough. You learn something new every day. I didn't realize Perl carried that little gem from Basic-Plus as well. BTW, the "%" I used was how you indicated an integer value in BP. 10 by itself was a real value but 10% was an integer value. Hard for me to believe I still remember that from the late 70's when I was in high school LOL.
 
 

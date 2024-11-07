@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -227,4 +227,12 @@ Remove only the value of a key/value pair:
 <code lang="perl">
 $h{Foo} = undef;
 </code>
+
+<h2>Comments</h2>
+
+I'm using perl on windows with an old indigo perl program that converts scripts to executables. "undef %hash;" seems to refuse releasing my RAM.
+
+
+Perl won't release it to the rest of the computer, but it will reuse that memory chunk itself. At least that's what it is supposed to do.
+
 

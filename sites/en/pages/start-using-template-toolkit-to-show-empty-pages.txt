@@ -5,7 +5,7 @@
 =status show
 =books search_cpan_org
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -160,5 +160,4 @@ $ git commit -m "Start using Template toolkit to show the empty pages"
 </code>
 
 <a href="https://github.com/szabgab/MetaCPAN-SCO/commit/0ce8f29b47e3f6fbebecbe904fd148bed7898904">commit</a>
-
 

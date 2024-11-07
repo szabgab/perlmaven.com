@@ -3,7 +3,7 @@
 =indexes SQL, DBI, DBD::SQLite, SELECT, fetchrow_array, fetchrow_hashref, SQLite
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -230,4 +230,212 @@ If you have any question, feel free to ask below.
 <h2>Thanks</h2>
 
 to sigzero for correcting a bug in the examples!
+
+<h2>Comments</h2>
+
+Hi, thanks for this tutorial. Was wondering how i would connect to a database without displaying the password in the script. Kind of like putting the password in a file then getting perl to read from the file.
+
+There is nothing special about this. Just put the password in a separate file and read it from the file.
+https://perlmaven.com/open-and-read-from-files
+
+Thanks for this. Struggled a bit in getting the variable to be visible outside the while block but figured it out in the end. Cheers
+
+<hr>
+Some databases, like Postgres, already support this via their client library, so you can configure your pg_hba.conf to not require password but use other form of authentication. Therefore you don't need to put password in your DBI->connect statement. Other databases, like MySQL, unfortunately implement this in their CLI instead of client library. But you can use something like DBIx::Connect::MySQL to search for passwords in my.cnf for you.
+
+<hr>
+
+Hi, could you explain how to query a database for a row that has a specific word in it? For instance, I'm querying a database that lists servers, their IP addresses, and status, and i'm trying to return the servers that are in production status. Can you help?
+
+That's an SQL related question. If you are looking for exact match then you'd need to have something like field=? in your query and then pass the value you are looking for to the execute method. Or, if you need something like this: field LIKE ? and then you need to pass '%' . value . '%' to the execute method.
+
+<hr>
+
+I have a shell script and has to convert it to Perl. Below is a shell script
+
+[code]
+
+process_info () {
+MONITOR_KEY=$1
+OUT_DIR=${2-$OUTPUT_DIR}
+
+if [ ! -z "$MONITOR_USER" ]
+then
+SQL_SCRIPT=$OUT_DIR/$MONITOR_KEY.process
+SQL_LOG=$OUT_DIR/$MONITOR_KEY.process.log
+SQL_ERR=$OUT_DIR/$MONITOR_KEY.process.err
+cat <<eod>$SQL_SCRIPT
+WHENEVER OSERROR EXIT SQL.OSCODE
+WHENEVER SQLERROR EXIT SQL.SQLCODE
+set HEADING OFF
+set FEEDBACK OFF
+set PAGESIZE 0
+set TERMOUT ON
+set VERIFY OFF
+set SERVEROUTPUT ON
+select NVL(A.status, 'N/A')
+from dte_monitor A, dte_parameter C
+where C.parameter_name = 'MONITOR_DATE'
+and TRUNC(C.parameter_date) = TRUNC(A.proc_date)
+and A.KEY = upper('$MONITOR_KEY');
+quit;
+EOD
+
+echo "TEST1 $SQLPLUS $MONITOR_USER $SQL_SCRIPT"
+RESULT=`$SQLPLUS $MONITOR_USER @"$SQL_SCRIPT"`
+if [ $? -ne 0 ]
+then
+print "ERROR"
+return -1
+else
+if [ "$RESULT" = "COMPLETED" -o "$RESULT" = "HOLIDAY" ]
+then
+print "SKIP"
+else
+print "$RESULT"
+fi
+return 0
+fi
+fi
+
+}
+
+[/code]
+
+Do I have to convert the same way, or I have to open sqlscript and write a query?
+
+<hr>
+
+this is a great tutorial and a correct and working connection string format.
+I wonder if it is possible to connect to an encrypted sqlite database from perl script I could not find any help around this issue from many google links I have visited...
+BTW, I took a course in php/mysql with your instructor around 10 years ago
+
+I don't know. Never tried it.
+
+<hr>
+
+Hi Maven, your tutorial is so helpful. It has provided lot of ways to improve my scripting in perl. Can you please help to know how should I execute a scheduler job in Oracle via Perl script by passing parameters?
+
+<hr>
+
+How would I check if a certain column exists and if it does to retrieve data from it?
+
+<hr>
+
+how can I connect perl to ms access .could you pls update
+
+
+<hr>
+
+I'm using SQLite to hold data for my books library. I want to build an SVG donut chart of the 5 most popular keywords in the DB. However, since the library is dynamic, these values also change dynamically. So in my query to pull these numbers from the DB I need to create a hash dynamically, but I'm having a problem creating a hash from dynamic results. The query I'm using is
+
+select count(*) as NUM,keyword from keywords group by keyword order by NUM) desc limit 5;
+
+
+but the alias is causing some problems. If you have any ideas on how I can achieve this I would appreciate it very much.
+
+
+
+Show the whole code you have. Is it in GitHub? If not can you put it in a gist?
+
+
+Thank you for a quick reply. No, I don't have this anywhere easily available - working at home on my iMac. Here is the Perl code that I'm trying to get working:
+
+my @SubColors=("red","orange","yellow","green","blue");
+my $ndx=0;
+my $numKeys=0;
+my %KeyWords=();
+$sth=$dbh->prepare(qq{select count(*) as NUM,keyword from keywords group by keyword order by count(keyword) desc limit 5;});
+$sth->execute();
+while (@records=$sth->fetchrow_array()) {
+$numKeys++;
+$NumKWBooks+=$records[0];
+$KeyWords{numbooks} = $records[0],
+$KeyWords{keyword} = $records[1];
+$KeyNum=$records[0];
+$KeyWrd=$records[1];
+$percentKW=$KeyNum / $NumKWBooks * 100;
+print qq{$KeyWrd: $KeyNum $SubColors[$ndx]\n};
+$ndx+=1;
+$numKeys=keys %KeyWords;
+}
+$sth->finish();
+
+The DB table that contains keywords is quite large but here is a sample:
+
+id authorid bookid keyword
+---- -------- ------ ------------------------
+2122 1 330 Mathematics
+2123 1 331 Mathematics
+2124 1 323 Philosophy
+2125 2 404 Knots
+2126 5 82 Document Design
+2127 5 152 Web Design
+2128 6 550 Scalable Vector Graphics
+2129 7 179 Physics
+2130 7 178 Quantum Theory
+2131 8 294 bash
+
+Running the code in a shell window shows me:
+
+Programming: 67 red 100.00%
+Mathematics: 47 orange 41.23%
+Perl: 24 yellow 17.39%
+Knots: 22 green 13.75%
+Calculus: 13 blue 7.51%
+$NumKWBooks: 173
+$numKeys: 2
+
+
+The problem I have is accessing the hash %KeyWords after the query loop so that I can build the SVG image. Apparently using an alias in SQLite is only available during the current action. So I can't use it later.
+
+
+
+Check out the fetchrow_hashref method of DBI, it will return a reference to a hash then you can push that reference onto an array that you have declared outside of the while loop. Used Data Dumper or some similar tool to see what is in the variables.
+
+
+use Data::Dumper qw(Dumper);
+
+@rows;
+while (my $row = $sth->fetchrow_hashref()) {
+print Dumper $row;
+
+push @rows, $row;
+
+}
+
+In any case I'd recommend you put your code in git and push it out to github. That will be easier to see and try.
+
+
+
+SOLVED
+I've managed to get what I need by saving the SQLite query data into a 2-dimensional array instead of a hash. The query this time does NOT use an alias, but not sure why it didn't work with a hash.
+
+Now the array ...
+@kwtop has 10 elements
+$NumKWBooks: 173
+Programming 67 red 38.73%
+Mathematics 47 orange 27.17%
+Perl 24 yellow 13.87%
+Knots 22 green 12.72%
+Calculus 13 blue 7.51%
+
+Thank you all who helped with this. Hope it helps someone else.
+
+
+<hr>
+
+Create a monitor that checks, every 5min or so, if the dbsnmp user is locked. If it is, run "dm_ora_agent updateproperties" but limit this to one execution per day. If the user would get locked again, this indicates there's an issue that needs manual intervention.
+
+Since the updateproperties takes quite a while, this can't be plugged into the normal monitoring framework as the script would get killed after a few minutes. A possible alternative is to schedule the monitor using a systemD service + timer.
+
+If the monitor detects the user is locked and updateproperties hasn't run in 24h: run updateproperties.
+If the monitor detects the user is locked and updateproperties has run in 24h: create a monitor event.
+
+anyone could guide me on the above logic to schedule job
+
+<hr>
+
+hi, instead of print to screen, is it possible to save the data to local table?
+
 

@@ -4,7 +4,7 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 
 =abstract start
@@ -162,5 +162,22 @@ My conclusion is to always use strict by default.
 In other articles you can read about <a href="/symbolic-reference-in-perl">symbolic references</a>
 and <a href="/barewords-in-perl">barewords</a> in Perl, the other two
 issues <hl>strict</hl> helps to avoid.
+
+
+<h2>Comments</h2>
+
+print $latitude # 36°00'N
+
+How do I detect the location of the degree sign?
+
+<hr>
+
+One important caveat of use strict 'vars' is that the requirement for variable declaration doesn't apply if you reference the variables using the "main" package name.
+
+For example, Perl will happily let you use
+
+$main::some_variable = 1
+
+without complaining.
 
 

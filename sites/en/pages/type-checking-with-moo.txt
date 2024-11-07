@@ -4,7 +4,7 @@
 =books moo
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -246,5 +246,18 @@ Accessing an objects data directly breaks encapsulation and should be avoided.  
 </code>
 
 You can then use the strategy to <a href="/perl-critic-one-policy">improve your Perl code</a> one policy at a time.
+
+
+<h2>Comments</h2>
+
+Could you please remove any references to `Moose` and `MooX::Types::MooseLike::Base`, just use `Types::Standard`, part of the `Type::Tiny` suite, which is more universal etc.
+
+<hr>
+
+Hi Gabor,
+I greatly appreciate these articles. Thank you for making these available.
+For the last section of using perlcritic on this page, is it possible to add how we use perlcritic?
+I did install Perl::Critic and Perl::Critic::Nits and was trying to use "perl -c code.pl" and wondering why I don't see the warning :-)
+Then I visited "improve your Perl code" link and realized what I was doing wrong.
 
 

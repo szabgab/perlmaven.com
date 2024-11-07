@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -69,3 +69,10 @@ but Path::Tiny makes it cleaner by hiding the details of opening and closing the
 
 <include file="examples/path_tiny_append_file.pl">
 
+<h2>Comments</h2>
+
+will append write immediately or only after the file is closed?
+
+<hr>
+
+how do you handle the error in case file doesn't exist ?

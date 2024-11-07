@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -53,4 +53,9 @@ $VAR1 = [
 </code>
 
 In this example the <hl>=</hl> sign is not in the resulting list.
+
+<h2>Comments</h2>
+
+That should be obvious. But it wasn’t to me. I can recall a few times I would’ve liked to retain the separators. Another tool for the tool box. Thanks!
+
 

@@ -1,10 +1,10 @@
-=title Switch-Case statement in Perl 5 
+=title Switch-Case statement in Perl 5
 =timestamp 2016-10-16T07:30:01
 =indexes switch, case, if, elsif, else, given, when, ~~
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -46,4 +46,39 @@ So for example the following script should work without any issues:
 Probably the safest solution however is to go back to good old <hl>if</hl>, <hl>elsif</hl>, <hl>else</hl> statement as in the following example:
 
 <include file="examples/if_elsif_else.pl">
+
+<h2>Comments</h2>
+
+I have a script which has a 7 level if-elsif-else statement. Perlcritic complains about that. So I created an equivalent given/when statement and put in the "no warnings 'experimental'". Of course that brings up the issue of using a feature that may go away. Personally I like the SmartMatch "~~" operator's ability to check if there is an existing element in an array with the simple "if ($var ~~ @array)". But experimental is experimental. I decided to stick with my original if-elsif-else statement and insert "## no critic (ProhibitCascadingIfElse)" to ignore it.
+
+The irony is I find myself doing more Node.js now as the Perl audience has become very limited. The bulk of my Perl coding is simply updating old scripts I have lying around.
+
+
+<hr>
+
+Well the original c switch statement only takes constants. And also, most C compilers convert switch statements to hashes and do hash lookups.
+
+So an equivalent to the case statement could be :
+
+my %CASE= (
+'x1' => sub { print 'y1' },
+'x2' => sub { print 'y2' }
+);
+
+Then you can call :
+
+$CASE{'x1'}->()
+
+to execute the specified sub.
+
+This is also the fastest and most efficient way to code this.
+
+Also see : https://en.wikipedia.org/wiki/Conditional_(computer_programming)#Hash-based_conditionals
+
+<hr>
+
+Nice. And when formatted so cleanly, makes one wonder Why the need fore "case".
+
+
+
 

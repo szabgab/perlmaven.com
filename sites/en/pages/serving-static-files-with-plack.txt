@@ -1,11 +1,11 @@
-=title Serving static files such as favicon.ico and robots.txt using Plack 
+=title Serving static files such as favicon.ico and robots.txt using Plack
 =timestamp 2015-05-17T08:30:01
 =indexes Plack::Middleware::Static, builder, Plack::Builder, favicon.ico, robots.txt
 =tags screencast
 =status show
 =books search_cpan_org
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 

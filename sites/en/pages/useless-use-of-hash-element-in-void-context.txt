@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -79,5 +79,21 @@ that has no impact on anything. That's why Perl warns you about <hl>useless use<
 The correct way to write this would be to write this:
 
 <include file="examples/hash_with_or_fixed.pl">
+
+<h2>Comments</h2>
+
+I have been bitten by this, as I tend to default to “or” because it is lower precedence, which often is desired, as in this case:
+
+open FH, $file or die “Cannot open file $file”; 
+
+If you use || instead of “or”, the double pipe resolves first, and so will return true for a non-empty file. But since “or” has a lower precedence than comma, if you use “or”, it will execute as expected.
+
+Note that confusion between “or” and || can be avoided enforcing precedence with parentheses, by writing:
+
+open ( FH, $file ) || die “Cannot open file $file”; 
+
+making parentheses a good standard practice in my book.
+
+I think a thorough discussion of this in the Beginner Perl Maven e-book would be an excellent addition (if it is not already there).
 
 

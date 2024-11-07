@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -310,5 +310,148 @@ expected output:
 <code>
 foo Bar first second another
 </code>
+
+<h2>Comments</h2>
+
+I don't think you get a lot of comments, but I just want to thank you so much!
+You tutorials are so clear, and practical. Your simple examples are helping me parse the interaction energies for thousands of amino acids in thousands of files which are nearly duplicates in a lot of ways. So I need some way to sort the list of unique elements.
+
+<hr>
+
+my contribution :
+
+for $column_to_make_uniq ( 0..$#data ) {
+$list_of_uniq_terms{$data[$column_to_make_uniq]} ++;
+}
+
+then you will have :
+keys = list of uniq term
+values = like the -c option in the uniq command shell
+
+<hr>
+
+Thanks so much Gabor. This is one of my "must go to" sites for Perl when I want to check for syntax, examples, easily understandable code, etc. Amazing work and amazing site!
+
+<hr>
+
+Very nice.
+
+You should probably note that taking keys on a hash reference is experimental: 'keys on reference is experimental at ...'
+
+Anyone who balks at that can use a sub (as with the grep version).
+
+<hr>
+
+I have created a script what reads the input.txt file with the words, give that to an array but the sort function will not do its plain job, maybe i have an error. Can you post a solution of the exercies? While search for that i have tested several functions of the course. Your book is quite good, have bought it two weeks ago.
+
+<hr>
+
+anyway to check for uniqueness within each array element? For instance, Just interested in the middle four characters of the element to be unique.
+
+@foo = (h25sxxxxj89s,ww0ixxxx56s5,1234yyyyvgs6, ppppxxxx456w, 1111zzzzwytr);
+@uvalues = uniq (@foo);
+print "@uvalues\n";
+
+h25sxxxxj89s,1234yyyyvgs6,1111zzzzwytr
+
+Anyway to do that?
+
+Thanks
+
+
+
+sub uniq {
+my %seen;
+grep { /^.{4}(.{4})/ && !$seen{$1}++ } @_;
+}
+
+my @foo = qw/h25sxxxxj89s ww0ixxxx56s5 1234yyyyvgs6 ppppxxxx456w 1111zzzzwytr/;
+my @uvalues = uniq( @foo );
+print "@uvalues\n";
+
+
+<hr>
+
+This example has a long time warned that way is "experimental", and now its solution became deprecated
+sub uniq { keys { map { $_ => 1 } @_ } };
+to make things happen right way you should use strict type cast for function keys
+sub uniq { return keys %{ { map { $_ => 1 } @_ } } };
+
+<hr>
+
+I prefer the old fashioned:
+sub uniq
+{
+my %hash;
+$hash{$_}++ for (@_);
+return keys %hash;
+}
+
+Yes, there's an extra (only needed with use strict) of my %hash and the return portion of the last statement is not necessary -- but I find this clear for anyone to read. At least, for me, grep and map provide little value, but TMTOWDI.
+
+<hr>
+
+I'm doing the exercises and getting funny results.
+Exercise #2
+
+use strict;
+use warnings;
+use 5.010;
+use Data::Dumper qw(Dumper);
+
+my @array;
+
+while (<>) {
+  chomp;
+  push @array, split / /, $_;
+}
+
+my @uniques = uniq( @array );
+
+sub uniq {
+  my %seen;
+  my @unique_elements = grep { !$seen{ lc $_ }++ } @_;
+  return @unique_elements;
+}
+
+say Dumper \@uniques;
+
+# prints
+# -----------------------------------------------------------
+$VAR1 = [
+          'foo',
+          'Bar',
+          'first',
+          'second',
+          'another'
+        ];
+# -----------------------------------------------------------
+
+
+But if I change the order of "Bar bar" to "bar Bar in the original text file it prints:
+# -----------------------------------------------------------
+$VAR1 = [
+          'foo',
+          'bar',    # now this bar is not "Bar"
+          'first',
+          'second',
+          'another'
+        ];
+# -----------------------------------------------------------
+
+I guess the exercise didn't specify the case of the unique element. Is this beyond the scope of the exercise?
+
+<hr>
+
+"incredibly good!"
+
+wonderful teaching method.
+
+<hr>
+
+i perl this is the answer.
+
+my %HASH{@array} =1;
+push(@uniq,keys %HASH);
 
 

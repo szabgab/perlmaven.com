@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -157,4 +157,16 @@ bb
 </code>
 
 As you can see <hl>--</hl> does not work on strings.
+
+
+<h2>Comments</h2>
+
+I am Vinay from INDIA and avid follower of your blog perl maven. Blog was really helpful and developing my perl scripting skills for which I am very thankful to you.
+
+But, lately i am stuck in a problem. I want know how to convert a string into upper or lower case using string increment and decrement operator. I tried few various options but not quite converging on solution. I kindly request you to help me in this regard.
+
+
+Hey Vinay,
+You can try and use lc(your_string) for lower case and uc(your_string) for upper case, this is without string increments or decrements ofc.
+
 

@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -54,4 +54,8 @@ that does not have a square-bracket nor curly braces after it.
 The correct way can be seen in this code:
 
 <include file="examples/array_index.pl">
+
+<h2>Comments</h2>
+
+I've always viewed it as telling perl what I want returned. If I just want a single element of an array then I tell Perl I wan a scalar, $. If I want the whole array or a slice I tell Perl I want an array, @. And likewise if I want the whole hash...
 

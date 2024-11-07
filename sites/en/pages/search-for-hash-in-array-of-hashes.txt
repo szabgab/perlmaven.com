@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -86,4 +86,20 @@ of the Perl variables and to measure the <a href="/how-much-memory-does-the-perl
 I am quite sure the growth is negligible.
 
 
+<h2>Comments</h2>
+
+If we need to frequently search an array of hashes for an id, we should transform it into a hash keyed by the id.
+
+<hr>
+
+Github was probably not the right place to ask a question.
+hello, I'm not very good at this. I can get the keys and values from a regular hash and write them as a .csv file to disk.
+I can get the values from individual keys in an array of hashes, which your excellent web site showed how to make.
+$L_vars[0]={
+image_file=>"my_images",
+start_frame=>30,
+end_frame=>50
+}
+but I'm having problems getting the keys, values from that as can't find the syntax to address the hash.
+help appreciated.
 

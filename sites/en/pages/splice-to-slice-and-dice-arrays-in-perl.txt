@@ -4,7 +4,7 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -166,3 +166,49 @@ This means: "Count 3 from the end and remove (and return) 1 element starting fro
 <h2>Conclusion</h2>
 
 Hopefully some of this will help you better understand how <hl>splice</hl> operates on Perl arrays.
+
+
+<h2>Comments</h2>
+
+do you know how to used splice in csv file. i try to delete certain array in csv, but i can't save in that csv file.
+
+Use Text::CSV for that. See examples here:  https://perlmaven.com/search/Text%3A%3ACSV
+
+<hr>
+
+This may be kind of esoteric, but I noticed something interesting about using SPLICE in a foreach loop where you are trying to remove identical elements that are back to back. You'll remove the first one but the adjacent one will not be removed since the adjacent element occupies the current array index but the foreach loop moves to the next index.
+
+So, you need to do something like this to fix the problem:
+
+
+use strict;
+use List::MoreUtils qw(first_index);
+
+my $match_string="def";
+my $matched_index;
+
+my @names=("abc","def","def","hij","klm");
+
+my $array_index=0;
+my $max_index=$#names;
+
+while ($array_index<=$max_index) {
+  if ($names[$array_index] eq $match_string) {
+      print "Matched: " . $names[$array_index] . "\n";
+      $matched_index=first_index {$_ eq $match_string} @names;
+      print "At index: " . $matched_index . "\n";
+      splice @names,$matched_index,1;
+      $max_index=$#names;
+      print "max index now: " . $max_index . "\n";
+  }
+  else {
+    $array_index++;
+  }
+}
+
+
+foreach my $name (@names) {
+  print $name . "\n";
+}
+
+
