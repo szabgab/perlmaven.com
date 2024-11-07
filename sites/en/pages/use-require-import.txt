@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -106,5 +106,22 @@ Because <hl>requires</hl> is only executed during run-time, this piece of code w
 and only if the <hl>$holiday</hl> variable holds something that is considered True by Perl.
 
 Then you can call the <hl>import</hl> method of the module. If you want to.
+
+<h2>Comments</h2>
+
+Maybe also discuss Module::Load which is pretty cool when you want to dynamic include modules or files. Good article!
+
+<hr>
+
+include() function it adds the content of the page or
+file into the file where this function is used.If there is any problem
+in loading a file then the include() function generates a warning but the script will continue execution. require() function takes all the text in a specified
+file and copies it into the file that uses the include function. If
+there is any problem in loading a file then the require() function generates a fatal error and halt the execution of the script.Vistit Here for example
+https://techlifediary.com/whats-difference-include-require-functions/
+
+<hr>
+
+I have encountered a "problem" with require in that the loaded script cannot see the <std in=""> of the calling script. (The "require" / second script cannot be amended in any way, ie moving the data in STD IN to @ARGV etc!)
 
 
