@@ -5,7 +5,7 @@
 =books cgi
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -109,5 +109,36 @@ This is exactly the same solution using CGI::Simple instead of CGI.
 
 CGI and CGI::Simple can work for you, but you'd be probably better off
 <a href="/how-to-build-a-dynamic-web-application-using-psgi">using PSGI</a>.
+
+<h2>Comments</h2>
+
+it is great you do these articles about CGI
+
+there are lots of old sites coming up for upgrade and lots of first time Perl programmers which go to various forms for help on CGI and get stomped on by the so-called community leaders for even daring to ask about CGI
+
+<hr>
+
+Gabor, thanks for writing this, as Emil pointed out this is still a much needed topic.
+
+When I started CGI in 1997, we were not allowed to import modules in our environment, so it was a lot of learning and work, but I got a good understanding of how things worked. Basically learned out of the Perl 5 for Web Programming book, which is still on Amazon and not a bad book. https://www.amazon.com/Spec....
+
+There is one thing that must be emphasized these days and that is security. I know it is hard to teach security while people are learning the basics, but it should at least be mentioned that input needs to be encoded before repeating as output.
+
+This can be easily accomplished by the following:
+
+Add to the top:
+
+use URI::Escape;
+
+Then someplace where it makes sense ...
+
+my $safe_text = uri_escape($text);
+
+This will protect against some basic XSS stuff, if you are using files or a database there are other security considerations as well.
+
+if PCGI already does this by default, so much the better.
+
+Cheers,
+Jon
 
 

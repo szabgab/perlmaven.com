@@ -3,7 +3,7 @@
 =indexes Path::Iterator::Rule, recursive, directory tree
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 
 =abstract start
@@ -295,5 +295,18 @@ while ( my $file = $it->() ) {
 
 If you like this module, please send a thank-you note to
 <a href="https://metacpan.org/author/DAGOLDEN">David Golden</a>, the author.
+
+<h2>Comments</h2>
+
+I am getting the following errors while trying to use your example:
+Can't locate Path/Iterator/Rule.pm in @INC (@INC contains: /usr/lib/perl5/5.10.0/x86_64-linux-thread-multi /usr/lib/perl5/5.10.0 /usr/lib/perl5/site_perl/5.10.0/x86_64-linux-thread-multi /usr/lib/perl5/site_perl/5.10.0 /usr/lib/perl5/vendor_perl/5.10.0/x86_64-linux-thread-multi /usr/lib/perl5/vendor_perl/5.10.0 /usr/lib/perl5/vendor_perl .)
+
+---
+
+You need to install Path::Iterator::Rule https://perlmaven.com/cant-locate-inc-module-install-in-inc
+
+---
+
+I have used : /pkg/qct/software/perl/5.22.0/bin/perl, and it is working
 
 

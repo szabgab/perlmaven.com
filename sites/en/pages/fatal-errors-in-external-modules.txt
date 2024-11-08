@@ -5,7 +5,7 @@
 =books advanced
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -106,3 +106,48 @@ Fri Jan  1 00:00:00 1999
 This means, that although the second string could not parse and Time::Piece raised
 an exception, we captured that exception, reported it and then let the <hl>foreach</hl>
 loop go on to the third value that was properly parsed and printed.
+
+<h2>Comments</h2>
+
+That's cool, but can you also capture undef somehow in an eval or do block?
+
+---
+Nope. If some function returns undef on failure then you need to either check that manually or convert it to an exception with the "f() or die" construct that you probably have seen in the "open ... or die" case.
+
+<hr>
+I'm not a fan of functions that return undef rather than just using a bare return, for the reasons explained in Perl::Critic::Policy::Subroutines::ProhibitExplicitReturnUndef  https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExplicitReturnUndef
+
+
+<hr>
+
+The second structure of catching an error is described as 'more robust'. In what way is it superior to the first method?
+
+---
+In my opinion the second approach is more robust in the sense that it's a whole code block that takes care of everything you cared about (execution and exception handling). Whereas the first approach separates the eval and the action upon a detected exception in an independent code block, hence possibly leading to dismember the two things, for example, when doing some maintenance or refactoring. It's really dependent on what you want to handle the execution and the mitigation: separatedly or together.
+
+---
+Spot on, Carlaanga. When you separate your eval from your exception handling, as is the case in the first example, and if, as you said, the eval and the exception handler get separated, it's possible for $@ to get "clobbered", which is to say overwritten by another eval block somewhere. That's why I almost always use the "more robust" construction.
+
+<hr>
+
+There are also a number of try-catch implementations in perl.
+
+One that implements all the features you would expect is Nice::Try, such as:
+
+try
+{
+  # Something worth dying
+}
+catch( Exception $e )
+{
+  # catch exception of class Exception
+}
+catch( $e )
+{
+  return( "I failed: $e" );
+}
+finally
+{
+  # Do some mop up
+}
+
