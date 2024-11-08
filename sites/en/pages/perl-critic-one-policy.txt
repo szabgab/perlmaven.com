@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -105,5 +105,9 @@ To make it easy you can disable all the policies that bother you for some reason
 and can go over the problematic policies one-by-one and fix them in your whole code base.
 
 
+
+<h2>Comments</h2>
+
+I'm quite keen on the *why* we should use perlcritic. Especially if we're inheriting a 15 year old codebase with fair test coverage.
 
 

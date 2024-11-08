@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -103,3 +103,10 @@ They block the main process and wait till the external program finished so it ca
 The Capture::Tiny is an excellen alternative to the <b>qx</b> operator. See the example how to
 <a href="/capture-stdout-stderr-of-external-program">capture STDOUT and STDERR of an external program</a>.
 
+<h2>Comments</h2>
+
+Not bad on the basics, but I was hoping for a little more detail-- like, if you're building an external command string how do you handle quoting the arguments (I tend to use the CPAN module String::ShellQuote), and when do you need to worry about security issues (untrusted input and untainting), then there are the issues with shell i/o redirection (you can get STDOUT, STDERR, or both together, but then you can't tell which was which), and then there's qx compared to system...
+
+<hr>
+
+how to call a .pl inside a .cgi file? thank you

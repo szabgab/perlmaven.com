@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -132,5 +132,19 @@ your module just by reading the documentation via the
 
 Writing documentation and making it look nice is not that hard in Perl.
 
+
+<h2>Comments</h2>
+
+Probably cannot be stressed too much that perlpod lines must start with = as the first character - not even a space is allowed. I tried to copy and paste the example above: example\script.pl, only to be frustrated for a couple minutes, since the clipboard buffer added about 4 space characters to every line of text. Thus,
+
+  =head1 DESCRIPTION
+
+  became
+
+  =head1 DESCRIPTION
+
+My clue that something was wrong was that all the text was the same color as the rest of the code, and the words, "and" "print" and "given" were in slightly bold text. When I finally backspaced the "=" all the way to the left side, all the pod instantly greyed out.
+
+Thanks for the tutorials!
 
 

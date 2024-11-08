@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -96,3 +96,7 @@ if (%color_of) {
 and we can be sure that the block will be executed only if the hash was <b>not</b> empty.
 
 
+<h2>Comments</h2>
+
+Hash in scalar context returns number of keys since perl-5.26: scalar(%hash) return signature changed
+https://metacpan.org/release/XSAWYERX/perl-5.26.0/changes#scalar(%25hash)-return-signature-changed

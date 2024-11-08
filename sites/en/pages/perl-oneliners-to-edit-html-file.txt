@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -133,9 +133,8 @@ In this we have two regexes separated by the <hl>..</hl> flip-flop operator. The
 where the left-side expression is true and it keeps being true till the right hand expression becomes true. So this expression
 can be used to remove several lines identified only by the first line and the last line.
 
+<h2>Comments</h2>
 
-
-
-
+'s{http://verele\.com}{}g' or 's{\Qhttp://verele.com}{}g'
 
 

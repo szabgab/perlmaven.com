@@ -4,7 +4,7 @@
 =tags screencast
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -73,3 +73,36 @@ print Calc::add(3, 4), "\n";
 </code>
 
 That's how you use <hl>package</hl> and that's how you create namespaces in Perl 5.
+
+<h2>Comments</h2>
+
+I don't understand what "namespace" means in Perl. I would expect names in one package to be distinct from names in another Why does Perl warn that the declaration of $debug in package main masks the declaration of $debug in package Test?
+
+
+use v5.16;
+use strict;
+use warnings;
+
+package Test;
+my $debug = 5;
+print("$debug\n");
+
+package main;
+my $debug = 10;
+print("$debug\n");
+
+---
+
+Hi, the reason you get warning is because the variables defined using keyword my do not belong to the "symbol table" of that package. So even when you define them under differnt package, perl does not treat them as belonging to differnt namespace. Replace the my with our keyword, and now it really belongs to different namespace and perl won't complain :-)
+
+use v5.16;
+use strict;
+use warnings;
+
+package Test;
+our $debug = 5;
+print("$debug\n");
+
+package main;
+our $debug = 10;
+print("$debug\n");

@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -176,4 +176,96 @@ With this we can already work quite well.
 The full script we used to read the excel file:
 
 <include file="examples/read_excel.pl">
+
+
+<h2>Comments</h2>
+
+How can we read latest version of excel file in perl, i mean 2013 and 2016 versions. Can you suggest any modules?
+
+<hr>
+
+What sort of Perl version has these Api's or do we individually install them...
+
+you need to install them separately.
+
+<hr>
+
+i am not able to read from the excel, can you please help me out here? gettting "Parser for XLSX is not installed at"
+
+You need to have the module Spreadsheet::ParseXLSX installed, and in the Perl path for your system
+
+I had a similar problem, solved by doing cpan install Spreadsheet::XLSX
+
+<hr>
+
+Hi.. Awesome work Gabor.
+I would really appreciate if you could help me by explaining the snipe from line 17-21.
+Regrads
+
+---
+The nested loops iterate each column for each row starting with the first row. If you comment out lines 10-15 you will see only the output from lines 17-21.
+
+<hr>
+
+Hi I am getting this error "Parser for XLSX is not installed at rnew.pl ". Where I am going wrong ,I have just copy-pasted the above same code to check its working.
+
+---
+
+You need to have the module Spreadsheet::ParseXLSX installed, and in the Perl path for your system. I personally use ParseExcel.
+
+<hr>
+
+Hi Gabor Szabo,
+Many thanks for your instructive examples.
+But, I think that the script "read_excel.pl" works incorrectly when we open the "simple.xlsx" and compare it with the output of the script. It should transpose the indices of column and row instead.
+
+---
+
+I agree. Gabor created a LITTLE bit of confusion starting with "The next snippet will read the first row of the first sheet (which is usually represented by the letter A)", and proceeded to code accordingly. No biggie -- we just have to be aware of it.
+
+<hr>
+
+Thanks for this article! But there is a
+serious error: you have confused rows and columns, and that is causing much
+confusion among readers.
+
+You wrote: "The next snippet will read the
+first row of the first sheet (which is usually represented by the letter
+A)". But spreadsheets do not use letters to represent rows. The
+COLUMNS are represented as letters, and the rows are represented as
+NUMBERS. Consequently, the output is incorrectly labeled in the snippet
+of code that you show for displaying the content of a row. The
+corrected code should be:
+
+my @row = Spreadsheet::Read::row($book->[1], 1);
+for my $i (0 .. $#row) {
+say chr(ord('A')+$i) . '1 ' . ($row[$i] // '');
+}
+
+And
+the output is similarly incorrectly labeled in the snippet of code for
+fetching all the rows. That corrected code should be:
+
+my @rows = Spreadsheet::Read::rows($book->[1]);
+foreach my $i (1 .. scalar @rows) {
+foreach my $j (1 .. scalar @{$rows[$i-1]}) {
+say chr(ord('A')+$j-1) . " $i " . ($rows[$i-1][$j-1] // '');
+}
+}
+
+Would you be willing to make these corrections in your article?
+
+<hr>
+
+Below is the input file of excel
+A B C D
+APP 1 210101 8.1
+APP 2 210102 8.2
+APP 3 210103 8.3
+Data 4 210104 8.4
+Data 5 210105 8.5
+Data 6 210106 8.6
+
+How to generate seperate output files of excel for APP and Data
+
 

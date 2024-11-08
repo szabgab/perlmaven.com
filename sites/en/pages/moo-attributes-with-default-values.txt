@@ -4,7 +4,7 @@
 =status show
 =books moo
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -296,4 +296,34 @@ Probably it is better to always use a sub, event if it is not required (as in th
 The only advantage of having the scalar there is that it might be a bit faster than having an unnecessary subroutine calls.
 
 
+<h2>Comments</h2>
+
+What if I need an unitialized array instead of an empty one?
+In my non OOP code I have an
+
+my @aux = undef;
+
+That is required by a subroutine parsing a file to store temporary data. If I use the
+
+has aux => (
+is => 'rw',
+default => sub { [] },
+);
+
+This would break the method, but if I leave 'undef' as default, this is no longer recognized as array
+
+Thanks
+
+---
+
+Then you need to learn Perl better. There is no such thing as uninitialized array in perl. What you wrote my @aux = undef; is an array with a single element which is undef.
+
+---
+
+Thanks for the clarification. I tried to embedd https://github.com/lh3/readfq/blob/master/readfq.pl in an object but I probably need to do some rewriting then...
+
+<hr>
+
+I found this in a file using Moo `with 'Crypt::PBKDF2::Hash';` is with a Moo directive??? if so what does it mean
+don't worry found it  https://metacpan.org/pod/Moo#with
 

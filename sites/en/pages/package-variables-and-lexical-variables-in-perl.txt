@@ -4,7 +4,7 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -247,5 +247,26 @@ print "VeryLongName: $x\n"; # VeryLongName: 23
 package main;
 print "$x\n";  # 23
 </code>
+
+<h2>Comments</h2>
+
+Gabor - I'm having problems accessing a hash in the beginning of a program within a subroutine.
+my %TK={'title'=>'does not work'};
+sub dosomething
+{
+print join(', ', (keys %TK));
+}
+only works when I change my to our.
+Any other solutions?
+
+---
+In this example you never call dosomething. Show a full example please.
+---
+
+You're assigning anonymous hash to %TK. Change curly brackets to ordinary parenthesis:
+
+my %TK=('title'=>'does not work');
+
+Or consequently try to use references.
 
 

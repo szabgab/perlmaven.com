@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -111,4 +111,21 @@ The statement <hl>use lib 'examples/modules';</hl> adds the <b>examples/modules<
 recorded the screencast.
 
 
+<h2>Comments</h2>
 
+I ran above code in my current directory but it showing below error.
+Please reply how i can run.
+Can't locate Calc.pm in @INC (@INC contains: examples/modules /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at perl.pl line 7.
+
+
+Calc.pm needs to be in one of the directories contained in the @INC array. You can put it anywhere but you'll have to add the diretory to @INC using:
+
+use lib 'mydirectory'
+
+Where mydirectory is any valid path.
+
+The example adds examples/modules to the @INC array using the line:
+
+use lib 'examples/modules';
+
+If you create a directory named examples/modules in the same directory as your script and copy Calc.pm there, it should run correctly.

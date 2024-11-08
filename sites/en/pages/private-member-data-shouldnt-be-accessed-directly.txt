@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -77,5 +77,13 @@ code that violates the encapsulation.
 <h3>Screenshots</h3>
 
 <img src="/img/shots/private-member-data-shouldnt-be-accessed-directly.png" alt="Accessing private member data directly" >
+
+<h2>Comments</h2>
+
+Sometime is use the following to filter out those messages. At leas when I want to concentrate on the other issues perlcritic finds.
+
+perlcritic --exclude ValuesAndExpressions::ProhibitAccessOfPrivateData my_file.pm
+
+Thanks for the write up Gabor.
 
 
