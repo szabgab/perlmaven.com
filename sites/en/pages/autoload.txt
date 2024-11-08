@@ -5,7 +5,7 @@
 =books advanced
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -145,3 +145,61 @@ Although we have linked this article from the <a href="/common-warnings-and-erro
 page, and we use both <hl>use strict</hl> and <hl>use warnings</hl> in the examples as it is a 
 <a href="/always-use-strict-and-use-warnings">recommended best practice in Perl</a>, 
 this error has nothing to do with either of those.
+
+
+<h2>Comments</h2>
+
+If Autoload calls a function in a different package, what namespace is it executed in? I want to avoid repeating a "decode" function in 10 modules by putting it into a common module. Each of the 10 modules has the same variable names, I want the decode function to use the current package variables.
+
+---
+
+Show your code please!
+
+<hr>
+
+How about some discussion regarding the Symbol Table somewhere, Gabor?
+I often 'overload' the Autoload method and stick it into the Symbol Table so no subsequent lookups are made for the Autoload method.
+The following is a definition of AUTOLOAD and DESTROY where AUTOLOAD is used to handle any get_x() calls regarding the object in question and the Symbol Table for the AUTOLOAD namespace is redirected to the 'private' _accessible() method.
+
+sub new {
+my $class = shift;
+my ($pre, $match, $post, $result) = splice @_, -4;
+bless {
+_pre => $pre,
+_match => $match,
+_post => $post,
+_result => $result,
+_subpatterns => [@_]
+}, ref($class) || $class;
+sub _accessible() { exists $_[0]->{$1} }
+}
+
+use vars '$AUTOLOAD', '$DESTROY';
+
+sub AUTOLOAD
+{
+no strict "refs";
+my ($self) = @_;
+
+# was it a 'get()' call? is the attribute accessible?
+if ($AUTOLOAD =~ /.*::get(_\w+)/ and $self->_accessible($1) )
+{
+# get locally scoped, scalar copy ($attr_name) of $1
+my $attr_name = $1;
+# can't use '$self' in 'sub' return call, since
+# it's outside the scope of subsequent 'get' calls;
+# the first 'get' call would work as expected, but
+# subsequent 'get' calls use the changed symbol table's
+# anonymous sub-routine
+#
+# cram the anonymous sub-routine into the symbol
+# table, use it after the first call to a 'get_xxx()' method
+*$AUTOLOAD = sub { return $_[0]->{$attr_name} };
+return $self->{$attr_name};
+}
+return "Match::AUTOLOAD : Not a 'get' call or attribute doesn't exist.";
+}
+
+DESTROY{}
+
+

@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -99,4 +99,13 @@ I felt that the code is already complex enough to warrant tests.
 
 OK so we have built the 3 solutions, but have not compared the speed yet.
 Let me leave that as an exercise for you now.
+
+<h2>Comments</h2>
+
+This is an interesting post, addressing a need that I encountered a few years ago. However, I think Gabor has unnecessarity constrained this by stating:
+
+Once in a while we need to find and remove an element. Either by the name of the element or by picking the oldest one.
+
+A useful generalization would be to allow searches on any date/time, or searches over a specified time interval.
+
 

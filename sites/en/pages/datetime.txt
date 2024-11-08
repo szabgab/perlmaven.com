@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -225,4 +225,41 @@ DateTime::Duration=HASH(0x7fb64a82d580)
 0 years, 285 months, 19 days, 00 hours, 1087 minutes, 52 seconds
 0-285-19 00:1087:52
 </code>
+
+<h2>Comments</h2>
+
+Hi, that helpd me a lot!!
+
+But why are the hours not counted?
+
+<hr>
+
+0 years, 285 months?
+0 hours, 1087 minutes?
+I feel that the fomat_duration method needs a little work.
+
+<hr>
+
+doesn't work for me, i always get this error:
+Can't call method "clone" without a package or object reference at C:/Dwimperl/p
+erl/site/lib/DateTime/Duration.pm line 310.
+
+---
+
+For example
+DateTime->new()->subtract(months => 6)
+
+<hr>
+
+Informative! Thank you.
+I play around with RPi and Arduino quite a bit and thus use time stamps often. Messing around with various modules from CPAN has led to a bit of frustration for me. I have been trying to settle on one which meets all my needs, has a relatively straight forward (simple) usage and runs on the Raspberry Pi (without taking it to its knees). This might be the one... I have used it in the past, but not for a while now. Will give it a shot again... Thanks for the clear examples.
+
+<hr>
+
+Commenting on Scarlet Manuka's post:
+
+In DateTime::Format::Duration->new(
+pattern => '%Y years, %m months, %e days, %H hours, %M minutes, %S seconds'
+one needs to add normalize => 1 to get the minutes etc. right
+
 

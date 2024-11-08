@@ -5,7 +5,7 @@
 =books beginner_video
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -70,4 +70,17 @@ Otherwise we set that field to <hl>1</hl>. It can be any arbitrary value, we are
 in <a href="/boolean-values-in-perl">True-ness</a> of that value.
 
 Finally we print the current line.
+
+<h2>Comments</h2>
+
+Interesting solution, but what is the point of the "ord" function? Can you not compare the value of "$chr"?
+
+Can you explain why just the first character as the title says "display unique rows of a file"? I would think the entire row would be considered in that case. I do realize there are cases where just the first character or "word" is important like a config file where you can override settings.
+
+I'd like to see a file check added to this line as follows:
+
+die "USAGE: $0 INFILE OUTFILE\n" if not $outfile;
+
+die "USAGE: $0 INFILE OUTFILE\n" if not (-s $infile && $outfile);
+
 

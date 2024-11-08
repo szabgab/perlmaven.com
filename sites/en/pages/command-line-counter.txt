@@ -5,7 +5,7 @@
 =books counter
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -78,4 +78,23 @@ That's because when using the ++ <a href="/numerical-operators">auto increment</
 <code>
 my $counter;
 </code>
+
+<h2>Comments</h2>
+
+Good, quick increment method. Thanks! Quick question, and follow up...
+
+What "newly declared variable $hl" to which you refer? Is that a typo for the $file(.txt name), or the $fh (file-handler), or for the newly declared $count variable, or is there something I'm missing here?
+
+My situation is that I want a quick cycle-counter to determine how often I do a very slow operation on a bigger CSV database.
+
+I have been trying everything I can to count the number of (fairly long, 1000-characters-in-100-fields) lines (records) in a fairly long (250,000-line) .CSV file very quickly so I can purge the oldest lines that exceed my pre-set line limit (established by an .INI variable I can adjust). BUT since there is no "fast" way of counting the number of lines in that huge file every time the script needs to reply to a URL request, I've decided it's better to set a "purge-frequency" variable expressing (in number of cycles) how often to actually count the total number of .CSV file-lines and initiate a purge of the overage -- say, once every 10,000 cycles, since 10k records (lines) more-or-less doesn't make a difference out of 250,000.
+
+THUS, and now I finally reach the point here, sorry -- I need a quick little counter that increments a single integer in a single field in a simple text file, JUST LIKE you are showing here. And this I can do every cycle very quickly (I think...about to test it, LOL), and easily compare the counter tally to the INI cycle-frequency variable to see if it's time to check total lines in the big .CSV file (and if over, purge the excess, by splice removal of the oldest, i.e., first, records). The purge isn't the slow part -- the counting total lines in that file is the slow part, by any method I can find under the sun.
+
+Am I correct in assuming that if I use your above on a very modern, multi-processor/core/thread CentOS NVMe-RAID machine that this -- your process above, of opening and incrementing a count in a 1-field TSV file -- should be virtually instantaneous for me? Any recommended changes you would make if it's going into a script that is part of a content-server? (Other than that we don't need to print to screen... )
+
+Thanks for a good explanation. I often read your stuff, and you lay it out pretty well to be understandable.
+
+<hr>
+
 

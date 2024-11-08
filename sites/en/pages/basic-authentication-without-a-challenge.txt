@@ -3,7 +3,7 @@
 =indexes LWP::UserAgent, MIME::Base64
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -86,5 +86,9 @@ This is the full script. (Of course instead of '123-345' we have to put out API_
 
 While this is certainly a working solution, I wonder if there is a better solution with the tools already built in LWP::UserAgent,
 and if not whether there should be. 
+
+<h2>Comments</h2>
+
+I think it is perfectly fine to hack around some website that isn't compliant by itself. But feel free to write LWP::UserAgent::Authorization::Basic, which will always send the BASE64 encode username and password conform RFC7617.
 
 

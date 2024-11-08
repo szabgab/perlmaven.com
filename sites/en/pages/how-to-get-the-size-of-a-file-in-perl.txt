@@ -3,7 +3,7 @@
 =indexes -s, stat, File::stat
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -98,4 +98,50 @@ say $stat->size;
 
 say stat($filename)->size;
 </code>
+
+<h2>Comments</h2>
+
+Dear Gabor,
+
+I have many large files which need to verify the lines. I can use
+
+ 
+
+system("wc -l < $filename");
+
+ 
+
+or I can use
+
+ 
+
+open (FILE,"$file");
+
+ 
+
+while<file>;
+
+ 
+
+my $size=$.;
+
+ 
+
+Either way took almost 12s to get the solution. Is there any faster way to do so? Any further suggestion would be highly appreciated.
+
+---
+
+
+Have you tried writing wc -l $filename (without the redirection) ?
+
+---
+
+It makes no difference whether wc opens the file or the shell opens it on stdin and wc reads that.
+
+---
+
+Counting the number of lines in a file is inherently slow. You should reconsider whether you actually need to do this ... it's hard to imagine a situation in which you need to verify the number of lines in a file and a byte count wouldn't work just as well.
+
+If you really really need this, then gnu's wc -l will be a lot faster than perl ... other implementations of wc may not be.
+
 

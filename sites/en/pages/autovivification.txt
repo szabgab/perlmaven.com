@@ -4,7 +4,7 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -390,4 +390,177 @@ elements while trying to check (or delete) internal elements.
 At least now we know why were they created.
 
 
+<h2>Comments</h2>
 
+Well explained, Gabor!
+
+This nested condition:
+if (exists $people{Bar}) {
+if ($people{Bar}{phone}) {
+print "Check Bar...\n";
+could more safely be written like this:
+if (exists $people{Bar}) {
+if (exists $people{Bar}{phone}) { # I added 'exists ' here.
+print "Check Bar...\n";
+in case $people{Bar}{phone} contains some false value like 0.
+But the nested condition could also be simplified to this:
+if (exists $people{Bar} and exists $people{Bar}{Phone}) {
+because the 2nd part of the condition will be tested only if the 1st part evaluates to true.
+
+And a minor typo - "As an alternatively" should read "As an alternative".
+
+<hr>
+
+Thanks Gabor.
+
+I have some issues as mentioned below.Can you please help
+I have arrays which has below format
+key1->key2->key3->value
+key1->key2->value
+key1->value
+....
+..
+There can be multiple arrays with unique value.Now when i try to create nested hash and json then i get the error :Not a HASH reference at createjson.pl at line $ref = \$$ref->{ $_ } foreach @_;
+
+#!/usr/bin/perl
+use strict;
+use warnings;
+use Data::Dumper;
+
+#Checking whether JSON perl module is installed or not
+is_JSON();
+
+my @lines = `find . -name *.txt|xargs grep -R 'TEST-TAG ='`;
+my $hash;
+my %jdata;
+##pattern of TEST-TAG is "/*TEST-TAG = Half_Pre_Float-Point->fma->hfma2_mma*/" or /*TEST-TAG = Half_Pre_Float-Point->fma*/
+
+foreach (@lines)
+{
+    my($all_cat) = $_ =~ /\=(.*)\*\//;
+    my($testname) = $_ =~ /\/.*\/(.*)\./;
+    if(!$all_cat eq ""){
+        $all_cat =~ s/ //g;
+        my @ts = split(',', $all_cat);
+        my $i;
+        foreach (@ts){
+            my @allfeat = split('->',$_);
+            my $count =  scalar @allfeat;
+            for($i = 0; $i<$count; $i++){
+                my @temparr = @allfeat[$i..$count-1];
+                push @temparr, $testname;
+                ToNestedHash($hash, @temparr);
+            }
+        }
+    }
+}
+%jdata = (%jdata, %$hash);
+
+my $json = JSON::XS->new->utf8->pretty(1);
+my $file_category = "./category.json";
+open my $fth, ">", $file_category or die "Failed to open $file_category: $!.\nPlease open it with p4 edit and retry";
+print $fth $json->encode(\%jdata);
+close $fth;
+
+#add the value in nested hash.
+sub ToNestedHash {
+    my $ref   = \shift;
+    my $h     = $$ref;
+    my $value = pop;
+    $ref      = \$$ref->{ $_ } foreach @_;
+    if(!isinlist(\@{$$ref},$value)){
+        push @{$$ref}, $value;
+    }
+    return $h;
+}
+
+
+# If element exists in the list
+sub isinlist {
+    my ($aref, $key) = ($_[0], $_[1]);
+    foreach my $elem (@$aref){ if ($elem eq $key) { return 1;}}
+    return 0;
+}
+
+---
+
+This expression: \$$ref->{ $_ } is really confusing. Could you simplify it?
+What is in $ref ?
+
+I'd add a print statement in front of that line to see what is in there. That might help to understand the problem.
+I'd also change the name to reflect the content not the type of the content that I think it has. (That seems to be incorrect anyway).
+Finally, I'd use File::Find or some more fun Perl module instead of external find and xargs.
+
+
+----
+
+
+Sure.
+explanation is here for subroutine ToNestedHash
+Take the first value as a hashref
+Take the last value as the value to be assigned
+The rest are keys.
+Then create a SCALAR reference to the base hash.
+Repeatedly:
+Dereference the pointer to get the hash (first time) or autovivify the pointer as a hash
+Get the hash slot for the key
+And assign the scalar reference to the hash slot.
+( Next time around this will autovivify to the indicated hash ).
+
+I had added print statements and have same question here  https://stackoverflow.com/questions/54070085/perl-not-a-hash-reference-while-creating-nested-hash-from-multi-dimension-array
+
+---
+
+BTW i was going through your another article https://perlmaven.com/multi-dimensional-hashes and issue is similar to Foo Bar, Programming: ARRAY(0x7fc409028508)
+
+I have around 20 arrays with below data.1-19 arrays has the same keys till dmma_simple and their values are different. 20th array has this content "MMA->Dmma->dmma_simple->dmma_complex-->value20" i.e. dmma_simple key now has the another key as well dmma_complex along with array of values.How to store such data?
+
+so the output is
+'MMA' => {
+'Dmma' => {
+'dmma_simple' => [
+'value1'
+'value2'
+...
+till 'value 19'
+]
+}
+},
+These are the arrays:
+MMA->Dmma->dmma_simple->value1
+MMA->Dmma->dmma_simple->value2
+...
+MMA->Dmma->dmma_simple->dmma_complex-->value20
+
+some keys e.g. dmma_simple has values mentioned in array and sub keys e.g. dmma_complex as well.So when program comes to key dmma_complex,it see dmma_simple is ARRAY and not hash hence gives error.How to solve this scenatio?
+
+Below is the output of this code.
+foreach my $i (@_) {
+print " before INDEX $i\n";
+print Dumper($ref);
+$ref =\$$ref->{$i};
+print "after INDEX $i\n";
+print Dumper($ref);
+}
+
+before INDEX dmma_simple
+$VAR1 = \{
+'dmma_simple' => [
+'dmma_884_row_col_aShared_bGlobal_cGeneric_rz',
+'dmma_884_row_col_aGlobal_bShared_cGeneric_rz',
+'dmma_884_row_col_aGeneric_bShared_cGlobal_rn'
+]
+};
+after INDEX dmma_simple
+$VAR1 = \[
+'dmma_884_row_col_aShared_bGlobal_cGeneric_rz',
+'dmma_884_row_col_aGlobal_bShared_cGeneric_rz',
+'dmma_884_row_col_aGeneric_bShared_cGlobal_rn'
+];
+before INDEX dmma_complex
+$VAR1 = \[
+'dmma_884_row_col_aShared_bGlobal_cGeneric_rz',
+'dmma_884_row_col_aGlobal_bShared_cGeneric_rz',
+'dmma_884_row_col_aGeneric_bShared_cGlobal_rn'
+];
+Not a HASH reference at createjson.pl line 81.

@@ -3,7 +3,7 @@
 =indexes Module::Install
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -48,4 +48,21 @@ to somewhere in <hl>@INC</hl>.
 
 Once you have installed Module::Install, run <hl>perl Makefile.PL</hl> of the desired module again again.
 It will probably list the dependencies and even offer you to install them automatically.
+
+<h2>Comments</h2>
+
+Can't locate ReadFastx.pm in @INC (you may need to install the ReadFastx module) im getting this error
+
+<hr>
+
+I have installed a module: Bio::Perl , but when I try to execute it in Padre, it shows an error can not locate BioPerl in @INC. Please guide me Sir!
+
+use strict;
+use warnings;
+use lib 'C:/Perl/site/lib';
+use Bio::Perl;
+$seuence="ATGGGGGAAAACCCC";
+$reverse_complement = revcom( $sequence );
+print $reverse_complement;
+
 

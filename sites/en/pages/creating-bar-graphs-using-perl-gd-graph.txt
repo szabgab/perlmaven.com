@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -204,4 +204,10 @@ There are even more parameters one can set for a <a href="https://metacpan.org/p
 and there are plenty more examples.
 
 
+<h2>Comments</h2>
 
+thank you very much
+
+How to change the bar coloue?
+
+Thank you this helped me a lot :)

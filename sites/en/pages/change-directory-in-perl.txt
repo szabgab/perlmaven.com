@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -125,5 +125,21 @@ Voila. we managed to permanently change the <hl>Current Working Directory</hl>.
 
 That happened because we have not run an external program and thus the Operating System
 did not have to create a new process.
+
+<h2>Comments</h2>
+
+"In order to protect the original process from anything bad the new process might do,
+the Operating System will reset everything, including the current working directory,
+after the process has finished." That's not really what's happening. The original process's current directory was never affected by the child process. It just continues working as if the new process had never been created.
+
+<hr>
+Thank you for the helpful tutorial!
+<hr>
+
+if my directory does not exist, can we check with chdir command, whether my directory exist or not?
+
+---
+
+ For that use the -e operator: https://perlmaven.com/file-test-operators
 
 

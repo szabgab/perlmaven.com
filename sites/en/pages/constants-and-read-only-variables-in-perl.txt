@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -244,4 +244,10 @@ if you'd really like to make the variables immutable, use the
 <hl>Readonly</hl> module.
 
 
+<h2>Comments</h2>
 
+The documentation for Readonly says that performance has been significantly improved when using Perl 5.8+ to the point of not recommending Readonly::XS. Cf.
+
+https://search.cpan.org/dist/Readonly/lib/Readonly.pm#Cons
+
+https://search.cpan.org/dist/Readonly/lib/Readonly.pm#Internals

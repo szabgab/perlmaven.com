@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -75,5 +75,14 @@ Sounds like a Windows specific library that is probabably better if you know you
 While Perl might not be the best language for desktop applications, it is certainly a lot of fun creating GUIs
 with Perl. Enjoy!
 
+
+<h2>Comments</h2>
+
+Tkx (Yet another Tk interface) is another option.
+
+thanks. added, though I see it has not seen a release for quite some time.
+
+
+Agree that it hasn't been updated recently. Do not know if that is because it is a thin wrapper for Tcl - thus no updates needed, or a lack of interest. At one time, Tkx was as the option to use when the Tk package had not been updated for a while.
 
 

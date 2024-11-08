@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -141,4 +141,8 @@ smaller than the <hl>$value</hl> of the current <hl>$key</hl>
 then we set the new <hl>$max</hl> to be the current <hl>$key</hl>.
 
 Finally, once we exhausted the whole hash, we can <hl>return $max</hl>.
+
+<h2>Comments</h2>
+
+my $highest=(sort {$b <=> $a} keys %height)[0]; # Give it to me in just one line!!
 

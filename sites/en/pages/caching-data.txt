@@ -3,7 +3,7 @@
 =indexes Cache, Cache::File, Storable, Data::Dumper::Sortkeys
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -244,5 +244,29 @@ so I passed the hash reference. First I got a warning
 I submitted a bug report and within 2 hours it was fixed. Now (Cache v2.10) the warning says:
 
 <hl>Reference passed to set at .../Cache.pm line 293.</hl>
+
+
+<h2>Comments</h2>
+
+Hallo,
+
+If I want to send a hash in the cache, shall I send the hash as such or its reference ?
+
+I mean, if I have :
+
+my %myhash = ();
+$myhash{1}{2}=3;
+$myhash{4}{5}=6;
+
+shall I do :
+
+$cache->set( 'my_hash', freeze(%myhash));
+
+or :
+
+my $myreferencehash = %$myhash;
+$cache->set( 'my_hash', freeze($myreferencehash));
+
+Thank you!
 
 

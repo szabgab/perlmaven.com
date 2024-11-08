@@ -4,7 +4,7 @@
 =status show
 =books mojolicious
 =author moritz
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -97,3 +97,23 @@ Before you restart Apache to activate the configuration, run <hl>apachectl confi
 In the long run, you'll likely want to take more measures to ensure a smooth operation of your site. For example you can use <a href="https://letsencrypt.org/">Let's Encrypt</a> to obtain free SSL certificates, and offer secure connections to your users. To ensure uptime, monitoring and capacity planning are essential.
 
 But for now, you can enjoy your website running in a production setting.
+
+<h2>Comments</h2>
+
+Just wanted to say thanks. This was exactly what I needed to know, and with a quick adjustment or two for my particular environment, I now see "raptor not found" on the domain name of my choosing. This is fun!
+
+<hr>
+
+Hi,
+Thanks for this post. Can you also provide the steps for deploying the mojolicious app on shared hosting using cpanel. I am struggling with the same while using CGI.
+
+---
+   I'm also in a shared environment and could use some pointers
+
+---
+
+I have not use a shared environment for more than 20 years. I wonder what value do you get from such environment instead of having your own vps?
+
+<hr>
+thanks Moritz!
+

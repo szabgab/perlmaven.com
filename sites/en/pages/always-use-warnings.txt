@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -355,5 +355,55 @@ I'd recommend to <b>always</b> <hl>use warnings</hl> in your perl code.
 
 Possibly even <hl>use warnings FATAL => 'all';</hl> though this might be better
 fit during development and testing.
+
+
+<h2>Comments</h2>
+
+I know I'll be branded a heretic by a number of far-more-knowledgeable-than-I perl gurus, but I have "use warnings FATAL => 'all';" in my production code. With proper testing, very few warnings escape into the wild, but the few that do result in a crash that I must deal with instead of papering over. And they've managed to stop the execution before an unhandled situation caused even worse damage than an abort. Even though I've gotten support calls at 3AM to deal with it, far too often had they continued despite a warning, things would have turned out badly. Instead of an hour or two dealing with the issue and then resuming, it would have been six+ hours of reverting the system just to rerun things with a fix.
+
+Better to blow a bit of my night than to blow an entire weekend.
+
+(After a few years, I did manage to get it to the point where this didn't happen anymore, but not by removing the FATAL aspect of warnings - by handling the situations properly, even if that meant "no warnings ..." in small blocks.)
+
+----
+
+At the last placed I worked we did this in production code. One major agurment in favor, was that if they were fatal only in development environments, then we have a situation where development environments behave differently than production ones, and this is something we generally tried to avoid.
+
+---
+And especially with the product Mark and I were working on, it was entirely likely that customers running production code could run into situations we hadn't anticipated in our development and testing.
+
+
+<hr>
+
+Aside from code cleanup and ensuring that unutilized values and core functions missing items, the bugs that warnings catches tend to be minor/trivial/non-consequential. Additionally a huge number of modules which are commonly used won't comply in all cases with use warnings resulting in erroneous warnings for errors which aren't really errors.
+
+I can see using warnings as a way to ensure clean code *style* from the stand point of variable allocation, sigils, but I've never found it useful for general day to day programming and debugging.
+
+---
+
+That sounds like you are very good programmer who does not make mistakes. Congratulations. Most of us are not that good.
+
+----
+
+
+no, this doesn't have anything to do with being a good or bad programmer, It just has to do with the verbosity of non-fatal (and in most cases) non-effect error logging, and in some cases can cause additional problems for other tools monitoring the script (suddenly the script starts spewing out trivial warnings about unused variables, this breaks something, and now things are broken because of a warning which has zero effect on code stability performance or reliability.
+
+
+----
+
+
+Except that in many cases, the warning does NOT have zero effect. Read the post again: most, if not all, of these warnings prevent serious errors in the software.
+
+I, for one, would rather have my software throw an exception and crash if it reaches a conditional and I haven't anticipated what I want to happen if the value I'm testing is undefined.
+
+Of course, it might be that your software don't do anything important to begin with, so it's more important to you that it run without producing warnings when it encounters bugs than it is for it to produce consistent and CORRECT output. In my job, on the other hand, I want my software to crash with an error rather than silently produce incorrect results.
+
+<hr>
+
+Absolutely. Warnings are, if anything, *more* important than strict.
+
+And where possible, make them FATAL.
+
+<hr>
 
 

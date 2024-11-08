@@ -5,7 +5,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -247,4 +247,110 @@ For those cases you'd probably want to use a tool such as <hl>Getopt::Long</hl> 
 the content of <hl>@ARGV</hl> based on some declaration of what kind of parameters you'd want to accept.
 
 
+<h2>Comments</h2>
+
+Thanks so much.
+
+I haven't written Perl since the dot com boom but now Im using it again for my work in the solar power industry reading data from, and creating 8logs and graphs of solar system performance because the manufacturer software is bad so its an inside job now.
+
+Y'all pop high on google and your info is great!
+
+What, no PayPal link? Think about it.
+
+---
+
+Thanks. You could support the crowdfunding of my Dancer book. See the book cover in the middle of the article.
+
+<hr>
+
+The typic extraction is done with a loop
+e.g.
+for ( my $i = 0 ; $i <= $#ARGV ; $i++ ) {
+$valid = $ARGV[$i];
+if ( substr( $ARGV[$i], 0, 1 ) ne '-' ) {
+push( @toplevel, $ARGV[$i] );
+$valid = '';
+}
+elsif ( $ARGV[$i] eq '-i' ) {
+$map = $ARGV[ ++$i ];
+$valid = '';
+}
+elsif ( $ARGV[$i] eq '-n' ) {
+$uvm_reg_file_name = $ARGV[ ++$i ];
+$valid = '';
+}
+elsif ( $ARGV[$i] eq '-o' ) {
+$outputdir = $ARGV[ ++$i ];
+$valid = '';
+}
+if ($valid) {
+print "Invalid option '$valid'\n";
+usage();
+exit;
+}
+}
+
+---
+
+No. The typical extraction is done by one of the Getopt modules.
+
+<hr>
+
+Write a Perl program to create an associative array ("hash") named "last_name"
+whose keys are the five first names "Mary", "James", "Thomas", "William", "Elizabeth".
+Set the corresponding values for these keys to be "Li", "O'Day", "Miller", "Garcia", "Davis".
+Then print out the five full names, each on its own line, sorted primarily by length of last name
+and with a secondary sort alphabetically by first name.
+
+<hr>
+
+Using "//" will avoid "0"
+
+```perl
+my $name = $ARGV[0] // die "need name. \n";
+```
+
+The article is great 😃
+
+<hr>
+
+I have version 5.28.1 of Active State PERL. I have a program that had been working fine, but now for some reason, the @ARGV array no longer holds the command line arguments. I used debug to check the array and $#ARGV = -1 and the array elements were empty. After checking and printing the version # of PERL, and setting the use statements, I do this test.
+
+# Validate command line
+if ((!(@ARGV)) || ($#ARGV != 2 )) {
+# if command line invalid, print Usage:
+print "Syntax: RenameFiles.pl <pathtodir> <oldnamestringfrag> <newnamestringfrag>\n\n Put quotes around path and file names containing spaces\n" ;
+die "Need path to target directory, OldStrFrag, ReplacementStringFrag!\n" ;
+}
+
+In debug mode, I inserted correct values for the @ARGV array prior to reaching this point in the code and the program executed correctly. Any idea of what is up? I am using Windows 10 Pro.
+
+<hr>
+
+how to take $ARGV[0] as input and open it as a file for reading
+
+<hr>
+
+I am having issues with using the asterisk (*) as a parameter when running Perl from DOS on Windows 10. The asterisk parameter is automatically being expanded into multiple parameters. Each of the parameters received into @ARGV are file names within the current path. To get around this I need to modify all of my Perl programs so that when I run them I must enter '*' rather than just the asterisk. When this is accomplished then the Perl program receives $ARGV of '*'. It is then necessary for me to eliminate the leading and trailing single quote characters in order for my original programs to function properly.
+
+Are you aware of any Windows 10 OS setting that is causing the automated expansion of the asterisk within parameters? I know this is normal for certain DOS commands such as DIR *, but this seems to be new for me running a Perl program. Or, is this a new issue with the version of Perl that I am running? My Perl version is "This is perl 5, version 14, subversion 4 (v5.14.4) built for MSWin32-x86-multi-thread".
+
+<hr>
+
+What about Windows?
+
+The don't working:
+
+perl some_code.pl *
+
+Don't print list of files in directory
+
+---
+
+One needs to understand that * on the command line is handled on Linux/Mac by the shell. Windows ignores it.
+Unrelated to the programming language you use.
+
+----
+
+I understand this already. I dont use now @ARGV but use glob(. * *) - its works at Windos and Unix.
 
