@@ -4,7 +4,7 @@
 =status show
 =books dancer
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 =show_related 0
 
 =abstract start
@@ -56,4 +56,15 @@ and visit http://127.0.0.1:5000/ to see how does it work.
 
 It is quite easy. You can clone the one I have created, or you can copy the <a href="https://github.com/PerlDancer/Dancer2/tree/master/share/skel">share/skel</a>
 directory from the Dancer2 distribution and tweak it for yourself.
+
+<h2>Comments</h2>
+
+Thanks Gabor. Article looks good.
+
+can see app.pl inside bin directory, 
+
+so command should be 
+
+plackup -R lib bin/app.pl
+
 

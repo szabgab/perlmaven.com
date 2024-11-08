@@ -5,7 +5,7 @@
 =books dancer2
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -292,3 +292,25 @@ but apparently it does not support it. There is even an <a href="https://rt.cpan
 For now I am going to leave the test in, commented out and include the link to the ticket. Later we might revisit the issue.
 
 <a href="https://github.com/szabgab/D2-Ajax/commit/bd94d5c1c0b1ccf228de43b704c2cf5d14e9de76">commit</a>
+
+<h2>Comments</h2>
+
+Hello, sir I try to delete the product id from session, it already deleted the data, but I still have problem that the data is still keep the old data until we click to other pages that it will not show on the view page. How make it smoothly to get new data after we deleted?
+
+         function clearCart()
+{
+    var msgClear = confirm ("Are you sure you want to clear carts list?");
+    if (msgClear) {
+        $.ajax({
+            type: "POST",
+            url: "",
+            data: "",
+            success: function (response) {
+                alert(response);
+              
+            }
+        });
+    }
+}
+
+

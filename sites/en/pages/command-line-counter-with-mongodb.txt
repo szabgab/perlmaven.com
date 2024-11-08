@@ -1,11 +1,11 @@
-=title Command line counter in Perl with MongoDB as storage 
+=title Command line counter in Perl with MongoDB as storage
 =timestamp 2017-05-16T18:50:01
 =indexes MongoDB, findAndModify, upsert
 =status show
 =books mongodb
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -48,5 +48,9 @@ my $res = $col->find_one_and_update(
 For further details check out the article on 
 <a href="http://docs.mongodb.org/manual/tutorial/create-an-auto-incrementing-field/">creating and auto-increment field</a>.
 
+
+<h2>Comments</h2>
+
+File with same columns but -- they do not line up vertically how does one line up the columns
 
 

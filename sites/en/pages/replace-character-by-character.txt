@@ -3,7 +3,7 @@
 =indexes y, tr
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -120,5 +120,29 @@ Here we generate the list of characters that we want to replace from the keys
 of the <hl>%map</hl> hash.
 
 This will work exactly as the <hl>tr</hl> works, but then again, why not use a <hl>tr</hl> if this is what we would like to do?
+
+
+<h2>Comments</h2>
+
+Gabor...I am very thankful you take the time to teach us. I do not get to use Perl much but every time I do I find myself back reading what you have written to us. Thank you sir!!!
+
+<hr>
+
+Can i use transliterate fom one start point to another last point.
+
+Lets have the string "blablabla (blablah) ablaabla" and i have to transliterate only the contents of the parentheses. Can i use regex and then tr///.
+
+I wrote this :
+
+#!/usr/bin/perl
+use strict;
+use warnings;
+use 5.010;
+
+
+my $string = 'blablabla (blablah) ablaabla';
+
+
+if ($string =~ /(\(.*?\))/g) {print $1=~ tr/abcdef/ABCDEF/;}
 
 

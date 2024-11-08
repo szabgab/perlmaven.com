@@ -3,7 +3,7 @@
 =indexes @ARGV, Getopt::Long, GetOptions
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -379,4 +379,47 @@ you could take a look at <a href="https://metacpan.org/pod/MooX::Options">MooX::
 <a href="/switching-to-moo-adding-command-line-parameters">Switching to Moo - adding command line parameters</a>
 and 
 <a href="/command-line-scripts-with-moo">Writing Command line scripts and accepting command line parameters using Moo</a>.
+
+<h2>Comments</h2>
+
+What happens if I have the following code:
+
+use strict;
+use warnings;
+use 5.010;
+use Getopt::Long qw(GetOptions);
+
+my $source_address;
+my $dest_address;
+
+GetOptions('from=s' => \$source_address,
+'to=s' => \$dest_address) or die "Usage: $0 --from NAME --to NAME\n";
+if ($source_address) {
+say $source_address;
+}
+
+if ($dest_address) {
+say $dest_address;
+}
+And I use a command like (where I forgot to enter the second option:
+
+perl sample-perl.pl --from nyc lon
+Output will be: nyc
+
+How can I enforce that when there is an additional string at the end, it is detected and an error is displayed.
+
+---
+
+Check if there is any leftover values in @ARGV after you called GetOptions.
+
+---
+
+Yes. That did the trick. Thanks.
+
+<hr>
+
+my $res = GetOptions ("change-directory | cd! " => \$changedir)
+
+what does the above key indicates??
+
 

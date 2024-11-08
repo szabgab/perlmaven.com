@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -161,4 +161,12 @@ In any case this is pretty nice.
 <h2>About Test2</h2>
 
 For more information see also the <a href="http://test-more.github.io/Test2-Suite/">Test2-Suite</a> by Chad 'Exodist' Granum.
+
+
+<h2>Comments</h2>
+
+Even better would be to make use of the optional parameter to `is()` (and `ok()`), namey the description of the test, e.g.
+
+    is( App::add(3, 4), 7 , "add(3, 4) = 3+4 = 7");
+
 

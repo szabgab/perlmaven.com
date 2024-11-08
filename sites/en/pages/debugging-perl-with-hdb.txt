@@ -3,7 +3,7 @@
 =indexes Devel::hdb, -d
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -118,3 +118,18 @@ enough for a first taste.
 source code is on <a href="https://github.com/amb43790/Devel-hdb">GitHub</a> waiting for
 you to fork and improve.
 
+<h2>Comments</h2>
+
+thanks for the good hint to Devel::dhb debugger. I've tried your example. But running my Firefox Browser
+I did not see any panes with file content or other debgger features. Internet Explorer did it too.
+The only thing I see is some commands.
+
+saveconfig:  " /saveconfig"
+subinfo:        "/subinfo"
+source:         "/source/getfilename.pl"
+stepover:      "/stepover"
+program_name: "getfilename.pl"
+packageinfo:      "/packageinfo"
+...
+
+What is going wrong ? Could you please help me ?

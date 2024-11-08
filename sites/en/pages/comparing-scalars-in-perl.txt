@@ -5,7 +5,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -119,4 +119,13 @@ given string is empty.
 
 If you run this script and type in "abc" you will get that it is TRUE,
 as if Perl thought "abc" is the same as the empty string
+
+<h2>Comments</h2>
+
+what if I want to Print value in between, example ,
+
+cat /proc/partitions | tail -n+3 | grep sd. | perl -lane 'if ($F[2] > 900000000) { print "/dev/".$F[3] }' | sort === here it will print all above 900000000 blocks disks
+
+but what signs will be there if I want to print blocks between value 900000000 and 4007018584 ?
+
 

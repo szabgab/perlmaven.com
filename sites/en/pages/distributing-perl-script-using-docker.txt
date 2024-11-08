@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -123,4 +123,25 @@ docker load my.tar
 </code>
 
 After that we can run the image as we did earlier.
+
+<h2>Comments</h2>
+
+can run this script with localhost directly from browser ?
+http://localhost:3000/script.pl
+
+---
+
+It's not a CGI script :)
+
+For extra points make it a Catalyst app and EXPORT port 5000..
+
+<hr>
+
+I've followed this example up to running it with no arguments via "docker run myperleg2" fine, but when I add "--verbose" I got the baffling:
+
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:345: starting container process caused "exec: \"--verbose\": executable file not found in $PATH": unknown.
+
+It seems to be trying to execute '--verbose'? This is with Docker version 18.09.7, build 2d0083d, on Ubuntu 18.04
+
+EDIT: sorry, my mistake. I still had a CMD to run the Perl script, not an ENTRYPOINT. Forget I spoke:-)
 

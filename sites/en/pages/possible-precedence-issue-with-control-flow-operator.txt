@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -90,4 +90,16 @@ They can reveal all kinds of potential bugs.
 
 Also <a href="/testing-for-no-warnings">check for no warnings</a> during the tests. That will help you locate
 new warnings that were not around in previous versions of Perl.
+
+<h2>Comments</h2>
+
+somewhere in documentation it is documented that `return` looks like a function call, but actually it is not. So we should not expect `or ...` willbe executed after `return ...`
+
+But I agree with you. It will be good if perl warn about never reachable code.
+
+<hr>
+
+This reminds me of a similar problem I had once with `exit`; I wrote a blog post about that ( https://blogs.perl.org/users/buddy_burden/2014/06/when-a-failure-is-not-a-failure.html )
+
+I'm not sure it's the same issue—I'm not sure if `return` is considered a named unary operator like `exit`—but tobyink's final comment on my blog post is interesting either way. :-)
 

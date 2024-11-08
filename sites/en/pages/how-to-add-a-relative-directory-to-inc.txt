@@ -4,7 +4,7 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -275,5 +275,29 @@ Unlike the other solutions, if there is no <hl>lib</hl> directory, this won't ad
 <h2>Conclusion</h2>
 
 If you can install CPAN modules, and I really hope for your that you can, I'd recommend <hl>Path::Tiny</hl>, <hl>rlib</hl>, or <hl>FindBin::libs</hl>.
+
+
+<h2>Comments</h2>
+
+Curious if this would be a ok to use to make sure your scipt finds your lib dir.
+
+use lib "../lib";
+
+Seems pretty simple. Is there a reason why you wouldn't use this?
+
+---
+
+That's relative to the current working directory and not to where the script is. That is, it is relative to where *you* are when you run the script.
+
+<hr>
+
+When I run FindBin in taint mode (-T), it give "Insecure dependency in require ..." error.
+Here's a post related to this issue. I am not sure if I still be able to use FindBin for this reason.
+
+https://www.perlmonks.org/?node_id=41213
+
+<hr>
+
+Good article that rounds up all the weird and wonderful solutions to this obvious and common problem. It looks like FindBin is the simplest solution (doesn't require any thinking or programming to implement). Perl is a great language but it shoots itself in the foot by not thinking about these simple use-cases; would the heavens fall if Perl just, by default, included the script-dir in @INC?
 
 

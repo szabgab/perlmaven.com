@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -169,5 +169,9 @@ In that case we assign <a href="/undef-and-defined-in-perl">undef</a> to the Inp
 
 <a href="https://metacpan.org/pod/perlvar">perldoc perlvar</a> (search for <hl>$INPUT_RECORD_SEPARATOR<hl>),
 and <a href="http://perldoc.perl.org/functions/chomp.html">perldoc -f chomp</a> might have more to say about the topic.
+
+<h2>Comments</h2>
+
+This all works well when the file one is opening is an ascii file. I have a situation where the contents of my file contains RUSSIAN letters. using the normal value of $/ with perl when this file is a form of unicode - causes many of the non-ascii valued russian letters to match as 'newlines'. Can you suggest how this is handled when the files are a form of unicode? so that no 'false positive' matches occur with the Russian characters? If it helps, this is how I am opening the file... open(IN, "<:encoding(UTF-8)", $setlist )
 
 

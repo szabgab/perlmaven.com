@@ -3,7 +3,7 @@
 =indexes Config::Tiny, DigitalOcean, Digital Ocean
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -436,4 +436,12 @@ $server->destroy;
 In another article I've described how to <a href="/getting-started-with-perl-dancer-on-digital-ocean">get started with Perl Dancer on Digital Ocean</a>.
 You can now combine the two articles and create a script that will create a Droplet and set up a Dancer-based web application.
 
+<h2>Comments</h2>
 
+Great article thanks Gabor
+
+<hr>
+
+Gabor - have always loved your work. FYI - DO has APIv2 now and there's a new CPAN library available. https://www.digitalocean.com/community/projects/webservice-digitalocean and
+
+WebService::DigitalOcean

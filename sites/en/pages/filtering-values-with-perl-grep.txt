@@ -5,7 +5,7 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -134,5 +134,62 @@ the filtering are printed.
 
 Windows does not come with a grep utility but you can install
 one or you can use the same Perl script as above.
+
+<h2>Comments</h2>
+
+Gabor (can I call you Gabor ... or Mr. Szabo?) - Thanks for this article. I wanted to see if a string started with one of many possible words in an array - which I could not find anywhere around the web.
+
+So I came up with this ...
+
+my @result=grep { $my_string =~ /^($_)/ } @words;
+
+which I adapted from your line ...
+
+if (grep { $visitor eq $_ } @names)
+
+If the result is true, then it contains the one or more matches from the array which match at the start of the string! And because I am not looping over the list of words to match against $my_string ... I suspect that it is faster.
+
+Thanks!
+
+---
+
+A grep is a loop. You solution seems fine with a few caveats. You don't need the () around $_, but you'd better put a \Q in front of if so /^\Q$_/ otherwise if there is any regex metacharacter in your @words (e.g. on of the words is "a.c" then the . will be use as "any character" so it would also match things like "abc". Read also about quotemeta.
+
+<hr>
+
+Thank you for this.
+
+<hr>
+
+how can i grep numbers from log file and parse it to excel and how can i select only updated files from multiple files in perl
+
+<hr>
+
+how can i grep updated files in perl
+
+<hr>
+
+sub uniq {
+my %seen;
+grep !$seen{$_}++, @_;
+}
+what it do and explain it. please
+
+---
+Hi ravi, I think I can explain it.
+
+my %seen
+
+# 1) Here it create an empty hash array named "%seen"
+
+grep !$seen{$_}++, @_;
+
+2) Get all arguments of "sub uniq" in default array "@_"
+
+3)Go over iteration and create each element ($_) and make that element as key and value as 1 (++ does that). So that hash will look like %seen = ( "first_element" => 1, "second_element" => 1, .......... )
+
+4) grep !$seen{$_}++ ===> This will check if the next element is already in that hash, if present it will increment the value like ("first_element" => 2, ) else it add add new key like ("third_element" => 2), So you will get only unique list
+
+5) Now you have to return the filtered keys as an array
 
 

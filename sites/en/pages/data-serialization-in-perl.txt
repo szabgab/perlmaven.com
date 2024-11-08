@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -238,3 +238,26 @@ Alternatively, you can also implement Sereal for the other languages you need, b
 <h2>Discussion</h2>
 
 <a href="https://www.reddit.com/r/perl/comments/3jz6lv/data_serialization_in_perl/">Reddit</a>
+
+
+<h2>Comments</h2>
+
+In the meanwhile, there are Storable libraries for other languages, e.g. https://pypi.org/project/storable/
+
+<hr>
+
+Worth noting in your matrix which serialisation formats are binary.
+---
+Is the update what you though of?
+---
+More like a new column, but it'll do :)
+
+---
+I tried that but it felt strange to have to have XML next to XML, YAML, next to YAML, etc.
+
+<hr>
+Which of the serializer can represent referenced Objects?
+my $data = { "eins" => new Meta::Info() }
+* then serialize and after deserialisation i get again a
+{ "eins" => Meta::Info(...) } where Meta::Info is a object of class Meta::Info
+

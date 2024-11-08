@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -96,4 +96,43 @@ $VAR1 = {
 
 Bar
 </code>
+
+<h2>Comments</h2>
+
+The core of every program. Thanks for sharing.
+
+<hr>
+
+Hi Gabor.
+Thanks for your article. I can't see where you said WHY you prefer arrow notation over stacked sigils. Why do you prefer it? Cosmetics? Risk?
+---
+It looks much more readable to me, less confusing, and indeed less error-prone.
+
+<hr>
+
+Thanks much.
+Does line 15 in /examples/hash_deref.pl:
+
+    my %h = %$hr;
+
+triggers deep copy of the hash?
+
+---
+no
+
+<hr>
+
+Would love to see an explanation of how to reference a hash element contained within an array of hashes. Trying to figure that out now. I know the hash I want is the first in the array, but having trouble determining how to access it, in print for example; $arrayOfHashes->[0] has the hash I want, and the hash itself in that element has a value stored in hash key 'ID'. Tried things like %{@arrayOfHashes->[0]}->{ID} etc. but haven't found the magical combo.
+
+---
+$arrayOfHashes->[0]->{ID} or in shorter: $arrayOfHashes->[0]{ID}
+
+---
+Thanks!
+
+<hr>
+
+---
+
+use Data::Dumper to print out what is in %hash and what is in $ref. That will help you.
 

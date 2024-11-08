@@ -3,7 +3,7 @@
 =indexes Excel, Excel::Writer::XLSX, xls, xlsx
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 
 =abstract start
@@ -138,6 +138,50 @@ it is easier to access the cells using the coordinates.
 
 There is a lot more we can do with Excel and I am going to show further examples soon.
 
+
+
+<h2>Comments</h2>
+
+While running code I am getting the error as follows.(creating an Xls sheet code)
+
+Can't locate Excel/Writer/XLSX.pm in @INC (you may need to install the Excel::Writer::XLSX module) (@INC contains: /usr/lib/perl5/5.26/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.26/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.26/core_perl /usr/share/perl5/core_perl) at jdoodle.pl line 5.
+BEGIN failed--compilation aborted at jdoodle.pl line 5.
+Command exited with non-zero status 2
+
+can u please help me in this
+
+----
+
+Hey THANUGULA SRIKANT,
+
+    What is INC?
+
+
+INC is an array which consits the paths for the moules we mention in our program, basically funtions we use in basic perl program will be present in those directories.
+
+    What is the issue?
+
+
+This is error will be caused when the perl module [ in your case Excel/Writer/XLSX.pm ] is not avilabel in the directories mentioned.
+
+    How to solve?
+
+
+If you are the root user,
+Download package [in your case Excel/Writer/XLSX.pm] from metacpan [ in your case this is the URL for package ] and install in your system.
+If you are not the root user,
+step 1 : Download the package
+step 2 : untar the file
+step 3 : get the full path for the lib directory which will present inside that directory
+step 4 : include the path in the perl file.
+For example full path for lib directory is
+
+    /home/user/package/lib
+
+
+Include this line in the perl file.
+
+    use lib "/home/user/package/lib";
 
 
 

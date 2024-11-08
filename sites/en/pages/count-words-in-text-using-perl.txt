@@ -1,10 +1,10 @@
 =title Count the frequency of words in text using Perl
 =timestamp 2013-11-21T12:07:01
-=indexes hash, open, /g, split 
+=indexes hash, open, /g, split
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -193,4 +193,50 @@ the same can be written in two lines:
     foreach my $str (@string) {
 </code>
 
+<h2>Comments</h2>
+
+How to generate a output.txt file for the above mentioned code
+
+use strict;
+use warnings;
+
+my %count;
+my $file = shift or die "Usage: $0 FILE\n";
+open my $fh, '<', $file or die "Could not open '$file' $!";
+while (my $line = <$fh>) {
+chomp $line;
+foreach my $str (split /\s+/, $line) {
+$count{$str}++;
+}
+}
+
+foreach my $str (sort keys %count) {
+printf "%-31s %s\n", $str, $count{$str};
+
+----
+
+Why not search on this site how to write to a file and then solve it yourself?
+
+<hr>
+
+noob to perl is there a better way for achieving this?
+
+#!usr/bin/perl -w
+
+#takes a sting
+#returns a character that is most repeated ignoring case
+# if the two character are repeated same max number of times returns in character that is ASCII lower
+
+sub max_alphainhash{
+
+foreach $chare (split (//,lc $_[0])){
+$symbols{$chare}++ if ($chare=~ m/[a-z]/)
+}
+
+foreach $i ( reverse sort{$symbols{$a} <=> $symbols{$b}|| $b cmp $a } keys %symbols) {
+return $i
+}
+}
+
+print(max_alphainhash ("%,d0090900012930()sdfkkbbajj"));
 
