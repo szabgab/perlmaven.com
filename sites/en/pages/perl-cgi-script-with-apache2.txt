@@ -4,7 +4,7 @@
 =status show
 =books beginner, cgi
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -347,3 +347,60 @@ Of course using PSGI is much more <a href="/modern-web-with-perl">modern</a> and
 than CGI. For that you might want to check out the <a href="/dancer">Perl Dancer</a>, or the <a href="/mojolicious">Mojolicious</a> frameworks.
 They provide a better experience.
 
+<h2>Comments</h2>
+
+I just wanted to thank you for this detailed guide. I've been trying to get perl running correctly with Apache2 for so long I never thought i'd see it run. I think all the other guides must have assumed some other software was present, but this guide worked from a fresh install, thanks so much!
+
+<hr>
+
+Mirroring the previous comment; thanks so much. I went through a bunch of guides and posts but ultimately this was the one that got my Perl working.
+
+Such a good job. I am definitely bookmarking this site!!
+
+<hr>
+
+This link is spot on and thanks to Gabor for this effort.
+
+<hr>
+Thanks for the hint about the AH01257 error in Apache; I just spun up a new DO droplet and was being vexed by that one.
+
+<hr>
+Thanks for the great guide!
+
+I am running into an issue where test.pl never loads - no errors in the browser and no errors in the logs. Do you know what could cause this? The link is https://stroh.family/cgi-bin/test.pl
+
+
+You'd probably need to describe the situation in more detail to get help. e.g. What if you run "perl test.pl" on the command line? What is in test.pl? What are the rights on that file? What is in the web server configuration file?
+
+
+Can you run ./test.pl as well ? Without prefixing with perl.
+
+
+Yep, that gives the same output as when using the Perl prefix.
+
+
+Then I ran out of ideas for this remote debugging session.
+
+I appreciate the help! I will keep working and will update my initial comment if I figure it out.
+
+<hr>
+
+How works that with nginx? Thank you very mich.
+
+<hr>
+
+It is really a great post. Things happen exactly as described and they are explained!. The "Trouble shooting" section is very usefull too. Thanks a lot Gabor. One question: why do you suggest creating /var/cgi-bin directory instead of using the existing one /usr/lib/cgi-bin (on Debian Jessie) ? And with your permission one suggestion: Nowadays most of the sites are secured with SSL certificates. Thus the virtual host configuration file to be modified concerns <virtualhost *:443=""> Maybe it's worth to be mentionned.
+
+
+I think the reason was that I want to be sure it is not overwritten when an upgrade to the OS happens.
+
+Regarding https, mentioning it might be a good idea, but configuring it would need another post. Maybe with a link here: https://code-maven.com/the-importance-of-https
+
+<hr>
+
+Am a perl developer and am following your page for improving my knowledge in perl.
+During lockdown i started implementing perl projects in my personal computer. So i installed the Strawberry perl in my windows machine. Perl Script is running fine in cmd prompt. Could please guide me how to install apache in windows machine and configuring the conf files to run the perl files in website?
+
+My suggestion would be to install Linux in a VirtualBox environment or to use Docker on that Windows.
+
+Thanks for the info!

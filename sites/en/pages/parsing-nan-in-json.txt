@@ -3,7 +3,7 @@
 =indexes JSON, NaN
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -107,4 +107,7 @@ $VAR1 = {
 The JSON parsers of Perl are correct in <b>not</b> parsing <hl>NaN</hl>.
 The file created by the Python script was invalid.
 
+<h2>Comments</h2>
+
+No - they are incorrect - I have a string this is JSON serialized, but it needs to be turned into actual JSON. NaN is a valid value. JavaScript is not a real programming language and I hope someone replaces it for the web soon.
 

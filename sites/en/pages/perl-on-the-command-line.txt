@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -112,5 +112,167 @@ the article on <a href="/how-to-replace-a-string-in-a-file-with-perl">how to rep
 
 The next part is about
 <a href="/core-perl-documentation-cpan-module-documentation">core Perl documentation and CPAN module documentation</a>.
+
+<h2>Comments</h2>
+
+Hi,
+
+I wanted to write below command line program into a script, could you please help me on this.
+
+perl -pe 's/^/###TEMP/g;' text.rpt | exec perl -pe 'chomp ; s/Scenario/\n Scenario/g ;' | exec perl -pe 's/###TEMP/ ;/g' > ${p}/hh1
+
+<hr>
+
+use strict;
+use warnings;
+
+
+my $inData = <<indata; <p="">
+int abc;
+
+
+
+.abc(abc);
+
+
+INDATA
+
+open my $in_fh1, '<', \$inData;
+
+
+while (my $line = <$in_fh1>) {
+
+if( my ($intro) = $line =~ /([.(]?abc)/g){
+
+print "${intro}_$_;\n" for 1 .. 2;
+
+}
+
+}
+close $in_fh1;
+
+
+
+My output should be
+
+
+
+int abc_1;
+
+
+
+int abc_2;
+
+
+
+.abc_1(abc_1);
+
+
+
+.abc_2(abc_2);
+
+
+But it is coming
+
+
+
+abc_1;
+
+
+
+abc_2;
+
+
+
+.abc_1;
+
+
+
+.abc_2;
+
+
+
+Where is the mistake ?
+
+<h2>Comments</h2>
+
+Hi,
+
+I wanted to write below command line program into a script, could you please help me on this.
+
+perl -pe 's/^/###TEMP/g;' text.rpt | exec perl -pe 'chomp ; s/Scenario/\n Scenario/g ;' | exec perl -pe 's/###TEMP/ ;/g' > ${p}/hh1
+
+<hr>
+
+use strict;
+use warnings;
+
+
+my $inData = <<indata; <p="">
+int abc;
+
+
+
+.abc(abc);
+
+
+INDATA
+
+open my $in_fh1, '<', \$inData;
+
+
+while (my $line = <$in_fh1>) {
+
+if( my ($intro) = $line =~ /([.(]?abc)/g){
+
+print "${intro}_$_;\n" for 1 .. 2;
+
+}
+
+}
+close $in_fh1;
+
+
+
+My output should be
+
+
+
+int abc_1;
+
+
+
+int abc_2;
+
+
+
+.abc_1(abc_1);
+
+
+
+.abc_2(abc_2);
+
+
+But it is coming
+
+
+
+abc_1;
+
+
+
+abc_2;
+
+
+
+.abc_1;
+
+
+
+.abc_2;
+
+
+
+Where is the mistake ?
 
 

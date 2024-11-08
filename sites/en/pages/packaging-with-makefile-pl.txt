@@ -5,7 +5,7 @@
 =books advanced
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -87,5 +87,14 @@ that would install the module in the right place.
 
 
 On MS Windows, instead of <hl>make</hl> you'd probably have either <hl>dmake</hl> or <hl>nmake</hl> depending the toolchain you have.
+
+<h2>Comments</h2>
+
+I tried the command "make" on my WIN10 device , but it shows "'make' is not recognized as an internal or external command".
+Do you know how to fix this ?
+
+As Gabor noted on another article in this series:
+
+On MS Windows, instead of make you'd probably have either dmake or nmake depending the toolchain you have.
 
 

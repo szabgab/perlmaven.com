@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -193,3 +193,22 @@ if (open(my $fh, '<:encoding(UTF-8)', $filename)) {
 </code>
 
 
+<h2>Comments</h2>
+
+Does opening $filename within if condition automatically close the file after reading ?
+If not, How can I close this file ?
+
+No, you must close the file yourself with the close() function. In the examples above it would be close($fh).
+
+That's not exactly true.
+
+"The filehandle will be closed when its reference count reaches zero. If it is a lexically scoped variable declared with my, that usually means the end of the enclosing scope."
+Copied from here:  https://perldoc.perl.org/functions/open
+
+<hr>
+
+So reading with <> is reading line-by-line.
+This is great for files, but I'm interested in pipes.
+How to read all the available data from pipe, without waiting for \n or EOF to come?
+
+use read https://perlmaven.com/search/read

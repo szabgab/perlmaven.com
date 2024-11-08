@@ -3,7 +3,7 @@
 =indexes cpan, pinto
 =status show
 =author thalhammer
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -522,4 +522,9 @@ Each command has several options that were not discussed in this
 tutorial, and there are some commands that were not mentioned here at
 all.  So I encourage you to explore the manual pages for each command
 and learn more.
+
+<h2>Comments</h2>
+
+Hello, I don't know how old this article is, but im trying to create my own BackPAN by using Pinto. But I run into some problems getting the module versions I want. For example a pull to my custom Pinto repository for "Config::IniFiles 2.39" is not possible, because the module can't be found in the index of BackPAN. But I found this reference list of a complete BackPAN index ( backpan.cpantesters.org/backpan-full-index.txt.gz ) and there the module "Config::IniFiles 2.39" is listed and I can also find it under the path mentioned there. How is it possible to get and pull this module version automatically by using Pinto?
+
 

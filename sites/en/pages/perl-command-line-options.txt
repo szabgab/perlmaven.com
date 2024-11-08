@@ -3,7 +3,7 @@
 =indexes -v, -e, -E, -p, -i
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -244,4 +244,24 @@ There are a number of screencasts showing some of the command line options:
 <a href="/beginner-perl-maven-oneliner-sum-of-csv">One-liner sum of column in CSV</a>
 
 Another article show an example of <a href="/perl-on-the-command-line">Perl on the command line using -e, -p, -i</a>.
+
+<h2>Comments</h2>
+
+Your code snippet for -p has a bug (two bugs; -p works subtly differently from what your translation suggests, which you can show by including a next in the program): you need a ; after the s/// statement, or it's not valid Perl.
+
+<hr>
+
+Ooh. I didn't know -E. I'd been using -M5.010 -e.
+
+<hr>
+Thanks..Can we see at which line the changes has been done?
+<hr>
+
+
+perl main_raman_bfl.pl -p 1 -i 1 -e 0
+This Perl not built to support threads
+Compilation failed in require at main_raman_bfl.pl line 5.
+BEGIN failed--compilation aborted at main_raman_bfl.pl line 5.
+
+What is issue?
 

@@ -5,7 +5,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -209,3 +209,16 @@ $VAR1 = [
         'Baz',
       ];
 </code>
+
+<h2>Comments</h2>
+
+Great arrays tutorial, but i still feel lack of unshift operation- i use it to reverse an array, like while debugging, to access latest caller($i) element as first of @stack array
+
+my @stack;
+for ($i=0;;$i++) {
+my ($pack, $fn, $ln, $subr) = caller($i);
+last unless ($pack);
+unshift (@stack,[$pack, $fn, $ln, $subr]);
+}
+
+

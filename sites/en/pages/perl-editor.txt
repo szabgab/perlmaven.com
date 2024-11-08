@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -81,3 +81,13 @@ In October 2009 I ran a poll and asked <a href="http://perlide.org/poll200910/">
 
 While they are native to Unix/Linux, both <b>Emacs</b> and <b>Vim</b> are available for all the other major operating systems.
 
+<h2>Comments</h2>
+
+It's worth to mention that instead of Sublime there is also a free editor called Atom, very similar to Sublime in functionality. I'm not a user of it, because I still prefer vim.
+
+<hr>
+Perl plugin in intellij works well, I have been using it since quiet some time.
+
+<hr>
+
+VS code is also a great editor :)
