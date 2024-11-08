@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -39,4 +39,8 @@ list and the elements will be glued together with the given "connector".
 
 This "connector" can be any string, even the empty string.
 
+<h2>Comments</h2>
 
+Addition: you can also feed 'join' a list, as is shown here: https://perlmaven.com/sorting-mixed-strings
+
+Thanks this is what i was looking for!

@@ -3,7 +3,7 @@
 =indexes cron
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -66,4 +66,20 @@ MS Windows has a service called
 <a href="https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page">Windows Task Scheduler</a>. Use that.
 
 
+<h2>Comments</h2>
 
+How to run the written Perl program for every 1 hour in Windows? I need to take back up of files for every one hour. Please help.
+
+Look for the Windows Task Scheduler: https://learn.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page
+
+<hr>
+
+Hi Gabor,
+Few doubts want to get off.
+1) why can't we write 0 1 * * * command to run for every hour instead code line you provided.
+2) When I tried to replicate same code and tried to run corntab.txt by source command . I got error saying that 0 command not found so is there any header file to include before these set of lines. can you please help me in this.
+
+---
+
+1) That's the same I wrote with different numbers
+2) Then you might have done something else not what I wrote

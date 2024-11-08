@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 =sample 1
 
 =abstract start
@@ -178,3 +178,8 @@ $ git push
 
 In the meantime go and support the <a href="https://www.indiegogo.com/projects/updating-the-perl-maven-tutorial/reft/775728/pmarticle0302">crowdfunding campaign</a>.
 
+<h2>Comments</h2>
+
+Why not use: 1) a Moose-like object system like Mo. Moo, Mops, 2) real parser like Marpa or Regexp::Grammar?
+---
+I don't think M* has any added value at this point in the development and I don't know those parsers. But I'll consider both as suggestions for later on.

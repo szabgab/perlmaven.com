@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -97,4 +97,12 @@ this is not fool-proof an that if we launch two processes at the same time it mi
 before either of them could have a chance inserting its own and if there is no 3rd process running then both will think it their turn.
 This is true, but we launch the process from a cron-job once every minute and so we don't consider this an issue.
 
+<h2>Comments</h2>
+
+To fix the race condition you mention, you could have the primary key of the running process be 0, and try to do an insert with that id. If it works, you're the runner, if not, there's a process already running. When the process finishes it would do a
+
+INSERT INTO processes (timestamp, status, pid)
+    SELECT timestamp, 'endstatus', ...
+    FROM processes WHERE id=0;
+DELETE FROM processes WHERE id=0;
 

@@ -4,7 +4,7 @@
 =status show
 =books metacpan
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -130,5 +130,15 @@ MetaCPAN name spaces:
 This script, or something similar could be used to provide a list of all the
 plugins for <a href="http://perldancer.org/">Perl Dancer</a>, or <a href="http://www.perlcritic.com/">Perl::Critic</a>,
 or for any other module on CPAN.
+
+
+<h2>Comments</h2>
+
+hi, im developing a proyect using perl but ive been experiencing some trouble when i try to verify if the module is installed. the module giving me trouble is File::Basename, i install it by running the following commands: ./Configure -des -Dprefix=$HOME/localperl
+make test
+make install.
+thats what the README file sayis i need to run to install the module and a did it but when i try to verify if the module is really installed using: perldoc File::Basename it says: No documentation found for "File::Basename".
+
+File::Basename is a standard module. If you have perl installed you should already have it. Have you tried actually using the module? What OS do you use?
 
 

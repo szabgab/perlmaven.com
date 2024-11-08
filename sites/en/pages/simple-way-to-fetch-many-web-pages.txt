@@ -3,7 +3,7 @@
 =indexes LWP::Simple, HTTP::Tiny, wget, curl
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -168,4 +168,31 @@ and then waiting till the response reaches us, we waste quite a lot of time. We 
 requests in parallel and we would get our results much sooner.
 
 However, this is going to be covered in another article.
+
+<h2>Comments</h2>
+
+Can I read and extract data(actual, not HTML) from URL(website)? if yes, can you please update what APIs i can use?
+
+---
+You just found the article that explains it.
+
+---
+Thanks for reply, actually, when I try to print "$response->{content}" from above script, it prints HTML. I just want to need actual data without html tags and basically I want to parse tags and extract textbody. Is that possible? Thank you once again!
+---
+I am sure it is. Read the documentation of the modules. Check out https://metacpan.org/pod/HTML::Parser
+----
+Thank you! Appreciate your help!
+
+<hr>
+
+I tried the example where you downloaded perlmaven. I get " Failed: 599 Internal Exception". I also had to remove the s from {reasons}. Got any ideas?
+Thank you
+
+---
+
+I converted the examples to stand-alone scripts and tried them and they all worked perfectly. Did you try to fetch other URLs? Which ones? Have any of the other solutions worked for you?
+
+----
+Further investigating, I added a URL that will return status 599 and I see the key is indeed reason and not reasons. I've update the article with that. Thanks.
+However I don't know why would you get 599 on the Perl Maven URLs.
 

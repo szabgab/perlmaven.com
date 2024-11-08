@@ -4,7 +4,7 @@
 =indexes split, $_, explode
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -316,4 +316,111 @@ It is also a critical part of the example showing
 <a href="/count-words-in-text-using-perl">how to count words in a text file</a>.
 
 Another special case helps to <a href="/split-retaining-the-separator">retain the separator or parts of it</a>.
+
+<h2>Comments</h2>
+
+if i want to divide 256 bits string in two 128 bits strings then ?
+
+<hr>
+
+Minor frustration on my part - I was trying to split on the vertical bar (parsing some data output from sql). I completely blanked on it being interpreted as a regex OR, and so
+
+split /|/ 
+
+was splitting on empty string. So, of course I needed to escape it!
+
+split /\|/ 
+
+Good point. I've added your example to the article! Thanks.
+
+<hr>
+
+I have one problem to solve with perl and I cannot find the way here. Anyway I have to split one file into number of different files and to give name to them. example of the single uniprot file:
+
+AC P24567
+DC XXXXX
+SP H. sapiens..
+//
+AC P24567
+DC XXXXX
+SP E.colo..
+//
+Each entry is seperated by //, what I want is to split this file at each // at to give each file name according to its AC name (P24567, etc..). Can You give me some kind of hint where can I search for this kind of command.
+
+Best
+
+<hr>
+
+how to split a string with "." (dot ) base seperation ?
+
+escape it with a backslash: /\./
+
+<hr>
+
+hi , thankz for your post, i have a little questions , i try to split a a page txt , inside of them i have this text
+2020.07.28 00:00; 1214
+2020.07.21 00:00; 879
+2020.07.14 00:00; 879
+2020.07.07 00:00; 804
+
+i try to do that with this code
+
+use strict;
+use warnings;
+use autodie;
+use Data::Dumper qw(Dumper);
+
+my $file = 'C:\Users\pc\Documents\de.txt';
+open my $fh, '<', $file or die;
+$/ = undef;
+my $data = <$fh>;
+
+my @result = split(/\;\s*/, $data);
+#my @result = split(/\;\s*\w*/,$data);
+
+my ($username, $real_name) = @result[1, 0];
+print "$username\n";
+
+but with this code split first -- 2020.07.28 00:00 and second 1214 2020.07.21 00:00
+
+you have some idea for resolve it ?
+
+thanzk
+
+---
+
+You probably want to split each line on it own, right? Then
+1) don't set $/=undef; as this will become "slurp mode" reading the whole file into $data.
+2) read the file line-by and split each line on its own
+3) You might want to use Text::CSV for this.
+
+All the above have blog posts on this site
+
+---
+but if i read line by line is very slow then slurp mode
+
+---
+
+Have you measured it? How big is that file and how often do you read it that you notice any difference?
+
+---
+have minimum 3000 line and after extract data must do some calculation and rewrite other file , therfore i want use a best way for performance (if possible of course)
+thankz again
+
+---
+
+Then please just do the easy way and then if it is too slow, you can try to see how to improve. (It won't be too slow.)
+
+---
+but i just do it a script , the easy why for me is do a little correction i suppose at regexp , not rewrite all but ok thankz again
+
+---
+
+a programmer had a problem, he invented regular expressions to solve it ............ now he have two problems,after that :D for resolve a problem i must use this expression [\;\n]+ thankz again for help probably i test also a read line by line
+
+----
+
+You are now trying to solve the problem you created when you decided that you need to slurp in the file.
+
+<hr>
 

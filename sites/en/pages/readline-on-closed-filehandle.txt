@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -65,4 +65,22 @@ issue is the lack of error checking.
 <a href="/always-use-warnings">always use warnings</a>. 
 
 They can protect you from certain programming mistakes.
+
+<h2>Comments</h2>
+
+I think you forgot to actually use readline() in your example code. also, why would you name the life "try_to_read_log_file.pl" when you are opening an obviously config file? :-)
+
+<hr>
+
+Why not add in an existence check on the file itself before the open command? Both are better since this is not an atomic operation.
+
+if ( -f $filename ) {
+    open F, '<:encoding(utf8)', $filename or die "$!: $filename";
+        BLAH BLAH BLAH;
+   close F;
+}
+
+NOTE: Depending on the usage, the "-s" test may be better to see if the file size is > 0.
+
+@flamey : simple - the conf file references the log files so you can open them later in the code. : )
 

@@ -3,7 +3,7 @@
 =indexes hash, keys, values, sort, cmp, <=>, $a, $b
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -126,4 +126,20 @@ Gaur 2
 Of course if, we encounter two entries where both the <b>Position</b> and the <b>Max</b> fields have the exact same value,
 then even this sort won't provide the same results on every call.
 
+<h2>Comments</h2>
 
+Hi, I have created several Hash
+$PV_2{$JOB}=$PV_2;
+$PV_3{$JOB}=$PV_3;
+$PV_4{$JOB}=$PV_4;
+$PV_5{$JOB}=$PV_5;
+and I know the key name I would like to retrieve the data for in this case PV_5
+$PV="\$PV_5";
+$geoff=$PV{$JOB};
+but how do I get this statement to work as $PV is not resolved to $PV_5
+
+---
+It seems $PV_2{$JOB}=$PV_2; that you have both a $PV_2 scalar and a %PV_2 hash here. That's not a good idea for start.
+It is also unclear to me why do you have escaping on the $ sign in $PV="\$PV_5"; The key probably does not contain $, it is in the variable $PV_5, right?
+
+This does not seem to be the whole code, could you share a bit more that also shows the "use strict" part and the declaration of the variables.

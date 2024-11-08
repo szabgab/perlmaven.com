@@ -3,7 +3,7 @@
 =indexes LWP::UserAgent
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -374,3 +374,75 @@ There is an even simpler solution using <a href="/basic-authentication-with-lwp-
 We saw a number of ways to implement this. Using <h>credentials</hl> is the quick way, but we can also properly subclass
 LWP::UserAgent which provide a lot more flexibility and a potential to reuse our code.
 
+<h2>Comments</h2>
+
+Gabor - thank you for the excellent article. I have tried both the above and HTTP::Request::Common.
+I have a site that for logged-in users, allows getting 9 pages as a single page and allows access to each page one by one by providing a URI Query string like "?page=4".
+
+The code never gets a calls to the credentials function - so the Perl script "acts" like it is unauthenticated and the query string is ignored.
+
+Any ideas how I might approach this so the request WILL BE seen as authenticated?
+
+An example URI is
+http://seekingalpha.com/art...
+
+This gives back a single long article page when logged in on the site, but only one page when not, and the same from Perl.
+
+<hr>
+
+Good article. I tried to use your information for POST + LWP. But there differences between POST and GET - credentials work different.
+
+It was not simple to find working code examples for this.
+
+Here my code for POST + LWP.
+
+use LWP::UserAgent;
+use HTTP::Request::Common;
+
+my $ua = LWP::UserAgent->new;
+
+my $req = POST( $url, [ data => $filedata, type => "userlist" ] );
+$req->authorization_basic('gerd', 'mypassword');
+
+my $res = $ua->request( $req );
+
+print "respose-Code: " . $res->code . " reponse-Message: " . $res->message . "\n";
+
+---
+
+I appreciate your reply, it is indeed hard to find working POST requests for file uploads. I have a similar piece of code that I got working for a Canvas REST API. Feedback welcome. Love Perl Maven btw!
+
+#Perl program to send up files to Canvas SIS Import API
+
+use HTTP::Response;
+use HTTP::Headers;
+use HTTP::Request::Common;
+use LWP::UserAgent;
+use JSON qw{decode_json};
+
+#Setup header
+my $canvasAuthToken = 'Bearer <yourtoken>';
+my $post_course_filename = 'test_course.csv';
+my $post_course_URL = 'https://<your canvas="" instance="">/api/v1/accounts/self/sis_imports.json?import_type=instructure_csv';
+
+my $post_course_header = HTTP::Headers->new(
+'Authorization' => $canvasAuthToken,
+'Content-Type' => 'text/csv',
+);
+
+#From CPAN: $request = HTTP::Request->new( $method, $uri, $header, $content )
+#Build and post request
+my $request = HTTP::Request->new( POST =>,$post_course_URL, $post_course_header, Content => $post_course_filename );
+my $ua = LWP::UserAgent->new;
+my $response = $ua->request($request);
+if ( $response->is_success ) {
+print( $response->decoded_content . "\n" );
+my $json = decode_json( $response->decoded_content );
+}
+else {
+print( STDERR $response->status_line() );
+}
+
+
+<hr>
+fantastic article. very good ideas and executions.

@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -70,3 +70,14 @@ It skipped all the lines that did not start with DNA: and once it found a match 
 
 Calling <hl>redo</hl> will execute the current iteration again without checking the condition. I don't recall using it
 so let's not get into it now.
+
+<h2>Comments</h2>
+
+I was expecting something on the "continue" keyword, which is actually useful in some cases. There's a good example on the "eof" doc page (https://perldoc.pl/function....
+
+I find "continue" useful when parsing files, and I need to deal with line numbers. Also, when there's some work that needs to be done between iterations, but "next" or "last" is used a lot, "continue" can be more obvious and maintainable.
+
+"redo" is also useful sometimes, when external state changes, or IO is needed.
+
+---
+When I wrote this I was more focused on the idea that people new to perl would want to use the "continue" keyword they know from other languages and I wanted to direct them to the "next" keyword.

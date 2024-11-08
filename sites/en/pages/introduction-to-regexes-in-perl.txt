@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -127,4 +127,6 @@ So when you feel it is hard to understand a 20-character regex, compare that to 
 
 The other is that if you follow the Perl Maven articles and do the exercises, <b>you will learn how to read and understand regexes</b> and you won't have
 a problem dealing with regexes any more.
+
+
 

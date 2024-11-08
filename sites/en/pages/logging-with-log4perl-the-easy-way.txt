@@ -4,7 +4,7 @@
 =tags screencast
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -127,4 +127,25 @@ $logger->info(  "This is info");
 $logger->debug( "This is debug");
 $logger->trace( "This is trace");
 </code>
+
+
+<h2>Comments</h2>
+
+where does logger log to...I mean there must be a file where all all these logging message is stored.
+
+see https://search.cpan.org/~mschilli/Log-Log4perl-1.49/lib/Log/Log4perl.pm#Initialize_via_a_configuration_file
+
+It's done in a configuration file that you setup and use:
+
+use Log::Log4perl;
+Log::Log4perl->init("log.conf");
+
+<hr>
+
+How can we trace back the log file, I mean where exactly these errors will be stored?
+
+<hr>
+
+hey,
+the variable $WARN has to be set to Log::Log4perl::Level::to_priority( 'WARN' ) ?
 

@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -123,4 +123,19 @@ Note, it won't match the string '##' or the string "#xyz#", because the negated 
               # a character that is not in the list
 /a[b^x]a/     # aba, a^a, axa,  but not aza
 </code>
+
+<h2>Comments</h2>
+
+/a[b^x]a/ # aba, a^a, axa, but not aza
+I didn't get this.
+
+---
+'z' is not in the character class, therefore you cannot match it. It has to match 'a', then any character in the [] ( 'b' or '^' or 'x'), then 'a'. Hope it helps!!!
+
+<hr>
+
+I didn't understand /#[abcdef@.]#/ is matches with string "ab #z#a# ".
+
+Can you please explain this?
+
 

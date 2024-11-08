@@ -4,7 +4,7 @@
 =status show
 =books moo
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -135,4 +135,10 @@ such as <a href="/moose">Moose</a>, <a href="/moo">Moo</a>, blessed references a
 In fact they are all the same underneath and thus the above applies to all of them.
 
 
+<h2>Comments</h2>
 
+How to avoid the user using an object-method as a plain function?
+For example, we write a object-method receiving one parameter (apart from it self, $self), but when it used as plain function it will be confused, since in the sub block we are deal with the second parameter. Or, how to write a subrutine that can be used as both object-method and plain function. Or, how to distinguish which way the caller is using our subrutine.
+
+---
+IMHO the best thing you can do is check if the first parameter is the appropriate blessed reference or not. See "ref" in perl and "blessed" in Scalar::Util.

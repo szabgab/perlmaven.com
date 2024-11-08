@@ -4,7 +4,7 @@
 =status show
 =books marpa
 =author grandfather
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -151,3 +151,20 @@ I've written parsers of various sorts in a variety of languages, mostly for
 arithmetic expression parsing. Parsers can be fun, and are almost always
 frustrating to debug. My (small) experience so far with Marpa is that it
 enhances the fun and reduces the frustration.
+
+
+<h2>Comments</h2>
+
+I fail to see why
+
+[\w]+
+
+would look 'weird' to a perl programmer unless they had somehow never used regular expressions?
+
+---
+Author: weird in the sense that the [] are not required in Perl regular expressions where we would usually just use \w+
+
+---
+Ah! Hadn't thought of it that way since it nearly matches a common pattern I use when matching everything but some character, i,e, [^\{]+ for instance. Probably something I picked up from a fellow monk :)
+
+

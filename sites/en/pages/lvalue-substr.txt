@@ -3,7 +3,7 @@
 =indexes substr, Lvalue
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -63,4 +63,10 @@ you can use <a href="/perl-critic-one-policy">Perl::Critic</a>, and make sure th
 <a href="https://metacpan.org/pod/Perl::Critic::Policy::BuiltinFunctions::ProhibitLvalueSubstr">ProhibitLvalueSubstr</a>
 policy is enabled.
 
+<h2>Comments</h2>
 
+parameter 4 not taking variable as input in substr function in v5.22.1. any alternate way to do the same?
+
+Could you give an actual example of the problem you face?
+
+thanks for the quick response. I found another bug in my code. substr function works completely fine. thanks once again, inconvenience regretted.

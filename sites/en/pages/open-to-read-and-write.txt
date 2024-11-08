@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -103,4 +103,37 @@ the old content (after all the numbers are only incrementing), but in the genera
 It will ensure that we don't have left-over content from the previous version of the file.
 
 If you try to run this script 1,000 each in two separate windows you'll see it reaches 2,000 as expected.
+
+<h2>Comments</h2>
+
+Thanks Gabor, I've also use a semaphore methodology to achieve file locking when the file system won't cooperate and my script is the only processing modifying the file - this was a groupware project.
+
+For each run of the script that needs to modify a file, potentially over a long period of time. (this was a CGI script and Mac OS9 wasn't too keen on flock at the time)
+
+For each time through the script
+1 - Check for the presence of a semaphore file.
+2 - If not present open a new semaphore file with a predetermined name.
+3 - Optionally add contents such as current process or user name.
+4 - Open data file as outlined above
+5 - Let current process run through.
+6 - Write contents to data file as outlined above
+7 - Delete the semaphore file
+
+2a - If the semaphore file is present, optionally read the process/user and send a message to the requestor.
+
+This works as long as each process that accesses the file agrees to check for the semaphore file. I included a function to delete the semaphore file if the script quit unexpectedly due to a server reboot or something.
+
+Let me know if anyone would like the code for this process or why or why not it should be used.
+
+---
+It is a reasonable process, but because 1-2 are not atomic operations that means two process A and B might do in the following order: A1 B1 A2 B2, or if you have multiple cores then even at A1 and B1 can happen at the same time. So there is some risk. Flock (on Linux, Unix) eliminates the risk.
+
+---
+Thanks Gabor - those are good points. My app was for a small (<10) group of users, so close race conditions weren't an issue (I think) - but if this was used by a larger group, then everything with flock here definitely applies.
+
+<hr>
+Hello Gabor,
+It was an amazing post, but I need to clarify 1 thing. Can we parse a JSON file instead of TXT file in the above example?
+---
+For that you are better off using a JSON module:  https://perlmaven.com/json
 

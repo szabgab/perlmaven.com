@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -48,4 +48,9 @@ If you already know <a href="/how-to-install-a-perl-module-from-cpan">how to ins
 you can use <a href="https://metacpan.org/pod/Path::Tiny">Path::Tiny</a> to make this shorter.
 
 <include file="examples/prepend_with_path_tiny.pl">
+
+<h2>Comments</h2>
+
+Thanks a lot for this useful codes. One question of a beginner: using second version of the code (tiny) at the end of each line I got ^M. I think this has to do with Windows and defines end of line. Interestingly, using the first code (without tiny) after the second version the ^M disappears. So, I'm wondering if there is a way using second version of the code and omitting ^M.
+
 

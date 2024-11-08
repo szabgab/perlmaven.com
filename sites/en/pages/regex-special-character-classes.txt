@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -121,4 +121,8 @@ Expression    Meaning                                              Usage
 \P{...}      Negation of Unicode character class    
 </code>
 
+
+<h2>Comments</h2>
+
+"... as we just saw it or in this example: /#[XYZ]-\d\d\d/" I do not recall seeing it! What is the url?
 

@@ -3,7 +3,7 @@
 =indexes Marpa
 =status show
 =author grandfather
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -131,3 +131,7 @@ in the original test script the script runs to completion with the output:
 </code>
 
 Yay! Houston, we have lift off!
+
+<h2>Comments</h2>
+
+I saw the problem immediately. Most people don't understand that using FOO as a here-string terminator is the same as "FOO", which means the here-string is double-quote interpolated. What you wanted was 'FOO', which would have been effectively single-quoted.

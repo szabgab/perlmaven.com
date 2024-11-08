@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -199,5 +199,66 @@ That would insert the string <hl>"undef"</hl> which is not what you want.
 The first edition of this article was written by <a href="http://www.leprevost.com.br/">Felipe da Veiga Leprevost</a> who also makes the
 <a href="https://br.perlmaven.com/">Portuguese translation</a> of the Perl Maven articles.
 
+
+<h2>Comments</h2>
+
+how to declare an empty value ? I have key, but I want to declare the value as empty, how shall I do?
+
+I've updated the article with the answer.
+
+<hr>
+
+$key{$store[0].":".$store[2]} $=" ";
+please tell me whats wrong in this?
+
+What did you want to do with this?
+
+Try removing the $ before the =.
+
+<hr>
+Hi, please see the following code:
+
+while ($line = <stdin>)
+{
+while ($line =~ s/(\w+)(.*)/$2/)
+{
+$word = $1;
+$wordHash{$word}++;
+#Use a hash to count the occurrences of each word.
+}
+}
+
+I got this code from CIW syllabus; I don't quite understand why use ++ there and how does it count the occurrences?
+
+---
+
+There are several similar examples on this site. If this explanation does not work for you: https://perlmaven.com/beginner-perl-maven-counting-words-in-a-file look for other in our archive . Something about "counting words" or "counting digits".
+---
+
+Thank you. I read your other post and understand the concept now.
+
+<hr>
+
+Is it safe to increase the value of uninitiated hash element by one? Let's say I declare the following hash and increase it's element right away in the following manner:
+
+my %hash;
+$hash{'val'}++;
+
+The outcome will be 1 but is it always the case? Is it safe to use it this way? Thank you.
+
+yes
+
+<hr>
+
+read about hash slices https://perlmaven.com/hash-slice
+
+<hr>
+
+Dude, just wanted to say thank you, you don't know how helpful your portal has been to me
+
+<hr>
+
+Please tell me what "When the keys of a hash are not pre-defined values" means.
+Thank you for your clear and concise explanations
 
 
