@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -29,3 +29,9 @@ and
 <a href="https://metacpan.org/pod/Email::Stuffer">Email::Suffer</a> instead of MIME::Lite.
 
 
+<h2>Comments</h2>
+
+Thank you for the very informative and well-explanatory video. Can you also explain how this mail is sent encrypted, with for example "Mail::GnuPG"?
+
+With friendly greetings and thank you,
+Michael

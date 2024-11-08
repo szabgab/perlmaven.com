@@ -3,7 +3,7 @@
 =indexes open source products
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -855,4 +855,16 @@ now let me list them here:
 <a href="http://www.livejournal.com/">Live Journal</a> a shared blogging community system.
 </div>
 
+<h2>Comments</h2>
+
+Thanks for putting this list together Gabor. We need more advocacy of what great software has been written in Perl so we can support it and build a more cohesive community.
+
+<hr>
+
+If you do any work on the command line, then you really need to install ack. I just found it myself a few weeks ago and it's a fantastic search tool. Not only is it fast, it returns the results in a highly readable format and allows you to customize it however you like. I hadn't heard about it before, so I think this is a real gem that needs to be promoted more.
+
+<hr>
+Useful list there Gabor!
+
+Not open source, but another Perl application to add to your separate list is MIDAS (a room booking system) https://mid.as/
 

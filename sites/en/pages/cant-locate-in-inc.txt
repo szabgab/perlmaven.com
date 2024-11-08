@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -79,5 +79,25 @@ Can't locate warning.pm in @INC ...
  I often see this very special case when I am teaching Perl to beginners. The first thing I teach is
 to always add <hl>use warnings;</hl> at the beginning of every script. Unfortunately in many cases
 people write <hl>use warning;</hl> leaving out the trailing <b>s</b>. So this is is just a simple case of typo.
+
+<h2>Comments</h2>
+
+This problem might appear when you are using system function on perl to run another script inside yours. The reason for this in my case was that system function is called in a terminal that weren't allowed to load all the environment that contains my PM module. I found the following line in my ~/.cshrc file:
+
+# Exit if this is not an interactive shell
+#if ($?prompt == 0) exit
+
+Since the terminal that is executed the linux command from the perl script is not interactive the script failed with the same error that is addressed in this thread.
+
+<hr>
+
+I seem to have everything in order, but still getting error. Module is installed, .pm file exists, file permissions on file are sufficient and the path is included in @INC. I disabled SELINUX and stopped iptables. Can't uninstall and reinstall perl modules. Any ides?
+
+---
+
+Which module are you trying to use?
+
+<hr>
+You just saved a nerd , I was writing use warning
 
 

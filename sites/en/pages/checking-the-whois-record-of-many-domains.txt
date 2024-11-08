@@ -3,7 +3,7 @@
 =indexes Path::Tiny, path, /m, /g, Net::Whois::Raw
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -319,5 +319,38 @@ How can we make sure that the script can do something else while it is waiting f
 
 In a separate article I'll solve the same problem using <b>Asynchronous</b> programming.
 
+
+<h2>Comments</h2>
+
+Thank you a lot Gabor! Especially for the explanation
+
+<hr>
+
+Hello Gabor,
+
+I am getting the error below:
+#################
+google.com
+Error in google.com
+$VAR1 = [];
+#################
+
+Any idea about the above error?
+
+Also, I changed line 31 from "my ($data) = @_;" to "my $data = @_;" as I was getting an error of used of uninitialized variable at lines 33, 36, and 40. With that change the error disappeared.
+
+Regards,
+
+---
+
+That changes is certainly incorrect. It will put the number of elements of @_ into $data.
+
+---
+
+I also found the bug in the code. I am not sure if this part never worked or if the output of whois changed a bit. In any case I had to add a \s* in the regex to accept optional spaces in before the name of the Names Server:
+Now it seems to work.
+
+
+<hr>
 
 

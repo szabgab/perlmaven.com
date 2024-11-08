@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -26,4 +26,19 @@ need the <a href="/lwp-useragent-and-basic-authentication">other solution</a>.)
 
 If you have problems running the script, there are some nice techniques to make
 <a href="http://www.olafalders.com/2016/09/29/useragent-debugging-made-easy/">UserAgent Debugging Easy</a>.
+
+<h2>Comments</h2>
+
+This line doesn't look right!
+
+my $request = GET 'https://pause.perl.org/pause/authenquery';
+
+Don't we need something like this?
+
+my $request = HTTP::Request->new( GET => 'https://pause.perl.org/pause/authenquery');
+
+---
+
+This works too - and looks better :)
+
 

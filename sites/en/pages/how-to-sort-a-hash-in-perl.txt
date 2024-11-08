@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -218,4 +218,47 @@ foreach my $name (sort { $planets{$a} <=> $planets{$b} or $a cmp $b } keys %plan
 
 With this code Charon will always come before Pluto as they have the same distance from the
 Sun, but C comes before P in the ASCII table.
+
+<h2>Comments</h2>
+
+how do i randomize a hash (actually do the iteration in random order) on purpose.
+Yes, this in default from 5.18 how can i do it on 5.14?
+
+<br>
+
+Is there a way to keep the sorted hash for use after the loop?
+---
+Probably you can just try to carefully name the key of hash, like 01-key => value, 02-another-key => another-value. Then you can keep the sorted hash.
+---
+I hope that you both understand that a hash is never sorted. Right? You can keep the array of the keys sorted, but once you created that, the two data structures are disconnected so any change in the keys of the hash won't be reflected in the array.
+
+<br>
+
+Gabor, I refer to this page more than any other Perl Maven article.
+
+Thank you for writing this, it is very clear and informative!
+
+<br>
+
+You can get reverse ordered results in all examples above. Just add 'reverse' keyword in front of sort
+
+---
+or just reverse the $a and $b variables in the comparison
+
+<br>
+
+I want to exchange keys with values. without losing any data even if there a are duplicate values in the original hash.
+---
+Good, and what would you expect to have if there are two keys (e.g. foo and bar) for which we have the same value "hello". What would you want to have in the resulting hash?
+---
+
+Gabor's point is definitely the main one, you can't have duplicate keys.
+So in a simple reversed hash what would 'hello' map to? 'foo' or 'bar':
+But if the original poster wanted something "without losing any data" it might be useful to their application to create a slighty more complicated 'reversed' hash where say 'hello' now maps to an array ref of the original keys, something like:
+
+%original_hash = ( 'foo' => 'hello', 'baz' => 'goodbye', 'bar' => 'hello'); 
+%reversed_hash = ( 'hello' : [ 'foo', 'bar' ], 'goodbye' : [ 'baz'] );
+
+might fit their use case, who knows?!
+
 

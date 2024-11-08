@@ -5,7 +5,7 @@
 =books advanced
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -152,3 +152,90 @@ sub add {
      ...
 }
 </code>
+
+<h2>Comments</h2>
+
+This also works to get a single value out of an array reference:
+
+print "@{ $names_ref }[0]\n";    # Foo
+print "@$names_ref[0]\n";    # Foo
+
+---
+
+It works, but it is not correct.
+
+---
+
+Thank you for your reply. Since it compiles, runs and gives the correct result, what is the danger in using it? Under which circumstance does it go wrong? And since it is syntactically correct, what is it that this statement expresses?
+
+<hr>
+
+Hello,
+
+i'm a beginner with Perl and i'm trying to write a script to
+
+1-read directory files (~ files
+
+2-run external program on each with mutiple arguments (naturally entered on command line). both are running under cygwin.
+
+the perl script reach the program but it comes back with statment, unknown options reun -h (for help menu)
+
+I really appreciate any idea on how to put the arguments for the program in the perl script
+
+use strict;
+use warnings;
+#the directory path asssigned to a variable
+my $directory = '/home/genomes';
+#opening the directory or die
+opendir ('$mother', "$directory") or die "Could not open 'genomes' for reading \n";
+#read different file
+my @sequencefiles = readdir '$mother';
+foreach my $sequencefiles(@sequencefiles){
+#if it is a sequence file
+if ($sequencefiles =~ m/.fna/){
+#arguments for prodigal
+my $name = $sequencefiles =~s/\fna//; # file without extyension
+my $input = '-i $sequencefiles';
+my $output = '-o $name.gbk';
+my $cdna = '-d $name.mrna';
+my $trans = '-a $name.faa';
+my $start = '-s $name.start';
+my @cmd= '/usr/local/bin/prodigal.exe';
+push @cmd,'$name';
+push @cmd,'$input';
+push @cmd,'output';
+push @cmd,'cdna';
+push @cmd,'start';
+system(@cmd) ;
+
+}
+}
+
+
+---
+
+Look for argv in the archive:  https://perlmaven.com/archive
+
+<hr>
+
+is it possible to do this in one line:
+my @names = ('foo', 'bar', "moo\nand\nmoose");
+my $names_ref = \@names;
+
+Can I do the following?
+my $names_ref = \('foo', 'bar', "moo\nand\nmoose");
+
+<hr>
+
+I am trying to write a sub (amelyik) which returns the last element of an array (without pop-ing).
+
+Surely I will pass to the function a reference. But how do I get the $# last index value given the reference? (köszi) (Meanwhile a work-around: I am going pass an other parameter to the function: the size of array.)
+
+---
+Sorry, I just saw the answer in your cheat-sheet section.
+
+<hr>
+
+How do we initialize an array reference?
+
+

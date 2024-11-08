@@ -4,7 +4,7 @@
 =tags screencast
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -168,4 +168,9 @@ foreach my $addr (@addresses) {
           ->send;
 }
 </code>
+
+
+<h2>Comments</h2>
+
+Great article. I found that I was able to send mail to multiple addresses with a comma separated list.
 

@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -191,4 +191,165 @@ in which you put modules in a common standard location.</li>
 the script always picks up the modules relative to their own location.
 We'll discuss this in another post.</li>
 </ol>
+
+<h2>Comments</h2>
+
+What if the perl module is in the same path as the script? I tried running the script without any changes to @INC and I'm still getting the same error. Why is that?
+---
+Unlike in Python, Perl does not automatically include the path of the script in @INC. You need to do that yourself.
+---
+I MIGHT have a work around; a variable called $^0. Detects if Windows or Linux.
+
+$OS=$^0;
+use lib "path_to_perl5" if $OS == 'MSWin32';
+
+In theory, it will load the new path if on Windows, but when online on a Unix server, the IF will be false, and so library will not load.
+---
+I think based on this link you might not get the result that you expect, https://perlmaven.com/use-require-import
+this "if" is not work as you expected, during "use" statement execute on compile time not run time.
+
+<hr>
+
+---
+So which language do you already know. Perl or Python?
+---
+Boths of them. But I dont know @INC from perl to python.
+---
+Do you know what @INC is ?
+---
+
+This is the first times i work with file on perl and try to research but i dont know what @INC is
+---
+
+I am a bit confused now. You said you know perl but this is the first time you work with a file in perl?
+---
+
+Yes, I just know basic about array, hash, regex and I just know pert about several week
+---
+OK, so which part do you understand from the Perl code and which part not? What does this code do? (Search this site for answers if something you don't know.)
+
+---
+As I know, the Perl code below will find the file in directory where install Perl. Is it right?
+---
+
+You can say so. Yes.
+Now where do you need to search for a file with the python code and how far have you got or what are you still missing?
+---
+I got it, but I still not know the equivalent in Perl and Python (@INC) or library to support for this case in Python
+---
+sys.path
+---
+Thank you so much.
+
+<hr>
+
+Hi Gabor,
+Thank you for your article.
+
+I added "use lib" to my script and my problem, which was about @INC, was solved.
+But I got another the following error:
+Can't load '/home/MyAccount/perl5/lib/perl5/x86_64-linux/auto/XML/LibXML/LibXML.so' for module XML::LibXML: /home/MyAccount/perl5/lib/perl5/x86_64-linux/auto/XML/LibXML/LibXML.so: undefined symbol: PL_unitcheckav at /usr/lib64/perl5/DynaLoader.pm line 200.
+at /usr/lib64/perl5/DynaLoader.pm line 156
+BEGIN failed--compilation aborted at /home/MyAccount/perl5/lib/perl5/x86_64-linux/XML/LibXML.pm line 156.
+Compilation failed in require at ./MyScript line 18.
+BEGIN failed--compilation aborted at ./MyScript line 18.
+
+Where is my problem?
+What is your idea?
+
+Thank you!
+
+----
+That looks like XML::LibXML was not properly installed or that the "use lib" does not include all the necessary directories, or maybe that you have two versions of perl installed and the "use lib" includes the directory of the other perl.
+---
+Thank you so much for your reply.
+
+You think how I can check what the problem is?
+For example, There is a command I can check that all the necessary directories or libraries are included or not.
+Also, I installed XML::LibXML locally.
+
+Generally, you would suggest where? I you were me, what would you do?
+
+I am working to install a model on a server and I don't have admin privilege. PERL was installed on the server by admin and I installed XML::LibXML locally. When I installed XML::LibXML locally, PREL5 directory was created in my account
+
+<hr>
+
+I added custom directory in @INC by appending `export PERL5LIB=some_dir`. I'm able to execute the script using cli `perl -e 'use some_module_in_dir'` but when I m using it in a separate file then it showing me error
+<hr>
+Very Helpful. Thanks
+<hr>
+
+Putting use statements in the code works for me but the PERL5LIB command line method does not. I am using Strawberry Perl could that be the reason ?
+---
+No. Does your script really see the changes you made to PERL5LIB ? You can try it with a simple print $ENV{PERL5LIB} in your code (without any use-statements) How did you make the changes to PERL5LIB and how do you run your script?
+
+---
+Grateful if you could help. With my old version of Perl I could have require statements that where relative to the scripts folder (windows) when including a module of my own. I understand having updated perl that the @INC var no longer had an auto . included to access current directory and I have had to change any relative paths to absolute ones. However on my machine I have created an extra user and it is within this user that I want to run most of my scripts but I am finding that within this second user not even absolute paths work in the require statement. Any idea how I can get round this. Oh for the days when installing Perl meant everything just worked
+
+----
+I appear to have solved this via your other page by using
+
+use FindBin;
+use lib $FindBin::Bin;
+
+Now all relative pathnames used by Required work OK
+
+Is there a good reason why the developers of Perl inflicted this upon us ?. With earlier versions you just installed Perl and off you went with all your require statements working fine.
+
+----
+It also seems to work without the FindBin magic if you are requiring a file other than in the same directory as the script, but in the same direc' it falls over and the FindBin code is needed ??
+
+<hr>
+
+I am curious I am trying to query the database as sysdba, I am using "use lib" with the specific path to the Oracle.pm but i am still receiving the following error?
+
+Can't locate DBD/Oracle.pm in @INC (@INC contains: /usr/app/oracle/product/agentE5/agent_13.3.0.0.0/perl/lib/site_perl/5.14.4/x86_64-linux-thread-multi/DBD/ /usr/app/oracle/product/agentE5/agent_13.3.0.0.0/perl/lib/site_perl/5.14.4/x86_64-linux-thread-multi/Bundle/ /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at db_upgrade.pl line 16.
+BEGIN failed--compilation aborted at db_upgrade.pl line 16 (#1)
+
+I have the following in my script:
+
+use lib ("/usr/app/oracle/product/agentE5/agent_13.3.0.0.0/perl/lib/site_perl/5.14.4/x86_64-linux-thread-multi/DBD/", "/usr/app/oracle/product/agentE5/agent_13.3.0.0.0/perl/lib/site_perl/5.14.4/x86_64-linux-thread-multi/Bundle/");
+use DBD::Oracle qw(:ora_session_modes); # imports SYSDBA or SYSOPER
+
+<hr>
+
+When checking PERL5LIB in enviroment variables, it lists that the path is "C:/users/My_name/perl5/lib/perl5" which is indeed where Strawberry CPAN is installing the modules. But ... when I run perl, it cannot find the module as @INC only contains "strawberry/perl/site", "strawberry/perl/vendor/lib" and "strawberry/perl/lib" How do I add the perl5 path to @INC without resorting to adding a line to every script? (This is Win7)
+
+I don't really want to change the PERL5LIB path as I understand that DMAKE and similar rely on a default path
+
+<hr>
+
+When I installed miRDeep2, the following error occurred in make_html.pl:
+Cannot find PDF/API2.pm in @INC (@INC contains:
+/usr/local/lib64/perl5/usr/local/share/perl5/usr/lib64/perl5/vendor_perl/usr/share/perl5/vendor_perl/ usr / lib64 / perl5 / usr / share / perl5.) Located at line 9 of /home/students/anaconda3/bin/make_html.pl.
+BEGIN failed-compilation was aborted in line 9 of /home/students/anaconda3/bin/make_html.pl.
+I added the path to “./bashrc”, and the source “./bashrc” ，script make_html.pl still showed the same error. I tried to modify make_html.pl and add the use lib ‘/home/foobar/code'
+Use My::Module; but it cannot be modified. I don’t quite understand how to use lib and how to modify @INC. Can you help me? Many thanks!
+
+<hr>
+
+i installed activeperl when running cmd cli everthing works OK
+when running perl cgi on iis I get error 502.2 - bad gateway cant ;locate CGI.pm
+i definedly installed GCI.pm using state command
+
+show installed packages :
+===========================
+[yehudaeshelgmail/Perl-5.32] C:\Users\User\yehudaeshelgmail\Perl-5.32>state packages
+╔══════════════════╗
+║ Listing Packages ║
+╚══════════════════╝
+Name Version
+────────────────────────────────
+CGI Auto
+DateTime Auto
+Win32 Auto
+Win32-NetResource Auto
+strict Auto
+
+its crazy any ideas ?? thanks in advance
+
+<hr>
+
+Why do I get the error "Can't locate Win32/ http://LongPath.pm in @INC" after following the ppm profile save/restore instructions in "How to Migrate Perl Server-to-Server" to migrate Perl 5.20 to a new system? Doesn't ppm set @INC when it restores the configuration?
+
 

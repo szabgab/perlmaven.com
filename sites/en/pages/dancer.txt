@@ -4,7 +4,7 @@
 =status show
 =books dancer
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 =show_related 0
 
 =abstract start
@@ -265,4 +265,13 @@ Daniel Maldonado,
 Ralph Schuler,
 
 Jiří Pavlovský
+
+<h2>Comments</h2>
+
+I am using dancer framework for croping face from image, for crop i am using python opencv. when i was calling opencv from dancer error came like "RuntimeError: module compiled against API version 9 but this version of numpy is 4". i don't know how to fix this case.can you help me? Thanks in advance.
+
+<hr>
+
+how to handle double button in a form for POST method.
+
 

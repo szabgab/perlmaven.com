@@ -4,7 +4,7 @@
 =books moo
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -350,5 +350,23 @@ The source code of the most recent version of this script can be found in
 <a href="https://github.com/PerlMaven/moo-with-moox-options">GitHub</a>.
 You are more than welcome to fork that repository, send your solution as a pull
 request and comment on other peoples solution.
+
+<h2>Comments</h2>
+
+My complaint with MooX::Options is that so far as I can tell, there is no way to tell it to use a different array for @ARGV. That is, there is no equivalent to GetOptsFromArray($aref, ...). If one is using it to write a Modulino style script (Moodulino?) this can make testing slightly less than ideal in that the test script needs to supply a custom @ARGV without any options, instead passing actual option terms in as params to "new". It also means that one must also use MooX::StrictConstructor to ensure that unwanted options are rejected in submitted in a test bed.
+
+Using Getopt::Long avoids both of those conditions and provides a more true test bed, IMO, because of that, at the price of a slightly more complex init/new/run setup in the moodulino itself.
+
+---
+
+Have you submitted this as a patch or at least a feature request to MooX::Options?
+
+----
+
+o, I haven't. But to be honest, given that it is considered to be poor form to alter @ARGV even with a "local" statement, and given the primary purpose/advantage of writing scripts as modules is to improve testability, it seems like a severe shortcoming to have not included that ability.
+
+I am somewhat surprised that you did not address the underlying reason for adopting the modulino paradigm in the first place. Don't get me wrong, I am a very big fan of Moo and use it extensively at work and for private projects. But there is no advantage to writing scripts as modules other than to have a more reliable test framework.
+
+As an aside, it is imperative that every script that is written like this have "__END__" as the last line to prevent hi-jacking by malicious code adding to it. Clearly that won't prevent all attacks, but it shuts down a rather obvious but often overlooked avenue of attack.
 
 

@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -136,5 +136,18 @@ and you can use it like this:
 <include file="examples/type_conversion.pl">
 
 Don't forget the milk too!
+
+<h2>Comments</h2>
+
+What about keeping strings from becoming numbers? like preventing 0018 from becoming 18?
+
+---
+If a string like "0018" is only used in string-operations, (e.g. concatenation) then it will not be converted to a number.
+
+<hr>
+
+Also, leading whitespace is ignored - that is ' 42' will convert to numeric 42 (without a warning, even!). (Which is good news when using right-aligned numbers produced by sprintf.)
+
+I don't know whether the concept of whitespace is locale-aware or not; if it's using the regular expression engine internally (i.e., doing the equivalent of s/^\s+//), then it probably is. My tests worked with space, tab, carriage return, and line feed.
 
 

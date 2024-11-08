@@ -5,7 +5,7 @@
 =books dancer2
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -367,4 +367,39 @@ If you open the JavaScript console  of your browser then you can see something l
 We can now commit this change.
 
 <a href="https://github.com/szabgab/D2-Ajax/commit/99034e178ea414924c42cc355d6478ff7f84555e">commit</a>
+
+
+<h2>Comments</h2>
+
+I am getting virtually unending errors. It started with the git repo not being there. I found one that seemed to be right, and did a git clone. But the errors are so plentiful I'm thinking there was a mistake in the repo. Is this still a working page/example?
+
+This is the perfect dealio for what I am looking for. I have a d2 site that I have been asked to make more dynamic, which seems to be AJAX. This page really lifted my hopes that I could push through the process pretty easily.
+
+<hr>
+
+If you head over to https://github.com/szabgab/D2-Ajax you can download the zip file if you do not have git.
+
+If you get an error like:
+
+"Error while loading C:\D2-Ajax-master\bin\app.pl: Can't locate MongoDB.pm in @INC (you may need to install the MongoDB module)"
+then you need to install additional libraries for Perl (I assume you have Perl in your Linux or Strawberry perl on your Windows machine).
+
+We install them using CPAN (or CPANm), in my case, just:
+"cpan MongoDB" will install that (coffee break required, it takes a while; the Windows version requires you to press enter).
+
+I then get some warnings for http://localhost:5000/
+
+but the example (http://localhost:5000/v1) works.
+
+C:\D2-Ajax-master\bin>plackup -R . app.pl
+Watching . ./lib app.pl for file updates.
+Prototype mismatch: sub D2::Ajax::encode_json: none vs ($) at C:/Strawberry/perl/lib/Exporter.pm line 66.
+at C:/D2-Ajax-master/bin/../lib/D2/Ajax.pm line 4.
+Prototype mismatch: sub D2::Ajax::decode_json: none vs ($;$) at C:/Strawberry/perl/lib/Exporter.pm line 66.
+at C:/D2-Ajax-master/bin/../lib/D2/Ajax.pm line 4.
+HTTP::Server::PSGI: Accepting connections at http://0:5000/
+[D2::Ajax:-116] core @2016-11-28 15:32:49> looking for get / in C:/Strawberry/perl/site/lib/Dancer2/Core/App.pm l. 34
+[D2::Ajax:-116] core @2016-11-28 15:32:49> Entering hook core.app.before_request in (eval 59) l. 1
+[D2::Ajax:-116] core @2016-11-28 15:32:49> Entering hook core.app.after_request in (eval 59) l. 1
+127.0.0.1 - - [28/Nov/2016:15:32:49 +0100] "GET / HTTP/1.1" 200 631 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0"
 

@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -93,5 +93,13 @@ Of course we could write it in a different way as well:
 <code lang="perl">
 $value = $MAX_LIMIT if $value > $MAX_LIMIT;
 </code>
+
+<h2>Comments</h2>
+
+Hi, Can i use file test operator eg "-e" "-r" "-d" eg if ( -e $filepath) in ternary operators
+
+---
+
+Try it!
 
 

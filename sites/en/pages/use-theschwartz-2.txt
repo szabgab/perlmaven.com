@@ -6,7 +6,7 @@
 =books intermediate
 =author dsdickinson
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -222,4 +222,10 @@ This concludes the tutorial for setting up a queueing system using TheSchwartz. 
 the past to run many different types of runners concurrently on the same system without fail. Enjoy and may TheSchwartz be with you!<br/><br/>
 
 Related article: <a href="/use-theschwartz">How to Use TheSchwartz Perl Module (Part 1)</a>
+
+<h2>Comments</h2>
+
+Thank you for a detailed article. Especially nice the last part on how to put it up and running in Systemd￼. Much easier to understand than the module documentation at MetaCPAN.
+This helped me to choose between TheSchwartz and Gearman. (Also the fact that Gearman uses a socket to communicate between client and worker, not the DB like TheSchwartz.)
+
 

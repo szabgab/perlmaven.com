@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -91,5 +91,36 @@ def  => 19
 
 
 So you should never change a hash while iterating over it using <hl>each</hl>.
+
+<h2>Comments</h2>
+
+Note that running "keys", "values" or simply iterating the hash in any way resets the internal iterator:
+
+perl -MData::Dumper -wE '%h = (a => 12, b => 14); while (($k, $v) = each %h) { print "$k => $v\n"; warn Dumper \%h;}'
+
+The above code loops infinitely.
+
+
+<hr>
+
+The one exception to the "do not change" rule is that you can safely delete the *current* element while iterating with each.
+
+And you can always change any (existing) value.
+
+<hr>
+
+Would be good to show using void-context keys to reset the iterator where necessary, e.g.
+
+
+while (my ($k, $v) = each %h) {
+        say "$k  => $v";
+        last;
+}
+
+say 'Play it again, Sam';
+keys %h;
+while (my ($k, $v) = each %h) {
+        say "$k  => $v";
+}
 
 

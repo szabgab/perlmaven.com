@@ -4,7 +4,7 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -285,4 +285,50 @@ the file after the child terminates.
 
 We will see it in another article:
 <a href="/speed-up-calculation-by-running-in-parallel">Speed up calculation by running in parallel</a>
+
+<h2>Comments</h2>
+
+simple and clear
+
+<hr>
+
+Just signed up to support you on Patreon.
+
+Your Perl Maven is most excellent. Thank You.
+---
+
+thank you!
+<hr>
+
+How do you make unit test to test code contain "fork"
+
+I just wrote this example: https://perlmaven.com/test-code-which-is-forking
+
+Show me your case if this approach does not work there.
+
+<hr>
+
+Hello Gabor! Quick question to check if there's a typo in one of the examples, or if I've missed something (more likely the latter).
+
+On line 11 of the second example in the "Fork and Wait" section, there is this line of code:
+
+"my $pid = fork;"
+
+should the fork call have parens, i.e.:
+
+"my $pid = fork();"
+
+?
+
+I'm tempting fate by posting this question before I read the rest of the explanation, so it's likely that the example was written correctly and the part I haven't read yet explains why... but then again if it doesn't and that's a typo, I'll look really S-M-R-T :)
+
+---
+In general in Perl you don't need to put parentheses for a function to be called. so fork and fork() are the same.
+
+---
+Whaaa...? Wow, I knew perl was lenient but I didn't know this. Thanks for teaching me something else new.
+
+<br>
+
+Just want to say thank you for this content. Perl is the only language common to all our Unix environments and learning it has been a real game changer for my efficiency.
 

@@ -5,7 +5,7 @@
 =status show
 =books beginner_video
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -16,3 +16,19 @@ du using <a href="https://metacpan.org/pod/Filesys::DiskUsage">Filesys::DiskUsag
 <slidecast file="beginner-perl/disk-usage-du" youtube="uOch-LIPix4" />
 
 <include file="examples/du.pl">
+
+<h2>Comments</h2>
+
+Very helpful and I love you did a VDO too! Smooth and elegant presentation.
+I'm an APL-trained programmer always seeking brevity. My lines might be (untested!):
+
+use feature "say";
+use Filesys::DiskUsage qw/du/'
+
+die "Usage: $0 DIRs\n" unless @ARGV;
+my %sizes = du({'make-hash' => 1}, @ARGV);
+say "$_ : $sizes{$_}" for sort { $sizes{$a} <=> $sizes{$b} } keys %sizes;
+
+As an aside- seems difficult to install Filesys::DiskUsage . CPAN install fails.
+
+

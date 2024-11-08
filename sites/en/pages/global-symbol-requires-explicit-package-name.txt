@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -172,4 +172,30 @@ then we get a <a href="/use-of-uninitialized-value">Use of uninitialized value</
 
 Explaining what <hl>our</hl>, and <hl>use vars</hl> do, or how can one
 fully qualify a variable name is left to another post.
+
+<h2>Comments</h2>
+
+#!/usr/bin/perl
+use strict;
+use warnings;
+sub main
+
+{
+my $file = '/nfs/sc/disks/dg2.soc.lv.02/manoj_runs/ICV_DRC/par_psf_vr.LAYOUT.ERRORS';
+open(FH, $file) or die("File $file not found");
+while(my $String = <fh>)
+{
+if($String =~ /(d+) violations/) {
+print "$String \n";
+}
+}
+close(FH);
+}
+main();
+i want to read from that path using pattern matching my current working is different i am getting file not found path ia also correct
+
+<hr>
+
+I have a weird case of removing a comment line results in the Global symbol ... requires explicit package name at ... error.
+My fix is that I leave the comment in.
 

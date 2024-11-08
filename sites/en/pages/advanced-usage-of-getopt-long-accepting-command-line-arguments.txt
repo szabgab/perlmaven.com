@@ -3,7 +3,7 @@
 =indexes Getopt::Long
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -367,5 +367,63 @@ logging to STDERR
 </code>
 
 Where we supplied <hl>--log</hl> instead of <hl>--logfile</hl>.
+
+
+<h2>Comments</h2>
+
+Hi Gabor,
+
+I'm wondering if Getopt provides anything useful to address the following issue:
+
+#!/usr/bin/perl
+use Modern::Perl;
+use Getopt::Long;
+
+my ($a,$t);
+
+GetOptions( 'tickets=s'     => \$t, 
+                    'another_key=s' => \$a );
+
+print "tickets: $t\n";
+print "another_key: $a\n";
+
+invoking it like ( given that the script is saved to 'test_getopt.pl'):
+
+$perl -w test_getopt.pl --tickets --another_key asdf
+
+will yield:
+
+tickets: --another_key
+Use of uninitialized value $a in concatenation (.) or string at test_getopt.pl line 12.
+another_key:
+
+which is obviously not the desired behaviour.
+So, my question is, if there is any option to mitigate this, beyond validating each and every parameter?
+
+Thanks!
+
+---
+
+Input validation is usually a good practice.
+
+You could also set a default value for $a and $t if that's correct in your application. You can start your code with
+my ($s, $t) = ('', '');
+To set both to empty string.
+
+But please don't use $a (or $b) here. See : https://perlmaven.com/dont-use-a-and-b-variables
+
+---
+
+Thanks for the fast reply!
+I guess your short answer then is no.
+This was an example constructed just to simulate the issue, but it's a good reminder about $a & $b ;)
+
+Thanks again, and please keep up the good work PerlMaven!)
+
+<hr>
+
+Hi Gabor,
+
+Is there any way to limit the number of arguments an option can take like an option can only take a minimum 0 and a maximum of 2 arguments? Say, -logfile or -logfile file1.txt or -logfile file1.txt file2.txt is acceptable; but -logfile file1.txt file2.txt file3.txt must give an error?
 
 
