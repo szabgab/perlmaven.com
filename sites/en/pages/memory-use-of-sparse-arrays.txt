@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -60,4 +60,15 @@ The result is this:
 </code>
 
 You might also use a <a href="/sorted-hash-tie-ixhash">sorted hash in Perl using Tie::IxHash</a>, though I don't remember ever really needing it.
+
+<h2>Comments</h2>
+
+Thanks Gabor - not the result I expected but good to know.
+
+<hr>
+
+"In other words if we have an array with a single value at index 1,000,000 does Perl allocate space for all the preceding 1,000,000 elements, or is does it take up place for the single element in the array."
+
+And the answer, not actually mentioned in the article, is: *neither*. The code listed makes space for one array head, *one* scalar, and one million pointers. So it uses more space than an array with a single element at offset zero, and less space than an array with a million elements.
+
 

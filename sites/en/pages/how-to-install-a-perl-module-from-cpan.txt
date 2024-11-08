@@ -3,7 +3,7 @@
 =indexes CPAN, cpanm, ActivePerl, Strawberry Perl, DWIM Perl
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -200,3 +200,116 @@ Using a manually compiled perl.
 Using perlbrew, creating "virtual environments".
 
  
+<h2>Comments</h2>
+
+Your knowledge has been invaluable to me, thankyou.
+
+<hr>
+
+Hi Gabor,
+
+The command cpanm Path::Tiny for macOX throughs an error :
+-bash: cpanm: command not found
+
+Can you please help me with this?
+
+---
+
+You need to install cpanm.
+
+<hr>
+
+I am on Linux but without root permission. Running
+\curl -L http://cpanmin.us | perl - App::cpanminu
+gave the error
+Can't write to ...
+Also tried the cpan command with similar results. How do I download a perl module to a local directory under my control ?
+
+---
+Solved my problem. Found an excellent description here: https://stackoverflow.com/questions/2980297/how-can-i-use-cpan-as-a-non-root-user
+
+<hr>
+
+Hi Gabor,
+
+I was trying to run following script but no success in it. Mentioned error below. how to install MongoDB package for Perl.? please help.
+
+#!/usr/bin/perl
+use strict;
+use warnings;
+#
+use MongoDB;
+use MongoDB::Connection;
+use MongoDB::OID
+use Data::Dumper qw(Dumper);
+#
+my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);
+my $db = $client->get_database( 'example_' . $$ . '_' . time );
+
+my $people_coll = $db->get_collection('people');
+#
+$people_coll->insert( {
+name => 'First',
+});
+
+$people_coll->insert( {
+name => 'Second',
+});
+#
+my $people = $people_coll->find;
+while (my $p = $people->next) {
+print Dumper $p;
+}
+#
+$db->drop;
+
+ERROR:
+Can't locate MongoDB.pm in @INC (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at dbs.pl line 5.
+BEGIN failed--compilation aborted at dbs.pl line 5.
+
+<hr>
+
+Hi!
+I tried to install:
+
+\curl -L http://cpanmin.us | perl - App::cpanminus
+
+But Perl is sending me this error:
+Can't write to /Library/Perl/5.18 and /usr/local/bin: Installing modules to /Users/Lary/perl5
+! To turn off this warning, you have to do one of the following:
+! - run me as a root or with --sudo option (to install to /Library/Perl/5.18 and /usr/local/bin)
+! - Configure local::lib in your existing shell to set PERL_MM_OPT etc.
+! - Install local::lib by running the following commands
+!
+! cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+!
+--> Working on App::cpanminus
+Fetching http://www.cpan.org/authors... ... OK
+Configuring App-cpanminus-1.7043 ... OK
+Building and testing App-cpanminus-1.7043 ... FAIL
+! Installing App::cpanminus failed. See /Users/Lary/.cpanm/work/1511604389.606/build.log for details. Retry with --force to force install it.
+
+Can you help me? What should I do?
+Thank you in advance!
+
+<hr>
+
+I tried to install MongoDB module in my Mac Os Mojave, and it it's impossible...and other modules... I saw I have to install firs, the same problem:
+This is the message of CPAN
+"Make had returned bad status, install seems impossible"
+It's seems to be dependence problems.. can you help me ?
+I need this !!
+
+<hr>
+
+Can't locate WWW/Curl.pm in @INC (you may need to install the WWW::Curl module) (@INC contains: /usr/local/Cellar/perl/5.34.0/lib/perl5/site_perl/5.34.0/darwin-thread-multi-2level /usr/local/Cellar/perl/5.34.0/lib/perl5/site_perl/5.34.0 /usr/local/Cellar/perl/5.34.0/lib/perl5/5.34.0/darwin-thread-multi-2level /usr/local/Cellar/perl/5.34.0/lib/perl5/5.34.0 /usr/local/lib/perl5/site_perl/5.34.0/darwin-thread-multi-2level /usr/local/lib/perl5/site_perl/5.34.0) at tempcurl.pl line 4.
+Not sure .. what i need to do? Please help
+
+---
+follow the instructions in the blog post and install the module.
+
+<hr>
+Windows 11 Strawberry and Tk
+I could not install cpan install Tk in normal cmd-Window (move did not work)
+but in powershell-window it worked fine
+

@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -78,3 +78,16 @@ exit code is in the upper byte. So in order to get back the 42 as above we have 
 bits using the <hl>&gt;&gt;</hl> bitwise operator with 8 bits. That's what we see in the
 last line of the above example.
 
+<h2>Comments</h2>
+
+Thanks for the explanation Gabor, really clear
+
+---
+
+Hi,
+
+"In Perl usually 0 or undef mean failure, and some other true value means success".
+Q: Are you referring "return' command value here or this is applicable for both exit and return codes. exit 0 in perl is a failure?
+
+---
+return. After you exit you are not in perl any more.

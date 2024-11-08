@@ -3,7 +3,7 @@
 =indexes substr, chop
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -78,4 +78,35 @@ If the original text was <a href="/undef-and-defined-in-perl">undefined</a> as i
 <hl>my $text;</hl> the call to <hl>chop $text;</hl> would give a warning:
 <a href="/use-of-uninitialized-value">Use of uninitialized value $text in scalar chop at ...</a>.
 
+<h2>Comments</h2>
+
+if(substr $homeBase, -1 eq '/'){
+chop $homeBase;
+}
+
+<hr>
+
+I actually have what I think is a legitimate use of the `chop`
+I need to process a string, but the processing needs to be disabled in between quotes:
+
+my $str = q{this part requires processing "but not THIS part"; Toggle processing on..."but toggle it off for this"};
+
+My solution is to split the string on the double-quote, process the even indices of the array, and join the array through a double-quote...
+Works great, except for the double quote on the end, which will get dropped with the simple algorithm.
+The solution is to add a space to my string, and chop it afterwards:
+
+my @quoted_str = split qr/"|$/, $str . q{ };
+my $i = 0;
+while ( $i le $#quoted_str ) {
+
+# Escape any parenthesis in the non-quoted substrings
+$quoted_str[$i] =~ <my_processing_stuff>;
+$i += 2;
+}
+
+# Join the processed substrings back together
+$str = join q{"}, @quoted_str;
+chop $str; # <====chop gets it done===
+
+Unless there is a more elegant way to process a string, except for the quoted substrings...
 

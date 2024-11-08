@@ -5,7 +5,7 @@
 =status show
 =books search_cpan_org
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -132,4 +132,17 @@ that is the representation of the whole tree after that commit. Now you can clic
 on the right hand side to download a zipped version of the whole project at the specific time in its history.
 
 You can then unzip the file and have the project without having Git on your system.
+
+<h2>Comments</h2>
+
+Is it possible to clone your own repo at a certain point in history? Going backwords and choosing from which commit to clone your repo into your pc. Do you have any idea if it's possible?
+I hope to hear from you soon.
+
+---
+Cloning means copying the whole db so I don't you can do what you outlined. You can clone the whole db and then check out a specific old version or you can even remove the newer commits if you wish, though you'd rarely need to make such drastic move.
+
+<hr>
+Useful article Gabor :-)
+<hr>
+Nice one
 

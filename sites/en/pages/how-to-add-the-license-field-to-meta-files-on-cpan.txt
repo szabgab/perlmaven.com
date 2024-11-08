@@ -4,7 +4,7 @@
 =status show
 =books metacpan
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -87,8 +87,14 @@ There are of course other required elements of the licensing. This article only 
 The <a href="http://cpan.perlmaven.com/#lab">lab</a> on JavaScript based MetaCPAN front-end has a page
 with the <a href="http://cpan.perlmaven.com/#lab/no-license">Recent releases without a "license" field in the META files</a>.
 
+<h2>Comments</h2>
 
+Is there a LIST of modules that don't have a license declared?
+---
+try the link here: https://code-maven.com/#lab
 
+<hr>
+I think that EUMM expects that license is an ARRAY these days.
 
 
 

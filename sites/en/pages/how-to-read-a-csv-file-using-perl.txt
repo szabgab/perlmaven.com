@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -189,4 +189,33 @@ BTW, in case you were wondering, the values in the CSV file are the names of the
 <a href="http://hu.wikipedia.org/wiki/H%C3%B3feh%C3%A9rke_%C3%A9s_a_h%C3%A9t_t%C3%B6rpe_%28film,_1937%29">7 dwarfs</a>.
 
 In Hungarian.
+
+<h2>comments</h2>
+
+Hello
+I have *.mc file and need to convert to it .csv file by using mc2csv command, so please tell how to do this
+
+<hr>
+Another approach is DBI:
+https://search.cpan.org/~hmbrand/DBD-CSV-0.49/lib/DBD/CSV.pm
+
+<hr>
+
+I think that in the first example without the module of CSV you are not extracting the 3rd column, what you are doing in adding the values of the 3rd column. Ej. 10+7+100+9 = 126
+<hr>
+
+can you please share how do we download a csv file in perl using headers like these
+
+
+header('X-Sendfile' => $file);
+header('Content-type' => "application/octet-stream;");
+header('Content-Disposition' => "attachment; filename=\"".encode_utf8($filename)."\";");
+debug('halting for xsend');
+halt('xsend');
+
+<hr>
+How can i read the variables in csv file as a variables wise and how to write into a txt file as variables wise
+
+<hr>
+Text::CSV seems to ignore the last line of files not ending with a newline. How can this be avoided?
 

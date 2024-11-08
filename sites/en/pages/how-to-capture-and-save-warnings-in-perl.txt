@@ -4,7 +4,7 @@
 =status show
 =books advanced
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -270,5 +270,26 @@ You can read more details about the <a href="/what-is-new-in-perl-5.10--say-defi
 of Perl.
 
 (Thanks to Joel Berger for reminding me of <hl>state</hl>).
+
+
+<h2>Comments</h2>
+
+Gabor, many thanks for another great tutorial. I've been looking for something conclusive on Perl error handling and this is perfect.
+
+<hr>
+
+How do you report invalid calls to the logger so that you can find them? I can't for the life of me figure out how to save the error in the signal handler and carp after it returns.
+
+UPDATE: For anyone having the same problem, I figured it out. It's necessary to restore the default WARN handler before calling carp. It apparently calls warn, and the signal is caught again. This works:
+
+my $fh = shift;
+# Catch warnings from printf
+my $error = '';
+local $SIG{__WARN__} = sub { $error = $_[0] };
+printf( $fh $format, @_ );
+# Restore defalt WARN handler so carp doesn't get caught! 
+$SIG{__WARN__} = 'DEFAULT';
+# Report any printf warnings from caller's perspective
+carp "$error" if $error;
 
 

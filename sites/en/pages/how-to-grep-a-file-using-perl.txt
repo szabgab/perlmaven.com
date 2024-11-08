@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -88,3 +88,27 @@ line we would break it into parts, extract the IP address and put it in a hash.
 
 We'll see such an example in a separate article.
 
+<h2>Comments</h2>
+
+Here is a slightly modified version to emulate the output of a switchless grep
+
+use strict;
+use warnings;
+
+if ($#ARGV < 1){die "Usage: $0 string FILENAMEs\n";}
+my $exitcode = 1;
+my $REGX = shift;
+foreach my $file (@ARGV) {
+    open my $fh, '<:encoding(UTF-8)', $file or die "$0: $file: No such file\n";
+    while (my $line = <$fh>) {
+        if ($line =~ /$REGX/) { $exitcode = 0;
+                if ($#ARGV > 1){ print $file . ':' . $line;}
+                else { print $line;}
+        }
+    }
+}
+exit $exitcode;
+
+<hr>
+
+is it true it has to be a file but not Unix pipe? Example: `grep -ri sometext * | pgrep.sh ".{0,80}"`

@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -131,3 +131,35 @@ As <a href="https://culturedperl.com/">Dave Cross</a> pointed out, starting from
 my %africa = %capital_of{'Zimbabwe', 'Eritrea', 'Botswana'};
 </code>
 
+<h2>Comments</h2>
+
+Terrific summary and reference, Gabor; I am going to save this post to Evernote because I know I am going to want to look it up every other month (or so). It seems like there are lots of esoteric descriptions of using hash slices in the most popular Perl Programming books (at least the ones on my shelf), but invariably I will try to use one to do something cool, and get the syntax ever so slightly wrong, and which point I try to remember where I read the most helpful description. Now it is here all in one handy place. Actually the way I used hash slices every week is described in Dave Cross' book "Data Munging with Perl" where he essentially slurps in a tab-separated ascii text file into an array of hashrefs using a nice hash slice (you have to grab the first row containing the column header/field names into an array first). Worth looking up (in my opinion) if you are not familiar with his book.
+
+---
+Dave Cross: And I should point out that the book is now available for free online. https://datamungingwithperl.com/
+
+<h2>
+And from Perl 5.20, there are the key/value hash slices that return list of key/value pairs.
+
+my %africa = %capital_of{'Zimbabwe', 'Eritrea', 'Botswana'};
+
+---
+Thanks Dave & Gabor
+
+%PERL_GURUS = %cool_guys{qw|gabor dave|}
+
+<h2>
+One another usage of hash slicing is also when you want to merge different hashes:
+
+@merged{ keys %data } = values %data
+
+Thanks for your great blog !
+
+<h2>
+
+Great article! Thank you. Question: how to use this syntaxt to get just the full list of African countries, or the full list of capitals by themselves.
+
+Probably you are looking for `keys` and `values` functions.
+
+<h2>
+What's the syntax if you have a hash reference?

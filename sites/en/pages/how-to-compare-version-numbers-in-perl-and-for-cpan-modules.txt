@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -60,4 +60,19 @@ say version->parse('1.23_TEST');
 
 Will generate an excpetion  saying <b>Invalid version format (misplaced underscore) at ...</b>
 
+<h2>Comments</h2>
+
+Hello Gabor,
+I'm sorting versions in my perl script and using the latest v5.10.1 but seeing the following error pop up " contains invalid data; ignoring: ", is this because of the perl version?
+
+---
+
+What is in the string you are parsing that gives you this error message?
+
+---
+
+I'm a newbie at perl in the learning process and i'm trying to sort the versions i'm passing from the @versions array and it gives the error.
+
+---
+Please show the actual source code, from this I cannot guess.
 

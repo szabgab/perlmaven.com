@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -199,3 +199,47 @@ internal array and so on.
 Data::Dumper can help us figure out what is in such a data structure.
 
 
+<h2>Comments</h2>
+
+I created a 2d(mxn) array which is used to read different values from different files. Thus, the m and n values keep changing. It is very hard to determine the scalar because each file has different data set, especially for different m values. How can I determine m and n in a simple way? For 1d array, let's say @ary_1d, I can decide it using $#ary_1d. How can I decide the m and n values in the similar way? Any suggestion or easier way would be highly appreciated.
+
+---
+There is no requirement in Perl to have the array of arrays be a rectangular so each row can have different length. For a row 0 you can get the size as scalar @{$ary_2d[0]}
+
+---
+I may have not explained clearly. Let's see an example below.
+@ary_2d=([12,13,14,15],[67,68,69,70,71]);
+
+what you gave will results in the n value for row 0. How can I get total row value m? You may see this array is not a regular 2d array. The total column number is 4 and 5 for row 0 and 1, respectively. I know how to get the column value, but I do not know how to get row value m. Any suggestion would be appreciated.
+
+---
+
+What is row value m in your example? 4 ? 5 ? 9 ? 2 ?
+
+---
+in my example, m value should be 2. However, I do not know how to get it. Your above answer shows n value which is 4.
+In addition, I want to point out. The n value varies in different row.
+---
+
+@ary_2d in fact is a one-dimensional array as there are no two dimensional arrays. It is a one dimensional array where every element itself is (a reference to) an array. So you would write scalar @ary_2d to get the number of elements.
+
+----
+I may not fully understand PERL. Here, $ary_2d[0][0]=12, $ary_2d[0][1]=13, $ary_2d[0][2]=14, $ary_2d[0][3]=15; and $ary_2d[1][0]=67, $ary_2d[1][1]=68, $ary_2d[1][2]=69, $ary_2d[1][3]=70, $ary_2d[1][4]=71.
+If @ary_2d is a one-dimentional one, the scalar should give me 9.
+
+---
+You might want to read again the article above.
+
+<hr>
+
+Hello, thanks for your lesson. Could you help me with this question please.
+I have three arrays of extracted information, of more than 100 lines each array, like this:
+
+@xe; # Event Id
+@ye; #IP
+@ze; #Description
+
+How can I store them in a new one with 3 columns by n rows, to export it that way either in .txt or .csv format
+Thanks in advance, regards
+
+This might help you: https://perlmaven.com/combine-arrays-and-save-them-as-csv

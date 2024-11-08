@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -130,4 +130,85 @@ function.
 
 The <hl>write_file</hl> function is much more straight forward and we put it in a function only to make the
 main body of the code similar to the previous solution.
+
+<h2>Comments</h2>
+
+Thank you! So helpful :)
+
+---
+
+Hi , i need help im new , how can i writh a perl script using regex replace to put names and Last names in the strings . my english is not good soory .
+<code>
+<div>
+<label>First name:</label>First name
+
+<label>Last name:</label>Last name
+
+</div>
+</code>
+
+<hr>
+
+You probably want to clarify that the variable $filename require a full path, at least for me is not working if I don't pass it with the full path to the file
+
+<hr>
+Thank you for this job. It's really interesting. But please if you can explane more all the solutions because some times i didnt get how it works. Thanks a lot 
+<hr>
+
+give perl program example with explanation using scalar variable
+
+<hr>
+
+Hi All,
+
+$filename = "${datafile1}NPS_${BUSINESSDATE}.txt";
+$lines = 0;
+open(FILE, $filename) or die "Can't open `$filename': $!";
+while (sysread FILE $buffer, 4096) {
+$lines += ($buffer =~ tr/\n//);
+
+}
+close FILE;
+$tot_records= $lines-1 ; ##Minus 1 for the header
+open (FILE, ">> $filename") || die "problem opening $filename\n";
+print FILE "TOTAL COUNT|$tot_records\n";
+close FILE;
+
+need to add command in removing "(double quotes in file.
+
+please let me know where can i add the command.
+
+<hr>
+
+Hello, honestly too much to consume for me but after a day of battling with scripting and reading forums I would need kind of help.
+
+I have 2 files where I`m looking for a way how to find from the 2nd one a specific line that start with specific string ending with another one and extract the string between these 2 strings;
+Then do the lookup in 1st file for this string from the top of the file and return its value that is located 2 lines below the 1st finding and again located after specific strings:
+
+Example:
+1st file explanations.txt contains:
+blablabla
+edit "20nd_Aug_2020"
+set start 13:55 2019/07/25
+set end 23:59 2020/08/20
+blablabla
+
+2nd file definitions.txt:
+blablabla
+set schedule "20nd_Aug_2020" <---
+blablabla
+
+1: in the 2nd file find each line starting with ' set schedule "' ending with '" <---'
+2: replace these 2 strings with nothing and save '20nd_Aug_2020' as a temporary value
+3: look for this value '20nd_Aug_2020' from the top in the 1st file and replace with string (2 lines below its 1st match and after the string set end) '2020/08/20'
+
+I was able to come up with this command that covers the point #1 and partially #2:
+perl -pe 's%(.*set schedule ".*" <---)% ($_x = $1) =~ s/(.*set schedule "|" <---)//g; $_x %eg' definitions.txt
+In the output I see that the matched line from the 2nd file is filtered out correctly.
+- but can`t figure out which symbol(s) are causing the misinterpretation of the logic when this command is parsed into the perl script.
+The result is "nothing" not even an empty file.
+
+<hr>
+
+Please do not recommend File::Slurp. Use File::Slurper instead, its read_text function automatically will apply the correct UTF-8 decoding.
 

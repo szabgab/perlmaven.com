@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -138,4 +138,81 @@ In many cases, instead of here-documents, I use either the <hl>qq</hl> or the <h
 Depending if I want interpolating, or non-interpolating strings:
 
 <include file="examples/using_q_or_qq.pl">
+
+<h2>Comments</h2>
+
+Hello,
+
+I think it is worth noting that if you use "qq" operator like in your example, you end up with
+newline character in the beginning of the string in $message.
+To avoid this you should start your message text in the same line as qq operator.
+Regards,
+Zymuar
+
+<hr>
+
+I have a multi-line here-text that (in UltraEdit) contains line breaks coded as \r\n. However, when I subsequently print it out to a file, the \r's seem to have been dropped and only the \n's remain. Is there a way to change that behaviour?
+
+---
+have you tried using q or qq instead?
+---
+No I didn't. However, I added a
+
+$here_doc=~ s/\n/\r\n/g;
+
+to the code right after the $here_doc definition. That also did the trick, although probably not standard business practice, but at least I see what's happening. Regards, Mario
+
+<hr>
+In the 'non-interpolating' section you have two examples that do do interpolation.
+The label on those two still says 'non-interpolation'!
+<hr>
+One benefit I can see with using here-documents versus qq.
+
+If I'm trying to put some javascript into a string, it is very common to find square braces, curly braces, pipes, and any other single character I might want to use as a delimiter all contained within that string.
+
+here-documents completely avoid that issue, as I can choose an arbitrary end-sequence, which will never appear within the script block.
+---
+I use $whatever = qq~ whatever~; The tilde is very rare within a string.
+
+<hr>
+
+Time to update and refer `<<~` :-)
+
+<hr>
+You didn't mention the way I like to do it :( I like to use double quotes with the newline character and the concatenation operator. It's a bit verbose, but quite explicit.
+
+---
+I do it like:
+
+use constant bs => '\\'; # backslash
+use constant bt => '`'; # backtick
+use constant dq => '"'; # double-quote
+use constant nl => "\n"; # newline
+use constant nlx2 => "\n" x 2; # 2 newlines
+use constant sq => "'"; # single quote
+use constant tab => "\t"; # tab
+use constant tabx2 => "\t" x 2; # 2 tabs
+use constant tabx3 => "\t" x 3; # 3 tabs
+use constant tabx4 => "\t" x 4; # 4 tabs
+use constant tabx5 => "\t" x 5; # 5 tabs
+
+print 'Manage partitions' . nlx2
+. tab . '--help' . tabx4 . 'Basic usage.' . nl
+. tab . '--full-help' . tabx3 . 'More detailed help.' . nl
+. tab . '--future-help' . tabx3 . 'Unimplemented features...' . nl
+;
+
+
+<hr>
+
+I love the surprise ending!
+
+"Heredocs, here's how they work, bla bla, ..."
+
+and then, at the end:
+
+"I am not sure if I should really recommend using here-documents. ... instead of here-documents, I use either the qq or the q operator"
+
+That's a great plot twist. And a useful page, so thanks.
+
 
