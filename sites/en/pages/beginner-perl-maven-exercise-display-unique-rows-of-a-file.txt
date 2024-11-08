@@ -45,7 +45,7 @@ while (<$fh>) {
     chomp;
     my ($k, $v) = (split /\s+/)[0,1];
     if ( ! $seen{$k} ) {
-	$seen{$k} = $v;
+    $seen{$k} = $v;
     }
 
 }
