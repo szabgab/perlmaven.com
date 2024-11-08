@@ -2,7 +2,7 @@
 =timestamp 2015-02-07T10:00:00
 =status show
 =author name2rnd
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -43,3 +43,9 @@ What I did:
 The most important thing is to keep up the rhythm.
 By this time I've been learning English for four month. It's not bad not I think.
 Good luck!
+
+<h2>Comments</h2>
+
+Thanks for this good information.
+
+With your good skills in English language, you will be able to all the good benefits of it because you will have an efficient communications. Good thing that you have able to put some good overview about the English language here and its benefits as well. These are good terms to consider when learning all the different forms of languages.

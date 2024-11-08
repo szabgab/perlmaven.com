@@ -4,7 +4,7 @@
 =status show
 =books mongodb
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -190,4 +190,32 @@ of this example.
 
 The interesting part is that the second document now has both a 'name' and a 'phone'
 field while the first document only has a 'name'.
+
+<h2>Comments</h2>
+
+Great set of articles on getting started with mongodb and perl! They are concise and helped me get started and gave me a better understanding how to utilize this technology. It would be great if you could post an article on how to join collections.
+
+<hr>
+k, I'm using your website for years now, each and every time that I have something new to me, to do with Perl I come here and you have the answer.
+I don't think that I would have been as good with Perl than I am now without this website !
+So thanks a lot for your work, it helps me a lot of times for at least 5 years now, thanks for the efficiency of your explanation, it's always clear and without useless information !
+And thanks for this tutorial with Mongo ! I just started Mongo and this helps me a lot !
+
+<hr>
+Looks like the newest version of the MongoDB module uses insert_one instead of insert:  https://perlmaven.com/pod/mongodb#MongoDB::Collection
+
+<hr>
+
+Great content as per your usual high standards! However, I am having a problem connecting to the mongodb server from my perlscript (or using your script above) and have spent ages trying to figure how to fix.
+The mongodb server IS running on the 27017 port and I can view my test databases using from the mongo shell or via compass BUT on trying to connect via perl, I am getting the error:
+
+"MongoDB::SelectionError: No readable server available for matching read preference primary. MongoDB server status:
+Topology type: Single; Member status:
+localhost:27017 (type: Unknown, error: MongoDB::NetworkError: Could not connect to 'localhost:27017': Bad address )"
+
+The line:
+my $client = MongoDB::MongoClient->new(host => 'localhost', port => 27017);
+
+does not appear to throw the error, but trying to create or amend a dbase does. Any suggestions solutions most welcome!
+
 

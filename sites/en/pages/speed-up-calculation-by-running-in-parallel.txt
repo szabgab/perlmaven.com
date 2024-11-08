@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -155,3 +155,89 @@ it will run the linear version. If you run it with any positive number, it will 
 
 BTW, the "DATA_LOOP" in this example is not really needed, it only tries to make the code a bit more readable.
 
+<h2>Comments</h2>
+
+Dear Gabor, can this also work on Windows???
+
+Obviously not, but it can be written and debugged on it by using zero as the max number of child-processes passed to "new()".
+
+What is the $exit_signal on the "run_on_finish" arguments list, what does it signify, what sets it and what is it used for?
+
+The only reference to it on the CPAN doc is "(0-127: signal name)" which is rather cryptic...
+
+----
+
+I don't know.
+
+<hr>
+
+Hi Gabor,
+
+Thanks for the great article. Very helpful.
+I don't understand, however, the difference between these:
+---
+for my $q (@numbers) {
+$pm->start and next;
+...
+}
+---
+
+DATA_LOOP:
+for my $q (@numbers) {
+$pm->start and next DATA_LOOP;
+..
+}
+To me, it looks like when you add the LABEL you are calling the entire 'for' loop again for each child, rather than creating one child per 'for' iteration...
+I've seen this done elsewhere too...but I cannot find any explanation.
+Can you please explain when and why to add the LABEL to the forking construct?
+Thanks,
+Steve.
+
+---
+
+Never mind...I found the answer :)
+A LABEL is a way to identify which loop so you can jump to the next iteration in a 'higher' loop than the one you are in.
+Useful with nested loops.
+
+---
+Correct
+
+<hr>
+
+I tested the program using fork. The results vary with the change of N. I understand that the error cannot be avoid. However, some errors look bigger. Is it possible to control the error? Below is the test results:
+[lwang@bustard download]$ time test.pl 8
+Forking up to 8 at a time
+$VAR1 = {
+'2000000' => '2009997.75109997',
+'14000000' => '14069999.767691',
+'10000000' => '10049994.6817341',
+'8000000' => '8040000.10614982',
+'18000000' => '18089998.8101834',
+'16000000' => '16079994.0340922',
+'4000000' => '4019995.67857078',
+'20000000' => '20100008.2442531',
+'6000000' => '6029996.56460236',
+'12000000' => '12059994.2682348'
+};
+
+real 0m3.141s
+user 0m15.190s
+sys 0m0.047s
+[lwang@bustard download]$ time test.pl 4
+Forking up to 4 at a time
+$VAR1 = {
+'2000000' => '2009996.17732622',
+'10000000' => '10049989.9027839',
+'14000000' => '14069992.8959136',
+'8000000' => '8039992.48831927',
+'18000000' => '18089995.5504226',
+'16000000' => '16079990.5352963',
+'4000000' => '4019991.95067143',
+'20000000' => '20099996.6519283',
+'6000000' => '6029997.00456926',
+'12000000' => '12059991.4371894'
+};
+
+real 0m5.145s
+user 0m14.759s
+sys 0m0.041s

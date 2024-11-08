@@ -4,7 +4,7 @@
 =status show
 =books anyevent
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 
 =abstract start
@@ -287,4 +287,29 @@ Then I ran it with <hl>$max = 6</hl> and the total elapsed time went down to 4 s
 This is of course very far from being a good measurement. Please try it with various other
 sets of URLs and values of <hl>$max</hl>.
 
+<h2>Comments</h2>
+
+Thanks, this was helpful in my script which gets the WAN ip address from my router.
+
+#!/usr/bin/perl
+open(FIL,"wget --quiet --output-document=- 'http://192.168.254.254/' |");
+$flag=0;
+while (<fil>) {
+   last if ($flag); # exit loop with line after "WAN IP:" is found
+   if (index($_,">WAN IP:") > 0) {
+      $flag = 1;
+   }
+}
+print $_;
+
+<hr>
+
+Thanks for the code sample. If this helps anyone, there's a bug in the Throttle version when $max=1, as the $cv->end will cause the script to finish before the next $cv->begin is run.
+
+The fix is to swap 49 and 50 so it is:
+
+send_url(); # This will run $cv->begin so $cv->recv doesn't break out of the script
+$cv->end;
+
+and then the script will finish processing all urls.
 

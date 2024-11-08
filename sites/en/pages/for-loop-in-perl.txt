@@ -5,7 +5,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -135,3 +135,16 @@ You can find the official description of the for-loop in the
 <b>perlsyn</b> section of the
 <a href="http://perldoc.perl.org/perlsyn.html#For-Loops">Perl documentation</a>.
 
+<h2>Comments</h2>
+
+It isn't called a C-style for loop arbitrarily: C was the first language to use this style of for loop. Sure many languages implement this form, but all other languages that use this for loop copied this pattern from C.
+
+<hr>
+
+This is an extremely decent presentation, unlike most similar pieces of documentation which appear to be written by superior and condescending smart adultsThis is an extremely decent presentation, unlike most similar pieces of documentation which appear to be written . And the author is not even a native English speaker; congratulations!
+
+<hr>
+
+Is it possible (similar to C) put into for loop instruction return?
+
+yes

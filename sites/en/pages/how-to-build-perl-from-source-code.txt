@@ -4,7 +4,7 @@
 =indexes Linux
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -114,4 +114,14 @@ cpanm Module::Name
 Up till this point it is not really a lot of work, but it can take some time depending on the CPU in your Linux box.
 Installing the necessary modules can take quite a lot of time, and some of them will need extra, stuff
 to be <a href="/install-perl-modules-without-root-rights-on-linux-ubuntu-13-10">installed as root</a>.
+
+<h2>Comments</h2>
+
+How do we build perl with a custom gcc compiler. i.e., with a non out of compiler in the distribution. I need to build latest perl on CentOS 7 with gcc 6.4.0. I have built gcc 6.4.0 and is available in /opt/gcc-6.4.0.
+
+---
+
+Make sure the right gcc comes first in the PATH so when you type
+"which gcc" it show the path of the one you'd like to use. That should
+be enough.
 

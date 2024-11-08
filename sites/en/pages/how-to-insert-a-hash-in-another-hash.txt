@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -135,3 +135,14 @@ In case you are interested, I've also written and article showing
 <a href="https://code-maven.com/how-to-insert-a-dictionary-in-another-dictionary-in-python">how to merge dictionaries in Python</a>.
 
 
+<h2>Comments</h2>
+
+Great example Gabor,
+and this is the best point (for nested hash):
+$team_b{other}{Bar} = 700;
+
+Thank you
+
+<hr>
+
+Thanks Gabor, this a very clear and direct example with exactly the variations I was looking for. I get a lot of good information from your site by the way.

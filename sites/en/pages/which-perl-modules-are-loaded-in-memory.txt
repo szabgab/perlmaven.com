@@ -3,7 +3,7 @@
 =indexes %INC, @INC
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -121,4 +121,8 @@ is not set up correctly and you are using the installed version of the module in
 In that case you might want to see <a href="/how-to-add-a-relative-directory-to-inc">how to add a relative directory to @INC</a>
 or <a href="/how-to-change-inc-to-find-perl-modules-in-non-standard-locations">how to change @INC to find modules in non-standard locations</a>.
 
+
+<h2>Comments</h2>
+
+Great Content Gabor, you have no idea how many times you have saved me a lot of time at work, these are great tips!
 

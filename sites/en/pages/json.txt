@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -180,3 +180,106 @@ $ count foo
 <a href="https://docs.python.org/2/library/json.html">Python</a> comes with a class called json that will handle all aspects of JSON processing.
 
 <a href="http://ruby-doc.org/stdlib-2.0/libdoc/json/rdoc/JSON.html">Ruby</a> also comes with a standard library handling JSON files</a>
+
+<h2>Comments</h2>
+
+I want to parse JSON file without using perl module.. Can you please help..
+
+---
+
+The quick and dirty way is to change the JSON syntax to Perl syntax and then Eval it back into Perl, like this:
+
+my $JSON='json string here';
+$JSON=~s/":/"=>/g;
+my $PERL=eval $JSON;
+
+That will work about 95% of the time.
+
+---
+Good thinking! Love it!
+Works great with json from both openweathermap.org and sunrise-sunset.org.
+
+---
+I just bumped into JSON::Parse, which seems to have recent activities, compared to JSON...
+Does anybody know the motivation to abandon JSON in favor of JSON::Parse?
+
+<hr>
+
+Here we are taking a static json data in the perl script, right?. What if i have a json file and I need to assign the perl variables with json data.
+
+---
+
+I don't know what do you mean by "static json data", but in any case I think after reading an example and/or the documentation you need to write some code, experiment a bit and then show your code if you have some question about it.
+
+---
+Haha, true.
+
+---
+<hr>
+
+Hello Gabor,
+
+I HAVE been writing some perl and experimenting with decoded JSON results. Your decode example above is a good introduction but quite superficial and doesn't help me get to the next level. I have a JSON object that is large, deep and complex: arrays in hashes, hashes in arrays, etc. Dumper shows me that I have a valid JSON object with much data. My task is to filter certain data from the JSON object but I can't seem to get past the first level. Dewang asks the question, "...I need to assign the perl variables with json data..."
+
+I think he means to ask, "How can I assign a part of the JSON object data to a perl variable?"
+Here is my approach so far:
+...
+open($jsonFile, "<", $ARGV[0]) || die("$ARGV[0] not found...");
+
+# Unset the separator to get the entire file.
+local $/ = undef;
+$jsonIn = <$jsonFile>;
+close($jsonFile);
+
+# Initialize a JSON object
+$json = JSON->new;
+
+# decode returns a reference; a pointer.
+$data = $json->decode($jsonIn);
+#print Dumper($data); # Shows lots of data as expected
+
+# Look at the data object reference as returned from decode
+print "raw:".$data."\n"; # HASH(0x1899b28)
+print "ref:".ref($data)."\n"; # HASH
+print "keys:".keys($data)."\n"; # 4
+
+$, = "\n";
+print keys($data); # shows the key names
+print "\n";
+$, = "";
+
+# Look at one of the hashes directly from the data object
+print "raw:".$data->{SUMMARY}."\n"; # HASH(0x1c8e710)
+print "ref:".ref($data->{SUMMARY})."\n"; # HASH
+print "keys:".keys($data->{SUMMARY})."\n"; # 4
+
+$, = "\n";
+print keys($data->{SUMMARY}); # shows the key names
+print "\n";
+$, = "";
+
+# Why can't I assign a hash from the data object to a hash variable?
+my %summary = $data->{SUMMARY}; # no error
+print "raw:".%summary."\n"; # 1/8 ?
+print "ref:[".ref(%summary)."]\n"; # [] ?
+print "keys:".keys(%summary)."\n"; # 1 ? Should be over 700
+
+# end of perl file
+
+---
+
+The question has nothing to do with JSON. These are just Perl data structure operation unrelated to where did the data arrive from.
+
+A reference to a hash and a hash are two different things in perl,
+
+$data->{SUMMARY} is probably a reference to HASH so if you'd like to assign it to a has you need to dereference it:
+
+my %summary = %{ $data->{SUMMARY} };
+
+For the next level you need to learn more about Perl data structures, references and dereferencing.
+
+---
+
+Thanks. As usual, I tried a bunch of ways to dereference it, just not that way.
+I'll take another look and read up on referencing.
+

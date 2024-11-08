@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -232,4 +232,26 @@ Finally, let me include the most recent version of our test script:
 
 <include file="examples/email_regex_2.pl">
 
+<h2>Comments</h2>
 
+/^[a-z0-9]([a-z0-9.]+[a-z0-9])?\@[a-z0-9.-]+$/ --- This is wrong . This would fail for email IDs like ab@abc.com
+Instead you should use /^[a-z0-9]([a-z0-9.]*[a-z0-9])?\@[a-z0-9.-]+$/
+
+<hr>
+
+This regex is not conformant with email addresses as defined in RFC5322, e.g. the regex does not allow for hyphens, which are regularly used as part of usernames.
+---
+Thank you for agreeing with what I wrote in the post.
+
+<hr>
+
+if ($email =~ m/^[a-zA-Z0-9][_\-\.a-zA-Z0-9]*[a-zA-Z0-9]\@[a-zA-Z0-9][\-\.a-zA-Z0-9]*[a-zA-Z0-9]\.[a-zA-Z]{2,6}$/) {
+print 'The email address is valid.' . "\n";
+}
+else {
+print 'The email address is NOT valid.' . "\n";
+}
+
+---
+
+Awesome solution!

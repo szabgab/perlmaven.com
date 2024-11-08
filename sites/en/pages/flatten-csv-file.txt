@@ -4,7 +4,7 @@
 =status show
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -36,4 +36,11 @@ perl examples/flatten_csv.pl examples/plain.csv examples/flattened.csv
 The more generic solution using Text::CSV:
 
 <include file="examples/flatten_text_csv.pl">
+
+<h2>Comments</h2>
+
+sub slurp { local (@ARGV,$/)=shift; readline; }
+
+my @_a=slurp($ARGV[0]) =~ m{([^,\n]+)[,\n](?{print "$1\n"})}g;
+
 

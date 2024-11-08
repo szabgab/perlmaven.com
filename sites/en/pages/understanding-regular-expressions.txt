@@ -5,7 +5,7 @@
 =books beginner
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -58,4 +58,11 @@ There are a number of articles about regexes you might want to read. The
 central one might be the <a href="/regex-cheat-sheet">regex cheat sheet</a>
 that has links to all the other articles.
 
+
+<h2>Comments</h2>
+
+i don't understand meaning of [^a-z0-9]*[ \t\n\r][^a-z0-9]* .
+
+---
+What do you understand from this?
 

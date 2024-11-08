@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -186,4 +186,11 @@ You won't see this in most of the modern Perl scripts.
 
 Another common flag that you might see on the hash-bang lines are <hl>-t</hl> and <hl>-T</hl>. They
 turn on the so-called <b>taint-mode</b> that will help you write more secure code.
+
+<h2>Comments</h2>
+
+can you please explain how to give the shebang for the strawberry perl installed in windows
+
+---
+There is no need for sh-bang line on Windows.
 

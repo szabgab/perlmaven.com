@@ -3,7 +3,7 @@
 =indexes ping, Net::Ping
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -223,4 +223,13 @@ with each host. (At first when I saw the above results I was a bit surprised, bu
 printed there are averages of 5 pings so the total time is 5 times longer for each host meaning 0.5-1.5 second per host.
 
 How can we run these pings in parallel?
+
+<h2>Comments</h2>
+
+it appears you now need to add "icmp" to have it work reliably
+
+my $p = Net::Ping->new('icmp');
+
+unfortunately this also seems to require root for some reason
+
 

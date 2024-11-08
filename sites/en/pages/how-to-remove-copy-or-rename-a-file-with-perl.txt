@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -75,4 +75,43 @@ This is similar to the <hl>cp</hl> command in Unix and the <hl>copy</hl> command
 
 For documentation visit <a href="http://perldoc.perl.org/File/Copy.html">perldoc File::Copy</a>.
 
+<h2>Comments</h2>
+
+Hi!
+
+Thanks for sharing this. It's really useful .I'm developing a site that handles a couple of files and when I try to delete and rename one of the files it simply doesn't work (while with other script with no mojolicious stuff it's working properly. Do you know if mojolicious is not letting me delete files on my computer for security reasons?
+
+Greetings.
+
+---
+
+The browser enforces security by running your script in a sandbox.
+
+<hr>
+
+If using literal string with a dot (.) in the name, use quotes:
+
+    rename "myFile.dat", "Your.fil";
+
+Works in Redhat Linux.
+---
+This is perl ... all strings are quoted.
+
+<hr>
+
+Hello there,
+
+I need some help with the following:
+
+1. I have to get the hostname of a vm using ssh IPv4 and import it into /etc/hosts file.
+
+2. I'm using the following perl script command to get the host name:
+
+ssh -t $ip hostname > $local_instance_session_log_dir/$ip
+
+it returns a file name: IPv4 (ie: 10.10.1.2) containing the hostame (ie: vm_name), which is good, I guess..
+Now, I want to create a file named "hosts" containing the "IPv4 TAB|SPACEBAR hostname" line by line to include it into to "/etc/hosts" so I can later include all VMs IPv4 and Hostnames as of:
+1. file: hosts
+2. IPv4 10.10.1.2
+Note: the "ssh $ip" command works only one way: from one vm machine to all other into VMs into the local network. I can't scp back from any of the remote VMs machines.
 

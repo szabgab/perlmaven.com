@@ -3,7 +3,7 @@
 =indexes Net::DNS
 =status show
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -148,4 +148,9 @@ is up or when the change has "propagated".
 
 We might want to add some notification, for example sending a status report in e-mail every hour and a final report just as we stop
 running the job.
+
+<h2>Comments</h2>
+
+Can I get the list of hosts for a specified domain with this package or any other alternative way in perl ?
+
 

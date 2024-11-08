@@ -4,7 +4,7 @@
 =status show
 =books metacpan
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -262,4 +262,20 @@ I am going to add if I start using module X?
 What other task would you like to do?
 
 If you are already using the MetaCPAN API, what do you use it for?
+
+<h2>Comments</h2>
+
+Hi, Gabor!
+Thanks for the solution.
+Could you tell me if there's a command in the CPAN that shows me the dependencies of a module?
+Thanks
+
+<hr>
+
+Hi Gabor, thanks for posting this such nice article. I have recently ran into this scenario where I want to install a set of packages on a remote system where no cpan access is available. only option is to first resolve the circular dependency problem, download the required packages and then proceed.
+
+Tried running the program and its taking forever.. How much time generally does this take to solve just one? haven't tried a full list yet.
+
+Any thoughts or ideas? Thank you in advance. cheers!
+
 

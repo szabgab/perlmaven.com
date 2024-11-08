@@ -5,7 +5,7 @@
 =books psgi
 =author szabgab
 =archive 1
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -99,5 +99,9 @@ $ tree
 └── www
     └── index.html
 </code>
+
+<h2>Comments</h2>
+
+How do I run this test?
 
 

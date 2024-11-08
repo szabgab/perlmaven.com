@@ -4,7 +4,7 @@
 =status show
 =books beginner
 =author szabgab
-=comments_disqus_enable 1
+=comments_disqus_enable 0
 
 =abstract start
 
@@ -133,4 +133,21 @@ etc.
 
 Since version 5.10 came out,  it is also a valid construct in Perl. It will throw an <hl>Unimplemented</hl> exception if it is executed.
 It can be very handy, but probably a bit premature to learn so early in the <a href="/perl-tutorial">Perl Tutorial</a>.
+
+<h2>Comments</h2>
+
+Thanks for the nice tutorials! I'm attempting to write a small perl script and it seems my searches keep leading me to different pages here. It must have taken quite awhile to put all this together...
+
+---
+Thanks. It took a few years.
+
+<hr>
+Yes, thank you very much for this guide. It's quite helpful.
+<hr>
+
+Enjoying your website. Still more to come. Thanks for the great PERL tutorial.
+<hr>
+
+can you give me the example of if - elsif with -- this statement -- do you want to continue if yes then program ask same question like what is age. if we select no then program exist.
+thanks in advance
 
