@@ -1,0 +1,34 @@
+name: Sites
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+
+  generate:
+    if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
+    runs-on: ubuntu-latest
+    name: Generate HTML
+    needs: [test]
+
+    steps:
+    - name: Generate HTML
+      env:
+         PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      run: |
+        curl -X POST \
+             -H "Authorization: token $PERSONAL_ACCESS_TOKEN" \
+             -H "Accept: application/vnd.github.v3+json" \
+             https://api.github.com/repos/szabgab/he.perlmaven.com/actions/workflows/ci.yml/dispatches \
+             -d '{"ref":"main"}' | tee out.txt
+        if [ -s out.txt ]
+        then
+            exit 1
+        else
+            exit 0
+        fi
+
+
+
