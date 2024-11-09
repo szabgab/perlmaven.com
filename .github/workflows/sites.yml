@@ -6,12 +6,10 @@ on:
   workflow_dispatch:
 
 jobs:
-
   generate:
-    if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
+    #if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
     runs-on: ubuntu-latest
     name: Generate HTML
-    needs: [test]
 
     steps:
     - name: Generate HTML
