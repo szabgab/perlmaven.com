@@ -10,6 +10,6 @@
 
 <screencast file="getting-started-with-docker-for-perl-developers-2024-06-13.mp4" youtube="mh9kx-Swx74" />
 
-Part of the the <a href="https://workshops.code-maven.com/">workshops</a>
+Part of the the <a href="https://live.code-maven.com/">live events</a>.
 
 See more <a href="https://workshops.code-maven.com/getting-started-with-docker-for-perl-developers">notes</a>

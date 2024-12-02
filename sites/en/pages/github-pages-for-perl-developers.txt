@@ -10,6 +10,8 @@
 
 <screencast file="github-pages-for-perl-developers-2024-08-15.mp4" youtube="wmeEwkLqa8k" />
 
+Part of the the <a href="https://live.code-maven.com/">live events</a>.
+
 During the presentation I created the repository at https://github.com/szabgab/szabgab.github.io that was hosted on https://szabgab.github.io/
 but I need that repo for future presentations so I renamed the repository to <a href="https://github.com/szabgab/github-pages-2024.08.15">github-pages-2024.08.15</a> and its result can be seen at <a href=""https://szabgab.github.io/github-pages-2024.08.15/>https://szabgab.github.io/github-pages-2024.08.15</a>.
 

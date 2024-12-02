@@ -9,3 +9,5 @@
 =show_related 1
 
 <screencast file="github-actions-for-perl-projects-2024-08-04.mp4" youtube="nE7jdKPEkTM" />
+
+Part of the the <a href="https://live.code-maven.com/">live events</a>.
