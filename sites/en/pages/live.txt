@@ -8,7 +8,7 @@
 =comments_disqus_enable 0
 =show_related 0
 
-Live on-line presentations and video recordings. See the full list of the <a href="https://workshops.code-maven.com/">Code Maven live events</a>
+Live on-line presentations and video recordings. See the full list of the <a href="https://live.code-maven.com/">Code Maven live events</a>
 
 
 <ul>
