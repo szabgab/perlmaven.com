@@ -1,0 +1,16 @@
+=title GitLab pipelines and CI for Perl developers
+=timestamp 2024-12-02T09:30:01
+=indexes GitLab, CI
+=status show
+=tags screencast
+=author szabgab
+=archive 1
+=description GitLab pipelines
+=comments_disqus_enable 0
+=show_related 1
+
+In this virtual event we'll get an introduction to the GitLab pipelines that allow us to build a CI system.
+
+The presentation will have examples in Perl.
+
+<a href="https://www.meetup.com/code-mavens/events/304874972/">register</a>
