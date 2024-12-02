@@ -2,7 +2,7 @@
 =timestamp 2025-08-16T07:30:01
 =indexes Zoom, presentations
 =status show
-=author szabgab
+=author 0
 =archive 1
 =description Zoom-based live presentations and their video recordings
 =comments_disqus_enable 0
