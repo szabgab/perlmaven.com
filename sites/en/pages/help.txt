@@ -65,14 +65,4 @@ a channel for helping people. For that you'd be better off going to the #perl ch
 
 In any case, please be warned that some channels might be rough at times.
 
-<h2>Comments</h2>
-
-Hi Team, We are getting the below, any help would highly appreciated ..
-Can't locate DBI.pm in @INC (@INC contains: /usr/opt/perl5/lib/5.10.1/aix-thread-multi /usr/opt/perl5/lib/5.10.1 /usr/opt/perl5/lib/site_perl/5.10.1/aix-thread-multi /usr/opt/perl5/lib/site_perl/5.10.1 /usr/opt/perl5/lib/site_perl/5.8.8 /usr/opt/perl5/lib/site_perl .) at line 64.
-
-BEGIN failed--compilation aborted
-
----
-
-https://perlmaven.com/cant-locate-in-inc
 
