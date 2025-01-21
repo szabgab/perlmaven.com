@@ -26,3 +26,928 @@ The presentation have examples in Perl.
    <li><a href="/gitlab-ci-module-build">GitLab CI Pipeline for Perl DBD::Mock using Module::Build</a></li>
    <li><a href="/gitlab-ci">GitLab CI for Perl projects</a></li>
 </ul>
+
+
+WEBVTT
+
+00:17:32.000 --> 00:17:40.000
+So I'm not sure. And there's lots of words here okay Hmm.
+
+00:17:40.000 --> 00:18:05.000
+Yeah, it's difficult to, as Mark says, it's difficult to maintain a self-hosted version of GitLab. Yeah, I didn't have the luck or whatever or the bad luck of maintaining actually one so i don't know but Yeah. And… Okay, so runners.
+
+00:18:05.000 --> 00:18:28.000
+When you configure a job, when you write a such configuration file, and let me actually, actually, actually, actually, actually, where is my terminal okay so here is my terminal we are inside the repository of of one of these a project on GitLab that I created specifically for this
+
+00:18:28.000 --> 00:18:38.000
+Presentation and I guess I will keep it around. So I'm going to show you right away what's going on I comment out the rest of the things here.
+
+00:18:38.000 --> 00:18:58.000
+So what we have now is we have this git lab I show you again this file called git.gitlab-ci yaml file And inside, we have lots of comments, but what we have here is this default colon and then indented script and some command
+
+00:18:58.000 --> 00:19:09.000
+So basically we are saying that there is a job which we called default This is an arbitrary name here and that job runs this echo hello world.
+
+00:19:09.000 --> 00:19:16.000
+Now i git add. And get comedy.
+
+00:19:16.000 --> 00:19:30.000
+Start okay i don't have much to say. Push out. But before I push out Let me find this repository. So this is the repository. I made some changes earlier today.
+
+00:19:30.000 --> 00:19:53.000
+And in this repository, you will see that on the left hand side and Each repository there are the pipelines and inside there are the jobs. So I go to the pipelines to see what's going to happen So there are a lot of failed things. We'll get to there why they are failed and that's the example. But now I'm going to push out.
+
+00:19:53.000 --> 00:20:04.000
+And as I pushed out, I can come back and hopefully it will automatically update itself this page. Maybe I reload it.
+
+00:20:04.000 --> 00:20:25.000
+I have to help it by reloading it. Okay. Yes. Okay. So maybe for the update automatically i'm not sure I used to remember that it does, but whoever okay whatever So it now says that there is this pipeline which is running. This is the commit message. This is the
+
+00:20:25.000 --> 00:20:33.000
+I guess the idea of this Pipeline job sync.
+
+00:20:33.000 --> 00:20:44.000
+David says that the workspaces are the coolest thing in them Okay, but you're not talking about workspaces right now.
+
+00:20:44.000 --> 00:21:09.000
+Anyway. So it just says that this thing passed. I can click on this one And… And yeah, so it's refreshes automatically victors yeah okay so i clicked on the on the pipeline here inside you can see the jobs
+
+00:21:09.000 --> 00:21:16.000
+And so this is the job. And you can see the output of this job. And you can see it printed out hello world.
+
+00:21:16.000 --> 00:21:37.000
+So what happens is that And I get back to the runners. So when I push out something Or there might be other events like maybe I can do manually or I can call some api and run this Or I can schedule something. So there are various events. But once that event happens.
+
+00:21:37.000 --> 00:21:48.000
+Then. Giplub picks up this file reads it and executes whatever is written in there.
+
+00:21:48.000 --> 00:21:52.000
+Now in this one
+
+00:21:52.000 --> 00:22:02.000
+We only had a job which called default which has a single command hello word.
+
+00:22:02.000 --> 00:22:22.000
+So what it does, it starts up a virtual machine called Git Club Runner. It's called a runner which is in this case i'm trying to look for the information I think this is the id of this or the tag of this runner
+
+00:22:22.000 --> 00:22:43.000
+I don't see what is exactly, I guess this is a Linux runner. Here it says it's a Linux runner Okay. And then inside it starts a virtual machine sorry a docker image docker container And by default, it runs this Ruby 3.1 Docker image.
+
+00:22:43.000 --> 00:22:58.000
+And then inside that immediate executes your script And of course, there are lots of other things to do, but it executes the script. One of the things is that it closed the repository or Somewhere.
+
+00:22:58.000 --> 00:23:20.000
+Checking out okay detached head whatever so it gets the that gets that that specific commit and then here it executed the command that was in that configuration file So that's it basically that we are done. Someone is writing again within GitHub. You need to find some way to somehow organize the projects ending up putting
+
+00:23:20.000 --> 00:23:40.000
+Custom attributes Not cool, in my opinion. Okay. Are you sure how docker image updates automatically depends on your setup. Okay, I don't think that the the update was meant about the docker Oh, I closed it. Sorry. Wait a second. I'll have to open again
+
+00:23:40.000 --> 00:23:56.000
+Chat okay i close the chat. Okay, I don't know if the docker image or I don't know if the automatic update was related to that It was about, I think, the view of the list of jobs or pipelines running.
+
+00:23:56.000 --> 00:24:16.000
+Anyway, so… Back to this point, we have these runners which is the virtual machine, I guess, or hardware or whatever, where you are running where these jobs can run and then you can the jobs are usually actually running inside a
+
+00:24:16.000 --> 00:24:36.000
+Container. It's not always, but it's usually they are running inside a docker container And so you have a full control of which container which container it keeps opening the reply window anyway which container you would like to pick? We'll see that soon.
+
+00:24:36.000 --> 00:24:53.000
+So the runner is actually, there is an operating system that can run on a virtual machine somewhere you rented there's an agent on it and then the GitLab is talking to that agent. And by default, and let me get you
+
+00:24:53.000 --> 00:25:05.000
+To this point. By default, if you scroll down here settings. So I'm in the project i scroll down to the settings CICD.
+
+00:25:05.000 --> 00:25:14.000
+And then there are the runners here. By default, there are lots of runners that GitLab provides.
+
+00:25:14.000 --> 00:25:20.000
+If you don't say what runner to use, then it will use the default one, the one that we saw now.
+
+00:25:20.000 --> 00:25:41.000
+I guess. Okay. I don't know if maybe it's picking one. So it's picking something small and cheap i guess Relatively. You can also use these tags to say that you would like to use some other runner. So by default, it's a small Linux machine, but you can also get a Mac OS.
+
+00:25:41.000 --> 00:25:44.000
+You can get Windows machines in order to run on them.
+
+00:25:44.000 --> 00:25:52.000
+And then, of course, you probably are interested not using a Docker image inside, but running natively on that.
+
+00:25:52.000 --> 00:26:07.000
+And in addition, to these runners, you can actually configure your own runner so at Quite a few of my clients, what we had is that we were using gitlab.com so the hosted service of GitHub.
+
+00:26:07.000 --> 00:26:12.000
+But we started our
+
+00:26:12.000 --> 00:26:18.000
+Machine. I don't know in in Google Cloud or Amazon Cloud, doesn't really matter.
+
+00:26:18.000 --> 00:26:26.000
+So we used set up our own machine, configured it to be GitLab.
+
+00:26:26.000 --> 00:26:41.000
+Runner it was included in here so you could see here in this project runners we connected them And then we could use in our jobs In this configuration to tell them to run on these specific machines.
+
+00:26:41.000 --> 00:26:48.000
+And that's good because then our code doesn't go to the shared machines.
+
+00:26:48.000 --> 00:27:09.000
+Well, these are still shared, but less so, I guess. And you might have some things that you configure up front you might store some data there that you need to have for your for your projects and so on. And theoretically, you can even have that
+
+00:27:09.000 --> 00:27:23.000
+That runner inside your office So at one company, though that wasn't GitLab actually, but it doesn't really matter, what we had is that we had a machine and a computer and to it we had we connected all kind of interesting devices
+
+00:27:23.000 --> 00:27:41.000
+That were rather unique. And we had to run the tests on these devices. So GitLab was telling this runner run the code, run the job, and that runner had these devices connected to it.
+
+00:27:41.000 --> 00:27:45.000
+So it could use run the jobs actually on those devices.
+
+00:27:45.000 --> 00:27:55.000
+So it's pretty cool because you're still using the cloud-based GitLab service, but your runner, you're totally in control of your runner.
+
+00:27:55.000 --> 00:28:14.000
+And obviously, it can also have price impacts on price of if you have a runner constantly up that has some cost On the other hand, you are using theirs then you probably have to pay at one point If you'd like to have more
+
+00:28:14.000 --> 00:28:19.000
+Time spent on their runners and so on. So these are the rudders.
+
+00:28:19.000 --> 00:28:26.000
+On top of these runners, especially on top of the Delux runners, you're going to probably use a docker image.
+
+00:28:26.000 --> 00:28:34.000
+You saw that the default is Ruby something 3.1, if I remember correctly But we'll see how to configure it.
+
+00:28:34.000 --> 00:28:54.000
+Well, okay. I am talking about a lot of theory and I haven't really showed you yet anyway So we got to the point of the GitLab CI just linked to YAML, this is the configuration file. So here is the very first one that we actually saw already
+
+00:28:54.000 --> 00:29:08.000
+That it has some name, job name, and then inside there is the script Strangely, or I don't know what, the default the word default is actually a totally arbitrary user defined Word, you can use anything there.
+
+00:29:08.000 --> 00:29:16.000
+The script is on the other hand is on the other hand is What?
+
+00:29:16.000 --> 00:29:31.000
+Is that is… required field that that's what will be executed okay so in the script you can put what to execute and here this is just a shell command but of course you can run anything there so you could pick
+
+00:29:31.000 --> 00:29:36.000
+An image which is pearl something and then you can run your Perl script there.
+
+00:29:36.000 --> 00:30:01.000
+If that's what you are interested or any other language if that's irrelevant. So we already saw the same thing In this example where we have this default and the script Let's go on and see a couple of more examples. So the next example actually before I show the next example, let me get here. I'm going to comment this out.
+
+00:30:01.000 --> 00:30:20.000
+And I'll show you this. So I organize these examples so I won't have to comment out way too many lines and we can have each file separately. So GitLab allows this configuration to include other YAML files, both locally and from other repositories.
+
+00:30:20.000 --> 00:30:43.000
+Here in this case, I show them locally. So I have these files in CI, I just called a folder called ci And then I have this hello world yaml file And I should… open it this way okay so this is basically the same except the string is slightly different
+
+00:30:43.000 --> 00:30:52.000
+And the point here was to show that you can include them. Now, I want to skip this because I hope that you trust that I can do this.
+
+00:30:52.000 --> 00:31:04.000
+And so I'm going to switch to the next example So in this one you can see that the only change basically is that I set up I configured the image.
+
+00:31:04.000 --> 00:31:10.000
+And so I can now get added. Image.
+
+00:31:10.000 --> 00:31:27.000
+And I push it out. Okay, so… Let's go back to the go Today, not this page, not this page this page but not this page to the build.
+
+00:31:27.000 --> 00:31:42.000
+Pipeline. So here I could go directly to the actual jobs so each pipeline is divided or can be divided in separate jobs Right now, we only have one job, so it doesn't really matter. But I can go to the pipelines and then inside the pipelines
+
+00:31:42.000 --> 00:31:58.000
+You will see the job. So here I have one single job. If I scroll down here you can see there were several syncs running stay actually these are stages so Let's not confuse. We don't see the difference between them.
+
+00:31:58.000 --> 00:32:26.000
+So here we have this, and this one commit image if i click on this one then i will be able to see I will be able to see the output but which is more most interesting to me is seeing the image right here so it says that it's running on busybox latest, which is just a very small
+
+00:32:26.000 --> 00:32:38.000
+Docker container okay of course you can pick anything there let's go here so hub docker.
+
+00:32:38.000 --> 00:32:50.000
+Okay, so I guess you're familiar with this. You can pick any docker container and then This basically, you don't really need to understand what to do with the docker container. You just write the comments.
+
+00:32:50.000 --> 00:33:16.000
+And it will just run inside the Docker. So let's say if I go for Perl And then there are various of these Docker containers But you can say, let's say Four, five… dot 40.0 and then it will pick that specific docker container that has this version of Perl already installed and compiled
+
+00:33:16.000 --> 00:33:30.000
+Already installed in it and you can get all kind of different ones okay so it's really And these are pure pearl things i guess and then there are others the pearl test image and all kinds of other other images
+
+00:33:30.000 --> 00:33:43.000
+That already contain lots of lots of modules So your whole job will be running much faster because you don't have to install all those things yourself every time you run your code.
+
+00:33:43.000 --> 00:33:52.000
+If anyone can remember remembers the Perl test, what was this pearl, I think it's called test.
+
+00:33:52.000 --> 00:33:55.000
+Anyone remembers?
+
+00:33:55.000 --> 00:34:02.000
+Maybe is this one? I don't remember.
+
+00:34:02.000 --> 00:34:18.000
+No, it doesn't look like the one. Anyway, if anyone remembers, which is the docker image what other docker images they are suggested now these days let me know please in the chat and then we can I can share it also look we can look at it.
+
+00:34:18.000 --> 00:34:23.000
+Okay, so this is how we pick up
+
+00:34:23.000 --> 00:34:43.000
+Container now this one maybe i won't even And I can run this. This example shows that I can run in the script several commands not just one. So if I go back to this one i can this enable disable so i have this run shell comm
+
+00:34:43.000 --> 00:34:49.000
+It will do this it adds this Yeah, yeah.
+
+00:34:49.000 --> 00:34:56.000
+And I'm not very good at writing these comic messages this time.
+
+00:34:56.000 --> 00:35:05.000
+Not that in other times I am, but anyway So… Okay, I'm going to close this window because I don't need it.
+
+00:35:05.000 --> 00:35:30.000
+I can click now on the jobs And then I can see the new which is called ed which was called ed it doesn't say I guess, yeah, I guess this is the output so here you can see the output of all those shell commands showing all the environment variables that
+
+00:35:30.000 --> 00:35:34.000
+You have there the you name so you can see exactly what types of syncs you have.
+
+00:35:34.000 --> 00:35:40.000
+Not that It can be useful for debugging later on.
+
+00:35:40.000 --> 00:35:55.000
+Okay, now next thing. Here, what you can see is we have actually three different jobs And in each job, there is a stage Now, earlier.
+
+00:35:55.000 --> 00:36:03.000
+You might have noticed let's see if it says… exiting stage.
+
+00:36:03.000 --> 00:36:28.000
+Yeah, it says here it says actually that the CHC job stage is called test stage And I think also outside you could see outside And… that the stage is called test. So there are various stages of your process of your CI job that your CI job can go through various steps, stages
+
+00:36:28.000 --> 00:36:47.000
+And the default one is course test. And in this configuration, and I'll just get to the point of Scott in a second In this configuration, what we have is that we have these jobs, separate jobs And each one I put in a different stage
+
+00:36:47.000 --> 00:37:03.000
+Now, I'm probably not, it wasn't a good idea to do both of these things at the same example. So I probably should have done only just said that the stages But anyway.
+
+00:37:03.000 --> 00:37:09.000
+See? This.
+
+00:37:09.000 --> 00:37:15.000
+Okay, so while it's running, let me look at the command. This may be converted.
+
+00:37:15.000 --> 00:37:35.000
+Covered eventually but What's the best method for syncing the CPA modules on a development machine to a docker image sorry method for syncing the SIPA modules on a developer Okay, goodbye, whoever is leaving, David. Okay.
+
+00:37:35.000 --> 00:37:54.000
+I'm not sure I understand your question, Scott. So you probably have… I mean, you can have… So there is the default way of telling your
+
+00:37:54.000 --> 00:38:13.000
+Okay, so the question is, what is the best way method to syncing the CPAP modules on a development machine to a docker image I mean, every time I wrote any project in Perl, even if it wasn't for CPAN, It had a make file PL or whatever you
+
+00:38:13.000 --> 00:38:33.000
+Manage or a simple file the right where i said which versions of the modules i needed And… I wasn't very strict in these unfortunately back in those days in Perl, but you can actually really fix the versions of in the CPAN file, if I'm not mistaken.
+
+00:38:33.000 --> 00:38:44.000
+And then it will pull those specific versions whenever you need it. And you verify that those are the versions.
+
+00:38:44.000 --> 00:39:08.000
+And then you will have to maintain these versions and upgrade them as those modules are as modules advancing and as you need to upgrade them cartoon camel someone wrote that's the tool yeah cartoon and cargo okay I mean, building up a Docker image that includes the CPAP modules and development machine like
+
+00:39:08.000 --> 00:39:18.000
+How to layer the image and export the installed modules. Yeah, I don't think I'm going to get into the how to build a Docker image here.
+
+00:39:18.000 --> 00:39:33.000
+But I think I would, I'm doing the same thing so if you really want to stick be strict Then go with Skarton. I don't know karl, but Cartoon I do.
+
+00:39:33.000 --> 00:39:52.000
+So these tools that were mentioned. In the chat, go with them they will allow you to exactly say what version you need and then that's how you use the standard Perl tools to install them into your docker image.
+
+00:39:52.000 --> 00:39:56.000
+But…
+
+00:39:56.000 --> 00:40:05.000
+Okay, so caramel is the same as the updated version of cartoon Okay. Thank you.
+
+00:40:05.000 --> 00:40:17.000
+Okay, sorry. I'll get two back. So we are here and it was upgraded to there is the commit message?
+
+00:40:17.000 --> 00:40:28.000
+There's no commit message here because we are in the jobs. Okay, I guess I hope that this is the right one that I wanted to look at. Actually, no, no, no, no. Go to the pipelines, Gabor.
+
+00:40:28.000 --> 00:40:39.000
+That's what I wanted to show you. The pipelines So yes, this was the last commit and push that I made where you had three jobs each one is in a different stage.
+
+00:40:39.000 --> 00:40:48.000
+So if I put the mouse here, you can actually see this is the build stage this is the test stage And this is the deploy stage.
+
+00:40:48.000 --> 00:41:06.000
+Now, these are just names. You can do whatever you like in them, but they help you to get the idea of what you're supposed to do in each stage. They are also dependent on each other. And then they will go off one after the other. So now if I click on the
+
+00:41:06.000 --> 00:41:16.000
+Pipeline itself here you can see the drawing clearer and then you can get into each one of them and see the details detailed output of each one of them.
+
+00:41:16.000 --> 00:41:22.000
+And they are dependent on each other one. So if the build fails, let's say, then the test won't run.
+
+00:41:22.000 --> 00:41:44.000
+And be it test, deploy, that might be good naming convention for a more compiled Language, what even means inside Perl, you might separate some part of the commands into the build phase and some, let's say in the build phase you put in all the
+
+00:41:44.000 --> 00:42:05.000
+I thought about putting all the prerequisites but but no so so maybe okay so here's an example. You might do in the build phase you actually run the unit tests, create your image, create your cpa module upload it somewhere as an artifact.
+
+00:42:05.000 --> 00:42:32.000
+And in the test phase. You use it as an already created and zipped So there you are actually you seep and install your own the new release of your own module before not not before even you upload it to cpan so this way and actually i have somewhere but i think i i did it for gitlab
+
+00:42:32.000 --> 00:42:50.000
+The same idea. I didn't do it for, so I didn't for GitHub, not for GitHub. So in the build phase i was running the make test and the make and the make make this it created a zip file, that file i
+
+00:42:50.000 --> 00:43:10.000
+Stored it under the artifacts of GitHub in that case, but also in git lab it stores it somewhere in its cloud. And in the test i would have several jobs on different versions of Perl, maybe even on different operating systems
+
+00:43:10.000 --> 00:43:28.000
+And they would use download that zip file which is your module. And even if you're running it inside, if you're doing it in a company And it's not public, that's fine. You can still package everything up as if it was a CPAP module.
+
+00:43:28.000 --> 00:43:33.000
+And then… install that and run the test of that.
+
+00:43:33.000 --> 00:43:57.000
+And it will pull in all the supposed to pull in all the dependencies Okay, and then the deploy would, I don't know, maybe if everything works fine, the deploy would in this case, if it's a CPAP module would push it out to CPAN or if it's something that you want to deploy then it will deploy do the deploy. But that's just naming just a
+
+00:43:57.000 --> 00:44:18.000
+Default naming convention. So this is what we had here What time is it? 15 already so almost three quarter of an hour i also have been talking Way too much. Okay. Manual stages Okay, so we saw the default stages
+
+00:44:18.000 --> 00:44:23.000
+But you might not like these build, test, deploy words.
+
+00:44:23.000 --> 00:44:35.000
+So you can define your own stage names. And so you have a keyword called stages then you list the names of the stages you like.
+
+00:44:35.000 --> 00:44:40.000
+Let's say prefer lint, compile unit test, integration test, acceptance test.
+
+00:44:40.000 --> 00:44:54.000
+Deploy okay or whatever stages you would like to have and then you can create jobs and associate each job is one of the stages or maybe you have several jobs associated with the same stage.
+
+00:44:54.000 --> 00:45:01.000
+So uh I won't run this now, I think. If I'm not mistaken, I already have it.
+
+00:45:01.000 --> 00:45:07.000
+The image here And there is a slide I didn't cover, so I'll get back to it in a second.
+
+00:45:07.000 --> 00:45:15.000
+So to define your stages and then it will look like this so it will have this One after the other.
+
+00:45:15.000 --> 00:45:32.000
+But I get back to the stage. To the slide. So you have the hierarchy of these words or names or entities There's the pipeline. In the pipeline, there are stages one after the other. In each stage you might have multiple jobs
+
+00:45:32.000 --> 00:45:39.000
+For each stage that will run in parallel or can run in parallel Each stage.
+
+00:45:39.000 --> 00:45:59.000
+Can have one or more jobs okay And even if you define the stages You don't have to fill all the stages okay so it will if there are there are stages that don't have any associated job then then okay, there is no. And this is the association so for inside the job you tell
+
+00:45:59.000 --> 00:46:14.000
+What stage it belongs to. And then there are the scripts. So each of these jobs have an entry called script which runs something okay
+
+00:46:14.000 --> 00:46:18.000
+Next one. Parallel jobs oh good one.
+
+00:46:18.000 --> 00:46:34.000
+So this one, how does it look like And I got back to the default naming. So here I have a, I called build job is in the build stage. Then I have a test job, a unit test job, an integration test job
+
+00:46:34.000 --> 00:46:39.000
+And then exit that's job. And they are all in this test stage.
+
+00:46:39.000 --> 00:46:59.000
+Meaning that they will run in parallel. Okay, now that might be a good idea bad idea. It's up to you what is the right hierarchy or order of these things if you run them one after the other, it has the advantage that if the unit tests fail, you don't waste
+
+00:46:59.000 --> 00:47:03.000
+Your resources on running the integration tests, let's say. On the other hand.
+
+00:47:03.000 --> 00:47:27.000
+The total time will be longer because this runs linearly. If they run in parallel, then maybe the unit test fails and you wasted some time and energy on running the exit test at the same time But if everything passes, then the total time will be shorter so that's
+
+00:47:27.000 --> 00:47:44.000
+Up to you. You can also different types of test running in parallel that can be also good. So you will you might divide your tests, your unit test into separate groups and then run them in parallel to make sure that, again, that they will run faster
+
+00:47:44.000 --> 00:47:54.000
+And you get the things done faster. So hopefully I have the slide already with that
+
+00:47:54.000 --> 00:48:05.000
+I don't. Apparently, I don't. Okay, I'm sort of mixing these things up a little bit Anyway, so let's run this.
+
+00:48:05.000 --> 00:48:10.000
+And to see how it works it adds.
+
+00:48:10.000 --> 00:48:17.000
+Wrong git add git ci minus m g Oh, well.
+
+00:48:17.000 --> 00:48:22.000
+I hope that I put the correct number of L's in that word.
+
+00:48:22.000 --> 00:48:30.000
+In the right places Just let me just open this file.
+
+00:48:30.000 --> 00:48:38.000
+So… Now, if I go to the pipelines
+
+00:48:38.000 --> 00:48:45.000
+It will show me that it's running three stages in this one.
+
+00:48:45.000 --> 00:49:03.000
+And… Right. So you can see that in the builds, there is the build stage it's running. And once the build stage is ready, then the three test stages that are in parallel, they all start to run. Now, I don't know what is the limit. I guess there is some limit
+
+00:49:03.000 --> 00:49:14.000
+Definitely in the free version i'm using the free version of github But I guess if you pay, then you can have more of these running at the same time.
+
+00:49:14.000 --> 00:49:19.000
+And I'm quite sure that there is some total time limit and whatnot.
+
+00:49:19.000 --> 00:49:37.000
+I don't know. Recently, I don't build that watch with it. So anyway, so then once you have, then you might have two different deploy jobs Once the tests have passed. So that's how you can run things in parallel.
+
+00:49:37.000 --> 00:49:45.000
+What else? What is the next thing here? Now the next thing is manual interaction.
+
+00:49:45.000 --> 00:49:53.000
+Okay, so this is not the right one here in the slides.
+
+00:49:53.000 --> 00:50:08.000
+Yeah, so there is a slight mix up between the slides and the order of the the examples I have in the file because the parallel drops you can see here in the slides. So let's see the next one.
+
+00:50:08.000 --> 00:50:24.000
+In the slides it's called jobs so here what we have is that in each job so far we had an entry called it's not
+
+00:50:24.000 --> 00:50:29.000
+Okay, that's not what I… Okay. So in each job, forget about the slide for a second.
+
+00:50:29.000 --> 00:50:37.000
+Each job we had Let's see this one.
+
+00:50:37.000 --> 00:51:00.000
+For each job we had a field called script with some comments. But you can also add the before script and then after script And these are steps executed in the job obviously before the script runs and after the script runs. And the interesting part or the valuable part of it or
+
+00:51:00.000 --> 00:51:18.000
+Why would you want to separate? Is because you probably put in the before script drop all the setup So think about it's the setup and the teardown of the job. So you probably put in the before script all the installation of the dependencies
+
+00:51:18.000 --> 00:51:33.000
+So that's not your test. But if that fails, you don't want to run your test because But you would like to see probably know separately whether you're before script stopped.
+
+00:51:33.000 --> 00:51:41.000
+Broke or if your actual test which is in the script part or the main thing The after script is interesting.
+
+00:51:41.000 --> 00:51:50.000
+Because that will run even in this case when you see that the main script actually fails.
+
+00:51:50.000 --> 00:52:02.000
+So here, on purpose, I wrote some per script that will exit with an exit code which is not zero Meaning that the CI job will see it as a failure.
+
+00:52:02.000 --> 00:52:12.000
+So get added. Let's see, I… fail this ci thing is just an alias for me.
+
+00:52:12.000 --> 00:52:18.000
+Beat, love. Keep forgetting to that i need to stay in the editor.
+
+00:52:18.000 --> 00:52:40.000
+Pipelines? It was still blue because I don't know why it didn't update properly now you can see this this round And we convey it a little bit. Now, in the meantime let's Yeah, okay.
+
+00:52:40.000 --> 00:52:57.000
+Okay, I'm getting getting to the almost an hour I have been talking. So soon, I guess I'll have to finish even though I wanted really to see one of the examples. Let's in the meantime see what's going on here
+
+00:52:57.000 --> 00:53:09.000
+So just to concede, you can see the before script is sipan miz recommends low test, meaning, okay, whatever, installs manila And then it has various jobs.
+
+00:53:09.000 --> 00:53:23.000
+Okay, for the test stage. And it says in apparently it uses images different versions of Perl so this is the that image that I was looking for earlier tool that i mentioned that there is a prol image with all kind of
+
+00:53:23.000 --> 00:53:34.000
+Modules already inside specifically for testing So this is what is being done here. Before the script so Just to be clear.
+
+00:53:34.000 --> 00:53:52.000
+Is my explanation. Let's get back here. In this example, what we had, that we had a job called default And inside the job we had a before script a script and then after script
+
+00:53:52.000 --> 00:53:56.000
+In this case, outside of the jobs there is a before script.
+
+00:53:56.000 --> 00:54:02.000
+Which means that this will run before each one of the jobs.
+
+00:54:02.000 --> 00:54:17.000
+So basically this before script is inherited by each one of the jobs You could override it. So you could have your own before script in one or more specific jobs. But if you want to have the same before script
+
+00:54:17.000 --> 00:54:28.000
+For every job, then this is what you do. Outside of it, you say this is the before script And then you have these jobs. And in these jobs, you can see that they are all in the test stage.
+
+00:54:28.000 --> 00:54:34.000
+Running on different versions of Perl. And it just runs linear tests on each one of them.
+
+00:54:34.000 --> 00:54:56.000
+And that's it okay that's the whole story here. Okay, so it's not a very complex setup It uses, but it's a nice one let's go to another one This is the game entities. I have no idea what is this well it looks a way more
+
+00:54:56.000 --> 00:55:03.000
+Oh, okay. There are some interesting things here. So this is the job.
+
+00:55:03.000 --> 00:55:21.000
+It has some rules when to run okay run always but only if the condition is a merge request event okay so By default, I think it only runs when you push out something when you can say when and you can say always, and then you can have these if statements
+
+00:55:21.000 --> 00:55:29.000
+Saying, oh, but only if the only Environment variable CI pipeline source is merge request event.
+
+00:55:29.000 --> 00:55:39.000
+So it only runs on merge requests, this workflow. And then there's another condition If the commit branch is the default branch of the project.
+
+00:55:39.000 --> 00:55:54.000
+Okay. And then each one has some variable set. And I guess later on somewhere maybe in the code base You use these variable environment variables.
+
+00:55:54.000 --> 00:56:16.000
+This one allows you this dot sub notation allows you to create to reduce duplication That's actually the nice thing in this one In the Rxper, we saw that basically this is copy paste Okay, so the only difference between this and this
+
+00:56:16.000 --> 00:56:21.000
+Well, is the name of the job? And the name of the image.
+
+00:56:21.000 --> 00:56:28.000
+And… So there are duplications here.
+
+00:56:28.000 --> 00:56:52.000
+This one solves this duplication by saying, okay, this is basically the job and each one of them is using this one Now, you could or we could Does it have a… Yes, lovely job name okay so the image is picked up by the name of the job.
+
+00:56:52.000 --> 00:57:02.000
+So you don't even have to have this duplication. In this case you see the name of the job has per version and then here we also have the perl version.
+
+00:57:02.000 --> 00:57:19.000
+In this one only have the Perl version here and then inside the job, which is this Basically, this star test i think this says that use this this thing As if it was there. So think about this as a function call or whatever
+
+00:57:19.000 --> 00:57:26.000
+And then we are using this variable to send the image.
+
+00:57:26.000 --> 00:57:39.000
+Very nice okay so i have a lot less duplication and if i want to add or remove a version of parallel i just do it here and that's it. I don't need to update anything else.
+
+00:57:39.000 --> 00:58:05.000
+This one also has… And they don't know why it's in the in the… quotes maybe coverage is also, I don't know why is this a quote This one, I guess, because they are numbers but okay So this is the coverage job which runs on this image
+
+00:58:05.000 --> 00:58:23.000
+Before script does all these things and the script is actually running the cover And then… Somewhere, I don't have it now handy, but you can also And I'm not sure about Perl. I used it in Python.
+
+00:58:23.000 --> 00:58:42.000
+You can have the coverage reporting tool print out something and then the ci job in gitlab pick up the results of the the the cumulative or total results of the coverage job. And then it will show on the right hand side i think
+
+00:58:42.000 --> 00:58:54.000
+You can collect all the coverage report and have it uploaded so you can then open it in in a browser the web page.
+
+00:58:54.000 --> 00:59:00.000
+And you can easily see what is the coverage report for each run.
+
+00:59:00.000 --> 00:59:19.000
+So you can do that. And obviously you can do what is not Yeah, it is actually done. It pushes out to coveralls And then you can go to the cover house service and look your coverage report there.
+
+00:59:19.000 --> 00:59:23.000
+This one. Any comments, questions?
+
+00:59:23.000 --> 00:59:31.000
+Okay, so this one has… a globally defined image
+
+00:59:31.000 --> 00:59:40.000
+Some globally defined variables. It uses caching.
+
+00:59:40.000 --> 00:59:47.000
+I guess. It will save time on repeatedly installing the same thing.
+
+00:59:47.000 --> 00:59:57.000
+It insults some insults some Linux packages, right? With opt-get update update up get installed.
+
+00:59:57.000 --> 01:00:07.000
+This one. Fine. Then does all kinds of comments okay so these are the comments done before the actually testing, and it's done globally.
+
+01:00:07.000 --> 01:00:31.000
+Then this is the unit test job. Which has variables this is the script and now nice this is the artifact i mentioned you write that I can upload artifacts so here they are uploading the JUnit artifacts Let me try to see if we can get, I'll get to that later in a second
+
+01:00:31.000 --> 01:00:44.000
+Test coverage. This one is the one. Okay, so I didn't even have to copy paste my one mine So this module actually uses this.
+
+01:00:44.000 --> 01:01:10.000
+So if you run this coverage. Run this testing with the coverage report it will print on the screen something that says Total blah, blah, blah okay so thing and then this key will probably, if I understand this correctly get that line and report it on this website.
+
+01:01:10.000 --> 01:01:31.000
+And then the builds phase is just uploading the artifact so it is quite similar to what i explained that this uploads, it generates the this zilla, it generates the the torn gip and uploads it
+
+01:01:31.000 --> 01:01:52.000
+To the artifact library so let's take a look at where these things are If I go and go to Pipelines, well, it hasn't been built for a long time, it seems so maybe all these things were cleared But… so this one this one paused
+
+01:01:52.000 --> 01:02:08.000
+Four years ago, pretty long time ago so maybe all the things were clear since then Yeah, I don't see any of the details. Artifacts are here.
+
+01:02:08.000 --> 01:02:16.000
+Yeah, these are the artifacts so this is the released or to be released zip files.
+
+01:02:16.000 --> 01:02:25.000
+I don't see the coverage report here. Maybe that was removed or this thing was added later. I don't know.
+
+01:02:25.000 --> 01:02:32.000
+It would have been nice if we had time to actually implement one of these things.
+
+01:02:32.000 --> 01:02:45.000
+So, okay, this is not interesting anymore set stage of job. Okay, we see this. So this not interesting parallel jobs you saw already.
+
+01:02:45.000 --> 01:02:50.000
+I won't show these anymore. Oh, actually, I will. I will. I will. I will.
+
+01:02:50.000 --> 01:03:00.000
+Let's get back to it. So we saw the before and after the before We have the manual interaction.
+
+01:03:00.000 --> 01:03:13.000
+Which looks like this. I have a beer stage let me from this heat and CI manual.
+
+01:03:13.000 --> 01:03:19.000
+Before I push it out did i want Was I in the middle of something?
+
+01:03:19.000 --> 01:03:35.000
+This one. Yeah. This one I wanted to show you and i forgot If you remember, this was the before after thing. Let me go back and show that before I go to the next example.
+
+01:03:35.000 --> 01:03:42.000
+So that was this the before and after the before and after where the interesting part was that the script itself failed.
+
+01:03:42.000 --> 01:03:56.000
+On purpose in this time, but failed. So this is how it looks like. It says the echo before, you can see it. There is the pearl thing that fails And then the echo after which also works. But the whole job fails
+
+01:03:56.000 --> 01:04:05.000
+Because the… the main part failed, but the after part still runs. So if you need to do some cleanup or whatever.
+
+01:04:05.000 --> 01:04:13.000
+Despite the fact that the main part of digital failed, then you can do it.
+
+01:04:13.000 --> 01:04:21.000
+Okay, so let me push this out now the changes
+
+01:04:21.000 --> 01:04:27.000
+And this is the one that we wanted to see the manual interaction.
+
+01:04:27.000 --> 01:04:32.000
+So here we have just built Just test, nothing special here.
+
+01:04:32.000 --> 01:04:41.000
+And then there is the deploy. And then the deploy you say okay it runs manually So it doesn't just run.
+
+01:04:41.000 --> 01:04:47.000
+And it will even look for an environment variable called name.
+
+01:04:47.000 --> 01:04:52.000
+Which is not defined in this script. We'll have to provide it.
+
+01:04:52.000 --> 01:04:59.000
+So what happens? I go to the pipelines
+
+01:04:59.000 --> 01:05:13.000
+It runs okay it went through the testing phase it runs goes to the build this was build This was testing and it's still testing let me click on this one.
+
+01:05:13.000 --> 01:05:20.000
+See, it's still testing. Let's wait for a second. So when would you want to use this?
+
+01:05:20.000 --> 01:05:33.000
+If your regular thing you would like to okay you want to have all the jobs to have the ci What you don't want them to be automatically deployed you would like to be able to manually decide which one to deploy.
+
+01:05:33.000 --> 01:05:43.000
+So now, you know, you see that, oh, this was maybe the deploy is going to be uploaded to cpan.
+
+01:05:43.000 --> 01:05:58.000
+Okay so this everything is done okay you are happy And now you would like to do the deploy. So you can either click here to run it or you can click on the gear icon and provide some input.
+
+01:05:58.000 --> 01:06:06.000
+And so here we can provide the name field and here you can provide Fubar?
+
+01:06:06.000 --> 01:06:13.000
+And run job. And now you run that job.
+
+01:06:13.000 --> 01:06:29.000
+And I don't have experience in how to set Right on this. But if you're alone in this project or if you are meaning that if you are the only owner of the project, unlike in the companies where you have multiple people.
+
+01:06:29.000 --> 01:06:36.000
+Then it's easy because many people can push and you can also push, but it's only you who can type these things in.
+
+01:06:36.000 --> 01:06:53.000
+And you don't have to have that field. Okay, I only used it so you can see that that now you can see it prints it out Because if we go back to the back Seeing that's what he does, okay? It just echoes
+
+01:06:53.000 --> 01:07:08.000
+The deploy and you can see all one more thing here that's totally unrelated In this case, I had this pipeline and then I had several shell commands. Earlier I had this one.
+
+01:07:08.000 --> 01:07:30.000
+Okay, both are fine. If I'm not mistaken, the difference is that these run in separate commands And if I have a pipeline and like this, then it is being saved as a single file and then executed as a all the commands as a single executable. So that's basically the difference
+
+01:07:30.000 --> 01:07:35.000
+So this is to allow you to manually do something.
+
+01:07:35.000 --> 01:07:46.000
+But we can also have another one that's a more secretive one.
+
+01:07:46.000 --> 01:07:51.000
+Let's do this one.
+
+01:07:51.000 --> 01:07:58.000
+How does it look like? Very similar. Build stage, test stage. Fine.
+
+01:07:58.000 --> 01:08:09.000
+And the same here, deploy manually but this time i don't have the Not that I don't have. I have a constraint.
+
+01:08:09.000 --> 01:08:29.000
+That saying this script should only If the user provided a variable name code that if you're running the shot 256 on it then you will get this shot.
+
+01:08:29.000 --> 01:08:47.000
+So I guess, and the funny thing was funny that this i wrote A couple of years ago and today I wanted to make sure that everything works and well not everything works but It's okay. So far I've been talking more than an hour, so quite a few things work.
+
+01:08:47.000 --> 01:08:54.000
+And I didn't remember what was the actual verde, the original word that created this shah.
+
+01:08:54.000 --> 01:09:02.000
+But after like 10 experiments, I could figure it out. It's not that wasn't that difficult.
+
+01:09:02.000 --> 01:09:06.000
+I have very few
+
+01:09:06.000 --> 01:09:19.000
+Passwords. If you go back to the pipeline
+
+01:09:19.000 --> 01:09:30.000
+Okay, now we are here okay this post pass and now i can now i can I think I can click on this one and deploy.
+
+01:09:30.000 --> 01:09:40.000
+Manual action. And now I have to provide it So I have to provide i think it's caused It's case sensitive.
+
+01:09:40.000 --> 01:09:50.000
+And here I provide now this is unfortunate that i can unfortunate see it in clear text, but this is the secret It's a very big secret.
+
+01:09:50.000 --> 01:09:55.000
+It's a small, small, small secret okay the code was big.
+
+01:09:55.000 --> 01:10:01.000
+And… And so it's running and then it will hopefully work.
+
+01:10:01.000 --> 01:10:25.000
+Now, if I go back to the slides, I think I put it there manual approval yeah so the way to generate this is basically this is the command on linux So you just run this command with your secret and it will generate the sha and then you can save it with the notice there is this spaces and dash here
+
+01:10:25.000 --> 01:10:34.000
+That's part of it. Part of at least this output, I have no idea. Maybe I just made the wrong commands them.
+
+01:10:34.000 --> 01:10:56.000
+So this way in the in the ci you don't need to save a clear text version of your password or whatever secret password you can have a SHA version and then you can type it in in the in this view and i i
+
+01:10:56.000 --> 01:11:04.000
+It's unfortunate that you can't type, you can't have a secret one or maybe you can i just don't know.
+
+01:11:04.000 --> 01:11:18.000
+Anyway… it succeeded okay it it printed out the secret because I asked it to do you probably don't want to do that. I just wanted to verify it for myself here.
+
+01:11:18.000 --> 01:11:26.000
+And it verified this condition and everything was fine. So the job bent on.
+
+01:11:26.000 --> 01:11:41.000
+Okay. And I keep closing it editor i don't know why this was… peak runner okay so i showed you how to show you how There's a list of runners this is how you can pick the runner.
+
+01:11:41.000 --> 01:11:59.000
+Okay you see tags and then you give it the name or names of the of the tags that that were there If we go back i think here we go back in the configuration settings CICD.
+
+01:11:59.000 --> 01:12:06.000
+Yes, the secret is secret in this case And it's a very secret secret.
+
+01:12:06.000 --> 01:12:28.000
+So these are the runners that are available so you can put the tags these are the tag now the blue ones are the tags so you can put the blue ones there And then… And then it will pick the right thing. And then just notice that this Windows one, it's actually running natively on windows so
+
+01:12:28.000 --> 01:12:43.000
+So your comments, and that was a little confusion for me, it actually runs very slow, very slow. It takes a lot more time to start such a virtual machine then starting the linux ones I don't know whether it's because
+
+01:12:43.000 --> 01:12:47.000
+They're not running up front or it just takes longer i don't know.
+
+01:12:47.000 --> 01:12:55.000
+Anyway, so you can see here that I have two jobs and one of them is running on Windows, another one on macOS.
+
+01:12:55.000 --> 01:13:00.000
+Not that interesting. I won't try to show it, especially because it didn't work last time.
+
+01:13:00.000 --> 01:13:18.000
+I tried. There are some to-do items here that I wanted to show actually this one I can show you the explanation here there was there was there was I copied it from some job at a client what we had here
+
+01:13:18.000 --> 01:13:39.000
+Is that we had to run sometimes a specific job manually to clean the runner okay remove all kind of files that were there and instead of going ssa inching to the runner or own private runner, we had this job that would work
+
+01:13:39.000 --> 01:13:50.000
+And it would work if it would work the user provided a variable called clean runner with whatever value, which is not zero So just to clean the round one.
+
+01:13:50.000 --> 01:14:06.000
+Or if any of these files changed. Okay, so we have a docker file because it was Python. So we had the requirements and constraints file and the which is like the The list of the requirements, list of the dependencies
+
+01:14:06.000 --> 01:14:24.000
+And the pipeline itself. So in these cases, it should run and then The rest is just doesn't really matter okay so And it was running on our shell runner. So in our runner, we had one that was running inside a docker and
+
+01:14:24.000 --> 01:14:33.000
+Two configurations, one that allowed us to run inside a container another one that allowed us to run natively on our Linux box.
+
+01:14:33.000 --> 01:14:45.000
+And so this was called the shell runner And so these commands were running on the native system in this case is cleaning up all kind of sinks.
+
+01:14:45.000 --> 01:15:00.000
+Well, the details are not that important. The details of the script. What is important that we have to have these conditions that you can you can use And then this one, I guess I have to find the slides because i
+
+01:15:00.000 --> 01:15:09.000
+Couldn't finish the preparations, but we don't even have the time for that either This one is the link.
+
+01:15:09.000 --> 01:15:17.000
+So… And at least show it a little bit here with the documentation.
+
+01:15:17.000 --> 01:15:30.000
+So if you have like just a plain Perl script that you want to test Nothing interesting. You can do whatever we did so far. You just run Perl, make file, make, make test.
+
+01:15:30.000 --> 01:15:42.000
+And so on. Regular sinks. But what if you need to run your And maybe that's the
+
+01:15:42.000 --> 01:15:51.000
+Yes, the DBB looking, is it? No, I don't have a story. No, it's because it's mocking.
+
+01:15:51.000 --> 01:16:11.000
+Okay, I don't have anything interesting here, I think. No, this is not interesting. Not more interesting that we already had earlier. So back to the stages so maybe you need an actual progress sql database in order to run your test because you're running the dbd
+
+01:16:11.000 --> 01:16:21.000
+Pg okay which is actually on github and it has a I think already the CI because i configured it But whatever.
+
+01:16:21.000 --> 01:16:25.000
+Here, let's say you have some project that runs on Postgres.
+
+01:16:25.000 --> 01:16:29.000
+Or there are a couple of other examples. It doesn't really matter what.
+
+01:16:29.000 --> 01:16:34.000
+Anything that can run inside a docker. Okay.
+
+01:16:34.000 --> 01:16:51.000
+You can configure, say, okay, default, this is the name of the job. And then that job has a service which is called Postgres. So what will happen is that before running your job or job or any there before running this specific job
+
+01:16:51.000 --> 01:17:18.000
+And you're before running your specific job GitLab will start a separate machine Basically, separate Docker container inside it will run Postgres sql So this image you will probably define some parameters And then in your program, you will be able to access
+
+01:17:18.000 --> 01:17:38.000
+Using the name Postgres. That machine okay so you will have an actual postgres machine running next to your code and so we can access that And you can do it. It has explanations for MySQL, Postgres, SQL Redis.
+
+01:17:38.000 --> 01:17:57.000
+But uh And I don't know, GitLab as a microservice. I have no idea what is this I guess I haven't… Yeah, I'm not guessing really because we do use it at one of my clients I just couldn't demo it here yet.
+
+01:17:57.000 --> 01:18:16.000
+I couldn't finish the demo, you can use anything. So we are using for example and i think here I had the beginning of it I haven't finished the part. We have MongoDB. So it just says okay run this image.
+
+01:18:16.000 --> 01:18:19.000
+Okay, start it up. This is going to be the name of it.
+
+01:18:19.000 --> 01:18:29.000
+And then I don't have the rest of the code, which is our real job that should access this MongoDB server.
+
+01:18:29.000 --> 01:18:36.000
+Okay and uh and so then you can code can use code can one or more real services.
+
+01:18:36.000 --> 01:19:04.000
+And… If you have several services yourself so not just these external ones what your architecture is the microservice architecture then you're testing one piece But maybe the others are already available, should be available for you as a docker image. And so you could
+
+01:19:04.000 --> 01:19:24.000
+Just need to configure to be so this thing will be able to download that image which is another set of things but we don't go in And then you can it will download the images of all of your microservices and then you're testing one of these services
+
+01:19:24.000 --> 01:19:31.000
+Against all of the rest of the system. So this is just a demo of the demo.
+
+01:19:31.000 --> 01:19:36.000
+Ew. That's it, I think.
+
+01:19:36.000 --> 01:19:46.000
+Hmm. Do I have anything interesting so it's a little bit of work to get this done to get it working, but it's doable.
+
+01:19:46.000 --> 01:20:12.000
+Yeah, the site is empty. This I have already shown you a different way the before and after party you can have some variables defined globally or per job or get it from the user. The extending is we saw it in one of the examples that
+
+01:20:12.000 --> 01:20:32.000
+That um basically we have these jobs And they are all extended with these information so you can reuse the script part and we saw this earlier
+
+01:20:32.000 --> 01:20:54.000
+Yeah. Yeah, so there is a docker hub that we saw where you have the public docker images GitLab also have its own registry so docker registry so you can use that for your needs.
+
+01:20:54.000 --> 01:21:21.000
+Yeah, I guess so. I didn't try this one. Apparently I have this so it can how to run on windows I haven't tried it recently and these slides were created Just a second. These slides were created a couple of years ago and i updated only the first part of the slides and then wrote those examples. So I'm not sure about this
+
+01:21:21.000 --> 01:21:30.000
+And apparently this is old because since then mac os is available
+
+01:21:30.000 --> 01:21:42.000
+Yeah, these are some questions. Anyway, let's go back to here and let's go back to here And that's it. I think I'm way past what i planned.
+
+01:21:42.000 --> 01:21:50.000
+Any questions before I finish the video?
+
+01:21:50.000 --> 01:22:07.000
+Well, I can smile at you like this. Any questions? I guess everyone either fell asleep already or ran out of questions I can now stop the video now and then we can have some conversation if you like.
+
+01:22:07.000 --> 01:22:12.000
+So for now, thank you very much for all the people who participated and remained here.
+
+01:22:12.000 --> 01:22:34.000
+Most of the people apparently we are like 18 now. We started out i think 22 And… those people who are watching the video please also you who watch live later on go to the YouTube channel where I upload it and like the video and follow the channel and let other people know that helps me get the word out and
+
+01:22:34.000 --> 01:22:40.000
+It also encourages me to make more videos and more presentations So thank you very much and Again, just like the video and follow the channel. Thank you very much.
+
+01:22:40.000 --> 01:22:52.000
+And
+
