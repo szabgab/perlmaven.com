@@ -1,5 +1,5 @@
 =title GitLab pipelines and CI for Perl developers
-=timestamp 2024-12-02T09:30:01
+=timestamp 2025-01-21T09:30:01
 =indexes GitLab, CI
 =status show
 =tags screencast
@@ -11,6 +11,18 @@
 
 In this virtual event we'll get an introduction to the GitLab pipelines that allow us to build a CI system.
 
-The presentation will have examples in Perl.
+The presentation have examples in Perl.
+
+<screencast file="2025-01-20-gitlab-pipelines-and-ci-for-perl-developers.mp4" youtube="RnXwP4I-vUs" />
 
 <a href="https://www.meetup.com/code-mavens/events/304874972/">register</a>
+
+<ul>
+   <li><a href="https://slides.code-maven.com/gitlab/">The slides</a></li>
+   <li><a href="https://gitlab.com/szabgab/pipelines-demo">GitLab Pipelines demo</a> repository</li>
+   <li><a href="https://cpan.rocks/">CPAN Rocks</a></li>
+   <li><a href="https://gitlab.com/ioanrogers/Linux-Systemd">Linux-Systemd</a> GitLab repository</li>
+   <li><a href="https://gitlab.com/jjatria/perl-game-entities">Perl Game-Entities</a> GitLab repository</li>
+   <li><a href="/gitlab-ci-module-build">GitLab CI Pipeline for Perl DBD::Mock using Module::Build</a></li>
+   <li><a href="/gitlab-ci">GitLab CI for Perl projects</a></li>
+</ul>
