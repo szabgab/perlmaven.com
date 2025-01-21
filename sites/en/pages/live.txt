@@ -15,6 +15,5 @@ Live on-line presentations and video recordings. See the full list of the <a hre
     <li>2024.06.13 <a href="/getting-started-with-docker-for-perl-developers">Getting Started with Docker for Perl Developers</a></li>
     <li>2024.08.04 <a href="/github-actions-for-perl-projects">GitHub Actions for Perl projects</a></li>
     <li>2024.08.15 <a href="/github-pages-for-perl-developers">GitHub pages for Perl developers</a></li>
-    <li></li>
     <li>2025.01.20 <a href="/gitlab-pipelines-and-ci-for-perl-developers">GitLab pipelines and CI for Perl developers</a></li>
 </ul>
