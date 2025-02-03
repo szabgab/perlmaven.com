@@ -1,9 +1,9 @@
 # The URL of the site. It is used in the atom feed, the sitemap, the Open Graph meta field of each page, and the robots.txt
 # No trailing slashes!
-url: https://es.code-maven.com
+url: https://he.perlmaven.com
 
 # site_name is used in the atom feed and in the Open Graph meta field of each page
-site_name: Code Maven en Español con errores gramaticales
+site_name: תכנות פרל בעברית
 
 # The source of the https://rust.code-maven.com site is in a public git repository
 # using the 'main' branch.
@@ -12,12 +12,12 @@ site_name: Code Maven en Español con errores gramaticales
 # You can disable this feature by keeping `link_to_source` as `false`.
 # You can enable this feature by putting the correct repo link and correct branch name
 # and setting `link_to_source` to `true`
-repo: https://github.com/szabgab/es.code-maven.com
+repo: https://github.com/szabgab/perlmaven.com
 branch: main
 link_to_source: false
 
 # Each page will have a footer as defined by the `footer` field that can contain markdown.
-footer: "[Code Maven](https://code-maven.com/) en ingles"
+footer: "[מביני קוד](https://code-maven.com/)"
 
 # Each site has a /tags page generated from the tags in the individual pages.
 # The following parameters set the `title` of the page and the content of the `description` meta-tag.
@@ -28,8 +28,8 @@ tags:
 # Each site has a /archive page generated from all the pages, except the main page (the root index.md file).
 # The following parameters set the `title` of the page and the content of the `description` meta-tag.
 archive:
-  title: Archivo
-  description: Archivo de este sitio
+  title: ארכיון
+  description: ארכיון פרל
 
 # If you have setup Google Analytics add your code here and uncomment the following field
 # google_analytics: G-BLABLA
@@ -44,7 +44,7 @@ from:
 # On each page show the list of pages that link to the current page.
 # Define the title of the section when the related pages are shown
 show_related: true
-related_pages_title: Otras páginas
+related_pages_title: דפים קשורים
 
 # Each page can have an `author` field in the front-matter containing the nickname of the author.
 # Here we list all the authors of the site.
@@ -66,12 +66,12 @@ authors:
 navbar:
   start:
     - path: /
-      title: Casa
+      title: בית
     - path: /tags/
-      title: Tags
+      title: נושאים
   end:
     - path: /archive
-      title: Archivo
+      title: ארכיון
     - path: /about
       title: About
 
