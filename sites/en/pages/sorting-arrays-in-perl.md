@@ -1,0 +1,183 @@
+---
+title: "Sorting arrays in Perl"
+timestamp: 2012-11-09T13:45:56
+tags:
+  - sort
+  - $a
+  - $b
+  - cmp
+  - <=>
+published: true
+books:
+  - beginner
+author: szabgab
+---
+
+
+In this article we are going to see how we can <b>sort an array of strings or numbers in Perl</b>.
+
+Perl has a built-in function called `sort` that can, unsurprisingly, sort an array. In its most simple form,
+you just give it an array, and it returns the elements of that array in a sorted order. `@sorted = sort @original`.
+
+
+## Sort based on ASCII order
+
+```perl
+#!/usr/bin/perl
+use strict;
+use warnings;
+use 5.010;
+
+use Data::Dumper qw(Dumper);
+
+my @words = qw(foo bar zorg moo);
+
+say Dumper \@words;
+
+my @sorted_words = sort @words;
+
+say Dumper \@sorted_words;
+```
+
+
+The above example will print
+
+```perl
+$VAR1 = [
+        'foo',
+        'bar',
+        'zorg',
+        'moo'
+      ];
+
+$VAR1 = [
+        'bar',
+        'foo',
+        'moo',
+        'zorg'
+      ];
+```
+
+The first output shows the array before sorting, the second output after sorting.
+
+
+This is the most simple case, but it is not always what you want.
+For example, what happens if some of the words start with an upper case letter?
+
+
+```perl
+my @words = qw(foo bar Zorg moo);
+```
+
+The result in `@sorted_words` is going to be:
+
+```perl
+$VAR1 = [
+        'Zorg',
+        'bar',
+        'foo',
+        'moo'
+      ];
+```
+
+As you can see, the word that starts with an upper-case letter became first.
+That's because `sort`, by default, sorts according to the ASCII table,
+and all the upper case letters are located earlier than the lower case letters.
+
+## Comparison function
+
+The way `sort` works in Perl is that it goes over every two elements of
+the original array. In every turn it puts the value from the left side into the variable `$a`,
+and the value on the right side in the variable `$b`. Then it calls a <b>comparison function</b>.
+That "comparison function" will return -1 if the content of `$a` should be on the left, 1 if the content of
+`$b` should be on the left, or 0 if it does not matter as the two values are the same.
+
+By default you don't see this comparison function and <b>sort</b> compares the values according to the ASCII table,
+but if you want, you can write it explicitly:
+
+```perl
+sort { $a cmp $b } @words;
+```
+
+This code will provide the exact same result as the one without the block: `sort @words`.
+
+Here you can see that, by default, perl uses `cmp` in the comparison function.
+That's because cmp is doing exactly what we need here. It compares the values on its two sides as strings,
+returns 1 if the left argument is "less than" the right argument; returns -1 if the left argument
+is "less than" the right argument; and returns 0 if they are the same.
+
+## Sorting in alphabetical order
+
+If you want to disregard the case in the strings - what is usually called alphabetical order -
+you can do so as given in the next example:
+
+```perl
+my @sorted_words = sort { lc($a) cmp lc($b) } @words;
+```
+
+Here, for the sake of comparison, we call the `lc` function that returns the <b>lower case</b> version of its argument.
+Then `cmp` compares those lower case versions and decides which of the original strings must go first
+and which second.
+
+The result is
+
+```perl
+$VAR1 = [
+        'bar',
+        'foo',
+        'moo',
+        'Zorg'
+      ];
+```
+
+## Sorting numbers in Perl
+
+If we take an array of numbers and sort them with the default sorting,
+the result is probably not what we are expecting.
+
+```perl
+my @numbers = (14, 3, 12, 2, 23);
+my @sorted_numbers = sort @numbers;
+say Dumper \@sorted_numbers;
+```
+
+
+```perl
+$VAR1 = [
+        12,
+        14,
+        2,
+        23,
+        3
+      ];
+```
+
+If you think about it, of course, this is not surprising. When the comparison function sees 12 and 3
+it compares them as strings. That means comparing the first character in both strings. "1" to "3".
+"1" is ahead of "3" in the ASCII table and thus the string "12" will come before the string "3".
+
+Perl does not magically understand that you want to order these values as numbers.
+
+No problem though as we can write a comparison function that will compare the two values as numbers.
+For that we use the <lt><=></li>
+(also called [spaceship operator](http://en.wikipedia.org/wiki/Spaceship_operator)) that will
+compare its two parameters as numbers and return 1, -1 or 0.
+
+```perl
+my @sorted_numbers = sort { $a <=> $b } @numbers;
+```
+
+Results in:
+
+```perl
+$VAR1 = [
+        2,
+        3,
+        12,
+        14,
+        23
+      ];
+```
+
+For other interesting examples see how we can [sort mixed strings](/sorting-mixed-strings).
+

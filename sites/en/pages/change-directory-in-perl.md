@@ -1,0 +1,149 @@
+---
+title: "How to change directory (chdir, cd) in Perl?"
+timestamp: 2018-02-06T11:30:01
+tags:
+  - chdir
+  - cd
+  - pwd
+  - Cwd
+  - source
+published: true
+author: szabgab
+archive: true
+---
+
+
+People keep getting tasks to write a Perl script that can change directory that even after exiting the Perl script
+the change will persist.
+
+You cannot do that. Not in Perl and not in any other programming language, except the language of the current shell.
+
+However, if you would like to change the directory for the rest of your script and maybe even for external
+programs that you launch from your script, then it is quite easy.
+
+
+## Change for the current process and the child-processes
+
+Before explaining why you cannot permanently change directory using Perl,
+let's see what can you do.
+
+The following example is Unix/Linux specific, but similar example could have been written for Windows as well.
+
+{% include file="examples/chdir.pl" %}
+
+In this example we use the `getcwd` function provided by the [Cwd](https://metacpan.org/pod/Cwd) module
+that returns the `Current Working Directory`. That's normally what people say "the directory we are in".
+
+In Unix/Linux you would use the `pwd` command to `Print the Working Directory`
+
+So first we use the `getcwd` function to get the current working directory and we print it using the `say`
+function of Perl. Then we call `system` to execute the external program `pwd` to show what would
+an external program launched from our script see.
+
+Then we use the built-in `chdir` function of Perl that works as `cd` on the command line
+and changes the `Current Working Directory` to whatever parameter you give to it.
+
+After that both `getcwd` and the external `pwd` will report this new directory as the
+"working directory".
+
+See the output.
+
+```
+$ pwd
+/Users/gabor/work
+
+$ perl perlmaven.com/exercises/chdir.pl
+/Users/gabor/work
+/Users/gabor/work
+/home
+/home
+
+$ pwd
+/Users/gabor/work
+```
+
+Right after the script exited we ran `pwd` on the command line to show that the working
+directory returned to what was the working directory before running the script.
+
+
+## Why cannot Perl change the directory permanently? And how come Bash can?
+
+For this one needs to understand how processes work in Unix/Linux.
+When we launch a Perl script the operating system creates a new process that inherits
+everything from the original process. Including the current working directory.
+In order to protect the original process from anything bad the new process might do,
+each process can only impact its own environment and not the environment of the
+parent process.
+To the naked eye it looks as if the Operating System would reset everything,
+including the current working directory, after the process has finished.
+
+So no process can make changes to the environment of the parent process.
+
+## Shell script to change directory permanently
+
+The following Shell script can do it permanently:
+
+{% include file="examples/chdir.sh" %}
+
+Let's see how does it work:
+
+```
+$ pwd
+/Users/gabor/work
+
+$ bash perlmaven.com/examples/chdir.sh
+/Users/gabor/work
+/home
+
+$ pwd
+/Users/gabor/work
+```
+
+Oops. This did not make a permanent change either. What happened to your promise?
+Wait a second.
+
+We ran this shell script as an external program.
+
+This is exactly the same case as we had with the Perl script above.
+
+We created a new process, we changed something in it, but when the process ended
+the operating system reset everything to how the parent process had it.
+
+Let's try something else:
+
+## Use the source!
+
+If instead of running the Shell script as an external program we use the `source`
+command of our Shell then the command will be executed in the current process.
+
+```
+$ source perlmaven.com/examples/chdir.sh
+/Users/gabor/work
+/home
+
+$ pwd
+/home
+```
+
+Voila. we managed to permanently change the `Current Working Directory`.
+
+That happened because we have not run an external program and thus the Operating System
+did not have to create a new process.
+
+## Comments
+
+"In order to protect the original process from anything bad the new process might do,
+the Operating System will reset everything, including the current working directory,
+after the process has finished." That's not really what's happening. The original process's current directory was never affected by the child process. It just continues working as if the new process had never been created.
+
+<hr>
+Thank you for the helpful tutorial!
+<hr>
+
+if my directory does not exist, can we check with chdir command, whether my directory exist or not?
+
+---
+
+ For that use the -e operator: https://perlmaven.com/file-test-operators
+
+

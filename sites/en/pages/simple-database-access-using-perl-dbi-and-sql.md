@@ -1,0 +1,447 @@
+---
+title: "Simple Database access using Perl DBI and SQL"
+timestamp: 2013-05-21T10:45:56
+tags:
+  - SQL
+  - DBI
+  - DBD::SQLite
+  - SELECT
+  - fetchrow_array
+  - fetchrow_hashref
+  - SQLite
+published: true
+author: szabgab
+---
+
+
+While in most fields Perl adheres to the concept of
+[TMTOWTDI](http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it),
+in accessing relational databases Perl has a de-facto standard library
+called DBI or <b>Database independent interface for Perl</b>.
+
+
+## Architecture
+
+The Perl scripts use DBI, which in turn uses the appropriate
+<b>Database Driver</b> (e.g. [DBD::Oracle](https://metacpan.org/pod/DBD::Oracle)
+for [Oracle](http://www.oracle.com/),
+[DBD::Pg](https://metacpan.org/pod/DBD::Pg) for [PostgreSQL](http://www.postgresql.org/)
+and [DBD::SQLite](https://metacpan.org/pod/DBD::SQLite) to access [SQLite](http://sqlite.org/)).
+
+Those drivers are compiled together with the C client libraries
+of the respective database engines. In case of SQLite, of course all the
+database engine gets embedded in the perl application.
+
+It is very hard to improve on the lovely ASCII-art that comes
+with the documentation of [DBI](https://metacpan.org/pod/DBI) so let me reproduce it here:
+
+<pre>
+             |<- Scope of DBI ->|
+                  .-.   .--------------.   .-------------.
+  .-------.       | |---| XYZ Driver   |---| XYZ Engine  |
+  | Perl  |       | |   `--------------'   `-------------'
+  | script|  |A|  |D|   .--------------.   .-------------.
+  | using |--|P|--|B|---|Oracle Driver |---|Oracle Engine|
+  | DBI   |  |I|  |I|   `--------------'   `-------------'
+  | API   |       | |...
+  |methods|       | |... Other drivers
+  `-------'       | |...
+                  `-'
+</pre>
+
+## Simple example
+
+I'll use SQLite to demonstrate the examples. That will make it
+very easy for you to try them on your computer.
+
+```perl
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+use DBI;
+
+my $dbfile = "sample.db";
+
+my $dsn      = "dbi:SQLite:dbname=$dbfile";
+my $user     = "";
+my $password = "";
+my $dbh = DBI->connect($dsn, $user, $password, {
+   PrintError       => 0,
+   RaiseError       => 1,
+   AutoCommit       => 1,
+   FetchHashKeyName => 'NAME_lc',
+});
+
+# ...
+
+$dbh->disconnect;
+```
+
+We load DBI but we do <b>not</b> explicitly load the database driver. That will be done by DBI.
+
+The <b>DSN (Data Source Name)</b> (in the $dsn variable) is very straight forward.
+It contains the type of the database. That will be the clue to DBI which DBD to load.
+In case of SQLite, the only thing we really need is the path to the database file.
+
+The username and password fields were left empty. I think they are not
+relevant at all for SQLite.
+
+The last parameter of the connect call is a reference to a hash containing
+some attributes I like to set.
+
+The DBI->connect call returns a <b>database handle object</b> that usually we store
+in a variable called `$dbh`.
+
+The call to <b>disconnect</b> from the database is optional as it
+will automatically be called when the variable `$dbh` goes out
+of scope. Having it might be a clear indication for
+the next programmer dealing with this code, that you are done with the database.
+
+## CREATE TABLE
+
+Of course having a connection is not enough. We need to be able to fetch data from the
+database, or insert data into the database, but for our example to work first we
+actually need to create the tables of the database.
+
+In this case we can do this with a single command:
+
+```perl
+my $sql = <<'END_SQL';
+CREATE TABLE people (
+  id       INTEGER PRIMARY KEY,
+  fname    VARCHAR(100),
+  lname    VARCHAR(100),
+  email    VARCHAR(100) UNIQUE NOT NULL,
+  password VARCHAR(20)
+)
+END_SQL
+
+$dbh->do($sql);
+```
+
+The first statement is just a [here document](/here-documents) of an
+SQL statement to CREATE TABLE.
+Then we call the `do` method of the database handle which will send the
+SQL statement to the database.
+
+## INSERT
+
+Now let's see the real thing, inserting data:
+
+```perl
+my $fname = 'Foo';
+my $lname = 'Bar',
+my $email = 'foo@bar.com';
+$dbh->do('INSERT INTO people (fname, lname, email) VALUES (?, ?, ?)',
+  undef,
+  $fname, $lname, $email);
+```
+
+To insert a row we call the `$dbh->do` method again, but instead of passing
+the actual data, we put question-marks `?` as <b>place-holders</b>.
+
+The SQL statement is followed by the word `undef`.
+That's actually the place of a hash-reference providing
+parameters to this specific call, similar to the attributes
+passed to the `connect` method, but I think it is rarely used in these
+statements.
+
+The `undef` is followed by the actual values that go in place of the the place-holders.
+
+As you can see we did not have to put the place-holders in any kind of quotes
+nor did we have to somehow convert the values. DBI did it for us.
+
+This helps us avoid
+[SQL injection](http://en.wikipedia.org/wiki/Sql_injection) attacks.
+Even if you meet someone called [Bobby Tables](http://bobby-tables.com/).
+
+## UPDATE
+
+For updating some data in the database we also use the `do` method.
+
+```perl
+my $password = 'hush hush';
+my $id = 1;
+
+$dbh->do('UPDATE people SET password = ? WHERE id = ?',
+  undef,
+  $password,
+  $id);
+```
+
+Nothing special here. An SQL statement with some place-holders. `undef`
+instead of the extra attributes, and the parameters to be used in place of
+the place-holders.
+
+## SELECT
+
+This is by far the most interesting part of the database access. As the SELECT
+statement can return a lot of rows and a lot of values in each row we cannot use
+a simple call to the `do` method.
+
+Instead, there are several ways to fetch the data. I'll show here two.
+For both we have 3 steps: `prepare` the SQL statement,
+`execute` the statement with specific data, and `fetch` the rows.
+
+From these, the `prepare` statement can be shared by - assuming the queries
+only differ in the data we pass to them. We create an SQL statement using
+question marks (`?`) as place-holders instead of actual values.
+
+This call returns a <b>statement handle object</b> that we usually save in a
+variable called `$sth`.
+
+Then we call the `execute` method of the <b>statement handle</b> passing to
+it values that should be placed instead of the place-holders.
+
+The third step is the really interesting one.
+In a <b>while loop</b> we fetch the results, row-by row. For this we can use several methods:
+
+The `fetchrow_array` method will return the values of the next row in the result set
+as a list, that we can assign to an array. The order of the elements is as the order
+of the fields in the query. (fname, lname in our case).
+
+The `fetchrow_hashref` method will return a reference to a hash. In the hash
+the keys will be the names of the fields in the database. As different databases might
+return these names of the fields in different cases we configured our database handler
+to make sure they - the names of the fields - will always converted to lower case.
+(That's what the `FetchHashKeyName` parameter did, when connecting to the database.)
+
+```perl
+my $sql = 'SELECT fname, lname FROM people WHERE id >= ? AND id < ?';
+my $sth = $dbh->prepare($sql);
+$sth->execute(1, 10);
+while (my @row = $sth->fetchrow_array) {
+   print "fname: $row[0]  lname: $row[1]\n";
+}
+
+$sth->execute(12, 17);
+while (my $row = $sth->fetchrow_hashref) {
+   print "fname: $row->{fname}  lname: $row->{lname}\n";
+}
+```
+
+
+## Exercise
+
+Take the above snippets of code. Use  the first one to set up the
+database and create a table. Then use the second one to insert
+a few people in the table.
+
+Finally use the last example to extract some data from the database
+and print it out.
+
+If you have any question, feel free to ask below.
+
+## Thanks
+
+to sigzero for correcting a bug in the examples!
+
+## Comments
+
+Hi, thanks for this tutorial. Was wondering how i would connect to a database without displaying the password in the script. Kind of like putting the password in a file then getting perl to read from the file.
+
+There is nothing special about this. Just put the password in a separate file and read it from the file.
+https://perlmaven.com/open-and-read-from-files
+
+Thanks for this. Struggled a bit in getting the variable to be visible outside the while block but figured it out in the end. Cheers
+
+<hr>
+Some databases, like Postgres, already support this via their client library, so you can configure your pg_hba.conf to not require password but use other form of authentication. Therefore you don't need to put password in your DBI->connect statement. Other databases, like MySQL, unfortunately implement this in their CLI instead of client library. But you can use something like DBIx::Connect::MySQL to search for passwords in my.cnf for you.
+
+<hr>
+
+Hi, could you explain how to query a database for a row that has a specific word in it? For instance, I'm querying a database that lists servers, their IP addresses, and status, and i'm trying to return the servers that are in production status. Can you help?
+
+That's an SQL related question. If you are looking for exact match then you'd need to have something like field=? in your query and then pass the value you are looking for to the execute method. Or, if you need something like this: field LIKE ? and then you need to pass '%' . value . '%' to the execute method.
+
+<hr>
+
+I have a shell script and has to convert it to Perl. Below is a shell script
+
+[code]
+
+process_info () {
+MONITOR_KEY=$1
+OUT_DIR=${2-$OUTPUT_DIR}
+
+if [ ! -z "$MONITOR_USER" ]
+then
+SQL_SCRIPT=$OUT_DIR/$MONITOR_KEY.process
+SQL_LOG=$OUT_DIR/$MONITOR_KEY.process.log
+SQL_ERR=$OUT_DIR/$MONITOR_KEY.process.err
+cat <<eod>$SQL_SCRIPT
+WHENEVER OSERROR EXIT SQL.OSCODE
+WHENEVER SQLERROR EXIT SQL.SQLCODE
+set HEADING OFF
+set FEEDBACK OFF
+set PAGESIZE 0
+set TERMOUT ON
+set VERIFY OFF
+set SERVEROUTPUT ON
+select NVL(A.status, 'N/A')
+from dte_monitor A, dte_parameter C
+where C.parameter_name = 'MONITOR_DATE'
+and TRUNC(C.parameter_date) = TRUNC(A.proc_date)
+and A.KEY = upper('$MONITOR_KEY');
+quit;
+EOD
+
+echo "TEST1 $SQLPLUS $MONITOR_USER $SQL_SCRIPT"
+RESULT=`$SQLPLUS $MONITOR_USER @"$SQL_SCRIPT"`
+if [ $? -ne 0 ]
+then
+print "ERROR"
+return -1
+else
+if [ "$RESULT" = "COMPLETED" -o "$RESULT" = "HOLIDAY" ]
+then
+print "SKIP"
+else
+print "$RESULT"
+fi
+return 0
+fi
+fi
+
+}
+
+[/code]
+
+Do I have to convert the same way, or I have to open sqlscript and write a query?
+
+<hr>
+
+this is a great tutorial and a correct and working connection string format.
+I wonder if it is possible to connect to an encrypted sqlite database from perl script I could not find any help around this issue from many google links I have visited...
+BTW, I took a course in php/mysql with your instructor around 10 years ago
+
+I don't know. Never tried it.
+
+<hr>
+
+Hi Maven, your tutorial is so helpful. It has provided lot of ways to improve my scripting in perl. Can you please help to know how should I execute a scheduler job in Oracle via Perl script by passing parameters?
+
+<hr>
+
+How would I check if a certain column exists and if it does to retrieve data from it?
+
+<hr>
+
+how can I connect perl to ms access .could you pls update
+
+
+<hr>
+
+I'm using SQLite to hold data for my books library. I want to build an SVG donut chart of the 5 most popular keywords in the DB. However, since the library is dynamic, these values also change dynamically. So in my query to pull these numbers from the DB I need to create a hash dynamically, but I'm having a problem creating a hash from dynamic results. The query I'm using is
+
+select count(*) as NUM,keyword from keywords group by keyword order by NUM) desc limit 5;
+
+
+but the alias is causing some problems. If you have any ideas on how I can achieve this I would appreciate it very much.
+
+
+
+Show the whole code you have. Is it in GitHub? If not can you put it in a gist?
+
+
+Thank you for a quick reply. No, I don't have this anywhere easily available - working at home on my iMac. Here is the Perl code that I'm trying to get working:
+
+my @SubColors=("red","orange","yellow","green","blue");
+my $ndx=0;
+my $numKeys=0;
+my %KeyWords=();
+$sth=$dbh->prepare(qq{select count(*) as NUM,keyword from keywords group by keyword order by count(keyword) desc limit 5;});
+$sth->execute();
+while (@records=$sth->fetchrow_array()) {
+$numKeys++;
+$NumKWBooks+=$records[0];
+$KeyWords{numbooks} = $records[0],
+$KeyWords{keyword} = $records[1];
+$KeyNum=$records[0];
+$KeyWrd=$records[1];
+$percentKW=$KeyNum / $NumKWBooks * 100;
+print qq{$KeyWrd: $KeyNum $SubColors[$ndx]\n};
+$ndx+=1;
+$numKeys=keys %KeyWords;
+}
+$sth->finish();
+
+The DB table that contains keywords is quite large but here is a sample:
+
+id authorid bookid keyword
+---- -------- ------ ------------------------
+2122 1 330 Mathematics
+2123 1 331 Mathematics
+2124 1 323 Philosophy
+2125 2 404 Knots
+2126 5 82 Document Design
+2127 5 152 Web Design
+2128 6 550 Scalable Vector Graphics
+2129 7 179 Physics
+2130 7 178 Quantum Theory
+2131 8 294 bash
+
+Running the code in a shell window shows me:
+
+Programming: 67 red 100.00%
+Mathematics: 47 orange 41.23%
+Perl: 24 yellow 17.39%
+Knots: 22 green 13.75%
+Calculus: 13 blue 7.51%
+$NumKWBooks: 173
+$numKeys: 2
+
+
+The problem I have is accessing the hash %KeyWords after the query loop so that I can build the SVG image. Apparently using an alias in SQLite is only available during the current action. So I can't use it later.
+
+
+
+Check out the fetchrow_hashref method of DBI, it will return a reference to a hash then you can push that reference onto an array that you have declared outside of the while loop. Used Data Dumper or some similar tool to see what is in the variables.
+
+
+use Data::Dumper qw(Dumper);
+
+@rows;
+while (my $row = $sth->fetchrow_hashref()) {
+print Dumper $row;
+
+push @rows, $row;
+
+}
+
+In any case I'd recommend you put your code in git and push it out to github. That will be easier to see and try.
+
+
+
+SOLVED
+I've managed to get what I need by saving the SQLite query data into a 2-dimensional array instead of a hash. The query this time does NOT use an alias, but not sure why it didn't work with a hash.
+
+Now the array ...
+@kwtop has 10 elements
+$NumKWBooks: 173
+Programming 67 red 38.73%
+Mathematics 47 orange 27.17%
+Perl 24 yellow 13.87%
+Knots 22 green 12.72%
+Calculus 13 blue 7.51%
+
+Thank you all who helped with this. Hope it helps someone else.
+
+
+<hr>
+
+Create a monitor that checks, every 5min or so, if the dbsnmp user is locked. If it is, run "dm_ora_agent updateproperties" but limit this to one execution per day. If the user would get locked again, this indicates there's an issue that needs manual intervention.
+
+Since the updateproperties takes quite a while, this can't be plugged into the normal monitoring framework as the script would get killed after a few minutes. A possible alternative is to schedule the monitor using a systemD service + timer.
+
+If the monitor detects the user is locked and updateproperties hasn't run in 24h: run updateproperties.
+If the monitor detects the user is locked and updateproperties has run in 24h: create a monitor event.
+
+anyone could guide me on the above logic to schedule job
+
+<hr>
+
+hi, instead of print to screen, is it possible to save the data to local table?
+
+

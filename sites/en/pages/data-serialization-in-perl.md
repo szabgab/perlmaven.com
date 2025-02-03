@@ -1,0 +1,266 @@
+---
+title: "Data Serialization in Perl"
+timestamp: 2015-09-07T16:45:56
+tags:
+  - Data::Dumper
+  - Storable
+  - FreezeThaw
+  - YAML
+  - JSON
+  - XML
+  - Sereal
+  - Data::Serializer
+published: true
+author: szabgab
+archive: true
+---
+
+
+In the general [data serialization](http://en.wikipedia.org/wiki/Serialization) refers to a process in which we take
+an arbitrary data structure (a hash of hashes of arrays...) and convert it to a string in a way that the string can be later
+converted back to the same complex data structure in a process called <b>de-serialization of data</b>.
+
+Once the data was serialized to a string it can be easily stored on disk (e.g. in a file or in a database), and it can
+be easily transmitted via some network protocol.
+
+Instead of serialization some people use the word [Marshalling](http://en.wikipedia.org/wiki/Marshalling_%28computer_science%29)
+or flattening of data.
+
+
+## Use cases
+
+Two major uses of data serialization are <b>data persistence</b> and <b>data communication or transmission</b>
+
+<h3>Data Persistence</h3>
+
+While a process is running we can keep data in memory, but when the process ends, either naturally, or due to a crash, or due to some external force
+(someone killed the process or turned off the computer) this data is gone.
+If we want to keep the data for later usage we need to store it somewhere.
+
+Next time when we launch the application we can then load the data from that storage.
+
+The storage itself can be a file or a database which in turns saves our data in a file.
+
+The easiest way we can store arbitrary complex data structures is to serialize them to a string.
+
+This is called [data persistence](http://en.wikipedia.org/wiki/Persistence_%28computer_science%29)
+because the data persist beyond the life of the current process.
+
+<h3>Data communication or transmission</h3>
+
+If there are two processes running on the same machine that need to send data to each other,
+or if there are two processes on two different machines that need to communicate we encounter a similar problem.
+We need to be able to convert the data in the memory of one process to a string, send the string over to the other
+process and then let the other process convert the string back to the data structure.
+
+
+## Solutions
+
+* [Data::Dumper](#data-dumper)
+* [Storable](#storable)
+* [FreezeThaw](#freezethaw)
+* [YAML](#yaml)
+* [JSON](#json)
+* [XML](#xml)
+* [Sereal](#sereal)
+* [Data::Serializer](#data-serializer)
+
+There are a number of solution in Perl for data serialization with various characteristics. We are going to see
+some of them here:
+
+
+<h3 id="data-dumper">Data::Dumper</h3>
+
+[Data::Dumper](https://metacpan.org/pod/Data::Dumper) can turn any data structure into a string,
+that when executed will build the same data structure.
+The main advantage of it is that it comes with every version of Perl. It is a "standard library".
+
+The disadvantage is that only Perl understands it so it cannot be used to communicate between applications
+written in other languages. As the serialized data is actually an piece of executable perl code,
+and the de-serialization requires the evaluation of this code, this can lead to security vulnerability.
+If the data can be changed by an untrusted person then not only will we have incorrect data, but
+our process might execute an arbitrary piece of code injected by an attacker.
+
+Use this only if you have absolutely no way to use any of the other solution.
+
+(The real use of Data::Dumper is to display arbitrary data-structure for debugging purpose. For that
+it is quite good and does not have the security issue as we only serialize the data and never try to de-serialize it.)
+
+<h3 id="storable">Storable</h3>
+
+[Storable](https://metacpan.org/pod/Storable) creates a binary format using the
+`store` and `nstore` functions and uses the `retrieve` to convert
+the binary data saved in a file to a data structure.
+
+It is faster than Data::Dumper and it parses the data instead of executing it. So it is safe.
+It has been distributed with standard perl since perl 5.8.
+Those are its advantages.
+
+The disadvantage is that it is only implemented for Perl and thus it cannot be used for
+inter-process communication if any of the processes is written in another language.
+
+It requires a C-compiler to be installed which makes it a bit harder to install
+or to distribute in case you'd like to upgrade from the version that came with your
+distribution of perl.
+
+<h3 id="freezethaw">FreezeThaw</h3>
+
+The [FreezeThaw](https://metacpan.org/pod/FreezeThaw) module provides the
+`freeze` function to serialize data and the `thaw` function to de-serialize it.
+
+It creates a string that, as far as I know is only implemented for Perl.
+It has the advantage over Data::Dumper that the string is parsed and not eval-ed during de-serialization
+and thus it is safer. It has the advantage over Storable that it is pure-perl so you can install
+it even if you don't have a C compiler.
+
+I have not measured it, but it is probably much slower than Storable.
+
+<h3 id="yaml">YAML - YAML Ain't Markup Language</h3>
+
+[YAML](http://www.yaml.org/) is a language-independent data serialization language suitable for representing arrays, hashes,
+and of course scalar values.
+
+It was designed to be human readable and to be able to represent the data structures of most modern
+programming languages.
+
+A YAML file looks like this:
+
+```
+---
+name: ingy
+age: old
+weight: heavy
+# I should comment that I also like pink, but don't tell anybody.
+favorite colors:
+    - red
+    - green
+    - blue
+```
+
+YAML is excellent for data-serialization even when the applications
+are written in several programming languages.
+
+In Perl there are several implementations of the YAML generating and parsing tools.
+Some of them are pure-perl, others require a C compiler to install,
+but provide faster serialization and de-serialization.
+
+With the advance of [JSON](#json) it is used less for data serialization,
+but it is still used quite a lot for configuration files.
+
+A number of modules implementing YAML serialization and de-serialization:
+
+* [YAML](https://metacpan.org/pod/YAML)
+* [YAML::XS](https://metacpan.org/pod/YAML::XS)
+* [YAML::Syck](https://metacpan.org/pod/YAML::Syck)
+* [YAML::Tiny](https://metacpan.org/pod/YAML::Tiny)
+* [YAML::Any](https://metacpan.org/pod/YAML::Any)
+
+<h3 id="json">JSON</h3>
+
+[JSON](/json) (JavaScript Object Notation) is a lightweight data interchange (serialization) format inspired by JavaScript object literal syntax.
+It is very similar to YAML in its format though YAML seems to be easier to understand for humans. JSON also has several implementation in Perl.
+
+The main advantage of JSON over YAML is that probably more programming languages have more implementation for JSON than for YAML,
+and that JavaScript has native parser for JSON. Therefore communication with a JavaScript based application
+running in a web browser is much easier with JSON than it would be with YAML. In fact, JSON is the number one data serialization used
+in Ajax-based web applications.
+
+<h3 id="xml">XML</h3>
+
+XML can be also used for serialization and de-serialization. There are many modules for Perl to
+handle XML data. Some of them are pure perl, others require a C compiler. XML itself is quite readable
+for humans, though it is much more verbose than YAML or JSON.
+
+In general XML is not really a good choice for data serialization (JSON or Sereal would be much better),
+but due to a lot of investment in promoting XML a lot of corporations feel require that they
+cannot live without XML in their systems.
+
+Arguably XML can represent more complex data that JSON or YAML could, and in those cases the use of XML might
+be justified, on the other hand maybe having such complex data is a sign that you should simplify the data.
+
+While not recommended for general XML handling [XML::Simple](https://metacpan.org/pod/XML::Simple) might be
+used for serialization and de-serialization of data structures and [XML::Dumper](https://metacpan.org/pod/XML::Dumper)
+was specifically created for that.
+
+<h3 id="sereal">Sereal</h2>
+
+[Sereal](https://metacpan.org/pod/Sereal) was developed at
+[Booking.com](http://blog.booking.com/sereal-a-binary-data-serialization-format.html) to provide
+fast binary serialization and de-serialization of Perl data structures. According to their own measurements
+it is even faster than Storable though it has the same drawbacks:
+
+It is implemented for Perl and for a number of other languages. it requires a C compiler to be installed.
+For more details see the [GitHub repository](https://github.com/Sereal/Sereal)
+
+<h3 id="data-serializer">Data::Serializer</h3>
+
+[Data::Serializer](https://metacpan.org/pod/Data::Serializer) seems to be a module that provides a generic
+interface to any of the serializers mentioned above. I am not sure if its use is warranted, but it can provide flexibility
+to select the data-serialization format later.
+
+## Compare the solutions
+
+<style>
+table td {
+   border: solid 1px;
+   width: 100px;
+   text-align: center;
+}
+table .ok {
+  background-color: green;
+}
+table .is {
+  background-color: yellow;
+}
+
+</style>
+
+<table>
+<tr><th>Format</th>                                           <th></th>           <th>Standard</th>    <th>Pure Perl</th>      <th>Fast</th>        <th>Multi-language</th> <th>Secure</th>      </tr>
+<tr><td>[Data::Dumper](#data-dumper)</td>          <td>perl code</td>  <td class="ok"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="no"></td> </tr>
+<tr><td>[Storable](#storable)</td>                 <td>binary</td>     <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> </tr>
+<tr><td>[FreezeThaw](#freezethaw)</td>             <td>text-ish</td>   <td class="no"></td> <td class="ok"></td>    <td class="no"></td> <td class="no"></td>    <td class="ok"></td> </tr>
+<tr><td>[YAML](#yaml)</td>                         <td>text</td>       <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
+<tr><td>[JSON](#json)</td>                         <td>text</td>       <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
+<tr><td>[XML](#xml)</td>                           <td>text</td>       <td class="no"></td> <td class="is">[1]</td> <td class="is"></td> <td class="ok"></td>    <td class="ok"></td> </tr>
+<tr><td>[Sereal](#sereal)</td>                     <td>binary</td>     <td class="no"></td> <td class="no"></td>    <td class="ok"></td> <td class="no"></td>    <td class="ok"></td> </tr>
+</table>
+
+[1] - have both pure-Perl and XS based implementation. The latter is probably much faster than the former.
+
+## Recommendation
+
+If speed is important and you only need to communicate with Perl-based applications then used [Sereal](#sereal).
+
+If you need to communicate with applications written in other languages then use [JSON](#json). If speed is important pick a C-based module
+that is fast. If "install-ability" is more important then pick a pure-perl implementation.
+([JSON::MaybeXS](https://metacpan.org/pod/JSON::MaybeXS) allows you to let the end-user decide which JSON implementation to use.)
+
+Alternatively, you can also implement Sereal for the other languages you need, but that's probably a big task.
+
+## Discussion
+
+[Reddit](https://www.reddit.com/r/perl/comments/3jz6lv/data_serialization_in_perl/)
+
+
+## Comments
+
+In the meanwhile, there are Storable libraries for other languages, e.g. https://pypi.org/project/storable/
+
+<hr>
+
+Worth noting in your matrix which serialisation formats are binary.
+---
+Is the update what you though of?
+---
+More like a new column, but it'll do :)
+
+---
+I tried that but it felt strange to have to have XML next to XML, YAML, next to YAML, etc.
+
+<hr>
+Which of the serializer can represent referenced Objects?
+my $data = { "eins" => new Meta::Info() }
+* then serialize and after deserialisation i get again a
+{ "eins" => Meta::Info(...) } where Meta::Info is a object of class Meta::Info
+

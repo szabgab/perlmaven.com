@@ -1,0 +1,247 @@
+---
+title: "How to check if a child process is still running in Perl?"
+timestamp: 2014-04-10T07:50:01
+tags:
+  - wait
+  - waitpid
+  - fork
+  - WNOHANG
+  - POSIX
+  - Time::HiRes
+published: true
+books:
+  - cook_book
+author: szabgab
+---
+
+
+Sometimes, when we use [fork](/fork) to create one or more child-processes we would like to
+know if the child process has stopped working or if it is still alive.
+
+Normally we use `wait` or `waitpid` to notice when a child process has finished. The problem 
+with that these functions will wait, and block our execution till the child process stops working.
+
+What if we would like to do something while the child is still running but stop doing it when the child
+has finished?
+
+
+In a nutshell, calling `waitpid()` with the process ID of the child process and with the
+`WNOHANG` flag imported from the [POSIX](https://metacpan.org/pod/POSIX) module
+is a non-blocking call. It will return immediately, without waiting for the child to stop working.
+
+It will return a status code which is the actual process id we passed to it (`$pid`) if the child has already stopped running.
+the status code is -1 in case of some failure and it is 0 if the child is still running.
+
+The actual exit code of the child process is saved in the high byte of `$?`.
+
+A very simple usage would look like this:
+```perl
+use POSIX ":sys_wait_h";
+
+my $res = waitpid($pid, WNOHANG);
+```
+
+
+## Example
+
+```perl
+use strict;
+use warnings;
+use 5.010;
+
+use POSIX ":sys_wait_h";
+use Time::HiRes qw(sleep);
+
+my $pid = fork();
+die "Could not fork\n" if not defined $pid;
+
+if (not $pid) {
+    say "In child";
+    sleep 1;
+    exit 3;
+}
+
+say "In parent of $pid";
+while (1) {
+    my $res = waitpid($pid, WNOHANG);
+    say "Res: $res";
+    sleep(0.1);
+
+    if ($res == -1) {
+        say "Some error occurred ", $? >> 8;
+        exit();
+    }
+    if ($res) {
+        say "Child $res ended with ", $? >> 8;
+        last;
+    }
+}
+
+say "about to wait()";
+say wait();
+say "wait() done";
+```
+
+In this example we create a single child process that will sleep for one second and then exit with exit code 3.
+(Just an arbitrary number to show how it works.)
+
+In the meantime the parent process enters an infinite while-loop and checks if the process is still running every 0.1 seconds.
+(We use the `sleep` function of [Time::HiRes](https://metacpan.org/pod/Time::HiRes) for this.)
+
+If the result is -1, there was some error.
+
+If the result is some other non-null number then the child process has finished. We print the content of `$res`
+which is supposed to be the same as `$pid`, and the content of `$?` shifted 8 bit to the right. That is
+we print the high-byte of `$?` which is the exit code of the child process. (The number 3 we used for the demonstrations.)
+
+Lastly, we can see that if we call `wait()` after exiting the while-loop, it won't block as there are no more running
+child processes.
+
+The output:
+
+```
+In parent of 15469
+Res: 0
+In child
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 0
+Res: 15469
+Child 15469 ended with 3
+about to wait()
+-1
+wait() done
+```
+
+## Comments
+
+Excellent article and very easy to understand. Thanks:).
+
+I am new to perl. Kindly help me out.
+I have tried with simple program of infinite loop by taking reference from your article, but my program is not killing the child-process.
+
+$cat loop.c
+
+#include<stdio.h>
+int main(){
+
+while(1){
+ printf("Infinite loop\n");
+        }
+
+return 0;
+}
+
+$ gcc loop.c -o loop.bin
+
+$cat timeout.pl
+
+
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use POSIX ":sys_wait_h";
+use Time::HiRes qw(sleep);
+
+if(!defined( my $pid = fork())) {
+die "Cannot fork a child: $!";
+} elsif ($pid == 0) {
+   print "Printed by child process\n";
+   system("./loop.bin");
+} else {
+   print "Printed by parent process\n";
+   sleep(10);
+   my $ret = waitpid($pid, WNOHANG);
+
+   if ($ret == 0){
+     kill ('KILL',$pid);
+         sleep(1);
+         }
+   }
+
+$ perl timeout.pl
+
+Printed by child process
+Infinite loop
+Infinite loop
+Infinite loop
+Infinite loop
+Infinite loop
+Infinite loop
+Infinite loop
+Infinite loop
+...
+...
+..
+
+---
+
+Your code waitpids for the childprocess to exit and only after that has happened it sends a kill signal to it. That would require time-travel :)
+Better example is: sleep; kill, waitpid
+
+In any case I think you need to use exec instead of system here.
+
+---
+
+Thanks for your help :), It is working now.
+But in certain scenario, where I have grandchild it is not working e.g:
+
+$cat 2loop.c
+
+#include<stdio.h>
+#include <sys types.h="">
+#include<unistd.h>
+void process_1()
+{
+  fork();
+  fork();
+  fork();
+  if(fork() == 0)
+  {
+  printf( "GrandChild1\n");
+  }else{
+  while(1){
+  printf("parent\n");
+  }
+  }
+}
+int main()
+{
+   process_1();
+    return 0;
+}
+
+---
+
+And why would it? You only have the PID of the grandparent process in hand and you are probably sending the kill signal to that process. The child and the grand-child don't know about it. and your whole examples is in C now....
+
+<h2>
+
+Hello. I realize this is quite a bit late, but I'm having a problem with a Perl script I've ported from RHEL to Centos7 (it works perfectly on RHEL 7).
+
+Whenever a fork is done, the parent goes to 100% CPU and the child hangs.
+
+On one Centos server, I managed to get it to work (no 100% on parent and child runs fine), but am at a loss as to what caused it to suddenly work. I'm just reaching out to see if anyone has experienced such a thing.
+
+Thanks!
+
+---
+Maybe if you share a small version of your code that exhibits this behaviour.
+---
+
+Unfortunately, it's protected code. But we pared it down to a fork and all the child process did was a POSIX exit. It wouldn't even run the exit.
+
+---
+Well, then talk to your vendor who gave you that fork :)
+
+---
+
+That fork is from Perl... native
+
