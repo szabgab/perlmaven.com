@@ -1,0 +1,78 @@
+# The URL of the site. It is used in the atom feed, the sitemap, the Open Graph meta field of each page, and the robots.txt
+# No trailing slashes!
+url: https://perlmaven.com
+
+# site_name is used in the atom feed and in the Open Graph meta field of each page
+site_name: Perl
+
+# The source of the https://rust.code-maven.com site is in a public git repository
+# using the 'main' branch.
+# We wanted each page on the site to link directly to the source of that page.
+# The following 3 parameters help do this.
+# You can disable this feature by keeping `link_to_source` as `false`.
+# You can enable this feature by putting the correct repo link and correct branch name
+# and setting `link_to_source` to `true`
+repo: https://github.com/szabgab/perlmaven.com
+branch: main
+link_to_source: false
+
+# Each page will have a footer as defined by the `footer` field that can contain markdown.
+footer: "[Code Maven](https://code-maven.com/)"
+
+# Each site has a /tags page generated from the tags in the individual pages.
+# The following parameters set the `title` of the page and the content of the `description` meta-tag.
+tags:
+  title: Tags
+  description: Articles about Foo Bar
+
+# Each site has a /archive page generated from all the pages, except the main page (the root index.md file).
+# The following parameters set the `title` of the page and the content of the `description` meta-tag.
+archive:
+  title: Archive
+  description: Perl Archive
+
+# If you have setup Google Analytics add your code here and uncomment the following field
+# google_analytics: G-BLABLA
+
+
+# Fields used by the email sender
+# TODO: Explain the whole email sending via `sendgrid`
+from:
+  name: Foo Bar
+  email: foo@bar.com
+
+# On each page show the list of pages that link to the current page.
+# Define the title of the section when the related pages are shown
+show_related: true
+related_pages_title: Otras páginas
+
+# Each page can have an `author` field in the front-matter containing the nickname of the author.
+# Here we list all the authors of the site.
+# The name will be displayed on the page
+# In addition there can be a folder called `authors` with makrdown files using the nicknames (so in the example it would be authors/foobar.md)
+# Those file can contain information about the author that will be displayed at the bottom of each page.
+# TODO: where is the image located
+authors:
+  - name: Gabor Szabo
+    nickname: szabgab
+    picture: szabgab.png
+  - name: Jeffrey Thalhammer
+    nickname: thalhammer
+    picture: thalhammer.png
+
+# The following section defines the menu. The "start" will be left-aligned the "end" will be right aligned.
+# TODO: Once we implement rtl site this will probably be the other direction too
+# TODO: Support also drop-down menus
+navbar:
+  start:
+    - path: /
+      title: Casa
+    - path: /tags/
+      title: Tags
+  end:
+    - path: /archive
+      title: Archivo
+    - path: /about
+      title: About
+
+# search: Resultsos de buscada
