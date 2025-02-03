@@ -25,7 +25,7 @@ but I need that repo for future presentations so I renamed the repository to <a 
     <li><a href="https://perl.theplanetarium.org/">Planet Perl</a> and <a href="https://github.com/PerlToolsTeam/planetperl">source</a>   <a href="https://learn.davecross.co.uk/">Learn with Dave Cross</a></li>
     <li><a href="https://forem.code-maven.com/">Forem Reports</a> and <a href="https://github.com/szabgab/forem-reports">source</a></li>
     <li><a href="https://events.code-maven.com/">(Rust) virtual events</a> and <a href="https://github.com/szabgab/virtual-events">source</a></li>
-    <li><a href="https://ruby-digger.code-maven.com/">ruby Digger</a> and <a href="https://github.com/szabgab/ruby-digger">source</a></li>
+    <li><a href="https://ruby-digger.code-maven.com/">Ruby Digger</a> and <a href="https://github.com/szabgab/ruby-digger">source</a></li>
     <li><a href="https://github.com/szabgab/monitor/">monitor</a></li>
     <li><a href="https://rust.code-maven.com/">Rust Maven</a> and <a href="https://ssg.code-maven.com/">source</a></li>
 </ul>
