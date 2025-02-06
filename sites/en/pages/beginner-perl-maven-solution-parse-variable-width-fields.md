@@ -2,7 +2,7 @@
 title: "Solution: parse variable width fields - video"
 timestamp: 2015-07-10T12:02:35
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

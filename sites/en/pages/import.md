@@ -3,7 +3,7 @@ title: "Exporting and importing functions easily"
 timestamp: 2017-02-03T06:38:11
 tags:
   - Exporter
-  - @EXPORT
+  - "@EXPORT"
   - import
 types:
   - screencast

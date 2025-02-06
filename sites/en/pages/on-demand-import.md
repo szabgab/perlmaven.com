@@ -2,8 +2,8 @@
 title: "Import on demand"
 timestamp: 2017-02-21T20:00:11
 tags:
-  - @EXPORT
-  - @EXPORT_OK
+  - "@EXPORT"
+  - "@EXPORT_OK"
 types:
   - screencast
 books:

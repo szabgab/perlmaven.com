@@ -2,7 +2,7 @@
 title: "Creating an array - video"
 timestamp: 2015-05-10T01:01:17
 tags:
-  - @array
+  - "@array"
 types:
   - screencast
 published: true

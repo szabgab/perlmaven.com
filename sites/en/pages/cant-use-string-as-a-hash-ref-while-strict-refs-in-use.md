@@ -1,5 +1,5 @@
 ---
-title: "Can't use string (...) as an HASH ref while "strict refs" in use at ..."
+title: Can't use string (...) as an HASH ref while "strict refs" in use at ...
 timestamp: 2018-08-04T20:30:01
 tags:
   - warnings

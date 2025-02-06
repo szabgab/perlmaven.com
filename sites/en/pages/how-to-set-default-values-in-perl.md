@@ -2,10 +2,10 @@
 title: "How to set default values in Perl"
 timestamp: 2014-12-17T09:30:01
 tags:
-  - //
-  - //=
-  - ||
-  - ||=
+  - "//"
+  - "//="
+  - "||"
+  - "||="
 published: true
 author: szabgab
 ---

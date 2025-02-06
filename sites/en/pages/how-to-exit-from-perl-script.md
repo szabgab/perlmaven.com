@@ -3,8 +3,8 @@ title: "How to exit from a Perl script?"
 timestamp: 2013-06-21T15:30:01
 tags:
   - exit
-  - $?
-  - >>
+  - "$?"
+  - ">>"
 published: true
 books:
   - beginner

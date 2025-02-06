@@ -3,8 +3,8 @@ title: "shift in Perl"
 timestamp: 2015-12-17T18:55:56
 tags:
   - shift
-  - @ARGV
-  - @_
+  - "@ARGV"
+  - "@_"
 published: true
 books:
   - beginner

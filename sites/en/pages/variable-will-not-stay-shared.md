@@ -1,5 +1,5 @@
 ---
-title: "Variable "..." will not stay shared ..."
+title: Variable "..." will not stay shared ...
 timestamp: 2021-12-20T09:30:01
 tags:
   - fork

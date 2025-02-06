@@ -2,7 +2,7 @@
 title: "Scalar value ... better written as ..."
 timestamp: 2018-11-11T12:00:01
 tags:
-  - @_
+  - "@_"
 published: true
 author: szabgab
 archive: true

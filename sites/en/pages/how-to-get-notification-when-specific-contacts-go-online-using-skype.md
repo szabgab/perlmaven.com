@@ -102,17 +102,3 @@ I went with a speaker telling me what to do.
 
 You might have a better idea what to do there.
 
-
-
-
-
-
-
-
-
-
-```
-
-
-
-

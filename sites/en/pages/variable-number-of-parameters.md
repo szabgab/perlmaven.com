@@ -3,7 +3,7 @@ title: "Variable number of parameters in Perl subroutines"
 timestamp: 2013-07-02T18:08:08
 tags:
   - sub
-  - @_
+  - "@_"
 published: true
 books:
   - beginner

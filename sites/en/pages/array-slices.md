@@ -2,7 +2,7 @@
 title: "How to get a slice of an array or an array reference?"
 timestamp: 2017-08-29T06:30:01
 tags:
-  - @array[]
+  - "@array[]"
 published: true
 books:
   - advanced

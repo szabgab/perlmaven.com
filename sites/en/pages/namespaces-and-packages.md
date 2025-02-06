@@ -3,7 +3,7 @@ title: "Namespaces and packages in Perl"
 timestamp: 2017-01-11T12:00:11
 tags:
   - package
-  - ::
+  - "::"
 types:
   - screencast
 published: true

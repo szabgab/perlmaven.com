@@ -3,7 +3,7 @@ title: "Scope of Variables - video"
 timestamp: 2015-03-11T09:02:19
 tags:
   - my
-  - {}
+  - "{}"
 types:
   - screencast
 published: true

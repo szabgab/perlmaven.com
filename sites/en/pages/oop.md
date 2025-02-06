@@ -7,7 +7,7 @@ tags:
   - new
   - parent
   - base
-  - @ISA
+  - "@ISA"
 published: true
 author: szabgab
 ---

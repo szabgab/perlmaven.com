@@ -2,7 +2,7 @@
 title: "Changing @INC relative path - video"
 timestamp: 2015-08-08T17:04:36
 tags:
-  - @INC
+  - "@INC"
   - File::Spec
   - FindBin
   - File::Basename

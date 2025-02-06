@@ -3,12 +3,12 @@ title: "Process the 6 headers of Markua"
 timestamp: 2019-12-07T09:30:01
 tags:
   - regex
-  - #
-  - ##
-  - ###
-  - ####
-  - #####
-  - ######
+  - "#"
+  - "##"
+  - "###"
+  - "####"
+  - "#####"
+  - "######"
   - prove
 published: true
 author: szabgab

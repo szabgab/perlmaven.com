@@ -3,9 +3,9 @@ title: "Processing command line arguments - @ARGV in Perl"
 timestamp: 2013-07-07T17:13:10
 description: "In Perl @ARGV contains the raw command line arguments as passed by the user running the script"
 tags:
-  - @ARGV
-  - $ARGV[]
-  - $0
+  - "@ARGV"
+  - "$ARGV[]"
+  - "$0"
   - shift
   - argc
 published: true

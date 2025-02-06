@@ -2,9 +2,9 @@
 title: "How does require find the module to be loaded?"
 timestamp: 2017-01-22T00:30:11
 tags:
-  - @INC
+  - "@INC"
   - require
-  - -V
+  - "-V"
 books:
   - advanced
 types:

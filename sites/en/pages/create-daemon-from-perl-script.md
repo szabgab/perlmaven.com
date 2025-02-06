@@ -64,8 +64,6 @@ $ perl daemon.pl reload
 
 It will re-read the configuration file and continue running.
 
-```
-
 {% include file="examples/daemon/local_process.log" %}
 
 Stopping the process:

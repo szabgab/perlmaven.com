@@ -2,8 +2,8 @@
 title: "Regex character classes"
 timestamp: 2014-11-09T09:30:01
 tags:
-  - []
-  - -
+  - "[]"
+  - "-"
 published: true
 books:
   - beginner

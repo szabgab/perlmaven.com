@@ -5,7 +5,7 @@ tags:
   - files
   - append
   - open
-  - >>
+  - ">>"
 published: true
 books:
   - beginner

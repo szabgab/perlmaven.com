@@ -2,7 +2,7 @@
 title: "CLI - Command Line Interface in Perl"
 timestamp: 2019-04-27T11:30:01
 tags:
-  - @ARGV
+  - "@ARGV"
   - GetOpt::Long
   - STDIN
 published: true

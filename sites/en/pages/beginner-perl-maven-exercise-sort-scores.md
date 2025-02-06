@@ -2,7 +2,7 @@
 title: "Exercise: sort scores - video"
 timestamp: 2015-07-09T14:01:32
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

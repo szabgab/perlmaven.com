@@ -2,8 +2,8 @@
 title: "How to change an element of an array in Perl"
 timestamp: 2020-11-02T08:30:01
 tags:
-  - @array
-  - $array[$i]
+  - "@array"
+  - "$array[$i]"
 published: true
 author: szabgab
 archive: true

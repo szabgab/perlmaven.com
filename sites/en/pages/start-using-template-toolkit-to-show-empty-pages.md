@@ -69,7 +69,6 @@ after the main template of each page. Hence we also create a two more files:
 </body>
 </html>
 ```
-```
 
 Not much, but we have to start somewhere and eliminating the repetition of these parts is already a win. Especially
 when later we'll want to make some changes. These file were also created in a subdirectory of `tt/` called

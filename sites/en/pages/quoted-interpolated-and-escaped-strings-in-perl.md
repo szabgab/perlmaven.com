@@ -3,9 +3,7 @@ title: "Strings in Perl: quoted, interpolated and escaped"
 timestamp: 2013-05-15T11:45:03
 tags:
   - strings
-  - '
-  - "
-  - \
+  - "'"
   - escape character
   - interpolation
   - quote

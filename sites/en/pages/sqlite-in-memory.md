@@ -4,7 +4,7 @@ timestamp: 2018-06-11T05:50:01
 tags:
   - SQLite
   - memory
-  - :memory:
+  - ":memory:"
 published: true
 author: szabgab
 archive: true

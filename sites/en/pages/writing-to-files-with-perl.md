@@ -7,7 +7,7 @@ tags:
   - write
   - die
   - open or die
-  - >
+  - ">"
   - encoding
   - UTF-8
 published: true

@@ -3,10 +3,10 @@ title: "Minimal Regex Matching - video"
 timestamp: 2015-07-26T11:02:17
 tags:
   - regexes
-  - ?
-  - +?
-  - *?
-  - ??
+  - "?"
+  - "+?"
+  - "*?"
+  - "??"
 types:
   - screencast
 published: true

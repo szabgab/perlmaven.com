@@ -2,15 +2,15 @@
 title: "Regex: special character classes"
 timestamp: 2015-04-08T08:00:01
 tags:
-  - []
-  - \d
-  - \w
-  - \s
-  - \D
-  - \W
-  - \S
-  - \p
-  - \P
+  - "[]"
+  - \\d
+  - \\w
+  - \\s
+  - \\D
+  - \\W
+  - \\S
+  - \\p
+  - \\P
 published: true
 books:
   - beginner

@@ -8,12 +8,12 @@ tags:
   - gt
   - le
   - ge
-  - ==
-  - !=
-  - <
-  - >
-  - <=
-  - >=
+  - "=="
+  - "!="
+  - "<"
+  - ">"
+  - "<="
+  - ">="
 types:
   - screencast
 published: true

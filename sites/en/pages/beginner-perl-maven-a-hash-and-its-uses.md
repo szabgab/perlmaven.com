@@ -2,7 +2,7 @@
 title: "A hash and its uses - video"
 timestamp: 2015-07-04T11:01:01
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

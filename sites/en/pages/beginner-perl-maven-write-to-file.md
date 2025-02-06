@@ -3,7 +3,7 @@ title: "Write to file - video"
 timestamp: 2015-03-27T11:03:18
 tags:
   - print
-  - >
+  - ">"
 types:
   - screencast
 published: true

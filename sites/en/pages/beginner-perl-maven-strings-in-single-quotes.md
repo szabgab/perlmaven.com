@@ -2,7 +2,7 @@
 title: "strings in single quotes - video"
 timestamp: 2015-03-08T19:03:09
 tags:
-  - '
+  - "'"
 types:
   - screencast
 published: true

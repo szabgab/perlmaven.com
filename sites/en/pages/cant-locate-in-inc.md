@@ -3,7 +3,7 @@ title: "Can't locate ... in @INC"
 timestamp: 2013-07-25T07:30:01
 tags:
   - warnings
-  - @INC
+  - "@INC"
 published: true
 books:
   - beginner

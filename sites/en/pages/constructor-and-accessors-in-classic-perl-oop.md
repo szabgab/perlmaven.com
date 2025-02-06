@@ -4,8 +4,8 @@ timestamp: 2014-01-29T08:30:01
 tags:
   - bless
   - package
-  - @_
-  - $_[0]
+  - "@_"
+  - "$_[0]"
 published: true
 books:
   - advanced

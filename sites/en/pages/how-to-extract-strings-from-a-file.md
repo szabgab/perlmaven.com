@@ -2,12 +2,12 @@
 title: "How to extract strings from a file"
 timestamp: 2013-06-15T11:30:01
 tags:
-  - \s
-  - ?:
-  - (
-  - /g
-  - ^
-  - $
+  - "\\s"
+  - "?:"
+  - "("
+  - "/g"
+  - "^"
+  - "$"
   - regex
 published: true
 author: szabgab

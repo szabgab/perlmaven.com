@@ -6,8 +6,8 @@ tags:
   - perlcritic
   - Perl::Critic
   - Perl::Critic::Bangs
-  - |=
-  - ||=
+  - "|="
+  - "||="
 published: true
 author: szabgab
 archive: true

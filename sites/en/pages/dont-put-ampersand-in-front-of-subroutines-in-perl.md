@@ -2,7 +2,7 @@
 title: "Don't put & in-front of subroutines in Perl"
 timestamp: 2015-04-19T13:30:01
 tags:
-  - &
+  - "&"
 published: true
 books:
   - beginner

@@ -2,7 +2,7 @@
 title: "Solution: sort scores - video"
 timestamp: 2015-07-09T18:02:34
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

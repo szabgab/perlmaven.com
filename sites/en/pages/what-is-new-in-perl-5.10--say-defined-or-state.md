@@ -2,14 +2,14 @@
 title: "What's new in Perl 5.10? say, //, state"
 timestamp: 2012-07-06T05:45:56
 tags:
-  - v5.10
-  - 5.010
-  - say
-  - //
-  - defined or
-  - state
-  - ||=
-  - //=
+  - "v5.10"
+  - "5.010"
+  - "say"
+  - "//"
+  - "defined or"
+  - "state"
+  - "||="
+  - "//="
 published: true
 author: szabgab
 ---

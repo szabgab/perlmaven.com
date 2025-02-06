@@ -2,12 +2,12 @@
 title: "Array references in Perl"
 timestamp: 2015-12-09T07:30:01
 tags:
-  - @
-  - \@
-  - $#
-  - $#$
-  - @{ }
-  - ARRAY(0x703dcf2)
+  - "@"
+  - "\\@"
+  - "$#"
+  - "$#$"
+  - "@{ }"
+  - "ARRAY(0x703dcf2)"
   - Data::Dumper
 published: true
 books:

@@ -3,7 +3,7 @@ title: "Passing two arrays to a function"
 timestamp: 2015-03-10T09:25:01
 tags:
   - sub
-  - @_
+  - "@_"
   - \
   - ARRAY
 published: true

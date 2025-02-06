@@ -2,7 +2,7 @@
 title: "How to process command line arguments in Perl using Getopt::Long"
 timestamp: 2014-10-30T18:56:14
 tags:
-  - @ARGV
+  - "@ARGV"
   - Getopt::Long
   - GetOptions
 published: true

@@ -8,7 +8,7 @@ tags:
   - __DATA__
   - last
   - next
-  - LABEL:
+  - "LABEL:"
   - List::MoreUtils
   - all
 types:

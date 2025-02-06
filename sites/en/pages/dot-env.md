@@ -3,9 +3,9 @@ title: ".env - the dot env application configuration file"
 timestamp: 2021-04-09T16:30:01
 tags:
   - Dotenv
-  - .env
-  - %ENV
-  - $ENV
+  - ".env"
+  - "%ENV"
+  - "$ENV"
 published: true
 author: szabgab
 archive: true

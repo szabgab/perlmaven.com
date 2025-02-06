@@ -5,7 +5,7 @@ tags:
   - cat
   - append
   - open
-  - >>
+  - ">>"
 published: true
 books:
   - beginner

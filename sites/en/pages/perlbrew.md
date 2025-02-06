@@ -105,10 +105,6 @@ Some of the commands:
 `perlbrew available` - lists all the versions of perl that are available in source code format on CPAN for you to
 use to brew (build).
 
-```
-
-```
-
 `perlbrew list`  - lists all the already brewed perl installations that you can use.
 
 `perlbrew install` - install a new version of perl.
@@ -127,7 +123,7 @@ long processing
 
 ## Switch to the newly brewed perl
 
-<code.
+```
 perlbrew switch perl-5.28.2_WITH_THREADS
 ```
 

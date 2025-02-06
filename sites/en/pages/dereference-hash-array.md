@@ -4,9 +4,9 @@ timestamp: 2017-12-17T08:30:01
 tags:
   - HASH
   - ARRAY
-  - @$
-  - %$
-  - $$
+  - "@$"
+  - "%$"
+  - "$$"
 published: true
 author: szabgab
 archive: true
@@ -29,7 +29,7 @@ Then we de-reference it by putting a `%` sign in-front of it `%$hr` and copy the
 Then we can see how to access the element of this new hash and how to access the same elements using the hash-reference we already had earlier.
 For this first we use the "arrow notation" and then the "stacking sigils notation". I always prefer the "arrow notation".
 
-{% include file="/examples/hash_deref.pl" %}
+{% include file="examples/hash_deref.pl" %}
 
 The output will look like this:
 
@@ -53,7 +53,7 @@ expression.
 
 Here too we have both the "arrow notation" and the "stacked sigils notation" and here to I'd recommend the former.
 
-{% include file="/examples/array_deref.pl" %}
+{% include file="examples/array_deref.pl" %}
 
 ```
 ARRAY(0x7f8954803c80)
@@ -87,7 +87,7 @@ to one of the internal hashes.
 
 Finally we can see how to access an element inside on of internal hashes.
 
-{% include file="/examples/hash_of_hash_deref.pl" %}
+{% include file="examples/hash_of_hash_deref.pl" %}
 
 ```
 HASH(0x7fff3d828db0)

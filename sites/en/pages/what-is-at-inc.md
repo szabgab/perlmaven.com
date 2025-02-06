@@ -2,7 +2,7 @@
 title: "What is @INC in Perl?"
 timestamp: 2016-12-22T07:01:01
 tags:
-  - @INC
+  - "@INC"
   - use
   - require
   - do

@@ -2,12 +2,12 @@
 title: "How to change @INC to find Perl modules in non-standard locations"
 timestamp: 2012-07-24T12:45:56
 tags:
-  - @INC
+  - "@INC"
   - use
   - PERLLIB
   - PERL5LIB
   - lib
-  - -I
+  - "-I"
 published: true
 books:
   - beginner

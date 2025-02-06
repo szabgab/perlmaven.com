@@ -6,13 +6,13 @@ tags:
   - my
   - undef
   - say
-  - +
-  - x
-  - .
   - sigil
-  - $
-  - @
-  - %
+  - x
+  - "+"
+  - "."
+  - "$"
+  - "@"
+  - "%"
   - FATAL warnings
 types:
   - screencast

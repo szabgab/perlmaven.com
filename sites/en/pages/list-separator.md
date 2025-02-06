@@ -1,13 +1,12 @@
 ---
-title: "$" $LIST_SEPARATOR"
+title: $" $LIST_SEPARATOR
 timestamp: 2020-09-23T19:30:01
 tags:
-  - $"
   - $LIST_SEPARATOR
 published: true
 author: szabgab
 archive: true
-description: "The $" variable, also called the $LIST_SEPARATOR indicates what goes between array elements when they are intepolated in a string."
+description: The $" variable, also called the $LIST_SEPARATOR indicates what goes between array elements when they are intepolated in a string.
 show_related: true
 ---
 

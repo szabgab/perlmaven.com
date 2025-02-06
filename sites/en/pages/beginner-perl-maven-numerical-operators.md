@@ -2,11 +2,11 @@
 title: "Numerical Operators - video"
 timestamp: 2015-02-22T16:01:59
 tags:
-  - +
-  - -
-  - /
-  - *
-  - %
+  - "+"
+  - "-"
+  - "/"
+  - "*"
+  - "%"
 types:
   - screencast
 published: true

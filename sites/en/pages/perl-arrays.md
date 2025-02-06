@@ -3,7 +3,7 @@ title: "Perl Arrays"
 timestamp: 2013-03-23T20:45:02
 description: "perl array denoted with @ - creating, checking size, iterating over the elements, accessing elements"
 tags:
-  - @
+  - "@"
   - array
   - arrays
   - length
@@ -14,7 +14,7 @@ tags:
   - push
   - pop
   - shift
-  - $#
+  - "$#"
 published: true
 books:
   - beginner

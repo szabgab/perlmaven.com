@@ -112,7 +112,7 @@ What would be really good though is if this test also ran on [Travis-CI](/enable
 No problem, we only have to tell Travis-CI to install the [Test::Code::TidyAll](https://metacpan.org/release/Code-TidyAll) module,
 before running the tests. We can do that by adding the following lines to `.travis.yml`
 
-<cod>
+```
 before_install:
   - cpanm --notest Test::Code::TidyAll
 ```

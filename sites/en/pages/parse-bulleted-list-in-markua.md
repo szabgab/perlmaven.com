@@ -2,8 +2,8 @@
 title: "Parse bulleted list in Markua"
 timestamp: 2020-05-23T20:31:01
 tags:
-  - *
-  - -
+  - "*"
+  - "-"
 published: true
 books:
   - markua

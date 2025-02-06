@@ -1,6 +1,6 @@
 ---
 title: "Draw hexagons, octagons and other regular polygons using SVG"
-timestamp: 2015-02-01T07:30:01
+timestamp: 2015-02-01T07:30:00
 tags:
   - files
 published: false

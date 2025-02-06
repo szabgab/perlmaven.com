@@ -2,10 +2,10 @@
 title: "The Hash-bang line, or how to make a Perl scripts executable on Linux"
 timestamp: 2014-04-29T09:03:01
 tags:
-  - #!
-  - -w
-  - -t
-  - -T
+  - "#!"
+  - "-w"
+  - "-t"
+  - "-T"
   - /usr/bin/perl
 published: true
 books:

@@ -32,7 +32,7 @@ from http://owl.phy.queensu.ca/~phil/exiftool/ to your desktop.
 
 3) In the terminal window, type the following:
 
-<coed>
+```
 cd ~/Desktop
 tar -xzf Image-ExifTool-5.25.tar.gz
 ```

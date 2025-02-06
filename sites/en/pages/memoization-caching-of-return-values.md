@@ -3,9 +3,9 @@ title: "Memoization - speeding up function calls by caching of return values"
 timestamp: 2016-04-03T22:30:01
 tags:
   - Memoize
-  - &
-  - \&
-  - *{}
+  - "&"
+  - "\\&"
+  - "*{}"
 published: true
 author: szabgab
 archive: true

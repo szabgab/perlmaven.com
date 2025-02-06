@@ -5,7 +5,7 @@ tags:
   - CGI
   - CGI::Simple
   - QUERY_STRING
-  - %ENV
+  - "%ENV"
 published: true
 books:
   - cgi

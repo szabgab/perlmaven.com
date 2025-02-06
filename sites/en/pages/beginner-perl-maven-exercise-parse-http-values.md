@@ -2,7 +2,7 @@
 title: "Exercise: parse HTTP values - video"
 timestamp: 2015-07-06T11:01:37
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

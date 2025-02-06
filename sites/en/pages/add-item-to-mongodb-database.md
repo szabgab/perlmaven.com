@@ -173,6 +173,7 @@ manually if the data was inserted as expected.
 In the end I even called `db.dropDatabase()` to drop the database.
 
 
+```
 $ mongo
 (mongod-3.0.1) test> use d2-ajax-2217-1432822679
 switched to db d2-ajax-2217-1432822679

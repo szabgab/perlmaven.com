@@ -1,5 +1,5 @@
 ---
-title: ""Deep recursion" warning while using wsdl2perl.pl"
+title: "'Deep recursion' warning while using wsdl2perl.pl"
 timestamp: 2008-12-09T22:54:39
 tags:
   - SOAP::WSDL

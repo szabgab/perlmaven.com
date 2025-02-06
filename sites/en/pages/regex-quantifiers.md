@@ -2,10 +2,10 @@
 title: "Perl 5 Regex Quantifiers"
 timestamp: 2014-12-02T13:30:01
 tags:
-  - ?
-  - +
-  - *
-  - {}
+  - "?"
+  - "+"
+  - "*"
+  - "{}"
 published: true
 books:
   - beginner

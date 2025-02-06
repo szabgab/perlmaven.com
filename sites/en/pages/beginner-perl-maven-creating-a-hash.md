@@ -2,7 +2,7 @@
 title: "Creating a hash - video"
 timestamp: 2015-07-04T11:10:16
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

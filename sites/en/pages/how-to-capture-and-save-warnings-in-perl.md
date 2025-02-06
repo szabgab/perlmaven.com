@@ -4,9 +4,9 @@ timestamp: 2013-05-07T10:30:01
 tags:
   - warnings
   - state
-  - __WARN__
-  - %SIG
-  - $SIG{}
+  - "__WARN__"
+  - "%SIG"
+  - "$SIG{}"
   - local
 published: true
 books:

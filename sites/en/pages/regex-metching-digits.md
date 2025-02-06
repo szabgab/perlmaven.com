@@ -5,8 +5,8 @@ tags:
   - PosixDigit
   - Digit
   - PosixXDigit
-  - [[:digit:]]
-  - [[:xdigit:]]
+  - "[[:digit:]]"
+  - "[[:xdigit:]]"
   - digit
   - xdigit
 published: true

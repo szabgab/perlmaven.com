@@ -6,10 +6,10 @@ tags:
   - or
   - not
   - xor
-  - &&
-  - ||
-  - //
-  - !
+  - "&&"
+  - "||"
+  - "//"
+  - "!"
 types:
   - screencast
 published: true

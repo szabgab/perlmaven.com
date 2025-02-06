@@ -2,10 +2,10 @@
 title: "Introduction to Regexes in Perl 5"
 timestamp: 2014-10-21T09:00:01
 tags:
-  - .
-  - //
-  - =~
-  - !~
+  - "."
+  - "//"
+  - "=~"
+  - "!~"
 published: true
 books:
   - beginner

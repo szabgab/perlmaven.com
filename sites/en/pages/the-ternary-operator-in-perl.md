@@ -2,7 +2,7 @@
 title: "The ternary operator in Perl"
 timestamp: 2014-02-07T14:45:56
 tags:
-  - ?:
+  - "?:"
 published: true
 books:
   - beginner

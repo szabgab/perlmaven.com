@@ -2,8 +2,8 @@
 title: "Which Perl modules are loaded in memory?"
 timestamp: 2014-10-07T08:30:01
 tags:
-  - %INC
-  - @INC
+  - "%INC"
+  - "@INC"
 published: true
 author: szabgab
 ---
@@ -82,7 +82,9 @@ For some nicer layout, and without loading Data::Dumper, you might want to try t
 
 For example to see what [Moo](/moo) loads:
 
-`perl -e 'use Moo; printf qq{%30s %s\n}, $_, $INC{$_} for sort keys %INC;'`
+```
+perl -e 'use Moo; printf qq{%30s %s\n}, $_, $INC{$_} for sort keys %INC;'
+```
 
 (Windows user will want to replace the single-quotes by double-quotes.)
 

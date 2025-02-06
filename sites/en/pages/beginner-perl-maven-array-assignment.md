@@ -2,7 +2,7 @@
 title: "Array assignment - video"
 timestamp: 2015-05-11T07:01:03
 tags:
-  - @array
+  - "@array"
   - qw
 types:
   - screencast

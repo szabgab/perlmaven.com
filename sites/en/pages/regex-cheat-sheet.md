@@ -2,17 +2,17 @@
 title: "Perl 5 Regex Cheat sheet"
 timestamp: 2015-08-19T07:30:01
 tags:
-  - ?
-  - +
-  - *
-  - {}
-  - .
-  - []
-  - |
-  - $1
-  - $2
-  - $3
-  - $4
+  - "?"
+  - "+"
+  - "*"
+  - "{}"
+  - "."
+  - "[]"
+  - "|"
+  - "$1"
+  - "$2"
+  - "$3"
+  - "$4"
 published: true
 books:
   - beginner

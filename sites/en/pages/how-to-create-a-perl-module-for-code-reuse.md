@@ -6,16 +6,16 @@ tags:
   - use
   - Exporter
   - import
-  - @INC
-  - @EXPORT_OK
-  - $0
+  - "@INC"
+  - "@EXPORT_OK"
+  - "$0"
   - dirname
   - abs_path
   - Cwd
-  - File::Basename
+  - "File::Basename"
   - lib
   - module
-  - 1;
+  - "1;"
 published: true
 books:
   - advanced

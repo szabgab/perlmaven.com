@@ -2,7 +2,7 @@
 title: "Exercise: parse variable width fields - video"
 timestamp: 2015-07-10T11:30:38
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

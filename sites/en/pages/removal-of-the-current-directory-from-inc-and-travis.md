@@ -1,9 +1,9 @@
 ---
-title: "Removal of the current directory (".") from @INC in Perl 5.26 and Travis-CI"
+title: Removal of the current directory (".") from @INC in Perl 5.26 and Travis-CI
 timestamp: 2017-11-29T10:30:01
 tags:
   - Travis-CI
-  - @INC
+  - "@INC"
   - PERL_USE_UNSAFE_INC
 published: true
 author: szabgab

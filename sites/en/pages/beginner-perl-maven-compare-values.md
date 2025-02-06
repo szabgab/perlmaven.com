@@ -2,10 +2,10 @@
 title: "Compare Values - video"
 timestamp: 2015-03-06T11:01:10
 tags:
-  - ==
+  - "=="
   - eq
-  - <
-  - >
+  - "<"
+  - ">"
   - lt
   - gt
 types:

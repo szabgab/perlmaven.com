@@ -2,7 +2,7 @@
 title: "Solution: parse HTTP values - video"
 timestamp: 2015-07-06T19:02:36
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

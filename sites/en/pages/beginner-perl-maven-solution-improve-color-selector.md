@@ -2,7 +2,7 @@
 title: "Solution: improve color selector - video"
 timestamp: 2015-07-08T22:30:31
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

@@ -2,7 +2,7 @@
 title: "Exercise: improve color selector - video"
 timestamp: 2015-07-08T01:31:29
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

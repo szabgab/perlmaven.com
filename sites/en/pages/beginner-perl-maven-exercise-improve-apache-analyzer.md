@@ -2,7 +2,7 @@
 title: "Exercise: improve Apache log analyzer - video"
 timestamp: 2015-07-09T23:01:28
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

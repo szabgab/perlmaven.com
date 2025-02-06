@@ -1,5 +1,5 @@
 ---
-title: "Create a lexical warning that can be turned on and off with the "warnings" pragma."
+title: Create a lexical warning that can be turned on and off with the "warnings" pragma.
 timestamp: 2021-06-14T08:10:01
 tags:
   - warnings

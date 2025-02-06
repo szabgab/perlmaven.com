@@ -12,7 +12,7 @@ tags:
   - dirname
   - Dir::Self
   - __DIR__
-  - @INC
+  - "@INC"
   - lib
   - rlib
   - FindBin::libs

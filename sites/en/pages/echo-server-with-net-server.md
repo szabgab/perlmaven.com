@@ -4,10 +4,10 @@ timestamp: 2015-04-29T09:00:01
 tags:
   - Net::Telnet
   - ALRM
-  - %SIG
+  - "%SIG"
   - alarm
   - eval
-  - $@
+  - "$@"
 published: true
 books:
   - net_server

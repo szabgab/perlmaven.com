@@ -1,5 +1,5 @@
 ---
-title: "Can't locate Object method "cells" via Win32::IEAutomation"
+title: Can't locate Object method "cells" via Win32::IEAutomation
 timestamp: 2010-12-27T22:39:09
 tags:
   - Win32::IEAutomation

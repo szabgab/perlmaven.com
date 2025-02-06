@@ -1,5 +1,5 @@
 ---
-title: "$, the output field separator, and $" the list separator of Perl"
+title: $, the output field separator, and $" the list separator of Perl
 timestamp: 2014-02-13T09:30:01
 tags:
   - $LIST_SEPARATOR

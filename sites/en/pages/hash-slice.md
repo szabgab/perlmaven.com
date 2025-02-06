@@ -2,7 +2,7 @@
 title: "How to get a slice of a hash?"
 timestamp: 2017-09-05T22:00:01
 tags:
-  - @hash{...}
+  - "@hash{...}"
 published: true
 author: szabgab
 archive: true

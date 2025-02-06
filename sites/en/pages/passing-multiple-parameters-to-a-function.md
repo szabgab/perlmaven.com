@@ -2,7 +2,7 @@
 title: "Passing multiple parameters to a function in Perl"
 timestamp: 2020-10-24T08:30:01
 tags:
-  - @_
+  - "@_"
 published: true
 books:
   - beginner

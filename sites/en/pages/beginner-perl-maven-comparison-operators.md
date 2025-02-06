@@ -2,12 +2,12 @@
 title: "Comparison Operators - video"
 timestamp: 2015-03-03T08:41:11
 tags:
-  - <
-  - >
+  - "<"
+  - ">"
   - lt
   - gt
-  - <=
-  - >=
+  - "<="
+  - ">="
 types:
   - screencast
 published: true

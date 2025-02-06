@@ -2,7 +2,7 @@
 title: "hash in SCALAR context - video"
 timestamp: 2015-07-04T16:01:46
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true

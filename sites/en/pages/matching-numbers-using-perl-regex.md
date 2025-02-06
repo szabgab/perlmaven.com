@@ -2,10 +2,10 @@
 title: "Matching numbers using Perl regex"
 timestamp: 2014-05-19T10:25:56
 tags:
-  - ^
-  - +
-  - []
-  - *
+  - "^"
+  - "+"
+  - "[]"
+  - "*"
 published: true
 author: szabgab
 ---

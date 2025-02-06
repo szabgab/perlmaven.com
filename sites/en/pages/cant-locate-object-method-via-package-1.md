@@ -1,5 +1,5 @@
 ---
-title: "Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?)"
+title: Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?)
 timestamp: 2015-02-05T18:30:01
 tags:
   - context

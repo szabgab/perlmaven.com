@@ -2,7 +2,7 @@
 title: "Creating a hash from an array - video"
 timestamp: 2015-07-04T12:01:15
 tags:
-  - %
+  - "%"
 types:
   - screencast
 published: true
