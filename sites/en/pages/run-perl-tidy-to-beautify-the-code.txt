@@ -108,7 +108,7 @@ What would be really good though is if this test also ran on <a href="/enable-tr
 No problem, we only have to tell Travis-CI to install the <a href="https://metacpan.org/release/Code-TidyAll">Test::Code::TidyAll</a> module,
 before running the tests. We can do that by adding the following lines to <hl>.travis.yml</hl>
 
-<cod>
+<code>
 before_install:
   - cpanm --notest Test::Code::TidyAll
 </code>

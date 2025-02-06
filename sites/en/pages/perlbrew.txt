@@ -129,7 +129,7 @@ long processing
 
 <h2>Switch to the newly brewed perl</h2>
 
-<code.
+<code>
 perlbrew switch perl-5.28.2_WITH_THREADS
 </code>
 
