@@ -59,6 +59,33 @@ authors:
   - name: Jeffrey Thalhammer
     nickname: thalhammer
     picture: thalhammer.png
+  - name: Steve Dickinson
+    nickname: dsdickinson
+    picture: dsdickinson.jpg
+  - name: Peter Jaquiery
+    nickname: grandfather
+    picture: grandfather.jpg;
+  - name: Darin McBride
+    nickname: dmcbride
+    picture: dmcbride.png
+  - name: Ferenc Erki
+    nickname: ferki
+    picture: ferki.png
+  - name: Meir Guttman
+    nickname: mguttman
+    picture: mguttman.png
+  - name: Moritz Lenz
+    nickname: moritz
+    picture: moritz_lenz.jpg
+  - name: Savenkova Natalya
+    nickname: name2rnd
+    picture: natalya_savenkova.png
+  - name: A. Sinan Unur
+    nickname: nanis
+    picture: nanis.png
+  - name: Curtis "Ovid" Poe
+    nickname: ovid
+    picture: ovid.jpg
 
 # The following section defines the menu. The "start" will be left-aligned the "end" will be right aligned.
 # TODO: Once we implement rtl site this will probably be the other direction too
