@@ -7,7 +7,9 @@
 
 =abstract start
 
+<hr>
 <h2>The given statement was removed from later versions of Perl. Don't use this!</h2>
+<hr>
 
 TL;DR
 

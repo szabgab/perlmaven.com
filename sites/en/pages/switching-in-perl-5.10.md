@@ -11,6 +11,11 @@ published: true
 author: szabgab
 ---
 
+---
+
+## The given statement was removed from later versions of Perl. Don't use this!
+
+---
 
 TL;DR
 
