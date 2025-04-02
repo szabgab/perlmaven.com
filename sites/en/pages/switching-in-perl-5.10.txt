@@ -7,6 +7,8 @@
 
 =abstract start
 
+<h2>The given statement was removed from later versions of Perl. Don't use this!</h2>
+
 TL;DR
 
 There is <b>no case/switch statement on Perl</b>. Use if/elsif/elsif/...
