@@ -133,7 +133,7 @@ issues = 1
 [MetaJSON]
 </code>
 
-<h2>Why shall I add this link?</h2>
+<h2>Why should I add this link?</h2>
 
 It's simple. The easier it is to send patches to the most recent version of your module,
 the more likely you'll get them.
@@ -151,4 +151,3 @@ If something is unclear there, just ask.
 
 In an other article I showed <a href="/how-to-add-the-license-field-to-meta-files-on-cpan">how to add the license information to the META files of CPAN distributions</a>.
 If you had a public repository, it would be easier for others to send that patch too.
-
