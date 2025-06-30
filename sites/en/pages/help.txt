@@ -51,6 +51,10 @@ I know of two Perl-related Telegram groups:
 <li><a href="https://t.me/perlp">Perl 5</a></li>
 </ul>
 
+<h2>Discord</h2>
+
+<a href="https://discord.gg/Mnbj6th">Perl on Discord</a> 
+
 
 <h2>Mailing lists</h2>
 
