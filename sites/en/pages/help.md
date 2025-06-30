@@ -45,6 +45,13 @@ There are also people asking questions on [Reddit /r/perl](https://www.reddit.co
 There are several Perl-related Facebook pages, I can recommend the one called [Perl Community](https://www.facebook.com/groups/perlcommunity/)
 to ask for help.
 
+## Telegram
+
+I know of two Perl-related Telegram groups:
+
+* [Perl Maven community](https://t.me/PerlMaven)
+* [Perl 5](https://t.me/perlp)
+
 ## Mailing lists
 
 There are lots of [topic specific mailing list](http://lists.perl.org/) for Perl, but if you are a beginner, or
