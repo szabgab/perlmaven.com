@@ -63,7 +63,7 @@ listing all the people:
 * Alexander Karelas
 * Neil Hainer
 
-<h2 id="translations">Translations</h2>
+<h2 id="translations">Translations
 
 Thanks to several enthusiastic volunteers, the site is being translated into several other languages.
 If you'd like to help with any of the these languages, or if you'd like to translate the pages to other
@@ -73,7 +73,7 @@ languages, please contact Gabor.
 
 See on the [meta](https://meta.perlmaven.com/) site.
 
-<h2 id="contact">Contact information</h2>
+<h2 id="contact">Contact information
 <p>
 E-mail: gabor@perlmaven.com
 

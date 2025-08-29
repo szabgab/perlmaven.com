@@ -182,7 +182,7 @@ While not recommended for general XML handling [XML::Simple](https://metacpan.or
 used for serialization and de-serialization of data structures and [XML::Dumper](https://metacpan.org/pod/XML::Dumper)
 was specifically created for that.
 
-<h3 id="sereal">Sereal</h2>
+<h3 id="sereal">Sereal
 
 [Sereal](https://metacpan.org/pod/Sereal) was developed at
 [Booking.com](http://blog.booking.com/sereal-a-binary-data-serialization-format.html) to provide

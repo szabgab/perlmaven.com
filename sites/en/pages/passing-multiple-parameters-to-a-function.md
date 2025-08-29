@@ -45,7 +45,7 @@ sendmail(
 This is some long message
 ...
 },
-  q{<h2>Dear Bar</h2>
+  q{## Dear Bar
 This is a long HTML message
 ...
 },
@@ -84,7 +84,7 @@ sendmail(
 This is some long message
 ...
 },
-   html => q{<h2>Dear Bar</h2>
+   html => q{## Dear Bar
 This is a long HTML message
 ...
 },

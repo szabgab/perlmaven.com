@@ -19,7 +19,7 @@ Such tasks are often required by engineers in telco companies or companies that 
 First let's see the [input data](#input), the [expected output](#output) and
 a bit of a [description](#description).
 
-<h2 id="input">The input data</h2>
+<h2 id="input">The input data
 
 ```
 <rlnrp:cell=all;
@@ -82,7 +82,7 @@ HIHYST  LOHYST  OFFSETP  OFFSETN  BQOFFSETAFR  BQOFFSETAWB
 END
 ```
 
-<h2 id="output">The expected output data</h2>
+<h2 id="output">The expected output data
 
 If your screen is not wide enough it might be a bit unclear, but in the expected output we have one header line and 4 data lines.
 Try to reduce the font-size to see how it should look like. The line numbers on the left can be a clue to the real lines in the expected
@@ -97,7 +97,7 @@ G37521 G37422    MUTUAL  BOTH   YES  3       0                    3       0  2  
 G37521 G37421    MUTUAL  BOTH   YES  3       0                    3       0  2       0                     5         3  5       3       0                 3
 ```
 
-<h2 id="description">A bit of description</h2>
+<h2 id="description">A bit of description
 
 The first few lines, up until the first line with 'CELL' in it can be regarded as garbage for our purposes.
 

@@ -23,7 +23,7 @@ available for Perl. The most popular being [DBIx::Class (a.k.a. DBIC)](https://m
 
 [Simple database access using Perl DBI and SQL](/simple-database-access-using-perl-dbi-and-sql)
 
-<h2 id="dbd">Database Drivers (DBDs)</h2>
+<h2 id="dbd">Database Drivers (DBDs)
 
 * For [Oracle](https://en.wikipedia.org/wiki/Oracle_Database) use [DBD::Oracle](https://metacpan.org/pod/DBD::Oracle).
 * For [Microsoft SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server) you can use either [DBD::ODBC](https://metacpan.org/pod/DBD::ODBC) or [DBD::ADO](https://metacpan.org/pod/DBD::ADO).

@@ -197,7 +197,7 @@ The index.tt template itself had to be changed as well to include this:
 ```
   <% FOR e IN data.keys.sort %>
     <hr />
-    <h2><% data.$e.title %></h2>
+    ## <% data.$e.title %>
     <% data.$e.text %>
   <% END %>
 ```

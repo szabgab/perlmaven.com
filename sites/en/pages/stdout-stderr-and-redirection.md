@@ -146,7 +146,7 @@ works.
 Most of the above should work on all Unix/Linux systems as well as on MS Windows.
 Specifically `/dev/null` is only available on Unix/Linux systems.
 
-<h2 id="buffering">Order of output (buffering)</h2>
+<h2 id="buffering">Order of output (buffering)
 
 A slight warning:
 

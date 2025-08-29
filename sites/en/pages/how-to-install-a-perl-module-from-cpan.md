@@ -47,7 +47,7 @@ that we won't click on.
 * [FreeBSD, system Perl with root rights](/install-perl-modules-on-freebsd)
 
 
-<h2 id="dwimperl">Strawberry Perl or DWIM Perl on Windows</h2>
+<h2 id="dwimperl">Strawberry Perl or DWIM Perl on Windows
 
 [Strawberry Perl](http://strawberryperl.com/),
 comes with an already configured cpan client. We will use this client to install modules directly from CPAN:
@@ -69,7 +69,7 @@ c:> cpan Path::Tiny
 ```
 
 
-<h2 id="activeperl">ActivePerl</h2>
+<h2 id="activeperl">ActivePerl
 
 There is a graphical tool for this as well, but it might be more simple just to open the
 Command Window (Start -> Run -> type cmd). When you get the "DOS" prompt, type in
@@ -85,17 +85,17 @@ carrying older versions of the modules. On newer versions of ActivePerl you can 
 cpan-client that will access the CPAN server just as it does in the case of Strawberry/DWIM Perl above.
 
 
-<h2 id="gitperl">GitPerl</h2>
+<h2 id="gitperl">GitPerl
 
 TBD.
 
-<h2 id="cygwinperl">Cygwin Perl</h2>
+<h2 id="cygwinperl">Cygwin Perl
 
 TBD. [Cygwin](http://www.cygwin.com/).
 
 
 
-<h2 id="debian">Debian/Ubuntu Linux</h2>
+<h2 id="debian">Debian/Ubuntu Linux
 
 If you have **root** rights, and if you use the **system perl** located in `/usr/bin/perl`,
 then probably the best is to try to install from the package management system of your Linux distribution.
@@ -123,7 +123,7 @@ $ sudo aptitude install libpath-tiny-perl
 
 
 
-<h2 id="fedora">RedHat/Fedora/CentOS Linux</h2>
+<h2 id="fedora">RedHat/Fedora/CentOS Linux
 
 Just as in the case of Debian/Ubuntu above, the instructions here are relevant if
 you use the **system perl** located in `/usr/bin/perl` and if you have
@@ -153,18 +153,18 @@ the [Magnum Solutions CPAN RPM Repository](http://rpm.mag-sol.com/)
 maintained by [Dave Cross](http://perlschool.co.uk/).
 
 
-<h2 id="osx">Mac OSX</h2>
+<h2 id="osx">Mac OSX
 
 Follow the instructions with **cpan/cpanm** below.
 
-<h2 id="cpan-client">Using the cpan client</h2>
+<h2 id="cpan-client">Using the cpan client
 
 While the `cpan` program comes with most operating system,
 and it works well after some configuration, there is probably a better,
 and certainly lighter solution called **cpan minus** or **cpanm**.
 
 
-<h2 id="cpanm">Using cpanm</h2>
+<h2 id="cpanm">Using cpanm
 
 This is for Linux and OSX systems.  (For Windows, see described above.)
 

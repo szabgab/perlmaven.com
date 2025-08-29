@@ -222,7 +222,7 @@ int main()
 
 And why would it? You only have the PID of the grandparent process in hand and you are probably sending the kill signal to that process. The child and the grand-child don't know about it. and your whole examples is in C now....
 
-<h2>
+## 
 
 Hello. I realize this is quite a bit late, but I'm having a problem with a Perl script I've ported from RHEL to Centos7 (it works perfectly on RHEL 7).
 

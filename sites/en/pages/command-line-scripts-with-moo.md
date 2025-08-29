@@ -180,7 +180,7 @@ the `--verbose` does not. Actually, the default is that it expects no value, and
 supplied the `--file` flag it set the `file` attribute to the value `1` (meaning TRUE).
 
 Loading MooX::Options adds a few more keywords to the syntax of Moo. Specifically we can
-now add <h2>format => 's'</h2> to the declaration of `file` that means we are expecting
+now add ## format => 's' to the declaration of `file` that means we are expecting
 a string value after the name.
 
 The full declaration will then look like this:

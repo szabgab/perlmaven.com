@@ -65,7 +65,7 @@ Because we are looking for a very specific piece of data here I just manually se
 ```
 
 <div class="on-community">
-    <h2 class="pad-sign">Perl</h2>
+    <h2 class="pad-sign">Perl
     <div class="number">516</div>
     <div class="unit pad-sign">members</div>
 </div>
@@ -132,7 +132,7 @@ look at the source of the HTML again and look for that string. I found the follo
 <div id="leaderboard">
 
     <div class="people">
-        <h2>New Members</h2>
+        ## New Members
         <ul class="group">
             
             <li>
@@ -165,7 +165,7 @@ example we can it pretends as if there was an attribute called `_tag` with the v
 `p, a, h1`, or in this case `h2`.
 
 `my $h2 = $ch->look_down('_tag', 'h2');` searches staring from the current child of the the leaderboard and locates the
-first `h2` element. `$h2->as_text</h2> returns the title.
+first `h2` element. `$h2->as_text returns the title.
 
 As we would like to provide a relatively stable interface for our users, we cannot use this text "New Members" as the keys in our hash listing the users.
 We need to have keys that can remain the same even if the title at the web site changes. So we created a mapping from actual titles to internal keys and

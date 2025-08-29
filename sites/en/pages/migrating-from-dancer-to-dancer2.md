@@ -291,7 +291,7 @@ It wasn't difficult to find them using `ack 'use Dancer'`. Three of the tests sc
 
 ## Perl::Critic - Dancer2 also implies use strict
 
-In addition, I noticed that a lot of the tests fail on my system with reports from <a href="https://metacpan.org/pod/Perl::Critic">Perl::Critic</h2>.
+In addition, I noticed that a lot of the tests fail on my system with reports from <a href="https://metacpan.org/pod/Perl::Critic">Perl::Critic.
 Specifically they complain about `Code before strictures are enabled`
 
 The Perl::Maven project has a [.perlcriticrc](https://github.com/szabgab/Perl-Maven/blob/master/.perlcriticrc) file in which
@@ -423,7 +423,7 @@ Then I switched back to the dancer2 branch of the repository and rebased the bra
 
 ## bin/app.pl
 
-The `bin/appl.pl</h2> file is mostly used during development. In the Perl::Maven application it used to look like this:
+The `bin/appl.pl file is mostly used during development. In the Perl::Maven application it used to look like this:
 
 ```perl
 #!/usr/bin/env perl

@@ -28,14 +28,14 @@ For this I need to run the **whois** command for each domain and then look at th
 Let's see how can I automate this.
 
 
-<h2 id="whole">The whole script</h2>
+<h2 id="whole">The whole script
 
 Look at the whole script, or jump to the [explanations](#explanation)
 
 {% include file="examples/whois.pl" %}
 
 
-<h2 id="explanation">Explanation</h2>
+<h2 id="explanation">Explanation
 
 I looked around and decided to use [Net::Whois::Raw](https://metacpan.org/pod/Net::Whois::Raw).
 I did not remember it, but apparently I even maintained it a bit after the original author passed away.

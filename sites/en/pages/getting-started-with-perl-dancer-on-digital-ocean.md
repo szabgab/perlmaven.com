@@ -35,7 +35,7 @@ on a [Digital Ocean](/digitalocean) droplet.
 </ol>
 
 
-<h2 id="signup">Sign up to Digital Ocean and create a server</h2>
+<h2 id="signup">Sign up to Digital Ocean and create a server
 
 First you need to visit [Digital Ocean](/digitalocean) (This is an affiliate link, I'll earn some credits
 if you use this link to sign up.), provide your credit card information. Once you are in you need to create a
@@ -63,7 +63,7 @@ root. This is not the most secure process, but we'll change the password very so
 If you are worried they also allow you to provide a public key **before** you create the droplet and then they will install that
 key instead of sending you a password.
 
-<h2 id="basic">Basic configuration of the server</h2>
+<h2 id="basic">Basic configuration of the server
 
 In the e-mail you will see instructions how to ssh to the server.
 If you are a command line user, you can use the **ssh root@1.2.3.4** command, with
@@ -137,7 +137,7 @@ Once the upgrade has finished it is recommended to **reboot** the system. Type i
 you and you will need to connect to it via ssh (putty) again, after some time. (Maybe 30 sec?). Remember, you have changed the password!
 
 
-<h2 id="aptitude">Installing packages</h2>
+<h2 id="aptitude">Installing packages
 
 As I mentioned every Linux distribution, and so Ubuntu too, comes with a lot of packages. Some of them are installed by default.
 Others need to be installed manually. Usually the way to install a package is to type **aptitude install package-name**.
@@ -194,7 +194,7 @@ starman@s12:~$ exit
 
 
 
-<h2 id="perlbrew">Brewing Perl</h2>
+<h2 id="perlbrew">Brewing Perl
 
 If you run **perl -v** you will see the server already has perl installed. It is usually referred to as **system perl**.
 As we are going to install all kinds of modules from CPAN some of those might interfere with modules used by the system.
@@ -282,7 +282,7 @@ We can also try `which perl` and it will report
 `/home/starman/perl5/perlbrew/perls/perl-5.18.1/bin/perl`.
 
 
-<h2 id="cpan">Installing Perl Modules from CPAN</h2>
+<h2 id="cpan">Installing Perl Modules from CPAN
 
 It is not enough to compile our own version of Perl we also need to
 install a few modules. For this we need a configured CPAN client.
@@ -300,7 +300,7 @@ Once that's install we can install the required modules:
 starman@s12:~$ cpanm Dancer2 Starman Daemon::Control
 ```
 
-<h2 id="dancer">Creating a simple Dancer application</h2>
+<h2 id="dancer">Creating a simple Dancer application
 
 The command
 
@@ -330,7 +330,7 @@ but for now we'll focus on configuring the server.
 
 So let's stop the development server by pressing `Ctrl-C` on the console.
 
-<h2 id="starman">Configuring Starman</h2>
+<h2 id="starman">Configuring Starman
 
 As user `starman` create `/home/starman/starman_daemon.pl` containing the following code:
 
@@ -380,7 +380,7 @@ Once you launched starman you can access the web application on the same hostnam
 http://1.2.3.4:5000
 
 
-<h2 id="nginx">Configure nginx as a proxy</h2>
+<h2 id="nginx">Configure nginx as a proxy
 
 As user `starman` create the file **/home/starman/nginx-demo.conf** with the following content:
 
@@ -399,7 +399,7 @@ root@s12:~# service nginx restart
 Now you can visit http://1.2.3.4  replacing this with the IP address of your machine.
 
 
-<h2 id="domain">Connecting a domain name</h2>
+<h2 id="domain">Connecting a domain name
 
 If you already have a domain name registered, then you only need to configure it to make sure
 both www.domain.com and domain.com resolves to the IP address of your machine.

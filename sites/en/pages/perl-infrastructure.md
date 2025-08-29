@@ -274,7 +274,7 @@ The source code of the web-site is in [GitHub](https://github.com/cpants/www-cpa
 Source code in [GitHub](https://github.com/bricas/cpan-changes-web).
 
 
-<h2 id="act">ACT</h2>
+<h2 id="act">ACT
 
 Most [Perl conferences](http://act.mongueurs.net/conferences.html) (YAPCs, Workshops etc) run on [Act - A Conference Toolkit](http://act.mongueurs.net/).
 Its source code is in [the Act repository](https://github.com/book/Act). The server is run by the [The French Perl Mongueurs](http://mongueurs.pm/):

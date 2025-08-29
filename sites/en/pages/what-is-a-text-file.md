@@ -170,7 +170,7 @@ It is considered a text file, because all the "control characters" are themselve
 
 ## Comments
 "When we say newline we usually mean the sign that can convince the computer to go to the beginning of next row." I'd say that newline means new line, not new line AND beginning of next row.
-<h2>
+## 
 
 Super explanation
 

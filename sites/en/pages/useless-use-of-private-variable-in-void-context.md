@@ -60,7 +60,7 @@ and to [always use warnings](/always-use-warnings)!
 
 I'm surprised by this, I would expect $x or $y to return 1 or 0 regardless. And I can't imagine using it in an assignment. It's just not very readable.
 
-<h2>
+## 
 
 Another cause for this warning took me a while to track down ...
 As $n was already defined, I started a for loop like this:
@@ -79,10 +79,10 @@ for( $n = $n; $n <= $endDateVal; $n += $secsInt ) {
 
 and thanks for your articles.
 
-<h2>
+## 
 Thanks for the great info, but I too triggered this warning using a technique not described above. I declared a sub called 'write' and the warning pointed at the line where I called it. Renaming my sub from 'write' to 'writestuff' resolved it. Yay.
 
-<h2>
+## 
 Even weirder case of this:
 
 use strict;

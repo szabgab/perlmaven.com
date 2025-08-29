@@ -151,7 +151,7 @@ Good article. One additional thing I think is important to mention is that the $
 
 In you book do you highlight the differences between Win32/Linux and Mac OSX or is it Windows or Linux centric
 
-<h2>
+## 
 
 Do you have suggestions for adding error handling for the readdir failure in scalar context?
 

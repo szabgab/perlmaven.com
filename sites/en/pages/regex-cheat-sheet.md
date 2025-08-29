@@ -118,7 +118,7 @@ TODO: add examples \w and \d matching unicode letters and numebers.
 ```
 
 
-<h2>Extended</h2
+## Extended</h2
 
 ```
   (?#text)             Embedded comment

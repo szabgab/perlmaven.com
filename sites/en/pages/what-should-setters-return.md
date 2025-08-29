@@ -34,11 +34,11 @@ in fact both have its advantages and disadvantages.
 
 I won't go in the details here, let's just see the two examples:
 
-### Setter explicitly returns undef</h2>
+### Setter explicitly returns undef
 
 {% include file="examples/oop/setter/return_undef.pm" %}
 
-### Setter returns nothing (undef or empty list)</h2>
+### Setter returns nothing (undef or empty list)
 
 {% include file="examples/oop/setter/return_nothing.pm" %}
 
