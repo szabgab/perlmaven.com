@@ -237,7 +237,7 @@ inside the /var/www and/or probably forgot to create the symbolic links for the 
 Move the cgi-bin directory outside the /var/www, update the configuration files, set up
 the symbolic links, and reload the server.
 
-<h3>500 Internal Server Error</h3>
+### 500 Internal Server Error
 
 If you get an `500 Internal Server Error` look at the error log in `/var/log/apache2/error.log`
 
@@ -307,7 +307,7 @@ $|  = 1;
 
 I am not sure, but I think **Premature end of script headers**  is the same as **End of script output before headers**.
 
-<h3>503 Service Unavailable</h3>
+### 503 Service Unavailable
 
 After I created the symbolic links to the cgid.* files and reloaded the Apache server,
 I got **503 Service Unavailable** in the browser and the following line in the log file:
@@ -325,7 +325,7 @@ I am not sure why did this happen, but it after restarting the apache server it 
 In most of the situations a reload should be enough, but maybe not when a module is enabled/disabled.
 
 
-<h3>404 Not Found</h3>
+### 404 Not Found
 
 If you get a **404 Not Found** error in the browser and
 
@@ -336,7 +336,7 @@ If you get a **404 Not Found** error in the browser and
 in the error log, then maybe the `ScriptAlias` line is missing, or not pointing to the proper directory.
 
 
-<h3>403 Forbidden</h3>
+### 403 Forbidden
 
 If you get a **403 Forbidden** error, the probably the `Directory` directive was not correctly configure
 or does not point to the correct path.

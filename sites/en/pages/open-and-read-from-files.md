@@ -153,7 +153,7 @@ boolean context.
 After we read the last line, in the next iteration the readline operator (`<$fh>`) will
 return undef which is false. The while-loop will terminate.
 
-<h3>An edge-case</h3>
+### An edge-case
 
 There is an edge-case though when the very last line has a single 0 in it, without a trailing newline.
 The above code would evaluate that line to false and the loop would not be executed. Fortunately,

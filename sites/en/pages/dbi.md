@@ -37,13 +37,13 @@ available for Perl. The most popular being [DBIx::Class (a.k.a. DBIC)](https://m
 * For [Daegis Inc](https://en.wikipedia.org/wiki/Daegis_Inc.), what was formerly called the Unify database use [DBD::Unify](https://metacpan.org/pod/DBD::Unify).
 * For [Neo4j](http://neo4j.com/) graph database you can use [REST::Neo4p](https://metacpan.org/pod/REST::Neo4p) that allows for the execution of Neo4j Cypher language queries, or [DBD::Neo4p](https://metacpan.org/pod/DBD::Neo4p) which is a DBI-compliant wrapper around that module.
 
-<h3>Generic Database Drivers (DBDs)</h3>
+### Generic Database Drivers (DBDs)
 
 * [DBD::ADO](https://metacpan.org/pod/DBD::ADO) for Microsoft ADO ([ActiveX Data Objects](https://en.wikipedia.org/wiki/ActiveX_Data_Objects)) (There is also a Win32::ADO module but that's not recommended.)
 * [DBD::ODBC](https://metacpan.org/pod/DBD::ODBC) to connect to any database via [ODBC (Open Database Connectivity)](https://en.wikipedia.org/wiki/Open_Database_Connectivity)
 * [Win32::ODBC](https://metacpan.org/pod/Win32::ODBC) solely exist for backwards compatibility. It started life in 1996 when DBD::ODBC didn't exist yet, and Perl on Windows was still a fork that couldn't build CPAN modules (it didn't even support MakeMaker). Use DBD::ODBC instead.
 
-<h3>Special Database Drivers</h3>
+### Special Database Drivers
 
 There are all kinds of other Database Drivers that can be used to make data look like they are in a Relational Database.
 
@@ -55,13 +55,13 @@ There are all kinds of other Database Drivers that can be used to make data look
 * [DBD::Google](https://metacpan.org/pod/DBD::Google) to treat Google as relational database.
 * [DBD::Sys](https://metacpan.org/pod/DBD::Sys) treat System tables as a relational database.
 
-<h3>Not Database Drivers</h3>
+### Not Database Drivers
 
 There are some module in the DBD::* namespace that are not Database drivers.
 
 * [DBD::Log](https://metacpan.org/pod/DBD::Log) is a logging mechanism for DBI
 
-<h3>Wrappers around DBI</h3>
+### Wrappers around DBI
 
 * [DBIx::Class (a.k.a. DBIC)](https://metacpan.org/pod/DBIx::Class)
 * [Pcore::DBD](https://metacpan.org/pod/Pcore::DBD) works on top of the [Pcore](https://metacpan.org/pod/Pcore) application framework.

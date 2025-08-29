@@ -44,7 +44,7 @@ $ plackup -R . app.pl
 
 This will launch a web server on port 5000 which is accessible from our browser.
 
-<h3>Vagrant</h3>
+### Vagrant
 
 If you use the [Vagrant based Perl Development Environment](/vagrant-perl-development-environment) you'd
 probably create the `app.pl` file on the host system in the directory where you also have the `Vagrantfile`.

@@ -252,7 +252,7 @@ We can accomplish this in two ways:  One of them is to have two separate
 arguments: one of the arguments is to turn logging on/off, and the other one is to supply
 the name of the file:
 
-<h3>Two arguments, one depending the other</h3>
+### Two arguments, one depending the other
 
 ```perl
 use strict;
@@ -317,7 +317,7 @@ Option logfile requires an argument
 Usage: cli.pl [--log  [--logfile FILENAME]]
 ```
 
-<h3>Argument that can get a value (but not required to)</h3>
+### Argument that can get a value (but not required to)
 
 The same can be accomplish using an option with an optional value. We declare that by using `:s` at the end of the
 option name as in `logfile:s`.

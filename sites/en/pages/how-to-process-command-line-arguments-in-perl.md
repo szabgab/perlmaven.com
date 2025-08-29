@@ -88,7 +88,7 @@ If we run it `perl cli.pl Foo`  it won't print anything either, as GetOptions on
 
 So when will the [short circuit](/short-circuit) `or die` kick-in?
 
-<h3>Unknown option</h3>
+### Unknown option
 
 If we run the script passing something that looks like a parameter name, but which has not been declared
 when calling `GetOptions`. Something that starts with a dash `-`. For example:
@@ -102,7 +102,7 @@ Usage: cli.pl --from NAME
 
 The first line is a warning printed by `GetOptions`, the second line is the string we generated using `die`.
 
-<h3>Option requires an argument</h3>
+### Option requires an argument
 
 Another case is when we run the script, pass `--from`, but without passing any value after it:
 

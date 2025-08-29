@@ -48,7 +48,7 @@ For now let's discuss specifically the Perl::Critic tests here.
 There are a couple of strategies to avoid the Perl::Critic errors on machines you don't have control over.
 Probably the most obvious one is to run these tests only during development and releases. For that there are several strategies.
 
-<h3>Put the tests in xt/</h3>
+### Put the tests in xt/
 
 So far we put all the test scripts in the t/ directory, but there is actually a fairly standard recommendation to put the "developer test"
 in the xt/ directory. (Still with .t extension though.) Normally, when we run "make test" these test would not be executed.
@@ -69,7 +69,7 @@ part and replace it with
 use Test::Perl::Critic 1.02;
 ```
 
-<h3>Don't distribute the tests at all</h3>
+### Don't distribute the tests at all
 
 Another solution, that might make even more sense, especially if the project has a public version control system, is to
 leave the "developer tests" in the `t/` directory, but to exclude them from the distribution.
@@ -88,7 +88,7 @@ contributors, but then if I work on a new machine or a newly compiled perl where
 I'll probably miss the fact that some of my tests did not run. Having Travis-CI configured to install Perl::Critic might
 eliminate the danger as that means even if I don't run the Perl::Critic tests, Travis-CI will the first time I push out my changes.
 
-<h3>Use environment variable to control the tests</h3>
+### Use environment variable to control the tests
 
 There is also the possibility to only let the "developer tests" run if a certain environment variable is set.
 For example like this:
@@ -107,7 +107,7 @@ DEV_TESTS=1 make test
 I think this has similar aspects as the tests in the `xt/` but this is probably an inferior solution.
 
 
-<h3>Supply the configuration file needed for Perl::Critic</h3>
+### Supply the configuration file needed for Perl::Critic
 
 In the `.perlcriticrc` we had the configuration of Perl::Critic,
 but that file was not included in the distribution so when the Perl::Critic tests ran on the CPAN Testers machine,

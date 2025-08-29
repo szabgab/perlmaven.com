@@ -300,7 +300,7 @@ sub generate {
 Now we already have a pair of working generate and validate methods.
 
 
-<h3>Salted hashing with iterations would work like this:</h3>
+### Salted hashing with iterations would work like this:
 
 ```perl
 sub generate {

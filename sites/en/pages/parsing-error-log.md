@@ -156,7 +156,7 @@ I think the === lines at the top and bottom were only added to separate the real
 from the rest of the e-mail. I saved the data, the parts between those two lines
 in a file called error.log. I'll process that file from now on.
 
-<h3>Entities</h3>
+### Entities
 
 As I can see there are entities in this file separated with lines like this:
 
@@ -286,7 +286,7 @@ sub process {
 Now we need to focus on recognizing the different special lines.
 For this we'll use **regular expressions**.
 
-<h3>Entity headers</h3>
+### Entity headers
 
 We need to recognize if we are at an entity header line.
 Let's replace the `say $line;` with the following code.
@@ -315,7 +315,7 @@ capture this string and put it in the special variable `$1`.
 
 We also save the current entity in a global variable.
 
-<h3>Block headers</h3>
+### Block headers
 
 ```perl
     if ($line =~ /^SOURCE \s+ LINE \s+ (\d+)$/x) {
@@ -328,7 +328,7 @@ We also save the current entity in a global variable.
 
 Similar to the case of the section heads, except that `\d` will only match digits.
 
-<h3>Record names</h3>
+### Record names
 
 Record names are marked with a leading &N.
 
@@ -341,7 +341,7 @@ Record names are marked with a leading &N.
     }
 ```
 
-<h3>Lines to discard</h3>
+### Lines to discard
 
 We'll probably want to discard any empty lines, and all the lines that only have carets in them.
 We call `next` to read the next line from the file.

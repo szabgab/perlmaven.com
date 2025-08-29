@@ -27,7 +27,7 @@ Regular Expressions or in short Regex, Regexes, or Regexp are one of the most we
 
 ## [Beginner Perl Maven video course](/beginner-perl-maven-video-course)
 
-<h3>8. Regular Expressions - part 1</h3>
+### 8. Regular Expressions - part 1
 <ol>
   <li>[Regexes](/beginner-perl-maven-regexes)</li>
   <li>[Where can I use regexes](/beginner-perl-maven-where-can-i-use-regexes)</li>
@@ -47,7 +47,7 @@ Regular Expressions or in short Regex, Regexes, or Regexp are one of the most we
   <li>[Solution: Regexes 3](/beginner-perl-maven-solution-regexes-3)</li>
 </ol>
 
-<h3>9. Regular Expressions - part 2</h3>
+### 9. Regular Expressions - part 2
 <ol>
   <li>[Regex Alternatives](/beginner-perl-maven-alternatives)</li>
   <li>[Regex Capturing](/beginner-perl-maven-capturing)</li>
@@ -62,7 +62,7 @@ Regular Expressions or in short Regex, Regexes, or Regexp are one of the most we
 </ol>
 
 
-<h3>10. Regular Expressions - part 3</h3>
+### 10. Regular Expressions - part 3
 <ol>
   <li>[m/ for matching regexes](/beginner-perl-maven-m-for-matching)</li>
   <li>[Case insensitive regexes using /i](/beginner-perl-maven-case-insensitive)</li>

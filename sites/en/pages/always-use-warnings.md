@@ -82,7 +82,7 @@ $ perl access_control.pl
 Use of uninitialized value $user_code in string eq at access_control.pl line 7.
 ```
 
-<h3>Typo in hash key</h3>
+### Typo in hash key
 
 Another case of this would be the following code snippet:
 
@@ -123,7 +123,7 @@ If we enable `use warnings` then we get the following warning:
 Useless use of private variable in void context at set_default.pl line 11.
 ```
 
-<h3>Useless use of a constant</h3>
+### Useless use of a constant
 
 Another case which is silent:
 

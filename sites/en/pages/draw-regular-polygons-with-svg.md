@@ -19,15 +19,15 @@ article. We are going to create a function that can draw such a polygon using th
 
 Let's see the results:
 
-<h3>[Hexagon](http://en.wikipedia.org/wiki/Hexagon)</h3>
+### [Hexagon](http://en.wikipedia.org/wiki/Hexagon)
 
 <img src="/img/hexagon.svg" alt="Hexagon SVG" />
 
-<h3>[Octagon](http://en.wikipedia.org/wiki/Octagon)</h3>
+### [Octagon](http://en.wikipedia.org/wiki/Octagon)
 
 <img src="/img/octagon.svg" alt="Octagon SVG" />
 
-<h3>[Dodecagon](http://en.wikipedia.org/wiki/Dodecagon)</h3>
+### [Dodecagon](http://en.wikipedia.org/wiki/Dodecagon)
 
 <img src="/img/dodecagon.svg" alt="Dodecagon SVG" />
 

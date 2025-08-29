@@ -54,7 +54,7 @@ effort goes into Dancer 2.
 
 So I arrived at the conclusion that I need to abandon Dancer 1 and find an alternative.
 
-<h3>PSGI/Plack</h3>
+### PSGI/Plack
 
 I could rewrite the application in [raw PSGI/Plack](/psgi). I have been using it for the
 [search.cpan.org cloning project](/search-cpan-org) and in another project. It is fun, but as I could see from
@@ -66,21 +66,21 @@ but I am sure I'll have plenty of other bugs. After all, Dancer has been develop
 programmer than I am. Even if that was not true, the fact that it has been used by a lot of people means it has been field-tested
 by many people. So using raw PSGI/Plack might be a small step forward, but it will also be a big step backward.
 
-<h3>Mojolicious or Catalyst</h3>
+### Mojolicious or Catalyst
 
 Switching to either [Mojolicious](/mojolicious) or [Catalyst](/catalyst) would required a major rewrite,
 and neither of those seem to be more appealing to me than Dancer. In my perception, Catalyst is too big for this application,
 and Mojolicious feels like a moving target. It might be fun, but I want to spend my time on serving my customers and not running
 after the changes in the framework I use.
 
-<h3>Fix the issues in Dancer 1</h3>
+### Fix the issues in Dancer 1
 
 This would certainly be a very good option. Maybe this would require the smallest additional work from me, but because Dancer 1
 is in maintenance mode it will be probably harder to get changes in the code-base, and there will be fewer people willing to
 improve it. Most importantly, it feels like a waste of time. Eventually the core Dancer developers will all move to Dancer 2
 and I will either use an abandoned version of the framework, or will have to migrate to Dancer 2 anyway.
 
-<h3>Migrating to Dancer 2</h3>
+### Migrating to Dancer 2
 
 While I hear encouraging words from Sawyer and the [2014 Perl Dancer Advent calendar](http://advent.perldancer.org/2014)
 is full of optimism with Dancer 2, I have not actually seen any application written in Dancer 2 yet, and I have not heard

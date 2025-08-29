@@ -65,7 +65,7 @@ And a few other related articles:
 
 ## Reports
 
-<h3>January</h3>
+### January
 
 * 2015.01.03 [My First Day on the CPAN Pull Request Challenge](http://tinypig2.blogspot.co.il/2015/01/my-first-day-on-cpan-pull-request.html) by David Bradford
 * 2015.01.04 [PR-Challenge: January 1st PR](http://blogs.perl.org/users/alberto_simoes/2015/01/pr-challenge-january-1st-pr.html) by Alberto Simões
@@ -88,7 +88,7 @@ And a few other related articles:
 * 2015.01.29 [My CPAN Pull Request Challenge for January: Fuse](http://onionstand.blogspot.cz/2015/01/my-cpan-pull-request-challenge-for.html) by Breno G. de Oliveira
 * 2015.02.01 [Pull Request Challenge: January](http://blogs.perl.org/users/e_choroba/2015/02/pull-request-challenge-january.html) by E. Choroba
 
-<h3>February</h3>
+### February
 
 * 2015.02.19 [Analysing CPAN Testers' Reports](http://blogs.perl.org/users/e_choroba/2015/02/analysing-cpan-testers-reports.html) by E. Choroba
 * 2015.02.22 [CPAN Pull Request Challenge for February: Archive::BagIt](https://huntingbears.nl/2015/02/22/cpan-pull-request-challenge-for-february-archivebagit/) by Michiel Beijen
@@ -97,50 +97,50 @@ And a few other related articles:
 * 2015.02.26 [CPAN Pull Request Challenge - February](https://www.doyleyoung.net/cpan-pull-request-challenge-february/) by Doyle Young
 * 2015.02.28 [My February CPAN PR Challenge: Template::Plugin::Autoformat ](http://onionstand.blogspot.cz/2015/02/my-february-cpan-pr-challenge.html) by Breno G. de Oliveira
 
-<h3>March</h3>
+### March
 * 2015.03.05 [CPAN PR-Challenge: March Report #1](http://blogs.perl.org/users/alberto_simoes/2015/03/cpan-pr-challenge-march-report-1.html) by Alberto Simões
 * 2015.03.08 [CPAN PR-Challenge: March Report #2](http://blogs.perl.org/users/alberto_simoes/2015/03/cpan-pr-challenge-march-report-2.html) by Alberto Simões
 * 2015.03.25 [CPAN Pull Request Challenge - March](https://www.doyleyoung.net/cpan-pull-request-challenge-march/) by Doyle Young
 * 2015.03.31 [My March Assigment in CPR2015 - Filter::CommaEquals](http://herlug.org.uk/?q=node/7) by lesleyb
 * 2015.04.06 [CPAN Pull Request Challenge: March done!](http://fluca1978.blogspot.cz/2015/04/cpan-pull-request-challenge-march-done.html) by Luca Ferrari
 
-<h3>April</h3>
+### April
 * 2015.04.05 [April CPR 2015 HTML::FormFu::DBIx::Model](http://herlug.org.uk/?q=node/8) by lesleyb
 * 2015.04.25 [CPAN PR-Challenge - April Report](http://blogs.perl.org/users/alberto_simoes/2015/04/cpan-pr-challenge---april-report.html) by Alberto Simões
 * 2015.04.27 [CPAN Pull Request Challenge - April](https://www.doyleyoung.net/cpan-pull-request-challenge-april/) by Doyle Young
 * 2015.04.30 [My March &amp; April CPAN PR Challenge dists ](http://onionstand.blogspot.cz/2015/04/my-march-april-cpan-pr-challenge-dists.html) by Breno G. de Oliveira
 * 2015.05.17 [How I didn't fix AnyEvent::ForkManager](http://blogs.perl.org/users/e_choroba/2015/05/how-i-didnt-fix-anyeventforkmanager.html) by E. Choroba
 
-<h3>May</h3>
+### May
 * 2015.05.23 [CPAN PR-Challenge: May Report](http://blogs.perl.org/users/alberto_simoes/2015/05/cpan-pr-challenge-may-report.html) by Alberto Simões
 * 2015.05.23 [CPAN PR Challenge: May done!](http://fluca1978.blogspot.cz/2015/05/cpan-pr-challenge-may-done.html) by Luca Ferrari
 * 2015.06.01 [CPAN Pull Request Challenge - May](https://www.doyleyoung.net/c/) by Doyle Young
 
-<h3>June</h3>
+### June
 * 2015.06.22 [June CPAN PR Challenge: App::DPath](http://perl.bearcircle.net/2015/06/june-cpan-pr-challenge.html) by Bear Perl
 * 2015.06.24 [CPAN Pull Request Challenge - June](https://www.doyleyoung.net/cpan-pull-request-challenge-june/) by Doyle Young
 * 2015.06.28 [CPAN PR-Challenge: June Report](http://blogs.perl.org/users/alberto_simoes/2015/06/cpan-pr-challenge-june-report.html) by Alberto Simões
 * 2015.07.12 [Test failures in File::LibMagic](http://blogs.perl.org/users/e_choroba/2015/07/test-failures-in-filelibmagic.html) by E. Choroba
 
-<h3>July</h3>
+### July
 * 2015.07.26 [What I learned from perlbrew ](http://varlogrant.blogspot.cz/2015/07/what-i-learned-from-perlbrew.html) by Dave Jacoby
 * 2015.07.31 [CPAN PRC: July is Data::Dump](http://blogs.perl.org/users/alberto_simoes/2015/07/cpan-prc-july-is-datadump.html) by Alberto Simões
 * 2015.07.31 [CPAN Pull Request Challenge - July](https://www.doyleyoung.net/cpan-pull-request-challenge-july/) by Doyle Young
 
-<h3>August</h3>
+### August
 * 2015.08.19 [I Need To Write This Up To Understand It, or The Epic Battle between Wat and Derp!](http://varlogrant.blogspot.cz/2015/08/i-need-to-write-this-up-to-understand.html) by Dave Jacoby
 * 2015.09.28 [Test::Aggregate Failures under the Recent Test::Builder](http://blogs.perl.org/users/e_choroba/2015/09/testaggregate-failures-under-the-recent-testbuilder.html) by E. Choroba
 
-<h3>September</h3>
+### September
 * 2015.10.11 [Last Minute: HTML::Element::Replacer](http://blogs.perl.org/users/e_choroba/2015/10/last-minute-htmlelementreplacer.html) by E. Choroba
 
-<h3>October</h3>
+### October
 * 2015.11.01 [Net::SFTP::Foreign in taint mode](http://blogs.perl.org/users/e_choroba/2015/11/netsftpforeign-in-taint-mode.html) by E. Choroba
 
-<h3>November</h3>
+### November
 * 2015.11.18 [CPAN Pull Request Challenge - November](https://www.doyleyoung.net/cpan_pull_request_challenge_november/) by Doyle Young
 
-<h3>December</h3>
+### December
 * 2015.12.30 [CPAN Pull Request Challenge - December](https://www.doyleyoung.net/cpan-pull-request-challenge-december/) by Doyle Young
 * 2016.01.02 [Mocking a User Agent](http://blogs.perl.org/users/e_choroba/2016/01/post.html) by E. Choroba
 

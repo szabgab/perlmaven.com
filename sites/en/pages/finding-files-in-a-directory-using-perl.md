@@ -116,7 +116,7 @@ while ( my $file = $it->() ) {
 
 After seeing the basics, the really interesting part is setting the rules. So let's see a few of them:
 
-<h3>size</h3>
+### size
 
 ```perl
 $rule->size("> 1000");
@@ -150,7 +150,7 @@ $rule->size("< 1024")->size("> 1000");
 
 In general we can **stack rules on the other**
 
-<h3>file-name</h3>
+### file-name
 
 ```perl
 $rule->name("*.xml");
@@ -179,7 +179,7 @@ appropriate rule:
 $rule->perl_file;
 ```
 
-<h3>negative rules</h3>
+### negative rules
 
 What if we want to find all the non-pm files?
 First we create a rule that means "not pm file",
@@ -206,7 +206,7 @@ Even better, most of the rules already have a negative version so we can write t
 $rule->not_name("*.pm");
 ```
 
-<h3>directory depth</h3>
+### directory depth
 
 All the elements that are at least 4 subdirectory deep from the one passed to the
 `iter` method:
@@ -224,7 +224,7 @@ $rule->max_depth(3);
 If we pass 0 to `max_depth` we will get only the directories we passed to `iter</h>.
 If `max_depth` is 1, we will get the immediate content of those directories.
 
-<h3>skipping directories</h3>
+### skipping directories
 
 If you are familiar with [ack](http://beyondgrep.com/), you know it automatically skips the
 **.git** directory.
@@ -258,7 +258,7 @@ $rule->skip_vcs;
 
 If you are not familiar with [ack](http://beyondgrep.com/), it is a perfect time to install it and start using it!
 
-<h3>peek in the files</h3>
+### peek in the files
 
 Lastly, let's see how can we set rules based on the content of the files:
 

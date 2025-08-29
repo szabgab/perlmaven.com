@@ -31,7 +31,7 @@ or flattening of data.
 
 Two major uses of data serialization are **data persistence** and **data communication or transmission**
 
-<h3>Data Persistence</h3>
+### Data Persistence
 
 While a process is running we can keep data in memory, but when the process ends, either naturally, or due to a crash, or due to some external force
 (someone killed the process or turned off the computer) this data is gone.
@@ -46,7 +46,7 @@ The easiest way we can store arbitrary complex data structures is to serialize t
 This is called [data persistence](http://en.wikipedia.org/wiki/Persistence_%28computer_science%29)
 because the data persist beyond the life of the current process.
 
-<h3>Data communication or transmission</h3>
+### Data communication or transmission
 
 If there are two processes running on the same machine that need to send data to each other,
 or if there are two processes on two different machines that need to communicate we encounter a similar problem.
@@ -69,7 +69,7 @@ There are a number of solution in Perl for data serialization with various chara
 some of them here:
 
 
-<h3 id="data-dumper">Data::Dumper</h3>
+<h3 id="data-dumper">Data::Dumper
 
 [Data::Dumper](https://metacpan.org/pod/Data::Dumper) can turn any data structure into a string,
 that when executed will build the same data structure.
@@ -86,7 +86,7 @@ Use this only if you have absolutely no way to use any of the other solution.
 (The real use of Data::Dumper is to display arbitrary data-structure for debugging purpose. For that
 it is quite good and does not have the security issue as we only serialize the data and never try to de-serialize it.)
 
-<h3 id="storable">Storable</h3>
+<h3 id="storable">Storable
 
 [Storable](https://metacpan.org/pod/Storable) creates a binary format using the
 `store` and `nstore` functions and uses the `retrieve` to convert
@@ -103,7 +103,7 @@ It requires a C-compiler to be installed which makes it a bit harder to install
 or to distribute in case you'd like to upgrade from the version that came with your
 distribution of perl.
 
-<h3 id="freezethaw">FreezeThaw</h3>
+<h3 id="freezethaw">FreezeThaw
 
 The [FreezeThaw](https://metacpan.org/pod/FreezeThaw) module provides the
 `freeze` function to serialize data and the `thaw` function to de-serialize it.
@@ -115,7 +115,7 @@ it even if you don't have a C compiler.
 
 I have not measured it, but it is probably much slower than Storable.
 
-<h3 id="yaml">YAML - YAML Ain't Markup Language</h3>
+<h3 id="yaml">YAML - YAML Ain't Markup Language
 
 [YAML](http://www.yaml.org/) is a language-independent data serialization language suitable for representing arrays, hashes,
 and of course scalar values.
@@ -155,7 +155,7 @@ A number of modules implementing YAML serialization and de-serialization:
 * [YAML::Tiny](https://metacpan.org/pod/YAML::Tiny)
 * [YAML::Any](https://metacpan.org/pod/YAML::Any)
 
-<h3 id="json">JSON</h3>
+<h3 id="json">JSON
 
 [JSON](/json) (JavaScript Object Notation) is a lightweight data interchange (serialization) format inspired by JavaScript object literal syntax.
 It is very similar to YAML in its format though YAML seems to be easier to understand for humans. JSON also has several implementation in Perl.
@@ -165,7 +165,7 @@ and that JavaScript has native parser for JSON. Therefore communication with a J
 running in a web browser is much easier with JSON than it would be with YAML. In fact, JSON is the number one data serialization used
 in Ajax-based web applications.
 
-<h3 id="xml">XML</h3>
+<h3 id="xml">XML
 
 XML can be also used for serialization and de-serialization. There are many modules for Perl to
 handle XML data. Some of them are pure perl, others require a C compiler. XML itself is quite readable
@@ -192,7 +192,7 @@ it is even faster than Storable though it has the same drawbacks:
 It is implemented for Perl and for a number of other languages. it requires a C compiler to be installed.
 For more details see the [GitHub repository](https://github.com/Sereal/Sereal)
 
-<h3 id="data-serializer">Data::Serializer</h3>
+<h3 id="data-serializer">Data::Serializer
 
 [Data::Serializer](https://metacpan.org/pod/Data::Serializer) seems to be a module that provides a generic
 interface to any of the serializers mentioned above. I am not sure if its use is warranted, but it can provide flexibility

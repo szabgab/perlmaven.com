@@ -55,7 +55,7 @@ so once we "connected" to the database we know we still need to create the table
 The nice thing about SQLite is that we don't need any administration to set up a new database and to create tables in it.
 We just need to "connect" to a file and issue a `CREATE TABLE` SQL command.
 
-<h3>Check existing process</h3>
+### Check existing process
 
 Then we use the `selectrow_array` method of the Database Handle to fetch the row with the `status` 'running'.
 If the call returned values including the `$timestamp` then we know there was such a row which means there is 
@@ -69,7 +69,7 @@ Eventually, if there was a process already running we call `exit`.
 If we were more daring we could add code to kill the other process, update the `status` in database row to 'failed' and
 go on to the real processing, but at this point we wanted to be a bit more conservative.
 
-<h3>Inserting information about the process</h3>
+### Inserting information about the process
 
 Then we have an `INSERT` statement. We save the `$start_time`, and the Process ID of the current process
 (it can be found in `$$`, and we set the `status` to 'running'.
@@ -88,7 +88,7 @@ we would like to show this information. Finally we set the `pid` field that was 
 will be inserted into the database as `NULL`. After all once the process is finished this process id might be reused by
 some other process so I think keeping it in the database would just create confusion.
 
-<h3>Dumping the database</h3>
+### Dumping the database
 
 Finally, at the end of the script, there is a line to dump the whole content of the database. I've added it just to make
 it easy to see what is the content of the table after the process has finished.

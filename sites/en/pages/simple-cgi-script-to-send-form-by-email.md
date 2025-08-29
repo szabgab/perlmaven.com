@@ -97,13 +97,13 @@ Let's see the CGI part:
 It has two purposes. One, is to fetch the parameters from the submitted form, the other
 is to print out the HTTP header.
 
-<h3>Printing the header</h3>
+### Printing the header
 
 Printing the header is done by the `print $q->header;` line. That is equivalent to
 `print "Content-Type: text/html; charset=ISO-8859-1\n\n";` we saw in
 [another example](/how-to-calculate-balance-of-bank-accounts-in-csv-file-using-perl).
 
-<h3>Fetching submitted values</h3>
+### Fetching submitted values
 
 The `param` method of the CGI object gets the fullname of the field as
 a parameter and returns the submitted value. We call it 3 times for the 3 fields
@@ -146,7 +146,7 @@ The last step in this part of the code is to print the contents of the `%data` h
 to send it back to the browser. We do this only to verify we managed to capture the values
 as they were submitted.
 
-<h3>Validation in JavaScript?</h3>
+### Validation in JavaScript?
 
 It is nice to provide this validation in some JavaScript that comes with the form.
 That can improve usability, but it does **NOT** provide the necessary protection

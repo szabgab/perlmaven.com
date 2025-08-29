@@ -99,33 +99,33 @@ and contributing to CPAN. Check out his writings.
 
 ## Tasks that you could do
 
-<h3>CPAN Cover Site - order by date</h3>
+### CPAN Cover Site - order by date
 
 It would be nice if we could look at [CPAN Cover](http://cpancover.com/) and see the information about the most recently uploaded
 modules, or at least we could look at the list of modules there ordered by their upload date. The logic is that recently uploaded modules
 are maintained more actively so contributing there would more likely to be accepted.
 
-<h3>CPAN Cover site - order by coverage</h3>
+### CPAN Cover site - order by coverage
 
 It would be nice if on [CPAN Cover](http://cpancover.com/) we could see the modules listed in order of the test coverage they have.
 The idea that contributing to modules with low coverage is probably easier and have bigger impact on that specific module.
 
-<h3>Link from MetaCPAN to CPAN Cover</h3>
+### Link from MetaCPAN to CPAN Cover
 
 It would be nice if each module on [MetaCPAN](https://metacpan.org/) would link to its information on [CPAN Cover](http://cpancover.com/).
 
-<h3>Fix Kwalitee of a module</h3>
+### Fix Kwalitee of a module
 
 Find a module on [MetaCPAN](https://metacpan.org/), (looking at the recently uploaded modules could be a good idea), follow
 the link to its Kwalitee metric on the top left side. Try to improve this metric.
 
-<h3>Add test to a module</h3>
+### Add test to a module
 
 Find a module on [MetaCPAN](https://metacpan.org/) that has no tests, or that has low test-coverage.
 (See [CPAN Cover](http://cpancover.com/) for that information).
 Add tests to the module to increase test coverage.
 
-<h3>Add CI to a CPAN module</h3>
+### Add CI to a CPAN module
 
 Find a module on [MetaCPAN](https://metacpan.org/) that already has test and check if the module has any
 of the CI systems enabled. e.g. [Travis-CI](https://travis-ci.org/). If not, fork the module, make sure it

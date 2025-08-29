@@ -68,7 +68,7 @@ and when it was upper-case. I don't think this is really a good idea, it would b
 unique URLs for each data set. So in the future I thinks any of the pages /authors?ABC,   /authors/?a, /authors/?aXz should redirect to
 a page like /authors/A. For now, let's implement what search.cpan.org has.
 
-<h3>Retreive the list of authors</h3>
+### Retreive the list of authors
 
 The next step was to extract the first character, convert it to upper-case, and retreive the list of authors with a PAUSE ID
 starting with that charcter.
@@ -146,7 +146,7 @@ until the it is exhausted. That's how we convert our array reference `$authors` 
 Finally we call the `template() function and pass the `@table` array to the `authors` key.
 
 
-<h3>The template</h3>
+### The template
 
 The last thing we need here is to add the appropriate code to the template in
 [tt/author.tt](https://github.com/szabgab/MetaCPAN-SCO/blob/d7c0500cf1f5ea66670a9178be60766a68bc425b/tt/author.tt):

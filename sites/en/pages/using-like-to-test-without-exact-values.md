@@ -46,7 +46,7 @@ is( last_update(), 'This page was last updated at 2014-09-23T04:43:44', 'last_up
 ```
 
 
-<h3>Disregard the timestamp</h3>
+### Disregard the timestamp
 
 So how can we test if the subroutine returns the correct value?
 (For the purpose of this example, I've included the `last_update` function in the test script,
@@ -72,7 +72,7 @@ sub last_update {
 }
 ```
 
-<h3>Using like</h3>
+### Using like
 
 The `like` function provided by [Test::More](http://metacpan.org/pod/Test::More),
 accepts 3 parameters. The actual returned value. A regular expression created using `qr`,

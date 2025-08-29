@@ -76,7 +76,7 @@ with some simple text. The Changes files have been standardized to some extent a
 add the date to the version number when I actually release a module. In this case I am not sure if there are going to be real releases or if I'll just run the project
 from a clone of the Git repository. In any case a Changes file can be useful.
 
-<h3>lib/SCO.pm</h3>
+### lib/SCO.pm
 
 Created the [lib/SCO.pm](https://github.com/szabgab/MetaCPAN-SCO/blob/4ca4244f6e51aa8ac0129ee72ad1000e79b105aa/lib/SCO.pm) file. As I wrote, at this point I was not really
 sure how I am going to call the project, but SCO seemed to be obvious. (Obviously bad, but I did not want to get stuck on the name. I can change it later.)
@@ -123,7 +123,7 @@ The module must end with some kind of a [true](/boolean-values-in-perl) value. T
 
 You can read more about [creating a module](/how-to-create-a-perl-module-for-code-reuse).
 
-<h3>Test skeleton: t/10-sco.t</h3>
+### Test skeleton: t/10-sco.t
 
 A module, or an application can't really be without unit or acceptance tests, so we also add a skeleton file
 where we can later add tests.

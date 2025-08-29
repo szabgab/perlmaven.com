@@ -25,7 +25,7 @@ See [Writing robust shell scripts](http://www.davidpashley.com/articles/writing-
 
 ## if statements
 
-<h3>Does this directory exist?</h3>
+### Does this directory exist?
 
 ```
 TEST_DIR=/opt/myperl
@@ -35,7 +35,7 @@ if [ -d "$TEST_DIR" ]; then
 fi
 ```
 
-<h3>Does file exist?</h3>
+### Does file exist?
 
 ```
     PERL_SOURCE_ZIP_FILE=perl-5.18.1.tar.gz
@@ -44,7 +44,7 @@ fi
     fi
 ```
 
-<h3>Is variable empty?</h3>
+### Is variable empty?
 
 ```
 X=abc
@@ -65,7 +65,7 @@ fi
 ```
 
 
-<h3>Command line arguments</h3>
+### Command line arguments
 
 ```
 if [ $# == 0 ]; then

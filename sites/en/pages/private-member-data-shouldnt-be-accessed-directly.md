@@ -75,7 +75,7 @@ If the code is primarily object oriented, especially if it is based on [Moo](/mo
 [Moose](/moose), where you don't write your own accessors, then this policy can catch
 code that violates the encapsulation.
 
-<h3>Screenshots</h3>
+### Screenshots
 
 <img src="/img/shots/private-member-data-shouldnt-be-accessed-directly.png" alt="Accessing private member data directly" >
 

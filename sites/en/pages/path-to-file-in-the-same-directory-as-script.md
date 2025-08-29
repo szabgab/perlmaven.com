@@ -124,7 +124,7 @@ offer.
 Here are some alternatives. This is not an exhaustive list. In fact, I have
 purposefully omitted a few for the sake of stimulating some discussion.
 
-<h3>Good old $FindBin::Bin</h3>
+### Good old $FindBin::Bin
 
 [FindBin](https://metacpan.org/pod/FindBin) has been in the core
 since 5.00307. It used to have [an annoying aspect](http://www.perlmonks.org/?node_id=41213) which
@@ -142,7 +142,7 @@ use File::Spec;
 my $coretests = File::Spec->catfile($Bin, 'coretests.pm');
 ```
 
-<h3>Even older File::Basename</h3>
+### Even older File::Basename
 
 [File::Basename](https://metacpan.org/pod/File::Basename) has
 been in the core since 5.000. You can simply do:
@@ -174,7 +174,7 @@ use lib File::Basename::dirname( $0 );
 require coretests;
 ```
 
-<h3>File::Spec</h3>
+### File::Spec
 
 [File::Spec](https://metacpan.org/pod/File::Spec) has been in the
 core since 5.00405. You can simply do:
@@ -209,7 +209,7 @@ Especially if your code deals with a lot of filesystem related operations,
 and you are comfortable adding a non-core dependency to your project, you
 may want to consider `Path::Class` or `Path::Tiny`.
 
-<h3>Path::Class</h3>
+### Path::Class
 
 [Path::Class](https://metacpan.org/pod/Path::Class) is a
 beautiful module. Using it, you can simply write:
@@ -222,7 +222,7 @@ my $coretests = file(file($0)->parent, 'coretests.pm');
 a lot more of the ugliness. It also provides various convenience methods so
 you don't have to, say, re-invent `slurp` in every new module.
 
-<h3>Path::Tiny</h3>
+### Path::Tiny
 
 [Path::Tiny](https://metacpan.org/pod/Path::Tiny) is an elegant
 module that offers a nice, clean interface. It makes no guarantees for

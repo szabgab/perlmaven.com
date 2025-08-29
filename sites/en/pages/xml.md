@@ -19,7 +19,7 @@ Perl in its role as a glue language, can handle any such tasks with ease.
 This article is a collection of the XML-related modules available on CPAN.
 
 
-<h3>Generic</h3>
+### Generic
 
 * [XML::LibXML](https://metacpan.org/pod/XML::LibXML)
 * [XML::LibXSLT](https://metacpan.org/pod/XML::LibXSLT)
@@ -33,7 +33,7 @@ This article is a collection of the XML-related modules available on CPAN.
 * [XML::Bare](https://metacpan.org/pod/XML::Bare)
 * [XML::Compile](https://metacpan.org/pod/XML::Compile)
 
-<h3>Specialized XML libraries</h3>
+### Specialized XML libraries
 
 * [RDF::Trine](https://metacpan.org/pod/RDF::Trine)
 * [XML::Atom](https://metacpan.org/pod/XML::Atom)

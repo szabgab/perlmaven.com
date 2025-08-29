@@ -20,7 +20,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 
 
 ## Table of Contents
-<h3 id="1">1. Introduction</h3>
+<h3 id="1">1. Introduction
 <ol>
   <li>[Welcome and installation](/beginner-perl-maven-installation)</li>
   <li>[Editors, IDEs](/beginner-perl-maven-editors)</li>
@@ -36,7 +36,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li>[Solution: Hello World (part 2)](/beginner-perl-maven-solution-hello-world-2)</li>
 </ol>
 
-<h3 id="2">2. Scalars</h3>
+<h3 id="2">2. Scalars
 <ol>
   <li>[Scalar values and variables](/beginner-perl-maven-scalar-values-and-variables)</li>
   <li>[Common Errors](/beginner-perl-maven-common-errors)</li>
@@ -66,7 +66,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li>[Solution: Number guessing game](/beginner-perl-maven-solution-number-guessing-game)</li>
 </ol>
 
-<h3 id="3">3. Files</h3>
+<h3 id="3">3. Files
 <ol>
   <li>[die, warn, exit](/beginner-perl-maven-die-warn-exit)</li>
   <li>[Open File](/beginner-perl-maven-open-file)</li>
@@ -89,7 +89,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 </ol>
 
 
-<h3>4. Lists and Arrays</h3>
+### 4. Lists and Arrays
 <ol>
   <li>[Lists in Perl](/beginner-perl-maven-lists-in-perl)</li>
   <li>[List Assignment](/beginner-perl-maven-list-assignment)</li>
@@ -125,7 +125,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li>[Solution: improve the number guessing game - m for move mode](/beginner-perl-maven-solution-number-guessing-game-m-move-toggle)</li>
 </ol>
 
-<h3>5. Advanced Arrays</h3>
+### 5. Advanced Arrays
 <ol>
   <li>[The Year of 19100](/beginner-perl-maven-the-year-of-19100)</li>
   <li>[Array in Context](/beginner-perl-maven-array-in-context)</li>
@@ -144,7 +144,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li>[Exercise: sort mixed string](/beginner-perl-maven-exercise-sort-mixed-string)</li>
 </ol>
 
-<h3>6. Functions and Subroutines</h3>
+### 6. Functions and Subroutines
 <ol>
   <li>[Functions and Subroutines](/beginner-perl-maven-functions-and-subroutines)</li>
   <li>[Defining Subroutines](/beginner-perl-maven-defining-subroutines)</li>
@@ -152,7 +152,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 </ol>
 
 
-<h3>7. Hashes</h3>
+### 7. Hashes
 <ol>
   <li>[A hash and its uses](/beginner-perl-maven-a-hash-and-its-uses)</li>
   <li>[Creating a hash](/beginner-perl-maven-creating-a-hash)</li>
@@ -175,7 +175,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 </ol>
 
 
-<h3 id="8">8. Regular Expressions - part 1</h3>
+<h3 id="8">8. Regular Expressions - part 1
 <ol>
   <li>[Regexes](/beginner-perl-maven-regexes)</li>
   <li>[Where can I use regexes](/beginner-perl-maven-where-can-i-use-regexes)</li>
@@ -195,7 +195,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li>[Solution: Regexes 3](/beginner-perl-maven-solution-regexes-3)</li>
 </ol>
 
-<h3>9. Regular Expressions - part 2</h3>
+### 9. Regular Expressions - part 2
 <ol>
   <li>[Regex Alternatives](/beginner-perl-maven-alternatives)</li>
   <li>[Regex Capturing](/beginner-perl-maven-capturing)</li>
@@ -210,7 +210,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
 </ol>
 
 
-<h3>10. Regular Expressions - part 3</h3>
+### 10. Regular Expressions - part 3
 <ol>
   <li>[m/ for matching regexes](/beginner-perl-maven-m-for-matching)</li>
   <li>[Case insensitive regexes using /i](/beginner-perl-maven-case-insensitive)</li>
@@ -239,7 +239,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li>Solution parse Perl file (placeholder)</li>
 </ol>
 
-<h3>11. Shell to Perl</h3>
+### 11. Shell to Perl
 <ol>
   <li>[shell -x](/beginner-perl-maven-shell-x)</li>
   <li>[Running external programs](/beginner-perl-maven-external-programs)</li>
@@ -253,7 +253,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li>[File::Find](/beginner-perl-maven-file-find)</li>
 </ol>
 
-<h3>12. CPAN</h3>
+### 12. CPAN
 <ol>
   <li>[Using procedural module](/beginner-perl-maven-using-procedural-module)</li>
   <li>[Using object oriented module](/beginner-perl-maven-using-object-oriented-module)</li>
@@ -267,7 +267,7 @@ You can watch the episodes on YouTube, or on this site. Some of the pages here h
   <li>[CPAN Testers and CPAN Ratings](/beginner-perl-maven-cpantesters-and-cpanratings)</li>
 </ol>
 
-<h3>13. Applications</h3>
+### 13. Applications
 <ol>
   <li>[Create Linux user account](/beginner-perl-maven-create-linux-user)</li>
   <li>[Diskspace usage: df in Perl](/beginner-perl-maven-diskspace-usage-df)</li>

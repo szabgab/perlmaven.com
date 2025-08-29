@@ -28,7 +28,7 @@ Generates this XML:
 
 {% include file="examples/xml_writer_1.xml" %}
 
-<h3>Details</h3>
+### Details
 
 `OUTPUT => 'self'` tells XML::Writer that we want it to accumulate the XML string
 in itself and return it to us when we call the `end` method.
@@ -110,19 +110,19 @@ Generates the following XML file:
 ## Errors
 
 
-<h3>Document cannot end without a document element</h3>
+### Document cannot end without a document element
 
 We need at least one element in the XML document. At least one call to `startTag`, or `dataElement`.
 
 {% include file="examples/xml_writer_2.pl" %}
 
-<h3>Document ended with unmatched start tag(s): ...</h3>
+### Document ended with unmatched start tag(s): ...
 
 {% include file="examples/xml_writer_3.pl" %}
 
 We called `startTag` but we have not called the appropriate `endTag`.
 
-<h3>End tag "..." does not close any open element</h3>
+### End tag "..." does not close any open element
 
 {% include file="examples/xml_writer_4.pl" %}
 

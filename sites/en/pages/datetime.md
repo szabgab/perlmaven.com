@@ -109,7 +109,7 @@ that you could see in the article [creating simple timestamp](/simple-timestamp-
 say $dt->strftime( '%Y-%m-%d-%H-%M-%S' ); # 1987-12-18-16-12-47
 ```
 
-<h3>Full example</h3>
+### Full example
 
 {% include file="examples/datetime_create.pl" %}
 
@@ -121,7 +121,7 @@ extension that do.
 
 A few commonly used modules:
 
-<h3>[DateTime::Format::ISO8601](https://metacpan.org/pod/DateTime::Format::ISO8601)</h3>
+### [DateTime::Format::ISO8601](https://metacpan.org/pod/DateTime::Format::ISO8601)
 
 Look at the sample script:
 
@@ -147,7 +147,7 @@ The last one seems to indicate the first day of the second week of 1991, but I a
 [throws an exception](https://rt.cpan.org/Ticket/Display.html?id=104346).
 
 
-<h3>[DateTime::Format::Strptime](https://metacpan.org/pod/DateTime::Format::Strptime)</h3>
+### [DateTime::Format::Strptime](https://metacpan.org/pod/DateTime::Format::Strptime)
 
 This module seems to be more powerful and more flexible. It allows you to defined a pattern based
 using the place-holders of [strftime](/simple-timestamp-generation-using-posix-strftime) from
@@ -170,7 +170,7 @@ String:   July 02 1984
 DateTime: 1984-07-02T00:00:00
 ```
 
-<h3>Additional formatting modules</h3>
+### Additional formatting modules
 
 There are many other parsing modules, but these seem to be used the most often:
 

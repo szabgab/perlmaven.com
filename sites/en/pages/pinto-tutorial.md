@@ -267,7 +267,7 @@ name of a stack, but we won't go into that here.  Just remember that
 "master" is the name of the stack that was created when the repository
 was first initialized.
 
-<h3>Creating A Stack</h3>
+### Creating A Stack
 
 Suppose your repository contains version 1.60 of URI but version 1.62
 has been released to the CPAN, just like before.  You want to try
@@ -297,7 +297,7 @@ rf  URI                            1.60  GAAS/URI-1.60.tar.gz
 ...
 ```
 
-<h3>Upgrading A Stack</h3>
+### Upgrading A Stack
 
 Now that you've got a separate stack, you can try upgrading URI.  Just
 as before, you'll use the `pull` command.  But this time, you'll tell
@@ -327,7 +327,7 @@ The output is similar to the diff(1) command. Records starting with a
 see that modules from the URI-1.60 distribution have been replaced
 with modules from the URI-1.62 distribution.
 
-<h3>Installing From A Stack</h3>
+### Installing From A Stack
 
 Once you have new modules on the "uri_upgrade" stack, you can try
 building your application by pointing cpanm at the stack.  Each stack
@@ -361,7 +361,7 @@ satisfy some other prerequisite that My-App may have.  Until you know
 the problem is fixed, you need to prevent URI from being upgraded.
 This is what pins are for.
 
-<h3>Pinning A Module</h3>
+### Pinning A Module
 
 When you pin a module, that version of the module is forced to stay in
 a stack.  Any attempt to upgrade it (either directly or via another
@@ -390,7 +390,7 @@ the URI-1.60 distribution has been pinned, so it is impossible to
 partially upgrade a distribution (this situation could happen when a
 module moves into a different distribution).
 
-<h3>Unpinning A Module</h3>
+### Unpinning A Module
 
 After a while, suppose you fix the problem in My-App or a new version
 of URI is released that fixes the bug.  When that happens, you can
@@ -418,7 +418,7 @@ As development proceeds, you may upgrade or add several modules on the
 you'll place a pin in that module on the "prod" stack to signal that
 it shouldn't be upgraded.
 
-<h3>Pins and Patches</h3>
+### Pins and Patches
 
 Sometimes you may find that a new version of a CPAN distribution has a
 bug but the author is unable or unwilling to fix it (at least not

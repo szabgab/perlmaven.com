@@ -24,7 +24,7 @@ There some extra tricks in using MetaCPAN. For example you can
 [search for all Plack Middleware or Perl::Critic Policies](/listing-all-the-modules-in-a-namespace)
 or you can [limit your search by distribution name, version number or author.](/metacpan-search-tricks)
 
-<h3>Installing modules from CPAN</h3>
+### Installing modules from CPAN
 
 Once you found a module that you would like to install, you'll need to find out how to install it.
 
