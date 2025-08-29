@@ -93,13 +93,13 @@ authors:
 navbar:
   start:
     - path: /
-      title: Casa
+      title: Home
     - path: /tags/
       title: Tags
   end:
     - path: /archive
-      title: Archivo
+      title: Archive
     - path: /about
       title: About
 
-# search: Resultsos de buscada
+# search: Search results
