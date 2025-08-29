@@ -7,19 +7,6 @@ archive: false
 show_related: false
 ---
 
-<style>
-ul.horizontal {
-   list-style-type: none;
-
-}
-ul.horizontal li {
-    display: inline-block;
-    width: 25%;
-}
-</style>
-
-<div class="main-content">
-
 ## Perl tutorials and courses
 
 * [Perl Tutorial](/perl-tutorial) just a plain Perl tutorial. Nothing fancy.
@@ -34,7 +21,7 @@ ul.horizontal li {
 * [Perl Dancer](/dancer) light-weight web framework to rock.
 * [Catalyst](/catalyst) The MVC web framework of Perl.
 * [PSGI/Plack](/psgi), the low-level superglue between Perl web application frameworks and web servers.
-* [CGI](/cgi), the Common Gateway Interface, for old-school web applications. 
+* [CGI](/cgi), the Common Gateway Interface, for old-school web applications.
 
 ## Object Oriented Perl
 
@@ -79,64 +66,57 @@ ul.horizontal li {
 * [Ruby](https://code-maven.com/ruby)
 * [SVG](https://code-maven.com/svg), Scalable Vector Graphics examples in JavaScript and Python.
 
-</div>
-
-<div class="main-content">
 If you are a <b>beginner</b>, or would like to refresh your Perl programming knowledge,
 you can go over the [Perl tutorial](/perl-tutorial) or watch the
 [Beginner Perl Maven video course](/beginner-perl-maven-video-course).
-</div>
 
+---
 
-<div class="main-content">
 If you need to <b>maintain a large piece of software</b> written in Perl by other people in the last 5-10-15 years,
 that's a challenge. Especially if you did not get proper training in Perl. You are probably limited to
 a specific and old version of Perl. Check out, the [Perl tutorial](/perl-tutorial)!
 You can probably skip the part about installing Perl, but the rest of the tutorial will be relevant for you.
-</div>
 
-<div class="main-content">
+---
+
 Perl is often used in <b>Test Automation</b>. If you work in this field, or if you'd like to work in this field
 (it is much more fun to find bugs in other people's code than in yours :), then you can read the [Perl tutorial](/perl-tutorial)
 and the series on [Test Automation using Perl](https://perlmaven.com/testing).
-</div>
 
-<div class="main-content">
+---
+
 If you build <b>new web applications</b> - either privately or inside a company - you can start by reading the
 article comparing [CGI, mod_perl and PSGI](/perl-cgi-mod-perl-psgi). From there you can go on reading
 the generic [Perl tutorial](/perl-tutorial) or the articles on
 [Mojolicious](/mojolicious),  [Perl Dancer](/dancer), [Catalyst](/catalyst),
 [PSGI/Plack](/psgi), or even [CGI](/cgi), the Common Gateway Interface, for old-school web applications.
-</div>
 
-<div class="main-content">
+
+---
+
 In the off chance you are interested in topics other than Perl, especially related to Test Automation, Continuous
 Integration, Continuous Deployment, DevOps, then you are welcome to check out the list of
 [DevOps related training courses](https://hostlocal.com/).
-</div>
+
 
 ## Translations
 
-<div id="sites">
-    <ul>
-       <li>[Bahasa Indonesia](https://id.perlmaven.com/)</li>
-       <li>[Deutsch](https://de.perlmaven.com/)</li>
-       <li>[English](https://perlmaven.com/) <span class="glyphicon glyphicon-ok"></span> </li>
-       <li> [Español](https://es.perlmaven.com/) </li>
-       <li> [Français](https://fr.perlmaven.com/) </li>
-       <li> [Italiano](https://it.perlmaven.com/) </li>
-       <li> [Polish](https://pl.perlmaven.com/) </li>
-       <li> [Português](https://br.perlmaven.com/) </li>
-       <li> [Română](https://ro.perlmaven.com/) </li>
-       <li> [Türkçe](https://tr.perlmaven.com/) </li>
-       <li> [Čeština](https://cs.perlmaven.com/) </li>
-       <li> [Русский](https://ru.perlmaven.com/) </li>
-       <li> [עברית](https://he.perlmaven.com/) </li>
-       <li> [తెలుగు](https://te.perlmaven.com/) </li>
-       <li> [正體中文](https://tw.perlmaven.com/) </li>
-       <li> [简体中文](https://cn.perlmaven.com/) </li>
-       <li> [한국어](https://ko.perlmaven.com/) </li>
-       <li><hr></li>
-       <li>[about the translations](https://perlmaven.com/about#translations)</li>
-    </ul>
-</div>
+* [Bahasa Indonesia](https://id.perlmaven.com/)
+* [Deutsch](https://de.perlmaven.com/)
+* [English](https://perlmaven.com/) <span class="glyphicon glyphicon-ok"></span>
+* [Español](https://es.perlmaven.com/)
+* [Français](https://fr.perlmaven.com/)
+* [Italiano](https://it.perlmaven.com/)
+* [Polish](https://pl.perlmaven.com/)
+* [Português](https://br.perlmaven.com/)
+* [Română](https://ro.perlmaven.com/)
+* [Türkçe](https://tr.perlmaven.com/)
+* [Čeština](https://cs.perlmaven.com/)
+* [Русский](https://ru.perlmaven.com/)
+* [עברית](https://he.perlmaven.com/)
+* [తెలుగు](https://te.perlmaven.com/)
+* [正體中文](https://tw.perlmaven.com/)
+* [简体中文](https://cn.perlmaven.com/)
+* [한국어](https://ko.perlmaven.com/)
+*
+* [about the translations](https://perlmaven.com/about#translations)
