@@ -53,7 +53,7 @@ I know of two Perl-related Telegram groups:
 
 <h2>Discord</h2>
 
-<a href="https://discord.gg/Mnbj6th">Perl on Discord</a> 
+<a href="https://discord.gg/Mnbj6th">Perl on Discord</a>
 
 
 <h2>Mailing lists</h2>
