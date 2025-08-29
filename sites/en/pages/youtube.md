@@ -61,9 +61,6 @@ They are all in the same channel that has 1,710 subscribers.
 * [CMOS](https://www.youtube.com/playlist?list=PLw7UYp3N0eUbuQSr0Ci1gFOWq7czvtnf6) Interviews, some of them with Perl developers.
 * [Padre, the Perl IDE](https://www.youtube.com/playlist?list=PL7276AE613D15C5A4)
 * [SCO cloning project](https://www.youtube.com/playlist?list=PLw7UYp3N0eUaUt6GgztiJPXd6ixDQnbpu) (SCO = search.cpan.org)
-<!--
-    <li><a href=""></a></li>
--->
 
 Number of subscribers were checked on 2020.05.07.
 
