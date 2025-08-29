@@ -8,7 +8,7 @@ archive: false
 ---
 
 
-In the future, the <b>Perl Maven Cookbook</b> will have hundreds
+In the future, the **Perl Maven Cookbook** will have hundreds
 of examples with explanation on how to accomplish various tasks.
 
 In the future, it will probably cost around $40 to get an electronic

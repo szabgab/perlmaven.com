@@ -21,7 +21,7 @@ question: [How to sort a hash in Perl?](/how-to-sort-a-hash-in-perl)
 
 ## The problem
 
-Given the following reference to a hash of hashes, how can we sort them based on the value of <b>Position</b>?
+Given the following reference to a hash of hashes, how can we sort them based on the value of **Position**?
 
 ```
 my $data = {
@@ -77,7 +77,7 @@ Gaur 2
 
 `$a` and `$b` are the standard place-holders of `sort`. For
 each comparison they will hold two keys from the list.
-In order to compare the <b>Position</b> value of two elements we need to access them
+In order to compare the **Position** value of two elements we need to access them
 using `$a` and `$b` and compare the numerical(!) values using the
 spaceship-operator (`<=>`).
 
@@ -98,7 +98,7 @@ Gaur 2
 ```
 
 This would be nice, but unfortunately this result is not going to be the same always.
-After all the <b>Position</b> values of 'Gaur 1' and 'Gaur 3' are both the same number (10),
+After all the **Position** values of 'Gaur 1' and 'Gaur 3' are both the same number (10),
 so the space-ship operator cannot really decide between the two.
 
 ## Secondary sorting
@@ -106,8 +106,8 @@ so the space-ship operator cannot really decide between the two.
 If we would like to make sure the result of sort is more predictable, we will need to
 sort based on two (or even more) values.
 
-For example we can sort the hash first by the <b>Position</b> value, and among the entries with the
-same Position value we can sort by the value of the <b>Max</b> field.
+For example we can sort the hash first by the **Position** value, and among the entries with the
+same Position value we can sort by the value of the **Max** field.
 In order to do this we will use the following expression:
 
 ```perl
@@ -130,7 +130,7 @@ Gaur 3
 Gaur 2
 ```
 
-Of course if, we encounter two entries where both the <b>Position</b> and the <b>Max</b> fields have the exact same value,
+Of course if, we encounter two entries where both the **Position** and the **Max** fields have the exact same value,
 then even this sort won't provide the same results on every call.
 
 ## Comments

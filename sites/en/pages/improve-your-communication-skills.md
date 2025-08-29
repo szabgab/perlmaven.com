@@ -42,7 +42,7 @@ Create a [GitHub](http://github.com/) account, and start contributing to open so
 A very easy way is to send pull requests to existing [CPAN modules](https://metacpan.org/).
 
 You can join the [2015 CPAN Pull Request Challenge](/2015-cpan-pull-request-challenge)
-to get tasks, but instead of once a month I'd urge you to make a point to do something <b>every day</b>.
+to get tasks, but instead of once a month I'd urge you to make a point to do something **every day**.
 It does not need to be some big thing, but doing it constantly helps a lot.
 
 Contributing to existing open source projects or write your own.

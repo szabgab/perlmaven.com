@@ -11,7 +11,7 @@ archive: true
 ---
 
 
-When [learning about hashes](https://perlmaven.com/perl-hashes) we have seen how we could create (or more specifically <b>initialize</b>)
+When [learning about hashes](https://perlmaven.com/perl-hashes) we have seen how we could create (or more specifically **initialize**)
 a hash from a list of key-value pairs. What if we have this data in an array?
 
 
@@ -41,7 +41,7 @@ $VAR1 = {
 
 The first `$VAR1` shows the content of the array. The second `$VAR1` show the content of the
 hash. If we run the script several times, the part of the array will always look the same, but the content of the
-hash not. The order of the pairs <b>in the display!</b> will change. That's because inside the hash there is no
+hash not. The order of the pairs **in the display!** will change. That's because inside the hash there is no
 order and by default the `Dumper` function will display the key-value pairs in random order.
 The fruits will be always the keys and the colors always the values
 (I know the orange might be a bit confusing here, because both the fruit and its color are described by the same word.)

@@ -18,7 +18,7 @@ archive: true
 
 
 In this part of the [Perl Tutorial](/perl-tutorial)
-we are going to learn about <b>array references</b>.
+we are going to learn about **array references**.
 
 
 There are two main uses of array references. One is to make it easy
@@ -59,7 +59,7 @@ change the code to access the content of that array.
 ## Dereferencing an array
 
 If you have a reference to an array and if you would like to access
-the content of the array you need to <b>dereference</b> the <b>array reference</b>.
+the content of the array you need to **dereference** the **array reference**.
 It is done by placing the `@` symbol (the sigil representing arrays)
 in-front of the reference.
 

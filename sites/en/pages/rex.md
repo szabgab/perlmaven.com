@@ -31,7 +31,7 @@ rex -u root -H '104.248.57.39 104.248.53.65' -e 'say for run q(hostname)'
 ```
 
 
-I could also edit <b>vim ~/.ssh/config</b> and add the following:
+I could also edit **vim ~/.ssh/config** and add the following:
 
 ```
 Host d1

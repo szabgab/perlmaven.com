@@ -18,7 +18,7 @@ If we run this script:
 
 {% include file="examples/hash_with_or.pl" %}
 
-We get: <b>Useless use of hash element in void context</b>
+We get: **Useless use of hash element in void context**
 
 The same is true if we use HASH references:
 

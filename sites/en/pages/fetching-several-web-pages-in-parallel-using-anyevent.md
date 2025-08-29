@@ -31,7 +31,7 @@ How can you do that?
 
 ## HTTP requests using AnyEvent
 
-First let's see a solution that would download <b>all</b> the URLs
+First let's see a solution that would download **all** the URLs
 in parallel.
 
 ```perl
@@ -71,7 +71,7 @@ We are using the [AnyEvent](https://metacpan.org/pod/AnyEvent) module,
 and with that we use the `http_get` function
 of the [AnyEvent::HTTP](https://metacpan.org/pod/AnyEvent::HTTP) helper module.
 
-Basically AnyEvent provides its own loop, the so-called <b>event-loop</b> that runs when
+Basically AnyEvent provides its own loop, the so-called **event-loop** that runs when
 we call `$cv->recv`. `$cv` has an internal counter. It is increased by every
 `$cv->begin` call and decreased by every `$cv->end` call.
 
@@ -83,7 +83,7 @@ Before reaching the `$cv->recv` call, we had to prepare all the HTTP requests
 (3 in the above example). In each iteration of the for-loop, we call `$cv->begin` once.
 This increments a counter inside the `$cv` object, and then we call the
 `http_get` function of the `AnyEvent::HTTP` module.
-This call inserts and HTTP request into the internal queue of AnyEvent. It does <b>not</b>
+This call inserts and HTTP request into the internal queue of AnyEvent. It does **not**
 fetch the page yet, it just puts the request in the internal queue.
 
 The `http_get` function has two parameters. The first one, the `$url` is the address
@@ -117,7 +117,7 @@ The last statement of the function is calling `$cv->end`. This will decrement th
 
 As we called `begin` 3 times, the counter went up to 3. It will reach 0 after all 3 calls returned.
 
-At that point the `$cv-recv` will stop waiting and the script will print out <b>Finish</b> and exit.
+At that point the `$cv-recv` will stop waiting and the script will print out **Finish** and exit.
 
 If we run the script we'll see output like this:
 

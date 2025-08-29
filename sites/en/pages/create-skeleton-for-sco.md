@@ -81,7 +81,7 @@ from a clone of the Git repository. In any case a Changes file can be useful.
 Created the [lib/SCO.pm](https://github.com/szabgab/MetaCPAN-SCO/blob/4ca4244f6e51aa8ac0129ee72ad1000e79b105aa/lib/SCO.pm) file. As I wrote, at this point I was not really
 sure how I am going to call the project, but SCO seemed to be obvious. (Obviously bad, but I did not want to get stuck on the name. I can change it later.)
 
-The code in <b>lib/SCO.pm</b> is quite standard for a module. Let's see it here:
+The code in **lib/SCO.pm** is quite standard for a module. Let's see it here:
 
 ```perl
 package SCO;
@@ -130,12 +130,12 @@ where we can later add tests.
 
 [t/10-sco.t](https://github.com/szabgab/MetaCPAN-SCO/blob/4ca4244f6e51aa8ac0129ee72ad1000e79b105aa/t/10-sco.t)
 
-The standard place of tests is in the <b>t/</b> subdirectory of the project and the standard extension is <b>.t</b>.
+The standard place of tests is in the **t/** subdirectory of the project and the standard extension is **.t**.
 The name of the file does not really matter, but as the tests are normally run in alphabetical order, many people
 add a numerical prefix to the filename to set the default order of the tests. This file is planned to
 to have tests accessing the real search.cpan.org hence I called it `sco.t`.
 
-<b>t/10-sco.t</b>
+**t/10-sco.t**
 
 ```perl
 use strict;
@@ -163,7 +163,7 @@ It is part of [Minimal requirement to build a sane CPAN package](/minimal-requir
 You can see the full version of [Makefile.PL](https://github.com/szabgab/MetaCPAN-SCO/blob/4ca4244f6e51aa8ac0129ee72ad1000e79b105aa/Makefile.PL) as it
 was when I added it. I am working on separate article that will explain the parts of it, but let me point out a few items:
 
-`NAME   => 'SCO',` because I had no better idea than to call the project <b>SCO</b>. This sets the name of the tar.gz file that will be created
+`NAME   => 'SCO',` because I had no better idea than to call the project **SCO**. This sets the name of the tar.gz file that will be created
 if we create distribution out of this.
 
 `AUTHOR  => 'Gabor Szabo <szabgab@cpan.org>',` just sets the author in the META files that will be included in the distribution.

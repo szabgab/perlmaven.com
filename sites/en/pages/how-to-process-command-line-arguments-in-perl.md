@@ -71,7 +71,7 @@ if ($source_address) {
 After loading the module we declare a variable called `$source_address` where the value of the `--from` command line
 flag will be stored. We call `GetOptions` with key-value pairs. The keys (in this case one key) is the description
 of the flag. In this case the `from=s` declares that we are expecting a command line parameter called `--from`
-with a <b>string</b> after it. Because in Perl numbers can also be seen as strings, this basically means "pass me any value".
+with a **string** after it. Because in Perl numbers can also be seen as strings, this basically means "pass me any value".
 This declaration is then mapped to the variable we declared earlier. In case the syntax is unclear `=>` is a "fat arrow"
 you might be familiar from [hashes](/perl-hashes) and the back-slash `\` in-front of the variable indicates
 that we are passing a reference to the variable. You don't need to understand references in order understand this code. Just remember
@@ -175,7 +175,7 @@ The last example shows that values placed after such name are disregarded.
 
 ## Multiple flags
 
-Obviously, in most of the scripts you will need to handle more than one flag. In those cases we still call GetOptions <b>once</b> and provide it with
+Obviously, in most of the scripts you will need to handle more than one flag. In those cases we still call GetOptions **once** and provide it with
 all the parameters:
 
 Combining the above two cases together we can have a larger example:

@@ -10,7 +10,7 @@ author: szabgab
 ---
 
 
-<b>Riji</b> which means diary in Chinese is a simple blog tool using Markdown and Git.
+**Riji** which means diary in Chinese is a simple blog tool using Markdown and Git.
 
 
 ## Background
@@ -135,7 +135,7 @@ Let's edit the file. Let's change it to
 
 After editing the file you can reloaded the page in your browser.
 If you used the Shotgun as recommended above, you'll see the word
-<b>Sample</b> was replaced by <b>New example</b>.
+**Sample** was replaced by **New example**.
 
 You can now go ahead and type in more text using the
 [Markdown syntax](http://daringfireball.net/projects/markdown/).
@@ -194,8 +194,8 @@ It can be accessed as
 
 ## Configuration
 
-As you can see the title of the site is <b>Your Blog Title</b> and
-author is marked as <b>Your name</b>. These values come from the
+As you can see the title of the site is **Your Blog Title** and
+author is marked as **Your name**. These values come from the
 `riji.yml`
 
 ```
@@ -219,7 +219,7 @@ I had to stop the server using Ctr-C in the console where it runs,
 and started it again with the same options.
 
 After reloading the page in the browser it shows the new title and
-new author. The <b>site_url</b> is used in the atom feed only.
+new author. The **site_url** is used in the atom feed only.
 
 
 ## Add to git

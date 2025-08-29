@@ -30,7 +30,7 @@ The first array reference holds the values of the x-axis, the second array refer
 of the y-axis.
 
 Then we create a `GD::Graph::bars` object. Set some parameters and call the `plot` method that
-draws the image. At the end we call `$graph->gd->png` that exports the image in <b>PNG</b> format.
+draws the image. At the end we call `$graph->gd->png` that exports the image in **PNG** format.
 In this example we save the image in a file, but if this was a web environment we might just return the image.
 
 Running the script will generated the following graph:

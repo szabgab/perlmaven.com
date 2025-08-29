@@ -30,7 +30,7 @@ It will also open the door and easier transition to [Dancer](/dancer) or [Mojoli
 
 ## Our CGI "application"
 
-We have a simple Perl script which is a [CGI](/cgi) application. It is called app.pl and it is located in a directory called <b>cgi-bin</b>
+We have a simple Perl script which is a [CGI](/cgi) application. It is called app.pl and it is located in a directory called **cgi-bin**
 
 We probably use it via [HTTP Apache 2 server](/perl-cgi-script-with-apache2). We could even [test the CGI script](/testing-perl-cgi).
 

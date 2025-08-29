@@ -47,7 +47,7 @@ When we finish the loop we have all the numbers in the `$sum` variable that we c
 
 ## Using List::Util
 
-We have not learned it yet, and it is <b>not in the video</b>, but let me add two more solutions. In the first
+We have not learned it yet, and it is **not in the video**, but let me add two more solutions. In the first
 one we use the `sum` function of the standard [List::Util](https://metacpan.org/pod/List::Util) module.
 
 {% include file="examples/files/sum.pl" %}

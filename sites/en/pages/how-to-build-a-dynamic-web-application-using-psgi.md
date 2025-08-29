@@ -93,7 +93,7 @@ the data without any order. Setting the `$Data::Dumper::Sortkeys`
 variable to 1 changes that behavior and the hash keys are sorted. That makes
 it a lot easier to read.
 
-We also set the <b>Content-Type</b> to be <b>text/plain</b>. 
+We also set the **Content-Type** to be **text/plain**. 
 HTML normally disregards spaces so with this we are telling the visiting browser
 to interpret our data as plain text. That way it will display the data verbatim.
 Keeping the spaces and the newlines.

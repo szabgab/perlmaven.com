@@ -12,14 +12,14 @@ show_related: true
 ---
 
 
-The <b>defined</b> function in Perl checks if the given value is anything but [undef](/undef)
+The **defined** function in Perl checks if the given value is anything but [undef](/undef)
 
 
 {% include file="examples/defined.pl" %}
 
-<b>defined</b> means it is NOT [undef](/undef)
+**defined** means it is NOT [undef](/undef)
 
-<b>not defined</b> means it is [undef](/undef)
+**not defined** means it is [undef](/undef)
 
 Being "[false](/false)" or "[true](/true)" have different meaning than being "defined" or "not defined".
 

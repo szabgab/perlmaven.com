@@ -24,7 +24,7 @@ not be called by an external user of the module.
 
 <slidecast file="advanced-perl/libraries-and-modules/import" youtube="u42upYai4kg" />
 
-Let's see the <b>cacla.pl</b> script:
+Let's see the **cacla.pl** script:
 
 ```perl
 #!/usr/bin/perl
@@ -41,7 +41,7 @@ we could use the `add` function imported from that module.
 
 How could the author of the module arrange for that?
 
-Let's see the content of <b>A/Calc.pm</b>:
+Let's see the content of **A/Calc.pm**:
 
 ```perl
 package A::Calc;
@@ -100,6 +100,6 @@ As you can see the `A::Calc` module also has a function called `validate_paramet
 but it is not listed in the `@EXPORT` array and thus it won't be imported into
 the namespace of the script.
 
-So this is how the author of a module can <b>export</b> certain function and how the user
-of such module can <b>import</b> those function into another name-space.
+So this is how the author of a module can **export** certain function and how the user
+of such module can **import** those function into another name-space.
 

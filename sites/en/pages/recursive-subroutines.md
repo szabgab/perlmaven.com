@@ -30,7 +30,7 @@ go through a directory tree</a>, then you should probably
 read the article about
 [Path::Iterator::Rule](/finding-files-in-a-directory-using-perl).
 What you read here is a more manual approach to the problem, that helps
-us learn about <b>recursion</b>.
+us learn about **recursion**.
 
 The problem:
 
@@ -106,7 +106,7 @@ root/a/foo.txt
 What we need now is to combine the two. What we need is that when the script recognizes
 that it found a directory (`root/a/foo` in our case), then it should run the same
 function passing to it the path to `root/a/foo`. That is we need out function
-to <b>recursively</b> call itself.
+to **recursively** call itself.
 
 We would like to see an output like this:
 
@@ -195,7 +195,7 @@ a directory in which there are no more directories. Then it won't call itself ag
 and slowly it will return to the top-most level.
 
 The condition when the recursive function is not called again, in our case the directories
-without subdirectories, is usually called the <b>halting condition</b> of the
+without subdirectories, is usually called the **halting condition** of the
 recursion. A function without such halting condition, will recurse forever.
 (Well, not exactly forever as most system would run out of memory before that.
 In addition Perl will give a warning `Deep recursion on subroutine` when the

@@ -27,7 +27,7 @@ Using [MetaCPAN::API](https://metacpan.org/pod/MetaCPAN::API).
 
 On the command line you have to pass the number of distributions you'd like to fetch,
 and optionally you can also provide a PAUSE ID. (For example, when I check my own distributions
-I run it with <b>perl metacpan_meta.pl 100 SZABGAB</b>.
+I run it with **perl metacpan_meta.pl 100 SZABGAB**.
 
 ```perl
 #!/usr/bin/perl
@@ -133,11 +133,11 @@ my $r = $mcpan->fetch( 'release/_search',
 );
 ```
 
-We are calling the `fetch` method and we are searching for <b>release</b>-es (aka. distributions).
+We are calling the `fetch` method and we are searching for **release**-es (aka. distributions).
 It takes a set of key-value pairs as parameters.
 
-The first one we see is <b>q</b>. This filters the results based on various conditions.
-We have the conditions in a variable called <b>$q</b>. By default we fetch all the distributions where
+The first one we see is **q**. This filters the results based on various conditions.
+We have the conditions in a variable called **$q**. By default we fetch all the distributions where
 the status is "latest" using the `status:latest` string.
 For this report we don't want to see earlier releases of the same distribution.
 
@@ -146,10 +146,10 @@ Then, if the user provided a PAUSE ID - the ID used to upload a distribution to 
 we include that in the query. If the PAUSE ID is SZABGAB, you will have a query
 `status:latest AND author:SZABGAB`.
 
-The second field is optional. We instruct Meta CPAN to provide the results sorted based on the <b>date</b> field in a
+The second field is optional. We instruct Meta CPAN to provide the results sorted based on the **date** field in a
 descending order. Most recent first.
 
-Another optional pair of parameters: <b>fields</b> can limit which fields we are actually interested in. If we leave out
+Another optional pair of parameters: **fields** can limit which fields we are actually interested in. If we leave out
 the fields, Meta CPAN will return a lot of details for each distribution. IF we are not interested in those details,
 then this is just a waste of resources. So we limit the fields we would like to see.
 

@@ -17,7 +17,7 @@ In pattern matching using regular expressions, or regexes, every character match
 such as the dot `.` and a [character class](/regex-character-classes), matches exactly one character.
 (Well, except of the anchors, but we'll talk about them later.)
 
-In order to provide more flexibility there are a number of special characters called <b>quantifiers</b>,
+In order to provide more flexibility there are a number of special characters called **quantifiers**,
 that will change the number of times each character can match.
 
 
@@ -77,7 +77,7 @@ Basically any string that has at least two dashes in it with anything between th
 The third common quantifier is the plus character `+` which means 1 or more occurrence.
 
 The regex `/-.+-/` then would match the same things as `/-.*-/` matched above,
-but it will <b>not</b> match the `--` and the 
+but it will **not** match the `--` and the 
 `prefix -- postfix` strings.
 
 

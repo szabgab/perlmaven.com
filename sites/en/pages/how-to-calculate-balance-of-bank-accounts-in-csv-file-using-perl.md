@@ -12,7 +12,7 @@ author: szabgab
 One of the readers of the [How to read a CSV file using Perl?](/how-to-read-a-csv-file-using-perl) article
 has sent me a CSV file and a question:
 
-<b>How to Calculate and display total balance in each account using hash in perl. Without using parse function?</b>
+**How to Calculate and display total balance in each account using hash in perl. Without using parse function?**
 
 Let's see how can we handle such a request?
 
@@ -66,9 +66,9 @@ close(FILEHANDLE);
 ```
 
 Besides some obvious beginner issues I started to understand, that probably he wants to create a separate report for
-each account - the third column - <b>AcNo</b> is probably the account number.
+each account - the third column - **AcNo** is probably the account number.
 
-The amount is in the 5th column under the title <b>Amount</b>.
+The amount is in the 5th column under the title **Amount**.
 
 As I can see the 4th column indicates if the type of the transaction. A little search indicates that Dr would be debit
 and Cr would be credit, though in the code that seems to be the opposite.
@@ -76,7 +76,7 @@ and Cr would be credit, though in the code that seems to be the opposite.
 The first sentence in the question seems to indicate that he already understand he needs to use hashes,
 instead of the scalar `$sum` variables, but it is yet unclear to him how.
 
-The second sentence, <b>Without using parse function?</b> seems to indicate to me that for some reason the reader
+The second sentence, **Without using parse function?** seems to indicate to me that for some reason the reader
 cannot use the Text::CSV module that has the parse method. That's unfortunate, as that is the right tool in the
 general case of parsing and reading CSV files, but in many corporate settings installing a module from CPAN is
 difficult. Especially to someone who is new to Perl.
@@ -92,9 +92,9 @@ and how can we try to implement what he needed?
 ## Running the code
 
 Before trying to improve the code, let's see if it runs, and what does it do? The script is saved
-as <b>banktran.pl</b> and the csv file as <b>banktran.csv</b>
+as **banktran.pl** and the csv file as **banktran.csv**
 
-<b>perl banktran.pl</b>
+**perl banktran.pl**
 
 ```
 Content-type:text/html
@@ -128,7 +128,7 @@ Execution of banktran.pl aborted due to compilation errors.
 
 [Bareword not allowed while "strict subs" in use](/barewords-in-perl)
 is one of the common warnings described in [Perl Maven tutorial](/perl-tutorial).
-We need to put single-quotes `'` around the string <b>Dr</b>
+We need to put single-quotes `'` around the string **Dr**
 
 Running the script again we get the following:
 

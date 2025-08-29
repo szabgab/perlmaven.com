@@ -137,7 +137,7 @@ say defined $index ? $index : -1;
 ```
 
 The built-in [grep](/filtering-values-with-perl-grep) function can filter the values of list or array based on some condition.
-As we are looking for the <b>index</b> of the specific value we need to filter the potential indexes of all the elements.
+As we are looking for the **index** of the specific value we need to filter the potential indexes of all the elements.
 The `0 .. @planet-1` expression generates the list of whole numbers between 0 and one less than the number of elements in the @planet array.
 As the indexing of an array starts by 0, this will be the largest index available in the array.
 

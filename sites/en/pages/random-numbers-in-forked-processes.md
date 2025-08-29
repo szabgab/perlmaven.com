@@ -170,7 +170,7 @@ Child  13051 generated 0.877628553033905
 
 Let me just repeat here what the documentation of `rand` also says:
 
-<b>"rand()" is not cryptographically secure.  You should not rely on it in security-sensitive situations.</b>
+**"rand()" is not cryptographically secure.  You should not rely on it in security-sensitive situations.**
 
 ## Comments
 

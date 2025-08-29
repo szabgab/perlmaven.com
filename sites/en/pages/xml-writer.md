@@ -16,8 +16,8 @@ archive: true
 In this article you'll see a number of examples with explanation, but let's ask why would we want to use a module
 when we could just concatenate strings?
 
-The answer is that XML::Writer provides <b>automatic character escaping</b> where needed and a certain level of
-<b>validity checking</b> to make sure the generated XML is at least <b>well formed</b>.
+The answer is that XML::Writer provides **automatic character escaping** where needed and a certain level of
+**validity checking** to make sure the generated XML is at least **well formed**.
 
 
 ## Simple human-readable XML creation

@@ -11,13 +11,13 @@ show_related: true
 ---
 
 
-There is no special [boolean values](/boolean-values-in-perl) in Perl that would mean <b>false</b> or <b>true</b>.
+There is no special [boolean values](/boolean-values-in-perl) in Perl that would mean **false** or **true**.
 There are certain values that evaluate to false or [true](/true) in boolean context.
 
 
 The values that evaluate to false in boolean context in Perl are [undef](/undef), the number 0 (also when written as 0.00),
 the empty string, the empty array, the empty hash. In general anything that is considered to be empty.
-Everything else evaluates to <b>true</b>.
+Everything else evaluates to **true**.
 
 ```
 undef
@@ -55,7 +55,7 @@ false is true
 
 ## Boolean context
 
-Boolean context means an <b>if statement</b>, and <b>unless</b> statement. The conditional of a <b>while</b> loop,
+Boolean context means an **if statement**, and **unless** statement. The conditional of a <b>while</b> loop,
 a ternary operator, etc.
 
 

@@ -190,7 +190,7 @@ The `-w` in this hash-bang turns on warnings. This is quite similar to what
 You won't see this in most of the modern Perl scripts.
 
 Another common flag that you might see on the hash-bang lines are `-t` and `-T`. They
-turn on the so-called <b>taint-mode</b> that will help you write more secure code.
+turn on the so-called **taint-mode** that will help you write more secure code.
 
 ## Comments
 

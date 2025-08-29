@@ -23,7 +23,7 @@ No other file is included and no file is missing.
 Some people maintain the MAINFEST file manually and keep in it version control.
 
 Others keep a file called MANIFEST.SKIP that basically contains regular expressions describing
-which files should be <b>excluded</b> from the distribution zip file.
+which files should be **excluded** from the distribution zip file.
 
 Then just before creating the distribution the author runs a command that will go over all the
 directories in the directory tree of the project listing all the files exlucing the onese

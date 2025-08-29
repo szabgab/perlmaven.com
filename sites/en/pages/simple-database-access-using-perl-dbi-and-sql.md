@@ -17,13 +17,13 @@ author: szabgab
 While in most fields Perl adheres to the concept of
 [TMTOWTDI](http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it),
 in accessing relational databases Perl has a de-facto standard library
-called DBI or <b>Database independent interface for Perl</b>.
+called DBI or **Database independent interface for Perl**.
 
 
 ## Architecture
 
 The Perl scripts use DBI, which in turn uses the appropriate
-<b>Database Driver</b> (e.g. [DBD::Oracle](https://metacpan.org/pod/DBD::Oracle)
+**Database Driver** (e.g. [DBD::Oracle](https://metacpan.org/pod/DBD::Oracle)
 for [Oracle](http://www.oracle.com/),
 [DBD::Pg](https://metacpan.org/pod/DBD::Pg) for [PostgreSQL](http://www.postgresql.org/)
 and [DBD::SQLite](https://metacpan.org/pod/DBD::SQLite) to access [SQLite](http://sqlite.org/)).
@@ -78,9 +78,9 @@ my $dbh = DBI->connect($dsn, $user, $password, {
 $dbh->disconnect;
 ```
 
-We load DBI but we do <b>not</b> explicitly load the database driver. That will be done by DBI.
+We load DBI but we do **not** explicitly load the database driver. That will be done by DBI.
 
-The <b>DSN (Data Source Name)</b> (in the $dsn variable) is very straight forward.
+The **DSN (Data Source Name)** (in the $dsn variable) is very straight forward.
 It contains the type of the database. That will be the clue to DBI which DBD to load.
 In case of SQLite, the only thing we really need is the path to the database file.
 
@@ -90,10 +90,10 @@ relevant at all for SQLite.
 The last parameter of the connect call is a reference to a hash containing
 some attributes I like to set.
 
-The DBI->connect call returns a <b>database handle object</b> that usually we store
+The DBI->connect call returns a **database handle object** that usually we store
 in a variable called `$dbh`.
 
-The call to <b>disconnect</b> from the database is optional as it
+The call to **disconnect** from the database is optional as it
 will automatically be called when the variable `$dbh` goes out
 of scope. Having it might be a clear indication for
 the next programmer dealing with this code, that you are done with the database.
@@ -139,7 +139,7 @@ $dbh->do('INSERT INTO people (fname, lname, email) VALUES (?, ?, ?)',
 ```
 
 To insert a row we call the `$dbh->do` method again, but instead of passing
-the actual data, we put question-marks `?` as <b>place-holders</b>.
+the actual data, we put question-marks `?` as **place-holders**.
 
 The SQL statement is followed by the word `undef`.
 That's actually the place of a hash-reference providing
@@ -188,14 +188,14 @@ From these, the `prepare` statement can be shared by - assuming the queries
 only differ in the data we pass to them. We create an SQL statement using
 question marks (`?`) as place-holders instead of actual values.
 
-This call returns a <b>statement handle object</b> that we usually save in a
+This call returns a **statement handle object** that we usually save in a
 variable called `$sth`.
 
-Then we call the `execute` method of the <b>statement handle</b> passing to
+Then we call the `execute` method of the **statement handle** passing to
 it values that should be placed instead of the place-holders.
 
 The third step is the really interesting one.
-In a <b>while loop</b> we fetch the results, row-by row. For this we can use several methods:
+In a **while loop** we fetch the results, row-by row. For this we can use several methods:
 
 The `fetchrow_array` method will return the values of the next row in the result set
 as a list, that we can assign to an array. The order of the elements is as the order

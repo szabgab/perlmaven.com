@@ -17,7 +17,7 @@ package that has a link to its [GitHub repository](https://github.com/neilb/PAUS
 
 
 I cloned the repository and tried to run the tests locally, but got stuck installing the dependencies. [MooX-Role-CachedURL](https://metacpan.org/dist/MooX-Role-CachedURL)
-would not intsall. I looked at MetaCPAN and saw that The CPAN Testers report <b> Testers (1546 / 304 / 0) </b> That is 1546 successful reports but 304 failed reports.
+would not intsall. I looked at MetaCPAN and saw that The CPAN Testers report ** Testers (1546 / 304 / 0) ** That is 1546 successful reports but 304 failed reports.
 Also that the package was last released on Nov 04, 2015. Almost 7 years ago.
 
 I said, let's see what can we do there.

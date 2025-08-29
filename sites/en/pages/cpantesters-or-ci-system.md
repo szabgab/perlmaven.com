@@ -31,7 +31,7 @@ Surprisingly, the number of Perl versions and the number of different platforms 
 So fewer people set up more environments. Getting reports from more environments is certainly nice, but having fewer volunteers just makes the whole thing more risky.
 
 
-<b>But that is not even my main point.</b>
+**But that is not even my main point.**
 
 
 ## After release, can take weeks
@@ -56,7 +56,7 @@ notice this will be people who will try to install that downstream module and fa
 
 That's even worse as now the person really does not care about your module. They only care about the downstream, but it is "broken".
 
-If you have your own CI it can be configured to test some of the downstream modules with your code <b>before</b> you release it to CPAN.
+If you have your own CI it can be configured to test some of the downstream modules with your code **before** you release it to CPAN.
 
 
 ## Changes in upstream

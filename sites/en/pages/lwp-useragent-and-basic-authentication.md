@@ -29,7 +29,7 @@ If you click on [Login](https://pause.perl.org/pause/authenquery), you'll see a
 
 <img src="/img/pause_basic_authentication.png" alt="PAUSE Basic Authentication pop-up">
 
-If you cancel it, you'll see and <b>Authorization Required</b> error. If you type in incorrect credentials
+If you cancel it, you'll see and **Authorization Required** error. If you type in incorrect credentials
 it will show you the pop-up again and again till you get tired of it.
 
 

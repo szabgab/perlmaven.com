@@ -16,7 +16,7 @@ author: szabgab
 ---
 
 
-The internal <b>grep</b> function of Perl is a <b>filter</b>. You give it a list of values
+The internal **grep** function of Perl is a **filter**. You give it a list of values
 and a condition, and it returns a sublist of values that yield true for the given
 condition.
 It is a generalization of the grep or egrep commands we know from UNIX and Linux,
@@ -117,9 +117,9 @@ Just to make the explanation round:
 I mentioned that the build in `grep` function of Perl is a generalization of the UNIX
 grep command.
 
-The <b>UNIX grep</b> filters the lines of a file based on a regular expression.
+The **UNIX grep** filters the lines of a file based on a regular expression.
 
-<b>Perl's grep</b> can filter any list of value based on any condition.
+**Perl's grep** can filter any list of value based on any condition.
 
 This Perl code implements a basic version of the UNIX grep:
 

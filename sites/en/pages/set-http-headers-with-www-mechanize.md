@@ -41,7 +41,7 @@ If you visit [https://httpbin.org/headers](https://httpbin.org/headers) with you
 }
 ```
 
-From this we can see that my browser identified itself as <b>Mozilla/5.0</b>
+From this we can see that my browser identified itself as **Mozilla/5.0**
 
 ## Headers by curl
 
@@ -83,7 +83,7 @@ The result includes 3 sections divided by some dashes.
 
 First we printed the HTTP status code the server set. It was 200 OK.
 
-The second part is the HTTP header the server set. This was shown by using the <b>dump_headers</b> method.
+The second part is the HTTP header the server set. This was shown by using the **dump_headers** method.
 
 Finally we have the content of the page that is set to the header our client sent. This is what we saw earlier.
 In this output you can see that the Perl module identified as "WWW-Mechanize/2.06".
@@ -123,7 +123,7 @@ Client-SSL-Version: TLSv1_2
 
 Finally we got to the code that changes the header of the request.
 
-It is basically the same code as we had earlier, but now we called the <b>add_header</b> method twice
+It is basically the same code as we had earlier, but now we called the **add_header** method twice
 with key-value pairs.
 
 {% include file="examples/set_headers_mechanize.pl" %}

@@ -40,7 +40,7 @@ So when we open a text-file for reading and we call the read-line operator in sc
 Perl will know what to do. Perl will adapt itself to the environment and will know what is the new-line symbol
 in the current operating system.
 
-In order to do this, Perl maintains a variable called the <b>Input Record Separator</b>.
+In order to do this, Perl maintains a variable called the **Input Record Separator**.
 In native Perl this is the `$/` variable, but if you use the
 [English](https://metacpan.org/pod/English) module
 you can use the name `$INPUT_RECORD_SEPARATOR` or `$RS` as well.
@@ -56,10 +56,10 @@ os-specific new-line from the parameter of `chomp`. That's what we do in most of
 
 ## Changing the Input record separator
 
-We could actually change the value of `$/`. For example, by assigning the letter <b>Q</b> like this: `$/ = 'Q';`.
+We could actually change the value of `$/`. For example, by assigning the letter **Q** like this: `$/ = 'Q';`.
 Then every call to the read-line operator `$row = <$fh>` will read in all the characters up-to and including the first `Q`.
 
-In that case, calling `chomp` would remove the <b>Q</b> character from the end of the string.
+In that case, calling `chomp` would remove the **Q** character from the end of the string.
 
 We could also assign longer strings to `$/` and then that would be the input record separator.
 
@@ -112,15 +112,15 @@ Or maybe Java?
 ==========
 ```
 
-We can observe how each call reads up-to and including the word <b>perl</b> and then how `chomp`
-removes the string <b>perl</b>.
+We can observe how each call reads up-to and including the word **perl** and then how `chomp`
+removes the string **perl**.
 
 ## chomp removes only one copy of $/
 
-In the following example we have multiple copies of the word <b>perl</b> at the end of the string and we set
+In the following example we have multiple copies of the word **perl** at the end of the string and we set
 the Input Record Separator to be `$/ = 'perl';`.
-The first call to `chomp` removed one occurrence of <b>perl</b>. The second call to `chomp` removed
-the other occurrence. Calling `chomp` again, when there were no more copies of <b>perl</b> at the end of the string,
+The first call to `chomp` removed one occurrence of **perl**. The second call to `chomp` removed
+the other occurrence. Calling `chomp` again, when there were no more copies of **perl** at the end of the string,
 did not do any harm.
 
 ```perl
@@ -149,7 +149,7 @@ If we put the read-line operator in [list context](/scalar-and-list-context-in-p
 for example by assigning it to an array, it will read all the "lines" into that array.
 Each line will become an element in the array. Of course we have to put the word "lines" in quotes,
 as we already know that separating the content of the file at the new-lines is "only" the default behavior.
-By changing the <b>Input Record Separator</b> we can split the file at any substring.
+By changing the **Input Record Separator** we can split the file at any substring.
 
 ```perl
 use strict;

@@ -29,7 +29,7 @@ to ask perl how does it understand this code-snippet:
 print +(stat $filename)[7];
 ```
 
-We save that content in the <b>plus.pl</b> file and run `perl -MO=Deparse plus.pl`. The result is:
+We save that content in the **plus.pl** file and run `perl -MO=Deparse plus.pl`. The result is:
 
 ```perl
 print((stat $filename)[7]);
@@ -48,7 +48,7 @@ These are the parens wrapping the parameters of the `print` function.
 ## How does it work with say?
 
 Now that we saw this with the `print` function, lets make the seemingly obvious change and replace `print` by `say` in
-the <b>plus.pl</b> file:
+the **plus.pl** file:
 
 ```perl
 say +(stat $filename)[7];
@@ -60,7 +60,7 @@ run `perl -MO=Deparse plus.pl`, and the result is:
 'say' + (stat $filename)[7];
 ```
 
-<b>What???</b>
+**What???**
 
 That's surprising, and for a few seconds you don't really know what does that mean, but then you remember that `say`
 is not part of perl by default. You need to tell somehow that you want the `say` function to be part of your language.

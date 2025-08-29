@@ -111,10 +111,10 @@ convert the clear-text password to an encoded version, but makes it impossible,
 or at least unreasonably difficult to convert the encoded version back to clear-text,
 or to find another string that converts to the same encrypted version.
 
-In the above sentence, the <b>impossible</b> refers to the assumption that
+In the above sentence, the **impossible** refers to the assumption that
 mathematicians so far could not find a fault in the algorithm.
 
-The <b>unreasonably difficult</b> means that a potential attacker
+The **unreasonably difficult** means that a potential attacker
 would need many years and many very powerful computer to compute all encrypted
 version of all the possible clear-text strings. So unless the attackers are lucky
 they won't find the real password for some time.

@@ -83,7 +83,7 @@ less colors.txt
 
 After posting this article I received a comment from Thomas Köhler telling me that `less -r`
 would show the color. That helped me overcome my lazyness and checked the manual page of `less`.
-I found that the `-f` flag would suppress the <b>may be a binary file.  See it anyway?</b> warning.
+I found that the `-f` flag would suppress the **may be a binary file.  See it anyway?** warning.
 So you can use
 
 ```

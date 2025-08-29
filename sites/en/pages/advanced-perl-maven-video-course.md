@@ -11,9 +11,9 @@ archive: false
 ---
 
 
-This <b>Advanced Perl training course</b>
+This **Advanced Perl training course**
 will allow you to create modules, classes. To write
-Object Oriented code in the modern way, using <b>Moose</b>,
+Object Oriented code in the modern way, using **Moose**,
 and by using only core Perl, manually blessing references.
 
 It is based on many years of experience teaching Perl,
@@ -21,7 +21,7 @@ blended with the modern features of Perl and CPAN.
 
 Taking this course will help you maintain existing code and
 it will teach you how to use modern Perl tools to write new,
-<b>nice and maintainable Perl code</b>.
+**nice and maintainable Perl code**.
 
 ## Table of Content
 

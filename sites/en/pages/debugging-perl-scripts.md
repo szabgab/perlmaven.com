@@ -52,7 +52,7 @@ During the execution of the program it can manifest in the appearance of a warni
 ## How to debug?
 
 The most straight forward way to debug a program is to run it, and at every step to check if all the variables
-hold the expected values. You can do that either <b>using a debugger</b> or you can embed <b>print statements</b> in the
+hold the expected values. You can do that either **using a debugger** or you can embed **print statements** in the
 program and examine the output later.
 
 Perl comes with a very powerful command-line debugger. While I recommend learning it,
@@ -86,7 +86,7 @@ to see the exact content of the variable:
 {% include file="examples/debugging_print.txt" %}
 
 If the above is printed you can quickly notice that there is a trailing newline at the end of the $file_name
-variable. Probably you forgot to call <b>chomp</b>.
+variable. Probably you forgot to call **chomp**.
 
 ## Complex data structures
 

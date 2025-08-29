@@ -27,7 +27,7 @@ Let's see a real-life example:
 {% include file="examples/my_money_my_salary.pl" %}
 
 This code will check if I have a lot of money (some currency) or if I earn a nice monthly sum. If either of this is true,
-it will print that <b>I can live well</b>.
+it will print that **I can live well**.
 
 That expression is nice, and I check this every time there is a "salary review" at my employer.
 
@@ -50,7 +50,7 @@ The one day I lose all the money I had in the bank account, and I have to go bac
 
 But no worry, after all it must have grown a lot since the last time I relied on it.
 
-<b>Except that it didn't.</b>
+**Except that it didn't.**
 
 My salary stayed the same as it was the day I won the lottery.
 
@@ -66,7 +66,7 @@ Once I won on the lottery, the first part of the boolean expression `$my_money &
 At that point perl noticed that it does not matter what the second expression will return, the whole expression
 will always be true. That's because both `true or false` and `true or true` will return `true`.
 If the second expression won't make a difference in the end-result then perl, as a matter of optimization, won't
-even bother to execute it. This is what <b>short-circuit</b> means.
+even bother to execute it. This is what **short-circuit** means.
 Unfortunately for us, this also means that the auto-increment won't be executed either and as long as I have "a lot of money"
 I won't get a salary raise.
 
@@ -92,7 +92,7 @@ This is a boolean expression with the `or` operator, but without an `if` stateme
 that checks the result. That's totally acceptable in Perl.
 
 In this case too perl will first execute the left side of the `or` operator and the it will execute the right side
-only if the left side failed. So if the `open` call was successful, then the `die` will <b>not</b> be called
+only if the left side failed. So if the `open` call was successful, then the `die` will **not** be called
 and the statement on the next line gets executed.
 
 If, on the other hand `open` fails and returns false, then the boolean expressing needs to "check" the expression

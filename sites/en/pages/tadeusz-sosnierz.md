@@ -14,7 +14,7 @@ published: true
 
 Interview with Tadeusz Sośnierz (aka. tadzik), the Perl developer who wrote the Pod Parser, and the best module installer for Perl 6.
 
-He also gave a very surprising answer to the question: <b>Why would you want to attend the Polish Perl Workshop?</b>.
+He also gave a very surprising answer to the question: **Why would you want to attend the Polish Perl Workshop?**.
 
 (19:24 min)
 

@@ -108,7 +108,7 @@ James Alan Woodward <jwoodnh@umich.edu>
 ```
 
 First thing is to create a [Net::LDAP](https://metacpan.org/pod/Net::LDAP) object providing the name of the LDAP server. Then we call `bind`. That is where we connect to the LDAP server.
-In this example we used an <b>anonymous</b> connection. This usually only allows read access.
+In this example we used an **anonymous** connection. This usually only allows read access.
 
 The `search` method returns a [Net::LDAP::Search](https://metacpan.org/pod/Net::LDAP::Search) object. (This is what gets assigned to the `$result` variable.
 

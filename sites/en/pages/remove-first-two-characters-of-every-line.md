@@ -45,9 +45,9 @@ perl -p -i -e 's/^[^#].//' *.yaml
 * The perl program 's/^[^#].//' will be execute on every line read from the files.
 * The 's///' is regex substitution. It works on the current line and changes the current line. So the lines that are saved back to the files are the modified lines.
 * Between the 1st and 2nd slash is the regex.
-* The first <b>^</b> means the match must start at the beginning of the line.
-* The <b>[^#]</b> means that there must be a character that is not <b>#</b>. This will match any character on the first place of the file except #.
-* The <b>.</b> means match any character</b>.
+* The first **^** means the match must start at the beginning of the line.
+* The **[^#]** means that there must be a character that is not **#**. This will match any character on the first place of the file except #.
+* The **.** means match any character**.
 * The string that is between the 2nd and 3rd slash is the replacement. It is an empty string so if there is a match it will be replaced by the empty string.
 
 That's the whole thing.
@@ -61,7 +61,7 @@ perl -p -i -e 's/^[- ] //' *.yaml
 ```
 
 
-Here the regex is <b>s/^[- ] //</b> which means the first character must be either a dash or a space and the second character must be a space and those two are replaced.
+Here the regex is **s/^[- ] //** which means the first character must be either a dash or a space and the second character must be a space and those two are replaced.
 So if there is anything else as the first two characters the line will not be changed. This is safer as it is more specific as what we would like to match for replacement.
 
 ## Results

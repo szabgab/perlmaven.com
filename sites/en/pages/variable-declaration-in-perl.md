@@ -94,7 +94,7 @@ The variables `$a` and `$b` are special variables used in the `sort` function of
 and, for historical reasons, are exempt from the requirement to declare them.
 I am not saying having such exceptions is a good thing, but it probably cannot be changed without breaking
 all the code written in the past 20+ years.
-So I'd strongly recommend <b>never using $a and $b</b> in any code except in connection to `sort`.
+So I'd strongly recommend **never using $a and $b** in any code except in connection to `sort`.
 
 Not even in examples!
 
@@ -116,7 +116,7 @@ Foo
 
 No warning, no error.
 
-We used the <b>explicit package name</b> in the last example. That's, by-the-way where the error
+We used the **explicit package name** in the last example. That's, by-the-way where the error
 message ([global symbol requires explicit package name](/global-symbol-requires-explicit-package-name))
 came from, but in the <i>real world</i> you rarely need that form.
 You are way better off always declaring your variables using `my`, and not

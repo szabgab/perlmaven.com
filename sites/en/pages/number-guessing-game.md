@@ -19,8 +19,8 @@ This was the first game I wrote when I was in high-school, even before Perl 1.0 
 
 
 In order to write this game we need to learn about two simple, and unrelated topics:
-<b>How to generate random numbers in Perl</b> and
-<b>How to get the integer part of a number</b>.
+**How to generate random numbers in Perl** and
+**How to get the integer part of a number**.
 
 ## Integer part of a fractional number
 
@@ -81,7 +81,7 @@ a whole number between 1 and 200. The user has to guess the number.
 After the user types in his guess the computer tells if this was
 bigger or smaller than the number it generated.
 
-At this point there is <b>no</b> need to allow the user to guess several times.
+At this point there is **no** need to allow the user to guess several times.
 We will get there in a later episode. Of course I won't stop
 you from reading about the [while loop](/while-loop)
 in Perl, you can read that and let the user guess several times.

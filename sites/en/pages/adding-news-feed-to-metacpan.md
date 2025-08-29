@@ -31,7 +31,7 @@ launch the server using [plackup](http://plackperl.org/), browse to it at http:/
 
 <img src="/img/metacpan_menu_bar.png" alt="MetaCPAN menu bar" />
 
-The first thing I need to do is to add the <b>News</b> menu option.
+The first thing I need to do is to add the **News** menu option.
 In order to find the place I need to add this I had to search for something that is already in the menu.
 So I searched for the word "Feedback in the source-tree using [ack](http://beyondgrep.com/).
 It was found in the file [root/wrapper.html](https://github.com/CPAN-API/metacpan-web/blob/master/root/wrapper.html)
@@ -83,7 +83,7 @@ Some text
 (This looks like some [Template Toolkit](http://template-toolkit.org/) that has some [Markdown](https://daringfireball.net/projects/markdown/) formatted
 text in it.
 
-After saving the file visiting http://localhost:5000/news still showed <b>Not Found</b>
+After saving the file visiting http://localhost:5000/news still showed **Not Found**
 
 <img src="/img/metacpan_news_not_found.png" alt="MetaCPAN news not found" />
 

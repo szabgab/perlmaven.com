@@ -38,7 +38,7 @@ value they provide.
 
 So here it is.
 
-In any piece of code, you should <b>always use strict and warnings</b>.
+In any piece of code, you should **always use strict and warnings**.
 
 Turn them off only in very restricted areas and only when you really,
 really need the extra power.

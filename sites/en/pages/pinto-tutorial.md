@@ -14,7 +14,7 @@ This is a guest post by [Jeffrey Ryan Thalhammer](http://twitter.com/thaljef), a
 and of Perl::Critic. Jeff operates a small consulting company in San Francisco and
 has been active in the Perl community for many years.
 Till May 7 Jeff is running a [fund-raiser](https://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint)
-to finance the development of the feature that will allow you to <b>specify module version ranges in Pinto</b>.
+to finance the development of the feature that will allow you to **specify module version ranges in Pinto**.
 </i>
 
 One of the best things about Perl are all the open source modules that
@@ -215,7 +215,7 @@ and now URI version 1.62 is available on the CPAN.  It has some
 critical bug fixes that you'd like to get.  Again, we can bring that
 into the repository using the `pull` command.  But since your
 repository already contains a version of URI, you must indicate that
-you want a <b>newer</b> one by specifying the minimum version that you
+you want a **newer** one by specifying the minimum version that you
 want:
 
 ```
@@ -249,7 +249,7 @@ This is what stacks are designed for.
 All CPAN-like repositories have an index which maps the latest version
 of each module to the archive that contains it.  Usually, there is
 only one index per repository.  But in a Pinto repository, there can
-be many indexes.  Each of these indexes is called a <b>"stack"</b>.  This
+be many indexes.  Each of these indexes is called a **"stack"**.  This
 allows you to create different stacks of dependencies within a single
 repository.  So you could have a "development" stack and a
 "production" stack, or a "perl-5.8" stack and a "perl-5.16" stack.

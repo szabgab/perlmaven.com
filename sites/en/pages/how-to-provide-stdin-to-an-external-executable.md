@@ -139,7 +139,7 @@ function of [IPC::Run3](https://metacpan.org/pod/IPC::Run3):
 ## Expect.pm
 
 There is another, much more robust solution called [Expect](https://metacpan.org/pod/Expect).
-It has a major limitation that it only works on Unix/Linux and it does <b>not</b> work on Windows, but it
+It has a major limitation that it only works on Unix/Linux and it does **not** work on Windows, but it
 provides a much more powerful way to interact with external, command line applications.
 
 Instead of preparing all the answer up-front we can have a script that parses the questions and bases its answers on the questions.

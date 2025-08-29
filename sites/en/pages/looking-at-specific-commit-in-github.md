@@ -39,9 +39,9 @@ git clone https://github.com/szabgab/MetaCPAN-SCO.git
 
 This will clone the whole project to your disk with all the history.
 
-alternatively you can click on the <b>Clone in Desktop</b> button, but I have never tried that.
+alternatively you can click on the **Clone in Desktop** button, but I have never tried that.
 
-Clicking on <b>Download ZIP</b> at this point won't do what we want. So avoid that!
+Clicking on **Download ZIP** at this point won't do what we want. So avoid that!
 
 ## Check out specific commit
 
@@ -128,7 +128,7 @@ the diff of the specific commit.
 In the above case this would be 
 [this page](https://github.com/szabgab/MetaCPAN-SCO/commit/e442f37a10291a7d93fd9c5068b4e10f554738ed).
 
-Click on the <b>Browse code</b> button in the top right corner. This will to
+Click on the **Browse code** button in the top right corner. This will to
 [this page](https://github.com/szabgab/MetaCPAN-SCO/tree/e442f37a10291a7d93fd9c5068b4e10f554738ed)
 that is the representation of the whole tree after that commit. Now you can click on the "Download ZIP" button
 on the right hand side to download a zipped version of the whole project at the specific time in its history.

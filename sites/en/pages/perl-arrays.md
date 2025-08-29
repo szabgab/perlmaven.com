@@ -22,7 +22,7 @@ author: szabgab
 ---
 
 
-In this episode of the [Perl Tutorial](/perl-tutorial) we are going to learn about <b>arrays in Perl</b>.
+In this episode of the [Perl Tutorial](/perl-tutorial) we are going to learn about **arrays in Perl**.
 This is an overview of how arrays work in Perl. We'll see more detailed explanations later.
 
 Variable names of arrays in Perl start with the at mark: `@`.
@@ -117,8 +117,8 @@ Will print 2 because the indexes are 0,1 and 2.
 
 In Perl there is no special function to fetch the size of an array, but there
 are several ways to obtain that value. For one, the size of the array is one more
-than the largest index. In the above case `$#names+1` is the <b>size</b> or
-<b>length</b> of the array.
+than the largest index. In the above case `$#names+1` is the **size** or
+**length** of the array.
 
 In addition the `scalar` function can be used to to obtain the size of an array:
 

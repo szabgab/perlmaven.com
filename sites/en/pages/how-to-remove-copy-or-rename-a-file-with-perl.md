@@ -20,16 +20,16 @@ author: szabgab
 ---
 
 
-Many people who come from the world of <b>system administration</b> and Unix or Linux scripting,
-will try to keep using the regular unix commands of <b>rm</b>, <b>cp</b> and <b>mv</b>
-for these operations. Calling them either with back-tick or with <b>system</b>,
+Many people who come from the world of **system administration** and Unix or Linux scripting,
+will try to keep using the regular unix commands of **rm**, **cp** and <b>mv</b>
+for these operations. Calling them either with back-tick or with **system**,
 even when writing Perl scripts.
 
 That works on their current platform, but that gives up one of the key benefits
 Perl brought to the world of Unix system administration.
 
 Let's see how can we execute these operations with Perl in a platform-independent way,
-and without <b>shelling out</b>.
+and without **shelling out**.
 
 
 ## remove

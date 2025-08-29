@@ -79,15 +79,15 @@ is not always the case.
 
 ## Shell expansion
 
-Let's say you have a program called <b>checkfiles</b> that can check the files
-listed on its command line. You could call it <b>checkfiles data1.txt data2.txt</b>
-or <b>checkfiles data*.txt</b> to check all the files that has a name staring 
+Let's say you have a program called **checkfiles** that can check the files
+listed on its command line. You could call it **checkfiles data1.txt data2.txt**
+or **checkfiles data*.txt** to check all the files that has a name staring 
 with the 4 letters 'data', followed by some other characters and
 having the 'txt' extension.
 This second way of running the program would work on Unix/Linux systems where
 the shell expands the 'data*.txt' to all the files that match the description.
-When the program <b>checkfiles</b> is executed it already sees the list of files:
-<b>checkfiles data1.txt data2.txt data42.txt database.txt</b>.
+When the program **checkfiles** is executed it already sees the list of files:
+**checkfiles data1.txt data2.txt data42.txt database.txt**.
 Not so of Windows, where the command line does not do this expansion.
 On Windows the program will get 'data*.txt' as input.
 
@@ -154,9 +154,9 @@ will be safe.
 
 It is more convenient to make one string out of the command and pass that to `system`,
 but if the input comes from an untrusted source, this can easily become an attack vector.
-The risk can be reduced by first checking the input against a <b>white list</b> of acceptable
+The risk can be reduced by first checking the input against a **white list** of acceptable
 input characters. You can force yourself to think about these issues by enabling the
-<b>taint mode</b> using the `-T` flag on the sh-bang line.
+**taint mode** using the `-T` flag on the sh-bang line.
 
 You can read more in the [documentation of system](/perldoc/system).
 

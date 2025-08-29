@@ -31,8 +31,8 @@ that unfortunately, as of version 1.013 it does not automatically install the sa
 So you'll also need to dowmload that.
 
 Visit [Perl::Version](https://metacpan.org/pod/Perl::Version), find the "Dawnload" link
-and download the tar.gz file. Unizp it using <b>tar xzf ...</b> and then copy the <b>perl-version</b>
-file from the <b>examples</b> directory.
+and download the tar.gz file. Unizp it using **tar xzf ...** and then copy the **perl-version**
+file from the **examples** directory.
 
 The following command will also work, at least as long as version 1.013 is on CPAN.
 
@@ -40,7 +40,7 @@ The following command will also work, at least as long as version 1.013 is on CP
 wget https://fastapi.metacpan.org/source/BDFOY/Perl-Version-1.013/examples/perl-reversion
 ```
 
-Made the <b>perl-version</b> file executable:
+Made the **perl-version** file executable:
 ```
 chmod +x perl-version
 ```

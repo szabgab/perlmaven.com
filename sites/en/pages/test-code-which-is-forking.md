@@ -11,7 +11,7 @@ show_related: true
 ---
 
 
-There are cases when you have some code using <b>fork</b> the question arises how to test them.
+There are cases when you have some code using **fork** the question arises how to test them.
 
 Here is a simple example:
 

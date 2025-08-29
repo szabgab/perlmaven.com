@@ -42,7 +42,7 @@ it and is very unlikely to contain a string that looks like a closing 'script' t
 I used the `get` function of [LWP::Simple](https://metacpan.org/pod/LWP::Simple) to fetch the page and
 then a regex to parse it and extract the content of every 'script' tag. In this regex I've use `.*?` a minimal
 match, and the `s` modifier to change the behavior of `.` to match any characters. Including newlines.
-The `g` modifier is only there to fetch `globally`, <b>all</b> the possible matches.
+The `g` modifier is only there to fetch `globally`, **all** the possible matches.
 
 ## Extract JSON
 

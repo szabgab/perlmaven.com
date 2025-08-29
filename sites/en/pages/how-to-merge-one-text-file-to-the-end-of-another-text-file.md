@@ -29,7 +29,7 @@ This will work regardless if `target.txt` existed before or not.
 
 ## Platform independent solution with Perl
 
-If you need to <b>combine several files</b>, and you want to make sure this will work on other platforms as well
+If you need to **combine several files**, and you want to make sure this will work on other platforms as well
 (most importantly MS Windows), then you can read the files in memory and then write them out 
 [appending](/appending-to-files) to the target file.
 

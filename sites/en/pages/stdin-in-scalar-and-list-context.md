@@ -38,7 +38,7 @@ print "Hello $name, how are you?\n";
 
 The relevant part is that we read from STDIN and assign to a scalar variable `$name`.
 
-If we run this script, it will print "Please type in your name: " and then it will wait till we press <b>ENTER</b>.
+If we run this script, it will print "Please type in your name: " and then it will wait till we press **ENTER**.
 Then it will take everything we type, including the ENTER at the end, and assign it to the `$name` variable.
 `chomp` will eliminate the trailing newlines.
 

@@ -18,8 +18,8 @@ strict world it can freak you out at first.
 
 Or make you wonder how could you live without it.
 
-The word <b>autovivification</b> itself comes from the word <b>vivify</b>
-which means <b>to bring to life</b>.
+The word **autovivification** itself comes from the word **vivify**
+which means **to bring to life**.
 
 
 

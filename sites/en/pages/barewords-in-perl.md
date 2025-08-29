@@ -12,7 +12,7 @@ author: szabgab
 
 
 `use strict` has 3 parts. One of them, also called `use strict "subs"`,
-disables the inappropriate use of <b>barewords</b>.
+disables the inappropriate use of **barewords**.
 
 What does that mean?
 
@@ -30,7 +30,7 @@ print "$x\n";    # hello
 ```
 
 That's strange in itself as we are used to put strings in quotes but
-Perl by default allows <b>barewords</b> - words without quotes - to behave like strings.
+Perl by default allows **barewords** - words without quotes - to behave like strings.
 
 The above code would print "hello".
 
@@ -55,7 +55,7 @@ at the time of the assignment so we are back, having "hello" in $x.
 
 No, you don't want to get in such a mess by accident. Or probably ever.
 Having `use strict` in your code Perl will not allow that bareword
-<b>hello</b> in your code, avoiding this type of confusion.
+**hello** in your code, avoiding this type of confusion.
 
 ```perl
 use strict;

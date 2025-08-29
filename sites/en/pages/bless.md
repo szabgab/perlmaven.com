@@ -14,16 +14,16 @@ show_related: true
 ---
 
 
-The <b>bless</b> function in Perl is used to associate a reference (usually a reference to a hash) with a package to create an instance.
+The **bless** function in Perl is used to associate a reference (usually a reference to a hash) with a package to create an instance.
 
 
 ## The constructor
 
-The de-facto standard name for the constructor of a class in Perl is the <b>new</b> method. When called with the arrow-notation
+The de-facto standard name for the constructor of a class in Perl is the **new** method. When called with the arrow-notation
 it will receive the name of the class as the first parameter. (We don't want to assume that the name passed there is the name of our package
 to allow for inheritance.)
 
-Inside the constructor we create a reference to a hash, then we call <b>bless</b> and pass the reference to this hash and the name of the class.
+Inside the constructor we create a reference to a hash, then we call **bless** and pass the reference to this hash and the name of the class.
 This operation will associate the reference with the given package name. It will also return the blessed reference, but it will also change the argument
 we passed in.
 
@@ -46,7 +46,7 @@ The way we can then use the class looks like this:
 
 {% include file="examples/use_my_fruit.pl" %}
 
-We run the code (we need to add the <b>-I.</b> to ensure perl will find the module in the current directory)
+We run the code (we need to add the **-I.** to ensure perl will find the module in the current directory)
 
 `perl -I. use_my_fruit.pl`
 

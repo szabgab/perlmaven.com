@@ -176,7 +176,7 @@ by Neil Bowers, you might want to ensure that these modules are installed on the
 You can accomplish that using the following Travis-CI configuration file:
 
 For example, in order to ensure we have Test::Version installed, before actually trying to run the tests of our module, we
-can add a <b>before_install</b> entry to the `.travis.yml` file of our project:
+can add a **before_install** entry to the `.travis.yml` file of our project:
 
 ```
 branches:

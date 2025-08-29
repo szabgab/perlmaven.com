@@ -11,7 +11,7 @@ author: szabgab
 ---
 
 
-Perl has a [grep](/filtering-values-with-perl-grep) function which is a generalized version of the <b>grep</b> command-line
+Perl has a [grep](/filtering-values-with-perl-grep) function which is a generalized version of the **grep** command-line
 utility available on Unix/Linux systems. That `grep` function can filter values from a list of values or an array based on any kind of condition.
 
 This article is not about the grep function.
@@ -28,7 +28,7 @@ might be very useful, and actually it happens quite often. We'll cover that late
 
 ## A grep-like script
 
-This is mostly to experiment with regular expressions. The command line <b>grep</b> generally works like this:
+This is mostly to experiment with regular expressions. The command line **grep** generally works like this:
 `grep [options] REGEX FILEs`
 
 The following script on the other hand works like this: `perl grep.pl FILEs`

@@ -27,12 +27,12 @@ Module authors can [indicated the location of their VCS (Version Control System)
 
 In the script used for the stats on the PerlWeekly site we are checking some of the following files:
 
-* <b>.travis.yml</b> for Travis CI
-* <b>.appveyor.yml</b> or appveyor.yml for Appveyor
-* Something in <b>.github/workflows</b> for GitHub actions (but may not be CI)
-* <b>.circleci/config.yml</b> for Circle CI
-* <b>.gitlab-ci.yml</b> for Gitlab Pipelines
-* <b>Jenkinsfile</b> for Jenkins
+* **.travis.yml** for Travis CI
+* **.appveyor.yml** or appveyor.yml for Appveyor
+* Something in **.github/workflows** for GitHub actions (but may not be CI)
+* **.circleci/config.yml** for Circle CI
+* **.gitlab-ci.yml** for Gitlab Pipelines
+* **Jenkinsfile** for Jenkins
 * ...
 
 There is a lot more work to do with that script.

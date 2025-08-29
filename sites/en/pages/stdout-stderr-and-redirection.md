@@ -15,11 +15,11 @@ author: szabgab
 
 
 When you run a program on the command line it automatically has two separate output channels.
-One of them is called <b>Standard Output</b>, the other is <b>Standard Error</b>.
+One of them is called **Standard Output**, the other is **Standard Error**.
 
 By default both are connected to the screen (in the shell, terminal or command line window)
 and thus they mix, but the user of the program can decide to separate them,
-and <b>redirect</b> one or both of them to a file.
+and **redirect** one or both of them to a file.
 
 
 The idea is, that the regular output of the application goes to the Output channel,
@@ -66,7 +66,7 @@ print "Welcome to our little program\n";
 print STDERR "Could not open file\n";
 ```
 
-When your perl script starts, STDOUT is set to be the <b>default output channel</b>.
+When your perl script starts, STDOUT is set to be the **default output channel**.
 This means any print operation that was not told specifically where to print, will
 be printed to STDOUT.
 
@@ -75,7 +75,7 @@ be printed to STDOUT.
 (The below examples assume you use some bash compatible shell. Other shells might behave in a different way.)
 
 As a user, without looking inside the code, you can separate the two channels:
-If you run `perl program.pl > out.txt` the `>` symbol will <b>redirect</b>
+If you run `perl program.pl > out.txt` the `>` symbol will **redirect**
 the output channel to the file out.txt. So on the screen you will see only the
 content of the Standard Error:
 
@@ -89,7 +89,7 @@ you will see it has `Welcome to our little program` in it.
 ## Redirecting Standard Error
 
 On the other hand if you run the script as `perl program.pl 2> err.txt`,
-then the `2>` symbol will <b>redirect</b> the error channel to the file err.txt.
+then the `2>` symbol will **redirect** the error channel to the file err.txt.
 
 On the screen you will see this:
 
@@ -165,7 +165,7 @@ Slight problem here.
 beforeafter
 ```
 
-Please note, that both "before" and "after" both arrived to the screen <b>after</b> the error message.
+Please note, that both "before" and "after" both arrived to the screen **after** the error message.
 Even though we expected "before" to be, well, before the error message.
 
 The reason is, that by default, Perl buffers the output of STDOUT and does not

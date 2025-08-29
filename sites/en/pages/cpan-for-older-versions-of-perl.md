@@ -17,13 +17,13 @@ What if that does not work on your platform on your version of Perl?
 
 You can use the data collected by the [CPAN Testers](http://cpantesters.org/). For example if you visit the
 page listing the [test reports of Term::ReadPassword::Win32](http://www.cpantesters.org/distro/T/Term-ReadPassword-Win32.html),
-you will see a big table called <b>PASS Summary</b>. This table shows the most recent version
+you will see a big table called **PASS Summary**. This table shows the most recent version
 of [Term::ReadPassword::Win32](https://metacpan.org/pod/Term::ReadPassword::Win32), that has received
-a <b>PASS</b> report on a given version of perl and a given platform.
+a **PASS** report on a given version of perl and a given platform.
 In that table each row represents a specific version of perl and each column represents an platform.
 
 Perl versions might include entries like 5.8.3 and 5.14.3 RC1.
-Platforms will include entries like <b>Windows (Cygwin)</b>, <b>Windows (Win32)</b>, FreeBSD, GNU/Linux, SunOS/Solaris and others.
+Platforms will include entries like **Windows (Cygwin)**, **Windows (Win32)**, FreeBSD, GNU/Linux, SunOS/Solaris and others.
 
 A section of the table looks like this:
 
@@ -46,7 +46,7 @@ Unfortunately we cannot see the columns in this screenshot, but they were as fol
 </ol>
 
 Some of the fields are empty. This does not mean the module won't work on that perl/platform pair, it just means no
-<b>PASS</b> reports were received for that perl/platform pair.
+**PASS** reports were received for that perl/platform pair.
 
 Some of the fields contain 0.05. For example the 5th column (displaying the reports from FreeBSD) in the row of 5.8.9
 contains the number 0.05. This means someone has tested the distribution on a FreeBSD system using perl 5.8.9.

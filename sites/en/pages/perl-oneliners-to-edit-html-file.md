@@ -124,7 +124,7 @@ In the last example we go back to the `-n` operator and the `print` statement as
 This time, however, we wanted to remove several consecutive lines. A whole section that started with a `div` element that had an id="comments" up till the line
 that had #comments on it.
 
-Perl has a wonderful tool for this, called the <b>flip-flop</b> operator `..`.
+Perl has a wonderful tool for this, called the **flip-flop** operator `..`.
 
 ```
 find . -name "*.html" | xargs perl -i -n -e 'print unless $_ =~ m{<div id="comments">} .. $_ =~ m{#comments}'

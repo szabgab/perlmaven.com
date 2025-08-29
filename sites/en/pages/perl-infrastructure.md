@@ -226,13 +226,13 @@ currently there's no pressing need to do so. The software is at
 
 ## CPAN Testers - smokers
 
-<b>[David Cantrell](http://www.cantrell.org.uk/david/)</b>:
+**[David Cantrell](http://www.cantrell.org.uk/david/)**:
 <i>
 My testing is done in a Linux VM running on a dedicated server that I rent. It nominally has 8GB RAM and 4 CPUs. The underlying hardware has 32GB and 8 CPUs. Virtualisation is done with Xen.
 Unfortunately I no longer test on any other OSes.
 </i>
 
-<b>[Slaven Rezic](http://rezic.de/)</b>:
+**[Slaven Rezic](http://rezic.de/)**:
 <i>
 I maintain four regular smokers (two FreeBSD + two Linux, with several
 perl versions ranging from 5.8.9 to 5.21.10), all running in VMs. Three

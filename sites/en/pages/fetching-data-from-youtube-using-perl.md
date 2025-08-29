@@ -30,7 +30,7 @@ I started by installing the [Padre on Strawberry Perl for Windows](http://padre.
 package but it would work on any other distribution of Perl, and on any other operating system.
 
 Then I went to [Meta CPAN](https://www.metacpan.org/) to search for something related to
-<b>Youtube</b> and settled with [WebService::GData](https://metacpan.org/pod/WebService::GData).
+**Youtube** and settled with [WebService::GData](https://metacpan.org/pod/WebService::GData).
 I went to the CPAN shell in the Strawberry -> Tools submenu and typed in
 
 ```
@@ -62,7 +62,7 @@ This would fetch my user profile - without even logging in to YouTube - and
 print out the statistics. I have 105 subscribers, when I prepared the screencast in June 2011. There are 551 in July 2014.
 
 Then I wanted to send the resulting data to myself via Gmail. Another short search on Meta CPAN
-for <b>Gmail</b> and I found [Email::Send::SMTP::Gmail](https://metacpan.org/pod/Email::Send::SMTP::Gmail).
+for **Gmail** and I found [Email::Send::SMTP::Gmail](https://metacpan.org/pod/Email::Send::SMTP::Gmail).
 Some more copy pasting and here
 is the script that would send an e-mail using my gmail-account to myself. I guess I could use the
 same code to send to anyone else as well.

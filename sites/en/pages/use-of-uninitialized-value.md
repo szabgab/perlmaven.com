@@ -112,8 +112,8 @@ OK
 42
 ```
 
-Here, 'OK', the result of the `print` is seen <b>after</b>
-the warning, even though it was called <b>before</b> the
+Here, 'OK', the result of the `print` is seen **after**
+the warning, even though it was called **before** the
 code that generated the warning.
 
 This strangeness is the result of `IO buffering`.
@@ -150,7 +150,7 @@ OKUse of uninitialized value $x in say at perl_warning_1.pl line 7.
 42
 ```
 
-(The warning is on the same line as the <b>OK</b> because we have not printed a newline
+(The warning is on the same line as the **OK** because we have not printed a newline
 `\n` after the OK.)
 
 ## The unwanted scope

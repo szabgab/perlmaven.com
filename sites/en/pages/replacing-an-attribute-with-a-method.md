@@ -14,7 +14,7 @@ Back when we learned about [type checking with Moo](/type-checking-with-moo) we 
 a Person had an age attribute. Unfortunately as time passes, the person represented by that object had a birthday
 since then and so the age attribute does not reflect the correct number any more.
 
-Probably it was not a good idea in the first place that we used <b>age</b> as an attribute as it basically changes every second.
+Probably it was not a good idea in the first place that we used **age** as an attribute as it basically changes every second.
 Even if we only have birthdays once a year.
 
 It would have been much better to have an attribute "birthdate" as that's something fixed.
@@ -330,7 +330,7 @@ Bar
 
 ## Conclusion
 
-So we changed the internal representation of <b>age</b> replacing the <b>age</b> attribute by a <b>birthdate</b> attribute.
+So we changed the internal representation of **age** replacing the **age** attribute by a <b>birthdate</b> attribute.
 The users of our class don't need to change anything as the retained the old API.
 
 We could now decide to deprecate the old API but keep it around for a while to let our users adjust their code,

@@ -51,7 +51,7 @@ Website: https://perlmaven.com/
 Callback URL:
 ```
 
-Then I had to read the <b>Developer Rules of the Road</b> at the bottom of that page, click on the checkbox
+Then I had to read the **Developer Rules of the Road** at the bottom of that page, click on the checkbox
 and press "Create your Twitter application".
 
 Apparently the "Name" must be unique across all the applications in Twitter.
@@ -66,7 +66,7 @@ We need to click on the "API Keys" tab that will show both the API key and the A
 
 <img src="/img/twitter_apps_api_keys.png" alt="Twitter apps API keys" />
 
-We need the values from both the <b>API key</b> and <b>API secret</b> fields. We could save them in the
+We need the values from both the **API key** and **API secret** fields. We could save them in the
 source code of our script, but for security reasons it is usually much better to save these values
 in a separate file.
 We certainly don't want other people to see our API key so if we want to 
@@ -86,23 +86,23 @@ api_key=
 api_secret=
 ```
 
-In addition to the API key/secret pair, we will also need an <b>Access Token</b>. To obtain an access token scroll down
+In addition to the API key/secret pair, we will also need an **Access Token**. To obtain an access token scroll down
 the web page where you found the API key/secret pair. You will see there is no access token created yet:
 
 <img src="/img/twitter_no_access_token.png" alt="No access token" />
 
-Click on the button <b>Create my access token</b>.
+Click on the button **Create my access token**.
 
 It will take you back to the top of the same page showing the following:
 
 <img src="/img/twitter_access_token_creation.png" alt="Access token creation" />
 
-After a few seconds I clicked on the <b>refresh</b> link and scrolled down the page to see
+After a few seconds I clicked on the **refresh** link and scrolled down the page to see
 the freshly generated access token:
 
 <img src="/img/twitter_access_token.png" alt="Twitter access token" />
 
-We need to copy the values of <b>Access token</b> and <b>Access token secret</b>
+We need to copy the values of **Access token** and **Access token secret**
 to the same `.twitter` file
 
 ```
@@ -176,12 +176,12 @@ foreach my $e (@$r) {
 
 `home_timeline` returns an array reference to hashes.
 Each hash represents a tweet. Each hash has several keys, for example
-<b>text</b> and <b>user</b>. The value of the former is a string, the content of the tweet, 
-the value of <b>user</b> is a hash reference itself containing details about the user who posted
+**text** and **user**. The value of the former is a string, the content of the tweet, 
+the value of **user** is a hash reference itself containing details about the user who posted
 this update.
 
-If the <b>text</b> contains hashtags (words staring with `#`, or mentions other users by prefixing their name with `@`,
-or has a shortened URL (e.g http://t.co/jKxH3vWMuh ), then the hash also contains a key called <b>entities</b>
+If the **text** contains hashtags (words staring with `#`, or mentions other users by prefixing their name with `@`,
+or has a shortened URL (e.g http://t.co/jKxH3vWMuh ), then the hash also contains a key called **entities**
 that describe those special values. For example providing more details about other Twitter accounts mentioned in this update,
 or the original URL of a shortened URL.
 

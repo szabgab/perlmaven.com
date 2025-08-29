@@ -19,7 +19,7 @@ Earlier we tried to write some code to [fetch the list of most recently uploaded
 
 We found that the documentation of [MetaCPAN::Client::Release](https://metacpan.org/pod/MetaCPAN::Client::Release) isn't accurate.
 
-The <b>name</b> attribute returns the name including the version number and the <b>distribution</b> returns the name only.
+The **name** attribute returns the name including the version number and the **distribution** returns the name only.
 
 
 In order to fix this we had to find the source on GitHub and the send a pull request. It was accepted within a few hours.

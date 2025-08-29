@@ -123,5 +123,5 @@ At this point I decided to go with this approach and see how it works, even thou
 "don't distribute the developer tests" approach.
 
 So the next [commit](https://github.com/szabgab/Pod-Tree/commit/9ad8a73f92900eb37f6d571e502ba85cb50e78ce) was to
-<b>include the rc files in the MANIFEST</b>.
+**include the rc files in the MANIFEST**.
 

@@ -58,7 +58,7 @@ So we assign the appropriate value relative to the `venv` directory:
 export PERL5LIB=venv/lib/perl5
 ```
 
-<b>before</b> we try to install modules.
+**before** we try to install modules.
 
 
 Finally, some modules will install executables in the `venv/bin` directory.

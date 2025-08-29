@@ -23,7 +23,7 @@ We are going to see an example here, and later on we are going to see a couple o
 
 <slidecast file="beginner-perl/command-line" youtube="cjKol7gTlkA" />
 
-In order to open the command line, on Windows you need to click on <b>Start/Run</b> and then type in `cmd`.
+In order to open the command line, on Windows you need to click on **Start/Run** and then type in `cmd`.
 
 ```
 $ perl -v

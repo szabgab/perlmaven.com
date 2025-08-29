@@ -26,7 +26,7 @@ In Perl there are 3 types of variables differing mostly in the their scoping.
 
 These are the variables used in the vast majority of cases.
 
-A variable declared using the `my` keyword is a <b>lexical variable</b>.
+A variable declared using the `my` keyword is a **lexical variable**.
 It lives from the place where it was declared using the `my` keyword
 till the end of the current block. (Pair of curly braces.) This is the `scope`
 of the variable.
@@ -161,7 +161,7 @@ $x = 42;
 print "$x\n";
 ```
 
-Now we might already understand what does that error message really mean. We don't <b>have to</b> declare the variables using `my`.
+Now we might already understand what does that error message really mean. We don't **have to** declare the variables using `my`.
 We could use the explicit package name like this:
 
 ```perl
@@ -217,7 +217,7 @@ print "VeryLongName: $x\n";
 ```
 
 This works, but the documentation of `vars` tells us that
-<b>the functionality provided by this pragma has been superseded by "our" declarations</b>.
+**the functionality provided by this pragma has been superseded by "our" declarations**.
 
 So how does `our` work?
 

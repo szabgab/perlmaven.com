@@ -135,7 +135,7 @@ Required skills:
 
 <h2 id="pod">Improve documentation, examples for common use cases</h2>
 
-Most modules come witha <b>SYNOPSIS</b> that shows the basic usage of the module, but in many cases that's not a full example and it
+Most modules come witha **SYNOPSIS** that shows the basic usage of the module, but in many cases that's not a full example and it
 only show a very limited usage of the module.
 
 Some modules come with examples file usuall in the `eg/` or `examples/` subdriectory of the modules.

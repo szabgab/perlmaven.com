@@ -152,7 +152,7 @@ There is another module called [Test::Deep](https://metacpan.org/pod/Test::Deep)
 
 ## MyTools.pm
 
-In order to make it easier for you to see the above code running, I have included the content of <b>MyTools.pm</b>:
+In order to make it easier for you to see the above code running, I have included the content of **MyTools.pm**:
 
 {% include file="examples/is_deeply/MyTools.pm" %}
 

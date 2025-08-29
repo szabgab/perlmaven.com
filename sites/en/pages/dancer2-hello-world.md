@@ -30,8 +30,8 @@ Then I can go to the Command Prompt or the Power Shell if I was on Windows, or i
 perl -MDancer2 -e1
 ```
 
-This will run <b>perl</b>. <b>-MDancer2</b> will make it try to load the <b>Dancer2</b> module into memory and <b>-e1</b> just tells perl to execute the program
-consisting of the number <b>1</b> which is a non-operation. It basically tells perl to do nothing.
+This will run **perl**. **-MDancer2** will make it try to load the <b>Dancer2</b> module into memory and <b>-e1</b> just tells perl to execute the program
+consisting of the number **1** which is a non-operation. It basically tells perl to do nothing.
 The goal here is to see if perl can find and load the Dancer2 module.
 
 If there is no output to the screen that means everything is fine. Unlike in the previous case when this command failed.
@@ -74,21 +74,21 @@ Of course perl does not know that my problem here is not the lack of installatio
 ## Course slides
 
 The other thing that we left at the end of the previous video was the unzipping of the course material.
-If you switch to the other window - the file explorer - where you started the unzip, you'll see a folder (directory) called <b>slides-main</b>.
+If you switch to the other window - the file explorer - where you started the unzip, you'll see a folder (directory) called **slides-main**.
 
-Within the <b>slides-main<b> you will find a folder for each training course I have.
+Within the **slides-main** you will find a folder for each training course I have.
 
-The Dancer2 course material is within the <b>perl</b> course and thus in the <b>perl</b> folder.
+The Dancer2 course material is within the **perl** course and thus in the **perl** folder.
 
-Within the <b>perl</b> folder you'll find the example files from the slides by following the path that you can see above each example on the slides.
+Within the **perl** folder you'll find the example files from the slides by following the path that you can see above each example on the slides.
 For example [here](https://code-maven.com/slides/dancer/hello-world-with-dancer).
 
-Then I switched to the Command Prompt/Terminal and typed in <b>cd</b> (change directory) and then the path where I wanted to switch to.
+Then I switched to the Command Prompt/Terminal and typed in **cd** (change directory) and then the path where I wanted to switch to.
 
 I can go to the file-explorer, click on the "address bar" and then it will show me the full path to the directory I am viewing.
-I can copy that by pressing <b>Ctrl-C</b> then I can paste it to the terminal window my clicking on the right button of the mouse.
+I can copy that by pressing **Ctrl-C** then I can paste it to the terminal window my clicking on the right button of the mouse.
 
-Then I can press the `Home` key to jump to the beginning of the line and type in <b>cd</b>.
+Then I can press the `Home` key to jump to the beginning of the line and type in **cd**.
 
 ```
 cd c:\course\slides-main\perl\examples\dancer\hello_world
@@ -113,16 +113,16 @@ I can see the files that are in that directory.
 
 Switching to the file-explorer I can see the same.
 
-Among the 3 files in the directory: <b>app.psgi</b> is the file that we'll actually need now. That's where our "application" is.
-<b>test.t</b> is the test file that is checking that our code works properly.
+Among the 3 files in the directory: **app.psgi** is the file that we'll actually need now. That's where our "application" is.
+**test.t** is the test file that is checking that our code works properly.
 
-Then you'll find all kinds of extra files with <b>.out</b> extension that you won't have in a real application.
+Then you'll find all kinds of extra files with **.out** extension that you won't have in a real application.
 I only have them to store the output of various commands so I can include it in the slides.
 You don't have to worry about those files.
 
 ## Hello World
 
-The content of the <b>app.psgi</b> file can be seen here:
+The content of the **app.psgi** file can be seen here:
 
 {% include file="examples/dancer/hello_world/app.psgi" %}
 
@@ -140,17 +140,17 @@ HTTP::Server::PSGI: Accepting connections at http://0:5000/
 
 This tells us that the server is running and accepting connection on port 5000.
 
-If you are using Windows, you'll probably also see a pop-up of the <b>Windows Defender Firewall</b> saying that it has blocked
+If you are using Windows, you'll probably also see a pop-up of the **Windows Defender Firewall** saying that it has blocked
 some features of this app.
 
 This happens if you have the Windows Firewall on your computer that will limit the access to your computer.
 
-It has two checkboxes, one to enable access on <b>Private networks</b>, the other to enable access on <b>Public networks</b>
+It has two checkboxes, one to enable access on **Private networks**, the other to enable access on **Public networks**
 
 For some reason on my computer the Public networks was checked. I prefer to only allow access on Private networks so I checked that box
 and unchecked the box of the Public networks.
 
-Then I clicked <b>Allow access</b>. It took a couple of seconds to make the pop-up disappear.
+Then I clicked **Allow access**. It took a couple of seconds to make the pop-up disappear.
 It might have been slow because I was recording the video on a Windows running in a Virtual Box while the video-recording was running.
 So my computer was already busy.
 
@@ -172,7 +172,7 @@ Either I did something incorrectly earlier or Edge just got scared when it saw I
 
 ## Finally it works!
 
-So we can see in the browser <b>Hello World1</b>. It's not much of a web application, but it works and it is ours!
+So we can see in the browser **Hello World1**. It's not much of a web application, but it works and it is ours!
 
 In the terminal/Command Prompt window you can see the access log. Apparently also the previous attempts showed up even though we did not
 get a response in the browser.
@@ -185,7 +185,7 @@ Let's go over the code now.
 package App;
 ```
 
-This is just the declaration of the Perl package. The name <b>App</b> isn't really important here. You can put there virtually anything.
+This is just the declaration of the Perl package. The name **App** isn't really important here. You can put there virtually anything.
 As long as at the end of the code you use the same name.
 
 
@@ -193,7 +193,7 @@ As long as at the end of the code you use the same name.
 use Dancer2;
 ```
 
-This loads the Dancer2 module. (This is what the <b>-MDaner2</b> did on the command line.)
+This loads the Dancer2 module. (This is what the **-MDaner2** did on the command line.)
 
 ```
 get '/' => sub {
@@ -201,7 +201,7 @@ get '/' => sub {
 };
 ```
 
-This is called a <b>route</b>.
+This is called a **route**.
 
 The way Dancer works is that we need to map URL pathes to anonymous functions. (You could also use named functions, but they are usually anonymous.)
 
@@ -210,12 +210,12 @@ The part "/slides/dancer/hello-world-with-dancer" is the path.
 
 In case of "http://localhost:5000/"  the path is just "/" though when I typed it in the browser hid it.
 
-I could also type in some longer path, for example I tried "http://localhost:5000/hello" and I got a <b>Error 404 - Not Found</b> message.
-That's because the path <b>/hello</b> has not been defined in this application.
+I could also type in some longer path, for example I tried "http://localhost:5000/hello" and I got a **Error 404 - Not Found** message.
+That's because the path **/hello** has not been defined in this application.
 
-After the <b>get</b> keyword is the path we are mapping.
+After the **get** keyword is the path we are mapping.
 
-After the fat-arrow <b>=&gt;</b> you can see the anonymous subroutine. Whatever it returns is sent back to the browser.
+After the fat-arrow **=&gt;** you can see the anonymous subroutine. Whatever it returns is sent back to the browser.
 
 It can return some HTML to make a nice page, but in our case we only returned the plain text "Hello World!" and the browser displayed it.
 
@@ -233,13 +233,13 @@ get('/', sub {
 });
 ```
 
-We imported the <b>get</b> function from the Dancer2 module. This function gets two parameters. The first one is the path and the second one is the function
+We imported the **get** function from the Dancer2 module. This function gets two parameters. The first one is the path and the second one is the function
 to be executed when someone requests that path.
 
 
 ## Stop the application
 
-To stop the application you need to switch to the terminal/command prompt again and press <b>Ctrl-C</b>. Windows will ask you for confirmation. Type Y.
+To stop the application you need to switch to the terminal/command prompt again and press **Ctrl-C**. Windows will ask you for confirmation. Type Y.
 
 ## Testing
 

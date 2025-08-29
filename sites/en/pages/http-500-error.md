@@ -33,7 +33,7 @@ A basic thing would be to make sure we do not have a syntax error in the file on
 perl -c app.pl
 ```
 
-It might be also useful to turn on warnings using the <b>-w</b> flag and to make sure there are no warnings emitted
+It might be also useful to turn on warnings using the **-w** flag and to make sure there are no warnings emitted
 by the program, but if you wrote it carefully following my suggestions to [always use warnings](/always-use-warnings)
 then this is not necessary. In any case you could try this:
 

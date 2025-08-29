@@ -71,7 +71,7 @@ an attribute called `conf`. This is doable, but it requires a lot of parameter p
 
 Another solution is to have a global variable (e.g. `our $conf = MyConf->new(...)` in the
 main script and then access it via `$main::conf` from every part of the code. This kind of
-<b>package global variable</b> can work, but it does not look good. In every place we now have
+**package global variable** can work, but it does not look good. In every place we now have
 to hard-code the fully qualified name of the variable. Soon we'll find a case (for example a test script)
 that needs to work differently.
 
@@ -123,12 +123,12 @@ See the main script:
 
 {% include file="examples/singleton-moo-config/application.pl" %}
 
-and two modules used by that script. In <b>ModuleA</b> we call
+and two modules used by that script. In **ModuleA** we call
 `instance` without passing any parameter:
 
 {% include file="examples/singleton-moo-config/ModuleA.pm" %}
 
-In <b>ModuleB</b> we pass a new `file => ...` parameter,
+In **ModuleB** we pass a new `file => ...` parameter,
 but it is disregarded by the code. The `BUILD` function is not
 even called:
 

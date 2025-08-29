@@ -82,7 +82,7 @@ The main page will display
 
 `This is a public page. Everyone can see it. Check out the report</a>
 
-if you click on the <b>report</b> link it will lead you to `http://127.0.0.1:5000/report`
+if you click on the **report** link it will lead you to `http://127.0.0.1:5000/report`
 displaying `Only authenticated users should be able to see this page`.
 
 ## Limiting the access to the report page

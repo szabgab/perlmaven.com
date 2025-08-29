@@ -38,7 +38,7 @@ We open both the original file for [reading](/open-and-read-from-files), and the
 
 Then we use the `getline` method of the CSV parser to read the logical lines of the CSV file.
 We need to do this instead of reading ourselves, because some fiels in the CSV file might contain
-embeddd newline, just as in our example we have <b>"Hofeherke,\nalma"</b>.
+embeddd newline, just as in our example we have **"Hofeherke,\nalma"**.
 
 For each logical row, `getline` will return a [reference to an array](/array-references-in-perl)
 that holds the fields of the current line. Dereferencing it by writing `@$row` allows us to use

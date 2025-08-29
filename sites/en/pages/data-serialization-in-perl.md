@@ -18,7 +18,7 @@ archive: true
 
 In the general [data serialization](http://en.wikipedia.org/wiki/Serialization) refers to a process in which we take
 an arbitrary data structure (a hash of hashes of arrays...) and convert it to a string in a way that the string can be later
-converted back to the same complex data structure in a process called <b>de-serialization of data</b>.
+converted back to the same complex data structure in a process called **de-serialization of data**.
 
 Once the data was serialized to a string it can be easily stored on disk (e.g. in a file or in a database), and it can
 be easily transmitted via some network protocol.
@@ -29,7 +29,7 @@ or flattening of data.
 
 ## Use cases
 
-Two major uses of data serialization are <b>data persistence</b> and <b>data communication or transmission</b>
+Two major uses of data serialization are **data persistence** and **data communication or transmission**
 
 <h3>Data Persistence</h3>
 

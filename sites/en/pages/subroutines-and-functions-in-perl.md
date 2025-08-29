@@ -24,7 +24,7 @@ and they allow it to be executed with different parameters.
 In some languages there is a distinction between functions and subroutines.
 In Perl there is only one thing. It is created with the `sub` keyword,
 and it always returns a value. Perl programmers often use the two words
-<b>function</b> and <b>subroutine</b> interchangeably.
+**function** and **subroutine** interchangeably.
 
 ## Simple function
 
@@ -47,7 +47,7 @@ typed in without the trailing newline.
 The third one is again very simple, but it is never called in the code and thus it
 is never executed. That's an important point for people not familiar with
 functions and subroutines. Their code - regardless of their location in the
-file - only gets executed when they are "<b>called</b>" using their name.
+file - only gets executed when they are "**called**" using their name.
 Just as we called the other two functions.
 
 
@@ -116,7 +116,7 @@ There are very few cases when those prototypes in Perl are useful.
 
 ## Parameters or signature
 
-In Perl 5 you don't need or can declare the <b>signature</b> of a function.
+In Perl 5 you don't need or can declare the **signature** of a function.
 
 That is, you cannot declare the list of expected parameters. This also means
 that you won't get any parameter checking from the language.

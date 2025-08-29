@@ -42,7 +42,7 @@ bar_2 foo_11 moo_3
 ## Extract numbers using substr
 
 In order to compare the strings using the numbers in the string we need to extract those numbers.
-Based on the example above we can assume that the strings consist of <b>4 characters and then the number</b>.
+Based on the example above we can assume that the strings consist of **4 characters and then the number**.
 In that case we can use [substr](/string-functions-length-lc-uc-index-substr) to extract the numbers:
 
 ```perl
@@ -151,7 +151,7 @@ my @y = map { $_->[1] }
 
 In general I am against such "premature optimization".
 Before applying any such optimization I'd first recommend to finish the application,
-and <b>profile</b> the code using [Devel::NYTProf](https://metacpan.org/pod/Devel::NYTProf). That will show if this specific
+and **profile** the code using [Devel::NYTProf](https://metacpan.org/pod/Devel::NYTProf). That will show if this specific
 code has any impact on the overall performance of the application. If not, then I'd leave the slower, but more readable one.
 
 In this case however I am not sure if the original version (especially after setting 0 as a default) is more

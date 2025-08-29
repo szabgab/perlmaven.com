@@ -56,7 +56,7 @@ In the 3rd case, for every comparison, it had to go to the hard disk and fetch t
 
 Accessing the disk is a lot slower than accessing memory which explains the slowdown.
 
-The question, <b>can we improve it?</b>.
+The question, **can we improve it?**.
 
 The problem of accessing the disk is amplified by how sort works.
 

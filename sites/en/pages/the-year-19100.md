@@ -14,7 +14,7 @@ author: szabgab
 ---
 
 
-This part of the [Perl Tutorial](/perl-tutorial) series is explaining <b>time in perl</b>.
+This part of the [Perl Tutorial](/perl-tutorial) series is explaining **time in perl**.
 
 Perl has a built in function called `time()` that will return a nice, 10 digit
 long number representing the seconds elapsed since the "epoch" which is
@@ -91,21 +91,21 @@ $yday  - 'year day' or day of the year (0-364 or 0-365 in leap years)
 $isdst - 'is daylight saving time' true if daylight saving time is on in your computer. Otherwise false.
 ```
 
-Note that, in the field representing the <b>month</b> 0 means January, and 11 means December.
-In the field representing the <b>week day</b> 0 means Sunday and 6 means Saturday.
+Note that, in the field representing the **month** 0 means January, and 11 means December.
+In the field representing the **week day** 0 means Sunday and 6 means Saturday.
 
-On the other hand the field representing the <b>day of the month</b> ranges from 1-28,30 or 31 depending on the month.
+On the other hand the field representing the **day of the month** ranges from 1-28,30 or 31 depending on the month.
 
-The most problematic of all might be the field representing the <b>year</b>. It can easily lead to a <b>Y2K</b> bug:
+The most problematic of all might be the field representing the **year**. It can easily lead to a **Y2K** bug:
 
 ## Year 2000 bug
 
 When in 1998 people saw the `$year` being 98 and wanted to print 1998 they wrote
 `"19$year"`. That worked for them. It even worked in 1999, but then the year 2000 came,
-and `$year` became 2000-1900 = 100. Their nicely formatted string became <b>19100</b>.
+and `$year` became 2000-1900 = 100. Their nicely formatted string became **19100**.
 
 That's where the year 19100 came from. That's exactly how people created code with the infamous
-<b>Year 2000 bug</b>.
+**Year 2000 bug**.
 
 If they had read the documentation, they would have written:
 
@@ -174,7 +174,7 @@ is going to be assigned to a scalar variable, or an array,
 and returns either a human readable representation of time, or this other, 9-number representation of the same time.
 
 This is a general feature of Perl 5. A very important feature, and we are going to learn about it a lot
-more. The important thing here is to understand that in many situations Perl is <b>context sensitive</b>.
+more. The important thing here is to understand that in many situations Perl is **context sensitive**.
 
 
 

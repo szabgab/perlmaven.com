@@ -15,7 +15,7 @@ author: szabgab
 
 
 The plan is, that I am going to write a lot of tests accessing the live [search.cpan.org](http://search.cpan.org/) web site and use those
-tests as a suite of <b>acceptance tests</b> for the [search.cpan.org clone](/search-cpan-org) project.
+tests as a suite of **acceptance tests** for the [search.cpan.org clone](/search-cpan-org) project.
 
 
 {% youtube id="Puzc9QkV_Vg" file="add-some-acceptance-tests" %}
@@ -29,7 +29,7 @@ There are a couple of ways to test web site, and using [WWW::Mechanize](https://
 is a great way to do that. WWW::Mechanize is basically a web client (it is a subclass of [LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent)
 that understand HTML. So you can tell it to click on a link or fill a form.
 
-In itself WWW::Mechanize is great to automate interaction with web sites, but if we want to write <b>unit-test</b> (even if in this case we call them <b>acceptance tests</b>)
+In itself WWW::Mechanize is great to automate interaction with web sites, but if we want to write **unit-test** (even if in this case we call them **acceptance tests**)
 it is much better to use [Test::WWW::Mechanize](https://metacpan.org/pod/Test::WWW::Mechanize) which is a wrapper around Mechanize providing test-functions
 using [Test::Builder](https://metacpan.org/pod/Test::Builder) backend. Exactly the same way as it was explained in the testing mini-series that ended
 when we [created a test module](/is-any-create-test-module).
@@ -90,7 +90,7 @@ selector. The `submit_form_ok` method will fill the form, click on the submit bu
 resulting page returned `200 ok`.
 
 Then we have two methods checking the content of the resulting page. `content_contains` check if the given string
-can be found in the source of the HTML file and `content_lacks` checks if the given string is <b>not</b> in the HTML.
+can be found in the source of the HTML file and `content_lacks` checks if the given string is **not** in the HTML.
 
 This test actually is even more problematic than the one checking the title. When searching for "sz" among the authors,
 I was expecting to see all the authors that have "sz" in their name. It turns out search.cpan.org does not show all of them.
@@ -143,7 +143,7 @@ subtest authors => sub {
 ```
 
 The second subtest was also extended with a couple of additional checks.
-I checked the title here too, and then followed the link that has <b>A</b> on it. Checked the title again
+I checked the title here too, and then followed the link that has **A** on it. Checked the title again
 and used `content_contains` to make sure two names appear in the list. Then followed one of the links.
 
 These tests are also slightly problematic. What if one of the people changes her name. Will the test fail then?

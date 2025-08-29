@@ -58,7 +58,7 @@ $dwarfs[3] = undef;
 print Dumper \@dwarfs;
 ```
 
-This code will set element 3 (the 4th element of the array) to `undef`, but will <b>NOT</b> change the size of
+This code will set element 3 (the 4th element of the array) to `undef`, but will **NOT** change the size of
 the array:
 
 ```
@@ -111,9 +111,9 @@ $VAR1 = [
         ];
 ```
 
-As you can see, in this case the array became one element shorter as we have <b>removed one of the elements</b> from the middle of the array.
+As you can see, in this case the array became one element shorter as we have **removed one of the elements** from the middle of the array.
 
-This is how you can <b>delete an element from an array</b>.
+This is how you can **delete an element from an array**.
 
 For further details check [how to splice arrays in Perl](/splice-to-slice-and-dice-arrays-in-perl).
 

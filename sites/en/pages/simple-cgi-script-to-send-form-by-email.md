@@ -25,13 +25,13 @@ how to process a web form and send the values via e-mail.
 ## Processing the HTML form using CGI
 
 Here is a very simple HTML page with a form. The form has 3 fields.
-a text field called <b>fullname</b>, a selector called <b>country</b>,
-and a textarea called <b>question</b>.
+a text field called **fullname**, a selector called **country**,
+and a textarea called **question**.
 
 I assume you already understand this part.
 
-What might be new, are the parameters of the <b>form</b> itself.
-The `action` is the URL to the CGI script. The `method` can be either <b>GET</b> or <b>POST</b>.
+What might be new, are the parameters of the **form** itself.
+The `action` is the URL to the CGI script. The `method` can be either **GET** or **POST**.
 For our purposes the difference is, that in the case of GET,
 the values will be shown in he address-bar of your browser while in the case of POST they will be hidden.
 
@@ -149,7 +149,7 @@ as they were submitted.
 <h3>Validation in JavaScript?</h3>
 
 It is nice to provide this validation in some JavaScript that comes with the form.
-That can improve usability, but it does <b>NOT</b> provide the necessary protection
+That can improve usability, but it does **NOT** provide the necessary protection
 to your code and server. You have to validate the data
 
 ## Sending the e-mail

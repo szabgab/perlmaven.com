@@ -18,7 +18,7 @@ A simple case of developing and then running a Dancer (1) based application.
 
 Install [Docker](https://www.docker.com/)
 
-Create a new directory and put a file called <b>Dockerfile</b> with the following content:
+Create a new directory and put a file called **Dockerfile** with the following content:
 
 ```
 FROM ubuntu:18.04

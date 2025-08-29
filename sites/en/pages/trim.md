@@ -12,9 +12,9 @@ author: szabgab
 ---
 
 
-In some other languages there are functions called <b>ltrim</b> and <b>rtrim</b> to remove
+In some other languages there are functions called **ltrim** and **rtrim** to remove
 spaces and tabs from the beginning and from the end of a string respectively. Sometimes
-they even have a function called <b>trim</b> to remove white-spaces from both ends of a string.
+they even have a function called **trim** to remove white-spaces from both ends of a string.
 
 There are no such functions in Perl (though I am sure there are plenty of CPAN modules implementing
 these functions) as a simple substitution regex can solve this.
@@ -24,7 +24,7 @@ Actually it is so simple that it is one of the great subjects of [bike-shedding]
 
 ## left trim
 
-<b>ltrim</b>  or <b>lstrip</b> removes white spaces from the left side of a string:
+**ltrim**  or **lstrip** removes white spaces from the left side of a string:
 
 ```perl
 $str =~ s/^\s+//;
@@ -35,7 +35,7 @@ From the beginning of the string `^` take 1 or more white spaces (`\s+`), and re
 
 ## right trim
 
-<b>rtrim</b> or <b>rstrip</b> removes white spaces from the right side of a string:
+**rtrim** or **rstrip** removes white spaces from the right side of a string:
 
 ```perl
 $str =~ s/\s+$//;
@@ -45,14 +45,14 @@ Take 1 or more white spaces (`\s+`) till the end of the string (`$`), and replac
 
 ## trim both ends
 
-<b>trim</b> remove white space from both ends of a string:
+**trim** remove white space from both ends of a string:
 
 ```perl
 $str =~ s/^\s+|\s+$//g;
 ```
 
 The above two regexes were united with an an alternation mark `|` and we added a `/g` at the end to
-execute the substitution <b>globally</b> (repeated times).
+execute the substitution **globally** (repeated times).
 
 ## Hiding in function
 

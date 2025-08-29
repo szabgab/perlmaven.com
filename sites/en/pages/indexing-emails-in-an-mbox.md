@@ -152,7 +152,7 @@ foreach my $k (sort keys %main::count) {
 and after the internal `while` loop I added a call to `last`. That way
 the process will stop just after the first file.
 
-Even with that I got a <b>lot</b> of headers. Some of them only differ in case:
+Even with that I got a **lot** of headers. Some of them only differ in case:
 
 ```
 Accept-Language  11

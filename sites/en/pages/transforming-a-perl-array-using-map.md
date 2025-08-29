@@ -105,7 +105,7 @@ Foo 1 Bar 1 Baz 1
 
 ## Fat arrow
 
-In case you are wondering `=>` is called the <b>fat arrow</b> or <b>fat comma</b>. It basically acts
+In case you are wondering `=>` is called the **fat arrow** or **fat comma**. It basically acts
 as a regular comma `,` with an exception that is not relevant in our case. (There is a description
 of it in the article about [Perl hashes](/perl-hashes).)
 

@@ -15,10 +15,10 @@ author: szabgab
 ---
 
 
-If you wrote a Perl script, for example <b>programming.pl</b>,
-your users can run the script on the command line using <b>perl programming.pl</b>.
+If you wrote a Perl script, for example **programming.pl**,
+your users can run the script on the command line using **perl programming.pl**.
 
-They can also pass any command line arguments like this <b>perl programming.pl -a --machine remote /etc</b>.
+They can also pass any command line arguments like this **perl programming.pl -a --machine remote /etc**.
 No one will stop the users from doing that, and the script will disregard these values.
 The question then how can you, the author of the script, know which values were passed, if any?
 
@@ -36,7 +36,7 @@ be the only element in `@ARGV`. In the above example the `@ARGV` will have the f
 
 Let's see this in action:
 
-Save this code as <b>programming.pl</b>:
+Save this code as **programming.pl**:
 
 ```perl
 use strict;
@@ -61,25 +61,25 @@ As you can see we used the `Dumper` function of `Data::Dumper` to print
 out the content of `@ARGV`
 
 If you are coming from another programming language, you might be wondering:
-<b>where is the name of the Perl program?</b>
+**where is the name of the Perl program?**
 
 ## The name of the script is in $0
 
-The name of the program being executed, in the above case <b>programming.pl</b>, is always in the `$0`
+The name of the program being executed, in the above case **programming.pl**, is always in the `$0`
 variable of Perl. (Please note, `$1`, `$2`, etc. are unrelated!)
 
 ## C programmer
 
-In case you know the <b>C programming language</b>, this is similar to <b>argv</b>, except that the
-`@ARGV` of Perl does <b>not</b> contain the name of the program.
-It can be found in the `$0` variable. Also a variable such as <b>argc</b> is not necessary,
+In case you know the **C programming language**, this is similar to **argv**, except that the
+`@ARGV` of Perl does **not** contain the name of the program.
+It can be found in the `$0` variable. Also a variable such as **argc** is not necessary,
 as you can easily get the [number of elements in the @ARGV array](/scalar-and-list-context-in-perl)
 using the `scalar` function or by putting the array in
 [scalar context](/scalar-and-list-context-in-perl).
 
 ## Unix/Linux Shell programming
 
-In case you arrive from the world of <b>Unix/Linux Shell programming</b> you will recognize `$0`
+In case you arrive from the world of **Unix/Linux Shell programming** you will recognize `$0`
 is being the name of the script there too. In shell however `$1`, `$2`, etc.
 hold the rest of the command line parameters. These variables are used by
 the regular expressions of Perl. The command line arguments are in `@ARGV`. Similar to `$*`
@@ -124,7 +124,7 @@ my ($name, $number) = @ARGV;
 ```
 
 Let's now see the full example (well, except of the database part).
-Save the following code in <b>programming.pl</b>.
+Save the following code in **programming.pl**.
 
 ```perl
 use strict;
@@ -243,7 +243,7 @@ is copied to `$filename`. If there was no value, the script would `die`.
 
 There is one minor bug in the above code. If the user supplies 0 as the name of the file. It will still
 be seen as False and the script will refuse to handle such a file. The question though: Does it matter?
-Can we live with the fact that our script might not handle a file called <b>0</b>... ?
+Can we live with the fact that our script might not handle a file called **0**... ?
 
 ## Complex cases
 

@@ -13,7 +13,7 @@ archive: true
 
 What is this `qw` I often see in Perl code?
 
-`qw` stands for <b>quote word</b>. It looks like some other operators such as
+`qw` stands for **quote word**. It looks like some other operators such as
 <a href="/quoted-interpolated-and-escaped-strings-in-perl">`q` and `qq`</a>, or 
 <a href="/search/qr">`qr`</a>, but actually it works more like
 [split](/perl-split).

@@ -42,7 +42,7 @@ going on, and maybe even to change the code to use more modern techniques.
 
 In this example we have two files. Both have the .pl extension.
 
-<b>library.pl</b> is the file that contains the common functions and variables.
+**library.pl** is the file that contains the common functions and variables.
 
 ```perl
 $base = 10;
@@ -67,7 +67,7 @@ sub validate_parameters {
 1;
 ```
 
-<b>perl4_app.pl</b> is the "application", or the "script" that we will run. It uses the functions from the above file.
+**perl4_app.pl** is the "application", or the "script" that we will run. It uses the functions from the above file.
 
 ```perl
 #!/usr/bin/perl
@@ -80,7 +80,7 @@ print "$base\n";
 ```
 
 
-The script (<b>perl4_app.pl</b>) starts with the [sh-bang](/hashbang) line. It does not have `use strict;` nor does it
+The script (**perl4_app.pl**) starts with the [sh-bang](/hashbang) line. It does not have `use strict;` nor does it
 have `use warnings;`. Remember, this is Perl 4-style coding. These [safety nets](/installing-perl-and-getting-started)
 were not available till later on in Perl 5.
 

@@ -22,7 +22,7 @@ There are many ways to write Object Oriented code in Perl. In this screencast we
 
 <slidecast file="advanced-perl/moose/constructor" youtube="HiZAGluWlVc" />
 
-We start with the most basic example and create a script called <b>person.pl</b> with the following content:
+We start with the most basic example and create a script called **person.pl** with the following content:
 
 ```perl
 use strict;
@@ -37,7 +37,7 @@ my $teacher = Person->new;
 Here we load the `Person` module, which declares the `Person` class and then call the `new` constructor of that class to create
 and instance, or object that we assign to the `$teacher` variable.
 
-The implementation of the `Person` class using [Moose](/moose) is very simple. We just need to create a file called <b>Person.pm</b>
+The implementation of the `Person` class using [Moose](/moose) is very simple. We just need to create a file called **Person.pm**
 with the following content:
 
 ```perl

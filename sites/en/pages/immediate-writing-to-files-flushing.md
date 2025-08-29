@@ -33,7 +33,7 @@ For example your application writes to some log file and you'd like to be able t
 ## Append and close
 
 One solution might be to create a funnction that will do all the writing to the file.
-That function can open the file every time in <b>append</b> mode and then close the filehandle once it is done:
+That function can open the file every time in **append** mode and then close the filehandle once it is done:
 
 {% include file="examples/write_and_close.pl" %}
 

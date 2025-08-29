@@ -23,7 +23,7 @@ Getting the last character of a string is a special case of getting [any substri
 
 (There is also a 4th parameter, to [replace a substring](/string-functions-length-lc-uc-index-substr), but let's not discuss that now.)
 
-Even the 3rd parameter from the above list, the <b>length</b>, is optional. If not given it means "till the end of the string".
+Even the 3rd parameter from the above list, the **length**, is optional. If not given it means "till the end of the string".
 
 The 2nd parameter can be either a positive number, then it is an offset from the left-hand side of the string. (Most people would call it the beginning of the string, but I know places where strings start on the right-hand side, so let's call it "left-hand side".)
 

@@ -12,7 +12,7 @@ archive: true
 ---
 
 
-As part of the [big counter example project](https://code-maven.com/counter), this example runs on the command line and uses a plain text file as <b>back-end database</b>.
+As part of the [big counter example project](https://code-maven.com/counter), this example runs on the command line and uses a plain text file as **back-end database**.
 It is probably the most basic version of all the [counter examples](https://code-maven.com/counter), that provides a single counter.
 
 

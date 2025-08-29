@@ -17,8 +17,8 @@ author: szabgab
 
 People arriving from other programming languages or from using Moose
 might be expecting to find a system for types checking, but Moo
-being the <b>Minimal Object Orientation</b> system of Perl, does
-<b>not</b> provide any type-checking.
+being the **Minimal Object Orientation** system of Perl, does
+**not** provide any type-checking.
 
 However you can easily add type checking of your own. Let's see how.
 

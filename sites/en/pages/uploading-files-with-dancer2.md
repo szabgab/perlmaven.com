@@ -17,7 +17,7 @@ Uploading images, or files in general was always a hot issue with all the web fr
 
 ## Create the HTML form for upload
 
-Save this as <b>views/upload.tt</b>
+Save this as **views/upload.tt**
 
 ```html
 <form action="/upload" method="POST" enctype="multipart/form-data">

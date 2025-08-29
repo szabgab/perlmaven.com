@@ -13,7 +13,7 @@ author: szabgab
 
 
 If you are not coming from a programming background it might not yet be clear what is really a file?
-What is a <b>binary file</b> and what makes something a <b>text file</b>?
+What is a **binary file** and what makes something a **text file**?
 
 Is a Microsoft Word document a text file or a binary file?
 
@@ -34,8 +34,8 @@ to satisfy your curiosity, then please check out those articles.
 Basically every file is just a series of bytes one after the other. That is, numbers between 0 and 255.
 In order to facilitate the storage device they are on, a file might be spread out to several areas on
 that device. From our point of view, each file is just a series of bytes.
-In general every file is a <b>binary file</b>, but if the data in it contains only text (letter, numbers
-and other symbols one would use in writing, and if it consists of lines, then we consider it a <b>text file</b>.
+In general every file is a **binary file**, but if the data in it contains only text (letter, numbers
+and other symbols one would use in writing, and if it consists of lines, then we consider it a **text file**.
 
 ## What is a text file?
 
@@ -45,22 +45,22 @@ and other symbols one would use in writing, and if it consists of lines, then we
 When you open a text file with Notepad or some other, simple text editor you will see several lines of text.
 The file on the disk on the other hand isn't broken up to such lines. It is a series of numbers
 one after the other. When you open the file using Notepad, it translates each number to a visual representation.
-For example if it encounters the number 97, it will show the letter <b>a</b>. We can say that the
+For example if it encounters the number 97, it will show the letter **a**. We can say that the
 `a character is represented by the number 97 in ASCII`.
 
 The reason that you see several lines in your editor is that some of the bytes in the file,
-that are called <b>newlines</b>, are actually instructions to the editor to go to the beginning of next line.
-Thus the character that was in the file after the <b>newline character</b> will be displayed in the next line.
+that are called **newlines**, are actually instructions to the editor to go to the beginning of next line.
+Thus the character that was in the file after the **newline character** will be displayed in the next line.
 
 ## What is a newline?
 
 Which number represents the newline?
 
-Actually none of the characters in the [ASCII table](http://en.wikipedia.org/wiki/ASCII) is called a <b>newline</b>.
-When we say <b>newline</b> we usually mean <b>the sign that can convince the computer to go to the beginning of next row</b>.
+Actually none of the characters in the [ASCII table](http://en.wikipedia.org/wiki/ASCII) is called a **newline**.
+When we say **newline** we usually mean **the sign that can convince the computer to go to the beginning of next row**.
 
-There are various sets of bytes that represent a <b>newline</b> depending on the operating system.
-In the operating systems we care about in this article a <b>newline</b> is always represented by a combination
+There are various sets of bytes that represent a **newline** depending on the operating system.
+In the operating systems we care about in this article a **newline** is always represented by a combination
 of two characters that in the ASCII table are called `LF - line feed` (hexa 0x0A or decimal 10) and
 `CR - carriage return` (hexa 0x0D or decimal 13).
 
@@ -72,8 +72,8 @@ beginning (and got stuck), further pulling of the handle turning the paper a bit
 carriage would point to the next line. Then the typewrite was ready for the next line.
 
 That is, they used two operations
-<b>carriage return</b>, pushing the "carriage" to the beginning of the paper and
-<b>line feed</b> - going to the next line.
+**carriage return**, pushing the "carriage" to the beginning of the paper and
+**line feed** - going to the next line.
 
 <img src="/img/Underwoodfive.jpg" alt="typewriter" />
 
@@ -82,13 +82,13 @@ That is, they used two operations
 Therefore on MS Windows, a newline is represented by two characters: `CRLF`.
 A `Carriage return` followed by a `line feed`.
 
-On Unix/Linux systems and on Mac OSX, the <b>newline</b> is represented by a single
+On Unix/Linux systems and on Mac OSX, the **newline** is represented by a single
 `LF` (`line feed`).
 
 Just for curiosity, Mac OS Classic (before OSX),
 Commodore, [ZX Spectrum](http://en.wikipedia.org/wiki/ZX_Spectrum),
 [TRS-80](http://en.wikipedia.org/wiki/TRS-80)
-all used a `CR` (`Carriage Return`) to represent a <b>newline</b>.
+all used a `CR` (`Carriage Return`) to represent a **newline**.
 
 (I learned programming on a HT-1080Z which was a TRS-80 clone and later switched
 to a ZX Spectrum.)
@@ -96,7 +96,7 @@ to a ZX Spectrum.)
 Wikipedia has even more to say about [newline](http://en.wikipedia.org/wiki/Newline).
 
 So if you have a file filled with [ASCII printable characters](http://en.wikipedia.org/wiki/ASCII)
-with a few "newlines" sprinkled in, then you have a <b>text file</b>.
+with a few "newlines" sprinkled in, then you have a **text file**.
 
 ## Encoding
 
@@ -129,7 +129,7 @@ encodings, but the browser uses a different encoding to show it. The solution wo
 to include a hint about the encoding in the HTML page, but at times people forget to do this.
 
 The other good solution is to use [UTF-8](http://en.wikipedia.org/wiki/UTF-8) encoding
-as this encoding maps out <b>all</b> the characters in the known universe. Unfortunately
+as this encoding maps out **all** the characters in the known universe. Unfortunately
 [Klingon](https://en.wikipedia.org/wiki/Klingon_writing_systems) is not yet included.
 
 [UTF-8](http://en.wikipedia.org/wiki/UTF-8) is one of good ways to
@@ -140,7 +140,7 @@ bytes. If you open a file that was written using the UTF-8 encoding, with a tool
 that can only handle ASCII characters, you will see lots of "garbage". That's because in UTF-8
 some of the characters are represented by numbers that are "control characters" in ASCII.
 
-So to the casual viewer, the file would be indistinguishable from a <b>binary file</b>.
+So to the casual viewer, the file would be indistinguishable from a **binary file**.
 
 ## Binary file
 

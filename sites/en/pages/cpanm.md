@@ -14,7 +14,7 @@ archive: true
 
 There are several ways to install Perl modules on your system from CPAN, but probably the best is to use
 [App::cpanminus](https://metacpan.org/pod/App::cpanminus) also known as [cpanmin.us](https://cpanmin.us/)
-or just <b>cpanm</b>.
+or just **cpanm**.
 
 
 This is the command you need to install cpanminus before you can use it to install additional modules.

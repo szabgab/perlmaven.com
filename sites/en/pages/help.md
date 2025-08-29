@@ -66,11 +66,11 @@ They usually have mailing lists or some other means to communicate.
 ## Learn Perl
 
 The [learn.perl.org](https://learn.perl.org/) site has some more information in its [FAQ](http://learn.perl.org/faq/) including the
-<b>Perl FAQ</b> on the right-hand side of that page.
+**Perl FAQ** on the right-hand side of that page.
 
 ## IRC
 
-On [perl.irc.org](http://www.irc.perl.org/) there are many Perl related channels but specifically the one called #Perl is <b>not</b>
+On [perl.irc.org](http://www.irc.perl.org/) there are many Perl related channels but specifically the one called #Perl is **not**
 a channel for helping people. For that you'd be better off going to the #perl channel on irc.freenode.net.
 
 In any case, please be warned that some channels might be rough at times.

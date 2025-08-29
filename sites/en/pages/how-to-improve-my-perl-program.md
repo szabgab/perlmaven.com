@@ -91,7 +91,7 @@ and similar functions,
 where unfortunately you can't avoid it.
 
 Anywhere else, if you have to type in `$_`, probably it is time to
-create your own variable with its <b>descriptive name</b>.
+create your own variable with its **descriptive name**.
 
 ## Always use strict and use warnings
 
@@ -160,7 +160,7 @@ it is better to write in one way, and then, please, pick the former.
 
 [Perl::Critic](http://metacpan.org/pod/Perl::Critic) is awesome, and I
 know the guy who wrote it! It comes with a command line tool called
-<b>perlcritic</b> that gets a filename a input and gives you a list
+**perlcritic** that gets a filename a input and gives you a list
 of things you can improve. It is configurable but the default
 (which is the gentle level 5) is a very good start.
 

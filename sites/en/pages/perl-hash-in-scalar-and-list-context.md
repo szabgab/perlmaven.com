@@ -84,7 +84,7 @@ So we know the hash will be flattened, and we know each pair will be in the expe
 
 ## Hash in scalar context
 
-The last value in both printouts is the value of the <b>hash in scalar context</b>. This is actually some internal number representing
+The last value in both printouts is the value of the **hash in scalar context**. This is actually some internal number representing
 the internal layout of the hash. It is not very useful except for the fact that this value will be 0 only if the hash itself is empty.
 So we can write code like this:
 
@@ -94,7 +94,7 @@ if (%color_of) {
 }
 ```
 
-and we can be sure that the block will be executed only if the hash was <b>not</b> empty.
+and we can be sure that the block will be executed only if the hash was **not** empty.
 
 
 ## Comments

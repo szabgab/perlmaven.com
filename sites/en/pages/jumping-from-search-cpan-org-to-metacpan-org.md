@@ -26,7 +26,7 @@ Given that link, how can we easily jump to the respective page on MetaCPAN?
 
 If after searching Google or DuckDuckGo, you reach a URL on search.cpan.org,
 something like [this](http://search.cpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm),
-you can add the letter <b>m</b> in-front of the word cpan in the URL to have [this link](http://search.mcpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm)
+you can add the letter **m** in-front of the word cpan in the URL to have [this link](http://search.mcpan.org/~capttofu/DBD-mysql-4.027/lib/DBD/mysql.pm)
 that will redirect you to the respective page on MetaCPAN.
 
 This is the change you need to make in the URL:

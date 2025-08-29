@@ -35,7 +35,7 @@ So let's delay the decision if list being ok or not ok to the end of processing 
 
 Every time when we encounter a line that looks like part of a numbered list we store the parsed data structure about it in the "list" attribute. Including the origial line as "raw". That will be useful in case we need to revert the whole thing to be a simple paragraph entry.
 
-In the `save_tag` we <b>should</b> verify that the number is correct, but for now we don't do that. We just add a <b>TODO</b> note to remind us to come back to this later. Fir now we assume that the list is correct.
+In the `save_tag` we **should** verify that the number is correct, but for now we don't do that. We just add a **TODO** note to remind us to come back to this later. Fir now we assume that the list is correct.
 
 We remove the attributes that we don't really need to save ("raw", "sep", "space"). They will be useful for the verification step that we are skipping now.
 

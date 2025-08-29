@@ -305,12 +305,12 @@ You can also turn of the buffering of STDOUT by setting `$|` to a [true](/boolea
 $|  = 1;
 ```
 
-I am not sure, but I think <b>Premature end of script headers</b>  is the same as <b>End of script output before headers</b>.
+I am not sure, but I think **Premature end of script headers**  is the same as **End of script output before headers**.
 
 <h3>503 Service Unavailable</h3>
 
 After I created the symbolic links to the cgid.* files and reloaded the Apache server,
-I got <b>503 Service Unavailable</b> in the browser and the following line in the log file:
+I got **503 Service Unavailable** in the browser and the following line in the log file:
 
 ```
 [Wed Mar 19 15:30:22.515457 2014] [cgid:error] [pid 3927:tid 140206699169536] (22)Invalid argument: [client 192.120.120.120:58349] AH01257: unable to connect to cgi daemon after multiple tries: /var/cgi-bin/echo.pl
@@ -327,7 +327,7 @@ In most of the situations a reload should be enough, but maybe not when a module
 
 <h3>404 Not Found</h3>
 
-If you get a <b>404 Not Found</b> error in the browser and
+If you get a **404 Not Found** error in the browser and
 
 ```
 [Wed Mar 19 15:35:13.487333 2014] [cgid:error] [pid 4194:tid 139911599433472] [client 192.120.120.120:58339] AH01264: script not found or unable to stat: /usr/lib/cgi-bin/echo.pl
@@ -338,7 +338,7 @@ in the error log, then maybe the `ScriptAlias` line is missing, or not pointing 
 
 <h3>403 Forbidden</h3>
 
-If you get a <b>403 Forbidden</b> error, the probably the `Directory` directive was not correctly configure
+If you get a **403 Forbidden** error, the probably the `Directory` directive was not correctly configure
 or does not point to the correct path.
 
 

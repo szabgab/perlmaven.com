@@ -189,7 +189,7 @@ Once that was done, I've uploaded the new zip file to [PAUSE](http://pause.perl.
 Normally PAUSE sends 2 e-mails. The first one, confirming the upload, usually arrives a few seconds after the file was uploaded.
 It contains the md5 checksum of the file. We can use that to verify that PAUSE has received the same file we sent.
 
-The second e-mail, well as I've just learned the second e-mail only arrives if this was <b>not</b> a developer release.
+The second e-mail, well as I've just learned the second e-mail only arrives if this was **not** a developer release.
 
 In a nutshell, the second e-mail is the result of PAUSE indexing the distribution, but the whole purpose of developer distributions
 is to avoid indexing, and thus avoid being the default release to be installed by the CPAN clients.

@@ -50,7 +50,7 @@ print "$highest\n";
 
 ## Getting the key of the highest value
 
-What if you need to return the key of the highest value? In our case, you'd expect <b>bar</b> to be returned.
+What if you need to return the key of the highest value? In our case, you'd expect **bar** to be returned.
 In that case we cannot use the `max` function of List::Util, because that just looks at the values given to
 so we have two choices.
 

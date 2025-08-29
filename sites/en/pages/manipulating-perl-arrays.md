@@ -66,7 +66,7 @@ array to the end of the `@names` array, extending it to a 5-element array.
 If you imagine the array starting on the left hand side,
 the `shift` function will move the whole array one unit to the left.
 The first element will "fall off" the array and become the function's return value.
-(If the array was empty, <b>shift</b> will return [undef](/undef-and-defined-in-perl).) 
+(If the array was empty, **shift** will return [undef](/undef-and-defined-in-perl).) 
 
 After the operation, the array will be one element shorter.
 

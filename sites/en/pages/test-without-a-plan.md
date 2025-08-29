@@ -80,9 +80,9 @@ That's not good. Let's look for other solutions.
 
 ## no_plan
 
-The expected number of tests is also usually referred to as <b>the plan</b>.
+The expected number of tests is also usually referred to as **the plan**.
 [Test::Simple](http://metacpan.org/pod/Test::Simple) actually allows us to run
-the tests without any <b>plan</b>. We only need to tell it that we have `no_plan`.
+the tests without any **plan**. We only need to tell it that we have `no_plan`.
 
 Let's try this:
 

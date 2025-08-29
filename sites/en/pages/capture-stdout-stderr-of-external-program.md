@@ -28,7 +28,7 @@ so you can easily see what it does and you can easily modify to se how our captu
 
 ## capture STDOUT and STDERR separately
 
-We use the <b>capture</b> function of Capture::Tiny that will wait till the end of the external process and then return whatever was printed
+We use the **capture** function of Capture::Tiny that will wait till the end of the external process and then return whatever was printed
 to STDOUT and STDERR separately as two strings. (The FindBin and File::Spec code is only there so we can easily locate the external program
 that can be found next to our capturing script.)
 

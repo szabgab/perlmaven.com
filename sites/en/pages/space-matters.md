@@ -65,7 +65,7 @@ The problem is that the regex operator was not written correctly. It should be `
 without any spaces between the two characters, but because there was a space, Perl understood
 that we wanted to use the `~`
 the [Bitwise operator](https://metacpan.org/pod/distribution/perl/pod/perlop.pod#Bitwise-String-Operators)
-on the <b>result</b> of `/(\d+)/` applied to the content of [$_](/the-default-variable-of-perl),
+on the **result** of `/(\d+)/` applied to the content of [$_](/the-default-variable-of-perl),
 the default variable of Perl.
 
 The thing that my be less well known is that if we have a regex expression such as

@@ -25,7 +25,7 @@ such data structures are called [FIFO - First in First out](http://en.wikipedia.
 because the first item that gets in the queue is the first that will leave it. Even if that happens
 later on. In general the sooner an item gets in the queue, the sooner it will get processed. 
 
-In Perl, a regular <b>array</b> can be used as a <b>queue</b>. We can use the
+In Perl, a regular **array** can be used as a **queue**. We can use the
 [>push](/manipulating-perl-arrays) function to
 add more elements to the "end" of the array (the side where the index has the highest number),
 and we can use the [shift](/manipulating-perl-arrays) function to fetch a value

@@ -31,8 +31,8 @@ There are many new features, let's start with some of the simple ones:
 
 ## say
 
-There is a new function called `say`. It is the same as <b>print</b>
-but it automatically adds a new line <b>\n</b> to every call.
+There is a new function called `say`. It is the same as **print**
+but it automatically adds a new line **\n** to every call.
 This does not sound like a big issue and it is indeed not a huge one, but
 nevertheless it saves a lot of typing, especially in debugging code.
 There are just so many times we type
@@ -63,11 +63,11 @@ use 5.010;
 
 ## defined or
 
-Another cute help is the <b>//</b> defined-or operator. It is nearly the
-same as the good old <b>||</b> but without the
+Another cute help is the **//** defined-or operator. It is nearly the
+same as the good old **||** but without the
 <i>"0 is not a real value"</i> bug:
 
-Earlier when we wanted to give a <b>default value</b> to a scalar we could write
+Earlier when we wanted to give a **default value** to a scalar we could write
 either
 
 ```perl
@@ -86,7 +86,7 @@ cases this is ok, in other cases this created a bug.
 
 The new defined-or operator can solve this problem as it will return
 the right hand side only if the left hand value is `undef`. So now
-we are going to have <b>short AND correct</b> form:
+we are going to have **short AND correct** form:
 
 ```perl
 $x //= $DEFAULT;
@@ -94,7 +94,7 @@ $x //= $DEFAULT;
 
 ## state
 
-Third thing I look at in this article is the new <b>state</b>
+Third thing I look at in this article is the new **state**
 keyword. This too is optional and is only included if you ask for it
 by saying
 
@@ -108,8 +108,8 @@ or by
 use 5.010;
 ```
 
-When used it is similar to <b>my</b> but it creates and initializes the
-variable only once. It is the same as the <b>static</b> variable in C.
+When used it is similar to **my** but it creates and initializes the
+variable only once. It is the same as the **static** variable in C.
 Earlier we had to write something like this:
 
 ```perl

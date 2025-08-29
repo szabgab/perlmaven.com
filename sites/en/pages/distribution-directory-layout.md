@@ -74,7 +74,7 @@ to check if all the files were included in the distribution. In the directory tr
 of temporary files that you don't want to include in the distribution. So you won't list them in the MANIFEST.
 
 This file can be maintained manually or, alternatively, you can keep a file called `MANIFEST.SKIP` that lists
-the files that <b>should not</b> be included. Then during the packaging, you can generate the `MANIFEST`
+the files that **should not** be included. Then during the packaging, you can generate the `MANIFEST`
 file based on what you have in the directory skipping the ones mentioned in the `MANIFEST.SKIP`.
 The advantage of using `MANIFEST.SKIP` is that it can include wildcards that will match a full set of files.
 

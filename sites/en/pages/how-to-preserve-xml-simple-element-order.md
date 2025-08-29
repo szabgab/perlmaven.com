@@ -23,7 +23,7 @@ For some XML document types you might be able to hack it in by subclassing
 XML::Simple and overriding the new_hashref() method to supply a hashref tied to Tie::IxHash.
 That could solve the ABC case but it won't solve the ABA case.
 
-The short answer is that if you care about element order then you should <b>not use XML::Simple</b>.
+The short answer is that if you care about element order then you should **not use XML::Simple**.
 [XML::LibXML](https://metacpan.org/pod/XML::LibXML) is an excellent alternative which for many use cases is really no harder
 to use than XML::Simple.
 

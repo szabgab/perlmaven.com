@@ -25,7 +25,7 @@ For this in [Moose](/moose) we can use coercion.
 
 <slidecast file="advanced-perl/moose/coerce-to-subtype" youtube="z_w2ObbFfWY" />
 
-See the <b>script/person.pl</b> file for how we would like to use the class:
+See the **script/person.pl** file for how we would like to use the class:
 
 ```perl
 use strict;

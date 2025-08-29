@@ -155,7 +155,7 @@ sub Cmp {
 }
 ```
 
-While `perlcritic` has not reported this, one should <b>not</b> use `$a` and `$b` in any situation
+While `perlcritic` has not reported this, one should **not** use `$a` and `$b` in any situation
 except when calling `sort`. Otherwise they can just confuse the readers. So we rename those to `$x` and `$y`,
 and the `open` calls were also changed, and even the name of the function was changed to be the same in both file.
 

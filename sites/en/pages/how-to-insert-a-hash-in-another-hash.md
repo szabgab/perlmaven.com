@@ -58,7 +58,7 @@ the same way if we assigned it back to either of the `%team_a` or `%team_b`.
 {% include file="examples/insert_hash_ref_in_hash.pl" %}
 
 In this example we start with the same two hashes, but instead of merging them together we insert a reference to first
-hash into the second hash as the <b>value</b> of a new key.
+hash into the second hash as the **value** of a new key.
 
 `$team_b{other} = \%team_a;`
 

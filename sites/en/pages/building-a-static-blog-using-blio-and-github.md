@@ -23,7 +23,7 @@ As I mentioned Blio, has not been released yet so the way to install
 it is to get the latest version from [Github](https://github.com/domm/Blio).
 
 If you have git installed you can use `git clone git://github.com/domm/Blio.git` to fetch
-the latest version. Alternatively, there is a button <b>ZIP</b> on the
+the latest version. Alternatively, there is a button **ZIP** on the
 [Github page of Blio](https://github.com/domm/Blio). You can download the latest version
 of the source code using that button, and then you can unzip it.
 
@@ -67,12 +67,12 @@ Once you have installed everything you can go ahead and build your first site:
 
 ## Simple setup
 
-Create an empty directory, let's call it <b>perl_blog</b>.
+Create an empty directory, let's call it **perl_blog**.
 
-Inside the <b>perl_blog</b> directory, you have to create a file called <b>blio.ini</b>.
-It can be empty, but it must exist. (If using a Linux system, you can just type <b>touch blio.ini</b>.)
+Inside the **perl_blog** directory, you have to create a file called **blio.ini**.
+It can be empty, but it must exist. (If using a Linux system, you can just type **touch blio.ini**.)
 
-In addition, create a subdirectory called <b>src</b> and create a file called <b>src/index.txt</b>
+In addition, create a subdirectory called **src** and create a file called **src/index.txt**
 with the following content:
 
 ```
@@ -81,11 +81,11 @@ title: Experimenting with Blio
 Hello world
 ```
 
-Pay attention that the filename is all lower case. The extension is <b>.txt</b>.
+Pay attention that the filename is all lower case. The extension is **.txt**.
 The first part of the file is the header, there are more parts of it but, the title is required. After the empty line comes the content of the page.
 
-Once you have this you can run <b>blio.pl</b> (while being in the perl_blog directory) that was installed when you installed Blio.
-It will create a directory called <b>out</b> and a file called <b>index.html</b> that was generated from the index.txt file.
+Once you have this you can run **blio.pl** (while being in the perl_blog directory) that was installed when you installed Blio.
+It will create a directory called **out** and a file called **index.html** that was generated from the index.txt file.
 
 The directory layout looks like this now:
 
@@ -105,7 +105,7 @@ how to deploy the site to Github.
 
 ## Create Git repository for the source
 
-The <b>out</b> directory should not be in the source repository so let's remove it for now: `rm -rf out`
+The **out** directory should not be in the source repository so let's remove it for now: `rm -rf out`
 Create a git repository `git init`. Add all the necessary files: `git add blio.ini src` and commit this:
 `git commit -m "initial version"`.
 
@@ -121,7 +121,7 @@ You can create a github repository called USERNAME.github.com (where USERNAME is
 it will be accessible as http://USERNAME.github.com/. Not only that, but you can even ask Github to serve the
 same pages when someone visits www.yourdomain.com.
 
-In my case, I created a directory next to the perl_blog directory called <b>szabgab.github.com</b>. That directory
+In my case, I created a directory next to the perl_blog directory called **szabgab.github.com**. That directory
 will contain all the files needed on the web site. Both the generated files and other static files (e.g. CSS).
 
 Now you can run `blio.pl --output_dir ../szabgab.github.com` (replacing szabgab with your username).
@@ -162,13 +162,13 @@ setting up your own domain. It only costs 10-20 USD/year. A very good investment
 
 Once you have a domain you can set it up to point to Github and tell github to serve your pages when someone
 is accessing Github via that domain. For this you need to tell your DNS provider to point your host names
-to Github and you have to add a file called <b>CNAME</b> in your repository (containing the output files)
+to Github and you have to add a file called **CNAME** in your repository (containing the output files)
 with the hostname as the content.
 
 As I only use the [Github Pages](http://pages.github.com/) for these experiments, I will use
 a hostname in my personal domain. So I set up github.szabgab.com to point to the github server as
 described in [Setting up a custom domain with Github Pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages)
-and added a file called CNAME with one line in it: <b>github.szabgab.com</b>.
+and added a file called CNAME with one line in it: **github.szabgab.com**.
 
 After another tea (and some more sharing of this article) you can check visit USERNAME.github.com again. It will automatically
 redirect to the hostname you set up and it will show the same demo page we created.

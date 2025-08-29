@@ -17,7 +17,7 @@ author: szabgab
 
 
 In this episode of the [Perl tutorial](/perl-tutorial) we are going to look at
-<b>context sensitivity</b> in Perl.
+**context sensitivity** in Perl.
 
 In English, as in most of the other spoken languages, words can have multiple meanings.
 For example the word "left" has several meanings:
@@ -59,7 +59,7 @@ my $people =  @words;
 This time we assigned the `@words` array to `$people`, a scalar variable.
 
 Other languages would behave differently, but in Perl this
-assignment places <b>the number of elements of the array</b>
+assignment places **the number of elements of the array**
 in the scalar variable.
 
 That's arbitrary, and in the above case not very useful either, but there are a number of other
@@ -212,12 +212,12 @@ Foo
 This is one of the few places where the parentheses are very important.
 
 In the first assignment `my ($x) = @words;` we assigned
-to a <b>list</b> of scalar variable(s).
-That created LIST context on the right hand side. That means the <b>values</b>
+to a **list** of scalar variable(s).
+That created LIST context on the right hand side. That means the **values**
 of the array were copied to the list on the left hand side. Because there was only
 one scalar, the first element of the array got copied and the rest not.
 
-In the second assignment `my $y   = @words;` we assigned <b>directly</b> to
+In the second assignment `my $y   = @words;` we assigned **directly** to
 a scalar variable. That created SCALAR context on the right hand side. An array in
 SCALAR context returns the number of elements in it.
 
@@ -258,7 +258,7 @@ function in LIST context. If you don't remember, check it out in the episode abo
 
 The solution is to use the `scalar()` function that  will create SCALAR context for its parameter.
 Actually that's the whole job of the `scalar()` function. Some people might think about it as
-<b>casting</b> from plural to singular, even though I think this word is not used often in Perl-land.
+**casting** from plural to singular, even though I think this word is not used often in Perl-land.
 
 ```perl
 say scalar @words;

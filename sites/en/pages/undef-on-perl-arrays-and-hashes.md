@@ -116,7 +116,7 @@ $VAR1 = [
         ];
 ```
 
-This is <b>NOT what you want</b>!
+This is **NOT what you want**!
 
 
 ## undef on hash elements
@@ -196,10 +196,10 @@ It looks a bit odd. What happened here is that the `undef` we typed in was conve
 generating the [Use of uninitialized value in list assignment at ...](/use-of-uninitialized-value) warning.
 This became the key in the hash.
 
-Then there was no corresponding value. This generated the <b>Odd number of elements in hash assignment</b> warning, and
+Then there was no corresponding value. This generated the **Odd number of elements in hash assignment** warning, and
 an `undef` was assigned to be the value of the empty-string key.
 
-In any case, this is <b>NOT what you want</b>!
+In any case, this is **NOT what you want**!
 
 As a conclusion let me try to answer to straight forward question:
 

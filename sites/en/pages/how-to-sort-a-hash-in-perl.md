@@ -21,13 +21,13 @@ This question comes up often, and every time it might hide something interesting
 
 One of the important features of a hash, or hashmap, or dictionary,
 or associative array as some other languages
-like to call it, is that it is a set of <b>unsorted</b> key-value pairs.
+like to call it, is that it is a set of **unsorted** key-value pairs.
 
-So when someone asks <b>how to sort a hash?</b>, the reaction usually is that you <b>cannot sort a hash</b>.
+So when someone asks **how to sort a hash?**, the reaction usually is that you **cannot sort a hash**.
 The other reaction might be pointing people to tool that can handle a [sorted hash](/sorted-hash-tie-ixhash)
 even though that has a significant run-time penalty.
 
-So what do people really mean when they want to <b>sort a hash?</b>
+So what do people really mean when they want to **sort a hash?**
 
 
 ## How to sort a hash?
@@ -71,7 +71,7 @@ stable between runs, starting from 5.18.0, even that is very unlikely.
 
 ## Sort the hash in alphabetical order of its keys
 
-When someone wants to <b>sort a hash</b>, one possibility is that he wants to sort
+When someone wants to **sort a hash**, one possibility is that he wants to sort
 the planets in alphabetical order. That's quite easy.
 
 ```perl
@@ -108,7 +108,7 @@ foreach my $name (sort {lc $a cmp lc $b} keys %planets) {
 }
 ```
 
-That's OK, but what if what we want is to <b>sort the values of the hash</b>?
+That's OK, but what if what we want is to **sort the values of the hash**?
 
 ## Sort the values of the hash
 
@@ -162,12 +162,12 @@ foreach my $distance (sort {$a <=> $b} values %planets) {
 39
 ```
 
-But ultimately someone will ask us: <b>OK, but how can I get back the names of the planets from the values?</b> 
+But ultimately someone will ask us: **OK, but how can I get back the names of the planets from the values?** 
 And you can't. For one the mapping of the hash is one-directional: from key to value, but maybe
 more importantly, the values are not required to be unique. In our example, both Pluto and Charon
 are at the same average distance from the Sun.
 
-What is more likely is that we wanted to <b>Sort the names of the planets according to their distance form the Sun</b>.
+What is more likely is that we wanted to **Sort the names of the planets according to their distance form the Sun**.
 In more general wording:
 
 ## Sort the keys of the hash according to the values 

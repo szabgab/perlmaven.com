@@ -43,7 +43,7 @@ Alternatively, save this as rename.pl, replace the `my $dir ...` line by
 `my $dir = "/full/path/to/dir";`
 and then you can run it without passing the directory name on the command line.
 
-On <b>Windows</b> the path name should be either using slashes:
+On **Windows** the path name should be either using slashes:
 `my $dir = "c:/full/path/to/dir";`,
 or using pairs of back-slashes: `my $dir = "c:\\full\\path\\to\\dir";`.
 

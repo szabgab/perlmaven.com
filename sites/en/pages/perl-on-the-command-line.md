@@ -14,7 +14,7 @@ author: szabgab
 
 
 While most of the [Perl tutorial](/perl-tutorial) deals with scripts saved in a
-file, we'll also see a couple of examples of <b>one-liners</b>.
+file, we'll also see a couple of examples of **one-liners**.
 
 Even if you are using [Padre](http://padre.perlide.org/)
 or some other IDE that would let you run your script from the editor itself,
@@ -93,11 +93,11 @@ example, without explaining it:
 ## Replace Java by Perl
 
 This command: `perl -i.bak -p -e "s/\bJava\b/Perl/" resume.txt`
-will replace all appearance of the word <b>Java</b> by the word <b>Perl</b> in your
+will replace all appearance of the word **Java** by the word **Perl** in your
 résumé while keeping a backup of the file.
 
 On Linux you could even write this `perl -i.bak -p -e 's/\bJava\b/Perl/' *.txt`
-to replace Java by Perl in <b>all</b> your text files.
+to replace Java by Perl in **all** your text files.
 
 (Again, please note, on Linux/Unix you should probably always use single-quotes on the command line,
 while on Windows double-quotes.)

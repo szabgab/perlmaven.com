@@ -18,7 +18,7 @@ author: szabgab
 On one hand it is recommended to have warnings turned on in every Perl script and module,
 on the other hand you don't want your customers to see warnings from Perl.
 
-On one hand you want to <b>use warnings</b> at the beginning of the code and have your safety
+On one hand you want to **use warnings** at the beginning of the code and have your safety
 net
 
 On the other hand, usually  showing up on their screen.
@@ -39,7 +39,7 @@ that your application will never print a warning.
 
 Or can you?
 
-<b>You can catch the warnings before they are printed to the screen.</b>
+**You can catch the warnings before they are printed to the screen.**
 
 ## Signals
 

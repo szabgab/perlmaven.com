@@ -18,7 +18,7 @@ What is the difference between `subname $param` and `subname($param)`?
 One seems to work, the other throws an error `Can't call method ... on unblessed reference`.
 </blockquote>
 
-In other words:  <b>do you have to put parentheses around the parameters of function calls?</b>
+In other words:  **do you have to put parentheses around the parameters of function calls?**
 
 
 Let's look at some things:
@@ -98,7 +98,7 @@ already loaded the `Storable` module.
 `require` and `eval "use ...";` happens at run time, so when perl compiles the
 `Storable::freeze $data` call, it does not know that there is going to be a `Storable::freeze`
 functions. At this point it needs to guess what this code is, and it guesses, incorrectly,
-that we are using the so-called <b>indirect object notation</b>. It thinks `$data` is going to be
+that we are using the so-called **indirect object notation**. It thinks `$data` is going to be
 an object and `Storable::freeze` is a method of this object.
 
 That's why B::Deparse shows this code as `$data->Storable::freeze;`.

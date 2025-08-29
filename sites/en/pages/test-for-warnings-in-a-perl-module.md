@@ -41,9 +41,9 @@ warning at the right time?
 
 ## The warning signal __WARN__
 
-In Perl, every call to <b>warn</b> emits an internal signal. You can set up your test code to
+In Perl, every call to **warn** emits an internal signal. You can set up your test code to
 [capture and save any warnings](/how-to-capture-and-save-warnings-in-perl)
-using <b>$SIG{__WARN__}</b> and then examine if the warning was the right one.
+using **$SIG{__WARN__}** and then examine if the warning was the right one.
 
 Something like this:
 

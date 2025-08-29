@@ -8,7 +8,7 @@ author: szabgab
 ---
 
 
-This is the list of <b>all</b> the Perl-based open source products I am aware of.
+This is the list of **all** the Perl-based open source products I am aware of.
 
 Especially if we focus on products serving the generic public.
 Not just other Perl developers.

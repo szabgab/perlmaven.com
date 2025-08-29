@@ -12,8 +12,8 @@ show_related: true
 ---
 
 
-The process number of the current script / program / executable. Natively Perl provieds the <b>$$</b> variable, but if you load the [English](/english) module
-you can also use the <b>$PROCESS_ID</b> or the <b>$PID</b> variable names for the same thing.
+The process number of the current script / program / executable. Natively Perl provieds the **$$** variable, but if you load the [English](/english) module
+you can also use the **$PROCESS_ID** or the **$PID** variable names for the same thing.
 
 
 See also [Forking, Process ID, Parent Process ID, init](/forking-pid-ppid)

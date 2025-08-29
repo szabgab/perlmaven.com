@@ -35,7 +35,7 @@ Visit [Travis-CI](https://travis-ci.org/), log in with your GitHub account and l
 
 If you have already done this earlier, then for a new GitHub project you might need to manually ask Travis to sync the list.
 
-For this visit your [Profile](https://travis-ci.org/profile/) and click on the <b>Sync account</b>. After a few seconds you'll
+For this visit your [Profile](https://travis-ci.org/profile/) and click on the **Sync account**. After a few seconds you'll
 be able to locate the entry of your project.
 
 Look at the relevant switch which is currently off:

@@ -15,7 +15,7 @@ If you get a [warning or error from Perl](/common-warnings-and-error-messages) t
 
 * Ask for [help](/help) in one of the channels mentioned [here](/help)
 * Check out the alternative, and hopefully [beginner friendly explanations](/common-warnings-and-error-messages) on the Perl Maven site.
-* Turn on <b>diagnostics</b> or use <b>splain</b>.
+* Turn on **diagnostics** or use **splain**.
 
 
 Beyond the short error message or warning you get from perl, you can also ask perl to provide you a long

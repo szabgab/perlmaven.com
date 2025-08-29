@@ -23,7 +23,7 @@ code against a set of policies.
 After installing Perl::Critic from CPAN, you'll get a tool called `perlcritic`.
 You can invoke it on the command line:
 
-<b>perlcritic lib/Module/Name.pm</b>
+**perlcritic lib/Module/Name.pm**
 
 It can generate a lot of output.
 
@@ -47,7 +47,7 @@ a bigger number to provide more details. (According to the documentation, N can 
 
 
 At level 8, it starts to display the name of the policy:
-Running this command: <b>perlcritic --verbose 8 lib/Module/Name.pm</b>
+Running this command: **perlcritic --verbose 8 lib/Module/Name.pm**
 
 will change the report to look like this:
 
@@ -78,12 +78,12 @@ You can turn off those that make a lot of noise, and fix them one-by-one.
 So how can you ask perlcritic to check for a specific policy? There is a flag for that called
 `--single-policy`
 
-<b>perlcritic --single-policy  Subroutines::ProhibitSubroutinePrototypes lib/Module/Name.pm</b>
+**perlcritic --single-policy  Subroutines::ProhibitSubroutinePrototypes lib/Module/Name.pm**
 
 That's wonderful. Now I can see every place where this specific policy is violated and fix it.
 This will work even if you still have the policy turned off in the configuration file.
 
-Before fixing though, I should either read the explanation in the <b>Perl Best Practices</b>
+Before fixing though, I should either read the explanation in the **Perl Best Practices**
 book or read the community contributed explanations.
 That's easy. Just turn the verbosity level to 10, and you will get out like this:
 

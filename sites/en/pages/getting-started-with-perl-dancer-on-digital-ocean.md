@@ -39,48 +39,48 @@ on a [Digital Ocean](/digitalocean) droplet.
 
 First you need to visit [Digital Ocean](/digitalocean) (This is an affiliate link, I'll earn some credits
 if you use this link to sign up.), provide your credit card information. Once you are in you need to create a
-server instance. They call these <b>Droplets</b>. There is a big green button to <b>Create</b> droplets.
+server instance. They call these **Droplets**. There is a big green button to **Create** droplets.
 
-You need to supply the <b>Droplet hostname</b> which can be any word. You can pick <b>foo</b> or <b>web1</b> or whatever you like.
-I picked <b>s12</b> for this server.
+You need to supply the **Droplet hostname** which can be any word. You can pick **foo** or <b>web1</b> or whatever you like.
+I picked **s12** for this server.
 This is the internal name.
 
-Then you need to <b>select the size</b>. I go with the smallest: 512 Mb / 1 CPU / 20 Gb SSD disk / 1 TB transfer that costs $5 / month.
+Then you need to **select the size**. I go with the smallest: 512 Mb / 1 CPU / 20 Gb SSD disk / 1 TB transfer that costs $5 / month.
 I have not tried this yet, but if I understand correctly, I could create and destroy servers for much shorter periods and pay
 by the hour. This could be a lot of fun playing with setup.
 
-The third thing to select is the <b>region</b>. Unless there is some really important reason to pick a specific data-center, you
-can go with any of those. I picked <b>Amsterdam 1</b>.
+The third thing to select is the **region**. Unless there is some really important reason to pick a specific data-center, you
+can go with any of those. I picked **Amsterdam 1**.
 
-In the <b>Select Image</b> section, we need to select the Linux distribution we'll be using. You can pick your favorite one.
-I'll use <b>Ubuntu 13.04 x64</b> for this article. This is the latest 64bit release of [Ubuntu](http://www.ubuntu.com/).
+In the **Select Image** section, we need to select the Linux distribution we'll be using. You can pick your favorite one.
+I'll use **Ubuntu 13.04 x64** for this article. This is the latest 64bit release of [Ubuntu](http://www.ubuntu.com/).
 
-At the bottom you can then click on the big green button that says <b>Create Droplet</b>.
+At the bottom you can then click on the big green button that says **Create Droplet**.
 
 They will start building the server which takes about 60 seconds and send you an e-mail containing the IP address and the password of
 root. This is not the most secure process, but we'll change the password very soon so I don't think this is a big issue.
 
-If you are worried they also allow you to provide a public key <b>before</b> you create the droplet and then they will install that
+If you are worried they also allow you to provide a public key **before** you create the droplet and then they will install that
 key instead of sending you a password.
 
 <h2 id="basic">Basic configuration of the server</h2>
 
 In the e-mail you will see instructions how to ssh to the server.
-If you are a command line user, you can use the <b>ssh root@1.2.3.4</b> command, with
+If you are a command line user, you can use the **ssh root@1.2.3.4** command, with
 the IP address of your server.
 
 If you run Windows, you will need to install an SSH client. I'd recommend installing
 [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
-You just need to download the <b>putty.exe</b> file and you can double-click on it as it is.
+You just need to download the **putty.exe** file and you can double-click on it as it is.
 There is no need for any further "installation".
-Once the initial window of Putty has opened, there is a field for <b>Host Name (or IP address)</b>
-and a radio selector where you need to select <b>SSH</b>. Then press <b>Open</b>. This will get
-you to a window asking for <b>Username:</b>. There you type in <b>root</b> and press ENTER.
-It will then ask you for <b>Password:</b> and you type in the password you got in the e-mail.
+Once the initial window of Putty has opened, there is a field for **Host Name (or IP address)**
+and a radio selector where you need to select **SSH**. Then press **Open**. This will get
+you to a window asking for **Username:**. There you type in **root** and press ENTER.
+It will then ask you for **Password:** and you type in the password you got in the e-mail.
 
-The first thing we need to do is to change the password. So type in <b>passwd</b> and press ENTER. It will
+The first thing we need to do is to change the password. So type in **passwd** and press ENTER. It will
 ask for a password and then it will ask you to repeat it. Please give a long password that you can remember.
-Something like <b>The secret of a secure server</b> is probably a good password. If you also add some numbers
+Something like **The secret of a secure server** is probably a good password. If you also add some numbers
 and some strange characters, it will become even stronger.
 
 ```
@@ -96,7 +96,7 @@ A Linux distribution consists of thousands of separate packages.
 Most Linux distributions constantly release fixes to these package and it is very likely that the droplet
 we created used an earlier set of these packages. So we should update and upgrade those packages:
 
-<b>aptitude update</b> will download the most recent list of packages and their version numbers. This is usually
+**aptitude update** will download the most recent list of packages and their version numbers. This is usually
 done automatically, but we don't want to wait for that now.
 
 ```
@@ -108,8 +108,8 @@ Get: 2 http://archive.ubuntu.com raring-updates Release.gpg [933 B]
 ```
 
 
-<b>aptitude safe-upgrade</b> will first list the packages that need to be upgraded and ask:
-<b>Do you want to continue? [Y/n/?]</b>. If we press ENTER it will download these packages
+**aptitude safe-upgrade** will first list the packages that need to be upgraded and ask:
+**Do you want to continue? [Y/n/?]**. If we press ENTER it will download these packages
 and install them on the system.
 
 
@@ -133,14 +133,14 @@ Do you want to continue? [Y/n/?]
 
 If it asks questions about keeping the current version of various configuration files, you can usually just press ENTER. At this point this does not really matter.
 
-Once the upgrade has finished it is recommended to <b>reboot</b> the system. Type in <b>reboot</b>. As the machine restarts this will disconnect
+Once the upgrade has finished it is recommended to **reboot** the system. Type in **reboot**. As the machine restarts this will disconnect
 you and you will need to connect to it via ssh (putty) again, after some time. (Maybe 30 sec?). Remember, you have changed the password!
 
 
 <h2 id="aptitude">Installing packages</h2>
 
 As I mentioned every Linux distribution, and so Ubuntu too, comes with a lot of packages. Some of them are installed by default.
-Others need to be installed manually. Usually the way to install a package is to type <b>aptitude install package-name</b>.
+Others need to be installed manually. Usually the way to install a package is to type **aptitude install package-name**.
 We will need a few of them so we type:
 
 ```
@@ -149,7 +149,7 @@ root@s12:~# aptitude install nginx
 
 In some cases it will install the package right away, in other cases it might list what other packages need
 to be installed for the selected one to work (e.g. the dependencies on nginx) and it will ask you:
-<b>Do you want to continue? [Y/n/?]</b>. Just press ENTER.
+**Do you want to continue? [Y/n/?]**. Just press ENTER.
 
 We have just installed the [nginx](http://nginx.org/) web server. We still need to start it for the first time.
 Type:
@@ -161,7 +161,7 @@ root@s12:~# service nginx start
 Now you can open your browser and browse to the IP address of the server. Don't forget to add http:// in front of the IP
 address as some of the browsers will not add it automatically. So if your IP address is 1.2.3.4 then type in the
 address bar of your server: http://1.2.3.4/
-You will see <b>Welcome to nginx!</b> or some similar message.
+You will see **Welcome to nginx!** or some similar message.
 
 We will need a few more packages, so let's install those as well:
 
@@ -196,7 +196,7 @@ starman@s12:~$ exit
 
 <h2 id="perlbrew">Brewing Perl</h2>
 
-If you run <b>perl -v</b> you will see the server already has perl installed. It is usually referred to as <b>system perl</b>.
+If you run **perl -v** you will see the server already has perl installed. It is usually referred to as **system perl**.
 As we are going to install all kinds of modules from CPAN some of those might interfere with modules used by the system.
 So the usual recommendation is to build a separate perl installation and use that for the application. That's what we are
 going to do. We will use [Perlbrew](http://perlbrew.pl/) for this to make the operation smooth.
@@ -211,7 +211,7 @@ starman@s12:~$ \curl -L http://install.perlbrew.pl | bash
 
 This will install Perlbrew.
 
-(BTW, if you wondering about the backslash prefix, it ensures that no local <b>alias</b> will
+(BTW, if you wondering about the backslash prefix, it ensures that no local **alias** will
 interfere with the command.
 See [here](http://stackoverflow.com/questions/15691977/why-start-a-shell-command-with-a-backslash))
 
@@ -253,8 +253,8 @@ As of the time of this writing this was the list:
   perl5.003_07
 ```
 
-<b>5.19.4</b> is a development release (19, the second part of the version number is an odd number) and the most recent stable release is
-<b>5.18.1</b>. So we'll install that version:
+**5.19.4** is a development release (19, the second part of the version number is an odd number) and the most recent stable release is
+**5.18.1**. So we'll install that version:
 
 ```
 starman@s12:~$ perlbrew install perl-5.18.1
@@ -264,14 +264,14 @@ This will download the source of perl, compile it and test it.
 This can take quite some time. 10-20 minutes or even more.
 So this might be a good time to stretch a bit.
 
-Once perl was built we can first <b>list</b> all the installed versions of perl:
+Once perl was built we can first **list** all the installed versions of perl:
 
 ```
 starman@s12:~$ perlbrew list
   perl-5.18.1
 ```
 
-and we can <b>switch</b> to it using the following command:
+and we can **switch** to it using the following command:
 
 ```
 starman@s12:~$ perlbrew switch perl-5.18.1
@@ -308,7 +308,7 @@ The command
 starman@s12:~$ dancer2 -a Demo
 ```
 
-will create a subdirectory called Demo and inside a skeleton of an application, called <b>Demo</b>.
+will create a subdirectory called Demo and inside a skeleton of an application, called **Demo**.
 You can of course use any name as the name of your application, but it is usually recommended to start
 with a capital letter and then use lower case letters in the name.
 
@@ -382,7 +382,7 @@ http://1.2.3.4:5000
 
 <h2 id="nginx">Configure nginx as a proxy</h2>
 
-As user `starman` create the file <b>/home/starman/nginx-demo.conf</b> with the following content:
+As user `starman` create the file **/home/starman/nginx-demo.conf** with the following content:
 
 {% include file="examples/nginx-demo.conf" %}
 
@@ -413,7 +413,7 @@ No further changes are required to your configuration for this.
 
 As you continue developing your application you will notice that the changes you make to files
 are not automatically reflected on the web site. This is normal. After all we just set up the
-<b>deployment environment</b> for your application.
+**deployment environment** for your application.
 
 If you want the new code to take effect, you'll need to restart Starman.
 As `root` run:

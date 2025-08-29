@@ -12,8 +12,8 @@ author: szabgab
 
 
 In some languages there is a special way to say "this field does not have a value".
-In <b>SQL</b>, <b>PHP</b> and <b>Java</b> this would be `NULL`. In <b>Python</b> it is `None`.
-In <b>Ruby</b> it is called `Nil`.
+In **SQL**, **PHP** and <b>Java</b> this would be `NULL`. In <b>Python</b> it is `None`.
+In **Ruby** it is called `Nil`.
 
 In Perl the value is called `undef`.
 
@@ -50,7 +50,7 @@ $x = undef;
 
 The parentheses after the function name are optional and thus I left them out in the example.
 
-As you can see there are a number of ways to get <b>undef</b> in a scalar variable.
+As you can see there are a number of ways to get **undef** in a scalar variable.
 The question is then, what happens if you use such variable?
 
 Before that though, let's see something else:
@@ -58,8 +58,8 @@ Before that though, let's see something else:
 ## How to check if a value or variable is undef?
 
 The `defined()` function will return [true](/boolean-values-in-perl) if
-the given value is <b>not undef</b>. It will return [false](/boolean-values-in-perl)
-if the given value is <b>undef</b>.
+the given value is **not undef**. It will return [false](/boolean-values-in-perl)
+if the given value is **undef**.
 
 You can use it this way:
 
@@ -82,7 +82,7 @@ if (defined $x) {
 
 ## What is the real value of undef?
 
-While <b>undef</b> indicates the absence of a value, it is still not unusable.
+While **undef** indicates the absence of a value, it is still not unusable.
 Perl provides two usable default values instead of undef.
 
 If you use a variable that is undef in a numerical operation, it pretends to be 0.

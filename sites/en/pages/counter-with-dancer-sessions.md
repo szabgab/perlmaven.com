@@ -151,7 +151,7 @@ get '/' => sub {
 If we now reload the browser several times, we'll be able to see the counter incrementing on the console.
 Unfortunately we'll also see the plackup server restarting itself after every time we load the page.
 
-This, as I found out later, is because the `-R .` flag tells plackup to restart the server if <b>any</b> file changes in the
+This, as I found out later, is because the `-R .` flag tells plackup to restart the server if **any** file changes in the
 whole directory tree. As we keep updating the session file in the `sessions/` directory, plackup
 will keep reloading the server.
 

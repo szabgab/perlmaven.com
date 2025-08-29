@@ -92,7 +92,7 @@ We can now play with the command line shell of mongodb and fetch some other mess
 where the address of the From-field matches that value.
 
 Respectively `db.messages.find( {'To.address': 'foovar@qux.com'} )` will fetch
-all the messages where <b>one of the addresses</b> of the To field match.
+all the messages where **one of the addresses** of the To field match.
 
 Before executing a find() in the shell we might want to execute a
 `db.messages.find( {'To.address': 'foovar@qux.com'} ).count()` that will return the number

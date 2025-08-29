@@ -11,7 +11,7 @@ author: szabgab
 
 
 Just recently I've started to play with [Rex](http://www.rexify.org/) which is a tool for automating server management.
-Part of the <b>DevOps</b> revolution.
+Part of the **DevOps** revolution.
 I have not used [Chef](https://www.getchef.com/) or [Puppet](http://puppetlabs.com/) before, so I did not know what to
 expect, but so far I love it.
 
@@ -22,7 +22,7 @@ More specifically, how can you make sure that if someone gets access to the scri
 In this article you'll see a couple of way to handle authentication. Each one with its own issues.
 
 
-The part of my <b>Rexfile</b> that does the real work looks like this:
+The part of my **Rexfile** that does the real work looks like this:
 
 ```perl
 group myservers => "perlmaven.com", "perlide.org";
@@ -155,7 +155,7 @@ If we have such key-pair, we can make our Rexfile more secure.
 
 First of all we need to manually ssh to the target server as user 'root' and create the .ssh directory.
 Then we copy the public key which is usually stored as `.ssh/id_rsa.pub` on our machine, to the `.ssh/authorized_keys` file on the server.
-If you already had such file with keys in it, make sure you <b>add</b> the new key to it instead of overwriting the whole file.
+If you already had such file with keys in it, make sure you **add** the new key to it instead of overwriting the whole file.
 
 ```
 $ ssh root@perlmaven.com "mkdir .ssh"
@@ -267,7 +267,7 @@ If we want to allow foobar to execute any command via `sudo` without even provid
 foobar   ALL=(ALL:ALL) NOPASSWD:ALL
 ```
 
-In order to get Rex to use `sudo` we can add the following line to the <b>Rexfile</b>:
+In order to get Rex to use `sudo` we can add the following line to the **Rexfile**:
 
 ```perl
 sudo TRUE;
@@ -276,7 +276,7 @@ sudo TRUE;
 Running `rex update` will work as expected.
 
 
-This setup means that someone who finds the public key on my machine will be able to execute <b>any</b>
+This setup means that someone who finds the public key on my machine will be able to execute **any**
 root command on the server(s). This is no improvement over the case when we directly used the `root`
 account on the server.
 

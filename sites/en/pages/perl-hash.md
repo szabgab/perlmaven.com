@@ -14,7 +14,7 @@ author: szabgab
 <!-- Please wait with the translation till this article is finished and this comment is removed -->
 
 
-Hashes, or hash tables, that are called <b>associative arrays</b>, <b>hashmaps</b>, or <b>dictionaries</b>
+Hashes, or hash tables, that are called **associative arrays**, **hashmaps**, or <b>dictionaries</b>
 in other languages are an integral and important part of Perl.
 On this page we try to answer some common questions about hashes.
 
@@ -306,7 +306,7 @@ print "The size of the hash is $size\n";
 
 ## Perl hash number of elements
 
-See above at <b>Perl Hash size</b>
+See above at **Perl Hash size**
 
 ## Perl Hash map
 
@@ -426,7 +426,7 @@ say $fellowship;                     # 9
 
 ## Number of elements of an array in a hash
 
-This is the same as the <b>size of an array in a hash</b>.
+This is the same as the **size of an array in a hash**.
 
 ## Contributors
 

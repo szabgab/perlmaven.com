@@ -16,7 +16,7 @@ external tool, a debugger, to try to locate problems in your code. This debugger
 With Perl you could use the "build-in" debugger that comes with Perl via the `-d` flag. See for
 example [how to debug Perl scripts](/beginner-perl-maven-debugging)
 
-These external debuggers, including the one that comes with perl allow you to set <b>breakpoints</b> in the code
+These external debuggers, including the one that comes with perl allow you to set **breakpoints** in the code
 where the execution will stop so you can look around the code and the values of the variables.
 
 Perl allows you to save these breakpoints in your code using the `$DB::single` variable.
@@ -68,14 +68,14 @@ perl -d fibonacci_with_breakpoint.pl 3
 
 {% include file="examples/fibonacci_with_breakpoint_1.txt" %}
 
-You type in <b>c</b> at this prompt to tell the debugger to "continue" to the first breakpoint.
+You type in **c** at this prompt to tell the debugger to "continue" to the first breakpoint.
 
 As the condition of the breakpoint setting is never met the code will run till the end printing the result
 and then another prompt:
 
 {% include file="examples/fibonacci_with_breakpoint_2.txt" %}
 
-Here you can type <b>q</b> to quit the debugger.
+Here you can type **q** to quit the debugger.
 
 
 In the second attempt we run the code with a larger input number:
@@ -89,7 +89,7 @@ We get the first out put and the prompt:
 
 {% include file="examples/fibonacci_with_breakpoint_1.txt" %}
 
-If we type <b>c</b> here it will continue to run till it encounters the conditional breakpoint and show this:
+If we type **c** here it will continue to run till it encounters the conditional breakpoint and show this:
 
 {% include file="examples/fibonacci_with_breakpoint_3.txt" %}
 

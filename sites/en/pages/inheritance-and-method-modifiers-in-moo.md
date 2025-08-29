@@ -99,7 +99,7 @@ sub area {
 1;
 ```
 
-The `extends` keyword of Moo is used to declare inheritance. Now 'Circle' is a <b>subclass</b> of 'Point'.
+The `extends` keyword of Moo is used to declare inheritance. Now 'Circle' is a **subclass** of 'Point'.
 
 We also added an extra attribute and a a new `area` method that is specific to circles.
 
@@ -319,12 +319,12 @@ Point $VAR1 = [
 Here you can see that both subroutines were executed and both received the same 4 parameter. The first parameter is the representation
 of the object itself (we'll talk about that elsewhere) and then the 3 parameters.
 
-Regarding order the code in the <b>before method modifier</b> was executed before the subroutine in the parent. That's where the name 'before' come from.
+Regarding order the code in the **before method modifier** was executed before the subroutine in the parent. That's where the name 'before' come from.
 
 
 ## Method modifier: after
 
-Similar to the 'before modifier' Moo also provides and <b>after method modifier</b>:
+Similar to the 'before modifier' Moo also provides and **after method modifier**:
 
 ```perl
 after move_by => sub {
@@ -341,13 +341,13 @@ It works the same way except that is is executed after the same subroutine in th
 
 ## Method modifier: around
 
-The <b>around</b> modifier works differently. It is called by Moo <b>instead</b> of traversing the parent classes, and it
+The **around** modifier works differently. It is called by Moo **instead** of traversing the parent classes, and it
 your job to initiate the call of the same method in the parent classes.
 
-The anonymous subroutine in the <b>around modifier</b> will get an additional parameter, even before the object,
+The anonymous subroutine in the **around modifier** will get an additional parameter, even before the object,
 with a reference to the method in the parent class. That's what we capture in the `$orig` variable in the example.
 
-Then you can write whatever code you'd like. At one point in the middle of your code, you <b>can</b>, but are not required to(!),
+Then you can write whatever code you'd like. At one point in the middle of your code, you **can**, but are not required to(!),
 call the method in the `$orig` variable. We have this `$self->$orig($dx, $dy)`.
 
 ```perl

@@ -29,4 +29,4 @@ Returns the numeric value of the first character of EXPR. If EXPR is an empty st
 * [Arabic 3](https://www.compart.com/en/unicode/U+0663)
 
 
-See also the [chr](/chr) function as the opposite of <b>ord</b>.
+See also the [chr](/chr) function as the opposite of **ord**.

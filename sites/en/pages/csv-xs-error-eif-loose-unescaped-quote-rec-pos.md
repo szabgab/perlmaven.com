@@ -26,7 +26,7 @@ only reads the CSV file to see if that exhibits the problem:
 
 It did, though the error I got was slightly different. I got:
 
-<b>CSV_PP ERROR: 2034 - EIF - Loose unescaped quote @ rec 5 pos 194</b>
+**CSV_PP ERROR: 2034 - EIF - Loose unescaped quote @ rec 5 pos 194**
 
 
 It seems the difference is that the other person had Text::CSV_XS installed and I did not, so

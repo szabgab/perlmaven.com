@@ -20,7 +20,7 @@ author: szabgab
 
 
 Congratulations! Your start-up company was just bought by super large corporation.
-You now need to replace <b>Copyright Start-Up</b> by <b>Copyright Large Corporation</b>
+You now need to replace **Copyright Start-Up** by **Copyright Large Corporation**
 in the README.txt file
 
 
@@ -83,7 +83,7 @@ The `read_file` function of File::Slurp will read the whole file into a
 single scalar variable. This assumes the file is not too big.
 
 We set `binmode => ':utf8'` to correctly handle Unicode characters.
-Then a regex substitution is used with the `/g` modifier to <b>globally</b>
+Then a regex substitution is used with the `/g` modifier to **globally**
 replace all the occurrences of the old text by the new text.
 
 Then we save the content in the same file, again using `binmode => ':utf8'`

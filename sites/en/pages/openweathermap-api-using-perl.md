@@ -26,7 +26,7 @@ Usually it is a better practice to have all of these keys and sometimes password
 together with the code of the application. That makes it also a lot easier to have a separate set of keys for development, testing,
 and production.
 
-We created a file called <b>config.ini</b> with the following content:
+We created a file called **config.ini** with the following content:
 
 ```
 [openweathermap]

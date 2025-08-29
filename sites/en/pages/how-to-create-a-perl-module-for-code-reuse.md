@@ -72,7 +72,7 @@ print add(19, 23);
 
 Save this in somedir/bin/app.pl (or somedir\bin\app.pl on Windows).
 
-Now run <b>perl somedir/bin/app.pl</b>. (or <b>perl somedir\bin\app.pl</b> on Windows).
+Now run **perl somedir/bin/app.pl**. (or **perl somedir\bin\app.pl** on Windows).
 
 It is going to print an error like this:
 
@@ -89,7 +89,7 @@ BEGIN failed--compilation aborted at somedir/bin/app.pl line 9.
 In the script we loaded the module with the `use` keyword.
 Specifically with the `use My::Math qw(add);` line.
 This searches the directories listed in the built-in `@INC` variable looking for a
-subdirectory called <b>My</b> and in that subdirectory for a file called <b>Math.pm</b>.
+subdirectory called **My** and in that subdirectory for a file called **Math.pm**.
 
 The problem is that your .pm file is not in any of the standard directories
 of perl: it is not in any of the directories listed in @INC.
@@ -107,7 +107,7 @@ Before we try to load the module, we have to make sure the directory of the modu
 
 Try this:
 
-<b>perl -Isomedir/lib/ somedir/bin/app.pl</b>.
+**perl -Isomedir/lib/ somedir/bin/app.pl**.
 
 This will print the answer: 42.
 
@@ -118,7 +118,7 @@ In this case, the `-I` flag of perl helped us add a directory path to @INC.
 ## Change @INC from inside the script
 
 Because we know that the "My" directory that holds our module is in a fixed place
-<b>relative</b> to the script, we have another possibility for changing the script:
+**relative** to the script, we have another possibility for changing the script:
 
 ```perl
 #!/usr/bin/perl
@@ -136,7 +136,7 @@ print add(19, 23);
 
 and run it again with this command:
 
-<b>perl somedir/bin/app.pl</b>.
+**perl somedir/bin/app.pl**.
 
 Now it works.
 
@@ -200,7 +200,7 @@ as calling `import( 'add' )`.
 
 There is not much left to explain in the script. After the `use` statement
 is done calling the `import` function, we can just call the newly imported
-<b>add</b> function of the My::Math module. Just as if I declared the function in
+**add** function of the My::Math module. Just as if I declared the function in
 the same script.
 
 What is more interesting is to see the parts of the module.

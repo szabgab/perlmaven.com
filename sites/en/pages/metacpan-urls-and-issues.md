@@ -13,11 +13,11 @@ author: szabgab
 ---
 
 
-[MetaCPAN](https://metacpan.org/) has a standard URL scheme. After the domain name we can type <b>pod/</b> and then the name of a module,
-for example [https://metacpan.org/pod/DBIx::Class](https://metacpan.org/pod/DBIx::Class) with the <b>::</b> with the correct case. This
+[MetaCPAN](https://metacpan.org/) has a standard URL scheme. After the domain name we can type **pod/** and then the name of a module,
+for example [https://metacpan.org/pod/DBIx::Class](https://metacpan.org/pod/DBIx::Class) with the **::** with the correct case. This
 will always show the documentation of the latest version of this module.
 
-If we add <b>release/</b> after the domain name and the name of a CPAN release (in the correct case and with - between the words)
+If we add **release/** after the domain name and the name of a CPAN release (in the correct case and with - between the words)
 then we reach the most recent release of this distribution. For example: [https://metacpan.org/release/DBIx-Class](https://metacpan.org/release/DBIx-Class)
 
 

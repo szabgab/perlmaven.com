@@ -35,8 +35,8 @@ to create the test-case. Commenting out could be ok, but there is a much better 
 
 You can mark the test-case (or test-cases) as `TODO` tests. They will still be executed, and they will be still reported as
 failures by the test-script, but [prove, the harness](/prove-the-harness) will see that these tests were
-<b>expected to fail</b> and will not consider them as failures. If someone fixes the problem, or creates a situation that might hide
-the problem, <b>prove</b> will even report that one of the TODO-tests has passed. Allowing you to make further research, and decide
+**expected to fail** and will not consider them as failures. If someone fixes the problem, or creates a situation that might hide
+the problem, **prove** will even report that one of the TODO-tests has passed. Allowing you to make further research, and decide
 what should happen.
 
 This way tests that check bugs that have not been fixed yet, or features that have not been implemented yet, won't bother you in

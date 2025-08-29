@@ -242,7 +242,7 @@ I think it is much more simple for the user to supply `--trace 4` that to write
 
 ## Argument that can get a value (but not required to)
 
-Also known as arguments with an <b>optional value</b>
+Also known as arguments with an **optional value**
 
 For example we would like to allow the user to turn on/off logging to
 a file and we would like to allow the user to set the name of the logfile.

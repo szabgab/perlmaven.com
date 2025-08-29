@@ -34,8 +34,8 @@ In the [previous article](/moose-constructor) I mentioned the code layout to be 
 
 This worked and made it simple to run the script, but in most cases the directory layout of a project is more nuanced.
 
-Normally the modules are located inside the <b>lib/</b> directory of the project and the scripts live in
-another subdirectory which is usually called <b>script/</b> or <b>bin/</b> as in this example:
+Normally the modules are located inside the **lib/** directory of the project and the scripts live in
+another subdirectory which is usually called **script/** or **bin/** as in this example:
 
 ```
  dir/
@@ -49,7 +49,7 @@ In that case, if our working directory is still the root of the project then we 
 
 `perl -Ilib script/person.pl`
 
-We had to supply the `-I` parameter to include the <b>lib/</b> directory in
+We had to supply the `-I` parameter to include the **lib/** directory in
 [@INC](/how-to-add-a-relative-directory-to-inc), the module search path of Perl.
 
 
@@ -103,11 +103,11 @@ use_ok('Person');
 which attempted to load the module and test if it was successful. This style of testing is
 not recommended any more so I left it out from the example in article.
 
-The next test was checking if the constructor created an instance of the <b>Person</b> class.
+The next test was checking if the constructor created an instance of the **Person** class.
 So we called the `new` constructor and then use the `isa_ok` function provided
 by Test::More to check if the variable `$p` contains an object which is a Person-object.
 
-We can run the test using <b>perl</b>:
+We can run the test using **perl**:
 
 ```
 perl -Ilib t/01-name.t
@@ -120,7 +120,7 @@ resulting in this output:
 ok 1 - An object of class 'Person' isa 'Person'
 ```
 
-or better yet we can use <b>prove</b>
+or better yet we can use **prove**
 
 ```
 prove -l t/
@@ -135,8 +135,8 @@ Files=1, Tests=1,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.22 cusr  0.01 csys
 Result: PASS
 ```
 
-For <b>perl</b> we had to pass `-Ilib` to include the `lib/` directory in the `@INC`.
-For <b>prove</b> it is enough to pass a single lower-case `-l` that will do the same.
+For **perl** we had to pass `-Ilib` to include the `lib/` directory in the `@INC`.
+For **prove** it is enough to pass a single lower-case `-l` that will do the same.
 
 In a large application we probably would not test low-level things such as the constructor being able to create
 an object, as I could rely on the maturity of the Moose project.

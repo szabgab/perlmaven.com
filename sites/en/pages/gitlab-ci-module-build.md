@@ -21,7 +21,7 @@ I have copied it here and removed some of the repetitions. Visit the repo of tha
 
 
 The only thing you need to enable a GitLab Pipeline is to create a correctly formatted YAML  file called
-<b>.gitlab-ci.yml</b> in the root of your git repository. And push it out to GitLab.
+**.gitlab-ci.yml** in the root of your git repository. And push it out to GitLab.
 
 ## GitLab CI Pipeline of DBD::Mock
 
@@ -42,19 +42,19 @@ implemented GitLab won't complain.
 
 ## before_script
 
-The global <b>before_script:</b> key lists 4 commands that will run in each one of the jobs. In this file there are 3 jobs further below
+The global **before_script:** key lists 4 commands that will run in each one of the jobs. In this file there are 3 jobs further below
 called unitTestsLatest, unitTestsV5.30, and unitTestsV5.28. In the original file there were many more.
 
 Slightly confusingly some of the main keys of the GitLab CI config files are reserved words that are
 [not available as job names](https://docs.gitlab.com/ee/ci/yaml/#unavailable-names-for-jobs).
-In our example we saw two: <b>stages</b> and <b>before_script</b>.
+In our example we saw two: **stages** and **before_script**.
 
 This project is apparently using [Module::Build](https://metacpan.org/pod/Module::Build) and so before the actual tests
 the CI installs Module::Build and a few other prerequisites needed to run the release of the module.
 Interestingly it also installed a specific version of [DBI](https://metacpan.org/pod/DBI) using the '@' notation. It installs 1.627 while the current most recent version is
 1.643.
 
-Then, using the <b>--installdeps</b> flag of cpanm, all the prerequisites are installed and the regular sequence of preparing the build is executed.
+Then, using the **--installdeps** flag of cpanm, all the prerequisites are installed and the regular sequence of preparing the build is executed.
 
 
 ## The jobs

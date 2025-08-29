@@ -26,7 +26,7 @@ module the function can know exactly how many values it needd to return.
 
 ## What type of data structure is expected from us?
 
-In this example I created a function cleverly named <b>func</b> with the only goal to print the name of the specific context
+In this example I created a function cleverly named **func** with the only goal to print the name of the specific context
 in which the function was called in.
 
 Values can be VOID if the result of the function is not assigned to any variable and it is not used in any other way.
@@ -45,11 +45,11 @@ There are a few other cases you can find in the documentation of the module.
 
 ## How many return values are expected in this call?
 
-The <b>howmany</b> function can tell the number of values we are expected to return. It will be <b>undef</b> if the expected number of elements is
+The **howmany** function can tell the number of values we are expected to return. It will be **undef** if the expected number of elements is
 not known or unlimited. That is in LIST context if the function is not assigned to a list of scalar variables.
 
 On the other hand, if the function was called in void context, scalar context, or in some other way where it is possible to tell exactly
-how many values are exected then the <b>howmany</b> function is going to return that number.
+how many values are exected then the **howmany** function is going to return that number.
 
 {% include file="examples/howmany.pl" %}
 

@@ -28,7 +28,7 @@ Can't locate Pod/Tree/Stream.pm ...
 Is the dist compete?
 </pre>
 
-So I went to [MetaCPAN](https://metacpan.org/release/Pod-Tree) and followed the link to the <b>Testers</b>
+So I went to [MetaCPAN](https://metacpan.org/release/Pod-Tree) and followed the link to the **Testers**
 that lead me to the [CPAN Testers Matrix](http://matrix.cpantesters.org/?dist=Pod-Tree+1.21)
 and to [main CPAN Testers page](http://www.cpantesters.org/distro/P/Pod-Tree.html?oncpan=1&distmat=1&version=1.21).
 (Note, both links include the version number of the distribution and show the date relevant to that version.)
@@ -63,7 +63,7 @@ change the system to automatically include all the files that I don't exclude, b
 
 ## make disttest
 
-In addition to the <b>make</b>-commands we have already seen, there is another command called <b>disttest</b>.
+In addition to the **make**-commands we have already seen, there is another command called **disttest**.
 
 It prepares the directory with all the files that go into the distribution, just as `make dist` does,
 but instead of creating a zip-file from the directory, it `cd`-s into it and runs the tests there.

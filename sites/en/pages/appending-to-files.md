@@ -13,7 +13,7 @@ author: szabgab
 ---
 
 
-In this episode of the [Perl tutorial](/perl-tutorial) we are going to see <b>how to append to files using Perl</b>.
+In this episode of the [Perl tutorial](/perl-tutorial) we are going to see **how to append to files using Perl**.
 
 In the previous episode we learned [how to write to files](/writing-to-files-with-perl).
 That's good when we are creating a file from scratch, but there are cases when you would rather keep the original file,
@@ -34,7 +34,7 @@ open(my $fh, '>', 'report.txt') or die ...
 
 Opening a file for writing using the `>` sign will delete the content of the file if it had any.
 
-If we would like to <b>append</b> to the end of the file we use <b>two greater-than</b> signs `>>` as in this example:
+If we would like to **append** to the end of the file we use **two greater-than** signs `>>` as in this example:
 
 ```perl
 open(my $fh, '>>', 'report.txt') or die ...

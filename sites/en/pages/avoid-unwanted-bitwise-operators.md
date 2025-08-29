@@ -62,7 +62,7 @@ $x |= 42;
 
 (I use [strict and warnings](/strict) even when I write simple examples.)
 
-and ran <b>perlcritic code.pl</b>
+and ran **perlcritic code.pl**
 
 This was the result
 

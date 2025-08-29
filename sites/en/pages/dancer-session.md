@@ -12,7 +12,7 @@ archive: true
 ---
 
 
-In this example you'll see how to use a <b>session</b> to store some information sent in by a user and how to retreive
+In this example you'll see how to use a **session** to store some information sent in by a user and how to retreive
 it in another request. You'll also see how to test it.
 
 

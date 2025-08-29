@@ -64,7 +64,7 @@ Well, in the above example we have the `say $input` just so you can see it worke
 in normal circumstances you would not do that, would you.
 
 
-Of course if someone standing over your shoulder can read the <b>keyboard</b> as you type in the password, that's still
+Of course if someone standing over your shoulder can read the **keyboard** as you type in the password, that's still
 a problem, but for that one of the solutions is just to type very fast.
 
 

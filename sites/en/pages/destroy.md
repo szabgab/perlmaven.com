@@ -13,18 +13,18 @@ show_related: true
 ---
 
 
-When you write Object Oriented Perl code you would create a constructor called <b>new</b> that you need to call explicitly.
+When you write Object Oriented Perl code you would create a constructor called **new** that you need to call explicitly.
 
-You can (optionally) also create a destructor called <b>DESTROY</b> that will be called implicitly when the instance goes out of
+You can (optionally) also create a destructor called **DESTROY** that will be called implicitly when the instance goes out of
 scope or otherwise loses its last reference.
 
 
 ## The class
 
-This is a very simple class-definition. The <b>new</b> method will receive the name of the class as the first parameter and
+This is a very simple class-definition. The **new** method will receive the name of the class as the first parameter and
 use [bless](/bless) to create a instance of the class.
 
-It also defines a method called <b>DESTROY</b> that will be called when the instance is destroyed.
+It also defines a method called **DESTROY** that will be called when the instance is destroyed.
 
 The interesting thing is that you can define the DESTROY function either as a regular function:
 
@@ -33,7 +33,7 @@ sub DESTROY {
 }
 ```
 
-or even without the <b>sub</b> keyword:
+or even without the **sub** keyword:
 
 ```
 DESTROY {
@@ -113,7 +113,7 @@ DESTROY for: MyZorg=HASH(0x5580a0843470)
 ## Call destructor before the END blocks
 
 Perl allows you to create [END](/end) blocks (or END functions) that will be called at the very end of running the program.
-The END blocks will be called <b>after</b> all the destructor were called.
+The END blocks will be called **after** all the destructor were called.
 
 {% include file="examples/show_destructor_end.pl" %}
 

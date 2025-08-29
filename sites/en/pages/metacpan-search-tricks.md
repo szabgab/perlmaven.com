@@ -28,20 +28,20 @@ Filter by module name:
 
 [module:Plack::Middleware](https://metacpan.org/search?q=module:Plack::Middleware) - list all the modules in the given namespace.
 
-[module:Plack::Middleware Oauth](https://metacpan.org/search?q=module%3APlack%3A%3AMiddleware+Oauth) Search for <b>Oauth</b> in the given namespace.
+[module:Plack::Middleware Oauth](https://metacpan.org/search?q=module%3APlack%3A%3AMiddleware+Oauth) Search for **Oauth** in the given namespace.
 
-[module:Middleware](https://metacpan.org/search?q=module:Middleware) search for all the <b>Middleware</b>. Apparently the <b>module:</b> prefix
+[module:Middleware](https://metacpan.org/search?q=module:Middleware) search for all the **Middleware**. Apparently the **module:** prefix
 matches any full part of the module names. (Hint: searching for [module:iddleware](https://metacpan.org/search?q=module%3Aiddleware) does not bring any results.)
 
 ## distribution:
 
 Filter by distribution:
 
-[distribution:Dancer auth](https://metacpan.org/search?q=distribution%3ADancer+auth) search for <b>auth</b> in the Dancer distribution.
+[distribution:Dancer auth](https://metacpan.org/search?q=distribution%3ADancer+auth) search for **auth** in the Dancer distribution.
 
 vs
 
-[module:Dancer auth](https://metacpan.org/search?q=module%3ADancer+auth) search for <b>auth</b> in the modules with Dancer in their name.
+[module:Dancer auth](https://metacpan.org/search?q=module%3ADancer+auth) search for **auth** in the modules with Dancer in their name.
 
 
 [distribution:Dancer-Plugin-Auth-CAS  auth](https://metacpan.org/search?q=distribution%3ADancer-Plugin-Auth-CAS++auth) search in the Dancer-Plugin-Auth-CAS

@@ -24,7 +24,7 @@ are rarely correct in any code.
 Probably the only "legitimate" case, is if you made a typo,
 and that's how you ended up with a variable that is used only once.
 
-Here is an example of code in which we <b>only assign to a variable</b>:
+Here is an example of code in which we **only assign to a variable**:
 
 ```perl
 use warnings;
@@ -47,7 +47,7 @@ It is confusing, but hopefully you won't need to deal with this for a long time.
 
 ## Fetch value only
 
-If you happen to <b>use a variable only once</b>
+If you happen to **use a variable only once**
 
 ```perl
 use warnings;
@@ -91,7 +91,7 @@ So how can you avoid this?
 For one, try to avoid variables with ambiguous letters in it and be very
 careful when typing variable names.
 
-If you want to solve this for real, just <b>use strict</b>!
+If you want to solve this for real, just **use strict**!
 
 ## use strict
 
@@ -123,7 +123,7 @@ use warnings;
 $main::x = 23;
 ```
 
-The warning is: <b>Name "main::x" used only once: possible typo ...</b>
+The warning is: **Name "main::x" used only once: possible typo ...**
 
 Here at least it is clear where that 'main' comes from, or in
 the next example, where the Mister comes from.
@@ -139,7 +139,7 @@ use warnings;
 $Mister::x = 23;
 ```
 
-The warning is <b>Name "Mister::x" used only once: possible typo ...</b>.
+The warning is **Name "Mister::x" used only once: possible typo ...**.
 
 The following example too generates the warning. Twice:
 
@@ -161,7 +161,7 @@ special variables used in the built-in sort function so
 you don't need to declare them, but you are only
 using them once here.
 (Actually it is unclear to me why this generates the warnings,
-while the same code using <b>sort</b> does not, but the
+while the same code using **sort** does not, but the
 [Perl Monks](http://www.perlmonks.org/?node_id=1021888) might know.
 
 

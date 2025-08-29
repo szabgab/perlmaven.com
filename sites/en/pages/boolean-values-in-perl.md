@@ -21,7 +21,7 @@ So what's the truth?
 
 
 
-Perl does not have specific boolean type, but every scalar value - if checked using <b>if</b>
+Perl does not have specific boolean type, but every scalar value - if checked using **if**
 will be either true or false. So you can write
 
 ```perl
@@ -36,7 +36,7 @@ if ($x) {
 }
 ```
 
-the former will check if the content of the <b>$x</b> variable is the same as the "foo"
+the former will check if the content of the **$x** variable is the same as the "foo"
 string while the latter will check if $x itself is true or not.
 
 ## What values are true and false in Perl?

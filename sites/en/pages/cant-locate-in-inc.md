@@ -71,7 +71,7 @@ want to [change @INC relative to your script](/how-to-add-a-relative-directory-t
 
 ## Can't locate warning.pm in @INC
 
-A very special case of this error messages is when perl cannot locate the <b>warning</b> module.
+A very special case of this error messages is when perl cannot locate the **warning** module.
 (Although many people will call it pragmata and not module.)
 
 ```
@@ -80,7 +80,7 @@ Can't locate warning.pm in @INC ...
 
  I often see this very special case when I am teaching Perl to beginners. The first thing I teach is
 to always add `use warnings;` at the beginning of every script. Unfortunately in many cases
-people write `use warning;` leaving out the trailing <b>s</b>. So this is is just a simple case of typo.
+people write `use warning;` leaving out the trailing **s**. So this is is just a simple case of typo.
 
 ## Comments
 

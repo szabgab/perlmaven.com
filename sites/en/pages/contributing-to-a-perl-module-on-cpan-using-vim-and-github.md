@@ -46,7 +46,7 @@ added in the not-yet-released version, and since then the new version was upload
 Anyway, In this case I was lucky as I knew Ricardo (RJBS) uses Github so I went to
 [his Github page](https://github.com/rjbs/) and looked for the module.
 I found the [repository of MIME::Lite](https://github.com/rjbs/mime-lite)
-and <b>forked</b> it by pressing the <b>fork</b> button.
+and **forked** it by pressing the **fork** button.
 
 Then I cloned [my version of MIME::Lite](https://github.com/szabgab/mime-lite)
 to my disk using
@@ -55,7 +55,7 @@ to my disk using
 $ git clone git@github.com:szabgab/mime-lite.git
 ```
 
-I had an editing session using <b>vim</b>, in which I made some <b>refactoring</b> of the code
+I had an editing session using **vim**, in which I made some **refactoring** of the code
 and changed it, so it will first check if the optional modules are already installed
 or not. If they are installed the version number is also checked if it is smaller
 than the <i>required optional</i> version number.
@@ -74,7 +74,7 @@ $ git push
 ```
 
 Then went back to [my version of MIME::Lite](https://github.com/szabgab/mime-lite)
-and clicked on the <b>Pull Request</b> button to send a message to Ricardo asking him 
+and clicked on the **Pull Request** button to send a message to Ricardo asking him 
 to integrate the change.
 
 That's it. A very small improvement to CPAN in 16 minutes.

@@ -9,7 +9,7 @@ author: szabgab
 ---
 
 
-I have to confess: When writing example applications, I almost always use variable names such as <b>foo</b> and <b>bar</b>.
+I have to confess: When writing example applications, I almost always use variable names such as **foo** and **bar**.
 This gets boring, and it easily confuse the reader. Especially when I need to use more variables.
 
 Luckily [Philippe Bruhat (BooK)](http://www.bruhat.net/) has already solved this problem a long time ago. Let's
@@ -17,7 +17,7 @@ see how?
 
 
 If we look up [Foobar](http://en.wikipedia.org/wiki/Foobar) on Wikipedia, we'll see they are
-also called <b>place-holder names</b> or
+also called **place-holder names** or
 [Metasyntactic variable](http://en.wikipedia.org/wiki/Metasyntactic_variable).
 
 We'll go with that and install [Acme::MetaSyntactic](https://metacpan.org/pod/Acme::MetaSyntactic).
@@ -33,8 +33,8 @@ use Acme::MetaSyntactic; # loads the default theme
 say metaname();
 ```
 
-If we run this script it will print out <b>foo</b>. If we run it again it will print <b>bar</b>.
-Then if we run it a few more times it will give names such as <b>corge, waldo, quux, fred</b>.
+If we run this script it will print out **foo**. If we run it again it will print **bar**.
+Then if we run it a few more times it will give names such as **corge, waldo, quux, fred**.
 
 This already provides some useful diversity, but let's go beyond that.
 
@@ -42,9 +42,9 @@ This already provides some useful diversity, but let's go beyond that.
 
 [Acme::MetaSyntactic](https://metacpan.org/pod/Acme::MetaSyntactic) provides
 an object oriented interface as well, and has a large number of themes. The default being
-the <b>foo</b> theme.
+the **foo** theme.
 
-The first thing we try is the <b>class method</b> called `themes` that will
+The first thing we try is the **class method** called `themes` that will
 return all the available themes:
 
 ```perl
@@ -75,7 +75,7 @@ and on the object itself we can call the `name` method providing to it the
 theme, and optionally the number of words we would like to receive.
 
 Thus `say $ams->name('foo');` will return and print out a single word
-from the <b>foo</b> theme. `say $ams->name('foo', 1);` would do the same.
+from the **foo** theme. `say $ams->name('foo', 1);` would do the same.
 
 Calling the same method with a bigger number: `my @names = $ams->name('foo', 4);`
 will return 4 words. For this, we'd better assign the result to an array for later
@@ -83,7 +83,7 @@ use or iterate over the returned list. We might even want to sort the words befo
 printing them out.
 
 As a special case, if we pass `0` as the requested number of words, the method
-will return <b>all the words</b> available in the theme:
+will return **all the words** available in the theme:
 
 ```perl
 use strict;
@@ -137,7 +137,7 @@ Install [Acme::MetaSyntactic::Themes](https://metacpan.org/pod/Acme::MetaSyntact
 and you will over 130 new themes.
 
 You don't even need to load the extra module the same code we had above, would list all the
-<b>installed</b> themes:
+**installed** themes:
 
 ```perl
 use strict;

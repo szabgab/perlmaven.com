@@ -170,9 +170,9 @@ hello
 ```
 
 This shows that in this case too, the declaration and the initial assignment `my $counter = say "world";`
-happens only once, but we can also see that the assignment happens <b>before</b> the first call to
+happens only once, but we can also see that the assignment happens **before** the first call to
 `count()` as if the `my $counter = say "world";` statement was part of the control flow
-of the code <b>outside</b> of the block.
+of the code **outside** of the block.
 
 ## Shared static variable
 

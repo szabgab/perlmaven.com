@@ -32,7 +32,7 @@ You will have to select if it is for non-commercial/SMB,
 or if you are big corp/big money.
 You'll also need to give a name of an application you are building. And a description.
 I selected the non-commercial/SMB option and wrote that I am building examples
-<b>how to use the Flickr API in Perl</b>.
+**how to use the Flickr API in Perl**.
 
 As far as I can see you can get as many API keys as you'd like to, so you can build
 multiple applications.

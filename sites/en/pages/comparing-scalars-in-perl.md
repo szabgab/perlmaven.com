@@ -26,7 +26,7 @@ author: szabgab
 In the previous part of the [Perl tutorial](/perl-tutorial)
 we introduced [scalars](/scalar-variables) and we saw how numbers
 and strings are converted to each other on-the-fly. We even had
-glimpse on a conditional <b>if</b> statement but we have not seen how
+glimpse on a conditional **if** statement but we have not seen how
 to compare two scalars. That's what this part is about.
 
 

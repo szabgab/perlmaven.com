@@ -14,10 +14,10 @@ author: szabgab
 
 
 There is a strange scalar variable called `$_` in Perl, which is the
-`default variable`, or in other words the <b>topic</b>.
+`default variable`, or in other words the **topic**.
 
 In Perl, several functions and operators use this variable as a default,
-in case no parameter is explicitly used. In general, I'd say you should <b>NOT</b>
+in case no parameter is explicitly used. In general, I'd say you should **NOT**
 see `$_` in real code. I think the whole point of `$_` is that you don't
 have to write it explicitly.
 
@@ -125,7 +125,7 @@ and assigns the result to `$line`. Then checks if the content of $line is true o
 
 ## Explicit $_
 
-I mentioned earlier I recommend <b>not</b> using `$_` explicitly. Sometimes I see people writing code like this:
+I mentioned earlier I recommend **not** using `$_` explicitly. Sometimes I see people writing code like this:
 
 ```perl
 while (<$fh>) {
@@ -168,7 +168,7 @@ while (my $line = <$fh>) {
 
 ## List of uses of $_
 
-I've started to put together a list of places that default to <b>$_</b>:
+I've started to put together a list of places that default to **$_**:
 
 * [ord](/ord)
 

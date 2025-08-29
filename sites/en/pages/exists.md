@@ -13,9 +13,9 @@ archive: true
 
 In a hash a key-value pair have 3 different possible statuses.
 
-The `defined` function checks if a <b>value</b> is [undef](/undef) or not.
+The `defined` function checks if a **value** is [undef](/undef) or not.
 
-The `exists` function check if a <b>key</b> is in the hash or not.
+The `exists` function check if a **key** is in the hash or not.
 
 Those two conditions create 3 valid situations.
 

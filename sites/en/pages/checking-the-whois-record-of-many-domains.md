@@ -19,11 +19,11 @@ Others, like [perlide.org](http://perlide.org/) are in the .org TLD, yet others 
 
 Recently I decided I'd like to run my own DNS servers for all of the domains. I set up everything
 and went through the web interface of the domain name registrar I use to configure each domain name
-with the correct <b>Name server</b> records.
+with the correct **Name server** records.
 
 The question remained, how can I check that all the domains have been configured correctly?
 
-For this I need to run the <b>whois</b> command for each domain and then look at the result.
+For this I need to run the **whois** command for each domain and then look at the result.
 
 Let's see how can I automate this.
 
@@ -46,7 +46,7 @@ interesting ones listed in the documentation of the module. The module names
 
 {% include file="examples/try_whois.pl" %}
 
-This printed out the same information as the command line <b>whois</b> would do. 
+This printed out the same information as the command line **whois** would do. 
 
 For examples this command:
 
@@ -75,7 +75,7 @@ and changed a code a bit:
 {% include file="examples/whois_domains.pl" %}
 
 I am using [Path::Tiny](https://metacpan.org/pod/Path::Tiny), the excellent module of David Golden
-to read the domains.txt file that is <b>expected to be in the same directory where the script is</b>.
+to read the domains.txt file that is **expected to be in the same directory where the script is**.
 
 Path::Tiny automatically exports the `path` function, but I like it to be explicit, and I like when I can
 easily find the definition of all the functions, so I loaded it using `use Path::Tiny qw(path);`.
@@ -165,7 +165,7 @@ sub get_ns {
 Let's see parts of the result we got from the `whois` command
 and how to deal with each one:
 
-For <b>.org</b> domains:
+For **.org** domains:
 
 ```
 Name Server:NS.TRACERT.COM
@@ -193,7 +193,7 @@ and use a `map` with calls to `uc` to make sure all the strings are in the same 
 Again, to make it easier for us to compare them to the expected values.
 
 
-for <b>.il</b> domains this is the section from the output of `whois`:
+for **.il** domains this is the section from the output of `whois`:
 
 ```
 nserver:      ns2.tracert.com
@@ -206,7 +206,7 @@ The code fetching the data is very similar, just the string preceding the actual
 map { uc $_ } sort $data =~ /^nserver:\s*(\S+)\s*$/mg;
 ```
 
-For <b>.com</b> and <b>.net</b> domains we have bit more work to do.
+For **.com** and **.net** domains we have bit more work to do.
 The hostnames don't have a prefix, but they are in a section with a title:
 
 ```
@@ -275,10 +275,10 @@ The we call `check_ns` with the list of name servers we received. This subroutin
 the error message. As we are processing the domain names one after the other in a linear fashion, this
 means the error message will appear right under the domain name it belongs to.
 
-The last 4 lines might be strange. If this was a <b>.org</b> domain we sleep 16 seconds before we continue.
+The last 4 lines might be strange. If this was a **.org** domain we sleep 16 seconds before we continue.
 
 According to  [PIR](http://www.pir.org/WHOIS) (the maintainer of the .org domains) there is a rate
-limit of 4 queries per minute for the <b>.org</b> domains through port 43. The rate limit through the web interface
+limit of 4 queries per minute for the **.org** domains through port 43. The rate limit through the web interface
 is 50 per minute, but there is a CAPTCHA to disable programmable access. So I had to make sure we don't send more
 that 4 requests a minute.
 
@@ -305,7 +305,7 @@ If you need to process domains from other TLDs, they might need some more adjust
 ## Parallel processing
 
 If you run the above script you will notice there is a small delay between the processing of the domain names,
-and a big gap of more than 16 seconds after every <b>.org</b> domain. Even if there is a non .org name after it.
+and a big gap of more than 16 seconds after every **.org** domain. Even if there is a non .org name after it.
 
 We could eliminate the extra, and unnecessary wait times after the .org domains if we separated them from the others
 and then stopped waiting after the last one.
@@ -319,7 +319,7 @@ case of `.org` domains it waits for time to pass.
 
 How can we make sure that the script can do something else while it is waiting for the response of the whois servers?
 
-In a separate article I'll solve the same problem using <b>Asynchronous</b> programming.
+In a separate article I'll solve the same problem using **Asynchronous** programming.
 
 
 ## Comments

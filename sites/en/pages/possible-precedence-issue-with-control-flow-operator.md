@@ -81,7 +81,7 @@ The first version I have on my computer that warns about this construct is perl 
 
 It says:
 
-<b>Possible precedence issue with control flow operator</b>.
+**Possible precedence issue with control flow operator**.
 
 ## Conclusion
 

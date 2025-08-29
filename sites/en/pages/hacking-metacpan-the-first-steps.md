@@ -118,7 +118,7 @@ I found out that this part of the pages is included from the
 [Template Toolkit](http://www.template-toolkit.org/).
 
 Ever user of MetaCPAN has a profile, and in that profile they can list their IDs on various other sites. Each such other site has a name and an ID string. Basically a key-value pair.
-The key for Google+ is <b>googleplus</b> and thus I added the following entry:
+The key for Google+ is **googleplus** and thus I added the following entry:
 
 ```
 <% IF p.name == "googleplus" %>

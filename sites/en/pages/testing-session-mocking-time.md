@@ -25,7 +25,7 @@ Instead of that we can ask perl to lie about the time. In other words, we can mo
 
 {% youtube id="lVanBTERBAs" file="testing-session-mocking-time" %}
 
-This is <b>MySession.pm</b>. Probably not the best implementation of a session object, but it will work for our purposes.
+This is **MySession.pm**. Probably not the best implementation of a session object, but it will work for our purposes.
 
 {% include file="examples/mock-time/MySession.pm" %}
 

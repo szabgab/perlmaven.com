@@ -19,7 +19,7 @@ author: szabgab
 
 Understanding how strings work is important in every programming language, but in Perl they are
 part of the essence of the language. Especially if you consider that one of the acronyms of Perl
-is <b>Practical Extraction and Reporting Language</b> and for that you need to use lots of strings.
+is **Practical Extraction and Reporting Language** and for that you need to use lots of strings.
 
 
 Strings can be placed either between single quotes `'` or double quotes `"` and they have slightly different behavior.
@@ -121,7 +121,7 @@ In single quotes `@` does not interpolate.
 In double quotes this code will generate an error:
 [Global symbol "@bar" requires explicit package name at ... line ...](/global-symbol-requires-explicit-package-name)
 and a warning:
-<b>Possible unintended interpolation of @bar in string at ... line ...</b>
+**Possible unintended interpolation of @bar in string at ... line ...**
 
 The latter might be the one that provides the better clue what is really the problem.
 
@@ -150,7 +150,7 @@ my $good_email  = "$name\@bar.com";
 print $good_email; # foo@bar.com
 ```
 
-You can always <b>escape</b> the special characters, in this case the at-mark `@` by using the so-called <b>escape character</b>
+You can always **escape** the special characters, in this case the at-mark `@` by using the so-called **escape character**
 which is the back-slash `\` character.
 
 ## Embedding dollar $ sign in double quoted strings
@@ -228,7 +228,7 @@ print "The "name" is "$name"\n";
 ```
 
 when Perl sees the double-quote just before the word "name" it thinks that was the end of the string
-and then it complains about the word <b>name</b> being a [bareword](/barewords-in-perl).
+and then it complains about the word **name** being a [bareword](/barewords-in-perl).
 
 You might have already guessed, we need to escape the embedded `"` character:
 
@@ -318,7 +318,7 @@ The )name( is "foo"
 (even though I have not idea why would I want to print something like that...)
 
 Then [the guy from the second row](http://perl.plover.com/yak/presentation/samples/slide027.html) raises his hand,
-and asks what if you want both parentheses and curly braces in your string, <b>and</b> you want them imbalanced?
+and asks what if you want both parentheses and curly braces in your string, **and** you want them imbalanced?
 
 You mean like this, right?
 
@@ -343,7 +343,7 @@ The )name} is "foo"
 
 Similar to `qq` there is also an operator called `q`.
 That too allows you select the delimiters of your string, but it works
-as a single quote `'` works: It does <b>NOT</b> interpolate variables.
+as a single quote `'` works: It does **NOT** interpolate variables.
 
 ```perl
 use strict;

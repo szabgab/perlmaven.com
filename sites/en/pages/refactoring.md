@@ -21,7 +21,7 @@ When a few days or month later we need to come back to make changes we'll be baf
 
 It is better to change them to something meaningful to make it easier to read and understand the code.
 
-The process of these changes is called <b>refactoring</b>. In this series of articles we are going to see how to do that.
+The process of these changes is called **refactoring**. In this series of articles we are going to see how to do that.
 
 
 ## Tasks

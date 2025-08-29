@@ -19,9 +19,9 @@ author: szabgab
 
 
 In this part of the [Perl tutorial](/perl-tutorial) series we are going to
-see where to <b>download Perl</b> from and how to install it.
+see where to **download Perl** from and how to install it.
 
-Perl is maintained and released by a dedicated team of volunteers who call themselves <b>Perl 5 Porters</b>.
+Perl is maintained and released by a dedicated team of volunteers who call themselves **Perl 5 Porters**.
 Once a year they release a new major version of Perl, and a few more times a year they release minor bug fixes.
 
 
@@ -36,9 +36,9 @@ Not for regular humans and definitely not for production use!
 ## Perl 5 Porters and downstream distributors
 
 What the Perl 5 Porters release is the source code of Perl.
-This code is then taken by various <b>distributors</b> or <b>vendors</b> (aka. downstream distributors)
+This code is then taken by various **distributors** or **vendors** (aka. downstream distributors)
 and repackaged in an already compiled, binary format.
-Most of us use Perl from such <b>downstream distributors</b>.
+Most of us use Perl from such **downstream distributors**.
 
 Usually within a few months of any release the various downstream distributors
 include the latest revision of Perl but it does not necessarily get to the end users.
@@ -47,7 +47,7 @@ If you use Linux you'll get the new version of Perl only if you upgrade your ope
 This might happen frequently on a home machine, but less often in corporations and
 on servers. They tend to upgrade only after a 2-5 years delay. In some cases the delay can be even longer.
 
-This means that the so called <b>system Perl</b> on Linux distributions will be a few years out of date.
+This means that the so called **system Perl** on Linux distributions will be a few years out of date.
 
 ## Microsoft Windows
 

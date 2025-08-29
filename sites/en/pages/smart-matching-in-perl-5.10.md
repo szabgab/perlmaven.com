@@ -16,12 +16,12 @@ on the 20th birthday of Perl. There are several interesting
 additions to the language.
 In [What's new in Perl 5.10? say, //, state](/what-is-new-in-perl-5.10--say-defined-or-state) I already
 wrote about a few.
-Now I am going to look at something called <b>Smart Matching</b>.
+Now I am going to look at something called **Smart Matching**.
 
-In 5.10 there is a new operator that looks like this: <b>~~</b>
+In 5.10 there is a new operator that looks like this: **~~**
 
 
-It is called the <b>Smart Matching</b> operator.
+It is called the **Smart Matching** operator.
 
 Before going further a slight warning. The behavior of the Smart Match operator
 has slightly changed between 5.10 and later versions of Perl. Some the changes
@@ -88,13 +88,13 @@ and the following are true:
 ```
 
 albeit with a warning...<br>
-if you used <b>use warnings</b>...
+if you used **use warnings**...
 
 This behavior while consistent is a bit hard to understand.
 
 On the other hand the new ~~ is strange in another way.
-Its comparison is <b>value driven</b> as opposed to the other operations in
-Perl which are <b>operator driven</b>.
+Its comparison is **value driven** as opposed to the other operations in
+Perl which are **operator driven**.
 <hr>
 
 Let's see it in a different approach: As I wrote ~~ will compare the values
@@ -301,7 +301,7 @@ There are several more cases but even this was probably too much for an introduc
 <hr>
 
 To get more details search for <i>"Smart matching in detail"</i>
-after  typing <b>perldoc perlsyn</b> on the command line
+after  typing **perldoc perlsyn** on the command line
 - you do have 5.10 installed already, don't you,
 or after browsing to the [perlsyn](http://perldoc.perl.org/perlsyn.html) page.
 

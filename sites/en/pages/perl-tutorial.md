@@ -63,18 +63,18 @@ There is also a free [advanced Perl course](/advanced-perl-maven-video-course).
 
 ## Free on-line Beginner Perl Maven tutorial
 
-In this tutorial you are going to learn how to use the Perl 5 programming language to <b>get your job done</b>.
+In this tutorial you are going to learn how to use the Perl 5 programming language to **get your job done**.
 
 You will learn both general language features, and extensions or libraries or as the
-Perl programmers call them <b>modules</b>. We will see both standard modules, that come with
-perl and 3rd-party modules, that we install from <b>CPAN</b>.
+Perl programmers call them **modules**. We will see both standard modules, that come with
+perl and 3rd-party modules, that we install from **CPAN**.
 
 When it is possible I'll try to teach things in a very task oriented way.
 I'll draw up tasks and then we'll learn the necessary tools to solve them.
 Where possible I'll also direct you to some exercises you can do to practice what you have learned.
 
 
-<b>Introduction</b>
+**Introduction**
 <ol>
     <li>[Install Perl, print Hello World, Safety net (use strict, use warnings)](/installing-perl-and-getting-started)</li>
     <li>[#!/usr/bin/perl - the hash-bang line](/hashbang)</li>
@@ -86,7 +86,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>[Debugging Perl scripts](/debugging-perl-scripts)</li>
 </ol>
 
-<b>Scalars</b>
+**Scalars**
 <ol>
     <li>[Common warnings and error messages](/common-warnings-and-error-messages)</li>
     <li>[Prompt, read from STDIN, read from the keyboard](/read-from-stdin)</li>
@@ -107,7 +107,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>[Boolean Short circuit](/short-circuit)</li>
 </ol>
 
-<b>Files</b>
+**Files**
 <ol>
     <li>[exit](/how-to-exit-from-perl-script)</li>
     <li>[Standard Output, Standard Error and command line redirection](/stdout-stderr-and-redirection)</li>
@@ -125,7 +125,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>[Slurp mode](/slurp)</li>
 </ol>
 
-<b>Lists and Arrays</b>
+**Lists and Arrays**
 <ol>
     <li>Perl foreach loop</li>
     <li>[The for loop in Perl](/for-loop-in-perl)</li>
@@ -155,7 +155,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>[qw - quote word](/qw-quote-word)</li>
 </ol>
 
-<b>Subroutines</b>
+**Subroutines**
 <ol>
     <li>[Subroutines and Functions in Perl](/subroutines-and-functions-in-perl)</li>
     <li>[Passing multiple parameters to a function](/passing-multiple-parameters-to-a-function)</li>
@@ -164,7 +164,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>[Recursive subroutines](/recursive-subroutines)</li>
 </ol>
 
-<b>Hashes</b>
+**Hashes**
 <ol>
     <li>[Perl Hashes (dictionary, associative array, look-up table)](/perl-hashes)</li>
     <li>[Creating hash from an array](/creating-hash-from-an-array)</li>
@@ -175,7 +175,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>[Count word frequency in a text file](/count-words-in-text-using-perl)</li>
 </ol>
 
-<b>Regular Expressions</b>
+**Regular Expressions**
 <ol>
     <li>[Introduction to Regular Expressions in Perl](/introduction-to-regexes-in-perl)</li>
     <li>[Regex: character classes](/regex-character-classes)</li>
@@ -190,7 +190,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>[Perl 5 Regex Cheat sheet](/regex-cheat-sheet)</li>
 </ol>
 
-<b>Shell related functionality</b>
+**Shell related functionality**
 <ol>
     <li>[Perl -X operators](/file-test-operators)</li>
     <li>Perl pipes</li>
@@ -208,7 +208,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>Traversing directory tree [manually using a queue](/traversing-the-filesystem-using-a-queue) and using find.</li>
 </ol>
 
-<b>CPAN</b>
+**CPAN**
 <ol>
     <li>[Download and install Perl (Strawberry Perl or manual compilation)](/download-and-install-perl)</li>
     <li>Download and install Perl using Perlbrew</li>
@@ -219,7 +219,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>local::lib</li>
 </ol>
 
-<b>Examples for using Perl</b>
+**Examples for using Perl**
 <ol>
     <li>[How to replace a string in a file with Perl? (slurp)](/how-to-replace-a-string-in-a-file-with-perl)</li>
     <li>[Reading Excel files using Perl](/read-an-excel-file-in-perl)</li>
@@ -232,7 +232,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>[Accessing LDAP using Perl](/reading-from-ldap-in-perl-using-net-ldap)</li>
 </ol>
 
-<b>Common warnings and error messages</b>
+**Common warnings and error messages**
 <ol>
     <li>[Global symbol requires explicit package name](/global-symbol-requires-explicit-package-name) ...</li>
     <li>.. also explained in [Variable declaration in Perl](/variable-declaration-in-perl)</li>
@@ -262,7 +262,7 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>[Use of implicit split to @_ is deprecated ...](/use-of-implicit-split-to-is-deprecated)</li>
 </ol>
 
-<b>Extra articles</b>
+**Extra articles**
 <ol>
     <li>[Multi dimensional arrays](/multi-dimensional-arrays-in-perl)</li>
     <li>[Multi dimensional hashes](/multi-dimensional-hashes)</li>
@@ -272,13 +272,13 @@ Where possible I'll also direct you to some exercises you can do to practice wha
     <li>[Formatted printing in Perl](/printf) using printf and sprintf</li>
 </ol>
 
-<b>From other books</b>
+**From other books**
 <ol>
     <li>[Splice to slice and dice arrays in Perl](/splice-to-slice-and-dice-arrays-in-perl)</li>
     <li>[How to improve your Perl code](/how-to-improve-my-perl-program)</li>
 </ol>
 
-<b>Object Oriented Perl with Moose or Moo</b>
+**Object Oriented Perl with Moose or Moo**
 
 There is a whole series of articles on writing Object Oriented code, using the
 light-weight [Moo](/moo) OOP framework or the full-blown [Moose](/moose) OOP framework.

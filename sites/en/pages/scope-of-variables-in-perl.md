@@ -17,7 +17,7 @@ There are two major variable types in Perl. One of them is the package global va
 The other one is the lexical variable declared with `my`.
 
 Let's see what happens when you declare a variable using `my`? In which parts of the code will that variable be visible?
-In other words, what is the <b>scope</b> of the variable?
+In other words, what is the **scope** of the variable?
 
 
 ## Variable scope: enclosing block
@@ -42,7 +42,7 @@ after the closing curly brace `}` had to be commented out. If you removed the `#
 `# print $email;` line, and tried to run the script, you'd get the following compile-time error:
 [Global symbol "$email" requires explicit package name at ...](/global-symbol-requires-explicit-package-name).
 
-In other words, the <b>scope of every variable declared with my is the enclosing block.</b>.
+In other words, the **scope of every variable declared with my is the enclosing block.**.
 
 ## Variable scope: visible everywhere
 
@@ -88,7 +88,7 @@ print "$fname\n";        # Foo
 ```
 
 In this case the variable `$fname` is declared at the beginning of the code. As written earlier, it will be visible
-till the end of the file everywhere, <b>except in places where they are hidden by locally declared variables with the same name</b>.
+till the end of the file everywhere, **except in places where they are hidden by locally declared variables with the same name**.
 
 Inside the block we used `my` to declare another variable with the same name. This will effectively hide the `$fname`
 declared outside the block till we leave the block. At the end of the block (at the closing `}`), the `$fname`
@@ -120,9 +120,9 @@ use warnings;
 
 This a bit more advanced example, but it might be important to mention it here:
 
-Perl allows us to switch between <b>name-spaces</b> using the `package` keyword inside
-a file. A package declaration does <b>NOT</b> provide scope. If you declare a variable in
-the implicit <b>main package</b> which is just the regular body of your script, that `$fname`
+Perl allows us to switch between **name-spaces** using the `package` keyword inside
+a file. A package declaration does **NOT** provide scope. If you declare a variable in
+the implicit **main package** which is just the regular body of your script, that `$fname`
 variable will be visible even in other name-spaces in the same file.
 
 If you declare a variable called `$lname` in the 'Other' name-space, it will be visible

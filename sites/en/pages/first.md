@@ -14,7 +14,7 @@ show_related: true
 
 
 When you need to find the first element in an array that satisfies some condition, the first solution that might come to mind is to loop
-over all the elements using <b>for</b> and check them one by one. This would yield a working code, but there are nicer solution.
+over all the elements using **for** and check them one by one. This would yield a working code, but there are nicer solution.
 
 BTw if you are interested I've also written a solution to
 [find the first matching element of a list in Python](https://code-maven.com/python-find-first-element-in-list-matching-condition).
@@ -27,7 +27,7 @@ The condition is simple, the first animal that is longer than 5 characters.
 
 {% include file="examples/first_loop.pl" %}
 
-In this solution we stop the iteration using the <b>last</b> statement when we found the first match.
+In this solution we stop the iteration using the **last** statement when we found the first match.
 
 ## First matching element using grep
 
@@ -43,15 +43,15 @@ and a more complex condition.)
 
 ## First element using the first function
 
-The [List::Util](https://metacpan.org/pod/List::Util) module provides a function called <b>first</b> that solves this problem.
-The syntax is exactly the same as with the <b>grep</b> function, but it will stop checking the condition after encountering the first
+The [List::Util](https://metacpan.org/pod/List::Util) module provides a function called **first** that solves this problem.
+The syntax is exactly the same as with the **grep** function, but it will stop checking the condition after encountering the first
 element that meets the condition.
 
 {% include file="examples/first.pl" %}
 
 ## Compare grep and first
 
-You might not trust me or the documentation that the <b>first</b> function stops as soon as possible, so
+You might not trust me or the documentation that the **first** function stops as soon as possible, so
 I made some changes, moved the condition to a separate function that would also print each time it is called.
 
 {% include file="examples/first_log.pl" %}
@@ -73,8 +73,8 @@ length of etruscan shrew
 etruscan shrew
 ```
 
-As you can see yourself, the solution using <b>grep</b> printed all the values from the array.
-The solution using <b>first</b> only printed up till the first matching element.
+As you can see yourself, the solution using **grep** printed all the values from the array.
+The solution using **first** only printed up till the first matching element.
 
 ## Etruscan shrew
 

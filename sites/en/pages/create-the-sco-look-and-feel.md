@@ -24,7 +24,7 @@ to separate the Perl code from the HTML code. The next step is to create the loo
 As we don't have access to the templates creating search.cpan.org, we are going to create those ourself.
 
 First step is to look at the source of the main page of search.cpan.org. We can do that either by
-visiting the page and clicking on <b>view source</b> in the browser, or by fetching the HTML using
+visiting the page and clicking on **view source** in the browser, or by fetching the HTML using
 `wget`, or `curl`:
 
 ```

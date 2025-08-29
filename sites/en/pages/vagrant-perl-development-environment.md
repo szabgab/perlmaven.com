@@ -260,7 +260,7 @@ be much faster than the first time you ran this command.
 
 ## Upgrade from older version
 
-This article described the initial installation of the <b>Perl Development Environment</b>. Later as newer versions are released
+This article described the initial installation of the **Perl Development Environment**. Later as newer versions are released
 you might want to follow the instructions to
 [upgrade the Vagrant Perl Development Environment](/upgrade-vagrant-perl-development-environment).
 

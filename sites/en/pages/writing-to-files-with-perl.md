@@ -28,7 +28,7 @@ This article shows how to write to a file using core perl. There are much simple
 and more readable ways to do that
 [using Path::Tiny](/use-path-tiny-to-read-and-write-file).
 
-Before you can write to a file you need to <b>open</b> it, asking
+Before you can write to a file you need to **open** it, asking
 the operating system (Windows, Linux, OSX, etc) to open a channel
 for your program to "talk to" the file. For this Perl provides
 the `open` function with a slightly strange syntax.
@@ -42,7 +42,7 @@ This is a good working example and we'll get back to it, but let's start with a 
 
 {% include file="examples/open_file_for_writing_simple.pl" %}
 
-This still needs some explanation. The <b>open</b> function gets 3 parameters.
+This still needs some explanation. The **open** function gets 3 parameters.
 
 The first one, `$fh`, is a scalar variable we just defined inside the `open()` call.
 We could have defined it earlier, but usually it is cleaner to do it inside,
@@ -55,11 +55,11 @@ The third parameter is the path to the file that we would like to open.
 When this function is called it puts a special sign into the `$fh` variable.
 It is called file-handle. We don't care much about the content of
 this variable; we will just use the variable later. Just remember, the content of the file
-is still only on the disk and <b>NOT</b> in the $fh variable.
+is still only on the disk and **NOT** in the $fh variable.
 
 Once the file is open we can use the `$fh` file-handle in a `print()` statement.
 It looks almost the same as the `print()` in other parts of the tutorial,
-but now the first parameter is the file-handle and there is <b>no</b>(!) comma after it.
+but now the first parameter is the file-handle and there is **no**(!) comma after it.
 
 The print() call above will print the text in the file.
 
@@ -109,7 +109,7 @@ Luckily the `open()` call itself returns
 open(my $fh, '>', 'some_strange_name/report.txt') or die;
 ```
 
-This is the "standard" <b>open or die</b> idiom. Very common in Perl.
+This is the "standard" **open or die** idiom. Very common in Perl.
 
 `die` is a function call that will throw an exception and
 thus exit our script.

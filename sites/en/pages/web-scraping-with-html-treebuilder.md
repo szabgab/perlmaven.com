@@ -21,7 +21,7 @@ Luckily there is an HTML page for each such community, for example this is the p
 
 So in order to make it easy for others to fetch the list of community members we need to parse the HTML page and extract the information ourself.
 
-<b>This article is originally from 2014. Since then Gittip was renamed to be Gratipay and in November 2017 it was shut down. Nevertheless the technique is still useful.</b>
+**This article is originally from 2014. Since then Gittip was renamed to be Gratipay and in November 2017 it was shut down. Nevertheless the technique is still useful.**
 
 If you look at the [Perl community page](https://www.gittip.com/for/perl/) you'll see it say the number of members (at the time of writing this it was 516),
 and list 3 groups of the members. 12 members in each group.

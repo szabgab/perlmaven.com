@@ -10,7 +10,7 @@ author: szabgab
 ---
 
 
-Why should I always <b>use strict</b>?
+Why should I always **use strict**?
 
 It is simple. It can save you a lot of time and headache.
 

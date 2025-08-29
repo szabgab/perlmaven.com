@@ -36,7 +36,7 @@ There are at least two modules that handle version numbers: [version](https://me
 and [Perl::Version](https://metacpan.org/pod/Perl::Version), but it seems only the
 [former works properly](/perl-version-number-confusion).
 
-So I recomment the <b>version</b> module.
+So I recomment the **version** module.
 
 It [operator overloading](https://metacpan.org/pod/overload) to allow us to use the various numerical
 comparision operators such as `&gt;`, `&lt;` and even the spaceship operators `&lt;=&gt;`
@@ -60,7 +60,7 @@ The module will not properly parse the last example:
 say version->parse('1.23_TEST');
 ```
 
-Will generate an excpetion  saying <b>Invalid version format (misplaced underscore) at ...</b>
+Will generate an excpetion  saying **Invalid version format (misplaced underscore) at ...**
 
 ## Comments
 

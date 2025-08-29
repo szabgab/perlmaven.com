@@ -16,12 +16,12 @@ and there is a Perl module called [DigitalOcean](https://metacpan.org/pod/Digita
 
 Before you get started you need to [generate a new Token](https://cloud.digitalocean.com/account/api/tokens).
 
-Create a file called <b>.env</b> with the following content:
+Create a file called **.env** with the following content:
 ```
 DIGITAL_OCEAN_TOKEN = THE_TOKEN
 ```
 
-replacing <b>THE_TOKEN</b> by the token you generated.
+replacing **THE_TOKEN** by the token you generated.
 
 Install the [DigitalOcean](https://metacpan.org/pod/DigitalOcean)
 and the
@@ -33,7 +33,7 @@ cpanm DigitalOcean Dotenv
 
 ## List available images
 
-This is a short example to <b>list the available images</b>:
+This is a short example to **list the available images**:
 
 {% include file="examples/digitalocean/list_images.pl" %}
 

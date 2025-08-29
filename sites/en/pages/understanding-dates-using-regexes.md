@@ -46,15 +46,15 @@ while (my $line = <$fh>) {
 After 4 lines of boiler-plate code, we get the name of the file containing the dates from the command line.
 If no file was provided we call `die` and let the user know we expect the name of the file.
 
-Save the above script as date.pl and try running <b>perl date.pl</b>.
-You will get <b>Usage: dates.pl FILE</b>.
+Save the above script as date.pl and try running **perl date.pl**.
+You will get **Usage: dates.pl FILE**.
 
 Then we `open` the file without adding the well known `or die ...` part. We don't add it as
 we used the `autodie` pragma.
 
-Run <b>perl date.pl blabla</b>
+Run **perl date.pl blabla**
 
-You will get <b>Can't open 'blabla' for reading: 'No such file or directory' at dates.pl line 7</b>
+You will get **Can't open 'blabla' for reading: 'No such file or directory' at dates.pl line 7**
 
 Finally, we have a `while` loop that will read in the lines of the file one-by-one,
 put the line in the `$line` variable and execute the block. In the above case it just prints the
@@ -187,7 +187,7 @@ it is followed by a slash and then another 2 digits:
 $line =~ /^(\d?\d)\/(\d?\d)\/(\d\d\d\d) (\d\d)\.(\d\d)\.(\d\d)/;
 ```
 
-As you can see we had to add a back-slash `\` in front of the slash `/` to <b>escape</b> it
+As you can see we had to add a back-slash `\` in front of the slash `/` to **escape** it
 so perl won't think that's the end of the regex. A more readable way is to change the delimiters of the regex
 by putting the letter `m` in front of it:
 

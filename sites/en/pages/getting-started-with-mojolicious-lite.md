@@ -183,7 +183,7 @@ post '/echo' => sub {
 
 In this code, we define the action we want to do when the `post` method is invoked on the
 `/echo` route.  Because we want to do something more complex than just return a fixed string,
-instead of a plain block, we pass to the `post()` function an <b>anonymous subroutine</b>
+instead of a plain block, we pass to the `post()` function an **anonymous subroutine**
 created by the `sub` keyword.
 
 In the anonymous subroutine we copy the current Mojolicious object into the "standard" `$self`

@@ -81,7 +81,7 @@ You just need to "escape" it be preceding with a back-slash: `\]`.
 
 ## Negated character class
 
-What if we would like to allow the matching of any character between two '#' characters <b>except</b> 'a', 'b', or 'c'? We would need to construct
+What if we would like to allow the matching of any character between two '#' characters **except** 'a', 'b', or 'c'? We would need to construct
 a character class with all the characters in the world and [Unicode](http://en.wikipedia.org/wiki/Unicode) has more that 110,000 characters.
 That would be a lot of work to type in. Instead of that, Perl allows us to negate a character class. If we put a [Caret](http://en.wikipedia.org/wiki/Caret)
  (`^`) as the first character in the character class it will mean the character class can match any one character except those mentioned in the character class.
@@ -94,7 +94,7 @@ This regex will match these strings:
 "#z#"
 ```
 
-but will <b>not</b> match any of these strings:
+but will **not** match any of these strings:
 
 ```
 "abc #a# z"

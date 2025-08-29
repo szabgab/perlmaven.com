@@ -23,7 +23,7 @@ You, or your team can set up your own standard, and use Perl::Critic to enforce 
 
 
 The [Perl::Critic](https://metacpan.org/pod/Perl::Critic) module
-comes with a command line tool called <b>perlcritic</b>, but you
+comes with a command line tool called **perlcritic**, but you
 can also integrate the use of Perl::Critic in your unit-tests via
 the [Test::Perl::Critic](http://metacpan.org/pod/Test::Perl::Critic)
 wrapper.
@@ -78,7 +78,7 @@ use strict;
 open my $fh, '<:encoding(UTF-8)', $filename or die;
 ```
 
-That was the <b>gentle</b> level of Perl::Critic. Let's make it a bit more <b>stern</b>
+That was the **gentle** level of Perl::Critic. Let's make it a bit more **stern**
 by running `perlcritic --stern example.pl`:
 
 ## Exclude specific policy violations

@@ -24,9 +24,9 @@ Explanation:
 
 * -e tells perl to execute the string following it as perl code
 * [$| = 1;](/output-autoflush) tells perl to avoid buffering STDOUT, that is to make every print arrive to the screen immediately
-* <b>print "hi\n";</b> there only to be nice
-* <b>$sec = 180;</b> sets the timer in seconds.
-* The key however is that we print <b>\r</b> carrige return at the each of each print instead of <b>\n</b> newline. Thus each print overwrites the output of the previous one creating the effect of only the counter number changing.
+* **print "hi\n";** there only to be nice
+* **$sec = 180;** sets the timer in seconds.
+* The key however is that we print **\r** carrige return at the each of each print instead of **\n** newline. Thus each print overwrites the output of the previous one creating the effect of only the counter number changing.
 
 <img src="static/img/countdown_wide.gif" alt="wide screen countdown">
 

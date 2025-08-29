@@ -38,10 +38,10 @@ say $student->year;
 $student->year('23 years ago');
 ```
 
-After calling the constructor and setting the <b>name</b> attribute of the object we call a new setter called <b>year</b> that will set
+After calling the constructor and setting the **name** attribute of the object we call a new setter called **year** that will set
 the year of birth of the given person. In the next statement we use the appropriate getter to retrieve the value we set and then we call
 the setter again, but this time we pass a string '23 years ago' to it. If we don't have any constraints on the value that `year`
-would accept then this will work, and the value of the <b>year</b> attribute is set to be '23 year ago', but let's see what do we
+would accept then this will work, and the value of the **year** attribute is set to be '23 year ago', but let's see what do we
 really have in the `lib/Person.pm` file:
 
 ```perl

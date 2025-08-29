@@ -18,7 +18,7 @@ author: szabgab
 
 
 In this article of the [Perl Tutorial](/perl-tutorial)
-we are going to learn about <b>hashes</b>, one of the powerful parts of Perl.
+we are going to learn about **hashes**, one of the powerful parts of Perl.
 
 Some times called associative arrays, dictionaries, or maps; hashes are one of the data structures available in Perl.
 
@@ -36,7 +36,7 @@ languages, such as PHP, there is no difference between arrays and hashes.), but 
 and hashes. Arrays are ordered, and you access an element of an array using its numerical index.
 Hashes are un-ordered and you access a value using a key which is a string.
 
-Each hash key is associated with a single <b>value</b> and the keys are all unique inside a single hash structure.
+Each hash key is associated with a single **value** and the keys are all unique inside a single hash structure.
 That means no repetitive keys are allowed. (If you really, really want to have more than one values for a key,
 you'll will need to wait a bit till we reach the references.)
 
@@ -71,7 +71,7 @@ $color_of{apple} = 'red';
 ```
 
 As you can see above, when accessing a specific key-value pair, we used the `$` sign (and not the % sign)
-because we are accessing a single value which is a <b>scalar</b>. The key is placed in curly braces.
+because we are accessing a single value which is a **scalar**. The key is placed in curly braces.
 
 ## Fetch an element of a hash
 
@@ -108,7 +108,7 @@ my %color_of = (
 );
 ```
 
-`=>` is called the <b>fat arrow</b> or <b>fat comma</b>, and it is used to indicate pairs of elements.
+`=>` is called the **fat arrow** or **fat comma**, and it is used to indicate pairs of elements.
 The first name, fat arrow, will be clear once we see the the other, thinner arrow (->) used in Perl.
 The name fat comma comes from the fact that these arrows are basically the same as commas. So we could have written this too:
 
@@ -140,7 +140,7 @@ $color_of{apple} = "green";
 print $color_of{apple};     # green
 ```
 
-The assignment changed the value associated with the <b>apple</b> key. Remember, keys are unique and each key has a
+The assignment changed the value associated with the **apple** key. Remember, keys are unique and each key has a
 single value.
 
 ## Iterating over hashes

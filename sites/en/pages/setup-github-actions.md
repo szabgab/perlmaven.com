@@ -34,20 +34,20 @@ It can make it easy to test that your code does not break any of the (public) pa
 
 ## Minimal requirement
 
-If you already use GitHub to store the source code of your project the only thing you need is to create a directory called <b>.github/workflows/</b> and put
+If you already use GitHub to store the source code of your project the only thing you need is to create a directory called **.github/workflows/** and put
 one (or more) appropriately formatted YAML file in the directory. Once you push out the change GitHub will start running the tests you configured.
 
-It will send you e-mails if something is broken, but you can also follow it via the <b>Actions</b> link on your repository.
+It will send you e-mails if something is broken, but you can also follow it via the **Actions** link on your repository.
 
 The following are a few sample YAML files.
 
 ## GitHub Actions for projects with Makefile.PL
 
-* Run on every <b>push</b> and on every <b>pull_request</b>.
+* Run on every **push** and on every **pull_request**.
 * Create a strategy listing the versions of Perl we would like to use.
 * Use the [perl-tester docker image](https://hub.docker.com/r/perldocker/perl-tester) that already contains a bunch of testing modules for Perl. Use the version numbers from the matrix to generate the tags used to identify the Docker container.
 * Make the system check out the source code of your prokeject with the pre-defined [checkout action](https://github.com/actions/checkout).
-* Using cpanm install all the prerequisites and then run the regular steps starting with <b>perl Makefile.PL</b>
+* Using cpanm install all the prerequisites and then run the regular steps starting with **perl Makefile.PL**
 * As a separate step, run the same tests, but this time RELEASE_TESTING enabled.
 
 {% include file="examples/workflows/makefile_tester.yml" %}

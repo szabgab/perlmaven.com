@@ -48,7 +48,7 @@ to a variable called `$worksheet`.
 Then we need to call the `write` method to add data to the worksheet. Each call has
 2 parameters. The first one is the cell address. As you might recall the rows in Excel
 are numbered from 1, and the columns are marked by letters A, B, C...
-<b>A1</b> being the top-left corner.
+**A1** being the top-left corner.
 
 
 The last thing we need to to is to `close` the workbook. Strictly speaking this is

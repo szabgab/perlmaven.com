@@ -17,14 +17,14 @@ We also have articles on how to [read and write](/open-to-read-and-write)
 and if you already know [how to install Perl modules](/how-to-install-a-perl-module-from-cpan) then there is also the
 [use of Path::Tiny to read and write files](/use-path-tiny-to-read-and-write-file).
 
-However rarely do we see articles explaining <b>how to append to the beginning of a file</b>
-or <b>how to append to the top of a file</b>.
+However rarely do we see articles explaining **how to append to the beginning of a file**
+or **how to append to the top of a file**.
 
 
 ## Prepend to a text file
 
-First of all, I think I'd write <b>how to prepend to the beginning of a file</b>
-or <b>how to prepend to the top of a file</b>, but that's just nit-picking.
+First of all, I think I'd write **how to prepend to the beginning of a file**
+or **how to prepend to the top of a file**, but that's just nit-picking.
 
 The real thing is that you cannot do that easily as the underlying filesystems don't
 make it easy. The only way you can do is to rewrite the whole file with the new content

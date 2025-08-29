@@ -126,7 +126,7 @@ but the response was basically to wait.
 Not a good start, but this does not need to totally stop me. I might be able to migrate other parts of the system,
 faking that module while I wait for it to be fixed.
 
-<b>Update:</b> within two days the module was fixed, I could install it on both OSX and Linux.
+**Update:** within two days the module was fixed, I could install it on both OSX and Linux.
 
 Because of this failure, I have commented out the requirement for Dancer2::Plugin::Passphrase.
 
@@ -170,7 +170,7 @@ As I can understand from the [migration guide](https://metacpan.org/pod/Dancer2:
 for the `':syntax'` part.
 
 In addition, because the [Dancer2::Plugin::Passphrase](https://metacpan.org/pod/Dancer2::Plugin::Passphrase) could not be installed yet,
-I've created a module called <b>Fake</b>, that will mock the behavior of the `passphrase` function. Luckily the API of that function
+I've created a module called **Fake**, that will mock the behavior of the `passphrase` function. Luckily the API of that function
 was very simple. Having this fake version of it will allow me to continue with the migration process and see if I encounter other problems,
 even before the Passphrase issue is fixed.
 
@@ -207,7 +207,7 @@ sub matches {
 
 then I ran the tests and also committed the changes to see what Travis-CI will tell us.
 
-<b>Update:</b> the Dancer2::Plugin::Passphrase module was fixed and I could get rid of the Fake.pm.
+**Update:** the Dancer2::Plugin::Passphrase module was fixed and I could get rid of the Fake.pm.
 Nevertheless I left it here in case you encounter a similar situation with another module.
 
 Even before I got back the results from Travis-CI I ran the tests myself and got the following error message:

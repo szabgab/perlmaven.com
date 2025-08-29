@@ -56,14 +56,14 @@ print Dumper [map {$_->{fields}} @{ $r->{hits}{hits} }];
 ```
 
 This query will fetch all the releases (we usually also call distributions)
-for which the <b>distribution</b> field starts with <b>Perl-Critic</b> and which
-are the <b>latest</b> releases of the given distribution. (This just filters out
+for which the **distribution** field starts with **Perl-Critic** and which
+are the **latest** releases of the given distribution. (This just filters out
 multiple versions of the same distribution.)
-We limit the retrieved fields to the name of the <b>distribution</b> and the <b>date</b>.
+We limit the retrieved fields to the name of the **distribution** and the **date**.
 (The date is not used in our example.)
 
 The returned hash has some meta-meta data in it, so we need to got a bit deeper - two levels
-of 'hits' and then we get a array with more meta-data and the the <b>fields</b> sub-key.
+of 'hits' and then we get a array with more meta-data and the the **fields** sub-key.
 I left in the call to Dumper on the original hash, to make it easy for you to see what's going on.
 
 
@@ -92,13 +92,13 @@ my $r = $mcpan->post(
 print Dumper [map {$_->{fields}} @{ $r->{hits}{hits} }];
 ```
 
-In this request we fetch the list of <b>module</b>s.
-In the <b>filter</b> we use the <b>prefix</b> of the <b>module.name</b> field.
+In this request we fetch the list of **module**s.
+In the **filter** we use the **prefix** of the <b>module.name</b> field.
 The resulting data structure is quite similar to the earlier one.
 
 ## Generating HTML
 
-It is simple to use <b>Data::Dumper</b> to just show the results, but it does not really look good.
+It is simple to use **Data::Dumper** to just show the results, but it does not really look good.
 So in order to make it a bit easier to use the results as part of a web page, I added an extra flag --html
 that can generate a very simple unordered list from the distributions.
 

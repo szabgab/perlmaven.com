@@ -18,7 +18,7 @@ of [Pod::Tree](https://metacpan.org/pod/Pod::Tree) failing with perl compiled us
 He quickly followed it with a [pull request](https://github.com/szabgab/Pod-Tree/pull/7) fixing the problem.
 
 
-In case you are not familiar with it, a <b>pull-request</b> is a notification of a change (or a bunch of changes)
+In case you are not familiar with it, a **pull-request** is a notification of a change (or a bunch of changes)
 made by someone for one of your GitHub repositories. You can either accept them and merge them into your repository,
 or you can reject them, or something in-between. For example you can add comments to it and as the author of those changes
 to make further adjustments before you can merge the changes.

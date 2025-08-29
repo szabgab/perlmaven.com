@@ -100,7 +100,7 @@ the same way you can define the PATH environment variable.
 Every directory listed in this variable will be added to
 the beginning of `@INC`.
 
-On <b>Linux/Unix</b> when using <b>Bash</b>, you would write
+On **Linux/Unix** when using **Bash**, you would write
 
 ```
 export PERL5LIB=/home/foobar/code
@@ -109,7 +109,7 @@ export PERL5LIB=/home/foobar/code
 You can add this to the ~/.bashrc to make it always available when
 you log-in.
 
-On <b>Windows</b> you can set the same in the cmd command window by typing
+On **Windows** you can set the same in the cmd command window by typing
 
 ```
 set PERL5LIB=c:\path\to\dir
@@ -117,20 +117,20 @@ set PERL5LIB=c:\path\to\dir
 
 For a more long term solution follow these steps:
 
-Right-click <b>My Computer</b> and click <b>Properties</b>.
+Right-click **My Computer** and click **Properties**.
 
-In the <b>System Properties</b> window, click on the <b>Advanced</b> tab.
+In the **System Properties** window, click on the **Advanced** tab.
 
-In the Advanced section, click the <b>Environment Variables</b> button.
+In the Advanced section, click the **Environment Variables** button.
 
 In the Environment Variables window in the "User variables for Foo Bar"
-section click on <b>New</b> and type in the following:
+section click on **New** and type in the following:
 
 Variable name: PERL5LIB
 
 Variable value: c:\path\to\dir
 
-Then click OK 3 times. Windows that you open <b>after</b> this will already know
+Then click OK 3 times. Windows that you open **after** this will already know
 about the new variable. Type this in the command window, to see the newly set value:
 
 ```
@@ -140,10 +140,10 @@ echo %PERL5LIB%
 <hr>
 
 This will add the private /home/foobar/code directory (or c:\path\to\dir directory)
-to the beginning of `@INC` for <b>every script</b> that is executed in
+to the beginning of `@INC` for **every script** that is executed in
 the same environment.
 
-In <b>taint mode</b>, that will be explained in a separate post,
+In **taint mode**, that will be explained in a separate post,
 the PERLLIB and PERL5LIB environment variables are ignored.
 
 ## use lib
@@ -175,10 +175,10 @@ The last solution is the most temporary solution.
 Add a `-I /home/foobar/code` flag to perl
 when running the script.
 
-<b>perl -I /home/foobar/code  script.pl</b>
+**perl -I /home/foobar/code  script.pl**
 
 This will add /home/foobar/code to the beginning of
-@INC <b>for this specific execution</b> of the script.
+@INC **for this specific execution** of the script.
 
 ## So which one to use?
 

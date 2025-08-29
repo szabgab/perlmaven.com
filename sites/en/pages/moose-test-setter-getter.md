@@ -50,7 +50,7 @@ name of this test.
 
 Then, as we saw earlier, we can pass the attribute to the constructor already. So we are going to test that too.
 So this time we call the constructor and pass a parameter to it. `my $o = Person->new( name => 'Bar' );`
-Then we check if the returned value is really an instance of the <b>Person</b> class. Then, calling the getter
+Then we check if the returned value is really an instance of the **Person** class. Then, calling the getter
 `is($o->name, 'Bar');` we check if the value was indeed set by the constructor.
 
 In this example I've even forgot to add the third parameter that would be the description of the test.

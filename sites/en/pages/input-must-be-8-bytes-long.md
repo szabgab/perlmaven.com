@@ -18,7 +18,7 @@ I have integrated NET:SFTP module and trying test the "sftp put" functionality.
 put($lclfile, "$remfile");
 ```
 
-Occasionally I get this error <b>"input must be 8 bytes long at DES.pm line 58."</b>.
+Occasionally I get this error **"input must be 8 bytes long at DES.pm line 58."**.
 
 When I execute the same command next time the sftp put works fine.
 Any clue?

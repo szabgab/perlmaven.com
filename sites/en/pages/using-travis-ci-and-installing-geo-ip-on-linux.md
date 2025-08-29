@@ -20,7 +20,7 @@ Luckily, after 2 hours of fighting I think I managed to establish the correct pr
 
 
 In case you don't know what [Travis-CI](https://travis-ci.org/) is, the CI stands for Continuous Integration. Once you configured the
-[GitHub](http://github.com/) repository of your project, every time you <b>push</b> some changes to GitHub, Travis-CI will pick up
+[GitHub](http://github.com/) repository of your project, every time you **push** some changes to GitHub, Travis-CI will pick up
 the new commit, run whatever compilation and testing you configured and send you an e-mail if something broke.
 
 It is awesome and it is free for Open Source projects.
@@ -32,9 +32,9 @@ prerequisite, [cpanm](https://metacpan.org/pod/App::cpanminus), cannot install i
 has two non-perl prerequisites. One is C version of the GeoIP API, the other is the database holding the mapping used by GeoIP.
 
 In order to install the C version of the API I had to visit [GeoIP Legacy Downloadable Databases](http://dev.maxmind.com/geoip/legacy/downloadable/)
-where under <b>MaxMind-Supported APIs</b> I found a link to the [Source on GitHub](https://github.com/maxmind/geoip-api-c/releases) of the <b>C</b> version.
+where under **MaxMind-Supported APIs** I found a link to the [Source on GitHub](https://github.com/maxmind/geoip-api-c/releases) of the **C** version.
 There I found the latest release, which was 1.6.2 at the time of this writing. It has a big green button saying "GeoIP-1.6.2.tar.gz". Instead of left-clicking on the button,
-I copied the link to use with <b>wget</b>.
+I copied the link to use with **wget**.
 
 Then my steps to install the C API were as follows:
 
@@ -48,10 +48,10 @@ $ make check
 $ sudo make install
 ```
 
-(Note, the <b>make check</b> step used to have some errors, but in 1.6.2 all the tests passed.)
+(Note, the **make check** step used to have some errors, but in 1.6.2 all the tests passed.)
 
-Obviously one does not need to install it on <b>/opt</b> which is owned by root. The library could have been installed in
-<b>~/geoip/</b> as well, and then I would not need to use `sudo` in the last step.
+Obviously one does not need to install it on **/opt** which is owned by root. The library could have been installed in
+**~/geoip/** as well, and then I would not need to use `sudo` in the last step.
 
 
 ## Install GeoIP database
@@ -70,12 +70,12 @@ $ sudo mv GeoIP.dat /opt/geoip-1.6.2/share/GeoIP/GeoIP.dat
 ```
 
 Of coure, here I already assume the location of the GeoIP C library I've installed in the previous step. Here too, I only
-need to use <b>sudo</b> because I decided to install the C library in <b>/opt</b>.
+need to use **sudo** because I decided to install the C library in **/opt**.
 
 The 3rd step is that I need to install the Geo::IP module manually. I still cannot rely on the default behavior or cpan-minus
-as I need to pass the (non-standard) location of the GeoIP C library to the <b>Makefile.PL</b>. I visited
+as I need to pass the (non-standard) location of the GeoIP C library to the **Makefile.PL**. I visited
 [Geo::IP on MetaCPAN](https://metacpan.org/pod/Geo::IP) where I saw the latest version was 1.43. I also saw the 
-<b>Download</b> linke. Again, instead of left-clicking it, I copied the URL to be used with <b>wget</b>.
+**Download** linke. Again, instead of left-clicking it, I copied the URL to be used with **wget**.
 
 These are the step I have to execute at the console:
 
@@ -95,7 +95,7 @@ This will test and install the Geo::IP Perl module.
 ## Travis-CI configuration file
 
 Once I know the correct steps I had to execute on the console, I could put together the Travis-CI configuration file.
-In the <b>before_install</b> section I simple had to list the same steps one-by-one.
+In the **before_install** section I simple had to list the same steps one-by-one.
 
 ```
 branches:

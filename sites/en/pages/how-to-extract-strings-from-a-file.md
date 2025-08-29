@@ -94,7 +94,7 @@ We expect to match the following 3 strings: 'A-1', 'C-3', and 'E-5'.
 
 In the regex `[A-Za-z]+-\d+` we have the following:
 `[A-Za-z]+` match one or more letters, `-` then a dash, `\d+` then one or more digits.
-The `g` after the regex means <b>global</b> matching, so it will look for more than one possible matches.
+The `g` after the regex means **global** matching, so it will look for more than one possible matches.
 This is interesting either in a substitute or in a match in a [list context](/scalar-and-list-context-in-perl).
 The assignment to the `@strings` array creates the required list context. This means the regex will return
 the list of the actual matches.
@@ -154,9 +154,9 @@ and the result?
 ''
 ```
 
-That looks strange. The reason is that when there are <b>capturing parentheses</b> in the regex and you use the regex
+That looks strange. The reason is that when there are **capturing parentheses** in the regex and you use the regex
 in list context to get the matches returned, then instead of returning the actual matches, perl returns the strings
-that were matched by the parentheses. So let's change them to <b>non-capturing parentheses</b> by including `?:`
+that were matched by the parentheses. So let's change them to **non-capturing parentheses** by including `?:`
 at the beginning of the sub-expression:
 
 ```perl

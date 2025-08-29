@@ -14,7 +14,7 @@ author: szabgab
 ---
 
 
-In this episode of the [Perl tutorial](/perl-tutorial) we are going to see <b>how does the while loop work in Perl</b>.
+In this episode of the [Perl tutorial](/perl-tutorial) we are going to see **how does the while loop work in Perl**.
 
 
 {% include file="examples/while_loop.pl" %}
@@ -45,7 +45,7 @@ it while still checking for a lower boundary.
 
 If this happens by mistake, that's a bug.
 
-On the other hand, in some cases using an infinite loop <b>on purpose</b> can make our program more simple to write, and
+On the other hand, in some cases using an infinite loop **on purpose** can make our program more simple to write, and
 easier to read. We love readable code!
 If we would like to have an infinite loop we can use a condition that's always true.
 

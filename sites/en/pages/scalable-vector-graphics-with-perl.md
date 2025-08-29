@@ -80,7 +80,7 @@ the img tag:
 <img src="/img/black_circle.svg" alt="black circle"/>
 ```
 
-and make sure that your web server returns the file with Content-type: <b>image/svg+xml</b>.
+and make sure that your web server returns the file with Content-type: **image/svg+xml**.
 The result look like this:
 
 <img src="/img/black_circle.svg" alt="black circle"/>

@@ -200,7 +200,7 @@ ok($t->open(Host => 'localhost', Port => 8000, Timeout => 10), 'connected');
 ## Waiting for the banner
 
 Once our connection is established, the server is supposed to send a welcome message to the client.
-It is sometimes called a <b>banner</b>. So we tell the telnet client to wait for a sign that should be the end of the
+It is sometimes called a **banner**. So we tell the telnet client to wait for a sign that should be the end of the
 banner. As our application does not have a `prompt` we have to rely on the expected content. So we call
 the `waitfor` method of the `Net::Telnet` object with a regular expression. For historical reasons this
 needs to be a regex inside a string. That's why we have both single-quote `'` and a slash `/`.

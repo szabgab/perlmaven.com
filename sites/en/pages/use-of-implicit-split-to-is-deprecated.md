@@ -20,7 +20,7 @@ my $x = split /,/, $str;
 
 The problem is that `split` always returnes a list of values and if you assign it to a scalar value then
 at one point perl used to try to guess what you wanted to do.
-It would assign the results of the `split` to the `@_` variable <b>implicitly</b> and then use that
+It would assign the results of the `split` to the `@_` variable **implicitly** and then use that
 in scalar context.
 
 {% include file="examples/split.t" %}

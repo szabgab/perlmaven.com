@@ -40,7 +40,7 @@ I started by creating a test case. First the Markua file:
 
 {% include file="examples/markua-parser/074f0d8/t/input/paragraphs.md" %}
 
-(Oh, only after writing the article did I notice that the text in the input actually explains it incorrectly. Lines with content that come one after the other become the <b>same</b> paragraph instead of separate paragraphs.)
+(Oh, only after writing the article did I notice that the text in the input actually explains it incorrectly. Lines with content that come one after the other become the **same** paragraph instead of separate paragraphs.)
 
 Then the expected DOM file in JSON format:
 

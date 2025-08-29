@@ -22,7 +22,7 @@ module.
 
 <slidecast file="advanced-perl/moose/classes-as-constraints" youtube="NYsAqRK3kmw" />
 
-Let's see the class itself in the <b>lib/Person.pm</b> file:
+Let's see the class itself in the **lib/Person.pm** file:
 
 ```perl
 package Person;
@@ -34,7 +34,7 @@ has 'birthday' => (isa => 'DateTime', is => 'rw');
 1;
 ```
 
-It has an attribute called <b>birthday</b>, but instead of it being declared as `isa => 'Int'`,
+It has an attribute called **birthday**, but instead of it being declared as `isa => 'Int'`,
 we declare it as `isa => 'DateTime'`.
 
 This expression defines that the 'birthday' attribute must be an instance of the 'DateTime' Perl class.
@@ -85,7 +85,7 @@ Attribute (birthday) does not pass the type constraint because:
 This happens because the value passed to the `birthday` setter now needs to
 be a DateTime object and not just any number.
 
-The full <b>script/person.pl</b> file:
+The full **script/person.pl** file:
 
 ```perl
 use strict;

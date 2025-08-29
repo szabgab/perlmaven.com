@@ -14,7 +14,7 @@ author: szabgab
 
 As seen in the [previous episode](/import) if a module author exports a list of functions, for example:
 `our @EXPORT = qw(add multiply);` and if the module user loads the module using `use Module::Name;`
-then the user will get <b>all</b> the functions listed in the `@EXPORT` array.
+then the user will get **all** the functions listed in the `@EXPORT` array.
 
 This can be dangerous.
 
@@ -26,7 +26,7 @@ in the new version the module might start to export several new functions that c
 with existing function in my code, or functions that are being imported from other modules.
 
 That's why I always recommend to restrict the list of functions one imports as it is done in the
-example in <b>calca_2.pl</b>:
+example in **calca_2.pl**:
 
 ```perl
 #!/usr/bin/perl

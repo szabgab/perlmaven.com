@@ -42,7 +42,7 @@ Maybe we don't need that, so I'll leave out the caret for now.
 
 That string is followed by a number that, as I assume, can have any number of digits.
 `\d` matches a single digit, and the `+` quantifier modifies that to have
-<b>1 or more digits</b>.
+**1 or more digits**.
 
 ```perl
 /Usage:\d+/
@@ -132,7 +132,7 @@ m{^Usage:(\d+)/(\d+)\s+messages$}
 ```
 
 Maybe there can be spaces and even tabs between the : and the first digit. If we want to allow for that,
-we can add `\s*` where the `*` is a quantifier meaning <b>0 or more</b>.
+we can add `\s*` where the `*` is a quantifier meaning **0 or more**.
 
 ```perl
 m{^Usage:\s*(\d+)/(\d+)\s+messages$}

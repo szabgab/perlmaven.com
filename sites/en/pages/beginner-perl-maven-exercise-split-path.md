@@ -12,10 +12,10 @@ author: szabgab
 ---
 
 
-Given a path like <b>/home/foo/.mozilla/cache/data.txt</b>,
-return the filename (<b>data.txt</b>), and return the full-path directory name (<b>/home/foo/.mozilla/cache</b>).
+Given a path like **/home/foo/.mozilla/cache/data.txt**,
+return the filename (**data.txt**), and return the full-path directory name (**/home/foo/.mozilla/cache**).
 
-Handle also the case of <b>c:\home\foo\.mozilla\cache\data.txt</b>.
+Handle also the case of **c:\home\foo\.mozilla\cache\data.txt**.
 
 
 <slidecast file="beginner-perl/exercise-split-path" youtube="ooejgCs6VC4" />

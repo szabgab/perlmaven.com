@@ -41,7 +41,7 @@ Even if she never released a module.
 
 ## How?
 
-I asked [David Golden](http://www.dagolden.com/), and he suggested to use the name <b>x_contributors</b>
+I asked [David Golden](http://www.dagolden.com/), and he suggested to use the name **x_contributors**
 to list the contributors the same way they are in the 'authors' section in the module POD. (Name &lt;email>)
 
 Let's see how can this be achieved by the major packaging systems.
@@ -65,7 +65,7 @@ already has this in the call of WriteMakefile:
 I've added the appropriate section to [XML::Feed](https://metacpan.org/release/XML-Feed)
 though it has not been released since.
 
-Add this in the <b>Module::Build->new</b> call:
+Add this in the **Module::Build->new** call:
 
 ```perl
     meta_merge =>

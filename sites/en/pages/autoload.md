@@ -11,7 +11,7 @@ archive: true
 ---
 
 
-Normally, if you call a function that does not exist perl will throw an exception <b>Undefined subroutine ... called</b>,
+Normally, if you call a function that does not exist perl will throw an exception **Undefined subroutine ... called**,
 however, unlike in most of the other languages you can define a default function to be called, instead of throwing
 that exception. This can give us all kinds of interesting solutions.
 

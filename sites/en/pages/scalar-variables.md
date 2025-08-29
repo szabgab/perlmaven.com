@@ -26,13 +26,13 @@ author: szabgab
 In this part of the [Perl Tutorial](/perl-tutorial), we are going to take a
 look at the data structures available in Perl and how we can use them.
 
-In Perl 5 there are basically 3 data structures. <b>Scalars, arrays and hashes</b>. The latter is also
+In Perl 5 there are basically 3 data structures. **Scalars, arrays and hashes**. The latter is also
 known as dictionaries, look-up tables or associative arrays in other languages.
 
 
 {% youtube id="4jyGQPGXOK0" file="modern-perl-tutorial-part-02-scalars.ogv" %}
 
-Variables in Perl are always preceded with a sign called a <b>sigil</b>. These signs are `$` for scalars,
+Variables in Perl are always preceded with a sign called a **sigil**. These signs are `$` for scalars,
 `@` for arrays, and `%` for hashes.
 
 A scalar can contain a single value such as a number or a string. It can also contain a
@@ -43,8 +43,8 @@ A variable name can be `$name` or `$long_and_descriptive_name`. It can also be
 `$LongAndDescriptiveName` which is often referred-to as the "CamelCase",
 but the Perl community usually prefers the all-lower case variables with underscores separating the words in the name.
 
-As we are always using <b>strict</b>, we always have to first declare our variables using <b>my</b>.
-(Later you will also learn about <b>our</b> and some other ways, but for now let's stick to the <b>my</b> declaration.)
+As we are always using **strict**, we always have to first declare our variables using **my**.
+(Later you will also learn about **our** and some other ways, but for now let's stick to the **my** declaration.)
 We can either assign a value immediately like in this example:
 
 ```perl
@@ -72,7 +72,7 @@ say $name;
 We prefer the former if the logic of the code allows it.
 
 If we declared a variable, but have not assigned a value yet then it has a
-value called [undef](/undef-and-defined-in-perl) which is similar to <b>NULL</b> in databases,
+value called [undef](/undef-and-defined-in-perl) which is similar to **NULL** in databases,
 but which has slightly different behavior.
 
 We can check if a variable is `undef` or not using the `defined` function:
@@ -190,7 +190,7 @@ say $z x $y;        # 7777
 Perl automatically converts numbers to strings and strings to numbers
 as required by the operator.
 
-We call numerical and string <b>contexts</b>.
+We call numerical and string **contexts**.
 
 The above cases were easy. When converting a number to a string it is just as if
 you put quotes around it. When converting a string to a number there are simple
@@ -229,7 +229,7 @@ The above code will also generate a warning on the standard error channel (`STDE
 Argument "3.14 is pi" isn't numeric in addition(+) at example.pl line 10.
 ```
 
-assuming you used <b>use warnings</b> which is highly recommended.
+assuming you used **use warnings** which is highly recommended.
 Using it will help you notice when something is not exactly as expected.
 Hopefully the result of `$x + $y` is now clear.
 
@@ -258,7 +258,7 @@ now holds both a string value and a number value, and will use the right one in 
 new operation avoiding the conversion.
 
 There are three more things I'd like to address. One is the behavior of a variable with
-`undef` in it, the other one is <b>fatal warnings</b> and the third one is avoiding
+`undef` in it, the other one is **fatal warnings** and the third one is avoiding
 the automatic "string to number conversion".
 
 ## undef

@@ -21,7 +21,7 @@ Well, sort of.
 ## BEGIN
 
 You can add a BEGIN-block to your code that will get executed as soon
-as that part of the code was compiled and <b>before</b> the rest of
+as that part of the code was compiled and **before** the rest of
 the code is compiled. It can happen even before any of the modules are loaded.
 
 {% include file="examples/begin.pl" %}

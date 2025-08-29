@@ -29,7 +29,7 @@ In the `birthday` setter/getter we add a `die ... if not ...` construct.
 
 First we check if the given parameter is a `blessed` reference, that is if it is
 an instance of anything.
-Then we check if it <b>is a</b> instance of DateTime using the
+Then we check if it **is a** instance of DateTime using the
 appropriately named `isa` method from the [UNIVERSAL](https://metacpan.org/pod/UNIVERSAL)
 package.
 We need to have this 2-step checking as the `isa` method calling would throw an exception if the

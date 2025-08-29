@@ -45,13 +45,13 @@ Note, it is called `main` with lower-case letters.
 
 So after the `package main;` statement we are back in the main namespace. If we now tried to call the `add`
 function `add(3, 4)`, we would get an exception and the script would die with 
-<b>Undefined subroutine &main::add called  at namespaces.pl line 20.</b>.
+**Undefined subroutine &main::add called  at namespaces.pl line 20.**.
 
 That's because we don't have an `add` function in the main namespace. Instead of that we have to write the
 fully qualified name of the function, including the namespace as a prefix separated by double-colon:
 `Calc::add(3, 4)`
 
-<b>namespaces.pl</b>:
+**namespaces.pl**:
 
 ```perl
 #!/usr/bin/perl

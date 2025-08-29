@@ -13,7 +13,7 @@ show_related: false
 
 The beginning of a series of articles available to [Perl Maven Pro](/pro) subscribers
 about Asynchronous programming using [AnyEvent](https://metacpan.org/pod/AnyEvent),
-<b>the DBI of event loop programming</b>.
+**the DBI of event loop programming**.
 
 
 * [A Simple way to download many web pages using Perl](/simple-way-to-fetch-many-web-pages)

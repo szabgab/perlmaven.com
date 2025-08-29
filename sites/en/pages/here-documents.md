@@ -19,7 +19,7 @@ As usual in Perl, there are several solutions for this.
 Using a here-document is one of the common solutions.
 
 
-A <b>here-document</b> allows you to create a string that spreads on <b>multiple lines</b> and preserves
+A **here-document** allows you to create a string that spreads on **multiple lines** and preserves
 white spaces and new-lines. If you run the following code it will print exactly what you see
 starting from the word Dear till the line before the second appearance of END_MESSAGE.
 
@@ -42,10 +42,10 @@ The here document starts with two less-than characters `&lt;&lt;` followed by an
 the designated end-mark of the here-document, followed by the semi-colon `;` marking the end of the statement.
 This is a bit strange as the statement does not really end here. Actually the content of the here document
 just starts on the line after the semi-colon, (in our case with the word "Dear"), and continues till Perl finds the
-arbitrarily selected end-mark. In our case the string <b>END_MESSAGE</b>.
+arbitrarily selected end-mark. In our case the string **END_MESSAGE**.
 
 If you have already seen here-documents in code, you are probably surprised by the single-quotes around the first
-<b>END_MESSAGE</b>. I think if you find examples of here-documents on the Internet, or behind the corporate firewalls,
+**END_MESSAGE**. I think if you find examples of here-documents on the Internet, or behind the corporate firewalls,
 you'll probably see the opening part without any quotes around it. Like this:
 
 {% include file="examples/non_interpolating_here_document_default.pl" %}
@@ -84,7 +84,7 @@ how are you?
 ## Warning: exact end-string at the end
 
 Maybe just a note. You have to make sure the end-string is duplicated at the end of the string
-<b>exactly</b> as it was at the beginning. No white-spaces before, and no white spaces after.
+**exactly** as it was at the beginning. No white-spaces before, and no white spaces after.
 Otherwise Perl will not recognize it and will think the here-documents have not ended yet.
 That means you cannot indent the end tag to match the indentation of the rest of your code.
 Or can you?
@@ -123,8 +123,8 @@ The extra indentation of the actual text can be removed using a substitution at 
 {% include file="examples/here_document_remove_indent.pl" %}
 
 In the substitution we replace 8 leading spaces by the empty string. We use two modifiers:
-`/m` changes the behavior of `^` from matching at the <b>beginning of the string</b>
-to match at the <b>beginning of line</b>.  `/g` tells the substitution to work <b>globally</b>,
+`/m` changes the behavior of `^` from matching at the **beginning of the string**
+to match at the **beginning of line**.  `/g` tells the substitution to work **globally**,
 that is to repeat the substitution as many times as it can.
 
 Together these two flag will get the substitution to remove 8 leading spaces from every line in the

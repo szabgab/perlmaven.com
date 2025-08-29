@@ -15,7 +15,7 @@ author: szabgab
 Recently I was working on a patch for [MetaCPAN](https://metacpan.org/),
 but then it turned out that I don't need to implement it as it is already working.
 I wanted to be able to list all the modules within a namespace.
-Apparently it is very easy. I only need to prefix my search with <b>module:</b>
+Apparently it is very easy. I only need to prefix my search with **module:**
 
 
 A few examples:
@@ -40,6 +40,6 @@ BTW If you are looking for related articles on the Perl Maven site here are a fe
 
 ## Caveat
 
-As I Francisco Zarabozo commented and as I also [found out later](/metacpan-search-tricks), the <b>module:</b> keyword does not
+As I Francisco Zarabozo commented and as I also [found out later](/metacpan-search-tricks), the **module:** keyword does not
 only match the beginning of the module name. It matches any whole part of the module name. So for example
 [module:Plugin](https://metacpan.org/search?q=module:Plugin) will find any module that has Plugin in its name.

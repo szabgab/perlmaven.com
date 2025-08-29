@@ -49,7 +49,7 @@ You might wonder, which one of these modules are loaded by perl by default. For 
 step and print `%INC` without loading Data::Dumper.
 
 In `perl -e 'print join "\n", %INC; print "\n"'` we join together all the keys and values of `%INC`
-with newlines. But it prints nothing. That is, <b>perl itself does not load any module.</b>
+with newlines. But it prints nothing. That is, **perl itself does not load any module.**
 
 We can then try to load some of the pragma:
 

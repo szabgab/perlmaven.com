@@ -145,7 +145,7 @@ use A;
 use B;
 ```
 
-they will be both loaded at compile time on <b>every</b> run.
+they will be both loaded at compile time on **every** run.
 
 On the other hand if you write something like this:
 

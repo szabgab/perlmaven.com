@@ -39,7 +39,7 @@ the same guy who wrote [WWW::Mechanize](https://metacpan.org/pod/WWW::Mechanize)
 [Bobby Tables: A guide to preventing SQL injection](http://bobby-tables.com/).
 
 I recommend reading the whole book, but start from the end.
-Specifically from chapter <b>Staying Hirable</b>,
+Specifically from chapter **Staying Hirable**,
 where he describes what to do when you already have a job.
 
 Even if you don't yet have a job.
@@ -48,13 +48,13 @@ Even if you don't yet have a job.
 
 I don't think you can just prepare for a Perl job interview. Unless you go to
 a clueless company, they will ask you all kinds of questions that you cannot possibly
-prepare for in 5 days. What you need to do, is to invest in your <b>hirability</b>
+prepare for in 5 days. What you need to do, is to invest in your **hirability**
 all the time.
 
 The tech jobs, Perl programming included, isn't a static thing that you get hired
 and 40 years later you go to get your pension. It constantly changes and if you want
 to keep having a job, you will constantly need to improve yourself.
-<b>Beyond</b> what the current company requires you to know.
+**Beyond** what the current company requires you to know.
 
 So what do you need to know?
 

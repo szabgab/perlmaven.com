@@ -22,11 +22,11 @@ The first test script was this:
 In this example we create a very long sting of the same character.
 
 On the Linux machine that has 2Gb memory and no swap-space allocated, the script started to die
-printing <b>Out of memory!</b> on the terminal when I tried to allocate 1800 Mb memory. This is not surprising
+printing **Out of memory!** on the terminal when I tried to allocate 1800 Mb memory. This is not surprising
 as the operating system also takes some memory. So basically once we ran out of memory the script just died.
 
 The same script on the host OSX that has 4 Gb memory and swap space, could allocate 20 Gb memory and was still working.
-And it was not even using the swap space. The <b>Activity Monitor</b> of OSX reported 19.53 Gb Memory usage and 17.79 Gb Compressed Memory.
+And it was not even using the swap space. The **Activity Monitor** of OSX reported 19.53 Gb Memory usage and 17.79 Gb Compressed Memory.
 
 Apparently because the data I used to fill the memory was easily compressible, Mac did just that.
 

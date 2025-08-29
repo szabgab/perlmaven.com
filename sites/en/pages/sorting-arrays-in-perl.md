@@ -14,7 +14,7 @@ author: szabgab
 ---
 
 
-In this article we are going to see how we can <b>sort an array of strings or numbers in Perl</b>.
+In this article we are going to see how we can **sort an array of strings or numbers in Perl**.
 
 Perl has a built-in function called `sort` that can, unsurprisingly, sort an array. In its most simple form,
 you just give it an array, and it returns the elements of that array in a sorted order. `@sorted = sort @original`.
@@ -88,11 +88,11 @@ and all the upper case letters are located earlier than the lower case letters.
 
 The way `sort` works in Perl is that it goes over every two elements of
 the original array. In every turn it puts the value from the left side into the variable `$a`,
-and the value on the right side in the variable `$b`. Then it calls a <b>comparison function</b>.
+and the value on the right side in the variable `$b`. Then it calls a **comparison function**.
 That "comparison function" will return -1 if the content of `$a` should be on the left, 1 if the content of
 `$b` should be on the left, or 0 if it does not matter as the two values are the same.
 
-By default you don't see this comparison function and <b>sort</b> compares the values according to the ASCII table,
+By default you don't see this comparison function and **sort** compares the values according to the ASCII table,
 but if you want, you can write it explicitly:
 
 ```perl
@@ -115,7 +115,7 @@ you can do so as given in the next example:
 my @sorted_words = sort { lc($a) cmp lc($b) } @words;
 ```
 
-Here, for the sake of comparison, we call the `lc` function that returns the <b>lower case</b> version of its argument.
+Here, for the sake of comparison, we call the `lc` function that returns the **lower case** version of its argument.
 Then `cmp` compares those lower case versions and decides which of the original strings must go first
 and which second.
 

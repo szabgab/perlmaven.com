@@ -31,7 +31,7 @@ on external tool to format it to look good.
 
 
 In this episode of the [Perl tutorials](/perl-tutorial)
-we are going to see the <b>POD - Plain Old Documentation</b> which is
+we are going to see the **POD - Plain Old Documentation** which is
 the mark-up language used by perl developers.
 
 As simple piece of perl code with POD looks like this:
@@ -42,7 +42,7 @@ If you save this as `script.pl` and run it using `perl script.pl`,
 perl will disregard anything between the `=pod` and the `=cut` lines.
 It will only execute the actual code.
 
-On the other hand, if you type in `perldoc script.pl`, the <b>perldoc</b> command
+On the other hand, if you type in `perldoc script.pl`, the **perldoc** command
 will disregard all the code. It will fetch the lines between `=pod` and `=cut`,
 format them according to certain rules, and display them on the screen.
 

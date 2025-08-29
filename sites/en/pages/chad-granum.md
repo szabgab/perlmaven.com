@@ -33,7 +33,7 @@ interesting CPAN modules.  (31.06 min)
 <podcast>
 
 * Chad Granum on [CPAN](https://metacpan.org/author/EXODIST), and on [Github](https://github.com/exodist).
-* He is <b>exodist</b> on the #fennec and other channels on [irc.perl.org](http://www.irc.perl.org/)
+* He is **exodist** on the #fennec and other channels on [irc.perl.org](http://www.irc.perl.org/)
 * You can also find him on [LinkedIN](https://www.linkedin.com/pub/chad-granum/17/183/52b).
 <!-- [Open Exodus](http://www.open-exodus.net) -->
 

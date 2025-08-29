@@ -21,11 +21,11 @@ Let me show a quick refactoring of it:
 
 There are some interesting things here:
 
-* missing <b>use strict</b>
-* But declaring the global variable <b>$copyrightsfile</b> using <b>my</b>
-* Not declaring <b>@COPYRIGHTS</b> (in plural) at all even though it is a global variable.
-* Not declaring <b>@COPYRIGHT</b> (in singular) either, even though it should be locally scoped. And the confusion of having two arrays with very similar names.
-* Using the implicit <b>$_</b> might be considered "perlish" by some, but I prefer to have a named variable in its place.
+* missing **use strict**
+* But declaring the global variable **$copyrightsfile** using **my**
+* Not declaring **@COPYRIGHTS** (in plural) at all even though it is a global variable.
+* Not declaring **@COPYRIGHT** (in singular) either, even though it should be locally scoped. And the confusion of having two arrays with very similar names.
+* Using the implicit **$_** might be considered "perlish" by some, but I prefer to have a named variable in its place.
 * I addedd the Data::Dumper code to make it easier to see the results.
 
 ## Sample imput file
@@ -44,11 +44,11 @@ $VAR1 = [
 ```
 
 
-## Add <b>use strict</b>, Use lexical file-handle
+## Add **use strict**, Use lexical file-handle
 
 Lexical file-handles and 3-part open.
 
-That forces us to declare our varibales with <b>my</b>.
+That forces us to declare our varibales with **my**.
 
 {% include file="examples/code_snippet1.pl" %}
 

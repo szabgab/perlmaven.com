@@ -39,12 +39,12 @@ print $mech->content;
 
 In this example we load the `WWW::Mechanize` module with the `use`
 statement, just as we would do with any other module. In OOP terminology
-this module is the <b>class</b>. 
-Then we use the single-arrow notation to call the `new` <b>constructor</b>,
-passing a pair of values to it. This constructor returns an <b>object</b>, which
-is also called an <b>instance</b> of the class. This is assigned to a scalar variable.
+this module is the **class**. 
+Then we use the single-arrow notation to call the `new` **constructor**,
+passing a pair of values to it. This constructor returns an **object**, which
+is also called an **instance** of the class. This is assigned to a scalar variable.
 
-Then we call the `get` <b>method</b> on the object passing a parameter to
+Then we call the `get` **method** on the object passing a parameter to
 it (`$url`). Finally we call the `content` method of the object,
 this time without passing any parameter.
 
@@ -164,7 +164,7 @@ sub new {
 1;
 ```
 
-The `new` <b>constructor</b> is just a regular subroutine declared with the
+The `new` **constructor** is just a regular subroutine declared with the
 `sub` keyword. Nothing is really special about it. Not even its name!
 In Perl, any subroutine can act as a constructor, the word `new` is not
 reserved, or special in any way, except that it is the most common name for the

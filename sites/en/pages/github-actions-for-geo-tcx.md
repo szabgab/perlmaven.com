@@ -16,10 +16,10 @@ Let's contribute that to the project.
 
 ## Unnecessary Makefile.PL ?
 
-Looking at the source code of the prorject I was a bit confused as the <b>Makefile.PL</b> did not contain any reference to GitHub, but somehow MetaCPAN did know about the GitHub
-of this project. Then I noticed there is also a <b>dist.ini</b> file. This looks confusing and probably unnecessary.
+Looking at the source code of the prorject I was a bit confused as the **Makefile.PL** did not contain any reference to GitHub, but somehow MetaCPAN did know about the GitHub
+of this project. Then I noticed there is also a **dist.ini** file. This looks confusing and probably unnecessary.
 
-So I tried to install the dependencies and running the tests using <b>dzil</b> just to have it complain:
+So I tried to install the dependencies and running the tests using **dzil** just to have it complain:
 
 ```
 $ dzil test
@@ -51,7 +51,7 @@ This was also [reported](https://github.com/patjoly/geo-tcx/issues/2).
 
 ## .gitignore .build
 
-Dist::Zilla also generates a directory called <b>.build</b>. It should be ignored.
+Dist::Zilla also generates a directory called **.build**. It should be ignored.
 [pull request](https://github.com/patjoly/geo-tcx/pull/3).
 
 

@@ -17,19 +17,19 @@ This time we are going to see how to retrieve the list of all the talks availabl
 
 After a few minutes of browsing on the TED website I've found a page where I could
 [search for TED talks](http://www.ted.com/talks). At the bottom of the page I saw pagination navigation link:
-<b>Previous | 1 | 2 | 3 | 4 | 5 ... 60 | Next</b>.
+**Previous | 1 | 2 | 3 | 4 | 5 ... 60 | Next**.
 
 Apparently once I've ran a search I could fetch the 2nd, 3rd, etc. pages.
 
-Each such link looked like this: <b>http://www.ted.com/talks?page=2</b>. So the same page just passing the page number
+Each such link looked like this: **http://www.ted.com/talks?page=2**. So the same page just passing the page number
 as parameter.
-After clicking through to the second page I could see that <b>http://www.ted.com/talks?page=1</b> work as the first page.
+After clicking through to the second page I could see that **http://www.ted.com/talks?page=1** work as the first page.
 
 On every page I saw 6*6 = 36 talks and there were 60 pages. On the 60th page there were only 10 talks.
 So this means there were 2134 talks when I looked at the site. By the time you read this the number will probably grow.
 
 On every page there are links to the talks. Each link looks like this
-<b>http://www.ted.com/talks/tim_berners_lee_the_year_open_data_went_worldwide</b> we have already dealt with in the
+**http://www.ted.com/talks/tim_berners_lee_the_year_open_data_went_worldwide** we have already dealt with in the
 [previous article](/web-scraping-ted).
 
 So apparently we'll be able to go through all the videos by just downloading the 'talks' pages.

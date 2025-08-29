@@ -19,10 +19,10 @@ generation from the test management and reporting.
 
 When using TAP you have a test script or program or whatever
 you would like to call it, that exercises your application
-and prints the results to the screen (called a <b>TAP producer</b>).
+and prints the results to the screen (called a **TAP producer**).
 
 You also have another tool that can parse this output
-(called a <b>TAP parser or harness</b>) and generate nice or at least
+(called a **TAP parser or harness**) and generate nice or at least
 useful reports.
 
 The format of TAP is programming language agnostic.
@@ -178,9 +178,9 @@ summary created by the harness does not get much longer.
 has a command-line tool called
 `prove` that allows us to run tests easily.
 
-The nice thing about <b>prove</b> is that you can actually separate the
-two steps as well. You can run run <b>prove</b> with the -a option
-and archive your TAP output for later use. That is, <b>prove</b> is
+The nice thing about **prove** is that you can actually separate the
+two steps as well. You can run run **prove** with the -a option
+and archive your TAP output for later use. That is, **prove** is
 now only used to run the tests, it does not actually
 parse the output.
 

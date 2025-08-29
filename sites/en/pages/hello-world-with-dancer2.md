@@ -98,7 +98,7 @@ On the command line run the following:
 $ dancer2 -a Try::Me
 ```
 
-This will create a directory called <b>Try-Me</b> and inside that directory it will put a bunch of subdirectories
+This will create a directory called **Try-Me** and inside that directory it will put a bunch of subdirectories
 and files. You can `cd Try-Me` and launch the new application by typing in
 
 ```
@@ -112,14 +112,14 @@ Watching . bin/lib bin/app.psgi for file updates.
 HTTP::Server::PSGI: Accepting connections at http://0:5000/
 ```
 
-Even though it prints the host <b>http://0:5000/</b> that never worked for me using Chrome,
-so I browse to <b>http://127.0.0.1:5000/</b> that seems to be working.
+Even though it prints the host **http://0:5000/** that never worked for me using Chrome,
+so I browse to **http://127.0.0.1:5000/** that seems to be working.
 I filed [this issue](https://github.com/PerlDancer/Dancer2/issues/862) in case you
 want to see if this is a real issue or not.
 
 Browsing to that page will show the default page Dancer provides.
 
-Try accessing <b>http://127.0.0.1:5000/welcome</b> and you'll get a big `Error 404 - Not Found`.
+Try accessing **http://127.0.0.1:5000/welcome** and you'll get a big `Error 404 - Not Found`.
 
 Now, without even shutting down the server, edit the `lib/Try/Me.pm` file.
 Originally it had this content:
@@ -145,7 +145,7 @@ get '/welcome' => sub {
 };
 ```
 
-We can now reload the <b>http://127.0.0.1:5000/welcome</b> page in the browser and it
+We can now reload the **http://127.0.0.1:5000/welcome** page in the browser and it
 will show the plain text "Hello World".
 
 Congratulations. You have just created the first Dancer2 application with the skeleton.

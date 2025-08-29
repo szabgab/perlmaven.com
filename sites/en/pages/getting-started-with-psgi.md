@@ -69,7 +69,7 @@ HTTP::Server::PSGI: Accepting connections at http://0:5000/
 
 Take your browser now and point it to   http://localhost:5000/
 
-You should see <b>42</b> in your browser.
+You should see **42** in your browser.
 
 ## Add some dynamic data
 

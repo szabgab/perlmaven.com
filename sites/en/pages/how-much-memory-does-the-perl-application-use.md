@@ -13,7 +13,7 @@ author: szabgab
 
 The other day I got a complain that my Perl script uses too much memory. So I needed a way to check it an monitor it.
 I found [Memory::Usage](https://metacpan.org/pod/Memory::Usage) on CPAN.
-Although it only work on <b>Linux</b> (not even on BSD or Mac OSX), but was quite useful there.
+Although it only work on **Linux** (not even on BSD or Mac OSX), but was quite useful there.
 
 
 The basic usage of the module looks like this:
@@ -91,11 +91,11 @@ say length $x;
 The above code created a string of 65,536 characters (64K). (That's the first number in the output.)
 Then we can see how the various memory measurements changed. Values in the report are in kb.
 
-vsz = <b>virtual memory size</b>,
-rss = <b>resident set size</b>,
-shared = <b>shared memory size</b>,
-code = <b>text (aka code or exe) size</b>,
-data = <b>data and stack size</b>
+vsz = **virtual memory size**,
+rss = **resident set size**,
+shared = **shared memory size**,
+code = **text (aka code or exe) size**,
+data = **data and stack size**
 
 ## Allocate more memory
 

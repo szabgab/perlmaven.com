@@ -82,7 +82,7 @@ It is not.
 Before showing the problem with this solution though, let's see how can we avoid the first problem.
 How can we make sure that we don't have explicit `return undef;` in our code?
 
-Because this issue was part of the original <b>Perl Best Practices</b> book of Damian Conway,
+Because this issue was part of the original **Perl Best Practices** book of Damian Conway,
 [Perl::Critic](https://metacpan.org/pod/Perl::Critic) has a policy against it called
 [Subroutines::ProhibitExplicitReturnUndef](https://metacpan.org/pod/Perl::Critic::Policy::Subroutines::ProhibitExplicitReturnUndef).
 
@@ -106,7 +106,7 @@ returned explicitely, and it will make sure we get notified if some adds such co
 I promised to show when the second solution, the implicit return of `undef`, by calling a simple `return;`
 will break our code.
 
-First let's see a code snippet using <b>explicit return undef</b> using `return undef;`:
+First let's see a code snippet using **explicit return undef** using `return undef;`:
 
 {% include file="examples/explicit_return_undef_hash.pl" %}
 
@@ -121,7 +121,7 @@ $VAR1 = {
 
 what we expected.
 
-Now lets see the same code but with <b>implicit return undef</b> using `return;`
+Now lets see the same code but with **implicit return undef** using `return;`
 
 {% include file="examples/implicit_return_undef_hash.pl" %}
 
@@ -136,7 +136,7 @@ $VAR1 = {
 
 How did '3' become a key and '6/2' a value in this hash?
 
-The only clue we might get is the <b>Odd number of elements in hash assignment ...</b> warning.
+The only clue we might get is the **Odd number of elements in hash assignment ...** warning.
 
 The problem here is that we basically have
 
@@ -169,7 +169,7 @@ So after all this solution isn't perfect either.
 
 ## Alway enforce scalar context
 
-The <b>user</b> of our function can solve this by putting the call to `div` into scalar context:
+The **user** of our function can solve this by putting the call to `div` into scalar context:
 
 {% include file="examples/implicit_return_undef_hash_with_scalar.pl" %}
 
@@ -184,7 +184,7 @@ $VAR1 = {
 
 but this means the user has to remember to put `scalar` in front of the call.
 
-It is still probably better than the <b>explicit return undef</b>, but it is not exactly [DWIM](https://en.wikipedia.org/wiki/DWIM).
+It is still probably better than the **explicit return undef**, but it is not exactly [DWIM](https://en.wikipedia.org/wiki/DWIM).
 
 ## Forbid list context
 

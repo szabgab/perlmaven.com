@@ -45,7 +45,7 @@ This is where everything will go on our system respectively from the list above:
 ```
 
 ## Worker Runner Script
-<b>/usr/local/bin/send_email_runner.pl</b><br/>
+**/usr/local/bin/send_email_runner.pl**<br/>
 This will be the script that constantly runs in the background to monitor our database for new jobs to process.
 Later, we will daemonize this script to run as a service.
 
@@ -96,7 +96,7 @@ If we set loopcount > 0 it will goto the else statement and then it will only ge
 So how does it now what to do to when it hits the work() function? Well, that is another function we are going to code in a new and seperate library module we will be creating next.
 
 ## Worker Runner Script Library Module
-<b>/usr/local/lib/Worker/SendEmail.pm</b><br/>
+**/usr/local/lib/Worker/SendEmail.pm**<br/>
 
 This is where we will put our work() function. [TheSchwartz::Worker](https://metacpan.org/pod/TheSchwartz::Worker) page has some valuable information on using the
 superclass as we will be doing in the below code.
@@ -203,7 +203,7 @@ schwartz=# select * from job;
 ```
 
 ## Daemon Service
-<b>/etc/systemd/system/send_email.service</b><br/>
+**/etc/systemd/system/send_email.service**<br/>
 Now our final step will be to setup our worker runner to A) always run in the background and B) always startup when the system starts. To do this we will
 need to create a new systemd service. This is fairly straight forward to accomplish.
 

@@ -20,7 +20,7 @@ but we have not seen the actual solution to the [problem we encountered](/the-pr
 
 We had our package (namespace) in the same file as our main code, but we could do the same in two separate files:
 
-The main script is in <b>namespace.pl</b> and we `require` the other file providing full (or relative) path to it.
+The main script is in **namespace.pl** and we `require` the other file providing full (or relative) path to it.
 
 ```perl
 #!/usr/bin/perl
@@ -32,7 +32,7 @@ require "namespace_lib.pl";
 print Calc::add(3, 4), "\n";
 ```
 
-In the other file which we called <b>namespace_lib.pl</b> is everything starting from the `package Calc;`
+In the other file which we called **namespace_lib.pl** is everything starting from the `package Calc;`
 expression till where we had the `package main;` earlier. This time we don't need the second `package`
 statement, but we need to end the file with a true value. `1;` in this case.
 
@@ -79,16 +79,16 @@ called `Calc::add()`, and the other one `Inventory::add()` and then for anyone r
 will be clear which `add` function we are calling.
 
 That's how we can put the code of a namespace into a separate file.
-But how can we turn this into a <b>module</b>?
+But how can we turn this into a **module**?
 
 ## Creating a module
 
-A <b>module</b> in Perl is just a file in which there is a single namespace (`package`) and where the name of the file is the same as the name of
-the package inside with the .pm extension. So in our case if we rename the `namespace_lib.pl` to be `Calc.pm` then suddenly we have a <b>module</b>.
+A **module** in Perl is just a file in which there is a single namespace (`package`) and where the name of the file is the same as the name of
+the package inside with the .pm extension. So in our case if we rename the `namespace_lib.pl` to be `Calc.pm` then suddenly we have a **module**.
 
 (Actually even if there are multiple packages in the same file we can call it a module but that's just creates more confusion so let's just leave that now.)
 
-The script (we call now <b>module.pl</b>) has changed a bit. Instead of `require`-ing the external file using a relative or full path to it, 
+The script (we call now **module.pl**) has changed a bit. Instead of `require`-ing the external file using a relative or full path to it, 
 we write `require Calc;` and perl will find the `Calc.pm` file and load it.
 
 ```perl
@@ -109,7 +109,7 @@ Seeing the `require Calc;` statement Perl will search for a file called `Calc.pm
 `@INC` array. If the Calc.pm can be found in any of the directories listed in the `@INC` by default then perl will find the file.
 If the `Calc.pm` is located elsewhere then we need to
 [change @INC](/how-to-change-inc-to-find-perl-modules-in-non-standard-locations).
-The statement `use lib 'examples/modules';` adds the <b>examples/modules</b> directory to `@INC` which was needed when I 
+The statement `use lib 'examples/modules';` adds the **examples/modules** directory to `@INC` which was needed when I 
 recorded the screencast.
 
 

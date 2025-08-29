@@ -55,7 +55,7 @@ so this is not the best case to illustrate the problem, but if the deprecation w
 maybe a security flaw then the authors of the upstream module might have decided to upload a non-functional
 version of the module.
 
-The CPAN Testers would not catch <b>my</b> module breaking as they would not test it.
+The CPAN Testers would not catch **my** module breaking as they would not test it.
 
 ## Solution
 

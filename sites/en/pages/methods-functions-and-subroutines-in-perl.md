@@ -32,7 +32,7 @@ On the other hand, Perl will only look for a function in a single place, (and th
 A method will always get the current object (or class name) as the first parameter of its call.
 A function will never get the object. (Well, unless you manually pass it as a parameter.)
 Therefore a method normally acts on an instance (object), and sometimes it acts on the whole class (and then we call it class-method).
-A function on the other hand, <b>never</b> acts on an object. Though it might act on the class.
+A function on the other hand, **never** acts on an object. Though it might act on the class.
 
 ## Examples - an object-method
 

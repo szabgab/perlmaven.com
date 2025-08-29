@@ -15,7 +15,7 @@ A [counter example](https://code-maven.com/counter) using [YAML](/yaml) file to 
 In this example we can see how to use YAML as data storage. How to load existing YAML
 file and how to create new one from data in the memory.
 
-We can also see how accept a command line parameter using <b>shift</b>.
+We can also see how accept a command line parameter using **shift**.
 
 {% include file="examples/counter_yml.pl" %}
 

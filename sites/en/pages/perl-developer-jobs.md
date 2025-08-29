@@ -35,7 +35,7 @@ LinkedIn has a [Perl Jobs group](https://www.linkedin.com/groups?home=&gid=13328
 morning (GMT). It accepts sponsored ads that will be included in the newsletter sent out to 5,000+ subscribers and included in the archive of the web site.
 For more details check out the [sponsors](http://perlweekly.com/sponsors.html) page.
 
-The [Perl Maven](/) site is read by more that <b>10,000 Perl developers every day</b>. If you'd like to reach those people 
+The [Perl Maven](/) site is read by more that **10,000 Perl developers every day**. If you'd like to reach those people 
 [contact me](/about#contact) to find out more.
 
 
@@ -141,7 +141,7 @@ Same as with automated tests. Which tool do you use?
 
 Chef, Puppet, Rex or something else?
 
-If you have a web service, do you employ <b>continuous deployment</b>? How often do you deploy code?
+If you have a web service, do you employ **continuous deployment**? How often do you deploy code?
 If you have a packaged product, how often do you release it?
 
 <h3>How many Perl developers do you have?</h3>

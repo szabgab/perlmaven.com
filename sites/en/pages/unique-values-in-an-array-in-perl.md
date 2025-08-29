@@ -18,7 +18,7 @@ author: szabgab
 
 
 In this part of the [Perl tutorial](/perl-tutorial) we are going to see how to
-make sure we only have <b>distinct values in an array</b>.
+make sure we only have **distinct values in an array**.
 
 Perl 5 does not have a built in function to filter out duplicate values
 from an array, but there are several solutions to the problem.
@@ -26,9 +26,9 @@ from an array, but there are several solutions to the problem.
 
 ## A small clarification
 
-I am not a native English speaker, but it seems that at least in the world of computers, the word <b>unique</b> is a bit overloaded.
-As far as I can tell in most programming environments the word <b>unique</b> is a synonym of the word <b>distinct</b> and in
-this article we use that meaning. So given a list of values like this `foo, bar, baz, foo, zorg, baz` by <b>unique values</b>,
+I am not a native English speaker, but it seems that at least in the world of computers, the word **unique** is a bit overloaded.
+As far as I can tell in most programming environments the word **unique** is a synonym of the word **distinct** and in
+this article we use that meaning. So given a list of values like this `foo, bar, baz, foo, zorg, baz` by **unique values**,
 we mean `foo, bar, baz, zorg`.
 
 The other meaning would be "those values that appear only once" which would give us `bar, zorg`.
@@ -130,7 +130,7 @@ foreach my $value (@words) {
 
 Here we are using a regular `foreach` loop to go over the
 values in the original array, one by one. We use a helper hash called `%seen`.
-The nice thing about the hashes is that their keys are <b>unique</b>.
+The nice thing about the hashes is that their keys are **unique**.
 
 We start with an empty hash so when we encounter the first "foo", `$seen{"foo"}`
 does not exist and thus its value is `undef` which is considered false in Perl.

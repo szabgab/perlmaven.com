@@ -82,7 +82,7 @@ The module [File::Slurp](https://metacpan.org/pod/File::Slurp) provides two func
 in a simple way.
 
 Dancer is route based so you for each page out there you need to define a route. 
-You can even differentiate between the HTTP METHOD types such as <b>GET</b> and <b>POST</b>
+You can even differentiate between the HTTP METHOD types such as **GET** and **POST**
 though they are written in lower case in Dancer.
 
 We changed the config.yml file in the root of the application. Commented out the 
@@ -110,7 +110,7 @@ dwimmer:
 to set where the json "database" is located. (Our home made NoSQL database.)
 
 We edited the view/index.tt file replacing all of its content with a simple HTML
-linking to the <b>page</b>.
+linking to the **page**.
 
 ```
 Hi
@@ -156,7 +156,7 @@ post '/page' =>  sub {
 };
 ```
 
-In this code the <b>config</b> method returns the all the configuration options
+In this code the **config** method returns the all the configuration options
 where we already saved the name of the json file.
 -e $filename checks if the file exists. If it does, we read it in to the $json
 variable if not then we assign to it a json string representing an empty hash.
@@ -165,7 +165,7 @@ variable if not then we assign to it a json string representing an empty hash.
 my $json = -e $filename ? read_file $filename : '{}';
 ```
 
-<b>from_json</b> a built-in Dancer function turning a json string into a Perl data structure.
+**from_json** a built-in Dancer function turning a json string into a Perl data structure.
 
 We then add a new entry to our "database" with the key being the timestamp and having
 a hash containing the title and text as received from the user.

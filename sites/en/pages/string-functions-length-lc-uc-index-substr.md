@@ -26,21 +26,21 @@ about some of the functions Perl provides for manipulating strings.
 
 ## lc, uc, length
 
-There are a number of simple functions such as <b>lc</b> and <b>uc</b>
+There are a number of simple functions such as **lc** and **uc**
 to return the lower case and upper case versions of the original string respectively.
-Then there is <b>length</b> to return the number of characters in the given string.
+Then there is **length** to return the number of characters in the given string.
 
 See the following example:
 
 {% include file="examples/uc_lc_length.pl" %}
 
-Please note, in order to get the [length of an array](/length-of-an-array) you don't use the <b>length</b> function.
-Instead, you put it in [scalar context](/scalar-and-list-context-in-perl) using the <b>scalar</b> function.
+Please note, in order to get the [length of an array](/length-of-an-array) you don't use the **length** function.
+Instead, you put it in [scalar context](/scalar-and-list-context-in-perl) using the **scalar** function.
 
 
 ## index
 
-Then there is the <b>index</b> function. This function will get two strings and return
+Then there is the **index** function. This function will get two strings and return
 the location of the second string within the first string.
 
 {% include file="examples/index.pl" %}
@@ -69,7 +69,7 @@ we could try to search starting from the 3rd place to see if there is another oc
 
 Looking for "e" without a space will yield a different result.
 
-Lastly, there is another function called <b>rindex</b> (right index)
+Lastly, there is another function called **rindex** (right index)
 that will start searching from the right hand side of the string:
 
 {% include file="examples/rindex.pl" %}
@@ -78,9 +78,9 @@ that will start searching from the right hand side of the string:
 
 I think the most interesting function in this article is `substr`.
 It is basically the opposite of index(). While index() will tell you
-<b>where is a given string</b>, substr will give you the <b>substring at a given locations</b>.
+**where is a given string**, substr will give you the **substring at a given locations**.
 Normally `substr` gets 3 parameters. The first one is the string. The second is a
-0-based location, also called the <b>offset</b>, and the third is the <b>length</b> of the
+0-based location, also called the **offset**, and the third is the **length** of the
 substring we would like to get.
 
 {% include file="examples/substr.pl" %}
@@ -134,7 +134,7 @@ say $z;                                                     # climbed
 say $str;                  # The black cat jumped from the green tree
 ```
 
-So `substr $str, 14, 7, "jumped from"` returns the word <b>climbed</b>,
+So `substr $str, 14, 7, "jumped from"` returns the word **climbed**,
 but because of the 4th parameter, the original string was changed.
 
 There is also an [lvalue](/lvalue-substr) version of this example, but

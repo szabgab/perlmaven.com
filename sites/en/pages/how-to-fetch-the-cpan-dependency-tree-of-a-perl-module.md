@@ -37,7 +37,7 @@ Let's see the building blocks.
 ## Get information about a Perl module on CPAN
 
 A Perl module is the pm file that is interesting for the developer.
-It is what you load into memory with the <b>use</b> statement. Each Perl module is packaged
+It is what you load into memory with the **use** statement. Each Perl module is packaged
 into a distribution, but in the first example we examine a single module.
 
 ```perl
@@ -55,13 +55,13 @@ my $module   = $mcpan->module( 'Test::More' );
 say Dumper $module;
 ```
 
-After creating the MetaCPAN::API object we can call the <b>module</b> method passing the name of a module to it.
+After creating the MetaCPAN::API object we can call the **module** method passing the name of a module to it.
 It will return a hash reference, representing all the information about the module. Among other things, the hash
-has a key called <b>distribution</b> with the name of the CPAN distribution that contains this module. In the case
+has a key called **distribution** with the name of the CPAN distribution that contains this module. In the case
 of the [Test::More](https://www.metacpan.org/module/Test::More) module,
 this is the [Test-Simple](https://metacpan.org/release/Test-Simple) distribution.
 
-There are many other fields. Some that might be more interesting are: <b>version</b>, <b>abstract</b>, <b>author</b>
+There are many other fields. Some that might be more interesting are: **version**, **abstract**, <b>author</b>
 which is the PAUSE id of the person who uploaded this release, and date.
 
 
@@ -87,16 +87,16 @@ my $dist  = $mcpan->release( distribution => $name );
 say Dumper $dist;
 ```
 
-In order to fetch information about a distribution we call the <b>release</b> method and pass the name of the
+In order to fetch information about a distribution we call the **release** method and pass the name of the
 distribution. For example [Test-Simple](https://metacpan.org/release/Test-Simple).
 
-This, too returns a reference to a hash with lots of key. Some of the interesting keys would be <b>date</b>,
-<b>author</b>, <b>download_url</b>, <b>version</b>, <b>license</b> (which is actually an array reference to a list of
+This, too returns a reference to a hash with lots of key. Some of the interesting keys would be **date**,
+**author**, **download_url**, <b>version</b>, <b>license</b> (which is actually an array reference to a list of
 license keywords), and dependency which is also an array reference.
 The element of this array are hash references by themselves. Each hash describing one of the direct dependencies.
-These hashes have 5 keys, IMHO 3 of them are the most interesting ones: <b>version</b>, <b>module</b>, and
-<b>phase</b> which describes when is this dependency needed. Values can be <b>configure</b>, <b>build</b>, and
-<b>runtime</b>.
+These hashes have 5 keys, IMHO 3 of them are the most interesting ones: **version**, **module**, and
+**phase** which describes when is this dependency needed. Values can be **configure**, <b>build</b>, and
+**runtime**.
 
 
 ## DevOps
@@ -171,12 +171,12 @@ sub process_module {
 This script starts with the name of a single module (Test::More in the example), recursively fetches all
 the dependencies and saves them in a single hash.
 
-The <b>%data</b> hash holds all the information. It has two main keys, <b>modules</b> and <b>distros</b>.
-Under <b>modules</b>, each module name will have an entry, under <b>distros</b> each distribution will have an entry.
+The **%data** hash holds all the information. It has two main keys, **modules** and <b>distros</b>.
+Under **modules**, each module name will have an entry, under **distros** each distribution will have an entry.
 
 There are two subroutines, one for fetching the information of a module and the other for fetching the
 information of a distribution. Once the data was fetched it is saved in the hash. Let's look at the
-<b>process_module</b> subroutine. It received the name of the module as a parameter. The first thing it checks
+**process_module** subroutine. It received the name of the module as a parameter. The first thing it checks
 if this module has already been processed. If it has, we call return. No need to fetch it again.
 
 ```perl
@@ -189,17 +189,17 @@ Then there is a line just to show progress.
     say STDERR "Processing module $name";
 ```
 
-We put <b>undef</b> in the field, so even if the fetching fails, we'll already have the key in the hash.
+We put **undef** in the field, so even if the fetching fails, we'll already have the key in the hash.
 Using this will, ensure that we won't try to fetch the data again even if the first attempt failed.
-That's the reason we use <b>exists</b> in the first line explained above.
+That's the reason we use **exists** in the first line explained above.
 
 ```perl
     $data{modules}{ $name } = undef;
 ```
 
-Next, we fetch the data from MetaCPAN, but we wrapped the call in an <b>eval</b> block to avoid die-ing.
-If the call fails and throws an exception we catch it, print it using the <b>warn</b> call stop further
-processing of this module by calling <b>return</b>.
+Next, we fetch the data from MetaCPAN, but we wrapped the call in an **eval** block to avoid die-ing.
+If the call fails and throws an exception we catch it, print it using the **warn** call stop further
+processing of this module by calling **return**.
 
 ```perl
     my $module   = eval { $mcpan->module( $name ) };
@@ -209,7 +209,7 @@ processing of this module by calling <b>return</b>.
     }
 ```
 
-If we successfully fetched the data from MetaCPAN, we save it in the hash and call the <b>process_distro</b>
+If we successfully fetched the data from MetaCPAN, we save it in the hash and call the **process_distro**
 function to process the distribution.
 
 ```perl
@@ -218,7 +218,7 @@ function to process the distribution.
 ```
 
 
-The <b>process_distro</b> function is very similar, but because each distribution can depend on several modules, there
+The **process_distro** function is very similar, but because each distribution can depend on several modules, there
 is a loop processing each module.
 
 We know this recursive process will end as there is a finite number of CPAN modules and we made sure we don't try to

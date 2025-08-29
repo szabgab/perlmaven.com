@@ -9,7 +9,7 @@ author: szabgab
 ---
 
 
-Most Linux distributions come with a version of perl, which is often referred as <b>system perl</b>. For certain tasks and in
+Most Linux distributions come with a version of perl, which is often referred as **system perl**. For certain tasks and in
 certain cases that's exactly what you need, but there are cases when it's better to build your own copy of Perl. For example,
 you might want to use a different version of perl than the one supplied by your vendor. Or you need a threaded (or a non-threaded) version.
 Something different from what the vendor of the operating system supplies.
@@ -17,19 +17,19 @@ Something different from what the vendor of the operating system supplies.
 There are even some Linux distributions that by default don't come with perl.
 For example the CentOS 5.10 system provided by [Digital Ocean](/digitalocean) does not come with Perl preinstalled.
 
-You could install it using <b>yum install perl</b>, but instead of that's let's see how can we <b>compile perl from source</b>.
+You could install it using **yum install perl**, but instead of that's let's see how can we **compile perl from source**.
 As we would not want to assume an existing installation of Perl, we cannot use [Perlbrew](http://perlbrew.pl/).
 
 
 Perl, the compiler/interpreter and the various extras that we usually think about when we say "The Perl programming language",
-is maintained by a group of people called <b>Perl 5 Porters</b>. They regularly release new versions that we can download from
+is maintained by a group of people called **Perl 5 Porters**. They regularly release new versions that we can download from
 [this page on CPAN](http://www.cpan.org/src/README.html).
 
-At the time of writing this article, the latest production release was <b>5.20.1</b>.
+At the time of writing this article, the latest production release was **5.20.1**.
 
 That page actually has the instructions how to build perl from source code, but we need a few more things before that will work.
 
-Specifically, we need to install <b>make</b> and <b>gcc</b>.
+Specifically, we need to install **make** and **gcc**.
 
 On the CentOS system I tried this I had to use the following commands:
 
@@ -38,7 +38,7 @@ yum -y install make
 yum -y install gcc
 ```
 
-These are the only commands you need to run as <b>root</b>. The rest can be executed either as <b>root</b> or as any regular
+These are the only commands you need to run as **root**. The rest can be executed either as **root** or as any regular
 user.
 
 Once these are installed we can download the source code of perl, and then we can compile it with the following instructions:
@@ -53,7 +53,7 @@ make test
 make install
 ```
 
-This will install perl in the directory <b>$HOME/localperl</b>.
+This will install perl in the directory **$HOME/localperl**.
 This means if you'd like to run this perl you'll need to run
 
 `$HOME/localperl/bin/perl`
@@ -101,7 +101,7 @@ command:
 curl -L http://cpanmin.us | perl - App::cpanminus
 ```
 
-<b>CPAN minus</b> is a client that can easily install third-party modules found on [CPAN](http://www.cpan.org/).
+**CPAN minus** is a client that can easily install third-party modules found on [CPAN](http://www.cpan.org/).
 
 Once the above was done, you can install modules using:
 

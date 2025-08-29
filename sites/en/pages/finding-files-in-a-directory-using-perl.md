@@ -148,7 +148,7 @@ We can even combine the two:
 $rule->size("< 1024")->size("> 1000");
 ```
 
-In general we can <b>stack rules on the other</b>
+In general we can **stack rules on the other**
 
 <h3>file-name</h3>
 
@@ -183,7 +183,7 @@ $rule->perl_file;
 
 What if we want to find all the non-pm files?
 First we create a rule that means "not pm file",
-then we can use this rule in a <b>boolean rule-expression</b>:
+then we can use this rule in a **boolean rule-expression**:
 
 ```perl
 my $no_pm_rule = $rule->clone->name("*.pm");
@@ -191,7 +191,7 @@ $rule->not( $no_pm_rule );
 ```
 
 Please note, we have to `clone` the rule, our rule would
-be both <b>only match pm</b> and <b>only match not pm</b>. That would be an empty set.
+be both **only match pm** and **only match not pm**. That would be an empty set.
 
 If we don't intend to reuse it later, we don't even need to save the new rule in
 a variable. We can write this:
@@ -227,7 +227,7 @@ If `max_depth` is 1, we will get the immediate content of those directories.
 <h3>skipping directories</h3>
 
 If you are familiar with [ack](http://beyondgrep.com/), you know it automatically skips the
-<b>.git</b> directory.
+**.git** directory.
 How can we achieve the same?
 We create a cloned rule that matches the ".git" and then we tell our main rule to `skip` those matches
 

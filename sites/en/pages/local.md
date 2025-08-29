@@ -11,9 +11,9 @@ show_related: true
 ---
 
 
-You rarely need to use <b>local</b> to localize global variables, but in some cases you cannot use <b>my</b> and then <b>local</b> is needed.
+You rarely need to use **local** to localize global variables, but in some cases you cannot use **my** and then <b>local</b> is needed.
 
-In other words: In almost every case when you want to create variable that is scoped to some block you should use <b>my</b>.
+In other words: In almost every case when you want to create variable that is scoped to some block you should use **my**.
 
 
 Let's see a few examples:
@@ -23,7 +23,7 @@ Let's see a few examples:
 {% include file="examples/slurp.pl" %}
 
 In the so-called [slurp mode](/slurp) wer read the entire content of a file into a single scalar variable. In order to do that we need to set
-the <b>$/</b> to be <b>undef</b>. We use <b>local</b> to limit the scope.
+the **$/** to be **undef**. We use <b>local</b> to limit the scope.
 
 ## Change the LIST_SEPARATOR
 
@@ -47,11 +47,11 @@ x 1
 y 1
 ```
 
-The only difference is when you call a function from inside the block where you <b>local</b>-ized or <b>my</b>-ed the global variable.
+The only difference is when you call a function from inside the block where you **local**-ized or **my**-ed the global variable.
 
 In both cases the variable inside the block hides the variable outside the block, but when we call a function from that block
 the behavior changes.
-In the case of <b>my</b> the change is scoped to the enclosing block
-In the case of <b>our</b> and <b>local</b> the changes is scoped to the enclosing block and to anything called from that block. We inherit the new value.
+In the case of **my** the change is scoped to the enclosing block
+In the case of **our** and **local** the changes is scoped to the enclosing block and to anything called from that block. We inherit the new value.
 
 See also the [official documentation](https://metacpan.org/pod/perlfunc#local-EXPR).

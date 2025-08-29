@@ -115,13 +115,13 @@ for (1 .. 10) {
 This too will generate the above warning for `$x` once(!), but won't generate
 any warning for `$z`.
 
-In this code the same thing happens for <b>every</b> iteration:
+In this code the same thing happens for **every** iteration:
 Perl will allocate the memory for `$z` variable for every iteration.
 
 ## What does "my" really mean?
 
 The meaning of `my $x` is that you tell Perl, and specifically to `strict`,
-that you would like to use a private variable called <b>$x</b> in the [current scope](/scope-of-variables-in-perl).
+that you would like to use a private variable called **$x** in the [current scope](/scope-of-variables-in-perl).
 Without this, Perl will look for a declaration in the upper scopes and if
 it cannot find a declaration anywhere it will give a compile-time error
 [Global symbol requires explicit package name](/global-symbol-requires-explicit-package-name)
@@ -130,7 +130,7 @@ Every entry in a block, every call to a function, every iteration in a loop is a
 On the other hand, writing `my $x` twice in the same scope just means that you try to tell the same
 thing twice to Perl. It is not necessary and usually it means there is a mistake somewhere.
 
-In other words, the warning we got is related to the <b>compilation</b> of the code and not the running.
+In other words, the warning we got is related to the **compilation** of the code and not the running.
 It is related to the declaration of the variable by the developer and not to the memory-allocation
 done by Perl during run-time.
 

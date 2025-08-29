@@ -43,7 +43,7 @@ Detailed financial information in this [Google document](https://docs.google.com
 </pre>
 
 <div>
-<b class="title">Improving Perl 5 - Nicholas Clark</b>
+<b class="title">Improving Perl 5 - Nicholas Clark**
 <ul class="details">
   <li>Amount: $140,000 (7*400 = 2800 hours * $50)</li>
   <li>2011.08.21 [proposal ($20,000)](http://news.perlfoundation.org/2011/08/grant-proposal-improving-perl.html)</li>
@@ -87,7 +87,7 @@ Detailed financial information in this [Google document](https://docs.google.com
 </div>
 
 <div>
-<b class="title">Maintaining Perl 5 - Tony Cook</b>
+<b class="title">Maintaining Perl 5 - Tony Cook**
 <ul class="details">
   <li>Amount: $46,000 (2*260 + 400 = 920 hours * $50)</li>
   <li>2013.05.19 [proposal ($13,000)](http://news.perlfoundation.org/2013/05/grant-application-maintaining.html)</li>
@@ -111,7 +111,7 @@ Detailed financial information in this [Google document](https://docs.google.com
 </div>
 
 <div>
-<b class="title">Fixing Perl 5 Core Bugs - Dave Mitchell</b>
+<b class="title">Fixing Perl 5 Core Bugs - Dave Mitchell**
 <ul class="details">
   <li>Amount: $35,500<li>
   <li>2010.02.07 [proposal ($25,000 = 500 hours * $50)](http://news.perlfoundation.org/2010/02/grant-proposal-fixing-perl5-co.html)</li>
@@ -159,7 +159,7 @@ Detailed financial information in this [Google document](https://docs.google.com
 </div>
 
 <div>
-<b class="title">Maintaining the Perl 5 Core - Dave Mitchell</b>
+<b class="title">Maintaining the Perl 5 Core - Dave Mitchell**
 <ul class="details">
   <li>Amount: $40,000</li>
   <li>2013.09.01 [proposal](http://news.perlfoundation.org/2013/09/grant-application-maintaining-1.html)</li>
@@ -178,7 +178,7 @@ Detailed financial information in this [Google document](https://docs.google.com
 </div>
 
 <div>
-<b class="title">Devel::Cover - Paul Johnson</b>
+<b class="title">Devel::Cover - Paul Johnson**
 <ul class="details">
   <li>Amount: $20,000</li>
   <li>2012.04.03 [proposal ($20,000)](http://news.perlfoundation.org/2012/04/grant-application-improving-de.html)</li>
@@ -198,7 +198,7 @@ Detailed financial information in this [Google document](https://docs.google.com
 </div>
 
 <div>
-<b class="title">Improving Cross compilation of Perl 5 - Jess Robinson</a></b>
+<b class="title">Improving Cross compilation of Perl 5 - Jess Robinson</a>**
 <ul class="details">
   <li>Amount: $10,000</li>
   <li>2012.05.01 [proposal ($10,000)](http://news.perlfoundation.org/2012/05/grant-application-improving-cr.html)</li>
@@ -208,7 +208,7 @@ Detailed financial information in this [Google document](https://docs.google.com
 
 
 <div>
-<b class="title">Travel to QA Hackathon 2012 - Ricardo Signes</b>
+<b class="title">Travel to QA Hackathon 2012 - Ricardo Signes**
 <ul class="details">
   <li>Amount: $900</li>
   <li>2012.01.31 [proposal ($900)](http://news.perlfoundation.org/2012/01/perl-5-grant-application-trave.html)</li>
@@ -218,7 +218,7 @@ Detailed financial information in this [Google document](https://docs.google.com
 
 
 <div>
-<b class="title">Travel to QA Hackathon 2013 - Ricardo Signes</b>
+<b class="title">Travel to QA Hackathon 2013 - Ricardo Signes**
 <ul class="details">
   <li>Amount: $1,200</li>
   <li>2013.02.05 [proposal ($1,200)](http://news.perlfoundation.org/2013/02/perl-5-grant-application-trave-1.html)</li>
@@ -228,7 +228,7 @@ Detailed financial information in this [Google document](https://docs.google.com
 </div>
 
 <div>
-<b class="title">Travel to QA Hackathon 2014 - Ricardo Signes</b>
+<b class="title">Travel to QA Hackathon 2014 - Ricardo Signes**
 <ul class="details">
   <li>Amount: $1,200</li>
   <li>2014.01.29 [proposal](http://news.perlfoundation.org/2014/01/perl-5-grant-application-trave-2.html)</li>
@@ -237,7 +237,7 @@ Detailed financial information in this [Google document](https://docs.google.com
 </div>
 
 <div>
-<b class="title">Travel to QA Hackathon 2014 - David Golden</b>
+<b class="title">Travel to QA Hackathon 2014 - David Golden**
 <ul class="details">
   <li>Amount: $1,200</li>
   <li>2014.02.07 [proposal](http://news.perlfoundation.org/2014/02/perl-5-grant-application-trave-3.html)</li>
@@ -294,7 +294,7 @@ Total allocated in 2014: $4,800
 
 
 <div>
-<b class="title">Manual for Game Development with SDL Perl - Kartik Thakore</b>
+<b class="title">Manual for Game Development with SDL Perl - Kartik Thakore**
 <ul class="details">
   <li>Amount: $1,500</li>
   <li>2014.07.16 [proposal ($6,000)](http://news.perlfoundation.org/2014/07/grant-proposal-start-act---voy.html)</li>
@@ -304,7 +304,7 @@ Total allocated in 2014: $4,800
 
 
 <div>
-<b class="title">Manual for Game Development with SDL Perl - Kartik Thakore</b>
+<b class="title">Manual for Game Development with SDL Perl - Kartik Thakore**
 <ul class="details">
   <li>Amount: $1,500</li>
   <li>2010.08.01 [proposal ($1,500)](http://news.perlfoundation.org/2010/08/2010q3-grant-proposal-manual-f.html)<li>
@@ -318,7 +318,7 @@ Total allocated in 2014: $4,800
   <li>Status: done</li>
 
 <div>
-<b class="title">Parrot Embed Grant - Jonathan Leto</b>
+<b class="title">Parrot Embed Grant - Jonathan Leto**
 <ul class="details">
   <li>Amount: $1,500</li>
   <li>2010.08.01 [proposal ($1,500) TODO??](http://news.perlfoundation.org/2010/08/2010q3-grant-proposal.html)</li>
@@ -336,7 +336,7 @@ Total allocated in 2014: $4,800
 
 
 <div>
-<b class="title">Perl::Lint - Yet Another Static Analyzer for Perl5 - Taiki Kawakami</b>
+<b class="title">Perl::Lint - Yet Another Static Analyzer for Perl5 - Taiki Kawakami**
 <ul class="details">
   <li>Amount: $800</li>
   <li>Repo: [Perl-Lint](https://github.com/moznion/Perl-Lint)</li>
@@ -347,14 +347,14 @@ Total allocated in 2014: $4,800
   <li>Status: running</li>
 
 <div>
-<b class="title">Modern Object Oriented Programming in Perl - Toby Inkster</b>
+<b class="title">Modern Object Oriented Programming in Perl - Toby Inkster**
 <ul class="details">
   <li>Amount: $4,000</li>
   <li>2014 05.11 [proposal](http://news.perlfoundation.org/2014/05/grant-proposal-modern-object-o.html)</li>
   <li>2014.05.31 [approved](http://news.perlfoundation.org/2014/05/may-2014-grant-votes.html)</li>
 
 <div>
-<b class="title">YACT - Yet Another Conference Tool - Torsten Raudssus</b>
+<b class="title">YACT - Yet Another Conference Tool - Torsten Raudssus**
 <ul class="details">
   <li>Amount: $3,000</li>
   <li>2013.05.04 [proposal ($3,000)](http://news.perlfoundation.org/2013/05/2013q2-gp-yact---yet-another-c.html)</li>
@@ -365,7 +365,7 @@ Total allocated in 2014: $4,800
   <li>Status: cancelled</li>
 
 <div>
-<b class="title">Next Release of Pinto With Key - Jeffrey Ryan Thalhammer</b>
+<b class="title">Next Release of Pinto With Key - Jeffrey Ryan Thalhammer**
 <ul class="details">
   <li>Amount: $3,000</li>
   <li>2013.05.04 [proposal ($3,000)](http://news.perlfoundation.org/2013/05/2013q2-gp-next-release-of-pint.html)</li>
@@ -379,7 +379,7 @@ Total allocated in 2014: $4,800
   <li>Status: cancelled</li>
 
 <div>
-<b class="title">Alien::Base Grant - Joel Berger</b>
+<b class="title">Alien::Base Grant - Joel Berger**
 <ul class="details">
   <li>Amount: $500</li>
   <li>2012.02.04 [proposal ($500)](http://news.perlfoundation.org/2012/02/2012q1-grant-proposal-alienbas.html)</li>
@@ -396,7 +396,7 @@ Total allocated in 2014: $4,800
   <li>Status: done</li>
 
 <div>
-<b class="title">Spanish Localization of the Perl Core Documentation - Enrique Nell and Joaquin Ferrero</b>
+<b class="title">Spanish Localization of the Perl Core Documentation - Enrique Nell and Joaquin Ferrero**
 <ul class="details">
   <li>Amount: $2,000</li>
   <li>2012.05.03 [proposal ($2,000)](http://news.perlfoundation.org/2012/05/2012q2-grant-proposal-spanish.html)</li>
@@ -411,7 +411,7 @@ Total allocated in 2014: $4,800
 
 
 <div>
-<b class="title">Adding tests to and refactoring the perl debugger - Shlomi Fish</b>
+<b class="title">Adding tests to and refactoring the perl debugger - Shlomi Fish**
 <ul class="details">
   <li>Amount: $1,500</li>
   <li>2012.08.14 [proposal ($1,500)](http://news.perlfoundation.org/2012/08/2012q3-grant-proposal-adding-t.html)<li>
@@ -425,7 +425,7 @@ Total allocated in 2014: $4,800
   <li>Status: done</li>
 
 <div>
-<b class="title">Cooking Perl with Chef - David Golden</b>
+<b class="title">Cooking Perl with Chef - David Golden**
 <ul class="details">
   <li>Amount: $2,000</li>
   <li>2012.02.09 [proposal ($2,000)](http://news.perlfoundation.org/2012/02/2012q1-grant-proposal-cooking.html)<li>
@@ -439,7 +439,7 @@ Total allocated in 2014: $4,800
 
 
 <div>
-<b class="title">Changing the Perl 5 optree build - Gerard Goossen</b>
+<b class="title">Changing the Perl 5 optree build - Gerard Goossen**
 <ul class="details">
   <li>Amount: </li>
   <li>2010.04.05 [final report](http://news.perlfoundation.org/2010/04/grant-report-changing-the-perl.html)</li>
@@ -447,7 +447,7 @@ Total allocated in 2014: $4,800
 
 
 <div>
-<b class="title">Test::Builder 2 - Michael Schwern</b>
+<b class="title">Test::Builder 2 - Michael Schwern**
 <ul class="details">
   <li>Amount: </li>
   <li>2010.06.27 [Update](http://news.perlfoundation.org/2010/06/testbuilder-2-updates.html)<li>
@@ -457,7 +457,7 @@ Total allocated in 2014: $4,800
   <li>Status: done</li>
 
 <div>
-<b class="title">Strawberry Perl - Curtis Jewell</b>
+<b class="title">Strawberry Perl - Curtis Jewell**
 <ul class="details">
   <li>Amount: </li>
   <li>2010.03.14 [Update](http://news.perlfoundation.org/2010/03/grant-update-corporate-embedde.html)</li>
@@ -468,7 +468,7 @@ Total allocated in 2014: $4,800
 
 
 <div>
-<b class="title">Archive::Zip - Alan Haggai</b>
+<b class="title">Archive::Zip - Alan Haggai**
 <ul class="details">
   <li>Amount: </li>
   <li>2010.03.04 [final report](http://news.perlfoundation.org/2010/03/grant-update-archivezip-fixes.html)</li>
@@ -477,7 +477,7 @@ Total allocated in 2014: $4,800
 
 
 <div>
-<b class="title">wxPerl documentation - Eric</b>
+<b class="title">wxPerl documentation - Eric**
 <ul class="details">
   <li>Amount: </li>
   <li>2010.06.23 [Update](http://news.perlfoundation.org/2010/06/grants-update-wxperl-documenta.html)</li>
@@ -486,7 +486,7 @@ Total allocated in 2014: $4,800
 
 
 <div>
-<b class="title">Mojolicious Documentation - Sebastian Riedel</b>
+<b class="title">Mojolicious Documentation - Sebastian Riedel**
 <ul class="details">
   <li>Amount: </li>
   <li>2010.05.05 [Update](http://news.perlfoundation.org/2010/05/grant-updates-the-mojo-documen.html)</li>
@@ -495,7 +495,7 @@ Total allocated in 2014: $4,800
 </div>
 
 <div>
-<b class="title">Perlbal Documentation - José Castro Bruno Martins</b>
+<b class="title">Perlbal Documentation - José Castro Bruno Martins**
 <ul class="details">
   <li>Amount: $2,500</li>
   <li>2010.08.01 [proposal ($2,500)](http://news.perlfoundation.org/2010/08/2010q3-grant-proposal-perlbal.html)</li>
@@ -507,7 +507,7 @@ Total allocated in 2014: $4,800
 </div>
 
 <div>
-<b class="title">Improvements to Dist::Zilla - Ricardo Signes</b>
+<b class="title">Improvements to Dist::Zilla - Ricardo Signes**
 <ul class="details">
   <li>Amount: $2,000</li>
   <li>2010.02.06 [proposal ($2,000)](http://news.perlfoundation.org/2010/02/2010-grant-proposal-improve-di.html)</li>
@@ -521,7 +521,7 @@ Total allocated in 2014: $4,800
 
 
 <div>
-<b class="title">The Perl Survey - Kieren Diment</b>
+<b class="title">The Perl Survey - Kieren Diment**
 <ul class="details">
   <li>Amount: </li>
   <li>2010.03.13 [Update](http://news.perlfoundation.org/2010/03/grant-update-perl-survey.html)</li>
@@ -535,7 +535,7 @@ Total allocated in 2014: $4,800
 wa approved but not funded
 
 <div>
-<b class="title">CPAN to deb autopackaging - Jozef Kutej</b>
+<b class="title">CPAN to deb autopackaging - Jozef Kutej**
 <ul class="details">
   <li>Amount: $3,000</li>
   <li>2010.08.01 [proposal ($3,000)](http://news.perlfoundation.org/2010/08/2010q3-grant-proposal-cpan-to.html)</li>
@@ -545,7 +545,7 @@ wa approved but not funded
 -->
 
 <div>
-<b class="title">Embedding Perl into C++ Applications - Leon Timmermans</b>
+<b class="title">Embedding Perl into C++ Applications - Leon Timmermans**
 <ul class="details">
   <li>Amount: </li>
   <li>2010.03.28 [Report #-1](http://news.perlfoundation.org/2010/03/embeding-perl-into-c-applicati.html)</li>
@@ -573,7 +573,7 @@ wa approved but not funded
 </pre>
 
 <div>
-<b class="title">Rakudo Signature Improvements - Jonathan Worthington</b>
+<b class="title">Rakudo Signature Improvements - Jonathan Worthington**
 <ul class="details">
   <li>Amount: $8,000</li>
   <li>2009.09.05 [proposal ($8,000)](http://news.perlfoundation.org/2009/09/hague-grant-application-rakudo.html)</li>
@@ -582,7 +582,7 @@ wa approved but not funded
 
 
 <div>
-<b class="title">Numeric and Real Support - Solomon Foster</b>
+<b class="title">Numeric and Real Support - Solomon Foster**
 <ul class="details">
   <li>Amount: $3,000</li>
   <li>2010.03.04 [proposal ($3,000)](http://news.perlfoundation.org/2010/03/hague-grant-application-numeri.html)</li>
@@ -592,7 +592,7 @@ wa approved but not funded
 
 
 <div>
-<b class="title">Perl 6 Tablets - Herbert Breunung</b>
+<b class="title">Perl 6 Tablets - Herbert Breunung**
 <ul class="details">
   <li>Amount: $840</li>
   <li>2010.08.01 [proposal ($840)](http://news.perlfoundation.org/2010/08/2010q3-grant-proposal-perl-6-t.html)</li>
@@ -603,7 +603,7 @@ wa approved but not funded
   <li>Status: running</li>
 
 <div>
-<b class="title">Structured Error Messages: Design and Implementation - Moritz Lenz</b>
+<b class="title">Structured Error Messages: Design and Implementation - Moritz Lenz**
 <ul class="details">
   <li>Amount: $1,620</li>
   <li>2011.02.23 [proposal ($1,620)](http://news.perlfoundation.org/2011/02/hague-grant-application-struct.html)</li>
@@ -612,7 +612,7 @@ wa approved but not funded
   <li>Status: done</li>
 
 <div>
-<b class="title">Meta-model Improvements and Natively Typed Attributes - Jonathan Worthington</b>
+<b class="title">Meta-model Improvements and Natively Typed Attributes - Jonathan Worthington**
 <ul class="details">
   <li>Amount: $9,000</li>
   <li>2010.07.11 [proposal ($9,000)](http://news.perlfoundation.org/2010/07/hague-grant-application-meta-m.html)</li>
@@ -622,7 +622,7 @@ wa approved but not funded
   <li>Status: done</li>
 
 <div>
-<b class="title">Lists, Iterators, and Parcels - Patrick Michaud</b>
+<b class="title">Lists, Iterators, and Parcels - Patrick Michaud**
 <ul class="details">
   <li>Amount: $3,000</li>
   <li>2010.07.05 [proposal ($3, 000)](http://news.perlfoundation.org/2010/07/hague-grant-application-lists.html)</li>
@@ -631,7 +631,7 @@ wa approved but not funded
   <li>Status: running </li>
 
 <div>
-<b class="title">Wrap up Perl 5 Interop for Rakudo Perl 6 on MoarVM - diakopter</b>
+<b class="title">Wrap up Perl 5 Interop for Rakudo Perl 6 on MoarVM - diakopter**
 <ul class="details">
   <li>Amount: $10,000</li>
   <li>2013.07.24 [proposal ($10,000)](http://news.perlfoundation.org/2013/07/hague-grant-application.html)</li>
@@ -639,7 +639,7 @@ wa approved but not funded
   <li>Status: running</li>
 
 <div>
-<b class="title">Implementation of Macros in Rakudo - Carl Mäsak</b>
+<b class="title">Implementation of Macros in Rakudo - Carl Mäsak**
 <ul class="details">
   <li>Amount: $8,000</li>
   <li>2011.09.08 [proposal ($8,000)](http://news.perlfoundation.org/2011/09/hague-grant-application-implem.html)</li>
@@ -648,7 +648,7 @@ wa approved but not funded
   <li>Status: running</li>
 
 <div>
-<b class="title">Travel to YAPC::EU - Patrick Michaud</b>
+<b class="title">Travel to YAPC::EU - Patrick Michaud**
 <ul class="details">
   <li>2011.07.06 [proposal ()](http://news.perlfoundation.org/2011/07/hague-grant-application-travel.html)</li>
   <li>2011.07.19 [approved](http://news.perlfoundation.org/2011/07/successful-grant-application.html)</li>

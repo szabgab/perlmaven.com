@@ -66,7 +66,7 @@ We remove the trailing newline, and then check if the input was empty or not. If
 meaning the user pressed ENTER without typing in any name, we call `last`.
 That will terminate the internal while loop and reach the `print "\n";` line.
 Then Perl will go back to the beginning of the main `while-loop` treating the next person.
-If the user typed in a name, that name will be <b>pushed</b> to the end of the `@people` array.
+If the user typed in a name, that name will be **pushed** to the end of the `@people` array.
 To the end of the queue. Then, still in the internal loop, we wait for another name to be typed in.
 
 As long as there are more people arriving than we can treat, the queue will grow. If for a while
@@ -93,12 +93,12 @@ but people would be upset at the dentist if they could not even enter the waitin
 while one of the patients is receiving treatment.
 
 For this you need some way of parallel or asynchronous processing so the
-`accept_new_to_queue()` and the `handle_item` can be run <b>"virtually at the same time"</b>.
+`accept_new_to_queue()` and the `handle_item` can be run **"virtually at the same time"**.
 I wrote virtually as they don't necessarily need to run in parallel. We just need to perceive it as if they did.
 
 If you have multiple CPUs or at least multiple cores, which is the case in all modern computer,
 you could theoretically run parts of the code really at the same time. The two major solutions
-for this is <b>threading</b> and <b>forking</b>. While in many languages threading
+for this is **threading** and **forking**. While in many languages threading
 is the preferred way, in Perl most people will use forking.
 If you go that way, you should probably take a look at the 
 [Parallel::ForkManager](https://metacpan.org/pod/Parallel::ForkManager)

@@ -24,7 +24,7 @@ They should hold the same information, META.json is just the newer format.
 So you'll find a lot more distributions with only META.yml and you'll find
 a few, probably very old distribution with no META file at all.
 
-The META files can both have a field indicating the <b>license</b> of the distribution.
+The META files can both have a field indicating the **license** of the distribution.
 
 Having the license information in the META files makes it very easy for automated tools
 to check if a set of modules have a certain set of licenses.
@@ -34,12 +34,12 @@ As the META files are usually generated automatically when the distribution is r
 by the author, I am going to show you how you can tell the 4 main packaging systems
 to include the license field.
 
-In the examples  I'll use the most common, so called, <b>Perl</b> license:
+In the examples  I'll use the most common, so called, **Perl** license:
 
 ## ExtUtils::MakeMaker
 
 If you are using [ExtUtils::MakeMaker](https://metacpan.org/pod/ExtUtils::MakeMaker) add the following to your Makefile.PL
-as parameter in the <b>WriteMakefile</b> function:
+as parameter in the **WriteMakefile** function:
 
 ```perl
 'LICENSE'  => 'perl',
@@ -88,7 +88,7 @@ check the [CPAN::Meta specification](https://metacpan.org/pod/CPAN::Meta::Spec).
 ## Copyright and Licensing
 
 According to the [CPAN Licensing Guidelines](http://www.perlfoundation.org/cpan_licensing_guidelines)
-of The Perl Foundation, it is <b>required</b> to have the license information in the META files.
+of The Perl Foundation, it is **required** to have the license information in the META files.
 
 There are of course other required elements of the licensing. This article only focuses on the entry in the META files.
 

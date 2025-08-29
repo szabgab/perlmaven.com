@@ -17,7 +17,7 @@ In some code you might see an operator that looks like this `&lt;&gt;`. At first
 `less-than greater-than` mean together, or you might notice that it looks similar to the
 [readline operator](/open-and-read-from-files), just without the filehandle in it.
 
-This operator is called the <b>Diamond operator</b>.
+This operator is called the **Diamond operator**.
 
 
 ## Diamond Operator

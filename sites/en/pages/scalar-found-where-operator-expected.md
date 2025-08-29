@@ -14,7 +14,7 @@ author: szabgab
 
 This is a really common error message I see. One that seems to be a bit difficult to understand.
 
-The thing is, people think about <b>numerical operators</b> and <b>string operators</b>,
+The thing is, people think about **numerical operators** and **string operators**,
 but they don't think about the comma `,` as an operator. For them the terminology of
 the error message is a bit confusing.
 
@@ -108,7 +108,7 @@ my %h = (
 );
 ```
 
-generates the following error message: <b>syntax error at ... line ..., near "bar"</b>
+generates the following error message: **syntax error at ... line ..., near "bar"**
 without any further details.
 
 Adding a comma after the number 23 will fix the code:

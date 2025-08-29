@@ -174,7 +174,7 @@ In the above code we save a single value with a fixed key.
 What if the data we need to store is more complex? Maybe a hash?
 
 The [Cache](https://metacpan.org/pod/Cache) was designed to only store strings so we will
-need to <b>stringify</b>, or in other word <b>serialize</b> the data first. As we don't care about the
+need to **stringify**, or in other word **serialize** the data first. As we don't care about the
 readability of the stored string and we don't need to access it from another programming language,
 we can use the Perl-only [Storable](https://metacpan.org/pod/Storable) module for serialization.
 

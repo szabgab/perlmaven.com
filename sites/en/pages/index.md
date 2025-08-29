@@ -66,26 +66,26 @@ show_related: false
 * [Ruby](https://code-maven.com/ruby)
 * [SVG](https://code-maven.com/svg), Scalable Vector Graphics examples in JavaScript and Python.
 
-If you are a <b>beginner</b>, or would like to refresh your Perl programming knowledge,
+If you are a **beginner**, or would like to refresh your Perl programming knowledge,
 you can go over the [Perl tutorial](/perl-tutorial) or watch the
 [Beginner Perl Maven video course](/beginner-perl-maven-video-course).
 
 ---
 
-If you need to <b>maintain a large piece of software</b> written in Perl by other people in the last 5-10-15 years,
+If you need to **maintain a large piece of software** written in Perl by other people in the last 5-10-15 years,
 that's a challenge. Especially if you did not get proper training in Perl. You are probably limited to
 a specific and old version of Perl. Check out, the [Perl tutorial](/perl-tutorial)!
 You can probably skip the part about installing Perl, but the rest of the tutorial will be relevant for you.
 
 ---
 
-Perl is often used in <b>Test Automation</b>. If you work in this field, or if you'd like to work in this field
+Perl is often used in **Test Automation**. If you work in this field, or if you'd like to work in this field
 (it is much more fun to find bugs in other people's code than in yours :), then you can read the [Perl tutorial](/perl-tutorial)
 and the series on [Test Automation using Perl](https://perlmaven.com/testing).
 
 ---
 
-If you build <b>new web applications</b> - either privately or inside a company - you can start by reading the
+If you build **new web applications** - either privately or inside a company - you can start by reading the
 article comparing [CGI, mod_perl and PSGI](/perl-cgi-mod-perl-psgi). From there you can go on reading
 the generic [Perl tutorial](/perl-tutorial) or the articles on
 [Mojolicious](/mojolicious),  [Perl Dancer](/dancer), [Catalyst](/catalyst),

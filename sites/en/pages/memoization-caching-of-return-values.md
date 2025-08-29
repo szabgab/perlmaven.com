@@ -12,7 +12,7 @@ archive: true
 ---
 
 
-<a href="https://en.wikipedia.org/wiki/Memoization"><b>Memoization</b></a> is the name
+<a href="https://en.wikipedia.org/wiki/Memoization">**Memoization**</a> is the name
 of a technique to speed up function calls by caching the return values.
 The idea is that if there is a function that we call with the same parameters several
 times during the life of our process, we can cache the result and eliminate the processing time.
@@ -185,12 +185,12 @@ in `$func` by the newly created function.
 We had to add `no strict 'refs'` to avoid the
 [Can't use string ... as a symbol ref while "strict refs" in use at ...](/symbolic-reference-in-perl)
 error and we had to add `no warnings 'redefine';` to avoid the `Subroutine main::fibonacci redefined` warning.
-After all we <b>want</b> to redefine the function.
+After all we **want** to redefine the function.
 
 You might have noticed that instead of having a `state` variable, this time `%cache` was defined with
 a simple `my` statement. This is because `%cache`, just as `$original` are variables
 that are accessed from inside the anonymous function. As long as that function exists there variables will exist
-and they are going to be private for the anonymous function. They are part of the <b>closure</b> we have created
+and they are going to be private for the anonymous function. They are part of the **closure** we have created
 here.
 
 The result looks good:

@@ -14,7 +14,7 @@ author: szabgab
 Technically speaking there are no multi-dimensional arrays in Perl, but you can use
 arrays in Perl to act as if they had more than one dimension.
 
-In Perl each element of an array can be a <b>reference</b> to another array, but syntactically
+In Perl each element of an array can be a **reference** to another array, but syntactically
 they would look like a two-dimensional array.
 
 
@@ -61,7 +61,7 @@ after the variable name!
 There are 3 things here that can be a bit confusing:
 
 `@matrix`, `$matrix[0]` and `$matrix`. The first two are related. The third is unrelated.
-The first one is an array. The second one is an element of an array and the third one is an <b>unrelated</b>
+The first one is an array. The second one is an element of an array and the third one is an **unrelated**
 scalar. If you declare an array such as `@matrix` you can automatically use `$matrix[0]` to access
 the first element, but if you'd also like to use `$matrix` you'd need to declare that separately.
 
@@ -80,9 +80,9 @@ print "$matrix[0][0]\n";    # zero-zero
 print "$matrix[1][1]\n";    # one-one
 ```
 
-The first line prints <b>ARRAY(0x814dd90)</b>. As I mentioned, Perl does not have multi-dimensional arrays.
-What you see here is that the first element of the `@matrix` array is a <b>reference</b> to an internal,
-so-called anonymous array that holds the actual values. The <b>ARRAY(0x814dd90)</b> is the address of that
+The first line prints **ARRAY(0x814dd90)**. As I mentioned, Perl does not have multi-dimensional arrays.
+What you see here is that the first element of the `@matrix` array is a **reference** to an internal,
+so-called anonymous array that holds the actual values. The **ARRAY(0x814dd90)** is the address of that
 internal address in the memory. You can't do much with this, except of knowing that you probably need to
 "de-reference" that address. In our case that de-referencing is done by the addition of another
 pair of square brackets.
@@ -94,7 +94,7 @@ That way you can get back the original values we put in the array.
 There is a module called Data::Dumper, which comes with Perl and that can provide
 a reasonably readable view of the matrix we created. In order to use it, you first
 need to load it to memory with the `use` statement.
-Then calling the `Dumper` function and passing a <b>reference</b> to it. The
+Then calling the `Dumper` function and passing a **reference** to it. The
 back-slash `\`, just before the `@matrix`, creates a reference to the array.
 The `Dumper` function serializes the data structure and returns a string, which is
 then printed by the `print` function. 
@@ -128,7 +128,7 @@ this is the place of `$matrix[1][0]` where we have not assigned a value. The oth
 
 ## Two dimensional array or what?
 
-As you can see this resembles a <b>two dimensional array</b>, but its shape is not rectangular, as you
+As you can see this resembles a **two dimensional array**, but its shape is not rectangular, as you
 would expect from a matrix. The first row has only one element while the second row has 3. (even if one of them is undef).
 
 In a similar way there could be elements in the `@matrix` array that have not other dimension. For example

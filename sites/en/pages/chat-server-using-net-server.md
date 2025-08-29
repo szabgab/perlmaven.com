@@ -125,7 +125,7 @@ MuxEchoServer->run(port => 8000);
 
 We can run the above script `perl bin/mux_echo_server.pl` and in another two windows
 we can type `telnet localhost 8000` and then type in text. Both telnet clients
-can work at the same time, or more correctly <b>seemingly at the same time</b>.
+can work at the same time, or more correctly **seemingly at the same time**.
 
 
 ## Welcome Server
@@ -134,8 +134,8 @@ In the next step we add a welcome message. If you'd like to preserver the earlie
 copy it to be called `lib/MuxWelcomeServer.pm`. Change the `package` to
 have `package MuxWelcomeServer;` and add the following code:
 
-The `mux_connection` method is called <b>every time a new client connects to the
-server</b>. It receives 3 parameters: The current object in `$self` which will be unique
+The `mux_connection` method is called **every time a new client connects to the
+server**. It receives 3 parameters: The current object in `$self` which will be unique
 per connection, the [IO::Multiplex](https://metacpan.org/pod/IO::Multiplex) object
 saved in the `$mux` variable and the file-handle (saved in `$fh`)
 to the current connection which is again probably not going to be used.

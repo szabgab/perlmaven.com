@@ -39,7 +39,7 @@ In most of these cases it is ok to
 However, sometimes you need to make this operation "atomic", that is, you need to make sure
 no other process will change the file while your are changing it.
 
-OK, so just to clarify, you probably <b>never</b> want other process to modify the file
+OK, so just to clarify, you probably **never** want other process to modify the file
 while you do it, but in most cases you don't have to worry about that as no other processes
 are dealing with the file.
 

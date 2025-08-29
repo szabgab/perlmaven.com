@@ -14,7 +14,7 @@ author: szabgab
 
 
 Now that we have created the [skeleton PSGI application](/create-skeleton-psgi-application) we should further improve it.
-It is clear that we should <b>not</b> have HTML embedded in the Perl code. We need to use some kind of templating system and move
+It is clear that we should **not** have HTML embedded in the Perl code. We need to use some kind of templating system and move
 all the HTML there. There are tons of templating systems on CPAN, but [Template-Toolkit](http://template-toolkit.org/) is
 probably the most well known and most commonly used. It also has plenty of plugins. We are going to us that.
 

@@ -12,7 +12,7 @@ author: mguttman
 
 
 In this part of the [Perl Tutorial](/perl-tutorial) we are going to
-talk about <b>Unicode issues in Perl</b>.
+talk about **Unicode issues in Perl**.
 
 Unicode aspires to cover all known human, and even fictional scripts, from the Egyptian hieroglyphs
 all the way to all modern languages. Even non-human languages like the fictional language of the
@@ -91,7 +91,7 @@ and others are also defined.
 ## Bi-directional text
 
 But it is not only characters, symbols, diacritics and paragraphs. Unicode also
-specifies <b>rendering</b>, namely providing composing rules to render a string of
+specifies **rendering**, namely providing composing rules to render a string of
 base characters and their added diacritics as mentioned above on a two-dimensional
 medium in its proper reading direction.
 
@@ -119,7 +119,7 @@ Early Greek and Egyptian hieroglyphs used it.
 "Encoding" means how are Unicode "code-points" represented as binary
 strings in files and I/O: text files, Internet pages, software source
 code (hence variables storing strings in it), text streams coming from or going to
-OS "pipes", etc. It <b>does not</b>, repeat, does not necessarily
+OS "pipes", etc. It **does not**, repeat, does not necessarily
 apply to an internal representation in memory such as in Perl!
 
 Current encodings are only [UTF-8](http://en.wikipedia.org/wiki/UTF-8),

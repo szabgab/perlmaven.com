@@ -100,7 +100,7 @@ They block the main process and wait till the external program finished so it ca
 
 ## Capture::Tiny
 
-The Capture::Tiny is an excellen alternative to the <b>qx</b> operator. See the example how to
+The Capture::Tiny is an excellen alternative to the **qx** operator. See the example how to
 [capture STDOUT and STDERR of an external program](/capture-stdout-stderr-of-external-program).
 
 ## Comments

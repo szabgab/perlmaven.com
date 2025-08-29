@@ -29,7 +29,7 @@ print "Hello world\n";
 print 42, "\n";
 ```
 
-<b>chmod u+x hello_world.pl</b>
+**chmod u+x hello_world.pl**
 
 See also the [getting started article](/installing-perl-and-getting-started)
 and the one about the [sh-bang, she-bang or hashbang](/hashbang).

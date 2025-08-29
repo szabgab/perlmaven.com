@@ -90,7 +90,7 @@ This list can be later updated and can be used as a sort-of specification.
     [There is](https://metacpan.org/about/faq) now an explanation about the relationship between some information on MetaCPAN and what PAUSE supplies.
     <br>
     If the user has uploaded anything ever, then there is going to be a CPAN directory where the files currently on CPAN are list. There is also a link to the
-    "Archive" that leads to the directory of this user on BackPAN where all that file <b>ever</b> uploaded by this user can be found. Even file the user has
+    "Archive" that leads to the directory of this user on BackPAN where all that file **ever** uploaded by this user can be found. Even file the user has
     already deleted from CPAN.
     <br>
     Links to the CPAN Testers web site.
@@ -104,7 +104,7 @@ This list can be later updated and can be used as a sort-of specification.
     modules included in it. If there is a newer version on CPAN, a link to that newer version is also displayed.
     Big red "UNAUTHORIZED RELEASE" text if the author did not have the right to release one or more of the modules in this distribution.
     For example [Text-MediawikiFormat-1.01](http://search.cpan.org/~szabgab/Text-MediawikiFormat-1.01/).<br>
-    <b>permalink</b> to a page that always shows the latest authorized release of a distribution.
+    **permalink** to a page that always shows the latest authorized release of a distribution.
     Module names link to the modules in the specific version of the distribution: For example
     [MediawikiFormat.pm](http://search.cpan.org/~szabgab/Text-MediawikiFormat-1.01/lib/Text/MediawikiFormat.pm).
     
@@ -116,7 +116,7 @@ This list can be later updated and can be used as a sort-of specification.
     The POD in simple HTML.
     Numbers from RT: Number of 'New' and 'Open' requests
     syntax highlighting selector at the bottom right
-    <b>permalink</b>
+    **permalink**
     
 * Module - canonical link (permalink) http://search.cpan.org/dist/CGI-Simple/lib/CGI/Simple.pm
     

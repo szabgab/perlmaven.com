@@ -71,7 +71,7 @@ Successfully built ab8e4d47cc70
 
 though the code at the end will be different for you.
 
-Congratulations. You've just built your first <b>Docker image</b>!
+Congratulations. You've just built your first **Docker image**!
 
 Note, the word "mydocker" is just the name I gave to it. You can use any name there, just remember it as we
 will use the name in the following commands!
@@ -211,7 +211,7 @@ hello from perl at Wed Mar  1 19:21:29 2017
 The next step is to embed a full Perl script in the image.
 So let's write a really simple script.
 
-Create a file called <b>hello_world.pl</b> in the same directory
+Create a file called **hello_world.pl** in the same directory
 where we have the `Dockerfile` and put the following code in
 the Perl file:
 
@@ -235,7 +235,7 @@ This will
 
 <ol>
   <li>Create an image based on Ubuntu 16.10.</li>
-  <li>It will copy the file <b>hello_world.pl</b> to the <b>/opt</b> directory of the Docker image.</li>
+  <li>It will copy the file **hello_world.pl** to the **/opt** directory of the Docker image.</li>
   <li>The `CMD` instruction tells Docker to run the script when we launch the container</li>
 </ol>
 

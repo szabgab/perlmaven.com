@@ -52,7 +52,7 @@ and doing an appraisal at the end of the year for their employees.
 
 <p>
 Some of the things Neil talked about:
-* Put links to competing / similar / complementary modules in the <b>SEE ALSO</b> section of your module.
+* Put links to competing / similar / complementary modules in the **SEE ALSO** section of your module.
 * Help other people to solve their problems to get a reputation for being helpful, being a good programmer.
     Helping other people is the best way to make sure you understand the technology.
     Try [Perl on Stack Overflow](http://stackoverflow.com/tags/perl).

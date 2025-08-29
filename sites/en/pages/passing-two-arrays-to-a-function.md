@@ -70,8 +70,8 @@ If you have an array called `@names`, you can get a reference to his array by pr
 (I only use the _ref to make it cleared in this article. Usually you would not use such names.)
 
 If you try to print the content of this new variable: `print $names_ref;` you will get an output like this:
-<b>ARRAY(0x703dcf2)</b>. You don't have much to do with this string, but if you see such output from a code, you know,
-someone has forgotten to <b>de-reference</b> an array.
+**ARRAY(0x703dcf2)**. You don't have much to do with this string, but if you see such output from a code, you know,
+someone has forgotten to **de-reference** an array.
 (De-referencing is the word to use when you want to get back the real something from a reference of the real something.)
 
 About the only legitimate thing you can do with the reference is to de-reference it, to get back the original content of

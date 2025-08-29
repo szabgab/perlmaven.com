@@ -31,7 +31,7 @@ print "@dwarfs";    # Doc Grumpy Happy Dopey Bashful
 ```
 
 As you can see the 4th and 5th elements of the array were removed.
-That's because the second parameter of <b>splice</b> is the offset
+That's because the second parameter of **splice** is the offset
 of the first element to be removed, and the third parameter is the
 number of elements to be removed.
 
@@ -118,7 +118,7 @@ or empty, then splice will only remove items but not insert any.
 
 ## Return values
 
-In <b>LIST context</b> splice returns the elements removed from the array.
+In **LIST context** splice returns the elements removed from the array.
 
 ```perl
 my @others = qw(SnowWhite Humbert);
@@ -129,7 +129,7 @@ print "@who\n";
 # Sleepy Sneezy
 ```
 
-In <b>SCALAR context</b>, it returns the last element removed, or undef
+In **SCALAR context**, it returns the last element removed, or undef
 if no elements were removed.
 
 ```perl

@@ -44,7 +44,7 @@ Math-Calc/
   MANIFEST
 ```
 
-The <b>MANIFEST</b> file contains a list of files that need to be packaged. In our case this
+The **MANIFEST** file contains a list of files that need to be packaged. In our case this
 should be the content:
 
 ```

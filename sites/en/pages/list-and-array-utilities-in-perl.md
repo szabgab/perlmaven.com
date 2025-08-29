@@ -35,9 +35,9 @@ can you get them from.
 ## [List::Util](https://metacpan.org/pod/List::Util)
 (checked in version 1.42 of the [Scalar-List-Utils](https://metacpan.org/release/Scalar-List-Utils) distribution.)
 
-* <b>reduce</b> - Generic function to reduce a list of value to a single value according to some rule. Many other function in this module are special cases of `reduce`. (For example `sum(@numbers)` is the same as `reduce { $a + $b } @numbers`)
+* **reduce** - Generic function to reduce a list of value to a single value according to some rule. Many other function in this module are special cases of `reduce`. (For example `sum(@numbers)` is the same as `reduce { $a + $b } @numbers`)
 
-* <b>first</b> - like grep but will only return the first value matching the conditional in the block. The two expressions below will set the same value, but the `first` is faster as
+* **first** - like grep but will only return the first value matching the conditional in the block. The two expressions below will set the same value, but the `first` is faster as
 it stops after it found the first element while `grep` has to go over all the elements before returning the results.
 
 ```perl
@@ -46,32 +46,32 @@ my $val = first { COND } @list;
 my ($val) = grep { COND } @list;
 ```
   
-* <b>max</b> returns the element with the highest numerical value
-* <b>maxstr</b> returns the element with the highest "string" value as returned by the `gt` operator.
-* <b>min</b> returns the element with the smallest numerical value
-* <b>minstr</b> returnes smallest "string" value.
+* **max** returns the element with the highest numerical value
+* **maxstr** returns the element with the highest "string" value as returned by the `gt` operator.
+* **min** returns the element with the smallest numerical value
+* **minstr** returnes smallest "string" value.
 * [any](/filtering-values-with-perl-grep) is like `grep` in scalar context, but in addition it short-circuites making it potentially much faster. It returns [true](/how-to-sort-faster-in-perl) if any of the values in the given list match the supplied condition.
   {% include file="examples/list_util_any.pl" %}
   
 * [all](/does-all-really-short-circuit) returns true if all the elements in the given list fulfill the condition. It is faster than grep as it short-circuits on the first failure.
   {% include file="examples/list_util_all.pl" %}
   
-* <b>none</b> - is like `not all`. It will return true if none of the element meet the condition. The following example shows 2 sets of 3-3 identical results:
+* **none** - is like `not all`. It will return true if none of the element meet the condition. The following example shows 2 sets of 3-3 identical results:
   {% include file="examples/list_util_none.pl" %}
   
-* <b>noall</b> - is like `not any`. The following example shows 2 sets of 3-3 identical results:
+* **noall** - is like `not any`. The following example shows 2 sets of 3-3 identical results:
   {% include file="examples/list_util_none.pl" %}
   
 
-* <b>sum</b> -  `sum(@numbers)` - returns the sum of numbers given. For backwards compatibility, if `@numbes` is empty then `undef` is returned. Use `sum0` instead!
-* <b>sum0</b> -  Just like `sum` but this will return `0` if the given list was empty.
+* **sum** -  `sum(@numbers)` - returns the sum of numbers given. For backwards compatibility, if `@numbes` is empty then `undef` is returned. Use `sum0` instead!
+* **sum0** -  Just like `sum` but this will return `0` if the given list was empty.
   {% include file="examples/list_util_sum.pl" %}
   
-* <b>product</b> - multiply the numbers passed to the function. Return 1 if no value was supplied.
+* **product** - multiply the numbers passed to the function. Return 1 if no value was supplied.
   {% include file="examples/list_util_product.pl" %}
   
 
-* <b>shuffle</b> - Returns the values of the input in a random order.
+* **shuffle** - Returns the values of the input in a random order.
 
 * [pairs](/operation-on-value-pairs-in-perl) - create pairs from a list of values.
 * [unpairs](/operation-on-value-pairs-in-perl) - flatten a list of pairs into a single list of values.

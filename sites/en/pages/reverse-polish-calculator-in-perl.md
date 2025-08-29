@@ -12,7 +12,7 @@ archive: true
 ---
 
 
-When writing arithmetic expressions we are used to write them <b>infix</b>:
+When writing arithmetic expressions we are used to write them **infix**:
 `3 + 4`. That is, we write the operator between the two operands.
 
 In the so-called [Polish Notation](http://en.wikipedia.org/wiki/Polish_notation)
@@ -25,11 +25,11 @@ Why is this interesting? You might ask.
 
 
 In order to compute the expression `3 + 4 * 2` correctly we need to
-know the <b>precedence</b> rules.
+know the **precedence** rules.
 In this case that multiplication should be executed before addition.
 This gives 11.
 
-In case of the `8 - 4 - 2` expression, we  need to know the rules of <b>associativity</b>,
+In case of the `8 - 4 - 2` expression, we  need to know the rules of **associativity**,
 In this case that negation is left associative, that we have to execute the left-most operation first and only then the right operation.
 This gives 2.
 
@@ -116,12 +116,12 @@ because we don't check the input beyond those 5 specific cases. (The 4 operators
 Several ideas how to improve this:
 
 <ol>
-  <li>Add option <b>l</b> printing the size of the stack (number of elements in it).</li>
-  <li>Add option <b>h</b> to display help, listing all the options.</li>
+  <li>Add option **l** printing the size of the stack (number of elements in it).</li>
+  <li>Add option **h** to display help, listing all the options.</li>
   <li>Check if the value given is really a number. Only accept numbers, warn if some other value is given.</li>
-  <li>Add option <b>?</b> showing the same help as h does.</li>
-  <li>Change the <b>q</b> options so it will check if there are any values left on the stack. If there are, tell the user about it and ask if she really wants to Quit?</li>
-  <li>Implement <b>C</b> to clear all the stack.</li>
-  <li>Add option <b>s</b> printing the whole stack.</li>
-  <li>Add an option <b>x</b> for exit that will not ask any questions, just exit the loop.</li>
+  <li>Add option **?** showing the same help as h does.</li>
+  <li>Change the **q** options so it will check if there are any values left on the stack. If there are, tell the user about it and ask if she really wants to Quit?</li>
+  <li>Implement **C** to clear all the stack.</li>
+  <li>Add option **s** printing the whole stack.</li>
+  <li>Add an option **x** for exit that will not ask any questions, just exit the loop.</li>
 </ol>

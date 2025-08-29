@@ -43,7 +43,7 @@ This means if you are using a numerical operation (e.g. addition) then both valu
 are automatically converted to numbers. If you are using a string operation
 (e.g. concatenation) then both values are automatically converted to strings.
 
-C programmers would probably call these conversions <b>casting</b> but this word is
+C programmers would probably call these conversions **casting** but this word is
 not used in the Perl world. Probably because the whole thing is automatic.
 
 Perl does not care if you write something as number or as string.
@@ -120,18 +120,18 @@ and [Use of uninitialized value](/use-of-uninitialized-value).
 ## How to avoid the warning?
 
 It is nice that perl will warn you (if asked to) when the type conversion was not perfect, but isn't there a function
-like <b>is_number</b> that will check if the given string is really a number?
+like **is_number** that will check if the given string is really a number?
 
 Yes and no.
 
-Perl does not have an <b>is_number</b> function as that would be some kind of commitment that the Perl developers
+Perl does not have an **is_number** function as that would be some kind of commitment that the Perl developers
 know what is a number. Unfortunately the rest of the world cannot agree on this point exactly. There are systems
 where ".2" is accepted as a number, but other systems where that is not accepted.
 Even more common that "2." is not accepted, but there are system where that is a perfectly acceptable number.
 
 There are even places where 0xAB is considered a number. A Hexadecimal number.
 
-So there is no <b>is_number</b> function, but there is a less committing function called <b>looks_like_number</b>.
+So there is no **is_number** function, but there is a less committing function called **looks_like_number**.
 
 That's exactly what you think it is. It will check if the given string looks like a number for perl.
 

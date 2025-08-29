@@ -35,7 +35,7 @@ The second hash is the actual update command. Here we say we would like to incre
 
 The third hash provides some additional parameters for runnin our request. `upsert` means we would like to `update`
 the document if it could be found, and `insert` it if could not be found. The `new` field means we would like
-the call to return the document <b>after</b> the update. (By default it would return the old version of the document.)
+the call to return the document **after** the update. (By default it would return the old version of the document.)
 See also the documentation of [findAndModify](http://docs.mongodb.org/manual/reference/method/db.collection.findAndModify/)
 for more options.
 

@@ -56,7 +56,7 @@ This article and screencast might give you some ideas how to do that:
 ## New authors
 
 If you'd like to upload a module to CPAN you will need to create an account on [PAUSE](http://pause.perl.org/), The Perl Authors Upload Server.
-Creating the account is a manual process, don't ask why it is the tradition. Anyway, you can click on "<b>Request PAUSE account</b>" link on that site,
+Creating the account is a manual process, don't ask why it is the tradition. Anyway, you can click on "**Request PAUSE account**" link on that site,
 fill out the form including the short explanation why you would like to have a PAUSE ID. Potential good answers include "I'd like to become the maintainer of module ABC"
 and "I'd like to upload a module called ABC that will do DEF". Fill the placeholder with the appropriate information. You don't need to write an essay, but
 the admins need to see you are not a bot.

@@ -72,7 +72,7 @@ age from that and from the current time.
 
 So we replace the 'age' attribute in the Person.pm file by the 'birthdate' attribute and we'll
 use the number of seconds from the epoch as to represent the birthdate. Hence the default value
-is the number returned by the <b>time</b> function.
+is the number returned by the **time** function.
 
 ```perl
 has birthdate => (is => 'rw', default => time);

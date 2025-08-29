@@ -12,7 +12,7 @@ author: szabgab
 ---
 
 
-In Perl the <b>length</b> function is only used for strings (scalars). In order to get the length of an array use the <b>scalar</b> function,
+In Perl the **length** function is only used for strings (scalars). In order to get the length of an array use the **scalar** function,
 or put the array in SCALAR context by some other means.
 
 
@@ -113,5 +113,5 @@ So the `scalar` function returns the length of an array because an array in scal
 
 ## Conclusion
 
-<b>Always use strict and use warnings.</b>
+**Always use strict and use warnings.**
 

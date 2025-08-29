@@ -15,14 +15,14 @@ author: szabgab
 
 
 In this part of the [Perl Tutorial](/perl-tutorial) we are going to talk
-about the <b>for loop in Perl</b>. Some people also call it the <b>C-style for loop</b>,
+about the **for loop in Perl**. Some people also call it the **C-style for loop**,
 but this construct is actually available in many programming languages.
 
 
 ## Perl for loop
 
-The <b>for</b> keyword in Perl can work in two different ways.
-It can work just as a <b>foreach</b> loop works and it can act
+The **for** keyword in Perl can work in two different ways.
+It can work just as a **foreach** loop works and it can act
 as a 3-part C-style for loop. It is called C-style though
 it is available in many languages.
 
@@ -32,7 +32,7 @@ style loop as described in the section about [perl arrays](/perl-arrays).
 The two keywords `for` and `foreach` can be used as synonyms.
 Perl will work out which meaning you had in mind.
 
-The <b>C-style for loop</b> has 3 parts in the controlling section.
+The **C-style for loop** has 3 parts in the controlling section.
 In general it looks like this code, though you can omit any of
 the 4 parts.
 
@@ -80,7 +80,7 @@ TEST
 
 ## foreach
 
-The above loop - going from 0 to 9 can be also written in a <b>foreach loop</b>
+The above loop - going from 0 to 9 can be also written in a **foreach loop**
 and I think the intention is much clearer:
 
 ```perl
@@ -90,7 +90,7 @@ foreach my $i (0..9) {
 ```
 
 As I wrote the two are actually synonyms so some people use the `for` keyword
-but write <b>foreach style loop</b> like this:
+but write **foreach style loop** like this:
 
 ```perl
 for my $i (0..9) {
@@ -114,7 +114,7 @@ This too can be left empty if, for example, we make that change inside the BODY.
 
 ## Infinite loop
 
-You can write an infinite loop using the <b>for loop</b>:
+You can write an infinite loop using the **for loop**:
 
 ```perl
 for (;;) {
@@ -136,7 +136,7 @@ about the [while loop in perl](/while-loop).
 ## perldoc
 
 You can find the official description of the for-loop in the
-<b>perlsyn</b> section of the
+**perlsyn** section of the
 [Perl documentation](http://perldoc.perl.org/perlsyn.html#For-Loops).
 
 ## Comments

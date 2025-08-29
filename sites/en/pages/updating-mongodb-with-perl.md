@@ -54,7 +54,7 @@ The code that implements the actual change looks like this:
 ```
 
 After 2 lines of very basic input validation we call the
-`update` method on the <b>collection</b>. It receives
+`update` method on the **collection**. It receives
 two hash references as parameters. The first one selects the
 documents that need to be updated.
 `{ name => $self->name }` means to select the document
@@ -136,7 +136,7 @@ Let's start from scratch.
 
 MongoDB provide the `remove` method. It accepts a hash reference
 describing one or more documents (just as in the case of `update`)
-and removes <b>all</b> matches.
+and removes **all** matches.
 
 
 ```perl

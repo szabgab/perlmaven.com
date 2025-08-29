@@ -23,12 +23,12 @@ Each "subscription" has a "title" that will be used in the subject line of the e
 
 Each "subscription" has one or more of the following rules:
 
-* <b>all</b>      - (True/False.) All the recently uploaded distributions. Probably the same as the [recent on MetaCPAN](https://metacpan.org/recent).
-* <b>unique</b>   - (True/False.) Filter the distribution to include each one only once. (In case more than one version was uploaded recently.)
-* <b>new</b>      - (True/False.) This is the first time the distribution was released. [MetaCPAN also provides this](https://metacpan.org/recent?f=n).
-* <b>modules</b>  - (A list of module names.) Include distributions that provide any of the listed modules.
-* <b>author</b>   - (A list of PAUSE ids.) Include distributions released by any of the given authors.
-* <b>partials</b> - (A list of regexes.) Any disribution where either the distribution name or any of the provided modules match the given regex. The regex can currently use `^` and `$` anchors and anything mathching [a-zA-Z0-9].
+* **all**      - (True/False.) All the recently uploaded distributions. Probably the same as the [recent on MetaCPAN](https://metacpan.org/recent).
+* **unique**   - (True/False.) Filter the distribution to include each one only once. (In case more than one version was uploaded recently.)
+* **new**      - (True/False.) This is the first time the distribution was released. [MetaCPAN also provides this](https://metacpan.org/recent?f=n).
+* **modules**  - (A list of module names.) Include distributions that provide any of the listed modules.
+* **author**   - (A list of PAUSE ids.) Include distributions released by any of the given authors.
+* **partials** - (A list of regexes.) Any disribution where either the distribution name or any of the provided modules match the given regex. The regex can currently use `^` and `$` anchors and anything mathching [a-zA-Z0-9].
 
 
 ## Use cases

@@ -114,7 +114,7 @@ The module from where we inherit, declares the constructor and another method.
 {% include file="examples/oop/inheritance1/MyParent.pm" %}
 
 When we call the `new` method on "MyModule" Perl will see that MyModule does not
-have a 'new' function and it will look at at the next module in the <b>inheritance chain</b>.
+have a 'new' function and it will look at at the next module in the **inheritance chain**.
 In this case it will look at the `MyParent` module and call `new` there.
 
 The same will happen when we call `say_hi`.

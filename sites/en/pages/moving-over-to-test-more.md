@@ -23,7 +23,7 @@ When a test case succeeds we get a nice `ok N` printed, but the problem is that 
 with the title of the test case, if we set one, and the line number. We could get so much more information. That's where
 [Test::More](https://metacpan.org/pod/Test::More), and later a lot of other testing modules come in.
 
-They allow us to be much more explicit in our testing functions and to get much more detailed error messages than just <b>not ok</b>.
+They allow us to be much more explicit in our testing functions and to get much more detailed error messages than just **not ok**.
 
 
 {% youtube id="2HHhostZ0cE" file="moving-over-to-test-more" %}

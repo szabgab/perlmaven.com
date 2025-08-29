@@ -32,7 +32,7 @@ Show notes:
 * [Pinto](https://metacpan.org/module/Pinto) on CPAN.
 * [Stratopan](http://stratopan.com/) hosted Pinto service.
 * [Crowd funding Pinto](http://blogs.perl.org/users/brian_d_foy/2013/04/crowd-funding-pinto.html) the article by brian d foy.
-* <b>[Specify module version ranges in Pinto](http://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint) the actual page where you can donate money.</b>
+* **[Specify module version ranges in Pinto](http://www.crowdtilt.com/campaigns/specify-module-version-ranges-in-pint) the actual page where you can donate money.**
 * [YAPC::NA](http://www.yapcna.org/) the Perl conference.
 </div>
 

@@ -59,7 +59,7 @@ Then pushed it out the changes to my repository.
 git push --set-upstream fork ci
 ```
 
-Chyecked the <b>Actions</b> tab to see if everything works fine.
+Chyecked the **Actions** tab to see if everything works fine.
 
 Finally I sent a pull-request asking the author to accept these changes.
 

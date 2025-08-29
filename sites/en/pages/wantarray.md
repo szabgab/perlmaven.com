@@ -89,7 +89,7 @@ There is no point in calling fibo() in VOID context at fibonacci.pl line 9.
 
 While I think the context sensitivity in Perl is very interesting, it can take time till a new Perl programmer comprehends it.
 Adding such behavior to user-defined function can make the API of a module better, but it can also make it harder to
-understand. <b>Use it with caution!</b>
+understand. **Use it with caution!**
 
 The name `wantarray` is unfortunately misleading.
 For many new Perl programmers it takes some time to understand what is the difference between ARRAYS and LISTS,

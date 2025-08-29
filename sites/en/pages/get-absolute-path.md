@@ -14,14 +14,14 @@ show_related: true
 ---
 
 
-It is often a good idea to have your configuration files or your code contain <b>relative pathes</b> to
+It is often a good idea to have your configuration files or your code contain **relative pathes** to
 various locations as that makes it easy to install your application in different places.
 
 It also makes it a lot  easier to run two totally separate copies of the same program on the same machine.
 
 However, when accessing the files it is often better to use the absolute path-es.
 
-So the question arises: <b>How can you convert a relative path to an absolute path?</b>
+So the question arises: **How can you convert a relative path to an absolute path?**
 
 
 There are are several way you can do even with standard Perl modules:

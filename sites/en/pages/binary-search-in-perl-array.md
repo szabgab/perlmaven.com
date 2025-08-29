@@ -27,7 +27,7 @@ is simple to implement. Given N elements in the array, it will take on average N
 
 ## Binary search
 
-The <b>binary_search</b> function is a log more complex, but in the worst case it will take `log2(N)` iterations.
+The **binary_search** function is a log more complex, but in the worst case it will take `log2(N)` iterations.
 Just two compare the two
 
 <pre>

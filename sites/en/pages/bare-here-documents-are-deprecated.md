@@ -48,7 +48,7 @@ text
 print $str
 ```
 
-<b>This is the case that has been deprecated</b> and that will be removed in perl 5.20.
+**This is the case that has been deprecated** and that will be removed in perl 5.20.
 
 If you run the above code you will get:
 
@@ -117,7 +117,7 @@ no $what
 END0
 ```
 
-If we run this using <b>perl programming.pl</b> the output will look like this:
+If we run this using **perl programming.pl** the output will look like this:
 
 ```
 double quote

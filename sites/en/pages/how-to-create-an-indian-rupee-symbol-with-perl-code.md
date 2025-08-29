@@ -14,8 +14,8 @@ author: szabgab
 
 
 Recently I got an e-mail from one of the readers asking how to create a Indian Rupee symbol with Perl.
-I told him to check <b>what is the Unicode character for the Rupee symbol</b> and then to check
-<b>how to print Unicode characters with Perl</b>.
+I told him to check **what is the Unicode character for the Rupee symbol** and then to check
+**how to print Unicode characters with Perl**.
 
 As this might be interesting to more people, let me show it here.
 
@@ -23,7 +23,7 @@ As this might be interesting to more people, let me show it here.
 The first search led me to the Wikipedia page describing the <a
 href="http://en.wikipedia.org/wiki/Indian_rupee_sign">Indian Rupee sign</a>.
 
-Apparently there is a <b>Generic Rupee sign</b> U+20A8 `&#8360;` and a specific <b>Indian Rupee sign</b> U+20B9
+Apparently there is a **Generic Rupee sign** U+20A8 `&#8360;` and a specific **Indian Rupee sign** U+20B9
 `&#8377;`.
 
 If you'd like to print a Unicode character to the screen (standard output or STDOUT), then you need to

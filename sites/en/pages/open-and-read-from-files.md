@@ -18,7 +18,7 @@ author: szabgab
 ---
 
 
-In this part of the [Perl tutorial](/perl-tutorial) we are going to see <b>how to read from a file in Perl</b>.
+In this part of the [Perl tutorial](/perl-tutorial) we are going to see **how to read from a file in Perl**.
 
 At this time, we are focusing on [text files](/what-is-a-text-file).
 

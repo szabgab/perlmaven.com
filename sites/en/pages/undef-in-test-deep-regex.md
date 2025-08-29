@@ -14,7 +14,7 @@ archive: true
 [Test::Deep](https://metacpan.org/pod/Test::Deep) is a great module if you need to test deep and/or fuzzy data structures,
 but sometimes it does not give the correct error messages. Recently I've encountered such a case when I got tons of warnings like this:
 
-<b>Use of uninitialized value $got in pattern match (m//) at Test/Deep/Regexp.pm line 57.</b>
+**Use of uninitialized value $got in pattern match (m//) at Test/Deep/Regexp.pm line 57.**
 
 Unfortunately the warning did not say what really caused it, but after patching the Test::Deep::Regexp I could solve the riddle.
 

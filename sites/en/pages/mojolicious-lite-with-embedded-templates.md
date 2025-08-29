@@ -67,7 +67,7 @@ in the script but separate from our actual Perl code.
 
 The `@@` syntax is used by the templating system of Mojolicious as a way to mark
 where each template starts. `echo.html.ep` is the mark of the template that we can
-render as the <b>echo</b> template.
+render as the **echo** template.
 
 ```perl
 __DATA__
@@ -136,7 +136,7 @@ You typed: <%= $msg %>
 Mojolicious::Lite allow us to the keys we passed as if they were scalar variable
 and the following syntax embeds the value in our template: `<%= $msg %>` 
 
-We can now type something in the form, click on <b>Echo</b> and see
+We can now type something in the form, click on **Echo** and see
 the new response built from the template.
 
 ## Connect the POST method to the same template
@@ -166,7 +166,7 @@ In Google Chrome it will look like this:
 
 <img src="/img/google_chrome_post_reload_confirmation.png" alt="Google Chrome POST reload confirmation pop-up" />
 
-Once we click the <b>Continue</b> button we will see the new page that includes both the form
+Once we click the **Continue** button we will see the new page that includes both the form
 and the text we typed earlier:
 
 <img src="/img/mojolicious_lite_echo_form_and_response.png" alt="Mojolicious::Lite echo form and response" />
@@ -193,7 +193,7 @@ The resulting page is still not perfect, but at least it is not crashing:
 
 <img src="/img/mojolicious_lite_echo_form_with_undef.png" alt="Mojolicious::Lite echo form with undef" />
 
-The problem is that we still display the text <b>You typed:</b> even though we have not typed anything.
+The problem is that we still display the text **You typed:** even though we have not typed anything.
 
 ## Conditionals in the template
 

@@ -14,11 +14,11 @@ archive: true
 
 
 On Linux/Unix/Mac systems one can create symbolic links (aka. softlinks) to a file or a directory using the
-<b>ln -s TARGET</b> or <b>ln -s TARGET LINK</b>.
+**ln -s TARGET** or **ln -s TARGET LINK**.
 
 Behind the scenes a symbolic link is just a file that has the TARGET as the content.
 
-If we open a symbolic link (e.g. using some text editor or <b>cat</b>) we see the content of the TARGET,
+If we open a symbolic link (e.g. using some text editor or **cat**) we see the content of the TARGET,
 where the link points to.
 
 How can we see the relative or absolute path to the TARGET?
@@ -37,21 +37,21 @@ ln -s ../work/perlmaven.com/sites
 
 The first command created a plain file.
 
-The second command created a symbolic link to <b>/etc/group</b> called <b>group</b>.
+The second command created a symbolic link to **/etc/group** called **group**.
 
-The third command created a symbolic link to <b>/etc/passwd</b> called <b>secrets</b>.
+The third command created a symbolic link to **/etc/passwd** called **secrets**.
 
-the 4th command created a symbolic link to <b>../work/perlmaven.com/sites</b> (which is a relative link) called <b>sites</b>.
+the 4th command created a symbolic link to **../work/perlmaven.com/sites** (which is a relative link) called **sites**.
 
-If we run <b>ls</b> in this directory we see: <b>data  group  secrets</b>.
+If we run **ls** in this directory we see: **data  group  secrets**.
 Based on this we don't know which might be a real file and which is a symbolic link.
 
-We could use <b>cat</b> on each one of them and we would see the content of the "data" file
-and the content of the <b>/etc/group</b> and <b>/etc/passwd</b> files respectively.
+We could use **cat** on each one of them and we would see the content of the "data" file
+and the content of the **/etc/group** and **/etc/passwd** files respectively.
 
 So how can we know which is a symbolic link and where do those links lead? What is their TARGET?
 
-On the command line if we run <b>ls -l</b> we can see the symbolic links
+On the command line if we run **ls -l** we can see the symbolic links
 and their TARGET on the right, after an arrow:
 
 ```
@@ -61,20 +61,20 @@ lrwxrwxrwx 1 gabor gabor 11 Apr  9 10:17 secrets -> /etc/passwd
 lrwxrwxrwx 1 gabor gabor 27 Apr  9 10:37 sites -> ../work/perlmaven.com/sites/
 ```
 
-We can also note that the first character on each row of a symbolic link is an <b>l</b> that also
+We can also note that the first character on each row of a symbolic link is an **l** that also
 indicates that these are symbolic links.
 
 ## How can I get the target of a symnlink in Perl?
 
-If we open the file with the regular <b>open</b> function we will get access to the target.
+If we open the file with the regular **open** function we will get access to the target.
 
-The <b>readlink</b> function, however, will return the target. If there is any.
+The **readlink** function, however, will return the target. If there is any.
 
 So here is a sample implementation:
 
 {% include file="examples/symlinks.pl" %}
 
-And the result if I run <b>perl ~/work/perlmaven.com/examples/symlinks.pl .</b>:
+And the result if I run **perl ~/work/perlmaven.com/examples/symlinks.pl .**:
 
 ```
 sites -> ../work/perlmaven.com/sites
@@ -83,11 +83,11 @@ data
 secrets -> /etc/passwd
 ```
 
-Once you have the relative path to the target you can use the <b>abs_path</b> function from the <b>Cwd</b> module to get the absolute path.
+Once you have the relative path to the target you can use the **abs_path** function from the **Cwd** module to get the absolute path.
 
 {% include file="examples/symlinks_abs.pl" %}
 
-<b>perl ~/work/perlmaven.com/examples/symlinks_abs.pl .</b>
+**perl ~/work/perlmaven.com/examples/symlinks_abs.pl .**
 
 ```
 sites -> /home/gabor/work/perlmaven.com/sites

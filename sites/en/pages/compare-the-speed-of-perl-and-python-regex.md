@@ -13,15 +13,15 @@ show_related: true
 ---
 
 
-After writing the article on <a href="https://code-maven.com/compare-the-speed-of-grep-with-python-regex">comparing the speed of <b>grep</b> with <b>Python</b> regexes</a>
-and arriving to the conclusiong that grep is 50-100 times faster than Python I thought, what about <b>Perl</b>?
+After writing the article on <a href="https://code-maven.com/compare-the-speed-of-grep-with-python-regex">comparing the speed of **grep** with **Python** regexes</a>
+and arriving to the conclusiong that grep is 50-100 times faster than Python I thought, what about **Perl**?
 
 
 I've create two scripts that read a large file and ran a very simple regex.
-I know that for this we don't even need a regex as we can use the <b>index</b> function in Perl
-or the <b>index</b> or <b>find</b> methods in Python, but this is a good exercise.
+I know that for this we don't even need a regex as we can use the **index** function in Perl
+or the **index** or **find** methods in Python, but this is a good exercise.
 
-I also ran the same regex several times as that was important for the original case comparing <b>grep</b> and <b>Python</b>.
+I also ran the same regex several times as that was important for the original case comparing **grep** and **Python**.
 
 In the original article you can also find the script that generated the text file we are parsing.
 
@@ -101,7 +101,7 @@ This is perl 5, version 30, subversion 1 (v5.30.1) built for x86_64-linux
 
 ## Conclusion
 
-The regex engine in <b>Perl</b> is much faster than the regex engine of <b>Python</b>.
+The regex engine in **Perl** is much faster than the regex engine of **Python**.
 
-The are both slower than <b>grep</b> as measured when I [compares Python with grep](https://code-maven.com/compare-the-speed-of-grep-with-python-regex).
+The are both slower than **grep** as measured when I [compares Python with grep](https://code-maven.com/compare-the-speed-of-grep-with-python-regex).
 

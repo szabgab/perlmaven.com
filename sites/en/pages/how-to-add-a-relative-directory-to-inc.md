@@ -25,7 +25,7 @@ author: szabgab
 
 When writing an application, or even "just" a module with a command line script,
 it is very useful to make sure every `use` statement
-will load the modules from a directory <b>relative</b>
+will load the modules from a directory **relative**
 to where the main Perl program can be found.
 
 This will make sure that when you are developing the code, it won't,
@@ -99,9 +99,9 @@ different change in the other copy. Maybe even on a totally different version of
 
 So we would like to make sure each script will find the module relative to the location of the script.
 
-In other words we would like to <b>add a directory relative to the location of the script to @INC</b>.
+In other words we would like to **add a directory relative to the location of the script to @INC**.
 
-Let me stress that. We are not trying to add a directory relative to the <b>current working directory</b>,
+Let me stress that. We are not trying to add a directory relative to the **current working directory**,
 but relative to the directory where the script can be found.
 
 ## Solution 1 - FindBin
@@ -220,7 +220,7 @@ being executed.
 The `absolute` method turns it into an absolute path even if it was a relative path originally.
 
 That's important, because if we run the script from the same directory where the script is:
-`perl programming.pl`, then `$0` will only contain <b>programming.pl</b> and
+`perl programming.pl`, then `$0` will only contain **programming.pl** and
 it will be hard to find out what is the parent directory. With absolute paths, we don't have
 the problem.
 

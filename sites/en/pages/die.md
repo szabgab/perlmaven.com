@@ -21,7 +21,7 @@ One of the know expression is the `open or die` style code to [open a file](/ope
 A call to `die` will print out the given string to the [standard error (STDERR)](/stdout-stderr-and-redirection)
 and then quit the program.
 
-It has the same extra feature as [warn](/warn) has, that if the string you passed to it does <b>not</b> end with
+It has the same extra feature as [warn](/warn) has, that if the string you passed to it does **not** end with
 a newline `\n`, perl automatically includes the name of the file and the line number where the `die` was called.
 
 This can help later finding the source of the problem.

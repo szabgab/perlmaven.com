@@ -12,7 +12,7 @@ author: szabgab
 Most Linux distribution already come pre-installed with a version of perl, but even if it is not part of the core distribution you
 can install perl using `yum install perl` or `apt-get install perl` depending on your package management system.
 This will give you a version of perl your vendor has built which can be several years old. In many cases using this perl is a good
-choices, but sometimes you'd like to <b>upgrade perl</b> and install a newer version.
+choices, but sometimes you'd like to **upgrade perl** and install a newer version.
 
 Your options are:
 
@@ -26,7 +26,7 @@ Your options are:
 
 Actually, we don't usually "upgrade" perl. We install a newer (or different) version of perl and leave the one
 we already had on the system intact. This is usually much better than replacing that version of perl with one we build.
-The one that came with the operating system is usually referred to as the <b>system perl</b> and it is there because several
+The one that came with the operating system is usually referred to as the **system perl** and it is there because several
 parts of the operating system depend on this perl. Usually it is better to just leave it alone and install another
 copy of. If you do change it, be prepared that some of the most important tools in your OS (e.g. apt-get) will stop
 functioning properly. It is a fantastic exercise in wasting time.
@@ -46,7 +46,7 @@ manual process and makes it easy to manage the installation and the use of sever
 ## Prerequisites
 
 While we can run perlbrew as any regular Linux/Unix/OSX user, there are a couple of things we will need to install as root.
-Specifically we need to have <b>make</b> and <b>gcc</b>.
+Specifically we need to have **make** and **gcc**.
 
 On CentOS these can be installed by running the following as `root` or using `sudo`
 

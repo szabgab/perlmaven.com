@@ -8,20 +8,20 @@ show_related: false
 
 ## Who is the Perl Maven site for?
 
-There are people who use Perl for tasks in <b>system administration</b> or in
-<b>configuration management</b>.
+There are people who use Perl for tasks in **system administration** or in
+**configuration management**.
 <br />
-Others build <b>web sites</b> or <b>web application</b> using Perl.
-Yet others only need it for <b>small scripts</b>. Or so they were told.
-Some people use Perl for <b>Bioinformatics</b> or for some other form of
-<b>scientific calculations</b>.
-There are a lot of people using Perl for <b>test automation</b>.
+Others build **web sites** or **web application** using Perl.
+Yet others only need it for **small scripts**. Or so they were told.
+Some people use Perl for **Bioinformatics** or for some other form of
+**scientific calculations**.
+There are a lot of people using Perl for **test automation**.
 That's one of my favorite fields.
 
 The Perl Maven web site was created for all of these people. It's aim is to
-<b>help you get your job done</b>.
+**help you get your job done**.
 
-<b>Learning Perl</b> is a funny thing. On one hand, after a few hours of reading
+**Learning Perl** is a funny thing. On one hand, after a few hours of reading
 you can already create small scripts and be productive. On the other hand, even after years
 of using Perl daily you will still find new things. Either in the language or on CPAN.
 The learning curve is flat, but long. Very long.
@@ -30,10 +30,10 @@ The learning curve is flat, but long. Very long.
 
 According to [Wikipedia](http://en.wikipedia.org/wiki/Maven):
 
-<b>A maven is a trusted expert in a particular field, who seeks to pass knowledge on to others.</b>
+**A maven is a trusted expert in a particular field, who seeks to pass knowledge on to others.**
 
 My hope is that if you follow the articles of this site, read the books and watch the video lectures
-you will constantly improve your Perl expertise. Soon you can <b>become a Perl Maven</b>.
+you will constantly improve your Perl expertise. Soon you can **become a Perl Maven**.
 
 The site contains lots of articles available free of charge,
 several [Perl books](/perl-books) and [video courses](/perl-videos) for sale,

@@ -14,7 +14,7 @@ author: szabgab
 Earlier we saw how to [create a class with attributes](/oop-with-moo) and how
 to set up [type checking](/type-checking-with-moo) in the setters.
 
-In this article you'll see how to set an attribute to be <b>required</b>.
+In this article you'll see how to set an attribute to be **required**.
 
 
 Let's start with a simple example:
@@ -49,7 +49,7 @@ DONE
 
 How can we make sure the attribute is always set?
 
-We can set it to be a <b>required</b> attribute:
+We can set it to be a **required** attribute:
 
 Let's change `Person.pm` to be:
 
@@ -166,7 +166,7 @@ DONE
 ```
 
 We can avoid this by adding [type checking](/type-checking-with-moo) to our class making sure
-the value is always, at least <b>defined</b>.
+the value is always, at least **defined**.
 
 ```perl
 package Person;
@@ -179,14 +179,14 @@ has name => (
 );
 ```
 
-If now, someone passed <b>undef</b> to the constructor, Moo will generate the
+If now, someone passed **undef** to the constructor, Moo will generate the
 following exception:
 
 ```
 isa check for "name" failed: cannot be undef at Person.pm line 9.
 ```
 
-If you included <b>use Carp::Always;</b> for better error messages you would get this output,
+If you included **use Carp::Always;** for better error messages you would get this output,
 in which the 4th line from the top is the one revealing the real source of the error (the call to
 new).
 

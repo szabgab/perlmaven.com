@@ -15,7 +15,7 @@ archive: true
 
 Given a reference to hash or a reference to an array in Perl, how can we get back the original hash or array?
 
-What if we have a <b>reference to a reference to a hash</b> and we would like to get back the <b>reference to the hash</b>.
+What if we have a **reference to a reference to a hash** and we would like to get back the **reference to the hash**.
 
 
 ## Dereference a HASH
@@ -72,7 +72,7 @@ apple
 
 Sounds complex, but the code is quite simple.
 
-We have a reference to a <b>hash of hashes</b> in the `$hr`.
+We have a reference to a **hash of hashes** in the `$hr`.
 The data structure in our example is actually built of three hashes.
 The main hash has two keys "player_a" and "player_b". The value of each key
 is a reference to hash by itself.

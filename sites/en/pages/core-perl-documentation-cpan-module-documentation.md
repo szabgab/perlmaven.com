@@ -30,7 +30,7 @@ and for the modules that come with core Perl as released by the Perl 5 Porters.
 It does not contain documentation for CPAN modules.
 There is an overlap though, as there are some modules that are available
 from CPAN but that are also included in the standard Perl distribution.
-(These are often referred to as <b>dual-lifed</b>.)
+(These are often referred to as **dual-lifed**.)
 
 You can use the search box at the top right corner. For example you can
 type in `split` and you'll get the documentation of `split`.
@@ -49,7 +49,7 @@ including that of the [while loop](/while-loop).
 
 The same documentation comes with the source code of Perl, but not
 every Linux distribution installs it by default. In some cases there
-is a separate package. For example in Debian and Ubuntu it is the <b>perl-doc</b>
+is a separate package. For example in Debian and Ubuntu it is the **perl-doc**
 package. You need to install it using `sudo aptitude install perl-doc`
 before you can use `perldoc`.
 

@@ -33,8 +33,8 @@ eval "...";
 
 ## String eval
 
-The common term used for this expression is  <b>string-eval</b>, though some people call it
-<b>evil eval</b>.
+The common term used for this expression is  **string-eval**, though some people call it
+**evil eval**.
 
 It is extremely powerful, and with that great power comes a great risk.
 

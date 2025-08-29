@@ -62,7 +62,7 @@ abc  => 23
 
 {% include file="examples/each_disaster.pl" %}
 
-Unlike when we use `keys`, when we use `each` we <b>must not</b> change the hash in any way.
+Unlike when we use `keys`, when we use `each` we **must not** change the hash in any way.
 In the above code we adde a new key-value pair while we were iterating over the hash. I ran the above code several
 times and each time I ran it I got a different output:
 

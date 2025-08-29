@@ -92,7 +92,7 @@ if ($holiday) {
 }
 ```
 
-but this <b>does NOT work</b> as we expect because the `use` statement, regardless of its location(!)
+but this **does NOT work** as we expect because the `use` statement, regardless of its location(!)
 will be executed during compile time. So when perl compiles this script and reaches the if-statement
 in the compilation, it will load the `Vacation::Mode` module and import its function, regardless
 of what value the variable `$holiday` will hold during run-time.

@@ -18,7 +18,7 @@ books:
 ---
 
 
-Michael Schwern is the creator of Test::Simple and Test::More and probably <b>the</b> person who introduced testing to the Perl community.
+Michael Schwern is the creator of Test::Simple and Test::More and probably **the** person who introduced testing to the Perl community.
 He tells us how he got involved in Perl, why did he build the test framework for Perl, and how did he manage to get people use these tools.
 
 He also tells us about is upcoming course on Git.
@@ -59,7 +59,7 @@ How to get people to use your module: Make a simple solution and advertise it.
 * Simple interface
 * Documentation
 * Tutorial
-* Make people see the <b>subjective</b> value in it.
+* Make people see the **subjective** value in it.
 </div>
 
 <div id="transcription">

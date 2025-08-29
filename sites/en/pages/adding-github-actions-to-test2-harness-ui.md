@@ -16,7 +16,7 @@ show_related: true
 
 [Test2-Harness-UI](https://metacpan.org/dist/Test2-Harness-UI) is a web interface for viewing and inspecting yath test logs.
 It is still in development, but it (obviously) has some tests. Those tests will be executed by the [CPAN Testers](http://www.cpantesters.org/)
-<b>after</b> a new version was released, but we can shorten the feedback cycle by configuring a Continuous Integration (CI) system.
+**after** a new version was released, but we can shorten the feedback cycle by configuring a Continuous Integration (CI) system.
 
 On GitHub it is usually GitHub Actions.
 
@@ -24,7 +24,7 @@ On GitHub it is usually GitHub Actions.
 {% youtube id="AIYmgub4QYU" file="perl-adding-github-actions-to-test2-harness-ui.mp4" %}
 
 
-All what we need to do is to add a YAML file in the <b>.github/workflows</b> folder of the project with the instructions.
+All what we need to do is to add a YAML file in the **.github/workflows** folder of the project with the instructions.
 
 In this case I added the following file:
 
@@ -34,7 +34,7 @@ A quick explanation:
 
 ## The name of the file
 
-I used in the repository was <b>ci.yml</b>, but any name would do and I think both the yml and yaml extensions work.
+I used in the repository was **ci.yml**, but any name would do and I think both the yml and yaml extensions work.
 
 ## Name
 
@@ -56,7 +56,7 @@ Means the job will run on every push and on every pull-request.
 
 ## Jobs
 
-There can be a number of jobs, the names of the jobs can be anything. In our case we have one job and I called it <b>test</b>
+There can be a number of jobs, the names of the jobs can be anything. In our case we have one job and I called it **test**
 
 ```
 jobs:
@@ -78,15 +78,15 @@ The matrix keyword allows us to define several variables (We used the words runn
 This allows us to run the tests in various conditions. In this case I configured the tests to run on Ubuntu only and on perl version 5.32,
 but later both can be extended.
 
-The <b>fail-fast</b> parameter tells Github Actions what to do if one of the jobs in the matrix fails.
-<b>false</b> means to run all the jobs to the end.
-<b>true</b> would mean to cancel all other jobs if one of the jobs derived from the matrix fails.
+The **fail-fast** parameter tells Github Actions what to do if one of the jobs in the matrix fails.
+**false** means to run all the jobs to the end.
+**true** would mean to cancel all other jobs if one of the jobs derived from the matrix fails.
 
 
 ## The platform
 
-The <b>runs-on</b> keyword is using one of the variables from the matrix to select on which platform to run on.
-The <b>name</b> uses both variables from the matrix, but it is only used for logging.
+The **runs-on** keyword is using one of the variables from the matrix to select on which platform to run on.
+The **name** uses both variables from the matrix, but it is only used for logging.
 
 ```
     runs-on: ${{matrix.runner}}
@@ -131,7 +131,7 @@ We display the version of the actually installed perl. Just so we will be able t
 
 ## step: Install dependencies
 
-We use <b>cpanm</b> to install the dependencies. We use the <b>--notest</b> flag to reduce the time spent
+We use **cpanm** to install the dependencies. We use the **--notest** flag to reduce the time spent
 on installing the dependencies.
 
 ```

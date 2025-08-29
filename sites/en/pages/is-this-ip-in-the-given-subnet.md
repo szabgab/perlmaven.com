@@ -78,11 +78,11 @@ That's possible, but if we would like to allow (or disallow) all the IP addresse
 
 The [Net::Subnet](https://metacpan.org/pod/Net::Subnet) module solves this problem. It exports several function,
 but this time we'll look only at the `subnet_matcher` function.
-It received a list of <b>IP/mask</b> pairs and returns an anonymous function. We can assign this anonymous function
+It received a list of **IP/mask** pairs and returns an anonymous function. We can assign this anonymous function
 to a scalar variable (`$white_list` in our example) and then use this function reference to check if a
-given IP address is in the defined ranges. The <b>mask</b> part of these expressions can be either what is called
-the <b>subnet mask notation</b> that looks like an IP address (for example `1.2.3.0/255.255.255.0`) or
-it can be a number indicating the number of significant bits. (also called <b>CIDR notation</b>)
+given IP address is in the defined ranges. The **mask** part of these expressions can be either what is called
+the **subnet mask notation** that looks like an IP address (for example `1.2.3.0/255.255.255.0`) or
+it can be a number indicating the number of significant bits. (also called **CIDR notation**)
 (for example `1.2.3.0/24`).
 
 

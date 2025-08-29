@@ -105,7 +105,7 @@ $VAR1 = {
 
 ## Conclusion
 
-The JSON parsers of Perl are correct in <b>not</b> parsing `NaN`.
+The JSON parsers of Perl are correct in **not** parsing `NaN`.
 The file created by the Python script was invalid.
 
 ## Comments

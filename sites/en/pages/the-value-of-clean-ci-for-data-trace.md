@@ -45,7 +45,7 @@ Files=5, Tests=17,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.29 cusr  0.05 csy
 Result: PASS
 ```
 
-So I ran the tests again, this time with the <b>RELEASE_TESTING</b> environment having a true value.
+So I ran the tests again, this time with the **RELEASE_TESTING** environment having a true value.
 
 ```
 RELEASE_TESTING=1 perl Build test
@@ -88,7 +88,7 @@ One thing I also missed in this report was that one of the tests was still skipp
 
 ## GitHub Action configuration file
 
-I added the following configuration file as <b>.github/workflows/ci.yml</b> and pushed out the changes to my forked version of the repository.
+I added the following configuration file as **.github/workflows/ci.yml** and pushed out the changes to my forked version of the repository.
 
 {% include file="examples/data-trace-ci.yml" %}
 
@@ -135,7 +135,7 @@ This time all the tests passed on all 3 platforms.
 
 That's how I sent the Pull-Request.
 
-The reasons is that the CI system should <b>always</b> pass.
+The reasons is that the CI system should **always** pass.
 
 If the authors accepts the PR, they will have a working CI system. They might not have the time to fix these issues
 now, but at least the regular tests pass on the CI and they will be notified by email if one of the regular test

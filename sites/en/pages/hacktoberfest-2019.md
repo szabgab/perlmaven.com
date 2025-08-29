@@ -82,11 +82,11 @@ files on CPAN</a>. This assumes that you already know where is the source reposi
 <h3>Travis-CI</h3>
 
 I have not implemented this yet, but this is the next thing on my agenda.
-For the modules that use GitHub and that have links to their GitHub repository, check if they have a <b>.travis.yml</b>
+For the modules that use GitHub and that have links to their GitHub repository, check if they have a **.travis.yml**
 file. If not, then for sure they don't use [Travis-CI](https://travis-ci.org/) for Continuous Integration.
 In such case first you need to make sure there are tests in the module and that you can run them on your computer.
 If there are no tests, add any simple test-case.
-Once there is at least one test, you can create a <b>.travis.yml</b>, enable Travis-CI for your clone and once the tests
+Once there is at least one test, you can create a **.travis.yml**, enable Travis-CI for your clone and once the tests
 are passing on Travis-CI as well you can send a pull-request with that file and the information needed to enable
 Travis-CI.
 

@@ -11,7 +11,7 @@ show_related: true
 ---
 
 
-There is no special [boolean values](/boolean-values-in-perl) in Perl that would mean <b>false</b> or <b>true</b>.
+There is no special [boolean values](/boolean-values-in-perl) in Perl that would mean **false** or **true**.
 There are certain values that evaluate to [false](/false) or true in boolean context.
 
 

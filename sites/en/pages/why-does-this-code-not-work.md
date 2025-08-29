@@ -11,7 +11,7 @@ archive: true
 
 What to do when you try to split a string and get several fields at once but it does not work?
 
-I've received the following two examples in a short intervallum asking <b>Why does this code not work?</b>.
+I've received the following two examples in a short intervallum asking **Why does this code not work?**.
 
 
 In order to answer the questions I actually need to know what is the expected result, something the person asking this question missed to provide, but luckily in these examples it seemed to be obvious.

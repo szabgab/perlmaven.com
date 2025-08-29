@@ -60,8 +60,8 @@ The script accepts a URL on the command line. One that either leads to a module 
 `https://metacpan.org/pod/WWW::Mechanize` or one that leads to a distribution. Such as this:
 `https://metacpan.org/release/WWW-Mechanize`.
 
-It looks for the link that says <b>Download ...</b>, take the URL where that link leads. Downloads the thing behind the link,
-saves it to the <b>/tmp</b> directory an unzips it.
+It looks for the link that says **Download ...**, take the URL where that link leads. Downloads the thing behind the link,
+saves it to the **/tmp** directory an unzips it.
 
 The script uses [WWW::Mechanize](https://metacpan.org/pod/WWW::Mechanize) module to fetch the HTML page of MetaCPAN
 

@@ -137,7 +137,7 @@ print "Hello World\n";
 ```
 
 Once you typed this in, you can run the script again by selecting
-"Run -&gt; Run Script" or by pressing <b>F5</b>.
+"Run -&gt; Run Script" or by pressing **F5**.
 That will automatically save the file before running it.
 
 It is generally a good practice to tell what is the minimum version of perl your code requires.
@@ -186,7 +186,7 @@ it in the response.
 
 `$name` is called a scalar variable.
 
-Variables are declared using the <b>my</b> keyword.
+Variables are declared using the **my** keyword.
 (actually that's one of the requirements `strict` adds.)
 
 Scalar variables always start with a `$` sign.
@@ -210,7 +210,7 @@ to remove the trailing newlines from strings.
 
 ## Conclusion
 
-In every script you write you should <b>always</b> add `use strict;` and `use warnings;`
+In every script you write you should **always** add `use strict;` and `use warnings;`
 as the first two statements. It is also very recommended to add `use 5.010;`.
 
 ## Exercises

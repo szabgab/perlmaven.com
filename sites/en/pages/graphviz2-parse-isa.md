@@ -32,7 +32,7 @@ cd GraphViz2-Parse-ISA-2.52
 
 Then created a file which was a copy of the code from the [synopsis in the documentation of GraphViz2::Parse::ISA](https://metacpan.org/pod/GraphViz2::Parse::ISA).
 
-It did not work out of the box, but after I made some small changes (commented out 2 lines and added one on line 28) it generated a file called <b>parse.code.svg</b> based on the files in the <b>t/lib</b> directory of the zip file.
+It did not work out of the box, but after I made some small changes (commented out 2 lines and added one on line 28) it generated a file called **parse.code.svg** based on the files in the **t/lib** directory of the zip file.
 
 {% include file="examples/graphviz2_parse_isa_example.pl" %}
 

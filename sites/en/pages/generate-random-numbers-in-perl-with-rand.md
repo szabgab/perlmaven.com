@@ -53,7 +53,7 @@ as many times as you want.
 Perl however will call `srand()` for you every time a new script starts so normally you'll
 see different numbers every time a script starts.
 
-Just to mess with your mind a bit, if you want to get <b>repeatable random numbers</b>,
+Just to mess with your mind a bit, if you want to get **repeatable random numbers**,
 you can call `srand()` yourself in your script with some number.
 
 For example, this script, generates 0.744525000061007 on every run. Try it.
@@ -97,14 +97,14 @@ Why?
 
 The [official documentation of rand() in Perl](https://metacpan.org/pod/perlfunc#rand)
 warns that
-<b>"rand()" is not cryptographically secure.  You should not rely
-on it in security-sensitive situations.</b>
+**"rand()" is not cryptographically secure.  You should not rely
+on it in security-sensitive situations.**
 It also points to a number
 of third-party alternatives from CPAN. Let's have a look at those.
 
 ## Crypt::Random
 
-[Crypt::Random](https://metacpan.org/pod/Crypt::Random) calls itself <b>Cryptographically Secure, True Random Number Generator.</b>
+[Crypt::Random](https://metacpan.org/pod/Crypt::Random) calls itself **Cryptographically Secure, True Random Number Generator.**
 it uses `/dev/random` or similar device supplied by the operating system.
 
 The basic usage looks like this:
@@ -112,7 +112,7 @@ The basic usage looks like this:
 {% include file="examples/crypt_random.pl" %}
 
 `makerandom` will return a whole number between 0 and 2**N (including 0 and excluding 2**N) where
-N is set using the `Size` parameter.  The <b>Strength</b> selects between /dev/random and /dev/urandom.
+N is set using the `Size` parameter.  The **Strength** selects between /dev/random and /dev/urandom.
 By default the highest bit of the returned number is always set to 1, which might be useful in some cases,
 but I setting `Uniform => 1` will return a value that will have the same randomness on every bit.
 

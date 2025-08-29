@@ -15,7 +15,7 @@ archive: true
 
 Now that we have made the [Perl code look nice](/run-perl-tidy-to-beautify-the-code),
 we can start cleaning up the constructs in the code and convert them to beetter expressions based
-in the current <b>best practices</b>. For this we are going to use [Perl::Critic](https://metacpan.org/pod/Perl::Critic).
+in the current **best practices**. For this we are going to use [Perl::Critic](https://metacpan.org/pod/Perl::Critic).
 
 
 ## Running perlcritic on the tests

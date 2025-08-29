@@ -141,7 +141,7 @@ Most textual Internet protocols (including HTTP, SMTP, FTP, IRC and many others)
 In practice, there are many applications that erroneously use the C newline character '\n' instead.
 </i>
 
-In a nutshell we need to be <b>flexible in what we accept and strict in what we send</b>.
+In a nutshell we need to be **flexible in what we accept and strict in what we send**.
 
 BTW Don't ask me why is it written in octal and not hexa in this case. I think it is just
 because that's what was in the documentation of `Net::Server`.
@@ -199,7 +199,7 @@ world
 You said "world"
 ```
 
-When we want to quite we just type in <b>bye</b>. The server will echo it back, but then the
+When we want to quite we just type in **bye**. The server will echo it back, but then the
 `while` loop terminates because of this line of code: `last if $line eq "bye";`:
 
 ```

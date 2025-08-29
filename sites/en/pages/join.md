@@ -33,7 +33,7 @@ $str = join '', @names, 'Baz';
 say $str;                       # FooBarMooBaz
 ```
 
-The first parameter of the <b>join</b> function is the "connector",
+The first parameter of the **join** function is the "connector",
 the string that will be connecting all the other parameters.
 The rest of the parameters of join will be flattened to a
 list and the elements will be glued together with the given "connector".

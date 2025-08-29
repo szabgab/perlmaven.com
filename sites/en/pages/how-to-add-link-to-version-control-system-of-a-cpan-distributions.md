@@ -43,7 +43,7 @@ distribution.
 ## ExtUtils::MakeMaker
 
 If you use [ExtUtils::MakeMaker](https://metacpan.org/pod/ExtUtils::MakeMaker) add the following to your Makefile.PL
-as parameter in the <b>WriteMakefile</b> function:
+as parameter in the **WriteMakefile** function:
 
 ```perl
 META_MERGE => {
@@ -88,7 +88,7 @@ freak out:
 ## Module::Build
 
 If you use [Module::Build](https://metacpan.org/pod/Module::Build), add the following to Build.PL,
-in the <b>Module::Build->new</b> call:
+in the **Module::Build->new** call:
 
 ```perl
 meta_merge => {

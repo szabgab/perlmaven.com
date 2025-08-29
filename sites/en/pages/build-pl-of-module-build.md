@@ -15,7 +15,7 @@ author: szabgab
 
 These days I'd suggest you to use [ExtUtils::MakeMaker](/makefile-pl-of-extutils-makemaker)
 or [Dist::Zilla](http://metacpan.org/pod/Dist::Zilla),
-but if you encounter a module that only has a <b>Build.PL</b>, you will need to understand what is that.
+but if you encounter a module that only has a **Build.PL**, you will need to understand what is that.
 
 Let's see how `Build.PL` looks like.
 

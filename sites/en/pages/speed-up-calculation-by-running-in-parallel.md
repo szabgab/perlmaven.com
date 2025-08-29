@@ -93,11 +93,11 @@ If it is successful then at this point two processes will continue to run almost
 the value returned by the `start` method is assigned to `$pid`.
 There is however a small difference in the two processes.
 
-In the <b>parent process</b>, this value is going to be the process ID of the child process, a non-zero number,
+In the **parent process**, this value is going to be the process ID of the child process, a non-zero number,
 and therefore the right-hand side of the `and` boolean operator
 will be evaluated and the main process will go to the `next` iteration of the `foreach` loop.
 
-In the <b>child process</b> the value returned by `start` will be 0. Which is false. Which means the right-hand side
+In the **child process** the value returned by `start` will be 0. Which is false. Which means the right-hand side
 of the `and` operator will not be executed. In the child process the next evaluated statement will be the
 `calc($q);`. While the child process is calculating using one of the CPUs of the computer,
 the main process can run using the other CPU and it can create more child-processes.

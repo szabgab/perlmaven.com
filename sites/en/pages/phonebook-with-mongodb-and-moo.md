@@ -223,7 +223,7 @@ This is how we build the query:
 ```
  
 
-The `find` method will return an <b>iterable</b> object.
+The `find` method will return an **iterable** object.
 This means we can call the `next` method on the object
 and it will return the data entries one by one.
 When it exhausted all the answers it will return `undef`.

@@ -9,10 +9,10 @@ archive: false
 ---
 
 
-Reading this <b>Advanced Perl book</b> will teach you how to create modules and classes
+Reading this **Advanced Perl book** will teach you how to create modules and classes
 and in general how to write and maintain advanced Perl code.
 
-It will teach you how to write Object Oriented code in the modern way, using <b>Moose</b>,
+It will teach you how to write Object Oriented code in the modern way, using **Moose**,
 or by using only core Perl: manually blessing references.
 
 While many people use Perl as procedural language with Object Oriented features,

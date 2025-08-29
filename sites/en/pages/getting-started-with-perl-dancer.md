@@ -15,7 +15,7 @@ books:
 
 Perl Dancer is a modern, light weight, route-oriented web application framework for Perl. In the first few minutes of this screencast,
 you will learn how to set up your development environment on Microsoft Windows machine, and then you will see how to create your
-first (and very basic) web application using Perl Dancer <b>regardless of your operating system</b>. (14:25 min)
+first (and very basic) web application using Perl Dancer **regardless of your operating system**. (14:25 min)
 
 
 {% youtube id="266P43Nk4vk" file="getting-started-with-perl-dancer-1280x720" %}

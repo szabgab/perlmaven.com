@@ -110,7 +110,7 @@ print "$real_name\n";
 
 This is longer and I think less clear.
 
-A slightly better way is to use an <b>array slice</b>:
+A slightly better way is to use an **array slice**:
 
 ```perl
 my $str = "root:*:0:0:System Administrator:/var/root:/bin/sh";
@@ -120,7 +120,7 @@ print "$username\n";
 print "$real_name\n";
 ```
 
-Please note, in the <b>array slice</b> `@fields[0, 4];` we
+Please note, in the **array slice** `@fields[0, 4];` we
 have a leading `@` and not a leading `$`.
 
 
@@ -247,8 +247,8 @@ $VAR1 = [
 
 ## Including trailing empty fields
 
-By default ```split</code> will exclude any fields at the end of the string that are empty. However you can pass a 3rd parameter to be <b>-1</b>.
-If the 3rd parameter is a positive number it limits the number of fields returned. When it is <b>-1</b>, it instructs <b>split</b> to include
+By default ```split</code> will exclude any fields at the end of the string that are empty. However you can pass a 3rd parameter to be **-1**.
+If the 3rd parameter is a positive number it limits the number of fields returned. When it is **-1**, it instructs **split** to include
 all the fields. Even the trailing empty fields.
 
 {% include file="examples/split_empty_trailing.pl" %}

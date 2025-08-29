@@ -20,7 +20,7 @@ Let's see what is that, what is the problem with that and why to avoid?
 
 ## So what shall I do?
 
-Before explaining what you should <b>not</b> do, let me link you to the articles explain what you should do:
+Before explaining what you should **not** do, let me link you to the articles explain what you should do:
 
 Read [how to open file for reading in a modern way](/open-and-read-from-files)
 or the one about [writing to file in Perl](/writing-to-files-with-perl).
@@ -67,7 +67,7 @@ There are two big differences:
 
 The first is that we use the strange variable without the
 leading `$` to hold the filehandle.
-(This is actually a <b>bareword</b>, but one that does not trigger
+(This is actually a **bareword**, but one that does not trigger
 the [Bareword not allowed while "strict subs" in use](/barewords-in-perl)
 error.)
 
@@ -97,7 +97,7 @@ Not good.
 
 ## Need to close that filehandle
 
-Another advantage of using <b>lexically scoped scalar variables</b>
+Another advantage of using **lexically scoped scalar variables**
 as filehandles is that they will automatically be closed when
 they go out of scope.
 

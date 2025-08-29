@@ -20,7 +20,7 @@ There are still some organizations out there that run applications written in Pe
 there are a lot of benefits in moving to some of the new frameworks such as [Perl Dancer](/dancer) or [Mojolicious](/mojolicious).
 
 However that move might need a lot of changes to the code-base. An intermediate step, that can often be enough to reap a lot of the benefits, is to
-move to Plack/PSGI. That will make the code easier to test and it can be served by an application server such as <b> Starman</b>.
+move to Plack/PSGI. That will make the code easier to test and it can be served by an application server such as ** Starman**.
 
 In this article we take a simple CGI script and we'll convert it to use Plack/PSGI. We also demonstrate how the old script runs as a plain CGI script,
 and how the new version can run both as a CGI script and loaded by the application server.
@@ -74,10 +74,10 @@ for me to develop it.
 
 The script used the CGI.pm module.
 
-It has two cases, if the parameter <b>pid</b> is passed to the server then it sends back the current process ID.
+It has two cases, if the parameter **pid** is passed to the server then it sends back the current process ID.
 We are using this to show that a CGI script will create a new process on every invocation.
 
-The second case is when pid is not supplied. The user can send a parameter called <b>name</b> with some content and the "application" will echo it back prefixing it with the word "Hello".
+The second case is when pid is not supplied. The user can send a parameter called **name** with some content and the "application" will echo it back prefixing it with the word "Hello".
 
 To make it simpler to read there is only one location that prints code.
 
@@ -86,7 +86,7 @@ To make it simpler to read there is only one location that prints code.
 {% include file="examples/cgi-to-psgi/t/cgi.t" %}
 
 To verify that the code works properly we wrote a test script. It executes the CGI script on the command line passing values to it.
-You can run it either as <b>perl t/cgi.t</b> or better yet as <b>prove t/cgi.t</b>
+You can run it either as **perl t/cgi.t** or better yet as **prove t/cgi.t**
 
 ## The PSGI version
 
@@ -98,9 +98,9 @@ Getting the parameters supplied by the user is quite similar in the PSGI version
 Then instead of printing the resulting HTML we return a 3-element array reference in which the first element is the HTTP status code, the
 2nd element is the HTTP header, and the 3rd element is the HTML.
 
-The first line has also changed as this application must be executed by the <b>plackup</b> command when running in CGI mode.
+The first line has also changed as this application must be executed by the **plackup** command when running in CGI mode.
 
-Now thinking about it, I am not sure how do you run this on Windows. There probably you need to associate the <b>.psgi</b> extension with <b>plackup</b>.
+Now thinking about it, I am not sure how do you run this on Windows. There probably you need to associate the **.psgi** extension with **plackup**.
 
 In order to try it on your own computer and during development you can run it with:
 
@@ -114,8 +114,8 @@ It will print
 HTTP::Server::PSGI: Accepting connections at http://0:5000/
 ```
 
-and then you can visit the application by browsing too <b>http://0:5000/</b>. You can stop it by pressing Ctrl-C.
-You can also try <b>http://0.0.0.0:5000/?name=Foo</b> and also <b>http://0.0.0.0:5000/?pid=1</b>.
+and then you can visit the application by browsing too **http://0:5000/**. You can stop it by pressing Ctrl-C.
+You can also try **http://0.0.0.0:5000/?name=Foo** and also **http://0.0.0.0:5000/?pid=1**.
 
 ## Test for the PSGI version
 
@@ -126,7 +126,7 @@ From that we create a test-object and then we use the test-object to send in var
 
 These tests demonstrate that it is quite easy to send in different date to a GET and a POST request and then to verify the results.
 
-You can run it either as <b>perl t/psgi.t</b> or better yet as <b>prove t/psgi.t</b>
+You can run it either as **perl t/psgi.t** or better yet as **prove t/psgi.t**
 
 You could run all the tests by just typing
 
@@ -162,7 +162,7 @@ In order to install the whole demo you need a Virtual Private Server (VPS) runni
 I used Ubuntu 20.04 running at [Digital Ocean](/digitalocean). They call their VPS-es "droplets".
 
 I installed [Rexify](https://www.rexify.org/) on my local computer. Inserted the IP address of the
-newly created remote host in the Rexfile instead of the IP address you can see in the <b>group all</b> line.
+newly created remote host in the Rexfile instead of the IP address you can see in the **group all** line.
 Then ran the following command:
 
 ```

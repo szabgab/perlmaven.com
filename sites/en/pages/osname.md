@@ -12,17 +12,17 @@ show_related: true
 ---
 
 
-The variable <b>$^O</b> also known as <b>$OSNAME</b> contains the the name of the operating system under which this copy of Perl was compiled.
+The variable **$^O** also known as **$OSNAME** contains the the name of the operating system under which this copy of Perl was compiled.
 
 
-<b>$^O</b> is the official name. You can also import the <b>$OSNAME</b> from the <b>English</b> module.
+**$^O** is the official name. You can also import the **$OSNAME** from the <b>English</b> module.
 
 {% include file="examples/osname.pl" %}
 
-On MS Windows it is always <b>MSWin32</b> regardless the version of Windows or if it is 32 bit or 64 bit.
+On MS Windows it is always **MSWin32** regardless the version of Windows or if it is 32 bit or 64 bit.
 
-On Linux it is always <b>linux</b>.
+On Linux it is always **linux**.
 
-On Mac OSX it is always <b>darwin</b>.
+On Mac OSX it is always **darwin**.
 
 See also the [official documentation](https://metacpan.org/pod/perlvar#OSNAME).

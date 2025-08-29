@@ -36,7 +36,7 @@ it recommends given/when.
 In version 5.10 the keywords [given and when](/switching-in-perl-5.10) were introduced trying to provide functionality
 similar to what `case` and `switch` are expected to do, but the design was copied from the design of Perl 6.
 
-Unfortunately due to some misunderstandings the implementation had various issues and thus in a later version this functionality was marked as <b>experimental</b>
+Unfortunately due to some misunderstandings the implementation had various issues and thus in a later version this functionality was marked as **experimental**
 which means if you use it, perl will give you warnings such as `given is experimental` and `when is experimental`.
 It also means its behaviour might change in the future or that it will be removed.
 

@@ -22,7 +22,7 @@ project to which we added a GitHub Actions configuration file to enable Continuo
 {% youtube id="tiCNGmzJRoY" file="perl-add-github-actions-to-graphics-toolkit-color.mp4" %}
 
 
-I created a fork of the GitHub repository and in a branch I added the following file to be <b>./github/workflows/ci.yml</b>.
+I created a fork of the GitHub repository and in a branch I added the following file to be **./github/workflows/ci.yml**.
 (copied from the [try-github-actions](https://github.com/szabgab/try-github-actions/) repository.
 
 Once the changes were pushed out the instructions started to run on the servers of GitHub.

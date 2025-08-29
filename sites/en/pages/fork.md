@@ -114,7 +114,7 @@ the block of the if-statement and will `exit` at the end.
 In the parent process `$pid` will contain the process id of the child which is a non-negative number and thus
 `not $pid` will be false. The parent process will skip the block of the if-statement and will execute the
 code after it.
-At one point the parent process will call `wait()`, that will only return <b>after</b> the child process exits.
+At one point the parent process will call `wait()`, that will only return **after** the child process exits.
 
 There is also a variable called `$name` that had a value assigned before forking. If you look at the output
 below, you will see that the variable `$name` kept its value in both the parent and the child process after
@@ -216,7 +216,7 @@ Parent (66428) ending
 
 ## wait and waitpid
 
-The `wait` function will wait for <b>any</b> child process to exit and will return the
+The `wait` function will wait for **any** child process to exit and will return the
 process id of the one it saw. On the other hand there is a `waitpid` call that we don't
 use in our examples, but that will wait for the end of a specific child process based on its
 process ID (PID).

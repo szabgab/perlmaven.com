@@ -16,5 +16,5 @@ See [undef explained in a video](/beginner-perl-maven-undef) and [how to return 
 
 It is also a function that can be used to set variables to be undefined. See [undef on Perl arrays and hashes](/undef-on-perl-arrays-and-hashes).
 
-You can tell apart variables that are <b>undef</b> and that are not by using the [defined](/defined) function.
+You can tell apart variables that are **undef** and that are not by using the [defined](/defined) function.
 

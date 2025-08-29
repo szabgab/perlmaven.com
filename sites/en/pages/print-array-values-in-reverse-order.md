@@ -10,7 +10,7 @@ archive: true
 
 
 The [reverse](/reverse) function is an excellent solution, but for a fun exercise you might want to know how to do
-that without the built-in <b>reverse</b> function.
+that without the built-in **reverse** function.
 
 
 Given an array of strings we can print the elements in reverse order in a number of ways:

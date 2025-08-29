@@ -22,18 +22,18 @@ This is what's happening to the old name of the CPAN::Digger repository.
 
 All of these cases must be reported, but they should not cause the checking process to get stuck.
 
-One of the fixes I have applied is checking if the repository URL returns <b>"OK 200"</b> when accessing with a simple GET requests.
+One of the fixes I have applied is checking if the repository URL returns **"OK 200"** when accessing with a simple GET requests.
 
 
 This is a sample code showing 3 different ways how to do it and how to verify that code.
 
 In this example we use [LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent) to send a GET request and then we check
-if the response was <b>"200 OK"</b> or <b>"404 Not Found"</b>.
+if the response was **"200 OK"** or **"404 Not Found"**.
 
 In the default behavior of the LWP::UserAgent it allows for redirects and reports the results of the last call. This is
 what you can see in the first solution.
 
-In the second solution we set the <b>max_redirect</b> to be 0 and thus the response we got was <b>"301 Moved Permanently"</b>.
+In the second solution we set the **max_redirect** to be 0 and thus the response we got was **"301 Moved Permanently"**.
 
 The CPAN::Digger should probably report these cases so the author can notice them and fix them.
 

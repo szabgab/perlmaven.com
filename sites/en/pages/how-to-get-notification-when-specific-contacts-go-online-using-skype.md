@@ -57,11 +57,11 @@ $skype->run;
 
 That's the whole script.
 
-When you run this script it will try to connect the <b>already running</b> Skype client.
+When you run this script it will try to connect the **already running** Skype client.
 The Skype client will ask for your permission.
 (For a screenshot see the [documentation of Skype::Any](https://metacpan.org/pod/Skype::Any).) You can let this script connect to your Skype once or always. Later you can turn this off, from within Skype.
 
-Also, as far as I understand the permission is given to a third-party application with a specific name. By default Skype::Any would use the name <b>Skype::Any</b>, but in the constructor we gave it another name.
+Also, as far as I understand the permission is given to a third-party application with a specific name. By default Skype::Any would use the name **Skype::Any**, but in the constructor we gave it another name.
 
 Anyway, once the connection is established, the events in the Skype client will generate call-backs in our script. We are interested in the user-related events, so register the event handler `$skype->user` passing an anonymous subroutine to it.
 

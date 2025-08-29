@@ -27,7 +27,7 @@ A ternary operator has 3 operands.
 
 ## The conditional operator
 
-In Perl 5, as in most of the other programming languages, the <b>conditional operator</b> has 3 parts separated by `?` and `:`.
+In Perl 5, as in most of the other programming languages, the **conditional operator** has 3 parts separated by `?` and `:`.
 
 The first part, before the `?` is the condition. It is evaluated in boolean context.
 If it is [true](/boolean-values-in-perl), the second part, between `?` and `:`

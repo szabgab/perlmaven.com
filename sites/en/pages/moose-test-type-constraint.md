@@ -106,7 +106,7 @@ Files=1, Tests=6,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.32 cusr  0.03 csys
 Result: PASS
 ```
 
-we can see that <b>exception</b> is the name of the test, and the previous two tests have no
+we can see that **exception** is the name of the test, and the previous two tests have no
 names, because I've forgotten to add them to the tests.
 
 We don't see the actual exception, because it was "eaten" by the `throws_ok` function

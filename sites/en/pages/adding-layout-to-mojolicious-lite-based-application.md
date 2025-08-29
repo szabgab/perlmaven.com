@@ -61,7 +61,7 @@ Please, check out our [echo](/echo) page.
 ```
 
 We changed the handler of `/` and call `$self->render('index');`.
-We could use any template name there, but historically the <b>index</b> page
+We could use any template name there, but historically the **index** page
 was the one that was shown when someone accessed the root directory.
 So we stick to that name.
 

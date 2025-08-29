@@ -71,7 +71,7 @@ for my $c (@cases) {
 ```
 
 The only part we changed here is the part inside the `BEGIN` block where we read in,
-and parse the content of the <b>sum.txt</b> file, and then create the `@cases` array
+and parse the content of the **sum.txt** file, and then create the `@cases` array
 in the same format as we used to have when we had the data in the script.
 
 

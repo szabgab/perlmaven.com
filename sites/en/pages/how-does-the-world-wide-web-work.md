@@ -43,23 +43,23 @@ That program can be written in many different programming languages and there ar
 
 ## 3 major ways to serve the dynamic page
 
-<b>CGI</b>: One of the most basic ways, and probably the oldest one, is called `CGI`. Upon receiving a request from the browser,
+**CGI**: One of the most basic ways, and probably the oldest one, is called `CGI`. Upon receiving a request from the browser,
 the web server will set certain environment variables, and run the requested program. That program will process
 the request and print the results to its standard output. The web server captures this output and sends it back to your
 browser which will try to display it for you. These programs are usually written in Perl or in some other dynamic language
-that the general public refers to as "scripting language". Hence these programs are usually called <b>CGI scripts</b>.
+that the general public refers to as "scripting language". Hence these programs are usually called **CGI scripts**.
 The advantage of CGI scripts is that they can be written in any language. Once the web server is configured you can even
 replace the scripts by others written in other languages. It is very simple to write CGI scripts. The disadvantage is
 that, for every request, the web server will have to spawn a new process, which can be time consuming. For simple web sites
 that get only a few 10s of requests an hour this is usually not an issue, but when the site gets busy this can have a bad impact
 on response time.
 
-<b>Embedded interpreter</b>: Another way is to embed the interpreter of the desired "scripting language" inside the web server. PHP usually works this way
+**Embedded interpreter**: Another way is to embed the interpreter of the desired "scripting language" inside the web server. PHP usually works this way
 and [mod_perl](https://perl.apache.org/) provides this functionality for Perl when using the Apache web server.
 This is much faster than CGI - for example mod_perl can be 200 times faster than CGI/Perl, but this ties the implementation
 language and the web server. This makes development and deployment a bit more rigid.
 
-<b>Application server</b>: The third way is using an "application server". In this case there is an additional server, often called an "application server"
+**Application server**: The third way is using an "application server". In this case there is an additional server, often called an "application server"
 running alongside the web server. Every time the web server receives a request for a dynamic page, it hands it over to the
 application server. The application server is language specific and it has all the application loaded in the memory and compiled once.
 Applications written in Java usually utilize an application server.

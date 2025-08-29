@@ -61,7 +61,7 @@ the end sets up a general rule for discarding white space. The interesting bit
 is in the middle where the syntax description lives.
 
 Ignoring the `action => ...` bits for the moment, the first `::=`
-line (<b>rule</b>) says that a `declaration` is 0 or more
+line (**rule**) says that a `declaration` is 0 or more
 `assignment`s. The second rule says that an `assignment` is a
 `name` followed by the '`=`' character followed by a
 `number`.

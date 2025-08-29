@@ -110,7 +110,7 @@ pointing us to the line where we call `sprintf`.
 
 It took me a while to understand two things:
 
-First of all, this was actually a <b>warning</b>, but because of the `FATAL => 'all'`, all the warnings were turned into fatal exceptions.
+First of all, this was actually a **warning**, but because of the `FATAL => 'all'`, all the warnings were turned into fatal exceptions.
 
 The actual problem was that the line that was too long actually had some parts that looked like sprintf place-holders. You know the `%s` things.
 As the `sprintf` statement had some embedded (interpolated) variables in it (specifically the `$line` variable), after the interpolation

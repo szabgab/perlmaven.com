@@ -43,7 +43,7 @@ But what happens if there are more than one regexes?
 
 {% youtube id="5NzC66Lv1gg" file="check-several-regexes-on-many-strings" %}
 
-What if we have 5-10 regexes and we would like to filter the rows that match <b>all of them</b>?
+What if we have 5-10 regexes and we would like to filter the rows that match **all of them**?
 
 First of all, we need to store these regexes somehow. Probably the best approach is to store them in an array
 as already compiled regex objects. That's what the `qr` operator will do for us.
@@ -76,11 +76,11 @@ Ipsum passages, and more recently with desktop publishing software
 like Aldus PageMaker including versions of Lorem Ipsum.
 ```
 
-We also use the `DATA` built-in file-handle which allows us to treat the <b>end of the script after the __DATA__ mark</b> as a file and read it line-by line.
+We also use the `DATA` built-in file-handle which allows us to treat the **end of the script after the __DATA__ mark** as a file and read it line-by line.
 There we put a few lines of text copied from [Lorep ipsum](http://www.lipsum.com/) web site. (In the coming examples, I'll skip the part after the __DATA__
 mark, but in order to run the script, please add it back.)
 
-The question remains, how can we indicate that <b>every</b> regex has matched?
+The question remains, how can we indicate that **every** regex has matched?
 
 ## Count the matching regexes
 
@@ -162,7 +162,7 @@ a a factor of two bigger than any speed improvement. On the other hand, if the d
 then we will probably see the speed improvement.)
 
 This second solution is then faster, but it has the same length of code. Besides, that `$failed` flag just feels a bit
-cumbersome. We could improve this script by using a <b>label</b> on the outer loop.
+cumbersome. We could improve this script by using a **label** on the outer loop.
 
 ## Short-circuit with label
 
@@ -243,6 +243,6 @@ __DATA__
 This solution is shorter, and for people who know how to read this kind of syntax it is also more readable.
 The only questions that remain are: How fast is it? Is all short-circuiting?
 
-The answer to the second question is yes, <b>all, is short-circuiting</b>, but if you want to answer the speed-question
+The answer to the second question is yes, **all, is short-circuiting**, but if you want to answer the speed-question
 you'll have to measure it yourself.
 

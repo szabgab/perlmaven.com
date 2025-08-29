@@ -14,7 +14,7 @@ author: szabgab
 
 When searching a Perl module, sooner or later you will end up on one of two sites sites providing information about CPAN modules.
 Both [Meta CPAN](https://metacpan.org/), and <a href="http://search.cpan.org/" rel="nofollow">search.cpan.org</a>
-will show you a link to <b>download</b> the module, but in most cases that's <b>not</b> what you need.
+will show you a link to **download** the module, but in most cases that's **not** what you need.
 
 So how do you really install Perl modules from CPAN?
 
@@ -27,10 +27,10 @@ In most cases the installation of a CPAN module works just as installing an app 
 Except, that these modules are all open source and free software.
 
 Depending on the Operating System and which Perl distribution you have, the specific instructions differ.
-In order to make the examples clearer, let's try to install the module called <b>Try::Tiny</b>.
+In order to make the examples clearer, let's try to install the module called **Try::Tiny**.
 
 It has its description both on [Meta CPAN](https://metacpan.org/release/Path-Tiny) and on
-<a href="http://search.cpan.org/dist/Path-Tiny/" rel="nofollow">search.cpan.org</a>. Both have the <b>Download</b> links
+<a href="http://search.cpan.org/dist/Path-Tiny/" rel="nofollow">search.cpan.org</a>. Both have the **Download** links
 that we won't click on.
 
 ## Cases
@@ -55,7 +55,7 @@ comes with an already configured cpan client. We will use this client to install
 Open the Command Window (Start -> Run -> type in cmd) When you get the "DOS" prompt
 type in `cpan Path::Tiny`.
 Please note, module names are case sensitive,
-so typing `cpan path::tiny` or `cpan PATH::TINY` will <b>not</b> work!
+so typing `cpan path::tiny` or `cpan PATH::TINY` will **not** work!
 
 Also, in normal circumstances, the cpan client is expecting the full name of the module, not one part of the name,
 and not the name of the zip-file.
@@ -97,7 +97,7 @@ TBD. [Cygwin](http://www.cygwin.com/).
 
 <h2 id="debian">Debian/Ubuntu Linux</h2>
 
-If you have <b>root</b> rights, and if you use the <b>system perl</b> located in `/usr/bin/perl`,
+If you have **root** rights, and if you use the **system perl** located in `/usr/bin/perl`,
 then probably the best is to try to install from the package management system of your Linux distribution.
 If you don't have root rights, you could ask your system administrator to do it on your behalf.
 
@@ -105,7 +105,7 @@ Apparently there is a nice way to [find out if a Perl module is on Debian or Ubu
 
 If the module you are looking for is not available in the repositories of your Debian/Ubuntu/etc. distribution
 (and there are only about 10% of the modules available), or if you don't use the system Perl,
-then you can follow the instructions with <b>cpan/cpanm</b> below.
+then you can follow the instructions with **cpan/cpanm** below.
 
 To install for the system-perl as root you can use either `aptitude` or `apt-get`
 depending on your personal preferences.
@@ -126,8 +126,8 @@ $ sudo aptitude install libpath-tiny-perl
 <h2 id="fedora">RedHat/Fedora/CentOS Linux</h2>
 
 Just as in the case of Debian/Ubuntu above, the instructions here are relevant if
-you use the <b>system perl</b> located in `/usr/bin/perl` and if you have
-<b>root</b> rights:
+you use the **system perl** located in `/usr/bin/perl` and if you have
+**root** rights:
 
 Using the package management system:
 
@@ -155,13 +155,13 @@ maintained by [Dave Cross](http://perlschool.co.uk/).
 
 <h2 id="osx">Mac OSX</h2>
 
-Follow the instructions with <b>cpan/cpanm</b> below.
+Follow the instructions with **cpan/cpanm** below.
 
 <h2 id="cpan-client">Using the cpan client</h2>
 
 While the `cpan` program comes with most operating system,
 and it works well after some configuration, there is probably a better,
-and certainly lighter solution called <b>cpan minus</b> or <b>cpanm</b>.
+and certainly lighter solution called **cpan minus** or **cpanm**.
 
 
 <h2 id="cpanm">Using cpanm</h2>

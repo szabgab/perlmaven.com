@@ -14,7 +14,7 @@ show_related: false
 can even locate code snippets that are sources of common errors. It has a base library that provides the engine and a large set of
 policies (things to be checked). In addition there are a number of distributions on CPAN that provide further policies.
 
-In this article we collect <b>all</b> the CPAN distributions related to Perl::Critic and all the policies available.
+In this article we collect **all** the CPAN distributions related to Perl::Critic and all the policies available.
 
 
 ## Articles

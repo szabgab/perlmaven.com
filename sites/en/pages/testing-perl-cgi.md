@@ -33,11 +33,11 @@ It does not do much, but it is enough to show how to test any CGI-script.
 
 {% include file="examples/cgi.t" %}
 
-There are two test-cases. One for a <b>GET</b> request and one for a <b>POST</b>.
+There are two test-cases. One for a **GET** request and one for a **POST**.
 
 ## GET
 
-For the <b>GET</b> request we need to put the parameters that you'd see in the URL into
+For the **GET** request we need to put the parameters that you'd see in the URL into
 the `QUERY_STRING` environment variable. In addition we need to set the `REQUEST_METHOD`
 to `GET`. Then we can run our CGI script. We use `./cgi.pl` instead of  `$^X cgi.pl`
 or even just `perl cgi.pl` as this will ensure we use the same perl for the execution of the

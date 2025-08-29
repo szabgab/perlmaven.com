@@ -16,7 +16,7 @@ archive: true
 Earlier we saw how to create a [modulino which is both a module and a script](/modulino-both-script-and-module).  In this example we'll see how to use this feature to create a file that can include its own unit-tests.
 
 
-We are going to create a module called <b>SelfTestingCalc.pm</b>  and a script called <b>use_self_testing_calc.pl</b>.
+We are going to create a module called **SelfTestingCalc.pm**  and a script called **use_self_testing_calc.pl**.
 The latter looks like any other Perl script. It loads a module importing a function and then calls that function.
 Nothing special:
 

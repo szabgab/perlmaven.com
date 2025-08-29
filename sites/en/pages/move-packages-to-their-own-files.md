@@ -43,7 +43,7 @@ lib/Pod/Tree.pm: "return" statement with explicit "undef" at line 25, column 19.
 
 ## Package declaration must match filename
 
-This is usually happens when we have  more than one `package` statements in a file. It works, but usually it is a lot more <b>readable</b>
+This is usually happens when we have  more than one `package` statements in a file. It works, but usually it is a lot more **readable**
 if every `package` is in its own file.
 
 I've moved the content of `package Pod::Tree::BitBucket;` to the `lib/Pod/Tree/BitBucket.pm` and

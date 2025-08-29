@@ -28,7 +28,7 @@ and certainly differ in their capabilities.
 
 There is, however, another aspect of difference: The level of integration of the regex language with the host language or host environment.
 
-When you program in some Unix <b>shell</b> and use sed, awk or grep to execute a
+When you program in some Unix **shell** and use sed, awk or grep to execute a
 regex, the regex is totally separated from the shell language. It is an external tool.
 
 In language such as Python, Ruby, PHP, Java or C#, regexes are another class. You have a constructor and methods and some other syntactic overhead.
@@ -48,8 +48,8 @@ if ($str =~ m/cat/) {
 ```
 
 On the left-hand side of the `=~` operator there is a string. On the right-hand side there is a regex. The regex is `cat` while the two
-slashes are the delimiters of the regex (just as single-quotes or double-quotes are delimiters of regular strings). The letter <b>m</b> in-front of the
-first slash indicates <b>Matching</b>. It can be actually omitted writing just `/cat/` though having it explicitly there might make things clearer.
+slashes are the delimiters of the regex (just as single-quotes or double-quotes are delimiters of regular strings). The letter **m** in-front of the
+first slash indicates **Matching**. It can be actually omitted writing just `/cat/` though having it explicitly there might make things clearer.
 
 The above regex checks if the string "cat" appears in the string `$str`. If it appears, then
 (in [scalar context](/scalar-and-list-context-in-perl) that was created by the if-statement),
@@ -129,7 +129,7 @@ One thing that people learning get nervous about is the compactness of regexes. 
 Please consider that a 20-character long regex can express something that you would need to implement in 50-100 lines of perl code without regexes.
 So when you feel it is hard to understand a 20-character regex, compare that to the time an energy needed to understand a 50-100 lines long perl snippet.
 
-The other is that if you follow the Perl Maven articles and do the exercises, <b>you will learn how to read and understand regexes</b> and you won't have
+The other is that if you follow the Perl Maven articles and do the exercises, **you will learn how to read and understand regexes** and you won't have
 a problem dealing with regexes any more.
 
 

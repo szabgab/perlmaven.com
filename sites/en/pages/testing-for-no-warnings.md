@@ -23,7 +23,7 @@ As described in [test for expected warnings](/test-for-expected-warnings) we can
 `warning_is` function provided by [Test::Warn](https://metacpan.org/pod/Test::Warn)
 to check if a piece of code, for a specific input, will emit the expected waring.
 
-In addition, once we made the rest of our code <b>warning-free</b>, we will want to make sure that no
+In addition, once we made the rest of our code **warning-free**, we will want to make sure that no
 warnings start to appear. It is especially important as [new warnings are added to Perl](/always-use-warnings)
 and thus when you upgrade the version of perl under an application it can start emitting these new warnings.
 
@@ -82,7 +82,7 @@ The tests still pass, but now we have a warning. That's not healthy. If users se
 is broken in your code (and they might be even right). If this goes into a log file it might suddenly start growing
 very fast filling your disk and causing all kinds of other problems.
 
-Even worse, if this is a <b>deprecation warning</b> that a certain feature is going to be removed from the next version of
+Even worse, if this is a **deprecation warning** that a certain feature is going to be removed from the next version of
 Perl then you definitely want to know about it and fix your code before the next upgrade.
 
 Unfortunately as the warning does not make the tests fail, we have a very good chance of not noticing it.

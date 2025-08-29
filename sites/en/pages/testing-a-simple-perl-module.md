@@ -20,7 +20,7 @@ In order to make it simple I use the good old math example.
 
 
 It is probably a good idea for any project to follow the
-<b>best practices</b> of the Perl community, and create the layout
+**best practices** of the Perl community, and create the layout
 of the project as most of the CPAN modules are structured.
 This means you will have all the files of the project,
 the modules, the tests and all other auxiliary files in a

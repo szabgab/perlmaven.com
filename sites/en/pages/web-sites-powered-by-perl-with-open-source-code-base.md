@@ -117,7 +117,7 @@ in [GitHub](https://github.com/ldidry/lutim).
 [Let's Shorten That Url](https://lstu.fr/) is a URL shortener written in [Mojolicious](/mojolicious). Its source code
 is in [GitHub](https://github.com/ldidry/lstu)
 
-[The blog of Jason McIntosh](http://blog.jmac.org/) called <b>Plerd</b> which is a super-minimal, static
+[The blog of Jason McIntosh](http://blog.jmac.org/) called **Plerd** which is a super-minimal, static
 blogging software working with Dropbox. It does not use any web framework, but it uses [Moose](/moose).
 Source code on [GitHub](https://github.com/jmacdotorg/plerd)
 

@@ -35,7 +35,7 @@ and arriving to this
 As I looked at the central authors page at [http://search.cpan.org/author/](http://search.cpan.org/author/) and clicked on the first letter
 it turned out to load the same URL, but with a the letter passed after the question mark:
 [http://search.cpan.org/author/?A](http://search.cpan.org/author/?A).
-This is the part that is usually called the <b>QUERY_STRING</b>
+This is the part that is usually called the **QUERY_STRING**
 
 That means these pages will be served by the same entry that serves the main authors page. After all, they have the same `path_info`.
 Earlier we had this code in the `run` method of
@@ -157,7 +157,7 @@ The last thing we need here is to add the appropriate code to the template in
   <tr class="<% IF loop.index % 2 %>s<% ELSE %>r<% END %>">
      <% FOR a IN row %>
         <td>
-          <a href="/~<% a.id %>/"><b><% a.id %></b></a><br/><small><% a.name %></small>
+          <a href="/~<% a.id %>/">**<% a.id %>**</a><br/><small><% a.name %></small>
         </td>
      <% END %>
   </tr>
@@ -174,7 +174,7 @@ is a hash reference representing an author with two fields: `a.id` and `a.name`.
 the link from that:
 
 ```
-     <a href="/~<% a.id %>/"><b><% a.id %></b></a><br/><small><% a.name %></small>
+     <a href="/~<% a.id %>/">**<% a.id %>**</a><br/><small><% a.name %></small>
 ```
 
 One more thing, you might have noticed. The lines displayed by search.cpan.org have alternating color.

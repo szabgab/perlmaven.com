@@ -19,7 +19,7 @@ author: szabgab
 
 TL;DR
 
-There is <b>no case/switch statement on Perl</b>. Use if/elsif/elsif/...
+There is **no case/switch statement on Perl**. Use if/elsif/elsif/...
 
 One of the complaints about Perl was always that it lacks a real
 case or switch statement. While you could always fake one, people
@@ -32,12 +32,12 @@ and started to emit warnings.
 The article below was added mostly to replace an older version of
 the same article and to include the recommendation:
 
-<b>Please, don't use the `given` statement until the experimental
-flag is removed.</b>
+**Please, don't use the `given` statement until the experimental
+flag is removed.**
 
 
 So in accordance with the Perl 6 design perl will NOT have a case
-or switch. It will have a <b>given</b> keyword. It will also behave
+or switch. It will have a **given** keyword. It will also behave
 differently than the usual case. It will do The Right Thing (tm).
 
 The syntax is quite simple:
@@ -88,9 +88,9 @@ I have already written about it earlier in
 [Smart Matching in Perl 5.10](/smart-matching-in-perl-5.10).
 So you can use any kind of value in the when() statement.
 A number will check numeric equality using ==, a string will use
-eq, a regex will try to match the <b>given value</b> and if you
+eq, a regex will try to match the **given value** and if you
 supply a subroutine reference then Perl will call that subroutine
-using the <b>given value</b> as a parameter and check the true-ness
+using the **given value** as a parameter and check the true-ness
 of the return value.
 
 See this example:
@@ -123,7 +123,7 @@ sub is_number {
 
 There are few more minor issues:
 
-Perl will automatically <b>break</b> out from the `given()`
+Perl will automatically **break** out from the `given()`
 statement after the execution of block. If you would like to
 force checking the additional `when()` statements use the
 `continue` keyword.

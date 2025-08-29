@@ -77,7 +77,7 @@ sub last_update {
 The `like` function provided by [Test::More](http://metacpan.org/pod/Test::More),
 accepts 3 parameters. The actual returned value. A regular expression created using `qr`,
 and the optional name of the test. It will apply regex matching between the first two parameters.
-It will print <b>ok</b> if there is a match and <b>not ok</b> with some details when there is no match.
+It will print **ok** if there is a match and **not ok** with some details when there is no match.
 So we can rewrite the above test case as follows:
 
 ```perl

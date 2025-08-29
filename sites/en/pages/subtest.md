@@ -36,11 +36,11 @@ If for some reason we don't clean up the environment then the following test-cas
 earlier test-cases. In some cases this is really bad and can either hide an error or fail unnecessarily.
 In either case it is not really good.
 
-Using <b>subtests</b> is an easy way to improve the situation regarding all of the above.
+Using **subtests** is an easy way to improve the situation regarding all of the above.
 
 ## subtest
 
-A <b>subtest</b> looks like this:
+A **subtest** looks like this:
 
 ```perl
 subtest negatives => sub {
@@ -51,14 +51,14 @@ subtest negatives => sub {
 };
 ```
 
-<b>subtest</b> is basically a function that gets two parameters. A test name ('negatives' in the above case),
+**subtest** is basically a function that gets two parameters. A test name ('negatives' in the above case),
 and an anonymous function (a reference to a subroutine). As we use the fat-comma between the two parameters,
 the name of the subtest, if it is a simple string, can be a [bareword](/barewords-in-perl).
 Don't forget that this is a statement that happens to end with curly braces, so you have to add a semi-colon `;`
 at the end.
 
 Inside the subtest, you can do anything you would do in the main body of the test. In particular each subtest will count as one test
-in the script regardless of the number of tests inside, and each subtest has its own internal test counting with its own internal <b>plan</b>.
+in the script regardless of the number of tests inside, and each subtest has its own internal test counting with its own internal **plan**.
 So in order to keep the test-count up-to-date for the whole test, you only need to  count the number of subtests.
 To keep the test count of each subtest correct, you only need to count the tests inside the subtest which will be much easier than for
 the whole script. It is likely that each subtest will fit in a single screen.

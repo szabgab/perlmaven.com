@@ -178,7 +178,7 @@ $VAR1 = [
 
 The combination of the `first`  and the `pairgrep` functions.
 Goes over the given list pair-wise, assigning the odd values to `$a` and the even values to `$b`.
-Then the block is executed an the <b>first</b> value-pair that generates a true value will pass the filter.
+Then the block is executed an the **first** value-pair that generates a true value will pass the filter.
 
 For example this code:
 

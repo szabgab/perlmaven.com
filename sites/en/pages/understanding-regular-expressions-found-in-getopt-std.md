@@ -75,8 +75,8 @@ maybe that's just my conservative view.
 
 The second regex is a bit more complex. It has two groups. The first one `([^\s:])`
 captures a (single) character that is NOT white-space and NOT colon. (so it can be a letter
-or another special character). The second group `(?!\s*:)` is a <b>zero-width negative
-look-ahead assertion</b>. Disregard the `?!` and you will see it 
+or another special character). The second group `(?!\s*:)` is a **zero-width negative
+look-ahead assertion**. Disregard the `?!` and you will see it 
 tries to match 0 or more white spaces followed by a colon.
 The leading `?!` means that this is a zero-width negative look-ahead, which means there is either no colon after the
 first group matched or if there is a colon it is separated by at least one non-space character from 

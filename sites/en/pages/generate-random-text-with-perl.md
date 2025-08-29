@@ -9,7 +9,7 @@ archive: true
 ---
 
 
-Sepecially for testing purposes this is an easy way to generate random text. You can say how many <b>words</b>
+Sepecially for testing purposes this is an easy way to generate random text. You can say how many **words**
 you would like to have and the `words` method of [Text::Lorem](https://metacpan.org/pod/Text::Lorem)
 will return a string with that many words.
 

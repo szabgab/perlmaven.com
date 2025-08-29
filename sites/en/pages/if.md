@@ -36,7 +36,7 @@ For example
 
 {% include file="examples/input_and_condition.pl" %}
 
-Both the parentheses around the <b>condition</b> and the curly braces `{}` are required.
+Both the parentheses around the **condition** and the curly braces `{}` are required.
 (A special note for people with background in the C programming language:
 Even if there is only one statement, that statement needs to be wrapped in a pair of curly braces.)
 
@@ -50,7 +50,7 @@ it will be skipped. (For what constitutes true and false, check the article abou
 As in Perl white-spaces are not significant we could have laid-out the code in a number of different ways, 
 without any impact on what the code does, but let me point out the way you see it here and why
 it is the recommended layout. The important part is that the code inside the curly braces does not start
-at the beginning of the line. It starts a few characters to the right. This is called <b>indentation</b>.
+at the beginning of the line. It starts a few characters to the right. This is called **indentation**.
 In the tutorial we will see a number of statements that have an internal block (a pair of curly braces),
 and in each one of those we'll indent the code to the right. This indentation makes it easier for the
 reader to see which parts of the code is inside the block and what is outside.

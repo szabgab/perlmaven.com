@@ -30,7 +30,7 @@ Moose allows you to create your own types in a very easy way.
 
 Let's say you'd like to create a type 'sex' attribute that should be either male or female.
 The setter is supposed to accept the letter m (for male) and a letter f (for female).
-This is the way we could use it: (<b>script/person.pl</b>)
+This is the way we could use it: (**script/person.pl**)
 
 ```perl
 use strict;
@@ -48,7 +48,7 @@ say $student->sex;
 $student->sex('male');
 ```
 
-We call the constructor giving the person a name and then using the `sex` method with the <b>'m'</b> value.
+We call the constructor giving the person a name and then using the `sex` method with the **'m'** value.
 Then if we call the getter of the same method, it will return 'm' and that will be printed by `say`.
 
 If we call the setter with some other string, for example 'male' as in the example, because we thought that should

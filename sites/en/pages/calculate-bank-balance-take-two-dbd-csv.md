@@ -31,7 +31,7 @@ in my mind is always the same thing: DBD::CSV.  The reason for this is two-fold.
 First, when accessing CSV files through DBD::CSV, you're learning and/or using
 two skills that are portable to far more projects than na&iuml;ve splits or
 even using [Text::CSV_XS](https://metacpan.org/pod/Text::CSV_XS):
-<b>DBI</b> and <b>SQL</b>. This means that your skill set will grow in ways that are more
+**DBI** and **SQL**. This means that your skill set will grow in ways that are more
 useful to your career, but, more immediately, you will also have a larger
 set of people to whom you can ask for help.  For example, nearly any Database
 Administrator (DBA) should be able to help you with SQL questions, but may
@@ -182,12 +182,12 @@ hard-coded, so it doesn't actually gain us anything other than exposure and
 experience.
 
 The SQL itself is a bit more involved.  We are telling the SQL engine
-that we want to get the account number (<b>AcNo</b>) and the total of
-the <b>Amount</b>s from the <b>banktran</b> table (which the f_ext above will tell
-DBD::CSV to map to banktran.csv), but when Type is Dr, we want to count <b>Amount</b>
+that we want to get the account number (**AcNo**) and the total of
+the **Amount**s from the **banktran** table (which the f_ext above will tell
+DBD::CSV to map to banktran.csv), but when Type is Dr, we want to count **Amount**
 as a positive, otherwise we count it as a negative.  At this point, I'm not sure
 if the zero is required here or not, but first let's get something working,
-and then we can tweak it.  The <b>GROUP BY</b> tells the SQL engine that
+and then we can tweak it.  The **GROUP BY** tells the SQL engine that
 we want to do this select where the sum is applied per AcNo - different AcNo's
 will have independent sums.
 
@@ -232,7 +232,7 @@ DBD::CSV::db prepare failed: Bad table or column name: '='
                AcNo"] at banktran.pl line 32.
 ```
 
-Whoops.  It looks like SQL::Statement doesn't support the <b>CASE</b> syntax
+Whoops.  It looks like SQL::Statement doesn't support the **CASE** syntax
 that other databases do.  Well, this will mean we have to do a bit more work
 in perl to compensate.  And should we want to move to another database in
 the future, we may want to mark this so that we can come back to it.  The
@@ -247,8 +247,8 @@ project will, of course, depend on what constraints you have.
 ## Retrying with simpler SQL
 
 To simplify the SQL such that SQL::Statement will accept it, I've opted
-to <b>GROUP BY</b> both the <b>AcNo</b> and the <b>Type</b>.  This will
-allow me to total the <b>Amount</b> field for both debits and credits, per account,
+to **GROUP BY** both the **AcNo** and the <b>Type</b>.  This will
+allow me to total the **Amount** field for both debits and credits, per account,
 and have only a single subtraction to do later.
 
 ```perl

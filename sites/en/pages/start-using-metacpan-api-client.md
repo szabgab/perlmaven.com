@@ -36,7 +36,7 @@ Then we play around a bit with the documentation and get this script:
 
 {% include file="examples/meta.pl" %}
 
-We found the <b>recent</b> method of [MetaCPAN::Client](https://metacpan.org/pod/MetaCPAN::Client) to return
+We found the **recent** method of [MetaCPAN::Client](https://metacpan.org/pod/MetaCPAN::Client) to return
 an instance of [MetaCPAN::Client::ResultSet](https://metacpan.org/pod/MetaCPAN::Client::ResultSet) holding a list
 of [MetaCPAN::Client::Release](https://metacpan.org/pod/MetaCPAN::Client::Release) objects.
 

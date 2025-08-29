@@ -26,15 +26,15 @@ the Credit Card information for when they need to charge you money.
 
 Once you have done that you need to visit the [Apps & API](https://cloud.digitalocean.com/settings/applications).
 Because the CPAN module currently (version 0.09) only supports the old API of DigitalOcean you will need to follow the link
-that leads to [API v1.0 Page](https://cloud.digitalocean.com/api_access). There you'll see a <b>Client ID</b>
-and a big blue button <b>Generate new key</b>.  You need to click on that button. Then you'll have both a <b>Client ID</b>
-and an <b>API Key</b>.
+that leads to [API v1.0 Page](https://cloud.digitalocean.com/api_access). There you'll see a **Client ID**
+and a big blue button **Generate new key**.  You need to click on that button. Then you'll have both a **Client ID**
+and an **API Key**.
 
 ## Configuration
 
 In order to avoid having this private information in the source code, I prefer to have a configuration file which won't
-be in a version control system seen by many other people. So I created a file called <b>.digitalocean</b> in my home directory.
-On Windows, I'd probably create a file called <b>digitalocean.ini</b>.
+be in a version control system seen by many other people. So I created a file called **.digitalocean** in my home directory.
+On Windows, I'd probably create a file called **digitalocean.ini**.
 
 The configuration file does not need to be complex. Mine looks like this:
 
@@ -141,7 +141,7 @@ my $new_droplet = $do->create_droplet(
 );
 ```
 
-The question, what values can be passed to <b>size_id</b>, <b>image_id</b>, and <b>region_id</b>?
+The question, what values can be passed to **size_id**, **image_id**, and <b>region_id</b>?
 
 
 ## Droplet sizes
@@ -229,7 +229,7 @@ Ubuntu     5977624  Drupal 7.31 on Ubuntu 14.04                        -
 ```
 
 These are the currently available Operating System images that we can use to create our Droplets.
-As we can see <b>5141286</b> is the ID of the <b>Ubuntu 14.04 x64</b> image.
+As we can see **5141286** is the ID of the **Ubuntu 14.04 x64** image.
 
 ## Regions
 
@@ -293,7 +293,7 @@ and simpler.
 If I understood it correctly the API allow us to upload the SSH key, but I don't think I need to automate
 that. After all, I only need to upload my key once. So I visited the
 [SSH Keys](https://cloud.digitalocean.com/ssh_keys) menu option, clicked on the big blue button that say
-<b>Add SSH Key</b> entered a name (just for identification in case there are several SSH keys) and copied the
+**Add SSH Key** entered a name (just for identification in case there are several SSH keys) and copied the
 content of `~/.ssh/id_rsa.pub` from my own machine.
 
 Then I had to write some code to get the DigitalOcean ID of this SSH key.
@@ -361,7 +361,7 @@ say $server->ip_address;
 
 The `droplet` method receives the ID of a droplet and returns a 
 [DigitalOcean::Droplet](https://metacpan.org/pod/DigitalOcean::Droplet) object
-that already contains the <b>ip_address</b>
+that already contains the **ip_address**
 
 
 ## SSH to the new Droplet

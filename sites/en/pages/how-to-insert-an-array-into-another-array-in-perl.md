@@ -18,8 +18,8 @@ Of course I think the "middle" only means - "somewhere" and not that "the same d
 but we have another issue with the task.
 
 
-There can be two types of insertions. <b>Flattening</b>, when the elements of `@language` become elements of `@names`, and thus
-at the end of the operation `@names` will have 7 elements; or it can be <b>non-flattening</b>, that will create a sort-of
+There can be two types of insertions. **Flattening**, when the elements of `@language` become elements of `@names`, and thus
+at the end of the operation `@names` will have 7 elements; or it can be **non-flattening**, that will create a sort-of
 two-dimensional array. In this case `@names` will have 4 elements after the operation, one of them is a reference
 to an internal array that holds the elements of `@languages`.
 

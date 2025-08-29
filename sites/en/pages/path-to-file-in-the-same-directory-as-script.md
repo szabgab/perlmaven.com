@@ -76,12 +76,12 @@ href="https://metacpan.org/pod/perlfunc#require ">require</a>d on the
 subsequent line. Of course, there are many ways the substitution
 `s'[^/]+\.t'coretests.pm'` can fail to work as intended, but the
 most straightforward cause of failure would be due to code being run on a
-system that does not use <b>/</b> as a directory separator in file names.
+system that does not use **/** as a directory separator in file names.
 
 It is true that internal Windows APIs do not mind if you give them Unix
 style paths. But, programs invoked via the shell do not offer that luxury.
 Instead, most Windows console programs, following the DOS tradition, use the
-<b>/</b> character for command line options.
+**/** character for command line options.
 
 When this test script is invoked as ```t\00impl-pp.t</code>, the
 substitution ends up replacing the entire path in `$coretests` with
@@ -91,8 +91,8 @@ substitution ends up replacing the entire path in `$coretests` with
 Similarly, the code in [example&nbsp;B](#exampleB) simply tries
 to capture the path to the directory containing the current executable. Once
 again, this fails on Windows because the path in `$0` is unlikely
-to contain a <b>/</b> in the right spot. In fact, much hilarity can
-ensue if the path contains a mixture of <b>\</b> and <b>/</b> as
+to contain a **/** in the right spot. In fact, much hilarity can
+ensue if the path contains a mixture of **\** and **/** as
 directory separators.
 
 ## Solutions

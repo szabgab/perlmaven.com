@@ -11,7 +11,7 @@ archive: true
 ---
 
 
-Earlier I've posted a problem asking <b>Why does this code not work</b>
+Earlier I've posted a problem asking **Why does this code not work**
 using [split and array slices](/why-does-this-code-not-work).
 
 Read that and try to solve it yourself before reading this.

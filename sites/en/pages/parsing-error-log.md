@@ -195,7 +195,7 @@ NAMED ITEM DOESN'T EXIST
 NAMED ITEM DOESN'T EXIST
 ```
 
-In order to make it easier to write about this, I'll call a set of lines a <b>block</b> if they start with the
+In order to make it easier to write about this, I'll call a set of lines a **block** if they start with the
 expression "SOURCE LINE" and finish when the next block starts. Actually, a block can also end by the
 header of a new entity or by the end of the file. So we'll need to handle these special cases.
 
@@ -238,8 +238,8 @@ my $filename = shift or die "Usage: $0 error.log\n";
 ```
 
 Then we open the file and use a while-loop to read it line-by-line and
-remove the trailing newlines using <b>chomp</b>.
-For now we just print out the current line using the <b>say</b> function.
+remove the trailing newlines using **chomp**.
+For now we just print out the current line using the **say** function.
 
 We wrap the whole thing in a subroutine called process, to make the
 code more reusable.
@@ -284,7 +284,7 @@ sub process {
 ## Parsing and recognizing lines
 
 Now we need to focus on recognizing the different special lines.
-For this we'll use <b>regular expressions</b>.
+For this we'll use **regular expressions**.
 
 <h3>Entity headers</h3>
 
@@ -300,11 +300,11 @@ Let's replace the `say $line;` with the following code.
     }
 ```
 
-Here we added the <b>x</b> character at the end of the <b>regex</b> so we can use
+Here we added the **x** character at the end of the **regex** so we can use
 the extended syntax. This means we can have spaces in the regex to improve readability.
 
-The part between the two slashes <b>/</b> is the regex. The caret <b>^</b>
-at the beginning, and the dollar sign <b>$</b> at the end ensure that we describe the whole string.
+The part between the two slashes **/** is the regex. The caret **^**
+at the beginning, and the dollar sign **$** at the end ensure that we describe the whole string.
 
 `=+` matches one or more equal signs.
 

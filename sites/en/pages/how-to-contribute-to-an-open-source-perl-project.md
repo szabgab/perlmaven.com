@@ -13,7 +13,7 @@ archive: true
 
 
 In the article on [how to prepare for a Perl job interview](/how-to-prepare-for-a-perl-job-interview),
-I mentioned, one of the best ways to improve your <b>hire-ability</b> is to constantly learn new things, and constantly improve yourself.
+I mentioned, one of the best ways to improve your **hire-ability** is to constantly learn new things, and constantly improve yourself.
 
 There is a generic article on [how to contribute to an Open Source project](https://code-maven.com/how-to-contribute-to-an-open-source-project).
 

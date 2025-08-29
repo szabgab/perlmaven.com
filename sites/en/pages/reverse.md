@@ -161,6 +161,6 @@ reversed version of a word has a different, but valid meaning.
 
 ## Conclusion
 
-Remember, the behavior of `reverse` depends on its <b>context</b>.
+Remember, the behavior of `reverse` depends on its **context**.
 On what is on its left-hand side.
 

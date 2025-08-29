@@ -10,7 +10,7 @@ archive: false
 All the Perl Maven Pro content is available free of charge now.
 
 <!--
-The <b>Perl Maven Pro</b> is a paid service where subscribers get 5-6 new articles and screencast every month.
+The **Perl Maven Pro** is a paid service where subscribers get 5-6 new articles and screencast every month.
 See the previous articles [in the archive](/archive?tag=pro) and on the following pages:
 -->
 

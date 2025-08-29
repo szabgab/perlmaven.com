@@ -11,7 +11,7 @@ show_related: true
 ---
 
 
-In Perl <b>warn</b> and <b>die</b> tell us where a problem was noticed. <b>carp</b> and <b>croak</b> tell us where they were created.
+In Perl **warn** and **die** tell us where a problem was noticed. <b>carp</b> and <b>croak</b> tell us where they were created.
 
 [Carp::Always](https://metacpan.org/pod/Carp::Always) can help bridge the gap.
 

@@ -15,7 +15,7 @@ what language that thing was written in?
 
 You came to the right place.
 
-The <b>Test Automation using Perl</b> e-book will teach you from the ground up how to write automated tests in Perl.
+The **Test Automation using Perl** e-book will teach you from the ground up how to write automated tests in Perl.
 
 ## Table of Contents
 

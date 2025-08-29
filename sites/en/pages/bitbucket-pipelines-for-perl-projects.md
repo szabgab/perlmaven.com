@@ -22,10 +22,10 @@ Bitbucket Pipelines (the CI system) for Perl projects
 You could visit the Pipelines entry on the web page and select a language, but I have not
 seen Perl mentioned there so let's do it our way.
 
-All you need to do is create a file called <b>bitbucket-pipelines.yml</b> with the proper content
+All you need to do is create a file called **bitbucket-pipelines.yml** with the proper content
 and add it to the root of your repository and push it out to Bitbucket.
 
-Sample content for the <b>bitbucket-pipelines.yml</b> file.
+Sample content for the **bitbucket-pipelines.yml** file.
 
 ```
 image: perl:5.26
@@ -76,7 +76,7 @@ use warnings;
 exit(1);
 ```
 
-and also changed the <b>bitbucket-pipelines.yml</b> file to execute the `try.pl` instead
+and also changed the **bitbucket-pipelines.yml** file to execute the `try.pl` instead
 of just showing the version number of Perl.
 
 ```

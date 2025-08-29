@@ -21,13 +21,13 @@ Let's try to clear that confusion.
 
 Quick explanation:
 
-* <b>release</b> usually refers to a zipped file (tar.gz or zip) file uploaded to CPAN (via PAUSE) for example: Some-Thing-1.01.ta.gz
-* <b>distribution</b> sometimes refers to the same thing as a <b>release</b>, in other cases it can refer to all the Some-Thing releases, regardless of their version number.
-* <b>namespace</b> is a container of identifiers (variables, functions). A namespace would be Some::Thing.
-* <b>symbol-table</b> is the place where the identifier of a namespace are stored. Basically we can think of a <b>symbol-table</b> as being equivalent to <b>namespace</b>.
-* <b>package</b> is a keyword of Perl that switches to a new namespace. Sometimes people refer to a particular <b>release</b> or a <b>distribution</b> as being a <b>package</b>,
-       but that only happens because when we zip up several files of a <b>release</b> we often think about the English word <b>package</b>.
-* <b>module</b> is the name of a package (namespace) that is kept in a file derived from its name. (a package/namespace called Some::Thing kept in a file called Some/Thing.pm is called a module.
+* **release** usually refers to a zipped file (tar.gz or zip) file uploaded to CPAN (via PAUSE) for example: Some-Thing-1.01.ta.gz
+* **distribution** sometimes refers to the same thing as a **release**, in other cases it can refer to all the Some-Thing releases, regardless of their version number.
+* **namespace** is a container of identifiers (variables, functions). A namespace would be Some::Thing.
+* **symbol-table** is the place where the identifier of a namespace are stored. Basically we can think of a **symbol-table** as being equivalent to <b>namespace</b>.
+* **package** is a keyword of Perl that switches to a new namespace. Sometimes people refer to a particular **release** or a <b>distribution</b> as being a <b>package</b>,
+       but that only happens because when we zip up several files of a **release** we often think about the English word **package**.
+* **module** is the name of a package (namespace) that is kept in a file derived from its name. (a package/namespace called Some::Thing kept in a file called Some/Thing.pm is called a module.
       Unfortunately when we say "module" we often refer to a whole distribution.
 
 ## Details
@@ -141,9 +141,9 @@ Multiple "package" declarations at line 19, column 1.  Limit to one per file.  (
 
 Read more on how to check for [one policy violation at a time](/perl-critic-one-policy).
 
-We could move the code of the <b>Foo</b> namespace to a file called foo.pl and load it using `require`, but it is very old-school
+We could move the code of the **Foo** namespace to a file called foo.pl and load it using `require`, but it is very old-school
 and we will have to give the path to the file.
-It is much better to put the code of the <b>Foo</b> namespace into a file called `Foo.pm`.
+It is much better to put the code of the **Foo** namespace into a file called `Foo.pm`.
 
 The main script then will look like this:
 

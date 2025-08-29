@@ -63,7 +63,7 @@ One of the solutions to the problem of collision is to use prefixes. Prefix ever
 variable name in the library with some specific word unique to that library. For example a library
 with functions related to math could be prefixed with `_math_` or `calc_` as in the example.
 
-<b>calc_perfix_lib.pl</b>:
+**calc_perfix_lib.pl**:
 
 ```perl
 $calc_base = 10;

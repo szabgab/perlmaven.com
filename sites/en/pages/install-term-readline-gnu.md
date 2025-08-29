@@ -34,7 +34,7 @@ sudo apt-get install libterm-readline-gnu-perl
 
 ## Ubuntu other Perl
 
-Check if the <b>$TERM</b> environment variable is set. If not set it:
+Check if the **$TERM** environment variable is set. If not set it:
 
 ```
 export TERM=xterm-256color

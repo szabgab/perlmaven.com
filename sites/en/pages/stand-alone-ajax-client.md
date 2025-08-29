@@ -73,7 +73,7 @@ XMLHttpRequest cannot load http://127.0.0.1:5000/api/v1/greeting. No 'Access-Con
 
 In a nutshell, for security reasons browsers will only allow to handle Ajax request to the same server where your script comes from, unless the server where you want
 to send the request to explicitly allows you by setting the Access-Control-Allow-Origin header and either declaring your site as one that can have the extra rights
-or they allow <b>every</b> site to have these right.
+or they allow **every** site to have these right.
 If your plan was to offer a public API to your system, then allowing this seems totally reasonable. After all, once could set up a site that would proxy these requests
 to your site. The only difference would be that it is slower.
 

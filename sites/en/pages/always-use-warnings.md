@@ -69,7 +69,7 @@ Use of uninitialized value $code_from_db in string eq at access_control.pl line 
 Accessing account information...
 ```
 
-If we make our warnings into <b>fatal errors</b> by adding the following line
+If we make our warnings into **fatal errors** by adding the following line
 
 ```perl
 use warnings FATAL => 'all';
@@ -319,10 +319,10 @@ and the result is
 
 ## War stories by Breno G. de Oliveira
 
-Let me quote the story <b>Garu</b> has written in response to my inquiry about the usefulness of `use warnings`.
+Let me quote the story **Garu** has written in response to my inquiry about the usefulness of `use warnings`.
 
 <quote>
-This client <b>had</b> warnings enabled but simply ignored them, because "it was working".
+This client **had** warnings enabled but simply ignored them, because "it was working".
 It was a high traffic site and the log issued pages and pages of warnings per second - completely useless.
 So I took it as a mission to clear out all warnings.
 We uncovered TONS of small bugs like undefined variables being interpolated into strings (that were shown to the customers), and even code that wasn't doing anything at all (void context).
@@ -351,7 +351,7 @@ Mithaldu suggests the use of [strictures](https://metacpan.org/pod/strictures), 
 
 ## Conclusion
 
-I'd recommend to <b>always</b> `use warnings` in your perl code.
+I'd recommend to **always** `use warnings` in your perl code.
 
 Possibly even `use warnings FATAL => 'all';` though this might be better
 fit during development and testing.

@@ -44,7 +44,7 @@ Alternatively, the user can specify which functions to import by listing them af
 `use Module::Name qw(this that);` and then exactly those functions will be imported. Each one of
 the requested function names can come from either the `@EXPORT` array or the `@EXPORT_OK` array.
 
-So given the B::Calc module in the <b>B/Calc.pm</b> file:
+So given the B::Calc module in the **B/Calc.pm** file:
 
 ```perl
 package B::Calc;

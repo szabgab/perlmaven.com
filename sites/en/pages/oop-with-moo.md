@@ -34,7 +34,7 @@ use 5.010;
 use Person;
 ```
 
-The other one is the actual `Person` module in the <b>Person.pm</b> file
+The other one is the actual `Person` module in the **Person.pm** file
 that has at the beginning the namespace declaration `package Person;` and the
 true value `1;` at the end.
 
@@ -88,10 +88,10 @@ has name => (is => 'ro');
 ```
 
 we can go back to our script and in the constructor we can pass the
-<b>name</b> attribute and a value 'Foo'. 
+**name** attribute and a value 'Foo'. 
 `my $student = Person->new(name => 'Foo');`
 Not only that, but we can also use the name accessor to fetch this value
-and print it out using <b>say</b>: `say $student->name;`.
+and print it out using **say**: `say $student->name;`.
 
 ```perl
 #!/usr/bin/perl
@@ -105,11 +105,11 @@ say $student->name;
 ```
 
 That's it. Now we can go to the command line and run the school script
-`perl school.pl` and it will print out <b>Foo</b>, the name of the
+`perl school.pl` and it will print out **Foo**, the name of the
 person.
 
 What happens if we want to change the name? We try to set the value of
-<b>name</b> to 'Bar': `$student->name('Bar');` and then, just so
+**name** to 'Bar': `$student->name('Bar');` and then, just so
 we will see it, we will print it out again: `say $student->name;`.
 
 ```perl
@@ -125,7 +125,7 @@ $student->name('Bar');
 say $student->name;
 ```
 
-Now if we run the code `perl school.pl` it will print out <b>Foo</b>,
+Now if we run the code `perl school.pl` it will print out **Foo**,
 but then it will throw an exception.
 
 ```
@@ -134,7 +134,7 @@ Usage: Person::name(self) at school.pl line 9.
 ```
 
 Moo threw an exception and it told us that this method only accepts one value
-which is the <b>self</b>. We don't want to go into the details, but basically
+which is the **self**. We don't want to go into the details, but basically
 when you call a method such as the `$student->name('Bar');` method on an object,
 Perl automatically passes the object as the first parameter. So in this call we had
 two parameters: the object itself and the 'Bar' value. That's where the error message

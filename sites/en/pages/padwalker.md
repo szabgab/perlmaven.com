@@ -27,7 +27,7 @@ Open the Command Window (Start -> Run -> type in cmd) When you get the "DOS" pro
 type in `cpan PadWalker`.
 Please note, module names are case sensitive,
 so typing `cpan padwalker` or `cpan Padwalker`
-will <b>not</b> work!
+will **not** work!
 
 ```
 c:> cpan PadWalker
@@ -47,7 +47,7 @@ c:> ppm install PadWalker
 
 ## Debian/Ubuntu Linux
 
-If you have <b>root</b> rights then probably the best is to install
+If you have **root** rights then probably the best is to install
 from the package management system of your Linux distribution.
 
 You can use either `aptitude` or `apt-get`
@@ -61,7 +61,7 @@ $ sudo apt-get install libpadwalker-perl
 $ sudo aptitude install libpadwalker-perl
 ```
 
-Alternatively, you can follow the instructions with <b>cpanm</b> below.
+Alternatively, you can follow the instructions with **cpanm** below.
 
 ## RedHat/CentOS Linux
 
@@ -71,12 +71,12 @@ Using the package management system:
 $ sudo yum install PadWalker
 ```
 
-Alternatively, you can follow the instructions with <b>cpanm</b> below.
+Alternatively, you can follow the instructions with **cpanm** below.
 
 
 ## Mac OSX
 
-Follow the instructions with <b>cpanm</b> below.
+Follow the instructions with **cpanm** below.
 
 
 ## Using cpanm

@@ -29,7 +29,7 @@ After sum(-1, 1, 7) resulting in: (7)
 
 The Wrap function is marked to be a attribute handler for subroutines (CODE).
 
-Inside we create a new anonymous subroutine and assign it to the variable <b>$new</b> and the replace (redefine)
+Inside we create a new anonymous subroutine and assign it to the variable **$new** and the replace (redefine)
 the original function with this new function.
 
 Inside the new function we call the original function by
@@ -42,7 +42,7 @@ Before that we execute some code then after the original function returned we ex
 
 Then there is a totally ordinary function called "sub" that is marked with our new "Wrap".
 
-Now every time we call <b>sum()</b> our "$new" function is going to be called.
+Now every time we call **sum()** our "$new" function is going to be called.
 
 ## Separating Attribute to module
 
@@ -50,7 +50,7 @@ Probably you'd like to make your wrapper more reusable and move it out to a modu
 
 {% include file="examples/attributes/MyWrapper.pm" %}
 
-Then, as far as I could figure out you need to "inherit" from that module using <b>base</b>:
+Then, as far as I could figure out you need to "inherit" from that module using **base**:
 
 {% include file="examples/attributes/wrap_function_from_module.pl" %}
 

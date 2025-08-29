@@ -70,7 +70,7 @@ In recent version of Perl there are some experimental changes that will probably
 
 As you might [remember](/regex-character-classes) putting a caret as the first character
 in a character-class means that the character-class is negated. It will match any single
-character <b>except</b> the ones listed. So  `[^\d]` would mean any non-digit character.
+character **except** the ones listed. So  `[^\d]` would mean any non-digit character.
 
 To make it easier to write this, perl provides the `\D` character-class which means exactly the same.
 

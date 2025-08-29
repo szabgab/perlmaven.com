@@ -44,7 +44,7 @@ The author of the module can later enable it to see if the isses were fixed alre
 ## Speed
 
 It took 9-10 minutes to run the job on OSX.  (5 min on Ubuntu Linux) The main time consuming part is the installation of the test prerequisites.
-I added the <b>--notest</b> flag to the <b>cpanm</b> commands that reduced the run-time to 2 minutes.
+I added the **--notest** flag to the **cpanm** commands that reduced the run-time to 2 minutes.
 
 ## Full configuration file
 

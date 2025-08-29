@@ -33,8 +33,8 @@ One of them is by using [Module::Install](https://metacpan.org/pod/Module::Insta
 
 The developers of the module will have Module::Install on their system, and when they release the module to CPAN,
 part of the installer is automatically included in the zip file uploaded to CPAN. The part that is included in the
-<b>inc/</b> subdirectory is called `inc::Module::Install`. It might be a bit strange if this is the first time
-you encounter it, but it works because `.`, the <b>current working directory</b> is part of `@INC`.
+**inc/** subdirectory is called `inc::Module::Install`. It might be a bit strange if this is the first time
+you encounter it, but it works because `.`, the **current working directory** is part of `@INC`.
 
 So when the `Makefile.PL` reached the `use inc::Module::Install;` statement, it will find the file in
 `inc/Module/Install.pm`. That is, in the packaged distribution of the module.

@@ -46,7 +46,7 @@ The `substr` can also be used to make changes to a script.
 
 <ol>
   <li>The 1st example shows what happens if you provide a 4th paramater to the `substr` function.
-  The function still return the same substring as it would if there were only 3 parameters, but it also <b>changes the original string</b>
+  The function still return the same substring as it would if there were only 3 parameters, but it also **changes the original string**
   replaceing the part that was designated by the location and length by the 4th parameter.</li>
 
   <li>The 2nd example is rarely used, I don't think I ever used it outside of my exmples. I probably won't recommend you its use

@@ -10,8 +10,8 @@ author: szabgab
 
 The last couple of days I've spent re-building [DWIM Perl for Linux](/dwimperl) using a cpanfile, carton,
 running builds on Travis-CI and on a [Digital Ocean Droplet](/digitalocean).
-[DWIM Perl for Linux](/dwimperl) is a <b>batteries included</b> binary distribution of
-<b>standard perl + lots of CPAN modules</b>. The hope that it will make
+[DWIM Perl for Linux](/dwimperl) is a **batteries included** binary distribution of
+**standard perl + lots of CPAN modules**. The hope that it will make
 it extremely easy for people to get started using Perl. Without the need to encounter the installation headaches that might come with cpan.
 
 
@@ -25,8 +25,8 @@ Apparently there is a subtle difference between `$Config{perlpath}` and `$^X`. I
 The thing is that in my case `$^X` contains the actual path to the perl executable where it is located when the script is running,
 while `$Config{perlpath}` contains the path to the perl executable when it was compiled.
 
-I compiled and originally installed this perl to the <b>/home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl/</b> directory, but when
-[Travis-CI](https://travis-ci.org/) uses it, it is placed to <b>/home/travis/dwimperl-linux-5.20.1-4-x86_64/perl/</b>.
+I compiled and originally installed this perl to the **/home/dwimperl/dwimperl-linux-5.20.1-1-x86_64/perl/** directory, but when
+[Travis-CI](https://travis-ci.org/) uses it, it is placed to **/home/travis/dwimperl-linux-5.20.1-4-x86_64/perl/**.
 
 ## Changing the test
 

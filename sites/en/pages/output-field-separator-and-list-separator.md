@@ -13,8 +13,8 @@ author: szabgab
 
 
 Perl has a number of "magic" variables. Some are really useful, some are there mostly for historical reasons.
-This time we are going to look at two: `$,` also known as <b>output field separator</b>, and
-`$"` also known as <b>list separator</b>.
+This time we are going to look at two: `$,` also known as **output field separator**, and
+`$"` also known as **list separator**.
 
 
 Assuming this at the beginning of our file:
@@ -118,7 +118,7 @@ change this variable?
 [Variables::ProhibitPunctuationVars](https://metacpan.org/pod/Perl::Critic::Policy::Variables::ProhibitPunctuationVars)
 that will catch the use of these variables in your code. You can try to find them using
 `perlcritic --single-policy Variables::ProhibitPunctuationVars script.pl` that will give you a report like this:
-<b>Magic punctuation variable $, used at line 9, column 1.  See page 79 of PBP.  (Severity: 2)</b>
+**Magic punctuation variable $, used at line 9, column 1.  See page 79 of PBP.  (Severity: 2)**
 
 You could also set up an automated test using [Test::Perl::Critic](https://metacpan.org/pod/Test::Perl::Critic).
 

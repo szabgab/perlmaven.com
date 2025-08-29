@@ -66,7 +66,7 @@ cd public/javascripts/
 wget https://raw.githubusercontent.com/christianbach/tablesorter/master/jquery.tablesorter.min.js
 ```
 
-Then we include it <b>under</b> the inclusion of jQuery itself in the `clients/v2.html` file:
+Then we include it **under** the inclusion of jQuery itself in the `clients/v2.html` file:
 
 ```html
 <script type="text/javascript" src="../public/javascripts/jquery.tablesorter.min.js"></script>

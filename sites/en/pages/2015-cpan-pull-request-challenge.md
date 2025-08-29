@@ -8,7 +8,7 @@ author: szabgab
 ---
 
 
-If you sign up to the <b>2015 CPAN Pull Request Challenge</b>, then every month you'll be assigned a CPAN module and you'll have one month
+If you sign up to the **2015 CPAN Pull Request Challenge**, then every month you'll be assigned a CPAN module and you'll have one month
 to make some improvement and send it to the maintainer of the module. 
 
 I think this is a great way to improve yourself and at the same time to contribute back to the pool of open source code we all depend on.

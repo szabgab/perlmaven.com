@@ -21,7 +21,7 @@ Perl scripts or Perl programs are just simple [text files](/what-is-a-text-file)
 
 ## Editor or IDE?
 
-For Perl development you can either use a plain text editor or an <b>Integrated Development Environment</b>, also called IDE. An IDE usually has a longer an steeper learning curve, but it can provide you more help writing and debugging code. Text editors are usually a lot more generic and easier to learn, but have less language-specific help. First I'll describe the editors on the major platforms you might use, and then the IDEs which are usually platform independent. Finally I have a few suggestions for platform independent editors.
+For Perl development you can either use a plain text editor or an **Integrated Development Environment**, also called IDE. An IDE usually has a longer an steeper learning curve, but it can provide you more help writing and debugging code. Text editors are usually a lot more generic and easier to learn, but have less language-specific help. First I'll describe the editors on the major platforms you might use, and then the IDEs which are usually platform independent. Finally I have a few suggestions for platform independent editors.
 
 What I usually suggest is that you get started with whatever editor or IDE you are already familiar with, so you spend time learning the language instead of learning the editor/IDE.
 
@@ -46,7 +46,7 @@ On Windows, many people are using the so-called "programmer's editors".
 * [Ultra Edit](http://www.ultraedit.com/) is a commercial editor.
 * [TextPad](http://www.textpad.com/) is share-ware.
 
-I have been using <b>Notepad++</b> a lot and I keep it installed on my Windows machine as it can be very useful.
+I have been using **Notepad++** a lot and I keep it installed on my Windows machine as it can be very useful.
 
 ## Mac OSX
 
@@ -65,7 +65,7 @@ There is also a Perl5 plugin for [Jetbrains IntelliJ IDEA](https://www.jetbrains
 
 ## Padre, the Perl IDE
 
-In July 2008 I started to write an <b>IDE for Perl in Perl</b>. I called it Padre - Perl Application Development and Refactoring Environment or [Padre, the Perl IDE](http://padre.perlide.org/).
+In July 2008 I started to write an **IDE for Perl in Perl**. I called it Padre - Perl Application Development and Refactoring Environment or [Padre, the Perl IDE](http://padre.perlide.org/).
 
 Many people joined the project. For some time it was distributed by the major Linux distributions and it could also be installed from CPAN. See the [download](http://padre.perlide.org/download.html) page for details. Unfortunately development has stopped at the end of 2013. I'd only recommend it if you would actually like to improve Padre itself.
 
@@ -80,7 +80,7 @@ In October 2009 I ran a poll and asked [Which editor(s) or IDE(s) are you using 
 * [Atom](https://atom.io/) is another cross-platform Open Source editor.
 * [Visual Studio Code](https://code.visualstudio.com/) (aka. VSCode from Microsoft)
 
-While they are native to Unix/Linux, both <b>Emacs</b> and <b>Vim</b> are available for all the other major operating systems.
+While they are native to Unix/Linux, both **Emacs** and **Vim** are available for all the other major operating systems.
 
 ## Comments
 

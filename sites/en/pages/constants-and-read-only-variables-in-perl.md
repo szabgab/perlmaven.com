@@ -17,8 +17,8 @@ Symbols that we can set to a specific values once, and be sure they never change
 As with many other problems, there are several ways to solve this in Perl, but
 in most cases enforcement of "constantness" is not necessary.
 
-In most cases we can just adhere to the established consensus, that <b>variables with
-all upper-case names should be treated as constants</b>.
+In most cases we can just adhere to the established consensus, that **variables with
+all upper-case names should be treated as constants**.
 
 
 Later we'll see a couple of solutions that actually enforce the "constantness"
@@ -72,7 +72,7 @@ Besides its simplicity, one of the nice things in this solution is that we can
 actually compute the values of these constants during run time, as
 we did with the `@PLANETS` array.
 
-In many cases this is enough and the cost of creating <b>"real"</b> constants
+In many cases this is enough and the cost of creating **"real"** constants
 is unnecessary.
 
 Nevertheless, let's see two other solutions:

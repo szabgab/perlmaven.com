@@ -31,16 +31,16 @@ I know it is a very contrived example, but in the few minutes I spent on it I co
 
 ## Spoiler Alert
 
-If a function in Perl does not explicitly call <b>return</b> then it will implicitly return the result of the last statement evaluated.
+If a function in Perl does not explicitly call **return** then it will implicitly return the result of the last statement evaluated.
 
-In the above code, if the <b>if</b> condition inside the "function" evaluates to <b>true</b> then the code inside the block will be executed
-and thus the assignment to <b>$total</b> will be the last executed statement and so the value of <b>$total</b> will be returned.
+In the above code, if the **if** condition inside the "function" evaluates to **true** then the code inside the block will be executed
+and thus the assignment to **$total** will be the last executed statement and so the value of **$total** will be returned.
 
-On the other hand if the <b>if</b> condition inside the "function" evaluates to <b>false</b> then this will be the last statement
-in the function and thus this <b>false</b> value will be returned that will happen to be the <b>empty string</b>.
+On the other hand if the **if** condition inside the "function" evaluates to **false** then this will be the last statement
+in the function and thus this **false** value will be returned that will happen to be the **empty string**.
 
 In the example I added a check to show whether the returned values is [defined](/defined) or if it is [undef](/undef).
-A separate check is included to show if it <b>equals</b> to the empty string or not using the [ternary operator](/the-ternary-operator-in-perl).
+A separate check is included to show if it **equals** to the empty string or not using the [ternary operator](/the-ternary-operator-in-perl).
 
 
 ```

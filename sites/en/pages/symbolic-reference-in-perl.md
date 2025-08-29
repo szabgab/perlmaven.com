@@ -11,7 +11,7 @@ author: szabgab
 ---
 
 
-One of the 3 things `use strict` disables is the use of <b>symbolic references</b>.
+One of the 3 things `use strict` disables is the use of **symbolic references**.
 
 Let's see how can that save you time and avoid embarrassment!
 
@@ -59,11 +59,11 @@ I had really no idea what happened.
 The situation was quite embarrassing.
 
 Luckily we had lunch break, and just after I finished the soup it occurred to me
-that I have not used <b>strict</b> in my code.
+that I have not used **strict** in my code.
 
 ## The understanding
 
-Returning to the class-room I added `use strict` and <b>ran</b> the code again:
+Returning to the class-room I added `use strict` and **ran** the code again:
 
 ```perl
 use strict;
@@ -82,7 +82,7 @@ Can't use string ("Foo") as a HASH ref while "strict refs" in use at ...
 
 See another case of [Can't use string (...) as an HASH ref while "strict refs" in use at ...](/cant-use-string-as-a-hash-ref-while-strict-refs-in-use).
 
-Apparently I was using a <b>symbolic HASH reference</b>, by accident.
+Apparently I was using a **symbolic HASH reference**, by accident.
 
 In fact, I never touched the `%person` hash. In the second assignment
 I used the `$person` scalar as a reference to a hash. This would be OK
@@ -116,13 +116,13 @@ As you can see, the first print of the `%person` hash is empty,
 but the `%Foo` hash sprang to existence and has a 'name' key with 'Bar'
 as the value.
 
-Certainly <b>not</b> what I wanted.
+Certainly **not** what I wanted.
 
 Since Perl has real references, you almost never need this capability,
 and if such thing happens by mistake then it is way better to get
 an error than to silently do the wrong thing.
 
-So <b>always use strict</b>.
+So **always use strict**.
 
 
 ## Symbolic references of scalar variables
@@ -199,7 +199,7 @@ Note, it runs. I know it as it printed 'Hello World', but then it stops running 
 similar to what we saw at the beginning of the article.
 
 In general this is a good thing. In most cases we don't want to write code that will
-act as symbolic references <b>by mistake</b>.
+act as symbolic references **by mistake**.
 
 The only unfortunate part is that perl can only notice this during run-time, so if this
 code is a part of the code that rarely executes (eg. within an if statement), then

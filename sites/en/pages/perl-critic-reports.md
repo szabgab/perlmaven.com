@@ -18,7 +18,7 @@ Sample script generating this:
 
 [TestingAndDebugging::RequireUseStrict](https://metacpan.org/pod/Perl::Critic::Policy::TestingAndDebugging::RequireUseStrict)
 
-Always have <b>use strict</b> at the beginning of your Perl files.
+Always have **use strict** at the beginning of your Perl files.
 
 Related articles:
 * [Always use strict!](/strict)

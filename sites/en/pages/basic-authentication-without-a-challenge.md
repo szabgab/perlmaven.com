@@ -22,7 +22,7 @@ Browsers usually show a pop-up window asking for username/password.
 There are however sites that do not provide this challenge.
 
 
-<b>This article is originally from 2014. Since then Gittip was renamed to be Gratipay and in November 2017 it was shut down. Nevertheless the technique is still useful.</b>
+**This article is originally from 2014. Since then Gittip was renamed to be Gratipay and in November 2017 it was shut down. Nevertheless the technique is still useful.**
 
 
 I am not even sure if it is according to the specification of [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication),

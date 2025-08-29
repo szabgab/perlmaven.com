@@ -19,7 +19,7 @@ author: szabgab
 While in most of the cases we'd process a [text file](/what-is-a-text-file) [line-by-line](/open-and-read-from-files),
 there are cases when it is easier to do the work if all the content of the file is in the memory in a single scalar variable.
 
-For example when we need to replace <b>Java is Hot</b> by <b>Jabba the Hutt</b> in a text file where the original text migh be spread
+For example when we need to replace **Java is Hot** by **Jabba the Hutt** in a text file where the original text migh be spread
 over more than one lines. For example:
 
 ```
@@ -63,13 +63,13 @@ Jabba The Hutt
 
 ## Explanation
 
-The `$/` variable is the <b>Input Record Separator</b> in Perl. When we put the read-line operator in scalar
+The `$/` variable is the **Input Record Separator** in Perl. When we put the read-line operator in scalar
 context, for example by assigning to a scalar variable `$x = <$fh>`, Perl will read from the file up-to
-and including the <b>Input Record Separator</b> which is, by default, the new-line `\n`.
+and including the **Input Record Separator** which is, by default, the new-line `\n`.
 
 What we did here is we assigned [undef](/undef-and-defined-in-perl) to `$/`. So the read-line operator
-will read the file up-till the first time it encounters <b>undef</b> in the file. That never happens so it reads till
-the end of the file. This is what is called <b>slurp mode</b>, because of the sound the file makes when we read it.
+will read the file up-till the first time it encounters **undef** in the file. That never happens so it reads till
+the end of the file. This is what is called **slurp mode**, because of the sound the file makes when we read it.
 
 In case you are wondering about the regex part here is the quick recap provided by [J.L. Bismarck Fuentes](http://jlbfuentes.com/).
 
