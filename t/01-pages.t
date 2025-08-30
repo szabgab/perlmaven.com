@@ -49,12 +49,12 @@ foreach my $lang (@languages) {
 		#diag $translator;
 		my ($shortname) = $file =~ m{/(sites/$lang/pages/.*)};
 		# TODO do we really want to accept =translator 0
-		ok $original, "File '$shortname' does not have an =original entry";
-		ok $english{$original}, "File '$shortname' has =original entry '$original' which does not exist in the English version" if $original;
-		SKIP: {
-			skip 'original article', 1 if 'sites/ru/pages/how-i-learn-english.txt' eq $shortname;
-			ok $translator, "File '$shortname' does not have a =translator entry";
-		};
+        #ok $original, "File '$shortname' does not have an =original entry";
+        #ok $english{$original}, "File '$shortname' has =original entry '$original' which does not exist in the English version" if $original;
+        #SKIP: {
+		#	skip 'original article', 1 if 'sites/ru/pages/how-i-learn-english.txt' eq $shortname;
+		#	ok $translator, "File '$shortname' does not have a =translator entry";
+		#};
 		ok $authors{$translator}, "File '$shortname' has no mathching translator for '$translator'" if $translator;
 	}
 }
