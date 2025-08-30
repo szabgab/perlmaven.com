@@ -177,10 +177,8 @@ as explained in the article about [test plans and descriptions](/test-plan-and-t
 Unfortunately, this solution will not notice the problem if we comment out the bad test case as we did in the previous example.
 This will automatically adjust the plan to the new number of test-cases. Two points here:
 
-<ol>
-  <li>Avoiding repetition (going with DRY) is not always a good thing.</li>
-  <li>I'll have to show you another case where the advantage of declaring a `plan` is clearer.</li>
-</ol>
+1. Avoiding repetition (going with DRY) is not always a good thing.
+1. I'll have to show you another case where the advantage of declaring a `plan` is clearer.
 
 For now, let's just point out that we had to declare `my @cases` outside of the `BEGIN` block, otherwise it would have been scoped to
 the block and perl would complain with the syntax error: [Global symbol "@cases" requires explicit package name at ...](/global-symbol-requires-explicit-package-name).

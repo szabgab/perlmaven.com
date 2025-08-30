@@ -68,7 +68,7 @@ $VAR1 = bless( {
 }, 'Config::Tiny' );
 ```
 
-<h>$Config` is a reference to a two dimensional hash. 'one' which was just an arbitrary
+`$Config` is a reference to a two dimensional hash. 'one' which was just an arbitrary
 section name to hold the real data is a key in that hash reference. Its values is a
 reference to another hash where the keys are client_id and api_key.
 
@@ -123,11 +123,9 @@ for my $droplet (@{$do->droplets}) {
 
 Listing the existing droplets is one thing, but it would be much better if we could the whole cycle:
 
-<ol>
-  <li>Create a droplet</li>
-  <li>Do something on it</li>
-  <li>Destroy the droplet</li>
-</ol>
+1. Create a droplet
+1. Do something on it
+1. Destroy the droplet
 
 The documentation of the [DigitalOcean Perl module](https://metacpan.org/pod/DigitalOcean) has an example
 to create a droplet:
@@ -141,7 +139,7 @@ my $new_droplet = $do->create_droplet(
 );
 ```
 
-The question, what values can be passed to **size_id**, **image_id**, and <b>region_id</b>?
+The question, what values can be passed to **size_id**, **image_id**, and `region_id`?
 
 
 ## Droplet sizes
@@ -442,7 +440,7 @@ You can now combine the two articles and create a script that will create a Drop
 
 Great article thanks Gabor
 
-<hr>
+---
 
 Gabor - have always loved your work. FYI - DO has APIv2 now and there's a new CPAN library available. https://www.digitalocean.com/community/projects/webservice-digitalocean and
 

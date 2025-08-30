@@ -22,26 +22,24 @@ with this, but provide lots of extra features that if we wanted, we would need t
 the classic Perl OOP described on this page.
 
 
-<ol>
-  <li>[Core Perl OOP: Constructor](/core-perl-oop-constructor)</li>
-  <li>[Core Perl OOP: Getter - Setter](/core-perl-oop-getter-setter)</li>
-  <li>[What should setters return?](/what-should-setters-return)</li>
-  <li>[constructor-arguments](/core-perl-oop-constructor-arguments)</li>
-  <li>Destructor</li>
-  <li>Attributes, attribute types (members)</li>
-  <li>Create your own type</li>
-  <li>Getters/Setters</li>
-  <li>Inheritance</li>
-  <li>Polymorphism</li>
-  <li>Encapsulation</li>
-  <li>Singleton</li>
-  <li>Destructor (DESTROY)</li>
-  <li>OOP: Bless, or what you will see in the wild</li>
-  <li>OOP: Class::Accessor A small scale object oriented system in Perl</li>
-  <li>Class methods and Instance methods</li>
-  <li>Automatic Class creation</li>
-  <li>Operator overloading</li>
-</ol>
+1. [Core Perl OOP: Constructor](/core-perl-oop-constructor)
+1. [Core Perl OOP: Getter - Setter](/core-perl-oop-getter-setter)
+1. [What should setters return?](/what-should-setters-return)
+1. [constructor-arguments](/core-perl-oop-constructor-arguments)
+1. Destructor
+1. Attributes, attribute types (members)
+1. Create your own type
+1. Getters/Setters
+1. Inheritance
+1. Polymorphism
+1. Encapsulation
+1. Singleton
+1. Destructor (DESTROY)
+1. OOP: Bless, or what you will see in the wild
+1. OOP: Class::Accessor A small scale object oriented system in Perl
+1. Class methods and Instance methods
+1. Automatic Class creation
+1. Operator overloading
 
 ## Class declaration
 

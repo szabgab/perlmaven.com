@@ -27,12 +27,11 @@ Finally we will create a service script to daemonize the runner that does the pr
 
 ## Overview
 Once we are done with this lesson, we will have coded four seperate files for our queueing system.
-<ol>
-<li>Job insert script (send_email.pl)</li>
-<li>Worker runner script (send_email_runner.pl)</li>
-<li>Worker library (Worker/SendEmail.pm)</li>
-<li>Daemon service script (send_email.service)</li>
-</ol>
+
+1. Job insert script (send_email.pl)
+1. Worker runner script (send_email_runner.pl)
+1. Worker library (Worker/SendEmail.pm)
+1. Daemon service script (send_email.service)
 
 We have already coded the first file (send_email.pl) in part one of this lesson. In part two we will cover coding the above files 2, 3 and 4.
 
@@ -45,11 +44,14 @@ This is where everything will go on our system respectively from the list above:
 ```
 
 ## Worker Runner Script
-**/usr/local/bin/send_email_runner.pl**<br/>
+
+**/usr/local/bin/send_email_runner.pl**
+
 This will be the script that constantly runs in the background to monitor our database for new jobs to process.
 Later, we will daemonize this script to run as a service.
 
-Here's what our worker runner script will look like:<br/>
+Here's what our worker runner script will look like:
+
 {% include file="examples/use-theschwartz-2/send_email_runner.pl" %}
 
 Note, the following lines at the top are important as it tells our script how to get to our library that houses the ever important work() function, which we will get to a bit later.
@@ -96,12 +98,14 @@ If we set loopcount > 0 it will goto the else statement and then it will only ge
 So how does it now what to do to when it hits the work() function? Well, that is another function we are going to code in a new and seperate library module we will be creating next.
 
 ## Worker Runner Script Library Module
-**/usr/local/lib/Worker/SendEmail.pm**<br/>
+
+**/usr/local/lib/Worker/SendEmail.pm**
 
 This is where we will put our work() function. [TheSchwartz::Worker](https://metacpan.org/pod/TheSchwartz::Worker) page has some valuable information on using the
 superclass as we will be doing in the below code.
 
-Here's the full script:<br/>
+Here's the full script:
+
 {% include file="examples/use-theschwartz-2/lib/Worker/SendEmail.pm" %}
 
 This is the work() function that the runner script will execute. At the top of the script you will notice four values we are setting for the worker:
@@ -110,11 +114,14 @@ sub grab_for { 120 };
 sub max_retries { 30 };
 sub retry_delay { 60 };
 ```
-<i>grab_for</i> = Timeout value for the job. After this time expires and the job hasn't completed or failed it assumes it has crashed and becomes available for another worker.<br/>
-<i>max_retries</i> = Number of times a worker should attempt to process any given job.<br/>
-<i>retry_delay</i> = Number of seconds to wait to retry a failed job again.<br/><br/>
+
+* `grab_for` = Timeout value for the job. After this time expires and the job hasn't completed or failed it assumes it has crashed and becomes available for another worker.
+* `max_retries` = Number of times a worker should attempt to process any given job.
+* `retry_delay` = Number of seconds to wait to retry a failed job again.
+
 So in the above example, we will retry a failed job once a minute for half an hour, after which it will be permanently marked as failed and not attempted anymore.
 Again, we have added logging which can be crucial for troubleshooting whats going on in these worker bees.
+
 ```perl
 my $log_file = "/var/tmp/send_email_worker.log";
 open(LOG,">>$log_file") or die "Can not open $log_file!";
@@ -203,11 +210,14 @@ schwartz=# select * from job;
 ```
 
 ## Daemon Service
-**/etc/systemd/system/send_email.service**<br/>
+
+**/etc/systemd/system/send_email.service**
+
 Now our final step will be to setup our worker runner to A) always run in the background and B) always startup when the system starts. To do this we will
 need to create a new systemd service. This is fairly straight forward to accomplish.
 
-Create the following file:<br/>
+Create the following file:
+
 {% include file="examples/use-theschwartz-2/send_email.service" %}
 
 Get the service up and running:
@@ -223,11 +233,11 @@ The output from the last command above means the service is up and running. And 
 Each time the send_email.pl script runs it will add a job to the database queue and then the worker script will automatically grab it and process it accordingly.
 Here is a flow chart to give a clearer picture of how the whole process works:
 
-<div style="text-align:left"><a><img src="/img/use-theschwartz-2-chart.png" /></a></div>
+![](/img/use-theschwartz-2-chart.png)
 
 ## Conclusion
 This concludes the tutorial for setting up a queueing system using TheSchwartz. It's a pretty good system that proves to be reliable. I have used it in
-the past to run many different types of runners concurrently on the same system without fail. Enjoy and may TheSchwartz be with you!<br/><br/>
+the past to run many different types of runners concurrently on the same system without fail. Enjoy and may TheSchwartz be with you!
 
 Related article: [How to Use TheSchwartz Perl Module (Part 1)](/use-theschwartz)
 
