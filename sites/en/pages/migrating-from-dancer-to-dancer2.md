@@ -18,12 +18,10 @@ on [Dancer](https://metacpan.org/pod/Dancer), the first major version of the fra
 
 Dancer has a couple of issues I encountered that caused a lot of headache. I had several choices
 
-<ol>
-  <li>Leave Dancer and Write it based on plain [PSGI/Plack](/psgi).</li>
-  <li>Abandon Dancer and write in it some other framework such as [Mojolicious](/mojolicious) or [Catalyst](/catalyst).</li>
-  <li>Fix the issues in Dancer</li>
-  <li>Migrate to Dancer2</li>
-</ol>
+1. Leave Dancer and Write it based on plain [PSGI/Plack](/psgi).
+1. Abandon Dancer and write in it some other framework such as [Mojolicious](/mojolicious) or [Catalyst](/catalyst).
+1. Fix the issues in Dancer
+1. Migrate to Dancer2
 
 I decided to try to migrate to Dancer 2. This article is (going to be) both a diary of the process,
 and hopefully a helping guide to others who would like to make similar migration.
@@ -221,7 +219,7 @@ In order to understand what's going on, I created two applications using the
 
 The result of my research is the following:
 
-The "Dancer 1 way" to enable the use of <a href="">Template::Toolkit</a> was to add
+The "Dancer 1 way" to enable the use of Template::Toolkit was to add
 the following line to `config.yml`:
 
 ```
@@ -291,7 +289,7 @@ It wasn't difficult to find them using `ack 'use Dancer'`. Three of the tests sc
 
 ## Perl::Critic - Dancer2 also implies use strict
 
-In addition, I noticed that a lot of the tests fail on my system with reports from <a href="https://metacpan.org/pod/Perl::Critic">Perl::Critic.
+In addition, I noticed that a lot of the tests fail on my system with reports from [Perl::Critic](https://metacpan.org/pod/Perl::Critic).
 Specifically they complain about `Code before strictures are enabled`
 
 The Perl::Maven project has a [.perlcriticrc](https://github.com/szabgab/Perl-Maven/blob/master/.perlcriticrc) file in which
@@ -382,8 +380,7 @@ log_to_mongodb( \%details );
 This is actually a well known and painful issue with Perl. The problem was that the behavior of
 `request->referer` and `request->user_agent` has changed. If they did not have a proper value,
 in Dancer 1 they always returned `undef`.
-Both in <a
-href="/scalar-and-list-context-in-perl">scalar context and in list context</a>.
+Both in [scalar context and in list context](/scalar-and-list-context-in-perl).
 
 In Dancer 2 the behavior changed. In scalar context they still return [undef](/undef-and-defined-in-perl),
 but in list context they return an empty list. In the above code, the right-hand-side of the fat-comma operator (`=>`) creates list context.

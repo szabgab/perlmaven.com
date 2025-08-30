@@ -22,10 +22,8 @@ In this article we'll look at [Path::Iterator::Rule](https://metacpan.org/pod/Pa
 
 In order to use the module we need two things:
 
-<ol>
-<li>First we create a Path::Iterator::Rule object representing a set of rules.</li>
-<li>Then we can use that object to list the file-system elements in a certain list of directories.</li>
-</ol>
+1. First we create a Path::Iterator::Rule object representing a set of rules.
+1. Then we can use that object to list the file-system elements in a certain list of directories.
 
 The first step is to create the rules:
 
@@ -221,7 +219,7 @@ Don't go deeper than 3 subdirectories:
 $rule->max_depth(3);
 ```
 
-If we pass 0 to `max_depth` we will get only the directories we passed to `iter</h>.
+If we pass 0 to `max_depth` we will get only the directories we passed to `iter`.
 If `max_depth` is 1, we will get the immediate content of those directories.
 
 ### skipping directories

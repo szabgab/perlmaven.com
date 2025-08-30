@@ -137,7 +137,7 @@ about the new variable. Type this in the command window, to see the newly set va
 echo %PERL5LIB%
 ```
 
-<hr>
+---
 
 This will add the private /home/foobar/code directory (or c:\path\to\dir directory)
 to the beginning of `@INC` for **every script** that is executed in
@@ -190,13 +190,8 @@ though we'll also see `local::lib` that does this for you.
 
 `use lib` is used in two cases:
 
-<ol>
-<li>When you have a fixed, but not standard company-wide environment
-in which you put modules in a common standard location.</li>
-<li>When you are developing an application and you'd like to make sure
-the script always picks up the modules relative to their own location.
-We'll discuss this in another post.</li>
-</ol>
+1. When you have a fixed, but not standard company-wide environment in which you put modules in a common standard location.
+1. When you are developing an application and you'd like to make sure the script always picks up the modules relative to their own location.  We'll discuss this in another post.
 
 ## Comments
 
@@ -213,8 +208,6 @@ In theory, it will load the new path if on Windows, but when online on a Unix se
 ---
 I think based on this link you might not get the result that you expect, https://perlmaven.com/use-require-import
 this "if" is not work as you expected, during "use" statement execute on compile time not run time.
-
-<hr>
 
 ---
 So which language do you already know. Perl or Python?
@@ -247,7 +240,8 @@ sys.path
 ---
 Thank you so much.
 
-<hr>
+
+---
 
 Hi Gabor,
 Thank you for your article.
@@ -278,12 +272,15 @@ Generally, you would suggest where? I you were me, what would you do?
 
 I am working to install a model on a server and I don't have admin privilege. PERL was installed on the server by admin and I installed XML::LibXML locally. When I installed XML::LibXML locally, PREL5 directory was created in my account
 
-<hr>
+---
 
 I added custom directory in @INC by appending `export PERL5LIB=some_dir`. I'm able to execute the script using cli `perl -e 'use some_module_in_dir'` but when I m using it in a separate file then it showing me error
-<hr>
+
+---
+
 Very Helpful. Thanks
-<hr>
+
+---
 
 Putting use statements in the code works for me but the PERL5LIB command line method does not. I am using Strawberry Perl could that be the reason ?
 ---
@@ -305,7 +302,8 @@ Is there a good reason why the developers of Perl inflicted this upon us ?. With
 ----
 It also seems to work without the FindBin magic if you are requiring a file other than in the same directory as the script, but in the same direc' it falls over and the FindBin code is needed ??
 
-<hr>
+---
+
 
 I am curious I am trying to query the database as sysdba, I am using "use lib" with the specific path to the Oracle.pm but i am still receiving the following error?
 
@@ -317,13 +315,15 @@ I have the following in my script:
 use lib ("/usr/app/oracle/product/agentE5/agent_13.3.0.0.0/perl/lib/site_perl/5.14.4/x86_64-linux-thread-multi/DBD/", "/usr/app/oracle/product/agentE5/agent_13.3.0.0.0/perl/lib/site_perl/5.14.4/x86_64-linux-thread-multi/Bundle/");
 use DBD::Oracle qw(:ora_session_modes); # imports SYSDBA or SYSOPER
 
-<hr>
+---
+
 
 When checking PERL5LIB in enviroment variables, it lists that the path is "C:/users/My_name/perl5/lib/perl5" which is indeed where Strawberry CPAN is installing the modules. But ... when I run perl, it cannot find the module as @INC only contains "strawberry/perl/site", "strawberry/perl/vendor/lib" and "strawberry/perl/lib" How do I add the perl5 path to @INC without resorting to adding a line to every script? (This is Win7)
 
 I don't really want to change the PERL5LIB path as I understand that DMAKE and similar rely on a default path
 
-<hr>
+---
+
 
 When I installed miRDeep2, the following error occurred in make_html.pl:
 Cannot find PDF/API2.pm in @INC (@INC contains:
@@ -332,7 +332,8 @@ BEGIN failed-compilation was aborted in line 9 of /home/students/anaconda3/bin/m
 I added the path to “./bashrc”, and the source “./bashrc” ，script make_html.pl still showed the same error. I tried to modify make_html.pl and add the use lib ‘/home/foobar/code'
 Use My::Module; but it cannot be modified. I don’t quite understand how to use lib and how to modify @INC. Can you help me? Many thanks!
 
-<hr>
+---
+
 
 i installed activeperl when running cmd cli everthing works OK
 when running perl cgi on iis I get error 502.2 - bad gateway cant ;locate CGI.pm
@@ -354,7 +355,8 @@ strict Auto
 
 its crazy any ideas ?? thanks in advance
 
-<hr>
+---
+
 
 Why do I get the error "Can't locate Win32/ http://LongPath.pm in @INC" after following the ppm profile save/restore instructions in "How to Migrate Perl Server-to-Server" to migrate Perl 5.20 to a new system? Doesn't ppm set @INC when it restores the configuration?
 

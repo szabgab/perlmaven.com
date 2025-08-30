@@ -29,11 +29,10 @@ You probably already know from the [Getting started with PSGI](/getting-started-
 that in the PSGI standard we are expected to create a subroutine and have it as the last expression in our main
 Perl file. That subroutine will be called on every request from the web client and it is expected to return
 an array reference with 3 values.
-<ol>
-  <li>The first is the HTTP Status code which is 200 in case of success.</li>
-  <li>The second is a list of key-value pairs that will become the response header.</li>
-  <li>The third is the actual content of the page.</li>
-</ol>
+
+1. The first is the HTTP Status code which is 200 in case of success.
+1. The second is a list of key-value pairs that will become the response header.
+1. The third is the actual content of the page.
 
 So that's what we have in our example. So far this was exactly the same as with any other PSGI code.
 
@@ -82,7 +81,8 @@ how does demonstrate a cgi script that is being run under plack? to demo CGI bec
 ---
 CGI.pm is just one implementation of the Common Gateway Interface (aka. CGI). The whole point of this article is to show that you can do CGI with Plack as well.
 
-<hr>
+---
+
 Hello
 I'm on Windows : Is there an alternative for : /usr/bin/env in the shebang.
 thanks in advance

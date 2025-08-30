@@ -117,11 +117,9 @@ sub sendmail {
 
 We can then go one and include some extra protection. (Something we could have done earlier as well, but neglected to implement.)
 
-<ol>
-   <li>Verification that all the required parameters were passed.</li>
-   <li>Set default values to the optional parameter.</li>
-   <li>Verification that all the parameters passed were expected. This can help avoiding typos in the parameter names.</li>
-</ol>
+1. Verification that all the required parameters were passed.
+1. Set default values to the optional parameter.
+1. Verification that all the parameters passed were expected. This can help avoiding typos in the parameter names.
 
 
 ```perl

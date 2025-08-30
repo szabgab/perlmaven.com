@@ -27,55 +27,55 @@ due its name and hat's probably it is used in a lot of old code and people who n
 
 ## Top 20 modules on [search.cpan.org](http://search.cpan.org/)
 
-<ol>
-  <li>[DBI](https://metacpan.org/pod/DBI)</li>
-  <li>[JSON](https://metacpan.org/pod/JSON)</li>
-  <li>[LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent)</li>
-  <li>[DateTime](https://metacpan.org/pod/DateTime)</li>
-  <li>[XML::Simple](https://metacpan.org/pod/XML::Simple)</li>
-  <li>[Text::CSV](https://metacpan.org/pod/Text::CSV)</li>
-  <li>[Spreadsheet::WriteExcel](https://metacpan.org/pod/Spreadsheet::WriteExcel)</li>
-  <li>[DBD::mysql](https://metacpan.org/pod/DBD::mysql)</li>
-  <li>[XML::Parser](https://metacpan.org/pod/XML::Parser)</li>
-  <li>[WWW::Mechanize](https://metacpan.org/pod/WWW::Mechanize)</li>
-  <li>[Excel::Writer::XLSX](https://metacpan.org/pod/Excel::Writer::XLSX)</li>
-  <li>[Net::SSH::Perl](https://metacpan.org/pod/Net::SSH::Perl)</li>
-  <li>[Net::SMTP](https://metacpan.org/pod/Net::SMTP)</li>
-  <li>[Net::Telnet](https://metacpan.org/pod/Net::Telnet)</li>
-  <li>[DBD::Oracle](https://metacpan.org/pod/DBD::Oracle)</li>
-  <li>[Spreadsheet::ParseExcel](https://metacpan.org/pod/Spreadsheet::ParseExcel)</li>
-  <li>[IO::Socket::SSL](https://metacpan.org/pod/IO::Socket::SSL)</li>
-  <li>[HTTP::Response](https://metacpan.org/pod/HTTP::Response)</li>
-  <li>[DBIx::Class::ResultSet](https://metacpan.org/pod/DBIx::Class::ResultSet)</li>
-  <li>[Log::Log4perl](https://metacpan.org/pod/Log::Log4perl)</li>
-</ol>
+
+1. [DBI](https://metacpan.org/pod/DBI)
+1. [JSON](https://metacpan.org/pod/JSON)
+1. [LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent)
+1. [DateTime](https://metacpan.org/pod/DateTime)
+1. [XML::Simple](https://metacpan.org/pod/XML::Simple)
+1. [Text::CSV](https://metacpan.org/pod/Text::CSV)
+1. [Spreadsheet::WriteExcel](https://metacpan.org/pod/Spreadsheet::WriteExcel)
+1. [DBD::mysql](https://metacpan.org/pod/DBD::mysql)
+1. [XML::Parser](https://metacpan.org/pod/XML::Parser)
+1. [WWW::Mechanize](https://metacpan.org/pod/WWW::Mechanize)
+1. [Excel::Writer::XLSX](https://metacpan.org/pod/Excel::Writer::XLSX)
+1. [Net::SSH::Perl](https://metacpan.org/pod/Net::SSH::Perl)
+1. [Net::SMTP](https://metacpan.org/pod/Net::SMTP)
+1. [Net::Telnet](https://metacpan.org/pod/Net::Telnet)
+1. [DBD::Oracle](https://metacpan.org/pod/DBD::Oracle)
+1. [Spreadsheet::ParseExcel](https://metacpan.org/pod/Spreadsheet::ParseExcel)
+1. [IO::Socket::SSL](https://metacpan.org/pod/IO::Socket::SSL)
+1. [HTTP::Response](https://metacpan.org/pod/HTTP::Response)
+1. [DBIx::Class::ResultSet](https://metacpan.org/pod/DBIx::Class::ResultSet)
+1. [Log::Log4perl](https://metacpan.org/pod/Log::Log4perl)
+
 
 
 ## Top 20 modules on [MetaCPAN](https://metacpan.org/)
 
-<ol>
-  <li>[App::Netdisco](https://metacpan.org/pod/App::Netdisco)</li>
-  <li>[DBI](https://metacpan.org/pod/DBI)</li>
-  <li>[WWW::YouTube::Download](https://metacpan.org/pod/WWW::YouTube::Download)</li>
-  <li>[Mojolicious](https://metacpan.org/pod/Mojolicious)</li>
-  <li>[DateTime](https://metacpan.org/pod/DateTime)</li>
-  <li>[Task::Kensho](https://metacpan.org/pod/Task::Kensho)</li>
-  <li>[LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent)</li>
-  <li>[Test::More](https://metacpan.org/pod/Test::More)</li>
-  <li>[JSON](https://metacpan.org/pod/JSON)</li>
-  <li>[Spreadsheet::ParseExcel](https://metacpan.org/pod/Spreadsheet::ParseExcel)</li>
-  <li>[Search::Elasticsearch](https://metacpan.org/pod/Search::Elasticsearch)</li>
-  <li>[Catalyst::Manual::Tutorial](https://metacpan.org/pod/Catalyst::Manual::Tutorial)</li>
-  <li>[App::cpanminus](https://metacpan.org/pod/App::cpanminus)</li>
-  <li>[DBIx::Class::ResultSet](https://metacpan.org/pod/DBIx::Class::ResultSet)</li>
-  <li>[Acme::DRM](https://metacpan.org/pod/Acme::DRM)</li>
-  <li>[Selenium::Remote::Driver](https://metacpan.org/pod/Selenium::Remote::Driver)</li>
-  <li>[App::perlbrew](https://metacpan.org/pod/App::perlbrew)</li>
-  <li>[Getopt::Long](https://metacpan.org/pod/Getopt::Long)</li>
-  <li>[DBD::mysql](https://metacpan.org/pod/DBD::mysql)</li>
-  <li>[Moo](https://metacpan.org/pod/Moo)</li>
-  <li>[WWW::Mechanize](https://metacpan.org/pod/WWW::Mechanize)</li>
-</ol>
+
+1. [App::Netdisco](https://metacpan.org/pod/App::Netdisco)
+1. [DBI](https://metacpan.org/pod/DBI)
+1. [WWW::YouTube::Download](https://metacpan.org/pod/WWW::YouTube::Download)
+1. [Mojolicious](https://metacpan.org/pod/Mojolicious)
+1. [DateTime](https://metacpan.org/pod/DateTime)
+1. [Task::Kensho](https://metacpan.org/pod/Task::Kensho)
+1. [LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent)
+1. [Test::More](https://metacpan.org/pod/Test::More)
+1. [JSON](https://metacpan.org/pod/JSON)
+1. [Spreadsheet::ParseExcel](https://metacpan.org/pod/Spreadsheet::ParseExcel)
+1. [Search::Elasticsearch](https://metacpan.org/pod/Search::Elasticsearch)
+1. [Catalyst::Manual::Tutorial](https://metacpan.org/pod/Catalyst::Manual::Tutorial)
+1. [App::cpanminus](https://metacpan.org/pod/App::cpanminus)
+1. [DBIx::Class::ResultSet](https://metacpan.org/pod/DBIx::Class::ResultSet)
+1. [Acme::DRM](https://metacpan.org/pod/Acme::DRM)
+1. [Selenium::Remote::Driver](https://metacpan.org/pod/Selenium::Remote::Driver)
+1. [App::perlbrew](https://metacpan.org/pod/App::perlbrew)
+1. [Getopt::Long](https://metacpan.org/pod/Getopt::Long)
+1. [DBD::mysql](https://metacpan.org/pod/DBD::mysql)
+1. [Moo](https://metacpan.org/pod/Moo)
+1. [WWW::Mechanize](https://metacpan.org/pod/WWW::Mechanize)
+
  
 ## Caveat - round 2
 

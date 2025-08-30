@@ -30,10 +30,9 @@ that is works on Win32 as well.
 <img src="/img/metacpan-logo.png" alt="MetaCPAN Logo" />
 
 MetaCPAN has two main parts: 
-<ol>
-<li>The back-end that collects and processes all the data and provides and API.</li>
-<li>The front end that talks to this API and displays the data.</li>
-</ol>
+
+1. The back-end that collects and processes all the data and provides and API.
+1. The front end that talks to this API and displays the data.
 
 In this article we'll see how to set up a copy of the front end and how
 to make a small change to it.
@@ -131,7 +130,7 @@ The key for Google+ is **googleplus** and thus I added the following entry:
 This [Template Toolkit](http://www.template-toolkit.org/) code means
 that when the profile name is "googleplus" add a link with an img.
 
-The snippet was based on the code in the <a href="https://github.com/CPAN-API/metacpan-web/blob/master/root/author.html"">root/author.html</a> file that displays lots of profile-icons
+The snippet was based on the code in the [root/author.html](https://github.com/CPAN-API/metacpan-web/blob/master/root/author.html) file that displays lots of profile-icons
 on the left-hand side of the individual [author pages](https://metacpan.org/author/SZABGAB). At least for people who added the profiles to their
 [MetaCPAN account](https://metacpan.org/account/profile).
 

@@ -43,11 +43,11 @@ Anyway, the task was to summarize the number in the 3rd column.
 
 The process should go like this:
 
-<ol>
-<li>Read in the file line by line.</li>
-<li>For each line, extract the 3rd column.</li>
-<li>Add the value to a central variable where we accumulate the sum.</li>
-</ol>
+
+1. Read in the file line by line.
+1. For each line, extract the 3rd column.
+1. Add the value to a central variable where we accumulate the sum.
+
 
 We have already learned earlier how to read a file line by line so
 we only need to know how to process each row and how to extract the
@@ -199,14 +199,15 @@ In Hungarian.
 Hello
 I have *.mc file and need to convert to it .csv file by using mc2csv command, so please tell how to do this
 
-<hr>
+---
+
 Another approach is DBI:
 https://search.cpan.org/~hmbrand/DBD-CSV-0.49/lib/DBD/CSV.pm
 
-<hr>
+---
 
 I think that in the first example without the module of CSV you are not extracting the 3rd column, what you are doing in adding the values of the 3rd column. Ej. 10+7+100+9 = 126
-<hr>
+---
 
 can you please share how do we download a csv file in perl using headers like these
 
@@ -217,9 +218,9 @@ header('Content-Disposition' => "attachment; filename=\"".encode_utf8($filename)
 debug('halting for xsend');
 halt('xsend');
 
-<hr>
+---
 How can i read the variables in csv file as a variables wise and how to write into a txt file as variables wise
 
-<hr>
+---
 Text::CSV seems to ignore the last line of files not ending with a newline. How can this be avoided?
 

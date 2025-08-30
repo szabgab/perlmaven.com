@@ -15,11 +15,10 @@ Getting the last character of a string is a special case of getting [any substri
 ## substr
 
 `substr` lets us get any [substring](/string-functions-length-lc-uc-index-substr).It gets 3 parameters:
-<ol>
-<li>The original string</li>
-<li>offset - where does the substring start</li>
-<li>length - how long is the substring</li>
-</ol>
+
+1. The original string
+1. offset - where does the substring start
+1. length - how long is the substring
 
 (There is also a 4th parameter, to [replace a substring](/string-functions-length-lc-uc-index-substr), but let's not discuss that now.)
 
@@ -85,7 +84,7 @@ if(substr $homeBase, -1 eq '/'){
 chop $homeBase;
 }
 
-<hr>
+---
 
 I actually have what I think is a legitimate use of the `chop`
 I need to process a string, but the processing needs to be disabled in between quotes:
@@ -96,6 +95,7 @@ My solution is to split the string on the double-quote, process the even indices
 Works great, except for the double quote on the end, which will get dropped with the simple algorithm.
 The solution is to add a space to my string, and chop it afterwards:
 
+```perl
 my @quoted_str = split qr/"|$/, $str . q{ };
 my $i = 0;
 while ( $i le $#quoted_str ) {
@@ -104,10 +104,14 @@ while ( $i le $#quoted_str ) {
 $quoted_str[$i] =~ <my_processing_stuff>;
 $i += 2;
 }
+```
 
 # Join the processed substrings back together
+
+```
 $str = join q{"}, @quoted_str;
 chop $str; # <====chop gets it done===
+```
 
 Unless there is a more elegant way to process a string, except for the quoted substrings...
 
