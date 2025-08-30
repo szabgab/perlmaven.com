@@ -113,11 +113,9 @@ git push
 
 After a few minutes I got the e-mail from Coveralls: `coverage increased (+0.1%) to 96.875% for commit: add type and format attributes to included files`. This actually surprised me. After all we have added a conditional statement checking if we can recognize the file-type based on the extension and out of the 3 cases we only covered one.
 
-<ol>
-   <li>no extension</li>
-   <li>extension in the table</li>
-   <li>extension not in the table</li>
-</ol>
+1. no extension
+1. extension in the table
+1. extension not in the table
 
 We only covered the 3rd case.
 

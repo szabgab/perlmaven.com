@@ -54,13 +54,13 @@ This class is set to 'front' on the front page, but the class attribute is missi
 
 On the front page:
 
-```
+```html
 <body id="cpansearch" onload="document.f.query.focus();" class="front">
 ```
 
 On the feedback page:
 
-```
+```html
 <body id="cpansearch">
 ```
 
@@ -72,13 +72,13 @@ So we need to have a way to implement the same.
 
 We replace the original code we had in the template:
 
-```
+```html
 <body id="cpansearch" onload="document.f.query.focus();" class="front">
 ```
 
 with this line:
 
-```
+```html
 <body id="cpansearch" onload="document.f.query.focus();" <% IF front %>class="front"<% END %>>
 ```
 

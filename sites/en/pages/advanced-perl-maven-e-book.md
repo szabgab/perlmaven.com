@@ -23,9 +23,10 @@ It is based on many years of experience teaching Perl,
 blended with the modern features of Perl and CPAN.
 
 ## Table of Content
+
 * Using CPAN in an advanced way (changing @INC, using local::lib etc.)
 * References
-   <ul>
+
 * Handling multi-dimensional, complex data structures
 * Reference counting
 * Debugging data structures
@@ -42,9 +43,9 @@ blended with the modern features of Perl and CPAN.
 * Array and hash slices
 * Creating context sensitive functions using wantarray.
 * Improving speed by using the Schwartzian transformation
-    </ul>
+
 * Libraries and Modules, Package and Namespace
-    <ul>
+
 * Using namespaces for cleaner code
 * Creating a module
 * Exporting functions automatically and on-demand
@@ -52,9 +53,9 @@ blended with the modern features of Perl and CPAN.
 * Packaging modules for distribution
 * Writing unit tests
 * Exception handling
-    </ul>
+
 * Object Oriented Programming in Perl (with and without Moose)
-    <ul>
+
 * Constructor
 * Attributes, attribute types
 * Create your own type
@@ -63,7 +64,7 @@ blended with the modern features of Perl and CPAN.
 * Encapsulation
 * Singleton
 * Destructor
-    </ul>
+
   
 
 By purchasing the e-book you get unlimited updates as new editions are published!
