@@ -48,6 +48,11 @@ show_related: false
 * [Perl::Critic](/perl-critic) lint-like static analyzer for Perl.
 * [Implementing a Markua Parser in Perl 5](/markua)
 
+## Books
+
+* [Perl OOP](/perl-oop/)
+* [Perl Tk](/perl-tk/)
+
 
 ## Code-Maven series
 * [Rust Maven](https://rust.code-maven.com/)
