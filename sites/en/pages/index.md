@@ -50,8 +50,17 @@ show_related: false
 
 ## Books
 
+* [Perl Programming](/perl/)
+* [Advanced Perl Programming](/perl-advanced/)
 * [Perl OOP](/perl-oop/)
 * [Perl Tk](/perl-tk/)
+* [Perl Dancer](/perl-dancer/)
+* [Perl features](/perl-features/)
+* [Perl intro](/perl-intro/)
+* [Perl Oneliners](/perl-oneliners/)
+* [Perl Regular Expression](/perl-regular-expressions/)
+* [Perl Testing](/perl-testing/)
+
 
 
 ## Code-Maven series
