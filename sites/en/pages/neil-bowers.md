@@ -28,18 +28,14 @@ He is also the joint owner of a small bootstrapped Perl-based start-up company.
 
 {% youtube id="GOK8lpiqFMY" file="neilbowers_2013-07-27_10-46-42.mp4" %}
 
-<podcast>
-
 * [The blog of Neil Bowers](http://neilb.org/) "running" on his own, not-yet-published static blog engine. ([NEILB on CPAN](https://metacpan.org/author/NEILB).)
 * [Neil Bowers on blogs.perl.org](http://blogs.perl.org/users/neilb/)
 * The business Neil runs is called [Cogendo](http://www.cogendo.com/) - It provides a web based service (in the cloud) for companies managing setting objectives,
 and doing an appraisal at the end of the year for their employees.
 * Neil mentions the [reviews of CPAN modules](http://neilb.org/reviews/) that he writes,
     and specifically mentioned:
-    <ul>
 * A review of [modules for generating passwords](http://neilb.org/reviews/passwords.html).
 * A review of [modules for parsing User-Agent strings](http://neilb.org/reviews/user-agent.html).
-    </ul>
 
 * Working with [Olaf Alders](http://www.wundercounter.com/) ([OALDERS](https://metacpan.org/author/OALDERS))
     to produce a single module for parsing user agent strings.
@@ -50,7 +46,6 @@ and doing an appraisal at the end of the year for their employees.
 * [Yanick Champoux](https://metacpan.org/author/YANICK)'s [proposal](http://techblog.babyl.ca/entry/metacpan-recommendations)
     and [Tim Bunce](http://blog.timbunce.org/)'s [proposal](http://blog.timbunce.org/2013/03/10/suggested-alternatives-as-a-metacpan-feature/) ([TIMB](https://metacpan.org/author/TIMB)) discussing tagging/recommendations on MetaCPAN
 
-<p>
 Some of the things Neil talked about:
 * Put links to competing / similar / complementary modules in the **SEE ALSO** section of your module.
 * Help other people to solve their problems to get a reputation for being helpful, being a good programmer.

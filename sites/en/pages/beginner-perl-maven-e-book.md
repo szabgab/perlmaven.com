@@ -38,37 +38,36 @@ useful Perl scripts and/or to maintaining existing applications.
 
 * How to install Perl, how to run scripts
 * Basic I/O
-    <ul>
+
 * Printing on the screen
 * Reading from the keyboard
 * Getting rid of trailing newlines
-    </ul>
-  
+
 * Scalar values and variables
-    <ul>
+
 * numbers
 * strings
 * Numerical operators
 * String operators
 * Functions for string manipulation
-    </ul>
-  
+
+
 * Accessing files.
-    <ul>
+
 * Reading from a text file
 * Writing in a file
 * Creating log files
-    </ul>
-  
+
+
 * Control flow
-    <ul>
+
 * Boolean operators
 * if conditional
 * while loop
 * Infinite loop
 * Loop controls
 * for and foreach loops
-    </ul>
+
   
 * Lists and arrays (context)
 * Functions, subroutines

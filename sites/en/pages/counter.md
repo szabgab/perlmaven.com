@@ -62,20 +62,16 @@ This is going to be a long project, but it might help understand various techniq
 * [increasing numbers in a text file](/increase-numbers-in-a-file)
 
 
-<!--
 ## Front-end
 
 * command line
 * web based:
-        <ul>
 * plain CGI
 * CGI with Ajax
 * plain PSGI
 * PSGI with Ajax
 * Dancer
 * Mojolicious
-        </ul>
-    
 
 ## Back-end
 
@@ -89,4 +85,3 @@ This is going to be a long project, but it might help understand various techniq
 *   ? PostgreSQL
 * 1 counter in MongoDB
 * several counters in MongoDB
--->

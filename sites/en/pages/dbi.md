@@ -23,7 +23,7 @@ available for Perl. The most popular being [DBIx::Class (a.k.a. DBIC)](https://m
 
 [Simple database access using Perl DBI and SQL](/simple-database-access-using-perl-dbi-and-sql)
 
-<h2 id="dbd">Database Drivers (DBDs)
+## Database Drivers (DBDs)
 
 * For [Oracle](https://en.wikipedia.org/wiki/Oracle_Database) use [DBD::Oracle](https://metacpan.org/pod/DBD::Oracle).
 * For [Microsoft SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server) you can use either [DBD::ODBC](https://metacpan.org/pod/DBD::ODBC) or [DBD::ADO](https://metacpan.org/pod/DBD::ADO).
@@ -66,12 +66,11 @@ There are some module in the DBD::* namespace that are not Database drivers.
 * [DBIx::Class (a.k.a. DBIC)](https://metacpan.org/pod/DBIx::Class)
 * [Pcore::DBD](https://metacpan.org/pod/Pcore::DBD) works on top of the [Pcore](https://metacpan.org/pod/Pcore) application framework.
      It provides general API for:
-    <ul>
-* Connections cache for use with forks and threads.
-* Query builder with support of particular db server specific syntax.
-* Schema management (apply / revert changesets).
-* More handy functions for fetching data (from my point of view).
-    </ul>
+    * Connections cache for use with forks and threads.
+    * Query builder with support of particular db server specific syntax.
+    * Schema management (apply / revert changesets).
+    * More handy functions for fetching data (from my point of view).
+
 
 
 See also the comprehensive list of all the [DBD modules](https://metacpan.org/search?q=module%3ADBD&size=20&search_type=modules).

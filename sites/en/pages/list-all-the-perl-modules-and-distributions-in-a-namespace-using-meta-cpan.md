@@ -93,7 +93,7 @@ print Dumper [map {$_->{fields}} @{ $r->{hits}{hits} }];
 ```
 
 In this request we fetch the list of **module**s.
-In the **filter** we use the **prefix** of the <b>module.name</b> field.
+In the **filter** we use the **prefix** of the **module.name** field.
 The resulting data structure is quite similar to the earlier one.
 
 ## Generating HTML

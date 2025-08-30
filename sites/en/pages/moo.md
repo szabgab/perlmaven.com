@@ -22,14 +22,14 @@ who would like to get away from the "manual blessing", but don't want to "pay" f
 * [Type checking with Moo](/type-checking-with-moo). While Moo does not have a type-system it allows you to set-up type checking in the setters of the attributes.
 * [MooX::late](/moose-like-type-system-for-moo) provides another type-system, similar to what Moose has.
 * Attributes:
-    <ul>
+
 * [Required attributes](/moo-and-required-attributes)
 * [Moo attributes with default values](/moo-attributes-with-default-values)
 * [Moo with array reference as attributes - with or without default values](/moo-with-array-refernce-as-attribute)
 * [Moo with hash reference as attributes - with or without default values](/moo-with-hash-refernce-as-attribute)
 * [Moo attribute predicate and clearer](/moo-attribute-predicate-and-clearer)
-    </ul>
-  
+
+
 * [Public and Private Methods](/moo-with-public-and-private-methods)
 * [Methods, Functions and Subroutines in Perl and what is $self ?](/methods-functions-and-subroutines-in-perl)
 * [Inheritance and Method Modifiers](/inheritance-and-method-modifiers-in-moo)
@@ -37,9 +37,7 @@ who would like to get away from the "manual blessing", but don't want to "pay" f
 * [Writing Command line scripts and accepting command line parameters using Moo](/command-line-scripts-with-moo)
 * [Singleton](/singleton-moo)
 
-<!--
 ## Planned articles
 * The destructor of a Moo-based class
 * Roles
 * Extending Moo
--->

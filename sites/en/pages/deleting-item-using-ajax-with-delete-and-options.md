@@ -290,7 +290,7 @@ I've added the test code:
 
 ```
 
-and wanted to import the `OPTIONS</a> method from [HTTP::Request::Common](https://metacpan.org/pod/HTTP::Request::Common),
+and wanted to import the `OPTIONS` method from [HTTP::Request::Common](https://metacpan.org/pod/HTTP::Request::Common),
 but apparently it does not support it. There is even an [open ticket](https://rt.cpan.org/Ticket/Display.html?id=68644) from 2011.
 
 For now I am going to leave the test in, commented out and include the link to the ticket. Later we might revisit the issue.
