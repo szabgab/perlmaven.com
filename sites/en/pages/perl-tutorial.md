@@ -75,215 +75,215 @@ Where possible I'll also direct you to some exercises you can do to practice wha
 
 
 **Introduction**
-<ol>
-    <li>[Install Perl, print Hello World, Safety net (use strict, use warnings)](/installing-perl-and-getting-started)</li>
-    <li>[#!/usr/bin/perl - the hash-bang line](/hashbang)</li>
-    <li>[Editors, IDEs, development environment for Perl](/perl-editor)</li>
-    <li>[Getting Help](/help)</li>
-    <li>[Perl on the command line](/perl-on-the-command-line)</li>
-    <li>[Core Perl documentation, CPAN module documentation](/core-perl-documentation-cpan-module-documentation)</li>
-    <li>[POD - Plain Old Documentation](/pod-plain-old-documentation-of-perl)</li>
-    <li>[Debugging Perl scripts](/debugging-perl-scripts)</li>
-</ol>
+
+1. [Install Perl, print Hello World, Safety net (use strict, use warnings)](/installing-perl-and-getting-started)
+1. [#!/usr/bin/perl - the hash-bang line](/hashbang)
+1. [Editors, IDEs, development environment for Perl](/perl-editor)
+1. [Getting Help](/help)
+1. [Perl on the command line](/perl-on-the-command-line)
+1. [Core Perl documentation, CPAN module documentation](/core-perl-documentation-cpan-module-documentation)
+1. [POD - Plain Old Documentation](/pod-plain-old-documentation-of-perl)
+1. [Debugging Perl scripts](/debugging-perl-scripts)
+
 
 **Scalars**
-<ol>
-    <li>[Common warnings and error messages](/common-warnings-and-error-messages)</li>
-    <li>[Prompt, read from STDIN, read from the keyboard](/read-from-stdin)</li>
-    <li>[Automatic string to number conversion](/automatic-value-conversion-or-casting-in-perl)</li>
-    <li>[Conditional statements: if](/if)</li>
-    <li>[Boolean (true and false) values in Perl](/boolean-values-in-perl)</li>
-    <li>[Numerical operators](/numerical-operators)</li>
-    <li>[String operators](/string-operators)</li>
-    <li>[undef, the initial value and the defined function](/undef-and-defined-in-perl)</li>
-    <li>[Strings in Perl: quoted, interpolated and escaped](/quoted-interpolated-and-escaped-strings-in-perl)</li>
-    <li>[Here documents](/here-documents)</li>
-    <li>[Scalar variables](/scalar-variables)</li>
-    <li>[Comparing scalars](/comparing-scalars-in-perl)</li>
-    <li>[String functions: length, lc, uc, index, substr](/string-functions-length-lc-uc-index-substr)</li>
-    <li>[Number Guessing game (rand, int)](/number-guessing-game)</li>
-    <li>[Perl while loop](/while-loop)</li>
-    <li>[Scope of variables in Perl](/scope-of-variables-in-perl)</li>
-    <li>[Boolean Short circuit](/short-circuit)</li>
-</ol>
+
+1. [Common warnings and error messages](/common-warnings-and-error-messages)
+1. [Prompt, read from STDIN, read from the keyboard](/read-from-stdin)
+1. [Automatic string to number conversion](/automatic-value-conversion-or-casting-in-perl)
+1. [Conditional statements: if](/if)
+1. [Boolean (true and false) values in Perl](/boolean-values-in-perl)
+1. [Numerical operators](/numerical-operators)
+1. [String operators](/string-operators)
+1. [undef, the initial value and the defined function](/undef-and-defined-in-perl)
+1. [Strings in Perl: quoted, interpolated and escaped](/quoted-interpolated-and-escaped-strings-in-perl)
+1. [Here documents](/here-documents)
+1. [Scalar variables](/scalar-variables)
+1. [Comparing scalars](/comparing-scalars-in-perl)
+1. [String functions: length, lc, uc, index, substr](/string-functions-length-lc-uc-index-substr)
+1. [Number Guessing game (rand, int)](/number-guessing-game)
+1. [Perl while loop](/while-loop)
+1. [Scope of variables in Perl](/scope-of-variables-in-perl)
+1. [Boolean Short circuit](/short-circuit)
+
 
 **Files**
-<ol>
-    <li>[exit](/how-to-exit-from-perl-script)</li>
-    <li>[Standard Output, Standard Error and command line redirection](/stdout-stderr-and-redirection)</li>
-    <li>[warn](/warn)</li>
-    <li>[die](/die)</li>
-    <li>[Writing to files](/writing-to-files-with-perl)</li>
-    <li>[Appending to files](/appending-to-files)</li>
-    <li>[Open and read from files using Perl](/open-and-read-from-files)</li>
-    <li>[Don't open files in the old way](/open-files-in-the-old-way)</li>
-    <li>[Binary mode - reading and writing binary files](/reading-and-writing-binary-files)</li>
-    <li>[eof, end of file in Perl](/end-of-file-in-perl)</li>
-    <li>[tell](/tell)</li>
-    <li>[seek](/seek)</li>
-    <li>truncate</li>
-    <li>[Slurp mode](/slurp)</li>
-</ol>
+
+1. [exit](/how-to-exit-from-perl-script)
+1. [Standard Output, Standard Error and command line redirection](/stdout-stderr-and-redirection)
+1. [warn](/warn)
+1. [die](/die)
+1. [Writing to files](/writing-to-files-with-perl)
+1. [Appending to files](/appending-to-files)
+1. [Open and read from files using Perl](/open-and-read-from-files)
+1. [Don't open files in the old way](/open-files-in-the-old-way)
+1. [Binary mode - reading and writing binary files](/reading-and-writing-binary-files)
+1. [eof, end of file in Perl](/end-of-file-in-perl)
+1. [tell](/tell)
+1. [seek](/seek)
+1. truncate
+1. [Slurp mode](/slurp)
+
 
 **Lists and Arrays**
-<ol>
-    <li>Perl foreach loop</li>
-    <li>[The for loop in Perl](/for-loop-in-perl)</li>
-    <li>Lists in Perl</li>
-    <li>Using Modules</li>
-    <li>[Arrays in Perl](/perl-arrays)</li>
-    <li>[Process command line parameters @ARGV](/argv-in-perl)</li>
-    <li>[Process command line parameters using Getopt::Long](/how-to-process-command-line-arguments-in-perl)</li>
-    <li>[Advanced usage of Getopt::Long for accepting command line arguments](/advanced-usage-of-getopt-long-accepting-command-line-arguments)</li>
-    <li>[split](/perl-split)</li>
-    <li>[How to read and process a CSV file? (split, Text::CSV_XS)](/how-to-read-a-csv-file-using-perl)</li>
-    <li>[join](/join)</li>
-    <li>[The year of 19100 (time, localtime, gmtime)](/the-year-19100) and introducing context</li>
-    <li>[Context sensitivity in Perl](/scalar-and-list-context-in-perl)</li>
-    <li>[Reading from a file in scalar and list context](/reading-from-a-file-in-scalar-and-list-context)</li>
-    <li>[STDIN in scalar and list context](/stdin-in-scalar-and-list-context)</li>
-    <li>[Sorting arrays in Perl](/sorting-arrays-in-perl)</li>
-    <li>[Sorting mixed strings](/sorting-mixed-strings)</li>
-    <li>[Unique values in an array in Perl](/unique-values-in-an-array-in-perl)</li>
-    <li>[Manipulating Perl arrays: shift, unshift, push, pop](/manipulating-perl-arrays)</li>
-    <li>[Stack](/reverse-polish-calculator-in-perl)</li>
-    <li>[Queue](/using-a-queue-in-perl)</li>
-    <li>[reverse](/reverse)</li>
-    <li>[The ternary operator](/the-ternary-operator-in-perl)</li>
-    <li>[Loop controls: next and last](/loop-controls-next-last)</li>
-    <li>[min, max, sum using List::Util](/min-max-sum-using-list-util)</li>
-    <li>[qw - quote word](/qw-quote-word)</li>
-</ol>
+
+1. Perl foreach loop
+1. [The for loop in Perl](/for-loop-in-perl)
+1. Lists in Perl
+1. Using Modules
+1. [Arrays in Perl](/perl-arrays)
+1. [Process command line parameters @ARGV](/argv-in-perl)
+1. [Process command line parameters using Getopt::Long](/how-to-process-command-line-arguments-in-perl)
+1. [Advanced usage of Getopt::Long for accepting command line arguments](/advanced-usage-of-getopt-long-accepting-command-line-arguments)
+1. [split](/perl-split)
+1. [How to read and process a CSV file? (split, Text::CSV_XS)](/how-to-read-a-csv-file-using-perl)
+1. [join](/join)
+1. [The year of 19100 (time, localtime, gmtime)](/the-year-19100) and introducing context
+1. [Context sensitivity in Perl](/scalar-and-list-context-in-perl)
+1. [Reading from a file in scalar and list context](/reading-from-a-file-in-scalar-and-list-context)
+1. [STDIN in scalar and list context](/stdin-in-scalar-and-list-context)
+1. [Sorting arrays in Perl](/sorting-arrays-in-perl)
+1. [Sorting mixed strings](/sorting-mixed-strings)
+1. [Unique values in an array in Perl](/unique-values-in-an-array-in-perl)
+1. [Manipulating Perl arrays: shift, unshift, push, pop](/manipulating-perl-arrays)
+1. [Stack](/reverse-polish-calculator-in-perl)
+1. [Queue](/using-a-queue-in-perl)
+1. [reverse](/reverse)
+1. [The ternary operator](/the-ternary-operator-in-perl)
+1. [Loop controls: next and last](/loop-controls-next-last)
+1. [min, max, sum using List::Util](/min-max-sum-using-list-util)
+1. [qw - quote word](/qw-quote-word)
+
 
 **Subroutines**
-<ol>
-    <li>[Subroutines and Functions in Perl](/subroutines-and-functions-in-perl)</li>
-    <li>[Passing multiple parameters to a function](/passing-multiple-parameters-to-a-function)</li>
-    <li>[Variable number of parameters](/variable-number-of-parameters)</li>
-    <li>[Returning a list, returning an array](/returning-a-list-from-a-subroutine)</li>
-    <li>[Recursive subroutines](/recursive-subroutines)</li>
-</ol>
+
+1. [Subroutines and Functions in Perl](/subroutines-and-functions-in-perl)
+1. [Passing multiple parameters to a function](/passing-multiple-parameters-to-a-function)
+1. [Variable number of parameters](/variable-number-of-parameters)
+1. [Returning a list, returning an array](/returning-a-list-from-a-subroutine)
+1. [Recursive subroutines](/recursive-subroutines)
+
 
 **Hashes**
-<ol>
-    <li>[Perl Hashes (dictionary, associative array, look-up table)](/perl-hashes)</li>
-    <li>[Creating hash from an array](/creating-hash-from-an-array)</li>
-    <li>[Perl hash in scalar and list context](/perl-hash-in-scalar-and-list-context)</li>
-    <li>[exists](/exists) hash element</li>
-    <li>[delete](/delete) hash elements</li>
-    <li>[Sorting a hash](/how-to-sort-a-hash-in-perl)</li>
-    <li>[Count word frequency in a text file](/count-words-in-text-using-perl)</li>
-</ol>
+
+1. [Perl Hashes (dictionary, associative array, look-up table)](/perl-hashes)
+1. [Creating hash from an array](/creating-hash-from-an-array)
+1. [Perl hash in scalar and list context](/perl-hash-in-scalar-and-list-context)
+1. [exists](/exists) hash element
+1. [delete](/delete) hash elements
+1. [Sorting a hash](/how-to-sort-a-hash-in-perl)
+1. [Count word frequency in a text file](/count-words-in-text-using-perl)
+
 
 **Regular Expressions**
-<ol>
-    <li>[Introduction to Regular Expressions in Perl](/introduction-to-regexes-in-perl)</li>
-    <li>[Regex: character classes](/regex-character-classes)</li>
-    <li>[Regex: special character classes](/regex-special-character-classes)</li>
-    <li>[Regex: quantifiers](/regex-quantifiers)</li>
-    <li>Regex: Greedy and non-greedy match</li>
-    <li>Regex: Grouping and capturing</li>
-    <li>Regex: Anchors</li>
-    <li>Regex options and modifiers</li>
-    <li>Substitutions (search and replace)</li>
-    <li>[trim - remove leading and trailing spaces](/trim)</li>
-    <li>[Perl 5 Regex Cheat sheet](/regex-cheat-sheet)</li>
-</ol>
+
+1. [Introduction to Regular Expressions in Perl](/introduction-to-regexes-in-perl)
+1. [Regex: character classes](/regex-character-classes)
+1. [Regex: special character classes](/regex-special-character-classes)
+1. [Regex: quantifiers](/regex-quantifiers)
+1. Regex: Greedy and non-greedy match
+1. Regex: Grouping and capturing
+1. Regex: Anchors
+1. Regex options and modifiers
+1. Substitutions (search and replace)
+1. [trim - remove leading and trailing spaces](/trim)
+1. [Perl 5 Regex Cheat sheet](/regex-cheat-sheet)
+
 
 **Shell related functionality**
-<ol>
-    <li>[Perl -X operators](/file-test-operators)</li>
-    <li>Perl pipes</li>
-    <li>Unix commands: chmod, chown, cd, mkdir, rmdir, ln, ls</li>
-    <li>Unix commands: [pwd - current working directory](/current-working-directory)</li>
-    <li>Running external programs [using system](/running-external-programs-from-perl)</li>
-    <li>[Capturning the output of an external program using qx or backticks](/qx)</li>
-    <li>Capturing output asynchronously</li>
-    <li>Capturing both STDOUT and STDERR</li>
-    <li>Unix commands: rm, mv, cp: [How to remove, copy or rename a file with Perl](/how-to-remove-copy-or-rename-a-file-with-perl)</li>
-    <li>Windows/DOS commands: del, ren, dir</li>
-    <li>File globbing (Wildcards)</li>
-    <li>[Directory handles](/reading-the-content-of-a-directory)</li>
-    <li>Traversing directory tree [manually with recursion](/recursive-subroutines)</li>
-    <li>Traversing directory tree [manually using a queue](/traversing-the-filesystem-using-a-queue) and using find.</li>
-</ol>
+
+1. [Perl -X operators](/file-test-operators)
+1. Perl pipes
+1. Unix commands: chmod, chown, cd, mkdir, rmdir, ln, ls
+1. Unix commands: [pwd - current working directory](/current-working-directory)
+1. Running external programs [using system](/running-external-programs-from-perl)
+1. [Capturning the output of an external program using qx or backticks](/qx)
+1. Capturing output asynchronously
+1. Capturing both STDOUT and STDERR
+1. Unix commands: rm, mv, cp: [How to remove, copy or rename a file with Perl](/how-to-remove-copy-or-rename-a-file-with-perl)
+1. Windows/DOS commands: del, ren, dir
+1. File globbing (Wildcards)
+1. [Directory handles](/reading-the-content-of-a-directory)
+1. Traversing directory tree [manually with recursion](/recursive-subroutines)
+1. Traversing directory tree [manually using a queue](/traversing-the-filesystem-using-a-queue) and using find.
+
 
 **CPAN**
-<ol>
-    <li>[Download and install Perl (Strawberry Perl or manual compilation)](/download-and-install-perl)</li>
-    <li>Download and install Perl using Perlbrew</li>
-    <li>Locating and evaluating CPAN modules</li>
-    <li>[Downloading and installing Perl Modules from CPAN](/how-to-install-a-perl-module-from-cpan)</li>
-    <li>[How to change @INC to find Perl modules in non-standard locations?](/how-to-change-inc-to-find-perl-modules-in-non-standard-locations)</li>
-    <li>[How to change @INC to a relative directory](/how-to-add-a-relative-directory-to-inc)</li>
-    <li>local::lib</li>
-</ol>
+
+1. [Download and install Perl (Strawberry Perl or manual compilation)](/download-and-install-perl)
+1. Download and install Perl using Perlbrew
+1. Locating and evaluating CPAN modules
+1. [Downloading and installing Perl Modules from CPAN](/how-to-install-a-perl-module-from-cpan)
+1. [How to change @INC to find Perl modules in non-standard locations?](/how-to-change-inc-to-find-perl-modules-in-non-standard-locations)
+1. [How to change @INC to a relative directory](/how-to-add-a-relative-directory-to-inc)
+1. local::lib
+
 
 **Examples for using Perl**
-<ol>
-    <li>[How to replace a string in a file with Perl? (slurp)](/how-to-replace-a-string-in-a-file-with-perl)</li>
-    <li>[Reading Excel files using Perl](/read-an-excel-file-in-perl)</li>
-    <li>[Creating Excel files using Perl](/create-an-excel-file-with-perl)</li>
-    <li>[Sending e-mail using Perl](/sending-html-email-using-email-stuffer)</li>
-    <li>[CGI scripts with Perl](/perl-cgi-script-with-apache2)</li>
-    <li>Parsing XML files</li>
-    <li>[Reading and writing JSON files](/json)</li>
-    <li>[Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)](/simple-database-access-using-perl-dbi-and-sql)</li>
-    <li>[Accessing LDAP using Perl](/reading-from-ldap-in-perl-using-net-ldap)</li>
-</ol>
+
+1. [How to replace a string in a file with Perl? (slurp)](/how-to-replace-a-string-in-a-file-with-perl)
+1. [Reading Excel files using Perl](/read-an-excel-file-in-perl)
+1. [Creating Excel files using Perl](/create-an-excel-file-with-perl)
+1. [Sending e-mail using Perl](/sending-html-email-using-email-stuffer)
+1. [CGI scripts with Perl](/perl-cgi-script-with-apache2)
+1. Parsing XML files
+1. [Reading and writing JSON files](/json)
+1. [Database access using Perl (DBI, DBD::SQLite, MySQL, PostgreSQL, ODBC)](/simple-database-access-using-perl-dbi-and-sql)
+1. [Accessing LDAP using Perl](/reading-from-ldap-in-perl-using-net-ldap)
+
 
 **Common warnings and error messages**
-<ol>
-    <li>[Global symbol requires explicit package name](/global-symbol-requires-explicit-package-name) ...</li>
-    <li>.. also explained in [Variable declaration in Perl](/variable-declaration-in-perl)</li>
-    <li>[Use of uninitialized value](/use-of-uninitialized-value)</li>
-    <li>[Bareword not allowed while "strict subs" in use](/barewords-in-perl)</li>
-    <li>[Name "main::x" used only once: possible typo at ...](/name-used-only-once-possible-typo)</li>
-    <li>[Unknown warnings category](/unknown-warnings-category)</li>
-    <li>[Can't use string (...) as a HASH ref while "strict refs" in use at ...](/cant-use-string-as-a-hash-ref-while-strict-refs-in-use) ...</li>
-    <li>... explained in [Symbolic references in Perl](/symbolic-reference-in-perl)</li>
-    <li>[Can't locate ... in @INC](/cant-locate-in-inc)</li>
-    <li>[Scalar found where operator expected](/scalar-found-where-operator-expected)</li>
-    <li>["my" variable masks earlier declaration in same scope](/my-variable-masks-earlier-declaration-in-same-scope)</li>
-    <li>[Can't call method ... on unblessed reference](/cant-call-method-on-unblessed-reference)</li>
-    <li>[Argument ... isn't numeric in numeric ...](/argument-isnt-numeric-in-numeric)</li>
-    <li>[Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?)](/cant-locate-object-method-via-package-1)</li>
-    <li>[Odd number of elements in hash assignment](/creating-hash-from-an-array)</li>
-    <li>[Possible attempt to separate words with commas](/qw-quote-word)</li>
-    <li>[Undefined subroutine ... called](/autoload)</li>
-    <li>[Useless use of hash element in void context](/useless-use-of-hash-element-in-void-context)</li>
-    <li>[Useless use of private variable in void context](/useless-use-of-private-variable-in-void-context)</li>
-    <li>[readline() on closed filehandle](/readline-on-closed-filehandle)</li>
-    <li>[Possible precedence issue with control flow operator](/possible-precedence-issue-with-control-flow-operator)</li>
-    <li>[Scalar value better written as ...](/scalar-value-better-written-as)</li>
-    <li>[substr outside of string at ...](/substr-outside-of-string)</li>
-    <li>[Have exceeded the maximum number of attempts (1000) to open temp file/dir](/have-exceeded-the-maximum-number-of-attempts)</li>
-    <li>[Deep recursion on subroutine](/deep-recursion-on-subroutine)</li>
-    <li>[Use of implicit split to @_ is deprecated ...](/use-of-implicit-split-to-is-deprecated)</li>
-</ol>
+
+1. [Global symbol requires explicit package name](/global-symbol-requires-explicit-package-name) ...
+1. .. also explained in [Variable declaration in Perl](/variable-declaration-in-perl)
+1. [Use of uninitialized value](/use-of-uninitialized-value)
+1. [Bareword not allowed while "strict subs" in use](/barewords-in-perl)
+1. [Name "main::x" used only once: possible typo at ...](/name-used-only-once-possible-typo)
+1. [Unknown warnings category](/unknown-warnings-category)
+1. [Can't use string (...) as a HASH ref while "strict refs" in use at ...](/cant-use-string-as-a-hash-ref-while-strict-refs-in-use) ...
+1. ... explained in [Symbolic references in Perl](/symbolic-reference-in-perl)
+1. [Can't locate ... in @INC](/cant-locate-in-inc)
+1. [Scalar found where operator expected](/scalar-found-where-operator-expected)
+1. ["my" variable masks earlier declaration in same scope](/my-variable-masks-earlier-declaration-in-same-scope)
+1. [Can't call method ... on unblessed reference](/cant-call-method-on-unblessed-reference)
+1. [Argument ... isn't numeric in numeric ...](/argument-isnt-numeric-in-numeric)
+1. [Can't locate object method "..." via package "1" (perhaps you forgot to load "1"?)](/cant-locate-object-method-via-package-1)
+1. [Odd number of elements in hash assignment](/creating-hash-from-an-array)
+1. [Possible attempt to separate words with commas](/qw-quote-word)
+1. [Undefined subroutine ... called](/autoload)
+1. [Useless use of hash element in void context](/useless-use-of-hash-element-in-void-context)
+1. [Useless use of private variable in void context](/useless-use-of-private-variable-in-void-context)
+1. [readline() on closed filehandle](/readline-on-closed-filehandle)
+1. [Possible precedence issue with control flow operator](/possible-precedence-issue-with-control-flow-operator)
+1. [Scalar value better written as ...](/scalar-value-better-written-as)
+1. [substr outside of string at ...](/substr-outside-of-string)
+1. [Have exceeded the maximum number of attempts (1000) to open temp file/dir](/have-exceeded-the-maximum-number-of-attempts)
+1. [Deep recursion on subroutine](/deep-recursion-on-subroutine)
+1. [Use of implicit split to @_ is deprecated ...](/use-of-implicit-split-to-is-deprecated)
+
 
 **Extra articles**
-<ol>
-    <li>[Multi dimensional arrays](/multi-dimensional-arrays-in-perl)</li>
-    <li>[Multi dimensional hashes](/multi-dimensional-hashes)</li>
-    <li>[Minimal requirement to build a sane CPAN package](/minimal-requirement-to-build-a-sane-cpan-package)</li>
-    <li>[Statement modifiers: reversed if statements](/statement-modifiers)</li>
-    <li>[autovivification](/autovivification)</li>
-    <li>[Formatted printing in Perl](/printf) using printf and sprintf</li>
-</ol>
+
+1. [Multi dimensional arrays](/multi-dimensional-arrays-in-perl)
+1. [Multi dimensional hashes](/multi-dimensional-hashes)
+1. [Minimal requirement to build a sane CPAN package](/minimal-requirement-to-build-a-sane-cpan-package)
+1. [Statement modifiers: reversed if statements](/statement-modifiers)
+1. [autovivification](/autovivification)
+1. [Formatted printing in Perl](/printf) using printf and sprintf
+
 
 **From other books**
-<ol>
-    <li>[Splice to slice and dice arrays in Perl](/splice-to-slice-and-dice-arrays-in-perl)</li>
-    <li>[How to improve your Perl code](/how-to-improve-my-perl-program)</li>
-</ol>
+
+1. [Splice to slice and dice arrays in Perl](/splice-to-slice-and-dice-arrays-in-perl)
+1. [How to improve your Perl code](/how-to-improve-my-perl-program)
+
 
 **Object Oriented Perl with Moose or Moo**
 
 There is a whole series of articles on writing Object Oriented code, using the
 light-weight [Moo](/moo) OOP framework or the full-blown [Moose](/moose) OOP framework.
 
-<hr>
+---
 
 There is a corresponding [video courses](/beginner-perl-maven-video-course) and the whole tutorial
 is available as [eBook](https://leanpub.com/perl-maven/).

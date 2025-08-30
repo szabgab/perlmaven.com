@@ -28,14 +28,14 @@ For this I need to run the **whois** command for each domain and then look at th
 Let's see how can I automate this.
 
 
-<h2 id="whole">The whole script
+## The whole script
 
 Look at the whole script, or jump to the [explanations](#explanation)
 
 {% include file="examples/whois.pl" %}
 
 
-<h2 id="explanation">Explanation
+## Explanation
 
 I looked around and decided to use [Net::Whois::Raw](https://metacpan.org/pod/Net::Whois::Raw).
 I did not remember it, but apparently I even maintained it a bit after the original author passed away.
@@ -238,12 +238,11 @@ Instead of a regex, here I decided to iterate over the lines.
 I could not use the flip-flop operator of perl as the whole array ended just after the
 last name server entry, so I had to use my own flag `$in_ns` to indicate when we
 are inside the section of the name servers.
-<ol>
-  <li>The first `if` statement will notice the title of the section.</li>
-  <li>The second `if` statement is there only in case the name server section is not the
-  last one for some domains.</li>
-  <li>The third `if` statement is collecting the name servers (after removing the leading and trailing spaces).</li>
-</ol>
+
+1. The first `if` statement will notice the title of the section.
+1. The second `if` statement is there only in case the name server section is not the last one for some domains.
+1. The third `if` statement is collecting the name servers (after removing the leading and trailing spaces).
+
 
 
 ## Checking the Name servers
@@ -326,7 +325,7 @@ In a separate article I'll solve the same problem using **Asynchronous** program
 
 Thank you a lot Gabor! Especially for the explanation
 
-<hr>
+---
 
 Hello Gabor,
 
@@ -353,6 +352,6 @@ I also found the bug in the code. I am not sure if this part never worked or if 
 Now it seems to work.
 
 
-<hr>
+---
 
 
