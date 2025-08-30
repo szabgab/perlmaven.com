@@ -15,12 +15,10 @@ and [never the old way](/open-files-in-the-old-way).
 
 Note the [open](/open-and-read-from-files) call has 3 parameters:
 
-<ol>
-  <li>The holder of the file-handle which has been just created.  `open` will assign the file-handle to it.</li>
-  <li>The mode of open. (to read, to write,  to append, etc.)</li>
-  <li>Supply the encoding (utf8 in our case).</li>
-  <li>Path to the file.</li>
-</ol>
+1. The holder of the file-handle which has been just created.  `open` will assign the file-handle to it.
+1. The mode of open. (to read, to write,  to append, etc.)
+1. Supply the encoding (utf8 in our case).
+1. Path to the file.
 
 
 ## Comment to the experts

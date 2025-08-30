@@ -36,14 +36,14 @@ The output will look like this:
 
 Here is how that script is being processed:
 
-<ol>
-   <li>Compile the "First" print</li>
-   <li>Compile the BEGIN block</li>
-   <li>Execute the BEGIN block</li>
-   <li>Compile the "Second" print</li>
-   <li>Execute the "First" print</li>
-   <li>Execute the "Second" print</li>
-</ol>
+
+ * Compile the "First" print
+ * Compile the BEGIN block
+ * Execute the BEGIN block
+ * Compile the "Second" print
+ * Execute the "First" print
+ * Execute the "Second" print
+
 
 You see, the BEGIN block gets executed before the Second part gets compiled.
 Of course we have not really seen that but trust me, that's how it works.
@@ -95,18 +95,18 @@ Goodbye
 
 The order of compilation/execution is the following:
 
-<ol>
-  <li>Compile `print "Start\n";`</li>
-  <li>Compile `print "First BEGIN\n";`</li>
-  <li>Execute `print "First BEGIN\n";`</li>
-  <li>Compile `print "Between the two\n";`</li>
-  <li>Compile `print "Second BEGIN\n";`</li>
-  <li>Execute `print "Second BEGIN\n";`</li>
-  <li>Compile `print "Goodbye\n";`</li>
-  <li>Execute `print "Start\n";`</li>
-  <li>Execute `print "Between the two\n";`</li>
-  <li>Execute `print "Goodbye\n";`</li>
-</ol>
+
+* Compile `print "Start\n";`
+* Compile `print "First BEGIN\n";`
+* Execute `print "First BEGIN\n";`
+* Compile `print "Between the two\n";`
+* Compile `print "Second BEGIN\n";`
+* Execute `print "Second BEGIN\n";`
+* Compile `print "Goodbye\n";`
+* Execute `print "Start\n";`
+* Execute `print "Between the two\n";`
+* Execute `print "Goodbye\n";`
+
 
 ## Why is this good?
 

@@ -321,17 +321,15 @@ and the result is
 
 Let me quote the story **Garu** has written in response to my inquiry about the usefulness of `use warnings`.
 
-<quote>
-This client **had** warnings enabled but simply ignored them, because "it was working".
-It was a high traffic site and the log issued pages and pages of warnings per second - completely useless.
-So I took it as a mission to clear out all warnings.
-We uncovered TONS of small bugs like undefined variables being interpolated into strings (that were shown to the customers), and even code that wasn't doing anything at all (void context).
-After a few days the logs had almost no warnings and it was super easy to catch issues in production as they happened.
-
-This other client had an issue with sub X not working properly. We updated it but it made no difference. We added debug statements, nothing. It was as if it wasn't being called. use warnings. "Subroutine X redefined at". (interestingly, the client thought they had warnings enabled because of a module that imported strict/warnings, but that module was factored out and the code lost those pragmas).
-
-I have never really tested this, but my perception is that by far the biggest benefit I got from warnings is catching typos in hash keys, like `$user->{naems}` when you meant 'names'.
-</quote>
+> This client **had** warnings enabled but simply ignored them, because "it was working".
+> It was a high traffic site and the log issued pages and pages of warnings per second - completely useless.
+> So I took it as a mission to clear out all warnings.
+> We uncovered TONS of small bugs like undefined variables being interpolated into strings (that were shown to the customers), and even code that wasn't doing anything at all (void context).
+> After a few days the logs had almost no warnings and it was super easy to catch issues in production as they happened.
+>
+> This other client had an issue with sub X not working properly. We updated it but it made no difference. We added debug statements, nothing. It was as if it wasn't being called. use warnings. "Subroutine X redefined at". (interestingly, the client thought they had warnings enabled because of a module that imported strict/warnings, but that module was factored out and the code lost those pragmas).
+>
+> I have never really tested this, but my perception is that by far the biggest benefit I got from warnings is catching typos in hash keys, like `$user->{naems}` when you meant 'names'.
 
 
 ## A warning about warnings
@@ -373,8 +371,7 @@ At the last placed I worked we did this in production code. One major agurment i
 And especially with the product Mark and I were working on, it was entirely likely that customers running production code could run into situations we hadn't anticipated in our development and testing.
 
 
-<hr>
-
+---
 Aside from code cleanup and ensuring that unutilized values and core functions missing items, the bugs that warnings catches tend to be minor/trivial/non-consequential. Additionally a huge number of modules which are commonly used won't comply in all cases with use warnings resulting in erroneous warnings for errors which aren't really errors.
 
 I can see using warnings as a way to ensure clean code *style* from the stand point of variable allocation, sigils, but I've never found it useful for general day to day programming and debugging.
@@ -398,12 +395,10 @@ I, for one, would rather have my software throw an exception and crash if it rea
 
 Of course, it might be that your software don't do anything important to begin with, so it's more important to you that it run without producing warnings when it encounters bugs than it is for it to produce consistent and CORRECT output. In my job, on the other hand, I want my software to crash with an error rather than silently produce incorrect results.
 
-<hr>
-
+---
 Absolutely. Warnings are, if anything, *more* important than strict.
 
 And where possible, make them FATAL.
 
-<hr>
-
+---
 
