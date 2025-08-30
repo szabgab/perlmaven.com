@@ -10,7 +10,7 @@ show_related: false
 
 There are people who use Perl for tasks in **system administration** or in
 **configuration management**.
-<br />
+
 Others build **web sites** or **web application** using Perl.
 Yet others only need it for **small scripts**. Or so they were told.
 Some people use Perl for **Bioinformatics** or for some other form of
@@ -63,7 +63,7 @@ listing all the people:
 * Alexander Karelas
 * Neil Hainer
 
-<h2 id="translations">Translations
+## Translations
 
 Thanks to several enthusiastic volunteers, the site is being translated into several other languages.
 If you'd like to help with any of the these languages, or if you'd like to translate the pages to other
@@ -73,8 +73,8 @@ languages, please contact Gabor.
 
 See on the [meta](https://meta.perlmaven.com/) site.
 
-<h2 id="contact">Contact information
-<p>
+## Contact information
+
 E-mail: gabor@perlmaven.com
 
 If you are interested in the solutions that are published here, please
@@ -83,8 +83,8 @@ You'll be notified when a new article is published.
 
 ## Founder & Chief Editor
 
-<div class="about">
-<img src="/img/szabgab.png" alt="Gabor Szabo" />
+![Gabor Szabo](/img/szabgab.png])
+
 I am [Gabor Szabo](https://szabgab.com/),
 long time Perl developer and Perl trainer.
 I have been using Perl since 1995, and teaching Perl in corporate class rooms since 2000.
@@ -94,5 +94,4 @@ help you use the Perl programming language to solve problems.
 The original creator of [Padre, the Perl IDE](http://padre.perlide.org/),
 the curator of the [Perl Weekly newsletter](http://perlweekly.com/)
 and recipient of the White Camel award of the Perl community.
-</div>
 

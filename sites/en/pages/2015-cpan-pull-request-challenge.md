@@ -39,7 +39,7 @@ To sign up to the 2015 CPAN Pull Request Challenge send an e-mail to [Neil Bower
 ## Related articles
 
 CPAN Day was a one-day event organized by Neil, the same person who runs the CPAN Pull Request Challenge, and he wrote quite a few articles for that day.
-Most of them are relevant to this challenge as well.  [CPAN Day - start your engines!](http://blogs.perl.org/users/neilb/2014/08/cpan-day---start-your-engines.html)<
+Most of them are relevant to this challenge as well.  [CPAN Day - start your engines!](http://blogs.perl.org/users/neilb/2014/08/cpan-day---start-your-engines.html)
 
 * [Specify the min perl version for the distribution](http://blogs.perl.org/users/neilb/2014/08/specify-the-min-perl-version-for-your-distribution.html)
 * [Put your CPAN distributions on github](http://blogs.perl.org/users/neilb/2014/08/put-your-cpan-distributions-on-github.html) (this is mostly relevant to the author or if you are taking over maintenance)
@@ -73,7 +73,7 @@ And a few other related articles:
 * 2015.01.07 [CPAN Pull Request Challenge 2015- Day 1](http://herlug.org.uk/?q=CPANPullRequestChallengeDay1) by lesleyb
 * 2015.01.08 [CPAN Pull Request Challenge: The Pull Request](http://tinypig2.blogspot.co.il/2015/01/cpan-pull-request-challenge-pull-request.html) by David Bradford
 * 2015.01.09 [Finding Fixes for Crypt::OpenSSL::X509](http://jameshunt.us/writings/cpanpr-2015-jan.html) by James Hunt
-* 2015.01.11 [CPAN Pull Request Challenge for January: DateTime::Format::Epoch](https://huntingbears.nl/2015/01/11/cpan-pull-request-challenge-for-january-datetimeformatepoch/) by Michiel Beijen</a>
+* 2015.01.11 [CPAN Pull Request Challenge for January: DateTime::Format::Epoch](https://huntingbears.nl/2015/01/11/cpan-pull-request-challenge-for-january-datetimeformatepoch/) by Michiel Beijen
 * 2015.01.11 [My first Pull request](http://herlug.org.uk/?q=node/5) by lesleyb
 * 2015.01.11 [CPAN Pull Request Challenge (PRC) 2015 - Introduction / January (Plack::Session::State::URI) ](http://www.bambams.ca/2015/01/cpan-pull-request-challenge-prc-2015.html) by Brandon McCaig
 * 2015.01.14 [PR-Challenge: January](http://blogs.perl.org/users/alberto_simoes/2015/01/pr-challenge-january.html)  by Alberto Simões
@@ -143,10 +143,6 @@ And a few other related articles:
 ### December
 * 2015.12.30 [CPAN Pull Request Challenge - December](https://www.doyleyoung.net/cpan-pull-request-challenge-december/) by Doyle Young
 * 2016.01.02 [Mocking a User Agent](http://blogs.perl.org/users/e_choroba/2016/01/post.html) by E. Choroba
-
-<!-- Template for adding new blogposts:
-  <li>2015.. <a href=""></a> by </li>
--->
 
 
 ## German
