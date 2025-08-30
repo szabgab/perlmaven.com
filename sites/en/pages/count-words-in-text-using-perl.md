@@ -32,11 +32,10 @@ The following script counts the frequency of strings separated by spaces:
 ## The task
 
 The task basically has 3 parts:
-<ol>
-<li>Go over the (sub)strings one-by-one.</li>
-<li>Store the number of occurrence of each string in a hash.</li>
-<li>Generate the report.</li>
-</ol>
+
+1. Go over the (sub)strings one-by-one.
+1. Store the number of occurrence of each string in a hash.
+1. Generate the report.
 
 We won't spend a lot of time on the report part. We assume that each string we want
 to count is less than 30 characters long so they will comfortably fit in one
@@ -221,7 +220,7 @@ printf "%-31s %s\n", $str, $count{$str};
 
 Why not search on this site how to write to a file and then solve it yourself?
 
-<hr>
+---
 
 noob to perl is there a better way for achieving this?
 

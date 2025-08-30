@@ -230,11 +230,9 @@ As you can see the I changed `FILEHANDLE` to be the lexical scalar `$FILEHANDLE`
 using 3 parameters in the `open` function and also put the name of the file in a variable.
 
 This last step is important for two reasons:
-<ol>
-  <li>It will make it easier to pass the name of the file as a parameter, if we need it.`
-  <li>We won't fall in the trap of changing the name in the `open()` call, and leaving the old name in the
-`die()` call and getting confused by the error message.</li>
-</ol>
+
+1. It will make it easier to pass the name of the file as a parameter, if we need it.`
+1. We won't fall in the trap of changing the name in the `open()` call, and leaving the old name in the `die()` call and getting confused by the error message.
 
 ## Better variable names
 

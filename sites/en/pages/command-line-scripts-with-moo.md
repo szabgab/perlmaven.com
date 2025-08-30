@@ -98,7 +98,7 @@ attribute (it is not `required`) called `verbose`. We need to declare it:
 `has verbose => (is => 'ro');`, we need to receive it from the command line along
 with the other parameter: `my ($file, $verbose) = @ARGV;`, and finally
 we need to pass it to the constructor:
-<h>main->new(file => $file, verbose => $verbose)->run;`.
+`main->new(file => $file, verbose => $verbose)->run;`.
 
 Again, we had to repeat ourself 3 times, but probably worse than that,
 the growing number of command line parameters require us to remember their order.
@@ -123,10 +123,8 @@ So will `perl process.pl data.txt 42` by the way.
 
 We have two major issues:
 
-<ol>
-<li>Every new option has to be dealt with in 3 places.</li>
-<li>The positional nature of the options does not provide enough flexibility.</li>
-</ol>
+1. Every new option has to be dealt with in 3 places.
+1. The positional nature of the options does not provide enough flexibility.
 
 The latter could be dealt with [Getopt::Long](http://metacpan.org/module/Getopt::Long),
 but using Moo we have a better way to handle this.
@@ -196,7 +194,7 @@ Unfortunately the output of `perl process.pl` does not change,
 even though I think it could have indicated that `--file` expects a value.
 (Feature request submitted.)
 
-In addition to `s`, the `format` option can also get the value `i</h>
+In addition to `s`, the `format` option can also get the value `i`
 indicating an integer or `f` indicating a floating point number.
 (Thought it seems f also accepts values such as 1.2.3.4.5. Bug reported.)
 

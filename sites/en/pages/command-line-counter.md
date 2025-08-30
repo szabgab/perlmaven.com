@@ -34,11 +34,8 @@ During the execution of the script we will hold the value of the counter in the 
 
 Next we should be reading in the previous value of the counter. However, before we run the script for the first file, the file holding the number does not exist.  Hence we need to do two things.
 
-<ol>
-  <li>When we declare `$counter` using the `my` keyword we also initialize it to the default value of 0.
-     This way, even if the counter.txt file does not exist yet we can pretend that the previous value 0.</li>
-  <li>Then, before we attempt to open the 'counter.txt' file for reading, we check if it already exists using the `-e` operator.</li>
-</ol>
+1. When we declare `$counter` using the `my` keyword we also initialize it to the default value of 0.  This way, even if the counter.txt file does not exist yet we can pretend that the previous value 0.
+1. Then, before we attempt to open the 'counter.txt' file for reading, we check if it already exists using the `-e` operator.
 
 Because at the first run the file does not exist, let's skip this code now and let's go straight to the part after the closing curly brace (`}`).
 
@@ -97,6 +94,5 @@ Am I correct in assuming that if I use your above on a very modern, multi-proces
 
 Thanks for a good explanation. I often read your stuff, and you lay it out pretty well to be understandable.
 
-<hr>
-
+---
 

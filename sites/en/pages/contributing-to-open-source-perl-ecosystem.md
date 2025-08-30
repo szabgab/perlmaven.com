@@ -33,23 +33,19 @@ and any [web site powered by Perl](/web-sites-powered-by-perl-with-open-source-c
 * [CPAN PR Challenge](#cpan-prc)
 * [Adding examples to Rosetta Code](#rosetta)
 
-<h2 id="vcs">Link to Version Control system
+## Link to Version Control system
 
 For some distributions [MetaCPAN](https://metacpan.org/) shows a link to the version control system where the code is maintained.
 The link is usually called "Clone repository". It is taken from the `META.json` file included in the distribution.
-Having this link makes it easier to everyone to contribute to the distribution. The task here is to look at the 
+Having this link makes it easier to everyone to contribute to the distribution. The task here is to look at the
 [recently uploaded distributions](https://metacpan.org/recent) if they have this link or not.
 If not, then try add add it.
 
-<ol>
-  <li>Try to find the repository:
-    <ol>
-      <li>Check if other distributions of the same author have such link. If yes, the repository of this distribution might be next to it.</li>
-      <li>In [GitHub](https://github.com/) search for the name of the distribution and/or the name of the module.</li>
-      <li>Send an e-mail to the author (more specifically the person who uploaded the most recent version of the distribution) and ask them.</li>
-    </ol></li>
-  <li>Patch the code using the explanation in the article on [how to link to the version control system of a CPAN distribution](/how-to-add-link-to-version-control-system-of-a-cpan-distributions) and send the patch (or the pull request) to the current maintainer.</li>
-</ol>
+1. Try to find the repository:
+      1. Check if other distributions of the same author have such link. If yes, the repository of this distribution might be next to it.
+      1. In [GitHub](https://github.com/) search for the name of the distribution and/or the name of the module.
+      1. Send an e-mail to the author (more specifically the person who uploaded the most recent version of the distribution) and ask them.
+1. Patch the code using the explanation in the article on [how to link to the version control system of a CPAN distribution](/how-to-add-link-to-version-control-system-of-a-cpan-distributions) and send the patch (or the pull request) to the current maintainer.
 
 Required skills:
 
@@ -59,12 +55,12 @@ Required skills:
 
 Relevant to CPAN modules.
 
-<h2 id="travis">Add Travis-CI to GitHub repository
+## Add Travis-CI to GitHub repository
 
 [Travis-CI](https://travis-ci.org/) provides continuous integration for any code hosted on GitHub. It is free of charge
 if the code is in a public repository.
 
-* Look at the [recently uploaded distributions](https://metacpan.org/recent) if they have a GitHub repository and if that repository does not have a `.travis.yml` file.<li>
+* Look at the [recently uploaded distributions](https://metacpan.org/recent) if they have a GitHub repository and if that repository does not have a `.travis.yml` file.
 * Fork and then clone the repository.
 * Run the tests locally on your computer. Learn which modules are recommended for the testing that are not required. You can tell Travis to install those before running the tests.
 * Send a pull request with a well constructed `.travis.yml` file.
@@ -106,7 +102,7 @@ perl:
   - "5.10"
 before_install:
   - eval $(curl https://travis-perl.github.io/init) --auto
-  - cpanm --notest Test::Code::TidyAll 
+  - cpanm --notest Test::Code::TidyAll
   - cpanm --notest Test::Perl::Critic
   - cpanm --notest Test::Version
 services:
@@ -116,7 +112,7 @@ services:
 You can take a look at the [list of most recent releases](/recent) where you can find which ones have no Travis-CI configuration.
 Fixing those, "while they are hot" is a good approach.
 
-<h2 id="issues">Fix any issue reported against the distribution
+## Fix any issue reported against the distribution
 
 When looking at the page of any of the distributions on [MetaCPAN](https://metacpan.org/) you will find a link to "issues", usually with a number next to it. Click on the link
 to see the list of open "issues": bugs, feature requests, and the occassional spam.
@@ -130,10 +126,10 @@ Required skills:
 
 * The testing system of Perl
 * The level of Perl is very much depends on the complexity of the bug. For writing a test you probably don't need such deep understanding of Perl.
-* XS and maybe C - for modules that are not pure Perl, you will 
+* XS and maybe C - for modules that are not pure Perl, you will
 
 
-<h2 id="pod">Improve documentation, examples for common use cases
+## Improve documentation, examples for common use cases
 
 Most modules come witha **SYNOPSIS** that shows the basic usage of the module, but in many cases that's not a full example and it
 only show a very limited usage of the module.
@@ -151,14 +147,14 @@ Required skills:
 * The capability to see things as a beginner (for that particular module)
 
 
-<h2 id="tests">Add tests to increase test coverage
+## Add tests to increase test coverage
 
 * Using [Devel::Cover](https://metacpan.org/pod/Devel::Cover) check which parts of the code have been exercised during the test execution.
 * Check the areas that were never called. Are they in use? Could they be removed? If they can be removed, send that as a patch to the author.
 * If they are still in use then write test cases that exercise those parts of the code.
 
 
-<h2 id="adopt">Adopt a CPAN module
+## Adopt a CPAN module
 
 This might be more than "low hanging fruit", but adopting a CPAN module and becoming its maintainer is a great way to contribute.
 There is a [list of CPAN modules](http://neilb.org/adoption/) that can be good candidates for
@@ -170,38 +166,36 @@ On [MetaCPAN](https://metacpan.org/) you can find the date of the most recent re
 and the when looking at the page of each individual author, you can see what was the last time s/he upload any module.
 
 
-<h2 id="p5p">Perl 5 core
+## Perl 5 core
 
 The core perl is maintained by a group of people who call themselves [Perl 5 Porters](http://dev.perl.org/perl5/). Check out there.Check out there.Check out there.Check out there.
 
 Required skills: Perl, C.
 
 
-<h2 id="perl6">Perl 6
+## Perl 6
 
 [Perl 6](http://perl6.org/) is getting close to its official release. You can help there with plenty of things while learning
-this new languages, or this new version of the old language. 
+this new languages, or this new version of the old language.
 
-<ol>
-   <li>[Install Rakudo Perl 6](http://perl6maven.com/tutorial/perl6-installing-rakudo)</li>
-   <li>[Pick one of the modules](http://modules.perl6.org/)</li>
-   <li>Try writing something with it</li>
-   <li>Submit bug reports, feature requests</li>
-   <li>Fix the bugs, implement the features</li>
-</ol>
+1. [Install Rakudo Perl 6](http://perl6maven.com/tutorial/perl6-installing-rakudo)
+1. [Pick one of the modules](http://modules.perl6.org/)
+1. Try writing something with it
+1. Submit bug reports, feature requests
+1. Fix the bugs, implement the features
 
 Required skills:
 
 * You'll need to know Perl 6, but that's the whole points, isn't it? To have an excuse to learn Perl 6
 
 
-<h2 id="cpan-prc">CPAN PR Challenge
+## CPAN PR Challenge
 
 [Neil Bowers](http://neilb.org/) runs the [CPAN Pull Request challenge](/2015-cpan-pull-request-challenge)
 You can join that and get a CPAN module assigned to you. As far as I know Neil does not give you any specific thing you need to
 do with the module. Which might fit you better.
 
-<h2 id="rosetta">Adding examples to Rosetta Code
+## Adding examples to Rosetta Code
 
 Not directly the ecosystem, but very helpful: adding examples for both Perl 5 and Perl 6 to Rosetta Code.
 Next to a good programming language, good modules, good documentation, we also need good examples.

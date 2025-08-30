@@ -405,13 +405,11 @@ two test files that still failed.
 
 At this point we can do one or more of the following things: 
 
-<ol>
-  <li>Decide DBD::mysql isn't that important for our life and skip the installation.</li>
-  <li>Send a bug report to bug-dbd-mysql@rt.cpan.org with the output.</li>
-  <li>Look at the build.log file, configure the MySQL server access and try to install again using `cpanm DBD::mysql`</li>
-  <li>Install the module using the force  `cpanm --force DBD::mysql` (this will run the tests but disregard the failure)</li>
-  <li>Install the module skipping the tests `cpanm --notest DBD::mysql`</li>
-</ol>
+1. Decide DBD::mysql isn't that important for our life and skip the installation.
+1. Send a bug report to bug-dbd-mysql@rt.cpan.org with the output.
+1. Look at the build.log file, configure the MySQL server access and try to install again using `cpanm DBD::mysql`
+1. Install the module using the force  `cpanm --force DBD::mysql` (this will run the tests but disregard the failure)
+1. Install the module skipping the tests `cpanm --notest DBD::mysql`
 
 Personally, I ran `cpanm --notest DBD::mysql`.
 

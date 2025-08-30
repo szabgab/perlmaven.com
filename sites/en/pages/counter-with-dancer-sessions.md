@@ -141,12 +141,9 @@ get '/' => sub {
 };
 ```
 
-<ol>
-  <li>We fetch the value from the session file or set it to 0 if there was no value in the session file yet.
-   This is to nicely handle the case when a new browser visits the page.</li>
-  <li>Increment the counter and print it to the console of the web application.</li>
-  <li>Save the new value in the session object and thus in the session YAML file.</li>
-</ol>
+1. We fetch the value from the session file or set it to 0 if there was no value in the session file yet.  This is to nicely handle the case when a new browser visits the page.
+1. Increment the counter and print it to the console of the web application.
+1. Save the new value in the session object and thus in the session YAML file.
 
 If we now reload the browser several times, we'll be able to see the counter incrementing on the console.
 Unfortunately we'll also see the plackup server restarting itself after every time we load the page.

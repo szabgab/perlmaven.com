@@ -24,10 +24,8 @@ Not only that, but Travis-CI is free for Open Source projects on GitHub.
 
 For simple cases it is quite easy to set up Travis-CI. It involves two steps:
 
-<ol>
-    <li>Tell Travis-CI to monitor your project</li>
-    <li>Create the Travis Configuration file .travis.yml</li>
-</ol>
+1. Tell Travis-CI to monitor your project
+1. Create the Travis Configuration file .travis.yml
 
 ## Tell Travis-CI to monitor your project
 

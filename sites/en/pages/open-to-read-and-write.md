@@ -28,13 +28,12 @@ a separate story.
 
 
 In most of these cases it is ok to
-<ol>
-   <li>[open the file for reading](/open-and-read-from-files)</li>
-   <li>[read the whole content](/slurp)</li>
-   <li>make changes in memory</li>
-   <li>open the file again, this time [for writing](/writing-to-files-with-perl)</li>
-   <li>write out the whole content</li>
-</ol>
+
+1. [open the file for reading](/open-and-read-from-files)
+1. [read the whole content](/slurp)
+1. make changes in memory
+1. open the file again, this time [for writing](/writing-to-files-with-perl)
+1. write out the whole content
 
 However, sometimes you need to make this operation "atomic", that is, you need to make sure
 no other process will change the file while your are changing it.
@@ -85,16 +84,15 @@ For this however we need to open the file for both reading and writing.
 {% include file="examples/counter_lock.pl" %}
 
 In this script we
-<ol>
-  <li>Open the file for reading and writing</li>
-  <li>Ask for an exclusive lock on it. (Wait till we get it).</li>
-  <li>Read the file content.</li>
-  <li>Make the changes in memory. (increment by 1)</li>
-  <li>Rewind the filehandle to the beginning using the `seek` function.</li>
-  <li>Remove the content of the file using `truncate`.</li>
-  <li>Write the new content</li>
-  <li>`close` the file (and by that free the lock)</li>
-</ol>
+
+1. Open the file for reading and writing
+1. Ask for an exclusive lock on it. (Wait till we get it).
+1. Read the file content.
+1. Make the changes in memory. (increment by 1)
+1. Rewind the filehandle to the beginning using the `seek` function.
+1. Remove the content of the file using `truncate`.
+1. Write the new content
+1. `close` the file (and by that free the lock)
 
 We could not open the file separately once for reading and once for writing,
 the closing of the filehandle always frees the lock. So the other instance of our script
@@ -134,9 +132,10 @@ Let me know if anyone would like the code for this process or why or why not it 
 It is a reasonable process, but because 1-2 are not atomic operations that means two process A and B might do in the following order: A1 B1 A2 B2, or if you have multiple cores then even at A1 and B1 can happen at the same time. So there is some risk. Flock (on Linux, Unix) eliminates the risk.
 
 ---
-Thanks Gabor - those are good points. My app was for a small (<10) group of users, so close race conditions weren't an issue (I think) - but if this was used by a larger group, then everything with flock here definitely applies.
+Thanks Gabor - those are good points. My app was for a small (less than 10) group of users, so close race conditions weren't an issue (I think) - but if this was used by a larger group, then everything with flock here definitely applies.
 
-<hr>
+---
+
 Hello Gabor,
 It was an amazing post, but I need to clarify 1 thing. Can we parse a JSON file instead of TXT file in the above example?
 ---
