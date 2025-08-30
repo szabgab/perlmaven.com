@@ -15,8 +15,7 @@ comes when you have to choose between various implementations for a specific
 task. Depending on the situation, there can be multitude of criteria to help
 your decision, and performance is usually one of them.
 
-Luckily, Perl 5 comes with a <a
-href="https://metacpan.org/pod/Benchmark">Benchmark</a> module, that can help
+Luckily, Perl 5 comes with a [Benchmark](https://metacpan.org/pod/Benchmark) module, that can help
 you to quickly compare alternative solutions, and thus help you do a better
 job.
 
@@ -25,8 +24,8 @@ calculation logic of [Rex](https://www.rexify.org) while making
 sure we are not slowing things down.
 
 
-<a href="/levels-of-security-using-rex">As you might
-already know</a>, Rex is a deployment and configuration management framework
+[As you might already know](/levels-of-security-using-rex),
+Rex is a deployment and configuration management framework
 written in Perl. Since those kind of tasks very often boil down to file
 manipulation, the ability to identify content changes, or to identify
 identical files, is essential part of the software. Currently Rex uses MD5
@@ -39,8 +38,7 @@ Solaris, or Mac OS X as local or remote machines, or even locally on Windows.
 
 ## The problem
 
-After some iterations, the <a
-href="https://github.com/RexOps/Rex/blob/03e969323c135b6bf7525a1adb83f522674e7756/lib/Rex/Commands/MD5.pm">logic</a>
+After some iterations, the [logic](https://github.com/RexOps/Rex/blob/03e969323c135b6bf7525a1adb83f522674e7756/lib/Rex/Commands/MD5.pm)
 looked roughly like this:
 
 * if it's a BSD or Mac OS X, use `/sbin/md5`
@@ -56,8 +54,7 @@ sounded to be slow and unnecessarily complex. So I went on to find a platform
 independent way to calculate MD5 checksums, but I also wanted to make sure I
 don't end up with something slow.
 
-Judging by its documentation, the <a
-href="https://metacpan.org/pod/Digest::MD5">Digest::MD5</a> module seemed to
+Judging by its documentation, the [Digest::MD5](https://metacpan.org/pod/Digest::MD5) module seemed to
 be up for the job, especially given it's part of Perl core distribution since
 5.7.3. And this is the part where
 
@@ -267,16 +264,14 @@ The benchmarking script and the modified `Rex::Command::MD5` module are
 included in the examples directory for your convenience. If you would like to
 give them a spin, you need the following steps:
 
-<ol>
-<li>Create a "large" testfile by running `dd if=/dev/zero of=/tmp/1g bs=1M
-count=1024` or similar</li>
-<li>Install Rex with `cpanm Rex` or equivalent (for dependencies)</li>
-<li>Run the benchmark with `perl benchmark_md5.pl`</li>
-</ol>
+1. Create a "large" testfile by running `dd if=/dev/zero of=/tmp/1g bs=1M count=1024` or similar
+1. Install Rex with `cpanm Rex` or equivalent (for dependencies)
+1. Run the benchmark with `perl benchmark_md5.pl`
+
 
 ## Related articles
-* <a href="/comparing-the-speed-of-json-decoders">
-Comparing the speed of JSON decoders</a>
+* [Comparing the speed of JSON decoders](/comparing-the-speed-of-json-decoders)
+
 
 ## Source files
 
