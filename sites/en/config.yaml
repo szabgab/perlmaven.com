@@ -44,7 +44,7 @@ from:
 # On each page show the list of pages that link to the current page.
 # Define the title of the section when the related pages are shown
 show_related: true
-related_pages_title: Otras páginas
+related_pages_title: Other pages
 
 # Each page can have an `author` field in the front-matter containing the nickname of the author.
 # Here we list all the authors of the site.
