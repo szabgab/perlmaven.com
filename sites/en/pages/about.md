@@ -83,7 +83,7 @@ You'll be notified when a new article is published.
 
 ## Founder & Chief Editor
 
-![Gabor Szabo](/img/szabgab.png])
+![Gabor Szabo](/img/szabgab.png)
 
 I am [Gabor Szabo](https://szabgab.com/),
 long time Perl developer and Perl trainer.
