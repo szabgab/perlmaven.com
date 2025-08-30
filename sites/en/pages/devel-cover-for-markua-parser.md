@@ -71,16 +71,14 @@ I've scrolled down to the area where we just added the new code:
 
 ![](/img/markua-parser-file-coverage.png)
 
-<ol>
-   <li>The 1st column is the line number. (grey)</li>
-   <li>The 2nd column is the statement coverage for each line. It is red and has a number 0 when the line was not executed during any of the tests. Otherwise it is green and shows how many times was it executed. Usually the specific number is not interesting to me. Just that it is not 0.</li>
-   <li>The 3rd column is the branch coverage. It is 50% in our case. Clicking on that link we get to the page called "Branch Coverage".</li>
-   <li>The 4th column is the condition coverage. </li>
-   <li>The 5th column is subroutine coverage. Which subroutines were called and which were not. In our case that's 100%.</li>
-   <li>The 6th column is pod coverage. We don't have any function-level documentation which is ok for such application.</li>
-   <li>The 7th column is the time spent on that line. Not very interesting to us.</li>
-   <li>The 8th column is the code in that line.</li>
-</ol>
+1. The 1st column is the line number. (grey)
+1. The 2nd column is the statement coverage for each line. It is red and has a number 0 when the line was not executed during any of the tests. Otherwise it is green and shows how many times was it executed. Usually the specific number is not interesting to me. Just that it is not 0.
+1. The 3rd column is the branch coverage. It is 50% in our case. Clicking on that link we get to the page called "Branch Coverage".
+1. The 4th column is the condition coverage. 
+1. The 5th column is subroutine coverage. Which subroutines were called and which were not. In our case that's 100%.
+1. The 6th column is pod coverage. We don't have any function-level documentation which is ok for such application.
+1. The 7th column is the time spent on that line. Not very interesting to us.
+1. The 8th column is the code in that line.
 
 ## Branch Coverage
 

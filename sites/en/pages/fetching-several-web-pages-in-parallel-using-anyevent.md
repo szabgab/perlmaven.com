@@ -221,10 +221,9 @@ are no more requests than what we decided to be the `$max` number.
 The `send_url()` function is the heart of our system.
 It will attempt to put another `http_get` request on the internal queue of AnyEvent,
 but it will only do it
-<ol>
-  <li>if we have not reach the max concurrency number. So if  `$count >= $max` we don't want more requests.</li>
-  <li>if cant send more requests if the list (in `@urls`) has been finished.</li>
-</ol>
+
+1. if we have not reach the max concurrency number. So if  `$count >= $max` we don't want more requests.
+1. if cant send more requests if the list (in `@urls`) has been finished.
 
 
 Before sending out the request, we increment both our own counter `$count++` and the internal
@@ -303,7 +302,7 @@ while (<fil>) {
 }
 print $_;
 
-<hr>
+---
 
 Thanks for the code sample. If this helps anyone, there's a bug in the Throttle version when $max=1, as the $cv->end will cause the script to finish before the next $cv->begin is run.
 

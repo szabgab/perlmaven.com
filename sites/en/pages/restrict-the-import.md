@@ -45,11 +45,9 @@ in my name-space.
 
 This has several advantages:
 
-<ol>
-  <li>I won't be surprised by the module exporting additional functions. They will not be imported by my code.</li>
-  <li>If the function was removed from the newer version of the module, I'll notice it as perl will complain about the missing function.</li>
-  <li>Helps documenting the code.</li>
-</ol>
+1. I won't be surprised by the module exporting additional functions. They will not be imported by my code.
+1. If the function was removed from the newer version of the module, I'll notice it as perl will complain about the missing function.
+1. Helps documenting the code.
 
 Just imagine you load lots of modules. Each one imports several functions. Then someone, who is not familiar with you code-base
 starts to read the code. Sees an `add` function but she does not know where that function comes from. She has to go over all

@@ -30,20 +30,19 @@ A section of the table looks like this:
 <img src="/img/cpantesters_term_readpassword_win32.png" alt="CPAN Testers PASS matrix">
 
 Unfortunately we cannot see the columns in this screenshot, but they were as follows:
-<ol>
- <li>perl version</li>
- <li>Windows (Cygwin)</li>
- <li>Mac OS X</li>
- <li>Dragonfly BSD</li>
- <li>FreeBSD</li>
- <li>Debian GNU/kFreeBSD</li>
- <li>GNU/Linux</li>
- <li>MidnightBSD</li>
- <li>Windows (Win32)</li>
- <li>NetBSD</li>
- <li>OpenBSD</li>
- <li>SunOS/Solaris</li>
-</ol>
+
+1. perl version
+1. Windows (Cygwin)
+1. Mac OS X
+1. Dragonfly BSD
+1. FreeBSD
+1. Debian GNU/kFreeBSD
+1. GNU/Linux
+1. MidnightBSD
+1. Windows (Win32)
+1. NetBSD
+1. OpenBSD
+1. SunOS/Solaris
 
 Some of the fields are empty. This does not mean the module won't work on that perl/platform pair, it just means no
 **PASS** reports were received for that perl/platform pair.

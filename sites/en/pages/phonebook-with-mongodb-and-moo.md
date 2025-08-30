@@ -240,8 +240,6 @@ same hash references we supplied to the `insert` method.
 That's it. We can now use the the basics of MongoDB.
 
 
-<ol>
- <li>[Command line phonebook with MongoDB and Moo](/phonebook-with-mongodb-and-moo) (this article)</li>
- <li>[Updating MongoDB using Perl](/updating-mongodb-with-perl)</li>
-</ol>
+1. [Command line phonebook with MongoDB and Moo](/phonebook-with-mongodb-and-moo) (this article)
+1. [Updating MongoDB using Perl](/updating-mongodb-with-perl)
 

@@ -259,12 +259,10 @@ Probably: From, To, Date, CC (and Cc), Subject.
 
 ## The whole series
 
-<ol>
- <li>[Indexing e-mails in an mbox](/indexing-emails-in-an-mbox) (this article)</li>
- <li>[Putting the email in MongoDB - part 1](/putting-emails-into-mongodb)</li>
- <li>[Refactoring the script and add logging](/some-refactoring-and-add-logging-to-mail-boxer)</li>
- <li>[Switching to Moo - adding command line parameters](/switching-to-moo-adding-command-line-parameters)</li>
- <li>[Adding the To: field to the MongoDB database](/adding-the-to-field-to-the-mongodb-database)</li>
- <li>[Adding Date, Size, CC, and Message-ID](/adding-date-size-cc-and-message-id)</li>
-</ol>
+1. [Indexing e-mails in an mbox](/indexing-emails-in-an-mbox) (this article)
+1. [Putting the email in MongoDB - part 1](/putting-emails-into-mongodb)
+1. [Refactoring the script and add logging](/some-refactoring-and-add-logging-to-mail-boxer)
+1. [Switching to Moo - adding command line parameters](/switching-to-moo-adding-command-line-parameters)
+1. [Adding the To: field to the MongoDB database](/adding-the-to-field-to-the-mongodb-database)
+1. [Adding Date, Size, CC, and Message-ID](/adding-date-size-cc-and-message-id)
 

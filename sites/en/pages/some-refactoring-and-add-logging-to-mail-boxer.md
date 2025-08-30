@@ -26,11 +26,9 @@ Probably the cleanest way is to move all the code checking and adding the From f
 reference to the `%doc` hash we need to fill. We have a slight problem though.
 It turns out the `add_from` subroutine itself can have 3 outcomes.
 
-<ol>
-<li>We found the From field and want to store it.</li>
-<li>We did not find the From field.</li>
-<li>We found a From field and we'd like to skip this message.</li>
-</ol>
+1. We found the From field and want to store it.
+1. We did not find the From field.
+1. We found a From field and we'd like to skip this message.
 
 Luckily for our purposes, in both the first and the second case we would like to continue
 processing this message, and will want to skip to the next message only in the 3rd case.

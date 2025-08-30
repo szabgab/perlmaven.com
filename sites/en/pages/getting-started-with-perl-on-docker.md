@@ -233,11 +233,9 @@ CMD  perl /opt/hello_world.pl
 
 This will
 
-<ol>
-  <li>Create an image based on Ubuntu 16.10.</li>
-  <li>It will copy the file **hello_world.pl** to the **/opt** directory of the Docker image.</li>
-  <li>The `CMD` instruction tells Docker to run the script when we launch the container</li>
-</ol>
+1. Create an image based on Ubuntu 16.10.
+1. It will copy the file **hello_world.pl** to the **/opt** directory of the Docker image.
+1. The `CMD` instruction tells Docker to run the script when we launch the container
 
 We need to rebuild the image by running
 
@@ -308,7 +306,7 @@ in order to make the most out of it?
 
 Hi! Did you try to use official perl image? https://hub.docker.com/_/perl/
 
-<hr>
+---
 
 Hi Gabor
 
@@ -316,23 +314,20 @@ Been using Perl for ages but have only started using Docker recently.
 
 This is a great bit of info thanks!
 
-<hr>
-
+---
 Thanks for the intro, Gabor. We started using this at work in the last few months on our Linux systems. I've wanted to try it out on a couple Mac Minis I'm using for my own projects so this is a great starting point.
 
-<hr>
-
+---
 +1 to using the official perl images. You just pick your perl version so you would do "FROM perl:5.22" instead of "FROM ubuntu:16.10"
 
-<hr>
-
+---
 Hello Gabor
 Is it possible to pass parameters to a docker container like GetOptLong? I now I can use ENTRYPOINT like for example in
-docker run -it <image> John
+`docker run -it <image> John`
 https://codewithyury.com/docker-run-vs-cmd-vs-entrypoint/
 
 but what is If I have two parameters like name and age and I don't want to always use the same order when using docker images, lets say that I prefer to use -name Jonn -age 30, i. e.
-docker run -it <image> -name Jonn -age 30
+`docker run -it <image> -name Jonn -age 30`
 is it possible?
 The real situation is that I have a get opt long script inside the docker and I dont now the best way to obtain the parameters.
 Thank you!
@@ -345,16 +340,20 @@ Can't you just pass the parameters on the command line?
 
 You can try `-e` option. Here is scrap from my Makefile:
 
+```
 docker run --name ${DOCKER_CONTAINER} -d -p ${DB_PORT}:5432 \
 --user "$(id -u):$(id -g)" -v /etc/passwd:/etc/passwd:ro \
 -v ${APP_ROOT}/db/pgdata:/var/lib/postgresql/data/pgdata \
 -e PGDATA=/var/lib/postgresql/data/pgdata \
 -e POSTGRES_PASSWORD=${DB_ROOT} \
 postgres:10.4
+```
 
 If you run somethins inside container, you do this as usual:
 
+```
 docker exec -i ${DOCKER_CONTAINER} psql -U postgres -d ${DB_NAME}
+```
 
 NOTICE: -U postgres, -d ${DB_NAME}. This is same like `bash -c "your command here"`
 
@@ -362,9 +361,12 @@ man docker exec
 
 docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
 
-<hr>
+---
+
 How to create a directory in docker container using perl script.
-<hr>
+
+---
+
 Everybody can now use official docker image from Perl https://hub.docker.com/_/perl
 
 

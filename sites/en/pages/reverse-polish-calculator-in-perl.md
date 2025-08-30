@@ -115,13 +115,11 @@ because we don't check the input beyond those 5 specific cases. (The 4 operators
 
 Several ideas how to improve this:
 
-<ol>
-  <li>Add option **l** printing the size of the stack (number of elements in it).</li>
-  <li>Add option **h** to display help, listing all the options.</li>
-  <li>Check if the value given is really a number. Only accept numbers, warn if some other value is given.</li>
-  <li>Add option **?** showing the same help as h does.</li>
-  <li>Change the **q** options so it will check if there are any values left on the stack. If there are, tell the user about it and ask if she really wants to Quit?</li>
-  <li>Implement **C** to clear all the stack.</li>
-  <li>Add option **s** printing the whole stack.</li>
-  <li>Add an option **x** for exit that will not ask any questions, just exit the loop.</li>
-</ol>
+1. Add option **l** printing the size of the stack (number of elements in it).
+1. Add option **h** to display help, listing all the options.
+1. Check if the value given is really a number. Only accept numbers, warn if some other value is given.
+1. Add option **?** showing the same help as h does.
+1. Change the **q** options so it will check if there are any values left on the stack. If there are, tell the user about it and ask if she really wants to Quit?
+1. Implement **C** to clear all the stack.
+1. Add option **s** printing the whole stack.
+1. Add an option **x** for exit that will not ask any questions, just exit the loop.

@@ -46,13 +46,11 @@ The whole file can be seen here:
 
 The following sequence of command will
 
-<ol>
-  <li>Check if all the prerequisites are met and generate `Makefile`.</li>
-  <li>Rearrange the files in the `blib` subdirectory in the same structure as they will be after installation.</li>
-  <li>Run the tests</li>
-  <li>Generate the `MANIFEST` that lists all the file that need to be included in the distribution. (This is based on the `MANIFEST.SKIP` file, but we did not need it for the simple case.</li>
-  <li>Generate the tar.gz file that can be uploaded to PAUSE or distributed in another way.</li>
-</ol>
+1. Check if all the prerequisites are met and generate `Makefile`.
+1. Rearrange the files in the `blib` subdirectory in the same structure as they will be after installation.
+1. Run the tests
+1. Generate the `MANIFEST` that lists all the file that need to be included in the distribution. (This is based on the `MANIFEST.SKIP` file, but we did not need it for the simple case.
+1. Generate the tar.gz file that can be uploaded to PAUSE or distributed in another way.
 
 ```
 $ perl Makefile.PL
