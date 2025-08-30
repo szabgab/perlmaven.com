@@ -33,7 +33,8 @@ This code checks of the hash `%phone_of` has a key "Foo".
 ## The 3 valid situations of a key-value pair
 
 * There is a key and the value which is not `undef` then both the `exists` and `defined` functions will return true.
-* There is a key and the value is `undef` then `exists` will return true and `defined` will return false.</li>   <li>If there is no such key, then there cannot be a corresponding values. In that case both `exists` and `defined` will return false.
+* There is a key and the value is `undef` then `exists` will return true and `defined` will return false.
+* If there is no such key, then there cannot be a corresponding values. In that case both `exists` and `defined` will return false.
 
 ## An example
 

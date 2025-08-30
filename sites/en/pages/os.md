@@ -30,9 +30,5 @@ Videos on contributing to Open Source Perl projects.
 
 Videos and articles for other, non-Perl projects can be found on the [Code Maven](https://code-maven.com/os) web site.
 
-<!--
-    <li><a href=""></a></li>
--->
-
 
 

@@ -16,14 +16,3 @@ the Perl Maven site a bit.
 * [Linode](/linode)
 
 
-<!--
-## On-line training
-
-* [Code School](/codeschool)
--->
-
-<!--
-   <li><a href=""></a></li>
--->
-
-

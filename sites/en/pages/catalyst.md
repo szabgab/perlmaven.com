@@ -18,10 +18,6 @@ and it also powers [Meta CPAN](http://metacpan.org/).
 
 
 * [Hacking Meta::CPAN - the first steps](/hacking-metacpan-the-first-steps)
-* <a href="/adding-news-feed-to-metacpan">Adding news feed to MetaCPAN
-* <a href="/modern-web-with-perl">Modern Web with Perl
-
-<!--
-  <li><a href=""></a></li>
--->
+* [Adding news feed to MetaCPAN](/adding-news-feed-to-metacpan)
+* [Modern Web with Perl](/modern-web-with-perl)
 

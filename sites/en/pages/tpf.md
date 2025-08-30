@@ -388,7 +388,7 @@ Status: done
 ## Adding tests to and refactoring the perl debugger - Shlomi Fish
 
 * Amount: $1,500
-* 2012.08.14 [proposal ($1,500)](http://news.perlfoundation.org/2012/08/2012q3-grant-proposal-adding-t.html)<li>
+* 2012.08.14 [proposal ($1,500)](http://news.perlfoundation.org/2012/08/2012q3-grant-proposal-adding-t.html)
 * 2012.08.28 [approved ($1,500)](http://news.perlfoundation.org/2012/08/2012q3-grant-proposals---resul.html)
 * 2012.09.01 [Report](http://news.perlfoundation.org/2012/09/adding-tests-to-and-refactorin.html)
 * 2012.09.07 [Report 1](http://news.perlfoundation.org/2012/09/adding-tests-to-and-refactorin-1.html)
@@ -402,7 +402,7 @@ Status: done
 ## Cooking Perl with Chef - David Golden
 
 * Amount: $2,000
-* 2012.02.09 [proposal ($2,000)](http://news.perlfoundation.org/2012/02/2012q1-grant-proposal-cooking.html)<li>
+* 2012.02.09 [proposal ($2,000)](http://news.perlfoundation.org/2012/02/2012q1-grant-proposal-cooking.html)
 * 2012.02.24 [approved ()](http://news.perlfoundation.org/2012/02/2012q1-grant-results.html)
 * 2012.03.19 [Report #1](http://news.perlfoundation.org/2012/03/cooking-perl-with-chef---grant.html)
 * 2012.04.23 [Report #2](http://news.perlfoundation.org/2012/04/cooking-perl-with-chef---grant-1.html)
@@ -424,7 +424,7 @@ Status: done
 ## Test::Builder 2 - Michael Schwern
 
 * Amount: 
-* 2010.06.27 [Update](http://news.perlfoundation.org/2010/06/testbuilder-2-updates.html)<li>
+* 2010.06.27 [Update](http://news.perlfoundation.org/2010/06/testbuilder-2-updates.html)
 * 2010.09.09 [Update](http://news.perlfoundation.org/2010/09/updates-on-testbuilder2-grant.html)
 * 2011.06.06 [Test::Builder 2 is not dead](http://news.perlfoundation.org/2011/01/testbuilder-2-is-not-dead.html)
 * 2011.12.03 [final report](http://news.perlfoundation.org/2011/12/testbuilder-2-final-grant-repo.html)
@@ -526,7 +526,7 @@ wa approved but not funded
 * 2010.06.30 [Report #0](http://news.perlfoundation.org/2010/06/embeding-perl-into-c-applicati-1.html)
 * 2010.07.31 [Report #1](http://news.perlfoundation.org/2010/07/grant-updates-embeding-perl-in.html)
 * 2010.09.02 [Report #2](http://news.perlfoundation.org/2010/09/embeding-perl-into-c-applicati-2.html)
-* 2010.09.27 [Report #3](http://news.perlfoundation.org/2010/09/embeding-perl-into-c-applicati-3.html)<li>
+* 2010.09.27 [Report #3](http://news.perlfoundation.org/2010/09/embeding-perl-into-c-applicati-3.html)
 * 2010.11.07 [final report](http://news.perlfoundation.org/2010/11/closing-embedding-perl-into-c.html)
 * Status: done
 </div>

@@ -25,4 +25,4 @@ That will avoid the inclusion of some of the regex-related variables that slowed
 ## Examples
 
 * [$$ - $PROCESS_ID - $PID](/process-id)
-* [$| - $OUTPUT_AUTOFLUSH](/output-autoflush)<li>
+* [$| - $OUTPUT_AUTOFLUSH](/output-autoflush)
