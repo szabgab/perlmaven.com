@@ -16,4 +16,4 @@ author: szabgab
 trim
 
 
-<slidecast file="beginner-perl/trim" youtube="C-dO20lgA_c" />
+{% youtube id="C-dO20lgA_c" file="beginner-perl/trim" %}

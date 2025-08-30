@@ -17,4 +17,4 @@ author: szabgab
 create-linux-user
 
 
-<slidecast file="beginner-perl/create-linux-user" youtube="9Fe_plZfVis" />
+{% youtube id="9Fe_plZfVis" file="beginner-perl/create-linux-user" %}

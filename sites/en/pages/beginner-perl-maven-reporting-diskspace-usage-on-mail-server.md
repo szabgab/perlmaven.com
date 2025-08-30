@@ -19,4 +19,4 @@ and [Mail::Sendmail](https://metacpan.org/pod/Mail::Sendmail). Today I'd probabl
 See also the [video about Email::Stuffer](/sending-html-email-using-email-stuffer).
 
 
-<slidecast file="beginner-perl/reporting-diskspace-usage-on-mail-server" youtube="hU2yfAZCJ8w" />
+{% youtube id="hU2yfAZCJ8w" file="beginner-perl/reporting-diskspace-usage-on-mail-server" %}

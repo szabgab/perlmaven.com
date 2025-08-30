@@ -15,4 +15,4 @@ author: szabgab
 using procedural module
 
 
-<slidecast file="beginner-perl/using-procedural-module" youtube="kcqmtmM4cmQ" />
+{% youtube id="kcqmtmM4cmQ" file="beginner-perl/using-procedural-module" %}

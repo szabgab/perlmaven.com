@@ -15,4 +15,4 @@ author: szabgab
 Solution: improve Apache log-analyzer
 
 
-<slidecast file="beginner-perl/solution-improve-apache-analyzer" youtube="KiUI6TQN8fg" />
+{% youtube id="KiUI6TQN8fg" file="beginner-perl/solution-improve-apache-analyzer" %}

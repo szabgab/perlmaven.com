@@ -15,4 +15,4 @@ author: szabgab
 process-config-file
 
 
-<slidecast file="beginner-perl/process-config-file" youtube="JDSX2YM5WuA" />
+{% youtube id="JDSX2YM5WuA" file="beginner-perl/process-config-file" %}

@@ -15,4 +15,4 @@ author: szabgab
 Exercise: improve color selector
 
 
-<slidecast file="beginner-perl/exercise-improve-color-selector" youtube="7QEB2a-cinU" />
+{% youtube id="7QEB2a-cinU" file="beginner-perl/exercise-improve-color-selector" %}

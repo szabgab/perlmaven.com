@@ -15,4 +15,4 @@ author: szabgab
 Join
 
 
-<slidecast file="beginner-perl/join" youtube="BaBI4y_skwc" />
+{% youtube id="BaBI4y_skwc" file="beginner-perl/join" %}

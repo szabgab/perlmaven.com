@@ -15,4 +15,4 @@ author: szabgab
 Creating a hash
 
 
-<slidecast file="beginner-perl/creating-a-hash" youtube="mSaC6s7r7ZA" />
+{% youtube id="mSaC6s7r7ZA" file="beginner-perl/creating-a-hash" %}

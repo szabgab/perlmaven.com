@@ -15,7 +15,7 @@ author: szabgab
 The solution for the <a href="">First exercise</a>.
 
 
-<slidecast file="beginner-perl/solution-hello-world-1" youtube="HzUpIE6fPz8" />
+{% youtube id="HzUpIE6fPz8" file="beginner-perl/solution-hello-world-1" %}
 
 ## Make sure you have access to the right version of Perl (5.8.x) or newer.
 

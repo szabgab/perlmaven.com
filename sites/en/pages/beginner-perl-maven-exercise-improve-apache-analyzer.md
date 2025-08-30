@@ -15,4 +15,4 @@ author: szabgab
 Exercise: improve Apache log analyzer
 
 
-<slidecast file="beginner-perl/exercise-improve-apache-analyzer" youtube="oQTSLam_-xE" />
+{% youtube id="oQTSLam_-xE" file="beginner-perl/exercise-improve-apache-analyzer" %}

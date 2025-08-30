@@ -16,7 +16,7 @@ Previously I explained what the [namespaces](/namespaces-and-packages) are in Pe
 but we have not seen the actual solution to the [problem we encountered](/the-problem-with-libraries) earlier.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/modules" youtube="BwRaMyHiuOc" />
+{% youtube id="BwRaMyHiuOc" file="advanced-perl/libraries-and-modules/modules" %}
 
 We had our package (namespace) in the same file as our main code, but we could do the same in two separate files:
 

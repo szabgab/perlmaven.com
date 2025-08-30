@@ -15,4 +15,4 @@ author: szabgab
 Finding a string in a file like grep
 
 
-<slidecast file="beginner-perl/finding-a-string-in-a-file" youtube="dzRfOvM-Ujk" />
+{% youtube id="dzRfOvM-Ujk" file="beginner-perl/finding-a-string-in-a-file" %}

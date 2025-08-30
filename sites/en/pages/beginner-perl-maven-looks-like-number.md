@@ -16,4 +16,4 @@ author: szabgab
 Looks like number
 
 
-<slidecast file="beginner-perl/looks-like-number" youtube="hQrc2Eq9BNw" />
+{% youtube id="hQrc2Eq9BNw" file="beginner-perl/looks-like-number" %}

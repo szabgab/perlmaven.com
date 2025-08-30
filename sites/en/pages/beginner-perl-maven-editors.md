@@ -26,7 +26,7 @@ Before you get started programming in Perl, you need to pick an editor or and ID
 Here are a few recommended ones.
 
 
-<slidecast file="beginner-perl/editors" youtube="7mvy8sUcigM" />
+{% youtube id="7mvy8sUcigM" file="beginner-perl/editors" %}
 
 
 ## Mostly for Linux/Unix

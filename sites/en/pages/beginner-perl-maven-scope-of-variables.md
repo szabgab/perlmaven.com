@@ -16,4 +16,4 @@ author: szabgab
 Scope of Variables
 
 
-<slidecast file="beginner-perl/scope-of-variables" youtube="w-kI4A1aSS0" />
+{% youtube id="w-kI4A1aSS0" file="beginner-perl/scope-of-variables" %}

@@ -16,7 +16,7 @@ Let's see what do you need to do if you'd like to use [ExtUtils::MakeMaker](http
 to package your module?
 
 
-<slidecast file="advanced-perl/libraries-and-modules/makefile-pl-of-extutils-makemaker" youtube="7IKvWbd5_MA" />
+{% youtube id="7IKvWbd5_MA" file="advanced-perl/libraries-and-modules/makefile-pl-of-extutils-makemaker" %}
 
 You need to create a file called `Makefile.PL`, then you might want to tell what is the minimal version
 of perl this Makefile.PL should run on by adding `use 5.008;` if you want to require 5.8 as a minimum.

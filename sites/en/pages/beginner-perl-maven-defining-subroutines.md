@@ -15,4 +15,4 @@ author: szabgab
 Defining subroutines
 
 
-<slidecast file="beginner-perl/defining-subroutines" youtube="2Mw8wASh31I" />
+{% youtube id="2Mw8wASh31I" file="beginner-perl/defining-subroutines" %}

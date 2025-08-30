@@ -21,4 +21,4 @@ author: szabgab
 changing-inc-relative-path
 
 
-<slidecast file="beginner-perl/changing-inc-relative-path" youtube="qANprSEDO9Y" />
+{% youtube id="qANprSEDO9Y" file="beginner-perl/changing-inc-relative-path" %}

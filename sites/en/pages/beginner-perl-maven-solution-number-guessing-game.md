@@ -19,7 +19,7 @@ This [exercise](/beginner-perl-maven-exercise-number-guessing-game) is also part
 number of solutions in other languages as well.
 
 
-<slidecast file="beginner-perl/solution-number-guessing-game" youtube="CPUf6xom31Q" />
+{% youtube id="CPUf6xom31Q" file="beginner-perl/solution-number-guessing-game" %}
 
 
 {% include file="examples/number_guessing.pl" %}

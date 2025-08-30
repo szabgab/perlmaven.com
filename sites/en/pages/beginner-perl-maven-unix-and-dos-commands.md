@@ -28,4 +28,4 @@ author: szabgab
 unix-and-dos-commands
 
 
-<slidecast file="beginner-perl/unix-and-dos-commands" youtube="7JQqQts3oug" />
+{% youtube id="7JQqQts3oug" file="beginner-perl/unix-and-dos-commands" %}

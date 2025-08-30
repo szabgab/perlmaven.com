@@ -17,5 +17,5 @@ author: szabgab
 The year of 19100
 
 
-<slidecast file="beginner-perl/the-year-of-19100" youtube="p9TT8YGHzYM" />
+{% youtube id="p9TT8YGHzYM" file="beginner-perl/the-year-of-19100" %}
 

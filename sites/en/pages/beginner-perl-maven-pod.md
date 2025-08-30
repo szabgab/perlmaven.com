@@ -18,7 +18,7 @@ to read the documentation the same way they are already used to read the documen
 and of CPAN modules.
 
 
-<slidecast file="beginner-perl/pod" youtube="1LDHUTf-LHo" />
+{% youtube id="1LDHUTf-LHo" file="beginner-perl/pod" %}
 
 Also read the [article about POD](/pod-plain-old-documentation-of-perl) and
 another article on

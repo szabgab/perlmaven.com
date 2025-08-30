@@ -16,7 +16,7 @@ Debugging with the built-in command line debugger, with [Devel::ptkdb](https://m
 or with `print` statements.
 
 
-<slidecast file="beginner-perl/debugging" youtube="MxwB63zFglo" />
+{% youtube id="MxwB63zFglo" file="beginner-perl/debugging" %}
 
 See the full [article about debugging Perl scripts](/debugging-perl-scripts)
 

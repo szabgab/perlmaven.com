@@ -20,7 +20,7 @@ we would like to use a module that already handles them nicely. For example, we 
 module.
 
 
-<slidecast file="advanced-perl/moose/classes-as-constraints" youtube="NYsAqRK3kmw" />
+{% youtube id="NYsAqRK3kmw" file="advanced-perl/moose/classes-as-constraints" %}
 
 Let's see the class itself in the **lib/Person.pm** file:
 

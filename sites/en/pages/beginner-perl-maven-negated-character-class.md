@@ -15,4 +15,4 @@ author: szabgab
 Regexes
 
 
-<slidecast file="beginner-perl/negated-character-class" youtube="8bhbsYJXM5w" />
+{% youtube id="8bhbsYJXM5w" file="beginner-perl/negated-character-class" %}

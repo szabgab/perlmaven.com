@@ -15,4 +15,4 @@ author: szabgab
 Solution: number guessing game - exit
 
 
-<slidecast file="beginner-perl/solution-number-guessing-game-exit" youtube="li4rkvb1y_s" />
+{% youtube id="li4rkvb1y_s" file="beginner-perl/solution-number-guessing-game-exit" %}

@@ -15,4 +15,4 @@ author: szabgab
 Regexes
 
 
-<slidecast file="beginner-perl/single-character-match" youtube="NxBgmzJldrY" />
+{% youtube id="NxBgmzJldrY" file="beginner-perl/single-character-match" %}

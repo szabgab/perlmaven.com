@@ -15,4 +15,4 @@ author: szabgab
 Process CSV file
 
 
-<slidecast file="beginner-perl/process-csv-file" youtube="M-jKnOBSLS0" />
+{% youtube id="M-jKnOBSLS0" file="beginner-perl/process-csv-file" %}

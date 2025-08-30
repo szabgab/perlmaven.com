@@ -21,4 +21,4 @@ Write functions that return true if the given value is a
 * Octal number
 * Binary number
 
-<slidecast file="beginner-perl/exercise-hexa-octal-binary" youtube="TUr41AAm0Hg" />
+{% youtube id="TUr41AAm0Hg" file="beginner-perl/exercise-hexa-octal-binary" %}

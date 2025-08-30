@@ -15,4 +15,4 @@ author: szabgab
 foreach loop over list
 
 
-<slidecast file="beginner-perl/foreach-loop-over-list" youtube="ufchnxq9ks8" />
+{% youtube id="ufchnxq9ks8" file="beginner-perl/foreach-loop-over-list" %}

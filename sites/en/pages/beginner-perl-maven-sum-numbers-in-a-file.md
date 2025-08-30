@@ -15,7 +15,7 @@ author: szabgab
 Sum numbers in a file
 
 
-<slidecast file="beginner-perl/sum-numbers-in-a-file" youtube="77MUdZp4FBc" />
+{% youtube id="77MUdZp4FBc" file="beginner-perl/sum-numbers-in-a-file" %}
 
 Let's do now something slightly useful with our knowledge.
 In this example we have a file called `numbers.txt` that has numbers in it. Each line is a number:

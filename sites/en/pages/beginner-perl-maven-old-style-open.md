@@ -16,4 +16,4 @@ author: szabgab
 old style open
 
 
-<slidecast file="beginner-perl/old-style-open" youtube="v8rwdY-2_J4" />
+{% youtube id="v8rwdY-2_J4" file="beginner-perl/old-style-open" %}

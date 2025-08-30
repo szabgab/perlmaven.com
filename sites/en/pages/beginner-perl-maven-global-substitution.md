@@ -16,4 +16,4 @@ author: szabgab
 global-substitution
 
 
-<slidecast file="beginner-perl/global-substitution" youtube="UbqYQc-W1qs" />
+{% youtube id="UbqYQc-W1qs" file="beginner-perl/global-substitution" %}

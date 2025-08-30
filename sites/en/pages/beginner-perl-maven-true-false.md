@@ -16,4 +16,4 @@ author: szabgab
 True False
 
 
-<slidecast file="beginner-perl/true-false" youtube="Z53KzFegRRU" />
+{% youtube id="Z53KzFegRRU" file="beginner-perl/true-false" %}

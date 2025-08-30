@@ -16,5 +16,5 @@ author: szabgab
 Array assignment
 
 
-<slidecast file="beginner-perl/array-assignment" youtube="odFAkM7fxGU" />
+{% youtube id="odFAkM7fxGU" file="beginner-perl/array-assignment" %}
 

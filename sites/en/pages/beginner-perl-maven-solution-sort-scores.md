@@ -15,7 +15,7 @@ author: szabgab
 Solution: of the [sort scores](/beginner-perl-maven-exercise-sort-scores) exercise.
 
 
-<slidecast file="beginner-perl/solution-sort-scores" youtube="nOVVS2qfwPQ" />
+{% youtube id="nOVVS2qfwPQ" file="beginner-perl/solution-sort-scores" %}
 
 {% include file="examples/hashes/score_data.pl" %}
 

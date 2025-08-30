@@ -20,4 +20,4 @@ author: szabgab
 Compare values. See also the article [comparing scalars in Perl](/comparing-scalars-in-perl)
 
 
-<slidecast file="beginner-perl/compare-values" youtube="wglfrnlB9bk" />
+{% youtube id="wglfrnlB9bk" file="beginner-perl/compare-values" %}

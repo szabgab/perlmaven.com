@@ -16,4 +16,4 @@ author: szabgab
 Using object oriented modules [WWW::Mechanize](https://metacpan.org/pod/WWW::Mechanize)
 
 
-<slidecast file="beginner-perl/using-object-oriented-module" youtube="fxWrAGP9xao" />
+{% youtube id="fxWrAGP9xao" file="beginner-perl/using-object-oriented-module" %}

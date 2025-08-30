@@ -15,4 +15,4 @@ author: szabgab
 Debug sum numbers
 
 
-<slidecast file="beginner-perl/debug-sum-numbers" youtube="a0ueopvItko" />
+{% youtube id="a0ueopvItko" file="beginner-perl/debug-sum-numbers" %}

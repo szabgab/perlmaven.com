@@ -17,5 +17,5 @@ We are going to start with libraries and modules, and later we are going to come
 back to other parts that we are skipping right now.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/introduction" youtube="Rf2OxHuwkjw" />
+{% youtube id="Rf2OxHuwkjw" file="advanced-perl/libraries-and-modules/introduction" %}
 

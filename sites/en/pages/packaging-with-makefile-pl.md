@@ -17,7 +17,7 @@ If you have a `Makefile.PL`, either because you are using [ExtUtils::MakeMaker](
 or because you are using [Module::Install](/makefile-pl-of-module-install) you do the following to created the distribution:
 
 
-<slidecast file="advanced-perl/libraries-and-modules/packaging-with-makefile-pl" youtube="efUveYthyHw" />
+{% youtube id="efUveYthyHw" file="advanced-perl/libraries-and-modules/packaging-with-makefile-pl" %}
 
 Firs of all you run:
 ```

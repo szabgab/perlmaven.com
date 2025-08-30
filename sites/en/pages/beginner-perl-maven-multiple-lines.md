@@ -16,4 +16,4 @@ author: szabgab
 multiple-lines
 
 
-<slidecast file="beginner-perl/multiple-lines" youtube="D4A62OTI5TM" />
+{% youtube id="D4A62OTI5TM" file="beginner-perl/multiple-lines" %}

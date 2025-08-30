@@ -15,4 +15,4 @@ author: szabgab
 Solution: number guessing game - m move toggle
 
 
-<slidecast file="beginner-perl/solution-number-guessing-game-m-move-toggle" youtube="qOrlob3LsI0" />
+{% youtube id="qOrlob3LsI0" file="beginner-perl/solution-number-guessing-game-m-move-toggle" %}

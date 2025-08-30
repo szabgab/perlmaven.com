@@ -16,4 +16,4 @@ author: szabgab
 Dumping a hash
 
 
-<slidecast file="beginner-perl/dumping-hash" youtube="VZ_SoKjPpCc" />
+{% youtube id="VZ_SoKjPpCc" file="beginner-perl/dumping-hash" %}

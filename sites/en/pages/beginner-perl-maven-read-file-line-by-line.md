@@ -16,4 +16,4 @@ author: szabgab
 Read file line by line
 
 
-<slidecast file="beginner-perl/read-file-line-by-line" youtube="sn7xi1BZUxI" />
+{% youtube id="sn7xi1BZUxI" file="beginner-perl/read-file-line-by-line" %}

@@ -15,4 +15,4 @@ author: szabgab
 quantifiers
 
 
-<slidecast file="beginner-perl/quantifiers" youtube="kMDnPJ9xaXI" />
+{% youtube id="kMDnPJ9xaXI" file="beginner-perl/quantifiers" %}

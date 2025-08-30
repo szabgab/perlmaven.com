@@ -22,7 +22,7 @@ though it was already superseded by DWIM Perl for Windows. Today my recommendati
 
 
 
-<slidecast file="beginner-perl/installation" youtube="dskYFZax1Qo" />
+{% youtube id="dskYFZax1Qo" file="beginner-perl/installation" %}
 
 * [ActiveState](http://www.activestate.com/)
 * [Strawberry Perl](http://strawberryperl.com/)

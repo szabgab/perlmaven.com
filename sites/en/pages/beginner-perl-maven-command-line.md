@@ -21,7 +21,7 @@ saved in files, but Perl can also be used on the command line, without saving th
 We are going to see an example here, and later on we are going to see a couple of more examples.
 
 
-<slidecast file="beginner-perl/command-line" youtube="cjKol7gTlkA" />
+{% youtube id="cjKol7gTlkA" file="beginner-perl/command-line" %}
 
 In order to open the command line, on Windows you need to click on **Start/Run** and then type in `cmd`.
 

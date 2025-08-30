@@ -15,4 +15,4 @@ author: szabgab
 Solution: improve the color selector - force
 
 
-<slidecast file="beginner-perl/solution-improve-the-color-selector-force" youtube="49q2NNfGF_w" />
+{% youtube id="49q2NNfGF_w" file="beginner-perl/solution-improve-the-color-selector-force" %}

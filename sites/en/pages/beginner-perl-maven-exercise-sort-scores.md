@@ -15,7 +15,7 @@ author: szabgab
 Exercise: sort scores
 
 
-<slidecast file="beginner-perl/exercise-sort-scores" youtube="oba286a-F10" />
+{% youtube id="oba286a-F10" file="beginner-perl/exercise-sort-scores" %}
 
 For the full description visit the [sort scores exercise](https://code-maven.com/exercise-sort-scores)
 on the Code Maven site.

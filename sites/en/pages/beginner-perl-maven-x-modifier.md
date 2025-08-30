@@ -16,4 +16,4 @@ author: szabgab
 x-modifier
 
 
-<slidecast file="beginner-perl/x-modifier" youtube="rl-JxlP0hTQ" />
+{% youtube id="rl-JxlP0hTQ" file="beginner-perl/x-modifier" %}

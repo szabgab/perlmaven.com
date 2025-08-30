@@ -16,4 +16,4 @@ author: szabgab
 [Original exercise](/beginner-perl-maven-exercise-sort-snmp-numbers)
 
 
-<slidecast file="beginner-perl/solution-sort-snmp-numbers" youtube="6-svetTQrb4" />
+{% youtube id="6-svetTQrb4" file="beginner-perl/solution-sort-snmp-numbers" %}

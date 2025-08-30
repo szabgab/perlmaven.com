@@ -26,4 +26,4 @@ author: szabgab
 more-unix-commands
 
 
-<slidecast file="beginner-perl/more-unix-commands" youtube="AUFkessJAtE" />
+{% youtube id="AUFkessJAtE" file="beginner-perl/more-unix-commands" %}

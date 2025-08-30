@@ -15,4 +15,4 @@ author: szabgab
 Second part of the solution for the [regex exercise](/beginner-perl-maven-exercise-regexes-1)
 
 
-<slidecast file="beginner-perl/solution-regexes-2" youtube="VG_m7pVBRmA" />
+{% youtube id="VG_m7pVBRmA" file="beginner-perl/solution-regexes-2" %}

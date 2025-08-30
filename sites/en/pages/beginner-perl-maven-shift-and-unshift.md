@@ -16,4 +16,4 @@ author: szabgab
 shift and unshift
 
 
-<slidecast file="beginner-perl/shift-and-unshift" youtube="ZIqlLKuhfPU" />
+{% youtube id="ZIqlLKuhfPU" file="beginner-perl/shift-and-unshift" %}

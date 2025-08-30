@@ -15,4 +15,4 @@ author: szabgab
 A hash in SCALAR context
 
 
-<slidecast file="beginner-perl/hash-in-scalar-context" youtube="Rlqh_vygzEU" />
+{% youtube id="Rlqh_vygzEU" file="beginner-perl/hash-in-scalar-context" %}

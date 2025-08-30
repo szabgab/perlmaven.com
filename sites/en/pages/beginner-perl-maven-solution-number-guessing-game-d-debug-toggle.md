@@ -15,4 +15,4 @@ author: szabgab
 Solution: number guessing game - d debug toggle
 
 
-<slidecast file="beginner-perl/solution-number-guessing-game-d-debug-toggle" youtube="u96yEHssTsE" />
+{% youtube id="u96yEHssTsE" file="beginner-perl/solution-number-guessing-game-d-debug-toggle" %}

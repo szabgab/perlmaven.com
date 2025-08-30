@@ -15,4 +15,4 @@ author: szabgab
 Open file with error handling
 
 
-<slidecast file="beginner-perl/open-file-with-error-handling" youtube="9-7cSUxRxCw" />
+{% youtube id="9-7cSUxRxCw" file="beginner-perl/open-file-with-error-handling" %}

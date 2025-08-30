@@ -21,7 +21,7 @@ Implementing it in core Perl is quite similar to the previous cases. For example
 when we had [accessor with type constraint](/accessor-with-type-constraint).
 
 
-<slidecast file="advanced-perl/core-perl-oop/class-as-type-constraint" youtube="LeILpUZHx5c" />
+{% youtube id="LeILpUZHx5c" file="advanced-perl/core-perl-oop/class-as-type-constraint" %}
 
 {% include file="examples/oop/person03/lib/Person.pm" %}
 

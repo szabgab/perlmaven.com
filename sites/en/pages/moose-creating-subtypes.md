@@ -21,7 +21,7 @@ So we can declare an attribute to be of type DateTime and Moose will enforce thi
 What if you'd like to create your own type
 
 
-<slidecast file="advanced-perl/moose/creating-subtypes" youtube="R6gSMmowmYg" />
+{% youtube id="R6gSMmowmYg" file="advanced-perl/moose/creating-subtypes" %}
 
 
 Of course you can create your own class and use that as a type, just as was the cases with DateTime, but in many

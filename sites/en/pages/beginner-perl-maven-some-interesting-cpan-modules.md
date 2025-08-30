@@ -15,5 +15,5 @@ author: szabgab
 Some interesting CPAN modules
 
 
-<slidecast file="beginner-perl/some-interesting-cpan-modules" youtube="xjH9Bq58Tq0" />
+{% youtube id="xjH9Bq58Tq0" file="beginner-perl/some-interesting-cpan-modules" %}
 

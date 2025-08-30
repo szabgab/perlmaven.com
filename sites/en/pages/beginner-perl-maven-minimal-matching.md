@@ -19,4 +19,4 @@ author: szabgab
 minimal-matching
 
 
-<slidecast file="beginner-perl/minimal-matching" youtube="kj07K_M4HgI" />
+{% youtube id="kj07K_M4HgI" file="beginner-perl/minimal-matching" %}

@@ -14,4 +14,4 @@ author: szabgab
 strings in double quotes
 
 
-<slidecast file="beginner-perl/strings-in-double-quotes" youtube="HTsitWJrqCY" />
+{% youtube id="HTsitWJrqCY" file="beginner-perl/strings-in-double-quotes" %}

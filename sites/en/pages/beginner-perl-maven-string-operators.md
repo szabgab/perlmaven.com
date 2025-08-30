@@ -16,4 +16,4 @@ author: szabgab
 String operators
 
 
-<slidecast file="beginner-perl/string-operators" youtube="PA7r8ZuT4iI" />
+{% youtube id="PA7r8ZuT4iI" file="beginner-perl/string-operators" %}

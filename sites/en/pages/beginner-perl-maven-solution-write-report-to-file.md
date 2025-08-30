@@ -15,4 +15,4 @@ author: szabgab
 Solution: write report to file
 
 
-<slidecast file="beginner-perl/solution-write-report-to-file" youtube="Sx_xIG0J9q4" />
+{% youtube id="Sx_xIG0J9q4" file="beginner-perl/solution-write-report-to-file" %}

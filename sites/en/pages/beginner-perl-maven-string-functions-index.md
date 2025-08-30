@@ -15,4 +15,4 @@ author: szabgab
 String functions: index
 
 
-<slidecast file="beginner-perl/string-functions-index" youtube="AKm5lh3p9u0" />
+{% youtube id="AKm5lh3p9u0" file="beginner-perl/string-functions-index" %}

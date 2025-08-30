@@ -17,7 +17,7 @@ author: szabgab
 installing-modules-from-the-os-vendor
 
 
-<slidecast file="beginner-perl/installing-modules-from-the-os-vendor" youtube="RiDiOC3N3Ds" />
+{% youtube id="RiDiOC3N3Ds" file="beginner-perl/installing-modules-from-the-os-vendor" %}
 
 Vendors: Debian, Ubuntu Fedora, Red Hat
 

@@ -17,4 +17,4 @@ author: szabgab
 Diskspace usage: df using [Filesys::DfPortable](http://metacpan.org/pod/Filesys::DfPortable).
 
 
-<slidecast file="beginner-perl/diskspace-usage-df" youtube="iauUQhsICAA" />
+{% youtube id="iauUQhsICAA" file="beginner-perl/diskspace-usage-df" %}

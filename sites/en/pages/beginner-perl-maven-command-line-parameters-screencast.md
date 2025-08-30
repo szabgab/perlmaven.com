@@ -17,5 +17,5 @@ author: szabgab
 Command line parameters (screencast)
 
 
-<slidecast file="beginner-perl/command-line-parameters-run" youtube="JlmQ_RioO_Y" />
+{% youtube id="JlmQ_RioO_Y" file="beginner-perl/command-line-parameters-run" %}
 

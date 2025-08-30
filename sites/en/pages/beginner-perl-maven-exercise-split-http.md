@@ -16,7 +16,7 @@ author: szabgab
 Exercise: split http
 
 
-<slidecast file="beginner-perl/exercise-split-http" youtube="2SIu_TffPVc" />
+{% youtube id="2SIu_TffPVc" file="beginner-perl/exercise-split-http" %}
 
 Given a string that looks like this:
 

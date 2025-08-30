@@ -15,5 +15,5 @@ author: szabgab
 Regexes
 
 
-<slidecast file="beginner-perl/any-number-of-any-character" youtube="366xIzVjIfo" />
+{% youtube id="366xIzVjIfo" file="beginner-perl/any-number-of-any-character" %}
 

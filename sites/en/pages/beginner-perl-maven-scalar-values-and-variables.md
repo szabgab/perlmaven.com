@@ -17,7 +17,7 @@ author: szabgab
 Scalar values (numbers and string) and scalar variables holding such values.
 
 
-<slidecast file="beginner-perl/scalar-values-and-variables" youtube="oBh4bfKMK5o" />
+{% youtube id="oBh4bfKMK5o" file="beginner-perl/scalar-values-and-variables" %}
 
 See also for [strict and warnings](/installing-perl-and-getting-started).
 

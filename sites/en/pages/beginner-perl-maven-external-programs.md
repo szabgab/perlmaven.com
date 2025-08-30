@@ -15,4 +15,4 @@ author: szabgab
 external programs
 
 
-<slidecast file="beginner-perl/external-programs" youtube="jQKbjFgxdjs" />
+{% youtube id="jQKbjFgxdjs" file="beginner-perl/external-programs" %}

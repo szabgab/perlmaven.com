@@ -18,7 +18,7 @@ Let's look at some module that are installed with perl by default, and let's loo
 the scenes of the modules.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/behind-the-scenes" youtube="5P3EbdwGNmQ" />
+{% youtube id="5P3EbdwGNmQ" file="advanced-perl/libraries-and-modules/behind-the-scenes" %}
 
 You already know that when perl encounters a `use` statement, it will look for a file with the same
 name, but with `.pm` extension in the directories listed in the `@INC` array.

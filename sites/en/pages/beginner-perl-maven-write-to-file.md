@@ -16,4 +16,4 @@ author: szabgab
 [Writing to file](/writing-to-files-with-perl)
 
 
-<slidecast file="beginner-perl/write-to-file" youtube="F2Gl-6SLxWw" />
+{% youtube id="F2Gl-6SLxWw" file="beginner-perl/write-to-file" %}

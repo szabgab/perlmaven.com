@@ -16,4 +16,4 @@ author: szabgab
 Process CSV file using Text::CSV_XS
 
 
-<slidecast file="beginner-perl/text-csv-xs" youtube="mXpa_Oh_-0Q" />
+{% youtube id="mXpa_Oh_-0Q" file="beginner-perl/text-csv-xs" %}

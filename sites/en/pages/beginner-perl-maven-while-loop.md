@@ -15,4 +15,4 @@ author: szabgab
 while loop
 
 
-<slidecast file="beginner-perl/while-loop" youtube="tSoKHHEBeCw" />
+{% youtube id="tSoKHHEBeCw" file="beginner-perl/while-loop" %}

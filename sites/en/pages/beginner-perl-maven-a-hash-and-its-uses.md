@@ -15,4 +15,4 @@ author: szabgab
 A hash and its uses
 
 
-<slidecast file="beginner-perl/a-hash-and-its-uses" youtube="jW8HU8DufYo" />
+{% youtube id="jW8HU8DufYo" file="beginner-perl/a-hash-and-its-uses" %}

@@ -15,4 +15,4 @@ author: szabgab
 Counting words in a file
 
 
-<slidecast file="beginner-perl/counting-words-in-a-file" youtube="6e6zyIIsAoo" />
+{% youtube id="6e6zyIIsAoo" file="beginner-perl/counting-words-in-a-file" %}

@@ -15,5 +15,5 @@ author: szabgab
 Capturing
 
 
-<slidecast file="beginner-perl/capturing" youtube="zJYS-pYymhc" />
+{% youtube id="zJYS-pYymhc" file="beginner-perl/capturing" %}
 

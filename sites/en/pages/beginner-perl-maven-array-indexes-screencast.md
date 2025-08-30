@@ -16,5 +16,5 @@ author: szabgab
 Array indexes (screencast)
 
 
-<slidecast file="beginner-perl/array-indexes-run" youtube="iMWf_p1KR6M" />
+{% youtube id="iMWf_p1KR6M" file="beginner-perl/array-indexes-run" %}
 

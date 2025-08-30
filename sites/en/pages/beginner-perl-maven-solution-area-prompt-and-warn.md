@@ -17,4 +17,4 @@ Solution: area prompt and warn
 [Exercise](/beginner-perl-maven-exercise-rectangular)
 
 
-<slidecast file="beginner-perl/solution-area-prompt-and-warn" youtube="Nuz1zJUzhc0" />
+{% youtube id="Nuz1zJUzhc0" file="beginner-perl/solution-area-prompt-and-warn" %}

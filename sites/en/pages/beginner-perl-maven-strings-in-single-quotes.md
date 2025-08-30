@@ -15,4 +15,4 @@ author: szabgab
 strings in single quotes
 
 
-<slidecast file="beginner-perl/strings-in-single-quotes" youtube="mTbEv5KWBjc" />
+{% youtube id="mTbEv5KWBjc" file="beginner-perl/strings-in-single-quotes" %}

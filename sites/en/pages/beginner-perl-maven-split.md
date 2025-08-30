@@ -16,4 +16,4 @@ author: szabgab
 split
 
 
-<slidecast file="beginner-perl/split" youtube="t8OxEgYjsNg" />
+{% youtube id="t8OxEgYjsNg" file="beginner-perl/split" %}

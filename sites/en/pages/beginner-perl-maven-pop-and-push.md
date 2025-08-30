@@ -16,4 +16,4 @@ author: szabgab
 pop, push
 
 
-<slidecast file="beginner-perl/pop-and-push" youtube="80bWiV4u-tM" />
+{% youtube id="80bWiV4u-tM" file="beginner-perl/pop-and-push" %}

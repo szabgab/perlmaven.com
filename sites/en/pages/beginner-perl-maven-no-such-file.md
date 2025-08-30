@@ -15,4 +15,4 @@ author: szabgab
 No such file
 
 
-<slidecast file="beginner-perl/no-such-file" youtube="ON9eQwol9BM" />
+{% youtube id="ON9eQwol9BM" file="beginner-perl/no-such-file" %}

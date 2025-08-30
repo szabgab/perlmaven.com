@@ -15,4 +15,4 @@ author: szabgab
 The ternary operator
 
 
-<slidecast file="beginner-perl/ternary-operator" youtube="Mym791AmBgc" />
+{% youtube id="Mym791AmBgc" file="beginner-perl/ternary-operator" %}

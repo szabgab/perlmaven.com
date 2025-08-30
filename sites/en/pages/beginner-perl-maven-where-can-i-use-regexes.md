@@ -15,4 +15,4 @@ author: szabgab
 Regexes
 
 
-<slidecast file="beginner-perl/where-can-i-use-regexes" youtube="xHOMqOI5KE8" />
+{% youtube id="xHOMqOI5KE8" file="beginner-perl/where-can-i-use-regexes" %}

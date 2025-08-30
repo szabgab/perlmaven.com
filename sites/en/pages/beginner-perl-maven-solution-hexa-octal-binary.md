@@ -15,4 +15,4 @@ author: szabgab
 Solution: hexa, octal, binary
 
 
-<slidecast file="beginner-perl/solution-hexa-octal-binary" youtube="icidRy3kiFQ" />
+{% youtube id="icidRy3kiFQ" file="beginner-perl/solution-hexa-octal-binary" %}

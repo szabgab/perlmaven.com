@@ -23,7 +23,7 @@ we still want the values to be kept as 'm' and 'f' respectively?
 For this in [Moose](/moose) we can use coercion.
 
 
-<slidecast file="advanced-perl/moose/coerce-to-subtype" youtube="z_w2ObbFfWY" />
+{% youtube id="z_w2ObbFfWY" file="advanced-perl/moose/coerce-to-subtype" %}
 
 See the **script/person.pl** file for how we would like to use the class:
 

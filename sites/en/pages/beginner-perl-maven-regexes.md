@@ -15,4 +15,4 @@ author: szabgab
 Regexes
 
 
-<slidecast file="beginner-perl/regexes" youtube="D7b_OC_-ZC4" />
+{% youtube id="D7b_OC_-ZC4" file="beginner-perl/regexes" %}

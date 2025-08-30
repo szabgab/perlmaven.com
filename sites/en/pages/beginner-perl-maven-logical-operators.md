@@ -22,7 +22,7 @@ author: szabgab
 Logical Operators
 
 
-<slidecast file="beginner-perl/logical-operators" youtube="fuk9gedIlWI" />
+{% youtube id="fuk9gedIlWI" file="beginner-perl/logical-operators" %}
 
 In Perl there are two sets of logical operators.
 One set is the words `and`, `or`, `not`, and `xor`.

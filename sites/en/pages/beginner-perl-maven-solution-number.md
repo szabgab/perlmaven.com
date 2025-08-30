@@ -15,4 +15,4 @@ author: szabgab
 Solution: number
 
 
-<slidecast file="beginner-perl/solution-number" youtube="pDkB0Z0jKOw" />
+{% youtube id="pDkB0Z0jKOw" file="beginner-perl/solution-number" %}

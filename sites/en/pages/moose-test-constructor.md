@@ -19,7 +19,7 @@ that even after we made further development, the other parts of the application 
 Let's start by testing the constructor we created in the [previous episode](/moose-constructor).
 
 
-<slidecast file="advanced-perl/moose/test-constructor" youtube="GnFTUi6Obt0" />
+{% youtube id="GnFTUi6Obt0" file="advanced-perl/moose/test-constructor" %}
 
 ## Code layout
 

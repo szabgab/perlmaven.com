@@ -15,4 +15,4 @@ author: szabgab
 Solution: improve the color selector
 
 
-<slidecast file="beginner-perl/solution-improve-the-color-selector-check-input" youtube="LTUuNtntePI" />
+{% youtube id="LTUuNtntePI" file="beginner-perl/solution-improve-the-color-selector-check-input" %}

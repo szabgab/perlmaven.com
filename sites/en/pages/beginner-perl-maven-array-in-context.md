@@ -15,5 +15,5 @@ author: szabgab
 array in context
 
 
-<slidecast file="beginner-perl/array-in-context" youtube="RQ-lbpGo4r8" />
+{% youtube id="RQ-lbpGo4r8" file="beginner-perl/array-in-context" %}
 

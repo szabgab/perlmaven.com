@@ -17,7 +17,7 @@ In this chapter we are going to see how write object oriented Perl code with cor
 Without any additional modules. Manually blessing a hash reference.
 
 
-<slidecast file="advanced-perl/core-perl-oop/constructor" youtube="Hhmks2-JhBs" />
+{% youtube id="Hhmks2-JhBs" file="advanced-perl/core-perl-oop/constructor" %}
 
 In the previous chapter we have seen how to use [Moose](/moose) to
 create object oriented code in Perl. In this chapter we are going to implement similar functionality,

@@ -17,7 +17,7 @@ Now that we have seen how to use [Perl 4 libraries](/perl4-libraries), let's see
 Although they are still in use, they belong to  much earlier era. Before Perl 5 came out in 1995.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/the-problem-with-libraries" youtube="UZeEzD5459c" />
+{% youtube id="UZeEzD5459c" file="advanced-perl/libraries-and-modules/the-problem-with-libraries" %}
 
 All of nothing:
 The library (`library.pl`) we had in [Perl 4 libraries](/perl4-libraries) had 3 functions in

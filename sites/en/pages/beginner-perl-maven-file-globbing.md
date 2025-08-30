@@ -16,4 +16,4 @@ author: szabgab
 file-globbing
 
 
-<slidecast file="beginner-perl/file-globbing" youtube="R4Mkmop_ax8" />
+{% youtube id="R4Mkmop_ax8" file="beginner-perl/file-globbing" %}

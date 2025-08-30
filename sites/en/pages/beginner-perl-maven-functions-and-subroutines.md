@@ -15,4 +15,4 @@ author: szabgab
 Functions and subroutines
 
 
-<slidecast file="beginner-perl/functions-and-subroutines" youtube="7VrzYQ5QyKc" />
+{% youtube id="7VrzYQ5QyKc" file="beginner-perl/functions-and-subroutines" %}

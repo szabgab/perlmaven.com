@@ -15,4 +15,4 @@ author: szabgab
 greedy-quantifyers
 
 
-<slidecast file="beginner-perl/greedy-quantifiers" youtube="8ws6XBbNb7E" />
+{% youtube id="8ws6XBbNb7E" file="beginner-perl/greedy-quantifiers" %}

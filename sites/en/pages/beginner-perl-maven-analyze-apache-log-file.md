@@ -19,7 +19,7 @@ This is the solution for the exercise <a href="https://code-maven.com/exercise-a
 See more [exercises](https://code-maven.com/exercises) on the Code Maven site</a>.
 
 
-<slidecast file="beginner-perl/analyze-apache-log-file" youtube="xoBllrape9I" />
+{% youtube id="xoBllrape9I" file="beginner-perl/analyze-apache-log-file" %}
 
 We have a log file of the Apache web server (or for that matter Nginx or any other web server).
 Each line describes a request made to the server. Each line starts with the IP address of the client

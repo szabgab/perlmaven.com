@@ -15,4 +15,4 @@ author: szabgab
 Process command line using Getopt::Long
 
 
-<slidecast file="beginner-perl/process-command-line-using-getopt-long" youtube="SJ5_k3_-qcI" />
+{% youtube id="SJ5_k3_-qcI" file="beginner-perl/process-command-line-using-getopt-long" %}

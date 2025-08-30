@@ -15,4 +15,4 @@ author: szabgab
 [CPAN Testers](http://www.cpantesters.org/) and [CPAN Ratings](http://cpanratings.perl.org/)
 
 
-<slidecast file="beginner-perl/cpantesters-and-cpanratings" youtube="AuG4aip3oDc" />
+{% youtube id="AuG4aip3oDc" file="beginner-perl/cpantesters-and-cpanratings" %}

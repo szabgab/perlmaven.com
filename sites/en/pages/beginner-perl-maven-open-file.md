@@ -15,4 +15,4 @@ author: szabgab
 Open file
 
 
-<slidecast file="beginner-perl/open-file" youtube="UImoG8PaWR4" />
+{% youtube id="UImoG8PaWR4" file="beginner-perl/open-file" %}

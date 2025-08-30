@@ -17,4 +17,4 @@ author: szabgab
 * [Spreadsheet::Read](https://metacpan.org/pod/Spreadsheet::Read)
 
 
-<slidecast file="beginner-perl/reading-excel-file" youtube="z3YMGnUUCes" />
+{% youtube id="z3YMGnUUCes" file="beginner-perl/reading-excel-file" %}

@@ -11,4 +11,4 @@ author: szabgab
 
 
 
-<slidecast file="advanced-perl/core-perl-oop/type-constraint-instead-of-subtype" youtube="cx5JQaBfua4" />
+{% youtube id="cx5JQaBfua4" file="advanced-perl/core-perl-oop/type-constraint-instead-of-subtype" %}

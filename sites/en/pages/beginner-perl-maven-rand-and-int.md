@@ -16,4 +16,4 @@ author: szabgab
 rand and int
 
 
-<slidecast file="beginner-perl/rand-and-int" youtube="AzjdK4N3f5s" />
+{% youtube id="AzjdK4N3f5s" file="beginner-perl/rand-and-int" %}

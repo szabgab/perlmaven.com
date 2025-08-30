@@ -16,7 +16,7 @@ Exercise
 
 
 
-<slidecast file="beginner-perl/exercise-create-time-report" youtube="ICyJWvVAts4" />
+{% youtube id="ICyJWvVAts4" file="beginner-perl/exercise-create-time-report" %}
 
 The log file looks like this:
 

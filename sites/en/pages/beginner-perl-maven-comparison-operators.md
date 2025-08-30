@@ -20,4 +20,4 @@ author: szabgab
 Comparison Operators
 
 
-<slidecast file="beginner-perl/comparison-operators" youtube="RYTTy6aOB9g" />
+{% youtube id="RYTTy6aOB9g" file="beginner-perl/comparison-operators" %}

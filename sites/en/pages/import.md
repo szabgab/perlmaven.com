@@ -22,7 +22,7 @@ the users be able to import? After all there might be helper function or interna
 not be called by an external user of the module.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/import" youtube="u42upYai4kg" />
+{% youtube id="u42upYai4kg" file="advanced-perl/libraries-and-modules/import" %}
 
 Let's see the **cacla.pl** script:
 

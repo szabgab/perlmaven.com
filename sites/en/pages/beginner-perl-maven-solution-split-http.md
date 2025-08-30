@@ -15,4 +15,4 @@ author: szabgab
 solution-split-http
 
 
-<slidecast file="beginner-perl/solution-split-http" youtube="4_suCC3V2-8" />
+{% youtube id="4_suCC3V2-8" file="beginner-perl/solution-split-http" %}

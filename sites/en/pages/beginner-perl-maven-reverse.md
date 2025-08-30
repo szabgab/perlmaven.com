@@ -15,4 +15,4 @@ author: szabgab
 reverse
 
 
-<slidecast file="beginner-perl/reverse" youtube="KUzxGipTlks" />
+{% youtube id="KUzxGipTlks" file="beginner-perl/reverse" %}

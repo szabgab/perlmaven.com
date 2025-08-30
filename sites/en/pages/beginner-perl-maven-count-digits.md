@@ -15,7 +15,7 @@ author: szabgab
 Count digits
 
 
-<slidecast file="beginner-perl/count-digits" youtube="fvYS6kCzSAs" />
+{% youtube id="fvYS6kCzSAs" file="beginner-perl/count-digits" %}
 
 Given a file like this, that has line, and each line has numbers separated by a space.
 Our task is to count digits. Not numbers, but digits.

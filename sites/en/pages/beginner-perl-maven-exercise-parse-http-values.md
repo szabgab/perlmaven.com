@@ -15,4 +15,4 @@ author: szabgab
 Exercise: parse HTTP values
 
 
-<slidecast file="beginner-perl/exercise-parse-http-values" youtube="Rm9D0w32e4Q" />
+{% youtube id="Rm9D0w32e4Q" file="beginner-perl/exercise-parse-http-values" %}

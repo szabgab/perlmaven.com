@@ -15,7 +15,7 @@ author: szabgab
 Here documents
 
 
-<slidecast file="beginner-perl/here-documents" youtube="uXgnmhzwehQ" />
+{% youtube id="uXgnmhzwehQ" file="beginner-perl/here-documents" %}
 
 A gotcha: The `END_STRING` we have put at the end of the string must be exactly the same as we have at the beginning.
 You can't even have extra whitespaces! So make sure the `END_STRING` at the end of the here document starts at the first character of the line and has no spaces,

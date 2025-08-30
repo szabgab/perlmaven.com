@@ -15,4 +15,4 @@ author: szabgab
 file-spec
 
 
-<slidecast file="beginner-perl/file-spec" youtube="xNsUifyiMuU" />
+{% youtube id="xNsUifyiMuU" file="beginner-perl/file-spec" %}

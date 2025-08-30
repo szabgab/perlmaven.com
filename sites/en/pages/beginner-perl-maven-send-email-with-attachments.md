@@ -19,7 +19,7 @@ author: szabgab
 Sending email with attachments.
 
 
-<slidecast file="beginner-perl/send-email-with-attachments" youtube="QjHLbVbs6sY" />
+{% youtube id="QjHLbVbs6sY" file="beginner-perl/send-email-with-attachments" %}
 
 * [File::Basename](https://metacpan.org/pod/File::Basename)
 * [Pod::Usage](https://metacpan.org/pod/Pod::Usage)

@@ -15,7 +15,7 @@ set the value of an attribute using a 'setter', and we could get the value of an
 a 'getter'.
 
 
-<slidecast file="advanced-perl/core-perl-oop/constructor-arguments" youtube="60PdxXn_36I" />
+{% youtube id="60PdxXn_36I" file="advanced-perl/core-perl-oop/constructor-arguments" %}
 
 
 {% include file="examples/Moose/person01/script/person.pl" %}

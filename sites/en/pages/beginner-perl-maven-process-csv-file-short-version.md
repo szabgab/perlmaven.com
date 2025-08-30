@@ -15,4 +15,4 @@ author: szabgab
 Process CSV file short version
 
 
-<slidecast file="beginner-perl/process-csv-file-short-version" youtube="nypU4DFbLXY" />
+{% youtube id="nypU4DFbLXY" file="beginner-perl/process-csv-file-short-version" %}

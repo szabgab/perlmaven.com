@@ -22,7 +22,7 @@ to use the tools that are already available to package and distribute CPAN modul
 Even if your code is proprietary and you only would like to distribute it within your company.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/tools-to-package-modules" youtube="jw_kNnxYMjo" />
+{% youtube id="jw_kNnxYMjo" file="advanced-perl/libraries-and-modules/tools-to-package-modules" %}
 
 There are basically 4 tools to package Perl modules:
 

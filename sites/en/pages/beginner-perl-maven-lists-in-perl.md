@@ -15,4 +15,4 @@ author: szabgab
 Lists in Perl
 
 
-<slidecast file="beginner-perl/lists-in-perl" youtube="0b9AFsbWLT0" />
+{% youtube id="0b9AFsbWLT0" file="beginner-perl/lists-in-perl" %}

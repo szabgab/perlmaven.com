@@ -15,4 +15,4 @@ author: szabgab
 List assignment
 
 
-<slidecast file="beginner-perl/list-assignment" youtube="HG6_hj3BJGI" />
+{% youtube id="HG6_hj3BJGI" file="beginner-perl/list-assignment" %}

@@ -16,7 +16,7 @@ author: szabgab
 User Input and Output
 
 
-<slidecast file="beginner-perl/interpolation-stdin-chomp" youtube="qyQFq6Cu2N4" />
+{% youtube id="qyQFq6Cu2N4" file="beginner-perl/interpolation-stdin-chomp" %}
 
 ## Variable interpolation
 

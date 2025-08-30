@@ -15,4 +15,4 @@ author: szabgab
 The 'if' statement
 
 
-<slidecast file="beginner-perl/if-statement" youtube="p9gWFNRzWvQ" />
+{% youtube id="p9gWFNRzWvQ" file="beginner-perl/if-statement" %}

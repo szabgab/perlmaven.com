@@ -15,4 +15,4 @@ author: szabgab
 read fixed width records
 
 
-<slidecast file="beginner-perl/read-fixed-width-records" youtube="avpjW-a0meM" />
+{% youtube id="avpjW-a0meM" file="beginner-perl/read-fixed-width-records" %}

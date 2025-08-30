@@ -22,4 +22,4 @@ Write a function that given a string it return true if the string is a number. A
 * Real number. (Do you allow .3 ? What about 2. ?
 * In scientific notation. (something like this: 2.123e4 )
 
-<slidecast file="beginner-perl/exercise-number" youtube="NB5_G3DLVRQ" />
+{% youtube id="NB5_G3DLVRQ" file="beginner-perl/exercise-number" %}

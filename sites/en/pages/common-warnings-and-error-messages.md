@@ -17,7 +17,7 @@ warnings and error messages you'll encounter, explained in, hopefully a more beg
 Some of the articles even include directions showing how to fix the error.
 
 
-<slidecast file="beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
+{% youtube id="Sk7QkRNTIak" file="beginner-perl/common-errors" %}
 
 * [Global symbol requires explicit package name](/global-symbol-requires-explicit-package-name)
 * Global symbol requires explicit package name explained in [Variable declaration in Perl](/variable-declaration-in-perl)

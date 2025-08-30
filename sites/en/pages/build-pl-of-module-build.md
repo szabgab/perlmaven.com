@@ -25,7 +25,7 @@ The reason might be that you would like to have everything in Perl without depen
 You probbaly don't have any non-perl dependencies either.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/build-pl-of-module-build" youtube="Up-WkcmC2Qw" />
+{% youtube id="Up-WkcmC2Qw" file="advanced-perl/libraries-and-modules/build-pl-of-module-build" %}
 
 `Build.PL` starts the same way as any other Perl script with `use strict;` and `use warnings;`.
 

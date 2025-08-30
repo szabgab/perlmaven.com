@@ -15,4 +15,4 @@ author: szabgab
 Solution: improve the color selector
 
 
-<slidecast file="beginner-perl/solution-improve-the-color-selector-colors-txt" youtube="TZRGOcBTCjA" />
+{% youtube id="TZRGOcBTCjA" file="beginner-perl/solution-improve-the-color-selector-colors-txt" %}

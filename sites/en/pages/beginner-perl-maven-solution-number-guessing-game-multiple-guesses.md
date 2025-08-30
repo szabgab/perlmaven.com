@@ -15,4 +15,4 @@ author: szabgab
 Solution: number guessing game - multiple guesses
 
 
-<slidecast file="beginner-perl/solution-number-guessing-game-multiple-guesses" youtube="GwU7t0J1MJk" />
+{% youtube id="GwU7t0J1MJk" file="beginner-perl/solution-number-guessing-game-multiple-guesses" %}

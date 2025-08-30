@@ -11,5 +11,5 @@ author: szabgab
 
 
 
-<slidecast file="advanced-perl/core-perl-oop/home-made-coercion" youtube="kJJAzROaEYY" />
+{% youtube id="kJJAzROaEYY" file="advanced-perl/core-perl-oop/home-made-coercion" %}
 

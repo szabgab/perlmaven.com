@@ -27,7 +27,7 @@ the API of the module. We want to make sure that even if the implementation of t
 it will still throw an exception.
 
 
-<slidecast file="advanced-perl/moose/test-type-constraint" youtube="Ja60YykI-1w" />
+{% youtube id="Ja60YykI-1w" file="advanced-perl/moose/test-type-constraint" %}
 
 
 Here is the new test script:

@@ -19,4 +19,4 @@ author: szabgab
 Numerical Operators
 
 
-<slidecast file="beginner-perl/numerical-operators" youtube="wVlaBq73jT0" />
+{% youtube id="wVlaBq73jT0" file="beginner-perl/numerical-operators" %}

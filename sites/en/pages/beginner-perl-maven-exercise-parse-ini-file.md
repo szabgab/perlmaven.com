@@ -15,4 +15,4 @@ author: szabgab
 exercise: parse-ini-file
 
 
-<slidecast file="beginner-perl/exercise-parse-ini-file" youtube="InGai4vtEhc" />
+{% youtube id="InGai4vtEhc" file="beginner-perl/exercise-parse-ini-file" %}

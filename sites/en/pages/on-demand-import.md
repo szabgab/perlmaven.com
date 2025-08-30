@@ -19,7 +19,7 @@ the `import` function and we put the list of functions to be exported in the
 `@EXPORT` array.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/on-demand-import" youtube="yvig3dDKmy4" />
+{% youtube id="yvig3dDKmy4" file="advanced-perl/libraries-and-modules/on-demand-import" %}
 
 As the number of functions we export grows, this soon can get out of hand. Especially
 for people who do not

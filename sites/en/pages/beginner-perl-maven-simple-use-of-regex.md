@@ -15,4 +15,4 @@ author: szabgab
 Regexes
 
 
-<slidecast file="beginner-perl/simple-use-of-regex" youtube="DhdBGO8UBjg" />
+{% youtube id="DhdBGO8UBjg" file="beginner-perl/simple-use-of-regex" %}

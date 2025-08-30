@@ -16,4 +16,4 @@ author: szabgab
 fixing-assembly-with-perl
 
 
-<slidecast file="beginner-perl/fixing-assembly-with-perl" youtube="08aNlMNdDf0" />
+{% youtube id="08aNlMNdDf0" file="beginner-perl/fixing-assembly-with-perl" %}

@@ -20,7 +20,7 @@ or [Dist::Zilla](http://metacpan.org/pod/Dist::Zilla),
 but if you encounter a module that use Module::Install, you will need to understand what is that.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/makefile-pl-of-module-install" youtube="bshmt9euW6o" />
+{% youtube id="bshmt9euW6o" file="advanced-perl/libraries-and-modules/makefile-pl-of-module-install" %}
 
 Module::Install does not use a separate file, it uses Makefile.PL, it just has a different API.
 Because Module::Install does not come with standard Perl, it works differnt then

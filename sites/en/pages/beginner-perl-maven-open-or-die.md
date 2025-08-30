@@ -16,4 +16,4 @@ author: szabgab
 Open or die
 
 
-<slidecast file="beginner-perl/open-or-die" youtube="rrmToaZk0X0" />
+{% youtube id="rrmToaZk0X0" file="beginner-perl/open-or-die" %}

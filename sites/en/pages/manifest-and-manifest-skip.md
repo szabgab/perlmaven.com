@@ -18,7 +18,7 @@ Perl will check if the files that were unpacked are the exact same files that ar
 No other file is included and no file is missing.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/manifest-and-manifest-skip" youtube="QwjNHqcYig8" />
+{% youtube id="QwjNHqcYig8" file="advanced-perl/libraries-and-modules/manifest-and-manifest-skip" %}
 
 Some people maintain the MAINFEST file manually and keep in it version control.
 

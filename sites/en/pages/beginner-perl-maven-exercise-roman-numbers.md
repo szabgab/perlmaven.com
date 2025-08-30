@@ -15,4 +15,4 @@ author: szabgab
 Roman numbers
 
 
-<slidecast file="beginner-perl/exercise-roman-numbers" youtube="0QI6QAZxNwg" />
+{% youtube id="0QI6QAZxNwg" file="beginner-perl/exercise-roman-numbers" %}

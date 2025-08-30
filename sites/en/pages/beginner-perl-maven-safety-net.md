@@ -19,7 +19,7 @@ To avoid common errors use the compiler flags: `use strict; use warnings;` with 
 `use diagnostics;` to get even longer explanation.
 
 
-<slidecast file="beginner-perl/safety-net" youtube="w7hi8Vp8v_E" />
+{% youtube id="w7hi8Vp8v_E" file="beginner-perl/safety-net" %}
 
 Some of the [common warnings and errors](/common-warnings-and-error-messages) you can
 catch by using `strict` and `warnings`.

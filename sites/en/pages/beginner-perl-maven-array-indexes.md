@@ -16,5 +16,5 @@ author: szabgab
 Array indexes
 
 
-<slidecast file="beginner-perl/array-indexes" youtube="HbgBwnPPxPo" />
+{% youtube id="HbgBwnPPxPo" file="beginner-perl/array-indexes" %}
 

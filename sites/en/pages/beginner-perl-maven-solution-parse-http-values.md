@@ -15,4 +15,4 @@ author: szabgab
 Solution: parse HTTP values
 
 
-<slidecast file="beginner-perl/solution-parse-http-values" youtube="Y9y-s40NiUo" />
+{% youtube id="Y9y-s40NiUo" file="beginner-perl/solution-parse-http-values" %}

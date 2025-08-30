@@ -15,7 +15,7 @@ Previously we saw [the problems with Perl 4 libraries](/the-problem-with-librari
 see a better solution using Perl 5 namespaces.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/namespaces" youtube="VdtJqpD2ARA" />
+{% youtube id="VdtJqpD2ARA" file="advanced-perl/libraries-and-modules/namespaces" %}
 
 Other language also use namespaces. In Perl 5, in order to switch to another namespace we use the
 `package` keyword. (For some more clarification on what namespaces, packages, modules etc. are,

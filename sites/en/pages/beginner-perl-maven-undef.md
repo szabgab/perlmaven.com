@@ -15,4 +15,4 @@ author: szabgab
 undef
 
 
-<slidecast file="beginner-perl/undef" youtube="vvtAN3fW0ME" />
+{% youtube id="vvtAN3fW0ME" file="beginner-perl/undef" %}

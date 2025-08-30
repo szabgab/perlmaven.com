@@ -16,7 +16,7 @@ How to read the documentation of Perl using perldoc or in the browser.
 
 
 
-<slidecast file="beginner-perl/documentation" youtube="dNvDSO_wKBE" />
+{% youtube id="dNvDSO_wKBE" file="beginner-perl/documentation" %}
 
 ```
 perldoc perl

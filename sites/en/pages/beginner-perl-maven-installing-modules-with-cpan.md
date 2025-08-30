@@ -15,4 +15,4 @@ author: szabgab
 installing modules with cpan
 
 
-<slidecast file="beginner-perl/installing-modules-with-cpan" youtube="OfCJFZ2zwe8" />
+{% youtube id="OfCJFZ2zwe8" file="beginner-perl/installing-modules-with-cpan" %}

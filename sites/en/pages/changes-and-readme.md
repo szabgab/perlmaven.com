@@ -18,7 +18,7 @@ usually have a common form. Recently work has been done to
 create a [specification for the Changes file](https://metacpan.org/pod/CPAN::Changes::Spec).
 
 
-<slidecast file="advanced-perl/libraries-and-modules/changes-and-readme" youtube="tlrm0Zm3Lr8" />
+{% youtube id="tlrm0Zm3Lr8" file="advanced-perl/libraries-and-modules/changes-and-readme" %}
 
 Even the name of the Changes file is not standardizd. Some people write `CHANGES`,
 others write `Changes`, yet others write `ChangeLog`.

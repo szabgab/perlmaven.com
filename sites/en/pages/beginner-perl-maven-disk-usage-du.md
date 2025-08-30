@@ -16,7 +16,7 @@ author: szabgab
 du using [Filesys::DiskUsage](https://metacpan.org/pod/Filesys::DiskUsage)
 
 
-<slidecast file="beginner-perl/disk-usage-du" youtube="uOch-LIPix4" />
+{% youtube id="uOch-LIPix4" file="beginner-perl/disk-usage-du" %}
 
 {% include file="examples/du.pl" %}
 

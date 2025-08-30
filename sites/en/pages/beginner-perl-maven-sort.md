@@ -16,5 +16,5 @@ sort
 
 
 
-<slidecast file="beginner-perl/sort" youtube="0Bi4bIUiDi0" />
+{% youtube id="0Bi4bIUiDi0" file="beginner-perl/sort" %}
 

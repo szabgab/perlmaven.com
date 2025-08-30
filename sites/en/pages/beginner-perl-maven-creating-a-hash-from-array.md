@@ -15,4 +15,4 @@ author: szabgab
 Creating a hash from an array
 
 
-<slidecast file="beginner-perl/creating-a-hash-from-array" youtube="Dxu6RfRVfbc" />
+{% youtube id="Dxu6RfRVfbc" file="beginner-perl/creating-a-hash-from-array" %}

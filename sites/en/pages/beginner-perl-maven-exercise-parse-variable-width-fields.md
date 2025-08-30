@@ -15,4 +15,4 @@ author: szabgab
 Exercise: parse variable width fields
 
 
-<slidecast file="beginner-perl/exercise-parse-variable-width-fields" youtube="6NoHj4sehWc" />
+{% youtube id="6NoHj4sehWc" file="beginner-perl/exercise-parse-variable-width-fields" %}

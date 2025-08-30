@@ -15,4 +15,4 @@ author: szabgab
 Comments starts with a pound-sign: `#`.
 
 
-<slidecast file="beginner-perl/comments" youtube="SIWS8t59vH0" />
+{% youtube id="SIWS8t59vH0" file="beginner-perl/comments" %}

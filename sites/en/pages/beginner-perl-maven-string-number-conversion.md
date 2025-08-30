@@ -30,7 +30,7 @@ not fit in the "picture of a number". This part will be the numerical value. The
 
 In the above case that means the numericla value is `12.34`.
 
-<slidecast file="beginner-perl/string-number-conversion" youtube="tYwlgLXsWVg" />
+{% youtube id="tYwlgLXsWVg" file="beginner-perl/string-number-conversion" %}
 
 See also the article about [automatic string to number conversion](/automatic-value-conversion-or-casting-in-perl).
 

@@ -17,5 +17,5 @@ author: szabgab
 Command line parameters
 
 
-<slidecast file="beginner-perl/command-line-parameters" youtube="KasTcfFrS34" />
+{% youtube id="KasTcfFrS34" file="beginner-perl/command-line-parameters" %}
 

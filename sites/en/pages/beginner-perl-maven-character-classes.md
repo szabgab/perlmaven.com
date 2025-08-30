@@ -15,4 +15,4 @@ author: szabgab
 Character classes
 
 
-<slidecast file="beginner-perl/character-classes" youtube="ijOUUMvoCSU" />
+{% youtube id="ijOUUMvoCSU" file="beginner-perl/character-classes" %}

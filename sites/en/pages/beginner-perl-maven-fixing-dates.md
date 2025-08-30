@@ -15,4 +15,4 @@ author: szabgab
 fixing dates
 
 
-<slidecast file="beginner-perl/fixing-dates" youtube="IP-me5WQFv8" />
+{% youtube id="IP-me5WQFv8" file="beginner-perl/fixing-dates" %}

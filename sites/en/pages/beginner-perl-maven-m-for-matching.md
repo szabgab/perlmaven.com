@@ -16,4 +16,4 @@ author: szabgab
 m-for-matching
 
 
-<slidecast file="beginner-perl/m-for-matching" youtube="Eai0e6x-82Q" />
+{% youtube id="Eai0e6x-82Q" file="beginner-perl/m-for-matching" %}

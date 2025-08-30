@@ -16,4 +16,4 @@ author: szabgab
 substitution
 
 
-<slidecast file="beginner-perl/substitution" youtube="uPAvPm2CYIg" />
+{% youtube id="uPAvPm2CYIg" file="beginner-perl/substitution" %}

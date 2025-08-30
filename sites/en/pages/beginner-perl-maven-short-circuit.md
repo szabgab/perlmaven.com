@@ -15,4 +15,4 @@ author: szabgab
 Short Circuit
 
 
-<slidecast file="beginner-perl/short-circuit" youtube="A_DT25jszDo" />
+{% youtube id="A_DT25jszDo" file="beginner-perl/short-circuit" %}

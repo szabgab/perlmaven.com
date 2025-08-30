@@ -16,4 +16,4 @@ author: szabgab
 exists, delete in hash
 
 
-<slidecast file="beginner-perl/exists-delete-hash" youtube="sZ4w_V-L818" />
+{% youtube id="sZ4w_V-L818" file="beginner-perl/exists-delete-hash" %}

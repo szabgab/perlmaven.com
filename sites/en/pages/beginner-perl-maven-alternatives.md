@@ -15,4 +15,4 @@ author: szabgab
 Alternatives
 
 
-<slidecast file="beginner-perl/alternatives" youtube="qCfOdTQ7nYk" />
+{% youtube id="qCfOdTQ7nYk" file="beginner-perl/alternatives" %}

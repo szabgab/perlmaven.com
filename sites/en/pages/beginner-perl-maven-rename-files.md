@@ -16,4 +16,4 @@ author: szabgab
 rename-files
 
 
-<slidecast file="beginner-perl/rename-files" youtube="sBLJMaB3sro" />
+{% youtube id="sBLJMaB3sro" file="beginner-perl/rename-files" %}

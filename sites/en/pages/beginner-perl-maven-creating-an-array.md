@@ -15,4 +15,4 @@ author: szabgab
 Creating an array
 
 
-<slidecast file="beginner-perl/creating-an-array" youtube="Mg44tP6eRek" />
+{% youtube id="Mg44tP6eRek" file="beginner-perl/creating-an-array" %}

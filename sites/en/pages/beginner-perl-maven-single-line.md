@@ -16,4 +16,4 @@ author: szabgab
 single-line
 
 
-<slidecast file="beginner-perl/single-line" youtube="Dy6saaEtu84" />
+{% youtube id="Dy6saaEtu84" file="beginner-perl/single-line" %}

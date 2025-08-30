@@ -15,7 +15,7 @@ author: szabgab
 file-find
 
 
-<slidecast file="beginner-perl/file-find" youtube="0HE_2pGeR1I" />
+{% youtube id="0HE_2pGeR1I" file="beginner-perl/file-find" %}
 
 
 [tree](https://code-maven.com/slides/perl-programming/solution-tree)

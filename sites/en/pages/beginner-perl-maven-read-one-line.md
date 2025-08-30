@@ -16,4 +16,4 @@ author: szabgab
 read one line
 
 
-<slidecast file="beginner-perl/read-one-line" youtube="6A8XoUFyvak" />
+{% youtube id="6A8XoUFyvak" file="beginner-perl/read-one-line" %}

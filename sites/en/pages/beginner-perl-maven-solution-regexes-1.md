@@ -13,4 +13,4 @@ author: szabgab
 First part of the solution for the [regex exercise](/beginner-perl-maven-exercise-regexes-1)
 
 
-<slidecast file="beginner-perl/solution-regexes-1" youtube="ZYqruvNyUiM" />
+{% youtube id="ZYqruvNyUiM" file="beginner-perl/solution-regexes-1" %}

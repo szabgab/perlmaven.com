@@ -29,4 +29,4 @@ Actually the format is called [ASN 1](https://en.wikipedia.org/wiki/Abstract_Syn
 2.3.5.7.10.8.9
 ```
 
-<slidecast file="beginner-perl/exercise-sort-snmp-numbers" youtube="CF92m6Y8CGQ" />
+{% youtube id="CF92m6Y8CGQ" file="beginner-perl/exercise-sort-snmp-numbers" %}

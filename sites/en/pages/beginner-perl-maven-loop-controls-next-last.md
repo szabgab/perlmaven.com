@@ -16,4 +16,4 @@ author: szabgab
 Loop controls: next last
 
 
-<slidecast file="beginner-perl/loop-controls-next-last" youtube="tcAzt2vbTTA" />
+{% youtube id="tcAzt2vbTTA" file="beginner-perl/loop-controls-next-last" %}

@@ -19,7 +19,7 @@ then the user will get **all** the functions listed in the `@EXPORT` array.
 This can be dangerous.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/restrict-the-import" youtube="cbZoVOAVkgA" />
+{% youtube id="cbZoVOAVkgA" file="advanced-perl/libraries-and-modules/restrict-the-import" %}
 
 If I just import everything the module provides and then I upgrade the module, then
 in the new version the module might start to export several new functions that can collide

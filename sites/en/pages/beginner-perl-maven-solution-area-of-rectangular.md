@@ -17,4 +17,4 @@ Solution: area of rectangular
 [Exercise](/beginner-perl-maven-exercise-rectangular)
 
 
-<slidecast file="beginner-perl/solution-area-of-rectangular" youtube="wG2aVtBwuYc" />
+{% youtube id="wG2aVtBwuYc" file="beginner-perl/solution-area-of-rectangular" %}

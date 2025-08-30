@@ -17,7 +17,7 @@ author: szabgab
 If you are trying to package some code in Perl, first you need to create a directory structure.
 
 
-<slidecast file="advanced-perl/distribution-directory-layout" youtube="CTVOjanKuSo" />
+{% youtube id="CTVOjanKuSo" file="advanced-perl/distribution-directory-layout" %}
 
 ```
   dir/

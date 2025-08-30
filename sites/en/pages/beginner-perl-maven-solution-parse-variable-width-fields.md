@@ -15,4 +15,4 @@ author: szabgab
 Solution: parse variable width fields
 
 
-<slidecast file="beginner-perl/solution-parse-variable-width-fields" youtube="yQFCLIL4Jls" />
+{% youtube id="yQFCLIL4Jls" file="beginner-perl/solution-parse-variable-width-fields" %}

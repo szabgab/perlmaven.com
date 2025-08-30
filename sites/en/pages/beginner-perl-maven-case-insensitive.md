@@ -16,4 +16,4 @@ author: szabgab
 case insensitive
 
 
-<slidecast file="beginner-perl/case-insensitive" youtube="b1HWwX-63CQ" />
+{% youtube id="b1HWwX-63CQ" file="beginner-perl/case-insensitive" %}

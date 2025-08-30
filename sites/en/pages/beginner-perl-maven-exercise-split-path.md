@@ -18,5 +18,5 @@ return the filename (**data.txt**), and return the full-path directory name (**/
 Handle also the case of **c:\home\foo\.mozilla\cache\data.txt**.
 
 
-<slidecast file="beginner-perl/exercise-split-path" youtube="ooejgCs6VC4" />
+{% youtube id="ooejgCs6VC4" file="beginner-perl/exercise-split-path" %}
 

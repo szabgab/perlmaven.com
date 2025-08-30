@@ -15,5 +15,5 @@ author: szabgab
 Anchors
 
 
-<slidecast file="beginner-perl/anchors" youtube="cfwQ2sfLjWI" />
+{% youtube id="cfwQ2sfLjWI" file="beginner-perl/anchors" %}
 

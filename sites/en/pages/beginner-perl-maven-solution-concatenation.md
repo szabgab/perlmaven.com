@@ -15,4 +15,4 @@ author: szabgab
 Solution: concatenation
 
 
-<slidecast file="beginner-perl/solution-concatenation" youtube="sha6WwILcAs" />
+{% youtube id="sha6WwILcAs" file="beginner-perl/solution-concatenation" %}

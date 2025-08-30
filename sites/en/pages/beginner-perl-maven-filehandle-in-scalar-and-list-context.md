@@ -15,4 +15,4 @@ author: szabgab
 Filehandle in SCALAR and LIST context
 
 
-<slidecast file="beginner-perl/filehandle-in-scalar-and-list-context" youtube="PRp2yTNWHlA" />
+{% youtube id="PRp2yTNWHlA" file="beginner-perl/filehandle-in-scalar-and-list-context" %}

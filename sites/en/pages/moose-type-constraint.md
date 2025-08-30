@@ -18,7 +18,7 @@ Perl does not care much about the type of the values, whether the are integers, 
 but [Moose](/moose) can provide such type-checking in its setters.
 
 
-<slidecast file="advanced-perl/moose/type-constraint" youtube="oDIEsHcK3d4" />
+{% youtube id="oDIEsHcK3d4" file="advanced-perl/moose/type-constraint" %}
 
 In this example  we a script called `script/person.pl` that looks like this:
 

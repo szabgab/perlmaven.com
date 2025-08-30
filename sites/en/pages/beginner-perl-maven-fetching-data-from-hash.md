@@ -15,4 +15,4 @@ author: szabgab
 Fetching data from a hash
 
 
-<slidecast file="beginner-perl/fetching-data-from-hash" youtube="zYrx5aNJqok" />
+{% youtube id="zYrx5aNJqok" file="beginner-perl/fetching-data-from-hash" %}

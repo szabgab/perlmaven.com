@@ -15,4 +15,4 @@ author: szabgab
 slurp
 
 
-<slidecast file="beginner-perl/slurp" youtube="gCUuGJG8Pp8" />
+{% youtube id="gCUuGJG8Pp8" file="beginner-perl/slurp" %}

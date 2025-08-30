@@ -16,7 +16,7 @@ In this part of the [Moose tutorial](/moose) we keep writing tests. This time fo
 we declared in the earlier example.
 
 
-<slidecast file="advanced-perl/moose/test-setter-getter" youtube="y2O7qF7U9gs" />
+{% youtube id="y2O7qF7U9gs" file="advanced-perl/moose/test-setter-getter" %}
 
 In order to test the setter and getter methods we enlarge the test script we had earlier.
 

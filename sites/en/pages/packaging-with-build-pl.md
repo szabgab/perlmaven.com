@@ -17,7 +17,7 @@ If you use [Build.PL with Module::Build](/build-pl-of-module-build) then creatin
 distribution file has the following steps:
 
 
-<slidecast file="advanced-perl/libraries-and-modules/packaging-with-build-pl" youtube="yy9aypG3IiM" />
+{% youtube id="yy9aypG3IiM" file="advanced-perl/libraries-and-modules/packaging-with-build-pl" %}
 
 ```
 perl Build.PL

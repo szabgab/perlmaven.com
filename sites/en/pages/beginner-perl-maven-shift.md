@@ -15,4 +15,4 @@ author: szabgab
 shift
 
 
-<slidecast file="beginner-perl/shift" youtube="ksvMBjtMGVY" />
+{% youtube id="ksvMBjtMGVY" file="beginner-perl/shift" %}

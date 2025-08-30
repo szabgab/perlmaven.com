@@ -18,7 +18,7 @@ The first script you write: printing Hello World to the screen. Separate stateme
 Separate parameters with comma: `,`. Print newlines using `\n`.
 
 
-<slidecast file="beginner-perl/hello-world" youtube="h0VHYdESJWM" />
+{% youtube id="h0VHYdESJWM" file="beginner-perl/hello-world" %}
 
 ```perl
 #!/usr/bin/env perl

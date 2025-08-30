@@ -15,7 +15,7 @@ author: szabgab
 First exercise - checking your environment.
 
 
-<slidecast file="beginner-perl/exercise-hello-world" youtube="t2ria8wh6Dg" />
+{% youtube id="t2ria8wh6Dg" file="beginner-perl/exercise-hello-world" %}
 
 Try your environment:
 

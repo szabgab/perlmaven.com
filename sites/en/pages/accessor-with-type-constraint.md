@@ -15,7 +15,7 @@ In this part we are adding a new attribute with an accessor that checks if the v
 in the correct type.
 
 
-<slidecast file="advanced-perl/core-perl-oop/accessor-with-type-constraint" youtube="V1m9Y-PU6F4" />
+{% youtube id="V1m9Y-PU6F4" file="advanced-perl/core-perl-oop/accessor-with-type-constraint" %}
 
 The next thing we did in the example with [Moose](/moose) earlier, we created another attribute which has some type.
 We used it this way.

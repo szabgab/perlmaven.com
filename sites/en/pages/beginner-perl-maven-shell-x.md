@@ -15,4 +15,4 @@ author: szabgab
 shell-x
 
 
-<slidecast file="beginner-perl/shell-x" youtube="D_cWKkoXFYU" />
+{% youtube id="D_cWKkoXFYU" file="beginner-perl/shell-x" %}

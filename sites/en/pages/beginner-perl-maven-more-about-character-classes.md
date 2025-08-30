@@ -15,4 +15,4 @@ author: szabgab
 More about Character classes
 
 
-<slidecast file="beginner-perl/more-about-character-classes" youtube="u9DygoOR4tA" />
+{% youtube id="u9DygoOR4tA" file="beginner-perl/more-about-character-classes" %}

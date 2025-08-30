@@ -16,4 +16,4 @@ author: szabgab
 directory handle
 
 
-<slidecast file="beginner-perl/directory-handle" youtube="hm_7ybxAyPk" />
+{% youtube id="hm_7ybxAyPk" file="beginner-perl/directory-handle" %}

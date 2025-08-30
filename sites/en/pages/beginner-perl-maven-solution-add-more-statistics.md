@@ -15,4 +15,4 @@ author: szabgab
 Solution: add more statistics
 
 
-<slidecast file="beginner-perl/solution-add-more-statistics" youtube="3HGuCAk2Vao" />
+{% youtube id="3HGuCAk2Vao" file="beginner-perl/solution-add-more-statistics" %}

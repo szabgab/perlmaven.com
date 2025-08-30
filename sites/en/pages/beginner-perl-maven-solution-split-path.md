@@ -15,4 +15,4 @@ author: szabgab
 solution-split-path
 
 
-<slidecast file="beginner-perl/solution-split-path" youtube="mJvMO8qmN2s" />
+{% youtube id="mJvMO8qmN2s" file="beginner-perl/solution-split-path" %}

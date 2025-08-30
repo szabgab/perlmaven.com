@@ -15,4 +15,4 @@ author: szabgab
 exercise-parse-perl-file
 
 
-<slidecast file="beginner-perl/exercise-parse-perl-file" youtube="ardvW9um0SA" />
+{% youtube id="ardvW9um0SA" file="beginner-perl/exercise-parse-perl-file" %}

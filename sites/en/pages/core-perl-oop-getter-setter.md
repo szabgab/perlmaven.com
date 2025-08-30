@@ -14,7 +14,7 @@ author: szabgab
 
 
 
-<slidecast file="advanced-perl/core-perl-oop/setter-getter" youtube="JPRmQ5QNYaw" />
+{% youtube id="JPRmQ5QNYaw" file="advanced-perl/core-perl-oop/setter-getter" %}
 
 
 Now that we have the [constructor](/core-perl-oop-constructor), let's see

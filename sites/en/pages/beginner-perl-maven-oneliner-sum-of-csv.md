@@ -19,4 +19,4 @@ author: szabgab
 One-liner sum of column in CSV
 
 
-<slidecast file="beginner-perl/oneliner-sum-of-csv" youtube="9E7WzCZ8VME" />
+{% youtube id="9E7WzCZ8VME" file="beginner-perl/oneliner-sum-of-csv" %}

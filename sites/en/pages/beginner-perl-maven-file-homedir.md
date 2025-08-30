@@ -15,4 +15,4 @@ author: szabgab
 File::HomeDir
 
 
-<slidecast file="beginner-perl/file-homedir" youtube="i6mdIxSyqJM" />
+{% youtube id="i6mdIxSyqJM" file="beginner-perl/file-homedir" %}

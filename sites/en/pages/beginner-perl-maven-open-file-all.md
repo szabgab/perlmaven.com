@@ -19,4 +19,4 @@ author: szabgab
 Open file all
 
 
-<slidecast file="beginner-perl/open-file-all" youtube="h0NCqCrZTAc" />
+{% youtube id="h0NCqCrZTAc" file="beginner-perl/open-file-all" %}

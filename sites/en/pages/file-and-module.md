@@ -16,7 +16,7 @@ author: szabgab
 What we are packaging is a script and a module.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/file-and-module" youtube="PEwkiG1tb5U" />
+{% youtube id="PEwkiG1tb5U" file="advanced-perl/libraries-and-modules/file-and-module" %}
 
 The script is placed in the `script/` directory and it is just a regular script.
 You don't have to tell it where to load the modules from, you just load the module.

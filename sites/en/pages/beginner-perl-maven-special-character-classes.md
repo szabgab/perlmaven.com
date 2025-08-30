@@ -15,4 +15,4 @@ author: szabgab
 special character classes
 
 
-<slidecast file="beginner-perl/special-character-classes" youtube="QKm1QiPUnUk" />
+{% youtube id="QKm1QiPUnUk" file="beginner-perl/special-character-classes" %}

@@ -17,4 +17,4 @@ but today I'd recommend [MetaCPAN.org](http://metacpan.org/).
 See the [articles and vidoes about MetaCPAN](/metacpan).
 
 
-<slidecast file="beginner-perl/search-cpan-org" youtube="DZvLWJjVwZw" />
+{% youtube id="DZvLWJjVwZw" file="beginner-perl/search-cpan-org" %}

@@ -15,7 +15,7 @@ author: szabgab
 What is cpan?
 
 
-<slidecast file="beginner-perl/what-is-cpan" youtube="0dxCexTgVQU" />
+{% youtube id="0dxCexTgVQU" file="beginner-perl/what-is-cpan" %}
 
 <p>Evaluating modules, getting information about them</p>
 * [CPAN](http://www.cpan.org/)

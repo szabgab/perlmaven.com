@@ -17,7 +17,7 @@ author: szabgab
 First exercise, second part
 
 
-<slidecast file="beginner-perl/solution-hello-world-2" youtube="QpRnR_w8FVk" />
+{% youtube id="QpRnR_w8FVk" file="beginner-perl/solution-hello-world-2" %}
 
 ## Write a simple script that prints     Hello world
 

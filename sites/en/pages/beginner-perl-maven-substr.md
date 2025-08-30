@@ -15,4 +15,4 @@ author: szabgab
 Substr
 
 
-<slidecast file="beginner-perl/substr" youtube="OxQRAQk-nQk" />
+{% youtube id="OxQRAQk-nQk" file="beginner-perl/substr" %}

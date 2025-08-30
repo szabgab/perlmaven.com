@@ -20,7 +20,7 @@ There are many ways to write Object Oriented code in Perl. In this screencast we
 [Moose](/moose).
 
 
-<slidecast file="advanced-perl/moose/constructor" youtube="HiZAGluWlVc" />
+{% youtube id="HiZAGluWlVc" file="advanced-perl/moose/constructor" %}
 
 We start with the most basic example and create a script called **person.pl** with the following content:
 

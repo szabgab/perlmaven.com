@@ -16,4 +16,4 @@ author: szabgab
 Conext sensitivity
 
 
-<slidecast file="beginner-perl/context-sensitivity" youtube="lgisY6IeLmA" />
+{% youtube id="lgisY6IeLmA" file="beginner-perl/context-sensitivity" %}

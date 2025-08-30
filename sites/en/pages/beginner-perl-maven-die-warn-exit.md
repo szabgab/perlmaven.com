@@ -15,4 +15,4 @@ author: szabgab
 die, warn, exit
 
 
-<slidecast file="beginner-perl/die-warn-exit" youtube="iRU3ALq6yGA" />
+{% youtube id="iRU3ALq6yGA" file="beginner-perl/die-warn-exit" %}

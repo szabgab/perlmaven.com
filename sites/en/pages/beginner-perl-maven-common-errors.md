@@ -17,7 +17,7 @@ Errors and warnings while correct, they are not always that useful for beginners
 There is also a listing of the articles about [common errors and warnings in Perl](/common-warnings-and-error-messages)
 
 
-<slidecast file="beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
+{% youtube id="Sk7QkRNTIak" file="beginner-perl/common-errors" %}
 
 A much longer list of [common warnings and errors](/common-warnings-and-error-messages)
 with detailed explanations.

@@ -19,4 +19,4 @@ author: szabgab
 changing-inc
 
 
-<slidecast file="beginner-perl/changing-inc" youtube="PhOoSjcsrSw" />
+{% youtube id="PhOoSjcsrSw" file="beginner-perl/changing-inc" %}

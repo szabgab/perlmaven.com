@@ -17,7 +17,7 @@ There should be a directory called `t/` and within that directory there should b
 with `.t` extension.
 
 
-<slidecast file="advanced-perl/libraries-and-modules/test-file" youtube="x6hWi89ZOtk" />
+{% youtube id="x6hWi89ZOtk" file="advanced-perl/libraries-and-modules/test-file" %}
 
 In earlier times there use to be a file called `test.pl` in the root of the distribution,
 so i you encounter such file then you'd probably know this is an old-style distribution.
