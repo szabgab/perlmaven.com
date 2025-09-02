@@ -6,9 +6,9 @@ title = "Perl Tk"
 
 # Add github icon to the menu
 [output.html]
-git-repository-url = "https://github.com/szabgab/slides"
+git-repository-url = "https://github.com/szabgab/perlmaven.com"
 git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/szabgab/slides/edit/main/perl-tk/{path}"
+edit-url-template = "https://github.com/szabgab/perlmaven.com/edit/main/books/perl-tk/{path}"
 
 [output.markdown]
 
