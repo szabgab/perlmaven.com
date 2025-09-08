@@ -57,7 +57,7 @@ show_related: false
 * [Perl Dancer](/perl-dancer/)
 * [Perl features](/perl-features/)
 * [Perl intro](/perl-intro/)
-* [Perl Oneliners](/perl-oneliners/)
+* [Perl Oneliners](/oneliners/)
 * [Perl Regular Expression](/perl-regular-expressions/)
 * [Perl Testing](/perl-testing/)
 
