@@ -1,11 +1,5 @@
 # Change encoding
 
-* -i
-* -M
-* -p
-* Encode
-
-
 Convert all the .srt files that are Windows Hebrew encoded to UTF-8 keeping a backup copy
 of the original file with a .bak extension.
 
@@ -23,5 +17,14 @@ perl -i.bak -MEncode -p -e "Encode::from_to($_, 'Windows-1255', 'utf-8')" video.
 ```
 
 {% embed include file="src/examples/oneliners/encode_files.pl" %}
+
+
+---
+
+* -i
+* -M
+* -p
+* Encode
+
 
 

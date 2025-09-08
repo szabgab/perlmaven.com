@@ -1,8 +1,5 @@
 # Rename many files
 
-* rename
-* glob
-
 * Rename every .log file adding an extra extension of .old
 
 ```
@@ -14,5 +11,10 @@ perl -e "rename $_, $_ . '.old' for glob '*.log'"
 ```
 perl -e "$t = time; rename $_, substr($_, 0, -3) . $t for glob '*.log'"
 ```
+
+---
+
+* rename
+* glob
 
 

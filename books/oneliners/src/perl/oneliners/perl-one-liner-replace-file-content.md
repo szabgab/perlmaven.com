@@ -1,8 +1,5 @@
 # Replace a string in many files
 
-* -i
-* -p
-
 You have a bunch of text files in your directory mentioning the name:
 
 "Microsoft Word"
@@ -20,5 +17,10 @@ perl -i -p -e "s/Microsoft Word/OpenOffice Write/g" *.txt
 -p = loop over lines and print each line (after processing)
 -e = command line script
 ```
+
+---
+
+* -i
+* -p
 
 

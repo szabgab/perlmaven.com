@@ -6,7 +6,7 @@ In a single file:
 
 
 ```
-perl -ne "print $_ if /secret/" main.xml
+perl -ne "print if /secret/" main.xml
 ```
 
 As Windows does not know how to handle wildcards on the command line,

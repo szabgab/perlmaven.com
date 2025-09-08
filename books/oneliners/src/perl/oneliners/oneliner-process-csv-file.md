@@ -1,10 +1,5 @@
 # print the 3rd field of every line in a CSV file
 
-* CSV
-* -n
-* -a
-* -F
-
 You have a number of csv files, you want to print the 3rd field of each row of each file.
 
 ```
@@ -24,5 +19,13 @@ Print out file name and line number of all the bad rows.
 ```
 perl -a -F, -n -e 'print "$ARGV:$.\n" if @F != 4' data.csv
 ```
+
+
+---
+
+* CSV
+* -n
+* -a
+* -F
 
 
