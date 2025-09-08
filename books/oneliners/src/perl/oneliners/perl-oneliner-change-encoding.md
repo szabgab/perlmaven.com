@@ -1,4 +1,4 @@
-# One-liner: Change encoding
+# Change encoding
 
 * -i
 * -M

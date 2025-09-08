@@ -1,4 +1,4 @@
-# One-liner: grep on Windows as well
+# grep on Windows as well
 
 Lacking grep on Windows, search for all the occurrences of the 'secret' in my xml files.
 

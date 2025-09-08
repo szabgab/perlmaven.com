@@ -1,4 +1,4 @@
-# One-liner: Rename many files
+# Rename many files
 
 * rename
 * glob

@@ -1,4 +1,4 @@
-# One-liner: Replace a string in many files
+# Replace a string in many files
 
 * -i
 * -p

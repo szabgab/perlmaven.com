@@ -1,4 +1,4 @@
-# One-liner: print the 3rd field of every line in a CSV file
+# print the 3rd field of every line in a CSV file
 
 * CSV
 * -n
