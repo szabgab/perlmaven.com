@@ -1,6 +1,6 @@
 # Install Perl
 
-Follow the insttructions on the [Perl web site](https://www.perl.org/get.html).
+Follow the instructions on the [Perl web site](https://www.perl.org/get.html).
 
 
 ## Linux
