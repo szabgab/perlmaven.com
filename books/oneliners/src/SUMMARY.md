@@ -5,7 +5,7 @@
 
 - [Oneliners](./perl/oneliners/index.md)
   - [Print the version of Perl](./perl/oneliners/print-version.md)
-  - [Print a number](./perl/oneliners/print-a-number.md)
+  - [Print a number, use Perl as your calculator](./perl/oneliners/print-a-number.md)
   - [Print a string](./perl/oneliners/print-a-string.md)
   - [Rename many files](./perl/oneliners/perl-one-liner-rename-files.md)
   - [grep on Windows as well](./perl/oneliners/perl-one-liner-grep-on-window-as-well.md)
