@@ -1,6 +1,7 @@
 # Summary
 
 - [Perl Oneliners](./index.md)
+- [Install Perl](./install.md)
 
 - [One-liners](./perl/oneliners/index.md)
   - [One-liner: print](./perl/oneliners/perl-one-liner-print.md)
