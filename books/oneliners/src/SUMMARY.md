@@ -3,8 +3,10 @@
 - [Perl Oneliners](./index.md)
 - [Install Perl](./install.md)
 
-- [One-liners](./perl/oneliners/index.md)
-  - [One-liner: print](./perl/oneliners/perl-one-liner-print.md)
+- [Oneliners](./perl/oneliners/index.md)
+  - [Print the version of Perl](./perl/oneliners/print-version.md)
+  - [Print a number](./perl/oneliners/perl-one-liner-print.md)
+  - [Print a string](./perl/oneliners/print-a-string.md)
   - [One-liner: Rename many files](./perl/oneliners/perl-one-liner-rename-files.md)
   - [One-liner: grep on Windows as well](./perl/oneliners/perl-one-liner-grep-on-window-as-well.md)
   - [One-liner: Replace a string in many files](./perl/oneliners/perl-one-liner-replace-file-content.md)
