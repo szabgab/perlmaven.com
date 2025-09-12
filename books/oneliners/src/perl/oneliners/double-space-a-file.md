@@ -27,7 +27,7 @@ perl -i.bak -n -E 'say' src/examples/lines.txt
 ## Don't add the last empty row
 
 ```
-$ perl  -n -E 'print "\n" if $. > 1; print' src/examples/linex.txt
+$ perl  -n -E 'print "\n" if $. > 1; print' src/examples/lines.txt
 one
 
 two
@@ -35,4 +35,4 @@ two
 three
 ```
 
-{% embed include file="src/examples/linex.txt" %}
+{% embed include file="src/examples/lines.txt" %}
