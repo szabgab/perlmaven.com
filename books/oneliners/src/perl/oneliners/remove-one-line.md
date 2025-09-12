@@ -1,5 +1,8 @@
 # Remove one line from a file
 
+* TODO: use version control or `-i.bak`
+* TODO: mention that structured files such as YAML migh be better edited with a dedicated parser. What if the value associated with the key isn't on the same line (as is common with arrays and hashes)?
+
 
 I had a thousand YAML files that, for historical reasons, had a field called `date:`. At one point update the code processing these files and wanted to remove this `date` field from all the files.
 
