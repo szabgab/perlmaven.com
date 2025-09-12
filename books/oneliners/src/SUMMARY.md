@@ -23,6 +23,8 @@
   - [Sum numbers in a file](./perl/oneliners/sum-numbers-in-a-file.md)
   - [Use module to add numbers in a file](./perl/oneliners/use-module-to-sum-numbers-in-a-file.md)
   - [Check if a number is prime](./perl/oneliners/prime-checker.md)
+  - [Remove leading spaces](./perl/oneliners/remove-leading-spaces.md)
+  - [Remove trailing spaces](./perl/oneliners/remove-trailing-spaces.md)
 
 
 - [Resources](./resources.md)

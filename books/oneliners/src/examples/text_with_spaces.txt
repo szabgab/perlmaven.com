@@ -1,0 +1,5 @@
+no_spaces
+   before inside after   
+
+an empty row above and a row with only spaces bellow
+               
