@@ -22,6 +22,7 @@ For the official documentation visit [perldoc perlrun](https://perldoc.perl.org/
 * `if` - conditional
 * `not` - boolean negation
 * `unless` the same as `if not`
+* `$.` the current line number starting from 1
 
 
 ## Best practices
@@ -29,4 +30,5 @@ For the official documentation visit [perldoc perlrun](https://perldoc.perl.org/
 * Use version control (e.g. git) on all of your file, including your data files.
 * When doing in-place editing, if you don't have version control of the files you are editing then create a backup either before the process or during the process using `-i.bak`
 * Quotes: On Linux and macOS we usually use single-quotes around the perl code of the oneliner. On MS Windows AFAIK you cannot do that and thus there the outer quotes are double-quotes. This also means that the quotes, if used in the code, will need to be used differently. Therefore in general it is better to use `q()` instead of single quotes and `qq()` for double quotes.
+
 

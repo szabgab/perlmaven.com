@@ -17,6 +17,12 @@
   - [Change encoding](./perl/oneliners/perl-oneliner-change-encoding.md)
   - [print the 3rd field of every line in a CSV file](./perl/oneliners/oneliner-process-csv-file.md)
   - [Print all usernames from /etc/passwd](./perl/oneliners/perl-one-liner-print-usernames.md)
+  - [Double-space a file](./perl/oneliners/double-space-a-file.md)
+  - [Add row numbers to file](./perl/oneliners/add-row-numbers-file.md)
+  - [Use module to sum numbers](./perl/oneliners/sum-numbers.md)
+  - [Sum numbers in a file](./perl/oneliners/sum-numbers-in-a-file.md)
+  - [Use module to add numbers in a file](./perl/oneliners/use-module-to-sum-numbers-in-a-file.md)
+  - [Check if a number is prime](./perl/oneliners/prime-checker.md)
 
 
 - [Resources](./resources.md)
