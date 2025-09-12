@@ -4,6 +4,8 @@
 - [Install Perl](./install.md)
 
 - [Oneliners](./perl/oneliners/index.md)
+  - [Tutorial](./perl/oneliners/tutorial.md)
+- [Examples]()
   - [Print the version of Perl](./perl/oneliners/print-version.md)
   - [Print a number, use Perl as your calculator](./perl/oneliners/print-a-number.md)
   - [Print a string](./perl/oneliners/print-a-string.md)
