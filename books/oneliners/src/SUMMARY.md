@@ -25,6 +25,8 @@
   - [Check if a number is prime](./perl/oneliners/prime-checker.md)
   - [Remove leading spaces](./perl/oneliners/remove-leading-spaces.md)
   - [Remove trailing spaces](./perl/oneliners/remove-trailing-spaces.md)
+  - [Insert rows in many TOML files](./perl/oneliners/insert-rows-in-many-toml-files.md)
+  - [Change a value in many TOML files](./perl/oneliners/change-a-value-in-many-toml-files.md)
 
 
 - [Resources](./resources.md)
