@@ -40,4 +40,4 @@ perl -p -i -E 'say qq{[rust]\nedition = "2024"\n} if /# Add github/' */book.toml
 
 
 In our case we don't modify the lines. Instead we `say qq{[rust]\nedition = "2024"\n}` will print the 3 lines when the current line (in the invisible `$_` variable) match the regex `/# Add github/`.
-(The slashes are the delimiters of the regex.
+The slashes are the delimiters of the regex.
