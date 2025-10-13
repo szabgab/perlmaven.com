@@ -102,4 +102,7 @@ navbar:
     - path: /about
       title: About
 
+atom:
+  max: 10
+
 # search: Search results
