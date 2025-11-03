@@ -17,7 +17,7 @@ This will be much slower than the regular execution but in the end
 we will get a text report and we will be able to build a nice HTML
 report with drill down about all the code we ran.
 
-{% embed include file="src/coverage_summary.png)
+![](coverage_summary.png)
 
 ```
 All tests successful.

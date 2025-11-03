@@ -32,7 +32,7 @@ We are embedding the HTML in this code so it will be a one-file solution. In a b
 
 {% embed include file="src/examples/dancer/get-parameters/app.psgi" %}
 
-{% embed include file="src/img/echo_form.png)
+![](echo_form.png)
 
 * Run as `plackup app.psgi` and then access at http://localhost:5000/
 
