@@ -7,4 +7,4 @@ archive: false
 show_related: false
 ---
 
-
+{% include file="examples/yaml_tiny.pl" %}
