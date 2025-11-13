@@ -1,24 +1,10 @@
-=title
-=timestamp 2022-10-01T07:30:01
-=indexes PerlMaven
-=status draft
-=tags screencast
-=books dancer
-=author szabgab
-=archive 1
-=description
-=comments_disqus_enable 0
-=show_related 1
+---
+title: ""
+timestamp: 2025-11-16T00:00:02
+published: true
+description: ""
+archive: false
+show_related: false
+---
 
-=abstract start
-=abstract end
 
-<code lang="perl">
-</code>
-
-<img src="/img/" alt="" />
-
-<include file="">
-<try file="">
-
-<screencast file="" youtube="" />
