@@ -28,3 +28,10 @@ The meeting began with informal introductions and discussions about Perl program
 
 Gabor demonstrated how to use Devel::Cover to generate test coverage reports for the SVG.pm module. He showed that the main module has 98% coverage, while some submodules have lower coverage. Gabor explained how to interpret the coverage reports, including statement, branch, and condition coverage. He also discussed the importance of identifying and removing unused code that appears uncovered by tests. Gabor then walked through some example tests in the SVG distribution, explaining how they verify different aspects of the SVG module's functionality.
 
+
+### Original announcement
+
+Adding tests to legacy Perl code
+
+During this live coding event we'll take a Perl module from CPAN and add some tests to it.
+
