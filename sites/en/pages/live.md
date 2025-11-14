@@ -37,4 +37,9 @@ Link to access the event will be provided later.
 
 ## Ideas for further sessions
 
-Perl Code-reading and testing: We are going to try fuzz-testing using the https://metacpan.org/dist/App-Test-Generator
+* Perl Code-reading and testing: We are going to try fuzz-testing using the https://metacpan.org/dist/App-Test-Generator
+* Dancer2 themes (new features in Dancer2 version 2)
+* modern coding practices like the new features of Perl 5.38+
+* named arguments
+* maybe also HTMX
+* Bioinformatics-related things.
