@@ -17,13 +17,13 @@ Live on-line presentations and video recordings. See the full list of the [Code 
 
 * 2025.12.01 [Perl Code-reading and testing](https://luma.com/perl-maven)
 
-
+<!--
 During this online event we are going to take a look at the JSON::Schema::Validate module ( https://metacpan.org/pod/JSON::Schema::Validate  )
 
 We'll try to use it. We'll look at the tests it has etc.
 
 Link to access the event will be provided later.
-
+-->
 
 ## Past
 
