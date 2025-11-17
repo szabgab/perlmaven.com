@@ -7,7 +7,7 @@ archive: true
 show_related: false
 ---
 
-Notes from the live-coding session
+Notes from the live-coding session (part of the [Perl Maven live](/live) events.
 
 
 * [SVG](https://metacpan.org/dist/SVG) the module for which we wrote tests.
