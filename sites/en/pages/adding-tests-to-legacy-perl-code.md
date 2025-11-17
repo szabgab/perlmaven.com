@@ -35,3 +35,7 @@ Adding tests to legacy Perl code
 
 During this live coding event we'll take a Perl module from CPAN and add some tests to it.
 
+### Further events
+
+Register on the [Perl Maven Luma calendar](https://luma.com/perl-maven).
+
