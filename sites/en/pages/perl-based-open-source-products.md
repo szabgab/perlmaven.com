@@ -17,12 +17,9 @@ Not just other Perl developers.
 Thanks to all the people, but especially to [Dean Hamstead](http://www.linkedin.com/in/deanhamstead) and
 [Renee Baecker](http://www.perl-services.de/), who sent me tons of links.
 
-I tried to check which one of these products allow people to make money from them. How do the web-site of the open-source
-project promote the businesses. I'd be very interested to know which projects are actually supported by their
-commercial backers, and how do they feel about each other?
+I tried to check which one of these products allow people to make money from them. How do the web-site of the open-source project promote the businesses. I'd be very interested to know which projects are actually supported by their commercial backers, and how do they feel about each other?
 
-Are they run by a single company? Is there a commercial interest behind the project shared by several individuals or
-companies? Is the project purely fun-based?
+Are they run by a single company? Is there a commercial interest behind the project shared by several individuals or companies? Is the project purely fun-based?
 
 ## CMS / Publishing systems / Blog engines / wikis
 
@@ -42,6 +39,7 @@ a number of [partners](http://www.webgui.org/partners) that provide commercial s
 services. This looks like a living ecosystem of open-source and business.
 
 <img src="/img/T-logo-140x40-t.gif" alt="Twiki logo" style="float:right" />
+
 [Twiki](http://twiki.org/) is one of the best-known wiki software with an orientation to support
 companies. It is built primarily by the company with the same name that also provides
 [cloud-based hosted Twiki service](http://twiki.net/).
@@ -49,6 +47,7 @@ There are a number of consultants providing support for Twiki. They are listed o
 a very prominent place.
 
 <img src="/img/foswiki-logo.gif" alt="Foswiki badge" style="float:right"  />
+
 [Foswiki](http://foswiki.org/) is a wiki base an enterprise collaboration platform. There
 are individuals providing [commercial support for Foswiki](http://foswiki.org/Support/WikiConsultants).
 
