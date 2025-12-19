@@ -56,6 +56,7 @@ It then generates pages that can be either static or even use some other languag
 ([Wikipedia](http://en.wikipedia.org/wiki/Bricolage_(software)))
 
 <img src="/img/krang_logo.gif" alt="Krang logo" style="float:right" />
+
 [Krang CMS](http://www.krangcms.com/) Open Source web publisher. It is used by several web-sites but as I can see development
 is not too active.
 
@@ -100,6 +101,7 @@ and the [Perl development team](https://rt.perl.org/) as well.
 ([Wikipedia](http://en.wikipedia.org/wiki/Request_Tracker))
 
 <img src="/img/buggie.png" alt="Bugzilla logo" style="float:right" />
+
 [Bugzilla](http://bugzilla.org/) is the well known bug-tracking system developed by and for Mozilla.
 It is used in quite a lot of companies. I think a few people offer Bugzilla administration and customization as paid service.
 
@@ -120,6 +122,7 @@ It even has its own [Wikipedia entry](http://en.wikipedia.org/wiki/Majordomo_%28
 ## Monitoring
 
 <img src="/img/munin-logo.png" alt="Munin logo" style="float:right" />
+
 [Munin](http://munin-monitoring.org/) is a networked resource monitoring tool.
 It can provide graphs of any kind of data such as CPU load or "number of new users registered" in the last 5 minutes, last day or last week.
 
@@ -128,6 +131,7 @@ enterprises. It is developed by the company of the same name. If I am not mistak
 [core](http://opsview.org/solutions/core) is open source, but they also have Pro and enterprise versions.
 
 <img src="/img/opensmart.jpg" alt="Open SMART" style="float:right" />
+
 [OpenSMART](http://opensmart.sourceforge.net/) provides monitoring and reporting of large data center
 installations. It's focus is mainly on monitoring and reporting data about applications and middleware.
 
@@ -136,6 +140,7 @@ installations. It's focus is mainly on monitoring and reporting data about appli
 ## Log analyzer
 
 <img src="/img/octopussy_logo.gif" alt="Munin logo" style="float:right" />
+
 [Octopussy.pm](http://octopussy.pm/) is a Perl/XML Logs Analyzer, Alerter and Reporter.
 
 [AWstats](http://awstats.sourceforge.net/) is a log analyzer. [Wikipedia](http://en.wikipedia.org/wiki/AWStats)
@@ -168,6 +173,7 @@ Very addictive!
 ## Desktop Applications
 
 <img src="/img/shutter_logo.png" alt="Shutter logo" style="float:right" />
+
 [The Shutter Project](http://shutter-project.org/) has one of best looking web sites among the ones
 listed here. This might not be surprising as Shutter is a screen-shot tool.
 
@@ -184,6 +190,7 @@ this company and the rest of the Koha community. I am still trying to figure out
 
 
 <img src="/img/lsmb.jpg" alt="LedgerSMB logo" style="float:right"  />
+
 [Ledger SMB](http://ledgersmb.org/) and Open Source ERP: accounting, CRM and more.
 LedgerSMB is an acronym for Ledger Small Medium Business, often abbreviated as LSMB.
 
@@ -207,11 +214,13 @@ other web hosting control panels.
 ## Tools for Sysadmins
 
 <img src="/img/spamassasin_arrowlogo.png" alt="SPAM Assassin logo" style="float:right" width="167" height="74" />
+
 [SpamAssassin](http://spamassassin.apache.org/) is the well known SPAM filter software. It is part of
 the [Apache Software Foundation](http://apache.org). This is just one of the many projects,
 unrelated to the web server, that are managed by the ASF.
 
 <img src="/img/webmin_logo.jpg" alt="Webmin logo" style="float:right;" />
+
 [Webmin](http://webmin.com/) is a web-based interface for system administration for Unix. It has several
 plugins, some of those are dual-licensed. One is an open source license the other one includes some commercial extension.
 The company around it is called [Virtualmin](http://virtualmin.com/).
@@ -319,6 +328,7 @@ by [David E.  Wheeler](https://twitter.com/Theory).
 
 
 <img src="/img/musicbrainz_logo.png" alt="MusicBrainz logo" style="float:left" width="141" height="98" />
+
 [MusicBrainz](http://musicbrainz.org/) is an open music encyclopedia that collects music metadata and makes it available to the public.
 It is backed by a non-profit organization of the same name. They provide both server and client applications. The server side is written in Perl.
 
