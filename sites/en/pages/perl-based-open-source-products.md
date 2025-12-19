@@ -24,7 +24,6 @@ commercial backers, and how do they feel about each other?
 Are they run by a single company? Is there a commercial interest behind the project shared by several individuals or
 companies? Is the project purely fun-based?
 
-
 <style>
 .perl-product {
 margin-top: 40px;
@@ -34,17 +33,15 @@ margin-bottom: 40px;
 
 ## CMS / Publishing systems / Blog engines / wikis
 
-This is a mix of platforms. Some stared out as Content Management Systems (CMS) others as wikis, yet others as blog
-engines. In the end there is a huge overlap between what they do so I put them in one category.
+This is a mix of platforms. Some stared out as Content Management Systems (CMS) others as wikis, yet others as blog engines. In the end there is a huge overlap between what they do so I put them in one category.
 
-<div class="perl-product">
 <img src="/img/mt-nut.jpg" alt="Movable Type logo" style="float:right"  width="120" height="120" />
+
 [Movable Type](http://movabletype.org/) is a publishing platform, though I think it is mostly known
 as a blog engine. It is backed by the company called [Six Apart](http://www.sixapart.com/) that provides a
-[hosted version of Movable Type](http://www.movabletype.com/).
-[blogs.perl.org](http://blogs.perl.org/) is running Movable Type</a>.
-It is sopped being an open source product. The latest Open source release was 5.2.9.
-</div>
+[hosted version of Movable Type](http://www.movabletype.com/). [blogs.perl.org](http://blogs.perl.org/) is running Movable Type. It is sopped being an open source product. The latest Open source release was 5.2.9.
+
+
 
 <div class="perl-product">
 [WebGUI](http://webgui.org/) is a content management system (CMS) created by
