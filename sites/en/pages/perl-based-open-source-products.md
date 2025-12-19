@@ -32,7 +32,7 @@ margin-bottom: 40px;
 }
 </style>
 
-<h2 id="cms">CMS / Publishing systems / Blog engines / wikis
+## CMS / Publishing systems / Blog engines / wikis
 
 This is a mix of platforms. Some stared out as Content Management Systems (CMS) others as wikis, yet others as blog
 engines. In the end there is a huge overlap between what they do so I put them in one category.
@@ -407,7 +407,7 @@ e.g. see [Git on Gitolite](http://git-scm.com/book/en/Git-on-the-Server-Gitolite
 </div>
 
 
-<h2 id="perl-developers">Tools for Perl Developers
+## Tools for Perl Developers
 
 <div class="perl-product">
 [Perl Application Development and Refactoring Environment](http://padre.perlide.org) (Padre) is an Integrated
@@ -493,7 +493,7 @@ These projects probably should/could have their own site on their own domain:
 by [David E.  Wheeler](https://twitter.com/Theory).
 </div>
 
-<h2 id="other">Other
+## Other
 
 (Still being categorized)
 
