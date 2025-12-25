@@ -90,7 +90,7 @@ Uma das soluções é utilizar a declaração `last` dentro do laço.
 Dessa forma, a execução irá ignorar o resto do bloco e não irá realizar mais as avaliações da condicional.
 Efetivamente terminando a execução do laço. As pessoas normalmente utilizam essa declaração dentro de alguma condicional.
 
-<ode lang="perl">
+```perl
 use strict;
 use warnings;
 use 5.010;
