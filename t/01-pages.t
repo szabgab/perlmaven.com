@@ -22,7 +22,7 @@ my %sitemap;
 
 foreach my $lang (@languages) {
 
-	my @pages = grep { ! $META_PAGE{ basename $_ } } glob "$root/sites/$lang/pages/*.txt";
+	my @pages = grep { ! $META_PAGE{ basename $_ } } glob "$root/sites/$lang/pages/*.md";
 	foreach my $file (@pages) {
 		if ($lang eq 'en') {
 			#my $html = path($file)->slurp_utf8;
@@ -37,10 +37,10 @@ foreach my $lang (@languages) {
 		my $original;
 		my $translator;
 		foreach my $line (@lines) {
-			if ($line =~ /^=original\s+(\S+)/) {
+			if ($line =~ /^original:\s+(\S+)/) {
 				$sitemap{$lang}{$file}{original} = $original = $1;
 			}
-			if ($line =~ /^=translator\s+(\S+)/) {
+			if ($line =~ /^translator:\s+(\S+)/) {
 				$sitemap{$lang}{$file}{translator} = $translator = $1;
 			}
 		}
