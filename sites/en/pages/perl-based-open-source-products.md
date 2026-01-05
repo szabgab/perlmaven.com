@@ -162,7 +162,7 @@ analysis.
 
 ## Games
 
-[Frozen-Bubble](http://www.frozen-bubble.org/) is one of the most well known Perl products,
+Frozen-Bubble is one of the most well known Perl products,
 even though most people don't know that it is written in Perl using the [Simple DirectMedia Library (SDL)](http://sdl.perl.org/).
 
 [Lacuna Expanse](http://lacunaexpanse.com/) is the Massively Multi-player Online Space Strategy Game
