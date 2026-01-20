@@ -1,4 +1,4 @@
-name: CI Dzil
+name: CI
 
 on:
     push:
@@ -23,9 +23,19 @@ jobs:
     name: Perl ${{ matrix.perl-version }}
     steps:
       - uses: actions/checkout@v6
-      - name: Regular tests
+
+      - name: Show Perl version
+        run: |
+          perl -V
+
+      - name: Install authordeps
         run: |
           dzil authordeps --missing | cpanm --notest
-          dzil listdeps --author --missing | cpanm --notest
-          dzil test --author --release
 
+      - name: Install missing dependencies
+        run: |
+          dzil listdeps --author --missing | cpanm --notest
+
+      - name: Run the tests
+        run: |
+           dzil test --author --release
