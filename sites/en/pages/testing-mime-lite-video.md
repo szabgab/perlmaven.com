@@ -7,6 +7,8 @@ archive: true
 show_related: true
 ---
 
+See [OSDC Perl](https://osdc.code-maven.com/perl)
+
 {% youtube id="XuwHFAyldsA" file="2026-01-24-open-source-perl-in-english-part1.mp4" %}
 
 
