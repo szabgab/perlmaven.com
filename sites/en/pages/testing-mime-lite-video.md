@@ -1,5 +1,5 @@
 ---
-title: "Open source contribution - Perl - MIME::Lite - GitHub Actions, test coverage and adding more test"
+title: "Open source contribution - Perl - MIME::Lite - GitHub Actions, test coverage and adding a test"
 timestamp: 2026-01-25T09:00:02
 published: true
 description: ""
