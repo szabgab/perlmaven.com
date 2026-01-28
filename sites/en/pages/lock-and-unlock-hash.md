@@ -16,7 +16,7 @@ You can `lock_hash` and later you can `unlock_hash` if you'd like to make some c
 In this example you can 3 differen actions, each one would raise an exception if someone tries
 to call them on a locked hash. After we unlock the hash we can execute thos actions again.
 
-{% include file="examples/locking_hash.md" %}
+{% include file="examples/locking_hash.pl" %}
 
 ```perl
 $VAR1 = {
