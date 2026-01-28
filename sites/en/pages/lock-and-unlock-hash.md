@@ -13,8 +13,9 @@ hash the [Hash::Util](https://metacpan.org/pod/Hash::Util) module is for you.
 
 You can `lock_hash` and later you can `unlock_hash` if you'd like to make some changes to it.
 
-In this example you can 3 differen actions, each one would raise an exception if someone tries
-to call them on a locked hash. After we unlock the hash we can execute those actions again.
+In this example you can see 3 different actions commented out.
+Each one would raise an exception if someone tries to call them on a locked hash.
+After we unlock the hash we can execute those actions again.
 
 I tried this both in perl 5.40 and 5.42.
 
