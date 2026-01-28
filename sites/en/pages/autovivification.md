@@ -11,26 +11,21 @@ books:
 author: szabgab
 ---
 
-
 Autovivification is both a wonderful blessing and a curse in Perl. It eliminates a lot of
 code required when initializing deep data structures, but if you come from a very
 strict world it can freak you out at first.
 
 Or make you wonder how could you live without it.
 
-The word **autovivification** itself comes from the word **vivify**
-which means **to bring to life**.
-
-
+The word **autovivification** itself comes from the word **vivify** which means **to bring to life**.
 
 ## The simple cases for hashes
 
-The simplest form of autovivification is when you have a hash and you set a value of a
-key that did not exist before.
+The simplest form of autovivification is when you have a hash and you set a value of a key that did not exist before.
 
 {% include file="examples/simple_autivivification.pl" %}
 
-```
+```perl
 $VAR1 = {};
 $VAR1 = {
           'Foo' => '123-456'
@@ -41,36 +36,27 @@ As a Perl programmer this does not surprise you any more.
 
 Even if you have a reference to a hash:
 
-```perl
-use strict;
-use warnings;
 
-use Data::Dumper qw(Dumper);
+{% include file="examples/autovivification_in_hash_reference.pl" %}
 
-my $phone_of;
+that results in the following:
 
-print Dumper $phone_of;
-$phone_of->{Foo} = '123-456';
-print Dumper $phone_of;
-```
-
-A slightly more surprising version of this is when
-we use the auto-increment operator `++` on a
-hash element that did not exist before.
 
 ```perl
-use strict;
-use warnings;
-
-use Data::Dumper qw(Dumper);
-
-my %counter;
-print Dumper \%counter;
-$counter{Foo}++;
-print Dumper \%counter;
-```
+$VAR1 = undef;
+$VAR1 = {
+          'Foo' => '123-456'
+        };
 
 ```
+
+A slightly more surprising version of this is when we use the auto-increment operator `++` on a hash element that did not exist before.
+
+{% include file="examples/autovivification_with_increment.pl" %}
+
+that will generate the following:
+
+```perl
 $VAR1 = {};
 $VAR1 = {
           'Foo' => 1
@@ -91,22 +77,11 @@ or use auto-increment on such an element, Perl will automatically enlarge the ar
 creating all the elements up to the required index, and assigning `undef`
 to each intermediate element.
 
-```perl
-use strict;
-use warnings;
-
-use Data::Dumper qw(Dumper);
-
-my @counter;
-print Dumper \@counter;
-$counter[1] = 20;
-$counter[3]++;
-print Dumper \@counter;
-```
+{% include file="examples/simple_autivivification_in_array.pl" %}
 
 The output looks like this:
 
-```
+```perl
 $VAR1 = [];
 $VAR1 = [
           undef,
@@ -126,22 +101,11 @@ In such cases a hash would be probably a better data structure to use.
 Autovivification starts to be really interesting in deep data structures. Even when creating a two dimensional hash,
 you can just write `$people{Foo}{phone} = '123-456';` and Perl will create the internal hash for the 'Foo' key:
 
-```perl
-use strict;
-use warnings;
-
-use Data::Dumper qw(Dumper);
-
-my %people;
-
-print Dumper \%people;
-$people{Foo}{phone} = '123-456';
-print Dumper \%people;
-```
+{% include file="examples/autovivification_in_complex_data_structures.pl" %}
 
 Resulting in
 
-```
+```perl
 $VAR1 = {};
 $VAR1 = {
           'Foo' => {
@@ -154,23 +118,12 @@ This is a good thing as you don't have to explicitly create the internal hash.
 
 It even works on undefined scalars:
 
-```perl
-use strict;
-use warnings;
-
-use Data::Dumper qw(Dumper);
-
-my $people;
-
-print Dumper $people;
-$people->{Foo}{phone} = '123-456';
-print Dumper $people;
-```
+{% include file="examples/autovivification_on_undefined_scalars.pl" %}
 
 When we created the `$people` scalar, Perl did not yet know that it will become a reference to a hash.
 As you can see from the following printout, it was still just an `undef`:
 
-```
+```perl
 $VAR1 = undef;
 $VAR1 = {
           'Foo' => {
@@ -398,8 +351,6 @@ in case $people{Bar}{phone} contains some false value like 0.
 But the nested condition could also be simplified to this:
 if (exists $people{Bar} and exists $people{Bar}{Phone}) {
 because the 2nd part of the condition will be tested only if the 1st part evaluates to true.
-
-And a minor typo - "As an alternatively" should read "As an alternative".
 
 <hr>
 
