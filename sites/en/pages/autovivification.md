@@ -28,18 +28,7 @@ which means **to bring to life**.
 The simplest form of autovivification is when you have a hash and you set a value of a
 key that did not exist before.
 
-```perl
-use strict;
-use warnings;
-
-use Data::Dumper qw(Dumper);
-
-my %phone_of;
-
-print Dumper \%phone_of;
-$phone_of{Foo} = '123-456';
-print Dumper \%phone_of;
-```
+{% include file="examples/simple_autivivification.pl" %}
 
 ```
 $VAR1 = {};
@@ -90,7 +79,7 @@ $VAR1 = {
 
 Perl treats the nonexistent value as [undef](/undef-and-defined-in-perl).
 When `undef` is used in a [numerical operation](/numerical-operators) it acts as if it were 0.
-In most cases this would generate a <a href="/use-of-uninitialized-value"">use of uninitialized value"</a> warning,
+In most cases this would generate a "[use of uninitialized value](/use-of-uninitialized-value)" warning,
 but specifically in the auto-increment operation it works without complaining.
 
 The resulting value is then assigned back to the hash, creating the key.
