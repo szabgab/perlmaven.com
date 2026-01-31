@@ -32,7 +32,8 @@ Hopefully in ABC order...
 * [PadreIDE](https://github.com/PadreIDE) - Padre, the Perl IDE. 13 members and 102 repositories.
 * [Paracamelus](https://github.com/paracamelus) - No public members. 2 repositories.
 * [Perl](https://github.com/Perl/) - Perl 5 itself, Docker images, etc. 20 members, 8 repositories.
-* [Perl Advent Calendar ](https://github.com/perladvent/) - including the source of [perl.com](https://perl.com/). 3 members and 8 repositories.
+* [Perl Actions](https://github.com/perl-actions/) - GitHub Actions to be used in workflows. 5 members and 9 repositories.
+* [Perl Advent Calendar](https://github.com/perladvent/) - including the source of [perl.com](https://perl.com/). 3 members and 8 repositories.
 * [Perl Toolchain Gang](https://github.com/Perl-Toolchain-Gang) - ExtUtils::MakeMaker, Module::Build, etc. 27 members and 41 repositories.
 * [Perl Tools Team](https://github.com/PerlToolsTeam/) - source of planetperl , perl-ads  etc. No public members. 6 repositories.
 * [Perl Dancer](https://github.com/PerlDancer/) - Dancer, Dancer2,  many plugins. 30 members and 79 repositories.
