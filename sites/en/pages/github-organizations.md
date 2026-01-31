@@ -32,10 +32,13 @@ Hopefully in ABC order...
 * [PadreIDE](https://github.com/PadreIDE) - Padre, the Perl IDE. 13 members and 102 repositories.
 * [Paracamelus](https://github.com/paracamelus) - No public members. 2 repositories.
 * [Perl](https://github.com/Perl/) - Perl 5 itself, Docker images, etc. 20 members, 8 repositories.
+* [Perl Advent Calendar ](https://github.com/perladvent/) - including the source of [perl.com](https://perl.com/). 3 members and 8 repositories.
 * [Perl Toolchain Gang](https://github.com/Perl-Toolchain-Gang) - ExtUtils::MakeMaker, Module::Build, etc. 27 members and 41 repositories.
+* [Perl Tools Team](https://github.com/PerlToolsTeam/) - source of planetperl , perl-ads  etc. No public members. 6 repositories.
 * [Perl Dancer](https://github.com/PerlDancer/) - Dancer, Dancer2,  many plugins. 30 members and 79 repositories.
 * [perltidy](https://github.com/perltidy) - Only for Perl::Tidy. No public members. 1 repository.
 * [perl5-dbi](https://github.com/perl5-dbi/) - DBI, several `DBD::*` modules, and some related modules. 7 members and 15 repositories.
+* [perl.org](https://github.com/perlorg/) - also cpan.org and perldoc.perl.org. 3 members and 7 repositories.
 * [Perl5](https://github.com/Perl5) - DBIx-Class and DBIx-Class-Historic. No public members. 2 repositories.
 * [perl5-utils](https://github.com/perl5-utils/) - List::MoreUtils, File::ShareDir etc. 2 members and 22 repositories.
 * [Perl-Critic](https://github.com/Perl-Critic) - PPI, Perl::Critic and related. 7 members and 5 repositories.
@@ -44,6 +47,7 @@ Hopefully in ABC order...
 * [plack](https://github.com/plack/) - psgi-specs, Plack and a few middlewares. 5 members and 7 repositories.
 * [RexOps](https://github.com/RexOps) - Rex, Rexify and related projects. 1 member and 46 repositories.
 * [Sqitch ](https://github.com/sqitchers/) - Sqitch for Sensible database change management and related projects. No public members. 16 repositories.
+* [StrawberryPerl](https://github.com/StrawberryPerl/) - The Perl distribution for MS Windows. 4 members and 10 repositories.
 * [Test-More](https://github.com/Test-More) - Test::Builder, Test::Simple, Test2 etc. - 4 members, 27 repositories.
 * [The Enlightened Perl Organisation](https://github.com/EnlightenedPerlOrganisation) - Task::Kensho and `Task::Kensho::*`. 1 member and 1 repository.
 
