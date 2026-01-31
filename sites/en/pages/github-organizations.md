@@ -28,6 +28,7 @@ Hopefully in ABC order...
 * [Mojolicious](https://github.com/mojolicious) - Some Perl and many JavaScript projects. 5 members and 29 repositories.
 * [Moose](https://github.com/moose/) - Moose,`MooseX-*`, Moo, etc. 11 members and 69 repositories.
 * [PadreIDE](https://github.com/PadreIDE) - Padre, the Perl IDE. 13 members and 102 repositories.
+* [Paracamelus](https://github.com/paracamelus) - No public members. 2 repositories.
 * [Perl](https://github.com/Perl/) - Perl 5 itself, Docker images, etc. 20 members, 8 repositories.
 * [Perl Toolchain Gang](https://github.com/Perl-Toolchain-Gang) - ExtUtils::MakeMaker, Module::Build, etc. 27 members and 41 repositories.
 * [Perl Dancer](https://github.com/PerlDancer/) - Dancer, Dancer2,  many plugins. 30 members and 79 repositories.
