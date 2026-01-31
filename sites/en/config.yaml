@@ -17,7 +17,7 @@ branch: main
 link_to_source: false
 
 # Each page will have a footer as defined by the `footer` field that can contain markdown.
-footer: "[Code Maven](https://code-maven.com/)"
+footer: "[Perl Maven](https://perlmaven.com/) by [Gábor Szabó](https://szabgab.com/)"
 
 # Each site has a /tags page generated from the tags in the individual pages.
 # The following parameters set the `title` of the page and the content of the `description` meta-tag.
