@@ -24,7 +24,9 @@ Hopefully in ABC order...
 * [Catalyst](https://github.com/perl-catalyst/) - Catalyst and various extensions. 10 members and 39 repositories.
 * [cpan-authors](https://github.com/cpan-authors/) - A place for CPAN authors to collaborate more easily. 4 members and 9 repositories.
 * [davorg cpan](https://github.com/davorg-cpan) - Organisation for maintaining Dave Cross's CPAN modules. No public members and 47 repositories.
+* [Foswiki](https://github.com/foswiki) - The Foswiki and related projects. 13 members and 649 repositories.
 * [gitpan](https://github.com/gitpan) - An archive of CPAN modules - 2 members and 5k+ read-only repositories.
+* [MetaCPAN](https://github.com/Metacpan) - The source of the MetaCPAN site - 9 member and 56 rpositories.
 * [Mojolicious](https://github.com/mojolicious) - Some Perl and many JavaScript projects. 5 members and 29 repositories.
 * [Moose](https://github.com/moose/) - Moose,`MooseX-*`, Moo, etc. 11 members and 69 repositories.
 * [PadreIDE](https://github.com/PadreIDE) - Padre, the Perl IDE. 13 members and 102 repositories.
@@ -41,5 +43,11 @@ Hopefully in ABC order...
 * [perl-pod](https://github.com/perl-pod) - Pod::Simple, Test::Pod. 1 member and 4 repositories.
 * [plack](https://github.com/plack/) - psgi-specs, Plack and a few middlewares. 5 members and 7 repositories.
 * [RexOps](https://github.com/RexOps) - Rex, Rexify and related projects. 1 member and 46 repositories.
+* [Sqitch ](https://github.com/sqitchers/) - Sqitch for Sensible database change management and related projects. No public members. 16 repositories.
 * [Test-More](https://github.com/Test-More) - Test::Builder, Test::Simple, Test2 etc. - 4 members, 27 repositories.
 * [The Enlightened Perl Organisation](https://github.com/EnlightenedPerlOrganisation) - Task::Kensho and `Task::Kensho::*`. 1 member and 1 repository.
+
+* [Fastmail](https://github.com/fastmail) Open-source software developed at Fastmail. 4 members and 38 repositories.
+
+
+
