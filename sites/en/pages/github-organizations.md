@@ -9,6 +9,14 @@ show_related: true
 
 Most projects are started by a single person in a GitHub repository of that person. Later for various reasons people establish GitHub organizations
 and move the projects there.
+Sometimes the organization contains a set of sub-projects related to a central project. (e.g. A web framework and its extensions or database access.)
+Sometimes it is a collection of projects related to a single topic. (e.g. testing or IDE support.)
+Sometimes it is just a random collection of project where people band together in the hope that no project will be left behind. (e.g. the CPAN Authors organization.)
+
+Organizations make it easier to have multiple maintainers and thus ensuring continuity of project, but it might also mean that none of the members really
+feel the urge to continue working on something.
+
+In any case, I tried to collect all the Perl-related GitHub organizations.
 
 
 * [Perl](https://github.com/Perl/) - Perl 5 itself, Docker images, etc. 20 members, 8 repositories.
