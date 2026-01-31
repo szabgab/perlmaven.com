@@ -39,7 +39,7 @@ Hopefully in ABC order...
 * [Perl5](https://github.com/Perl5) - DBIx-Class and DBIx-Class-Historic. No public members. 2 repositories.
 * [perl5-utils](https://github.com/perl5-utils/) - List::MoreUtils, File::ShareDir etc. 2 members and 22 repositories.
 * [Perl-Critic](https://github.com/Perl-Critic) - PPI, Perl::Critic and related. 7 members and 5 repositories.
-* [perl-ide](https://github.com/perl-ide) -Perl Development Environments. 26 members and 13 repositories.
+* [perl-ide](https://github.com/perl-ide) - Perl Development Environments. 26 members and 13 repositories.
 * [perl-pod](https://github.com/perl-pod) - Pod::Simple, Test::Pod. 1 member and 4 repositories.
 * [plack](https://github.com/plack/) - psgi-specs, Plack and a few middlewares. 5 members and 7 repositories.
 * [RexOps](https://github.com/RexOps) - Rex, Rexify and related projects. 1 member and 46 repositories.
@@ -47,7 +47,14 @@ Hopefully in ABC order...
 * [Test-More](https://github.com/Test-More) - Test::Builder, Test::Simple, Test2 etc. - 4 members, 27 repositories.
 * [The Enlightened Perl Organisation](https://github.com/EnlightenedPerlOrganisation) - Task::Kensho and `Task::Kensho::*`. 1 member and 1 repository.
 
-* [Fastmail](https://github.com/fastmail) Open-source software developed at Fastmail. 4 members and 38 repositories.
 
+## Companies
+
+These are bot Perl-specific GitHub organizations, but some of the repositories are in Perl.
+
+* [cPanel](https://github.com/cpanel) - Open Source Software provided by cPanel. 1 member and 22 repositories.
+* [DuckDuckGo](https://github.com/orgs/duckduckgo/) - The search engine. 19 members and 122 repositories.
+* [Fastmail](https://github.com/fastmail) - Open-source software developed at Fastmail. 4 members and 38 repositories.
+* [RotherOSS](https://github.com/RotherOSS) - Otobo (OTRS fork). No public members. 47 repositories.
 
 
