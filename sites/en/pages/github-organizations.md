@@ -39,5 +39,6 @@ Hopefully in ABC order...
 * [perl-ide](https://github.com/perl-ide) -Perl Development Environments. 26 members and 13 repositories.
 * [perl-pod](https://github.com/perl-pod) - Pod::Simple, Test::Pod. 1 member and 4 repositories.
 * [plack](https://github.com/plack/) - psgi-specs, Plack and a few middlewares. 5 members and 7 repositories.
+* [RexOps](https://github.com/RexOps) - Rex, Rexify and related projects. 1 member and 46 repositories.
 * [Test-More](https://github.com/Test-More) - Test::Builder, Test::Simple, Test2 etc. - 4 members, 27 repositories.
 * [The Enlightened Perl Organisation](https://github.com/EnlightenedPerlOrganisation) - Task::Kensho and `Task::Kensho::*`. 1 member and 1 repository.
