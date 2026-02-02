@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 =pod
 
     search.cpan.org

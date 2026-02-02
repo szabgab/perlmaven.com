@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 sub loop {
     $i = 0;
     while ($i < 10) {

@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -13,7 +12,7 @@ my $count = 3;
 # Spawn a new client for each port.
 
 foreach (1..$count) {
-    POE::Component::Client::TCP->new( 
+    POE::Component::Client::TCP->new(
         RemoteAddress => $host,
         RemotePort    => $port,
         Filter        => "POE::Filter::Stream",

@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -19,7 +18,6 @@ if ($@) {
 }
 
 print "Result: $result\n";
-    
 
 
 sub unstable_add_function {

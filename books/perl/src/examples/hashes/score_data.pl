@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -18,8 +17,8 @@ foreach my $name (sort keys %score_of) {
 }
 print "--------------------------\n";
 
-foreach my $name (sort { 
-                        $score_of{$b} <=> $score_of{$a} 
+foreach my $name (sort {
+                        $score_of{$b} <=> $score_of{$a}
                        } keys %score_of) {
     printf "%-10s %s\n", $name, $score_of{$name};
 }

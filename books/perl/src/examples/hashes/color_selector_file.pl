@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -20,7 +19,7 @@ while (my $line = <$fh>) {
     chomp $line;
     my ($color_name, $letter) = split / /, $line;
     if ($colors{$letter}) {
-        warn 
+        warn
             sprintf "%s appears to be allocated to both %s and %s\n",
                 $letter, $colors{$letter}, $color_name
     } else {

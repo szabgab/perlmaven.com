@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -10,7 +9,7 @@ sub fibonacci {
 
     if ($num == 1) {
         return (1);
-    } 
+    }
     if ($num == 2) {
         return (1, 1);
     }

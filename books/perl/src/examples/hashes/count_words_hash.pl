@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -7,7 +6,7 @@ my $filename = shift or die "Usage: $0 filename\n";
 my %count;
 
 open(my $fh, "<", $filename)
-    or die "Could not open '$filename': $!"; 
+    or die "Could not open '$filename': $!";
 while (my $line = <$fh>) {
     chomp $line;
     my @words = split / /, $line;

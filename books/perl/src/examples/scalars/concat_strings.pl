@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -9,9 +8,9 @@ chomp($first);
 
 print "The second string: ";
 my $second = <STDIN>;
- 
+
 print ("\nThe concatenated string: ", $first . $second);
- 
+
 # alternative solution:
 # print ("The concatenated string: $first$second");
 
