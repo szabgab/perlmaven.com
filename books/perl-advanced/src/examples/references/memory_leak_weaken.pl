@@ -1,4 +1,3 @@
-#!/usr/bin/perl 
 use strict;
 use warnings;
 
@@ -30,7 +29,7 @@ sub make_match {
     my $wife = {
         name => $woman_name,
     };
-    
+
     $man->{wife} = $wife;
     $wife->{man} = $man;
     weaken $wife->{man};

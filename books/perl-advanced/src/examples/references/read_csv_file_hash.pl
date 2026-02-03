@@ -1,10 +1,9 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
 use Data::Dumper;
 
-my $filename = shift 
+my $filename = shift
     or die "Usage: $0 FILENAME ( examples/references/data.csv )\n";
 
 my %data;
@@ -18,7 +17,7 @@ while (my $line = <$fh>) {
     chomp $line;
     my %row;
     @row{@header} = split /,/, $line;
-    
+
     my $key = $row{fname};
     $data{$key} = \%row;
 }

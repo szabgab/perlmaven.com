@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -6,7 +5,7 @@ use Storable qw(freeze thaw);
 
 my $data_structure = {
     phones => {
-        Foo     => 123, 
+        Foo     => 123,
         Bar     => 345,
         Baz     => 678,
     }
@@ -14,7 +13,7 @@ my $data_structure = {
 
 my $frozen = freeze $data_structure;
 
-# here send it over the network 
+# here send it over the network
 # or save it in a database
 
 my $new_data_structure = thaw $frozen;

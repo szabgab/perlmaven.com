@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -16,7 +15,7 @@ print "$names_other_ref\n";
 my $names_yet_other_ref = [ @{$names_ref} ];
 $names_yet_other_ref->[0] = 'Moo';
 print "$names_yet_other_ref->[0]\n";    # Moo
-print "$names_ref->[0]\n";              # Bar 
+print "$names_ref->[0]\n";              # Bar
 print "$names_other_ref->[0]\n";        # Bar
 print "$names_yet_other_ref\n";
 

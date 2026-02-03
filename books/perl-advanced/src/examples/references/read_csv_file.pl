@@ -1,10 +1,9 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
 use Data::Dumper;
 
-my $filename = shift 
+my $filename = shift
     or die "Usage: $0 FILENAME ( examples/references/data.csv )\n";
 
 my @data;
@@ -23,7 +22,7 @@ while (my $line = <$fh>) {
         my $field = $header[$i];
         $row{$field} = $values[$i];
     }
- 
+
     # using hash slices:
     # @row{@header} = split /,/, $line;
 

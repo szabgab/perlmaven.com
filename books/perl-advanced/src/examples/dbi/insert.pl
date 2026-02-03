@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -12,5 +11,5 @@ my ($fname, $lname, $email, $pw) = qw(Moose Foobar moose@foobar.com really?);
 
 
 $dbh->do('INSERT INTO people (fname, lname, email, pw) VALUES (?, ?, ?, ?)',
-            undef, 
+            undef,
             $fname, $lname, $email, $pw);

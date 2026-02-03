@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 
 my @people;
 $people[0]{name} = 'Foo';

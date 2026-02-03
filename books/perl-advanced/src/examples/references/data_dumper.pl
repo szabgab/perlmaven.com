@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -15,7 +14,7 @@ if (-e $filename and open my $fh, '<', $filename) {
     # initialize
     $data_structure = {
         phones => {
-            Foo     => 0, 
+            Foo     => 0,
             Bar     => 0,
             Baz     => 0,
         }
