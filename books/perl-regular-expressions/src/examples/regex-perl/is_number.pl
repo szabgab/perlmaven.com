@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -24,7 +23,7 @@ sub is_integer      { $_[0] =~ /^[+-]?\d+$/ }
 sub is_real         { $_[0] =~ /\d/ and $_[0] =~ /^[+-]?\d*\.?\d*$/}
 sub is_exp          { $_[0] =~ /\d/ and $_[0] =~ /^[+-]?\d*\.?\d*(e[+-]?\d+)?$/}
 sub is_exp2         { $_[0] =~ /\d/ and $_[0] =~ /^
-            [+-]?            # optional + or - sign 
+            [+-]?            # optional + or - sign
             \d*              # 0 or more digits before the decimal point
             \.?              # optional decimal point
             \d*              # 0 or more digits after the decimal point

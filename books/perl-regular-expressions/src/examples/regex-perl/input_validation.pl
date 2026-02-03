@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -13,10 +12,10 @@ while (my $line = <$data>) {
     print "LINE: '$line'";
     if ($line =~ /^\s*$/) {                    # $line !~ /\S/
         print "  row with white spaces";
-    } 
+    }
     if ($line =~ /^[+-]?\d+(\.\d+)?$/) {
         print "  number";
-    } 
+    }
     if ($line =~ /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/) {
         print "  IP addres";
     }

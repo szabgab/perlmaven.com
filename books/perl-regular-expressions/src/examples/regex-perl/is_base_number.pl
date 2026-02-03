@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -15,5 +14,5 @@ while (my $number = <STDIN>) {
 }
 
 sub is_hex    { $_[0] =~ /^0x[\da-fA-F]+$/ }
-sub is_octal  { $_[0] =~ /^0[0-7]+$/       } 
+sub is_octal  { $_[0] =~ /^0[0-7]+$/       }
 sub is_binary { $_[0] =~ /^0b[01]+$/       }

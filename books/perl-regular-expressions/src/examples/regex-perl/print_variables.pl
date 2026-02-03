@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -17,7 +16,7 @@ use warnings;
 # including all variables on every line
 my %h;
 while (my $line = <>) {
-    if (my @vars = $line =~/[\$@%]\w+\b/g) {   
+    if (my @vars = $line =~/[\$@%]\w+\b/g) {
         foreach my $v (@vars) {
             if (not defined $h{$ARGV}{$v}) {
                 $h{$ARGV}{$v}=1;

@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -23,7 +22,7 @@ while (my $line = <$fh>) {
 process_day(); # in case there is no empty line after the last line
 
 foreach my $title (keys %stat) {
-    printf "%-25s %4s minutes %3s%%\n", 
+    printf "%-25s %4s minutes %3s%%\n",
         $title, $stat{$title}, int(100 * $stat{$title} / $stat{Total});
 }
 

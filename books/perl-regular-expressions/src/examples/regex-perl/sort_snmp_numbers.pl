@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -22,8 +21,8 @@ sub cmp_snmp {
 
     my @F = split /\./, $first;
     my @S = split /\./, $second;
-    
-    foreach my $i (0..@F-1) { 
+
+    foreach my $i (0..@F-1) {
         if ($i >= @S) {
             return 1;
         }
