@@ -1,11 +1,10 @@
-#!/usr/bin/perl 
 use strict;
 use warnings;
 
 {
    my $counter = 0;
    sub next_counter {
-      $counter++; 
+      $counter++;
       return $counter;
    }
 }
