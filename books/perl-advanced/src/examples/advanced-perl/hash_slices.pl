@@ -1,4 +1,3 @@
-#!/usr/bin/perl 
 use strict;
 use warnings;
 
@@ -18,7 +17,7 @@ my @phones = ($phone_of{Foo}, $phone_of{Bar});
 
 @phones = @phone_of{ qw(Bar Baz) };
 
-my @selected_people = qw(Bar Baz); 
+my @selected_people = qw(Bar Baz);
 @phones = @phone_of{ @selected_people };
 
 print "@phones\n";
