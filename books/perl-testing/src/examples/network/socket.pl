@@ -1,11 +1,10 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
 use Socket qw(:DEFAULT :crlf);
 
 # get the protocol id (on Linux from /etc/protocols)
-my $protocol_id     = getprotobyname('tcp');  
+my $protocol_id     = getprotobyname('tcp');
 socket(my $socket, PF_INET, SOCK_STREAM, $protocol_id) or die $!;
 
 
@@ -14,7 +13,7 @@ socket(my $socket, PF_INET, SOCK_STREAM, $protocol_id) or die $!;
 # (and returns undef if not successful)
 my $host = 'localhost';
 my $port   = 5000;
-my $host_struct = inet_aton($host);  
+my $host_struct = inet_aton($host);
 my $sockaddr_in = pack_sockaddr_in($port, $host_struct);
 
 

@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -19,7 +18,7 @@ print "\n";
 # gabor    pts/0        Jul 28 20:58 (l192-115-61-144.tcable.actcom.net.il)
 # gabor    pts/1        Jul 28 22:59 (l192-115-61-144.tcable.actcom.net.il)
 # You have new mail in /var/spool/mail/gabor
-# [gabor@ac gabor]$ 
+# [gabor@ac gabor]$
 
 
 # uptime
@@ -27,7 +26,7 @@ print "\n";
 #
 
 # ps axuw - check if a certain process is runnig or not
-# maybe change the configuration file of the 
+# maybe change the configuration file of the
 
 sub save {
     my ($filename, $text) = @_;

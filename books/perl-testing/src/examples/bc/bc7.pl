@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -33,7 +32,7 @@ if ($ARGV[0] eq 'random') {
         print $fh $line;
         close $fh;
         $e->log_file("random.log", "a");
-        
+
         $e->send($line);
         $e->expect(1,[qr/\d+/]);
     }
@@ -70,12 +69,12 @@ if ($ARGV[0] eq 'regress') {
 # - random tests
 # - regression tests
 #
-# 
-# run random tests 
+#
+# run random tests
 # save test cases in a test cases file
 # save all the results in a log file
 #
-# 
+#
 # run all the tests from the test cases file and log results to a new log file
 # compare original log with new log and complain if they are not the same.
 #

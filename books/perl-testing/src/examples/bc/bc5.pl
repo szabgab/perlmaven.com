@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -12,7 +11,7 @@ my @sets = (
 );
 
 plan tests => 1 + 3 * scalar @sets;
- 
+
 my $e = Expect->new;
 $e->log_stdout(0);
 $e->raw_pty(1);
