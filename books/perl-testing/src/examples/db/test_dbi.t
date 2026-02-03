@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -9,7 +8,7 @@ system "$^X examples/dbi/create_sample.pl";
 END { unlink 'sample.db' }
 
 my $email = 'foo@bar.com';
-my $pw    = 'secret'; 
+my $pw    = 'secret';
 
 my $dbh = DBI->connect("dbi:SQLite:dbname=sample.db");
 my $sth = $dbh->prepare('SELECT * FROM people WHERE email=? AND pw=?');

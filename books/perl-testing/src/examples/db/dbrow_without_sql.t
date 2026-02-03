@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -15,16 +14,15 @@ my $dbh = DBI->connect("dbi:SQLite:dbname=sample.db");
 
 local $Test::DatabaseRow::dbh = $dbh;
 
-
-row_ok( 
+row_ok(
     table => 'people',
     where => { '='  => {
-                        email => $email, 
+                        email => $email,
                         pw    => $pw,
                         }
             },
     tests => { 'eq' => {
-                        fname => 'Foo', 
+                        fname => 'Foo',
                         lname => 'Bar',
                         },
             },

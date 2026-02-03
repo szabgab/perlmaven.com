@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -11,7 +10,7 @@ my $t = Net::Telnet->new(
     Host    => 'localhost',
     Port    => 5000,
 );
- 
+
 $t->print("GET / HTTP/1.0$CRLF$CRLF") or die $!;
 while (my $line = $t->getline) {
     print $line;

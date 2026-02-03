@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -13,7 +12,7 @@ my $dbh = DBI->connect("dbi:SQLite:dbname=sample.db");
 
 local $Test::DatabaseRow::dbh = $dbh;
 
-row_ok( 
+row_ok(
     sql   => ['SELECT * FROM accounts'],
     tests => { '>=' => { 'amount' => 0 }},
     label => 'accounts',

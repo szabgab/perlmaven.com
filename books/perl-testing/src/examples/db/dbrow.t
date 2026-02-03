@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -15,7 +14,7 @@ my $dbh = DBI->connect("dbi:SQLite:dbname=sample.db");
 
 local $Test::DatabaseRow::dbh = $dbh;
 
-row_ok( 
+row_ok(
     sql   => ['SELECT * FROM people WHERE email=? AND pw=?', $email, $pw],
     tests => [ fname => 'Foo', lname => 'Bar'],
     label => 'Foo Bar',

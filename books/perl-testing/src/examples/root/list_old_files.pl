@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 use File::Find 'find';
 
 find({

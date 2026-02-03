@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -12,7 +11,7 @@ my $in = join "\n", @in;
 
 my @expected_out = ('20', '42');
 my @expected_err = (
-        "The input 'hello' contains no numeric values", 
+        "The input 'hello' contains no numeric values",
         "The input '3x' contains no numeric values",
     );
 

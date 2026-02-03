@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -7,7 +6,7 @@ use warnings;
 while (my $line = <>) {
 	next if $line =~ /^\s*$/;   # emtpy lines are acceptable and we skip them
 	if ($line =~ /^\[/x) {
-		
+
 	} else {
 		print "ERROR parsing $ARGV $.\n";
 	}

@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -24,12 +23,11 @@ $w->submit_form(
 );
 #print join "\n", $w->forms;
 #foreach my $form ($w->forms) {
-   
 #}
 
 $w->form_number(2);
 my $wiki_text = $w->field('wiki_text');  # resets the field !
-print "Content:\n$wiki_text\n"; 
+print "Content:\n$wiki_text\n";
 $w->field('wiki_text', $wiki_text ."\nItt jart Matyas\n");
 $w->click('button-save');
 
