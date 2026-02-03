@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -20,7 +19,7 @@ open my $fh, "+<", $filename or die "Could not open counter: $!\n";
 my @c = <$fh>;
 chomp @c;
 
-seek $fh, 0, 0;   # move to the beginning of the file 
+seek $fh, 0, 0;   # move to the beginning of the file
 truncate $fh, 0;  # cut the file to a certain size
 
 $c[$id]++;
@@ -30,7 +29,7 @@ foreach my $v (@c) {
     if (defined $v) {
             print $fh "$v\n";
     } else {
-        print $fh "\n"; 
+        print $fh "\n";
     }
 }
 close $fh;

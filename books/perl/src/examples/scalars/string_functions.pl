@@ -1,6 +1,5 @@
-#!/usr/bin/perl
 use strict;
-use warnings; 
+use warnings;
 
 my $s = "The black cat jumped from the green tree";
 
