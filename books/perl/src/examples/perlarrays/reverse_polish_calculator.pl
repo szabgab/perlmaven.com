@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -11,17 +10,17 @@ while (1) {
 
     if ($in eq "q") { last; }
 
-    if ($in eq "c") { 
-            pop @stack; 
+    if ($in eq "c") {
+            pop @stack;
             next;
             }   # fetch the last value
-    if ($in eq "*") { 
+    if ($in eq "*") {
             my $x = pop(@stack);
             my $y = pop(@stack);
             push(@stack, $x*$y);
             next;
             }
-    if ($in eq "+") { 
+    if ($in eq "+") {
             my $x = pop(@stack);
             my $y = pop(@stack);
             push(@stack, $x + $y);
@@ -30,18 +29,19 @@ while (1) {
     if ($in eq "/") {
             my $x = pop(@stack);
             my $y = pop(@stack);
-            push(@stack, $y /  $x); 
+            push(@stack, $y /  $x);
             next;
             }
-    if ($in eq "-") { 
+    if ($in eq "-") {
             my $x = pop(@stack);
             my $y = pop(@stack);
             push(@stack, $y - $x);
             next;
             }
-    if ($in eq "=") { 
-            print pop(@stack), "\n"; 
+    if ($in eq "=") {
+            print pop(@stack), "\n";
             next;
             }
     push @stack, $in;
 }
+

@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -15,7 +14,6 @@ my $csv = Text::CSV->new ({
     sep_char  => ';'
 });
 
- 
 my $sum = 0;
 open(my $data, '<:encoding(utf8)', $file) or die "Could not open '$file'\n";
 while (my $fields = $csv->getline( $data )) {

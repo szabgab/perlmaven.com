@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -20,7 +19,7 @@ foreach my $v (@data) {
 }
 
 my $average = $total / @data;
-my $median = @data % 2        ? $data[(@data-1)/2]  
+my $median = @data % 2        ? $data[(@data-1)/2]
            :                  ($data[@data/2-1]+$data[@data/2])/2
            ;
 
@@ -30,7 +29,7 @@ foreach my $v (@data) {
 }
 my $std = ($sqtotal / @data) ** 0.5;
 
-print "Min: $data[0]   Max: $data[-1]   Total: $total   count: " 
+print "Min: $data[0]   Max: $data[-1]   Total: $total   count: "
       . @data . "  Average: $average\n";
 print "Median: $median   $sqtotal Standard deviation: $std\n";
 

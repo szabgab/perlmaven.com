@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -23,7 +22,7 @@ my $xml = XMLin($data,
         #KeepRoot => 1,
         );
 
-$Data::Dumper::Sortkeys = 1; 
+$Data::Dumper::Sortkeys = 1;
 print Dumper $xml;
 
 print "The name of the first  person: $xml->{person}[0]{name}[0]\n";

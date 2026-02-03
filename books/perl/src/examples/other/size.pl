@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -11,7 +10,6 @@ chomp $size;
 
 if ($size >= 40 and $age <= 45 ) {
    print "Then please go to the second floor\n";
-   
 }
 
 if ($size < 40 or $age > 45 ) {

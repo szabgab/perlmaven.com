@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -26,5 +25,5 @@ Usage: $0
         --help
         --start
 END_USAGE
-    exit; 
+    exit;
 }

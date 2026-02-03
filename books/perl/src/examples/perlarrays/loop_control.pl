@@ -1,8 +1,7 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
-# Count the number of non-empty rows in a file until you encounter 
+# Count the number of non-empty rows in a file until you encounter
 # __END__ or the end of file
 
 my $file = shift or die "Usage: $0 FILENAME\n";

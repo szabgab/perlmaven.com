@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 use v5.10;
@@ -12,15 +11,15 @@ while (1) {
 
     given ($in) {
         when ("q") { last; }
-        when ("c") { 
-            pop @stack; 
+        when ("c") {
+            pop @stack;
             }   # fetch the last value
-        when ("*") { 
+        when ("*") {
             my $x = pop(@stack);
             my $y = pop(@stack);
             push(@stack, $x*$y);
             }
-        when ("+") { 
+        when ("+") {
             my $x = pop(@stack);
             my $y = pop(@stack);
             push(@stack, $x + $y);
@@ -28,15 +27,15 @@ while (1) {
         when ("/") {
             my $x = pop(@stack);
             my $y = pop(@stack);
-            push(@stack, $y /  $x); 
+            push(@stack, $y /  $x);
             }
-        when ("-") { 
+        when ("-") {
             my $x = pop(@stack);
             my $y = pop(@stack);
             push(@stack, $y - $x);
             }
-        when ("=") { 
-            print pop(@stack), "\n"; 
+        when ("=") {
+            print pop(@stack), "\n";
             }
         default { push @stack, $in; }
     }

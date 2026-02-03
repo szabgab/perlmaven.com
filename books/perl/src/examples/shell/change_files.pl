@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -9,7 +8,6 @@ my $dir = $ARGV[0] || '.';
 
 
 find( \&change_file, $dir);
- 
 
 sub change_file {
     my $name= $_;
@@ -27,7 +25,7 @@ sub change_file {
 
     # Let's not ruin our example files....
     my $backup = "$name.bak";
-    rename $name, $backup, 
+    rename $name, $backup,
     write_file($name, $data);
 
     return;

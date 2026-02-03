@@ -1,4 +1,3 @@
-#!/usr/bin/perl 
 use strict;
 use warnings;
 
@@ -44,7 +43,7 @@ foreach my $t (@tests) {
 # The same but                   Danger! Danger! Danger!
 # Using symbolic references here!
 foreach my $t (@tests) {
-    no strict 'refs'; 
+    no strict 'refs';
 
     ok(&{ $t->{func} }( @{ $t->{in} } ) == $t->{out}, "$t->{func} @{ $t->{in} }");
 

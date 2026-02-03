@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -9,7 +8,7 @@ use File::Spec;
 my $dir = shift or die "Usage: $0 DIR\n";
 
 if (not -d $dir) {
-    die "'$dir' is not a directory"; 
+    die "'$dir' is not a directory";
 }
 
 my $manifest_file = File::Spec->catfile($dir, 'MANIFEST');

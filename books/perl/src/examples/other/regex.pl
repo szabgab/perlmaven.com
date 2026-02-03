@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 use strict;
 use warnings;
 
@@ -19,6 +18,6 @@ print "$1\n"; # the same as earlier, before the {}
 
 # any successful regular expression (even if it does not have capturing ())
 # resets $1
-$str =~ /./;  
+$str =~ /./;
 print "$1\n";  # undef
-	
+
