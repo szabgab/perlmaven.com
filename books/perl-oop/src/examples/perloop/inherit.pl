@@ -1,4 +1,3 @@
-#!/usr/bin/perl 
 use strict;
 use warnings FATAL => 'all';
 
@@ -26,7 +25,6 @@ sub _init {
 
 sub drive {
     my ($self) = @_;
-    
 }
 
 
@@ -50,9 +48,9 @@ sub _init {
 
 sub drive {
     my ($self) = @_;
-    # 
+    #
     $self->SUPER::drive();
-    # 
+    #
 }
 
 

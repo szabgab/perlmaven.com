@@ -1,9 +1,5 @@
-#!/usr/bin/perl 
 use strict;
 use warnings;
-
-
-
 
 package Car;
 use strict;
@@ -41,6 +37,4 @@ sub fourth {
 package main;
 
 Car::first();
-
-
 
