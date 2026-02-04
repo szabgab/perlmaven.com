@@ -47,6 +47,7 @@ Hopefully in ABC order...
 * [Perl-Critic](https://github.com/Perl-Critic) - PPI, Perl::Critic and related. 7 members and 5 repositories.
 * [perl-ide](https://github.com/perl-ide) - Perl Development Environments. 26 members and 13 repositories.
 * [perl-pod](https://github.com/perl-pod) - Pod::Simple, Test::Pod. 1 member and 4 repositories.
+* [PkgConfig](https://github.com/PerlPkgConfig) - 1 member 1 repository.
 * [plack](https://github.com/plack/) - psgi-specs, Plack and a few middlewares. 5 members and 7 repositories.
 * [RexOps](https://github.com/RexOps) - Rex, Rexify and related projects. 1 member and 46 repositories.
 * [Sqitch ](https://github.com/sqitchers/) - Sqitch for Sensible database change management and related projects. No public members. 16 repositories.
