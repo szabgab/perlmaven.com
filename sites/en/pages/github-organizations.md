@@ -30,6 +30,7 @@ Hopefully in ABC order...
 * [MetaCPAN](https://github.com/Metacpan) - The source of the MetaCPAN site - 9 member and 56 rpositories.
 * [Mojolicious](https://github.com/mojolicious) - Some Perl and many JavaScript projects. 5 members and 29 repositories.
 * [Moose](https://github.com/moose/) - Moose,`MooseX-*`, Moo, etc. 11 members and 69 repositories.
+* [Netdisco](https://github.com/netdisco) - Netdisco and SNMP-Info projects. 10 members and 14 repositories.
 * [PadreIDE](https://github.com/PadreIDE) - Padre, the Perl IDE. 13 members and 102 repositories.
 * [Paracamelus](https://github.com/paracamelus) - No public members. 2 repositories.
 * [Perl](https://github.com/Perl/) - Perl 5 itself, Docker images, etc. 20 members, 8 repositories.
