@@ -324,6 +324,14 @@ by [David E.  Wheeler](https://twitter.com/Theory).
 
 (Still being categorized)
 
+[Thruk Monitoring](https://www.thruk.org/) - Webinterface for Naemon, Icinga, Shinken and Nagios - [GitHub](https://github.com/sni/Thruk)
+
+[Ravada VDI project](https://ravada.upc.edu/) - Free, easy-to-use & deploy VDI solution (Virtual Desktop Infrastructure) - [GitHub](https://github.com/UPC/ravada/)
+
+[FAI - Fully Automatic Installation](https://fai-project.org/) - FAI is a tool for unattended mass deployment of Linux. [Github](https://github.com/faiproject/fai)
+
+[cloc](https://github.com/AlDanial/cloc) - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+
 [GNU parallel](http://www.gnu.org/software/parallel/) to run jobs in parallel.
 
 
