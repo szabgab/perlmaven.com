@@ -7,7 +7,7 @@ title = "Introduction to PerlVim"
 # Add github icon to the menu
 [output.html]
 git-repository-url = "https://github.com/szabgab/perlmaven.com"
-git-repository-icon = "fa-github"
+git-repository-icon = "fas-code-fork"
 edit-url-template = "https://github.com/szabgab/perlmaven.com/edit/main/books/perl-intro/{path}"
 
 [output.markdown]
