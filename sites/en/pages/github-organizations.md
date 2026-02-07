@@ -27,6 +27,7 @@ Hopefully in ABC order...
 * [ExifTool](https://github.com/exiftool) - No public members. 3 repositories.
 * [Foswiki](https://github.com/foswiki) - The Foswiki and related projects. 13 members and 649 repositories.
 * [gitpan](https://github.com/gitpan) - An archive of CPAN modules - 2 members and 5k+ read-only repositories.
+* [Kelp framework](https://github.com/Kelp-framework) - a web development framework. 1 member and 12 repositories.
 * [MetaCPAN](https://github.com/Metacpan) - The source of the MetaCPAN site - 9 member and 56 rpositories.
 * [Mojolicious](https://github.com/mojolicious) - Some Perl and many JavaScript projects. 5 members and 29 repositories.
 * [Moose](https://github.com/moose/) - Moose,`MooseX-*`, Moo, etc. 11 members and 69 repositories.
@@ -55,6 +56,7 @@ Hopefully in ABC order...
 * [StrawberryPerl](https://github.com/StrawberryPerl/) - The Perl distribution for MS Windows. 4 members and 10 repositories.
 * [Test-More](https://github.com/Test-More) - Test::Builder, Test::Simple, Test2 etc. - 4 members, 27 repositories.
 * [The Enlightened Perl Organisation](https://github.com/EnlightenedPerlOrganisation) - Task::Kensho and `Task::Kensho::*`. 1 member and 1 repository.
+* [Thunderhorse Framework](https://github.com/Thunderhorse-Framework) - a modern web development framework. No public members. 4 repositories.
 * [Webmin](https://github.com/webmin) - Webmin is a web-based system administration tool for Unix-like servers. - 5 repositories.
 
 
