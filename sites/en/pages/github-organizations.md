@@ -20,8 +20,8 @@ In any case, I tried to collect all the Perl-related GitHub organizations.
 
 Hopefully in ABC order...
 
-* [Beyond grep](https://github.com/beyondgrep) - ack. No public members. 4 repositories.
-* [Catalyst](https://github.com/perl-catalyst/) - Catalyst and various extensions. 10 members and 39 repositories.
+* [Beyond grep](https://github.com/beyondgrep) - It is mostly for `ack`, a `better grep` developed by Andy Lester. No public members. 4 repositories.
+* [Catalyst](https://github.com/perl-catalyst/) - Catalyst is a web-framework. Its runtime and various extensions are maintained in this organization. 10 members and 39 repositories.
 * [cpan-authors](https://github.com/cpan-authors/) - A place for CPAN authors to collaborate more easily. 4 members and 9 repositories.
 * [davorg cpan](https://github.com/davorg-cpan) - Organisation for maintaining Dave Cross's CPAN modules. No public members and 47 repositories.
 * [ExifTool](https://github.com/exiftool) - No public members. 3 repositories.
