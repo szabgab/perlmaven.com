@@ -49,8 +49,15 @@ The following are a few sample YAML files.
 * Make the system check out the source code of your prokeject with the pre-defined [checkout action](https://github.com/actions/checkout).
 * Using cpanm install all the prerequisites and then run the regular steps starting with **perl Makefile.PL**
 * As a separate step, run the same tests, but this time RELEASE_TESTING enabled.
+* You can enable the `schedule` with a standar cron configuration. It can help noticing when a new version of one of the dependencies breaks your code.
 
 {% include file="examples/workflows/makefile_tester.yml" %}
+
+## Makefile.PL Native (Windows, macOS, Linux)
+
+* This workflow will run natively on Windows, macOS, Linux. On MS Windows it uses `gmake` instead of `make`.
+
+{% include file="examples/workflows/makefile_native.yml" %}
 
 ## GitHub Actions for projects using Dist::Zilla
 
@@ -67,7 +74,4 @@ The following are a few sample YAML files.
 
 {% include file="examples/workflows/dzil_native.yml" %}
 
-## Makefile.PL Native
-
-{% include file="examples/workflows/makefile_native.yml" %}
 
