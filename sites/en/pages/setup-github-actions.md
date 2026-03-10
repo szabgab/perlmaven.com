@@ -57,7 +57,7 @@ The following are a few sample YAML files.
 
 * This workflow will run natively on Windows, macOS, Linux. On MS Windows it uses `gmake` instead of `make`.
 
-{% include file="examples/workflows/makefile_native.yml" %}
+[Makefile.PL Native](https://github.com/szabgab/github-actions-perl-makefile-native)
 
 ## GitHub Actions for projects using Dist::Zilla
 
