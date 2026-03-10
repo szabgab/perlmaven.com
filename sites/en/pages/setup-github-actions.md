@@ -51,7 +51,7 @@ The following are a few sample YAML files.
 * As a separate step, run the same tests, but this time RELEASE_TESTING enabled.
 * You can enable the `schedule` with a standar cron configuration. It can help noticing when a new version of one of the dependencies breaks your code.
 
-{% include file="examples/workflows/makefile_tester.yml" %}
+[Makefile.PL using Docker image](https://github.com/szabgab/github-actions-perl-using-perl-tester-docker-image)
 
 ## Makefile.PL Native (Windows, macOS, Linux)
 
@@ -59,16 +59,16 @@ The following are a few sample YAML files.
 
 [Makefile.PL Native](https://github.com/szabgab/github-actions-perl-makefile-native)
 
+## GitHub Actions for projects using Build.PL
+
+[Build.PL](https://github.com/szabgab/github-actions-perl-build/)
+
 ## GitHub Actions for projects using Dist::Zilla
 
 * Similar to the one with Makefile.PL, this one runs the Dist::Zilla commands
 
 {% include file="examples/workflows/dzil_tester.yml" %}
 
-
-## GitHub Actions for projects using Build.PL
-
-{% include file="examples/workflows/build_tester.yml" %}
 
 ## Dist::Zilla Native
 
