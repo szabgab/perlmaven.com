@@ -41,6 +41,9 @@ It will send you e-mails if something is broken, but you can also follow it via 
 
 The following are a few sample YAML files.
 
+In the [GitHub Actions](https://git.code-maven.com/github-actions/) book you'll find explanation regarding [GitHub Actions for Perl](https://git.code-maven.com/github-actions/github-ci/actions-for-perl/).
+
+
 ## GitHub Actions for projects with Makefile.PL
 
 * Run on every **push** and on every **pull_request**.
@@ -65,13 +68,10 @@ The following are a few sample YAML files.
 
 ## GitHub Actions for projects using Dist::Zilla
 
-* Similar to the one with Makefile.PL, this one runs the Dist::Zilla commands
+* Similar to the one with Makefile.PL, these workflows run the Dist::Zilla commands
 
-{% include file="examples/workflows/dzil_tester.yml" %}
+There are two workflows in this repository. One runs natively the other runs inside a Docker container.
 
-
-## Dist::Zilla Native
-
-{% include file="examples/workflows/dzil_native.yml" %}
+[Dist::Zilla](https://github.com/szabgab/github-actions-perl-dist-zilla)
 
 
