@@ -16,7 +16,7 @@ edit-url-template = "https://github.com/szabgab/perlmaven.com/edit/main/books/pe
 # Handle Youtube video embedding and the footer
 [preprocessor.embedify]
 footer.enable = true
-footer.message = "Copyright © 2025 • Created with ❤️  by [Gábor Szabó](https://szabgab.com/)"
+footer.message = "Copyright © 2026 • Created with ❤️  by [Gábor Szabó](https://szabgab.com/)"
 
 
 
