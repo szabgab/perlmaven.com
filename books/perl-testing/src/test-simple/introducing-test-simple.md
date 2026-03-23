@@ -1,14 +1,6 @@
-# Introducing Test::Simple
+# Introducing `Test::Simple`
 
-
-* Test::Simple
-
-
-
-The Perl community has already created several implementations
-of the above mentioned ok() function. We'll go with the one in the module called
-Test::Simple. Not only will that print "ok" or "not ok" but it will also
-include a counter.
+The Perl community has already created several implementations of the above mentioned ok() function. We'll go with the one in the module called [Test::Simple](https://metacpan.org/pod/Test::Simple). Not only will that print "ok" or "not ok" but it will also include a counter.
 
 In order to use it first we'll need to declare how many test units are we planning
 to call, that is, how many times are we planning to call the ok() function.
@@ -44,5 +36,4 @@ $ echo $?
 > echo %ERRORLEVEL%
 1
 ```
-
 

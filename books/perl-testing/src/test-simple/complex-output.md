@@ -10,7 +10,5 @@ It would be much better if our testing program already compared the expected val
 with the actual results and would only print "ok" or "not ok"
 depending on success or failure.
 
-Like this:
-
-
+Like what you'll see on the next page.
 
