@@ -9,6 +9,7 @@ title = "Testing in Perl"
 git-repository-url = "https://github.com/szabgab/perlmaven.com"
 git-repository-icon = "fas-code-fork"
 edit-url-template = "https://github.com/szabgab/perlmaven.com/edit/main/books/perl-testing/{path}"
+additional-js = ["custom.js", "addlinks.js"]
 
 [output.markdown]
 
