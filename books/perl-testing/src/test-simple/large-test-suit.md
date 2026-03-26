@@ -1,7 +1,7 @@
 # Large test suite
 
 
-{% embed include file="src/examples/test-simple/tests/large_sum.txt)
+{% embed include file="src/examples/test-simple/tests/large_sum.txt" %}
 
 ```
 $ cp tests/large_sum.txt tests/sum.txt
