@@ -12,7 +12,7 @@ is the expected result.
 We even allow for empty rows and comments: rows that start with a # character will be disregarded.
 
 
-{% embed include file="src/examples/test-simple/tests/sum.txt)
+{% embed include file="src/examples/test-simple/tests/sum.txt" %}
 
 
 
