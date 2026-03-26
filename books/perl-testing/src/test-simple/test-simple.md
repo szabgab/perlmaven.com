@@ -1,11 +1,8 @@
 # Test::Simple
 
 
-```
-This is all very nice and Simple.
+This is all very nice and **Simple**.
 
 
-What if you want More ?
-```
-
+What if you want **More**?
 

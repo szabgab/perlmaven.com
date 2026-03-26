@@ -1,7 +1,6 @@
 # Test::More is(  value,   expected_value,   name);
 
-* is
-
+* `is`
 
 It would be much better to see the expected value and the actually received value.
 This usually helps in locating the problem.
@@ -17,7 +16,5 @@ perl t/32.t
 
 See, in this case we can already guess that it cannot add 3 values.
 
-* `is` compares using `eq`
-
-
+* `is` compares values using `eq`. It is fine in most of the cases.
 

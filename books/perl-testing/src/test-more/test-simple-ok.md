@@ -1,12 +1,10 @@
 # Test::Simple ok(  trueness,     name);
 
-* ok|Test::Simple
-
-* The previous examples using Test::Simple.
+* This is one of the earlier examples using Test::Simple.
 
 {% embed include file="src/examples/test-more/t/30.t" %}
 
-```
+```sh
 perl t/30.t
 ```
 

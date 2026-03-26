@@ -1,7 +1,6 @@
 # Test::More isnt undef
 
-
-* undef
+* `undef`
 
 {% embed include file="src/examples/test-more/t/isnt_undef.t" %}
 

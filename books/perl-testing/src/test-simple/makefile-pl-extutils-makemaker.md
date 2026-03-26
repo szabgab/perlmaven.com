@@ -1,7 +1,6 @@
 # Makefile.PL for ExtUtils::MakeMaker
 
-Makefile.PL
-ExtUtils::MakeMaker
+* [ExtUtils::MakeMaker](https://metacpan.org/pod/ExtUtils::MakeMaker)  Makefile.PL
 
 {% embed include file="src/examples/distribution/project_with_extutils_makemaker/Makefile.PL" %}
 

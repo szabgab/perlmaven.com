@@ -1,4 +1,4 @@
-# Commands for CPAN release
+# Commands for CPAN release - with `Makefile.PL`
 
 
 ```
@@ -8,5 +8,4 @@ make test
 make manifest
 make dist
 ```
-
 

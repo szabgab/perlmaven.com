@@ -3,10 +3,9 @@
 
 * Test::More
 
-Test::Simple is really a very simple module. Its sole exported function is the "ok" function.
+[Test::Simple](https://metacpan.org/pod/Test::Simple) is really a very simple module. Its sole exported function is the `ok` function.
 
-Test::More has the same "ok" function - so it is a drop-in replacement - but it also has lots of
-other functions and tools:
+[Test::More](https://metacpan.org/pod/Test::More) has the same `ok` function - so it is a drop-in replacement - but it also has lots of other functions and tools:
 
 * `ok`
 * `is`
@@ -22,13 +21,10 @@ other functions and tools:
 * `subtest`
 
 
-```
-Better error reporting.
-```
+**Better error reporting.**
 
-In the end every test can be based on the single ok() function.
+In the end every test can be based on the single `ok()` function.
 The additional functions mainly serve as convenience methods
 to allow better error reporting.
-
 
 

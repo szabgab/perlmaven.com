@@ -1,7 +1,6 @@
 # Makefile.PL for Module::Install
 
-Makefile.PL
-Module::Install
+* [Module::Install](https://metacpan.org/pod/Module::Install)          Makefile.PL
 
 {% embed include file="src/examples/distribution/project_with_module_install/Makefile.PL" %}
 
@@ -26,6 +25,5 @@ $ make test
 $ make manifest
 $ make dist
 ```
-
 
 

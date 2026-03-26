@@ -1,7 +1,5 @@
 # like(value, qr/expected regex/, name);
 
-* like
-
 {% embed include file="src/examples/test-more/show_copyright.pl" %}
 
 {% embed include file="src/examples/test-more/show_copyright.out" %}

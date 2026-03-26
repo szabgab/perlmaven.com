@@ -1,0 +1,14 @@
+# Looks like you planned 2 tests but ran 3.
+tests/t13.pl .. 
+Dubious, test returned 255 (wstat 65280, 0xff00)
+All 2 subtests passed 
+
+Test Summary Report
+-------------------
+tests/t13.pl (Wstat: 65280 (exited 255) Tests: 3 Failed: 1)
+  Failed test:  3
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 2 tests but ran 3.
+Files=1, Tests=3,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.04 cusr  0.01 csys =  0.06 CPU)
+Result: FAIL
+Failed 1/1 test programs. 1/3 subtests failed.

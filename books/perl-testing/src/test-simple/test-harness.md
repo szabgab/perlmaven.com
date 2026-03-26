@@ -1,16 +1,12 @@
 # Harness
 
-* harness
-* Test::Harness
+[Test::Harness](https://metacpan.org/pod/Test::Harness) is a module that can analyze
+the ok / not ok printouts with the numbers.
+In particular, it can analyze the output of `Test::Simple` and a whole class of
+other modules in the `Test::*` namespace on CPAN we are going to see later.
 
-
-This is a module that can analyze the ok / not ok printouts with the numbers.
-In particular, it can analyze the output of Test::Simple and a whole class of
-other modules in the Test::* namespace on CPAN we are going to see later.
-
-The harness.pl script is just a sample usage of the Test::Harness module.
+The `harness.pl` script is just a sample usage of the `Test::Harness` module.
 It accepts one or more test files, runs them and analyzes the output they generated.
-
 
 {% embed include file="src/examples/test-simple/harness.pl" %}
 

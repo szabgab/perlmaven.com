@@ -1,7 +1,6 @@
 # Test::More ok(  trueness,     name);
 
-* ok|Test::More
-
+* This is the same example using Test::More.
 * Test::More is a drop-in replacement of Test::Simple.
 
 {% embed include file="src/examples/test-more/t/31.t" %}

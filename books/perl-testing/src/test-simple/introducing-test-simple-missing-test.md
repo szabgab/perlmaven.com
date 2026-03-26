@@ -1,11 +1,7 @@
 # Test::Simple - missing test
 
+Why are those numbers necessary?
 
-* count
-
-
-
-So why are those numbers necessary?
 Imagine you managed to write 200 unit tests. Someone
 who does not know about the number runs the test suite and
 sees "ok" printed 17 times. It looks like everything is ok. He won't notice
@@ -15,7 +11,6 @@ but there is a serious problem somewhere. Either in the
 application or in the test itself. This can be found only
 if the test executer knows how many test have you planned,
 and checks if the correct number of tests have been executed.
-
 
 
 This is exactly what Test::Simple provides. In the following example

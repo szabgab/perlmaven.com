@@ -1,6 +1,6 @@
 # Test::More isnt( value, not_expected_value,  name);
 
-* isnt
+* `isnt`
 
 Sometimes you are expecting to get a value but you don't really know what.
 You just know one specific value that you want to make sure you have not

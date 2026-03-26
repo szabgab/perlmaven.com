@@ -1,14 +1,9 @@
 # Packaging as people do for CPAN
 
-CPAN
-
-
 Now let's take a small journey into how people package modules that
 are on CPAN. I have been using this method for all my code whether
 it was open source and ended upon CPAN, or a web application that
 I am only developing for myself, or code for a client.
-
-
 
 If you are packaging your application in the same way as all the
 CPAN modules are packaged, you'll immediately get all kinds of nice
@@ -18,16 +13,14 @@ There are three major ways how to package a module for CPAN.
 We could call them "standards" but it is quite hard to talk about
 standards in the Perl world.
 
-
-
-The three tools are three Perl Modules: ExtUtils::MakeMaker,
-Module::Build and Module::Install. Out of these three
+The three tools are three Perl Modules:
+[ExtUtils::MakeMaker](https://metacpan.org/pod/ExtUtils::MakeMaker),
+[Module::Build](https://metacpan.org/pod/Module::Build)
+and [Module::Install](https://metacpan.org/pod/Module::Install). Out of these three
 ExtUtils::MakeMaker has been standard for ages. Module::Build is
 standard from 5.10 and Module::Install actually builds on
 ExtUtils::MakeMaker and it packages itself with your distribution
 so it does not have to be installed on the target system.
-
-
 
 The major advantage of Module::Build is that if you are writing
 pure perl modules you only need to know about Perl. If you are
@@ -121,10 +114,10 @@ Directory layout
   t/                   test scripts with .t extension
 ```
 
-* ExtUtils::MakeMaker  Makefile.PL
-* Module::Install      Makefile.PL
-* Module::Build        Build.PL
-* Dist::Zilla          dist.ini
+* [ExtUtils::MakeMaker](https://metacpan.org/pod/ExtUtils::MakeMaker)  Makefile.PL
+* [Module::Install](https://metacpan.org/pod/Module::Install)          Makefile.PL
+* [Module::Build](https://metacpan.org/pod/Module::Build)              Build.PL
+* [Dist::Zilla](https://metacpan.org/pod/Dist::Zilla)                  dist.ini
 
 
 
