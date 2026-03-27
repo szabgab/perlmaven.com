@@ -1,5 +1,6 @@
 # plan tests, no_testing, done_testing
 
+Another example where we can try to see what can we do about the (lack of) plan.
 
 {% embed include file="src/examples/test-plan/lib/Fibonacci.pm" %}
 

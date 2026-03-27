@@ -1,6 +1,4 @@
-# Declare your plan at execution time
-
-* plan
+# `plan tests` - declare your `plan` at execution time
 
 ```
 use Test::More tests => 6;

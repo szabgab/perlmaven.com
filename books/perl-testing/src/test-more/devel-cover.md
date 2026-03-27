@@ -1,13 +1,10 @@
 # Test coverage using Devel::Cover
 
-
-* Devel::Cover
+* [Devel::Cover](https://metacpan.org/pod/Devel::Cover)
 
 ```
 cover --test
 ```
-
-
 
 Once we know that our tests are passing we could check which lines
 are exercised in the code during the test execution. For this
@@ -24,8 +21,8 @@ All tests successful.
 Files=11, Tests=2078, 50 wallclock secs
 ```
 
-* [Devel::Cover](https://metacpan.org/pod/Devel::Cover)
-* [CPAN Cover](http://cpancover.com/)
-* [Meta::CPAN](https://metacpan.org/)
+* [Devel::Cover](https://metacpan.org/pod/Devel::Cover).
+* [CPAN Cover](http://cpancover.com/) generates and collects the test coverage report of modules recently uploaded to CPAN.
+* [Meta::CPAN](https://metacpan.org/) includes the test-coverage report of most of the modules.
 
 

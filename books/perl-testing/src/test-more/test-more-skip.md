@@ -1,7 +1,5 @@
 # SKIP some tests
 
-* SKIP
-
 {% embed include file="src/examples/test-more/t/skip.t" %}
 
 Output:

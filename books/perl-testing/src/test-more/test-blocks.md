@@ -1,10 +1,9 @@
 # Test blocks (use subtest instead)
 
-* {}}
+* `{}`
 
 
 Create small blocks of tests
-
 
 
 When writing a test script you often write similar pieces of code that do
