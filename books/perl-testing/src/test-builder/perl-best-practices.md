@@ -1,8 +1,8 @@
 # Perl Best Practices - Perl::Critic
 
 * PBP
-* Perl::Critic
-
+* [Perl::Critic](https://metacpan.org/pod/Perl::Critic)
+* [Test::Perl::Critic](https://metacpan.org/pod/Test::Perl::Critic)
 
 The book Perl Best Practices of Damian Conway provides a reasonable
 set of guidelines on how to write a Perl program. While you might not
@@ -28,8 +28,6 @@ You can also configure the module to check each one of the "practices"
 according to the style accepted in your company.
 
 
-* [Perl::Critic](https://metacpan.org/pod/Perl::Critic)
-* [Test::Perl::Critic](https://metacpan.org/pod/Test::Perl::Critic)
 
 {% embed include file="src/examples/test-perl/t/99-critic.t" %}
 

@@ -1,6 +1,6 @@
 # Test::NoWarnings
 
-* Test::NoWarnings
+* [Test::NoWarnings](https://metacpan.org/pod/Test::NoWarnings)
 
 {% embed include file="src/examples/test-warn/t/test_nowarnings.t" %}
 

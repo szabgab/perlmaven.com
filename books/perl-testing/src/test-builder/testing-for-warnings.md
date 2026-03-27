@@ -1,9 +1,8 @@
 # Testing for warnings
 
-* Test::Warn
+* [Test::Warn](https://metacpan.org/pod/Test::Warn)
 * warnings
 * exception
-
 
 Test code that should give a warning, and check if that is the correct warning.
 

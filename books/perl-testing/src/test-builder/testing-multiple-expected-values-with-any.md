@@ -1,9 +1,6 @@
 # Multiple expected values revised
 
-* any
-* List::MoreUtils
-
-We are going to use the "any" function of List::MoreUtils.
+We are going to use the `any` function of [List::MoreUtils](https://metacpan.org/pod/List::MoreUtils).
 
 {% embed include file="src/examples/test-perl/t/dice_any.t" %}
 

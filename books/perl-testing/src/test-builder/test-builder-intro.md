@@ -1,17 +1,10 @@
 # Test::Builder
 
-* Test::Builder
-
-
-Test modules created using Test::Builder all work nicely together.
+Test modules created using [Test::Builder](https://metacpan.org/pod/Test::Builder) all work nicely together.
 Among other things, they don't get confused with the counting of the tests.
-
-
-
 
 There are many Test::Builder based modules already available from CPAN.
 Not only Test::Simple and Test::More.
-
 
 
 * [Test::Warn](https://metacpan.org/pod/Test::Warn)
