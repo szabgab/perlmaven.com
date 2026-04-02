@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 
+use lib 'lib';
 use MyTools qw(last_update);
 
 use Test::More tests => 3;

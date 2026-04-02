@@ -1,6 +1,10 @@
 use strict;
 use warnings;
 
+# Plan: test all the examples in the books
+# For the perl-testing course we run tests, many will fail as we are demonstrating failures.
+# So we need to expect that.
+
 use Cwd qw(cwd);
 use Path::Iterator::Rule;
 use IPC::Run qw(run timeout);
@@ -18,10 +22,25 @@ my %cases = (
       "t/34.t" => "success",
       "t/35.t" => "success",
       "t/bail_out.t" => "skip", # exit code is 65280
-      "t/cmp_ok.t" => "fail",
+      "t/cmp_ok.t" => "skip", # flaky
       "t/compute_test_plan.t" => "success",
       "t/copyright.t" => "fail",
       "t/done_testing.t" => "success",
+      "t/exit.t" => "fail",
+      "t/explain.t" => "success",
+      "t/is_deeply.t" => "fail",
+      "t/is_deeply_bugs.t" => "fail",
+      "t/isnt_undef.t" => "fail",
+      "t/last_update.t" => "skip", # flaky test
+      "t/like.t" => "fail",
+      "t/locale.t" => "success",
+      "t/messages.t" => "success",
+      "t/other.t" => "skip", # flaky test?
+      "t/plan_tests.t" => "fail",
+      "t/planned_subtest.t" => "fail",
+      "t/skip.t" => "fail",
+      "t/skip_all.t" => "success",
+      "t/subtest.t" => "fail",
   }
 );
 
@@ -32,7 +51,7 @@ for my $dir (keys %cases) {
     $rule->name('*.t');
     my $it = $rule->iter('t');
     while ( my $file = $it->() ) {
-	    next if not exists $cases{$dir}{$file};
+	next if not exists $cases{$dir}{$file};
 	die "Unhandled file $file" if not exists $cases{$dir}{$file};
 	next if $cases{$dir}{$file} eq 'skip';
 

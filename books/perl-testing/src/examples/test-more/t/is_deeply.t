@@ -3,6 +3,7 @@ use warnings;
 
 use Test::More tests => 11;
 
+use lib 'lib';
 use MyTools qw(fibo fibonacci);
 
 is fibo(0), 0;
