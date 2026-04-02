@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 
+use lib 'lib';
 use Test::More tests => 2;
 use MyTools qw(wait_for_input_with_timeout);
 

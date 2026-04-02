@@ -1,6 +1,8 @@
 use strict;
 use warnings;
 
+use lib 'lib';
+
 use MyTools qw(get_copyright get_copyright_broken);
 
 use Test::More tests => 3;
