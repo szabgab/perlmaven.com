@@ -7,7 +7,8 @@ use MyMath;
 
 plan tests => 1;
 
-MyMath::add(2, 3);
+my $result = MyMath::add(2, 3);
+#is $result, 5;
 
 ok 1;
 

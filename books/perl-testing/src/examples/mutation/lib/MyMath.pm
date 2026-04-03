@@ -5,7 +5,7 @@ use warnings;
 our $VERSION = '1.00';
 
 sub add {
-    42;
+    $_[0] + $_[1];
 }
 
 1;
