@@ -4,7 +4,7 @@ use warnings;
 use Test::More tests => 3;
 use Test::Deep;
 
-use lib 'lib';
+use lib '../test-more/lib';
 use MyBugs;
 
 use Data::Dumper;

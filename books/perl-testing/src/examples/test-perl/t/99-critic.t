@@ -7,6 +7,6 @@ eval {
    import  Test::Perl::Critic;
 };
 plan skip_all => 'Test::Perl::Critic required to criticise code' if $@;
-all_critic_ok('blib');
-#all_critic_ok('blib', 't');
+all_critic_ok('lib');
+#all_critic_ok('lib', 't');
 

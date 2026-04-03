@@ -18,4 +18,5 @@ pm_to_blib
 /html/
 
 cover_db/
+books/perl-testing/src/examples/test-perl/.tidyall.d/
 

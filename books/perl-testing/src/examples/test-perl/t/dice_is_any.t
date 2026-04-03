@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 
+use lib 'lib';
 use MyTools;
 
 use List::MoreUtils qw(any);
