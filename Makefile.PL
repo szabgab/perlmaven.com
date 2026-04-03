@@ -13,6 +13,9 @@ my %opts = (
         'Path::Tiny'           => 0,
         'Carp::Always'         => 0,
         'Try::Tiny'            => 0,
+        'HTTP::CookieJar::LWP' => 0,
+        'LWP::UserAgent'       => 0,
+
 
 #        'HTML::Tidy'           => 0,
 #        'Test::HTML::Tidy'     => 0,
