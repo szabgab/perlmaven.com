@@ -6,7 +6,7 @@
 
 
 The simplest way to generate nice reports is to use [TAP::Formatter::HTML](https://metacpan.org/pod/TAP::Formatter::HTML).
-Instead of running prove alone, you can pass it a class implementing formattion
+Instead of running prove alone, you can pass it a class implementing formation
 options and it will use that instead of the default textual output.
 
 ```

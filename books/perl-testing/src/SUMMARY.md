@@ -308,7 +308,7 @@
   - [Selenium examples with Ajax](./selenium/selenium-examples-with-ajax.md)
   - [WWW::Mechanize::PhantomJS](./selenium/www-mechanize-phantomjs.md)
   - [Testing Dancer](./selenium/testing-dancer.md)
-  - [Exercies: MetaCPAN](./selenium/exercise-metacpan.md)
+  - [Exercise: MetaCPAN](./selenium/exercise-metacpan.md)
   - [Exercise: blogs.perl.org](./selenium/exercise-blogs-perl-org.md)
   - [Exercise: Testing Smolder](./selenium/exercise-test-smolder.md)
   - [Exercise: Act](./selenium/exercise-with-act.md)

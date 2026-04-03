@@ -1,6 +1,6 @@
 # WWW::Mechanize
 
-* WWW::Mecanize
+* WWW::Mechanize
 {% embed include file="src/examples/network/mechanize.pl" %}
 
 ```

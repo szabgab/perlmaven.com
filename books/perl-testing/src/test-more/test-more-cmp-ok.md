@@ -17,6 +17,6 @@ and upper limit.
 
 {% embed include file="src/examples/test-more/t/cmp_ok.t.2.out" %}
 
-* Actually this is a really bad test as it can fail randomnly
+* Actually this is a really bad test as it can fail randomly
 
 

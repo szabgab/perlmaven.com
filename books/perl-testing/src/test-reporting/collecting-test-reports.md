@@ -16,7 +16,7 @@ collect the results of the TAP streams. Move them to a central
 machine and generate the nice reports there.
 
 
-This will run the tests and generate a tarbal from the resulting
+This will run the tests and generate a tarball from the resulting
 TAP stream along with a meta.yml file that contains some meta data
 on the execution. You can take this file and move it to another
 server. (A warning though, the TAP streams of each test file is saved in

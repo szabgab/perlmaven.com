@@ -3,7 +3,7 @@
 
 * TDD - Test Driven Development
 
-* Write application agains API that is not ready yet or not controlled by you.
+* Write application against API that is not ready yet or not controlled by you.
 
 * Replace a complex object with a simpler one.
 

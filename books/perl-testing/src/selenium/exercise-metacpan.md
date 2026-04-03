@@ -1,4 +1,4 @@
-# Exercies: MetaCPAN
+# Exercise: MetaCPAN
 
 
 * Visit [MetaCPAN](http://metacpan.com/), search for something and observe the links. Has the small logo appeared?

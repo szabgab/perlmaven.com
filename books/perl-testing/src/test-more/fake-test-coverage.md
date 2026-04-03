@@ -4,7 +4,7 @@ In this example we have a very simple module with two simple functions.
 
 {% embed include file="src/examples/mutation/lib/MyMath.pm" %}
 
-We have two tests. The `multiply` test check one case for which the `multiply` function happens to return the correct value. In the case of the `add` function we call the function, but for some reason we don't compare the resuls.
+We have two tests. The `multiply` test check one case for which the `multiply` function happens to return the correct value. In the case of the `add` function we call the function, but for some reason we don't compare the result.
 
 {% embed include file="src/examples/mutation/t/test.t" %}
 

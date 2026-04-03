@@ -13,7 +13,7 @@ are testing dice() with several possible parameters.
 
 
 We move the ok() to a function call is_any and we are calling it with the actual value,
-a reference to an array holding the expected values and the name of the test uint.
+a reference to an array holding the expected values and the name of the test unit.
 We had to slightly change the part of the ok() as now we have a reference to the expected
 values and not the array itself.
 
