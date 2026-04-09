@@ -4,7 +4,7 @@ use DateTime;
 
 get '/' => sub {
     my $dt = DateTime->now;
-    return $dt->strftime( '%Y-%m-%d %H:%M:%S' );
+    return $dt->strftime( 'The time is %Y-%m-%d %H:%M:%S' );
 };
 
 App->to_app;

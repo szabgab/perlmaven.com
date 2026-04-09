@@ -24,7 +24,6 @@ counter
 counter1
 counter2
 get-parameters
-hello_404
 hello_500
 hooks
 logging
@@ -45,7 +44,6 @@ show-config
 show-errors
 show_array
 show_hoh
-show_time
 show_time_using_template
 simple-todo
 template-include

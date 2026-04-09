@@ -12,6 +12,7 @@ my $test = Plack::Test->create($app);
 my $res = $test->request(GET '/');
 
 is $res->status_line, '200 OK', 'Status';
-like $res->content, qr/\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d/, 'Content';
+is $res->headers->{"content-type"}, 'text/html; charset=utf-8', 'Content-Type';
+like $res->content, qr/^The time is \d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d/, 'Content';
 
 done_testing();
