@@ -1,6 +1,6 @@
 # Smolder
 
-* Smolder
+[Smolder](https://metacpan.org/pod/Smolder) by Michael Peters.
 
 
 Smolder is a web based application to collect and display TAP streams.
@@ -18,24 +18,25 @@ of the tests results. You can view the details of a single test run and you can 
 see some historical data as well.
 As of version 1.35 you have to do the following to start the server:
 
-create ~/.smolder and in it create ~/.smolder/smolder.conf with one line:
+create `~/.smolder` and in it create `~/.smolder/smolder.conf` with one line:
 
+```
 HostName    smolder.local
+```
 
 In addition you have to change the /etc/hosts file so smolder.local will resolve
 to 127.0.0.1 (You can of course use any name with at least one . in it.)
 
 Then you can launch Smolder using the following command:
 
+```
 smolder -c ~/.smolder/smolder.conf
+```
 
 Then you can use your browser to access  it.
 
 The password for the "admin" user is "qa_rocks".
 
-
-
-[Smolder](https://metacpan.org/pod/Smolder) by Michael Peters.
 
 `smolder_smoke_signal --server smolder.foo.com:port --username myself --password s3cr3t --file tap.tar.gz --project MyProject`
 

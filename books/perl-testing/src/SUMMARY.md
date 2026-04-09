@@ -163,7 +163,7 @@
   - [What is Mocking?](./mocking/what-is-mocking.md)
   - [Test Doubles](./mocking/test-doubles.md)
   - [Test Doubles explained](./mocking/test-doubles-explained.md)
-  - [ What is Monkey Patching?](./mocking/mocking-vs-monkey-patching.md)
+  - [What is Monkey Patching?](./mocking/mocking-vs-monkey-patching.md)
   - [When is mocking useful?](./mocking/when-is-mocking-useful.md)
   - [Mocking in various situations](./mocking/mocking-in-various-situations.md)
   - [Application using random](./mocking/application-using-random.md)

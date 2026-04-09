@@ -1,13 +1,10 @@
 # can_ok('Class', qw(method_a method_b));
 
-* can_ok
-
+```perl
 can_ok($object, qw(method_a method_b));
+```
 
-
-
-
-In order to nicely test if a module has certain methods you can use the can_ok() function of Test::More.
+In order to nicely test if a module has certain methods you can use the `can_ok()` function of Test::More.
 It can be used both on modules and on objects.
 
 {% embed include file="src/examples/test-perl/t/can_ok.t" %}

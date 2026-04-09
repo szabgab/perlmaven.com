@@ -12,16 +12,14 @@ use List::MoreUtils qw(any);
 
 use Test::Builder::Module;
 
-
-my $Test = Test::Builder::Module->builder;
-
-
 sub is_any {
     my ($actual, $expected, $name) = @_;
     $name ||= '';
 
-    $Test->ok( (any {$_ eq $actual} @$expected), $name) 
-        or $Test->diag("Received: $actual\nExpected:\n" 
+    my $Test = Test::Builder::Module->builder;
+
+    $Test->ok( (any {$_ eq $actual} @$expected), $name)
+        or $Test->diag("Received: $actual\nExpected:\n"
              . join "", map {"         $_\n"} @$expected);
 }
 
