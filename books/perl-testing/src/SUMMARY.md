@@ -128,6 +128,7 @@
   - [No other warnings Test::FailWarnings](./test-builder/testing-for-no-other-warnings-with-failwarnings.md)
   - [unexpected warnings Test::NoWarnings, Test::FailWarnings](./test-builder/test-with-warnings.md)
   - [Test::Exception](./test-builder/test-exception.md)
+  - [Test::Exception average](./test-builder/test-exception-average.md)
   - [Exercise: improve test module](./test-builder/exercise-test-builder.md)
   - [Exercise: add is_max](./test-builder/exercise-test-builder-is-max.md)
   - [Exercise: is_between](./test-builder/exercise-is-between.md)
