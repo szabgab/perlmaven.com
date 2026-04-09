@@ -15,6 +15,7 @@ my %opts = (
         'Try::Tiny'            => 0,
         'HTTP::CookieJar::LWP' => 0,
         'LWP::UserAgent'       => 0,
+        'Dancer2'              => 0,
 
 
 #        'HTML::Tidy'           => 0,
