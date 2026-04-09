@@ -3,12 +3,14 @@ authors = ["Gabor Szabo"]
 language = "en"
 src = "src"
 title = "Web application development with Dancer"
+# "description": "Dancer"
 
 # Add github icon to the menu
 [output.html]
 git-repository-url = "https://github.com/szabgab/perlmaven.com"
 git-repository-icon = "fas-code-fork"
 edit-url-template = "https://github.com/szabgab/perlmaven.com/edit/main/books/perl-dancer/{path}"
+additional-js = ["custom.js", "addlinks.js"]
 
 [output.markdown]
 
