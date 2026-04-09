@@ -12,6 +12,7 @@ my $test = Plack::Test->create($app);
 my $res = $test->request(GET '/');
 
 is $res->status_line, '200 OK', 'Status';
+is $res->headers->{"content-type"}, 'text/html; charset=utf-8', 'Content-Type';
 is $res->content, 'Hello World!', 'Content';
 
 done_testing();
