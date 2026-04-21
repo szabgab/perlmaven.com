@@ -19,4 +19,6 @@ throws_ok { MyMath::average() } qr/Illegal division by zero/, 'missing parameter
 #or as hexadecimal values
 #or ....
 
+#throws_ok { MyMath::average(23, "def") } qr/We can only average numbers. Found 'def'/;
+
 done_testing;
