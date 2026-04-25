@@ -16,7 +16,7 @@ use MyRandomApp qw(dice);
 is dice(10), 1;
 is dice(10), 8;
 
-my $x = rand;
+my $x = rand();
 is $x, undef, 'We have replaced rand here too';
 
 done_testing;

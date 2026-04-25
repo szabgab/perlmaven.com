@@ -3,11 +3,13 @@ use strict;
 use warnings;
 
 use Exporter qw(import);
-our  @EXPORT_OK = qw(dice);
+our @EXPORT_OK = qw(dice);
 
 sub dice {
     my ($n) = @_;
-    return 1 + int(rand() * $n);
+    my $rnd = rand();
+    # print "dice: $rnd\n";
+    return 1 + int($rnd * $n);
 }
 
 1;

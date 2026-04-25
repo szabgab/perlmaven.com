@@ -19,13 +19,18 @@ is dice(10), 1;
 $rand->return_value(0.72);
 is dice(10), 8;
 
-my $x = rand;
+my $x = rand();
 isnt $x, undef, 'The local rand() is not mocked';
 cmp_ok $x, '<', 1;
 cmp_ok $x, '>=', 0;
 diag $x;
 
 is $rand->called_count, 2, 'How many times rand() was called in MyRandomApp';
+
+# in this case the rand() function inside MyRandomApp will return 0.72.
+is dice(10), 8;
+
+is $rand->called_count, 3, 'How many times rand() was called in MyRandomApp';
 
 done_testing;
 
