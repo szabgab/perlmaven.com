@@ -1,7 +1,5 @@
 # Test::Exception
 
-* Test::Exception
-
 [Test::Exception](https://metacpan.org/pod/Test::Exception).
 
 {% embed include file="src/examples/test-warn/t/test_exception.t" %}

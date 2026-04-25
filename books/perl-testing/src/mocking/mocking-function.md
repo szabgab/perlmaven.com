@@ -1,8 +1,8 @@
 # Mocking function of external web call
 
-* Test::Mock::Simple
+* [Test::Mock::Simple](https://metacpan.org/pod/Test::Mock::Simple)
 
-* We have an application that uses LWP::Simple
+* We have an application that uses [LWP::Simple](https://metacpan.org/pod/LWP::Simple)
 * It gets a list of strings and tells us how many times each string appears on that web page.
 * We'll talk about the commented out code a bit later.
 

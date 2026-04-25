@@ -1,8 +1,6 @@
-# Mocking relative Time
+# Mocking relative time
 
-* Test::MockTime
 * time
-
 * [Test::MockTime](https://metacpan.org/pod/Test::MockTime)
 
 {% embed include file="src/examples/mock-elapsed-time/t/time.t" %}
