@@ -1,6 +1,5 @@
 # Test Doubles explained
 
-
 **Dummy** objects are passed around but never actually used.
 
 **Fakes** - Working implementation, but much more simple than the original
