@@ -9,4 +9,3 @@
 prove -lv t/test-mock-sub.t
 ```
 
-

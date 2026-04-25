@@ -171,6 +171,7 @@
   - [Test using is_any](./mocking/test-random-using-is-any.md)
   - [Mock random generator in BEGIN](./mocking/mock-random-generator-in-begin.md)
   - [Mock random generator Mock::Sub](./mocking/mock-random-generator-with-mock-sub.md)
+  - [Test using srand (seed)](./mocking/test-random-using-srand.md)
   - [Function that (also) writes to STDOUT or STDERR](./mocking/function-that-writes-to-stdout-or-stderr.md)
   - [Capture STDOUT and STDERR in functions call](./mocking/capture-stdout-and-stderr-in-function-call.md)
   - [Code with STDIN](./mocking/code-with-stdin.md)
