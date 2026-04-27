@@ -25,4 +25,7 @@ Files=11, Tests=2078, 50 wallclock secs
 * [CPAN Cover](http://cpancover.com/) generates and collects the test coverage report of modules recently uploaded to CPAN.
 * [Meta::CPAN](https://metacpan.org/) includes the test-coverage report of most of the modules.
 
+## Run test coverage in parallel
+
+Using the `-j` option one can tell the tool to run tests in parallel. For example you can use `-j 9` to run 9 tests in parallel.
 
