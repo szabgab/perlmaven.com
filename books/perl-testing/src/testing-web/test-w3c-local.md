@@ -15,7 +15,8 @@ Copy the Apache configuration file and wrap it with a virtual host configuration
 
 Then access the page via http://w3c.local/w3c-markup-validator/
 
-{% embed include file="src/examples/www/w3c.conf)
+{% embed include file="src/examples/www/w3c.conf" %}
+
 {% embed include file="src/examples/www/w3c_validate.pl" %}
 
 
