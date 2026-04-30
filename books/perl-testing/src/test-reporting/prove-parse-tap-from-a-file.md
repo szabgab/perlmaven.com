@@ -5,7 +5,7 @@ Prove tricks from Michael G Schwern on the perl-qa list.
 Parse TAP from a file, rather than program output.  Handy for doing
 experiments without having to mock up a program.
 
-{% embed include file="src/examples/root/foo.tap)
+{% embed include file="src/examples/root/foo.tap" %}
 
 **prove --exec 'cat' examples/root/foo.tap**
 
