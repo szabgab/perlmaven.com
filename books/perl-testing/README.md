@@ -5,4 +5,6 @@
 
 * Take the module I build for the `is_any` function, add some tests, create all the other parts that are needed to upload to CPAN and maybe even upload it.
 
+https://theweeklychallenge.org/blog/testing-in-perl/
+https://blogs.perl.org/users/lichtkind/2026/04/who-tests-the-tester-me.html
 

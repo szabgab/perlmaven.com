@@ -3,7 +3,11 @@ use warnings;
 use Test::More;
 
 use MySalary;
-is MySalary::get_salary('Foo'), 100;
+
+my $obj = MySalary->new("Gabor");
+is $obj->get_name(), "Gabor";
+is $obj->get_salary(), 1470;
+
 
 done_testing;
 

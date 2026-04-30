@@ -1,28 +1,29 @@
 package BaseSalary;
 use strict;
 use warnings;
+use feature 'say';
 
 sub new {
     my ($class) = @_;
-    print "new\n";
+    say "new $class";
     my $self = bless {}, $class;
 
     return $self;
 }
 
-# plain getter/setter for name (with an extra print statement)
+# plain getter/setter for name
 sub name {
     my ($self, $value) = @_;
-    print "name\n";
     if (@_ == 2) {
+        say "set name to $value";
         $self->{name} = $value;
     }
     return $self->{name};
 }
 
-sub get_base_salaray {
+sub get_base_salary {
     my ($self) = @_;
-    print "get_base_salary\n";
+    # say "get_base_salary";
 
     return 1370;
 }

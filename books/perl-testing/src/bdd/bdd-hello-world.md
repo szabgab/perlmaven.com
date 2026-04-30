@@ -12,7 +12,7 @@ examples/bdd/
         └── HelloWorld.pm
 ```
 
-{% embed include file="src/examples/bdd/basic/features/basic.feature)
+{% embed include file="src/examples/bdd/basic/features/basic.feature" %}
 {% embed include file="src/examples/bdd/basic/features/step_definitions/some_steps.pl" %}
 {% embed include file="src/examples/bdd/basic/lib/HelloWorld.pm" %}
 

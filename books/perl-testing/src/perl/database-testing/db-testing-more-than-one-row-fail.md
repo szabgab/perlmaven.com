@@ -6,6 +6,6 @@
 Results:
 
 
-{% embed include file="src/examples/db/dbrow_more_fail.err)
+{% embed include file="src/examples/db/dbrow_more_fail.err" %}
 
 

@@ -1,7 +1,7 @@
 # Summary
 
 - [Changes](./changes.md)
-- [Testing in Perl](./index.md)
+- [nTesting in Perl](./index.md)
 - [Preface](./preface/index.md)
   - [Why Test?](./preface/why-test.md)
   - [What are automated test?](./preface/what-are-automated-test.md)
