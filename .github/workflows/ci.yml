@@ -16,7 +16,8 @@ jobs:
           - '5.42'
 #          - 'latest'
     container:
-      image: perldocker/perl-tester:${{ matrix.perl-version }}     # https://hub.docker.com/r/perldocker/perl-tester
+      #image: perldocker/perl-tester:${{ matrix.perl-version }}     # https://hub.docker.com/r/perldocker/perl-tester
+      image: szabgab/perl     # https://github.com/szabgab/perl-docker-on-ubuntu/
     name: Perl ${{ matrix.perl-version }}
     steps:
       - uses: actions/checkout@v6
