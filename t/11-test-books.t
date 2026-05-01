@@ -85,32 +85,32 @@ for my $dir (keys %cases) {
     $rule->name('*.t');
     my $it = $rule->iter('t');
     while ( my $file = $it->() ) {
-	    #	next if not exists $cases{$dir}{$file};
-	die "Unhandled file $file" if not exists $cases{$dir}{$file};
-	next if $cases{$dir}{$file} eq 'skip';
+    # next if not exists $cases{$dir}{$file};
+        die "Unhandled file $file" if not exists $cases{$dir}{$file};
+        next if $cases{$dir}{$file} eq 'skip';
 
         my @cmd = ('prove', $file);
         my ($in, $out, $err);
         my $exit = run \@cmd, \$in, \$out, \$err, timeout( 10 );
         my $exit_code = $?;
-	if ($cases{$dir}{$file} eq 'fail') {
+        if ($cases{$dir}{$file} eq 'fail') {
             is $exit, '', "return $file";
-	    #is $out, "", "out $file";
-	    like $out, qr/Test Summary Report/, "out $file";
-	    like $out, qr/Result: FAIL/, "out $file";
-	    #is $err, "", "err $file";
-	    like $err, qr/Failed test/, "err $file";
-	    is $exit_code, 256, "exit_code $file";
-	} elsif ($cases{$dir}{$file} eq 'success') {
+            #is $out, "", "out $file";
+            like $out, qr/Test Summary Report/, "out $file";
+            like $out, qr/Result: FAIL/, "out $file";
+            #is $err, "", "err $file";
+            like $err, qr/Failed test/, "err $file";
+            is $exit_code, 256, "exit_code $file";
+        } elsif ($cases{$dir}{$file} eq 'success') {
             is $exit, 1, "return $file";
-	    #is $out, "", "out $file";
-	    like $out, qr/All tests successful./, "out $file";
-	    like $out, qr/Result: PASS/, "out $file";
-	    #is $err, "", "err $file";
-	    is $exit_code, 0, "exit_code $file";
-	} else {
-	    die;
-	}
+            #is $out, "", "out $file";
+            like $out, qr/All tests successful./, "out $file";
+            like $out, qr/Result: PASS/, "out $file";
+            #is $err, "", "err $file";
+            is $exit_code, 0, "exit_code $file";
+        } else {
+            die;
+        }
     }
     chdir $root;
 }
