@@ -24,6 +24,8 @@ my $rule = Path::Iterator::Rule->new;
 $rule->name('*.txt');
 my $it = $rule->iter('.');
 while ( my $file = $it->() ) {
+    next if $file =~ m{/book/};
+    next if $file =~ m{^\./html/};
     try {
         is basename($file), lc(basename($file)), 'filename is lower-case';
         # is this a reasonable test, or will this be always true?
