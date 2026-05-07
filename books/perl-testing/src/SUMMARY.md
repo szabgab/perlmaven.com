@@ -202,6 +202,7 @@
   - [Monkey Patching](./mocking/monkey-patching.md)
   - [Test STDIN](./mocking/test-stdin.md)
   - [Mocking get in LWP::Simple](./mocking/get-in-lwp-simple.md)
+  - [Test::MockModule](./mocking/test-mockmodule.md)
 
 - [Test::Class](./test-class/index.md)
   - [Simple module to test](./test-class/simple-module-to-test.md)
