@@ -11,3 +11,5 @@ show_related: true
 
 
 {% youtube id="" file="" %}
+
+<a class="button is-primary" href="">register</a>
