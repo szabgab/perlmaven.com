@@ -9,4 +9,6 @@
 
 {% embed include file="src/examples/test-mockmodule/t/01-greet.t" %}
 
+{% embed include file="src/examples/test-mockmodule/t/02-mocked.t" %}
+
 
