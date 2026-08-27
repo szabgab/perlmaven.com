@@ -9,6 +9,7 @@ show_related: true
 
 {% youtube id="l4kBbjgZntU" file="2026-07-29-perl-development-using-codex-by-emmanuel-in-english.mp4" %}
 
+This was an ad-hoc presentation and thus we did not have an abstract for it.
 
 * [Emmanuel Thouraud](https://www.linkedin.com/in/emmanuel-thouraud/)
 * [AGENTS.md of Emmanuel](https://github.com/M-M-M-M/perl-agents-md/)
