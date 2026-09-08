@@ -26,6 +26,10 @@ He builds web applications with Dancer2, contributes to open source, and has rec
 
 Dave believes the best way to learn a new technology is to build something real with it, and this workshop is based on exactly that experience.
 
+## Length
+
+1 hour
+
 
 <a class="button is-primary" href="https://luma.com/6qqyscbm">register</a>
 
