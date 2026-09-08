@@ -15,5 +15,8 @@ In this presentation we will dive into the [Punk](https://punkperl.com) ecosyste
 
 [Robert Acock](https://www.linkedin.com/in/lnation--/) ([LNATION](https://metacpan.org/author/LNATION)) is a CPAN author with over 250 contributions. They run their own contracting company, LNATION LTD, which also recently launched [OpenAPI Proxy](https://openapi-proxy.com). They like to experiment with C/XS, writing Perl as fast as it can be.
 
+## Length
+
+1 hour
 
 <a class="button is-primary" href="https://luma.com/o4k2uute">register</a>

@@ -15,4 +15,8 @@ This is a practical exploration of PAGI::FastAPI and its latest addition PAGI::F
 
 [Mohammad Sajid Anwar](https://www.linkedin.com/in/mohammadanwar/) is a CPAN author and White Camel award recipient, recognised for his sustained contributions to the Perl community. He is the author of "Design Patterns in Modern Perl" and the creator of "The Weekly Challenge", a long-running initiative since 2019. He is an editor of the Perl Weekly newsletter. He speaks regularly at Perl conferences and is an active mentor and contributor across the CPAN ecosystem.
 
+## Length
+
+30 min
+
 <a class="button is-primary" href="https://luma.com/obzvoiii">register</a>
