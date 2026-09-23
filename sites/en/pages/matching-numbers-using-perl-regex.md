@@ -297,7 +297,7 @@ if ($str =~ m{Usage:(?<used>\d+)/(?<total>\d+) messages} ) {
 
 ## Unicode digits
 
-[Nick Patch](http://nickpatch.net/) thought that it would be important to mention that `\d` may match any Unicode digit.
+[Nova Patch](https://novapatch.ie/) thought that it would be important to mention that `\d` may match any Unicode digit.
 
 ```perl
 # the number 3 in eight different numeral systems

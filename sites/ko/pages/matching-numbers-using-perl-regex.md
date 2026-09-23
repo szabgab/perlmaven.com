@@ -299,7 +299,7 @@ if ($str =~ m{Usage:(?<used>\d+)/(?<total>\d+) messages} ) {
 
 ## 유니코드로 된 숫자들
 
-[Nick Patch](http://nickpatch.net/)씨는 `\d`가 유니코드 상의 어떤 숫자에도
+[Nova Patch](https://novapatch.ie/)씨는 `\d`가 유니코드 상의 어떤 숫자에도
 매치된다는 점을 언급하는 게 중요하다고 생각했습니다.
 
 ```perl
