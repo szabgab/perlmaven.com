@@ -30,6 +30,13 @@ Dave believes the best way to learn a new technology is to build something real 
 
 1 hour
 
+
+## Slides
+
+Slides and other stuff available on the talks site of Dave Cross:
+
+[Model Context Protocol in Perl: From Web App to AI Tools](https://talks.davecross.co.uk/talk/model-context-protocol-in-perl-from-web-app-to-ai-tools/)
+
 {% youtube id="st_tZs5AJ0c" file="mcp-model-context-protocol-in-perl-from-web-app-to-ai-tools-by-dave-cross.mp4" %}
 
 
