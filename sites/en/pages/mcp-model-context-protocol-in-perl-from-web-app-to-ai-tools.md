@@ -30,7 +30,7 @@ Dave believes the best way to learn a new technology is to build something real 
 
 1 hour
 
-{% youtube id="https://youtu.be/st_tZs5AJ0c" file="mcp-model-context-protocol-in-perl-from-web-app-to-ai-tools-by-dave-cross.mp4" %}
+{% youtube id="st_tZs5AJ0c" file="mcp-model-context-protocol-in-perl-from-web-app-to-ai-tools-by-dave-cross.mp4" %}
 
 
 ## Transcription
