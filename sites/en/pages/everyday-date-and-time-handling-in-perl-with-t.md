@@ -1,5 +1,5 @@
 ---
-title: "Everyday date and time handling in Perl with T"
+title: "Everyday date and time handling in Perl with `T::`"
 timestamp: 2026-10-18T20:00:02
 published: true
 description: ""
