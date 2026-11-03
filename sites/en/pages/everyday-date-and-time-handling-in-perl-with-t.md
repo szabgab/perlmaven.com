@@ -8,7 +8,8 @@ show_related: true
 ---
 
 
-Common date operations often need only a small amount of code. This talk introduces T, a compact wrapper around DateTime, through practical examples: parsing dates, formatting output, finding the start of a day or month, and adding months across different month lengths.
+Common date operations often need only a small amount of code. This talk introduces `T::`, a compact wrapper around [DateTime](https://metacpan.org/pod/DateTime), through practical examples: parsing dates, formatting output, finding the start of a day or month, and adding months across different month lengths.
+
 I'll explain its conventions and where it can make application code simpler.
 
 ## Bio
