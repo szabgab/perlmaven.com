@@ -511,7 +511,7 @@ Robert Acock: So most, most, Perl clients are blocking. So, for example, HTTP Ti
 
 120
 00:15:42.150 --> 00:15:57.460
-Robert Acock: They'll do requests at around 18,000, 26,000, so at the time, the server I was testing did 186,000 requests a second via WRK, or work, as I always call it. But…
+Robert Acock: They'll do requests at around 18,000, 26,000, so at the time, the server I was testing did 186,000 requests a second via WORK, or work, as I always call it. But…
 
 121
 00:15:57.540 --> 00:16:07.749
@@ -1539,7 +1539,7 @@ Robert Acock: 997. And in here, I'm kind of cheating. So I'm saying Catalyst is 
 
 377
 00:49:08.630 --> 00:49:13.979
-Robert Acock: 4,000 requests per second, but I wrote something called Callis Sealed.
+Robert Acock: 4,000 requests per second, but I wrote something called Callus Sealed.
 
 378
 00:49:14.220 --> 00:49:22.160
