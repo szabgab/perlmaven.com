@@ -9,6 +9,9 @@ use v5.44;
 * [use strict](https://metacpan.org/pod/strict) is enabled since v5.12.
 
 
+{% embed include file="src/examples/nothing.pl" %}
+
+
 {% embed include file="src/examples/strict_and_warn.pl" %}
 
 

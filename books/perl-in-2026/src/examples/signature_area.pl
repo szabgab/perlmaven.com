@@ -4,8 +4,12 @@ sub area($width, $height) {
     return $width * $height;
 }
 
-
 my $area = area(2, 3);
 say $area;
 
+my $too_few = area(2);
+say $too_few;
+
+my $too_many = area(2, 5, 11);
+say $too_many;
 
