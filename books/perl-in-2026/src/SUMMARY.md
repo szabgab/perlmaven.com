@@ -10,6 +10,7 @@
 - [Optional parameters](./function-optional-parameter.md)
 - [Autoincrement](./function-autoincrement.md)
 - [Reuse parameter](./function-reuse-parameter.md)
+- [Named parameters](./function-named-parameters.md)
 - [Unicode](./unicode.md)
 
 
