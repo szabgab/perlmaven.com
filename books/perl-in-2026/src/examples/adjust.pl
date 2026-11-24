@@ -8,7 +8,6 @@ class Point {
     field $y :param;
 
     ADJUST {
-        # This is called after the instance was created and the attributes were populated
         $y = 23;
         #$y += 23;
     }
