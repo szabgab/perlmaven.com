@@ -4,11 +4,11 @@ use feature 'class';
 no warnings 'experimental::class';
 
 class Point {
-    field $x :param :reader;
-    field $y :param :writer;
+    field $x :param;
+    field $y :param;
 
     method stringify {
-        say "($x, $y)";
+        return "($x, $y)";
     }
 
     method move($dx, $dy) {
@@ -17,14 +17,8 @@ class Point {
     }
 }
 my $p = Point->new(x => 2, y => 3);
-$p->stringify;
-say $p->x;
-#say $p->y; # Can't locate object method "y"
-$p->set_y(10);
-
-$p->stringify;
-
+say $p->stringify;
 
 $p->move(7, 8);
-$p->stringify;
+say $p->stringify;
 
