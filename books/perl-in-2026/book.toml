@@ -10,6 +10,7 @@ title = "Perl in 2026"
 git-repository-url = "https://github.com/szabgab/perlmaven.com"
 git-repository-icon = "fas-code-fork"
 edit-url-template = "https://github.com/szabgab/perlmaven.com/edit/main/books/perl-in-2026/{path}"
+additional-js = ["custom.js", "addlinks.js"]
 
 [output.markdown]
 
