@@ -60,6 +60,7 @@ show_related: false
 * [Perl Oneliners](/oneliners/)
 * [Perl Regular Expression](/perl-regular-expressions/)
 * [Perl Testing](/perl-testing/)
+* [Perl in 2026](/perl-in-2026/)
 
 
 
